@@ -1,30 +1,5 @@
 import type { TextBag } from "../types";
-import { rules } from "./rules";
-import { legalDocs } from "./legalDocs";
-import { codex } from "./codex";
-import { consent } from "./consent";
-import { ranks } from "./ranks";
-import { leaderboard } from "./leaderboard";
-import { pricing } from "./pricing";
-import { features } from "./features";
-import { home } from "./home";
-import { play } from "./play";
-import { teams } from "./teams";
-import { account } from "./account";
-import { desk } from "./desk";
+import { TEXT_EN } from "../en";
 
-export const TEXT_RO: TextBag = {
-  rules,
-  legalDocs,
-  codex,
-  consent,
-  ranks,
-  leaderboard,
-  pricing,
-  features,
-  home,
-  play,
-  teams,
-  account,
-  desk,
-};
+/** Translation files for this locale are not in the repo yet; English text is served as a fallback. */
+export const TEXT_RO: TextBag = TEXT_EN;

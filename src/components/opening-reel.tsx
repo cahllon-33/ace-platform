@@ -18,7 +18,8 @@ export function OpeningReel() {
   const [videoOk, setVideoOk] = useState(true);
 
   useEffect(() => {
-    setGate(readGate());
+    const id = window.requestAnimationFrame(() => setGate(readGate()));
+    return () => window.cancelAnimationFrame(id);
   }, []);
 
   useEffect(() => {
