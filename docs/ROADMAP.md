@@ -59,7 +59,7 @@ Git checkpoint (commit or stash) before a stage that changes many files, wheneve
 ## Stage 7 — Rankings
 
 - **Goal:** An A.C.E. ranking list from real platform results, with the rating rules written down. Start simple.
-- **How to test:** After recording or importing allowed results, the ranking page updates. Empty state is clear. Do not imply Valve rank or FACEIT elo unless those are separately integrated and labeled.
+- **How to test:** After recording or importing allowed results, the ranking page updates. Empty state is clear. Do not imply a Valve rank or any third-party rating unless separately integrated and labeled.
 - **Still mock/future:** Advanced calibration, decay, or anti-smurf systems.
 
 ## Stage 8 — Tournaments

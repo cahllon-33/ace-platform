@@ -28,7 +28,7 @@ Every public page must render in the visitor's chosen language. Many components 
 7. Do NOT touch admin pages/components (`src/app/admin/**`, `admin-*`), API routes (`src/app/api/**`), server logic in `src/server/**` (except reading text), tests, or any file not listed for your area. If you find English in a file outside your list, note it in your final report instead of editing it.
 8. If a component has `dir="ltr"` only because the content was English-only, remove that forced `dir` so RTL locales lay out correctly — unless it is a code/number block that must stay LTR.
 9. Keep behaviour identical: same markup, classes, order, ids, hrefs, data. Only the text source changes.
-10. Never mention or add the names FACEIT, ESEA, or ESL anywhere.
+10. Never mention or add the names of competitor platforms anywhere.
 
 ## Verification you must run before finishing
 

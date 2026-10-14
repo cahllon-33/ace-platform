@@ -117,7 +117,7 @@ Status values: **Accepted** (follow this), **Proposed** (default plan, confirm b
 ## D18. Campaign neon-orange and cyber-footer
 
 - **Status:** Accepted
-- **Decision:** Orange/FACEIT-like accents are not used. Client download uses graphite with a gold glow frame. Footer destinations that are not built yet route to `/preview/[slug]`. Concurrent-player counts are launch-accurate zeros. PLAY NOW is planned, not live matchmaking.
+- **Decision:** Orange accents are not used. Client download uses graphite with a gold glow frame. Footer destinations that are not built yet route to `/preview/[slug]`. Concurrent-player counts are launch-accurate zeros. PLAY NOW is planned, not live matchmaking.
 
 ## D19. Radiant gold cinematic layer
 
@@ -320,9 +320,9 @@ That command compares `prisma/schema.prisma` to the database, writes SQL under `
 ## D42. The public home uses a competitive landing rhythm in A.C.E. colors
 
 - **Status:** Accepted
-- **Decision:** The home hero is a large original promise, a side lobby plate, a solid gold Steam OpenID button, and five path cards. Later home blocks sit in a 76rem column. FACEIT’s orange, wording, logos, images, and live player counts are not used.
+- **Decision:** The home hero is a large original promise, a side lobby plate, a solid gold Steam OpenID button, and five path cards. Later home blocks sit in a 76rem column. No third-party platform branding, orange accents or invented live player counts are used.
 - **Reason:** The owner asked for the clarity and scale of a competitive homepage while keeping the gold and charcoal identity already on the site.
-- **Alternatives:** Copy FACEIT’s light canvas and orange brand (rejected).
+- **Alternatives:** Copy another platform's light canvas and orange brand (rejected).
 
 ## D43. The home opens with an original film, then a dark broadcast desk
 
@@ -350,7 +350,7 @@ That command compares `prisma/schema.prisma` to the database, writes SQL under `
 - **Status:** Accepted
 - **Decision:** The home hero, rank marks, identity cards, and footer use deeper gold slabs. Pressing the Steam button switches it to Steam navy `#1b2838` and link blue `#66c0f4`. Rank portraits keep original A.C.E. emblems and gain a level number. An example prize row is on the home again. Those cards are original shapes, not Valve skin renders, and they are not paid prizes.
 - **Reason:** The owner asked for a more professional 3D home, a Steam-colored button, a rank strip, the prize category back, and a tighter footer.
-- **Alternatives:** Copy FACEIT level art or generate 8K Valve weapon skins (rejected).
+- **Alternatives:** Copy third-party level art or generate Valve weapon skins (rejected).
 
 ## D47. Map plates match the name, and the veto does not open a server
 

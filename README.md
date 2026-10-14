@@ -1,6 +1,6 @@
 # A.C.E.
 
-A.C.E. is an independent competitive CS2 platform (Autonomous Anti-Cheat, Competitive Calibration, Elite Players). It is **not** affiliated with Valve, Steam, ESL, or FACEIT.
+A.C.E. is an independent competitive CS2 platform (Autonomous Anti-Cheat, Competitive Calibration, Elite Players). It is an independent platform and is **not** affiliated with Valve or Steam.
 
 This codebase now includes a public website plus Steam OpenID sign-in, PostgreSQL/Prisma models, 5v5 teams, a single-elimination bracket engine, rating math, and a game-server eligibility API. It does **not** include live CS2 servers, real payments, prizes, or a working Anti-Cheat client.
 

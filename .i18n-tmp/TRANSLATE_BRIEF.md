@@ -39,7 +39,7 @@ Rank names: Recruit, Operative, Vanguard, Specialist, Veteran, Elite, Master, Gr
 ## Honesty rules (never violate)
 
 The English copy is deliberately honest. Your translation must keep EVERY honesty statement with the same meaning and strength. Never soften, drop, or upgrade a claim. In particular keep that: there is no working AI anti-cheat; no live game servers; no live matchmaking/queue; no real payments (checkout is not live, nothing is charged); no real prizes / no funded prize pool / no cash value; mock/sample/preview/planned/example data is marked as such; A.C.E. never asks for a Steam password; not affiliated with Valve.
-Do not add new claims, marketing promises, or any mention of other platforms. Never write the names FACEIT, ESEA, or ESL.
+Do not add new claims, marketing promises, or any mention of other platforms. Never write the names of competitor platforms.
 
 ## Verify (mandatory)
 
