@@ -1,3 +1,5 @@
+import { PlayerBadges } from "@/components/player-badges";
+import { playerBadges, type PlayerBadge } from "@/lib/badges";
 import type { Metadata } from "next";
 import { connection } from "next/server";
 import { LocaleFlag } from "@/components/locale-flag";
@@ -48,6 +50,7 @@ type BoardRow = {
   weapon: WeaponSlug | null;
   weaponName: string | null;
   live: boolean;
+  badges: PlayerBadge[];
 };
 
 export default async function LeaderboardPage({
@@ -73,6 +76,10 @@ export default async function LeaderboardPage({
         displayName: true,
         competitiveRating: true,
         rankLevel: true,
+        subscriptionTier: true,
+        wins: true,
+        losses: true,
+        steamId: true,
       },
     });
     live = rows.map((row) => ({
@@ -85,6 +92,14 @@ export default async function LeaderboardPage({
       weapon: null,
       weaponName: null,
       live: true,
+      // Computed here on the server from stored rows; only the badge labels reach the page.
+      badges: playerBadges({
+        subscriptionTier: row.subscriptionTier,
+        rankLevel: row.rankLevel,
+        wins: row.wins,
+        losses: row.losses,
+        steamLinked: row.steamId !== null,
+      }).filter((badge) => badge.kind === "special" || badge.id === "placed"),
     }));
   } catch {
     live = [];
@@ -105,6 +120,7 @@ export default async function LeaderboardPage({
           weapon: row.weapon,
           weaponName: row.weaponName,
           live: false,
+          badges: [],
         }));
 
   const top = board[0]?.rp ?? 1;
@@ -194,6 +210,7 @@ export default async function LeaderboardPage({
                       <span>
                         <span className="ace-lb-name">{row.name}</span>
                         <span className="ace-lb-tag">{row.live ? lb.tags.stored : lb.tags.showcase}</span>
+                        <PlayerBadges badges={row.badges} />
                       </span>
                     </span>
                     <span className="ace-lb-country">

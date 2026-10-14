@@ -65,7 +65,7 @@ export const EN = {
   planFree3: "Public pages stay open: play layout, tournaments, leaderboard, teams, and rules.",
   planPlus1: "Same access as Free. Checkout is not live, so this price is not charged.",
   planPlus2: "Opens a thank-you letter on this site: what is included, what is not, and support@ace-platform.gg.",
-  planPlus3: "Does not buy rating or easier opponents. The gold seal shows only when the stored tier is already Plus or Premium.",
+  planPlus3: "Does not buy rating or easier opponents. Gold profile badges come from stored match data for every player. The elite seal and special badges show only when the stored tier is already Premium.",
   planPrem1: "Same access as Free. Checkout is not live, so this price is not charged.",
   planPrem2: "Opens a thank-you letter on this site: what is included, what is not, and support@ace-platform.gg.",
   planPrem3: "Then opens Squads: a captain signed in with Steam can store a five-player clan.",

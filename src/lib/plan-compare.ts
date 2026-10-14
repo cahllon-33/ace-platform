@@ -57,7 +57,7 @@ export const PLAN_COMPARE_ROWS: PlanCompareRow[] = [
   {
     id: "goldEliteSeal",
     free: { label: "no" },
-    plus: { label: "storedTierOnly" },
+    plus: { label: "no" },
     premium: { label: "storedTierOnly" },
   },
 ];

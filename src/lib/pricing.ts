@@ -10,7 +10,7 @@ export function telemetryUnlocked(tier: string | null | undefined) {
   return tier === "PLUS" || tier === "PREMIUM";
 }
 
-/** Plus and Premium accounts carry the gold crest in the interface. */
+/** The elite seal is a special badge: A.C.E PREMIUM only. Pass the tier stored on the server. */
 export function hasEliteSeal(tier: string | null | undefined) {
-  return tier === "PLUS" || tier === "PREMIUM";
+  return tier === "PREMIUM";
 }

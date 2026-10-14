@@ -6,9 +6,11 @@ import { ComingSoonShield } from "@/components/coming-soon-shield";
 import { CreateTeamForm, InviteForm } from "@/components/dashboard-forms";
 import { EliteSeal } from "@/components/elite-seal";
 import { IdentityPreview } from "@/components/identity-preview";
+import { PlayerBadges } from "@/components/player-badges";
 import { PlannedButton } from "@/components/ui/button";
 import { Panel } from "@/components/ui/panel";
 import { RankEmblem } from "@/components/rank-emblem";
+import { playerBadges } from "@/lib/badges";
 import { hasEliteSeal } from "@/lib/pricing";
 import { formatRankLabelWith } from "@/lib/ranks";
 import { getPrisma } from "@/server/db";
@@ -65,6 +67,15 @@ export default async function DashboardPage() {
             </div>
           ) : null}
           <h2 className="text-xl font-semibold text-white">{user.displayName}</h2>
+          <PlayerBadges
+            badges={playerBadges({
+              subscriptionTier: user.subscriptionTier,
+              rankLevel: user.rankLevel,
+              wins: user.wins,
+              losses: user.losses,
+              steamLinked: Boolean(user.steamId),
+            })}
+          />
           <dl className="mt-4 grid gap-3 text-sm sm:grid-cols-2">
             <div>
               <dt className="text-ace-muted">{copy.stats.accountStatus}</dt>

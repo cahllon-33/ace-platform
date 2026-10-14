@@ -8257,3 +8257,44 @@ html[dir="rtl"] .ace-hub-card-face {
   background: #ffd700;
   color: #0a0a0c;
 }
+
+/* Player badges: gold for every player, special for A.C.E PREMIUM only. Cosmetic. */
+.ace-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin: 0.6rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.ace-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  border-radius: 999px;
+  padding: 0.26rem 0.7rem;
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  white-space: nowrap;
+}
+
+.ace-badge.is-gold {
+  border: 1px solid #ffd700;
+  background: rgba(255, 215, 0, 0.12);
+  color: #ffd700;
+}
+
+.ace-badge.is-special {
+  border: 1px solid #fff6c2;
+  background: linear-gradient(135deg, #ffd700, #a8841c 55%, #fff1a8);
+  color: #121212;
+  box-shadow: 0 0 14px rgba(255, 215, 0, 0.45);
+}
+
+.ace-badge svg {
+  width: 0.8rem;
+  height: 0.8rem;
+  fill: currentColor;
+}

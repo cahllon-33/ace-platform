@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { ContactEmailForm } from "@/components/contact-email-form";
+import { PlayerBadges } from "@/components/player-badges";
 import { PlayerNetworkCards } from "@/components/player-network-cards";
 import { PlayerRatingTrend } from "@/components/player-rating-trend";
 import { TelemetryPaywall } from "@/components/telemetry-paywall";
@@ -8,11 +9,10 @@ import {
   buildRatingTrend,
   buildSignatureWeapon,
 } from "@/lib/player-dossier";
+import { playerBadges } from "@/lib/badges";
 import { interpolate } from "@/lib/i18n";
 import { PLACEHOLDER_GEAR, type LayoutGear, type LayoutPlayer, type LayoutTeam } from "@/lib/tournament-layout";
 import { getText } from "@/server/locale";
-
-const PROFILE_LEVEL_BADGE = 10;
 
 export async function PlayerProfileWorkspace({
   player,
@@ -58,10 +58,19 @@ export async function PlayerProfileWorkspace({
               </h2>
               <div className="ace-profile-tags">
                 <span className="ace-profile-level">
-                  {interpolate(copy.levelBadge, { level: PROFILE_LEVEL_BADGE })}
+                  {interpolate(copy.levelBadge, { level: player.level })}
                 </span>
-                <span className="ace-profile-premium">{copy.premiumBadge}</span>
               </div>
+              {/* Roster profiles have no membership record, so no Premium special badge is shown. */}
+              <PlayerBadges
+                badges={playerBadges({
+                  subscriptionTier: null,
+                  rankLevel: player.level,
+                  wins: player.wins,
+                  losses: player.losses,
+                  steamLinked: false,
+                })}
+              />
               <p className="ace-profile-tag-note">
                 {interpolate(copy.rosterLevel, { level: player.level })}
               </p>

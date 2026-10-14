@@ -30,7 +30,7 @@
       points: [
         "Same access as Free. Checkout is not live, so this price is not charged.",
         "Opens a thank-you letter on this site: what is included, what is not, and support@ace-platform.gg.",
-        "Does not buy rating or easier opponents. The gold seal shows only when the stored tier is already Plus or Premium.",
+        "Does not buy rating or easier opponents. Gold profile badges come from stored match data for every player. The elite seal and special badges show only when the stored tier is already Premium.",
       ],
     },
     premium: {
@@ -121,9 +121,9 @@
         detail: "No skin, knife, or prize pool is delivered.",
       },
       goldEliteSeal: {
-        feature: "Gold elite seal",
+        feature: "Elite seal & special badges",
         detail:
-          "Shown only when the stored tier is already Plus or Premium. Checkout does not set that tier.",
+          "Premium only, read from the stored tier on the server. Cosmetic. Checkout does not set that tier.",
       },
     },
     cells: {
@@ -174,7 +174,7 @@
         "Display price: {price} per month. The figure is a label, not a charge.",
         "Payment: none. Choosing this plan does not take a card.",
         "Email: none. A.C.E. does not send this letter to an inbox.",
-        "Stored tier: unchanged. A gold seal appears only when the account already stores Plus or Premium.",
+        "Stored tier: unchanged. Special badges and the elite seal appear only when the account already stores Premium.",
         "Rating: not for sale. A new account still starts at 1,000.",
       ],
     },
