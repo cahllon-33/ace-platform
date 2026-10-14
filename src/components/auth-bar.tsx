@@ -41,6 +41,7 @@ export async function AuthBar() {
       </span>
       <Link
         href={user ? "/dashboard" : STEAM_AUTH_HREF}
+        prefetch={false}
         className="ace-level-chip no-underline"
         title={user && label ? label : copy.connectProfileTitle}
         aria-label={user ? copy.openProfileAria : copy.connectProfileAria}
