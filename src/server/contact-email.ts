@@ -14,6 +14,9 @@ export async function updateOwnContactEmail(raw: string): Promise<{ ok: boolean;
     return { ok: false, message: copy.signInFirst };
   }
 
+  if (typeof raw !== "string") {
+    return { ok: false, message: copy.invalid };
+  }
   const email = raw.trim().toLowerCase();
   if (email.length > 254 || (email.length > 0 && !EMAIL_PATTERN.test(email))) {
     return { ok: false, message: copy.invalid };

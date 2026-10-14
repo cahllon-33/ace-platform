@@ -1,4 +1,5 @@
 import { NextResponse } from "next/server";
+import { optionalString, readJsonObject } from "@/server/http";
 import { readSessionUser } from "@/server/session";
 import { teamErrorMessage } from "@/server/team-error";
 import { inviteToTeam, resolveInviteeUserId } from "@/server/teams";
@@ -13,8 +14,8 @@ export async function POST(
   }
 
   const { id } = await context.params;
-  const body = (await request.json()) as { userId?: string; steamId?: string };
-  const token = body.steamId ?? body.userId;
+  const body = await readJsonObject(request);
+  const token = optionalString(body?.steamId, 64) ?? optionalString(body?.userId, 64);
   if (!token) {
     return NextResponse.json({ error: await teamErrorMessage(null, "idRequired") }, { status: 400 });
   }

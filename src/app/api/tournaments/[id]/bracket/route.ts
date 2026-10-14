@@ -1,4 +1,5 @@
 import { NextResponse } from "next/server";
+import { publicErrorMessage } from "@/server/http";
 import { getPrisma } from "@/server/db";
 import { readSessionUser } from "@/server/session";
 import { generateBracket } from "@/server/tournaments";
@@ -28,7 +29,7 @@ export async function POST(
     const plan = await generateBracket(user.id, id);
     return NextResponse.json({ plan });
   } catch (error) {
-    const message = error instanceof Error ? error.message : "Bracket generation failed.";
+    const message = publicErrorMessage(error, "Bracket generation failed.");
     return NextResponse.json({ error: message }, { status: 400 });
   }
 }

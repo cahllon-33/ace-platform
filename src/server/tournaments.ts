@@ -3,8 +3,8 @@ import { getPrisma } from "@/server/db";
 
 export async function createTournament(createdById: string, name: string) {
   const trimmed = name.trim();
-  if (trimmed.length < 3) {
-    throw new Error("Tournament names must be at least 3 characters.");
+  if (trimmed.length < 3 || trimmed.length > 80) {
+    throw new Error("Tournament names must be 3 to 80 characters.");
   }
   return getPrisma().tournament.create({
     data: { name: trimmed, createdById, status: "REGISTRATION" },

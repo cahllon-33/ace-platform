@@ -102,6 +102,8 @@ const EMPTY_DESK: AdminDeskData = {
 };
 
 export async function loadAdminDirectory(): Promise<AdminDeskData> {
+  // Defense in depth: this is a server function, so re-check the operator gate here, not only in the page.
+  if (!(await readAdminGate())) return EMPTY_DESK;
   try {
     const [users, enrollment, presence, liveMatches, disputes] = await Promise.all([
       prisma.user.findMany({ orderBy: { createdAt: "desc" } }),
@@ -176,7 +178,7 @@ export async function loadAdminDirectory(): Promise<AdminDeskData> {
 
 async function gatedUser(userId: string) {
   if (!(await readAdminGate())) return null;
-  if (!userId.trim()) return null;
+  if (typeof userId !== "string" || !userId.trim() || userId.length > 64) return null;
   return prisma.user.findUnique({ where: { id: userId } });
 }
 

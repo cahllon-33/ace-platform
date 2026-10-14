@@ -40,6 +40,9 @@ export async function unlockAdminGate(username: string, password: string) {
   if (!expectedUser || !expectedPass) {
     return "unconfigured" as const;
   }
+  if (typeof username !== "string" || typeof password !== "string" || username.length > 200 || password.length > 500) {
+    return "denied" as const;
+  }
   const userOk = sameSecret(username.trim(), expectedUser);
   const passOk = sameSecret(password, expectedPass);
   if (!userOk || !passOk) {

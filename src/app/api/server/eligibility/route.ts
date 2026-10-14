@@ -1,4 +1,5 @@
 import { NextResponse } from "next/server";
+import { badRequest, readJsonObject } from "@/server/http";
 import { evaluateEligibility, timingSafeEqualString } from "@/server/eligibility";
 import { getCs2ServerSecret } from "@/server/env";
 
@@ -26,16 +27,14 @@ export async function POST(request: Request) {
     return NextResponse.json({ decision: "DENY", reason: "Unauthorized game server." }, { status: 401 });
   }
 
-  const body = (await request.json()) as {
-    steamId?: string;
-    steamIds?: string[];
-    mode?: "ranked" | "managed";
-  };
-
-  const steamIds = body.steamIds ?? (body.steamId ? [body.steamId] : []);
-  if (steamIds.length === 0) {
-    return NextResponse.json({ error: "steamId is required." }, { status: 400 });
+  const body = await readJsonObject(request);
+  if (!body) return badRequest();
+  const rawIds: unknown[] = Array.isArray(body.steamIds) ? body.steamIds : body.steamId !== undefined ? [body.steamId] : [];
+  // SteamID64 values only, at most one 5v5 lobby (10 players) per call.
+  if (rawIds.length === 0 || rawIds.length > 10 || !rawIds.every((id) => typeof id === "string" && /^\d{17}$/.test(id))) {
+    return NextResponse.json({ error: "steamId must be 1–10 SteamID64 values." }, { status: 400 });
   }
+  const steamIds = rawIds as string[];
 
   const mode = body.mode === "ranked" ? "ranked" : "managed";
   const results = await Promise.all(steamIds.map((steamId) => evaluateEligibility(steamId, mode)));
