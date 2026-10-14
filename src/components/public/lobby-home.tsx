@@ -2,14 +2,11 @@ import { Suspense } from "react";
 import Link from "next/link";
 import { connection } from "next/server";
 import { AceShieldStatus } from "@/components/ace-shield-status";
-import { ChampionshipLoot } from "@/components/championship-loot";
 import { HomeLocaleActions, HowItWorksLocale, LocaleLoading } from "@/components/home-locale-actions";
-import { BroadcastDesk } from "@/components/broadcast-desk";
 import { HeroArena } from "@/components/hero-arena";
 import { OpeningReel } from "@/components/opening-reel";
 import { HomeWorkspaceCharter } from "@/components/home-workspace-charter";
 import { LobbyIdentity, LobbyMembership, LobbySeasonStats } from "@/components/lobby-identity";
-import { RankSystemBoard } from "@/components/rank-system-board";
 import { hasEliteSeal } from "@/lib/pricing";
 import { nextRankCeiling, rankFromRating } from "@/lib/ranks";
 import { getText } from "@/server/locale";
@@ -56,10 +53,9 @@ async function LobbyHomeDynamic() {
     <main className="ace-lobby-root ace-home-flow">
       <OpeningReel />
       <HeroArena actions={<HomeLocaleActions live={live} />} />
-      <BroadcastDesk />
       <nav className="ace-home-jumps" aria-label={text.home.jumpNav.label}>
         <Link href="/play">{text.home.jumpNav.play}</Link>
-        <Link href="/shop">{text.home.jumpNav.prizes}</Link>
+        <Link href="/prizes">{text.home.jumpNav.prizes}</Link>
         <Link href="/teams">{text.home.jumpNav.teams}</Link>
         <Link href="/leaderboard">{text.home.jumpNav.leaderboard}</Link>
         <Link href="/ranks">{text.home.jumpNav.ranks}</Link>
@@ -67,11 +63,6 @@ async function LobbyHomeDynamic() {
       </nav>
       <HomeWorkspaceCharter />
 
-      <section id="ranks" className="overflow-x-hidden border-y border-white/10 bg-[#070708] px-4 py-16 sm:px-6">
-        <div className="mx-auto max-w-[76rem]">
-          <RankSystemBoard liveRating={live ? user!.competitiveRating : null} />
-        </div>
-      </section>
 
       <section id="identity" className="ace-home-ops mx-auto grid max-w-[76rem] gap-4 overflow-x-hidden px-4 py-8 sm:px-6">
         <LobbyIdentity
@@ -86,9 +77,6 @@ async function LobbyHomeDynamic() {
         <LobbySeasonStats live={live} matches={matches} winRate={winRate} />
       </section>
 
-      <section id="prizes" className="mx-auto max-w-[76rem] px-4 py-8 sm:px-6">
-        <ChampionshipLoot />
-      </section>
 
       <LobbyMembership />
 

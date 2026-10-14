@@ -2,8 +2,11 @@ export const siteNav = [
   { href: "/", label: "HOME" },
   { href: "/play", label: "PLAY" },
   { href: "/tournaments", label: "TOURNAMENTS" },
+  { href: "/ranks", label: "RANKS" },
   { href: "/leaderboard", label: "LEADERBOARD" },
   { href: "/teams", label: "TEAMS" },
+  { href: "/maps", label: "MAPS" },
+  { href: "/prizes", label: "PRIZES" },
   { href: "/shop", label: "SHOP" },
   { href: "/pricing", label: "PRICING" },
   { href: "/rules", label: "RULES" },
@@ -19,7 +22,10 @@ export const footerExplore = [
   { href: "/pricing", label: "Pricing" },
   { href: "/rules", label: "Rules" },
   { href: "/features", label: "Features" },
-  { href: "/ranks", label: "Competitive Ranks" },
+  { href: "/ranks", label: "Ranks" },
+  { href: "/ranks/guide", label: "Calibration Codex" },
+  { href: "/maps", label: "Maps & Broadcast" },
+  { href: "/prizes", label: "Prizes" },
 ] as const;
 
 export const STEAM_AUTH_HREF = "/api/auth/steam";

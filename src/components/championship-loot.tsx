@@ -3,10 +3,11 @@
 import { useI18n } from "@/components/locale-provider";
 import { useText } from "@/components/text-provider";
 
+/** Preview cards only. The artwork is an original CSS plate, not a Valve render. */
 const SKINS = [
-  { weapon: "Butterfly Knife", finish: "Lore", wear: "factoryNew" },
-  { weapon: "M4A1-S", finish: "Welcome to the Jungle", wear: "minimalWear" },
-  { weapon: "Karambit", finish: "Lore", wear: "factoryNew" },
+  { weapon: "Butterfly Knife", finish: "Lore", wear: "factoryNew", slot: "1st place · per player" },
+  { weapon: "M4A1-S", finish: "Welcome to the Jungle", wear: "minimalWear", slot: "2nd place · per player" },
+  { weapon: "Karambit", finish: "Lore", wear: "factoryNew", slot: "MVP · single award" },
 ] as const;
 
 export function ChampionshipLoot() {
@@ -23,6 +24,7 @@ export function ChampionshipLoot() {
       <ul className="ace-champ-row">
         {SKINS.map((skin, index) => (
           <li key={`${skin.weapon}-${skin.finish}`} className="ace-champ-card">
+            <p className="ace-prize-status">Preview · not funded</p>
             <div className={`ace-skin-stage ace-skin-stage-${index}`} aria-hidden="true">
               <div className="ace-skin-3d" />
               <div className="ace-skin-floor" />
@@ -31,7 +33,9 @@ export function ChampionshipLoot() {
             <h3 className="mt-1 text-lg font-semibold text-white">
               {skin.weapon} <span className="text-[#FFD700]">| {skin.finish}</span>
             </h3>
-            <p className="mt-1 text-xs text-[#A9ABB3]">{copy.wear[skin.wear]}</p>
+            <p className="mt-1 text-xs text-[#A9ABB3]">
+              {copy.wear[skin.wear]} · Proposed slot: {skin.slot}
+            </p>
             <p className="ace-mock-checkout">{copy.exampleCard}</p>
           </li>
         ))}

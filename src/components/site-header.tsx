@@ -14,6 +14,7 @@ const NAV_KEYS: Partial<Record<(typeof siteNav)[number]["href"], MessageKey>> = 
   "/": "navHome",
   "/play": "navPlay",
   "/tournaments": "navTournaments",
+  "/ranks": "navRanks",
   "/leaderboard": "navLeaderboard",
   "/teams": "navTeams",
   "/shop": "navShop",
