@@ -54,7 +54,7 @@ export const RO: MessageBag = {
  "Zerouri până când un profil Steam verificat este conectat. Cifrele mostră 124 / 68% / 1,42 nu sunt afișate ca date în direct.",
  statsLive: "Victorii și înfrângeri din contul A.C.E. K/D nu este încă stocat.",
  membership: "ABONAMENT",
- membershipLede: "Gratuit $0.00. Plus $4.00/lună. Premium $7.00/lună. Prețurile afișate sunt blocate ca întregi. Planurile plătite nu cumpără clasament și nici adversari mai ușori. Încasarea nu este în funcțiune.",
+ membershipLede: "Gratuit $0. Plus $4/lună. Premium $7/lună. Prețurile afișate sunt blocate ca întregi. Planurile plătite nu cumpără clasament și nici adversari mai ușori. Încasarea nu este în funcțiune.",
  graphite: "GRAFIT",
  freePlan: "PLAN GRATUIT",
  goldTrim: "BORDURĂ AURIE",
@@ -75,12 +75,12 @@ export const RO: MessageBag = {
  freeOpenNow: "Open now · no checkout",
  choosePlus: "Alege Plus",
  choosePremium: "Alege Premium",
- plusPrice: "$4.00",
- premiumPrice: "$7.00",
+ plusPrice: "$4",
+ premiumPrice: "$7",
  preRegisterTitle: "PREÎNREGISTRARE LA BETA A.C.E. COMPETE",
  preRegisterBody: "Coada de calibrare prioritară de acces anticipat se deschide în curând prin autorizarea web Steam.",
  closeModal: "Închide",
- membershipDisclosure: "Prețurile afișate sunt blocate la Plus $4.00/lună și Premium $7.00/lună. Încasarea, finanțarea premiilor, Gmail, Discord webhook și cozile de clasament nu sunt în funcțiune pe acest sit. Populația de clasament rămâne {online}.",
+ membershipDisclosure: "Prețurile afișate sunt blocate la Plus $4/lună și Premium $7/lună. Încasarea, finanțarea premiilor, Gmail, Discord webhook și cozile de clasament nu sunt în funcțiune pe acest sit. Populația de clasament rămâne {online}.",
  integrity: "INTEGRITATE",
  uiHeartbeat: "PULSUL INTERFEȚEI: ÎN DIRECT",
  aiInfra: "INFRASTRUCTURĂ IA: NEIMPLEMENTATĂ",
@@ -196,7 +196,7 @@ export const RO: MessageBag = {
  "Zece meciuri de plasare, viteza de calcul a diviziei și recalibrarea ratingului de sezon sunt povestea de calibrare planificată. GĂSEȘTE MECI de clasament rămâne închis la eșec până există o cale Anti-Cheat verificată. Cifrele de pe această pagină nu sunt rezultate de meciuri în direct.",
  supportCat3Title: "Abonament și facturare",
  supportCat3Body:
- "Prețurile afișate rămân Plus $4.00/lună și Premium $7.00/lună. Anularea dintr-un clic este specificată pentru un panou viitor. Plata nu este implementată. Rambursările pentru o lună parțială urmează termenii publicați când există facturare — astăzi nu se face nicio debitare.",
+ "Prețurile afișate rămân Plus $4/lună și Premium $7/lună. Anularea dintr-un clic este specificată pentru un panou viitor. Plata nu este implementată. Rambursările pentru o lună parțială urmează termenii publicați când există facturare — astăzi nu se face nicio debitare.",
  supportTicket: "TRIMITE UN TICKET DE SUPORT >",
  supportTicketTitle: "Înveliș de revizuire administrativă",
  supportTicketBody:
@@ -234,7 +234,7 @@ export const RO: MessageBag = {
  shopLede:
  "Echipează-ți inventarul cu skin-uri de nivel înalt verificate, elemente de profil personalizate și unelte de acces la ligă.",
  shopNote:
- "Prețurile de abonament afișate rămân Plus $4.00/lună și Premium $7.00/lună. Cosmeticele plătite nu cumpără niciodată rating, adversari mai ușori sau prioritate la coadă. Plata nu este în direct.",
+ "Prețurile de abonament afișate rămân Plus $4/lună și Premium $7/lună. Cosmeticele plătite nu cumpără niciodată rating, adversari mai ușori sau prioritate la coadă. Plata nu este în direct.",
  shopTabSkins: "SKIN-URI DE ARME",
  shopTabCosmetics: "COSMETICE DE PROFIL",
  shopTabAccess: "ACCES LA LIGĂ",
@@ -332,7 +332,7 @@ export const RO: MessageBag = {
  rulesCh4P2:
  "Conduita interzisă include aranjarea meciurilor, spionajul dintr-un flux de spectator, partajarea contului ca să ocolești o restricție, discursul instigator la ură, publicarea datelor personale și sabotajul pe server. Sancțiunile merg de la un avertisment la excluderea temporară sau permanentă. O sesizare fără coroborare nu poate produce singură o interdicție permanentă. Ceasurile de hol, scările de recompense, calendarele de recompense la autentificare și straturile magazinului sunt previzualizări de machetă. Acest site nu încasează taxe de înscriere, nu acordă bani și nu expediază obiecte.",
  rulesCh4P3:
- "Prețurile de abonament afișate sunt Plus $4.00 pe lună și Premium $7.00 pe lună. Plata nu este în direct. Când există facturare, anularea și rambursările urmează avertismentul de abonament publicat. O interdicție de integritate pe viață, dacă un produs facturat și un client verificat există mai târziu, rămâne fără obligație de rambursare, cum se arată în capitolul 02.",
+ "Prețurile de abonament afișate sunt Plus $4 pe lună și Premium $7 pe lună. Plata nu este în direct. Când există facturare, anularea și rambursările urmează avertismentul de abonament publicat. O interdicție de integritate pe viață, dacă un produs facturat și un client verificat există mai târziu, rămâne fără obligație de rambursare, cum se arată în capitolul 02.",
  rulesCh4P4:
  "A.C.E., mărcile sale, numele originale de rang și textul original de pe acest site sunt proprietate intelectuală a A.C.E. Competitions Ltd. Mărcile Valve, Steam și Counter-Strike rămân ale titularilor lor. Găzduirea unui eveniment CS2 real cere în continuare o revizuire distinctă a termenilor Valve pentru turneu, server și împerechere înainte să se joace prima rundă.",
  rulesCh4P5:

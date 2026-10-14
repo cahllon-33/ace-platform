@@ -200,7 +200,7 @@ That command compares `prisma/schema.prisma` to the database, writes SQL under `
 ## D27. Admin counters and co-pilot are zeroed console staging
 
 - **Status:** Accepted
-- **Decision:** The command-center revenue counter starts at `$0.00 USD` and stays there until a real billing pipeline exists. Enrollment, online players, and regional match servers render as zero. The co-pilot ticker is a simulated gold readout, labeled `SIMULATED CORE`. Player dossier hashes, dates, and latency lines are layout samples. A console HWID mark changes the row status only.
+- **Decision:** The command-center revenue counter starts at `$0 USD` and stays there until a real billing pipeline exists. Enrollment, online players, and regional match servers render as zero. The co-pilot ticker is a simulated gold readout, labeled `SIMULATED CORE`. Player dossier hashes, dates, and latency lines are layout samples. A console HWID mark changes the row status only.
 - **Reason:** Honest-claims rules forbid a working AI anti-cheat, live billing, live match servers, or hardware collection. The previous `$142,590.00` and `12,492` figures read as live totals.
 - **Alternatives:** Keep the large cash figure as “display revenue” (rejected — it still looked funded). Wire the co-pilot to an external model (rejected — no spend, and it would imply a live security engine).
 - **Verify later:** Replace the zero counters when checkout and presence are actually connected.
@@ -208,7 +208,7 @@ That command compares `prisma/schema.prisma` to the database, writes SQL under `
 ## D28. Admin, teams, and tournaments read Prisma rows
 
 - **Status:** Accepted
-- **Decision:** The operator directory uses `prisma.user.findMany()` and `prisma.user.count()`. Online is the count of unexpired, unrevoked sessions. Gross subscription revenue stays `$0.00` because there is no billing ledger. Disconnect sets `steamId` to null. Premium, rank 10, and rating 3000 are real column updates. Reset returns rank, rating, wins, losses, and tier to schema defaults and clears that user’s rating history plus captain streaks. Team pages use `team.findMany` with `members.user`, which is the roster relation. There is no `Team.users` field.
+- **Decision:** The operator directory uses `prisma.user.findMany()` and `prisma.user.count()`. Online is the count of unexpired, unrevoked sessions. Gross subscription revenue stays `$0` because there is no billing ledger. Disconnect sets `steamId` to null. Premium, rank 10, and rating 3000 are real column updates. Reset returns rank, rating, wins, losses, and tier to schema defaults and clears that user’s rating history plus captain streaks. Team pages use `team.findMany` with `members.user`, which is the roster relation. There is no `Team.users` field.
 - **Reason:** Stage 3 already created these columns. Inventing revenue from list prices would claim money that was never charged. A second Prisma client at a new path would fight the existing singleton.
 - **Alternatives:** Leave the six sample admin rows (rejected for this request). Multiply Plus and Premium counts by $4 and $7 (rejected — checkout is not live).
 - **Verify later:** Staff roles in Stage 10 should replace the shared operator cookie before these updates are treated as moderation.
@@ -216,7 +216,7 @@ That command compares `prisma/schema.prisma` to the database, writes SQL under `
 ## D29. Admin falls back to five staging profiles when PostgreSQL is down
 
 - **Status:** Accepted
-- **Decision:** If the user query throws, `/admin/dashboard` renders five in-memory staging profiles instead of an empty “Database unavailable” table. Enrollment then reads “5 Verified Profiles (Staging Mode)”. That phrase is a staging label, not an identity check. Online stays 0 and gross stays `$0.00`. The four inventory buttons mutate that list in the browser and do not call Prisma. A successful database response replaces the staging list.
+- **Decision:** If the user query throws, `/admin/dashboard` renders five in-memory staging profiles instead of an empty “Database unavailable” table. Enrollment then reads “5 Verified Profiles (Staging Mode)”. That phrase is a staging label, not an identity check. Online stays 0 and gross stays `$0`. The four inventory buttons mutate that list in the browser and do not call Prisma. A successful database response replaces the staging list.
 - **Reason:** The local PostgreSQL server was not running, so the command center could not show or edit rows.
 - **Alternatives:** Leave the unavailable empty state (rejected for this preview). Insert the five names into PostgreSQL (rejected — the engine is down, and those rows would look like real accounts).
 - **Verify later:** Drop the fallback after `prisma migrate deploy` succeeds and the directory lists real `User` rows.

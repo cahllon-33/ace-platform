@@ -34,7 +34,7 @@ export const legalDocs: TextBag["legalDocs"] = {
       subscriptions: {
         title: "4. Geplante Abonnements",
         paragraphs: [
-          "Plus ($4.00/Monat) und Premium ($7.00/Monat) sind Anzeigepreise. Auf dieser Website gibt es keine Kasse. Die Plan-Schaltflächen öffnen eine Bestätigung auf dieser Website, keine Belastung, und sie versenden keine E-Mail. Sobald eine Abrechnung besteht, gilt die Kündigungsregel unter /pricing: monatlich verlängertes Abonnement, Kündigung in den Einstellungen des Dashboards, keine Erstattung für angebrochene Monate.",
+          "Plus ($4/Monat) und Premium ($7/Monat) sind Anzeigepreise. Auf dieser Website gibt es keine Kasse. Die Plan-Schaltflächen öffnen eine Bestätigung auf dieser Website, keine Belastung, und sie versenden keine E-Mail. Sobald eine Abrechnung besteht, gilt die Kündigungsregel unter /pricing: monatlich verlängertes Abonnement, Kündigung in den Einstellungen des Dashboards, keine Erstattung für angebrochene Monate.",
         ],
       },
       antiCheat: {

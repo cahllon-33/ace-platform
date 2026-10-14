@@ -16,7 +16,7 @@ export const teams: TextBag["teams"] = {
     kickerDefault: "Clan-Eintrag",
     title: "Seid ihr eine Mannschaft aus fünf Spielern?",
     intro:
-      "Platz 1 ist der über Steam angemeldete Spieler. Die Plätze 2 bis 5 müssen bereits A.C.E.-Konten haben. Das Speichern eines Clans berechnet keine $7.00, sendet keine E-Mail und setzt den Clan nicht auf die Tafel mit 100 Mannschaften.",
+      "Platz 1 ist der über Steam angemeldete Spieler. Die Plätze 2 bis 5 müssen bereits A.C.E.-Konten haben. Das Speichern eines Clans berechnet keine $7, sendet keine E-Mail und setzt den Clan nicht auf die Tafel mit 100 Mannschaften.",
     yes: "Ja, fünf Spieler",
     no: "Nein, Plätze offen lassen",
     seatsOpen: "Die fünf Plätze bleiben offen. Es wurde nichts gespeichert.",
@@ -47,7 +47,7 @@ export const teams: TextBag["teams"] = {
     facts: {
       email: "Es wird keine E-Mail gesendet. Der Premium-Brief bleibt unter /premium/receipt.",
       charge:
-        "Es wird nichts berechnet. Premium zu $7.00 pro Monat ist ein Anzeigepreis. Die Kasse ist nicht in Betrieb, und die gespeicherte Stufe ändert sich nicht.",
+        "Es wird nichts berechnet. Premium zu $7 pro Monat ist ein Anzeigepreis. Die Kasse ist nicht in Betrieb, und die gespeicherte Stufe ändert sich nicht.",
       board:
         "Ein gespeicherter Clan ist ein Kadereintrag. Er wird nicht auf die Tafel mit 100 Mannschaften gesetzt. Diese Tafel zeigt weiterhin 0 registriert, bis eine Saison öffnet.",
       steam:

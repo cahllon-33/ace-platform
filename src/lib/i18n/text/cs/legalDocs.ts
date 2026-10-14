@@ -34,7 +34,7 @@ export const legalDocs: TextBag["legalDocs"] = {
       subscriptions: {
         title: "4. Navrhovaná předplatná",
         paragraphs: [
-          "Plus ($4.00/měs.) a Premium ($7.00/měs.) jsou pouze zobrazené ceny. Na tomto webu neexistuje pokladna. Tlačítka tarifů otevírají na tomto webu potvrzení, nikoli platbu, a neodesílají e-mail. Až bude vyúčtování existovat, uplatní se pravidlo zrušení uvedené na /pricing: měsíční průběžně obnovované předplatné, zrušení v nastavení přehledu, za neúplné měsíce se peníze nevracejí.",
+          "Plus ($4/měs.) a Premium ($7/měs.) jsou pouze zobrazené ceny. Na tomto webu neexistuje pokladna. Tlačítka tarifů otevírají na tomto webu potvrzení, nikoli platbu, a neodesílají e-mail. Až bude vyúčtování existovat, uplatní se pravidlo zrušení uvedené na /pricing: měsíční průběžně obnovované předplatné, zrušení v nastavení přehledu, za neúplné měsíce se peníze nevracejí.",
         ],
       },
       antiCheat: {

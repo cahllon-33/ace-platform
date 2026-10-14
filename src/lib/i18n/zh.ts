@@ -54,7 +54,7 @@ export const ZH: MessageBag = {
  "在连接经过验证的 Steam 个人资料之前，数值为零。124 / 68% / 1.42 等样例数字不会作为实时数据展示。",
  statsLive: "胜负来自 A.C.E. 账户。击杀/死亡尚未存储。",
  membership: "会员",
- membershipLede: "免费 $0.00。Plus $4.00/月。Premium $7.00/月。展示价格锁定为整数。付费方案不会购买段位，也不会匹配更弱的对手。本站尚未开通结账。",
+ membershipLede: "免费 $0。Plus $4/月。Premium $7/月。展示价格锁定为整数。付费方案不会购买段位，也不会匹配更弱的对手。本站尚未开通结账。",
  graphite: "石墨",
  freePlan: "免费方案",
  goldTrim: "金边",
@@ -75,12 +75,12 @@ export const ZH: MessageBag = {
  freeOpenNow: "Open now · no checkout",
  choosePlus: "选择 Plus",
  choosePremium: "选择 Premium",
- plusPrice: "$4.00",
- premiumPrice: "$7.00",
+ plusPrice: "$4",
+ premiumPrice: "$7",
  preRegisterTitle: "预注册 A.C.E. 竞技测试",
  preRegisterBody: "优先校准队列的抢先体验即将通过 Steam 网页授权开放。",
  closeModal: "关闭",
- membershipDisclosure: "展示价格锁定为 Plus $4.00/月与 Premium $7.00/月。结账、奖金资金、Gmail、Discord webhook 与排位队列在本站均未上线。排位在线人数仍为 {online}。",
+ membershipDisclosure: "展示价格锁定为 Plus $4/月与 Premium $7/月。结账、奖金资金、Gmail、Discord webhook 与排位队列在本站均未上线。排位在线人数仍为 {online}。",
  integrity: "完整性",
  uiHeartbeat: "界面心跳：活动中",
  aiInfra: "人工智能基础设施：未部署",
@@ -194,7 +194,7 @@ export const ZH: MessageBag = {
  "十场定级赛、分级计算速度以及赛季评分再校准，是规划中的校准说明。在存在经过验证的反作弊路径之前，排位「寻找对局」保持失败即关闭。本页数字不是实时对局结果。",
  supportCat3Title: "订阅与账单支持",
  supportCat3Body:
- "展示价格仍为 Plus $4.00/月与 Premium $7.00/月。一键取消被规定用于未来的控制台。结账尚未实现。一旦存在账单，不足一个月的退款将遵循已公布的条款——今天没有任何扣款。",
+ "展示价格仍为 Plus $4/月与 Premium $7/月。一键取消被规定用于未来的控制台。结账尚未实现。一旦存在账单，不足一个月的退款将遵循已公布的条款——今天没有任何扣款。",
  supportTicket: "提交支持工单 >",
  supportTicketTitle: "管理员复核封装",
  supportTicketBody:
@@ -229,7 +229,7 @@ export const ZH: MessageBag = {
  shopTitle: "A.C.E. 市场 — 精英武器定制",
  shopLede: "为库存配备经过核验的高阶皮肤、自定义个人资料元素以及联赛准入工具。",
  shopNote:
- "展示中的会员价格仍为 Plus $4.00/月与 Premium $7.00/月。付费外观永远不能购买评分、更弱的对手或队列优先权。结账未上线。",
+ "展示中的会员价格仍为 Plus $4/月与 Premium $7/月。付费外观永远不能购买评分、更弱的对手或队列优先权。结账未上线。",
  shopTabSkins: "武器皮肤",
  shopTabCosmetics: "个人资料外观",
  shopTabAccess: "联赛准入",
@@ -326,7 +326,7 @@ export const ZH: MessageBag = {
  rulesCh4P2:
  "被禁止的行为包括打假赛、从观战画面传递信息、为逃避限制而共享账户、仇恨言论、人肉搜索，以及服务器内的破坏。处罚从警告到临时或永久排除。没有佐证的举报本身不能产生永久封禁。大厅时钟、战利品天梯、登录奖励日历与商店浮层都是版面预览。本网站不收取报名费、不颁发现金，也不寄送物品。",
  rulesCh4P3:
- "展示中的会员价格为 Plus 每月 $4.00、Premium 每月 $7.00。结账未上线。当账单存在时，取消与退款条款遵循已公布的订阅披露。若日后存在计费产品与经过验证的客户端，终身完整性封禁仍如第 02 章所述承担零退款责任。",
+ "展示中的会员价格为 Plus 每月 $4、Premium 每月 $7。结账未上线。当账单存在时，取消与退款条款遵循已公布的订阅披露。若日后存在计费产品与经过验证的客户端，终身完整性封禁仍如第 02 章所述承担零退款责任。",
  rulesCh4P4:
  "A.C.E.、其标识、原创段位名称以及本网站上的原创文案，是 A.C.E. Competitions Ltd. 的知识产权。Valve、Steam 与 Counter-Strike 的商标仍归其所有者所有。举办真正的 CS2 赛事，仍须在第一回合开始前，对 Valve 的锦标赛、服务器与匹配条款进行单独审查。",
  rulesCh4P5:

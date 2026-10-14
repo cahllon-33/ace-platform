@@ -34,7 +34,7 @@ export const legalDocs: TextBag["legalDocs"] = {
       subscriptions: {
         title: "4. Assinaturas propostas",
         paragraphs: [
-          "Plus ($4.00/mês) e Premium ($7.00/mês) são preços de exibição. Não há pagamento neste site. Os botões dos planos abrem um recibo neste site, não uma cobrança, e não enviam e-mail. Quando a cobrança existir, vale a regra de cancelamento em /pricing: assinatura mensal recorrente, cancelamento nas configurações do painel, meses parciais não reembolsáveis.",
+          "Plus ($4/mês) e Premium ($7/mês) são preços de exibição. Não há pagamento neste site. Os botões dos planos abrem um recibo neste site, não uma cobrança, e não enviam e-mail. Quando a cobrança existir, vale a regra de cancelamento em /pricing: assinatura mensal recorrente, cancelamento nas configurações do painel, meses parciais não reembolsáveis.",
         ],
       },
       antiCheat: {

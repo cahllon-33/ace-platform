@@ -16,7 +16,7 @@ export const teams: TextBag["teams"] = {
     kickerDefault: "Registro del clan",
     title: "¿Formas parte de un equipo de cinco?",
     intro:
-      "La plaza 1 es el jugador con sesión iniciada en Steam. Las plazas 2 a 5 ya deben tener cuentas A.C.E. Guardar un clan no cobra $7.00, no envía correo y no coloca al clan en el cuadro de 100 equipos.",
+      "La plaza 1 es el jugador con sesión iniciada en Steam. Las plazas 2 a 5 ya deben tener cuentas A.C.E. Guardar un clan no cobra $7, no envía correo y no coloca al clan en el cuadro de 100 equipos.",
     yes: "Sí, cinco jugadores",
     no: "No, dejar las plazas abiertas",
     seatsOpen: "Las cinco plazas siguen abiertas. No se guardó nada.",
@@ -47,7 +47,7 @@ export const teams: TextBag["teams"] = {
     facts: {
       email: "No se envía ningún correo. La carta Premium permanece en /premium/receipt.",
       charge:
-        "No se cobra nada. Premium a $7.00 al mes es un precio de pantalla. El pago no está activo y el nivel guardado no cambia.",
+        "No se cobra nada. Premium a $7 al mes es un precio de pantalla. El pago no está activo y el nivel guardado no cambia.",
       board:
         "Un clan guardado es un registro de plantilla. No se coloca en el cuadro de 100 equipos. Ese cuadro sigue mostrando 0 inscritos hasta que se abra una temporada.",
       steam:

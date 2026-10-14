@@ -16,7 +16,7 @@ export const teams: TextBag["teams"] = {
     kickerDefault: "Registo do clã",
     title: "São uma equipa de cinco?",
     intro:
-      "O lugar 1 é o jogador com sessão iniciada na Steam. Os lugares 2 a 5 já têm de ter contas A.C.E. Guardar um clã não cobra $7.00, não envia e-mail e não coloca o clã no quadro de 100 equipas.",
+      "O lugar 1 é o jogador com sessão iniciada na Steam. Os lugares 2 a 5 já têm de ter contas A.C.E. Guardar um clã não cobra $7, não envia e-mail e não coloca o clã no quadro de 100 equipas.",
     yes: "Sim, cinco jogadores",
     no: "Não, deixar os lugares abertos",
     seatsOpen: "Os cinco lugares continuam abertos. Nada foi guardado.",
@@ -47,7 +47,7 @@ export const teams: TextBag["teams"] = {
     facts: {
       email: "Não é enviado nenhum e-mail. A carta Premium fica em /premium/receipt.",
       charge:
-        "Nada é cobrado. O Premium a $7.00 por mês é um preço de apresentação. O pagamento não está ativo, e a patente guardada não muda.",
+        "Nada é cobrado. O Premium a $7 por mês é um preço de apresentação. O pagamento não está ativo, e a patente guardada não muda.",
       board:
         "Um clã guardado é um registo de plantel. Não é colocado no quadro de 100 equipas. Esse quadro continua a mostrar 0 registadas até abrir uma temporada.",
       steam:

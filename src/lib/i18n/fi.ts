@@ -55,7 +55,7 @@ export const FI: MessageBag = {
  statsLive: "Voitot ja tappiot tulevat A.C.E.-tililtä. K/D:tä ei vielä tallenneta.",
  membership: "JÄSENYYS",
  membershipLede:
-  "Ilmainen $0.00. Plus $4.00/kk. Premium $7.00/kk. Näytetyt hinnat on lukittu kokonaislukuihin. Maksulliset suunnitelmat eivät koskaan osta arvosanaa tai helpompia vastustajia. Kassa ei ole toiminnassa.",
+  "Ilmainen $0. Plus $4/kk. Premium $7/kk. Näytetyt hinnat on lukittu kokonaislukuihin. Maksulliset suunnitelmat eivät koskaan osta arvosanaa tai helpompia vastustajia. Kassa ei ole toiminnassa.",
  graphite: "GRAFIITTI",
  freePlan: "ILMAINEN SUUNNITELMA",
  goldTrim: "KULTAREUNUS",
@@ -76,13 +76,13 @@ export const FI: MessageBag = {
  freeOpenNow: "Open now · no checkout",
  choosePlus: "Valitse Plus",
  choosePremium: "Valitse Premium",
- plusPrice: "$4.00",
- premiumPrice: "$7.00",
+ plusPrice: "$4",
+ premiumPrice: "$7",
  preRegisterTitle: "ENNAKKOREKISTERÖIDY A.C.E. COMPETE -KILPAILUUN",
  preRegisterBody: "Ennakkokäytön ensisijainen kalibrointijono avautuu pian Steam-verkkovaltuutuksen kautta.",
  closeModal: "Sulje",
  membershipDisclosure:
-  "Näytetyt hinnat on lukittu tasolle Plus $4.00/kk ja Premium $7.00/kk. Kassa, palkintojen rahoitus, Gmail-hälytykset, Discord-webhookit ja sijoitusjonot eivät ole toiminnassa tällä sivustolla. Sijoitusväestö pysyy {online}.",
+  "Näytetyt hinnat on lukittu tasolle Plus $4/kk ja Premium $7/kk. Kassa, palkintojen rahoitus, Gmail-hälytykset, Discord-webhookit ja sijoitusjonot eivät ole toiminnassa tällä sivustolla. Sijoitusväestö pysyy {online}.",
  integrity: "EHEYS",
  uiHeartbeat: "KÄYTTÖLIITTYMÄN SYKE: KÄYNNISSÄ",
  aiInfra: "TEKOÄLYINFRASTRUKTUURI: EI OTETTU KÄYTTÖÖN",
@@ -197,7 +197,7 @@ export const FI: MessageBag = {
   "Kymmenen sijoittamisottelua, divisioonan laskentanopeus ja kauden arvosanan uudelleenkalibrointi ovat suunniteltu kalibrointikertomus. Sijoitusotteluiden ETSI OTTELU pysyy varmuuden vuoksi suljettuna, kunnes varmennettu huijauksenestopolku on olemassa. Tämän sivun luvut eivät ole live-ottelutuloksia.",
  supportCat3Title: "Tilauksen ja laskutuksen tuki",
  supportCat3Body:
-  "Näytetyt hinnat pysyvät Plus $4.00/kk ja Premium $7.00/kk. Yhden napsautuksen peruutus on määritelty tulevaan hallintapaneeliin. Kassaa ei ole toteutettu. Osakuukauden hyvitykset noudattavat julkaistuja ehtoja, kun laskutus on olemassa. Veloituksia ei tehdä tänään.",
+  "Näytetyt hinnat pysyvät Plus $4/kk ja Premium $7/kk. Yhden napsautuksen peruutus on määritelty tulevaan hallintapaneeliin. Kassaa ei ole toteutettu. Osakuukauden hyvitykset noudattavat julkaistuja ehtoja, kun laskutus on olemassa. Veloituksia ei tehdä tänään.",
  supportTicket: "LÄHETÄ TUKITIKETTI >",
  supportTicketTitle: "Ylläpidon tarkistuskääre",
  supportTicketBody:
@@ -235,7 +235,7 @@ export const FI: MessageBag = {
  shopLede:
   "Esikatsele asekortteja, profiilikehyksiä ja liigapääsyn tunnisteita. Mikään näistä ei ole toimitettu esine.",
  shopNote:
-  "Näytetyt jäsenyyshinnat pysyvät Plus $4.00/kk ja Premium $7.00/kk. Maksullinen kosmetiikka ei koskaan osta arvosanaa, helpompia vastustajia tai jonon etusijaa. Kassa ei ole toiminnassa.",
+  "Näytetyt jäsenyyshinnat pysyvät Plus $4/kk ja Premium $7/kk. Maksullinen kosmetiikka ei koskaan osta arvosanaa, helpompia vastustajia tai jonon etusijaa. Kassa ei ole toiminnassa.",
  shopTabSkins: "ASESKINIT",
  shopTabCosmetics: "PROFIILIN KOSMETIIKKA",
  shopTabAccess: "LIIGAPÄÄSY",
@@ -333,7 +333,7 @@ export const FI: MessageBag = {
  rulesCh4P2:
   "Kiellettyyn toimintaan kuuluvat ottelun tahallinen häviäminen, haamupelaaminen katsojasyötteestä, tilin jakaminen rajoituksen kiertämiseksi, vihapuhe, yksityisten tietojen paljastaminen ja palvelimen sisäinen sabotaasi. Seuraamukset vaihtelevat varoituksesta väliaikaiseen tai pysyvään sulkemiseen. Ilmoitus ilman tukevaa näyttöä ei voi yksinään tuottaa pysyvää kieltoa. Aulan kellot, saalistikapuut, kirjautumispalkintojen kalenterit ja kaupan peitteet ovat asettelun esikatseluja. Tämä sivusto ei peri osallistumismaksuja, ei jaa käteistä eikä toimita esineitä.",
  rulesCh4P3:
-  "Näytetyt jäsenyyshinnat ovat Plus $4.00 kuukaudessa ja Premium $7.00 kuukaudessa. Kassa ei ole toiminnassa. Kun laskutus on olemassa, peruutuksen ja hyvityksen ehdot noudattavat julkaistua tilausilmoitusta. Elinikäinen eheyskielto, jos laskutettava tuote ja varmennettu asiakasohjelma myöhemmin ovat olemassa, merkitsee yhä sitä, ettei hyvitysvastuuta ole, kuten luvussa 02 todetaan.",
+  "Näytetyt jäsenyyshinnat ovat Plus $4 kuukaudessa ja Premium $7 kuukaudessa. Kassa ei ole toiminnassa. Kun laskutus on olemassa, peruutuksen ja hyvityksen ehdot noudattavat julkaistua tilausilmoitusta. Elinikäinen eheyskielto, jos laskutettava tuote ja varmennettu asiakasohjelma myöhemmin ovat olemassa, merkitsee yhä sitä, ettei hyvitysvastuuta ole, kuten luvussa 02 todetaan.",
  rulesCh4P4:
   "A.C.E., sen tunnukset, alkuperäiset arvonimet ja alkuperäinen teksti tällä sivustolla ovat A.C.E. Competitions Ltd. -yhtiön immateriaalioikeutta. Valve-, Steam- ja Counter-Strike-tavaramerkit pysyvät omistajiensa omaisuutena. Todellisen CS2-tapahtuman järjestäminen edellyttää yhä erillistä arviota Valven turnaus-, palvelin- ja ottelunhakuehdoista, ennen kuin ensimmäinen kierros pelataan.",
  rulesCh4P5:

@@ -16,7 +16,7 @@ export const teams: TextBag["teams"] = {
     kickerDefault: "Záznam klanu",
     title: "Jste pětičlenný tým?",
     intro:
-      "Místo 1 je hráč přihlášený přes Steam. Místa 2 až 5 už musí mít účty A.C.E. Uložení klanu neúčtuje $7.00, neodesílá e-mail a nezařazuje klan na tabuli 100 týmů.",
+      "Místo 1 je hráč přihlášený přes Steam. Místa 2 až 5 už musí mít účty A.C.E. Uložení klanu neúčtuje $7, neodesílá e-mail a nezařazuje klan na tabuli 100 týmů.",
     yes: "Ano, pět hráčů",
     no: "Ne, nechat místa volná",
     seatsOpen: "Pět míst zůstává volných. Nic nebylo uloženo.",
@@ -47,7 +47,7 @@ export const teams: TextBag["teams"] = {
     facts: {
       email: "Žádný e-mail se neodesílá. Dopis Premium zůstává na /premium/receipt.",
       charge:
-        "Nic se neúčtuje. Premium za $7.00 měsíčně je zobrazená cena. Pokladna není v provozu a uložený tarif se nemění.",
+        "Nic se neúčtuje. Premium za $7 měsíčně je zobrazená cena. Pokladna není v provozu a uložený tarif se nemění.",
       board:
         "Uložený klan je záznam soupisky. Není zařazen na tabuli 100 týmů. Tato tabule ukazuje 0 registrovaných, dokud se neotevře sezóna.",
       steam:

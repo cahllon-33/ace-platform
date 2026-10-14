@@ -14,7 +14,7 @@
     kickerDefault: "Clan record",
     title: "Are you a team of five?",
     intro:
-      "Seat 1 is the player signed in with Steam. Seats 2 to 5 must already have A.C.E. accounts. Saving a clan does not charge $7.00, does not send email, and does not place the clan on the 100-team board.",
+      "Seat 1 is the player signed in with Steam. Seats 2 to 5 must already have A.C.E. accounts. Saving a clan does not charge $7, does not send email, and does not place the clan on the 100-team board.",
     yes: "Yes, five players",
     no: "No, leave the seats open",
     seatsOpen: "The five seats stay open. Nothing was stored.",
@@ -45,7 +45,7 @@
     facts: {
       email: "No email is sent. The Premium letter stays on /premium/receipt.",
       charge:
-        "Nothing is charged. Premium at $7.00 per month is a display price. Checkout is not live, and the stored tier does not change.",
+        "Nothing is charged. Premium at $7 per month is a display price. Checkout is not live, and the stored tier does not change.",
       board:
         "A stored clan is a roster record. It is not placed on the 100-team board. That board still shows 0 registered until a season opens.",
       steam:

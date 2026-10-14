@@ -61,7 +61,7 @@ export const HU: MessageBag = {
  statsLive: "Győzelmek és vereségek az A.C.E. fiókból. A K/D még nincs tárolva.",
  membership: "TAGSÁG",
  membershipLede:
- "Ingyenes $0.00. Plus $4.00/hó. Premium $7.00/hó. A megjelenített árak egész számra rögzítettek. Fizetős csomaggal nem lehet értékelést vagy könnyebb ellenfeleket vásárolni. A fizetés nem élő.",
+ "Ingyenes $0. Plus $4/hó. Premium $7/hó. A megjelenített árak egész számra rögzítettek. Fizetős csomaggal nem lehet értékelést vagy könnyebb ellenfeleket vásárolni. A fizetés nem élő.",
  graphite: "GRAFIT",
  freePlan: "INGYENES CSOMAG",
  goldTrim: "ARANY SZEGÉLY",
@@ -82,14 +82,14 @@ export const HU: MessageBag = {
  freeOpenNow: "Open now · no checkout",
  choosePlus: "A Plus választása",
  choosePremium: "A Premium választása",
- plusPrice: "$4.00",
- premiumPrice: "$7.00",
+ plusPrice: "$4",
+ premiumPrice: "$7",
  preRegisterTitle: "ELŐREGISZTRÁCIÓ AZ A.C.E. COMPETE KORAI HOZZÁFÉRÉSÉHEZ",
  preRegisterBody:
  "A korai hozzáférés elsőbbségi kalibrációs sora hamarosan megnyílik Steam webes engedélyezéssel.",
  closeModal: "Bezárás",
  membershipDisclosure:
- "A megjelenített árak rögzítve vannak: Plus $4.00/hó és Premium $7.00/hó. A fizetés, a díjak finanszírozása, a Gmail-riasztások, a Discord-webhookok és a rangsorolt sorok ezen a weboldalon nem élők. A rangsorolt létszám továbbra is {online}.",
+ "A megjelenített árak rögzítve vannak: Plus $4/hó és Premium $7/hó. A fizetés, a díjak finanszírozása, a Gmail-riasztások, a Discord-webhookok és a rangsorolt sorok ezen a weboldalon nem élők. A rangsorolt létszám továbbra is {online}.",
  integrity: "INTEGRITÁS",
  uiHeartbeat: "FELÜLETI SZÍVVERÉS: ÉLŐ",
  aiInfra: "AI-INFRASTRUKTÚRA: NINCS ÜZEMBE HELYEZVE",
@@ -206,7 +206,7 @@ export const HU: MessageBag = {
  "Tíz helyezési meccs, a divíziószámítás sebessége és a szezonális értékelés újrakalibrálása a tervezett kalibráció. A rangsorolt MECCS KERESÉSE hiba esetén zárva marad, amíg nincs ellenőrzött anti-cheat útvonal. Az ezen az oldalon látható számok nem élő meccseredmények.",
  supportCat3Title: "Előfizetés és számlázás támogatása",
  supportCat3Body:
- "A megjelenített árak továbbra is Plus $4.00/hó és Premium $7.00/hó. Az egykattintásos lemondás egy jövőbeli vezérlőpultra van előírva. A fizetés nincs megvalósítva. A töredék hónap visszatérítése a közzétett feltételeket követi, amint a számlázás létezik — ma nem történik terhelés.",
+ "A megjelenített árak továbbra is Plus $4/hó és Premium $7/hó. Az egykattintásos lemondás egy jövőbeli vezérlőpultra van előírva. A fizetés nincs megvalósítva. A töredék hónap visszatérítése a közzétett feltételeket követi, amint a számlázás létezik — ma nem történik terhelés.",
  supportTicket: "TÁMOGATÁSI JEGY KÜLDÉSE >",
  supportTicketTitle: "Adminisztrátori felülvizsgálati burok",
  supportTicketBody:
@@ -244,7 +244,7 @@ export const HU: MessageBag = {
  shopLede:
  "Fegyverkártyák, profilkeretek és ligahozzáférési címkék előnézete. Ezek közül egyik sem kézbesített tárgy.",
  shopNote:
- "A megjelenített tagsági árak továbbra is Plus $4.00/hó és Premium $7.00/hó. Fizetős kozmetikummal nem lehet értékelést, könnyebb ellenfeleket vagy sorban állási elsőbbséget vásárolni. A fizetés nem élő.",
+ "A megjelenített tagsági árak továbbra is Plus $4/hó és Premium $7/hó. Fizetős kozmetikummal nem lehet értékelést, könnyebb ellenfeleket vagy sorban állási elsőbbséget vásárolni. A fizetés nem élő.",
  shopTabSkins: "FEGYVERSKINEK",
  shopTabCosmetics: "PROFILKOZMETIKUMOK",
  shopTabAccess: "LIGAHOZZÁFÉRÉS",
@@ -343,7 +343,7 @@ export const HU: MessageBag = {
  rulesCh4P2:
  "A tiltott magatartáshoz tartozik a meccs eladása, a nézői képből való súgás, a fiókmegosztás korlátozás kijátszására, a gyűlöletbeszéd, a személyes adatok nyilvánosságra hozása és a szerveren belüli szabotázs. A büntetés a figyelmeztetéstől az ideiglenes vagy végleges kizárásig terjed. Megerősítés nélküli bejelentés önmagában nem vezethet végleges tiltáshoz. A lobbiórák, a zsákmánylétrák, a bejelentkezési jutalomnaptárak és a boltrétegek elrendezés-előnézetek. Ez a weboldal nem szed nevezési díjat, nem ítél oda készpénzt, és nem küld ki tárgyakat.",
  rulesCh4P3:
- "A megjelenített tagsági árak Plus $4.00 havonta és Premium $7.00 havonta. A fizetés nem élő. Amikor a számlázás létezik, a lemondás és a visszatérítés feltételei a közzétett előfizetési tájékoztatót követik. Az élethosszig tartó integritástiltás, ha később létezik számlázott termék és ellenőrzött kliens, továbbra is visszatérítési kötelezettség nélkül jár, ahogy a 02. fejezet kimondja.",
+ "A megjelenített tagsági árak Plus $4 havonta és Premium $7 havonta. A fizetés nem élő. Amikor a számlázás létezik, a lemondás és a visszatérítés feltételei a közzétett előfizetési tájékoztatót követik. Az élethosszig tartó integritástiltás, ha később létezik számlázott termék és ellenőrzött kliens, továbbra is visszatérítési kötelezettség nélkül jár, ahogy a 02. fejezet kimondja.",
  rulesCh4P4:
  "Az A.C.E., a megjelölései, az eredeti rangnevek és az eredeti szöveg ezen a weboldalon az A.C.E. Competitions Ltd. szellemi tulajdona. A Valve, a Steam és a Counter-Strike védjegyei a tulajdonosaiké maradnak. Valódi CS2 esemény rendezéséhez ettől függetlenül külön át kell tekinteni a Valve bajnoki, szerver- és meccskeresési feltételeit, mielőtt az első kört lejátsszák.",
  rulesCh4P5:

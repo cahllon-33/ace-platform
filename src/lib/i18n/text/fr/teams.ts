@@ -16,7 +16,7 @@ export const teams: TextBag["teams"] = {
     kickerDefault: "Fiche de clan",
     title: "Formez-vous une équipe de cinq ?",
     intro:
-      "La place 1 est le joueur connecté avec Steam. Les places 2 à 5 doivent déjà avoir un compte A.C.E. Enregistrer un clan ne facture pas $7.00, n'envoie pas d'e-mail et ne place pas le clan sur le tableau de 100 équipes.",
+      "La place 1 est le joueur connecté avec Steam. Les places 2 à 5 doivent déjà avoir un compte A.C.E. Enregistrer un clan ne facture pas $7, n'envoie pas d'e-mail et ne place pas le clan sur le tableau de 100 équipes.",
     yes: "Oui, cinq joueurs",
     no: "Non, laisser les places libres",
     seatsOpen: "Les cinq places restent libres. Rien n'a été enregistré.",
@@ -47,7 +47,7 @@ export const teams: TextBag["teams"] = {
     facts: {
       email: "Aucun e-mail n'est envoyé. La lettre Premium reste sur /premium/receipt.",
       charge:
-        "Rien n'est facturé. Premium à $7.00 par mois est un prix d'affichage. Le paiement n'est pas en ligne, et le palier enregistré ne change pas.",
+        "Rien n'est facturé. Premium à $7 par mois est un prix d'affichage. Le paiement n'est pas en ligne, et le palier enregistré ne change pas.",
       board:
         "Un clan enregistré est une fiche d'effectif. Il n'est pas placé sur le tableau de 100 équipes. Ce tableau affiche toujours 0 inscrite tant qu'aucune saison n'est ouverte.",
       steam:

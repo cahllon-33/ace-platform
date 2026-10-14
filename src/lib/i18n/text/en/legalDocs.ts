@@ -32,7 +32,7 @@
       subscriptions: {
         title: "4. Proposed subscriptions",
         paragraphs: [
-          "Plus ($4.00/mo) and Premium ($7.00/mo) are display prices. There is no checkout on this website. Plan buttons open a receipt on this website, not a charge, and they do not send email. When billing exists, the cancellation rule on /pricing applies: monthly rolling subscription, cancel in dashboard settings, partial months non-refundable.",
+          "Plus ($4/mo) and Premium ($7/mo) are display prices. There is no checkout on this website. Plan buttons open a receipt on this website, not a charge, and they do not send email. When billing exists, the cancellation rule on /pricing applies: monthly rolling subscription, cancel in dashboard settings, partial months non-refundable.",
         ],
       },
       antiCheat: {

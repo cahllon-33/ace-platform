@@ -54,7 +54,7 @@ export const ES: MessageBag = {
  "Ceros hasta que se conecte un perfil de Steam verificado. Las cifras de muestra 124 / 68 % / 1,42 no se muestran como datos en vivo.",
  statsLive: "Victorias y derrotas de la cuenta A.C.E. El K/D aún no se guarda.",
  membership: "MEMBRESÍA",
- membershipLede: "Gratis $0.00. Plus $4.00/mes. Premium $7.00/mes. Precios de pantalla fijados en enteros. Los planes de pago no compran clasificación ni rivales más fáciles. El cobro no está en vivo.",
+ membershipLede: "Gratis $0. Plus $4/mes. Premium $7/mes. Precios de pantalla fijados en enteros. Los planes de pago no compran clasificación ni rivales más fáciles. El cobro no está en vivo.",
  graphite: "GRAFITO",
  freePlan: "PLAN GRATUITO",
  goldTrim: "RIBETE DORADO",
@@ -75,12 +75,12 @@ export const ES: MessageBag = {
  freeOpenNow: "Abierto ahora · sin pago",
  choosePlus: "Elegir Plus",
  choosePremium: "Elegir Premium",
- plusPrice: "$4.00",
- premiumPrice: "$7.00",
+ plusPrice: "$4",
+ premiumPrice: "$7",
  preRegisterTitle: "PREINSCRÍBETE EN LA BETA A.C.E. COMPETE",
  preRegisterBody: "La cola de calibración prioritaria de acceso anticipado abrirá pronto mediante la autorización web de Steam.",
  closeModal: "Cerrar",
- membershipDisclosure: "Los precios de pantalla están fijados en Plus $4.00/mes y Premium $7.00/mes. El cobro, la financiación de premios, Gmail, Discord webhook y las colas clasificatorias no están en vivo en este sitio. La población clasificada permanece {online}.",
+ membershipDisclosure: "Los precios de pantalla están fijados en Plus $4/mes y Premium $7/mes. El cobro, la financiación de premios, Gmail, Discord webhook y las colas clasificatorias no están en vivo en este sitio. La población clasificada permanece {online}.",
  integrity: "INTEGRIDAD",
  uiHeartbeat: "PULSO DE INTERFAZ: EN VIVO",
  aiInfra: "INFRAESTRUCTURA DE IA: NO DESPLEGADA",
@@ -196,7 +196,7 @@ export const ES: MessageBag = {
  "Diez partidas de colocación, la velocidad de cálculo de división y la recalibración de puntuación de temporada son la historia de calibración planificada. BUSCAR PARTIDA clasificatorio permanece cerrado ante fallo hasta que exista una vía de anticheat verificada. Las cifras de esta página no son resultados de partidas en vivo.",
  supportCat3Title: "Suscripción y facturación",
  supportCat3Body:
- "Los precios mostrados siguen siendo Plus $4.00/mes y Premium $7.00/mes. La cancelación en un clic está especificada para un panel futuro. El pago no está implementado. Los reembolsos de mes parcial siguen los términos publicados cuando exista facturación: hoy no se realiza ningún cargo.",
+ "Los precios mostrados siguen siendo Plus $4/mes y Premium $7/mes. La cancelación en un clic está especificada para un panel futuro. El pago no está implementado. Los reembolsos de mes parcial siguen los términos publicados cuando exista facturación: hoy no se realiza ningún cargo.",
  supportTicket: "ENVIAR TICKET DE SOPORTE >",
  supportTicketTitle: "Envoltura de revisión administrativa",
  supportTicketBody:
@@ -234,7 +234,7 @@ export const ES: MessageBag = {
  shopLede:
  "Equipa tu inventario con skins de alto nivel verificados, elementos de perfil personalizados y herramientas de acceso a la liga.",
  shopNote:
- "Los precios de membresía mostrados siguen siendo Plus $4.00/mes y Premium $7.00/mes. Los cosméticos de pago nunca compran puntuación, rivales más fáciles ni prioridad de cola. El pago no está en vivo.",
+ "Los precios de membresía mostrados siguen siendo Plus $4/mes y Premium $7/mes. Los cosméticos de pago nunca compran puntuación, rivales más fáciles ni prioridad de cola. El pago no está en vivo.",
  shopTabSkins: "SKINS DE ARMAS",
  shopTabCosmetics: "COSMÉTICOS DE PERFIL",
  shopTabAccess: "ACCESO A LIGA",
@@ -332,7 +332,7 @@ export const ES: MessageBag = {
  rulesCh4P2:
  "La conducta prohibida incluye amañar partidas, espiar desde una retransmisión de espectador, compartir la cuenta para eludir una restricción, el discurso de odio, el doxeo y el sabotaje dentro del servidor. Las sanciones van desde un aviso hasta la exclusión temporal o permanente. Una denuncia sin corroboración no puede producir por sí sola una prohibición permanente. Los relojes del lobby, las escaleras de botín, los calendarios de recompensas de inicio de sesión y las capas de la tienda son vistas previas de diseño. Este sitio no cobra inscripciones, no entrega dinero ni envía objetos.",
  rulesCh4P3:
- "Los precios de membresía mostrados son Plus $4.00 al mes y Premium $7.00 al mes. El pago no está en vivo. Cuando exista facturación, la cancelación y los reembolsos siguen el aviso de suscripción publicado. Una prohibición de integridad de por vida, si más adelante existen un producto facturado y un cliente verificado, sigue sin obligación de reembolso, como se indica en el capítulo 02.",
+ "Los precios de membresía mostrados son Plus $4 al mes y Premium $7 al mes. El pago no está en vivo. Cuando exista facturación, la cancelación y los reembolsos siguen el aviso de suscripción publicado. Una prohibición de integridad de por vida, si más adelante existen un producto facturado y un cliente verificado, sigue sin obligación de reembolso, como se indica en el capítulo 02.",
  rulesCh4P4:
  "A.C.E., sus marcas, los nombres originales de rango y el texto original de este sitio son propiedad intelectual de A.C.E. Competitions Ltd. Las marcas de Valve, Steam, y Counter-Strike siguen siendo propiedad de sus titulares. Organizar un evento real de CS2 sigue exigiendo una revisión distinta de los términos de torneo, servidor y emparejamiento de Valve antes de que se juegue la primera ronda.",
  rulesCh4P5:

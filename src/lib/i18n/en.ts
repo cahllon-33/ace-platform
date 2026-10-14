@@ -53,7 +53,7 @@ export const EN = {
  statsLive: "Wins/losses from the A.C.E. account. K/D is not stored yet.",
  membership: "MEMBERSHIP",
  membershipLede:
- "Free $0.00. Plus $4.00/mo. Premium $7.00/mo. Integer-locked display prices. Paid plans never buy rating or easier opponents. Checkout is not live.",
+ "Free $0. Plus $4/mo. Premium $7/mo. Integer-locked display prices. Paid plans never buy rating or easier opponents. Checkout is not live.",
  graphite: "GRAPHITE",
  freePlan: "FREE PLAN",
  goldTrim: "GOLD TRIM",
@@ -74,13 +74,13 @@ export const EN = {
   freeOpenNow: "Open now · no checkout",
  choosePlus: "Choose Plus",
  choosePremium: "Choose Premium",
- plusPrice: "$4.00",
- premiumPrice: "$7.00",
+ plusPrice: "$4",
+ premiumPrice: "$7",
  preRegisterTitle: "PRE-REGISTER FOR A.C.E. COMPETE BETA",
  preRegisterBody: "Early Access Priority Calibration Queue Opening Soon via Steam Web Authorization.",
  closeModal: "Close",
  membershipDisclosure:
-    "Display prices are locked at Plus $4.00/mo and Premium $7.00/mo. Checkout, prize funding, emailed receipts, Discord webhooks and ranked queues are not live on this website. Thank-you letters are shown on the site, not emailed. The ranked queue is closed, so no ranked match is running.",
+    "Display prices are locked at Plus $4/mo and Premium $7/mo. Checkout, prize funding, emailed receipts, Discord webhooks and ranked queues are not live on this website. Thank-you letters are shown on the site, not emailed. The ranked queue is closed, so no ranked match is running.",
  integrity: "INTEGRITY",
  uiHeartbeat: "UI HEARTBEAT: LIVE",
  aiInfra: "AI INFRASTRUCTURE: NOT DEPLOYED",
@@ -195,7 +195,7 @@ export const EN = {
  "Ten placement matches, division calculation speed and seasonal rating recalibration are the planned calibration story. Ranked FIND MATCH stays fail-closed until a verified Anti-Cheat path exists. Figures on this page are not live match results.",
  supportCat3Title: "Subscription & Billing Support",
  supportCat3Body:
- "Display prices remain Plus $4.00/mo and Premium $7.00/mo. Single-click cancel is specified for a future dashboard. Checkout is not implemented. Partial-month refunds follow the published terms once billing exists — no charges run today.",
+ "Display prices remain Plus $4/mo and Premium $7/mo. Single-click cancel is specified for a future dashboard. Checkout is not implemented. Partial-month refunds follow the published terms once billing exists — no charges run today.",
  supportTicket: "SUBMIT A SUPPORT TICKET >",
  supportTicketTitle: "Admin review wrapper",
  supportTicketBody:
@@ -233,7 +233,7 @@ export const EN = {
  shopLede:
  "Preview weapon cards, profile frames and league-access labels. None of these are delivered items.",
  shopNote:
- "Display membership prices remain Plus $4.00/mo and Premium $7.00/mo. Paid cosmetics never buy rating, easier opponents, or queue priority. Checkout is not live.",
+ "Display membership prices remain Plus $4/mo and Premium $7/mo. Paid cosmetics never buy rating, easier opponents, or queue priority. Checkout is not live.",
  shopTabSkins: "WEAPON SKINS",
  shopTabCosmetics: "PROFILE COSMETICS",
  shopTabAccess: "LEAGUE ACCESS",
@@ -331,7 +331,7 @@ export const EN = {
  rulesCh4P2:
  "Prohibited conduct includes match throwing, ghosting from a spectator feed, account sharing to evade a restriction, hate speech, doxxing and in-server sabotage. Penalties range from a warning to temporary or permanent exclusion. A report without corroboration cannot produce a permanent ban by itself. Lobby clocks, loot ladders, login-reward calendars and shop overlays are layout previews. This website does not collect entry fees, award cash, or ship items.",
  rulesCh4P3:
- "Display membership prices are Plus $4.00 per month and Premium $7.00 per month. Checkout is not live. When billing exists, cancellation and refund terms follow the published subscription disclosure. A lifetime integrity ban, if a billed product and a verified client later exist, still carries zero refund liability as stated in Chapter 02.",
+ "Display membership prices are Plus $4 per month and Premium $7 per month. Checkout is not live. When billing exists, cancellation and refund terms follow the published subscription disclosure. A lifetime integrity ban, if a billed product and a verified client later exist, still carries zero refund liability as stated in Chapter 02.",
  rulesCh4P4:
  "A.C.E., its marks, original rank names and original copy on this website are intellectual property of A.C.E. Competitions Ltd. Trademarks of Valve, Steam and Counter-Strike remain the property of their owners. Hosting a real CS2 event still requires a distinct review of Valve’s tournament, server and matchmaking terms before the first round is played.",
  rulesCh4P5:

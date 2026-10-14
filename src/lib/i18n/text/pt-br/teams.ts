@@ -16,7 +16,7 @@ export const teams: TextBag["teams"] = {
     kickerDefault: "Registro do clã",
     title: "Vocês são uma equipe de cinco?",
     intro:
-      "A vaga 1 é o jogador conectado pela Steam. As vagas 2 a 5 já precisam ter contas A.C.E. Salvar um clã não cobra $7.00, não envia e-mail e não coloca o clã na chave de 100 equipes.",
+      "A vaga 1 é o jogador conectado pela Steam. As vagas 2 a 5 já precisam ter contas A.C.E. Salvar um clã não cobra $7, não envia e-mail e não coloca o clã na chave de 100 equipes.",
     yes: "Sim, cinco jogadores",
     no: "Não, deixar as vagas abertas",
     seatsOpen: "As cinco vagas continuam abertas. Nada foi salvo.",
@@ -47,7 +47,7 @@ export const teams: TextBag["teams"] = {
     facts: {
       email: "Nenhum e-mail é enviado. A carta Premium fica em /premium/receipt.",
       charge:
-        "Nada é cobrado. O Premium a $7.00 por mês é um preço de exibição. O pagamento não está ativo, e o plano salvo não muda.",
+        "Nada é cobrado. O Premium a $7 por mês é um preço de exibição. O pagamento não está ativo, e o plano salvo não muda.",
       board:
         "Um clã salvo é um registro de elenco. Ele não é colocado na chave de 100 equipes. Essa chave continua mostrando 0 inscritas até uma temporada abrir.",
       steam:

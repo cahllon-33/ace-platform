@@ -54,7 +54,7 @@ export const SV: MessageBag = {
  "Nollor tills en verifierad Steam-profil är ansluten. Provtalen 124 / 68 % / 1,42 visas inte som livedata.",
  statsLive: "Vinster och förluster från A.C.E.-kontot. K/D lagras inte ännu.",
  membership: "MEDLEMSKAP",
- membershipLede: "Gratis $0.00. Plus $4.00/mån. Premium $7.00/mån. Visningspriser låsta som heltal. Betalplaner köper varken rating eller lättare motståndare. Kassan är inte live.",
+ membershipLede: "Gratis $0. Plus $4/mån. Premium $7/mån. Visningspriser låsta som heltal. Betalplaner köper varken rating eller lättare motståndare. Kassan är inte live.",
  graphite: "GRAFIT",
  freePlan: "GRATISPLAN",
  goldTrim: "GULDKANT",
@@ -75,12 +75,12 @@ export const SV: MessageBag = {
  freeOpenNow: "Open now · no checkout",
  choosePlus: "Välj Plus",
  choosePremium: "Välj Premium",
- plusPrice: "$4.00",
- premiumPrice: "$7.00",
+ plusPrice: "$4",
+ premiumPrice: "$7",
  preRegisterTitle: "FÖRREGISTRERA DIG TILL A.C.E. COMPETE-BETAN",
  preRegisterBody: "Prioriterad kalibreringskö för tidig åtkomst öppnar snart via Steams webbauktorisering.",
  closeModal: "Stäng",
- membershipDisclosure: "Visningspriserna är låsta till Plus $4.00/mån och Premium $7.00/mån. Kassa, prisfinansiering, Gmail, Discord-webhook och rankade köer är inte live på den här webbplatsen. Den rankade populationen förblir {online}.",
+ membershipDisclosure: "Visningspriserna är låsta till Plus $4/mån och Premium $7/mån. Kassa, prisfinansiering, Gmail, Discord-webhook och rankade köer är inte live på den här webbplatsen. Den rankade populationen förblir {online}.",
  integrity: "INTEGRITET",
  uiHeartbeat: "GRÄNSSNITTSPULS: DIREKT",
  aiInfra: "AI-INFRASTRUKTUR: INTE DRIFTSATT",
@@ -196,7 +196,7 @@ export const SV: MessageBag = {
  "Tio placeringsmatcher, beräkningshastighet för division och säsongsvis omkalibrering av ranking är den planerade kalibreringsberättelsen. Rankad HITTA MATCH förblir stängd vid fel tills en verifierad anti-cheat-väg finns. Siffrorna på den här sidan är inte live-matchresultat.",
  supportCat3Title: "Prenumeration och fakturering",
  supportCat3Body:
- "Visade priser förblir Plus $4.00/mån och Premium $7.00/mån. Avbokning med ett klick är specificerad för en framtida panel. Kassan är inte införd. Återbetalning för del av månad följer de publicerade villkoren när fakturering finns — inga debiteringar sker idag.",
+ "Visade priser förblir Plus $4/mån och Premium $7/mån. Avbokning med ett klick är specificerad för en framtida panel. Kassan är inte införd. Återbetalning för del av månad följer de publicerade villkoren när fakturering finns — inga debiteringar sker idag.",
  supportTicket: "SKICKA SUPPORTÄRENDE >",
  supportTicketTitle: "Administrativt granskningsskal",
  supportTicketBody:
@@ -234,7 +234,7 @@ export const SV: MessageBag = {
  shopLede:
  "Utrusta ditt förråd med verifierade högklassiga skinn, egna profilelement och verktyg för ligaåtkomst.",
  shopNote:
- "Visade medlemspriser förblir Plus $4.00/mån och Premium $7.00/mån. Betald kosmetik köper aldrig ranking, enklare motståndare eller köprioritet. Kassan är inte live.",
+ "Visade medlemspriser förblir Plus $4/mån och Premium $7/mån. Betald kosmetik köper aldrig ranking, enklare motståndare eller köprioritet. Kassan är inte live.",
  shopTabSkins: "VAPENSKINN",
  shopTabCosmetics: "PROFILKOSMETIK",
  shopTabAccess: "LIGAÅTKOMST",
@@ -332,7 +332,7 @@ export const SV: MessageBag = {
  rulesCh4P2:
  "Förbjudet beteende omfattar att lägga matcher, att tjuvtitta via en åskådarström, kontodelning för att kringgå en begränsning, hatpropaganda, publicering av personuppgifter och sabotage på servern. Påföljder går från en varning till tillfällig eller permanent uteslutning. En anmälan utan stöd kan inte ensam ge ett permanent förbud. Lobbyklockor, bytesstegar, kalendrar för inloggningsbelöningar och butikslager är dispositionsförhandsvisningar. Den här webbplatsen tar inte ut anmälningsavgifter, delar inte ut pengar och skickar inte föremål.",
  rulesCh4P3:
- "Visade medlemspriser är Plus $4.00 per månad och Premium $7.00 per månad. Kassan är inte live. När fakturering finns följer avbokning och återbetalning den publicerade prenumerationsupplysningen. Ett livstidsförbud för integritet, om en fakturerad produkt och en verifierad klient senare finns, medför fortfarande ingen återbetalningsskyldighet enligt kapitel 02.",
+ "Visade medlemspriser är Plus $4 per månad och Premium $7 per månad. Kassan är inte live. När fakturering finns följer avbokning och återbetalning den publicerade prenumerationsupplysningen. Ett livstidsförbud för integritet, om en fakturerad produkt och en verifierad klient senare finns, medför fortfarande ingen återbetalningsskyldighet enligt kapitel 02.",
  rulesCh4P4:
  "A.C.E., dess märken, ursprungliga ranknamn och ursprunglig text på den här webbplatsen är immateriell egendom tillhörande A.C.E. Competitions Ltd. Varumärken för Valve, Steam, och Counter-Strike förblir sina ägares egendom. Att arrangera ett riktigt CS2-evenemang kräver fortfarande en särskild granskning av Valves turnerings-, server- och matchningsvillkor innan första rundan spelas.",
  rulesCh4P5:

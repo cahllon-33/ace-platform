@@ -16,7 +16,7 @@ export const teams: TextBag["teams"] = {
     kickerDefault: "Zapis klanu",
     title: "Czy jesteście drużyną pięciu graczy?",
     intro:
-      "Miejsce 1 to gracz zalogowany przez Steam. Miejsca od 2 do 5 muszą już mieć konta A.C.E. Zapisanie klanu nie pobiera $7.00, nie wysyła e-maila i nie umieszcza klanu w tabeli 100 drużyn.",
+      "Miejsce 1 to gracz zalogowany przez Steam. Miejsca od 2 do 5 muszą już mieć konta A.C.E. Zapisanie klanu nie pobiera $7, nie wysyła e-maila i nie umieszcza klanu w tabeli 100 drużyn.",
     yes: "Tak, pięciu graczy",
     no: "Nie, zostaw miejsca wolne",
     seatsOpen: "Pięć miejsc pozostaje wolnych. Nic nie zostało zapisane.",
@@ -47,7 +47,7 @@ export const teams: TextBag["teams"] = {
     facts: {
       email: "Nie jest wysyłany żaden e-mail. List Premium pozostaje pod adresem /premium/receipt.",
       charge:
-        "Nic nie jest pobierane. Premium za $7.00 miesięcznie to cena wyświetlana. Kasa nie działa, a zapisany poziom się nie zmienia.",
+        "Nic nie jest pobierane. Premium za $7 miesięcznie to cena wyświetlana. Kasa nie działa, a zapisany poziom się nie zmienia.",
       board:
         "Zapisany klan to wpis składu. Nie jest umieszczany w tabeli 100 drużyn. Ta tabela nadal pokazuje 0 zarejestrowanych, dopóki nie otworzy się sezon.",
       steam:

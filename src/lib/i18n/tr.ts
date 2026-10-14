@@ -54,7 +54,7 @@ export const TR: MessageBag = {
  "Doğrulanmış bir Steam profili bağlanana kadar sıfırlar. 124 / %68 / 1,42 örnek rakamları canlı veri olarak gösterilmez.",
  statsLive: "Galibiyet ve mağlubiyetler A.C.E. hesabındandır. K/D henüz saklanmıyor.",
  membership: "ÜYELİK",
- membershipLede: "Ücretsiz $0.00. Plus $4.00/ay. Premium $7.00/ay. Görünen fiyatlar tam sayı olarak kilitlidir. Ücretli planlar derecelendirme veya daha kolay rakipler satın almaz. Ödeme canlı değildir.",
+ membershipLede: "Ücretsiz $0. Plus $4/ay. Premium $7/ay. Görünen fiyatlar tam sayı olarak kilitlidir. Ücretli planlar derecelendirme veya daha kolay rakipler satın almaz. Ödeme canlı değildir.",
  graphite: "GRAFİT",
  freePlan: "ÜCRETSİZ PLAN",
  goldTrim: "ALTIN KENAR",
@@ -75,12 +75,12 @@ export const TR: MessageBag = {
  freeOpenNow: "Open now · no checkout",
  choosePlus: "Plus seç",
  choosePremium: "Premium seç",
- plusPrice: "$4.00",
- premiumPrice: "$7.00",
+ plusPrice: "$4",
+ premiumPrice: "$7",
  preRegisterTitle: "A.C.E. COMPETE BETA ÖN KAYDI",
  preRegisterBody: "Erken erişim öncelikli kalibrasyon kuyruğu yakında Steam web yetkilendirmesiyle açılır.",
  closeModal: "Kapat",
- membershipDisclosure: "Görünen fiyatlar Plus $4.00/ay ve Premium $7.00/ay olarak kilitlidir. Ödeme, ödül finansmanı, Gmail, Discord webhook ve dereceli kuyruklar bu sitede canlı değildir. Dereceli nüfus {online} olarak kalır.",
+ membershipDisclosure: "Görünen fiyatlar Plus $4/ay ve Premium $7/ay olarak kilitlidir. Ödeme, ödül finansmanı, Gmail, Discord webhook ve dereceli kuyruklar bu sitede canlı değildir. Dereceli nüfus {online} olarak kalır.",
  integrity: "BÜTÜNLÜK",
  uiHeartbeat: "ARAYÜZ NABZI: CANLI",
  aiInfra: "YAPAY ZEKA ALTYAPISI: KONUŞLANDIRILMADI",
@@ -196,7 +196,7 @@ export const TR: MessageBag = {
  "On yerleştirme maçı, bölüm hesaplama hızı ve sezonluk puan yeniden kalibrasyonu planlanan kalibrasyon anlatısıdır. Dereceli MAÇ BUL, doğrulanmış bir Anti-Cheat yolu olana kadar hata durumunda kapalı kalır. Bu sayfadaki rakamlar canlı maç sonuçları değildir.",
  supportCat3Title: "Abonelik ve faturalama",
  supportCat3Body:
- "Gösterilen fiyatlar Plus $4.00/ay ve Premium $7.00/ay olarak kalır. Tek tıkla iptal, gelecekteki bir pano için belirtilmiştir. Ödeme uygulanmamıştır. Kısmi ay iadeleri, faturalama var olduğunda yayımlanan şartlara uyar — bugün hiçbir ücret alınmaz.",
+ "Gösterilen fiyatlar Plus $4/ay ve Premium $7/ay olarak kalır. Tek tıkla iptal, gelecekteki bir pano için belirtilmiştir. Ödeme uygulanmamıştır. Kısmi ay iadeleri, faturalama var olduğunda yayımlanan şartlara uyar — bugün hiçbir ücret alınmaz.",
  supportTicket: "DESTEK BİLETİ GÖNDER >",
  supportTicketTitle: "Yönetici inceleme kabuğu",
  supportTicketBody:
@@ -234,7 +234,7 @@ export const TR: MessageBag = {
  shopLede:
  "Envanterini doğrulanmış üst düzey skinler, özel profil öğeleri ve lig erişim araçlarıyla donat.",
  shopNote:
- "Gösterilen üyelik fiyatları Plus $4.00/ay ve Premium $7.00/ay olarak kalır. Ücretli kozmetikler asla puan, daha kolay rakipler veya kuyruk önceliği satın almaz. Ödeme canlı değildir.",
+ "Gösterilen üyelik fiyatları Plus $4/ay ve Premium $7/ay olarak kalır. Ücretli kozmetikler asla puan, daha kolay rakipler veya kuyruk önceliği satın almaz. Ödeme canlı değildir.",
  shopTabSkins: "SİLAH SKİNLERİ",
  shopTabCosmetics: "PROFİL KOZMETİĞİ",
  shopTabAccess: "LİG ERİŞİMİ",
@@ -332,7 +332,7 @@ export const TR: MessageBag = {
  rulesCh4P2:
  "Yasak davranışa maç satmak, izleyici yayınından bilgi sızdırmak, bir kısıtlamadan kaçmak için hesap paylaşmak, nefret söylemi, kişisel verileri ifşa etmek ve sunucu içi sabotaj girer. Cezalar uyarıdan geçici veya kalıcı dışlamaya kadar gider. Doğrulaması olmayan bir bildirim tek başına kalıcı yasak üretemez. Lobi saatleri, ganimet merdivenleri, giriş ödülü takvimleri ve mağaza katmanları yerleşim önizlemeleridir. Bu site kayıt ücreti toplamaz, nakit vermez ve öğe göndermez.",
  rulesCh4P3:
- "Gösterilen üyelik fiyatları ayda Plus $4.00 ve ayda Premium $7.00'dır. Ödeme canlı değildir. Faturalama var olduğunda iptal ve iade, yayımlanan abonelik açıklamasına uyar. Faturalı bir ürün ve doğrulanmış bir istemci sonra var olursa ömür boyu bütünlük yasağı, bölüm 02'de belirtildiği gibi yine sıfır iade yükümlülüğü taşır.",
+ "Gösterilen üyelik fiyatları ayda Plus $4 ve ayda Premium $7'dır. Ödeme canlı değildir. Faturalama var olduğunda iptal ve iade, yayımlanan abonelik açıklamasına uyar. Faturalı bir ürün ve doğrulanmış bir istemci sonra var olursa ömür boyu bütünlük yasağı, bölüm 02'de belirtildiği gibi yine sıfır iade yükümlülüğü taşır.",
  rulesCh4P4:
  "A.C.E., markaları, özgün rütbe adları ve bu sitedeki özgün metin A.C.E. Competitions Ltd. fikri mülkiyetidir. Valve, Steam, ve Counter-Strike markaları sahiplerinin mülkiyetinde kalır. Gerçek bir CS2 etkinliği düzenlemek, ilk tur oynanmadan önce Valve'ın turnuva, sunucu ve eşleştirme şartlarının ayrı bir incelemesini yine gerektirir.",
  rulesCh4P5:

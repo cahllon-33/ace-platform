@@ -54,7 +54,7 @@ export const FR: MessageBag = {
  "Des zéros jusqu'à ce qu'un profil Steam vérifié soit connecté. Les chiffres d'exemple 124 / 68 % / 1,42 ne sont pas présentés comme des données en direct.",
  statsLive: "Victoires et défaites du compte A.C.E. Le K/D n'est pas encore enregistré.",
  membership: "ABONNEMENT",
- membershipLede: "Gratuit $0.00. Plus $4.00/mois. Premium $7.00/mois. Prix d’affichage verrouillés en entiers. Les forfaits payants n’achètent ni classement ni adversaires plus faciles. L’encaissement n’est pas en ligne.",
+ membershipLede: "Gratuit $0. Plus $4/mois. Premium $7/mois. Prix d’affichage verrouillés en entiers. Les forfaits payants n’achètent ni classement ni adversaires plus faciles. L’encaissement n’est pas en ligne.",
  graphite: "GRAPHITE",
  freePlan: "OFFRE GRATUITE",
  goldTrim: "LISERÉ OR",
@@ -75,12 +75,12 @@ export const FR: MessageBag = {
  freeOpenNow: "Ouvert maintenant · sans paiement",
  choosePlus: "Choisir Plus",
  choosePremium: "Choisir Premium",
- plusPrice: "$4.00",
- premiumPrice: "$7.00",
+ plusPrice: "$4",
+ premiumPrice: "$7",
  preRegisterTitle: "PRÉINSCRIPTION À LA BÊTA A.C.E. COMPETE",
  preRegisterBody: "La file de calibrage prioritaire en accès anticipé ouvrira bientôt via l'autorisation web Steam.",
  closeModal: "Fermer",
- membershipDisclosure: "Les prix d’affichage sont verrouillés à Plus $4.00/mois et Premium $7.00/mois. Encaissement, financement des prix, Gmail, Discord webhook et files classées ne sont pas en ligne sur ce site. La population classée reste {online}.",
+ membershipDisclosure: "Les prix d’affichage sont verrouillés à Plus $4/mois et Premium $7/mois. Encaissement, financement des prix, Gmail, Discord webhook et files classées ne sont pas en ligne sur ce site. La population classée reste {online}.",
  integrity: "INTÉGRITÉ",
  uiHeartbeat: "POULS DE L'INTERFACE : EN DIRECT",
  aiInfra: "INFRASTRUCTURE D'IA : NON DÉPLOYÉE",
@@ -196,7 +196,7 @@ export const FR: MessageBag = {
  "Dix matchs de placement, la vitesse de calcul des divisions et le recalibrage de cote de saison constituent le récit de calibrage prévu. TROUVER UN MATCH classé reste fermé en cas d'échec jusqu'à ce qu'une voie anti-triche vérifiée existe. Les chiffres de cette page ne sont pas des résultats de matchs en direct.",
  supportCat3Title: "Abonnement et facturation",
  supportCat3Body:
- "Les prix affichés restent Plus $4.00/mois et Premium $7.00/mois. L'annulation en un clic est prévue pour un tableau de bord futur. Le paiement n'est pas implémenté. Les remboursements de mois partiel suivent les conditions publiées dès que la facturation existe — aucun débit n'a lieu aujourd'hui.",
+ "Les prix affichés restent Plus $4/mois et Premium $7/mois. L'annulation en un clic est prévue pour un tableau de bord futur. Le paiement n'est pas implémenté. Les remboursements de mois partiel suivent les conditions publiées dès que la facturation existe — aucun débit n'a lieu aujourd'hui.",
  supportTicket: "ENVOYER UN TICKET D'ASSISTANCE >",
  supportTicketTitle: "Enveloppe de revue administrative",
  supportTicketBody:
@@ -234,7 +234,7 @@ export const FR: MessageBag = {
  shopLede:
  "Équipez votre inventaire de skins de haut niveau vérifiés, d'éléments de profil personnalisés et d'outils d'accès à la ligue.",
  shopNote:
- "Les prix d'abonnement affichés restent Plus $4.00/mois et Premium $7.00/mois. Les cosmétiques payants n'achètent jamais de cote, d'adversaires plus faciles ni de priorité de file. Le paiement n'est pas en direct.",
+ "Les prix d'abonnement affichés restent Plus $4/mois et Premium $7/mois. Les cosmétiques payants n'achètent jamais de cote, d'adversaires plus faciles ni de priorité de file. Le paiement n'est pas en direct.",
  shopTabSkins: "SKINS D'ARMES",
  shopTabCosmetics: "COSMÉTIQUES DE PROFIL",
  shopTabAccess: "ACCÈS LIGUE",
@@ -332,7 +332,7 @@ export const FR: MessageBag = {
  rulesCh4P2:
  "La conduite interdite comprend le truquage de matchs, l'espionnage depuis un flux spectateur, le partage de compte pour contourner une restriction, le discours de haine, la divulgation de données personnelles et le sabotage sur le serveur. Les sanctions vont d'un avertissement à l'exclusion temporaire ou permanente. Un signalement sans corroboration ne peut pas, à lui seul, produire un ban permanent. Les horloges de lobby, les échelles de butin, les calendriers de récompenses de connexion et les couches de boutique sont des aperçus de mise en page. Ce site ne perçoit pas de droit d'inscription, n'attribue pas d'argent et n'expédie pas d'objets.",
  rulesCh4P3:
- "Les prix d'abonnement affichés sont Plus $4.00 par mois et Premium $7.00 par mois. Le paiement n'est pas en direct. Lorsque la facturation existera, l'annulation et les remboursements suivront l'avis d'abonnement publié. Un ban d'intégrité à vie, si un produit facturé et un client vérifié existent plus tard, reste sans obligation de remboursement, comme indiqué au chapitre 02.",
+ "Les prix d'abonnement affichés sont Plus $4 par mois et Premium $7 par mois. Le paiement n'est pas en direct. Lorsque la facturation existera, l'annulation et les remboursements suivront l'avis d'abonnement publié. Un ban d'intégrité à vie, si un produit facturé et un client vérifié existent plus tard, reste sans obligation de remboursement, comme indiqué au chapitre 02.",
  rulesCh4P4:
  "A.C.E., ses marques, les noms de rang originaux et le texte original de ce site sont la propriété intellectuelle d'A.C.E. Competitions Ltd. Les marques de Valve, Steam, et Counter-Strike restent la propriété de leurs titulaires. Organiser un véritable événement CS2 exige encore un examen distinct des conditions de tournoi, de serveur et de matchmaking de Valve avant que la première manche soit jouée.",
  rulesCh4P5:
