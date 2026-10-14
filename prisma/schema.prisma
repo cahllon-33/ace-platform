@@ -1,0 +1,274 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum AccountStatus {
+  ACTIVE
+  SUSPENDED
+  BANNED
+  TEMP_BANNED
+  PERM_BANNED
+  UNDER_REVIEW
+}
+
+enum SubscriptionTier {
+  FREE
+  PLUS
+  PREMIUM
+}
+
+enum TeamMemberRole {
+  CAPTAIN
+  PLAYER
+}
+
+enum InvitationStatus {
+  PENDING
+  ACCEPTED
+  DECLINED
+  EXPIRED
+}
+
+enum TournamentStatus {
+  DRAFT
+  REGISTRATION
+  LOCKED
+  IN_PROGRESS
+  COMPLETED
+}
+
+enum MatchState {
+  PENDING
+  BYE
+  IN_PROGRESS
+  COMPLETED
+  DISPUTED
+  CANCELLED
+}
+
+model User {
+  id                String           @id @default(uuid())
+  /// Indexed unique SteamID64 for OpenID callback upserts. Null after an operator disconnect.
+  steamId           String?          @unique
+  /// Player contact address. The unique constraint is the lookup index. Empty until the signed-in player saves one. Saving it does not verify the mailbox.
+  email             String?          @unique
+  username          String
+  /// Public Steam persona kept for existing lobby and leaderboard reads.
+  displayName       String
+  avatarUrl         String           @default("")
+  accountStatus     AccountStatus    @default(ACTIVE)
+  subscriptionTier  SubscriptionTier @default(FREE)
+  /// Engine ladder step. Database CHECK plus application code keep this in 1–10.
+  rankLevel         Int              @default(1)
+  competitiveRating Int              @default(1000)
+  wins              Int              @default(0)
+  losses            Int              @default(0)
+  createdAt         DateTime         @default(now())
+  updatedAt         DateTime         @updatedAt
+
+  sessions           UserSession[]
+  captainedTeams     Team[]          @relation("TeamCaptain")
+  teamMemberships    TeamMember[]
+  sentInvites        TeamInvitation[] @relation("InviteSender")
+  receivedInvites    TeamInvitation[] @relation("InviteRecipient")
+  ratingHistory      RatingHistory[]
+  bans               BanRecord[]
+  matchPlayers       MatchPlayer[]
+  createdTournaments Tournament[]    @relation("TournamentCreator")
+  reports            MatchDispute[]  @relation("DisputeReporter")
+}
+
+model UserSession {
+  id        String   @id @default(cuid())
+  userId    String
+  tokenHash String   @unique
+  expiresAt DateTime
+  revokedAt DateTime?
+  createdAt DateTime @default(now())
+  /// Refreshed while the player loads the site. Presence counts this, not the 14-day cookie alone.
+  lastSeenAt DateTime @default(now())
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId])
+  @@index([expiresAt])
+  @@index([lastSeenAt])
+}
+
+model Team {
+  id              String   @id @default(uuid())
+  name            String   @unique
+  clanTag         String
+  /// Legacy short tag kept so existing pages can keep reading `team.tag`.
+  tag             String?
+  logoUrl         String   @default("")
+  captainId       String
+  captain         User     @relation("TeamCaptain", fields: [captainId], references: [id])
+  combinedWinRate Float    @default(0)
+  activeStreak    Int      @default(0)
+  /// Standing 5v5 roster size. Captains fill this through invitations.
+  rosterCap       Int      @default(5)
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+
+  members          TeamMember[]
+  invitations      TeamInvitation[]
+  entries          TournamentEntry[]
+  matchHistoryAsA  MatchHistory[] @relation("MatchHistoryTeamA")
+  matchHistoryAsB  MatchHistory[] @relation("MatchHistoryTeamB")
+
+  @@index([captainId])
+}
+
+model TeamMember {
+  id       String         @id @default(cuid())
+  teamId   String
+  userId   String
+  role     TeamMemberRole @default(PLAYER)
+  joinedAt DateTime       @default(now())
+  team     Team           @relation(fields: [teamId], references: [id], onDelete: Cascade)
+  user     User           @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([teamId, userId])
+  @@index([userId])
+}
+
+model TeamInvitation {
+  id          String           @id @default(cuid())
+  teamId      String
+  inviterId   String
+  inviteeId   String
+  status      InvitationStatus @default(PENDING)
+  createdAt   DateTime         @default(now())
+  respondedAt DateTime?
+  team        Team             @relation(fields: [teamId], references: [id], onDelete: Cascade)
+  inviter     User             @relation("InviteSender", fields: [inviterId], references: [id], onDelete: Cascade)
+  invitee     User             @relation("InviteRecipient", fields: [inviteeId], references: [id], onDelete: Cascade)
+
+  @@index([inviteeId, status])
+}
+
+model Tournament {
+  id          String           @id @default(cuid())
+  name        String
+  status      TournamentStatus @default(DRAFT)
+  createdById String
+  lockedAt    DateTime?
+  createdAt   DateTime         @default(now())
+  updatedAt   DateTime         @updatedAt
+  createdBy   User             @relation("TournamentCreator", fields: [createdById], references: [id])
+  entries     TournamentEntry[]
+  matches     Match[]
+}
+
+model TournamentEntry {
+  id           String     @id @default(cuid())
+  tournamentId String
+  teamId       String
+  seed         Int?
+  registeredAt DateTime   @default(now())
+  tournament   Tournament @relation(fields: [tournamentId], references: [id], onDelete: Cascade)
+  team         Team       @relation(fields: [teamId], references: [id], onDelete: Cascade)
+
+  @@unique([tournamentId, teamId])
+}
+
+/// Conceptual MR12 score log. Live CS2 servers are not attached.
+model MatchHistory {
+  id               String   @id @default(uuid())
+  mapName          String
+  scoreTeamA       Int
+  scoreTeamB       Int
+  telemetryStatus  String   @default("SECURE")
+  executedAt       DateTime @default(now())
+  teamAId          String?
+  teamBId          String?
+  teamA            Team?    @relation("MatchHistoryTeamA", fields: [teamAId], references: [id])
+  teamB            Team?    @relation("MatchHistoryTeamB", fields: [teamBId], references: [id])
+
+  @@index([executedAt])
+}
+
+model Match {
+  id            String      @id @default(cuid())
+  tournamentId  String?
+  round         Int
+  slot          Int
+  state         MatchState  @default(PENDING)
+  /// Regulation shell for A.C.E. competitive matches.
+  format        String      @default("5v5")
+  ruleset       String      @default("MR12")
+  mapName       String?
+  scoreA        Int         @default(0)
+  scoreB        Int         @default(0)
+  teamAId       String?
+  teamBId       String?
+  winnerTeamId  String?
+  source        String      @default("unverified")
+  ratingApplied Boolean     @default(false)
+  startedAt     DateTime?
+  endedAt       DateTime?
+  createdAt     DateTime    @default(now())
+  updatedAt     DateTime    @updatedAt
+  tournament    Tournament? @relation(fields: [tournamentId], references: [id], onDelete: Cascade)
+  players       MatchPlayer[]
+  disputes      MatchDispute[]
+
+  @@index([state])
+  @@index([tournamentId, round, slot])
+}
+
+model MatchPlayer {
+  id      String @id @default(cuid())
+  matchId String
+  userId  String
+  teamId  String?
+  match   Match  @relation(fields: [matchId], references: [id], onDelete: Cascade)
+  user    User   @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([matchId, userId])
+}
+
+model MatchDispute {
+  id         String   @id @default(cuid())
+  matchId    String
+  reporterId String
+  reason     String
+  createdAt  DateTime @default(now())
+  match      Match    @relation(fields: [matchId], references: [id], onDelete: Cascade)
+  reporter   User     @relation("DisputeReporter", fields: [reporterId], references: [id])
+}
+
+model RatingHistory {
+  id             String   @id @default(cuid())
+  userId         String
+  matchId        String?
+  ratingBefore   Int
+  ratingAfter    Int
+  rankBefore     Int
+  rankAfter      Int
+  algorithmVersion String
+  reason         String
+  createdAt      DateTime @default(now())
+  user           User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId])
+}
+
+model BanRecord {
+  id        String    @id @default(cuid())
+  userId    String
+  status    AccountStatus
+  reason    String
+  startsAt  DateTime  @default(now())
+  expiresAt DateTime?
+  issuerId  String?
+  createdAt DateTime  @default(now())
+  user      User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId, expiresAt])
+}

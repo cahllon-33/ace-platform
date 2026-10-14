@@ -1,0 +1,17 @@
+-- Stage 2 profile fields and 5v5 MR12 match columns.
+ALTER TYPE "AccountStatus" ADD VALUE IF NOT EXISTS 'BANNED';
+
+ALTER TABLE "User" ADD COLUMN "email" TEXT;
+ALTER TABLE "User" ADD COLUMN "username" TEXT NOT NULL DEFAULT '';
+ALTER TABLE "User" ADD COLUMN "avatarUrl" TEXT;
+ALTER TABLE "User" RENAME COLUMN "ratingPoints" TO "competitiveRating";
+
+ALTER TABLE "Team" ADD COLUMN "rosterCap" INTEGER NOT NULL DEFAULT 5;
+
+ALTER TABLE "Match" ADD COLUMN "format" TEXT NOT NULL DEFAULT '5v5';
+ALTER TABLE "Match" ADD COLUMN "ruleset" TEXT NOT NULL DEFAULT 'MR12';
+ALTER TABLE "Match" ADD COLUMN "mapName" TEXT;
+ALTER TABLE "Match" ADD COLUMN "scoreA" INTEGER NOT NULL DEFAULT 0;
+ALTER TABLE "Match" ADD COLUMN "scoreB" INTEGER NOT NULL DEFAULT 0;
+
+ALTER TABLE "User" ADD CONSTRAINT "User_rankLevel_range" CHECK ("rankLevel" >= 1 AND "rankLevel" <= 10);

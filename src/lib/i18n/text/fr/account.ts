@@ -1,0 +1,133 @@
+import type { TextBag } from "../types";
+
+export const account: TextBag["account"] = {
+  dashboard: {
+    meta: {
+      title: "Poste de commandement",
+    },
+    kicker: "Authentifié",
+    title: "Poste de commandement",
+    lede: "Connecté via Steam OpenID. La session est conservée dans un cookie HttpOnly, pas dans le localStorage. La recherche classée reste fermée tant que l'anti-triche n'est pas réel.",
+    eliteBadge: "ÉLITE",
+    stats: {
+      accountStatus: "Statut du compte",
+      subscription: "Abonnement",
+      rank: "Rang A.C.E.",
+      ratingPoints: "Points de cote",
+      wins: "Victoires",
+      losses: "Défaites",
+      accountId: "ID de compte interne",
+    },
+    accountStatuses: {
+      ACTIVE: "Actif",
+      SUSPENDED: "Suspendu",
+      BANNED: "Banni",
+      TEMP_BANNED: "Banni temporairement",
+      PERM_BANNED: "Banni définitivement",
+      UNDER_REVIEW: "En cours d'examen",
+    },
+    tiers: {
+      FREE: "Gratuit",
+      PLUS: "Plus",
+      PREMIUM: "Premium",
+    },
+    roles: {
+      CAPTAIN: "Capitaine",
+      PLAYER: "Joueur",
+    },
+    settings: {
+      title: "PROFIL DES PARAMÈTRES DU TABLEAU DE BORD",
+      billingNotLive: "La facturation n'est pas en ligne. Tous les comptes restent GRATUITS tant que le paiement n'existe pas.",
+      cancelReason: "Aucun abonnement facturé n'existe à résilier. Le paiement n'est pas implémenté.",
+      cancelButton: "Résilier l'abonnement",
+    },
+    rankedReason: "Le matchmaking classé est refusé tant qu'aucune intégration anti-triche vérifiée n'existe.",
+    rankedButton: "Trouver un match classé",
+    roster: {
+      title: "Effectif 5v5",
+      body: "Un capitaine. Quatre invitations. Les capitaines invitent d'autres ID de compte A.C.E., qui ne sont créés qu'après une connexion Steam vérifiée.",
+    },
+    pendingInvites: "Invitations en attente",
+  },
+  forms: {
+    requestFailed: "La requête a échoué.",
+    createTeam: {
+      acceptRequired: "Acceptez les Conditions d'utilisation, le CLUF anti-triche et la Politique de confidentialité pour continuer.",
+      failed: "Impossible de créer l'équipe.",
+      nameLabel: "Nom de la nouvelle équipe 5v5",
+      submitAria: "Fonder une nouvelle équipe 5v5",
+      submit: "Fonder l'équipe",
+    },
+    invite: {
+      failed: "L'invitation a échoué.",
+      label: "Inviter un agent libre par SteamID ou ID de compte A.C.E.",
+      submitAria: "Envoyer une invitation d'équipe",
+      submit: "Envoyer l'invitation",
+    },
+  },
+  profile: {
+    meta: {
+      notFoundTitle: "Profil du joueur",
+      title: "{name} · profil A.C.E.",
+      description: "Dossier de joueur A.C.E. Les sessions Plus et Premium débloquent les graphiques de tendance de télémétrie.",
+    },
+    kicker: "Identité du joueur",
+    bannerPlaceholder: "Emplacement de bannière Steam · pas une illustration Valve",
+    levelBadge: "NIVEAU {level}",
+    premiumBadge: "PREMIUM",
+    rosterLevel: "Niveau dans l'effectif : {level}.",
+    trend: {
+      title: "Tendance de performance de la cote compétitive",
+      note: "Points de cote sur des journaux d'historique de matchs consécutifs.",
+    },
+    combat: {
+      title: "Matrice détaillée des données de combat",
+      kills: "Éliminations totales",
+      deaths: "Morts totales",
+      kd: "K/D calculé",
+      headshots: "Headshots totaux",
+      headshotPct: "Plage de % de headshots",
+      knifeKills: "Éliminations spéciales au couteau",
+    },
+    weapon: {
+      title: "Spécialisation d'arme de prédilection",
+      note: "Plateforme d'arme principale calibrée",
+      accuracy: "Indice de précision",
+      kills: "Éliminations totales avec l'arme",
+    },
+    gear: {
+      title: "Configuration du PC",
+      cpu: "CPU",
+      gpu: "GPU",
+      monitor: "Taux de rafraîchissement de l'écran (Hz)",
+      mouse: "Modèle de souris",
+      dpi: "Réglage DPI actif",
+    },
+    networksTitle: "Lien du profil Steam",
+    back: "Retour à l'effectif du clan",
+  },
+  networks: {
+    note: "Un lien saisi ici reste dans ce navigateur et n'est pas enregistré. A.C.E. ne demande jamais un mot de passe Steam.",
+    labels: {
+      steam: "Profil Steam",
+    },
+    open: "Ouvrir {label} >",
+  },
+  ratingTrend: {
+    chartAria: "Tendance de performance de la cote compétitive",
+    pointAria: "Match {match} : cote {rating}",
+    axisLabel: "M{match}",
+    idle: "Survolez un nœud pour consulter un journal de cote.",
+    readout: "Match {match} · cote {rating}",
+  },
+  loginError: {
+    meta: {
+      title: "Erreur de connexion",
+    },
+    title: "La connexion Steam n'a pas abouti",
+    notConfigured: "Steam OpenID n'est pas encore configuré sur ce serveur. A.C.E. ne demande jamais un mot de passe Steam.",
+    unavailable: "Steam n'a pas répondu à la demande de vérification. Réessayez dans un instant. A.C.E. ne demande jamais un mot de passe Steam.",
+    unverified: "Le retour OpenID n'a pas pu être vérifié sur le serveur. A.C.E. ne demande jamais un mot de passe Steam.",
+    returnHome: "Retour à l'accueil",
+  },
+};

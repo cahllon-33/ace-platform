@@ -1,0 +1,23 @@
+---
+description: A.C.E. product, stack, honesty, and stage rules
+alwaysApply: true
+---
+
+# A.C.E. Cursor rules
+
+Build A.C.E. (CS2-first competitive platform) in `ace-platform`. Full detail: `docs/PRODUCT_SPEC.md`, `ARCHITECTURE.md`, `ROADMAP.md`, `SECURITY.md`, `DECISIONS.md`.
+
+## Must follow
+
+- Small roadmap stages only. Do not build the whole platform in one task.
+- Inspect existing files before editing. Do not overwrite working code without need.
+- UI language: English. Colors: `#121212`, graphite, white, gold `#D4AF37` / `#FFD700`.
+- Next.js App Router + TypeScript + Tailwind v4. No extra UI kit, Prisma, auth, or Electron until the matching roadmap stage.
+- PostgreSQL + stable Prisma only from Stage 3. Steam OpenID (never Steam passwords) from Stage 4. No paid services without owner authorization.
+- Do not claim AI anti-cheat, live game servers, real payments, or real prizes.
+- Label mock data and unfinished integrations.
+- Sensitive checks on the server, not only in the browser.
+- Secrets in env vars. `.env.example` placeholders only when needed; gitignore must still track `.env.example`.
+- Run `npm run lint` / `npm run build` (and tests if they exist). Report real results. Never invent passing tests.
+- Explain decisions in plain language. Make each step testable.
+- Read `AGENTS.md` and Next’s local docs before using unfamiliar Next APIs.

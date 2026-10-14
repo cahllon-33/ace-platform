@@ -1,0 +1,334 @@
+
+@keyframes ace-squad-aura {
+  0%,
+  100% {
+    box-shadow:
+      0 0 0 1px #ffd700,
+      0 0 22px rgba(255, 215, 0, 0.32);
+  }
+  50% {
+    box-shadow:
+      0 0 0 1px #fff6c2,
+      0 0 40px rgba(255, 215, 0, 0.58);
+  }
+}
+
+.ace-squad-page {
+  width: 100%;
+  max-width: 80rem;
+  margin: 0 auto;
+  overflow-x: hidden;
+  padding: 2.4rem 1rem 3.4rem;
+}
+
+.ace-squad-hero {
+  text-align: left;
+}
+
+.ace-squad-kicker {
+  color: #d4af37;
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 0.22em;
+}
+
+.ace-squad-title {
+  margin-top: 0.55rem;
+  color: #ffd700;
+  font-size: clamp(1.7rem, 4.4vw, 3.15rem);
+  font-weight: 800;
+  letter-spacing: 0.02em;
+  line-height: 1.12;
+  text-shadow:
+    0 0 1px #fffef8,
+    0 0 18px rgba(255, 215, 0, 0.55),
+    0 3px 0 #0b0b0c;
+}
+
+.ace-squad-sub {
+  max-width: 48rem;
+  margin-top: 1rem;
+  color: #f5f3ec;
+  font-size: 1.02rem;
+  line-height: 1.7;
+}
+
+.ace-squad-sub-note,
+.ace-squad-note,
+.ace-squad-sample,
+.ace-squad-signed {
+  margin-top: 0.65rem;
+  color: #c8c4b8;
+  font-size: 0.8rem;
+  line-height: 1.55;
+}
+
+.ace-squad-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  margin-top: 1.6rem;
+}
+
+.ace-squad-tab {
+  border: 1px solid #d4af37;
+  border-radius: 0.2rem;
+  background: #0b0b0c;
+  box-shadow: 0 0 0 1px rgba(255, 215, 0, 0.18);
+  color: #fffef8;
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  padding: 0.7rem 1rem;
+}
+
+.ace-squad-tab.is-active,
+.ace-squad-tab:hover,
+.ace-squad-tab:focus-visible {
+  background: linear-gradient(180deg, #ffe58a, #d4af37);
+  color: #0b0b0c;
+}
+
+.ace-squad-suite {
+  display: grid;
+  grid-template-columns: minmax(0, 1.7fr) minmax(16rem, 0.85fr);
+  gap: 1.1rem;
+  margin-top: 1.4rem;
+}
+
+.ace-squad-roster {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 0.7rem;
+  perspective: 900px;
+}
+
+.ace-squad-card,
+.ace-squad-agent {
+  position: relative;
+  min-width: 0;
+  transform: rotateX(3deg);
+  transform-style: preserve-3d;
+  transition: transform 180ms ease;
+}
+
+.ace-squad-card:hover,
+.ace-squad-agent:hover {
+  transform: rotateX(0deg) translateY(-3px);
+}
+
+.ace-squad-extrude {
+  position: absolute;
+  inset: 0.4rem -0.22rem -0.45rem 0.22rem;
+  border-radius: 1.1rem;
+  background: linear-gradient(165deg, #8f6418, #120e08);
+  box-shadow: 0 18px 24px rgba(0, 0, 0, 0.5);
+}
+
+.ace-squad-face {
+  position: relative;
+  z-index: 1;
+  height: 100%;
+  overflow: hidden;
+  border: 1px solid rgba(255, 215, 0, 0.42);
+  border-radius: 1.05rem;
+  background:
+    linear-gradient(165deg, rgba(255, 215, 0, 0.08), rgba(11, 11, 12, 0.88) 36%, #0b0b0c),
+    #0b0b0c;
+  box-shadow:
+    0 0 0 1px rgba(212, 175, 55, 0.22),
+    inset 0 1px 0 rgba(255, 248, 222, 0.12);
+  padding: 1rem 0.85rem 0.95rem;
+  transition: border-color 220ms ease, box-shadow 220ms ease;
+}
+
+.ace-squad-card:hover .ace-squad-face,
+.ace-squad-card:focus-within .ace-squad-face,
+.ace-squad-agent:hover .ace-squad-face,
+.ace-squad-agent:focus-within .ace-squad-face {
+  border-color: #ffd700;
+  animation: ace-squad-aura 2.4s ease-in-out infinite;
+}
+
+.ace-squad-avatar {
+  display: grid;
+  width: 48px;
+  height: 48px;
+  place-items: center;
+  border: 1px solid #ffd700;
+  border-radius: 999px;
+  background: #0b0b0c;
+  color: #ffd700;
+  font-size: 0.72rem;
+  font-weight: 800;
+}
+
+.ace-squad-user {
+  margin-top: 0.7rem;
+  color: #fffef8;
+  font-size: 0.92rem;
+  font-weight: 800;
+  line-height: 1.3;
+  overflow-wrap: anywhere;
+}
+
+.ace-squad-rating,
+.ace-squad-role {
+  margin-top: 0.35rem;
+  color: #c8c4b8;
+  font-size: 0.72rem;
+}
+
+.ace-squad-badge {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  margin-top: 0.7rem;
+  color: #d4af37;
+  font-size: 0.58rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+}
+
+.ace-squad-badge span {
+  color: #c8c4b8;
+  font-weight: 600;
+  letter-spacing: 0;
+}
+
+.ace-squad-stats {
+  border: 1px solid rgba(255, 215, 0, 0.42);
+  border-radius: 1.05rem;
+  background: rgba(11, 11, 12, 0.78);
+  box-shadow: 0 0 0 1px rgba(212, 175, 55, 0.2);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  padding: 1.15rem 1.1rem 1.1rem;
+}
+
+.ace-squad-panel-title {
+  margin-top: 0.4rem;
+  color: #ffd700;
+  font-size: 1.15rem;
+  font-weight: 800;
+}
+
+.ace-squad-dl {
+  display: grid;
+  gap: 0.7rem;
+  margin-top: 0.9rem;
+}
+
+.ace-squad-dl dt {
+  color: #c8c4b8;
+  font-size: 0.68rem;
+  letter-spacing: 0.12em;
+}
+
+.ace-squad-dl dd {
+  color: #fffef8;
+  font-size: 1.05rem;
+  font-weight: 800;
+}
+
+.ace-squad-invite {
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+  margin-top: 1.1rem;
+}
+
+.ace-squad-label {
+  color: #ffd700;
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+}
+
+.ace-squad-input {
+  min-height: 2.75rem;
+  border: 1px solid rgba(255, 215, 0, 0.45);
+  background: #0b0b0c;
+  color: #fffef8;
+  padding: 0 0.8rem;
+}
+
+.ace-squad-send,
+.ace-squad-recruit {
+  display: block;
+  width: 100%;
+  border: 1px solid #ffd700;
+  background: linear-gradient(180deg, #fff1a8 0%, #d4af37 58%, #8a6a14 100%);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.45), 0 8px 16px rgba(0, 0, 0, 0.35);
+  color: #12100a;
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  padding: 0.78rem 0.8rem;
+}
+
+.ace-squad-error {
+  color: #ff8a8a;
+  font-size: 0.78rem;
+}
+
+.ace-squad-agents {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  margin-top: 1.2rem;
+}
+
+.ace-squad-rank {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  color: #ffd700;
+  font-size: 0.68rem;
+  font-weight: 800;
+}
+
+.ace-squad-rank-icon {
+  display: block;
+  width: 24px !important;
+  height: 24px !important;
+  max-width: 24px !important;
+  max-height: 24px !important;
+  flex: 0 0 24px;
+  overflow: hidden;
+}
+
+.ace-squad-notice {
+  margin-top: 1.6rem;
+  border: 1px solid rgba(212, 175, 55, 0.45);
+  border-radius: 0.85rem;
+  background: rgba(8, 8, 10, 0.82);
+  color: #f5f3ec;
+  font-size: 0.84rem;
+  line-height: 1.65;
+  padding: 1rem 1.05rem;
+}
+
+@media (max-width: 1100px) {
+  .ace-squad-suite,
+  .ace-squad-roster,
+  .ace-squad-agents {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ace-squad-card,
+  .ace-squad-agent,
+  .ace-squad-card:hover,
+  .ace-squad-agent:hover {
+    transform: none;
+    transition: none;
+  }
+  .ace-squad-card:hover .ace-squad-face,
+  .ace-squad-card:focus-within .ace-squad-face,
+  .ace-squad-agent:hover .ace-squad-face,
+  .ace-squad-agent:focus-within .ace-squad-face {
+    animation: none;
+  }
+}

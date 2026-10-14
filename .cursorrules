@@ -1,0 +1,51 @@
+# A.C.E. — Cursor project rules
+
+You are building A.C.E., an international competitive esports platform focused first on Counter-Strike 2.
+
+Read `docs/PRODUCT_SPEC.md`, `docs/ARCHITECTURE.md`, `docs/ROADMAP.md`, `docs/SECURITY.md`, and `docs/DECISIONS.md` before large changes. Follow the current roadmap stage. Do not build the entire platform in one task.
+
+## Product identity
+
+- Name: A.C.E.
+- Brand: Autonomous Anti-Cheat, Competitive Calibration, Elite Players.
+- Public UI language: English.
+- Colors: charcoal #121212, graphite gray, white, gold #D4AF37 / #FFD700.
+- Audience: international competitive players.
+
+## Honest claims (never violate)
+
+A.C.E. does not have a working AI anti-cheat, live game servers, real payments, or real prizes. Do not write copy or features that claim otherwise. Mark mock data, future features, and unfinished integrations clearly.
+
+Never store Steam passwords or ask users to enter Steam passwords on A.C.E. Steam sign-in must use Steam’s official OpenID / API flow only.
+
+Do not make paid purchases, deploy paid services, or incur costs without explicit authorization from the project owner.
+
+## Technology
+
+- Next.js App Router + TypeScript in `ace-platform`. Source lives under `src/`.
+- Tailwind CSS v4 for styling. Do not add a second UI kit without recording it in `docs/DECISIONS.md`.
+- PostgreSQL + a stable Prisma release when database work begins — not before the roadmap stage.
+- Do not introduce prerelease dependencies without explaining why in `DECISIONS.md`.
+- Do not introduce Electron until the web application is stable (see roadmap Stage 12).
+- Do not add unnecessary libraries or duplicate functionality.
+- This Next.js version may differ from older tutorials. Read `AGENTS.md` and `node_modules/next/dist/docs/` before using unfamiliar APIs.
+- Leave `AGENTS.md` in place (Next.js regenerates it).
+
+## Development rules
+
+1. Work in small, clearly defined stages from `docs/ROADMAP.md`.
+2. Never attempt to build the entire platform in one task.
+3. Before changing files, inspect the existing project. Do not overwrite working code unnecessarily.
+4. Do not invent successful tests. Run available checks (`npm run lint`, `npm run build`, and `npm test` only if it exists) and report actual results.
+5. When a test or check fails, explain the cause and fix it before claiming success.
+6. Keep README commands exact for install, run, lint, build, and start.
+7. Keep secrets out of source. Add `.env.example` with placeholders only when env vars are needed. Then allow `.env.example` in `.gitignore` (`!.env.example`).
+8. Enforce security-sensitive checks on the server, not only in the browser.
+9. Prefer git checkpoints before major changes when git is available. Do not commit unless the user asks.
+10. Create folders (`src/components`, `src/lib`, `src/server`) only when a stage needs them.
+
+## Implementation style
+
+- Explain important decisions in plain language. The owner is not an experienced programmer.
+- Every implementation step must be testable (browser path, lint, build, or a written checklist).
+- Path alias: `@/*` → `./src/*`.

@@ -1,0 +1,64 @@
+import type { ReactNode } from "react";
+import { getText } from "@/server/locale";
+
+export async function LegalDisclaimer() {
+  const text = await getText();
+  return (
+    <p className="mt-5 border-l-2 border-[#FFD700] bg-[#FFD700]/8 px-4 py-3 text-sm leading-6 text-[#F5F3EC]">
+      {text.consent.valveDisclaimer}
+    </p>
+  );
+}
+
+export function LegalDocument({
+  kicker,
+  title,
+  lede,
+  notice,
+  children,
+}: {
+  kicker: string;
+  title: string;
+  lede: string;
+  notice?: string;
+  children: ReactNode;
+}) {
+  return (
+    <main className="px-4 py-14 sm:px-6">
+      <article className="mx-auto max-w-3xl overflow-hidden rounded-3xl border border-[#FFD700]/35 bg-[#020203] shadow-[0_0_80px_rgba(255,215,0,0.12)]">
+        <header className="border-b border-[#FFD700]/25 bg-[#121318] px-6 py-10 sm:px-10">
+          {notice ? (
+            <p role="note" className="mb-5 rounded-xl border border-[#FFD700]/30 px-4 py-3 text-xs leading-5 text-[#A9ABB3]">
+              {notice}
+            </p>
+          ) : null}
+          <p className="font-mono text-xs tracking-[0.2em] text-[#FFD700]">{kicker}</p>
+          <h1 className="mt-4 text-4xl font-semibold tracking-tight text-[#FFD700]">{title}</h1>
+          <p className="mt-4 text-sm leading-7 text-[#A9ABB3]">{lede}</p>
+          <LegalDisclaimer />
+        </header>
+        <div className="space-y-8 px-6 py-8 text-sm leading-7 text-[#A9ABB3] sm:px-10">{children}</div>
+      </article>
+    </main>
+  );
+}
+
+export function LegalSection({
+  code,
+  title,
+  children,
+}: {
+  code?: string;
+  title: string;
+  children: ReactNode;
+}) {
+  return (
+    <section>
+      {code ? (
+        <p className="font-mono text-[0.65rem] tracking-[0.2em] text-[#FFD700]">{code}</p>
+      ) : null}
+      <h2 className="mt-2 text-xl font-semibold text-[#F5F3EC]">{title}</h2>
+      <div className="mt-3 space-y-3">{children}</div>
+    </section>
+  );
+}
