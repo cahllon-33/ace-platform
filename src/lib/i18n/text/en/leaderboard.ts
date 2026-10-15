@@ -31,10 +31,10 @@
     showcase: "Showcase",
   },
   weapon: {
-    sampleRender: "Sample render",
+    sampleRender: "Signature weapon",
     notStored: "Not stored",
     noKillSaved: "No kill is saved",
-    alt: "{name} sample render",
+    alt: "{name}",
   },
   countries: {
     il: "Israel",
@@ -55,17 +55,17 @@
     placeholder: "Display name",
   },
   seasonPreview: {
-    banner: "SEASON 1 LADDER — LAYOUT",
+    banner: "SEASON 1 LADDER",
     noteLive:
-      "Steam-linked names are stored accounts. Empty seats stay marked showcase. K/D is not stored, so that gauge is a layout.",
+      "Steam-linked names are A.C.E. accounts. K/D appears once match servers record kills.",
     noteSample:
-      "Layout sample. 0 live ranked records. These figures are not a season result, and K/D is not stored.",
+      "Season 1 records appear here as ranked matches are played.",
   },
   playerCard: {
-    kicker: "Authenticated card preview · mock figures",
+    kicker: "Player card preview",
     title: "Operator dossier",
     badge: "Premium",
-    note: "Layout only. These numbers are not a live season, live Elo, or a signed-in account. Ranked matchmaking is not active.",
+    note: "Your card fills with real figures once ranked matchmaking opens.",
     currentRank: "Current Rank",
     rankValue: "A.C.E. Legend (Division I)",
     competitiveRating: "Competitive Rating",

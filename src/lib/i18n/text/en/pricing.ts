@@ -20,7 +20,7 @@
       points: [
         "Sign in with Steam OpenID. A.C.E. never asks for a Steam password.",
         "A stored rating starts at 1,000. No match result has changed it.",
-        "Public pages stay open: play layout, tournaments, leaderboard, teams, and rules.",
+        "All public pages: play, tournaments, leaderboard, teams and rules.",
       ],
     },
     plus: {
@@ -28,7 +28,7 @@
       note: "Plus",
       title: "Thank-you letter and support",
       points: [
-        "Same access as Free. Checkout is not live, so this price is not charged.",
+        "Everything in Free. Billing opens soon; nothing is charged today.",
         "Opens a thank-you letter on this site: what is included, what is not, and support@ace-platform.gg.",
         "Does not buy rating or easier opponents. Gold profile badges come from stored match data for every player. The elite seal and special badges show only when the stored tier is already Premium.",
       ],
@@ -38,7 +38,7 @@
       note: "Premium",
       title: "Thank-you letter and five-player squad",
       points: [
-        "Same access as Free. Checkout is not live, so this price is not charged.",
+        "Everything in Free. Billing opens soon; nothing is charged today.",
         "Opens a thank-you letter on this site: what is included, what is not, and support@ace-platform.gg.",
         "Then opens Squads: a captain signed in with Steam can store a five-player clan.",
         "No prize, weapon, live queue, or game server. A stored clan is not a seat on the 100-team board.",
@@ -82,7 +82,7 @@
     rows: {
       publicSite: {
         feature: "Public site",
-        detail: "Home, play layout, tournaments, leaderboard, teams, rules, and terms.",
+        detail: "Home, play, tournaments, leaderboard, teams, rules and terms.",
       },
       steamSignIn: {
         feature: "Steam sign-in",
@@ -131,7 +131,7 @@
       yes: "Yes",
       noneYet: "None yet",
       closed: "Closed",
-      notConnected: "Not connected",
+      notConnected: "Coming soon",
       notShipped: "Not shipped",
       noCharge: "No charge",
       notForSale: "Not for sale",
@@ -181,7 +181,7 @@
     today: {
       title: "What you can use today",
       items: [
-        "The public site: home, play layout, tournaments, leaderboard, teams, rules, and terms.",
+        "The public site: home, play, tournaments, leaderboard, teams, rules and terms.",
         "Steam sign-in through official Steam OpenID. A.C.E. never asks for a Steam password.",
         "The same public pages as Free. This price does not open a separate queue.",
       ],
@@ -191,7 +191,7 @@
       items: [
         "A live ranked queue. FIND MATCH stays closed.",
         "A Counter-Strike 2 server, a server address, or a connect link.",
-        "An anti-cheat download. A badge on a squad seat is a layout sample, not a live check.",
+        "An anti-cheat download. A.C.E Shield is in development.",
         "A prize, a skin, a knife, or a prize pool.",
         "A seat on the 100-team board. That board still shows 0 registered until a season opens.",
         "Easier opponents, a bought rating, or a different public site from Free.",

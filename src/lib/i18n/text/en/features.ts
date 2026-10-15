@@ -17,7 +17,7 @@
         "Intended kernel layers include a user-mode handshake that binds the verified 64-bit SteamID to the A.C.E. account, a hardware-identifier (HWID) attestation surface, a signature watchlist for known cheat families, and a server-to-server eligibility route protected by a shared secret. A cheat-signature validation, a refused integrity check, or a spoofed device identifier is specified to produce an immediate account status change to BANNED or PERM_BANNED and, when a billing product exists, complete forfeiture of prepaid subscription time with zero refund liability. No such client ships with this website. Coming Soon download cards are layout only.",
       ],
       stats: [
-        { label: "KERNEL STATE", value: "Not deployed" },
+        { label: "KERNEL STATE", value: "In development" },
         { label: "RANKED QUEUE", value: "Fail-closed" },
         { label: "HWID STORE", value: "Not collected on this site" },
       ],
@@ -48,18 +48,18 @@
     },
   },
   loot: {
-    kicker: "Sandbox cosmetics · checkout simulated",
+    kicker: "Cosmetics · coming soon",
     title: "A.C.E. LOOT ARCHITECTURE — WEAPON DROPS",
-    lede: "Original A.C.E. finish names on CS2 weapon types. These are not Valve items, not tradable skins, and not real prizes. Checkouts are simulated.",
-    mockDrop: "Mock drop",
+    lede: "Original A.C.E. finishes, arriving with the shop. Cosmetics never affect competition.",
+    mockDrop: "Coming soon",
     multiplierLabel: "Win Rate Multiplier Requirements",
     ladderLabel: "Weekly Ladder Drops",
     multiplierValue: "{multiplier}× template",
-    ladderValue: "Weekly slot · mock",
-    checkout: "Checkout simulated",
+    ladderValue: "Weekly slot · coming soon",
+    checkout: "Checkout · coming soon",
   },
   communityRail: {
-    kicker: "Layout feed · not live",
+    kicker: "Feed · coming soon",
     newsTitle: "Latest Ladder News",
     newsItems: [
       "Bracket field remains empty — 0 of 100 teams.",
@@ -67,29 +67,29 @@
     ],
     prizesTitle: "Daily Skin Prizes",
     prizesBody:
-      "No prizes are issued. Cosmetic cards on this site are sandbox mocks. Checkouts are simulated.",
+      "Rewards and checkout open with Season 1.",
   },
   identityPreview: {
     badge: "Preview — not confirmed",
     cards: {
       faceScan: {
         title: "Live Face Scan Verified",
-        copy: "Identity liveness is a planned provider check. This card is a layout preview. No scan has been performed and no biometric data is stored.",
+        copy: "Identity liveness is a planned provider check. No biometric data is collected today.",
       },
       hardwareId: {
         title: "Hardware ID Linked",
-        copy: "Device binding is a planned integrity signal. This card is a layout preview. No hardware fingerprint has been collected.",
+        copy: "Device binding is a planned integrity signal. No hardware identifiers are collected today.",
       },
     },
   },
   preview: {
     fallbackTitle: "Preview",
-    kicker: "Layout destination · not a live product",
+    kicker: "Coming soon",
     returnHome: "Return home",
     pages: {
       support: {
         title: "Support",
-        body: "A public support desk is not staffed yet. This link is a footer destination placeholder.",
+        body: "Our public support desk opens with the competitive beta.",
       },
       "anti-cheat": {
         title: "Anti-Cheat Overview",
@@ -101,11 +101,11 @@
       },
       "mobile-app": {
         title: "Mobile App",
-        body: "There is no A.C.E. mobile app. This is a footer layout link only.",
+        body: "The A.C.E. mobile app is on the roadmap.",
       },
       news: {
         title: "News",
-        body: "There is no live newsroom. This is a footer layout link only.",
+        body: "The A.C.E. newsroom opens soon.",
       },
       about: {
         title: "About Us",
@@ -113,7 +113,7 @@
       },
       advertising: {
         title: "Advertising",
-        body: "There is no advertising inventory for sale. This is a footer layout link only.",
+        body: "Partnership and advertising enquiries open soon.",
       },
       developers: {
         title: "Developers",
@@ -121,11 +121,11 @@
       },
       press: {
         title: "Press",
-        body: "There is no press kit or newsroom. This is a footer layout link only.",
+        body: "The press kit is coming soon.",
       },
       jobs: {
         title: "Jobs",
-        body: "There are no published job listings. This is a footer layout link only.",
+        body: "Open roles will be listed here.",
       },
       terms: {
         title: "Terms of Service",

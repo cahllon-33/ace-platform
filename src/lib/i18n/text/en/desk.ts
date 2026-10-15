@@ -3,28 +3,28 @@ export const desk = {
     meta: {
       title: "A.C.E. Marketplace",
       description:
-        "Prize-example weapon cards. Not Valve items, not a funded reward, and checkout does not charge a card.",
+        "Championship reward cards. The shop and rewards open soon.",
     },
     heroHonesty:
-      "The weapon cards are prize examples. They are not Valve items, they are not in an inventory, and checkout on this page does not charge a card.",
-    prizeBanner: "🏆 TOURNAMENT PRIZE EXAMPLE — PREMIUM REWARD SHOWCASE",
+      "A first look at upcoming championship rewards. The shop opens soon; nothing is charged today.",
+    prizeBanner: "🏆 CHAMPIONSHIP REWARDS · COMING SOON",
     notice:
       "These showcases have no cash value. No skin is delivered, no prize is funded, and the inspect button does not start a purchase.",
     items: {
       lore: {
         name: "Butterfly Knife | Lore",
         tag: "★ COVERT LEADERBOARD DROPS",
-        price: "Example only · no cash value",
+        price: "Coming soon",
       },
       jungle: {
         name: "M4A1-S | Welcome to the Jungle",
         tag: "★ CLASSIFIED UPGRADE TIER",
-        price: "Example only · no cash value",
+        price: "Coming soon",
       },
       karambit: {
         name: "Karambit | Lore",
         tag: "★ COVERT SPECIAL DROP",
-        price: "Example only · no cash value",
+        price: "Coming soon",
       },
       crown: {
         name: "A.C.E. Crown Avatar Frame",
@@ -47,14 +47,14 @@ export const desk = {
     meta: {
       title: "Support",
       description:
-        "A.C.E. help center layout. Anti-Cheat, ranked queues, and billing desks are not live. Ticket prompts do not create cases.",
+        "A.C.E. help center. Anti-cheat, ranked and billing desks open with the competitive beta.",
     },
   },
   contact: {
     meta: {
       title: "Contact",
       description:
-        "A.C.E. corporate contact terminal. Form submissions are sandbox mockups and do not send email or store telemetry.",
+        "Contact A.C.E. The online form opens soon.",
     },
   },
   contactEmail: {

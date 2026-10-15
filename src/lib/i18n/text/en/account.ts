@@ -35,7 +35,7 @@
     },
     settings: {
       title: "DASHBOARD SETTINGS PROFILE",
-      billingNotLive: "Billing is not live. All accounts remain FREE until checkout exists.",
+      billingNotLive: "Billing opens soon. All accounts stay on Free until then.",
       cancelReason: "No billed subscription exists to cancel. Checkout is not implemented.",
       cancelButton: "Cancel subscription",
     },
@@ -70,7 +70,7 @@
       description: "A.C.E. player dossier. Plus and Premium sessions unlock telemetry trend graphs.",
     },
     kicker: "Player identity",
-    bannerPlaceholder: "Steam banner placeholder · not Valve artwork",
+    bannerPlaceholder: "Profile banner · coming soon",
     levelBadge: "LEVEL {level}",
     premiumBadge: "PREMIUM",
     rosterLevel: "Roster level {level}.",

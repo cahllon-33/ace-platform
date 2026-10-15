@@ -32,7 +32,7 @@
   charter: {
     kicker: "MASTER LOBBY WORKSPACE",
     title: "A.C.E. COMPETITIVE MATCHMAKING LOBBY AND DISPATCH CENTER",
-    badge: "NO LIVE SERVER",
+    badge: "SERVERS · COMING SOON",
     lede: "This lobby does not assign a server, start an anti-cheat client, or pay a prize.",
     modules: [
       {
@@ -47,7 +47,7 @@
       },
       {
         kicker: "SKIN REWARDS",
-        copy: "Skin cards are examples. No weapon is delivered and no prize is funded.",
+        copy: "Championship rewards are announced with each event.",
         chips: ["NO ITEM DELIVERED", "NO DROP CHECK"],
       },
     ],
@@ -61,34 +61,34 @@
     compareLink: "See the full comparison table",
   },
   loot: {
-    exampleCard: "Example card · not a Valve item",
+    exampleCard: "Coming soon",
     wear: {
       factoryNew: "Factory New",
       minimalWear: "Minimal Wear",
     },
   },
   lootLadder: {
-    banner: "SYSTEM VAULT — LAYOUT DROP",
+    banner: "SYSTEM VAULT · COMING SOON",
     title: "A.C.E. LOOT LADDER",
     itemWithWear: "{item} ({wear})",
-    clockLabel: "LAYOUT CLOCK",
+    clockLabel: "NEXT DROP",
     clockFormat: "{h}h {m}m {s}s",
-    note: "This clock is a layout. Premium does not enter a drop lottery, and Steam does not verify or deliver an item from this page.",
+    note: "Reward drops open with Season 1. Membership never enters a drop lottery.",
   },
   ribbon: {
     closeOverlay: "Close overlay",
     close: "Close",
     disclosure:
-      "Sandbox mockup: no inventory, no claims, no live mission board, and no checkout. These overlays are layout samples only.",
+      "Login rewards and daily missions arrive with Season 1. Here is a first look.",
     rewards: {
-      kicker: "Login rewards · layout sample",
+      kicker: "Login rewards · coming soon",
       title: "Premium check-in calendar",
       day: "Day {n}",
       featuredReward: "Day {n} Reward: Keycase Drop",
       previewSlot: "Preview slot",
     },
     missions: {
-      kicker: "Daily tactical missions · layout sample",
+      kicker: "Daily tactical missions · coming soon",
       title: "Active daily challenges",
       names: {
         headshot: "Headshot Specialist",
@@ -97,28 +97,28 @@
       },
     },
     shop: {
-      kicker: "A.C.E. shop · sandbox mockup",
+      kicker: "A.C.E. shop · coming soon",
       title: "Weapon inventory checkout",
-      mockBadge: "SANDBOX MOCKUP",
+      mockBadge: "COMING SOON",
       fullPreview: "Open the full marketplace preview",
       openAria: "Open the A.C.E. shop",
     },
   },
   serverHub: {
-    badge: "NO LIVE GAME SERVERS",
+    badge: "GAME SERVERS · COMING SOON",
     nodes: {
       fra: "Frankfurt Edge",
       sto: "Stockholm Core",
       tlv: "Tel Aviv Relay",
     },
-    tileAria: "{name}. Layout tile. No server is connected.",
-    tileSample: "Layout sample {sample}. No server is connected.",
-    note: "These names and latency samples are a layout. This website has no 128-tick game server and no regional node.",
+    tileAria: "{name}. Server coming soon.",
+    tileSample: "Coming soon · {sample}",
+    note: "128-tick regional servers arrive with the competitive beta.",
   },
   telemetry: {
     badge: "NOT A LIVE CLIENT",
     lines: [
-      "AC-KERNEL: NOT CONNECTED",
+      "A.C.E SHIELD: IN DEVELOPMENT",
       "HARDWARE BAN MATRIX: NO IDENTIFIER IS COLLECTED",
       "A.C.E. SHIELD LINK: NO CLIENT IS INSTALLED",
     ],
@@ -135,18 +135,18 @@
     note: "Campaign copy. Ranked queues, live servers, and prizes are not active.",
     hudLeft: "CT — SITE A",
     hudRight: "T — MID PUSH",
-    hudCenter: "SQUAD ENVIRONMENT · LAYOUT",
+    hudCenter: "SQUAD ENVIRONMENT",
     plannedReason: "Ranked play stays closed until a real Anti-Cheat integration is implemented and verified.",
   },
   howStatus: {
     label: "A.C.E. REGISTRATION SUBSYSTEM — CALIBRATION ENGINE READY",
-    note: "Layout status widget. Ranked queues, Anti-Cheat, and live calibration are not active.",
+    note: "Ranked queues open when A.C.E Shield and calibration go live.",
   },
   shell: {
     primaryNav: "Primary",
     mobileNav: "Mobile",
     elite: "ELITE",
-    notificationsTitle: "No live notification feed",
+    notificationsTitle: "Notifications · coming soon",
     notificationsAria: "Notifications. Zero unread.",
     connectProfileTitle: "Connect Profile",
     openProfileAria: "Open Command Deck profile",

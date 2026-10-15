@@ -44,8 +44,8 @@
     targetWinRate: "{winRate} target win-rate",
     calibrationTarget: "Calibration target",
     floor: "Floor",
-    samplesNote: "Layout samples. Not live telemetry.",
-    progressMockup: "Progress mockup",
+    samplesNote: "Target figures for each tier.",
+    progressMockup: "Progress",
   },
   turntable: {
     stageLabel: "{name} orbital emblem. Drag to rotate.",

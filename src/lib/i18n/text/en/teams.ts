@@ -2,7 +2,7 @@
   meta: {
     title: "A.C.E. Squad Management",
     description:
-      "Conceptual 5v5 squad workspace. Rosters, free agents, and anti-cheat badges are preview layouts. Live invites require a verified Steam session.",
+      "Your 5v5 squad workspace. Invites require a verified Steam session; anti-cheat checks arrive with A.C.E Shield.",
   },
   hero: {
     kicker: "TEAMS",
@@ -45,7 +45,7 @@
     facts: {
       email: "No email is sent. The Premium letter stays on /premium/receipt.",
       charge:
-        "Nothing is charged. Premium at $7 per month is a display price. Checkout is not live, and the stored tier does not change.",
+        "Premium is $7 per month. Billing opens soon; nothing is charged today.",
       board:
         "A stored clan is a roster record. It is not placed on the 100-team board. That board still shows 0 registered until a season opens.",
       steam:
@@ -53,7 +53,7 @@
       roster:
         "Seat 1 is the signed-in captain. Seats 2 to 5 must already have A.C.E. accounts. Invites stay pending until each player accepts.",
       badge:
-        "The badge on a seat is a layout sample. It is not a live anti-cheat check, and nothing is downloaded.",
+        "Seat badges become live A.C.E Shield checks once the anti-cheat launches.",
       support:
         "Open Support or Contact on this website. A support prompt does not open a ticket, and text typed on Contact is not delivered.",
       rating:
@@ -77,7 +77,7 @@
     meta: {
       title: "A.C.E. Championship — 100-Team Elite Knockout",
       description:
-        "100-team knockout layout. Click a clan to open its roster, then open each player profile. Registration is 0 of 100.",
+        "The 100-team knockout. Click a clan to open its roster, then each player profile. Registration opens soon.",
     },
     intro: {
       title: "A.C.E. CHAMPIONSHIP — 100-TEAM ELITE KNOCKOUT",
@@ -99,17 +99,17 @@
         finals: { title: "Grand Apex Finals", state: "LOCKED" },
       },
       disclaimer:
-        "Stage 01 pulses as a layout preview. Registration is not open (0 of 100). Stages 02–04 are locked. Grand Apex Finals includes a conceptual $50,000 figure only — no prize pool is funded.",
+        "Stage 01 opens first when registration starts. Stages 02–04 follow. Prize pools are confirmed on the event page once announced.",
     },
     bracket: {
-      kicker: "100-team knockout · layout preview",
+      kicker: "100-team knockout · coming soon",
       title: "100-Team Bracket Matrix",
       statusUnavailable:
-        "PostgreSQL is not connected. The 100 competitor slots use staging clan names, not registered teams. Series scores stay at 0.",
+        "Registration opens soon. The bracket shows preview clans until then.",
       statusEmpty:
-        "No clans are stored yet. The 100 competitor names are a staging layout. They are not a checked-in field.",
+        "Registration opens soon. Until then, the bracket shows preview clans.",
       statusStored:
-        "{count} database clans are placed first. Remaining competitor slots use staging names. Later rounds stay open until matches are recorded.",
+        "{count} registered clans are placed first. Remaining slots show preview clans. Later rounds fill as matches are recorded.",
       openSlot: "Open slot",
       openCompetitorSlot: "Open competitor slot",
       openRoster: "Open roster for {name}",
@@ -130,7 +130,7 @@
     },
     profile: {
       closeBackdrop: "Close team profile",
-      kicker: "Master championship profile · layout sample",
+      kicker: "Championship profile · preview",
       matchesPlayed: "Matches played",
       winRate: "Combined win-rate",
       streak: "Active tournament streak",
@@ -142,7 +142,7 @@
       next: "Next clan",
       close: "Close profile",
       disclosure:
-        "Sandbox mockup: all system setups, player inventories, and database variables on this profile are conceptual pre-registration layout samples. No anti-cheat client is running, no hardware is stored, and these figures are not match results.",
+        "Player setups and inventories appear here once players choose to share them. A.C.E. does not collect hardware data.",
     },
     player: {
       level: "LVL {level} · RP {rating}",
@@ -151,7 +151,7 @@
       openProfileAria: "Open profile for {name}",
       openProfile: "Open profile",
       badge: "READY / ANTI-CHEAT COMPLIANT",
-      badgeNote: "Layout sample · not a live check",
+      badgeNote: "A.C.E Shield check · coming soon",
       gear: {
         processor: "CPU",
         gpu: "GPU",
@@ -164,13 +164,13 @@
     },
   },
   gearPlaceholder: {
-    processor: "Placeholder · CPU not collected",
-    gpu: "Placeholder · GPU not collected",
-    mouse: "Placeholder · mouse model not collected",
-    dpi: "Placeholder · DPI not collected",
-    keyboard: "Placeholder · not collected",
-    monitor: "Placeholder · Hz not collected",
-    headset: "Placeholder · not collected",
+    processor: "CPU · not shared",
+    gpu: "GPU · not shared",
+    mouse: "Mouse · not shared",
+    dpi: "DPI · not shared",
+    keyboard: "Not shared",
+    monitor: "Refresh rate · not shared",
+    headset: "Not shared",
   },
   profileDisclosure:
     "A.C.E. does not store hardware inventories and does not run an anti-cheat client. Performance trend graphs and the combat matrix require an A.C.E. Plus or Premium session. A Steam profile link typed on this page is not saved and is not an official handle.",
