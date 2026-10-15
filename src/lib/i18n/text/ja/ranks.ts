@@ -1,6 +1,23 @@
 import type { TextBag } from "../types";
 
 export const ranks: TextBag["ranks"] = {
+  premiumRanks: {
+    kicker: "プレミアムランク",
+    plan: "A.C.E PREMIUM · 月額$7のみ",
+    title: "プレミアムランクアート",
+    lede: "オリジナルのイラスト版A.C.E.ランクセット：III/II/Iディビジョン付きの10個のクリスタルエンブレム、レーティングプロトコル、Legend詳細カード、ドラッグで回転する3Dビューア。Premiumメンバー向けのプロフィールアートです。標準ランクと同じRating Pointsのラダーを読み取り、競技上の優位性は一切ありません。",
+    demo: "デモ値：このボードの進捗、勝率、ディビジョンはサンプルで、ライブ統計ではありません。サインイン中は、表示されるレーティングが保存済みのレーティングです。",
+    locked: "近日公開：決済はまだ存在しないため、現在Premiumのアカウントはありません。サーバーは保存されたプランがPremiumのプロフィールにのみプレミアムランクアートを適用します。",
+    standardKicker: "標準ランク",
+    standardNote: "すべてのアカウントがこの3Dベクターエンブレムを使います。",
+    legendTag: "PREMIUM",
+    pickerTitle: "プロフィールのランクアート",
+    pickerStandard: "標準",
+    pickerPremium: "プレミアム",
+    pickerLocked: "プレミアムランクアートはA.C.E Premium（月額$7）向けです。近日公開：決済はまだ存在しません。",
+    pickerSaved: "保存しました。",
+    pickerFailed: "保存されませんでした。プレミアムランクアートにはA.C.E Premiumが必要です。",
+  },
   "meta": {
     "title": "競技ランク",
     "description": "Iron Recruit から A.C.E. Legend までの A.C.E. の10ランク。ディビジョンとレーティング下限付き。"

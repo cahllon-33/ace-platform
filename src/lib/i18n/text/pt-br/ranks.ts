@@ -1,6 +1,23 @@
 import type { TextBag } from "../types";
 
 export const ranks: TextBag["ranks"] = {
+  premiumRanks: {
+    kicker: "RANKS PREMIUM",
+    plan: "A.C.E PREMIUM · somente US$ 7/mês",
+    title: "Arte de rank Premium",
+    lede: "O conjunto original ilustrado de ranks A.C.E.: dez emblemas de cristal com divisões III/II/I, o protocolo de rating, o card de detalhe Legend e o visualizador 3D que gira ao arrastar. É arte de perfil para membros Premium. Lê a mesma escada de Rating Points dos ranks padrão e não dá nenhuma vantagem competitiva.",
+    demo: "Valores de demonstração: progresso, taxa de vitórias e divisões neste painel são exemplos, não estatísticas ao vivo. Com login feito, o rating mostrado é o seu rating salvo.",
+    locked: "Em breve: o checkout ainda não existe, então hoje nenhuma conta é Premium. O servidor só aplica a arte de rank Premium a um perfil cujo plano salvo seja Premium.",
+    standardKicker: "RANKS PADRÃO",
+    standardNote: "Todas as contas usam estes emblemas vetoriais 3D.",
+    legendTag: "PREMIUM",
+    pickerTitle: "Arte de rank no seu perfil",
+    pickerStandard: "Padrão",
+    pickerPremium: "Premium",
+    pickerLocked: "A arte de rank Premium é para o A.C.E Premium (US$ 7/mês). Em breve: o checkout ainda não existe.",
+    pickerSaved: "Salvo.",
+    pickerFailed: "Não salvo. A arte de rank Premium exige A.C.E Premium.",
+  },
   meta: {
     title: "Ranks competitivos",
     description:

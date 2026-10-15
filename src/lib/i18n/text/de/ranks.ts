@@ -1,6 +1,23 @@
 import type { TextBag } from "../types";
 
 export const ranks: TextBag["ranks"] = {
+  premiumRanks: {
+    kicker: "PREMIUM-RÄNGE",
+    plan: "A.C.E PREMIUM · nur 7 $/Monat",
+    title: "Premium-Rangkunst",
+    lede: "Das originale illustrierte A.C.E.-Rangset: zehn Kristallembleme mit den Divisionen III/II/I, das Rating-Protokoll, die Legend-Detailkarte und der 3D-Viewer zum Drehen per Ziehen. Es ist Profilkunst für Premium-Mitglieder. Es liest dieselbe Rating-Points-Leiter wie die Standardränge und verschafft keinen Wettbewerbsvorteil.",
+    demo: "Demowerte: Fortschritt, Siegquote und Divisionswerte auf dieser Tafel sind Beispiele, keine Live-Statistiken. Wenn du angemeldet bist, ist das angezeigte Rating dein gespeichertes Rating.",
+    locked: "Demnächst: Einen Checkout gibt es noch nicht, daher ist heute kein Konto Premium. Der Server wendet Premium-Rangkunst nur auf ein Profil an, dessen gespeicherter Plan Premium ist.",
+    standardKicker: "STANDARDRÄNGE",
+    standardNote: "Jedes Konto trägt diese 3D-Vektorembleme.",
+    legendTag: "PREMIUM",
+    pickerTitle: "Rangkunst in deinem Profil",
+    pickerStandard: "Standard",
+    pickerPremium: "Premium",
+    pickerLocked: "Premium-Rangkunst ist für A.C.E Premium (7 $/Monat). Demnächst: Einen Checkout gibt es noch nicht.",
+    pickerSaved: "Gespeichert.",
+    pickerFailed: "Nicht gespeichert. Premium-Rangkunst erfordert A.C.E Premium.",
+  },
   meta: {
     title: "Wettkampfränge",
     description:

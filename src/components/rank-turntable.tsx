@@ -3,11 +3,11 @@
 import { useEffect, useRef, useState } from "react";
 import { useText } from "@/components/text-provider";
 import { interpolate } from "@/lib/i18n";
-import { rankEmblemAsset, type RankTier } from "@/lib/ranks";
+import { rankArtAsset, type RankArt, type RankTier } from "@/lib/ranks";
 
-export function RankTurntable({ tier }: { tier: RankTier }) {
+export function RankTurntable({ tier, art = "standard" }: { tier: RankTier; art?: RankArt }) {
   const copy = useText().ranks.turntable;
-  const asset = rankEmblemAsset(tier.level);
+  const asset = rankArtAsset(tier.level, art);
   const dragging = useRef(false);
   const last = useRef({ x: 0, y: 0 });
   const [yaw, setYaw] = useState(18);
@@ -69,7 +69,7 @@ export function RankTurntable({ tier }: { tier: RankTier }) {
           <div className="ace-orbit-ring ace-orbit-ring-a" aria-hidden="true" />
           <div className="ace-orbit-ring ace-orbit-ring-b" aria-hidden="true" />
           <div
-            className="ace-orbit-core"
+            className={`ace-orbit-core${art === "premium" ? " is-illustrated" : ""}`}
             style={{ backgroundImage: `url(${asset.heroSrc})` }}
           />
         </div>

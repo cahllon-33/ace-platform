@@ -11,6 +11,8 @@ import { PlayerBadges } from "@/components/player-badges";
 import { PlannedButton } from "@/components/ui/button";
 import { Panel } from "@/components/ui/panel";
 import { RankEmblem } from "@/components/rank-emblem";
+import { RankArtPicker } from "@/components/rank-art-picker";
+import { canUsePremiumRankArt, effectiveRankArt } from "@/server/rank-art";
 import { playerBadges } from "@/lib/badges";
 import { hasEliteSeal } from "@/lib/pricing";
 import { formatRankLabelWith } from "@/lib/ranks";
@@ -133,7 +135,10 @@ export default async function DashboardPage() {
             <IdentityPreview />
           </div>
         </Panel>
-        <RankEmblem level={user.rankLevel} />
+        <div className="grid gap-4">
+          <RankEmblem level={user.rankLevel} art={effectiveRankArt(user)} />
+          <RankArtPicker current={effectiveRankArt(user)} premiumAllowed={canUsePremiumRankArt(user.subscriptionTier)} />
+        </div>
       </div>
 
       <section className="mt-8 grid gap-4 lg:grid-cols-2 xl:grid-cols-3">

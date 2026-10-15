@@ -1,6 +1,23 @@
 import type { TextBag } from "../types";
 
 export const ranks: TextBag["ranks"] = {
+  premiumRanks: {
+    kicker: "PREMIUMRANKER",
+    plan: "A.C.E PREMIUM · endast 7 $/mån",
+    title: "Premiumrankkonst",
+    lede: "Den ursprungliga illustrerade A.C.E.-rankuppsättningen: tio kristallemblem med divisionerna III/II/I, ratingprotokollet, Legend-detaljkortet och 3D-visaren som roteras genom att dra. Det är profilkonst för Premium-medlemmar. Den läser samma Rating Points-stege som standardrankerna och ger ingen tävlingsfördel.",
+    demo: "Demovärden: framsteg, vinstandel och divisioner på tavlan är exempel, inte live-statistik. När du är inloggad är den visade ratingen din sparade rating.",
+    locked: "Kommer snart: kassan finns inte än, så inget konto är Premium i dag. Servern använder premiumrankkonst på en profil bara när dess sparade plan är Premium.",
+    standardKicker: "STANDARDRANKER",
+    standardNote: "Alla konton bär dessa 3D-vektoremblem.",
+    legendTag: "PREMIUM",
+    pickerTitle: "Rankkonst på din profil",
+    pickerStandard: "Standard",
+    pickerPremium: "Premium",
+    pickerLocked: "Premiumrankkonst är för A.C.E Premium (7 $/mån). Kommer snart: kassan finns inte än.",
+    pickerSaved: "Sparat.",
+    pickerFailed: "Inte sparat. Premiumrankkonst kräver A.C.E Premium.",
+  },
   "meta": {
     "title": "Tävlingsranker",
     "description": "A.C.E.:s tio ranker, från Iron Recruit till A.C.E. Legend, med divisioner och ratinggolv."

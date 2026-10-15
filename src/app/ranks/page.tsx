@@ -38,9 +38,26 @@ export default async function RanksPage() {
       <Link className="ace-codex-entry" href="/ranks/guide">
         {copy.codexLink}
       </Link>
-      <div className="mt-10">
-        <RankSystemBoard liveRating={rating} />
-      </div>
+      <section className="mt-10" aria-labelledby="standard-ranks">
+        <p id="standard-ranks" className="ace-ranks-section-kicker">{copy.premiumRanks.standardKicker}</p>
+        <p className="mt-1 text-sm text-[#A9ABB3]">{copy.premiumRanks.standardNote}</p>
+        <div className="mt-4">
+          <RankSystemBoard liveRating={rating} />
+        </div>
+      </section>
+      <section id="premium" className="ace-premium-ranks" aria-labelledby="premium-ranks-title">
+        <div className="ace-premium-ranks-head">
+          <p className="ace-ranks-section-kicker">{copy.premiumRanks.kicker}</p>
+          <span className="ace-premium-ranks-plan">{copy.premiumRanks.plan}</span>
+        </div>
+        <h2 id="premium-ranks-title" className="mt-2 text-2xl font-semibold text-white">{copy.premiumRanks.title}</h2>
+        <p className="mt-3 max-w-3xl text-sm leading-7 text-[#A9ABB3]">{copy.premiumRanks.lede}</p>
+        <p className="ace-premium-ranks-note">{copy.premiumRanks.demo}</p>
+        <p className="ace-premium-ranks-note">{copy.premiumRanks.locked}</p>
+        <div className="mt-6">
+          <RankSystemBoard liveRating={rating} art="premium" />
+        </div>
+      </section>
       <section className="mt-12 rounded-3xl border border-[#FFD700]/25 bg-[#121212] p-6 sm:p-8">
         <h2 className="text-xl font-semibold text-white">{copy.document.title}</h2>
         <p className="mt-3 max-w-3xl text-sm leading-7 text-[#A9ABB3]">{copy.document.body}</p>

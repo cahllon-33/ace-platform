@@ -1,6 +1,23 @@
 import type { TextBag } from "../types";
 
 export const ranks: TextBag["ranks"] = {
+  premiumRanks: {
+    kicker: "PREMIUM RÜTBELER",
+    plan: "A.C.E PREMIUM · yalnızca ayda 7 $",
+    title: "Premium rütbe görselleri",
+    lede: "Orijinal resimli A.C.E. rütbe seti: III/II/I bölümlü on kristal amblem, reyting protokolü, Legend ayrıntı kartı ve sürükleyerek döndürülen 3D görüntüleyici. Premium üyeler için profil görselidir. Standart rütbelerle aynı Rating Points merdivenini okur ve hiçbir rekabet avantajı sağlamaz.",
+    demo: "Demo değerleri: bu panodaki ilerleme, kazanma oranı ve bölüm değerleri örnektir, canlı istatistik değildir. Giriş yaptığında gösterilen reyting kayıtlı reytingindir.",
+    locked: "Yakında: ödeme henüz yok, bu yüzden bugün hiçbir hesap Premium değil. Sunucu Premium rütbe görsellerini yalnızca kayıtlı planı Premium olan bir profile uygular.",
+    standardKicker: "STANDART RÜTBELER",
+    standardNote: "Her hesap bu 3D vektör amblemleri taşır.",
+    legendTag: "PREMIUM",
+    pickerTitle: "Profilindeki rütbe görseli",
+    pickerStandard: "Standart",
+    pickerPremium: "Premium",
+    pickerLocked: "Premium rütbe görselleri A.C.E Premium içindir (ayda 7 $). Yakında: ödeme henüz yok.",
+    pickerSaved: "Kaydedildi.",
+    pickerFailed: "Kaydedilmedi. Premium rütbe görselleri A.C.E Premium gerektirir.",
+  },
   "meta": {
     "title": "Rekabetçi Rütbeler",
     "description": "Iron Recruit'ten A.C.E. Legend'a kadar on A.C.E. rütbesi; ligler ve derece tabanlarıyla."

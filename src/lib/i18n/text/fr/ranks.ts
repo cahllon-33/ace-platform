@@ -1,6 +1,23 @@
 import type { TextBag } from "../types";
 
 export const ranks: TextBag["ranks"] = {
+  premiumRanks: {
+    kicker: "RANGS PREMIUM",
+    plan: "A.C.E PREMIUM · 7 $/mois uniquement",
+    title: "Visuels de rang Premium",
+    lede: "Le jeu original illustré des rangs A.C.E. : dix emblèmes de cristal avec divisions III/II/I, le protocole de classement, la fiche détaillée Legend et la visionneuse 3D à faire pivoter par glisser. C'est un visuel de profil pour les membres Premium. Il lit la même échelle de Rating Points que les rangs standard et ne donne aucun avantage compétitif.",
+    demo: "Valeurs de démonstration : la progression, le taux de victoire et les divisions de ce tableau sont des exemples, pas des statistiques en direct. Une fois connecté, le classement affiché est ton classement enregistré.",
+    locked: "Bientôt : le paiement n'existe pas encore, donc aucun compte n'est Premium aujourd'hui. Le serveur n'applique les visuels de rang Premium qu'à un profil dont le forfait enregistré est Premium.",
+    standardKicker: "RANGS STANDARD",
+    standardNote: "Chaque compte porte ces emblèmes vectoriels 3D.",
+    legendTag: "PREMIUM",
+    pickerTitle: "Visuel de rang sur ton profil",
+    pickerStandard: "Standard",
+    pickerPremium: "Premium",
+    pickerLocked: "Les visuels de rang Premium sont réservés à A.C.E Premium (7 $/mois). Bientôt : le paiement n'existe pas encore.",
+    pickerSaved: "Enregistré.",
+    pickerFailed: "Non enregistré. Les visuels de rang Premium nécessitent A.C.E Premium.",
+  },
   meta: {
     title: "Rangs compétitifs",
     description:

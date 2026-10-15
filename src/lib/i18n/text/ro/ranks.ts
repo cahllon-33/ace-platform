@@ -1,6 +1,23 @@
 import type { TextBag } from "../types";
 
 export const ranks: TextBag["ranks"] = {
+  premiumRanks: {
+    kicker: "RANGURI PREMIUM",
+    plan: "A.C.E PREMIUM · doar 7 $/lună",
+    title: "Grafică de rang Premium",
+    lede: "Setul original ilustrat de ranguri A.C.E.: zece embleme de cristal cu diviziile III/II/I, protocolul de rating, cardul de detaliu Legend și vizualizatorul 3D rotit prin tragere. Este grafică de profil pentru membrii Premium. Citește aceeași scară Rating Points ca rangurile standard și nu oferă niciun avantaj competitiv.",
+    demo: "Valori demo: progresul, procentul de victorii și diviziile de pe această tablă sunt exemple, nu statistici live. Când ești autentificat, ratingul afișat este ratingul tău stocat.",
+    locked: "În curând: checkout-ul nu există încă, deci astăzi niciun cont nu este Premium. Serverul aplică grafica de rang Premium unui profil doar când planul său stocat este Premium.",
+    standardKicker: "RANGURI STANDARD",
+    standardNote: "Fiecare cont poartă aceste embleme vectoriale 3D.",
+    legendTag: "PREMIUM",
+    pickerTitle: "Grafica de rang din profilul tău",
+    pickerStandard: "Standard",
+    pickerPremium: "Premium",
+    pickerLocked: "Grafica de rang Premium este pentru A.C.E Premium (7 $/lună). În curând: checkout-ul nu există încă.",
+    pickerSaved: "Salvat.",
+    pickerFailed: "Nesalvat. Grafica de rang Premium necesită A.C.E Premium.",
+  },
   "meta": {
     "title": "Ranguri competitive",
     "description": "Cele zece ranguri A.C.E., de la Iron Recruit la A.C.E. Legend, cu divizii și praguri de rating."

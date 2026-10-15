@@ -9,15 +9,19 @@ import { interpolate } from "@/lib/i18n";
 import {
   RANK_TIERS,
   divisionShowcaseMetrics,
-  rankEmblemAsset,
+  rankArtAsset,
+  type RankArt,
   type RankDivision,
   type RankTier,
 } from "@/lib/ranks";
 
 export function RankSystemBoard({
   liveRating = null,
+  art = "standard",
 }: {
   liveRating?: number | null;
+  /** "premium" shows the original illustrated A.C.E. set (A.C.E Premium profile art). */
+  art?: RankArt;
 }) {
   const { t } = useI18n();
   const copy = useText().ranks;
@@ -31,7 +35,7 @@ export function RankSystemBoard({
         });
   const [selected, setSelected] = useState<RankTier>(RANK_TIERS[9]);
   const [division, setDivision] = useState<RankDivision>("I");
-  const asset = rankEmblemAsset(selected.level);
+  const asset = rankArtAsset(selected.level, art);
   const legend = selected.level === 10;
   const sample = divisionShowcaseMetrics(selected, division);
   const progress = sample.progress;
@@ -41,7 +45,7 @@ export function RankSystemBoard({
       : sample.ratingTarget.toLocaleString("en-US");
 
   return (
-    <section className="ace-rank-board" aria-label={t("ranksTitle")}>
+    <section className={`ace-rank-board${art === "premium" ? " is-premium" : ""}`} aria-label={art === "premium" ? copy.premiumRanks.kicker : t("ranksTitle")}>
       <h2 className="ace-rank-i18n-title">{t("ranksTitle")}</h2>
       <header className="ace-rank-board-head">
         <p>{t("brandSubline")}</p>
@@ -51,7 +55,7 @@ export function RankSystemBoard({
       <div className="notranslate" translate="no">
         <ul className="ace-rank-portrait-row">
           {RANK_TIERS.map((tier) => {
-            const still = rankEmblemAsset(tier.level).stillSrc;
+            const still = rankArtAsset(tier.level, art).stillSrc;
             const active = tier.level === selected.level;
             return (
               <li
@@ -103,7 +107,11 @@ export function RankSystemBoard({
                 <h3 className="text-2xl font-semibold tracking-[0.14em] text-[#FFD700] sm:text-3xl">
                   {selected.name.toUpperCase()}
                 </h3>
-                {legend ? <span className="ace-premium-badge">{copy.board.premium}</span> : null}
+                {art === "premium" ? (
+                  <span className="ace-premium-badge">{copy.premiumRanks.legendTag}</span>
+                ) : legend ? (
+                  <span className="ace-premium-badge">{copy.board.premium}</span>
+                ) : null}
               </div>
               <p className="mt-2 text-xs tracking-[0.22em] text-[#A9ABB3]">
                 {copy.tiers[selected.level].tagline}
@@ -143,7 +151,7 @@ export function RankSystemBoard({
               </div>
             </div>
           </article>
-          <RankTurntable key={selected.level} tier={selected} />
+          <RankTurntable key={`${art}-${selected.level}`} tier={selected} art={art} />
         </div>
       </div>
     </section>

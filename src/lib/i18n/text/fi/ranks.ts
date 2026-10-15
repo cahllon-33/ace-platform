@@ -1,6 +1,23 @@
 import type { TextBag } from "../types";
 
 export const ranks: TextBag["ranks"] = {
+  premiumRanks: {
+    kicker: "PREMIUM-ARVOT",
+    plan: "A.C.E PREMIUM · vain 7 $/kk",
+    title: "Premium-arvokuvitus",
+    lede: "Alkuperäinen kuvitettu A.C.E.-arvosarja: kymmenen kristallitunnusta divisioonilla III/II/I, luokitusprotokolla, Legend-tietokortti ja vetämällä pyöritettävä 3D-katselin. Se on profiilikuvitus Premium-jäsenille. Se lukee samoja Rating Points -tikkaita kuin vakioarvot eikä anna kilpailuetua.",
+    demo: "Demoarvot: taulun edistyminen, voittoprosentti ja divisioonat ovat esimerkkejä, eivät reaaliaikaisia tilastoja. Kirjautuneena näytetty luokitus on tallennettu luokituksesi.",
+    locked: "Tulossa: maksua ei vielä ole, joten mikään tili ei ole tänään Premium. Palvelin käyttää Premium-arvokuvitusta profiilissa vain, jos sen tallennettu tilaus on Premium.",
+    standardKicker: "VAKIOARVOT",
+    standardNote: "Jokainen tili käyttää näitä 3D-vektoritunnuksia.",
+    legendTag: "PREMIUM",
+    pickerTitle: "Arvokuvitus profiilissasi",
+    pickerStandard: "Vakio",
+    pickerPremium: "Premium",
+    pickerLocked: "Premium-arvokuvitus kuuluu A.C.E Premiumiin (7 $/kk). Tulossa: maksua ei vielä ole.",
+    pickerSaved: "Tallennettu.",
+    pickerFailed: "Ei tallennettu. Premium-arvokuvitus vaatii A.C.E Premiumin.",
+  },
   "meta": {
     "title": "Kilpailurankingit",
     "description": "A.C.E.:n kymmenen rankingia Iron Recruitista A.C.E. Legendiin divisioonineen ja luokituslattioineen."

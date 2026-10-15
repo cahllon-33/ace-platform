@@ -1,6 +1,23 @@
 import type { TextBag } from "../types";
 
 export const ranks: TextBag["ranks"] = {
+  premiumRanks: {
+    kicker: "高级段位",
+    plan: "A.C.E PREMIUM · 仅限每月 $7",
+    title: "高级段位美术",
+    lede: "原版插画 A.C.E. 段位套装：十枚带 III/II/I 分段的水晶徽章、评分协议、Legend 详情卡以及可拖动旋转的 3D 查看器。这是 Premium 会员的个人资料美术。它读取与标准段位相同的 Rating Points 阶梯，不提供任何竞技优势。",
+    demo: "演示数值：此面板上的进度、胜率和分段数据均为示例，不是实时统计。登录后显示的评分是你已保存的评分。",
+    locked: "即将推出：结账功能尚不存在，因此目前没有任何账号是 Premium。服务器只会在已保存方案为 Premium 的个人资料上应用高级段位美术。",
+    standardKicker: "标准段位",
+    standardNote: "每个账号都使用这些 3D 矢量徽章。",
+    legendTag: "PREMIUM",
+    pickerTitle: "个人资料上的段位美术",
+    pickerStandard: "标准",
+    pickerPremium: "高级",
+    pickerLocked: "高级段位美术仅限 A.C.E Premium（每月 $7）。即将推出：结账功能尚不存在。",
+    pickerSaved: "已保存。",
+    pickerFailed: "未保存。高级段位美术需要 A.C.E Premium。",
+  },
   "meta": {
     "title": "竞技段位",
     "description": "A.C.E. 的十个段位,从 Iron Recruit 到 A.C.E. Legend,含分级与评分下限。"

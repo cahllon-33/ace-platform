@@ -16,6 +16,12 @@ enum AccountStatus {
   UNDER_REVIEW
 }
 
+/// Profile rank art. PREMIUM is honoured only while subscriptionTier is PREMIUM (server-enforced on write and on read).
+enum RankArt {
+  STANDARD
+  PREMIUM
+}
+
 enum SubscriptionTier {
   FREE
   PLUS
@@ -63,6 +69,7 @@ model User {
   avatarUrl         String           @default("")
   accountStatus     AccountStatus    @default(ACTIVE)
   subscriptionTier  SubscriptionTier @default(FREE)
+  rankArt           RankArt          @default(STANDARD)
   /// Engine ladder step. Database CHECK plus application code keep this in 1–10.
   rankLevel         Int              @default(1)
   competitiveRating Int              @default(1000)

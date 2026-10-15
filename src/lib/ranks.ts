@@ -168,6 +168,23 @@ export function rankEmblemAsset(level: number): RankEmblemAsset {
   };
 }
 
+/** Standard ranks use the vector set; Premium rank art is the original illustrated set. */
+export type RankArt = "standard" | "premium";
+
+/** Original illustrated A.C.E. emblems (restored from main). Profile art for A.C.E Premium only. */
+export function rankIllustratedAsset(level: number): RankEmblemAsset {
+  const file = EMBLEM_FILES[Math.min(9, Math.max(0, level - 1))];
+  return {
+    stillSrc: `/ranks/${file}.png`,
+    heroSrc: level === 10 ? "/ranks/10-legend-hero.png" : `/ranks/${file}.png`,
+    gltfSrc: null,
+  };
+}
+
+export function rankArtAsset(level: number, art: RankArt): RankEmblemAsset {
+  return art === "premium" ? rankIllustratedAsset(level) : rankEmblemAsset(level);
+}
+
 const RATING_CEILING_DISPLAY = 3000;
 
 export function nextRankCeiling(ratingPoints: number): number {

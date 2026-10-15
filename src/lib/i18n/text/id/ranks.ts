@@ -1,6 +1,23 @@
 import type { TextBag } from "../types";
 
 export const ranks: TextBag["ranks"] = {
+  premiumRanks: {
+    kicker: "PERINGKAT PREMIUM",
+    plan: "A.C.E PREMIUM · hanya $7/bulan",
+    title: "Seni peringkat Premium",
+    lede: "Set peringkat A.C.E. ilustrasi asli: sepuluh lambang kristal dengan divisi III/II/I, protokol rating, kartu detail Legend, dan penampil 3D yang diputar dengan menyeret. Ini seni profil untuk anggota Premium. Membaca tangga Rating Points yang sama dengan peringkat standar dan tidak memberi keunggulan kompetitif apa pun.",
+    demo: "Nilai demo: progres, win-rate, dan divisi di papan ini adalah contoh, bukan statistik langsung. Saat kamu masuk, rating yang ditampilkan adalah rating tersimpanmu.",
+    locked: "Segera hadir: checkout belum ada, jadi hari ini tidak ada akun Premium. Server menerapkan seni peringkat Premium ke profil hanya jika paket tersimpannya Premium.",
+    standardKicker: "PERINGKAT STANDAR",
+    standardNote: "Setiap akun memakai lambang vektor 3D ini.",
+    legendTag: "PREMIUM",
+    pickerTitle: "Seni peringkat di profilmu",
+    pickerStandard: "Standar",
+    pickerPremium: "Premium",
+    pickerLocked: "Seni peringkat Premium untuk A.C.E Premium ($7/bulan). Segera hadir: checkout belum ada.",
+    pickerSaved: "Tersimpan.",
+    pickerFailed: "Tidak tersimpan. Seni peringkat Premium memerlukan A.C.E Premium.",
+  },
   "meta": {
     "title": "Peringkat Kompetitif",
     "description": "Sepuluh peringkat A.C.E., dari Iron Recruit hingga A.C.E. Legend, dengan divisi dan batas rating."

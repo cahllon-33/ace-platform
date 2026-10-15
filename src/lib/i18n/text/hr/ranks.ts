@@ -1,6 +1,23 @@
 import type { TextBag } from "../types";
 
 export const ranks: TextBag["ranks"] = {
+  premiumRanks: {
+    kicker: "PREMIUM RANGOVI",
+    plan: "A.C.E PREMIUM · samo 7 $/mj.",
+    title: "Premium grafika rangova",
+    lede: "Izvorni ilustrirani set rangova A.C.E.: deset kristalnih amblema s divizijama III/II/I, protokol rejtinga, kartica detalja Legend i 3D preglednik koji se okreće povlačenjem. To je grafika profila za Premium članove. Čita istu ljestvicu Rating Pointsa kao standardni rangovi i ne daje nikakvu natjecateljsku prednost.",
+    demo: "Demo vrijednosti: napredak, postotak pobjeda i divizije na ovoj ploči su primjeri, ne statistika uživo. Kad si prijavljen, prikazani rejting je tvoj spremljeni rejting.",
+    locked: "Uskoro: plaćanje još ne postoji, pa danas nijedan račun nije Premium. Poslužitelj primjenjuje Premium grafiku rangova na profil samo ako je njegov spremljeni plan Premium.",
+    standardKicker: "STANDARDNI RANGOVI",
+    standardNote: "Svaki račun nosi ove 3D vektorske ambleme.",
+    legendTag: "PREMIUM",
+    pickerTitle: "Grafika ranga na tvom profilu",
+    pickerStandard: "Standardna",
+    pickerPremium: "Premium",
+    pickerLocked: "Premium grafika rangova je za A.C.E Premium (7 $/mj.). Uskoro: plaćanje još ne postoji.",
+    pickerSaved: "Spremljeno.",
+    pickerFailed: "Nije spremljeno. Premium grafika rangova zahtijeva A.C.E Premium.",
+  },
   "meta": {
     "title": "Natjecateljski rangovi",
     "description": "Deset A.C.E. rangova, od Iron Recruita do A.C.E. Legenda, s divizijama i donjim granicama rejtinga."
