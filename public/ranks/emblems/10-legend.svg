@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="1024" height="1024" role="img" aria-label="A.C.E. rank 10 emblem">
+<defs>
+  <linearGradient id="e10-metal" x1="0" y1="0" x2="0.35" y2="1">
+    <stop offset="0" stop-color="#fffbe0"/><stop offset="0.38" stop-color="#ffd34d"/><stop offset="0.62" stop-color="#7a4e00"/><stop offset="0.82" stop-color="#ffd34d"/><stop offset="1" stop-color="#fffbe0"/>
+  </linearGradient>
+  <linearGradient id="e10-bevel" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#fffbe0"/><stop offset="0.5" stop-color="#ffd34d"/><stop offset="1" stop-color="#7a4e00"/>
+  </linearGradient>
+  <linearGradient id="e10-bevel-dark" x1="0" y1="1" x2="0" y2="0">
+    <stop offset="0" stop-color="#fffbe0" stop-opacity="0.9"/><stop offset="0.5" stop-color="#7a4e00"/><stop offset="1" stop-color="#000"/>
+  </linearGradient>
+  <radialGradient id="e10-face" cx="0.5" cy="0.38" r="0.7">
+    <stop offset="0" stop-color="#ffd34d" stop-opacity="0.55"/><stop offset="0.45" stop-color="#1e1400"/><stop offset="1" stop-color="#000"/>
+  </radialGradient>
+  <radialGradient id="e10-glow" cx="0.5" cy="0.5" r="0.5">
+    <stop offset="0" stop-color="#ffe27a" stop-opacity="0.75"/><stop offset="1" stop-color="#ffe27a" stop-opacity="0"/>
+  </radialGradient>
+  <linearGradient id="e10-sheen" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset="0.5" stop-color="#fff" stop-opacity="0.85"/><stop offset="1" stop-color="#fff" stop-opacity="0"/>
+  </linearGradient>
+  <filter id="e10-shadow" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="10" stdDeviation="10" flood-color="#000" flood-opacity="0.75"/></filter>
+  <clipPath id="e10-clip"><polygon points="256.0,80.0 408.4,168.0 408.4,344.0 256.0,432.0 103.6,344.0 103.6,168.0"/></clipPath>
+</defs>
+<style>
+  .sheen{animation:sheen 6s ease-in-out infinite;transform:translateX(-420px) skewX(-18deg)}
+  @keyframes sheen{0%,55%{transform:translateX(-420px) skewX(-18deg)}85%,100%{transform:translateX(520px) skewX(-18deg)}}
+  .spark{transform-box:fill-box;transform-origin:center;animation:spark 2.6s ease-in-out infinite;opacity:0}
+  @keyframes spark{0%,100%{opacity:0;transform:scale(.3)}45%{opacity:1;transform:scale(1)}}
+  @media (prefers-reduced-motion: reduce){.sheen,.spark{animation:none}.sheen{opacity:0}.spark{opacity:.8}}
+</style>
+<circle cx="256" cy="256" r="250" fill="url(#e10-glow)"/>
+<g filter="url(#e10-shadow)">
+  <polygon points="80,170 18,132 42,214 70,236" fill="url(#e10-metal)" stroke="#7a4e00" stroke-width="3" stroke-linejoin="round" opacity="1"/><polygon points="74.80000000000001,196 33.599999999999994,168.4 57.599999999999994,240 70,251.6" fill="url(#e10-metal)" stroke="#7a4e00" stroke-width="3" stroke-linejoin="round" opacity="0.8200000000000001"/><polygon points="69.6,222 49.19999999999999,204.8 73.19999999999999,266 70,267.2" fill="url(#e10-metal)" stroke="#7a4e00" stroke-width="3" stroke-linejoin="round" opacity="0.64"/><polygon points="432,170 494,132 470,214 442,236" fill="url(#e10-metal)" stroke="#7a4e00" stroke-width="3" stroke-linejoin="round" opacity="1"/><polygon points="437.2,196 478.4,168.4 454.4,240 442,251.6" fill="url(#e10-metal)" stroke="#7a4e00" stroke-width="3" stroke-linejoin="round" opacity="0.8200000000000001"/><polygon points="442.4,222 462.8,204.8 438.8,266 442,267.2" fill="url(#e10-metal)" stroke="#7a4e00" stroke-width="3" stroke-linejoin="round" opacity="0.64"/>
+  <polygon points="196,92 218,40 236,78 256,22 276,78 294,40 316,92 256,74" fill="url(#e10-metal)" stroke="#7a4e00" stroke-width="3" stroke-linejoin="round"/>
+       <circle cx="256" cy="38" r="7" fill="#fffbe0"/>
+  <polygon points="256.0,44.0 439.6,150.0 439.6,362.0 256.0,468.0 72.4,362.0 72.4,150.0" fill="url(#e10-bevel)" stroke="#7a4e00" stroke-width="4" stroke-linejoin="round"/>
+  <polygon points="256.0,60.0 425.7,158.0 425.7,354.0 256.0,452.0 86.3,354.0 86.3,158.0" fill="url(#e10-bevel-dark)"/>
+  <polygon points="256.0,76.0 411.9,166.0 411.9,346.0 256.0,436.0 100.1,346.0 100.1,166.0" fill="url(#e10-metal)"/>
+  <polygon points="256.0,86.0 403.2,171.0 403.2,341.0 256.0,426.0 108.8,341.0 108.8,171.0" fill="url(#e10-face)" stroke="#7a4e00" stroke-width="3"/>
+  <polygon points="256.0,106.0 385.9,181.0 385.9,331.0 256.0,406.0 126.1,331.0 126.1,181.0" fill="none" stroke="#ffd34d" stroke-opacity="0.35" stroke-width="2"/>
+  <!-- A mark: outer chevron with bevel faces -->
+  <polygon points="256,104 362,368 316,368 256,212 196,368 150,368" fill="url(#e10-metal)" stroke="#7a4e00" stroke-width="4" stroke-linejoin="round"/>
+  <polygon points="256,104 256,212 196,368 150,368" fill="#fffbe0" opacity="0.28"/>
+  <polygon points="256,104 362,368 316,368 256,212" fill="#000" opacity="0.22"/>
+  <polygon points="214,300 298,300 286,330 226,330" fill="url(#e10-bevel)" stroke="#7a4e00" stroke-width="3" stroke-linejoin="round"/>
+  <polygon points="256,150 270,186 256,178 242,186" fill="#fffbe0" opacity="0.9"/>
+  <rect x="174.5" y="420" width="10" height="10" rx="2" transform="rotate(45 179.5 425)" fill="url(#e10-metal)" stroke="#7a4e00" stroke-width="1.5"/><rect x="191.5" y="420" width="10" height="10" rx="2" transform="rotate(45 196.5 425)" fill="url(#e10-metal)" stroke="#7a4e00" stroke-width="1.5"/><rect x="208.5" y="420" width="10" height="10" rx="2" transform="rotate(45 213.5 425)" fill="url(#e10-metal)" stroke="#7a4e00" stroke-width="1.5"/><rect x="225.5" y="420" width="10" height="10" rx="2" transform="rotate(45 230.5 425)" fill="url(#e10-metal)" stroke="#7a4e00" stroke-width="1.5"/><rect x="242.5" y="420" width="10" height="10" rx="2" transform="rotate(45 247.5 425)" fill="url(#e10-metal)" stroke="#7a4e00" stroke-width="1.5"/><rect x="259.5" y="420" width="10" height="10" rx="2" transform="rotate(45 264.5 425)" fill="url(#e10-metal)" stroke="#7a4e00" stroke-width="1.5"/><rect x="276.5" y="420" width="10" height="10" rx="2" transform="rotate(45 281.5 425)" fill="url(#e10-metal)" stroke="#7a4e00" stroke-width="1.5"/><rect x="293.5" y="420" width="10" height="10" rx="2" transform="rotate(45 298.5 425)" fill="url(#e10-metal)" stroke="#7a4e00" stroke-width="1.5"/><rect x="310.5" y="420" width="10" height="10" rx="2" transform="rotate(45 315.5 425)" fill="url(#e10-metal)" stroke="#7a4e00" stroke-width="1.5"/><rect x="327.5" y="420" width="10" height="10" rx="2" transform="rotate(45 332.5 425)" fill="url(#e10-metal)" stroke="#7a4e00" stroke-width="1.5"/>
+</g>
+<g clip-path="url(#e10-clip)"><rect class="sheen" x="0" y="0" width="140" height="512" fill="url(#e10-sheen)"/></g>
+<path class="spark" style="animation-delay:0s" d="M120 104L124 116L136 120L124 124L120 136L116 124L104 120L116 116Z" fill="#fffbe6"/><path class="spark" style="animation-delay:0.9s" d="M400 134L404 146L416 150L404 154L400 166L396 154L384 150L396 146Z" fill="#fffbe6"/><path class="spark" style="animation-delay:1.7s" d="M380 364L384 376L396 380L384 384L380 396L376 384L364 380L376 376Z" fill="#fffbe6"/><path class="spark" style="animation-delay:2.4s" d="M140 354L144 366L156 370L144 374L140 386L136 374L124 370L136 366Z" fill="#fffbe6"/><path class="spark" style="animation-delay:1.2s" d="M256 454L260 466L272 470L260 474L256 486L252 474L240 470L252 466Z" fill="#fffbe6"/>
+</svg>

@@ -161,8 +161,9 @@ export type RankEmblemAsset = {
 export function rankEmblemAsset(level: number): RankEmblemAsset {
   const file = EMBLEM_FILES[Math.min(9, Math.max(0, level - 1))];
   return {
-    stillSrc: `/ranks/${file}.png`,
-    heroSrc: level === 10 ? "/ranks/10-legend-hero.png" : `/ranks/${file}.png`,
+    // Layered vector emblems (scripts/generate-rank-emblems.mjs): sharp at any size, animated sheen.
+    stillSrc: `/ranks/emblems/${file}.svg`,
+    heroSrc: `/ranks/emblems/${file}.svg`,
     gltfSrc: null,
   };
 }

@@ -3,7 +3,7 @@ import Link from "next/link";
 import { connection } from "next/server";
 import { RankSystemBoard } from "@/components/rank-system-board";
 import { interpolate } from "@/lib/i18n";
-import { RANK_TIERS } from "@/lib/ranks";
+import { RANK_TIERS, rankEmblemAsset } from "@/lib/ranks";
 import { RANK_DIVISIONS } from "@/lib/site";
 import { getText } from "@/server/locale";
 import { readSessionUser } from "@/server/session";
@@ -46,7 +46,10 @@ export default async function RanksPage() {
         <p className="mt-3 max-w-3xl text-sm leading-7 text-[#A9ABB3]">{copy.document.body}</p>
         <ol className="mt-6 grid gap-3 md:grid-cols-2">
           {RANK_TIERS.map((tier) => (
-            <li key={tier.level} className="rounded-2xl border border-[#FFD700]/20 p-4">
+            <li key={tier.level} className="ace-tier-row rounded-2xl border border-[#FFD700]/20 p-4">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src={rankEmblemAsset(tier.level).stillSrc} alt="" width={72} height={72} loading="lazy" />
+              <div>
               <p className="text-xs tracking-[0.14em] text-[#FFD700]">
                 {interpolate(copy.document.level, { level: tier.level, crystal: tier.crystalName })}
               </p>
@@ -57,6 +60,7 @@ export default async function RanksPage() {
                   material: copy.tiers[tier.level].material,
                 })}
               </p>
+              </div>
             </li>
           ))}
         </ol>

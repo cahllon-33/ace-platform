@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="1024" height="1024" role="img" aria-label="A.C.E. rank 7 emblem">
+<defs>
+  <linearGradient id="e7-metal" x1="0" y1="0" x2="0.35" y2="1">
+    <stop offset="0" stop-color="#efdcff"/><stop offset="0.38" stop-color="#9a5ff0"/><stop offset="0.62" stop-color="#2b0f55"/><stop offset="0.82" stop-color="#9a5ff0"/><stop offset="1" stop-color="#efdcff"/>
+  </linearGradient>
+  <linearGradient id="e7-bevel" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#efdcff"/><stop offset="0.5" stop-color="#9a5ff0"/><stop offset="1" stop-color="#2b0f55"/>
+  </linearGradient>
+  <linearGradient id="e7-bevel-dark" x1="0" y1="1" x2="0" y2="0">
+    <stop offset="0" stop-color="#efdcff" stop-opacity="0.9"/><stop offset="0.5" stop-color="#2b0f55"/><stop offset="1" stop-color="#000"/>
+  </linearGradient>
+  <radialGradient id="e7-face" cx="0.5" cy="0.38" r="0.7">
+    <stop offset="0" stop-color="#9a5ff0" stop-opacity="0.55"/><stop offset="0.45" stop-color="#120822"/><stop offset="1" stop-color="#000"/>
+  </radialGradient>
+  <radialGradient id="e7-glow" cx="0.5" cy="0.5" r="0.5">
+    <stop offset="0" stop-color="#b07cff" stop-opacity="0.45"/><stop offset="1" stop-color="#b07cff" stop-opacity="0"/>
+  </radialGradient>
+  <linearGradient id="e7-sheen" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset="0.5" stop-color="#fff" stop-opacity="0.55"/><stop offset="1" stop-color="#fff" stop-opacity="0"/>
+  </linearGradient>
+  <filter id="e7-shadow" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="10" stdDeviation="10" flood-color="#000" flood-opacity="0.75"/></filter>
+  <clipPath id="e7-clip"><polygon points="256.0,80.0 408.4,168.0 408.4,344.0 256.0,432.0 103.6,344.0 103.6,168.0"/></clipPath>
+</defs>
+<style>
+  .sheen{animation:sheen 6s ease-in-out infinite;transform:translateX(-420px) skewX(-18deg)}
+  @keyframes sheen{0%,55%{transform:translateX(-420px) skewX(-18deg)}85%,100%{transform:translateX(520px) skewX(-18deg)}}
+  .spark{transform-box:fill-box;transform-origin:center;animation:spark 2.6s ease-in-out infinite;opacity:0}
+  @keyframes spark{0%,100%{opacity:0;transform:scale(.3)}45%{opacity:1;transform:scale(1)}}
+  @media (prefers-reduced-motion: reduce){.sheen,.spark{animation:none}.sheen{opacity:0}.spark{opacity:.8}}
+</style>
+<circle cx="256" cy="256" r="250" fill="url(#e7-glow)"/>
+<g filter="url(#e7-shadow)">
+  <polygon points="80,170 18,132 42,214 70,236" fill="url(#e7-metal)" stroke="#2b0f55" stroke-width="3" stroke-linejoin="round" opacity="1"/><polygon points="74.80000000000001,196 33.599999999999994,168.4 57.599999999999994,240 70,251.6" fill="url(#e7-metal)" stroke="#2b0f55" stroke-width="3" stroke-linejoin="round" opacity="0.8200000000000001"/><polygon points="432,170 494,132 470,214 442,236" fill="url(#e7-metal)" stroke="#2b0f55" stroke-width="3" stroke-linejoin="round" opacity="1"/><polygon points="437.2,196 478.4,168.4 454.4,240 442,251.6" fill="url(#e7-metal)" stroke="#2b0f55" stroke-width="3" stroke-linejoin="round" opacity="0.8200000000000001"/>
+  <polygon points="196,92 218,40 236,78 256,22 276,78 294,40 316,92 256,74" fill="url(#e7-metal)" stroke="#2b0f55" stroke-width="3" stroke-linejoin="round"/>
+       <circle cx="256" cy="38" r="7" fill="#efdcff"/>
+  <polygon points="256.0,44.0 439.6,150.0 439.6,362.0 256.0,468.0 72.4,362.0 72.4,150.0" fill="url(#e7-bevel)" stroke="#2b0f55" stroke-width="4" stroke-linejoin="round"/>
+  <polygon points="256.0,60.0 425.7,158.0 425.7,354.0 256.0,452.0 86.3,354.0 86.3,158.0" fill="url(#e7-bevel-dark)"/>
+  <polygon points="256.0,76.0 411.9,166.0 411.9,346.0 256.0,436.0 100.1,346.0 100.1,166.0" fill="url(#e7-metal)"/>
+  <polygon points="256.0,86.0 403.2,171.0 403.2,341.0 256.0,426.0 108.8,341.0 108.8,171.0" fill="url(#e7-face)" stroke="#2b0f55" stroke-width="3"/>
+  <polygon points="256.0,106.0 385.9,181.0 385.9,331.0 256.0,406.0 126.1,331.0 126.1,181.0" fill="none" stroke="#9a5ff0" stroke-opacity="0.35" stroke-width="2"/>
+  <!-- A mark: outer chevron with bevel faces -->
+  <polygon points="256,104 362,368 316,368 256,212 196,368 150,368" fill="url(#e7-metal)" stroke="#2b0f55" stroke-width="4" stroke-linejoin="round"/>
+  <polygon points="256,104 256,212 196,368 150,368" fill="#efdcff" opacity="0.28"/>
+  <polygon points="256,104 362,368 316,368 256,212" fill="#000" opacity="0.22"/>
+  <polygon points="214,300 298,300 286,330 226,330" fill="url(#e7-bevel)" stroke="#2b0f55" stroke-width="3" stroke-linejoin="round"/>
+  <polygon points="256,150 270,186 256,178 242,186" fill="#efdcff" opacity="0.9"/>
+  <rect x="200.0" y="420" width="10" height="10" rx="2" transform="rotate(45 205.0 425)" fill="url(#e7-metal)" stroke="#2b0f55" stroke-width="1.5"/><rect x="217.0" y="420" width="10" height="10" rx="2" transform="rotate(45 222.0 425)" fill="url(#e7-metal)" stroke="#2b0f55" stroke-width="1.5"/><rect x="234.0" y="420" width="10" height="10" rx="2" transform="rotate(45 239.0 425)" fill="url(#e7-metal)" stroke="#2b0f55" stroke-width="1.5"/><rect x="251.0" y="420" width="10" height="10" rx="2" transform="rotate(45 256.0 425)" fill="url(#e7-metal)" stroke="#2b0f55" stroke-width="1.5"/><rect x="268.0" y="420" width="10" height="10" rx="2" transform="rotate(45 273.0 425)" fill="url(#e7-metal)" stroke="#2b0f55" stroke-width="1.5"/><rect x="285.0" y="420" width="10" height="10" rx="2" transform="rotate(45 290.0 425)" fill="url(#e7-metal)" stroke="#2b0f55" stroke-width="1.5"/><rect x="302.0" y="420" width="10" height="10" rx="2" transform="rotate(45 307.0 425)" fill="url(#e7-metal)" stroke="#2b0f55" stroke-width="1.5"/>
+</g>
+<g clip-path="url(#e7-clip)"><rect class="sheen" x="0" y="0" width="140" height="512" fill="url(#e7-sheen)"/></g>
+
+</svg>
