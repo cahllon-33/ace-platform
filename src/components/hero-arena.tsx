@@ -4,6 +4,7 @@ import Image from "next/image";
 import { type ReactNode, useEffect, useRef, useState } from "react";
 import { useI18n } from "@/components/locale-provider";
 import { useText } from "@/components/text-provider";
+import { ComingSoonPlate } from "@/components/coming-soon-plate";
 
 const TAGS = [
   { key: "chipIdentity", status: "statusOpenId", d: "M12 3 4.5 7v5c0 4.5 3.2 7.8 7.5 9 4.3-1.2 7.5-4.5 7.5-9V7L12 3Z" },
@@ -132,19 +133,8 @@ export function HeroArena({ actions }: { actions: ReactNode }) {
               >
                 {t("tvGames")}
               </span>
-              <span
-                style={{
-                  display: "block",
-                  marginTop: "0.4rem",
-                  color: "#F5F3EC",
-                  fontSize: "clamp(0.62rem, 1.2vw, 0.85rem)",
-                  fontWeight: 700,
-                  letterSpacing: "0.18em",
-                  textTransform: "uppercase",
-                  textShadow: "0 2px 16px rgba(0,0,0,0.9)",
-                }}
-              >
-                {t("tvOff")}
+              <span style={{ display: "block", marginTop: "0.5rem" }}>
+                <ComingSoonPlate label={t("shieldServerValue")} size="sm" />
               </span>
             </p>
           </div>

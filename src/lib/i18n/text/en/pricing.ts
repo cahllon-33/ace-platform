@@ -16,7 +16,7 @@
     free: {
       name: "FREE",
       note: "Graphite",
-      title: "Open access today",
+      title: "Open access",
       points: [
         "Sign in with Steam OpenID. A.C.E. never asks for a Steam password.",
         "A stored rating starts at 1,000. No match result has changed it.",
@@ -28,7 +28,7 @@
       note: "Plus",
       title: "Thank-you letter and support",
       points: [
-        "Everything in Free. Billing opens soon; nothing is charged today.",
+        "Everything in Free.",
         "Opens a thank-you letter on this site: what is included, what is not, and support@ace-platform.gg.",
         "Does not buy rating or easier opponents. Gold profile badges come from stored match data for every player. The elite seal and special badges show only when the stored tier is already Premium.",
       ],
@@ -38,7 +38,7 @@
       note: "Premium",
       title: "Thank-you letter and five-player squad",
       points: [
-        "Everything in Free. Billing opens soon; nothing is charged today.",
+        "Everything in Free.",
         "Opens a thank-you letter on this site: what is included, what is not, and support@ace-platform.gg.",
         "Then opens Squads: a captain signed in with Steam can store a five-player clan.",
         "No prize, weapon, live queue, or game server. A stored clan is not a seat on the 100-team board.",
@@ -48,14 +48,14 @@
   card: {
     elite: "ELITE",
     stayFree: "Stay on Free",
-    freeNote: "Open now · no checkout",
+    freeNote: "Open now",
     choose: "Choose {plan}",
     chooseAria: "Choose {plan} {price} per month",
   },
   billing: {
     kicker: "BILLING TIMELINE MATRIX",
     title: "How billing will work once it exists",
-    body: "Plus is exactly {plus}/mo. Premium is exactly {premium}/mo. Online checkout is coming soon. Choosing Plus or Premium shows a preview receipt; no card is charged and no email is sent.",
+    body: "Plus is exactly {plus}/mo. Premium is exactly {premium}/mo.",
     display: {
       label: "01 · DISPLAY",
       body: "Free {free}. Plus {plus}/mo. Premium {premium}/mo. Paid tiers never buy rating or easier opponents.",

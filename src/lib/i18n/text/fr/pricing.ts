@@ -18,7 +18,7 @@ export const pricing: TextBag["pricing"] = {
     free: {
       name: "GRATUIT",
       note: "Graphite",
-      title: "Accès ouvert dès aujourd'hui",
+      title: "Accès libre",
       points: [
         "Connexion via Steam OpenID. A.C.E. ne demande jamais un mot de passe Steam.",
         "Une cote enregistrée démarre à 1 000. Aucun résultat de match ne l'a modifiée.",
@@ -30,7 +30,7 @@ export const pricing: TextBag["pricing"] = {
       note: "Plus",
       title: "Lettre de remerciement et assistance",
       points: [
-        "Tout ce qu'inclut Gratuit. La facturation ouvrira bientôt ; rien n'est débité aujourd'hui.",
+        "Tout ce qu'inclut Gratuit.",
         "Ouvre une lettre de remerciement sur ce site : ce qui est inclus, ce qui ne l'est pas, et support@ace-platform.gg.",
         "N'achète ni classement ni adversaires plus faciles. Les badges dorés du profil proviennent des données de match enregistrées pour chaque joueur. Le sceau élite et les badges spéciaux n'apparaissent que si le palier enregistré est déjà Premium.",
       ],
@@ -40,7 +40,7 @@ export const pricing: TextBag["pricing"] = {
       note: "Premium",
       title: "Lettre de remerciement et escouade de cinq joueurs",
       points: [
-        "Même accès que Gratuit. Le paiement n'est pas en ligne, ce prix n'est donc pas facturé.",
+        "Tout ce qu'inclut Gratuit.",
         "Ouvre une lettre de remerciement sur ce site : ce qui est inclus, ce qui ne l'est pas, et support@ace-platform.gg.",
         "Ouvre ensuite Escouades : un capitaine connecté avec Steam peut enregistrer un clan de cinq joueurs.",
         "Aucun prix, aucune arme, aucune file en direct ni aucun serveur de jeu. Un clan enregistré n'est pas une place sur le tableau de 100 équipes.",
@@ -50,14 +50,14 @@ export const pricing: TextBag["pricing"] = {
   card: {
     elite: "ÉLITE",
     stayFree: "Rester sur Gratuit",
-    freeNote: "Ouvert maintenant · sans paiement",
+    freeNote: "Disponible maintenant",
     choose: "Choisir {plan}",
     chooseAria: "Choisir {plan} à {price} par mois",
   },
   billing: {
     kicker: "CHRONOLOGIE DE FACTURATION",
     title: "Comment la facturation fonctionnera une fois en place",
-    body: "Plus coûte exactement {plus}/mois. Premium coûte exactement {premium}/mois. Le paiement en ligne arrive bientôt. Choisir Plus ou Premium affiche un reçu d'aperçu ; aucune carte n'est débitée et aucun e-mail n'est envoyé.",
+    body: "Plus coûte exactement {plus}/mois. Premium coûte exactement {premium}/mois.",
     display: {
       label: "01 · AFFICHAGE",
       body: "Gratuit {free}. Plus {plus}/mois. Premium {premium}/mois. Les paliers payants n'achètent jamais de cote ni d'adversaires plus faciles.",

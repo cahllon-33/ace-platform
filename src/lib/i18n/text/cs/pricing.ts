@@ -18,7 +18,7 @@ export const pricing: TextBag["pricing"] = {
     free: {
       name: "ZDARMA",
       note: "Grafit",
-      title: "Otevřený přístup už dnes",
+      title: "Otevřený přístup",
       points: [
         "Přihlášení přes Steam OpenID. A.C.E. nikdy nežádá heslo ke službě Steam.",
         "Uložené hodnocení začíná na 1 000. Žádný výsledek zápasu ho zatím nezměnil.",
@@ -30,7 +30,7 @@ export const pricing: TextBag["pricing"] = {
       note: "Plus",
       title: "Děkovný dopis a podpora",
       points: [
-        "Vše z plánu Zdarma. Platby budou brzy spuštěny; dnes se nic neúčtuje.",
+        "Vše z plánu Zdarma.",
         "Otevře na tomto webu děkovný dopis: co je zahrnuto, co není, a kontakt support@ace-platform.gg.",
         "Nekupuje hodnocení ani slabší soupeře. Zlaté odznaky profilu vycházejí z uložených zápasových dat každého hráče. Elitní pečeť a speciální odznaky se zobrazí, jen když je uložená úroveň již Premium.",
       ],
@@ -40,7 +40,7 @@ export const pricing: TextBag["pricing"] = {
       note: "Premium",
       title: "Děkovný dopis a pětičlenný tým",
       points: [
-        "Stejný přístup jako u tarifu zdarma. Pokladna není v provozu, takže se tato cena neúčtuje.",
+        "Vše z plánu Zdarma.",
         "Otevře na tomto webu děkovný dopis: co je zahrnuto, co není, a kontakt support@ace-platform.gg.",
         "Poté otevře Týmy: kapitán přihlášený přes Steam může uložit pětičlenný klan.",
         "Žádná cena, zbraň, živá fronta ani herní server. Uložený klan není místo na tabuli 100 týmů.",
@@ -50,14 +50,14 @@ export const pricing: TextBag["pricing"] = {
   card: {
     elite: "ELITA",
     stayFree: "Zůstat u tarifu zdarma",
-    freeNote: "Otevřeno hned · bez pokladny",
+    freeNote: "Dostupné hned",
     choose: "Zvolit {plan}",
     chooseAria: "Zvolit {plan} za {price} měsíčně",
   },
   billing: {
     kicker: "MATICE ČASOVÉ OSY VYÚČTOVÁNÍ",
     title: "Jak bude vyúčtování fungovat, až bude existovat",
-    body: "Plus stojí přesně {plus}/měs. Premium stojí přesně {premium}/měs. Online platba bude brzy k dispozici. Výběr Plus nebo Premium zobrazí ukázkovou účtenku; žádná karta se nezatíží a žádný e-mail se neodešle.",
+    body: "Plus stojí přesně {plus}/měs. Premium stojí přesně {premium}/měs.",
     display: {
       label: "01 · ZOBRAZENÍ",
       body: "Zdarma {free}. Plus {plus}/měs. Premium {premium}/měs. Placené tarify nikdy nekupují hodnocení ani snadnější soupeře.",

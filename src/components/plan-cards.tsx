@@ -2,7 +2,7 @@
 
 import { EliteSeal } from "@/components/elite-seal";
 import { FreeAccessPill } from "@/components/free-access-pill";
-import { PremiumReceiptLink } from "@/components/premium-receipt-link";
+import { ComingSoonPlate } from "@/components/coming-soon-plate";
 import { useText } from "@/components/text-provider";
 import { Badge } from "@/components/ui/badge";
 import { interpolate } from "@/lib/i18n";
@@ -17,7 +17,7 @@ const TIERS = [
 export function PlanCards({ headingLevel = 2 }: { headingLevel?: 2 | 3 }) {
   const all = useText();
   const text = all.pricing;
-  const disclosure = all.consent.subscriptionDisclosure;
+  const soon = text.compare.cells.notConnected;
   const Heading = headingLevel === 2 ? "h2" : "h3";
 
   return (
@@ -59,19 +59,23 @@ export function PlanCards({ headingLevel = 2 }: { headingLevel?: 2 | 3 }) {
               ))}
             </ul>
             {tier.id !== "free" ? (
-              <p className="mt-6 border-t border-[#FFD700]/20 pt-4 text-xs leading-6 text-[#A9ABB3]">
-                {disclosure}
-              </p>
+              <div className="mt-6 border-t border-[#FFD700]/20 pt-4">
+                <ComingSoonPlate label={soon} size="md" />
+              </div>
             ) : null}
             <div className="mt-8">
               {tier.id === "free" ? (
                 <FreeAccessPill label={text.card.stayFree} note={text.card.freeNote} />
               ) : (
-                <PremiumReceiptLink
-                  href={tier.id === "plus" ? "/plus/receipt" : "/premium/receipt"}
-                  label={interpolate(text.card.choose, { plan: copy.name })}
-                  ariaLabel={interpolate(text.card.chooseAria, { plan: copy.name, price: tier.price })}
-                />
+                <button
+                  type="button"
+                  disabled
+                  aria-disabled="true"
+                  className="ace-soon-button"
+                  aria-label={`${interpolate(text.card.chooseAria, { plan: copy.name, price: tier.price })} · ${soon}`}
+                >
+                  {soon}
+                </button>
               )}
             </div>
           </li>

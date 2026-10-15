@@ -18,7 +18,7 @@ export const pricing: TextBag["pricing"] = {
     free: {
       name: "GRATUITO",
       note: "Grafite",
-      title: "Acesso aberto hoje",
+      title: "Acesso aberto",
       points: [
         "Inicie sessão com o Steam OpenID. A A.C.E. nunca pede a palavra-passe da Steam.",
         "Uma pontuação guardada começa em 1000. Nenhum resultado de partida a alterou.",
@@ -30,7 +30,7 @@ export const pricing: TextBag["pricing"] = {
       note: "Plus",
       title: "Carta de agradecimento e suporte",
       points: [
-        "Tudo o que o Grátis inclui. A faturação abre em breve; hoje nada é cobrado.",
+        "Tudo o que o Grátis inclui.",
         "Abre uma carta de agradecimento neste sítio: o que está incluído, o que não está e support@ace-platform.gg.",
         "Não compra classificação nem adversários mais fáceis. Os emblemas dourados do perfil resultam dos dados de jogo guardados de cada jogador. O selo de elite e os emblemas especiais só aparecem quando o nível guardado já é Premium.",
       ],
@@ -40,7 +40,7 @@ export const pricing: TextBag["pricing"] = {
       note: "Premium",
       title: "Carta de agradecimento e equipa de cinco jogadores",
       points: [
-        "O mesmo acesso que o Gratuito. O pagamento não está ativo, por isso este preço não é cobrado.",
+        "Tudo o que o Grátis inclui.",
         "Abre uma carta de agradecimento neste sítio: o que está incluído, o que não está e support@ace-platform.gg.",
         "Depois abre os Esquadrões: um capitão com sessão iniciada na Steam pode guardar um clã de cinco jogadores.",
         "Sem prémio, arma, fila ao vivo nem servidor de jogo. Um clã guardado não é um lugar no quadro de 100 equipas.",
@@ -50,14 +50,14 @@ export const pricing: TextBag["pricing"] = {
   card: {
     elite: "ELITE",
     stayFree: "Continuar no Gratuito",
-    freeNote: "Aberto agora · sem pagamento",
+    freeNote: "Disponível agora",
     choose: "Escolher {plan}",
     chooseAria: "Escolher {plan} por {price} por mês",
   },
   billing: {
     kicker: "MATRIZ DO CALENDÁRIO DE FATURAÇÃO",
     title: "Como funcionará a faturação quando existir",
-    body: "O Plus custa exatamente {plus}/mês. O Premium custa exatamente {premium}/mês. O pagamento online estará disponível em breve. Escolher Plus ou Premium mostra um recibo de pré-visualização; nenhum cartão é cobrado e nenhum e-mail é enviado.",
+    body: "O Plus custa exatamente {plus}/mês. O Premium custa exatamente {premium}/mês.",
     display: {
       label: "01 · APRESENTAÇÃO",
       body: "Gratuito {free}. Plus {plus}/mês. Premium {premium}/mês. Os níveis pagos nunca compram pontuação nem adversários mais fáceis.",

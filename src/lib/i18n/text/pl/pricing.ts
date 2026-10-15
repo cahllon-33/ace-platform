@@ -18,7 +18,7 @@ export const pricing: TextBag["pricing"] = {
     free: {
       name: "DARMOWY",
       note: "Grafit",
-      title: "Otwarty dostęp już dziś",
+      title: "Otwarty dostęp",
       points: [
         "Logowanie przez Steam OpenID. A.C.E. nigdy nie prosi o hasło Steam.",
         "Zapisana ocena zaczyna się od 1000. Żaden wynik meczu jej nie zmienił.",
@@ -30,7 +30,7 @@ export const pricing: TextBag["pricing"] = {
       note: "Plus",
       title: "List z podziękowaniem i wsparcie",
       points: [
-        "Wszystko z planu Darmowego. Płatności ruszą wkrótce; dziś nic nie jest pobierane.",
+        "Wszystko z planu Darmowego.",
         "Otwiera na tej stronie list z podziękowaniem: co obejmuje, czego nie obejmuje, oraz adres support@ace-platform.gg.",
         "Nie kupuje rankingu ani łatwiejszych rywali. Złote odznaki profilu pochodzą z zapisanych danych meczowych każdego gracza. Pieczęć elity i odznaki specjalne pojawiają się tylko, gdy zapisany poziom to już Premium.",
       ],
@@ -40,7 +40,7 @@ export const pricing: TextBag["pricing"] = {
       note: "Premium",
       title: "List z podziękowaniem i skład pięciu graczy",
       points: [
-        "Taki sam dostęp jak w planie Darmowym. Kasa nie działa, więc ta cena nie jest pobierana.",
+        "Wszystko z planu Darmowego.",
         "Otwiera na tej stronie list z podziękowaniem: co obejmuje, czego nie obejmuje, oraz adres support@ace-platform.gg.",
         "Następnie otwiera Składy: kapitan zalogowany przez Steam może zapisać klan pięciu graczy.",
         "Bez nagrody, broni, żywej kolejki i serwera gry. Zapisany klan nie jest miejscem w tabeli 100 drużyn.",
@@ -50,14 +50,14 @@ export const pricing: TextBag["pricing"] = {
   card: {
     elite: "ELITA",
     stayFree: "Zostań przy darmowym",
-    freeNote: "Dostępny teraz · bez płatności",
+    freeNote: "Dostępne teraz",
     choose: "Wybierz {plan}",
     chooseAria: "Wybierz {plan} za {price} miesięcznie",
   },
   billing: {
     kicker: "HARMONOGRAM ROZLICZEŃ",
     title: "Jak będą działać rozliczenia, gdy powstaną",
-    body: "Plus kosztuje dokładnie {plus}/mies. Premium kosztuje dokładnie {premium}/mies. Płatności online pojawią się wkrótce. Wybór Plus lub Premium pokazuje podgląd potwierdzenia; karta nie jest obciążana, a e-mail nie jest wysyłany.",
+    body: "Plus kosztuje dokładnie {plus}/mies. Premium kosztuje dokładnie {premium}/mies.",
     display: {
       label: "01 · WYŚWIETLANIE",
       body: "Darmowy {free}. Plus {plus}/mies. Premium {premium}/mies. Płatne poziomy nigdy nie kupują oceny ani łatwiejszych przeciwników.",

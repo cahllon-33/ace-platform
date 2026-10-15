@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { Suspense } from "react";
 import { connection } from "next/server";
-import { ComingSoon } from "@/components/coming-soon";
 import { interpolate } from "@/lib/i18n";
+import { ComingSoonPlate } from "@/components/coming-soon-plate";
 import { readBroadcastConfig } from "@/lib/broadcast";
 import type { Ui } from "@/lib/i18n/ui";
 import { MAP_POOL } from "@/lib/map-pool";
@@ -94,17 +94,18 @@ function OffAir({ ui, next }: { ui: Ui; next: string | null }) {
   return (
     <div className="ace-live-screen is-off" role="status">
       <div className="ace-off-air">
-        <span className="ace-off-air-dot" aria-hidden="true" />
-        <p className="ace-off-air-title">{ui.maps.offAir}</p>
-        <p className="ace-off-air-body">{ui.maps.noBroadcast}</p>
+        <p className="sr-only">
+          {ui.maps.offAir}. {ui.maps.noBroadcast}
+        </p>
+        <ComingSoonPlate label={ui.soon.label} size="lg" />
         {next ? (
           <p className="ace-off-air-next">
             {ui.maps.nextLabel}: {next}
           </p>
         ) : (
-          <ComingSoon label={ui.maps.nextLabel} size="md">
-            {ui.maps.notScheduled}
-          </ComingSoon>
+          <p className="ace-off-air-next">
+            {ui.maps.nextLabel}: {ui.maps.notScheduled}
+          </p>
         )}
       </div>
     </div>

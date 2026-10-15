@@ -18,7 +18,7 @@ export const pricing: TextBag["pricing"] = {
     free: {
       name: "GRATUITO",
       note: "Grafite",
-      title: "Acesso aberto hoje",
+      title: "Acesso aberto",
       points: [
         "Entre com o Steam OpenID. A A.C.E. nunca pede a senha da Steam.",
         "Um rating salvo começa em 1.000. Nenhum resultado de partida o alterou.",
@@ -30,7 +30,7 @@ export const pricing: TextBag["pricing"] = {
       note: "Plus",
       title: "Carta de agradecimento e suporte",
       points: [
-        "Tudo do Grátis. A cobrança abre em breve; nada é cobrado hoje.",
+        "Tudo do Grátis.",
         "Abre uma carta de agradecimento neste site: o que está incluído, o que não está e support@ace-platform.gg.",
         "Não compra classificação nem adversários mais fáceis. Os emblemas dourados do perfil vêm dos dados de partida salvos de cada jogador. O selo de elite e os emblemas especiais aparecem só quando o nível salvo já é Premium.",
       ],
@@ -40,7 +40,7 @@ export const pricing: TextBag["pricing"] = {
       note: "Premium",
       title: "Carta de agradecimento e esquadrão de cinco jogadores",
       points: [
-        "Mesmo acesso do Gratuito. O pagamento não está ativo, então este preço não é cobrado.",
+        "Tudo do Grátis.",
         "Abre uma carta de agradecimento neste site: o que está incluído, o que não está e support@ace-platform.gg.",
         "Depois abre Esquadrões: um capitão conectado pela Steam pode salvar um clã de cinco jogadores.",
         "Sem prêmio, arma, fila ao vivo ou servidor de jogo. Um clã salvo não é uma vaga na chave de 100 equipes.",
@@ -50,14 +50,14 @@ export const pricing: TextBag["pricing"] = {
   card: {
     elite: "ELITE",
     stayFree: "Continuar no Gratuito",
-    freeNote: "Aberto agora · sem pagamento",
+    freeNote: "Disponível agora",
     choose: "Escolher {plan}",
     chooseAria: "Escolher {plan} por {price} ao mês",
   },
   billing: {
     kicker: "MATRIZ DO CRONOGRAMA DE COBRANÇA",
     title: "Como a cobrança vai funcionar quando existir",
-    body: "O Plus custa exatamente {plus}/mês. O Premium custa exatamente {premium}/mês. O pagamento online chega em breve. Escolher Plus ou Premium mostra um recibo de prévia; nenhum cartão é cobrado e nenhum e-mail é enviado.",
+    body: "O Plus custa exatamente {plus}/mês. O Premium custa exatamente {premium}/mês.",
     display: {
       label: "01 · EXIBIÇÃO",
       body: "Gratuito {free}. Plus {plus}/mês. Premium {premium}/mês. Planos pagos nunca compram rating nem adversários mais fáceis.",

@@ -18,7 +18,7 @@ export const pricing: TextBag["pricing"] = {
     free: {
       name: "KOSTENLOS",
       note: "Graphit",
-      title: "Offener Zugang ab heute",
+      title: "Offener Zugang",
       points: [
         "Melde dich mit Steam OpenID an. A.C.E. fragt niemals nach einem Steam-Passwort.",
         "Eine gespeicherte Wertung beginnt bei 1,000. Kein Spielergebnis hat sie verändert.",
@@ -30,7 +30,7 @@ export const pricing: TextBag["pricing"] = {
       note: "Plus",
       title: "Dankesbrief und Hilfe",
       points: [
-        "Alles aus Free. Die Abrechnung startet bald; heute wird nichts berechnet.",
+        "Alles aus Free.",
         "Öffnet einen Dankesbrief auf dieser Website: was enthalten ist, was nicht, und support@ace-platform.gg.",
         "Kauft weder Wertung noch leichtere Gegner. Goldene Profilabzeichen stammen für jeden Spieler aus gespeicherten Matchdaten. Elite-Siegel und Sonderabzeichen erscheinen nur, wenn die gespeicherte Stufe bereits Premium ist.",
       ],
@@ -40,7 +40,7 @@ export const pricing: TextBag["pricing"] = {
       note: "Premium",
       title: "Dankesbrief und Kader mit fünf Spielern",
       points: [
-        "Gleicher Zugang wie beim kostenlosen Plan. Die Kasse ist nicht in Betrieb, daher wird dieser Preis nicht berechnet.",
+        "Alles aus Free.",
         "Öffnet einen Dankesbrief auf dieser Website: was enthalten ist, was nicht, und support@ace-platform.gg.",
         "Danach öffnen sich die Kader: Ein über Steam angemeldeter Kapitän kann einen Clan mit fünf Spielern speichern.",
         "Kein Preis, keine Waffe, keine laufende Warteschlange und kein Spielserver. Ein gespeicherter Clan ist kein Platz auf der Tafel mit 100 Mannschaften.",
@@ -50,14 +50,14 @@ export const pricing: TextBag["pricing"] = {
   card: {
     elite: "ELITE",
     stayFree: "Beim kostenlosen Plan bleiben",
-    freeNote: "Jetzt offen · keine Kasse",
+    freeNote: "Jetzt verfügbar",
     choose: "{plan} wählen",
     chooseAria: "{plan} für {price} pro Monat wählen",
   },
   billing: {
     kicker: "ZEITLEISTE DER ABRECHNUNG",
     title: "So wird die Abrechnung funktionieren, sobald es sie gibt",
-    body: "Plus kostet genau {plus}/Monat. Premium kostet genau {premium}/Monat. Die Online-Bezahlung folgt in Kürze. Bei Auswahl von Plus oder Premium wird ein Vorschau-Beleg angezeigt; es wird keine Karte belastet und keine E-Mail versendet.",
+    body: "Plus kostet genau {plus}/Monat. Premium kostet genau {premium}/Monat.",
     display: {
       label: "01 · ANZEIGE",
       body: "Kostenlos {free}. Plus {plus}/Monat. Premium {premium}/Monat. Bezahlte Stufen kaufen niemals Wertung oder leichtere Gegner.",

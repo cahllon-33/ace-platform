@@ -18,7 +18,7 @@ export const pricing: TextBag["pricing"] = {
     free: {
       name: "무료",
       note: "그래파이트",
-      title: "오늘 바로 열린 이용",
+      title: "오픈 액세스",
       points: [
         "Steam OpenID로 로그인합니다. A.C.E.는 Steam 비밀번호를 절대 요구하지 않습니다.",
         "저장된 레이팅은 1,000에서 시작합니다. 어떤 매치 결과도 이 값을 바꾸지 않았습니다.",
@@ -30,7 +30,7 @@ export const pricing: TextBag["pricing"] = {
       note: "Plus",
       title: "감사 편지와 지원 안내",
       points: [
-        "무료 플랜의 모든 기능. 결제는 곧 열리며, 현재는 아무것도 청구되지 않습니다.",
+        "무료 플랜의 모든 기능.",
         "이 사이트에서 감사 편지가 열립니다: 포함된 것, 포함되지 않은 것, 그리고 support@ace-platform.gg.",
         "레이팅이나 더 쉬운 상대를 사지 않습니다. 골드 프로필 배지는 모든 플레이어의 저장된 경기 데이터에서 나옵니다. 엘리트 인장과 특별 배지는 저장된 등급이 이미 Premium일 때만 표시됩니다.",
       ],
@@ -40,7 +40,7 @@ export const pricing: TextBag["pricing"] = {
       note: "Premium",
       title: "감사 편지와 5인 스쿼드",
       points: [
-        "무료와 이용 범위가 같습니다. 결제가 운영 중이 아니므로 이 가격은 청구되지 않습니다.",
+        "무료 플랜의 모든 기능.",
         "이 사이트에서 감사 편지가 열립니다: 포함된 것, 포함되지 않은 것, 그리고 support@ace-platform.gg.",
         "그다음 스쿼드가 열립니다: Steam으로 로그인한 주장은 5인 클랜을 저장할 수 있습니다.",
         "상금, 무기, 실시간 대기열, 게임 서버는 없습니다. 저장된 클랜은 100팀 보드의 자리가 아닙니다.",
@@ -50,14 +50,14 @@ export const pricing: TextBag["pricing"] = {
   card: {
     elite: "엘리트",
     stayFree: "무료 유지",
-    freeNote: "지금 이용 가능 · 결제 없음",
+    freeNote: "지금 이용 가능",
     choose: "{plan} 선택",
     chooseAria: "{plan} 선택, 월 {price}",
   },
   billing: {
     kicker: "결제 일정 매트릭스",
     title: "결제가 생기면 작동하는 방식",
-    body: "Plus는 정확히 월 {plus}입니다. Premium은 정확히 월 {premium}입니다. 온라인 결제는 곧 제공됩니다. Plus 또는 Premium을 선택하면 미리보기 영수증이 표시되며, 카드가 청구되거나 이메일이 발송되지 않습니다.",
+    body: "Plus는 정확히 월 {plus}입니다. Premium은 정확히 월 {premium}입니다.",
     display: {
       label: "01 · 표시",
       body: "무료 {free}. Plus 월 {plus}. Premium 월 {premium}. 유료 티어로 레이팅이나 더 쉬운 상대를 살 수 없습니다.",
