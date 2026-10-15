@@ -9,7 +9,6 @@ export const UI_TH: Ui = {
     "leaderboard": "ตารางอันดับ",
     "teams": "ทีม",
     "getPremium": "สมัครพรีเมียม",
-    "more": "เพิ่มเติม",
     "maps": "แผนที่",
     "prizes": "รางวัล",
     "shop": "ร้านค้า",

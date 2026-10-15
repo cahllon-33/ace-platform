@@ -9,7 +9,6 @@ export const UI_ZH: Ui = {
     "leaderboard": "排行榜",
     "teams": "战队",
     "getPremium": "开通高级会员",
-    "more": "更多",
     "maps": "地图",
     "prizes": "奖品",
     "shop": "商店",

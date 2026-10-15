@@ -9,7 +9,6 @@ export const UI_FI: Ui = {
     "leaderboard": "Tulostaulu",
     "teams": "Joukkueet",
     "getPremium": "Hanki Premium",
-    "more": "Lisää",
     "maps": "Kartat",
     "prizes": "Palkinnot",
     "shop": "Kauppa",

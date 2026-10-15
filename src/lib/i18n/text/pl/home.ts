@@ -137,11 +137,7 @@ export const home: TextBag["home"] = {
     "kicker": "Kinowy widok taktyczny · oryginalne środowisko CSS · to nie grafika Valve",
     "title": "Wejdź głębiej w CS2: najlepsza platforma rywalizacji",
     "lede": "Uczciwsze mecze, lepsi koledzy z drużyny. Rangi, które mają znaczenie, nagrody, które się liczą.",
-    "note": "Tekst kampanii. Kolejki rankingowe, serwery na żywo i nagrody nie są aktywne.",
-    "hudLeft": "CT — PUNKT A",
-    "hudRight": "T — NACISK NA ŚRODEK",
-    "hudCenter": "ŚRODOWISKO SKŁADU",
-    "plannedReason": "Gry rankingowe pozostają zamknięte, dopóki prawdziwa integracja antycheatu nie zostanie wdrożona i zweryfikowana."
+    "note": "Tekst kampanii. Kolejki rankingowe, serwery na żywo i nagrody nie są aktywne."
   },
   "howStatus": {
     "label": "PODSYSTEM REJESTRACJI A.C.E. — SILNIK KALIBRACJI GOTOWY",

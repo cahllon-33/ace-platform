@@ -137,11 +137,7 @@ export const home: TextBag["home"] = {
     "kicker": "Filmes taktikai nézet · eredeti CSS-környezet · nem Valve-grafika",
     "title": "Mélyebben a CS2-be: a végső versenyplatform",
     "lede": "Igazságosabb meccsek, jobb csapattársak. Rangok, amelyek számítanak, jutalmak, amelyek érnek valamit.",
-    "note": "Kampányszöveg. A ranked sorok, élő szerverek és díjak nem aktívak.",
-    "hudLeft": "CT — A PONT",
-    "hudRight": "T — KÖZÉPSŐ NYOMÁS",
-    "hudCenter": "OSZTAGKÖRNYEZET",
-    "plannedReason": "A ranked játék zárva marad, amíg valódi csalásellenes integráció nincs megvalósítva és ellenőrizve."
+    "note": "Kampányszöveg. A ranked sorok, élő szerverek és díjak nem aktívak."
   },
   "howStatus": {
     "label": "A.C.E. REGISZTRÁCIÓS ALRENDSZER — KALIBRÁCIÓS MOTOR KÉSZ",

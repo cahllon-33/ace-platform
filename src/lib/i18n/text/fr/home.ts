@@ -137,11 +137,7 @@ export const home: TextBag["home"] = {
     "kicker": "Vue tactique cinématique · environnement CSS original · pas une illustration Valve",
     "title": "Allez plus loin dans CS2 : la plateforme compétitive ultime",
     "lede": "Des matchs plus équitables, de meilleurs coéquipiers. Des rangs qui comptent, des récompenses qui comptent.",
-    "note": "Texte de campagne. Les files classées, les serveurs en direct et les prix ne sont pas actifs.",
-    "hudLeft": "CT — ZONE A",
-    "hudRight": "T — POUSSÉE MID",
-    "hudCenter": "ENVIRONNEMENT DE L'ESCOUADE",
-    "plannedReason": "Le jeu classé reste fermé tant qu'une vraie intégration anti-triche n'est pas mise en œuvre et vérifiée."
+    "note": "Texte de campagne. Les files classées, les serveurs en direct et les prix ne sont pas actifs."
   },
   "howStatus": {
     "label": "SOUS-SYSTÈME D'INSCRIPTION A.C.E. — MOTEUR DE CALIBRAGE PRÊT",

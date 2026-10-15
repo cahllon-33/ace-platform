@@ -135,11 +135,7 @@
     "kicker": "Cinematic tactical viewport · original CSS environment · not Valve art",
     "title": "Go Deeper Into CS2: The Ultimate Competitive Platform",
     "lede": "Fairer matches, better teammates. Ranks that matter, rewards that count.",
-    "note": "Campaign copy. Ranked queues, live servers, and prizes are not active.",
-    "hudLeft": "CT — SITE A",
-    "hudRight": "T — MID PUSH",
-    "hudCenter": "SQUAD ENVIRONMENT",
-    "plannedReason": "Ranked play stays closed until a real Anti-Cheat integration is implemented and verified."
+    "note": "Campaign copy. Ranked queues, live servers, and prizes are not active."
   },
   "howStatus": {
     "label": "A.C.E. REGISTRATION SUBSYSTEM — CALIBRATION ENGINE READY",

@@ -137,11 +137,7 @@ export const home: TextBag["home"] = {
     "kicker": "Filmski taktički prikaz · originalno CSS okruženje · nije Valveova umjetnost",
     "title": "Dublje u CS2: vrhunska natjecateljska platforma",
     "lede": "Pravedniji mečevi, bolji suigrači. Rangovi koji vrijede, nagrade koje se broje.",
-    "note": "Tekst kampanje. Ranked redovi, poslužitelji uživo i nagrade nisu aktivni.",
-    "hudLeft": "CT — MJESTO A",
-    "hudRight": "T — PROBOJ SREDINOM",
-    "hudCenter": "OKRUŽENJE ODREDA",
-    "plannedReason": "Ranked igra ostaje zatvorena dok stvarna anti-cheat integracija ne bude implementirana i provjerena."
+    "note": "Tekst kampanje. Ranked redovi, poslužitelji uživo i nagrade nisu aktivni."
   },
   "howStatus": {
     "label": "A.C.E. PODSUSTAV REGISTRACIJE — KALIBRACIJSKI MOTOR SPREMAN",

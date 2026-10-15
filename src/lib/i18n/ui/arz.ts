@@ -9,7 +9,6 @@ export const UI_ARZ: Ui = {
     "leaderboard": "المتصدرون",
     "teams": "الفرق",
     "getPremium": "احصل على بريميوم",
-    "more": "كمان",
     "maps": "الخرائط",
     "prizes": "الجوائز",
     "shop": "المتجر",

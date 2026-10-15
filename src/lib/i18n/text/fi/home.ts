@@ -137,11 +137,7 @@ export const home: TextBag["home"] = {
     "kicker": "Elokuvallinen taktinen näkymä · alkuperäinen CSS-ympäristö · ei Valven taidetta",
     "title": "Syvemmälle CS2:een: lopullinen kilpailualusta",
     "lede": "Reilumpia otteluita, parempia joukkuetovereita. Merkitykselliset rankingit, palkinnot jotka lasketaan.",
-    "note": "Kampanjateksti. Ranked-jonot, live-palvelimet ja palkinnot eivät ole käytössä.",
-    "hudLeft": "CT — KOHDE A",
-    "hudRight": "T — KESKIRYNNÄKKÖ",
-    "hudCenter": "RYHMÄYMPÄRISTÖ",
-    "plannedReason": "Ranked-pelit pysyvät suljettuina, kunnes todellinen huijauksenestointegraatio on toteutettu ja vahvistettu."
+    "note": "Kampanjateksti. Ranked-jonot, live-palvelimet ja palkinnot eivät ole käytössä."
   },
   "howStatus": {
     "label": "A.C.E.-REKISTERÖINTIALIJÄRJESTELMÄ — KALIBROINTIMOOTTORI VALMIS",

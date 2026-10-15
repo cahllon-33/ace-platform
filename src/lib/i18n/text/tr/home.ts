@@ -137,11 +137,7 @@ export const home: TextBag["home"] = {
     "kicker": "Sinematik taktik görünüm · özgün CSS ortamı · Valve çizimi değil",
     "title": "CS2'nin Derinliklerine: En İyi Rekabet Platformu",
     "lede": "Daha adil maçlar, daha iyi takım arkadaşları. Anlamı olan rütbeler, değeri olan ödüller.",
-    "note": "Kampanya metni. Dereceli sıralar, canlı sunucular ve ödüller aktif değil.",
-    "hudLeft": "CT — A BÖLGESİ",
-    "hudRight": "T — ORTA BASKISI",
-    "hudCenter": "TİM ORTAMI",
-    "plannedReason": "Gerçek bir hile karşıtı entegrasyon uygulanıp doğrulanana kadar dereceli oyun kapalı kalır."
+    "note": "Kampanya metni. Dereceli sıralar, canlı sunucular ve ödüller aktif değil."
   },
   "howStatus": {
     "label": "A.C.E. KAYIT ALT SİSTEMİ — KALİBRASYON MOTORU HAZIR",

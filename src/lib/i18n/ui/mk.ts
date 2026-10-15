@@ -9,7 +9,6 @@ export const UI_MK: Ui = {
     "leaderboard": "Табела",
     "teams": "Тимови",
     "getPremium": "Земи Premium",
-    "more": "Повеќе",
     "maps": "Мапи",
     "prizes": "Награди",
     "shop": "Продавница",

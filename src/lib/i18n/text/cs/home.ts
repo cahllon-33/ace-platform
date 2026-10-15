@@ -137,11 +137,7 @@ export const home: TextBag["home"] = {
     "kicker": "Filmový taktický výhled · původní prostředí CSS · nejde o grafiku Valve",
     "title": "Ponořte se hlouběji do CS2: dokonalá soutěžní platforma",
     "lede": "Férovější zápasy, lepší spoluhráči. Hodnosti, na kterých záleží, odměny, které se počítají.",
-    "note": "Kampaňový text. Rankingové fronty, živé servery a ceny nejsou aktivní.",
-    "hudLeft": "CT — STANOVIŠTĚ A",
-    "hudRight": "T — TLAK STŘEDEM",
-    "hudCenter": "PROSTŘEDÍ TÝMU",
-    "plannedReason": "Rankingová hra zůstává zavřená, dokud nebude implementována a ověřena skutečná integrace anti-cheatu."
+    "note": "Kampaňový text. Rankingové fronty, živé servery a ceny nejsou aktivní."
   },
   "howStatus": {
     "label": "REGISTRAČNÍ SUBSYSTÉM A.C.E. — KALIBRAČNÍ ENGINE PŘIPRAVEN",

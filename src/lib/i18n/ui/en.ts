@@ -8,7 +8,6 @@ export const UI_EN = {
     leaderboard: "Leaderboard",
     teams: "Teams",
     getPremium: "Get Premium",
-    more: "More",
     maps: "Maps",
     prizes: "Prizes",
     shop: "Shop",

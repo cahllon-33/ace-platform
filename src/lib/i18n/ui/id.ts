@@ -9,7 +9,6 @@ export const UI_ID: Ui = {
     "leaderboard": "Papan Peringkat",
     "teams": "Tim",
     "getPremium": "Jadi Premium",
-    "more": "Lainnya",
     "maps": "Peta",
     "prizes": "Hadiah",
     "shop": "Toko",

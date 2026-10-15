@@ -9,7 +9,6 @@ export const UI_PT: Ui = {
     "leaderboard": "Classificação",
     "teams": "Equipas",
     "getPremium": "Aderir ao Premium",
-    "more": "Mais",
     "maps": "Mapas",
     "prizes": "Prémios",
     "shop": "Loja",

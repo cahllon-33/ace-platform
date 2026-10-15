@@ -9,7 +9,6 @@ export const UI_JA: Ui = {
     "leaderboard": "ランキング",
     "teams": "チーム",
     "getPremium": "プレミアムに登録",
-    "more": "その他",
     "maps": "マップ",
     "prizes": "賞品",
     "shop": "ショップ",

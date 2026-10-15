@@ -137,11 +137,7 @@ export const home: TextBag["home"] = {
     "kicker": "Filmisk taktisk vy · original-CSS-miljö · inte Valve-grafik",
     "title": "Gå djupare in i CS2: den ultimata tävlingsplattformen",
     "lede": "Rättvisare matcher, bättre lagkamrater. Ranker som betyder något, belöningar som räknas.",
-    "note": "Kampanjtext. Rankade köer, aktiva servrar och priser är inte aktiva.",
-    "hudLeft": "CT — BOMBPLATS A",
-    "hudRight": "T — MIDPUSH",
-    "hudCenter": "LAGMILJÖ",
-    "plannedReason": "Rankat spel förblir stängt tills en riktig anti-fusk-integration är implementerad och verifierad."
+    "note": "Kampanjtext. Rankade köer, aktiva servrar och priser är inte aktiva."
   },
   "howStatus": {
     "label": "A.C.E. REGISTRERINGSSYSTEM — KALIBRERINGSMOTORN REDO",

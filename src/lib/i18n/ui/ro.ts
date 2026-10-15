@@ -9,7 +9,6 @@ export const UI_RO: Ui = {
     "leaderboard": "Clasament",
     "teams": "Echipe",
     "getPremium": "Treci la Premium",
-    "more": "Mai mult",
     "maps": "Hărți",
     "prizes": "Premii",
     "shop": "Magazin",

@@ -9,7 +9,6 @@ export const UI_KO: Ui = {
     "leaderboard": "리더보드",
     "teams": "팀",
     "getPremium": "프리미엄 가입",
-    "more": "더보기",
     "maps": "맵",
     "prizes": "상품",
     "shop": "상점",

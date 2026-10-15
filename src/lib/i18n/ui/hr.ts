@@ -9,7 +9,6 @@ export const UI_HR: Ui = {
     "leaderboard": "Ljestvica",
     "teams": "Timovi",
     "getPremium": "Uzmi Premium",
-    "more": "Više",
     "maps": "Mape",
     "prizes": "Nagrade",
     "shop": "Trgovina",

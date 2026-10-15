@@ -137,11 +137,7 @@ export const home: TextBag["home"] = {
     "kicker": "Ventana táctica cinematográfica · entorno CSS original · no es arte de Valve",
     "title": "Profundiza en CS2: la plataforma competitiva definitiva",
     "lede": "Partidas más justas, mejores compañeros. Rangos que importan, recompensas que cuentan.",
-    "note": "Texto de campaña. Las colas clasificatorias, los servidores en vivo y los premios no están activos.",
-    "hudLeft": "CT — SITIO A",
-    "hudRight": "T — AVANCE POR MEDIO",
-    "hudCenter": "ENTORNO DEL EQUIPO",
-    "plannedReason": "El juego clasificatorio sigue cerrado hasta que se implemente y verifique una integración de anticheat real."
+    "note": "Texto de campaña. Las colas clasificatorias, los servidores en vivo y los premios no están activos."
   },
   "howStatus": {
     "label": "SUBSISTEMA DE REGISTRO A.C.E. — MOTOR DE CALIBRACIÓN LISTO",

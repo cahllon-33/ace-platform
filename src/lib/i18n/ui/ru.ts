@@ -9,7 +9,6 @@ export const UI_RU: Ui = {
     "leaderboard": "Рейтинг",
     "teams": "Команды",
     "getPremium": "Оформить Premium",
-    "more": "Ещё",
     "maps": "Карты",
     "prizes": "Призы",
     "shop": "Магазин",

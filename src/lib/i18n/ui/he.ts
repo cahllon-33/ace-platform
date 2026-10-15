@@ -9,7 +9,6 @@ export const UI_HE: Ui = {
     "leaderboard": "טבלת מובילים",
     "teams": "קבוצות",
     "getPremium": "הצטרפו לפרימיום",
-    "more": "עוד",
     "maps": "מפות",
     "prizes": "פרסים",
     "shop": "חנות",

@@ -137,11 +137,7 @@ export const home: TextBag["home"] = {
     "kicker": "Visor tático cinematográfico · ambiente CSS original · não é arte da Valve",
     "title": "Vá mais fundo no CS2: a plataforma competitiva definitiva",
     "lede": "Partidas mais justas, melhores colegas de equipa. Ranks que importam, recompensas que contam.",
-    "note": "Texto de campanha. As filas ranqueadas, os servidores ao vivo e os prémios não estão ativos.",
-    "hudLeft": "CT — BOMBSITE A",
-    "hudRight": "T — AVANÇO PELO MEIO",
-    "hudCenter": "AMBIENTE DO ESQUADRÃO",
-    "plannedReason": "O jogo ranqueado continua fechado até ser implementada e verificada uma integração Anti-Cheat real."
+    "note": "Texto de campanha. As filas ranqueadas, os servidores ao vivo e os prémios não estão ativos."
   },
   "howStatus": {
     "label": "SUBSISTEMA DE REGISTO A.C.E. — MOTOR DE CALIBRAÇÃO PRONTO",

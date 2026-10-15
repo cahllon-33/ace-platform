@@ -9,7 +9,6 @@ export const UI_CS: Ui = {
     "leaderboard": "Žebříček",
     "teams": "Týmy",
     "getPremium": "Získat Premium",
-    "more": "Více",
     "maps": "Mapy",
     "prizes": "Ceny",
     "shop": "Obchod",

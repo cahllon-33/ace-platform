@@ -9,7 +9,6 @@ export const UI_UK: Ui = {
     "leaderboard": "Рейтинг",
     "teams": "Команди",
     "getPremium": "Оформити Premium",
-    "more": "Ще",
     "maps": "Мапи",
     "prizes": "Призи",
     "shop": "Магазин",

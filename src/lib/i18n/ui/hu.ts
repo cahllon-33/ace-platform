@@ -9,7 +9,6 @@ export const UI_HU: Ui = {
     "leaderboard": "Ranglista",
     "teams": "Csapatok",
     "getPremium": "Premium előfizetés",
-    "more": "Továbbiak",
     "maps": "Pályák",
     "prizes": "Nyeremények",
     "shop": "Bolt",

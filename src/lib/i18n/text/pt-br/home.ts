@@ -137,11 +137,7 @@ export const home: TextBag["home"] = {
     "kicker": "Visão tática cinematográfica · ambiente original em CSS · não é arte da Valve",
     "title": "Mergulhe fundo no CS2: a plataforma competitiva definitiva",
     "lede": "Partidas mais justas, companheiros melhores. Ranks que importam, recompensas que contam.",
-    "note": "Texto de campanha. Filas ranqueadas, servidores ao vivo e prêmios não estão ativos.",
-    "hudLeft": "CT — BOMB A",
-    "hudRight": "T — AVANÇO PELO MEIO",
-    "hudCenter": "AMBIENTE DO SQUAD",
-    "plannedReason": "O modo ranqueado continua fechado até uma integração real de Anti-Cheat ser implementada e verificada."
+    "note": "Texto de campanha. Filas ranqueadas, servidores ao vivo e prêmios não estão ativos."
   },
   "howStatus": {
     "label": "SUBSISTEMA DE CADASTRO A.C.E. — MOTOR DE CALIBRAÇÃO PRONTO",

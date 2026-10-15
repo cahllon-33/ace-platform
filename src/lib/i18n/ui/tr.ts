@@ -9,7 +9,6 @@ export const UI_TR: Ui = {
     "leaderboard": "Sıralama",
     "teams": "Takımlar",
     "getPremium": "Premium'a Geç",
-    "more": "Daha Fazla",
     "maps": "Haritalar",
     "prizes": "Ödüller",
     "shop": "Mağaza",

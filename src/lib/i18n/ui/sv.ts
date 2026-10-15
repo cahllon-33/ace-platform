@@ -9,7 +9,6 @@ export const UI_SV: Ui = {
     "leaderboard": "Topplista",
     "teams": "Lag",
     "getPremium": "Skaffa Premium",
-    "more": "Mer",
     "maps": "Kartor",
     "prizes": "Priser",
     "shop": "Butik",

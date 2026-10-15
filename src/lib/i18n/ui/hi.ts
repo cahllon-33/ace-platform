@@ -9,7 +9,6 @@ export const UI_HI: Ui = {
     "leaderboard": "लीडरबोर्ड",
     "teams": "टीमें",
     "getPremium": "प्रीमियम लें",
-    "more": "और",
     "maps": "मैप",
     "prizes": "पुरस्कार",
     "shop": "शॉप",

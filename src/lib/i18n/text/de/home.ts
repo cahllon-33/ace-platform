@@ -137,11 +137,7 @@ export const home: TextBag["home"] = {
     "kicker": "Filmisches taktisches Sichtfenster · eigene CSS-Umgebung · keine Grafik von Valve",
     "title": "Tiefer in CS2 eintauchen: die ultimative Wettkampfplattform",
     "lede": "Fairere Spiele, bessere Mitspieler. Ränge, die zählen, Belohnungen, die etwas bedeuten.",
-    "note": "Kampagnentext. Rangliste-Warteschlangen, laufende Server und Preise sind nicht aktiv.",
-    "hudLeft": "CT — BOMBENPLATZ A",
-    "hudRight": "T — VORSTOSS MITTE",
-    "hudCenter": "SQUAD-UMGEBUNG",
-    "plannedReason": "Ranglistenspiele bleiben geschlossen, bis eine echte Anti-Cheat-Anbindung umgesetzt und geprüft ist."
+    "note": "Kampagnentext. Rangliste-Warteschlangen, laufende Server und Preise sind nicht aktiv."
   },
   "howStatus": {
     "label": "A.C.E.-REGISTRIERUNGSSYSTEM — KALIBRIERUNGSMASCHINE BEREIT",

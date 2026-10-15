@@ -9,7 +9,6 @@ export const UI_AR: Ui = {
     "leaderboard": "المتصدرون",
     "teams": "الفرق",
     "getPremium": "احصل على بريميوم",
-    "more": "المزيد",
     "maps": "الخرائط",
     "prizes": "الجوائز",
     "shop": "المتجر",

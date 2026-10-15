@@ -137,11 +137,7 @@ export const home: TextBag["home"] = {
     "kicker": "电影感战术视角 · 原创 CSS 场景 · 非 Valve 美术",
     "title": "深入 CS2:终极竞技平台",
     "lede": "更公平的比赛,更好的队友。有分量的段位,有价值的奖励。",
-    "note": "宣传文案。排位队列、在线服务器和奖品均未启用。",
-    "hudLeft": "CT — A 点",
-    "hudRight": "T — 中路推进",
-    "hudCenter": "小队环境",
-    "plannedReason": "在真正的反作弊集成实现并通过验证之前,排位赛保持关闭。"
+    "note": "宣传文案。排位队列、在线服务器和奖品均未启用。"
   },
   "howStatus": {
     "label": "A.C.E. 注册子系统 — 定级引擎就绪",

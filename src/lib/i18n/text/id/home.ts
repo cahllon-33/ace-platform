@@ -137,11 +137,7 @@ export const home: TextBag["home"] = {
     "kicker": "Viewport taktis sinematik · lingkungan CSS orisinal · bukan seni Valve",
     "title": "Lebih Dalam ke CS2: Platform Kompetitif Terbaik",
     "lede": "Pertandingan lebih adil, rekan tim lebih baik. Peringkat yang berarti, hadiah yang berharga.",
-    "note": "Teks kampanye. Antrean ranked, server langsung, dan hadiah belum aktif.",
-    "hudLeft": "CT — SITE A",
-    "hudRight": "T — DORONGAN TENGAH",
-    "hudCenter": "LINGKUNGAN SKUAD",
-    "plannedReason": "Permainan ranked tetap tertutup sampai integrasi Anti-Cheat nyata diterapkan dan diverifikasi."
+    "note": "Teks kampanye. Antrean ranked, server langsung, dan hadiah belum aktif."
   },
   "howStatus": {
     "label": "SUBSISTEM PENDAFTARAN A.C.E. — MESIN KALIBRASI SIAP",

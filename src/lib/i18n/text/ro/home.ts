@@ -137,11 +137,7 @@ export const home: TextBag["home"] = {
     "kicker": "Vizor tactic cinematic · mediu CSS original · nu artă Valve",
     "title": "Mai adânc în CS2: platforma competitivă supremă",
     "lede": "Meciuri mai corecte, coechipieri mai buni. Ranguri care contează, recompense care valorează.",
-    "note": "Text de campanie. Cozile ranked, serverele live și premiile nu sunt active.",
-    "hudLeft": "CT — SITE A",
-    "hudRight": "T — ÎMPINGERE PE MIJLOC",
-    "hudCenter": "MEDIUL ECHIPEI",
-    "plannedReason": "Jocul ranked rămâne închis până când o integrare anti-cheat reală este implementată și verificată."
+    "note": "Text de campanie. Cozile ranked, serverele live și premiile nu sunt active."
   },
   "howStatus": {
     "label": "SUBSISTEMUL DE ÎNREGISTRARE A.C.E. — MOTOR DE CALIBRARE PREGĂTIT",
