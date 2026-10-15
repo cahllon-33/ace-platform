@@ -1,0 +1,137 @@
+import type { TextBag } from "../types";
+
+export const play: TextBag["play"] = {
+  "meta": {
+    "title": "Spela",
+    "description": "Rankad 5v5-matchning öppnar när A.C.E Shield anti-fusk är live."
+  },
+  "boards": {
+    "label": "Köbrädor",
+    "title": "Tre 5v5-brädor",
+    "note": "Valet stannar på den här sidan. Rankad sökning är stängd, och att välja en bräda letar inte efter motståndare.",
+    "items": {
+      "open": {
+        "name": "Öppen bräda",
+        "rules": [
+          "Grupp av valfri storlek, upp till fem",
+          "Inget ratingfönster",
+          "Steam OpenID är identitetskontrollen",
+          "Avsedd för öppen träning när en kö finns"
+        ]
+      },
+      "calibration": {
+        "name": "Kalibreringsbräda",
+        "rules": [
+          "Solo, duo eller trio",
+          "Ett planerat fönster på {points} ratingpoäng",
+          "En Steam-profil måste redan vara sparad",
+          "Använder A.C.E.:s ratingregel · sökning kommer snart"
+        ]
+      },
+      "elite": {
+        "name": "Elitbräda",
+        "rules": [
+          "Solo eller duo",
+          "Ett planerat fönster på {points} ratingpoäng",
+          "Sparat medlemskap måste vara Plus eller Premium",
+          "Striktare skriftliga villkor. Ingen prispott är kopplad"
+        ]
+      }
+    }
+  },
+  "veto": {
+    "kicker": "KARTVETO",
+    "title": "Välj kartan",
+    "lede": "Avböj kartor tills en återstår. Den här lobbyn startar inte Counter-Strike 2 och öppnar ingen server.",
+    "mapSelected": "Vald karta: {map}",
+    "yourBan": "Ditt bann",
+    "opponentBan": "Motståndarens bann",
+    "selected": "Vald",
+    "declined": "Avböjd",
+    "decline": "Avböj",
+    "reset": "Återställ veto",
+    "declinedToast": "{map} avböjdes. Den här sidan öppnar ingen server.",
+    "lockKicker": "5v5-MATCHRUM",
+    "lockTitle": "{map} är kartan som återstår",
+    "lockBody": "Ditt matchrum. Tävlingsmatcher startar här när tävlingsbetan öppnar.",
+    "close": "Stäng"
+  },
+  "arena": {
+    "ariaLabel": "Förhandsvisning av matchrum",
+    "captain": "Kapten",
+    "ping": "Ping {ping}",
+    "mapPlates": "Kartbilder",
+    "selectMap": "Välj {map}",
+    "settings": {
+      "region": "Region",
+      "mode": "Läge",
+      "antiCheat": "Anti-fusk",
+      "simulator": "Förhandsvisning"
+    },
+    "chat": {
+      "title": "LAGCHATT",
+      "kicker": "LAGCHATT · KOMMER SNART",
+      "captainName": "{name} (kapten)",
+      "layoutName": "{name}",
+      "samples": [
+        "gl hf",
+        "nu kör vi",
+        "dust 2 passar oss",
+        "redo"
+      ],
+      "inputLabel": "Meddelande i lagchatten",
+      "placeholder": "Skriv till laget…",
+      "send": "Skicka"
+    },
+    "tiles": {
+      "map": "Karta",
+      "server": "Server",
+      "serverValue": "EU West · kommer snart",
+      "mode": "Läge"
+    },
+    "identity": {
+      "title": "IDENTITETSVERIFIERING",
+      "kicker": "IDENTITETSKONTROLLER · KOMMER SNART",
+      "rows": [
+        "E-postverifiering · kommer snart",
+        "Telefonverifiering · kommer snart",
+        "Ansiktskontroll · kommer snart"
+      ]
+    },
+    "security": {
+      "title": "MATCHSÄKERHET",
+      "kicker": "A.C.E SHIELD · UNDER UTVECKLING",
+      "rows": [
+        "Anti-fusk-skydd · under utveckling",
+        "Serverintegritetskontroll · under utveckling",
+        "Kryptering av matchdata · under utveckling"
+      ]
+    },
+    "findMatchReason": "Matchning öppnar med tävlingsbetan. Rankade köer körs inte ännu."
+  },
+  "matchFound": {
+    "ariaSignedIn": "{title}. {name} går med i en trupp när matcherna öppnar.",
+    "banner": "ARENA · TÄVLINGSBETA KOMMER SNART",
+    "mapPlate": "KARTBILD · DUST II · INGEN 128-TICK-SERVER",
+    "rosterNote": "Exempel på spelarnamn.",
+    "teamA": "LAG A · TAKTISK ALLIANS",
+    "teamB": "LAG B · SKUGGLEGIONEN",
+    "clockLabel": "MATCHKLOCKA",
+    "clockNote": "Klockan går i en loop. Kön är stängd.",
+    "chatKicker": "LAGCHATT",
+    "chatLines": [
+      "Väntar tills klockan nollställs.",
+      "Dust II är en kartbild på den här sidan.",
+      "Ingen server är ansluten för den här truppen."
+    ],
+    "chatField": "Meddelanden skickas inte.",
+    "identityKicker": "IDENTITETSRUTNÄT",
+    "identityRows": [
+      "Ingen matchbiljett skickas via e-post.",
+      "Ingen kärnkontroll körs.",
+      "Livetelemetri kommer med tävlingsbetan."
+    ],
+    "findMatch": "HITTA TÄVLINGSMATCH",
+    "closedNotice": "Matchning öppnar med tävlingsbetan. Rankade köer körs inte ännu."
+  }
+};
