@@ -1,0 +1,133 @@
+import type { TextBag } from "../types";
+
+export const account: TextBag["account"] = {
+  "dashboard": {
+    "meta": {
+      "title": "Command Deck"
+    },
+    "kicker": "Автентицирано",
+    "title": "Command Deck",
+    "lede": "Најавен преку Steam OpenID. Сесијата живее во HttpOnly колаче, не во localStorage. Ranked пребарувањето останува затворено додека anti-cheat не стане вистински.",
+    "eliteBadge": "ELITE",
+    "stats": {
+      "accountStatus": "Статус на сметката",
+      "subscription": "Претплата",
+      "rank": "A.C.E. ранг",
+      "ratingPoints": "Рејтинг поени",
+      "wins": "Победи",
+      "losses": "Порази",
+      "accountId": "Внатрешен ID на сметка"
+    },
+    "accountStatuses": {
+      "ACTIVE": "Активна",
+      "SUSPENDED": "Суспендирана",
+      "BANNED": "Забранета",
+      "TEMP_BANNED": "Привремено забранета",
+      "PERM_BANNED": "Трајно забранета",
+      "UNDER_REVIEW": "Под проверка"
+    },
+    "tiers": {
+      "FREE": "Free",
+      "PLUS": "Plus",
+      "PREMIUM": "Premium"
+    },
+    "roles": {
+      "CAPTAIN": "Капитен",
+      "PLAYER": "Играч"
+    },
+    "settings": {
+      "title": "ПРОФИЛ НА ПОСТАВКИ НА КОНТРОЛНАТА ТАБЛА",
+      "billingNotLive": "Секоја сметка е на Free додека не постои плаќање.",
+      "cancelReason": "Нема наплатена претплата за откажување. Плаќањето не е имплементирано.",
+      "cancelButton": "Откажи претплата"
+    },
+    "rankedReason": "Ranked matchmaking е одбиен додека не постои потврдена anti-cheat интеграција.",
+    "rankedButton": "Најди ranked натпревар",
+    "roster": {
+      "title": "5v5 состав",
+      "body": "Еден капитен. Четири покани. Капитените покануваат други A.C.E. ID на сметки, кои се создаваат само по потврдена Steam најава."
+    },
+    "pendingInvites": "Покани на чекање"
+  },
+  "forms": {
+    "requestFailed": "Барањето не успеа.",
+    "createTeam": {
+      "acceptRequired": "Прифати ги Условите за користење, Anti-Cheat EULA и Политиката за приватност за да продолжиш.",
+      "failed": "Тимот не можеше да се создаде.",
+      "nameLabel": "Име на нов 5v5 тим",
+      "submitAria": "Основај нов 5v5 тим",
+      "submit": "Основај тим"
+    },
+    "invite": {
+      "failed": "Поканата не успеа.",
+      "label": "Покани слободен играч преку SteamID или A.C.E. ID на сметка",
+      "submitAria": "Испрати тимска покана",
+      "submit": "Испрати покана"
+    }
+  },
+  "profile": {
+    "meta": {
+      "notFoundTitle": "Профил на играч",
+      "title": "{name} · A.C.E. профил",
+      "description": "A.C.E. досие на играч. Plus и Premium сесиите отклучуваат графикони за трендови на телеметрија."
+    },
+    "kicker": "Идентитет на играчот",
+    "bannerPlaceholder": "Банер на профилот · наскоро",
+    "levelBadge": "НИВО {level}",
+    "premiumBadge": "PREMIUM",
+    "rosterLevel": "Ниво на состав {level}.",
+    "trend": {
+      "title": "Тренд на изведба на натпреварувачкиот рејтинг",
+      "note": "Рејтинг поени низ последователни записи од историјата на натпревари."
+    },
+    "combat": {
+      "title": "Детална матрица на борбени податоци",
+      "kills": "Вкупно убиства",
+      "deaths": "Вкупно смрти",
+      "kd": "Пресметан K/D",
+      "headshots": "Вкупно погодоци во глава",
+      "headshotPct": "Опсег на % погодоци во глава",
+      "knifeKills": "Специјални убиства со нож"
+    },
+    "weapon": {
+      "title": "Специјализација на карактеристично оружје",
+      "note": "Примарна калибрирана платформа за оружје",
+      "accuracy": "Оценка на прецизност",
+      "kills": "Вкупно убиства со оружје"
+    },
+    "gear": {
+      "title": "Спецификации на компјутерот",
+      "cpu": "CPU",
+      "gpu": "GPU",
+      "monitor": "Фреквенција на освежување на мониторот (Hz)",
+      "mouse": "Модел на глувче",
+      "dpi": "Активно DPI поставување"
+    },
+    "networksTitle": "Врска до Steam профил",
+    "back": "Врати се на составот на кланот"
+  },
+  "networks": {
+    "note": "Врската внесена тука останува во овој прелистувач и не се зачувува. A.C.E. никогаш не бара Steam лозинка.",
+    "labels": {
+      "steam": "Steam профил"
+    },
+    "open": "Отвори {label} >"
+  },
+  "ratingTrend": {
+    "chartAria": "Тренд на изведба на натпреварувачкиот рејтинг",
+    "pointAria": "Натпревар {match}: рејтинг {rating}",
+    "axisLabel": "M{match}",
+    "idle": "Задржи го покажувачот на јазол за да го видиш записот за рејтинг.",
+    "readout": "Натпревар {match} · рејтинг {rating}"
+  },
+  "loginError": {
+    "meta": {
+      "title": "Грешка при најава"
+    },
+    "title": "Steam најавата не е завршена",
+    "notConfigured": "Steam OpenID сè уште не е конфигуриран на овој сервер. A.C.E. никогаш не бара Steam лозинка.",
+    "unavailable": "Steam не одговори на барањето за потврда. Обиди се повторно за момент. A.C.E. никогаш не бара Steam лозинка.",
+    "unverified": "OpenID повратниот повик не можеше да се потврди на серверот. A.C.E. никогаш не бара Steam лозинка.",
+    "returnHome": "Врати се на почетна"
+  }
+};
