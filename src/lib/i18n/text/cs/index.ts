@@ -1,5 +1,5 @@
+import { tournamentRoadmap } from "./tournamentRoadmap";
 import type { TextBag } from "../types";
-import { rules } from "./rules";
 import { legalDocs } from "./legalDocs";
 import { codex } from "./codex";
 import { consent } from "./consent";
@@ -14,7 +14,7 @@ import { account } from "./account";
 import { desk } from "./desk";
 
 export const TEXT_CS: TextBag = {
-  rules,
+  tournamentRoadmap,
   legalDocs,
   codex,
   consent,

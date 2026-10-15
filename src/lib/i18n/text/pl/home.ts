@@ -69,43 +69,6 @@ export const home: TextBag["home"] = {
       minimalWear: "Lekko zużyty",
     },
   },
-  lootLadder: {
-    banner: "SKARBIEC SYSTEMU — ZRZUT UKŁADU",
-    title: "DRABINA ŁUPÓW A.C.E.",
-    itemWithWear: "{item} ({wear})",
-    clockLabel: "ZEGAR UKŁADU",
-    clockFormat: "{h} godz. {m} min {s} s",
-    note: "Ten zegar to układ. Premium nie bierze udziału w loterii zrzutów, a Steam nie weryfikuje ani nie dostarcza przedmiotu z tej strony.",
-  },
-  ribbon: {
-    closeOverlay: "Zamknij nakładkę",
-    close: "Zamknij",
-    disclosure:
-      "Makieta piaskownicy: brak ekwipunku, brak odbiorów, brak działającej tablicy misji i brak kasy. Te nakładki to wyłącznie próbki układu.",
-    rewards: {
-      kicker: "Nagrody za logowanie · próbka układu",
-      title: "Kalendarz meldunków Premium",
-      day: "Dzień {n}",
-      featuredReward: "Nagroda dnia {n}: zrzut skrzynki z kluczem",
-      previewSlot: "Miejsce podglądu",
-    },
-    missions: {
-      kicker: "Codzienne misje taktyczne · próbka układu",
-      title: "Aktywne codzienne wyzwania",
-      names: {
-        headshot: "Specjalista od headshotów",
-        utilityEntry: "Wejście z granatami",
-        clutch: "Protokół clutcha",
-      },
-    },
-    shop: {
-      kicker: "Sklep A.C.E. · makieta piaskownicy",
-      title: "Kasa ekwipunku broni",
-      mockBadge: "MAKIETA PIASKOWNICY",
-      fullPreview: "Otwórz pełny podgląd rynku",
-      openAria: "Otwórz sklep A.C.E.",
-    },
-  },
   serverHub: {
     badge: "BRAK SERWERÓW GRY NA ŻYWO",
     nodes: {

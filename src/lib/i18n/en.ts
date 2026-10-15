@@ -118,13 +118,7 @@ export const EN = {
  pingMock: "Regional servers coming soon ({ping}).",
  serverDisclaimer:
  "128-tick regional servers are coming with the competitive beta.",
- lootKicker: "SEASON REWARDS · COMING SOON",
- lootTitle: "A.C.E. LOOT LADDER",
- lootNote:
- "Original A.C.E. reward card.",
  nextDrop: "NEXT DROP IN: {clock}",
- lootDisclaimer:
- "Season rewards are announced with each event. Nothing is claimable yet.",
  champKicker: "CHAMPIONSHIP REWARDS",
  champBody:
  "The reward line-up we are preparing for Season 1 champions.",
@@ -249,7 +243,6 @@ export const EN = {
  shopItemIndex: "ITEM {n}",
  shopTabsAria: "Marketplace categories",
  squadTabsAria: "Squad workspace categories",
- rulesChapter: "CHAPTER {n}",
  squadKicker: "A.C.E. TEAMS",
  squadTitle: "A.C.E. SQUAD MANAGEMENT — TACTICAL CLAN WORKSPACE",
  squadLede: "Assemble your 5v5 roster, invite tactical free agents and verify anti-cheat tournament compliance.",
@@ -298,44 +291,6 @@ export const EN = {
  tourneyOpsBody:
  "Events of up to one hundred teams use this 128-slot tree: twenty-eight byes, thirty-six opening contests and ninety-nine played matches on the ordinary path to a champion. Unfilled slots are byes, not staged matches. Roster lock, veto, overtime and staff rulings are published in the Technical League Document at /rules. Deep links such as /tournaments?team=gf-0 and /profile/vlt-lurk are layout identities, not registered organizations.",
  tourneyLoading: "Loading bracket layout…",
- rulesKicker: "ACE-RULES / TECHNICAL LEAGUE DOCUMENT / TOS",
- rulesTitle: "Technical League Document",
- rulesLede:
- "This is the binding competition text for A.C.E. It is written in original professional English and is not a copy of another publisher's handbook. It is incorporated into the website Terms at /terms. Ranked queues, live game servers, payments, prizes and a downloadable Anti-Cheat client are not active on this website. Until those systems are implemented, approved and tested end to end, the clauses below describe how A.C.E. competition will run. They are not a claim that a live CS2 circuit is already attached.",
- rulesCh1Title: "Competitive Gameplay Core",
- rulesCh1P1:
- "Default A.C.E. competitive matches are five players against five. Regulation uses a twenty-four-round map under the MR12 ruleset: the first team to thirteen regulation rounds wins and sides switch after twelve rounds, unless a published event briefing states otherwise. A browser click is never a round win. A screenshot is never an official score. Only an authenticated game-server adapter or a named staff workflow may mark a winner.",
- rulesCh1P2:
- "Standard overtime, when an event uses it, must be announced before warmup or a knife round. Unless an event briefing publishes a different table, overtime is specified as MR3 sequences: six additional rounds with a side switch after three, first team to four overtime rounds in that sequence wins, repeating until a winner is produced. Warmup configuration, pause availability and knife-round side choice are issued with the event briefing and are not inferred from this website.",
- rulesCh1P3:
- "Map veto is a published workflow, not an informal chat agreement. The default specified order for a single-map contest is: Team A bans, Team B bans, Team A bans, Team B bans, remaining map is played, with the higher seed or the winner of a knife round choosing the starting side as the briefing states. Best-of-three events, if ever hosted, must publish a pick/ban table before registration lock. Changing a veto after lock is void unless staff records a documented emergency exception.",
- rulesCh1P4:
- "Tactical timeouts are limited. Unless an event briefing states a tighter cap, each team may call at most four tactical timeouts per map, each lasting at most thirty seconds of official pause time and not during the other team’s already-running timeout. Technical pauses for a documented client or server failure are separate and are granted or refused by server operators or event staff. Abuse of pause to stall a lost round is a conduct offense under Chapter 04.",
- rulesCh2Title: "Autonomous Secure Shell Integrity",
- rulesCh2P1:
- "Ranked matchmaking and A.C.E.-managed competitive admission are specified to require mandatory execution of a hardware-linked Anti-Cheat scanning client — the Autonomous Secure Shell. The client, when it exists, must be running, current and able to complete a signed handshake that binds the verified SteamID to the account. If the client is missing, stopped, outdated, spoofed, or unverified, admission is denied. Ranked FIND MATCH on this website already fail-closes for that reason.",
- rulesCh2P2:
- "Any cheat-signature validation, refused integrity check, hardware identifier spoof, or account sharing used to evade a prior restriction is specified to produce an absolute lifetime hardware-identifier (HWID) device ban together with instant account suspension (BANNED or PERM_BANNED). A lifetime HWID exclusion carries complete forfeiture of subscription funds and zero refund liability: paid time, if billing later exists, is not refunded because of a ban. A.C.E. can refuse its own queues and managed servers. It cannot and does not claim to, prevent a person from launching Counter-Strike 2 outside A.C.E.",
- rulesCh2P3:
- "No Anti-Cheat binary ships with this website. Hardware fingerprints are not collected today. Coming Soon download cards are layout only. There are no paid charges on this website today, so there is presently nothing to refund. The forfeiture rule is published now so that it is not a surprise if a billed product and a verified client later exist.",
- rulesCh3Title: "League Operations and Roster Locks",
- rulesCh3P1:
- "A standing A.C.E. team has one designated Captain and up to four teammates. Only the Captain may send invitations and only by the invitee’s A.C.E. account identifier created after a server-verified Steam OpenID login. A.C.E. never asks for a Steam password. A player occupies at most one starting slot on a given roster. Substitutes, if an event allows them, must be named before lock.",
- rulesCh3P2:
- "Roster lock is strict during active tournament roadmap stages. When a season or event is marked active, submitted five-person lists are frozen. Adding, removing, or swapping players after lock is void unless event staff records a documented emergency exception. Changing the Captain on the standing team after lock does not rewrite the frozen event list. Duplicate registrations of the same team are rejected. The public 128-slot pyramid is a demonstration layout; registration currently shows 0 of 100.",
- rulesCh3P3:
- "Administration reserves complete override and match-dispute resolution privileges. A participant may open a dispute against a recorded match by stating the map, round window, alleged defect and evidence references. Filing is not proof. A disputed match does not advance a team and does not change rating until staff resolve it. Staff who played in the match must not certify it. Administrative overrides write a new audit row; they do not erase the previous record. All staff rulings on disputes, voids, restorations and eligibility are final. Until a live ticket queue is connected, email support@ace-platform.gg is the interim intake address.",
- rulesCh4Title: "General Terms of Use and Disclaimers",
- rulesCh4P1:
- "These General Terms govern user behavior, website operations and intellectual property on ace-platform properties operated by A.C.E. Competitions Ltd. Using the site means you accept these Terms, the Privacy Policy, the Cookie Policy and this Technical League Document. You must be old enough to use Steam in your country. Accounts are created only through official Steam OpenID.",
- rulesCh4P2:
- "Prohibited conduct includes match throwing, ghosting from a spectator feed, account sharing to evade a restriction, hate speech, doxxing and in-server sabotage. Penalties range from a warning to temporary or permanent exclusion. A report without corroboration cannot produce a permanent ban by itself. Lobby clocks, loot ladders, login-reward calendars and shop overlays are layout previews. This website does not collect entry fees, award cash, or ship items.",
- rulesCh4P3:
- "Display membership prices are Plus $4 per month and Premium $7 per month. Checkout is not live. When billing exists, cancellation and refund terms follow the published subscription disclosure. A lifetime integrity ban, if a billed product and a verified client later exist, still carries zero refund liability as stated in Chapter 02.",
- rulesCh4P4:
- "A.C.E., its marks, original rank names and original copy on this website are intellectual property of A.C.E. Competitions Ltd. Trademarks of Valve, Steam and Counter-Strike remain the property of their owners. Hosting a real CS2 event still requires a distinct review of Valve’s tournament, server and matchmaking terms before the first round is played.",
- rulesCh4P5:
- "To the extent permitted by law, A.C.E. is not liable for lost rank, lost cosmetics that were never real items, or third-party Steam or CS2 outages. Mandatory consumer rights in your country are not excluded where they cannot be waived. Contact: support@ace-platform.gg.",
  hubKicker: "MASTER LOBBY WORKSPACE",
  hubTitle: "Standalone competitive shell",
  hubBadge: "PUBLIC SITE · ONLINE",

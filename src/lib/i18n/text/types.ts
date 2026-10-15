@@ -10,6 +10,6 @@ type Widen<T> = T extends string
 export type TextBag = Widen<typeof TEXT_EN>;
 
 /** Long documents rendered on the server only. Client components receive them as props. */
-export const SERVER_ONLY_AREAS = ["rules", "legalDocs", "codex"] as const;
+export const SERVER_ONLY_AREAS = ["legalDocs", "codex"] as const;
 
 export type ClientText = Omit<TextBag, (typeof SERVER_ONLY_AREAS)[number]>;

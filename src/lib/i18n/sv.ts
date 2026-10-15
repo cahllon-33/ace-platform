@@ -118,13 +118,7 @@ export const SV: MessageBag = {
  pingMock: "Ping: {ping} • I drift (simulerad)",
  serverDisclaimer:
  "Latenssiffror är dispositionsprov. Det finns ingen live-produkt med 128-tick, ingen dedikerad CS2-flotta och ingen regional anycast. Att välja en ruta markerar bara det här simulerade navet.",
- lootKicker: "TESTDROPP · INTE ETT PRIS",
- lootTitle: "A.C.E. BYTESSTEGE — LIVEDROPP",
- lootNote:
- "Konceptuellt CS2-skinnkort. Inte Valve-konst, inte bytesbart och inte i ett A.C.E.-förråd.",
  nextDrop: "NÄSTA DROPP OM: {clock}",
- lootDisclaimer:
- "Alla belöningsföremål, anmälningar och stegfonder är konceptuella testbilder. Det finns inget livedropp, inget finansierat pris och ingen kassa.",
  champKicker: "TESTKOSMETIK · SIMULERAD KASSA",
  champBody:
  "Förhandsvisningar av högklassiga CS2-skinn. De är inte Valve-föremål, inte i ett A.C.E.-förråd och inte riktiga priser. Kassan är bara en simulerad varning.",
@@ -250,7 +244,6 @@ export const SV: MessageBag = {
  shopItemIndex: "FÖREMÅL {n}",
  shopTabsAria: "Marknadskategorier",
  squadTabsAria: "Kategorier för lagarbetsytan",
- rulesChapter: "KAPITEL {n}",
  squadKicker: "A.C.E. LAG · DISPOSITIONSFÖRHANDSGRANSKNING",
  squadTitle: "A.C.E. TRUPPHANTERING — TAKTISK KLANARBETSYTA",
  squadLede: "Samla din 5v5-trupp, bjud in taktiska fria agenter och verifiera turneringens anti-cheat-efterlevnad.",
@@ -299,44 +292,6 @@ export const SV: MessageBag = {
  tourneyOpsBody:
  "Evenemang med upp till hundra lag använder det här trädet med 128 platser: tjugoåtta fripass, trettiosex öppningsmöten och nittionio spelade matcher på den vanliga vägen till en mästare. Ofyllda platser är fripass, inte iscensatta matcher. Trupplås, veto, övertid och personalbeslut publiceras i det tekniska ligadokumentet på /rules. Djuplänkar som /tournaments?team=gf-0 och /profile/vlt-lurk är dispositionsidentiteter, inte registrerade organisationer.",
  tourneyLoading: "Laddar slutspelsträd…",
- rulesKicker: "ACE-RULES / TEKNISKT LIGADOKUMENT / VILLKOR",
- rulesTitle: "Tekniskt ligadokument",
- rulesLede:
- "Det här är den bindande tävlingstexten för A.C.E. Den är ursprunglig professionell text och inte en kopia av någon handbok från Valve. Den ingår i webbplatsens villkor på /terms. Rankade köer, live-spelservrar, betalningar, priser och en nedladdningsbar anti-cheat-klient är inte aktiva på den här webbplatsen. Tills de systemen är införda, godkända och testade från början till slut beskriver klausulerna nedan hur A.C.E.-tävling ska fungera. De är inte ett påstående om att en live-CS2-krets redan är kopplad.",
- rulesCh1Title: "Kärna för tävlingsspel",
- rulesCh1P1:
- "Standardtävlingar i A.C.E. är fem spelare mot fem. Reglerna använder en karta på tjugofyra rundor enligt MR12: det första laget som vinner tretton reglementsenliga rundor vinner, och sidorna byts efter tolv rundor, om inte en publicerad evenemangsbrief säger något annat. Ett webbläsarklick är aldrig en vunnen runda. En skärmbild är aldrig ett officiellt resultat. Bara en autentiserad spelserveradapter eller ett namngivet personalflöde får markera en vinnare.",
- rulesCh1P2:
- "Standardövertid, när ett evenemang använder den, måste meddelas före uppvärmning eller en knivrunda. Om evenemangsbriefen inte publicerar en annan tabell anges övertid som MR3-sekvenser: sex extra rundor med sidbyte efter tre; det första laget som vinner fyra övertidsrundor i den sekvensen vinner, och det upprepas tills en vinnare finns. Uppvärmningsinställning, paustillgång och sidval i knivrundan utfärdas med briefen och härleds inte från den här webbplatsen.",
- rulesCh1P3:
- "Kartveto är ett publicerat flöde, inte en informell chattöverenskommelse. Den angivna standardordningen för en enkartsmatch är: lag A bannar, lag B bannar, lag A bannar, lag B bannar, kvarvarande karta spelas, och det högre seedet eller vinnaren av en knivrunda väljer startsida enligt briefen. Bäst-av-tre-evenemang, om de någonsin arrangeras, måste publicera en plock- och bantabell före anmälningslås. Att ändra ett veto efter lås är ogiltigt om inte personalen registrerar ett dokumenterat nödundantag.",
- rulesCh1P4:
- "Taktiska timeout är begränsade. Om evenemangsbriefen inte sätter ett snävare tak får varje lag kalla högst fyra taktiska timeout per karta, var och en högst trettio sekunder officiell paustid, och inte under det andra lagets redan pågående timeout. Tekniska pauser för ett dokumenterat klient- eller serverfel är separata och beviljas eller nekas av serveroperatörer eller evenemangspersonal. Att missbruka paus för att dra ut på en förlorad runda är ett uppförandebrott enligt kapitel 04.",
- rulesCh2Title: "Integritet för autonomt säkert skal",
- rulesCh2P1:
- "Rankad matchning och tävlingsantagning som A.C.E. hanterar är specificerade att kräva obligatorisk körning av en hårdvarukopplad anti-cheat-skanningsklient — det autonoma säkra skalet. Klienten, när den finns, måste köra, vara aktuell och kunna slutföra ett signerat handslag som binder det verifierade SteamID till kontot. Om klienten saknas, är stoppad, föråldrad, förfalskad eller overifierad nekas antagning. Rankad HITTA MATCH på den här webbplatsen stängs redan vid fel av det skälet.",
- rulesCh2P2:
- "Varje validering av fusk-signatur, nekad integritetskontroll, förfalskning av hårdvaruidentifierare eller kontodelning som används för att kringgå en tidigare begränsning är specificerad att ge ett absolut livstidsförbud för enhetens hårdvaruidentifierare (HWID) tillsammans med omedelbar kontoavstängning (BANNED eller PERM_BANNED). Ett livslångt HWID-uteslutande medför full förlust av prenumerationsmedel och ingen återbetalningsskyldighet: betald tid, om fakturering senare finns, återbetalas inte på grund av ett förbud. A.C.E. kan neka sina egna köer och hanterade servrar. Det kan inte, och påstår sig inte kunna, hindra en person från att starta Counter-Strike 2 utanför A.C.E.",
- rulesCh2P3:
- "Ingen anti-cheat-binär levereras med den här webbplatsen. Hårdvaruavtryck samlas inte in idag. Nedladdningskort för Kommer snart är bara disposition. Det finns inga betaldebiteringar på den här webbplatsen idag, så det finns för närvarande inget att återbetala. Förlustregeln publiceras nu så att den inte blir en överraskning om en fakturerad produkt och en verifierad klient senare finns.",
- rulesCh3Title: "Ligadrift och trupplås",
- rulesCh3P1:
- "Ett stående A.C.E.-lag har en utsedd kapten och upp till fyra lagkamrater. Bara kaptenen får skicka inbjudningar, och bara med den inbjudnas A.C.E.-kontoidentifierare som skapats efter en serververifierad Steam OpenID-inloggning. A.C.E. ber aldrig om ett Steam-lösenord. En spelare innehar högst en startplats i en given trupp. Avbytare, om ett evenemang tillåter dem, måste namnges före lås.",
- rulesCh3P2:
- "Trupplås är strikt under aktiva etapper i turneringens färdplan. När en säsong eller ett evenemang markeras som aktivt fryses inskickade fempersonerslistor. Att lägga till, ta bort eller byta spelare efter lås är ogiltigt om inte evenemangspersonalen registrerar ett dokumenterat nödundantag. Att byta kapten i det stående laget efter lås skriver inte om den frysta evenemangslistan. Dubbla anmälningar av samma lag avvisas. Den offentliga pyramiden med 128 platser är en demonstrationsdisposition; anmälan visar för närvarande 0 av 100.",
- rulesCh3P3:
- "Administrationen förbehåller sig full åsidosättning och rätt att avgöra matchprotester. En deltagare kan öppna en protest mot en registrerad match genom att ange karta, rundfönster, påstått fel och bevisreferenser. Att lämna in är inte bevis. En omtvistad match avancerar inte ett lag och ändrar inte ranking förrän personalen avgör den. Personal som spelade i matchen får inte intyga den. Administrativa åsidosättningar skriver en ny revisionsrad; de raderar inte den tidigare posten. Alla personalbeslut om protester, ogiltigförklaranden, återställanden och behörighet är slutliga. Tills en live-ärendekö är ansluten är e-postadressen support@ace-platform.gg den tillfälliga mottagningen.",
- rulesCh4Title: "Allmänna användarvillkor och friskrivningar",
- rulesCh4P1:
- "Dessa allmänna villkor styr användarbeteende, webbplatsdrift och immateriella rättigheter på ace-platform-egendomar som drivs av A.C.E. Competitions Ltd. Att använda webbplatsen betyder att du accepterar dessa villkor, integritetspolicyn, kakpolicyn och det här tekniska ligadokumentet. Du måste vara gammal nog att använda Steam i ditt land. Konton skapas bara via officiell Steam OpenID.",
- rulesCh4P2:
- "Förbjudet beteende omfattar att lägga matcher, att tjuvtitta via en åskådarström, kontodelning för att kringgå en begränsning, hatpropaganda, publicering av personuppgifter och sabotage på servern. Påföljder går från en varning till tillfällig eller permanent uteslutning. En anmälan utan stöd kan inte ensam ge ett permanent förbud. Lobbyklockor, bytesstegar, kalendrar för inloggningsbelöningar och butikslager är dispositionsförhandsvisningar. Den här webbplatsen tar inte ut anmälningsavgifter, delar inte ut pengar och skickar inte föremål.",
- rulesCh4P3:
- "Visade medlemspriser är Plus $4 per månad och Premium $7 per månad. Kassan är inte live. När fakturering finns följer avbokning och återbetalning den publicerade prenumerationsupplysningen. Ett livstidsförbud för integritet, om en fakturerad produkt och en verifierad klient senare finns, medför fortfarande ingen återbetalningsskyldighet enligt kapitel 02.",
- rulesCh4P4:
- "A.C.E., dess märken, ursprungliga ranknamn och ursprunglig text på den här webbplatsen är immateriell egendom tillhörande A.C.E. Competitions Ltd. Varumärken för Valve, Steam, och Counter-Strike förblir sina ägares egendom. Att arrangera ett riktigt CS2-evenemang kräver fortfarande en särskild granskning av Valves turnerings-, server- och matchningsvillkor innan första rundan spelas.",
- rulesCh4P5:
- "I den utsträckning lagen tillåter ansvarar A.C.E. inte för förlorad rank, förlorad kosmetik som aldrig var riktiga föremål, eller avbrott hos tredje parts Steam eller CS2. Tvingande konsumenträttigheter i ditt land utesluts inte där de inte kan avtalas bort. Kontakt: support@ace-platform.gg.",
  hubKicker: "HUVUDLOBBYNS ARBETSYTA",
  hubTitle: "Fristående tävlingsskal",
  hubBadge: "KÄRNINFRASTRUKTUR: I DRIFT",

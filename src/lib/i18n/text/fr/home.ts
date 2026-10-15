@@ -69,43 +69,6 @@ export const home: TextBag["home"] = {
       minimalWear: "Très peu usée",
     },
   },
-  lootLadder: {
-    banner: "COFFRE DU SYSTÈME — DROP DE MISE EN PAGE",
-    title: "ÉCHELLE DE BUTIN A.C.E.",
-    itemWithWear: "{item} ({wear})",
-    clockLabel: "HORLOGE DE MISE EN PAGE",
-    clockFormat: "{h} h {m} min {s} s",
-    note: "Cette horloge est une mise en page. Premium ne donne accès à aucune loterie de drops, et Steam ne vérifie ni ne livre aucun objet depuis cette page.",
-  },
-  ribbon: {
-    closeOverlay: "Fermer la fenêtre",
-    close: "Fermer",
-    disclosure:
-      "Maquette d'essai : aucun inventaire, aucune réclamation, aucun tableau de missions en direct et aucun paiement. Ces fenêtres ne sont que des échantillons de mise en page.",
-    rewards: {
-      kicker: "Récompenses de connexion · échantillon de mise en page",
-      title: "Calendrier de présence Premium",
-      day: "Jour {n}",
-      featuredReward: "Récompense du jour {n} : drop de caisse à clé",
-      previewSlot: "Emplacement d'aperçu",
-    },
-    missions: {
-      kicker: "Missions tactiques quotidiennes · échantillon de mise en page",
-      title: "Défis quotidiens actifs",
-      names: {
-        headshot: "Spécialiste du headshot",
-        utilityEntry: "Entrée aux utilitaires",
-        clutch: "Protocole clutch",
-      },
-    },
-    shop: {
-      kicker: "Boutique A.C.E. · maquette d'essai",
-      title: "Paiement de l'inventaire d'armes",
-      mockBadge: "MAQUETTE D'ESSAI",
-      fullPreview: "Ouvrir l'aperçu complet du marché",
-      openAria: "Ouvrir la boutique A.C.E.",
-    },
-  },
   serverHub: {
     badge: "AUCUN SERVEUR DE JEU EN DIRECT",
     nodes: {

@@ -118,13 +118,7 @@ export const ES: MessageBag = {
  pingMock: "Ping: {ping} • Operativo (simulado)",
  serverDisclaimer:
  "Las cifras de latencia son muestras de diseño. No hay un producto de 128 ticks en vivo, ni una flota dedicada de CS2, ni anycast regional. Elegir una ficha solo resalta este centro simulado.",
- lootKicker: "BOTINES DE PRUEBA · NO ES UN PREMIO",
- lootTitle: "ESCALERA DE BOTÍN A.C.E. — BOTINES EN VIVO",
- lootNote:
- "Tarjeta conceptual de clase de skin de CS2. No es material de Valve, no es intercambiable y no está en un inventario de A.C.E.",
  nextDrop: "PRÓXIMO BOTÍN EN: {clock}",
- lootDisclaimer:
- "Todos los objetos de recompensa, las entradas y los pozos de la escalera son representaciones conceptuales de prueba. No hay drop en vivo, ni premio financiado, ni pago.",
  champKicker: "COSMÉTICOS DE PRUEBA · PAGO SIMULADO",
  champBody:
  "Vistas previas de skins de CS2 de alto nivel. No son objetos de Valve, no están en un inventario de A.C.E. y no son premios reales. El pago es solo un aviso simulado.",
@@ -250,7 +244,6 @@ export const ES: MessageBag = {
  shopItemIndex: "OBJETO {n}",
  shopTabsAria: "Categorías del mercado",
  squadTabsAria: "Categorías del espacio de escuadra",
- rulesChapter: "CAPÍTULO {n}",
  squadKicker: "EQUIPOS A.C.E. · VISTA PREVIA DE DISEÑO",
  squadTitle: "GESTIÓN DE ESCUADRA A.C.E. — ESPACIO TÁCTICO DE CLAN",
  squadLede: "Reúne tu plantilla 5v5, invita a agentes libres tácticos y verifica el cumplimiento de anticheat del torneo.",
@@ -299,44 +292,6 @@ export const ES: MessageBag = {
  tourneyOpsBody:
  "Los eventos de hasta cien equipos usan este árbol de 128 plazas: veintiocho exentos, treinta y seis enfrentamientos de apertura y noventa y nueve partidos jugados en el camino ordinario hasta un campeón. Las plazas vacías son exentos, no partidos montados. El bloqueo de plantilla, el veto, la prórroga y las decisiones del personal se publican en el Documento técnico de liga en /rules. Los enlaces directos como /tournaments?team=gf-0 y /profile/vlt-lurk son identidades de diseño, no organizaciones inscritas.",
  tourneyLoading: "Cargando el cuadro…",
- rulesKicker: "ACE-RULES / DOCUMENTO TÉCNICO DE LIGA / TÉRMINOS",
- rulesTitle: "Documento técnico de liga",
- rulesLede:
- "Este es el texto de competición vinculante de A.C.E. Es redacción profesional original y no es una copia de ningún manual de Valve. Queda incorporado a los Términos del sitio en /terms. Las colas clasificatorias, los servidores de juego en vivo, los pagos, los premios y un cliente de anticheat descargable no están activos en este sitio. Hasta que esos sistemas se implementen, se aprueben y se prueben de extremo a extremo, las cláusulas siguientes describen cómo funcionará la competición de A.C.E. No afirman que ya haya un circuito de CS2 en vivo conectado.",
- rulesCh1Title: "Núcleo del juego competitivo",
- rulesCh1P1:
- "Las partidas competitivas predeterminadas de A.C.E. son de cinco jugadores contra cinco. El reglamento usa un mapa de veinticuatro rondas bajo el sistema MR12: el primer equipo que gane trece rondas reglamentarias vence, y los bandos cambian después de doce rondas, salvo que un informe publicado del evento indique otra cosa. Un clic en el navegador nunca es una ronda ganada. Una captura de pantalla nunca es un marcador oficial. Solo un adaptador autenticado del servidor de juego o un flujo de trabajo del personal designado puede marcar un ganador.",
- rulesCh1P2:
- "La prórroga estándar, cuando un evento la usa, debe anunciarse antes del calentamiento o de una ronda de cuchillo. Salvo que el informe del evento publique una tabla distinta, la prórroga se especifica como secuencias MR3: seis rondas adicionales con cambio de bando después de tres; el primer equipo que gane cuatro rondas de prórroga en esa secuencia vence, y se repite hasta que haya un ganador. La configuración del calentamiento, la disponibilidad de pausas y la elección de bando en la ronda de cuchillo se publican con el informe del evento y no se deducen de este sitio.",
- rulesCh1P3:
- "El veto de mapas es un flujo publicado, no un acuerdo informal de chat. El orden especificado por defecto para un enfrentamiento a un mapa es: el equipo A veta, el equipo B veta, el equipo A veta, el equipo B veta, se juega el mapa restante, y la cabeza de serie superior o el ganador de una ronda de cuchillo elige el bando inicial según indique el informe. Los eventos al mejor de tres, si alguna vez se celebran, deben publicar una tabla de elección y veto antes del cierre de inscripciones. Cambiar un veto después del cierre es nulo, salvo que el personal registre una excepción de emergencia documentada.",
- rulesCh1P4:
- "Los tiempos muertos tácticos son limitados. Salvo que el informe del evento fije un tope más estricto, cada equipo puede pedir como máximo cuatro tiempos muertos tácticos por mapa, cada uno de treinta segundos como máximo de pausa oficial, y no durante un tiempo muerto del otro equipo que ya esté en curso. Las pausas técnicas por un fallo documentado del cliente o del servidor son aparte y las conceden o deniegan los operadores del servidor o el personal del evento. Abusar de la pausa para alargar una ronda perdida es una infracción de conducta según el capítulo 04.",
- rulesCh2Title: "Integridad de la envoltura segura autónoma",
- rulesCh2P1:
- "El emparejamiento clasificatorio y la admisión competitiva gestionada por A.C.E. se especifican para exigir la ejecución obligatoria de un cliente de análisis anticheat vinculado al hardware: la Envoltura segura autónoma. El cliente, cuando exista, debe estar en ejecución, actualizado y ser capaz de completar un enlace firmado que vincule el SteamID verificado a la cuenta. Si el cliente falta, está detenido, desactualizado, suplantado o no verificado, se deniega la admisión. BUSCAR PARTIDA clasificatorio en este sitio ya se cierra ante fallo por ese motivo.",
- rulesCh2P2:
- "Cualquier validación de firma de trampas, comprobación de integridad rechazada, suplantación del identificador de hardware o uso compartido de cuenta para eludir una restricción previa se especifica para producir una prohibición absoluta de por vida del identificador de hardware (HWID) del dispositivo, junto con la suspensión inmediata de la cuenta (BANNED o PERM_BANNED). Una exclusión HWID de por vida conlleva la pérdida total de los fondos de suscripción y ninguna obligación de reembolso: el tiempo pagado, si más adelante existe facturación, no se reembolsa a causa de una prohibición. A.C.E. puede rechazar sus propias colas y servidores gestionados. No puede, y no afirma poder, impedir que una persona inicie Counter-Strike 2 fuera de A.C.E.",
- rulesCh2P3:
- "Con este sitio no se entrega ningún binario de anticheat. Hoy no se recogen huellas de hardware. Las tarjetas de descarga Próximamente son solo diseño. Hoy no hay cargos de pago en este sitio, así que ahora no hay nada que reembolsar. La regla de pérdida se publica ahora para que no sea una sorpresa si más adelante existen un producto facturado y un cliente verificado.",
- rulesCh3Title: "Operaciones de liga y bloqueo de plantilla",
- rulesCh3P1:
- "Un equipo permanente de A.C.E. tiene un capitán designado y hasta cuatro compañeros. Solo el capitán puede enviar invitaciones, y solo mediante el identificador de cuenta A.C.E. del invitado, creado después de un inicio de sesión Steam OpenID verificado por el servidor. A.C.E. nunca pide una contraseña de Steam. Un jugador ocupa como máximo una plaza titular en una plantilla dada. Los suplentes, si un evento los permite, deben nombrarse antes del bloqueo.",
- rulesCh3P2:
- "El bloqueo de plantilla es estricto durante las fases activas de la hoja de ruta del torneo. Cuando una temporada o un evento se marca como activo, las listas de cinco personas enviadas quedan congeladas. Añadir, quitar o cambiar jugadores después del bloqueo es nulo, salvo que el personal del evento registre una excepción de emergencia documentada. Cambiar al capitán del equipo permanente después del bloqueo no reescribe la lista congelada del evento. Las inscripciones duplicadas del mismo equipo se rechazan. La pirámide pública de 128 plazas es un diseño de demostración; la inscripción muestra ahora 0 de 100.",
- rulesCh3P3:
- "La administración se reserva la anulación completa y los privilegios de resolución de disputas de partida. Un participante puede abrir una disputa contra una partida registrada indicando el mapa, la ventana de rondas, el defecto alegado y las referencias de prueba. Presentarla no es una prueba. Una partida en disputa no hace avanzar a un equipo y no cambia la puntuación hasta que el personal la resuelva. El personal que jugó en la partida no debe certificarla. Las anulaciones administrativas escriben una nueva fila de auditoría; no borran el registro anterior. Todas las decisiones del personal sobre disputas, anulaciones, restauraciones y elegibilidad son definitivas. Hasta que se conecte una cola de tickets en vivo, el correo support@ace-platform.gg es la dirección provisional de entrada.",
- rulesCh4Title: "Términos generales de uso y avisos",
- rulesCh4P1:
- "Estos Términos generales rigen el comportamiento del usuario, las operaciones del sitio y la propiedad intelectual en las propiedades ace-platform operadas por A.C.E. Competitions Ltd. Usar el sitio significa que aceptas estos Términos, la Política de privacidad, la Política de cookies y este Documento técnico de liga. Debes tener la edad suficiente para usar Steam en tu país. Las cuentas se crean solo mediante el Steam OpenID oficial.",
- rulesCh4P2:
- "La conducta prohibida incluye amañar partidas, espiar desde una retransmisión de espectador, compartir la cuenta para eludir una restricción, el discurso de odio, el doxeo y el sabotaje dentro del servidor. Las sanciones van desde un aviso hasta la exclusión temporal o permanente. Una denuncia sin corroboración no puede producir por sí sola una prohibición permanente. Los relojes del lobby, las escaleras de botín, los calendarios de recompensas de inicio de sesión y las capas de la tienda son vistas previas de diseño. Este sitio no cobra inscripciones, no entrega dinero ni envía objetos.",
- rulesCh4P3:
- "Los precios de membresía mostrados son Plus $4 al mes y Premium $7 al mes. El pago no está en vivo. Cuando exista facturación, la cancelación y los reembolsos siguen el aviso de suscripción publicado. Una prohibición de integridad de por vida, si más adelante existen un producto facturado y un cliente verificado, sigue sin obligación de reembolso, como se indica en el capítulo 02.",
- rulesCh4P4:
- "A.C.E., sus marcas, los nombres originales de rango y el texto original de este sitio son propiedad intelectual de A.C.E. Competitions Ltd. Las marcas de Valve, Steam, y Counter-Strike siguen siendo propiedad de sus titulares. Organizar un evento real de CS2 sigue exigiendo una revisión distinta de los términos de torneo, servidor y emparejamiento de Valve antes de que se juegue la primera ronda.",
- rulesCh4P5:
- "En la medida permitida por la ley, A.C.E. no responde por un rango perdido, por cosméticos perdidos que nunca fueron objetos reales, ni por caídas de Steam o CS2 de terceros. Los derechos de consumo obligatorios de tu país no se excluyen cuando no se pueden renunciar. Contacto: support@ace-platform.gg.",
  hubKicker: "ESPACIO MAESTRO DEL LOBBY",
  hubTitle: "Entorno competitivo independiente",
  hubBadge: "INFRAESTRUCTURA CENTRAL: OPERATIVA",

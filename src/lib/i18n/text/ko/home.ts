@@ -69,43 +69,6 @@ export const home: TextBag["home"] = {
       minimalWear: "약간의 사용감",
     },
   },
-  lootLadder: {
-    banner: "시스템 금고 — 레이아웃 드롭",
-    title: "A.C.E. 전리품 래더",
-    itemWithWear: "{item} ({wear})",
-    clockLabel: "레이아웃 시계",
-    clockFormat: "{h}시간 {m}분 {s}초",
-    note: "이 시계는 레이아웃입니다. Premium은 드롭 추첨에 참여하지 않으며, Steam은 이 페이지의 아이템을 확인하거나 지급하지 않습니다.",
-  },
-  ribbon: {
-    closeOverlay: "오버레이 닫기",
-    close: "닫기",
-    disclosure:
-      "샌드박스 목업: 인벤토리, 수령, 실시간 임무 보드, 결제는 없습니다. 이 오버레이는 레이아웃 샘플일 뿐입니다.",
-    rewards: {
-      kicker: "로그인 보상 · 레이아웃 샘플",
-      title: "Premium 출석 달력",
-      day: "{n}일차",
-      featuredReward: "{n}일차 보상: 키케이스 드롭",
-      previewSlot: "미리보기 슬롯",
-    },
-    missions: {
-      kicker: "일일 전술 임무 · 레이아웃 샘플",
-      title: "진행 중인 일일 도전 과제",
-      names: {
-        headshot: "헤드샷 스페셜리스트",
-        utilityEntry: "유틸리티 진입",
-        clutch: "클러치 프로토콜",
-      },
-    },
-    shop: {
-      kicker: "A.C.E. 상점 · 샌드박스 목업",
-      title: "무기 인벤토리 결제",
-      mockBadge: "샌드박스 목업",
-      fullPreview: "전체 마켓플레이스 미리보기 열기",
-      openAria: "A.C.E. 상점 열기",
-    },
-  },
   serverHub: {
     badge: "실시간 게임 서버 없음",
     nodes: {

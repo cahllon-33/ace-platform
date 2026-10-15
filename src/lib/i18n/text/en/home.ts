@@ -67,43 +67,6 @@
       minimalWear: "Minimal Wear",
     },
   },
-  lootLadder: {
-    banner: "SYSTEM VAULT · COMING SOON",
-    title: "A.C.E. LOOT LADDER",
-    itemWithWear: "{item} ({wear})",
-    clockLabel: "NEXT DROP",
-    clockFormat: "{h}h {m}m {s}s",
-    note: "Reward drops open with Season 1. Membership never enters a drop lottery.",
-  },
-  ribbon: {
-    closeOverlay: "Close overlay",
-    close: "Close",
-    disclosure:
-      "Login rewards and daily missions arrive with Season 1. Here is a first look.",
-    rewards: {
-      kicker: "Login rewards · coming soon",
-      title: "Premium check-in calendar",
-      day: "Day {n}",
-      featuredReward: "Day {n} Reward: Keycase Drop",
-      previewSlot: "Preview slot",
-    },
-    missions: {
-      kicker: "Daily tactical missions · coming soon",
-      title: "Active daily challenges",
-      names: {
-        headshot: "Headshot Specialist",
-        utilityEntry: "Utility Entry",
-        clutch: "Clutch Protocol",
-      },
-    },
-    shop: {
-      kicker: "A.C.E. shop · coming soon",
-      title: "Weapon inventory checkout",
-      mockBadge: "COMING SOON",
-      fullPreview: "Open the full marketplace preview",
-      openAria: "Open the A.C.E. shop",
-    },
-  },
   serverHub: {
     badge: "GAME SERVERS · COMING SOON",
     nodes: {

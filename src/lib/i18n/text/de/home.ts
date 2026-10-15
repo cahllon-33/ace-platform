@@ -69,43 +69,6 @@ export const home: TextBag["home"] = {
       minimalWear: "Minimale Gebrauchsspuren",
     },
   },
-  lootLadder: {
-    banner: "SYSTEMTRESOR — LAYOUT-FUND",
-    title: "A.C.E.-BEUTELEITER",
-    itemWithWear: "{item} ({wear})",
-    clockLabel: "LAYOUT-UHR",
-    clockFormat: "{h} Std. {m} Min. {s} Sek.",
-    note: "Diese Uhr ist ein Layout. Premium nimmt an keiner Fund-Lotterie teil, und Steam prüft oder liefert keinen Gegenstand von dieser Seite.",
-  },
-  ribbon: {
-    closeOverlay: "Überlagerung schließen",
-    close: "Schließen",
-    disclosure:
-      "Sandkasten-Attrappe: kein Inventar, keine Ansprüche, keine laufende Auftragstafel und keine Kasse. Diese Überlagerungen sind nur Layout-Beispiele.",
-    rewards: {
-      kicker: "Anmeldebelohnungen · Layout-Beispiel",
-      title: "Premium-Anmeldekalender",
-      day: "Tag {n}",
-      featuredReward: "Belohnung für Tag {n}: Kistenfund",
-      previewSlot: "Vorschauplatz",
-    },
-    missions: {
-      kicker: "Tägliche taktische Aufträge · Layout-Beispiel",
-      title: "Aktive tägliche Herausforderungen",
-      names: {
-        headshot: "Kopfschuss-Spezialist",
-        utilityEntry: "Utility-Einstieg",
-        clutch: "Clutch-Protokoll",
-      },
-    },
-    shop: {
-      kicker: "A.C.E.-Laden · Sandkasten-Attrappe",
-      title: "Kasse für das Waffeninventar",
-      mockBadge: "SANDKASTEN-ATTRAPPE",
-      fullPreview: "Vollständige Marktplatz-Vorschau öffnen",
-      openAria: "A.C.E.-Laden öffnen",
-    },
-  },
   serverHub: {
     badge: "KEINE LAUFENDEN SPIELSERVER",
     nodes: {

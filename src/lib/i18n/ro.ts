@@ -118,13 +118,7 @@ export const RO: MessageBag = {
  pingMock: "Ping: {ping} • Operațional (simulat)",
  serverDisclaimer:
  "Cifrele de latență sunt mostre de machetă. Nu există produs 128-tick în direct, flotă CS2 dedicată sau anycast regional. Alegerea unei plăci doar evidențiază acest centru simulat.",
- lootKicker: "RECOMPENSE DE TEST · NU ESTE PREMIU",
- lootTitle: "SCARA DE RECOMPENSE A.C.E. — RECOMPENSE ÎN DIRECT",
- lootNote:
- "Card conceptual de clasă de skin CS2. Nu este material Valve, nu este tranzacționabil și nu este într-un inventar A.C.E.",
  nextDrop: "URMĂTOAREA RECOMPENSĂ ÎN: {clock}",
- lootDisclaimer:
- "Toate obiectele recompensă, intrările și fondurile scării sunt reprezentări conceptuale de test. Nu există recompensă în direct, premiu finanțat sau plată.",
  champKicker: "COSMETICE DE TEST · PLATĂ SIMULATĂ",
  champBody:
  "Previzualizări de skin-uri CS2 de nivel înalt. Nu sunt obiecte Valve, nu sunt într-un inventar A.C.E. și nu sunt premii reale. Plata este doar un avertisment simulat.",
@@ -250,7 +244,6 @@ export const RO: MessageBag = {
  shopItemIndex: "OBIECT {n}",
  shopTabsAria: "Categorii de piață",
  squadTabsAria: "Categorii ale spațiului de echipă",
- rulesChapter: "CAPITOLUL {n}",
  squadKicker: "ECHIPE A.C.E. · PREVIZUALIZARE DE MACHETĂ",
  squadTitle: "GESTIONAREA ECHIPEI A.C.E. — SPAȚIU TACTIC DE CLAN",
  squadLede: "Adună lotul 5v5, invită agenți liberi tactici și verifică conformitatea anti-cheat a turneului.",
@@ -299,44 +292,6 @@ export const RO: MessageBag = {
  tourneyOpsBody:
  "Evenimentele de până la o sută de echipe folosesc acest arbore de 128 de locuri: douăzeci și opt de scutiri, treizeci și șase de confruntări de deschidere și nouăzeci și nouă de meciuri jucate pe calea obișnuită către un campion. Locurile necompletate sunt scutiri, nu meciuri puse în scenă. Blocarea lotului, veto-ul, prelungirea și deciziile personalului sunt publicate în Documentul tehnic de ligă la /rules. Linkurile directe precum /tournaments?team=gf-0 și /profile/vlt-lurk sunt identități de machetă, nu organizații înscrise.",
  tourneyLoading: "Se încarcă tabloul…",
- rulesKicker: "ACE-RULES / DOCUMENT TEHNIC DE LIGĂ / TERMENI",
- rulesTitle: "Document tehnic de ligă",
- rulesLede:
- "Acesta este textul de competiție obligatoriu al A.C.E. Este o redactare profesională originală și nu este o copie a vreunui manual Valve, sau. Este încorporat în Termenii site-ului la /terms. Cozile de clasament, serverele de joc în direct, plățile, premiile și un client Anti-Cheat descărcabil nu sunt active pe acest site. Până când aceste sisteme sunt implementate, aprobate și testate cap la cap, clauzele de mai jos descriu cum va funcționa competiția A.C.E. Ele nu afirmă că un circuit CS2 în direct este deja atașat.",
- rulesCh1Title: "Nucleul jocului competitiv",
- rulesCh1P1:
- "Meciurile competitive implicite A.C.E. sunt cinci jucători contra cinci. Regulamentul folosește o hartă de douăzeci și patru de runde în sistemul MR12: prima echipă care câștigă treisprezece runde regulamentare învinge, iar taberele se schimbă după douăsprezece runde, dacă o informare publicată a evenimentului nu spune altfel. Un clic în browser nu este niciodată o rundă câștigată. O captură de ecran nu este niciodată un scor oficial. Doar un adaptor autentificat al serverului de joc sau un flux de lucru al personalului numit poate marca un câștigător.",
- rulesCh1P2:
- "Prelungirea standard, când un eveniment o folosește, trebuie anunțată înainte de încălzire sau de o rundă de cuțit. Dacă informarea evenimentului nu publică un tabel diferit, prelungirea este specificată ca secvențe MR3: șase runde suplimentare cu schimbare de tabără după trei; prima echipă care câștigă patru runde de prelungire în acea secvență învinge, repetând până există un câștigător. Configurarea încălzirii, disponibilitatea pauzelor și alegerea taberei la runda de cuțit se publică odată cu informarea și nu se deduc de pe acest site.",
- rulesCh1P3:
- "Veto-ul hărților este un flux publicat, nu o înțelegere informală pe chat. Ordinea specificată implicit pentru o confruntare pe o singură hartă este: echipa A interzice, echipa B interzice, echipa A interzice, echipa B interzice, harta rămasă se joacă, iar capul de serie superior sau câștigătorul unei runde de cuțit alege tabăra de start cum spune informarea. Evenimentele cel mai bun din trei, dacă vor fi găzduite vreodată, trebuie să publice un tabel de alegere și interdicție înainte de blocarea înscrierilor. Schimbarea unui veto după blocare este nulă, dacă personalul nu înregistrează o excepție de urgență documentată.",
- rulesCh1P4:
- "Pauzele tactice sunt limitate. Dacă informarea evenimentului nu fixează un plafon mai strict, fiecare echipă poate cere cel mult patru pauze tactice pe hartă, fiecare de cel mult treizeci de secunde de pauză oficială, și nu în timpul unei pauze a celeilalte echipe deja pornite. Pauzele tehnice pentru o defecțiune documentată a clientului sau a serverului sunt separate și sunt acordate sau refuzate de operatorii serverului sau de personalul evenimentului. Abuzul de pauză ca să tărăgănezi o rundă pierdută este o abatere de conduită conform capitolului 04.",
- rulesCh2Title: "Integritatea învelișului securizat autonom",
- rulesCh2P1:
- "Matchmaking-ul de clasament și admiterea competitivă gestionată de A.C.E. sunt specificate să ceară executarea obligatorie a unui client de scanare Anti-Cheat legat de hardware — Învelișul securizat autonom. Clientul, când va exista, trebuie să ruleze, să fie actual și să poată încheia o strângere de mână semnată care leagă SteamID-ul verificat de cont. Dacă clientul lipsește, este oprit, învechit, falsificat sau neverificat, admiterea este refuzată. GĂSEȘTE MECI de clasament pe acest site se închide deja la eșec din acest motiv.",
- rulesCh2P2:
- "Orice validare de semnătură de cheat, verificare de integritate refuzată, falsificare a identificatorului hardware sau partajare de cont folosită ca să ocolești o restricție anterioară este specificată să producă o interdicție absolută pe viață a identificatorului hardware (HWID) al dispozitivului, împreună cu suspendarea imediată a contului (BANNED sau PERM_BANNED). O excludere HWID pe viață aduce pierderea completă a fondurilor de abonament și nicio obligație de rambursare: timpul plătit, dacă facturarea există mai târziu, nu se rambursează din cauza unei interdicții. A.C.E. poate refuza propriile cozi și servere gestionate. Nu poate, și nu pretinde că poate, împiedica o persoană să pornească Counter-Strike 2 în afara A.C.E.",
- rulesCh2P3:
- "Niciun binar Anti-Cheat nu este livrat cu acest site. Amprentele hardware nu sunt colectate astăzi. Cardurile de descărcare În curând sunt doar machetă. Astăzi nu există debitări pe acest site, deci momentan nu este nimic de rambursat. Regula pierderii este publicată acum ca să nu fie o surpriză dacă un produs facturat și un client verificat există mai târziu.",
- rulesCh3Title: "Operațiuni de ligă și blocarea lotului",
- rulesCh3P1:
- "O echipă permanentă A.C.E. are un căpitan desemnat și până la patru coechipieri. Doar căpitanul poate trimite invitații, și doar prin identificatorul de cont A.C.E. al invitatului, creat după un login Steam OpenID verificat de server. A.C.E. nu cere niciodată parola Steam. Un jucător ocupă cel mult un loc titular pe un lot dat. Rezervele, dacă un eveniment le permite, trebuie numite înainte de blocare.",
- rulesCh3P2:
- "Blocarea lotului este strictă în etapele active ale foii de parcurs a turneului. Când un sezon sau un eveniment este marcat activ, listele de cinci persoane trimise sunt înghețate. Adăugarea, scoaterea sau schimbarea jucătorilor după blocare este nulă, dacă personalul evenimentului nu înregistrează o excepție de urgență documentată. Schimbarea căpitanului echipei permanente după blocare nu rescrie lista înghețată a evenimentului. Înscrierile duplicate ale aceleiași echipe sunt respinse. Piramida publică de 128 de locuri este o machetă de demonstrație; înscrierea arată acum 0 din 100.",
- rulesCh3P3:
- "Administrația își rezervă anularea completă și privilegiile de rezolvare a contestațiilor de meci. Un participant poate deschide o contestație împotriva unui meci înregistrat indicând harta, fereastra de runde, defectul pretins și referințele de probă. Depunerea nu este probă. Un meci contestat nu avansează o echipă și nu schimbă ratingul până personalul îl rezolvă. Personalul care a jucat în meci nu trebuie să îl certifice. Anulările administrative scriu un rând nou de audit; nu șterg înregistrarea anterioară. Toate deciziile personalului privind contestațiile, anulările, restaurările și eligibilitatea sunt finale. Până se conectează o coadă de tichete în direct, e-mailul support@ace-platform.gg este adresa provizorie de primire.",
- rulesCh4Title: "Termeni generali de utilizare și avertismente",
- rulesCh4P1:
- "Acești Termeni generali guvernează comportamentul utilizatorului, operațiunile site-ului și proprietatea intelectuală pe proprietățile ace-platform operate de A.C.E. Competitions Ltd. Folosirea site-ului înseamnă că accepți acești Termeni, Politica de confidențialitate, Politica de cookie-uri și acest Document tehnic de ligă. Trebuie să ai vârsta necesară ca să folosești Steam în țara ta. Conturile se creează doar prin Steam OpenID oficial.",
- rulesCh4P2:
- "Conduita interzisă include aranjarea meciurilor, spionajul dintr-un flux de spectator, partajarea contului ca să ocolești o restricție, discursul instigator la ură, publicarea datelor personale și sabotajul pe server. Sancțiunile merg de la un avertisment la excluderea temporară sau permanentă. O sesizare fără coroborare nu poate produce singură o interdicție permanentă. Ceasurile de hol, scările de recompense, calendarele de recompense la autentificare și straturile magazinului sunt previzualizări de machetă. Acest site nu încasează taxe de înscriere, nu acordă bani și nu expediază obiecte.",
- rulesCh4P3:
- "Prețurile de abonament afișate sunt Plus $4 pe lună și Premium $7 pe lună. Plata nu este în direct. Când există facturare, anularea și rambursările urmează avertismentul de abonament publicat. O interdicție de integritate pe viață, dacă un produs facturat și un client verificat există mai târziu, rămâne fără obligație de rambursare, cum se arată în capitolul 02.",
- rulesCh4P4:
- "A.C.E., mărcile sale, numele originale de rang și textul original de pe acest site sunt proprietate intelectuală a A.C.E. Competitions Ltd. Mărcile Valve, Steam și Counter-Strike rămân ale titularilor lor. Găzduirea unui eveniment CS2 real cere în continuare o revizuire distinctă a termenilor Valve pentru turneu, server și împerechere înainte să se joace prima rundă.",
- rulesCh4P5:
- "În măsura permisă de lege, A.C.E. nu răspunde pentru un rang pierdut, pentru cosmetice pierdute care nu au fost niciodată obiecte reale sau pentru întreruperi Steam ori CS2 ale unor terți. Drepturile obligatorii ale consumatorilor din țara ta nu sunt excluse acolo unde nu pot fi renunțate. Contact: support@ace-platform.gg.",
  hubKicker: "SPAȚIUL PRINCIPAL AL LOBBY-ULUI",
  hubTitle: "Mediu competitiv de sine stătător",
  hubBadge: "INFRASTRUCTURĂ DE BAZĂ: OPERAȚIONALĂ",

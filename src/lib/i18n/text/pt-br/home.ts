@@ -69,43 +69,6 @@ export const home: TextBag["home"] = {
       minimalWear: "Pouco Usada",
     },
   },
-  lootLadder: {
-    banner: "COFRE DO SISTEMA — DROP DE LAYOUT",
-    title: "ESCADA DE RECOMPENSAS A.C.E.",
-    itemWithWear: "{item} ({wear})",
-    clockLabel: "RELÓGIO DE LAYOUT",
-    clockFormat: "{h}h {m}min {s}s",
-    note: "Este relógio é um layout. O Premium não participa de sorteio de drops, e a Steam não verifica nem entrega itens a partir desta página.",
-  },
-  ribbon: {
-    closeOverlay: "Fechar sobreposição",
-    close: "Fechar",
-    disclosure:
-      "Simulação de teste: sem inventário, sem resgates, sem quadro de missões ao vivo e sem pagamento. Estas sobreposições são apenas amostras de layout.",
-    rewards: {
-      kicker: "Recompensas de acesso · amostra de layout",
-      title: "Calendário de check-in Premium",
-      day: "Dia {n}",
-      featuredReward: "Recompensa do dia {n}: drop de caixa com chave",
-      previewSlot: "Vaga de prévia",
-    },
-    missions: {
-      kicker: "Missões táticas diárias · amostra de layout",
-      title: "Desafios diários ativos",
-      names: {
-        headshot: "Especialista em headshot",
-        utilityEntry: "Entrada com utilitários",
-        clutch: "Protocolo de clutch",
-      },
-    },
-    shop: {
-      kicker: "Loja A.C.E. · simulação de teste",
-      title: "Pagamento do inventário de armas",
-      mockBadge: "SIMULAÇÃO DE TESTE",
-      fullPreview: "Abrir a prévia completa do mercado",
-      openAria: "Abrir a loja A.C.E.",
-    },
-  },
   serverHub: {
     badge: "NENHUM SERVIDOR DE JOGO AO VIVO",
     nodes: {

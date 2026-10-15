@@ -3,7 +3,6 @@
 import Link from "next/link";
 import { ConnectedCount } from "@/components/connected-count";
 import { CookieSettings } from "@/components/cookie-settings";
-import { LobbyRibbon } from "@/components/lobby-ribbon";
 import { useI18n } from "@/components/locale-provider";
 import { useUi } from "@/components/use-ui";
 import { moreNav, siteNav, socialNetworks } from "@/lib/site";
@@ -28,7 +27,6 @@ export function SiteFooter() {
     <footer className="relative z-10 mt-auto bg-[#020203]">
       <div className="ace-news-bar">
         <p className="ace-news-copy">{t("seasonBar")}</p>
-        <LobbyRibbon />
       </div>
       <div className="ace-foot">
         <div className="ace-foot-brand">

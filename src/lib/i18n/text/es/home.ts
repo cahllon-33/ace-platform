@@ -69,43 +69,6 @@ export const home: TextBag["home"] = {
       minimalWear: "Casi nuevo",
     },
   },
-  lootLadder: {
-    banner: "CÁMARA DEL SISTEMA — BOTÍN DE DISEÑO",
-    title: "ESCALERA DE BOTÍN A.C.E.",
-    itemWithWear: "{item} ({wear})",
-    clockLabel: "RELOJ DE DISEÑO",
-    clockFormat: "{h} h {m} min {s} s",
-    note: "Este reloj es un diseño. Premium no participa en ningún sorteo de botines, y Steam no verifica ni entrega ningún objeto desde esta página.",
-  },
-  ribbon: {
-    closeOverlay: "Cerrar capa",
-    close: "Cerrar",
-    disclosure:
-      "Maqueta de prueba: sin inventario, sin reclamaciones, sin tablón de misiones en vivo y sin pago. Estas capas son solo muestras de diseño.",
-    rewards: {
-      kicker: "Recompensas de inicio de sesión · muestra de diseño",
-      title: "Calendario de registro diario Premium",
-      day: "Día {n}",
-      featuredReward: "Recompensa del día {n}: caja con llave",
-      previewSlot: "Hueco de vista previa",
-    },
-    missions: {
-      kicker: "Misiones tácticas diarias · muestra de diseño",
-      title: "Desafíos diarios activos",
-      names: {
-        headshot: "Especialista en tiros a la cabeza",
-        utilityEntry: "Entrada con utilidades",
-        clutch: "Protocolo de clutch",
-      },
-    },
-    shop: {
-      kicker: "Tienda A.C.E. · maqueta de prueba",
-      title: "Pago del inventario de armas",
-      mockBadge: "MAQUETA DE PRUEBA",
-      fullPreview: "Abrir la vista previa completa del mercado",
-      openAria: "Abrir la tienda A.C.E.",
-    },
-  },
   serverHub: {
     badge: "NO HAY SERVIDORES DE JUEGO EN VIVO",
     nodes: {

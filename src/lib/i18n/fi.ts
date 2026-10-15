@@ -120,13 +120,7 @@ export const FI: MessageBag = {
  pingMock: "Asettelunäyte {ping}. Palvelinta ei ole yhdistetty.",
  serverDisclaimer:
   "Nämä nimet ja viivenäytteet ovat asettelu. Tällä sivustolla ei ole 128 tickin pelipalvelinta eikä alueellista solmua.",
- lootKicker: "HIEKKALAATIKON PUDOTUKSET · EI PALKINTO",
- lootTitle: "A.C.E. SAALISTIKAPUUT",
- lootNote:
-  "Käsitteellinen CS2-skiniluokan kortti. Ei Valve-kuvitusta, ei vaihdettavissa, ei A.C.E.-tavaraluettelossa.",
  nextDrop: "SEURAAVA PUDOTUS AJASSA: {clock}",
- lootDisclaimer:
-  "Kaikki palkintoesineet, osallistumiset ja tikapuupoolit ovat käsitteellisiä hiekkalaatikon esityksiä. Live-pudotusta ei ole, rahoitettua palkintoa ei ole eikä kassaa ole.",
  champKicker: "HIEKKALAATIKON KOSMETIIKKA · KASSA SIMULOITU",
  champBody:
   "Korkean tason CS2-skiniluokan esikatselut. Nämä eivät ole Valve-esineitä, eivät ole A.C.E.-tavaraluettelossa eivätkä ole oikeita palkintoja. Kassa on vain valevaroitus.",
@@ -251,7 +245,6 @@ export const FI: MessageBag = {
  shopItemIndex: "ESINE {n}",
  shopTabsAria: "Markkinapaikan kategoriat",
  squadTabsAria: "Joukkueen työtilan kategoriat",
- rulesChapter: "LUKU {n}",
  squadKicker: "A.C.E. JOUKKUEET · ASETTELUN ESIKATSELU",
  squadTitle: "A.C.E. JOUKKUEEN HALLINTA — TAKTINEN KLAANITYÖTILA",
  squadLede: "Kokoa 5v5-kokoonpanosi, kutsu taktisia vapaita agentteja ja tarkista huijaukseneston turnausvaatimustenmukaisuus.",
@@ -300,44 +293,6 @@ export const FI: MessageBag = {
  tourneyOpsBody:
   "Enintään sadan joukkueen tapahtumat käyttävät tätä 128 paikan puuta: 28 vapaata jatkoonpääsyä, 36 avausottelua ja 99 pelattua ottelua tavallisella tiellä mestariksi. Täyttämättömät paikat ovat vapaita jatkoonpääsyjä, eivät lavastettuja otteluita. Kokoonpanon lukitus, veto, jatkoaika ja henkilökunnan ratkaisut julkaistaan teknisessä liigadokumentissa osoitteessa /rules. Syvälinkit, kuten /tournaments?team=gf-0 ja /profile/vlt-lurk, ovat asettelun identiteettejä, eivät rekisteröityjä organisaatioita.",
  tourneyLoading: "Ladataan kaavion asettelua…",
- rulesKicker: "ACE-RULES / TEKNINEN LIIGADOKUMENTTI / KÄYTTÖEHDOT",
- rulesTitle: "Tekninen liigadokumentti",
- rulesLede:
-  "Tämä on A.C.E.:n sitova kilpailuteksti. Se on kirjoitettu alkuperäisellä ammattimaisella englannilla, eikä se ole kopio toisen julkaisijan käsikirjasta. Se sisältyy sivuston ehtoihin osoitteessa /terms. Sijoitusjonot, live-pelipalvelimet, maksut, palkinnot ja ladattava huijauksenestoasiakasohjelma eivät ole aktiivisia tällä sivustolla. Kunnes nämä järjestelmät on toteutettu, hyväksytty ja testattu päästä päähän, alla olevat kohdat kuvaavat, miten A.C.E.-kilpailu tulee toimimaan. Ne eivät ole väite siitä, että live-CS2-kiertue olisi jo liitetty.",
- rulesCh1Title: "Kilpailullisen pelaamisen ydin",
- rulesCh1P1:
-  "A.C.E.:n oletusarvoiset kilpailuottelut ovat viisi pelaajaa viittä vastaan. Normaali peli käyttää 24 kierroksen karttaa MR12-säännöstöllä: ensimmäinen joukkue, joka voittaa kolmetoista normaalikierrosta, voittaa ottelun, ja puolet vaihtuvat kahdentoista kierroksen jälkeen, ellei julkaistu tapahtumaohje toisin määrää. Selaimen napsautus ei ole koskaan kierrosvoitto. Kuvakaappaus ei ole koskaan virallinen tulos. Vain todennettu pelipalvelinsovitin tai nimetty henkilökunnan työnkulku voi merkitä voittajan.",
- rulesCh1P2:
-  "Tavallinen jatkoaika, kun tapahtuma käyttää sitä, on ilmoitettava ennen lämmittelyä tai veitsikierrosta. Ellei tapahtumaohje julkaise toista taulukkoa, jatkoaika on määritelty MR3-jaksoiksi: kuusi lisäkierrosta, puolten vaihto kolmen kierroksen jälkeen, ja ensimmäinen joukkue, joka voittaa neljä jatkoaikakierrosta kyseisessä jaksossa, voittaa jakson. Jakso toistuu, kunnes voittaja ratkeaa. Lämmittelyn asetukset, taukojen saatavuus ja veitsikierroksen puolen valinta annetaan tapahtumaohjeessa, eikä niitä päätellä tältä sivustolta.",
- rulesCh1P3:
-  "Karttaveto on julkaistu työnkulku, ei epävirallinen keskustelusopimus. Yhden kartan ottelun määritelty oletusjärjestys on: joukkue A kieltää, joukkue B kieltää, joukkue A kieltää, joukkue B kieltää, ja jäljelle jäävä kartta pelataan. Korkeampi sijoitus tai veitsikierroksen voittaja valitsee aloituspuolen sen mukaan, mitä tapahtumaohje sanoo. Paras kolmesta -tapahtumien, jos niitä joskus järjestetään, on julkaistava valintojen ja kieltojen taulukko ennen rekisteröinnin lukitusta. Vedon muuttaminen lukituksen jälkeen on mitätön, ellei henkilökunta kirjaa dokumentoitua hätäpoikkeusta.",
- rulesCh1P4:
-  "Taktiset aikalisät ovat rajoitettuja. Ellei tapahtumaohje aseta tiukempaa kattoa, kukin joukkue saa kutsua enintään neljä taktista aikalisää karttaa kohden. Kukin kestää enintään kolmekymmentä sekuntia virallista taukoaikaa, eikä sitä saa kutsua toisen joukkueen jo käynnissä olevan aikalisän aikana. Tekniset tauot dokumentoidun asiakasohjelman tai palvelimen vian vuoksi ovat erillisiä, ja palvelinoperaattorit tai tapahtuman henkilökunta joko myöntävät tai hylkäävät ne. Tauon väärinkäyttö hävityn kierroksen venyttämiseksi on käyttäytymisrikkomus luvun 04 mukaan.",
- rulesCh2Title: "Autonomisen suojakuoren eheys",
- rulesCh2P1:
-  "Sijoitusotteluiden ottelunhaku ja A.C.E.:n hallinnoima kilpailuun pääsy on määritelty edellyttämään laitteistoon sidotun huijaukseneston tarkistusasiakasohjelman, autonomisen suojakuoren, pakollista suoritusta. Asiakasohjelman, silloin kun se on olemassa, on oltava käynnissä ja ajan tasalla, ja sen on kyettävä suorittamaan allekirjoitettu kättely, joka sitoo varmennetun SteamID:n tiliin. Jos asiakasohjelma puuttuu, on pysäytetty, vanhentunut, väärennetty tai varmentamaton, pääsy evätään. Tämän sivuston sijoitusotteluiden ETSI OTTELU sulkeutuu jo varmuuden vuoksi tästä syystä.",
- rulesCh2P2:
-  "Mikä tahansa huijausallekirjoituksen tunnistus, hylätty eheystarkistus, laitteistotunnisteen väärennös tai tilin jakaminen aiemman rajoituksen kiertämiseksi on määritelty tuottamaan ehdoton elinikäinen laitteistotunnisteen (HWID) laitekielto sekä välitön tilin jäädytys (BANNED tai PERM_BANNED). Elinikäinen HWID-sulku merkitsee tilausvarojen täyttä menetystä eikä lainkaan hyvitysvastuuta: maksettua aikaa, jos laskutus myöhemmin on olemassa, ei hyvitetä kiellon vuoksi. A.C.E. voi evätä pääsyn omiin jonoihinsa ja hallinnoimiinsa palvelimiin. Se ei voi estää eikä väitä estävänsä henkilöä käynnistämästä Counter-Strike 2:ta A.C.E.:n ulkopuolella.",
- rulesCh2P3:
-  "Tämän sivuston mukana ei toimiteta huijaukseneston binaaria. Laitteiston sormenjälkiä ei kerätä tänään. Tulossa pian -latauskortit ovat vain asettelua. Tällä sivustolla ei ole tänään maksullisia veloituksia, joten tällä hetkellä ei ole mitään hyvitettävää. Menetyssääntö julkaistaan nyt, jotta se ei tule yllätyksenä, jos laskutettava tuote ja varmennettu asiakasohjelma myöhemmin ovat olemassa.",
- rulesCh3Title: "Liigan toiminta ja kokoonpanojen lukitukset",
- rulesCh3P1:
-  "Pysyvällä A.C.E.-joukkueella on yksi nimetty kapteeni ja enintään neljä joukkuetoveria. Vain kapteeni saa lähettää kutsuja, ja vain kutsuttavan A.C.E.-tilitunnisteella, joka on luotu palvelimella varmennetun Steam OpenID -kirjautumisen jälkeen. A.C.E. ei koskaan pyydä Steam-salasanaa. Pelaaja käyttää enintään yhtä aloituspaikkaa tietyssä kokoonpanossa. Vaihtopelaajat, jos tapahtuma sallii heidät, on nimettävä ennen lukitusta.",
- rulesCh3P2:
-  "Kokoonpanon lukitus on tiukka turnausten aktiivisten tiekarttavaiheiden aikana. Kun kausi tai tapahtuma on merkitty aktiiviseksi, lähetetyt viiden hengen listat jäädytetään. Pelaajien lisääminen, poistaminen tai vaihtaminen lukituksen jälkeen on mitätöntä, ellei tapahtuman henkilökunta kirjaa dokumentoitua hätäpoikkeusta. Kapteenin vaihtaminen pysyvässä joukkueessa lukituksen jälkeen ei kirjoita jäädytettyä tapahtumalistaa uudelleen. Saman joukkueen kaksinkertaiset rekisteröinnit hylätään. Julkinen 128 paikan pyramidi on esittelyasettelu. Rekisteröinti näyttää tällä hetkellä 0 / 100.",
- rulesCh3P3:
-  "Hallinto pidättää täyden ohitusoikeuden ja otteluriitojen ratkaisuoikeuden. Osallistuja voi avata riidan kirjattua ottelua vastaan ilmoittamalla kartan, kierrosikkunan, väitetyn vian ja todisteviitteet. Ilmoituksen tekeminen ei ole todiste. Riidanalainen ottelu ei vie joukkuetta eteenpäin eikä muuta arvosanaa, ennen kuin henkilökunta ratkaisee sen. Henkilökunnan jäsen, joka pelasi ottelussa, ei saa vahvistaa sitä. Hallinnolliset ohitukset kirjoittavat uuden auditointirivin. Ne eivät poista aiempaa kirjausta. Kaikki henkilökunnan ratkaisut riidoista, mitätöinneistä, palautuksista ja kelpoisuudesta ovat lopullisia. Kunnes live-tikettijono on yhdistetty, sähköposti support@ace-platform.gg on väliaikainen vastaanotto-osoite.",
- rulesCh4Title: "Yleiset käyttöehdot ja vastuuvapauslausekkeet",
- rulesCh4P1:
-  "Nämä yleiset ehdot säätelevät käyttäjien käyttäytymistä, sivuston toimintaa ja immateriaalioikeuksia niissä ace-platform-palveluissa, joita A.C.E. Competitions Ltd. ylläpitää. Sivuston käyttö tarkoittaa, että hyväksyt nämä ehdot, tietosuojakäytännön, evästekäytännön ja tämän teknisen liigadokumentin. Sinun on oltava riittävän vanha käyttääksesi Steam-palvelua omassa maassasi. Tilit luodaan vain virallisella Steam OpenID -tunnistuksella.",
- rulesCh4P2:
-  "Kiellettyyn toimintaan kuuluvat ottelun tahallinen häviäminen, haamupelaaminen katsojasyötteestä, tilin jakaminen rajoituksen kiertämiseksi, vihapuhe, yksityisten tietojen paljastaminen ja palvelimen sisäinen sabotaasi. Seuraamukset vaihtelevat varoituksesta väliaikaiseen tai pysyvään sulkemiseen. Ilmoitus ilman tukevaa näyttöä ei voi yksinään tuottaa pysyvää kieltoa. Aulan kellot, saalistikapuut, kirjautumispalkintojen kalenterit ja kaupan peitteet ovat asettelun esikatseluja. Tämä sivusto ei peri osallistumismaksuja, ei jaa käteistä eikä toimita esineitä.",
- rulesCh4P3:
-  "Näytetyt jäsenyyshinnat ovat Plus $4 kuukaudessa ja Premium $7 kuukaudessa. Kassa ei ole toiminnassa. Kun laskutus on olemassa, peruutuksen ja hyvityksen ehdot noudattavat julkaistua tilausilmoitusta. Elinikäinen eheyskielto, jos laskutettava tuote ja varmennettu asiakasohjelma myöhemmin ovat olemassa, merkitsee yhä sitä, ettei hyvitysvastuuta ole, kuten luvussa 02 todetaan.",
- rulesCh4P4:
-  "A.C.E., sen tunnukset, alkuperäiset arvonimet ja alkuperäinen teksti tällä sivustolla ovat A.C.E. Competitions Ltd. -yhtiön immateriaalioikeutta. Valve-, Steam- ja Counter-Strike-tavaramerkit pysyvät omistajiensa omaisuutena. Todellisen CS2-tapahtuman järjestäminen edellyttää yhä erillistä arviota Valven turnaus-, palvelin- ja ottelunhakuehdoista, ennen kuin ensimmäinen kierros pelataan.",
- rulesCh4P5:
-  "Lain sallimassa laajuudessa A.C.E. ei vastaa menetystä arvosta, kosmetiikasta joka ei koskaan ollut oikea esine, eikä kolmannen osapuolen Steam- tai CS2-katkoksista. Maasi pakottavia kuluttajanoikeuksia ei suljeta pois silloin, kun niistä ei voida luopua. Yhteys: support@ace-platform.gg.",
  hubKicker: "PÄÄAULAN TYÖTILA",
  hubTitle: "Itsenäinen kilpailukuori",
  hubBadge: "YDININFRASTRUKTUURI: TOIMINNASSA",

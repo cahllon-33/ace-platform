@@ -127,13 +127,7 @@ export const HU: MessageBag = {
  pingMock: "Elrendezésminta {ping}. Nincs csatlakoztatott szerver.",
  serverDisclaimer:
  "Ezek a nevek és késleltetésminták elrendezések. Ezen a weboldalon nincs 128-tickes játékszerver és nincs regionális csomópont.",
- lootKicker: "HOMOKOZÓ DROPPOK · NEM DÍJ",
- lootTitle: "A.C.E. ZSÁKMÁNYLÉTRA",
- lootNote:
- "Koncepcionális CS2 skinosztály-kártya. Nem a Valve grafikája, nem cserélhető, és nincs A.C.E. leltárban.",
  nextDrop: "KÖVETKEZŐ DROP {clock} MÚLVA",
- lootDisclaimer:
- "Minden jutalomtárgy, nevezés és létralap koncepcionális homokozó-ábrázolás. Nincs élő drop, nincs finanszírozott díj, és nincs fizetés.",
  champKicker: "HOMOKOZÓ KOZMETIKUMOK · SZIMULÁLT FIZETÉS",
  champBody:
  "Felső kategóriás CS2 skinosztály-előnézetek. Ezek nem Valve-tárgyak, nincsenek A.C.E. leltárban, és nem valódi díjak. A fizetés csak figyelmeztető makett.",
@@ -260,7 +254,6 @@ export const HU: MessageBag = {
  shopItemIndex: "{n}. TÁRGY",
  shopTabsAria: "Piactéri kategóriák",
  squadTabsAria: "Osztagmunkatér kategóriái",
- rulesChapter: "{n}. FEJEZET",
  squadKicker: "A.C.E. CSAPATOK · ELRENDEZÉS-ELŐNÉZET",
  squadTitle: "A.C.E. OSZTAGKEZELÉS — TAKTIKAI KLÁNMUNKATÉR",
  squadLede:
@@ -310,44 +303,6 @@ export const HU: MessageBag = {
  tourneyOpsBody:
  "A legfeljebb száz csapatos események ezt a 128 helyes fát használják: huszonnyolc erőnyerő, harminchat nyitó mérkőzés és kilencvenkilenc lejátszott meccs a bajnokig vezető szokásos úton. A betöltetlen helyek erőnyerők, nem megrendezett meccsek. A keretzár, a vétó, a hosszabbítás és a személyzeti döntések a technikai ligadokumentumban olvashatók, a /rules címen. Az olyan mélyhivatkozások, mint a /tournaments?team=gf-0 és a /profile/vlt-lurk, elrendezésbeli azonosítók, nem regisztrált szervezetek.",
  tourneyLoading: "Lebonyolítási elrendezés betöltése…",
- rulesKicker: "ACE-RULES / TECHNIKAI LIGADOKUMENTUM / FELHASZNÁLÁSI FELTÉTELEK",
- rulesTitle: "Technikai ligadokumentum",
- rulesLede:
- "Ez az A.C.E. kötelező versenyszövege. Eredeti, szakmai angol nyelven készült, és nem egy másik kiadó kézikönyvének másolata. A weboldal feltételeinek része a /terms címen. A rangsorolt sorok, az élő játékszerverek, a fizetések, a díjak és a letölthető anti-cheat kliens ezen a weboldalon nem aktívak. Amíg ezek a rendszerek nincsenek megvalósítva, jóváhagyva és végponttól végpontig tesztelve, az alábbi pontok azt írják le, hogyan fog működni az A.C.E. verseny. Nem azt állítják, hogy már csatlakozik hozzá egy élő CS2 versenysorozat.",
- rulesCh1Title: "A versenyjáték alapja",
- rulesCh1P1:
- "Az alapértelmezett A.C.E. versenymeccseken öt játékos játszik öt ellen. A rendes játék huszonnégy körös pályát használ az MR12 szabályrendszer szerint: az a csapat nyer, amelyik először szerez tizenhárom rendes kört, és az oldalak tizenkét kör után cserélődnek, hacsak a közzétett eseménytájékoztató másként nem rendelkezik. Egy böngészős kattintás soha nem körgyőzelem. Egy képernyőkép soha nem hivatalos eredmény. Győztest csak hitelesített játékszerver-adapter vagy megnevezett személyzeti munkafolyamat jelölhet.",
- rulesCh1P2:
- "A szokásos hosszabbítást, ha az esemény használja, a bemelegítés vagy a késes kör előtt be kell jelenteni. Hacsak az eseménytájékoztató nem közöl eltérő táblázatot, a hosszabbítás MR3 sorozatokban van meghatározva: hat további kör, oldalcsere három után; az a csapat nyer, amelyik az adott sorozatban először szerez négy hosszabbítási kört, és ez addig ismétlődik, amíg születik győztes. A bemelegítés beállítását, a szünetek elérhetőségét és a késes kör oldalválasztását az eseménytájékoztató adja meg, és ezek nem következnek ebből a weboldalból.",
- rulesCh1P3:
- "A pályavétó közzétett munkafolyamat, nem informális csevegéses megállapodás. Az egypályás mérkőzés meghatározott alapértelmezett sorrendje: az A csapat tilt, a B csapat tilt, az A csapat tilt, a B csapat tilt, a megmaradó pályát játsszák, a magasabb kiemelés vagy a késes kör győztese pedig a tájékoztató szerint választ kezdő oldalt. A három nyertig tartó eseményeknek, ha valaha megrendezik őket, a regisztráció lezárása előtt közzé kell tenniük a pick/ban táblázatot. A vétó zárolás utáni módosítása semmis, kivéve ha a személyzet dokumentált sürgősségi kivételt rögzít.",
- rulesCh1P4:
- "A taktikai időkérések száma korlátozott. Hacsak az eseménytájékoztató szigorúbb felső határt nem szab, minden csapat pályánként legfeljebb négy taktikai időkérést hívhat le, egyenként legfeljebb harminc másodperc hivatalos szünetidővel, és nem a másik csapat már folyamatban lévő időkérése alatt. A dokumentált kliens- vagy szerverhiba miatti technikai szünetek külön állnak, és a szerverüzemeltetők vagy az esemény személyzete engedélyezi vagy utasítja el őket. A szünet visszaélésszerű használata egy elveszített kör húzására magatartási vétség a 04. fejezet szerint.",
- rulesCh2Title: "Az autonóm biztonságos héj integritása",
- rulesCh2P1:
- "A rangsorolt meccskereséshez és az A.C.E. által kezelt versenybeli beléptetéshez előírás szerint kötelező egy hardverhez kötött anti-cheat vizsgáló kliens, az autonóm biztonságos héj futtatása. A kliensnek, amikor létezik, futnia kell, naprakésznek kell lennie, és képesnek kell lennie egy aláírt kézfogásra, amely az ellenőrzött SteamID azonosítót a fiókhoz köti. Ha a kliens hiányzik, leállt, elavult, hamisított vagy nem ellenőrzött, a belépést meg kell tagadni. A rangsorolt MECCS KERESÉSE ezen a weboldalon már emiatt hiba esetén zárva van.",
- rulesCh2P2:
- "Bármely megerősített csalásaláírás, megtagadott integritásellenőrzés, hardverazonosító-hamisítás, vagy korábbi korlátozás kijátszására használt fiókmegosztás előírás szerint abszolút, élethosszig tartó hardverazonosítós (HWID) eszköztiltást eredményez, azonnali fiókfelfüggesztéssel együtt (BANNED vagy PERM_BANNED). Az élethosszig tartó HWID-kizárás az előfizetési összegek teljes elvesztésével jár, visszatérítési kötelezettség nélkül: a kifizetett idő, ha a számlázás később létrejön, tiltás miatt nem jár vissza. Az A.C.E. megtagadhatja a saját sorait és az általa kezelt szervereket. Nem tudja megakadályozni, és nem is állítja, hogy megakadályozza, hogy valaki az A.C.E. rendszerén kívül elindítsa a Counter-Strike 2 játékot.",
- rulesCh2P3:
- "Ehhez a weboldalhoz nem jár anti-cheat bináris állomány. Hardveres ujjlenyomatokat ma nem gyűjtünk. A Hamarosan feliratú letöltőkártyák csak elrendezések. Ezen a weboldalon ma nincs fizetős terhelés, ezért jelenleg nincs mit visszatéríteni. Az elvesztési szabályt most tesszük közzé, hogy ne érjen meglepetésként, ha később lesz számlázott termék és ellenőrzött kliens.",
- rulesCh3Title: "Ligaműveletek és keretzárak",
- rulesCh3P1:
- "Egy állandó A.C.E. csapatnak egy kijelölt kapitánya és legfeljebb négy csapattársa van. Meghívót csak a kapitány küldhet, és csak a meghívott olyan A.C.E. fiókazonosítójára, amely szerveren ellenőrzött Steam OpenID bejelentkezés után jött létre. Az A.C.E. soha nem kér Steam jelszót. Egy játékos egy adott keretben legfeljebb egy kezdő helyet foglalhat el. A cserejátékosokat, ha az esemény engedi őket, a zárolás előtt meg kell nevezni.",
- rulesCh3P2:
- "A keretzár szigorú a bajnoki ütemterv aktív szakaszaiban. Ha egy szezont vagy eseményt aktívként jelölnek, a benyújtott ötfős listák befagynak. Játékos zárolás utáni hozzáadása, eltávolítása vagy cseréje semmis, kivéve ha az esemény személyzete dokumentált sürgősségi kivételt rögzít. A kapitány cseréje az állandó csapatnál a zárolás után nem írja át a befagyasztott eseménylistát. Ugyanannak a csapatnak a kettős regisztrációját elutasítjuk. A nyilvános, 128 helyes piramis bemutató elrendezés; a regisztráció jelenleg 0 a 100-ból.",
- rulesCh3P3:
- "Az adminisztráció fenntartja a teljes felülbírálat és a meccsvita rendezésének jogát. A résztvevő vitát nyithat egy rögzített meccs ellen, ha megadja a pályát, a körablakot, az állított hibát és a bizonyítékokra való hivatkozásokat. A benyújtás nem bizonyíték. A vitatott meccs nem juttatja tovább a csapatot, és nem változtatja az értékelést, amíg a személyzet nem dönt. Aki a meccsen játszott, az nem hitelesítheti azt. Az adminisztratív felülbírálatok új auditbejegyzést írnak, a korábbi bejegyzést nem törlik. A személyzet minden döntése vitában, érvénytelenítésben, visszaállításban és jogosultságban végleges. Amíg nincs csatlakoztatva élő jegysor, az ideiglenes befogadó cím a support@ace-platform.gg.",
- rulesCh4Title: "Általános felhasználási feltételek és felelősségkizárások",
- rulesCh4P1:
- "Ezek az általános feltételek a felhasználói magatartást, a weboldal működését és a szellemi tulajdont szabályozzák az A.C.E. Competitions Ltd. által üzemeltetett ace-platform felületeken. Az oldal használatával elfogadod ezeket a feltételeket, az adatvédelmi szabályzatot, a sütiszabályzatot és ezt a technikai ligadokumentumot. Annyi idősnek kell lenned, hogy az országodban használhasd a Steam szolgáltatást. Fiók csak a hivatalos Steam OpenID használatával hozható létre.",
- rulesCh4P2:
- "A tiltott magatartáshoz tartozik a meccs eladása, a nézői képből való súgás, a fiókmegosztás korlátozás kijátszására, a gyűlöletbeszéd, a személyes adatok nyilvánosságra hozása és a szerveren belüli szabotázs. A büntetés a figyelmeztetéstől az ideiglenes vagy végleges kizárásig terjed. Megerősítés nélküli bejelentés önmagában nem vezethet végleges tiltáshoz. A lobbiórák, a zsákmánylétrák, a bejelentkezési jutalomnaptárak és a boltrétegek elrendezés-előnézetek. Ez a weboldal nem szed nevezési díjat, nem ítél oda készpénzt, és nem küld ki tárgyakat.",
- rulesCh4P3:
- "A megjelenített tagsági árak Plus $4 havonta és Premium $7 havonta. A fizetés nem élő. Amikor a számlázás létezik, a lemondás és a visszatérítés feltételei a közzétett előfizetési tájékoztatót követik. Az élethosszig tartó integritástiltás, ha később létezik számlázott termék és ellenőrzött kliens, továbbra is visszatérítési kötelezettség nélkül jár, ahogy a 02. fejezet kimondja.",
- rulesCh4P4:
- "Az A.C.E., a megjelölései, az eredeti rangnevek és az eredeti szöveg ezen a weboldalon az A.C.E. Competitions Ltd. szellemi tulajdona. A Valve, a Steam és a Counter-Strike védjegyei a tulajdonosaiké maradnak. Valódi CS2 esemény rendezéséhez ettől függetlenül külön át kell tekinteni a Valve bajnoki, szerver- és meccskeresési feltételeit, mielőtt az első kört lejátsszák.",
- rulesCh4P5:
- "A jog által megengedett mértékig az A.C.E. nem felel az elveszett rangért, az olyan elveszett kozmetikumokért, amelyek soha nem voltak valódi tárgyak, sem harmadik fél Steam vagy CS2 kieséséért. Az országodban kötelező fogyasztói jogok nem zárhatók ki ott, ahol azokról nem lehet lemondani. Kapcsolat: support@ace-platform.gg.",
  hubKicker: "FŐ LOBBI MUNKATERÜLET",
  hubTitle: "Önálló versenyburok",
  hubBadge: "ALAPINFRASTRUKTÚRA: ÜZEMEL",

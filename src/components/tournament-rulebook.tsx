@@ -1,5 +1,6 @@
 import { interpolate } from "@/lib/i18n";
-import { getText } from "@/server/locale";
+import Link from "next/link";
+import { getText, getUi } from "@/server/locale";
 
 const STAGE_STYLES = [
   {
@@ -34,8 +35,8 @@ function twoDigits(index: number) {
 }
 
 export async function TournamentRulebook() {
-  const text = await getText();
-  const { roadmap, code } = text.rules.tournament;
+  const [text, ui] = await Promise.all([getText(), getUi()]);
+  const roadmap = text.tournamentRoadmap;
 
   return (
     <section className="mt-14 w-full max-w-6xl mx-auto rounded-xl border border-[#FFD700]/30 bg-[#040406] p-6 backdrop-blur-2xl">
@@ -65,26 +66,18 @@ export async function TournamentRulebook() {
 
       <div className="mt-8 border-t border-white/10 pt-6">
         <span className="text-[10px] font-bold uppercase tracking-[0.2em] text-[#FFD700]">
-          {code.kicker}
+          {ui.rules.kicker}
         </span>
         <h2 className="mt-1 text-2xl font-black uppercase tracking-wide text-white">
-          {code.title}
+          {ui.rules.title}
         </h2>
-        <p className="mt-3 max-w-3xl text-[12px] leading-relaxed text-gray-400">{code.lede}</p>
-        <ol className="mt-6 grid list-none gap-4 p-0">
-          {code.articles.map((article, index) => {
-            const id = twoDigits(index);
-            return (
-              <li key={id} className="rounded-lg border border-white/10 bg-[#0B0B0C] p-4">
-                <span className="font-mono text-[10px] text-[#FFD700]/70">
-                  {interpolate(code.articleLabel, { id })}
-                </span>
-                <h3 className="mt-1 text-base font-bold text-white">{article.title}</h3>
-                <p className="mt-2 text-[12px] leading-relaxed text-gray-400">{article.body}</p>
-              </li>
-            );
-          })}
-        </ol>
+        <p className="mt-3 max-w-3xl text-[12px] leading-relaxed text-gray-400">{ui.rules.intro}</p>
+        <Link
+          href="/rules"
+          className="mt-5 inline-flex rounded-md border border-[#FFD700]/50 px-4 py-2 text-xs font-bold uppercase tracking-[0.14em] text-[#FFD700] hover:bg-[#FFD700]/10"
+        >
+          {ui.nav.rules} →
+        </Link>
       </div>
     </section>
   );

@@ -1,5 +1,5 @@
-﻿import { rules } from "./rules";
-import { legalDocs } from "./legalDocs";
+import { tournamentRoadmap } from "./tournamentRoadmap";
+﻿import { legalDocs } from "./legalDocs";
 import { codex } from "./codex";
 import { consent } from "./consent";
 import { ranks } from "./ranks";
@@ -14,7 +14,7 @@ import { desk } from "./desk";
 
 /** English source for page text. Every locale folder mirrors these areas and keys. */
 export const TEXT_EN = {
-  rules,
+  tournamentRoadmap,
   legalDocs,
   codex,
   consent,

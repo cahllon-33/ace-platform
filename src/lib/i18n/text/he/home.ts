@@ -69,43 +69,6 @@ export const home: TextBag["home"] = {
       minimalWear: "בלאי מינימלי",
     },
   },
-  lootLadder: {
-    banner: "כספת המערכת — הפלת פריסה",
-    title: "סולם השלל של A.C.E.",
-    itemWithWear: "{item} ({wear})",
-    clockLabel: "שעון פריסה",
-    clockFormat: "{h}ש׳ {m}ד׳ {s}שנ׳",
-    note: "השעון הזה הוא פריסה. Premium לא נכנס להגרלת הפלות, ו-Steam לא מאמת ולא מוסר פריט מהעמוד הזה.",
-  },
-  ribbon: {
-    closeOverlay: "סגירת השכבה",
-    close: "סגור",
-    disclosure:
-      "הדמיית ארגז חול: אין מלאי, אין מימוש, אין לוח משימות חי ואין קופה. השכבות האלה הן דגימות פריסה בלבד.",
-    rewards: {
-      kicker: "פרסי התחברות · דגימת פריסה",
-      title: "לוח צ'ק-אין של Premium",
-      day: "יום {n}",
-      featuredReward: "פרס יום {n}: הפלת תיק מפתחות",
-      previewSlot: "משבצת תצוגה",
-    },
-    missions: {
-      kicker: "משימות טקטיות יומיות · דגימת פריסה",
-      title: "אתגרים יומיים פעילים",
-      names: {
-        headshot: "מומחה הדשוטים",
-        utilityEntry: "כניסה עם יוטיליטי",
-        clutch: "פרוטוקול קלאץ'",
-      },
-    },
-    shop: {
-      kicker: "חנות A.C.E. · הדמיית ארגז חול",
-      title: "קופת מלאי הנשקים",
-      mockBadge: "הדמיית ארגז חול",
-      fullPreview: "פתיחת התצוגה המלאה של השוק",
-      openAria: "פתיחת חנות A.C.E.",
-    },
-  },
   serverHub: {
     badge: "אין שרתי משחק חיים",
     nodes: {

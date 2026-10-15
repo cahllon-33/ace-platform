@@ -69,43 +69,6 @@ export const home: TextBag["home"] = {
       minimalWear: "Minimálně opotřebený",
     },
   },
-  lootLadder: {
-    banner: "SYSTÉMOVÝ TREZOR — DROP ROZVRŽENÍ",
-    title: "ŽEBŘÍČEK ODMĚN A.C.E.",
-    itemWithWear: "{item} ({wear})",
-    clockLabel: "HODINY ROZVRŽENÍ",
-    clockFormat: "{h} h {m} min {s} s",
-    note: "Tyto hodiny jsou rozvržení. Premium nevstupuje do žádné loterie dropů a Steam z této stránky žádný předmět neověřuje ani nedoručuje.",
-  },
-  ribbon: {
-    closeOverlay: "Zavřít překryv",
-    close: "Zavřít",
-    disclosure:
-      "Maketa v pískovišti: žádný inventář, žádné nároky, žádná živá tabule misí a žádná pokladna. Tyto překryvy jsou pouze ukázky rozvržení.",
-    rewards: {
-      kicker: "Odměny za přihlášení · ukázka rozvržení",
-      title: "Kalendář přihlášení Premium",
-      day: "Den {n}",
-      featuredReward: "Odměna za den {n}: drop pouzdra na klíče",
-      previewSlot: "Náhledový slot",
-    },
-    missions: {
-      kicker: "Denní taktické mise · ukázka rozvržení",
-      title: "Aktivní denní výzvy",
-      names: {
-        headshot: "Specialista na headshoty",
-        utilityEntry: "Vstup s granáty",
-        clutch: "Protokol clutche",
-      },
-    },
-    shop: {
-      kicker: "Obchod A.C.E. · maketa v pískovišti",
-      title: "Pokladna inventáře zbraní",
-      mockBadge: "MAKETA V PÍSKOVIŠTI",
-      fullPreview: "Otevřít úplný náhled tržiště",
-      openAria: "Otevřít obchod A.C.E.",
-    },
-  },
   serverHub: {
     badge: "ŽÁDNÉ ŽIVÉ HERNÍ SERVERY",
     nodes: {

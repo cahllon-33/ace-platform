@@ -118,13 +118,7 @@ export const TR: MessageBag = {
  pingMock: "Ping: {ping} • Çalışıyor (simülasyon)",
  serverDisclaimer:
  "Gecikme rakamları yerleşim örnekleridir. Canlı 128-tick ürünü, adanmış CS2 filosu veya bölgesel anycast yoktur. Bir karoyu seçmek yalnızca bu simülasyon merkezini vurgular.",
- lootKicker: "DENEME DROPLARI · ÖDÜL DEĞİL",
- lootTitle: "A.C.E. GANİMET MERDİVENİ — CANLI DROPLAR",
- lootNote:
- "Kavramsal CS2 skin sınıfı kartı. Valve görseli değildir, takas edilemez ve bir A.C.E. envanterinde değildir.",
  nextDrop: "SONRAKİ DROP: {clock}",
- lootDisclaimer:
- "Tüm ödül öğeleri, girişler ve merdiven havuzları kavramsal deneme temsilleridir. Canlı drop, finanse edilen ödül ve ödeme yoktur.",
  champKicker: "DENEME KOZMETİKLERİ · ÖDEME SİMÜLASYONU",
  champBody:
  "Üst düzey CS2 skin önizlemeleri. Bunlar Valve öğeleri değildir, bir A.C.E. envanterinde değildir ve gerçek ödül değildir. Ödeme yalnızca simülasyon uyarısıdır.",
@@ -250,7 +244,6 @@ export const TR: MessageBag = {
  shopItemIndex: "ÖĞE {n}",
  shopTabsAria: "Pazar kategorileri",
  squadTabsAria: "Kadro çalışma alanı kategorileri",
- rulesChapter: "BÖLÜM {n}",
  squadKicker: "A.C.E. TAKIMLAR · YERLEŞİM ÖNİZLEMESİ",
  squadTitle: "A.C.E. KADRO YÖNETİMİ — TAKTİK KLAN ALANI",
  squadLede: "5v5 kadronu kur, taktik serbest ajanları davet et ve turnuva hile koruması uyumunu doğrula.",
@@ -299,44 +292,6 @@ export const TR: MessageBag = {
  tourneyOpsBody:
  "Yüze kadar takımlı etkinlikler bu 128 yuvalı ağacı kullanır: yirmi sekiz bay, otuz altı açılış karşılaşması ve bir şampiyona giden olağan yolda doksan dokuz oynanmış maç. Doldurulmayan yuvalar baydır, kurulmuş maç değildir. Kadro kilidi, veto, uzatma ve personel kararları /rules adresindeki Teknik lig belgesinde yayımlanır. /tournaments?team=gf-0 ve /profile/vlt-lurk gibi derin bağlantılar yerleşim kimlikleridir, kayıtlı kuruluşlar değildir.",
  tourneyLoading: "Eşleşme ağacı yükleniyor…",
- rulesKicker: "ACE-RULES / TEKNİK LİG BELGESİ / KULLANIM ŞARTLARI",
- rulesTitle: "Teknik lig belgesi",
- rulesLede:
- "Bu, A.C.E. için bağlayıcı yarışma metnidir. Özgün profesyonel bir metindir ve herhangi bir Valve el kitabının kopyası değildir. /terms adresindeki site Şartlarına dahil edilmiştir. Dereceli kuyruklar, canlı oyun sunucuları, ödemeler, ödüller ve indirilebilir bir Anti-Cheat istemcisi bu sitede aktif değildir. Bu sistemler uygulanıp onaylanıp uçtan uca sınanana kadar aşağıdaki maddeler A.C.E. yarışmasının nasıl işleyeceğini anlatır. Canlı bir CS2 devresinin şimdiden bağlı olduğunu iddia etmezler.",
- rulesCh1Title: "Rekabetçi oynanış çekirdeği",
- rulesCh1P1:
- "Varsayılan A.C.E. rekabet maçları beş oyuncuya karşı beştir. Yönetmelik, MR12 kural setinde yirmi dört turluk bir harita kullanır: ilk olarak on üç resmi tur kazanan takım kazanır ve taraflar on iki turdan sonra değişir; yayımlanmış bir etkinlik brifingi başka türlü demedikçe. Tarayıcı tıklaması asla kazanılmış bir tur değildir. Ekran görüntüsü asla resmi skordur. Yalnızca kimliği doğrulanmış bir oyun sunucusu bağdaştırıcısı veya adlı bir personel iş akışı kazananı işaretleyebilir.",
- rulesCh1P2:
- "Bir etkinlik kullandığında standart uzatma, ısınma veya bıçak turundan önce duyurulmalıdır. Etkinlik brifingi farklı bir tablo yayımlamadıkça uzatma MR3 dizileri olarak belirtilir: üçten sonra taraf değişimli altı ek tur; o dizide dört uzatma turunu ilk kazanan takım kazanır ve bir kazanan çıkana kadar tekrarlanır. Isınma ayarı, mola hakkı ve bıçak turu taraf seçimi etkinlik brifingiyle verilir ve bu siteden çıkarılmaz.",
- rulesCh1P3:
- "Harita vetosu yayımlanmış bir iş akışıdır, resmi olmayan bir sohbet anlaşması değildir. Tek haritalık bir karşılaşma için varsayılan belirtilen sıra şudur: A takımı yasaklar, B takımı yasaklar, A takımı yasaklar, B takımı yasaklar, kalan harita oynanır ve daha yüksek seri başı veya bıçak turunun kazananı başlangıç tarafını brifingin dediği gibi seçer. Üç maçın en iyisi etkinlikleri, eğer bir gün düzenlenirse, kayıt kilidinden önce bir seçme ve yasaklama tablosu yayımlamalıdır. Kilitten sonra vetoyu değiştirmek, personel belgelenmiş bir acil durum istisnası kaydetmedikçe hükümsüzdür.",
- rulesCh1P4:
- "Taktik molalar sınırlıdır. Etkinlik brifingi daha sıkı bir tavan koymadıkça her takım harita başına en çok dört taktik mola isteyebilir; her biri en çok otuz saniye resmi duraklama sürer ve diğer takımın sürmekte olan molası sırasında istenemez. Belgelenmiş bir istemci veya sunucu arızası için teknik duraklamalar ayrıdır ve sunucu operatörleri ya da etkinlik personeli tarafından verilir veya reddedilir. Kaybedilen bir turu uzatmak için molayı kötüye kullanmak bölüm 04 kapsamında bir davranış ihlalidir.",
- rulesCh2Title: "Özerk güvenli kabuk bütünlüğü",
- rulesCh2P1:
- "Dereceli eşleştirme ve A.C.E. yönetimindeki rekabet kabulü, donanıma bağlı bir Anti-Cheat tarama istemcisinin — Özerk güvenli kabuğun — zorunlu çalıştırılmasını gerektirecek şekilde belirtilmiştir. İstemci var olduğunda çalışıyor, güncel ve doğrulanmış SteamID'yi hesaba bağlayan imzalı bir el sıkışmayı tamamlayabilir olmalıdır. İstemci yoksa, durdurulmuşsa, güncel değilse, taklit edilmişse veya doğrulanmamışsa kabul reddedilir. Bu sitedeki dereceli MAÇ BUL bu nedenle şimdiden hata durumunda kapanır.",
- rulesCh2P2:
- "Herhangi bir hile imzası doğrulaması, reddedilen bütünlük kontrolü, donanım tanımlayıcısı taklidi veya önceki bir kısıtlamadan kaçmak için hesap paylaşımı, cihazın donanım tanımlayıcısına (HWID) mutlak ömür boyu yasak ve anında hesap askıya alma (BANNED veya PERM_BANNED) üretecek şekilde belirtilmiştir. Ömür boyu HWID dışlaması, abonelik fonlarının tamamının kaybını ve sıfır iade yükümlülüğünü taşır: faturalama sonra var olursa ödenmiş süre, yasak nedeniyle iade edilmez. A.C.E. kendi kuyruklarını ve yönetilen sunucularını reddedebilir. Bir kişinin A.C.E. dışında Counter-Strike 2 başlatmasını engelleyemez ve engellediğini iddia etmez.",
- rulesCh2P3:
- "Bu web sitesiyle hiçbir Anti-Cheat ikili dosyası gönderilmez. Donanım parmak izleri bugün toplanmaz. Yakında indirme kartları yalnızca yerleşimdir. Bugün bu sitede ücretli tahsilat yoktur, dolayısıyla şu an iade edilecek bir şey yoktur. Kayıp kuralı, faturalı bir ürün ve doğrulanmış bir istemci sonra var olursa sürpriz olmasın diye şimdi yayımlanır.",
- rulesCh3Title: "Lig operasyonları ve kadro kilidi",
- rulesCh3P1:
- "Kalıcı bir A.C.E. takımının bir atanmış kaptanı ve en çok dört takım arkadaşı vardır. Yalnızca kaptan davet gönderebilir ve yalnızca, sunucuda doğrulanmış bir Steam OpenID girişinden sonra oluşturulmuş davetlinin A.C.E. hesap tanımlayıcısıyla. A.C.E. asla Steam şifresi istemez. Bir oyuncu belirli bir kadroda en çok bir başlangıç yeri tutar. Yedekler, etkinlik izin veriyorsa, kilitten önce adlandırılmalıdır.",
- rulesCh3P2:
- "Kadro kilidi, turnuva yol haritasının aktif aşamalarında katıdır. Bir sezon veya etkinlik aktif işaretlendiğinde gönderilen beş kişilik listeler dondurulur. Kilitten sonra oyuncu eklemek, çıkarmak veya değiştirmek, etkinlik personeli belgelenmiş bir acil durum istisnası kaydetmedikçe hükümsüzdür. Kilitten sonra kalıcı takımın kaptanını değiştirmek donmuş etkinlik listesini yeniden yazmaz. Aynı takımın yinelenen kayıtları reddedilir. Herkese açık 128 yuvalı piramit bir gösterim yerleşimidir; kayıt şu an 100 üzerinden 0 gösterir.",
- rulesCh3P3:
- "Yönetim, tam geçersiz kılma ve maç itirazı çözüm ayrıcalıklarını saklı tutar. Bir katılımcı, haritayı, tur aralığını, iddia edilen kusuru ve kanıt referanslarını belirterek kayıtlı bir maça itiraz açabilir. Başvuru kanıt değildir. İtirazlı bir maç bir takımı ilerletmez ve personel çözene kadar puanı değiştirmez. Maçta oynamış personel onu onaylamamalıdır. Yönetim geçersiz kılmaları yeni bir denetim satırı yazar; önceki kaydı silmez. İtiraz, geçersiz kılma, geri yükleme ve uygunluk konusundaki tüm personel kararları kesindir. Canlı bir bilet kuyruğu bağlanana kadar support@ace-platform.gg geçici kabul adresidir.",
- rulesCh4Title: "Genel kullanım şartları ve uyarılar",
- rulesCh4P1:
- "Bu Genel Şartlar, A.C.E. Competitions Ltd. tarafından işletilen ace-platform varlıklarında kullanıcı davranışını, site işlemlerini ve fikri mülkiyeti yönetir. Siteyi kullanmak bu Şartları, Gizlilik Politikasını, Çerez Politikasını ve bu Teknik lig belgesini kabul ettiğin anlamına gelir. Ülkende Steam kullanacak yaşta olmalısın. Hesaplar yalnızca resmi Steam OpenID ile oluşturulur.",
- rulesCh4P2:
- "Yasak davranışa maç satmak, izleyici yayınından bilgi sızdırmak, bir kısıtlamadan kaçmak için hesap paylaşmak, nefret söylemi, kişisel verileri ifşa etmek ve sunucu içi sabotaj girer. Cezalar uyarıdan geçici veya kalıcı dışlamaya kadar gider. Doğrulaması olmayan bir bildirim tek başına kalıcı yasak üretemez. Lobi saatleri, ganimet merdivenleri, giriş ödülü takvimleri ve mağaza katmanları yerleşim önizlemeleridir. Bu site kayıt ücreti toplamaz, nakit vermez ve öğe göndermez.",
- rulesCh4P3:
- "Gösterilen üyelik fiyatları ayda Plus $4 ve ayda Premium $7'dır. Ödeme canlı değildir. Faturalama var olduğunda iptal ve iade, yayımlanan abonelik açıklamasına uyar. Faturalı bir ürün ve doğrulanmış bir istemci sonra var olursa ömür boyu bütünlük yasağı, bölüm 02'de belirtildiği gibi yine sıfır iade yükümlülüğü taşır.",
- rulesCh4P4:
- "A.C.E., markaları, özgün rütbe adları ve bu sitedeki özgün metin A.C.E. Competitions Ltd. fikri mülkiyetidir. Valve, Steam, ve Counter-Strike markaları sahiplerinin mülkiyetinde kalır. Gerçek bir CS2 etkinliği düzenlemek, ilk tur oynanmadan önce Valve'ın turnuva, sunucu ve eşleştirme şartlarının ayrı bir incelemesini yine gerektirir.",
- rulesCh4P5:
- "Yasanın izin verdiği ölçüde A.C.E., kaybedilen rütbeden, hiç gerçek öğe olmamış kayıp kozmetiklerden veya üçüncü taraf Steam ya da CS2 kesintilerinden sorumlu değildir. Ülkendeki zorunlu tüketici hakları, feragat edilemedikleri yerde dışlanmaz. İletişim: support@ace-platform.gg.",
  hubKicker: "ANA LOBİ ALANI",
  hubTitle: "Bağımsız rekabet kabuğu",
  hubBadge: "ÇEKİRDEK ALTYAPI: ÇALIŞIYOR",
