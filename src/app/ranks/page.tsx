@@ -8,7 +8,10 @@ import { RANK_DIVISIONS } from "@/lib/site";
 import { getText } from "@/server/locale";
 import { PremiumProfileCardPreview } from "@/components/premium-profile-card";
 import { PremiumRankCodex } from "@/components/premium-rank-codex";
+import { RpRulesSection } from "@/components/rp-rules-section";
 import { readSessionUser } from "@/server/session";
+
+export const instant = false;
 
 export async function generateMetadata(): Promise<Metadata> {
   const text = await getText();
@@ -62,6 +65,7 @@ export default async function RanksPage() {
         </div>
         <PremiumRankCodex text={text} />
       </section>
+      <RpRulesSection text={text} />
       <section className="mt-12 rounded-3xl border border-[#FFD700]/25 bg-[#121212] p-6 sm:p-8">
         <h2 className="text-xl font-semibold text-white">{copy.document.title}</h2>
         <p className="mt-3 max-w-3xl text-sm leading-7 text-[#A9ABB3]">{copy.document.body}</p>

@@ -53,6 +53,8 @@ type BoardRow = {
   live: boolean;
   /** Server gate result (effectiveRankArt) for stored rows; showcase rows are always standard. */
   art: RankArt;
+  /** Stored cosmetic standard-emblem color (validated on read). Showcase rows: null. */
+  badgeColor: string | null;
   badges: PlayerBadge[];
 };
 
@@ -81,6 +83,7 @@ export default async function LeaderboardPage({
         rankLevel: true,
         subscriptionTier: true,
         rankArt: true,
+        badgeColor: true,
         wins: true,
         losses: true,
         steamId: true,
@@ -97,6 +100,7 @@ export default async function LeaderboardPage({
       weaponName: null,
       live: true,
       art: effectiveRankArt(row),
+      badgeColor: row.badgeColor,
       // Computed here on the server from stored rows; only the badge labels reach the page.
       badges: playerBadges({
         subscriptionTier: row.subscriptionTier,
@@ -126,6 +130,7 @@ export default async function LeaderboardPage({
           weaponName: row.weaponName,
           live: false,
           art: "standard",
+          badgeColor: null,
           badges: [],
         }));
 
@@ -170,7 +175,7 @@ export default async function LeaderboardPage({
           {podium.length === 3 ? (
             <ol className="ace-lb-podium" aria-label={lb.podiumLabel}>
               {podium.map(({ row, place }) => {
-                const emblem = rankArtAsset(row.level, row.art);
+                const emblem = rankArtAsset(row.level, row.art, row.badgeColor);
                 return (
                   <li key={row.id} className={`ace-lb-pod is-${place}`}>
                     <span className="ace-lb-pod-place">{place}</span>
@@ -198,7 +203,7 @@ export default async function LeaderboardPage({
             <ol>
               {board.map((row, index) => {
                 const place = index + 1;
-                const emblem = rankArtAsset(row.level, row.art);
+                const emblem = rankArtAsset(row.level, row.art, row.badgeColor);
                 const width = Math.max(8, Math.round((row.rp / top) * 100));
                 return (
                   <li key={row.id} className={`ace-lb-row is-${place <= 3 ? place : "rest"}`}>

@@ -46,7 +46,7 @@ export const teams: TextBag["teams"] = {
       "roster": "Az 1. hely a bejelentkezett kapitány. A 2–5. helyeknek már A.C.E.-fiókkal kell rendelkezniük. A meghívók függőben maradnak, amíg minden játékos el nem fogadja.",
       "badge": "A helyjelvények élő A.C.E Shield ellenőrzésekké válnak, amikor a csalásellenes rendszer elindul.",
       "support": "Nyisd meg a Támogatás vagy Kapcsolat oldalt ezen az oldalon. A támogatási felszólítás nem nyit jegyet, és a Kapcsolat oldalon beírt szöveg nem kerül továbbításra.",
-      "rating": "Egy új értékelés 1 000-ről indul. Ez az oldal nem árul értékelést, nem nyit sort, nem csatlakoztat CS2-szervert és nem szállít díjat."
+      "rating": "Egy új értékszám 1200-ról indul. Ez az oldal nem árul értékszámot, nem nyit sort, nem csatlakoztat CS2-szervert és nem ad át díjat."
     }
   },
   "squad": {

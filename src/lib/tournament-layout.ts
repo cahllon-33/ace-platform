@@ -114,7 +114,7 @@ export function layoutTeam(round: string, index: number): LayoutTeam {
       winStreak: 8,
       wins: 0,
       losses: 0,
-      rating: 1000,
+      rating: 1200,
       gear: PLACEHOLDER_GEAR,
     };
   });

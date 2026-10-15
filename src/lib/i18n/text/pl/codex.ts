@@ -98,18 +98,18 @@ export const codex: TextBag["codex"] = {
   rankReads: {
     "rank-1-recruit": {
       stance:
-        "Recruit to ranga wejściowa. Nowe konto połączone ze Steam jest zapisywane z 1000 punktów oceny, a 1000 nadal oznacza rangę Recruit.",
+        "Recruit to płyta wejściowa. Nowe konta już tu nie zaczynają: startują z 1200 Rating Points w Vanguard. Do Recruit można trafić tylko, tracąc punkty.",
       detail:
         "Próg rangi Operative wynosi 1100. Tabela drabiny otwiera rangę Recruit od 0, ale silnik nie zapisze oceny poniżej 100. Od 100 do 1099 konto pozostaje w randze Recruit.",
     },
     "rank-2-operative": {
       stance:
-        "Operative to pierwsza ranga, której próg leży powyżej liczby startowej. Jej osiągnięcie oznacza, że zapisana ocena opuściła rangę wejściową.",
+        "Operative leży tuż pod liczbą startową. Konto, które spadnie poniżej 1200, trafia tu, zanim dojdzie do Recruit.",
       detail: "Przedział ma szerokość stu punktów. Kończy się na 1199. Ranga Vanguard zaczyna się od 1200.",
     },
     "rank-3-vanguard": {
       stance:
-        "Vanguard to przednia krawędź wczesnej drabiny. Konto jest już powyżej zarówno oceny startowej, jak i progu rangi Operative.",
+        "Vanguard to miejsce startu każdego nowego konta, z 1200 Rating Points. Awans stąd to pierwszy prawdziwy krok w górę drabinki.",
       detail: "Przedział obejmuje wartości od 1200 do 1299. Ranga Specialist zaczyna się od 1300.",
     },
     "rank-4-specialist": {
@@ -263,40 +263,40 @@ export const codex: TextBag["codex"] = {
     },
     "where-a-new-account-starts": {
       title: "Od czego zaczyna nowe konto",
-      lede: "Logowanie przez Steam tworzy konto z 1000 punktów oceny, rangą 1, Recruit, bez wygranych i bez przegranych.",
+      lede: "Logowanie przez Steam tworzy konto z 1200 Rating Points, ranga 3, Vanguard, bez wygranych i przegranych.",
       sections: [
         {
           heading: "Znak początkowy",
           paragraphs: [
-            "1000 mieści się w randze Recruit. Ranga Operative zaczyna się dopiero od 1100, więc nowe konto nie pomija rangi wejściowej.",
-            "Ponowne zalogowanie nie resetuje już zapisanej oceny. Kodeks nie prowadzi meczów kwalifikacyjnych i nie wymyśla bilansu wygranych i przegranych.",
+            "1200 to dolna granica Vanguard. Operative i Recruit są niżej, więc nowe konto zaczyna w środku wczesnej części drabinki, a nie na samym dole.",
+            "Ponowne logowanie nie resetuje zapisanego ratingu. Pierwsze 10 zapisanych meczów to kwalifikacje: w ich trakcie rating nie może wzrosnąć powyżej poziomu 5. Kodeks nie wymyśla bilansu wygranych i przegranych.",
           ],
         },
         {
           heading: "Jak to sprawdzić",
           paragraphs: [
             "Po zalogowaniu przez Steam panel i tablica rang mogą pokazać zapisaną ocenę. Jeśli baza danych jest niedostępna, strona informuje o tym zamiast wymyślać liczbę.",
-            "Ranga startowa pozostaje rangą Recruit, dopóki zapisany wynik nie przesunie oceny powyżej progu 1100. Ta strona nie zapisuje dziś żadnego takiego wyniku.",
+            "Ranga startowa pozostaje Vanguard, dopóki zapisany wynik nie wyprowadzi ratingu poza przedział 1200–1299. Ta strona nie zapisuje dziś żadnego takiego wyniku.",
           ],
         },
       ],
     },
     "how-points-move": {
       title: "Jak zapisany wynik zmienia punkty oceny",
-      lede: "Silnik używa jednego współczynnika kroku, 32, i jednej skali, 400. Wynik to wygrana, przegrana albo remis względem średniej drugiej strony.",
+      lede: "Zapisana wygrana lub przegrana jest mierzona względem średniego ratingu drugiej drużyny. Przeciwko równej drużynie wygrana to +25, a przegrana −25. Pełne zasady są na stronie Rang.",
       sections: [
         {
           heading: "Krok",
           paragraphs: [
-            "Wynik oczekiwany to szansa, jaką silnik przypisuje przed meczem wyłącznie na podstawie dwóch ocen. Przy równej ocenie ta szansa wynosi połowę, więc wygrana jest warta 16 punktów oceny, a przegrana kosztuje 16.",
-            "Przeciwko wyższej ocenie wygrana jest warta więcej niż 16, a przegrana kosztuje mniej niż 16. Przeciwko niższej ocenie wygrana jest warta mniej niż 16, a przegrana kosztuje więcej niż 16. Wynik jest zaokrąglany do liczby całkowitej, a następnie utrzymywany w zakresie od 100 do 3000.",
-            "Przy wyniku drużynowym każdy gracz danej strony jest porównywany ze średnimi punktami oceny drugiej strony. Obecny silnik daje każdemu graczowi tej strony tę samą ścieżkę. Nie dodaje premii za indywidualne wyróżnienie.",
+            "Oczekiwany wynik to szansa, jaką silnik przypisuje przed meczem wyłącznie na podstawie dwóch ratingów. Przy równym ratingu wynosi ona połowę, więc wygrana jest warta 25 Rating Points, a przegrana kosztuje 25.",
+            "Przeciwko wyższemu ratingowi wygrana jest warta więcej niż 25, a przegrana kosztuje mniej. Przeciwko niższemu jest odwrotnie. Wygrana zawsze daje od 10 do 40, a przegrana zawsze kosztuje od 10 do 40. Na poziomach 7–9 zyski za wygraną są mnożone przez 0,8, a na poziomie 10 przez 0,7, więc szczyt drabinki zajmuje więcej czasu. Rating pozostaje między 100 a 3000.",
+            "Przy wyniku drużynowym każdy gracz jest mierzony względem średniego ratingu drugiej drużyny. Bonus MVP meczu w wysokości 3 RP jest planowany na czas, gdy serwer będzie zapisywał zabójstwa; do tego czasu nie ma żadnego bonusu osobistego.",
           ],
         },
         {
           heading: "Remis",
           paragraphs: [
-            "Remis to połowa wyniku. Jeśli obie oceny są równe, wynik oczekiwany już wynosi połowę, więc remis zmienia liczbę o zero.",
+            "Remis niczego nie zmienia: każdy gracz zachowuje swój rating. Porzucenie lub opuszczenie meczu kosztuje 50 RP niezależnie od wyniku.",
             "Tabela na tej stronie pokazuje działanie silnika na przykładowych danych. Te wiersze nie są zapisanymi meczami i nie są Twoim kontem.",
           ],
         },

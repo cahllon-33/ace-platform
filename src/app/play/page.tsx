@@ -28,6 +28,7 @@ export default async function PlayPage() {
         rating: user.competitiveRating,
         level: rankFromRating(user.competitiveRating).level,
         art: effectiveRankArt(user),
+        badgeColor: user.badgeColor,
       };
     }
   } catch {

@@ -143,6 +143,7 @@ export const UI_ID: Ui = {
       "Sanksi",
       "Siaran",
       "Hadiah",
+      "Rating Points",
       "Perubahan"
     ]
   },

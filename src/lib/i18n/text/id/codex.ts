@@ -88,15 +88,15 @@ export const codex: TextBag["codex"] = {
   },
   "rankReads": {
     "rank-1-recruit": {
-      "stance": "Recruit adalah pelat awal. Akun baru yang terhubung Steam disimpan di 1.000 Rating Points, dan 1.000 masih memakai Recruit.",
+      "stance": "Recruit adalah pelat masuk. Akun baru tidak lagi mulai di sini: akun baru mulai dengan 1.200 Rating Points di Vanguard. Recruit hanya dicapai dengan kehilangan poin.",
       "detail": "Gerbang Operative adalah 1.100. Tabel tangga membuka Recruit di 0, tetapi mesin tidak akan menyimpan rating di bawah 100. Antara 100 dan 1.099 akun tetap Recruit."
     },
     "rank-2-operative": {
-      "stance": "Operative adalah peringkat pertama yang batas bawahnya di atas angka awal. Mencapainya berarti rating tersimpan sudah meninggalkan pelat awal.",
+      "stance": "Operative berada tepat di bawah angka awal. Akun yang turun di bawah 1.200 tiba di sini sebelum mencapai Recruit.",
       "detail": "Rentangnya selebar seratus poin. Berakhir di 1.199. Vanguard terbuka di 1.200."
     },
     "rank-3-vanguard": {
-      "stance": "Vanguard adalah ujung depan tangga awal. Akun sudah melewati rating awal dan batas Operative.",
+      "stance": "Vanguard adalah tempat setiap akun baru mulai, dengan 1.200 Rating Points. Naik dari sini adalah langkah nyata pertama di tangga.",
       "detail": "Rentang dari 1.200 sampai 1.299. Specialist terbuka di 1.300."
     },
     "rank-4-specialist": {
@@ -240,40 +240,40 @@ export const codex: TextBag["codex"] = {
     },
     "where-a-new-account-starts": {
       "title": "Di mana akun baru mulai",
-      "lede": "Masuk lewat Steam membuat akun di 1.000 Rating Points, peringkat 1, Recruit, tanpa menang dan tanpa kalah.",
+      "lede": "Masuk dengan Steam membuat akun dengan 1.200 Rating Points, rank 3, Vanguard, tanpa kemenangan dan tanpa kekalahan.",
       "sections": [
         {
           "heading": "Tanda pembuka",
           "paragraphs": [
-            "1.000 berada di dalam Recruit. Operative baru terbuka di 1.100, jadi akun baru tidak melewati pelat awal.",
-            "Masuk lagi tidak mereset rating yang sudah tersimpan. Kodeks tidak menjalankan pertandingan penempatan dan tidak mengarang catatan menang-kalah."
+            "1.200 adalah batas bawah Vanguard. Operative dan Recruit ada di bawahnya, jadi akun baru mulai di tengah bagian awal tangga, bukan di dasar.",
+            "Masuk lagi tidak mengatur ulang rating yang sudah tersimpan. 10 pertandingan pertama yang tercatat adalah penempatan: selama itu rating tidak bisa naik di atas tingkat 5. Codex tidak mengarang catatan menang–kalah."
           ]
         },
         {
           "heading": "Cara melihatnya",
           "paragraphs": [
             "Setelah masuk lewat Steam, dasbor dan papan peringkat bisa menampilkan rating tersimpan. Jika database tidak bisa dijangkau, halaman mengatakannya alih-alih mengarang angka.",
-            "Peringkat awal tetap Recruit sampai hasil tercatat menggeser rating melewati 1.100. Tidak ada hasil seperti itu yang ditulis dari situs ini hari ini."
+            "Rank awal tetap Vanguard sampai hasil tercatat membawa rating keluar dari rentang 1.200–1.299. Situs ini tidak menulis hasil seperti itu hari ini."
           ]
         }
       ]
     },
     "how-points-move": {
       "title": "Cara hasil tercatat menggeser Rating Points",
-      "lede": "Mesin memakai satu ukuran langkah, 32, dan satu skala, 400. Hasil adalah menang, kalah, atau seri melawan rata-rata pihak lain.",
+      "lede": "Kemenangan atau kekalahan yang tercatat diukur terhadap rata-rata rating tim lawan. Melawan tim setara, kemenangan bernilai +25 dan kekalahan −25. Aturan lengkapnya ada di halaman Rank.",
       "sections": [
         {
           "heading": "Langkah",
           "paragraphs": [
-            "Skor harapan adalah peluang yang diberikan mesin sebelum pertandingan, hanya berdasarkan dua rating. Melawan rating setara peluangnya setengah, jadi menang bernilai 16 Rating Points dan kalah mengurangi 16.",
-            "Melawan rating lebih tinggi, menang bernilai lebih dari 16 dan kalah mengurangi kurang dari 16. Melawan rating lebih rendah, menang bernilai kurang dari 16 dan kalah mengurangi lebih dari 16. Hasil dibulatkan ke bilangan bulat, lalu dijaga antara 100 dan 3.000.",
-            "Pada hasil tim, setiap pemain di satu pihak diukur terhadap rata-rata Rating Points pihak lain. Mesin saat ini memberi setiap pemain di pihak itu jalur yang sama. Tidak ada bonus untuk penghargaan pribadi."
+            "Skor yang diharapkan adalah peluang yang diberikan mesin sebelum pertandingan, hanya berdasarkan dua rating. Dengan rating yang sama peluangnya setengah, jadi kemenangan bernilai 25 Rating Points dan kekalahan mengurangi 25.",
+            "Melawan rating yang lebih tinggi, kemenangan bernilai lebih dari 25 dan kekalahan mengurangi lebih sedikit. Melawan rating yang lebih rendah, sebaliknya. Kemenangan selalu memberi 10 sampai 40 dan kekalahan selalu mengurangi 10 sampai 40. Di tingkat 7–9 perolehan kemenangan dikalikan 0,8 dan di tingkat 10 dikalikan 0,7, jadi puncak tangga butuh waktu lebih lama. Rating dijaga antara 100 dan 3.000.",
+            "Pada hasil tim, setiap pemain diukur terhadap rata-rata rating tim lawan. Bonus MVP pertandingan sebesar 3 RP direncanakan saat server mencatat kill; sampai saat itu tidak ada bonus pribadi yang diterapkan."
           ]
         },
         {
           "heading": "Seri",
           "paragraphs": [
-            "Seri adalah setengah hasil. Jika kedua rating sama, skor harapan sudah setengah, jadi seri menggeser angka sebesar nol.",
+            "Seri tidak mengubah apa pun: setiap pemain mempertahankan rating yang sama. Meninggalkan atau keluar dari pertandingan mengurangi 50 RP, apa pun hasilnya.",
             "Tabel di halaman ini adalah mesin yang bekerja dengan input contoh. Baris itu bukan pertandingan tersimpan dan bukan akunmu."
           ]
         }

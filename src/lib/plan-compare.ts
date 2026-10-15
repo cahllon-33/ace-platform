@@ -46,7 +46,7 @@ function same(cell: PlanCell) {
 export const PLAN_COMPARE_ROWS: PlanCompareRow[] = [
   { id: "publicSite", ...same({ label: "open" }) },
   { id: "steamSignIn", ...same({ label: "yes" }) },
-  { id: "startingRating", ...same({ value: "1,000" }) },
+  { id: "startingRating", ...same({ value: "1,200" }) },
   { id: "recordedMatches", ...same({ label: "noneYet" }) },
   { id: "rankedQueue", ...same({ label: "closed" }) },
   { id: "cs2Servers", ...same({ label: "notConnected" }) },

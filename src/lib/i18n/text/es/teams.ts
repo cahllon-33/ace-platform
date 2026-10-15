@@ -59,7 +59,7 @@ export const teams: TextBag["teams"] = {
       support:
         "Abre Soporte o Contacto en este sitio web. Un aviso de soporte no abre un ticket, y el texto escrito en Contacto no se entrega.",
       rating:
-        "Una puntuación nueva empieza en 1,000. Esta página no vende puntuación, no abre una cola, no conecta un servidor de CS2 y no entrega ningún premio.",
+        "Una puntuación nueva empieza en 1.200. Esta página no vende puntuación, no abre una cola, no conecta un servidor de CS2 ni entrega premios.",
     },
   },
   squad: {

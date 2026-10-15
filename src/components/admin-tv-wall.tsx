@@ -6,6 +6,9 @@ import type { AdminMessageKey } from "@/lib/admin-i18n";
 import type { TvFeed } from "@/lib/broadcast";
 import { addBroadcastFeed, removeBroadcastFeed } from "@/server/admin-broadcast";
 
+/** The wall always shows 8 slots; unfilled slots say so (no fake live tiles). */
+const WALL_SLOTS = 8;
+
 type T = (key: AdminMessageKey, values?: Record<string, string | number>) => string;
 
 function TvTile({ feed, focused, onFocus, onRemove, t }: { feed: TvFeed; focused: boolean; onFocus: () => void; onRemove: () => void; t: T }) {
@@ -83,28 +86,34 @@ export function AdminTvWall({ feeds, dbAvailable, t }: { feeds: TvFeed[]; dbAvai
           <p><strong>{t("tvEmptyTitle")}</strong></p>
           <p>{t("tvEmpty")}</p>
         </div>
-      ) : (
-        <div className={`ace-tv-grid${focus ? " is-focus" : ""}`}>
-          {visible.map((feed) => (
-            <TvTile
-              key={feed.id}
-              feed={feed}
-              focused={focus === feed.id}
-              t={t}
-              onFocus={() => setFocus((current) => (current === feed.id ? null : feed.id))}
-              onRemove={() =>
-                void removeBroadcastFeed(feed.id).then((result) => {
-                  setNote(t(result.ok ? "tvRemoved" : "tvDbDown"));
-                  if (result.ok) {
-                    setFocus(null);
-                    router.refresh();
-                  }
-                })
-              }
-            />
-          ))}
-        </div>
-      )}
+      ) : null}
+      <div className={`ace-tv-grid${focus ? " is-focus" : ""}`}>
+        {visible.map((feed) => (
+          <TvTile
+            key={feed.id}
+            feed={feed}
+            focused={focus === feed.id}
+            t={t}
+            onFocus={() => setFocus((current) => (current === feed.id ? null : feed.id))}
+            onRemove={() =>
+              void removeBroadcastFeed(feed.id).then((result) => {
+                setNote(t(result.ok ? "tvRemoved" : "tvDbDown"));
+                if (result.ok) {
+                  setFocus(null);
+                  router.refresh();
+                }
+              })
+            }
+          />
+        ))}
+        {focus
+          ? null
+          : Array.from({ length: Math.max(0, WALL_SLOTS - feeds.length) }, (_, index) => (
+              <div key={`slot-${index}`} className="ace-tv-slot" aria-hidden="true">
+                <span>{t("tvSlotEmpty", { n: feeds.length + index + 1 })}</span>
+              </div>
+            ))}
+      </div>
       <form className="ace-tv-form" onSubmit={(event) => void onAdd(event)}>
         <label className="ace-admin-label">
           {t("tvAddTitle")}

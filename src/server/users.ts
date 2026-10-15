@@ -1,4 +1,5 @@
 import { RATING_CONFIG } from "@/lib/rating";
+import { RP_RULES } from "@/lib/rp-rules";
 import { getPrisma } from "@/server/db";
 import type { SteamProfile } from "@/server/steam-openid";
 
@@ -13,7 +14,7 @@ export async function upsertSteamUser(steamId: string, profile: SteamProfile) {
       avatarUrl: profile.avatarUrl,
       accountStatus: "ACTIVE",
       subscriptionTier: "FREE",
-      rankLevel: 1,
+      rankLevel: RP_RULES.startingTier,
       competitiveRating: RATING_CONFIG.startingRating,
       wins: 0,
       losses: 0,

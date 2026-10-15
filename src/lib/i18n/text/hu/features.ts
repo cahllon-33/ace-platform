@@ -41,7 +41,7 @@ export const features: TextBag["features"] = {
     },
     "calibration": {
       "title": "Tíz képességkalibrációs szint",
-      "intro": "A versenykalibráció dokumentált Elo-típusú képletet használ (verzió {version}, K-tényező {kFactor}, skála {scale}). Az új fiókok 1. rangon (Recruit), FREE előfizetéssel, ACTIVE állapottal és {startingRating} versenyértékeléssel indulnak. A lobbi kristálycímkéi vizuális álnevek. A fizetős kozmetikumok soha nem vásárolnak értékelést, könnyebb ellenfeleket, 128-tick szervereket vagy sorelsőbbséget. Nincs eladó élő 128-tick termék.",
+      "intro": "A Competitive Calibration a közzétett A.C.E Rating Points szabályokat használja (verzió: {version}; lépés: {kFactor}; skála: {scale}). Az új fiókok a 3. rangon (Vanguard) kezdenek, FREE előfizetéssel, ACTIVE állapotban és {startingRating} versenyértékszámmal. A lobbi kristálynevei vizuális álnevek. A fizetős kozmetikumok soha nem vásárolnak értékszámot, könnyebb ellenfeleket, 128 tickes szervereket vagy sorelsőbbséget. Nincs eladó, működő 128 tickes termék.",
       "table": {
         "level": "Szint",
         "engineName": "Motornév",

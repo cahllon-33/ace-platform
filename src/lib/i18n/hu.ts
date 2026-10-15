@@ -346,7 +346,7 @@ export const HU: MessageBag = {
  rpEmpty: "— RP",
  rankProtocolTitle: "A.C.E. ÉRTÉKELÉSI PROTOKOLL",
  rankProtocolBody:
- "Az írott szabály a játékost a másik csapat átlagos értékeléséhez méri. A rögzített győzelem vagy vereség 32-es szorzóval mozgatja a tárolt értékelést, a 10 fokozat és a 3 divízió pedig ebből a számból olvasható ki. Ez az oldal nem érvényesít meccset, ezért itt nem változik az értékelés.",
+ "Az írott szabály a játékost a másik csapat átlagos értékszámához hasonlítja. Egyenlő csapat ellen egy rögzített győzelem +25 RP, egy vereség −25 RP, mindig meccsenként 10 és 40 RP között, és a 10 szint és a 3 divízió ebből a számból olvasható ki. Ez az oldal nem hitelesít meccset, így itt nem történik értékszám-változás.",
  rankProgress: "Rang előrehaladása",
  competitiveRating: "Versenyértékelés",
  targetWinRate: "Célzott győzelmi arány",

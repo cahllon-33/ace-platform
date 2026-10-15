@@ -88,15 +88,15 @@ export const codex: TextBag["codex"] = {
   },
   "rankReads": {
     "rank-1-recruit": {
-      "stance": "Recruit är ingångsplattan. Ett nytt Steam-kopplat konto sparas med 1 000 ratingpoäng, och 1 000 bär fortfarande Recruit.",
+      "stance": "Recruit är ingångsplattan. Nya konton börjar inte längre här: de börjar med 1 200 Rating Points i Vanguard. Recruit nås bara genom att tappa poäng.",
       "detail": "Tröskeln till Operative är 1 100. Stegtabellen öppnar Recruit vid 0, men motorn sparar ingen rating under 100. Mellan 100 och 1 099 förblir kontot Recruit."
     },
     "rank-2-operative": {
-      "stance": "Operative är den första ranken vars golv ligger över startvärdet. Att nå den betyder att den sparade ratingen har lämnat ingångsplattan.",
+      "stance": "Operative ligger strax under startsiffran. Ett konto som sjunker under 1 200 hamnar här innan det når Recruit.",
       "detail": "Intervallet är hundra poäng brett. Det slutar vid 1 199. Vanguard öppnar vid 1 200."
     },
     "rank-3-vanguard": {
-      "stance": "Vanguard är den tidiga stegens främre linje. Kontot har redan passerat både startratingen och Operatives golv.",
+      "stance": "Vanguard är där varje nytt konto börjar, med 1 200 Rating Points. Att klättra härifrån är det första riktiga steget uppför stegen.",
       "detail": "Intervallet går från 1 200 till 1 299. Specialist öppnar vid 1 300."
     },
     "rank-4-specialist": {
@@ -240,40 +240,40 @@ export const codex: TextBag["codex"] = {
     },
     "where-a-new-account-starts": {
       "title": "Där ett nytt konto börjar",
-      "lede": "Steam-inloggning skapar kontot med 1 000 ratingpoäng, rank 1, Recruit, utan vinster och förluster.",
+      "lede": "Steam-inloggningen skapar kontot med 1 200 Rating Points, rang 3, Vanguard, utan vinster och förluster.",
       "sections": [
         {
           "heading": "Det första märket",
           "paragraphs": [
-            "1 000 ligger inom Recruit. Operative öppnar först vid 1 100, så ett nytt konto hoppar inte över ingångsplattan.",
-            "Att logga in igen återställer inte en rating som redan är sparad. Kodexen kör inga placeringsmatcher och hittar inte på någon vinst- och förluststatistik."
+            "1 200 är Vanguards golv. Operative och Recruit ligger under, så ett nytt konto börjar mitt i stegens tidiga del, inte längst ned.",
+            "En ny inloggning återställer inte en redan sparad rating. De första 10 registrerade matcherna är placering: under dem kan ratingen inte stiga över nivå 5. Codexen hittar inte på någon vinst- och förluststatistik."
           ]
         },
         {
           "heading": "Så ser du den",
           "paragraphs": [
             "Efter Steam-inloggning kan panelen och rankbrädan visa den sparade ratingen. Om databasen inte går att nå säger sidan det i stället för att hitta på ett tal.",
-            "Startranken förblir Recruit tills ett registrerat resultat flyttar ratingen över 1 100. Inget sådant resultat skrivs från webbplatsen i dag."
+            "Startrangen förblir Vanguard tills ett registrerat resultat flyttar ratingen ut ur intervallet 1 200–1 299. Den här webbplatsen skriver inget sådant resultat i dag."
           ]
         }
       ]
     },
     "how-points-move": {
       "title": "Hur ett registrerat resultat flyttar ratingpoäng",
-      "lede": "Motorn använder en stegstorlek, 32, och en skala, 400. Ett resultat är vinst, förlust eller oavgjort mot motståndarsidans genomsnitt.",
+      "lede": "En registrerad vinst eller förlust mäts mot det andra lagets genomsnittliga rating. Mot ett jämnt lag ger en vinst +25 och en förlust −25. De fullständiga reglerna finns på sidan Ranger.",
       "sections": [
         {
           "heading": "Steget",
           "paragraphs": [
-            "Förväntat resultat är den chans motorn tilldelar före matchen, enbart baserat på de två ratingarna. Mot en lika hög rating är chansen en halv, så en vinst ger 16 ratingpoäng och en förlust kostar 16.",
-            "Mot en högre rating ger en vinst mer än 16 och en förlust kostar mindre än 16. Mot en lägre rating ger en vinst mindre än 16 och en förlust kostar mer än 16. Resultatet avrundas till ett heltal och hålls mellan 100 och 3 000.",
-            "Vid ett lagresultat mäts varje spelare på en sida mot motståndarsidans genomsnittliga ratingpoäng. Den nuvarande motorn ger alla spelare på sidan samma förändring. Den lägger inte till någon bonus för en personlig utmärkelse."
+            "Förväntat resultat är chansen som motorn tilldelar före matchen, enbart utifrån de två ratingarna. Vid lika rating är den en halv, så en vinst är värd 25 Rating Points och en förlust kostar 25.",
+            "Mot en högre rating är en vinst värd mer än 25 och en förlust kostar mindre. Mot en lägre är det tvärtom. En vinst ger alltid 10 till 40 och en förlust kostar alltid 10 till 40. På nivå 7–9 multipliceras vinstpoäng med 0,8 och på nivå 10 med 0,7, så toppen av stegen tar längre tid. Ratingen hålls mellan 100 och 3 000.",
+            "Vid ett lagresultat mäts varje spelare mot det andra lagets genomsnittliga rating. En MVP-bonus på 3 RP är planerad för när servern registrerar kills; fram till dess tillämpas ingen personlig bonus."
           ]
         },
         {
           "heading": "Oavgjort",
           "paragraphs": [
-            "Oavgjort är ett halvt resultat. Om båda ratingarna är lika är det förväntade resultatet redan en halv, så oavgjort flyttar talet med noll.",
+            "Oavgjort ändrar ingenting: varje spelare behåller sin rating. Att lämna eller överge en match kostar 50 RP oavsett resultat.",
             "Tabellen på den här sidan är motorn som räknar på exempelvärden. Raderna är inga sparade matcher och inte ditt konto."
           ]
         }

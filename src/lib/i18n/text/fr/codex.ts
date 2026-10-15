@@ -98,18 +98,18 @@ export const codex: TextBag["codex"] = {
   rankReads: {
     "rank-1-recruit": {
       stance:
-        "Recruit est le palier d’entrée. Un nouveau compte lié à Steam est enregistré à 1 000 points de cote, et 1 000 correspond encore à Recruit.",
+        "Recruit est la plaque d'entrée. Les nouveaux comptes ne commencent plus ici : ils démarrent à 1 200 Rating Points, en Vanguard. On n'atteint Recruit qu'en perdant du terrain.",
       detail:
         "Le seuil d’Operative est à 1 100. Le tableau de l’échelle fait commencer Recruit à 0, mais le moteur n’enregistre aucune cote inférieure à 100. Entre 100 et 1 099, le compte reste Recruit.",
     },
     "rank-2-operative": {
       stance:
-        "Operative est le premier rang dont le plancher se situe au-dessus du nombre de départ. L’atteindre signifie que la cote enregistrée a quitté le palier d’entrée.",
+        "Operative se situe juste sous le nombre de départ. Un compte qui passe sous 1 200 arrive ici avant d'atteindre Recruit.",
       detail: "La tranche fait cent points de large. Elle se termine à 1 199. Vanguard s’ouvre à 1 200.",
     },
     "rank-3-vanguard": {
       stance:
-        "Vanguard est l’avant-garde du début de l’échelle. Le compte a déjà dépassé à la fois la cote de départ et le plancher d’Operative.",
+        "Vanguard est le point de départ de chaque nouveau compte, à 1 200 Rating Points. Monter à partir d'ici est le premier vrai pas sur l'échelle.",
       detail: "La tranche va de 1 200 à 1 299. Specialist s’ouvre à 1 300.",
     },
     "rank-4-specialist": {
@@ -263,40 +263,40 @@ export const codex: TextBag["codex"] = {
     },
     "where-a-new-account-starts": {
       title: "Point de départ d’un nouveau compte",
-      lede: "La connexion Steam crée le compte à 1 000 points de cote, rang 1, Recruit, sans victoire ni défaite.",
+      lede: "La connexion Steam crée le compte à 1 200 Rating Points, rang 3, Vanguard, sans victoire ni défaite.",
       sections: [
         {
           heading: "Le palier de départ",
           paragraphs: [
-            "1 000 se situe dans Recruit. Operative ne s’ouvre qu’à 1 100 ; un nouveau compte ne saute donc pas le palier d’entrée.",
-            "Se reconnecter ne réinitialise pas une cote déjà enregistrée. Le codex ne lance pas de matchs de placement et n’invente aucun bilan de victoires et de défaites.",
+            "1 200 est le plancher de Vanguard. Operative et Recruit sont en dessous : un nouveau compte commence donc au milieu de la première partie de l'échelle, pas tout en bas.",
+            "Se reconnecter ne réinitialise pas un classement déjà enregistré. Les 10 premiers matchs enregistrés sont des matchs de placement : pendant ceux-ci, le classement ne peut pas dépasser le palier 5. Le codex n'invente aucun bilan de victoires et de défaites.",
           ],
         },
         {
           heading: "Comment la consulter",
           paragraphs: [
             "Après la connexion Steam, le tableau de bord et le tableau des rangs peuvent afficher la cote enregistrée. Si la base de données est injoignable, la page l’indique au lieu d’inventer un nombre.",
-            "Le rang de départ reste Recruit jusqu’à ce qu’un résultat enregistré fasse passer la cote au-delà de 1 100. Aucun résultat de ce type n’est inscrit depuis ce site aujourd’hui.",
+            "Le rang de départ reste Vanguard jusqu'à ce qu'un résultat enregistré fasse sortir le classement de la plage 1 200–1 299. Ce site n'écrit aucun résultat de ce type aujourd'hui.",
           ],
         },
       ],
     },
     "how-points-move": {
       title: "Comment un résultat enregistré fait évoluer les points de cote",
-      lede: "Le moteur utilise un seul pas, 32, et une seule échelle, 400. Un résultat est une victoire, une défaite ou un match nul face à la moyenne de l’équipe adverse.",
+      lede: "Une victoire ou une défaite enregistrée est mesurée par rapport au classement moyen de l'autre équipe. Contre une équipe de même niveau, une victoire vaut +25 et une défaite −25. Les règles complètes sont sur la page Rangs.",
       sections: [
         {
           heading: "Le pas",
           paragraphs: [
-            "Le score attendu est la probabilité que le moteur attribue avant le match, uniquement à partir des deux cotes. Face à une cote égale, cette probabilité est d’une chance sur deux : une victoire rapporte donc 16 points de cote et une défaite en coûte 16.",
-            "Face à une cote plus élevée, une victoire rapporte plus de 16 points et une défaite en coûte moins de 16. Face à une cote plus basse, une victoire rapporte moins de 16 points et une défaite en coûte plus de 16. Le résultat est arrondi à l’entier, puis maintenu entre 100 et 3 000.",
-            "Pour un résultat d’équipe, chaque joueur d’un camp est mesuré par rapport à la moyenne des points de cote du camp adverse. Le moteur actuel applique la même évolution à chaque joueur de ce camp. Il n’ajoute aucun bonus pour une distinction individuelle.",
+            "Le score attendu est la probabilité que le moteur attribue avant le match, d'après les deux classements seulement. À classement égal, elle vaut une moitié : une victoire vaut 25 Rating Points et une défaite en coûte 25.",
+            "Contre un classement plus élevé, une victoire vaut plus de 25 et une défaite coûte moins. Contre un classement plus bas, c'est l'inverse. Une victoire rapporte toujours de 10 à 40 et une défaite coûte toujours de 10 à 40. Aux paliers 7 à 9, les gains de victoire sont multipliés par 0,8 et au palier 10 par 0,7 : le haut de l'échelle prend donc plus de temps. Le classement reste entre 100 et 3 000.",
+            "Sur un résultat d'équipe, chaque joueur est mesuré par rapport au classement moyen de l'autre équipe. Un bonus MVP de match de 3 RP est prévu lorsque le serveur enregistrera les éliminations ; d'ici là, aucun bonus personnel n'est appliqué.",
           ],
         },
         {
           heading: "Le match nul",
           paragraphs: [
-            "Un match nul vaut un demi-résultat. Si les deux cotes sont égales, le score attendu est déjà d’une chance sur deux : un match nul fait donc varier le nombre de zéro.",
+            "Un match nul ne change rien : chaque joueur garde le même classement. Abandonner ou quitter un match coûte 50 RP, quel que soit le résultat.",
             "Le tableau de cette page montre le moteur appliqué à des valeurs d’exemple. Ces lignes ne sont pas des matchs enregistrés, et elles ne concernent pas votre compte.",
           ],
         },

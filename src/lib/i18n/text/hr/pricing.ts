@@ -110,7 +110,7 @@ export const pricing: TextBag["pricing"] = {
       "title": "Otvoreni pristup",
       "points": [
         "Prijavi se putem Steam OpenID-a. A.C.E. nikad ne traži Steam lozinku.",
-        "Spremljeni rejting počinje od 1.000. Nijedan rezultat meča ga nije promijenio.",
+        "Spremljeni rejting počinje od 1.200. Nijedan rezultat meča ga nije promijenio.",
         "Sve javne stranice: igraj, turniri, ljestvica, timovi i pravila."
       ]
     },
@@ -260,7 +260,7 @@ export const pricing: TextBag["pricing"] = {
         "Plaćanje: nema. Odabir ovog plana ne uzima karticu.",
         "E-pošta: nema. A.C.E. ne šalje ovo pismo u pretinac.",
         "Spremljena razina: nepromijenjena. Posebne značke i elitni pečat pojavljuju se samo kad račun već sprema Premium.",
-        "Rejting: nije na prodaju. Novi račun i dalje počinje od 1.000."
+        "Rejting: nije na prodaju. Novi račun i dalje počinje od 1.200."
       ]
     },
     "today": {

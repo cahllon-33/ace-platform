@@ -67,6 +67,7 @@ async function LobbyHomeDynamic() {
                 wins: user.wins,
                 losses: user.losses,
                 art: effectiveRankArt(user),
+                badgeColor: user.badgeColor,
                 elite: hasEliteSeal(user.subscriptionTier),
               }
             : null

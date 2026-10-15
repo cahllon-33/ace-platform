@@ -143,6 +143,7 @@ export const UI_ARZ: Ui = {
       "العقوبات",
       "البث",
       "الجوائز",
+      "Rating Points",
       "التعديلات"
     ]
   },

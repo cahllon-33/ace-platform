@@ -110,7 +110,7 @@ export const pricing: TextBag["pricing"] = {
       "title": "Akses terbuka",
       "points": [
         "Masuk dengan Steam OpenID. A.C.E. tidak pernah meminta kata sandi Steam.",
-        "Rating tersimpan dimulai dari 1.000. Belum ada hasil pertandingan yang mengubahnya.",
+        "Rating tersimpan dimulai dari 1.200. Belum ada hasil pertandingan yang mengubahnya.",
         "Semua halaman publik: main, turnamen, papan peringkat, tim, dan aturan."
       ]
     },
@@ -260,7 +260,7 @@ export const pricing: TextBag["pricing"] = {
         "Pembayaran: tidak ada. Memilih paket ini tidak mengambil kartu.",
         "Surel: tidak ada. A.C.E. tidak mengirim surat ini ke kotak masuk.",
         "Tingkat tersimpan: tidak berubah. Lencana khusus dan segel elite hanya muncul jika akun sudah menyimpan Premium.",
-        "Rating: tidak dijual. Akun baru tetap mulai dari 1.000."
+        "Rating: tidak dijual. Akun baru tetap dimulai dari 1.200."
       ]
     },
     "today": {

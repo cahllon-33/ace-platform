@@ -143,6 +143,7 @@ export const UI_HI: Ui = {
       "दंड",
       "प्रसारण",
       "पुरस्कार",
+      "Rating Points",
       "संशोधन"
     ]
   },

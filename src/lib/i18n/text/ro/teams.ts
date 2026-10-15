@@ -46,7 +46,7 @@ export const teams: TextBag["teams"] = {
       "roster": "Locul 1 este căpitanul autentificat. Locurile 2–5 trebuie să aibă deja conturi A.C.E. Invitațiile rămân în așteptare până când fiecare jucător acceptă.",
       "badge": "Insignele locurilor devin verificări A.C.E Shield live când se lansează anti-cheatul.",
       "support": "Deschide Asistență sau Contact pe acest site. O solicitare de asistență nu deschide un tichet, iar textul scris pe Contact nu este livrat.",
-      "rating": "Un rating nou începe de la 1.000. Această pagină nu vinde rating, nu deschide o coadă, nu conectează un server CS2 și nu livrează un premiu."
+      "rating": "Un rating nou începe de la 1.200. Această pagină nu vinde rating, nu deschide o coadă, nu conectează un server CS2 și nu livrează premii."
     }
   },
   "squad": {

@@ -41,7 +41,7 @@ export const features: TextBag["features"] = {
     },
     "calibration": {
       "title": "十级技能定级",
-      "intro": "竞技定级采用有文档记载的 Elo 式公式(版本 {version},K 系数 {kFactor},尺度 {scale})。新账户从段位 1(Recruit)、FREE 订阅、ACTIVE 状态和 {startingRating} 竞技评分开始。大厅中的水晶名称是视觉别名。付费装饰绝不能购买评分、更弱的对手、128 Tick 服务器或队列优先权。目前没有出售任何 128 Tick 产品。",
+      "intro": "Competitive Calibration 使用已公布的 A.C.E 积分规则（版本 {version}：步长 {kFactor}，尺度 {scale}）。新账号从第 3 段（Vanguard）、FREE 订阅、ACTIVE 状态和 {startingRating} 竞技积分开始。大厅中的水晶名称只是视觉别名。付费外观永远买不到积分、更弱的对手、128 tick 服务器或排队优先权。目前没有在售的 128 tick 产品。",
       "table": {
         "level": "等级",
         "engineName": "引擎名称",

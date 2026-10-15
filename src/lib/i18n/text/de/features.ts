@@ -34,7 +34,7 @@ export const features: TextBag["features"] = {
     calibration: {
       title: "Zehn Stufen der Fähigkeitskalibrierung",
       intro:
-        "Die kompetitive Kalibrierung nutzt eine dokumentierte Formel nach Elo-Art (Version {version}, K-Faktor {kFactor}, Skala {scale}). Neue Konten beginnen bei Rang 1 (Recruit), mit KOSTENLOSEM Abonnement, Status ACTIVE und {startingRating} Wettkampfwertung. Kristallbezeichnungen im Warteraum sind optische Aliasnamen. Bezahlte Kosmetik kauft niemals Wertung, leichtere Gegner, 128-Takt-Server oder Vorrang in der Warteschlange. Es gibt kein laufendes 128-Takt-Produkt zu kaufen.",
+        "Competitive Calibration nutzt die veröffentlichten A.C.E Rating-Points-Regeln (Version {version}: Schritt {kFactor}, Skala {scale}). Neue Konten starten auf Rang 3 (Vanguard), mit FREE-Abo, Status ACTIVE und {startingRating} Wettkampfwertung. Kristallnamen in der Lobby sind visuelle Aliase. Bezahlte Kosmetik kauft nie Wertung, leichtere Gegner, 128-Tick-Server oder Warteschlangen-Vorrang. Es wird kein aktives 128-Tick-Produkt verkauft.",
       table: {
         level: "Stufe",
         engineName: "Maschinenname",

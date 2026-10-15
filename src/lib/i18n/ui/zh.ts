@@ -143,6 +143,7 @@ export const UI_ZH: Ui = {
       "处罚",
       "直播",
       "奖品",
+      "Rating Points",
       "修订"
     ]
   },

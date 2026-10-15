@@ -1,6 +1,17 @@
 import type { TextBag } from "../types";
 
 export const account: TextBag["account"] = {
+  badgeColor: {
+    "title": "Warna lencana",
+    "body": "Pilih warna emblem rank standarmu. Hanya kosmetik: tidak pernah mengubah Rating Points, rank, atau matchmaking. Seni ilustrasi Premium tetap memakai warna tingkatnya sendiri.",
+    "presets": "Warna tingkat",
+    "custom": "Warna kustom",
+    "reset": "Pakai warna tingkatku",
+    "saved": "Warna lencana disimpan.",
+    "failed": "Warna lencana tidak dapat disimpan. Coba lagi.",
+    "previewAlt": "Pratinjau emblem rank kamu dalam warna yang dipilih",
+    "swatch": "Warna {tier}"
+  },
   statsConsole: {
     "metaTitle": "Statistik pemain",
     "kicker": "STATISTIK PEMAIN",

@@ -59,7 +59,7 @@ export const teams: TextBag["teams"] = {
       support:
         "Ouvrez Assistance ou Contact sur ce site. Une invite d'assistance n'ouvre pas de ticket, et le texte saisi dans Contact n'est pas transmis.",
       rating:
-        "Une nouvelle cote démarre à 1 000. Cette page ne vend pas de cote, n'ouvre aucune file, ne connecte aucun serveur CS2 et ne livre aucun prix.",
+        "Un nouveau classement commence à 1 200. Cette page ne vend pas de classement, n'ouvre pas de file, ne connecte pas de serveur CS2 et ne remet aucun prix.",
     },
   },
   squad: {

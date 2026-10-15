@@ -143,6 +143,7 @@ export const UI_CS: Ui = {
       "Tresty",
       "Vysílání",
       "Ceny",
+      "Rating Points",
       "Změny"
     ]
   },

@@ -143,6 +143,7 @@ export const UI_TR: Ui = {
       "Cezalar",
       "Yayın",
       "Ödüller",
+      "Rating Points",
       "Değişiklikler"
     ]
   },

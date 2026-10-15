@@ -110,7 +110,7 @@ export const pricing: TextBag["pricing"] = {
       "title": "Nyílt hozzáférés",
       "points": [
         "Jelentkezz be Steam OpenID-vel. Az A.C.E. soha nem kéri a Steam-jelszavadat.",
-        "A tárolt értékelés 1 000-ről indul. Egyetlen meccseredmény sem változtatta meg.",
+        "A tárolt értékszám 1200-ról indul. Egyetlen meccseredmény sem változtatta meg.",
         "Minden nyilvános oldal: játék, tornák, ranglista, csapatok és szabályok."
       ]
     },
@@ -260,7 +260,7 @@ export const pricing: TextBag["pricing"] = {
         "Fizetés: nincs. A csomag választása nem kér kártyát.",
         "E-mail: nincs. Az A.C.E. nem küldi el ezt a levelet postafiókba.",
         "Tárolt szint: változatlan. A különleges jelvények és az elit pecsét csak akkor jelennek meg, ha a fiók már Premiumot tárol.",
-        "Értékelés: nem eladó. Egy új fiók továbbra is 1 000-ről indul."
+        "Értékszám: nem eladó. Egy új fiók továbbra is 1200-ról indul."
       ]
     },
     "today": {

@@ -34,7 +34,7 @@ export const features: TextBag["features"] = {
     calibration: {
       title: "Deset stupňů kalibrace dovedností",
       intro:
-        "Soutěžní kalibrace používá zdokumentovaný vzorec ve stylu Elo (verze {version}, koeficient K {kFactor}, měřítko {scale}). Nové účty začínají na hodnosti 1 (Recruit), s předplatným FREE, stavem ACTIVE a soutěžním hodnocením {startingRating}. Krystalové štítky v lobby jsou vizuální přezdívky. Placená kosmetika nikdy nekupuje hodnocení, snadnější soupeře, servery se 128 ticky ani přednost ve frontě. Žádný živý produkt se 128 ticky není na prodej.",
+        "Competitive Calibration používá zveřejněná pravidla Rating Points A.C.E (verze {version}: krok {kFactor}, škála {scale}). Nové účty začínají na hodnosti 3 (Vanguard), s předplatným FREE, stavem ACTIVE a {startingRating} soutěžního hodnocení. Názvy krystalů v lobby jsou vizuální aliasy. Placená kosmetika nikdy nekupuje hodnocení, snazší soupeře, 128tickové servery ani přednost ve frontě. Žádný aktivní 128tickový produkt se neprodává.",
       table: {
         level: "Úroveň",
         engineName: "Název v enginu",

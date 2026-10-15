@@ -109,7 +109,7 @@
       title: "Open access",
       points: [
         "Sign in with Steam OpenID. A.C.E. never asks for a Steam password.",
-        "A stored rating starts at 1,000. No match result has changed it.",
+        "A stored rating starts at 1,200. No match result has changed it.",
         "All public pages: play, tournaments, leaderboard, teams and rules.",
       ],
     },
@@ -265,7 +265,7 @@
         "Payment: none. Choosing this plan does not take a card.",
         "Email: none. A.C.E. does not send this letter to an inbox.",
         "Stored tier: unchanged. Special badges and the elite seal appear only when the account already stores Premium.",
-        "Rating: not for sale. A new account still starts at 1,000.",
+        "Rating: not for sale. A new account still starts at 1,200.",
       ],
     },
     today: {

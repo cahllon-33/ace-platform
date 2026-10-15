@@ -46,7 +46,7 @@ export const teams: TextBag["teams"] = {
       "roster": "Mjesto 1 je prijavljeni kapetan. Mjesta 2 do 5 moraju već imati A.C.E. račune. Pozivnice čekaju dok svaki igrač ne prihvati.",
       "badge": "Značke mjesta postaju A.C.E Shield provjere uživo kad anti-cheat krene.",
       "support": "Otvori Podršku ili Kontakt na ovoj stranici. Upit podršci ne otvara zahtjev, a tekst upisan na Kontaktu ne dostavlja se.",
-      "rating": "Novi rejting počinje od 1.000. Ova stranica ne prodaje rejting, ne otvara red, ne spaja CS2 poslužitelj niti isporučuje nagradu."
+      "rating": "Novi rejting počinje od 1.200. Ova stranica ne prodaje rejting, ne otvara red, ne spaja CS2 poslužitelj i ne dodjeljuje nagrade."
     }
   },
   "squad": {

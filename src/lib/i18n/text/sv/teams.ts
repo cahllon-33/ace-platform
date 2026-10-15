@@ -46,7 +46,7 @@ export const teams: TextBag["teams"] = {
       "roster": "Plats 1 är den inloggade kaptenen. Plats 2 till 5 måste redan ha A.C.E.-konton. Inbjudningar väntar tills varje spelare accepterar.",
       "badge": "Platsmärkena blir riktiga A.C.E Shield-kontroller när anti-fusket lanseras.",
       "support": "Öppna Support eller Kontakt på den här webbplatsen. En supportförfrågan öppnar inget ärende, och text som skrivs på Kontakt skickas inte.",
-      "rating": "En ny rating börjar på 1 000. Den här sidan säljer inte rating, öppnar ingen kö, ansluter ingen CS2-server och levererar inga priser."
+      "rating": "En ny rating börjar på 1 200. Den här sidan säljer inte rating, öppnar ingen kö, ansluter ingen CS2-server och delar inte ut priser."
     }
   },
   "squad": {

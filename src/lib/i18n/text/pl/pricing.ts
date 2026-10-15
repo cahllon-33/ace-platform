@@ -111,7 +111,7 @@ export const pricing: TextBag["pricing"] = {
       title: "Otwarty dostęp",
       points: [
         "Logowanie przez Steam OpenID. A.C.E. nigdy nie prosi o hasło Steam.",
-        "Zapisana ocena zaczyna się od 1000. Żaden wynik meczu jej nie zmienił.",
+        "Zapisany rating zaczyna się od 1200. Żaden wynik meczu go nie zmienił.",
         "Wszystkie strony publiczne: gra, turnieje, ranking, drużyny i zasady.",
       ],
     },
@@ -267,7 +267,7 @@ export const pricing: TextBag["pricing"] = {
         "Płatność: brak. Wybranie tego planu nie pobiera opłaty z karty.",
         "E-mail: brak. A.C.E. nie wysyła tego listu do skrzynki.",
         "Zapisany poziom: bez zmian. Odznaki specjalne i pieczęć elity pojawiają się tylko, gdy konto ma już zapisany Premium.",
-        "Ocena: nie na sprzedaż. Nowe konto nadal zaczyna od 1000.",
+        "Rating: nie na sprzedaż. Nowe konto nadal zaczyna od 1200.",
       ],
     },
     today: {

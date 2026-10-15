@@ -1,4 +1,5 @@
 "use server";
+import { RP_RULES } from "@/lib/rp-rules";
 
 import { revalidatePath } from "next/cache";
 import type { AccountStatus, SubscriptionTier, User } from "@prisma/client";
@@ -264,8 +265,8 @@ export async function resetAdminProfile(userId: string) {
     await tx.user.update({
       where: { id: user.id },
       data: {
-        rankLevel: 1,
-        competitiveRating: 1000,
+        rankLevel: RP_RULES.startingTier,
+        competitiveRating: RP_RULES.startingRating,
         wins: 0,
         losses: 0,
         subscriptionTier: "FREE",

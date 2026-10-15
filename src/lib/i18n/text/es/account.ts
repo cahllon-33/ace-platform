@@ -1,6 +1,17 @@
 import type { TextBag } from "../types";
 
 export const account: TextBag["account"] = {
+  badgeColor: {
+    "title": "Color de la insignia",
+    "body": "Elige el color de tu emblema de rango estándar. Solo estético: nunca cambia tus Rating Points, tu rango ni el emparejamiento. El arte ilustrado Premium mantiene los colores de su nivel.",
+    "presets": "Colores de nivel",
+    "custom": "Color personalizado",
+    "reset": "Usar el color de mi nivel",
+    "saved": "Color de la insignia guardado.",
+    "failed": "No se pudo guardar el color de la insignia. Inténtalo de nuevo.",
+    "previewAlt": "Vista previa de tu emblema de rango en el color elegido",
+    "swatch": "Color {tier}"
+  },
   statsConsole: {
     "metaTitle": "Estadísticas de jugador",
     "kicker": "ESTADÍSTICAS DE JUGADOR",

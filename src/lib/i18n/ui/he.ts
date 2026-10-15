@@ -143,6 +143,7 @@ export const UI_HE: Ui = {
       "עונשים",
       "שידור",
       "פרסים",
+      "Rating Points",
       "תיקונים"
     ]
   },

@@ -98,18 +98,18 @@ export const codex: TextBag["codex"] = {
   rankReads: {
     "rank-1-recruit": {
       stance:
-        "Recruit ist die Einstiegsstufe. Ein neues, mit Steam verknüpftes Konto wird mit 1.000 Wertungspunkten gespeichert, und 1.000 trägt weiterhin den Rang Recruit.",
+        "Recruit ist die Einstiegsplatte. Neue Konten starten nicht mehr hier, sondern mit 1.200 Rating Points in Vanguard. Recruit erreicht man nur durch Punktverlust.",
       detail:
         "Die Schwelle zu Operative liegt bei 1.100. Die Tabelle der Rangleiter lässt Recruit bei 0 beginnen, aber die Engine speichert keine Wertung unter 100. Zwischen 100 und 1.099 bleibt das Konto Recruit.",
     },
     "rank-2-operative": {
       stance:
-        "Operative ist der erste Rang, dessen Untergrenze über der Startzahl liegt. Ihn zu erreichen bedeutet, dass die gespeicherte Wertung die Einstiegsstufe verlassen hat.",
+        "Operative liegt knapp unter dem Startwert. Ein Konto, das unter 1.200 fällt, landet hier, bevor es Recruit erreicht.",
       detail: "Der Bereich ist einhundert Punkte breit. Er endet bei 1.199. Vanguard beginnt bei 1.200.",
     },
     "rank-3-vanguard": {
       stance:
-        "Vanguard ist die Vorderkante der frühen Rangleiter. Das Konto hat sowohl die Startwertung als auch die Untergrenze von Operative bereits hinter sich gelassen.",
+        "Vanguard ist der Startpunkt jedes neuen Kontos, mit 1.200 Rating Points. Der Aufstieg von hier ist der erste echte Schritt die Leiter hinauf.",
       detail: "Der Bereich reicht von 1.200 bis 1.299. Specialist beginnt bei 1.300.",
     },
     "rank-4-specialist": {
@@ -263,40 +263,40 @@ export const codex: TextBag["codex"] = {
     },
     "where-a-new-account-starts": {
       title: "Wo ein neues Konto beginnt",
-      lede: "Die Anmeldung über Steam legt das Konto mit 1.000 Wertungspunkten an, Rang 1, Recruit, ohne Siege und ohne Niederlagen.",
+      lede: "Die Steam-Anmeldung legt das Konto mit 1.200 Rating Points an, Rang 3, Vanguard, ohne Siege und ohne Niederlagen.",
       sections: [
         {
           heading: "Das Startabzeichen",
           paragraphs: [
-            "1.000 liegt im Bereich von Recruit. Operative beginnt erst bei 1.100, daher überspringt ein neues Konto die Einstiegsstufe nicht.",
-            "Eine erneute Anmeldung setzt eine bereits gespeicherte Wertung nicht zurück. Der Kodex führt keine Platzierungsspiele durch und erfindet keine Bilanz aus Siegen und Niederlagen.",
+            "1.200 ist die Untergrenze von Vanguard. Operative und Recruit liegen darunter, daher startet ein neues Konto in der Mitte der frühen Leiter und nicht ganz unten.",
+            "Eine erneute Anmeldung setzt eine bereits gespeicherte Wertung nicht zurück. Die ersten 10 aufgezeichneten Matches sind Platzierung: In dieser Zeit kann die Wertung nicht über Stufe 5 steigen. Der Codex erfindet keine Sieg-Niederlage-Bilanz.",
           ],
         },
         {
           heading: "Wo Sie sie sehen",
           paragraphs: [
             "Nach der Anmeldung über Steam können das Dashboard und die Rangtafel die gespeicherte Wertung anzeigen. Ist die Datenbank nicht erreichbar, sagt die Seite das, statt eine Zahl zu erfinden.",
-            "Der Startrang bleibt Recruit, bis ein eingetragenes Ergebnis die Wertung über 1.100 hebt. Von dieser Website wird derzeit kein solches Ergebnis eingetragen.",
+            "Der Startrang bleibt Vanguard, bis ein aufgezeichnetes Ergebnis die Wertung aus dem Bereich 1.200–1.299 bewegt. Diese Website schreibt heute kein solches Ergebnis.",
           ],
         },
       ],
     },
     "how-points-move": {
       title: "Wie ein eingetragenes Ergebnis die Wertungspunkte verändert",
-      lede: "Die Engine verwendet eine Schrittgröße, 32, und eine Skala, 400. Ein Ergebnis ist ein Sieg, eine Niederlage oder ein Unentschieden gegen den Durchschnitt der Gegenseite.",
+      lede: "Ein aufgezeichneter Sieg oder eine Niederlage wird an der Durchschnittswertung des anderen Teams gemessen. Gegen ein gleich starkes Team bringt ein Sieg +25 und eine Niederlage −25. Die vollständigen Regeln stehen auf der Ranks-Seite.",
       sections: [
         {
           heading: "Der Schritt",
           paragraphs: [
-            "Der erwartete Punktwert ist die Wahrscheinlichkeit, die die Engine vor dem Spiel festlegt, allein auf Grundlage der beiden Wertungen. Gegen eine gleich hohe Wertung beträgt diese Wahrscheinlichkeit die Hälfte, daher bringt ein Sieg 16 Wertungspunkte und eine Niederlage kostet 16.",
-            "Gegen eine höhere Wertung bringt ein Sieg mehr als 16, und eine Niederlage kostet weniger als 16. Gegen eine niedrigere Wertung bringt ein Sieg weniger als 16, und eine Niederlage kostet mehr als 16. Das Ergebnis wird auf eine ganze Zahl gerundet und dann zwischen 100 und 3.000 gehalten.",
-            "Bei einem Mannschaftsergebnis wird jeder Spieler einer Seite an den durchschnittlichen Wertungspunkten der Gegenseite gemessen. Die aktuelle Engine gibt jedem Spieler dieser Seite denselben Verlauf. Sie fügt keinen Bonus für eine persönliche Auszeichnung hinzu.",
+            "Der erwartete Score ist die Chance, die die Engine vor dem Match vergibt, allein aus den beiden Wertungen. Bei gleicher Wertung liegt sie bei der Hälfte, daher bringt ein Sieg 25 Rating Points und eine Niederlage kostet 25.",
+            "Gegen eine höhere Wertung bringt ein Sieg mehr als 25 und eine Niederlage kostet weniger. Gegen eine niedrigere Wertung ist es umgekehrt. Ein Sieg bringt immer 10 bis 40, eine Niederlage kostet immer 10 bis 40. In den Stufen 7–9 werden Siegpunkte mit 0,8 multipliziert, in Stufe 10 mit 0,7, daher dauert die Spitze der Leiter länger. Die Wertung bleibt zwischen 100 und 3.000.",
+            "Bei einem Teamergebnis wird jeder Spieler an der Durchschnittswertung des anderen Teams gemessen. Ein Match-MVP-Bonus von 3 RP ist geplant, sobald der Server Kills aufzeichnet; bis dahin gibt es keinen persönlichen Bonus.",
           ],
         },
         {
           heading: "Ein Unentschieden",
           paragraphs: [
-            "Ein Unentschieden ist ein halbes Ergebnis. Sind beide Wertungen gleich, beträgt der erwartete Punktwert bereits die Hälfte, daher verändert ein Unentschieden die Zahl um null.",
+            "Ein Unentschieden ändert nichts: Jeder Spieler behält seine Wertung. Wer ein Match abbricht oder verlässt, verliert 50 RP, unabhängig vom Ergebnis.",
             "Die Tabelle auf dieser Seite zeigt die Engine bei der Arbeit mit Beispieleingaben. Diese Zeilen sind keine gespeicherten Spiele und nicht Ihr Konto.",
           ],
         },

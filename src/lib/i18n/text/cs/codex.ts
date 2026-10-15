@@ -98,18 +98,18 @@ export const codex: TextBag["codex"] = {
   rankReads: {
     "rank-1-recruit": {
       stance:
-        "Recruit je vstupní stupeň. Nový účet propojený se Steam se ukládá s 1 000 body hodnocení a 1 000 stále odpovídá hodnosti Recruit.",
+        "Recruit je vstupní deska. Nové účty už tu nezačínají: startují s 1 200 Rating Points ve Vanguard. Do Recruit se dostaneš jen ztrátou bodů.",
       detail:
         "Brána do hodnosti Operative je 1 100. Tabulka žebříčku otevírá Recruit na 0, ale engine neuloží hodnocení nižší než 100. Mezi 100 a 1 099 zůstává účet v hodnosti Recruit.",
     },
     "rank-2-operative": {
       stance:
-        "Operative je první hodnost, jejíž dolní hranice leží nad výchozím číslem. Jejím dosažením uložené hodnocení opustilo vstupní stupeň.",
+        "Operative leží těsně pod počátečním číslem. Účet, který klesne pod 1 200, se sem dostane dřív, než dosáhne Recruit.",
       detail: "Pásmo je široké sto bodů. Končí na 1 199. Vanguard se otevírá na 1 200.",
     },
     "rank-3-vanguard": {
       stance:
-        "Vanguard je přední hrana raného žebříčku. Účet už je za výchozím hodnocením i za dolní hranicí hodnosti Operative.",
+        "Vanguard je místo, kde začíná každý nový účet, s 1 200 Rating Points. Postup odsud je první skutečný krok po žebříčku.",
       detail: "Pásmo sahá od 1 200 do 1 299. Specialist se otevírá na 1 300.",
     },
     "rank-4-specialist": {
@@ -263,40 +263,40 @@ export const codex: TextBag["codex"] = {
     },
     "where-a-new-account-starts": {
       title: "Kde nový účet začíná",
-      lede: "Přihlášení přes Steam vytvoří účet s 1 000 body hodnocení, hodností 1, Recruit, bez výher a bez proher.",
+      lede: "Přihlášení přes Steam vytvoří účet s 1 200 Rating Points, hodnost 3, Vanguard, bez výher a proher.",
       sections: [
         {
           heading: "Úvodní odznak",
           paragraphs: [
-            "1 000 leží v pásmu Recruit. Operative se otevírá až na 1 100, takže nový účet vstupní stupeň nepřeskočí.",
-            "Opakované přihlášení již uložené hodnocení nevynuluje. Kodex nespouští umísťovací zápasy a nevymýšlí bilanci výher a proher.",
+            "1 200 je spodní hranice Vanguard. Operative a Recruit leží pod ní, takže nový účet začíná uprostřed rané části žebříčku, ne úplně dole.",
+            "Opětovné přihlášení neresetuje již uložené hodnocení. Prvních 10 zaznamenaných zápasů je umísťovacích: během nich hodnocení nemůže stoupnout nad úroveň 5. Kodex si nevymýšlí bilanci výher a proher.",
           ],
         },
         {
           heading: "Jak ho zobrazit",
           paragraphs: [
             "Po přihlášení přes Steam může přehled a tabule hodností zobrazit uložené hodnocení. Pokud je databáze nedostupná, stránka to oznámí, místo aby si číslo vymyslela.",
-            "Výchozí hodnost zůstává Recruit, dokud zaznamenaný výsledek neposune hodnocení přes 1 100. Žádný takový výsledek se z tohoto webu dnes nezapisuje.",
+            "Počáteční hodnost zůstává Vanguard, dokud zaznamenaný výsledek neposune hodnocení mimo pásmo 1 200–1 299. Tento web dnes žádný takový výsledek nezapisuje.",
           ],
         },
       ],
     },
     "how-points-move": {
       title: "Jak zaznamenaný výsledek mění body hodnocení",
-      lede: "Engine používá jednu velikost kroku, 32, a jednu stupnici, 400. Výsledkem je výhra, prohra nebo remíza proti průměru druhé strany.",
+      lede: "Zaznamenaná výhra nebo prohra se měří vůči průměrnému hodnocení druhého týmu. Proti vyrovnanému týmu je výhra +25 a prohra −25. Úplná pravidla jsou na stránce Hodnosti.",
       sections: [
         {
           heading: "Krok",
           paragraphs: [
-            "Očekávané skóre je šance, kterou engine přiřadí před zápasem pouze na základě obou hodnocení. Proti stejnému hodnocení je tato šance jedna polovina, takže výhra má hodnotu 16 bodů hodnocení a prohra stojí 16.",
-            "Proti vyššímu hodnocení má výhra hodnotu vyšší než 16 a prohra stojí méně než 16. Proti nižšímu hodnocení má výhra hodnotu nižší než 16 a prohra stojí více než 16. Výsledek se zaokrouhlí na celé číslo a poté se udržuje mezi 100 a 3 000.",
-            "U týmového výsledku se každý hráč na straně poměřuje s průměrnými body hodnocení druhé strany. Současný engine dává každému hráči na dané straně stejnou cestu. Nepřidává bonus za osobní ocenění.",
+            "Očekávané skóre je šance, kterou engine přidělí před zápasem pouze podle obou hodnocení. Při stejném hodnocení je to polovina, takže výhra má hodnotu 25 Rating Points a prohra stojí 25.",
+            "Proti vyššímu hodnocení má výhra hodnotu víc než 25 a prohra stojí méně. Proti nižšímu je to naopak. Výhra vždy dává 10 až 40 a prohra vždy stojí 10 až 40. V úrovních 7–9 se zisky za výhru násobí 0,8 a v úrovni 10 0,7, takže vrchol žebříčku trvá déle. Hodnocení zůstává mezi 100 a 3 000.",
+            "U týmového výsledku se každý hráč měří vůči průměrnému hodnocení druhého týmu. Bonus MVP zápasu 3 RP je plánován na dobu, kdy server bude zaznamenávat zabití; do té doby se žádný osobní bonus neuplatňuje.",
           ],
         },
         {
           heading: "Remíza",
           paragraphs: [
-            "Remíza je poloviční výsledek. Pokud jsou obě hodnocení stejná, očekávané skóre je už jedna polovina, takže remíza posune číslo o nulu.",
+            "Remíza nic nemění: každý hráč si ponechá své hodnocení. Opuštění nebo odchod ze zápasu stojí 50 RP bez ohledu na výsledek.",
             "Tabulka na této stránce ukazuje engine pracující s ukázkovými vstupy. Tyto řádky nejsou uložené zápasy a nejsou vaším účtem.",
           ],
         },

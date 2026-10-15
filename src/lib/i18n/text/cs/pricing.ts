@@ -111,7 +111,7 @@ export const pricing: TextBag["pricing"] = {
       title: "Otevřený přístup",
       points: [
         "Přihlášení přes Steam OpenID. A.C.E. nikdy nežádá heslo ke službě Steam.",
-        "Uložené hodnocení začíná na 1 000. Žádný výsledek zápasu ho zatím nezměnil.",
+        "Uložené hodnocení začíná na 1 200. Žádný výsledek zápasu ho nezměnil.",
         "Všechny veřejné stránky: hra, turnaje, žebříček, týmy a pravidla.",
       ],
     },
@@ -267,7 +267,7 @@ export const pricing: TextBag["pricing"] = {
         "Platba: žádná. Volba tohoto tarifu nestrhává platbu z karty.",
         "E-mail: žádný. A.C.E. tento dopis neodesílá do schránky.",
         "Uložená úroveň: beze změny. Speciální odznaky a elitní pečeť se zobrazí, jen když má účet již uloženo Premium.",
-        "Hodnocení: není na prodej. Nový účet stále začíná na 1 000.",
+        "Hodnocení: není na prodej. Nový účet stále začíná na 1 200.",
       ],
     },
     today: {

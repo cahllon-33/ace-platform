@@ -88,15 +88,15 @@ export const codex: TextBag["codex"] = {
   },
   "rankReads": {
     "rank-1-recruit": {
-      "stance": "Recruit on aloituslaatta. Uusi Steamiin linkitetty tili tallennetaan 1 000 luokituspisteeseen, ja 1 000 kantaa yhä Recruit-arvoa.",
+      "stance": "Recruit on lähtölaatta. Uudet tilit eivät enää aloita täältä: ne aloittavat 1 200 Rating Pointsilla Vanguardissa. Recruitiin päätyy vain menettämällä pisteitä.",
       "detail": "Operative-portti on 1 100. Tikastaulukko avaa Recruitin nollasta, mutta moottori ei tallenna alle 100:n luokitusta. Välillä 100–1 099 tili pysyy Recruitina."
     },
     "rank-2-operative": {
-      "stance": "Operative on ensimmäinen arvo, jonka alaraja on aloitusluvun yläpuolella. Sen saavuttaminen tarkoittaa, että tallennettu luokitus on jättänyt aloituslaatan.",
+      "stance": "Operative on heti aloituslukeman alapuolella. Alle 1 200:n putoava tili päätyy tänne ennen Recruitia.",
       "detail": "Alue on sata pistettä leveä. Se päättyy 1 199:ään. Vanguard avautuu 1 200:ssa."
     },
     "rank-3-vanguard": {
-      "stance": "Vanguard on alkutikkaiden etureuna. Tili on jo ohittanut sekä aloitusluokituksen että Operativen alarajan.",
+      "stance": "Vanguard on jokaisen uuden tilin aloituspaikka, 1 200 Rating Pointsilla. Nousu täältä on ensimmäinen todellinen askel tikkailla.",
       "detail": "Alue kulkee 1 200:sta 1 299:ään. Specialist avautuu 1 300:ssa."
     },
     "rank-4-specialist": {
@@ -240,40 +240,40 @@ export const codex: TextBag["codex"] = {
     },
     "where-a-new-account-starts": {
       "title": "Mistä uusi tili alkaa",
-      "lede": "Steam-kirjautuminen luo tilin 1 000 luokituspisteeseen, arvo 1, Recruit, ilman voittoja ja tappioita.",
+      "lede": "Steam-kirjautuminen luo tilin 1 200 Rating Pointsilla, arvo 3, Vanguard, ilman voittoja ja tappioita.",
       "sections": [
         {
           "heading": "Aloitusmerkki",
           "paragraphs": [
-            "1 000 on Recruitin sisällä. Operative avautuu vasta 1 100:ssa, joten uusi tili ei ohita aloituslaattaa.",
-            "Uudelleenkirjautuminen ei nollaa jo tallennettua luokitusta. Kodeksi ei pelaa sijoitusotteluita eikä keksi voitto–tappio-historiaa."
+            "1 200 on Vanguardin alaraja. Operative ja Recruit ovat sen alapuolella, joten uusi tili aloittaa tikkaiden alkuosan keskeltä eikä pohjalta.",
+            "Uusi kirjautuminen ei nollaa jo tallennettua luokitusta. Ensimmäiset 10 tallennettua ottelua ovat sijoitusotteluita: niiden aikana luokitus ei voi nousta tason 5 yläpuolelle. Codex ei keksi voitto–tappio-tilastoa."
           ]
         },
         {
           "heading": "Miten sen näkee",
           "paragraphs": [
             "Steam-kirjautumisen jälkeen kojelauta ja arvotaulu voivat näyttää tallennetun luokituksen. Jos tietokantaan ei saada yhteyttä, sivu kertoo sen keksimättä lukua.",
-            "Aloitusarvo pysyy Recruitina, kunnes kirjattu tulos siirtää luokituksen yli 1 100:n. Tältä sivustolta ei tänään kirjoiteta sellaista tulosta."
+            "Aloitusarvo pysyy Vanguardina, kunnes tallennettu tulos siirtää luokituksen pois välistä 1 200–1 299. Tämä sivusto ei tänään kirjoita sellaista tulosta."
           ]
         }
       ]
     },
     "how-points-move": {
       "title": "Miten kirjattu tulos siirtää luokituspisteitä",
-      "lede": "Moottori käyttää yhtä askelkokoa, 32, ja yhtä asteikkoa, 400. Tulos on voitto, tappio tai tasapeli vastapuolen keskiarvoa vastaan.",
+      "lede": "Tallennettu voitto tai tappio mitataan toisen joukkueen keskimääräistä luokitusta vasten. Tasaväkistä joukkuetta vastaan voitto on +25 ja tappio −25. Täydelliset säännöt ovat Arvot-sivulla.",
       "sections": [
         {
           "heading": "Askel",
           "paragraphs": [
-            "Odotettu tulos on todennäköisyys, jonka moottori antaa ennen ottelua pelkkien kahden luokituksen perusteella. Tasaväkistä luokitusta vastaan se on puolet, joten voitto tuo 16 luokituspistettä ja tappio vie 16.",
-            "Korkeampaa luokitusta vastaan voitto tuo yli 16 ja tappio vie alle 16. Matalampaa luokitusta vastaan voitto tuo alle 16 ja tappio vie yli 16. Tulos pyöristetään kokonaisluvuksi ja pidetään välillä 100–3 000.",
-            "Joukkuetuloksessa jokaista puolen pelaajaa mitataan vastapuolen keskimääräisiä luokituspisteitä vastaan. Nykyinen moottori antaa jokaiselle puolen pelaajalle saman polun. Se ei lisää bonusta henkilökohtaisesta palkinnosta."
+            "Odotettu tulos on todennäköisyys, jonka moottori antaa ennen ottelua pelkästään kahden luokituksen perusteella. Tasaväkisillä luokituksilla se on puolet, joten voitto on 25 Rating Pointsin arvoinen ja tappio maksaa 25.",
+            "Korkeampaa luokitusta vastaan voitto on yli 25:n arvoinen ja tappio maksaa vähemmän. Matalampaa vastaan päinvastoin. Voitto tuo aina 10–40 ja tappio maksaa aina 10–40. Tasoilla 7–9 voittopisteet kerrotaan 0,8:lla ja tasolla 10 0,7:llä, joten tikkaiden huippu vie kauemmin. Luokitus pysyy välillä 100–3 000.",
+            "Joukkuetuloksessa jokainen pelaaja mitataan toisen joukkueen keskimääräistä luokitusta vasten. 3 RP:n ottelun MVP-bonus on suunniteltu siihen hetkeen, kun palvelin tallentaa tappoja; siihen asti henkilökohtaista bonusta ei sovelleta."
           ]
         },
         {
           "heading": "Tasapeli",
           "paragraphs": [
-            "Tasapeli on puolikas tulos. Jos luokitukset ovat tasan, odotettu tulos on jo puolet, joten tasapeli siirtää lukua nollalla.",
+            "Tasapeli ei muuta mitään: jokainen pelaaja säilyttää luokituksensa. Ottelun hylkääminen tai siitä poistuminen maksaa 50 RP tuloksesta riippumatta.",
             "Tämän sivun taulukko on moottori esimerkkisyötteillä. Rivit eivät ole tallennettuja otteluita eivätkä ne ole tilisi."
           ]
         }

@@ -46,7 +46,7 @@ export const teams: TextBag["teams"] = {
       "roster": "Kursi 1 adalah kapten yang masuk. Kursi 2 sampai 5 harus sudah memiliki akun A.C.E. Undangan tetap tertunda sampai setiap pemain menerima.",
       "badge": "Lencana kursi menjadi pemeriksaan A.C.E Shield langsung setelah anti-cheat diluncurkan.",
       "support": "Buka Dukungan atau Kontak di situs ini. Perintah dukungan tidak membuka tiket, dan teks yang diketik di Kontak tidak dikirim.",
-      "rating": "Rating baru dimulai dari 1.000. Halaman ini tidak menjual rating, membuka antrean, menghubungkan server CS2, atau mengirim hadiah."
+      "rating": "Rating baru dimulai dari 1.200. Halaman ini tidak menjual rating, membuka antrean, menghubungkan server CS2, atau memberikan hadiah."
     }
   },
   "squad": {

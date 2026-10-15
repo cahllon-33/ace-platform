@@ -41,7 +41,7 @@ export const features: TextBag["features"] = {
     },
     "calibration": {
       "title": "10段階のスキル・キャリブレーション",
-      "intro": "競技キャリブレーションは、文書化された Elo 方式の計算式(バージョン {version}、K係数 {kFactor}、スケール {scale})を使用します。新規アカウントはランク1(Recruit)、FREE サブスクリプション、ACTIVE 状態、競技レーティング {startingRating} から始まります。ロビーのクリスタル名は表示用の別名です。有料コスメティックでレーティング、弱い対戦相手、128ティックサーバー、キュー優先権を買うことはできません。128ティックの有料製品も販売していません。",
+      "intro": "Competitive Calibration は公開済みの A.C.E Rating Points 規定（バージョン {version}：ステップ {kFactor}、スケール {scale}）を使用します。新規アカウントはランク3（Vanguard）、FREE サブスクリプション、ACTIVE ステータス、競技レーティング {startingRating} から始まります。ロビーのクリスタル名は表示上の別名です。有料コスメでレーティング、弱い相手、128tickサーバー、キュー優先権を買うことはできません。販売中の稼働している128tick製品はありません。",
       "table": {
         "level": "レベル",
         "engineName": "エンジン名",

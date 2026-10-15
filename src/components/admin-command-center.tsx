@@ -1,5 +1,6 @@
 "use client";
 
+import { RP_RULES } from "@/lib/rp-rules";
 import { useEffect, useId, useState, useSyncExternalStore } from "react";
 import { createPortal } from "react-dom";
 import { useRouter } from "next/navigation";
@@ -127,26 +128,20 @@ function deskAnswer(
   return t("assistMenu");
 }
 
-function initialsFor(name: string) {
-  const parts = name.trim().split(/\s+/).filter(Boolean);
-  const raw = `${parts[0]?.[0] ?? ""}${parts[1]?.[0] ?? parts[0]?.[1] ?? ""}`;
-  return (raw || "AC").toUpperCase().slice(0, 2);
-}
-
 function PlayerDrawer({
   player,
   dir,
   lang,
   staging,
   onClose,
-  onChange,
+  onBan,
 }: {
   player: AdminPlayerRow;
   dir: "ltr" | "rtl";
   lang: string;
   staging: boolean;
   onClose: () => void;
-  onChange: (next: Partial<AdminPlayerRow>) => void;
+  onBan: () => void;
 }) {
   const { t } = useAdminI18n();
   const titleId = useId();
@@ -167,59 +162,19 @@ function PlayerDrawer({
         <h2 id={titleId} className="ace-admin-dialog-title">
           {t("dossierTitle")}
         </h2>
-        <label className="ace-admin-label" htmlFor="ace-edit-user">
-          {t("drawerUser")}
-        </label>
-        <input
-          id="ace-edit-user"
-          className="ace-admin-input"
-          value={player.username}
-          onChange={(event) => onChange({ username: event.target.value })}
-          suppressHydrationWarning
-        />
-        <label className="ace-admin-label" htmlFor="ace-edit-tier">
-          {t("drawerTier")}
-        </label>
-        <select
-          id="ace-edit-tier"
-          className="ace-admin-input"
-          value={player.tier}
-          onChange={(event) => onChange({ tier: event.target.value as AdminTier })}
-          suppressHydrationWarning
-        >
-          <option value="Free">{t("tierFree")}</option>
-          <option value="Plus">{t("tierPlus")}</option>
-          <option value="Premium">{t("tierPremium")}</option>
-        </select>
-        <label className="ace-admin-label" htmlFor="ace-edit-rp">
-          {t("drawerRp")}
-        </label>
-        <input
-          id="ace-edit-rp"
-          className="ace-admin-input"
-          inputMode="numeric"
-          value={String(player.rating)}
-          onChange={(event) => {
-            const rating = Number(event.target.value.replace(/[^\d]/g, ""));
-            onChange({ rating: Number.isFinite(rating) ? rating : 0 });
-          }}
-          suppressHydrationWarning
-        />
-        <label className="ace-admin-label" htmlFor="ace-edit-rank">
-          {t("drawerRank")}
-        </label>
-        <input
-          id="ace-edit-rank"
-          className="ace-admin-input"
-          inputMode="numeric"
-          value={String(player.rank)}
-          onChange={(event) => {
-            const rank = Number(event.target.value.replace(/[^\d]/g, ""));
-            const next = Number.isFinite(rank) ? Math.min(10, Math.max(1, rank || 1)) : 1;
-            onChange({ rank: next });
-          }}
-          suppressHydrationWarning
-        />
+        <div className="acx-dossier-head">
+          <span className="acx-avatar acx-avatar-lg" aria-hidden="true">{player.initials}</span>
+          <div>
+            <p className="acx-dossier-name">{player.username}</p>
+            <p className="acx-muted">{player.email}</p>
+          </div>
+        </div>
+        <dl className="acx-dossier-stats">
+          <div><dt>{t("drawerRank")}</dt><dd>{player.rank}</dd></div>
+          <div><dt>{t("drawerRp")}</dt><dd>{player.rating.toLocaleString("en-US")}</dd></div>
+          <div><dt>{t("drawerTier")}</dt><dd>{t(TIER_KEY[player.tier])}</dd></div>
+        </dl>
+        <p className="acx-note">{t("dossierReadOnly")}</p>
         <dl className="ace-admin-dossier">
           <div>
             <dt>{t("dossierHash")}</dt>
@@ -238,22 +193,13 @@ function PlayerDrawer({
             <dd>{t(SECURITY_KEY[player.security])}</dd>
           </div>
         </dl>
-        <p className="ace-admin-kicker">{t("dossierLatency")}</p>
-        <ul className="ace-admin-latency">
-          <li>{t("latencyLine", { region: player.region, ms: player.latencyMs })}</li>
-          <li>{t("latencyIdle")}</li>
-        </ul>
-        <p className="ace-admin-info-chip ace-admin-info-chip-inline">
-          <strong>{t("dossierSample")}</strong>
-          <span>{t("dossierBanNote")}</span>
-        </p>
         <button
           type="button"
           className="ace-admin-gold"
-          onClick={() => onChange({ security: "Banned" })}
+          onClick={onBan}
           suppressHydrationWarning
         >
-          {t("dossierBan")}
+          {player.security === "Banned" ? t("unbanAction") : t("banAction")}
         </button>
         <p className="ace-admin-info-chip ace-admin-info-chip-inline">
           <strong>{t("chipDb")}</strong>
@@ -372,7 +318,7 @@ export function AdminCommandCenter({
         patchPlayer(player, { rank: 10, rating: 3000 });
         setRankPulseId(player.id);
       } else {
-        patchPlayer(player, { rank: 1, rating: 1000, tier: "Free" });
+        patchPlayer(player, { rank: RP_RULES.startingTier, rating: RP_RULES.startingRating, tier: "Free" });
         setRankPulseId((current) => (current === player.id ? null : current));
       }
       router.refresh();
@@ -397,204 +343,250 @@ export function AdminCommandCenter({
 
   const editor = players.find((player) => player.id === editorId) ?? null;
 
-  function editPlayer(next: Partial<AdminPlayerRow>) {
-    if (!editor) return;
-    setPlayers((current) =>
-      current.map((row) => {
-        if (row.id !== editor.id) return row;
-        const username = next.username ?? row.username;
-        return {
-          ...row,
-          ...next,
-          username,
-          initials: next.username ? initialsFor(username) : row.initials,
-        };
-      }),
-    );
-  }
+  const [query, setQuery] = useState("");
+  const needle = query.trim().toLowerCase();
+  const shown = needle
+    ? players.filter((player) =>
+        [player.username, player.email, player.steamId].some((value) => value.toLowerCase().includes(needle)),
+      )
+    : players;
+  const dbState = stats.staging ? "preview" : stats.unavailable ? "down" : "live";
+  const nav: Array<[string, AdminMessageKey, number | null]> = [
+    ["acx-overview", "navOverview", null],
+    ["acx-tv", "navTv", tv.feeds.length],
+    ["acx-players", "navPlayers", players.length],
+    ["acx-matches", "navMatches", matches.length],
+    ["acx-reports", "navReports", reports.length],
+    ["acx-tournaments", "navTournaments", tournaments.length],
+  ];
 
   return (
-    <div className="ace-admin-shell" dir={dir} lang={lang} suppressHydrationWarning>
-      <header className="ace-admin-hero">
-        <p className="ace-admin-kicker">{t("kicker")}</p>
-        <h1 className="ace-admin-title">{t("title")}</h1>
-        <p className="ace-admin-status">
-          <span className="ace-admin-pulse" aria-hidden="true" />
-          {t("status")}
-        </p>
-        <p className="ace-admin-role-note">{t("roleNote")}</p>
-        <div className="ace-admin-matrix">
-          <dl className="ace-admin-stats">
-            <div className="ace-admin-stat">
-              <dt>{t("statRevenue")}</dt>
-              <dd>
-                {formatPipelineUsd(stats.grossCents)}
-                <span className="ace-admin-stat-note">{t("moneyNote")}</span>
-              </dd>
-            </div>
-            <div className="ace-admin-stat">
-              <dt>{t("statPlayers")}</dt>
-              <dd>
-                {stats.staging
-                  ? t("enrollmentStaging")
-                  : stats.unavailable
-                    ? t("statUnavailable")
-                    : t("enrollmentValue", { count: stats.enrollment })}
-              </dd>
-            </div>
-            <div className="ace-admin-stat">
-              <dt>{t("statOnline")}</dt>
-              <dd>
-                {stats.unavailable || stats.staging || stats.presence !== "ok"
+    <div className="ace-admin-shell acx" dir={dir} lang={lang} suppressHydrationWarning>
+      <aside className="acx-side" aria-label={t("navLabel")}>
+        <div className="acx-brand">
+          <span className="acx-brand-mark" aria-hidden="true">A</span>
+          <span>
+            <strong>A.C.E.</strong>
+            <small>{t("navBrand")}</small>
+          </span>
+        </div>
+        <nav className="acx-nav">
+          {nav.map(([id, key, count]) => (
+            <a key={id} href={`#${id}`}>
+              <span>{t(key)}</span>
+              {count !== null ? <span className="acx-count">{count}</span> : null}
+            </a>
+          ))}
+        </nav>
+        <div className="acx-env">
+          <p className="acx-label">{t("envTitle")}</p>
+          <p className={`acx-env-state is-${dbState}`}>
+            <span className="acx-dot" aria-hidden="true" />
+            {t(dbState === "preview" ? "envPreview" : dbState === "down" ? "envDown" : "envLive")}
+          </p>
+          <p className="acx-muted">{t("roleNote")}</p>
+        </div>
+      </aside>
+
+      <div className="acx-main">
+        <header className="acx-top" id="acx-overview">
+          <div>
+            <p className="ace-admin-kicker">{t("kicker")}</p>
+            <h1 className="acx-title">{t("title")}</h1>
+          </div>
+          <p className="acx-status">
+            <span className="ace-admin-pulse" aria-hidden="true" />
+            {t("status")}
+          </p>
+        </header>
+
+        <dl className="acx-kpis">
+          <div className="acx-kpi">
+            <dt>{t("statRevenue")}</dt>
+            <dd>{formatPipelineUsd(stats.grossCents)}</dd>
+            <p>{t("moneyNote")}</p>
+          </div>
+          <div className="acx-kpi">
+            <dt>{t("statPlayers")}</dt>
+            <dd>
+              {stats.staging
+                ? t("enrollmentStaging")
+                : stats.unavailable
                   ? t("statUnavailable")
-                  : t("onlineValue", { count: stats.online })}
-              </dd>
-            </div>
-            <div className="ace-admin-stat">
-              <dt>{t("statServers")}</dt>
-              <dd>{t("serversValue", { count: stats.servers })}</dd>
-            </div>
-          </dl>
-          <section className="ace-admin-connected" aria-label={t("connectedTitle")}>
-            <h2>{t("connectedTitle")}</h2>
-            <p>{t("connectedLede")}</p>
+                  : t("enrollmentValue", { count: stats.enrollment })}
+            </dd>
+          </div>
+          <div className="acx-kpi">
+            <dt>{t("statOnline")}</dt>
+            <dd>
+              {stats.unavailable || stats.staging || stats.presence !== "ok"
+                ? t("statUnavailable")
+                : t("onlineValue", { count: stats.online })}
+            </dd>
+          </div>
+          <div className="acx-kpi">
+            <dt>{t("statServers")}</dt>
+            <dd>{t("serversValue", { count: stats.servers })}</dd>
+          </div>
+        </dl>
+
+        <div className="acx-grid-3">
+          <section className="acx-card" aria-labelledby="acx-connected">
+            <h2 id="acx-connected" className="acx-card-title">{t("connectedTitle")}</h2>
+            <p className="acx-muted">{t("connectedLede")}</p>
             {stats.presence === "migration" ? (
-              <p>{t("connectedMigration")}</p>
+              <p className="acx-empty">{t("connectedMigration")}</p>
             ) : stats.unavailable || stats.staging || stats.presence === "down" ? (
-              <p>{t("connectedUnavailable")}</p>
+              <p className="acx-empty">{t("connectedUnavailable")}</p>
             ) : stats.connected.length === 0 ? (
-              <p>{t("connectedEmpty")}</p>
+              <p className="acx-empty">{t("connectedEmpty")}</p>
             ) : (
-              <ul>
+              <ul className="acx-list">
                 {stats.connected.map((player) => (
                   <li key={player.id}>
                     <strong>{player.displayName}</strong>
-                    <span>{player.steamId}</span>
+                    <span className="ace-admin-mono">{player.steamId}</span>
                   </li>
                 ))}
               </ul>
             )}
           </section>
+
+          <section className="acx-card" aria-labelledby="acx-system">
+            <h2 id="acx-system" className="acx-card-title">{t("systemTitle")}</h2>
+            <ul className="acx-system">
+              {INFO_CHIPS.map(([title, body]) => (
+                <li key={title}>
+                  <span className="acx-dot is-off" aria-hidden="true" />
+                  <span>
+                    <strong>{t(title)}</strong>
+                    <small>{t(stats.staging && body === "chipDbBody" ? "chipDbStaging" : body)}</small>
+                  </span>
+                </li>
+              ))}
+            </ul>
+          </section>
+
           <form
-            className="ace-admin-copilot"
+            className="acx-card acx-assist"
             onSubmit={(event) => {
               event.preventDefault();
-              const query = copilotQuery.trim();
-              if (!query) return;
-              setCopilotReply(deskAnswer(query, stats, matches.length, reports.length, t));
+              const q = copilotQuery.trim();
+              if (!q) return;
+              setCopilotReply(deskAnswer(q, stats, matches.length, reports.length, t));
               setCopilotQuery("");
             }}
           >
-            <p className="ace-admin-kicker">{t("copilotSim")}</p>
-            <h2 className="ace-admin-section-title">{t("copilotTitle")}</h2>
+            <div className="acx-card-head">
+              <h2 className="acx-card-title">{t("copilotTitle")}</h2>
+              <span className="acx-tag">{t("copilotSim")}</span>
+            </div>
             <label className="ace-admin-label" htmlFor="ace-copilot">
               {t("copilotPlaceholder")}
             </label>
-            <input
-              id="ace-copilot"
-              className="ace-admin-input"
-              value={copilotQuery}
-              onChange={(event) => setCopilotQuery(event.target.value)}
-              autoComplete="off"
-              suppressHydrationWarning
-            />
-            <button type="submit" className="ace-admin-gold" suppressHydrationWarning>
-              {t("copilotSubmit")}
-            </button>
+            <div className="acx-inline">
+              <input
+                id="ace-copilot"
+                className="ace-admin-input"
+                value={copilotQuery}
+                onChange={(event) => setCopilotQuery(event.target.value)}
+                autoComplete="off"
+                suppressHydrationWarning
+              />
+              <button type="submit" className="ace-admin-gold" suppressHydrationWarning>
+                {t("copilotSubmit")}
+              </button>
+            </div>
             {copilotReply ? <p className="ace-admin-copilot-reply">{copilotReply}</p> : null}
-            <ul className="ace-admin-ticker" aria-live="polite">
+            <ul className="acx-ticker" aria-live="polite">
               {(["copilotLine1", "copilotLine2", "copilotLine3"] as const).map((key) => (
                 <li key={key}>{t(key)}</li>
               ))}
             </ul>
           </form>
         </div>
-        <ul className="ace-admin-chips">
-          {INFO_CHIPS.map(([title, body]) => (
-            <li key={title} className="ace-admin-info-chip">
-              <strong>{t(title)}</strong>
-              <span>{t(stats.staging && body === "chipDbBody" ? "chipDbStaging" : body)}</span>
-            </li>
-          ))}
-        </ul>
-      </header>
 
-      <AdminTvWall feeds={tv.feeds} dbAvailable={tv.dbAvailable} t={t} />
+        <div id="acx-tv" className="acx-anchor">
+          <AdminTvWall feeds={tv.feeds} dbAvailable={tv.dbAvailable} t={t} />
+        </div>
 
-      <section className="ace-admin-section" aria-labelledby="admin-registry-title">
-        <h2 id="admin-registry-title" className="ace-admin-section-title">
-          {t("registryTitle")}
-        </h2>
-        {flash ? (
-          <p className="ace-admin-flash" role="status">
-            {flash}
-          </p>
-        ) : null}
-        <div className="ace-admin-table-wrap">
-          <table className="ace-admin-table" suppressHydrationWarning>
-            <thead>
-              <tr>
-                <th>{t("colAvatar")}</th>
-                <th>{t("colUsername")}</th>
-                <th>{t("colEmail")}</th>
-                <th>{t("colSteam")}</th>
-                <th>{t("colRank")}</th>
-                <th>{t("colRating")}</th>
-                <th>{t("colTier")}</th>
-                <th>{t("colAction")}</th>
-              </tr>
-            </thead>
-            <tbody>
-              {players.length === 0 ? (
+        <section id="acx-players" className="acx-card acx-anchor" aria-labelledby="admin-registry-title">
+          <div className="acx-card-head">
+            <div>
+              <h2 id="admin-registry-title" className="acx-section-title">{t("registryTitle")}</h2>
+              <p className="acx-muted">{t("playersCount", { shown: shown.length, total: players.length })}</p>
+            </div>
+            <label className="acx-search">
+              <span className="sr-only">{t("searchPlayers")}</span>
+              <input
+                type="search"
+                className="ace-admin-input"
+                placeholder={t("searchPlayers")}
+                value={query}
+                onChange={(event) => setQuery(event.target.value)}
+                suppressHydrationWarning
+              />
+            </label>
+          </div>
+          {flash ? (
+            <p className="ace-admin-flash" role="status">
+              {flash}
+            </p>
+          ) : null}
+          <div className="acx-table-wrap">
+            <table className="acx-table" suppressHydrationWarning>
+              <thead>
                 <tr>
-                  <td colSpan={8}>{stats.unavailable ? t("statUnavailable") : t("emptyPlayers")}</td>
+                  <th scope="col">{t("colPlayer")}</th>
+                  <th scope="col">{t("colSteam")}</th>
+                  <th scope="col" className="is-num">{t("colRank")}</th>
+                  <th scope="col" className="is-num">{t("colRating")}</th>
+                  <th scope="col">{t("colTier")}</th>
+                  <th scope="col">{t("colStatus")}</th>
+                  <th scope="col">{t("colAction")}</th>
                 </tr>
-              ) : null}
-              {players.map((player) => (
-                <tr
-                  key={player.id}
-                  className="ace-admin-row"
-                  onClick={() => setEditorId(player.id)}
-                >
-                  <td>
-                    <button
-                      type="button"
-                      className="ace-admin-avatar ace-admin-select"
-                      aria-label={t("openDossier")}
-                      suppressHydrationWarning
-                      onClick={(event) => {
-                        event.stopPropagation();
-                        setEditorId(player.id);
-                      }}
-                    >
-                      {player.initials}
-                    </button>
-                  </td>
-                  <td>
-                    {player.username}
-                    {player.steamId === "—" ? ` · ${t("decoupledNote")}` : ""}
-                  </td>
-                  <td>{player.email}</td>
-                  <td className="ace-admin-mono">{player.steamId}</td>
-                  <td className={player.id === rankPulseId ? "ace-admin-rank-hot" : undefined}>
-                    <span className="ace-admin-chip">{player.rank}</span>
-                  </td>
-                  <td className={player.id === rankPulseId ? "ace-admin-rating-hot" : undefined}>
-                    {player.rating.toLocaleString("en-US")}
-                  </td>
-                  <td>
-                    <span className={player.tier === "Premium" ? "ace-admin-tier-premium" : undefined}>
-                      {t(TIER_KEY[player.tier])}
-                    </span>
-                  </td>
-                  <td>
-                    <div className="ace-admin-actions">
+              </thead>
+              <tbody>
+                {shown.length === 0 ? (
+                  <tr>
+                    <td colSpan={7} className="acx-empty">
+                      {stats.unavailable ? t("statUnavailable") : t("emptyPlayers")}
+                    </td>
+                  </tr>
+                ) : null}
+                {shown.map((player) => (
+                  <tr key={player.id}>
+                    <td>
+                      <button
+                        type="button"
+                        className="acx-player"
+                        aria-label={`${t("openDossier")}: ${player.username}`}
+                        suppressHydrationWarning
+                        onClick={() => setEditorId(player.id)}
+                      >
+                        <span className="acx-avatar" aria-hidden="true">{player.initials}</span>
+                        <span>
+                          <strong>{player.username}</strong>
+                          <small>
+                            {player.email}
+                            {player.steamId === "—" ? ` · ${t("decoupledNote")}` : ""}
+                          </small>
+                        </span>
+                      </button>
+                    </td>
+                    <td className="ace-admin-mono">{player.steamId}</td>
+                    <td className={`is-num${player.id === rankPulseId ? " ace-admin-rank-hot" : ""}`}>
+                      <span className="acx-rank">{player.rank}</span>
+                    </td>
+                    <td className={`is-num${player.id === rankPulseId ? " ace-admin-rating-hot" : ""}`}>
+                      {player.rating.toLocaleString("en-US")}
+                    </td>
+                    <td>
                       <select
-                        className="ace-admin-tier-select"
+                        className="acx-select"
                         aria-label={t("tierSelect")}
                         value={player.tier}
                         suppressHydrationWarning
-                        onClick={(event) => event.stopPropagation()}
                         onChange={(event) => runTier(player, TIER_FROM_DB[event.target.value.toUpperCase()] ?? player.tier)}
                       >
                         {(["Free", "Plus", "Premium"] as const).map((tier) => (
@@ -603,155 +595,126 @@ export function AdminCommandCenter({
                           </option>
                         ))}
                       </select>
-                      <button
-                        type="button"
-                        suppressHydrationWarning
-                        className="ace-admin-ghost"
-                        onClick={(event) => {
-                          event.stopPropagation();
-                          runInventory(player, "disconnect");
-                        }}
-                      >
-                        {t("disconnect")}
-                      </button>
-                      <button
-                        type="button"
-                        suppressHydrationWarning
-                        className="ace-admin-ghost"
-                        onClick={(event) => {
-                          event.stopPropagation();
-                          runInventory(player, "upgrade");
-                        }}
-                      >
-                        {t("upgrade")}
-                      </button>
-                      <button
-                        type="button"
-                        suppressHydrationWarning
-                        className="ace-admin-ghost"
-                        onClick={(event) => {
-                          event.stopPropagation();
-                          runInventory(player, "rank");
-                        }}
-                      >
-                        {t("setRank")}
-                      </button>
-                      <button
-                        type="button"
-                        suppressHydrationWarning
-                        className="ace-admin-ghost"
-                        onClick={(event) => {
-                          event.stopPropagation();
-                          runInventory(player, "reset");
-                        }}
-                      >
-                        {t("reset")}
-                      </button>
-                      <button
-                        type="button"
-                        suppressHydrationWarning
-                        className="ace-admin-ghost"
-                        onClick={(event) => {
-                          event.stopPropagation();
-                          runBan(player, player.security !== "Banned");
-                        }}
-                      >
-                        {player.security === "Banned" ? t("unbanAction") : t("banAction")}
-                      </button>
-                    </div>
-                  </td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
+                    </td>
+                    <td>
+                      <span className={`acx-badge is-${player.security.toLowerCase()}`}>{t(SECURITY_KEY[player.security])}</span>
+                    </td>
+                    <td>
+                      <details className="acx-menu">
+                        <summary className="acx-btn">{t("actionsMenu")}</summary>
+                        <div className="acx-menu-list" role="group" aria-label={t("colAction")}>
+                        {(["upgrade", "rank", "reset", "disconnect"] as const).map((kind) => (
+                          <button
+                            key={kind}
+                            type="button"
+                            suppressHydrationWarning
+                            className="acx-btn"
+                            onClick={() => runInventory(player, kind)}
+                          >
+                            {t(kind === "upgrade" ? "upgrade" : kind === "rank" ? "setRank" : kind === "reset" ? "reset" : "disconnect")}
+                          </button>
+                        ))}
+                        <button
+                          type="button"
+                          suppressHydrationWarning
+                          className="acx-btn is-danger"
+                          onClick={() => runBan(player, player.security !== "Banned")}
+                        >
+                          {player.security === "Banned" ? t("unbanAction") : t("banAction")}
+                        </button>
+                        </div>
+                      </details>
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <div className="acx-grid-3">
+          <section id="acx-matches" className="acx-card acx-anchor" aria-labelledby="acx-matches-title">
+            <h2 id="acx-matches-title" className="acx-card-title">{t("deskMatchesTitle")}</h2>
+            <p className="acx-muted">{t("deskMatchesNote")}</p>
+            {matches.length === 0 ? (
+              <p className="acx-empty">{t("deskMatchesEmpty")}</p>
+            ) : (
+              <ul className="acx-list">
+                {matches.map((match) => (
+                  <li key={match.id}>
+                    <strong>{match.mapName}</strong>
+                    <span>
+                      {match.format} · {match.score} · {match.state}
+                    </span>
+                  </li>
+                ))}
+              </ul>
+            )}
+          </section>
+          <section id="acx-reports" className="acx-card acx-anchor" aria-labelledby="acx-reports-title">
+            <h2 id="acx-reports-title" className="acx-card-title">{t("deskReportsTitle")}</h2>
+            <p className="acx-muted">{t("deskReportsNote")}</p>
+            {reports.length === 0 ? (
+              <p className="acx-empty">{t("deskReportsEmpty")}</p>
+            ) : (
+              <ul className="ace-admin-tickets">
+                {reports.map((report) => (
+                  <li key={report.id}>
+                    <button
+                      type="button"
+                      className={`ace-admin-ticket${report.id === reportId ? " is-active" : ""}`}
+                      onClick={() => setReportId(report.id)}
+                    >
+                      <p className="ace-admin-ticket-id">{report.createdAt}</p>
+                      <p>{t("reporter", { name: report.reporter })}</p>
+                      <p>{t("suspect", { name: report.suspect })}</p>
+                      <p>{report.reason}</p>
+                    </button>
+                  </li>
+                ))}
+              </ul>
+            )}
+            {selectedReport ? (
+              <dl className="ace-admin-report-detail">
+                <div>
+                  <dt>{t("deskReportMap")}</dt>
+                  <dd>{selectedReport.mapName}</dd>
+                </div>
+                <div>
+                  <dt>{t("deskReportScore")}</dt>
+                  <dd>{selectedReport.score}</dd>
+                </div>
+                <div>
+                  <dt>{t("deskReportState")}</dt>
+                  <dd>{selectedReport.state}</dd>
+                </div>
+                <div>
+                  <dt>{t("deskNoDemo")}</dt>
+                  <dd>{selectedReport.reason}</dd>
+                </div>
+              </dl>
+            ) : null}
+          </section>
+          <section id="acx-tournaments" className="acx-card acx-anchor" aria-labelledby="acx-tournaments-title">
+            <h2 id="acx-tournaments-title" className="acx-card-title">{t("tournamentsTitle")}</h2>
+            <p className="acx-muted">{t("tournamentsNote")}</p>
+            {tournaments.length === 0 ? (
+              <p className="acx-empty">{t("tournamentsEmpty")}</p>
+            ) : (
+              <ul className="acx-list">
+                {tournaments.map((row) => (
+                  <li key={row.id}>
+                    <strong>{row.name}</strong>
+                    <span>
+                      {row.status} · {t("entries", { count: row.entries })}
+                    </span>
+                  </li>
+                ))}
+              </ul>
+            )}
+          </section>
         </div>
-      </section>
-
-      <section className="ace-admin-desk" aria-label={t("deskMatchesTitle")}>
-        <article className="ace-admin-panel">
-          <h2>{t("deskMatchesTitle")}</h2>
-          <p>{t("deskMatchesNote")}</p>
-          {matches.length === 0 ? (
-            <p className="ace-admin-empty">{t("deskMatchesEmpty")}</p>
-          ) : (
-            <ul className="ace-admin-live-list">
-              {matches.map((match) => (
-                <li key={match.id}>
-                  <strong>{match.mapName}</strong>
-                  <span>
-                    {match.format} · {match.score} · {match.state}
-                  </span>
-                </li>
-              ))}
-            </ul>
-          )}
-        </article>
-        <article className="ace-admin-panel">
-          <h2>{t("deskReportsTitle")}</h2>
-          <p>{t("deskReportsNote")}</p>
-          {reports.length === 0 ? (
-            <p className="ace-admin-empty">{t("deskReportsEmpty")}</p>
-          ) : (
-            <ul className="ace-admin-tickets">
-              {reports.map((report) => (
-                <li key={report.id}>
-                  <button
-                    type="button"
-                    className={`ace-admin-ticket${report.id === reportId ? " is-active" : ""}`}
-                    onClick={() => setReportId(report.id)}
-                  >
-                    <p className="ace-admin-ticket-id">{report.createdAt}</p>
-                    <p>{t("reporter", { name: report.reporter })}</p>
-                    <p>{t("suspect", { name: report.suspect })}</p>
-                    <p>{report.reason}</p>
-                  </button>
-                </li>
-              ))}
-            </ul>
-          )}
-          {selectedReport ? (
-            <dl className="ace-admin-report-detail">
-              <div>
-                <dt>{t("deskReportMap")}</dt>
-                <dd>{selectedReport.mapName}</dd>
-              </div>
-              <div>
-                <dt>{t("deskReportScore")}</dt>
-                <dd>{selectedReport.score}</dd>
-              </div>
-              <div>
-                <dt>{t("deskReportState")}</dt>
-                <dd>{selectedReport.state}</dd>
-              </div>
-              <div>
-                <dt>{t("deskNoDemo")}</dt>
-                <dd>{selectedReport.reason}</dd>
-              </div>
-            </dl>
-          ) : null}
-        </article>
-      </section>
-
-      <section className="ace-admin-desk" aria-label={t("tournamentsTitle")}>
-        <article className="ace-admin-panel">
-          <h2>{t("tournamentsTitle")}</h2>
-          <p>{t("tournamentsNote")}</p>
-          {tournaments.length === 0 ? (
-            <p className="ace-admin-empty">{t("tournamentsEmpty")}</p>
-          ) : (
-            <ul className="ace-admin-live-list">
-              {tournaments.map((row) => (
-                <li key={row.id}>
-                  <strong>{row.name}</strong>
-                  <span>
-                    {row.status} · {t("entries", { count: row.entries })}
-                  </span>
-                </li>
-              ))}
-            </ul>
-          )}
-        </article>
-      </section>
+      </div>
 
       {overlay ? (
         <CommandOverlay overlay={overlay} dir={dir} lang={lang} onClose={() => setOverlay(null)} />
@@ -763,7 +726,7 @@ export function AdminCommandCenter({
           lang={lang}
           staging={stats.staging}
           onClose={() => setEditorId(null)}
-          onChange={editPlayer}
+          onBan={() => runBan(editor, editor.security !== "Banned")}
         />
       ) : null}
     </div>

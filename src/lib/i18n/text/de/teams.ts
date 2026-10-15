@@ -59,7 +59,7 @@ export const teams: TextBag["teams"] = {
       support:
         "Öffne «Hilfe» oder «Kontakt» auf dieser Website. Eine Hilfeaufforderung eröffnet keine Anfrage, und auf der Kontaktseite eingegebener Text wird nicht zugestellt.",
       rating:
-        "Eine neue Wertung beginnt bei 1,000. Diese Seite verkauft keine Wertung, öffnet keine Warteschlange, verbindet keinen CS2-Server und liefert keinen Preis aus.",
+        "Eine neue Wertung startet bei 1.200. Diese Seite verkauft keine Wertung, öffnet keine Warteschlange, verbindet keinen CS2-Server und liefert keinen Preis.",
     },
   },
   squad: {

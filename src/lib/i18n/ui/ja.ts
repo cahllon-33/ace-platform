@@ -143,6 +143,7 @@ export const UI_JA: Ui = {
       "罰則",
       "配信",
       "賞品",
+      "Rating Points",
       "改定"
     ]
   },

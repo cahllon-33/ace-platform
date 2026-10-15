@@ -143,6 +143,7 @@ export const UI_SV: Ui = {
       "Påföljder",
       "Sändning",
       "Priser",
+      "Rating Points",
       "Ändringar"
     ]
   },

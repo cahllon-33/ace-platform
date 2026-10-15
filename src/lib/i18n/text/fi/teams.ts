@@ -46,7 +46,7 @@ export const teams: TextBag["teams"] = {
       "roster": "Paikka 1 on kirjautunut kapteeni. Paikoilla 2–5 on oltava jo A.C.E.-tilit. Kutsut odottavat, kunnes kukin pelaaja hyväksyy.",
       "badge": "Paikkamerkeistä tulee live-A.C.E Shield -tarkistuksia, kun huijauksenesto käynnistyy.",
       "support": "Avaa tällä sivustolla Tuki tai Yhteystiedot. Tukikehote ei avaa tukipyyntöä, eikä Yhteystiedot-sivulle kirjoitettua tekstiä toimiteta.",
-      "rating": "Uusi luokitus alkaa 1 000:sta. Tämä sivu ei myy luokitusta, avaa jonoa, yhdistä CS2-palvelinta tai toimita palkintoa."
+      "rating": "Uusi luokitus alkaa 1 200:sta. Tämä sivu ei myy luokitusta, avaa jonoa, yhdistä CS2-palvelinta eikä toimita palkintoja."
     }
   },
   "squad": {

@@ -59,7 +59,7 @@ export const teams: TextBag["teams"] = {
       support:
         "Otwórz Pomoc lub Kontakt na tej stronie. Zgłoszenie w Pomocy nie otwiera sprawy, a tekst wpisany w Kontakcie nie jest dostarczany.",
       rating:
-        "Nowa ocena zaczyna się od 1000. Ta strona nie sprzedaje oceny, nie otwiera kolejki, nie łączy z serwerem CS2 i nie dostarcza nagród.",
+        "Nowy rating zaczyna się od 1200. Ta strona nie sprzedaje ratingu, nie otwiera kolejki, nie łączy z serwerem CS2 i nie przekazuje nagród.",
     },
   },
   squad: {

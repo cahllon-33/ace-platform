@@ -98,18 +98,18 @@ export const codex: TextBag["codex"] = {
   rankReads: {
     "rank-1-recruit": {
       stance:
-        "Recruit é a placa de entrada. Uma nova conta vinculada à Steam é armazenada com 1.000 Pontos de Rating, e 1.000 ainda corresponde a Recruit.",
+        "Recruit é a placa de entrada. As contas novas já não começam aqui: começam com 1.200 Rating Points, em Vanguard. Só se chega a Recruit perdendo terreno.",
       detail:
         "A passagem para Operative é 1.100. A tabela da escada abre Recruit em 0, mas o motor não armazena um rating abaixo de 100. Entre 100 e 1.099, a conta continua Recruit.",
     },
     "rank-2-operative": {
       stance:
-        "Operative é o primeiro rank cujo piso fica acima do número inicial. Alcançá-lo significa que o rating armazenado saiu da placa de entrada.",
+        "Operative fica logo abaixo do número inicial. Uma conta que desce abaixo de 1.200 chega aqui antes de alcançar Recruit.",
       detail: "A faixa tem cem pontos de largura. Ela fecha em 1.199. Vanguard abre em 1.200.",
     },
     "rank-3-vanguard": {
       stance:
-        "Vanguard é a linha de frente do início da escada. A conta já passou do rating inicial e do piso de Operative.",
+        "Vanguard é onde começa cada conta nova, com 1.200 Rating Points. Subir a partir daqui é o primeiro passo real na escada.",
       detail: "A faixa vai de 1.200 até 1.299. Specialist abre em 1.300.",
     },
     "rank-4-specialist": {
@@ -263,40 +263,40 @@ export const codex: TextBag["codex"] = {
     },
     "where-a-new-account-starts": {
       title: "Onde uma conta nova começa",
-      lede: "O login pela Steam cria a conta com 1.000 Pontos de Rating, rank 1, Recruit, sem vitórias e sem derrotas.",
+      lede: "O login com a Steam cria a conta com 1.200 Rating Points, patente 3, Vanguard, sem vitórias nem derrotas.",
       sections: [
         {
           heading: "A marca inicial",
           paragraphs: [
-            "1.000 está dentro de Recruit. Operative só abre em 1.100, então uma conta nova não pula a placa de entrada.",
-            "Entrar novamente não zera um rating que já está armazenado. O códice não executa partidas de colocação e não inventa um histórico de vitórias e derrotas.",
+            "1.200 é o piso de Vanguard. Operative e Recruit ficam abaixo, por isso uma conta nova começa no meio da primeira parte da escada e não no fundo.",
+            "Fazer login de novo não reinicia uma pontuação já salva. As primeiras 10 partidas registradas são de colocação: durante elas a pontuação não pode passar do nível 5. O códice não inventa um registo de vitórias e derrotas.",
           ],
         },
         {
           heading: "Como ver",
           paragraphs: [
             "Depois do login pela Steam, o painel e o quadro de ranks podem mostrar o rating armazenado. Se o banco de dados estiver inacessível, a página informa isso em vez de inventar um número.",
-            "O rank inicial continua Recruit até que um resultado registrado leve o rating além de 1.100. Nenhum resultado desse tipo é gravado por este site hoje.",
+            "A patente inicial continua sendo Vanguard até que um resultado registrado tire a pontuação da faixa 1.200–1.299. Este site não escreve hoje nenhum resultado desses.",
           ],
         },
       ],
     },
     "how-points-move": {
       title: "Como um resultado registrado move os Pontos de Rating",
-      lede: "O motor usa um único tamanho de passo, 32, e uma única escala, 400. Um resultado é uma vitória, uma derrota ou um empate contra a média do outro lado.",
+      lede: "Uma vitória ou derrota registada é medida face à pontuação média da outra time. Contra uma time equilibrada uma vitória vale +25 e uma derrota −25. As regras completas estão na página de Patentes.",
       sections: [
         {
           heading: "O passo",
           paragraphs: [
-            "A pontuação esperada é a chance que o motor atribui antes da partida, com base apenas nos dois ratings. Contra um rating igual, essa chance é de metade, então uma vitória vale 16 Pontos de Rating e uma derrota custa 16.",
-            "Contra um rating mais alto, uma vitória vale mais de 16 e uma derrota custa menos de 16. Contra um rating mais baixo, uma vitória vale menos de 16 e uma derrota custa mais de 16. O resultado é arredondado para um número inteiro e depois mantido entre 100 e 3.000.",
-            "Em um resultado de equipe, cada jogador de um lado é medido contra a média de Pontos de Rating do outro lado. O motor atual dá o mesmo percurso a todos os jogadores desse lado. Ele não acrescenta bônus por prêmio individual.",
+            "A pontuação esperada é a probabilidade que o motor atribui antes da partida, apenas com base nas duas pontuações. Com pontuações iguais é metade, por isso uma vitória vale 25 Rating Points e uma derrota custa 25.",
+            "Contra uma pontuação mais alta, uma vitória vale mais de 25 e uma derrota custa menos. Contra uma mais baixa, o contrário. Uma vitória dá sempre de 10 a 40 e uma derrota custa sempre de 10 a 40. Nos níveis 7–9 os ganhos por vitória são multiplicados por 0,8 e no nível 10 por 0,7, por isso o topo da escada leva mais tempo. A pontuação fica entre 100 e 3.000.",
+            "Num resultado de time, cada jogador é medido face à pontuação média da outra time. Está previsto um bônus MVP de partida de 3 RP para quando o servidor registrar abates; até lá não é aplicado nenhum bônus pessoal.",
           ],
         },
         {
           heading: "Um empate",
           paragraphs: [
-            "Um empate vale meio resultado. Se os dois ratings forem iguais, a pontuação esperada já é de metade, então um empate move o número em zero.",
+            "Um empate não muda nada: cada jogador mantém a mesma pontuação. Abandonar ou sair de uma partida custa 50 RP, seja qual for o resultado.",
             "A tabela desta página é o motor trabalhando com entradas de exemplo. Essas linhas não são partidas armazenadas e não são a sua conta.",
           ],
         },

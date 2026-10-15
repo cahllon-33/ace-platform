@@ -112,7 +112,7 @@ export const FREE_AGENTS: FreeAgentView[] = [
     rankLevel: 1,
     rankLabel: "Rank 1 · Recruit",
     kd: "0.94",
-    rating: 1000,
+    rating: 1200,
     role: "Support",
   },
 ];
@@ -131,7 +131,7 @@ export function padRosterSlots(
         key: `open-${role}`,
         filled: false,
         username: "OPEN SLOT",
-        rating: 1000,
+        rating: 1200,
         role,
         avatarUrl: null,
         sample: false,

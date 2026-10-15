@@ -1,6 +1,17 @@
 import type { TextBag } from "../types";
 
 export const account: TextBag["account"] = {
+  badgeColor: {
+    "title": "Märkesfärg",
+    "body": "Välj färg på ditt vanliga rangemblem. Endast kosmetiskt: det ändrar aldrig dina Rating Points, din rang eller matchningen. Premiums illustrerade grafik behåller sin nivås färger.",
+    "presets": "Nivåfärger",
+    "custom": "Egen färg",
+    "reset": "Använd min nivås färg",
+    "saved": "Märkesfärgen har sparats.",
+    "failed": "Märkesfärgen kunde inte sparas. Försök igen.",
+    "previewAlt": "Förhandsvisning av ditt rangemblem i vald färg",
+    "swatch": "Färg {tier}"
+  },
   statsConsole: {
     "metaTitle": "Spelarstatistik",
     "kicker": "SPELARSTATISTIK",

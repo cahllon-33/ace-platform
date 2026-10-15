@@ -59,7 +59,7 @@ export const teams: TextBag["teams"] = {
       support:
         "Otevřete na tomto webu Podporu nebo Kontakt. Výzva podpory neotevírá požadavek a text napsaný na stránce Kontakt se nedoručuje.",
       rating:
-        "Nové hodnocení začíná na 1 000. Tato stránka neprodává hodnocení, neotevírá frontu, nepřipojuje server CS2 ani nedoručuje cenu.",
+        "Nové hodnocení začíná na 1 200. Tato stránka neprodává hodnocení, neotevírá frontu, nepřipojuje server CS2 ani nedoručuje ceny.",
     },
   },
   squad: {

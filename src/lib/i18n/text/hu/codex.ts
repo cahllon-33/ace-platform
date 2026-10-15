@@ -88,15 +88,15 @@ export const codex: TextBag["codex"] = {
   },
   "rankReads": {
     "rank-1-recruit": {
-      "stance": "A Recruit a belépő lap. Egy új, Steamhez kötött fiók 1000 Rating Pointon tárolódik, és az 1000 még Recruit.",
+      "stance": "A Recruit a belépő lap. Az új fiókok már nem itt kezdenek: 1200 Rating Points-szal indulnak a Vanguardban. A Recruitba csak pontvesztéssel lehet eljutni.",
       "detail": "Az Operative kapuja 1100. A létratábla a Recruitot 0-nál nyitja, de a motor nem tárol 100 alatti értékelést. 100 és 1099 között a fiók Recruit marad."
     },
     "rank-2-operative": {
-      "stance": "Az Operative az első rang, amelynek alsó határa a kezdőszám fölött van. Elérése azt jelenti, hogy a tárolt értékelés elhagyta a belépő lapot.",
+      "stance": "Az Operative közvetlenül a kezdőszám alatt van. Az 1200 alá eső fiók ide kerül, mielőtt elérné a Recruitot.",
       "detail": "A sáv száz pont széles. 1199-nél zárul. A Vanguard 1200-nál nyílik."
     },
     "rank-3-vanguard": {
-      "stance": "A Vanguard a korai létra élvonala. A fiók már túl van a kezdő értékelésen és az Operative alsó határán is.",
+      "stance": "A Vanguard minden új fiók kezdőhelye, 1200 Rating Points-szal. Innen feljebb lépni az első valódi lépés a létrán.",
       "detail": "A sáv 1200-tól 1299-ig tart. A Specialist 1300-nál nyílik."
     },
     "rank-4-specialist": {
@@ -240,40 +240,40 @@ export const codex: TextBag["codex"] = {
     },
     "where-a-new-account-starts": {
       "title": "Hol indul egy új fiók",
-      "lede": "A Steam-bejelentkezés 1000 Rating Pointon hozza létre a fiókot, 1. rang, Recruit, győzelem és vereség nélkül.",
+      "lede": "A Steam-bejelentkezés 1200 Rating Points-szal hozza létre a fiókot, 3. rang, Vanguard, győzelmek és vereségek nélkül.",
       "sections": [
         {
           "heading": "A kezdő jelzés",
           "paragraphs": [
-            "Az 1000 a Recruiton belül van. Az Operative csak 1100-nál nyílik, így egy új fiók nem ugorja át a belépő lapot.",
-            "Az újbóli bejelentkezés nem nullázza a már tárolt értékelést. A kódex nem futtat besorolómeccseket, és nem talál ki győzelem–vereség mérleget."
+            "Az 1200 a Vanguard alsó határa. Az Operative és a Recruit alatta van, így egy új fiók a létra korai részének közepén kezd, nem a legalján.",
+            "Az újbóli bejelentkezés nem állítja vissza a már tárolt értékszámot. Az első 10 rögzített meccs besoroló: ezek alatt az értékszám nem emelkedhet az 5. szint fölé. A kódex nem talál ki győzelem–vereség mérleget."
           ]
         },
         {
           "heading": "Hogyan láthatod",
           "paragraphs": [
             "Steam-bejelentkezés után az irányítópult és a rangtábla megjelenítheti a tárolt értékelést. Ha az adatbázis elérhetetlen, az oldal ezt közli, ahelyett hogy számot találna ki.",
-            "A kezdő rang Recruit marad, amíg egy rögzített eredmény át nem viszi az értékelést 1100 fölé. Ma ilyen eredmény nem íródik erről az oldalról."
+            "A kezdő rang Vanguard marad, amíg egy rögzített eredmény ki nem viszi az értékszámot az 1200–1299 sávból. Ez az oldal ma nem ír ilyen eredményt."
           ]
         }
       ]
     },
     "how-points-move": {
       "title": "Hogyan mozdítja egy rögzített eredmény a Rating Pointsot",
-      "lede": "A motor egy lépésméretet, 32-t, és egy skálát, 400-at használ. Az eredmény győzelem, vereség vagy döntetlen a másik oldal átlaga ellen.",
+      "lede": "Egy rögzített győzelmet vagy vereséget a másik csapat átlagos értékszámához mérünk. Egyenlő csapat ellen a győzelem +25, a vereség −25. A teljes szabályok a Rangok oldalon vannak.",
       "sections": [
         {
           "heading": "A lépés",
           "paragraphs": [
-            "A várható pontszám az az esély, amelyet a motor a meccs előtt csak a két értékelés alapján rendel. Egyenlő értékelés ellen ez fél, így a győzelem 16 Rating Pointot ér, a vereség 16-ba kerül.",
-            "Magasabb értékelés ellen a győzelem többet ér 16-nál, a vereség kevesebbe kerül 16-nál. Alacsonyabb ellen a győzelem kevesebbet ér 16-nál, a vereség többe kerül 16-nál. Az eredményt egészre kerekítik, majd 100 és 3000 között tartják.",
-            "Csapateredménynél egy oldal minden játékosát a másik oldal átlagos Rating Pointsához mérik. A jelenlegi motor az oldal minden játékosának ugyanazt az utat adja. Nem ad bónuszt személyes díjért."
+            "A várható eredmény az az esély, amelyet a motor a meccs előtt kizárólag a két értékszám alapján rendel. Egyenlő értékszámnál ez fél, így egy győzelem 25 Rating Points-ot ér, egy vereség 25-be kerül.",
+            "Magasabb értékszám ellen a győzelem többet ér 25-nél, a vereség kevesebbe kerül. Alacsonyabb ellen fordítva. Egy győzelem mindig 10–40-et ad, egy vereség mindig 10–40-be kerül. A 7–9. szinten a győzelmi nyereséget 0,8-del, a 10. szinten 0,7-del szorozzuk, így a létra csúcsa tovább tart. Az értékszám 100 és 3000 között marad.",
+            "Csapateredménynél minden játékost a másik csapat átlagos értékszámához mérünk. A 3 RP-s meccs-MVP-bónusz arra az időre van tervezve, amikor a szerver rögzíti az öléseket; addig nincs személyes bónusz."
           ]
         },
         {
           "heading": "Döntetlen",
           "paragraphs": [
-            "A döntetlen fél eredmény. Ha a két értékelés egyenlő, a várható pontszám már fél, így a döntetlen nullával mozdítja a számot.",
+            "A döntetlen semmit nem változtat: minden játékos megtartja az értékszámát. Egy meccs elhagyása vagy félbehagyása 50 RP-be kerül, az eredménytől függetlenül.",
             "Az oldalon lévő táblázat a motor példabemenetekkel. A sorok nem tárolt meccsek, és nem a fiókod."
           ]
         }

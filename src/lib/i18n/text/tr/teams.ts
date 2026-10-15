@@ -46,7 +46,7 @@ export const teams: TextBag["teams"] = {
       "roster": "1. koltuk oturum açmış kaptandır. 2-5. koltuklarda zaten A.C.E. hesabı olmalı. Davetler her oyuncu kabul edene kadar beklemede kalır.",
       "badge": "Koltuk rozetleri, hile karşıtı sistem başladığında gerçek A.C.E Shield kontrollerine dönüşür.",
       "support": "Bu sitede Destek veya İletişim sayfasını açın. Bir destek istemi destek talebi açmaz ve İletişim'e yazılan metin iletilmez.",
-      "rating": "Yeni bir derece 1.000'den başlar. Bu sayfa derece satmaz, sıra açmaz, CS2 sunucusuna bağlanmaz veya ödül teslim etmez."
+      "rating": "Yeni bir puan 1.200'den başlar. Bu sayfa puan satmaz, sıra açmaz, CS2 sunucusuna bağlanmaz ve ödül teslim etmez."
     }
   },
   "squad": {

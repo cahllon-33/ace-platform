@@ -143,6 +143,7 @@ export const UI_KO: Ui = {
       "제재",
       "중계",
       "상품",
+      "Rating Points",
       "개정"
     ]
   },

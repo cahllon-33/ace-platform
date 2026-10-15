@@ -143,6 +143,7 @@ export const UI_HU: Ui = {
       "Büntetések",
       "Közvetítés",
       "Nyeremények",
+      "Rating Points",
       "Módosítások"
     ]
   },

@@ -143,6 +143,7 @@ export const UI_RO: Ui = {
       "Sancțiuni",
       "Transmisiune",
       "Premii",
+      "Rating Points",
       "Modificări"
     ]
   },

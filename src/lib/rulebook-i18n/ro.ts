@@ -118,6 +118,14 @@ export const RB_RO: RulebookText = {
       "Taxele, comisioanele și costurile de conversie valutară sunt suportate de jucătorul care primește premiul, cu excepția cazului în care pagina evenimentului prevede altfel."
     ],
     [
+      "Rating Points (RP) se modifică doar prin rezultate de meci verificate, conform regulilor Rating Points A.C.E publicate pe pagina Ranguri. Fiecare cont nou începe cu 1.200 RP la nivelul 3 (Vanguard).",
+      "Împotriva unei echipe cu același rating mediu, o victorie aduce +25 RP, iar o înfrângere costă −25 RP. Suma se ajustează după ratingul mediu al celeilalte echipe și rămâne mereu între 10 și 40 RP pe meci. Un egal nu schimbă nimic.",
+      "Câștigurile din victorii se înmulțesc cu 0,8 la nivelurile 7–9 și cu 0,7 la nivelul 10. Înfrângerile nu sunt reduse. Ratingurile rămân între 100 și 3.000 RP și nu scad din cauza inactivității.",
+      "Primele 10 meciuri ale unui jucător sunt meciuri de plasament. În timpul plasamentului ratingul nu poate urca peste nivelul 5.",
+      "Un jucător care abandonează sau părăsește un meci pierde 50 RP, indiferent de rezultat, și nu poate primi bonusul MVP al meciului.",
+      "MVP-ul meciului (cele mai multe eliminări; la egalitate mai mult damage, apoi mai puține morți) câștigă cu 3 RP mai mult la victorie și pierde cu 3 RP mai puțin la înfrângere, în limitele pe meci. Acest bonus se aplică doar după ce serverul înregistrează eliminările. Niciun plan plătit nu modifică Rating Points."
+    ],
+    [
       "Organizatorul poate modifica acest regulament. Modificările se publică pe această pagină, cu un nou număr de versiune și o nouă dată.",
       "Modificările intră în vigoare în a 7-a zi de la publicare sau imediat, dacă este necesar pentru a închide o portiță, a rezolva o problemă de securitate sau a corecta o eroare evidentă. Modificările nu se aplică unui meci aflat deja în desfășurare.",
       "Dacă o traducere a acestui regulament diferă de versiunea în limba engleză, prevalează versiunea în limba engleză."

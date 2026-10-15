@@ -34,7 +34,7 @@ export const features: TextBag["features"] = {
     calibration: {
       title: "Dix paliers de calibrage du niveau",
       intro:
-        "Le calibrage compétitif utilise une formule documentée de type Elo (version {version}, facteur K {kFactor}, échelle {scale}). Les nouveaux comptes démarrent au rang 1 (Recruit), abonnement GRATUIT, statut ACTIF et cote compétitive de {startingRating}. Les étiquettes cristal du lobby sont des alias visuels. Les cosmétiques payants n'achètent jamais de cote, d'adversaires plus faciles, de serveurs 128-tick ni de priorité de file. Aucun produit 128-tick en direct n'est en vente.",
+        "Competitive Calibration utilise les règles publiées des Rating Points A.C.E (version {version} : pas {kFactor}, échelle {scale}). Les nouveaux comptes commencent au rang 3 (Vanguard), abonnement FREE, statut ACTIVE et {startingRating} de classement compétitif. Les noms de cristaux du lobby sont des alias visuels. Les cosmétiques payants n'achètent jamais de classement, d'adversaires plus faciles, de serveurs 128 ticks ni de priorité de file. Aucun produit 128 ticks actif n'est en vente.",
       table: {
         level: "Niveau",
         engineName: "Nom du moteur",

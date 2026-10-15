@@ -118,6 +118,14 @@ export const RB_PT_BR: RulebookText = {
       "Impostos, taxas e custos de câmbio são de responsabilidade do jogador que recebe, salvo indicação diferente na página do evento."
     ],
     [
+      "Os Rating Points (RP) só mudam através de resultados de partida verificados, segundo as regras de Rating Points da A.C.E publicadas na página de Patentes. Cada conta nova começa com 1.200 RP no nível 3 (Vanguard).",
+      "Contra uma time com a mesma pontuação média, uma vitória dá +25 RP e uma derrota custa −25 RP. O valor é ajustado à pontuação média da outra time e fica sempre entre 10 e 40 RP por partida. Um empate não muda nada.",
+      "Os ganhos por vitória são multiplicados por 0,8 nos níveis 7–9 e por 0,7 no nível 10. As derrotas não são reduzidas. As pontuações ficam entre 100 e 3.000 RP e não decaem por inatividade.",
+      "As primeiras 10 partidas de um jogador são de colocação. Durante a colocação a pontuação não pode subir acima do nível 5.",
+      "Um jogador que abandona ou sai de uma partida perde 50 RP, seja qual for o resultado, e não pode receber o bônus MVP da partida.",
+      "O MVP da partida (mais abates; em caso de empate, mais dano e depois menos mortes) ganha mais 3 RP numa vitória e perde menos 3 RP numa derrota, dentro dos limites por partida. Este bônus só se aplica quando o servidor registrar abates. Nenhum plano pago altera os Rating Points."
+    ],
+    [
       "O organizador pode alterar este regulamento. As alterações são publicadas nesta página com novo número de versão e nova data.",
       "As alterações entram em vigor 7 dias após a publicação, ou imediatamente quando necessário para fechar uma brecha, resolver um problema de segurança ou corrigir um erro evidente. Alterações não se aplicam a uma partida já em andamento.",
       "Se uma tradução deste regulamento divergir da versão em inglês, prevalece a versão em inglês."

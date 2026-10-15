@@ -111,7 +111,7 @@ export const pricing: TextBag["pricing"] = {
       title: "Acceso abierto",
       points: [
         "Inicia sesión con Steam OpenID. A.C.E. nunca pide una contraseña de Steam.",
-        "Una puntuación guardada empieza en 1,000. Ningún resultado de partida la ha cambiado.",
+        "Una puntuación guardada empieza en 1.200. Ningún resultado de partida la ha cambiado.",
         "Todas las páginas públicas: jugar, torneos, clasificación, equipos y reglas.",
       ],
     },
@@ -267,7 +267,7 @@ export const pricing: TextBag["pricing"] = {
         "Pago: ninguno. Elegir este plan no cobra ninguna tarjeta.",
         "Correo: ninguno. A.C.E. no envía esta carta a ninguna bandeja de entrada.",
         "Nivel guardado: sin cambios. Las insignias especiales y el sello élite solo aparecen si la cuenta ya tiene Premium guardado.",
-        "Puntuación: no está en venta. Una cuenta nueva sigue empezando en 1,000.",
+        "Puntuación: no está a la venta. Una cuenta nueva sigue empezando en 1.200.",
       ],
     },
     today: {

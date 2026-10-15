@@ -143,6 +143,7 @@ export const UI_FI: Ui = {
       "Rangaistukset",
       "Lähetykset",
       "Palkinnot",
+      "Rating Points",
       "Muutokset"
     ]
   },

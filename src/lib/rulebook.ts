@@ -6,7 +6,7 @@
 export type RuleClause = { text: string; pending?: boolean };
 export type RuleSection = { id: string; title: string; summary?: string; clauses: RuleClause[] };
 
-export const RULEBOOK_VERSION = "1.2";
+export const RULEBOOK_VERSION = "1.3";
 export const RULEBOOK_EFFECTIVE = "15 October 2026";
 
 export const RULEBOOK: RuleSection[] = [
@@ -199,6 +199,18 @@ export const RULEBOOK: RuleSection[] = [
   },
   {
     id: "s19",
+    title: "Rating Points",
+    clauses: [
+      { text: "Rating Points (RP) change only through verified match results, under the A.C.E Rating Points rules published on the Ranks page. Every new account starts at 1,200 RP in tier 3 (Vanguard)." },
+      { text: "Against a team of equal average rating, a win gives +25 RP and a loss costs −25 RP. The amount is adjusted for the other team's average rating and always stays between 10 and 40 RP per match. A draw changes nothing." },
+      { text: "Win gains are multiplied by 0.8 in tiers 7–9 and by 0.7 in tier 10. Losses are not reduced. Ratings stay between 100 and 3,000 RP and do not decay with inactivity." },
+      { text: "A player's first 10 matches are placement matches. During placement the rating cannot rise above tier 5." },
+      { text: "A player who abandons or leaves a match loses 50 RP, whatever the result, and cannot receive the match MVP bonus." },
+      { text: "The match MVP (most kills; ties go to more damage, then fewer deaths) gains 3 RP more on a win and loses 3 RP less on a loss, within the per-match limits. This bonus applies only once the server records kills. No paid plan changes Rating Points.", pending: true },
+    ],
+  },
+  {
+    id: "s20",
     title: "Amendments",
     clauses: [
       { text: "The organizer may amend this rulebook. Changes are published on this page with a new version number and date." },

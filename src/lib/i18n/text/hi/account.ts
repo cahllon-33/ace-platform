@@ -1,6 +1,17 @@
 import type { TextBag } from "../types";
 
 export const account: TextBag["account"] = {
+  badgeColor: {
+    "title": "बैज का रंग",
+    "body": "अपने स्टैंडर्ड रैंक प्रतीक का रंग चुनें। सिर्फ़ दिखावटी: यह आपके Rating Points, रैंक या मैचमेकिंग को कभी नहीं बदलता। Premium चित्रित आर्ट अपने टियर के रंग रखता है।",
+    "presets": "टियर रंग",
+    "custom": "कस्टम रंग",
+    "reset": "मेरे टियर का रंग इस्तेमाल करें",
+    "saved": "बैज का रंग सहेजा गया।",
+    "failed": "बैज का रंग सहेजा नहीं जा सका। फिर से कोशिश करें।",
+    "previewAlt": "चुने गए रंग में आपके रैंक प्रतीक का पूर्वावलोकन",
+    "swatch": "{tier} रंग"
+  },
   statsConsole: {
     "metaTitle": "खिलाड़ी आँकड़े",
     "kicker": "खिलाड़ी आँकड़े",

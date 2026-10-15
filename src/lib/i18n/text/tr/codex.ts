@@ -88,15 +88,15 @@ export const codex: TextBag["codex"] = {
   },
   "rankReads": {
     "rank-1-recruit": {
-      "stance": "Recruit giriş plakasıdır. Steam'e bağlı yeni bir hesap 1.000 Derece Puanı ile kaydedilir ve 1.000 hâlâ Recruit'tir.",
+      "stance": "Recruit giriş levhasıdır. Yeni hesaplar artık burada başlamaz: Vanguard'da 1.200 Rating Points ile başlar. Recruit'e yalnızca puan kaybederek inilir.",
       "detail": "Operative eşiği 1.100'dür. Sıralama tablosu Recruit'i 0'dan başlatır, ancak motor 100'ün altında derece kaydetmez. 100 ile 1.099 arasında hesap Recruit kalır."
     },
     "rank-2-operative": {
-      "stance": "Operative, tabanı başlangıç sayısının üzerinde olan ilk rütbedir. Ona ulaşmak, kayıtlı derecenin giriş plakasını terk ettiği anlamına gelir.",
+      "stance": "Operative, başlangıç sayısının hemen altındadır. 1.200'ün altına düşen bir hesap Recruit'e ulaşmadan önce buraya gelir.",
       "detail": "Aralık yüz puan genişliğindedir ve 1.199'da kapanır. Vanguard 1.200'de açılır."
     },
     "rank-3-vanguard": {
-      "stance": "Vanguard, erken sıralamanın ön cephesidir. Hesap hem başlangıç derecesini hem de Operative tabanını çoktan geçmiştir.",
+      "stance": "Vanguard, her yeni hesabın 1.200 Rating Points ile başladığı yerdir. Buradan yükselmek, merdivende atılan ilk gerçek adımdır.",
       "detail": "Aralık 1.200'den 1.299'a kadardır. Specialist 1.300'de açılır."
     },
     "rank-4-specialist": {
@@ -240,40 +240,40 @@ export const codex: TextBag["codex"] = {
     },
     "where-a-new-account-starts": {
       "title": "Yeni hesap nereden başlar",
-      "lede": "Steam ile oturum açma hesabı 1.000 Derece Puanı, 1. rütbe, Recruit, galibiyetsiz ve mağlubiyetsiz olarak oluşturur.",
+      "lede": "Steam ile giriş, hesabı 1.200 Rating Points, 3. rütbe, Vanguard olarak, galibiyetsiz ve mağlubiyetsiz oluşturur.",
       "sections": [
         {
           "heading": "İlk işaret",
           "paragraphs": [
-            "1.000, Recruit içindedir. Operative 1.100'e kadar açılmaz, bu yüzden yeni hesap giriş plakasını atlamaz.",
-            "Tekrar oturum açmak zaten kayıtlı bir dereceyi sıfırlamaz. Kodeks yerleştirme maçı oynatmaz ve galibiyet-mağlubiyet kaydı uydurmaz."
+            "1.200, Vanguard'ın tabanıdır. Operative ve Recruit bunun altındadır; bu yüzden yeni bir hesap merdivenin en altından değil, erken bölümün ortasından başlar.",
+            "Yeniden giriş yapmak kayıtlı bir puanı sıfırlamaz. Kaydedilen ilk 10 maç yerleştirme maçıdır: bu süre içinde puan 5. kademenin üstüne çıkamaz. Kodeks bir galibiyet–mağlubiyet kaydı uydurmaz."
           ]
         },
         {
           "heading": "Nasıl görülür",
           "paragraphs": [
             "Steam ile oturum açtıktan sonra panel ve rütbe panosu kayıtlı dereceyi gösterebilir. Veritabanına ulaşılamazsa sayfa sayı uydurmak yerine bunu belirtir.",
-            "Başlangıç rütbesi, kaydedilmiş bir sonuç dereceyi 1.100'ün üzerine taşıyana kadar Recruit kalır. Bugün bu siteden böyle bir sonuç yazılmaz."
+            "Başlangıç rütbesi, kaydedilmiş bir sonuç puanı 1.200–1.299 aralığının dışına taşıyana kadar Vanguard kalır. Bu site bugün böyle bir sonuç yazmaz."
           ]
         }
       ]
     },
     "how-points-move": {
       "title": "Kaydedilmiş bir sonuç Derece Puanlarını nasıl değiştirir",
-      "lede": "Motor tek bir adım büyüklüğü (32) ve tek bir ölçek (400) kullanır. Sonuç, karşı tarafın ortalamasına karşı galibiyet, mağlubiyet veya beraberliktir.",
+      "lede": "Kaydedilmiş bir galibiyet veya mağlubiyet, diğer takımın ortalama puanına göre ölçülür. Denk bir takıma karşı galibiyet +25, mağlubiyet −25'tir. Kuralların tamamı Rütbeler sayfasındadır.",
       "sections": [
         {
           "heading": "Adım",
           "paragraphs": [
-            "Beklenen skor, motorun maçtan önce yalnızca iki dereceye dayanarak verdiği olasılıktır. Eşit bir dereceye karşı bu olasılık yarıdır; galibiyet 16 Derece Puanı kazandırır, mağlubiyet 16 kaybettirir.",
-            "Daha yüksek bir dereceye karşı galibiyet 16'dan fazla kazandırır, mağlubiyet 16'dan az kaybettirir. Daha düşük bir dereceye karşı galibiyet 16'dan az kazandırır, mağlubiyet 16'dan fazla kaybettirir. Sonuç tam sayıya yuvarlanır ve 100 ile 3.000 arasında tutulur.",
-            "Takım sonucunda bir taraftaki her oyuncu, karşı tarafın ortalama Derece Puanı'na göre ölçülür. Mevcut motor o taraftaki her oyuncuya aynı değişimi verir. Kişisel ödül için bonus eklemez."
+            "Beklenen skor, motorun maçtan önce yalnızca iki puana dayanarak verdiği olasılıktır. Puanlar eşitse bu yarıdır; bu yüzden galibiyet 25 Rating Points değerindedir ve mağlubiyet 25 kaybettirir.",
+            "Daha yüksek bir puana karşı galibiyet 25'ten fazla değerlidir ve mağlubiyet daha az kaybettirir. Daha düşük bir puana karşı tam tersi. Galibiyet her zaman 10 ile 40 arası kazandırır, mağlubiyet her zaman 10 ile 40 arası kaybettirir. 7–9. kademelerde galibiyet kazançları 0,8, 10. kademede 0,7 ile çarpılır; bu yüzden merdivenin zirvesi daha uzun sürer. Puan 100 ile 3.000 arasında tutulur.",
+            "Takım sonucunda her oyuncu diğer takımın ortalama puanına göre ölçülür. Sunucu öldürmeleri kaydetmeye başladığında 3 RP'lik bir maç MVP bonusu planlanıyor; o zamana kadar kişisel bonus uygulanmaz."
           ]
         },
         {
           "heading": "Beraberlik",
           "paragraphs": [
-            "Beraberlik yarım sonuçtur. İki derece eşitse beklenen skor zaten yarıdır, bu yüzden beraberlik sayıyı sıfır değiştirir.",
+            "Beraberlik hiçbir şeyi değiştirmez: her oyuncu puanını korur. Bir maçı bırakmak veya maçtan ayrılmak, sonuç ne olursa olsun 50 RP'ye mal olur.",
             "Bu sayfadaki tablo, motorun örnek girdiler üzerinde çalışmasıdır. Bu satırlar kayıtlı maçlar değildir ve sizin hesabınız değildir."
           ]
         }

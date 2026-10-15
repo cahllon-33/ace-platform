@@ -111,7 +111,7 @@ export const pricing: TextBag["pricing"] = {
       title: "Offener Zugang",
       points: [
         "Melde dich mit Steam OpenID an. A.C.E. fragt niemals nach einem Steam-Passwort.",
-        "Eine gespeicherte Wertung beginnt bei 1,000. Kein Spielergebnis hat sie verändert.",
+        "Eine gespeicherte Wertung startet bei 1.200. Kein Matchergebnis hat sie verändert.",
         "Alle öffentlichen Seiten: Spielen, Turniere, Rangliste, Teams und Regeln.",
       ],
     },
@@ -267,7 +267,7 @@ export const pricing: TextBag["pricing"] = {
         "Zahlung: keine. Die Wahl dieses Plans belastet keine Karte.",
         "E-Mail: keine. A.C.E. sendet diesen Brief nicht in ein Postfach.",
         "Gespeicherte Stufe: unverändert. Sonderabzeichen und Elite-Siegel erscheinen nur, wenn das Konto bereits Premium gespeichert hat.",
-        "Wertung: nicht käuflich. Ein neues Konto beginnt weiterhin bei 1,000.",
+        "Wertung: nicht käuflich. Ein neues Konto startet weiterhin bei 1.200.",
       ],
     },
     today: {

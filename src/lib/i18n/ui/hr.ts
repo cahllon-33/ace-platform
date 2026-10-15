@@ -143,6 +143,7 @@ export const UI_HR: Ui = {
       "Kazne",
       "Prijenos",
       "Nagrade",
+      "Rating Points",
       "Izmjene"
     ]
   },

@@ -1,6 +1,17 @@
 import type { TextBag } from "../types";
 
 export const account: TextBag["account"] = {
+  badgeColor: {
+    "title": "لون الشارة",
+    "body": "اختار لون شعار رتبتك القياسي. تجميلي فقط: لا يغيّر أبدًا Rating Points أو رتبتك أو المطابقة. يحتفظ فن Premium المرسوم بألوان مستواه.",
+    "presets": "ألوان المستويات",
+    "custom": "لون مخصص",
+    "reset": "استخدم لون مستوايا",
+    "saved": "اتحفظ لون الشارة.",
+    "failed": "ماقدرناش نحفظ لون الشارة. جرّب تاني.",
+    "previewAlt": "معاينة شعار رتبتك باللون المختار",
+    "swatch": "لون {tier}"
+  },
   statsConsole: {
     "metaTitle": "إحصائيات اللاعب",
     "kicker": "إحصائيات اللاعب",

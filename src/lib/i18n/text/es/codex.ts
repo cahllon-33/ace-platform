@@ -98,18 +98,18 @@ export const codex: TextBag["codex"] = {
   rankReads: {
     "rank-1-recruit": {
       stance:
-        "Recruit es la placa de entrada. Una cuenta nueva vinculada a Steam se almacena con 1,000 Puntos de Rating, y 1,000 sigue llevando Recruit.",
+        "Recruit es la placa de entrada. Las cuentas nuevas ya no empiezan aquí: empiezan con 1.200 Rating Points, en Vanguard. A Recruit solo se llega perdiendo terreno.",
       detail:
         "El umbral de Operative es 1,100. La tabla de la escalera abre Recruit en 0, pero el motor no almacena una puntuación inferior a 100. Entre 100 y 1,099 la cuenta sigue siendo Recruit.",
     },
     "rank-2-operative": {
       stance:
-        "Operative es el primer rango cuyo suelo está por encima del número inicial. Alcanzarlo significa que la puntuación almacenada ha dejado atrás la placa de entrada.",
+        "Operative está justo por debajo del número inicial. Una cuenta que baja de 1.200 llega aquí antes de alcanzar Recruit.",
       detail: "La franja tiene cien puntos de ancho. Termina en 1,199. Vanguard se abre en 1,200.",
     },
     "rank-3-vanguard": {
       stance:
-        "Vanguard es la vanguardia de la primera parte de la escalera. La cuenta ya ha superado tanto la puntuación inicial como el suelo de Operative.",
+        "Vanguard es donde empieza cada cuenta nueva, con 1.200 Rating Points. Subir desde aquí es el primer paso real en la escalera.",
       detail: "La franja va de 1,200 a 1,299. Specialist se abre en 1,300.",
     },
     "rank-4-specialist": {
@@ -263,40 +263,40 @@ export const codex: TextBag["codex"] = {
     },
     "where-a-new-account-starts": {
       title: "Dónde empieza una cuenta nueva",
-      lede: "El inicio de sesión con Steam crea la cuenta con 1,000 Puntos de Rating, rango 1, Recruit, sin victorias ni derrotas.",
+      lede: "El inicio de sesión con Steam crea la cuenta con 1.200 Rating Points, rango 3, Vanguard, sin victorias ni derrotas.",
       sections: [
         {
           heading: "La insignia inicial",
           paragraphs: [
-            "1,000 está dentro de Recruit. Operative no se abre hasta 1,100, así que una cuenta nueva no se salta la placa de entrada.",
-            "Volver a iniciar sesión no reinicia una puntuación ya almacenada. El códice no ejecuta partidas de posicionamiento y no inventa un historial de victorias y derrotas.",
+            "1.200 es el suelo de Vanguard. Operative y Recruit están por debajo, así que una cuenta nueva empieza en mitad de la primera parte de la escalera, no al fondo.",
+            "Volver a iniciar sesión no reinicia una puntuación ya guardada. Las primeras 10 partidas registradas son de clasificación: durante ellas la puntuación no puede pasar del nivel 5. El códice no inventa un historial de victorias y derrotas.",
           ],
         },
         {
           heading: "Cómo verlo",
           paragraphs: [
             "Después de iniciar sesión con Steam, el panel y el tablero de rangos pueden mostrar la puntuación almacenada. Si no se puede acceder a la base de datos, la página lo indica en lugar de inventar un número.",
-            "El rango inicial sigue siendo Recruit hasta que un resultado registrado lleve la puntuación más allá de 1,100. Hoy este sitio no escribe ningún resultado así.",
+            "El rango inicial sigue siendo Vanguard hasta que un resultado registrado saque la puntuación de la franja 1.200–1.299. Este sitio no escribe hoy ningún resultado así.",
           ],
         },
       ],
     },
     "how-points-move": {
       title: "Cómo mueve un resultado registrado los Puntos de Rating",
-      lede: "El motor usa un único tamaño de paso, 32, y una única escala, 400. Un resultado es una victoria, una derrota o un empate frente a la media del bando rival.",
+      lede: "Una victoria o derrota registrada se mide frente a la puntuación media del otro equipo. Contra un equipo igualado una victoria es +25 y una derrota −25. Las reglas completas están en la página de Rangos.",
       sections: [
         {
           heading: "El paso",
           paragraphs: [
-            "La puntuación esperada es la probabilidad que el motor asigna antes de la partida, basada solo en las dos puntuaciones. Frente a una puntuación igual, esa probabilidad es de un medio, así que una victoria vale 16 Puntos de Rating y una derrota cuesta 16.",
-            "Frente a una puntuación más alta, una victoria vale más de 16 y una derrota cuesta menos de 16. Frente a una puntuación más baja, una victoria vale menos de 16 y una derrota cuesta más de 16. El resultado se redondea a un número entero y después se mantiene entre 100 y 3,000.",
-            "En un resultado de equipo, cada jugador de un bando se mide frente a la media de Puntos de Rating del bando rival. El motor actual da a cada jugador de ese bando el mismo recorrido. No añade ninguna bonificación por un premio personal.",
+            "La puntuación esperada es la probabilidad que el motor asigna antes de la partida, basada solo en las dos puntuaciones. Con puntuaciones iguales es de la mitad, así que una victoria vale 25 Rating Points y una derrota cuesta 25.",
+            "Contra una puntuación más alta, una victoria vale más de 25 y una derrota cuesta menos. Contra una más baja, al revés. Una victoria siempre da de 10 a 40 y una derrota siempre cuesta de 10 a 40. En los niveles 7–9 las ganancias por victoria se multiplican por 0,8 y en el nivel 10 por 0,7, por eso la cima de la escalera lleva más tiempo. La puntuación se mantiene entre 100 y 3.000.",
+            "En un resultado por equipos, cada jugador se mide frente a la puntuación media del otro equipo. Hay previsto un bono MVP de partida de 3 RP para cuando el servidor registre las bajas; hasta entonces no se aplica ningún bono personal.",
           ],
         },
         {
           heading: "Un empate",
           paragraphs: [
-            "Un empate es medio resultado. Si ambas puntuaciones son iguales, la puntuación esperada ya es de un medio, así que un empate mueve el número en cero.",
+            "Un empate no cambia nada: cada jugador conserva la misma puntuación. Abandonar o salir de una partida cuesta 50 RP, sea cual sea el resultado.",
             "La tabla de esta página es el motor trabajando con datos de ejemplo. Esas filas no son partidas almacenadas ni son tu cuenta.",
           ],
         },

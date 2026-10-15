@@ -41,7 +41,7 @@ export const features: TextBag["features"] = {
     },
     "calibration": {
       "title": "On beceri kalibrasyon kademesi",
-      "intro": "Rekabetçi Kalibrasyon belgelenmiş Elo tarzı bir formül kullanır (sürüm {version}, K faktörü {kFactor}, ölçek {scale}). Yeni hesaplar Rütbe 1 (Recruit), FREE abonelik, ACTIVE durum ve {startingRating} rekabet derecesiyle başlar. Lobideki kristal adları görsel takma adlardır. Ücretli kozmetikler asla derece, daha kolay rakip, 128 tick sunucu veya sıra önceliği satın almaz. Satışta 128 tick bir ürün yoktur.",
+      "intro": "Competitive Calibration, yayımlanmış A.C.E Rating Points kurallarını kullanır (sürüm {version}: adım {kFactor}, ölçek {scale}). Yeni hesaplar 3. rütbeden (Vanguard), FREE abonelik, ACTIVE durum ve {startingRating} rekabetçi puanla başlar. Lobideki kristal adları görsel takma adlardır. Ücretli kozmetikler asla puan, daha kolay rakipler, 128 tick sunucular veya sıra önceliği satın almaz. Satışta aktif bir 128 tick ürünü yoktur.",
       "table": {
         "level": "Seviye",
         "engineName": "Motor adı",

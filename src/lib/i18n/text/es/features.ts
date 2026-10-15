@@ -34,7 +34,7 @@ export const features: TextBag["features"] = {
     calibration: {
       title: "Diez escalones de calibración de habilidad",
       intro:
-        "La calibración competitiva usa una fórmula documentada de tipo Elo (versión {version}, factor K {kFactor}, escala {scale}). Las cuentas nuevas empiezan en el rango 1 (Recruit), con suscripción GRATIS, estado ACTIVO y {startingRating} de puntuación competitiva. Las etiquetas de cristal del lobby son alias visuales. Los cosméticos de pago nunca compran puntuación, rivales más fáciles, servidores de 128 ticks ni prioridad en la cola. No hay ningún producto de 128 ticks en vivo a la venta.",
+        "Competitive Calibration usa las reglas publicadas de Rating Points de A.C.E (versión {version}: paso {kFactor}, escala {scale}). Las cuentas nuevas empiezan en el rango 3 (Vanguard), suscripción FREE, estado ACTIVE y {startingRating} de puntuación competitiva. Las etiquetas de cristal del lobby son alias visuales. Los cosméticos de pago nunca compran puntuación, rivales más fáciles, servidores de 128 ticks ni prioridad en la cola. No hay ningún producto de 128 ticks activo a la venta.",
       table: {
         level: "Nivel",
         engineName: "Nombre del motor",

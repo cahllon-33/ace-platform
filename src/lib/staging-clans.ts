@@ -80,7 +80,7 @@ function stagingTeam(index: number, name: string): LayoutTeam {
       winStreak: 0,
       wins: 3 + ((index + slot) % 9),
       losses: 1 + ((index + slot * 2) % 6),
-      rating: 1000,
+      rating: 1200,
       gear: PLACEHOLDER_GEAR,
     })),
   };

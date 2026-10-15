@@ -34,7 +34,7 @@ export const features: TextBag["features"] = {
     calibration: {
       title: "10단계 실력 캘리브레이션 티어",
       intro:
-        "경쟁 캘리브레이션은 문서화된 Elo 방식 공식(버전 {version}, K 계수 {kFactor}, 스케일 {scale})을 사용합니다. 신규 계정은 랭크 1(Recruit), 무료 구독, ACTIVE 상태, 경쟁 레이팅 {startingRating}에서 시작합니다. 로비의 크리스털 라벨은 시각적 별칭입니다. 유료 코스메틱으로 레이팅, 더 쉬운 상대, 128틱 서버, 대기열 우선권을 살 수 없습니다. 판매 중인 실시간 128틱 상품은 없습니다.",
+        "Competitive Calibration은 공개된 A.C.E Rating Points 규정(버전 {version}: 스텝 {kFactor}, 스케일 {scale})을 사용합니다. 신규 계정은 랭크 3(Vanguard), FREE 구독, ACTIVE 상태, 경쟁 레이팅 {startingRating}에서 시작합니다. 로비의 크리스털 이름은 시각적 별칭입니다. 유료 치장 아이템으로 레이팅, 쉬운 상대, 128틱 서버, 대기열 우선권을 살 수 없습니다. 판매 중인 활성 128틱 상품은 없습니다.",
       table: {
         level: "레벨",
         engineName: "엔진 이름",

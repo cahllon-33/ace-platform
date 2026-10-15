@@ -110,7 +110,7 @@ export const pricing: TextBag["pricing"] = {
       "title": "Avoin pääsy",
       "points": [
         "Kirjaudu Steam OpenID:llä. A.C.E. ei koskaan kysy Steam-salasanaa.",
-        "Tallennettu luokitus alkaa 1 000:sta. Mikään ottelutulos ei ole muuttanut sitä.",
+        "Tallennettu luokitus alkaa 1 200:sta. Mikään ottelutulos ei ole muuttanut sitä.",
         "Kaikki julkiset sivut: pelaa, turnaukset, tulostaulu, joukkueet ja säännöt."
       ]
     },
@@ -260,7 +260,7 @@ export const pricing: TextBag["pricing"] = {
         "Maksu: ei mitään. Paketin valinta ei vaadi korttia.",
         "Sähköposti: ei mitään. A.C.E. ei lähetä tätä kirjettä sähköpostiin.",
         "Tallennettu taso: ennallaan. Erikoismerkit ja eliittisinetti näkyvät vain, kun tilille on jo tallennettu Premium.",
-        "Luokitus: ei myytävänä. Uusi tili alkaa yhä 1 000:sta."
+        "Luokitus: ei myytävänä. Uusi tili aloittaa edelleen 1 200:sta."
       ]
     },
     "today": {

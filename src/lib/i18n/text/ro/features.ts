@@ -41,7 +41,7 @@ export const features: TextBag["features"] = {
     },
     "calibration": {
       "title": "Zece niveluri de calibrare a abilităților",
-      "intro": "Calibrarea competitivă folosește o formulă documentată de tip Elo (versiunea {version}, factor K {kFactor}, scară {scale}). Conturile noi încep la rangul 1 (Recruit), abonament FREE, stare ACTIVE și rating competitiv {startingRating}. Etichetele de cristal din lobby sunt aliasuri vizuale. Cosmeticele plătite nu cumpără niciodată rating, adversari mai ușori, servere 128-tick sau prioritate la coadă. Nu există niciun produs 128-tick activ de vânzare.",
+      "intro": "Competitive Calibration folosește regulile publicate Rating Points A.C.E (versiunea {version}: pas {kFactor}, scară {scale}). Conturile noi încep la rangul 3 (Vanguard), cu abonament FREE, stare ACTIVE și {startingRating} rating competitiv. Numele cristalelor din lobby sunt aliasuri vizuale. Cosmeticele plătite nu cumpără niciodată rating, adversari mai ușori, servere de 128 tick sau prioritate la coadă. Nu există niciun produs activ de 128 tick de vânzare.",
       "table": {
         "level": "Nivel",
         "engineName": "Nume în motor",

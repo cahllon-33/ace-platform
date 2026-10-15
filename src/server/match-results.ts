@@ -33,8 +33,16 @@ export async function applyVerifiedMatchResult(args: {
     const deltas =
       winners.length && losers.length
         ? applyTeamMatchRatings({
-            winnerRatings: winners.map((player) => player.user.competitiveRating),
-            loserRatings: losers.map((player) => player.user.competitiveRating),
+            // matchesPlayed drives placement; kills are not server-recorded yet, so no MVP bonus (RP_RULES.mvpLive).
+            winners: winners.map((player) => ({
+              rating: player.user.competitiveRating,
+              matchesPlayed: player.user.wins + player.user.losses,
+            })),
+            losers: losers.map((player) => ({
+              rating: player.user.competitiveRating,
+              matchesPlayed: player.user.wins + player.user.losses,
+            })),
+            killsRecorded: false,
           })
         : { winnerDeltas: winners.map(() => 0), loserDeltas: losers.map(() => 0) };
 

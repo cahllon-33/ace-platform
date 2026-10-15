@@ -88,15 +88,15 @@ export const codex: TextBag["codex"] = {
   },
   "rankReads": {
     "rank-1-recruit": {
-      "stance": "Recruit este placa de intrare. Un cont nou legat de Steam este stocat la 1.000 Rating Points, iar 1.000 poartă încă Recruit.",
+      "stance": "Recruit este placa de intrare. Conturile noi nu mai încep aici: încep cu 1.200 Rating Points, în Vanguard. La Recruit se ajunge doar pierzând teren.",
       "detail": "Poarta Operative este 1.100. Tabelul scării deschide Recruit la 0, dar motorul nu va stoca un rating sub 100. Între 100 și 1.099 contul rămâne Recruit."
     },
     "rank-2-operative": {
-      "stance": "Operative este primul rang al cărui prag este peste numărul de pornire. Atingerea lui înseamnă că ratingul stocat a părăsit placa de intrare.",
+      "stance": "Operative se află chiar sub numărul de start. Un cont care coboară sub 1.200 ajunge aici înainte de Recruit.",
       "detail": "Intervalul are o lățime de o sută de puncte. Se închide la 1.199. Vanguard se deschide la 1.200."
     },
     "rank-3-vanguard": {
-      "stance": "Vanguard este marginea din față a scării timpurii. Contul a trecut deja de ratingul de pornire și de pragul Operative.",
+      "stance": "Vanguard este locul în care începe fiecare cont nou, cu 1.200 Rating Points. Urcarea de aici este primul pas real în clasament.",
       "detail": "Intervalul merge de la 1.200 la 1.299. Specialist se deschide la 1.300."
     },
     "rank-4-specialist": {
@@ -240,40 +240,40 @@ export const codex: TextBag["codex"] = {
     },
     "where-a-new-account-starts": {
       "title": "Unde pornește un cont nou",
-      "lede": "Autentificarea Steam creează contul la 1.000 Rating Points, rangul 1, Recruit, fără victorii și fără înfrângeri.",
+      "lede": "Autentificarea prin Steam creează contul cu 1.200 Rating Points, rangul 3, Vanguard, fără victorii și fără înfrângeri.",
       "sections": [
         {
           "heading": "Semnul de pornire",
           "paragraphs": [
-            "1.000 este în Recruit. Operative nu se deschide până la 1.100, deci un cont nou nu sare peste placa de intrare.",
-            "O nouă autentificare nu resetează un rating deja stocat. Codexul nu rulează meciuri de plasare și nu inventează un bilanț de victorii și înfrângeri."
+            "1.200 este pragul de jos al Vanguard. Operative și Recruit sunt dedesubt, așa că un cont nou începe la mijlocul primei părți a clasamentului, nu la bază.",
+            "O nouă autentificare nu resetează un rating deja salvat. Primele 10 meciuri înregistrate sunt de plasament: în timpul lor ratingul nu poate urca peste nivelul 5. Codexul nu inventează un istoric de victorii și înfrângeri."
           ]
         },
         {
           "heading": "Cum îl vezi",
           "paragraphs": [
             "După autentificarea Steam, panoul și tabla rangurilor pot afișa ratingul stocat. Dacă baza de date nu poate fi accesată, pagina spune asta în loc să inventeze un număr.",
-            "Rangul de pornire rămâne Recruit până când un rezultat înregistrat duce ratingul peste 1.100. Astăzi niciun astfel de rezultat nu este scris de pe acest site."
+            "Rangul de start rămâne Vanguard până când un rezultat înregistrat scoate ratingul din intervalul 1.200–1.299. Acest site nu scrie astăzi un astfel de rezultat."
           ]
         }
       ]
     },
     "how-points-move": {
       "title": "Cum mută un rezultat înregistrat Rating Points",
-      "lede": "Motorul folosește o singură mărime de pas, 32, și o singură scală, 400. Un rezultat este victorie, înfrângere sau egal împotriva mediei celeilalte părți.",
+      "lede": "O victorie sau o înfrângere înregistrată se măsoară față de ratingul mediu al celeilalte echipe. Împotriva unei echipe egale o victorie înseamnă +25, iar o înfrângere −25. Regulile complete sunt pe pagina Ranguri.",
       "sections": [
         {
           "heading": "Pasul",
           "paragraphs": [
-            "Scorul așteptat este șansa pe care motorul o atribuie înaintea meciului, doar pe baza celor două ratinguri. Împotriva unui rating egal acea șansă este jumătate, deci o victorie valorează 16 Rating Points, iar o înfrângere costă 16.",
-            "Împotriva unui rating mai mare, o victorie valorează mai mult de 16, iar o înfrângere costă mai puțin de 16. Împotriva unui rating mai mic, o victorie valorează mai puțin de 16, iar o înfrângere costă mai mult de 16. Rezultatul este rotunjit la un număr întreg, apoi menținut între 100 și 3.000.",
-            "La un rezultat de echipă, fiecare jucător al unei părți este măsurat față de media Rating Points a celeilalte părți. Motorul actual dă fiecărui jucător de pe acea parte același parcurs. Nu adaugă un bonus pentru un premiu personal."
+            "Scorul așteptat este șansa pe care motorul o atribuie înainte de meci, doar pe baza celor două ratinguri. La ratinguri egale este o jumătate, așa că o victorie valorează 25 Rating Points, iar o înfrângere costă 25.",
+            "Împotriva unui rating mai mare, o victorie valorează mai mult de 25, iar o înfrângere costă mai puțin. Împotriva unuia mai mic, invers. O victorie aduce mereu între 10 și 40, iar o înfrângere costă mereu între 10 și 40. La nivelurile 7–9 câștigurile din victorii se înmulțesc cu 0,8, iar la nivelul 10 cu 0,7, așa că vârful clasamentului durează mai mult. Ratingul rămâne între 100 și 3.000.",
+            "La un rezultat de echipă, fiecare jucător este măsurat față de ratingul mediu al celeilalte echipe. Un bonus MVP de 3 RP este planificat pentru momentul în care serverul va înregistra eliminările; până atunci nu se aplică niciun bonus personal."
           ]
         },
         {
           "heading": "Egalul",
           "paragraphs": [
-            "Egalul este jumătate de rezultat. Dacă ambele ratinguri sunt egale, scorul așteptat este deja jumătate, deci un egal mută numărul cu zero.",
+            "Un egal nu schimbă nimic: fiecare jucător își păstrează ratingul. Abandonarea sau părăsirea unui meci costă 50 RP, indiferent de rezultat.",
             "Tabelul de pe această pagină este motorul lucrând pe date exemplu. Acele rânduri nu sunt meciuri stocate și nu sunt contul tău."
           ]
         }

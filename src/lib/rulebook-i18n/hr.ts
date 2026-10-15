@@ -118,6 +118,14 @@ export const RB_HR: RulebookText = {
       "Poreze, naknade i troškove konverzije valute snosi igrač koji prima nagradu, osim ako stranica događaja ne navodi drukčije."
     ],
     [
+      "Rating Points (RP) mijenjaju se samo potvrđenim rezultatima mečeva, prema A.C.E pravilima Rating Points objavljenima na stranici Rangovi. Svaki novi račun počinje s 1.200 RP na razini 3 (Vanguard).",
+      "Protiv tima istog prosječnog rejtinga pobjeda donosi +25 RP, a poraz košta −25 RP. Iznos se prilagođava prosječnom rejtingu drugog tima i uvijek ostaje između 10 i 40 RP po meču. Neriješeno ništa ne mijenja.",
+      "Dobici od pobjede množe se s 0,8 na razinama 7–9 i s 0,7 na razini 10. Porazi se ne smanjuju. Rejting ostaje između 100 i 3.000 RP i ne opada zbog neaktivnosti.",
+      "Prvih 10 mečeva igrača su plasmanski mečevi. Tijekom plasmana rejting ne može porasti iznad razine 5.",
+      "Igrač koji napusti meč ili iz njega izađe gubi 50 RP bez obzira na rezultat i ne može dobiti MVP bonus meča.",
+      "MVP meča (najviše ubojstava; pri izjednačenju veća šteta, zatim manje smrti) dobiva 3 RP više pri pobjedi i gubi 3 RP manje pri porazu, unutar granica po meču. Ovaj bonus vrijedi tek kad poslužitelj bilježi ubojstva. Nijedan plaćeni plan ne mijenja Rating Points."
+    ],
+    [
       "Organizator može izmijeniti ovaj pravilnik. Izmjene se objavljuju na ovoj stranici s novim brojem verzije i datumom.",
       "Izmjene stupaju na snagu 7. dana nakon objave ili odmah ako je to potrebno radi zatvaranja rupe u pravilima, rješavanja sigurnosnog problema ili ispravka očite pogreške. Izmjene se ne primjenjuju na utakmicu koja je već u tijeku.",
       "Ako se prijevod ovog pravilnika razlikuje od engleske verzije, mjerodavna je engleska verzija."

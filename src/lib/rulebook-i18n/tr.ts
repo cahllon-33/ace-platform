@@ -118,6 +118,14 @@ export const RB_TR: RulebookText = {
       "Vergiler, ücretler ve döviz masrafları, etkinlik sayfasında aksi belirtilmedikçe ödülü alan oyuncuya aittir."
     ],
     [
+      "Rating Points (RP), yalnızca doğrulanmış maç sonuçlarıyla, Rütbeler sayfasında yayımlanan A.C.E Rating Points kurallarına göre değişir. Her yeni hesap 3. kademede (Vanguard) 1.200 RP ile başlar.",
+      "Aynı ortalama puana sahip bir takıma karşı galibiyet +25 RP kazandırır, mağlubiyet −25 RP kaybettirir. Miktar diğer takımın ortalama puanına göre ayarlanır ve her zaman maç başına 10 ile 40 RP arasında kalır. Beraberlik hiçbir şeyi değiştirmez.",
+      "Galibiyet kazançları 7–9. kademelerde 0,8, 10. kademede 0,7 ile çarpılır. Mağlubiyetler azaltılmaz. Puanlar 100 ile 3.000 RP arasında kalır ve hareketsizlik nedeniyle düşmez.",
+      "Bir oyuncunun ilk 10 maçı yerleştirme maçıdır. Yerleştirme sırasında puan 5. kademenin üstüne çıkamaz.",
+      "Bir maçı bırakan veya maçtan ayrılan oyuncu, sonuç ne olursa olsun 50 RP kaybeder ve maç MVP bonusunu alamaz.",
+      "Maçın MVP'si (en çok öldürme; eşitlikte daha fazla hasar, sonra daha az ölüm) maç başına sınırlar içinde, galibiyette 3 RP daha fazla kazanır ve mağlubiyette 3 RP daha az kaybeder. Bu bonus yalnızca sunucu öldürmeleri kaydettiğinde geçerlidir. Hiçbir ücretli plan Rating Points'i değiştirmez."
+    ],
+    [
       "Organizatör bu kural kitabını değiştirebilir. Değişiklikler bu sayfada yeni bir sürüm numarası ve tarihle yayımlanır.",
       "Değişiklikler yayımlandıktan 7 gün sonra yürürlüğe girer; bir açığı kapatmak, bir güvenlik sorununu gidermek veya bariz bir hatayı düzeltmek gerektiğinde ise derhâl yürürlüğe girer. Değişiklikler devam eden bir maça uygulanmaz.",
       "Bu kural kitabının bir çevirisi İngilizce sürümden farklıysa İngilizce sürüm geçerlidir."

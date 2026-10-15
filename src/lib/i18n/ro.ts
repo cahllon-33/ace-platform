@@ -332,7 +332,7 @@ export const RO: MessageBag = {
  seasonLayout: "Datele Sezonului 1 vor fi anunțate în curând.",
  rpEmpty: "— RP",
  rankProtocolTitle: "PROTOCOLUL DE RATING A.C.E.",
- rankProtocolBody: "Regula scrisă compară un jucător cu media de rating a celeilalte echipe. O victorie sau o înfrângere înregistrată mută ratingul salvat cu un factor de 32, iar cele 10 ranguri și 3 divizii se citesc din acel număr. Această pagină nu validează un meci, deci aici nu se aplică nicio schimbare de rating.",
+ rankProtocolBody: "Regula scrisă compară un jucător cu ratingul mediu al celeilalte echipe. Împotriva unei echipe egale o victorie înregistrată înseamnă +25 RP, iar o înfrângere −25 RP, mereu între 10 și 40 RP pe meci, iar cele 10 niveluri și 3 divizii se citesc din acest număr. Această pagină nu validează un meci, așa că aici nu se aplică nicio modificare de rating.",
  rankProgress: "Progres de rang",
  competitiveRating: "Rating competitiv",
  targetWinRate: "Țintă de victorii",

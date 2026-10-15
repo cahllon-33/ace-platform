@@ -111,7 +111,7 @@ export const pricing: TextBag["pricing"] = {
       title: "Accès libre",
       points: [
         "Connexion via Steam OpenID. A.C.E. ne demande jamais un mot de passe Steam.",
-        "Une cote enregistrée démarre à 1 000. Aucun résultat de match ne l'a modifiée.",
+        "Un classement enregistré commence à 1 200. Aucun résultat de match ne l'a modifié.",
         "Toutes les pages publiques : jouer, tournois, classement, équipes et règles.",
       ],
     },
@@ -267,7 +267,7 @@ export const pricing: TextBag["pricing"] = {
         "Paiement : aucun. Choisir ce forfait ne débite aucune carte.",
         "E-mail : aucun. A.C.E. n'envoie pas cette lettre dans une boîte de réception.",
         "Palier enregistré : inchangé. Les badges spéciaux et le sceau élite n'apparaissent que si le compte a déjà Premium enregistré.",
-        "Cote : pas à vendre. Un nouveau compte démarre toujours à 1 000.",
+        "Classement : pas à vendre. Un nouveau compte commence toujours à 1 200.",
       ],
     },
     today: {

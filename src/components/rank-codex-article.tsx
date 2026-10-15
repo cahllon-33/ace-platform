@@ -12,11 +12,11 @@ import {
 import { nextRating } from "@/lib/rating";
 
 const EXAMPLES = [
-  { you: 1000, them: 1000, score: 1 as const, result: "win" as const },
-  { you: 1000, them: 1000, score: 0 as const, result: "loss" as const },
-  { you: 1000, them: 1000, score: 0.5 as const, result: "draw" as const },
-  { you: 1000, them: 1400, score: 1 as const, result: "win" as const },
-  { you: 1000, them: 1400, score: 0 as const, result: "loss" as const },
+  { you: 1200, them: 1200, score: 1 as const, result: "win" as const },
+  { you: 1200, them: 1200, score: 0 as const, result: "loss" as const },
+  { you: 1200, them: 1200, score: 0.5 as const, result: "draw" as const },
+  { you: 1200, them: 1400, score: 1 as const, result: "win" as const },
+  { you: 1200, them: 1400, score: 0 as const, result: "loss" as const },
 ];
 
 export function RankCodexArticle({ article, text }: { article: CodexArticle; text: CodexText }) {

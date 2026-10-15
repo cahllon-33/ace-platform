@@ -143,6 +143,7 @@ export const UI_PL: Ui = {
       "Kary",
       "Transmisje",
       "Nagrody",
+      "Rating Points",
       "Zmiany"
     ]
   },

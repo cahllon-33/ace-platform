@@ -41,7 +41,7 @@ export const features: TextBag["features"] = {
     },
     "calibration": {
       "title": "Kymmenen taitokalibrointitasoa",
-      "intro": "Kilpailullinen kalibrointi käyttää dokumentoitua Elo-tyyppistä kaavaa (versio {version}, K-kerroin {kFactor}, asteikko {scale}). Uudet tilit alkavat rankingista 1 (Recruit), FREE-tilauksella, ACTIVE-tilassa ja kilpailuluokituksella {startingRating}. Aulan kristallimerkinnät ovat visuaalisia aliaksia. Maksulliset kosmetiikat eivät koskaan osta luokitusta, helpompia vastustajia, 128-tick-palvelimia tai jonoetusijaa. Toimivaa 128-tick-tuotetta ei ole myynnissä.",
+      "intro": "Competitive Calibration käyttää julkaistuja A.C.E Rating Points -sääntöjä (versio {version}: askel {kFactor}, asteikko {scale}). Uudet tilit aloittavat arvosta 3 (Vanguard), FREE-tilauksella, tilassa ACTIVE ja {startingRating} kilpailuluokituksella. Aulan kristallinimet ovat visuaalisia aliaksia. Maksullinen kosmetiikka ei koskaan osta luokitusta, helpompia vastustajia, 128-tick-palvelimia tai jonoetuoikeutta. Myynnissä ei ole aktiivista 128-tick-tuotetta.",
       "table": {
         "level": "Taso",
         "engineName": "Moottorin nimi",

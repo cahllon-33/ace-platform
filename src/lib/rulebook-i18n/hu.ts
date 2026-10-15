@@ -118,6 +118,14 @@ export const RB_HU: RulebookText = {
       "Az adókat, díjakat és devizaátváltási költségeket a díjat átvevő játékos viseli, hacsak az eseményoldal másként nem rendelkezik."
     ],
     [
+      "A Rating Points (RP) csak ellenőrzött meccseredményekkel változik, a Rangok oldalon közzétett A.C.E Rating Points szabályok szerint. Minden új fiók 1200 RP-vel kezd a 3. szinten (Vanguard).",
+      "Azonos átlagos értékszámú csapat ellen egy győzelem +25 RP-t ad, egy vereség −25 RP-be kerül. Az összeget a másik csapat átlagos értékszámához igazítjuk, és meccsenként mindig 10 és 40 RP között marad. A döntetlen semmit nem változtat.",
+      "A győzelmi nyereséget a 7–9. szinten 0,8-del, a 10. szinten 0,7-del szorozzuk. A vereségeket nem csökkentjük. Az értékszám 100 és 3000 RP között marad, és inaktivitás miatt nem csökken.",
+      "Egy játékos első 10 meccse besoroló meccs. A besorolás alatt az értékszám nem emelkedhet az 5. szint fölé.",
+      "Az a játékos, aki elhagy vagy félbehagy egy meccset, 50 RP-t veszít az eredménytől függetlenül, és nem kaphat meccs-MVP-bónuszt.",
+      "A meccs MVP-je (legtöbb ölés; egyenlőségnél több sebzés, majd kevesebb halál) győzelemnél 3 RP-vel többet kap, vereségnél 3 RP-vel kevesebbet veszít, a meccsenkénti korlátokon belül. Ez a bónusz csak akkor érvényes, amikor a szerver rögzíti az öléseket. Egyetlen fizetős csomag sem változtatja meg a Rating Points-ot."
+    ],
+    [
       "A szervező módosíthatja ezt a szabálykönyvet. A módosításokat ezen az oldalon, új verziószámmal és dátummal teszik közzé.",
       "A módosítások a közzétételt követő 7. napon lépnek hatályba, vagy azonnal, ha egy kiskapu bezárásához, biztonsági probléma kezeléséhez vagy nyilvánvaló hiba javításához szükséges. A módosítások a már folyamatban lévő mérkőzésre nem vonatkoznak.",
       "Ha a szabálykönyv valamely fordítása eltér az angol nyelvű változattól, az angol nyelvű változat az irányadó."

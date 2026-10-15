@@ -1,6 +1,17 @@
 import type { TextBag } from "../types";
 
 export const account: TextBag["account"] = {
+  badgeColor: {
+    "title": "Culoarea insignei",
+    "body": "Alege culoarea emblemei tale standard de rang. Doar cosmetic: nu îți schimbă niciodată Rating Points, rangul sau matchmakingul. Arta ilustrată Premium își păstrează culorile nivelului.",
+    "presets": "Culorile nivelurilor",
+    "custom": "Culoare personalizată",
+    "reset": "Folosește culoarea nivelului meu",
+    "saved": "Culoarea insignei a fost salvată.",
+    "failed": "Culoarea insignei nu a putut fi salvată. Încearcă din nou.",
+    "previewAlt": "Previzualizarea emblemei tale de rang în culoarea aleasă",
+    "swatch": "Culoarea {tier}"
+  },
   statsConsole: {
     "metaTitle": "Statistici de jucător",
     "kicker": "STATISTICI DE JUCĂTOR",

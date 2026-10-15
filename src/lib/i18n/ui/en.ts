@@ -126,6 +126,7 @@ export const UI_EN = {
       "Penalties",
       "Broadcast",
       "Prizes",
+      "Rating Points",
       "Amendments",
     ],
   },

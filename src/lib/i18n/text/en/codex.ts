@@ -96,18 +96,18 @@
   rankReads: {
     "rank-1-recruit": {
       stance:
-        "Recruit is the entry plate. A new Steam-linked account is stored at 1,000 Rating Points, and 1,000 still wears Recruit.",
+        "Recruit is the entry plate. New accounts no longer start here: they start at 1,200 Rating Points, in Vanguard. Recruit is reached only by losing ground.",
       detail:
         "The Operative gate is 1,100. The ladder table opens Recruit at 0, but the engine will not store a rating under 100. Between 100 and 1,099 the account remains Recruit.",
     },
     "rank-2-operative": {
       stance:
-        "Operative is the first rank whose floor sits above the starting number. Reaching it means the stored rating has left the entry plate.",
+        "Operative sits just below the starting number. An account that drops under 1,200 lands here before it reaches Recruit.",
       detail: "The band is one hundred points wide. It closes at 1,199. Vanguard opens at 1,200.",
     },
     "rank-3-vanguard": {
       stance:
-        "Vanguard is the forward edge of the early ladder. The account is already past both the starting rating and the Operative floor.",
+        "Vanguard is where every new account starts, at 1,200 Rating Points. Climbing from here is the first real step up the ladder.",
       detail: "The band runs from 1,200 through 1,299. Specialist opens at 1,300.",
     },
     "rank-4-specialist": {
@@ -261,40 +261,40 @@
     },
     "where-a-new-account-starts": {
       title: "Where a new account starts",
-      lede: "Steam sign-in creates the account at 1,000 Rating Points, rank 1, Recruit, with no wins and no losses.",
+      lede: "Steam sign-in creates the account at 1,200 Rating Points, rank 3, Vanguard, with no wins and no losses.",
       sections: [
         {
           heading: "The opening mark",
           paragraphs: [
-            "1,000 is inside Recruit. Operative does not open until 1,100, so a new account does not skip the entry plate.",
-            "Signing in again does not reset a rating that is already stored. The codex does not run placement matches, and it does not invent a win-loss record.",
+            "1,200 is the floor of Vanguard. Operative and Recruit sit below it, so a new account starts in the middle of the early ladder, not at the bottom.",
+            "Signing in again does not reset a rating that is already stored. The first 10 recorded matches are placement: during them the rating cannot rise above tier 5. The codex does not invent a win-loss record.",
           ],
         },
         {
           heading: "How to see it",
           paragraphs: [
             "After Steam sign-in, the dashboard and the ranks board can show the stored rating. If the database is unreachable, the page says so instead of inventing a number.",
-            "The starting rank stays Recruit until a recorded result moves the rating across 1,100. No such result is written from this site today.",
+            "The starting rank stays Vanguard until a recorded result moves the rating out of the 1,200–1,299 band. No such result is written from this site today.",
           ],
         },
       ],
     },
     "how-points-move": {
       title: "How a recorded result moves Rating Points",
-      lede: "The engine uses one step size, 32, and one scale, 400. A result is a win, a loss, or a draw against the other side’s average.",
+      lede: "A recorded win or loss is measured against the other team's average rating. Against an equal team a win is +25 and a loss is −25. The full rules are on the Ranks page.",
       sections: [
         {
           heading: "The step",
           paragraphs: [
-            "Expected score is the chance the engine assigns before the match, based only on the two ratings. Against an equal rating that chance is one half, so a win is worth 16 Rating Points and a loss costs 16.",
-            "Against a higher rating, a win is worth more than 16 and a loss costs less than 16. Against a lower rating, a win is worth less than 16 and a loss costs more than 16. The result is rounded to a whole number, then held between 100 and 3,000.",
-            "On a team result, every player on a side is measured against the other side’s average Rating Points. The current engine gives each player on that side the same path. It does not add a bonus for a personal award.",
+            "Expected score is the chance the engine assigns before the match, based only on the two ratings. Against an equal rating that chance is one half, so a win is worth 25 Rating Points and a loss costs 25.",
+            "Against a higher rating, a win is worth more than 25 and a loss costs less. Against a lower rating, the opposite. A win always gives 10 to 40 and a loss always costs 10 to 40. In tiers 7–9 win gains are multiplied by 0.8 and in tier 10 by 0.7, so the top of the ladder takes longer. The rating is held between 100 and 3,000.",
+            "On a team result, every player is measured against the other team's average rating. A match MVP bonus of 3 RP is planned for when the server records kills; until then no personal bonus is applied.",
           ],
         },
         {
           heading: "A draw",
           paragraphs: [
-            "A draw is half a result. If both ratings are equal, the expected score is already one half, so a draw moves the number by zero.",
+            "A draw changes nothing: every player keeps the same rating. Abandoning or leaving a match costs 50 RP, whatever the result.",
             "The table on this page is the engine working on example inputs. Those rows are not stored matches, and they are not your account.",
           ],
         },

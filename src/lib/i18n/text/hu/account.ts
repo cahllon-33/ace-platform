@@ -1,6 +1,17 @@
 import type { TextBag } from "../types";
 
 export const account: TextBag["account"] = {
+  badgeColor: {
+    "title": "Jelvény színe",
+    "body": "Válaszd ki a szokásos rangjelvényed színét. Csak kozmetikai: soha nem változtatja meg a Rating Points-odat, a rangodat vagy a párosítást. A Premium illusztrált grafika megtartja a szintje színeit.",
+    "presets": "Szintszínek",
+    "custom": "Egyéni szín",
+    "reset": "A szintem színének használata",
+    "saved": "A jelvény színe elmentve.",
+    "failed": "A jelvény színét nem sikerült menteni. Próbáld újra.",
+    "previewAlt": "A rangjelvényed előnézete a kiválasztott színben",
+    "swatch": "{tier} színe"
+  },
   statsConsole: {
     "metaTitle": "Játékosstatisztika",
     "kicker": "JÁTÉKOSSTATISZTIKA",

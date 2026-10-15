@@ -32,7 +32,7 @@
     calibration: {
       title: "Ten skill calibration tiers",
       intro:
-        "Competitive Calibration uses a documented Elo-style formula (version {version}, K-factor {kFactor}, scale {scale}). New accounts start at Rank 1 (Recruit), FREE subscription, ACTIVE status, and {startingRating} competitive rating. Crystal labels on the lobby are visual aliases. Paid cosmetics never buy rating, easier opponents, 128-tick servers, or queue priority. There is no live 128-tick product for sale.",
+        "Competitive Calibration uses the published A.C.E Rating Points rules (version {version}: step {kFactor}, scale {scale}). New accounts start at Rank 3 (Vanguard), FREE subscription, ACTIVE status, and {startingRating} competitive rating. Crystal labels on the lobby are visual aliases. Paid cosmetics never buy rating, easier opponents, 128-tick servers, or queue priority. There is no live 128-tick product for sale.",
       table: {
         level: "Level",
         engineName: "Engine name",

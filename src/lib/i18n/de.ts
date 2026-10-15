@@ -297,7 +297,7 @@ export const DE: MessageBag = {
  seasonLayout: "Die Termine für Season 1 werden bald bekanntgegeben.",
  rpEmpty: "— RP",
  rankProtocolTitle: "A.C.E. WERTUNGSPROTOKOLL",
- rankProtocolBody: "Die schriftliche Regel vergleicht einen Spieler mit der durchschnittlichen Wertung des anderen Teams. Ein aufgezeichneter Sieg oder eine Niederlage verschiebt die gespeicherte Wertung um den Faktor 32, und die 10 Ränge und 3 Divisionen werden aus dieser Zahl gelesen. Diese Seite bestätigt kein Spiel, deshalb wird hier keine Wertungsänderung angewendet.",
+ rankProtocolBody: "Die schriftliche Regel vergleicht einen Spieler mit der Durchschnittswertung des anderen Teams. Gegen ein gleich starkes Team bringt ein aufgezeichneter Sieg +25 RP und eine Niederlage −25 RP, immer innerhalb von 10 bis 40 RP pro Match, und die 10 Stufen und 3 Divisionen werden aus dieser Zahl gelesen. Diese Seite bestätigt kein Match, daher wird hier keine Wertungsänderung angewendet.",
  rankProgress: "Rangfortschritt",
  competitiveRating: "Wettkampfwertung",
  targetWinRate: "Ziel-Siegquote",

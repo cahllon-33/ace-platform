@@ -110,7 +110,7 @@ export const pricing: TextBag["pricing"] = {
       "title": "Açık erişim",
       "points": [
         "Steam OpenID ile oturum açın. A.C.E. asla Steam şifresi istemez.",
-        "Kayıtlı derece 1.000'den başlar. Hiçbir maç sonucu onu değiştirmedi.",
+        "Kayıtlı bir puan 1.200'den başlar. Hiçbir maç sonucu onu değiştirmedi.",
         "Tüm herkese açık sayfalar: oyna, turnuvalar, sıralama, takımlar ve kurallar."
       ]
     },
@@ -260,7 +260,7 @@ export const pricing: TextBag["pricing"] = {
         "Ödeme: yok. Bu planı seçmek kart gerektirmez.",
         "E-posta: yok. A.C.E. bu mektubu bir gelen kutusuna göndermez.",
         "Kayıtlı kademe: değişmedi. Özel rozetler ve elit mühür yalnızca hesapta zaten Premium kayıtlıysa görünür.",
-        "Derece: satılık değil. Yeni bir hesap yine 1.000'den başlar."
+        "Puan: satılık değil. Yeni bir hesap yine 1.200'den başlar."
       ]
     },
     "today": {

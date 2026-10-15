@@ -57,7 +57,7 @@
       support:
         "Open Support or Contact on this website. A support prompt does not open a ticket, and text typed on Contact is not delivered.",
       rating:
-        "A new rating starts at 1,000. This page does not sell rating, open a queue, connect a CS2 server, or deliver a prize.",
+        "A new rating starts at 1,200. This page does not sell rating, open a queue, connect a CS2 server, or deliver a prize.",
     },
   },
   squad: {

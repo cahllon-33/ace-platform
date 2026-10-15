@@ -143,6 +143,7 @@ export const UI_MK: Ui = {
       "Казни",
       "Пренос",
       "Награди",
+      "Rating Points",
       "Измени"
     ]
   },

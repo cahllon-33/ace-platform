@@ -88,15 +88,15 @@ export const codex: TextBag["codex"] = {
   },
   "rankReads": {
     "rank-1-recruit": {
-      "stance": "Recruit je ulazna pločica. Novi račun povezan sa Steamom sprema se na 1.000 Rating Pointsa, a 1.000 i dalje nosi Recruit.",
+      "stance": "Recruit je ulazna pločica. Novi računi više ne počinju ovdje: počinju s 1.200 Rating Points u Vanguardu. Do Recruita se dolazi samo gubitkom bodova.",
       "detail": "Vrata Operativea su 1.100. Tablica ljestvice otvara Recruit na 0, ali motor neće spremiti rejting ispod 100. Između 100 i 1.099 račun ostaje Recruit."
     },
     "rank-2-operative": {
-      "stance": "Operative je prvi rang čija je donja granica iznad početnog broja. Dostizanje znači da je spremljeni rejting napustio ulaznu pločicu.",
+      "stance": "Operative je odmah ispod početnog broja. Račun koji padne ispod 1.200 dolazi ovamo prije nego što stigne do Recruita.",
       "detail": "Raspon je širok sto bodova. Zatvara se na 1.199. Vanguard se otvara na 1.200."
     },
     "rank-3-vanguard": {
-      "stance": "Vanguard je prednji rub rane ljestvice. Račun je već prošao i početni rejting i donju granicu Operativea.",
+      "stance": "Vanguard je mjesto gdje počinje svaki novi račun, s 1.200 Rating Points. Uspon odavde prvi je pravi korak uz ljestvicu.",
       "detail": "Raspon ide od 1.200 do 1.299. Specialist se otvara na 1.300."
     },
     "rank-4-specialist": {
@@ -240,40 +240,40 @@ export const codex: TextBag["codex"] = {
     },
     "where-a-new-account-starts": {
       "title": "Gdje počinje novi račun",
-      "lede": "Steam prijava stvara račun na 1.000 Rating Pointsa, rang 1, Recruit, bez pobjeda i poraza.",
+      "lede": "Prijava putem Steama stvara račun s 1.200 Rating Points, rang 3, Vanguard, bez pobjeda i poraza.",
       "sections": [
         {
           "heading": "Početna oznaka",
           "paragraphs": [
-            "1.000 je unutar Recruita. Operative se otvara tek na 1.100, pa novi račun ne preskače ulaznu pločicu.",
-            "Ponovna prijava ne resetira već spremljeni rejting. Kodeks ne igra plasmanske mečeve i ne izmišlja omjer pobjeda i poraza."
+            "1.200 je donja granica Vanguarda. Operative i Recruit su ispod, pa novi račun počinje u sredini ranog dijela ljestvice, a ne na dnu.",
+            "Ponovna prijava ne poništava već spremljeni rejting. Prvih 10 zabilježenih mečeva su plasmanski: tijekom njih rejting ne može porasti iznad razine 5. Kodeks ne izmišlja omjer pobjeda i poraza."
           ]
         },
         {
           "heading": "Kako ga vidjeti",
           "paragraphs": [
             "Nakon Steam prijave nadzorna ploča i ploča rangova mogu prikazati spremljeni rejting. Ako baza podataka nije dostupna, stranica to kaže umjesto da izmisli broj.",
-            "Početni rang ostaje Recruit dok zabilježeni rezultat ne pomakne rejting preko 1.100. Danas se takav rezultat ne upisuje s ove stranice."
+            "Početni rang ostaje Vanguard dok zabilježeni rezultat ne izvede rejting iz raspona 1.200–1.299. Ova stranica danas ne zapisuje takav rezultat."
           ]
         }
       ]
     },
     "how-points-move": {
       "title": "Kako zabilježeni rezultat pomiče Rating Points",
-      "lede": "Motor koristi jednu veličinu koraka, 32, i jednu skalu, 400. Rezultat je pobjeda, poraz ili neriješeno protiv prosjeka druge strane.",
+      "lede": "Zabilježena pobjeda ili poraz mjeri se u odnosu na prosječni rejting drugog tima. Protiv jednakog tima pobjeda je +25, a poraz −25. Potpuna pravila nalaze se na stranici Rangovi.",
       "sections": [
         {
           "heading": "Korak",
           "paragraphs": [
-            "Očekivani rezultat je vjerojatnost koju motor dodjeljuje prije meča, samo na temelju dvaju rejtinga. Protiv jednakog rejtinga ta je vjerojatnost pola, pa pobjeda vrijedi 16 Rating Pointsa, a poraz košta 16.",
-            "Protiv višeg rejtinga pobjeda vrijedi više od 16, a poraz košta manje od 16. Protiv nižeg rejtinga pobjeda vrijedi manje od 16, a poraz košta više od 16. Rezultat se zaokružuje na cijeli broj, zatim drži između 100 i 3.000.",
-            "Kod timskog rezultata svaki igrač na strani mjeri se prema prosječnim Rating Pointsima druge strane. Trenutačni motor svakom igraču te strane daje isti put. Ne dodaje bonus za osobnu nagradu."
+            "Očekivani rezultat je šansa koju sustav dodjeljuje prije meča, samo na temelju dvaju rejtinga. Pri jednakom rejtingu ona iznosi polovicu, pa pobjeda vrijedi 25 Rating Points, a poraz košta 25.",
+            "Protiv višeg rejtinga pobjeda vrijedi više od 25, a poraz košta manje. Protiv nižeg je obrnuto. Pobjeda uvijek donosi od 10 do 40, a poraz uvijek košta od 10 do 40. Na razinama 7–9 dobici od pobjede množe se s 0,8, a na razini 10 s 0,7, pa vrh ljestvice traje dulje. Rejting ostaje između 100 i 3.000.",
+            "Kod timskog rezultata svaki se igrač mjeri u odnosu na prosječni rejting drugog tima. MVP bonus meča od 3 RP planiran je za trenutak kad poslužitelj počne bilježiti ubojstva; do tada se ne primjenjuje osobni bonus."
           ]
         },
         {
           "heading": "Neriješeno",
           "paragraphs": [
-            "Neriješeno je pola rezultata. Ako su oba rejtinga jednaka, očekivani rezultat je već pola, pa neriješeno pomiče broj za nulu.",
+            "Neriješeno ništa ne mijenja: svaki igrač zadržava svoj rejting. Napuštanje ili izlazak iz meča košta 50 RP bez obzira na rezultat.",
             "Tablica na ovoj stranici je motor koji radi s primjernim ulazima. Ti retci nisu spremljeni mečevi i nisu tvoj račun."
           ]
         }

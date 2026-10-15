@@ -41,7 +41,7 @@ export const features: TextBag["features"] = {
     },
     "calibration": {
       "title": "Deset razina kalibracije vještine",
-      "intro": "Natjecateljska kalibracija koristi dokumentiranu Elo formulu (verzija {version}, K-faktor {kFactor}, skala {scale}). Novi računi počinju na rangu 1 (Recruit), s FREE pretplatom, statusom ACTIVE i natjecateljskim rejtingom {startingRating}. Kristalne oznake u predvorju vizualni su aliasi. Plaćena kozmetika nikad ne kupuje rejting, lakše protivnike, 128-tick poslužitelje ni prioritet u redu. Ne postoji aktivni 128-tick proizvod na prodaju.",
+      "intro": "Competitive Calibration koristi objavljena A.C.E pravila Rating Points (verzija {version}: korak {kFactor}, skala {scale}). Novi računi počinju na rangu 3 (Vanguard), s pretplatom FREE, statusom ACTIVE i {startingRating} natjecateljskog rejtinga. Nazivi kristala u predvorju vizualni su nadimci. Plaćena kozmetika nikad ne kupuje rejting, lakše protivnike, 128-tick poslužitelje ni prednost u redu. Nema aktivnog 128-tick proizvoda u prodaji.",
       "table": {
         "level": "Razina",
         "engineName": "Naziv u motoru",

@@ -325,7 +325,7 @@ export const ZH: MessageBag = {
  seasonLayout: "第 1 赛季日期即将公布。",
  rpEmpty: "— RP",
  rankProtocolTitle: "A.C.E. 评分规则",
- rankProtocolBody: "成文规则把一名玩家与对方队伍的平均评分相比较。一次已记录的胜或负会按系数 32 移动已保存的评分，10 个段位和 3 个分段都从该数字读取。此页面不核对比赛，因此这里不应用评分变化。",
+ rankProtocolBody: "书面规则将玩家与对方队伍的平均积分进行比较。对阵实力相当的队伍，记录的胜利 +25 RP，失败 −25 RP，每场始终在 10 到 40 RP 之间，10 个段位和 3 个分段都由这个数字确定。本页面不验证比赛，因此这里不会产生积分变化。",
  rankProgress: "段位进度",
  competitiveRating: "竞技评分",
  targetWinRate: "目标胜率",

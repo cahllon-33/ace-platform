@@ -110,7 +110,7 @@ export const pricing: TextBag["pricing"] = {
       "title": "Acces deschis",
       "points": [
         "Autentifică-te cu Steam OpenID. A.C.E. nu cere niciodată parola Steam.",
-        "Ratingul stocat începe de la 1.000. Niciun rezultat de meci nu l-a schimbat.",
+        "Un rating salvat începe de la 1.200. Niciun rezultat de meci nu l-a schimbat.",
         "Toate paginile publice: joacă, turnee, clasament, echipe și reguli."
       ]
     },
@@ -260,7 +260,7 @@ export const pricing: TextBag["pricing"] = {
         "Plată: niciuna. Alegerea acestui plan nu preia un card.",
         "E-mail: niciunul. A.C.E. nu trimite această scrisoare într-o căsuță.",
         "Nivel stocat: neschimbat. Insignele speciale și sigiliul elite apar doar când contul stochează deja Premium.",
-        "Rating: nu e de vânzare. Un cont nou începe tot de la 1.000."
+        "Rating: nu este de vânzare. Un cont nou începe în continuare de la 1.200."
       ]
     },
     "today": {

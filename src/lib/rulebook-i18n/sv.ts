@@ -118,6 +118,14 @@ export const RB_SV: RulebookText = {
       "Skatter, avgifter och valutakostnader bärs av den mottagande spelaren, om inte evenemangssidan anger annat."
     ],
     [
+      "Rating Points (RP) ändras bara genom verifierade matchresultat, enligt A.C.E-reglerna för Rating Points som publiceras på sidan Ranger. Varje nytt konto börjar med 1 200 RP på nivå 3 (Vanguard).",
+      "Mot ett lag med samma genomsnittliga rating ger en vinst +25 RP och en förlust kostar −25 RP. Beloppet justeras efter det andra lagets genomsnittliga rating och ligger alltid mellan 10 och 40 RP per match. Oavgjort ändrar ingenting.",
+      "Vinstpoäng multipliceras med 0,8 på nivå 7–9 och med 0,7 på nivå 10. Förluster minskas inte. Ratingen hålls mellan 100 och 3 000 RP och sjunker inte vid inaktivitet.",
+      "En spelares första 10 matcher är placeringsmatcher. Under placeringen kan ratingen inte stiga över nivå 5.",
+      "En spelare som lämnar eller överger en match förlorar 50 RP oavsett resultat och kan inte få matchens MVP-bonus.",
+      "Matchens MVP (flest kills; vid lika mest skada och sedan minst antal dödsfall) får 3 RP mer vid vinst och förlorar 3 RP mindre vid förlust, inom gränserna per match. Bonusen gäller först när servern registrerar kills. Ingen betalplan ändrar Rating Points."
+    ],
+    [
       "Arrangören får ändra denna regelbok. Ändringar publiceras på denna sida med nytt versionsnummer och datum.",
       "Ändringar träder i kraft 7 dagar efter publicering, eller omedelbart när det behövs för att täppa till ett kryphål, åtgärda ett säkerhetsproblem eller rätta ett uppenbart fel. Ändringar gäller inte en match som redan pågår.",
       "Om en översättning av denna regelbok skiljer sig från den engelska versionen gäller den engelska versionen."

@@ -41,7 +41,7 @@ export const features: TextBag["features"] = {
     },
     "calibration": {
       "title": "Tio nivåer av färdighetskalibrering",
-      "intro": "Tävlingskalibreringen använder en dokumenterad Elo-liknande formel (version {version}, K-faktor {kFactor}, skala {scale}). Nya konton börjar på rank 1 (Recruit), FREE-prenumeration, ACTIVE-status och tävlingsrating {startingRating}. Kristallnamnen i lobbyn är visuella alias. Betalda kosmetiska föremål köper aldrig rating, lättare motståndare, 128-tick-servrar eller köprioritet. Det finns ingen 128-tick-produkt till salu.",
+      "intro": "Competitive Calibration använder de publicerade A.C.E-reglerna för Rating Points (version {version}: steg {kFactor}, skala {scale}). Nya konton börjar på rang 3 (Vanguard), med FREE-abonnemang, status ACTIVE och {startingRating} i tävlingsrating. Kristallnamnen i lobbyn är visuella alias. Betald kosmetika köper aldrig rating, lättare motståndare, 128-tick-servrar eller köprioritet. Det finns ingen aktiv 128-tick-produkt till salu.",
       "table": {
         "level": "Nivå",
         "engineName": "Motornamn",

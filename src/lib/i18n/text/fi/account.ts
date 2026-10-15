@@ -1,6 +1,17 @@
 import type { TextBag } from "../types";
 
 export const account: TextBag["account"] = {
+  badgeColor: {
+    "title": "Merkin väri",
+    "body": "Valitse tavallisen arvomerkkisi väri. Vain kosmeettinen: se ei koskaan muuta Rating Pointsejasi, arvoasi tai otteluiden muodostusta. Premiumin kuvitettu taide säilyttää tasonsa värit.",
+    "presets": "Tasojen värit",
+    "custom": "Oma väri",
+    "reset": "Käytä tasoni väriä",
+    "saved": "Merkin väri tallennettu.",
+    "failed": "Merkin väriä ei voitu tallentaa. Yritä uudelleen.",
+    "previewAlt": "Esikatselu arvomerkistäsi valitussa värissä",
+    "swatch": "Väri {tier}"
+  },
   statsConsole: {
     "metaTitle": "Pelaajatilastot",
     "kicker": "PELAAJATILASTOT",

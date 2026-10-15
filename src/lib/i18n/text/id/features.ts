@@ -41,7 +41,7 @@ export const features: TextBag["features"] = {
     },
     "calibration": {
       "title": "Sepuluh tingkat kalibrasi keterampilan",
-      "intro": "Kalibrasi Kompetitif menggunakan rumus gaya Elo yang terdokumentasi (versi {version}, faktor K {kFactor}, skala {scale}). Akun baru dimulai di Peringkat 1 (Recruit), langganan FREE, status ACTIVE, dan rating kompetitif {startingRating}. Label kristal di lobi adalah alias visual. Kosmetik berbayar tidak pernah membeli rating, lawan yang lebih mudah, server 128-tick, atau prioritas antrean. Tidak ada produk 128-tick aktif yang dijual.",
+      "intro": "Competitive Calibration memakai aturan Rating Points A.C.E yang dipublikasikan (versi {version}: langkah {kFactor}, skala {scale}). Akun baru mulai di Rank 3 (Vanguard), langganan FREE, status ACTIVE, dan {startingRating} rating kompetitif. Label kristal di lobi adalah alias visual. Kosmetik berbayar tidak pernah membeli rating, lawan yang lebih mudah, server 128-tick, atau prioritas antrean. Tidak ada produk 128-tick aktif yang dijual.",
       "table": {
         "level": "Level",
         "engineName": "Nama mesin",

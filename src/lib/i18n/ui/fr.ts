@@ -143,6 +143,7 @@ export const UI_FR: Ui = {
       "Sanctions",
       "Diffusion",
       "Récompenses",
+      "Rating Points",
       "Modifications"
     ]
   },

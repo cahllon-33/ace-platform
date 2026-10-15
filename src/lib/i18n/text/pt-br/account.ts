@@ -1,6 +1,17 @@
 import type { TextBag } from "../types";
 
 export const account: TextBag["account"] = {
+  badgeColor: {
+    "title": "Cor do emblema",
+    "body": "Escolha a cor do seu emblema de patente padrão. Apenas cosmético: nunca altera os seus Rating Points, a sua patente nem o matchmaking. A arte ilustrada Premium mantém as cores do seu nível.",
+    "presets": "Cores dos níveis",
+    "custom": "Cor personalizada",
+    "reset": "Usar a cor do meu nível",
+    "saved": "Cor do emblema salva.",
+    "failed": "Não foi possível guardar a cor do emblema. Tente novamente.",
+    "previewAlt": "Prévia do seu emblema de patente na cor escolhida",
+    "swatch": "Cor {tier}"
+  },
   statsConsole: {
     "metaTitle": "Estatísticas de jogador",
     "kicker": "ESTATÍSTICAS DE JOGADOR",

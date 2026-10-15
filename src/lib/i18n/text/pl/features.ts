@@ -34,7 +34,7 @@ export const features: TextBag["features"] = {
     calibration: {
       title: "Dziesięć szczebli kalibracji umiejętności",
       intro:
-        "Kalibracja konkurencyjna używa udokumentowanego wzoru w stylu Elo (wersja {version}, współczynnik K {kFactor}, skala {scale}). Nowe konta zaczynają od rangi 1 (Recruit), subskrypcji FREE, statusu ACTIVE i oceny turniejowej {startingRating}. Kryształowe etykiety w poczekalni to wizualne aliasy. Płatne kosmetyki nigdy nie kupują oceny, łatwiejszych przeciwników, serwerów 128 tick ani pierwszeństwa w kolejce. Nie ma działającego produktu 128 tick na sprzedaż.",
+        "Competitive Calibration korzysta z opublikowanych zasad Rating Points A.C.E (wersja {version}: krok {kFactor}, skala {scale}). Nowe konta zaczynają od rangi 3 (Vanguard), subskrypcji FREE, statusu ACTIVE i {startingRating} ratingu rankingowego. Nazwy kryształów w lobby to aliasy wizualne. Płatne kosmetyki nigdy nie kupują ratingu, łatwiejszych przeciwników, serwerów 128-tick ani pierwszeństwa w kolejce. Nie ma w sprzedaży aktywnego produktu 128-tick.",
       table: {
         level: "Poziom",
         engineName: "Nazwa w silniku",

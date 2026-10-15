@@ -71,9 +71,11 @@ model User {
   subscriptionTier  SubscriptionTier @default(FREE)
   /// null = no explicit choice: PREMIUM plan shows Premium art by default. STANDARD/PREMIUM = explicit choice.
   rankArt           RankArt?
+  /// Standard emblem color chosen by the player (#rrggbb). null = tier color. Cosmetic only.
+  badgeColor        String?          @db.VarChar(7)
   /// Engine ladder step. Database CHECK plus application code keep this in 1–10.
-  rankLevel         Int              @default(1)
-  competitiveRating Int              @default(1000)
+  rankLevel         Int              @default(3)
+  competitiveRating Int              @default(1200)
   wins              Int              @default(0)
   losses            Int              @default(0)
   createdAt         DateTime         @default(now())

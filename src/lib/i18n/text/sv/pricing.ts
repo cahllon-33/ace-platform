@@ -110,7 +110,7 @@ export const pricing: TextBag["pricing"] = {
       "title": "Öppen åtkomst",
       "points": [
         "Logga in med Steam OpenID. A.C.E. ber aldrig om ett Steam-lösenord.",
-        "En sparad rating börjar på 1 000. Inget matchresultat har ändrat den.",
+        "En sparad rating börjar på 1 200. Inget matchresultat har ändrat den.",
         "Alla publika sidor: spela, turneringar, topplista, lag och regler."
       ]
     },
@@ -260,7 +260,7 @@ export const pricing: TextBag["pricing"] = {
         "Betalning: ingen. Att välja den här planen kräver inget kort.",
         "E-post: ingen. A.C.E. skickar inte det här brevet till en inkorg.",
         "Sparad nivå: oförändrad. Specialmärken och elitsigillet visas bara när kontot redan har Premium sparat.",
-        "Rating: inte till salu. Ett nytt konto börjar fortfarande på 1 000."
+        "Rating: inte till salu. Ett nytt konto börjar fortfarande på 1 200."
       ]
     },
     "today": {
