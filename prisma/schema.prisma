@@ -69,7 +69,8 @@ model User {
   avatarUrl         String           @default("")
   accountStatus     AccountStatus    @default(ACTIVE)
   subscriptionTier  SubscriptionTier @default(FREE)
-  rankArt           RankArt          @default(STANDARD)
+  /// null = no explicit choice: PREMIUM plan shows Premium art by default. STANDARD/PREMIUM = explicit choice.
+  rankArt           RankArt?
   /// Engine ladder step. Database CHECK plus application code keep this in 1–10.
   rankLevel         Int              @default(1)
   competitiveRating Int              @default(1000)

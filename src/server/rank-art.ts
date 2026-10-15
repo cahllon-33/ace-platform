@@ -20,11 +20,22 @@ export function canUsePremiumRankArt(tier: SubscriptionTier): boolean {
 }
 
 /**
- * Read-side gate: a stored PREMIUM choice is ignored unless the plan is still PREMIUM,
- * so a downgrade or an edited row can never show Premium art on a profile.
+ * Read-side gate. Non-PREMIUM plans always get standard art, whatever is stored, so a downgrade
+ * or an edited row can never show Premium art. A PREMIUM plan gets Premium art by default
+ * (rankArt null = no explicit choice) and keeps standard only when the player explicitly chose it.
  */
-export function effectiveRankArt(user: { subscriptionTier: SubscriptionTier; rankArt: DbRankArt }): RankArt {
-  return user.rankArt === "PREMIUM" && canUsePremiumRankArt(user.subscriptionTier) ? "premium" : "standard";
+export function effectiveRankArt(user: { subscriptionTier: SubscriptionTier; rankArt: DbRankArt | null }): RankArt {
+  if (!canUsePremiumRankArt(user.subscriptionTier)) return "standard";
+  return user.rankArt === "STANDARD" ? "standard" : "premium";
+}
+
+/**
+ * What to store for a picker save. Only a PREMIUM plan can make an explicit choice; any other plan
+ * stores null, so buying Premium later switches the art on automatically.
+ */
+export function storedRankArtChoice(tier: SubscriptionTier, art: RankArt): DbRankArt | null {
+  if (!canUsePremiumRankArt(tier)) return null;
+  return art === "premium" ? "PREMIUM" : "STANDARD";
 }
 
 export function parseRankArt(value: unknown): RankArt | null {
@@ -37,6 +48,6 @@ export async function setRankArt(userId: string, art: RankArt): Promise<RankArt>
   const user = await prisma.user.findUnique({ where: { id: userId }, select: { subscriptionTier: true } });
   if (!user) throw new PremiumRankArtRequired();
   if (art === "premium" && !canUsePremiumRankArt(user.subscriptionTier)) throw new PremiumRankArtRequired();
-  await prisma.user.update({ where: { id: userId }, data: { rankArt: art === "premium" ? "PREMIUM" : "STANDARD" } });
+  await prisma.user.update({ where: { id: userId }, data: { rankArt: storedRankArtChoice(user.subscriptionTier, art) } });
   return art;
 }
