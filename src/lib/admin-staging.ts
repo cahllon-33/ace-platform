@@ -19,6 +19,10 @@ export const STAGING_ADMIN_PLAYERS: AdminPlayerRow[] = [
     registeredOn: "2026-08-02",
     region: "Staging",
     latencyMs: 0,
+    art: "premium",
+    wins: null,
+    losses: null,
+    avatarUrl: null,
   },
   {
     id: "staging-02",
@@ -34,6 +38,10 @@ export const STAGING_ADMIN_PLAYERS: AdminPlayerRow[] = [
     registeredOn: "2026-08-11",
     region: "Staging",
     latencyMs: 0,
+    art: "standard",
+    wins: null,
+    losses: null,
+    avatarUrl: null,
   },
   {
     id: "staging-03",
@@ -49,6 +57,10 @@ export const STAGING_ADMIN_PLAYERS: AdminPlayerRow[] = [
     registeredOn: "2026-09-01",
     region: "Staging",
     latencyMs: 0,
+    art: "standard",
+    wins: null,
+    losses: null,
+    avatarUrl: null,
   },
   {
     id: "staging-04",
@@ -64,6 +76,10 @@ export const STAGING_ADMIN_PLAYERS: AdminPlayerRow[] = [
     registeredOn: "2026-09-04",
     region: "Staging",
     latencyMs: 0,
+    art: "standard",
+    wins: null,
+    losses: null,
+    avatarUrl: null,
   },
   {
     id: "staging-05",
@@ -79,6 +95,10 @@ export const STAGING_ADMIN_PLAYERS: AdminPlayerRow[] = [
     registeredOn: "2026-09-18",
     region: "Staging",
     latencyMs: 0,
+    art: "standard",
+    wins: null,
+    losses: null,
+    avatarUrl: null,
   },
 ];
 

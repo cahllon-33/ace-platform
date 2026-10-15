@@ -26,7 +26,25 @@ import {
 } from "@/server/admin-users";
 import { AdminTvWall } from "@/components/admin-tv-wall";
 import type { TvWall } from "@/server/admin-broadcast";
+import { FloatingEmblem, PlayerAvatar } from "@/components/floating-emblem";
+import { RANK_TIERS, rankArtAsset } from "@/lib/ranks";
 import "./admin-command.css";
+
+function tierOf(level: number) {
+  return RANK_TIERS[Math.min(10, Math.max(1, Math.round(level))) - 1];
+}
+
+/** Original A.C.E operator illustration for the dossier hero (alternates per player; illustration only). */
+function operatorFor(id: string) {
+  let h = 0;
+  for (const c of id) h = (h + c.charCodeAt(0)) % 997;
+  return h % 2 === 0 ? "guardian" : "rebel";
+}
+
+function AdminRankBadge({ level, art, size, label }: { level: number; art?: "standard" | "premium"; size: number; label: string }) {
+  const tier = tierOf(level);
+  return <FloatingEmblem src={rankArtAsset(tier.level, art ?? "standard").stillSrc} alt={`${label}: ${tier.name}`} size={size} />;
+}
 
 const TIER_DB: Record<AdminTier, "FREE" | "PLUS" | "PREMIUM"> = { Free: "FREE", Plus: "PLUS", Premium: "PREMIUM" };
 const TIER_FROM_DB: Record<string, AdminTier> = { FREE: "Free", PLUS: "Plus", PREMIUM: "Premium" };
@@ -162,17 +180,40 @@ function PlayerDrawer({
         <h2 id={titleId} className="ace-admin-dialog-title">
           {t("dossierTitle")}
         </h2>
-        <div className="acx-dossier-head">
-          <span className="acx-avatar acx-avatar-lg" aria-hidden="true">{player.initials}</span>
-          <div>
-            <p className="acx-dossier-name">{player.username}</p>
-            <p className="acx-muted">{player.email}</p>
+        <div className={`acx-hero is-${operatorFor(player.id)}`}>
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            className="acx-hero-operator"
+            src={`/operators/operator-${operatorFor(player.id)}-640.webp`}
+            srcSet={`/operators/operator-${operatorFor(player.id)}-640.webp 640w, /operators/operator-${operatorFor(player.id)}-1280.webp 1280w`}
+            sizes="420px"
+            alt={t("r23Operator")}
+          />
+          <div className="acx-hero-badge">
+            <AdminRankBadge level={player.rank} art={player.art} size={112} label={t("r23Rank")} />
+          </div>
+          <div className="acx-hero-id">
+            <PlayerAvatar src={player.avatarUrl ?? null} name={player.username} alt="" size={44} />
+            <div>
+              <p className="acx-dossier-name">{player.username}</p>
+              <p className="acx-muted">{player.email}</p>
+            </div>
           </div>
         </div>
-        <dl className="acx-dossier-stats">
-          <div><dt>{t("drawerRank")}</dt><dd>{player.rank}</dd></div>
+        <dl className="acx-dossier-stats acx-dossier-stats-4">
+          <div>
+            <dt>{t("r23Rank")}</dt>
+            <dd>
+              {player.rank} · {tierOf(player.rank).name}
+              {player.art === "premium" ? <span className="acx-premium-tag">{t("r23Premium")}</span> : null}
+            </dd>
+          </div>
           <div><dt>{t("drawerRp")}</dt><dd>{player.rating.toLocaleString("en-US")}</dd></div>
-          <div><dt>{t("drawerTier")}</dt><dd>{t(TIER_KEY[player.tier])}</dd></div>
+          <div>
+            <dt>{t("r23Wl")}</dt>
+            <dd>{player.wins == null || player.losses == null || player.wins + player.losses === 0 ? <span className="acx-muted">{t("r23WlEmpty")}</span> : `${player.wins} / ${player.losses}`}</dd>
+          </div>
+          <div><dt>{t("r23Subscription")}</dt><dd>{t(TIER_KEY[player.tier])}</dd></div>
         </dl>
         <p className="acx-note">{t("dossierReadOnly")}</p>
         <dl className="ace-admin-dossier">
@@ -538,10 +579,10 @@ export function AdminCommandCenter({
               <thead>
                 <tr>
                   <th scope="col">{t("colPlayer")}</th>
-                  <th scope="col">{t("colSteam")}</th>
-                  <th scope="col" className="is-num">{t("colRank")}</th>
+                  <th scope="col">{t("r23Rank")}</th>
                   <th scope="col" className="is-num">{t("colRating")}</th>
-                  <th scope="col">{t("colTier")}</th>
+                  <th scope="col">{t("r23Wl")}</th>
+                  <th scope="col">{t("r23Subscription")}</th>
                   <th scope="col">{t("colStatus")}</th>
                   <th scope="col">{t("colAction")}</th>
                 </tr>
@@ -564,22 +605,37 @@ export function AdminCommandCenter({
                         suppressHydrationWarning
                         onClick={() => setEditorId(player.id)}
                       >
-                        <span className="acx-avatar" aria-hidden="true">{player.initials}</span>
+                        <PlayerAvatar src={player.avatarUrl ?? null} name={player.username} alt="" size={38} />
                         <span>
                           <strong>{player.username}</strong>
-                          <small>
-                            {player.email}
-                            {player.steamId === "—" ? ` · ${t("decoupledNote")}` : ""}
+                          <small>{player.email}</small>
+                          <small className="ace-admin-mono" title={t("colSteam")}>
+                            {player.steamId === "—" ? t("decoupledNote") : player.steamId}
                           </small>
                         </span>
                       </button>
                     </td>
-                    <td className="ace-admin-mono">{player.steamId}</td>
-                    <td className={`is-num${player.id === rankPulseId ? " ace-admin-rank-hot" : ""}`}>
-                      <span className="acx-rank">{player.rank}</span>
+                    <td className={player.id === rankPulseId ? "ace-admin-rank-hot" : undefined}>
+                      <span className="acx-rankcell">
+                        <AdminRankBadge level={player.rank} art={player.art} size={46} label={t("r23Rank")} />
+                        <span>
+                          <strong>{tierOf(player.rank).name}</strong>
+                          <small>
+                            {t("colRank")} {player.rank}
+                            {player.art === "premium" ? <span className="acx-premium-tag">{t("r23Premium")}</span> : null}
+                          </small>
+                        </span>
+                      </span>
                     </td>
                     <td className={`is-num${player.id === rankPulseId ? " ace-admin-rating-hot" : ""}`}>
-                      {player.rating.toLocaleString("en-US")}
+                      <span className="acx-rp">{player.rating.toLocaleString("en-US")}</span>
+                    </td>
+                    <td>
+                      {player.wins == null || player.losses == null || player.wins + player.losses === 0 ? (
+                        <span className="acx-muted">{t("r23WlEmpty")}</span>
+                      ) : (
+                        <span className="acx-wl"><b>{player.wins}</b> / <i>{player.losses}</i></span>
+                      )}
                     </td>
                     <td>
                       <select

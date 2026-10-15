@@ -15,6 +15,13 @@ export type AdminPlayerRow = {
   registeredOn: string;
   region: string;
   latencyMs: number;
+  /** Emblem art per existing rules (Premium plan => illustrated tier art unless opted out). */
+  art?: "standard" | "premium";
+  /** Recorded wins/losses. null = no recorded data (staging/preview rows). */
+  wins?: number | null;
+  losses?: number | null;
+  /** Stored Steam avatar URL, or null. */
+  avatarUrl?: string | null;
 };
 
 export type AdminTicket = {
@@ -39,6 +46,10 @@ export const ADMIN_PLAYERS: AdminPlayerRow[] = [
     registeredOn: "2026-08-02",
     region: "EU West",
     latencyMs: 0,
+    art: "premium",
+    wins: null,
+    losses: null,
+    avatarUrl: null,
   },
   {
     id: "row-02",
@@ -54,6 +65,10 @@ export const ADMIN_PLAYERS: AdminPlayerRow[] = [
     registeredOn: "2026-08-11",
     region: "EU North",
     latencyMs: 0,
+    art: "standard",
+    wins: null,
+    losses: null,
+    avatarUrl: null,
   },
   {
     id: "row-03",
@@ -69,6 +84,10 @@ export const ADMIN_PLAYERS: AdminPlayerRow[] = [
     registeredOn: "2026-09-01",
     region: "US East",
     latencyMs: 0,
+    art: "standard",
+    wins: null,
+    losses: null,
+    avatarUrl: null,
   },
   {
     id: "row-04",
@@ -84,6 +103,10 @@ export const ADMIN_PLAYERS: AdminPlayerRow[] = [
     registeredOn: "2026-09-04",
     region: "EU West",
     latencyMs: 0,
+    art: "standard",
+    wins: null,
+    losses: null,
+    avatarUrl: null,
   },
   {
     id: "row-05",
@@ -99,6 +122,10 @@ export const ADMIN_PLAYERS: AdminPlayerRow[] = [
     registeredOn: "2026-09-18",
     region: "Asia",
     latencyMs: 0,
+    art: "standard",
+    wins: null,
+    losses: null,
+    avatarUrl: null,
   },
   {
     id: "row-06",
@@ -114,6 +141,10 @@ export const ADMIN_PLAYERS: AdminPlayerRow[] = [
     registeredOn: "2026-09-22",
     region: "EU West",
     latencyMs: 0,
+    art: "standard",
+    wins: null,
+    losses: null,
+    avatarUrl: null,
   },
 ];
 

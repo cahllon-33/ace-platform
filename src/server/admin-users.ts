@@ -6,6 +6,7 @@ import type { AccountStatus, SubscriptionTier, User } from "@prisma/client";
 import { prisma } from "@/lib/db";
 import type { AdminPlayerRow, AdminSecurity, AdminTier } from "@/lib/admin-command";
 import { readAdminGate } from "@/server/admin-gate";
+import { effectiveRankArt } from "@/server/rank-art";
 import { readPresence, type ConnectedPlayer } from "@/server/presence";
 
 export type AdminLiveStats = {
@@ -66,6 +67,10 @@ function userToAdminRow(user: User): AdminPlayerRow {
     registeredOn: user.createdAt.toISOString().slice(0, 10),
     region: "—",
     latencyMs: 0,
+    art: effectiveRankArt(user),
+    wins: user.wins,
+    losses: user.losses,
+    avatarUrl: user.avatarUrl || null,
   };
 }
 

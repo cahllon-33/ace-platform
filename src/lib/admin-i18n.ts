@@ -1,6 +1,14 @@
 import { interpolate } from "@/lib/i18n";
 
 export const ADMIN_EN = {
+  r23Rank: "Rank",
+  r23Wl: "Wins / losses",
+  r23WlEmpty: "No recorded matches",
+  r23Premium: "Premium art",
+  r23Operator: "Original A.C.E operator art (illustration, not the player)",
+  r23Subscription: "Subscription",
+  r23Selected: "Selected player",
+  r23Open: "Open profile",
   navLabel: "Admin sections",
   actionsMenu: "Actions",
   navBrand: "Command center",
@@ -225,6 +233,14 @@ export const ADMIN_EN = {
 } as const;
 
 export const ADMIN_HE: Record<keyof typeof ADMIN_EN, string> = {
+  r23Rank: "דרגה",
+  r23Wl: "ניצחונות / הפסדים",
+  r23WlEmpty: "אין משחקים מתועדים",
+  r23Premium: "אמנות פרימיום",
+  r23Operator: "איור מקורי של לוחם A.C.E (איור, לא השחקן)",
+  r23Subscription: "מנוי",
+  r23Selected: "שחקן נבחר",
+  r23Open: "פתח פרופיל",
   navLabel: "אזורי ניהול",
   actionsMenu: "פעולות",
   navBrand: "מרכז פיקוד",
