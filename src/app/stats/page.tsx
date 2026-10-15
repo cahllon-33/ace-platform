@@ -6,6 +6,9 @@ import { getText } from "@/server/locale";
 import { loadRatingMovement, statsAccess } from "@/server/player-stats";
 import { readSessionUser } from "@/server/session";
 
+/** Dynamic route: opt out of instant navigation prerender (reads request data). */
+export const instant = false;
+
 export async function generateMetadata(): Promise<Metadata> {
   const copy = (await getText()).account.statsConsole;
   return { title: copy.metaTitle, description: copy.lede };

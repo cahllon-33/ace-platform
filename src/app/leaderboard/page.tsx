@@ -10,6 +10,9 @@ import { effectiveRankArt } from "@/server/rank-art";
 import { getPrisma } from "@/server/db";
 import { getText } from "@/server/locale";
 
+/** Dynamic route: opt out of instant navigation prerender (reads request data). */
+export const instant = false;
+
 export async function generateMetadata(): Promise<Metadata> {
   const text = await getText();
   return {

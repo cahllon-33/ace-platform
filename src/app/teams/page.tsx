@@ -9,6 +9,9 @@ import { getText } from "@/server/locale";
 import { listTeamRosters } from "@/server/rosters";
 import { readSessionUser } from "@/server/session";
 
+/** Dynamic route: opt out of instant navigation prerender (reads request data). */
+export const instant = false;
+
 export async function generateMetadata(): Promise<Metadata> {
   const text = await getText();
   return {

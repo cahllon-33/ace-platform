@@ -1,15 +1,41 @@
 "use server";
 
 import { createHmac, timingSafeEqual } from "node:crypto";
-import { cookies } from "next/headers";
+import { cookies, headers } from "next/headers";
 import { getSessionSecret, isProduction } from "@/server/env";
 import { readSessionUser } from "@/server/session";
 
 const GATE_COOKIE = "ace_admin_gate";
 const GATE_HOURS = 12;
 
+/** Bound to the configured credentials: rotating ACE_ADMIN_USERNAME/PASSWORD invalidates every gate cookie. */
 function gateToken() {
-  return createHmac("sha256", getSessionSecret()).update("ace-admin-gate-v1").digest("base64url");
+  const user = process.env.ACE_ADMIN_USERNAME?.trim() ?? "";
+  const pass = process.env.ACE_ADMIN_PASSWORD ?? "";
+  return createHmac("sha256", getSessionSecret()).update(`ace-admin-gate-v2\u0000${user}\u0000${pass}`).digest("base64url");
+}
+
+/** Login throttle: at most 5 failed attempts per client per 15 minutes (per server instance). */
+const FAIL_WINDOW_MS = 15 * 60 * 1000;
+const FAIL_LIMIT = 5;
+const failures = new Map<string, number[]>();
+
+async function adminGateClientKey() {
+  const h = await headers();
+  return (h.get("x-forwarded-for")?.split(",")[0]?.trim() || h.get("x-real-ip") || "local").slice(0, 64);
+}
+
+function adminGateThrottled(key: string, now = Date.now()) {
+  const recent = (failures.get(key) ?? []).filter((t) => now - t < FAIL_WINDOW_MS);
+  failures.set(key, recent);
+  return recent.length >= FAIL_LIMIT;
+}
+
+function recordAdminGateFailure(key: string, now = Date.now()) {
+  const recent = (failures.get(key) ?? []).filter((t) => now - t < FAIL_WINDOW_MS);
+  recent.push(now);
+  failures.set(key, recent);
+  if (failures.size > 5000) failures.delete(failures.keys().next().value as string);
 }
 
 function sameSecret(left: string, right: string) {
@@ -62,12 +88,18 @@ export async function unlockAdminGate(username: string, password: string) {
   if (!expectedUser || !expectedPass) {
     return "unconfigured" as const;
   }
+  const clientKey = await adminGateClientKey();
+  if (adminGateThrottled(clientKey)) {
+    return "denied" as const;
+  }
   if (typeof username !== "string" || typeof password !== "string" || username.length > 200 || password.length > 500) {
+    recordAdminGateFailure(clientKey);
     return "denied" as const;
   }
   const userOk = sameSecret(username.trim(), expectedUser);
   const passOk = sameSecret(password, expectedPass);
   if (!userOk || !passOk) {
+    recordAdminGateFailure(clientKey);
     return "denied" as const;
   }
   const jar = await cookies();

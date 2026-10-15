@@ -7,6 +7,9 @@ import { readAdminGate } from "@/server/admin-gate";
 import { loadAdminDirectory, loadAdminTournaments } from "@/server/admin-users";
 import { loadTvWall } from "@/server/admin-broadcast";
 
+/** Dynamic route: opt out of instant navigation prerender (reads request data). */
+export const instant = false;
+
 export const metadata: Metadata = {
   title: "A.C.E. League Supreme Command Center",
   description:

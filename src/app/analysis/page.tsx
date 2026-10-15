@@ -6,6 +6,9 @@ import { getText } from "@/server/locale";
 import { analysisAccess, loadMatchAnalysis } from "@/server/match-analysis";
 import { readSessionUser } from "@/server/session";
 
+/** Dynamic route: opt out of instant navigation prerender (reads request data). */
+export const instant = false;
+
 export async function generateMetadata(): Promise<Metadata> {
   const copy = (await getText()).pricing.premiumExtras.analysis;
   return { title: copy.metaTitle, description: copy.metaDescription };

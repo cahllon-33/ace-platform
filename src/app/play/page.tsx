@@ -7,6 +7,9 @@ import { effectiveRankArt } from "@/server/rank-art";
 import { rankFromRating } from "@/lib/ranks";
 import type { ArenaCaptain } from "@/components/play-match-arena";
 
+/** Dynamic route: opt out of instant navigation prerender (reads request data). */
+export const instant = false;
+
 export async function generateMetadata(): Promise<Metadata> {
   const text = await getText();
   return {

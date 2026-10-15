@@ -5,6 +5,9 @@ import { interpolate } from "@/lib/i18n";
 import { CODEX_ENTRIES, codexArticle } from "@/lib/rank-guide";
 import { getText } from "@/server/locale";
 
+/** Dynamic route: opt out of instant navigation prerender (reads request data). */
+export const instant = false;
+
 type Props = {
   params: Promise<{ slug: string }>;
 };
