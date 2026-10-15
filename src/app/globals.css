@@ -9082,3 +9082,174 @@ html[dir="rtl"] .ace-hub-card-face {
 @media (prefers-reduced-motion: reduce) {
   .ace-hero-sweep { display: none; }
 }
+
+/* A.C.E Shield page */
+.ace-shield-hero {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid rgba(255, 215, 0, 0.25);
+  border-radius: 1.5rem;
+  background:
+    radial-gradient(ellipse at 85% 20%, rgba(255, 215, 0, 0.16), transparent 55%),
+    linear-gradient(180deg, #121215, #070708);
+  padding: 2.5rem 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .ace-shield-hero { padding: 3rem; }
+}
+
+.ace-shield-mark {
+  position: absolute;
+  inset-inline-end: -2rem;
+  top: -1rem;
+  width: 16rem;
+  height: 16rem;
+  fill: none;
+  stroke: rgba(255, 215, 0, 0.16);
+  stroke-width: 0.6;
+}
+
+.ace-shield-h2 {
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: #f5f3ec;
+}
+
+.ace-shield-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 13.5rem), 1fr));
+  gap: 1rem;
+  margin: 1rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.ace-shield-card {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.6rem;
+  border: 1px solid rgba(255, 215, 0, 0.2);
+  border-radius: 1rem;
+  background: linear-gradient(180deg, #151517, #0b0b0c);
+  padding: 1.2rem;
+  box-shadow: inset 0 1px 0 rgba(255, 236, 160, 0.1);
+}
+
+.ace-shield-card svg {
+  width: 1.8rem;
+  height: 1.8rem;
+  fill: none;
+  stroke: #ffd700;
+  stroke-width: 1.6;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.ace-shield-card h3,
+.ace-shield-roadmap h3 {
+  font-weight: 700;
+  color: #f5f3ec;
+}
+
+.ace-shield-card p,
+.ace-shield-roadmap p {
+  flex: 1;
+  font-size: 0.88rem;
+  line-height: 1.6;
+  color: #a9abb3;
+}
+
+.ace-shield-roadmap {
+  display: grid;
+  gap: 0.75rem;
+  margin: 1rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.ace-shield-roadmap li {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  align-items: center;
+  gap: 0.6rem 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 1rem;
+  background: #0d0d0f;
+  padding: 1rem 1.2rem;
+}
+
+.ace-shield-roadmap li > .ace-soon {
+  grid-column: 2;
+  justify-self: start;
+}
+
+@media (min-width: 768px) {
+  .ace-shield-roadmap li { grid-template-columns: auto minmax(0, 1fr) auto; }
+  .ace-shield-roadmap li > .ace-soon { grid-column: auto; }
+}
+
+.ace-shield-node {
+  width: 0.9rem;
+  height: 0.9rem;
+  border: 2px solid #5b5d66;
+  border-radius: 999px;
+}
+
+.is-designed .ace-shield-node { border-color: #ffd700; background: #ffd700; }
+.is-in-development .ace-shield-node { border-color: #ffd700; box-shadow: 0 0 10px rgba(255, 215, 0, 0.6); }
+
+.ace-shield-panel {
+  min-width: 0;
+  border: 1px solid rgba(255, 215, 0, 0.2);
+  border-radius: 1.25rem;
+  background: #0d0d0f;
+  padding: 1.5rem;
+}
+
+.ace-shield-list {
+  display: grid;
+  gap: 0.7rem;
+  margin: 1rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.ace-shield-list li {
+  position: relative;
+  padding-inline-start: 1.4rem;
+  font-size: 0.92rem;
+  line-height: 1.6;
+  color: #c9cad0;
+}
+
+.ace-shield-list li::before {
+  content: "";
+  position: absolute;
+  inset-inline-start: 0;
+  top: 0.55rem;
+  width: 0.5rem;
+  height: 0.5rem;
+  transform: rotate(45deg);
+  background: #ffd700;
+}
+
+.ace-shield-faq {
+  display: grid;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.ace-shield-faq dt {
+  font-weight: 700;
+  color: #f5f3ec;
+}
+
+.ace-shield-faq dd {
+  margin-top: 0.25rem;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: #a9abb3;
+}
