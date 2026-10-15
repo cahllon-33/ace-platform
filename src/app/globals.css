@@ -7669,3 +7669,47 @@ html[dir="rtl"] .ace-hub-card-face {
   color: #a9abb3;
   cursor: not-allowed;
 }
+
+/* Footer platform notice: collapsible, tidy, gold heading */
+.ace-footer-notice {
+  margin: 0 auto;
+  max-width: 72rem;
+  padding: 0 1.5rem;
+  border-top: 1px solid rgb(255 215 0 / 0.12);
+}
+.ace-footer-notice > summary {
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.9rem 0;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+  color: #ffd700;
+}
+.ace-footer-notice > summary::-webkit-details-marker { display: none; }
+.ace-footer-notice > summary::after {
+  content: "";
+  width: 0.45rem;
+  height: 0.45rem;
+  border-right: 1.5px solid currentColor;
+  border-bottom: 1.5px solid currentColor;
+  transform: rotate(45deg);
+  transition: transform 0.2s ease;
+}
+.ace-footer-notice[open] > summary::after { transform: rotate(-135deg); }
+.ace-footer-notice > summary:focus-visible { outline: 2px solid #ffd700; outline-offset: 2px; }
+.ace-footer-notice-body {
+  display: grid;
+  gap: 0.6rem;
+  max-width: 60rem;
+  padding-bottom: 1.1rem;
+  font-size: 0.75rem;
+  line-height: 1.7;
+  color: rgb(255 255 255 / 0.62);
+}
+@media (prefers-reduced-motion: reduce) {
+  .ace-footer-notice > summary::after { transition: none; }
+}
