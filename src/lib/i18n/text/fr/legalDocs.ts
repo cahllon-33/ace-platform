@@ -34,7 +34,7 @@ export const legalDocs: TextBag["legalDocs"] = {
       subscriptions: {
         title: "4. Abonnements proposés",
         paragraphs: [
-          "Plus ($4/mois) et Premium ($7/mois) sont des prix d’affichage. Il n’y a aucun paiement sur ce site. Les boutons des forfaits ouvrent un reçu sur ce site, et non un débit, et n’envoient pas d’e-mail. Lorsque la facturation existera, la règle de résiliation figurant sur /pricing s’appliquera : abonnement mensuel reconductible, résiliation dans les paramètres du tableau de bord, mois entamés non remboursables.",
+          "Plus ($4/mois) et Premium ($7/mois) sont des prix d’affichage. Il n’y a pas encore de paiement sur ce site, et les boutons des forfaits indiquent « Bientôt disponible ». Lorsque la facturation existera, la règle de résiliation de /pricing s’appliquera : abonnement mensuel reconduit, résiliation dans les paramètres du tableau de bord, mois entamés non remboursables.",
         ],
       },
       antiCheat: {

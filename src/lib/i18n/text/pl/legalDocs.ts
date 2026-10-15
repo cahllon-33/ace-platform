@@ -34,7 +34,7 @@ export const legalDocs: TextBag["legalDocs"] = {
       subscriptions: {
         title: "4. Proponowane subskrypcje",
         paragraphs: [
-          "Plus ($4/mies.) i Premium ($7/mies.) to ceny wyświetlane. Na tej stronie nie ma kasy. Przyciski planów otwierają na tej stronie potwierdzenie, a nie obciążenie, i nie wysyłają wiadomości e-mail. Gdy rozliczenia zaczną istnieć, zastosowanie będzie miała zasada anulowania opisana pod adresem /pricing: subskrypcja miesięczna odnawiana automatycznie, anulowanie w ustawieniach panelu, brak zwrotu za niepełne miesiące.",
+          "Plus ($4/mies.) i Premium ($7/mies.) to ceny wyświetlane. Na tej stronie nie ma jeszcze płatności, a przyciski planów pokazują „Wkrótce”. Gdy rozliczenia ruszą, obowiązuje zasada anulowania z /pricing: subskrypcja odnawiana co miesiąc, anulowanie w ustawieniach panelu, niepełne miesiące nie podlegają zwrotowi.",
         ],
       },
       antiCheat: {

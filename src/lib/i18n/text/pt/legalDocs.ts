@@ -34,7 +34,7 @@ export const legalDocs: TextBag["legalDocs"] = {
       subscriptions: {
         title: "4. Subscrições propostas",
         paragraphs: [
-          "Plus ($4/mês) e Premium ($7/mês) são preços apenas apresentados. Não existe checkout neste site. Os botões dos planos abrem um recibo neste site, não uma cobrança, e não enviam e-mail. Quando existir faturação, aplica-se a regra de cancelamento de /pricing: subscrição mensal renovável, cancelamento nas definições do painel, meses parciais não reembolsáveis.",
+          "Plus ($4/mês) e Premium ($7/mês) são preços apenas apresentados. Ainda não existe pagamento neste site e os botões dos planos mostram «Em breve». Quando a faturação existir, aplica-se a regra de cancelamento de /pricing: subscrição mensal renovável, cancelamento nas definições do painel e sem reembolso de meses parciais.",
         ],
       },
       antiCheat: {
