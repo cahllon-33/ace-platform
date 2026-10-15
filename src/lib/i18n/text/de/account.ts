@@ -1,17 +1,6 @@
 import type { TextBag } from "../types";
 
 export const account: TextBag["account"] = {
-  badgeColor: {
-    "title": "Abzeichenfarbe",
-    "body": "Wähle die Farbe deines Standard-Rangabzeichens. Nur kosmetisch: Sie ändert nie deine Rating Points, deinen Rang oder das Matchmaking. Premium-Illustrationen behalten ihre eigenen Stufenfarben.",
-    "presets": "Stufenfarben",
-    "custom": "Eigene Farbe",
-    "reset": "Meine Stufenfarbe verwenden",
-    "saved": "Abzeichenfarbe gespeichert.",
-    "failed": "Die Abzeichenfarbe konnte nicht gespeichert werden. Versuche es erneut.",
-    "previewAlt": "Vorschau deines Rangabzeichens in der gewählten Farbe",
-    "swatch": "Farbe {tier}"
-  },
   statsConsole: {
     "metaTitle": "Spielerstatistiken",
     "kicker": "SPIELERSTATISTIKEN",

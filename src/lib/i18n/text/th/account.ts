@@ -1,17 +1,6 @@
 import type { TextBag } from "../types";
 
 export const account: TextBag["account"] = {
-  badgeColor: {
-    "title": "สีเหรียญตรา",
-    "body": "เลือกสีของตราแรงก์มาตรฐานของคุณ เป็นเพียงความสวยงาม: ไม่เปลี่ยน Rating Points แรงก์ หรือการจับคู่ของคุณ ภาพวาด Premium ยังคงใช้สีของระดับตัวเอง",
-    "presets": "สีประจำระดับ",
-    "custom": "สีกำหนดเอง",
-    "reset": "ใช้สีระดับของฉัน",
-    "saved": "บันทึกสีเหรียญตราแล้ว",
-    "failed": "บันทึกสีเหรียญตราไม่ได้ ลองอีกครั้ง",
-    "previewAlt": "ตัวอย่างตราแรงก์ของคุณในสีที่เลือก",
-    "swatch": "สี {tier}"
-  },
   statsConsole: {
     "metaTitle": "สถิติผู้เล่น",
     "kicker": "สถิติผู้เล่น",

@@ -15,7 +15,6 @@ export type LobbyOpsPlayer = {
   wins: number;
   losses: number;
   art: RankArt;
-  badgeColor?: string | null;
   elite: boolean;
 };
 
@@ -49,7 +48,7 @@ export function LobbyOps({ text, player }: { text: Text; player: LobbyOpsPlayer 
                 ) : null}
               </div>
               <FloatingEmblem
-                src={rankArtAsset(tier.level, player.art, player.badgeColor).stillSrc}
+                src={rankArtAsset(tier.level, player.art).stillSrc}
                 alt={interpolate(c.emblemAlt, { rank: tier.name })}
                 size={112}
               />

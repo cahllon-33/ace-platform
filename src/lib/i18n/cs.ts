@@ -296,7 +296,7 @@ export const CS: MessageBag = {
  seasonLayout: "Termíny 1. sezóny budou brzy oznámeny.",
  rpEmpty: "— RP",
  rankProtocolTitle: "PROTOKOL HODNOCENÍ A.C.E.",
- rankProtocolBody: "Psané pravidlo porovnává hráče s průměrným hodnocením druhého týmu. Proti vyrovnanému týmu je zaznamenaná výhra +25 RP a prohra −25 RP, vždy v rozmezí 10 až 40 RP za zápas, a z tohoto čísla se čte 10 úrovní a 3 divize. Tato stránka nepotvrzuje zápas, proto zde k žádné změně hodnocení nedochází.",
+ rankProtocolBody: "Psané pravidlo porovnává hráče s průměrným hodnocením druhého týmu. Proti vyrovnanému týmu je zaznamenaná výhra +15 RP a prohra −15 RP, vždy v rozmezí 8 až 25 RP za zápas, a z tohoto čísla se čte 10 úrovní a 3 divize. Tato stránka nepotvrzuje zápas, proto zde k žádné změně hodnocení nedochází.",
  rankProgress: "Postup hodnosti",
  competitiveRating: "Soutěžní hodnocení",
  targetWinRate: "Cílová úspěšnost výher",

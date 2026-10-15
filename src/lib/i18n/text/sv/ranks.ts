@@ -40,7 +40,7 @@ export const ranks: TextBag["ranks"] = {
     "colWin": "Vinst",
     "colLoss": "Förlust",
     "examplesTitle": "Räkneexempel",
-    "ex1": "Från {start} till {elite} RP ({top}) mot jämna lag, bara med vinster: {w1} vinster à +25 till och med nivå 6, sedan {w2} vinster à +{win7} genom nivå 7–9. Totalt {total} vinster.",
+    "ex1": "Från {start} till {elite} RP ({top}) mot jämna lag, bara med vinster: {w1} vinster à +15 till och med nivå 6, sedan {w2} vinster à +{win7} genom nivå 7–9. Totalt {total} vinster.",
     "ex2": "Varje förlust på vägen kräver fler vinster. På nivå 7–9 ger en vinst +{win7} men en förlust kostar fortfarande −{loss}, så du måste vinna minst {breakEven} % av jämna matcher för att fortsätta klättra.",
     "ex3": "Mot ett lag med i snitt 200 RP mer än du ger en vinst +{strongWin} och en förlust kostar −{strongLoss}.",
     "ex4": "Mot ett lag med i snitt 200 RP mindre än du ger en vinst +{weakWin} och en förlust kostar −{weakLoss}.",

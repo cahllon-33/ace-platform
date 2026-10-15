@@ -40,7 +40,7 @@ export const ranks: TextBag["ranks"] = {
     "colWin": "Győzelem",
     "colLoss": "Vereség",
     "examplesTitle": "Kidolgozott példák",
-    "ex1": "{start} → {elite} RP ({top}) egyenlő csapatok ellen, csak győzelmekkel: {w1} győzelem +25-tel a 6. szintig, majd {w2} győzelem +{win7}-vel a 7–9. szinten. Összesen {total} győzelem.",
+    "ex1": "{start} → {elite} RP ({top}) egyenlő csapatok ellen, csak győzelmekkel: {w1} győzelem +15-tel a 6. szintig, majd {w2} győzelem +{win7}-vel a 7–9. szinten. Összesen {total} győzelem.",
     "ex2": "Minden közbeeső vereség további győzelmeket követel. A 7–9. szinten egy győzelem +{win7}-et ad, de egy vereség továbbra is −{loss}-be kerül, ezért a kiegyenlített meccsek legalább {breakEven}%-át meg kell nyerned a további emelkedéshez.",
     "ex3": "Átlagosan 200 RP-vel erősebb csapat ellen a győzelem +{strongWin}-et ad, a vereség −{strongLoss}-be kerül.",
     "ex4": "Átlagosan 200 RP-vel gyengébb csapat ellen a győzelem +{weakWin}-et ad, a vereség −{weakLoss}-be kerül.",

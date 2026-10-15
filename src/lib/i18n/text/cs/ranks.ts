@@ -40,7 +40,7 @@ export const ranks: TextBag["ranks"] = {
     "colWin": "Výhra",
     "colLoss": "Prohra",
     "examplesTitle": "Vzorové příklady",
-    "ex1": "Z {start} na {elite} RP ({top}) proti vyrovnaným týmům, jen s výhrami: {w1} výher po +25 do úrovně 6, pak {w2} výher po +{win7} v úrovních 7–9. Celkem {total} výher.",
+    "ex1": "Z {start} na {elite} RP ({top}) proti vyrovnaným týmům, jen s výhrami: {w1} výher po +15 do úrovně 6, pak {w2} výher po +{win7} v úrovních 7–9. Celkem {total} výher.",
     "ex2": "Každá prohra po cestě přidá další výhry. V úrovních 7–9 dává výhra +{win7}, ale prohra stále stojí −{loss}, takže musíš vyhrát alespoň {breakEven} % vyrovnaných zápasů, abys dál stoupal.",
     "ex3": "Proti týmu s průměrně o 200 RP vyšším hodnocením dává výhra +{strongWin} a prohra stojí −{strongLoss}.",
     "ex4": "Proti týmu s průměrně o 200 RP nižším hodnocením dává výhra +{weakWin} a prohra stojí −{weakLoss}.",

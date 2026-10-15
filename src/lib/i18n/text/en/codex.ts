@@ -281,14 +281,14 @@
     },
     "how-points-move": {
       title: "How a recorded result moves Rating Points",
-      lede: "A recorded win or loss is measured against the other team's average rating. Against an equal team a win is +25 and a loss is −25. The full rules are on the Ranks page.",
+      lede: "A recorded win or loss is measured against the other team's average rating. Against an equal team a win is +15 and a loss is −15. The full rules are on the Ranks page.",
       sections: [
         {
           heading: "The step",
           paragraphs: [
-            "Expected score is the chance the engine assigns before the match, based only on the two ratings. Against an equal rating that chance is one half, so a win is worth 25 Rating Points and a loss costs 25.",
-            "Against a higher rating, a win is worth more than 25 and a loss costs less. Against a lower rating, the opposite. A win always gives 10 to 40 and a loss always costs 10 to 40. In tiers 7–9 win gains are multiplied by 0.8 and in tier 10 by 0.7, so the top of the ladder takes longer. The rating is held between 100 and 3,000.",
-            "On a team result, every player is measured against the other team's average rating. A match MVP bonus of 3 RP is planned for when the server records kills; until then no personal bonus is applied.",
+            "Expected score is the chance the engine assigns before the match, based only on the two ratings. Against an equal rating that chance is one half, so a win is worth 15 Rating Points and a loss costs 15.",
+            "Against a higher rating, a win is worth more than 15 and a loss costs less. Against a lower rating, the opposite. A win always gives 8 to 25 and a loss always costs 8 to 25. In tiers 7–9 win gains are multiplied by 0.8 and in tier 10 by 0.7, so the top of the ladder takes longer. The rating is held between 100 and 3,000.",
+            "On a team result, every player is measured against the other team's average rating. A match MVP bonus of 2 RP is planned for when the server records kills; until then no personal bonus is applied.",
           ],
         },
         {

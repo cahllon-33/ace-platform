@@ -332,7 +332,7 @@ export const PT: MessageBag = {
  seasonLayout: "As datas da Temporada 1 serão anunciadas em breve.",
  rpEmpty: "— RP",
  rankProtocolTitle: "PROTOCOLO DE PONTUAÇÃO A.C.E.",
- rankProtocolBody: "A regra escrita compara um jogador com a pontuação média da outra equipa. Contra uma equipa equilibrada uma vitória registada vale +25 RP e uma derrota −25 RP, sempre entre 10 e 40 RP por partida, e os 10 escalões e 3 divisões leem-se a partir desse número. Esta página não valida nenhuma partida, por isso aqui não é aplicada nenhuma alteração de pontuação.",
+ rankProtocolBody: "A regra escrita compara um jogador com a pontuação média da outra equipa. Contra uma equipa equilibrada uma vitória registada vale +15 RP e uma derrota −15 RP, sempre entre 8 e 25 RP por partida, e os 10 escalões e 3 divisões leem-se a partir desse número. Esta página não valida nenhuma partida, por isso aqui não é aplicada nenhuma alteração de pontuação.",
  rankProgress: "Progresso de rank",
  competitiveRating: "Pontuação competitiva",
  targetWinRate: "Meta de vitórias",

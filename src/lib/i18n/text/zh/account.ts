@@ -1,17 +1,6 @@
 import type { TextBag } from "../types";
 
 export const account: TextBag["account"] = {
-  badgeColor: {
-    "title": "徽章颜色",
-    "body": "选择你标准段位徽章的颜色。仅为外观：绝不改变你的 Rating Points、段位或匹配。Premium 插画徽章保留各段位自己的颜色。",
-    "presets": "段位颜色",
-    "custom": "自定义颜色",
-    "reset": "使用我的段位颜色",
-    "saved": "徽章颜色已保存。",
-    "failed": "无法保存徽章颜色，请重试。",
-    "previewAlt": "所选颜色下的段位徽章预览",
-    "swatch": "{tier} 颜色"
-  },
   statsConsole: {
     "metaTitle": "玩家数据",
     "kicker": "玩家数据",

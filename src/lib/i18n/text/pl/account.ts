@@ -1,17 +1,6 @@
 import type { TextBag } from "../types";
 
 export const account: TextBag["account"] = {
-  badgeColor: {
-    "title": "Kolor odznaki",
-    "body": "Wybierz kolor swojego standardowego emblematu rangi. Tylko kosmetyka: nigdy nie zmienia Rating Points, rangi ani dobierania graczy. Ilustrowana grafika Premium zachowuje kolory swojego poziomu.",
-    "presets": "Kolory poziomów",
-    "custom": "Własny kolor",
-    "reset": "Użyj koloru mojego poziomu",
-    "saved": "Kolor odznaki zapisany.",
-    "failed": "Nie udało się zapisać koloru odznaki. Spróbuj ponownie.",
-    "previewAlt": "Podgląd twojego emblematu rangi w wybranym kolorze",
-    "swatch": "Kolor {tier}"
-  },
   statsConsole: {
     "metaTitle": "Statystyki gracza",
     "kicker": "STATYSTYKI GRACZA",

@@ -332,7 +332,7 @@ export const FR: MessageBag = {
  seasonLayout: "Les dates de la Saison 1 seront annoncées prochainement.",
  rpEmpty: "— RP",
  rankProtocolTitle: "PROTOCOLE DE CLASSEMENT A.C.E.",
- rankProtocolBody: "La règle écrite compare un joueur au classement moyen de l'autre équipe. Contre une équipe de même niveau, une victoire enregistrée vaut +25 RP et une défaite −25 RP, toujours entre 10 et 40 RP par match, et les 10 paliers et 3 divisions se lisent à partir de ce nombre. Cette page ne valide aucun match : aucun changement de classement n'est appliqué ici.",
+ rankProtocolBody: "La règle écrite compare un joueur au classement moyen de l'autre équipe. Contre une équipe de même niveau, une victoire enregistrée vaut +15 RP et une défaite −15 RP, toujours entre 8 et 25 RP par match, et les 10 paliers et 3 divisions se lisent à partir de ce nombre. Cette page ne valide aucun match : aucun changement de classement n'est appliqué ici.",
  rankProgress: "Progression de rang",
  competitiveRating: "Classement compétitif",
  targetWinRate: "Objectif de victoires",

@@ -9,7 +9,7 @@ import { interpolate } from "@/lib/i18n";
 import { FloatingEmblem, PlayerAvatar } from "@/components/floating-emblem";
 import { RANK_TIERS, rankArtAsset, type RankArt } from "@/lib/ranks";
 
-export type ArenaCaptain = { avatarUrl: string | null; rating: number; level: number; art: RankArt; badgeColor?: string | null };
+export type ArenaCaptain = { avatarUrl: string | null; rating: number; level: number; art: RankArt };
 
 const MAPS = ["DUST II", "Mirage", "Inferno", "Nuke", "Ancient", "Anubis", "Train"] as const;
 
@@ -22,7 +22,7 @@ type RosterRow = {
   /** Showcase only: shows the Premium illustrated art, labelled "Premium sample". Not a subscriber. */
   premiumSample?: boolean;
   /** Real stored values for the signed-in captain only. */
-  live?: { avatarUrl: string | null; rating: number; art: RankArt; badgeColor?: string | null };
+  live?: { avatarUrl: string | null; rating: number; art: RankArt };
 };
 
 const TEAM_A_REST: RosterRow[] = [
@@ -94,7 +94,7 @@ function RosterCard({
             : interpolate(room.floorRp, { rp: tier.minRating.toLocaleString("en-US") })}
         </p>
       </div>
-      <FloatingEmblem src={rankArtAsset(tier.level, art, row.live?.badgeColor).stillSrc} alt={premium ? interpolate(text.play.premium.artAlt, { rank: tier.name }) : tier.name} size={premium ? 58 : 52} />
+      <FloatingEmblem src={rankArtAsset(tier.level, art).stillSrc} alt={premium ? interpolate(text.play.premium.artAlt, { rank: tier.name }) : tier.name} size={premium ? 58 : 52} />
     </li>
   );
 }
@@ -153,7 +153,7 @@ export function PlayMatchArena({
       role: "IGL",
       level: captain?.level ?? 6,
       skin: 0,
-      live: captain ? { avatarUrl: captain.avatarUrl, rating: captain.rating, art: captain.art, badgeColor: captain.badgeColor } : undefined,
+      live: captain ? { avatarUrl: captain.avatarUrl, rating: captain.rating, art: captain.art } : undefined,
     },
     ...TEAM_A_REST,
   ];

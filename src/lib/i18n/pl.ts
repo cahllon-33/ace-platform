@@ -297,7 +297,7 @@ export const PL: MessageBag = {
  seasonLayout: "Terminy 1. sezonu zostaną wkrótce ogłoszone.",
  rpEmpty: "— RP",
  rankProtocolTitle: "PROTOKÓŁ OCENY A.C.E.",
- rankProtocolBody: "Zapisana zasada porównuje gracza ze średnim ratingiem drugiej drużyny. Przeciwko równej drużynie zapisana wygrana to +25 RP, a przegrana −25 RP, zawsze w granicach od 10 do 40 RP na mecz, a 10 poziomów i 3 dywizje odczytuje się z tej liczby. Ta strona nie zatwierdza meczu, więc nie nalicza tu żadnej zmiany ratingu.",
+ rankProtocolBody: "Zapisana zasada porównuje gracza ze średnim ratingiem drugiej drużyny. Przeciwko równej drużynie zapisana wygrana to +15 RP, a przegrana −15 RP, zawsze w granicach od 8 do 25 RP na mecz, a 10 poziomów i 3 dywizje odczytuje się z tej liczby. Ta strona nie zatwierdza meczu, więc nie nalicza tu żadnej zmiany ratingu.",
  rankProgress: "Postęp rangi",
  competitiveRating: "Ocena turniejowa",
  targetWinRate: "Docelowy procent wygranych",

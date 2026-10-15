@@ -40,7 +40,7 @@ export const ranks: TextBag["ranks"] = {
     "colWin": "勝利",
     "colLoss": "敗北",
     "examplesTitle": "計算例",
-    "ex1": "同格チーム相手に勝ち続けた場合の {start} → {elite} RP（{top}）：ティア6まで +25 で {w1} 勝、ティア7〜9で +{win7} で {w2} 勝。合計 {total} 勝。",
+    "ex1": "同格チーム相手に勝ち続けた場合の {start} → {elite} RP（{top}）：ティア6まで +15 で {w1} 勝、ティア7〜9で +{win7} で {w2} 勝。合計 {total} 勝。",
     "ex2": "途中の敗北ごとに必要な勝利が増えます。ティア7〜9では勝利が +{win7} でも敗北は −{loss} のままなので、上がり続けるには互角の試合で少なくとも {breakEven}% 勝つ必要があります。",
     "ex3": "平均が自分より 200 RP 高いチーム相手では、勝利で +{strongWin}、敗北で −{strongLoss}。",
     "ex4": "平均が自分より 200 RP 低いチーム相手では、勝利で +{weakWin}、敗北で −{weakLoss}。",

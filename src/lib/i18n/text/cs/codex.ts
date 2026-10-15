@@ -283,14 +283,14 @@ export const codex: TextBag["codex"] = {
     },
     "how-points-move": {
       title: "Jak zaznamenaný výsledek mění body hodnocení",
-      lede: "Zaznamenaná výhra nebo prohra se měří vůči průměrnému hodnocení druhého týmu. Proti vyrovnanému týmu je výhra +25 a prohra −25. Úplná pravidla jsou na stránce Hodnosti.",
+      lede: "Zaznamenaná výhra nebo prohra se měří vůči průměrnému hodnocení druhého týmu. Proti vyrovnanému týmu je výhra +15 a prohra −15. Úplná pravidla jsou na stránce Hodnosti.",
       sections: [
         {
           heading: "Krok",
           paragraphs: [
-            "Očekávané skóre je šance, kterou engine přidělí před zápasem pouze podle obou hodnocení. Při stejném hodnocení je to polovina, takže výhra má hodnotu 25 Rating Points a prohra stojí 25.",
-            "Proti vyššímu hodnocení má výhra hodnotu víc než 25 a prohra stojí méně. Proti nižšímu je to naopak. Výhra vždy dává 10 až 40 a prohra vždy stojí 10 až 40. V úrovních 7–9 se zisky za výhru násobí 0,8 a v úrovni 10 0,7, takže vrchol žebříčku trvá déle. Hodnocení zůstává mezi 100 a 3 000.",
-            "U týmového výsledku se každý hráč měří vůči průměrnému hodnocení druhého týmu. Bonus MVP zápasu 3 RP je plánován na dobu, kdy server bude zaznamenávat zabití; do té doby se žádný osobní bonus neuplatňuje.",
+            "Očekávané skóre je šance, kterou engine přidělí před zápasem pouze podle obou hodnocení. Při stejném hodnocení je to polovina, takže výhra má hodnotu 15 Rating Points a prohra stojí 15.",
+            "Proti vyššímu hodnocení má výhra hodnotu víc než 15 a prohra stojí méně. Proti nižšímu je to naopak. Výhra vždy dává 8 až 25 a prohra vždy stojí 8 až 25. V úrovních 7–9 se zisky za výhru násobí 0,8 a v úrovni 10 0,7, takže vrchol žebříčku trvá déle. Hodnocení zůstává mezi 100 a 3 000.",
+            "U týmového výsledku se každý hráč měří vůči průměrnému hodnocení druhého týmu. Bonus MVP zápasu 2 RP je plánován na dobu, kdy server bude zaznamenávat zabití; do té doby se žádný osobní bonus neuplatňuje.",
           ],
         },
         {

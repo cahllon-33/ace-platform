@@ -40,7 +40,7 @@ export const ranks: TextBag["ranks"] = {
     "colWin": "胜",
     "colLoss": "负",
     "examplesTitle": "计算示例",
-    "ex1": "对阵实力相当的队伍且只赢不输，从 {start} 到 {elite} RP（{top}）：第 6 段之前每胜 +25，共 {w1} 胜；之后第 7–9 段每胜 +{win7}，共 {w2} 胜。合计 {total} 胜。",
+    "ex1": "对阵实力相当的队伍且只赢不输，从 {start} 到 {elite} RP（{top}）：第 6 段之前每胜 +15，共 {w1} 胜；之后第 7–9 段每胜 +{win7}，共 {w2} 胜。合计 {total} 胜。",
     "ex2": "途中的每一场失败都会增加所需胜场。第 7–9 段每胜 +{win7}，但每负仍扣 −{loss}，所以你需要在势均力敌的比赛中至少赢下 {breakEven}% 才能继续上升。",
     "ex3": "对阵平均积分比你高 200 RP 的队伍，胜利 +{strongWin}，失败 −{strongLoss}。",
     "ex4": "对阵平均积分比你低 200 RP 的队伍，胜利 +{weakWin}，失败 −{weakLoss}。",

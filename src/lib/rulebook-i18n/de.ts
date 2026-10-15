@@ -119,11 +119,11 @@ export const RB_DE: RulebookText = {
     ],
     [
       "Rating Points (RP) ändern sich nur durch bestätigte Matchergebnisse, nach den auf der Ranks-Seite veröffentlichten A.C.E Rating-Points-Regeln. Jedes neue Konto startet mit 1.200 RP in Stufe 3 (Vanguard).",
-      "Gegen ein Team mit gleicher Durchschnittswertung bringt ein Sieg +25 RP und eine Niederlage kostet −25 RP. Der Betrag wird an die Durchschnittswertung des anderen Teams angepasst und liegt immer zwischen 10 und 40 RP pro Match. Ein Unentschieden ändert nichts.",
+      "Gegen ein Team mit gleicher Durchschnittswertung bringt ein Sieg +15 RP und eine Niederlage kostet −15 RP. Der Betrag wird an die Durchschnittswertung des anderen Teams angepasst und liegt immer zwischen 8 und 25 RP pro Match. Ein Unentschieden ändert nichts.",
       "Siegpunkte werden in den Stufen 7–9 mit 0,8 und in Stufe 10 mit 0,7 multipliziert. Niederlagen werden nicht reduziert. Wertungen bleiben zwischen 100 und 3.000 RP und verfallen nicht bei Inaktivität.",
       "Die ersten 10 Matches eines Spielers sind Platzierungsmatches. Während der Platzierung kann die Wertung nicht über Stufe 5 steigen.",
       "Ein Spieler, der ein Match abbricht oder verlässt, verliert 50 RP, unabhängig vom Ergebnis, und kann keinen Match-MVP-Bonus erhalten.",
-      "Der Match-MVP (meiste Kills; bei Gleichstand mehr Schaden, dann weniger Tode) erhält bei einem Sieg 3 RP mehr und verliert bei einer Niederlage 3 RP weniger, innerhalb der Grenzen pro Match. Dieser Bonus gilt erst, wenn der Server Kills aufzeichnet. Kein bezahlter Plan verändert Rating Points."
+      "Der Match-MVP (meiste Kills; bei Gleichstand mehr Schaden, dann weniger Tode) erhält bei einem Sieg 2 RP mehr und verliert bei einer Niederlage 2 RP weniger, innerhalb der Grenzen pro Match. Dieser Bonus gilt erst, wenn der Server Kills aufzeichnet. Kein bezahlter Plan verändert Rating Points."
     ],
     [
       "Der Veranstalter kann dieses Regelwerk ändern. Änderungen werden auf dieser Seite mit neuer Versionsnummer und neuem Datum veröffentlicht.",

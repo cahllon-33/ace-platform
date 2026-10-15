@@ -13,7 +13,6 @@ import { PlannedButton } from "@/components/ui/button";
 import { Panel } from "@/components/ui/panel";
 import { RankEmblem } from "@/components/rank-emblem";
 import { RankArtPicker } from "@/components/rank-art-picker";
-import { BadgeColorPicker } from "@/components/badge-color-picker";
 import { canUsePremiumRankArt, effectiveRankArt, isPremiumPlan } from "@/server/rank-art";
 import { PremiumProfileCard, premiumCardLabels } from "@/components/premium-profile-card";
 import { playerBadges } from "@/lib/badges";
@@ -164,9 +163,8 @@ export default async function DashboardPage() {
               <p className="mt-2 text-xs leading-5 text-ace-muted">{text.account.statsConsole.lockedBody}</p>
             ) : null}
           </Panel>
-          <RankEmblem level={user.rankLevel} art={effectiveRankArt(user)} badgeColor={user.badgeColor} />
+          <RankEmblem level={user.rankLevel} art={effectiveRankArt(user)} />
           <RankArtPicker current={effectiveRankArt(user)} premiumAllowed={canUsePremiumRankArt(user.subscriptionTier)} />
-          <BadgeColorPicker current={user.badgeColor} level={user.rankLevel} />
         </div>
       </div>
 

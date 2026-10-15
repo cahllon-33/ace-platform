@@ -1,17 +1,6 @@
 import type { TextBag } from "../types";
 
 export const account: TextBag["account"] = {
-  badgeColor: {
-    "title": "배지 색상",
-    "body": "기본 랭크 엠블럼의 색상을 고르세요. 외형 전용이며 Rating Points, 랭크, 매치메이킹에는 전혀 영향을 주지 않습니다. Premium 일러스트 아트는 티어 고유 색상을 유지합니다.",
-    "presets": "티어 색상",
-    "custom": "사용자 지정 색상",
-    "reset": "내 티어 색상 사용",
-    "saved": "배지 색상을 저장했습니다.",
-    "failed": "배지 색상을 저장하지 못했습니다. 다시 시도하세요.",
-    "previewAlt": "선택한 색상의 랭크 엠블럼 미리보기",
-    "swatch": "{tier} 색상"
-  },
   statsConsole: {
     "metaTitle": "플레이어 통계",
     "kicker": "플레이어 통계",

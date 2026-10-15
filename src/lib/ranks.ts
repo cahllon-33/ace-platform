@@ -1,4 +1,3 @@
-import { badgeEmblemSrc, parseBadgeColor } from "@/lib/badge-color";
 import { interpolate } from "@/lib/i18n";
 
 export type RankTier = {
@@ -182,13 +181,8 @@ export function rankIllustratedAsset(level: number): RankEmblemAsset {
   };
 }
 
-/** badgeColor (player cosmetic, already validated) recolors the standard vector emblem only. */
-export function rankArtAsset(level: number, art: RankArt, badgeColor?: string | null): RankEmblemAsset {
-  if (art === "premium") return rankIllustratedAsset(level);
-  const color = badgeColor ? parseBadgeColor(badgeColor) : null;
-  if (!color) return rankEmblemAsset(level);
-  const src = badgeEmblemSrc(level, color);
-  return { stillSrc: src, heroSrc: src, gltfSrc: null };
+export function rankArtAsset(level: number, art: RankArt): RankEmblemAsset {
+  return art === "premium" ? rankIllustratedAsset(level) : rankEmblemAsset(level);
 }
 
 const RATING_CEILING_DISPLAY = 3000;

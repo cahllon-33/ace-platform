@@ -1,17 +1,6 @@
 import type { TextBag } from "../types";
 
 export const account: TextBag["account"] = {
-  badgeColor: {
-    "title": "Couleur de l'insigne",
-    "body": "Choisissez la couleur de votre emblème de rang standard. Purement cosmétique : elle ne change jamais vos Rating Points, votre rang ni le matchmaking. L'art illustré Premium garde les couleurs de son palier.",
-    "presets": "Couleurs des paliers",
-    "custom": "Couleur personnalisée",
-    "reset": "Utiliser la couleur de mon palier",
-    "saved": "Couleur de l'insigne enregistrée.",
-    "failed": "Impossible d'enregistrer la couleur de l'insigne. Réessayez.",
-    "previewAlt": "Aperçu de votre emblème de rang dans la couleur choisie",
-    "swatch": "Couleur {tier}"
-  },
   statsConsole: {
     "metaTitle": "Statistiques joueur",
     "kicker": "STATISTIQUES JOUEUR",

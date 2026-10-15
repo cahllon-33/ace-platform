@@ -1,15 +1,4 @@
 ﻿export const account = {
-  badgeColor: {
-    "title": "Badge color",
-    "body": "Choose the color of your standard rank emblem. Cosmetic only: it never changes your Rating Points, rank or matchmaking. Premium illustrated art keeps its own tier colors.",
-    "presets": "Tier colors",
-    "custom": "Custom color",
-    "reset": "Use my tier color",
-    "saved": "Badge color saved.",
-    "failed": "The badge color could not be saved. Try again.",
-    "previewAlt": "Preview of your rank emblem in the selected color",
-    "swatch": "{tier} color"
-  },
   statsConsole: {
     "metaTitle": "Player stats",
     "kicker": "PLAYER STATS",

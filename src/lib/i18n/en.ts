@@ -334,7 +334,7 @@ export const EN = {
  rpEmpty: "— RP",
  rankProtocolTitle: "A.C.E. RATING PROTOCOL",
  rankProtocolBody:
- "The written rule compares a player with the other team's average rating. Against an equal team a recorded win is +25 RP and a loss is −25 RP, always within 10 to 40 RP per match, and the 10 tiers and 3 divisions are read from that number. This page does not validate a match, so no rating change is applied here.",
+ "The written rule compares a player with the other team's average rating. Against an equal team a recorded win is +15 RP and a loss is −15 RP, always within 8 to 25 RP per match, and the 10 tiers and 3 divisions are read from that number. This page does not validate a match, so no rating change is applied here.",
  rankProgress: "Rank Progress",
  competitiveRating: "Competitive Rating",
  targetWinRate: "Target Win-Rate",

@@ -260,14 +260,14 @@ export const codex: TextBag["codex"] = {
     },
     "how-points-move": {
       "title": "Hur ett registrerat resultat flyttar ratingpoäng",
-      "lede": "En registrerad vinst eller förlust mäts mot det andra lagets genomsnittliga rating. Mot ett jämnt lag ger en vinst +25 och en förlust −25. De fullständiga reglerna finns på sidan Ranger.",
+      "lede": "En registrerad vinst eller förlust mäts mot det andra lagets genomsnittliga rating. Mot ett jämnt lag ger en vinst +15 och en förlust −15. De fullständiga reglerna finns på sidan Ranger.",
       "sections": [
         {
           "heading": "Steget",
           "paragraphs": [
-            "Förväntat resultat är chansen som motorn tilldelar före matchen, enbart utifrån de två ratingarna. Vid lika rating är den en halv, så en vinst är värd 25 Rating Points och en förlust kostar 25.",
-            "Mot en högre rating är en vinst värd mer än 25 och en förlust kostar mindre. Mot en lägre är det tvärtom. En vinst ger alltid 10 till 40 och en förlust kostar alltid 10 till 40. På nivå 7–9 multipliceras vinstpoäng med 0,8 och på nivå 10 med 0,7, så toppen av stegen tar längre tid. Ratingen hålls mellan 100 och 3 000.",
-            "Vid ett lagresultat mäts varje spelare mot det andra lagets genomsnittliga rating. En MVP-bonus på 3 RP är planerad för när servern registrerar kills; fram till dess tillämpas ingen personlig bonus."
+            "Förväntat resultat är chansen som motorn tilldelar före matchen, enbart utifrån de två ratingarna. Vid lika rating är den en halv, så en vinst är värd 15 Rating Points och en förlust kostar 15.",
+            "Mot en högre rating är en vinst värd mer än 15 och en förlust kostar mindre. Mot en lägre är det tvärtom. En vinst ger alltid 8 till 25 och en förlust kostar alltid 8 till 25. På nivå 7–9 multipliceras vinstpoäng med 0,8 och på nivå 10 med 0,7, så toppen av stegen tar längre tid. Ratingen hålls mellan 100 och 3 000.",
+            "Vid ett lagresultat mäts varje spelare mot det andra lagets genomsnittliga rating. En MVP-bonus på 2 RP är planerad för när servern registrerar kills; fram till dess tillämpas ingen personlig bonus."
           ]
         },
         {

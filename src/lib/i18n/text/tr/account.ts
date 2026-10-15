@@ -1,17 +1,6 @@
 import type { TextBag } from "../types";
 
 export const account: TextBag["account"] = {
-  badgeColor: {
-    "title": "Rozet rengi",
-    "body": "Standart rütbe ambleminin rengini seç. Yalnızca kozmetik: Rating Points'ini, rütbeni veya eşleştirmeyi asla değiştirmez. Premium resimli tasarım kendi kademe renklerini korur.",
-    "presets": "Kademe renkleri",
-    "custom": "Özel renk",
-    "reset": "Kadememin rengini kullan",
-    "saved": "Rozet rengi kaydedildi.",
-    "failed": "Rozet rengi kaydedilemedi. Tekrar dene.",
-    "previewAlt": "Rütbe ambleminin seçilen renkteki önizlemesi",
-    "swatch": "{tier} rengi"
-  },
   statsConsole: {
     "metaTitle": "Oyuncu istatistikleri",
     "kicker": "OYUNCU İSTATİSTİKLERİ",

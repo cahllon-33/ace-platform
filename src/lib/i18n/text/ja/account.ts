@@ -1,17 +1,6 @@
 import type { TextBag } from "../types";
 
 export const account: TextBag["account"] = {
-  badgeColor: {
-    "title": "バッジの色",
-    "body": "標準ランクエンブレムの色を選べます。見た目のみで、Rating Points・ランク・マッチメイキングには一切影響しません。Premium のイラストアートはティア固有の色のままです。",
-    "presets": "ティアカラー",
-    "custom": "カスタムカラー",
-    "reset": "自分のティアの色を使う",
-    "saved": "バッジの色を保存しました。",
-    "failed": "バッジの色を保存できませんでした。もう一度お試しください。",
-    "previewAlt": "選択した色でのランクエンブレムのプレビュー",
-    "swatch": "{tier} の色"
-  },
   statsConsole: {
     "metaTitle": "プレイヤー統計",
     "kicker": "プレイヤー統計",

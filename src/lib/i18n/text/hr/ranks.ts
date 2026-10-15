@@ -40,7 +40,7 @@ export const ranks: TextBag["ranks"] = {
     "colWin": "Pobjeda",
     "colLoss": "Poraz",
     "examplesTitle": "Izračunati primjeri",
-    "ex1": "Od {start} do {elite} RP ({top}) protiv jednakih timova, samo pobjedama: {w1} pobjeda po +25 do razine 6, zatim {w2} pobjeda po +{win7} na razinama 7–9. Ukupno {total} pobjeda.",
+    "ex1": "Od {start} do {elite} RP ({top}) protiv jednakih timova, samo pobjedama: {w1} pobjeda po +15 do razine 6, zatim {w2} pobjeda po +{win7} na razinama 7–9. Ukupno {total} pobjeda.",
     "ex2": "Svaki poraz usput dodaje pobjede. Na razinama 7–9 pobjeda donosi +{win7}, ali poraz i dalje košta −{loss}, pa moraš dobiti barem {breakEven} % izjednačenih mečeva da bi nastavio rasti.",
     "ex3": "Protiv tima s prosječno 200 RP više od tebe pobjeda donosi +{strongWin}, a poraz košta −{strongLoss}.",
     "ex4": "Protiv tima s prosječno 200 RP manje od tebe pobjeda donosi +{weakWin}, a poraz košta −{weakLoss}.",

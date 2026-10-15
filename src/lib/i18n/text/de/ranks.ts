@@ -40,7 +40,7 @@ export const ranks: TextBag["ranks"] = {
     "colWin": "Sieg",
     "colLoss": "Niederlage",
     "examplesTitle": "Rechenbeispiele",
-    "ex1": "Von {start} auf {elite} RP ({top}) gegen gleich starke Teams, nur mit Siegen: {w1} Siege mit +25 bis einschließlich Stufe 6, dann {w2} Siege mit +{win7} durch die Stufen 7–9. Insgesamt {total} Siege.",
+    "ex1": "Von {start} auf {elite} RP ({top}) gegen gleich starke Teams, nur mit Siegen: {w1} Siege mit +15 bis einschließlich Stufe 6, dann {w2} Siege mit +{win7} durch die Stufen 7–9. Insgesamt {total} Siege.",
     "ex2": "Jede Niederlage unterwegs kostet zusätzliche Siege. In den Stufen 7–9 bringt ein Sieg +{win7}, eine Niederlage kostet aber weiter −{loss}, daher musst du mindestens {breakEven} % der ausgeglichenen Matches gewinnen, um weiter aufzusteigen.",
     "ex3": "Gegen ein Team mit 200 RP mehr im Schnitt bringt ein Sieg +{strongWin} und eine Niederlage kostet −{strongLoss}.",
     "ex4": "Gegen ein Team mit 200 RP weniger im Schnitt bringt ein Sieg +{weakWin} und eine Niederlage kostet −{weakLoss}.",

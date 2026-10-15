@@ -260,14 +260,14 @@ export const codex: TextBag["codex"] = {
     },
     "how-points-move": {
       "title": "Cum mută un rezultat înregistrat Rating Points",
-      "lede": "O victorie sau o înfrângere înregistrată se măsoară față de ratingul mediu al celeilalte echipe. Împotriva unei echipe egale o victorie înseamnă +25, iar o înfrângere −25. Regulile complete sunt pe pagina Ranguri.",
+      "lede": "O victorie sau o înfrângere înregistrată se măsoară față de ratingul mediu al celeilalte echipe. Împotriva unei echipe egale o victorie înseamnă +15, iar o înfrângere −15. Regulile complete sunt pe pagina Ranguri.",
       "sections": [
         {
           "heading": "Pasul",
           "paragraphs": [
-            "Scorul așteptat este șansa pe care motorul o atribuie înainte de meci, doar pe baza celor două ratinguri. La ratinguri egale este o jumătate, așa că o victorie valorează 25 Rating Points, iar o înfrângere costă 25.",
-            "Împotriva unui rating mai mare, o victorie valorează mai mult de 25, iar o înfrângere costă mai puțin. Împotriva unuia mai mic, invers. O victorie aduce mereu între 10 și 40, iar o înfrângere costă mereu între 10 și 40. La nivelurile 7–9 câștigurile din victorii se înmulțesc cu 0,8, iar la nivelul 10 cu 0,7, așa că vârful clasamentului durează mai mult. Ratingul rămâne între 100 și 3.000.",
-            "La un rezultat de echipă, fiecare jucător este măsurat față de ratingul mediu al celeilalte echipe. Un bonus MVP de 3 RP este planificat pentru momentul în care serverul va înregistra eliminările; până atunci nu se aplică niciun bonus personal."
+            "Scorul așteptat este șansa pe care motorul o atribuie înainte de meci, doar pe baza celor două ratinguri. La ratinguri egale este o jumătate, așa că o victorie valorează 15 Rating Points, iar o înfrângere costă 15.",
+            "Împotriva unui rating mai mare, o victorie valorează mai mult de 15, iar o înfrângere costă mai puțin. Împotriva unuia mai mic, invers. O victorie aduce mereu între 8 și 25, iar o înfrângere costă mereu între 8 și 25. La nivelurile 7–9 câștigurile din victorii se înmulțesc cu 0,8, iar la nivelul 10 cu 0,7, așa că vârful clasamentului durează mai mult. Ratingul rămâne între 100 și 3.000.",
+            "La un rezultat de echipă, fiecare jucător este măsurat față de ratingul mediu al celeilalte echipe. Un bonus MVP de 2 RP este planificat pentru momentul în care serverul va înregistra eliminările; până atunci nu se aplică niciun bonus personal."
           ]
         },
         {

@@ -1,17 +1,6 @@
 import type { TextBag } from "../types";
 
 export const account: TextBag["account"] = {
-  badgeColor: {
-    "title": "צבע התג",
-    "body": "בחר את הצבע של סמל הדרגה הרגיל שלך. קוסמטי בלבד: הוא לעולם לא משנה את ה־Rating Points, הדרגה או השידוך. האמנות המאוירת של Premium שומרת על צבעי הדרג שלה.",
-    "presets": "צבעי הדרגים",
-    "custom": "צבע מותאם",
-    "reset": "השתמש בצבע הדרג שלי",
-    "saved": "צבע התג נשמר.",
-    "failed": "לא ניתן היה לשמור את צבע התג. נסה שוב.",
-    "previewAlt": "תצוגה מקדימה של סמל הדרגה שלך בצבע שנבחר",
-    "swatch": "צבע {tier}"
-  },
   statsConsole: {
     "metaTitle": "סטטיסטיקות שחקן",
     "kicker": "סטטיסטיקות שחקן",

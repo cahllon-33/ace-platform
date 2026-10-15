@@ -260,14 +260,14 @@ export const codex: TextBag["codex"] = {
     },
     "how-points-move": {
       "title": "Kako zabilježeni rezultat pomiče Rating Points",
-      "lede": "Zabilježena pobjeda ili poraz mjeri se u odnosu na prosječni rejting drugog tima. Protiv jednakog tima pobjeda je +25, a poraz −25. Potpuna pravila nalaze se na stranici Rangovi.",
+      "lede": "Zabilježena pobjeda ili poraz mjeri se u odnosu na prosječni rejting drugog tima. Protiv jednakog tima pobjeda je +15, a poraz −15. Potpuna pravila nalaze se na stranici Rangovi.",
       "sections": [
         {
           "heading": "Korak",
           "paragraphs": [
-            "Očekivani rezultat je šansa koju sustav dodjeljuje prije meča, samo na temelju dvaju rejtinga. Pri jednakom rejtingu ona iznosi polovicu, pa pobjeda vrijedi 25 Rating Points, a poraz košta 25.",
-            "Protiv višeg rejtinga pobjeda vrijedi više od 25, a poraz košta manje. Protiv nižeg je obrnuto. Pobjeda uvijek donosi od 10 do 40, a poraz uvijek košta od 10 do 40. Na razinama 7–9 dobici od pobjede množe se s 0,8, a na razini 10 s 0,7, pa vrh ljestvice traje dulje. Rejting ostaje između 100 i 3.000.",
-            "Kod timskog rezultata svaki se igrač mjeri u odnosu na prosječni rejting drugog tima. MVP bonus meča od 3 RP planiran je za trenutak kad poslužitelj počne bilježiti ubojstva; do tada se ne primjenjuje osobni bonus."
+            "Očekivani rezultat je šansa koju sustav dodjeljuje prije meča, samo na temelju dvaju rejtinga. Pri jednakom rejtingu ona iznosi polovicu, pa pobjeda vrijedi 15 Rating Points, a poraz košta 15.",
+            "Protiv višeg rejtinga pobjeda vrijedi više od 15, a poraz košta manje. Protiv nižeg je obrnuto. Pobjeda uvijek donosi od 8 do 25, a poraz uvijek košta od 8 do 25. Na razinama 7–9 dobici od pobjede množe se s 0,8, a na razini 10 s 0,7, pa vrh ljestvice traje dulje. Rejting ostaje između 100 i 3.000.",
+            "Kod timskog rezultata svaki se igrač mjeri u odnosu na prosječni rejting drugog tima. MVP bonus meča od 2 RP planiran je za trenutak kad poslužitelj počne bilježiti ubojstva; do tada se ne primjenjuje osobni bonus."
           ]
         },
         {

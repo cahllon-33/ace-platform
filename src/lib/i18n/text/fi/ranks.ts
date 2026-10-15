@@ -40,7 +40,7 @@ export const ranks: TextBag["ranks"] = {
     "colWin": "Voitto",
     "colLoss": "Tappio",
     "examplesTitle": "Laskuesimerkit",
-    "ex1": "{start} → {elite} RP ({top}) tasaväkisiä joukkueita vastaan pelkillä voitoilla: {w1} voittoa à +25 tasolle 6 asti, sitten {w2} voittoa à +{win7} tasojen 7–9 läpi. Yhteensä {total} voittoa.",
+    "ex1": "{start} → {elite} RP ({top}) tasaväkisiä joukkueita vastaan pelkillä voitoilla: {w1} voittoa à +15 tasolle 6 asti, sitten {w2} voittoa à +{win7} tasojen 7–9 läpi. Yhteensä {total} voittoa.",
     "ex2": "Jokainen tappio matkalla lisää tarvittavia voittoja. Tasoilla 7–9 voitto tuo +{win7}, mutta tappio maksaa edelleen −{loss}, joten sinun on voitettava vähintään {breakEven} % tasaväkisistä otteluista, jotta nousu jatkuu.",
     "ex3": "Joukkuetta vastaan, jonka keskiarvo on 200 RP sinua korkeampi, voitto tuo +{strongWin} ja tappio maksaa −{strongLoss}.",
     "ex4": "Joukkuetta vastaan, jonka keskiarvo on 200 RP sinua matalampi, voitto tuo +{weakWin} ja tappio maksaa −{weakLoss}.",

@@ -1,17 +1,6 @@
 import type { TextBag } from "../types";
 
 export const account: TextBag["account"] = {
-  badgeColor: {
-    "title": "Boja značke",
-    "body": "Odaberi boju svog standardnog amblema ranga. Samo kozmetika: nikad ne mijenja tvoje Rating Points, rang ni uparivanje. Ilustrirana Premium grafika zadržava boje svoje razine.",
-    "presets": "Boje razina",
-    "custom": "Vlastita boja",
-    "reset": "Koristi boju moje razine",
-    "saved": "Boja značke spremljena.",
-    "failed": "Boju značke nije bilo moguće spremiti. Pokušaj ponovno.",
-    "previewAlt": "Pregled tvog amblema ranga u odabranoj boji",
-    "swatch": "Boja {tier}"
-  },
   statsConsole: {
     "metaTitle": "Statistika igrača",
     "kicker": "STATISTIKA IGRAČA",

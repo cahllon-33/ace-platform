@@ -119,11 +119,11 @@ export const RB_CS: RulebookText = {
     ],
     [
       "Rating Points (RP) se mění pouze ověřenými výsledky zápasů, podle pravidel Rating Points A.C.E zveřejněných na stránce Hodnosti. Každý nový účet začíná s 1 200 RP v úrovni 3 (Vanguard).",
-      "Proti týmu se stejným průměrným hodnocením dává výhra +25 RP a prohra stojí −25 RP. Částka se upravuje podle průměrného hodnocení druhého týmu a vždy zůstává mezi 10 a 40 RP za zápas. Remíza nic nemění.",
+      "Proti týmu se stejným průměrným hodnocením dává výhra +15 RP a prohra stojí −15 RP. Částka se upravuje podle průměrného hodnocení druhého týmu a vždy zůstává mezi 8 a 25 RP za zápas. Remíza nic nemění.",
       "Zisky za výhru se v úrovních 7–9 násobí 0,8 a v úrovni 10 0,7. Prohry se nesnižují. Hodnocení zůstává mezi 100 a 3 000 RP a při neaktivitě neklesá.",
       "Prvních 10 zápasů hráče jsou umísťovací zápasy. Během nich hodnocení nemůže stoupnout nad úroveň 5.",
       "Hráč, který zápas opustí nebo z něj odejde, ztrácí 50 RP bez ohledu na výsledek a nemůže získat bonus MVP zápasu.",
-      "MVP zápasu (nejvíce zabití; při shodě vyšší poškození, pak méně úmrtí) získá při výhře o 3 RP více a při prohře ztratí o 3 RP méně, v rámci limitů zápasu. Tento bonus platí až od chvíle, kdy server zaznamenává zabití. Žádný placený plán nemění Rating Points."
+      "MVP zápasu (nejvíce zabití; při shodě vyšší poškození, pak méně úmrtí) získá při výhře o 2 RP více a při prohře ztratí o 2 RP méně, v rámci limitů zápasu. Tento bonus platí až od chvíle, kdy server zaznamenává zabití. Žádný placený plán nemění Rating Points."
     ],
     [
       "Pořadatel může tato pravidla měnit. Změny se zveřejňují na této stránce s novým číslem verze a datem.",

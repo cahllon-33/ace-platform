@@ -296,7 +296,7 @@ export const HR: MessageBag = {
   seasonLayout: "Datumi 1. sezone bit će uskoro objavljeni.",
   rpEmpty: "— RP",
   rankProtocolTitle: "PROTOKOL REJTINGA A.C.E.",
-  rankProtocolBody: "Pisano pravilo uspoređuje igrača s prosječnim rejtingom drugog tima. Protiv jednakog tima zabilježena pobjeda je +25 RP, a poraz −25 RP, uvijek u rasponu od 10 do 40 RP po meču, a 10 razina i 3 divizije čitaju se iz tog broja. Ova stranica ne potvrđuje meč, pa se ovdje ne primjenjuje nikakva promjena rejtinga.",
+  rankProtocolBody: "Pisano pravilo uspoređuje igrača s prosječnim rejtingom drugog tima. Protiv jednakog tima zabilježena pobjeda je +15 RP, a poraz −15 RP, uvijek u rasponu od 8 do 25 RP po meču, a 10 razina i 3 divizije čitaju se iz tog broja. Ova stranica ne potvrđuje meč, pa se ovdje ne primjenjuje nikakva promjena rejtinga.",
   rankProgress: "Napredak ranga",
   competitiveRating: "Natjecateljski rejting",
   targetWinRate: "Ciljani postotak pobjeda",

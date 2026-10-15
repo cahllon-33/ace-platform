@@ -40,7 +40,7 @@ export const ranks: TextBag["ranks"] = {
     "colWin": "승리",
     "colLoss": "패배",
     "examplesTitle": "계산 예시",
-    "ex1": "동급 팀 상대로 승리만 했을 때 {start} → {elite} RP({top}): 6티어까지 +25로 {w1}승, 이후 7~9티어에서 +{win7}로 {w2}승. 총 {total}승.",
+    "ex1": "동급 팀 상대로 승리만 했을 때 {start} → {elite} RP({top}): 6티어까지 +15로 {w1}승, 이후 7~9티어에서 +{win7}로 {w2}승. 총 {total}승.",
     "ex2": "도중의 패배마다 필요한 승리가 늘어납니다. 7~9티어에서는 승리가 +{win7}이지만 패배는 여전히 −{loss}이므로, 계속 오르려면 비등한 경기의 최소 {breakEven}%를 이겨야 합니다.",
     "ex3": "평균이 나보다 200 RP 높은 팀 상대로는 승리 시 +{strongWin}, 패배 시 −{strongLoss}.",
     "ex4": "평균이 나보다 200 RP 낮은 팀 상대로는 승리 시 +{weakWin}, 패배 시 −{weakLoss}.",

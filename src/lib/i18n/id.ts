@@ -296,7 +296,7 @@ export const ID: MessageBag = {
  seasonLayout: "Jadwal Season 1 segera diumumkan.",
  rpEmpty: "— RP",
  rankProtocolTitle: "PROTOKOL PERINGKAT A.C.E.",
- rankProtocolBody: "Aturan tertulis membandingkan pemain dengan rata-rata rating tim lawan. Melawan tim setara, kemenangan tercatat bernilai +25 RP dan kekalahan −25 RP, selalu dalam 10 sampai 40 RP per pertandingan, dan 10 tingkat serta 3 divisi dibaca dari angka itu. Halaman ini tidak memvalidasi pertandingan, jadi tidak ada perubahan rating yang diterapkan di sini.",
+ rankProtocolBody: "Aturan tertulis membandingkan pemain dengan rata-rata rating tim lawan. Melawan tim setara, kemenangan tercatat bernilai +15 RP dan kekalahan −15 RP, selalu dalam 8 sampai 25 RP per pertandingan, dan 10 tingkat serta 3 divisi dibaca dari angka itu. Halaman ini tidak memvalidasi pertandingan, jadi tidak ada perubahan rating yang diterapkan di sini.",
  rankProgress: "Kemajuan peringkat",
  competitiveRating: "Peringkat kompetitif",
  targetWinRate: "Target rasio menang",

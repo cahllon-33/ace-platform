@@ -119,11 +119,11 @@ export const RB_HU: RulebookText = {
     ],
     [
       "A Rating Points (RP) csak ellenőrzött meccseredményekkel változik, a Rangok oldalon közzétett A.C.E Rating Points szabályok szerint. Minden új fiók 1200 RP-vel kezd a 3. szinten (Vanguard).",
-      "Azonos átlagos értékszámú csapat ellen egy győzelem +25 RP-t ad, egy vereség −25 RP-be kerül. Az összeget a másik csapat átlagos értékszámához igazítjuk, és meccsenként mindig 10 és 40 RP között marad. A döntetlen semmit nem változtat.",
+      "Azonos átlagos értékszámú csapat ellen egy győzelem +15 RP-t ad, egy vereség −15 RP-be kerül. Az összeget a másik csapat átlagos értékszámához igazítjuk, és meccsenként mindig 8 és 25 RP között marad. A döntetlen semmit nem változtat.",
       "A győzelmi nyereséget a 7–9. szinten 0,8-del, a 10. szinten 0,7-del szorozzuk. A vereségeket nem csökkentjük. Az értékszám 100 és 3000 RP között marad, és inaktivitás miatt nem csökken.",
       "Egy játékos első 10 meccse besoroló meccs. A besorolás alatt az értékszám nem emelkedhet az 5. szint fölé.",
       "Az a játékos, aki elhagy vagy félbehagy egy meccset, 50 RP-t veszít az eredménytől függetlenül, és nem kaphat meccs-MVP-bónuszt.",
-      "A meccs MVP-je (legtöbb ölés; egyenlőségnél több sebzés, majd kevesebb halál) győzelemnél 3 RP-vel többet kap, vereségnél 3 RP-vel kevesebbet veszít, a meccsenkénti korlátokon belül. Ez a bónusz csak akkor érvényes, amikor a szerver rögzíti az öléseket. Egyetlen fizetős csomag sem változtatja meg a Rating Points-ot."
+      "A meccs MVP-je (legtöbb ölés; egyenlőségnél több sebzés, majd kevesebb halál) győzelemnél 2 RP-vel többet kap, vereségnél 2 RP-vel kevesebbet veszít, a meccsenkénti korlátokon belül. Ez a bónusz csak akkor érvényes, amikor a szerver rögzíti az öléseket. Egyetlen fizetős csomag sem változtatja meg a Rating Points-ot."
     ],
     [
       "A szervező módosíthatja ezt a szabálykönyvet. A módosításokat ezen az oldalon, új verziószámmal és dátummal teszik közzé.",

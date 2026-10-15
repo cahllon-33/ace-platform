@@ -260,14 +260,14 @@ export const codex: TextBag["codex"] = {
     },
     "how-points-move": {
       "title": "Miten kirjattu tulos siirtää luokituspisteitä",
-      "lede": "Tallennettu voitto tai tappio mitataan toisen joukkueen keskimääräistä luokitusta vasten. Tasaväkistä joukkuetta vastaan voitto on +25 ja tappio −25. Täydelliset säännöt ovat Arvot-sivulla.",
+      "lede": "Tallennettu voitto tai tappio mitataan toisen joukkueen keskimääräistä luokitusta vasten. Tasaväkistä joukkuetta vastaan voitto on +15 ja tappio −15. Täydelliset säännöt ovat Arvot-sivulla.",
       "sections": [
         {
           "heading": "Askel",
           "paragraphs": [
-            "Odotettu tulos on todennäköisyys, jonka moottori antaa ennen ottelua pelkästään kahden luokituksen perusteella. Tasaväkisillä luokituksilla se on puolet, joten voitto on 25 Rating Pointsin arvoinen ja tappio maksaa 25.",
-            "Korkeampaa luokitusta vastaan voitto on yli 25:n arvoinen ja tappio maksaa vähemmän. Matalampaa vastaan päinvastoin. Voitto tuo aina 10–40 ja tappio maksaa aina 10–40. Tasoilla 7–9 voittopisteet kerrotaan 0,8:lla ja tasolla 10 0,7:llä, joten tikkaiden huippu vie kauemmin. Luokitus pysyy välillä 100–3 000.",
-            "Joukkuetuloksessa jokainen pelaaja mitataan toisen joukkueen keskimääräistä luokitusta vasten. 3 RP:n ottelun MVP-bonus on suunniteltu siihen hetkeen, kun palvelin tallentaa tappoja; siihen asti henkilökohtaista bonusta ei sovelleta."
+            "Odotettu tulos on todennäköisyys, jonka moottori antaa ennen ottelua pelkästään kahden luokituksen perusteella. Tasaväkisillä luokituksilla se on puolet, joten voitto on 15 Rating Pointsin arvoinen ja tappio maksaa 15.",
+            "Korkeampaa luokitusta vastaan voitto on yli 15:n arvoinen ja tappio maksaa vähemmän. Matalampaa vastaan päinvastoin. Voitto tuo aina 8–25 ja tappio maksaa aina 8–25. Tasoilla 7–9 voittopisteet kerrotaan 0,8:lla ja tasolla 10 0,7:llä, joten tikkaiden huippu vie kauemmin. Luokitus pysyy välillä 100–3 000.",
+            "Joukkuetuloksessa jokainen pelaaja mitataan toisen joukkueen keskimääräistä luokitusta vasten. 2 RP:n ottelun MVP-bonus on suunniteltu siihen hetkeen, kun palvelin tallentaa tappoja; siihen asti henkilökohtaista bonusta ei sovelleta."
           ]
         },
         {

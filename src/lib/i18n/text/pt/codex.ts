@@ -283,14 +283,14 @@ export const codex: TextBag["codex"] = {
     },
     "how-points-move": {
       title: "Como um resultado registado move os Pontos de Rating",
-      lede: "Uma vitória ou derrota registada é medida face à pontuação média da outra equipa. Contra uma equipa equilibrada uma vitória vale +25 e uma derrota −25. As regras completas estão na página de Patentes.",
+      lede: "Uma vitória ou derrota registada é medida face à pontuação média da outra equipa. Contra uma equipa equilibrada uma vitória vale +15 e uma derrota −15. As regras completas estão na página de Patentes.",
       sections: [
         {
           heading: "O passo",
           paragraphs: [
-            "A pontuação esperada é a probabilidade que o motor atribui antes da partida, apenas com base nas duas pontuações. Com pontuações iguais é metade, por isso uma vitória vale 25 Rating Points e uma derrota custa 25.",
-            "Contra uma pontuação mais alta, uma vitória vale mais de 25 e uma derrota custa menos. Contra uma mais baixa, o contrário. Uma vitória dá sempre de 10 a 40 e uma derrota custa sempre de 10 a 40. Nos escalões 7–9 os ganhos por vitória são multiplicados por 0,8 e no escalão 10 por 0,7, por isso o topo da escada demora mais. A pontuação fica entre 100 e 3.000.",
-            "Num resultado de equipa, cada jogador é medido face à pontuação média da outra equipa. Está previsto um bónus MVP de partida de 3 RP para quando o servidor registar abates; até lá não é aplicado nenhum bónus pessoal.",
+            "A pontuação esperada é a probabilidade que o motor atribui antes da partida, apenas com base nas duas pontuações. Com pontuações iguais é metade, por isso uma vitória vale 15 Rating Points e uma derrota custa 15.",
+            "Contra uma pontuação mais alta, uma vitória vale mais de 15 e uma derrota custa menos. Contra uma mais baixa, o contrário. Uma vitória dá sempre de 8 a 25 e uma derrota custa sempre de 8 a 25. Nos escalões 7–9 os ganhos por vitória são multiplicados por 0,8 e no escalão 10 por 0,7, por isso o topo da escada demora mais. A pontuação fica entre 100 e 3.000.",
+            "Num resultado de equipa, cada jogador é medido face à pontuação média da outra equipa. Está previsto um bónus MVP de partida de 2 RP para quando o servidor registar abates; até lá não é aplicado nenhum bónus pessoal.",
           ],
         },
         {

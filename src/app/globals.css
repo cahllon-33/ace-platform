@@ -7879,26 +7879,6 @@ html[dir="rtl"] .ace-hub-card-face {
 .ace-premium-tag { display: inline-flex; align-items: center; margin-inline-start: 0.4rem; padding: 0.08rem 0.45rem; border-radius: 999px; border: 1px solid rgba(255,215,0,0.7); background: linear-gradient(135deg, #3a2a05, #b8860b 55%, #ffd700); color: #120d02; font-size: 0.58rem; font-weight: 800; letter-spacing: 0.14em; line-height: 1.4; text-transform: uppercase; vertical-align: middle; box-shadow: 0 0 10px rgba(255,200,60,0.35); white-space: nowrap; }
 .ace-room-slot.is-premium { border-color: rgba(255,215,0,0.55); box-shadow: inset 0 0 0 1px rgba(255,215,0,0.18), 0 0 22px -8px rgba(255,200,60,0.45); }
 
-/* R17: badge color picker (cosmetic standard-emblem color). */
-.ace-badge-picker { border: 1px solid rgba(255,215,0,0.22); border-radius: 14px; padding: 1rem 1.1rem; background: linear-gradient(160deg, rgba(28,24,14,0.92), rgba(10,10,12,0.96)); }
-.ace-badge-picker-head { display: flex; gap: 0.9rem; align-items: center; }
-.ace-badge-picker-head img { width: 84px; height: 84px; flex: none; filter: drop-shadow(0 8px 18px rgba(0,0,0,0.6)); }
-.ace-badge-picker-title { font-size: 0.8rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: #ffd700; }
-.ace-badge-picker-body { margin-top: 0.25rem; font-size: 0.78rem; line-height: 1.45; color: rgba(255,255,255,0.65); }
-.ace-badge-picker-label { margin-top: 0.9rem; font-size: 0.68rem; letter-spacing: 0.16em; text-transform: uppercase; color: rgba(255,255,255,0.55); }
-.ace-badge-swatches { margin-top: 0.45rem; display: grid; grid-template-columns: repeat(10, minmax(0, 1fr)); gap: 0.4rem; }
-.ace-badge-swatch { aspect-ratio: 1; border-radius: 999px; border: 2px solid rgba(255,255,255,0.15); cursor: pointer; transition: transform 0.15s ease, box-shadow 0.15s ease; }
-.ace-badge-swatch:hover:not(:disabled) { transform: scale(1.1); }
-.ace-badge-swatch[aria-pressed="true"] { border-color: #ffd700; box-shadow: 0 0 0 2px rgba(0,0,0,0.8), 0 0 12px rgba(255,215,0,0.6); }
-.ace-badge-swatch:focus-visible, .ace-badge-reset:focus-visible, .ace-badge-custom input:focus-visible { outline: 2px solid #ffd700; outline-offset: 2px; }
-.ace-badge-picker-row { margin-top: 0.85rem; display: flex; flex-wrap: wrap; gap: 0.7rem; align-items: center; justify-content: space-between; }
-.ace-badge-custom { display: inline-flex; align-items: center; gap: 0.55rem; font-size: 0.78rem; color: rgba(255,255,255,0.8); }
-.ace-badge-custom input { width: 2.6rem; height: 1.9rem; border: 1px solid rgba(255,215,0,0.35); border-radius: 8px; background: transparent; cursor: pointer; padding: 2px; }
-.ace-badge-reset { font-size: 0.74rem; padding: 0.4rem 0.8rem; border-radius: 999px; border: 1px solid rgba(255,255,255,0.2); color: rgba(255,255,255,0.85); }
-.ace-badge-reset:disabled { opacity: 0.45; cursor: default; }
-.ace-badge-picker-note { margin-top: 0.6rem; font-size: 0.75rem; color: #ffd700; }
-@media (prefers-reduced-motion: reduce) { .ace-badge-swatch { transition: none; } }
-
 /* R17: A.C.E Rating Points rules on /ranks. */
 .ace-rp-rules { margin-top: 3rem; scroll-margin-top: 6rem; border-radius: 1.5rem; border: 1px solid rgba(255,215,0,0.28); padding: 1.5rem; background: radial-gradient(120% 80% at 0% 0%, rgba(255,215,0,0.08), transparent 55%), #111113; }
 @media (min-width: 640px) { .ace-rp-rules { padding: 2rem; } }

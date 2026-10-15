@@ -40,7 +40,7 @@ export const ranks: TextBag["ranks"] = {
     "colWin": "Wygrana",
     "colLoss": "Przegrana",
     "examplesTitle": "Przykłady z obliczeniami",
-    "ex1": "Z {start} do {elite} RP ({top}) przeciwko równym drużynom, tylko wygrywając: {w1} wygranych po +25 do poziomu 6, potem {w2} wygranych po +{win7} na poziomach 7–9. Razem {total} wygranych.",
+    "ex1": "Z {start} do {elite} RP ({top}) przeciwko równym drużynom, tylko wygrywając: {w1} wygranych po +15 do poziomu 6, potem {w2} wygranych po +{win7} na poziomach 7–9. Razem {total} wygranych.",
     "ex2": "Każda przegrana po drodze dokłada kolejne wygrane. Na poziomach 7–9 wygrana daje +{win7}, ale przegrana nadal kosztuje −{loss}, więc musisz wygrywać co najmniej {breakEven}% wyrównanych meczów, aby dalej awansować.",
     "ex3": "Przeciwko drużynie o średnio 200 RP wyższym ratingu wygrana daje +{strongWin}, a przegrana kosztuje −{strongLoss}.",
     "ex4": "Przeciwko drużynie o średnio 200 RP niższym ratingu wygrana daje +{weakWin}, a przegrana kosztuje −{weakLoss}.",

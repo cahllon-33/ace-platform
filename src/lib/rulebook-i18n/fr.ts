@@ -119,11 +119,11 @@ export const RB_FR: RulebookText = {
     ],
     [
       "Les Rating Points (RP) ne changent qu'à la suite de résultats de match vérifiés, selon les règles des Rating Points A.C.E publiées sur la page Rangs. Chaque nouveau compte commence avec 1 200 RP au palier 3 (Vanguard).",
-      "Contre une équipe de même classement moyen, une victoire rapporte +25 RP et une défaite coûte −25 RP. Le montant est ajusté selon le classement moyen de l'autre équipe et reste toujours entre 10 et 40 RP par match. Un match nul ne change rien.",
+      "Contre une équipe de même classement moyen, une victoire rapporte +15 RP et une défaite coûte −15 RP. Le montant est ajusté selon le classement moyen de l'autre équipe et reste toujours entre 8 et 25 RP par match. Un match nul ne change rien.",
       "Les gains de victoire sont multipliés par 0,8 aux paliers 7 à 9 et par 0,7 au palier 10. Les défaites ne sont pas réduites. Les classements restent entre 100 et 3 000 RP et ne baissent pas avec l'inactivité.",
       "Les 10 premiers matchs d'un joueur sont des matchs de placement. Pendant le placement, le classement ne peut pas dépasser le palier 5.",
       "Un joueur qui abandonne ou quitte un match perd 50 RP, quel que soit le résultat, et ne peut pas recevoir le bonus MVP du match.",
-      "Le MVP du match (le plus d'éliminations ; en cas d'égalité, le plus de dégâts, puis le moins de morts) gagne 3 RP de plus sur une victoire et perd 3 RP de moins sur une défaite, dans les limites par match. Ce bonus ne s'applique que lorsque le serveur enregistre les éliminations. Aucune offre payante ne modifie les Rating Points."
+      "Le MVP du match (le plus d'éliminations ; en cas d'égalité, le plus de dégâts, puis le moins de morts) gagne 2 RP de plus sur une victoire et perd 2 RP de moins sur une défaite, dans les limites par match. Ce bonus ne s'applique que lorsque le serveur enregistre les éliminations. Aucune offre payante ne modifie les Rating Points."
     ],
     [
       "L'organisateur peut modifier ce règlement. Les modifications sont publiées sur cette page avec un nouveau numéro de version et une nouvelle date.",

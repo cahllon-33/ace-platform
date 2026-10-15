@@ -1,17 +1,6 @@
 import type { TextBag } from "../types";
 
 export const account: TextBag["account"] = {
-  badgeColor: {
-    "title": "Barva odznaku",
-    "body": "Vyber barvu svého standardního znaku hodnosti. Pouze kosmetika: nikdy nemění tvé Rating Points, hodnost ani párování. Ilustrovaná grafika Premium si ponechává barvy své úrovně.",
-    "presets": "Barvy úrovní",
-    "custom": "Vlastní barva",
-    "reset": "Použít barvu mé úrovně",
-    "saved": "Barva odznaku uložena.",
-    "failed": "Barvu odznaku se nepodařilo uložit. Zkus to znovu.",
-    "previewAlt": "Náhled tvého znaku hodnosti ve zvolené barvě",
-    "swatch": "Barva {tier}"
-  },
   statsConsole: {
     "metaTitle": "Statistiky hráče",
     "kicker": "STATISTIKY HRÁČE",
