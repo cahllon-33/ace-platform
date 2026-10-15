@@ -37,7 +37,7 @@ export const account: TextBag["account"] = {
     },
     settings: {
       title: "PERFIL DE CONFIGURACIÓN DEL PANEL",
-      billingNotLive: "La facturación abrirá pronto. Hasta entonces, todas las cuentas siguen en Gratis.",
+      billingNotLive: "Todas las cuentas están en Free hasta que exista el pago.",
       cancelReason: "No existe ninguna suscripción facturada que cancelar. El pago no está implementado.",
       cancelButton: "Cancelar suscripción",
     },

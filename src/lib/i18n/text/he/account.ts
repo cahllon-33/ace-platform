@@ -37,7 +37,7 @@ export const account: TextBag["account"] = {
     },
     settings: {
       title: "הגדרות פרופיל בלוח הבקרה",
-      billingNotLive: "החיוב ייפתח בקרוב. עד אז כל החשבונות נשארים בתוכנית החינמית.",
+      billingNotLive: "כל חשבון נשאר ב-Free עד שתהיה קופה.",
       cancelReason: "אין מנוי בחיוב שאפשר לבטל. הקופה לא מיושמת.",
       cancelButton: "ביטול מנוי",
     },

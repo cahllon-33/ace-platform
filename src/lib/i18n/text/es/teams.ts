@@ -47,7 +47,7 @@ export const teams: TextBag["teams"] = {
     facts: {
       email: "No se envía ningún correo. La carta Premium permanece en /premium/receipt.",
       charge:
-        "Premium cuesta $7 al mes. La facturación abrirá pronto; hoy no se cobra nada.",
+        "Premium cuesta $7 al mes. Próximamente: aún no hay pago, así que no se cobra nada.",
       board:
         "Un clan guardado es un registro de plantilla. No se coloca en el cuadro de 100 equipos. Ese cuadro sigue mostrando 0 inscritos hasta que se abra una temporada.",
       steam:

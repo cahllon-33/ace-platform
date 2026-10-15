@@ -50,7 +50,7 @@ export const consent: TextBag["consent"] = {
     close: "Fechar",
   },
   subscriptionDisclosure:
-    "Nenhuma subscrição começa hoje: o pagamento não está ativo, nada é cobrado e nada é renovado. Quando existir faturação, será um plano mensal que pode cancelar nas definições do painel; um mês já pago não é reembolsado.",
+    "Em breve: o pagamento ainda não existe, por isso nenhuma subscrição pode começar, nada é cobrado e nada é renovado. Quando existir faturação, será um plano mensal que pode cancelar nas definições do painel; um mês já pago não é reembolsado.",
   planned: {
     fallbackLabel: "Ação planeada",
     badge: "Planeado — não disponível",

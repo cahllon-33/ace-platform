@@ -409,13 +409,13 @@ export const codex: TextBag["codex"] = {
           heading: "Co przydziela regulamin",
           paragraphs: [
             "Kapitan odpowiada za weto, przerwy i protest. Pozostali podstawowi zawodnicy grają. Rezerwowy może wejść do gry wyłącznie między mapami.",
-            "W meczu na jedną mapę kapitanowie wykluczają po jednej mapie, dopóki nie zostanie jedna. Pula map obejmuje Ancient, Anubis, Cache, Dust II, Inferno, Mirage i Nuke. Jako pierwszy wyklucza klan z niższym numerem zgłoszenia. Obecnie żadne weto nie jest otwarte.",
+            "Na jednej mapie kapitanowie banują po jednej mapie, aż zostanie jedna. Pula to Ancient, Anubis, Dust II, Inferno, Mirage, Nuke i Train. Wyższy seed to drużyna A i wybiera, czy banuje pierwsza, czy druga; przy równych seedach decyduje rzut monetą. Dziś żadne veto nie jest otwarte.",
           ],
         },
         {
           heading: "Przerwy",
           paragraphs: [
-            "Przerwy obowiązują dopiero wtedy, gdy istnieje serwer meczu. Tutaj żaden nie istnieje. Spisany limit to trzy przerwy taktyczne po 30 sekund i jedna przerwa techniczna trwająca 120 sekund na mapę. Pełny tekst znajduje się pod adresem /rules.",
+            "Pauzy obowiązują dopiero, gdy istnieje serwer meczowy. Tutaj go nie ma. Pisemny limit na drużynę na mapę to trzy pauzy taktyczne po 30 sekund, plus jedna w dogrywce, oraz łącznie 10 minut pauzy technicznej. Pełny tekst jest na /rules.",
             "Na stronie drużyn kapitan to także członkostwo, które może wysłać zaproszenie do składu. To zaproszenie nie jest związane z lobby meczu.",
           ],
         },

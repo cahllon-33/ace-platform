@@ -37,7 +37,7 @@ export const account: TextBag["account"] = {
     },
     "settings": {
       "title": "PANELINSTÄLLNINGAR",
-      "billingNotLive": "Betalning öppnar snart. Alla konton stannar på Free tills dess.",
+      "billingNotLive": "Alla konton är på Free tills betalning finns.",
       "cancelReason": "Det finns ingen betald prenumeration att säga upp. Betalning är inte implementerad.",
       "cancelButton": "Säg upp prenumeration"
     },

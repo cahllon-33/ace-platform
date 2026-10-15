@@ -45,7 +45,7 @@
     facts: {
       email: "No email is sent. The Premium letter stays on /premium/receipt.",
       charge:
-        "Premium is $7 per month. Billing opens soon; nothing is charged today.",
+        "Premium is $7 per month. Coming soon: there is no checkout yet, so nothing is charged.",
       board:
         "A stored clan is a roster record. It is not placed on the 100-team board. That board still shows 0 registered until a season opens.",
       steam:

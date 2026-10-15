@@ -37,7 +37,7 @@ export const account: TextBag["account"] = {
     },
     settings: {
       title: "PROFIL NASTAVENÍ PŘEHLEDU",
-      billingNotLive: "Platby budou brzy spuštěny. Do té doby zůstávají všechny účty na plánu Zdarma.",
+      billingNotLive: "Každý účet je na Free, dokud nebude existovat platba.",
       cancelReason: "Neexistuje žádné účtované předplatné, které by bylo možné zrušit. Pokladna není implementována.",
       cancelButton: "Zrušit předplatné",
     },

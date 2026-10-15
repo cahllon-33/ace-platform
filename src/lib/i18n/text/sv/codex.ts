@@ -386,13 +386,13 @@ export const codex: TextBag["codex"] = {
           "heading": "Vad reglerna tilldelar",
           "paragraphs": [
             "Kaptenen sköter vetot, pauserna och en protest. De övriga startspelarna spelar. En reserv får bara gå in mellan kartor.",
-            "I en match på en karta bannar kaptenerna en karta i taget tills en återstår. Poolen är Ancient, Anubis, Cache, Dust II, Inferno, Mirage och Nuke. Det lägre anmälningsnumret bannar först. Inget veto är öppet i dag."
+            "På en karta bannar kaptenerna en karta i taget tills en karta återstår. Poolen är Ancient, Anubis, Dust II, Inferno, Mirage, Nuke och Train. Högre seed är lag A och väljer om det bannar först eller sist; vid lika seed avgör ett myntkast. Inget veto är öppet i dag."
           ]
         },
         {
           "heading": "Pauser",
           "paragraphs": [
-            "Pauser gäller först när en matchserver finns. Ingen finns här. Den skrivna ramen är tre taktiska pauser på 30 sekunder och en teknisk paus på 120 sekunder per karta. Hela texten finns på /rules.",
+            "Pauser gäller bara när en matchserver finns. Här finns ingen. Den skrivna kvoten per lag och karta är tre taktiska pauser på 30 sekunder, plus en till i övertid, och totalt 10 minuters teknisk paus. Hela texten finns på /rules.",
             "På lagsidan är kaptenen också den medlem som får skicka truppinbjudningar. Den inbjudan är skild från en matchlobby."
           ]
         }

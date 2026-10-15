@@ -47,7 +47,7 @@ export const teams: TextBag["teams"] = {
     facts: {
       email: "Žádný e-mail se neodesílá. Dopis Premium zůstává na /premium/receipt.",
       charge:
-        "Premium stojí $7 měsíčně. Platby budou brzy spuštěny; dnes se nic neúčtuje.",
+        "Premium stojí $7 měsíčně. Již brzy: platba zatím není, takže se nic neúčtuje.",
       board:
         "Uložený klan je záznam soupisky. Není zařazen na tabuli 100 týmů. Tato tabule ukazuje 0 registrovaných, dokud se neotevře sezóna.",
       steam:

@@ -3,6 +3,7 @@ import { connection } from "next/server";
 import { redirect } from "next/navigation";
 import { AntiCheatTelemetry } from "@/components/anti-cheat-telemetry";
 import { ComingSoonShield } from "@/components/coming-soon-shield";
+import { ComingSoonPlate } from "@/components/coming-soon-plate";
 import { CreateTeamForm, InviteForm } from "@/components/dashboard-forms";
 import { EliteSeal } from "@/components/elite-seal";
 import { IdentityPreview } from "@/components/identity-preview";
@@ -14,7 +15,7 @@ import { playerBadges } from "@/lib/badges";
 import { hasEliteSeal } from "@/lib/pricing";
 import { formatRankLabelWith } from "@/lib/ranks";
 import { getPrisma } from "@/server/db";
-import { getText } from "@/server/locale";
+import { getText, getUi } from "@/server/locale";
 import { readSessionUser } from "@/server/session";
 
 export async function generateMetadata(): Promise<Metadata> {
@@ -40,6 +41,7 @@ export default async function DashboardPage() {
 
   const text = await getText();
   const copy = text.account.dashboard;
+  const ui = await getUi();
   const prisma = getPrisma();
   const [memberships, invites] = await Promise.all([
     prisma.teamMember.findMany({
@@ -113,7 +115,9 @@ export default async function DashboardPage() {
               {copy.settings.title}
             </h3>
             <p className="mt-2 text-xs leading-6 text-ace-muted">{text.consent.subscriptionDisclosure}</p>
-            <p className="mt-2 text-xs text-ace-muted">{copy.settings.billingNotLive}</p>
+            <div className="mt-3">
+              <ComingSoonPlate label={ui.soon.label} caption={copy.settings.billingNotLive} size="sm" />
+            </div>
             <div className="mt-3">
               <PlannedButton reason={copy.settings.cancelReason}>
                 {copy.settings.cancelButton}

@@ -48,7 +48,7 @@
     close: "Close",
   },
   subscriptionDisclosure:
-    "No subscription starts today: checkout is not live, nothing is charged, and nothing renews. When billing exists, it will be a monthly plan you can cancel in dashboard settings; a month already paid is not refunded.",
+    "Coming soon: checkout does not exist yet, so no subscription can start, nothing is charged, and nothing renews. When billing exists, it will be a monthly plan you can cancel in dashboard settings; a month already paid is not refunded.",
   planned: {
     fallbackLabel: "Planned action",
     badge: "Planned — not available",

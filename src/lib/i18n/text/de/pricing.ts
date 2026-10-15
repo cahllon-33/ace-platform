@@ -31,7 +31,7 @@ export const pricing: TextBag["pricing"] = {
       title: "Dankesbrief und Hilfe",
       points: [
         "Alles aus Free.",
-        "Öffnet einen Dankesbrief auf dieser Website: was enthalten ist, was nicht, und support@ace-platform.gg.",
+        "Demnächst: Der Dankesbrief (was enthalten ist, was nicht, und support@ace-platform.gg) öffnet sich erst, wenn es einen Checkout gibt. Heute ist der Button deaktiviert.",
         "Kauft weder Wertung noch leichtere Gegner. Goldene Profilabzeichen stammen für jeden Spieler aus gespeicherten Matchdaten. Elite-Siegel und Sonderabzeichen erscheinen nur, wenn die gespeicherte Stufe bereits Premium ist.",
       ],
     },
@@ -41,8 +41,8 @@ export const pricing: TextBag["pricing"] = {
       title: "Dankesbrief und Kader mit fünf Spielern",
       points: [
         "Alles aus Free.",
-        "Öffnet einen Dankesbrief auf dieser Website: was enthalten ist, was nicht, und support@ace-platform.gg.",
-        "Danach öffnen sich die Kader: Ein über Steam angemeldeter Kapitän kann einen Clan mit fünf Spielern speichern.",
+        "Demnächst: Der Dankesbrief (was enthalten ist, was nicht, und support@ace-platform.gg) öffnet sich erst, wenn es einen Checkout gibt. Heute ist der Button deaktiviert.",
+        "Demnächst: Nach dem Checkout führt der Brief weiter zu Squads, wo ein mit Steam angemeldeter Captain einen Fünf-Spieler-Clan speichern kann.",
         "Kein Preis, keine Waffe, keine laufende Warteschlange und kein Spielserver. Ein gespeicherter Clan ist kein Platz auf der Tafel mit 100 Mannschaften.",
       ],
     },

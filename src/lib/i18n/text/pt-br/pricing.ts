@@ -31,7 +31,7 @@ export const pricing: TextBag["pricing"] = {
       title: "Carta de agradecimento e suporte",
       points: [
         "Tudo do Grátis.",
-        "Abre uma carta de agradecimento neste site: o que está incluído, o que não está e support@ace-platform.gg.",
+        "Em breve: a carta de agradecimento (o que inclui, o que não inclui e support@ace-platform.gg) só abre quando existir pagamento. Hoje o botão está desativado.",
         "Não compra classificação nem adversários mais fáceis. Os emblemas dourados do perfil vêm dos dados de partida salvos de cada jogador. O selo de elite e os emblemas especiais aparecem só quando o nível salvo já é Premium.",
       ],
     },
@@ -41,8 +41,8 @@ export const pricing: TextBag["pricing"] = {
       title: "Carta de agradecimento e esquadrão de cinco jogadores",
       points: [
         "Tudo do Grátis.",
-        "Abre uma carta de agradecimento neste site: o que está incluído, o que não está e support@ace-platform.gg.",
-        "Depois abre Esquadrões: um capitão conectado pela Steam pode salvar um clã de cinco jogadores.",
+        "Em breve: a carta de agradecimento (o que inclui, o que não inclui e support@ace-platform.gg) só abre quando existir pagamento. Hoje o botão está desativado.",
+        "Em breve: depois do pagamento, a carta leva ao Squads, onde um capitão logado com Steam pode salvar um clã de cinco jogadores.",
         "Sem prêmio, arma, fila ao vivo ou servidor de jogo. Um clã salvo não é uma vaga na chave de 100 equipes.",
       ],
     },

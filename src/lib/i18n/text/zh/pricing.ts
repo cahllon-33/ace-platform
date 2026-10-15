@@ -30,7 +30,7 @@ export const pricing: TextBag["pricing"] = {
       "title": "感谢信与支持",
       "points": [
         "包含 Free 的全部内容。",
-        "在本网站打开一封感谢信:包含什么、不包含什么,以及 support@ace-platform.gg。",
+        "即将推出:感谢信(包含什么、不包含什么,以及 support@ace-platform.gg)只有在支付上线后才会打开。目前按钮已禁用。",
         "不能购买评分或更弱的对手。金色资料徽章来自每位玩家已保存的比赛数据。精英印章和特殊徽章仅在已保存的等级为 Premium 时显示。"
       ]
     },
@@ -40,8 +40,8 @@ export const pricing: TextBag["pricing"] = {
       "title": "感谢信与五人小队",
       "points": [
         "包含 Free 的全部内容。",
-        "在本网站打开一封感谢信:包含什么、不包含什么,以及 support@ace-platform.gg。",
-        "随后打开小队页面:通过 Steam 登录的队长可以保存一支五人战队。",
+        "即将推出:感谢信(包含什么、不包含什么,以及 support@ace-platform.gg)只有在支付上线后才会打开。目前按钮已禁用。",
+        "即将推出:支付后,感谢信会引导至 Squads,通过 Steam 登录的队长可在那里保存五人战队。",
         "无奖品、武器、实时队列或游戏服务器。已保存的战队并不占据 100 队榜单的席位。"
       ]
     }

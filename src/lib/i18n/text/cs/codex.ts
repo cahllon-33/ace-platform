@@ -409,13 +409,13 @@ export const codex: TextBag["codex"] = {
           heading: "Co řád přiděluje",
           paragraphs: [
             "Kapitán obstarává veto, pauzy a protest. Ostatní základní hráči hrají. Náhradník smí nastoupit pouze mezi mapami.",
-            "U zápasu na jednu mapu kapitáni zakazují po jedné mapě, dokud nezbude jediná. Mapový fond tvoří Ancient, Anubis, Cache, Dust II, Inferno, Mirage a Nuke. Jako první zakazuje nižší přihlašovací číslo. Dnes není otevřeno žádné veto.",
+            "Na jedné mapě kapitáni banují po jedné mapě, dokud nezůstane jedna. Pool tvoří Ancient, Anubis, Dust II, Inferno, Mirage, Nuke a Train. Vyšší seed je tým A a volí, zda banuje první, nebo druhý; při stejném seedu rozhodne los mincí. Dnes není otevřené žádné veto.",
           ],
         },
         {
           heading: "Pauzy",
           paragraphs: [
-            "Pauzy platí až poté, co bude existovat zápasový server. Zde žádný neexistuje. Psaný nárok jsou tři taktické pauzy po 30 sekundách a jedna technická pauza v délce 120 sekund na mapu. Úplné znění je na /rules.",
+            "Pauzy platí jen tehdy, když existuje zápasový server. Tady žádný není. Psaný limit na tým a mapu jsou tři taktické pauzy po 30 sekundách, plus jedna v prodloužení, a celkem 10 minut technické pauzy. Celé znění je na /rules.",
             "Na stránce týmů je kapitán zároveň členem, který smí odeslat pozvánku do soupisky. Tato pozvánka je oddělená od zápasové lobby.",
           ],
         },

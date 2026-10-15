@@ -31,7 +31,7 @@ export const pricing: TextBag["pricing"] = {
       title: "Lettre de remerciement et assistance",
       points: [
         "Tout ce qu'inclut Gratuit.",
-        "Ouvre une lettre de remerciement sur ce site : ce qui est inclus, ce qui ne l'est pas, et support@ace-platform.gg.",
+        "Bientôt disponible : la lettre de remerciement (ce qui est inclus, ce qui ne l'est pas, et support@ace-platform.gg) ne s'ouvre qu'une fois le paiement en place. Aujourd'hui, le bouton est désactivé.",
         "N'achète ni classement ni adversaires plus faciles. Les badges dorés du profil proviennent des données de match enregistrées pour chaque joueur. Le sceau élite et les badges spéciaux n'apparaissent que si le palier enregistré est déjà Premium.",
       ],
     },
@@ -41,8 +41,8 @@ export const pricing: TextBag["pricing"] = {
       title: "Lettre de remerciement et escouade de cinq joueurs",
       points: [
         "Tout ce qu'inclut Gratuit.",
-        "Ouvre une lettre de remerciement sur ce site : ce qui est inclus, ce qui ne l'est pas, et support@ace-platform.gg.",
-        "Ouvre ensuite Escouades : un capitaine connecté avec Steam peut enregistrer un clan de cinq joueurs.",
+        "Bientôt disponible : la lettre de remerciement (ce qui est inclus, ce qui ne l'est pas, et support@ace-platform.gg) ne s'ouvre qu'une fois le paiement en place. Aujourd'hui, le bouton est désactivé.",
+        "Bientôt disponible : après le paiement, la lettre mène à Squads, où un capitaine connecté avec Steam peut enregistrer un clan de cinq joueurs.",
         "Aucun prix, aucune arme, aucune file en direct ni aucun serveur de jeu. Un clan enregistré n'est pas une place sur le tableau de 100 équipes.",
       ],
     },

@@ -409,13 +409,13 @@ export const codex: TextBag["codex"] = {
           heading: "Was der Kodex zuweist",
           paragraphs: [
             "Der Kapitän übernimmt das Veto, die Pausen und einen Protest. Die anderen Stammspieler spielen. Ein Ersatzspieler darf nur zwischen den Karten eingewechselt werden.",
-            "Bei einer Karte sperren die Kapitäne abwechselnd jeweils eine Karte, bis eine Karte übrig bleibt. Der Kartenpool besteht aus Ancient, Anubis, Cache, Dust II, Inferno, Mirage und Nuke. Die niedrigere Anmeldenummer sperrt zuerst. Heute ist kein Veto geöffnet.",
+            "Auf einer Karte bannen die Captains abwechselnd je eine Karte, bis eine übrig bleibt. Der Pool ist Ancient, Anubis, Dust II, Inferno, Mirage, Nuke und Train. Der höhere Seed ist Team A und wählt, ob es zuerst oder als Zweites bannt; bei gleichem Seed entscheidet ein Münzwurf. Heute ist kein Veto offen.",
           ],
         },
         {
           heading: "Pausen",
           paragraphs: [
-            "Pausen gelten erst, wenn ein Spielserver existiert. Hier existiert keiner. Schriftlich festgelegt sind pro Karte drei taktische Pausen von je 30 Sekunden und eine technische Pause von 120 Sekunden. Der vollständige Text steht unter /rules.",
+            "Pausen gelten erst, wenn ein Matchserver existiert. Hier gibt es keinen. Erlaubt sind pro Team und Karte drei taktische Pausen zu 30 Sekunden, plus eine in der Verlängerung, und insgesamt 10 Minuten technische Pause. Der volle Text steht unter /rules.",
             "Auf der Mannschaftsseite ist der Kapitän außerdem die Mitgliedschaft, die eine Kadereinladung senden darf. Diese Einladung ist von einer Spiel-Lobby getrennt.",
           ],
         },

@@ -47,7 +47,7 @@ export const consent: TextBag["consent"] = {
     "closeLabel": "Çerez ayarlarını kapat",
     "close": "Kapat"
   },
-  "subscriptionDisclosure": "Bugün hiçbir abonelik başlamaz: ödeme aktif değildir, hiçbir ücret alınmaz ve hiçbir şey yenilenmez. Ödeme sistemi devreye girdiğinde, panel ayarlarından iptal edebileceğiniz aylık bir plan olacaktır; ödenmiş bir ay iade edilmez.",
+  "subscriptionDisclosure": "Çok yakında: ödeme sistemi henüz yok, bu yüzden abonelik başlayamaz, ücret alınmaz ve hiçbir şey yenilenmez. Faturalandırma olduğunda, panel ayarlarından iptal edebileceğiniz aylık bir plan olacak; ödenmiş bir ay iade edilmez.",
   "planned": {
     "fallbackLabel": "Planlanan işlem",
     "badge": "Planlandı — kullanılamıyor"

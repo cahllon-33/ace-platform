@@ -50,7 +50,7 @@ export const consent: TextBag["consent"] = {
     close: "Fermer",
   },
   subscriptionDisclosure:
-    "Aucun abonnement ne démarre aujourd'hui : le paiement n'est pas en ligne, rien n'est facturé et rien n'est renouvelé. Lorsque la facturation existera, ce sera un forfait mensuel résiliable dans les paramètres du tableau de bord ; un mois déjà payé n'est pas remboursé.",
+    "Bientôt disponible : le paiement n'existe pas encore, donc aucun abonnement ne peut commencer, rien n'est facturé et rien ne se renouvelle. Quand la facturation existera, ce sera un forfait mensuel résiliable dans les paramètres du tableau de bord ; un mois déjà payé n'est pas remboursé.",
   planned: {
     fallbackLabel: "Action prévue",
     badge: "Prévu — non disponible",

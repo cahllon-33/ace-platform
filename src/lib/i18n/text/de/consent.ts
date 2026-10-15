@@ -50,7 +50,7 @@ export const consent: TextBag["consent"] = {
     close: "Schließen",
   },
   subscriptionDisclosure:
-    "Heute beginnt kein Abonnement: Die Kasse ist nicht in Betrieb, es wird nichts abgebucht und nichts verlängert. Sobald es eine Abrechnung gibt, wird es ein Monatsplan sein, den du in den Einstellungen deiner Übersicht kündigen kannst; ein bereits bezahlter Monat wird nicht erstattet.",
+    "Demnächst: Einen Checkout gibt es noch nicht, daher kann kein Abo beginnen, nichts wird berechnet und nichts verlängert sich. Wenn es Abrechnung gibt, wird es ein Monatsplan sein, den du in den Dashboard-Einstellungen kündigen kannst; ein bereits bezahlter Monat wird nicht erstattet.",
   planned: {
     fallbackLabel: "Geplante Aktion",
     badge: "Geplant — nicht verfügbar",

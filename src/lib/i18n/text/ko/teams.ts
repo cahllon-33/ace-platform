@@ -47,7 +47,7 @@ export const teams: TextBag["teams"] = {
     facts: {
       email: "이메일은 발송되지 않습니다. Premium 편지는 /premium/receipt에만 남습니다.",
       charge:
-        "Premium은 월 $7입니다. 결제는 곧 열리며, 현재는 아무것도 청구되지 않습니다.",
+        "Premium은 월 $7입니다. 곧 제공: 아직 결제가 없으므로 아무것도 청구되지 않습니다.",
       board:
         "저장된 클랜은 로스터 기록입니다. 100팀 보드에 올라가지 않습니다. 시즌이 열리기 전까지 그 보드는 계속 등록 0으로 표시됩니다.",
       steam:

@@ -31,7 +31,7 @@ export const pricing: TextBag["pricing"] = {
       title: "List z podziękowaniem i wsparcie",
       points: [
         "Wszystko z planu Darmowego.",
-        "Otwiera na tej stronie list z podziękowaniem: co obejmuje, czego nie obejmuje, oraz adres support@ace-platform.gg.",
+        "Wkrótce: list z podziękowaniem (co obejmuje, czego nie, oraz support@ace-platform.gg) otworzy się dopiero, gdy będzie płatność. Dziś przycisk jest wyłączony.",
         "Nie kupuje rankingu ani łatwiejszych rywali. Złote odznaki profilu pochodzą z zapisanych danych meczowych każdego gracza. Pieczęć elity i odznaki specjalne pojawiają się tylko, gdy zapisany poziom to już Premium.",
       ],
     },
@@ -41,8 +41,8 @@ export const pricing: TextBag["pricing"] = {
       title: "List z podziękowaniem i skład pięciu graczy",
       points: [
         "Wszystko z planu Darmowego.",
-        "Otwiera na tej stronie list z podziękowaniem: co obejmuje, czego nie obejmuje, oraz adres support@ace-platform.gg.",
-        "Następnie otwiera Składy: kapitan zalogowany przez Steam może zapisać klan pięciu graczy.",
+        "Wkrótce: list z podziękowaniem (co obejmuje, czego nie, oraz support@ace-platform.gg) otworzy się dopiero, gdy będzie płatność. Dziś przycisk jest wyłączony.",
+        "Wkrótce: po płatności list prowadzi dalej do Squads, gdzie kapitan zalogowany przez Steam może zapisać pięcioosobowy klan.",
         "Bez nagrody, broni, żywej kolejki i serwera gry. Zapisany klan nie jest miejscem w tabeli 100 drużyn.",
       ],
     },

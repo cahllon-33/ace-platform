@@ -40,7 +40,7 @@ export const teams: TextBag["teams"] = {
     "fallback": "Den här desken svarar bara utifrån de skrivna reglerna på sidan: Premium-brevet, de fem platserna, Steam OpenID och Support.",
     "facts": {
       "email": "Inget e-postmeddelande skickas. Premium-brevet finns kvar på /premium/receipt.",
-      "charge": "Premium kostar $7 per månad. Betalning öppnar snart; inget debiteras i dag.",
+      "charge": "Premium kostar $7 per månad. Kommer snart: det finns ingen betalning än, så inget debiteras.",
       "board": "En sparad klan är en truppost. Den placeras inte på 100-lagstavlan. Tavlan visar 0 registrerade tills en säsong öppnar.",
       "steam": "Inloggningen använder officiellt Steam OpenID. A.C.E. ber aldrig om ett Steam-lösenord. Från den här sidan skickar Steam dig tillbaka hit.",
       "roster": "Plats 1 är den inloggade kaptenen. Plats 2 till 5 måste redan ha A.C.E.-konton. Inbjudningar väntar tills varje spelare accepterar.",

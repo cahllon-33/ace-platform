@@ -37,7 +37,7 @@ export const account: TextBag["account"] = {
     },
     "settings": {
       "title": "控制面板设置",
-      "billingNotLive": "支付即将开放。在此之前,所有账户均保持 Free。",
+      "billingNotLive": "在支付上线之前,所有账户均为 Free。",
       "cancelReason": "没有可取消的付费订阅。支付尚未实现。",
       "cancelButton": "取消订阅"
     },

@@ -50,7 +50,7 @@ export const consent: TextBag["consent"] = {
     close: "Zavřít",
   },
   subscriptionDisclosure:
-    "Dnes nezačíná žádné předplatné: pokladna není v provozu, nic se neúčtuje a nic se neobnovuje. Až bude vyúčtování existovat, půjde o měsíční tarif, který lze zrušit v nastavení přehledu; již zaplacený měsíc se nevrací.",
+    "Již brzy: platba zatím neexistuje, takže žádné předplatné nemůže začít, nic se neúčtuje a nic se neobnovuje. Až bude fakturace existovat, půjde o měsíční plán, který zrušíte v nastavení panelu; již zaplacený měsíc se nevrací.",
   planned: {
     fallbackLabel: "Plánovaná akce",
     badge: "Plánováno — není k dispozici",

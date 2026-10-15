@@ -407,13 +407,13 @@
           heading: "What the code assigns",
           paragraphs: [
             "The captain handles the veto, the pauses, and a protest. The other starters play. A substitute may sit only between maps.",
-            "On one map, the captains ban one map at a time until one map remains. The pool is Ancient, Anubis, Cache, Dust II, Inferno, Mirage, and Nuke. The lower entry number bans first. No veto is open today.",
+            "On one map, the captains ban one map at a time until one map remains. The pool is Ancient, Anubis, Dust II, Inferno, Mirage, Nuke, and Train. The higher seed is Team A and chooses whether to ban first or second; a coin toss settles equal seeds. No veto is open today.",
           ],
         },
         {
           heading: "Pauses",
           paragraphs: [
-            "Pauses apply only after a match server exists. None exists here. The written allowance is three tactical pauses of 30 seconds, and one technical pause of 120 seconds, on a map. The full text is at /rules.",
+            "Pauses apply only after a match server exists. None exists here. The written allowance per team on a map is three tactical pauses of 30 seconds, plus one more in overtime, and 10 minutes of technical pause in total. The full text is at /rules.",
             "On the teams page, captain is also the membership that may send a roster invite. That invite is separate from a match lobby.",
           ],
         },

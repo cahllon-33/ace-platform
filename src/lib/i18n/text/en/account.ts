@@ -35,7 +35,7 @@
     },
     settings: {
       title: "DASHBOARD SETTINGS PROFILE",
-      billingNotLive: "Billing opens soon. All accounts stay on Free until then.",
+      billingNotLive: "Every account is on Free until checkout exists.",
       cancelReason: "No billed subscription exists to cancel. Checkout is not implemented.",
       cancelButton: "Cancel subscription",
     },

@@ -409,13 +409,13 @@ export const codex: TextBag["codex"] = {
           heading: "O que o código atribui",
           paragraphs: [
             "O capitão cuida do veto, das pausas e de um protesto. Os outros titulares jogam. Um reserva só pode entrar entre mapas.",
-            "Em mapa único, os capitães banem um mapa por vez até restar um mapa. O pool é Ancient, Anubis, Cache, Dust II, Inferno, Mirage e Nuke. O menor número de inscrição bane primeiro. Nenhum veto está aberto hoje.",
+            "Em um mapa único, os capitães banem um mapa por vez até sobrar um. O pool é Ancient, Anubis, Dust II, Inferno, Mirage, Nuke e Train. O seed mais alto é o time A e escolhe se bane primeiro ou segundo; com seeds iguais, decide uma moeda. Hoje não há nenhum veto aberto.",
           ],
         },
         {
           heading: "Pausas",
           paragraphs: [
-            "As pausas só se aplicam depois que existir um servidor de partida. Não existe nenhum aqui. A cota escrita é de três pausas táticas de 30 segundos e uma pausa técnica de 120 segundos por mapa. O texto completo está em /rules.",
+            "As pausas só valem quando existe um servidor de partida. Aqui não existe. O limite escrito por time e mapa é de três pausas táticas de 30 segundos, mais uma na prorrogação, e 10 minutos de pausa técnica no total. O texto completo está em /rules.",
             "Na página de equipes, capitão também é o membro que pode enviar um convite para o elenco. Esse convite é separado de um lobby de partida.",
           ],
         },

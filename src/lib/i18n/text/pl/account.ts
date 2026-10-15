@@ -37,7 +37,7 @@ export const account: TextBag["account"] = {
     },
     settings: {
       title: "USTAWIENIA PROFILU PANELU",
-      billingNotLive: "Płatności ruszą wkrótce. Do tego czasu wszystkie konta pozostają na planie Darmowym.",
+      billingNotLive: "Każde konto jest na Free, dopóki nie będzie płatności.",
       cancelReason: "Nie ma opłacanej subskrypcji do anulowania. Kasa nie została zaimplementowana.",
       cancelButton: "Anuluj subskrypcję",
     },

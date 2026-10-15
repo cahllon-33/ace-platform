@@ -29,7 +29,7 @@
       title: "Thank-you letter and support",
       points: [
         "Everything in Free.",
-        "Opens a thank-you letter on this site: what is included, what is not, and support@ace-platform.gg.",
+        "Coming soon: the thank-you letter (what is included, what is not, and support@ace-platform.gg) opens only after checkout exists. The button is disabled today.",
         "Does not buy rating or easier opponents. Gold profile badges come from stored match data for every player. The elite seal and special badges show only when the stored tier is already Premium.",
       ],
     },
@@ -39,8 +39,8 @@
       title: "Thank-you letter and five-player squad",
       points: [
         "Everything in Free.",
-        "Opens a thank-you letter on this site: what is included, what is not, and support@ace-platform.gg.",
-        "Then opens Squads: a captain signed in with Steam can store a five-player clan.",
+        "Coming soon: the thank-you letter (what is included, what is not, and support@ace-platform.gg) opens only after checkout exists. The button is disabled today.",
+        "Coming soon: after checkout, the letter leads on to Squads, where a captain signed in with Steam can store a five-player clan.",
         "No prize, weapon, live queue, or game server. A stored clan is not a seat on the 100-team board.",
       ],
     },

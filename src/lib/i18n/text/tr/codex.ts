@@ -386,13 +386,13 @@ export const codex: TextBag["codex"] = {
           "heading": "Kuralların belirlediği",
           "paragraphs": [
             "Kaptan vetoyu, duraklamaları ve itirazı yönetir. Diğer as oyuncular oynar. Yedek yalnızca haritalar arasında girebilir.",
-            "Tek haritalı maçta kaptanlar tek harita kalana kadar birer birer harita yasaklar. Havuz Ancient, Anubis, Cache, Dust II, Inferno, Mirage ve Nuke'tur. Düşük kayıt numarası önce yasaklar. Bugün açık bir veto yoktur."
+            "Tek haritada kaptanlar tek harita kalana kadar birer birer harita yasaklar. Havuz Ancient, Anubis, Dust II, Inferno, Mirage, Nuke ve Train'dir. Üst seed A takımıdır ve önce mi sonra mı yasaklayacağını seçer; seed eşitse yazı tura belirler. Bugün açık bir veto yoktur."
           ]
         },
         {
           "heading": "Duraklamalar",
           "paragraphs": [
-            "Duraklamalar yalnızca bir maç sunucusu olduğunda geçerlidir. Burada yok. Yazılı hak, harita başına 30 saniyelik üç taktik duraklama ve 120 saniyelik bir teknik duraklamadır. Tam metin /rules adresindedir.",
+            "Duraklamalar yalnızca bir maç sunucusu olduğunda geçerlidir. Burada yok. Yazılı hak, takım başına her haritada 30 saniyelik üç taktik duraklama, uzatmada bir ek duraklama ve toplam 10 dakikalık teknik duraklamadır. Tam metin /rules adresindedir.",
             "Takımlar sayfasında kaptan, kadro daveti gönderebilen üyedir de. Bu davet maç lobisinden ayrıdır."
           ]
         }

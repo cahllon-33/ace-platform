@@ -47,7 +47,7 @@ export const teams: TextBag["teams"] = {
     facts: {
       email: "Nie jest wysyłany żaden e-mail. List Premium pozostaje pod adresem /premium/receipt.",
       charge:
-        "Premium kosztuje $7 miesięcznie. Płatności ruszą wkrótce; dziś nic nie jest pobierane.",
+        "Premium kosztuje $7 miesięcznie. Wkrótce: płatności jeszcze nie ma, więc nic nie jest pobierane.",
       board:
         "Zapisany klan to wpis składu. Nie jest umieszczany w tabeli 100 drużyn. Ta tabela nadal pokazuje 0 zarejestrowanych, dopóki nie otworzy się sezon.",
       steam:

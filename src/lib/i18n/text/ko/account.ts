@@ -37,7 +37,7 @@ export const account: TextBag["account"] = {
     },
     settings: {
       title: "대시보드 설정 프로필",
-      billingNotLive: "결제는 곧 열립니다. 그때까지 모든 계정은 무료 플랜으로 유지됩니다.",
+      billingNotLive: "결제가 생기기 전까지 모든 계정은 Free입니다.",
       cancelReason: "해지할 유료 구독이 없습니다. 결제는 구현되어 있지 않습니다.",
       cancelButton: "구독 해지",
     },

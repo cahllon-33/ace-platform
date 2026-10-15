@@ -31,7 +31,7 @@ export const pricing: TextBag["pricing"] = {
       title: "Děkovný dopis a podpora",
       points: [
         "Vše z plánu Zdarma.",
-        "Otevře na tomto webu děkovný dopis: co je zahrnuto, co není, a kontakt support@ace-platform.gg.",
+        "Již brzy: děkovný dopis (co zahrnuje, co ne a support@ace-platform.gg) se otevře až po zavedení platby. Dnes je tlačítko vypnuté.",
         "Nekupuje hodnocení ani slabší soupeře. Zlaté odznaky profilu vycházejí z uložených zápasových dat každého hráče. Elitní pečeť a speciální odznaky se zobrazí, jen když je uložená úroveň již Premium.",
       ],
     },
@@ -41,8 +41,8 @@ export const pricing: TextBag["pricing"] = {
       title: "Děkovný dopis a pětičlenný tým",
       points: [
         "Vše z plánu Zdarma.",
-        "Otevře na tomto webu děkovný dopis: co je zahrnuto, co není, a kontakt support@ace-platform.gg.",
-        "Poté otevře Týmy: kapitán přihlášený přes Steam může uložit pětičlenný klan.",
+        "Již brzy: děkovný dopis (co zahrnuje, co ne a support@ace-platform.gg) se otevře až po zavedení platby. Dnes je tlačítko vypnuté.",
+        "Již brzy: po platbě dopis vede dál do Squads, kde kapitán přihlášený přes Steam může uložit pětičlenný klan.",
         "Žádná cena, zbraň, živá fronta ani herní server. Uložený klan není místo na tabuli 100 týmů.",
       ],
     },

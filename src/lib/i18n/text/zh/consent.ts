@@ -47,7 +47,7 @@ export const consent: TextBag["consent"] = {
     "closeLabel": "关闭 Cookie 设置",
     "close": "关闭"
   },
-  "subscriptionDisclosure": "今天不会开始任何订阅:支付尚未上线,不会扣费,也不会续订。支付上线后将是按月计费的方案,可在控制面板设置中取消;已支付的月份不予退款。",
+  "subscriptionDisclosure": "即将推出:支付尚不存在,因此不会开始任何订阅、不会扣费、也不会续费。计费上线后,将是可在控制台设置中取消的月度方案;已付款的月份不予退款。",
   "planned": {
     "fallbackLabel": "计划中的操作",
     "badge": "计划中 — 暂不可用"

@@ -409,13 +409,13 @@ export const codex: TextBag["codex"] = {
           heading: "Ce que le code attribue",
           paragraphs: [
             "Le capitaine gère le veto, les pauses et les réclamations. Les autres titulaires jouent. Un remplaçant ne peut entrer qu’entre deux cartes.",
-            "Pour un match en une carte, les capitaines bannissent une carte à la fois jusqu’à ce qu’il n’en reste qu’une. Le pool de cartes comprend Ancient, Anubis, Cache, Dust II, Inferno, Mirage et Nuke. Le plus petit numéro d’inscription bannit en premier. Aucun veto n’est ouvert aujourd’hui.",
+            "Sur une carte unique, les capitaines bannissent une carte à la fois jusqu'à ce qu'il n'en reste qu'une. Le pool est Ancient, Anubis, Dust II, Inferno, Mirage, Nuke et Train. La tête de série la plus haute est l'équipe A et choisit de bannir en premier ou en second ; à égalité, un tirage à pile ou face tranche. Aucun veto n'est ouvert aujourd'hui.",
           ],
         },
         {
           heading: "Pauses",
           paragraphs: [
-            "Les pauses ne s’appliquent qu’une fois qu’un serveur de match existe. Il n’en existe aucun ici. Le quota écrit est de trois pauses tactiques de 30 secondes et d’une pause technique de 120 secondes par carte. Le texte complet se trouve à /rules.",
+            "Les pauses ne s'appliquent que lorsqu'un serveur de match existe. Il n'y en a pas ici. Le quota écrit par équipe et par carte est de trois pauses tactiques de 30 secondes, plus une en prolongation, et 10 minutes de pause technique au total. Le texte complet est sur /rules.",
             "Sur la page Équipes, le rôle de capitaine est aussi celui qui peut envoyer une invitation dans l’effectif. Cette invitation est distincte d’un lobby de match.",
           ],
         },

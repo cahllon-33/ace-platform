@@ -50,7 +50,7 @@ export const consent: TextBag["consent"] = {
     close: "Cerrar",
   },
   subscriptionDisclosure:
-    "Hoy no comienza ninguna suscripción: el pago no está activo, no se cobra nada y nada se renueva. Cuando exista facturación, será un plan mensual que podrás cancelar en la configuración del panel; un mes ya pagado no se reembolsa.",
+    "Próximamente: el pago aún no existe, así que no puede empezar ninguna suscripción, no se cobra nada y nada se renueva. Cuando exista la facturación, será un plan mensual que puedes cancelar en los ajustes del panel; un mes ya pagado no se reembolsa.",
   planned: {
     fallbackLabel: "Acción planificada",
     badge: "Planificado: no disponible",

@@ -47,7 +47,7 @@ export const consent: TextBag["consent"] = {
     "closeLabel": "Stäng cookieinställningar",
     "close": "Stäng"
   },
-  "subscriptionDisclosure": "Ingen prenumeration startar i dag: betalning är inte aktiv, inget debiteras och inget förnyas. När betalning finns blir det en månadsplan som du kan säga upp i panelens inställningar; en redan betald månad återbetalas inte.",
+  "subscriptionDisclosure": "Kommer snart: betalning finns inte än, så ingen prenumeration kan starta, inget debiteras och inget förnyas. När fakturering finns blir det en månadsplan som du kan säga upp i panelens inställningar; en redan betald månad återbetalas inte.",
   "planned": {
     "fallbackLabel": "Planerad åtgärd",
     "badge": "Planerad — inte tillgänglig"

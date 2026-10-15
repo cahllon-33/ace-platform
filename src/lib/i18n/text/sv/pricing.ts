@@ -30,7 +30,7 @@ export const pricing: TextBag["pricing"] = {
       "title": "Tackbrev och support",
       "points": [
         "Allt i Free.",
-        "Öppnar ett tackbrev på den här webbplatsen: vad som ingår, vad som inte ingår, och support@ace-platform.gg.",
+        "Kommer snart: tackbrevet (vad som ingår, vad som inte gör det och support@ace-platform.gg) öppnas först när betalning finns. I dag är knappen inaktiverad.",
         "Köper inte rating eller lättare motståndare. Guldmärken på profilen kommer från sparad matchdata för alla spelare. Elitsigillet och specialmärkena visas bara när den sparade nivån redan är Premium."
       ]
     },
@@ -40,8 +40,8 @@ export const pricing: TextBag["pricing"] = {
       "title": "Tackbrev och femmannatrupp",
       "points": [
         "Allt i Free.",
-        "Öppnar ett tackbrev på den här webbplatsen: vad som ingår, vad som inte ingår, och support@ace-platform.gg.",
-        "Öppnar sedan Trupper: en kapten inloggad med Steam kan spara en klan med fem spelare.",
+        "Kommer snart: tackbrevet (vad som ingår, vad som inte gör det och support@ace-platform.gg) öppnas först när betalning finns. I dag är knappen inaktiverad.",
+        "Kommer snart: efter betalning leder brevet vidare till Squads, där en kapten inloggad med Steam kan spara en klan med fem spelare.",
         "Inget pris, vapen, aktiv kö eller spelserver. En sparad klan är ingen plats på 100-lagstavlan."
       ]
     }

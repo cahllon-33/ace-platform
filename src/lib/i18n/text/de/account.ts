@@ -37,7 +37,7 @@ export const account: TextBag["account"] = {
     },
     settings: {
       title: "EINSTELLUNGEN DES BEFEHLSSTANDS",
-      billingNotLive: "Die Abrechnung startet bald. Bis dahin bleiben alle Konten auf Free.",
+      billingNotLive: "Jedes Konto bleibt auf Free, bis es einen Checkout gibt.",
       cancelReason: "Es gibt kein abgerechnetes Abonnement zum Kündigen. Die Kasse ist nicht umgesetzt.",
       cancelButton: "Abonnement kündigen",
     },

@@ -37,7 +37,7 @@ export const account: TextBag["account"] = {
     },
     "settings": {
       "title": "ダッシュボード設定プロフィール",
-      "billingNotLive": "支払いはまもなく開始します。それまで全アカウントは Free のままです。",
+      "billingNotLive": "決済が実装されるまで、すべてのアカウントはFreeです。",
       "cancelReason": "解約できる有料サブスクリプションはありません。決済は実装されていません。",
       "cancelButton": "サブスクリプションを解約"
     },

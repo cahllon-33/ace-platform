@@ -37,7 +37,7 @@ export const account: TextBag["account"] = {
     },
     "settings": {
       "title": "ملف إعدادات لوحة التحكم",
-      "billingNotLive": "تُفتح الفوترة قريبًا. تبقى جميع الحسابات على الخطة المجانية حتى ذلك الحين.",
+      "billingNotLive": "كل الحسابات على Free حتى يتوفر الدفع.",
       "cancelReason": "لا يوجد اشتراك مدفوع لإلغائه. الدفع غير منفّذ.",
       "cancelButton": "إلغاء الاشتراك"
     },

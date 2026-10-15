@@ -37,7 +37,7 @@ export const account: TextBag["account"] = {
     },
     settings: {
       title: "PERFIL DE DEFINIÇÕES DO PAINEL",
-      billingNotLive: "A faturação abre em breve. Até lá, todas as contas mantêm-se no Grátis.",
+      billingNotLive: "Todas as contas estão no Free até existir pagamento.",
       cancelReason: "Não existe nenhuma subscrição faturada para cancelar. O pagamento não está implementado.",
       cancelButton: "Cancelar subscrição",
     },

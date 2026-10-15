@@ -30,7 +30,7 @@ export const pricing: TextBag["pricing"] = {
       "title": "Teşekkür mektubu ve destek",
       "points": [
         "Free'deki her şey.",
-        "Bu sitede bir teşekkür mektubu açar: nelerin dahil olduğu, nelerin olmadığı ve support@ace-platform.gg.",
+        "Çok yakında: teşekkür mektubu (neyin dahil olduğu, neyin olmadığı ve support@ace-platform.gg) yalnızca ödeme sistemi olduğunda açılır. Düğme bugün devre dışıdır.",
         "Derece veya daha kolay rakip satın almaz. Altın profil rozetleri her oyuncu için kayıtlı maç verilerinden gelir. Elit mühür ve özel rozetler yalnızca kayıtlı kademe zaten Premium olduğunda görünür."
       ]
     },
@@ -40,8 +40,8 @@ export const pricing: TextBag["pricing"] = {
       "title": "Teşekkür mektubu ve beş kişilik tim",
       "points": [
         "Free'deki her şey.",
-        "Bu sitede bir teşekkür mektubu açar: nelerin dahil olduğu, nelerin olmadığı ve support@ace-platform.gg.",
-        "Ardından Timler'i açar: Steam ile oturum açmış bir kaptan beş kişilik bir klan kaydedebilir.",
+        "Çok yakında: teşekkür mektubu (neyin dahil olduğu, neyin olmadığı ve support@ace-platform.gg) yalnızca ödeme sistemi olduğunda açılır. Düğme bugün devre dışıdır.",
+        "Çok yakında: ödemeden sonra mektup Squads'a yönlendirir; orada Steam ile oturum açmış bir kaptan beş oyunculu bir klan kaydedebilir.",
         "Ödül, silah, canlı sıra veya oyun sunucusu yok. Kayıtlı bir klan, 100 takımlık tablodaki bir koltuk değildir."
       ]
     }

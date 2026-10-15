@@ -37,7 +37,7 @@ export const account: TextBag["account"] = {
     },
     "settings": {
       "title": "PANEL AYARLARI PROFİLİ",
-      "billingNotLive": "Ödeme yakında açılıyor. O zamana kadar tüm hesaplar Free'de kalır.",
+      "billingNotLive": "Ödeme sistemi olana kadar her hesap Free'dedir.",
       "cancelReason": "İptal edilecek ücretli abonelik yok. Ödeme sistemi uygulanmadı.",
       "cancelButton": "Aboneliği iptal et"
     },

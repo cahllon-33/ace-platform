@@ -50,7 +50,7 @@ export const consent: TextBag["consent"] = {
     close: "Zamknij",
   },
   subscriptionDisclosure:
-    "Dziś nie rozpoczyna się żadna subskrypcja: kasa nie działa, nic nie jest pobierane i nic się nie odnawia. Gdy rozliczenia powstaną, będzie to plan miesięczny, który można anulować w ustawieniach panelu; za już opłacony miesiąc nie przysługuje zwrot.",
+    "Wkrótce: płatności jeszcze nie ma, więc żadna subskrypcja nie może się zacząć, nic nie jest pobierane i nic się nie odnawia. Gdy rozliczenia powstaną, będzie to plan miesięczny, który anulujesz w ustawieniach panelu; opłacony miesiąc nie jest zwracany.",
   planned: {
     fallbackLabel: "Planowana czynność",
     badge: "Planowane — niedostępne",
