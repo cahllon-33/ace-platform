@@ -10,7 +10,6 @@ export const RB_DE: RulebookText = {
       "Schiedsrichter dürfen Situationen, die dieses Regelwerk nicht abdeckt, nach den Grundsätzen des Fair Play und im Sinne dieser Regeln entscheiden. Solche Entscheidungen werden dokumentiert und mit dem Matchergebnis veröffentlicht."
     ],
     [
-      "Spieler müssen mindestens 16 Jahre alt sein oder das höhere Mindestalter erfüllen, das die Eventseite oder das örtliche Recht vorschreibt. Schiedsrichter können vor der Ausgabe eines Preises einen Altersnachweis verlangen.",
       "Spieler dürfen keiner aktiven A.C.E.-Sperre unterliegen, und auf dem verwendeten Steam-Konto darf kein Spielbann aus den letzten 2 Jahren bestehen.",
       "Mitarbeiter des Veranstalters und Schiedsrichter dürfen nicht in einem Event spielen, das sie betreuen.",
       "Regions- oder Ratinggrenzen werden je Event festgelegt und vor Anmeldebeginn veröffentlicht. Ein Spieler außerhalb dieser Grenzen darf nicht spielen, auch nicht als Ersatz."
@@ -98,9 +97,8 @@ export const RB_DE: RulebookText = {
       "Nur ein Kapitän darf einen Einspruch einreichen – innerhalb von 30 Minuten nach Ende der betroffenen Map und mit Beweisen (Demo-Tick, Screenshot oder Clip).",
       "Wer nach einem bekannten Problem weiterspielt, ohne es zu melden, akzeptiert die Situation für die bereits gespielten Runden.",
       "Der Schiedsrichter entscheidet über den Einspruch und veröffentlicht Ergebnis und Begründung. Teams spielen ihren Zeitplan weiter, solange ein Einspruch offen ist, sofern der Schiedsrichter nichts anderes bestimmt.",
-      "Gegen die Entscheidung kann innerhalb von 48 Stunden Berufung eingelegt werden. Sie wird von einem Mitglied des Veranstalters geprüft, das die ursprüngliche Entscheidung nicht getroffen hat. Die Berufungsentscheidung ist endgültig.",
-      "Integritätsstrafen (Abschnitt 14) können auch nach Eventende verhängt werden, wenn Beweise später auftauchen.",
-      "Außerhalb eines laufenden Matches werden einem Spieler Grund und Beweise mitgeteilt, bevor eine Sperre beginnt, und er kann innerhalb von 48 Stunden Stellung nehmen. In dringenden Integritätsfällen beginnt die Sperre zuerst und die Prüfung folgt."
+      "Gegen die Entscheidung kann Berufung eingelegt werden. Sie wird von einem Mitglied des Veranstalters geprüft, das die ursprüngliche Entscheidung nicht getroffen hat. Die Berufungsentscheidung ist endgültig.",
+      "Integritätsstrafen (Abschnitt 14) können auch nach Eventende verhängt werden, wenn Beweise später auftauchen."
     ],
     [
       "Strafen können kombiniert werden. Eine Verwarnung bleibt bis zum Ende des Events in der Teamakte; andere Strafen bleiben 12 Monate vermerkt.",

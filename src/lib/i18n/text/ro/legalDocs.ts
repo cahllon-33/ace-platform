@@ -7,17 +7,15 @@ export const legalDocs: TextBag["legalDocs"] = {
     "definitionsTitle": "Definiții",
     "definitions": "În acești Termeni, „A.C.E.”, „noi” înseamnă A.C.E. Competitions Ltd. „Site” înseamnă ace-platform.gg. „Cont” înseamnă profilul A.C.E. creat prin autentificarea Steam. „Plan” înseamnă Free, Plus sau Premium. „Regulament” înseamnă Regulamentul competițional de la /rules. „Admin” înseamnă un membru al echipei care aplică Regulamentul la un eveniment.",
     "suspensionTitle": "Restricții și suspendarea contului",
-    "suspension": "Putem avertiza, restricționa, suspenda sau închide un Cont care încalcă acești Termeni sau Regulamentul, de exemplu pentru trișat, partajarea contului, eludarea unei interdicții, hărțuire sau fraudă. În afara unui meci în desfășurare, îți comunicăm motivul și îți dăm 48 de ore să răspunzi înainte de începerea suspendării. În cazuri urgente, suspendarea începe imediat, iar analiza urmează. Un plan plătit nu protejează niciodată un Cont de o restricție.",
+    "suspension": "Putem avertiza, restricționa, suspenda sau închide un Cont care încalcă acești Termeni sau Regulamentul, de exemplu pentru trișat, partajarea contului, eludarea unei interdicții, hărțuire sau fraudă. Un plan plătit nu protejează niciodată un Cont de o restricție.",
     "disputesTitle": "Decizii privind regulile și contestații",
-    "disputes": "Disputele de meci și sancțiunile urmează secțiunile 15 și 16 din Regulament. Poți contesta o decizie privind Contul tău în 48 de ore, scriind la support@ace-platform.gg cu SteamID-ul și dovezile tale. Un membru al echipei care nu a luat prima decizie analizează contestația și îți comunică rezultatul și motivul. Aceasta nu limitează niciun drept pe care îl ai conform legii țării tale.",
+    "disputes": "Disputele de meci și sancțiunile urmează secțiunile 15 și 16 din Regulament. Poți contesta o decizie privind Contul tău, scriind la support@ace-platform.gg cu SteamID-ul și dovezile tale. Un membru al echipei care nu a luat prima decizie analizează contestația și îți comunică rezultatul și motivul. Aceasta nu limitează niciun drept pe care îl ai conform legii țării tale.",
     "changesTitle": "Modificări ale acestor Termeni",
     "changes": "Putem actualiza acești Termeni. Fiecare versiune nouă este publicată pe această pagină cu o nouă dată de intrare în vigoare. O modificare importantă intră în vigoare la 7 zile după publicare și nu se aplică niciodată unei perioade de plată deja începute.",
     "languageTitle": "Limbă",
     "language": "Acești Termeni sunt redactați în engleză. Traducerile sunt oferite pentru comoditate. Dacă o traducere diferă de textul în engleză, se aplică textul în engleză.",
     "retentionTitle": "Păstrarea datelor",
-    "retention": "Datele Contului sunt păstrate cât timp Contul există. O sesiune se încheie la deconectare sau la expirare. Dacă ceri ștergerea Contului, eliminăm datele tale în 30 de zile, cu excepția celor pe care trebuie să le păstrăm pentru o obligație legală sau pentru aplicarea unei interdicții active, și doar cât este necesar.",
-    "ageTitle": "Vârsta minimă",
-    "age": "Site-ul se adresează persoanelor de 16 ani sau mai mult. Nu creăm cu bună știință Conturi pentru copii mai mici. Dacă crezi că un copil sub 16 ani are un Cont, contactează-ne și îl vom șterge."
+    "retention": "Datele Contului sunt păstrate cât timp Contul există. O sesiune se încheie la deconectare sau la expirare.",
   },
   "translationNotice": "Această pagină este o traducere oferită pentru comoditate. Dacă traducerea și textul în engleză diferă, se aplică textul în engleză.",
   "terms": {
@@ -38,7 +36,7 @@ export const legalDocs: TextBag["legalDocs"] = {
       "eligibility": {
         "title": "2. Eligibilitate și conturi",
         "paragraphs": [
-          "Trebuie să ai cel puțin 16 ani, sau mai mult dacă legea țării tale sau pagina unui eveniment o cere. Dacă ai sub 18 ani, ai nevoie de permisiunea unui părinte sau tutore pentru a cumpăra un plan plătit. Conturile se creează doar prin autentificarea oficială Steam OpenID, un Cont per persoană. A.C.E. nu îți cere niciodată parola Steam."
+          "Conturile se creează doar prin autentificarea oficială Steam OpenID, un Cont per persoană. A.C.E. nu îți cere niciodată parola Steam."
         ]
       },
       "notActive": {
@@ -131,7 +129,7 @@ export const legalDocs: TextBag["legalDocs"] = {
     "rights": {
       "title": "Drepturile tale",
       "before": "Dacă te afli într-o regiune cu drepturi privind datele personale, poți solicita accesul, rectificarea sau ștergerea datelor contului tău A.C.E. scriind la",
-      "after": ". Răspundem în 30 de zile. Ștergerea unui cont de pe site nu schimbă nicio decizie Steam sau VAC luată de Valve."
+      "after": ". Ștergerea unui cont de pe site nu schimbă nicio decizie Steam sau VAC luată de Valve."
     },
     "cookies": {
       "title": "Cookie-uri",

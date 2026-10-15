@@ -10,7 +10,6 @@ export const RB_CS: RulebookText = {
       "Rozhodčí mohou rozhodovat situace, které tato pravidla neupravují, v duchu fair play a smyslu pravidel. Taková rozhodnutí se zaznamenávají a zveřejňují spolu s výsledkem zápasu."
     ],
     [
-      "Hráčům musí být alespoň 16 let, případně více, pokud vyšší minimální věk stanoví stránka akce nebo místní právo. Rozhodčí mohou před předáním ceny požádat o doložení věku.",
       "Hráč nesmí mít aktivní suspendaci od A.C.E. a na používaném účtu Steam nesmí mít herní ban udělený v posledních 2 letech.",
       "Zaměstnanci pořadatele a rozhodčí nesmějí hrát v akci, kterou spravují.",
       "Omezení podle regionu nebo ratingu se stanovují pro každou akci a zveřejňují se před otevřením registrace. Hráč mimo tato omezení nesmí hrát, ani jako náhradník."
@@ -98,9 +97,8 @@ export const RB_CS: RulebookText = {
       "Námitku smí podat jen kapitán, a to do 30 minut od konce dotčené mapy a s důkazy (tick v demu, snímek obrazovky nebo klip).",
       "Pokračování ve hře po známém problému bez jeho nahlášení znamená souhlas se situací pro již odehraná kola.",
       "Rozhodčí o námitce rozhodne a zveřejní výsledek i odůvodnění. Dokud je námitka otevřená, týmy hrají podle harmonogramu, pokud rozhodčí neurčí jinak.",
-      "Odvolání lze podat do 48 hodin od rozhodnutí. Posuzuje je člen pořadatele, který původní rozhodnutí nevydal. Rozhodnutí o odvolání je konečné.",
-      "Tresty za porušení integrity (oddíl 14) mohou být uděleny i po skončení akce, pokud se důkazy objeví později.",
-      "Mimo probíhající zápas se hráč dozví důvod a důkazy před začátkem pozastavení nebo banu a může odpovědět do 48 hodin. V naléhavých případech porušení integrity začne pozastavení hned a přezkum následuje."
+      "Proti rozhodnutí lze podat odvolání. Posuzuje je člen pořadatele, který původní rozhodnutí nevydal. Rozhodnutí o odvolání je konečné.",
+      "Tresty za porušení integrity (oddíl 14) mohou být uděleny i po skončení akce, pokud se důkazy objeví později."
     ],
     [
       "Tresty lze kombinovat. Napomenutí zůstává v záznamu týmu do konce akce; ostatní tresty zůstávají v záznamu 12 měsíců.",

@@ -10,7 +10,6 @@ export const RB_FR: RulebookText = {
       "Les arbitres peuvent trancher les situations que ce règlement ne prévoit pas, en s'inspirant du fair-play et de l'esprit des règles. Ces décisions sont consignées et publiées avec le résultat du match."
     ],
     [
-      "Les joueurs doivent avoir au moins 16 ans, ou l'âge minimum fixé par la page de l'événement ou la loi locale s'il est plus élevé. Les arbitres peuvent demander une preuve d'âge avant la remise d'un prix.",
       "Les joueurs ne doivent pas faire l'objet d'une suspension A.C.E. en cours, et le compte Steam utilisé ne doit pas porter de bannissement de jeu prononcé au cours des 2 dernières années.",
       "Le personnel de l'organisateur et les arbitres ne peuvent pas jouer dans un événement qu'ils administrent.",
       "Les limites de région ou de classement sont fixées pour chaque événement et publiées avant l'ouverture des inscriptions. Un joueur hors de ces limites ne peut pas jouer, même comme remplaçant."
@@ -98,9 +97,8 @@ export const RB_FR: RulebookText = {
       "Seul un capitaine peut déposer une réclamation, dans les 30 minutes suivant la fin de la carte concernée et avec des preuves (tick de démo, capture ou clip).",
       "Continuer à jouer après un problème connu sans le signaler vaut acceptation de la situation pour les rounds déjà joués.",
       "L'arbitre tranche la réclamation et publie la décision et sa motivation. Les équipes poursuivent leur calendrier tant qu'une réclamation est ouverte, sauf décision contraire de l'arbitre.",
-      "Un appel peut être formé dans les 48 heures suivant la décision. Il est examiné par un membre de l'organisateur qui n'a pas pris la décision initiale. La décision en appel est définitive.",
-      "Des sanctions d'intégrité (section 14) peuvent aussi être prononcées après la fin d'un événement si des preuves apparaissent plus tard.",
-      "Hors match en cours, un joueur est informé du motif et des preuves avant le début d’une suspension ou d’un bannissement, et peut répondre sous 48 heures. Dans les cas d’intégrité urgents, la suspension commence d’abord et l’examen suit."
+      "Un appel peut être formé contre la décision. Il est examiné par un membre de l'organisateur qui n'a pas pris la décision initiale. La décision en appel est définitive.",
+      "Des sanctions d'intégrité (section 14) peuvent aussi être prononcées après la fin d'un événement si des preuves apparaissent plus tard."
     ],
     [
       "Les sanctions peuvent être cumulées. Un avertissement reste au dossier de l'équipe jusqu'à la fin de l'événement ; les autres sanctions y restent 12 mois.",

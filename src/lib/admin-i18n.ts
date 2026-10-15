@@ -1,6 +1,7 @@
 import { interpolate } from "@/lib/i18n";
 
 export const ADMIN_EN = {
+  previewBanner: "DEV PREVIEW · READ-ONLY · Sample roster and empty states only. No database, no session, no admin login. Every action is refused. This page exists only in local development with ACE_ADMIN_PREVIEW=1.",
   tvKicker: "A.C.E TV",
   tvTitle: "Matches of the day",
   tvLede: "Broadcast embeds from ACE_BROADCAST_FEEDS and feeds added here. A tile only plays a feed; it does not start, score or verify a match.",
@@ -59,6 +60,9 @@ export const ADMIN_EN = {
   copilotPlaceholder: "Query platform state",
   copilotSubmit: "Ask",
   copilotReply: "Simulated core logged the query. No live kernel was scanned.",
+  copilotLine1: "Anti-cheat: not running. No server or client is scanned.",
+  copilotLine2: "Matchmaking: no live queue. No speeds are measured or forecast.",
+  copilotLine3: "Telemetry: none collected. This desk only reads this page.",
   chipDb: "DATABASE BOUNDARY",
   chipDbBody: "Four inventory actions write User rows",
   chipKernel: "KERNEL INTEGRITY MANAGEMENT",
@@ -201,6 +205,7 @@ export const ADMIN_EN = {
 } as const;
 
 export const ADMIN_HE: Record<keyof typeof ADMIN_EN, string> = {
+  previewBanner: "תצוגה מקדימה לפיתוח · קריאה בלבד · רשימת שחקנים לדוגמה ומצבים ריקים בלבד. בלי מסד נתונים, בלי סשן ובלי התחברות אדמין. כל פעולה נדחית. העמוד קיים רק בפיתוח מקומי עם ACE_ADMIN_PREVIEW=1.",
   tvKicker: "A.C.E TV",
   tvTitle: "משחקי היום",
   tvLede: "שידורים מוטמעים מ-ACE_BROADCAST_FEEDS ומזינים שנוספו כאן. אריח רק מנגן שידור; הוא לא מתחיל, לא סופר ולא מאמת משחק.",
@@ -259,6 +264,9 @@ export const ADMIN_HE: Record<keyof typeof ADMIN_EN, string> = {
   copilotPlaceholder: "שאל את מצב הפלטפורמה",
   copilotSubmit: "שאל",
   copilotReply: "הליבה המדומה רשמה את השאילתה. לא נסרק ליבה חיה.",
+  copilotLine1: "אנטי-צ'יט: לא פועל. אף שרת או לקוח לא נסרק.",
+  copilotLine2: "התאמת משחקים: אין תור חי. לא נמדדות ולא נחזות מהירויות.",
+  copilotLine3: "טלמטריה: לא נאספת. השולחן הזה קורא רק את העמוד הזה.",
   chipDb: "גבול מסד נתונים",
   chipDbBody: "ארבע פעולות המלאי כותבות שורות משתמש",
   chipKernel: "ניהול שלמות ליבה",

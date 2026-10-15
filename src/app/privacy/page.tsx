@@ -55,10 +55,7 @@ export default async function PrivacyPage() {
       <LegalSection n={4} title={text.legalDocs.r14.retentionTitle}>
         <p>{text.legalDocs.r14.retention}</p>
       </LegalSection>
-      <LegalSection n={5} title={text.legalDocs.r14.ageTitle}>
-        <p>{text.legalDocs.r14.age}</p>
-      </LegalSection>
-      <LegalSection n={6} title={privacy.rights.title}>
+      <LegalSection n={5} title={privacy.rights.title}>
         <p>
           {privacy.rights.before}{" "}
           <a className="text-[#FFD700]" href="mailto:support@ace-platform.gg">
@@ -67,7 +64,7 @@ export default async function PrivacyPage() {
           {privacy.rights.after}
         </p>
       </LegalSection>
-      <LegalSection n={7} title={privacy.cookies.title}>
+      <LegalSection n={6} title={privacy.cookies.title}>
         <p>
           {privacy.cookies.before}{" "}
           <a className="text-[#FFD700]" href="/cookie-policy">
@@ -76,7 +73,7 @@ export default async function PrivacyPage() {
           {privacy.cookies.after}
         </p>
       </LegalSection>
-      <LegalSection n={8} title={privacy.controller.title}>
+      <LegalSection n={7} title={privacy.controller.title}>
         <p>{privacy.controller.body}</p>
       </LegalSection>
     </LegalDocument>

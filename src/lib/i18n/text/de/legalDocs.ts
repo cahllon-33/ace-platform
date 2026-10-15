@@ -7,17 +7,15 @@ export const legalDocs: TextBag["legalDocs"] = {
     "definitionsTitle": "Begriffsbestimmungen",
     "definitions": "In diesen Bedingungen bedeuten „A.C.E.“, „wir“ und „uns“ die A.C.E. Competitions Ltd. „Website“ bedeutet ace-platform.gg. „Konto“ bedeutet das über die Steam-Anmeldung erstellte A.C.E.-Profil. „Plan“ bedeutet Free, Plus oder Premium. „Regelwerk“ bedeutet das Wettbewerbsregelwerk unter /rules. „Admin“ bedeutet ein Teammitglied, das das Regelwerk bei einem Event anwendet.",
     "suspensionTitle": "Kontobeschränkungen und Sperren",
-    "suspension": "Wir können ein Konto verwarnen, beschränken, sperren oder schließen, wenn es gegen diese Bedingungen oder das Regelwerk verstößt, etwa durch Cheaten, Kontoteilung, Sperrumgehung, Belästigung oder Betrug. Außerhalb eines laufenden Matches nennen wir dir den Grund und geben dir 48 Stunden zur Stellungnahme, bevor eine Sperre beginnt. In dringenden Fällen beginnt die Sperre zuerst und die Prüfung folgt. Ein bezahlter Plan schützt ein Konto nie vor einer Beschränkung.",
+    "suspension": "Wir können ein Konto verwarnen, beschränken, sperren oder schließen, wenn es gegen diese Bedingungen oder das Regelwerk verstößt, etwa durch Cheaten, Kontoteilung, Sperrumgehung, Belästigung oder Betrug. Ein bezahlter Plan schützt ein Konto nie vor einer Beschränkung.",
     "disputesTitle": "Regelentscheidungen und Einsprüche",
-    "disputes": "Matchstreitigkeiten und Strafen richten sich nach den Abschnitten 15 und 16 des Regelwerks. Gegen eine Entscheidung über dein Konto kannst du innerhalb von 48 Stunden per E-Mail an support@ace-platform.gg mit deiner SteamID und deinen Belegen Einspruch einlegen. Ein Teammitglied, das die erste Entscheidung nicht getroffen hat, prüft den Einspruch und teilt dir Ergebnis und Begründung mit. Deine gesetzlichen Rechte in deinem Land bleiben unberührt.",
+    "disputes": "Matchstreitigkeiten und Strafen richten sich nach den Abschnitten 15 und 16 des Regelwerks. Gegen eine Entscheidung über dein Konto kannst du per E-Mail an support@ace-platform.gg mit deiner SteamID und deinen Belegen Einspruch einlegen. Ein Teammitglied, das die erste Entscheidung nicht getroffen hat, prüft den Einspruch und teilt dir Ergebnis und Begründung mit. Deine gesetzlichen Rechte in deinem Land bleiben unberührt.",
     "changesTitle": "Änderungen dieser Bedingungen",
     "changes": "Wir können diese Bedingungen aktualisieren. Jede neue Fassung wird auf dieser Seite mit neuem Gültigkeitsdatum veröffentlicht. Eine wesentliche Änderung gilt 7 Tage nach Veröffentlichung und nie für einen bereits begonnenen Zahlungszeitraum.",
     "languageTitle": "Sprache",
     "language": "Diese Bedingungen sind auf Englisch verfasst. Übersetzungen dienen nur der Bequemlichkeit. Weichen eine Übersetzung und der englische Text voneinander ab, gilt der englische Text.",
     "retentionTitle": "Speicherdauer",
-    "retention": "Kontodaten werden aufbewahrt, solange dein Konto besteht. Eine Sitzung endet bei Abmeldung oder Ablauf. Wenn du die Löschung deines Kontos verlangst, entfernen wir deine Daten innerhalb von 30 Tagen, außer Daten, die wir für eine gesetzliche Pflicht oder zur Durchsetzung einer aktiven Sperre behalten müssen, und nur so lange wie nötig.",
-    "ageTitle": "Mindestalter",
-    "age": "Die Website richtet sich an Personen ab 16 Jahren. Wir erstellen wissentlich keine Konten für jüngere Kinder. Wenn du glaubst, dass ein Kind unter 16 ein Konto hat, kontaktiere uns, und wir löschen es."
+    "retention": "Kontodaten werden aufbewahrt, solange dein Konto besteht. Eine Sitzung endet bei Abmeldung oder Ablauf.",
   },
   translationNotice:
     "Diese Seite ist eine Übersetzung, die zur besseren Verständlichkeit bereitgestellt wird. Weichen die Übersetzung und der englische Text voneinander ab, gilt der englische Text.",
@@ -40,7 +38,7 @@ export const legalDocs: TextBag["legalDocs"] = {
       eligibility: {
         title: "2. Teilnahmeberechtigung und Konten",
         paragraphs: [
-          "Du musst mindestens 16 Jahre alt sein, oder älter, wenn das Recht deines Landes oder eine Eventseite es verlangt. Unter 18 brauchst du für einen bezahlten Plan die Erlaubnis eines Elternteils oder Vormunds. Konten werden nur über die offizielle Steam-OpenID-Anmeldung erstellt, ein Konto pro Person. A.C.E. fragt nie nach deinem Steam-Passwort.",
+          "Konten werden nur über die offizielle Steam-OpenID-Anmeldung erstellt, ein Konto pro Person. A.C.E. fragt nie nach deinem Steam-Passwort.",
         ],
       },
       notActive: {
@@ -140,7 +138,7 @@ export const legalDocs: TextBag["legalDocs"] = {
       before:
         "Wenn Sie sich in einer Region mit Rechten an personenbezogenen Daten befinden, können Sie Auskunft, Berichtigung oder Löschung Ihrer A.C.E.-Kontodaten per E-Mail beantragen an",
       after:
-        ". Wir antworten innerhalb von 30 Tagen. Das Löschen eines Website-Kontos ändert keine Steam- oder VAC-Entscheidung von Valve.",
+        ". Das Löschen eines Website-Kontos ändert keine Steam- oder VAC-Entscheidung von Valve.",
     },
     cookies: {
       title: "Cookies",

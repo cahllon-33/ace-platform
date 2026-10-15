@@ -7,17 +7,15 @@ export const legalDocs: TextBag["legalDocs"] = {
     "definitionsTitle": "Definisi",
     "definitions": "Dalam Ketentuan ini, “A.C.E.” dan “kami” berarti A.C.E. Competitions Ltd. “Situs” berarti ace-platform.gg. “Akun” berarti profil A.C.E. yang dibuat melalui login Steam. “Paket” berarti Free, Plus, atau Premium. “Buku Aturan” berarti Buku Aturan Kompetitif di /rules. “Admin” berarti staf yang menerapkan Buku Aturan pada suatu acara.",
     "suspensionTitle": "Pembatasan dan penangguhan akun",
-    "suspension": "Kami dapat memperingatkan, membatasi, menangguhkan, atau menutup Akun yang melanggar Ketentuan ini atau Buku Aturan, misalnya karena curang, berbagi akun, menghindari larangan, pelecehan, atau penipuan. Di luar pertandingan yang sedang berlangsung, kami memberi tahu alasannya dan memberimu 48 jam untuk menanggapi sebelum penangguhan dimulai. Dalam kasus mendesak, penangguhan dimulai lebih dulu dan peninjauan menyusul. Paket berbayar tidak pernah melindungi Akun dari pembatasan.",
+    "suspension": "Kami dapat memperingatkan, membatasi, menangguhkan, atau menutup Akun yang melanggar Ketentuan ini atau Buku Aturan, misalnya karena curang, berbagi akun, menghindari larangan, pelecehan, atau penipuan. Paket berbayar tidak pernah melindungi Akun dari pembatasan.",
     "disputesTitle": "Keputusan aturan dan banding",
-    "disputes": "Sengketa pertandingan dan hukuman mengikuti bagian 15 dan 16 Buku Aturan. Kamu dapat mengajukan banding atas keputusan terkait Akunmu dalam 48 jam dengan mengirim email ke support@ace-platform.gg beserta SteamID dan buktimu. Staf yang tidak membuat keputusan pertama meninjau banding dan memberi tahu hasil beserta alasannya. Ini tidak membatasi hak apa pun yang kamu miliki menurut hukum negaramu.",
+    "disputes": "Sengketa pertandingan dan hukuman mengikuti bagian 15 dan 16 Buku Aturan. Kamu dapat mengajukan banding atas keputusan terkait Akunmu dengan mengirim email ke support@ace-platform.gg beserta SteamID dan buktimu. Staf yang tidak membuat keputusan pertama meninjau banding dan memberi tahu hasil beserta alasannya. Ini tidak membatasi hak apa pun yang kamu miliki menurut hukum negaramu.",
     "changesTitle": "Perubahan Ketentuan ini",
     "changes": "Kami dapat memperbarui Ketentuan ini. Setiap versi baru diterbitkan di halaman ini dengan tanggal berlaku baru. Perubahan material berlaku 7 hari setelah diterbitkan dan tidak pernah berlaku untuk periode pembayaran yang sudah dimulai.",
     "languageTitle": "Bahasa",
     "language": "Ketentuan ini ditulis dalam bahasa Inggris. Terjemahan disediakan untuk kemudahan. Jika terjemahan dan teks bahasa Inggris berbeda, teks bahasa Inggris yang berlaku.",
     "retentionTitle": "Penyimpanan data",
-    "retention": "Catatan Akun disimpan selama Akunmu ada. Sesi berakhir saat kamu keluar atau saat kedaluwarsa. Jika kamu meminta Akun dihapus, kami menghapus catatanmu dalam 30 hari, kecuali catatan yang wajib kami simpan karena kewajiban hukum atau untuk menegakkan larangan aktif, dan hanya selama diperlukan.",
-    "ageTitle": "Batas usia",
-    "age": "Situs ini ditujukan untuk orang berusia 16 tahun ke atas. Kami tidak dengan sengaja membuat Akun untuk anak yang lebih muda. Jika kamu yakin anak di bawah 16 tahun memiliki Akun, hubungi kami dan kami akan menghapusnya."
+    "retention": "Catatan Akun disimpan selama Akunmu ada. Sesi berakhir saat kamu keluar atau saat kedaluwarsa.",
   },
   "translationNotice": "Halaman ini adalah terjemahan yang disediakan untuk kemudahan. Jika terjemahan dan teks bahasa Inggris berbeda, teks bahasa Inggris yang berlaku.",
   "terms": {
@@ -38,7 +36,7 @@ export const legalDocs: TextBag["legalDocs"] = {
       "eligibility": {
         "title": "2. Kelayakan dan akun",
         "paragraphs": [
-          "Kamu harus berusia minimal 16 tahun, atau lebih jika hukum negaramu atau halaman acara mengharuskannya. Jika kamu di bawah 18 tahun, kamu memerlukan izin orang tua atau wali untuk membeli paket berbayar. Akun hanya dibuat melalui login resmi Steam OpenID, satu Akun per orang. A.C.E. tidak pernah meminta kata sandi Steam-mu."
+          "Akun hanya dibuat melalui login resmi Steam OpenID, satu Akun per orang. A.C.E. tidak pernah meminta kata sandi Steam-mu."
         ]
       },
       "notActive": {
@@ -131,7 +129,7 @@ export const legalDocs: TextBag["legalDocs"] = {
     "rights": {
       "title": "Hak-hakmu",
       "before": "Jika Anda berada di wilayah dengan hak data pribadi, Anda dapat meminta akses, koreksi, atau penghapusan data akun A.C.E. Anda dengan mengirim surel ke",
-      "after": ". Kami membalas dalam 30 hari. Menghapus Akun situs tidak mengubah keputusan Steam atau VAC yang dibuat oleh Valve."
+      "after": ". Menghapus Akun situs tidak mengubah keputusan Steam atau VAC yang dibuat oleh Valve."
     },
     "cookies": {
       "title": "Cookie",

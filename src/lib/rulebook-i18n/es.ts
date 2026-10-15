@@ -10,7 +10,6 @@ export const RB_ES: RulebookText = {
       "Los árbitros pueden resolver situaciones que este reglamento no contempla, guiándose por el juego limpio y el espíritu de estas normas. Esas decisiones se registran y se publican junto con el resultado de la partida."
     ],
     [
-      "Los jugadores deben tener al menos 16 años, o la edad mínima fijada por la página del evento o la ley local si es mayor. Los árbitros pueden pedir prueba de edad antes de entregar un premio.",
       "Los jugadores no pueden estar bajo una suspensión activa de A.C.E. ni tener en la cuenta de Steam que usan un bloqueo de juego emitido en los últimos 2 años.",
       "El personal del organizador y los árbitros no pueden jugar en un evento que administran.",
       "Los límites de región o de clasificación se fijan para cada evento y se publican antes de abrir la inscripción. Un jugador fuera de esos límites no puede jugar, ni siquiera como suplente."
@@ -98,9 +97,8 @@ export const RB_ES: RulebookText = {
       "Solo un capitán puede presentar una reclamación, dentro de los 30 minutos siguientes al final del mapa afectado y con pruebas (tick de la demo, captura o clip).",
       "Seguir jugando tras un problema conocido sin señalarlo supone aceptar la situación para las rondas ya jugadas.",
       "El árbitro resuelve la reclamación y publica la decisión y su motivo. Los equipos siguen jugando su calendario mientras la reclamación está abierta, salvo que el árbitro disponga otra cosa.",
-      "Se puede recurrir la decisión en un plazo de 48 horas. El recurso lo revisa un miembro del organizador que no tomó la decisión original. La decisión del recurso es definitiva.",
-      "Las sanciones de integridad (sección 14) también pueden imponerse después de terminado un evento si se encuentran pruebas más tarde.",
-      "Fuera de una partida en curso, se informa al jugador del motivo y de las pruebas antes de que empiece una suspensión o expulsión, y puede responder en un plazo de 48 horas. En casos urgentes de integridad, la suspensión empieza primero y la revisión viene después."
+      "Se puede recurrir la decisión. El recurso lo revisa un miembro del organizador que no tomó la decisión original. La decisión del recurso es definitiva.",
+      "Las sanciones de integridad (sección 14) también pueden imponerse después de terminado un evento si se encuentran pruebas más tarde."
     ],
     [
       "Las sanciones pueden combinarse. Una advertencia permanece en el historial del equipo hasta el final del evento; las demás sanciones permanecen 12 meses.",

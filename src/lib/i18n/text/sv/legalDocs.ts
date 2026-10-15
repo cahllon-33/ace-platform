@@ -7,17 +7,15 @@ export const legalDocs: TextBag["legalDocs"] = {
     "definitionsTitle": "Definitioner",
     "definitions": "I dessa Villkor avser ”A.C.E.” och ”vi” A.C.E. Competitions Ltd. ”Webbplatsen” avser ace-platform.gg. ”Konto” avser A.C.E.-profilen som skapas via Steam-inloggning. ”Plan” avser Free, Plus eller Premium. ”Regelboken” avser tävlingsreglerna på /rules. ”Admin” avser en personal som tillämpar Regelboken vid ett evenemang.",
     "suspensionTitle": "Kontobegränsningar och avstängning",
-    "suspension": "Vi kan varna, begränsa, stänga av eller avsluta ett Konto som bryter mot dessa Villkor eller Regelboken, till exempel för fusk, kontodelning, kringgående av avstängning, trakasserier eller bedrägeri. Utanför en pågående match meddelar vi skälet och ger dig 48 timmar att svara innan en avstängning börjar. I brådskande fall börjar avstängningen först och granskningen följer. En betald plan skyddar aldrig ett Konto från en begränsning.",
+    "suspension": "Vi kan varna, begränsa, stänga av eller avsluta ett Konto som bryter mot dessa Villkor eller Regelboken, till exempel för fusk, kontodelning, kringgående av avstängning, trakasserier eller bedrägeri. En betald plan skyddar aldrig ett Konto från en begränsning.",
     "disputesTitle": "Regelbeslut och överklaganden",
-    "disputes": "Matchtvister och straff följer avsnitt 15 och 16 i Regelboken. Du kan överklaga ett beslut om ditt Konto inom 48 timmar genom att mejla support@ace-platform.gg med ditt SteamID och dina bevis. En personal som inte fattade det första beslutet granskar överklagandet och meddelar utfallet och skälet. Detta begränsar inte någon rättighet du har enligt lagen i ditt land.",
+    "disputes": "Matchtvister och straff följer avsnitt 15 och 16 i Regelboken. Du kan överklaga ett beslut om ditt Konto genom att mejla support@ace-platform.gg med ditt SteamID och dina bevis. En personal som inte fattade det första beslutet granskar överklagandet och meddelar utfallet och skälet. Detta begränsar inte någon rättighet du har enligt lagen i ditt land.",
     "changesTitle": "Ändringar av dessa Villkor",
     "changes": "Vi kan uppdatera dessa Villkor. Varje ny version publiceras på denna sida med ett nytt ikraftträdandedatum. En väsentlig ändring gäller 7 dagar efter publicering och tillämpas aldrig på en betalningsperiod som redan har börjat.",
     "languageTitle": "Språk",
     "language": "Dessa Villkor är skrivna på engelska. Översättningar tillhandahålls för bekvämlighet. Om en översättning och den engelska texten skiljer sig åt gäller den engelska texten.",
     "retentionTitle": "Lagring av uppgifter",
-    "retention": "Kontouppgifter sparas så länge ditt Konto finns. En session avslutas när du loggar ut eller den löper ut. Om du ber oss radera ditt Konto tar vi bort dina uppgifter inom 30 dagar, utom uppgifter vi måste spara för en rättslig skyldighet eller för att upprätthålla en aktiv avstängning, och bara så länge det krävs.",
-    "ageTitle": "Ålderskrav",
-    "age": "Webbplatsen är avsedd för personer som är 16 år eller äldre. Vi skapar inte medvetet Konton för yngre barn. Om du tror att ett barn under 16 har ett Konto, kontakta oss så raderar vi det."
+    "retention": "Kontouppgifter sparas så länge ditt Konto finns. En session avslutas när du loggar ut eller den löper ut.",
   },
   "translationNotice": "Den här sidan är en översättning som tillhandahålls för enkelhetens skull. Om översättningen och den engelska texten skiljer sig åt gäller den engelska texten.",
   "terms": {
@@ -38,7 +36,7 @@ export const legalDocs: TextBag["legalDocs"] = {
       "eligibility": {
         "title": "2. Behörighet och konton",
         "paragraphs": [
-          "Du måste vara minst 16 år, eller äldre om lagen i ditt land eller en evenemangssida kräver det. Om du är under 18 behöver du tillstånd från en förälder eller vårdnadshavare för att köpa en betald plan. Konton skapas endast via den officiella Steam OpenID-inloggningen, ett Konto per person. A.C.E. frågar aldrig efter ditt Steam-lösenord."
+          "Konton skapas endast via den officiella Steam OpenID-inloggningen, ett Konto per person. A.C.E. frågar aldrig efter ditt Steam-lösenord."
         ]
       },
       "notActive": {
@@ -131,7 +129,7 @@ export const legalDocs: TextBag["legalDocs"] = {
     "rights": {
       "title": "Dina rättigheter",
       "before": "Om du befinner dig i en region med rättigheter till personuppgifter kan du begära åtkomst till, rättelse eller radering av dina A.C.E.-kontodata genom att mejla",
-      "after": ". Vi svarar inom 30 dagar. Att radera ett webbplatskonto ändrar inte något Steam- eller VAC-beslut som Valve fattat."
+      "after": ". Att radera ett webbplatskonto ändrar inte något Steam- eller VAC-beslut som Valve fattat."
     },
     "cookies": {
       "title": "Cookies",

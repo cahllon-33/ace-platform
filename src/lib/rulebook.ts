@@ -6,7 +6,7 @@
 export type RuleClause = { text: string; pending?: boolean };
 export type RuleSection = { id: string; title: string; summary?: string; clauses: RuleClause[] };
 
-export const RULEBOOK_VERSION = "1.1";
+export const RULEBOOK_VERSION = "1.2";
 export const RULEBOOK_EFFECTIVE = "15 October 2026";
 
 export const RULEBOOK: RuleSection[] = [
@@ -24,7 +24,6 @@ export const RULEBOOK: RuleSection[] = [
     id: "s2",
     title: "Eligibility",
     clauses: [
-      { text: "Players must be at least 16 years old, or the minimum age set by the event page or local law if higher. Admins may request proof of age before a prize is released." },
       { text: "Players must not be under an active A.C.E. suspension, and must not hold a game ban on the Steam account they use that was issued within the last 2 years." },
       { text: "Organizer staff and admins may not play in an event they administer." },
       { text: "Region or rating limits are set per event and published before registration opens. A player outside the limits may not play, even as a substitute." },
@@ -164,9 +163,8 @@ export const RULEBOOK: RuleSection[] = [
       { text: "Only a captain may file a dispute. It must be filed within 30 minutes of the end of the affected map, with evidence (demo tick, screenshot, or clip)." },
       { text: "Continuing to play after a known issue without raising it counts as accepting the situation for the rounds already played." },
       { text: "The admin decides the dispute and publishes the outcome and reason. Teams must keep playing their schedule while a dispute is open, unless the admin says otherwise." },
-      { text: "An appeal may be filed within 48 hours of the decision. It is reviewed by an organizer member who did not make the original decision. The appeal decision is final." },
+      { text: "An appeal may be filed against the decision. It is reviewed by an organizer member who did not make the original decision. The appeal decision is final." },
       { text: "Integrity penalties (section 14) may also be issued after an event ends, if evidence is found later." },
-      { text: "Outside a live match, a player is told the reason and the evidence before a suspension or ban starts, and may respond within 48 hours. In urgent integrity cases the suspension starts first and the review follows." },
     ],
   },
   {

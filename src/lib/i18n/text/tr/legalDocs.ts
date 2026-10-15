@@ -7,17 +7,15 @@ export const legalDocs: TextBag["legalDocs"] = {
     "definitionsTitle": "Tanımlar",
     "definitions": "Bu Koşullarda “A.C.E.” ve “biz”, A.C.E. Competitions Ltd. anlamına gelir. “Site”, ace-platform.gg anlamına gelir. “Hesap”, Steam girişiyle oluşturulan A.C.E. profilidir. “Plan”, Free, Plus veya Premium anlamına gelir. “Kural Kitabı”, /rules adresindeki Rekabet Kural Kitabıdır. “Admin”, bir etkinlikte Kural Kitabını uygulayan personeldir.",
     "suspensionTitle": "Hesap kısıtlamaları ve askıya alma",
-    "suspension": "Bu Koşulları veya Kural Kitabını ihlal eden bir Hesabı, örneğin hile, hesap paylaşımı, yasak atlatma, taciz veya dolandırıcılık nedeniyle uyarabilir, kısıtlayabilir, askıya alabilir veya kapatabiliriz. Devam eden bir maç dışında, askıya alma başlamadan önce sana nedeni bildirir ve yanıt vermen için 48 saat tanırız. Acil durumlarda askıya alma önce başlar, inceleme ardından gelir. Ücretli bir plan bir Hesabı kısıtlamadan asla korumaz.",
+    "suspension": "Bu Koşulları veya Kural Kitabını ihlal eden bir Hesabı, örneğin hile, hesap paylaşımı, yasak atlatma, taciz veya dolandırıcılık nedeniyle uyarabilir, kısıtlayabilir, askıya alabilir veya kapatabiliriz. Ücretli bir plan bir Hesabı kısıtlamadan asla korumaz.",
     "disputesTitle": "Kural kararları ve itirazlar",
-    "disputes": "Maç anlaşmazlıkları ve cezalar Kural Kitabının 15. ve 16. bölümlerine tabidir. Hesabınla ilgili bir karara, SteamID'n ve kanıtlarınla support@ace-platform.gg adresine e-posta göndererek 48 saat içinde itiraz edebilirsin. İtirazı ilk kararı vermeyen bir personel inceler ve sonucu gerekçesiyle bildirir. Bu, ülkenin yasalarına göre sahip olduğun hakları sınırlamaz.",
+    "disputes": "Maç anlaşmazlıkları ve cezalar Kural Kitabının 15. ve 16. bölümlerine tabidir. Hesabınla ilgili bir karara, SteamID'n ve kanıtlarınla support@ace-platform.gg adresine e-posta göndererek itiraz edebilirsin. İtirazı ilk kararı vermeyen bir personel inceler ve sonucu gerekçesiyle bildirir. Bu, ülkenin yasalarına göre sahip olduğun hakları sınırlamaz.",
     "changesTitle": "Bu Koşullardaki değişiklikler",
     "changes": "Bu Koşulları güncelleyebiliriz. Her yeni sürüm bu sayfada yeni bir yürürlük tarihiyle yayımlanır. Önemli bir değişiklik yayımlandıktan 7 gün sonra yürürlüğe girer ve başlamış bir ödeme dönemine asla uygulanmaz.",
     "languageTitle": "Dil",
     "language": "Bu Koşullar İngilizce yazılmıştır. Çeviriler kolaylık için sunulur. Bir çeviri ile İngilizce metin farklıysa İngilizce metin geçerlidir.",
     "retentionTitle": "Veri saklama",
-    "retention": "Hesap kayıtları Hesabın var olduğu sürece saklanır. Oturum, çıkış yaptığında veya süresi dolduğunda sona erer. Hesabının silinmesini istersen kayıtlarını 30 gün içinde kaldırırız; yasal bir yükümlülük veya aktif bir yasağın uygulanması için saklamamız gerekenler hariç ve yalnızca gerektiği sürece.",
-    "ageTitle": "Yaş şartı",
-    "age": "Site 16 yaş ve üzeri kişilere yöneliktir. Daha küçük çocuklar için bilerek Hesap oluşturmayız. 16 yaşından küçük bir çocuğun Hesabı olduğunu düşünüyorsan bize ulaş, silelim."
+    "retention": "Hesap kayıtları Hesabın var olduğu sürece saklanır. Oturum, çıkış yaptığında veya süresi dolduğunda sona erer.",
   },
   "translationNotice": "Bu sayfa kolaylık sağlamak amacıyla sunulan bir çeviridir. Çeviri ile İngilizce metin arasında fark olması durumunda İngilizce metin geçerlidir.",
   "terms": {
@@ -38,7 +36,7 @@ export const legalDocs: TextBag["legalDocs"] = {
       "eligibility": {
         "title": "2. Uygunluk ve hesaplar",
         "paragraphs": [
-          "En az 16 yaşında olmalısın; ülkenin yasası veya bir etkinlik sayfası gerektiriyorsa daha büyük. 18 yaşından küçüksen ücretli bir plan satın almak için ebeveyn veya vasi izni gerekir. Hesaplar yalnızca resmi Steam OpenID girişiyle oluşturulur, kişi başına bir Hesap. A.C.E. asla Steam şifreni istemez."
+          "Hesaplar yalnızca resmi Steam OpenID girişiyle oluşturulur, kişi başına bir Hesap. A.C.E. asla Steam şifreni istemez."
         ]
       },
       "notActive": {
@@ -131,7 +129,7 @@ export const legalDocs: TextBag["legalDocs"] = {
     "rights": {
       "title": "Hakların",
       "before": "Kişisel veri hakları bulunan bir bölgedeyseniz, A.C.E. hesap verilerinize erişim, düzeltme veya silme talebinde bulunmak için şu adrese e-posta gönderebilirsiniz:",
-      "after": ". 30 gün içinde yanıt veririz. Site hesabını silmek, Valve'ın verdiği bir Steam veya VAC kararını değiştirmez."
+      "after": ". Site hesabını silmek, Valve'ın verdiği bir Steam veya VAC kararını değiştirmez."
     },
     "cookies": {
       "title": "Çerezler",

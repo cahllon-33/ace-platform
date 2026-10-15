@@ -10,7 +10,6 @@ export const RB_HU: RulebookText = {
       "A bírók a szabálykönyv által nem szabályozott helyzetekben a sportszerűség és a szabályok szellemének megfelelően dönthetnek. Ezeket a döntéseket rögzítik, és a mérkőzés eredményével együtt közzéteszik."
     ],
     [
-      "A játékosoknak legalább 16 évesnek kell lenniük, vagy az eseményoldal, illetve a helyi jogszabály által előírt magasabb korhatárt kell elérniük. A bírók a díj átadása előtt életkor igazolását kérhetik.",
       "A játékos nem állhat érvényes A.C.E.-eltiltás alatt, és az általa használt Steam-fiókon nem lehet az elmúlt 2 évben kiszabott játékkitiltás.",
       "A szervező munkatársai és a bírók nem játszhatnak olyan eseményen, amelyet ők felügyelnek.",
       "A régióra vagy értékelésre vonatkozó korlátokat eseményenként határozzák meg, és a regisztráció megnyitása előtt közzéteszik. A korlátokon kívül eső játékos nem játszhat, cserejátékosként sem."
@@ -98,9 +97,8 @@ export const RB_HU: RulebookText = {
       "Óvást csak a kapitány nyújthat be, az érintett pálya végét követő 30 percen belül, bizonyítékkal (demó-tick, képernyőkép vagy klip).",
       "Ha egy csapat ismert probléma után a jelzése nélkül tovább játszik, azzal a már lejátszott körök tekintetében elfogadja a helyzetet.",
       "A bíró dönt az óvásról, és közzéteszi a döntést és annak indoklását. Az óvás elbírálása alatt a csapatok a menetrend szerint játszanak tovább, hacsak a bíró másként nem dönt.",
-      "A döntés ellen 48 órán belül fellebbezni lehet. A fellebbezést a szervező olyan tagja bírálja el, aki nem hozta az eredeti döntést. A fellebbezési döntés végleges.",
-      "A verseny tisztaságát sértő cselekmények büntetései (14. szakasz) az esemény befejezése után is kiszabhatók, ha a bizonyítékok később kerülnek elő.",
-      "Folyamatban lévő meccsen kívül a játékos a felfüggesztés vagy kitiltás előtt megismeri az okot és a bizonyítékokat, és 48 órán belül válaszolhat. Sürgős integritási ügyekben a felfüggesztés azonnal indul, és a felülvizsgálat utána következik."
+      "A döntés ellen fellebbezni lehet. A fellebbezést a szervező olyan tagja bírálja el, aki nem hozta az eredeti döntést. A fellebbezési döntés végleges.",
+      "A verseny tisztaságát sértő cselekmények büntetései (14. szakasz) az esemény befejezése után is kiszabhatók, ha a bizonyítékok később kerülnek elő."
     ],
     [
       "A büntetések összevonhatók. A figyelmeztetés az esemény végéig a csapat nyilvántartásában marad; a többi büntetés 12 hónapig marad nyilvántartásban.",

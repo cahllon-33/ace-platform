@@ -34,10 +34,10 @@ const TEAM_A_REST: RosterRow[] = [
 
 const TEAM_B: RosterRow[] = [
   { callsign: "Razor", role: "IGL", level: 6, skin: 0 },
-  { callsign: "Ghost", role: "AWP", level: 6, skin: 1, premiumSample: true },
+  { callsign: "Ghost", role: "AWP", level: 6, skin: 1 },
   { callsign: "Viper", role: "Entry", level: 5, skin: 2 },
   { callsign: "Hawk", role: "Lurk", level: 5, skin: 3 },
-  { callsign: "Sable", role: "Support", level: 4, skin: 4 },
+  { callsign: "Sable", role: "Support", level: 4, skin: 4, premiumSample: true },
 ];
 
 const SAMPLE_CHAT_HANDLES = ["Zyro", "Kane", "Vex"] as const;

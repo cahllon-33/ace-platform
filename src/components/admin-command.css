@@ -1121,3 +1121,6 @@
 @media (min-width: 900px) { .ace-tv-form { grid-template-columns: 1fr 2fr auto; } }
 .ace-tv-note { grid-column: 1 / -1; font-size: 0.78rem; color: #c8c4b8; }
 @media (prefers-reduced-motion: reduce) { .ace-admin-stat { transition: none; transform: none; } }
+
+/* R16: dev-only admin preview banner */
+.ace-admin-preview-banner { margin: 0 auto 1rem; max-width: 76rem; padding: 0.7rem 1rem; border: 1px dashed rgba(255,215,0,0.8); border-radius: 0.8rem; background: repeating-linear-gradient(135deg, rgba(255,215,0,0.12) 0 12px, rgba(0,0,0,0.2) 12px 24px); color: #ffe27a; font: 700 0.72rem/1.5 ui-monospace, monospace; letter-spacing: 0.08em; text-align: center; }

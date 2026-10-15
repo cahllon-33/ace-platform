@@ -7,17 +7,15 @@ export const legalDocs: TextBag["legalDocs"] = {
     "definitionsTitle": "Definicje",
     "definitions": "W niniejszym Regulaminie „A.C.E.”, „my” oznacza A.C.E. Competitions Ltd. „Serwis” oznacza ace-platform.gg. „Konto” oznacza profil A.C.E. utworzony przez logowanie Steam. „Plan” oznacza Free, Plus lub Premium. „Regulamin rozgrywek” oznacza regulamin pod adresem /rules. „Admin” oznacza członka zespołu stosującego Regulamin rozgrywek podczas wydarzenia.",
     "suspensionTitle": "Ograniczenia i zawieszenie konta",
-    "suspension": "Możemy ostrzec, ograniczyć, zawiesić lub zamknąć Konto naruszające ten Regulamin lub Regulamin rozgrywek, np. za oszukiwanie, udostępnianie konta, obchodzenie bana, nękanie lub oszustwo. Poza trwającym meczem podajemy powód i dajemy 48 godzin na odpowiedź przed rozpoczęciem zawieszenia. W pilnych przypadkach zawieszenie zaczyna się od razu, a weryfikacja następuje później. Płatny plan nigdy nie chroni Konta przed ograniczeniem.",
+    "suspension": "Możemy ostrzec, ograniczyć, zawiesić lub zamknąć Konto naruszające ten Regulamin lub Regulamin rozgrywek, np. za oszukiwanie, udostępnianie konta, obchodzenie bana, nękanie lub oszustwo. Płatny plan nigdy nie chroni Konta przed ograniczeniem.",
     "disputesTitle": "Decyzje dotyczące zasad i odwołania",
-    "disputes": "Spory meczowe i kary podlegają sekcjom 15 i 16 Regulaminu rozgrywek. Od decyzji dotyczącej Twojego Konta możesz odwołać się w ciągu 48 godzin, pisząc na support@ace-platform.gg z SteamID i dowodami. Odwołanie rozpatruje członek zespołu, który nie wydał pierwszej decyzji, i przekazuje wynik wraz z uzasadnieniem. Nie ogranicza to praw przysługujących Ci na mocy prawa Twojego kraju.",
+    "disputes": "Spory meczowe i kary podlegają sekcjom 15 i 16 Regulaminu rozgrywek. Od decyzji dotyczącej Twojego Konta możesz odwołać się, pisząc na support@ace-platform.gg z SteamID i dowodami. Odwołanie rozpatruje członek zespołu, który nie wydał pierwszej decyzji, i przekazuje wynik wraz z uzasadnieniem. Nie ogranicza to praw przysługujących Ci na mocy prawa Twojego kraju.",
     "changesTitle": "Zmiany Regulaminu",
     "changes": "Możemy aktualizować ten Regulamin. Każda nowa wersja jest publikowana na tej stronie z nową datą wejścia w życie. Istotna zmiana obowiązuje po 7 dniach od publikacji i nigdy nie dotyczy rozpoczętego już okresu płatności.",
     "languageTitle": "Język",
     "language": "Ten Regulamin jest sporządzony po angielsku. Tłumaczenia mają charakter pomocniczy. W razie rozbieżności między tłumaczeniem a tekstem angielskim obowiązuje tekst angielski.",
     "retentionTitle": "Przechowywanie danych",
-    "retention": "Dane Konta przechowujemy, dopóki Konto istnieje. Sesja kończy się po wylogowaniu lub wygaśnięciu. Jeśli poprosisz o usunięcie Konta, usuniemy Twoje dane w ciągu 30 dni, poza danymi, które musimy zachować z obowiązku prawnego lub do egzekwowania aktywnego bana, i tylko tak długo, jak to konieczne.",
-    "ageTitle": "Wymagany wiek",
-    "age": "Serwis jest przeznaczony dla osób w wieku od 16 lat. Nie tworzymy świadomie Kont dla młodszych dzieci. Jeśli uważasz, że dziecko poniżej 16 lat ma Konto, skontaktuj się z nami, a je usuniemy."
+    "retention": "Dane Konta przechowujemy, dopóki Konto istnieje. Sesja kończy się po wylogowaniu lub wygaśnięciu.",
   },
   translationNotice:
     "Ta strona jest tłumaczeniem udostępnionym dla wygody. W razie rozbieżności między tłumaczeniem a tekstem angielskim rozstrzygający jest tekst angielski.",
@@ -40,7 +38,7 @@ export const legalDocs: TextBag["legalDocs"] = {
       eligibility: {
         title: "2. Uprawnienia i konta",
         paragraphs: [
-          "Musisz mieć co najmniej 16 lat lub więcej, jeśli wymaga tego prawo Twojego kraju albo strona wydarzenia. Jeśli masz mniej niż 18 lat, do zakupu płatnego planu potrzebujesz zgody rodzica lub opiekuna. Konta tworzy się wyłącznie przez oficjalne logowanie Steam OpenID, jedno Konto na osobę. A.C.E. nigdy nie prosi o hasło do Steam.",
+          "Konta tworzy się wyłącznie przez oficjalne logowanie Steam OpenID, jedno Konto na osobę. A.C.E. nigdy nie prosi o hasło do Steam.",
         ],
       },
       notActive: {
@@ -140,7 +138,7 @@ export const legalDocs: TextBag["legalDocs"] = {
       before:
         "Jeśli przebywasz w regionie, w którym przysługują prawa dotyczące danych osobowych, możesz zażądać dostępu do danych swojego konta A.C.E., ich sprostowania lub usunięcia, pisząc na adres",
       after:
-        ". Odpowiadamy w ciągu 30 dni. Usunięcie konta w serwisie nie zmienia decyzji Steam ani VAC wydanej przez Valve.",
+        ". Usunięcie konta w serwisie nie zmienia decyzji Steam ani VAC wydanej przez Valve.",
     },
     cookies: {
       title: "Pliki cookie",

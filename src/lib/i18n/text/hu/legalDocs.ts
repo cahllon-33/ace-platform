@@ -7,17 +7,15 @@ export const legalDocs: TextBag["legalDocs"] = {
     "definitionsTitle": "Fogalmak",
     "definitions": "E Feltételekben az „A.C.E.”, „mi” az A.C.E. Competitions Ltd.-t jelenti. A „Webhely” az ace-platform.gg. A „Fiók” a Steam-bejelentkezéssel létrehozott A.C.E.-profil. A „Csomag” a Free, Plus vagy Premium. A „Szabálykönyv” a /rules oldalon található versenyszabályzat. Az „Admin” az a munkatárs, aki egy eseményen alkalmazza a Szabálykönyvet.",
     "suspensionTitle": "Fiókkorlátozás és felfüggesztés",
-    "suspension": "Figyelmeztethetjük, korlátozhatjuk, felfüggeszthetjük vagy megszüntethetjük azt a Fiókot, amely megsérti e Feltételeket vagy a Szabálykönyvet, például csalás, fiókmegosztás, kitiltás kijátszása, zaklatás vagy visszaélés miatt. Folyamatban lévő meccsen kívül közöljük az okot, és 48 órát adunk a válaszra, mielőtt a felfüggesztés elkezdődik. Sürgős esetben a felfüggesztés azonnal indul, és a felülvizsgálat utána következik. Fizetős csomag soha nem védi meg a Fiókot a korlátozástól.",
+    "suspension": "Figyelmeztethetjük, korlátozhatjuk, felfüggeszthetjük vagy megszüntethetjük azt a Fiókot, amely megsérti e Feltételeket vagy a Szabálykönyvet, például csalás, fiókmegosztás, kitiltás kijátszása, zaklatás vagy visszaélés miatt. Fizetős csomag soha nem védi meg a Fiókot a korlátozástól.",
     "disputesTitle": "Szabálydöntések és fellebbezés",
-    "disputes": "A meccsvitákra és büntetésekre a Szabálykönyv 15. és 16. szakasza vonatkozik. A Fiókodat érintő döntés ellen 48 órán belül fellebbezhetsz a support@ace-platform.gg címre írva SteamID-ddel és bizonyítékaiddal. A fellebbezést olyan munkatárs vizsgálja, aki nem hozta az első döntést, és közli az eredményt és az indoklást. Ez nem korlátozza az országod joga szerinti jogaidat.",
+    "disputes": "A meccsvitákra és büntetésekre a Szabálykönyv 15. és 16. szakasza vonatkozik. A Fiókodat érintő döntés ellen fellebbezhetsz a support@ace-platform.gg címre írva SteamID-ddel és bizonyítékaiddal. A fellebbezést olyan munkatárs vizsgálja, aki nem hozta az első döntést, és közli az eredményt és az indoklást. Ez nem korlátozza az országod joga szerinti jogaidat.",
     "changesTitle": "E Feltételek módosítása",
     "changes": "E Feltételeket frissíthetjük. Minden új változat új hatálybalépési dátummal jelenik meg ezen az oldalon. A lényeges módosítás a közzététel után 7 nappal lép hatályba, és soha nem vonatkozik már megkezdett fizetési időszakra.",
     "languageTitle": "Nyelv",
     "language": "E Feltételek angol nyelven készültek. A fordítások a kényelmet szolgálják. Ha egy fordítás eltér az angol szövegtől, az angol szöveg az irányadó.",
     "retentionTitle": "Adatmegőrzés",
-    "retention": "A Fiók adatait addig őrizzük, amíg a Fiók létezik. A munkamenet kijelentkezéskor vagy lejáratkor ér véget. Ha a Fiók törlését kéred, 30 napon belül eltávolítjuk adataidat, kivéve azokat, amelyeket jogi kötelezettség vagy aktív kitiltás érvényesítése miatt meg kell őriznünk, és csak addig, amíg szükséges.",
-    "ageTitle": "Korhatár",
-    "age": "A Webhely 16 éves vagy idősebb személyeknek szól. Tudatosan nem hozunk létre Fiókot fiatalabb gyermekeknek. Ha úgy gondolod, hogy egy 16 év alatti gyermeknek Fiókja van, írj nekünk, és töröljük."
+    "retention": "A Fiók adatait addig őrizzük, amíg a Fiók létezik. A munkamenet kijelentkezéskor vagy lejáratkor ér véget.",
   },
   "translationNotice": "Ez az oldal a kényelem érdekében készült fordítás. Ha a fordítás és az angol szöveg eltér, az angol szöveg az irányadó.",
   "terms": {
@@ -38,7 +36,7 @@ export const legalDocs: TextBag["legalDocs"] = {
       "eligibility": {
         "title": "2. Jogosultság és fiókok",
         "paragraphs": [
-          "Legalább 16 évesnek kell lenned, vagy idősebbnek, ha az országod joga vagy egy eseményoldal ezt előírja. 18 év alatt fizetős csomag vásárlásához szülői vagy gondviselői engedély kell. Fiók csak a hivatalos Steam OpenID bejelentkezéssel hozható létre, személyenként egy. Az A.C.E. soha nem kéri a Steam-jelszavadat."
+          "Fiók csak a hivatalos Steam OpenID bejelentkezéssel hozható létre, személyenként egy. Az A.C.E. soha nem kéri a Steam-jelszavadat."
         ]
       },
       "notActive": {
@@ -131,7 +129,7 @@ export const legalDocs: TextBag["legalDocs"] = {
     "rights": {
       "title": "Jogaid",
       "before": "Ha olyan régióban vagy, ahol személyes adatokkal kapcsolatos jogok vannak, kérheted A.C.E.-fiókadataid hozzáférését, helyesbítését vagy törlését e-mailben ide:",
-      "after": ". 30 napon belül válaszolunk. A webhelyfiók törlése nem változtat a Valve által hozott Steam- vagy VAC-döntéseken."
+      "after": ". A webhelyfiók törlése nem változtat a Valve által hozott Steam- vagy VAC-döntéseken."
     },
     "cookies": {
       "title": "Sütik",

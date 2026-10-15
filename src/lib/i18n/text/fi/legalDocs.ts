@@ -7,17 +7,15 @@ export const legalDocs: TextBag["legalDocs"] = {
     "definitionsTitle": "Määritelmät",
     "definitions": "Näissä Ehdoissa ”A.C.E.” ja ”me” tarkoittavat A.C.E. Competitions Ltd:tä. ”Sivusto” tarkoittaa ace-platform.gg:tä. ”Tili” tarkoittaa Steam-kirjautumisella luotua A.C.E.-profiilia. ”Tilaus” tarkoittaa Free-, Plus- tai Premium-tasoa. ”Sääntökirja” tarkoittaa kilpailusääntöjä osoitteessa /rules. ”Admin” tarkoittaa henkilökunnan jäsentä, joka soveltaa Sääntökirjaa tapahtumassa.",
     "suspensionTitle": "Tilin rajoitukset ja jäädytys",
-    "suspension": "Voimme varoittaa, rajoittaa, jäädyttää tai sulkea Tilin, joka rikkoo näitä Ehtoja tai Sääntökirjaa, esimerkiksi huijaamisen, tilin jakamisen, porttikiellon kiertämisen, häirinnän tai petoksen vuoksi. Käynnissä olevan ottelun ulkopuolella kerromme syyn ja annamme 48 tuntia aikaa vastata ennen jäädytyksen alkua. Kiireellisissä tapauksissa jäädytys alkaa ensin ja tarkistus seuraa. Maksullinen tilaus ei koskaan suojaa Tiliä rajoituksilta.",
+    "suspension": "Voimme varoittaa, rajoittaa, jäädyttää tai sulkea Tilin, joka rikkoo näitä Ehtoja tai Sääntökirjaa, esimerkiksi huijaamisen, tilin jakamisen, porttikiellon kiertämisen, häirinnän tai petoksen vuoksi. Maksullinen tilaus ei koskaan suojaa Tiliä rajoituksilta.",
     "disputesTitle": "Sääntöpäätökset ja valitukset",
-    "disputes": "Otteluriidat ja rangaistukset noudattavat Sääntökirjan kohtia 15 ja 16. Voit valittaa Tiliäsi koskevasta päätöksestä 48 tunnin kuluessa sähköpostitse osoitteeseen support@ace-platform.gg SteamID:si ja todisteidesi kanssa. Valituksen käsittelee henkilökunnan jäsen, joka ei tehnyt ensimmäistä päätöstä, ja hän kertoo lopputuloksen ja perustelut. Tämä ei rajoita maasi lain mukaisia oikeuksiasi.",
+    "disputes": "Otteluriidat ja rangaistukset noudattavat Sääntökirjan kohtia 15 ja 16. Voit valittaa Tiliäsi koskevasta päätöksestä sähköpostitse osoitteeseen support@ace-platform.gg SteamID:si ja todisteidesi kanssa. Valituksen käsittelee henkilökunnan jäsen, joka ei tehnyt ensimmäistä päätöstä, ja hän kertoo lopputuloksen ja perustelut. Tämä ei rajoita maasi lain mukaisia oikeuksiasi.",
     "changesTitle": "Näiden Ehtojen muutokset",
     "changes": "Voimme päivittää näitä Ehtoja. Jokainen uusi versio julkaistaan tällä sivulla uudella voimaantulopäivällä. Olennainen muutos tulee voimaan 7 päivän kuluttua julkaisusta eikä koskaan koske jo alkanutta maksujaksoa.",
     "languageTitle": "Kieli",
     "language": "Nämä Ehdot on laadittu englanniksi. Käännökset ovat käytön helpottamiseksi. Jos käännös ja englanninkielinen teksti eroavat, englanninkielinen teksti on ratkaiseva.",
     "retentionTitle": "Tietojen säilytys",
-    "retention": "Tilin tietoja säilytetään niin kauan kuin Tili on olemassa. Istunto päättyy uloskirjautumiseen tai vanhenemiseen. Jos pyydät Tilin poistamista, poistamme tietosi 30 päivän kuluessa, lukuun ottamatta tietoja, jotka meidän on säilytettävä lakisääteisen velvoitteen tai voimassa olevan porttikiellon vuoksi, ja vain niin kauan kuin se on tarpeen.",
-    "ageTitle": "Ikäraja",
-    "age": "Sivusto on tarkoitettu 16 vuotta täyttäneille. Emme tietoisesti luo Tilejä nuoremmille lapsille. Jos uskot, että alle 16-vuotiaalla lapsella on Tili, ota yhteyttä, niin poistamme sen."
+    "retention": "Tilin tietoja säilytetään niin kauan kuin Tili on olemassa. Istunto päättyy uloskirjautumiseen tai vanhenemiseen.",
   },
   "translationNotice": "Tämä sivu on käännös, joka tarjotaan avuksi. Jos käännös ja englanninkielinen teksti eroavat, sovelletaan englanninkielistä tekstiä.",
   "terms": {
@@ -38,7 +36,7 @@ export const legalDocs: TextBag["legalDocs"] = {
       "eligibility": {
         "title": "2. Kelpoisuus ja tilit",
         "paragraphs": [
-          "Sinun on oltava vähintään 16-vuotias tai vanhempi, jos maasi laki tai tapahtumasivu sitä edellyttää. Jos olet alle 18-vuotias, tarvitset vanhemman tai huoltajan luvan maksullisen tilauksen ostamiseen. Tilit luodaan vain virallisella Steam OpenID -kirjautumisella, yksi Tili henkilöä kohden. A.C.E. ei koskaan kysy Steam-salasanaasi."
+          "Tilit luodaan vain virallisella Steam OpenID -kirjautumisella, yksi Tili henkilöä kohden. A.C.E. ei koskaan kysy Steam-salasanaasi."
         ]
       },
       "notActive": {
@@ -131,7 +129,7 @@ export const legalDocs: TextBag["legalDocs"] = {
     "rights": {
       "title": "Oikeutesi",
       "before": "Jos olet alueella, jolla on henkilötieto-oikeuksia, voit pyytää A.C.E.-tilitietojesi tarkastamista, korjaamista tai poistamista lähettämällä sähköpostia osoitteeseen",
-      "after": ". Vastaamme 30 päivän kuluessa. Sivuston tilin poistaminen ei muuta Valven tekemiä Steam- tai VAC-päätöksiä."
+      "after": ". Sivuston tilin poistaminen ei muuta Valven tekemiä Steam- tai VAC-päätöksiä."
     },
     "cookies": {
       "title": "Evästeet",

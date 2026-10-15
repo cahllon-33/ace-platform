@@ -10,7 +10,6 @@ export const RB_PL: RulebookText = {
       "Sędziowie mogą rozstrzygać sytuacje nieprzewidziane w regulaminie, kierując się zasadami fair play i duchem przepisów. Takie decyzje są dokumentowane i publikowane wraz z wynikiem meczu."
     ],
     [
-      "Gracze muszą mieć co najmniej 16 lat lub więcej, jeśli wyższy wiek minimalny określa strona wydarzenia lub prawo lokalne. Sędziowie mogą zażądać potwierdzenia wieku przed wydaniem nagrody.",
       "Gracz nie może być objęty aktywnym zawieszeniem A.C.E., a na używanym przez niego koncie Steam nie może ciążyć blokada gry nałożona w ciągu ostatnich 2 lat.",
       "Pracownicy organizatora i sędziowie nie mogą grać w wydarzeniu, które obsługują.",
       "Limity regionu lub rankingu ustala się dla każdego wydarzenia i publikuje przed otwarciem rejestracji. Gracz spoza tych limitów nie może grać, również jako rezerwowy."
@@ -98,9 +97,8 @@ export const RB_PL: RulebookText = {
       "Protest może złożyć tylko kapitan — w ciągu 30 minut od zakończenia danej mapy i z dowodami (tick dema, zrzut ekranu lub klip).",
       "Kontynuowanie gry po znanym problemie bez jego zgłoszenia oznacza akceptację sytuacji dla już rozegranych rund.",
       "Sędzia rozstrzyga protest i publikuje decyzję wraz z uzasadnieniem. W czasie rozpatrywania protestu drużyny grają zgodnie z harmonogramem, chyba że sędzia postanowi inaczej.",
-      "Odwołanie można złożyć w ciągu 48 godzin od decyzji. Rozpatruje je członek organizatora, który nie podjął pierwotnej decyzji. Decyzja w sprawie odwołania jest ostateczna.",
-      "Kary za naruszenie uczciwości (sekcja 14) mogą zostać nałożone również po zakończeniu wydarzenia, jeśli dowody pojawią się później.",
-      "Poza trwającym meczem gracz poznaje powód i dowody przed rozpoczęciem zawieszenia lub bana i może odpowiedzieć w ciągu 48 godzin. W pilnych sprawach dotyczących uczciwości zawieszenie zaczyna się od razu, a weryfikacja następuje później."
+      "Od decyzji można złożyć odwołanie. Rozpatruje je członek organizatora, który nie podjął pierwotnej decyzji. Decyzja w sprawie odwołania jest ostateczna.",
+      "Kary za naruszenie uczciwości (sekcja 14) mogą zostać nałożone również po zakończeniu wydarzenia, jeśli dowody pojawią się później."
     ],
     [
       "Kary można łączyć. Ostrzeżenie pozostaje w historii drużyny do końca wydarzenia; pozostałe kary pozostają w rejestrze przez 12 miesięcy.",

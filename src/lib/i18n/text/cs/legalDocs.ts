@@ -7,17 +7,15 @@ export const legalDocs: TextBag["legalDocs"] = {
     "definitionsTitle": "Definice",
     "definitions": "V těchto Podmínkách „A.C.E.“, „my“ znamená A.C.E. Competitions Ltd. „Web“ znamená ace-platform.gg. „Účet“ znamená profil A.C.E. vytvořený přihlášením přes Steam. „Plán“ znamená Free, Plus nebo Premium. „Pravidla“ znamenají soutěžní pravidla na /rules. „Admin“ znamená člena týmu, který pravidla uplatňuje na akci.",
     "suspensionTitle": "Omezení a pozastavení účtu",
-    "suspension": "Účet, který porušuje tyto Podmínky nebo Pravidla, například podváděním, sdílením účtu, obcházením banu, obtěžováním nebo podvodem, můžeme varovat, omezit, pozastavit nebo zrušit. Mimo probíhající zápas ti sdělíme důvod a dáme ti 48 hodin na odpověď, než pozastavení začne. V naléhavých případech začne pozastavení hned a přezkum následuje. Placený plán nikdy nechrání účet před omezením.",
+    "suspension": "Účet, který porušuje tyto Podmínky nebo Pravidla, například podváděním, sdílením účtu, obcházením banu, obtěžováním nebo podvodem, můžeme varovat, omezit, pozastavit nebo zrušit. Placený plán nikdy nechrání účet před omezením.",
     "disputesTitle": "Rozhodnutí o pravidlech a odvolání",
-    "disputes": "Spory o zápasy a tresty se řídí oddíly 15 a 16 Pravidel. Proti rozhodnutí o svém účtu se můžeš odvolat do 48 hodin e-mailem na support@ace-platform.gg se svým SteamID a důkazy. Odvolání posoudí člen týmu, který nevydal první rozhodnutí, a sdělí ti výsledek i důvod. Tím nejsou dotčena práva, která máš podle zákonů své země.",
+    "disputes": "Spory o zápasy a tresty se řídí oddíly 15 a 16 Pravidel. Proti rozhodnutí o svém účtu se můžeš odvolat e-mailem na support@ace-platform.gg se svým SteamID a důkazy. Odvolání posoudí člen týmu, který nevydal první rozhodnutí, a sdělí ti výsledek i důvod. Tím nejsou dotčena práva, která máš podle zákonů své země.",
     "changesTitle": "Změny těchto Podmínek",
     "changes": "Tyto Podmínky můžeme aktualizovat. Každá nová verze se zveřejní na této stránce s novým datem účinnosti. Podstatná změna nabývá účinnosti 7 dní po zveřejnění a nikdy se nevztahuje na již započaté platební období.",
     "languageTitle": "Jazyk",
     "language": "Tyto Podmínky jsou napsány v angličtině. Překlady slouží pro pohodlí. Pokud se překlad a anglický text liší, platí anglický text.",
     "retentionTitle": "Uchovávání údajů",
-    "retention": "Údaje účtu uchováváme, dokud účet existuje. Relace končí odhlášením nebo vypršením. Pokud požádáš o smazání účtu, odstraníme tvé údaje do 30 dní, kromě údajů, které musíme uchovat ze zákona nebo k vymáhání aktivního banu, a jen po nezbytnou dobu.",
-    "ageTitle": "Věková hranice",
-    "age": "Web je určen osobám od 16 let. Vědomě nevytváříme účty pro mladší děti. Pokud se domníváš, že účet má dítě mladší 16 let, kontaktuj nás a účet smažeme."
+    "retention": "Údaje účtu uchováváme, dokud účet existuje. Relace končí odhlášením nebo vypršením.",
   },
   translationNotice:
     "Tato stránka je překladem poskytnutým pro vaše pohodlí. Pokud se překlad a anglický text liší, platí anglický text.",
@@ -40,7 +38,7 @@ export const legalDocs: TextBag["legalDocs"] = {
       eligibility: {
         title: "2. Způsobilost a účty",
         paragraphs: [
-          "Musí ti být alespoň 16 let, nebo více, pokud to vyžaduje zákon tvé země nebo stránka akce. Pokud je ti méně než 18 let, potřebuješ ke koupi placeného plánu svolení rodiče nebo zákonného zástupce. Účty se vytvářejí jen oficiálním přihlášením Steam OpenID, jeden účet na osobu. A.C.E. nikdy nežádá heslo ke Steamu.",
+          "Účty se vytvářejí jen oficiálním přihlášením Steam OpenID, jeden účet na osobu. A.C.E. nikdy nežádá heslo ke Steamu.",
         ],
       },
       notActive: {
@@ -140,7 +138,7 @@ export const legalDocs: TextBag["legalDocs"] = {
       before:
         "Pokud se nacházíte v oblasti, kde platí práva týkající se osobních údajů, můžete požádat o přístup k údajům svého účtu A.C.E., jejich opravu nebo výmaz e-mailem na adresu",
       after:
-        ". Odpovídáme do 30 dní. Smazání účtu na webu nemění žádné rozhodnutí Steamu nebo VAC vydané společností Valve.",
+        ". Smazání účtu na webu nemění žádné rozhodnutí Steamu nebo VAC vydané společností Valve.",
     },
     cookies: {
       title: "Soubory cookie",

@@ -7,17 +7,15 @@ export const legalDocs: TextBag["legalDocs"] = {
     "definitionsTitle": "定义",
     "definitions": "在本条款中，“A.C.E.”和“我们”指 A.C.E. Competitions Ltd.。“本网站”指 ace-platform.gg。“账号”指通过 Steam 登录创建的 A.C.E. 资料。“方案”指 Free、Plus 或 Premium。“规则手册”指 /rules 上的竞技规则手册。“管理员”指在赛事中执行规则手册的工作人员。",
     "suspensionTitle": "账号限制与停用",
-    "suspension": "对于违反本条款或规则手册的账号，例如作弊、共享账号、规避封禁、骚扰或欺诈，我们可以警告、限制、停用或关闭。比赛进行时除外，在停用开始前，我们会告知原因并给你 48 小时答复。紧急情况下先停用，随后审核。付费方案绝不能使账号免受限制。",
+    "suspension": "对于违反本条款或规则手册的账号，例如作弊、共享账号、规避封禁、骚扰或欺诈，我们可以警告、限制、停用或关闭。付费方案绝不能使账号免受限制。",
     "disputesTitle": "规则裁决与申诉",
-    "disputes": "比赛争议和处罚依据规则手册第 15 和第 16 节。你可以在 48 小时内发送邮件至 support@ace-platform.gg，附上 SteamID 和证据，对涉及你账号的决定提出申诉。由未参与初次决定的工作人员审核申诉，并告知结果和理由。这不限制你根据所在国家法律享有的任何权利。",
+    "disputes": "比赛争议和处罚依据规则手册第 15 和第 16 节。你可以发送邮件至 support@ace-platform.gg，附上 SteamID 和证据，对涉及你账号的决定提出申诉。由未参与初次决定的工作人员审核申诉，并告知结果和理由。这不限制你根据所在国家法律享有的任何权利。",
     "changesTitle": "本条款的变更",
     "changes": "我们可能更新本条款。每个新版本都会以新的生效日期发布在本页面。重大变更在发布 7 天后生效，且绝不适用于已开始的付费周期。",
     "languageTitle": "语言",
     "language": "本条款以英文撰写。译文仅为方便提供。若译文与英文文本不一致，以英文文本为准。",
     "retentionTitle": "数据保留",
-    "retention": "账号记录在账号存在期间保留。会话在你退出登录或过期时结束。如你要求删除账号，我们将在 30 天内删除你的记录，但因法定义务或执行有效封禁而必须保留的记录除外，且仅保留必要期限。",
-    "ageTitle": "年龄要求",
-    "age": "本网站面向 16 岁及以上人士。我们不会在知情的情况下为更小的儿童创建账号。如你认为有 16 岁以下的儿童拥有账号，请联系我们，我们会将其删除。"
+    "retention": "账号记录在账号存在期间保留。会话在你退出登录或过期时结束。",
   },
   "translationNotice": "本页面为便于阅读而提供的译文。如译文与英文原文不一致,以英文原文为准。",
   "terms": {
@@ -38,7 +36,7 @@ export const legalDocs: TextBag["legalDocs"] = {
       "eligibility": {
         "title": "2. 资格与账户",
         "paragraphs": [
-          "你必须年满 16 岁；如所在国家法律或赛事页面要求更高年龄，则须达到该年龄。未满 18 岁购买付费方案需获得父母或监护人许可。账号只能通过官方 Steam OpenID 登录创建，每人一个账号。A.C.E. 绝不会索要你的 Steam 密码。"
+          "账号只能通过官方 Steam OpenID 登录创建，每人一个账号。A.C.E. 绝不会索要你的 Steam 密码。"
         ]
       },
       "notActive": {
@@ -131,7 +129,7 @@ export const legalDocs: TextBag["legalDocs"] = {
     "rights": {
       "title": "你的权利",
       "before": "如果你所在地区赋予个人数据权利,你可以发送邮件至",
-      "after": "。我们会在 30 天内回复。删除网站账号不会改变 Valve 作出的任何 Steam 或 VAC 决定。"
+      "after": "。删除网站账号不会改变 Valve 作出的任何 Steam 或 VAC 决定。"
     },
     "cookies": {
       "title": "Cookie",

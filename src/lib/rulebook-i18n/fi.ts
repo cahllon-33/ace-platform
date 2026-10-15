@@ -10,7 +10,6 @@ export const RB_FI: RulebookText = {
       "Tuomarit voivat ratkaista tilanteet, joita tämä sääntökirja ei kata, reilun pelin ja sääntöjen hengen mukaisesti. Tällaiset päätökset kirjataan ja julkaistaan ottelun tuloksen yhteydessä."
     ],
     [
-      "Pelaajien on oltava vähintään 16-vuotiaita tai tapahtumasivun tai paikallisen lain edellyttämää vanhempia, jos vaatimus on korkeampi. Tuomarit voivat pyytää todistuksen iästä ennen palkinnon luovuttamista.",
       "Pelaajalla ei saa olla voimassa olevaa A.C.E.:n pelikieltoa, eikä hänen käyttämällään Steam-tilillä saa olla viimeisten 2 vuoden aikana annettua pelikieltoa.",
       "Järjestäjän henkilökunta ja tuomarit eivät saa pelata tapahtumassa, jota he hallinnoivat.",
       "Alue- tai rankingrajat määritetään tapahtumakohtaisesti ja julkaistaan ennen ilmoittautumisen alkua. Rajojen ulkopuolinen pelaaja ei saa pelata, ei edes varamiehenä."
@@ -98,9 +97,8 @@ export const RB_FI: RulebookText = {
       "Vain kapteeni voi tehdä protestin 30 minuutin kuluessa kyseisen kartan päättymisestä, ja siihen on liitettävä todisteet (demon tick, kuvakaappaus tai leike).",
       "Pelaamisen jatkaminen tunnetun ongelman jälkeen siitä ilmoittamatta tarkoittaa tilanteen hyväksymistä jo pelattujen erien osalta.",
       "Tuomari ratkaisee protestin ja julkaisee ratkaisun perusteluineen. Joukkueet jatkavat pelejään aikataulun mukaisesti protestin ollessa käsittelyssä, ellei tuomari toisin päätä.",
-      "Päätöksestä voi valittaa 48 tunnin kuluessa. Valituksen käsittelee järjestäjän jäsen, joka ei tehnyt alkuperäistä päätöstä. Valituspäätös on lopullinen.",
-      "Rehellisyyteen liittyviä rangaistuksia (kohta 14) voidaan määrätä myös tapahtuman päätyttyä, jos todisteita löytyy myöhemmin.",
-      "Käynnissä olevan ottelun ulkopuolella pelaajalle kerrotaan syy ja todisteet ennen jäädytyksen tai porttikiellon alkua, ja hän voi vastata 48 tunnin kuluessa. Kiireellisissä reiluuteen liittyvissä tapauksissa jäädytys alkaa ensin ja tarkistus seuraa."
+      "Päätöksestä voi valittaa. Valituksen käsittelee järjestäjän jäsen, joka ei tehnyt alkuperäistä päätöstä. Valituspäätös on lopullinen.",
+      "Rehellisyyteen liittyviä rangaistuksia (kohta 14) voidaan määrätä myös tapahtuman päätyttyä, jos todisteita löytyy myöhemmin."
     ],
     [
       "Rangaistuksia voidaan yhdistää. Varoitus pysyy joukkueen rekisterissä tapahtuman loppuun asti; muut rangaistukset pysyvät rekisterissä 12 kuukautta.",

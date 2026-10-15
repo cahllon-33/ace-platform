@@ -10,7 +10,6 @@ export const RB_HR: RulebookText = {
       "Suci mogu odlučivati o situacijama koje ovaj pravilnik ne pokriva, u skladu sa sportskim duhom i duhom pravila. Takve se odluke bilježe i objavljuju uz rezultat utakmice."
     ],
     [
-      "Igrači moraju imati najmanje 16 godina ili višu dob ako je propisuje stranica događaja ili mjerodavno pravo. Suci mogu zatražiti dokaz o dobi prije isplate nagrade.",
       "Igrač ne smije imati aktivnu A.C.E. zabranu, a Steam račun kojim se koristi ne smije imati zabranu igranja izrečenu u posljednje 2 godine.",
       "Osoblje organizatora i suci ne smiju igrati na događaju koji nadziru.",
       "Ograničenja po regiji ili rejtingu određuju se za svaki događaj i objavljuju prije otvaranja prijava. Igrač izvan tih ograničenja ne smije igrati, ni kao zamjena."
@@ -98,9 +97,8 @@ export const RB_HR: RulebookText = {
       "Prigovor podnosi samo kapetan, u roku od 30 minuta od kraja dotične mape, s dokazima (demo tick, snimka zaslona ili isječak).",
       "Momčad koja nakon poznatog problema nastavi igrati bez prijave prihvaća situaciju za već odigrane runde.",
       "Sudac odlučuje o prigovoru te objavljuje odluku i obrazloženje. Dok se prigovor razmatra, momčadi nastavljaju igrati prema rasporedu, osim ako sudac ne odluči drukčije.",
-      "Na odluku se može uložiti žalba u roku od 48 sati. Žalbu razmatra član organizatora koji nije donio prvotnu odluku. Odluka o žalbi je konačna.",
-      "Kazne za prekršaje protiv integriteta (odjeljak 14) mogu se izreći i nakon završetka događaja ako se dokazi pojave kasnije.",
-      "Izvan meča u tijeku igrač saznaje razlog i dokaze prije početka suspenzije ili zabrane i može odgovoriti u roku od 48 sati. U hitnim slučajevima narušavanja integriteta suspenzija počinje odmah, a provjera slijedi."
+      "Na odluku se može uložiti žalba. Žalbu razmatra član organizatora koji nije donio prvotnu odluku. Odluka o žalbi je konačna.",
+      "Kazne za prekršaje protiv integriteta (odjeljak 14) mogu se izreći i nakon završetka događaja ako se dokazi pojave kasnije."
     ],
     [
       "Kazne se mogu kombinirati. Opomena ostaje u evidenciji momčadi do kraja događaja; ostale kazne ostaju u evidenciji 12 mjeseci.",

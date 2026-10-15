@@ -5,7 +5,6 @@ import { createPortal } from "react-dom";
 import { useRouter } from "next/navigation";
 import { useAdminI18n } from "@/components/admin-locale";
 import {
-  ADMIN_COPILOT_LINES,
   formatPipelineUsd,
   type AdminPlayerRow,
   type AdminSecurity,
@@ -504,8 +503,8 @@ export function AdminCommandCenter({
             </button>
             {copilotReply ? <p className="ace-admin-copilot-reply">{copilotReply}</p> : null}
             <ul className="ace-admin-ticker" aria-live="polite">
-              {ADMIN_COPILOT_LINES.map((line) => (
-                <li key={line}>{line}</li>
+              {(["copilotLine1", "copilotLine2", "copilotLine3"] as const).map((key) => (
+                <li key={key}>{t(key)}</li>
               ))}
             </ul>
           </form>

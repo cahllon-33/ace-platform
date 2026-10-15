@@ -10,7 +10,6 @@ export const RB_PT_BR: RulebookText = {
       "Os árbitros podem decidir situações não previstas neste regulamento, orientados pelo jogo limpo e pelo espírito destas regras. Essas decisões são registradas e publicadas com o resultado da partida."
     ],
     [
-      "Os jogadores devem ter pelo menos 16 anos, ou a idade mínima definida pela página do evento ou pela lei local, se for maior. Os árbitros podem pedir comprovação de idade antes da entrega de um prêmio.",
       "Os jogadores não podem estar sob suspensão ativa da A.C.E., nem ter na conta Steam utilizada um banimento de jogo aplicado nos últimos 2 anos.",
       "A equipe do organizador e os árbitros não podem jogar em um evento que administram.",
       "Limites de região ou de rating são definidos por evento e publicados antes da abertura das inscrições. Um jogador fora desses limites não pode jogar, nem mesmo como reserva."
@@ -98,9 +97,8 @@ export const RB_PT_BR: RulebookText = {
       "Somente o capitão pode abrir uma disputa, em até 30 minutos após o fim do mapa afetado e com provas (tick da demo, captura de tela ou clipe).",
       "Continuar jogando após um problema conhecido sem apontá-lo equivale a aceitar a situação para os rounds já jogados.",
       "O árbitro decide a disputa e publica o resultado e o motivo. Os times seguem o cronograma enquanto a disputa estiver aberta, salvo decisão diferente do árbitro.",
-      "É possível recorrer em até 48 horas após a decisão. O recurso é analisado por um membro do organizador que não tomou a decisão original. A decisão do recurso é final.",
-      "Punições de integridade (seção 14) também podem ser aplicadas depois do fim de um evento, se surgirem provas mais tarde.",
-      "Fora de uma partida em curso, o jogador é informado do motivo e das provas antes de uma suspensão ou banimento começar e pode responder no prazo de 48 horas. Em casos urgentes de integridade, a suspensão começa primeiro e a revisão vem depois."
+      "É possível recorrer da decisão. O recurso é analisado por um membro do organizador que não tomou a decisão original. A decisão do recurso é final.",
+      "Punições de integridade (seção 14) também podem ser aplicadas depois do fim de um evento, se surgirem provas mais tarde."
     ],
     [
       "As punições podem ser combinadas. Uma advertência fica no histórico do time até o fim do evento; as demais punições ficam registradas por 12 meses.",

@@ -10,7 +10,6 @@ export const RB_SV: RulebookText = {
       "Domarna får avgöra situationer som denna regelbok inte täcker, vägledda av fair play och reglernas anda. Sådana beslut dokumenteras och publiceras tillsammans med matchresultatet."
     ],
     [
-      "Spelare måste vara minst 16 år, eller den högre minimiålder som evenemangssidan eller lokal lag anger. Domarna kan begära åldersbevis innan ett pris lämnas ut.",
       "Spelare får inte ha en aktiv avstängning från A.C.E., och det Steam-konto de använder får inte ha en spelavstängning som utfärdats under de senaste 2 åren.",
       "Arrangörens personal och domare får inte spela i ett evenemang som de administrerar.",
       "Region- eller rankinggränser fastställs per evenemang och publiceras innan anmälan öppnar. En spelare utanför gränserna får inte spela, inte ens som reserv."
@@ -98,9 +97,8 @@ export const RB_SV: RulebookText = {
       "Endast en kapten får lämna in en protest, inom 30 minuter efter att den berörda kartan avslutats och med bevis (demo-tick, skärmbild eller klipp).",
       "Att fortsätta spela efter ett känt problem utan att ta upp det innebär att situationen accepteras för de redan spelade rundorna.",
       "Domaren avgör protesten och publicerar beslutet och skälen. Lagen fortsätter spela enligt schemat medan en protest är öppen, om inte domaren beslutar annat.",
-      "Ett överklagande kan lämnas in inom 48 timmar efter beslutet. Det prövas av en medlem av arrangören som inte fattade det ursprungliga beslutet. Beslutet i överklagandet är slutgiltigt.",
-      "Integritetspåföljder (avsnitt 14) kan även utdömas efter att ett evenemang avslutats, om bevis hittas senare.",
-      "Utanför en pågående match får spelaren veta skälet och bevisen innan en avstängning eller bannlysning börjar och kan svara inom 48 timmar. I brådskande integritetsfall börjar avstängningen först och granskningen följer."
+      "Beslutet kan överklagas. Överklagandet prövas av en medlem av arrangören som inte fattade det ursprungliga beslutet. Beslutet i överklagandet är slutgiltigt.",
+      "Integritetspåföljder (avsnitt 14) kan även utdömas efter att ett evenemang avslutats, om bevis hittas senare."
     ],
     [
       "Påföljder kan kombineras. En varning ligger kvar i lagets register under resten av evenemanget; andra påföljder ligger kvar i 12 månader.",

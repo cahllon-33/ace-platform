@@ -10,7 +10,6 @@ export const RB_ID: RulebookText = {
       "Wasit dapat memutuskan situasi yang tidak diatur dalam buku peraturan ini, berpedoman pada permainan yang adil dan semangat aturan ini. Keputusan tersebut dicatat dan diumumkan bersama hasil pertandingan."
     ],
     [
-      "Pemain harus berusia minimal 16 tahun, atau usia minimum yang ditetapkan halaman acara atau hukum setempat jika lebih tinggi. Wasit dapat meminta bukti usia sebelum hadiah diserahkan.",
       "Pemain tidak boleh sedang menjalani skorsing aktif dari A.C.E., dan akun Steam yang digunakan tidak boleh memiliki larangan bermain yang dijatuhkan dalam 2 tahun terakhir.",
       "Staf penyelenggara dan wasit tidak boleh bermain di acara yang mereka kelola.",
       "Batasan wilayah atau rating ditetapkan per acara dan diumumkan sebelum pendaftaran dibuka. Pemain di luar batasan tidak boleh bermain, termasuk sebagai cadangan."
@@ -98,9 +97,8 @@ export const RB_ID: RulebookText = {
       "Hanya kapten yang dapat mengajukan sengketa, dalam 30 menit setelah peta terkait berakhir, disertai bukti (tick demo, tangkapan layar, atau klip).",
       "Melanjutkan permainan setelah mengetahui suatu masalah tanpa menyampaikannya dianggap menerima situasi tersebut untuk ronde yang telah dimainkan.",
       "Wasit memutuskan sengketa dan mengumumkan hasil serta alasannya. Tim tetap bermain sesuai jadwal selama sengketa berlangsung, kecuali wasit menyatakan lain.",
-      "Banding dapat diajukan dalam 48 jam setelah keputusan. Banding ditinjau oleh anggota penyelenggara yang tidak membuat keputusan awal. Keputusan banding bersifat final.",
-      "Hukuman integritas (bagian 14) juga dapat dijatuhkan setelah acara berakhir jika bukti ditemukan kemudian.",
-      "Di luar pertandingan yang sedang berlangsung, pemain diberi tahu alasan dan buktinya sebelum penangguhan atau larangan dimulai, dan dapat menanggapi dalam 48 jam. Dalam kasus integritas yang mendesak, penangguhan dimulai lebih dulu dan peninjauan menyusul."
+      "Banding dapat diajukan atas keputusan. Banding ditinjau oleh anggota penyelenggara yang tidak membuat keputusan awal. Keputusan banding bersifat final.",
+      "Hukuman integritas (bagian 14) juga dapat dijatuhkan setelah acara berakhir jika bukti ditemukan kemudian."
     ],
     [
       "Hukuman dapat digabungkan. Peringatan tetap tercatat dalam riwayat tim hingga akhir acara; hukuman lainnya tetap tercatat selama 12 bulan.",

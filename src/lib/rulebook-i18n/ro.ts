@@ -10,7 +10,6 @@ export const RB_RO: RulebookText = {
       "Arbitrii pot decide în situații neacoperite de acest regulament, în spiritul fair-play-ului și al regulilor. Aceste decizii sunt consemnate și publicate împreună cu rezultatul meciului."
     ],
     [
-      "Jucătorii trebuie să aibă cel puțin 16 ani sau vârsta mai mare cerută de pagina evenimentului ori de legislația locală. Arbitrii pot solicita dovada vârstei înainte de acordarea unui premiu.",
       "Jucătorul nu trebuie să aibă o suspendare A.C.E. activă, iar contul Steam folosit nu trebuie să aibă o interdicție de joc aplicată în ultimii 2 ani.",
       "Personalul organizatorului și arbitrii nu pot juca într-un eveniment pe care îl supraveghează.",
       "Limitele de regiune sau de rating se stabilesc pentru fiecare eveniment și se publică înainte de deschiderea înscrierilor. Un jucător din afara acestor limite nu poate juca, nici ca rezervă."
@@ -98,9 +97,8 @@ export const RB_RO: RulebookText = {
       "Contestația se depune doar de căpitan, în 30 de minute de la finalul hărții în cauză, cu dovezi (demo tick, captură de ecran sau clip).",
       "Echipa care continuă să joace după o problemă cunoscută fără să o semnaleze acceptă situația pentru rundele deja jucate.",
       "Arbitrul decide asupra contestației și publică decizia și motivarea. Cât timp contestația este analizată, echipele continuă să joace conform programului, dacă arbitrul nu decide altfel.",
-      "Decizia poate fi atacată în 48 de ore. Apelul este analizat de un membru al organizatorului care nu a luat decizia inițială. Decizia în apel este definitivă.",
-      "Sancțiunile pentru abaterile de la integritate (secțiunea 14) pot fi aplicate și după încheierea evenimentului, dacă dovezile apar ulterior.",
-      "În afara unui meci în desfășurare, jucătorul află motivul și dovezile înainte de începerea unei suspendări sau interdicții și poate răspunde în 48 de ore. În cazurile urgente de integritate, suspendarea începe imediat, iar analiza urmează."
+      "Decizia poate fi atacată. Apelul este analizat de un membru al organizatorului care nu a luat decizia inițială. Decizia în apel este definitivă.",
+      "Sancțiunile pentru abaterile de la integritate (secțiunea 14) pot fi aplicate și după încheierea evenimentului, dacă dovezile apar ulterior."
     ],
     [
       "Sancțiunile pot fi cumulate. Avertismentul rămâne în evidența echipei până la sfârșitul evenimentului; celelalte sancțiuni rămân în evidență 12 luni.",

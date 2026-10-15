@@ -7,17 +7,15 @@ export const legalDocs: TextBag["legalDocs"] = {
     "definitionsTitle": "Definições",
     "definitions": "Nestes Termos, «A.C.E.», «nós» significa A.C.E. Competitions Ltd. «Site» significa ace-platform.gg. «Conta» significa o perfil A.C.E. criado através do início de sessão Steam. «Plano» significa Free, Plus ou Premium. «Regulamento» significa o Regulamento Competitivo em /rules. «Admin» significa um membro da equipa que aplica o Regulamento num evento.",
     "suspensionTitle": "Restrições e suspensão de conta",
-    "suspension": "Podemos avisar, restringir, suspender ou encerrar uma Conta que viole estes Termos ou o Regulamento, por exemplo por batota, partilha de conta, evasão de banimento, assédio ou fraude. Fora de uma partida em curso, indicamos-te o motivo e damos-te 48 horas para responder antes de a suspensão começar. Em casos urgentes, a suspensão começa primeiro e a revisão vem depois. Um plano pago nunca protege uma Conta de uma restrição.",
+    "suspension": "Podemos avisar, restringir, suspender ou encerrar uma Conta que viole estes Termos ou o Regulamento, por exemplo por batota, partilha de conta, evasão de banimento, assédio ou fraude. Um plano pago nunca protege uma Conta de uma restrição.",
     "disputesTitle": "Decisões sobre regras e recursos",
-    "disputes": "Disputas de partidas e penalizações seguem as secções 15 e 16 do Regulamento. Podes recorrer de uma decisão sobre a tua Conta no prazo de 48 horas, enviando email para support@ace-platform.gg com o teu SteamID e as tuas provas. Um membro da equipa que não tomou a primeira decisão analisa o recurso e comunica-te o resultado e o motivo. Isto não limita qualquer direito que tenhas segundo a lei do teu país.",
+    "disputes": "Disputas de partidas e penalizações seguem as secções 15 e 16 do Regulamento. Podes recorrer de uma decisão sobre a tua Conta, enviando email para support@ace-platform.gg com o teu SteamID e as tuas provas. Um membro da equipa que não tomou a primeira decisão analisa o recurso e comunica-te o resultado e o motivo. Isto não limita qualquer direito que tenhas segundo a lei do teu país.",
     "changesTitle": "Alterações a estes Termos",
     "changes": "Podemos atualizar estes Termos. Cada nova versão é publicada nesta página com uma nova data de entrada em vigor. Uma alteração relevante entra em vigor 7 dias após a publicação e nunca se aplica a um período de pagamento já iniciado.",
     "languageTitle": "Idioma",
     "language": "Estes Termos estão redigidos em inglês. As traduções são fornecidas por conveniência. Se uma tradução e o texto em inglês divergirem, prevalece o texto em inglês.",
     "retentionTitle": "Conservação de dados",
-    "retention": "Os registos da Conta são mantidos enquanto a tua Conta existir. Uma sessão termina quando terminas sessão ou quando expira. Se pedires a eliminação da Conta, removemos os teus registos no prazo de 30 dias, exceto os que tenhamos de manter por obrigação legal ou para aplicar um banimento ativo, e apenas enquanto isso durar.",
-    "ageTitle": "Idade mínima",
-    "age": "O Site destina-se a pessoas com 16 anos ou mais. Não criamos conscientemente Contas para crianças mais novas. Se achares que uma criança com menos de 16 anos tem uma Conta, contacta-nos e eliminá-la-emos."
+    "retention": "Os registos da Conta são mantidos enquanto a tua Conta existir. Uma sessão termina quando terminas sessão ou quando expira.",
   },
   translationNotice:
     "Esta página é uma tradução disponibilizada por conveniência. Se a tradução e o texto em inglês divergirem, prevalece o texto em inglês.",
@@ -40,7 +38,7 @@ export const legalDocs: TextBag["legalDocs"] = {
       eligibility: {
         title: "2. Elegibilidade e contas",
         paragraphs: [
-          "Tens de ter pelo menos 16 anos, ou mais se a lei do teu país ou a página de um evento o exigir. Se tiveres menos de 18 anos, precisas da autorização de um pai, mãe ou tutor para comprar um plano pago. As Contas são criadas apenas através do início de sessão oficial Steam OpenID, uma Conta por pessoa. A A.C.E. nunca pede a tua palavra-passe Steam.",
+          "As Contas são criadas apenas através do início de sessão oficial Steam OpenID, uma Conta por pessoa. A A.C.E. nunca pede a tua palavra-passe Steam.",
         ],
       },
       notActive: {
@@ -140,7 +138,7 @@ export const legalDocs: TextBag["legalDocs"] = {
       before:
         "Se estiver numa região com direitos sobre dados pessoais, pode pedir o acesso, a retificação ou a eliminação dos dados da sua conta A.C.E. enviando um e-mail para",
       after:
-        ". Respondemos no prazo de 30 dias. Eliminar uma Conta do site não altera nenhuma decisão Steam ou VAC tomada pela Valve.",
+        ". Eliminar uma Conta do site não altera nenhuma decisão Steam ou VAC tomada pela Valve.",
     },
     cookies: {
       title: "Cookies",

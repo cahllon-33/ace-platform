@@ -162,12 +162,6 @@ export function formatPipelineUsd(cents: number) {
   return `$${(cents / 100).toFixed(2)} USD`;
 }
 
-export const ADMIN_COPILOT_LINES = [
-  "🤖 AI Engine: Scanning active server kernels... 100% integrity secured.",
-  "📊 Data Insight: Predictive analytics forecast optimal matchmaking queue speeds from EU West node relays.",
-  "🛡️ Shield Logic: Zero memory driver variations captured in last telemetry frame cycle.",
-] as const;
-
 export function cloneAdminPlayers() {
   return ADMIN_PLAYERS.map((player) => ({ ...player }));
 }

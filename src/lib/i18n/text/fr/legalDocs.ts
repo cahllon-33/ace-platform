@@ -7,17 +7,15 @@ export const legalDocs: TextBag["legalDocs"] = {
     "definitionsTitle": "Définitions",
     "definitions": "Dans les présentes Conditions, « A.C.E. », « nous » désignent A.C.E. Competitions Ltd. « Site » désigne ace-platform.gg. « Compte » désigne le profil A.C.E. créé via la connexion Steam. « Formule » désigne Free, Plus ou Premium. « Règlement » désigne le Règlement compétitif sur /rules. « Admin » désigne un membre de l’équipe qui applique le Règlement à un événement.",
     "suspensionTitle": "Restrictions et suspension de compte",
-    "suspension": "Nous pouvons avertir, restreindre, suspendre ou fermer un Compte qui enfreint ces Conditions ou le Règlement, par exemple pour triche, partage de compte, contournement de bannissement, harcèlement ou fraude. Hors match en cours, nous t’indiquons le motif et te laissons 48 heures pour répondre avant le début d’une suspension. En cas d’urgence, la suspension commence d’abord et l’examen suit. Une formule payante ne protège jamais un Compte d’une restriction.",
+    "suspension": "Nous pouvons avertir, restreindre, suspendre ou fermer un Compte qui enfreint ces Conditions ou le Règlement, par exemple pour triche, partage de compte, contournement de bannissement, harcèlement ou fraude. Une formule payante ne protège jamais un Compte d’une restriction.",
     "disputesTitle": "Décisions et recours",
-    "disputes": "Les litiges de match et les sanctions suivent les sections 15 et 16 du Règlement. Tu peux faire appel d’une décision concernant ton Compte sous 48 heures en écrivant à support@ace-platform.gg avec ton SteamID et tes preuves. Un membre de l’équipe qui n’a pas pris la première décision examine l’appel et t’indique le résultat et le motif. Cela ne limite aucun droit dont tu disposes selon la loi de ton pays.",
+    "disputes": "Les litiges de match et les sanctions suivent les sections 15 et 16 du Règlement. Tu peux faire appel d’une décision concernant ton Compte en écrivant à support@ace-platform.gg avec ton SteamID et tes preuves. Un membre de l’équipe qui n’a pas pris la première décision examine l’appel et t’indique le résultat et le motif. Cela ne limite aucun droit dont tu disposes selon la loi de ton pays.",
     "changesTitle": "Modifications des présentes Conditions",
     "changes": "Nous pouvons mettre à jour ces Conditions. Chaque nouvelle version est publiée sur cette page avec une nouvelle date d’effet. Une modification importante prend effet 7 jours après sa publication et ne s’applique jamais à une période de paiement déjà commencée.",
     "languageTitle": "Langue",
     "language": "Ces Conditions sont rédigées en anglais. Les traductions sont fournies par commodité. En cas de différence entre une traduction et le texte anglais, le texte anglais prévaut.",
     "retentionTitle": "Conservation des données",
-    "retention": "Les données du Compte sont conservées tant que ton Compte existe. Une session prend fin à la déconnexion ou à son expiration. Si tu demandes la suppression de ton Compte, nous supprimons tes données sous 30 jours, sauf celles que nous devons garder pour une obligation légale ou pour appliquer un bannissement actif, et seulement aussi longtemps que nécessaire.",
-    "ageTitle": "Âge minimum",
-    "age": "Le Site s’adresse aux personnes de 16 ans ou plus. Nous ne créons pas sciemment de Comptes pour des enfants plus jeunes. Si tu penses qu’un enfant de moins de 16 ans a un Compte, contacte-nous et nous le supprimerons."
+    "retention": "Les données du Compte sont conservées tant que ton Compte existe. Une session prend fin à la déconnexion ou à son expiration.",
   },
   translationNotice:
     "Cette page est une traduction fournie pour plus de commodité. En cas de divergence entre la traduction et le texte anglais, le texte anglais prévaut.",
@@ -40,7 +38,7 @@ export const legalDocs: TextBag["legalDocs"] = {
       eligibility: {
         title: "2. Conditions d’accès et comptes",
         paragraphs: [
-          "Tu dois avoir au moins 16 ans, ou plus si la loi de ton pays ou une page d’événement l’exige. Si tu as moins de 18 ans, il te faut l’autorisation d’un parent ou tuteur pour acheter une formule payante. Les Comptes sont créés uniquement via la connexion officielle Steam OpenID, un Compte par personne. A.C.E. ne demande jamais ton mot de passe Steam.",
+          "Les Comptes sont créés uniquement via la connexion officielle Steam OpenID, un Compte par personne. A.C.E. ne demande jamais ton mot de passe Steam.",
         ],
       },
       notActive: {
@@ -140,7 +138,7 @@ export const legalDocs: TextBag["legalDocs"] = {
       before:
         "Si vous vous trouvez dans une région qui reconnaît des droits sur les données personnelles, vous pouvez demander l’accès, la rectification ou la suppression des données de votre compte A.C.E. en écrivant à",
       after:
-        ". Nous répondons sous 30 jours. Supprimer un Compte du site ne modifie aucune décision Steam ou VAC prise par Valve.",
+        ". Supprimer un Compte du site ne modifie aucune décision Steam ou VAC prise par Valve.",
     },
     cookies: {
       title: "Cookies",

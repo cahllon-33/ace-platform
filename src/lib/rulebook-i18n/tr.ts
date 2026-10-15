@@ -10,7 +10,6 @@ export const RB_TR: RulebookText = {
       "Hakemler, bu kural kitabının kapsamadığı durumlara adil oyun ilkesi ve kuralların ruhu doğrultusunda karar verebilir. Bu kararlar kayda geçirilir ve maç sonucuyla birlikte yayımlanır."
     ],
     [
-      "Oyuncular en az 16 yaşında olmalıdır; etkinlik sayfası veya yerel mevzuat daha yüksek bir yaş belirlemişse o geçerlidir. Hakemler bir ödülü teslim etmeden önce yaş kanıtı isteyebilir.",
       "Oyuncular, aktif bir A.C.E. uzaklaştırması altında olmamalı ve kullandıkları Steam hesabında son 2 yıl içinde verilmiş bir oyun yasağı bulunmamalıdır.",
       "Organizatör personeli ve hakemler, yönettikleri bir etkinlikte oynayamaz.",
       "Bölge veya puan sınırları her etkinlik için belirlenir ve kayıtlar açılmadan önce yayımlanır. Sınırların dışında kalan bir oyuncu, yedek olarak da oynayamaz."
@@ -98,9 +97,8 @@ export const RB_TR: RulebookText = {
       "İtirazı yalnızca kaptan yapabilir; ilgili haritanın bitiminden itibaren 30 dakika içinde ve kanıtla (demo tick'i, ekran görüntüsü veya klip) yapılmalıdır.",
       "Bilinen bir sorundan sonra bunu dile getirmeden oynamaya devam etmek, oynanmış raundlar için durumun kabul edildiği anlamına gelir.",
       "Hakem itirazı karara bağlar ve sonucu gerekçesiyle yayımlar. Hakem aksini belirtmedikçe takımlar, itiraz açıkken programlarına göre oynamaya devam eder.",
-      "Karara karşı 48 saat içinde temyize gidilebilir. Temyiz, ilk kararı vermemiş bir organizatör üyesi tarafından incelenir. Temyiz kararı kesindir.",
-      "Kanıt sonradan ortaya çıkarsa dürüstlük cezaları (bölüm 14) etkinlik bittikten sonra da verilebilir.",
-      "Devam eden bir maç dışında oyuncuya, askıya alma veya yasak başlamadan önce neden ve kanıtlar bildirilir ve oyuncu 48 saat içinde yanıt verebilir. Acil dürüstlük vakalarında askıya alma önce başlar, inceleme ardından gelir."
+      "Karara karşı temyize gidilebilir. Temyiz, ilk kararı vermemiş bir organizatör üyesi tarafından incelenir. Temyiz kararı kesindir.",
+      "Kanıt sonradan ortaya çıkarsa dürüstlük cezaları (bölüm 14) etkinlik bittikten sonra da verilebilir."
     ],
     [
       "Cezalar birlikte uygulanabilir. Uyarı, etkinlik sonuna kadar takımın sicilinde kalır; diğer cezalar 12 ay boyunca sicilde kalır.",
