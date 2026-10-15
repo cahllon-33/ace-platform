@@ -80,7 +80,7 @@ export const EN = {
  preRegisterBody: "Early Access Priority Calibration Queue Opening Soon via Steam Web Authorization.",
  closeModal: "Close",
  membershipDisclosure:
-    "Display prices are locked at Plus $4/mo and Premium $7/mo. Checkout, prize funding, emailed receipts, Discord webhooks and ranked queues are not live on this website. Thank-you letters are shown on the site, not emailed. The ranked queue is closed, so no ranked match is running.",
+    "Prices are fixed: Free $0, Plus $4/mo, Premium $7/mo. Billing opens soon; nothing is charged today. Paid plans never buy competitive advantage.",
  integrity: "INTEGRITY",
  uiHeartbeat: "UI HEARTBEAT: LIVE",
  aiInfra: "AI INFRASTRUCTURE · COMING SOON",
@@ -338,24 +338,24 @@ export const EN = {
  "To the extent permitted by law, A.C.E. is not liable for lost rank, lost cosmetics that were never real items, or third-party Steam or CS2 outages. Mandatory consumer rights in your country are not excluded where they cannot be waived. Contact: support@ace-platform.gg.",
  hubKicker: "MASTER LOBBY WORKSPACE",
  hubTitle: "Standalone competitive shell",
- hubBadge: "CORE INFRASTRUCTURE: OPERATIONAL",
+ hubBadge: "PUBLIC SITE · ONLINE",
  hubLede:
- "This homepage is the master public workspace for A.C.E. It already holds the Match Found 5v5 array, the fixed 3D rank turntable and the interactive skin-reward category. Those surfaces are layout and account-preview tools. Ranked queues, live CS2 servers, Anti-Cheat downloads, payments and prizes are not active.",
+ "Your home for A.C.E. competition: squads, ranks, tournaments and the road to the competitive beta.",
  hubNote:
- "Specification chips and the operational badge describe this public lobby shell. There is no live 128-tick product, no live calibrated matchmaking and no live drop engine.",
+ "Ranked matchmaking, game servers and reward drops arrive with the competitive beta.",
  hubMod1Kicker: "MATCH FOUND · 5v5",
  hubMod1Copy:
- "Ten-player pre-match array with captain slot, map plate and ready layout. A click is not a live round.",
+ "Ten-player pre-match room with captain slot, map plate and ready check. Live matches start with the competitive beta.",
  hubMod1Chip1: "[TICKRATE: 128-TICK REALTIME]",
  hubMod1Chip2: "[MATCHMAKING: CALIBRATED]",
  hubMod2Kicker: "FIXED 3D RANKS",
  hubMod2Copy:
- "Ten engine tiers from Recruit through A.C.E. Legend on a CSS 3D turntable. Signed-in rating is real; showcase win-rates are samples.",
+ "Ten tiers from Recruit to A.C.E. Legend. Your rating is real once you sign in; showcase win-rates are tier targets.",
  hubMod2Chip1: "[EVALUATION CURVE: SYNCED]",
  hubMod2Chip2: "[DRAG-ROTATION: ACTIVE]",
  hubMod3Kicker: "SKIN REWARDS",
  hubMod3Copy:
- "Championship loot and login-reward overlays are conceptual categories. No inventory ships and no item is claimed.",
+ "Championship rewards and login rewards arrive with Season 1.",
  hubMod3Chip1: "[SECURE RNG ENGINE]",
  hubMod3Chip2: "[DROP VERIFICATION: OK]",
  navPricing: "PRICING",
@@ -371,7 +371,7 @@ export const EN = {
   copyrightClaim:
     "Original text, layout, emblems, and graphics on this website belong to A.C.E. Competitions Ltd. Copying them without written permission is not allowed. A.C.E. may enforce that right. Counter-Strike 2 and its map names belong to Valve.",
  corporateStrip:
- "A.C.E. Competitions Ltd. | Contact Support: support@ace-platform.gg | Not affiliated with Valve",
+ "A.C.E. Competitions Ltd. · support@ace-platform.gg",
  shieldAi: "AI INFRASTRUCTURE · COMING SOON",
  shieldNeural: "NEURAL ANALYSIS: NOT RUNNING",
  shieldClient: "Anti-cheat client",

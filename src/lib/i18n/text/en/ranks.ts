@@ -2,12 +2,12 @@
   meta: {
     title: "Competitive Ranks",
     description:
-      "Ten A.C.E. ranks with a drag-to-rotate CSS 3D turntable. Studio GLTF models can replace the stills when delivered.",
+      "The ten A.C.E. ranks, from Iron Recruit to A.C.E. Legend, with divisions and rating floors.",
   },
   hero: {
     kicker: "CALIBRATION",
     title: "Competitive Ranks",
-    lede: "Recruit through A.C.E. Legend, divisions {divisions}. Each emblem is a concept still on a CSS 3D turntable (drag or arrow keys). Drop a GLTF into the documented slot later — no model files are in the repo yet. Rating numbers are your real account when signed in, otherwise the calibration floor.",
+    lede: "Ten tiers from Recruit to A.C.E. Legend, each with divisions {divisions}. Drag or use the arrow keys to rotate an emblem. Signed in, you see your own rating; otherwise each tier floor.",
   },
   codexLink: "Open the Calibration Codex",
   document: {
@@ -32,7 +32,7 @@
     selectEmblem: "Select A.C.E. {name} rank emblem, level {level}",
     emblemAlt: "A.C.E. Custom 3D Crystalline Level {level} {crystal} {name} emblem profile badge",
     emblemAltLegend: "A.C.E. Custom 3D Crystalline Level {level} Emblem Profile Badge",
-    premium: "PREMIUM",
+    premium: "TOP TIER",
   },
   division: {
     label: "Division {division}",

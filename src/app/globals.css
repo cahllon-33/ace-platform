@@ -3077,8 +3077,9 @@ html[dir="rtl"] .ace-hub-card-face {
   position: absolute;
   inset: 22%;
   border-radius: 50%;
-  background-color: #3a2a08;
-  background-size: cover;
+  background-color: transparent;
+  background-size: contain;
+  background-repeat: no-repeat;
   background-position: center;
   box-shadow:
     0 0 28px rgba(255, 215, 0, 0.55),
