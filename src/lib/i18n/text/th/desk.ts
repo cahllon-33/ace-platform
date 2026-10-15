@@ -28,17 +28,17 @@ export const desk: TextBag["desk"] = {
       "crown": {
         "name": "กรอบอวาตาร์ A.C.E. Crown",
         "tag": "ของตกแต่งโปรไฟล์",
-        "price": "รวมในแพ็กเกจ Premium หรือ {rp} RP"
+        "price": "เร็ว ๆ นี้"
       },
       "shimmer": {
         "name": "ประกายเลเซอร์สีทองบนโปรไฟล์",
         "tag": "การปรับแต่งแชท",
-        "price": "รวมในแพ็กเกจ Premium หรือ {rp} RP"
+        "price": "เร็ว ๆ นี้"
       },
       "pass": {
-        "name": "Golden Pass ทัวร์นาเมนต์ Premium",
+        "name": "บัตรผ่านทองคำทัวร์นาเมนต์",
         "tag": "โทเค็นเข้าลีก",
-        "price": "{rp} RP / สมัครแบบลำดับความสำคัญ"
+        "price": "เร็ว ๆ นี้"
       }
     }
   },

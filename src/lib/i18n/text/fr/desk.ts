@@ -31,17 +31,17 @@ export const desk: TextBag["desk"] = {
       crown: {
         name: "Cadre d'avatar Couronne A.C.E.",
         tag: "Ornement de profil",
-        price: "Inclus dans l'offre Premium ou {rp} RP",
+        price: "Bientôt",
       },
       shimmer: {
         name: "Scintillement laser doré du profil",
         tag: "Personnalisation du chat",
-        price: "Inclus dans l'offre Premium ou {rp} RP",
+        price: "Bientôt",
       },
       pass: {
-        name: "Pass doré de tournoi Premium",
+        name: "Pass doré de tournoi",
         tag: "Jeton d'accès à la ligue",
-        price: "{rp} RP / inscription prioritaire",
+        price: "Bientôt",
       },
     },
   },

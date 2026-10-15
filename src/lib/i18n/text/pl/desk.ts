@@ -31,17 +31,17 @@ export const desk: TextBag["desk"] = {
       crown: {
         name: "Ramka awatara Korona A.C.E.",
         tag: "Ozdoba profilu",
-        price: "W planie Premium lub za {rp} RP",
+        price: "Wkrótce",
       },
       shimmer: {
         name: "Złoty laserowy połysk profilu",
         tag: "Personalizacja czatu",
-        price: "W planie Premium lub za {rp} RP",
+        price: "Wkrótce",
       },
       pass: {
-        name: "Złota przepustka turniejowa Premium",
+        name: "Złota przepustka turniejowa",
         tag: "Token dostępu do ligi",
-        price: "{rp} RP / priorytetowe zgłoszenie rejestracyjne",
+        price: "Wkrótce",
       },
     },
   },

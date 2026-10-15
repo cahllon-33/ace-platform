@@ -28,17 +28,17 @@ export const desk: TextBag["desk"] = {
       "crown": {
         "name": "A.C.E. Taç Avatar Çerçevesi",
         "tag": "Profil Süsü",
-        "price": "Premium Plana dahil veya {rp} RP"
+        "price": "Yakında"
       },
       "shimmer": {
         "name": "Altın Profil Lazer Parıltısı",
         "tag": "Sohbet Özelleştirme",
-        "price": "Premium Plana dahil veya {rp} RP"
+        "price": "Yakında"
       },
       "pass": {
-        "name": "Premium Turnuva Altın Bileti",
+        "name": "Altın Turnuva Bileti",
         "tag": "Lig Erişim Jetonu",
-        "price": "{rp} RP / Öncelikli Kayıt Hakkı"
+        "price": "Yakında"
       }
     }
   },

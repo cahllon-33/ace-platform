@@ -12,7 +12,7 @@ export const teams: TextBag["teams"] = {
     lede: "Cinq places libres alignées. Un clan n'est enregistré qu'après la connexion Steam et la création d'une équipe.",
   },
   gate: {
-    kickerPremium: "Après la lettre Premium",
+    kickerPremium: "Fiche de clan après ton choix d’offre",
     kickerDefault: "Fiche de clan",
     title: "Formez-vous une équipe de cinq ?",
     intro:
@@ -40,12 +40,12 @@ export const teams: TextBag["teams"] = {
     intro:
       "Ce bureau ne lit que les faits publiés sur cette page. Il ne détecte pas de triche, n'ouvre aucun match et ne modifie aucun compte.",
     questionLabel: "Question",
-    placeholder: "Posez une question sur les cinq places, la lettre à $7 ou l'assistance",
+    placeholder: "Pose une question sur les cinq places, les offres ou le support",
     ask: "Demander",
     fallback:
-      "Ce bureau ne répond qu'à partir des règles écrites de cette page : la lettre Premium, les cinq places, Steam OpenID et l'assistance.",
+      "Ce guichet répond uniquement à partir des règles écrites sur cette page : les offres, les cinq places, Steam OpenID et le support.",
     facts: {
-      email: "Aucun e-mail n'est envoyé. La lettre Premium reste sur /premium/receipt.",
+      email: "Aucun e-mail n’est envoyé. Les reçus d’offre restent sur ce site.",
       charge:
         "Premium coûte $7 par mois. Bientôt disponible : il n'y a pas encore de paiement, donc rien n'est facturé.",
       board:

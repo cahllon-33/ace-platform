@@ -2,13 +2,8 @@ import Link from "next/link";
 import { ContactEmailForm } from "@/components/contact-email-form";
 import { PlayerBadges } from "@/components/player-badges";
 import { PlayerNetworkCards } from "@/components/player-network-cards";
-import { PlayerRatingTrend } from "@/components/player-rating-trend";
 import { TelemetryPaywall } from "@/components/telemetry-paywall";
-import {
-  buildCombatMatrix,
-  buildRatingTrend,
-  buildSignatureWeapon,
-} from "@/lib/player-dossier";
+import { StatsConsole } from "@/components/stats-console";
 import { playerBadges } from "@/lib/badges";
 import { interpolate } from "@/lib/i18n";
 import { PLACEHOLDER_GEAR, type LayoutGear, type LayoutPlayer, type LayoutTeam } from "@/lib/tournament-layout";
@@ -27,9 +22,6 @@ export async function PlayerProfileWorkspace({
   signedIn: boolean;
   contactEmail: string | null;
 }) {
-  const combat = buildCombatMatrix(player);
-  const trend = buildRatingTrend(player);
-  const weapon = buildSignatureWeapon(player);
   const text = await getText();
   const copy = text.account.profile;
   const gear = (key: keyof LayoutGear) =>
@@ -80,78 +72,9 @@ export async function PlayerProfileWorkspace({
         </section>
 
         <TelemetryPaywall unlocked={telemetryUnlocked}>
-          <section className="ace-profile-block ace-dossier-glass" aria-labelledby="ace-dossier-trend">
-            <h2 id="ace-dossier-trend" className="ace-profile-block-title">
-              {copy.trend.title}
-            </h2>
-            <p className="ace-dossier-note">{copy.trend.note}</p>
-            <PlayerRatingTrend points={trend} />
-          </section>
-
-          <section className="ace-profile-block" aria-labelledby="ace-dossier-combat">
-            <h2 id="ace-dossier-combat" className="ace-profile-block-title">
-              {copy.combat.title}
-            </h2>
-            <dl className="ace-profile-stats ace-dossier-combat">
-              <div>
-                <dt>{copy.combat.kills}</dt>
-                <dd>{combat.kills.toLocaleString("en-US")}</dd>
-              </div>
-              <div>
-                <dt>{copy.combat.deaths}</dt>
-                <dd>{combat.deaths.toLocaleString("en-US")}</dd>
-              </div>
-              <div>
-                <dt>{copy.combat.kd}</dt>
-                <dd>{combat.kd}</dd>
-              </div>
-              <div>
-                <dt>{copy.combat.headshots}</dt>
-                <dd>{combat.headshots.toLocaleString("en-US")}</dd>
-              </div>
-              <div>
-                <dt>{copy.combat.headshotPct}</dt>
-                <dd>{combat.headshotPct}</dd>
-              </div>
-              <div className="ace-dossier-knife">
-                <dt>{copy.combat.knifeKills}</dt>
-                <dd>{combat.knifeKills}</dd>
-              </div>
-            </dl>
-          </section>
-
-          <section className="ace-profile-block ace-dossier-glass" aria-labelledby="ace-dossier-weapon">
-            <h2 id="ace-dossier-weapon" className="ace-profile-block-title">
-              {copy.weapon.title}
-            </h2>
-            <article className="ace-dossier-weapon">
-              <div className="ace-dossier-weapon-mark" aria-hidden="true">
-                <svg
-                  viewBox="0 0 48 48"
-                  width={48}
-                  height={48}
-                  className="ace-dossier-weapon-icon h-12 w-12 max-h-12 max-w-12 shrink-0"
-                >
-                  <rect x="4" y="4" width="40" height="40" rx="8" fill="#0B0B0C" stroke="#FFD700" strokeWidth="1.5" />
-                  <path d="M10 30 H38 M14 24 H34 M24 16 V34" fill="none" stroke="#FFD700" strokeWidth="1.6" />
-                </svg>
-              </div>
-              <div>
-                <p className="ace-dossier-weapon-name">{weapon.name}</p>
-                <p className="ace-dossier-note">{copy.weapon.note}</p>
-                <dl className="ace-dossier-weapon-stats">
-                  <div>
-                    <dt>{copy.weapon.accuracy}</dt>
-                    <dd>{weapon.accuracy}</dd>
-                  </div>
-                <div>
-                  <dt>{copy.weapon.kills}</dt>
-                  <dd>{weapon.kills}</dd>
-                </div>
-                </dl>
-              </div>
-            </article>
-          </section>
+          {/* Roster players have no recorded matches: the console shows no numbers, only labelled sample shapes. */}
+          <p className="ace-dossier-note">{text.account.statsConsole.rosterNote}</p>
+          <StatsConsole text={text} data={{ mode: "sample" }} />
         </TelemetryPaywall>
 
         <section className="ace-profile-block" aria-labelledby="ace-profile-gear">

@@ -12,7 +12,7 @@ export const teams: TextBag["teams"] = {
     lede: "한 줄로 놓인 다섯 개의 빈 자리. 클랜은 Steam 로그인과 팀 생성 후에만 저장됩니다.",
   },
   gate: {
-    kickerPremium: "Premium 편지 이후",
+    kickerPremium: "플랜 선택 후 클랜 기록",
     kickerDefault: "클랜 기록",
     title: "5인 팀인가요?",
     intro:
@@ -40,12 +40,12 @@ export const teams: TextBag["teams"] = {
     intro:
       "이 데스크는 이 페이지에 게시된 사실만 읽습니다. 치트를 탐지하거나, 매치를 열거나, 계정을 변경하지 않습니다.",
     questionLabel: "질문",
-    placeholder: "다섯 자리, $7 편지, 지원에 대해 물어보세요",
+    placeholder: "다섯 자리, 플랜 또는 지원에 대해 물어보세요",
     ask: "질문하기",
     fallback:
-      "이 데스크는 이 페이지의 명문화된 규칙으로만 답합니다: Premium 편지, 다섯 자리, Steam OpenID, 지원.",
+      "이 창구는 이 페이지에 적힌 규칙으로만 답합니다: 플랜, 다섯 자리, Steam OpenID, 지원.",
     facts: {
-      email: "이메일은 발송되지 않습니다. Premium 편지는 /premium/receipt에만 남습니다.",
+      email: "이메일은 발송되지 않습니다. 플랜 영수증은 이 웹사이트에 남습니다.",
       charge:
         "Premium은 월 $7입니다. 곧 제공: 아직 결제가 없으므로 아무것도 청구되지 않습니다.",
       board:

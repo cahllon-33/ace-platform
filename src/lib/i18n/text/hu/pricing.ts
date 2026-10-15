@@ -1,6 +1,37 @@
 import type { TextBag } from "../types";
 
 export const pricing: TextBag["pricing"] = {
+  matrix: {
+    "kicker": "FUNKCIÓMÁTRIX",
+    "title": "Tagságok összehasonlítása",
+    "note": "Arany pipa: benne van. Vonal: nincs benne. Hamarosan: a csomag része, de még nem jelent meg. Egyik csomag sem vásárol ratinget, párosítást vagy sorelsőbbséget.",
+    "checkout": "Fizetés még nincs, ezért ma minden fiók Free.",
+    "feature": "Funkció",
+    "included": "Benne van",
+    "notIncluded": "Nincs benne",
+    "soon": "Hamarosan",
+    "rows": {
+      "site": "Nyilvános oldal és Steam OpenID bejelentkezés",
+      "ladder": "Rating Points létra és standard rangemblémák",
+      "squads": "Ötfős klánrekord a Squadsban",
+      "stats": "Játékosstatisztika: rating-alakulás grafikon",
+      "gauges": "Játékosstatisztika: fejlövés-% és pontosság mérők",
+      "letter": "Köszönőlevél és e-mailes támogatás",
+      "rankArt": "Prémium rangművészet és rangkódex",
+      "card": "Animált prémium profilkártya",
+      "badges": "Különleges jelvények és az ELITE SEAL",
+      "analysis": "Bővített meccselemzés",
+      "beta": "Korai hozzáférés béta funkciókhoz",
+      "support": "Kiemelt támogatás Premium tagoknak",
+      "advantage": "Rating-növelés, párosítási vagy sorelőny"
+    }
+  },
+  plansR11: {
+    "termsPlusStats": "Játékosstatisztika: a rating alakulásának grafikonja a rögzített meccsekből. A fejlövés-% és a pontosság mérői hamarosan érkeznek.",
+    "codexTitle": "Prémium rangkódex és animált kártya",
+    "codexBody": "Ez a Premiumban foglalt rangművészet és animált profilkártya. Kozmetikai művészet ugyanazon a Rating Points létrán, versenyelőny nélkül.",
+    "codexLink": "A prémium rangkódex megnyitása"
+  },
   premiumExtras: {
     "card": {
       "previewTag": "ELŐNÉZET",
@@ -43,12 +74,12 @@ export const pricing: TextBag["pricing"] = {
       "plus2": "Hamarosan: köszönőlevél és e-mailes támogatás a support@ace-platform.gg címen, amint létezik fizetés.",
       "premiumTitle": "3. Mit tartalmaz a Premium",
       "prem1": "Mindent, ami a Plusban van.",
-      "prem2": "Prémium ranggrafika: az eredeti illusztrált A.C.E. emblémakészlet a profilodon.",
+      "prem2": "Prémium rangművészet és a prémium rangkódex: az eredeti, illusztrált A.C.E. emblémakészlet a profilodon. Csak kozmetikai, ugyanazon a Rating Points létrán.",
       "prem3": "Az animált Premium profilkártya.",
       "prem4": "Különleges jelvények és az ELITE PECSÉT.",
       "prem5": "Hamarosan: bővített meccselemzés (halálozási hőtérkép, fejlövés %, körönkénti teljesítmény), amint létezik demófeldolgozás.",
-      "prem6": "Korai hozzáférés béta funkciókhoz, amikor egy béta megnyílik.",
-      "prem7": "Elsőbbségi támogatás 72 órás válaszcéllal. Ez cél, nem garancia.",
+      "prem6": "Hamarosan: korai hozzáférés béta funkciókhoz, amikor megnyílik egy béta.",
+      "prem7": "Hamarosan: kiemelt támogatás Premium tagoknak.",
       "neverTitle": "4. Mit nem tartalmaz egyik csomag sem",
       "never": "Egyik csomag sem ad versenyelőnyt. Egyik csomag sem ad Rating Pointsot és nem emeli az értékelést. Egyik csomag sem ad párosítási előnyt, elsőbbségi sort vagy könnyebb ellenfeleket.",
       "soonTitle": "5. Hamarosan érkező funkciók",
@@ -86,11 +117,11 @@ export const pricing: TextBag["pricing"] = {
     "plus": {
       "name": "A.C.E. PLUS",
       "note": "Plus",
-      "title": "Köszönőlevél és támogatás",
+      "title": "Játékosstatisztika és támogatás",
       "points": [
         "Minden, ami a Free-ben.",
-        "Hamarosan: a köszönőlevél (mit tartalmaz, mit nem, és support@ace-platform.gg) csak a fizetés megjelenése után nyílik meg. A gomb ma le van tiltva.",
-        "Nem vásárol értékelést vagy könnyebb ellenfeleket. Az arany profiljelvények minden játékos tárolt meccsadataiból származnak. Az elit pecsét és a különleges jelvények csak akkor látszanak, ha a tárolt szint már Premium."
+        "Játékosstatisztika: a rating alakulásának grafikonja a rögzített A.C.E. meccsekből. A fejlövés-% és a pontosság mérői hamarosan érkeznek.",
+        "Hamarosan: köszönőlevél és e-mailes támogatás a support@ace-platform.gg címen, amint lesz fizetés. A Plus nem vásárol ratinget vagy könnyebb ellenfeleket."
       ]
     },
     "premium": {
@@ -99,8 +130,8 @@ export const pricing: TextBag["pricing"] = {
       "title": "Profilgrafika, jelvények és elemzés",
       "points": [
         "Mindent, ami a Plusban van.",
-        "Prémium ranggrafika, animált profilkártya, különleges jelvények és az ELITE PECSÉT.",
-        "Hamarosan: bővített meccselemzés, korai béta-hozzáférés és elsőbbségi támogatás (72 órás válaszcél).",
+        "Prémium rangművészet és a prémium rangkódex, az animált profilkártya, különleges jelvények és az ELITE SEAL.",
+        "Hamarosan: bővített meccselemzés, korai béta-hozzáférés és kiemelt támogatás Premium tagoknak.",
         "Nincs versenyelőny: nincs Rating Points-növelés és nincs párosítási előny."
       ]
     }
@@ -211,8 +242,8 @@ export const pricing: TextBag["pricing"] = {
       "metaTitle": "Premium nyugta",
       "metaDescription": "Az ezen az oldalon megjelenített A.C.E. Premium levél. A fizetés nem él, így semmit nem terhelünk és e-mailt sem küldünk.",
       "planName": "A.C.E. Premium",
-      "nextLabel": "Tovább a Squadshoz",
-      "nextBody": "Tovább a Squadshoz. Az oldal megkérdezi, ötfős csapat vagytok-e. Az 1. hely a bejelentkezett Steam-fiók. A 2–5. helyek a többi játékos. Egy klán mentése továbbra sem terheli ezt az árat."
+      "nextLabel": "A Premium feltételek elolvasása",
+      "nextBody": "A Premium: prémium rangművészet, animált profilkártya, különleges jelvények és az ELITE SEAL, valamint minden, ami a Plusban van. Klán mentése a Squadsban minden fióknak ingyenes."
     }
   },
   "letter": {

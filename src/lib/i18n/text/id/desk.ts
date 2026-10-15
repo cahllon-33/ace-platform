@@ -28,17 +28,17 @@ export const desk: TextBag["desk"] = {
       "crown": {
         "name": "Bingkai Avatar A.C.E. Crown",
         "tag": "Hiasan Profil",
-        "price": "Termasuk dalam Paket Premium atau {rp} RP"
+        "price": "Segera hadir"
       },
       "shimmer": {
         "name": "Kilau Laser Emas Profil",
         "tag": "Kustomisasi Obrolan",
-        "price": "Termasuk dalam Paket Premium atau {rp} RP"
+        "price": "Segera hadir"
       },
       "pass": {
-        "name": "Golden Pass Turnamen Premium",
+        "name": "Tiket Emas Turnamen",
         "tag": "Token Akses Liga",
-        "price": "{rp} RP / Pendaftaran Prioritas"
+        "price": "Segera hadir"
       }
     }
   },

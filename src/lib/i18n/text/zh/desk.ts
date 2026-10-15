@@ -28,17 +28,17 @@ export const desk: TextBag["desk"] = {
       "crown": {
         "name": "A.C.E. 王冠头像框",
         "tag": "个人资料装饰",
-        "price": "包含在 Premium 方案中,或 {rp} RP"
+        "price": "即将推出"
       },
       "shimmer": {
         "name": "金色个人资料激光光泽",
         "tag": "聊天个性化",
-        "price": "包含在 Premium 方案中,或 {rp} RP"
+        "price": "即将推出"
       },
       "pass": {
-        "name": "Premium 锦标赛金色通行证",
+        "name": "锦标赛黄金通行证",
         "tag": "联赛准入令牌",
-        "price": "{rp} RP / 优先报名资格"
+        "price": "即将推出"
       }
     }
   },

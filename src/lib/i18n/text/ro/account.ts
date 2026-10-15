@@ -1,6 +1,32 @@
 import type { TextBag } from "../types";
 
 export const account: TextBag["account"] = {
+  statsConsole: {
+    "metaTitle": "Statistici de jucător",
+    "kicker": "STATISTICI DE JUCĂTOR",
+    "title": "Statistici de jucător",
+    "lede": "Evoluția ratingului din meciurile tale A.C.E. înregistrate, cu indicatori pentru % headshot și precizie. Inclus în A.C.E Plus (4 $/lună) și A.C.E Premium (7 $/lună).",
+    "movementTitle": "Evoluția ratingului",
+    "movementNote": "Fiecare punct este o schimbare de rating scrisă dintr-un meci A.C.E. înregistrat.",
+    "noMatches": "Încă nu există meciuri înregistrate, așa că graficul este gol. Se completează după primul tău meci A.C.E. înregistrat.",
+    "currentLabel": "Rating actual",
+    "netLabel": "Schimbare netă",
+    "changesLabel": "Schimbări înregistrate",
+    "hsTitle": "% headshot",
+    "accTitle": "Precizie (lovituri / focuri)",
+    "gaugeSoon": "În curând: acești indicatori au nevoie de analiza demo-urilor de meci, care încă nu există.",
+    "soon": "În curând",
+    "sample": "EXEMPLU · doar formă, nu date reale",
+    "lockedTitle": "Statisticile de jucător fac parte din A.C.E Plus și Premium",
+    "lockedBody": "Planul tău salvat este Free. Plus (4 $/lună) și Premium (7 $/lună) deblochează această pagină. În curând: plata nu există încă.",
+    "signIn": "Conectează-te cu Steam ca să-ți vezi statisticile.",
+    "plansLink": "Vezi planurile",
+    "rosterNote": "Profil de lot exemplu: acești jucători nu au meciuri A.C.E. înregistrate, așa că statisticile nu arată cifre.",
+    "dashTitle": "Statistici și analiză",
+    "dashStats": "Deschide statisticile de jucător",
+    "dashAnalysis": "Deschide analiza meciurilor (Premium)",
+    "chartAria": "Graficul evoluției ratingului"
+  },
   "dashboard": {
     "meta": {
       "title": "Command Deck"

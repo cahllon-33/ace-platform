@@ -1,6 +1,32 @@
 import type { TextBag } from "../types";
 
 export const account: TextBag["account"] = {
+  statsConsole: {
+    "metaTitle": "플레이어 통계",
+    "kicker": "플레이어 통계",
+    "title": "플레이어 통계",
+    "lede": "기록된 A.C.E. 경기의 레이팅 변화와 헤드샷 %, 명중률 게이지. A.C.E Plus(월 $4)와 A.C.E Premium(월 $7)에 포함됩니다.",
+    "movementTitle": "레이팅 변화",
+    "movementNote": "각 점은 기록된 A.C.E. 경기에서 기록된 레이팅 변화입니다.",
+    "noMatches": "아직 기록된 경기가 없어 그래프가 비어 있습니다. 첫 A.C.E. 경기가 기록되면 채워집니다.",
+    "currentLabel": "현재 레이팅",
+    "netLabel": "순변화",
+    "changesLabel": "기록된 변화",
+    "hsTitle": "헤드샷 %",
+    "accTitle": "명중률 (명중 / 발사)",
+    "gaugeSoon": "곧 제공: 이 게이지에는 경기 데모 분석이 필요하며 아직 존재하지 않습니다.",
+    "soon": "곧 제공",
+    "sample": "샘플 · 형태만, 실제 데이터 아님",
+    "lockedTitle": "플레이어 통계는 A.C.E Plus와 Premium에 포함됩니다",
+    "lockedBody": "저장된 플랜은 Free입니다. Plus(월 $4)와 Premium(월 $7) 모두 이 페이지를 엽니다. 곧 제공: 아직 결제가 없습니다.",
+    "signIn": "플레이어 통계를 보려면 Steam으로 로그인하세요.",
+    "plansLink": "플랜 보기",
+    "rosterNote": "예시 로스터 프로필: 이 선수들은 기록된 A.C.E. 경기가 없어 통계에 숫자가 표시되지 않습니다.",
+    "dashTitle": "통계 및 분석",
+    "dashStats": "플레이어 통계 열기",
+    "dashAnalysis": "경기 분석 열기 (Premium)",
+    "chartAria": "레이팅 변화 차트"
+  },
   dashboard: {
     meta: {
       title: "커맨드 덱",

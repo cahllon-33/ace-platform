@@ -28,17 +28,17 @@ export const desk: TextBag["desk"] = {
       "crown": {
         "name": "A.C.E. クラウン・アバターフレーム",
         "tag": "プロフィール装飾",
-        "price": "Premium プランに含まれる、または {rp} RP"
+        "price": "まもなく開始"
       },
       "shimmer": {
         "name": "ゴールド・プロフィール・レーザーシマー",
         "tag": "チャットのカスタマイズ",
-        "price": "Premium プランに含まれる、または {rp} RP"
+        "price": "まもなく開始"
       },
       "pass": {
-        "name": "Premium トーナメント・ゴールドパス",
+        "name": "トーナメント・ゴールデンパス",
         "tag": "リーグ参加トークン",
-        "price": "{rp} RP / 優先登録エントリー"
+        "price": "まもなく開始"
       }
     }
   },

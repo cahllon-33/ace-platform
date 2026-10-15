@@ -1,6 +1,37 @@
 import type { TextBag } from "../types";
 
 export const pricing: TextBag["pricing"] = {
+  matrix: {
+    "kicker": "MACIERZ FUNKCJI",
+    "title": "Porównanie planów",
+    "note": "Złoty znacznik: w zestawie. Kreska: brak. Wkrótce: część planu, jeszcze nie wydana. Żaden plan nie kupuje ratingu, matchmakingu ani pierwszeństwa w kolejce.",
+    "checkout": "Płatności jeszcze nie ma, więc dziś każde konto jest na Free.",
+    "feature": "Funkcja",
+    "included": "W zestawie",
+    "notIncluded": "Brak",
+    "soon": "Wkrótce",
+    "rows": {
+      "site": "Publiczna strona i logowanie przez Steam OpenID",
+      "ladder": "Drabina Rating Points i standardowe emblematy rang",
+      "squads": "Wpis klanu pięciu graczy w Squads",
+      "stats": "Statystyki gracza: wykres zmian ratingu",
+      "gauges": "Statystyki gracza: wskaźniki % headshotów i celności",
+      "letter": "List z podziękowaniem i wsparcie e-mail",
+      "rankArt": "Grafika rang Premium i kodeks rang",
+      "card": "Animowana karta profilu Premium",
+      "badges": "Specjalne odznaki i ELITE SEAL",
+      "analysis": "Rozszerzona analiza meczów",
+      "beta": "Wczesny dostęp do funkcji beta",
+      "support": "Priorytetowe wsparcie dla członków Premium",
+      "advantage": "Podbicie ratingu, przewaga w matchmakingu lub kolejce"
+    }
+  },
+  plansR11: {
+    "termsPlusStats": "Statystyki gracza: wykres zmian ratingu z zapisanych meczów. Wskaźniki % headshotów i celności wkrótce.",
+    "codexTitle": "Kodeks rang Premium i animowana karta",
+    "codexBody": "To grafika rang i animowana karta profilu zawarte w Premium. To kosmetyka na tej samej drabinie Rating Points, bez przewagi rywalizacyjnej.",
+    "codexLink": "Otwórz kodeks rang Premium"
+  },
   premiumExtras: {
     "card": {
       "previewTag": "PODGLĄD",
@@ -43,12 +74,12 @@ export const pricing: TextBag["pricing"] = {
       "plus2": "Wkrótce: list z podziękowaniem i wsparcie e-mail pod support@ace-platform.gg, gdy pojawią się płatności.",
       "premiumTitle": "3. Co obejmuje Premium",
       "prem1": "Wszystko z Plus.",
-      "prem2": "Grafika rang Premium: oryginalny ilustrowany zestaw emblematów A.C.E. na twoim profilu.",
+      "prem2": "Grafika rang Premium i kodeks rang Premium: oryginalny ilustrowany zestaw emblematów A.C.E. na Twoim profilu. Wyłącznie kosmetyka, na tej samej drabinie Rating Points.",
       "prem3": "Animowana karta profilu Premium.",
       "prem4": "Specjalne odznaki i PIECZĘĆ ELITE.",
       "prem5": "Wkrótce: rozszerzona analiza meczu (mapa cieplna zgonów, % headshotów, wyniki w każdej rundzie), gdy pojawi się analiza dem.",
-      "prem6": "Wczesny dostęp do funkcji beta, gdy beta się otworzy.",
-      "prem7": "Priorytetowe wsparcie z docelowym czasem odpowiedzi 72 godziny. To cel, nie gwarancja.",
+      "prem6": "Wkrótce: wczesny dostęp do funkcji beta, gdy beta się otworzy.",
+      "prem7": "Wkrótce: priorytetowe wsparcie dla członków Premium.",
       "neverTitle": "4. Czego nie obejmuje żaden plan",
       "never": "Żaden plan nie daje przewagi rywalizacyjnej. Żaden plan nie dodaje Rating Points ani nie podnosi ratingu. Żaden plan nie daje przewagi w matchmakingu, priorytetowej kolejki ani łatwiejszych przeciwników.",
       "soonTitle": "5. Funkcje oznaczone Wkrótce",
@@ -87,11 +118,11 @@ export const pricing: TextBag["pricing"] = {
     plus: {
       name: "A.C.E. PLUS",
       note: "Plus",
-      title: "List z podziękowaniem i wsparcie",
+      title: "Statystyki gracza i wsparcie",
       points: [
         "Wszystko z planu Darmowego.",
-        "Wkrótce: list z podziękowaniem (co obejmuje, czego nie, oraz support@ace-platform.gg) otworzy się dopiero, gdy będzie płatność. Dziś przycisk jest wyłączony.",
-        "Nie kupuje rankingu ani łatwiejszych rywali. Złote odznaki profilu pochodzą z zapisanych danych meczowych każdego gracza. Pieczęć elity i odznaki specjalne pojawiają się tylko, gdy zapisany poziom to już Premium.",
+        "Statystyki gracza: wykres zmian ratingu z zapisanych meczów A.C.E. Wskaźniki % headshotów i celności wkrótce.",
+        "Wkrótce: list z podziękowaniem i wsparcie e-mail pod support@ace-platform.gg, gdy pojawi się płatność. Plus nie kupuje ratingu ani łatwiejszych rywali.",
       ],
     },
     premium: {
@@ -100,8 +131,8 @@ export const pricing: TextBag["pricing"] = {
       title: "Grafika profilu, odznaki i analiza",
       points: [
         "Wszystko z Plus.",
-        "Grafika rang Premium, animowana karta profilu, specjalne odznaki i PIECZĘĆ ELITE.",
-        "Wkrótce: rozszerzona analiza meczu, wczesny dostęp do bet i priorytetowe wsparcie (cel odpowiedzi 72 godziny).",
+        "Grafika rang Premium i kodeks rang Premium, animowana karta profilu, specjalne odznaki i ELITE SEAL.",
+        "Wkrótce: rozszerzona analiza meczów, wczesny dostęp do bety i priorytetowe wsparcie dla członków Premium.",
         "Brak przewagi rywalizacyjnej: bez bonusu Rating Points i bez przewagi w matchmakingu.",
       ],
     },
@@ -216,9 +247,9 @@ export const pricing: TextBag["pricing"] = {
       metaDescription:
         "List A.C.E. Premium wyświetlany na tej stronie. Kasa nie działa, więc nic nie jest pobierane i nie jest wysyłany żaden e-mail.",
       planName: "A.C.E. Premium",
-      nextLabel: "Przejdź do Składów",
+      nextLabel: "Przeczytaj warunki Premium",
       nextBody:
-        "Przejdź do Składów. Strona zapyta, czy jesteście drużyną pięciu graczy. Miejsce 1 to zalogowane konto Steam. Miejsca od 2 do 5 to pozostali gracze. Zapisanie klanu nadal nie pobiera tej ceny.",
+        "Premium to grafika rang Premium, animowana karta profilu, specjalne odznaki i ELITE SEAL oraz wszystko z Plus. Zapisanie klanu w Squads jest bezpłatne dla każdego konta.",
     },
   },
   letter: {

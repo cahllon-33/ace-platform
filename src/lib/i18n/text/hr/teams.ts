@@ -11,7 +11,7 @@ export const teams: TextBag["teams"] = {
     "lede": "Pet otvorenih mjesta u nizu. Klan se sprema tek nakon Steam prijave i stvorenog tima."
   },
   "gate": {
-    "kickerPremium": "Nakon Premium pisma",
+    "kickerPremium": "Zapis klana nakon odabira plana",
     "kickerDefault": "Zapis klana",
     "title": "Jeste li tim od pet?",
     "intro": "Mjesto 1 je igrač prijavljen putem Steama. Mjesta 2 do 5 moraju već imati A.C.E. račune. Spremanje klana ne naplaćuje 7 $, ne šalje e-poštu i ne stavlja klan na ploču od 100 timova.",
@@ -35,11 +35,11 @@ export const teams: TextBag["teams"] = {
     "title": "Pitanja iz pisanih pravila",
     "intro": "Ovaj pult čita samo činjenice objavljene na ovoj stranici. Ne otkriva varanje, ne otvara meč i ne mijenja račun.",
     "questionLabel": "Pitanje",
-    "placeholder": "Pitaj o pet mjesta, pismu od 7 $ ili podršci",
+    "placeholder": "Pitaj o pet mjesta, planovima ili podršci",
     "ask": "Pitaj",
-    "fallback": "Ovaj pult odgovara samo iz pisanih pravila na ovoj stranici: Premium pismo, pet mjesta, Steam OpenID i podrška.",
+    "fallback": "Ovaj pult odgovara samo prema pisanim pravilima na ovoj stranici: planovi, pet mjesta, Steam OpenID i podrška.",
     "facts": {
-      "email": "E-pošta se ne šalje. Premium pismo ostaje na /premium/receipt.",
+      "email": "E-pošta se ne šalje. Potvrde planova ostaju na ovoj stranici.",
       "charge": "Premium stoji 7 $ mjesečno. Uskoro: plaćanje još ne postoji, pa se ništa ne naplaćuje.",
       "board": "Spremljeni klan je zapis postave. Ne stavlja se na ploču od 100 timova. Ta ploča i dalje pokazuje 0 prijavljenih dok sezona ne počne.",
       "steam": "Prijava koristi službeni Steam OpenID. A.C.E. nikad ne traži Steam lozinku. S ove stranice Steam se vraća ovdje.",

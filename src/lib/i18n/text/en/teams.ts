@@ -10,7 +10,7 @@
     lede: "Five open seats in a row. A clan is stored only after Steam sign-in and a created team.",
   },
   gate: {
-    kickerPremium: "After the Premium letter",
+    kickerPremium: "Clan record after your plan choice",
     kickerDefault: "Clan record",
     title: "Are you a team of five?",
     intro:
@@ -38,12 +38,12 @@
     intro:
       "This desk reads only the facts published on this page. It does not detect cheats, open a match, or change an account.",
     questionLabel: "Question",
-    placeholder: "Ask about the five seats, the $7 letter, or support",
+    placeholder: "Ask about the five seats, plans, or support",
     ask: "Ask",
     fallback:
-      "This desk only answers from the written rules on this page: the Premium letter, the five seats, Steam OpenID, and Support.",
+      "This desk only answers from the written rules on this page: plans, the five seats, Steam OpenID, and Support.",
     facts: {
-      email: "No email is sent. The Premium letter stays on /premium/receipt.",
+      email: "No email is sent. Plan receipts stay on this website.",
       charge:
         "Premium is $7 per month. Coming soon: there is no checkout yet, so nothing is charged.",
       board:

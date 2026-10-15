@@ -1,6 +1,32 @@
 import type { TextBag } from "../types";
 
 export const account: TextBag["account"] = {
+  statsConsole: {
+    "metaTitle": "Statystyki gracza",
+    "kicker": "STATYSTYKI GRACZA",
+    "title": "Statystyki gracza",
+    "lede": "Zmiany ratingu z Twoich zapisanych meczów A.C.E. ze wskaźnikami % headshotów i celności. W zestawie A.C.E Plus (4 $/mies.) i A.C.E Premium (7 $/mies.).",
+    "movementTitle": "Zmiany ratingu",
+    "movementNote": "Każdy punkt to zmiana ratingu zapisana z meczu A.C.E.",
+    "noMatches": "Brak zapisanych meczów, więc wykres jest pusty. Wypełni się po Twoim pierwszym zapisanym meczu A.C.E.",
+    "currentLabel": "Obecny rating",
+    "netLabel": "Zmiana netto",
+    "changesLabel": "Zapisane zmiany",
+    "hsTitle": "% headshotów",
+    "accTitle": "Celność (trafienia / strzały)",
+    "gaugeSoon": "Wkrótce: te wskaźniki wymagają analizy dem meczów, która jeszcze nie istnieje.",
+    "soon": "Wkrótce",
+    "sample": "PRZYKŁAD · tylko kształt, nie prawdziwe dane",
+    "lockedTitle": "Statystyki gracza są częścią A.C.E Plus i Premium",
+    "lockedBody": "Twój zapisany plan to Free. Plus (4 $/mies.) i Premium (7 $/mies.) odblokowują tę stronę. Wkrótce: płatności jeszcze nie ma.",
+    "signIn": "Zaloguj się przez Steam, aby zobaczyć swoje statystyki.",
+    "plansLink": "Zobacz plany",
+    "rosterNote": "Przykładowy profil składu: ci gracze nie mają zapisanych meczów A.C.E., więc statystyki nie pokazują liczb.",
+    "dashTitle": "Statystyki i analiza",
+    "dashStats": "Otwórz statystyki gracza",
+    "dashAnalysis": "Otwórz analizę meczów (Premium)",
+    "chartAria": "Wykres zmian ratingu"
+  },
   dashboard: {
     meta: {
       title: "Pokład dowodzenia",

@@ -1,6 +1,32 @@
 import type { TextBag } from "../types";
 
 export const account: TextBag["account"] = {
+  statsConsole: {
+    "metaTitle": "プレイヤー統計",
+    "kicker": "プレイヤー統計",
+    "title": "プレイヤー統計",
+    "lede": "記録されたA.C.E.の試合からのレーティング推移と、ヘッドショット率・命中率のゲージ。A.C.E Plus（月額$4）とA.C.E Premium（月額$7）に含まれます。",
+    "movementTitle": "レーティング推移",
+    "movementNote": "各点は記録されたA.C.E.の試合から書き込まれたレーティング変動です。",
+    "noMatches": "記録された試合はまだないため、グラフは空です。最初のA.C.E.の試合が記録されると表示されます。",
+    "currentLabel": "現在のレーティング",
+    "netLabel": "純変動",
+    "changesLabel": "記録された変動",
+    "hsTitle": "ヘッドショット率",
+    "accTitle": "命中率（命中 / 発射）",
+    "gaugeSoon": "近日公開：これらのゲージには試合デモの解析が必要ですが、まだ存在しません。",
+    "soon": "近日公開",
+    "sample": "サンプル · 形のみ、実データではありません",
+    "lockedTitle": "プレイヤー統計はA.C.E PlusとPremiumに含まれます",
+    "lockedBody": "保存されているプランはFreeです。Plus（月額$4）とPremium（月額$7）のどちらでもこのページが開きます。近日公開：決済はまだありません。",
+    "signIn": "Steamでサインインしてプレイヤー統計を表示してください。",
+    "plansLink": "プランを見る",
+    "rosterNote": "サンプルのロスタープロフィール：これらの選手には記録されたA.C.E.の試合がないため、統計に数値は表示されません。",
+    "dashTitle": "統計と分析",
+    "dashStats": "プレイヤー統計を開く",
+    "dashAnalysis": "試合分析を開く（Premium）",
+    "chartAria": "レーティング推移チャート"
+  },
   "dashboard": {
     "meta": {
       "title": "コマンドデッキ"

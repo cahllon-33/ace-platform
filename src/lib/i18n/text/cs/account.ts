@@ -1,6 +1,32 @@
 import type { TextBag } from "../types";
 
 export const account: TextBag["account"] = {
+  statsConsole: {
+    "metaTitle": "Statistiky hráče",
+    "kicker": "STATISTIKY HRÁČE",
+    "title": "Statistiky hráče",
+    "lede": "Vývoj ratingu z tvých zaznamenaných zápasů A.C.E. s ukazateli % headshotů a přesnosti. Součást A.C.E Plus (4 $/měs.) a A.C.E Premium (7 $/měs.).",
+    "movementTitle": "Vývoj ratingu",
+    "movementNote": "Každý bod je změna ratingu zapsaná ze zápasu A.C.E.",
+    "noMatches": "Zatím žádné zaznamenané zápasy, graf je proto prázdný. Naplní se po tvém prvním zaznamenaném zápase A.C.E.",
+    "currentLabel": "Aktuální rating",
+    "netLabel": "Čistá změna",
+    "changesLabel": "Zaznamenané změny",
+    "hsTitle": "% headshotů",
+    "accTitle": "Přesnost (zásahy / výstřely)",
+    "gaugeSoon": "Brzy: tyto ukazatele potřebují analýzu dem zápasů, která zatím neexistuje.",
+    "soon": "Brzy",
+    "sample": "UKÁZKA · jen tvar, žádná skutečná data",
+    "lockedTitle": "Statistiky hráče jsou součástí A.C.E Plus a Premium",
+    "lockedBody": "Tvůj uložený plán je Free. Plus (4 $/měs.) i Premium (7 $/měs.) tuto stránku odemykají. Brzy: platba zatím neexistuje.",
+    "signIn": "Přihlas se přes Steam a uvidíš své statistiky.",
+    "plansLink": "Zobrazit plány",
+    "rosterNote": "Ukázkový profil soupisky: tito hráči nemají zaznamenané zápasy A.C.E., proto statistiky neukazují čísla.",
+    "dashTitle": "Statistiky a analýza",
+    "dashStats": "Otevřít statistiky hráče",
+    "dashAnalysis": "Otevřít analýzu zápasů (Premium)",
+    "chartAria": "Graf vývoje ratingu"
+  },
   dashboard: {
     meta: {
       title: "Velitelský pult",

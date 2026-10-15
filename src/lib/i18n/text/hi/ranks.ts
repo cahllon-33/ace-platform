@@ -1,6 +1,13 @@
 import type { TextBag } from "../types";
 
 export const ranks: TextBag["ranks"] = {
+  premiumCodex: {
+    "kicker": "PREMIUM रैंक कोडेक्स",
+    "title": "Premium रैंक कोडेक्स",
+    "lede": "दस चित्रित क्रिस्टल प्रतीक, हर रैंक के लिए एक। यह मानक रैंकों वाली उसी Rating Points सीढ़ी पर कॉस्मेटिक प्रोफ़ाइल आर्ट है। यह रेटिंग, मैचमेकिंग या कतार नहीं बदलता।",
+    "cosmetic": "कॉस्मेटिक आर्ट · वही RP सीढ़ी · केवल A.C.E Premium $7/माह",
+    "imgAlt": "{name} Premium रैंक आर्ट, स्तर {level}"
+  },
   premiumRanks: {
     kicker: "प्रीमियम रैंक",
     plan: "A.C.E PREMIUM · केवल $7/माह",

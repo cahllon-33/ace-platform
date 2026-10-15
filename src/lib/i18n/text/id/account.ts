@@ -1,6 +1,32 @@
 import type { TextBag } from "../types";
 
 export const account: TextBag["account"] = {
+  statsConsole: {
+    "metaTitle": "Statistik pemain",
+    "kicker": "STATISTIK PEMAIN",
+    "title": "Statistik pemain",
+    "lede": "Pergerakan rating dari pertandingan A.C.E. milikmu yang tercatat, dengan pengukur % headshot dan akurasi. Termasuk dalam A.C.E Plus ($4/bulan) dan A.C.E Premium ($7/bulan).",
+    "movementTitle": "Pergerakan rating",
+    "movementNote": "Setiap titik adalah perubahan rating yang ditulis dari pertandingan A.C.E. yang tercatat.",
+    "noMatches": "Belum ada pertandingan tercatat, jadi grafiknya kosong. Grafik akan terisi setelah pertandingan A.C.E. pertamamu tercatat.",
+    "currentLabel": "Rating saat ini",
+    "netLabel": "Perubahan bersih",
+    "changesLabel": "Perubahan tercatat",
+    "hsTitle": "% headshot",
+    "accTitle": "Akurasi (kena / tembakan)",
+    "gaugeSoon": "Segera hadir: pengukur ini memerlukan parsing demo pertandingan, yang belum ada.",
+    "soon": "Segera hadir",
+    "sample": "CONTOH · hanya bentuk, bukan data asli",
+    "lockedTitle": "Statistik pemain adalah bagian dari A.C.E Plus dan Premium",
+    "lockedBody": "Paket tersimpanmu adalah Free. Plus ($4/bulan) dan Premium ($7/bulan) sama-sama membuka halaman ini. Segera hadir: checkout belum ada.",
+    "signIn": "Masuk dengan Steam untuk melihat statistik pemainmu.",
+    "plansLink": "Lihat paket",
+    "rosterNote": "Contoh profil roster: pemain ini tidak memiliki pertandingan A.C.E. tercatat, jadi statistik tidak menampilkan angka.",
+    "dashTitle": "Statistik dan analisis",
+    "dashStats": "Buka statistik pemain",
+    "dashAnalysis": "Buka analisis pertandingan (Premium)",
+    "chartAria": "Grafik pergerakan rating"
+  },
   "dashboard": {
     "meta": {
       "title": "Command Deck"

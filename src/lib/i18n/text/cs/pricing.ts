@@ -1,6 +1,37 @@
 import type { TextBag } from "../types";
 
 export const pricing: TextBag["pricing"] = {
+  matrix: {
+    "kicker": "MATICE FUNKCÍ",
+    "title": "Srovnání členství",
+    "note": "Zlatá fajfka: zahrnuto. Pomlčka: nezahrnuto. Brzy: součást plánu, ale zatím nevydáno. Žádný plán nekupuje rating, matchmaking ani přednost ve frontě.",
+    "checkout": "Platba zatím neexistuje, takže dnes je každý účet na Free.",
+    "feature": "Funkce",
+    "included": "Zahrnuto",
+    "notIncluded": "Nezahrnuto",
+    "soon": "Brzy",
+    "rows": {
+      "site": "Veřejný web a přihlášení přes Steam OpenID",
+      "ladder": "Žebříček Rating Points a standardní emblémy ranků",
+      "squads": "Záznam pětičlenného klanu ve Squads",
+      "stats": "Statistiky hráče: graf vývoje ratingu",
+      "gauges": "Statistiky hráče: ukazatele % headshotů a přesnosti",
+      "letter": "Děkovný dopis a e-mailová podpora",
+      "rankArt": "Prémiová grafika ranků a kodex ranků",
+      "card": "Animovaná prémiová profilová karta",
+      "badges": "Speciální odznaky a ELITE SEAL",
+      "analysis": "Rozšířená analýza zápasů",
+      "beta": "Předčasný přístup k funkcím beta",
+      "support": "Prioritní podpora pro členy Premium",
+      "advantage": "Navýšení ratingu, výhoda v matchmakingu nebo frontě"
+    }
+  },
+  plansR11: {
+    "termsPlusStats": "Statistiky hráče: graf vývoje ratingu ze zaznamenaných zápasů. Ukazatele % headshotů a přesnosti brzy.",
+    "codexTitle": "Kodex prémiových ranků a animovaná karta",
+    "codexBody": "Toto je grafika ranků a animovaná profilová karta, které Premium obsahuje. Je to kosmetika na stejném žebříčku Rating Points bez soutěžní výhody.",
+    "codexLink": "Otevřít kodex prémiových ranků"
+  },
   premiumExtras: {
     "card": {
       "previewTag": "NÁHLED",
@@ -43,12 +74,12 @@ export const pricing: TextBag["pricing"] = {
       "plus2": "Již brzy: děkovný dopis a e-mailová podpora na support@ace-platform.gg, jakmile bude existovat platba.",
       "premiumTitle": "3. Co zahrnuje Premium",
       "prem1": "Vše z Plus.",
-      "prem2": "Prémiová grafika hodností: původní ilustrovaná sada emblémů A.C.E. na tvém profilu.",
+      "prem2": "Prémiová grafika ranků a kodex prémiových ranků: původní ilustrovaná sada emblémů A.C.E. na tvém profilu. Pouze kosmetika, na stejném žebříčku Rating Points.",
       "prem3": "Animovaná prémiová profilová karta.",
       "prem4": "Speciální odznaky a PEČEŤ ELITE.",
       "prem5": "Již brzy: rozšířená analýza zápasu (heatmapa úmrtí, % headshotů, výkon po kolech), jakmile bude existovat zpracování dem.",
-      "prem6": "Předběžný přístup k beta funkcím, když se beta otevře.",
-      "prem7": "Prioritní podpora s cílovou dobou odpovědi 72 hodin. Je to cíl, ne záruka.",
+      "prem6": "Brzy: předčasný přístup k funkcím beta, až se beta otevře.",
+      "prem7": "Brzy: prioritní podpora pro členy Premium.",
       "neverTitle": "4. Co nezahrnuje žádný plán",
       "never": "Žádný plán nedává soutěžní výhodu. Žádný plán nepřidává Rating Points ani nezvyšuje rating. Žádný plán nedává výhodu v matchmakingu, prioritní frontu ani snazší soupeře.",
       "soonTitle": "5. Funkce Již brzy",
@@ -87,11 +118,11 @@ export const pricing: TextBag["pricing"] = {
     plus: {
       name: "A.C.E. PLUS",
       note: "Plus",
-      title: "Děkovný dopis a podpora",
+      title: "Statistiky hráče a podpora",
       points: [
         "Vše z plánu Zdarma.",
-        "Již brzy: děkovný dopis (co zahrnuje, co ne a support@ace-platform.gg) se otevře až po zavedení platby. Dnes je tlačítko vypnuté.",
-        "Nekupuje hodnocení ani slabší soupeře. Zlaté odznaky profilu vycházejí z uložených zápasových dat každého hráče. Elitní pečeť a speciální odznaky se zobrazí, jen když je uložená úroveň již Premium.",
+        "Statistiky hráče: graf vývoje ratingu ze zaznamenaných zápasů A.C.E. Ukazatele % headshotů a přesnosti brzy.",
+        "Brzy: děkovný dopis a e-mailová podpora na support@ace-platform.gg, jakmile bude existovat platba. Plus nekupuje rating ani snazší soupeře.",
       ],
     },
     premium: {
@@ -100,8 +131,8 @@ export const pricing: TextBag["pricing"] = {
       title: "Grafika profilu, odznaky a analýza",
       points: [
         "Vše z Plus.",
-        "Prémiová grafika hodností, animovaná profilová karta, speciální odznaky a PEČEŤ ELITE.",
-        "Již brzy: rozšířená analýza zápasu, předběžný přístup k betám a prioritní podpora (cílová odpověď 72 hodin).",
+        "Prémiová grafika ranků a kodex prémiových ranků, animovaná profilová karta, speciální odznaky a ELITE SEAL.",
+        "Brzy: rozšířená analýza zápasů, předčasný přístup k betám a prioritní podpora pro členy Premium.",
         "Žádná soutěžní výhoda: žádné navýšení Rating Points ani výhoda v matchmakingu.",
       ],
     },
@@ -216,9 +247,9 @@ export const pricing: TextBag["pricing"] = {
       metaDescription:
         "Dopis A.C.E. Premium zobrazený na tomto webu. Pokladna není v provozu, takže se nic neúčtuje a neodesílá se žádný e-mail.",
       planName: "A.C.E. Premium",
-      nextLabel: "Pokračovat na Týmy",
+      nextLabel: "Přečíst podmínky Premium",
       nextBody:
-        "Pokračujte na Týmy. Stránka se zeptá, zda jste pětičlenný tým. Místo 1 je přihlášený účet Steam. Místa 2 až 5 jsou ostatní hráči. Uložení klanu tuto cenu stále neúčtuje.",
+        "Premium tvoří prémiová grafika ranků, animovaná profilová karta, speciální odznaky a ELITE SEAL a k tomu vše z Plus. Uložení klanu ve Squads je zdarma pro každý účet.",
     },
   },
   letter: {

@@ -28,17 +28,17 @@ export const desk: TextBag["desk"] = {
       "crown": {
         "name": "Ramă de avatar A.C.E. Crown",
         "tag": "Ornament de profil",
-        "price": "Inclus în planul Premium sau {rp} RP"
+        "price": "În curând"
       },
       "shimmer": {
         "name": "Strălucire laser aurie pe profil",
         "tag": "Personalizare chat",
-        "price": "Inclus în planul Premium sau {rp} RP"
+        "price": "În curând"
       },
       "pass": {
-        "name": "Golden Pass pentru turneul Premium",
+        "name": "Permis auriu de turneu",
         "tag": "Token de acces în ligă",
-        "price": "{rp} RP / Înscriere prioritară"
+        "price": "În curând"
       }
     }
   },

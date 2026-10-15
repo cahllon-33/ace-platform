@@ -29,17 +29,17 @@ export const desk = {
       crown: {
         name: "A.C.E. Crown Avatar Frame",
         tag: "Profile Flair",
-        price: "Included in Premium Plan or {rp} RP",
+        price: "Coming soon",
       },
       shimmer: {
         name: "Golden Profile Laser Shimmer",
         tag: "Chat Customization",
-        price: "Included in Premium Plan or {rp} RP",
+        price: "Coming soon",
       },
       pass: {
-        name: "Premium Tournament Golden Pass",
+        name: "Tournament Golden Pass",
         tag: "League Access Token",
-        price: "{rp} RP / Priority Registration Entry",
+        price: "Coming soon",
       },
     },
   },

@@ -1,6 +1,37 @@
 import type { TextBag } from "../types";
 
 export const pricing: TextBag["pricing"] = {
+  matrix: {
+    "kicker": "FEATURE-MATRIX",
+    "title": "Mitgliedschaften im Vergleich",
+    "note": "Goldener Haken: enthalten. Strich: nicht enthalten. Demnächst: Teil des Plans, aber noch nicht veröffentlicht. Kein Plan kauft Rating, Matchmaking oder Warteschlangen-Priorität.",
+    "checkout": "Einen Checkout gibt es noch nicht, daher ist heute jedes Konto auf Free.",
+    "feature": "Funktion",
+    "included": "Enthalten",
+    "notIncluded": "Nicht enthalten",
+    "soon": "Demnächst",
+    "rows": {
+      "site": "Öffentliche Website und Steam-OpenID-Anmeldung",
+      "ladder": "Rating-Points-Leiter und Standard-Rangembleme",
+      "squads": "Fünf-Spieler-Clan-Eintrag unter Squads",
+      "stats": "Spielerstatistiken: Rating-Verlaufsgrafik",
+      "gauges": "Spielerstatistiken: Anzeigen für Headshot-% und Treffsicherheit",
+      "letter": "Dankesbrief und E-Mail-Support",
+      "rankArt": "Premium-Rang-Art und Rang-Codex",
+      "card": "Animierte Premium-Profilkarte",
+      "badges": "Sonderabzeichen und das ELITE SEAL",
+      "analysis": "Erweiterte Match-Analyse",
+      "beta": "Früher Zugang zu Beta-Funktionen",
+      "support": "Bevorzugter Support für Premium-Mitglieder",
+      "advantage": "Rating-Boost, Matchmaking- oder Warteschlangen-Vorteil"
+    }
+  },
+  plansR11: {
+    "termsPlusStats": "Spielerstatistiken: dein Rating-Verlauf aus erfassten Matches. Anzeigen für Headshot-% und Treffsicherheit folgen in Kürze.",
+    "codexTitle": "Premium-Rang-Codex und animierte Karte",
+    "codexBody": "Das sind die Rang-Art und die animierte Profilkarte, die Premium enthält. Es ist kosmetische Art auf derselben Rating-Points-Leiter und bringt keinen Wettbewerbsvorteil.",
+    "codexLink": "Premium-Rang-Codex öffnen"
+  },
   premiumExtras: {
     "card": {
       "previewTag": "VORSCHAU",
@@ -43,12 +74,12 @@ export const pricing: TextBag["pricing"] = {
       "plus2": "Demnächst: ein Dankesbrief und E-Mail-Support unter support@ace-platform.gg, sobald es einen Checkout gibt.",
       "premiumTitle": "3. Was Premium enthält",
       "prem1": "Alles aus Plus.",
-      "prem2": "Premium-Rangkunst: das originale illustrierte A.C.E.-Emblemset auf deinem Profil.",
+      "prem2": "Premium-Rang-Art und der Premium-Rang-Codex: das original illustrierte A.C.E.-Emblem-Set auf deinem Profil. Nur kosmetisch, auf derselben Rating-Points-Leiter.",
       "prem3": "Die animierte Premium-Profilkarte.",
       "prem4": "Spezielle Abzeichen und das ELITE-SIEGEL.",
       "prem5": "Demnächst: erweiterte Matchanalyse (Todes-Heatmap, Headshot-Quote, Leistung pro Runde), sobald Demo-Auswertung existiert.",
-      "prem6": "Früher Zugang zu Beta-Funktionen, wenn eine Beta startet.",
-      "prem7": "Priorisierter Support mit einem Antwortziel von 72 Stunden. Das ist ein Ziel, keine Garantie.",
+      "prem6": "Demnächst: früher Zugang zu Beta-Funktionen, sobald eine Beta startet.",
+      "prem7": "Demnächst: bevorzugter Support für Premium-Mitglieder.",
       "neverTitle": "4. Was kein Plan enthält",
       "never": "Kein Plan verschafft einen Wettbewerbsvorteil. Kein Plan fügt Rating Points hinzu oder erhöht ein Rating. Kein Plan verschafft einen Matchmaking-Vorteil, eine Prioritätswarteschlange oder leichtere Gegner.",
       "soonTitle": "5. Demnächst-Funktionen",
@@ -87,11 +118,11 @@ export const pricing: TextBag["pricing"] = {
     plus: {
       name: "A.C.E. PLUS",
       note: "Plus",
-      title: "Dankesbrief und Hilfe",
+      title: "Spielerstatistiken und Support",
       points: [
         "Alles aus Free.",
-        "Demnächst: Der Dankesbrief (was enthalten ist, was nicht, und support@ace-platform.gg) öffnet sich erst, wenn es einen Checkout gibt. Heute ist der Button deaktiviert.",
-        "Kauft weder Wertung noch leichtere Gegner. Goldene Profilabzeichen stammen für jeden Spieler aus gespeicherten Matchdaten. Elite-Siegel und Sonderabzeichen erscheinen nur, wenn die gespeicherte Stufe bereits Premium ist.",
+        "Spielerstatistiken: dein Rating-Verlauf aus erfassten A.C.E.-Matches. Anzeigen für Headshot-% und Treffsicherheit folgen in Kürze.",
+        "Demnächst: ein Dankesbrief und E-Mail-Support unter support@ace-platform.gg, sobald es einen Checkout gibt. Plus kauft kein Rating und keine leichteren Gegner.",
       ],
     },
     premium: {
@@ -100,8 +131,8 @@ export const pricing: TextBag["pricing"] = {
       title: "Profilkunst, Abzeichen und Analyse",
       points: [
         "Alles aus Plus.",
-        "Premium-Rangkunst, die animierte Profilkarte, spezielle Abzeichen und das ELITE-SIEGEL.",
-        "Demnächst: erweiterte Matchanalyse, früher Beta-Zugang und priorisierter Support (Antwortziel 72 Stunden).",
+        "Premium-Rang-Art und der Premium-Rang-Codex, die animierte Profilkarte, Sonderabzeichen und das ELITE SEAL.",
+        "Demnächst: erweiterte Match-Analyse, früher Beta-Zugang und bevorzugter Support für Premium-Mitglieder.",
         "Kein Wettbewerbsvorteil: kein Rating-Points-Boost und kein Matchmaking-Vorteil.",
       ],
     },
@@ -216,9 +247,9 @@ export const pricing: TextBag["pricing"] = {
       metaDescription:
         "Der A.C.E.-Premium-Brief, der auf dieser Website angezeigt wird. Die Kasse ist nicht in Betrieb, daher wird nichts berechnet und keine E-Mail gesendet.",
       planName: "A.C.E. Premium",
-      nextLabel: "Weiter zu den Kadern",
+      nextLabel: "Premium-Bedingungen lesen",
       nextBody:
-        "Weiter zu den Kadern. Die Seite fragt, ob ihr ein Team aus fünf Spielern seid. Platz 1 ist das angemeldete Steam-Konto. Die Plätze 2 bis 5 sind die anderen Spieler. Auch das Speichern eines Clans berechnet diesen Preis nicht.",
+        "Premium umfasst Premium-Rang-Art, die animierte Profilkarte, Sonderabzeichen und das ELITE SEAL sowie alles aus Plus. Einen Clan unter Squads zu speichern ist für jedes Konto kostenlos.",
     },
   },
   letter: {

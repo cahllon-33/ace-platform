@@ -31,17 +31,17 @@ export const desk: TextBag["desk"] = {
       crown: {
         name: "Rámeček avataru Koruna A.C.E.",
         tag: "Ozdoba profilu",
-        price: "Součást tarifu Premium nebo {rp} RP",
+        price: "Již brzy",
       },
       shimmer: {
         name: "Zlatý laserový třpyt profilu",
         tag: "Přizpůsobení chatu",
-        price: "Součást tarifu Premium nebo {rp} RP",
+        price: "Již brzy",
       },
       pass: {
-        name: "Zlatá turnajová vstupenka Premium",
+        name: "Zlatá turnajová vstupenka",
         tag: "Žeton přístupu do ligy",
-        price: "{rp} RP / přednostní registrace",
+        price: "Již brzy",
       },
     },
   },

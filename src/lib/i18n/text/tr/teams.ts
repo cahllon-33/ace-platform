@@ -11,7 +11,7 @@ export const teams: TextBag["teams"] = {
     "lede": "Arka arkaya beş boş koltuk. Bir klan yalnızca Steam ile oturum açıp takım oluşturduktan sonra kaydedilir."
   },
   "gate": {
-    "kickerPremium": "Premium mektubundan sonra",
+    "kickerPremium": "Plan seçiminden sonra klan kaydı",
     "kickerDefault": "Klan kaydı",
     "title": "Beş kişilik bir takım mısınız?",
     "intro": "1. koltuk Steam ile oturum açmış oyuncudur. 2-5. koltuklarda zaten A.C.E. hesabı olmalı. Bir klan kaydetmek $7 tahsil etmez, e-posta göndermez ve klanı 100 takımlık tabloya yerleştirmez.",
@@ -35,11 +35,11 @@ export const teams: TextBag["teams"] = {
     "title": "Yazılı kurallardan sorular",
     "intro": "Bu masa yalnızca bu sayfada yayımlanan bilgileri okur. Hile tespit etmez, maç açmaz veya hesap değiştirmez.",
     "questionLabel": "Soru",
-    "placeholder": "Beş koltuk, $7 mektubu veya destek hakkında sorun",
+    "placeholder": "Beş koltuk, planlar veya destek hakkında sor",
     "ask": "Sor",
-    "fallback": "Bu masa yalnızca bu sayfadaki yazılı kurallara göre yanıt verir: Premium mektubu, beş koltuk, Steam OpenID ve Destek.",
+    "fallback": "Bu masa yalnızca bu sayfadaki yazılı kurallara göre yanıt verir: planlar, beş koltuk, Steam OpenID ve destek.",
     "facts": {
-      "email": "E-posta gönderilmez. Premium mektubu /premium/receipt adresinde kalır.",
+      "email": "E-posta gönderilmez. Plan makbuzları bu sitede kalır.",
       "charge": "Premium aylık $7'dır. Çok yakında: henüz ödeme sistemi yok, bu yüzden ücret alınmaz.",
       "board": "Kayıtlı bir klan bir kadro kaydıdır. 100 takımlık tabloya yerleştirilmez. Bir sezon açılana kadar tablo 0 kayıtlı gösterir.",
       "steam": "Oturum açma resmi Steam OpenID kullanır. A.C.E. asla Steam şifresi istemez. Bu sayfadan giderseniz Steam sizi buraya geri getirir.",

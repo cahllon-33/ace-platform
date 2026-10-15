@@ -31,17 +31,17 @@ export const desk: TextBag["desk"] = {
       crown: {
         name: "מסגרת אווטאר כתר A.C.E.",
         tag: "קישוט פרופיל",
-        price: "כלול בתוכנית Premium או {rp} RP",
+        price: "בקרוב",
       },
       shimmer: {
         name: "נצנוץ לייזר זהוב לפרופיל",
         tag: "התאמה אישית לצ'אט",
-        price: "כלול בתוכנית Premium או {rp} RP",
+        price: "בקרוב",
       },
       pass: {
-        name: "כרטיס זהב לטורניר Premium",
+        name: "כרטיס טורניר זהב",
         tag: "אסימון גישה לליגה",
-        price: "{rp} RP / כניסה בהרשמה בעדיפות",
+        price: "בקרוב",
       },
     },
   },

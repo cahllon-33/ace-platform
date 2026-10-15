@@ -1,6 +1,32 @@
 import type { TextBag } from "../types";
 
 export const account: TextBag["account"] = {
+  statsConsole: {
+    "metaTitle": "Spelarstatistik",
+    "kicker": "SPELARSTATISTIK",
+    "title": "Spelarstatistik",
+    "lede": "Ratingutveckling från dina registrerade A.C.E.-matcher, med mätare för headshot-% och träffsäkerhet. Ingår i A.C.E Plus (4 $/mån) och A.C.E Premium (7 $/mån).",
+    "movementTitle": "Ratingutveckling",
+    "movementNote": "Varje punkt är en ratingändring skriven från en registrerad A.C.E.-match.",
+    "noMatches": "Inga registrerade matcher än, så grafen är tom. Den fylls efter din första registrerade A.C.E.-match.",
+    "currentLabel": "Nuvarande rating",
+    "netLabel": "Nettoförändring",
+    "changesLabel": "Registrerade ändringar",
+    "hsTitle": "Headshot-%",
+    "accTitle": "Träffsäkerhet (träffar / skott)",
+    "gaugeSoon": "Kommer snart: dessa mätare kräver tolkning av matchdemos, som inte finns än.",
+    "soon": "Kommer snart",
+    "sample": "EXEMPEL · bara form, inte riktiga data",
+    "lockedTitle": "Spelarstatistik ingår i A.C.E Plus och Premium",
+    "lockedBody": "Din sparade plan är Free. Plus (4 $/mån) och Premium (7 $/mån) låser båda upp den här sidan. Kommer snart: betalning finns inte än.",
+    "signIn": "Logga in med Steam för att se din spelarstatistik.",
+    "plansLink": "Se planer",
+    "rosterNote": "Exempelprofil i truppen: de här spelarna har inga registrerade A.C.E.-matcher, så statistiken visar inga siffror.",
+    "dashTitle": "Statistik och analys",
+    "dashStats": "Öppna spelarstatistik",
+    "dashAnalysis": "Öppna matchanalys (Premium)",
+    "chartAria": "Diagram över ratingutveckling"
+  },
   "dashboard": {
     "meta": {
       "title": "Kommandocentral"

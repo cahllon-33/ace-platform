@@ -1,6 +1,13 @@
 import type { TextBag } from "../types";
 
 export const ranks: TextBag["ranks"] = {
+  premiumCodex: {
+    "kicker": "PREMIUM-ARVOMERKKIKOODEKSI",
+    "title": "Premium-arvomerkkikoodeksi",
+    "lede": "Kymmenen kuvitettua kristallitunnusta, yksi kutakin arvoa kohden. Tämä on kosmeettista profiilitaidetta samalla Rating Points -tikkaalla kuin vakioarvot. Se ei muuta reittausta, ottelunhakua eikä jonoa.",
+    "cosmetic": "Kosmeettinen taide · sama RP-tikas · vain A.C.E Premium 7 $/kk",
+    "imgAlt": "{name} Premium-arvomerkkitaide, taso {level}"
+  },
   premiumRanks: {
     kicker: "PREMIUM-ARVOT",
     plan: "A.C.E PREMIUM · vain 7 $/kk",

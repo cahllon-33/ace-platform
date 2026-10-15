@@ -28,17 +28,17 @@ export const desk: TextBag["desk"] = {
       "crown": {
         "name": "A.C.E. Crown okvir avatara",
         "tag": "Ukras profila",
-        "price": "Uključeno u Premium plan ili {rp} RP"
+        "price": "Uskoro"
       },
       "shimmer": {
         "name": "Zlatni laserski sjaj profila",
         "tag": "Prilagodba chata",
-        "price": "Uključeno u Premium plan ili {rp} RP"
+        "price": "Uskoro"
       },
       "pass": {
-        "name": "Premium turnirska Golden Pass propusnica",
+        "name": "Zlatna turnirska propusnica",
         "tag": "Token za pristup ligi",
-        "price": "{rp} RP / Prioritetna prijava"
+        "price": "Uskoro"
       }
     }
   },

@@ -1,6 +1,37 @@
 import type { TextBag } from "../types";
 
 export const pricing: TextBag["pricing"] = {
+  matrix: {
+    "kicker": "OMINAISUUSMATRIISI",
+    "title": "Jäsenyyksien vertailu",
+    "note": "Kultainen rasti: sisältyy. Viiva: ei sisälly. Tulossa: osa tilausta, mutta ei vielä julkaistu. Mikään tilaus ei osta reittausta, ottelunhakua tai jonoetua.",
+    "checkout": "Maksua ei vielä ole, joten tänään jokainen tili on Free.",
+    "feature": "Ominaisuus",
+    "included": "Sisältyy",
+    "notIncluded": "Ei sisälly",
+    "soon": "Tulossa",
+    "rows": {
+      "site": "Julkinen sivusto ja Steam OpenID -kirjautuminen",
+      "ladder": "Rating Points -tikas ja vakioarvomerkit",
+      "squads": "Viiden pelaajan klaanitietue Squadsissa",
+      "stats": "Pelaajatilastot: reittauksen kehityskaavio",
+      "gauges": "Pelaajatilastot: pääosuma-% ja tarkkuusmittarit",
+      "letter": "Kiitoskirje ja sähköpostituki",
+      "rankArt": "Premium-arvomerkkitaide ja arvomerkkikoodeksi",
+      "card": "Animoitu Premium-profiilikortti",
+      "badges": "Erikoismerkit ja ELITE SEAL",
+      "analysis": "Laajennettu otteluanalyysi",
+      "beta": "Varhainen pääsy beta-ominaisuuksiin",
+      "support": "Ensisijainen tuki Premium-jäsenille",
+      "advantage": "Reittausboosti, ottelunhaku- tai jonoetu"
+    }
+  },
+  plansR11: {
+    "termsPlusStats": "Pelaajatilastot: reittauksen kehityskaavio tallennetuista otteluista. Pääosuma-% ja tarkkuusmittarit tulossa pian.",
+    "codexTitle": "Premium-arvomerkkikoodeksi ja animoitu kortti",
+    "codexBody": "Tämä on Premiumiin sisältyvä arvomerkkitaide ja animoitu profiilikortti. Se on kosmeettista taidetta samalla Rating Points -tikkaalla eikä anna kilpailuetua.",
+    "codexLink": "Avaa Premium-arvomerkkikoodeksi"
+  },
   premiumExtras: {
     "card": {
       "previewTag": "ESIKATSELU",
@@ -43,12 +74,12 @@ export const pricing: TextBag["pricing"] = {
       "plus2": "Tulossa: kiitoskirje ja sähköpostituki osoitteessa support@ace-platform.gg, kun maksu on olemassa.",
       "premiumTitle": "3. Mitä Premium sisältää",
       "prem1": "Kaiken Plussan sisällön.",
-      "prem2": "Premium-arvokuvitus: alkuperäinen kuvitettu A.C.E.-tunnussarja profiilissasi.",
+      "prem2": "Premium-arvomerkkitaide ja Premium-arvomerkkikoodeksi: alkuperäinen kuvitettu A.C.E.-tunnussarja profiilissasi. Vain kosmeettinen, samalla Rating Points -tikkaalla.",
       "prem3": "Animoitu Premium-profiilikortti.",
       "prem4": "Erikoismerkit ja ELITE-SINETTI.",
       "prem5": "Tulossa: laajennettu otteluanalyysi (kuolemien lämpökartta, pääosuma-%, kierroskohtainen suoritus), kun demojen jäsennys on olemassa.",
-      "prem6": "Varhainen pääsy beta-ominaisuuksiin, kun beta avautuu.",
-      "prem7": "Etusijatuki 72 tunnin vastaustavoitteella. Tämä on tavoite, ei takuu.",
+      "prem6": "Tulossa: varhainen pääsy beta-ominaisuuksiin, kun beta avautuu.",
+      "prem7": "Tulossa: ensisijainen tuki Premium-jäsenille.",
       "neverTitle": "4. Mitä mikään tilaus ei sisällä",
       "never": "Mikään tilaus ei anna kilpailuetua. Mikään tilaus ei lisää Rating Pointseja eikä nosta luokitusta. Mikään tilaus ei anna etua otteluparituksessa, etusijajonoa tai helpompia vastustajia.",
       "soonTitle": "5. Tulossa-ominaisuudet",
@@ -86,11 +117,11 @@ export const pricing: TextBag["pricing"] = {
     "plus": {
       "name": "A.C.E. PLUS",
       "note": "Plus",
-      "title": "Kiitoskirje ja tuki",
+      "title": "Pelaajatilastot ja tuki",
       "points": [
         "Kaikki Free-paketin sisältö.",
-        "Tulossa pian: kiitoskirje (mitä sisältyy, mitä ei, ja support@ace-platform.gg) avautuu vasta, kun maksutoiminto on olemassa. Painike on tänään pois käytöstä.",
-        "Ei osta luokitusta tai helpompia vastustajia. Kultaiset profiilimerkit tulevat tallennetusta otteludatasta jokaiselle pelaajalle. Eliittisinetti ja erikoismerkit näkyvät vain, kun tallennettu taso on jo Premium."
+        "Pelaajatilastot: reittauksesi kehityskaavio tallennetuista A.C.E.-otteluista. Pääosuma-% ja tarkkuusmittarit tulossa pian.",
+        "Tulossa: kiitoskirje ja sähköpostituki osoitteessa support@ace-platform.gg, kun maksu on olemassa. Plus ei osta reittausta eikä helpompia vastustajia."
       ]
     },
     "premium": {
@@ -99,8 +130,8 @@ export const pricing: TextBag["pricing"] = {
       "title": "Profiilikuvitus, merkit ja analyysi",
       "points": [
         "Kaiken Plussan sisällön.",
-        "Premium-arvokuvitus, animoitu profiilikortti, erikoismerkit ja ELITE-SINETTI.",
-        "Tulossa: laajennettu otteluanalyysi, varhainen beta-pääsy ja etusijatuki (72 tunnin vastaustavoite).",
+        "Premium-arvomerkkitaide ja Premium-arvomerkkikoodeksi, animoitu profiilikortti, erikoismerkit ja ELITE SEAL.",
+        "Tulossa: laajennettu otteluanalyysi, varhainen beta-pääsy ja ensisijainen tuki Premium-jäsenille.",
         "Ei kilpailuetua: ei Rating Points -korotusta eikä etua otteluparituksessa."
       ]
     }
@@ -211,8 +242,8 @@ export const pricing: TextBag["pricing"] = {
       "metaTitle": "Premium-kuitti",
       "metaDescription": "Tällä sivustolla näytettävä A.C.E. Premium -kirje. Maksutoiminto ei ole käytössä, joten mitään ei veloiteta eikä sähköpostia lähetetä.",
       "planName": "A.C.E. Premium",
-      "nextLabel": "Jatka Squadsiin",
-      "nextBody": "Jatka Squadsiin. Sivu kysyy, oletteko viiden hengen joukkue. Paikka 1 on kirjautunut Steam-tili. Paikat 2–5 ovat muut pelaajat. Klaanin tallentaminen ei silti veloita tätä hintaa."
+      "nextLabel": "Lue Premium-ehdot",
+      "nextBody": "Premium sisältää Premium-arvomerkkitaiteen, animoidun profiilikortin, erikoismerkit ja ELITE SEALin sekä kaiken Plussasta. Klaanin tallentaminen Squadsiin on maksutonta jokaiselle tilille."
     }
   },
   "letter": {

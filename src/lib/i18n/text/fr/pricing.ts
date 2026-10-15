@@ -1,6 +1,37 @@
 import type { TextBag } from "../types";
 
 export const pricing: TextBag["pricing"] = {
+  matrix: {
+    "kicker": "MATRICE DES FONCTIONS",
+    "title": "Comparatif des abonnements",
+    "note": "Coche dorée : inclus. Tiret : non inclus. Bientôt : prévu dans l’offre mais pas encore sorti. Aucune offre n’achète de rating, de matchmaking ou de priorité de file.",
+    "checkout": "Le paiement n’existe pas encore : tous les comptes sont en Free aujourd’hui.",
+    "feature": "Fonction",
+    "included": "Inclus",
+    "notIncluded": "Non inclus",
+    "soon": "Bientôt",
+    "rows": {
+      "site": "Site public et connexion Steam OpenID",
+      "ladder": "Échelle de Rating Points et emblèmes de rang standard",
+      "squads": "Fiche de clan à cinq joueurs dans Squads",
+      "stats": "Statistiques joueur : graphique d’évolution du rating",
+      "gauges": "Statistiques joueur : jauges de % de headshots et de précision",
+      "letter": "Lettre de remerciement et support par e-mail",
+      "rankArt": "Art de rang Premium et codex des rangs",
+      "card": "Carte de profil Premium animée",
+      "badges": "Badges spéciaux et ELITE SEAL",
+      "analysis": "Analyse de match étendue",
+      "beta": "Accès anticipé aux fonctionnalités bêta",
+      "support": "Support prioritaire pour les membres Premium",
+      "advantage": "Bonus de rating, avantage de matchmaking ou de file"
+    }
+  },
+  plansR11: {
+    "termsPlusStats": "Statistiques joueur : ton graphique d’évolution du rating à partir des matchs enregistrés. Les jauges de % de headshots et de précision arrivent bientôt.",
+    "codexTitle": "Codex des rangs Premium et carte animée",
+    "codexBody": "Voici l’art de rang et la carte de profil animée inclus dans Premium. C’est un art cosmétique sur la même échelle de Rating Points, sans aucun avantage compétitif.",
+    "codexLink": "Ouvrir le codex des rangs Premium"
+  },
   premiumExtras: {
     "card": {
       "previewTag": "APERÇU",
@@ -43,12 +74,12 @@ export const pricing: TextBag["pricing"] = {
       "plus2": "Bientôt : une lettre de remerciement et une assistance par e-mail à support@ace-platform.gg, dès que le paiement existera.",
       "premiumTitle": "3. Ce qu'inclut Premium",
       "prem1": "Tout ce qu'inclut Plus.",
-      "prem2": "Visuels de rang Premium : le jeu original illustré d'emblèmes A.C.E. sur ton profil.",
+      "prem2": "L’art de rang Premium et le codex des rangs Premium : le jeu d’emblèmes A.C.E. illustré d’origine sur ton profil. Purement cosmétique, sur la même échelle de Rating Points.",
       "prem3": "La carte de profil Premium animée.",
       "prem4": "Des badges spéciaux et le SCEAU ELITE.",
       "prem5": "Bientôt : analyse de match avancée (carte de chaleur des morts, % de headshots, performance par manche), dès que l'analyse des démos existera.",
-      "prem6": "Accès anticipé aux fonctions bêta lorsqu'une bêta ouvre.",
-      "prem7": "Assistance prioritaire avec un objectif de réponse de 72 heures. C'est un objectif, pas une garantie.",
+      "prem6": "Bientôt : accès anticipé aux fonctionnalités bêta quand une bêta ouvrira.",
+      "prem7": "Bientôt : support prioritaire pour les membres Premium.",
       "neverTitle": "4. Ce qu'aucun forfait n'inclut",
       "never": "Aucun forfait ne donne d'avantage compétitif. Aucun forfait n'ajoute de Rating Points ni n'augmente un classement. Aucun forfait ne donne d'avantage de matchmaking, de file prioritaire ni d'adversaires plus faciles.",
       "soonTitle": "5. Fonctions à venir",
@@ -87,11 +118,11 @@ export const pricing: TextBag["pricing"] = {
     plus: {
       name: "A.C.E. PLUS",
       note: "Plus",
-      title: "Lettre de remerciement et assistance",
+      title: "Statistiques joueur et support",
       points: [
         "Tout ce qu'inclut Gratuit.",
-        "Bientôt disponible : la lettre de remerciement (ce qui est inclus, ce qui ne l'est pas, et support@ace-platform.gg) ne s'ouvre qu'une fois le paiement en place. Aujourd'hui, le bouton est désactivé.",
-        "N'achète ni classement ni adversaires plus faciles. Les badges dorés du profil proviennent des données de match enregistrées pour chaque joueur. Le sceau élite et les badges spéciaux n'apparaissent que si le palier enregistré est déjà Premium.",
+        "Statistiques joueur : ton graphique d’évolution du rating à partir des matchs A.C.E. enregistrés. Les jauges de % de headshots et de précision arrivent bientôt.",
+        "Bientôt : une lettre de remerciement et un support par e-mail à support@ace-platform.gg, dès que le paiement existera. Plus n’achète ni rating ni adversaires plus faciles.",
       ],
     },
     premium: {
@@ -100,8 +131,8 @@ export const pricing: TextBag["pricing"] = {
       title: "Visuels de profil, badges et analyse",
       points: [
         "Tout ce qu'inclut Plus.",
-        "Visuels de rang Premium, la carte de profil animée, des badges spéciaux et le SCEAU ELITE.",
-        "Bientôt : analyse de match avancée, accès anticipé aux bêtas et assistance prioritaire (objectif de réponse de 72 heures).",
+        "L’art de rang Premium et le codex des rangs Premium, la carte de profil animée, les badges spéciaux et l’ELITE SEAL.",
+        "Bientôt : analyse de match étendue, accès anticipé aux bêtas et support prioritaire pour les membres Premium.",
         "Aucun avantage compétitif : aucun bonus de Rating Points ni avantage de matchmaking.",
       ],
     },
@@ -216,9 +247,9 @@ export const pricing: TextBag["pricing"] = {
       metaDescription:
         "La lettre A.C.E. Premium affichée sur ce site. Le paiement n'est pas en ligne : rien n'est facturé et aucun e-mail n'est envoyé.",
       planName: "A.C.E. Premium",
-      nextLabel: "Continuer vers Escouades",
+      nextLabel: "Lire les conditions Premium",
       nextBody:
-        "Continuez vers Escouades. La page vous demandera si vous formez une équipe de cinq. La place 1 est le compte Steam connecté. Les places 2 à 5 sont les autres joueurs. Enregistrer un clan ne facture toujours pas ce prix.",
+        "Premium comprend l’art de rang Premium, la carte de profil animée, les badges spéciaux et l’ELITE SEAL, plus tout ce qu’inclut Plus. Enregistrer un clan dans Squads est gratuit pour tous les comptes.",
     },
   },
   letter: {

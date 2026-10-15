@@ -12,7 +12,7 @@ export const teams: TextBag["teams"] = {
     lede: "Fünf offene Plätze in einer Reihe. Ein Clan wird erst nach der Steam-Anmeldung und dem Anlegen einer Mannschaft gespeichert.",
   },
   gate: {
-    kickerPremium: "Nach dem Premium-Brief",
+    kickerPremium: "Clan-Eintrag nach deiner Planwahl",
     kickerDefault: "Clan-Eintrag",
     title: "Seid ihr eine Mannschaft aus fünf Spielern?",
     intro:
@@ -40,12 +40,12 @@ export const teams: TextBag["teams"] = {
     intro:
       "Dieses Pult liest nur die auf dieser Seite veröffentlichten Fakten. Es erkennt keine Cheats, öffnet kein Spiel und ändert kein Konto.",
     questionLabel: "Frage",
-    placeholder: "Frag nach den fünf Plätzen, dem $7-Brief oder der Hilfe",
+    placeholder: "Frag nach den fünf Plätzen, den Plänen oder dem Support",
     ask: "Fragen",
     fallback:
-      "Dieses Pult antwortet nur anhand der schriftlichen Regeln auf dieser Seite: dem Premium-Brief, den fünf Plätzen, Steam OpenID und der Hilfe.",
+      "Dieser Desk antwortet nur anhand der schriftlichen Regeln auf dieser Seite: Pläne, die fünf Plätze, Steam OpenID und Support.",
     facts: {
-      email: "Es wird keine E-Mail gesendet. Der Premium-Brief bleibt unter /premium/receipt.",
+      email: "Es wird keine E-Mail gesendet. Plan-Belege bleiben auf dieser Website.",
       charge:
         "Premium kostet $7 pro Monat. Demnächst: Es gibt noch keinen Checkout, daher wird nichts berechnet.",
       board:

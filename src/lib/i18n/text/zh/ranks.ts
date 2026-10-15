@@ -1,6 +1,13 @@
 import type { TextBag } from "../types";
 
 export const ranks: TextBag["ranks"] = {
+  premiumCodex: {
+    "kicker": "PREMIUM 段位图鉴",
+    "title": "Premium 段位图鉴",
+    "lede": "十枚插画水晶徽章，每个段位一枚。这是与标准段位同一 Rating Points 阶梯上的外观资料美术，不改变积分、匹配或排队。",
+    "cosmetic": "外观美术 · 同一 RP 阶梯 · 仅限 A.C.E Premium 每月 $7",
+    "imgAlt": "{name} Premium 段位美术，等级 {level}"
+  },
   premiumRanks: {
     kicker: "高级段位",
     plan: "A.C.E PREMIUM · 仅限每月 $7",

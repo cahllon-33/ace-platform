@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { connection } from "next/server";
 import { redirect } from "next/navigation";
 import { AntiCheatTelemetry } from "@/components/anti-cheat-telemetry";
@@ -15,7 +16,7 @@ import { RankArtPicker } from "@/components/rank-art-picker";
 import { canUsePremiumRankArt, effectiveRankArt, isPremiumPlan } from "@/server/rank-art";
 import { PremiumProfileCard, premiumCardLabels } from "@/components/premium-profile-card";
 import { playerBadges } from "@/lib/badges";
-import { hasEliteSeal } from "@/lib/pricing";
+import { hasEliteSeal, telemetryUnlocked } from "@/lib/pricing";
 import { formatRankLabelWith } from "@/lib/ranks";
 import { getPrisma } from "@/server/db";
 import { getText, getUi } from "@/server/locale";
@@ -146,6 +147,22 @@ export default async function DashboardPage() {
               labels={premiumCardLabels(await getText())}
             />
           ) : null}
+          <Panel className="ace-dash-links p-5">
+            <h2 className="text-sm font-semibold tracking-[0.12em] text-[#FFD700]">{text.account.statsConsole.dashTitle}</h2>
+            <div className="mt-3 flex flex-wrap gap-2">
+              <Link className="ace-codex-entry" href="/stats">
+                {text.account.statsConsole.dashStats}
+              </Link>
+              {isPremiumPlan(user.subscriptionTier) ? (
+                <Link className="ace-codex-entry" href="/analysis">
+                  {text.account.statsConsole.dashAnalysis}
+                </Link>
+              ) : null}
+            </div>
+            {!telemetryUnlocked(user.subscriptionTier) ? (
+              <p className="mt-2 text-xs leading-5 text-ace-muted">{text.account.statsConsole.lockedBody}</p>
+            ) : null}
+          </Panel>
           <RankEmblem level={user.rankLevel} art={effectiveRankArt(user)} />
           <RankArtPicker current={effectiveRankArt(user)} premiumAllowed={canUsePremiumRankArt(user.subscriptionTier)} />
         </div>

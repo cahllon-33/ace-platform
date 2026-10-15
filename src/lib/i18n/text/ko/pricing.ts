@@ -1,6 +1,37 @@
 import type { TextBag } from "../types";
 
 export const pricing: TextBag["pricing"] = {
+  matrix: {
+    "kicker": "기능 매트릭스",
+    "title": "멤버십 비교",
+    "note": "금색 체크: 포함. 대시: 미포함. 곧 제공: 플랜에 포함되지만 아직 출시되지 않음. 어떤 플랜도 레이팅, 매치메이킹, 대기열 우선권을 사지 않습니다.",
+    "checkout": "아직 결제가 없으므로 오늘 모든 계정은 Free입니다.",
+    "feature": "기능",
+    "included": "포함",
+    "notIncluded": "미포함",
+    "soon": "곧 제공",
+    "rows": {
+      "site": "공개 사이트와 Steam OpenID 로그인",
+      "ladder": "Rating Points 래더와 표준 랭크 엠블럼",
+      "squads": "Squads의 5인 클랜 기록",
+      "stats": "플레이어 통계: 레이팅 변화 그래프",
+      "gauges": "플레이어 통계: 헤드샷 %와 명중률 게이지",
+      "letter": "감사 편지와 이메일 지원",
+      "rankArt": "Premium 랭크 아트와 랭크 코덱스",
+      "card": "애니메이션 Premium 프로필 카드",
+      "badges": "특별 배지와 ELITE SEAL",
+      "analysis": "확장 경기 분석",
+      "beta": "베타 기능 조기 이용",
+      "support": "Premium 회원 우선 지원",
+      "advantage": "레이팅 부스트, 매치메이킹 또는 대기열 이점"
+    }
+  },
+  plansR11: {
+    "termsPlusStats": "플레이어 통계: 기록된 경기의 레이팅 변화 그래프. 헤드샷 %와 명중률 게이지는 곧 제공됩니다.",
+    "codexTitle": "Premium 랭크 코덱스와 애니메이션 카드",
+    "codexBody": "Premium에 포함된 랭크 아트와 애니메이션 프로필 카드입니다. 같은 Rating Points 래더 위의 외형용 아트이며 경쟁상 이점은 없습니다.",
+    "codexLink": "Premium 랭크 코덱스 열기"
+  },
   premiumExtras: {
     "card": {
       "previewTag": "미리보기",
@@ -43,12 +74,12 @@ export const pricing: TextBag["pricing"] = {
       "plus2": "곧 제공: 결제가 생기면 감사 편지와 support@ace-platform.gg 이메일 지원.",
       "premiumTitle": "3. Premium 포함 내용",
       "prem1": "Plus의 모든 것.",
-      "prem2": "프리미엄 랭크 아트: 프로필에 표시되는 오리지널 일러스트 A.C.E. 엠블럼 세트.",
+      "prem2": "Premium 랭크 아트와 Premium 랭크 코덱스: 프로필에 표시되는 A.C.E. 오리지널 일러스트 엠블럼 세트. 외형 전용이며 같은 Rating Points 래더 위에 있습니다.",
       "prem3": "애니메이션 Premium 프로필 카드.",
       "prem4": "특별 배지와 ELITE 인장.",
       "prem5": "곧 제공: 데모 분석이 생기면 확장 매치 분석(사망 히트맵, 헤드샷 %, 라운드별 성과).",
-      "prem6": "베타가 열리면 베타 기능 조기 이용.",
-      "prem7": "72시간 응답 목표의 우선 지원. 이는 목표이며 보장이 아닙니다.",
+      "prem6": "곧 제공: 베타가 열리면 베타 기능 조기 이용.",
+      "prem7": "곧 제공: Premium 회원 우선 지원.",
       "neverTitle": "4. 어떤 플랜에도 포함되지 않는 것",
       "never": "어떤 플랜도 경쟁상의 이점을 주지 않습니다. 어떤 플랜도 Rating Points를 추가하거나 레이팅을 올리지 않습니다. 어떤 플랜도 매치메이킹 이점, 우선 대기열, 더 쉬운 상대를 주지 않습니다.",
       "soonTitle": "5. 곧 제공되는 기능",
@@ -87,11 +118,11 @@ export const pricing: TextBag["pricing"] = {
     plus: {
       name: "A.C.E. PLUS",
       note: "Plus",
-      title: "감사 편지와 지원 안내",
+      title: "플레이어 통계 및 지원",
       points: [
         "무료 플랜의 모든 기능.",
-        "곧 제공: 감사 편지(포함 사항, 미포함 사항, support@ace-platform.gg)는 결제가 생긴 뒤에만 열립니다. 오늘은 버튼이 비활성화되어 있습니다.",
-        "레이팅이나 더 쉬운 상대를 사지 않습니다. 골드 프로필 배지는 모든 플레이어의 저장된 경기 데이터에서 나옵니다. 엘리트 인장과 특별 배지는 저장된 등급이 이미 Premium일 때만 표시됩니다.",
+        "플레이어 통계: 기록된 A.C.E. 경기의 레이팅 변화 그래프. 헤드샷 %와 명중률 게이지는 곧 제공됩니다.",
+        "곧 제공: 결제가 생기면 감사 편지와 support@ace-platform.gg 이메일 지원. Plus는 레이팅이나 더 쉬운 상대를 사지 않습니다.",
       ],
     },
     premium: {
@@ -100,8 +131,8 @@ export const pricing: TextBag["pricing"] = {
       title: "프로필 아트, 배지, 분석",
       points: [
         "Plus의 모든 것.",
-        "프리미엄 랭크 아트, 애니메이션 프로필 카드, 특별 배지, ELITE 인장.",
-        "곧 제공: 확장 매치 분석, 베타 조기 이용, 우선 지원(응답 목표 72시간).",
+        "Premium 랭크 아트와 Premium 랭크 코덱스, 애니메이션 프로필 카드, 특별 배지와 ELITE SEAL.",
+        "곧 제공: 확장 경기 분석, 베타 조기 이용, Premium 회원 우선 지원.",
         "경쟁상의 이점 없음: Rating Points 추가 없음, 매치메이킹 이점 없음.",
       ],
     },
@@ -216,9 +247,9 @@ export const pricing: TextBag["pricing"] = {
       metaDescription:
         "이 웹사이트에 표시되는 A.C.E. Premium 편지입니다. 결제가 운영 중이 아니므로 아무것도 청구되지 않으며 이메일도 발송되지 않습니다.",
       planName: "A.C.E. Premium",
-      nextLabel: "스쿼드로 계속하기",
+      nextLabel: "Premium 약관 읽기",
       nextBody:
-        "스쿼드로 계속하세요. 페이지에서 5인 팀인지 묻습니다. 1번 자리는 로그인한 Steam 계정입니다. 2번부터 5번 자리는 다른 플레이어입니다. 클랜을 저장해도 이 가격은 청구되지 않습니다.",
+        "Premium은 Premium 랭크 아트, 애니메이션 프로필 카드, 특별 배지와 ELITE SEAL에 Plus의 모든 것을 더한 것입니다. Squads에 클랜 저장은 모든 계정에 무료입니다.",
     },
   },
   letter: {

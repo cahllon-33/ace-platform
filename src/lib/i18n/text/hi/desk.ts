@@ -28,17 +28,17 @@ export const desk: TextBag["desk"] = {
       "crown": {
         "name": "A.C.E. Crown अवतार फ़्रेम",
         "tag": "प्रोफ़ाइल सजावट",
-        "price": "Premium प्लान में शामिल या {rp} RP"
+        "price": "जल्द आ रहा है"
       },
       "shimmer": {
         "name": "सुनहरी प्रोफ़ाइल लेज़र चमक",
         "tag": "चैट अनुकूलन",
-        "price": "Premium प्लान में शामिल या {rp} RP"
+        "price": "जल्द आ रहा है"
       },
       "pass": {
-        "name": "Premium टूर्नामेंट Golden Pass",
+        "name": "टूर्नामेंट गोल्डन पास",
         "tag": "लीग एक्सेस टोकन",
-        "price": "{rp} RP / प्राथमिकता पंजीकरण"
+        "price": "जल्द आ रहा है"
       }
     }
   },

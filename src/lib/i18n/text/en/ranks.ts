@@ -1,4 +1,11 @@
 ﻿export const ranks = {
+  premiumCodex: {
+    "kicker": "PREMIUM RANK CODEX",
+    "title": "Premium rank codex",
+    "lede": "Ten illustrated crystal emblems, one for each rank. This is cosmetic profile art on the same Rating Points ladder as the standard ranks. It changes no rating, no matchmaking and no queue.",
+    "cosmetic": "Cosmetic art · same RP ladder · A.C.E Premium $7/month only",
+    "imgAlt": "{name} Premium rank art, level {level}"
+  },
   meta: {
     title: "Competitive Ranks",
     description:

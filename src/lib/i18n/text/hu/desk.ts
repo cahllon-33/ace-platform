@@ -28,17 +28,17 @@ export const desk: TextBag["desk"] = {
       "crown": {
         "name": "A.C.E. Crown avatarkeret",
         "tag": "Profildísz",
-        "price": "A Premium csomag része vagy {rp} RP"
+        "price": "Hamarosan"
       },
       "shimmer": {
         "name": "Arany profil-lézercsillogás",
         "tag": "Csevegés testreszabása",
-        "price": "A Premium csomag része vagy {rp} RP"
+        "price": "Hamarosan"
       },
       "pass": {
-        "name": "Premium torna Golden Pass",
+        "name": "Arany versenybérlet",
         "tag": "Liga-hozzáférési token",
-        "price": "{rp} RP / Elsőbbségi nevezés"
+        "price": "Hamarosan"
       }
     }
   },

@@ -1,6 +1,32 @@
 import type { TextBag } from "../types";
 
 export const account: TextBag["account"] = {
+  statsConsole: {
+    "metaTitle": "Játékosstatisztika",
+    "kicker": "JÁTÉKOSSTATISZTIKA",
+    "title": "Játékosstatisztika",
+    "lede": "A rating alakulása a rögzített A.C.E. meccseidből, fejlövés-% és pontosság mérőkkel. Része az A.C.E Plusnak (4 $/hó) és az A.C.E Premiumnak (7 $/hó).",
+    "movementTitle": "Rating alakulása",
+    "movementNote": "Minden pont egy rögzített A.C.E. meccsből írt ratingváltozás.",
+    "noMatches": "Még nincs rögzített meccs, ezért a grafikon üres. Az első rögzített A.C.E. meccsed után feltöltődik.",
+    "currentLabel": "Jelenlegi rating",
+    "netLabel": "Nettó változás",
+    "changesLabel": "Rögzített változások",
+    "hsTitle": "Fejlövés-%",
+    "accTitle": "Pontosság (találat / lövés)",
+    "gaugeSoon": "Hamarosan: ezekhez a mérőkhöz meccsdemó-feldolgozás kell, ami még nem létezik.",
+    "soon": "Hamarosan",
+    "sample": "MINTA · csak forma, nem valós adat",
+    "lockedTitle": "A játékosstatisztika az A.C.E Plus és Premium része",
+    "lockedBody": "A tárolt csomagod Free. A Plus (4 $/hó) és a Premium (7 $/hó) is feloldja ezt az oldalt. Hamarosan: fizetés még nincs.",
+    "signIn": "Jelentkezz be Steammel a statisztikáid megtekintéséhez.",
+    "plansLink": "Csomagok megtekintése",
+    "rosterNote": "Minta keretprofil: ezeknek a játékosoknak nincs rögzített A.C.E. meccsük, ezért a statisztika nem mutat számokat.",
+    "dashTitle": "Statisztika és elemzés",
+    "dashStats": "Játékosstatisztika megnyitása",
+    "dashAnalysis": "Meccselemzés megnyitása (Premium)",
+    "chartAria": "Rating-alakulás diagram"
+  },
   "dashboard": {
     "meta": {
       "title": "Command Deck"

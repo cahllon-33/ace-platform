@@ -1,4 +1,35 @@
 ﻿export const pricing = {
+  matrix: {
+    "kicker": "FEATURE MATRIX",
+    "title": "Membership comparison",
+    "note": "Gold check: included. Dash: not included. Coming soon: part of the plan but not released yet. No plan buys rating, matchmaking or queue priority.",
+    "checkout": "Checkout does not exist yet, so every account is on Free today.",
+    "feature": "Feature",
+    "included": "Included",
+    "notIncluded": "Not included",
+    "soon": "Coming soon",
+    "rows": {
+      "site": "Public site and Steam OpenID sign-in",
+      "ladder": "Rating Points ladder and standard rank emblems",
+      "squads": "Five-player clan record on Squads",
+      "stats": "Player stats: rating movement graph",
+      "gauges": "Player stats: headshot % and accuracy gauges",
+      "letter": "Thank-you letter and email support",
+      "rankArt": "Premium rank art and rank codex",
+      "card": "Animated Premium profile card",
+      "badges": "Special badges and the ELITE SEAL",
+      "analysis": "Extended match analysis",
+      "beta": "Early access to beta features",
+      "support": "Priority support for Premium members",
+      "advantage": "Rating boost, matchmaking or queue advantage"
+    }
+  },
+  plansR11: {
+    "termsPlusStats": "Player stats: your rating movement graph from recorded matches. Headshot % and accuracy gauges are coming soon.",
+    "codexTitle": "Premium rank codex and animated card",
+    "codexBody": "This is the rank art and the animated profile card that Premium includes. It is cosmetic art on the same Rating Points ladder and gives no competitive advantage.",
+    "codexLink": "Open the Premium rank codex"
+  },
   premiumExtras: {
     "card": {
       "previewTag": "PREVIEW",
@@ -41,12 +72,12 @@
       "plus2": "Coming soon: a thank-you letter and email support at support@ace-platform.gg, once checkout exists.",
       "premiumTitle": "3. What Premium includes",
       "prem1": "Everything in Plus.",
-      "prem2": "Premium rank art: the original illustrated A.C.E. emblem set on your profile.",
+      "prem2": "Premium rank art and the Premium rank codex: the original illustrated A.C.E. emblem set on your profile. Cosmetic only, on the same Rating Points ladder.",
       "prem3": "The animated Premium profile card.",
       "prem4": "Special badges and the ELITE SEAL.",
       "prem5": "Coming soon: extended match analysis (death heatmap, headshot %, per-round performance), once demo parsing exists.",
-      "prem6": "Early access to beta features when a beta opens.",
-      "prem7": "Priority support with a response target of 72 hours. This is a target, not a guarantee.",
+      "prem6": "Coming soon: early access to beta features when a beta opens.",
+      "prem7": "Coming soon: priority support for Premium members.",
       "neverTitle": "4. What no plan includes",
       "never": "No plan gives a competitive advantage. No plan adds Rating Points or boosts a rating. No plan gives a matchmaking advantage, a priority queue or easier opponents.",
       "soonTitle": "5. Coming soon features",
@@ -85,11 +116,11 @@
     plus: {
       name: "A.C.E. PLUS",
       note: "Plus",
-      title: "Thank-you letter and support",
+      title: "Player stats and support",
       points: [
         "Everything in Free.",
-        "Coming soon: the thank-you letter (what is included, what is not, and support@ace-platform.gg) opens only after checkout exists. The button is disabled today.",
-        "Does not buy rating or easier opponents. Gold profile badges come from stored match data for every player. The elite seal and special badges show only when the stored tier is already Premium.",
+        "Player stats: your rating movement graph from recorded A.C.E. matches. Headshot % and accuracy gauges are coming soon.",
+        "Coming soon: a thank-you letter and email support at support@ace-platform.gg, once checkout exists. Plus does not buy rating or easier opponents.",
       ],
     },
     premium: {
@@ -98,8 +129,8 @@
       title: "Profile art, badges and analysis",
       points: [
         "Everything in Plus.",
-        "Premium rank art, the animated profile card, special badges and the ELITE SEAL.",
-        "Coming soon: extended match analysis, early beta access and priority support (72-hour response target).",
+        "Premium rank art and the Premium rank codex, the animated profile card, special badges and the ELITE SEAL.",
+        "Coming soon: extended match analysis, early beta access and priority support for Premium members.",
         "No competitive advantage: no Rating Points boost and no matchmaking advantage.",
       ],
     },
@@ -214,9 +245,9 @@
       metaDescription:
         "The A.C.E. Premium letter shown on this website. Checkout is not live, so nothing is charged and no email is sent.",
       planName: "A.C.E. Premium",
-      nextLabel: "Continue to Squads",
+      nextLabel: "Read the Premium terms",
       nextBody:
-        "Continue to Squads. The page will ask whether you are a team of five. Seat 1 is the signed-in Steam account. Seats 2 to 5 are the other players. Saving a clan still does not charge this price.",
+        "Premium is Premium rank art, the animated profile card, special badges and the ELITE SEAL, plus everything in Plus. Saving a clan on Squads is free for every account.",
     },
   },
   letter: {

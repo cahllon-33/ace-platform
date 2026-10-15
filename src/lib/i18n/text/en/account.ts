@@ -1,4 +1,30 @@
 ﻿export const account = {
+  statsConsole: {
+    "metaTitle": "Player stats",
+    "kicker": "PLAYER STATS",
+    "title": "Player stats",
+    "lede": "Rating movement from your recorded A.C.E. matches, with headshot % and accuracy gauges. Included in A.C.E Plus ($4/month) and A.C.E Premium ($7/month).",
+    "movementTitle": "Rating movement",
+    "movementNote": "Each point is a rating change written from a recorded A.C.E. match.",
+    "noMatches": "No recorded matches yet, so the graph is empty. It fills in after your first recorded A.C.E. match.",
+    "currentLabel": "Current rating",
+    "netLabel": "Net change",
+    "changesLabel": "Recorded changes",
+    "hsTitle": "Headshot %",
+    "accTitle": "Accuracy (hits / shots)",
+    "gaugeSoon": "Coming soon: these gauges need match demo parsing, which does not exist yet.",
+    "soon": "Coming soon",
+    "sample": "SAMPLE · shape only, not real data",
+    "lockedTitle": "Player stats are part of A.C.E Plus and Premium",
+    "lockedBody": "Your stored plan is Free. Plus ($4/month) and Premium ($7/month) both unlock this page. Coming soon: checkout does not exist yet.",
+    "signIn": "Sign in with Steam to see your player stats.",
+    "plansLink": "See plans",
+    "rosterNote": "Example roster profile: these players have no recorded A.C.E. matches, so the stats show no numbers.",
+    "dashTitle": "Stats and analysis",
+    "dashStats": "Open player stats",
+    "dashAnalysis": "Open match analysis (Premium)",
+    "chartAria": "Rating movement chart"
+  },
   dashboard: {
     meta: {
       title: "Command Deck",

@@ -28,17 +28,17 @@ export const desk: TextBag["desk"] = {
       "crown": {
         "name": "A.C.E. Kron-avatarram",
         "tag": "Profildekor",
-        "price": "Ingår i Premium-planen eller {rp} RP"
+        "price": "Kommer snart"
       },
       "shimmer": {
         "name": "Gyllene laserskimmer för profilen",
         "tag": "Chattanpassning",
-        "price": "Ingår i Premium-planen eller {rp} RP"
+        "price": "Kommer snart"
       },
       "pass": {
-        "name": "Premium-turneringens guldpass",
+        "name": "Gyllene turneringspass",
         "tag": "Ligaåtkomsttoken",
-        "price": "{rp} RP / Prioriterad registrering"
+        "price": "Kommer snart"
       }
     }
   },

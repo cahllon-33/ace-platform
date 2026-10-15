@@ -1,5 +1,8 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { LegalDocument, LegalSection } from "@/components/legal-document";
+import { PremiumProfileCardPreview } from "@/components/premium-profile-card";
+import { PremiumRankCodex } from "@/components/premium-rank-codex";
 import { interpolate } from "@/lib/i18n";
 import { FREE_PRICE, PLUS_PRICE, PREMIUM_PRICE } from "@/lib/pricing";
 import { getLocaleId, getText } from "@/server/locale";
@@ -23,6 +26,7 @@ export default async function PremiumTermsPage() {
       <LegalSection title={t.plusTitle}>
         <ul className="list-disc space-y-1 pl-5">
           <li>{t.plus1}</li>
+          <li>{text.pricing.plansR11.termsPlusStats}</li>
           <li>{t.plus2}</li>
         </ul>
       </LegalSection>
@@ -32,6 +36,16 @@ export default async function PremiumTermsPage() {
             <li key={line}>{line}</li>
           ))}
         </ul>
+      </LegalSection>
+      <LegalSection title={text.pricing.plansR11.codexTitle}>
+        <p>{text.pricing.plansR11.codexBody}</p>
+        <PremiumProfileCardPreview text={text} />
+        <PremiumRankCodex text={text} headingId="terms-rank-codex" />
+        <p className="mt-3">
+          <Link className="ace-codex-entry" href="/ranks#premium">
+            {text.pricing.plansR11.codexLink}
+          </Link>
+        </p>
       </LegalSection>
       <LegalSection title={t.neverTitle}>
         <p className="font-semibold text-[#F5F3EC]">{t.never}</p>

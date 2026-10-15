@@ -1,6 +1,37 @@
 import type { TextBag } from "../types";
 
 export const pricing: TextBag["pricing"] = {
+  matrix: {
+    "kicker": "ÖZELLİK MATRİSİ",
+    "title": "Üyelik karşılaştırması",
+    "note": "Altın onay: dahil. Çizgi: dahil değil. Yakında: planın parçası ama henüz yayınlanmadı. Hiçbir plan reyting, eşleştirme veya sıra önceliği satın almaz.",
+    "checkout": "Ödeme sistemi henüz yok; bu yüzden bugün her hesap Free'de.",
+    "feature": "Özellik",
+    "included": "Dahil",
+    "notIncluded": "Dahil değil",
+    "soon": "Yakında",
+    "rows": {
+      "site": "Herkese açık site ve Steam OpenID girişi",
+      "ladder": "Rating Points merdiveni ve standart rütbe amblemleri",
+      "squads": "Squads'ta beş oyunculu klan kaydı",
+      "stats": "Oyuncu istatistikleri: reyting değişim grafiği",
+      "gauges": "Oyuncu istatistikleri: kafa vuruşu % ve isabet göstergeleri",
+      "letter": "Teşekkür mektubu ve e-posta desteği",
+      "rankArt": "Premium rütbe sanatı ve rütbe kodeksi",
+      "card": "Animasyonlu Premium profil kartı",
+      "badges": "Özel rozetler ve ELITE SEAL",
+      "analysis": "Genişletilmiş maç analizi",
+      "beta": "Beta özelliklerine erken erişim",
+      "support": "Premium üyeler için öncelikli destek",
+      "advantage": "Reyting artışı, eşleştirme veya sıra avantajı"
+    }
+  },
+  plansR11: {
+    "termsPlusStats": "Oyuncu istatistikleri: kayıtlı maçlardan reyting değişim grafiğin. Kafa vuruşu % ve isabet göstergeleri yakında.",
+    "codexTitle": "Premium rütbe kodeksi ve animasyonlu kart",
+    "codexBody": "Bu, Premium'un içerdiği rütbe sanatı ve animasyonlu profil kartıdır. Aynı Rating Points merdiveninde kozmetik sanattır ve rekabet avantajı sağlamaz.",
+    "codexLink": "Premium rütbe kodeksini aç"
+  },
   premiumExtras: {
     "card": {
       "previewTag": "ÖNİZLEME",
@@ -43,12 +74,12 @@ export const pricing: TextBag["pricing"] = {
       "plus2": "Yakında: ödeme var olduğunda bir teşekkür mektubu ve support@ace-platform.gg üzerinden e-posta desteği.",
       "premiumTitle": "3. Premium neleri içerir",
       "prem1": "Plus'taki her şey.",
-      "prem2": "Premium rütbe görselleri: profilinde orijinal resimli A.C.E. amblem seti.",
+      "prem2": "Premium rütbe sanatı ve Premium rütbe kodeksi: profilinde orijinal resimli A.C.E. amblem seti. Yalnızca kozmetik, aynı Rating Points merdiveninde.",
       "prem3": "Animasyonlu Premium profil kartı.",
       "prem4": "Özel rozetler ve ELITE MÜHRÜ.",
       "prem5": "Yakında: demo ayrıştırma var olduğunda gelişmiş maç analizi (ölüm ısı haritası, headshot %, raunt bazında performans).",
-      "prem6": "Bir beta açıldığında beta özelliklerine erken erişim.",
-      "prem7": "72 saatlik yanıt hedefiyle öncelikli destek. Bu bir hedeftir, garanti değildir.",
+      "prem6": "Yakında: bir beta açıldığında beta özelliklerine erken erişim.",
+      "prem7": "Yakında: Premium üyeler için öncelikli destek.",
       "neverTitle": "4. Hiçbir planın içermedikleri",
       "never": "Hiçbir plan rekabet avantajı sağlamaz. Hiçbir plan Rating Points eklemez veya reytingi artırmaz. Hiçbir plan eşleştirme avantajı, öncelikli sıra veya daha kolay rakipler sağlamaz.",
       "soonTitle": "5. Yakında gelecek özellikler",
@@ -86,11 +117,11 @@ export const pricing: TextBag["pricing"] = {
     "plus": {
       "name": "A.C.E. PLUS",
       "note": "Plus",
-      "title": "Teşekkür mektubu ve destek",
+      "title": "Oyuncu istatistikleri ve destek",
       "points": [
         "Free'deki her şey.",
-        "Çok yakında: teşekkür mektubu (neyin dahil olduğu, neyin olmadığı ve support@ace-platform.gg) yalnızca ödeme sistemi olduğunda açılır. Düğme bugün devre dışıdır.",
-        "Derece veya daha kolay rakip satın almaz. Altın profil rozetleri her oyuncu için kayıtlı maç verilerinden gelir. Elit mühür ve özel rozetler yalnızca kayıtlı kademe zaten Premium olduğunda görünür."
+        "Oyuncu istatistikleri: kayıtlı A.C.E. maçlarından reyting değişim grafiğin. Kafa vuruşu % ve isabet göstergeleri yakında.",
+        "Yakında: ödeme sistemi açıldığında bir teşekkür mektubu ve support@ace-platform.gg üzerinden e-posta desteği. Plus reyting ya da daha kolay rakip satın almaz."
       ]
     },
     "premium": {
@@ -99,8 +130,8 @@ export const pricing: TextBag["pricing"] = {
       "title": "Profil görselleri, rozetler ve analiz",
       "points": [
         "Plus'taki her şey.",
-        "Premium rütbe görselleri, animasyonlu profil kartı, özel rozetler ve ELITE MÜHRÜ.",
-        "Yakında: gelişmiş maç analizi, erken beta erişimi ve öncelikli destek (72 saatlik yanıt hedefi).",
+        "Premium rütbe sanatı ve Premium rütbe kodeksi, animasyonlu profil kartı, özel rozetler ve ELITE SEAL.",
+        "Yakında: genişletilmiş maç analizi, erken beta erişimi ve Premium üyeler için öncelikli destek.",
         "Rekabet avantajı yok: Rating Points artışı yok, eşleştirme avantajı yok."
       ]
     }
@@ -211,8 +242,8 @@ export const pricing: TextBag["pricing"] = {
       "metaTitle": "Premium makbuzu",
       "metaDescription": "Bu sitede gösterilen A.C.E. Premium mektubu. Ödeme aktif değil, bu yüzden ücret alınmaz ve e-posta gönderilmez.",
       "planName": "A.C.E. Premium",
-      "nextLabel": "Timler'e devam et",
-      "nextBody": "Timler'e devam edin. Sayfa beş kişilik bir takım olup olmadığınızı soracak. 1. koltuk oturum açmış Steam hesabıdır. 2-5. koltuklar diğer oyunculardır. Bir klan kaydetmek de bu ücreti tahsil etmez."
+      "nextLabel": "Premium koşullarını oku",
+      "nextBody": "Premium; Premium rütbe sanatı, animasyonlu profil kartı, özel rozetler ve ELITE SEAL ile Plus'taki her şeydir. Squads'ta klan kaydetmek her hesap için ücretsizdir."
     }
   },
   "letter": {

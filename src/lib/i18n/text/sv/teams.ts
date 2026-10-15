@@ -11,7 +11,7 @@ export const teams: TextBag["teams"] = {
     "lede": "Fem öppna platser i rad. En klan sparas först efter Steam-inloggning och ett skapat lag."
   },
   "gate": {
-    "kickerPremium": "Efter Premium-brevet",
+    "kickerPremium": "Klanpost efter ditt planval",
     "kickerDefault": "Klanpost",
     "title": "Är ni ett lag på fem?",
     "intro": "Plats 1 är spelaren som är inloggad med Steam. Plats 2 till 5 måste redan ha A.C.E.-konton. Att spara en klan debiterar inte $7, skickar ingen e-post och placerar inte klanen på 100-lagstavlan.",
@@ -35,11 +35,11 @@ export const teams: TextBag["teams"] = {
     "title": "Frågor utifrån de skrivna reglerna",
     "intro": "Den här desken läser bara fakta som publiceras på den här sidan. Den upptäcker inte fusk, öppnar ingen match och ändrar inget konto.",
     "questionLabel": "Fråga",
-    "placeholder": "Fråga om de fem platserna, $7-brevet eller support",
+    "placeholder": "Fråga om de fem platserna, planer eller support",
     "ask": "Fråga",
-    "fallback": "Den här desken svarar bara utifrån de skrivna reglerna på sidan: Premium-brevet, de fem platserna, Steam OpenID och Support.",
+    "fallback": "Den här disken svarar bara utifrån de skrivna reglerna på sidan: planer, de fem platserna, Steam OpenID och support.",
     "facts": {
-      "email": "Inget e-postmeddelande skickas. Premium-brevet finns kvar på /premium/receipt.",
+      "email": "Inget e-postmeddelande skickas. Plankvitton stannar på den här webbplatsen.",
       "charge": "Premium kostar $7 per månad. Kommer snart: det finns ingen betalning än, så inget debiteras.",
       "board": "En sparad klan är en truppost. Den placeras inte på 100-lagstavlan. Tavlan visar 0 registrerade tills en säsong öppnar.",
       "steam": "Inloggningen använder officiellt Steam OpenID. A.C.E. ber aldrig om ett Steam-lösenord. Från den här sidan skickar Steam dig tillbaka hit.",

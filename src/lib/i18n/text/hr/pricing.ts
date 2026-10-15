@@ -1,6 +1,37 @@
 import type { TextBag } from "../types";
 
 export const pricing: TextBag["pricing"] = {
+  matrix: {
+    "kicker": "MATRICA ZNAČAJKI",
+    "title": "Usporedba članstava",
+    "note": "Zlatna kvačica: uključeno. Crtica: nije uključeno. Uskoro: dio plana, ali još nije objavljeno. Nijedan plan ne kupuje rating, matchmaking ni prednost u redu.",
+    "checkout": "Naplata još ne postoji, pa je danas svaki račun na Free.",
+    "feature": "Značajka",
+    "included": "Uključeno",
+    "notIncluded": "Nije uključeno",
+    "soon": "Uskoro",
+    "rows": {
+      "site": "Javna stranica i prijava putem Steam OpenID",
+      "ladder": "Ljestvica Rating Points i standardni amblemi rangova",
+      "squads": "Zapis klana od pet igrača u Squads",
+      "stats": "Statistika igrača: grafikon kretanja ratinga",
+      "gauges": "Statistika igrača: pokazatelji % headshotova i preciznosti",
+      "letter": "Pismo zahvale i podrška e-poštom",
+      "rankArt": "Premium umjetnost rangova i kodeks rangova",
+      "card": "Animirana Premium kartica profila",
+      "badges": "Posebne značke i ELITE SEAL",
+      "analysis": "Proširena analiza mečeva",
+      "beta": "Rani pristup beta značajkama",
+      "support": "Prioritetna podrška za Premium članove",
+      "advantage": "Povećanje ratinga, prednost u matchmakingu ili redu"
+    }
+  },
+  plansR11: {
+    "termsPlusStats": "Statistika igrača: grafikon kretanja ratinga iz zabilježenih mečeva. Pokazatelji % headshotova i preciznosti uskoro.",
+    "codexTitle": "Premium kodeks rangova i animirana kartica",
+    "codexBody": "Ovo su umjetnost rangova i animirana kartica profila koje Premium uključuje. To je kozmetika na istoj ljestvici Rating Points bez natjecateljske prednosti.",
+    "codexLink": "Otvori Premium kodeks rangova"
+  },
   premiumExtras: {
     "card": {
       "previewTag": "PREGLED",
@@ -43,12 +74,12 @@ export const pricing: TextBag["pricing"] = {
       "plus2": "Uskoro: zahvalnica i podrška e-poštom na support@ace-platform.gg, kad bude postojalo plaćanje.",
       "premiumTitle": "3. Što uključuje Premium",
       "prem1": "Sve iz Plus.",
-      "prem2": "Premium grafika rangova: izvorni ilustrirani set amblema A.C.E. na tvom profilu.",
+      "prem2": "Premium umjetnost rangova i Premium kodeks rangova: originalni ilustrirani A.C.E. set amblema na tvom profilu. Samo kozmetika, na istoj ljestvici Rating Points.",
       "prem3": "Animirana Premium kartica profila.",
       "prem4": "Posebne značke i PEČAT ELITE.",
       "prem5": "Uskoro: proširena analiza meča (toplinska karta smrti, % headshotova, učinak po rundi), kad bude postojala obrada demo snimki.",
-      "prem6": "Rani pristup beta značajkama kad se beta otvori.",
-      "prem7": "Prioritetna podrška s ciljanim vremenom odgovora od 72 sata. To je cilj, ne jamstvo.",
+      "prem6": "Uskoro: rani pristup beta značajkama kad se beta otvori.",
+      "prem7": "Uskoro: prioritetna podrška za Premium članove.",
       "neverTitle": "4. Što ne uključuje nijedan plan",
       "never": "Nijedan plan ne daje natjecateljsku prednost. Nijedan plan ne dodaje Rating Points niti povećava rejting. Nijedan plan ne daje prednost pri sparivanju, prioritetni red ni lakše protivnike.",
       "soonTitle": "5. Značajke „Uskoro“",
@@ -86,11 +117,11 @@ export const pricing: TextBag["pricing"] = {
     "plus": {
       "name": "A.C.E. PLUS",
       "note": "Plus",
-      "title": "Zahvalnica i podrška",
+      "title": "Statistika igrača i podrška",
       "points": [
         "Sve iz plana Free.",
-        "Uskoro: zahvalnica (što je uključeno, što nije, i support@ace-platform.gg) otvara se tek kad postoji plaćanje. Gumb je danas onemogućen.",
-        "Ne kupuje rejting ni lakše protivnike. Zlatne profilne značke dolaze iz spremljenih podataka mečeva za svakog igrača. Elitni pečat i posebne značke prikazuju se samo kad je spremljena razina već Premium."
+        "Statistika igrača: grafikon kretanja ratinga iz zabilježenih A.C.E. mečeva. Pokazatelji % headshotova i preciznosti uskoro.",
+        "Uskoro: pismo zahvale i podrška e-poštom na support@ace-platform.gg, kad naplata bude postojala. Plus ne kupuje rating ni lakše protivnike."
       ]
     },
     "premium": {
@@ -99,8 +130,8 @@ export const pricing: TextBag["pricing"] = {
       "title": "Grafika profila, značke i analiza",
       "points": [
         "Sve iz Plus.",
-        "Premium grafika rangova, animirana kartica profila, posebne značke i PEČAT ELITE.",
-        "Uskoro: proširena analiza meča, rani pristup beti i prioritetna podrška (cilj odgovora 72 sata).",
+        "Premium umjetnost rangova i Premium kodeks rangova, animirana kartica profila, posebne značke i ELITE SEAL.",
+        "Uskoro: proširena analiza mečeva, rani pristup beta verzijama i prioritetna podrška za Premium članove.",
         "Bez natjecateljske prednosti: bez povećanja Rating Pointsa i bez prednosti pri sparivanju."
       ]
     }
@@ -211,8 +242,8 @@ export const pricing: TextBag["pricing"] = {
       "metaTitle": "Premium potvrda",
       "metaDescription": "A.C.E. Premium pismo prikazano na ovoj stranici. Plaćanje nije aktivno, pa se ništa ne naplaćuje i ne šalje se e-pošta.",
       "planName": "A.C.E. Premium",
-      "nextLabel": "Nastavi na Squads",
-      "nextBody": "Nastavi na Squads. Stranica će pitati jeste li tim od pet. Mjesto 1 je prijavljeni Steam račun. Mjesta 2 do 5 su ostali igrači. Spremanje klana ni tada ne naplaćuje ovu cijenu."
+      "nextLabel": "Pročitaj Premium uvjete",
+      "nextBody": "Premium čine Premium umjetnost rangova, animirana kartica profila, posebne značke i ELITE SEAL te sve iz Plusa. Spremanje klana u Squads besplatno je za svaki račun."
     }
   },
   "letter": {

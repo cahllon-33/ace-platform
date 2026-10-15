@@ -1,6 +1,13 @@
 import type { TextBag } from "../types";
 
 export const ranks: TextBag["ranks"] = {
+  premiumCodex: {
+    "kicker": "プレミアムランク・コーデックス",
+    "title": "プレミアムランク・コーデックス",
+    "lede": "ランクごとに1つ、計10個のイラストのクリスタルエンブレム。標準ランクと同じRating Pointsラダー上の見た目だけのプロフィールアートです。レーティング、マッチメイキング、キューは変わりません。",
+    "cosmetic": "見た目のアート · 同じRPラダー · A.C.E Premium 月額$7のみ",
+    "imgAlt": "{name}のPremiumランクアート、レベル{level}"
+  },
   premiumRanks: {
     kicker: "プレミアムランク",
     plan: "A.C.E PREMIUM · 月額$7のみ",

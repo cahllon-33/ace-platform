@@ -1,6 +1,32 @@
 import type { TextBag } from "../types";
 
 export const account: TextBag["account"] = {
+  statsConsole: {
+    "metaTitle": "Pelaajatilastot",
+    "kicker": "PELAAJATILASTOT",
+    "title": "Pelaajatilastot",
+    "lede": "Reittauksen kehitys tallennetuista A.C.E.-otteluistasi pääosuma-% ja tarkkuusmittareineen. Sisältyy A.C.E Plussaan (4 $/kk) ja A.C.E Premiumiin (7 $/kk).",
+    "movementTitle": "Reittauksen kehitys",
+    "movementNote": "Jokainen piste on tallennetusta A.C.E.-ottelusta kirjattu reittausmuutos.",
+    "noMatches": "Tallennettuja otteluita ei vielä ole, joten kaavio on tyhjä. Se täyttyy ensimmäisen tallennetun A.C.E.-ottelusi jälkeen.",
+    "currentLabel": "Nykyinen reittaus",
+    "netLabel": "Nettomuutos",
+    "changesLabel": "Tallennetut muutokset",
+    "hsTitle": "Pääosuma-%",
+    "accTitle": "Tarkkuus (osumat / laukaukset)",
+    "gaugeSoon": "Tulossa: nämä mittarit vaativat otteludemojen jäsennyksen, jota ei vielä ole.",
+    "soon": "Tulossa",
+    "sample": "ESIMERKKI · vain muoto, ei oikeaa dataa",
+    "lockedTitle": "Pelaajatilastot kuuluvat A.C.E Plussaan ja Premiumiin",
+    "lockedBody": "Tallennettu tilauksesi on Free. Plus (4 $/kk) ja Premium (7 $/kk) avaavat tämän sivun. Tulossa: maksua ei vielä ole.",
+    "signIn": "Kirjaudu Steamilla nähdäksesi pelaajatilastosi.",
+    "plansLink": "Katso tilaukset",
+    "rosterNote": "Esimerkkikokoonpanon profiili: näillä pelaajilla ei ole tallennettuja A.C.E.-otteluita, joten tilastot eivät näytä lukuja.",
+    "dashTitle": "Tilastot ja analyysi",
+    "dashStats": "Avaa pelaajatilastot",
+    "dashAnalysis": "Avaa otteluanalyysi (Premium)",
+    "chartAria": "Reittauksen kehityskaavio"
+  },
   "dashboard": {
     "meta": {
       "title": "Command Deck"

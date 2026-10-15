@@ -28,17 +28,17 @@ export const desk: TextBag["desk"] = {
       "crown": {
         "name": "A.C.E. Crown -avatarkehys",
         "tag": "Profiilikoriste",
-        "price": "Sisältyy Premium-pakettiin tai {rp} RP"
+        "price": "Tulossa pian"
       },
       "shimmer": {
         "name": "Kultainen profiilin laserhohde",
         "tag": "Chatin mukautus",
-        "price": "Sisältyy Premium-pakettiin tai {rp} RP"
+        "price": "Tulossa pian"
       },
       "pass": {
-        "name": "Premium-turnauksen kultainen passi",
+        "name": "Turnauksen kultapassi",
         "tag": "Liigan pääsytunnus",
-        "price": "{rp} RP / Etusijailmoittautuminen"
+        "price": "Tulossa pian"
       }
     }
   },

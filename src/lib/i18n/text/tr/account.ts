@@ -1,6 +1,32 @@
 import type { TextBag } from "../types";
 
 export const account: TextBag["account"] = {
+  statsConsole: {
+    "metaTitle": "Oyuncu istatistikleri",
+    "kicker": "OYUNCU İSTATİSTİKLERİ",
+    "title": "Oyuncu istatistikleri",
+    "lede": "Kayıtlı A.C.E. maçlarından reyting değişimi, kafa vuruşu % ve isabet göstergeleriyle. A.C.E Plus (4 $/ay) ve A.C.E Premium (7 $/ay) içinde.",
+    "movementTitle": "Reyting değişimi",
+    "movementNote": "Her nokta, kayıtlı bir A.C.E. maçından yazılan bir reyting değişikliğidir.",
+    "noMatches": "Henüz kayıtlı maç yok, bu yüzden grafik boş. İlk kayıtlı A.C.E. maçından sonra dolar.",
+    "currentLabel": "Mevcut reyting",
+    "netLabel": "Net değişim",
+    "changesLabel": "Kayıtlı değişiklikler",
+    "hsTitle": "Kafa vuruşu %",
+    "accTitle": "İsabet (vuruş / atış)",
+    "gaugeSoon": "Yakında: bu göstergeler henüz var olmayan maç demosu ayrıştırmasına ihtiyaç duyar.",
+    "soon": "Yakında",
+    "sample": "ÖRNEK · yalnızca şekil, gerçek veri değil",
+    "lockedTitle": "Oyuncu istatistikleri A.C.E Plus ve Premium'a dahildir",
+    "lockedBody": "Kayıtlı planın Free. Plus (4 $/ay) ve Premium (7 $/ay) bu sayfayı açar. Yakında: ödeme sistemi henüz yok.",
+    "signIn": "Oyuncu istatistiklerini görmek için Steam ile giriş yap.",
+    "plansLink": "Planları gör",
+    "rosterNote": "Örnek kadro profili: bu oyuncuların kayıtlı A.C.E. maçı yok, bu yüzden istatistikler sayı göstermez.",
+    "dashTitle": "İstatistik ve analiz",
+    "dashStats": "Oyuncu istatistiklerini aç",
+    "dashAnalysis": "Maç analizini aç (Premium)",
+    "chartAria": "Reyting değişim grafiği"
+  },
   "dashboard": {
     "meta": {
       "title": "Komuta Merkezi"

@@ -67,3 +67,37 @@ export const PLAN_COMPARE_COLUMNS = [
   { id: "plus", price: PLUS_PRICE, monthly: true },
   { id: "premium", price: PREMIUM_PRICE, monthly: true },
 ] as const;
+
+/** Feature matrix: "yes" = included today, "soon" = in the plan but not released, "no" = not included. */
+export type MatrixCell = "yes" | "soon" | "no";
+
+export type PlanMatrixRowId =
+  | "site"
+  | "ladder"
+  | "squads"
+  | "stats"
+  | "gauges"
+  | "letter"
+  | "rankArt"
+  | "card"
+  | "badges"
+  | "analysis"
+  | "beta"
+  | "support"
+  | "advantage";
+
+export const PLAN_MATRIX: { id: PlanMatrixRowId; free: MatrixCell; plus: MatrixCell; premium: MatrixCell }[] = [
+  { id: "site", free: "yes", plus: "yes", premium: "yes" },
+  { id: "ladder", free: "yes", plus: "yes", premium: "yes" },
+  { id: "squads", free: "yes", plus: "yes", premium: "yes" },
+  { id: "stats", free: "no", plus: "yes", premium: "yes" },
+  { id: "gauges", free: "no", plus: "soon", premium: "soon" },
+  { id: "letter", free: "no", plus: "soon", premium: "soon" },
+  { id: "rankArt", free: "no", plus: "no", premium: "yes" },
+  { id: "card", free: "no", plus: "no", premium: "yes" },
+  { id: "badges", free: "no", plus: "no", premium: "yes" },
+  { id: "analysis", free: "no", plus: "no", premium: "soon" },
+  { id: "beta", free: "no", plus: "no", premium: "soon" },
+  { id: "support", free: "no", plus: "no", premium: "soon" },
+  { id: "advantage", free: "no", plus: "no", premium: "no" },
+];

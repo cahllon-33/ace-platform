@@ -1,6 +1,37 @@
 import type { TextBag } from "../types";
 
 export const pricing: TextBag["pricing"] = {
+  matrix: {
+    "kicker": "MATRICEA FUNCȚIILOR",
+    "title": "Comparația abonamentelor",
+    "note": "Bifă aurie: inclus. Liniuță: neinclus. În curând: parte din plan, dar încă nelansat. Niciun plan nu cumpără rating, matchmaking sau prioritate la coadă.",
+    "checkout": "Plata nu există încă, așa că azi fiecare cont este pe Free.",
+    "feature": "Funcție",
+    "included": "Inclus",
+    "notIncluded": "Neinclus",
+    "soon": "În curând",
+    "rows": {
+      "site": "Site public și autentificare Steam OpenID",
+      "ladder": "Scara Rating Points și emblemele de rang standard",
+      "squads": "Înregistrare de clan cu cinci jucători în Squads",
+      "stats": "Statistici de jucător: graficul evoluției ratingului",
+      "gauges": "Statistici de jucător: indicatori pentru % headshot și precizie",
+      "letter": "Scrisoare de mulțumire și suport prin e-mail",
+      "rankArt": "Arta de rang Premium și codexul rangurilor",
+      "card": "Card de profil Premium animat",
+      "badges": "Insigne speciale și ELITE SEAL",
+      "analysis": "Analiză extinsă a meciurilor",
+      "beta": "Acces timpuriu la funcții beta",
+      "support": "Suport prioritar pentru membrii Premium",
+      "advantage": "Creștere de rating, avantaj la matchmaking sau la coadă"
+    }
+  },
+  plansR11: {
+    "termsPlusStats": "Statistici de jucător: graficul evoluției ratingului din meciurile înregistrate. Indicatorii pentru % headshot și precizie vin în curând.",
+    "codexTitle": "Codexul rangurilor Premium și cardul animat",
+    "codexBody": "Aceasta este arta de rang și cardul de profil animat incluse în Premium. Este artă cosmetică pe aceeași scară Rating Points și nu oferă avantaj competitiv.",
+    "codexLink": "Deschide codexul rangurilor Premium"
+  },
   premiumExtras: {
     "card": {
       "previewTag": "PREVIZUALIZARE",
@@ -43,12 +74,12 @@ export const pricing: TextBag["pricing"] = {
       "plus2": "În curând: o scrisoare de mulțumire și suport prin e-mail la support@ace-platform.gg, când va exista checkout-ul.",
       "premiumTitle": "3. Ce include Premium",
       "prem1": "Tot ce include Plus.",
-      "prem2": "Grafică de rang Premium: setul original ilustrat de embleme A.C.E. pe profilul tău.",
+      "prem2": "Arta de rang Premium și codexul rangurilor Premium: setul original de embleme A.C.E. ilustrate pe profilul tău. Doar cosmetic, pe aceeași scară Rating Points.",
       "prem3": "Cardul de profil Premium animat.",
       "prem4": "Insigne speciale și SIGILIUL ELITE.",
       "prem5": "În curând: analiză extinsă a meciului (hartă termică a morților, % headshot, performanță pe rundă), când va exista procesarea demo-urilor.",
-      "prem6": "Acces timpuriu la funcții beta când se deschide un beta.",
-      "prem7": "Suport prioritar cu o țintă de răspuns de 72 de ore. Este o țintă, nu o garanție.",
+      "prem6": "În curând: acces timpuriu la funcții beta când se deschide o beta.",
+      "prem7": "În curând: suport prioritar pentru membrii Premium.",
       "neverTitle": "4. Ce nu include niciun plan",
       "never": "Niciun plan nu oferă avantaj competitiv. Niciun plan nu adaugă Rating Points și nu crește un rating. Niciun plan nu oferă avantaj la matchmaking, coadă prioritară sau adversari mai ușori.",
       "soonTitle": "5. Funcții În curând",
@@ -86,11 +117,11 @@ export const pricing: TextBag["pricing"] = {
     "plus": {
       "name": "A.C.E. PLUS",
       "note": "Plus",
-      "title": "Scrisoare de mulțumire și asistență",
+      "title": "Statistici de jucător și suport",
       "points": [
         "Tot ce include Free.",
-        "În curând: scrisoarea de mulțumire (ce include, ce nu, și support@ace-platform.gg) se deschide doar după ce există plata. Butonul este dezactivat astăzi.",
-        "Nu cumpără rating sau adversari mai ușori. Insignele aurii de profil provin din datele de meci stocate pentru fiecare jucător. Sigiliul elite și insignele speciale apar doar când nivelul stocat este deja Premium."
+        "Statistici de jucător: graficul evoluției ratingului din meciurile A.C.E. înregistrate. Indicatorii pentru % headshot și precizie vin în curând.",
+        "În curând: o scrisoare de mulțumire și suport prin e-mail la support@ace-platform.gg, după ce va exista plata. Plus nu cumpără rating sau adversari mai ușori."
       ]
     },
     "premium": {
@@ -99,8 +130,8 @@ export const pricing: TextBag["pricing"] = {
       "title": "Grafică de profil, insigne și analiză",
       "points": [
         "Tot ce include Plus.",
-        "Grafică de rang Premium, cardul de profil animat, insigne speciale și SIGILIUL ELITE.",
-        "În curând: analiză extinsă a meciului, acces timpuriu la beta și suport prioritar (țintă de răspuns 72 de ore).",
+        "Arta de rang Premium și codexul rangurilor Premium, cardul de profil animat, insigne speciale și ELITE SEAL.",
+        "În curând: analiză extinsă a meciurilor, acces timpuriu la beta și suport prioritar pentru membrii Premium.",
         "Fără avantaj competitiv: fără bonus de Rating Points și fără avantaj la matchmaking."
       ]
     }
@@ -211,8 +242,8 @@ export const pricing: TextBag["pricing"] = {
       "metaTitle": "Chitanță Premium",
       "metaDescription": "Scrisoarea A.C.E. Premium afișată pe acest site. Plata nu este activă, deci nu se taxează nimic și nu se trimite e-mail.",
       "planName": "A.C.E. Premium",
-      "nextLabel": "Continuă la Squads",
-      "nextBody": "Continuă la Squads. Pagina te va întreba dacă sunteți o echipă de cinci. Locul 1 este contul Steam autentificat. Locurile 2–5 sunt ceilalți jucători. Salvarea unui clan tot nu taxează acest preț."
+      "nextLabel": "Citește termenii Premium",
+      "nextBody": "Premium înseamnă arta de rang Premium, cardul de profil animat, insigne speciale și ELITE SEAL, plus tot ce include Plus. Salvarea unui clan în Squads este gratuită pentru orice cont."
     }
   },
   "letter": {

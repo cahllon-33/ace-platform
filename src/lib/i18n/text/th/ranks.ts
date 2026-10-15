@@ -1,6 +1,13 @@
 import type { TextBag } from "../types";
 
 export const ranks: TextBag["ranks"] = {
+  premiumCodex: {
+    "kicker": "โคเด็กซ์แรงก์ PREMIUM",
+    "title": "โคเด็กซ์แรงก์ Premium",
+    "lede": "ตราคริสตัลแบบวาดภาพสิบแบบ หนึ่งแบบต่อหนึ่งแรงก์ นี่คืออาร์ตโปรไฟล์เพื่อความสวยงามบนบันได Rating Points เดียวกับแรงก์มาตรฐาน ไม่เปลี่ยนเรตติ้ง การจับคู่ หรือคิว",
+    "cosmetic": "อาร์ตเพื่อความสวยงาม · บันได RP เดียวกัน · เฉพาะ A.C.E Premium $7/เดือน",
+    "imgAlt": "อาร์ตแรงก์ Premium ของ {name} เลเวล {level}"
+  },
   premiumRanks: {
     kicker: "แรงก์พรีเมียม",
     plan: "A.C.E PREMIUM · เฉพาะ $7/เดือน",

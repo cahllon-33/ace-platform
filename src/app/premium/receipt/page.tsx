@@ -17,7 +17,7 @@ export default async function PremiumReceiptPage() {
     <MembershipLetter
       planName={receipt.planName}
       price={PREMIUM_PRICE}
-      nextHref="/teams?from=premium"
+      nextHref="/premium-terms"
       nextLabel={receipt.nextLabel}
       nextBody={receipt.nextBody}
     />

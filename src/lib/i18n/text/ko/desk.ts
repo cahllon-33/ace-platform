@@ -31,17 +31,17 @@ export const desk: TextBag["desk"] = {
       crown: {
         name: "A.C.E. 왕관 아바타 프레임",
         tag: "프로필 장식",
-        price: "Premium 플랜에 포함 또는 {rp} RP",
+        price: "곧 출시",
       },
       shimmer: {
         name: "골든 프로필 레이저 시머",
         tag: "채팅 꾸미기",
-        price: "Premium 플랜에 포함 또는 {rp} RP",
+        price: "곧 출시",
       },
       pass: {
-        name: "Premium 토너먼트 골든 패스",
+        name: "토너먼트 골든 패스",
         tag: "리그 이용 토큰",
-        price: "{rp} RP / 우선 등록 참가권",
+        price: "곧 출시",
       },
     },
   },

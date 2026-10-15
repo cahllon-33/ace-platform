@@ -1,6 +1,13 @@
 import type { TextBag } from "../types";
 
 export const ranks: TextBag["ranks"] = {
+  premiumCodex: {
+    "kicker": "PREMIUM RÜTBE KODEKSİ",
+    "title": "Premium rütbe kodeksi",
+    "lede": "Her rütbe için bir tane olmak üzere on resimli kristal amblem. Bu, standart rütbelerle aynı Rating Points merdiveninde kozmetik profil sanatıdır. Reyting, eşleştirme veya sırayı değiştirmez.",
+    "cosmetic": "Kozmetik sanat · aynı RP merdiveni · yalnızca A.C.E Premium 7 $/ay",
+    "imgAlt": "{name} Premium rütbe sanatı, seviye {level}"
+  },
   premiumRanks: {
     kicker: "PREMIUM RÜTBELER",
     plan: "A.C.E PREMIUM · yalnızca ayda 7 $",

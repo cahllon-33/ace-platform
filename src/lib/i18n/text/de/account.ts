@@ -1,6 +1,32 @@
 import type { TextBag } from "../types";
 
 export const account: TextBag["account"] = {
+  statsConsole: {
+    "metaTitle": "Spielerstatistiken",
+    "kicker": "SPIELERSTATISTIKEN",
+    "title": "Spielerstatistiken",
+    "lede": "Rating-Verlauf aus deinen erfassten A.C.E.-Matches, mit Anzeigen für Headshot-% und Treffsicherheit. Enthalten in A.C.E Plus ($4/Monat) und A.C.E Premium ($7/Monat).",
+    "movementTitle": "Rating-Verlauf",
+    "movementNote": "Jeder Punkt ist eine Rating-Änderung aus einem erfassten A.C.E.-Match.",
+    "noMatches": "Noch keine erfassten Matches, daher ist die Grafik leer. Sie füllt sich nach deinem ersten erfassten A.C.E.-Match.",
+    "currentLabel": "Aktuelles Rating",
+    "netLabel": "Netto-Änderung",
+    "changesLabel": "Erfasste Änderungen",
+    "hsTitle": "Headshot-%",
+    "accTitle": "Treffsicherheit (Treffer / Schüsse)",
+    "gaugeSoon": "Demnächst: Diese Anzeigen brauchen Demo-Auswertung, die es noch nicht gibt.",
+    "soon": "Demnächst",
+    "sample": "BEISPIEL · nur Form, keine echten Daten",
+    "lockedTitle": "Spielerstatistiken gehören zu A.C.E Plus und Premium",
+    "lockedBody": "Dein gespeicherter Plan ist Free. Plus ($4/Monat) und Premium ($7/Monat) schalten diese Seite frei. Demnächst: Einen Checkout gibt es noch nicht.",
+    "signIn": "Melde dich mit Steam an, um deine Spielerstatistiken zu sehen.",
+    "plansLink": "Pläne ansehen",
+    "rosterNote": "Beispiel-Kaderprofil: Diese Spieler haben keine erfassten A.C.E.-Matches, daher zeigen die Statistiken keine Zahlen.",
+    "dashTitle": "Statistiken und Analyse",
+    "dashStats": "Spielerstatistiken öffnen",
+    "dashAnalysis": "Match-Analyse öffnen (Premium)",
+    "chartAria": "Rating-Verlaufsdiagramm"
+  },
   dashboard: {
     meta: {
       title: "Befehlsstand",

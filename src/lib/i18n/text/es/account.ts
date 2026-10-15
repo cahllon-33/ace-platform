@@ -1,6 +1,32 @@
 import type { TextBag } from "../types";
 
 export const account: TextBag["account"] = {
+  statsConsole: {
+    "metaTitle": "Estadísticas de jugador",
+    "kicker": "ESTADÍSTICAS DE JUGADOR",
+    "title": "Estadísticas de jugador",
+    "lede": "Evolución del rating a partir de tus partidas A.C.E. registradas, con indicadores de % de headshots y precisión. Incluido en A.C.E Plus (4 $/mes) y A.C.E Premium (7 $/mes).",
+    "movementTitle": "Evolución del rating",
+    "movementNote": "Cada punto es un cambio de rating registrado a partir de una partida A.C.E.",
+    "noMatches": "Aún no hay partidas registradas, así que el gráfico está vacío. Se llenará tras tu primera partida A.C.E. registrada.",
+    "currentLabel": "Rating actual",
+    "netLabel": "Cambio neto",
+    "changesLabel": "Cambios registrados",
+    "hsTitle": "% de headshots",
+    "accTitle": "Precisión (impactos / disparos)",
+    "gaugeSoon": "Próximamente: estos indicadores necesitan el análisis de demos de partida, que aún no existe.",
+    "soon": "Próximamente",
+    "sample": "MUESTRA · solo forma, sin datos reales",
+    "lockedTitle": "Las estadísticas de jugador forman parte de A.C.E Plus y Premium",
+    "lockedBody": "Tu plan guardado es Free. Plus (4 $/mes) y Premium (7 $/mes) desbloquean esta página. Próximamente: el pago aún no existe.",
+    "signIn": "Inicia sesión con Steam para ver tus estadísticas de jugador.",
+    "plansLink": "Ver planes",
+    "rosterNote": "Perfil de plantilla de ejemplo: estos jugadores no tienen partidas A.C.E. registradas, así que las estadísticas no muestran números.",
+    "dashTitle": "Estadísticas y análisis",
+    "dashStats": "Abrir estadísticas de jugador",
+    "dashAnalysis": "Abrir análisis de partida (Premium)",
+    "chartAria": "Gráfico de evolución del rating"
+  },
   dashboard: {
     meta: {
       title: "Puesto de mando",

@@ -1,6 +1,37 @@
 import type { TextBag } from "../types";
 
 export const pricing: TextBag["pricing"] = {
+  matrix: {
+    "kicker": "MATRIKS FITUR",
+    "title": "Perbandingan keanggotaan",
+    "note": "Centang emas: termasuk. Garis: tidak termasuk. Segera hadir: bagian dari paket tetapi belum dirilis. Tidak ada paket yang membeli rating, matchmaking, atau prioritas antrean.",
+    "checkout": "Checkout belum ada, jadi hari ini setiap akun berada di Free.",
+    "feature": "Fitur",
+    "included": "Termasuk",
+    "notIncluded": "Tidak termasuk",
+    "soon": "Segera hadir",
+    "rows": {
+      "site": "Situs publik dan masuk dengan Steam OpenID",
+      "ladder": "Tangga Rating Points dan lambang rank standar",
+      "squads": "Catatan klan lima pemain di Squads",
+      "stats": "Statistik pemain: grafik pergerakan rating",
+      "gauges": "Statistik pemain: pengukur % headshot dan akurasi",
+      "letter": "Surat terima kasih dan dukungan email",
+      "rankArt": "Seni rank Premium dan kodeks rank",
+      "card": "Kartu profil Premium animasi",
+      "badges": "Lencana khusus dan ELITE SEAL",
+      "analysis": "Analisis pertandingan lanjutan",
+      "beta": "Akses awal ke fitur beta",
+      "support": "Dukungan prioritas untuk anggota Premium",
+      "advantage": "Dongkrak rating, keunggulan matchmaking atau antrean"
+    }
+  },
+  plansR11: {
+    "termsPlusStats": "Statistik pemain: grafik pergerakan rating dari pertandingan yang tercatat. Pengukur % headshot dan akurasi segera hadir.",
+    "codexTitle": "Kodeks rank Premium dan kartu animasi",
+    "codexBody": "Ini adalah seni rank dan kartu profil animasi yang termasuk dalam Premium. Ini seni kosmetik di tangga Rating Points yang sama dan tidak memberi keunggulan kompetitif.",
+    "codexLink": "Buka kodeks rank Premium"
+  },
   premiumExtras: {
     "card": {
       "previewTag": "PRATINJAU",
@@ -43,12 +74,12 @@ export const pricing: TextBag["pricing"] = {
       "plus2": "Segera hadir: surat terima kasih dan dukungan email di support@ace-platform.gg, setelah checkout tersedia.",
       "premiumTitle": "3. Isi Premium",
       "prem1": "Semua yang ada di Plus.",
-      "prem2": "Seni peringkat Premium: set lambang A.C.E. ilustrasi asli di profilmu.",
+      "prem2": "Seni rank Premium dan kodeks rank Premium: set lambang A.C.E. ilustrasi asli di profilmu. Hanya kosmetik, di tangga Rating Points yang sama.",
       "prem3": "Kartu profil Premium animasi.",
       "prem4": "Lencana khusus dan SEGEL ELITE.",
       "prem5": "Segera hadir: analisis pertandingan lanjutan (heatmap kematian, % headshot, performa per ronde), setelah parsing demo tersedia.",
-      "prem6": "Akses awal ke fitur beta saat beta dibuka.",
-      "prem7": "Dukungan prioritas dengan target respons 72 jam. Ini target, bukan jaminan.",
+      "prem6": "Segera hadir: akses awal ke fitur beta saat beta dibuka.",
+      "prem7": "Segera hadir: dukungan prioritas untuk anggota Premium.",
       "neverTitle": "4. Yang tidak termasuk dalam paket mana pun",
       "never": "Tidak ada paket yang memberi keunggulan kompetitif. Tidak ada paket yang menambah Rating Points atau menaikkan rating. Tidak ada paket yang memberi keunggulan matchmaking, antrean prioritas, atau lawan yang lebih mudah.",
       "soonTitle": "5. Fitur segera hadir",
@@ -86,11 +117,11 @@ export const pricing: TextBag["pricing"] = {
     "plus": {
       "name": "A.C.E. PLUS",
       "note": "Plus",
-      "title": "Surat terima kasih dan dukungan",
+      "title": "Statistik pemain dan dukungan",
       "points": [
         "Semua yang ada di Free.",
-        "Segera hadir: surat terima kasih (apa yang termasuk, apa yang tidak, dan support@ace-platform.gg) hanya terbuka setelah pembayaran tersedia. Tombol dinonaktifkan hari ini.",
-        "Tidak membeli rating atau lawan yang lebih mudah. Lencana profil emas berasal dari data pertandingan tersimpan untuk setiap pemain. Segel elite dan lencana khusus hanya tampil jika tingkat tersimpan sudah Premium."
+        "Statistik pemain: grafik pergerakan rating dari pertandingan A.C.E. yang tercatat. Pengukur % headshot dan akurasi segera hadir.",
+        "Segera hadir: surat terima kasih dan dukungan email di support@ace-platform.gg, setelah checkout tersedia. Plus tidak membeli rating atau lawan yang lebih mudah."
       ]
     },
     "premium": {
@@ -99,8 +130,8 @@ export const pricing: TextBag["pricing"] = {
       "title": "Seni profil, lencana, dan analisis",
       "points": [
         "Semua yang ada di Plus.",
-        "Seni peringkat Premium, kartu profil animasi, lencana khusus, dan SEGEL ELITE.",
-        "Segera hadir: analisis pertandingan lanjutan, akses beta awal, dan dukungan prioritas (target respons 72 jam).",
+        "Seni rank Premium dan kodeks rank Premium, kartu profil animasi, lencana khusus, dan ELITE SEAL.",
+        "Segera hadir: analisis pertandingan lanjutan, akses beta lebih awal, dan dukungan prioritas untuk anggota Premium.",
         "Tanpa keunggulan kompetitif: tanpa tambahan Rating Points dan tanpa keunggulan matchmaking."
       ]
     }
@@ -211,8 +242,8 @@ export const pricing: TextBag["pricing"] = {
       "metaTitle": "Tanda terima Premium",
       "metaDescription": "Surat A.C.E. Premium yang ditampilkan di situs ini. Pembayaran belum aktif, jadi tidak ada yang ditagih dan tidak ada surel yang dikirim.",
       "planName": "A.C.E. Premium",
-      "nextLabel": "Lanjutkan ke Squads",
-      "nextBody": "Lanjutkan ke Squads. Halaman akan menanyakan apakah Anda tim beranggotakan lima. Kursi 1 adalah akun Steam yang masuk. Kursi 2 sampai 5 adalah pemain lain. Menyimpan klan tetap tidak menagih harga ini."
+      "nextLabel": "Baca ketentuan Premium",
+      "nextBody": "Premium berisi seni rank Premium, kartu profil animasi, lencana khusus, dan ELITE SEAL, ditambah semua yang ada di Plus. Menyimpan klan di Squads gratis untuk setiap akun."
     }
   },
   "letter": {

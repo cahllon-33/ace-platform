@@ -12,7 +12,7 @@ export const teams: TextBag["teams"] = {
     lede: "Pět volných míst v řadě. Klan se uloží až po přihlášení přes Steam a založení týmu.",
   },
   gate: {
-    kickerPremium: "Po dopisu Premium",
+    kickerPremium: "Záznam klanu po výběru plánu",
     kickerDefault: "Záznam klanu",
     title: "Jste pětičlenný tým?",
     intro:
@@ -40,12 +40,12 @@ export const teams: TextBag["teams"] = {
     intro:
       "Tento pult čte pouze fakta zveřejněná na této stránce. Neodhaluje cheaty, neotevírá zápas a nemění účet.",
     questionLabel: "Otázka",
-    placeholder: "Zeptejte se na pět míst, dopis za $7 nebo podporu",
+    placeholder: "Zeptej se na pět míst, plány nebo podporu",
     ask: "Zeptat se",
     fallback:
-      "Tento pult odpovídá pouze podle psaných pravidel na této stránce: dopis Premium, pět míst, Steam OpenID a Podpora.",
+      "Tento pult odpovídá jen podle psaných pravidel na této stránce: plány, pět míst, Steam OpenID a podpora.",
     facts: {
-      email: "Žádný e-mail se neodesílá. Dopis Premium zůstává na /premium/receipt.",
+      email: "Žádný e-mail se neposílá. Potvrzení plánů zůstávají na tomto webu.",
       charge:
         "Premium stojí $7 měsíčně. Již brzy: platba zatím není, takže se nic neúčtuje.",
       board:

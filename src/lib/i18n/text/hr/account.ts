@@ -1,6 +1,32 @@
 import type { TextBag } from "../types";
 
 export const account: TextBag["account"] = {
+  statsConsole: {
+    "metaTitle": "Statistika igrača",
+    "kicker": "STATISTIKA IGRAČA",
+    "title": "Statistika igrača",
+    "lede": "Kretanje ratinga iz tvojih zabilježenih A.C.E. mečeva, s pokazateljima % headshotova i preciznosti. Uključeno u A.C.E Plus (4 $/mj.) i A.C.E Premium (7 $/mj.).",
+    "movementTitle": "Kretanje ratinga",
+    "movementNote": "Svaka točka je promjena ratinga zapisana iz A.C.E. meča.",
+    "noMatches": "Još nema zabilježenih mečeva pa je grafikon prazan. Popunit će se nakon tvog prvog zabilježenog A.C.E. meča.",
+    "currentLabel": "Trenutni rating",
+    "netLabel": "Neto promjena",
+    "changesLabel": "Zabilježene promjene",
+    "hsTitle": "% headshotova",
+    "accTitle": "Preciznost (pogoci / hici)",
+    "gaugeSoon": "Uskoro: ovi pokazatelji trebaju analizu demo snimki mečeva, koja još ne postoji.",
+    "soon": "Uskoro",
+    "sample": "PRIMJER · samo oblik, nisu stvarni podaci",
+    "lockedTitle": "Statistika igrača dio je A.C.E Plus i Premium",
+    "lockedBody": "Tvoj spremljeni plan je Free. Plus (4 $/mj.) i Premium (7 $/mj.) otključavaju ovu stranicu. Uskoro: naplata još ne postoji.",
+    "signIn": "Prijavi se putem Steama da vidiš svoju statistiku.",
+    "plansLink": "Pogledaj planove",
+    "rosterNote": "Primjer profila sastava: ovi igrači nemaju zabilježenih A.C.E. mečeva, pa statistika ne prikazuje brojeve.",
+    "dashTitle": "Statistika i analiza",
+    "dashStats": "Otvori statistiku igrača",
+    "dashAnalysis": "Otvori analizu mečeva (Premium)",
+    "chartAria": "Grafikon kretanja ratinga"
+  },
   "dashboard": {
     "meta": {
       "title": "Command Deck"

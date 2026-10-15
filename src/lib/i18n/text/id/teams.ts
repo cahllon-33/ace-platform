@@ -11,7 +11,7 @@ export const teams: TextBag["teams"] = {
     "lede": "Lima kursi terbuka berjajar. Klan disimpan hanya setelah masuk Steam dan tim dibuat."
   },
   "gate": {
-    "kickerPremium": "Setelah surat Premium",
+    "kickerPremium": "Catatan klan setelah memilih paket",
     "kickerDefault": "Catatan klan",
     "title": "Apakah Anda tim beranggotakan lima?",
     "intro": "Kursi 1 adalah pemain yang masuk dengan Steam. Kursi 2 sampai 5 harus sudah memiliki akun A.C.E. Menyimpan klan tidak menagih $7, tidak mengirim surel, dan tidak menempatkan klan di papan 100 tim.",
@@ -35,11 +35,11 @@ export const teams: TextBag["teams"] = {
     "title": "Pertanyaan dari aturan tertulis",
     "intro": "Meja ini hanya membaca fakta yang dipublikasikan di halaman ini. Ia tidak mendeteksi cheat, membuka pertandingan, atau mengubah akun.",
     "questionLabel": "Pertanyaan",
-    "placeholder": "Tanyakan tentang lima kursi, surat $7, atau dukungan",
+    "placeholder": "Tanyakan tentang lima kursi, paket, atau dukungan",
     "ask": "Tanya",
-    "fallback": "Meja ini hanya menjawab dari aturan tertulis di halaman ini: surat Premium, lima kursi, Steam OpenID, dan Dukungan.",
+    "fallback": "Meja ini hanya menjawab dari aturan tertulis di halaman ini: paket, lima kursi, Steam OpenID, dan dukungan.",
     "facts": {
-      "email": "Tidak ada surel yang dikirim. Surat Premium tetap di /premium/receipt.",
+      "email": "Tidak ada email yang dikirim. Tanda terima paket tetap di situs ini.",
       "charge": "Premium seharga $7 per bulan. Segera hadir: belum ada pembayaran, jadi tidak ada yang ditagih.",
       "board": "Klan tersimpan adalah catatan roster. Klan tidak ditempatkan di papan 100 tim. Papan itu masih menunjukkan 0 terdaftar sampai musim dibuka.",
       "steam": "Masuk menggunakan Steam OpenID resmi. A.C.E. tidak pernah meminta kata sandi Steam. Dari halaman ini, Steam kembali ke sini.",

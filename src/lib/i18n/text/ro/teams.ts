@@ -11,7 +11,7 @@ export const teams: TextBag["teams"] = {
     "lede": "Cinci locuri deschise pe un rând. Un clan este stocat doar după autentificarea Steam și crearea unei echipe."
   },
   "gate": {
-    "kickerPremium": "După scrisoarea Premium",
+    "kickerPremium": "Înregistrarea clanului după alegerea planului",
     "kickerDefault": "Înregistrare clan",
     "title": "Sunteți o echipă de cinci?",
     "intro": "Locul 1 este jucătorul autentificat cu Steam. Locurile 2–5 trebuie să aibă deja conturi A.C.E. Salvarea unui clan nu taxează 7 $, nu trimite e-mail și nu plasează clanul pe tabla de 100 de echipe.",
@@ -35,11 +35,11 @@ export const teams: TextBag["teams"] = {
     "title": "Întrebări din regulile scrise",
     "intro": "Acest ghișeu citește doar faptele publicate pe această pagină. Nu detectează cheaturi, nu deschide un meci și nu modifică un cont.",
     "questionLabel": "Întrebare",
-    "placeholder": "Întreabă despre cele cinci locuri, scrisoarea de 7 $ sau asistență",
+    "placeholder": "Întreabă despre cele cinci locuri, planuri sau suport",
     "ask": "Întreabă",
-    "fallback": "Acest ghișeu răspunde doar din regulile scrise de pe această pagină: scrisoarea Premium, cele cinci locuri, Steam OpenID și Asistență.",
+    "fallback": "Acest birou răspunde doar din regulile scrise pe această pagină: planuri, cele cinci locuri, Steam OpenID și suport.",
     "facts": {
-      "email": "Nu se trimite e-mail. Scrisoarea Premium rămâne la /premium/receipt.",
+      "email": "Nu se trimite niciun e-mail. Chitanțele planurilor rămân pe acest site.",
       "charge": "Premium costă 7 $ pe lună. În curând: plata nu există încă, deci nu se taxează nimic.",
       "board": "Un clan stocat este o înregistrare de lot. Nu este plasat pe tabla de 100 de echipe. Tabla arată încă 0 înscrise până se deschide un sezon.",
       "steam": "Autentificarea folosește Steam OpenID oficial. A.C.E. nu cere niciodată parola Steam. De pe această pagină, Steam revine aici.",

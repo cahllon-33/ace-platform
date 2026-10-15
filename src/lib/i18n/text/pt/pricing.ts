@@ -1,6 +1,37 @@
 import type { TextBag } from "../types";
 
 export const pricing: TextBag["pricing"] = {
+  matrix: {
+    "kicker": "MATRIZ DE FUNCIONALIDADES",
+    "title": "Comparação de planos",
+    "note": "Visto dourado: incluído. Traço: não incluído. Em breve: faz parte do plano, mas ainda não foi lançado. Nenhum plano compra rating, matchmaking ou prioridade na fila.",
+    "checkout": "O pagamento ainda não existe, por isso hoje todas as contas estão no Free.",
+    "feature": "Funcionalidade",
+    "included": "Incluído",
+    "notIncluded": "Não incluído",
+    "soon": "Em breve",
+    "rows": {
+      "site": "Site público e login com Steam OpenID",
+      "ladder": "Escada de Rating Points e emblemas de rank padrão",
+      "squads": "Registo de clã de cinco jogadores em Squads",
+      "stats": "Estatísticas de jogador: gráfico de evolução do rating",
+      "gauges": "Estatísticas de jogador: indicadores de % de headshots e precisão",
+      "letter": "Carta de agradecimento e suporte por e-mail",
+      "rankArt": "Arte de rank Premium e códice de ranks",
+      "card": "Cartão de perfil Premium animado",
+      "badges": "Emblemas especiais e o ELITE SEAL",
+      "analysis": "Análise de partida alargada",
+      "beta": "Acesso antecipado a funcionalidades beta",
+      "support": "Suporte prioritário para membros Premium",
+      "advantage": "Aumento de rating ou vantagem de matchmaking ou de fila"
+    }
+  },
+  plansR11: {
+    "termsPlusStats": "Estatísticas de jogador: o gráfico de evolução do rating a partir de partidas registadas. Os indicadores de % de headshots e precisão chegam em breve.",
+    "codexTitle": "Códice de ranks Premium e cartão animado",
+    "codexBody": "Esta é a arte de rank e o cartão de perfil animado incluídos no Premium. É arte cosmética na mesma escada de Rating Points e não dá vantagem competitiva.",
+    "codexLink": "Abrir o códice de ranks Premium"
+  },
   premiumExtras: {
     "card": {
       "previewTag": "PRÉ-VISUALIZAÇÃO",
@@ -43,12 +74,12 @@ export const pricing: TextBag["pricing"] = {
       "plus2": "Em breve: uma carta de agradecimento e suporte por e-mail em support@ace-platform.gg, quando o pagamento existir.",
       "premiumTitle": "3. O que o Premium inclui",
       "prem1": "Tudo o que o Plus inclui.",
-      "prem2": "Arte de rank Premium: o conjunto original ilustrado de emblemas A.C.E. no teu perfil.",
+      "prem2": "Arte de rank Premium e o códice de ranks Premium: o conjunto original de emblemas ilustrados da A.C.E. no seu perfil. Apenas cosmético, na mesma escada de Rating Points.",
       "prem3": "O cartão de perfil Premium animado.",
       "prem4": "Distintivos especiais e o SELO ELITE.",
       "prem5": "Em breve: análise de partida alargada (mapa de calor de mortes, % de headshots, desempenho por ronda), quando existir análise de demos.",
-      "prem6": "Acesso antecipado a funcionalidades beta quando uma beta abrir.",
-      "prem7": "Suporte prioritário com um objetivo de resposta de 72 horas. É um objetivo, não uma garantia.",
+      "prem6": "Em breve: acesso antecipado a funcionalidades beta quando uma beta abrir.",
+      "prem7": "Em breve: suporte prioritário para membros Premium.",
       "neverTitle": "4. O que nenhum plano inclui",
       "never": "Nenhum plano dá vantagem competitiva. Nenhum plano adiciona Rating Points nem aumenta um rating. Nenhum plano dá vantagem no matchmaking, fila prioritária ou adversários mais fáceis.",
       "soonTitle": "5. Funcionalidades em breve",
@@ -87,11 +118,11 @@ export const pricing: TextBag["pricing"] = {
     plus: {
       name: "A.C.E. PLUS",
       note: "Plus",
-      title: "Carta de agradecimento e suporte",
+      title: "Estatísticas de jogador e suporte",
       points: [
         "Tudo o que o Grátis inclui.",
-        "Em breve: a carta de agradecimento (o que inclui, o que não inclui e support@ace-platform.gg) só abre quando existir pagamento. Hoje o botão está desativado.",
-        "Não compra classificação nem adversários mais fáceis. Os emblemas dourados do perfil resultam dos dados de jogo guardados de cada jogador. O selo de elite e os emblemas especiais só aparecem quando o nível guardado já é Premium.",
+        "Estatísticas de jogador: o seu gráfico de evolução do rating a partir de partidas A.C.E. registadas. Os indicadores de % de headshots e precisão chegam em breve.",
+        "Em breve: uma carta de agradecimento e suporte por e-mail em support@ace-platform.gg, quando o pagamento existir. O Plus não compra rating nem adversários mais fáceis.",
       ],
     },
     premium: {
@@ -100,8 +131,8 @@ export const pricing: TextBag["pricing"] = {
       title: "Arte de perfil, distintivos e análise",
       points: [
         "Tudo o que o Plus inclui.",
-        "Arte de rank Premium, o cartão de perfil animado, distintivos especiais e o SELO ELITE.",
-        "Em breve: análise de partida alargada, acesso antecipado a betas e suporte prioritário (objetivo de resposta de 72 horas).",
+        "Arte de rank Premium e o códice de ranks Premium, o cartão de perfil animado, emblemas especiais e o ELITE SEAL.",
+        "Em breve: análise de partida alargada, acesso antecipado a betas e suporte prioritário para membros Premium.",
         "Sem vantagem competitiva: sem aumento de Rating Points nem vantagem no matchmaking.",
       ],
     },
@@ -216,9 +247,9 @@ export const pricing: TextBag["pricing"] = {
       metaDescription:
         "A carta A.C.E. Premium apresentada neste sítio. O pagamento não está ativo, por isso nada é cobrado e nenhum e-mail é enviado.",
       planName: "A.C.E. Premium",
-      nextLabel: "Continuar para os Esquadrões",
+      nextLabel: "Ler os termos Premium",
       nextBody:
-        "Continue para os Esquadrões. A página vai perguntar se são uma equipa de cinco. O lugar 1 é a conta Steam com sessão iniciada. Os lugares 2 a 5 são os outros jogadores. Guardar um clã continua a não cobrar este preço.",
+        "O Premium inclui arte de rank Premium, o cartão de perfil animado, emblemas especiais e o ELITE SEAL, além de tudo do Plus. Guardar um clã em Squads é gratuito para todas as contas.",
     },
   },
   letter: {

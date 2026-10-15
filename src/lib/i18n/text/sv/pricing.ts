@@ -1,6 +1,37 @@
 import type { TextBag } from "../types";
 
 export const pricing: TextBag["pricing"] = {
+  matrix: {
+    "kicker": "FUNKTIONSMATRIS",
+    "title": "Jämförelse av medlemskap",
+    "note": "Guldbock: ingår. Streck: ingår inte. Kommer snart: del av planen men inte släppt än. Ingen plan köper rating, matchmaking eller köprioritet.",
+    "checkout": "Betalning finns inte än, så i dag är alla konton på Free.",
+    "feature": "Funktion",
+    "included": "Ingår",
+    "notIncluded": "Ingår inte",
+    "soon": "Kommer snart",
+    "rows": {
+      "site": "Offentlig webbplats och inloggning med Steam OpenID",
+      "ladder": "Rating Points-stegen och standardrankemblem",
+      "squads": "Klanpost för fem spelare i Squads",
+      "stats": "Spelarstatistik: graf över ratingutveckling",
+      "gauges": "Spelarstatistik: mätare för headshot-% och träffsäkerhet",
+      "letter": "Tackbrev och e-postsupport",
+      "rankArt": "Premium-rankkonst och rankkodex",
+      "card": "Animerat Premium-profilkort",
+      "badges": "Specialmärken och ELITE SEAL",
+      "analysis": "Utökad matchanalys",
+      "beta": "Tidig åtkomst till betafunktioner",
+      "support": "Prioriterad support för Premium-medlemmar",
+      "advantage": "Ratingboost, matchmaking- eller köfördel"
+    }
+  },
+  plansR11: {
+    "termsPlusStats": "Spelarstatistik: graf över ratingutvecklingen från registrerade matcher. Mätare för headshot-% och träffsäkerhet kommer snart.",
+    "codexTitle": "Premium-rankkodex och animerat kort",
+    "codexBody": "Detta är rankkonsten och det animerade profilkortet som ingår i Premium. Det är kosmetisk konst på samma Rating Points-stege och ger ingen tävlingsfördel.",
+    "codexLink": "Öppna Premium-rankkodexen"
+  },
   premiumExtras: {
     "card": {
       "previewTag": "FÖRHANDSVISNING",
@@ -43,12 +74,12 @@ export const pricing: TextBag["pricing"] = {
       "plus2": "Kommer snart: ett tackbrev och e-postsupport på support@ace-platform.gg, när kassan finns.",
       "premiumTitle": "3. Vad Premium innehåller",
       "prem1": "Allt i Plus.",
-      "prem2": "Premiumrankkonst: den ursprungliga illustrerade A.C.E.-emblemuppsättningen på din profil.",
+      "prem2": "Premium-rankkonst och Premium-rankkodexen: den ursprungliga illustrerade A.C.E.-emblemuppsättningen på din profil. Endast kosmetiskt, på samma Rating Points-stege.",
       "prem3": "Det animerade Premium-profilkortet.",
       "prem4": "Specialmärken och ELITE-SIGILLET.",
       "prem5": "Kommer snart: utökad matchanalys (värmekarta över dödsfall, headshot-%, prestation per rond), när demotolkning finns.",
-      "prem6": "Tidig tillgång till betafunktioner när en beta öppnar.",
-      "prem7": "Prioriterad support med ett svarsmål på 72 timmar. Det är ett mål, inte en garanti.",
+      "prem6": "Kommer snart: tidig åtkomst till betafunktioner när en beta öppnar.",
+      "prem7": "Kommer snart: prioriterad support för Premium-medlemmar.",
       "neverTitle": "4. Vad ingen plan innehåller",
       "never": "Ingen plan ger tävlingsfördel. Ingen plan lägger till Rating Points eller höjer en rating. Ingen plan ger fördel i matchmaking, prioriterad kö eller lättare motståndare.",
       "soonTitle": "5. Funktioner som kommer snart",
@@ -86,11 +117,11 @@ export const pricing: TextBag["pricing"] = {
     "plus": {
       "name": "A.C.E. PLUS",
       "note": "Plus",
-      "title": "Tackbrev och support",
+      "title": "Spelarstatistik och support",
       "points": [
         "Allt i Free.",
-        "Kommer snart: tackbrevet (vad som ingår, vad som inte gör det och support@ace-platform.gg) öppnas först när betalning finns. I dag är knappen inaktiverad.",
-        "Köper inte rating eller lättare motståndare. Guldmärken på profilen kommer från sparad matchdata för alla spelare. Elitsigillet och specialmärkena visas bara när den sparade nivån redan är Premium."
+        "Spelarstatistik: din graf över ratingutvecklingen från registrerade A.C.E.-matcher. Mätare för headshot-% och träffsäkerhet kommer snart.",
+        "Kommer snart: ett tackbrev och e-postsupport på support@ace-platform.gg, när betalning finns. Plus köper inte rating eller lättare motståndare."
       ]
     },
     "premium": {
@@ -99,8 +130,8 @@ export const pricing: TextBag["pricing"] = {
       "title": "Profilkonst, märken och analys",
       "points": [
         "Allt i Plus.",
-        "Premiumrankkonst, det animerade profilkortet, specialmärken och ELITE-SIGILLET.",
-        "Kommer snart: utökad matchanalys, tidig betatillgång och prioriterad support (svarsmål 72 timmar).",
+        "Premium-rankkonst och Premium-rankkodexen, det animerade profilkortet, specialmärken och ELITE SEAL.",
+        "Kommer snart: utökad matchanalys, tidig betaåtkomst och prioriterad support för Premium-medlemmar.",
         "Ingen tävlingsfördel: ingen Rating Points-höjning och ingen fördel i matchmaking."
       ]
     }
@@ -211,8 +242,8 @@ export const pricing: TextBag["pricing"] = {
       "metaTitle": "Premium-kvitto",
       "metaDescription": "A.C.E. Premium-brevet som visas på den här webbplatsen. Betalning är inte aktiv, så inget debiteras och inget e-postmeddelande skickas.",
       "planName": "A.C.E. Premium",
-      "nextLabel": "Fortsätt till Trupper",
-      "nextBody": "Fortsätt till Trupper. Sidan frågar om ni är ett lag på fem. Plats 1 är det inloggade Steam-kontot. Plats 2 till 5 är de andra spelarna. Att spara en klan debiterar inte heller detta pris."
+      "nextLabel": "Läs Premium-villkoren",
+      "nextBody": "Premium är Premium-rankkonst, det animerade profilkortet, specialmärken och ELITE SEAL, plus allt i Plus. Att spara en klan i Squads är gratis för alla konton."
     }
   },
   "letter": {

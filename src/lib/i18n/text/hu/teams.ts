@@ -11,7 +11,7 @@ export const teams: TextBag["teams"] = {
     "lede": "Öt nyitott hely egy sorban. Klán csak Steam-bejelentkezés és létrehozott csapat után tárolódik."
   },
   "gate": {
-    "kickerPremium": "A Premium levél után",
+    "kickerPremium": "Klánrekord a csomagválasztás után",
     "kickerDefault": "Klánrekord",
     "title": "Ötfős csapat vagytok?",
     "intro": "Az 1. hely a Steammel bejelentkezett játékos. A 2–5. helyeknek már A.C.E.-fiókkal kell rendelkezniük. Egy klán mentése nem terhel 7 $-t, nem küld e-mailt, és nem helyezi a klánt a 100 csapatos táblára.",
@@ -35,11 +35,11 @@ export const teams: TextBag["teams"] = {
     "title": "Kérdések az írott szabályokból",
     "intro": "Ez a pult csak az ezen az oldalon közzétett tényeket olvassa. Nem észlel csalást, nem nyit meccset és nem módosít fiókot.",
     "questionLabel": "Kérdés",
-    "placeholder": "Kérdezz az öt helyről, a 7 $-os levélről vagy a támogatásról",
+    "placeholder": "Kérdezz az öt helyről, a csomagokról vagy a támogatásról",
     "ask": "Kérdezés",
-    "fallback": "Ez a pult csak az oldal írott szabályai alapján válaszol: a Premium levél, az öt hely, a Steam OpenID és a Támogatás.",
+    "fallback": "Ez a pult csak az oldalon leírt szabályok alapján válaszol: csomagok, az öt hely, Steam OpenID és támogatás.",
     "facts": {
-      "email": "Nem megy ki e-mail. A Premium levél a /premium/receipt oldalon marad.",
+      "email": "Nem küldünk e-mailt. A csomagnyugták ezen az oldalon maradnak.",
       "charge": "A Premium havi 7 $. Hamarosan: még nincs fizetés, így semmit nem terhelünk.",
       "board": "A tárolt klán keretrekord. Nem kerül a 100 csapatos táblára. A tábla a szezon indulásáig 0 regisztráltat mutat.",
       "steam": "A bejelentkezés hivatalos Steam OpenID-t használ. Az A.C.E. soha nem kéri a Steam-jelszavadat. Erről az oldalról a Steam ide tér vissza.",

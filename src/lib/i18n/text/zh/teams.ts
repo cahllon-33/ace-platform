@@ -11,7 +11,7 @@ export const teams: TextBag["teams"] = {
     "lede": "一排五个空席位。只有在 Steam 登录并创建战队后,才会保存战队。"
   },
   "gate": {
-    "kickerPremium": "在 Premium 信函之后",
+    "kickerPremium": "选择方案后的战队记录",
     "kickerDefault": "战队记录",
     "title": "你们是五人战队吗?",
     "intro": "席位 1 是通过 Steam 登录的玩家。席位 2 至 5 必须已有 A.C.E. 账户。保存战队不会收取 $7,不会发送邮件,也不会将战队放上 100 队榜单。",
@@ -35,11 +35,11 @@ export const teams: TextBag["teams"] = {
     "title": "基于书面规则的问题",
     "intro": "此服务台仅读取本页面公布的事实。它不会检测作弊、开启比赛或更改账户。",
     "questionLabel": "问题",
-    "placeholder": "询问五个席位、$7 信函或支持",
+    "placeholder": "询问五个席位、方案或支持",
     "ask": "提问",
-    "fallback": "此服务台仅根据本页面的书面规则回答:Premium 信函、五个席位、Steam OpenID 和支持。",
+    "fallback": "此服务台只根据本页书面规则回答：方案、五个席位、Steam OpenID 和支持。",
     "facts": {
-      "email": "不会发送邮件。Premium 信函保留在 /premium/receipt。",
+      "email": "不会发送邮件。方案收据保留在本网站上。",
       "charge": "Premium 为每月 $7。即将推出:目前没有支付,因此不会扣费。",
       "board": "已保存的战队是阵容记录,不会放上 100 队榜单。在赛季开始前,该榜单仍显示 0 支已报名。",
       "steam": "登录使用官方 Steam OpenID。A.C.E. 绝不会索要 Steam 密码。从本页面前往 Steam 后,会返回此处。",

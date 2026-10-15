@@ -12,7 +12,7 @@ export const teams: TextBag["teams"] = {
     lede: "Cinco vagas abertas lado a lado. Um clã só é salvo depois do login com a Steam e da criação de uma equipe.",
   },
   gate: {
-    kickerPremium: "Depois da carta Premium",
+    kickerPremium: "Registro de clã após a escolha do plano",
     kickerDefault: "Registro do clã",
     title: "Vocês são uma equipe de cinco?",
     intro:
@@ -40,12 +40,12 @@ export const teams: TextBag["teams"] = {
     intro:
       "Esta central lê apenas os fatos publicados nesta página. Ela não detecta cheats, não abre partidas e não altera contas.",
     questionLabel: "Pergunta",
-    placeholder: "Pergunte sobre as cinco vagas, a carta de $7 ou o suporte",
+    placeholder: "Pergunte sobre os cinco lugares, os planos ou o suporte",
     ask: "Perguntar",
     fallback:
-      "Esta central só responde com base nas regras escritas desta página: a carta Premium, as cinco vagas, o Steam OpenID e o Suporte.",
+      "Este balcão só responde com as regras escritas nesta página: os planos, os cinco lugares, Steam OpenID e suporte.",
     facts: {
-      email: "Nenhum e-mail é enviado. A carta Premium fica em /premium/receipt.",
+      email: "Nenhum e-mail é enviado. Os recibos de plano ficam neste site.",
       charge:
         "O Premium custa $7 por mês. Em breve: ainda não há pagamento, então nada é cobrado.",
       board:

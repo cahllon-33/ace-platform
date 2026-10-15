@@ -11,7 +11,7 @@ export const teams: TextBag["teams"] = {
     "lede": "Viisi avointa paikkaa rivissä. Klaani tallennetaan vasta Steam-kirjautumisen ja luodun joukkueen jälkeen."
   },
   "gate": {
-    "kickerPremium": "Premium-kirjeen jälkeen",
+    "kickerPremium": "Klaanitietue tilausvalinnan jälkeen",
     "kickerDefault": "Klaanitietue",
     "title": "Oletteko viiden hengen joukkue?",
     "intro": "Paikka 1 on Steamilla kirjautunut pelaaja. Paikoilla 2–5 on oltava jo A.C.E.-tilit. Klaanin tallentaminen ei veloita 7 $, ei lähetä sähköpostia eikä sijoita klaania 100 joukkueen tauluun.",
@@ -35,11 +35,11 @@ export const teams: TextBag["teams"] = {
     "title": "Kysymyksiä kirjatuista säännöistä",
     "intro": "Tämä piste lukee vain tällä sivulla julkaistut tosiasiat. Se ei tunnista huijauksia, avaa ottelua eikä muuta tiliä.",
     "questionLabel": "Kysymys",
-    "placeholder": "Kysy viidestä paikasta, 7 $:n kirjeestä tai tuesta",
+    "placeholder": "Kysy viidestä paikasta, tilauksista tai tuesta",
     "ask": "Kysy",
-    "fallback": "Tämä piste vastaa vain tämän sivun kirjattujen sääntöjen pohjalta: Premium-kirje, viisi paikkaa, Steam OpenID ja tuki.",
+    "fallback": "Tämä tiski vastaa vain tämän sivun kirjallisten sääntöjen perusteella: tilaukset, viisi paikkaa, Steam OpenID ja tuki.",
     "facts": {
-      "email": "Sähköpostia ei lähetetä. Premium-kirje pysyy osoitteessa /premium/receipt.",
+      "email": "Sähköpostia ei lähetetä. Tilauskuitit pysyvät tällä sivustolla.",
       "charge": "Premium maksaa 7 $ kuukaudessa. Tulossa pian: maksutoimintoa ei vielä ole, joten mitään ei veloiteta.",
       "board": "Tallennettu klaani on kokoonpanotietue. Sitä ei sijoiteta 100 joukkueen tauluun. Taulu näyttää yhä 0 rekisteröitynyttä, kunnes kausi alkaa.",
       "steam": "Kirjautuminen käyttää virallista Steam OpenID:tä. A.C.E. ei koskaan kysy Steam-salasanaa. Tältä sivulta Steam palaa tänne.",
