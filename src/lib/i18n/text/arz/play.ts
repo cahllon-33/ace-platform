@@ -1,6 +1,19 @@
 import type { TextBag } from "../types";
 
 export const play: TextBag["play"] = {
+  room: {
+    "showcaseTag": "عرض · لاعيبة للعرض، مش ماتش لايف. الطابور مقفول.",
+    "showcaseShort": "عرض",
+    "queueClosed": "الطابور مقفول",
+    "floorRp": "أقل حد للرتبة {rp} RP",
+    "yourRp": "{rp} RP",
+    "avatarAlt": "صورة {name}",
+    "sampleChat": "رسايل للعرض. متبعتتش ومش لايف.",
+    "sampleLine": "عيّنة",
+    "operatorA": "رسم أصلي لمشغّل A.C.E لتيم A: مقاتل تكتيكي بخوذة وعدة فحمي بلمسات دهبي",
+    "operatorB": "رسم أصلي لمشغّل A.C.E لتيم B: مقاتل متمرّد لابس كابيشون وعدة فحمي بلمسات دهبي",
+    "artNote": "رسوم شخصيات A.C.E أصلية. مش موديلات من اللعبة."
+  },
   "meta": {
     "title": "اللعب",
     "description": "تُفتح المطابقة المصنفة 5v5 بعد تشغيل نظام مكافحة الغش A.C.E Shield."

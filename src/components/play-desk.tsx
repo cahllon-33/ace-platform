@@ -2,12 +2,12 @@
 
 import { useState } from "react";
 import { MapVeto } from "@/components/map-veto";
-import { PlayMatchArena } from "@/components/play-match-arena";
+import { PlayMatchArena, type ArenaCaptain } from "@/components/play-match-arena";
 import { QueueBoards } from "@/components/queue-boards";
 import { useText } from "@/components/text-provider";
 import type { QueueBoardId } from "@/lib/queue-boards";
 
-export function PlayDesk({ captainLabel }: { captainLabel: string }) {
+export function PlayDesk({ captainLabel, captain = null }: { captainLabel: string; captain?: ArenaCaptain | null }) {
   const text = useText();
   const [map, setMap] = useState("Dust II");
   const [board, setBoard] = useState<QueueBoardId>("calibration");
@@ -16,7 +16,7 @@ export function PlayDesk({ captainLabel }: { captainLabel: string }) {
     <>
       <QueueBoards selected={board} onSelect={setBoard} />
       <MapVeto onLocked={setMap} />
-      <PlayMatchArena captainLabel={captainLabel} lockedMap={map} boardName={boardName} />
+      <PlayMatchArena captainLabel={captainLabel} captain={captain} lockedMap={map} boardName={boardName} />
     </>
   );
 }

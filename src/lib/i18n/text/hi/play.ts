@@ -1,6 +1,19 @@
 import type { TextBag } from "../types";
 
 export const play: TextBag["play"] = {
+  room: {
+    "showcaseTag": "शोकेस · नमूना खिलाड़ी, लाइव मैच नहीं। कतार बंद है।",
+    "showcaseShort": "शोकेस",
+    "queueClosed": "कतार बंद",
+    "floorRp": "रैंक न्यूनतम {rp} RP",
+    "yourRp": "{rp} RP",
+    "avatarAlt": "{name} का अवतार",
+    "sampleChat": "नमूना पंक्तियाँ। भेजी नहीं गईं, लाइव नहीं।",
+    "sampleLine": "नमूना",
+    "operatorA": "टीम A के लिए मूल A.C.E ऑपरेटर आर्ट: हेलमेट पहने टैक्टिकल ऑपरेटर, सुनहरे विवरण वाले चारकोल गियर में",
+    "operatorB": "टीम B के लिए मूल A.C.E ऑपरेटर आर्ट: हुड वाला विद्रोही योद्धा, सुनहरे विवरण वाले चारकोल गियर में",
+    "artNote": "मूल A.C.E कैरेक्टर आर्ट। ये गेम मॉडल नहीं हैं।"
+  },
   "meta": {
     "title": "खेलें",
     "description": "A.C.E Shield एंटी-चीट लाइव होने पर रैंक्ड 5v5 मैचमेकिंग खुलेगी।"

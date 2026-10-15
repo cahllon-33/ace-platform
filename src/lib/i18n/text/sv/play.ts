@@ -1,6 +1,19 @@
 import type { TextBag } from "../types";
 
 export const play: TextBag["play"] = {
+  room: {
+    "showcaseTag": "VISNING · Exempelspelare, ingen livematch. Kön är stängd.",
+    "showcaseShort": "VISNING",
+    "queueClosed": "KÖN STÄNGD",
+    "floorRp": "Rankgolv {rp} RP",
+    "yourRp": "{rp} RP",
+    "avatarAlt": "Avatar för {name}",
+    "sampleChat": "Exempelrader. Inte skickade, inte live.",
+    "sampleLine": "EXEMPEL",
+    "operatorA": "Originell A.C.E-operatörskonst för lag A: en hjälmförsedd taktisk operatör i grafitgrå utrustning med guldaccenter",
+    "operatorB": "Originell A.C.E-operatörskonst för lag B: en huvklädd rebellkrigare i grafitgrå utrustning med guldaccenter",
+    "artNote": "Originell A.C.E-karaktärskonst. Detta är inte spelmodeller."
+  },
   "meta": {
     "title": "Spela",
     "description": "Rankad 5v5-matchning öppnar när A.C.E Shield anti-fusk är live."

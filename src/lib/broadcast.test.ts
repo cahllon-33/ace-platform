@@ -26,3 +26,19 @@ describe("broadcast embed", () => {
     });
   });
 });
+
+import { parseEnvFeeds } from "./broadcast";
+describe("parseEnvFeeds", () => {
+  it("returns nothing for empty input", () => {
+    expect(parseEnvFeeds(undefined)).toEqual([]);
+    expect(parseEnvFeeds("")).toEqual([]);
+  });
+  it("keeps only valid https embeds and caps at 16", () => {
+    const ok = "Main|https://www.youtube.com/embed/abc123";
+    const feeds = parseEnvFeeds([ok, "Bad|http://evil.example/x", "nourl"].join(";"));
+    expect(feeds).toHaveLength(1);
+    expect(feeds[0].title).toBe("Main");
+    expect(feeds[0].source).toBe("env");
+    expect(parseEnvFeeds(Array(20).fill(ok).join("\n")).length).toBeLessThanOrEqual(16);
+  });
+});

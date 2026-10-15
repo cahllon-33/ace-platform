@@ -1,6 +1,19 @@
 import type { TextBag } from "../types";
 
 export const play: TextBag["play"] = {
+  room: {
+    "showcaseTag": "VITRINE · Jogadores de exemplo, não é uma partida ao vivo. A fila está fechada.",
+    "showcaseShort": "VITRINE",
+    "queueClosed": "FILA FECHADA",
+    "floorRp": "Piso do rank {rp} RP",
+    "yourRp": "{rp} RP",
+    "avatarAlt": "Avatar de {name}",
+    "sampleChat": "Linhas de exemplo. Não enviadas, não ao vivo.",
+    "sampleLine": "EXEMPLO",
+    "operatorA": "Arte original de operador A.C.E para o Time A: um operador tático de capacete com equipamento grafite e detalhes dourados",
+    "operatorB": "Arte original de operador A.C.E para o Time B: um combatente rebelde encapuzado com equipamento grafite e detalhes dourados",
+    "artNote": "Arte original de personagens A.C.E. Não são modelos do jogo."
+  },
   meta: {
     title: "Jogar",
     description: "O matchmaking ranqueado 5v5 abre quando o anti-cheat A.C.E Shield estiver ativo.",

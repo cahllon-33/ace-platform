@@ -1,6 +1,43 @@
 import type { TextBag } from "../types";
 
 export const home: TextBag["home"] = {
+  ops: {
+    "identityKicker": "CENTRU DE IDENTITATE",
+    "signedOutTitle": "Conectează-te cu Steam",
+    "signedOutBody": "Conectează-te prin Steam OpenID oficial ca să vezi aici avatarul Steam, emblema de rang și Rating Points. A.C.E. nu cere niciodată parola Steam.",
+    "connect": "Conectează-te cu Steam",
+    "openDeck": "Deschide Command Deck",
+    "avatarAlt": "Avatarul Steam al lui {name}",
+    "emblemAlt": "Emblema de rang {rank}",
+    "rp": "Rating Points",
+    "wins": "Victorii",
+    "losses": "Înfrângeri",
+    "winRate": "Rată de victorii",
+    "matches": "Meciuri",
+    "kd": "K/D",
+    "na": "n/a",
+    "kdNote": "K/D arată n/a deoarece A.C.E. nu înregistrează încă eliminările și decesele.",
+    "shieldKicker": "A.C.E SHIELD",
+    "shieldChip": "ÎN DEZVOLTARE",
+    "shieldTitle": "Stare de integritate",
+    "shieldBody": "A.C.E Shield este în dezvoltare. Azi nimic nu este instalat, scanat sau monitorizat, deci niciun cont nu are un verdict de integritate.",
+    "shieldClient": "Client anti-cheat",
+    "shieldClientValue": "Nelansat",
+    "shieldServer": "Servere de meci",
+    "shieldServerValue": "Neconectate",
+    "shieldHardware": "Scanare hardware",
+    "shieldHardwareValue": "Necolectată",
+    "shieldLink": "Cum va funcționa A.C.E Shield",
+    "seasonKicker": "SEZONUL 1",
+    "seasonChip": "DATE NEANUNȚATE",
+    "seasonTitle": "Monitorizare sezonul 1",
+    "seasonBody": "Sezonul 1 nu are încă dată de început sau de sfârșit, deci nu există numărătoare inversă. Datele vor fi publicate pe acest site înainte de începerea sezonului.",
+    "statsKicker": "STATISTICILE TALE",
+    "statsSignedOut": "Conectează-te cu Steam ca să-ți vezi statisticile.",
+    "statsEmpty": "Încă nu există meciuri înregistrate. Victoriile și înfrângerile apar după primul tău meci A.C.E. înregistrat.",
+    "statsLive": "Victoriile și înfrângerile provin din contul tău A.C.E. salvat.",
+    "statsLink": "Deschide statisticile de jucător"
+  },
   "meta": {
     "title": "A.C.E. — Platformă competitivă CS2",
     "description": "A.C.E. este o platformă competitivă Counter-Strike 2 planificată pentru identitatea jucătorilor, calibrare, echipe și turnee. Acest site public este o previzualizare. Matchmakingul ranked, anti-cheatul, plățile și premiile nu sunt active."

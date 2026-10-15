@@ -3,6 +3,7 @@
 import { createHmac, timingSafeEqual } from "node:crypto";
 import { cookies } from "next/headers";
 import { getSessionSecret, isProduction } from "@/server/env";
+import { readSessionUser } from "@/server/session";
 
 const GATE_COOKIE = "ace_admin_gate";
 const GATE_HOURS = 12;
@@ -31,7 +32,28 @@ export async function readAdminGate() {
   if (!token || token.length !== gateToken().length) {
     return false;
   }
-  return sameSecret(token, gateToken());
+  if (!sameSecret(token, gateToken())) {
+    return false;
+  }
+  return adminRoleAllowed();
+}
+
+/**
+ * Operator role: when ACE_ADMIN_STEAM_IDS is set (comma separated SteamID64 list), the admin surface also
+ * requires a signed-in Steam session whose SteamID is on that list. Checked on the server for every read and action.
+ */
+async function adminRoleAllowed() {
+  const allow = (process.env.ACE_ADMIN_STEAM_IDS ?? "")
+    .split(",")
+    .map((value) => value.trim())
+    .filter(Boolean);
+  if (allow.length === 0) return true;
+  try {
+    const user = await readSessionUser();
+    return Boolean(user?.steamId && allow.includes(user.steamId));
+  } catch {
+    return false;
+  }
 }
 
 export async function unlockAdminGate(username: string, password: string) {

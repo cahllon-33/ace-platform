@@ -1,6 +1,43 @@
 import type { TextBag } from "../types";
 
 export const home: TextBag["home"] = {
+  ops: {
+    "identityKicker": "CENTRUM IDENTITY",
+    "signedOutTitle": "Přihlásit se přes Steam",
+    "signedOutBody": "Připoj se přes oficiální Steam OpenID a uvidíš tu svůj Steam avatar, emblém ranku a Rating Points. A.C.E. nikdy nežádá heslo ke Steamu.",
+    "connect": "Přihlásit se přes Steam",
+    "openDeck": "Otevřít Command Deck",
+    "avatarAlt": "Steam avatar hráče {name}",
+    "emblemAlt": "Emblém ranku {rank}",
+    "rp": "Rating Points",
+    "wins": "Výhry",
+    "losses": "Prohry",
+    "winRate": "Úspěšnost",
+    "matches": "Zápasy",
+    "kd": "K/D",
+    "na": "n/a",
+    "kdNote": "K/D ukazuje n/a, protože A.C.E. zatím nezaznamenává zabití a smrti.",
+    "shieldKicker": "A.C.E SHIELD",
+    "shieldChip": "VE VÝVOJI",
+    "shieldTitle": "Stav integrity",
+    "shieldBody": "A.C.E Shield je ve vývoji. Dnes se nic neinstaluje, neskenuje ani nesleduje, takže žádný účet nemá verdikt integrity.",
+    "shieldClient": "Anti-cheat klient",
+    "shieldClientValue": "Nevydáno",
+    "shieldServer": "Zápasové servery",
+    "shieldServerValue": "Nepřipojeno",
+    "shieldHardware": "Sken hardwaru",
+    "shieldHardwareValue": "Nesbírá se",
+    "shieldLink": "Jak bude A.C.E Shield fungovat",
+    "seasonKicker": "SEZÓNA 1",
+    "seasonChip": "TERMÍNY NEOZNÁMENY",
+    "seasonTitle": "Sledování sezóny 1",
+    "seasonBody": "Sezóna 1 zatím nemá datum začátku ani konce, proto žádné odpočítávání. Termíny budou zveřejněny na tomto webu před začátkem sezóny.",
+    "statsKicker": "TVOJE STATISTIKY",
+    "statsSignedOut": "Přihlas se přes Steam a uvidíš své statistiky.",
+    "statsEmpty": "Zatím žádné zaznamenané zápasy. Výhry a prohry se objeví po tvém prvním zaznamenaném zápase A.C.E.",
+    "statsLive": "Výhry a prohry pocházejí z tvého uloženého účtu A.C.E.",
+    "statsLink": "Otevřít statistiky hráče"
+  },
   meta: {
     title: "A.C.E. — soutěžní platforma CS2",
     description:

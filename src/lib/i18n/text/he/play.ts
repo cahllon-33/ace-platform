@@ -1,6 +1,19 @@
 import type { TextBag } from "../types";
 
 export const play: TextBag["play"] = {
+  room: {
+    "showcaseTag": "תצוגה · שחקנים לדוגמה, לא משחק חי. התור סגור.",
+    "showcaseShort": "תצוגה",
+    "queueClosed": "התור סגור",
+    "floorRp": "רצפת הדרגה {rp} RP",
+    "yourRp": "{rp} RP",
+    "avatarAlt": "האווטאר של {name}",
+    "sampleChat": "שורות לדוגמה. לא נשלחו, לא בזמן אמת.",
+    "sampleLine": "דוגמה",
+    "operatorA": "אמנות מפעיל מקורית של A.C.E לקבוצה A: מפעיל טקטי עם קסדה בציוד פחם עם נגיעות זהב",
+    "operatorB": "אמנות מפעיל מקורית של A.C.E לקבוצה B: לוחם מורד עם ברדס בציוד פחם עם נגיעות זהב",
+    "artNote": "אמנות דמויות מקורית של A.C.E. אלה לא מודלים מהמשחק."
+  },
   meta: {
     title: "משחק",
     description: "שידוך מדורג 5v5 ייפתח כשה-Anti-Cheat של A.C.E Shield יפעל.",

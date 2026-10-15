@@ -1,6 +1,19 @@
 import type { TextBag } from "../types";
 
 export const play: TextBag["play"] = {
+  room: {
+    "showcaseTag": "ショーケース · サンプル選手でありライブの試合ではありません。キューは閉じています。",
+    "showcaseShort": "ショーケース",
+    "queueClosed": "キュー停止中",
+    "floorRp": "ランク下限 {rp} RP",
+    "yourRp": "{rp} RP",
+    "avatarAlt": "{name}のアバター",
+    "sampleChat": "サンプル文です。送信されず、ライブでもありません。",
+    "sampleLine": "サンプル",
+    "operatorA": "チームA用のA.C.Eオリジナルオペレーターアート：ヘルメットを着けた戦術オペレーター、チャコールの装備に金のアクセント",
+    "operatorB": "チームB用のA.C.Eオリジナルオペレーターアート：フードをかぶった反乱軍の戦士、チャコールの装備に金のアクセント",
+    "artNote": "A.C.Eのオリジナルキャラクターアートです。ゲームのモデルではありません。"
+  },
   "meta": {
     "title": "プレイ",
     "description": "ランク 5v5 マッチメイキングは A.C.E Shield アンチチートの稼働後に開始します。"

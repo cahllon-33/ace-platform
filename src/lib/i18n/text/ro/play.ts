@@ -1,6 +1,19 @@
 import type { TextBag } from "../types";
 
 export const play: TextBag["play"] = {
+  room: {
+    "showcaseTag": "PREZENTARE · Jucători exemplu, nu un meci live. Coada este închisă.",
+    "showcaseShort": "PREZENTARE",
+    "queueClosed": "COADĂ ÎNCHISĂ",
+    "floorRp": "Pragul rangului {rp} RP",
+    "yourRp": "{rp} RP",
+    "avatarAlt": "Avatarul lui {name}",
+    "sampleChat": "Mesaje exemplu. Netrimise, nu live.",
+    "sampleLine": "EXEMPLU",
+    "operatorA": "Artă originală de operator A.C.E pentru echipa A: un operator tactic cu cască, echipament grafit cu accente aurii",
+    "operatorB": "Artă originală de operator A.C.E pentru echipa B: un luptător rebel cu glugă, echipament grafit cu accente aurii",
+    "artNote": "Artă originală de personaje A.C.E. Nu sunt modele din joc."
+  },
   "meta": {
     "title": "Joacă",
     "description": "Matchmakingul ranked 5v5 se deschide când anti-cheatul A.C.E Shield devine activ."

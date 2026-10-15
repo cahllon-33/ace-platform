@@ -1,6 +1,19 @@
 import type { TextBag } from "../types";
 
 export const play: TextBag["play"] = {
+  room: {
+    "showcaseTag": "عرض توضيحي · لاعبون للعرض، وليست مباراة مباشرة. الطابور مغلق.",
+    "showcaseShort": "عرض توضيحي",
+    "queueClosed": "الطابور مغلق",
+    "floorRp": "الحد الأدنى للرتبة {rp} RP",
+    "yourRp": "{rp} RP",
+    "avatarAlt": "الصورة الرمزية لـ {name}",
+    "sampleChat": "رسائل للعرض. لم تُرسل وليست مباشرة.",
+    "sampleLine": "عيّنة",
+    "operatorA": "رسم أصلي لمشغّل A.C.E للفريق A: مشغّل تكتيكي بخوذة وعتاد فحمي بلمسات ذهبية",
+    "operatorB": "رسم أصلي لمشغّل A.C.E للفريق B: مقاتل متمرّد بغطاء رأس وعتاد فحمي بلمسات ذهبية",
+    "artNote": "رسوم شخصيات A.C.E أصلية. ليست نماذج من اللعبة."
+  },
   "meta": {
     "title": "اللعب",
     "description": "تُفتح المطابقة المصنفة 5v5 بعد تشغيل نظام مكافحة الغش A.C.E Shield."

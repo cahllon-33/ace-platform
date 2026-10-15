@@ -1,6 +1,43 @@
 import type { TextBag } from "../types";
 
 export const home: TextBag["home"] = {
+  ops: {
+    "identityKicker": "IDENTITÁSKÖZPONT",
+    "signedOutTitle": "Bejelentkezés Steammel",
+    "signedOutBody": "Csatlakozz a hivatalos Steam OpenID-val, hogy itt lásd a Steam-avatarodat, a rangemblémádat és a Rating Pointsodat. Az A.C.E. soha nem kér Steam-jelszót.",
+    "connect": "Bejelentkezés Steammel",
+    "openDeck": "Command Deck megnyitása",
+    "avatarAlt": "{name} Steam-avatarja",
+    "emblemAlt": "{rank} rangembléma",
+    "rp": "Rating Points",
+    "wins": "Győzelmek",
+    "losses": "Vereségek",
+    "winRate": "Győzelmi arány",
+    "matches": "Meccsek",
+    "kd": "K/D",
+    "na": "n/a",
+    "kdNote": "A K/D n/a, mert az A.C.E. még nem rögzíti az öléseket és halálokat.",
+    "shieldKicker": "A.C.E SHIELD",
+    "shieldChip": "FEJLESZTÉS ALATT",
+    "shieldTitle": "Integritás állapota",
+    "shieldBody": "Az A.C.E Shield fejlesztés alatt áll. Ma semmi nincs telepítve, szkennelve vagy megfigyelve, így egyetlen fióknak sincs integritási ítélete.",
+    "shieldClient": "Csalásellenes kliens",
+    "shieldClientValue": "Nem jelent meg",
+    "shieldServer": "Meccsszerverek",
+    "shieldServerValue": "Nincsenek csatlakoztatva",
+    "shieldHardware": "Hardverszkennelés",
+    "shieldHardwareValue": "Nem gyűjtjük",
+    "shieldLink": "Így fog működni az A.C.E Shield",
+    "seasonKicker": "1. SZEZON",
+    "seasonChip": "DÁTUMOK NINCSENEK BEJELENTVE",
+    "seasonTitle": "1. szezon követése",
+    "seasonBody": "Az 1. szezonnak még nincs kezdő- és záródátuma, ezért nincs visszaszámlálás. A dátumokat a szezon kezdete előtt ezen az oldalon tesszük közzé.",
+    "statsKicker": "STATISZTIKÁID",
+    "statsSignedOut": "Jelentkezz be Steammel a statisztikáidhoz.",
+    "statsEmpty": "Még nincs rögzített meccs. A győzelmek és vereségek az első rögzített A.C.E. meccsed után jelennek meg.",
+    "statsLive": "A győzelmek és vereségek a tárolt A.C.E. fiókodból származnak.",
+    "statsLink": "Játékosstatisztika megnyitása"
+  },
   "meta": {
     "title": "A.C.E. — Versenyszintű CS2 platform",
     "description": "Az A.C.E. egy tervezett Counter-Strike 2 versenyplatform játékosidentitáshoz, kalibrációhoz, csapatokhoz és tornákhoz. Ez a nyilvános weboldal előnézet. A ranked párosítás, a csalásellenes rendszer, a fizetések és a díjak nem aktívak."

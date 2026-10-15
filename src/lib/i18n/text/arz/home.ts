@@ -1,6 +1,43 @@
 import type { TextBag } from "../types";
 
 export const home: TextBag["home"] = {
+  ops: {
+    "identityKicker": "مركز الهوية",
+    "signedOutTitle": "ادخل بـ Steam",
+    "signedOutBody": "اتصل بـ Steam OpenID الرسمي عشان تشوف هنا صورة Steam بتاعتك وشعار رتبتك ونقاط Rating Points. A.C.E. عمرها ما بتطلب باسورد Steam.",
+    "connect": "ادخل بـ Steam",
+    "openDeck": "افتح Command Deck",
+    "avatarAlt": "صورة Steam بتاعة {name}",
+    "emblemAlt": "شعار رتبة {rank}",
+    "rp": "Rating Points",
+    "wins": "المكسب",
+    "losses": "الخسارة",
+    "winRate": "نسبة الفوز",
+    "matches": "الماتشات",
+    "kd": "K/D",
+    "na": "مش متاح",
+    "kdNote": "K/D مش متاح لأن A.C.E. لسه مش بتسجّل القتلات والموتات.",
+    "shieldKicker": "A.C.E SHIELD",
+    "shieldChip": "تحت التطوير",
+    "shieldTitle": "حالة النزاهة",
+    "shieldBody": "A.C.E Shield تحت التطوير. النهارده مفيش حاجة بتتثبت أو بتتفحص أو بتتراقب، فمفيش حكم نزاهة على أي حساب.",
+    "shieldClient": "برنامج مكافحة الغش",
+    "shieldClientValue": "لسه منزلش",
+    "shieldServer": "سيرفرات الماتشات",
+    "shieldServerValue": "مش متوصلة",
+    "shieldHardware": "فحص الهاردوير",
+    "shieldHardwareValue": "مش بيتجمع",
+    "shieldLink": "إزاي A.C.E Shield هيشتغل",
+    "seasonKicker": "الموسم 1",
+    "seasonChip": "المواعيد لسه متعلنتش",
+    "seasonTitle": "متابعة الموسم 1",
+    "seasonBody": "الموسم 1 لسه ملوش تاريخ بداية ولا نهاية، فمفيش عد تنازلي. المواعيد هتتنشر على الموقع ده قبل ما الموسم يفتح.",
+    "statsKicker": "إحصائياتك",
+    "statsSignedOut": "ادخل بـ Steam عشان تشوف إحصائياتك.",
+    "statsEmpty": "مفيش ماتشات متسجلة لسه. المكسب والخسارة هيظهروا بعد أول ماتش A.C.E. يتسجل ليك.",
+    "statsLive": "المكسب والخسارة جايين من حساب A.C.E. المحفوظ بتاعك.",
+    "statsLink": "افتح إحصائيات اللاعب"
+  },
   "meta": {
     "title": "A.C.E. — منصة CS2 التنافسية",
     "description": "A.C.E. منصة تنافسية مخطط لها للعبة Counter-Strike 2 تشمل هوية اللاعب والمعايرة والفرق والبطولات. هذا الموقع العام معاينة. المطابقة المصنفة ومكافحة الغش والمدفوعات والجوائز غير مفعّلة."

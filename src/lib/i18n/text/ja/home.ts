@@ -1,6 +1,43 @@
 import type { TextBag } from "../types";
 
 export const home: TextBag["home"] = {
+  ops: {
+    "identityKicker": "アイデンティティハブ",
+    "signedOutTitle": "Steamでサインイン",
+    "signedOutBody": "公式のSteam OpenIDで接続すると、ここにSteamアバター、ランクエンブレム、Rating Pointsが表示されます。A.C.E.がSteamのパスワードを求めることはありません。",
+    "connect": "Steamでサインイン",
+    "openDeck": "Command Deckを開く",
+    "avatarAlt": "{name}のSteamアバター",
+    "emblemAlt": "{rank}のランクエンブレム",
+    "rp": "Rating Points",
+    "wins": "勝利",
+    "losses": "敗北",
+    "winRate": "勝率",
+    "matches": "試合数",
+    "kd": "K/D",
+    "na": "n/a",
+    "kdNote": "A.C.E.はまだキルとデスを記録していないため、K/Dはn/aと表示されます。",
+    "shieldKicker": "A.C.E SHIELD",
+    "shieldChip": "開発中",
+    "shieldTitle": "インテグリティ状況",
+    "shieldBody": "A.C.E Shieldは開発中です。現在は何もインストール、スキャン、監視されていないため、どのアカウントにも判定はありません。",
+    "shieldClient": "アンチチートクライアント",
+    "shieldClientValue": "未リリース",
+    "shieldServer": "マッチサーバー",
+    "shieldServerValue": "未接続",
+    "shieldHardware": "ハードウェアスキャン",
+    "shieldHardwareValue": "収集していません",
+    "shieldLink": "A.C.E Shieldの仕組み",
+    "seasonKicker": "シーズン1",
+    "seasonChip": "日程未発表",
+    "seasonTitle": "シーズン1トラッカー",
+    "seasonBody": "シーズン1にはまだ開始日も終了日もないため、カウントダウンはありません。日程はシーズン開始前にこのサイトで発表します。",
+    "statsKicker": "あなたの統計",
+    "statsSignedOut": "Steamでサインインすると統計が表示されます。",
+    "statsEmpty": "記録された試合はまだありません。最初のA.C.E.の試合が記録されると勝敗が表示されます。",
+    "statsLive": "勝敗は保存されたA.C.E.アカウントから取得しています。",
+    "statsLink": "プレイヤー統計を開く"
+  },
   "meta": {
     "title": "A.C.E. — CS2 競技プラットフォーム",
     "description": "A.C.E. は、プレイヤーID、キャリブレーション、チーム、トーナメントのための Counter-Strike 2 競技プラットフォームとして計画中です。この公開サイトはプレビューです。ランクマッチング、アンチチート、決済、賞品はまだ稼働していません。"

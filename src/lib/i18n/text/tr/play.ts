@@ -1,6 +1,19 @@
 import type { TextBag } from "../types";
 
 export const play: TextBag["play"] = {
+  room: {
+    "showcaseTag": "VİTRİN · Örnek oyuncular, canlı maç değil. Sıra kapalı.",
+    "showcaseShort": "VİTRİN",
+    "queueClosed": "SIRA KAPALI",
+    "floorRp": "Rütbe tabanı {rp} RP",
+    "yourRp": "{rp} RP",
+    "avatarAlt": "{name} avatarı",
+    "sampleChat": "Örnek satırlar. Gönderilmedi, canlı değil.",
+    "sampleLine": "ÖRNEK",
+    "operatorA": "A Takımı için orijinal A.C.E operatör çizimi: kasklı taktik operatör, altın detaylı antrasit teçhizat",
+    "operatorB": "B Takımı için orijinal A.C.E operatör çizimi: kapüşonlu asi savaşçı, altın detaylı antrasit teçhizat",
+    "artNote": "Orijinal A.C.E karakter çizimi. Bunlar oyun modelleri değildir."
+  },
   "meta": {
     "title": "Oyna",
     "description": "Dereceli 5v5 eşleştirme, A.C.E Shield hile karşıtı sistemi devreye girdiğinde açılır."

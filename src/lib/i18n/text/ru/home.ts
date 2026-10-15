@@ -1,6 +1,43 @@
 import type { TextBag } from "../types";
 
 export const home: TextBag["home"] = {
+  ops: {
+    "identityKicker": "ЦЕНТР ИДЕНТИФИКАЦИИ",
+    "signedOutTitle": "Войти через Steam",
+    "signedOutBody": "Подключитесь через официальный Steam OpenID, чтобы видеть здесь свой аватар Steam, эмблему ранга и Rating Points. A.C.E. никогда не запрашивает пароль Steam.",
+    "connect": "Войти через Steam",
+    "openDeck": "Открыть Command Deck",
+    "avatarAlt": "Аватар Steam {name}",
+    "emblemAlt": "Эмблема ранга {rank}",
+    "rp": "Rating Points",
+    "wins": "Победы",
+    "losses": "Поражения",
+    "winRate": "Процент побед",
+    "matches": "Матчи",
+    "kd": "K/D",
+    "na": "н/д",
+    "kdNote": "K/D показывает н/д, потому что A.C.E. пока не записывает убийства и смерти.",
+    "shieldKicker": "A.C.E SHIELD",
+    "shieldChip": "В РАЗРАБОТКЕ",
+    "shieldTitle": "Статус целостности",
+    "shieldBody": "A.C.E Shield в разработке. Сегодня ничего не устанавливается, не сканируется и не отслеживается, поэтому ни у одного аккаунта нет вердикта целостности.",
+    "shieldClient": "Античит-клиент",
+    "shieldClientValue": "Не выпущен",
+    "shieldServer": "Серверы матчей",
+    "shieldServerValue": "Не подключены",
+    "shieldHardware": "Проверка железа",
+    "shieldHardwareValue": "Не собирается",
+    "shieldLink": "Как будет работать A.C.E Shield",
+    "seasonKicker": "СЕЗОН 1",
+    "seasonChip": "ДАТЫ НЕ ОБЪЯВЛЕНЫ",
+    "seasonTitle": "Трекер сезона 1",
+    "seasonBody": "У сезона 1 пока нет даты начала и окончания, поэтому обратного отсчёта нет. Даты будут опубликованы на этом сайте до открытия сезона.",
+    "statsKicker": "ВАША СТАТИСТИКА",
+    "statsSignedOut": "Войдите через Steam, чтобы увидеть статистику.",
+    "statsEmpty": "Записанных матчей пока нет. Победы и поражения появятся после вашего первого записанного матча A.C.E.",
+    "statsLive": "Победы и поражения берутся из вашего сохранённого аккаунта A.C.E.",
+    "statsLink": "Открыть статистику игрока"
+  },
   meta: {
     title: "A.C.E. — соревновательная платформа CS2",
     description:

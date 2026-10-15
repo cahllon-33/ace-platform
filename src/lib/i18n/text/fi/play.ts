@@ -1,6 +1,19 @@
 import type { TextBag } from "../types";
 
 export const play: TextBag["play"] = {
+  room: {
+    "showcaseTag": "NÄYTÖS · Esimerkkipelaajia, ei live-ottelu. Jono on suljettu.",
+    "showcaseShort": "NÄYTÖS",
+    "queueClosed": "JONO SULJETTU",
+    "floorRp": "Arvon alaraja {rp} RP",
+    "yourRp": "{rp} RP",
+    "avatarAlt": "Pelaajan {name} avatar",
+    "sampleChat": "Esimerkkirivejä. Ei lähetetty, ei live.",
+    "sampleLine": "ESIMERKKI",
+    "operatorA": "Alkuperäinen A.C.E-operaattoritaide joukkueelle A: kypäräpäinen taktinen operaattori grafiitinharmaissa varusteissa kultayksityiskohdin",
+    "operatorB": "Alkuperäinen A.C.E-operaattoritaide joukkueelle B: huppupäinen kapinallistaistelija grafiitinharmaissa varusteissa kultayksityiskohdin",
+    "artNote": "Alkuperäistä A.C.E-hahmotaidetta. Nämä eivät ole pelin malleja."
+  },
   "meta": {
     "title": "Pelaa",
     "description": "Ranked 5v5 -matchmaking avautuu, kun A.C.E Shield -huijauksenesto on käytössä."

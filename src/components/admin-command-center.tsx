@@ -17,12 +17,19 @@ import {
   resetAdminProfile,
   setAdminAccountBan,
   setAdminRankTen,
+  setAdminTier,
   upgradeAdminPremium,
   type AdminLiveStats,
+  type AdminTournamentRow,
   type AdminMatchBrief,
   type AdminReport,
 } from "@/server/admin-users";
+import { AdminTvWall } from "@/components/admin-tv-wall";
+import type { TvWall } from "@/server/admin-broadcast";
 import "./admin-command.css";
+
+const TIER_DB: Record<AdminTier, "FREE" | "PLUS" | "PREMIUM"> = { Free: "FREE", Plus: "PLUS", Premium: "PREMIUM" };
+const TIER_FROM_DB: Record<string, AdminTier> = { FREE: "Free", PLUS: "Plus", PREMIUM: "Premium" };
 
 const TIER_KEY: Record<AdminTier, AdminMessageKey> = {
   Free: "tierFree",
@@ -275,11 +282,15 @@ export function AdminCommandCenter({
   stats,
   matches,
   reports,
+  tv,
+  tournaments,
 }: {
   initialPlayers: AdminPlayerRow[];
   stats: AdminLiveStats;
   matches: AdminMatchBrief[];
   reports: AdminReport[];
+  tv: TvWall;
+  tournaments: AdminTournamentRow[];
 }) {
   const admin = useAdminI18n();
   const router = useRouter();
@@ -341,19 +352,8 @@ export function AdminCommandCenter({
     player: AdminPlayerRow,
     kind: "disconnect" | "upgrade" | "rank" | "reset",
   ) {
-    if (stats.staging) {
-      if (kind === "disconnect") {
-        patchPlayer(player, { steamId: "—" });
-        showFlash(t("steamFlash"));
-      } else if (kind === "upgrade") {
-        patchPlayer(player, { tier: "Premium" });
-      } else if (kind === "rank") {
-        patchPlayer(player, { rank: 10, rating: 3000 });
-        setRankPulseId(player.id);
-      } else {
-        patchPlayer(player, { rank: 1, rating: 1000, tier: "Free" });
-        setRankPulseId((current) => (current === player.id ? null : current));
-      }
+    if (stats.staging || stats.unavailable) {
+      showFlash(t("stagingNoWrite"));
       return;
     }
 
@@ -376,6 +376,22 @@ export function AdminCommandCenter({
         patchPlayer(player, { rank: 1, rating: 1000, tier: "Free" });
         setRankPulseId((current) => (current === player.id ? null : current));
       }
+      router.refresh();
+    });
+  }
+
+  function runTier(player: AdminPlayerRow, tier: AdminTier) {
+    if (stats.staging || stats.unavailable) {
+      showFlash(t("stagingNoWrite"));
+      return;
+    }
+    void setAdminTier(player.id, TIER_DB[tier]).then((result) => {
+      if (!result.ok) {
+        showFlash(t("tierNotSaved"));
+        return;
+      }
+      patchPlayer(player, { tier });
+      showFlash(t("tierSaved"));
       router.refresh();
     });
   }
@@ -407,6 +423,7 @@ export function AdminCommandCenter({
           <span className="ace-admin-pulse" aria-hidden="true" />
           {t("status")}
         </p>
+        <p className="ace-admin-role-note">{t("roleNote")}</p>
         <div className="ace-admin-matrix">
           <dl className="ace-admin-stats">
             <div className="ace-admin-stat">
@@ -503,6 +520,8 @@ export function AdminCommandCenter({
         </ul>
       </header>
 
+      <AdminTvWall feeds={tv.feeds} dbAvailable={tv.dbAvailable} t={t} />
+
       <section className="ace-admin-section" aria-labelledby="admin-registry-title">
         <h2 id="admin-registry-title" className="ace-admin-section-title">
           {t("registryTitle")}
@@ -571,6 +590,20 @@ export function AdminCommandCenter({
                   </td>
                   <td>
                     <div className="ace-admin-actions">
+                      <select
+                        className="ace-admin-tier-select"
+                        aria-label={t("tierSelect")}
+                        value={player.tier}
+                        suppressHydrationWarning
+                        onClick={(event) => event.stopPropagation()}
+                        onChange={(event) => runTier(player, TIER_FROM_DB[event.target.value.toUpperCase()] ?? player.tier)}
+                      >
+                        {(["Free", "Plus", "Premium"] as const).map((tier) => (
+                          <option key={tier} value={tier}>
+                            {t(TIER_KEY[tier])}
+                          </option>
+                        ))}
+                      </select>
                       <button
                         type="button"
                         suppressHydrationWarning
@@ -697,6 +730,27 @@ export function AdminCommandCenter({
               </div>
             </dl>
           ) : null}
+        </article>
+      </section>
+
+      <section className="ace-admin-desk" aria-label={t("tournamentsTitle")}>
+        <article className="ace-admin-panel">
+          <h2>{t("tournamentsTitle")}</h2>
+          <p>{t("tournamentsNote")}</p>
+          {tournaments.length === 0 ? (
+            <p className="ace-admin-empty">{t("tournamentsEmpty")}</p>
+          ) : (
+            <ul className="ace-admin-live-list">
+              {tournaments.map((row) => (
+                <li key={row.id}>
+                  <strong>{row.name}</strong>
+                  <span>
+                    {row.status} · {t("entries", { count: row.entries })}
+                  </span>
+                </li>
+              ))}
+            </ul>
+          )}
         </article>
       </section>
 

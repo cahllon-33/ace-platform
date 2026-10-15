@@ -1,6 +1,43 @@
 import type { TextBag } from "../types";
 
 export const home: TextBag["home"] = {
+  ops: {
+    "identityKicker": "ЦЕНТР ІДЕНТИФІКАЦІЇ",
+    "signedOutTitle": "Увійти через Steam",
+    "signedOutBody": "Підключіться через офіційний Steam OpenID, щоб бачити тут свій аватар Steam, емблему рангу та Rating Points. A.C.E. ніколи не запитує пароль Steam.",
+    "connect": "Увійти через Steam",
+    "openDeck": "Відкрити Command Deck",
+    "avatarAlt": "Аватар Steam {name}",
+    "emblemAlt": "Емблема рангу {rank}",
+    "rp": "Rating Points",
+    "wins": "Перемоги",
+    "losses": "Поразки",
+    "winRate": "Відсоток перемог",
+    "matches": "Матчі",
+    "kd": "K/D",
+    "na": "н/д",
+    "kdNote": "K/D показує н/д, бо A.C.E. ще не записує вбивства та смерті.",
+    "shieldKicker": "A.C.E SHIELD",
+    "shieldChip": "У РОЗРОБЦІ",
+    "shieldTitle": "Статус цілісності",
+    "shieldBody": "A.C.E Shield у розробці. Сьогодні нічого не встановлюється, не сканується й не відстежується, тож жоден акаунт не має вердикту цілісності.",
+    "shieldClient": "Античит-клієнт",
+    "shieldClientValue": "Не випущено",
+    "shieldServer": "Сервери матчів",
+    "shieldServerValue": "Не підключено",
+    "shieldHardware": "Перевірка заліза",
+    "shieldHardwareValue": "Не збирається",
+    "shieldLink": "Як працюватиме A.C.E Shield",
+    "seasonKicker": "СЕЗОН 1",
+    "seasonChip": "ДАТИ НЕ ОГОЛОШЕНО",
+    "seasonTitle": "Трекер сезону 1",
+    "seasonBody": "Сезон 1 ще не має дати початку й завершення, тож зворотного відліку немає. Дати опублікують на цьому сайті до відкриття сезону.",
+    "statsKicker": "ВАША СТАТИСТИКА",
+    "statsSignedOut": "Увійдіть через Steam, щоб побачити статистику.",
+    "statsEmpty": "Записаних матчів ще немає. Перемоги й поразки з’являться після вашого першого записаного матчу A.C.E.",
+    "statsLive": "Перемоги й поразки беруться з вашого збереженого акаунта A.C.E.",
+    "statsLink": "Відкрити статистику гравця"
+  },
   "meta": {
     "title": "A.C.E. — змагальна платформа CS2",
     "description": "A.C.E. — запланована змагальна платформа для Counter-Strike 2: ідентичність гравця, калібрування, команди й турніри. Цей публічний сайт — попередня версія. Рейтинговий підбір, античит, оплата й призи не активні."

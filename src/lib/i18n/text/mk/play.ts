@@ -1,6 +1,19 @@
 import type { TextBag } from "../types";
 
 export const play: TextBag["play"] = {
+  room: {
+    "showcaseTag": "ПРИКАЗ · Примерни играчи, не е меч во живо. Редицата е затворена.",
+    "showcaseShort": "ПРИКАЗ",
+    "queueClosed": "РЕДИЦАТА Е ЗАТВОРЕНА",
+    "floorRp": "Долна граница на рангот {rp} RP",
+    "yourRp": "{rp} RP",
+    "avatarAlt": "Аватар на {name}",
+    "sampleChat": "Примерни пораки. Не се испратени, не се во живо.",
+    "sampleLine": "ПРИМЕР",
+    "operatorA": "Оригинална A.C.E уметност на оператор за тим A: тактички оператор со шлем во графитна опрема со златни детали",
+    "operatorB": "Оригинална A.C.E уметност на оператор за тим B: бунтовник со качулка во графитна опрема со златни детали",
+    "artNote": "Оригинална A.C.E уметност на ликови. Ова не се модели од играта."
+  },
   "meta": {
     "title": "Играј",
     "description": "Ranked 5v5 matchmaking се отвора кога A.C.E Shield anti-cheat ќе биде активен."

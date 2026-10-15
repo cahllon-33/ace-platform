@@ -1,6 +1,43 @@
 import type { TextBag } from "../types";
 
 export const home: TextBag["home"] = {
+  ops: {
+    "identityKicker": "CENTRO DE IDENTIDAD",
+    "signedOutTitle": "Inicia sesión con Steam",
+    "signedOutBody": "Conéctate con Steam OpenID oficial para ver aquí tu avatar de Steam, tu emblema de rango y tus Rating Points. A.C.E. nunca pide una contraseña de Steam.",
+    "connect": "Iniciar sesión con Steam",
+    "openDeck": "Abrir Command Deck",
+    "avatarAlt": "Avatar de Steam de {name}",
+    "emblemAlt": "Emblema de rango {rank}",
+    "rp": "Rating Points",
+    "wins": "Victorias",
+    "losses": "Derrotas",
+    "winRate": "% de victorias",
+    "matches": "Partidas",
+    "kd": "K/D",
+    "na": "n/d",
+    "kdNote": "El K/D muestra n/d porque A.C.E. aún no registra bajas ni muertes.",
+    "shieldKicker": "A.C.E SHIELD",
+    "shieldChip": "EN DESARROLLO",
+    "shieldTitle": "Estado de integridad",
+    "shieldBody": "A.C.E Shield está en desarrollo. Hoy no se instala, analiza ni supervisa nada, así que ninguna cuenta tiene un veredicto de integridad.",
+    "shieldClient": "Cliente antitrampas",
+    "shieldClientValue": "No publicado",
+    "shieldServer": "Servidores de partida",
+    "shieldServerValue": "No conectados",
+    "shieldHardware": "Análisis de hardware",
+    "shieldHardwareValue": "No recopilado",
+    "shieldLink": "Cómo funcionará A.C.E Shield",
+    "seasonKicker": "TEMPORADA 1",
+    "seasonChip": "FECHAS SIN ANUNCIAR",
+    "seasonTitle": "Seguimiento de la temporada 1",
+    "seasonBody": "La temporada 1 aún no tiene fecha de inicio ni de fin, así que no hay cuenta atrás. Las fechas se publicarán en este sitio antes de que empiece la temporada.",
+    "statsKicker": "TUS ESTADÍSTICAS",
+    "statsSignedOut": "Inicia sesión con Steam para ver tus estadísticas.",
+    "statsEmpty": "Aún no hay partidas registradas. Las victorias y derrotas aparecen tras tu primera partida A.C.E. registrada.",
+    "statsLive": "Las victorias y derrotas provienen de tu cuenta A.C.E. guardada.",
+    "statsLink": "Abrir estadísticas de jugador"
+  },
   meta: {
     title: "A.C.E. — Plataforma competitiva de CS2",
     description:

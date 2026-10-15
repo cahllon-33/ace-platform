@@ -1,6 +1,43 @@
 import type { TextBag } from "../types";
 
 export const home: TextBag["home"] = {
+  ops: {
+    "identityKicker": "पहचान हब",
+    "signedOutTitle": "Steam से साइन इन करें",
+    "signedOutBody": "आधिकारिक Steam OpenID से जुड़ें और यहाँ अपना Steam अवतार, रैंक प्रतीक और Rating Points देखें। A.C.E. कभी Steam पासवर्ड नहीं माँगता।",
+    "connect": "Steam से साइन इन करें",
+    "openDeck": "Command Deck खोलें",
+    "avatarAlt": "{name} का Steam अवतार",
+    "emblemAlt": "{rank} रैंक प्रतीक",
+    "rp": "Rating Points",
+    "wins": "जीत",
+    "losses": "हार",
+    "winRate": "जीत दर",
+    "matches": "मैच",
+    "kd": "K/D",
+    "na": "n/a",
+    "kdNote": "K/D n/a दिखाता है क्योंकि A.C.E. अभी किल और डेथ दर्ज नहीं करता।",
+    "shieldKicker": "A.C.E SHIELD",
+    "shieldChip": "विकास में",
+    "shieldTitle": "इंटीग्रिटी स्थिति",
+    "shieldBody": "A.C.E Shield विकास में है। आज कुछ भी इंस्टॉल, स्कैन या मॉनिटर नहीं होता, इसलिए किसी खाते का कोई इंटीग्रिटी निर्णय नहीं है।",
+    "shieldClient": "एंटी-चीट क्लाइंट",
+    "shieldClientValue": "जारी नहीं",
+    "shieldServer": "मैच सर्वर",
+    "shieldServerValue": "जुड़े नहीं",
+    "shieldHardware": "हार्डवेयर स्कैन",
+    "shieldHardwareValue": "एकत्र नहीं",
+    "shieldLink": "A.C.E Shield कैसे काम करेगा",
+    "seasonKicker": "सीज़न 1",
+    "seasonChip": "तारीख़ें घोषित नहीं",
+    "seasonTitle": "सीज़न 1 ट्रैकर",
+    "seasonBody": "सीज़न 1 की अभी कोई शुरुआत या समाप्ति तारीख़ नहीं है, इसलिए कोई काउंटडाउन नहीं है। सीज़न खुलने से पहले तारीख़ें इसी साइट पर प्रकाशित होंगी।",
+    "statsKicker": "आपके आँकड़े",
+    "statsSignedOut": "अपने आँकड़े देखने के लिए Steam से साइन इन करें।",
+    "statsEmpty": "अभी कोई दर्ज मैच नहीं। आपके पहले दर्ज A.C.E. मैच के बाद जीत और हार दिखेंगी।",
+    "statsLive": "जीत और हार आपके सहेजे गए A.C.E. खाते से आती हैं।",
+    "statsLink": "खिलाड़ी आँकड़े खोलें"
+  },
   "meta": {
     "title": "A.C.E. — प्रतिस्पर्धी CS2 प्लेटफ़ॉर्म",
     "description": "A.C.E. खिलाड़ी पहचान, कैलिब्रेशन, टीमों और टूर्नामेंट के लिए एक नियोजित Counter-Strike 2 प्रतिस्पर्धी प्लेटफ़ॉर्म है। यह सार्वजनिक वेबसाइट एक पूर्वावलोकन है। रैंक्ड मैचमेकिंग, एंटी-चीट, भुगतान और पुरस्कार सक्रिय नहीं हैं।"

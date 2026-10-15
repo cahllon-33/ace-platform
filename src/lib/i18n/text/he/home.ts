@@ -1,6 +1,43 @@
 import type { TextBag } from "../types";
 
 export const home: TextBag["home"] = {
+  ops: {
+    "identityKicker": "מרכז זהות",
+    "signedOutTitle": "התחברות עם Steam",
+    "signedOutBody": "התחברו עם Steam OpenID הרשמי כדי לראות כאן את אווטאר ה-Steam, סמל הדרגה ואת ה-Rating Points שלכם. A.C.E. לעולם לא מבקשת סיסמת Steam.",
+    "connect": "התחברות עם Steam",
+    "openDeck": "פתיחת Command Deck",
+    "avatarAlt": "אווטאר ה-Steam של {name}",
+    "emblemAlt": "סמל הדרגה {rank}",
+    "rp": "Rating Points",
+    "wins": "ניצחונות",
+    "losses": "הפסדים",
+    "winRate": "אחוז ניצחונות",
+    "matches": "משחקים",
+    "kd": "K/D",
+    "na": "לא זמין",
+    "kdNote": "K/D מוצג כלא זמין כי A.C.E. עדיין לא מתעדת הריגות ומוות.",
+    "shieldKicker": "A.C.E SHIELD",
+    "shieldChip": "בפיתוח",
+    "shieldTitle": "מצב תקינות",
+    "shieldBody": "A.C.E Shield נמצא בפיתוח. היום שום דבר לא מותקן, נסרק או מנוטר, ולכן לאף חשבון אין פסיקת תקינות.",
+    "shieldClient": "לקוח אנטי-צ'יט",
+    "shieldClientValue": "לא שוחרר",
+    "shieldServer": "שרתי משחק",
+    "shieldServerValue": "לא מחוברים",
+    "shieldHardware": "סריקת חומרה",
+    "shieldHardwareValue": "לא נאספת",
+    "shieldLink": "איך A.C.E Shield יעבוד",
+    "seasonKicker": "עונה 1",
+    "seasonChip": "התאריכים טרם פורסמו",
+    "seasonTitle": "מעקב עונה 1",
+    "seasonBody": "לעונה 1 עדיין אין תאריך התחלה או סיום, ולכן אין ספירה לאחור. התאריכים יפורסמו באתר הזה לפני פתיחת העונה.",
+    "statsKicker": "הסטטיסטיקות שלך",
+    "statsSignedOut": "התחברו עם Steam כדי לראות את הסטטיסטיקות שלכם.",
+    "statsEmpty": "עדיין אין משחקים מתועדים. ניצחונות והפסדים יופיעו אחרי משחק ה-A.C.E. המתועד הראשון שלכם.",
+    "statsLive": "הניצחונות וההפסדים מגיעים מחשבון ה-A.C.E. השמור שלכם.",
+    "statsLink": "לפתיחת סטטיסטיקות שחקן"
+  },
   meta: {
     title: "A.C.E. — פלטפורמת CS2 תחרותית",
     description:

@@ -1,6 +1,43 @@
 import type { TextBag } from "../types";
 
 export const home: TextBag["home"] = {
+  ops: {
+    "identityKicker": "CENTRUM TOŻSAMOŚCI",
+    "signedOutTitle": "Zaloguj się przez Steam",
+    "signedOutBody": "Połącz się przez oficjalny Steam OpenID, aby zobaczyć tu swój awatar Steam, emblemat rangi i Rating Points. A.C.E. nigdy nie prosi o hasło Steam.",
+    "connect": "Zaloguj się przez Steam",
+    "openDeck": "Otwórz Command Deck",
+    "avatarAlt": "Awatar Steam gracza {name}",
+    "emblemAlt": "Emblemat rangi {rank}",
+    "rp": "Rating Points",
+    "wins": "Wygrane",
+    "losses": "Przegrane",
+    "winRate": "Procent wygranych",
+    "matches": "Mecze",
+    "kd": "K/D",
+    "na": "b/d",
+    "kdNote": "K/D pokazuje b/d, bo A.C.E. nie zapisuje jeszcze zabójstw i śmierci.",
+    "shieldKicker": "A.C.E SHIELD",
+    "shieldChip": "W PRZYGOTOWANIU",
+    "shieldTitle": "Status integralności",
+    "shieldBody": "A.C.E Shield jest w przygotowaniu. Dziś nic nie jest instalowane, skanowane ani monitorowane, więc żadne konto nie ma werdyktu integralności.",
+    "shieldClient": "Klient anty-cheat",
+    "shieldClientValue": "Nie wydano",
+    "shieldServer": "Serwery meczowe",
+    "shieldServerValue": "Nie połączono",
+    "shieldHardware": "Skan sprzętu",
+    "shieldHardwareValue": "Nie zbierany",
+    "shieldLink": "Jak będzie działać A.C.E Shield",
+    "seasonKicker": "SEZON 1",
+    "seasonChip": "DATY NIEOGŁOSZONE",
+    "seasonTitle": "Tracker sezonu 1",
+    "seasonBody": "Sezon 1 nie ma jeszcze daty rozpoczęcia ani zakończenia, więc nie ma odliczania. Daty zostaną opublikowane na tej stronie przed startem sezonu.",
+    "statsKicker": "TWOJE STATYSTYKI",
+    "statsSignedOut": "Zaloguj się przez Steam, aby zobaczyć statystyki.",
+    "statsEmpty": "Brak zapisanych meczów. Wygrane i przegrane pojawią się po Twoim pierwszym zapisanym meczu A.C.E.",
+    "statsLive": "Wygrane i przegrane pochodzą z Twojego zapisanego konta A.C.E.",
+    "statsLink": "Otwórz statystyki gracza"
+  },
   meta: {
     title: "A.C.E. — platforma rywalizacji CS2",
     description:

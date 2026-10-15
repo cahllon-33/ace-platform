@@ -1,6 +1,43 @@
 import type { TextBag } from "../types";
 
 export const home: TextBag["home"] = {
+  ops: {
+    "identityKicker": "IDENTITÄTS-HUB",
+    "signedOutTitle": "Mit Steam anmelden",
+    "signedOutBody": "Verbinde dich über das offizielle Steam OpenID, um hier deinen Steam-Avatar, dein Rangemblem und deine Rating Points zu sehen. A.C.E. fragt nie nach einem Steam-Passwort.",
+    "connect": "Mit Steam anmelden",
+    "openDeck": "Command Deck öffnen",
+    "avatarAlt": "Steam-Avatar von {name}",
+    "emblemAlt": "Rangemblem {rank}",
+    "rp": "Rating Points",
+    "wins": "Siege",
+    "losses": "Niederlagen",
+    "winRate": "Siegquote",
+    "matches": "Matches",
+    "kd": "K/D",
+    "na": "k. A.",
+    "kdNote": "K/D zeigt k. A., weil A.C.E. noch keine Kills und Tode erfasst.",
+    "shieldKicker": "A.C.E SHIELD",
+    "shieldChip": "IN ENTWICKLUNG",
+    "shieldTitle": "Integritätsstatus",
+    "shieldBody": "A.C.E Shield ist in Entwicklung. Heute wird nichts installiert, gescannt oder überwacht, daher hat kein Konto ein Integritätsurteil.",
+    "shieldClient": "Anti-Cheat-Client",
+    "shieldClientValue": "Nicht veröffentlicht",
+    "shieldServer": "Match-Server",
+    "shieldServerValue": "Nicht verbunden",
+    "shieldHardware": "Hardware-Scan",
+    "shieldHardwareValue": "Nicht erfasst",
+    "shieldLink": "So wird A.C.E Shield funktionieren",
+    "seasonKicker": "SAISON 1",
+    "seasonChip": "TERMINE NICHT ANGEKÜNDIGT",
+    "seasonTitle": "Saison-1-Tracker",
+    "seasonBody": "Saison 1 hat noch kein Start- oder Enddatum, daher gibt es keinen Countdown. Die Termine werden vor Saisonstart auf dieser Website veröffentlicht.",
+    "statsKicker": "DEINE STATISTIKEN",
+    "statsSignedOut": "Melde dich mit Steam an, um deine Statistiken zu sehen.",
+    "statsEmpty": "Noch keine erfassten Matches. Siege und Niederlagen erscheinen nach deinem ersten erfassten A.C.E.-Match.",
+    "statsLive": "Siege und Niederlagen stammen aus deinem gespeicherten A.C.E.-Konto.",
+    "statsLink": "Spielerstatistiken öffnen"
+  },
   meta: {
     title: "A.C.E. — Wettkampfplattform für CS2",
     description:

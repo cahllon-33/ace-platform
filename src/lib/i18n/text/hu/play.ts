@@ -1,6 +1,19 @@
 import type { TextBag } from "../types";
 
 export const play: TextBag["play"] = {
+  room: {
+    "showcaseTag": "BEMUTATÓ · Mintajátékosok, nem élő meccs. A sor zárva.",
+    "showcaseShort": "BEMUTATÓ",
+    "queueClosed": "SOR ZÁRVA",
+    "floorRp": "Rang alsó határa {rp} RP",
+    "yourRp": "{rp} RP",
+    "avatarAlt": "{name} avatarja",
+    "sampleChat": "Mintasorok. Nincsenek elküldve, nem élők.",
+    "sampleLine": "MINTA",
+    "operatorA": "Eredeti A.C.E operátor-művészet az A csapatnak: sisakos taktikai operátor grafitszürke felszerelésben, arany díszekkel",
+    "operatorB": "Eredeti A.C.E operátor-művészet a B csapatnak: kapucnis lázadó harcos grafitszürke felszerelésben, arany díszekkel",
+    "artNote": "Eredeti A.C.E karakterművészet. Ezek nem játékmodellek."
+  },
   "meta": {
     "title": "Játék",
     "description": "A ranked 5v5 párosítás akkor nyílik, amikor az A.C.E Shield csalásellenes rendszer élesedik."

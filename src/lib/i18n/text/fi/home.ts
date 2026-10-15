@@ -1,6 +1,43 @@
 import type { TextBag } from "../types";
 
 export const home: TextBag["home"] = {
+  ops: {
+    "identityKicker": "IDENTITEETTIKESKUS",
+    "signedOutTitle": "Kirjaudu Steamilla",
+    "signedOutBody": "Yhdistä virallisella Steam OpenID:llä nähdäksesi täällä Steam-avatarisi, arvomerkkisi ja Rating Pointsisi. A.C.E. ei koskaan kysy Steam-salasanaa.",
+    "connect": "Kirjaudu Steamilla",
+    "openDeck": "Avaa Command Deck",
+    "avatarAlt": "Pelaajan {name} Steam-avatar",
+    "emblemAlt": "Arvomerkki {rank}",
+    "rp": "Rating Points",
+    "wins": "Voitot",
+    "losses": "Tappiot",
+    "winRate": "Voittoprosentti",
+    "matches": "Ottelut",
+    "kd": "K/D",
+    "na": "–",
+    "kdNote": "K/D näyttää –, koska A.C.E. ei vielä tallenna tappoja ja kuolemia.",
+    "shieldKicker": "A.C.E SHIELD",
+    "shieldChip": "KEHITYKSESSÄ",
+    "shieldTitle": "Eheystila",
+    "shieldBody": "A.C.E Shield on kehityksessä. Tänään mitään ei asenneta, skannata eikä valvota, joten millään tilillä ei ole eheysarviota.",
+    "shieldClient": "Huijauksenestoasiakas",
+    "shieldClientValue": "Ei julkaistu",
+    "shieldServer": "Otteluserverit",
+    "shieldServerValue": "Ei yhdistetty",
+    "shieldHardware": "Laitteistoskannaus",
+    "shieldHardwareValue": "Ei kerätä",
+    "shieldLink": "Miten A.C.E Shield tulee toimimaan",
+    "seasonKicker": "KAUSI 1",
+    "seasonChip": "PÄIVÄMÄÄRIÄ EI ILMOITETTU",
+    "seasonTitle": "Kauden 1 seuranta",
+    "seasonBody": "Kaudella 1 ei ole vielä alkamis- eikä päättymispäivää, joten lähtölaskentaa ei ole. Päivämäärät julkaistaan tällä sivustolla ennen kauden alkua.",
+    "statsKicker": "TILASTOSI",
+    "statsSignedOut": "Kirjaudu Steamilla nähdäksesi tilastosi.",
+    "statsEmpty": "Ei vielä tallennettuja otteluita. Voitot ja tappiot näkyvät ensimmäisen tallennetun A.C.E.-ottelusi jälkeen.",
+    "statsLive": "Voitot ja tappiot tulevat tallennetulta A.C.E.-tililtäsi.",
+    "statsLink": "Avaa pelaajatilastot"
+  },
   "meta": {
     "title": "A.C.E. — Kilpailullinen CS2-alusta",
     "description": "A.C.E. on suunniteltu Counter-Strike 2 -kilpailualusta pelaajaidentiteetille, kalibroinnille, joukkueille ja turnauksille. Tämä julkinen sivusto on esikatselu. Ranked-matchmaking, huijauksenesto, maksut ja palkinnot eivät ole käytössä."

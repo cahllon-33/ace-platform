@@ -1,6 +1,19 @@
 import type { TextBag } from "../types";
 
 export const play: TextBag["play"] = {
+  room: {
+    "showcaseTag": "UKÁZKA · Ukázkoví hráči, nejde o živý zápas. Fronta je zavřená.",
+    "showcaseShort": "UKÁZKA",
+    "queueClosed": "FRONTA ZAVŘENÁ",
+    "floorRp": "Spodní hranice ranku {rp} RP",
+    "yourRp": "{rp} RP",
+    "avatarAlt": "Avatar hráče {name}",
+    "sampleChat": "Ukázkové řádky. Neodeslané, ne živě.",
+    "sampleLine": "UKÁZKA",
+    "operatorA": "Původní grafika operátora A.C.E pro tým A: taktický operátor s helmou v grafitové výstroji se zlatými prvky",
+    "operatorB": "Původní grafika operátora A.C.E pro tým B: rebel s kapucí v grafitové výstroji se zlatými prvky",
+    "artNote": "Původní grafika postav A.C.E. Nejde o herní modely."
+  },
   meta: {
     title: "Hrát",
     description: "Hodnocený matchmaking 5v5 se otevře, jakmile poběží anti-cheat A.C.E Shield.",

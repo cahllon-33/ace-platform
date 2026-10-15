@@ -1,6 +1,43 @@
 import type { TextBag } from "../types";
 
 export const home: TextBag["home"] = {
+  ops: {
+    "identityKicker": "身份中心",
+    "signedOutTitle": "使用 Steam 登录",
+    "signedOutBody": "通过官方 Steam OpenID 连接，即可在此查看你的 Steam 头像、段位徽章和 Rating Points。A.C.E. 从不索要 Steam 密码。",
+    "connect": "使用 Steam 登录",
+    "openDeck": "打开 Command Deck",
+    "avatarAlt": "{name} 的 Steam 头像",
+    "emblemAlt": "{rank} 段位徽章",
+    "rp": "Rating Points",
+    "wins": "胜场",
+    "losses": "负场",
+    "winRate": "胜率",
+    "matches": "比赛",
+    "kd": "K/D",
+    "na": "n/a",
+    "kdNote": "由于 A.C.E. 尚未记录击杀和死亡，K/D 显示为 n/a。",
+    "shieldKicker": "A.C.E SHIELD",
+    "shieldChip": "开发中",
+    "shieldTitle": "完整性状态",
+    "shieldBody": "A.C.E Shield 正在开发中。目前不会安装、扫描或监控任何内容，因此没有任何账号有完整性判定。",
+    "shieldClient": "反作弊客户端",
+    "shieldClientValue": "未发布",
+    "shieldServer": "比赛服务器",
+    "shieldServerValue": "未连接",
+    "shieldHardware": "硬件扫描",
+    "shieldHardwareValue": "不收集",
+    "shieldLink": "A.C.E Shield 将如何运作",
+    "seasonKicker": "第 1 赛季",
+    "seasonChip": "日期未公布",
+    "seasonTitle": "第 1 赛季追踪",
+    "seasonBody": "第 1 赛季尚无开始或结束日期，因此没有倒计时。日期将在赛季开放前于本站公布。",
+    "statsKicker": "你的数据",
+    "statsSignedOut": "使用 Steam 登录以查看你的数据。",
+    "statsEmpty": "尚无已记录的比赛。你的第一场 A.C.E. 比赛被记录后将显示胜负。",
+    "statsLive": "胜负来自你保存的 A.C.E. 账号。",
+    "statsLink": "打开玩家数据"
+  },
   "meta": {
     "title": "A.C.E. — CS2 竞技平台",
     "description": "A.C.E. 是一个规划中的《反恐精英 2》竞技平台,涵盖玩家身份、定级、战队和锦标赛。本公开网站为预览版。排位匹配、反作弊、支付和奖品均未启用。"

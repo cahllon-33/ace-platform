@@ -1,6 +1,19 @@
 import type { TextBag } from "../types";
 
 export const play: TextBag["play"] = {
+  room: {
+    "showcaseTag": "PAMERAN · Pemain contoh, bukan pertandingan langsung. Antrean ditutup.",
+    "showcaseShort": "PAMERAN",
+    "queueClosed": "ANTREAN DITUTUP",
+    "floorRp": "Batas bawah rank {rp} RP",
+    "yourRp": "{rp} RP",
+    "avatarAlt": "Avatar {name}",
+    "sampleChat": "Baris contoh. Tidak dikirim, tidak langsung.",
+    "sampleLine": "CONTOH",
+    "operatorA": "Seni operator A.C.E asli untuk Tim A: operator taktis berhelm dengan perlengkapan arang beraksen emas",
+    "operatorB": "Seni operator A.C.E asli untuk Tim B: pejuang pemberontak bertudung dengan perlengkapan arang beraksen emas",
+    "artNote": "Seni karakter A.C.E asli. Ini bukan model dari game."
+  },
   "meta": {
     "title": "Main",
     "description": "Matchmaking ranked 5v5 dibuka setelah anti-cheat A.C.E Shield aktif."

@@ -1,6 +1,19 @@
 import type { TextBag } from "../types";
 
 export const play: TextBag["play"] = {
+  room: {
+    "showcaseTag": "SHOWCASE · Beispielspieler, kein Live-Match. Die Warteschlange ist geschlossen.",
+    "showcaseShort": "SHOWCASE",
+    "queueClosed": "WARTESCHLANGE GESCHLOSSEN",
+    "floorRp": "Rang-Untergrenze {rp} RP",
+    "yourRp": "{rp} RP",
+    "avatarAlt": "Avatar von {name}",
+    "sampleChat": "Beispielzeilen. Nicht gesendet, nicht live.",
+    "sampleLine": "BEISPIEL",
+    "operatorA": "Originale A.C.E-Operator-Art für Team A: ein behelmter taktischer Operator in anthrazitfarbener Ausrüstung mit Goldakzenten",
+    "operatorB": "Originale A.C.E-Operator-Art für Team B: ein Rebellenkämpfer mit Kapuze in anthrazitfarbener Ausrüstung mit Goldakzenten",
+    "artNote": "Originale A.C.E-Charakter-Art. Das sind keine Spielmodelle."
+  },
   meta: {
     title: "Spielen",
     description: "Ranglisten-Matchmaking 5v5 öffnet, sobald der A.C.E Shield-Anti-Cheat live ist.",

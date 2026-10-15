@@ -1,6 +1,43 @@
 import type { TextBag } from "../types";
 
 export const home: TextBag["home"] = {
+  ops: {
+    "identityKicker": "CENTAR IDENTITETA",
+    "signedOutTitle": "Prijavi se putem Steama",
+    "signedOutBody": "Poveži se službenim Steam OpenID-om da ovdje vidiš svoj Steam avatar, amblem ranga i Rating Points. A.C.E. nikad ne traži Steam lozinku.",
+    "connect": "Prijavi se putem Steama",
+    "openDeck": "Otvori Command Deck",
+    "avatarAlt": "Steam avatar igrača {name}",
+    "emblemAlt": "Amblem ranga {rank}",
+    "rp": "Rating Points",
+    "wins": "Pobjede",
+    "losses": "Porazi",
+    "winRate": "Postotak pobjeda",
+    "matches": "Mečevi",
+    "kd": "K/D",
+    "na": "n/d",
+    "kdNote": "K/D prikazuje n/d jer A.C.E. još ne bilježi ubojstva i smrti.",
+    "shieldKicker": "A.C.E SHIELD",
+    "shieldChip": "U RAZVOJU",
+    "shieldTitle": "Status integriteta",
+    "shieldBody": "A.C.E Shield je u razvoju. Danas se ništa ne instalira, ne skenira i ne prati, pa nijedan račun nema presudu o integritetu.",
+    "shieldClient": "Anti-cheat klijent",
+    "shieldClientValue": "Nije objavljen",
+    "shieldServer": "Poslužitelji mečeva",
+    "shieldServerValue": "Nisu povezani",
+    "shieldHardware": "Skeniranje hardvera",
+    "shieldHardwareValue": "Ne prikuplja se",
+    "shieldLink": "Kako će A.C.E Shield raditi",
+    "seasonKicker": "SEZONA 1",
+    "seasonChip": "DATUMI NISU NAJAVLJENI",
+    "seasonTitle": "Praćenje sezone 1",
+    "seasonBody": "Sezona 1 još nema datum početka ni završetka, pa nema odbrojavanja. Datumi će biti objavljeni na ovoj stranici prije početka sezone.",
+    "statsKicker": "TVOJA STATISTIKA",
+    "statsSignedOut": "Prijavi se putem Steama da vidiš svoju statistiku.",
+    "statsEmpty": "Još nema zabilježenih mečeva. Pobjede i porazi pojavit će se nakon tvog prvog zabilježenog A.C.E. meča.",
+    "statsLive": "Pobjede i porazi dolaze s tvog spremljenog A.C.E. računa.",
+    "statsLink": "Otvori statistiku igrača"
+  },
   "meta": {
     "title": "A.C.E. — Natjecateljska CS2 platforma",
     "description": "A.C.E. je planirana natjecateljska platforma za Counter-Strike 2 za identitet igrača, kalibraciju, timove i turnire. Ova javna stranica je pregled. Ranked matchmaking, anti-cheat, plaćanja i nagrade nisu aktivni."

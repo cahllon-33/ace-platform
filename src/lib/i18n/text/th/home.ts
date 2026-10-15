@@ -1,6 +1,43 @@
 import type { TextBag } from "../types";
 
 export const home: TextBag["home"] = {
+  ops: {
+    "identityKicker": "ศูนย์ตัวตน",
+    "signedOutTitle": "ลงชื่อเข้าใช้ด้วย Steam",
+    "signedOutBody": "เชื่อมต่อด้วย Steam OpenID ทางการเพื่อดูอวาตาร์ Steam ตราแรงก์ และ Rating Points ของคุณที่นี่ A.C.E. ไม่เคยขอรหัสผ่าน Steam",
+    "connect": "ลงชื่อเข้าใช้ด้วย Steam",
+    "openDeck": "เปิด Command Deck",
+    "avatarAlt": "อวาตาร์ Steam ของ {name}",
+    "emblemAlt": "ตราแรงก์ {rank}",
+    "rp": "Rating Points",
+    "wins": "ชนะ",
+    "losses": "แพ้",
+    "winRate": "อัตราชนะ",
+    "matches": "แมตช์",
+    "kd": "K/D",
+    "na": "n/a",
+    "kdNote": "K/D แสดง n/a เพราะ A.C.E. ยังไม่บันทึกการฆ่าและการตาย",
+    "shieldKicker": "A.C.E SHIELD",
+    "shieldChip": "อยู่ระหว่างพัฒนา",
+    "shieldTitle": "สถานะความโปร่งใส",
+    "shieldBody": "A.C.E Shield อยู่ระหว่างพัฒนา วันนี้ไม่มีการติดตั้ง สแกน หรือเฝ้าดูสิ่งใด จึงไม่มีบัญชีใดได้รับผลตัดสินด้านความโปร่งใส",
+    "shieldClient": "ไคลเอนต์ป้องกันโกง",
+    "shieldClientValue": "ยังไม่เปิดตัว",
+    "shieldServer": "เซิร์ฟเวอร์แมตช์",
+    "shieldServerValue": "ยังไม่เชื่อมต่อ",
+    "shieldHardware": "การสแกนฮาร์ดแวร์",
+    "shieldHardwareValue": "ไม่มีการเก็บ",
+    "shieldLink": "A.C.E Shield จะทำงานอย่างไร",
+    "seasonKicker": "ซีซัน 1",
+    "seasonChip": "ยังไม่ประกาศวันที่",
+    "seasonTitle": "ติดตามซีซัน 1",
+    "seasonBody": "ซีซัน 1 ยังไม่มีวันเริ่มหรือวันจบ จึงไม่มีการนับถอยหลัง วันที่จะประกาศบนเว็บไซต์นี้ก่อนเปิดซีซัน",
+    "statsKicker": "สถิติของคุณ",
+    "statsSignedOut": "ลงชื่อเข้าใช้ด้วย Steam เพื่อดูสถิติของคุณ",
+    "statsEmpty": "ยังไม่มีแมตช์ที่บันทึก ชนะและแพ้จะแสดงหลังแมตช์ A.C.E. แรกที่บันทึกของคุณ",
+    "statsLive": "ชนะและแพ้มาจากบัญชี A.C.E. ที่บันทึกไว้ของคุณ",
+    "statsLink": "เปิดสถิติผู้เล่น"
+  },
   "meta": {
     "title": "A.C.E. — แพลตฟอร์มแข่งขัน CS2",
     "description": "A.C.E. เป็นแพลตฟอร์มแข่งขัน Counter-Strike 2 ที่วางแผนไว้สำหรับตัวตนผู้เล่น การปรับระดับ ทีม และทัวร์นาเมนต์ เว็บไซต์สาธารณะนี้เป็นตัวอย่าง ระบบจับคู่จัดอันดับ ป้องกันการโกง การชำระเงิน และรางวัลยังไม่เปิดใช้งาน"

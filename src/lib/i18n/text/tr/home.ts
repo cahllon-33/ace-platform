@@ -1,6 +1,43 @@
 import type { TextBag } from "../types";
 
 export const home: TextBag["home"] = {
+  ops: {
+    "identityKicker": "KİMLİK MERKEZİ",
+    "signedOutTitle": "Steam ile giriş yap",
+    "signedOutBody": "Steam avatarını, rütbe amblemini ve Rating Points'ini burada görmek için resmi Steam OpenID ile bağlan. A.C.E. asla Steam şifresi istemez.",
+    "connect": "Steam ile giriş yap",
+    "openDeck": "Command Deck'i aç",
+    "avatarAlt": "{name} Steam avatarı",
+    "emblemAlt": "{rank} rütbe amblemi",
+    "rp": "Rating Points",
+    "wins": "Galibiyet",
+    "losses": "Mağlubiyet",
+    "winRate": "Galibiyet oranı",
+    "matches": "Maçlar",
+    "kd": "K/D",
+    "na": "yok",
+    "kdNote": "A.C.E. henüz öldürme ve ölümleri kaydetmediği için K/D 'yok' gösterir.",
+    "shieldKicker": "A.C.E SHIELD",
+    "shieldChip": "GELİŞTİRİLİYOR",
+    "shieldTitle": "Bütünlük durumu",
+    "shieldBody": "A.C.E Shield geliştiriliyor. Bugün hiçbir şey kurulmuyor, taranmıyor veya izlenmiyor; bu yüzden hiçbir hesabın bütünlük kararı yok.",
+    "shieldClient": "Hile önleme istemcisi",
+    "shieldClientValue": "Yayınlanmadı",
+    "shieldServer": "Maç sunucuları",
+    "shieldServerValue": "Bağlı değil",
+    "shieldHardware": "Donanım taraması",
+    "shieldHardwareValue": "Toplanmıyor",
+    "shieldLink": "A.C.E Shield nasıl çalışacak",
+    "seasonKicker": "SEZON 1",
+    "seasonChip": "TARİHLER AÇIKLANMADI",
+    "seasonTitle": "Sezon 1 takibi",
+    "seasonBody": "Sezon 1'in henüz başlangıç veya bitiş tarihi yok, bu yüzden geri sayım yok. Tarihler sezon açılmadan önce bu sitede yayınlanacak.",
+    "statsKicker": "İSTATİSTİKLERİN",
+    "statsSignedOut": "İstatistiklerini görmek için Steam ile giriş yap.",
+    "statsEmpty": "Henüz kayıtlı maç yok. Galibiyet ve mağlubiyetler ilk kayıtlı A.C.E. maçından sonra görünür.",
+    "statsLive": "Galibiyet ve mağlubiyetler kayıtlı A.C.E. hesabından gelir.",
+    "statsLink": "Oyuncu istatistiklerini aç"
+  },
   "meta": {
     "title": "A.C.E. — Rekabetçi CS2 Platformu",
     "description": "A.C.E., oyuncu kimliği, kalibrasyon, takımlar ve turnuvalar için planlanan bir Counter-Strike 2 rekabet platformudur. Bu herkese açık site bir önizlemedir. Dereceli eşleştirme, hile karşıtı sistem, ödemeler ve ödüller aktif değildir."

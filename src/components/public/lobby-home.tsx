@@ -1,15 +1,15 @@
 import { Suspense } from "react";
 import Link from "next/link";
 import { connection } from "next/server";
-import { AceShieldStatus } from "@/components/ace-shield-status";
 import { HomeLocaleActions, HowItWorksLocale, LocaleLoading } from "@/components/home-locale-actions";
 import { PlatformStatus } from "@/components/platform-status";
 import { HeroArena } from "@/components/hero-arena";
 import { OpeningReel } from "@/components/opening-reel";
 import { HomeWorkspaceCharter } from "@/components/home-workspace-charter";
-import { LobbyIdentity, LobbyMembership, LobbySeasonStats } from "@/components/lobby-identity";
+import { LobbyMembership } from "@/components/lobby-identity";
+import { LobbyOps } from "@/components/lobby-ops";
+import { effectiveRankArt } from "@/server/rank-art";
 import { hasEliteSeal } from "@/lib/pricing";
-import { nextRankCeiling, rankFromRating } from "@/lib/ranks";
 import { getText } from "@/server/locale";
 import { readSessionUser } from "@/server/session";
 
@@ -40,16 +40,6 @@ async function LobbyHomeDynamic() {
 
   const text = await getText();
   const live = Boolean(user);
-  const tier = rankFromRating(user?.competitiveRating ?? 0);
-  const ceiling = nextRankCeiling(user?.competitiveRating ?? 0);
-  const matches = live ? user!.wins + user!.losses : 0;
-  const winRate =
-    live && matches > 0 ? `${Math.round((user!.wins / matches) * 100)}%` : text.home.identity.notAvailable;
-  const rpLabel = live
-    ? `${user!.competitiveRating.toLocaleString("en-US")} / ${ceiling.toLocaleString("en-US")} RP`
-    : "— / — RP";
-  const placementPlayed = live ? Math.min(10, user!.wins + user!.losses) : 0;
-
   return (
     <main className="ace-lobby-root ace-home-flow">
       <OpeningReel />
@@ -66,18 +56,22 @@ async function LobbyHomeDynamic() {
       <HomeWorkspaceCharter />
 
 
-      <section id="identity" className="ace-home-ops mx-auto grid max-w-[76rem] gap-4 overflow-x-hidden px-4 py-8 sm:px-6">
-        <LobbyIdentity
-          live={live}
-          displayName={live ? user!.displayName : null}
-          rpLabel={rpLabel}
-          tierLabel={live ? `${tier.crystalName} · ${tier.name}` : null}
-          placementPlayed={placementPlayed}
-          elite={live && hasEliteSeal(user!.subscriptionTier)}
-        />
-        <AceShieldStatus />
-        <LobbySeasonStats live={live} matches={matches} winRate={winRate} />
-      </section>
+      <LobbyOps
+        text={text}
+        player={
+          user
+            ? {
+                displayName: user.displayName,
+                avatarUrl: user.avatarUrl || null,
+                rating: user.competitiveRating,
+                wins: user.wins,
+                losses: user.losses,
+                art: effectiveRankArt(user),
+                elite: hasEliteSeal(user.subscriptionTier),
+              }
+            : null
+        }
+      />
 
 
       <LobbyMembership />

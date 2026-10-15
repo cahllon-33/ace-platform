@@ -7810,3 +7810,55 @@ html[dir="rtl"] .ace-hub-card-face {
   .ace-s3d-plane { transition: none; }
   .ace-s3d-chart:hover .ace-s3d-plane { transform: rotateX(16deg); }
 }
+
+/* Round 12: floating rank emblem + avatar */
+.ace-float-emblem { position: relative; display: inline-grid; place-items: center; flex-shrink: 0; perspective: 600px; }
+.ace-float-emblem img { position: relative; width: 100%; height: 100%; object-fit: contain; filter: drop-shadow(0 14px 14px rgba(0,0,0,0.65)) drop-shadow(0 0 10px rgba(212,175,55,0.35)); animation: ace-emblem-float 5.5s ease-in-out infinite; transform-style: preserve-3d; }
+.ace-float-emblem-glow { position: absolute; inset: 12%; border-radius: 999px; background: radial-gradient(circle, rgba(255,215,0,0.35), rgba(212,175,55,0.08) 55%, transparent 70%); filter: blur(8px); animation: ace-emblem-glow 5.5s ease-in-out infinite; }
+@keyframes ace-emblem-float { 0%,100% { transform: translateY(0) rotateY(-10deg) rotateX(4deg); } 50% { transform: translateY(-7px) rotateY(10deg) rotateX(-2deg); } }
+@keyframes ace-emblem-glow { 0%,100% { opacity: 0.55; } 50% { opacity: 1; } }
+.ace-avatar3d { display: inline-grid; place-items: center; flex-shrink: 0; overflow: hidden; border-radius: 1rem; border: 1px solid rgba(255,215,0,0.45); background: linear-gradient(160deg, #2a2516, #0d0d0f); box-shadow: 0 10px 22px -10px rgba(0,0,0,0.9), 0 0 0 3px rgba(212,175,55,0.08); color: #ffd700; font-weight: 800; font-size: 1.1rem; }
+.ace-avatar3d img { width: 100%; height: 100%; object-fit: cover; }
+
+/* Round 12: home ops panels */
+.ace-ops3d { display: grid; gap: 1rem; }
+@media (min-width: 1024px) { .ace-ops3d { grid-template-columns: 1.25fr 1fr 1fr; align-items: stretch; } }
+.ace-ops3d-stack { display: grid; gap: 1rem; }
+.ace-ops3d-card { position: relative; display: flex; flex-direction: column; gap: 0.6rem; min-width: 0; border-radius: 1.4rem; border: 1px solid rgba(255,215,0,0.22); background: linear-gradient(165deg, #1b1b1e 0%, #0f0f11 55%, #09090a 100%); padding: 1.25rem; box-shadow: 0 1px 0 rgba(255,255,255,0.05) inset, 0 24px 44px -22px rgba(0,0,0,0.9); }
+.ace-ops3d-kicker { font-size: 0.66rem; font-weight: 800; letter-spacing: 0.2em; text-transform: uppercase; color: #d4af37; }
+.ace-ops3d-row { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 0.5rem; }
+.ace-ops3d-chip { font-size: 0.6rem; font-weight: 800; letter-spacing: 0.12em; color: #ffd700; border: 1px solid rgba(255,215,0,0.4); border-radius: 999px; padding: 0.12rem 0.55rem; }
+.ace-ops3d-hero { display: flex; align-items: center; gap: 0.9rem; }
+.ace-ops3d-hero .ace-float-emblem { margin-inline-start: auto; }
+.ace-ops3d-name { font-size: 1.3rem; font-weight: 700; color: #f5f3ec; overflow-wrap: anywhere; }
+.ace-ops3d-title { font-size: 1.05rem; font-weight: 700; color: #f5f3ec; }
+.ace-ops3d-rank { font-size: 0.78rem; letter-spacing: 0.1em; color: #ffd76a; }
+.ace-ops3d-elite { display: inline-flex; align-items: center; gap: 0.4rem; margin-top: 0.25rem; font-size: 0.68rem; font-weight: 800; letter-spacing: 0.18em; color: #ffd700; }
+.ace-ops3d-metrics { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0.5rem; }
+.ace-ops3d-metrics div { border-radius: 0.85rem; border: 1px solid rgba(255,215,0,0.14); background: linear-gradient(180deg, #202024, #121214); padding: 0.55rem 0.7rem; }
+.ace-ops3d-metrics dt { font-size: 0.62rem; letter-spacing: 0.1em; text-transform: uppercase; color: #a9abb3; }
+.ace-ops3d-metrics dd { margin-top: 0.1rem; font-size: 1.15rem; font-weight: 700; color: #ffd700; font-variant-numeric: tabular-nums; }
+.ace-ops3d-note { font-size: 0.82rem; line-height: 1.5; color: #a9abb3; }
+.ace-ops3d-list { display: grid; gap: 0.4rem; }
+.ace-ops3d-list div { display: flex; justify-content: space-between; gap: 0.75rem; border-bottom: 1px solid rgba(255,255,255,0.06); padding-bottom: 0.35rem; font-size: 0.82rem; }
+.ace-ops3d-list dt { color: #a9abb3; }
+.ace-ops3d-list dd { color: #f5f3ec; font-weight: 600; text-align: end; }
+.ace-ops3d-cta { margin-top: auto; display: inline-flex; min-height: 2.75rem; width: fit-content; align-items: center; border-radius: 999px; border: 1px solid rgba(212,175,55,0.55); padding: 0 1rem; font-size: 0.75rem; letter-spacing: 0.14em; text-transform: uppercase; color: #ffd76a; }
+.ace-ops3d-link { margin-top: auto; font-size: 0.8rem; color: #ffd76a; text-decoration: underline; text-underline-offset: 3px; }
+
+/* Round 12: match room */
+.ace-room-showcase { margin: 0.5rem 0 1rem; display: inline-block; border-radius: 999px; border: 1px solid rgba(255,215,0,0.45); padding: 0.3rem 0.85rem; font-size: 0.72rem; font-weight: 700; letter-spacing: 0.08em; color: #ffd700; background: rgba(212,175,55,0.08); }
+.ace-room-slot { align-items: center; }
+.ace-room-slot .ace-float-emblem { margin-inline-start: auto; }
+.ace-room-rp { font-size: 0.72rem; color: #ffd76a; font-variant-numeric: tabular-nums; }
+.ace-room-operator { display: block; height: 260px; margin: 0; border-radius: 1.2rem; overflow: hidden; border: 1px solid rgba(255,215,0,0.22); box-shadow: 0 30px 50px -24px rgba(0,0,0,0.95); background: #0b0b0c; }
+.ace-room-operator img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: 50% 15%; }
+@media (min-width: 1280px) { .ace-room-operator { height: auto; align-self: stretch; } .ace-play-horizon { grid-template-columns: minmax(0, 0.7fr) minmax(0, 1fr) 4.5rem minmax(0, 1fr) minmax(0, 0.7fr) !important; } }
+.ace-room-sample { font-size: 0.72rem; color: #a9abb3; margin: 0.2rem 0 0.4rem; }
+.ace-room-sample-tag { display: inline-block; margin-inline-end: 0.4rem; font-size: 0.55rem; font-weight: 800; letter-spacing: 0.1em; color: #ffd700; border: 1px solid rgba(255,215,0,0.35); border-radius: 999px; padding: 0 0.35rem; vertical-align: middle; }
+.ace-room-pending { display: inline-block; width: 0.55rem; height: 0.55rem; border-radius: 999px; border: 1.5px solid #8a7a4a; margin-inline-end: 0.35rem; vertical-align: middle; }
+.ace-room-art-note { margin-top: 0.75rem; font-size: 0.72rem; color: #8d8f96; }
+
+@media (prefers-reduced-motion: reduce) {
+  .ace-float-emblem img, .ace-float-emblem-glow { animation: none; }
+}

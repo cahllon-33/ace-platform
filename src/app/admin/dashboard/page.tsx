@@ -4,7 +4,8 @@ import { AdminCommandCenter } from "@/components/admin-command-center";
 import { AdminGate } from "@/components/admin-gate";
 import { STAGING_ADMIN_PLAYERS, STAGING_ADMIN_STATS } from "@/lib/admin-staging";
 import { readAdminGate } from "@/server/admin-gate";
-import { loadAdminDirectory } from "@/server/admin-users";
+import { loadAdminDirectory, loadAdminTournaments } from "@/server/admin-users";
+import { loadTvWall } from "@/server/admin-broadcast";
 
 export const metadata: Metadata = {
   title: "A.C.E. League Supreme Command Center",
@@ -21,7 +22,9 @@ export const metadata: Metadata = {
 export default async function AdminDashboardPage() {
   await connection();
   const unlocked = await readAdminGate();
-  const loaded = unlocked ? await loadAdminDirectory() : null;
+  const [loaded, tv, tournaments] = unlocked
+    ? await Promise.all([loadAdminDirectory(), loadTvWall(), loadAdminTournaments()])
+    : [null, { feeds: [], dbAvailable: false }, []];
   const directory =
     loaded && !loaded.stats.unavailable
       ? loaded
@@ -39,6 +42,8 @@ export default async function AdminDashboardPage() {
           stats={directory.stats}
           matches={directory.matches}
           reports={directory.reports}
+          tv={tv}
+          tournaments={tournaments}
         />
       ) : (
         <AdminGate />

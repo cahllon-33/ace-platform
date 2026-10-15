@@ -1091,3 +1091,33 @@
     animation: none;
   }
 }
+
+/* Round 12: command center depth, glow, A.C.E TV */
+.ace-admin-shell { background: radial-gradient(120% 60% at 50% -10%, rgba(212,175,55,0.14), transparent 60%), radial-gradient(80% 50% at 100% 100%, rgba(212,175,55,0.06), transparent 60%), #08080a; }
+.ace-admin-hero, .ace-admin-section, .ace-admin-panel { position: relative; border-radius: 1.5rem; border: 1px solid rgba(255,215,0,0.24); background: linear-gradient(165deg, #1a1a1d 0%, #0f0f11 55%, #09090a 100%); box-shadow: 0 1px 0 rgba(255,255,255,0.06) inset, 0 -1px 0 rgba(0,0,0,0.7) inset, 0 30px 60px -28px rgba(0,0,0,0.95), 0 0 40px -20px rgba(212,175,55,0.35); }
+.ace-admin-section { padding: 1.25rem; margin-top: 1.25rem; }
+.ace-admin-stat { transform: perspective(900px) rotateX(4deg); transition: transform 300ms ease, box-shadow 300ms ease; box-shadow: 0 18px 30px -18px rgba(0,0,0,0.9); }
+.ace-admin-stat:hover { transform: perspective(900px) rotateX(0deg) translateY(-2px); box-shadow: 0 22px 40px -18px rgba(0,0,0,0.95), 0 0 24px -10px rgba(255,215,0,0.5); }
+.ace-admin-title { text-shadow: 0 0 28px rgba(255,215,0,0.35); }
+.ace-admin-role-note { margin-top: 0.4rem; font-size: 0.75rem; color: #a9abb3; }
+.ace-admin-tier-select { min-height: 2rem; border-radius: 999px; border: 1px solid rgba(255,215,0,0.4); background: #121214; color: #ffd76a; padding: 0 0.6rem; font-size: 0.75rem; }
+.ace-tv-head { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 0.75rem; align-items: flex-start; }
+.ace-tv-lede { max-width: 46rem; font-size: 0.85rem; color: #a9abb3; margin-top: 0.3rem; }
+.ace-tv-count { font-size: 0.7rem; font-weight: 800; letter-spacing: 0.14em; color: #ffd700; border: 1px solid rgba(255,215,0,0.4); border-radius: 999px; padding: 0.2rem 0.7rem; }
+.ace-tv-grid { margin-top: 1rem; display: grid; gap: 0.75rem; grid-template-columns: repeat(auto-fill, minmax(min(100%, 18rem), 1fr)); }
+.ace-tv-grid.is-focus { grid-template-columns: 1fr; }
+.ace-tv-tile { margin: 0; border-radius: 1rem; overflow: hidden; border: 1px solid rgba(255,215,0,0.25); background: #050506; box-shadow: 0 18px 34px -18px rgba(0,0,0,0.95); }
+.ace-tv-tile.is-focused { border-color: rgba(255,215,0,0.6); box-shadow: 0 0 40px -12px rgba(255,215,0,0.5); }
+.ace-tv-frame { aspect-ratio: 16 / 9; background: #000; }
+.ace-tv-frame iframe { width: 100%; height: 100%; border: 0; display: block; }
+.ace-tv-tile figcaption { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 0.5rem; padding: 0.6rem 0.75rem; background: linear-gradient(180deg, #151517, #0d0d0f); }
+.ace-tv-title { display: grid; font-size: 0.85rem; font-weight: 700; color: #f5f3ec; }
+.ace-tv-title small { font-size: 0.68rem; font-weight: 500; color: #a9abb3; text-transform: uppercase; letter-spacing: 0.1em; }
+.ace-tv-actions { display: flex; flex-wrap: wrap; gap: 0.35rem; }
+.ace-tv-empty { margin-top: 1rem; display: grid; justify-items: center; gap: 0.35rem; text-align: center; border-radius: 1rem; border: 1px dashed rgba(255,215,0,0.3); padding: 2.5rem 1rem; color: #a9abb3; background: repeating-linear-gradient(135deg, rgba(212,175,55,0.03) 0 12px, transparent 12px 24px); }
+.ace-tv-empty strong { color: #f5f3ec; font-size: 1.05rem; letter-spacing: 0.04em; }
+.ace-tv-empty-mark { width: 3rem; height: 2rem; border-radius: 0.4rem; border: 2px solid rgba(255,215,0,0.5); box-shadow: 0 0 18px -4px rgba(255,215,0,0.5); }
+.ace-tv-form { margin-top: 1rem; display: grid; gap: 0.6rem; align-items: end; }
+@media (min-width: 900px) { .ace-tv-form { grid-template-columns: 1fr 2fr auto; } }
+.ace-tv-note { grid-column: 1 / -1; font-size: 0.78rem; color: #c8c4b8; }
+@media (prefers-reduced-motion: reduce) { .ace-admin-stat { transition: none; transform: none; } }

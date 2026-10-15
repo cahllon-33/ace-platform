@@ -1,6 +1,19 @@
 import type { TextBag } from "../types";
 
 export const play: TextBag["play"] = {
+  room: {
+    "showcaseTag": "展示 · 示例选手，并非实时比赛。队列已关闭。",
+    "showcaseShort": "展示",
+    "queueClosed": "队列已关闭",
+    "floorRp": "段位下限 {rp} RP",
+    "yourRp": "{rp} RP",
+    "avatarAlt": "{name} 的头像",
+    "sampleChat": "示例消息。未发送，非实时。",
+    "sampleLine": "示例",
+    "operatorA": "A 队的 A.C.E 原创干员美术：戴头盔的战术干员，炭黑装备配金色点缀",
+    "operatorB": "B 队的 A.C.E 原创干员美术：戴兜帽的反抗军战士，炭黑装备配金色点缀",
+    "artNote": "A.C.E 原创角色美术，并非游戏模型。"
+  },
   "meta": {
     "title": "游戏",
     "description": "A.C.E Shield 反作弊上线后,5v5 排位匹配即开放。"

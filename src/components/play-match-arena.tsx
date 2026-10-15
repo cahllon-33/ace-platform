@@ -1,35 +1,41 @@
 "use client";
 
-import { FormEvent, useEffect, useState } from "react";
+import { FormEvent, useState } from "react";
 import { useI18n } from "@/components/locale-provider";
 import { ConnectedCount } from "@/components/connected-count";
 import { useText } from "@/components/text-provider";
 import { PlannedButton } from "@/components/ui/button";
 import { interpolate } from "@/lib/i18n";
+import { FloatingEmblem, PlayerAvatar } from "@/components/floating-emblem";
+import { RANK_TIERS, rankArtAsset, type RankArt } from "@/lib/ranks";
+
+export type ArenaCaptain = { avatarUrl: string | null; rating: number; level: number; art: RankArt };
 
 const MAPS = ["DUST II", "Mirage", "Inferno", "Nuke", "Ancient", "Anubis", "Train"] as const;
 
 type RosterRow = {
   callsign: string;
   role: string;
-  rank: string;
-  ping: string;
+  /** Rank level 1-10 for the showcase emblem. */
+  level: number;
   skin: number;
+  /** Real stored values for the signed-in captain only. */
+  live?: { avatarUrl: string | null; rating: number; art: RankArt };
 };
 
 const TEAM_A_REST: RosterRow[] = [
-  { callsign: "Zyro", role: "AWP", rank: "DIAMOND I", ping: "28ms", skin: 1 },
-  { callsign: "Kane", role: "Entry", rank: "DIAMOND I", ping: "35ms", skin: 2 },
-  { callsign: "Frost", role: "Lurk", rank: "PLATINUM II", ping: "41ms", skin: 3 },
-  { callsign: "Vex", role: "Support", rank: "PLATINUM II", ping: "22ms", skin: 4 },
+  { callsign: "Zyro", role: "AWP", level: 6, skin: 1 },
+  { callsign: "Kane", role: "Entry", level: 6, skin: 2 },
+  { callsign: "Frost", role: "Lurk", level: 5, skin: 3 },
+  { callsign: "Vex", role: "Support", level: 5, skin: 4 },
 ];
 
 const TEAM_B: RosterRow[] = [
-  { callsign: "Razor", role: "IGL", rank: "DIAMOND I", ping: "31ms", skin: 0 },
-  { callsign: "Ghost", role: "AWP", rank: "DIAMOND II", ping: "44ms", skin: 1 },
-  { callsign: "Viper", role: "Entry", rank: "PLATINUM III", ping: "39ms", skin: 2 },
-  { callsign: "Hawk", role: "Lurk", rank: "PLATINUM III", ping: "51ms", skin: 3 },
-  { callsign: "Sable", role: "Support", rank: "GOLD I", ping: "36ms", skin: 4 },
+  { callsign: "Razor", role: "IGL", level: 6, skin: 0 },
+  { callsign: "Ghost", role: "AWP", level: 6, skin: 1 },
+  { callsign: "Viper", role: "Entry", level: 5, skin: 2 },
+  { callsign: "Hawk", role: "Lurk", level: 5, skin: 3 },
+  { callsign: "Sable", role: "Support", level: 4, skin: 4 },
 ];
 
 const SAMPLE_CHAT_HANDLES = ["Zyro", "Kane", "Vex"] as const;
@@ -37,12 +43,6 @@ const SAMPLE_CHAT_HANDLES = ["Zyro", "Kane", "Vex"] as const;
 function findMap(lockedMap?: string) {
   if (!lockedMap) return undefined;
   return MAPS.find((name) => name.toLowerCase() === lockedMap.toLowerCase());
-}
-
-function formatClock(total: number) {
-  const minutes = Math.floor(total / 60);
-  const seconds = total % 60;
-  return `${minutes.toString().padStart(2, "0")}:${seconds.toString().padStart(2, "0")}`;
 }
 
 function LightningMark() {
@@ -53,23 +53,6 @@ function LightningMark() {
   );
 }
 
-function CheckMark() {
-  return (
-    <svg className="ace-play-check" viewBox="0 0 16 16" aria-hidden="true">
-      <path d="M2.4 8.2 6.1 12l7.5-8.4" />
-    </svg>
-  );
-}
-
-function OperativeMark({ skin, name }: { skin: number; name: string }) {
-  const initial = name.replace(/[^A-Za-z0-9]/g, "").slice(0, 1).toUpperCase() || "A";
-  return (
-    <span className="ace-play-avatar" data-skin={skin} aria-hidden="true">
-      {initial}
-    </span>
-  );
-}
-
 function RosterCard({
   row,
   captain,
@@ -77,37 +60,63 @@ function RosterCard({
   row: RosterRow;
   captain?: boolean;
 }) {
-  const { t } = useI18n();
-  const copy = useText().play.arena;
-
+  const text = useText();
+  const copy = text.play.arena;
+  const room = text.play.room;
+  const tier = RANK_TIERS[Math.min(10, Math.max(1, row.level)) - 1];
+  const art: RankArt = row.live?.art ?? "standard";
   return (
-    <li className="ace-play-slot">
-      <OperativeMark skin={row.skin} name={row.callsign} />
+    <li className="ace-play-slot ace-room-slot">
+      <PlayerAvatar
+        src={row.live?.avatarUrl ?? null}
+        name={row.callsign}
+        alt={interpolate(room.avatarAlt, { name: row.callsign })}
+        size={44}
+      />
       <div className="ace-play-slot-meta">
         <p className="ace-play-slot-name">
           {row.callsign}
           {captain ? <span className="ace-play-cap">{copy.captain}</span> : null}
         </p>
         <p className="ace-play-slot-rank">
-          {row.role} · {row.rank}
+          {row.role} · {tier.crystalName}
+        </p>
+        <p className="ace-room-rp">
+          {row.live
+            ? interpolate(room.yourRp, { rp: row.live.rating.toLocaleString("en-US") })
+            : interpolate(room.floorRp, { rp: tier.minRating.toLocaleString("en-US") })}
         </p>
       </div>
-      <div className="ace-play-slot-status">
-        <p className="ace-play-ready">
-          <CheckMark /> {t("ready")}
-        </p>
-        <p className="ace-play-ping">{interpolate(copy.ping, { ping: row.ping })}</p>
-      </div>
+      <FloatingEmblem src={rankArtAsset(tier.level, art).stillSrc} alt={tier.name} size={52} />
     </li>
+  );
+}
+
+function OperatorArt({ side, alt }: { side: "guardian" | "rebel"; alt: string }) {
+  return (
+    <figure className="ace-room-operator" data-side={side}>
+      {/* eslint-disable-next-line @next/next/no-img-element */}
+      <img
+        src={`/operators/operator-${side}-640.webp`}
+        srcSet={`/operators/operator-${side}-640.webp 640w, /operators/operator-${side}-1280.webp 1280w, /operators/operator-${side}-2560.webp 2560w`}
+        sizes="(min-width: 1024px) 20vw, 45vw"
+        alt={alt}
+        width={640}
+        height={800}
+        loading="lazy"
+      />
+    </figure>
   );
 }
 
 export function PlayMatchArena({
   captainLabel,
+  captain = null,
   lockedMap,
   boardName: boardNameProp,
 }: {
   captainLabel: string;
+  captain?: ArenaCaptain | null;
   lockedMap?: string;
   boardName?: string;
 }) {
@@ -115,7 +124,6 @@ export function PlayMatchArena({
   const text = useText();
   const copy = text.play.arena;
   const boardName = boardNameProp ?? text.play.boards.items.calibration.name;
-  const [remain, setRemain] = useState(24);
   const [map, setMap] = useState<(typeof MAPS)[number]>(() => findMap(lockedMap) ?? "DUST II");
   const [syncedLock, setSyncedLock] = useState(lockedMap);
   if (lockedMap !== syncedLock) {
@@ -135,21 +143,12 @@ export function PlayMatchArena({
     {
       callsign: captainLabel,
       role: "IGL",
-      rank: "ACE ELITE",
-      ping: "32ms",
+      level: captain?.level ?? 6,
       skin: 0,
+      live: captain ? { avatarUrl: captain.avatarUrl, rating: captain.rating, art: captain.art } : undefined,
     },
     ...TEAM_A_REST,
   ];
-
-  useEffect(() => {
-    const media = window.matchMedia("(prefers-reduced-motion: reduce)");
-    if (media.matches) return;
-    const id = window.setInterval(() => {
-      setRemain((value) => (value <= 0 ? 24 : value - 1));
-    }, 1000);
-    return () => window.clearInterval(id);
-  }, []);
 
   function onChat(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
@@ -162,6 +161,7 @@ export function PlayMatchArena({
   return (
     <section className="ace-play-arena" aria-label={copy.ariaLabel}>
       <p className="ace-play-kicker">{t("playKicker")}</p>
+      <p className="ace-room-showcase" role="note">{text.play.room.showcaseTag}</p>
 
       <header className="ace-play-banner">
         <div className="ace-play-title-row">
@@ -196,7 +196,6 @@ export function PlayMatchArena({
           <div>
             <dt>{copy.settings.antiCheat}</dt>
             <dd>
-              <span className="ace-play-pulse" aria-hidden="true" />
               {copy.settings.simulator}
             </dd>
           </div>
@@ -204,6 +203,7 @@ export function PlayMatchArena({
       </header>
 
       <div className="ace-play-horizon">
+        <OperatorArt side="guardian" alt={text.play.room.operatorA} />
         <article className="ace-play-team" data-side="a">
           <h2>{t("teamA")}</h2>
           <p className="ace-play-team-note">{t("teamANote")}</p>
@@ -227,15 +227,18 @@ export function PlayMatchArena({
             ))}
           </ul>
         </article>
+        <OperatorArt side="rebel" alt={text.play.room.operatorB} />
       </div>
 
       <div className="ace-play-desk">
         <article className="ace-play-panel ace-play-chat">
           <h3>{copy.chat.title}</h3>
           <p className="ace-play-panel-kicker">{copy.chat.kicker}</p>
+          <p className="ace-room-sample">{text.play.room.sampleChat}</p>
           <ul>
             {lines.map((line, index) => (
               <li key={`${line.who}-${index}`}>
+                {index < copy.chat.samples.length ? <span className="ace-room-sample-tag">{text.play.room.sampleLine}</span> : null}
                 <strong>{line.who}:</strong> {line.text}
               </li>
             ))}
@@ -262,12 +265,8 @@ export function PlayMatchArena({
         <article className="ace-play-panel ace-play-countdown">
           <div className="ace-play-dust" data-map={map} aria-hidden="true" />
           <div className="ace-play-countdown-copy">
-            <p className="ace-play-clock-label">
-              {t("gameStartsIn", { clock: "" }).replace(/\s+/g, " ").trim()}
-            </p>
-            <p className="ace-play-clock" key={remain} suppressHydrationWarning>
-              {formatClock(remain)}
-            </p>
+            <p className="ace-play-clock-label">{text.play.room.showcaseShort}</p>
+            <p className="ace-play-clock">{text.play.room.queueClosed}</p>
             <p className="ace-play-clock-note">{t("loopingClock")}</p>
             <ul className="ace-play-tiles">
               <li>
@@ -276,7 +275,7 @@ export function PlayMatchArena({
               </li>
               <li>
                 <span>{copy.tiles.server}</span>
-                <strong>{interpolate(copy.tiles.serverValue, { ping: "48ms" })}</strong>
+                <strong>{copy.tiles.serverValue}</strong>
               </li>
               <li>
                 <span>{copy.tiles.mode}</span>
@@ -293,7 +292,7 @@ export function PlayMatchArena({
             <ul className="ace-play-sec">
               {copy.identity.rows.map((row) => (
                 <li key={row}>
-                  <CheckMark /> {row}
+                  <span className="ace-room-pending" aria-hidden="true" /> {row}
                 </li>
               ))}
             </ul>
@@ -304,7 +303,7 @@ export function PlayMatchArena({
             <ul className="ace-play-sec">
               {copy.security.rows.map((row) => (
                 <li key={row}>
-                  <CheckMark /> {row}
+                  <span className="ace-room-pending" aria-hidden="true" /> {row}
                 </li>
               ))}
             </ul>
@@ -312,6 +311,7 @@ export function PlayMatchArena({
         </div>
       </div>
 
+      <p className="ace-room-art-note">{text.play.room.artNote}</p>
       <footer className="ace-play-foot">
         <PlannedButton
           look="foil"

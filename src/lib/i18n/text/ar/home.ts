@@ -1,6 +1,43 @@
 import type { TextBag } from "../types";
 
 export const home: TextBag["home"] = {
+  ops: {
+    "identityKicker": "مركز الهوية",
+    "signedOutTitle": "سجّل الدخول عبر Steam",
+    "signedOutBody": "اتصل عبر Steam OpenID الرسمي لترى هنا صورة Steam الرمزية وشعار رتبتك ونقاط Rating Points. لا تطلب A.C.E. كلمة مرور Steam أبدًا.",
+    "connect": "سجّل الدخول عبر Steam",
+    "openDeck": "افتح Command Deck",
+    "avatarAlt": "صورة Steam الرمزية لـ {name}",
+    "emblemAlt": "شعار رتبة {rank}",
+    "rp": "Rating Points",
+    "wins": "الانتصارات",
+    "losses": "الهزائم",
+    "winRate": "نسبة الفوز",
+    "matches": "المباريات",
+    "kd": "K/D",
+    "na": "غير متاح",
+    "kdNote": "يظهر K/D غير متاح لأن A.C.E. لا تسجّل القتلات والوفيات بعد.",
+    "shieldKicker": "A.C.E SHIELD",
+    "shieldChip": "قيد التطوير",
+    "shieldTitle": "حالة النزاهة",
+    "shieldBody": "A.C.E Shield قيد التطوير. لا يُثبَّت أو يُفحص أو يُراقَب أي شيء اليوم، لذا لا يوجد حكم نزاهة لأي حساب.",
+    "shieldClient": "عميل مكافحة الغش",
+    "shieldClientValue": "لم يُطلق",
+    "shieldServer": "خوادم المباريات",
+    "shieldServerValue": "غير متصلة",
+    "shieldHardware": "فحص العتاد",
+    "shieldHardwareValue": "لا يُجمع",
+    "shieldLink": "كيف سيعمل A.C.E Shield",
+    "seasonKicker": "الموسم 1",
+    "seasonChip": "لم تُعلن المواعيد",
+    "seasonTitle": "متتبع الموسم 1",
+    "seasonBody": "لا يوجد للموسم 1 تاريخ بداية أو نهاية بعد، لذا لا يوجد عدّ تنازلي. ستُنشر المواعيد على هذا الموقع قبل افتتاح الموسم.",
+    "statsKicker": "إحصاءاتك",
+    "statsSignedOut": "سجّل الدخول عبر Steam لرؤية إحصاءاتك.",
+    "statsEmpty": "لا توجد مباريات مسجّلة بعد. تظهر الانتصارات والهزائم بعد أول مباراة A.C.E. مسجّلة لك.",
+    "statsLive": "تأتي الانتصارات والهزائم من حساب A.C.E. المحفوظ لديك.",
+    "statsLink": "افتح إحصاءات اللاعب"
+  },
   "meta": {
     "title": "A.C.E. — منصة CS2 التنافسية",
     "description": "A.C.E. منصة تنافسية مخطط لها للعبة Counter-Strike 2 تشمل هوية اللاعب والمعايرة والفرق والبطولات. هذا الموقع العام معاينة. المطابقة المصنفة ومكافحة الغش والمدفوعات والجوائز غير مفعّلة."

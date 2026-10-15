@@ -36,3 +36,21 @@ export function readBroadcastConfig(env: Record<string, string | undefined> = pr
   if (!parsed) return { state: "off-air", next };
   return { state: "configured", ...parsed, next };
 }
+
+export type TvFeed = { id: string; title: string; provider: "twitch" | "youtube"; embedUrl: string; source: "env" | "admin" };
+
+/** ACE_BROADCAST_FEEDS: one feed per line or ";" separated, as "Title|https://embed-url". Invalid entries are skipped. */
+export function parseEnvFeeds(raw: string | undefined | null): TvFeed[] {
+  if (!raw) return [];
+  return raw
+    .split(/[\n;]+/)
+    .map((entry) => entry.trim())
+    .filter(Boolean)
+    .slice(0, 16)
+    .flatMap((entry, index) => {
+      const bar = entry.indexOf("|");
+      const title = (bar > 0 ? entry.slice(0, bar) : `Feed ${index + 1}`).trim().slice(0, 80);
+      const parsed = parseBroadcastEmbed(bar > 0 ? entry.slice(bar + 1) : entry);
+      return parsed ? [{ id: `env-${index}`, title, ...parsed, source: "env" as const }] : [];
+    });
+}

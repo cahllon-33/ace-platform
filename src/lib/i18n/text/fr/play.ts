@@ -1,6 +1,19 @@
 import type { TextBag } from "../types";
 
 export const play: TextBag["play"] = {
+  room: {
+    "showcaseTag": "VITRINE · Joueurs d’exemple, pas un match en direct. La file est fermée.",
+    "showcaseShort": "VITRINE",
+    "queueClosed": "FILE FERMÉE",
+    "floorRp": "Plancher du rang {rp} RP",
+    "yourRp": "{rp} RP",
+    "avatarAlt": "Avatar de {name}",
+    "sampleChat": "Lignes d’exemple. Non envoyées, pas en direct.",
+    "sampleLine": "EXEMPLE",
+    "operatorA": "Art d’opérateur A.C.E original pour l’équipe A : un opérateur tactique casqué en équipement anthracite avec des accents dorés",
+    "operatorB": "Art d’opérateur A.C.E original pour l’équipe B : un combattant rebelle à capuche en équipement anthracite avec des accents dorés",
+    "artNote": "Art de personnage A.C.E original. Ce ne sont pas des modèles du jeu."
+  },
   meta: {
     title: "Jouer",
     description: "Le matchmaking classé 5v5 ouvrira dès que l'anti-triche A.C.E Shield sera actif.",

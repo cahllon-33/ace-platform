@@ -1,4 +1,17 @@
 ﻿export const play = {
+  room: {
+    "showcaseTag": "SHOWCASE · Sample players, not a live match. The queue is closed.",
+    "showcaseShort": "SHOWCASE",
+    "queueClosed": "QUEUE CLOSED",
+    "floorRp": "Rank floor {rp} RP",
+    "yourRp": "{rp} RP",
+    "avatarAlt": "{name} avatar",
+    "sampleChat": "Sample lines. Not sent, not live.",
+    "sampleLine": "SAMPLE",
+    "operatorA": "Original A.C.E operator art for Team A: a helmeted tactical operator in charcoal gear with gold accents",
+    "operatorB": "Original A.C.E operator art for Team B: a hooded rebel fighter in charcoal gear with gold accents",
+    "artNote": "Original A.C.E character art. These are not game models."
+  },
   meta: {
     title: "Play",
     description: "Ranked 5v5 matchmaking opens once A.C.E Shield anti-cheat is live.",

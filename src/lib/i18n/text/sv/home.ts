@@ -1,6 +1,43 @@
 import type { TextBag } from "../types";
 
 export const home: TextBag["home"] = {
+  ops: {
+    "identityKicker": "IDENTITETSNAV",
+    "signedOutTitle": "Logga in med Steam",
+    "signedOutBody": "Anslut med officiella Steam OpenID för att se din Steam-avatar, ditt rankemblem och dina Rating Points här. A.C.E. ber aldrig om ett Steam-lösenord.",
+    "connect": "Logga in med Steam",
+    "openDeck": "Öppna Command Deck",
+    "avatarAlt": "Steam-avatar för {name}",
+    "emblemAlt": "Rankemblem {rank}",
+    "rp": "Rating Points",
+    "wins": "Vinster",
+    "losses": "Förluster",
+    "winRate": "Vinstandel",
+    "matches": "Matcher",
+    "kd": "K/D",
+    "na": "–",
+    "kdNote": "K/D visar – eftersom A.C.E. inte registrerar kills och dödsfall än.",
+    "shieldKicker": "A.C.E SHIELD",
+    "shieldChip": "UNDER UTVECKLING",
+    "shieldTitle": "Integritetsstatus",
+    "shieldBody": "A.C.E Shield är under utveckling. Inget installeras, skannas eller övervakas i dag, så inget konto har något integritetsbeslut.",
+    "shieldClient": "Anti-fusk-klient",
+    "shieldClientValue": "Inte släppt",
+    "shieldServer": "Matchservrar",
+    "shieldServerValue": "Inte anslutna",
+    "shieldHardware": "Hårdvaruskanning",
+    "shieldHardwareValue": "Samlas inte in",
+    "shieldLink": "Så kommer A.C.E Shield att fungera",
+    "seasonKicker": "SÄSONG 1",
+    "seasonChip": "DATUM INTE ANNONSERADE",
+    "seasonTitle": "Säsong 1-översikt",
+    "seasonBody": "Säsong 1 har inget start- eller slutdatum än, så det finns ingen nedräkning. Datumen publiceras på den här webbplatsen innan säsongen öppnar.",
+    "statsKicker": "DIN STATISTIK",
+    "statsSignedOut": "Logga in med Steam för att se din statistik.",
+    "statsEmpty": "Inga registrerade matcher än. Vinster och förluster visas efter din första registrerade A.C.E.-match.",
+    "statsLive": "Vinster och förluster kommer från ditt sparade A.C.E.-konto.",
+    "statsLink": "Öppna spelarstatistik"
+  },
   "meta": {
     "title": "A.C.E. — Tävlingsplattform för CS2",
     "description": "A.C.E. är en planerad tävlingsplattform för Counter-Strike 2 med spelaridentitet, kalibrering, lag och turneringar. Den här publika webbplatsen är en förhandsversion. Rankad matchning, anti-fusk, betalningar och priser är inte aktiva."

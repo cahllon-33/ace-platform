@@ -1,6 +1,19 @@
 import type { TextBag } from "../types";
 
 export const play: TextBag["play"] = {
+  room: {
+    "showcaseTag": "POKAZ · Przykładowi gracze, to nie jest mecz na żywo. Kolejka jest zamknięta.",
+    "showcaseShort": "POKAZ",
+    "queueClosed": "KOLEJKA ZAMKNIĘTA",
+    "floorRp": "Próg rangi {rp} RP",
+    "yourRp": "{rp} RP",
+    "avatarAlt": "Awatar {name}",
+    "sampleChat": "Przykładowe wiadomości. Niewysłane, nie na żywo.",
+    "sampleLine": "PRZYKŁAD",
+    "operatorA": "Oryginalna grafika operatora A.C.E dla drużyny A: operator taktyczny w hełmie, grafitowy sprzęt ze złotymi akcentami",
+    "operatorB": "Oryginalna grafika operatora A.C.E dla drużyny B: rebeliant w kapturze, grafitowy sprzęt ze złotymi akcentami",
+    "artNote": "Oryginalna grafika postaci A.C.E. To nie są modele z gry."
+  },
   meta: {
     title: "Graj",
     description: "Matchmaking rankingowy 5v5 ruszy, gdy anti-cheat A.C.E Shield zacznie działać.",

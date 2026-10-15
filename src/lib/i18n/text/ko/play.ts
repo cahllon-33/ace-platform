@@ -1,6 +1,19 @@
 import type { TextBag } from "../types";
 
 export const play: TextBag["play"] = {
+  room: {
+    "showcaseTag": "쇼케이스 · 샘플 선수이며 실시간 경기가 아닙니다. 대기열은 닫혀 있습니다.",
+    "showcaseShort": "쇼케이스",
+    "queueClosed": "대기열 닫힘",
+    "floorRp": "랭크 하한 {rp} RP",
+    "yourRp": "{rp} RP",
+    "avatarAlt": "{name}의 아바타",
+    "sampleChat": "샘플 문구입니다. 전송되지 않으며 실시간이 아닙니다.",
+    "sampleLine": "샘플",
+    "operatorA": "팀 A용 A.C.E 오리지널 오퍼레이터 아트: 헬멧을 쓴 전술 오퍼레이터, 금색 포인트의 차콜 장비",
+    "operatorB": "팀 B용 A.C.E 오리지널 오퍼레이터 아트: 후드를 쓴 반군 전사, 금색 포인트의 차콜 장비",
+    "artNote": "A.C.E 오리지널 캐릭터 아트입니다. 게임 모델이 아닙니다."
+  },
   meta: {
     title: "플레이",
     description: "랭크 5v5 매치메이킹은 A.C.E Shield 안티치트가 가동되면 열립니다.",

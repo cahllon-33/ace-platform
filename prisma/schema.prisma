@@ -279,3 +279,11 @@ model BanRecord {
 
   @@index([userId, expiresAt])
 }
+
+/// Broadcast embeds shown on the admin A.C.E TV wall. Managed by operators in /admin/dashboard.
+model BroadcastFeed {
+  id        String   @id @default(cuid())
+  title     String
+  embedUrl  String
+  createdAt DateTime @default(now())
+}

@@ -275,3 +275,29 @@ export async function resetAdminProfile(userId: string) {
   revalidatePath("/admin/dashboard");
   return { ok: true as const };
 }
+
+export async function setAdminTier(userId: string, tier: SubscriptionTier) {
+  const user = await gatedUser(userId);
+  if (!user) return { ok: false as const };
+  if (tier !== "FREE" && tier !== "PLUS" && tier !== "PREMIUM") return { ok: false as const };
+  await prisma.user.update({ where: { id: user.id }, data: { subscriptionTier: tier } });
+  revalidatePath("/admin/dashboard");
+  return { ok: true as const };
+}
+
+export type AdminTournamentRow = { id: string; name: string; status: string; entries: number };
+
+/** Read-only tournament registry for operators. Tournament changes stay with their creators' flows. */
+export async function loadAdminTournaments(): Promise<AdminTournamentRow[]> {
+  if (!(await readAdminGate())) return [];
+  try {
+    const rows = await prisma.tournament.findMany({
+      orderBy: { createdAt: "desc" },
+      take: 20,
+      select: { id: true, name: true, status: true, _count: { select: { entries: true } } },
+    });
+    return rows.map((row) => ({ id: row.id, name: row.name, status: row.status, entries: row._count.entries }));
+  } catch {
+    return [];
+  }
+}
