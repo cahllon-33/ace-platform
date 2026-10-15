@@ -1,0 +1,220 @@
+import type { Ui } from "./en";
+
+export const UI_HU: Ui = {
+  "nav": {
+    "home": "Kezdőlap",
+    "play": "Játék",
+    "ranks": "Rangok",
+    "tournaments": "Versenyek",
+    "leaderboard": "Ranglista",
+    "teams": "Csapatok",
+    "getPremium": "Premium előfizetés",
+    "more": "Továbbiak",
+    "maps": "Pályák",
+    "prizes": "Nyeremények",
+    "shop": "Bolt",
+    "rules": "Szabályok",
+    "antiCheat": "Csalásvédelem",
+    "features": "Funkciók",
+    "pricing": "Árak",
+    "compete": "Verseny",
+    "explore": "Felfedezés"
+  },
+  "footer": {
+    "legalLine": "© 2026 A.C.E. Competitions Ltd. Független platform, nem áll kapcsolatban a Valve-val. A Counter-Strike és a CS2 a Valve Corporation védjegye."
+  },
+  "soon": {
+    "label": "Hamarosan"
+  },
+  "cta": {
+    "kicker": "1. szezon",
+    "title": "Készen állsz a versenyre?",
+    "body": "Csatlakoztasd a Steamet, kalibrálj, és törj a csúcsra.",
+    "play": "Játssz A.C.E-t",
+    "ranks": "Rangok felfedezése"
+  },
+  "status": {
+    "title": "Platformállapot",
+    "steam": "Bejelentkezés Steam OpenID-val",
+    "shield": "A.C.E Shield · bevezetési szakasz",
+    "servers": "Versenyszerverek · verseny-béta",
+    "billing": "Fizetési integráció",
+    "available": "Elérhető",
+    "inDevelopment": "Fejlesztés alatt",
+    "comingSoon": "Hamarosan",
+    "designed": "Megtervezve"
+  },
+  "ranksTabs": {
+    "label": "Rangok",
+    "tiers": "Szintek és divíziók",
+    "codex": "Kalibrációs kódex"
+  },
+  "maps": {
+    "kicker": "Versenypálya-készlet",
+    "title": "Pályák és közvetítés",
+    "lede": "Az A.C.E. versenykészlete hét pályából áll. A csapatok a szabálykönyv szerinti pályavétó során ebből tiltanak és választanak. A versenyközvetítések az alábbi képernyőn jelennek meg.",
+    "rulebook": "A vétó szabályai",
+    "screen": "Közvetítési képernyő",
+    "offAir": "Nincs adás",
+    "noBroadcast": "Jelenleg nincs közvetítés.",
+    "nextLabel": "Következő közvetítés",
+    "notScheduled": "hamarosan itt jelentjük be",
+    "embeddedFrom": "Közvetítés innen: {provider}.",
+    "pool": "Aktív pályakészlet",
+    "poolMeta": "{count} pálya · BO1 / BO3 vétó",
+    "mapLabel": "{n}. pálya",
+    "settings": {
+      "dust": "Sivatagi város",
+      "mirage": "Piacnegyed",
+      "inferno": "Régi falu",
+      "nuke": "Ipari létesítmény",
+      "ancient": "Dzsungelromok",
+      "anubis": "Csatornatemplom",
+      "train": "Rendezőpályaudvar"
+    },
+    "notes": {
+      "dust": "Hosszú rálátások az A-n, szűk középső ajtók.",
+      "mirage": "A közép uralása dönti el a legtöbb kört.",
+      "inferno": "Szűk átjárók és gránátokra épülő támadások.",
+      "nuke": "Egymás feletti bombahelyek és gyors függőleges rotációk.",
+      "ancient": "A középről B felé irányuló nyomás határozza meg a félidőt.",
+      "anubis": "Vizes közép és nyílt B-támadások.",
+      "train": "Fedezék a vagonok között és hosszú A-vonalak."
+    }
+  },
+  "prizes": {
+    "kicker": "Bajnoki nyeremények",
+    "title": "Nyeremények",
+    "lede": "Az 1. szezon bajnokainak készülő jutalomkínálat. A nyereményalapokat bejelentéskor az egyes események oldalán erősítjük meg, a szabálykönyv 18. pontja szerint.",
+    "rulebook": "Nyereményszabályok",
+    "cardKicker": "Legendás jutalom",
+    "slots": {
+      "first": "1. hely · játékosonként",
+      "second": "2. hely · játékosonként",
+      "mvp": "MVP-díj"
+    },
+    "facts": {
+      "pool": "Nyereményalap",
+      "items": "Jutalomtárgyak",
+      "delivery": "Átadás",
+      "season": "Szezon"
+    },
+    "factValues": {
+      "season": "1. szezon"
+    }
+  },
+  "rules": {
+    "kicker": "Az A.C.E. versenyszabálykönyve",
+    "title": "Versenyszabályok",
+    "version": "{version}. verzió · hatályos: {date}",
+    "intro": "Minden A.C.E. verseny ezek szerint a szabályok szerint zajlik. Az „Bevezetéskor lép hatályba” jelölésű pontok akkor lépnek életbe, amikor az érintett rendszer elindul.",
+    "pending": "Bevezetéskor lép hatályba",
+    "contents": "Tartalom",
+    "penalties": {
+      "offence": "Szabálysértés",
+      "first": "Első alkalom",
+      "repeat": "Ismételt",
+      "rule": "Pont"
+    },
+    "englishNote": "A pontok szövege angolul jelenik meg; az angol változat az irányadó.",
+    "sections": [
+      "Hatály és fogalmak",
+      "Részvételi jogosultság",
+      "Fiókok és személyazonosság",
+      "Csapatok és keretek",
+      "Csapatkapitányok",
+      "Pályakészlet és vétó",
+      "A mérkőzés menete",
+      "Mérkőzésbeállítások",
+      "Szerver- és technikai hibák",
+      "Szünetek",
+      "Kapcsolatbontások",
+      "Feladás és meg nem jelenés",
+      "Magatartás",
+      "Csalás és a verseny tisztasága",
+      "Viták és fellebbezések",
+      "Büntetések",
+      "Közvetítés",
+      "Nyeremények",
+      "Módosítások"
+    ]
+  },
+  "antiCheat": {
+    "kicker": "A.C.E Shield",
+    "title": "Csalásvédelem",
+    "lede": "Az A.C.E Shield a minden A.C.E. mérkőzéshez készülő tisztességvédelmi rendszer: kliens-, szerver-, mérkőzés- és viselkedésellenőrzések működnek együtt, az adatvédelmet helyezve előtérbe.",
+    "statusLabel": "Bevezetési szakasz",
+    "pillarsTitle": "Az architektúra pillérei",
+    "pillars": {
+      "client": {
+        "title": "Kliens-integritás",
+        "body": "Egy könnyű kliens a mérkőzés alatt ellenőrzi a játékkörnyezetet, és jelzi a manipuláció jeleit."
+      },
+      "server": {
+        "title": "Szerver-integritás",
+        "body": "A meccsszerverek zárolt konfigurációval, aláírt bővítményekkel és manipulációbiztos naplókkal futnak."
+      },
+      "match": {
+        "title": "Mérkőzés-integritás",
+        "body": "Minden kört demó és eseménynapló rögzít, így bármely eredmény ellenőrizhető."
+      },
+      "behaviour": {
+        "title": "Viselkedéselemzés",
+        "body": "Statisztikai modellek jelölik meg a szokatlan célzási, reakció- és információs mintákat emberi ellenőrzésre."
+      },
+      "identity": {
+        "title": "Személyazonosság",
+        "body": "Steam OpenID-fiókok, fiókonként egy játékos, kitiltáskerülés-ellenőrzéssel."
+      }
+    },
+    "roadmapTitle": "Ütemterv",
+    "phases": {
+      "p1": {
+        "title": "1. szakasz · Architektúra",
+        "body": "Fenyegetésmodell, adatfolyamok és adatvédelmi tervezés."
+      },
+      "p2": {
+        "title": "2. szakasz · Szerver- és mérkőzés-integritás",
+        "body": "Zárolt szerverbeállítások, demórögzítés, manipulációbiztos naplók."
+      },
+      "p3": {
+        "title": "3. szakasz · Viselkedéselemzés",
+        "body": "Ellenőrző eszközök és az első statisztikai modellek."
+      },
+      "p4": {
+        "title": "4. szakasz · Kliens-integritás",
+        "body": "Shield kliens béta nyilvános biztonsági átvilágítással."
+      },
+      "p5": {
+        "title": "5. szakasz · Verseny-béta",
+        "body": "A Shield kötelező a rangsorolt meccseken és versenyeken."
+      }
+    },
+    "privacyTitle": "Adatvédelmi elvek",
+    "privacy": [
+      "Csak azt gyűjtjük, ami a mérkőzés védelméhez szükséges, és pontosan megmondjuk, mi az.",
+      "Hardverazonosítót nem gyűjtünk, amíg nincs dokumentált, függetlenül ellenőrzött, biztonságos megvalósítás.",
+      "A mérkőzésadatokat meghatározott ideig őrizzük, majd töröljük.",
+      "Minden büntetés ellen lehet fellebbezni, és azt ember bírálja el."
+    ],
+    "faqTitle": "Kérdések",
+    "faq": [
+      {
+        "q": "Működik már az A.C.E Shield?",
+        "a": "Még nem. Fejlesztés alatt áll; a fenti szakaszok mindegyike mutatja aktuális állapotát."
+      },
+      {
+        "q": "Szükség lesz kernelszintű hozzáférésre?",
+        "a": "A tervezés felhasználói módú ellenőrzésekkel és szerveroldali elemzéssel indul. Mélyebb hozzáférést előbb nyilvánosan dokumentálnánk és átvilágítanánk."
+      },
+      {
+        "q": "Befolyásolja a Premium a csalásvédelmet?",
+        "a": "Nem. A tisztességi szabályok mindenkire ugyanazok. A fizetős csomagok soha nem adnak versenyelőnyt."
+      },
+      {
+        "q": "Hogyan jelenthetek egy csalót?",
+        "a": "A kapcsolatfelvételi oldalon. A bejelentéseket a szabálykönyv 14. pontja szerint vizsgáljuk."
+      }
+    ]
+  }
+};
