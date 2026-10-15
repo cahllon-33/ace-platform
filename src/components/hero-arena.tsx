@@ -51,6 +51,7 @@ export function HeroArena({ actions }: { actions: ReactNode }) {
     <section ref={stageRef} className="ace-combat-hero overflow-x-hidden" style={{ background: "transparent" }}>
       <div className="ace-hero-halo" aria-hidden="true" />
       <div className="ace-hero-mesh" aria-hidden="true" />
+      <div className="ace-hero-sweep" aria-hidden="true" />
       <div className="ace-hero-layout">
         <div className="ace-hero-brand transform-gpu transition-transform duration-500" style={panelStyle}>
           <p className="ace-hero-kicker" suppressHydrationWarning>

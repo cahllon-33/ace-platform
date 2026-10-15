@@ -1,3 +1,4 @@
+import { uiFor, type Ui } from "@/lib/i18n/ui";
 import { cookies } from "next/headers";
 import { textFor, type TextBag } from "@/lib/i18n/text";
 import { SITE_LOCALES, type LocaleOption } from "@/lib/languages";
@@ -16,4 +17,8 @@ export async function getLocale(): Promise<LocaleOption> {
 
 export async function getText(): Promise<TextBag> {
   return textFor(await getLocaleId());
+}
+
+export async function getUi(): Promise<Ui> {
+  return uiFor(await getLocaleId());
 }

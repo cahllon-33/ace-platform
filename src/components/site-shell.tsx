@@ -2,6 +2,7 @@ import { Suspense, type ReactNode } from "react";
 import { AuthBar } from "@/components/auth-bar";
 import { ChampionshipAtmosphere } from "@/components/championship-atmosphere";
 import { CookieConsentBanner } from "@/components/cookie-consent-banner";
+import { FinalCtaSlot } from "@/components/final-cta-slot";
 import { LocaleProvider, T } from "@/components/locale-provider";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
@@ -37,6 +38,7 @@ export function SiteShell({
       <div id="main-content" className="relative z-10 flex flex-1 flex-col">
         {children}
       </div>
+      <FinalCtaSlot />
       <SiteFooter />
       <CookieConsentBanner />
       </TextProvider>

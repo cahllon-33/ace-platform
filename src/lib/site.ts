@@ -1,15 +1,20 @@
+/** Primary header links. Everything else lives under "More" and in the footer. */
 export const siteNav = [
-  { href: "/", label: "HOME" },
-  { href: "/play", label: "PLAY" },
-  { href: "/tournaments", label: "TOURNAMENTS" },
-  { href: "/ranks", label: "RANKS" },
-  { href: "/leaderboard", label: "LEADERBOARD" },
-  { href: "/teams", label: "TEAMS" },
-  { href: "/maps", label: "MAPS" },
-  { href: "/prizes", label: "PRIZES" },
-  { href: "/shop", label: "SHOP" },
-  { href: "/pricing", label: "PRICING" },
-  { href: "/rules", label: "RULES" },
+  { href: "/", key: "home" },
+  { href: "/play", key: "play" },
+  { href: "/ranks", key: "ranks" },
+  { href: "/tournaments", key: "tournaments" },
+  { href: "/leaderboard", key: "leaderboard" },
+  { href: "/teams", key: "teams" },
+] as const;
+
+export const moreNav = [
+  { href: "/anti-cheat", key: "antiCheat" },
+  { href: "/maps", key: "maps" },
+  { href: "/prizes", key: "prizes" },
+  { href: "/rules", key: "rules" },
+  { href: "/shop", key: "shop" },
+  { href: "/features", key: "features" },
 ] as const;
 
 export const footerExplore = [

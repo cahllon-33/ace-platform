@@ -3,6 +3,7 @@ import Link from "next/link";
 import { connection } from "next/server";
 import { AceShieldStatus } from "@/components/ace-shield-status";
 import { HomeLocaleActions, HowItWorksLocale, LocaleLoading } from "@/components/home-locale-actions";
+import { PlatformStatus } from "@/components/platform-status";
 import { HeroArena } from "@/components/hero-arena";
 import { OpeningReel } from "@/components/opening-reel";
 import { HomeWorkspaceCharter } from "@/components/home-workspace-charter";
@@ -53,6 +54,7 @@ async function LobbyHomeDynamic() {
     <main className="ace-lobby-root ace-home-flow">
       <OpeningReel />
       <HeroArena actions={<HomeLocaleActions live={live} />} />
+      <PlatformStatus />
       <nav className="ace-home-jumps" aria-label={text.home.jumpNav.label}>
         <Link href="/play">{text.home.jumpNav.play}</Link>
         <Link href="/prizes">{text.home.jumpNav.prizes}</Link>

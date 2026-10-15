@@ -5,28 +5,16 @@ import { ConnectedCount } from "@/components/connected-count";
 import { CookieSettings } from "@/components/cookie-settings";
 import { LobbyRibbon } from "@/components/lobby-ribbon";
 import { useI18n } from "@/components/locale-provider";
-import { socialNetworks } from "@/lib/site";
+import { useUi } from "@/components/use-ui";
+import { moreNav, siteNav, socialNetworks } from "@/lib/site";
 import type { MessageKey } from "@/lib/i18n";
 
-const platform: { href: string; key: MessageKey }[] = [
-  { href: "/", key: "navHome" },
-  { href: "/play", key: "navPlay" },
-  { href: "/tournaments", key: "navTournaments" },
-  { href: "/leaderboard", key: "navLeaderboard" },
-  { href: "/teams", key: "navTeams" },
-  { href: "/ranks", key: "navRanks" },
-];
-
 const community: { href: string; key: MessageKey }[] = [
-  { href: "/shop", key: "navShop" },
-  { href: "/pricing", key: "navPricing" },
-  { href: "/features", key: "navFeatures" },
   { href: "/support", key: "support" },
   { href: "/contact", key: "contact" },
 ];
 
 const legal = [
-  { href: "/rules", key: "rules" as const },
   { href: "/privacy", key: "privacy" as const },
   { href: "/terms", key: "terms" as const },
   { href: "/cookie-policy", key: "cookiePolicy" as const },
@@ -34,6 +22,7 @@ const legal = [
 
 export function SiteFooter() {
   const { t } = useI18n();
+  const ui = useUi();
 
   return (
     <footer className="relative z-10 mt-auto bg-[#020203]">
@@ -50,11 +39,20 @@ export function SiteFooter() {
         <div className="ace-foot-cols">
           <nav aria-label={t("footerPlatform")}>
             <p>{t("footerPlatform")}</p>
-            {platform.map((item) => (
+            {siteNav.map((item) => (
               <Link key={item.href} href={item.href}>
-                {t(item.key)}
+                {ui.nav[item.key]}
               </Link>
             ))}
+          </nav>
+          <nav aria-label={ui.nav.explore}>
+            <p>{ui.nav.explore}</p>
+            {moreNav.map((item) => (
+              <Link key={item.href} href={item.href}>
+                {ui.nav[item.key]}
+              </Link>
+            ))}
+            <Link href="/pricing">{ui.nav.pricing}</Link>
           </nav>
           <nav aria-label={t("footerCommunity")}>
             <p>{t("footerCommunity")}</p>
@@ -88,21 +86,12 @@ export function SiteFooter() {
         </div>
       </div>
       <div className="border-t border-[#D4AF37]/20">
-        <div className="mx-auto flex max-w-[76rem] flex-col gap-3 px-4 py-4 text-xs leading-5 text-[#A9ABB3] sm:px-6">
-          <div className="flex flex-col gap-3 lg:flex-row lg:items-center lg:justify-between">
-            <p>{t("copyrightLine")}</p>
-            <p>
-              <ConnectedCount />
-            </p>
-          </div>
-          <p className="max-w-4xl">{t("copyrightClaim")}</p>
+        <div className="mx-auto flex max-w-[76rem] flex-col gap-2 px-4 py-4 text-xs leading-5 text-[#A9ABB3] sm:flex-row sm:items-center sm:justify-between sm:px-6">
+          <p className="max-w-4xl">{ui.footer.legalLine}</p>
+          <p>
+            <ConnectedCount />
+          </p>
         </div>
-      </div>
-      <div className="border-t border-[#FFD700]/40 px-4 py-6 sm:px-6">
-        <section className="ace-indemnity" aria-label={t("platformNoticeTitle")}>
-          <h2>{t("platformNoticeTitle")}</h2>
-          <p>{t("platformNoticeBody")}</p>
-        </section>
       </div>
     </footer>
   );
