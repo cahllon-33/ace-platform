@@ -9,6 +9,11 @@ export class PremiumRankArtRequired extends Error {
   }
 }
 
+/** True only when the stored plan (read on the server) is PREMIUM. Gates every Premium feature. */
+export function isPremiumPlan(tier: SubscriptionTier): boolean {
+  return tier === "PREMIUM";
+}
+
 /** Only an account whose stored plan is PREMIUM may wear Premium rank art. */
 export function canUsePremiumRankArt(tier: SubscriptionTier): boolean {
   return tier === "PREMIUM";

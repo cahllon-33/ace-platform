@@ -1,6 +1,65 @@
 import type { TextBag } from "../types";
 
 export const pricing: TextBag["pricing"] = {
+  premiumExtras: {
+    "card": {
+      "previewTag": "PREVIZUALIZARE",
+      "previewNote": "Previzualizarea cardului de profil Premium animat. Numele și valorile sunt exemple. Un profil real afișează acest card doar când planul său stocat este Premium.",
+      "planTag": "A.C.E PREMIUM",
+      "seal": "SIGILIUL ELITE",
+      "rank": "Rang",
+      "rating": "Rating",
+      "sampleName": "Jucător exemplu",
+      "ownTitle": "Cardul tău de profil Premium"
+    },
+    "analysis": {
+      "metaTitle": "Analiză extinsă a meciului",
+      "metaDescription": "Aspectul analizei de meci Premium: hartă termică a morților, procentaj de headshot și performanță pe rundă. În curând, când va exista procesarea demo-urilor.",
+      "kicker": "PREMIUM · ANALIZA MECIULUI",
+      "title": "Analiză extinsă a meciului",
+      "lede": "O hartă termică a morților, procentajul de headshot și performanța pe rundă pentru meciurile tale înregistrate. Necesită procesarea demo-urilor, care nu există încă.",
+      "sampleTag": "ASPECT EXEMPLU — NU SUNT DATELE TALE",
+      "soon": "În curând",
+      "soonCaption": "Se completează când va exista procesarea demo-urilor. Nimic de mai jos nu este o statistică reală.",
+      "heatmap": "Hartă termică a morților",
+      "headshot": "% headshot",
+      "rounds": "Performanță pe rundă",
+      "noData": "Fără date",
+      "locked": "Analiza extinsă a meciului face parte din A.C.E Premium (7 $/lună). În curând: checkout-ul nu există încă, deci astăzi niciun cont nu este Premium.",
+      "premiumNote": "Planul tău este Premium. Analiza ta va apărea aici când va exista procesarea demo-urilor.",
+      "signIn": "Autentifică-te cu Steam pentru a-ți verifica accesul la analiză.",
+      "plansLink": "Vezi planurile"
+    },
+    "terms": {
+      "metaTitle": "Termeni Premium",
+      "metaDescription": "Ce includ A.C.E Plus și Premium, ce nu include niciun plan și cum funcționează anularea.",
+      "kicker": "ACE-LEGAL / TERMENI PREMIUM",
+      "title": "Termenii A.C.E Premium",
+      "intro": "Acești termeni descriu ce includ planurile plătite. Completează Termenii și condițiile de la /terms. Checkout-ul nu există încă, deci astăzi nu se poate cumpăra nimic.",
+      "pricesTitle": "1. Planuri, prețuri și anulare",
+      "prices": "Free {free}. Plus {plus} pe lună. Premium {premium} pe lună. Planurile se reînnoiesc lunar. Poți anula oricând din setările panoului, fără penalizare. Lunile parțiale nu se rambursează, conform Termenilor și condițiilor.",
+      "plusTitle": "2. Ce include Plus",
+      "plus1": "Tot ce include Free.",
+      "plus2": "În curând: o scrisoare de mulțumire și suport prin e-mail la support@ace-platform.gg, când va exista checkout-ul.",
+      "premiumTitle": "3. Ce include Premium",
+      "prem1": "Tot ce include Plus.",
+      "prem2": "Grafică de rang Premium: setul original ilustrat de embleme A.C.E. pe profilul tău.",
+      "prem3": "Cardul de profil Premium animat.",
+      "prem4": "Insigne speciale și SIGILIUL ELITE.",
+      "prem5": "În curând: analiză extinsă a meciului (hartă termică a morților, % headshot, performanță pe rundă), când va exista procesarea demo-urilor.",
+      "prem6": "Acces timpuriu la funcții beta când se deschide un beta.",
+      "prem7": "Suport prioritar cu o țintă de răspuns de 72 de ore. Este o țintă, nu o garanție.",
+      "neverTitle": "4. Ce nu include niciun plan",
+      "never": "Niciun plan nu oferă avantaj competitiv. Niciun plan nu adaugă Rating Points și nu crește un rating. Niciun plan nu oferă avantaj la matchmaking, coadă prioritară sau adversari mai ușori.",
+      "soonTitle": "5. Funcții În curând",
+      "soon": "Nimic marcat În curând nu este promis până la lansare. Până atunci, prețul nu îl include.",
+      "languageTitle": "6. Limba",
+      "language": "Traducerile sunt oferite pentru comoditate. Dacă o traducere diferă de textul în engleză, se aplică textul în engleză.",
+      "contact": "Întrebări: support@ace-platform.gg",
+      "footerLink": "Termeni Premium",
+      "pricingLink": "Citește termenii Premium"
+    }
+  },
   "meta": {
     "title": "Prețuri",
     "description": "Abonament A.C.E.: Free {free}, Plus {plus}/lună, Premium {premium}/lună. Prețuri afișate blocate la numere întregi."
@@ -37,12 +96,12 @@ export const pricing: TextBag["pricing"] = {
     "premium": {
       "name": "A.C.E. PREMIUM",
       "note": "Premium",
-      "title": "Scrisoare de mulțumire și echipă de cinci",
+      "title": "Grafică de profil, insigne și analiză",
       "points": [
-        "Tot ce include Free.",
-        "În curând: scrisoarea de mulțumire (ce include, ce nu, și support@ace-platform.gg) se deschide doar după ce există plata. Butonul este dezactivat astăzi.",
-        "În curând: după plată, scrisoarea duce la Squads, unde un căpitan autentificat cu Steam poate salva un clan de cinci jucători.",
-        "Fără premiu, armă, coadă live sau server de joc. Un clan stocat nu este un loc pe tabla de 100 de echipe."
+        "Tot ce include Plus.",
+        "Grafică de rang Premium, cardul de profil animat, insigne speciale și SIGILIUL ELITE.",
+        "În curând: analiză extinsă a meciului, acces timpuriu la beta și suport prioritar (țintă de răspuns 72 de ore).",
+        "Fără avantaj competitiv: fără bonus de Rating Points și fără avantaj la matchmaking."
       ]
     }
   },

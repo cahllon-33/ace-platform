@@ -1,6 +1,65 @@
 import type { TextBag } from "../types";
 
 export const pricing: TextBag["pricing"] = {
+  premiumExtras: {
+    "card": {
+      "previewTag": "ELŐNÉZET",
+      "previewNote": "Az animált Premium profilkártya előnézete. A név és az értékek minták. Egy valódi profil csak akkor mutatja ezt a kártyát, ha a tárolt csomagja Premium.",
+      "planTag": "A.C.E PREMIUM",
+      "seal": "ELITE PECSÉT",
+      "rank": "Rang",
+      "rating": "Értékelés",
+      "sampleName": "Mintajátékos",
+      "ownTitle": "A Premium profilkártyád"
+    },
+    "analysis": {
+      "metaTitle": "Bővített meccselemzés",
+      "metaDescription": "A Premium meccselemzés elrendezése: halálozási hőtérkép, fejlövés-arány és körönkénti teljesítmény. Hamarosan, amint létezik demófeldolgozás.",
+      "kicker": "PREMIUM · MECCSELEMZÉS",
+      "title": "Bővített meccselemzés",
+      "lede": "Halálozási hőtérkép, fejlövés-arány és körönkénti teljesítmény a rögzített meccseidhez. Ehhez demófeldolgozás kell, ami még nem létezik.",
+      "sampleTag": "MINTAELRENDEZÉS — NEM A TE ADATAID",
+      "soon": "Hamarosan",
+      "soonCaption": "Kitöltődik, amint létezik demófeldolgozás. Semmi lent nem valódi statisztika.",
+      "heatmap": "Halálozási hőtérkép",
+      "headshot": "Fejlövés %",
+      "rounds": "Körönkénti teljesítmény",
+      "noData": "Nincs adat",
+      "locked": "A bővített meccselemzés az A.C.E Premium része (7 $/hó). Hamarosan: fizetés még nincs, így ma egyetlen fiók sem Premium.",
+      "premiumNote": "A csomagod Premium. Az elemzésed itt jelenik meg, amint létezik demófeldolgozás.",
+      "signIn": "Jelentkezz be Steammel, hogy ellenőrizd az elemzéshez való hozzáférésed.",
+      "plansLink": "Csomagok megtekintése"
+    },
+    "terms": {
+      "metaTitle": "Premium feltételek",
+      "metaDescription": "Mit tartalmaz az A.C.E Plus és Premium, mit nem tartalmaz egyik csomag sem, és hogyan működik a lemondás.",
+      "kicker": "ACE-LEGAL / PREMIUM FELTÉTELEK",
+      "title": "A.C.E Premium feltételek",
+      "intro": "Ezek a feltételek leírják, mit tartalmaznak a fizetős csomagok. Kiegészítik a /terms oldalon található Felhasználási feltételeket. Fizetés még nincs, így ma semmit nem lehet megvásárolni.",
+      "pricesTitle": "1. Csomagok, árak és lemondás",
+      "prices": "Free {free}. Plus havi {plus}. Premium havi {premium}. A csomagok havonta megújulnak. Bármikor lemondhatod az irányítópult beállításaiban, kötbér nélkül. A megkezdett hónapokat nem térítjük vissza, ahogy a Felhasználási feltételek is rögzítik.",
+      "plusTitle": "2. Mit tartalmaz a Plus",
+      "plus1": "Mindent, ami a Free-ben van.",
+      "plus2": "Hamarosan: köszönőlevél és e-mailes támogatás a support@ace-platform.gg címen, amint létezik fizetés.",
+      "premiumTitle": "3. Mit tartalmaz a Premium",
+      "prem1": "Mindent, ami a Plusban van.",
+      "prem2": "Prémium ranggrafika: az eredeti illusztrált A.C.E. emblémakészlet a profilodon.",
+      "prem3": "Az animált Premium profilkártya.",
+      "prem4": "Különleges jelvények és az ELITE PECSÉT.",
+      "prem5": "Hamarosan: bővített meccselemzés (halálozási hőtérkép, fejlövés %, körönkénti teljesítmény), amint létezik demófeldolgozás.",
+      "prem6": "Korai hozzáférés béta funkciókhoz, amikor egy béta megnyílik.",
+      "prem7": "Elsőbbségi támogatás 72 órás válaszcéllal. Ez cél, nem garancia.",
+      "neverTitle": "4. Mit nem tartalmaz egyik csomag sem",
+      "never": "Egyik csomag sem ad versenyelőnyt. Egyik csomag sem ad Rating Pointsot és nem emeli az értékelést. Egyik csomag sem ad párosítási előnyt, elsőbbségi sort vagy könnyebb ellenfeleket.",
+      "soonTitle": "5. Hamarosan érkező funkciók",
+      "soon": "Semmi, ami Hamarosan jelölést kapott, nem ígéret a megjelenéséig. Addig az ár nem tartalmazza.",
+      "languageTitle": "6. Nyelv",
+      "language": "A fordítások a kényelmet szolgálják. Ha egy fordítás eltér az angol szövegtől, az angol szöveg az irányadó.",
+      "contact": "Kérdések: support@ace-platform.gg",
+      "footerLink": "Premium feltételek",
+      "pricingLink": "A Premium feltételek elolvasása"
+    }
+  },
   "meta": {
     "title": "Árak",
     "description": "A.C.E. tagság: Free {free}, Plus {plus}/hó, Premium {premium}/hó. Egész számra rögzített megjelenített árak."
@@ -37,12 +96,12 @@ export const pricing: TextBag["pricing"] = {
     "premium": {
       "name": "A.C.E. PREMIUM",
       "note": "Premium",
-      "title": "Köszönőlevél és ötfős osztag",
+      "title": "Profilgrafika, jelvények és elemzés",
       "points": [
-        "Minden, ami a Free-ben.",
-        "Hamarosan: a köszönőlevél (mit tartalmaz, mit nem, és support@ace-platform.gg) csak a fizetés megjelenése után nyílik meg. A gomb ma le van tiltva.",
-        "Hamarosan: fizetés után a levél a Squads oldalra vezet, ahol egy Steammel bejelentkezett kapitány ötfős klánt menthet.",
-        "Nincs díj, fegyver, élő sor vagy játékszerver. Egy tárolt klán nem hely a 100 csapatos táblán."
+        "Mindent, ami a Plusban van.",
+        "Prémium ranggrafika, animált profilkártya, különleges jelvények és az ELITE PECSÉT.",
+        "Hamarosan: bővített meccselemzés, korai béta-hozzáférés és elsőbbségi támogatás (72 órás válaszcél).",
+        "Nincs versenyelőny: nincs Rating Points-növelés és nincs párosítási előny."
       ]
     }
   },

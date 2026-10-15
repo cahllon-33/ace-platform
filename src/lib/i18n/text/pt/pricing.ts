@@ -1,6 +1,65 @@
 import type { TextBag } from "../types";
 
 export const pricing: TextBag["pricing"] = {
+  premiumExtras: {
+    "card": {
+      "previewTag": "PRÉ-VISUALIZAÇÃO",
+      "previewNote": "Pré-visualização do cartão de perfil Premium animado. O nome e os valores são exemplos. Um perfil real só mostra este cartão quando o plano guardado é Premium.",
+      "planTag": "A.C.E PREMIUM",
+      "seal": "SELO ELITE",
+      "rank": "Rank",
+      "rating": "Rating",
+      "sampleName": "Jogador de exemplo",
+      "ownTitle": "O teu cartão de perfil Premium"
+    },
+    "analysis": {
+      "metaTitle": "Análise de partida alargada",
+      "metaDescription": "Layout da análise de partidas Premium: mapa de calor de mortes, percentagem de headshots e desempenho por ronda. Em breve, quando existir análise de demos.",
+      "kicker": "PREMIUM · ANÁLISE DE PARTIDA",
+      "title": "Análise de partida alargada",
+      "lede": "Um mapa de calor de mortes, a percentagem de headshots e o desempenho por ronda das tuas partidas registadas. Isto requer análise de demos, que ainda não existe.",
+      "sampleTag": "LAYOUT DE EXEMPLO — NÃO SÃO OS TEUS DADOS",
+      "soon": "Em breve",
+      "soonCaption": "Preenchido quando existir análise de demos. Nada abaixo é uma estatística real.",
+      "heatmap": "Mapa de calor de mortes",
+      "headshot": "% de headshots",
+      "rounds": "Desempenho por ronda",
+      "noData": "Sem dados",
+      "locked": "A análise de partida alargada faz parte do A.C.E Premium (7 $/mês). Em breve: o pagamento ainda não existe, por isso hoje nenhuma conta é Premium.",
+      "premiumNote": "O teu plano é Premium. A tua análise aparecerá aqui quando existir análise de demos.",
+      "signIn": "Inicia sessão com o Steam para verificar o teu acesso à análise.",
+      "plansLink": "Ver planos"
+    },
+    "terms": {
+      "metaTitle": "Termos Premium",
+      "metaDescription": "O que o A.C.E Plus e o Premium incluem, o que nenhum plano inclui e como funciona o cancelamento.",
+      "kicker": "ACE-LEGAL / TERMOS PREMIUM",
+      "title": "Termos do A.C.E Premium",
+      "intro": "Estes termos descrevem o que os planos pagos incluem. Complementam os Termos de Serviço em /terms. O pagamento ainda não existe, por isso hoje nada pode ser comprado.",
+      "pricesTitle": "1. Planos, preços e cancelamento",
+      "prices": "Free {free}. Plus {plus} por mês. Premium {premium} por mês. Os planos renovam-se mensalmente. Podes cancelar a qualquer momento nas definições do painel, sem penalização. Meses parciais não são reembolsados, como indicam os Termos de Serviço.",
+      "plusTitle": "2. O que o Plus inclui",
+      "plus1": "Tudo o que o Free inclui.",
+      "plus2": "Em breve: uma carta de agradecimento e suporte por e-mail em support@ace-platform.gg, quando o pagamento existir.",
+      "premiumTitle": "3. O que o Premium inclui",
+      "prem1": "Tudo o que o Plus inclui.",
+      "prem2": "Arte de rank Premium: o conjunto original ilustrado de emblemas A.C.E. no teu perfil.",
+      "prem3": "O cartão de perfil Premium animado.",
+      "prem4": "Distintivos especiais e o SELO ELITE.",
+      "prem5": "Em breve: análise de partida alargada (mapa de calor de mortes, % de headshots, desempenho por ronda), quando existir análise de demos.",
+      "prem6": "Acesso antecipado a funcionalidades beta quando uma beta abrir.",
+      "prem7": "Suporte prioritário com um objetivo de resposta de 72 horas. É um objetivo, não uma garantia.",
+      "neverTitle": "4. O que nenhum plano inclui",
+      "never": "Nenhum plano dá vantagem competitiva. Nenhum plano adiciona Rating Points nem aumenta um rating. Nenhum plano dá vantagem no matchmaking, fila prioritária ou adversários mais fáceis.",
+      "soonTitle": "5. Funcionalidades em breve",
+      "soon": "Tudo o que estiver marcado como Em breve não é prometido até ser lançado. Até lá, o preço não o inclui.",
+      "languageTitle": "6. Idioma",
+      "language": "As traduções são fornecidas por conveniência. Se uma tradução diferir do texto em inglês, aplica-se o texto em inglês.",
+      "contact": "Dúvidas: support@ace-platform.gg",
+      "footerLink": "Termos Premium",
+      "pricingLink": "Ler os termos Premium"
+    }
+  },
   meta: {
     title: "Preços",
     description:
@@ -38,12 +97,12 @@ export const pricing: TextBag["pricing"] = {
     premium: {
       name: "A.C.E. PREMIUM",
       note: "Premium",
-      title: "Carta de agradecimento e equipa de cinco jogadores",
+      title: "Arte de perfil, distintivos e análise",
       points: [
-        "Tudo o que o Grátis inclui.",
-        "Em breve: a carta de agradecimento (o que inclui, o que não inclui e support@ace-platform.gg) só abre quando existir pagamento. Hoje o botão está desativado.",
-        "Em breve: após o pagamento, a carta leva ao Squads, onde um capitão com sessão Steam pode guardar um clã de cinco jogadores.",
-        "Sem prémio, arma, fila ao vivo nem servidor de jogo. Um clã guardado não é um lugar no quadro de 100 equipas.",
+        "Tudo o que o Plus inclui.",
+        "Arte de rank Premium, o cartão de perfil animado, distintivos especiais e o SELO ELITE.",
+        "Em breve: análise de partida alargada, acesso antecipado a betas e suporte prioritário (objetivo de resposta de 72 horas).",
+        "Sem vantagem competitiva: sem aumento de Rating Points nem vantagem no matchmaking.",
       ],
     },
   },

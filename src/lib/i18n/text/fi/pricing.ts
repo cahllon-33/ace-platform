@@ -1,6 +1,65 @@
 import type { TextBag } from "../types";
 
 export const pricing: TextBag["pricing"] = {
+  premiumExtras: {
+    "card": {
+      "previewTag": "ESIKATSELU",
+      "previewNote": "Animoidun Premium-profiilikortin esikatselu. Nimi ja arvot ovat esimerkkejä. Oikea profiili näyttää tämän kortin vain, kun sen tallennettu tilaus on Premium.",
+      "planTag": "A.C.E PREMIUM",
+      "seal": "ELITE-SINETTI",
+      "rank": "Arvo",
+      "rating": "Luokitus",
+      "sampleName": "Esimerkkipelaaja",
+      "ownTitle": "Premium-profiilikorttisi"
+    },
+    "analysis": {
+      "metaTitle": "Laajennettu otteluanalyysi",
+      "metaDescription": "Premium-otteluanalyysin asettelu: kuolemien lämpökartta, pääosumaprosentti ja kierroskohtainen suoritus. Tulossa, kun demojen jäsennys on olemassa.",
+      "kicker": "PREMIUM · OTTELUANALYYSI",
+      "title": "Laajennettu otteluanalyysi",
+      "lede": "Kuolemien lämpökartta, pääosumaprosentti ja kierroskohtainen suoritus kirjatuista otteluistasi. Tämä vaatii demojen jäsennystä, jota ei vielä ole.",
+      "sampleTag": "ESIMERKKIASETTELU — EI SINUN TIETOJASI",
+      "soon": "Tulossa",
+      "soonCaption": "Täytetään, kun demojen jäsennys on olemassa. Mikään alla ei ole oikea tilasto.",
+      "heatmap": "Kuolemien lämpökartta",
+      "headshot": "Pääosuma-%",
+      "rounds": "Kierroskohtainen suoritus",
+      "noData": "Ei tietoja",
+      "locked": "Laajennettu otteluanalyysi kuuluu A.C.E Premiumiin (7 $/kk). Tulossa: maksua ei vielä ole, joten mikään tili ei ole tänään Premium.",
+      "premiumNote": "Tilauksesi on Premium. Analyysisi näkyy täällä, kun demojen jäsennys on olemassa.",
+      "signIn": "Kirjaudu Steamilla tarkistaaksesi analyysin käyttöoikeutesi.",
+      "plansLink": "Katso tilaukset"
+    },
+    "terms": {
+      "metaTitle": "Premium-ehdot",
+      "metaDescription": "Mitä A.C.E Plus ja Premium sisältävät, mitä mikään tilaus ei sisällä ja miten peruutus toimii.",
+      "kicker": "ACE-LEGAL / PREMIUM-EHDOT",
+      "title": "A.C.E Premium -ehdot",
+      "intro": "Nämä ehdot kuvaavat, mitä maksulliset tilaukset sisältävät. Ne täydentävät käyttöehtoja sivulla /terms. Maksua ei vielä ole, joten mitään ei voi ostaa tänään.",
+      "pricesTitle": "1. Tilaukset, hinnat ja peruutus",
+      "prices": "Free {free}. Plus {plus} kuukaudessa. Premium {premium} kuukaudessa. Tilaukset uusiutuvat kuukausittain. Voit peruuttaa milloin tahansa kojelaudan asetuksista ilman seuraamuksia. Osittaisia kuukausia ei hyvitetä, kuten käyttöehdoissa todetaan.",
+      "plusTitle": "2. Mitä Plus sisältää",
+      "plus1": "Kaiken Freen sisällön.",
+      "plus2": "Tulossa: kiitoskirje ja sähköpostituki osoitteessa support@ace-platform.gg, kun maksu on olemassa.",
+      "premiumTitle": "3. Mitä Premium sisältää",
+      "prem1": "Kaiken Plussan sisällön.",
+      "prem2": "Premium-arvokuvitus: alkuperäinen kuvitettu A.C.E.-tunnussarja profiilissasi.",
+      "prem3": "Animoitu Premium-profiilikortti.",
+      "prem4": "Erikoismerkit ja ELITE-SINETTI.",
+      "prem5": "Tulossa: laajennettu otteluanalyysi (kuolemien lämpökartta, pääosuma-%, kierroskohtainen suoritus), kun demojen jäsennys on olemassa.",
+      "prem6": "Varhainen pääsy beta-ominaisuuksiin, kun beta avautuu.",
+      "prem7": "Etusijatuki 72 tunnin vastaustavoitteella. Tämä on tavoite, ei takuu.",
+      "neverTitle": "4. Mitä mikään tilaus ei sisällä",
+      "never": "Mikään tilaus ei anna kilpailuetua. Mikään tilaus ei lisää Rating Pointseja eikä nosta luokitusta. Mikään tilaus ei anna etua otteluparituksessa, etusijajonoa tai helpompia vastustajia.",
+      "soonTitle": "5. Tulossa-ominaisuudet",
+      "soon": "Mikään Tulossa-merkitty ei ole luvattu ennen julkaisua. Siihen asti hinta ei sisällä sitä.",
+      "languageTitle": "6. Kieli",
+      "language": "Käännökset tarjotaan käytön helpottamiseksi. Jos käännös poikkeaa englanninkielisestä tekstistä, englanninkielinen teksti on voimassa.",
+      "contact": "Kysymykset: support@ace-platform.gg",
+      "footerLink": "Premium-ehdot",
+      "pricingLink": "Lue Premium-ehdot"
+    }
+  },
   "meta": {
     "title": "Hinnoittelu",
     "description": "A.C.E.-jäsenyys: Free {free}, Plus {plus}/kk, Premium {premium}/kk. Kokonaislukuihin lukitut näyttöhinnat."
@@ -37,12 +96,12 @@ export const pricing: TextBag["pricing"] = {
     "premium": {
       "name": "A.C.E. PREMIUM",
       "note": "Premium",
-      "title": "Kiitoskirje ja viiden pelaajan ryhmä",
+      "title": "Profiilikuvitus, merkit ja analyysi",
       "points": [
-        "Kaikki Free-paketin sisältö.",
-        "Tulossa pian: kiitoskirje (mitä sisältyy, mitä ei, ja support@ace-platform.gg) avautuu vasta, kun maksutoiminto on olemassa. Painike on tänään pois käytöstä.",
-        "Tulossa pian: maksun jälkeen kirje johtaa Squadsiin, jossa Steamilla kirjautunut kapteeni voi tallentaa viiden pelaajan klaanin.",
-        "Ei palkintoa, asetta, live-jonoa tai pelipalvelinta. Tallennettu klaani ei ole paikka 100 joukkueen taulussa."
+        "Kaiken Plussan sisällön.",
+        "Premium-arvokuvitus, animoitu profiilikortti, erikoismerkit ja ELITE-SINETTI.",
+        "Tulossa: laajennettu otteluanalyysi, varhainen beta-pääsy ja etusijatuki (72 tunnin vastaustavoite).",
+        "Ei kilpailuetua: ei Rating Points -korotusta eikä etua otteluparituksessa."
       ]
     }
   },

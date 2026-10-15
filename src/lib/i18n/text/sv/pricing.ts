@@ -1,6 +1,65 @@
 import type { TextBag } from "../types";
 
 export const pricing: TextBag["pricing"] = {
+  premiumExtras: {
+    "card": {
+      "previewTag": "FÖRHANDSVISNING",
+      "previewNote": "Förhandsvisning av det animerade Premium-profilkortet. Namn och värden är exempel. En riktig profil visar kortet bara när dess sparade plan är Premium.",
+      "planTag": "A.C.E PREMIUM",
+      "seal": "ELITE-SIGILL",
+      "rank": "Rank",
+      "rating": "Rating",
+      "sampleName": "Exempelspelare",
+      "ownTitle": "Ditt Premium-profilkort"
+    },
+    "analysis": {
+      "metaTitle": "Utökad matchanalys",
+      "metaDescription": "Layout för Premium-matchanalys: värmekarta över dödsfall, headshot-andel och prestation per rond. Kommer snart, när demotolkning finns.",
+      "kicker": "PREMIUM · MATCHANALYS",
+      "title": "Utökad matchanalys",
+      "lede": "En värmekarta över dödsfall, headshot-andel och prestation per rond för dina registrerade matcher. Det kräver demotolkning, som inte finns än.",
+      "sampleTag": "EXEMPELLAYOUT — INTE DINA DATA",
+      "soon": "Kommer snart",
+      "soonCaption": "Fylls i när demotolkning finns. Inget nedan är riktig statistik.",
+      "heatmap": "Värmekarta över dödsfall",
+      "headshot": "Headshot-%",
+      "rounds": "Prestation per rond",
+      "noData": "Inga data",
+      "locked": "Utökad matchanalys ingår i A.C.E Premium (7 $/mån). Kommer snart: kassan finns inte än, så inget konto är Premium i dag.",
+      "premiumNote": "Din plan är Premium. Din analys visas här när demotolkning finns.",
+      "signIn": "Logga in med Steam för att kontrollera din analysåtkomst.",
+      "plansLink": "Se planer"
+    },
+    "terms": {
+      "metaTitle": "Premiumvillkor",
+      "metaDescription": "Vad A.C.E Plus och Premium innehåller, vad ingen plan innehåller och hur uppsägning fungerar.",
+      "kicker": "ACE-LEGAL / PREMIUMVILLKOR",
+      "title": "A.C.E Premium-villkor",
+      "intro": "Dessa villkor beskriver vad de betalda planerna innehåller. De kompletterar användarvillkoren på /terms. Kassan finns inte än, så inget kan köpas i dag.",
+      "pricesTitle": "1. Planer, priser och uppsägning",
+      "prices": "Free {free}. Plus {plus} per månad. Premium {premium} per månad. Planerna förnyas månadsvis. Du kan säga upp när som helst i panelens inställningar utan avgift. Påbörjade månader återbetalas inte, enligt användarvillkoren.",
+      "plusTitle": "2. Vad Plus innehåller",
+      "plus1": "Allt i Free.",
+      "plus2": "Kommer snart: ett tackbrev och e-postsupport på support@ace-platform.gg, när kassan finns.",
+      "premiumTitle": "3. Vad Premium innehåller",
+      "prem1": "Allt i Plus.",
+      "prem2": "Premiumrankkonst: den ursprungliga illustrerade A.C.E.-emblemuppsättningen på din profil.",
+      "prem3": "Det animerade Premium-profilkortet.",
+      "prem4": "Specialmärken och ELITE-SIGILLET.",
+      "prem5": "Kommer snart: utökad matchanalys (värmekarta över dödsfall, headshot-%, prestation per rond), när demotolkning finns.",
+      "prem6": "Tidig tillgång till betafunktioner när en beta öppnar.",
+      "prem7": "Prioriterad support med ett svarsmål på 72 timmar. Det är ett mål, inte en garanti.",
+      "neverTitle": "4. Vad ingen plan innehåller",
+      "never": "Ingen plan ger tävlingsfördel. Ingen plan lägger till Rating Points eller höjer en rating. Ingen plan ger fördel i matchmaking, prioriterad kö eller lättare motståndare.",
+      "soonTitle": "5. Funktioner som kommer snart",
+      "soon": "Inget som är märkt Kommer snart är utlovat förrän det släpps. Tills dess ingår det inte i priset.",
+      "languageTitle": "6. Språk",
+      "language": "Översättningar tillhandahålls för bekvämlighet. Om en översättning skiljer sig från den engelska texten gäller den engelska texten.",
+      "contact": "Frågor: support@ace-platform.gg",
+      "footerLink": "Premiumvillkor",
+      "pricingLink": "Läs premiumvillkoren"
+    }
+  },
   "meta": {
     "title": "Priser",
     "description": "A.C.E.-medlemskap: Free {free}, Plus {plus}/mån, Premium {premium}/mån. Fasta heltalspriser."
@@ -37,12 +96,12 @@ export const pricing: TextBag["pricing"] = {
     "premium": {
       "name": "A.C.E. PREMIUM",
       "note": "Premium",
-      "title": "Tackbrev och femmannatrupp",
+      "title": "Profilkonst, märken och analys",
       "points": [
-        "Allt i Free.",
-        "Kommer snart: tackbrevet (vad som ingår, vad som inte gör det och support@ace-platform.gg) öppnas först när betalning finns. I dag är knappen inaktiverad.",
-        "Kommer snart: efter betalning leder brevet vidare till Squads, där en kapten inloggad med Steam kan spara en klan med fem spelare.",
-        "Inget pris, vapen, aktiv kö eller spelserver. En sparad klan är ingen plats på 100-lagstavlan."
+        "Allt i Plus.",
+        "Premiumrankkonst, det animerade profilkortet, specialmärken och ELITE-SIGILLET.",
+        "Kommer snart: utökad matchanalys, tidig betatillgång och prioriterad support (svarsmål 72 timmar).",
+        "Ingen tävlingsfördel: ingen Rating Points-höjning och ingen fördel i matchmaking."
       ]
     }
   },

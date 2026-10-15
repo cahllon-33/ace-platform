@@ -1,6 +1,65 @@
 import type { TextBag } from "../types";
 
 export const pricing: TextBag["pricing"] = {
+  premiumExtras: {
+    "card": {
+      "previewTag": "미리보기",
+      "previewNote": "애니메이션 Premium 프로필 카드 미리보기입니다. 이름과 수치는 예시입니다. 실제 프로필은 저장된 플랜이 Premium일 때만 이 카드를 표시합니다.",
+      "planTag": "A.C.E PREMIUM",
+      "seal": "ELITE 인장",
+      "rank": "랭크",
+      "rating": "레이팅",
+      "sampleName": "예시 플레이어",
+      "ownTitle": "내 Premium 프로필 카드"
+    },
+    "analysis": {
+      "metaTitle": "확장 매치 분석",
+      "metaDescription": "Premium 매치 분석 레이아웃: 사망 히트맵, 헤드샷 비율, 라운드별 성과. 데모 분석이 생기면 곧 제공됩니다.",
+      "kicker": "PREMIUM · 매치 분석",
+      "title": "확장 매치 분석",
+      "lede": "기록된 매치의 사망 히트맵, 헤드샷 비율, 라운드별 성과. 아직 존재하지 않는 데모 분석이 필요합니다.",
+      "sampleTag": "예시 레이아웃 — 내 데이터가 아님",
+      "soon": "곧 제공",
+      "soonCaption": "데모 분석이 생기면 채워집니다. 아래 어떤 것도 실제 통계가 아닙니다.",
+      "heatmap": "사망 히트맵",
+      "headshot": "헤드샷 %",
+      "rounds": "라운드별 성과",
+      "noData": "데이터 없음",
+      "locked": "확장 매치 분석은 A.C.E Premium(월 $7)에 포함됩니다. 곧 제공: 결제가 아직 없어 현재 Premium 계정은 없습니다.",
+      "premiumNote": "플랜이 Premium입니다. 데모 분석이 생기면 여기에 분석이 표시됩니다.",
+      "signIn": "Steam으로 로그인해 분석 이용 권한을 확인하세요.",
+      "plansLink": "플랜 보기"
+    },
+    "terms": {
+      "metaTitle": "Premium 약관",
+      "metaDescription": "A.C.E Plus와 Premium에 포함된 것, 어떤 플랜에도 포함되지 않은 것, 해지 방법.",
+      "kicker": "ACE-LEGAL / PREMIUM 약관",
+      "title": "A.C.E Premium 약관",
+      "intro": "이 약관은 유료 플랜에 포함된 내용을 설명합니다. /terms의 서비스 약관을 보완합니다. 결제가 아직 없어 현재는 아무것도 구매할 수 없습니다.",
+      "pricesTitle": "1. 플랜, 가격, 해지",
+      "prices": "Free {free}. Plus 월 {plus}. Premium 월 {premium}. 플랜은 매월 갱신됩니다. 대시보드 설정에서 언제든지 위약금 없이 해지할 수 있습니다. 서비스 약관에 명시된 대로 부분 월은 환불되지 않습니다.",
+      "plusTitle": "2. Plus 포함 내용",
+      "plus1": "Free의 모든 것.",
+      "plus2": "곧 제공: 결제가 생기면 감사 편지와 support@ace-platform.gg 이메일 지원.",
+      "premiumTitle": "3. Premium 포함 내용",
+      "prem1": "Plus의 모든 것.",
+      "prem2": "프리미엄 랭크 아트: 프로필에 표시되는 오리지널 일러스트 A.C.E. 엠블럼 세트.",
+      "prem3": "애니메이션 Premium 프로필 카드.",
+      "prem4": "특별 배지와 ELITE 인장.",
+      "prem5": "곧 제공: 데모 분석이 생기면 확장 매치 분석(사망 히트맵, 헤드샷 %, 라운드별 성과).",
+      "prem6": "베타가 열리면 베타 기능 조기 이용.",
+      "prem7": "72시간 응답 목표의 우선 지원. 이는 목표이며 보장이 아닙니다.",
+      "neverTitle": "4. 어떤 플랜에도 포함되지 않는 것",
+      "never": "어떤 플랜도 경쟁상의 이점을 주지 않습니다. 어떤 플랜도 Rating Points를 추가하거나 레이팅을 올리지 않습니다. 어떤 플랜도 매치메이킹 이점, 우선 대기열, 더 쉬운 상대를 주지 않습니다.",
+      "soonTitle": "5. 곧 제공되는 기능",
+      "soon": "곧 제공으로 표시된 것은 출시 전까지 약속된 것이 아닙니다. 그때까지 가격에 포함되지 않습니다.",
+      "languageTitle": "6. 언어",
+      "language": "번역은 편의를 위해 제공됩니다. 번역이 영어 원문과 다르면 영어 원문이 적용됩니다.",
+      "contact": "문의: support@ace-platform.gg",
+      "footerLink": "Premium 약관",
+      "pricingLink": "Premium 약관 읽기"
+    }
+  },
   meta: {
     title: "요금",
     description:
@@ -38,12 +97,12 @@ export const pricing: TextBag["pricing"] = {
     premium: {
       name: "A.C.E. PREMIUM",
       note: "Premium",
-      title: "감사 편지와 5인 스쿼드",
+      title: "프로필 아트, 배지, 분석",
       points: [
-        "무료 플랜의 모든 기능.",
-        "곧 제공: 감사 편지(포함 사항, 미포함 사항, support@ace-platform.gg)는 결제가 생긴 뒤에만 열립니다. 오늘은 버튼이 비활성화되어 있습니다.",
-        "곧 제공: 결제 후 편지에서 Squads로 이어지며, Steam으로 로그인한 주장이 5인 클랜을 저장할 수 있습니다.",
-        "상금, 무기, 실시간 대기열, 게임 서버는 없습니다. 저장된 클랜은 100팀 보드의 자리가 아닙니다.",
+        "Plus의 모든 것.",
+        "프리미엄 랭크 아트, 애니메이션 프로필 카드, 특별 배지, ELITE 인장.",
+        "곧 제공: 확장 매치 분석, 베타 조기 이용, 우선 지원(응답 목표 72시간).",
+        "경쟁상의 이점 없음: Rating Points 추가 없음, 매치메이킹 이점 없음.",
       ],
     },
   },

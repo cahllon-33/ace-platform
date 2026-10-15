@@ -1,6 +1,65 @@
 import type { TextBag } from "../types";
 
 export const pricing: TextBag["pricing"] = {
+  premiumExtras: {
+    "card": {
+      "previewTag": "NÁHLED",
+      "previewNote": "Náhled animované prémiové profilové karty. Jméno a hodnoty jsou ukázkové. Skutečný profil tuto kartu zobrazí jen tehdy, když je jeho uložený plán Premium.",
+      "planTag": "A.C.E PREMIUM",
+      "seal": "PEČEŤ ELITE",
+      "rank": "Hodnost",
+      "rating": "Rating",
+      "sampleName": "Ukázkový hráč",
+      "ownTitle": "Tvoje prémiová profilová karta"
+    },
+    "analysis": {
+      "metaTitle": "Rozšířená analýza zápasu",
+      "metaDescription": "Rozvržení prémiové analýzy zápasů: heatmapa úmrtí, podíl headshotů a výkon po kolech. Již brzy, jakmile bude existovat zpracování dem.",
+      "kicker": "PREMIUM · ANALÝZA ZÁPASU",
+      "title": "Rozšířená analýza zápasu",
+      "lede": "Heatmapa úmrtí, podíl headshotů a výkon po kolech pro tvé zaznamenané zápasy. Vyžaduje to zpracování dem, které zatím neexistuje.",
+      "sampleTag": "UKÁZKOVÉ ROZVRŽENÍ — NEJSOU TO TVÁ DATA",
+      "soon": "Již brzy",
+      "soonCaption": "Doplní se, jakmile bude existovat zpracování dem. Nic níže není skutečná statistika.",
+      "heatmap": "Heatmapa úmrtí",
+      "headshot": "% headshotů",
+      "rounds": "Výkon po kolech",
+      "noData": "Žádná data",
+      "locked": "Rozšířená analýza zápasu je součástí A.C.E Premium (7 $/měsíc). Již brzy: platba zatím neexistuje, takže dnes žádný účet není Premium.",
+      "premiumNote": "Tvůj plán je Premium. Tvá analýza se tu objeví, jakmile bude existovat zpracování dem.",
+      "signIn": "Přihlas se přes Steam a ověř si přístup k analýze.",
+      "plansLink": "Zobrazit plány"
+    },
+    "terms": {
+      "metaTitle": "Podmínky Premium",
+      "metaDescription": "Co zahrnují A.C.E Plus a Premium, co nezahrnuje žádný plán a jak funguje zrušení.",
+      "kicker": "ACE-LEGAL / PODMÍNKY PREMIUM",
+      "title": "Podmínky A.C.E Premium",
+      "intro": "Tyto podmínky popisují, co zahrnují placené plány. Doplňují Podmínky služby na /terms. Platba zatím neexistuje, takže dnes nelze nic koupit.",
+      "pricesTitle": "1. Plány, ceny a zrušení",
+      "prices": "Free {free}. Plus {plus} měsíčně. Premium {premium} měsíčně. Plány se obnovují měsíčně. Zrušit můžeš kdykoli v nastavení nástěnky bez sankce. Načaté měsíce se nevracejí, jak uvádějí Podmínky služby.",
+      "plusTitle": "2. Co zahrnuje Plus",
+      "plus1": "Vše z Free.",
+      "plus2": "Již brzy: děkovný dopis a e-mailová podpora na support@ace-platform.gg, jakmile bude existovat platba.",
+      "premiumTitle": "3. Co zahrnuje Premium",
+      "prem1": "Vše z Plus.",
+      "prem2": "Prémiová grafika hodností: původní ilustrovaná sada emblémů A.C.E. na tvém profilu.",
+      "prem3": "Animovaná prémiová profilová karta.",
+      "prem4": "Speciální odznaky a PEČEŤ ELITE.",
+      "prem5": "Již brzy: rozšířená analýza zápasu (heatmapa úmrtí, % headshotů, výkon po kolech), jakmile bude existovat zpracování dem.",
+      "prem6": "Předběžný přístup k beta funkcím, když se beta otevře.",
+      "prem7": "Prioritní podpora s cílovou dobou odpovědi 72 hodin. Je to cíl, ne záruka.",
+      "neverTitle": "4. Co nezahrnuje žádný plán",
+      "never": "Žádný plán nedává soutěžní výhodu. Žádný plán nepřidává Rating Points ani nezvyšuje rating. Žádný plán nedává výhodu v matchmakingu, prioritní frontu ani snazší soupeře.",
+      "soonTitle": "5. Funkce Již brzy",
+      "soon": "Nic označeného Již brzy není slíbeno, dokud to nevyjde. Do té doby to cena nezahrnuje.",
+      "languageTitle": "6. Jazyk",
+      "language": "Překlady jsou poskytnuty pro pohodlí. Pokud se překlad liší od anglického textu, platí anglický text.",
+      "contact": "Dotazy: support@ace-platform.gg",
+      "footerLink": "Podmínky Premium",
+      "pricingLink": "Přečíst podmínky Premium"
+    }
+  },
   meta: {
     title: "Ceník",
     description:
@@ -38,12 +97,12 @@ export const pricing: TextBag["pricing"] = {
     premium: {
       name: "A.C.E. PREMIUM",
       note: "Premium",
-      title: "Děkovný dopis a pětičlenný tým",
+      title: "Grafika profilu, odznaky a analýza",
       points: [
-        "Vše z plánu Zdarma.",
-        "Již brzy: děkovný dopis (co zahrnuje, co ne a support@ace-platform.gg) se otevře až po zavedení platby. Dnes je tlačítko vypnuté.",
-        "Již brzy: po platbě dopis vede dál do Squads, kde kapitán přihlášený přes Steam může uložit pětičlenný klan.",
-        "Žádná cena, zbraň, živá fronta ani herní server. Uložený klan není místo na tabuli 100 týmů.",
+        "Vše z Plus.",
+        "Prémiová grafika hodností, animovaná profilová karta, speciální odznaky a PEČEŤ ELITE.",
+        "Již brzy: rozšířená analýza zápasu, předběžný přístup k betám a prioritní podpora (cílová odpověď 72 hodin).",
+        "Žádná soutěžní výhoda: žádné navýšení Rating Points ani výhoda v matchmakingu.",
       ],
     },
   },

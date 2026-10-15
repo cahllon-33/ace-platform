@@ -1,6 +1,65 @@
 import type { TextBag } from "../types";
 
 export const pricing: TextBag["pricing"] = {
+  premiumExtras: {
+    "card": {
+      "previewTag": "预览",
+      "previewNote": "动态 Premium 个人资料卡预览。名称和数值均为示例。只有已保存方案为 Premium 的真实个人资料才会显示此卡片。",
+      "planTag": "A.C.E PREMIUM",
+      "seal": "ELITE 印章",
+      "rank": "段位",
+      "rating": "评分",
+      "sampleName": "示例玩家",
+      "ownTitle": "你的 Premium 个人资料卡"
+    },
+    "analysis": {
+      "metaTitle": "扩展比赛分析",
+      "metaDescription": "Premium 比赛分析布局：死亡热力图、爆头率和每回合表现。待演示文件解析上线后推出。",
+      "kicker": "PREMIUM · 比赛分析",
+      "title": "扩展比赛分析",
+      "lede": "为你已记录的比赛提供死亡热力图、爆头率和每回合表现。这需要尚不存在的演示文件解析。",
+      "sampleTag": "示例布局 — 不是你的数据",
+      "soon": "即将推出",
+      "soonCaption": "演示文件解析上线后填充。下方没有任何真实统计。",
+      "heatmap": "死亡热力图",
+      "headshot": "爆头率",
+      "rounds": "每回合表现",
+      "noData": "暂无数据",
+      "locked": "扩展比赛分析属于 A.C.E Premium（每月 $7）。即将推出：结账功能尚不存在，因此目前没有任何账号是 Premium。",
+      "premiumNote": "你的方案是 Premium。演示文件解析上线后，你的分析将显示在这里。",
+      "signIn": "使用 Steam 登录以查看你的分析权限。",
+      "plansLink": "查看方案"
+    },
+    "terms": {
+      "metaTitle": "Premium 条款",
+      "metaDescription": "A.C.E Plus 和 Premium 包含什么、任何方案都不包含什么，以及如何取消。",
+      "kicker": "ACE-LEGAL / PREMIUM 条款",
+      "title": "A.C.E Premium 条款",
+      "intro": "本条款说明付费方案包含的内容，是对 /terms 服务条款的补充。结账功能尚不存在，因此目前无法购买任何东西。",
+      "pricesTitle": "1. 方案、价格与取消",
+      "prices": "Free {free}。Plus 每月 {plus}。Premium 每月 {premium}。方案按月续订。你可以随时在仪表板设置中取消，无任何违约金。按服务条款规定，不足一个月的部分不予退款。",
+      "plusTitle": "2. Plus 包含",
+      "plus1": "Free 的全部内容。",
+      "plus2": "即将推出：结账上线后，提供感谢信和 support@ace-platform.gg 邮件支持。",
+      "premiumTitle": "3. Premium 包含",
+      "prem1": "Plus 的全部内容。",
+      "prem2": "高级段位美术：在你的个人资料上使用原版插画 A.C.E. 徽章套装。",
+      "prem3": "动态 Premium 个人资料卡。",
+      "prem4": "特殊徽章和 ELITE 印章。",
+      "prem5": "即将推出：演示文件解析上线后提供扩展比赛分析（死亡热力图、爆头率、每回合表现）。",
+      "prem6": "测试版开放时可提前使用测试功能。",
+      "prem7": "优先支持，目标在 72 小时内回复。这是目标，不是保证。",
+      "neverTitle": "4. 任何方案都不包含",
+      "never": "任何方案都不提供竞技优势。任何方案都不会增加 Rating Points 或提升评分。任何方案都不提供匹配优势、优先队列或更弱的对手。",
+      "soonTitle": "5. 即将推出的功能",
+      "soon": "标记为即将推出的内容在发布前不构成承诺。在此之前，价格不包含这些内容。",
+      "languageTitle": "6. 语言",
+      "language": "译文仅为方便提供。如译文与英文文本不一致，以英文文本为准。",
+      "contact": "问题：support@ace-platform.gg",
+      "footerLink": "Premium 条款",
+      "pricingLink": "阅读 Premium 条款"
+    }
+  },
   "meta": {
     "title": "价格",
     "description": "A.C.E. 会员:Free {free},Plus 每月 {plus},Premium 每月 {premium}。固定整数显示价格。"
@@ -37,12 +96,12 @@ export const pricing: TextBag["pricing"] = {
     "premium": {
       "name": "A.C.E. PREMIUM",
       "note": "Premium",
-      "title": "感谢信与五人小队",
+      "title": "个人资料美术、徽章与分析",
       "points": [
-        "包含 Free 的全部内容。",
-        "即将推出:感谢信(包含什么、不包含什么,以及 support@ace-platform.gg)只有在支付上线后才会打开。目前按钮已禁用。",
-        "即将推出:支付后,感谢信会引导至 Squads,通过 Steam 登录的队长可在那里保存五人战队。",
-        "无奖品、武器、实时队列或游戏服务器。已保存的战队并不占据 100 队榜单的席位。"
+        "Plus 的全部内容。",
+        "高级段位美术、动态个人资料卡、特殊徽章和 ELITE 印章。",
+        "即将推出：扩展比赛分析、测试版抢先体验和优先支持（72 小时回复目标）。",
+        "无竞技优势：不增加 Rating Points，也没有匹配优势。"
       ]
     }
   },

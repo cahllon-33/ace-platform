@@ -12,7 +12,8 @@ import { PlannedButton } from "@/components/ui/button";
 import { Panel } from "@/components/ui/panel";
 import { RankEmblem } from "@/components/rank-emblem";
 import { RankArtPicker } from "@/components/rank-art-picker";
-import { canUsePremiumRankArt, effectiveRankArt } from "@/server/rank-art";
+import { canUsePremiumRankArt, effectiveRankArt, isPremiumPlan } from "@/server/rank-art";
+import { PremiumProfileCard, premiumCardLabels } from "@/components/premium-profile-card";
 import { playerBadges } from "@/lib/badges";
 import { hasEliteSeal } from "@/lib/pricing";
 import { formatRankLabelWith } from "@/lib/ranks";
@@ -136,6 +137,15 @@ export default async function DashboardPage() {
           </div>
         </Panel>
         <div className="grid gap-4">
+          {isPremiumPlan(user.subscriptionTier) ? (
+            <PremiumProfileCard
+              name={user.displayName}
+              avatarUrl={user.avatarUrl || null}
+              level={user.rankLevel}
+              rating={user.competitiveRating}
+              labels={premiumCardLabels(await getText())}
+            />
+          ) : null}
           <RankEmblem level={user.rankLevel} art={effectiveRankArt(user)} />
           <RankArtPicker current={effectiveRankArt(user)} premiumAllowed={canUsePremiumRankArt(user.subscriptionTier)} />
         </div>

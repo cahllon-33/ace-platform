@@ -1,6 +1,65 @@
 import type { TextBag } from "../types";
 
 export const pricing: TextBag["pricing"] = {
+  premiumExtras: {
+    "card": {
+      "previewTag": "ÖNİZLEME",
+      "previewNote": "Animasyonlu Premium profil kartının önizlemesi. İsim ve değerler örnektir. Gerçek bir profil bu kartı yalnızca kayıtlı planı Premium olduğunda gösterir.",
+      "planTag": "A.C.E PREMIUM",
+      "seal": "ELITE MÜHRÜ",
+      "rank": "Rütbe",
+      "rating": "Reyting",
+      "sampleName": "Örnek oyuncu",
+      "ownTitle": "Premium profil kartın"
+    },
+    "analysis": {
+      "metaTitle": "Gelişmiş maç analizi",
+      "metaDescription": "Premium maç analizi düzeni: ölüm ısı haritası, headshot yüzdesi ve raunt bazında performans. Demo ayrıştırma var olduğunda yakında.",
+      "kicker": "PREMIUM · MAÇ ANALİZİ",
+      "title": "Gelişmiş maç analizi",
+      "lede": "Kayıtlı maçların için ölüm ısı haritası, headshot yüzdesi ve raunt bazında performans. Bunun için henüz var olmayan demo ayrıştırma gerekir.",
+      "sampleTag": "ÖRNEK DÜZEN — SENİN VERİLERİN DEĞİL",
+      "soon": "Yakında",
+      "soonCaption": "Demo ayrıştırma var olduğunda doldurulur. Aşağıdakilerin hiçbiri gerçek istatistik değildir.",
+      "heatmap": "Ölüm ısı haritası",
+      "headshot": "Headshot %",
+      "rounds": "Raunt bazında performans",
+      "noData": "Veri yok",
+      "locked": "Gelişmiş maç analizi A.C.E Premium'un (ayda 7 $) parçasıdır. Yakında: ödeme henüz yok, bu yüzden bugün hiçbir hesap Premium değil.",
+      "premiumNote": "Planın Premium. Analizin, demo ayrıştırma var olduğunda burada görünecek.",
+      "signIn": "Analiz erişimini kontrol etmek için Steam ile giriş yap.",
+      "plansLink": "Planları gör"
+    },
+    "terms": {
+      "metaTitle": "Premium koşulları",
+      "metaDescription": "A.C.E Plus ve Premium'un neleri içerdiği, hiçbir planın neleri içermediği ve iptalin nasıl işlediği.",
+      "kicker": "ACE-LEGAL / PREMIUM KOŞULLARI",
+      "title": "A.C.E Premium koşulları",
+      "intro": "Bu koşullar ücretli planların neleri içerdiğini açıklar. /terms adresindeki Hizmet Şartları'nı tamamlar. Ödeme henüz yok, bu yüzden bugün hiçbir şey satın alınamaz.",
+      "pricesTitle": "1. Planlar, fiyatlar ve iptal",
+      "prices": "Free {free}. Plus ayda {plus}. Premium ayda {premium}. Planlar aylık yenilenir. Panel ayarlarından istediğin zaman cezasız iptal edebilirsin. Hizmet Şartları'nda belirtildiği gibi kısmi aylar iade edilmez.",
+      "plusTitle": "2. Plus neleri içerir",
+      "plus1": "Free'deki her şey.",
+      "plus2": "Yakında: ödeme var olduğunda bir teşekkür mektubu ve support@ace-platform.gg üzerinden e-posta desteği.",
+      "premiumTitle": "3. Premium neleri içerir",
+      "prem1": "Plus'taki her şey.",
+      "prem2": "Premium rütbe görselleri: profilinde orijinal resimli A.C.E. amblem seti.",
+      "prem3": "Animasyonlu Premium profil kartı.",
+      "prem4": "Özel rozetler ve ELITE MÜHRÜ.",
+      "prem5": "Yakında: demo ayrıştırma var olduğunda gelişmiş maç analizi (ölüm ısı haritası, headshot %, raunt bazında performans).",
+      "prem6": "Bir beta açıldığında beta özelliklerine erken erişim.",
+      "prem7": "72 saatlik yanıt hedefiyle öncelikli destek. Bu bir hedeftir, garanti değildir.",
+      "neverTitle": "4. Hiçbir planın içermedikleri",
+      "never": "Hiçbir plan rekabet avantajı sağlamaz. Hiçbir plan Rating Points eklemez veya reytingi artırmaz. Hiçbir plan eşleştirme avantajı, öncelikli sıra veya daha kolay rakipler sağlamaz.",
+      "soonTitle": "5. Yakında gelecek özellikler",
+      "soon": "Yakında olarak işaretlenen hiçbir şey yayınlanana kadar vaat edilmez. O zamana kadar fiyata dahil değildir.",
+      "languageTitle": "6. Dil",
+      "language": "Çeviriler kolaylık için sunulur. Bir çeviri İngilizce metinden farklıysa İngilizce metin geçerlidir.",
+      "contact": "Sorular: support@ace-platform.gg",
+      "footerLink": "Premium koşulları",
+      "pricingLink": "Premium koşullarını oku"
+    }
+  },
   "meta": {
     "title": "Fiyatlandırma",
     "description": "A.C.E. üyeliği: Free {free}, Plus aylık {plus}, Premium aylık {premium}. Sabit tam sayı fiyatlar."
@@ -37,12 +96,12 @@ export const pricing: TextBag["pricing"] = {
     "premium": {
       "name": "A.C.E. PREMIUM",
       "note": "Premium",
-      "title": "Teşekkür mektubu ve beş kişilik tim",
+      "title": "Profil görselleri, rozetler ve analiz",
       "points": [
-        "Free'deki her şey.",
-        "Çok yakında: teşekkür mektubu (neyin dahil olduğu, neyin olmadığı ve support@ace-platform.gg) yalnızca ödeme sistemi olduğunda açılır. Düğme bugün devre dışıdır.",
-        "Çok yakında: ödemeden sonra mektup Squads'a yönlendirir; orada Steam ile oturum açmış bir kaptan beş oyunculu bir klan kaydedebilir.",
-        "Ödül, silah, canlı sıra veya oyun sunucusu yok. Kayıtlı bir klan, 100 takımlık tablodaki bir koltuk değildir."
+        "Plus'taki her şey.",
+        "Premium rütbe görselleri, animasyonlu profil kartı, özel rozetler ve ELITE MÜHRÜ.",
+        "Yakında: gelişmiş maç analizi, erken beta erişimi ve öncelikli destek (72 saatlik yanıt hedefi).",
+        "Rekabet avantajı yok: Rating Points artışı yok, eşleştirme avantajı yok."
       ]
     }
   },

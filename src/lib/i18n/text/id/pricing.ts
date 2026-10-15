@@ -1,6 +1,65 @@
 import type { TextBag } from "../types";
 
 export const pricing: TextBag["pricing"] = {
+  premiumExtras: {
+    "card": {
+      "previewTag": "PRATINJAU",
+      "previewNote": "Pratinjau kartu profil Premium animasi. Nama dan nilai adalah contoh. Profil asli hanya menampilkan kartu ini jika paket tersimpannya Premium.",
+      "planTag": "A.C.E PREMIUM",
+      "seal": "SEGEL ELITE",
+      "rank": "Peringkat",
+      "rating": "Rating",
+      "sampleName": "Pemain contoh",
+      "ownTitle": "Kartu profil Premium-mu"
+    },
+    "analysis": {
+      "metaTitle": "Analisis pertandingan lanjutan",
+      "metaDescription": "Tata letak analisis pertandingan Premium: heatmap kematian, persentase headshot, dan performa per ronde. Segera hadir, setelah parsing demo tersedia.",
+      "kicker": "PREMIUM · ANALISIS PERTANDINGAN",
+      "title": "Analisis pertandingan lanjutan",
+      "lede": "Heatmap kematian, persentase headshot, dan performa per ronde untuk pertandinganmu yang tercatat. Ini memerlukan parsing demo, yang belum ada.",
+      "sampleTag": "TATA LETAK CONTOH — BUKAN DATAMU",
+      "soon": "Segera hadir",
+      "soonCaption": "Diisi setelah parsing demo tersedia. Tidak ada yang di bawah ini statistik nyata.",
+      "heatmap": "Heatmap kematian",
+      "headshot": "% headshot",
+      "rounds": "Performa per ronde",
+      "noData": "Tidak ada data",
+      "locked": "Analisis pertandingan lanjutan adalah bagian dari A.C.E Premium ($7/bulan). Segera hadir: checkout belum ada, jadi hari ini tidak ada akun Premium.",
+      "premiumNote": "Paketmu Premium. Analisismu akan muncul di sini setelah parsing demo tersedia.",
+      "signIn": "Masuk dengan Steam untuk memeriksa akses analisismu.",
+      "plansLink": "Lihat paket"
+    },
+    "terms": {
+      "metaTitle": "Ketentuan Premium",
+      "metaDescription": "Apa yang termasuk dalam A.C.E Plus dan Premium, apa yang tidak termasuk dalam paket mana pun, dan cara pembatalan.",
+      "kicker": "ACE-LEGAL / KETENTUAN PREMIUM",
+      "title": "Ketentuan A.C.E Premium",
+      "intro": "Ketentuan ini menjelaskan apa yang termasuk dalam paket berbayar. Ketentuan ini melengkapi Syarat Layanan di /terms. Checkout belum ada, jadi hari ini tidak ada yang bisa dibeli.",
+      "pricesTitle": "1. Paket, harga, dan pembatalan",
+      "prices": "Free {free}. Plus {plus} per bulan. Premium {premium} per bulan. Paket diperpanjang setiap bulan. Kamu bisa membatalkan kapan saja di pengaturan dasbor tanpa penalti. Bulan parsial tidak dikembalikan, sesuai Syarat Layanan.",
+      "plusTitle": "2. Isi Plus",
+      "plus1": "Semua yang ada di Free.",
+      "plus2": "Segera hadir: surat terima kasih dan dukungan email di support@ace-platform.gg, setelah checkout tersedia.",
+      "premiumTitle": "3. Isi Premium",
+      "prem1": "Semua yang ada di Plus.",
+      "prem2": "Seni peringkat Premium: set lambang A.C.E. ilustrasi asli di profilmu.",
+      "prem3": "Kartu profil Premium animasi.",
+      "prem4": "Lencana khusus dan SEGEL ELITE.",
+      "prem5": "Segera hadir: analisis pertandingan lanjutan (heatmap kematian, % headshot, performa per ronde), setelah parsing demo tersedia.",
+      "prem6": "Akses awal ke fitur beta saat beta dibuka.",
+      "prem7": "Dukungan prioritas dengan target respons 72 jam. Ini target, bukan jaminan.",
+      "neverTitle": "4. Yang tidak termasuk dalam paket mana pun",
+      "never": "Tidak ada paket yang memberi keunggulan kompetitif. Tidak ada paket yang menambah Rating Points atau menaikkan rating. Tidak ada paket yang memberi keunggulan matchmaking, antrean prioritas, atau lawan yang lebih mudah.",
+      "soonTitle": "5. Fitur segera hadir",
+      "soon": "Apa pun yang ditandai Segera hadir tidak dijanjikan sampai dirilis. Sampai saat itu, harga tidak mencakupnya.",
+      "languageTitle": "6. Bahasa",
+      "language": "Terjemahan disediakan demi kemudahan. Jika terjemahan berbeda dari teks bahasa Inggris, teks bahasa Inggris yang berlaku.",
+      "contact": "Pertanyaan: support@ace-platform.gg",
+      "footerLink": "Ketentuan Premium",
+      "pricingLink": "Baca ketentuan Premium"
+    }
+  },
   "meta": {
     "title": "Harga",
     "description": "Keanggotaan A.C.E.: Free {free}, Plus {plus}/bln, Premium {premium}/bln. Harga tampilan terkunci bilangan bulat."
@@ -37,12 +96,12 @@ export const pricing: TextBag["pricing"] = {
     "premium": {
       "name": "A.C.E. PREMIUM",
       "note": "Premium",
-      "title": "Surat terima kasih dan skuad lima pemain",
+      "title": "Seni profil, lencana, dan analisis",
       "points": [
-        "Semua yang ada di Free.",
-        "Segera hadir: surat terima kasih (apa yang termasuk, apa yang tidak, dan support@ace-platform.gg) hanya terbuka setelah pembayaran tersedia. Tombol dinonaktifkan hari ini.",
-        "Segera hadir: setelah pembayaran, surat mengarah ke Squads, tempat kapten yang masuk dengan Steam dapat menyimpan klan lima pemain.",
-        "Tanpa hadiah, senjata, antrean langsung, atau server game. Klan tersimpan bukan kursi di papan 100 tim."
+        "Semua yang ada di Plus.",
+        "Seni peringkat Premium, kartu profil animasi, lencana khusus, dan SEGEL ELITE.",
+        "Segera hadir: analisis pertandingan lanjutan, akses beta awal, dan dukungan prioritas (target respons 72 jam).",
+        "Tanpa keunggulan kompetitif: tanpa tambahan Rating Points dan tanpa keunggulan matchmaking."
       ]
     }
   },

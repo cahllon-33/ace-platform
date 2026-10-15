@@ -1,6 +1,65 @@
 import type { TextBag } from "../types";
 
 export const pricing: TextBag["pricing"] = {
+  premiumExtras: {
+    "card": {
+      "previewTag": "VORSCHAU",
+      "previewNote": "Vorschau der animierten Premium-Profilkarte. Name und Werte sind Beispiele. Ein echtes Profil zeigt diese Karte nur, wenn sein gespeicherter Plan Premium ist.",
+      "planTag": "A.C.E PREMIUM",
+      "seal": "ELITE-SIEGEL",
+      "rank": "Rang",
+      "rating": "Rating",
+      "sampleName": "Beispielspieler",
+      "ownTitle": "Deine Premium-Profilkarte"
+    },
+    "analysis": {
+      "metaTitle": "Erweiterte Matchanalyse",
+      "metaDescription": "Premium-Layout der Matchanalyse: Todes-Heatmap, Headshot-Quote und Leistung pro Runde. Demnächst, sobald Demo-Auswertung existiert.",
+      "kicker": "PREMIUM · MATCHANALYSE",
+      "title": "Erweiterte Matchanalyse",
+      "lede": "Eine Todes-Heatmap, Headshot-Quote und Leistung pro Runde für deine erfassten Matches. Dafür ist Demo-Auswertung nötig, die es noch nicht gibt.",
+      "sampleTag": "BEISPIEL-LAYOUT — NICHT DEINE DATEN",
+      "soon": "Demnächst",
+      "soonCaption": "Wird befüllt, sobald Demo-Auswertung existiert. Nichts hier unten ist eine echte Statistik.",
+      "heatmap": "Todes-Heatmap",
+      "headshot": "Headshot-Quote",
+      "rounds": "Leistung pro Runde",
+      "noData": "Keine Daten",
+      "locked": "Die erweiterte Matchanalyse ist Teil von A.C.E Premium (7 $/Monat). Demnächst: Einen Checkout gibt es noch nicht, daher ist heute kein Konto Premium.",
+      "premiumNote": "Dein Plan ist Premium. Deine Analyse erscheint hier, sobald Demo-Auswertung existiert.",
+      "signIn": "Melde dich mit Steam an, um deinen Analysezugang zu prüfen.",
+      "plansLink": "Pläne ansehen"
+    },
+    "terms": {
+      "metaTitle": "Premium-Bedingungen",
+      "metaDescription": "Was A.C.E Plus und Premium enthalten, was kein Plan enthält und wie die Kündigung funktioniert.",
+      "kicker": "ACE-LEGAL / PREMIUM-BEDINGUNGEN",
+      "title": "A.C.E Premium-Bedingungen",
+      "intro": "Diese Bedingungen beschreiben, was die bezahlten Pläne enthalten. Sie ergänzen die Nutzungsbedingungen unter /terms. Einen Checkout gibt es noch nicht, daher kann heute nichts gekauft werden.",
+      "pricesTitle": "1. Pläne, Preise und Kündigung",
+      "prices": "Free {free}. Plus {plus} pro Monat. Premium {premium} pro Monat. Pläne verlängern sich monatlich. Du kannst jederzeit ohne Strafe in den Dashboard-Einstellungen kündigen. Angebrochene Monate werden nicht erstattet, wie in den Nutzungsbedingungen angegeben.",
+      "plusTitle": "2. Was Plus enthält",
+      "plus1": "Alles aus Free.",
+      "plus2": "Demnächst: ein Dankesbrief und E-Mail-Support unter support@ace-platform.gg, sobald es einen Checkout gibt.",
+      "premiumTitle": "3. Was Premium enthält",
+      "prem1": "Alles aus Plus.",
+      "prem2": "Premium-Rangkunst: das originale illustrierte A.C.E.-Emblemset auf deinem Profil.",
+      "prem3": "Die animierte Premium-Profilkarte.",
+      "prem4": "Spezielle Abzeichen und das ELITE-SIEGEL.",
+      "prem5": "Demnächst: erweiterte Matchanalyse (Todes-Heatmap, Headshot-Quote, Leistung pro Runde), sobald Demo-Auswertung existiert.",
+      "prem6": "Früher Zugang zu Beta-Funktionen, wenn eine Beta startet.",
+      "prem7": "Priorisierter Support mit einem Antwortziel von 72 Stunden. Das ist ein Ziel, keine Garantie.",
+      "neverTitle": "4. Was kein Plan enthält",
+      "never": "Kein Plan verschafft einen Wettbewerbsvorteil. Kein Plan fügt Rating Points hinzu oder erhöht ein Rating. Kein Plan verschafft einen Matchmaking-Vorteil, eine Prioritätswarteschlange oder leichtere Gegner.",
+      "soonTitle": "5. Demnächst-Funktionen",
+      "soon": "Alles, was als Demnächst markiert ist, wird erst mit der Veröffentlichung zugesagt. Bis dahin ist es nicht im Preis enthalten.",
+      "languageTitle": "6. Sprache",
+      "language": "Übersetzungen dienen der Bequemlichkeit. Weicht eine Übersetzung vom englischen Text ab, gilt der englische Text.",
+      "contact": "Fragen: support@ace-platform.gg",
+      "footerLink": "Premium-Bedingungen",
+      "pricingLink": "Premium-Bedingungen lesen"
+    }
+  },
   meta: {
     title: "Preise",
     description:
@@ -38,12 +97,12 @@ export const pricing: TextBag["pricing"] = {
     premium: {
       name: "A.C.E. PREMIUM",
       note: "Premium",
-      title: "Dankesbrief und Kader mit fünf Spielern",
+      title: "Profilkunst, Abzeichen und Analyse",
       points: [
-        "Alles aus Free.",
-        "Demnächst: Der Dankesbrief (was enthalten ist, was nicht, und support@ace-platform.gg) öffnet sich erst, wenn es einen Checkout gibt. Heute ist der Button deaktiviert.",
-        "Demnächst: Nach dem Checkout führt der Brief weiter zu Squads, wo ein mit Steam angemeldeter Captain einen Fünf-Spieler-Clan speichern kann.",
-        "Kein Preis, keine Waffe, keine laufende Warteschlange und kein Spielserver. Ein gespeicherter Clan ist kein Platz auf der Tafel mit 100 Mannschaften.",
+        "Alles aus Plus.",
+        "Premium-Rangkunst, die animierte Profilkarte, spezielle Abzeichen und das ELITE-SIEGEL.",
+        "Demnächst: erweiterte Matchanalyse, früher Beta-Zugang und priorisierter Support (Antwortziel 72 Stunden).",
+        "Kein Wettbewerbsvorteil: kein Rating-Points-Boost und kein Matchmaking-Vorteil.",
       ],
     },
   },

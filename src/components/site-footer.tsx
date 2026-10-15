@@ -4,6 +4,7 @@ import Link from "next/link";
 import { CookieSettings } from "@/components/cookie-settings";
 import { useI18n } from "@/components/locale-provider";
 import { useUi } from "@/components/use-ui";
+import { useText } from "@/components/text-provider";
 import { socialNetworks, type SocialKey } from "@/lib/site";
 
 type NavKey = "home" | "play" | "ranks" | "leaderboard" | "teams" | "pricing" | "tournaments" | "rules" | "maps" | "prizes" | "antiCheat" | "features" | "shop";
@@ -33,6 +34,7 @@ const SOCIAL_ICONS: Record<SocialKey, string> = {
 };
 
 export function SiteFooter() {
+  const premiumTermsLabel = useText().pricing.premiumExtras.terms.footerLink;
   const { t } = useI18n();
   const ui = useUi();
 
@@ -86,6 +88,7 @@ export function SiteFooter() {
             <p>{ui.footer.legal}</p>
             <Link href="/privacy">{t("privacy")}</Link>
             <Link href="/terms">{t("terms")}</Link>
+            <Link href="/premium-terms">{premiumTermsLabel}</Link>
             <Link href="/cookie-policy">{t("cookiePolicy")}</Link>
             <CookieSettings />
           </nav>

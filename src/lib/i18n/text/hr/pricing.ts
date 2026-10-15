@@ -1,6 +1,65 @@
 import type { TextBag } from "../types";
 
 export const pricing: TextBag["pricing"] = {
+  premiumExtras: {
+    "card": {
+      "previewTag": "PREGLED",
+      "previewNote": "Pregled animirane Premium kartice profila. Ime i vrijednosti su primjeri. Pravi profil prikazuje ovu karticu samo kad je njegov spremljeni plan Premium.",
+      "planTag": "A.C.E PREMIUM",
+      "seal": "PEČAT ELITE",
+      "rank": "Rang",
+      "rating": "Rejting",
+      "sampleName": "Primjer igrača",
+      "ownTitle": "Tvoja Premium kartica profila"
+    },
+    "analysis": {
+      "metaTitle": "Proširena analiza meča",
+      "metaDescription": "Raspored Premium analize mečeva: toplinska karta smrti, postotak headshotova i učinak po rundi. Uskoro, kad bude postojala obrada demo snimki.",
+      "kicker": "PREMIUM · ANALIZA MEČA",
+      "title": "Proširena analiza meča",
+      "lede": "Toplinska karta smrti, postotak headshotova i učinak po rundi za tvoje zabilježene mečeve. Za to je potrebna obrada demo snimki, koja još ne postoji.",
+      "sampleTag": "PRIMJER RASPOREDA — NISU TVOJI PODACI",
+      "soon": "Uskoro",
+      "soonCaption": "Popunit će se kad bude postojala obrada demo snimki. Ništa ispod nije stvarna statistika.",
+      "heatmap": "Toplinska karta smrti",
+      "headshot": "% headshotova",
+      "rounds": "Učinak po rundi",
+      "noData": "Nema podataka",
+      "locked": "Proširena analiza meča dio je A.C.E Premium (7 $/mj.). Uskoro: plaćanje još ne postoji, pa danas nijedan račun nije Premium.",
+      "premiumNote": "Tvoj plan je Premium. Analiza će se pojaviti ovdje kad bude postojala obrada demo snimki.",
+      "signIn": "Prijavi se putem Steama da provjeriš pristup analizi.",
+      "plansLink": "Pogledaj planove"
+    },
+    "terms": {
+      "metaTitle": "Premium uvjeti",
+      "metaDescription": "Što uključuju A.C.E Plus i Premium, što ne uključuje nijedan plan i kako funkcionira otkazivanje.",
+      "kicker": "ACE-LEGAL / PREMIUM UVJETI",
+      "title": "Uvjeti A.C.E Premium",
+      "intro": "Ovi uvjeti opisuju što uključuju plaćeni planovi. Dopunjuju Uvjete korištenja na /terms. Plaćanje još ne postoji, pa danas ništa nije moguće kupiti.",
+      "pricesTitle": "1. Planovi, cijene i otkazivanje",
+      "prices": "Free {free}. Plus {plus} mjesečno. Premium {premium} mjesečno. Planovi se obnavljaju mjesečno. Možeš otkazati u bilo kojem trenutku u postavkama nadzorne ploče bez kazne. Djelomični mjeseci se ne vraćaju, kako navode Uvjeti korištenja.",
+      "plusTitle": "2. Što uključuje Plus",
+      "plus1": "Sve iz Free.",
+      "plus2": "Uskoro: zahvalnica i podrška e-poštom na support@ace-platform.gg, kad bude postojalo plaćanje.",
+      "premiumTitle": "3. Što uključuje Premium",
+      "prem1": "Sve iz Plus.",
+      "prem2": "Premium grafika rangova: izvorni ilustrirani set amblema A.C.E. na tvom profilu.",
+      "prem3": "Animirana Premium kartica profila.",
+      "prem4": "Posebne značke i PEČAT ELITE.",
+      "prem5": "Uskoro: proširena analiza meča (toplinska karta smrti, % headshotova, učinak po rundi), kad bude postojala obrada demo snimki.",
+      "prem6": "Rani pristup beta značajkama kad se beta otvori.",
+      "prem7": "Prioritetna podrška s ciljanim vremenom odgovora od 72 sata. To je cilj, ne jamstvo.",
+      "neverTitle": "4. Što ne uključuje nijedan plan",
+      "never": "Nijedan plan ne daje natjecateljsku prednost. Nijedan plan ne dodaje Rating Points niti povećava rejting. Nijedan plan ne daje prednost pri sparivanju, prioritetni red ni lakše protivnike.",
+      "soonTitle": "5. Značajke „Uskoro“",
+      "soon": "Ništa označeno kao Uskoro nije obećano dok ne bude objavljeno. Do tada cijena to ne uključuje.",
+      "languageTitle": "6. Jezik",
+      "language": "Prijevodi su pruženi radi praktičnosti. Ako se prijevod razlikuje od engleskog teksta, primjenjuje se engleski tekst.",
+      "contact": "Pitanja: support@ace-platform.gg",
+      "footerLink": "Premium uvjeti",
+      "pricingLink": "Pročitaj Premium uvjete"
+    }
+  },
   "meta": {
     "title": "Cijene",
     "description": "A.C.E. članstvo: Free {free}, Plus {plus}/mj., Premium {premium}/mj. Prikazane cijene zaključane na cijele brojeve."
@@ -37,12 +96,12 @@ export const pricing: TextBag["pricing"] = {
     "premium": {
       "name": "A.C.E. PREMIUM",
       "note": "Premium",
-      "title": "Zahvalnica i odred od pet igrača",
+      "title": "Grafika profila, značke i analiza",
       "points": [
-        "Sve iz plana Free.",
-        "Uskoro: zahvalnica (što je uključeno, što nije, i support@ace-platform.gg) otvara se tek kad postoji plaćanje. Gumb je danas onemogućen.",
-        "Uskoro: nakon plaćanja zahvalnica vodi do Squads, gdje kapetan prijavljen putem Steama može spremiti klan od pet igrača.",
-        "Bez nagrade, oružja, reda uživo ili poslužitelja igre. Spremljeni klan nije mjesto na ploči od 100 timova."
+        "Sve iz Plus.",
+        "Premium grafika rangova, animirana kartica profila, posebne značke i PEČAT ELITE.",
+        "Uskoro: proširena analiza meča, rani pristup beti i prioritetna podrška (cilj odgovora 72 sata).",
+        "Bez natjecateljske prednosti: bez povećanja Rating Pointsa i bez prednosti pri sparivanju."
       ]
     }
   },

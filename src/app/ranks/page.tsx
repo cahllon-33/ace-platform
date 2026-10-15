@@ -6,6 +6,7 @@ import { interpolate } from "@/lib/i18n";
 import { RANK_TIERS, rankEmblemAsset } from "@/lib/ranks";
 import { RANK_DIVISIONS } from "@/lib/site";
 import { getText } from "@/server/locale";
+import { PremiumProfileCardPreview } from "@/components/premium-profile-card";
 import { readSessionUser } from "@/server/session";
 
 export async function generateMetadata(): Promise<Metadata> {
@@ -54,6 +55,7 @@ export default async function RanksPage() {
         <p className="mt-3 max-w-3xl text-sm leading-7 text-[#A9ABB3]">{copy.premiumRanks.lede}</p>
         <p className="ace-premium-ranks-note">{copy.premiumRanks.demo}</p>
         <p className="ace-premium-ranks-note">{copy.premiumRanks.locked}</p>
+        <PremiumProfileCardPreview text={text} />
         <div className="mt-6">
           <RankSystemBoard liveRating={rating} art="premium" />
         </div>

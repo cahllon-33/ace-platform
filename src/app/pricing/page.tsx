@@ -7,6 +7,8 @@ import { Badge } from "@/components/ui/badge";
 import { interpolate } from "@/lib/i18n";
 import { FREE_PRICE, PLUS_PRICE, PREMIUM_PRICE } from "@/lib/pricing";
 import { getText } from "@/server/locale";
+import Link from "next/link";
+import { PremiumProfileCardPreview } from "@/components/premium-profile-card";
 
 const PRICES = { free: FREE_PRICE, plus: PLUS_PRICE, premium: PREMIUM_PRICE };
 
@@ -41,6 +43,17 @@ export default async function PricingPage() {
         <div className="mt-12">
           <PlanCards />
         </div>
+
+        <section className="ace-premium-ranks" aria-labelledby="premium-card-preview">
+          <div className="ace-premium-ranks-head">
+            <p id="premium-card-preview" className="ace-ranks-section-kicker">{text.tiers.premium.name}</p>
+            <span className="ace-premium-ranks-plan">{all.ranks.premiumRanks.plan}</span>
+          </div>
+          <PremiumProfileCardPreview text={all} />
+          <Link className="ace-codex-entry" href="/premium-terms">
+            {text.premiumExtras.terms.pricingLink}
+          </Link>
+        </section>
 
         <section className="mt-14 rounded-3xl border border-[#FFD700]/30 bg-[#121212] p-6 sm:p-8">
           <p className="text-xs tracking-[0.18em] text-[#FFD700]">{text.billing.kicker}</p>

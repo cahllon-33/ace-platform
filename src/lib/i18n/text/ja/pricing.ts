@@ -1,6 +1,65 @@
 import type { TextBag } from "../types";
 
 export const pricing: TextBag["pricing"] = {
+  premiumExtras: {
+    "card": {
+      "previewTag": "プレビュー",
+      "previewNote": "アニメーション付きPremiumプロフィールカードのプレビューです。名前と数値はサンプルです。実際のプロフィールでは、保存されたプランがPremiumの場合にのみこのカードが表示されます。",
+      "planTag": "A.C.E PREMIUM",
+      "seal": "ELITEシール",
+      "rank": "ランク",
+      "rating": "レーティング",
+      "sampleName": "サンプルプレイヤー",
+      "ownTitle": "あなたのPremiumプロフィールカード"
+    },
+    "analysis": {
+      "metaTitle": "拡張マッチ分析",
+      "metaDescription": "Premiumマッチ分析のレイアウト：デスヒートマップ、ヘッドショット率、ラウンドごとのパフォーマンス。デモ解析が実装され次第公開予定です。",
+      "kicker": "PREMIUM · マッチ分析",
+      "title": "拡張マッチ分析",
+      "lede": "記録されたマッチのデスヒートマップ、ヘッドショット率、ラウンドごとのパフォーマンス。これにはまだ存在しないデモ解析が必要です。",
+      "sampleTag": "サンプルレイアウト — あなたのデータではありません",
+      "soon": "近日公開",
+      "soonCaption": "デモ解析が実装され次第表示されます。以下に実際の統計はありません。",
+      "heatmap": "デスヒートマップ",
+      "headshot": "ヘッドショット率",
+      "rounds": "ラウンドごとのパフォーマンス",
+      "noData": "データなし",
+      "locked": "拡張マッチ分析はA.C.E Premium（月額$7）に含まれます。近日公開：決済はまだ存在しないため、現在Premiumのアカウントはありません。",
+      "premiumNote": "あなたのプランはPremiumです。デモ解析が実装され次第、ここに分析が表示されます。",
+      "signIn": "Steamでサインインして分析へのアクセスを確認してください。",
+      "plansLink": "プランを見る"
+    },
+    "terms": {
+      "metaTitle": "Premium規約",
+      "metaDescription": "A.C.E PlusとPremiumに含まれるもの、どのプランにも含まれないもの、解約の方法。",
+      "kicker": "ACE-LEGAL / PREMIUM規約",
+      "title": "A.C.E Premium規約",
+      "intro": "この規約は有料プランに含まれる内容を説明します。/termsの利用規約を補足するものです。決済はまだ存在しないため、現在は何も購入できません。",
+      "pricesTitle": "1. プラン、料金、解約",
+      "prices": "Free {free}。Plus 月額{plus}。Premium 月額{premium}。プランは毎月更新されます。ダッシュボードの設定からいつでも違約金なしで解約できます。利用規約のとおり、月の途中の返金はありません。",
+      "plusTitle": "2. Plusに含まれるもの",
+      "plus1": "Freeのすべて。",
+      "plus2": "近日公開：決済の実装後、お礼の手紙とsupport@ace-platform.ggでのメールサポート。",
+      "premiumTitle": "3. Premiumに含まれるもの",
+      "prem1": "Plusのすべて。",
+      "prem2": "プレミアムランクアート：プロフィールに表示されるオリジナルのイラスト版A.C.E.エンブレムセット。",
+      "prem3": "アニメーション付きPremiumプロフィールカード。",
+      "prem4": "特別バッジとELITEシール。",
+      "prem5": "近日公開：デモ解析の実装後、拡張マッチ分析（デスヒートマップ、ヘッドショット率、ラウンドごとのパフォーマンス）。",
+      "prem6": "ベータ開始時のベータ機能への早期アクセス。",
+      "prem7": "72時間以内の返信を目標とする優先サポート。これは目標であり保証ではありません。",
+      "neverTitle": "4. どのプランにも含まれないもの",
+      "never": "どのプランも競技上の優位性を与えません。どのプランもRating Pointsを加算したりレーティングを上げたりしません。どのプランもマッチメイキングの優位性、優先キュー、より弱い対戦相手を与えません。",
+      "soonTitle": "5. 近日公開の機能",
+      "soon": "「近日公開」と表示されたものは、リリースされるまで約束されたものではありません。それまで料金には含まれません。",
+      "languageTitle": "6. 言語",
+      "language": "翻訳は便宜のために提供されています。翻訳と英語の本文が異なる場合は、英語の本文が優先されます。",
+      "contact": "お問い合わせ：support@ace-platform.gg",
+      "footerLink": "Premium規約",
+      "pricingLink": "Premium規約を読む"
+    }
+  },
   "meta": {
     "title": "料金",
     "description": "A.C.E. メンバーシップ:Free {free}、Plus 月額{plus}、Premium 月額{premium}。表示価格は整数で固定。"
@@ -37,12 +96,12 @@ export const pricing: TextBag["pricing"] = {
     "premium": {
       "name": "A.C.E. PREMIUM",
       "note": "Premium",
-      "title": "サンクスレターと5人スクワッド",
+      "title": "プロフィールアート、バッジ、分析",
       "points": [
-        "Free のすべての内容。",
-        "近日公開:サンクスレター(含まれるもの、含まれないもの、support@ace-platform.gg)は決済が実装されてから開きます。現在ボタンは無効です。",
-        "近日公開:決済後、レターからSquadsへ進み、Steamでサインインしたキャプテンが5人のクランを保存できます。",
-        "賞品、武器、稼働中のキュー、ゲームサーバーはありません。保存したクランは100チームのボードの席ではありません。"
+        "Plusのすべて。",
+        "プレミアムランクアート、アニメーション付きプロフィールカード、特別バッジ、ELITEシール。",
+        "近日公開：拡張マッチ分析、ベータへの早期アクセス、優先サポート（返信目標72時間）。",
+        "競技上の優位性なし：Rating Pointsの加算なし、マッチメイキングの優位性なし。"
       ]
     }
   },
