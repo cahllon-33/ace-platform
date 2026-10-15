@@ -20,6 +20,13 @@ export const UI_EN = {
     explore: "Explore",
   },
   footer: {
+    platform: "Platform",
+    competition: "Competition",
+    company: "Company",
+    legal: "Legal",
+    tagline: "Competitive Counter-Strike 2 ladders, built around fair play.",
+    follow: "Follow A.C.E.",
+    rights: "All rights reserved.",
     legalLine: "© 2026 A.C.E. Competitions Ltd. Independent platform, not affiliated with Valve. Counter-Strike and CS2 are trademarks of Valve Corporation.",
   },
   soon: {

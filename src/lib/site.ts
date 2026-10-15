@@ -43,10 +43,20 @@ export const PLAYERS_ONLINE_NOW = 0;
 export const BRAND_SUBLINE =
   "AUTONOMOUS ANTI-CHEAT • COMPETITIVE CALIBRATION • ELITE PLAYERS";
 
-export const socialNetworks = [
-  { href: "https://twitter.com", label: "Twitter" },
-  { href: "https://www.twitch.tv", label: "Twitch" },
-  { href: "https://www.instagram.com", label: "Instagram" },
-  { href: "https://www.facebook.com", label: "Facebook" },
-  { href: "https://discord.com", label: "Discord" },
-] as const;
+export type SocialKey = "x" | "twitch" | "youtube" | "instagram" | "discord";
+
+/**
+ * Official A.C.E. social profiles. A link appears in the footer only when its
+ * NEXT_PUBLIC_SOCIAL_* variable is set, so the site never shows a placeholder link.
+ */
+export const socialNetworks: { key: SocialKey; label: string; href: string }[] = (
+  [
+    { key: "x", label: "X", href: process.env.NEXT_PUBLIC_SOCIAL_X },
+    { key: "twitch", label: "Twitch", href: process.env.NEXT_PUBLIC_SOCIAL_TWITCH },
+    { key: "youtube", label: "YouTube", href: process.env.NEXT_PUBLIC_SOCIAL_YOUTUBE },
+    { key: "instagram", label: "Instagram", href: process.env.NEXT_PUBLIC_SOCIAL_INSTAGRAM },
+    { key: "discord", label: "Discord", href: process.env.NEXT_PUBLIC_SOCIAL_DISCORD },
+  ] as const
+).flatMap((item) =>
+  item.href && /^https:\/\//.test(item.href) ? [{ key: item.key, label: item.label, href: item.href }] : [],
+);

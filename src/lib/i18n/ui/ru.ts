@@ -21,6 +21,13 @@ export const UI_RU: Ui = {
     "explore": "Обзор"
   },
   "footer": {
+    "platform": "Платформа",
+    "competition": "Соревнования",
+    "company": "Компания",
+    "legal": "Правовая информация",
+    "tagline": "Соревновательные рейтинги Counter-Strike 2, построенные на честной игре.",
+    "follow": "Следите за A.C.E.",
+    "rights": "Все права защищены.",
     "legalLine": "© 2026 A.C.E. Competitions Ltd. Независимая платформа, не связанная с Valve. Counter-Strike и CS2 — товарные знаки Valve Corporation."
   },
   "soon": {

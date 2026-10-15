@@ -21,6 +21,13 @@ export const UI_TH: Ui = {
     "explore": "สำรวจ"
   },
   "footer": {
+    "platform": "แพลตฟอร์ม",
+    "competition": "การแข่งขัน",
+    "company": "บริษัท",
+    "legal": "ข้อกฎหมาย",
+    "tagline": "ลำดับการแข่งขัน Counter-Strike 2 ที่สร้างขึ้นบนการเล่นอย่างยุติธรรม",
+    "follow": "ติดตาม A.C.E.",
+    "rights": "สงวนลิขสิทธิ์",
     "legalLine": "© 2026 A.C.E. Competitions Ltd. แพลตฟอร์มอิสระ ไม่มีส่วนเกี่ยวข้องกับ Valve · Counter-Strike และ CS2 เป็นเครื่องหมายการค้าของ Valve Corporation"
   },
   "soon": {

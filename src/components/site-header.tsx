@@ -88,9 +88,11 @@ export function SiteHeader({ auth }: { auth: ReactNode }) {
         </nav>
 
         <div className="flex items-center gap-2">
-          <Link href="/pricing" className="ace-gold-cta hidden sm:inline-flex">
-            {ui.nav.getPremium}
-          </Link>
+          <span className="hidden sm:inline-flex">
+            <Link href="/pricing" className="ace-gold-cta">
+              {ui.nav.getPremium}
+            </Link>
+          </span>
           <LanguageMenu />
           <div className="hidden md:flex">{auth}</div>
           <button

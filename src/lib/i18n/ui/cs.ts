@@ -21,6 +21,13 @@ export const UI_CS: Ui = {
     "explore": "Objevovat"
   },
   "footer": {
+    "platform": "Platforma",
+    "competition": "Soutěž",
+    "company": "Společnost",
+    "legal": "Právní informace",
+    "tagline": "Soutěžní žebříčky Counter-Strike 2 postavené na férové hře.",
+    "follow": "Sledujte A.C.E.",
+    "rights": "Všechna práva vyhrazena.",
     "legalLine": "© 2026 A.C.E. Competitions Ltd. Nezávislá platforma bez vazby na Valve. Counter-Strike a CS2 jsou ochranné známky Valve Corporation."
   },
   "soon": {

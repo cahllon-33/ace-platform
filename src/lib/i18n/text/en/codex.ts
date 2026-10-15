@@ -348,7 +348,7 @@
           heading: "What is drawn",
           paragraphs: [
             "Two sides, five seats each, and a captain label on the first seat. The map list and the chat line beside them are part of the same layout.",
-            "The security rows on that page are marked layout, mock, or conceptual. They are not a running check.",
+            "The security rows on that page are marked with their status. None of them is a running check yet; see /anti-cheat for the roadmap.",
           ],
         },
         {
@@ -388,7 +388,7 @@
           heading: "The written clock",
           paragraphs: [
             "Once a match has a published start, five starters on a side are due 15 minutes before that start. That sentence is in the competition code. The clock does not start on this website, because no match is published.",
-            "Sample names on the play page are a layout. They are not people sitting in a queue.",
+            "Names shown on the play page are previews. They are not people sitting in a queue.",
           ],
         },
         {

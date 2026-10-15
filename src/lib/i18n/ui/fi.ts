@@ -21,6 +21,13 @@ export const UI_FI: Ui = {
     "explore": "Tutustu"
   },
   "footer": {
+    "platform": "Alusta",
+    "competition": "Kilpailu",
+    "company": "Yritys",
+    "legal": "Oikeudelliset tiedot",
+    "tagline": "Kilpailulliset Counter-Strike 2 -tikapuut, rakennettu reilun pelin varaan.",
+    "follow": "Seuraa A.C.E.:tä",
+    "rights": "Kaikki oikeudet pidätetään.",
     "legalLine": "© 2026 A.C.E. Competitions Ltd. Itsenäinen alusta, ei sidoksissa Valveen. Counter-Strike ja CS2 ovat Valve Corporationin tavaramerkkejä."
   },
   "soon": {

@@ -21,6 +21,13 @@ export const UI_TR: Ui = {
     "explore": "Keşfet"
   },
   "footer": {
+    "platform": "Platform",
+    "competition": "Rekabet",
+    "company": "Şirket",
+    "legal": "Yasal",
+    "tagline": "Adil oyun üzerine kurulu rekabetçi Counter-Strike 2 sıralamaları.",
+    "follow": "A.C.E.'yi takip et",
+    "rights": "Tüm hakları saklıdır.",
     "legalLine": "© 2026 A.C.E. Competitions Ltd. Valve ile bağlantısı olmayan bağımsız bir platformdur. Counter-Strike ve CS2, Valve Corporation'ın ticari markalarıdır."
   },
   "soon": {

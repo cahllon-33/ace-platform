@@ -55,7 +55,7 @@
   billing: {
     kicker: "BILLING TIMELINE MATRIX",
     title: "How billing will work once it exists",
-    body: "Plus is exactly {plus}/mo. Premium is exactly {premium}/mo. Checkout is not live on this website. Choosing Plus or Premium opens the receipt on this website. Neither button charges a card or sends email.",
+    body: "Plus is exactly {plus}/mo. Premium is exactly {premium}/mo. Online checkout is coming soon. Choosing Plus or Premium shows a preview receipt; no card is charged and no email is sent.",
     display: {
       label: "01 · DISPLAY",
       body: "Free {free}. Plus {plus}/mo. Premium {premium}/mo. Paid tiers never buy rating or easier opponents.",
@@ -71,7 +71,7 @@
   compare: {
     kicker: "What A.C.E. can promise today",
     title: "Membership comparison",
-    note: "Every row is true on this website now. Display prices are not a live checkout, and a paid label does not open a queue.",
+    note: "Every row reflects the site today. Checkout is coming soon, and a paid plan never opens a queue or buys an advantage.",
     caption: "Free, Plus, and Premium compared by what the site does today",
     includedToday: "Included today",
     columns: {

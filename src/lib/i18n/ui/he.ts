@@ -21,6 +21,13 @@ export const UI_HE: Ui = {
     "explore": "גלו עוד"
   },
   "footer": {
+    "platform": "פלטפורמה",
+    "competition": "תחרות",
+    "company": "חברה",
+    "legal": "משפטי",
+    "tagline": "סולמות תחרותיים ל-Counter-Strike 2, שנבנו סביב משחק הוגן.",
+    "follow": "עקבו אחרי A.C.E.",
+    "rights": "כל הזכויות שמורות.",
     "legalLine": "© 2026 A.C.E. Competitions Ltd. פלטפורמה עצמאית שאינה קשורה ל-Valve. ‏Counter-Strike ו-CS2 הם סימנים מסחריים של Valve Corporation."
   },
   "soon": {

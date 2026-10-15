@@ -280,7 +280,7 @@ export const EN = {
  tourneyKicker: "Competition",
  tourneyTitle: "Tournaments",
  tourneyLede:
- "The 128-slot single-elimination pyramid is the official demonstration tree for this route. It auto-scales to the page width so hex team chips stay on screen. Clicking a chip opens the championship overlay; each of the five roster cards routes to a full-screen layout profile with sample stats and placeholder gear. Registration is 0 of 100. Rank-gated events will use the rating engine when competitions actually open. No cash prize is advertised or funded.",
+ "A 128-slot single-elimination bracket that scales to fit your screen. Select a team chip to open its championship card and roster. Registration opens with the competitive beta; rank-gated events use the A.C.E. rating once competitions launch. Prizes are confirmed per event when announced.",
  tourneyFormat: "Format",
  tourneyFormatValue: "128-slot single elimination",
  tourneyCapacity: "Capacity",

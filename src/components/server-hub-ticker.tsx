@@ -3,17 +3,19 @@
 import { useState } from "react";
 import { useI18n } from "@/components/locale-provider";
 import { useText } from "@/components/text-provider";
+import { useUi } from "@/components/use-ui";
 import { interpolate } from "@/lib/i18n";
 
 const NODES = [
-  { id: "fra", sample: "24ms" },
-  { id: "sto", sample: "32ms" },
-  { id: "tlv", sample: "8ms" },
+  { id: "fra" },
+  { id: "sto" },
+  { id: "tlv" },
 ] as const;
 
 export function ServerHubTicker() {
   const { t } = useI18n();
   const copy = useText().home.serverHub;
+  const ui = useUi();
   const [selected, setSelected] = useState<(typeof NODES)[number]["id"]>("tlv");
 
   return (
@@ -38,7 +40,7 @@ export function ServerHubTicker() {
                 <span>
                   <span className="block text-sm font-semibold text-[#F5F3EC]">{name}</span>
                   <span className="mt-1 block text-[0.72rem] leading-5 text-[#fff6c2]">
-                    {interpolate(copy.tileSample, { sample: node.sample })}
+                    {ui.soon.label}
                   </span>
                 </span>
               </button>

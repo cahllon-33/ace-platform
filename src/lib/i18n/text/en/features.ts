@@ -26,7 +26,7 @@
       title: "Biometric Face Scan linkage",
       paragraphs: [
         "Face Scan is a specified future identity-binding layer, not a camera product on this website. The intended design would, only after explicit consent and a separate legal review, bind a liveness-checked facial template to the same A.C.E. account that already holds a server-verified SteamID. The purpose is to resist account sharing used to evade a prior restriction. A.C.E. does not collect facial images, facial embeddings, email addresses, or hardware fingerprints today. The live privacy posture remains Strict Necessity: verified 64-bit SteamID and public Steam display name only.",
-        "If Face Scan is ever implemented, it will not replace Steam OpenID, will not be used to sell behavioral advertising, and will not unlock ranked queues by itself. Ranked admission still requires a verified Anti-Cheat path. Until that review exists, any Face Scan panel in the lobby is a layout placeholder.",
+        "If Face Scan is ever implemented, it will not replace Steam OpenID, will not be used to sell behavioral advertising, and will not unlock ranked queues by itself. Ranked admission still requires a verified Anti-Cheat path. Until that review exists, any Face Scan panel in the lobby is a design preview.",
       ],
     },
     calibration: {

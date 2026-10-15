@@ -21,6 +21,13 @@ export const UI_PT_BR: Ui = {
     "explore": "Explorar"
   },
   "footer": {
+    "platform": "Plataforma",
+    "competition": "Competição",
+    "company": "Empresa",
+    "legal": "Jurídico",
+    "tagline": "Rankings competitivos de Counter-Strike 2, feitos em torno do jogo limpo.",
+    "follow": "Siga a A.C.E.",
+    "rights": "Todos os direitos reservados.",
     "legalLine": "© 2026 A.C.E. Competitions Ltd. Plataforma independente, sem afiliação à Valve. Counter-Strike e CS2 são marcas da Valve Corporation."
   },
   "soon": {

@@ -12,7 +12,7 @@
   codexLink: "Open the Calibration Codex",
   document: {
     title: "Ten-tier calibration document",
-    body: "Engine names are the official ladder. Crystal aliases are lobby art. Win-rate chips on the board are showcase samples, not live matchmaking. Paid cosmetics never move a player between these floors.",
+    body: "Engine names are the official ladder. Crystal aliases are lobby art. Win-rate chips on the board are showcase figures until ranked matchmaking launches. Paid cosmetics never move a player between these floors.",
     level: "LEVEL {level} · {crystal}",
     detail: "Minimum rating {rating}. Material study: {material}.",
   },

@@ -79,7 +79,7 @@
     note: "128-tick regional servers arrive with the competitive beta.",
   },
   telemetry: {
-    badge: "NOT A LIVE CLIENT",
+    badge: "PREVIEW · COMING SOON",
     lines: [
       "A.C.E SHIELD: IN DEVELOPMENT",
       "HARDWARE BAN MATRIX: NO IDENTIFIER IS COLLECTED",

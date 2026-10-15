@@ -21,6 +21,13 @@ export const UI_HR: Ui = {
     "explore": "Istraži"
   },
   "footer": {
+    "platform": "Platforma",
+    "competition": "Natjecanje",
+    "company": "Tvrtka",
+    "legal": "Pravne informacije",
+    "tagline": "Natjecateljske ljestvice za Counter-Strike 2, izgrađene oko poštene igre.",
+    "follow": "Prati A.C.E.",
+    "rights": "Sva prava pridržana.",
     "legalLine": "© 2026 A.C.E. Competitions Ltd. Neovisna platforma, nije povezana s tvrtkom Valve. Counter-Strike i CS2 zaštitni su znakovi tvrtke Valve Corporation."
   },
   "soon": {

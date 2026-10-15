@@ -9,7 +9,7 @@ export const desk = {
       "A first look at upcoming championship rewards. The shop opens soon; nothing is charged today.",
     prizeBanner: "🏆 CHAMPIONSHIP REWARDS · COMING SOON",
     notice:
-      "These showcases have no cash value. No skin is delivered, no prize is funded, and the inspect button does not start a purchase.",
+      "These showcases are previews with no cash value. Nothing is delivered or charged, and the inspect button does not start a purchase.",
     items: {
       lore: {
         name: "Butterfly Knife | Lore",

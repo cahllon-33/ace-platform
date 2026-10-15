@@ -21,6 +21,13 @@ export const UI_ARZ: Ui = {
     "explore": "اكتشف"
   },
   "footer": {
+    "platform": "المنصة",
+    "competition": "المنافسة",
+    "company": "الشركة",
+    "legal": "قانوني",
+    "tagline": "سلالم تنافسية في Counter-Strike 2 معمولة على اللعب النضيف.",
+    "follow": "تابع A.C.E.",
+    "rights": "كل الحقوق محفوظة.",
     "legalLine": "© 2026 A.C.E. Competitions Ltd. منصة مستقلة غير تابعة لـ Valve. ‏Counter-Strike و CS2 علامتان تجاريتان لشركة Valve Corporation."
   },
   "soon": {

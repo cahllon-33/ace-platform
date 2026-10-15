@@ -21,7 +21,7 @@ export const tournamentRoadmap = {
     {
       title: "Grand Apex Finals",
       status: "LOCKED",
-      body: "The grand final is best of five. No cash, skin, or token prize is funded.",
+      body: "The grand final is best of five. Prizes are confirmed on the event page when announced.",
     },
   ],
 };

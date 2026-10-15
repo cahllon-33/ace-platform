@@ -21,6 +21,13 @@ export const UI_DE: Ui = {
     "explore": "Entdecken"
   },
   "footer": {
+    "platform": "Plattform",
+    "competition": "Wettbewerb",
+    "company": "Unternehmen",
+    "legal": "Rechtliches",
+    "tagline": "Kompetitive Counter-Strike-2-Ranglisten, gebaut für Fairplay.",
+    "follow": "Folge A.C.E.",
+    "rights": "Alle Rechte vorbehalten.",
     "legalLine": "© 2026 A.C.E. Competitions Ltd. Unabhängige Plattform, nicht mit Valve verbunden. Counter-Strike und CS2 sind Marken der Valve Corporation."
   },
   "soon": {

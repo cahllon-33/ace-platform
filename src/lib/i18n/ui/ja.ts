@@ -21,6 +21,13 @@ export const UI_JA: Ui = {
     "explore": "探す"
   },
   "footer": {
+    "platform": "プラットフォーム",
+    "competition": "競技",
+    "company": "会社情報",
+    "legal": "法的情報",
+    "tagline": "フェアプレーを軸にした Counter-Strike 2 の競技ラダー。",
+    "follow": "A.C.E. をフォロー",
+    "rights": "無断転載を禁じます。",
     "legalLine": "© 2026 A.C.E. Competitions Ltd. Valveとは提携していない独立したプラットフォームです。Counter-StrikeおよびCS2はValve Corporationの商標です。"
   },
   "soon": {

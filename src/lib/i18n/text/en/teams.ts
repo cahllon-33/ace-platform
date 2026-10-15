@@ -85,7 +85,7 @@
       formatValue: "100-Team Bracket Matrix",
       briefTitle: "100-Team Operations Brief",
       briefBody:
-        "One competitive layout covers the full 100-team field. When entry opens, the first 28 accepted clans receive a Round 1 bye and advance to Round 2. The other 72 clans play Round 1. Names on unfilled slots are staging labels, not registered entrants. The full code sits under the tree. No match lobby is open and no prize pool is funded.",
+        "One competitive layout covers the full 100-team field. When entry opens, the first 28 accepted clans receive a Round 1 bye and advance to Round 2. The other 72 clans play Round 1. Names on unfilled slots are placeholders until clans register. The full rulebook sits under the tree. Match lobbies open with the competitive beta, and prizes are confirmed per event.",
     },
     timeline: {
       ariaLabel: "Tournament launch timeline",

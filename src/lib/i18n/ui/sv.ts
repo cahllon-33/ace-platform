@@ -21,6 +21,13 @@ export const UI_SV: Ui = {
     "explore": "Utforska"
   },
   "footer": {
+    "platform": "Plattform",
+    "competition": "Tävling",
+    "company": "Företag",
+    "legal": "Juridik",
+    "tagline": "Tävlingsstegar för Counter-Strike 2, byggda kring fair play.",
+    "follow": "Följ A.C.E.",
+    "rights": "Med ensamrätt.",
     "legalLine": "© 2026 A.C.E. Competitions Ltd. Oberoende plattform utan koppling till Valve. Counter-Strike och CS2 är varumärken som tillhör Valve Corporation."
   },
   "soon": {

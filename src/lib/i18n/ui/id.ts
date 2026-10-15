@@ -21,6 +21,13 @@ export const UI_ID: Ui = {
     "explore": "Jelajahi"
   },
   "footer": {
+    "platform": "Platform",
+    "competition": "Kompetisi",
+    "company": "Perusahaan",
+    "legal": "Legal",
+    "tagline": "Tangga kompetitif Counter-Strike 2 yang dibangun di atas permainan yang adil.",
+    "follow": "Ikuti A.C.E.",
+    "rights": "Hak cipta dilindungi undang-undang.",
     "legalLine": "© 2026 A.C.E. Competitions Ltd. Platform independen, tidak berafiliasi dengan Valve. Counter-Strike dan CS2 adalah merek dagang Valve Corporation."
   },
   "soon": {

@@ -101,7 +101,7 @@
         "Match data encryption · in development",
       ],
     },
-    findMatchReason: "FIND MATCH cannot open a live CS2 server. Ranked is fail-closed. Population is 0.",
+    findMatchReason: "Matchmaking opens with the competitive beta. Ranked queues are not running yet.",
   },
   matchFound: {
     ariaSignedIn: "{title}. {name} joins a roster once matches open.",

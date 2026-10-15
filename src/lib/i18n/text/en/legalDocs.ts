@@ -14,7 +14,7 @@
       operator: {
         title: "1. Operator and independence",
         paragraphs: [
-          "The service is operated by A.C.E. Competitions Ltd. (corporate registry placeholder ID: Pending). Using the site means you accept these Terms, the Privacy Policy, the Cookie Policy, and the Competitive Rulebook.",
+          "The service is operated by A.C.E. Competitions Ltd. (company registration number to be published). Using the site means you accept these Terms, the Privacy Policy, the Cookie Policy, and the Competitive Rulebook.",
         ],
       },
       eligibility: {
@@ -26,7 +26,7 @@
       notActive: {
         title: "3. What this website is not",
         paragraphs: [
-          "Ranked matchmaking, live CS2 game servers, working AI Anti-Cheat, billing, and prizes are not active. Lobby clocks, loot ladders, and integrity panels are layout previews unless a page states otherwise.",
+          "Ranked matchmaking, live CS2 game servers, working AI Anti-Cheat, billing, and prizes are not active. Lobby clocks and integrity panels are previews unless a page states otherwise.",
         ],
       },
       subscriptions: {
@@ -57,7 +57,7 @@
       contact: {
         title: "8. Contact",
         paragraphs: [
-          "support@ace-platform.gg — A.C.E. Competitions Ltd. — Corporate Registry Placeholder ID: Pending.",
+          "support@ace-platform.gg — A.C.E. Competitions Ltd. — Company registration number to be published.",
         ],
       },
     },
@@ -131,7 +131,7 @@
     },
     controller: {
       title: "Controller",
-      body: "A.C.E. Competitions Ltd. Corporate Registry Placeholder ID: Pending. Contact: support@ace-platform.gg.",
+      body: "A.C.E. Competitions Ltd. Company registration number to be published. Contact: support@ace-platform.gg.",
     },
   },
   cookiePolicy: {

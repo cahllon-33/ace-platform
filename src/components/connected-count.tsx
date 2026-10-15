@@ -34,6 +34,6 @@ export function ConnectedCount() {
     };
   }, []);
 
-  if (!state || state.unavailable) return <>{t("playersOnlineUnavailable")}</>;
+  if (!state || state.unavailable) return null;
   return <>{t("playersOnline", { count: state.count })}</>;
 }
