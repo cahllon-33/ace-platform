@@ -17,7 +17,7 @@ import { UI_LOCALES } from "@/lib/i18n/ui/locales";
  * Remove an id from this list once its TextBag files exist; the test then enforces them.
  */
 const TEXTBAG_ENGLISH_FALLBACK = [
-  "ar", "arz", "fi", "sv", "zh", "tr", "id", "th", "hu", "hr", "mk", "uk", "hi", "ro",
+  "fi", "sv", "zh", "tr", "id", "th", "hu", "hr", "mk", "uk", "hi", "ro",
 ] as const;
 
 const NON_EN = SITE_LOCALES.map((l) => l.id).filter((id) => id !== "en");
