@@ -34,7 +34,7 @@ export const home: TextBag["home"] = {
   charter: {
     kicker: "ESPAÇO PRINCIPAL DO LOBBY",
     title: "LOBBY DE MATCHMAKING COMPETITIVO E CENTRO DE EXPEDIÇÃO A.C.E.",
-    badge: "SEM SERVIDOR AO VIVO",
+    badge: "SERVIDORES · EM BREVE",
     lede: "Este lobby não atribui um servidor, não inicia um cliente anti-cheat e não paga prémios.",
     modules: [
       {
@@ -49,7 +49,7 @@ export const home: TextBag["home"] = {
       },
       {
         kicker: "RECOMPENSAS DE SKINS",
-        copy: "Os cartões de skins são exemplos. Nenhuma arma é entregue e nenhum prémio é financiado.",
+        copy: "As recompensas do campeonato são anunciadas em cada evento.",
         chips: ["NENHUM ITEM ENTREGUE", "SEM VERIFICAÇÃO DE DROP"],
       },
     ],
@@ -63,27 +63,27 @@ export const home: TextBag["home"] = {
     compareLink: "Ver a tabela de comparação completa",
   },
   loot: {
-    exampleCard: "Cartão de exemplo · não é um item da Valve",
+    exampleCard: "Em breve",
     wear: {
       factoryNew: "Nova de Fábrica",
       minimalWear: "Pouco Usada",
     },
   },
   serverHub: {
-    badge: "NENHUM SERVIDOR DE JOGO AO VIVO",
+    badge: "SERVIDORES DE JOGO · EM BREVE",
     nodes: {
       fra: "Nó periférico de Frankfurt",
       sto: "Núcleo de Estocolmo",
       tlv: "Retransmissor de Telavive",
     },
-    tileAria: "{name}. Mosaico de layout. Nenhum servidor está ligado.",
-    tileSample: "Amostra de layout {sample}. Nenhum servidor está ligado.",
-    note: "Estes nomes e amostras de latência são um layout. Este sítio não tem nenhum servidor de jogo de 128 ticks nem nenhum nó regional.",
+    tileAria: "{name}. Servidor em breve.",
+    tileSample: "Em breve · {sample}",
+    note: "Os servidores regionais de 128 ticks chegam com a beta competitiva.",
   },
   telemetry: {
-    badge: "NÃO É UM CLIENTE AO VIVO",
+    badge: "PRÉ-VISUALIZAÇÃO · EM BREVE",
     lines: [
-      "AC-KERNEL: NÃO LIGADO",
+      "A.C.E SHIELD: EM DESENVOLVIMENTO",
       "MATRIZ DE BANIMENTO DE HARDWARE: NENHUM IDENTIFICADOR É RECOLHIDO",
       "LIGAÇÃO A.C.E. SHIELD: NENHUM CLIENTE ESTÁ INSTALADO",
     ],
@@ -100,18 +100,18 @@ export const home: TextBag["home"] = {
     note: "Texto de campanha. As filas ranqueadas, os servidores ao vivo e os prémios não estão ativos.",
     hudLeft: "CT — BOMBSITE A",
     hudRight: "T — AVANÇO PELO MEIO",
-    hudCenter: "AMBIENTE DE EQUIPA · LAYOUT",
+    hudCenter: "AMBIENTE DO ESQUADRÃO",
     plannedReason: "O jogo ranqueado continua fechado até ser implementada e verificada uma integração Anti-Cheat real.",
   },
   howStatus: {
     label: "SUBSISTEMA DE REGISTO A.C.E. — MOTOR DE CALIBRAÇÃO PRONTO",
-    note: "Widget de estado de layout. As filas ranqueadas, o Anti-Cheat e a calibração ao vivo não estão ativos.",
+    note: "As filas classificativas abrem quando o A.C.E Shield e a calibração estiverem ativos.",
   },
   shell: {
     primaryNav: "Principal",
     mobileNav: "Móvel",
     elite: "ELITE",
-    notificationsTitle: "Sem feed de notificações ao vivo",
+    notificationsTitle: "Notificações · em breve",
     notificationsAria: "Notificações. Nenhuma por ler.",
     connectProfileTitle: "Ligar perfil",
     openProfileAria: "Abrir o perfil do Convés de Comando",

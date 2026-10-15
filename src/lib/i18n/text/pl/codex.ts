@@ -350,7 +350,7 @@ export const codex: TextBag["codex"] = {
           heading: "Co jest narysowane",
           paragraphs: [
             "Dwie strony, po pięć miejsc każda, oraz etykieta kapitana na pierwszym miejscu. Lista map i linia czatu obok nich należą do tego samego układu.",
-            "Wiersze zabezpieczeń na tej stronie są oznaczone jako układ, makieta albo koncepcja. Nie są działającą kontrolą.",
+            "Wiersze bezpieczeństwa na tej stronie są oznaczone swoim statusem. Żaden z nich nie jest jeszcze działającą kontrolą; plan rozwoju znajdziesz na /anti-cheat.",
           ],
         },
         {
@@ -390,7 +390,7 @@ export const codex: TextBag["codex"] = {
           heading: "Spisany zegar",
           paragraphs: [
             "Gdy mecz ma opublikowaną godzinę rozpoczęcia, pięciu podstawowych zawodników każdej strony musi stawić się 15 minut przed tą godziną. To zdanie znajduje się w regulaminie rozgrywek. Zegar nie uruchamia się na tej stronie, ponieważ żaden mecz nie jest opublikowany.",
-            "Przykładowe nazwy na stronie gry to układ. Nie są to ludzie czekający w kolejce.",
+            "Nazwy widoczne na stronie gry to podgląd. Nie są to osoby czekające w kolejce.",
           ],
         },
         {
@@ -403,7 +403,7 @@ export const codex: TextBag["codex"] = {
     },
     "the-captain-on-the-desk": {
       title: "Kapitan na pulpicie",
-      lede: "Jeden kapitan reprezentuje stronę. Na obecnym pulpicie ta rola jest etykietą w układzie, a nie lobby na żywo.",
+      lede: "Jeden kapitan mówi w imieniu strony. Role w lobby ruszą wraz z betą rywalizacji.",
       sections: [
         {
           heading: "Co przydziela regulamin",
@@ -448,7 +448,7 @@ export const codex: TextBag["codex"] = {
         {
           heading: "Co możesz otworzyć",
           paragraphs: [
-            "Kliknij klan w drabince, aby zobaczyć jego skład, a następnie otwórz gracza. Robocze nazwy są przykładowe. Nie są przyjętymi zgłoszeniami.",
+            "Kliknij klan w drabince, aby zobaczyć jego skład, a potem otwórz gracza. Nazwy na wolnych miejscach to podgląd, a nie przyjęte zgłoszenia.",
             "Drabinka nie rozstawia serwera i nie wysyła linku do meczu.",
           ],
         },

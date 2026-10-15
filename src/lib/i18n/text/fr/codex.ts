@@ -350,7 +350,7 @@ export const codex: TextBag["codex"] = {
           heading: "Ce qui est affiché",
           paragraphs: [
             "Deux équipes de cinq places chacune, et un libellé de capitaine sur la première place. La liste des cartes et la ligne de chat à côté font partie de la même mise en page.",
-            "Les lignes de sécurité de cette page sont marquées comme mise en page, simulation ou concept. Ce ne sont pas des contrôles en cours d’exécution.",
+            "Les lignes de sécurité de cette page indiquent leur statut. Aucune n'est encore une vérification active ; la feuille de route est sur /anti-cheat.",
           ],
         },
         {
@@ -390,7 +390,7 @@ export const codex: TextBag["codex"] = {
           heading: "Le chronomètre écrit",
           paragraphs: [
             "Une fois qu’un match a une heure de début publiée, les cinq titulaires d’une équipe doivent être présents 15 minutes avant ce début. Cette phrase figure dans le code de compétition. Le chronomètre ne démarre pas sur ce site, car aucun match n’est publié.",
-            "Les noms d’exemple de la page Jouer sont une mise en page. Ce ne sont pas des personnes qui attendent dans une file.",
+            "Les noms affichés sur la page de jeu sont un aperçu. Ce ne sont pas des personnes en file d'attente.",
           ],
         },
         {
@@ -403,7 +403,7 @@ export const codex: TextBag["codex"] = {
     },
     "the-captain-on-the-desk": {
       title: "Le capitaine dans l’espace de match",
-      lede: "Un seul capitaine s’exprime au nom d’une équipe. Dans l’espace actuel, ce rôle est un libellé sur la mise en page, pas un lobby en direct.",
+      lede: "Un capitaine parle pour chaque camp. Les rôles du lobby s'activeront avec la bêta compétitive.",
       sections: [
         {
           heading: "Ce que le code attribue",
@@ -448,7 +448,7 @@ export const codex: TextBag["codex"] = {
         {
           heading: "Ce que vous pouvez ouvrir",
           paragraphs: [
-            "Cliquez sur un clan de l’arbre pour consulter son effectif, puis ouvrez la fiche d’un joueur. Les noms de démonstration sont des exemples. Ce ne sont pas des inscriptions acceptées.",
+            "Cliquez sur un clan dans l'arbre pour voir son effectif, puis ouvrez un joueur. Les noms sur les places libres sont des aperçus, pas des inscriptions acceptées.",
             "L’arbre n’attribue aucun serveur et n’envoie aucun lien de match.",
           ],
         },

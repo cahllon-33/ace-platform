@@ -123,7 +123,7 @@ export const UI_ZH: Ui = {
       "repeat": "再次违规",
       "rule": "条款"
     },
-    "englishNote": "条款正文以英文显示，以英文版本为准。",
+    "englishNote": "",
     "sections": [
       "适用范围与定义",
       "参赛资格",

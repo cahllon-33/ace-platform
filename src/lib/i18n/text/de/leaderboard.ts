@@ -9,7 +9,7 @@ export const leaderboard: TextBag["leaderboard"] = {
   hero: {
     kicker: "RANGLISTE",
     title: "Wettkampf-Rangliste",
-    note: "Schau-Plätze füllen diese Rangliste, bis ein Steam-Konto gespeichert ist. Eine gespeicherte Wertung ersetzt sie. Land und Hauptwaffe sind Beispiele. Die Waffenbilder sind eigene Studiobilder von A.C.E., keine Skins von Valve. Diese Website speichert keine Kills, daher ist die Waffe keine erfasste Top-Frag-Waffe.",
+    note: "Bis Spieler Steam verknüpfen und eine Wertung erhalten, füllen Schauplätze diese Tafel. Land und hervorgehobene Waffe sind dort illustrativ. Die Waffenrenderings sind originale A.C.E.-Studiografiken, keine Valve-Skins. Kills werden noch nicht erfasst, daher ist die hervorgehobene Waffe keine Top-Frag-Statistik.",
   },
   facts: {
     seats: "Plätze",
@@ -33,10 +33,10 @@ export const leaderboard: TextBag["leaderboard"] = {
     showcase: "Schau",
   },
   weapon: {
-    sampleRender: "Beispielbild",
+    sampleRender: "Signaturwaffe",
     notStored: "Nicht gespeichert",
     noKillSaved: "Kein Kill gespeichert",
-    alt: "Beispielbild {name}",
+    alt: "{name}",
   },
   countries: {
     il: "Israel",
@@ -57,17 +57,17 @@ export const leaderboard: TextBag["leaderboard"] = {
     placeholder: "Anzeigename",
   },
   seasonPreview: {
-    banner: "LEITER DER SAISON 1 — LAYOUT",
+    banner: "SEASON-1-RANGLISTE",
     noteLive:
-      "Mit Steam verknüpfte Namen sind gespeicherte Konten. Leere Plätze bleiben als Schau markiert. K/D wird nicht gespeichert, daher ist diese Anzeige ein Layout.",
+      "Mit Steam verknüpfte Namen sind A.C.E.-Konten. K/D erscheint, sobald Matchserver Kills erfassen.",
     noteSample:
-      "Layout-Beispiel. 0 laufende Ranglisteneinträge. Diese Zahlen sind kein Saisonergebnis, und K/D wird nicht gespeichert.",
+      "Season-1-Ergebnisse erscheinen hier, sobald Ranglistenspiele gespielt werden.",
   },
   playerCard: {
-    kicker: "Vorschau der authentifizierten Karte · Scheinwerte",
+    kicker: "Vorschau der Spielerkarte",
     title: "Spielerakte",
     badge: "Premium",
-    note: "Nur Layout. Diese Zahlen sind keine laufende Saison, kein laufendes Elo und kein angemeldetes Konto. Die Rangliste-Spielersuche ist nicht aktiv.",
+    note: "Deine Karte füllt sich mit echten Werten, sobald das Ranglisten-Matchmaking öffnet.",
     currentRank: "Aktueller Rang",
     rankValue: "A.C.E. Legend (Division I)",
     competitiveRating: "Wettkampfwertung",

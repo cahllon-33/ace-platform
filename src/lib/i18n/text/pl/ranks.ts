@@ -4,17 +4,17 @@ export const ranks: TextBag["ranks"] = {
   meta: {
     title: "Rangi turniejowe",
     description:
-      "Dziesięć rang A.C.E. na obrotowym stole CSS 3D, który obracasz przeciągnięciem. Studyjne modele GLTF mogą zastąpić nieruchome obrazy, gdy zostaną dostarczone.",
+      "Dziesięć rang A.C.E., od Iron Recruit do A.C.E. Legend, z dywizjami i progami rankingu.",
   },
   hero: {
     kicker: "KALIBRACJA",
     title: "Rangi turniejowe",
-    lede: "Od Recruit do A.C.E. Legend, dywizje {divisions}. Każdy emblemat to koncepcyjny obraz na obrotowym stole CSS 3D (przeciągnij lub użyj klawiszy strzałek). Plik GLTF można później umieścić w udokumentowanym miejscu — w repozytorium nie ma jeszcze żadnych plików modeli. Po zalogowaniu liczby oceny pochodzą z Twojego prawdziwego konta, w przeciwnym razie pokazują próg kalibracji.",
+    lede: "Dziesięć poziomów od Recruit do A.C.E. Legend, każdy z dywizjami {divisions}. Przeciągnij lub użyj strzałek, aby obrócić emblemat. Po zalogowaniu widzisz swój ranking, w przeciwnym razie próg każdego poziomu.",
   },
   codexLink: "Otwórz Kodeks kalibracji",
   document: {
     title: "Dokument kalibracji dziesięciu szczebli",
-    body: "Nazwy w silniku to oficjalna drabinka. Kryształowe aliasy to grafika poczekalni. Procenty wygranych na tablicy to próbki z witryny, a nie żywe dobieranie meczów. Płatne kosmetyki nigdy nie przenoszą gracza między tymi progami.",
+    body: "Nazwy silnika to oficjalna drabinka. Kryształowe aliasy to grafika lobby. Wskaźniki procentu zwycięstw na tablicy to dane prezentacyjne do czasu uruchomienia matchmakingu rankingowego. Płatne elementy kosmetyczne nigdy nie przenoszą gracza między poziomami.",
     level: "POZIOM {level} · {crystal}",
     detail: "Minimalna ocena {rating}. Studium materiału: {material}.",
   },
@@ -34,7 +34,7 @@ export const ranks: TextBag["ranks"] = {
     selectEmblem: "Wybierz emblemat rangi A.C.E. {name}, poziom {level}",
     emblemAlt: "Autorska kryształowa odznaka profilu A.C.E. 3D: emblemat {name} {crystal}, poziom {level}",
     emblemAltLegend: "Autorska kryształowa odznaka profilu A.C.E. 3D: emblemat poziomu {level}",
-    premium: "PREMIUM",
+    premium: "NAJWYŻSZY POZIOM",
   },
   division: {
     label: "Dywizja {division}",
@@ -46,8 +46,8 @@ export const ranks: TextBag["ranks"] = {
     targetWinRate: "Docelowy procent wygranych: {winRate}",
     calibrationTarget: "Cel kalibracji",
     floor: "Próg",
-    samplesNote: "Próbki układu. To nie żywa telemetria.",
-    progressMockup: "Makieta postępu",
+    samplesNote: "Wartości docelowe dla każdego poziomu.",
+    progressMockup: "Postęp",
   },
   turntable: {
     stageLabel: "Orbitalny emblemat {name}. Przeciągnij, aby obrócić.",

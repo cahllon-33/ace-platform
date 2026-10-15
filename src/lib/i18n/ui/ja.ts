@@ -123,7 +123,7 @@ export const UI_JA: Ui = {
       "repeat": "再違反",
       "rule": "条項"
     },
-    "englishNote": "条項本文は英語で表示されます。英語版が正式な文書です。",
+    "englishNote": "",
     "sections": [
       "適用範囲と定義",
       "参加資格",

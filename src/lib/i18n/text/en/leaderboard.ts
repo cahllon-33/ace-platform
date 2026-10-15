@@ -7,7 +7,7 @@
   hero: {
     kicker: "LEADERBOARD",
     title: "Competitive board",
-    note: "Showcase seats fill this board until a Steam account is stored. A stored rating replaces them. Country and lead weapon are samples. The weapon renders are original A.C.E. studio images, not Valve skins. This site does not store kills, so the weapon is not a recorded top-frag gun.",
+    note: "Showcase seats fill this board until players link Steam and earn a rating. Their country and featured weapon are illustrative. Weapon renders are original A.C.E. studio art, not Valve skins. Kills are not tracked yet, so the featured weapon is not a top-frag stat.",
   },
   facts: {
     seats: "Seats",

@@ -21,7 +21,7 @@ export const tournamentRoadmap = {
     {
       title: "Großes Apex-Finale",
       status: "GESPERRT",
-      body: "Das große Finale wird im Best-of-Five gespielt. Es ist kein Preis in Form von Bargeld, Skins oder Token finanziert.",
+      body: "Das große Finale wird im Best-of-Five gespielt. Preise werden auf der Eventseite bestätigt, sobald sie angekündigt sind.",
     },
   ],
 };

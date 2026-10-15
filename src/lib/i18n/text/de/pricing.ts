@@ -22,7 +22,7 @@ export const pricing: TextBag["pricing"] = {
       points: [
         "Melde dich mit Steam OpenID an. A.C.E. fragt niemals nach einem Steam-Passwort.",
         "Eine gespeicherte Wertung beginnt bei 1,000. Kein Spielergebnis hat sie verändert.",
-        "Öffentliche Seiten bleiben offen: Spiel-Layout, Turniere, Rangliste, Mannschaften und Regeln.",
+        "Alle öffentlichen Seiten: Spielen, Turniere, Rangliste, Teams und Regeln.",
       ],
     },
     plus: {
@@ -30,9 +30,9 @@ export const pricing: TextBag["pricing"] = {
       note: "Plus",
       title: "Dankesbrief und Hilfe",
       points: [
-        "Gleicher Zugang wie beim kostenlosen Plan. Die Kasse ist nicht in Betrieb, daher wird dieser Preis nicht berechnet.",
+        "Alles aus Free. Die Abrechnung startet bald; heute wird nichts berechnet.",
         "Öffnet einen Dankesbrief auf dieser Website: was enthalten ist, was nicht, und support@ace-platform.gg.",
-        "Kauft weder Wertung noch leichtere Gegner. Das goldene Siegel erscheint nur, wenn die gespeicherte Stufe bereits Plus oder Premium ist.",
+        "Kauft weder Wertung noch leichtere Gegner. Goldene Profilabzeichen stammen für jeden Spieler aus gespeicherten Matchdaten. Elite-Siegel und Sonderabzeichen erscheinen nur, wenn die gespeicherte Stufe bereits Premium ist.",
       ],
     },
     premium: {
@@ -57,7 +57,7 @@ export const pricing: TextBag["pricing"] = {
   billing: {
     kicker: "ZEITLEISTE DER ABRECHNUNG",
     title: "So wird die Abrechnung funktionieren, sobald es sie gibt",
-    body: "Plus kostet genau {plus}/Monat. Premium kostet genau {premium}/Monat. Die Kasse ist auf dieser Website nicht in Betrieb. Die Wahl von Plus oder Premium öffnet die Quittung auf dieser Website. Keine der beiden Schaltflächen belastet eine Karte oder sendet eine E-Mail.",
+    body: "Plus kostet genau {plus}/Monat. Premium kostet genau {premium}/Monat. Die Online-Bezahlung folgt in Kürze. Bei Auswahl von Plus oder Premium wird ein Vorschau-Beleg angezeigt; es wird keine Karte belastet und keine E-Mail versendet.",
     display: {
       label: "01 · ANZEIGE",
       body: "Kostenlos {free}. Plus {plus}/Monat. Premium {premium}/Monat. Bezahlte Stufen kaufen niemals Wertung oder leichtere Gegner.",
@@ -73,7 +73,7 @@ export const pricing: TextBag["pricing"] = {
   compare: {
     kicker: "Was A.C.E. heute versprechen kann",
     title: "Vergleich der Mitgliedschaften",
-    note: "Jede Zeile trifft auf dieser Website jetzt zu. Anzeigepreise sind keine laufende Kasse, und ein bezahltes Etikett öffnet keine Warteschlange.",
+    note: "Jede Zeile gibt den heutigen Stand der Website wieder. Die Bezahlung folgt in Kürze, und ein bezahlter Plan öffnet nie eine Warteschlange und kauft keinen Vorteil.",
     caption: "Kostenlos, Plus und Premium im Vergleich danach, was die Website heute tut",
     includedToday: "Heute enthalten",
     columns: {
@@ -84,7 +84,7 @@ export const pricing: TextBag["pricing"] = {
     rows: {
       publicSite: {
         feature: "Öffentliche Website",
-        detail: "Start, Spiel-Layout, Turniere, Rangliste, Mannschaften, Regeln und Bedingungen.",
+        detail: "Start, Spielen, Turniere, Rangliste, Teams, Regeln und Bedingungen.",
       },
       steamSignIn: {
         feature: "Steam-Anmeldung",
@@ -123,9 +123,9 @@ export const pricing: TextBag["pricing"] = {
         detail: "Es wird kein Skin, kein Messer und kein Preistopf ausgeliefert.",
       },
       goldEliteSeal: {
-        feature: "Goldenes Elite-Siegel",
+        feature: "Elite-Siegel & Sonderabzeichen",
         detail:
-          "Erscheint nur, wenn die gespeicherte Stufe bereits Plus oder Premium ist. Die Kasse setzt diese Stufe nicht.",
+          "Nur Premium, ausgelesen aus der auf dem Server gespeicherten Stufe. Kosmetisch. Der Checkout setzt diese Stufe nicht.",
       },
     },
     cells: {
@@ -133,7 +133,7 @@ export const pricing: TextBag["pricing"] = {
       yes: "Ja",
       noneYet: "Noch keine",
       closed: "Geschlossen",
-      notConnected: "Nicht verbunden",
+      notConnected: "Demnächst",
       notShipped: "Nicht ausgeliefert",
       noCharge: "Keine Belastung",
       notForSale: "Nicht käuflich",
@@ -176,14 +176,14 @@ export const pricing: TextBag["pricing"] = {
         "Anzeigepreis: {price} pro Monat. Der Betrag ist ein Etikett, keine Belastung.",
         "Zahlung: keine. Die Wahl dieses Plans belastet keine Karte.",
         "E-Mail: keine. A.C.E. sendet diesen Brief nicht in ein Postfach.",
-        "Gespeicherte Stufe: unverändert. Ein goldenes Siegel erscheint nur, wenn das Konto bereits Plus oder Premium speichert.",
+        "Gespeicherte Stufe: unverändert. Sonderabzeichen und Elite-Siegel erscheinen nur, wenn das Konto bereits Premium gespeichert hat.",
         "Wertung: nicht käuflich. Ein neues Konto beginnt weiterhin bei 1,000.",
       ],
     },
     today: {
       title: "Was du heute nutzen kannst",
       items: [
-        "Die öffentliche Website: Start, Spiel-Layout, Turniere, Rangliste, Mannschaften, Regeln und Bedingungen.",
+        "Die öffentliche Website: Start, Spielen, Turniere, Rangliste, Teams, Regeln und Bedingungen.",
         "Steam-Anmeldung über das offizielle Steam OpenID. A.C.E. fragt niemals nach einem Steam-Passwort.",
         "Dieselben öffentlichen Seiten wie beim kostenlosen Plan. Dieser Preis öffnet keine eigene Warteschlange.",
       ],
@@ -193,7 +193,7 @@ export const pricing: TextBag["pricing"] = {
       items: [
         "Eine laufende Rangliste-Warteschlange. «SPIEL FINDEN» bleibt geschlossen.",
         "Einen Counter-Strike 2-Server, eine Serveradresse oder einen Verbindungslink.",
-        "Einen Anti-Cheat-Download. Ein Abzeichen auf einem Kaderplatz ist ein Layout-Beispiel, keine laufende Prüfung.",
+        "Ein Anti-Cheat-Download. A.C.E Shield ist in Entwicklung.",
         "Einen Preis, einen Skin, ein Messer oder einen Preistopf.",
         "Einen Platz auf der Tafel mit 100 Mannschaften. Diese Tafel zeigt weiterhin 0 registriert, bis eine Saison öffnet.",
         "Leichtere Gegner, eine gekaufte Wertung oder eine andere öffentliche Website als beim kostenlosen Plan.",

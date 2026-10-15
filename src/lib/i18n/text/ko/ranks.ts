@@ -4,17 +4,17 @@ export const ranks: TextBag["ranks"] = {
   meta: {
     title: "경쟁 랭크",
     description:
-      "드래그로 회전하는 CSS 3D 턴테이블 위의 A.C.E. 랭크 10개입니다. 스튜디오 GLTF 모델이 제공되면 정지 이미지를 대체할 수 있습니다.",
+      "Iron Recruit부터 A.C.E. Legend까지, 디비전과 레이팅 하한이 있는 A.C.E.의 10개 등급.",
   },
   hero: {
     kicker: "캘리브레이션",
     title: "경쟁 랭크",
-    lede: "Recruit부터 A.C.E. Legend까지, 디비전 {divisions}. 각 엠블럼은 CSS 3D 턴테이블 위의 콘셉트 정지 이미지입니다(드래그 또는 방향키로 회전). 나중에 문서화된 슬롯에 GLTF를 넣을 수 있으며, 아직 저장소에는 모델 파일이 없습니다. 레이팅 수치는 로그인하면 실제 계정 값이고, 그렇지 않으면 캘리브레이션 하한값입니다.",
+    lede: "Recruit부터 A.C.E. Legend까지 10개 등급, 각 등급은 디비전 {divisions}을(를) 가집니다. 드래그하거나 화살표 키로 엠블럼을 회전하세요. 로그인하면 내 레이팅이, 아니면 각 등급의 하한이 표시됩니다.",
   },
   codexLink: "캘리브레이션 코덱스 열기",
   document: {
     title: "10티어 캘리브레이션 문서",
-    body: "엔진 이름이 공식 래더입니다. 크리스털 별칭은 로비 아트입니다. 보드의 승률 칩은 쇼케이스 샘플이며 실시간 매치메이킹이 아닙니다. 유료 코스메틱으로는 절대 이 구간 사이를 이동할 수 없습니다.",
+    body: "엔진 이름이 공식 등급 체계입니다. 크리스털 별칭은 로비 아트입니다. 보드의 승률 칩은 랭크 매치메이킹 출시 전까지 쇼케이스 수치입니다. 유료 꾸미기 아이템은 플레이어를 등급 간에 이동시키지 않습니다.",
     level: "레벨 {level} · {crystal}",
     detail: "최소 레이팅 {rating}. 소재 연구: {material}.",
   },
@@ -34,7 +34,7 @@ export const ranks: TextBag["ranks"] = {
     selectEmblem: "A.C.E. {name} 랭크 엠블럼 선택, 레벨 {level}",
     emblemAlt: "A.C.E. 커스텀 3D 크리스털 레벨 {level} {crystal} {name} 엠블럼 프로필 배지",
     emblemAltLegend: "A.C.E. 커스텀 3D 크리스털 레벨 {level} 엠블럼 프로필 배지",
-    premium: "PREMIUM",
+    premium: "최상위 등급",
   },
   division: {
     label: "디비전 {division}",
@@ -46,8 +46,8 @@ export const ranks: TextBag["ranks"] = {
     targetWinRate: "목표 승률 {winRate}",
     calibrationTarget: "캘리브레이션 목표",
     floor: "하한",
-    samplesNote: "레이아웃 샘플입니다. 실시간 텔레메트리가 아닙니다.",
-    progressMockup: "진행도 목업",
+    samplesNote: "등급별 목표 수치.",
+    progressMockup: "진행도",
   },
   turntable: {
     stageLabel: "{name} 궤도 엠블럼. 드래그하여 회전하세요.",

@@ -34,7 +34,7 @@ export const home: TextBag["home"] = {
   charter: {
     kicker: "GŁÓWNA PRZESTRZEŃ POCZEKALNI",
     title: "POCZEKALNIA DOBIERANIA MECZÓW I CENTRUM DYSPOZYTORSKIE A.C.E.",
-    badge: "BRAK SERWERA NA ŻYWO",
+    badge: "SERWERY · WKRÓTCE",
     lede: "Ta poczekalnia nie przydziela serwera, nie uruchamia klienta antycheatu i nie wypłaca nagród.",
     modules: [
       {
@@ -49,7 +49,7 @@ export const home: TextBag["home"] = {
       },
       {
         kicker: "NAGRODY-SKÓRKI",
-        copy: "Karty skórek to przykłady. Żadna broń nie jest dostarczana i żadna nagroda nie jest finansowana.",
+        copy: "Nagrody mistrzowskie są ogłaszane przy każdym wydarzeniu.",
         chips: ["ŻADEN PRZEDMIOT NIE DOSTARCZONY", "BRAK SPRAWDZANIA ZRZUTÓW"],
       },
     ],
@@ -63,27 +63,27 @@ export const home: TextBag["home"] = {
     compareLink: "Zobacz pełną tabelę porównania",
   },
   loot: {
-    exampleCard: "Przykładowa karta · to nie przedmiot Valve",
+    exampleCard: "Wkrótce",
     wear: {
       factoryNew: "Prosto z fabryki",
       minimalWear: "Lekko zużyty",
     },
   },
   serverHub: {
-    badge: "BRAK SERWERÓW GRY NA ŻYWO",
+    badge: "SERWERY GRY · WKRÓTCE",
     nodes: {
       fra: "Węzeł brzegowy Frankfurt",
       sto: "Węzeł główny Sztokholm",
       tlv: "Przekaźnik Tel Awiw",
     },
-    tileAria: "{name}. Kafelek układu. Żaden serwer nie jest połączony.",
-    tileSample: "Próbka układu {sample}. Żaden serwer nie jest połączony.",
-    note: "Te nazwy i próbki opóźnień to układ. Ta strona nie ma serwera gry 128 tick ani węzła regionalnego.",
+    tileAria: "{name}. Serwer wkrótce.",
+    tileSample: "Wkrótce · {sample}",
+    note: "Regionalne serwery 128-tick pojawią się wraz z betą rywalizacji.",
   },
   telemetry: {
-    badge: "TO NIE DZIAŁAJĄCY KLIENT",
+    badge: "PODGLĄD · WKRÓTCE",
     lines: [
-      "JĄDRO AC: NIEPOŁĄCZONE",
+      "A.C.E SHIELD: W PRZYGOTOWANIU",
       "MATRYCA BLOKAD SPRZĘTOWYCH: ŻADEN IDENTYFIKATOR NIE JEST ZBIERANY",
       "ŁĄCZE TARCZY A.C.E.: ŻADEN KLIENT NIE JEST ZAINSTALOWANY",
     ],
@@ -100,18 +100,18 @@ export const home: TextBag["home"] = {
     note: "Tekst kampanii. Kolejki rankingowe, serwery na żywo i nagrody nie są aktywne.",
     hudLeft: "CT — PUNKT A",
     hudRight: "T — NACISK NA ŚRODEK",
-    hudCenter: "ŚRODOWISKO SKŁADU · UKŁAD",
+    hudCenter: "ŚRODOWISKO SKŁADU",
     plannedReason: "Gry rankingowe pozostają zamknięte, dopóki prawdziwa integracja antycheatu nie zostanie wdrożona i zweryfikowana.",
   },
   howStatus: {
     label: "PODSYSTEM REJESTRACJI A.C.E. — SILNIK KALIBRACJI GOTOWY",
-    note: "Widżet statusu układu. Kolejki rankingowe, antycheat i kalibracja na żywo nie są aktywne.",
+    note: "Kolejki rankingowe ruszą, gdy A.C.E Shield i kalibracja zaczną działać.",
   },
   shell: {
     primaryNav: "Nawigacja główna",
     mobileNav: "Nawigacja mobilna",
     elite: "ELITA",
-    notificationsTitle: "Brak kanału powiadomień na żywo",
+    notificationsTitle: "Powiadomienia · wkrótce",
     notificationsAria: "Powiadomienia. Zero nieprzeczytanych.",
     connectProfileTitle: "Połącz profil",
     openProfileAria: "Otwórz profil na pokładzie dowodzenia",

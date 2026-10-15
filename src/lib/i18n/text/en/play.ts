@@ -1,7 +1,7 @@
 ﻿export const play = {
   meta: {
     title: "Play",
-    description: "Ranked 5v5 matchmaking is fail-closed until Anti-Cheat is real.",
+    description: "Ranked 5v5 matchmaking opens once A.C.E Shield anti-cheat is live.",
   },
   boards: {
     label: "Queue boards",
@@ -126,6 +126,6 @@
       "Live telemetry arrives with the competitive beta.",
     ],
     findMatch: "FIND COMPETITIVE MATCH",
-    closedNotice: "This button does not open a server. The ranked queue is closed. Population is 0.",
+    closedNotice: "Matchmaking opens with the competitive beta. Ranked queues are not running yet.",
   },
 } as const;

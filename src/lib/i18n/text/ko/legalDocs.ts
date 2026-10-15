@@ -16,7 +16,7 @@ export const legalDocs: TextBag["legalDocs"] = {
       operator: {
         title: "1. 운영자 및 독립성",
         paragraphs: [
-          "본 서비스는 A.C.E. Competitions Ltd.(법인 등록 임시 ID: 대기)가 운영합니다. 사이트를 이용하는 것은 본 약관, 개인정보 처리방침, 쿠키 정책, 경쟁 규정집에 동의함을 의미합니다.",
+          "이 서비스는 A.C.E. Competitions Ltd.가 운영합니다(사업자 등록번호는 추후 공개 예정). 사이트를 이용하면 본 약관, 개인정보 처리방침, 쿠키 정책 및 대회 규정집에 동의하는 것입니다.",
         ],
       },
       eligibility: {
@@ -28,7 +28,7 @@ export const legalDocs: TextBag["legalDocs"] = {
       notActive: {
         title: "3. 이 웹사이트가 제공하지 않는 것",
         paragraphs: [
-          "랭크 매치메이킹, 실시간 CS2 게임 서버, 작동하는 AI 안티치트, 결제, 상금은 운영되지 않습니다. 로비 시계, 전리품 래더, 무결성 패널은 페이지에 달리 명시되지 않는 한 레이아웃 미리보기입니다.",
+          "랭크 매치메이킹, 실제 CS2 게임 서버, 작동하는 AI Anti-Cheat, 결제 및 상금은 아직 운영되지 않습니다. 로비 시계와 무결성 패널은 페이지에 달리 명시되지 않는 한 미리보기입니다.",
         ],
       },
       subscriptions: {
@@ -59,7 +59,7 @@ export const legalDocs: TextBag["legalDocs"] = {
       contact: {
         title: "8. 문의",
         paragraphs: [
-          "support@ace-platform.gg — A.C.E. Competitions Ltd. — 법인 등록 임시 ID: 대기.",
+          "support@ace-platform.gg — A.C.E. Competitions Ltd. — 사업자 등록번호 추후 공개 예정.",
         ],
       },
     },
@@ -96,7 +96,7 @@ export const legalDocs: TextBag["legalDocs"] = {
         before: "이메일 주소와 암호화된 하드웨어 프로필은",
         strong: "현재 이 웹사이트에서 수집되지 않습니다",
         after:
-          ". 로비의 얼굴 스캔 및 HWID 카드는 레이아웃일 뿐입니다. 향후 안티치트 클라이언트나 지원 채널에 이메일 또는 하드웨어 지문이 필요해지면, 수집은 부정행위 방지 목적으로 한정되고, 먼저 이곳에 고지되며, 광고 데이터로 판매되지 않습니다.",
+          ". 로비의 Face Scan 및 HWID 카드는 디자인 미리보기입니다. 향후 Anti-Cheat 클라이언트나 지원 채널에 이메일 또는 하드웨어 지문이 필요해지면, 수집은 사기 방지로 제한되고 여기에 먼저 공개되며 광고 데이터로 판매되지 않습니다.",
       },
     },
     neverCollect: {
@@ -133,7 +133,7 @@ export const legalDocs: TextBag["legalDocs"] = {
     },
     controller: {
       title: "개인정보 처리자",
-      body: "A.C.E. Competitions Ltd. 법인 등록 임시 ID: 대기. 문의: support@ace-platform.gg.",
+      body: "A.C.E. Competitions Ltd. 사업자 등록번호 추후 공개 예정. 문의: support@ace-platform.gg.",
     },
   },
   cookiePolicy: {

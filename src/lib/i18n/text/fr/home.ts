@@ -34,7 +34,7 @@ export const home: TextBag["home"] = {
   charter: {
     kicker: "ESPACE PRINCIPAL DU LOBBY",
     title: "LOBBY DE MATCHMAKING COMPÉTITIF ET CENTRE DE RÉPARTITION A.C.E.",
-    badge: "AUCUN SERVEUR EN DIRECT",
+    badge: "SERVEURS · BIENTÔT",
     lede: "Ce lobby n'attribue aucun serveur, ne lance aucun client anti-triche et ne verse aucun prix.",
     modules: [
       {
@@ -49,7 +49,7 @@ export const home: TextBag["home"] = {
       },
       {
         kicker: "RÉCOMPENSES DE SKINS",
-        copy: "Les cartes de skins sont des exemples. Aucune arme n'est livrée et aucun prix n'est financé.",
+        copy: "Les récompenses de championnat sont annoncées avec chaque événement.",
         chips: ["AUCUN OBJET LIVRÉ", "AUCUNE VÉRIFICATION DE DROP"],
       },
     ],
@@ -63,27 +63,27 @@ export const home: TextBag["home"] = {
     compareLink: "Voir le tableau comparatif complet",
   },
   loot: {
-    exampleCard: "Carte d'exemple · pas un objet Valve",
+    exampleCard: "Bientôt",
     wear: {
       factoryNew: "Neuve",
       minimalWear: "Très peu usée",
     },
   },
   serverHub: {
-    badge: "AUCUN SERVEUR DE JEU EN DIRECT",
+    badge: "SERVEURS DE JEU · BIENTÔT",
     nodes: {
       fra: "Périphérie de Francfort",
       sto: "Cœur de Stockholm",
       tlv: "Relais de Tel-Aviv",
     },
-    tileAria: "{name}. Tuile de mise en page. Aucun serveur n'est connecté.",
-    tileSample: "Échantillon de mise en page {sample}. Aucun serveur n'est connecté.",
-    note: "Ces noms et échantillons de latence sont une mise en page. Ce site n'a aucun serveur de jeu 128-tick ni aucun nœud régional.",
+    tileAria: "{name}. Serveur bientôt disponible.",
+    tileSample: "Bientôt · {sample}",
+    note: "Les serveurs régionaux 128 ticks arriveront avec la bêta compétitive.",
   },
   telemetry: {
-    badge: "PAS UN CLIENT EN DIRECT",
+    badge: "APERÇU · BIENTÔT",
     lines: [
-      "AC-KERNEL : NON CONNECTÉ",
+      "A.C.E SHIELD : EN DÉVELOPPEMENT",
       "MATRICE DE BAN MATÉRIEL : AUCUN IDENTIFIANT N'EST COLLECTÉ",
       "LIEN BOUCLIER A.C.E. : AUCUN CLIENT N'EST INSTALLÉ",
     ],
@@ -100,18 +100,18 @@ export const home: TextBag["home"] = {
     note: "Texte de campagne. Les files classées, les serveurs en direct et les prix ne sont pas actifs.",
     hudLeft: "CT — ZONE A",
     hudRight: "T — POUSSÉE MID",
-    hudCenter: "ENVIRONNEMENT D'ESCOUADE · MISE EN PAGE",
+    hudCenter: "ENVIRONNEMENT DE L'ESCOUADE",
     plannedReason: "Le jeu classé reste fermé tant qu'une vraie intégration anti-triche n'est pas mise en œuvre et vérifiée.",
   },
   howStatus: {
     label: "SOUS-SYSTÈME D'INSCRIPTION A.C.E. — MOTEUR DE CALIBRAGE PRÊT",
-    note: "Widget d'état de mise en page. Les files classées, l'anti-triche et le calibrage en direct ne sont pas actifs.",
+    note: "Les files classées ouvriront quand A.C.E Shield et la calibration seront actifs.",
   },
   shell: {
     primaryNav: "Principale",
     mobileNav: "Mobile",
     elite: "ÉLITE",
-    notificationsTitle: "Aucun flux de notifications en direct",
+    notificationsTitle: "Notifications · bientôt",
     notificationsAria: "Notifications. Zéro non lue.",
     connectProfileTitle: "Connecter le profil",
     openProfileAria: "Ouvrir le profil du poste de commandement",

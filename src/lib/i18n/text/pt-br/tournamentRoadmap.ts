@@ -21,7 +21,7 @@ export const tournamentRoadmap = {
     {
       title: "Grande final Apex",
       status: "BLOQUEADO",
-      body: "A grande final é melhor de cinco. Nenhum prêmio em dinheiro, skin ou token é financiado.",
+      body: "A grande final é disputada em melhor de cinco. Os prêmios são confirmados na página do evento quando anunciados.",
     },
   ],
 };

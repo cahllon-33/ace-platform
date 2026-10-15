@@ -37,7 +37,7 @@ export const account: TextBag["account"] = {
     },
     settings: {
       title: "הגדרות פרופיל בלוח הבקרה",
-      billingNotLive: "החיוב לא חי. כל החשבונות נשארים בחינם עד שתהיה קופה.",
+      billingNotLive: "החיוב ייפתח בקרוב. עד אז כל החשבונות נשארים בתוכנית החינמית.",
       cancelReason: "אין מנוי בחיוב שאפשר לבטל. הקופה לא מיושמת.",
       cancelButton: "ביטול מנוי",
     },
@@ -72,7 +72,7 @@ export const account: TextBag["account"] = {
       description: "תיק השחקן של A.C.E. סשנים של Plus ו-Premium פותחים גרפי מגמה של טלמטריה.",
     },
     kicker: "זהות השחקן",
-    bannerPlaceholder: "מציין מקום לבאנר Steam · לא אמנות של Valve",
+    bannerPlaceholder: "באנר פרופיל · בקרוב",
     levelBadge: "רמה {level}",
     premiumBadge: "PREMIUM",
     rosterLevel: "רמת סגל {level}.",

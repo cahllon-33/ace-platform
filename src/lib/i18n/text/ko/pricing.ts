@@ -22,7 +22,7 @@ export const pricing: TextBag["pricing"] = {
       points: [
         "Steam OpenID로 로그인합니다. A.C.E.는 Steam 비밀번호를 절대 요구하지 않습니다.",
         "저장된 레이팅은 1,000에서 시작합니다. 어떤 매치 결과도 이 값을 바꾸지 않았습니다.",
-        "공개 페이지는 계속 열려 있습니다: 플레이 레이아웃, 토너먼트, 리더보드, 팀, 규칙.",
+        "모든 공개 페이지: 플레이, 토너먼트, 순위표, 팀, 규칙.",
       ],
     },
     plus: {
@@ -30,9 +30,9 @@ export const pricing: TextBag["pricing"] = {
       note: "Plus",
       title: "감사 편지와 지원 안내",
       points: [
-        "무료와 이용 범위가 같습니다. 결제가 운영 중이 아니므로 이 가격은 청구되지 않습니다.",
+        "무료 플랜의 모든 기능. 결제는 곧 열리며, 현재는 아무것도 청구되지 않습니다.",
         "이 사이트에서 감사 편지가 열립니다: 포함된 것, 포함되지 않은 것, 그리고 support@ace-platform.gg.",
-        "레이팅이나 더 쉬운 상대를 살 수 없습니다. 골드 실은 저장된 티어가 이미 Plus 또는 Premium일 때만 표시됩니다.",
+        "레이팅이나 더 쉬운 상대를 사지 않습니다. 골드 프로필 배지는 모든 플레이어의 저장된 경기 데이터에서 나옵니다. 엘리트 인장과 특별 배지는 저장된 등급이 이미 Premium일 때만 표시됩니다.",
       ],
     },
     premium: {
@@ -57,7 +57,7 @@ export const pricing: TextBag["pricing"] = {
   billing: {
     kicker: "결제 일정 매트릭스",
     title: "결제가 생기면 작동하는 방식",
-    body: "Plus는 정확히 월 {plus}입니다. Premium은 정확히 월 {premium}입니다. 이 웹사이트에서 결제는 운영 중이 아닙니다. Plus 또는 Premium을 선택하면 이 웹사이트에서 영수증이 열립니다. 어느 버튼도 카드에 청구하거나 이메일을 보내지 않습니다.",
+    body: "Plus는 정확히 월 {plus}입니다. Premium은 정확히 월 {premium}입니다. 온라인 결제는 곧 제공됩니다. Plus 또는 Premium을 선택하면 미리보기 영수증이 표시되며, 카드가 청구되거나 이메일이 발송되지 않습니다.",
     display: {
       label: "01 · 표시",
       body: "무료 {free}. Plus 월 {plus}. Premium 월 {premium}. 유료 티어로 레이팅이나 더 쉬운 상대를 살 수 없습니다.",
@@ -73,7 +73,7 @@ export const pricing: TextBag["pricing"] = {
   compare: {
     kicker: "A.C.E.가 오늘 약속할 수 있는 것",
     title: "멤버십 비교",
-    note: "모든 행은 현재 이 웹사이트에서 사실입니다. 표시 가격은 실제 결제가 아니며, 유료 라벨이 대기열을 열지 않습니다.",
+    note: "모든 항목은 현재 사이트 상태를 반영합니다. 결제는 곧 제공되며, 유료 플랜은 대기열을 열거나 유리함을 사 주지 않습니다.",
     caption: "현재 사이트가 실제로 하는 일 기준으로 비교한 무료, Plus, Premium",
     includedToday: "현재 포함",
     columns: {
@@ -84,7 +84,7 @@ export const pricing: TextBag["pricing"] = {
     rows: {
       publicSite: {
         feature: "공개 사이트",
-        detail: "홈, 플레이 레이아웃, 토너먼트, 리더보드, 팀, 규칙, 약관.",
+        detail: "홈, 플레이, 토너먼트, 순위표, 팀, 규칙, 약관.",
       },
       steamSignIn: {
         feature: "Steam 로그인",
@@ -123,9 +123,9 @@ export const pricing: TextBag["pricing"] = {
         detail: "스킨, 나이프, 상금 풀은 지급되지 않습니다.",
       },
       goldEliteSeal: {
-        feature: "골드 엘리트 실",
+        feature: "엘리트 인장 및 특별 배지",
         detail:
-          "저장된 티어가 이미 Plus 또는 Premium일 때만 표시됩니다. 결제가 이 티어를 설정하지 않습니다.",
+          "Premium 전용이며, 서버에 저장된 등급에서 읽어 옵니다. 꾸미기 전용. 결제로 이 등급이 설정되지 않습니다.",
       },
     },
     cells: {
@@ -133,7 +133,7 @@ export const pricing: TextBag["pricing"] = {
       yes: "예",
       noneYet: "아직 없음",
       closed: "닫힘",
-      notConnected: "연결되지 않음",
+      notConnected: "곧 출시",
       notShipped: "제공되지 않음",
       noCharge: "청구 없음",
       notForSale: "판매하지 않음",
@@ -176,14 +176,14 @@ export const pricing: TextBag["pricing"] = {
         "표시 가격: 월 {price}. 이 수치는 라벨일 뿐 청구가 아닙니다.",
         "결제: 없음. 이 플랜을 선택해도 카드 정보를 받지 않습니다.",
         "이메일: 없음. A.C.E.는 이 편지를 받은편지함으로 보내지 않습니다.",
-        "저장된 티어: 변경 없음. 골드 실은 계정에 이미 Plus 또는 Premium이 저장된 경우에만 표시됩니다.",
+        "저장된 등급: 변경 없음. 특별 배지와 엘리트 인장은 계정에 이미 Premium이 저장되어 있을 때만 표시됩니다.",
         "레이팅: 판매하지 않음. 신규 계정은 여전히 1,000에서 시작합니다.",
       ],
     },
     today: {
       title: "오늘 이용할 수 있는 것",
       items: [
-        "공개 사이트: 홈, 플레이 레이아웃, 토너먼트, 리더보드, 팀, 규칙, 약관.",
+        "공개 사이트: 홈, 플레이, 토너먼트, 순위표, 팀, 규칙, 약관.",
         "공식 Steam OpenID를 통한 Steam 로그인. A.C.E.는 Steam 비밀번호를 절대 요구하지 않습니다.",
         "무료와 같은 공개 페이지. 이 가격으로 별도의 대기열이 열리지 않습니다.",
       ],
@@ -193,7 +193,7 @@ export const pricing: TextBag["pricing"] = {
       items: [
         "실시간 랭크 대기열. 매치 찾기는 닫혀 있습니다.",
         "Counter-Strike 2 서버, 서버 주소, 접속 링크.",
-        "안티치트 다운로드. 스쿼드 자리의 배지는 레이아웃 샘플이며 실시간 검사가 아닙니다.",
+        "안티치트 다운로드. A.C.E Shield는 개발 중입니다.",
         "상금, 스킨, 나이프, 상금 풀.",
         "100팀 보드의 자리. 시즌이 열리기 전까지 그 보드는 계속 등록 0으로 표시됩니다.",
         "더 쉬운 상대, 구매한 레이팅, 무료와 다른 공개 사이트.",

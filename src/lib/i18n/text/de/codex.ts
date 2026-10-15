@@ -350,7 +350,7 @@ export const codex: TextBag["codex"] = {
           heading: "Was dargestellt wird",
           paragraphs: [
             "Zwei Seiten mit je fünf Plätzen und eine Kapitänsbezeichnung auf dem ersten Platz. Die Kartenliste und die Chatzeile daneben gehören zum selben Layout.",
-            "Die Sicherheitszeilen auf dieser Seite sind als Layout, Attrappe oder Konzept gekennzeichnet. Sie sind keine laufende Prüfung.",
+            "Die Sicherheitszeilen auf dieser Seite sind mit ihrem Status gekennzeichnet. Keine davon ist bisher eine laufende Prüfung; die Roadmap steht unter /anti-cheat.",
           ],
         },
         {
@@ -390,7 +390,7 @@ export const codex: TextBag["codex"] = {
           heading: "Die schriftlich festgelegte Uhr",
           paragraphs: [
             "Sobald ein Spiel einen veröffentlichten Beginn hat, müssen fünf Stammspieler einer Seite 15 Minuten vor diesem Beginn bereit sein. Dieser Satz steht im Wettkampfkodex. Die Uhr startet auf dieser Website nicht, weil kein Spiel veröffentlicht ist.",
-            "Die Beispielnamen auf der Spielseite sind ein Layout. Sie sind keine Personen, die in einer Warteschlange sitzen.",
+            "Die auf der Spielseite angezeigten Namen sind eine Vorschau. Es sind keine Personen, die in einer Warteschlange sitzen.",
           ],
         },
         {
@@ -403,7 +403,7 @@ export const codex: TextBag["codex"] = {
     },
     "the-captain-on-the-desk": {
       title: "Der Kapitän am Spieltisch",
-      lede: "Ein Kapitän spricht für eine Seite. Auf dem aktuellen Spieltisch ist diese Rolle eine Bezeichnung im Layout, keine laufende Lobby.",
+      lede: "Ein Kapitän spricht für eine Seite. Lobby-Rollen starten mit der Wettkampf-Beta.",
       sections: [
         {
           heading: "Was der Kodex zuweist",
@@ -448,7 +448,7 @@ export const codex: TextBag["codex"] = {
         {
           heading: "Was Sie öffnen können",
           paragraphs: [
-            "Klicken Sie auf einen Clan im Turnierbaum, um seinen Kader zu sehen, und öffnen Sie dann einen Spieler. Platzhalternamen sind Beispiele. Sie sind keine angenommenen Anmeldungen.",
+            "Klicke im Turnierbaum auf einen Clan, um sein Roster zu sehen, und öffne dann einen Spieler. Namen auf freien Plätzen sind Vorschauen, keine angenommenen Anmeldungen.",
             "Der Turnierbaum weist keinen Server zu und sendet keinen Spiel-Link.",
           ],
         },

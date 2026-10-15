@@ -34,7 +34,7 @@ export const home: TextBag["home"] = {
   charter: {
     kicker: "סביבת לובי ראשית",
     title: "לובי השיבוץ התחרותי ומרכז השיגור של A.C.E.",
-    badge: "אין שרת חי",
+    badge: "שרתים · בקרוב",
     lede: "הלובי הזה לא מקצה שרת, לא מפעיל לקוח אנטי-צ'יט ולא משלם פרס.",
     modules: [
       {
@@ -49,7 +49,7 @@ export const home: TextBag["home"] = {
       },
       {
         kicker: "פרסי סקינים",
-        copy: "כרטיסי הסקינים הם דוגמאות. שום נשק לא נמסר ושום פרס לא ממומן.",
+        copy: "פרסי האליפות מוכרזים עם כל אירוע.",
         chips: ["שום פריט לא נמסר", "אין בדיקת הפלה"],
       },
     ],
@@ -63,27 +63,27 @@ export const home: TextBag["home"] = {
     compareLink: "לטבלת ההשוואה המלאה",
   },
   loot: {
-    exampleCard: "כרטיס לדוגמה · לא פריט של Valve",
+    exampleCard: "בקרוב",
     wear: {
       factoryNew: "חדש מהמפעל",
       minimalWear: "בלאי מינימלי",
     },
   },
   serverHub: {
-    badge: "אין שרתי משחק חיים",
+    badge: "שרתי משחק · בקרוב",
     nodes: {
       fra: "קצה פרנקפורט",
       sto: "ליבת סטוקהולם",
       tlv: "ממסר תל אביב",
     },
-    tileAria: "{name}. אריח פריסה. אין שרת מחובר.",
-    tileSample: "דגימת פריסה {sample}. אין שרת מחובר.",
-    note: "השמות ודגימות ההשהיה האלה הם פריסה. לאתר הזה אין שרת משחק 128-tick ואין צומת אזורי.",
+    tileAria: "{name}. השרת יגיע בקרוב.",
+    tileSample: "בקרוב · {sample}",
+    note: "שרתים אזוריים של 128 טיק יגיעו עם הבטא התחרותית.",
   },
   telemetry: {
-    badge: "לא לקוח חי",
+    badge: "תצוגה מקדימה · בקרוב",
     lines: [
-      "AC-KERNEL: לא מחובר",
+      "A.C.E SHIELD: בפיתוח",
       "מטריצת חסימת חומרה: לא נאסף שום מזהה",
       "קישור מגן A.C.E.: לא מותקן שום לקוח",
     ],
@@ -100,18 +100,18 @@ export const home: TextBag["home"] = {
     note: "טקסט קמפיין. תורים מדורגים, שרתים חיים ופרסים אינם פעילים.",
     hudLeft: "CT — אתר A",
     hudRight: "T — דחיפה באמצע",
-    hudCenter: "סביבת הסגל · פריסה",
+    hudCenter: "סביבת הסקווד",
     plannedReason: "המשחק המדורג נשאר סגור עד ששילוב אנטי-צ'יט אמיתי ייושם ויאומת.",
   },
   howStatus: {
     label: "תת-מערכת ההרשמה של A.C.E. — מנוע הכיול מוכן",
-    note: "וידג'ט מצב של פריסה. תורים מדורגים, אנטי-צ'יט וכיול חי אינם פעילים.",
+    note: "תורים מדורגים ייפתחו כש-A.C.E Shield והכיול יופעלו.",
   },
   shell: {
     primaryNav: "ראשי",
     mobileNav: "נייד",
     elite: "עלית",
-    notificationsTitle: "אין פיד התראות חי",
+    notificationsTitle: "התראות · בקרוב",
     notificationsAria: "התראות. אפס שלא נקראו.",
     connectProfileTitle: "חיבור פרופיל",
     openProfileAria: "פתיחת הפרופיל בלוח הפיקוד",

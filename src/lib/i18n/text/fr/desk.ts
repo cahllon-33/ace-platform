@@ -5,18 +5,18 @@ export const desk: TextBag["desk"] = {
     meta: {
       title: "Marché A.C.E.",
       description:
-        "Cartes d'armes données à titre d'exemple de prix. Ce ne sont pas des objets Valve, ni une récompense financée, et le paiement ne débite aucune carte.",
+        "Cartes de récompenses de championnat. La boutique et les récompenses ouvriront bientôt.",
     },
     heroHonesty:
-      "Les cartes d'armes sont des exemples de prix. Ce ne sont pas des objets Valve, elles ne sont dans aucun inventaire, et le paiement sur cette page ne débite aucune carte.",
-    prizeBanner: "🏆 EXEMPLE DE PRIX DE TOURNOI — VITRINE DE RÉCOMPENSES PREMIUM",
+      "Un premier aperçu des prochaines récompenses de championnat. La boutique ouvrira bientôt ; rien n'est débité aujourd'hui.",
+    prizeBanner: "🏆 RÉCOMPENSES DE CHAMPIONNAT · BIENTÔT",
     notice:
-      "Ces vitrines n'ont aucune valeur monétaire. Aucun skin n'est livré, aucun prix n'est financé, et le bouton d'inspection ne lance aucun achat.",
+      "Ces vitrines sont des aperçus sans valeur monétaire. Rien n'est livré ni facturé, et le bouton d'inspection ne lance aucun achat.",
     items: {
       lore: {
         name: "Butterfly Knife | Lore",
         tag: "★ DROPS SECRETS DU CLASSEMENT",
-        price: "Exemple uniquement · aucune valeur monétaire",
+        price: "Bientôt",
       },
       jungle: {
         name: "M4A1-S | Welcome to the Jungle",
@@ -49,14 +49,14 @@ export const desk: TextBag["desk"] = {
     meta: {
       title: "Assistance",
       description:
-        "Maquette du centre d'aide A.C.E. Les guichets anti-triche, files classées et facturation ne sont pas en ligne. Les invites de ticket ne créent aucun dossier.",
+        "Centre d'aide A.C.E. Le support anti-triche, classé et facturation ouvrira avec la bêta compétitive.",
     },
   },
   contact: {
     meta: {
       title: "Contact",
       description:
-        "Terminal de contact d'entreprise A.C.E. Les envois du formulaire sont des maquettes d'essai : ils n'envoient pas d'e-mail et n'enregistrent aucune télémétrie.",
+        "Contacter A.C.E. Le formulaire en ligne ouvrira bientôt.",
     },
   },
   contactEmail: {

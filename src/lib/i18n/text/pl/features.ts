@@ -19,7 +19,7 @@ export const features: TextBag["features"] = {
         "Planowane warstwy jądra obejmują uzgadnianie w trybie użytkownika, które wiąże zweryfikowany 64-bitowy SteamID z kontem A.C.E., powierzchnię poświadczania identyfikatora sprzętu (HWID), listę obserwowanych sygnatur znanych rodzin cheatów oraz trasę uprawnień serwer–serwer chronioną wspólnym sekretem. Potwierdzona sygnatura cheatu, odmowa kontroli integralności lub podrobiony identyfikator urządzenia mają zgodnie ze specyfikacją powodować natychmiastową zmianę statusu konta na BANNED lub PERM_BANNED oraz, gdy powstanie produkt rozliczeniowy, całkowity przepadek opłaconego z góry czasu subskrypcji bez żadnego obowiązku zwrotu. Żaden taki klient nie jest dostarczany z tą stroną. Karty pobierania «Wkrótce» to tylko układ.",
       ],
       stats: [
-        { label: "STAN JĄDRA", value: "Niewdrożone" },
+        { label: "STAN JĄDRA", value: "W przygotowaniu" },
         { label: "KOLEJKA RANKINGOWA", value: "Domyślnie zamknięta" },
         { label: "MAGAZYN HWID", value: "Niezbierane na tej stronie" },
       ],
@@ -28,7 +28,7 @@ export const features: TextBag["features"] = {
       title: "Biometryczne powiązanie skanu twarzy",
       paragraphs: [
         "Skan twarzy to wyspecyfikowana przyszła warstwa wiązania tożsamości, a nie produkt z kamerą na tej stronie. Planowany projekt — wyłącznie po wyraźnej zgodzie i osobnej analizie prawnej — wiązałby szablon twarzy sprawdzony testem żywotności z tym samym kontem A.C.E., które ma już zweryfikowany przez serwer SteamID. Celem jest przeciwdziałanie udostępnianiu kont w celu obejścia wcześniejszego ograniczenia. A.C.E. nie zbiera dziś zdjęć twarzy, wektorów cech twarzy, adresów e-mail ani odcisków sprzętu. Obecna zasada prywatności to ścisła niezbędność: wyłącznie zweryfikowany 64-bitowy SteamID i publiczna nazwa wyświetlana Steam.",
-        "Jeśli skan twarzy kiedykolwiek zostanie wdrożony, nie zastąpi Steam OpenID, nie będzie używany do sprzedaży reklamy behawioralnej i sam nie odblokuje kolejek rankingowych. Wstęp do gier rankingowych nadal wymaga zweryfikowanej ścieżki antycheatu. Dopóki taka analiza nie powstanie, każdy panel skanu twarzy w poczekalni to wypełniacz układu.",
+        "Jeśli Face Scan kiedykolwiek powstanie, nie zastąpi Steam OpenID, nie będzie służył do sprzedaży reklam behawioralnych i sam nie odblokuje kolejek rankingowych. Dostęp do gier rankingowych nadal wymaga zweryfikowanej ścieżki Anti-Cheat. Dopóki taka weryfikacja nie powstanie, każdy panel Face Scan w lobby jest podglądem projektu.",
       ],
     },
     calibration: {
@@ -50,18 +50,18 @@ export const features: TextBag["features"] = {
     },
   },
   loot: {
-    kicker: "Kosmetyki piaskownicy · płatność symulowana",
+    kicker: "Kosmetyki · wkrótce",
     title: "ARCHITEKTURA ŁUPÓW A.C.E. — ZRZUTY BRONI",
-    lede: "Oryginalne nazwy wykończeń A.C.E. na typach broni z CS2. To nie są przedmioty Valve, nie są wymienialnymi skórkami i nie są prawdziwymi nagrodami. Płatności są symulowane.",
-    mockDrop: "Pokazowy zrzut",
+    lede: "Oryginalne wykończenia A.C.E., dostępne wraz ze sklepem. Kosmetyki nigdy nie wpływają na rywalizację.",
+    mockDrop: "Wkrótce",
     multiplierLabel: "Wymagania mnożnika procentu wygranych",
     ladderLabel: "Cotygodniowe zrzuty z drabinki",
     multiplierValue: "Szablon {multiplier}×",
-    ladderValue: "Cotygodniowe miejsce · makieta",
-    checkout: "Płatność symulowana",
+    ladderValue: "Tygodniowe miejsce · wkrótce",
+    checkout: "Płatność · wkrótce",
   },
   communityRail: {
-    kicker: "Kanał układu · nie na żywo",
+    kicker: "Aktualności · wkrótce",
     newsTitle: "Najnowsze wieści z drabinki",
     newsItems: [
       "Pole drabinki pozostaje puste — 0 ze 100 drużyn.",
@@ -69,29 +69,29 @@ export const features: TextBag["features"] = {
     ],
     prizesTitle: "Codzienne nagrody-skórki",
     prizesBody:
-      "Żadne nagrody nie są przyznawane. Karty kosmetyków na tej stronie to makiety piaskownicy. Płatności są symulowane.",
+      "Nagrody i płatności ruszą wraz z 1. sezonem.",
   },
   identityPreview: {
     badge: "Podgląd — niepotwierdzone",
     cards: {
       faceScan: {
         title: "Skan twarzy na żywo potwierdzony",
-        copy: "Test żywotności tożsamości to planowana kontrola dostawcy. Ta karta to podgląd układu. Nie wykonano żadnego skanu i nie są przechowywane żadne dane biometryczne.",
+        copy: "Wykrywanie żywotności to planowana weryfikacja u dostawcy. Dziś nie zbieramy danych biometrycznych.",
       },
       hardwareId: {
         title: "Identyfikator sprzętu powiązany",
-        copy: "Powiązanie urządzenia to planowany sygnał integralności. Ta karta to podgląd układu. Nie zebrano żadnego odcisku sprzętu.",
+        copy: "Powiązanie urządzenia to planowany sygnał uczciwości. Dziś nie zbieramy identyfikatorów sprzętu.",
       },
     },
   },
   preview: {
     fallbackTitle: "Podgląd",
-    kicker: "Miejsce docelowe układu · to nie działający produkt",
+    kicker: "Wkrótce",
     returnHome: "Wróć na stronę główną",
     pages: {
       support: {
         title: "Pomoc",
-        body: "Publiczne biuro pomocy nie ma jeszcze obsługi. Ten link to wypełniacz miejsca docelowego w stopce.",
+        body: "Nasze publiczne wsparcie ruszy wraz z betą rywalizacji.",
       },
       "anti-cheat": {
         title: "Przegląd antycheatu",
@@ -103,11 +103,11 @@ export const features: TextBag["features"] = {
       },
       "mobile-app": {
         title: "Aplikacja mobilna",
-        body: "Nie ma aplikacji mobilnej A.C.E. To tylko link układu w stopce.",
+        body: "Aplikacja mobilna A.C.E. jest w planach rozwoju.",
       },
       news: {
         title: "Aktualności",
-        body: "Nie ma działającej redakcji. To tylko link układu w stopce.",
+        body: "Biuro prasowe A.C.E. ruszy wkrótce.",
       },
       about: {
         title: "O nas",
@@ -115,7 +115,7 @@ export const features: TextBag["features"] = {
       },
       advertising: {
         title: "Reklama",
-        body: "Nie ma powierzchni reklamowej na sprzedaż. To tylko link układu w stopce.",
+        body: "Zapytania o partnerstwa i reklamę wkrótce.",
       },
       developers: {
         title: "Deweloperzy",
@@ -123,11 +123,11 @@ export const features: TextBag["features"] = {
       },
       press: {
         title: "Prasa",
-        body: "Nie ma zestawu prasowego ani redakcji. To tylko link układu w stopce.",
+        body: "Zestaw prasowy pojawi się wkrótce.",
       },
       jobs: {
         title: "Praca",
-        body: "Nie ma opublikowanych ofert pracy. To tylko link układu w stopce.",
+        body: "Oferty pracy pojawią się tutaj.",
       },
       terms: {
         title: "Warunki korzystania z usługi",

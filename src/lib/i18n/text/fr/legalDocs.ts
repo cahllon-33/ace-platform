@@ -16,7 +16,7 @@ export const legalDocs: TextBag["legalDocs"] = {
       operator: {
         title: "1. Exploitant et indépendance",
         paragraphs: [
-          "Le service est exploité par A.C.E. Competitions Ltd. (identifiant provisoire au registre des sociétés : en attente). En utilisant le site, vous acceptez les présentes Conditions, la Politique de confidentialité, la Politique de cookies et le Règlement compétitif.",
+          "Le service est exploité par A.C.E. Competitions Ltd. (numéro d'immatriculation de la société à publier). En utilisant le site, vous acceptez les présentes Conditions, la Politique de confidentialité, la Politique relative aux cookies et le Règlement de compétition.",
         ],
       },
       eligibility: {
@@ -28,7 +28,7 @@ export const legalDocs: TextBag["legalDocs"] = {
       notActive: {
         title: "3. Ce que ce site n’est pas",
         paragraphs: [
-          "Le matchmaking classé, les serveurs de jeu CS2 en direct, un anti-triche par IA fonctionnel, la facturation et les prix ne sont pas actifs. Les horloges de lobby, les échelles de butin et les panneaux d’intégrité sont des aperçus de mise en page, sauf indication contraire sur la page concernée.",
+          "Le matchmaking classé, des serveurs CS2 en fonctionnement, un AI Anti-Cheat opérationnel, la facturation et les prix ne sont pas actifs. Les horloges du lobby et les panneaux d'intégrité sont des aperçus, sauf indication contraire sur la page.",
         ],
       },
       subscriptions: {
@@ -59,7 +59,7 @@ export const legalDocs: TextBag["legalDocs"] = {
       contact: {
         title: "8. Contact",
         paragraphs: [
-          "support@ace-platform.gg — A.C.E. Competitions Ltd. — Identifiant provisoire au registre des sociétés : en attente.",
+          "support@ace-platform.gg — A.C.E. Competitions Ltd. — Numéro d'immatriculation de la société à publier.",
         ],
       },
     },
@@ -96,7 +96,7 @@ export const legalDocs: TextBag["legalDocs"] = {
         before: "Les adresses e-mail et les profils matériels chiffrés",
         strong: "ne sont pas collectés sur ce site aujourd’hui",
         after:
-          ". Les cartes de scan facial et HWID du lobby ne sont qu’une mise en page. Si un futur client anti-triche ou canal d’assistance nécessite une adresse e-mail ou une empreinte matérielle, la collecte restera limitée à la prévention de la fraude, sera d’abord annoncée ici et ne sera pas vendue comme donnée publicitaire.",
+          ". Les cartes Face Scan et HWID du lobby sont des aperçus de design. Si un futur client Anti-Cheat ou canal de support exige un e-mail ou une empreinte matérielle, la collecte restera limitée à la prévention de la fraude, sera d'abord annoncée ici et ne sera pas vendue comme données publicitaires.",
       },
     },
     neverCollect: {
@@ -133,7 +133,7 @@ export const legalDocs: TextBag["legalDocs"] = {
     },
     controller: {
       title: "Responsable du traitement",
-      body: "A.C.E. Competitions Ltd. Identifiant provisoire au registre des sociétés : en attente. Contact : support@ace-platform.gg.",
+      body: "A.C.E. Competitions Ltd. Numéro d'immatriculation de la société à publier. Contact : support@ace-platform.gg.",
     },
   },
   cookiePolicy: {

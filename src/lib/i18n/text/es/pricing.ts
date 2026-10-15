@@ -22,7 +22,7 @@ export const pricing: TextBag["pricing"] = {
       points: [
         "Inicia sesión con Steam OpenID. A.C.E. nunca pide una contraseña de Steam.",
         "Una puntuación guardada empieza en 1,000. Ningún resultado de partida la ha cambiado.",
-        "Las páginas públicas siguen abiertas: diseño de juego, torneos, clasificación, equipos y reglas.",
+        "Todas las páginas públicas: jugar, torneos, clasificación, equipos y reglas.",
       ],
     },
     plus: {
@@ -30,9 +30,9 @@ export const pricing: TextBag["pricing"] = {
       note: "Plus",
       title: "Carta de agradecimiento y soporte",
       points: [
-        "El mismo acceso que Gratis. El pago no está activo, así que este precio no se cobra.",
+        "Todo lo de Gratis. La facturación abrirá pronto; hoy no se cobra nada.",
         "Abre una carta de agradecimiento en este sitio: qué incluye, qué no incluye y support@ace-platform.gg.",
-        "No compra puntuación ni rivales más fáciles. El sello dorado solo aparece cuando el nivel guardado ya es Plus o Premium.",
+        "No compra puntuación ni rivales más fáciles. Las insignias doradas del perfil salen de los datos de partida guardados de cada jugador. El sello élite y las insignias especiales solo aparecen si el nivel guardado ya es Premium.",
       ],
     },
     premium: {
@@ -57,7 +57,7 @@ export const pricing: TextBag["pricing"] = {
   billing: {
     kicker: "MATRIZ DEL CALENDARIO DE FACTURACIÓN",
     title: "Cómo funcionará la facturación cuando exista",
-    body: "Plus cuesta exactamente {plus}/mes. Premium cuesta exactamente {premium}/mes. El pago no está activo en este sitio web. Elegir Plus o Premium abre el recibo en este sitio web. Ningún botón cobra una tarjeta ni envía correo.",
+    body: "Plus cuesta exactamente {plus}/mes. Premium cuesta exactamente {premium}/mes. El pago en línea llegará pronto. Al elegir Plus o Premium se muestra un recibo de vista previa; no se cobra ninguna tarjeta ni se envía ningún correo.",
     display: {
       label: "01 · PANTALLA",
       body: "Gratis {free}. Plus {plus}/mes. Premium {premium}/mes. Los niveles de pago nunca compran puntuación ni rivales más fáciles.",
@@ -73,7 +73,7 @@ export const pricing: TextBag["pricing"] = {
   compare: {
     kicker: "Lo que A.C.E. puede prometer hoy",
     title: "Comparación de membresías",
-    note: "Cada fila es cierta hoy en este sitio web. Los precios de pantalla no son un pago en vivo, y una etiqueta de pago no abre una cola.",
+    note: "Cada fila refleja el estado actual del sitio. El pago llegará pronto, y un plan de pago nunca abre una cola ni compra ventaja.",
     caption: "Gratis, Plus y Premium comparados según lo que hace el sitio hoy",
     includedToday: "Incluido hoy",
     columns: {
@@ -84,7 +84,7 @@ export const pricing: TextBag["pricing"] = {
     rows: {
       publicSite: {
         feature: "Sitio público",
-        detail: "Inicio, diseño de juego, torneos, clasificación, equipos, reglas y términos.",
+        detail: "Inicio, jugar, torneos, clasificación, equipos, reglas y términos.",
       },
       steamSignIn: {
         feature: "Inicio de sesión con Steam",
@@ -123,9 +123,9 @@ export const pricing: TextBag["pricing"] = {
         detail: "No se entrega ningún skin, cuchillo ni pozo de premios.",
       },
       goldEliteSeal: {
-        feature: "Sello dorado de élite",
+        feature: "Sello élite e insignias especiales",
         detail:
-          "Solo se muestra cuando el nivel guardado ya es Plus o Premium. El pago no establece ese nivel.",
+          "Solo Premium, leído del nivel guardado en el servidor. Cosmético. El pago no establece ese nivel.",
       },
     },
     cells: {
@@ -133,7 +133,7 @@ export const pricing: TextBag["pricing"] = {
       yes: "Sí",
       noneYet: "Aún ninguno",
       closed: "Cerrada",
-      notConnected: "No conectados",
+      notConnected: "Próximamente",
       notShipped: "No disponible",
       noCharge: "Sin cargo",
       notForSale: "No está en venta",
@@ -176,14 +176,14 @@ export const pricing: TextBag["pricing"] = {
         "Precio de pantalla: {price} al mes. La cifra es una etiqueta, no un cargo.",
         "Pago: ninguno. Elegir este plan no cobra ninguna tarjeta.",
         "Correo: ninguno. A.C.E. no envía esta carta a ninguna bandeja de entrada.",
-        "Nivel guardado: sin cambios. El sello dorado solo aparece cuando la cuenta ya guarda Plus o Premium.",
+        "Nivel guardado: sin cambios. Las insignias especiales y el sello élite solo aparecen si la cuenta ya tiene Premium guardado.",
         "Puntuación: no está en venta. Una cuenta nueva sigue empezando en 1,000.",
       ],
     },
     today: {
       title: "Lo que puedes usar hoy",
       items: [
-        "El sitio público: inicio, diseño de juego, torneos, clasificación, equipos, reglas y términos.",
+        "El sitio público: inicio, jugar, torneos, clasificación, equipos, reglas y términos.",
         "Inicio de sesión con Steam mediante el Steam OpenID oficial. A.C.E. nunca pide una contraseña de Steam.",
         "Las mismas páginas públicas que Gratis. Este precio no abre una cola aparte.",
       ],
@@ -193,7 +193,7 @@ export const pricing: TextBag["pricing"] = {
       items: [
         "Una cola clasificatoria en vivo. BUSCAR PARTIDA sigue cerrado.",
         "Un servidor de Counter-Strike 2, una dirección de servidor ni un enlace de conexión.",
-        "Una descarga de anticheat. Una insignia en una plaza de escuadra es una muestra de diseño, no una comprobación en vivo.",
+        "Una descarga anti-cheat. A.C.E Shield está en desarrollo.",
         "Un premio, un skin, un cuchillo ni un pozo de premios.",
         "Una plaza en el cuadro de 100 equipos. Ese cuadro sigue mostrando 0 inscritos hasta que se abra una temporada.",
         "Rivales más fáciles, una puntuación comprada ni un sitio público distinto al de Gratis.",

@@ -34,7 +34,7 @@ export const home: TextBag["home"] = {
   charter: {
     kicker: "마스터 로비 작업 공간",
     title: "A.C.E. 경쟁 매치메이킹 로비 및 배정 센터",
-    badge: "실시간 서버 없음",
+    badge: "서버 · 곧 출시",
     lede: "이 로비는 서버를 배정하지 않고, 안티치트 클라이언트를 시작하지 않으며, 상금을 지급하지 않습니다.",
     modules: [
       {
@@ -49,7 +49,7 @@ export const home: TextBag["home"] = {
       },
       {
         kicker: "스킨 보상",
-        copy: "스킨 카드는 예시입니다. 지급되는 무기는 없으며 재원이 마련된 상금도 없습니다.",
+        copy: "챔피언십 보상은 대회마다 발표됩니다.",
         chips: ["지급되는 아이템 없음", "드롭 검사 없음"],
       },
     ],
@@ -63,27 +63,27 @@ export const home: TextBag["home"] = {
     compareLink: "전체 비교표 보기",
   },
   loot: {
-    exampleCard: "예시 카드 · Valve 아이템 아님",
+    exampleCard: "곧 출시",
     wear: {
       factoryNew: "공장 출고",
       minimalWear: "약간의 사용감",
     },
   },
   serverHub: {
-    badge: "실시간 게임 서버 없음",
+    badge: "게임 서버 · 곧 출시",
     nodes: {
       fra: "프랑크푸르트 엣지",
       sto: "스톡홀름 코어",
       tlv: "텔아비브 릴레이",
     },
-    tileAria: "{name}. 레이아웃 타일입니다. 연결된 서버가 없습니다.",
-    tileSample: "레이아웃 샘플 {sample}. 연결된 서버가 없습니다.",
-    note: "이 이름과 지연 시간 샘플은 레이아웃입니다. 이 웹사이트에는 128틱 게임 서버도 지역 노드도 없습니다.",
+    tileAria: "{name}. 서버 곧 출시.",
+    tileSample: "곧 출시 · {sample}",
+    note: "128틱 지역 서버는 경쟁 베타와 함께 제공됩니다.",
   },
   telemetry: {
-    badge: "실제 클라이언트 아님",
+    badge: "미리보기 · 곧 출시",
     lines: [
-      "AC-KERNEL: 연결되지 않음",
+      "A.C.E SHIELD: 개발 중",
       "하드웨어 차단 매트릭스: 식별자를 수집하지 않음",
       "A.C.E. 실드 링크: 설치된 클라이언트 없음",
     ],
@@ -100,18 +100,18 @@ export const home: TextBag["home"] = {
     note: "캠페인 문구입니다. 랭크 대기열, 실시간 서버, 상금은 작동하지 않습니다.",
     hudLeft: "CT — A 사이트",
     hudRight: "T — 미드 압박",
-    hudCenter: "스쿼드 환경 · 레이아웃",
+    hudCenter: "스쿼드 환경",
     plannedReason: "실제 안티치트 연동이 구현되고 검증되기 전까지 랭크 플레이는 닫혀 있습니다.",
   },
   howStatus: {
     label: "A.C.E. 등록 하위 시스템 — 캘리브레이션 엔진 준비됨",
-    note: "레이아웃 상태 위젯입니다. 랭크 대기열, 안티치트, 실시간 캘리브레이션은 작동하지 않습니다.",
+    note: "랭크 대기열은 A.C.E Shield와 캘리브레이션이 가동되면 열립니다.",
   },
   shell: {
     primaryNav: "주 메뉴",
     mobileNav: "모바일 메뉴",
     elite: "엘리트",
-    notificationsTitle: "실시간 알림 피드 없음",
+    notificationsTitle: "알림 · 곧 출시",
     notificationsAria: "알림. 읽지 않은 알림 0건.",
     connectProfileTitle: "프로필 연결",
     openProfileAria: "커맨드 덱 프로필 열기",

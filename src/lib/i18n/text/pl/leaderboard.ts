@@ -9,7 +9,7 @@ export const leaderboard: TextBag["leaderboard"] = {
   hero: {
     kicker: "TABELA",
     title: "Tabela turniejowa",
-    note: "Pokazowe miejsca wypełniają tę tabelę, dopóki nie zostanie zapisane konto Steam. Zapisana ocena je zastępuje. Kraj i główna broń to próbki. Rendery broni to oryginalne obrazy studia A.C.E., a nie skórki Valve. Ta strona nie zapisuje zabójstw, więc pokazana broń nie jest zarejestrowaną bronią z największą liczbą fragów.",
+    note: "Dopóki gracze nie połączą konta Steam i nie zdobędą rankingu, tablicę wypełniają miejsca prezentacyjne. Ich kraj i wyróżniona broń mają charakter poglądowy. Rendery broni to oryginalne grafiki studia A.C.E., nie skórki Valve. Zabójstwa nie są jeszcze rejestrowane, więc wyróżniona broń nie jest statystyką najlepszego fragera.",
   },
   facts: {
     seats: "Miejsca",
@@ -33,10 +33,10 @@ export const leaderboard: TextBag["leaderboard"] = {
     showcase: "Witryna",
   },
   weapon: {
-    sampleRender: "Przykładowy render",
+    sampleRender: "Broń firmowa",
     notStored: "Nie zapisano",
     noKillSaved: "Nie zapisano żadnego zabójstwa",
-    alt: "Przykładowy render: {name}",
+    alt: "{name}",
   },
   countries: {
     il: "Izrael",
@@ -57,17 +57,17 @@ export const leaderboard: TextBag["leaderboard"] = {
     placeholder: "Nazwa wyświetlana",
   },
   seasonPreview: {
-    banner: "DRABINKA SEZONU 1 — UKŁAD",
+    banner: "RANKING SEZONU 1",
     noteLive:
-      "Nazwy powiązane ze Steam to zapisane konta. Puste miejsca pozostają oznaczone jako «witryna». K/D nie jest zapisywane, więc ten wskaźnik to tylko układ.",
+      "Nazwy połączone ze Steam to konta A.C.E. K/D pojawi się, gdy serwery meczowe zaczną rejestrować zabójstwa.",
     noteSample:
-      "Próbka układu. 0 żywych wyników rankingowych. Te liczby nie są wynikiem sezonu, a K/D nie jest zapisywane.",
+      "Wyniki sezonu 1 pojawią się tutaj wraz z rozgrywaniem meczów rankingowych.",
   },
   playerCard: {
-    kicker: "Podgląd karty uwierzytelnionego gracza · liczby z makiety",
+    kicker: "Podgląd karty gracza",
     title: "Dossier operatora",
     badge: "Premium",
-    note: "Tylko układ. Te liczby nie są żywym sezonem, żywym Elo ani zalogowanym kontem. Dobieranie rankingowe nie jest aktywne.",
+    note: "Twoja karta wypełni się prawdziwymi danymi po uruchomieniu matchmakingu rankingowego.",
     currentRank: "Obecna ranga",
     rankValue: "A.C.E. Legend (Dywizja I)",
     competitiveRating: "Ocena turniejowa",

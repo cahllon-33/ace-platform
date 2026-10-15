@@ -4,17 +4,17 @@ export const ranks: TextBag["ranks"] = {
   meta: {
     title: "Ranks competitivos",
     description:
-      "Dez ranks A.C.E. em um giratório 3D de CSS que gira ao arrastar. Modelos GLTF do estúdio podem substituir as imagens fixas quando forem entregues.",
+      "As dez patentes A.C.E., de Iron Recruit a A.C.E. Legend, com divisões e pisos de classificação.",
   },
   hero: {
     kicker: "CALIBRAÇÃO",
     title: "Ranks competitivos",
-    lede: "De Recruit até A.C.E. Legend, divisões {divisions}. Cada emblema é uma imagem conceitual em um giratório 3D de CSS (arraste ou use as setas do teclado). Um GLTF poderá ser colocado depois no espaço documentado — ainda não há arquivos de modelo no repositório. O rating mostrado é o da sua conta real quando você está conectado; caso contrário, é o piso de calibração.",
+    lede: "Dez patamares de Recruit a A.C.E. Legend, cada um com as divisões {divisions}. Arraste ou use as setas para girar um emblema. Conectado, você vê sua própria classificação; senão, o piso de cada patamar.",
   },
   codexLink: "Abrir o Códice de Calibração",
   document: {
     title: "Documento de calibração em dez patentes",
-    body: "Os nomes do motor formam a escada oficial. Os apelidos de cristal são arte do lobby. As fichas de taxa de vitórias no quadro são amostras de vitrine, não pareamento ao vivo. Cosméticos pagos nunca movem um jogador entre esses patamares.",
+    body: "Os nomes do motor são a escada oficial. Os apelidos de cristal são arte do lobby. As taxas de vitória no quadro são números de vitrine até o lançamento do matchmaking ranqueado. Cosméticos pagos nunca movem um jogador entre esses patamares.",
     level: "NÍVEL {level} · {crystal}",
     detail: "Rating mínimo {rating}. Estudo de material: {material}.",
   },
@@ -34,7 +34,7 @@ export const ranks: TextBag["ranks"] = {
     selectEmblem: "Selecionar o emblema do rank A.C.E. {name}, nível {level}",
     emblemAlt: "Emblema de perfil cristalino 3D personalizado A.C.E., nível {level}, {crystal}, {name}",
     emblemAltLegend: "Emblema de perfil cristalino 3D personalizado A.C.E., nível {level}",
-    premium: "PREMIUM",
+    premium: "PATAMAR MÁXIMO",
   },
   division: {
     label: "Divisão {division}",
@@ -46,8 +46,8 @@ export const ranks: TextBag["ranks"] = {
     targetWinRate: "Meta de {winRate} de vitórias",
     calibrationTarget: "Meta de calibração",
     floor: "Piso",
-    samplesNote: "Amostras de layout. Não é telemetria ao vivo.",
-    progressMockup: "Simulação de progresso",
+    samplesNote: "Metas de cada patamar.",
+    progressMockup: "Progresso",
   },
   turntable: {
     stageLabel: "Emblema orbital {name}. Arraste para girar.",

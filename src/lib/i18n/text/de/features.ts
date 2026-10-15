@@ -19,7 +19,7 @@ export const features: TextBag["features"] = {
         "Geplante Kernschichten umfassen einen Handshake im Benutzermodus, der die geprüfte 64-Bit-SteamID an das A.C.E.-Konto bindet, eine Bestätigungsfläche für die Hardware-Kennung (HWID), eine Signatur-Beobachtungsliste für bekannte Cheat-Familien und einen Server-zu-Server-Zulassungsweg, der durch ein gemeinsames Geheimnis geschützt ist. Eine bestätigte Cheat-Signatur, eine verweigerte Integritätsprüfung oder eine gefälschte Gerätekennung soll laut Spezifikation sofort den Kontostatus auf BANNED oder PERM_BANNED ändern und, sobald ein abgerechnetes Produkt besteht, zum vollständigen Verfall bereits bezahlter Abonnementzeit ohne jede Erstattungspflicht führen. Mit dieser Website wird kein solcher Client ausgeliefert. Download-Karten mit «Demnächst» sind nur Layout.",
       ],
       stats: [
-        { label: "KERNSTATUS", value: "Nicht ausgerollt" },
+        { label: "KERNEL-STATUS", value: "In Entwicklung" },
         { label: "RANGLISTE-WARTESCHLANGE", value: "Ausfallsicher geschlossen" },
         { label: "HWID-SPEICHER", value: "Auf dieser Website nicht erfasst" },
       ],
@@ -28,7 +28,7 @@ export const features: TextBag["features"] = {
       title: "Biometrische Gesichtsscan-Verknüpfung",
       paragraphs: [
         "Der Gesichtsscan ist eine spezifizierte künftige Schicht zur Identitätsbindung, kein Kameraprodukt auf dieser Website. Der geplante Entwurf würde erst nach ausdrücklicher Einwilligung und einer gesonderten rechtlichen Prüfung eine auf Lebendigkeit geprüfte Gesichtsvorlage an dasselbe A.C.E.-Konto binden, das bereits eine vom Server geprüfte SteamID enthält. Der Zweck ist, Kontoteilung zur Umgehung einer früheren Einschränkung zu erschweren. A.C.E. erfasst heute keine Gesichtsbilder, keine Gesichts-Embeddings, keine E-Mail-Adressen und keine Hardware-Fingerabdrücke. Die laufende Datenschutzhaltung bleibt strikte Notwendigkeit: nur die geprüfte 64-Bit-SteamID und der öffentliche Steam-Anzeigename.",
-        "Falls der Gesichtsscan je umgesetzt wird, ersetzt er Steam OpenID nicht, wird nicht zum Verkauf verhaltensbasierter Werbung genutzt und schaltet Rangliste-Warteschlangen nicht allein frei. Die Ranglisten-Zulassung verlangt weiterhin einen geprüften Anti-Cheat-Weg. Bis diese Prüfung besteht, ist jede Gesichtsscan-Tafel im Warteraum ein Layout-Platzhalter.",
+        "Falls Face Scan jemals umgesetzt wird, ersetzt es nicht Steam OpenID, wird nicht zum Verkauf verhaltensbasierter Werbung genutzt und schaltet Ranglisten-Warteschlangen nicht von sich aus frei. Für die Zulassung zu Ranglistenspielen bleibt ein verifizierter Anti-Cheat-Weg erforderlich. Bis diese Prüfung vorliegt, ist jedes Face-Scan-Panel in der Lobby eine Designvorschau.",
       ],
     },
     calibration: {
@@ -50,18 +50,18 @@ export const features: TextBag["features"] = {
     },
   },
   loot: {
-    kicker: "Sandkasten-Kosmetik · Kasse simuliert",
+    kicker: "Kosmetik · demnächst",
     title: "A.C.E.-BEUTEARCHITEKTUR — WAFFENFUNDE",
-    lede: "Eigene A.C.E.-Lackierungsnamen auf CS2-Waffentypen. Das sind keine Gegenstände von Valve, keine handelbaren Skins und keine echten Preise. Die Kasse ist simuliert.",
-    mockDrop: "Scheinfund",
+    lede: "Originale A.C.E.-Finishes, die mit dem Shop kommen. Kosmetik beeinflusst nie den Wettkampf.",
+    mockDrop: "Demnächst",
     multiplierLabel: "Anforderungen an den Siegquoten-Multiplikator",
     ladderLabel: "Wöchentliche Leiterfunde",
     multiplierValue: "{multiplier}× Vorlage",
-    ladderValue: "Wöchentlicher Platz · Muster",
-    checkout: "Kasse simuliert",
+    ladderValue: "Wochenplatz · demnächst",
+    checkout: "Checkout · demnächst",
   },
   communityRail: {
-    kicker: "Layout-Feed · nicht live",
+    kicker: "Feed · demnächst",
     newsTitle: "Neueste Ranglisten-Nachrichten",
     newsItems: [
       "Das Turnierfeld bleibt leer — 0 von 100 Mannschaften.",
@@ -69,29 +69,29 @@ export const features: TextBag["features"] = {
     ],
     prizesTitle: "Tägliche Skin-Preise",
     prizesBody:
-      "Es werden keine Preise vergeben. Kosmetikkarten auf dieser Website sind Sandkasten-Attrappen. Die Kasse ist simuliert.",
+      "Belohnungen und Checkout starten mit Season 1.",
   },
   identityPreview: {
     badge: "Vorschau — nicht bestätigt",
     cards: {
       faceScan: {
         title: "Live-Gesichtsscan bestätigt",
-        copy: "Die Lebendigkeitsprüfung der Identität ist eine geplante Anbieterprüfung. Diese Karte ist eine Layout-Vorschau. Es wurde kein Scan durchgeführt, und es werden keine biometrischen Daten gespeichert.",
+        copy: "Die Lebenderkennung ist eine geplante Anbieterprüfung. Heute werden keine biometrischen Daten erhoben.",
       },
       hardwareId: {
         title: "Hardware-ID verknüpft",
-        copy: "Die Gerätebindung ist ein geplantes Integritätssignal. Diese Karte ist eine Layout-Vorschau. Es wurde kein Hardware-Fingerabdruck erfasst.",
+        copy: "Die Gerätebindung ist ein geplantes Integritätssignal. Heute werden keine Hardwarekennungen erhoben.",
       },
     },
   },
   preview: {
     fallbackTitle: "Vorschau",
-    kicker: "Layout-Ziel · kein laufendes Produkt",
+    kicker: "Demnächst",
     returnHome: "Zurück zum Start",
     pages: {
       support: {
         title: "Hilfe",
-        body: "Ein öffentlicher Hilfeschalter ist noch nicht besetzt. Dieser Link ist ein Platzhalter-Ziel in der Fußzeile.",
+        body: "Unser öffentlicher Support startet mit der Wettkampf-Beta.",
       },
       "anti-cheat": {
         title: "Anti-Cheat-Überblick",
@@ -103,11 +103,11 @@ export const features: TextBag["features"] = {
       },
       "mobile-app": {
         title: "App für Mobilgeräte",
-        body: "Es gibt keine mobile A.C.E.-App. Dies ist nur ein Layout-Link in der Fußzeile.",
+        body: "Die A.C.E.-App ist auf der Roadmap.",
       },
       news: {
         title: "Nachrichten",
-        body: "Es gibt keine laufende Nachrichtenredaktion. Dies ist nur ein Layout-Link in der Fußzeile.",
+        body: "Der A.C.E.-Newsroom öffnet bald.",
       },
       about: {
         title: "Über uns",
@@ -115,7 +115,7 @@ export const features: TextBag["features"] = {
       },
       advertising: {
         title: "Werbung",
-        body: "Es werden keine Werbeflächen verkauft. Dies ist nur ein Layout-Link in der Fußzeile.",
+        body: "Anfragen zu Partnerschaften und Werbung sind bald möglich.",
       },
       developers: {
         title: "Entwickler",
@@ -123,11 +123,11 @@ export const features: TextBag["features"] = {
       },
       press: {
         title: "Presse",
-        body: "Es gibt weder Pressemappe noch Nachrichtenredaktion. Dies ist nur ein Layout-Link in der Fußzeile.",
+        body: "Das Pressekit folgt in Kürze.",
       },
       jobs: {
         title: "Jobs",
-        body: "Es sind keine Stellenangebote veröffentlicht. Dies ist nur ein Layout-Link in der Fußzeile.",
+        body: "Offene Stellen werden hier veröffentlicht.",
       },
       terms: {
         title: "Nutzungsbedingungen",

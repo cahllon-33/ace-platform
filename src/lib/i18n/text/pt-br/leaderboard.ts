@@ -9,7 +9,7 @@ export const leaderboard: TextBag["leaderboard"] = {
   hero: {
     kicker: "CLASSIFICAÇÃO",
     title: "Tabela competitiva",
-    note: "Vagas de vitrine preenchem esta tabela até que uma conta Steam seja salva. Um rating salvo as substitui. País e arma principal são amostras. As imagens das armas são renders originais do estúdio A.C.E., não skins da Valve. Este site não armazena abates, então a arma não é a arma com mais abates registrada.",
+    note: "Até que os jogadores vinculem a Steam e conquistem uma classificação, o quadro mostra vagas de vitrine. O país e a arma em destaque são ilustrativos. As imagens das armas são arte original do estúdio A.C.E., não skins da Valve. As eliminações ainda não são registradas, então a arma em destaque não é uma estatística de top fragger.",
   },
   facts: {
     seats: "Vagas",
@@ -33,10 +33,10 @@ export const leaderboard: TextBag["leaderboard"] = {
     showcase: "Vitrine",
   },
   weapon: {
-    sampleRender: "Render de amostra",
+    sampleRender: "Arma assinatura",
     notStored: "Não salvo",
     noKillSaved: "Nenhum abate salvo",
-    alt: "Render de amostra de {name}",
+    alt: "{name}",
   },
   countries: {
     il: "Israel",
@@ -57,17 +57,17 @@ export const leaderboard: TextBag["leaderboard"] = {
     placeholder: "Nome de exibição",
   },
   seasonPreview: {
-    banner: "ESCADA DA TEMPORADA 1 — LAYOUT",
+    banner: "RANKING DA TEMPORADA 1",
     noteLive:
-      "Os nomes vinculados à Steam são contas salvas. As vagas vazias continuam marcadas como vitrine. O K/D não é armazenado, então esse medidor é apenas layout.",
+      "Nomes vinculados à Steam são contas A.C.E. O K/D aparece quando os servidores de partida registrarem abates.",
     noteSample:
-      "Amostra de layout. 0 registros ranqueados ao vivo. Estes números não são resultado de temporada, e o K/D não é armazenado.",
+      "Os resultados da Temporada 1 aparecem aqui conforme as partidas ranqueadas forem jogadas.",
   },
   playerCard: {
-    kicker: "Prévia do cartão autenticado · números simulados",
+    kicker: "Prévia do card de jogador",
     title: "Dossiê do operador",
     badge: "Premium",
-    note: "Apenas layout. Estes números não são de uma temporada ao vivo, de um Elo ao vivo nem de uma conta conectada. O pareamento ranqueado não está ativo.",
+    note: "Seu card será preenchido com números reais quando o matchmaking ranqueado abrir.",
     currentRank: "Rank atual",
     rankValue: "A.C.E. Legend (Divisão I)",
     competitiveRating: "Rating competitivo",

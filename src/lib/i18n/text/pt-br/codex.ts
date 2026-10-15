@@ -350,7 +350,7 @@ export const codex: TextBag["codex"] = {
           heading: "O que é desenhado",
           paragraphs: [
             "Dois lados, cinco vagas cada, e um rótulo de capitão na primeira vaga. A lista de mapas e a linha de chat ao lado fazem parte do mesmo layout.",
-            "As linhas de segurança dessa página estão marcadas como layout, simulação ou conceito. Não são uma verificação em funcionamento.",
+            "As linhas de segurança dessa página indicam o respectivo status. Nenhuma delas é ainda uma verificação ativa; veja o roteiro em /anti-cheat.",
           ],
         },
         {
@@ -390,7 +390,7 @@ export const codex: TextBag["codex"] = {
           heading: "O relógio escrito",
           paragraphs: [
             "Quando uma partida tiver um início publicado, os cinco titulares de um lado devem estar presentes 15 minutos antes desse início. Essa frase está no código de competição. O relógio não começa neste site, porque nenhuma partida está publicada.",
-            "Os nomes de exemplo na página de jogo são um layout. Não são pessoas esperando em uma fila.",
+            "Os nomes exibidos na página de jogo são uma prévia. Não são pessoas esperando na fila.",
           ],
         },
         {
@@ -403,7 +403,7 @@ export const codex: TextBag["codex"] = {
     },
     "the-captain-on-the-desk": {
       title: "O capitão na central",
-      lede: "Um capitão fala por um lado. Na central atual, essa função é um rótulo no layout, não um lobby ao vivo.",
+      lede: "Um capitão fala por cada lado. As funções do lobby entram em operação com a beta competitiva.",
       sections: [
         {
           heading: "O que o código atribui",
@@ -448,7 +448,7 @@ export const codex: TextBag["codex"] = {
         {
           heading: "O que você pode abrir",
           paragraphs: [
-            "Clique em um clã na chave para ver o elenco e depois abra um jogador. Os nomes provisórios são exemplos. Não são inscrições aceitas.",
+            "Clique em um clã da chave para ver o elenco e depois abra um jogador. Nomes em vagas livres são prévias, não inscrições aceitas.",
             "A chave não prepara um servidor e não envia um link de partida.",
           ],
         },

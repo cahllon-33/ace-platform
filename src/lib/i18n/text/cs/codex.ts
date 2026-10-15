@@ -350,7 +350,7 @@ export const codex: TextBag["codex"] = {
           heading: "Co je vykresleno",
           paragraphs: [
             "Dvě strany, každá s pěti místy, a štítek kapitána na prvním místě. Seznam map a řádek chatu vedle nich jsou součástí stejného rozvržení.",
-            "Bezpečnostní řádky na této stránce jsou označeny jako rozvržení, maketa nebo koncept. Nejde o probíhající kontrolu.",
+            "Bezpečnostní řádky na této stránce jsou označeny svým stavem. Žádný z nich zatím není funkční kontrolou; plán vývoje najdete na /anti-cheat.",
           ],
         },
         {
@@ -390,7 +390,7 @@ export const codex: TextBag["codex"] = {
           heading: "Psaná časomíra",
           paragraphs: [
             "Jakmile má zápas zveřejněný začátek, pět základních hráčů každé strany musí být připraveno 15 minut před tímto začátkem. Tato věta je v soutěžním řádu. Časomíra se na tomto webu nespouští, protože žádný zápas není zveřejněn.",
-            "Ukázková jména na stránce hraní jsou rozvržení. Nejsou to lidé čekající ve frontě.",
+            "Jména zobrazená na stránce hry jsou náhled. Nejsou to lidé čekající ve frontě.",
           ],
         },
         {
@@ -403,7 +403,7 @@ export const codex: TextBag["codex"] = {
     },
     "the-captain-on-the-desk": {
       title: "Kapitán u pultu",
-      lede: "Za stranu jedná jeden kapitán. Na současném pultu je tato role štítkem v rozvržení, ne živou lobby.",
+      lede: "Za každou stranu mluví jeden kapitán. Role v lobby se spustí se soutěžní betou.",
       sections: [
         {
           heading: "Co řád přiděluje",
@@ -448,7 +448,7 @@ export const codex: TextBag["codex"] = {
         {
           heading: "Co můžete otevřít",
           paragraphs: [
-            "Klikněte na klan v pavouku, abyste si přečetli jeho soupisku, a poté otevřete hráče. Zástupná jména jsou ukázky. Nejsou to přijaté přihlášky.",
+            "Klikni na klan v pavouku a zobraz jeho soupisku, pak otevři hráče. Jména na volných místech jsou náhledy, ne přijaté přihlášky.",
             "Pavouk nenasazuje server a neposílá odkaz na zápas.",
           ],
         },

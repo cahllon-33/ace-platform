@@ -19,7 +19,7 @@ export const features: TextBag["features"] = {
         "As camadas previstas do kernel incluem um aperto de mão em modo usuário que vincula o SteamID de 64 bits verificado à conta A.C.E., uma superfície de atestação do identificador de hardware (HWID), uma lista de assinaturas de famílias de cheats conhecidas e uma rota de elegibilidade servidor a servidor protegida por um segredo compartilhado. Uma validação de assinatura de cheat, uma verificação de integridade recusada ou um identificador de dispositivo falsificado está especificado para produzir uma mudança imediata do status da conta para BANNED ou PERM_BANNED e, quando existir um produto cobrado, a perda total do tempo de assinatura pré-pago, sem nenhuma obrigação de reembolso. Nenhum cliente assim é entregue com este site. Os cartões de download Em breve são apenas layout.",
       ],
       stats: [
-        { label: "ESTADO DO KERNEL", value: "Não implantado" },
+        { label: "ESTADO DO KERNEL", value: "Em desenvolvimento" },
         { label: "FILA RANQUEADA", value: "Fechada em caso de falha" },
         { label: "ARMAZENAMENTO DE HWID", value: "Não coletado neste site" },
       ],
@@ -28,7 +28,7 @@ export const features: TextBag["features"] = {
       title: "Vínculo biométrico por Face Scan",
       paragraphs: [
         "O Face Scan é uma camada futura especificada de vínculo de identidade, não um produto de câmera neste site. O projeto previsto, somente após consentimento explícito e uma revisão jurídica separada, vincularia um modelo facial com prova de vida à mesma conta A.C.E. que já tem um SteamID verificado pelo servidor. O objetivo é impedir o compartilhamento de contas usado para fugir de uma restrição anterior. A A.C.E. não coleta imagens faciais, representações faciais, endereços de e-mail nem impressões de hardware hoje. A postura de privacidade atual continua sendo a Estrita Necessidade: apenas o SteamID de 64 bits verificado e o nome de exibição público da Steam.",
-        "Se o Face Scan algum dia for implementado, ele não vai substituir o Steam OpenID, não será usado para vender publicidade comportamental e não vai liberar filas ranqueadas sozinho. A admissão ranqueada continua exigindo um caminho de Anti-Cheat verificado. Até essa revisão existir, qualquer painel de Face Scan no lobby é um marcador de layout.",
+        "Se o Face Scan algum dia for implementado, ele não substituirá o Steam OpenID, não será usado para vender publicidade comportamental e não liberará filas ranqueadas sozinho. A entrada nas ranqueadas continuará exigindo um caminho de Anti-Cheat verificado. Até essa revisão existir, qualquer painel de Face Scan no lobby é uma prévia de design.",
       ],
     },
     calibration: {
@@ -50,18 +50,18 @@ export const features: TextBag["features"] = {
     },
   },
   loot: {
-    kicker: "Cosméticos de teste · pagamento simulado",
+    kicker: "Cosméticos · em breve",
     title: "ARQUITETURA DE RECOMPENSAS A.C.E. — DROPS DE ARMAS",
-    lede: "Nomes de acabamento originais da A.C.E. em tipos de armas do CS2. Não são itens da Valve, não são skins trocáveis e não são prêmios reais. Os pagamentos são simulados.",
-    mockDrop: "Drop simulado",
+    lede: "Acabamentos originais A.C.E., que chegam com a loja. Cosméticos nunca afetam a competição.",
+    mockDrop: "Em breve",
     multiplierLabel: "Requisitos do multiplicador de taxa de vitórias",
     ladderLabel: "Drops semanais da escada",
     multiplierValue: "Modelo {multiplier}×",
-    ladderValue: "Vaga semanal · simulada",
-    checkout: "Pagamento simulado",
+    ladderValue: "Vaga semanal · em breve",
+    checkout: "Pagamento · em breve",
   },
   communityRail: {
-    kicker: "Feed de layout · não é ao vivo",
+    kicker: "Feed · em breve",
     newsTitle: "Últimas notícias da escada",
     newsItems: [
       "A chave continua vazia — 0 de 100 equipes.",
@@ -69,29 +69,29 @@ export const features: TextBag["features"] = {
     ],
     prizesTitle: "Prêmios diários de skins",
     prizesBody:
-      "Nenhum prêmio é distribuído. Os cartões de cosméticos neste site são simulações de teste. Os pagamentos são simulados.",
+      "Recompensas e pagamento abrem com a Temporada 1.",
   },
   identityPreview: {
     badge: "Prévia — não confirmado",
     cards: {
       faceScan: {
         title: "Face Scan ao vivo verificado",
-        copy: "A prova de vida da identidade é uma verificação planejada por um provedor. Este cartão é uma prévia de layout. Nenhuma varredura foi realizada e nenhum dado biométrico é armazenado.",
+        copy: "A prova de vida é uma verificação de provedor planejada. Nenhum dado biométrico é coletado hoje.",
       },
       hardwareId: {
         title: "ID de hardware vinculado",
-        copy: "O vínculo do dispositivo é um sinal de integridade planejado. Este cartão é uma prévia de layout. Nenhuma impressão de hardware foi coletada.",
+        copy: "O vínculo de dispositivo é um sinal de integridade planejado. Nenhum identificador de hardware é coletado hoje.",
       },
     },
   },
   preview: {
     fallbackTitle: "Prévia",
-    kicker: "Destino de layout · não é um produto ao vivo",
+    kicker: "Em breve",
     returnHome: "Voltar ao início",
     pages: {
       support: {
         title: "Suporte",
-        body: "Ainda não há uma central de suporte pública com atendimento. Este link é um destino provisório do rodapé.",
+        body: "Nosso suporte público abre com a beta competitiva.",
       },
       "anti-cheat": {
         title: "Visão geral do Anti-Cheat",
@@ -103,11 +103,11 @@ export const features: TextBag["features"] = {
       },
       "mobile-app": {
         title: "Aplicativo móvel",
-        body: "Não existe aplicativo móvel da A.C.E. Este é apenas um link de layout do rodapé.",
+        body: "O app móvel da A.C.E. está no roteiro.",
       },
       news: {
         title: "Notícias",
-        body: "Não há redação de notícias ao vivo. Este é apenas um link de layout do rodapé.",
+        body: "A sala de imprensa da A.C.E. abre em breve.",
       },
       about: {
         title: "Sobre nós",
@@ -115,7 +115,7 @@ export const features: TextBag["features"] = {
       },
       advertising: {
         title: "Publicidade",
-        body: "Não há espaço publicitário à venda. Este é apenas um link de layout do rodapé.",
+        body: "Contatos sobre parcerias e publicidade abrem em breve.",
       },
       developers: {
         title: "Desenvolvedores",
@@ -123,11 +123,11 @@ export const features: TextBag["features"] = {
       },
       press: {
         title: "Imprensa",
-        body: "Não há kit de imprensa nem sala de imprensa. Este é apenas um link de layout do rodapé.",
+        body: "O kit de imprensa chega em breve.",
       },
       jobs: {
         title: "Vagas",
-        body: "Não há vagas de emprego publicadas. Este é apenas um link de layout do rodapé.",
+        body: "As vagas abertas serão listadas aqui.",
       },
       terms: {
         title: "Termos de Serviço",

@@ -16,7 +16,7 @@ export const legalDocs: TextBag["legalDocs"] = {
       operator: {
         title: "1. Provozovatel a nezávislost",
         paragraphs: [
-          "Službu provozuje společnost A.C.E. Competitions Ltd. (zástupné ID v obchodním rejstříku: čeká na přidělení). Používáním webu přijímáte tyto podmínky, Zásady ochrany soukromí, Zásady souborů cookie a Soutěžní řád.",
+          "Službu provozuje společnost A.C.E. Competitions Ltd. (registrační číslo společnosti bude zveřejněno). Používáním webu přijímáte tyto Podmínky, Zásady ochrany osobních údajů, Zásady cookies a Soutěžní řád.",
         ],
       },
       eligibility: {
@@ -28,7 +28,7 @@ export const legalDocs: TextBag["legalDocs"] = {
       notActive: {
         title: "3. Čím tento web není",
         paragraphs: [
-          "Rankingové párování, živé herní servery CS2, funkční AI anti-cheat, vyúčtování ani ceny nejsou aktivní. Hodiny v lobby, žebříčky odměn a panely integrity jsou náhledy rozvržení, pokud stránka neuvádí jinak.",
+          "Hodnocený matchmaking, běžící herní servery CS2, funkční AI Anti-Cheat, platby ani ceny nejsou aktivní. Hodiny v lobby a panely integrity jsou náhledy, pokud stránka neuvádí jinak.",
         ],
       },
       subscriptions: {
@@ -59,7 +59,7 @@ export const legalDocs: TextBag["legalDocs"] = {
       contact: {
         title: "8. Kontakt",
         paragraphs: [
-          "support@ace-platform.gg — A.C.E. Competitions Ltd. — zástupné ID v obchodním rejstříku: čeká na přidělení.",
+          "support@ace-platform.gg — A.C.E. Competitions Ltd. — Registrační číslo společnosti bude zveřejněno.",
         ],
       },
     },
@@ -96,7 +96,7 @@ export const legalDocs: TextBag["legalDocs"] = {
         before: "E-mailové adresy a šifrované hardwarové profily",
         strong: "se na tomto webu v současnosti neshromažďují",
         after:
-          ". Karty se skenem obličeje a HWID v lobby jsou pouze rozvržení. Pokud by budoucí klient anti-cheatu nebo kanál podpory vyžadoval e-mail nebo hardwarový otisk, shromažďování zůstane omezeno na prevenci podvodů, bude nejprve zveřejněno zde a nebude prodáváno jako reklamní data.",
+          ". Karty Face Scan a HWID v lobby jsou náhledy designu. Pokud budoucí klient Anti-Cheat nebo kanál podpory bude vyžadovat e-mail nebo hardwarový otisk, sběr se omezí na prevenci podvodů, bude zde nejprve zveřejněn a nebude prodáván jako reklamní data.",
       },
     },
     neverCollect: {
@@ -133,7 +133,7 @@ export const legalDocs: TextBag["legalDocs"] = {
     },
     controller: {
       title: "Správce údajů",
-      body: "A.C.E. Competitions Ltd. Zástupné ID v obchodním rejstříku: čeká na přidělení. Kontakt: support@ace-platform.gg.",
+      body: "A.C.E. Competitions Ltd. Registrační číslo společnosti bude zveřejněno. Kontakt: support@ace-platform.gg.",
     },
   },
   cookiePolicy: {

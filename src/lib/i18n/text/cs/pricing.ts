@@ -22,7 +22,7 @@ export const pricing: TextBag["pricing"] = {
       points: [
         "Přihlášení přes Steam OpenID. A.C.E. nikdy nežádá heslo ke službě Steam.",
         "Uložené hodnocení začíná na 1 000. Žádný výsledek zápasu ho zatím nezměnil.",
-        "Veřejné stránky zůstávají otevřené: rozvržení hry, turnaje, žebříček, týmy a pravidla.",
+        "Všechny veřejné stránky: hra, turnaje, žebříček, týmy a pravidla.",
       ],
     },
     plus: {
@@ -30,9 +30,9 @@ export const pricing: TextBag["pricing"] = {
       note: "Plus",
       title: "Děkovný dopis a podpora",
       points: [
-        "Stejný přístup jako u tarifu zdarma. Pokladna není v provozu, takže se tato cena neúčtuje.",
+        "Vše z plánu Zdarma. Platby budou brzy spuštěny; dnes se nic neúčtuje.",
         "Otevře na tomto webu děkovný dopis: co je zahrnuto, co není, a kontakt support@ace-platform.gg.",
-        "Nekupuje hodnocení ani snadnější soupeře. Zlatá pečeť se zobrazí jen tehdy, když je uložený tarif už Plus nebo Premium.",
+        "Nekupuje hodnocení ani slabší soupeře. Zlaté odznaky profilu vycházejí z uložených zápasových dat každého hráče. Elitní pečeť a speciální odznaky se zobrazí, jen když je uložená úroveň již Premium.",
       ],
     },
     premium: {
@@ -57,7 +57,7 @@ export const pricing: TextBag["pricing"] = {
   billing: {
     kicker: "MATICE ČASOVÉ OSY VYÚČTOVÁNÍ",
     title: "Jak bude vyúčtování fungovat, až bude existovat",
-    body: "Plus stojí přesně {plus}/měs. Premium stojí přesně {premium}/měs. Pokladna na tomto webu není v provozu. Volba Plus nebo Premium otevře potvrzení na tomto webu. Žádné z tlačítek nestrhává platbu z karty ani neodesílá e-mail.",
+    body: "Plus stojí přesně {plus}/měs. Premium stojí přesně {premium}/měs. Online platba bude brzy k dispozici. Výběr Plus nebo Premium zobrazí ukázkovou účtenku; žádná karta se nezatíží a žádný e-mail se neodešle.",
     display: {
       label: "01 · ZOBRAZENÍ",
       body: "Zdarma {free}. Plus {plus}/měs. Premium {premium}/měs. Placené tarify nikdy nekupují hodnocení ani snadnější soupeře.",
@@ -73,7 +73,7 @@ export const pricing: TextBag["pricing"] = {
   compare: {
     kicker: "Co může A.C.E. slíbit už dnes",
     title: "Srovnání členství",
-    note: "Každý řádek na tomto webu teď platí. Zobrazené ceny nejsou živou pokladnou a placený štítek neotevírá frontu.",
+    note: "Každý řádek odpovídá dnešnímu stavu webu. Platba bude brzy k dispozici a placený plán nikdy neotevírá frontu ani nekupuje výhodu.",
     caption: "Srovnání tarifů Zdarma, Plus a Premium podle toho, co web dělá dnes",
     includedToday: "Zahrnuto dnes",
     columns: {
@@ -84,7 +84,7 @@ export const pricing: TextBag["pricing"] = {
     rows: {
       publicSite: {
         feature: "Veřejný web",
-        detail: "Domů, rozvržení hry, turnaje, žebříček, týmy, pravidla a podmínky.",
+        detail: "Domů, hra, turnaje, žebříček, týmy, pravidla a podmínky.",
       },
       steamSignIn: {
         feature: "Přihlášení přes Steam",
@@ -123,9 +123,9 @@ export const pricing: TextBag["pricing"] = {
         detail: "Nedoručuje se žádný skin, nůž ani fond cen.",
       },
       goldEliteSeal: {
-        feature: "Zlatá elitní pečeť",
+        feature: "Elitní pečeť a speciální odznaky",
         detail:
-          "Zobrazí se jen tehdy, když je uložený tarif už Plus nebo Premium. Pokladna tento tarif nenastavuje.",
+          "Pouze Premium, načteno z úrovně uložené na serveru. Kosmetické. Platba tuto úroveň nenastavuje.",
       },
     },
     cells: {
@@ -133,7 +133,7 @@ export const pricing: TextBag["pricing"] = {
       yes: "Ano",
       noneYet: "Zatím žádné",
       closed: "Zavřeno",
-      notConnected: "Nepřipojeno",
+      notConnected: "Již brzy",
       notShipped: "Nedodáno",
       noCharge: "Bez platby",
       notForSale: "Není na prodej",
@@ -176,14 +176,14 @@ export const pricing: TextBag["pricing"] = {
         "Zobrazená cena: {price} měsíčně. Částka je štítek, ne platba.",
         "Platba: žádná. Volba tohoto tarifu nestrhává platbu z karty.",
         "E-mail: žádný. A.C.E. tento dopis neodesílá do schránky.",
-        "Uložený tarif: beze změny. Zlatá pečeť se zobrazí jen tehdy, když účet už má uložený Plus nebo Premium.",
+        "Uložená úroveň: beze změny. Speciální odznaky a elitní pečeť se zobrazí, jen když má účet již uloženo Premium.",
         "Hodnocení: není na prodej. Nový účet stále začíná na 1 000.",
       ],
     },
     today: {
       title: "Co můžete používat už dnes",
       items: [
-        "Veřejný web: domů, rozvržení hry, turnaje, žebříček, týmy, pravidla a podmínky.",
+        "Veřejný web: domů, hra, turnaje, žebříček, týmy, pravidla a podmínky.",
         "Přihlášení přes Steam pomocí oficiálního Steam OpenID. A.C.E. nikdy nežádá heslo ke službě Steam.",
         "Stejné veřejné stránky jako u tarifu zdarma. Tato cena neotevírá samostatnou frontu.",
       ],
@@ -193,7 +193,7 @@ export const pricing: TextBag["pricing"] = {
       items: [
         "Živou rankingovou frontu. NAJÍT ZÁPAS zůstává zavřené.",
         "Server Counter-Strike 2, adresu serveru ani odkaz pro připojení.",
-        "Stažení anti-cheatu. Odznak u místa v týmu je ukázka rozvržení, ne živá kontrola.",
+        "Stažení anti-cheatu. A.C.E Shield je ve vývoji.",
         "Cenu, skin, nůž ani fond cen.",
         "Místo na tabuli 100 týmů. Tato tabule ukazuje 0 registrovaných, dokud se neotevře sezóna.",
         "Snadnější soupeře, koupené hodnocení ani jiný veřejný web než u tarifu zdarma.",

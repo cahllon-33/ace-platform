@@ -37,7 +37,7 @@ export const account: TextBag["account"] = {
     },
     settings: {
       title: "PROFIL DES PARAMÈTRES DU TABLEAU DE BORD",
-      billingNotLive: "La facturation n'est pas en ligne. Tous les comptes restent GRATUITS tant que le paiement n'existe pas.",
+      billingNotLive: "La facturation ouvrira bientôt. D'ici là, tous les comptes restent en Gratuit.",
       cancelReason: "Aucun abonnement facturé n'existe à résilier. Le paiement n'est pas implémenté.",
       cancelButton: "Résilier l'abonnement",
     },
@@ -72,7 +72,7 @@ export const account: TextBag["account"] = {
       description: "Dossier de joueur A.C.E. Les sessions Plus et Premium débloquent les graphiques de tendance de télémétrie.",
     },
     kicker: "Identité du joueur",
-    bannerPlaceholder: "Emplacement de bannière Steam · pas une illustration Valve",
+    bannerPlaceholder: "Bannière de profil · bientôt",
     levelBadge: "NIVEAU {level}",
     premiumBadge: "PREMIUM",
     rosterLevel: "Niveau dans l'effectif : {level}.",

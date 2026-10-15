@@ -123,7 +123,7 @@ export const UI_PT: Ui = {
       "repeat": "Reincidência",
       "rule": "Regra"
     },
-    "englishNote": "O texto das cláusulas é apresentado em inglês; a versão inglesa é a que prevalece.",
+    "englishNote": "",
     "sections": [
       "Âmbito e definições",
       "Elegibilidade",

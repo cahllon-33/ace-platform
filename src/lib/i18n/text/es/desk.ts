@@ -5,18 +5,18 @@ export const desk: TextBag["desk"] = {
     meta: {
       title: "Mercado A.C.E.",
       description:
-        "Tarjetas de armas de ejemplo de premio. No son objetos de Valve, no son una recompensa financiada y el pago no cobra ninguna tarjeta.",
+        "Tarjetas de recompensas del campeonato. La tienda y las recompensas abrirán pronto.",
     },
     heroHonesty:
-      "Las tarjetas de armas son ejemplos de premios. No son objetos de Valve, no están en ningún inventario y el pago en esta página no cobra ninguna tarjeta.",
-    prizeBanner: "🏆 EJEMPLO DE PREMIO DE TORNEO — MUESTRA DE RECOMPENSAS PREMIUM",
+      "Un primer vistazo a las próximas recompensas del campeonato. La tienda abrirá pronto; hoy no se cobra nada.",
+    prizeBanner: "🏆 RECOMPENSAS DEL CAMPEONATO · PRÓXIMAMENTE",
     notice:
-      "Estas muestras no tienen valor en efectivo. No se entrega ningún skin, no se financia ningún premio y el botón de inspeccionar no inicia ninguna compra.",
+      "Estas vitrinas son vistas previas sin valor monetario. No se entrega ni se cobra nada, y el botón de inspeccionar no inicia ninguna compra.",
     items: {
       lore: {
         name: "Butterfly Knife | Lore",
         tag: "★ BOTINES ENCUBIERTOS DE LA CLASIFICACIÓN",
-        price: "Solo ejemplo · sin valor en efectivo",
+        price: "Próximamente",
       },
       jungle: {
         name: "M4A1-S | Welcome to the Jungle",
@@ -49,14 +49,14 @@ export const desk: TextBag["desk"] = {
     meta: {
       title: "Soporte",
       description:
-        "Diseño del centro de ayuda de A.C.E. El anticheat, las colas clasificatorias y los servicios de facturación no están en vivo. Los avisos de ticket no crean casos.",
+        "Centro de ayuda de A.C.E. El soporte de anti-cheat, clasificatorias y facturación abrirá con la beta competitiva.",
     },
   },
   contact: {
     meta: {
       title: "Contacto",
       description:
-        "Terminal de contacto corporativo de A.C.E. Los envíos del formulario son maquetas de prueba y no envían correo ni guardan telemetría.",
+        "Contacta con A.C.E. El formulario en línea abrirá pronto.",
     },
   },
   contactEmail: {

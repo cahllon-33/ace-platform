@@ -19,7 +19,7 @@ export const features: TextBag["features"] = {
         "계획된 커널 계층에는 검증된 64비트 SteamID를 A.C.E. 계정에 묶는 사용자 모드 핸드셰이크, 하드웨어 식별자(HWID) 증명 영역, 알려진 치트 계열에 대한 서명 감시 목록, 공유 비밀키로 보호되는 서버 간 자격 확인 경로가 포함됩니다. 치트 서명 검증, 거부된 무결성 검사, 또는 위조된 기기 식별자는 즉시 계정 상태를 BANNED 또는 PERM_BANNED로 바꾸도록 명시되어 있으며, 결제 상품이 존재하는 경우 선결제된 구독 기간 전체를 몰수하고 환불 책임은 지지 않습니다. 이 웹사이트와 함께 제공되는 그런 클라이언트는 없습니다. 곧 제공 다운로드 카드는 레이아웃일 뿐입니다.",
       ],
       stats: [
-        { label: "커널 상태", value: "배포되지 않음" },
+        { label: "커널 상태", value: "개발 중" },
         { label: "랭크 대기열", value: "실패 시 닫힘" },
         { label: "HWID 저장", value: "이 사이트에서 수집하지 않음" },
       ],
@@ -28,7 +28,7 @@ export const features: TextBag["features"] = {
       title: "생체 얼굴 스캔 연동",
       paragraphs: [
         "얼굴 스캔은 명세된 향후 신원 연결 계층이며, 이 웹사이트의 카메라 제품이 아닙니다. 계획된 설계는 명시적 동의와 별도의 법률 검토를 거친 후에만, 라이브니스 검사를 거친 얼굴 템플릿을 서버에서 검증된 SteamID를 이미 보유한 같은 A.C.E. 계정에 연결합니다. 목적은 이전 제재를 피하기 위한 계정 공유를 막는 것입니다. A.C.E.는 현재 얼굴 이미지, 얼굴 임베딩, 이메일 주소, 하드웨어 지문을 수집하지 않습니다. 실제 개인정보 처리 원칙은 여전히 엄격한 필요성 원칙이며, 검증된 64비트 SteamID와 공개 Steam 표시 이름만 처리합니다.",
-        "얼굴 스캔이 언젠가 구현되더라도 Steam OpenID를 대체하지 않고, 행동 기반 광고 판매에 사용되지 않으며, 그것만으로 랭크 대기열을 열지 않습니다. 랭크 입장에는 여전히 검증된 안티치트 경로가 필요합니다. 그 검토가 이루어지기 전까지 로비의 얼굴 스캔 패널은 레이아웃 자리표시입니다.",
+        "Face Scan이 언젠가 구현되더라도 Steam OpenID를 대체하지 않고, 행동 기반 광고 판매에 사용되지 않으며, 그 자체로 랭크 대기열을 열지 않습니다. 랭크 참가에는 여전히 검증된 Anti-Cheat 절차가 필요합니다. 해당 검토가 완료되기 전까지 로비의 Face Scan 패널은 디자인 미리보기입니다.",
       ],
     },
     calibration: {
@@ -50,18 +50,18 @@ export const features: TextBag["features"] = {
     },
   },
   loot: {
-    kicker: "샌드박스 코스메틱 · 결제 시뮬레이션",
+    kicker: "꾸미기 아이템 · 곧 출시",
     title: "A.C.E. 전리품 아키텍처 — 무기 드롭",
-    lede: "CS2 무기 종류에 붙인 A.C.E. 고유 마감 이름입니다. Valve 아이템이 아니고, 거래 가능한 스킨이 아니며, 실제 상금이 아닙니다. 결제는 시뮬레이션입니다.",
-    mockDrop: "모의 드롭",
+    lede: "상점과 함께 제공될 A.C.E. 오리지널 마감입니다. 꾸미기 아이템은 경쟁에 영향을 주지 않습니다.",
+    mockDrop: "곧 출시",
     multiplierLabel: "승률 배수 요건",
     ladderLabel: "주간 래더 드롭",
     multiplierValue: "{multiplier}× 템플릿",
-    ladderValue: "주간 슬롯 · 모의",
-    checkout: "결제 시뮬레이션",
+    ladderValue: "주간 슬롯 · 곧 출시",
+    checkout: "결제 · 곧 출시",
   },
   communityRail: {
-    kicker: "레이아웃 피드 · 실시간 아님",
+    kicker: "피드 · 곧 출시",
     newsTitle: "최신 래더 소식",
     newsItems: [
       "대진표는 여전히 비어 있습니다 — 100팀 중 0팀.",
@@ -69,29 +69,29 @@ export const features: TextBag["features"] = {
     ],
     prizesTitle: "일일 스킨 상품",
     prizesBody:
-      "지급되는 상품은 없습니다. 이 사이트의 코스메틱 카드는 샌드박스 목업입니다. 결제는 시뮬레이션입니다.",
+      "보상과 결제는 시즌 1과 함께 열립니다.",
   },
   identityPreview: {
     badge: "미리보기 — 확인되지 않음",
     cards: {
       faceScan: {
         title: "실시간 얼굴 스캔 확인됨",
-        copy: "신원 라이브니스 검사는 계획된 제공자 검사입니다. 이 카드는 레이아웃 미리보기입니다. 스캔은 수행되지 않았으며 생체 데이터도 저장되지 않습니다.",
+        copy: "생체 확인은 예정된 제공업체 검사입니다. 현재 생체 정보는 수집하지 않습니다.",
       },
       hardwareId: {
         title: "하드웨어 ID 연결됨",
-        copy: "기기 연결은 계획된 무결성 신호입니다. 이 카드는 레이아웃 미리보기입니다. 하드웨어 지문은 수집되지 않았습니다.",
+        copy: "기기 연결은 예정된 무결성 신호입니다. 현재 하드웨어 식별자는 수집하지 않습니다.",
       },
     },
   },
   preview: {
     fallbackTitle: "미리보기",
-    kicker: "레이아웃 목적지 · 실제 제품 아님",
+    kicker: "곧 출시",
     returnHome: "홈으로 돌아가기",
     pages: {
       support: {
         title: "지원",
-        body: "공개 지원 창구에는 아직 담당 직원이 없습니다. 이 링크는 푸터 목적지 자리표시입니다.",
+        body: "공개 고객 지원은 경쟁 베타와 함께 열립니다.",
       },
       "anti-cheat": {
         title: "안티치트 개요",
@@ -103,11 +103,11 @@ export const features: TextBag["features"] = {
       },
       "mobile-app": {
         title: "모바일 앱",
-        body: "A.C.E. 모바일 앱은 없습니다. 이것은 푸터 레이아웃 링크일 뿐입니다.",
+        body: "A.C.E. 모바일 앱은 로드맵에 있습니다.",
       },
       news: {
         title: "뉴스",
-        body: "실시간 뉴스룸은 없습니다. 이것은 푸터 레이아웃 링크일 뿐입니다.",
+        body: "A.C.E. 뉴스룸은 곧 열립니다.",
       },
       about: {
         title: "회사 소개",
@@ -115,7 +115,7 @@ export const features: TextBag["features"] = {
       },
       advertising: {
         title: "광고",
-        body: "판매 중인 광고 지면은 없습니다. 이것은 푸터 레이아웃 링크일 뿐입니다.",
+        body: "제휴 및 광고 문의는 곧 받을 예정입니다.",
       },
       developers: {
         title: "개발자",
@@ -123,11 +123,11 @@ export const features: TextBag["features"] = {
       },
       press: {
         title: "언론",
-        body: "보도 자료 키트나 뉴스룸은 없습니다. 이것은 푸터 레이아웃 링크일 뿐입니다.",
+        body: "보도 자료 키트는 곧 제공됩니다.",
       },
       jobs: {
         title: "채용",
-        body: "공개된 채용 공고는 없습니다. 이것은 푸터 레이아웃 링크일 뿐입니다.",
+        body: "채용 공고는 여기에 게시됩니다.",
       },
       terms: {
         title: "이용 약관",

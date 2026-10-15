@@ -16,7 +16,7 @@ export const legalDocs: TextBag["legalDocs"] = {
       operator: {
         title: "1. Operador e independência",
         paragraphs: [
-          "O serviço é operado pela A.C.E. Competitions Ltd. (ID provisório de registo comercial: Pendente). Ao utilizar o site, aceita estes Termos, a Política de Privacidade, a Política de Cookies e o Regulamento Competitivo.",
+          "O serviço é explorado pela A.C.E. Competitions Ltd. (o número de registo da empresa será publicado). Ao utilizar o site, aceita estes Termos, a Política de Privacidade, a Política de Cookies e o Regulamento de Competição.",
         ],
       },
       eligibility: {
@@ -28,7 +28,7 @@ export const legalDocs: TextBag["legalDocs"] = {
       notActive: {
         title: "3. O que este site não é",
         paragraphs: [
-          "O matchmaking classificativo, os servidores de jogo de CS2 ao vivo, um Anti-Cheat com IA funcional, a faturação e os prémios não estão ativos. Os relógios do lobby, as escadas de recompensas e os painéis de integridade são pré-visualizações de layout, salvo indicação em contrário na própria página.",
+          "O matchmaking classificativo, os servidores de CS2 em funcionamento, o AI Anti-Cheat operacional, a faturação e os prémios não estão ativos. Os relógios do lobby e os painéis de integridade são pré-visualizações, salvo indicação em contrário na página.",
         ],
       },
       subscriptions: {
@@ -59,7 +59,7 @@ export const legalDocs: TextBag["legalDocs"] = {
       contact: {
         title: "8. Contacto",
         paragraphs: [
-          "support@ace-platform.gg — A.C.E. Competitions Ltd. — ID provisório de registo comercial: Pendente.",
+          "support@ace-platform.gg — A.C.E. Competitions Ltd. — O número de registo da empresa será publicado.",
         ],
       },
     },
@@ -96,7 +96,7 @@ export const legalDocs: TextBag["legalDocs"] = {
         before: "Os endereços de e-mail e os perfis de hardware encriptados",
         strong: "não são recolhidos neste site atualmente",
         after:
-          ". Os cartões de leitura facial e de HWID no lobby são apenas layout. Se um futuro cliente Anti-Cheat ou canal de suporte exigir um e-mail ou uma impressão digital de hardware, a recolha ficará limitada à prevenção de fraude, será divulgada primeiro aqui e não será vendida como dados publicitários.",
+          ". Os cartões de Face Scan e HWID no lobby são pré-visualizações de design. Se um futuro cliente Anti-Cheat ou canal de apoio exigir um e-mail ou uma impressão digital de hardware, a recolha ficará limitada à prevenção de fraude, será divulgada aqui primeiro e não será vendida como dados publicitários.",
       },
     },
     neverCollect: {
@@ -133,7 +133,7 @@ export const legalDocs: TextBag["legalDocs"] = {
     },
     controller: {
       title: "Responsável pelo tratamento",
-      body: "A.C.E. Competitions Ltd. ID provisório de registo comercial: Pendente. Contacto: support@ace-platform.gg.",
+      body: "A.C.E. Competitions Ltd. O número de registo da empresa será publicado. Contacto: support@ace-platform.gg.",
     },
   },
   cookiePolicy: {

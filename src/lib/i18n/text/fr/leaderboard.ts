@@ -9,7 +9,7 @@ export const leaderboard: TextBag["leaderboard"] = {
   hero: {
     kicker: "CLASSEMENT",
     title: "Tableau compétitif",
-    note: "Des places de vitrine remplissent ce tableau tant qu'aucun compte Steam n'est enregistré. Une cote enregistrée les remplace. Le pays et l'arme principale sont des échantillons. Les rendus d'armes sont des images originales du studio A.C.E., pas des skins Valve. Ce site n'enregistre pas les éliminations, donc l'arme n'est pas une arme de meilleur fragger enregistrée.",
+    note: "Tant que les joueurs n'ont pas lié Steam et obtenu un classement, ce tableau affiche des places de vitrine. Leur pays et leur arme mise en avant sont illustratifs. Les rendus d'armes sont des créations originales du studio A.C.E., pas des skins Valve. Les éliminations ne sont pas encore enregistrées : l'arme mise en avant n'est donc pas une statistique de meilleur fragger.",
   },
   facts: {
     seats: "Places",
@@ -33,10 +33,10 @@ export const leaderboard: TextBag["leaderboard"] = {
     showcase: "Vitrine",
   },
   weapon: {
-    sampleRender: "Rendu d'exemple",
+    sampleRender: "Arme emblématique",
     notStored: "Non enregistré",
     noKillSaved: "Aucune élimination enregistrée",
-    alt: "Rendu d'exemple : {name}",
+    alt: "{name}",
   },
   countries: {
     il: "Israël",
@@ -57,17 +57,17 @@ export const leaderboard: TextBag["leaderboard"] = {
     placeholder: "Nom d'affichage",
   },
   seasonPreview: {
-    banner: "ÉCHELLE DE LA SAISON 1 — MISE EN PAGE",
+    banner: "CLASSEMENT SAISON 1",
     noteLive:
-      "Les noms liés à Steam sont des comptes enregistrés. Les places vides restent marquées vitrine. Le K/D n'est pas enregistré, donc cette jauge est une mise en page.",
+      "Les noms liés à Steam sont des comptes A.C.E. Le K/D apparaîtra quand les serveurs de match enregistreront les éliminations.",
     noteSample:
-      "Échantillon de mise en page. 0 enregistrement classé en direct. Ces chiffres ne sont pas un résultat de saison, et le K/D n'est pas enregistré.",
+      "Les résultats de la Saison 1 apparaîtront ici au fil des matchs classés.",
   },
   playerCard: {
-    kicker: "Aperçu de carte authentifiée · chiffres fictifs",
+    kicker: "Aperçu de la carte joueur",
     title: "Dossier de l'opérateur",
     badge: "Premium",
-    note: "Mise en page uniquement. Ces chiffres ne sont ni une saison en direct, ni un Elo en direct, ni un compte connecté. Le matchmaking classé n'est pas actif.",
+    note: "Votre carte affichera de vrais chiffres à l'ouverture du matchmaking classé.",
     currentRank: "Rang actuel",
     rankValue: "A.C.E. Legend (Division I)",
     competitiveRating: "Classement compétitif",

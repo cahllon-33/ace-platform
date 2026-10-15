@@ -5,18 +5,18 @@ export const desk: TextBag["desk"] = {
     meta: {
       title: "A.C.E.-Marktplatz",
       description:
-        "Waffenkarten als Preisbeispiele. Keine Gegenstände von Valve, keine finanzierte Belohnung, und die Kasse belastet keine Karte.",
+        "Meisterschafts-Belohnungskarten. Shop und Belohnungen öffnen bald.",
     },
     heroHonesty:
-      "Die Waffenkarten sind Preisbeispiele. Sie sind keine Gegenstände von Valve, sie liegen in keinem Inventar, und die Kasse auf dieser Seite belastet keine Karte.",
-    prizeBanner: "🏆 BEISPIEL FÜR EINEN TURNIERPREIS — SCHAU DER PREMIUM-BELOHNUNGEN",
+      "Ein erster Blick auf kommende Meisterschaftsbelohnungen. Der Shop öffnet bald; heute wird nichts berechnet.",
+    prizeBanner: "🏆 MEISTERSCHAFTSBELOHNUNGEN · DEMNÄCHST",
     notice:
-      "Diese Schaustücke haben keinen Geldwert. Es wird kein Skin ausgeliefert, kein Preis finanziert, und die Schaltfläche «Prüfen» startet keinen Kauf.",
+      "Diese Schaustücke sind Vorschauen ohne Geldwert. Es wird nichts geliefert oder berechnet, und die Ansehen-Schaltfläche startet keinen Kauf.",
     items: {
       lore: {
         name: "Butterfly Knife | Lore",
         tag: "★ VERDECKTE RANGLISTEN-FUNDE",
-        price: "Nur Beispiel · kein Geldwert",
+        price: "Demnächst",
       },
       jungle: {
         name: "M4A1-S | Welcome to the Jungle",
@@ -49,14 +49,14 @@ export const desk: TextBag["desk"] = {
     meta: {
       title: "Hilfe",
       description:
-        "Layout des A.C.E.-Hilfezentrums. Anti-Cheat, Rangliste-Warteschlangen und Abrechnungsschalter sind nicht in Betrieb. Anfrageaufforderungen legen keine Vorgänge an.",
+        "A.C.E.-Hilfecenter. Support für Anti-Cheat, Ranglisten und Abrechnung startet mit der Wettkampf-Beta.",
     },
   },
   contact: {
     meta: {
       title: "Kontakt",
       description:
-        "Firmen-Kontaktterminal von A.C.E. Formulareingaben sind Sandkasten-Attrappen und senden weder E-Mails noch speichern sie Telemetrie.",
+        "Kontakt zu A.C.E. Das Online-Formular öffnet bald.",
     },
   },
   contactEmail: {

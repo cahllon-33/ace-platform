@@ -19,7 +19,7 @@ export const features: TextBag["features"] = {
         "Zamýšlené vrstvy jádra zahrnují navázání v uživatelském režimu, které sváže ověřené 64bitové SteamID s účtem A.C.E., plochu pro atestaci hardwarového identifikátoru (HWID), seznam podpisů známých rodin cheatů a trasu způsobilosti mezi servery chráněnou sdíleným tajemstvím. Potvrzení podpisu cheatu, odmítnutá kontrola integrity nebo podvržený identifikátor zařízení mají podle specifikace vést k okamžité změně stavu účtu na BANNED nebo PERM_BANNED a — pokud bude existovat placený produkt — k úplnému propadnutí předplaceného času s nulovou povinností vrátit peníze. S tímto webem se žádný takový klient nedodává. Karty ke stažení označené Již brzy jsou pouze rozvržení.",
       ],
       stats: [
-        { label: "STAV JÁDRA", value: "Nenasazeno" },
+        { label: "STAV JÁDRA", value: "Ve vývoji" },
         { label: "RANKINGOVÁ FRONTA", value: "Při selhání uzavřená" },
         { label: "ÚLOŽIŠTĚ HWID", value: "Na tomto webu se nesbírá" },
       ],
@@ -28,7 +28,7 @@ export const features: TextBag["features"] = {
       title: "Biometrické propojení skenem obličeje",
       paragraphs: [
         "Sken obličeje je specifikovaná budoucí vrstva vázání identity, ne kamerový produkt na tomto webu. Zamýšlený návrh by — pouze po výslovném souhlasu a samostatném právním posouzení — svázal obličejovou šablonu ověřenou kontrolou živosti se stejným účtem A.C.E., který už má SteamID ověřené na serveru. Účelem je bránit sdílení účtu za účelem obejití dřívějšího omezení. A.C.E. dnes nesbírá snímky obličeje, obličejové vektory, e-mailové adresy ani hardwarové otisky. Živý přístup k soukromí zůstává na úrovni nezbytné nutnosti: pouze ověřené 64bitové SteamID a veřejné zobrazované jméno Steam.",
-        "Pokud bude sken obličeje někdy implementován, nenahradí Steam OpenID, nebude použit k prodeji behaviorální reklamy a sám o sobě neodemkne rankingové fronty. Přijetí do rankingu bude stále vyžadovat ověřenou cestu anti-cheatu. Dokud toto posouzení neexistuje, je jakýkoli panel skenu obličeje v lobby jen zástupným prvkem rozvržení.",
+        "Pokud bude Face Scan někdy zaveden, nenahradí Steam OpenID, nebude použit k prodeji behaviorální reklamy a sám o sobě neodemkne hodnocené fronty. Vstup do hodnocených her bude i nadále vyžadovat ověřenou cestu Anti-Cheat. Dokud takové posouzení neproběhne, je každý panel Face Scan v lobby náhledem designu.",
       ],
     },
     calibration: {
@@ -50,18 +50,18 @@ export const features: TextBag["features"] = {
     },
   },
   loot: {
-    kicker: "Kosmetika v pískovišti · pokladna je simulovaná",
+    kicker: "Kosmetika · již brzy",
     title: "ARCHITEKTURA ODMĚN A.C.E. — DROPY ZBRANÍ",
-    lede: "Původní názvy povrchových úprav A.C.E. na typech zbraní CS2. Nejsou to předměty Valve, nejsou to obchodovatelné skiny a nejsou to skutečné ceny. Pokladny jsou simulované.",
-    mockDrop: "Smyšlený drop",
+    lede: "Původní úpravy A.C.E., které dorazí s obchodem. Kosmetika nikdy neovlivňuje soutěž.",
+    mockDrop: "Již brzy",
     multiplierLabel: "Požadavky na násobitel úspěšnosti výher",
     ladderLabel: "Týdenní dropy žebříčku",
     multiplierValue: "Šablona {multiplier}×",
-    ladderValue: "Týdenní slot · smyšlené",
-    checkout: "Pokladna je simulovaná",
+    ladderValue: "Týdenní slot · již brzy",
+    checkout: "Platba · již brzy",
   },
   communityRail: {
-    kicker: "Kanál rozvržení · není živý",
+    kicker: "Novinky · již brzy",
     newsTitle: "Nejnovější zprávy žebříčku",
     newsItems: [
       "Pole pavouka zůstává prázdné — 0 ze 100 týmů.",
@@ -69,29 +69,29 @@ export const features: TextBag["features"] = {
     ],
     prizesTitle: "Denní ceny ve skinech",
     prizesBody:
-      "Žádné ceny se neudělují. Kosmetické karty na tomto webu jsou makety v pískovišti. Pokladny jsou simulované.",
+      "Odměny a platby se otevřou se 1. sezónou.",
   },
   identityPreview: {
     badge: "Náhled — nepotvrzeno",
     cards: {
       faceScan: {
         title: "Živý sken obličeje ověřen",
-        copy: "Kontrola živosti identity je plánovaná kontrola poskytovatele. Tato karta je náhled rozvržení. Žádný sken neproběhl a žádná biometrická data se neukládají.",
+        copy: "Ověření živosti je plánovaná kontrola u poskytovatele. Dnes se nesbírají žádná biometrická data.",
       },
       hardwareId: {
         title: "Hardwarové ID propojeno",
-        copy: "Vázání zařízení je plánovaný signál integrity. Tato karta je náhled rozvržení. Žádný hardwarový otisk nebyl shromážděn.",
+        copy: "Vazba zařízení je plánovaný signál integrity. Dnes se nesbírají žádné hardwarové identifikátory.",
       },
     },
   },
   preview: {
     fallbackTitle: "Náhled",
-    kicker: "Cíl rozvržení · nejde o živý produkt",
+    kicker: "Již brzy",
     returnHome: "Zpět domů",
     pages: {
       support: {
         title: "Podpora",
-        body: "Veřejné pracoviště podpory zatím nemá obsluhu. Tento odkaz je zástupný cíl v patičce.",
+        body: "Naše veřejná podpora se otevře se soutěžní betou.",
       },
       "anti-cheat": {
         title: "Přehled anti-cheatu",
@@ -103,11 +103,11 @@ export const features: TextBag["features"] = {
       },
       "mobile-app": {
         title: "Mobilní aplikace",
-        body: "Neexistuje žádná mobilní aplikace A.C.E. Jde pouze o odkaz rozvržení v patičce.",
+        body: "Mobilní aplikace A.C.E. je v plánu vývoje.",
       },
       news: {
         title: "Novinky",
-        body: "Neexistuje žádná živá redakce. Jde pouze o odkaz rozvržení v patičce.",
+        body: "Tisková místnost A.C.E. se brzy otevře.",
       },
       about: {
         title: "O nás",
@@ -115,7 +115,7 @@ export const features: TextBag["features"] = {
       },
       advertising: {
         title: "Reklama",
-        body: "Žádný reklamní prostor není na prodej. Jde pouze o odkaz rozvržení v patičce.",
+        body: "Dotazy na partnerství a reklamu budou brzy možné.",
       },
       developers: {
         title: "Vývojáři",
@@ -123,11 +123,11 @@ export const features: TextBag["features"] = {
       },
       press: {
         title: "Tisk",
-        body: "Neexistuje žádný tiskový balíček ani redakce. Jde pouze o odkaz rozvržení v patičce.",
+        body: "Tiskový balíček bude brzy k dispozici.",
       },
       jobs: {
         title: "Kariéra",
-        body: "Nejsou zveřejněny žádné pracovní nabídky. Jde pouze o odkaz rozvržení v patičce.",
+        body: "Volné pozice budou zveřejněny zde.",
       },
       terms: {
         title: "Podmínky služby",

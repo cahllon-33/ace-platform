@@ -94,7 +94,7 @@
         before: "Email addresses and encrypted hardware profiles are",
         strong: "not collected on this website today",
         after:
-          ". Face-scan and HWID cards in the lobby are layout only. If a future Anti-Cheat client or support channel requires an email or a hardware fingerprint, collection will stay limited to fraud prevention, will be disclosed here first, and will not be sold as advertising data.",
+          ". Face-scan and HWID cards in the lobby are design previews. If a future Anti-Cheat client or support channel requires an email or a hardware fingerprint, collection will stay limited to fraud prevention, will be disclosed here first, and will not be sold as advertising data.",
       },
     },
     neverCollect: {

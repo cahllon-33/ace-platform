@@ -123,7 +123,7 @@ export const UI_HE: Ui = {
       "repeat": "עבירה חוזרת",
       "rule": "סעיף"
     },
-    "englishNote": "נוסח הסעיפים מוצג באנגלית, והוא הנוסח המחייב.",
+    "englishNote": "",
     "sections": [
       "היקף והגדרות",
       "זכאות",

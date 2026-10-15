@@ -123,7 +123,7 @@ export const UI_CS: Ui = {
       "repeat": "Opakovaný přestupek",
       "rule": "Bod"
     },
-    "englishNote": "Text bodů je zobrazen v angličtině; závazné je anglické znění.",
+    "englishNote": "",
     "sections": [
       "Rozsah a definice",
       "Způsobilost",

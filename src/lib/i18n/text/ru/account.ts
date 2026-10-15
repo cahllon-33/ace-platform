@@ -37,7 +37,7 @@ export const account: TextBag["account"] = {
     },
     settings: {
       title: "НАСТРОЙКИ ПРОФИЛЯ В КАБИНЕТЕ",
-      billingNotLive: "Выставление счетов не запущено. Все аккаунты остаются на бесплатном плане (FREE), пока не появится оплата.",
+      billingNotLive: "Оплата скоро откроется. До тех пор все аккаунты остаются на бесплатном плане.",
       cancelReason: "Нет оплачиваемой подписки, которую можно отменить. Оформление покупки не реализовано.",
       cancelButton: "Отменить подписку",
     },
@@ -72,7 +72,7 @@ export const account: TextBag["account"] = {
       description: "Досье игрока A.C.E. Сессии Plus и Premium открывают графики динамики телеметрии.",
     },
     kicker: "Личность игрока",
-    bannerPlaceholder: "Заполнитель баннера Steam · не арт Valve",
+    bannerPlaceholder: "Баннер профиля · скоро",
     levelBadge: "УРОВЕНЬ {level}",
     premiumBadge: "PREMIUM",
     rosterLevel: "Уровень в составе: {level}.",

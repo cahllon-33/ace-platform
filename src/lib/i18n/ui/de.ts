@@ -123,7 +123,7 @@ export const UI_DE: Ui = {
       "repeat": "Wiederholung",
       "rule": "Regel"
     },
-    "englishNote": "Der Klauseltext wird auf Englisch angezeigt; die englische Fassung ist maßgeblich.",
+    "englishNote": "",
     "sections": [
       "Geltungsbereich und Begriffe",
       "Teilnahmeberechtigung",

@@ -16,7 +16,7 @@ export const legalDocs: TextBag["legalDocs"] = {
       operator: {
         title: "1. Operator i niezależność",
         paragraphs: [
-          "Usługę prowadzi A.C.E. Competitions Ltd. (tymczasowy identyfikator w rejestrze spółek: w toku nadawania). Korzystając ze strony, akceptujesz niniejsze Warunki, Politykę prywatności, Politykę plików cookie oraz Regulamin rozgrywek.",
+          "Serwis prowadzi A.C.E. Competitions Ltd. (numer rejestrowy spółki zostanie opublikowany). Korzystając ze strony, akceptujesz niniejszy Regulamin, Politykę prywatności, Politykę plików cookie oraz Regulamin rozgrywek.",
         ],
       },
       eligibility: {
@@ -28,7 +28,7 @@ export const legalDocs: TextBag["legalDocs"] = {
       notActive: {
         title: "3. Czym ta strona nie jest",
         paragraphs: [
-          "Dobieranie rankingowe, serwery gry CS2 na żywo, działający anticheat oparty na SI, rozliczenia i nagrody nie są aktywne. Zegary poczekalni, drabiny łupów i panele integralności to podglądy układu, chyba że dana strona stanowi inaczej.",
+          "Matchmaking rankingowy, działające serwery CS2, działający AI Anti-Cheat, płatności i nagrody nie są aktywne. Zegary lobby i panele uczciwości są podglądem, chyba że strona stanowi inaczej.",
         ],
       },
       subscriptions: {
@@ -59,7 +59,7 @@ export const legalDocs: TextBag["legalDocs"] = {
       contact: {
         title: "8. Kontakt",
         paragraphs: [
-          "support@ace-platform.gg — A.C.E. Competitions Ltd. — Tymczasowy identyfikator w rejestrze spółek: w toku nadawania.",
+          "support@ace-platform.gg — A.C.E. Competitions Ltd. — Numer rejestrowy spółki zostanie opublikowany.",
         ],
       },
     },
@@ -96,7 +96,7 @@ export const legalDocs: TextBag["legalDocs"] = {
         before: "Adresy e-mail i zaszyfrowane profile sprzętu",
         strong: "nie są dziś zbierane na tej stronie",
         after:
-          ". Karty skanu twarzy i HWID w poczekalni to wyłącznie układ. Jeśli przyszły klient anticheatu lub kanał pomocy będzie wymagał adresu e-mail albo odcisku sprzętu, zbieranie tych danych pozostanie ograniczone do zapobiegania nadużyciom, zostanie najpierw opisane tutaj i dane te nie będą sprzedawane jako dane reklamowe.",
+          ". Karty Face Scan i HWID w lobby to podgląd projektu. Jeśli przyszły klient Anti-Cheat lub kanał wsparcia będzie wymagał e-maila lub odcisku sprzętu, zbieranie danych ograniczy się do zapobiegania oszustwom, zostanie najpierw ujawnione tutaj i nie będzie sprzedawane jako dane reklamowe.",
       },
     },
     neverCollect: {
@@ -133,7 +133,7 @@ export const legalDocs: TextBag["legalDocs"] = {
     },
     controller: {
       title: "Administrator danych",
-      body: "A.C.E. Competitions Ltd. Tymczasowy identyfikator w rejestrze spółek: w toku nadawania. Kontakt: support@ace-platform.gg.",
+      body: "A.C.E. Competitions Ltd. Numer rejestrowy spółki zostanie opublikowany. Kontakt: support@ace-platform.gg.",
     },
   },
   cookiePolicy: {

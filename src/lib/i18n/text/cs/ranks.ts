@@ -4,17 +4,17 @@ export const ranks: TextBag["ranks"] = {
   meta: {
     title: "Soutěžní hodnosti",
     description:
-      "Deset hodností A.C.E. na 3D otočném stojanu CSS, který lze otáčet tažením. Studiové modely GLTF mohou po dodání nahradit statické obrázky.",
+      "Deset hodností A.C.E., od Iron Recruit po A.C.E. Legend, s divizemi a spodními hranicemi hodnocení.",
   },
   hero: {
     kicker: "KALIBRACE",
     title: "Soutěžní hodnosti",
-    lede: "Od Recruit po A.C.E. Legend, divize {divisions}. Každý emblém je koncepční statický obrázek na 3D otočném stojanu CSS (tažením nebo šipkami). Model GLTF lze později vložit do zdokumentovaného slotu — v repozitáři zatím nejsou žádné soubory modelů. Čísla hodnocení jsou po přihlášení skutečnými hodnotami vašeho účtu, jinak jde o kalibrační dolní hranici.",
+    lede: "Deset úrovní od Recruit po A.C.E. Legend, každá s divizemi {divisions}. Přetáhni nebo použij šipky k otočení znaku. Po přihlášení vidíš své hodnocení, jinak spodní hranici každé úrovně.",
   },
   codexLink: "Otevřít kalibrační kodex",
   document: {
     title: "Dokument kalibrace o deseti stupních",
-    body: "Názvy z enginu tvoří oficiální žebříček. Krystalové přezdívky jsou grafikou lobby. Štítky úspěšnosti výher na tabuli jsou ukázky z vitríny, ne živé párování. Placená kosmetika nikdy nepřesune hráče mezi těmito stupni.",
+    body: "Názvy enginu tvoří oficiální žebříček. Krystalové přezdívky jsou grafika lobby. Procenta výher na tabuli jsou ukázkové hodnoty do spuštění hodnoceného matchmakingu. Placená kosmetika nikdy nepřesouvá hráče mezi úrovněmi.",
     level: "ÚROVEŇ {level} · {crystal}",
     detail: "Minimální hodnocení {rating}. Materiálová studie: {material}.",
   },
@@ -34,7 +34,7 @@ export const ranks: TextBag["ranks"] = {
     selectEmblem: "Vybrat emblém hodnosti A.C.E. {name}, úroveň {level}",
     emblemAlt: "Profilový odznak A.C.E. — vlastní 3D krystalický emblém úrovně {level} {crystal} {name}",
     emblemAltLegend: "Profilový odznak A.C.E. — vlastní 3D krystalický emblém úrovně {level}",
-    premium: "PREMIUM",
+    premium: "NEJVYŠŠÍ ÚROVEŇ",
   },
   division: {
     label: "Divize {division}",
@@ -46,8 +46,8 @@ export const ranks: TextBag["ranks"] = {
     targetWinRate: "Cílová úspěšnost výher {winRate}",
     calibrationTarget: "Kalibrační cíl",
     floor: "Dolní hranice",
-    samplesNote: "Ukázky rozvržení. Nejde o živou telemetrii.",
-    progressMockup: "Maketa postupu",
+    samplesNote: "Cílové hodnoty pro každou úroveň.",
+    progressMockup: "Postup",
   },
   turntable: {
     stageLabel: "Orbitální emblém {name}. Otáčejte tažením.",

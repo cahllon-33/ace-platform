@@ -37,7 +37,7 @@ export const account: TextBag["account"] = {
     },
     settings: {
       title: "USTAWIENIA PROFILU PANELU",
-      billingNotLive: "Rozliczenia nie działają. Wszystkie konta pozostają w planie FREE, dopóki nie powstanie kasa.",
+      billingNotLive: "Płatności ruszą wkrótce. Do tego czasu wszystkie konta pozostają na planie Darmowym.",
       cancelReason: "Nie ma opłacanej subskrypcji do anulowania. Kasa nie została zaimplementowana.",
       cancelButton: "Anuluj subskrypcję",
     },
@@ -72,7 +72,7 @@ export const account: TextBag["account"] = {
       description: "Dossier gracza A.C.E. Sesje Plus i Premium odblokowują wykresy trendów telemetrii.",
     },
     kicker: "Tożsamość gracza",
-    bannerPlaceholder: "Wypełniacz banera Steam · to nie grafika Valve",
+    bannerPlaceholder: "Baner profilu · wkrótce",
     levelBadge: "POZIOM {level}",
     premiumBadge: "PREMIUM",
     rosterLevel: "Poziom w składzie: {level}.",

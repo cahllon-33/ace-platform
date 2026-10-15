@@ -4,7 +4,7 @@ export const teams: TextBag["teams"] = {
   meta: {
     title: "Správa týmu A.C.E.",
     description:
-      "Koncepční pracovní prostor týmu 5v5. Soupisky, volní hráči a odznaky anti-cheatu jsou náhledová rozvržení. Živé pozvánky vyžadují ověřenou relaci Steam.",
+      "Pracovní prostor tvého týmu 5v5. Pozvánky vyžadují ověřenou relaci Steam; kontroly anti-cheat přijdou s A.C.E Shield.",
   },
   hero: {
     kicker: "TÝMY",
@@ -47,7 +47,7 @@ export const teams: TextBag["teams"] = {
     facts: {
       email: "Žádný e-mail se neodesílá. Dopis Premium zůstává na /premium/receipt.",
       charge:
-        "Nic se neúčtuje. Premium za $7 měsíčně je zobrazená cena. Pokladna není v provozu a uložený tarif se nemění.",
+        "Premium stojí $7 měsíčně. Platby budou brzy spuštěny; dnes se nic neúčtuje.",
       board:
         "Uložený klan je záznam soupisky. Není zařazen na tabuli 100 týmů. Tato tabule ukazuje 0 registrovaných, dokud se neotevře sezóna.",
       steam:
@@ -55,7 +55,7 @@ export const teams: TextBag["teams"] = {
       roster:
         "Místo 1 je přihlášený kapitán. Místa 2 až 5 už musí mít účty A.C.E. Pozvánky čekají, dokud je každý hráč nepřijme.",
       badge:
-        "Odznak u místa je ukázka rozvržení. Nejde o živou kontrolu anti-cheatu a nic se nestahuje.",
+        "Odznaky míst se stanou skutečnými kontrolami A.C.E Shield po spuštění anti-cheatu.",
       support:
         "Otevřete na tomto webu Podporu nebo Kontakt. Výzva podpory neotevírá požadavek a text napsaný na stránce Kontakt se nedoručuje.",
       rating:
@@ -79,7 +79,7 @@ export const teams: TextBag["teams"] = {
     meta: {
       title: "Šampionát A.C.E. — elitní vyřazovací pole 100 týmů",
       description:
-        "Rozvržení vyřazovací soutěže 100 týmů. Kliknutím na klan otevřete jeho soupisku a poté profil každého hráče. Registrace je 0 ze 100.",
+        "Vyřazovací turnaj 100 týmů. Klikni na klan a otevři jeho soupisku a pak profil každého hráče. Registrace se brzy otevře.",
     },
     intro: {
       title: "ŠAMPIONÁT A.C.E. — ELITNÍ VYŘAZOVACÍ POLE 100 TÝMŮ",
@@ -87,7 +87,7 @@ export const teams: TextBag["teams"] = {
       formatValue: "Matice pavouka 100 týmů",
       briefTitle: "Provozní shrnutí pro 100 týmů",
       briefBody:
-        "Jedno soutěžní rozvržení pokrývá celé pole 100 týmů. Až se otevře přihlašování, prvních 28 přijatých klanů dostane volný los v 1. kole a postoupí do 2. kola. Zbylých 72 klanů hraje 1. kolo. Jména na neobsazených místech jsou přípravné štítky, ne registrovaní účastníci. Úplný řád je pod stromem. Žádná zápasová lobby není otevřená a žádný fond cen není financován.",
+        "Jeden soutěžní formát pokrývá celé pole 100 týmů. Po otevření přihlášek postupuje prvních 28 přijatých klanů přímo do 2. kola. Zbylých 72 klanů hraje 1. kolo. Názvy na neobsazených místech jsou zástupné, dokud se klany nezaregistrují. Úplný řád je pod pavoukem. Herní lobby se otevřou se soutěžní betou a ceny se potvrzují pro každou akci.",
     },
     timeline: {
       ariaLabel: "Časová osa spuštění turnaje",
@@ -101,17 +101,17 @@ export const teams: TextBag["teams"] = {
         finals: { title: "Velké vrcholné finále", state: "UZAMČENO" },
       },
       disclaimer:
-        "Fáze 01 pulzuje jako náhled rozvržení. Registrace není otevřená (0 ze 100). Fáze 02–04 jsou uzamčené. Velké vrcholné finále uvádí pouze koncepční částku $50,000 — žádný fond cen není financován.",
+        "Fáze 01 se otevře jako první se zahájením registrace. Následují fáze 02–04. Výše cen se potvrzuje na stránce akce po oznámení.",
     },
     bracket: {
-      kicker: "Vyřazovací soutěž 100 týmů · náhled rozvržení",
+      kicker: "Vyřazovací turnaj 100 týmů · již brzy",
       title: "Matice pavouka 100 týmů",
       statusUnavailable:
-        "PostgreSQL není připojen. 100 míst pro účastníky používá přípravná jména klanů, ne registrované týmy. Skóre sérií zůstává na 0.",
+        "Registrace se brzy otevře. Do té doby pavouk zobrazuje ukázkové klany.",
       statusEmpty:
-        "Zatím nejsou uloženy žádné klany. 100 jmen účastníků je přípravné rozvržení. Nejde o přihlášené pole.",
+        "Registrace se brzy otevře. Do té doby pavouk zobrazuje ukázkové klany.",
       statusStored:
-        "Jako první je umístěno {count} klanů z databáze. Zbývající místa pro účastníky používají přípravná jména. Pozdější kola zůstávají otevřená, dokud nebudou zápasy zaznamenány.",
+        "Nejprve se umístí {count} registrovaných klanů. Zbývající místa ukazují ukázkové klany. Další kola se plní se zaznamenanými zápasy.",
       openSlot: "Volné místo",
       openCompetitorSlot: "Volné místo pro účastníka",
       openRoster: "Otevřít soupisku týmu {name}",
@@ -132,7 +132,7 @@ export const teams: TextBag["teams"] = {
     },
     profile: {
       closeBackdrop: "Zavřít profil týmu",
-      kicker: "Hlavní šampionátní profil · ukázka rozvržení",
+      kicker: "Šampionátový profil · náhled",
       matchesPlayed: "Odehrané zápasy",
       winRate: "Společná úspěšnost výher",
       streak: "Aktivní turnajová série",
@@ -144,7 +144,7 @@ export const teams: TextBag["teams"] = {
       next: "Další klan",
       close: "Zavřít profil",
       disclosure:
-        "Maketa v pískovišti: všechny sestavy systémů, inventáře hráčů a databázové proměnné v tomto profilu jsou koncepční ukázky rozvržení předběžné registrace. Neběží žádný klient anti-cheatu, neukládá se žádný hardware a tyto údaje nejsou výsledky zápasů.",
+        "Sestavy a inventáře hráčů se zde objeví, až se je hráči rozhodnou sdílet. A.C.E. nesbírá údaje o hardwaru.",
     },
     player: {
       level: "ÚR. {level} · RP {rating}",
@@ -153,7 +153,7 @@ export const teams: TextBag["teams"] = {
       openProfileAria: "Otevřít profil hráče {name}",
       openProfile: "Otevřít profil",
       badge: "PŘIPRAVEN / V SOULADU S ANTI-CHEATEM",
-      badgeNote: "Ukázka rozvržení · nejde o živou kontrolu",
+      badgeNote: "Kontrola A.C.E Shield · již brzy",
       gear: {
         processor: "CPU",
         gpu: "GPU",
@@ -166,13 +166,13 @@ export const teams: TextBag["teams"] = {
     },
   },
   gearPlaceholder: {
-    processor: "Zástupný údaj · CPU se nesbírá",
-    gpu: "Zástupný údaj · GPU se nesbírá",
-    mouse: "Zástupný údaj · model myši se nesbírá",
-    dpi: "Zástupný údaj · DPI se nesbírá",
-    keyboard: "Zástupný údaj · nesbírá se",
-    monitor: "Zástupný údaj · Hz se nesbírá",
-    headset: "Zástupný údaj · nesbírá se",
+    processor: "CPU · nesdíleno",
+    gpu: "GPU · nesdíleno",
+    mouse: "Myš · nesdíleno",
+    dpi: "DPI · nesdíleno",
+    keyboard: "Nesdíleno",
+    monitor: "Obnovovací frekvence · nesdíleno",
+    headset: "Nesdíleno",
   },
   profileDisclosure:
     "A.C.E. neukládá inventáře hardwaru a nespouští klienta anti-cheatu. Grafy výkonnostních trendů a bojová matice vyžadují relaci A.C.E. Plus nebo Premium. Odkaz na profil Steam zadaný na této stránce se neukládá a není oficiálním identifikátorem.",

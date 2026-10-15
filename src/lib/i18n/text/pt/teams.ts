@@ -4,7 +4,7 @@ export const teams: TextBag["teams"] = {
   meta: {
     title: "Gestão de esquadrões A.C.E.",
     description:
-      "Espaço conceptual de esquadrão 5v5. Plantéis, jogadores livres e emblemas anti-cheat são layouts de pré-visualização. Os convites reais exigem uma sessão Steam verificada.",
+      "O seu espaço de esquadrão 5v5. Os convites exigem uma sessão Steam verificada; as verificações anti-cheat chegam com o A.C.E Shield.",
   },
   hero: {
     kicker: "EQUIPAS",
@@ -47,7 +47,7 @@ export const teams: TextBag["teams"] = {
     facts: {
       email: "Não é enviado nenhum e-mail. A carta Premium fica em /premium/receipt.",
       charge:
-        "Nada é cobrado. O Premium a $7 por mês é um preço de apresentação. O pagamento não está ativo, e a patente guardada não muda.",
+        "O Premium custa $7 por mês. A faturação abre em breve; hoje nada é cobrado.",
       board:
         "Um clã guardado é um registo de plantel. Não é colocado no quadro de 100 equipas. Esse quadro continua a mostrar 0 registadas até abrir uma temporada.",
       steam:
@@ -55,7 +55,7 @@ export const teams: TextBag["teams"] = {
       roster:
         "O lugar 1 é o capitão com sessão iniciada. Os lugares 2 a 5 já têm de ter contas A.C.E. Os convites ficam pendentes até cada jogador aceitar.",
       badge:
-        "O emblema num lugar é uma amostra de layout. Não é uma verificação anti-cheat ao vivo, e nada é transferido.",
+        "Os emblemas de lugar passam a ser verificações reais do A.C.E Shield quando o anti-cheat for lançado.",
       support:
         "Abra Suporte ou Contacto neste sítio. Um pedido de suporte não abre um ticket, e o texto escrito em Contacto não é entregue.",
       rating:
@@ -79,7 +79,7 @@ export const teams: TextBag["teams"] = {
     meta: {
       title: "Campeonato A.C.E. — Eliminatória de elite com 100 equipas",
       description:
-        "Layout de eliminatória com 100 equipas. Clique num clã para abrir o plantel e depois abra o perfil de cada jogador. Inscrições: 0 de 100.",
+        "A eliminatória de 100 equipas. Clique num clã para abrir o plantel e depois cada perfil de jogador. As inscrições abrem em breve.",
     },
     intro: {
       title: "CAMPEONATO A.C.E. — ELIMINATÓRIA DE ELITE COM 100 EQUIPAS",
@@ -87,7 +87,7 @@ export const teams: TextBag["teams"] = {
       formatValue: "Matriz de chave com 100 equipas",
       briefTitle: "Briefing de operações com 100 equipas",
       briefBody:
-        "Um único layout competitivo cobre todo o quadro de 100 equipas. Quando as inscrições abrirem, os primeiros 28 clãs aceites recebem uma isenção na Ronda 1 e avançam para a Ronda 2. Os outros 72 clãs jogam a Ronda 1. Os nomes nas vagas por preencher são etiquetas provisórias, não participantes inscritos. O código completo está por baixo da árvore. Nenhum lobby de partida está aberto e nenhum prize pool está financiado.",
+        "Um único formato competitivo abrange as 100 equipas. Quando as inscrições abrirem, os primeiros 28 clãs aceites passam diretamente à ronda 2. Os restantes 72 clãs jogam a ronda 1. Os nomes nas vagas livres são provisórios até os clãs se inscreverem. O regulamento completo está por baixo da árvore. Os lobbies de jogo abrem com a beta competitiva, e os prémios são confirmados em cada evento.",
     },
     timeline: {
       ariaLabel: "Calendário de lançamento do torneio",
@@ -101,17 +101,17 @@ export const teams: TextBag["teams"] = {
         finals: { title: "Grandes Finais Apex", state: "BLOQUEADO" },
       },
       disclaimer:
-        "A Fase 01 pulsa como pré-visualização de layout. As inscrições não estão abertas (0 de 100). As Fases 02–04 estão bloqueadas. As Grandes Finais Apex incluem apenas um valor conceptual de $50,000 — nenhum prize pool está financiado.",
+        "A fase 01 abre primeiro quando as inscrições começarem. Seguem-se as fases 02–04. Os prémios são confirmados na página do evento quando forem anunciados.",
     },
     bracket: {
-      kicker: "Eliminatória com 100 equipas · pré-visualização de layout",
+      kicker: "Eliminatória de 100 equipas · em breve",
       title: "Matriz de chave com 100 equipas",
       statusUnavailable:
-        "O PostgreSQL não está ligado. As 100 vagas de participantes usam nomes de clãs provisórios, não equipas inscritas. Os resultados das séries ficam em 0.",
+        "As inscrições abrem em breve. Até lá, a árvore mostra clãs de pré-visualização.",
       statusEmpty:
-        "Ainda não há clãs guardados. Os 100 nomes de participantes são um layout provisório. Não são um quadro com check-in feito.",
+        "As inscrições abrem em breve. Até lá, a árvore mostra clãs de pré-visualização.",
       statusStored:
-        "{count} clãs da base de dados são colocados primeiro. As restantes vagas de participantes usam nomes provisórios. As rondas seguintes ficam em aberto até serem registadas partidas.",
+        "Os {count} clãs inscritos são colocados primeiro. Os lugares restantes mostram clãs de pré-visualização. As rondas seguintes são preenchidas à medida que os jogos são registados.",
       openSlot: "Vaga aberta",
       openCompetitorSlot: "Vaga de participante aberta",
       openRoster: "Abrir o plantel de {name}",
@@ -132,7 +132,7 @@ export const teams: TextBag["teams"] = {
     },
     profile: {
       closeBackdrop: "Fechar o perfil da equipa",
-      kicker: "Perfil principal do campeonato · amostra de layout",
+      kicker: "Perfil de campeonato · pré-visualização",
       matchesPlayed: "Partidas jogadas",
       winRate: "Taxa de vitórias combinada",
       streak: "Sequência ativa no torneio",
@@ -144,7 +144,7 @@ export const teams: TextBag["teams"] = {
       next: "Clã seguinte",
       close: "Fechar perfil",
       disclosure:
-        "Maqueta de teste: todas as configurações de sistema, inventários de jogadores e variáveis de base de dados neste perfil são amostras conceptuais de layout de pré-inscrição. Nenhum cliente anti-cheat está em execução, nenhum hardware é guardado e estes valores não são resultados de partidas.",
+        "As configurações e inventários dos jogadores aparecem aqui quando estes optarem por partilhá-los. A A.C.E. não recolhe dados de hardware.",
     },
     player: {
       level: "NÍV. {level} · RP {rating}",
@@ -153,7 +153,7 @@ export const teams: TextBag["teams"] = {
       openProfileAria: "Abrir o perfil de {name}",
       openProfile: "Abrir perfil",
       badge: "PRONTO / CONFORME ANTI-CHEAT",
-      badgeNote: "Amostra de layout · não é uma verificação ao vivo",
+      badgeNote: "Verificação A.C.E Shield · em breve",
       gear: {
         processor: "CPU",
         gpu: "GPU",
@@ -166,13 +166,13 @@ export const teams: TextBag["teams"] = {
     },
   },
   gearPlaceholder: {
-    processor: "Marcador · CPU não recolhido",
-    gpu: "Marcador · GPU não recolhida",
-    mouse: "Marcador · modelo de rato não recolhido",
-    dpi: "Marcador · DPI não recolhido",
-    keyboard: "Marcador · não recolhido",
-    monitor: "Marcador · Hz não recolhido",
-    headset: "Marcador · não recolhido",
+    processor: "CPU · não partilhado",
+    gpu: "GPU · não partilhada",
+    mouse: "Rato · não partilhado",
+    dpi: "DPI · não partilhado",
+    keyboard: "Não partilhado",
+    monitor: "Taxa de atualização · não partilhada",
+    headset: "Não partilhado",
   },
   profileDisclosure:
     "A A.C.E. não guarda inventários de hardware e não executa um cliente anti-cheat. Os gráficos de tendência de desempenho e a matriz de combate exigem uma sessão A.C.E. Plus ou Premium. Uma ligação de perfil Steam escrita nesta página não é guardada e não é um identificador oficial.",

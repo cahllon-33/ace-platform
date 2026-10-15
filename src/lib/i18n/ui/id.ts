@@ -123,7 +123,7 @@ export const UI_ID: Ui = {
       "repeat": "Pelanggaran berulang",
       "rule": "Aturan"
     },
-    "englishNote": "Teks klausul ditampilkan dalam bahasa Inggris; versi bahasa Inggris yang berlaku.",
+    "englishNote": "",
     "sections": [
       "Ruang lingkup dan definisi",
       "Kelayakan",

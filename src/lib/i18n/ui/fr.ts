@@ -123,7 +123,7 @@ export const UI_FR: Ui = {
       "repeat": "Récidive",
       "rule": "Article"
     },
-    "englishNote": "Le texte des clauses est affiché en anglais ; la version anglaise fait foi.",
+    "englishNote": "",
     "sections": [
       "Champ d’application et définitions",
       "Éligibilité",

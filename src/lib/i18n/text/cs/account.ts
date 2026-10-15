@@ -37,7 +37,7 @@ export const account: TextBag["account"] = {
     },
     settings: {
       title: "PROFIL NASTAVENÍ PŘEHLEDU",
-      billingNotLive: "Vyúčtování není v provozu. Všechny účty zůstávají v tarifu FREE, dokud nebude existovat pokladna.",
+      billingNotLive: "Platby budou brzy spuštěny. Do té doby zůstávají všechny účty na plánu Zdarma.",
       cancelReason: "Neexistuje žádné účtované předplatné, které by bylo možné zrušit. Pokladna není implementována.",
       cancelButton: "Zrušit předplatné",
     },
@@ -72,7 +72,7 @@ export const account: TextBag["account"] = {
       description: "Složka hráče A.C.E. Relace Plus a Premium odemykají grafy trendů telemetrie.",
     },
     kicker: "Identita hráče",
-    bannerPlaceholder: "Zástupný banner Steam · nejde o grafiku Valve",
+    bannerPlaceholder: "Banner profilu · již brzy",
     levelBadge: "ÚROVEŇ {level}",
     premiumBadge: "PREMIUM",
     rosterLevel: "Úroveň v soupisce {level}.",

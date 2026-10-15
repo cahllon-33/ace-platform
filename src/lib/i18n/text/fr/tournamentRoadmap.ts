@@ -21,7 +21,7 @@ export const tournamentRoadmap = {
     {
       title: "Grande finale Apex",
       status: "VERROUILLÉ",
-      body: "La grande finale se joue au meilleur des cinq. Aucun prix en argent, en skin ou en jeton n’est financé.",
+      body: "La grande finale se joue au meilleur des cinq. Les prix sont confirmés sur la page de l'événement lorsqu'ils sont annoncés.",
     },
   ],
 };

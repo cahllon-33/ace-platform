@@ -37,7 +37,7 @@ export const account: TextBag["account"] = {
     },
     settings: {
       title: "대시보드 설정 프로필",
-      billingNotLive: "결제는 운영 중이 아닙니다. 결제 기능이 생기기 전까지 모든 계정은 무료로 유지됩니다.",
+      billingNotLive: "결제는 곧 열립니다. 그때까지 모든 계정은 무료 플랜으로 유지됩니다.",
       cancelReason: "해지할 유료 구독이 없습니다. 결제는 구현되어 있지 않습니다.",
       cancelButton: "구독 해지",
     },
@@ -72,7 +72,7 @@ export const account: TextBag["account"] = {
       description: "A.C.E. 플레이어 신상 파일입니다. Plus 및 Premium 세션에서는 텔레메트리 추세 그래프가 잠금 해제됩니다.",
     },
     kicker: "플레이어 신원",
-    bannerPlaceholder: "Steam 배너 자리표시 · Valve 아트워크 아님",
+    bannerPlaceholder: "프로필 배너 · 곧 출시",
     levelBadge: "레벨 {level}",
     premiumBadge: "PREMIUM",
     rosterLevel: "로스터 레벨 {level}.",

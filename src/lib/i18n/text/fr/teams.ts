@@ -4,7 +4,7 @@ export const teams: TextBag["teams"] = {
   meta: {
     title: "Gestion d'escouade A.C.E.",
     description:
-      "Espace conceptuel d'escouade 5v5. Les effectifs, les agents libres et les badges anti-triche sont des maquettes d'aperçu. Les invitations en direct exigent une session Steam vérifiée.",
+      "Votre espace d'escouade 5v5. Les invitations exigent une session Steam vérifiée ; les contrôles anti-triche arriveront avec A.C.E Shield.",
   },
   hero: {
     kicker: "ÉQUIPES",
@@ -47,7 +47,7 @@ export const teams: TextBag["teams"] = {
     facts: {
       email: "Aucun e-mail n'est envoyé. La lettre Premium reste sur /premium/receipt.",
       charge:
-        "Rien n'est facturé. Premium à $7 par mois est un prix d'affichage. Le paiement n'est pas en ligne, et le palier enregistré ne change pas.",
+        "Premium coûte $7 par mois. La facturation ouvrira bientôt ; rien n'est débité aujourd'hui.",
       board:
         "Un clan enregistré est une fiche d'effectif. Il n'est pas placé sur le tableau de 100 équipes. Ce tableau affiche toujours 0 inscrite tant qu'aucune saison n'est ouverte.",
       steam:
@@ -55,7 +55,7 @@ export const teams: TextBag["teams"] = {
       roster:
         "La place 1 est le capitaine connecté. Les places 2 à 5 doivent déjà avoir un compte A.C.E. Les invitations restent en attente jusqu'à ce que chaque joueur accepte.",
       badge:
-        "Le badge sur une place est un échantillon de mise en page. Ce n'est pas un contrôle anti-triche en direct, et rien n'est téléchargé.",
+        "Les badges de place deviendront de vrais contrôles A.C.E Shield au lancement de l'anti-triche.",
       support:
         "Ouvrez Assistance ou Contact sur ce site. Une invite d'assistance n'ouvre pas de ticket, et le texte saisi dans Contact n'est pas transmis.",
       rating:
@@ -79,7 +79,7 @@ export const teams: TextBag["teams"] = {
     meta: {
       title: "Championnat A.C.E. — élimination directe élite à 100 équipes",
       description:
-        "Maquette d'élimination directe à 100 équipes. Cliquez sur un clan pour ouvrir son effectif, puis ouvrez chaque profil de joueur. Inscriptions : 0 sur 100.",
+        "Le tournoi à élimination de 100 équipes. Cliquez sur un clan pour ouvrir son effectif, puis chaque profil de joueur. Les inscriptions ouvriront bientôt.",
     },
     intro: {
       title: "CHAMPIONNAT A.C.E. — ÉLIMINATION DIRECTE ÉLITE À 100 ÉQUIPES",
@@ -87,7 +87,7 @@ export const teams: TextBag["teams"] = {
       formatValue: "Matrice de tableau à 100 équipes",
       briefTitle: "Brief opérationnel à 100 équipes",
       briefBody:
-        "Une seule maquette compétitive couvre l'ensemble des 100 équipes. À l'ouverture des inscriptions, les 28 premiers clans acceptés sont exemptés du premier tour et passent directement au deuxième. Les 72 autres clans jouent le premier tour. Les noms sur les places non pourvues sont des étiquettes provisoires, pas des inscrits. Le règlement complet se trouve sous l'arbre. Aucun lobby de match n'est ouvert et aucune cagnotte n'est financée.",
+        "Un seul format compétitif couvre les 100 équipes. À l'ouverture des inscriptions, les 28 premiers clans acceptés sont exemptés du 1er tour et passent au 2e tour. Les 72 autres clans jouent le 1er tour. Les noms sur les places libres sont provisoires jusqu'à l'inscription des clans. Le règlement complet se trouve sous l'arbre. Les lobbies de match ouvriront avec la bêta compétitive, et les prix sont confirmés pour chaque événement.",
     },
     timeline: {
       ariaLabel: "Calendrier de lancement du tournoi",
@@ -101,17 +101,17 @@ export const teams: TextBag["teams"] = {
         finals: { title: "Grande finale Apex", state: "VERROUILLÉ" },
       },
       disclaimer:
-        "L'étape 01 s'anime à titre d'aperçu de mise en page. Les inscriptions ne sont pas ouvertes (0 sur 100). Les étapes 02 à 04 sont verrouillées. La Grande finale Apex n'affiche qu'un montant conceptuel de $50,000 — aucune cagnotte n'est financée.",
+        "L'étape 01 ouvre en premier au début des inscriptions. Les étapes 02–04 suivent. Les dotations sont confirmées sur la page de l'événement une fois annoncées.",
     },
     bracket: {
-      kicker: "Élimination directe à 100 équipes · aperçu de mise en page",
+      kicker: "Élimination à 100 équipes · bientôt",
       title: "Matrice de tableau à 100 équipes",
       statusUnavailable:
-        "PostgreSQL n'est pas connecté. Les 100 places de concurrents utilisent des noms de clans provisoires, pas des équipes inscrites. Les scores des séries restent à 0.",
+        "Les inscriptions ouvriront bientôt. D'ici là, l'arbre affiche des clans d'aperçu.",
       statusEmpty:
-        "Aucun clan n'est encore enregistré. Les 100 noms de concurrents sont une maquette provisoire. Ce ne sont pas des participants enregistrés.",
+        "Les inscriptions ouvriront bientôt. D'ici là, l'arbre affiche des clans d'aperçu.",
       statusStored:
-        "{count} clans de la base de données sont placés en premier. Les places de concurrents restantes utilisent des noms provisoires. Les tours suivants restent ouverts jusqu'à l'enregistrement des matchs.",
+        "Les {count} clans inscrits sont placés en premier. Les places restantes affichent des clans d'aperçu. Les tours suivants se remplissent au fil des matchs enregistrés.",
       openSlot: "Place libre",
       openCompetitorSlot: "Place de concurrent libre",
       openRoster: "Ouvrir l'effectif de {name}",
@@ -132,7 +132,7 @@ export const teams: TextBag["teams"] = {
     },
     profile: {
       closeBackdrop: "Fermer le profil de l'équipe",
-      kicker: "Profil principal du championnat · échantillon de mise en page",
+      kicker: "Profil de championnat · aperçu",
       matchesPlayed: "Matchs joués",
       winRate: "Taux de victoire combiné",
       streak: "Série de tournoi active",
@@ -144,7 +144,7 @@ export const teams: TextBag["teams"] = {
       next: "Clan suivant",
       close: "Fermer le profil",
       disclosure:
-        "Maquette d'essai : toutes les configurations, inventaires de joueurs et variables de base de données de ce profil sont des échantillons conceptuels de mise en page de préinscription. Aucun client anti-triche ne tourne, aucun matériel n'est enregistré, et ces chiffres ne sont pas des résultats de matchs.",
+        "Les configurations et inventaires des joueurs apparaîtront ici s'ils choisissent de les partager. A.C.E. ne collecte aucune donnée matérielle.",
     },
     player: {
       level: "NIV. {level} · RP {rating}",
@@ -153,7 +153,7 @@ export const teams: TextBag["teams"] = {
       openProfileAria: "Ouvrir le profil de {name}",
       openProfile: "Ouvrir le profil",
       badge: "PRÊT / CONFORME ANTI-TRICHE",
-      badgeNote: "Échantillon de mise en page · pas un contrôle en direct",
+      badgeNote: "Contrôle A.C.E Shield · bientôt",
       gear: {
         processor: "CPU",
         gpu: "GPU",
@@ -166,13 +166,13 @@ export const teams: TextBag["teams"] = {
     },
   },
   gearPlaceholder: {
-    processor: "Emplacement · CPU non collecté",
-    gpu: "Emplacement · GPU non collecté",
-    mouse: "Emplacement · modèle de souris non collecté",
-    dpi: "Emplacement · DPI non collecté",
-    keyboard: "Emplacement · non collecté",
-    monitor: "Emplacement · Hz non collecté",
-    headset: "Emplacement · non collecté",
+    processor: "CPU · non partagé",
+    gpu: "GPU · non partagé",
+    mouse: "Souris · non partagée",
+    dpi: "DPI · non partagé",
+    keyboard: "Non partagé",
+    monitor: "Taux de rafraîchissement · non partagé",
+    headset: "Non partagé",
   },
   profileDisclosure:
     "A.C.E. n'enregistre pas d'inventaires matériels et n'exécute aucun client anti-triche. Les graphiques de tendance de performance et la matrice de combat exigent une session A.C.E. Plus ou Premium. Un lien de profil Steam saisi sur cette page n'est pas enregistré et n'est pas un identifiant officiel.",

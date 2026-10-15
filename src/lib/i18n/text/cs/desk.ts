@@ -5,18 +5,18 @@ export const desk: TextBag["desk"] = {
     meta: {
       title: "Tržiště A.C.E.",
       description:
-        "Karty zbraní jako ukázky cen. Nejsou to předměty Valve, nejde o financovanou odměnu a pokladna nestrhává platbu z karty.",
+        "Karty šampionátových odměn. Obchod a odměny se brzy otevřou.",
     },
     heroHonesty:
-      "Karty zbraní jsou ukázky cen. Nejsou to předměty Valve, nejsou v žádném inventáři a pokladna na této stránce nestrhává platbu z karty.",
-    prizeBanner: "🏆 UKÁZKA TURNAJOVÉ CENY — VITRÍNA ODMĚN PREMIUM",
+      "První pohled na připravované šampionátové odměny. Obchod se brzy otevře; dnes se nic neúčtuje.",
+    prizeBanner: "🏆 ŠAMPIONÁTOVÉ ODMĚNY · JIŽ BRZY",
     notice:
-      "Tyto ukázky nemají žádnou peněžní hodnotu. Žádný skin se nedoručuje, žádná cena není financována a tlačítko prohlédnutí nespouští nákup.",
+      "Tyto ukázky jsou náhledy bez peněžní hodnoty. Nic se nedoručuje ani neúčtuje a tlačítko prohlédnutí nespouští nákup.",
     items: {
       lore: {
         name: "Butterfly Knife | Lore",
         tag: "★ TAJNÉ DROPY ŽEBŘÍČKU",
-        price: "Pouze ukázka · bez peněžní hodnoty",
+        price: "Již brzy",
       },
       jungle: {
         name: "M4A1-S | Welcome to the Jungle",
@@ -49,14 +49,14 @@ export const desk: TextBag["desk"] = {
     meta: {
       title: "Podpora",
       description:
-        "Rozvržení centra nápovědy A.C.E. Pracoviště anti-cheatu, rankingových front a vyúčtování nejsou v provozu. Výzvy k požadavkům nevytvářejí případy.",
+        "Centrum nápovědy A.C.E. Podpora pro anti-cheat, hodnocené hry a platby se otevře se soutěžní betou.",
     },
   },
   contact: {
     meta: {
       title: "Kontakt",
       description:
-        "Firemní kontaktní terminál A.C.E. Odeslání formuláře je maketa v pískovišti a neodesílá e-mail ani neukládá telemetrii.",
+        "Kontaktujte A.C.E. Online formulář se brzy otevře.",
     },
   },
   contactEmail: {

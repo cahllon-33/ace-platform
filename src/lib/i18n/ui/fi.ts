@@ -123,7 +123,7 @@ export const UI_FI: Ui = {
       "repeat": "Toistuva rike",
       "rule": "Kohta"
     },
-    "englishNote": "Kohtien teksti näytetään englanniksi; englanninkielinen versio on sitova.",
+    "englishNote": "",
     "sections": [
       "Soveltamisala ja määritelmät",
       "Osallistumisoikeus",

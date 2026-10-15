@@ -5,18 +5,18 @@ export const desk: TextBag["desk"] = {
     meta: {
       title: "Rynek A.C.E.",
       description:
-        "Przykładowe karty broni jako nagrody. To nie przedmioty Valve ani finansowana nagroda, a kasa nie obciąża karty.",
+        "Karty nagród mistrzowskich. Sklep i nagrody ruszą wkrótce.",
     },
     heroHonesty:
-      "Karty broni to przykłady nagród. Nie są przedmiotami Valve, nie znajdują się w żadnym ekwipunku, a kasa na tej stronie nie obciąża karty.",
-    prizeBanner: "🏆 PRZYKŁAD NAGRODY TURNIEJOWEJ — WITRYNA NAGRÓD PREMIUM",
+      "Pierwsze spojrzenie na nadchodzące nagrody mistrzowskie. Sklep ruszy wkrótce; dziś nic nie jest pobierane.",
+    prizeBanner: "🏆 NAGRODY MISTRZOWSKIE · WKRÓTCE",
     notice:
-      "Te pokazowe przedmioty nie mają wartości pieniężnej. Żadna skórka nie jest dostarczana, żadna nagroda nie jest finansowana, a przycisk oględzin nie rozpoczyna zakupu.",
+      "Te prezentacje to podgląd bez wartości pieniężnej. Nic nie jest dostarczane ani pobierane, a przycisk podglądu nie rozpoczyna zakupu.",
     items: {
       lore: {
         name: "Butterfly Knife | Lore",
         tag: "★ TAJNE ZRZUTY Z TABELI",
-        price: "Tylko przykład · brak wartości pieniężnej",
+        price: "Wkrótce",
       },
       jungle: {
         name: "M4A1-S | Welcome to the Jungle",
@@ -49,14 +49,14 @@ export const desk: TextBag["desk"] = {
     meta: {
       title: "Pomoc",
       description:
-        "Układ centrum pomocy A.C.E. Antycheat, kolejki rankingowe i dział rozliczeń nie działają. Zgłoszenia nie tworzą spraw.",
+        "Centrum pomocy A.C.E. Wsparcie dla anti-cheatu, gier rankingowych i płatności ruszy wraz z betą rywalizacji.",
     },
   },
   contact: {
     meta: {
       title: "Kontakt",
       description:
-        "Korporacyjny terminal kontaktu A.C.E. Wysyłane formularze to makiety piaskownicy — nie wysyłają e-maili i nie zapisują telemetrii.",
+        "Kontakt z A.C.E. Formularz online ruszy wkrótce.",
     },
   },
   contactEmail: {

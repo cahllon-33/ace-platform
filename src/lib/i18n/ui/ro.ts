@@ -123,7 +123,7 @@ export const UI_RO: Ui = {
       "repeat": "Abatere repetată",
       "rule": "Clauză"
     },
-    "englishNote": "Textul clauzelor este afișat în engleză; versiunea în engleză este cea valabilă.",
+    "englishNote": "",
     "sections": [
       "Domeniu și definiții",
       "Eligibilitate",

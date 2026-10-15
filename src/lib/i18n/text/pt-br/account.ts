@@ -37,7 +37,7 @@ export const account: TextBag["account"] = {
     },
     settings: {
       title: "PERFIL DE CONFIGURAÇÕES DO PAINEL",
-      billingNotLive: "A cobrança não está ativa. Todas as contas continuam no plano GRATUITO até existir pagamento.",
+      billingNotLive: "A cobrança abre em breve. Até lá, todas as contas continuam no Grátis.",
       cancelReason: "Não existe assinatura cobrada para cancelar. O pagamento não está implementado.",
       cancelButton: "Cancelar assinatura",
     },
@@ -72,7 +72,7 @@ export const account: TextBag["account"] = {
       description: "Dossiê de jogador A.C.E. Sessões Plus e Premium desbloqueiam gráficos de tendência de telemetria.",
     },
     kicker: "Identidade do jogador",
-    bannerPlaceholder: "Marcador do banner da Steam · não é arte da Valve",
+    bannerPlaceholder: "Banner do perfil · em breve",
     levelBadge: "NÍVEL {level}",
     premiumBadge: "PREMIUM",
     rosterLevel: "Nível no elenco {level}.",

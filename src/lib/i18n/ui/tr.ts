@@ -123,7 +123,7 @@ export const UI_TR: Ui = {
       "repeat": "Tekrarlayan ihlal",
       "rule": "Madde"
     },
-    "englishNote": "Madde metinleri İngilizce gösterilir; bağlayıcı olan İngilizce sürümdür.",
+    "englishNote": "",
     "sections": [
       "Kapsam ve tanımlar",
       "Katılım şartları",

@@ -37,7 +37,7 @@ export const account: TextBag["account"] = {
     },
     settings: {
       title: "EINSTELLUNGEN DES BEFEHLSSTANDS",
-      billingNotLive: "Die Abrechnung ist nicht in Betrieb. Alle Konten bleiben KOSTENLOS, bis es eine Kasse gibt.",
+      billingNotLive: "Die Abrechnung startet bald. Bis dahin bleiben alle Konten auf Free.",
       cancelReason: "Es gibt kein abgerechnetes Abonnement zum Kündigen. Die Kasse ist nicht umgesetzt.",
       cancelButton: "Abonnement kündigen",
     },
@@ -72,7 +72,7 @@ export const account: TextBag["account"] = {
       description: "A.C.E.-Spielerakte. Plus- und Premium-Sitzungen schalten Telemetrie-Verlaufsgrafiken frei.",
     },
     kicker: "Spieleridentität",
-    bannerPlaceholder: "Platzhalter für das Steam-Banner · keine Grafik von Valve",
+    bannerPlaceholder: "Profilbanner · demnächst",
     levelBadge: "STUFE {level}",
     premiumBadge: "PREMIUM",
     rosterLevel: "Aufstellungsstufe {level}.",

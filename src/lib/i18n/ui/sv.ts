@@ -123,7 +123,7 @@ export const UI_SV: Ui = {
       "repeat": "Upprepad förseelse",
       "rule": "Punkt"
     },
-    "englishNote": "Punkternas text visas på engelska; den engelska versionen gäller.",
+    "englishNote": "",
     "sections": [
       "Omfattning och definitioner",
       "Behörighet",

@@ -350,7 +350,7 @@ export const codex: TextBag["codex"] = {
           heading: "O que está desenhado",
           paragraphs: [
             "Dois lados, cinco lugares cada um, e um rótulo de capitão no primeiro lugar. A lista de mapas e a linha de chat ao lado fazem parte do mesmo layout.",
-            "As linhas de segurança nessa página estão marcadas como layout, simulação ou conceito. Não são uma verificação em funcionamento.",
+            "As linhas de segurança dessa página indicam o respetivo estado. Nenhuma é ainda uma verificação ativa; consulte o roteiro em /anti-cheat.",
           ],
         },
         {
@@ -390,7 +390,7 @@ export const codex: TextBag["codex"] = {
           heading: "O relógio escrito",
           paragraphs: [
             "Quando uma partida tiver um início publicado, os cinco titulares de cada lado devem estar presentes 15 minutos antes desse início. Essa frase consta do código de competição. O relógio não arranca neste site, porque nenhuma partida está publicada.",
-            "Os nomes de exemplo na página de jogo são um layout. Não são pessoas à espera numa fila.",
+            "Os nomes apresentados na página de jogo são uma pré-visualização. Não são pessoas à espera numa fila.",
           ],
         },
         {
@@ -403,7 +403,7 @@ export const codex: TextBag["codex"] = {
     },
     "the-captain-on-the-desk": {
       title: "O capitão no balcão",
-      lede: "Um único capitão fala por um lado. No balcão atual, esse papel é um rótulo no layout, não um lobby ao vivo.",
+      lede: "Um capitão fala por cada lado. As funções do lobby ficam ativas com a beta competitiva.",
       sections: [
         {
           heading: "O que o código atribui",
@@ -448,7 +448,7 @@ export const codex: TextBag["codex"] = {
         {
           heading: "O que pode abrir",
           paragraphs: [
-            "Clique num clã na árvore para ver o seu plantel e depois abra um jogador. Os nomes provisórios são exemplos. Não são inscrições aceites.",
+            "Clique num clã da árvore para ver o plantel e depois abra um jogador. Os nomes nas vagas livres são pré-visualizações, não inscrições aceites.",
             "A árvore não atribui servidores e não envia nenhuma ligação de partida.",
           ],
         },

@@ -123,7 +123,7 @@ export const UI_HR: Ui = {
       "repeat": "Ponovljeni prekršaj",
       "rule": "Točka"
     },
-    "englishNote": "Tekst točaka prikazan je na engleskom; mjerodavna je engleska verzija.",
+    "englishNote": "",
     "sections": [
       "Opseg i definicije",
       "Pravo sudjelovanja",

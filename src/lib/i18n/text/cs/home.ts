@@ -34,7 +34,7 @@ export const home: TextBag["home"] = {
   charter: {
     kicker: "HLAVNÍ PRACOVNÍ PROSTOR LOBBY",
     title: "SOUTĚŽNÍ PÁROVACÍ LOBBY A DISPEČINK A.C.E.",
-    badge: "ŽÁDNÝ ŽIVÝ SERVER",
+    badge: "SERVERY · JIŽ BRZY",
     lede: "Tato lobby nepřiděluje server, nespouští klienta anti-cheatu a nevyplácí žádnou cenu.",
     modules: [
       {
@@ -49,7 +49,7 @@ export const home: TextBag["home"] = {
       },
       {
         kicker: "ODMĚNY VE SKINECH",
-        copy: "Karty skinů jsou příklady. Žádná zbraň se nedoručuje a žádná cena není financována.",
+        copy: "Šampionátové odměny se oznamují u každé akce.",
         chips: ["ŽÁDNÝ PŘEDMĚT SE NEDORUČUJE", "ŽÁDNÉ OVĚŘENÍ DROPU"],
       },
     ],
@@ -63,27 +63,27 @@ export const home: TextBag["home"] = {
     compareLink: "Zobrazit úplnou srovnávací tabulku",
   },
   loot: {
-    exampleCard: "Ukázková karta · nejde o předmět Valve",
+    exampleCard: "Již brzy",
     wear: {
       factoryNew: "Zcela nový",
       minimalWear: "Minimálně opotřebený",
     },
   },
   serverHub: {
-    badge: "ŽÁDNÉ ŽIVÉ HERNÍ SERVERY",
+    badge: "HERNÍ SERVERY · JIŽ BRZY",
     nodes: {
       fra: "Frankfurt – okrajový uzel",
       sto: "Stockholm – jádro",
       tlv: "Tel Aviv – přenosový uzel",
     },
-    tileAria: "{name}. Dlaždice rozvržení. Žádný server není připojen.",
-    tileSample: "Ukázka rozvržení {sample}. Žádný server není připojen.",
-    note: "Tato jména a ukázky latence jsou rozvržení. Tento web nemá herní server se 128 ticky ani regionální uzel.",
+    tileAria: "{name}. Server již brzy.",
+    tileSample: "Již brzy · {sample}",
+    note: "Regionální 128tickové servery přijdou se soutěžní betou.",
   },
   telemetry: {
-    badge: "NEJDE O ŽIVÉHO KLIENTA",
+    badge: "NÁHLED · JIŽ BRZY",
     lines: [
-      "AC-KERNEL: NEPŘIPOJENO",
+      "A.C.E SHIELD: VE VÝVOJI",
       "MATICE HARDWAROVÝCH ZÁKAZŮ: ŽÁDNÝ IDENTIFIKÁTOR SE NESBÍRÁ",
       "SPOJENÍ ŠTÍTU A.C.E.: ŽÁDNÝ KLIENT NENÍ NAINSTALOVÁN",
     ],
@@ -100,18 +100,18 @@ export const home: TextBag["home"] = {
     note: "Kampaňový text. Rankingové fronty, živé servery a ceny nejsou aktivní.",
     hudLeft: "CT — STANOVIŠTĚ A",
     hudRight: "T — TLAK STŘEDEM",
-    hudCenter: "PROSTŘEDÍ TÝMU · ROZVRŽENÍ",
+    hudCenter: "PROSTŘEDÍ TÝMU",
     plannedReason: "Rankingová hra zůstává zavřená, dokud nebude implementována a ověřena skutečná integrace anti-cheatu.",
   },
   howStatus: {
     label: "REGISTRAČNÍ SUBSYSTÉM A.C.E. — KALIBRAČNÍ ENGINE PŘIPRAVEN",
-    note: "Stavový widget rozvržení. Rankingové fronty, anti-cheat a živá kalibrace nejsou aktivní.",
+    note: "Hodnocené fronty se otevřou, jakmile poběží A.C.E Shield a kalibrace.",
   },
   shell: {
     primaryNav: "Hlavní",
     mobileNav: "Mobilní",
     elite: "ELITA",
-    notificationsTitle: "Žádný živý kanál oznámení",
+    notificationsTitle: "Oznámení · již brzy",
     notificationsAria: "Oznámení. Žádná nepřečtená.",
     connectProfileTitle: "Připojit profil",
     openProfileAria: "Otevřít profil ve velitelském pultu",

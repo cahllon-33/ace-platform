@@ -401,7 +401,7 @@
     },
     "the-captain-on-the-desk": {
       title: "The captain on the desk",
-      lede: "One captain speaks for a side. On the current desk that role is a label on the layout, not a live lobby.",
+      lede: "One captain speaks for a side. Lobby roles go live with the competitive beta.",
       sections: [
         {
           heading: "What the code assigns",
@@ -446,7 +446,7 @@
         {
           heading: "What you can open",
           paragraphs: [
-            "Click a clan on the tree to read its roster, then open a player. Staging names are samples. They are not accepted entries.",
+            "Click a clan on the tree to read its roster, then open a player. Names on open slots are previews, not accepted entries.",
             "The tree does not seed a server and does not send a match link.",
           ],
         },

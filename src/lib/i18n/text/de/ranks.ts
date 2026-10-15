@@ -4,17 +4,17 @@ export const ranks: TextBag["ranks"] = {
   meta: {
     title: "Wettkampfränge",
     description:
-      "Zehn A.C.E.-Ränge auf einem dreidimensionalen CSS-Drehteller, der sich durch Ziehen drehen lässt. Studio-GLTF-Modelle können die Standbilder ersetzen, sobald sie geliefert sind.",
+      "Die zehn A.C.E.-Ränge, von Iron Recruit bis A.C.E. Legend, mit Divisionen und Wertungsuntergrenzen.",
   },
   hero: {
     kicker: "KALIBRIERUNG",
     title: "Wettkampfränge",
-    lede: "Von Recruit bis A.C.E. Legend, Divisionen {divisions}. Jedes Emblem ist ein Konzept-Standbild auf einem dreidimensionalen CSS-Drehteller (ziehen oder Pfeiltasten). Ein GLTF-Modell kann später in den dokumentierten Platz eingesetzt werden — im Repository liegen noch keine Modelldateien. Die Wertungszahlen sind dein echtes Konto, wenn du angemeldet bist, sonst die Kalibrierungsuntergrenze.",
+    lede: "Zehn Stufen von Recruit bis A.C.E. Legend, jeweils mit den Divisionen {divisions}. Ziehe oder nutze die Pfeiltasten, um ein Emblem zu drehen. Angemeldet siehst du deine eigene Wertung, sonst die Untergrenze jeder Stufe.",
   },
   codexLink: "Kalibrierungs-Codex öffnen",
   document: {
     title: "Kalibrierungsdokument mit zehn Stufen",
-    body: "Die Maschinennamen sind die offizielle Leiter. Kristallnamen sind Warteraum-Grafik. Siegquoten-Plaketten auf der Tafel sind Schau-Beispiele, keine laufende Spielersuche. Bezahlte Kosmetik verschiebt niemals einen Spieler zwischen diesen Stufen.",
+    body: "Die Engine-Namen bilden die offizielle Rangleiter. Kristall-Aliasse sind Lobby-Grafik. Siegquoten auf der Tafel sind Schauwerte, bis das Ranglisten-Matchmaking startet. Bezahlte Kosmetik verschiebt einen Spieler nie zwischen diesen Stufen.",
     level: "STUFE {level} · {crystal}",
     detail: "Mindestwertung {rating}. Materialstudie: {material}.",
   },
@@ -34,7 +34,7 @@ export const ranks: TextBag["ranks"] = {
     selectEmblem: "Rangemblem A.C.E. {name} wählen, Stufe {level}",
     emblemAlt: "Eigenes kristallines 3D-Profilabzeichen von A.C.E., Stufe {level}, {crystal}, Emblem {name}",
     emblemAltLegend: "Eigenes kristallines 3D-Profilabzeichen von A.C.E., Emblem der Stufe {level}",
-    premium: "PREMIUM",
+    premium: "HÖCHSTE STUFE",
   },
   division: {
     label: "Division {division}",
@@ -46,8 +46,8 @@ export const ranks: TextBag["ranks"] = {
     targetWinRate: "{winRate} Ziel-Siegquote",
     calibrationTarget: "Kalibrierungsziel",
     floor: "Untergrenze",
-    samplesNote: "Layout-Beispiele. Keine laufende Telemetrie.",
-    progressMockup: "Fortschrittsmuster",
+    samplesNote: "Zielwerte für jede Stufe.",
+    progressMockup: "Fortschritt",
   },
   turntable: {
     stageLabel: "Umlaufendes Emblem {name}. Zum Drehen ziehen.",

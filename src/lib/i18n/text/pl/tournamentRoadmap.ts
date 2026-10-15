@@ -21,7 +21,7 @@ export const tournamentRoadmap = {
     {
       title: "Wielki finał na szczycie",
       status: "ZABLOKOWANE",
-      body: "Wielki finał jest rozgrywany w formacie BO5. Nie jest finansowana żadna nagroda w postaci gotówki, skórek ani tokenów.",
+      body: "Wielki finał rozgrywany jest do trzech wygranych (BO5). Nagrody są potwierdzane na stronie wydarzenia w chwili ogłoszenia.",
     },
   ],
 };

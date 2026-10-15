@@ -9,7 +9,7 @@ export const leaderboard: TextBag["leaderboard"] = {
   hero: {
     kicker: "ŽEBŘÍČEK",
     title: "Soutěžní tabule",
-    note: "Dokud není uložen účet Steam, vyplňují tuto tabuli místa z vitríny. Uložené hodnocení je nahradí. Země a hlavní zbraň jsou ukázky. Rendery zbraní jsou původní studiové obrázky A.C.E., ne skiny Valve. Tento web neukládá zabití, takže zbraň není zaznamenanou zbraní nejlepšího střelce.",
+    note: "Dokud hráči nepropojí Steam a nezískají hodnocení, vyplňují tabuli ukázková místa. Jejich země a zobrazená zbraň jsou ilustrativní. Rendery zbraní jsou původní tvorba studia A.C.E., nikoli skiny Valve. Zabití se zatím nezaznamenávají, takže zobrazená zbraň není statistikou nejlepšího fraggera.",
   },
   facts: {
     seats: "Místa",
@@ -33,10 +33,10 @@ export const leaderboard: TextBag["leaderboard"] = {
     showcase: "Vitrína",
   },
   weapon: {
-    sampleRender: "Ukázkový render",
+    sampleRender: "Typická zbraň",
     notStored: "Neuloženo",
     noKillSaved: "Žádné zabití není uloženo",
-    alt: "Ukázkový render {name}",
+    alt: "{name}",
   },
   countries: {
     il: "Izrael",
@@ -57,17 +57,17 @@ export const leaderboard: TextBag["leaderboard"] = {
     placeholder: "Zobrazované jméno",
   },
   seasonPreview: {
-    banner: "ŽEBŘÍČEK 1. SEZÓNY — ROZVRŽENÍ",
+    banner: "ŽEBŘÍČEK 1. SEZÓNY",
     noteLive:
-      "Jména propojená se Steam jsou uložené účty. Prázdná místa zůstávají označená jako vitrína. K/D se neukládá, takže tento ukazatel je jen rozvržení.",
+      "Jména propojená se Steamem jsou účty A.C.E. K/D se zobrazí, jakmile zápasové servery začnou zaznamenávat zabití.",
     noteSample:
-      "Ukázka rozvržení. 0 živých rankingových záznamů. Tyto údaje nejsou výsledkem sezóny a K/D se neukládá.",
+      "Výsledky 1. sezóny se zde objeví s odehranými hodnocenými zápasy.",
   },
   playerCard: {
-    kicker: "Náhled karty ověřeného hráče · smyšlené údaje",
+    kicker: "Náhled karty hráče",
     title: "Složka operátora",
     badge: "Premium",
-    note: "Pouze rozvržení. Tato čísla nejsou živou sezónou, živým Elo ani přihlášeným účtem. Rankingové párování není aktivní.",
+    note: "Tvoje karta se naplní skutečnými údaji po spuštění hodnoceného matchmakingu.",
     currentRank: "Aktuální hodnost",
     rankValue: "A.C.E. Legend (divize I)",
     competitiveRating: "Soutěžní hodnocení",

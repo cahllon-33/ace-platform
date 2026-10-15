@@ -4,7 +4,7 @@ export const teams: TextBag["teams"] = {
   meta: {
     title: "Zarządzanie składem A.C.E.",
     description:
-      "Koncepcyjna przestrzeń składu 5v5. Składy, wolni agenci i odznaki antycheatu to układy podglądu. Zaproszenia na żywo wymagają zweryfikowanej sesji Steam.",
+      "Przestrzeń Twojego składu 5v5. Zaproszenia wymagają zweryfikowanej sesji Steam; kontrole anti-cheat pojawią się wraz z A.C.E Shield.",
   },
   hero: {
     kicker: "DRUŻYNY",
@@ -47,7 +47,7 @@ export const teams: TextBag["teams"] = {
     facts: {
       email: "Nie jest wysyłany żaden e-mail. List Premium pozostaje pod adresem /premium/receipt.",
       charge:
-        "Nic nie jest pobierane. Premium za $7 miesięcznie to cena wyświetlana. Kasa nie działa, a zapisany poziom się nie zmienia.",
+        "Premium kosztuje $7 miesięcznie. Płatności ruszą wkrótce; dziś nic nie jest pobierane.",
       board:
         "Zapisany klan to wpis składu. Nie jest umieszczany w tabeli 100 drużyn. Ta tabela nadal pokazuje 0 zarejestrowanych, dopóki nie otworzy się sezon.",
       steam:
@@ -55,7 +55,7 @@ export const teams: TextBag["teams"] = {
       roster:
         "Miejsce 1 to zalogowany kapitan. Miejsca od 2 do 5 muszą już mieć konta A.C.E. Zaproszenia oczekują, dopóki każdy gracz ich nie zaakceptuje.",
       badge:
-        "Odznaka na miejscu to próbka układu. To nie jest działająca kontrola antycheatu i nic nie jest pobierane.",
+        "Odznaki miejsc staną się prawdziwymi kontrolami A.C.E Shield po uruchomieniu anti-cheatu.",
       support:
         "Otwórz Pomoc lub Kontakt na tej stronie. Zgłoszenie w Pomocy nie otwiera sprawy, a tekst wpisany w Kontakcie nie jest dostarczany.",
       rating:
@@ -79,7 +79,7 @@ export const teams: TextBag["teams"] = {
     meta: {
       title: "Mistrzostwa A.C.E. — elitarny turniej pucharowy 100 drużyn",
       description:
-        "Układ turnieju pucharowego dla 100 drużyn. Kliknij klan, aby otworzyć jego skład, a następnie otwórz profil każdego gracza. Rejestracja: 0 ze 100.",
+        "Turniej pucharowy na 100 drużyn. Kliknij klan, aby otworzyć jego skład, a potem profil każdego gracza. Zapisy ruszą wkrótce.",
     },
     intro: {
       title: "MISTRZOSTWA A.C.E. — ELITARNY TURNIEJ PUCHAROWY 100 DRUŻYN",
@@ -87,7 +87,7 @@ export const teams: TextBag["teams"] = {
       formatValue: "Matryca drabinki 100 drużyn",
       briefTitle: "Skrót operacyjny dla 100 drużyn",
       briefBody:
-        "Jeden układ rozgrywek obejmuje całe pole 100 drużyn. Gdy zapisy się otworzą, pierwsze 28 przyjętych klanów otrzyma wolny los w 1. rundzie i awansuje do 2. rundy. Pozostałe 72 klany grają w 1. rundzie. Nazwy na nieobsadzonych miejscach to etykiety robocze, a nie zarejestrowani uczestnicy. Pełny kod znajduje się pod drabinką. Żadna poczekalnia meczowa nie jest otwarta i żadna pula nagród nie jest finansowana.",
+        "Jeden układ turniejowy obejmuje całe pole 100 drużyn. Po otwarciu zapisów pierwsze 28 przyjętych klanów otrzymuje wolny los w 1. rundzie i awansuje do 2. rundy. Pozostałe 72 klany grają w 1. rundzie. Nazwy na wolnych miejscach to symbole zastępcze do czasu rejestracji klanów. Pełny regulamin znajduje się pod drabinką. Lobby meczowe ruszą wraz z betą rywalizacji, a nagrody są potwierdzane dla każdego wydarzenia.",
     },
     timeline: {
       ariaLabel: "Harmonogram startu turnieju",
@@ -101,17 +101,17 @@ export const teams: TextBag["teams"] = {
         finals: { title: "Wielki finał Apex", state: "ZABLOKOWANE" },
       },
       disclaimer:
-        "Etap 01 pulsuje jako podgląd układu. Zapisy nie są otwarte (0 ze 100). Etapy 02–04 są zablokowane. Wielki finał Apex zawiera wyłącznie koncepcyjną kwotę $50,000 — żadna pula nagród nie jest finansowana.",
+        "Etap 01 rusza jako pierwszy po otwarciu zapisów. Następnie etapy 02–04. Pule nagród są potwierdzane na stronie wydarzenia po ogłoszeniu.",
     },
     bracket: {
-      kicker: "Turniej pucharowy 100 drużyn · podgląd układu",
+      kicker: "Puchar 100 drużyn · wkrótce",
       title: "Matryca drabinki 100 drużyn",
       statusUnavailable:
-        "PostgreSQL nie jest połączony. 100 miejsc dla uczestników używa roboczych nazw klanów, a nie zarejestrowanych drużyn. Wyniki serii pozostają na 0.",
+        "Zapisy ruszą wkrótce. Do tego czasu drabinka pokazuje przykładowe klany.",
       statusEmpty:
-        "Nie zapisano jeszcze żadnych klanów. 100 nazw uczestników to roboczy układ. To nie jest pole zgłoszonych drużyn.",
+        "Zapisy ruszą wkrótce. Do tego czasu drabinka pokazuje przykładowe klany.",
       statusStored:
-        "Klany z bazy danych ({count}) są umieszczane jako pierwsze. Pozostałe miejsca używają nazw roboczych. Kolejne rundy pozostają otwarte, dopóki mecze nie zostaną zarejestrowane.",
+        "Najpierw rozmieszczanych jest {count} zapisanych klanów. Pozostałe miejsca pokazują przykładowe klany. Kolejne rundy wypełniają się wraz z rejestrowaniem meczów.",
       openSlot: "Wolne miejsce",
       openCompetitorSlot: "Wolne miejsce uczestnika",
       openRoster: "Otwórz skład: {name}",
@@ -132,7 +132,7 @@ export const teams: TextBag["teams"] = {
     },
     profile: {
       closeBackdrop: "Zamknij profil drużyny",
-      kicker: "Główny profil mistrzostw · próbka układu",
+      kicker: "Profil mistrzowski · podgląd",
       matchesPlayed: "Rozegrane mecze",
       winRate: "Łączny procent wygranych",
       streak: "Aktywna seria turniejowa",
@@ -144,7 +144,7 @@ export const teams: TextBag["teams"] = {
       next: "Następny klan",
       close: "Zamknij profil",
       disclosure:
-        "Makieta piaskownicy: wszystkie konfiguracje systemów, ekwipunki graczy i zmienne bazy danych w tym profilu to koncepcyjne próbki układu sprzed rejestracji. Żaden klient antycheatu nie działa, żaden sprzęt nie jest zapisywany, a te liczby nie są wynikami meczów.",
+        "Sprzęt i ekwipunek graczy pojawią się tutaj, gdy zdecydują się je udostępnić. A.C.E. nie zbiera danych o sprzęcie.",
     },
     player: {
       level: "POZ. {level} · RP {rating}",
@@ -153,7 +153,7 @@ export const teams: TextBag["teams"] = {
       openProfileAria: "Otwórz profil gracza {name}",
       openProfile: "Otwórz profil",
       badge: "GOTOWY / ZGODNY Z ANTYCHEATEM",
-      badgeNote: "Próbka układu · to nie działająca kontrola",
+      badgeNote: "Kontrola A.C.E Shield · wkrótce",
       gear: {
         processor: "CPU",
         gpu: "GPU",
@@ -166,13 +166,13 @@ export const teams: TextBag["teams"] = {
     },
   },
   gearPlaceholder: {
-    processor: "Wypełniacz · CPU niezbierane",
-    gpu: "Wypełniacz · GPU niezbierane",
-    mouse: "Wypełniacz · model myszy niezbierany",
-    dpi: "Wypełniacz · DPI niezbierane",
-    keyboard: "Wypełniacz · niezbierane",
-    monitor: "Wypełniacz · Hz niezbierane",
-    headset: "Wypełniacz · niezbierane",
+    processor: "CPU · nie udostępniono",
+    gpu: "GPU · nie udostępniono",
+    mouse: "Mysz · nie udostępniono",
+    dpi: "DPI · nie udostępniono",
+    keyboard: "Nie udostępniono",
+    monitor: "Odświeżanie · nie udostępniono",
+    headset: "Nie udostępniono",
   },
   profileDisclosure:
     "A.C.E. nie przechowuje spisów sprzętu i nie uruchamia klienta antycheatu. Wykresy trendów wydajności i matryca walki wymagają sesji A.C.E. Plus lub Premium. Link do profilu Steam wpisany na tej stronie nie jest zapisywany i nie jest oficjalnym identyfikatorem.",

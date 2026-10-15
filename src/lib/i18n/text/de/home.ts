@@ -34,7 +34,7 @@ export const home: TextBag["home"] = {
   charter: {
     kicker: "HAUPTARBEITSBEREICH DES WARTERAUMS",
     title: "A.C.E.-WARTERAUM FÜR WETTKAMPF-SPIELERSUCHE UND EINSATZZENTRALE",
-    badge: "KEIN LAUFENDER SERVER",
+    badge: "SERVER · DEMNÄCHST",
     lede: "Dieser Warteraum weist keinen Server zu, startet keinen Anti-Cheat-Client und zahlt keinen Preis aus.",
     modules: [
       {
@@ -49,7 +49,7 @@ export const home: TextBag["home"] = {
       },
       {
         kicker: "SKIN-BELOHNUNGEN",
-        copy: "Skin-Karten sind Beispiele. Es wird keine Waffe ausgeliefert und kein Preis finanziert.",
+        copy: "Meisterschaftsbelohnungen werden mit jedem Event angekündigt.",
         chips: ["KEIN GEGENSTAND AUSGELIEFERT", "KEINE FUNDPRÜFUNG"],
       },
     ],
@@ -63,27 +63,27 @@ export const home: TextBag["home"] = {
     compareLink: "Vollständige Vergleichstabelle ansehen",
   },
   loot: {
-    exampleCard: "Beispielkarte · kein Valve-Gegenstand",
+    exampleCard: "Demnächst",
     wear: {
       factoryNew: "Fabrikneu",
       minimalWear: "Minimale Gebrauchsspuren",
     },
   },
   serverHub: {
-    badge: "KEINE LAUFENDEN SPIELSERVER",
+    badge: "GAMESERVER · DEMNÄCHST",
     nodes: {
       fra: "Frankfurt Edge",
       sto: "Stockholm Core",
       tlv: "Tel Aviv Relay",
     },
-    tileAria: "{name}. Layout-Kachel. Es ist kein Server verbunden.",
-    tileSample: "Layout-Beispiel {sample}. Es ist kein Server verbunden.",
-    note: "Diese Namen und Latenzbeispiele sind ein Layout. Diese Website hat keinen 128-Takt-Spielserver und keinen regionalen Knoten.",
+    tileAria: "{name}. Server folgt in Kürze.",
+    tileSample: "Demnächst · {sample}",
+    note: "Regionale 128-Tick-Server kommen mit der Wettkampf-Beta.",
   },
   telemetry: {
-    badge: "KEIN LAUFENDER CLIENT",
+    badge: "VORSCHAU · DEMNÄCHST",
     lines: [
-      "AC-KERN: NICHT VERBUNDEN",
+      "A.C.E SHIELD: IN ENTWICKLUNG",
       "MATRIX DER HARDWARE-SPERREN: ES WIRD KEINE KENNUNG ERFASST",
       "A.C.E.-SCHILD-VERBINDUNG: ES IST KEIN CLIENT INSTALLIERT",
     ],
@@ -100,18 +100,18 @@ export const home: TextBag["home"] = {
     note: "Kampagnentext. Rangliste-Warteschlangen, laufende Server und Preise sind nicht aktiv.",
     hudLeft: "CT — BOMBENPLATZ A",
     hudRight: "T — VORSTOSS MITTE",
-    hudCenter: "KADERUMGEBUNG · LAYOUT",
+    hudCenter: "SQUAD-UMGEBUNG",
     plannedReason: "Ranglistenspiele bleiben geschlossen, bis eine echte Anti-Cheat-Anbindung umgesetzt und geprüft ist.",
   },
   howStatus: {
     label: "A.C.E.-REGISTRIERUNGSSYSTEM — KALIBRIERUNGSMASCHINE BEREIT",
-    note: "Layout-Statusanzeige. Rangliste-Warteschlangen, Anti-Cheat und laufende Kalibrierung sind nicht aktiv.",
+    note: "Ranglisten-Warteschlangen öffnen, sobald A.C.E Shield und Kalibrierung live sind.",
   },
   shell: {
     primaryNav: "Hauptnavigation",
     mobileNav: "Mobile Navigation",
     elite: "ELITE",
-    notificationsTitle: "Kein laufender Benachrichtigungs-Feed",
+    notificationsTitle: "Benachrichtigungen · demnächst",
     notificationsAria: "Benachrichtigungen. Null ungelesen.",
     connectProfileTitle: "Profil verbinden",
     openProfileAria: "Profil im Befehlsstand öffnen",

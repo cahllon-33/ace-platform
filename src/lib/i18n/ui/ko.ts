@@ -123,7 +123,7 @@ export const UI_KO: Ui = {
       "repeat": "반복 위반",
       "rule": "조항"
     },
-    "englishNote": "조항 본문은 영어로 표시되며, 영어 원문이 우선합니다.",
+    "englishNote": "",
     "sections": [
       "적용 범위 및 정의",
       "참가 자격",

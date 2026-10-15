@@ -123,7 +123,7 @@ export const UI_PL: Ui = {
       "repeat": "Ponowne wykroczenie",
       "rule": "Punkt"
     },
-    "englishNote": "Treść punktów jest wyświetlana po angielsku; wiążąca jest wersja angielska.",
+    "englishNote": "",
     "sections": [
       "Zakres i definicje",
       "Uprawnienia",

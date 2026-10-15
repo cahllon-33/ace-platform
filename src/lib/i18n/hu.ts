@@ -37,7 +37,7 @@ export const HU: MessageBag = {
  step1:
  "Hozz létre fiókot a hivatalos Steam OpenID használatával. Az A.C.E. soha nem kér Steam jelszót.",
  step2:
- "Végezd el az ellenőrzést, amikor a szolgáltatók rendelkezésre állnak. Az itteni személyazonossági kártyák csak elrendezések.",
+ "A személyazonosság-ellenőrzés az A.C.E Shielddel érkezik.",
  step3:
  "Ellenőrzött munkamenet után a parancsnoki pulton állíts össze 5v5-ös csapatot.",
  step4:
@@ -57,11 +57,11 @@ export const HU: MessageBag = {
  winRate: "Győzelmi arány",
  kd: "K/D",
  statsEmpty:
- "Nullák, amíg nincs csatlakoztatva ellenőrzött Steam profil. A 124 / 68% / 1.42 mintaszámok nem élő adatként jelennek meg.",
+ "A statisztikáid az első rögzített mérkőzéseid után jelennek meg itt.",
  statsLive: "Győzelmek és vereségek az A.C.E. fiókból. A K/D még nincs tárolva.",
  membership: "TAGSÁG",
  membershipLede:
- "Ingyenes $0. Plus $4/hó. Premium $7/hó. A megjelenített árak egész számra rögzítettek. Fizetős csomaggal nem lehet értékelést vagy könnyebb ellenfeleket vásárolni. A fizetés nem élő.",
+ "Ingyenes $0. Plus $4/hó. Premium $7/hó. A fizetős csomagok soha nem vásárolnak értékelést, könnyebb ellenfeleket vagy elsőbbséget a sorban. A fizetés hamarosan elindul.",
  graphite: "GRAFIT",
  freePlan: "INGYENES CSOMAG",
  goldTrim: "ARANY SZEGÉLY",
@@ -89,7 +89,7 @@ export const HU: MessageBag = {
  "A korai hozzáférés elsőbbségi kalibrációs sora hamarosan megnyílik Steam webes engedélyezéssel.",
  closeModal: "Bezárás",
  membershipDisclosure:
- "A megjelenített árak rögzítve vannak: Plus $4/hó és Premium $7/hó. A fizetés, a díjak finanszírozása, a Gmail-riasztások, a Discord-webhookok és a rangsorolt sorok ezen a weboldalon nem élők. A rangsorolt létszám továbbra is {online}.",
+ "Az árak rögzítettek: Ingyenes $0, Plus $4/hó, Premium $7/hó. A fizetés hamarosan elindul; ma semmit nem terhelünk. A fizetős csomagok soha nem vásárolnak versenyelőnyt.",
  integrity: "INTEGRITÁS",
  uiHeartbeat: "FELÜLETI SZÍVVERÉS: ÉLŐ",
  aiInfra: "AI-INFRASTRUKTÚRA: NINCS ÜZEMBE HELYEZVE",
@@ -165,7 +165,7 @@ export const HU: MessageBag = {
  teamB: "CSAPAT B · SHADOW LEGION (BEMUTATÓ)",
  ready: "KÉSZ",
  vs: "VS",
- loopingClock: "Ismétlődő elrendezési óra. A sor hiba esetén zárva van.",
+ loopingClock: "A sor a versenyszintű bétával nyílik meg.",
  teamChat: "CSAPATCSEVEGÉS · MAKETT",
  identityGrid: "SZEMÉLYAZONOSSÁGI RÁCS · ELRENDEZÉS",
  emailVerified: "E-mail-kód ellenőrizve (elrendezés)",
@@ -174,13 +174,13 @@ export const HU: MessageBag = {
  matchSecurity: "MECCSBIZTONSÁG: SZIMULÁTOR",
  messageTeam: "Üzenet a csapatnak… (letiltva)",
  rankSystemMeta: "RANGRENDSZER · 10 FOKOZAT / FOKOZATONKÉNT 3 DIVÍZIÓ / 30 SZINT",
- playKicker: "ELRENDEZÉS-ELŐNÉZET · NEM ÉLŐ MECCS · A SOR HIBA ESETÉN ZÁRVA",
+ playKicker: "MECCSSZOBA · VERSENYSZINTŰ BÉTA HAMAROSAN",
  region: "Régió",
  mode: "Mód",
  antiCheat: "Anti-cheat",
- simulator: "Szimulátor",
+ simulator: "Előnézet",
  teamANote:
- "Makett hívójelek. A kapitány a bejelentkezett Steam nevet használja, ha van munkamenet.",
+ "A kapitányi hely a Steam-nevedet használja, ha be vagy jelentkezve.",
  teamBNote: "Bemutató ellenfelek. Nem élő ellenfélkeret.",
  rules: "Szabályok",
  privacy: "Adatvédelem",
@@ -191,7 +191,7 @@ export const HU: MessageBag = {
  supportKicker: "A.C.E. TÁMOGATÁS · SÚGÓKÖZPONT",
  supportTitle: "Technikai támogatási központ",
  supportLede:
- "Tudásközpont a tervezett kernelbeállításhoz, a kalibrációhoz és a számlázási kérdésekhez. Az anti-cheat, a rangsorolt sorok és a fizetés nem élő.",
+ "Tudásközpont a beállításhoz, kalibráláshoz és előfizetéshez. A csalásellenes rendszer, a rangsorolt sorok és a fizetés hamarosan érkeznek.",
  supportCat1Title: "Kernel anti-cheat beállítása",
  supportCat1Body:
  "Az illesztőprogram-telepítés kérdései, a hardvermegfelelés és a Secure Boot telemetria módosításai itt jövőbeli kernelirányelvként vannak leírva. Az A.C.E. nem ad ki működő anti-cheat klienst, nem telepít illesztőprogramokat, és ezen a weboldalon nem gyűjt Secure Boot vagy HWID adatot.",
@@ -204,9 +204,9 @@ export const HU: MessageBag = {
  supportTicket: "TÁMOGATÁSI JEGY KÜLDÉSE >",
  supportTicketTitle: "Adminisztrátori felülvizsgálati burok",
  supportTicketBody:
- "Az adminisztrátori felülvizsgálati burok csak elrendezés-visszaigazolásként aktív. A jegysor nincs személyzettel ellátva, és ez a felugró ablak nem hoz létre ügyet, és nem küld e-mailt.",
+ "A jegyalapú támogatás a versenyszintű bétával indul. Addig a kapcsolatfelvételi oldalon érsz el minket.",
  supportDisclosure:
- "A.C.E. TÁMOGATÁSI ÉRTESÍTÉS: A súgócikkek, a jegyfelkérések és a felülvizsgálati burkok ezen az oldalon koncepcionális támogatási elrendezések. Nem működik élő anti-cheat, meccskereső vagy számlázási pult.",
+ "Az élő támogatás a csalásellenes rendszerhez, a párosításhoz és a fizetéshez a versenyszintű bétával indul.",
  contactKicker: "A.C.E. KAPCSOLAT · VÁLLALATI TERMINÁL",
  contactTitle: "Vállalati kapcsolati terminál",
  contactLede:
@@ -225,30 +225,30 @@ export const HU: MessageBag = {
  contactSend: "BIZTONSÁGOS TELEMETRIAÜZENET KÜLDÉSE",
  contactCorporate:
  "A.C.E. Competitions Ltd. | Biztonságos e-mail-átjáró: support@ace-platform.gg | Cégjegyzékszám: függőben",
- contactModalTitle: "Az üzenet a homokozó sorában vár",
+ contactModalTitle: "Online kapcsolatfelvételi űrlap · hamarosan",
  contactModalBody:
- "Ez az űrlap nem küld e-mailt, nem tárol megkeresést, és nem tölt fel telemetriát. A support@ace-platform.gg címet akkor használd, ha közzétesznek egy személyzettel ellátott postafiókot. Az A.C.E. soha nem kér Steam jelszót.",
+ "Az űrlapról küldött üzenetek még nem kerülnek kézbesítésre. Az űrlap az ügyfélszolgálatunkkal együtt indul. Az A.C.E. soha nem kéri a Steam-jelszavadat.",
  contactDisclosure:
- "A.C.E. KAPCSOLATI ÉRTESÍTÉS: Az űrlapmezők, a megkereséstípusok és a küldés művelete koncepcionális előregisztrációs elrendezések. Nincs csatlakoztatva üzenetbusz vagy telemetriai vezeték.",
+ "Az online kapcsolatfelvételi űrlap hamarosan elindul. Az A.C.E. soha nem kéri a Steam-jelszavadat.",
  closeOverlay: "Bezárás",
  loadingAce: "A.C.E. betöltése...",
  supportCategory: "{n}. KATEGÓRIA",
- shopKicker: "A.C.E. BOLT · ELRENDEZÉS-ELŐNÉZET",
+ shopKicker: "A.C.E. BOLT · HAMAROSAN",
  shopTitle: "A.C.E. PIACTÉR — ELIT FEGYVERTESTRESZABÁS",
  shopLede:
  "Fegyverkártyák, profilkeretek és ligahozzáférési címkék előnézete. Ezek közül egyik sem kézbesített tárgy.",
  shopNote:
- "A megjelenített tagsági árak továbbra is Plus $4/hó és Premium $7/hó. Fizetős kozmetikummal nem lehet értékelést, könnyebb ellenfeleket vagy sorban állási elsőbbséget vásárolni. A fizetés nem élő.",
+ "Előfizetés: Plus $4/hó és Premium $7/hó. A kozmetikai tárgyak soha nem vásárolnak értékelést, könnyebb ellenfeleket vagy elsőbbséget a sorban. A fizetés hamarosan elindul.",
  shopTabSkins: "FEGYVERSKINEK",
  shopTabCosmetics: "PROFILKOZMETIKUMOK",
  shopTabAccess: "LIGAHOZZÁFÉRÉS",
  shopVolatility: "Piaci volatilitás: a biztonságos motor ellenőrizve",
- shopDelivery: "Azonnali Valve-kézbesítés szimulációja",
+ shopDelivery: "Kézbesítés · hamarosan",
  shopInspect: "ESZKÖZ VIZSGÁLATA >",
- shopInspectKicker: "Fizetésszimuláció · homokozó makett",
+ shopInspectKicker: "Tárgy előnézete · hamarosan",
  shopInspectTitle: "Eszköz vizsgálata",
  shopInspectCopy:
- "Minden tranzakció, leltár és kosár koncepcionális homokozó makett. Ez a réteg nem terhel bankkártyát, nem mozgat tárgyat, és nem hoz létre rendelést.",
+ "A bolt hamarosan megnyílik. Egyelőre semmit nem lehet megvenni vagy kifizetni.",
  shopDisclosure:
  "A.C.E. BOLTRENDSZER-ÉRTESÍTÉS: Az ezen az oldalon látható skineszközök, bolti pénznemek, vásárlási felkérések és virtuális leltárak szigorúan titkosított, koncepcionális vizuális tervek, kizárólag előnézetre. Pénzügyi fizetési útvonal nem létezik, és tényleges digitális javak nincsenek finanszírozva, terjesztve vagy értékesítve.",
  shopItemIndex: "{n}. TÁRGY",
@@ -264,8 +264,8 @@ export const HU: MessageBag = {
  squadTabAgents: "SZABADÜGYNÖK-TOBORZÁS",
  squadRating: "Versenyértékelés {rating}",
  squadAcBadge: "ANTI-CHEAT REGISZTRÁLVA",
- squadAcNote: "Elrendezésminta · nem élő ellenőrzés",
- squadSample: "Előnézeti helykitöltő",
+ squadAcNote: "A.C.E Shield-ellenőrzés · hamarosan",
+ squadSample: "Szabad hely",
  squadOpenSlot: "NYITOTT HELY",
  squadStatsKicker: "Csapatstatisztikai mátrix",
  squadStatsTitle: "Klántelemetria",
@@ -274,7 +274,7 @@ export const HU: MessageBag = {
  squadStreak: "Aktív bajnoki sorozat",
  squadStreakValue: "3 · elrendezésminta",
  squadStatsNote:
- "A győzelmi arány és a sorozat számai koncepcionális előnézeti értékek. Nem élő meccseredmények.",
+ "A győzelmi arány és a sorozatok a rögzített mérkőzésekből töltődnek fel.",
  squadInviteLabel: "SZABADÜGYNÖK MEGHÍVÁSA STEAMID ALAPJÁN",
  squadInviteNote:
  "Csak hivatalos Steam OpenID. Illessz be egy SteamID értéket, amely már egy A.C.E. fiókhoz van kötve. Soha ne adj meg Steam jelszót.",
@@ -292,7 +292,7 @@ export const HU: MessageBag = {
  tourneyKicker: "Verseny",
  tourneyTitle: "Bajnokságok",
  tourneyLede:
- "A 128 helyes, egyenes kieséses piramis ennek az útvonalnak a hivatalos bemutató fája. Automatikusan a lap szélességéhez igazodik, hogy a hatszögű csapatcímkék a képernyőn maradjanak. Egy címkére kattintva megnyílik a bajnoki réteg; mind az öt keretkártya teljes képernyős elrendezésprofilra visz, mintastatisztikával és helykitöltő felszereléssel. A regisztráció 0 a 100-ból. A ranghoz kötött események akkor használják az értékelőmotort, amikor a versenyek ténylegesen megnyílnak. Készpénzdíjat nem hirdetünk, és nem finanszírozunk.",
+ "Egyenes kieséses, 128 helyes ágrajz, amely a képernyődhöz igazodik. Válassz egy csapatot a bajnoki kártyája és kerete megnyitásához. A regisztráció a versenyszintű bétával nyílik; a rangkorlátos események a versenyek indulásakor az A.C.E.-értékelést használják. A díjakat eseményenként, bejelentéskor erősítjük meg.",
  tourneyFormat: "Formátum",
  tourneyFormatValue: "128 helyes egyenes kiesés (minta)",
  tourneyCapacity: "Kapacitás",
@@ -339,12 +339,12 @@ export const HU: MessageBag = {
  "Az eredeti szöveg, az elrendezés, az emblémák és a grafikák ezen a weboldalon az A.C.E. Competitions Ltd. tulajdonát képezik. Írásos engedély nélkül másolni őket nem szabad. Az A.C.E. érvényesítheti ezt a jogot. A Counter-Strike 2 és a pályanevei a Valve tulajdonát képezik.",
  corporateStrip:
  "A.C.E. Competitions Ltd. | Támogatás: support@ace-platform.gg | Nem áll kapcsolatban a Valve-val",
- shieldAi: "AI-INFRASTRUKTÚRA: NINCS ÜZEMBE HELYEZVE",
+ shieldAi: "MI-INFRASTRUKTÚRA · HAMAROSAN",
  shieldNeural: "NEURÁLIS ELEMZÉS: NEM FUT",
  shieldClient: "Anti-cheat kliens",
  shieldClientValue: "Nincs telepítve",
  shieldServer: "Meccsszerver",
- shieldServerValue: "Nincs csatlakoztatva",
+ shieldServerValue: "Hamarosan",
  shieldHardware: "Hardvervizsgálat",
  shieldHardwareValue: "Nincs gyűjtve",
  shieldNote:
@@ -353,14 +353,14 @@ export const HU: MessageBag = {
  tvOff: "Az élő közvetítés ki van kapcsolva",
  pathsKicker: "ÖT ÚTVONAL EZEN AZ OLDALON",
  statusOpenId: "STEAM OPENID",
- statusNotConnected: "NINCS CSATLAKOZTATVA",
+ statusNotConnected: "FEJLESZTÉS ALATT",
  statusWrittenRule: "ÍROTT SZABÁLY",
- statusTeamLayout: "100 CSAPATOS ELRENDEZÉS",
+ statusTeamLayout: "100 CSAPATOS MEZŐNY",
  statusPublicSite: "NYILVÁNOS OLDAL",
  identityLive: "Steam OpenID munkamenet. Ez az értékelés a tárolt fiókérték.",
  identityEmpty: "Csatlakozz a Steam OpenID használatával, mielőtt értékelés mentődne erre a fiókra.",
  tierEmpty: "Nincs tárolt fokozat, amíg nincs Steam munkamenet.",
- seasonLayout: "Ez a dátum elrendezés. Szezonóra nem fut.",
+ seasonLayout: "Az 1. szezon időpontjait hamarosan bejelentjük.",
  rpEmpty: "— RP",
  rankProtocolTitle: "A.C.E. ÉRTÉKELÉSI PROTOKOLL",
  rankProtocolBody:
@@ -369,6 +369,6 @@ export const HU: MessageBag = {
  competitiveRating: "Versenyértékelés",
  targetWinRate: "Célzott győzelmi arány",
  ratingStored: "Tárolt fiókértékelés. Ezen az oldalon nem került alkalmazásra meccseredmény.",
- ratingFloor: "Fokozat alsó határa. Nincs betöltve fiókértékelés.",
+ ratingFloor: "A szint alsó határa.",
  divisionTarget: "Divízió célja. Nem meccseredményekből származik.",
 };

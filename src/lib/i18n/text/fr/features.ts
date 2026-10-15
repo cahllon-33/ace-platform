@@ -19,7 +19,7 @@ export const features: TextBag["features"] = {
         "Les couches de noyau prévues comprennent une poignée de main en mode utilisateur qui lie le SteamID 64 bits vérifié au compte A.C.E., une surface d'attestation de l'identifiant matériel (HWID), une liste de surveillance des signatures des familles de triche connues et une route d'éligibilité de serveur à serveur protégée par un secret partagé. Une validation de signature de triche, un contrôle d'intégrité refusé ou un identifiant d'appareil usurpé est spécifié pour entraîner un changement immédiat du statut du compte en BANNED ou PERM_BANNED et, lorsqu'un produit facturé existera, la perte totale du temps d'abonnement prépayé sans aucune obligation de remboursement. Aucun client de ce type n'est livré avec ce site. Les cartes de téléchargement Bientôt ne sont qu'une mise en page.",
       ],
       stats: [
-        { label: "ÉTAT DU NOYAU", value: "Non déployé" },
+        { label: "ÉTAT DU NOYAU", value: "En développement" },
         { label: "FILE CLASSÉE", value: "Fermée en cas d'échec" },
         { label: "STOCKAGE HWID", value: "Non collecté sur ce site" },
       ],
@@ -28,7 +28,7 @@ export const features: TextBag["features"] = {
       title: "Liaison biométrique par scan facial",
       paragraphs: [
         "Le scan facial est une couche future de liaison d'identité spécifiée, pas un produit caméra sur ce site. La conception prévue ne lierait, qu'après un consentement explicite et un examen juridique distinct, un modèle facial vérifié par détection du vivant au même compte A.C.E. qui détient déjà un SteamID vérifié par le serveur. L'objectif est de résister au partage de compte utilisé pour contourner une restriction antérieure. A.C.E. ne collecte aujourd'hui ni images faciales, ni empreintes faciales numériques, ni adresses e-mail, ni empreintes matérielles. La politique de confidentialité en vigueur reste la stricte nécessité : uniquement le SteamID 64 bits vérifié et le nom d'affichage Steam public.",
-        "Si le scan facial est un jour mis en œuvre, il ne remplacera pas Steam OpenID, ne servira pas à vendre de la publicité comportementale et ne débloquera pas à lui seul les files classées. L'admission classée exige toujours une voie anti-triche vérifiée. Tant que cet examen n'existe pas, tout panneau de scan facial dans le lobby est un emplacement de mise en page.",
+        "Si Face Scan est un jour mis en œuvre, il ne remplacera pas Steam OpenID, ne servira pas à vendre de la publicité comportementale et n'ouvrira pas à lui seul les files classées. L'accès aux parties classées exigera toujours un parcours Anti-Cheat vérifié. Tant que cet examen n'existe pas, tout panneau Face Scan du lobby est un aperçu de design.",
       ],
     },
     calibration: {
@@ -50,18 +50,18 @@ export const features: TextBag["features"] = {
     },
   },
   loot: {
-    kicker: "Cosmétiques d'essai · paiement simulé",
+    kicker: "Cosmétiques · bientôt",
     title: "ARCHITECTURE DE BUTIN A.C.E. — DROPS D'ARMES",
-    lede: "Noms de finitions originaux A.C.E. sur des types d'armes CS2. Ce ne sont pas des objets Valve, ni des skins échangeables, ni de vrais prix. Les paiements sont simulés.",
-    mockDrop: "Drop fictif",
+    lede: "Finitions originales A.C.E., disponibles avec la boutique. Les cosmétiques n'affectent jamais la compétition.",
+    mockDrop: "Bientôt",
     multiplierLabel: "Exigences du multiplicateur de taux de victoire",
     ladderLabel: "Drops hebdomadaires de l'échelle",
     multiplierValue: "Modèle {multiplier}×",
-    ladderValue: "Créneau hebdomadaire · fictif",
-    checkout: "Paiement simulé",
+    ladderValue: "Emplacement hebdomadaire · bientôt",
+    checkout: "Paiement · bientôt",
   },
   communityRail: {
-    kicker: "Fil de mise en page · pas en direct",
+    kicker: "Fil d'actualité · bientôt",
     newsTitle: "Dernières actualités de l'échelle",
     newsItems: [
       "Le tableau reste vide — 0 équipe sur 100.",
@@ -69,29 +69,29 @@ export const features: TextBag["features"] = {
     ],
     prizesTitle: "Prix de skins quotidiens",
     prizesBody:
-      "Aucun prix n'est attribué. Les cartes cosmétiques de ce site sont des maquettes d'essai. Les paiements sont simulés.",
+      "Les récompenses et le paiement ouvriront avec la Saison 1.",
   },
   identityPreview: {
     badge: "Aperçu — non confirmé",
     cards: {
       faceScan: {
         title: "Scan facial en direct vérifié",
-        copy: "La détection du vivant de l'identité est un contrôle prévu auprès d'un prestataire. Cette carte est un aperçu de mise en page. Aucun scan n'a été effectué et aucune donnée biométrique n'est stockée.",
+        copy: "La détection du vivant est une vérification prévue auprès d'un prestataire. Aucune donnée biométrique n'est collectée aujourd'hui.",
       },
       hardwareId: {
         title: "Identifiant matériel lié",
-        copy: "La liaison de l'appareil est un signal d'intégrité prévu. Cette carte est un aperçu de mise en page. Aucune empreinte matérielle n'a été collectée.",
+        copy: "L'association d'appareil est un signal d'intégrité prévu. Aucun identifiant matériel n'est collecté aujourd'hui.",
       },
     },
   },
   preview: {
     fallbackTitle: "Aperçu",
-    kicker: "Destination de mise en page · pas un produit en direct",
+    kicker: "Bientôt",
     returnHome: "Retour à l'accueil",
     pages: {
       support: {
         title: "Assistance",
-        body: "Aucun guichet d'assistance public n'est encore tenu. Ce lien est un emplacement de destination du pied de page.",
+        body: "Notre support public ouvrira avec la bêta compétitive.",
       },
       "anti-cheat": {
         title: "Présentation de l'anti-triche",
@@ -103,11 +103,11 @@ export const features: TextBag["features"] = {
       },
       "mobile-app": {
         title: "Application mobile",
-        body: "Il n'y a pas d'application mobile A.C.E. Ceci n'est qu'un lien de mise en page du pied de page.",
+        body: "L'application mobile A.C.E. est prévue dans la feuille de route.",
       },
       news: {
         title: "Actualités",
-        body: "Il n'y a pas de salle de presse en direct. Ceci n'est qu'un lien de mise en page du pied de page.",
+        body: "La salle de presse A.C.E. ouvrira bientôt.",
       },
       about: {
         title: "À propos",
@@ -115,7 +115,7 @@ export const features: TextBag["features"] = {
       },
       advertising: {
         title: "Publicité",
-        body: "Aucun espace publicitaire n'est à vendre. Ceci n'est qu'un lien de mise en page du pied de page.",
+        body: "Les demandes de partenariat et de publicité ouvriront bientôt.",
       },
       developers: {
         title: "Développeurs",
@@ -123,11 +123,11 @@ export const features: TextBag["features"] = {
       },
       press: {
         title: "Presse",
-        body: "Il n'y a ni dossier de presse ni salle de presse. Ceci n'est qu'un lien de mise en page du pied de page.",
+        body: "Le kit presse arrive bientôt.",
       },
       jobs: {
         title: "Emplois",
-        body: "Aucune offre d'emploi n'est publiée. Ceci n'est qu'un lien de mise en page du pied de page.",
+        body: "Les postes ouverts seront publiés ici.",
       },
       terms: {
         title: "Conditions d'utilisation",

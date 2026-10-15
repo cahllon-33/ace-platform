@@ -5,18 +5,18 @@ export const desk: TextBag["desk"] = {
     meta: {
       title: "Mercado A.C.E.",
       description:
-        "Cartões de armas como exemplo de prêmio. Não são itens da Valve, não são uma recompensa financiada, e o pagamento não cobra nenhum cartão.",
+        "Cards de recompensas do campeonato. A loja e as recompensas abrem em breve.",
     },
     heroHonesty:
-      "Os cartões de armas são exemplos de prêmio. Não são itens da Valve, não estão em um inventário, e o pagamento nesta página não cobra nenhum cartão.",
-    prizeBanner: "🏆 EXEMPLO DE PRÊMIO DE TORNEIO — VITRINE DE RECOMPENSAS PREMIUM",
+      "Uma primeira olhada nas próximas recompensas do campeonato. A loja abre em breve; nada é cobrado hoje.",
+    prizeBanner: "🏆 RECOMPENSAS DO CAMPEONATO · EM BREVE",
     notice:
-      "Estas vitrines não têm valor em dinheiro. Nenhuma skin é entregue, nenhum prêmio é financiado, e o botão de inspecionar não inicia uma compra.",
+      "Estas vitrines são prévias sem valor monetário. Nada é entregue nem cobrado, e o botão de inspecionar não inicia uma compra.",
     items: {
       lore: {
         name: "Butterfly Knife | Lore",
         tag: "★ DROPS SECRETOS DA CLASSIFICAÇÃO",
-        price: "Apenas exemplo · sem valor em dinheiro",
+        price: "Em breve",
       },
       jungle: {
         name: "M4A1-S | Welcome to the Jungle",
@@ -49,14 +49,14 @@ export const desk: TextBag["desk"] = {
     meta: {
       title: "Suporte",
       description:
-        "Layout da central de ajuda da A.C.E. As centrais de Anti-Cheat, filas ranqueadas e cobrança não estão ativas. As solicitações de chamado não criam casos.",
+        "Central de ajuda A.C.E. O suporte de anti-cheat, ranqueadas e cobrança abre com a beta competitiva.",
     },
   },
   contact: {
     meta: {
       title: "Contato",
       description:
-        "Terminal de contato corporativo da A.C.E. Os envios do formulário são simulações de teste e não enviam e-mail nem armazenam telemetria.",
+        "Fale com a A.C.E. O formulário online abre em breve.",
     },
   },
   contactEmail: {

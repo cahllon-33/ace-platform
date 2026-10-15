@@ -123,7 +123,7 @@ export const UI_HU: Ui = {
       "repeat": "Ismételt",
       "rule": "Pont"
     },
-    "englishNote": "A pontok szövege angolul jelenik meg; az angol változat az irányadó.",
+    "englishNote": "",
     "sections": [
       "Hatály és fogalmak",
       "Részvételi jogosultság",

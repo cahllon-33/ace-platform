@@ -21,7 +21,7 @@ export const tournamentRoadmap = {
     {
       title: "Velké vrcholné finále",
       status: "UZAMČENO",
-      body: "Velké finále se hraje na tři vítězné mapy (BO5). Není financována žádná cena v hotovosti, skinech ani tokenech.",
+      body: "Velké finále se hraje na tři vítězné mapy (BO5). Ceny se potvrzují na stránce akce, jakmile jsou oznámeny.",
     },
   ],
 };

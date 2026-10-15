@@ -350,7 +350,7 @@ export const codex: TextBag["codex"] = {
           heading: "Lo que se dibuja",
           paragraphs: [
             "Dos bandos, cinco asientos cada uno y una etiqueta de capitán en el primer asiento. La lista de mapas y la línea de chat que los acompañan forman parte del mismo diseño.",
-            "Las filas de seguridad de esa página están marcadas como diseño, simulación o concepto. No son una comprobación en funcionamiento.",
+            "Las filas de seguridad de esa página indican su estado. Ninguna es todavía una comprobación activa; consulta la hoja de ruta en /anti-cheat.",
           ],
         },
         {
@@ -390,7 +390,7 @@ export const codex: TextBag["codex"] = {
           heading: "El reloj escrito",
           paragraphs: [
             "Cuando una partida tenga un inicio publicado, los cinco titulares de un bando deben estar presentes 15 minutos antes de ese inicio. Esa frase figura en el código de competición. El reloj no se pone en marcha en este sitio web, porque no hay ninguna partida publicada.",
-            "Los nombres de muestra de la página de juego son un diseño. No son personas esperando en una cola.",
+            "Los nombres que aparecen en la página de juego son una vista previa. No son personas esperando en una cola.",
           ],
         },
         {
@@ -403,7 +403,7 @@ export const codex: TextBag["codex"] = {
     },
     "the-captain-on-the-desk": {
       title: "El capitán en la mesa",
-      lede: "Un único capitán habla en nombre de un bando. En la mesa actual, ese papel es una etiqueta del diseño, no un lobby en vivo.",
+      lede: "Un capitán habla por cada bando. Los roles del lobby se activarán con la beta competitiva.",
       sections: [
         {
           heading: "Lo que asigna el código",
@@ -448,7 +448,7 @@ export const codex: TextBag["codex"] = {
         {
           heading: "Lo que puedes abrir",
           paragraphs: [
-            "Haz clic en un clan del árbol para ver su plantilla y, después, abre un jugador. Los nombres provisionales son muestras. No son inscripciones aceptadas.",
+            "Haz clic en un clan del cuadro para ver su plantilla y luego abre un jugador. Los nombres en plazas libres son vistas previas, no inscripciones aceptadas.",
             "El árbol no asigna ningún servidor y no envía ningún enlace de partida.",
           ],
         },
