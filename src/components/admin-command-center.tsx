@@ -180,40 +180,45 @@ function PlayerDrawer({
         <h2 id={titleId} className="ace-admin-dialog-title">
           {t("dossierTitle")}
         </h2>
-        <div className={`acx-hero is-${operatorFor(player.id)}`}>
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
-            className="acx-hero-operator"
-            src={`/operators/operator-${operatorFor(player.id)}-640.webp`}
-            srcSet={`/operators/operator-${operatorFor(player.id)}-640.webp 640w, /operators/operator-${operatorFor(player.id)}-1280.webp 1280w`}
-            sizes="420px"
-            alt={t("r23Operator")}
-          />
-          <div className="acx-hero-badge">
-            <AdminRankBadge level={player.rank} art={player.art} size={112} label={t("r23Rank")} />
+        <div className="acx-hero-wrap">
+          <div className={`acx-hero is-${operatorFor(player.id)}`}>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              className="acx-hero-operator"
+              src={`/operators/operator-${operatorFor(player.id)}-1280.webp`}
+              srcSet={`/operators/operator-${operatorFor(player.id)}-640.webp 640w, /operators/operator-${operatorFor(player.id)}-1280.webp 1280w`}
+              sizes="(max-width: 48rem) 100vw, 46rem"
+              alt={t("r23Operator")}
+            />
+            <span className="acx-hero-vignette" aria-hidden="true" />
           </div>
-          <div className="acx-hero-id">
-            <PlayerAvatar src={player.avatarUrl ?? null} name={player.username} alt="" size={44} />
-            <div>
-              <p className="acx-dossier-name">{player.username}</p>
-              <p className="acx-muted">{player.email}</p>
-            </div>
+          <div className="acx-hero-badge">
+            <AdminRankBadge level={player.rank} art={player.art} size={132} label={t("r23Rank")} />
+          </div>
+        </div>
+        <div className="acx-nameplate">
+          {player.avatarUrl ? <PlayerAvatar src={player.avatarUrl} name={player.username} alt="" size={48} /> : null}
+          <div className="acx-nameplate-id">
+            <p className="acx-dossier-name">{player.username}</p>
+            <p className="acx-nameplate-rank">
+              {tierOf(player.rank).name} · {t("colRank")} {player.rank}
+              {player.art === "premium" ? <span className="acx-premium-tag">{t("r23Premium")}</span> : null}
+            </p>
+            <p className="acx-muted">{player.email}</p>
+          </div>
+          <div className="acx-nameplate-side">
+            <span className="acx-rp">{player.rating.toLocaleString("en-US")} RP</span>
+            <span className={`acx-sub-chip is-${player.tier.toLowerCase()}`}>{t(TIER_KEY[player.tier])}</span>
           </div>
         </div>
         <dl className="acx-dossier-stats acx-dossier-stats-4">
-          <div>
-            <dt>{t("r23Rank")}</dt>
-            <dd>
-              {player.rank} · {tierOf(player.rank).name}
-              {player.art === "premium" ? <span className="acx-premium-tag">{t("r23Premium")}</span> : null}
-            </dd>
-          </div>
           <div><dt>{t("drawerRp")}</dt><dd>{player.rating.toLocaleString("en-US")}</dd></div>
           <div>
             <dt>{t("r23Wl")}</dt>
-            <dd>{player.wins == null || player.losses == null || player.wins + player.losses === 0 ? <span className="acx-muted">{t("r23WlEmpty")}</span> : `${player.wins} / ${player.losses}`}</dd>
+            <dd>{player.wins == null || player.losses == null || player.wins + player.losses === 0 ? <span className="acx-muted">{t("r23WlEmpty")}</span> : <span className="acx-wl"><b>{player.wins}</b> / <i>{player.losses}</i></span>}</dd>
           </div>
           <div><dt>{t("r23Subscription")}</dt><dd>{t(TIER_KEY[player.tier])}</dd></div>
+          <div><dt>{t("dossierStatus")}</dt><dd><span className={`acx-badge is-${player.security.toLowerCase()}`}>{t(SECURITY_KEY[player.security])}</span></dd></div>
         </dl>
         <p className="acx-note">{t("dossierReadOnly")}</p>
         <dl className="ace-admin-dossier">
@@ -234,6 +239,7 @@ function PlayerDrawer({
             <dd>{t(SECURITY_KEY[player.security])}</dd>
           </div>
         </dl>
+        <div className="acx-drawer-actions">
         <button
           type="button"
           className="ace-admin-gold"
@@ -242,13 +248,14 @@ function PlayerDrawer({
         >
           {player.security === "Banned" ? t("unbanAction") : t("banAction")}
         </button>
+        <button type="button" className="ace-admin-close" onClick={onClose} suppressHydrationWarning>
+          {t("close")}
+        </button>
+        </div>
         <p className="ace-admin-info-chip ace-admin-info-chip-inline">
           <strong>{t("chipDb")}</strong>
           <span>{t(staging ? "chipDbStaging" : "chipDbBody")}</span>
         </p>
-        <button type="button" className="ace-admin-close" onClick={onClose} suppressHydrationWarning>
-          {t("close")}
-        </button>
       </aside>
     </div>,
     document.body,
