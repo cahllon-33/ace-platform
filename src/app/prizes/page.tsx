@@ -23,7 +23,7 @@ export default function PrizesPage() {
       <p className="mt-4 max-w-3xl text-sm leading-7 text-[#A9ABB3]">
         These cards show how a funded championship could reward its winners. Today they are previews only.
         A.C.E. does not hold these items, no prize pool is funded, and nothing on this page can be won,
-        bought, or claimed. A prize is announced only after it is funded, under section 15 of the{" "}
+        bought, or claimed. A prize is announced only after it is funded, under section 18 of the{" "}
         <Link href="/rules" className="text-[#FFD700] underline underline-offset-4">
           competition rulebook
         </Link>

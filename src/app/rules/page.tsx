@@ -1,19 +1,16 @@
 import type { Metadata } from "next";
-import { RulesLocaleDocument } from "@/components/rules-locale-document";
-import { getText } from "@/server/locale";
+import { CompetitionRulebook } from "@/components/competition-rulebook";
 
-export async function generateMetadata(): Promise<Metadata> {
-  const text = await getText();
-  return {
-    title: text.rules.meta.title,
-    description: text.rules.meta.description,
-  };
-}
+export const metadata: Metadata = {
+  title: "Competition Rulebook",
+  description:
+    "The A.C.E. competition rulebook: eligibility, rosters, map veto, match procedure, pauses, conduct, integrity, disputes, penalties, broadcast, and prizes.",
+};
 
 export default function RulesPage() {
   return (
     <main className="px-4 py-14 sm:px-6">
-      <RulesLocaleDocument />
+      <CompetitionRulebook />
     </main>
   );
 }

@@ -8505,3 +8505,187 @@ html[dir="rtl"] .ace-hub-card-face {
   line-height: 1.5;
   color: #c9cad0;
 }
+
+/* Competition rulebook */
+.ace-rulebook {
+  overflow: hidden;
+  border: 1px solid rgba(255, 215, 0, 0.35);
+  border-radius: 1.5rem;
+  background: #020203;
+  box-shadow: 0 0 80px rgba(255, 215, 0, 0.12);
+}
+
+.ace-rulebook-head {
+  border-bottom: 1px solid rgba(255, 215, 0, 0.25);
+  background: #121318;
+  padding: 2.5rem 1.5rem;
+}
+
+.ace-rulebook-layout {
+  display: grid;
+  gap: 2rem;
+  padding: 2rem 1.5rem 2.5rem;
+}
+
+@media (min-width: 1024px) {
+  .ace-rulebook-head {
+    padding: 2.5rem;
+  }
+  .ace-rulebook-layout {
+    grid-template-columns: 15rem minmax(0, 1fr);
+    padding: 2.5rem;
+  }
+  .ace-rulebook-toc {
+    position: sticky;
+    top: 6rem;
+    align-self: start;
+    max-height: calc(100vh - 8rem);
+    overflow-y: auto;
+  }
+}
+
+.ace-rulebook-toc {
+  min-width: 0;
+  border: 1px solid rgba(255, 215, 0, 0.2);
+  border-radius: 1rem;
+  background: #0b0b0d;
+  padding: 1rem;
+}
+
+.ace-rulebook-toc-title {
+  margin-bottom: 0.5rem;
+  font-size: 0.68rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #ffd700;
+}
+
+.ace-rulebook-toc ol {
+  display: grid;
+  gap: 0.15rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.ace-rulebook-toc a {
+  display: block;
+  border-radius: 0.5rem;
+  padding: 0.3rem 0.45rem;
+  font-size: 0.82rem;
+  color: #c9cad0;
+}
+
+.ace-rulebook-toc a:hover {
+  background: rgba(255, 215, 0, 0.08);
+  color: #ffd76a;
+}
+
+.ace-rulebook-toc a span {
+  display: inline-block;
+  min-width: 1.6rem;
+  color: #ffd700;
+}
+
+.ace-rulebook-body {
+  display: grid;
+  gap: 2.5rem;
+  min-width: 0;
+}
+
+.ace-rule-section {
+  scroll-margin-top: 6rem;
+}
+
+.ace-rule-section h2 {
+  border-bottom: 1px solid rgba(255, 215, 0, 0.2);
+  padding-bottom: 0.5rem;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #f5f3ec;
+}
+
+.ace-rule-section h2 span {
+  color: #ffd700;
+}
+
+.ace-rule-summary {
+  margin-top: 0.9rem;
+  font-size: 0.9rem;
+  line-height: 1.7;
+  color: #a9abb3;
+}
+
+.ace-rule-clauses {
+  display: grid;
+  gap: 0.75rem;
+  margin: 1rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.ace-rule-clauses li {
+  display: grid;
+  grid-template-columns: 2.6rem minmax(0, 1fr);
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  line-height: 1.7;
+  color: #c9cad0;
+}
+
+.ace-rule-num {
+  font-family: ui-monospace, monospace;
+  font-size: 0.8rem;
+  line-height: 1.9;
+  color: #ffd700;
+}
+
+.ace-rule-pending {
+  display: inline-block;
+  margin-left: 0.5rem;
+  border: 1px solid rgba(255, 215, 0, 0.45);
+  border-radius: 999px;
+  padding: 0 0.5rem;
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  vertical-align: middle;
+  color: #ffd700;
+}
+
+.ace-penalty-wrap {
+  margin-top: 1rem;
+  overflow-x: auto;
+  border: 1px solid rgba(255, 215, 0, 0.2);
+  border-radius: 1rem;
+}
+
+.ace-penalty-table {
+  width: 100%;
+  min-width: 40rem;
+  border-collapse: collapse;
+  font-size: 0.84rem;
+}
+
+.ace-penalty-table th,
+.ace-penalty-table td {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+  padding: 0.6rem 0.8rem;
+  text-align: left;
+  vertical-align: top;
+  color: #c9cad0;
+}
+
+.ace-penalty-table thead th {
+  background: #121318;
+  font-size: 0.66rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #ffd700;
+}
+
+.ace-penalty-table tbody th {
+  font-weight: 600;
+  color: #f5f3ec;
+}
