@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
+import { getUi } from "@/server/locale";
 import { CompetitionRulebook } from "@/components/competition-rulebook";
 
-export const metadata: Metadata = {
-  title: "Competition Rulebook",
-  description:
-    "The A.C.E. competition rulebook: eligibility, rosters, map veto, match procedure, pauses, conduct, integrity, disputes, penalties, broadcast, and prizes.",
-};
+export async function generateMetadata(): Promise<Metadata> {
+  const ui = await getUi();
+  return { title: ui.rules.title, description: ui.rules.intro };
+}
 
 export default function RulesPage() {
   return (
