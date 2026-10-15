@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useEffect, useRef, useState, type ReactNode } from "react";
+import { useState, type ReactNode } from "react";
 import { AceLogo } from "@/components/ace-logo";
 import { LanguageMenu } from "@/components/language-menu";
 import { useI18n } from "@/components/locale-provider";
@@ -14,78 +14,29 @@ function isActive(pathname: string, href: string) {
   return href === "/" ? pathname === "/" : pathname === href || pathname.startsWith(`${href}/`);
 }
 
+/**
+ * Two-tier header (R22). Top row: logo + utilities. Second row (desktop): every destination visible,
+ * grouped Compete / Explore, gold active underline. No overflow menu. Mobile: hamburger with all links.
+ */
 export function SiteHeader({ auth }: { auth: ReactNode }) {
   const pathname = usePathname() ?? "/";
   const [open, setOpen] = useState(false);
-  const [moreOpen, setMoreOpen] = useState(false);
-  const moreRef = useRef<HTMLDivElement>(null);
   const { t } = useI18n();
   const copy = useText().home.shell;
   const ui = useUi();
-  const moreActive = moreNav.some((item) => isActive(pathname, item.href));
 
-  useEffect(() => {
-    if (!moreOpen) return;
-    function onDown(event: PointerEvent) {
-      if (moreRef.current && !moreRef.current.contains(event.target as Node)) setMoreOpen(false);
-    }
-    function onKey(event: KeyboardEvent) {
-      if (event.key === "Escape") setMoreOpen(false);
-    }
-    window.addEventListener("pointerdown", onDown);
-    window.addEventListener("keydown", onKey);
-    return () => {
-      window.removeEventListener("pointerdown", onDown);
-      window.removeEventListener("keydown", onKey);
-    };
-  }, [moreOpen]);
+  const groups = [
+    { label: ui.nav.compete, items: siteNav },
+    { label: ui.nav.explore, items: moreNav },
+  ];
 
   return (
-    <header className="sticky top-0 z-[90] border-b border-white/10 bg-[#070708]/92 backdrop-blur-xl">
-      <div className="mx-auto flex h-16 max-w-[90rem] items-center justify-between gap-4 px-4 sm:px-6">
+    <header className="ace-header sticky top-0 z-[90]">
+      <div className="ace-header-top mx-auto flex h-16 max-w-[90rem] items-center justify-between gap-4 px-4 sm:px-6">
         <Link href="/" className="min-w-0 shrink-0 rounded-sm no-underline" onClick={() => setOpen(false)}>
           <AceLogo compact />
           <p className="sr-only">{t("brandSubline")}</p>
         </Link>
-
-        <nav aria-label={copy.primaryNav} className="ace-topnav hidden min-w-0 items-center lg:flex">
-          {siteNav.map((item) => {
-            const active = isActive(pathname, item.href);
-            return (
-              <Link key={item.href} href={item.href} aria-current={active ? "page" : undefined} className={active ? "is-on" : undefined}>
-                {ui.nav[item.key]}
-              </Link>
-            );
-          })}
-          <div className="ace-more" ref={moreRef}>
-            <button
-              type="button"
-              aria-expanded={moreOpen}
-              aria-haspopup="true"
-              className={moreActive ? "is-on" : undefined}
-              onClick={() => setMoreOpen((value) => !value)}
-            >
-              {ui.nav.more}
-              <svg viewBox="0 0 12 12" aria-hidden="true">
-                <path d="M2.5 4.5 6 8l3.5-3.5" fill="none" stroke="currentColor" strokeWidth="1.6" />
-              </svg>
-            </button>
-            {moreOpen ? (
-              <div className="ace-more-menu">
-                {moreNav.map((item) => (
-                  <Link
-                    key={item.href}
-                    href={item.href}
-                    aria-current={isActive(pathname, item.href) ? "page" : undefined}
-                    onClick={() => setMoreOpen(false)}
-                  >
-                    {ui.nav[item.key]}
-                  </Link>
-                ))}
-              </div>
-            ) : null}
-          </div>
-        </nav>
 
         <div className="flex items-center gap-2">
           <span className="hidden sm:inline-flex">
@@ -108,20 +59,37 @@ export function SiteHeader({ auth }: { auth: ReactNode }) {
         </div>
       </div>
 
+      <nav aria-label={copy.primaryNav} className="ace-navbar hidden lg:block">
+        <div className="ace-navbar-inner mx-auto max-w-[90rem] px-4 sm:px-6">
+          {groups.map((group, gi) => (
+            <div key={group.label} className="ace-navgroup" role="group" aria-label={group.label}>
+              {gi > 0 ? <span className="ace-navsep" aria-hidden="true" /> : null}
+              <span className="ace-navlabel" aria-hidden="true">{group.label}</span>
+              {group.items.map((item) => {
+                const active = isActive(pathname, item.href);
+                return (
+                  <Link key={item.href} href={item.href} aria-current={active ? "page" : undefined} className={active ? "is-on" : undefined}>
+                    {ui.nav[item.key]}
+                  </Link>
+                );
+              })}
+            </div>
+          ))}
+        </div>
+      </nav>
+
       {open ? (
         <div id="mobile-nav" className="max-h-[calc(100vh-4rem)] overflow-y-auto border-t border-[#D4AF37]/25 bg-[#08090D] px-4 py-4 lg:hidden">
           <nav aria-label={copy.mobileNav} className="ace-mobile-nav">
-            <p>{ui.nav.compete}</p>
-            {siteNav.map((item) => (
-              <Link key={item.href} href={item.href} aria-current={isActive(pathname, item.href) ? "page" : undefined} onClick={() => setOpen(false)}>
-                {ui.nav[item.key]}
-              </Link>
-            ))}
-            <p>{ui.nav.explore}</p>
-            {moreNav.map((item) => (
-              <Link key={item.href} href={item.href} aria-current={isActive(pathname, item.href) ? "page" : undefined} onClick={() => setOpen(false)}>
-                {ui.nav[item.key]}
-              </Link>
+            {groups.map((group) => (
+              <div key={group.label} className="contents">
+                <p>{group.label}</p>
+                {group.items.map((item) => (
+                  <Link key={item.href} href={item.href} aria-current={isActive(pathname, item.href) ? "page" : undefined} onClick={() => setOpen(false)}>
+                    {ui.nav[item.key]}
+                  </Link>
+                ))}
+              </div>
             ))}
           </nav>
           <div className="mt-4 flex flex-col gap-3">
