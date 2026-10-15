@@ -30,7 +30,7 @@ export function SiteHeader({ auth }: { auth: ReactNode }) {
 
   return (
     <header className="sticky top-0 z-[90] border-b border-white/10 bg-[#070708]/92 backdrop-blur-xl">
-      <div className="mx-auto flex h-16 max-w-[76rem] items-center justify-between gap-4 px-4 sm:px-6">
+      <div className="mx-auto flex h-16 max-w-[90rem] items-center justify-between gap-4 px-4 sm:px-6">
         <Link
           href="/"
           className="min-w-0 rounded-sm no-underline"
@@ -40,7 +40,7 @@ export function SiteHeader({ auth }: { auth: ReactNode }) {
           <p className="sr-only">{t("brandSubline")}</p>
         </Link>
 
-        <nav aria-label={copy.primaryNav} className="hidden items-center lg:flex">
+        <nav aria-label={copy.primaryNav} className="hidden min-w-0 items-center xl:flex">
           {siteNav.map((item, index) => {
             const active =
               item.href === "/"
@@ -55,7 +55,7 @@ export function SiteHeader({ auth }: { auth: ReactNode }) {
                 <Link
                   href={item.href}
                   aria-current={active ? "page" : undefined}
-                  className={`px-2 py-2 text-[0.72rem] font-semibold tracking-[0.04em] ${
+                  className={`px-1.5 py-2 text-[0.7rem] font-semibold tracking-[0.04em] ${
                     active ? "text-[#FFD76A]" : "text-[#F5F3EC] hover:text-[#FFD76A]"
                   }`}
                 >
@@ -73,7 +73,7 @@ export function SiteHeader({ auth }: { auth: ReactNode }) {
 
         <button
           type="button"
-          className="inline-flex min-h-11 min-w-11 items-center justify-center rounded-md border border-[#D4AF37]/40 text-[#F5F3EC] lg:hidden"
+          className="inline-flex min-h-11 min-w-11 items-center justify-center rounded-md border border-[#D4AF37]/40 text-[#F5F3EC] xl:hidden"
           aria-expanded={open}
           aria-controls="mobile-nav"
           aria-label={open ? t("closeMenu") : t("openMenu")}
@@ -87,7 +87,7 @@ export function SiteHeader({ auth }: { auth: ReactNode }) {
       {open ? (
         <div
           id="mobile-nav"
-          className="border-t border-[#D4AF37]/25 bg-[#08090D] px-4 py-4 lg:hidden"
+          className="border-t border-[#D4AF37]/25 bg-[#08090D] px-4 py-4 xl:hidden"
         >
           <nav aria-label={copy.mobileNav} className="flex flex-col gap-1">
             {siteNav.map((item) => {
