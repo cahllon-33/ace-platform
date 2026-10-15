@@ -1,6 +1,12 @@
 import type { TextBag } from "../types";
 
 export const play: TextBag["play"] = {
+  premium: {
+    "tag": "PREMIUM",
+    "sample": "عيّنة PREMIUM",
+    "note": "تعرض الخانات المعلَّمة «عيّنة Premium» فن الرتبة المرسوم الخاص بـ Premium للعرض فقط. هؤلاء لاعبون للعرض وليسوا مشتركين. فن Premium تجميلي فقط ولا يغيّر التقييم أو المطابقة أبدًا.",
+    "artAlt": "فن رتبة {rank} المرسوم من Premium"
+  },
   room: {
     "showcaseTag": "عرض توضيحي · لاعبون للعرض، وليست مباراة مباشرة. الطابور مغلق.",
     "showcaseShort": "عرض توضيحي",

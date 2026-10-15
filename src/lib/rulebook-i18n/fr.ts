@@ -91,7 +91,7 @@ export const RB_FR: RulebookText = {
       "L'arrangement de matchs, la défaite volontaire et les paris sur tout match impliquant votre équipe ou dans votre événement sont interdits.",
       "L'utilisation d'un bug de carte ou de jeu que l'arbitre a déclaré interdit, ou qui contourne manifestement les mécaniques prévues du jeu, est interdite.",
       "Les joueurs doivent exécuter le client anti-triche A.C.E. pendant tout le match lorsque l'événement l'exige.",
-      "Les arbitres peuvent demander des démos, des enregistrements d'écran ou des informations matérielles pour examen. Refuser une demande raisonnable peut être considéré comme un aveu.",
+      "Les admins peuvent demander des démos ou des enregistrements d’écran pour examen. Les informations matérielles ne seront demandées qu’une fois le client anti-triche A.C.E. disponible et décrit dans la Politique de confidentialité. Refuser une demande raisonnable sans motif valable peut être pris en compte dans la décision.",
       "Toute personne peut signaler en privé une infraction présumée à l'organisateur. Les accusations publiques sans signalement constituent une infraction de conduite."
     ],
     [
@@ -99,7 +99,8 @@ export const RB_FR: RulebookText = {
       "Continuer à jouer après un problème connu sans le signaler vaut acceptation de la situation pour les rounds déjà joués.",
       "L'arbitre tranche la réclamation et publie la décision et sa motivation. Les équipes poursuivent leur calendrier tant qu'une réclamation est ouverte, sauf décision contraire de l'arbitre.",
       "Un appel peut être formé dans les 48 heures suivant la décision. Il est examiné par un membre de l'organisateur qui n'a pas pris la décision initiale. La décision en appel est définitive.",
-      "Des sanctions d'intégrité (section 14) peuvent aussi être prononcées après la fin d'un événement si des preuves apparaissent plus tard."
+      "Des sanctions d'intégrité (section 14) peuvent aussi être prononcées après la fin d'un événement si des preuves apparaissent plus tard.",
+      "Hors match en cours, un joueur est informé du motif et des preuves avant le début d’une suspension ou d’un bannissement, et peut répondre sous 48 heures. Dans les cas d’intégrité urgents, la suspension commence d’abord et l’examen suit."
     ],
     [
       "Les sanctions peuvent être cumulées. Un avertissement reste au dossier de l'équipe jusqu'à la fin de l'événement ; les autres sanctions y restent 12 mois.",

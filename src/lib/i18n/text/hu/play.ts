@@ -1,6 +1,12 @@
 import type { TextBag } from "../types";
 
 export const play: TextBag["play"] = {
+  premium: {
+    "tag": "PREMIUM",
+    "sample": "PREMIUM MINTA",
+    "note": "A Premium mintával jelölt helyek az illusztrált Premium rangképet csak bemutatásként mutatják. Ezek mintajátékosok, nem előfizetők. A Premium kép csak kozmetikai, és soha nem változtat a pontszámon vagy a párosításon.",
+    "artAlt": "{rank} illusztrált Premium rangkép"
+  },
   room: {
     "showcaseTag": "BEMUTATÓ · Mintajátékosok, nem élő meccs. A sor zárva.",
     "showcaseShort": "BEMUTATÓ",

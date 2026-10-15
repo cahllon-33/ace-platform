@@ -1,6 +1,24 @@
 import type { TextBag } from "../types";
 
 export const legalDocs: TextBag["legalDocs"] = {
+  r14: {
+    "effective": "Hatálybalépés napja: {date}",
+    "contact": "Kapcsolat: support@ace-platform.gg",
+    "definitionsTitle": "Fogalmak",
+    "definitions": "E Feltételekben az „A.C.E.”, „mi” az A.C.E. Competitions Ltd.-t jelenti. A „Webhely” az ace-platform.gg. A „Fiók” a Steam-bejelentkezéssel létrehozott A.C.E.-profil. A „Csomag” a Free, Plus vagy Premium. A „Szabálykönyv” a /rules oldalon található versenyszabályzat. Az „Admin” az a munkatárs, aki egy eseményen alkalmazza a Szabálykönyvet.",
+    "suspensionTitle": "Fiókkorlátozás és felfüggesztés",
+    "suspension": "Figyelmeztethetjük, korlátozhatjuk, felfüggeszthetjük vagy megszüntethetjük azt a Fiókot, amely megsérti e Feltételeket vagy a Szabálykönyvet, például csalás, fiókmegosztás, kitiltás kijátszása, zaklatás vagy visszaélés miatt. Folyamatban lévő meccsen kívül közöljük az okot, és 48 órát adunk a válaszra, mielőtt a felfüggesztés elkezdődik. Sürgős esetben a felfüggesztés azonnal indul, és a felülvizsgálat utána következik. Fizetős csomag soha nem védi meg a Fiókot a korlátozástól.",
+    "disputesTitle": "Szabálydöntések és fellebbezés",
+    "disputes": "A meccsvitákra és büntetésekre a Szabálykönyv 15. és 16. szakasza vonatkozik. A Fiókodat érintő döntés ellen 48 órán belül fellebbezhetsz a support@ace-platform.gg címre írva SteamID-ddel és bizonyítékaiddal. A fellebbezést olyan munkatárs vizsgálja, aki nem hozta az első döntést, és közli az eredményt és az indoklást. Ez nem korlátozza az országod joga szerinti jogaidat.",
+    "changesTitle": "E Feltételek módosítása",
+    "changes": "E Feltételeket frissíthetjük. Minden új változat új hatálybalépési dátummal jelenik meg ezen az oldalon. A lényeges módosítás a közzététel után 7 nappal lép hatályba, és soha nem vonatkozik már megkezdett fizetési időszakra.",
+    "languageTitle": "Nyelv",
+    "language": "E Feltételek angol nyelven készültek. A fordítások a kényelmet szolgálják. Ha egy fordítás eltér az angol szövegtől, az angol szöveg az irányadó.",
+    "retentionTitle": "Adatmegőrzés",
+    "retention": "A Fiók adatait addig őrizzük, amíg a Fiók létezik. A munkamenet kijelentkezéskor vagy lejáratkor ér véget. Ha a Fiók törlését kéred, 30 napon belül eltávolítjuk adataidat, kivéve azokat, amelyeket jogi kötelezettség vagy aktív kitiltás érvényesítése miatt meg kell őriznünk, és csak addig, amíg szükséges.",
+    "ageTitle": "Korhatár",
+    "age": "A Webhely 16 éves vagy idősebb személyeknek szól. Tudatosan nem hozunk létre Fiókot fiatalabb gyermekeknek. Ha úgy gondolod, hogy egy 16 év alatti gyermeknek Fiókja van, írj nekünk, és töröljük."
+  },
   "translationNotice": "Ez az oldal a kényelem érdekében készült fordítás. Ha a fordítás és az angol szöveg eltér, az angol szöveg az irányadó.",
   "terms": {
     "meta": {
@@ -9,7 +27,7 @@ export const legalDocs: TextBag["legalDocs"] = {
     },
     "kicker": "ACE-LEGAL / FELHASZNÁLÁSI FELTÉTELEK",
     "title": "Felhasználási feltételek",
-    "lede": "Ezek a feltételek szabályozzák az A.C.E. nyilvános weboldalának és a kapcsolódó fiók-API-knak a használatát. A meccshossz, a pályakészlet, a keretzárolás és az óvások a /rules oldalon található versenyszabálykönyvben vannak részletezve, amely ennek része.",
+    "lede": "E Feltételek szabályozzák az A.C.E. webhely és az A.C.E. Fiókod használatát. A /rules oldalon található Szabálykönyv, az Adatvédelmi irányelvek, a Cookie-szabályzat és a Premium feltételek e Feltételek részét képezik.",
     "sections": {
       "operator": {
         "title": "1. Üzemeltető és függetlenség",
@@ -20,7 +38,7 @@ export const legalDocs: TextBag["legalDocs"] = {
       "eligibility": {
         "title": "2. Jogosultság és fiókok",
         "paragraphs": [
-          "Elég idősnek kell lenned a Steam használatához az országodban. Fiók csak hivatalos Steam OpenID-n keresztül hozható létre. Korlátozás kijátszására nem oszthatsz meg fiókot. Az A.C.E. soha nem kéri a Steam-jelszavadat."
+          "Legalább 16 évesnek kell lenned, vagy idősebbnek, ha az országod joga vagy egy eseményoldal ezt előírja. 18 év alatt fizetős csomag vásárlásához szülői vagy gondviselői engedély kell. Fiók csak a hivatalos Steam OpenID bejelentkezéssel hozható létre, személyenként egy. Az A.C.E. soha nem kéri a Steam-jelszavadat."
         ]
       },
       "notActive": {
@@ -30,9 +48,9 @@ export const legalDocs: TextBag["legalDocs"] = {
         ]
       },
       "subscriptions": {
-        "title": "4. Javasolt előfizetések",
+        "title": "Csomagok, számlázás és lemondás",
         "paragraphs": [
-          "A Plus (4 $/hó) és a Premium (7 $/hó) megjelenített árak. Ezen az oldalon még nincs fizetés, és a csomaggombokon a Hamarosan felirat áll. Ha lesz számlázás, a /pricing oldal lemondási szabálya érvényes: havi gördülő előfizetés, lemondás a vezérlőpult beállításaiban, a töredékhónapok nem téríthetők vissza."
+          "A Free $0, a Plus havi $4, a Premium havi $7. Fizetés még nincs, így ma semmit nem lehet megvenni, és semmit nem terhelünk. Amikor a számlázás elindul, a csomagok havonta megújulnak; bármikor lemondhatod az irányítópult beállításaiban, és a hozzáférés a kifizetett hónap végéig megmarad; a megkezdett hónapot nem térítjük vissza, kivéve ha országod joga előírja. Egyik csomag sem ad Rating Pointst, nem emeli a pontszámot és nem módosítja a párosítást. A Premium elsőbbségi támogatás az indulás után azt jelenti, hogy a Premium kéréseket elsőként kezeljük, garantált válaszidő nélkül."
         ]
       },
       "antiCheat": {
@@ -67,9 +85,9 @@ export const legalDocs: TextBag["legalDocs"] = {
       "title": "Adatvédelmi szabályzat",
       "description": "Az A.C.E. adatvédelmi szabályzata: szigorúan szükséges adatok, csak Steam OpenID, nincs Steam-jelszó, nincs viselkedési adatok eladása."
     },
-    "kicker": "ACE-PRIVACY / GDPR / SZIGORÚ SZÜKSÉGESSÉG",
+    "kicker": "ACE-LEGAL / ADATVÉDELMI IRÁNYELVEK",
     "title": "Adatvédelmi szabályzat",
-    "lede": "Ez az adatvédelmi szabályzat elmagyarázza, mit tárol az A.C.E. Competitions Ltd., amikor ezt a weboldalt használod. A fordítások a kényelmet szolgálják; az angol változat a hivatkozási szöveg. Ez nem állítja, hogy minden jövőbeli termékfelület már létezik.",
+    "lede": "Ez az Adatvédelmi irányelv elmagyarázza, milyen személyes adatokat tárol az A.C.E. Competitions Ltd., amikor ezt a webhelyet használod, miért és meddig. Ha egy fordítás eltér az angol szövegtől, az angol szöveg az irányadó.",
     "strictNecessity": {
       "title": "A szigorú szükségesség elve",
       "intro": "A versenyjátékos azonosításához és a saját szolgáltatásunkon elkövetett nyilvánvaló csalás megállításához szükséges minimális fiókadatot gyűjtjük. Nem gyűjtünk szükségtelen naplókat, nem gyűjtünk ki privát Steam-készleteket, és nem adunk el harmadik féltől származó viselkedési adatokat.",
@@ -111,9 +129,9 @@ export const legalDocs: TextBag["legalDocs"] = {
       "footerLinks": "A lábléc külső hálózati ikonjai nyilvános weboldalakra mutató könyvtári linkek. Nem hivatalos A.C.E.-fiókok, és nem ágyaznak be követő widgeteket."
     },
     "rights": {
-      "title": "GDPR-szerű jogok",
+      "title": "Jogaid",
       "before": "Ha olyan régióban vagy, ahol személyes adatokkal kapcsolatos jogok vannak, kérheted A.C.E.-fiókadataid hozzáférését, helyesbítését vagy törlését e-mailben ide:",
-      "after": ". A ranked csalásellenes hardverzárolások nem élnek; a weboldalfiók törlése nem CS2 VAC fellebbezés."
+      "after": ". 30 napon belül válaszolunk. A webhelyfiók törlése nem változtat a Valve által hozott Steam- vagy VAC-döntéseken."
     },
     "cookies": {
       "title": "Sütik",
@@ -131,11 +149,11 @@ export const legalDocs: TextBag["legalDocs"] = {
       "title": "Sütiszabályzat",
       "description": "Az A.C.E. süti- és telemetria-adatvédelmi auditja. Csak alapvető munkamenet-sütik, hacsak nem választod a fenntartott opcionális kategóriákat."
     },
-    "kicker": "ACE-PRIVACY / SÜTIK / TELEMETRIA-AUDIT",
+    "kicker": "ACE-LEGAL / COOKIE-SZABÁLYZAT",
     "title": "Sütiszabályzat",
-    "lede": "Ez az oldal az ace-platform.gg telemetria-adatvédelmi auditja. Leírja a weboldal által ténylegesen használt sütiket, a későbbre fenntartott kategóriákat és azt, amit nem gyűjtünk.",
+    "lede": "Ez a Cookie-szabályzat felsorolja a webhely által ténylegesen beállított sütiket, a későbbre fenntartott kategóriákat és azt, amit nem gyűjtünk.",
     "audit": {
-      "title": "100%-os telemetria-audit (jelenlegi build)",
+      "title": "Követőkódok ezen a webhelyen",
       "body": "Az A.C.E. ezen a nyilvános oldalon nem futtat hirdetési pixeleket, Google Analyticset, Meta Pixelt, ujjlenyomat-SDK-kat vagy más harmadik féltől származó viselkedéskövetőket. A hozzájárulási sáv opcionális „Analitikai követők” és „Marketingkövetők” elemei csak kategóriák. Bejelölésük ma nem tölt be szkriptet. Ha később követő kerül hozzáadásra, először a tárolt beállítást olvassa, és kikapcsolva marad, hacsak nem járultál hozzá."
     },
     "essential": {

@@ -1,6 +1,24 @@
 import type { TextBag } from "../types";
 
 export const legalDocs: TextBag["legalDocs"] = {
+  r14: {
+    "effective": "Data wejścia w życie: {date}",
+    "contact": "Kontakt: support@ace-platform.gg",
+    "definitionsTitle": "Definicje",
+    "definitions": "W niniejszym Regulaminie „A.C.E.”, „my” oznacza A.C.E. Competitions Ltd. „Serwis” oznacza ace-platform.gg. „Konto” oznacza profil A.C.E. utworzony przez logowanie Steam. „Plan” oznacza Free, Plus lub Premium. „Regulamin rozgrywek” oznacza regulamin pod adresem /rules. „Admin” oznacza członka zespołu stosującego Regulamin rozgrywek podczas wydarzenia.",
+    "suspensionTitle": "Ograniczenia i zawieszenie konta",
+    "suspension": "Możemy ostrzec, ograniczyć, zawiesić lub zamknąć Konto naruszające ten Regulamin lub Regulamin rozgrywek, np. za oszukiwanie, udostępnianie konta, obchodzenie bana, nękanie lub oszustwo. Poza trwającym meczem podajemy powód i dajemy 48 godzin na odpowiedź przed rozpoczęciem zawieszenia. W pilnych przypadkach zawieszenie zaczyna się od razu, a weryfikacja następuje później. Płatny plan nigdy nie chroni Konta przed ograniczeniem.",
+    "disputesTitle": "Decyzje dotyczące zasad i odwołania",
+    "disputes": "Spory meczowe i kary podlegają sekcjom 15 i 16 Regulaminu rozgrywek. Od decyzji dotyczącej Twojego Konta możesz odwołać się w ciągu 48 godzin, pisząc na support@ace-platform.gg z SteamID i dowodami. Odwołanie rozpatruje członek zespołu, który nie wydał pierwszej decyzji, i przekazuje wynik wraz z uzasadnieniem. Nie ogranicza to praw przysługujących Ci na mocy prawa Twojego kraju.",
+    "changesTitle": "Zmiany Regulaminu",
+    "changes": "Możemy aktualizować ten Regulamin. Każda nowa wersja jest publikowana na tej stronie z nową datą wejścia w życie. Istotna zmiana obowiązuje po 7 dniach od publikacji i nigdy nie dotyczy rozpoczętego już okresu płatności.",
+    "languageTitle": "Język",
+    "language": "Ten Regulamin jest sporządzony po angielsku. Tłumaczenia mają charakter pomocniczy. W razie rozbieżności między tłumaczeniem a tekstem angielskim obowiązuje tekst angielski.",
+    "retentionTitle": "Przechowywanie danych",
+    "retention": "Dane Konta przechowujemy, dopóki Konto istnieje. Sesja kończy się po wylogowaniu lub wygaśnięciu. Jeśli poprosisz o usunięcie Konta, usuniemy Twoje dane w ciągu 30 dni, poza danymi, które musimy zachować z obowiązku prawnego lub do egzekwowania aktywnego bana, i tylko tak długo, jak to konieczne.",
+    "ageTitle": "Wymagany wiek",
+    "age": "Serwis jest przeznaczony dla osób w wieku od 16 lat. Nie tworzymy świadomie Kont dla młodszych dzieci. Jeśli uważasz, że dziecko poniżej 16 lat ma Konto, skontaktuj się z nami, a je usuniemy."
+  },
   translationNotice:
     "Ta strona jest tłumaczeniem udostępnionym dla wygody. W razie rozbieżności między tłumaczeniem a tekstem angielskim rozstrzygający jest tekst angielski.",
   terms: {
@@ -11,7 +29,7 @@ export const legalDocs: TextBag["legalDocs"] = {
     },
     kicker: "ACE-PRAWO / WARUNKI KORZYSTANIA Z USŁUGI",
     title: "Warunki korzystania z usługi",
-    lede: "Niniejsze Warunki regulują korzystanie z publicznej strony internetowej A.C.E. oraz powiązanych interfejsów API kont. Długość meczu, pula map, blokada składu i protesty są szczegółowo opisane w Regulaminie rozgrywek pod adresem /rules, który stanowi część niniejszych Warunków.",
+    lede: "Ten Regulamin określa zasady korzystania ze strony A.C.E. i Twojego Konta A.C.E. Regulamin rozgrywek pod /rules, Polityka prywatności, Polityka cookies i warunki Premium stanowią część tego Regulaminu.",
     sections: {
       operator: {
         title: "1. Operator i niezależność",
@@ -22,7 +40,7 @@ export const legalDocs: TextBag["legalDocs"] = {
       eligibility: {
         title: "2. Uprawnienia i konta",
         paragraphs: [
-          "Musisz osiągnąć wiek wymagany do korzystania ze Steam w swoim kraju. Konta są tworzone wyłącznie przez oficjalny Steam OpenID. Nie wolno udostępniać konta w celu obejścia ograniczenia. A.C.E. nigdy nie prosi o hasło Steam.",
+          "Musisz mieć co najmniej 16 lat lub więcej, jeśli wymaga tego prawo Twojego kraju albo strona wydarzenia. Jeśli masz mniej niż 18 lat, do zakupu płatnego planu potrzebujesz zgody rodzica lub opiekuna. Konta tworzy się wyłącznie przez oficjalne logowanie Steam OpenID, jedno Konto na osobę. A.C.E. nigdy nie prosi o hasło do Steam.",
         ],
       },
       notActive: {
@@ -32,9 +50,9 @@ export const legalDocs: TextBag["legalDocs"] = {
         ],
       },
       subscriptions: {
-        title: "4. Proponowane subskrypcje",
+        title: "Plany, płatności i rezygnacja",
         paragraphs: [
-          "Plus ($4/mies.) i Premium ($7/mies.) to ceny wyświetlane. Na tej stronie nie ma jeszcze płatności, a przyciski planów pokazują „Wkrótce”. Gdy rozliczenia ruszą, obowiązuje zasada anulowania z /pricing: subskrypcja odnawiana co miesiąc, anulowanie w ustawieniach panelu, niepełne miesiące nie podlegają zwrotowi.",
+          "Free kosztuje $0, Plus $4 miesięcznie, a Premium $7 miesięcznie. Płatności jeszcze nie istnieją, więc dziś nie można niczego kupić ani nic nie jest pobierane. Gdy płatności ruszą, plany będą odnawiane co miesiąc; zrezygnować można w każdej chwili w ustawieniach panelu, zachowując dostęp do końca opłaconego miesiąca; niepełny miesiąc nie podlega zwrotowi, chyba że wymaga tego prawo Twojego kraju. Żaden plan nie dodaje Rating Points, nie podnosi rankingu ani nie zmienia doboru meczów. Priorytetowe wsparcie Premium, po uruchomieniu, oznacza, że zgłoszenia Premium są obsługiwane jako pierwsze, bez gwarantowanego czasu odpowiedzi.",
         ],
       },
       antiCheat: {
@@ -70,9 +88,9 @@ export const legalDocs: TextBag["legalDocs"] = {
       description:
         "Polityka prywatności A.C.E.: wyłącznie niezbędne dane, tylko Steam OpenID, żadnych haseł Steam, żadnej sprzedaży danych o zachowaniu.",
     },
-    kicker: "ACE-PRYWATNOŚĆ / RODO / ŚCISŁA NIEZBĘDNOŚĆ",
+    kicker: "ACE-LEGAL / POLITYKA PRYWATNOŚCI",
     title: "Polityka prywatności",
-    lede: "Niniejsza Polityka prywatności wyjaśnia, jakie dane A.C.E. Competitions Ltd. przechowuje, gdy korzystasz z tej strony. Tłumaczenia są udostępniane dla wygody; tekstem wzorcowym jest wersja angielska. Nie jest to twierdzenie, że wszystkie przyszłe elementy produktu już istnieją.",
+    lede: "Ta Polityka prywatności wyjaśnia, jakie dane osobowe przechowuje A.C.E. Competitions Ltd., gdy korzystasz z tej strony, w jakim celu i jak długo. W razie rozbieżności tłumaczenia z tekstem angielskim obowiązuje tekst angielski.",
     strictNecessity: {
       title: "Zasada ścisłej niezbędności",
       intro:
@@ -118,11 +136,11 @@ export const legalDocs: TextBag["legalDocs"] = {
         "Ikony sieci zewnętrznych w stopce to odnośniki katalogowe do publicznych stron internetowych. Nie są to oficjalne konta A.C.E. i nie osadzają widżetów śledzących.",
     },
     rights: {
-      title: "Prawa na wzór RODO",
+      title: "Twoje prawa",
       before:
         "Jeśli przebywasz w regionie, w którym przysługują prawa dotyczące danych osobowych, możesz zażądać dostępu do danych swojego konta A.C.E., ich sprostowania lub usunięcia, pisząc na adres",
       after:
-        ". Blokady sprzętowe rankingowego anticheatu nie działają; usunięcie konta na stronie nie jest odwołaniem od blokady VAC w CS2.",
+        ". Odpowiadamy w ciągu 30 dni. Usunięcie konta w serwisie nie zmienia decyzji Steam ani VAC wydanej przez Valve.",
     },
     cookies: {
       title: "Pliki cookie",
@@ -142,11 +160,11 @@ export const legalDocs: TextBag["legalDocs"] = {
       description:
         "Audyt prywatności plików cookie i telemetrii A.C.E. Wyłącznie niezbędne pliki cookie sesji, chyba że wyrazisz zgodę na zarezerwowane kategorie opcjonalne.",
     },
-    kicker: "ACE-PRYWATNOŚĆ / COOKIE / AUDYT TELEMETRII",
+    kicker: "ACE-LEGAL / POLITYKA COOKIES",
     title: "Polityka plików cookie",
-    lede: "Ta strona jest audytem prywatności telemetrii dla ace-platform.gg. Opisuje pliki cookie, których ta strona faktycznie używa, kategorie zarezerwowane na później oraz dane, które nie są zbierane.",
+    lede: "Ta Polityka cookies wymienia pliki cookie faktycznie ustawiane przez tę stronę, kategorie zarezerwowane na później oraz to, czego nie zbieramy.",
     audit: {
-      title: "Audyt telemetrii w 100% (obecna wersja)",
+      title: "Narzędzia śledzące na tej stronie",
       body: "A.C.E. nie uruchamia na tej publicznej stronie pikseli reklamowych, Google Analytics, Meta Pixel, pakietów SDK do tworzenia odcisków przeglądarki ani innych zewnętrznych narzędzi śledzących zachowanie. Opcjonalne kategorie „Narzędzia analityczne” i „Narzędzia marketingowe” w panelu zgody są jedynie kategoriami. Ich zaznaczenie nie ładuje dziś żadnego skryptu. Jeśli w przyszłości zostanie dodane narzędzie śledzące, najpierw odczyta zapisaną preferencję i pozostanie wyłączone, chyba że wyrazisz na nie zgodę.",
     },
     essential: {

@@ -5,7 +5,8 @@ import { connection } from "next/server";
 import { LocaleFlag } from "@/components/locale-flag";
 import { SampleWeapon, type WeaponSlug } from "@/components/sample-weapon";
 import type { TextBag } from "@/lib/i18n/text";
-import { formatRankLabelWith, rankEmblemAsset } from "@/lib/ranks";
+import { formatRankLabelWith, rankArtAsset, type RankArt } from "@/lib/ranks";
+import { effectiveRankArt } from "@/server/rank-art";
 import { getPrisma } from "@/server/db";
 import { getText } from "@/server/locale";
 
@@ -50,6 +51,8 @@ type BoardRow = {
   weapon: WeaponSlug | null;
   weaponName: string | null;
   live: boolean;
+  /** Server gate result (effectiveRankArt) for stored rows; showcase rows are always standard. */
+  art: RankArt;
   badges: PlayerBadge[];
 };
 
@@ -77,6 +80,7 @@ export default async function LeaderboardPage({
         competitiveRating: true,
         rankLevel: true,
         subscriptionTier: true,
+        rankArt: true,
         wins: true,
         losses: true,
         steamId: true,
@@ -92,6 +96,7 @@ export default async function LeaderboardPage({
       weapon: null,
       weaponName: null,
       live: true,
+      art: effectiveRankArt(row),
       // Computed here on the server from stored rows; only the badge labels reach the page.
       badges: playerBadges({
         subscriptionTier: row.subscriptionTier,
@@ -120,6 +125,7 @@ export default async function LeaderboardPage({
           weapon: row.weapon,
           weaponName: row.weaponName,
           live: false,
+          art: "standard",
           badges: [],
         }));
 
@@ -164,7 +170,7 @@ export default async function LeaderboardPage({
           {podium.length === 3 ? (
             <ol className="ace-lb-podium" aria-label={lb.podiumLabel}>
               {podium.map(({ row, place }) => {
-                const emblem = rankEmblemAsset(row.level);
+                const emblem = rankArtAsset(row.level, row.art);
                 return (
                   <li key={row.id} className={`ace-lb-pod is-${place}`}>
                     <span className="ace-lb-pod-place">{place}</span>
@@ -192,7 +198,7 @@ export default async function LeaderboardPage({
             <ol>
               {board.map((row, index) => {
                 const place = index + 1;
-                const emblem = rankEmblemAsset(row.level);
+                const emblem = rankArtAsset(row.level, row.art);
                 const width = Math.max(8, Math.round((row.rp / top) * 100));
                 return (
                   <li key={row.id} className={`ace-lb-row is-${place <= 3 ? place : "rest"}`}>
@@ -210,6 +216,7 @@ export default async function LeaderboardPage({
                       <span>
                         <span className="ace-lb-name">{row.name}</span>
                         <span className="ace-lb-tag">{row.live ? lb.tags.stored : lb.tags.showcase}</span>
+                        {row.art === "premium" ? <span className="ace-premium-tag">{text.play.premium.tag}</span> : null}
                         <PlayerBadges badges={row.badges} />
                       </span>
                     </span>

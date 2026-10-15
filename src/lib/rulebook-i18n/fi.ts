@@ -91,7 +91,7 @@ export const RB_FI: RulebookText = {
       "Ottelumanipulaatio, tahallinen häviäminen ja vedonlyönti mihin tahansa otteluun, jossa oma joukkueesi pelaa tai joka kuuluu omaan tapahtumaasi, ovat kiellettyjä.",
       "Sellaisen kartta- tai pelivirheen käyttö, jonka tuomari on julistanut kielletyksi tai joka selvästi rikkoo pelin tarkoitetun mekaniikan, on kielletty.",
       "Pelaajien on pidettävä A.C.E.:n huijauksenestosovellus käynnissä koko ottelun ajan, kun tapahtuma sitä edellyttää.",
-      "Tuomarit voivat pyytää tarkastettavaksi demoja, näyttötallenteita tai laitteistotietoja. Kohtuullisesta pyynnöstä kieltäytyminen voidaan katsoa myönnytykseksi.",
+      "Adminit voivat pyytää demoja tai näyttötallenteita tarkistettavaksi. Laitteistotietoja pyydetään vasta, kun A.C.E.-huijauksenestoasiakas on olemassa ja tietosuojakäytäntö kuvaa ne. Kohtuullisesta pyynnöstä kieltäytyminen ilman pätevää syytä voidaan ottaa huomioon päätöksessä.",
       "Kuka tahansa voi ilmoittaa epäillystä rikkeestä järjestäjälle luottamuksellisesti. Julkiset syytökset ilman ilmoitusta ovat käytösrike."
     ],
     [
@@ -99,7 +99,8 @@ export const RB_FI: RulebookText = {
       "Pelaamisen jatkaminen tunnetun ongelman jälkeen siitä ilmoittamatta tarkoittaa tilanteen hyväksymistä jo pelattujen erien osalta.",
       "Tuomari ratkaisee protestin ja julkaisee ratkaisun perusteluineen. Joukkueet jatkavat pelejään aikataulun mukaisesti protestin ollessa käsittelyssä, ellei tuomari toisin päätä.",
       "Päätöksestä voi valittaa 48 tunnin kuluessa. Valituksen käsittelee järjestäjän jäsen, joka ei tehnyt alkuperäistä päätöstä. Valituspäätös on lopullinen.",
-      "Rehellisyyteen liittyviä rangaistuksia (kohta 14) voidaan määrätä myös tapahtuman päätyttyä, jos todisteita löytyy myöhemmin."
+      "Rehellisyyteen liittyviä rangaistuksia (kohta 14) voidaan määrätä myös tapahtuman päätyttyä, jos todisteita löytyy myöhemmin.",
+      "Käynnissä olevan ottelun ulkopuolella pelaajalle kerrotaan syy ja todisteet ennen jäädytyksen tai porttikiellon alkua, ja hän voi vastata 48 tunnin kuluessa. Kiireellisissä reiluuteen liittyvissä tapauksissa jäädytys alkaa ensin ja tarkistus seuraa."
     ],
     [
       "Rangaistuksia voidaan yhdistää. Varoitus pysyy joukkueen rekisterissä tapahtuman loppuun asti; muut rangaistukset pysyvät rekisterissä 12 kuukautta.",

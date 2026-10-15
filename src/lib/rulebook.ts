@@ -6,7 +6,7 @@
 export type RuleClause = { text: string; pending?: boolean };
 export type RuleSection = { id: string; title: string; summary?: string; clauses: RuleClause[] };
 
-export const RULEBOOK_VERSION = "1.0";
+export const RULEBOOK_VERSION = "1.1";
 export const RULEBOOK_EFFECTIVE = "15 October 2026";
 
 export const RULEBOOK: RuleSection[] = [
@@ -153,7 +153,7 @@ export const RULEBOOK: RuleSection[] = [
       { text: "Match fixing, deliberately losing, and betting on any match involving your team or your event are forbidden." },
       { text: "Using a map or game bug that the admin has listed as banned, or that clearly breaks the game's intended mechanics, is forbidden." },
       { text: "Players must run the A.C.E. anti-cheat client for the whole match when it is required by the event.", pending: true },
-      { text: "Admins may request demos, screen recordings, or hardware details for review. Refusing a reasonable request may be treated as an admission." },
+      { text: "Admins may request demos or screen recordings for review. Hardware details are requested only once the A.C.E. anti-cheat client exists and the Privacy Policy describes them. Refusing a reasonable request without a valid reason may be taken into account in the decision." },
       { text: "Anyone may report a suspected violation privately to the organizer. Public accusations without a report are a conduct offence." },
     ],
   },
@@ -166,6 +166,7 @@ export const RULEBOOK: RuleSection[] = [
       { text: "The admin decides the dispute and publishes the outcome and reason. Teams must keep playing their schedule while a dispute is open, unless the admin says otherwise." },
       { text: "An appeal may be filed within 48 hours of the decision. It is reviewed by an organizer member who did not make the original decision. The appeal decision is final." },
       { text: "Integrity penalties (section 14) may also be issued after an event ends, if evidence is found later." },
+      { text: "Outside a live match, a player is told the reason and the evidence before a suspension or ban starts, and may respond within 48 hours. In urgent integrity cases the suspension starts first and the review follows." },
     ],
   },
   {

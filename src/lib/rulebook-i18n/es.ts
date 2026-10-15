@@ -91,7 +91,7 @@ export const RB_ES: RulebookText = {
       "Están prohibidos el amaño de partidas, perder a propósito y apostar en cualquier partida en la que participe tu equipo o en tu evento.",
       "Está prohibido usar un fallo del mapa o del juego que el árbitro haya declarado prohibido o que rompa claramente las mecánicas previstas del juego.",
       "Los jugadores deben ejecutar el cliente antitrampas de A.C.E. durante toda la partida cuando el evento lo exija.",
-      "Los árbitros pueden pedir demos, grabaciones de pantalla o datos del hardware para revisarlos. Negarse a una petición razonable puede considerarse una admisión.",
+      "Los admins pueden pedir demos o grabaciones de pantalla para revisarlas. Los datos de hardware solo se pedirán cuando exista el cliente antitrampas de A.C.E. y la Política de privacidad los describa. Negarse a una solicitud razonable sin motivo válido puede tenerse en cuenta en la decisión.",
       "Cualquier persona puede denunciar en privado al organizador una posible infracción. Las acusaciones públicas sin denuncia son una infracción de conducta."
     ],
     [
@@ -99,7 +99,8 @@ export const RB_ES: RulebookText = {
       "Seguir jugando tras un problema conocido sin señalarlo supone aceptar la situación para las rondas ya jugadas.",
       "El árbitro resuelve la reclamación y publica la decisión y su motivo. Los equipos siguen jugando su calendario mientras la reclamación está abierta, salvo que el árbitro disponga otra cosa.",
       "Se puede recurrir la decisión en un plazo de 48 horas. El recurso lo revisa un miembro del organizador que no tomó la decisión original. La decisión del recurso es definitiva.",
-      "Las sanciones de integridad (sección 14) también pueden imponerse después de terminado un evento si se encuentran pruebas más tarde."
+      "Las sanciones de integridad (sección 14) también pueden imponerse después de terminado un evento si se encuentran pruebas más tarde.",
+      "Fuera de una partida en curso, se informa al jugador del motivo y de las pruebas antes de que empiece una suspensión o expulsión, y puede responder en un plazo de 48 horas. En casos urgentes de integridad, la suspensión empieza primero y la revisión viene después."
     ],
     [
       "Las sanciones pueden combinarse. Una advertencia permanece en el historial del equipo hasta el final del evento; las demás sanciones permanecen 12 meses.",

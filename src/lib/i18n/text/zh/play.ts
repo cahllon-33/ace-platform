@@ -1,6 +1,12 @@
 import type { TextBag } from "../types";
 
 export const play: TextBag["play"] = {
+  premium: {
+    "tag": "PREMIUM",
+    "sample": "PREMIUM 示例",
+    "note": "标有“Premium 示例”的位置仅为展示 Premium 插画段位图。他们是示例选手，不是订阅用户。Premium 插画仅为外观，绝不会改变评分或匹配。",
+    "artAlt": "{rank} Premium 插画段位图"
+  },
   room: {
     "showcaseTag": "展示 · 示例选手，并非实时比赛。队列已关闭。",
     "showcaseShort": "展示",

@@ -91,7 +91,7 @@ export const RB_RO: RulebookText = {
       "Sunt interzise aranjarea meciurilor, pierderea intenționată și pariurile pe orice meci la care participă echipa ta sau care face parte din evenimentul tău.",
       "Este interzisă folosirea unei erori de hartă sau de joc declarate nepermise de arbitru ori care încalcă evident mecanica intenționată a jocului.",
       "Dacă evenimentul o cere, jucătorii trebuie să ruleze clientul anti-cheat A.C.E. pe toată durata meciului.",
-      "Arbitrii pot solicita, în scopul investigației, demo-uri, înregistrări de ecran sau informații despre hardware. Refuzul unei cereri rezonabile poate fi considerat recunoaștere.",
+      "Adminii pot cere demo-uri sau înregistrări de ecran pentru analiză. Datele despre hardware vor fi cerute doar după ce clientul anti-cheat A.C.E. există și Politica de confidențialitate le descrie. Refuzul unei cereri rezonabile fără un motiv valid poate fi luat în considerare la decizie.",
       "Oricine poate raporta confidențial organizatorului o abatere suspectată. Acuzațiile publice fără raportare constituie abatere de conduită."
     ],
     [
@@ -99,7 +99,8 @@ export const RB_RO: RulebookText = {
       "Echipa care continuă să joace după o problemă cunoscută fără să o semnaleze acceptă situația pentru rundele deja jucate.",
       "Arbitrul decide asupra contestației și publică decizia și motivarea. Cât timp contestația este analizată, echipele continuă să joace conform programului, dacă arbitrul nu decide altfel.",
       "Decizia poate fi atacată în 48 de ore. Apelul este analizat de un membru al organizatorului care nu a luat decizia inițială. Decizia în apel este definitivă.",
-      "Sancțiunile pentru abaterile de la integritate (secțiunea 14) pot fi aplicate și după încheierea evenimentului, dacă dovezile apar ulterior."
+      "Sancțiunile pentru abaterile de la integritate (secțiunea 14) pot fi aplicate și după încheierea evenimentului, dacă dovezile apar ulterior.",
+      "În afara unui meci în desfășurare, jucătorul află motivul și dovezile înainte de începerea unei suspendări sau interdicții și poate răspunde în 48 de ore. În cazurile urgente de integritate, suspendarea începe imediat, iar analiza urmează."
     ],
     [
       "Sancțiunile pot fi cumulate. Avertismentul rămâne în evidența echipei până la sfârșitul evenimentului; celelalte sancțiuni rămân în evidență 12 luni.",

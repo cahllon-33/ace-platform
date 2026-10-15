@@ -1,6 +1,12 @@
 import type { TextBag } from "../types";
 
 export const play: TextBag["play"] = {
+  premium: {
+    "tag": "PREMIUM",
+    "sample": "UKÁZKA PREMIUM",
+    "note": "Místa označená jako Ukázka Premium zobrazují ilustrovanou grafiku hodnosti Premium pouze pro ukázku. Jde o ukázkové hráče, ne předplatitele. Grafika Premium je čistě kosmetická a nikdy nemění hodnocení ani matchmaking.",
+    "artAlt": "Ilustrovaná grafika hodnosti Premium {rank}"
+  },
   room: {
     "showcaseTag": "UKÁZKA · Ukázkoví hráči, nejde o živý zápas. Fronta je zavřená.",
     "showcaseShort": "UKÁZKA",

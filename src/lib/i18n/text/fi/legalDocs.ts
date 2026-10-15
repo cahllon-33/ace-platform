@@ -1,6 +1,24 @@
 import type { TextBag } from "../types";
 
 export const legalDocs: TextBag["legalDocs"] = {
+  r14: {
+    "effective": "Voimassa alkaen: {date}",
+    "contact": "Yhteystiedot: support@ace-platform.gg",
+    "definitionsTitle": "Määritelmät",
+    "definitions": "Näissä Ehdoissa ”A.C.E.” ja ”me” tarkoittavat A.C.E. Competitions Ltd:tä. ”Sivusto” tarkoittaa ace-platform.gg:tä. ”Tili” tarkoittaa Steam-kirjautumisella luotua A.C.E.-profiilia. ”Tilaus” tarkoittaa Free-, Plus- tai Premium-tasoa. ”Sääntökirja” tarkoittaa kilpailusääntöjä osoitteessa /rules. ”Admin” tarkoittaa henkilökunnan jäsentä, joka soveltaa Sääntökirjaa tapahtumassa.",
+    "suspensionTitle": "Tilin rajoitukset ja jäädytys",
+    "suspension": "Voimme varoittaa, rajoittaa, jäädyttää tai sulkea Tilin, joka rikkoo näitä Ehtoja tai Sääntökirjaa, esimerkiksi huijaamisen, tilin jakamisen, porttikiellon kiertämisen, häirinnän tai petoksen vuoksi. Käynnissä olevan ottelun ulkopuolella kerromme syyn ja annamme 48 tuntia aikaa vastata ennen jäädytyksen alkua. Kiireellisissä tapauksissa jäädytys alkaa ensin ja tarkistus seuraa. Maksullinen tilaus ei koskaan suojaa Tiliä rajoituksilta.",
+    "disputesTitle": "Sääntöpäätökset ja valitukset",
+    "disputes": "Otteluriidat ja rangaistukset noudattavat Sääntökirjan kohtia 15 ja 16. Voit valittaa Tiliäsi koskevasta päätöksestä 48 tunnin kuluessa sähköpostitse osoitteeseen support@ace-platform.gg SteamID:si ja todisteidesi kanssa. Valituksen käsittelee henkilökunnan jäsen, joka ei tehnyt ensimmäistä päätöstä, ja hän kertoo lopputuloksen ja perustelut. Tämä ei rajoita maasi lain mukaisia oikeuksiasi.",
+    "changesTitle": "Näiden Ehtojen muutokset",
+    "changes": "Voimme päivittää näitä Ehtoja. Jokainen uusi versio julkaistaan tällä sivulla uudella voimaantulopäivällä. Olennainen muutos tulee voimaan 7 päivän kuluttua julkaisusta eikä koskaan koske jo alkanutta maksujaksoa.",
+    "languageTitle": "Kieli",
+    "language": "Nämä Ehdot on laadittu englanniksi. Käännökset ovat käytön helpottamiseksi. Jos käännös ja englanninkielinen teksti eroavat, englanninkielinen teksti on ratkaiseva.",
+    "retentionTitle": "Tietojen säilytys",
+    "retention": "Tilin tietoja säilytetään niin kauan kuin Tili on olemassa. Istunto päättyy uloskirjautumiseen tai vanhenemiseen. Jos pyydät Tilin poistamista, poistamme tietosi 30 päivän kuluessa, lukuun ottamatta tietoja, jotka meidän on säilytettävä lakisääteisen velvoitteen tai voimassa olevan porttikiellon vuoksi, ja vain niin kauan kuin se on tarpeen.",
+    "ageTitle": "Ikäraja",
+    "age": "Sivusto on tarkoitettu 16 vuotta täyttäneille. Emme tietoisesti luo Tilejä nuoremmille lapsille. Jos uskot, että alle 16-vuotiaalla lapsella on Tili, ota yhteyttä, niin poistamme sen."
+  },
   "translationNotice": "Tämä sivu on käännös, joka tarjotaan avuksi. Jos käännös ja englanninkielinen teksti eroavat, sovelletaan englanninkielistä tekstiä.",
   "terms": {
     "meta": {
@@ -9,7 +27,7 @@ export const legalDocs: TextBag["legalDocs"] = {
     },
     "kicker": "ACE-LEGAL / KÄYTTÖEHDOT",
     "title": "Käyttöehdot",
-    "lede": "Nämä ehdot koskevat A.C.E.:n julkisen sivuston ja siihen liitettyjen tili-API:en käyttöä. Ottelun pituus, karttapooli, kokoonpanon lukitus ja protestit on kuvattu kilpailusääntökirjassa osoitteessa /rules, joka sisällytetään tähän.",
+    "lede": "Nämä Ehdot koskevat A.C.E.-sivuston ja A.C.E.-Tilisi käyttöä. Kilpailusäännöt osoitteessa /rules, tietosuojakäytäntö, evästekäytäntö ja Premium-ehdot ovat osa näitä Ehtoja.",
     "sections": {
       "operator": {
         "title": "1. Ylläpitäjä ja riippumattomuus",
@@ -20,7 +38,7 @@ export const legalDocs: TextBag["legalDocs"] = {
       "eligibility": {
         "title": "2. Kelpoisuus ja tilit",
         "paragraphs": [
-          "Sinun on oltava riittävän vanha käyttääksesi Steamia maassasi. Tilit luodaan vain virallisen Steam OpenID:n kautta. Et saa jakaa tiliä rajoituksen kiertämiseksi. A.C.E. ei koskaan kysy Steam-salasanaa."
+          "Sinun on oltava vähintään 16-vuotias tai vanhempi, jos maasi laki tai tapahtumasivu sitä edellyttää. Jos olet alle 18-vuotias, tarvitset vanhemman tai huoltajan luvan maksullisen tilauksen ostamiseen. Tilit luodaan vain virallisella Steam OpenID -kirjautumisella, yksi Tili henkilöä kohden. A.C.E. ei koskaan kysy Steam-salasanaasi."
         ]
       },
       "notActive": {
@@ -30,9 +48,9 @@ export const legalDocs: TextBag["legalDocs"] = {
         ]
       },
       "subscriptions": {
-        "title": "4. Ehdotetut tilaukset",
+        "title": "Tilaukset, laskutus ja peruminen",
         "paragraphs": [
-          "Plus (4 $/kk) ja Premium (7 $/kk) ovat näyttöhintoja. Tällä sivustolla ei vielä ole maksutoimintoa, ja pakettien painikkeissa lukee Tulossa pian. Kun laskutus on olemassa, sovelletaan sivun /pricing peruutussääntöä: kuukausittain jatkuva tilaus, peruminen hallintapaneelin asetuksista, osittaisia kuukausia ei hyvitetä."
+          "Free maksaa $0, Plus $4 kuukaudessa ja Premium $7 kuukaudessa. Maksamista ei vielä ole, joten tänään mitään ei voi ostaa eikä mitään veloiteta. Kun laskutus avautuu, tilaukset uusiutuvat kuukausittain; voit perua milloin tahansa hallintapaneelin asetuksista ja käyttöoikeus säilyy maksetun kuukauden loppuun; aloitettua kuukautta ei hyvitetä, ellei maasi laki sitä vaadi. Mikään tilaus ei lisää Rating Pointseja, nosta pisteitä tai muuta otteluiden muodostusta. Premiumin etusijatuki tarkoittaa käynnistyttyään, että Premium-pyynnöt käsitellään ensin ilman taattua vastausaikaa."
         ]
       },
       "antiCheat": {
@@ -67,9 +85,9 @@ export const legalDocs: TextBag["legalDocs"] = {
       "title": "Tietosuojakäytäntö",
       "description": "A.C.E.:n tietosuojakäytäntö: vain välttämättömät tiedot, vain Steam OpenID, ei Steam-salasanoja, ei käyttäytymistietojen myyntiä."
     },
-    "kicker": "ACE-PRIVACY / GDPR / VÄLTTÄMÄTTÖMYYS",
+    "kicker": "ACE-LEGAL / TIETOSUOJAKÄYTÄNTÖ",
     "title": "Tietosuojakäytäntö",
-    "lede": "Tämä tietosuojakäytäntö selittää, mitä A.C.E. Competitions Ltd. tallentaa, kun käytät tätä sivustoa. Käännökset tarjotaan avuksi; englanninkielinen versio on viiteteksti. Tämä ei ole väite, että jokainen tuleva tuotepinta on jo olemassa.",
+    "lede": "Tämä tietosuojakäytäntö kertoo, mitä henkilötietoja A.C.E. Competitions Ltd. tallentaa, kun käytät tätä sivustoa, miksi ja kuinka kauan. Jos käännös eroaa englanninkielisestä tekstistä, englanninkielinen teksti on ratkaiseva.",
     "strictNecessity": {
       "title": "Välttämättömyyden periaate",
       "intro": "Keräämme vähimmäismäärän tilitietoja, joita tarvitaan kilpapelaajan tunnistamiseen ja ilmeisten petosten estämiseen omassa palvelussamme. Emme kerää tarpeettomia lokeja, emme kaavi yksityisiä Steam-inventaarioita emmekä myy kolmansien osapuolten käyttäytymistietoja.",
@@ -111,9 +129,9 @@ export const legalDocs: TextBag["legalDocs"] = {
       "footerLinks": "Alatunnisteen ulkoisten verkkojen kuvakkeet ovat hakemistolinkkejä julkisille sivustoille. Ne eivät ole virallisia A.C.E.-tilejä eivätkä upota seurantawidgettejä."
     },
     "rights": {
-      "title": "GDPR-tyyppiset oikeudet",
+      "title": "Oikeutesi",
       "before": "Jos olet alueella, jolla on henkilötieto-oikeuksia, voit pyytää A.C.E.-tilitietojesi tarkastamista, korjaamista tai poistamista lähettämällä sähköpostia osoitteeseen",
-      "after": ". Ranked-huijauksenestoon liittyviä laitteistopitoja ei ole käytössä; sivustotilin poistaminen ei ole CS2 VAC -valitus."
+      "after": ". Vastaamme 30 päivän kuluessa. Sivuston tilin poistaminen ei muuta Valven tekemiä Steam- tai VAC-päätöksiä."
     },
     "cookies": {
       "title": "Evästeet",
@@ -131,11 +149,11 @@ export const legalDocs: TextBag["legalDocs"] = {
       "title": "Evästekäytäntö",
       "description": "A.C.E.:n eväste- ja telemetriatietosuoja-auditointi. Vain välttämättömät istuntoevästeet, ellet valitse varattuja valinnaisia luokkia."
     },
-    "kicker": "ACE-PRIVACY / EVÄSTEET / TELEMETRIA-AUDITOINTI",
+    "kicker": "ACE-LEGAL / EVÄSTEKÄYTÄNTÖ",
     "title": "Evästekäytäntö",
-    "lede": "Tämä sivu on ace-platform.gg:n telemetrian tietosuoja-auditointi. Se kuvaa evästeet, joita tämä sivusto todella käyttää, myöhemmäksi varatut luokat ja sen, mitä ei kerätä.",
+    "lede": "Tämä evästekäytäntö luettelee evästeet, joita sivusto todella asettaa, myöhemmäksi varatut luokat ja sen, mitä ei kerätä.",
     "audit": {
-      "title": "100 % telemetria-auditointi (nykyinen versio)",
+      "title": "Seurantatyökalut tällä sivustolla",
       "body": "A.C.E. ei käytä tällä julkisella sivustolla mainospikseleitä, Google Analyticsia, Meta Pixeliä, sormenjälki-SDK:ita tai muita kolmannen osapuolen käyttäytymisseurantoja. Suostumuspalkin valinnaiset ”Analytiikkaseurannat” ja ”Markkinointiseurannat” ovat vain luokkia. Niiden valitseminen ei tänään lataa skriptiä. Jos seurain lisätään myöhemmin, se lukee ensin tallennetun valinnan ja pysyy pois päältä, ellet ole antanut suostumusta."
     },
     "essential": {

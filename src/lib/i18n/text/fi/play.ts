@@ -1,6 +1,12 @@
 import type { TextBag } from "../types";
 
 export const play: TextBag["play"] = {
+  premium: {
+    "tag": "PREMIUM",
+    "sample": "PREMIUM-ESIMERKKI",
+    "note": "Premium-esimerkiksi merkityt paikat näyttävät kuvitetun Premium-arvomerkin vain esittelyä varten. Ne ovat esimerkkipelaajia, eivät tilaajia. Premium-kuvitus on puhtaasti kosmeettinen eikä koskaan muuta pisteitä tai otteluiden muodostusta.",
+    "artAlt": "Kuvitettu Premium-arvomerkki {rank}"
+  },
   room: {
     "showcaseTag": "NÄYTÖS · Esimerkkipelaajia, ei live-ottelu. Jono on suljettu.",
     "showcaseShort": "NÄYTÖS",

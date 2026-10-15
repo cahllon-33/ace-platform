@@ -91,7 +91,7 @@ export const RB_HR: RulebookText = {
       "Zabranjeni su namještanje utakmica, namjerni poraz i klađenje na bilo koju utakmicu u kojoj sudjeluje vaša momčad ili koja je dio vašeg događaja.",
       "Zabranjeno je koristiti grešku na mapi ili u igri koju je sudac proglasio nedopuštenom ili koja očito krši predviđenu mehaniku igre.",
       "Ako događaj to zahtijeva, igrači moraju tijekom cijele utakmice imati pokrenut A.C.E. anti-cheat klijent.",
-      "Suci mogu radi istrage zatražiti demo zapise, snimke zaslona ili podatke o hardveru. Odbijanje razumnog zahtjeva može se smatrati priznanjem.",
+      "Admini mogu zatražiti demo snimke ili snimke zaslona radi provjere. Podaci o hardveru tražit će se tek kad postoji A.C.E. anti-cheat klijent i kad ih opišu Pravila privatnosti. Odbijanje razumnog zahtjeva bez valjanog razloga može se uzeti u obzir pri odluci.",
       "Svatko može povjerljivo prijaviti sumnju na prekršaj organizatoru. Javno optuživanje bez prijave prekršaj je ponašanja."
     ],
     [
@@ -99,7 +99,8 @@ export const RB_HR: RulebookText = {
       "Momčad koja nakon poznatog problema nastavi igrati bez prijave prihvaća situaciju za već odigrane runde.",
       "Sudac odlučuje o prigovoru te objavljuje odluku i obrazloženje. Dok se prigovor razmatra, momčadi nastavljaju igrati prema rasporedu, osim ako sudac ne odluči drukčije.",
       "Na odluku se može uložiti žalba u roku od 48 sati. Žalbu razmatra član organizatora koji nije donio prvotnu odluku. Odluka o žalbi je konačna.",
-      "Kazne za prekršaje protiv integriteta (odjeljak 14) mogu se izreći i nakon završetka događaja ako se dokazi pojave kasnije."
+      "Kazne za prekršaje protiv integriteta (odjeljak 14) mogu se izreći i nakon završetka događaja ako se dokazi pojave kasnije.",
+      "Izvan meča u tijeku igrač saznaje razlog i dokaze prije početka suspenzije ili zabrane i može odgovoriti u roku od 48 sati. U hitnim slučajevima narušavanja integriteta suspenzija počinje odmah, a provjera slijedi."
     ],
     [
       "Kazne se mogu kombinirati. Opomena ostaje u evidenciji momčadi do kraja događaja; ostale kazne ostaju u evidenciji 12 mjeseci.",

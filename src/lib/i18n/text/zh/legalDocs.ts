@@ -1,6 +1,24 @@
 import type { TextBag } from "../types";
 
 export const legalDocs: TextBag["legalDocs"] = {
+  r14: {
+    "effective": "生效日期：{date}",
+    "contact": "联系方式：support@ace-platform.gg",
+    "definitionsTitle": "定义",
+    "definitions": "在本条款中，“A.C.E.”和“我们”指 A.C.E. Competitions Ltd.。“本网站”指 ace-platform.gg。“账号”指通过 Steam 登录创建的 A.C.E. 资料。“方案”指 Free、Plus 或 Premium。“规则手册”指 /rules 上的竞技规则手册。“管理员”指在赛事中执行规则手册的工作人员。",
+    "suspensionTitle": "账号限制与停用",
+    "suspension": "对于违反本条款或规则手册的账号，例如作弊、共享账号、规避封禁、骚扰或欺诈，我们可以警告、限制、停用或关闭。比赛进行时除外，在停用开始前，我们会告知原因并给你 48 小时答复。紧急情况下先停用，随后审核。付费方案绝不能使账号免受限制。",
+    "disputesTitle": "规则裁决与申诉",
+    "disputes": "比赛争议和处罚依据规则手册第 15 和第 16 节。你可以在 48 小时内发送邮件至 support@ace-platform.gg，附上 SteamID 和证据，对涉及你账号的决定提出申诉。由未参与初次决定的工作人员审核申诉，并告知结果和理由。这不限制你根据所在国家法律享有的任何权利。",
+    "changesTitle": "本条款的变更",
+    "changes": "我们可能更新本条款。每个新版本都会以新的生效日期发布在本页面。重大变更在发布 7 天后生效，且绝不适用于已开始的付费周期。",
+    "languageTitle": "语言",
+    "language": "本条款以英文撰写。译文仅为方便提供。若译文与英文文本不一致，以英文文本为准。",
+    "retentionTitle": "数据保留",
+    "retention": "账号记录在账号存在期间保留。会话在你退出登录或过期时结束。如你要求删除账号，我们将在 30 天内删除你的记录，但因法定义务或执行有效封禁而必须保留的记录除外，且仅保留必要期限。",
+    "ageTitle": "年龄要求",
+    "age": "本网站面向 16 岁及以上人士。我们不会在知情的情况下为更小的儿童创建账号。如你认为有 16 岁以下的儿童拥有账号，请联系我们，我们会将其删除。"
+  },
   "translationNotice": "本页面为便于阅读而提供的译文。如译文与英文原文不一致,以英文原文为准。",
   "terms": {
     "meta": {
@@ -9,7 +27,7 @@ export const legalDocs: TextBag["legalDocs"] = {
     },
     "kicker": "ACE-LEGAL / 服务条款",
     "title": "服务条款",
-    "lede": "本条款适用于 A.C.E. 公开网站及相关账户 API 的使用。比赛时长、地图池、阵容锁定和申诉详见 /rules 的竞技规则手册,该手册构成本条款的一部分。",
+    "lede": "本条款适用于你对 A.C.E. 网站和 A.C.E. 账号的使用。/rules 上的竞技规则手册、隐私政策、Cookie 政策和 Premium 条款均为本条款的组成部分。",
     "sections": {
       "operator": {
         "title": "1. 运营方与独立性",
@@ -20,7 +38,7 @@ export const legalDocs: TextBag["legalDocs"] = {
       "eligibility": {
         "title": "2. 资格与账户",
         "paragraphs": [
-          "你必须达到所在国家允许使用 Steam 的年龄。账户只能通过官方 Steam OpenID 创建。不得为规避限制而共享账户。A.C.E. 绝不会索要 Steam 密码。"
+          "你必须年满 16 岁；如所在国家法律或赛事页面要求更高年龄，则须达到该年龄。未满 18 岁购买付费方案需获得父母或监护人许可。账号只能通过官方 Steam OpenID 登录创建，每人一个账号。A.C.E. 绝不会索要你的 Steam 密码。"
         ]
       },
       "notActive": {
@@ -30,9 +48,9 @@ export const legalDocs: TextBag["legalDocs"] = {
         ]
       },
       "subscriptions": {
-        "title": "4. 拟议订阅",
+        "title": "方案、计费与取消",
         "paragraphs": [
-          "Plus(每月 $4)和 Premium(每月 $7)为显示价格。本网站目前尚无支付功能,方案按钮显示“即将推出”。计费上线后,适用 /pricing 中的取消规则:按月滚动订阅,可在控制面板设置中取消,不足一个月的部分不予退款。"
+          "Free 为 $0，Plus 每月 $4，Premium 每月 $7。结账功能尚不存在，因此目前无法购买任何内容，也不会产生任何费用。计费开通后，方案按月续订；你可以随时在仪表板设置中取消，并保留访问权限至已付月份结束；未满一个月的部分不予退款，除非你所在国家的法律要求退款。任何方案都不会增加 Rating Points、提高评分或改变匹配。Premium 优先支持上线后，意味着 Premium 请求优先处理，但不保证回复时间。"
         ]
       },
       "antiCheat": {
@@ -67,9 +85,9 @@ export const legalDocs: TextBag["legalDocs"] = {
       "title": "隐私政策",
       "description": "A.C.E. 隐私政策:严格必要的数据,仅限 Steam OpenID,不收集 Steam 密码,不出售行为数据。"
     },
-    "kicker": "ACE-PRIVACY / GDPR / 严格必要",
+    "kicker": "ACE-LEGAL / 隐私政策",
     "title": "隐私政策",
-    "lede": "本隐私政策说明你使用本网站时 A.C.E. Competitions Ltd. 存储哪些信息。译文仅为方便提供;英文版本为参考文本。本政策并不表示所有未来的产品功能都已存在。",
+    "lede": "本隐私政策说明你使用本网站时 A.C.E. Competitions Ltd. 存储哪些个人数据、原因以及保存多久。若译文与英文文本不一致，以英文文本为准。",
     "strictNecessity": {
       "title": "严格必要原则",
       "intro": "我们只收集识别竞技玩家和阻止针对本服务的明显欺诈所需的最少账户数据。我们不收集不必要的日志,不抓取私密的 Steam 库存,也不出售第三方行为数据。",
@@ -111,9 +129,9 @@ export const legalDocs: TextBag["legalDocs"] = {
       "footerLinks": "页脚中的外部网络图标是指向公开网站的目录链接。它们不是 A.C.E. 官方账号,也不嵌入追踪组件。"
     },
     "rights": {
-      "title": "类 GDPR 权利",
+      "title": "你的权利",
       "before": "如果你所在地区赋予个人数据权利,你可以发送邮件至",
-      "after": "申请访问、更正或删除你的 A.C.E. 账户数据。排位反作弊的硬件封禁并未启用;删除网站账户也不等同于 CS2 的 VAC 申诉。"
+      "after": "。我们会在 30 天内回复。删除网站账号不会改变 Valve 作出的任何 Steam 或 VAC 决定。"
     },
     "cookies": {
       "title": "Cookie",
@@ -131,11 +149,11 @@ export const legalDocs: TextBag["legalDocs"] = {
       "title": "Cookie 政策",
       "description": "A.C.E. Cookie 与遥测隐私审计。除非你同意预留的可选类别,否则仅使用必要的会话 Cookie。"
     },
-    "kicker": "ACE-PRIVACY / COOKIES / 遥测审计",
+    "kicker": "ACE-LEGAL / COOKIE 政策",
     "title": "Cookie 政策",
-    "lede": "本页面是 ace-platform.gg 的遥测隐私审计,说明本网站实际使用的 Cookie、为将来预留的类别,以及不收集的内容。",
+    "lede": "本 Cookie 政策列出本网站实际设置的 Cookie、预留给以后的类别以及不会收集的内容。",
     "audit": {
-      "title": "100% 遥测审计(当前版本)",
+      "title": "本网站的追踪工具",
       "body": "A.C.E. 不在本公开网站上运行广告像素、Google Analytics、Meta Pixel、指纹识别 SDK 或其他第三方行为追踪器。同意面板中可选的“分析追踪器”和“营销追踪器”仅为类别,勾选它们目前不会加载任何脚本。如果以后添加追踪器,它会先读取已保存的偏好,在你未同意时保持关闭。"
     },
     "essential": {

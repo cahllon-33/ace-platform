@@ -91,7 +91,7 @@ export const RB_CS: RulebookText = {
       "Zakázány jsou ovlivňování zápasů, úmyslná prohra a sázení na jakýkoli zápas vašeho týmu nebo ve vaší akci.",
       "Je zakázáno využívat chybu mapy nebo hry, kterou rozhodčí označil za zakázanou nebo která zjevně narušuje zamýšlené herní mechaniky.",
       "Hráči musí mít po celý zápas spuštěného anti-cheat klienta A.C.E., pokud to akce vyžaduje.",
-      "Rozhodčí mohou k přezkumu vyžádat dema, záznamy obrazovky nebo údaje o hardwaru. Odmítnutí přiměřené žádosti může být považováno za doznání.",
+      "Admini si mohou vyžádat dema nebo záznamy obrazovky k přezkumu. Údaje o hardwaru se budou vyžadovat až poté, co bude existovat anti-cheat klient A.C.E. a popíší je Zásady ochrany osobních údajů. Odmítnutí přiměřené žádosti bez pádného důvodu může být zohledněno v rozhodnutí.",
       "Kdokoli může podezření na porušení pravidel důvěrně oznámit pořadateli. Veřejná obvinění bez oznámení jsou porušením pravidel chování."
     ],
     [
@@ -99,7 +99,8 @@ export const RB_CS: RulebookText = {
       "Pokračování ve hře po známém problému bez jeho nahlášení znamená souhlas se situací pro již odehraná kola.",
       "Rozhodčí o námitce rozhodne a zveřejní výsledek i odůvodnění. Dokud je námitka otevřená, týmy hrají podle harmonogramu, pokud rozhodčí neurčí jinak.",
       "Odvolání lze podat do 48 hodin od rozhodnutí. Posuzuje je člen pořadatele, který původní rozhodnutí nevydal. Rozhodnutí o odvolání je konečné.",
-      "Tresty za porušení integrity (oddíl 14) mohou být uděleny i po skončení akce, pokud se důkazy objeví později."
+      "Tresty za porušení integrity (oddíl 14) mohou být uděleny i po skončení akce, pokud se důkazy objeví později.",
+      "Mimo probíhající zápas se hráč dozví důvod a důkazy před začátkem pozastavení nebo banu a může odpovědět do 48 hodin. V naléhavých případech porušení integrity začne pozastavení hned a přezkum následuje."
     ],
     [
       "Tresty lze kombinovat. Napomenutí zůstává v záznamu týmu do konce akce; ostatní tresty zůstávají v záznamu 12 měsíců.",

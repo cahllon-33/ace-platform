@@ -1,6 +1,24 @@
 import type { TextBag } from "../types";
 
 export const legalDocs: TextBag["legalDocs"] = {
+  r14: {
+    "effective": "Yürürlük tarihi: {date}",
+    "contact": "İletişim: support@ace-platform.gg",
+    "definitionsTitle": "Tanımlar",
+    "definitions": "Bu Koşullarda “A.C.E.” ve “biz”, A.C.E. Competitions Ltd. anlamına gelir. “Site”, ace-platform.gg anlamına gelir. “Hesap”, Steam girişiyle oluşturulan A.C.E. profilidir. “Plan”, Free, Plus veya Premium anlamına gelir. “Kural Kitabı”, /rules adresindeki Rekabet Kural Kitabıdır. “Admin”, bir etkinlikte Kural Kitabını uygulayan personeldir.",
+    "suspensionTitle": "Hesap kısıtlamaları ve askıya alma",
+    "suspension": "Bu Koşulları veya Kural Kitabını ihlal eden bir Hesabı, örneğin hile, hesap paylaşımı, yasak atlatma, taciz veya dolandırıcılık nedeniyle uyarabilir, kısıtlayabilir, askıya alabilir veya kapatabiliriz. Devam eden bir maç dışında, askıya alma başlamadan önce sana nedeni bildirir ve yanıt vermen için 48 saat tanırız. Acil durumlarda askıya alma önce başlar, inceleme ardından gelir. Ücretli bir plan bir Hesabı kısıtlamadan asla korumaz.",
+    "disputesTitle": "Kural kararları ve itirazlar",
+    "disputes": "Maç anlaşmazlıkları ve cezalar Kural Kitabının 15. ve 16. bölümlerine tabidir. Hesabınla ilgili bir karara, SteamID'n ve kanıtlarınla support@ace-platform.gg adresine e-posta göndererek 48 saat içinde itiraz edebilirsin. İtirazı ilk kararı vermeyen bir personel inceler ve sonucu gerekçesiyle bildirir. Bu, ülkenin yasalarına göre sahip olduğun hakları sınırlamaz.",
+    "changesTitle": "Bu Koşullardaki değişiklikler",
+    "changes": "Bu Koşulları güncelleyebiliriz. Her yeni sürüm bu sayfada yeni bir yürürlük tarihiyle yayımlanır. Önemli bir değişiklik yayımlandıktan 7 gün sonra yürürlüğe girer ve başlamış bir ödeme dönemine asla uygulanmaz.",
+    "languageTitle": "Dil",
+    "language": "Bu Koşullar İngilizce yazılmıştır. Çeviriler kolaylık için sunulur. Bir çeviri ile İngilizce metin farklıysa İngilizce metin geçerlidir.",
+    "retentionTitle": "Veri saklama",
+    "retention": "Hesap kayıtları Hesabın var olduğu sürece saklanır. Oturum, çıkış yaptığında veya süresi dolduğunda sona erer. Hesabının silinmesini istersen kayıtlarını 30 gün içinde kaldırırız; yasal bir yükümlülük veya aktif bir yasağın uygulanması için saklamamız gerekenler hariç ve yalnızca gerektiği sürece.",
+    "ageTitle": "Yaş şartı",
+    "age": "Site 16 yaş ve üzeri kişilere yöneliktir. Daha küçük çocuklar için bilerek Hesap oluşturmayız. 16 yaşından küçük bir çocuğun Hesabı olduğunu düşünüyorsan bize ulaş, silelim."
+  },
   "translationNotice": "Bu sayfa kolaylık sağlamak amacıyla sunulan bir çeviridir. Çeviri ile İngilizce metin arasında fark olması durumunda İngilizce metin geçerlidir.",
   "terms": {
     "meta": {
@@ -9,7 +27,7 @@ export const legalDocs: TextBag["legalDocs"] = {
     },
     "kicker": "ACE-LEGAL / HİZMET KOŞULLARI",
     "title": "Hizmet Koşulları",
-    "lede": "Bu Koşullar, A.C.E. herkese açık sitesinin ve bağlı hesap API'lerinin kullanımını düzenler. Maç süresi, harita havuzu, kadro kilidi ve itirazlar /rules adresindeki Rekabet Kural Kitabı'nda ayrıntılı olarak yer alır ve bu kitap Koşullar'ın bir parçasıdır.",
+    "lede": "Bu Koşullar A.C.E. web sitesini ve A.C.E. Hesabını kullanımını düzenler. /rules adresindeki Rekabet Kural Kitabı, Gizlilik Politikası, Çerez Politikası ve Premium koşulları bu Koşulların parçasıdır.",
     "sections": {
       "operator": {
         "title": "1. İşletmeci ve bağımsızlık",
@@ -20,7 +38,7 @@ export const legalDocs: TextBag["legalDocs"] = {
       "eligibility": {
         "title": "2. Uygunluk ve hesaplar",
         "paragraphs": [
-          "Ülkenizde Steam kullanmaya yetecek yaşta olmalısınız. Hesaplar yalnızca resmi Steam OpenID ile oluşturulur. Bir kısıtlamadan kaçmak için hesap paylaşamazsınız. A.C.E. asla Steam şifresi istemez."
+          "En az 16 yaşında olmalısın; ülkenin yasası veya bir etkinlik sayfası gerektiriyorsa daha büyük. 18 yaşından küçüksen ücretli bir plan satın almak için ebeveyn veya vasi izni gerekir. Hesaplar yalnızca resmi Steam OpenID girişiyle oluşturulur, kişi başına bir Hesap. A.C.E. asla Steam şifreni istemez."
         ]
       },
       "notActive": {
@@ -30,9 +48,9 @@ export const legalDocs: TextBag["legalDocs"] = {
         ]
       },
       "subscriptions": {
-        "title": "4. Önerilen abonelikler",
+        "title": "Planlar, faturalama ve iptal",
         "paragraphs": [
-          "Plus (aylık $4) ve Premium (aylık $7) gösterim fiyatlarıdır. Bu sitede henüz ödeme yoktur ve plan düğmeleri Yakında ibaresini gösterir. Ödeme devreye girdiğinde /pricing sayfasındaki iptal kuralı geçerlidir: aylık yenilenen abonelik, panel ayarlarından iptal, kısmi aylar iade edilmez."
+          "Free $0, Plus aylık $4, Premium aylık $7'dır. Ödeme henüz yok, bu yüzden bugün hiçbir şey satın alınamaz veya ücretlendirilemez. Faturalama açıldığında planlar aylık yenilenir; istediğin zaman panel ayarlarından iptal edebilir ve ödenen ayın sonuna kadar erişimi koruyabilirsin; kısmi ay, ülkenin yasası gerektirmedikçe iade edilmez. Hiçbir plan Rating Points eklemez, reytingi yükseltmez veya eşleştirmeyi değiştirmez. Premium öncelikli destek, başladığında, Premium taleplerinin önce ele alınması demektir; garanti edilen bir yanıt süresi yoktur."
         ]
       },
       "antiCheat": {
@@ -67,9 +85,9 @@ export const legalDocs: TextBag["legalDocs"] = {
       "title": "Gizlilik Politikası",
       "description": "A.C.E. Gizlilik Politikası: katı gereklilik verisi, yalnızca Steam OpenID, Steam şifresi yok, davranışsal veri satışı yok."
     },
-    "kicker": "ACE-PRIVACY / GDPR / KATI GEREKLİLİK",
+    "kicker": "ACE-LEGAL / GİZLİLİK POLİTİKASI",
     "title": "Gizlilik Politikası",
-    "lede": "Bu Gizlilik Politikası, bu siteyi kullandığınızda A.C.E. Competitions Ltd.'nin neleri sakladığını açıklar. Çeviriler kolaylık için sunulur; referans metin İngilizce sürümdür. Bu, gelecekteki her ürün yüzeyinin zaten var olduğu iddiası değildir.",
+    "lede": "Bu Gizlilik Politikası, bu siteyi kullandığında A.C.E. Competitions Ltd.'nin hangi kişisel verileri, neden ve ne kadar süre sakladığını açıklar. Bir çeviri İngilizce metinden farklıysa İngilizce metin geçerlidir.",
     "strictNecessity": {
       "title": "Katı Gereklilik ilkesi",
       "intro": "Rekabetçi bir oyuncuyu tanımlamak ve kendi hizmetimizdeki açık dolandırıcılığı durdurmak için gereken asgari hesap verisini toplarız. Gereksiz kayıt toplamayız, özel Steam envanterini kazımayız ve üçüncü taraf davranışsal veri satmayız.",
@@ -111,9 +129,9 @@ export const legalDocs: TextBag["legalDocs"] = {
       "footerLinks": "Alt bilgideki harici ağ simgeleri herkese açık sitelere dizin bağlantılarıdır. Resmi A.C.E. hesapları değildir ve izleme bileşenleri yerleştirmez."
     },
     "rights": {
-      "title": "GDPR tarzı haklar",
+      "title": "Hakların",
       "before": "Kişisel veri hakları bulunan bir bölgedeyseniz, A.C.E. hesap verilerinize erişim, düzeltme veya silme talebinde bulunmak için şu adrese e-posta gönderebilirsiniz:",
-      "after": ". Dereceli hile karşıtı donanım kısıtlamaları aktif değildir; bir site hesabının silinmesi CS2 VAC itirazı değildir."
+      "after": ". 30 gün içinde yanıt veririz. Site hesabını silmek, Valve'ın verdiği bir Steam veya VAC kararını değiştirmez."
     },
     "cookies": {
       "title": "Çerezler",
@@ -131,11 +149,11 @@ export const legalDocs: TextBag["legalDocs"] = {
       "title": "Çerez Politikası",
       "description": "A.C.E. çerez ve telemetri gizlilik denetimi. Ayrılmış isteğe bağlı kategorileri kabul etmediğiniz sürece yalnızca zorunlu oturum çerezleri."
     },
-    "kicker": "ACE-PRIVACY / ÇEREZLER / TELEMETRİ DENETİMİ",
+    "kicker": "ACE-LEGAL / ÇEREZ POLİTİKASI",
     "title": "Çerez Politikası",
-    "lede": "Bu sayfa ace-platform.gg için telemetri gizlilik denetimidir. Sitenin gerçekten kullandığı çerezleri, ileride kullanılmak üzere ayrılmış kategorileri ve nelerin toplanmadığını açıklar.",
+    "lede": "Bu Çerez Politikası, bu sitenin gerçekten kullandığı çerezleri, sonraya ayrılan kategorileri ve toplanmayanları listeler.",
     "audit": {
-      "title": "%100 telemetri denetimi (mevcut sürüm)",
+      "title": "Bu sitedeki izleyiciler",
       "body": "A.C.E. bu herkese açık sitede reklam pikselleri, Google Analytics, Meta Pixel, parmak izi SDK'ları veya başka üçüncü taraf davranışsal izleyiciler çalıştırmaz. Onay panelindeki isteğe bağlı \"Analiz İzleyicileri\" ve \"Pazarlama İzleyicileri\" yalnızca kategorilerdir. Bunları işaretlemek bugün hiçbir betik yüklemez. İleride bir izleyici eklenirse, önce kayıtlı tercihi okur ve siz kabul etmediğiniz sürece kapalı kalır."
     },
     "essential": {

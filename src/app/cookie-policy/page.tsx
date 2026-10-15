@@ -20,10 +20,10 @@ export default async function CookiePolicyPage() {
       lede={policy.lede}
       notice={localeId !== "en" ? text.legalDocs.translationNotice : undefined}
     >
-      <LegalSection title={policy.audit.title}>
+      <LegalSection n={1} title={policy.audit.title}>
         <p>{policy.audit.body}</p>
       </LegalSection>
-      <LegalSection title={policy.essential.title}>
+      <LegalSection n={2} title={policy.essential.title}>
         <ul className="list-disc space-y-2 ps-5">
           <li>
             <strong className="text-[#F5F3EC]">{policy.essential.session.label}</strong>{" "}
@@ -32,17 +32,17 @@ export default async function CookiePolicyPage() {
           <li>{policy.essential.necessity}</li>
         </ul>
       </LegalSection>
-      <LegalSection title={policy.analytics.title}>
+      <LegalSection n={3} title={policy.analytics.title}>
         <p>
           {policy.analytics.before}{" "}
           <code className="text-[#FFD700]">ace-cookie-consent-v1</code>{" "}
           {policy.analytics.after}
         </p>
       </LegalSection>
-      <LegalSection title={policy.marketing.title}>
+      <LegalSection n={4} title={policy.marketing.title}>
         <p>{policy.marketing.body}</p>
       </LegalSection>
-      <LegalSection title={policy.change.title}>
+      <LegalSection n={5} title={policy.change.title}>
         <p>{policy.change.body}</p>
       </LegalSection>
     </LegalDocument>

@@ -91,7 +91,7 @@ export const RB_PT: RulebookText = {
       "São proibidos a viciação de resultados, perder de propósito e apostar em qualquer jogo da sua equipa ou do seu evento.",
       "É proibido usar um erro de mapa ou de jogo que o árbitro tenha declarado proibido, ou que quebre claramente as mecânicas previstas do jogo.",
       "Os jogadores têm de executar o cliente antibatota da A.C.E. durante todo o jogo, quando o evento o exigir.",
-      "Os árbitros podem pedir demos, gravações de ecrã ou dados de hardware para análise. Recusar um pedido razoável pode ser considerado uma admissão.",
+      "Os admins podem pedir demos ou gravações de ecrã para análise. Os dados de hardware só serão pedidos quando o cliente anti-batota A.C.E. existir e a Política de Privacidade os descrever. Recusar um pedido razoável sem motivo válido pode ser tido em conta na decisão.",
       "Qualquer pessoa pode denunciar em privado ao organizador uma suspeita de infração. As acusações públicas sem denúncia são uma infração de conduta."
     ],
     [
@@ -99,7 +99,8 @@ export const RB_PT: RulebookText = {
       "Continuar a jogar após um problema conhecido sem o assinalar equivale a aceitar a situação para as rondas já jogadas.",
       "O árbitro decide a reclamação e publica a decisão e a fundamentação. As equipas continuam a cumprir o calendário enquanto a reclamação estiver aberta, salvo decisão em contrário do árbitro.",
       "Pode ser interposto recurso nas 48 horas seguintes à decisão. O recurso é analisado por um membro do organizador que não tomou a decisão original. A decisão do recurso é definitiva.",
-      "As sanções de integridade (secção 14) também podem ser aplicadas após o fim de um evento, se as provas surgirem mais tarde."
+      "As sanções de integridade (secção 14) também podem ser aplicadas após o fim de um evento, se as provas surgirem mais tarde.",
+      "Fora de uma partida em curso, o jogador é informado do motivo e das provas antes de uma suspensão ou banimento começar e pode responder no prazo de 48 horas. Em casos urgentes de integridade, a suspensão começa primeiro e a revisão vem depois."
     ],
     [
       "As sanções podem ser combinadas. Uma advertência fica no registo da equipa até ao fim do evento; as restantes sanções ficam registadas durante 12 meses.",

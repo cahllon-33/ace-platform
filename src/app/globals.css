@@ -7874,3 +7874,7 @@ html[dir="rtl"] .ace-hub-card-face {
 @media (prefers-reduced-motion: reduce) {
   .ace-float-emblem img, .ace-float-emblem-glow { animation: none; }
 }
+
+/* R14: Premium rank art tag (match room, lobby, leaderboard). Cosmetic only. */
+.ace-premium-tag { display: inline-flex; align-items: center; margin-inline-start: 0.4rem; padding: 0.08rem 0.45rem; border-radius: 999px; border: 1px solid rgba(255,215,0,0.7); background: linear-gradient(135deg, #3a2a05, #b8860b 55%, #ffd700); color: #120d02; font-size: 0.58rem; font-weight: 800; letter-spacing: 0.14em; line-height: 1.4; text-transform: uppercase; vertical-align: middle; box-shadow: 0 0 10px rgba(255,200,60,0.35); white-space: nowrap; }
+.ace-room-slot.is-premium { border-color: rgba(255,215,0,0.55); box-shadow: inset 0 0 0 1px rgba(255,215,0,0.18), 0 0 22px -8px rgba(255,200,60,0.45); }

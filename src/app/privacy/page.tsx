@@ -20,7 +20,7 @@ export default async function PrivacyPage() {
       lede={privacy.lede}
       notice={localeId !== "en" ? text.legalDocs.translationNotice : undefined}
     >
-      <LegalSection title={privacy.strictNecessity.title}>
+      <LegalSection n={1} title={privacy.strictNecessity.title}>
         <p>{privacy.strictNecessity.intro}</p>
         <p>{privacy.strictNecessity.storedIntro}</p>
         <ul className="list-disc space-y-2 ps-5">
@@ -37,14 +37,14 @@ export default async function PrivacyPage() {
           {privacy.strictNecessity.notCollected.after}
         </p>
       </LegalSection>
-      <LegalSection title={privacy.neverCollect.title}>
+      <LegalSection n={2} title={privacy.neverCollect.title}>
         <ul className="list-disc space-y-2 ps-5">
           {privacy.neverCollect.items.map((item, index) => (
             <li key={index}>{item}</li>
           ))}
         </ul>
       </LegalSection>
-      <LegalSection title={privacy.steamBoundary.title}>
+      <LegalSection n={3} title={privacy.steamBoundary.title}>
         <p>
           {privacy.steamBoundary.callback.before}{" "}
           <code className="text-[#FFD700]">/api/auth/steam/callback</code>
@@ -52,7 +52,13 @@ export default async function PrivacyPage() {
         </p>
         <p>{privacy.steamBoundary.footerLinks}</p>
       </LegalSection>
-      <LegalSection title={privacy.rights.title}>
+      <LegalSection n={4} title={text.legalDocs.r14.retentionTitle}>
+        <p>{text.legalDocs.r14.retention}</p>
+      </LegalSection>
+      <LegalSection n={5} title={text.legalDocs.r14.ageTitle}>
+        <p>{text.legalDocs.r14.age}</p>
+      </LegalSection>
+      <LegalSection n={6} title={privacy.rights.title}>
         <p>
           {privacy.rights.before}{" "}
           <a className="text-[#FFD700]" href="mailto:support@ace-platform.gg">
@@ -61,7 +67,7 @@ export default async function PrivacyPage() {
           {privacy.rights.after}
         </p>
       </LegalSection>
-      <LegalSection title={privacy.cookies.title}>
+      <LegalSection n={7} title={privacy.cookies.title}>
         <p>
           {privacy.cookies.before}{" "}
           <a className="text-[#FFD700]" href="/cookie-policy">
@@ -70,7 +76,7 @@ export default async function PrivacyPage() {
           {privacy.cookies.after}
         </p>
       </LegalSection>
-      <LegalSection title={privacy.controller.title}>
+      <LegalSection n={8} title={privacy.controller.title}>
         <p>{privacy.controller.body}</p>
       </LegalSection>
     </LegalDocument>

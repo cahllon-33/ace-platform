@@ -1,6 +1,12 @@
 import type { TextBag } from "../types";
 
 export const play: TextBag["play"] = {
+  premium: {
+    "tag": "PREMIUM",
+    "sample": "PREMIUM PRIMJER",
+    "note": "Mjesta označena kao Premium primjer prikazuju ilustriranu Premium grafiku ranga samo kao prikaz. To su primjeri igrača, ne pretplatnici. Premium grafika je isključivo kozmetička i nikad ne mijenja rejting ni sparivanje.",
+    "artAlt": "Ilustrirana Premium grafika ranga {rank}"
+  },
   room: {
     "showcaseTag": "PRIKAZ · Primjeri igrača, nije meč uživo. Red je zatvoren.",
     "showcaseShort": "PRIKAZ",

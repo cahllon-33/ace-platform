@@ -91,7 +91,7 @@ export const RB_TR: RulebookText = {
       "Şike, kasten kaybetmek ve kendi takımınızın oynadığı ya da kendi etkinliğinizdeki herhangi bir maça bahis oynamak yasaktır.",
       "Hakemin yasaklı olarak listelediği veya oyunun amaçlanan mekaniklerini açıkça bozan bir harita ya da oyun hatasını kullanmak yasaktır.",
       "Etkinlik gerektirdiğinde oyuncular maç boyunca A.C.E. hile önleme istemcisini çalıştırmalıdır.",
-      "Hakemler inceleme için demo, ekran kaydı veya donanım bilgisi isteyebilir. Makul bir talebi reddetmek kabul olarak değerlendirilebilir.",
+      "Adminler inceleme için demo veya ekran kaydı isteyebilir. Donanım bilgileri ancak A.C.E. hile önleme istemcisi var olduğunda ve Gizlilik Politikası bunları açıkladığında istenir. Makul bir talebi geçerli bir neden olmadan reddetmek kararda dikkate alınabilir.",
       "Herkes şüpheli bir ihlali organizatöre gizli olarak bildirebilir. Bildirim yapmadan alenen suçlamak davranış ihlalidir."
     ],
     [
@@ -99,7 +99,8 @@ export const RB_TR: RulebookText = {
       "Bilinen bir sorundan sonra bunu dile getirmeden oynamaya devam etmek, oynanmış raundlar için durumun kabul edildiği anlamına gelir.",
       "Hakem itirazı karara bağlar ve sonucu gerekçesiyle yayımlar. Hakem aksini belirtmedikçe takımlar, itiraz açıkken programlarına göre oynamaya devam eder.",
       "Karara karşı 48 saat içinde temyize gidilebilir. Temyiz, ilk kararı vermemiş bir organizatör üyesi tarafından incelenir. Temyiz kararı kesindir.",
-      "Kanıt sonradan ortaya çıkarsa dürüstlük cezaları (bölüm 14) etkinlik bittikten sonra da verilebilir."
+      "Kanıt sonradan ortaya çıkarsa dürüstlük cezaları (bölüm 14) etkinlik bittikten sonra da verilebilir.",
+      "Devam eden bir maç dışında oyuncuya, askıya alma veya yasak başlamadan önce neden ve kanıtlar bildirilir ve oyuncu 48 saat içinde yanıt verebilir. Acil dürüstlük vakalarında askıya alma önce başlar, inceleme ardından gelir."
     ],
     [
       "Cezalar birlikte uygulanabilir. Uyarı, etkinlik sonuna kadar takımın sicilinde kalır; diğer cezalar 12 ay boyunca sicilde kalır.",

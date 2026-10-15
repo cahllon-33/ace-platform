@@ -91,7 +91,7 @@ export const RB_HU: RulebookText = {
       "Tilos a bundázás, a szándékos vereség, valamint fogadás bármely olyan mérkőzésre, amelyen a saját csapatod szerepel, vagy amely a saját eseményedhez tartozik.",
       "Tilos olyan pálya- vagy játékhiba használata, amelyet a bíró tiltottnak nyilvánított, vagy amely egyértelműen sérti a játék rendeltetésszerű mechanikáját.",
       "Ha az esemény megköveteli, a játékosoknak a teljes mérkőzés alatt futtatniuk kell az A.C.E. csalásellenes kliensét.",
-      "A bírók vizsgálat céljából demókat, képernyőfelvételeket vagy hardveradatokat kérhetnek. Egy észszerű kérés megtagadása beismerésnek tekinthető.",
+      "Az adminok demókat vagy képernyőfelvételeket kérhetnek felülvizsgálatra. Hardveradatokat csak akkor kérünk, ha az A.C.E. anti-cheat kliens már létezik, és az Adatvédelmi irányelvek leírják őket. Egy észszerű kérés alapos ok nélküli megtagadása figyelembe vehető a döntésnél.",
       "Bárki bizalmasan jelezheti a szervezőnek a feltételezett szabálysértést. A bejelentés nélküli nyilvános vádaskodás magatartási szabálysértés."
     ],
     [
@@ -99,7 +99,8 @@ export const RB_HU: RulebookText = {
       "Ha egy csapat ismert probléma után a jelzése nélkül tovább játszik, azzal a már lejátszott körök tekintetében elfogadja a helyzetet.",
       "A bíró dönt az óvásról, és közzéteszi a döntést és annak indoklását. Az óvás elbírálása alatt a csapatok a menetrend szerint játszanak tovább, hacsak a bíró másként nem dönt.",
       "A döntés ellen 48 órán belül fellebbezni lehet. A fellebbezést a szervező olyan tagja bírálja el, aki nem hozta az eredeti döntést. A fellebbezési döntés végleges.",
-      "A verseny tisztaságát sértő cselekmények büntetései (14. szakasz) az esemény befejezése után is kiszabhatók, ha a bizonyítékok később kerülnek elő."
+      "A verseny tisztaságát sértő cselekmények büntetései (14. szakasz) az esemény befejezése után is kiszabhatók, ha a bizonyítékok később kerülnek elő.",
+      "Folyamatban lévő meccsen kívül a játékos a felfüggesztés vagy kitiltás előtt megismeri az okot és a bizonyítékokat, és 48 órán belül válaszolhat. Sürgős integritási ügyekben a felfüggesztés azonnal indul, és a felülvizsgálat utána következik."
     ],
     [
       "A büntetések összevonhatók. A figyelmeztetés az esemény végéig a csapat nyilvántartásában marad; a többi büntetés 12 hónapig marad nyilvántartásban.",

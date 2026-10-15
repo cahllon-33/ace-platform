@@ -1,6 +1,12 @@
 import type { TextBag } from "../types";
 
 export const play: TextBag["play"] = {
+  premium: {
+    "tag": "PREMIUM",
+    "sample": "MUESTRA PREMIUM",
+    "note": "Los puestos marcados como Muestra Premium muestran el arte de rango ilustrado Premium solo como diseño. Son jugadores de muestra, no suscriptores. El arte Premium es solo cosmético y nunca cambia la puntuación ni el emparejamiento.",
+    "artAlt": "Arte de rango ilustrado Premium {rank}"
+  },
   room: {
     "showcaseTag": "EXHIBICIÓN · Jugadores de muestra, no es una partida en directo. La cola está cerrada.",
     "showcaseShort": "EXHIBICIÓN",

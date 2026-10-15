@@ -91,7 +91,7 @@ export const RB_DE: RulebookText = {
       "Spielmanipulation, absichtliches Verlieren und Wetten auf Matches mit dem eigenen Team oder im eigenen Event sind verboten.",
       "Die Nutzung eines Map- oder Spielfehlers, den der Schiedsrichter als verboten gelistet hat oder der die vorgesehene Spielmechanik offensichtlich aushebelt, ist verboten.",
       "Spieler müssen den A.C.E.-Anti-Cheat-Client während des gesamten Matches ausführen, wenn das Event dies verlangt.",
-      "Schiedsrichter können Demos, Bildschirmaufnahmen oder Hardwaredetails zur Prüfung anfordern. Die Verweigerung einer angemessenen Anfrage kann als Eingeständnis gewertet werden.",
+      "Schiedsrichter können Demos oder Bildschirmaufnahmen zur Prüfung anfordern. Hardwaredaten werden erst angefordert, wenn der A.C.E.-Anti-Cheat-Client existiert und die Datenschutzerklärung sie beschreibt. Die Verweigerung einer angemessenen Anfrage ohne triftigen Grund kann bei der Entscheidung berücksichtigt werden.",
       "Jeder kann einen vermuteten Verstoß vertraulich an den Veranstalter melden. Öffentliche Anschuldigungen ohne Meldung sind ein Verhaltensverstoß."
     ],
     [
@@ -99,7 +99,8 @@ export const RB_DE: RulebookText = {
       "Wer nach einem bekannten Problem weiterspielt, ohne es zu melden, akzeptiert die Situation für die bereits gespielten Runden.",
       "Der Schiedsrichter entscheidet über den Einspruch und veröffentlicht Ergebnis und Begründung. Teams spielen ihren Zeitplan weiter, solange ein Einspruch offen ist, sofern der Schiedsrichter nichts anderes bestimmt.",
       "Gegen die Entscheidung kann innerhalb von 48 Stunden Berufung eingelegt werden. Sie wird von einem Mitglied des Veranstalters geprüft, das die ursprüngliche Entscheidung nicht getroffen hat. Die Berufungsentscheidung ist endgültig.",
-      "Integritätsstrafen (Abschnitt 14) können auch nach Eventende verhängt werden, wenn Beweise später auftauchen."
+      "Integritätsstrafen (Abschnitt 14) können auch nach Eventende verhängt werden, wenn Beweise später auftauchen.",
+      "Außerhalb eines laufenden Matches werden einem Spieler Grund und Beweise mitgeteilt, bevor eine Sperre beginnt, und er kann innerhalb von 48 Stunden Stellung nehmen. In dringenden Integritätsfällen beginnt die Sperre zuerst und die Prüfung folgt."
     ],
     [
       "Strafen können kombiniert werden. Eine Verwarnung bleibt bis zum Ende des Events in der Teamakte; andere Strafen bleiben 12 Monate vermerkt.",

@@ -91,7 +91,7 @@ export const RB_ID: RulebookText = {
       "Pengaturan pertandingan, sengaja kalah, dan bertaruh pada pertandingan apa pun yang melibatkan tim Anda atau dalam acara Anda dilarang.",
       "Menggunakan bug peta atau game yang telah dinyatakan terlarang oleh wasit, atau yang jelas merusak mekanika game yang dimaksudkan, dilarang.",
       "Pemain wajib menjalankan klien anti-cheat A.C.E. sepanjang pertandingan jika diwajibkan oleh acara.",
-      "Wasit dapat meminta demo, rekaman layar, atau detail perangkat keras untuk ditinjau. Menolak permintaan yang wajar dapat dianggap sebagai pengakuan.",
+      "Admin dapat meminta demo atau rekaman layar untuk ditinjau. Detail perangkat keras hanya akan diminta setelah klien anti-cheat A.C.E. tersedia dan Kebijakan Privasi menjelaskannya. Menolak permintaan yang wajar tanpa alasan yang sah dapat dipertimbangkan dalam keputusan.",
       "Siapa pun dapat melaporkan dugaan pelanggaran secara pribadi kepada penyelenggara. Tuduhan di depan umum tanpa laporan adalah pelanggaran perilaku."
     ],
     [
@@ -99,7 +99,8 @@ export const RB_ID: RulebookText = {
       "Melanjutkan permainan setelah mengetahui suatu masalah tanpa menyampaikannya dianggap menerima situasi tersebut untuk ronde yang telah dimainkan.",
       "Wasit memutuskan sengketa dan mengumumkan hasil serta alasannya. Tim tetap bermain sesuai jadwal selama sengketa berlangsung, kecuali wasit menyatakan lain.",
       "Banding dapat diajukan dalam 48 jam setelah keputusan. Banding ditinjau oleh anggota penyelenggara yang tidak membuat keputusan awal. Keputusan banding bersifat final.",
-      "Hukuman integritas (bagian 14) juga dapat dijatuhkan setelah acara berakhir jika bukti ditemukan kemudian."
+      "Hukuman integritas (bagian 14) juga dapat dijatuhkan setelah acara berakhir jika bukti ditemukan kemudian.",
+      "Di luar pertandingan yang sedang berlangsung, pemain diberi tahu alasan dan buktinya sebelum penangguhan atau larangan dimulai, dan dapat menanggapi dalam 48 jam. Dalam kasus integritas yang mendesak, penangguhan dimulai lebih dulu dan peninjauan menyusul."
     ],
     [
       "Hukuman dapat digabungkan. Peringatan tetap tercatat dalam riwayat tim hingga akhir acara; hukuman lainnya tetap tercatat selama 12 bulan.",

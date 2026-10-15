@@ -91,7 +91,7 @@ export const RB_PL: RulebookText = {
       "Zabronione są ustawianie meczów, celowe przegrywanie i obstawianie zakładów na jakikolwiek mecz z udziałem twojej drużyny lub w twoim wydarzeniu.",
       "Zabronione jest wykorzystywanie błędu mapy lub gry, który sędzia uznał za zakazany albo który wyraźnie łamie zamierzoną mechanikę gry.",
       "Gracze muszą mieć uruchomiony klient anti-cheat A.C.E. przez cały mecz, jeśli wymaga tego wydarzenie.",
-      "Sędziowie mogą zażądać dem, nagrań ekranu lub informacji o sprzęcie do weryfikacji. Odmowa spełnienia uzasadnionej prośby może zostać uznana za przyznanie się.",
+      "Admini mogą zażądać dem lub nagrań ekranu do weryfikacji. Dane sprzętowe będą wymagane dopiero, gdy powstanie klient anti-cheat A.C.E. i opisze je Polityka prywatności. Odmowa spełnienia rozsądnej prośby bez ważnego powodu może zostać uwzględniona przy decyzji.",
       "Każdy może poufnie zgłosić organizatorowi podejrzenie naruszenia. Publiczne oskarżenia bez zgłoszenia są wykroczeniem dotyczącym zachowania."
     ],
     [
@@ -99,7 +99,8 @@ export const RB_PL: RulebookText = {
       "Kontynuowanie gry po znanym problemie bez jego zgłoszenia oznacza akceptację sytuacji dla już rozegranych rund.",
       "Sędzia rozstrzyga protest i publikuje decyzję wraz z uzasadnieniem. W czasie rozpatrywania protestu drużyny grają zgodnie z harmonogramem, chyba że sędzia postanowi inaczej.",
       "Odwołanie można złożyć w ciągu 48 godzin od decyzji. Rozpatruje je członek organizatora, który nie podjął pierwotnej decyzji. Decyzja w sprawie odwołania jest ostateczna.",
-      "Kary za naruszenie uczciwości (sekcja 14) mogą zostać nałożone również po zakończeniu wydarzenia, jeśli dowody pojawią się później."
+      "Kary za naruszenie uczciwości (sekcja 14) mogą zostać nałożone również po zakończeniu wydarzenia, jeśli dowody pojawią się później.",
+      "Poza trwającym meczem gracz poznaje powód i dowody przed rozpoczęciem zawieszenia lub bana i może odpowiedzieć w ciągu 48 godzin. W pilnych sprawach dotyczących uczciwości zawieszenie zaczyna się od razu, a weryfikacja następuje później."
     ],
     [
       "Kary można łączyć. Ostrzeżenie pozostaje w historii drużyny do końca wydarzenia; pozostałe kary pozostają w rejestrze przez 12 miesięcy.",

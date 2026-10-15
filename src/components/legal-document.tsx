@@ -1,5 +1,18 @@
 import type { ReactNode } from "react";
+import { interpolate } from "@/lib/i18n";
 import { getText } from "@/server/locale";
+
+/** Effective date shared by the Terms, Privacy Policy, Cookie Policy and Premium terms. */
+export const LEGAL_EFFECTIVE = "15 October 2026";
+
+async function LegalMeta() {
+  const r14 = (await getText()).legalDocs.r14;
+  return (
+    <p className="mt-4 font-mono text-[0.7rem] tracking-[0.12em] text-[#C9CAD0] uppercase">
+      {interpolate(r14.effective, { date: LEGAL_EFFECTIVE })} · {r14.contact}
+    </p>
+  );
+}
 
 export async function LegalDisclaimer() {
   const text = await getText();
@@ -35,6 +48,7 @@ export function LegalDocument({
           <p className="font-mono text-xs tracking-[0.2em] text-[#FFD700]">{kicker}</p>
           <h1 className="mt-4 text-4xl font-semibold tracking-tight text-[#FFD700]">{title}</h1>
           <p className="mt-4 text-sm leading-7 text-[#A9ABB3]">{lede}</p>
+          <LegalMeta />
           <LegalDisclaimer />
         </header>
         <div className="space-y-8 px-6 py-8 text-sm leading-7 text-[#A9ABB3] sm:px-10">{children}</div>
@@ -45,10 +59,13 @@ export function LegalDocument({
 
 export function LegalSection({
   code,
+  n,
   title,
   children,
 }: {
   code?: string;
+  /** Section number; any number already in the title is replaced. */
+  n?: number;
   title: string;
   children: ReactNode;
 }) {
@@ -57,7 +74,7 @@ export function LegalSection({
       {code ? (
         <p className="font-mono text-[0.65rem] tracking-[0.2em] text-[#FFD700]">{code}</p>
       ) : null}
-      <h2 className="mt-2 text-xl font-semibold text-[#F5F3EC]">{title}</h2>
+      <h2 className="mt-2 text-xl font-semibold text-[#F5F3EC]">{n ? `${n}. ${title.replace(/^\d+\.\s*/, "")}` : title}</h2>
       <div className="mt-3 space-y-3">{children}</div>
     </section>
   );

@@ -1,6 +1,12 @@
 import type { TextBag } from "../types";
 
 export const play: TextBag["play"] = {
+  premium: {
+    "tag": "PREMIUM",
+    "sample": "CONTOH PREMIUM",
+    "note": "Slot bertanda Contoh Premium menampilkan seni rank ilustrasi Premium hanya untuk tampilan. Mereka pemain contoh, bukan pelanggan. Seni Premium hanya kosmetik dan tidak pernah mengubah rating atau matchmaking.",
+    "artAlt": "Seni rank ilustrasi Premium {rank}"
+  },
   room: {
     "showcaseTag": "PAMERAN · Pemain contoh, bukan pertandingan langsung. Antrean ditutup.",
     "showcaseShort": "PAMERAN",

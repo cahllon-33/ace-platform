@@ -10,16 +10,28 @@ export async function generateMetadata(): Promise<Metadata> {
   };
 }
 
-const SECTION_ORDER = [
-  "operator",
-  "eligibility",
-  "notActive",
-  "subscriptions",
-  "antiCheat",
-  "liability",
-  "copyright",
-  "contact",
-] as const;
+type Terms = Awaited<ReturnType<typeof getText>>["legalDocs"];
+
+function sectionList(docs: Terms): { key: string; title: string; paragraphs: readonly string[] }[] {
+  const s = docs.terms.sections;
+  const r = docs.r14;
+  const one = (key: string, title: string, body: string) => ({ key, title, paragraphs: [body] });
+  return [
+    { key: "operator", ...s.operator },
+    one("definitions", r.definitionsTitle, r.definitions),
+    { key: "eligibility", ...s.eligibility },
+    { key: "notActive", ...s.notActive },
+    { key: "subscriptions", ...s.subscriptions },
+    { key: "antiCheat", ...s.antiCheat },
+    one("suspension", r.suspensionTitle, r.suspension),
+    one("disputes", r.disputesTitle, r.disputes),
+    { key: "liability", ...s.liability },
+    { key: "copyright", ...s.copyright },
+    one("changes", r.changesTitle, r.changes),
+    one("language", r.languageTitle, r.language),
+    { key: "contact", ...s.contact },
+  ];
+}
 
 export default async function TermsPage() {
   const [text, localeId] = await Promise.all([getText(), getLocaleId()]);
@@ -31,10 +43,9 @@ export default async function TermsPage() {
       lede={terms.lede}
       notice={localeId !== "en" ? text.legalDocs.translationNotice : undefined}
     >
-      {SECTION_ORDER.map((key) => {
-        const section = terms.sections[key];
+      {sectionList(text.legalDocs).map((section, index) => {
         return (
-          <LegalSection key={key} title={section.title}>
+          <LegalSection key={section.key} n={index + 1} title={section.title}>
             {section.paragraphs.map((paragraph, index) => (
               <p key={index}>{paragraph}</p>
             ))}

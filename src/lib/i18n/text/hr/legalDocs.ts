@@ -1,6 +1,24 @@
 import type { TextBag } from "../types";
 
 export const legalDocs: TextBag["legalDocs"] = {
+  r14: {
+    "effective": "Datum stupanja na snagu: {date}",
+    "contact": "Kontakt: support@ace-platform.gg",
+    "definitionsTitle": "Definicije",
+    "definitions": "U ovim Uvjetima „A.C.E.”, „mi” znači A.C.E. Competitions Ltd. „Stranica” znači ace-platform.gg. „Račun” znači A.C.E. profil stvoren prijavom putem Steama. „Plan” znači Free, Plus ili Premium. „Pravilnik” znači Natjecateljski pravilnik na /rules. „Admin” znači član osoblja koji primjenjuje Pravilnik na događaju.",
+    "suspensionTitle": "Ograničenja i suspenzija računa",
+    "suspension": "Možemo upozoriti, ograničiti, suspendirati ili zatvoriti Račun koji krši ove Uvjete ili Pravilnik, npr. zbog varanja, dijeljenja računa, izbjegavanja zabrane, uznemiravanja ili prijevare. Izvan meča u tijeku navodimo razlog i dajemo ti 48 sati za odgovor prije početka suspenzije. U hitnim slučajevima suspenzija počinje odmah, a provjera slijedi. Plaćeni plan nikad ne štiti Račun od ograničenja.",
+    "disputesTitle": "Odluke o pravilima i žalbe",
+    "disputes": "Sporovi u mečevima i kazne prate odjeljke 15 i 16 Pravilnika. Na odluku o svom Računu možeš se žaliti u roku od 48 sati e-poštom na support@ace-platform.gg uz SteamID i dokaze. Žalbu razmatra član osoblja koji nije donio prvu odluku i javlja ti ishod i razlog. To ne ograničava prava koja imaš prema zakonu svoje zemlje.",
+    "changesTitle": "Izmjene ovih Uvjeta",
+    "changes": "Ove Uvjete možemo ažurirati. Svaka nova verzija objavljuje se na ovoj stranici s novim datumom stupanja na snagu. Bitna izmjena stupa na snagu 7 dana nakon objave i nikad se ne primjenjuje na već započeto razdoblje plaćanja.",
+    "languageTitle": "Jezik",
+    "language": "Ovi Uvjeti napisani su na engleskom. Prijevodi su tu radi praktičnosti. Ako se prijevod i engleski tekst razlikuju, vrijedi engleski tekst.",
+    "retentionTitle": "Čuvanje podataka",
+    "retention": "Podaci Računa čuvaju se dok Račun postoji. Sesija završava odjavom ili istekom. Ako zatražiš brisanje Računa, uklanjamo tvoje podatke u roku od 30 dana, osim onih koje moramo čuvati zbog zakonske obveze ili radi provođenja aktivne zabrane, i samo dok je to potrebno.",
+    "ageTitle": "Dobna granica",
+    "age": "Stranica je namijenjena osobama od 16 godina naviše. Svjesno ne stvaramo Račune za mlađu djecu. Ako misliš da dijete mlađe od 16 godina ima Račun, javi nam se i obrisat ćemo ga."
+  },
   "translationNotice": "Ova stranica je prijevod pružen radi praktičnosti. Ako se prijevod i engleski tekst razlikuju, primjenjuje se engleski tekst.",
   "terms": {
     "meta": {
@@ -9,7 +27,7 @@ export const legalDocs: TextBag["legalDocs"] = {
     },
     "kicker": "ACE-LEGAL / UVJETI KORIŠTENJA",
     "title": "Uvjeti korištenja",
-    "lede": "Ovi Uvjeti uređuju korištenje javne web-stranice A.C.E. i povezanih API-ja računa. Duljina meča, skup mapa, zaključavanje postave i prigovori detaljno su opisani u Natjecateljskom pravilniku na /rules, koji je ovdje uključen.",
+    "lede": "Ovi Uvjeti uređuju korištenje A.C.E. stranice i tvog A.C.E. Računa. Natjecateljski pravilnik na /rules, Pravila privatnosti, Pravila o kolačićima i Premium uvjeti dio su ovih Uvjeta.",
     "sections": {
       "operator": {
         "title": "1. Operater i neovisnost",
@@ -20,7 +38,7 @@ export const legalDocs: TextBag["legalDocs"] = {
       "eligibility": {
         "title": "2. Podobnost i računi",
         "paragraphs": [
-          "Moraš biti dovoljno star za korištenje Steama u svojoj zemlji. Računi se stvaraju samo putem službenog Steam OpenID-a. Ne smiješ dijeliti račun radi izbjegavanja ograničenja. A.C.E. nikad ne traži Steam lozinku."
+          "Moraš imati najmanje 16 godina, ili više ako to traži zakon tvoje zemlje ili stranica događaja. Ako imaš manje od 18 godina, za kupnju plaćenog plana trebaš dopuštenje roditelja ili skrbnika. Računi se stvaraju samo službenom prijavom Steam OpenID, jedan Račun po osobi. A.C.E. nikad ne traži tvoju Steam lozinku."
         ]
       },
       "notActive": {
@@ -30,9 +48,9 @@ export const legalDocs: TextBag["legalDocs"] = {
         ]
       },
       "subscriptions": {
-        "title": "4. Predložene pretplate",
+        "title": "Planovi, naplata i otkazivanje",
         "paragraphs": [
-          "Plus (4 $/mj.) i Premium (7 $/mj.) prikazane su cijene. Na ovoj stranici još nema plaćanja, a gumbi planova prikazuju Uskoro. Kad naplata bude postojala, primjenjuje se pravilo otkazivanja na /pricing: mjesečna kontinuirana pretplata, otkazivanje u postavkama nadzorne ploče, djelomični mjeseci se ne vraćaju."
+          "Free stoji $0, Plus $4 mjesečno, a Premium $7 mjesečno. Naplata još ne postoji pa se danas ništa ne može kupiti ni naplatiti. Kad naplata počne, planovi se obnavljaju mjesečno; otkazati možeš bilo kada u postavkama nadzorne ploče i zadržati pristup do kraja plaćenog mjeseca; započeti mjesec ne vraća se, osim ako to traži zakon tvoje zemlje. Nijedan plan ne dodaje Rating Points, ne podiže rejting niti mijenja sparivanje. Prioritetna podrška za Premium, kad krene, znači da se Premium zahtjevi obrađuju prvi, bez zajamčenog vremena odgovora."
         ]
       },
       "antiCheat": {
@@ -67,9 +85,9 @@ export const legalDocs: TextBag["legalDocs"] = {
       "title": "Pravila privatnosti",
       "description": "Pravila privatnosti A.C.E.: samo nužni podaci, samo Steam OpenID, bez Steam lozinki, bez prodaje podataka o ponašanju."
     },
-    "kicker": "ACE-PRIVACY / GDPR / STROGA NUŽNOST",
+    "kicker": "ACE-LEGAL / PRAVILA PRIVATNOSTI",
     "title": "Pravila privatnosti",
-    "lede": "Ova Pravila privatnosti objašnjavaju što A.C.E. Competitions Ltd. sprema kad koristiš ovu stranicu. Prijevodi su pruženi radi praktičnosti; engleska verzija je referentni tekst. Ovo nije tvrdnja da svaka buduća površina proizvoda već postoji.",
+    "lede": "Ova Pravila privatnosti objašnjavaju koje osobne podatke A.C.E. Competitions Ltd. čuva kad koristiš ovu stranicu, zašto i koliko dugo. Ako se prijevod razlikuje od engleskog teksta, vrijedi engleski tekst.",
     "strictNecessity": {
       "title": "Načelo stroge nužnosti",
       "intro": "Prikupljamo minimalne podatke računa potrebne za identifikaciju natjecateljskog igrača i zaustavljanje očite prijevare na vlastitoj usluzi. Ne prikupljamo nepotrebne zapise, ne izvlačimo privatne Steam inventare i ne prodajemo podatke o ponašanju trećih strana.",
@@ -111,9 +129,9 @@ export const legalDocs: TextBag["legalDocs"] = {
       "footerLinks": "Ikone vanjskih mreža u podnožju poveznice su imenika na javne stranice. Nisu službeni A.C.E. računi i ne ugrađuju widgete za praćenje."
     },
     "rights": {
-      "title": "Prava u stilu GDPR-a",
+      "title": "Tvoja prava",
       "before": "Ako si u regiji s pravima na osobne podatke, možeš zatražiti pristup, ispravak ili brisanje podataka svog A.C.E. računa slanjem e-pošte na",
-      "after": ". Hardverska zadržavanja ranked anti-cheata nisu aktivna; brisanje računa na stranici nije CS2 VAC žalba."
+      "after": ". Odgovaramo u roku od 30 dana. Brisanje računa na stranici ne mijenja nijednu Steam ili VAC odluku tvrtke Valve."
     },
     "cookies": {
       "title": "Kolačići",
@@ -131,11 +149,11 @@ export const legalDocs: TextBag["legalDocs"] = {
       "title": "Pravila o kolačićima",
       "description": "A.C.E. revizija privatnosti kolačića i telemetrije. Samo nužni kolačići sesije, osim ako odabereš rezervirane neobavezne kategorije."
     },
-    "kicker": "ACE-PRIVACY / KOLAČIĆI / REVIZIJA TELEMETRIJE",
+    "kicker": "ACE-LEGAL / PRAVILA O KOLAČIĆIMA",
     "title": "Pravila o kolačićima",
-    "lede": "Ova stranica je revizija privatnosti telemetrije za ace-platform.gg. Opisuje kolačiće koje ova stranica stvarno koristi, kategorije rezervirane za kasnije i ono što se ne prikuplja.",
+    "lede": "Ova Pravila o kolačićima navode kolačiće koje ova stranica stvarno postavlja, kategorije rezervirane za kasnije i ono što se ne prikuplja.",
     "audit": {
-      "title": "100 % revizija telemetrije (trenutačna verzija)",
+      "title": "Alati za praćenje na ovoj stranici",
       "body": "A.C.E. na ovoj javnoj stranici ne pokreće oglasne piksele, Google Analytics, Meta Pixel, SDK-ove za otiske ni druge pratitelje ponašanja trećih strana. Neobavezni „Analitički pratitelji” i „Marketinški pratitelji” u traci privole samo su kategorije. Njihovo označavanje danas ne učitava skriptu. Ako se pratitelj doda kasnije, najprije će pročitati spremljenu postavku i ostati isključen osim ako si pristao."
     },
     "essential": {

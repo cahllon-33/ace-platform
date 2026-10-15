@@ -91,7 +91,7 @@ export const RB_PT_BR: RulebookText = {
       "São proibidos a manipulação de resultados, perder de propósito e apostar em qualquer partida do seu time ou do seu evento.",
       "É proibido usar um bug de mapa ou de jogo que o árbitro tenha listado como proibido, ou que quebre claramente as mecânicas previstas do jogo.",
       "Os jogadores devem rodar o cliente antitrapaça da A.C.E. durante toda a partida quando o evento exigir.",
-      "Os árbitros podem pedir demos, gravações de tela ou dados de hardware para análise. A recusa a um pedido razoável pode ser tratada como admissão.",
+      "Os admins podem pedir demos ou gravações de tela para análise. Os dados de hardware só serão pedidos quando o cliente anti-trapaça A.C.E. existir e a Política de Privacidade os descrever. Recusar um pedido razoável sem motivo válido pode ser tido em conta na decisão.",
       "Qualquer pessoa pode denunciar uma suspeita de violação ao organizador de forma privada. Acusações públicas sem denúncia são infração de conduta."
     ],
     [
@@ -99,7 +99,8 @@ export const RB_PT_BR: RulebookText = {
       "Continuar jogando após um problema conhecido sem apontá-lo equivale a aceitar a situação para os rounds já jogados.",
       "O árbitro decide a disputa e publica o resultado e o motivo. Os times seguem o cronograma enquanto a disputa estiver aberta, salvo decisão diferente do árbitro.",
       "É possível recorrer em até 48 horas após a decisão. O recurso é analisado por um membro do organizador que não tomou a decisão original. A decisão do recurso é final.",
-      "Punições de integridade (seção 14) também podem ser aplicadas depois do fim de um evento, se surgirem provas mais tarde."
+      "Punições de integridade (seção 14) também podem ser aplicadas depois do fim de um evento, se surgirem provas mais tarde.",
+      "Fora de uma partida em curso, o jogador é informado do motivo e das provas antes de uma suspensão ou banimento começar e pode responder no prazo de 48 horas. Em casos urgentes de integridade, a suspensão começa primeiro e a revisão vem depois."
     ],
     [
       "As punições podem ser combinadas. Uma advertência fica no histórico do time até o fim do evento; as demais punições ficam registradas por 12 meses.",

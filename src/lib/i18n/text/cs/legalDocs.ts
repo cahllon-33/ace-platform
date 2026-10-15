@@ -1,6 +1,24 @@
 import type { TextBag } from "../types";
 
 export const legalDocs: TextBag["legalDocs"] = {
+  r14: {
+    "effective": "Datum účinnosti: {date}",
+    "contact": "Kontakt: support@ace-platform.gg",
+    "definitionsTitle": "Definice",
+    "definitions": "V těchto Podmínkách „A.C.E.“, „my“ znamená A.C.E. Competitions Ltd. „Web“ znamená ace-platform.gg. „Účet“ znamená profil A.C.E. vytvořený přihlášením přes Steam. „Plán“ znamená Free, Plus nebo Premium. „Pravidla“ znamenají soutěžní pravidla na /rules. „Admin“ znamená člena týmu, který pravidla uplatňuje na akci.",
+    "suspensionTitle": "Omezení a pozastavení účtu",
+    "suspension": "Účet, který porušuje tyto Podmínky nebo Pravidla, například podváděním, sdílením účtu, obcházením banu, obtěžováním nebo podvodem, můžeme varovat, omezit, pozastavit nebo zrušit. Mimo probíhající zápas ti sdělíme důvod a dáme ti 48 hodin na odpověď, než pozastavení začne. V naléhavých případech začne pozastavení hned a přezkum následuje. Placený plán nikdy nechrání účet před omezením.",
+    "disputesTitle": "Rozhodnutí o pravidlech a odvolání",
+    "disputes": "Spory o zápasy a tresty se řídí oddíly 15 a 16 Pravidel. Proti rozhodnutí o svém účtu se můžeš odvolat do 48 hodin e-mailem na support@ace-platform.gg se svým SteamID a důkazy. Odvolání posoudí člen týmu, který nevydal první rozhodnutí, a sdělí ti výsledek i důvod. Tím nejsou dotčena práva, která máš podle zákonů své země.",
+    "changesTitle": "Změny těchto Podmínek",
+    "changes": "Tyto Podmínky můžeme aktualizovat. Každá nová verze se zveřejní na této stránce s novým datem účinnosti. Podstatná změna nabývá účinnosti 7 dní po zveřejnění a nikdy se nevztahuje na již započaté platební období.",
+    "languageTitle": "Jazyk",
+    "language": "Tyto Podmínky jsou napsány v angličtině. Překlady slouží pro pohodlí. Pokud se překlad a anglický text liší, platí anglický text.",
+    "retentionTitle": "Uchovávání údajů",
+    "retention": "Údaje účtu uchováváme, dokud účet existuje. Relace končí odhlášením nebo vypršením. Pokud požádáš o smazání účtu, odstraníme tvé údaje do 30 dní, kromě údajů, které musíme uchovat ze zákona nebo k vymáhání aktivního banu, a jen po nezbytnou dobu.",
+    "ageTitle": "Věková hranice",
+    "age": "Web je určen osobám od 16 let. Vědomě nevytváříme účty pro mladší děti. Pokud se domníváš, že účet má dítě mladší 16 let, kontaktuj nás a účet smažeme."
+  },
   translationNotice:
     "Tato stránka je překladem poskytnutým pro vaše pohodlí. Pokud se překlad a anglický text liší, platí anglický text.",
   terms: {
@@ -11,7 +29,7 @@ export const legalDocs: TextBag["legalDocs"] = {
     },
     kicker: "ACE-LEGAL / PODMÍNKY SLUŽBY",
     title: "Podmínky služby",
-    lede: "Tyto podmínky upravují používání veřejného webu A.C.E. a připojených účtových rozhraní API. Délka zápasu, mapový fond, uzamčení soupisky a protesty jsou podrobně popsány v Soutěžním řádu na /rules, který je součástí těchto podmínek.",
+    lede: "Tyto Podmínky upravují používání webu A.C.E. a tvého účtu A.C.E. Soutěžní pravidla na /rules, Zásady ochrany osobních údajů, Zásady cookies a podmínky Premium jsou součástí těchto Podmínek.",
     sections: {
       operator: {
         title: "1. Provozovatel a nezávislost",
@@ -22,7 +40,7 @@ export const legalDocs: TextBag["legalDocs"] = {
       eligibility: {
         title: "2. Způsobilost a účty",
         paragraphs: [
-          "Musíte mít věk dostatečný k používání služby Steam ve své zemi. Účty se zakládají pouze prostřednictvím oficiálního Steam OpenID. Účet nesmíte sdílet za účelem obejití omezení. A.C.E. nikdy nežádá heslo ke službě Steam.",
+          "Musí ti být alespoň 16 let, nebo více, pokud to vyžaduje zákon tvé země nebo stránka akce. Pokud je ti méně než 18 let, potřebuješ ke koupi placeného plánu svolení rodiče nebo zákonného zástupce. Účty se vytvářejí jen oficiálním přihlášením Steam OpenID, jeden účet na osobu. A.C.E. nikdy nežádá heslo ke Steamu.",
         ],
       },
       notActive: {
@@ -32,9 +50,9 @@ export const legalDocs: TextBag["legalDocs"] = {
         ],
       },
       subscriptions: {
-        title: "4. Navrhovaná předplatná",
+        title: "Plány, platby a zrušení",
         paragraphs: [
-          "Plus ($4/měs.) a Premium ($7/měs.) jsou pouze zobrazené ceny. Na tomto webu zatím není platba a tlačítka tarifů ukazují „Již brzy“. Až bude platba spuštěna, platí pravidlo zrušení z /pricing: měsíční obnovované předplatné, zrušení v nastavení panelu, neúplné měsíce se nevracejí.",
+          "Free stojí $0, Plus $4 měsíčně a Premium $7 měsíčně. Platby zatím neexistují, takže dnes nelze nic koupit ani nic není účtováno. Až platby spustíme, plány se budou obnovovat měsíčně; zrušit je půjde kdykoli v nastavení panelu s přístupem do konce zaplaceného měsíce; načatý měsíc se nevrací, pokud to nevyžaduje zákon tvé země. Žádný plán nepřidává Rating Points, nezvyšuje hodnocení ani nemění matchmaking. Prioritní podpora Premium po spuštění znamená, že požadavky Premium se vyřizují přednostně, bez garantované doby odpovědi.",
         ],
       },
       antiCheat: {
@@ -70,9 +88,9 @@ export const legalDocs: TextBag["legalDocs"] = {
       description:
         "Zásady ochrany soukromí A.C.E.: pouze nezbytně nutné údaje, výhradně Steam OpenID, žádná hesla ke službě Steam, žádný prodej údajů o chování.",
     },
-    kicker: "ACE-PRIVACY / GDPR / NEZBYTNÁ NUTNOST",
+    kicker: "ACE-LEGAL / ZÁSADY OCHRANY OSOBNÍCH ÚDAJŮ",
     title: "Zásady ochrany soukromí",
-    lede: "Tyto Zásady ochrany soukromí vysvětlují, co společnost A.C.E. Competitions Ltd. ukládá, když používáte tento web. Překlady jsou poskytovány pro vaše pohodlí; referenčním textem je anglická verze. Nejde o tvrzení, že všechny budoucí části produktu už existují.",
+    lede: "Tyto Zásady vysvětlují, jaké osobní údaje A.C.E. Competitions Ltd. uchovává, když používáš tento web, proč a jak dlouho. Pokud se překlad liší od anglického textu, platí anglický text.",
     strictNecessity: {
       title: "Zásada nezbytné nutnosti",
       intro:
@@ -118,11 +136,11 @@ export const legalDocs: TextBag["legalDocs"] = {
         "Ikony externích sítí v zápatí jsou odkazy adresáře na veřejné weby. Nejsou to oficiální účty A.C.E. a nevkládají sledovací widgety.",
     },
     rights: {
-      title: "Práva ve stylu GDPR",
+      title: "Tvá práva",
       before:
         "Pokud se nacházíte v oblasti, kde platí práva týkající se osobních údajů, můžete požádat o přístup k údajům svého účtu A.C.E., jejich opravu nebo výmaz e-mailem na adresu",
       after:
-        ". Hardwarové blokace rankingového anti-cheatu nejsou v provozu; smazání účtu na webu není odvoláním proti zákazu VAC v CS2.",
+        ". Odpovídáme do 30 dní. Smazání účtu na webu nemění žádné rozhodnutí Steamu nebo VAC vydané společností Valve.",
     },
     cookies: {
       title: "Soubory cookie",
@@ -142,11 +160,11 @@ export const legalDocs: TextBag["legalDocs"] = {
       description:
         "Audit souborů cookie a telemetrie A.C.E. z hlediska soukromí. Pouze nezbytné soubory cookie relace, pokud se nepřihlásíte k vyhrazeným volitelným kategoriím.",
     },
-    kicker: "ACE-PRIVACY / COOKIES / AUDIT TELEMETRIE",
+    kicker: "ACE-LEGAL / ZÁSADY COOKIES",
     title: "Zásady souborů cookie",
-    lede: "Tato stránka je auditem telemetrie z hlediska soukromí pro ace-platform.gg. Popisuje soubory cookie, které tento web skutečně používá, kategorie vyhrazené pro pozdější použití a to, co se neshromažďuje.",
+    lede: "Tyto Zásady cookies uvádějí cookies, které tento web skutečně ukládá, kategorie vyhrazené na později a co se neshromažďuje.",
     audit: {
-      title: "100% audit telemetrie (aktuální sestavení)",
+      title: "Sledovací nástroje na tomto webu",
       body: "A.C.E. na tomto veřejném webu nepoužívá reklamní pixely, Google Analytics, Meta Pixel, SDK pro fingerprinting ani jiné sledovací nástroje chování třetích stran. Volitelné „Analytické sledovací nástroje“ a „Marketingové sledovací nástroje“ v panelu souhlasu jsou pouze kategorie. Jejich zaškrtnutí dnes nenačte žádný skript. Pokud bude sledovací nástroj přidán později, nejprve načte uloženou volbu a zůstane vypnutý, pokud jste s ním nesouhlasili.",
     },
     essential: {

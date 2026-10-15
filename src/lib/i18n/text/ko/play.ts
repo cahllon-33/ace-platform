@@ -1,6 +1,12 @@
 import type { TextBag } from "../types";
 
 export const play: TextBag["play"] = {
+  premium: {
+    "tag": "PREMIUM",
+    "sample": "PREMIUM 샘플",
+    "note": "Premium 샘플로 표시된 슬롯은 Premium 일러스트 랭크 아트를 예시로만 보여 줍니다. 샘플 선수이며 구독자가 아닙니다. Premium 아트는 외형 전용이며 레이팅이나 매치메이킹을 절대 바꾸지 않습니다.",
+    "artAlt": "{rank} Premium 일러스트 랭크 아트"
+  },
   room: {
     "showcaseTag": "쇼케이스 · 샘플 선수이며 실시간 경기가 아닙니다. 대기열은 닫혀 있습니다.",
     "showcaseShort": "쇼케이스",

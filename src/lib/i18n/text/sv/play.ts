@@ -1,6 +1,12 @@
 import type { TextBag } from "../types";
 
 export const play: TextBag["play"] = {
+  premium: {
+    "tag": "PREMIUM",
+    "sample": "PREMIUM-EXEMPEL",
+    "note": "Platser märkta Premium-exempel visar den illustrerade Premium-rankbilden endast som visning. Det är exempelspelare, inte prenumeranter. Premium-bilden är rent kosmetisk och ändrar aldrig rating eller matchning.",
+    "artAlt": "Illustrerad Premium-rankbild {rank}"
+  },
   room: {
     "showcaseTag": "VISNING · Exempelspelare, ingen livematch. Kön är stängd.",
     "showcaseShort": "VISNING",

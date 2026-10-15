@@ -1,4 +1,22 @@
 ﻿export const legalDocs = {
+  r14: {
+    "effective": "Effective date: {date}",
+    "contact": "Contact: support@ace-platform.gg",
+    "definitionsTitle": "Definitions",
+    "definitions": "In these Terms, \"A.C.E.\", \"we\" and \"us\" mean A.C.E. Competitions Ltd. \"Site\" means ace-platform.gg. \"Account\" means the A.C.E. profile created through Steam sign-in. \"Plan\" means Free, Plus or Premium. \"Rulebook\" means the Competitive Rulebook at /rules. \"Admin\" means a staff member who applies the Rulebook to an event.",
+    "suspensionTitle": "Account restrictions and suspension",
+    "suspension": "We may warn, restrict, suspend or close an Account that breaks these Terms or the Rulebook, for example for cheating, account sharing, ban evasion, harassment or fraud. Outside a live match, we tell you the reason and give you 48 hours to respond before a suspension starts. In urgent cases the suspension starts first and the review follows. A paid Plan never protects an Account from a restriction.",
+    "disputesTitle": "Rule decisions and appeals",
+    "disputes": "Match disputes and penalties follow sections 15 and 16 of the Rulebook. You may appeal a decision about your Account within 48 hours by emailing support@ace-platform.gg with your SteamID and your evidence. A staff member who did not make the first decision reviews the appeal and tells you the outcome and the reason. This does not limit any right you have under the law of your country.",
+    "changesTitle": "Changes to these Terms",
+    "changes": "We may update these Terms. Each new version is published on this page with a new effective date. A material change takes effect 7 days after publication and never applies to a payment period that has already started.",
+    "languageTitle": "Language",
+    "language": "These Terms are written in English. Translations are provided for convenience. If a translation and the English text differ, the English text applies.",
+    "retentionTitle": "Data retention",
+    "retention": "Account records are kept while your Account exists. A session ends when you sign out or it expires. If you ask us to delete your Account, we remove your records within 30 days, except records we must keep for a legal duty or to enforce an active ban, and only for as long as that lasts.",
+    "ageTitle": "Age requirement",
+    "age": "The Site is intended for people aged 16 or over. We do not knowingly create Accounts for younger children. If you believe a child under 16 has an Account, contact us and we will delete it."
+  },
   translationNotice:
     "This page is a translation provided for convenience. If the translation and the English text differ, the English text applies.",
   terms: {
@@ -9,7 +27,7 @@
     },
     kicker: "ACE-LEGAL / TERMS OF SERVICE",
     title: "Terms of Service",
-    lede: "These Terms govern use of the A.C.E. public website and connected account APIs. Match length, the map pool, roster lock, and protests are detailed in the Competitive Rulebook at /rules, which is incorporated here.",
+    lede: "These Terms govern your use of the A.C.E. website and your A.C.E. Account. The Competitive Rulebook at /rules, the Privacy Policy, the Cookie Policy and the Premium terms form part of these Terms.",
     sections: {
       operator: {
         title: "1. Operator and independence",
@@ -20,7 +38,7 @@
       eligibility: {
         title: "2. Eligibility and accounts",
         paragraphs: [
-          "You must be old enough to use Steam in your country. Accounts are created only through official Steam OpenID. You may not share an account to evade a restriction. A.C.E. never asks for a Steam password.",
+          "You must be at least 16 years old, or older if the law of your country or an event page requires it. If you are under 18, you need a parent's or guardian's permission to buy a paid Plan. Accounts are created only through official Steam OpenID sign-in, one Account per person. A.C.E. never asks for your Steam password.",
         ],
       },
       notActive: {
@@ -30,9 +48,9 @@
         ],
       },
       subscriptions: {
-        title: "4. Proposed subscriptions",
+        title: "Plans, billing and cancellation",
         paragraphs: [
-          "Plus ($4/mo) and Premium ($7/mo) are display prices. There is no checkout on this website yet, and the plan buttons show Coming soon. When billing exists, the cancellation rule on /pricing applies: monthly rolling subscription, cancel in dashboard settings, partial months non-refundable.",
+          "Free costs $0, Plus $4 per month and Premium $7 per month. Checkout does not exist yet, so nothing can be bought or charged today. When billing opens, Plans renew monthly; you can cancel at any time in dashboard settings and keep access until the end of the paid month; a partial month is not refunded unless the law of your country requires it. No Plan adds Rating Points, boosts a rating or changes matchmaking. Priority support for Premium, once launched, means Premium requests are handled first; it has no guaranteed response time.",
         ],
       },
       antiCheat: {
@@ -68,9 +86,9 @@
       description:
         "A.C.E. Privacy Policy: strict-necessity data, Steam OpenID only, no Steam passwords, no behavioral data sales.",
     },
-    kicker: "ACE-PRIVACY / GDPR / STRICT NECESSITY",
+    kicker: "ACE-LEGAL / PRIVACY POLICY",
     title: "Privacy Policy",
-    lede: "This Privacy Policy explains what A.C.E. Competitions Ltd. stores when you use this website. Translations are provided for convenience; the English version is the reference text. This is not a claim that every future product surface already exists.",
+    lede: "This Privacy Policy explains what personal data A.C.E. Competitions Ltd. stores when you use this website, why, and for how long. If a translation differs from the English text, the English text applies.",
     strictNecessity: {
       title: "Strict Necessity philosophy",
       intro:
@@ -116,11 +134,11 @@
         "External network icons in the footer are directory links to public websites. They are not official A.C.E. accounts and do not embed tracking widgets.",
     },
     rights: {
-      title: "GDPR-style rights",
+      title: "Your rights",
       before:
         "If you are in a region with personal-data rights, you may request access, correction, or deletion of your A.C.E. account data by emailing",
       after:
-        ". Ranked Anti-Cheat hardware holds are not live; deletion of a website account is not a CS2 VAC appeal.",
+        ". We reply within 30 days. Deleting a website Account does not change a Steam or VAC decision made by Valve.",
     },
     cookies: {
       title: "Cookies",
@@ -140,11 +158,11 @@
       description:
         "A.C.E. cookie and telemetry privacy audit. Essential session cookies only unless you opt into reserved optional categories.",
     },
-    kicker: "ACE-PRIVACY / COOKIES / TELEMETRY AUDIT",
+    kicker: "ACE-LEGAL / COOKIE POLICY",
     title: "Cookie Policy",
-    lede: "This page is the telemetry privacy audit for ace-platform.gg. It describes cookies this website actually uses, categories reserved for later, and what is not collected.",
+    lede: "This Cookie Policy lists the cookies this website actually sets, the categories reserved for later, and what is not collected.",
     audit: {
-      title: "100% telemetry audit (current build)",
+      title: "Trackers on this website",
       body: "A.C.E. does not run advertising pixels, Google Analytics, Meta Pixel, fingerprinting SDKs, or other third-party behavioral trackers on this public website. Optional “Analytics Trackers” and “Marketing Trackers” in the consent tray are categories only. Checking them does not load a script today. If a tracker is added later, it will read the stored preference first and stay off unless you opted in.",
     },
     essential: {

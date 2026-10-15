@@ -1,4 +1,10 @@
 ﻿export const play = {
+  premium: {
+    "tag": "PREMIUM",
+    "sample": "PREMIUM SAMPLE",
+    "note": "Slots marked Premium sample show the illustrated Premium rank art for layout only. They are sample players, not subscribers. Premium art is cosmetic and never changes rating or matchmaking.",
+    "artAlt": "{rank} Premium illustrated rank art"
+  },
   room: {
     "showcaseTag": "SHOWCASE · Sample players, not a live match. The queue is closed.",
     "showcaseShort": "SHOWCASE",

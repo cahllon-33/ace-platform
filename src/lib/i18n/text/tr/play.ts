@@ -1,6 +1,12 @@
 import type { TextBag } from "../types";
 
 export const play: TextBag["play"] = {
+  premium: {
+    "tag": "PREMIUM",
+    "sample": "PREMIUM ÖRNEK",
+    "note": "Premium örnek olarak işaretlenen yerler, illüstrasyonlu Premium rütbe görselini yalnızca tasarım amacıyla gösterir. Bunlar örnek oyunculardır, abone değildir. Premium görsel tamamen kozmetiktir ve reytingi veya eşleştirmeyi asla değiştirmez.",
+    "artAlt": "{rank} illüstrasyonlu Premium rütbe görseli"
+  },
   room: {
     "showcaseTag": "VİTRİN · Örnek oyuncular, canlı maç değil. Sıra kapalı.",
     "showcaseShort": "VİTRİN",

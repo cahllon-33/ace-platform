@@ -91,7 +91,7 @@ export const RB_SV: RulebookText = {
       "Matchfixning, att förlora med avsikt och att spela på någon match där ditt lag deltar eller i ditt evenemang är förbjudet.",
       "Att använda en kart- eller spelbugg som domaren har förbjudit, eller som tydligt bryter spelets avsedda mekanik, är förbjudet.",
       "Spelare måste köra A.C.E.:s anti-fusk-klient under hela matchen när evenemanget kräver det.",
-      "Domarna kan begära demos, skärminspelningar eller hårdvaruuppgifter för granskning. Att vägra en rimlig begäran kan behandlas som ett medgivande.",
+      "Admins kan begära demos eller skärminspelningar för granskning. Hårdvaruuppgifter begärs först när A.C.E.:s antifuskklient finns och Integritetspolicyn beskriver dem. Att vägra en rimlig begäran utan giltigt skäl kan beaktas i beslutet.",
       "Vem som helst kan i förtroende rapportera en misstänkt överträdelse till arrangören. Offentliga anklagelser utan rapport är en uppförandeförseelse."
     ],
     [
@@ -99,7 +99,8 @@ export const RB_SV: RulebookText = {
       "Att fortsätta spela efter ett känt problem utan att ta upp det innebär att situationen accepteras för de redan spelade rundorna.",
       "Domaren avgör protesten och publicerar beslutet och skälen. Lagen fortsätter spela enligt schemat medan en protest är öppen, om inte domaren beslutar annat.",
       "Ett överklagande kan lämnas in inom 48 timmar efter beslutet. Det prövas av en medlem av arrangören som inte fattade det ursprungliga beslutet. Beslutet i överklagandet är slutgiltigt.",
-      "Integritetspåföljder (avsnitt 14) kan även utdömas efter att ett evenemang avslutats, om bevis hittas senare."
+      "Integritetspåföljder (avsnitt 14) kan även utdömas efter att ett evenemang avslutats, om bevis hittas senare.",
+      "Utanför en pågående match får spelaren veta skälet och bevisen innan en avstängning eller bannlysning börjar och kan svara inom 48 timmar. I brådskande integritetsfall börjar avstängningen först och granskningen följer."
     ],
     [
       "Påföljder kan kombineras. En varning ligger kvar i lagets register under resten av evenemanget; andra påföljder ligger kvar i 12 månader.",

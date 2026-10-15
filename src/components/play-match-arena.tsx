@@ -19,12 +19,14 @@ type RosterRow = {
   /** Rank level 1-10 for the showcase emblem. */
   level: number;
   skin: number;
+  /** Showcase only: shows the Premium illustrated art, labelled "Premium sample". Not a subscriber. */
+  premiumSample?: boolean;
   /** Real stored values for the signed-in captain only. */
   live?: { avatarUrl: string | null; rating: number; art: RankArt };
 };
 
 const TEAM_A_REST: RosterRow[] = [
-  { callsign: "Zyro", role: "AWP", level: 6, skin: 1 },
+  { callsign: "Zyro", role: "AWP", level: 6, skin: 1, premiumSample: true },
   { callsign: "Kane", role: "Entry", level: 6, skin: 2 },
   { callsign: "Frost", role: "Lurk", level: 5, skin: 3 },
   { callsign: "Vex", role: "Support", level: 5, skin: 4 },
@@ -32,7 +34,7 @@ const TEAM_A_REST: RosterRow[] = [
 
 const TEAM_B: RosterRow[] = [
   { callsign: "Razor", role: "IGL", level: 6, skin: 0 },
-  { callsign: "Ghost", role: "AWP", level: 6, skin: 1 },
+  { callsign: "Ghost", role: "AWP", level: 6, skin: 1, premiumSample: true },
   { callsign: "Viper", role: "Entry", level: 5, skin: 2 },
   { callsign: "Hawk", role: "Lurk", level: 5, skin: 3 },
   { callsign: "Sable", role: "Support", level: 4, skin: 4 },
@@ -64,9 +66,11 @@ function RosterCard({
   const copy = text.play.arena;
   const room = text.play.room;
   const tier = RANK_TIERS[Math.min(10, Math.max(1, row.level)) - 1];
-  const art: RankArt = row.live?.art ?? "standard";
+  // Signed-in captain: the server gate result (effectiveRankArt). Sample rows: only flagged showcase samples.
+  const art: RankArt = row.live ? row.live.art : row.premiumSample ? "premium" : "standard";
+  const premium = art === "premium";
   return (
-    <li className="ace-play-slot ace-room-slot">
+    <li className={`ace-play-slot ace-room-slot${premium ? " is-premium" : ""}`}>
       <PlayerAvatar
         src={row.live?.avatarUrl ?? null}
         name={row.callsign}
@@ -77,6 +81,9 @@ function RosterCard({
         <p className="ace-play-slot-name">
           {row.callsign}
           {captain ? <span className="ace-play-cap">{copy.captain}</span> : null}
+          {premium ? (
+            <span className="ace-premium-tag">{row.live ? text.play.premium.tag : text.play.premium.sample}</span>
+          ) : null}
         </p>
         <p className="ace-play-slot-rank">
           {row.role} · {tier.crystalName}
@@ -87,7 +94,7 @@ function RosterCard({
             : interpolate(room.floorRp, { rp: tier.minRating.toLocaleString("en-US") })}
         </p>
       </div>
-      <FloatingEmblem src={rankArtAsset(tier.level, art).stillSrc} alt={tier.name} size={52} />
+      <FloatingEmblem src={rankArtAsset(tier.level, art).stillSrc} alt={premium ? interpolate(text.play.premium.artAlt, { rank: tier.name }) : tier.name} size={premium ? 58 : 52} />
     </li>
   );
 }
@@ -312,6 +319,7 @@ export function PlayMatchArena({
         </div>
       </div>
 
+      <p className="ace-room-art-note">{text.play.premium.note}</p>
       <p className="ace-room-art-note">{text.play.room.artNote}</p>
       <footer className="ace-play-foot">
         <PlannedButton
