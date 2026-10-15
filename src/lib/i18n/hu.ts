@@ -66,7 +66,7 @@ export const HU: MessageBag = {
  moltenGold: "OLVADT ARANY",
  premiumPlan: "A.C.E. PREMIUM",
   planFree1: "Sign in with Steam OpenID. A.C.E. never asks for a Steam password.",
- planFree2: "A stored rating starts at 1,000. No match result has changed it.",
+ planFree2: "A stored rating starts at 1,200. No match result has changed it.",
  planFree3: "Public pages stay open: play layout, tournaments, leaderboard, teams, and rules.",
   planPlus1: "Same access as Free. Checkout is not live, so this price is not charged.",
  planPrem1: "Same access as Free. Checkout is not live, so this price is not charged.",
@@ -346,7 +346,7 @@ export const HU: MessageBag = {
  rpEmpty: "— RP",
  rankProtocolTitle: "A.C.E. ÉRTÉKELÉSI PROTOKOLL",
  rankProtocolBody:
- "Az írott szabály a játékost a másik csapat átlagos értékszámához hasonlítja. Egyenlő csapat ellen egy rögzített győzelem +15 RP, egy vereség −15 RP, mindig meccsenként 8 és 25 RP között, és a 10 szint és a 3 divízió ebből a számból olvasható ki. Ez az oldal nem hitelesít meccset, így itt nem történik értékszám-változás.",
+ "Az írott szabály a játékost a másik csapat átlagos értékszámához hasonlítja. Egyenlő csapat ellen egy rögzített győzelem +15 RP, egy vereség −15 RP, mindig meccsenként 8 és 23 RP között, és a 10 szint és a 3 divízió ebből a számból olvasható ki. Ez az oldal nem hitelesít meccset, így itt nem történik értékszám-változás.",
  rankProgress: "Rang előrehaladása",
  competitiveRating: "Versenyértékelés",
  targetWinRate: "Célzott győzelmi arány",

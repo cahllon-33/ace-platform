@@ -266,7 +266,7 @@ export const codex: TextBag["codex"] = {
           "heading": "Langkah",
           "paragraphs": [
             "Skor yang diharapkan adalah peluang yang diberikan mesin sebelum pertandingan, hanya berdasarkan dua rating. Dengan rating yang sama peluangnya setengah, jadi kemenangan bernilai 15 Rating Points dan kekalahan mengurangi 15.",
-            "Melawan rating yang lebih tinggi, kemenangan bernilai lebih dari 15 dan kekalahan mengurangi lebih sedikit. Melawan rating yang lebih rendah, sebaliknya. Kemenangan selalu memberi 8 sampai 25 dan kekalahan selalu mengurangi 8 sampai 25. Di tingkat 7–9 perolehan kemenangan dikalikan 0,8 dan di tingkat 10 dikalikan 0,7, jadi puncak tangga butuh waktu lebih lama. Rating dijaga antara 100 dan 3.000.",
+            "Melawan rating yang lebih tinggi, kemenangan bernilai lebih dari 15 dan kekalahan mengurangi lebih sedikit. Melawan rating yang lebih rendah, sebaliknya. Kemenangan selalu memberi 8 sampai 20 dan kekalahan selalu mengurangi 8 sampai 23. Di tingkat 7–9 perolehan kemenangan dikalikan 0,8 dan di tingkat 10 dikalikan 0,7, jadi puncak tangga butuh waktu lebih lama. Rating dijaga antara 100 dan 3.000.",
             "Pada hasil tim, setiap pemain diukur terhadap rata-rata rating tim lawan. Bonus MVP pertandingan sebesar 2 RP direncanakan saat server mencatat kill; sampai saat itu tidak ada bonus pribadi yang diterapkan."
           ]
         },

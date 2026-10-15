@@ -289,7 +289,7 @@ export const codex: TextBag["codex"] = {
           heading: "Le pas",
           paragraphs: [
             "Le score attendu est la probabilité que le moteur attribue avant le match, d'après les deux classements seulement. À classement égal, elle vaut une moitié : une victoire vaut 15 Rating Points et une défaite en coûte 15.",
-            "Contre un classement plus élevé, une victoire vaut plus de 15 et une défaite coûte moins. Contre un classement plus bas, c'est l'inverse. Une victoire rapporte toujours de 8 à 25 et une défaite coûte toujours de 8 à 25. Aux paliers 7 à 9, les gains de victoire sont multipliés par 0,8 et au palier 10 par 0,7 : le haut de l'échelle prend donc plus de temps. Le classement reste entre 100 et 3 000.",
+            "Contre un classement plus élevé, une victoire vaut plus de 15 et une défaite coûte moins. Contre un classement plus bas, c'est l'inverse. Une victoire rapporte toujours de 8 à 20 et une défaite coûte toujours de 8 à 23. Aux paliers 7 à 9, les gains de victoire sont multipliés par 0,8 et au palier 10 par 0,7 : le haut de l'échelle prend donc plus de temps. Le classement reste entre 100 et 3 000.",
             "Sur un résultat d'équipe, chaque joueur est mesuré par rapport au classement moyen de l'autre équipe. Un bonus MVP de match de 2 RP est prévu lorsque le serveur enregistrera les éliminations ; d'ici là, aucun bonus personnel n'est appliqué.",
           ],
         },

@@ -289,7 +289,7 @@ export const codex: TextBag["codex"] = {
           heading: "Der Schritt",
           paragraphs: [
             "Der erwartete Score ist die Chance, die die Engine vor dem Match vergibt, allein aus den beiden Wertungen. Bei gleicher Wertung liegt sie bei der Hälfte, daher bringt ein Sieg 15 Rating Points und eine Niederlage kostet 15.",
-            "Gegen eine höhere Wertung bringt ein Sieg mehr als 15 und eine Niederlage kostet weniger. Gegen eine niedrigere Wertung ist es umgekehrt. Ein Sieg bringt immer 8 bis 25, eine Niederlage kostet immer 8 bis 25. In den Stufen 7–9 werden Siegpunkte mit 0,8 multipliziert, in Stufe 10 mit 0,7, daher dauert die Spitze der Leiter länger. Die Wertung bleibt zwischen 100 und 3.000.",
+            "Gegen eine höhere Wertung bringt ein Sieg mehr als 15 und eine Niederlage kostet weniger. Gegen eine niedrigere Wertung ist es umgekehrt. Ein Sieg bringt immer 8 bis 20, eine Niederlage kostet immer 8 bis 23. In den Stufen 7–9 werden Siegpunkte mit 0,8 multipliziert, in Stufe 10 mit 0,7, daher dauert die Spitze der Leiter länger. Die Wertung bleibt zwischen 100 und 3.000.",
             "Bei einem Teamergebnis wird jeder Spieler an der Durchschnittswertung des anderen Teams gemessen. Ein Match-MVP-Bonus von 2 RP ist geplant, sobald der Server Kills aufzeichnet; bis dahin gibt es keinen persönlichen Bonus.",
           ],
         },

@@ -289,7 +289,7 @@ export const codex: TextBag["codex"] = {
           heading: "Krok",
           paragraphs: [
             "Oczekiwany wynik to szansa, jaką silnik przypisuje przed meczem wyłącznie na podstawie dwóch ratingów. Przy równym ratingu wynosi ona połowę, więc wygrana jest warta 15 Rating Points, a przegrana kosztuje 15.",
-            "Przeciwko wyższemu ratingowi wygrana jest warta więcej niż 15, a przegrana kosztuje mniej. Przeciwko niższemu jest odwrotnie. Wygrana zawsze daje od 8 do 25, a przegrana zawsze kosztuje od 8 do 25. Na poziomach 7–9 zyski za wygraną są mnożone przez 0,8, a na poziomie 10 przez 0,7, więc szczyt drabinki zajmuje więcej czasu. Rating pozostaje między 100 a 3000.",
+            "Przeciwko wyższemu ratingowi wygrana jest warta więcej niż 15, a przegrana kosztuje mniej. Przeciwko niższemu jest odwrotnie. Wygrana zawsze daje od 8 do 20, a przegrana zawsze kosztuje od 8 do 23. Na poziomach 7–9 zyski za wygraną są mnożone przez 0,8, a na poziomie 10 przez 0,7, więc szczyt drabinki zajmuje więcej czasu. Rating pozostaje między 100 a 3000.",
             "Przy wyniku drużynowym każdy gracz jest mierzony względem średniego ratingu drugiej drużyny. Bonus MVP meczu w wysokości 2 RP jest planowany na czas, gdy serwer będzie zapisywał zabójstwa; do tego czasu nie ma żadnego bonusu osobistego.",
           ],
         },

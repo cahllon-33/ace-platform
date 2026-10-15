@@ -119,7 +119,7 @@ export const RB_PT: RulebookText = {
     ],
     [
       "Os Rating Points (RP) só mudam através de resultados de partida verificados, segundo as regras de Rating Points da A.C.E publicadas na página de Patentes. Cada conta nova começa com 1.200 RP no escalão 3 (Vanguard).",
-      "Contra uma equipa com a mesma pontuação média, uma vitória dá +15 RP e uma derrota custa −15 RP. O valor é ajustado à pontuação média da outra equipa e fica sempre entre 8 e 25 RP por partida. Um empate não muda nada.",
+      "Contra uma equipa com a mesma pontuação média, uma vitória dá +15 RP e uma derrota custa −15 RP. O valor é ajustado à pontuação média da outra equipa e fica sempre entre 8 e 23 RP por partida. Um empate não muda nada.",
       "Os ganhos por vitória são multiplicados por 0,8 nos escalões 7–9 e por 0,7 no escalão 10. As derrotas não são reduzidas. As pontuações ficam entre 100 e 3.000 RP e não decaem por inatividade.",
       "As primeiras 10 partidas de um jogador são de colocação. Durante a colocação a pontuação não pode subir acima do escalão 5.",
       "Um jogador que abandona ou sai de uma partida perde 50 RP, seja qual for o resultado, e não pode receber o bónus MVP da partida.",

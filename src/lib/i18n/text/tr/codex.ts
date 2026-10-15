@@ -266,7 +266,7 @@ export const codex: TextBag["codex"] = {
           "heading": "Adım",
           "paragraphs": [
             "Beklenen skor, motorun maçtan önce yalnızca iki puana dayanarak verdiği olasılıktır. Puanlar eşitse bu yarıdır; bu yüzden galibiyet 15 Rating Points değerindedir ve mağlubiyet 15 kaybettirir.",
-            "Daha yüksek bir puana karşı galibiyet 15'ten fazla değerlidir ve mağlubiyet daha az kaybettirir. Daha düşük bir puana karşı tam tersi. Galibiyet her zaman 8 ile 25 arası kazandırır, mağlubiyet her zaman 8 ile 25 arası kaybettirir. 7–9. kademelerde galibiyet kazançları 0,8, 10. kademede 0,7 ile çarpılır; bu yüzden merdivenin zirvesi daha uzun sürer. Puan 100 ile 3.000 arasında tutulur.",
+            "Daha yüksek bir puana karşı galibiyet 15'ten fazla değerlidir ve mağlubiyet daha az kaybettirir. Daha düşük bir puana karşı tam tersi. Galibiyet her zaman 8 ile 20 arası kazandırır, mağlubiyet her zaman 8 ile 23 arası kaybettirir. 7–9. kademelerde galibiyet kazançları 0,8, 10. kademede 0,7 ile çarpılır; bu yüzden merdivenin zirvesi daha uzun sürer. Puan 100 ile 3.000 arasında tutulur.",
             "Takım sonucunda her oyuncu diğer takımın ortalama puanına göre ölçülür. Sunucu öldürmeleri kaydetmeye başladığında 2 RP'lik bir maç MVP bonusu planlanıyor; o zamana kadar kişisel bonus uygulanmaz."
           ]
         },

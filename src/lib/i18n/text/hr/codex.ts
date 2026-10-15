@@ -266,7 +266,7 @@ export const codex: TextBag["codex"] = {
           "heading": "Korak",
           "paragraphs": [
             "Očekivani rezultat je šansa koju sustav dodjeljuje prije meča, samo na temelju dvaju rejtinga. Pri jednakom rejtingu ona iznosi polovicu, pa pobjeda vrijedi 15 Rating Points, a poraz košta 15.",
-            "Protiv višeg rejtinga pobjeda vrijedi više od 15, a poraz košta manje. Protiv nižeg je obrnuto. Pobjeda uvijek donosi od 8 do 25, a poraz uvijek košta od 8 do 25. Na razinama 7–9 dobici od pobjede množe se s 0,8, a na razini 10 s 0,7, pa vrh ljestvice traje dulje. Rejting ostaje između 100 i 3.000.",
+            "Protiv višeg rejtinga pobjeda vrijedi više od 15, a poraz košta manje. Protiv nižeg je obrnuto. Pobjeda uvijek donosi od 8 do 20, a poraz uvijek košta od 8 do 23. Na razinama 7–9 dobici od pobjede množe se s 0,8, a na razini 10 s 0,7, pa vrh ljestvice traje dulje. Rejting ostaje između 100 i 3.000.",
             "Kod timskog rezultata svaki se igrač mjeri u odnosu na prosječni rejting drugog tima. MVP bonus meča od 2 RP planiran je za trenutak kad poslužitelj počne bilježiti ubojstva; do tada se ne primjenjuje osobni bonus."
           ]
         },

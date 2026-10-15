@@ -289,7 +289,7 @@ export const codex: TextBag["codex"] = {
           heading: "O passo",
           paragraphs: [
             "A pontuação esperada é a probabilidade que o motor atribui antes da partida, apenas com base nas duas pontuações. Com pontuações iguais é metade, por isso uma vitória vale 15 Rating Points e uma derrota custa 15.",
-            "Contra uma pontuação mais alta, uma vitória vale mais de 15 e uma derrota custa menos. Contra uma mais baixa, o contrário. Uma vitória dá sempre de 8 a 25 e uma derrota custa sempre de 8 a 25. Nos escalões 7–9 os ganhos por vitória são multiplicados por 0,8 e no escalão 10 por 0,7, por isso o topo da escada demora mais. A pontuação fica entre 100 e 3.000.",
+            "Contra uma pontuação mais alta, uma vitória vale mais de 15 e uma derrota custa menos. Contra uma mais baixa, o contrário. Uma vitória dá sempre de 8 a 20 e uma derrota custa sempre de 8 a 23. Nos escalões 7–9 os ganhos por vitória são multiplicados por 0,8 e no escalão 10 por 0,7, por isso o topo da escada demora mais. A pontuação fica entre 100 e 3.000.",
             "Num resultado de equipa, cada jogador é medido face à pontuação média da outra equipa. Está previsto um bónus MVP de partida de 2 RP para quando o servidor registar abates; até lá não é aplicado nenhum bónus pessoal.",
           ],
         },

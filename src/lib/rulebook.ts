@@ -202,7 +202,7 @@ export const RULEBOOK: RuleSection[] = [
     title: "Rating Points",
     clauses: [
       { text: "Rating Points (RP) change only through verified match results, under the A.C.E Rating Points rules published on the Ranks page. Every new account starts at 1,200 RP in tier 3 (Vanguard)." },
-      { text: "Against a team of equal average rating, a win gives +15 RP and a loss costs −15 RP. The amount is adjusted for the other team's average rating and always stays between 8 and 25 RP per match. A draw changes nothing." },
+      { text: "Against a team of equal average rating, a win gives +15 RP and a loss costs −15 RP. The amount is adjusted for the other team's average rating and always stays between 8 and 23 RP per match. A draw changes nothing." },
       { text: "Win gains are multiplied by 0.8 in tiers 7–9 and by 0.7 in tier 10. Losses are not reduced. Ratings stay between 100 and 3,000 RP and do not decay with inactivity." },
       { text: "A player's first 10 matches are placement matches. During placement the rating cannot rise above tier 5." },
       { text: "A player who abandons or leaves a match loses 50 RP, whatever the result, and cannot receive the match MVP bonus." },

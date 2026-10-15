@@ -289,7 +289,7 @@ export const codex: TextBag["codex"] = {
           heading: "Krok",
           paragraphs: [
             "Očekávané skóre je šance, kterou engine přidělí před zápasem pouze podle obou hodnocení. Při stejném hodnocení je to polovina, takže výhra má hodnotu 15 Rating Points a prohra stojí 15.",
-            "Proti vyššímu hodnocení má výhra hodnotu víc než 15 a prohra stojí méně. Proti nižšímu je to naopak. Výhra vždy dává 8 až 25 a prohra vždy stojí 8 až 25. V úrovních 7–9 se zisky za výhru násobí 0,8 a v úrovni 10 0,7, takže vrchol žebříčku trvá déle. Hodnocení zůstává mezi 100 a 3 000.",
+            "Proti vyššímu hodnocení má výhra hodnotu víc než 15 a prohra stojí méně. Proti nižšímu je to naopak. Výhra vždy dává 8 až 20 a prohra vždy stojí 8 až 23. V úrovních 7–9 se zisky za výhru násobí 0,8 a v úrovni 10 0,7, takže vrchol žebříčku trvá déle. Hodnocení zůstává mezi 100 a 3 000.",
             "U týmového výsledku se každý hráč měří vůči průměrnému hodnocení druhého týmu. Bonus MVP zápasu 2 RP je plánován na dobu, kdy server bude zaznamenávat zabití; do té doby se žádný osobní bonus neuplatňuje.",
           ],
         },

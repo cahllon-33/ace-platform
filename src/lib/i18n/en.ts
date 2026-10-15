@@ -58,7 +58,7 @@ export const EN = {
  moltenGold: "MOLTEN GOLD",
  premiumPlan: "A.C.E. PREMIUM",
   planFree1: "Sign in with Steam OpenID. A.C.E. never asks for a Steam password.",
-  planFree2: "A stored rating starts at 1,000. No match result has changed it.",
+  planFree2: "A stored rating starts at 1,200. No match result has changed it.",
   planFree3: "All public pages: play, tournaments, leaderboard, teams and rules.",
   planPlus1: "Everything in Free. Billing opens soon; nothing is charged today.",
   planPrem1: "Everything in Free. Billing opens soon; nothing is charged today.",
@@ -334,7 +334,7 @@ export const EN = {
  rpEmpty: "— RP",
  rankProtocolTitle: "A.C.E. RATING PROTOCOL",
  rankProtocolBody:
- "The written rule compares a player with the other team's average rating. Against an equal team a recorded win is +15 RP and a loss is −15 RP, always within 8 to 25 RP per match, and the 10 tiers and 3 divisions are read from that number. This page does not validate a match, so no rating change is applied here.",
+ "The written rule compares a player with the other team's average rating. Against an equal team a recorded win is +15 RP and a loss is −15 RP, always within 8 to 23 RP per match, and the 10 tiers and 3 divisions are read from that number. This page does not validate a match, so no rating change is applied here.",
  rankProgress: "Rank Progress",
  competitiveRating: "Competitive Rating",
  targetWinRate: "Target Win-Rate",

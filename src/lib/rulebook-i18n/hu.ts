@@ -119,7 +119,7 @@ export const RB_HU: RulebookText = {
     ],
     [
       "A Rating Points (RP) csak ellenőrzött meccseredményekkel változik, a Rangok oldalon közzétett A.C.E Rating Points szabályok szerint. Minden új fiók 1200 RP-vel kezd a 3. szinten (Vanguard).",
-      "Azonos átlagos értékszámú csapat ellen egy győzelem +15 RP-t ad, egy vereség −15 RP-be kerül. Az összeget a másik csapat átlagos értékszámához igazítjuk, és meccsenként mindig 8 és 25 RP között marad. A döntetlen semmit nem változtat.",
+      "Azonos átlagos értékszámú csapat ellen egy győzelem +15 RP-t ad, egy vereség −15 RP-be kerül. Az összeget a másik csapat átlagos értékszámához igazítjuk, és meccsenként mindig 8 és 23 RP között marad. A döntetlen semmit nem változtat.",
       "A győzelmi nyereséget a 7–9. szinten 0,8-del, a 10. szinten 0,7-del szorozzuk. A vereségeket nem csökkentjük. Az értékszám 100 és 3000 RP között marad, és inaktivitás miatt nem csökken.",
       "Egy játékos első 10 meccse besoroló meccs. A besorolás alatt az értékszám nem emelkedhet az 5. szint fölé.",
       "Az a játékos, aki elhagy vagy félbehagy egy meccset, 50 RP-t veszít az eredménytől függetlenül, és nem kaphat meccs-MVP-bónuszt.",

@@ -61,7 +61,7 @@ export function playerMatchDelta(input: PlayerMatchInput): PlayerMatchResult {
       const base = clamp(RP_RULES.kFactor * (1 - expected), RP_RULES.win.min, RP_RULES.win.max);
       delta = Math.round(base * tierWinMultiplier(rating));
       if (mvp) {
-        delta = Math.min(RP_RULES.win.max, delta + RP_RULES.mvpBonus);
+        delta = Math.min(RP_RULES.maxGainWithMvp, delta + RP_RULES.mvpBonus);
         mvpApplied = true;
       }
     } else {

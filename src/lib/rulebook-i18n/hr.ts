@@ -119,7 +119,7 @@ export const RB_HR: RulebookText = {
     ],
     [
       "Rating Points (RP) mijenjaju se samo potvrđenim rezultatima mečeva, prema A.C.E pravilima Rating Points objavljenima na stranici Rangovi. Svaki novi račun počinje s 1.200 RP na razini 3 (Vanguard).",
-      "Protiv tima istog prosječnog rejtinga pobjeda donosi +15 RP, a poraz košta −15 RP. Iznos se prilagođava prosječnom rejtingu drugog tima i uvijek ostaje između 8 i 25 RP po meču. Neriješeno ništa ne mijenja.",
+      "Protiv tima istog prosječnog rejtinga pobjeda donosi +15 RP, a poraz košta −15 RP. Iznos se prilagođava prosječnom rejtingu drugog tima i uvijek ostaje između 8 i 23 RP po meču. Neriješeno ništa ne mijenja.",
       "Dobici od pobjede množe se s 0,8 na razinama 7–9 i s 0,7 na razini 10. Porazi se ne smanjuju. Rejting ostaje između 100 i 3.000 RP i ne opada zbog neaktivnosti.",
       "Prvih 10 mečeva igrača su plasmanski mečevi. Tijekom plasmana rejting ne može porasti iznad razine 5.",
       "Igrač koji napusti meč ili iz njega izađe gubi 50 RP bez obzira na rezultat i ne može dobiti MVP bonus meča.",

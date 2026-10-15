@@ -289,7 +289,7 @@ export const codex: TextBag["codex"] = {
           heading: "El paso",
           paragraphs: [
             "La puntuación esperada es la probabilidad que el motor asigna antes de la partida, basada solo en las dos puntuaciones. Con puntuaciones iguales es de la mitad, así que una victoria vale 15 Rating Points y una derrota cuesta 15.",
-            "Contra una puntuación más alta, una victoria vale más de 15 y una derrota cuesta menos. Contra una más baja, al revés. Una victoria siempre da de 8 a 25 y una derrota siempre cuesta de 8 a 25. En los niveles 7–9 las ganancias por victoria se multiplican por 0,8 y en el nivel 10 por 0,7, por eso la cima de la escalera lleva más tiempo. La puntuación se mantiene entre 100 y 3.000.",
+            "Contra una puntuación más alta, una victoria vale más de 15 y una derrota cuesta menos. Contra una más baja, al revés. Una victoria siempre da de 8 a 20 y una derrota siempre cuesta de 8 a 23. En los niveles 7–9 las ganancias por victoria se multiplican por 0,8 y en el nivel 10 por 0,7, por eso la cima de la escalera lleva más tiempo. La puntuación se mantiene entre 100 y 3.000.",
             "En un resultado por equipos, cada jugador se mide frente a la puntuación media del otro equipo. Hay previsto un bono MVP de partida de 2 RP para cuando el servidor registre las bajas; hasta entonces no se aplica ningún bono personal.",
           ],
         },

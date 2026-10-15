@@ -119,7 +119,7 @@ export const RB_TR: RulebookText = {
     ],
     [
       "Rating Points (RP), yalnızca doğrulanmış maç sonuçlarıyla, Rütbeler sayfasında yayımlanan A.C.E Rating Points kurallarına göre değişir. Her yeni hesap 3. kademede (Vanguard) 1.200 RP ile başlar.",
-      "Aynı ortalama puana sahip bir takıma karşı galibiyet +15 RP kazandırır, mağlubiyet −15 RP kaybettirir. Miktar diğer takımın ortalama puanına göre ayarlanır ve her zaman maç başına 8 ile 25 RP arasında kalır. Beraberlik hiçbir şeyi değiştirmez.",
+      "Aynı ortalama puana sahip bir takıma karşı galibiyet +15 RP kazandırır, mağlubiyet −15 RP kaybettirir. Miktar diğer takımın ortalama puanına göre ayarlanır ve her zaman maç başına 8 ile 23 RP arasında kalır. Beraberlik hiçbir şeyi değiştirmez.",
       "Galibiyet kazançları 7–9. kademelerde 0,8, 10. kademede 0,7 ile çarpılır. Mağlubiyetler azaltılmaz. Puanlar 100 ile 3.000 RP arasında kalır ve hareketsizlik nedeniyle düşmez.",
       "Bir oyuncunun ilk 10 maçı yerleştirme maçıdır. Yerleştirme sırasında puan 5. kademenin üstüne çıkamaz.",
       "Bir maçı bırakan veya maçtan ayrılan oyuncu, sonuç ne olursa olsun 50 RP kaybeder ve maç MVP bonusunu alamaz.",

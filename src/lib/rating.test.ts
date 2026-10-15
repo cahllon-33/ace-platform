@@ -30,14 +30,14 @@ describe("A.C.E Rating Points rules", () => {
   });
 
   it("adjusts by opponent strength inside the per-match limits", () => {
-    expect(nextRating(1300, 1500, 1) - 1300).toBe(23);
+    expect(nextRating(1300, 1500, 1) - 1300).toBe(20);
     expect(nextRating(1300, 1500, 0) - 1300).toBe(-8);
     expect(nextRating(1300, 1100, 1) - 1300).toBe(8);
     expect(nextRating(1300, 1100, 0) - 1300).toBe(-23);
-    expect(nextRating(1300, 2200, 1) - 1300).toBe(25);
+    expect(nextRating(1300, 2200, 1) - 1300).toBe(20);
     expect(nextRating(1300, 2200, 0) - 1300).toBe(-8);
     expect(nextRating(1300, 400, 1) - 1300).toBe(8);
-    expect(nextRating(1300, 400, 0) - 1300).toBe(-25);
+    expect(nextRating(1300, 400, 0) - 1300).toBe(-23);
   });
 
   it("reduces win gains in tiers 7-9 (x0.8) and tier 10 (x0.7), never losses", () => {
@@ -62,7 +62,7 @@ describe("A.C.E Rating Points rules", () => {
     expect(playerMatchDelta({ ...base, outcome: "win" }).delta).toBe(15);
     expect(playerMatchDelta({ ...base, outcome: "win", killsRecorded: true }).delta).toBe(17);
     expect(playerMatchDelta({ ...base, outcome: "loss", killsRecorded: true }).delta).toBe(-13);
-    expect(playerMatchDelta({ ...base, opponentAverage: 2300, outcome: "win", killsRecorded: true }).delta).toBe(25);
+    expect(playerMatchDelta({ ...base, opponentAverage: 2300, outcome: "win", killsRecorded: true }).delta).toBe(22);
     expect(playerMatchDelta({ ...base, opponentAverage: 2300, outcome: "loss", killsRecorded: true }).delta).toBe(-8);
   });
 
@@ -112,7 +112,7 @@ describe("rulebook rating chapter matches RP_RULES", () => {
     for (const needle of [
       `${fmt(RP_RULES.startingRating)} RP in tier ${RP_RULES.startingTier}`,
       `+${RP_RULES.kFactor / 2} RP`,
-      `between ${RP_RULES.win.min} and ${RP_RULES.win.max} RP`,
+      `between ${RP_RULES.loss.min} and ${RP_RULES.loss.max} RP`,
       `${RP_RULES.tierWinMultiplier[7]} in tiers 7–9`,
       `${RP_RULES.tierWinMultiplier[10]} in tier 10`,
       `first ${RP_RULES.placementMatches} matches`,
@@ -123,3 +123,24 @@ describe("rulebook rating chapter matches RP_RULES", () => {
     ]) expect(text).toContain(needle);
   });
 });
+
+describe("absolute per-match gain cap (MVP included)", () => {
+  const base = { rating: 1300, matchesPlayed: 10, killsRecorded: true } as const;
+  it("non-MVP winners never exceed win.max (20); only the MVP can reach 22", () => {
+    for (const opp of [1300, 1500, 1800, 2400, 3000]) {
+      const plain = playerMatchDelta({ ...base, opponentAverage: opp, outcome: "win" }).delta;
+      const mvp = playerMatchDelta({ ...base, opponentAverage: opp, outcome: "win", mvp: true }).delta;
+      expect(plain).toBeLessThanOrEqual(RP_RULES.win.max);
+      expect(plain).toBeLessThan(RP_RULES.maxGainWithMvp);
+      expect(mvp).toBeLessThanOrEqual(RP_RULES.maxGainWithMvp);
+    }
+    expect(playerMatchDelta({ ...base, opponentAverage: 2400, outcome: "win", mvp: true }).delta).toBe(22);
+    expect(RP_RULES.win.max).toBe(20);
+    expect(RP_RULES.maxGainWithMvp).toBe(22);
+  });
+  it("losses stay within -8..-23 (abandon -50 is separate)", () => {
+    expect(playerMatchDelta({ ...base, opponentAverage: 300, outcome: "loss" }).delta).toBe(-23);
+    expect(playerMatchDelta({ ...base, opponentAverage: 3000, outcome: "loss" }).delta).toBe(-8);
+  });
+});
+

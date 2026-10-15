@@ -25,7 +25,7 @@ export function RpRulesSection({ text }: { text: Text }) {
     loss: -delta(1300, 0),
     scale: RP_RULES.scale,
     winMin: RP_RULES.win.min,
-    winMax: RP_RULES.win.max,
+    winMax: `${RP_RULES.win.max} (MVP +${RP_RULES.maxGainWithMvp})`,
     lossMin: RP_RULES.loss.min,
     lossMax: RP_RULES.loss.max,
     t7: RP_RULES.tierWinMultiplier[7],

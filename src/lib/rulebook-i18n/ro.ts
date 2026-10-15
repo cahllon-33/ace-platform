@@ -119,7 +119,7 @@ export const RB_RO: RulebookText = {
     ],
     [
       "Rating Points (RP) se modifică doar prin rezultate de meci verificate, conform regulilor Rating Points A.C.E publicate pe pagina Ranguri. Fiecare cont nou începe cu 1.200 RP la nivelul 3 (Vanguard).",
-      "Împotriva unei echipe cu același rating mediu, o victorie aduce +15 RP, iar o înfrângere costă −15 RP. Suma se ajustează după ratingul mediu al celeilalte echipe și rămâne mereu între 8 și 25 RP pe meci. Un egal nu schimbă nimic.",
+      "Împotriva unei echipe cu același rating mediu, o victorie aduce +15 RP, iar o înfrângere costă −15 RP. Suma se ajustează după ratingul mediu al celeilalte echipe și rămâne mereu între 8 și 23 RP pe meci. Un egal nu schimbă nimic.",
       "Câștigurile din victorii se înmulțesc cu 0,8 la nivelurile 7–9 și cu 0,7 la nivelul 10. Înfrângerile nu sunt reduse. Ratingurile rămân între 100 și 3.000 RP și nu scad din cauza inactivității.",
       "Primele 10 meciuri ale unui jucător sunt meciuri de plasament. În timpul plasamentului ratingul nu poate urca peste nivelul 5.",
       "Un jucător care abandonează sau părăsește un meci pierde 50 RP, indiferent de rezultat, și nu poate primi bonusul MVP al meciului.",
