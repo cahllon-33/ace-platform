@@ -59,22 +59,7 @@ export const features: TextBag["features"] = {
     "kicker": "Kozmetikler · yakında",
     "title": "A.C.E. GANİMET MİMARİSİ — SİLAH DÜŞÜŞLERİ",
     "lede": "Mağazayla birlikte gelecek özgün A.C.E. kaplamaları. Kozmetikler rekabeti asla etkilemez.",
-    "mockDrop": "Yakında",
-    "multiplierLabel": "Kazanma Oranı Çarpanı Gereksinimleri",
-    "ladderLabel": "Haftalık Sıralama Düşüşleri",
-    "multiplierValue": "{multiplier}× şablon",
-    "ladderValue": "Haftalık slot · yakında",
     "checkout": "Ödeme · yakında"
-  },
-  "communityRail": {
-    "kicker": "Akış · yakında",
-    "newsTitle": "Son Sıralama Haberleri",
-    "newsItems": [
-      "Eleme tablosu boş — 100 takımdan 0.",
-      "Hile karşıtı sistem olana kadar dereceli arama kapalı kalır."
-    ],
-    "prizesTitle": "Günlük Kaplama Ödülleri",
-    "prizesBody": "Ödüller ve ödeme 1. Sezon ile açılır."
   },
   "identityPreview": {
     "badge": "Önizleme — onaylanmadı",

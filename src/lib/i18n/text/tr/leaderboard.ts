@@ -54,21 +54,5 @@ export const leaderboard: TextBag["leaderboard"] = {
     "srLabel": "Sıralamada ara",
     "fieldLabel": "Oyuncu ara",
     "placeholder": "Görünen ad"
-  },
-  "seasonPreview": {
-    "banner": "1. SEZON SIRALAMASI",
-    "noteLive": "Steam'e bağlı adlar A.C.E. hesaplarıdır. K/D, maç sunucuları leşleri kaydetmeye başladığında görünür.",
-    "noteSample": "1. Sezon kayıtları, dereceli maçlar oynandıkça burada görünür."
-  },
-  "playerCard": {
-    "kicker": "Oyuncu kartı önizlemesi",
-    "title": "Operatör dosyası",
-    "badge": "Premium",
-    "note": "Dereceli eşleştirme açıldığında kartınız gerçek verilerle dolar.",
-    "currentRank": "Mevcut Rütbe",
-    "rankValue": "A.C.E. Legend (Lig I)",
-    "competitiveRating": "Rekabet Derecesi",
-    "seasonRank": "Sezon Sırası",
-    "seasonTop": "(İlk {percent})"
   }
 };

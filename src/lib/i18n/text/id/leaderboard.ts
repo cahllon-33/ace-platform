@@ -54,21 +54,5 @@ export const leaderboard: TextBag["leaderboard"] = {
     "srLabel": "Cari di papan peringkat",
     "fieldLabel": "Cari pemain",
     "placeholder": "Nama tampilan"
-  },
-  "seasonPreview": {
-    "banner": "TANGGA MUSIM 1",
-    "noteLive": "Nama yang tertaut Steam adalah akun A.C.E. K/D muncul setelah server pertandingan mencatat kill.",
-    "noteSample": "Catatan Musim 1 muncul di sini saat pertandingan ranked dimainkan."
-  },
-  "playerCard": {
-    "kicker": "Pratinjau kartu pemain",
-    "title": "Dosir operator",
-    "badge": "Premium",
-    "note": "Kartu Anda terisi angka nyata setelah matchmaking ranked dibuka.",
-    "currentRank": "Peringkat Saat Ini",
-    "rankValue": "A.C.E. Legend (Divisi I)",
-    "competitiveRating": "Rating Kompetitif",
-    "seasonRank": "Peringkat Musim",
-    "seasonTop": "(Top {percent})"
   }
 };

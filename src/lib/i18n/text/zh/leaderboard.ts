@@ -54,21 +54,5 @@ export const leaderboard: TextBag["leaderboard"] = {
     "srLabel": "搜索排行榜",
     "fieldLabel": "搜索玩家",
     "placeholder": "显示名称"
-  },
-  "seasonPreview": {
-    "banner": "第 1 赛季天梯",
-    "noteLive": "绑定 Steam 的名称为 A.C.E. 账户。比赛服务器开始记录击杀后将显示 K/D。",
-    "noteSample": "随着排位赛进行,第 1 赛季记录将显示在这里。"
-  },
-  "playerCard": {
-    "kicker": "玩家卡片预览",
-    "title": "干员档案",
-    "badge": "Premium",
-    "note": "排位匹配开放后,你的卡片将显示真实数据。",
-    "currentRank": "当前段位",
-    "rankValue": "A.C.E. Legend(I 级)",
-    "competitiveRating": "竞技评分",
-    "seasonRank": "赛季排名",
-    "seasonTop": "(前 {percent})"
   }
 };

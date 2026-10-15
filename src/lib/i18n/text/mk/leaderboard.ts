@@ -54,21 +54,5 @@ export const leaderboard: TextBag["leaderboard"] = {
     "srLabel": "Пребарај ја табелата",
     "fieldLabel": "Пребарај играчи",
     "placeholder": "Име за приказ"
-  },
-  "seasonPreview": {
-    "banner": "СКАЛА НА СЕЗОНА 1",
-    "noteLive": "Имињата поврзани со Steam се A.C.E. сметки. K/D се појавува кога серверите за натпревари ќе бележат убиства.",
-    "noteSample": "Резултатите од сезона 1 се појавуваат тука додека се играат ranked натпревари."
-  },
-  "playerCard": {
-    "kicker": "Преглед на картичка на играч",
-    "title": "Досие на оператор",
-    "badge": "Premium",
-    "note": "Твојата картичка се пополнува со вистински бројки кога ќе се отвори ranked matchmaking.",
-    "currentRank": "Тековен ранг",
-    "rankValue": "A.C.E. Legend (дивизија I)",
-    "competitiveRating": "Натпреварувачки рејтинг",
-    "seasonRank": "Сезонски пласман",
-    "seasonTop": "(Top {percent})"
   }
 };

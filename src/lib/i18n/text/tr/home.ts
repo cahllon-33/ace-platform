@@ -1,7 +1,7 @@
 import type { TextBag } from "../types";
 
 export const home: TextBag["home"] = {
-  ops: {
+  "ops": {
     "identityKicker": "KİMLİK MERKEZİ",
     "signedOutTitle": "Steam ile giriş yap",
     "signedOutBody": "Steam avatarını, rütbe amblemini ve Rating Points'ini burada görmek için resmi Steam OpenID ile bağlan. A.C.E. asla Steam şifresi istemez.",
@@ -99,15 +99,12 @@ export const home: TextBag["home"] = {
     ]
   },
   "identity": {
-    "profilePlaceholder": "[Player_Profile]",
-    "notAvailable": "yok",
     "elite": "ELİT"
   },
   "membership": {
     "compareLink": "Karşılaştırma tablosunun tamamını gör"
   },
   "loot": {
-    "exampleCard": "Yakında",
     "wear": {
       "factoryNew": "Factory New",
       "minimalWear": "Minimal Wear"
@@ -121,7 +118,6 @@ export const home: TextBag["home"] = {
       "tlv": "Tel Aviv Relay"
     },
     "tileAria": "{name}. Sunucu yakında.",
-    "tileSample": "Yakında · {sample}",
     "note": "128 tick bölgesel sunucular rekabetçi beta ile geliyor."
   },
   "telemetry": {

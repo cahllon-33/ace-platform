@@ -1,7 +1,7 @@
 import type { TextBag } from "../types";
 
 export const home: TextBag["home"] = {
-  ops: {
+  "ops": {
     "identityKicker": "CENTRUM IDENTITY",
     "signedOutTitle": "Přihlásit se přes Steam",
     "signedOutBody": "Připoj se přes oficiální Steam OpenID a uvidíš tu svůj Steam avatar, emblém ranku a Rating Points. A.C.E. nikdy nežádá heslo ke Steamu.",
@@ -38,135 +38,138 @@ export const home: TextBag["home"] = {
     "statsLive": "Výhry a prohry pocházejí z tvého uloženého účtu A.C.E.",
     "statsLink": "Otevřít statistiky hráče"
   },
-  meta: {
-    title: "A.C.E. — soutěžní platforma CS2",
-    description:
-      "A.C.E. je plánovaná soutěžní platforma pro Counter-Strike 2 zaměřená na identitu hráčů, kalibraci, týmy a turnaje. Tento veřejný web je náhled. Rankingové párování, anti-cheat, platby a ceny nejsou aktivní.",
+  "meta": {
+    "title": "A.C.E. — soutěžní platforma CS2",
+    "description": "A.C.E. je plánovaná soutěžní platforma pro Counter-Strike 2 zaměřená na identitu hráčů, kalibraci, týmy a turnaje. Tento veřejný web je náhled. Rankingové párování, anti-cheat, platby a ceny nejsou aktivní."
   },
-  opening: {
-    dialogLabel: "Úvod A.C.E.",
-    line: "A.C.E: autonomní anti-cheat, soutěžní kalibrace, elitní hráči",
-    enter: "Vstoupit na web",
+  "opening": {
+    "dialogLabel": "Úvod A.C.E.",
+    "line": "A.C.E: autonomní anti-cheat, soutěžní kalibrace, elitní hráči",
+    "enter": "Vstoupit na web"
   },
-  hero: {
-    logoAlt: "A.C.E. — autonomní anti-cheat, soutěžní kalibrace, elitní hráči",
-    arenaAlt:
-      "Destička arény A.C.E. Původní obrázek scény, nejde o grafiku Valve. Obrazovka je označena jako herní televize. Živé vysílání je vypnuto.",
+  "hero": {
+    "logoAlt": "A.C.E. — autonomní anti-cheat, soutěžní kalibrace, elitní hráči",
+    "arenaAlt": "Destička arény A.C.E. Původní obrázek scény, nejde o grafiku Valve. Obrazovka je označena jako herní televize. Živé vysílání je vypnuto."
   },
-  broadcast: {
-    kicker: "SLEDOVÁNÍ TURNAJŮ",
-    title: "Vysílací pult",
-    lede: "Na tomto pultu leží soutěžní sada map: Dust II, Mirage, Inferno, Nuke, Ancient, Anubis a Train. Jde o původní destičky. Žádný turnaj se nevysílá a tato stránka nepřehrává zápas Valve.",
-    offAir: "MIMO VYSÍLÁNÍ · {map}",
+  "broadcast": {
+    "kicker": "SLEDOVÁNÍ TURNAJŮ",
+    "title": "Vysílací pult",
+    "lede": "Na tomto pultu leží soutěžní sada map: Dust II, Mirage, Inferno, Nuke, Ancient, Anubis a Train. Jde o původní destičky. Žádný turnaj se nevysílá a tato stránka nepřehrává zápas Valve.",
+    "offAir": "MIMO VYSÍLÁNÍ · {map}"
   },
-  jumpNav: {
-    label: "Kategorie úvodní stránky",
-    play: "Hrát",
-    prizes: "Ceny",
-    teams: "Týmy",
-    leaderboard: "Žebříček",
-    ranks: "Hodnosti",
-    systems: "Systémy",
+  "jumpNav": {
+    "label": "Kategorie úvodní stránky",
+    "play": "Hrát",
+    "prizes": "Ceny",
+    "teams": "Týmy",
+    "leaderboard": "Žebříček",
+    "ranks": "Hodnosti",
+    "systems": "Systémy"
   },
-  charter: {
-    kicker: "HLAVNÍ PRACOVNÍ PROSTOR LOBBY",
-    title: "SOUTĚŽNÍ PÁROVACÍ LOBBY A DISPEČINK A.C.E.",
-    badge: "SERVERY · JIŽ BRZY",
-    lede: "Tato lobby nepřiděluje server, nespouští klienta anti-cheatu a nevyplácí žádnou cenu.",
-    modules: [
+  "charter": {
+    "kicker": "HLAVNÍ PRACOVNÍ PROSTOR LOBBY",
+    "title": "SOUTĚŽNÍ PÁROVACÍ LOBBY A DISPEČINK A.C.E.",
+    "badge": "SERVERY · JIŽ BRZY",
+    "lede": "Tato lobby nepřiděluje server, nespouští klienta anti-cheatu a nevyplácí žádnou cenu.",
+    "modules": [
       {
-        kicker: "ZÁPAS NALEZEN · 5v5",
-        copy: "Rámec 5v5 na této stránce je uzavřená fronta. Nepřiděluje server.",
-        chips: ["ŽÁDNÝ SERVER SE 128 TICKY", "FRONTA ZAVŘENÁ"],
+        "kicker": "ZÁPAS NALEZEN · 5v5",
+        "copy": "Rámec 5v5 na této stránce je uzavřená fronta. Nepřiděluje server.",
+        "chips": [
+          "ŽÁDNÝ SERVER SE 128 TICKY",
+          "FRONTA ZAVŘENÁ"
+        ]
       },
       {
-        kicker: "PEVNÉ 3D HODNOSTI",
-        copy: "Deset stupňů od Recruit po A.C.E. Legend. Uložené hodnocení se zobrazí po přihlášení přes Steam. Tato stránka nezapočítává žádný zápas.",
-        chips: ["PRAVIDLO HODNOCENÍ JE ZDOKUMENTOVÁNO", "OTOČNÝ STOJAN NA TÉTO STRÁNCE"],
+        "kicker": "PEVNÉ 3D HODNOSTI",
+        "copy": "Deset stupňů od Recruit po A.C.E. Legend. Uložené hodnocení se zobrazí po přihlášení přes Steam. Tato stránka nezapočítává žádný zápas.",
+        "chips": [
+          "PRAVIDLO HODNOCENÍ JE ZDOKUMENTOVÁNO",
+          "OTOČNÝ STOJAN NA TÉTO STRÁNCE"
+        ]
       },
       {
-        kicker: "ODMĚNY VE SKINECH",
-        copy: "Šampionátové odměny se oznamují u každé akce.",
-        chips: ["ŽÁDNÝ PŘEDMĚT SE NEDORUČUJE", "ŽÁDNÉ OVĚŘENÍ DROPU"],
-      },
-    ],
+        "kicker": "ODMĚNY VE SKINECH",
+        "copy": "Šampionátové odměny se oznamují u každé akce.",
+        "chips": [
+          "ŽÁDNÝ PŘEDMĚT SE NEDORUČUJE",
+          "ŽÁDNÉ OVĚŘENÍ DROPU"
+        ]
+      }
+    ]
   },
-  identity: {
-    profilePlaceholder: "[Profil_hráče]",
-    notAvailable: "n/d",
-    elite: "ELITA",
+  "identity": {
+    "elite": "ELITA"
   },
-  membership: {
-    compareLink: "Zobrazit úplnou srovnávací tabulku",
+  "membership": {
+    "compareLink": "Zobrazit úplnou srovnávací tabulku"
   },
-  loot: {
-    exampleCard: "Již brzy",
-    wear: {
-      factoryNew: "Zcela nový",
-      minimalWear: "Minimálně opotřebený",
+  "loot": {
+    "wear": {
+      "factoryNew": "Zcela nový",
+      "minimalWear": "Minimálně opotřebený"
+    }
+  },
+  "serverHub": {
+    "badge": "HERNÍ SERVERY · JIŽ BRZY",
+    "nodes": {
+      "fra": "Frankfurt – okrajový uzel",
+      "sto": "Stockholm – jádro",
+      "tlv": "Tel Aviv – přenosový uzel"
     },
+    "tileAria": "{name}. Server již brzy.",
+    "note": "Regionální 128tickové servery přijdou se soutěžní betou."
   },
-  serverHub: {
-    badge: "HERNÍ SERVERY · JIŽ BRZY",
-    nodes: {
-      fra: "Frankfurt – okrajový uzel",
-      sto: "Stockholm – jádro",
-      tlv: "Tel Aviv – přenosový uzel",
-    },
-    tileAria: "{name}. Server již brzy.",
-    tileSample: "Již brzy · {sample}",
-    note: "Regionální 128tickové servery přijdou se soutěžní betou.",
-  },
-  telemetry: {
-    badge: "NÁHLED · JIŽ BRZY",
-    lines: [
+  "telemetry": {
+    "badge": "NÁHLED · JIŽ BRZY",
+    "lines": [
       "A.C.E SHIELD: VE VÝVOJI",
       "MATICE HARDWAROVÝCH ZÁKAZŮ: ŽÁDNÝ IDENTIFIKÁTOR SE NESBÍRÁ",
-      "SPOJENÍ ŠTÍTU A.C.E.: ŽÁDNÝ KLIENT NENÍ NAINSTALOVÁN",
+      "SPOJENÍ ŠTÍTU A.C.E.: ŽÁDNÝ KLIENT NENÍ NAINSTALOVÁN"
     ],
-    note: "Tento web nespouští klienta jádra, neskenuje paměť a nevydává hardwarový zákaz.",
+    "note": "Tento web nespouští klienta jádra, neskenuje paměť a nevydává hardwarový zákaz."
   },
-  comingSoon: {
-    badge: "NENÍ K DISPOZICI",
-    body: "Desktopový klient A.C.E. není nabízen ke stažení. 1. sezóna na tomto webu neinstaluje software ani neotevírá registraci.",
+  "comingSoon": {
+    "badge": "NENÍ K DISPOZICI",
+    "body": "Desktopový klient A.C.E. není nabízen ke stažení. 1. sezóna na tomto webu neinstaluje software ani neotevírá registraci."
   },
-  operative: {
-    kicker: "Filmový taktický výhled · původní prostředí CSS · nejde o grafiku Valve",
-    title: "Ponořte se hlouběji do CS2: dokonalá soutěžní platforma",
-    lede: "Férovější zápasy, lepší spoluhráči. Hodnosti, na kterých záleží, odměny, které se počítají.",
-    note: "Kampaňový text. Rankingové fronty, živé servery a ceny nejsou aktivní.",
-    hudLeft: "CT — STANOVIŠTĚ A",
-    hudRight: "T — TLAK STŘEDEM",
-    hudCenter: "PROSTŘEDÍ TÝMU",
-    plannedReason: "Rankingová hra zůstává zavřená, dokud nebude implementována a ověřena skutečná integrace anti-cheatu.",
+  "operative": {
+    "kicker": "Filmový taktický výhled · původní prostředí CSS · nejde o grafiku Valve",
+    "title": "Ponořte se hlouběji do CS2: dokonalá soutěžní platforma",
+    "lede": "Férovější zápasy, lepší spoluhráči. Hodnosti, na kterých záleží, odměny, které se počítají.",
+    "note": "Kampaňový text. Rankingové fronty, živé servery a ceny nejsou aktivní.",
+    "hudLeft": "CT — STANOVIŠTĚ A",
+    "hudRight": "T — TLAK STŘEDEM",
+    "hudCenter": "PROSTŘEDÍ TÝMU",
+    "plannedReason": "Rankingová hra zůstává zavřená, dokud nebude implementována a ověřena skutečná integrace anti-cheatu."
   },
-  howStatus: {
-    label: "REGISTRAČNÍ SUBSYSTÉM A.C.E. — KALIBRAČNÍ ENGINE PŘIPRAVEN",
-    note: "Hodnocené fronty se otevřou, jakmile poběží A.C.E Shield a kalibrace.",
+  "howStatus": {
+    "label": "REGISTRAČNÍ SUBSYSTÉM A.C.E. — KALIBRAČNÍ ENGINE PŘIPRAVEN",
+    "note": "Hodnocené fronty se otevřou, jakmile poběží A.C.E Shield a kalibrace."
   },
-  shell: {
-    primaryNav: "Hlavní",
-    mobileNav: "Mobilní",
-    elite: "ELITA",
-    notificationsTitle: "Oznámení · již brzy",
-    notificationsAria: "Oznámení. Žádná nepřečtená.",
-    connectProfileTitle: "Připojit profil",
-    openProfileAria: "Otevřít profil ve velitelském pultu",
-    connectProfileAria: "Připojit profil přes Steam OpenID",
-    signOutAria: "Odhlásit se z A.C.E.",
+  "shell": {
+    "primaryNav": "Hlavní",
+    "mobileNav": "Mobilní",
+    "elite": "ELITA",
+    "notificationsTitle": "Oznámení · již brzy",
+    "notificationsAria": "Oznámení. Žádná nepřečtená.",
+    "connectProfileTitle": "Připojit profil",
+    "openProfileAria": "Otevřít profil ve velitelském pultu",
+    "connectProfileAria": "Připojit profil přes Steam OpenID",
+    "signOutAria": "Odhlásit se z A.C.E."
   },
-  notFound: {
-    kicker: "VÝJIMKA MŘÍŽKY",
-    title: "CHYBA 404 — TELEMETRIE RADARU ZTRACENA",
-    body: "Souřadnice, kterou jste požadovali, v naší aktivní mřížce serverů neexistuje.",
-    homeAria: "Zpět do lobby na úvodní stránce A.C.E.",
-    cta: "ZPĚT DO LOBBY",
+  "notFound": {
+    "kicker": "VÝJIMKA MŘÍŽKY",
+    "title": "CHYBA 404 — TELEMETRIE RADARU ZTRACENA",
+    "body": "Souřadnice, kterou jste požadovali, v naší aktivní mřížce serverů neexistuje.",
+    "homeAria": "Zpět do lobby na úvodní stránce A.C.E.",
+    "cta": "ZPĚT DO LOBBY"
   },
-  error: {
-    kicker: "Chyba",
-    title: "Něco se pokazilo",
-    body: "Tuto veřejnou stránku nebylo možné zobrazit. Můžete to zkusit znovu. Na tomto náhledovém webu nebyla vyžádána žádná data účtu.",
-    retryAria: "Znovu načíst tuto stránku",
-    retry: "Zkusit znovu",
-  },
+  "error": {
+    "kicker": "Chyba",
+    "title": "Něco se pokazilo",
+    "body": "Tuto veřejnou stránku nebylo možné zobrazit. Můžete to zkusit znovu. Na tomto náhledovém webu nebyla vyžádána žádná data účtu.",
+    "retryAria": "Znovu načíst tuto stránku",
+    "retry": "Zkusit znovu"
+  }
 };

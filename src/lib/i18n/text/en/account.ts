@@ -1,5 +1,5 @@
 ﻿export const account = {
-  statsConsole: {
+  "statsConsole": {
     "metaTitle": "Player stats",
     "kicker": "PLAYER STATS",
     "title": "Player stats",
@@ -25,133 +25,132 @@
     "dashAnalysis": "Open match analysis (Premium)",
     "chartAria": "Rating movement chart"
   },
-  dashboard: {
-    meta: {
-      title: "Command Deck",
+  "dashboard": {
+    "meta": {
+      "title": "Command Deck"
     },
-    kicker: "Authenticated",
-    title: "Command Deck",
-    lede: "Signed in through Steam OpenID. Session lives in an HttpOnly cookie, not localStorage. Ranked search remains closed until Anti-Cheat is real.",
-    eliteBadge: "ELITE",
-    stats: {
-      accountStatus: "Account status",
-      subscription: "Subscription",
-      rank: "A.C.E. rank",
-      ratingPoints: "Rating points",
-      wins: "Wins",
-      losses: "Losses",
-      accountId: "Internal account ID",
+    "kicker": "Authenticated",
+    "title": "Command Deck",
+    "lede": "Signed in through Steam OpenID. Session lives in an HttpOnly cookie, not localStorage. Ranked search remains closed until Anti-Cheat is real.",
+    "eliteBadge": "ELITE",
+    "stats": {
+      "accountStatus": "Account status",
+      "subscription": "Subscription",
+      "rank": "A.C.E. rank",
+      "ratingPoints": "Rating points",
+      "wins": "Wins",
+      "losses": "Losses",
+      "accountId": "Internal account ID"
     },
-    accountStatuses: {
-      ACTIVE: "Active",
-      SUSPENDED: "Suspended",
-      BANNED: "Banned",
-      TEMP_BANNED: "Temporarily banned",
-      PERM_BANNED: "Permanently banned",
-      UNDER_REVIEW: "Under review",
+    "accountStatuses": {
+      "ACTIVE": "Active",
+      "SUSPENDED": "Suspended",
+      "BANNED": "Banned",
+      "TEMP_BANNED": "Temporarily banned",
+      "PERM_BANNED": "Permanently banned",
+      "UNDER_REVIEW": "Under review"
     },
-    tiers: {
-      FREE: "Free",
-      PLUS: "Plus",
-      PREMIUM: "Premium",
+    "tiers": {
+      "FREE": "Free",
+      "PLUS": "Plus",
+      "PREMIUM": "Premium"
     },
-    roles: {
-      CAPTAIN: "Captain",
-      PLAYER: "Player",
+    "roles": {
+      "CAPTAIN": "Captain",
+      "PLAYER": "Player"
     },
-    settings: {
-      title: "DASHBOARD SETTINGS PROFILE",
-      billingNotLive: "Every account is on Free until checkout exists.",
-      cancelReason: "No billed subscription exists to cancel. Checkout is not implemented.",
-      cancelButton: "Cancel subscription",
+    "settings": {
+      "title": "DASHBOARD SETTINGS PROFILE",
+      "billingNotLive": "Every account is on Free until checkout exists.",
+      "cancelReason": "No billed subscription exists to cancel. Checkout is not implemented.",
+      "cancelButton": "Cancel subscription"
     },
-    rankedReason: "Ranked matchmaking is denied until a verified Anti-Cheat integration exists.",
-    rankedButton: "Find ranked match",
-    roster: {
-      title: "5v5 roster",
-      body: "One captain. Four invites. Captains invite other A.C.E. account IDs, which are created only after a verified Steam login.",
+    "rankedReason": "Ranked matchmaking is denied until a verified Anti-Cheat integration exists.",
+    "rankedButton": "Find ranked match",
+    "roster": {
+      "title": "5v5 roster",
+      "body": "One captain. Four invites. Captains invite other A.C.E. account IDs, which are created only after a verified Steam login."
     },
-    pendingInvites: "Pending invitations",
+    "pendingInvites": "Pending invitations"
   },
-  forms: {
-    requestFailed: "Request failed.",
-    createTeam: {
-      acceptRequired: "Accept the Terms of Service, Anti-Cheat EULA, and Privacy Policy to continue.",
-      failed: "Could not create team.",
-      nameLabel: "New 5v5 team name",
-      submitAria: "Found a new 5v5 team",
-      submit: "Found team",
+  "forms": {
+    "requestFailed": "Request failed.",
+    "createTeam": {
+      "acceptRequired": "Accept the Terms of Service, Anti-Cheat EULA, and Privacy Policy to continue.",
+      "failed": "Could not create team.",
+      "nameLabel": "New 5v5 team name",
+      "submitAria": "Found a new 5v5 team",
+      "submit": "Found team"
     },
-    invite: {
-      failed: "Invite failed.",
-      label: "Invite free agent via SteamID or A.C.E. account ID",
-      submitAria: "Send team invitation",
-      submit: "Send invite",
-    },
+    "invite": {
+      "failed": "Invite failed.",
+      "label": "Invite free agent via SteamID or A.C.E. account ID",
+      "submitAria": "Send team invitation",
+      "submit": "Send invite"
+    }
   },
-  profile: {
-    meta: {
-      notFoundTitle: "Player profile",
-      title: "{name} · A.C.E. profile",
-      description: "A.C.E. player dossier. Plus and Premium sessions unlock telemetry trend graphs.",
+  "profile": {
+    "meta": {
+      "notFoundTitle": "Player profile",
+      "title": "{name} · A.C.E. profile",
+      "description": "A.C.E. player dossier. Plus and Premium sessions unlock telemetry trend graphs."
     },
-    kicker: "Player identity",
-    bannerPlaceholder: "Profile banner · coming soon",
-    levelBadge: "LEVEL {level}",
-    premiumBadge: "PREMIUM",
-    rosterLevel: "Roster level {level}.",
-    trend: {
-      title: "Competitive rating performance trend",
-      note: "Rating points across consecutive match-history logs.",
+    "kicker": "Player identity",
+    "bannerPlaceholder": "Profile banner · coming soon",
+    "levelBadge": "LEVEL {level}",
+    "rosterLevel": "Roster level {level}.",
+    "trend": {
+      "title": "Competitive rating performance trend",
+      "note": "Rating points across consecutive match-history logs."
     },
-    combat: {
-      title: "Detailed combat data matrix",
-      kills: "Total Kills",
-      deaths: "Total Deaths",
-      kd: "Calculated K/D",
-      headshots: "Total Headshots",
-      headshotPct: "Headshot % Range",
-      knifeKills: "Special Knife Kills",
+    "combat": {
+      "title": "Detailed combat data matrix",
+      "kills": "Total Kills",
+      "deaths": "Total Deaths",
+      "kd": "Calculated K/D",
+      "headshots": "Total Headshots",
+      "headshotPct": "Headshot % Range",
+      "knifeKills": "Special Knife Kills"
     },
-    weapon: {
-      title: "Signature weapon specialization",
-      note: "Primary calibrated weapon platform",
-      accuracy: "Accuracy Rating",
-      kills: "Total Weapon Kills",
+    "weapon": {
+      "title": "Signature weapon specialization",
+      "note": "Primary calibrated weapon platform",
+      "accuracy": "Accuracy Rating",
+      "kills": "Total Weapon Kills"
     },
-    gear: {
-      title: "Desktop specifications",
-      cpu: "CPU",
-      gpu: "GPU",
-      monitor: "Monitor Refresh Rate (Hz)",
-      mouse: "Mouse Model",
-      dpi: "Active DPI Setup",
+    "gear": {
+      "title": "Desktop specifications",
+      "cpu": "CPU",
+      "gpu": "GPU",
+      "monitor": "Monitor Refresh Rate (Hz)",
+      "mouse": "Mouse Model",
+      "dpi": "Active DPI Setup"
     },
-    networksTitle: "Steam profile link",
-    back: "Return to clan roster",
+    "networksTitle": "Steam profile link",
+    "back": "Return to clan roster"
   },
-  networks: {
-    note: "A link typed here stays in this browser and is not saved. A.C.E. never asks for a Steam password.",
-    labels: {
-      steam: "Steam profile",
+  "networks": {
+    "note": "A link typed here stays in this browser and is not saved. A.C.E. never asks for a Steam password.",
+    "labels": {
+      "steam": "Steam profile"
     },
-    open: "Open {label} >",
+    "open": "Open {label} >"
   },
-  ratingTrend: {
-    chartAria: "Competitive rating performance trend",
-    pointAria: "Match {match}: {rating} rating",
-    axisLabel: "M{match}",
-    idle: "Hover a node to inspect a rating log.",
-    readout: "Match {match} · {rating} rating",
+  "ratingTrend": {
+    "chartAria": "Competitive rating performance trend",
+    "pointAria": "Match {match}: {rating} rating",
+    "axisLabel": "M{match}",
+    "idle": "Hover a node to inspect a rating log.",
+    "readout": "Match {match} · {rating} rating"
   },
-  loginError: {
-    meta: {
-      title: "Sign-in error",
+  "loginError": {
+    "meta": {
+      "title": "Sign-in error"
     },
-    title: "Steam sign-in did not complete",
-    notConfigured: "Steam OpenID is not configured on this server yet. A.C.E. never asks for a Steam password.",
-    unavailable: "Steam did not answer the verification request. Try again in a moment. A.C.E. never asks for a Steam password.",
-    unverified: "The OpenID callback could not be verified on the server. A.C.E. never asks for a Steam password.",
-    returnHome: "Return home",
-  },
-} as const;
+    "title": "Steam sign-in did not complete",
+    "notConfigured": "Steam OpenID is not configured on this server yet. A.C.E. never asks for a Steam password.",
+    "unavailable": "Steam did not answer the verification request. Try again in a moment. A.C.E. never asks for a Steam password.",
+    "unverified": "The OpenID callback could not be verified on the server. A.C.E. never asks for a Steam password.",
+    "returnHome": "Return home"
+  }
+}as const;

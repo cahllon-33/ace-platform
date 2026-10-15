@@ -1,7 +1,7 @@
 import type { TextBag } from "../types";
 
 export const account: TextBag["account"] = {
-  statsConsole: {
+  "statsConsole": {
     "metaTitle": "Statistika igrača",
     "kicker": "STATISTIKA IGRAČA",
     "title": "Statistika igrača",
@@ -100,7 +100,6 @@ export const account: TextBag["account"] = {
     "kicker": "Identitet igrača",
     "bannerPlaceholder": "Banner profila · uskoro",
     "levelBadge": "RAZINA {level}",
-    "premiumBadge": "PREMIUM",
     "rosterLevel": "Razina postave {level}.",
     "trend": {
       "title": "Trend izvedbe natjecateljskog rejtinga",

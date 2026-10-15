@@ -1,7 +1,7 @@
 import type { TextBag } from "../types";
 
 export const pricing: TextBag["pricing"] = {
-  matrix: {
+  "matrix": {
     "kicker": "ÖZELLİK MATRİSİ",
     "title": "Üyelik karşılaştırması",
     "note": "Altın onay: dahil. Çizgi: dahil değil. Yakında: planın parçası ama henüz yayınlanmadı. Hiçbir plan reyting, eşleştirme veya sıra önceliği satın almaz.",
@@ -26,13 +26,13 @@ export const pricing: TextBag["pricing"] = {
       "advantage": "Reyting artışı, eşleştirme veya sıra avantajı"
     }
   },
-  plansR11: {
+  "plansR11": {
     "termsPlusStats": "Oyuncu istatistikleri: kayıtlı maçlardan reyting değişim grafiğin. Kafa vuruşu % ve isabet göstergeleri yakında.",
     "codexTitle": "Premium rütbe kodeksi ve animasyonlu kart",
     "codexBody": "Bu, Premium'un içerdiği rütbe sanatı ve animasyonlu profil kartıdır. Aynı Rating Points merdiveninde kozmetik sanattır ve rekabet avantajı sağlamaz.",
     "codexLink": "Premium rütbe kodeksini aç"
   },
-  premiumExtras: {
+  "premiumExtras": {
     "card": {
       "previewTag": "ÖNİZLEME",
       "previewNote": "Animasyonlu Premium profil kartının önizlemesi. İsim ve değerler örnektir. Gerçek bir profil bu kartı yalnızca kayıtlı planı Premium olduğunda gösterir.",
@@ -40,8 +40,7 @@ export const pricing: TextBag["pricing"] = {
       "seal": "ELITE MÜHRÜ",
       "rank": "Rütbe",
       "rating": "Reyting",
-      "sampleName": "Örnek oyuncu",
-      "ownTitle": "Premium profil kartın"
+      "sampleName": "Örnek oyuncu"
     },
     "analysis": {
       "metaTitle": "Gelişmiş maç analizi",
@@ -164,7 +163,6 @@ export const pricing: TextBag["pricing"] = {
     "title": "Üyelik karşılaştırması",
     "note": "Her satır sitenin bugünkü durumunu yansıtır. Ödeme yakında geliyor ve ücretli bir plan asla sıra açmaz veya avantaj satın almaz.",
     "caption": "Free, Plus ve Premium'un sitenin bugün yaptıklarına göre karşılaştırması",
-    "includedToday": "Bugün dahil",
     "columns": {
       "free": "Free",
       "plus": "Plus",

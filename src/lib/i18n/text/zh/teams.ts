@@ -73,31 +73,6 @@ export const teams: TextBag["teams"] = {
       "briefTitle": "100 队运营简报",
       "briefBody": "一套竞技布局覆盖全部 100 支队伍。报名开放后,最先通过审核的 28 支战队获得首轮轮空并晋级第二轮,其余 72 支战队参加第一轮。未填满席位上的名称为占位,直至战队报名。完整规则手册位于对阵树下方。比赛大厅将随竞技测试版开放,奖品按赛事确认。"
     },
-    "timeline": {
-      "ariaLabel": "赛事上线时间线",
-      "kicker": "锦标赛路线图",
-      "title": "赛事上线时间线",
-      "stageLabel": "第 {id} 阶段",
-      "stages": {
-        "registrations": {
-          "title": "开放报名",
-          "state": "预览"
-        },
-        "calibration": {
-          "title": "区域定级赛",
-          "state": "已锁定"
-        },
-        "quarterFinals": {
-          "title": "精英职业四分之一决赛",
-          "state": "已锁定"
-        },
-        "finals": {
-          "title": "巅峰总决赛",
-          "state": "已锁定"
-        }
-      },
-      "disclaimer": "报名开始后,第 01 阶段最先开放,第 02–04 阶段随后进行。奖金池将在公布时于赛事页面确认。"
-    },
     "bracket": {
       "kicker": "100 队淘汰赛 · 即将推出",
       "title": "100 队对阵矩阵",

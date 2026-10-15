@@ -54,21 +54,5 @@ export const leaderboard: TextBag["leaderboard"] = {
     "srLabel": "Caută în clasament",
     "fieldLabel": "Caută jucători",
     "placeholder": "Nume afișat"
-  },
-  "seasonPreview": {
-    "banner": "SCARA SEZONULUI 1",
-    "noteLive": "Numele legate de Steam sunt conturi A.C.E. K/D apare când serverele de meci înregistrează ucideri.",
-    "noteSample": "Rezultatele sezonului 1 apar aici pe măsură ce se joacă meciuri ranked."
-  },
-  "playerCard": {
-    "kicker": "Previzualizare card de jucător",
-    "title": "Dosar de operator",
-    "badge": "Premium",
-    "note": "Cardul tău se umple cu cifre reale când se deschide matchmakingul ranked.",
-    "currentRank": "Rang actual",
-    "rankValue": "A.C.E. Legend (Divizia I)",
-    "competitiveRating": "Rating competitiv",
-    "seasonRank": "Loc în sezon",
-    "seasonTop": "(Top {percent})"
   }
 };

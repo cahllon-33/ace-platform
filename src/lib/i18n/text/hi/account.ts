@@ -1,7 +1,7 @@
 import type { TextBag } from "../types";
 
 export const account: TextBag["account"] = {
-  statsConsole: {
+  "statsConsole": {
     "metaTitle": "खिलाड़ी आँकड़े",
     "kicker": "खिलाड़ी आँकड़े",
     "title": "खिलाड़ी आँकड़े",
@@ -100,7 +100,6 @@ export const account: TextBag["account"] = {
     "kicker": "खिलाड़ी पहचान",
     "bannerPlaceholder": "प्रोफ़ाइल बैनर · जल्द आ रहा है",
     "levelBadge": "स्तर {level}",
-    "premiumBadge": "PREMIUM",
     "rosterLevel": "रोस्टर स्तर {level}।",
     "trend": {
       "title": "प्रतिस्पर्धी रेटिंग प्रदर्शन रुझान",

@@ -1,7 +1,7 @@
 import type { TextBag } from "../types";
 
 export const pricing: TextBag["pricing"] = {
-  matrix: {
+  "matrix": {
     "kicker": "FUNKCIÓMÁTRIX",
     "title": "Tagságok összehasonlítása",
     "note": "Arany pipa: benne van. Vonal: nincs benne. Hamarosan: a csomag része, de még nem jelent meg. Egyik csomag sem vásárol ratinget, párosítást vagy sorelsőbbséget.",
@@ -26,13 +26,13 @@ export const pricing: TextBag["pricing"] = {
       "advantage": "Rating-növelés, párosítási vagy sorelőny"
     }
   },
-  plansR11: {
+  "plansR11": {
     "termsPlusStats": "Játékosstatisztika: a rating alakulásának grafikonja a rögzített meccsekből. A fejlövés-% és a pontosság mérői hamarosan érkeznek.",
     "codexTitle": "Prémium rangkódex és animált kártya",
     "codexBody": "Ez a Premiumban foglalt rangművészet és animált profilkártya. Kozmetikai művészet ugyanazon a Rating Points létrán, versenyelőny nélkül.",
     "codexLink": "A prémium rangkódex megnyitása"
   },
-  premiumExtras: {
+  "premiumExtras": {
     "card": {
       "previewTag": "ELŐNÉZET",
       "previewNote": "Az animált Premium profilkártya előnézete. A név és az értékek minták. Egy valódi profil csak akkor mutatja ezt a kártyát, ha a tárolt csomagja Premium.",
@@ -40,8 +40,7 @@ export const pricing: TextBag["pricing"] = {
       "seal": "ELITE PECSÉT",
       "rank": "Rang",
       "rating": "Értékelés",
-      "sampleName": "Mintajátékos",
-      "ownTitle": "A Premium profilkártyád"
+      "sampleName": "Mintajátékos"
     },
     "analysis": {
       "metaTitle": "Bővített meccselemzés",
@@ -164,7 +163,6 @@ export const pricing: TextBag["pricing"] = {
     "title": "Tagságok összehasonlítása",
     "note": "Minden sor az oldal mai állapotát tükrözi. A fizetés hamarosan érkezik, és egy fizetős csomag soha nem nyit sort és nem vásárol előnyt.",
     "caption": "Free, Plus és Premium összehasonlítva az oldal mai működése szerint",
-    "includedToday": "Ma tartalmazza",
     "columns": {
       "free": "Free",
       "plus": "Plus",

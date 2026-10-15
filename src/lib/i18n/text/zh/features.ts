@@ -59,22 +59,7 @@ export const features: TextBag["features"] = {
     "kicker": "装饰 · 即将推出",
     "title": "A.C.E. 战利品架构 — 武器掉落",
     "lede": "A.C.E. 原创涂装,将随商店推出。装饰绝不影响比赛。",
-    "mockDrop": "即将推出",
-    "multiplierLabel": "胜率倍数要求",
-    "ladderLabel": "每周天梯掉落",
-    "multiplierValue": "{multiplier}× 模板",
-    "ladderValue": "每周名额 · 即将推出",
     "checkout": "支付 · 即将推出"
-  },
-  "communityRail": {
-    "kicker": "动态 · 即将推出",
-    "newsTitle": "最新天梯资讯",
-    "newsItems": [
-      "对阵表仍为空 — 0 / 100 支队伍。",
-      "在反作弊上线前,排位搜索保持关闭。"
-    ],
-    "prizesTitle": "每日皮肤奖品",
-    "prizesBody": "奖励和支付将随第 1 赛季开放。"
   },
   "identityPreview": {
     "badge": "预览 — 未确认",

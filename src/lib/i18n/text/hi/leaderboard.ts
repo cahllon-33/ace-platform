@@ -54,21 +54,5 @@ export const leaderboard: TextBag["leaderboard"] = {
     "srLabel": "लीडरबोर्ड खोजें",
     "fieldLabel": "खिलाड़ी खोजें",
     "placeholder": "प्रदर्शित नाम"
-  },
-  "seasonPreview": {
-    "banner": "सीज़न 1 सीढ़ी",
-    "noteLive": "Steam से जुड़े नाम A.C.E. खाते हैं। मैच सर्वर किल दर्ज करने पर K/D दिखेगा।",
-    "noteSample": "रैंक्ड मैच खेले जाने पर सीज़न 1 के रिकॉर्ड यहाँ दिखेंगे।"
-  },
-  "playerCard": {
-    "kicker": "प्लेयर कार्ड पूर्वावलोकन",
-    "title": "ऑपरेटर फ़ाइल",
-    "badge": "Premium",
-    "note": "रैंक्ड मैचमेकिंग खुलने पर आपका कार्ड असली आँकड़ों से भरेगा।",
-    "currentRank": "वर्तमान रैंक",
-    "rankValue": "A.C.E. Legend (डिवीज़न I)",
-    "competitiveRating": "प्रतिस्पर्धी रेटिंग",
-    "seasonRank": "सीज़न रैंक",
-    "seasonTop": "(शीर्ष {percent})"
   }
 };

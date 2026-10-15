@@ -1,7 +1,7 @@
 import type { TextBag } from "../types";
 
 export const home: TextBag["home"] = {
-  ops: {
+  "ops": {
     "identityKicker": "CENTAR IDENTITETA",
     "signedOutTitle": "Prijavi se putem Steama",
     "signedOutBody": "Poveži se službenim Steam OpenID-om da ovdje vidiš svoj Steam avatar, amblem ranga i Rating Points. A.C.E. nikad ne traži Steam lozinku.",
@@ -99,15 +99,12 @@ export const home: TextBag["home"] = {
     ]
   },
   "identity": {
-    "profilePlaceholder": "[Player_Profile]",
-    "notAvailable": "n/p",
     "elite": "ELITE"
   },
   "membership": {
     "compareLink": "Pogledaj cijelu tablicu usporedbe"
   },
   "loot": {
-    "exampleCard": "Uskoro",
     "wear": {
       "factoryNew": "Factory New",
       "minimalWear": "Minimal Wear"
@@ -121,7 +118,6 @@ export const home: TextBag["home"] = {
       "tlv": "Tel Aviv Relay"
     },
     "tileAria": "{name}. Poslužitelj uskoro.",
-    "tileSample": "Uskoro · {sample}",
     "note": "Regionalni 128-tick poslužitelji stižu s natjecateljskom betom."
   },
   "telemetry": {

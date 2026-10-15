@@ -1,7 +1,7 @@
 import type { TextBag } from "../types";
 
 export const home: TextBag["home"] = {
-  ops: {
+  "ops": {
     "identityKicker": "CENTRU DE IDENTITATE",
     "signedOutTitle": "Conectează-te cu Steam",
     "signedOutBody": "Conectează-te prin Steam OpenID oficial ca să vezi aici avatarul Steam, emblema de rang și Rating Points. A.C.E. nu cere niciodată parola Steam.",
@@ -99,15 +99,12 @@ export const home: TextBag["home"] = {
     ]
   },
   "identity": {
-    "profilePlaceholder": "[Player_Profile]",
-    "notAvailable": "n/a",
     "elite": "ELITE"
   },
   "membership": {
     "compareLink": "Vezi tabelul complet de comparație"
   },
   "loot": {
-    "exampleCard": "În curând",
     "wear": {
       "factoryNew": "Factory New",
       "minimalWear": "Minimal Wear"
@@ -121,7 +118,6 @@ export const home: TextBag["home"] = {
       "tlv": "Tel Aviv Relay"
     },
     "tileAria": "{name}. Server în curând.",
-    "tileSample": "În curând · {sample}",
     "note": "Serverele regionale 128-tick sosesc odată cu beta competitivă."
   },
   "telemetry": {

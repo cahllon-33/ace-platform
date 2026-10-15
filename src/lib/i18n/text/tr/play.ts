@@ -1,13 +1,13 @@
 import type { TextBag } from "../types";
 
 export const play: TextBag["play"] = {
-  premium: {
+  "premium": {
     "tag": "PREMIUM",
     "sample": "PREMIUM ÖRNEK",
     "note": "Premium örnek olarak işaretlenen yerler, illüstrasyonlu Premium rütbe görselini yalnızca tasarım amacıyla gösterir. Bunlar örnek oyunculardır, abone değildir. Premium görsel tamamen kozmetiktir ve reytingi veya eşleştirmeyi asla değiştirmez.",
     "artAlt": "{rank} illüstrasyonlu Premium rütbe görseli"
   },
-  room: {
+  "room": {
     "showcaseTag": "VİTRİN · Örnek oyuncular, canlı maç değil. Sıra kapalı.",
     "showcaseShort": "VİTRİN",
     "queueClosed": "SIRA KAPALI",
@@ -78,7 +78,6 @@ export const play: TextBag["play"] = {
   "arena": {
     "ariaLabel": "Maç odası önizlemesi",
     "captain": "Kaptan",
-    "ping": "Ping {ping}",
     "mapPlates": "Harita görselleri",
     "selectMap": "{map} seç",
     "settings": {
@@ -127,5 +126,5 @@ export const play: TextBag["play"] = {
       ]
     },
     "findMatchReason": "Eşleştirme rekabetçi beta ile açılır. Dereceli sıralar henüz çalışmıyor."
-  },
+  }
 };

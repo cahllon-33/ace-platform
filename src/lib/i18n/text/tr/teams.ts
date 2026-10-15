@@ -73,31 +73,6 @@ export const teams: TextBag["teams"] = {
       "briefTitle": "100 Takımlı Operasyon Özeti",
       "briefBody": "Tek bir rekabet düzeni 100 takımın tamamını kapsar. Kayıtlar açıldığında kabul edilen ilk 28 klan 1. Tur'da bay geçer ve 2. Tur'a yükselir. Diğer 72 klan 1. Tur'u oynar. Dolmamış slotlardaki adlar, klanlar kaydolana kadar yer tutuculardır. Kural kitabının tamamı ağacın altında yer alır. Maç lobileri rekabetçi beta ile açılır ve ödüller her etkinlik için kesinleşir."
     },
-    "timeline": {
-      "ariaLabel": "Turnuva başlangıç takvimi",
-      "kicker": "ŞAMPİYONA YOL HARİTASI",
-      "title": "TURNUVA BAŞLANGIÇ TAKVİMİ",
-      "stageLabel": "Aşama {id}",
-      "stages": {
-        "registrations": {
-          "title": "Açık Kayıtlar",
-          "state": "ÖNİZLEME"
-        },
-        "calibration": {
-          "title": "Bölgesel Kalibrasyon Tabloları",
-          "state": "KİLİTLİ"
-        },
-        "quarterFinals": {
-          "title": "Elit Pro Çeyrek Finaller",
-          "state": "KİLİTLİ"
-        },
-        "finals": {
-          "title": "Büyük Zirve Finali",
-          "state": "KİLİTLİ"
-        }
-      },
-      "disclaimer": "Kayıtlar başladığında önce Aşama 01 açılır. Aşama 02–04 onu izler. Ödül havuzları duyurulduğunda etkinlik sayfasında kesinleşir."
-    },
     "bracket": {
       "kicker": "100 takımlı eleme · yakında",
       "title": "100 Takımlı Eleme Tablosu Matrisi",

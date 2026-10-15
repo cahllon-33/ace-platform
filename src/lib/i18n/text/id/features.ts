@@ -59,22 +59,7 @@ export const features: TextBag["features"] = {
     "kicker": "Kosmetik · segera hadir",
     "title": "ARSITEKTUR LOOT A.C.E. — DROP SENJATA",
     "lede": "Finishing A.C.E. orisinal, hadir bersama toko. Kosmetik tidak pernah memengaruhi kompetisi.",
-    "mockDrop": "Segera hadir",
-    "multiplierLabel": "Persyaratan Pengali Win Rate",
-    "ladderLabel": "Drop Tangga Mingguan",
-    "multiplierValue": "Templat {multiplier}×",
-    "ladderValue": "Slot mingguan · segera hadir",
     "checkout": "Pembayaran · segera hadir"
-  },
-  "communityRail": {
-    "kicker": "Umpan · segera hadir",
-    "newsTitle": "Berita Tangga Terbaru",
-    "newsItems": [
-      "Bagan masih kosong — 0 dari 100 tim.",
-      "Pencarian ranked tetap tertutup sampai Anti-Cheat ada."
-    ],
-    "prizesTitle": "Hadiah Skin Harian",
-    "prizesBody": "Hadiah dan pembayaran dibuka bersama Musim 1."
   },
   "identityPreview": {
     "badge": "Pratinjau — belum dikonfirmasi",

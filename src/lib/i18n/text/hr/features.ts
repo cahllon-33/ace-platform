@@ -59,22 +59,7 @@ export const features: TextBag["features"] = {
     "kicker": "Kozmetika · uskoro",
     "title": "A.C.E. LOOT ARHITEKTURA — DROPOVI ORUŽJA",
     "lede": "Originalne A.C.E. završne obrade, stižu s trgovinom. Kozmetika nikad ne utječe na natjecanje.",
-    "mockDrop": "Uskoro",
-    "multiplierLabel": "Zahtjevi množitelja postotka pobjeda",
-    "ladderLabel": "Tjedni dropovi ljestvice",
-    "multiplierValue": "Predložak {multiplier}×",
-    "ladderValue": "Tjedni termin · uskoro",
     "checkout": "Plaćanje · uskoro"
-  },
-  "communityRail": {
-    "kicker": "Feed · uskoro",
-    "newsTitle": "Najnovije vijesti s ljestvice",
-    "newsItems": [
-      "Kostur je i dalje prazan — 0 od 100 timova.",
-      "Ranked pretraga ostaje zatvorena dok ne postoji anti-cheat."
-    ],
-    "prizesTitle": "Dnevne nagrade skinova",
-    "prizesBody": "Nagrade i plaćanje otvaraju se sa 1. sezonom."
   },
   "identityPreview": {
     "badge": "Pregled — nije potvrđeno",

@@ -1,7 +1,7 @@
 import type { TextBag } from "../types";
 
 export const ranks: TextBag["ranks"] = {
-  rpRules: {
+  "rpRules": {
     "kicker": "REGULILE RATING POINTS A.C.E",
     "title": "Cum se modifică Rating Points",
     "lede": "Versiunea regulilor {version}. Fiecare jucător nou începe cu {start} RP la nivelul 3, {tier}. Clasamentul este lent intenționat: fiecare nivel de peste mijloc cere mai multe victorii decât cel dinainte.",
@@ -46,29 +46,29 @@ export const ranks: TextBag["ranks"] = {
     "ex4": "Împotriva unei echipe cu în medie 200 RP mai puțin decât tine, o victorie aduce +{weakWin}, iar o înfrângere costă −{weakLoss}.",
     "note": "Aceste cifre sunt calculate de același cod care aplică un rezultat de meci verificat. Sunt exemple, nu meciuri salvate."
   },
-  premiumCodex: {
+  "premiumCodex": {
     "kicker": "CODEXUL RANGURILOR PREMIUM",
     "title": "Codexul rangurilor Premium",
     "lede": "Zece embleme de cristal ilustrate, câte una pentru fiecare rang. Este artă de profil cosmetică pe aceeași scară Rating Points ca rangurile standard. Nu schimbă ratingul, matchmakingul sau coada.",
     "cosmetic": "Artă cosmetică · aceeași scară RP · doar A.C.E Premium 7 $/lună",
     "imgAlt": "Arta de rang Premium {name}, nivelul {level}"
   },
-  premiumRanks: {
-    kicker: "RANGURI PREMIUM",
-    plan: "A.C.E PREMIUM · doar 7 $/lună",
-    title: "Grafică de rang Premium",
-    lede: "Setul original ilustrat de ranguri A.C.E.: zece embleme de cristal cu diviziile III/II/I, protocolul de rating, cardul de detaliu Legend și vizualizatorul 3D rotit prin tragere. Este grafică de profil pentru membrii Premium. Citește aceeași scară Rating Points ca rangurile standard și nu oferă niciun avantaj competitiv.",
-    demo: "Valori demo: progresul, procentul de victorii și diviziile de pe această tablă sunt exemple, nu statistici live. Când ești autentificat, ratingul afișat este ratingul tău stocat.",
-    locked: "În curând: checkout-ul nu există încă, deci astăzi niciun cont nu este Premium. Serverul aplică grafica de rang Premium unui profil doar când planul său stocat este Premium.",
-    standardKicker: "RANGURI STANDARD",
-    standardNote: "Fiecare cont poartă aceste embleme vectoriale 3D.",
-    legendTag: "PREMIUM",
-    pickerTitle: "Grafica de rang din profilul tău",
-    pickerStandard: "Standard",
-    pickerPremium: "Premium",
-    pickerLocked: "Grafica de rang Premium este pentru A.C.E Premium (7 $/lună). În curând: checkout-ul nu există încă.",
-    pickerSaved: "Salvat.",
-    pickerFailed: "Nesalvat. Grafica de rang Premium necesită A.C.E Premium.",
+  "premiumRanks": {
+    "kicker": "RANGURI PREMIUM",
+    "plan": "A.C.E PREMIUM · doar 7 $/lună",
+    "title": "Grafică de rang Premium",
+    "lede": "Setul original ilustrat de ranguri A.C.E.: zece embleme de cristal cu diviziile III/II/I, protocolul de rating, cardul de detaliu Legend și vizualizatorul 3D rotit prin tragere. Este grafică de profil pentru membrii Premium. Citește aceeași scară Rating Points ca rangurile standard și nu oferă niciun avantaj competitiv.",
+    "demo": "Valori demo: progresul, procentul de victorii și diviziile de pe această tablă sunt exemple, nu statistici live. Când ești autentificat, ratingul afișat este ratingul tău stocat.",
+    "locked": "În curând: checkout-ul nu există încă, deci astăzi niciun cont nu este Premium. Serverul aplică grafica de rang Premium unui profil doar când planul său stocat este Premium.",
+    "standardKicker": "RANGURI STANDARD",
+    "standardNote": "Fiecare cont poartă aceste embleme vectoriale 3D.",
+    "legendTag": "PREMIUM",
+    "pickerTitle": "Grafica de rang din profilul tău",
+    "pickerStandard": "Standard",
+    "pickerPremium": "Premium",
+    "pickerLocked": "Grafica de rang Premium este pentru A.C.E Premium (7 $/lună). În curând: checkout-ul nu există încă.",
+    "pickerSaved": "Salvat.",
+    "pickerFailed": "Nesalvat. Grafica de rang Premium necesită A.C.E Premium."
   },
   "meta": {
     "title": "Ranguri competitive",
@@ -142,10 +142,7 @@ export const ranks: TextBag["ranks"] = {
   "card": {
     "rank": "Rang {level}",
     "targetWinRate": "Rată țintă de victorii {winRate}",
-    "calibrationTarget": "Țintă de calibrare",
-    "floor": "Prag",
-    "samplesNote": "Cifre țintă pentru fiecare nivel.",
-    "progressMockup": "Progres"
+    "floor": "Prag"
   },
   "turntable": {
     "stageLabel": "Emblema orbitală {name}. Trage pentru a roti.",

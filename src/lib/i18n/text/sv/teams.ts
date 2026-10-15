@@ -73,31 +73,6 @@ export const teams: TextBag["teams"] = {
       "briefTitle": "Driftsöversikt för 100 lag",
       "briefBody": "En tävlingslayout täcker hela fältet på 100 lag. När anmälan öppnar får de första 28 godkända klanerna frilott i omgång 1 och går vidare till omgång 2. De övriga 72 klanerna spelar omgång 1. Namn på ej fyllda platser är platshållare tills klaner registrerar sig. Hela regelboken finns under trädet. Matchlobbyer öppnar med tävlingsbetan, och priser bekräftas per evenemang."
     },
-    "timeline": {
-      "ariaLabel": "Tidslinje för turneringsstart",
-      "kicker": "MÄSTERSKAPETS FÄRDPLAN",
-      "title": "TIDSLINJE FÖR TURNERINGSSTART",
-      "stageLabel": "Steg {id}",
-      "stages": {
-        "registrations": {
-          "title": "Öppen registrering",
-          "state": "FÖRHANDSVISNING"
-        },
-        "calibration": {
-          "title": "Regionala kalibreringsslutspel",
-          "state": "LÅST"
-        },
-        "quarterFinals": {
-          "title": "Elite Pro-kvartsfinaler",
-          "state": "LÅST"
-        },
-        "finals": {
-          "title": "Grand Apex-final",
-          "state": "LÅST"
-        }
-      },
-      "disclaimer": "Steg 01 öppnar först när registreringen startar. Steg 02–04 följer. Prispotter bekräftas på evenemangssidan när de tillkännages."
-    },
     "bracket": {
       "kicker": "Utslagning med 100 lag · kommer snart",
       "title": "Slutspelsmatris för 100 lag",

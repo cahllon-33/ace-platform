@@ -1,7 +1,7 @@
 import type { TextBag } from "../types";
 
 export const ranks: TextBag["ranks"] = {
-  rpRules: {
+  "rpRules": {
     "kicker": "A.C.E RATING POINTS SZABÁLYOK",
     "title": "Így változnak a Rating Points",
     "lede": "Szabályverzió: {version}. Minden új játékos {start} RP-vel kezd a 3. szinten, {tier}. A létra szándékosan lassú: a középső fölötti minden szint több győzelmet kíván, mint az előző.",
@@ -46,29 +46,29 @@ export const ranks: TextBag["ranks"] = {
     "ex4": "Átlagosan 200 RP-vel gyengébb csapat ellen a győzelem +{weakWin}-et ad, a vereség −{weakLoss}-be kerül.",
     "note": "Ezeket a számokat ugyanaz a kód számolja, amely egy ellenőrzött meccseredményt alkalmaz. Ezek példák, nem tárolt meccsek."
   },
-  premiumCodex: {
+  "premiumCodex": {
     "kicker": "PRÉMIUM RANGKÓDEX",
     "title": "Prémium rangkódex",
     "lede": "Tíz illusztrált kristályembléma, rangonként egy. Ez kozmetikai profilművészet ugyanazon a Rating Points létrán, mint a standard rangok. Nem változtat a ratingen, a párosításon és a sorban álláson.",
     "cosmetic": "Kozmetikai művészet · ugyanaz az RP-létra · csak A.C.E Premium 7 $/hó",
     "imgAlt": "{name} prémium rangművészet, {level}. szint"
   },
-  premiumRanks: {
-    kicker: "PRÉMIUM RANGOK",
-    plan: "A.C.E PREMIUM · csak 7 $/hó",
-    title: "Prémium ranggrafika",
-    lede: "Az eredeti illusztrált A.C.E. rangkészlet: tíz kristályembléma III/II/I divíziókkal, az értékelési protokoll, a Legend részletkártya és a húzással forgatható 3D nézegető. Ez profilgrafika a Premium tagoknak. Ugyanazt a Rating Points létrát olvassa, mint a standard rangok, és semmilyen versenyelőnyt nem ad.",
-    demo: "Demóértékek: a táblán látható haladás, győzelmi arány és divízió minták, nem élő statisztikák. Bejelentkezve a megjelenített értékelés a tárolt értékelésed.",
-    locked: "Hamarosan: fizetés még nincs, így ma egyetlen fiók sem Premium. A szerver csak akkor alkalmaz prémium ranggrafikát egy profilra, ha a tárolt csomagja Premium.",
-    standardKicker: "STANDARD RANGOK",
-    standardNote: "Minden fiók ezeket a 3D vektoros emblémákat viseli.",
-    legendTag: "PREMIUM",
-    pickerTitle: "Ranggrafika a profilodon",
-    pickerStandard: "Standard",
-    pickerPremium: "Prémium",
-    pickerLocked: "A prémium ranggrafika az A.C.E Premiumhoz tartozik (7 $/hó). Hamarosan: fizetés még nincs.",
-    pickerSaved: "Mentve.",
-    pickerFailed: "Nincs mentve. A prémium ranggrafikához A.C.E Premium kell.",
+  "premiumRanks": {
+    "kicker": "PRÉMIUM RANGOK",
+    "plan": "A.C.E PREMIUM · csak 7 $/hó",
+    "title": "Prémium ranggrafika",
+    "lede": "Az eredeti illusztrált A.C.E. rangkészlet: tíz kristályembléma III/II/I divíziókkal, az értékelési protokoll, a Legend részletkártya és a húzással forgatható 3D nézegető. Ez profilgrafika a Premium tagoknak. Ugyanazt a Rating Points létrát olvassa, mint a standard rangok, és semmilyen versenyelőnyt nem ad.",
+    "demo": "Demóértékek: a táblán látható haladás, győzelmi arány és divízió minták, nem élő statisztikák. Bejelentkezve a megjelenített értékelés a tárolt értékelésed.",
+    "locked": "Hamarosan: fizetés még nincs, így ma egyetlen fiók sem Premium. A szerver csak akkor alkalmaz prémium ranggrafikát egy profilra, ha a tárolt csomagja Premium.",
+    "standardKicker": "STANDARD RANGOK",
+    "standardNote": "Minden fiók ezeket a 3D vektoros emblémákat viseli.",
+    "legendTag": "PREMIUM",
+    "pickerTitle": "Ranggrafika a profilodon",
+    "pickerStandard": "Standard",
+    "pickerPremium": "Prémium",
+    "pickerLocked": "A prémium ranggrafika az A.C.E Premiumhoz tartozik (7 $/hó). Hamarosan: fizetés még nincs.",
+    "pickerSaved": "Mentve.",
+    "pickerFailed": "Nincs mentve. A prémium ranggrafikához A.C.E Premium kell."
   },
   "meta": {
     "title": "Versenyrangok",
@@ -142,10 +142,7 @@ export const ranks: TextBag["ranks"] = {
   "card": {
     "rank": "{level}. rang",
     "targetWinRate": "{winRate} cél győzelmi arány",
-    "calibrationTarget": "Kalibrációs cél",
-    "floor": "Alsó határ",
-    "samplesNote": "Célszámok minden szinthez.",
-    "progressMockup": "Haladás"
+    "floor": "Alsó határ"
   },
   "turntable": {
     "stageLabel": "{name} orbitális embléma. Húzd a forgatáshoz.",

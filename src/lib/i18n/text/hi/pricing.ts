@@ -1,7 +1,7 @@
 import type { TextBag } from "../types";
 
 export const pricing: TextBag["pricing"] = {
-  matrix: {
+  "matrix": {
     "kicker": "फ़ीचर मैट्रिक्स",
     "title": "सदस्यता तुलना",
     "note": "सुनहरा टिक: शामिल। डैश: शामिल नहीं। जल्द आ रहा है: प्लान का हिस्सा, पर अभी जारी नहीं। कोई भी प्लान रेटिंग, मैचमेकिंग या कतार प्राथमिकता नहीं खरीदता।",
@@ -26,13 +26,13 @@ export const pricing: TextBag["pricing"] = {
       "advantage": "रेटिंग बूस्ट, मैचमेकिंग या कतार लाभ"
     }
   },
-  plansR11: {
+  "plansR11": {
     "termsPlusStats": "खिलाड़ी आँकड़े: दर्ज मैचों से आपकी रेटिंग में बदलाव का ग्राफ़। हेडशॉट % और सटीकता गेज जल्द आ रहे हैं।",
     "codexTitle": "Premium रैंक कोडेक्स और एनिमेटेड कार्ड",
     "codexBody": "यह वह रैंक आर्ट और एनिमेटेड प्रोफ़ाइल कार्ड है जो Premium में शामिल है। यह उसी Rating Points सीढ़ी पर कॉस्मेटिक आर्ट है और कोई प्रतिस्पर्धी लाभ नहीं देता।",
     "codexLink": "Premium रैंक कोडेक्स खोलें"
   },
-  premiumExtras: {
+  "premiumExtras": {
     "card": {
       "previewTag": "पूर्वावलोकन",
       "previewNote": "एनिमेटेड Premium प्रोफ़ाइल कार्ड का पूर्वावलोकन। नाम और मान नमूने हैं। असली प्रोफ़ाइल यह कार्ड तभी दिखाती है जब उसका संग्रहीत प्लान Premium हो।",
@@ -40,8 +40,7 @@ export const pricing: TextBag["pricing"] = {
       "seal": "ELITE मुहर",
       "rank": "रैंक",
       "rating": "रेटिंग",
-      "sampleName": "नमूना खिलाड़ी",
-      "ownTitle": "आपका Premium प्रोफ़ाइल कार्ड"
+      "sampleName": "नमूना खिलाड़ी"
     },
     "analysis": {
       "metaTitle": "विस्तारित मैच विश्लेषण",
@@ -164,7 +163,6 @@ export const pricing: TextBag["pricing"] = {
     "title": "सदस्यता तुलना",
     "note": "हर पंक्ति आज की साइट दर्शाती है। चेकआउट जल्द आ रहा है, और सशुल्क प्लान कभी कतार नहीं खोलता या बढ़त नहीं खरीदता।",
     "caption": "आज साइट क्या करती है, उसके अनुसार Free, Plus और Premium की तुलना",
-    "includedToday": "आज शामिल",
     "columns": {
       "free": "Free",
       "plus": "Plus",

@@ -59,22 +59,7 @@ export const features: TextBag["features"] = {
     "kicker": "Cosmetice · în curând",
     "title": "ARHITECTURA LOOT A.C.E. — DROPURI DE ARME",
     "lede": "Finisaje A.C.E. originale, sosesc odată cu magazinul. Cosmeticele nu afectează niciodată competiția.",
-    "mockDrop": "În curând",
-    "multiplierLabel": "Cerințe pentru multiplicatorul ratei de victorii",
-    "ladderLabel": "Dropuri săptămânale din clasament",
-    "multiplierValue": "Șablon {multiplier}×",
-    "ladderValue": "Slot săptămânal · în curând",
     "checkout": "Plată · în curând"
-  },
-  "communityRail": {
-    "kicker": "Flux · în curând",
-    "newsTitle": "Ultimele știri din clasament",
-    "newsItems": [
-      "Tabloul rămâne gol — 0 din 100 de echipe.",
-      "Căutarea ranked rămâne închisă până există anti-cheat."
-    ],
-    "prizesTitle": "Premii zilnice cu skinuri",
-    "prizesBody": "Recompensele și plata se deschid odată cu Sezonul 1."
   },
   "identityPreview": {
     "badge": "Previzualizare — neconfirmat",

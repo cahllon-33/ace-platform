@@ -1,13 +1,13 @@
 import type { TextBag } from "../types";
 
 export const play: TextBag["play"] = {
-  premium: {
+  "premium": {
     "tag": "PREMIUM",
     "sample": "PREMIUM-EXEMPEL",
     "note": "Platser märkta Premium-exempel visar den illustrerade Premium-rankbilden endast som visning. Det är exempelspelare, inte prenumeranter. Premium-bilden är rent kosmetisk och ändrar aldrig rating eller matchning.",
     "artAlt": "Illustrerad Premium-rankbild {rank}"
   },
-  room: {
+  "room": {
     "showcaseTag": "VISNING · Exempelspelare, ingen livematch. Kön är stängd.",
     "showcaseShort": "VISNING",
     "queueClosed": "KÖN STÄNGD",
@@ -78,7 +78,6 @@ export const play: TextBag["play"] = {
   "arena": {
     "ariaLabel": "Förhandsvisning av matchrum",
     "captain": "Kapten",
-    "ping": "Ping {ping}",
     "mapPlates": "Kartbilder",
     "selectMap": "Välj {map}",
     "settings": {
@@ -127,5 +126,5 @@ export const play: TextBag["play"] = {
       ]
     },
     "findMatchReason": "Matchning öppnar med tävlingsbetan. Rankade köer körs inte ännu."
-  },
+  }
 };

@@ -1,77 +1,58 @@
 import type { TextBag } from "../types";
 
 export const leaderboard: TextBag["leaderboard"] = {
-  meta: {
-    title: "Classement",
-    description:
-      "Tableau compétitif A.C.E. Les comptes Steam enregistrés apparaissent en premier. Les places vides restent des lignes de vitrine.",
+  "meta": {
+    "title": "Classement",
+    "description": "Tableau compétitif A.C.E. Les comptes Steam enregistrés apparaissent en premier. Les places vides restent des lignes de vitrine."
   },
-  hero: {
-    kicker: "CLASSEMENT",
-    title: "Tableau compétitif",
-    note: "Tant que les joueurs n'ont pas lié Steam et obtenu un classement, ce tableau affiche des places de vitrine. Leur pays et leur arme mise en avant sont illustratifs. Les rendus d'armes sont des créations originales du studio A.C.E., pas des skins Valve. Les éliminations ne sont pas encore enregistrées : l'arme mise en avant n'est donc pas une statistique de meilleur fragger.",
+  "hero": {
+    "kicker": "CLASSEMENT",
+    "title": "Tableau compétitif",
+    "note": "Tant que les joueurs n'ont pas lié Steam et obtenu un classement, ce tableau affiche des places de vitrine. Leur pays et leur arme mise en avant sont illustratifs. Les rendus d'armes sont des créations originales du studio A.C.E., pas des skins Valve. Les éliminations ne sont pas encore enregistrées : l'arme mise en avant n'est donc pas une statistique de meilleur fragger."
   },
-  facts: {
-    seats: "Places",
-    storedAccounts: "Comptes enregistrés",
-    killsStored: "Éliminations enregistrées",
-    none: "Aucune",
+  "facts": {
+    "seats": "Places",
+    "storedAccounts": "Comptes enregistrés",
+    "killsStored": "Éliminations enregistrées",
+    "none": "Aucune"
   },
-  empty: "Aucune place de vitrine ne correspond à ce nom.",
-  podiumLabel: "Trois premières places",
-  boardLabel: "Tableau compétitif",
-  table: {
-    rank: "Rang",
-    player: "Joueur",
-    country: "Pays",
-    tier: "Palier",
-    leadWeapon: "Arme principale",
-    rating: "Cote",
+  "empty": "Aucune place de vitrine ne correspond à ce nom.",
+  "podiumLabel": "Trois premières places",
+  "boardLabel": "Tableau compétitif",
+  "table": {
+    "rank": "Rang",
+    "player": "Joueur",
+    "country": "Pays",
+    "tier": "Palier",
+    "leadWeapon": "Arme principale",
+    "rating": "Cote"
   },
-  tags: {
-    stored: "Compte enregistré",
-    showcase: "Vitrine",
+  "tags": {
+    "stored": "Compte enregistré",
+    "showcase": "Vitrine"
   },
-  weapon: {
-    sampleRender: "Arme emblématique",
-    notStored: "Non enregistré",
-    noKillSaved: "Aucune élimination enregistrée",
-    alt: "{name}",
+  "weapon": {
+    "sampleRender": "Arme emblématique",
+    "notStored": "Non enregistré",
+    "noKillSaved": "Aucune élimination enregistrée",
+    "alt": "{name}"
   },
-  countries: {
-    il: "Israël",
-    us: "États-Unis",
-    de: "Allemagne",
-    ua: "Ukraine",
-    se: "Suède",
-    fr: "France",
-    pl: "Pologne",
-    br: "Brésil",
-    jp: "Japon",
-    kr: "Corée du Sud",
+  "countries": {
+    "il": "Israël",
+    "us": "États-Unis",
+    "de": "Allemagne",
+    "ua": "Ukraine",
+    "se": "Suède",
+    "fr": "France",
+    "pl": "Pologne",
+    "br": "Brésil",
+    "jp": "Japon",
+    "kr": "Corée du Sud"
   },
-  search: {
-    openLabel: "Ouvrir la recherche de joueurs",
-    srLabel: "Rechercher dans le classement",
-    fieldLabel: "Rechercher des joueurs",
-    placeholder: "Nom d'affichage",
-  },
-  seasonPreview: {
-    banner: "CLASSEMENT SAISON 1",
-    noteLive:
-      "Les noms liés à Steam sont des comptes A.C.E. Le K/D apparaîtra quand les serveurs de match enregistreront les éliminations.",
-    noteSample:
-      "Les résultats de la Saison 1 apparaîtront ici au fil des matchs classés.",
-  },
-  playerCard: {
-    kicker: "Aperçu de la carte joueur",
-    title: "Dossier de l'opérateur",
-    badge: "Premium",
-    note: "Votre carte affichera de vrais chiffres à l'ouverture du matchmaking classé.",
-    currentRank: "Rang actuel",
-    rankValue: "A.C.E. Legend (Division I)",
-    competitiveRating: "Classement compétitif",
-    seasonRank: "Rang de saison",
-    seasonTop: "(Top {percent})",
-  },
+  "search": {
+    "openLabel": "Ouvrir la recherche de joueurs",
+    "srLabel": "Rechercher dans le classement",
+    "fieldLabel": "Rechercher des joueurs",
+    "placeholder": "Nom d'affichage"
+  }
 };

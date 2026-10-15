@@ -1,7 +1,7 @@
 import type { TextBag } from "../types";
 
 export const home: TextBag["home"] = {
-  ops: {
+  "ops": {
     "identityKicker": "아이덴티티 허브",
     "signedOutTitle": "Steam으로 로그인",
     "signedOutBody": "공식 Steam OpenID로 연결하면 여기에서 Steam 아바타, 랭크 엠블럼, Rating Points를 볼 수 있습니다. A.C.E.는 Steam 비밀번호를 절대 요구하지 않습니다.",
@@ -38,135 +38,138 @@ export const home: TextBag["home"] = {
     "statsLive": "승패는 저장된 A.C.E. 계정에서 가져옵니다.",
     "statsLink": "플레이어 통계 열기"
   },
-  meta: {
-    title: "A.C.E. — CS2 경쟁 플랫폼",
-    description:
-      "A.C.E.는 플레이어 신원, 캘리브레이션, 팀, 토너먼트를 위한 Counter-Strike 2 경쟁 플랫폼으로 계획되어 있습니다. 이 공개 웹사이트는 미리보기입니다. 랭크 매치메이킹, 안티치트, 결제, 상금은 작동하지 않습니다.",
+  "meta": {
+    "title": "A.C.E. — CS2 경쟁 플랫폼",
+    "description": "A.C.E.는 플레이어 신원, 캘리브레이션, 팀, 토너먼트를 위한 Counter-Strike 2 경쟁 플랫폼으로 계획되어 있습니다. 이 공개 웹사이트는 미리보기입니다. 랭크 매치메이킹, 안티치트, 결제, 상금은 작동하지 않습니다."
   },
-  opening: {
-    dialogLabel: "A.C.E. 오프닝",
-    line: "A.C.E: 자율 안티치트, 경쟁 캘리브레이션, 엘리트 플레이어",
-    enter: "사이트 입장",
+  "opening": {
+    "dialogLabel": "A.C.E. 오프닝",
+    "line": "A.C.E: 자율 안티치트, 경쟁 캘리브레이션, 엘리트 플레이어",
+    "enter": "사이트 입장"
   },
-  hero: {
-    logoAlt: "A.C.E. 자율 안티치트, 경쟁 캘리브레이션, 엘리트 플레이어",
-    arenaAlt:
-      "A.C.E. 아레나 플레이트. 독창적인 무대 이미지이며 Valve 아트워크가 아닙니다. 화면에는 게임 텔레비전이라고 표시되어 있습니다. 실시간 방송은 꺼져 있습니다.",
+  "hero": {
+    "logoAlt": "A.C.E. 자율 안티치트, 경쟁 캘리브레이션, 엘리트 플레이어",
+    "arenaAlt": "A.C.E. 아레나 플레이트. 독창적인 무대 이미지이며 Valve 아트워크가 아닙니다. 화면에는 게임 텔레비전이라고 표시되어 있습니다. 실시간 방송은 꺼져 있습니다."
   },
-  broadcast: {
-    kicker: "토너먼트 시청",
-    title: "방송 데스크",
-    lede: "경쟁 맵 풀이 이 데스크에 놓여 있습니다: Dust II, Mirage, Inferno, Nuke, Ancient, Anubis, Train. 모두 독창적인 플레이트입니다. 방송 중인 토너먼트는 없으며, 이 페이지는 Valve 매치를 재생하지 않습니다.",
-    offAir: "방송 중 아님 · {map}",
+  "broadcast": {
+    "kicker": "토너먼트 시청",
+    "title": "방송 데스크",
+    "lede": "경쟁 맵 풀이 이 데스크에 놓여 있습니다: Dust II, Mirage, Inferno, Nuke, Ancient, Anubis, Train. 모두 독창적인 플레이트입니다. 방송 중인 토너먼트는 없으며, 이 페이지는 Valve 매치를 재생하지 않습니다.",
+    "offAir": "방송 중 아님 · {map}"
   },
-  jumpNav: {
-    label: "홈 카테고리",
-    play: "플레이",
-    prizes: "상품",
-    teams: "팀",
-    leaderboard: "리더보드",
-    ranks: "랭크",
-    systems: "시스템",
+  "jumpNav": {
+    "label": "홈 카테고리",
+    "play": "플레이",
+    "prizes": "상품",
+    "teams": "팀",
+    "leaderboard": "리더보드",
+    "ranks": "랭크",
+    "systems": "시스템"
   },
-  charter: {
-    kicker: "마스터 로비 작업 공간",
-    title: "A.C.E. 경쟁 매치메이킹 로비 및 배정 센터",
-    badge: "서버 · 곧 출시",
-    lede: "이 로비는 서버를 배정하지 않고, 안티치트 클라이언트를 시작하지 않으며, 상금을 지급하지 않습니다.",
-    modules: [
+  "charter": {
+    "kicker": "마스터 로비 작업 공간",
+    "title": "A.C.E. 경쟁 매치메이킹 로비 및 배정 센터",
+    "badge": "서버 · 곧 출시",
+    "lede": "이 로비는 서버를 배정하지 않고, 안티치트 클라이언트를 시작하지 않으며, 상금을 지급하지 않습니다.",
+    "modules": [
       {
-        kicker: "매치 성사 · 5v5",
-        copy: "이 페이지의 5v5 프레임은 닫힌 대기열입니다. 서버를 배정하지 않습니다.",
-        chips: ["128틱 서버 없음", "대기열 닫힘"],
+        "kicker": "매치 성사 · 5v5",
+        "copy": "이 페이지의 5v5 프레임은 닫힌 대기열입니다. 서버를 배정하지 않습니다.",
+        "chips": [
+          "128틱 서버 없음",
+          "대기열 닫힘"
+        ]
       },
       {
-        kicker: "고정 3D 랭크",
-        copy: "Recruit부터 A.C.E. Legend까지 10개 티어. 저장된 레이팅은 Steam 로그인 후 표시됩니다. 이 페이지는 매치 결과를 적용하지 않습니다.",
-        chips: ["레이팅 규칙 문서화됨", "이 페이지의 턴테이블"],
+        "kicker": "고정 3D 랭크",
+        "copy": "Recruit부터 A.C.E. Legend까지 10개 티어. 저장된 레이팅은 Steam 로그인 후 표시됩니다. 이 페이지는 매치 결과를 적용하지 않습니다.",
+        "chips": [
+          "레이팅 규칙 문서화됨",
+          "이 페이지의 턴테이블"
+        ]
       },
       {
-        kicker: "스킨 보상",
-        copy: "챔피언십 보상은 대회마다 발표됩니다.",
-        chips: ["지급되는 아이템 없음", "드롭 검사 없음"],
-      },
-    ],
+        "kicker": "스킨 보상",
+        "copy": "챔피언십 보상은 대회마다 발표됩니다.",
+        "chips": [
+          "지급되는 아이템 없음",
+          "드롭 검사 없음"
+        ]
+      }
+    ]
   },
-  identity: {
-    profilePlaceholder: "[플레이어_프로필]",
-    notAvailable: "없음",
-    elite: "엘리트",
+  "identity": {
+    "elite": "엘리트"
   },
-  membership: {
-    compareLink: "전체 비교표 보기",
+  "membership": {
+    "compareLink": "전체 비교표 보기"
   },
-  loot: {
-    exampleCard: "곧 출시",
-    wear: {
-      factoryNew: "공장 출고",
-      minimalWear: "약간의 사용감",
+  "loot": {
+    "wear": {
+      "factoryNew": "공장 출고",
+      "minimalWear": "약간의 사용감"
+    }
+  },
+  "serverHub": {
+    "badge": "게임 서버 · 곧 출시",
+    "nodes": {
+      "fra": "프랑크푸르트 엣지",
+      "sto": "스톡홀름 코어",
+      "tlv": "텔아비브 릴레이"
     },
+    "tileAria": "{name}. 서버 곧 출시.",
+    "note": "128틱 지역 서버는 경쟁 베타와 함께 제공됩니다."
   },
-  serverHub: {
-    badge: "게임 서버 · 곧 출시",
-    nodes: {
-      fra: "프랑크푸르트 엣지",
-      sto: "스톡홀름 코어",
-      tlv: "텔아비브 릴레이",
-    },
-    tileAria: "{name}. 서버 곧 출시.",
-    tileSample: "곧 출시 · {sample}",
-    note: "128틱 지역 서버는 경쟁 베타와 함께 제공됩니다.",
-  },
-  telemetry: {
-    badge: "미리보기 · 곧 출시",
-    lines: [
+  "telemetry": {
+    "badge": "미리보기 · 곧 출시",
+    "lines": [
       "A.C.E SHIELD: 개발 중",
       "하드웨어 차단 매트릭스: 식별자를 수집하지 않음",
-      "A.C.E. 실드 링크: 설치된 클라이언트 없음",
+      "A.C.E. 실드 링크: 설치된 클라이언트 없음"
     ],
-    note: "이 웹사이트는 커널 클라이언트를 실행하지 않고, 메모리를 검사하지 않으며, 하드웨어 차단을 내리지 않습니다.",
+    "note": "이 웹사이트는 커널 클라이언트를 실행하지 않고, 메모리를 검사하지 않으며, 하드웨어 차단을 내리지 않습니다."
   },
-  comingSoon: {
-    badge: "이용 불가",
-    body: "A.C.E. 데스크톱 클라이언트는 다운로드로 제공되지 않습니다. 이 웹사이트의 시즌 1은 소프트웨어를 설치하거나 체크인을 열지 않습니다.",
+  "comingSoon": {
+    "badge": "이용 불가",
+    "body": "A.C.E. 데스크톱 클라이언트는 다운로드로 제공되지 않습니다. 이 웹사이트의 시즌 1은 소프트웨어를 설치하거나 체크인을 열지 않습니다."
   },
-  operative: {
-    kicker: "시네마틱 전술 뷰포트 · 독창적인 CSS 환경 · Valve 아트 아님",
-    title: "CS2를 더 깊이: 궁극의 경쟁 플랫폼",
-    lede: "더 공정한 매치, 더 나은 팀원. 의미 있는 랭크, 가치 있는 보상.",
-    note: "캠페인 문구입니다. 랭크 대기열, 실시간 서버, 상금은 작동하지 않습니다.",
-    hudLeft: "CT — A 사이트",
-    hudRight: "T — 미드 압박",
-    hudCenter: "스쿼드 환경",
-    plannedReason: "실제 안티치트 연동이 구현되고 검증되기 전까지 랭크 플레이는 닫혀 있습니다.",
+  "operative": {
+    "kicker": "시네마틱 전술 뷰포트 · 독창적인 CSS 환경 · Valve 아트 아님",
+    "title": "CS2를 더 깊이: 궁극의 경쟁 플랫폼",
+    "lede": "더 공정한 매치, 더 나은 팀원. 의미 있는 랭크, 가치 있는 보상.",
+    "note": "캠페인 문구입니다. 랭크 대기열, 실시간 서버, 상금은 작동하지 않습니다.",
+    "hudLeft": "CT — A 사이트",
+    "hudRight": "T — 미드 압박",
+    "hudCenter": "스쿼드 환경",
+    "plannedReason": "실제 안티치트 연동이 구현되고 검증되기 전까지 랭크 플레이는 닫혀 있습니다."
   },
-  howStatus: {
-    label: "A.C.E. 등록 하위 시스템 — 캘리브레이션 엔진 준비됨",
-    note: "랭크 대기열은 A.C.E Shield와 캘리브레이션이 가동되면 열립니다.",
+  "howStatus": {
+    "label": "A.C.E. 등록 하위 시스템 — 캘리브레이션 엔진 준비됨",
+    "note": "랭크 대기열은 A.C.E Shield와 캘리브레이션이 가동되면 열립니다."
   },
-  shell: {
-    primaryNav: "주 메뉴",
-    mobileNav: "모바일 메뉴",
-    elite: "엘리트",
-    notificationsTitle: "알림 · 곧 출시",
-    notificationsAria: "알림. 읽지 않은 알림 0건.",
-    connectProfileTitle: "프로필 연결",
-    openProfileAria: "커맨드 덱 프로필 열기",
-    connectProfileAria: "Steam OpenID로 프로필 연결",
-    signOutAria: "A.C.E.에서 로그아웃",
+  "shell": {
+    "primaryNav": "주 메뉴",
+    "mobileNav": "모바일 메뉴",
+    "elite": "엘리트",
+    "notificationsTitle": "알림 · 곧 출시",
+    "notificationsAria": "알림. 읽지 않은 알림 0건.",
+    "connectProfileTitle": "프로필 연결",
+    "openProfileAria": "커맨드 덱 프로필 열기",
+    "connectProfileAria": "Steam OpenID로 프로필 연결",
+    "signOutAria": "A.C.E.에서 로그아웃"
   },
-  notFound: {
-    kicker: "그리드 예외",
-    title: "오류 404 — 레이더 텔레메트리 손실",
-    body: "요청한 좌표는 활성 서버 그리드에 존재하지 않습니다.",
-    homeAria: "A.C.E. 홈페이지 로비로 돌아가기",
-    cta: "로비로 돌아가기",
+  "notFound": {
+    "kicker": "그리드 예외",
+    "title": "오류 404 — 레이더 텔레메트리 손실",
+    "body": "요청한 좌표는 활성 서버 그리드에 존재하지 않습니다.",
+    "homeAria": "A.C.E. 홈페이지 로비로 돌아가기",
+    "cta": "로비로 돌아가기"
   },
-  error: {
-    kicker: "오류",
-    title: "문제가 발생했습니다",
-    body: "이 공개 페이지를 표시할 수 없습니다. 다시 시도할 수 있습니다. 이 미리보기 웹사이트에서는 계정 데이터를 요청하지 않았습니다.",
-    retryAria: "이 페이지 새로고침",
-    retry: "다시 시도",
-  },
+  "error": {
+    "kicker": "오류",
+    "title": "문제가 발생했습니다",
+    "body": "이 공개 페이지를 표시할 수 없습니다. 다시 시도할 수 있습니다. 이 미리보기 웹사이트에서는 계정 데이터를 요청하지 않았습니다.",
+    "retryAria": "이 페이지 새로고침",
+    "retry": "다시 시도"
+  }
 };

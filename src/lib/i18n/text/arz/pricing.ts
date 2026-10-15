@@ -1,7 +1,7 @@
 import type { TextBag } from "../types";
 
 export const pricing: TextBag["pricing"] = {
-  matrix: {
+  "matrix": {
     "kicker": "مصفوفة الميزات",
     "title": "مقارنة الاشتراكات",
     "note": "علامة دهبي: موجود. شَرطة: مش موجود. قريب: جزء من الخطة بس لسه منزلش. مفيش خطة بتشتري تقييم أو ماتشميكينج أو أولوية في الطابور.",
@@ -26,13 +26,13 @@ export const pricing: TextBag["pricing"] = {
       "advantage": "رفع تقييم أو ميزة في الماتشميكينج أو الطابور"
     }
   },
-  plansR11: {
+  "plansR11": {
     "termsPlusStats": "إحصائيات اللاعب: رسم تغيّر تقييمك من الماتشات المتسجلة. مؤشرات نسبة الهيدشوت والدقة قريب.",
     "codexTitle": "كتالوج الرتب المميزة والكارت المتحرك",
     "codexBody": "ده فن الرتب وكارت البروفايل المتحرك اللي في Premium. فن للشكل بس على نفس سلّم Rating Points ومش بيدي أي ميزة تنافسية.",
     "codexLink": "افتح كتالوج الرتب المميزة"
   },
-  premiumExtras: {
+  "premiumExtras": {
     "card": {
       "previewTag": "معاينة",
       "previewNote": "معاينة لكارت بروفايل Premium المتحرك. الاسم والأرقام أمثلة. البروفايل الحقيقي بيظهر الكارت ده بس لما تكون خطته المتخزنة Premium.",
@@ -40,8 +40,7 @@ export const pricing: TextBag["pricing"] = {
       "seal": "ختم ELITE",
       "rank": "الرتبة",
       "rating": "التقييم",
-      "sampleName": "لاعب تجريبي",
-      "ownTitle": "كارت بروفايلك في Premium"
+      "sampleName": "لاعب تجريبي"
     },
     "analysis": {
       "metaTitle": "تحليل ماتش موسّع",
@@ -164,7 +163,6 @@ export const pricing: TextBag["pricing"] = {
     "title": "مقارنة العضويات",
     "note": "كل صف يعكس حالة الموقع اليوم. الدفع قريبًا، والخطة المدفوعة لا تفتح قائمة انتظار ولا تشتري أفضلية أبدًا.",
     "caption": "مقارنة بين المجانية وPlus وPremium وفق ما يقدمه الموقع اليوم",
-    "includedToday": "المشمول اليوم",
     "columns": {
       "free": "المجانية",
       "plus": "Plus",

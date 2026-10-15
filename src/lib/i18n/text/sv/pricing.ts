@@ -1,7 +1,7 @@
 import type { TextBag } from "../types";
 
 export const pricing: TextBag["pricing"] = {
-  matrix: {
+  "matrix": {
     "kicker": "FUNKTIONSMATRIS",
     "title": "Jämförelse av medlemskap",
     "note": "Guldbock: ingår. Streck: ingår inte. Kommer snart: del av planen men inte släppt än. Ingen plan köper rating, matchmaking eller köprioritet.",
@@ -26,13 +26,13 @@ export const pricing: TextBag["pricing"] = {
       "advantage": "Ratingboost, matchmaking- eller köfördel"
     }
   },
-  plansR11: {
+  "plansR11": {
     "termsPlusStats": "Spelarstatistik: graf över ratingutvecklingen från registrerade matcher. Mätare för headshot-% och träffsäkerhet kommer snart.",
     "codexTitle": "Premium-rankkodex och animerat kort",
     "codexBody": "Detta är rankkonsten och det animerade profilkortet som ingår i Premium. Det är kosmetisk konst på samma Rating Points-stege och ger ingen tävlingsfördel.",
     "codexLink": "Öppna Premium-rankkodexen"
   },
-  premiumExtras: {
+  "premiumExtras": {
     "card": {
       "previewTag": "FÖRHANDSVISNING",
       "previewNote": "Förhandsvisning av det animerade Premium-profilkortet. Namn och värden är exempel. En riktig profil visar kortet bara när dess sparade plan är Premium.",
@@ -40,8 +40,7 @@ export const pricing: TextBag["pricing"] = {
       "seal": "ELITE-SIGILL",
       "rank": "Rank",
       "rating": "Rating",
-      "sampleName": "Exempelspelare",
-      "ownTitle": "Ditt Premium-profilkort"
+      "sampleName": "Exempelspelare"
     },
     "analysis": {
       "metaTitle": "Utökad matchanalys",
@@ -164,7 +163,6 @@ export const pricing: TextBag["pricing"] = {
     "title": "Jämförelse av medlemskap",
     "note": "Varje rad speglar webbplatsen i dag. Betalning kommer snart, och en betald plan öppnar aldrig en kö eller köper en fördel.",
     "caption": "Free, Plus och Premium jämförda utifrån vad webbplatsen gör i dag",
-    "includedToday": "Ingår i dag",
     "columns": {
       "free": "Free",
       "plus": "Plus",

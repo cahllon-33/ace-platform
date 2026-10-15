@@ -1,7 +1,7 @@
 import type { TextBag } from "../types";
 
 export const home: TextBag["home"] = {
-  ops: {
+  "ops": {
     "identityKicker": "身份中心",
     "signedOutTitle": "使用 Steam 登录",
     "signedOutBody": "通过官方 Steam OpenID 连接，即可在此查看你的 Steam 头像、段位徽章和 Rating Points。A.C.E. 从不索要 Steam 密码。",
@@ -99,15 +99,12 @@ export const home: TextBag["home"] = {
     ]
   },
   "identity": {
-    "profilePlaceholder": "[Player_Profile]",
-    "notAvailable": "不适用",
     "elite": "精英"
   },
   "membership": {
     "compareLink": "查看完整对比表"
   },
   "loot": {
-    "exampleCard": "即将推出",
     "wear": {
       "factoryNew": "Factory New",
       "minimalWear": "Minimal Wear"
@@ -121,7 +118,6 @@ export const home: TextBag["home"] = {
       "tlv": "Tel Aviv Relay"
     },
     "tileAria": "{name}。服务器即将推出。",
-    "tileSample": "即将推出 · {sample}",
     "note": "128 Tick 区域服务器将随竞技测试版推出。"
   },
   "telemetry": {

@@ -1,7 +1,7 @@
 import type { TextBag } from "../types";
 
 export const ranks: TextBag["ranks"] = {
-  rpRules: {
+  "rpRules": {
     "kicker": "A.C.E RATING POINTS -SÄÄNNÖT",
     "title": "Näin Rating Points muuttuvat",
     "lede": "Sääntöversio {version}. Jokainen uusi pelaaja aloittaa {start} RP:llä tasolta 3, {tier}. Tikkaat ovat tarkoituksella hitaat: jokainen keskikohdan yläpuolinen taso vaatii enemmän voittoja kuin edellinen.",
@@ -46,29 +46,29 @@ export const ranks: TextBag["ranks"] = {
     "ex4": "Joukkuetta vastaan, jonka keskiarvo on 200 RP sinua matalampi, voitto tuo +{weakWin} ja tappio maksaa −{weakLoss}.",
     "note": "Luvut laskee sama koodi, joka soveltaa vahvistetun ottelutuloksen. Ne ovat esimerkkejä, eivät tallennettuja otteluita."
   },
-  premiumCodex: {
+  "premiumCodex": {
     "kicker": "PREMIUM-ARVOMERKKIKOODEKSI",
     "title": "Premium-arvomerkkikoodeksi",
     "lede": "Kymmenen kuvitettua kristallitunnusta, yksi kutakin arvoa kohden. Tämä on kosmeettista profiilitaidetta samalla Rating Points -tikkaalla kuin vakioarvot. Se ei muuta reittausta, ottelunhakua eikä jonoa.",
     "cosmetic": "Kosmeettinen taide · sama RP-tikas · vain A.C.E Premium 7 $/kk",
     "imgAlt": "{name} Premium-arvomerkkitaide, taso {level}"
   },
-  premiumRanks: {
-    kicker: "PREMIUM-ARVOT",
-    plan: "A.C.E PREMIUM · vain 7 $/kk",
-    title: "Premium-arvokuvitus",
-    lede: "Alkuperäinen kuvitettu A.C.E.-arvosarja: kymmenen kristallitunnusta divisioonilla III/II/I, luokitusprotokolla, Legend-tietokortti ja vetämällä pyöritettävä 3D-katselin. Se on profiilikuvitus Premium-jäsenille. Se lukee samoja Rating Points -tikkaita kuin vakioarvot eikä anna kilpailuetua.",
-    demo: "Demoarvot: taulun edistyminen, voittoprosentti ja divisioonat ovat esimerkkejä, eivät reaaliaikaisia tilastoja. Kirjautuneena näytetty luokitus on tallennettu luokituksesi.",
-    locked: "Tulossa: maksua ei vielä ole, joten mikään tili ei ole tänään Premium. Palvelin käyttää Premium-arvokuvitusta profiilissa vain, jos sen tallennettu tilaus on Premium.",
-    standardKicker: "VAKIOARVOT",
-    standardNote: "Jokainen tili käyttää näitä 3D-vektoritunnuksia.",
-    legendTag: "PREMIUM",
-    pickerTitle: "Arvokuvitus profiilissasi",
-    pickerStandard: "Vakio",
-    pickerPremium: "Premium",
-    pickerLocked: "Premium-arvokuvitus kuuluu A.C.E Premiumiin (7 $/kk). Tulossa: maksua ei vielä ole.",
-    pickerSaved: "Tallennettu.",
-    pickerFailed: "Ei tallennettu. Premium-arvokuvitus vaatii A.C.E Premiumin.",
+  "premiumRanks": {
+    "kicker": "PREMIUM-ARVOT",
+    "plan": "A.C.E PREMIUM · vain 7 $/kk",
+    "title": "Premium-arvokuvitus",
+    "lede": "Alkuperäinen kuvitettu A.C.E.-arvosarja: kymmenen kristallitunnusta divisioonilla III/II/I, luokitusprotokolla, Legend-tietokortti ja vetämällä pyöritettävä 3D-katselin. Se on profiilikuvitus Premium-jäsenille. Se lukee samoja Rating Points -tikkaita kuin vakioarvot eikä anna kilpailuetua.",
+    "demo": "Demoarvot: taulun edistyminen, voittoprosentti ja divisioonat ovat esimerkkejä, eivät reaaliaikaisia tilastoja. Kirjautuneena näytetty luokitus on tallennettu luokituksesi.",
+    "locked": "Tulossa: maksua ei vielä ole, joten mikään tili ei ole tänään Premium. Palvelin käyttää Premium-arvokuvitusta profiilissa vain, jos sen tallennettu tilaus on Premium.",
+    "standardKicker": "VAKIOARVOT",
+    "standardNote": "Jokainen tili käyttää näitä 3D-vektoritunnuksia.",
+    "legendTag": "PREMIUM",
+    "pickerTitle": "Arvokuvitus profiilissasi",
+    "pickerStandard": "Vakio",
+    "pickerPremium": "Premium",
+    "pickerLocked": "Premium-arvokuvitus kuuluu A.C.E Premiumiin (7 $/kk). Tulossa: maksua ei vielä ole.",
+    "pickerSaved": "Tallennettu.",
+    "pickerFailed": "Ei tallennettu. Premium-arvokuvitus vaatii A.C.E Premiumin."
   },
   "meta": {
     "title": "Kilpailurankingit",
@@ -142,10 +142,7 @@ export const ranks: TextBag["ranks"] = {
   "card": {
     "rank": "Ranking {level}",
     "targetWinRate": "{winRate} tavoitevoittoprosentti",
-    "calibrationTarget": "Kalibrointitavoite",
-    "floor": "Lattia",
-    "samplesNote": "Tavoiteluvut kullekin tasolle.",
-    "progressMockup": "Edistyminen"
+    "floor": "Lattia"
   },
   "turntable": {
     "stageLabel": "{name} kiertoratemblemi. Vedä kiertääksesi.",

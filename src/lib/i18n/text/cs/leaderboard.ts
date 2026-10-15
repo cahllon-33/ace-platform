@@ -1,77 +1,58 @@
 import type { TextBag } from "../types";
 
 export const leaderboard: TextBag["leaderboard"] = {
-  meta: {
-    title: "Žebříček",
-    description:
-      "Soutěžní tabule A.C.E. Uložené účty Steam se zobrazují jako první. Prázdná místa zůstávají řádky z vitríny.",
+  "meta": {
+    "title": "Žebříček",
+    "description": "Soutěžní tabule A.C.E. Uložené účty Steam se zobrazují jako první. Prázdná místa zůstávají řádky z vitríny."
   },
-  hero: {
-    kicker: "ŽEBŘÍČEK",
-    title: "Soutěžní tabule",
-    note: "Dokud hráči nepropojí Steam a nezískají hodnocení, vyplňují tabuli ukázková místa. Jejich země a zobrazená zbraň jsou ilustrativní. Rendery zbraní jsou původní tvorba studia A.C.E., nikoli skiny Valve. Zabití se zatím nezaznamenávají, takže zobrazená zbraň není statistikou nejlepšího fraggera.",
+  "hero": {
+    "kicker": "ŽEBŘÍČEK",
+    "title": "Soutěžní tabule",
+    "note": "Dokud hráči nepropojí Steam a nezískají hodnocení, vyplňují tabuli ukázková místa. Jejich země a zobrazená zbraň jsou ilustrativní. Rendery zbraní jsou původní tvorba studia A.C.E., nikoli skiny Valve. Zabití se zatím nezaznamenávají, takže zobrazená zbraň není statistikou nejlepšího fraggera."
   },
-  facts: {
-    seats: "Místa",
-    storedAccounts: "Uložené účty",
-    killsStored: "Uložená zabití",
-    none: "Žádná",
+  "facts": {
+    "seats": "Místa",
+    "storedAccounts": "Uložené účty",
+    "killsStored": "Uložená zabití",
+    "none": "Žádná"
   },
-  empty: "Tomuto jménu neodpovídá žádné místo z vitríny.",
-  podiumLabel: "Tři nejlepší místa",
-  boardLabel: "Soutěžní tabule",
-  table: {
-    rank: "Pořadí",
-    player: "Hráč",
-    country: "Země",
-    tier: "Stupeň",
-    leadWeapon: "Hlavní zbraň",
-    rating: "Hodnocení",
+  "empty": "Tomuto jménu neodpovídá žádné místo z vitríny.",
+  "podiumLabel": "Tři nejlepší místa",
+  "boardLabel": "Soutěžní tabule",
+  "table": {
+    "rank": "Pořadí",
+    "player": "Hráč",
+    "country": "Země",
+    "tier": "Stupeň",
+    "leadWeapon": "Hlavní zbraň",
+    "rating": "Hodnocení"
   },
-  tags: {
-    stored: "Uložený účet",
-    showcase: "Vitrína",
+  "tags": {
+    "stored": "Uložený účet",
+    "showcase": "Vitrína"
   },
-  weapon: {
-    sampleRender: "Typická zbraň",
-    notStored: "Neuloženo",
-    noKillSaved: "Žádné zabití není uloženo",
-    alt: "{name}",
+  "weapon": {
+    "sampleRender": "Typická zbraň",
+    "notStored": "Neuloženo",
+    "noKillSaved": "Žádné zabití není uloženo",
+    "alt": "{name}"
   },
-  countries: {
-    il: "Izrael",
-    us: "Spojené státy",
-    de: "Německo",
-    ua: "Ukrajina",
-    se: "Švédsko",
-    fr: "Francie",
-    pl: "Polsko",
-    br: "Brazílie",
-    jp: "Japonsko",
-    kr: "Jižní Korea",
+  "countries": {
+    "il": "Izrael",
+    "us": "Spojené státy",
+    "de": "Německo",
+    "ua": "Ukrajina",
+    "se": "Švédsko",
+    "fr": "Francie",
+    "pl": "Polsko",
+    "br": "Brazílie",
+    "jp": "Japonsko",
+    "kr": "Jižní Korea"
   },
-  search: {
-    openLabel: "Otevřít vyhledávání hráčů",
-    srLabel: "Hledat v žebříčku",
-    fieldLabel: "Hledat hráče",
-    placeholder: "Zobrazované jméno",
-  },
-  seasonPreview: {
-    banner: "ŽEBŘÍČEK 1. SEZÓNY",
-    noteLive:
-      "Jména propojená se Steamem jsou účty A.C.E. K/D se zobrazí, jakmile zápasové servery začnou zaznamenávat zabití.",
-    noteSample:
-      "Výsledky 1. sezóny se zde objeví s odehranými hodnocenými zápasy.",
-  },
-  playerCard: {
-    kicker: "Náhled karty hráče",
-    title: "Složka operátora",
-    badge: "Premium",
-    note: "Tvoje karta se naplní skutečnými údaji po spuštění hodnoceného matchmakingu.",
-    currentRank: "Aktuální hodnost",
-    rankValue: "A.C.E. Legend (divize I)",
-    competitiveRating: "Soutěžní hodnocení",
-    seasonRank: "Pořadí v sezóně",
-    seasonTop: "(Nejlepších {percent})",
-  },
+  "search": {
+    "openLabel": "Otevřít vyhledávání hráčů",
+    "srLabel": "Hledat v žebříčku",
+    "fieldLabel": "Hledat hráče",
+    "placeholder": "Zobrazované jméno"
+  }
 };

@@ -1,13 +1,13 @@
 import type { TextBag } from "../types";
 
 export const play: TextBag["play"] = {
-  premium: {
+  "premium": {
     "tag": "PREMIUM",
     "sample": "PREMIUM PRIMJER",
     "note": "Mjesta označena kao Premium primjer prikazuju ilustriranu Premium grafiku ranga samo kao prikaz. To su primjeri igrača, ne pretplatnici. Premium grafika je isključivo kozmetička i nikad ne mijenja rejting ni sparivanje.",
     "artAlt": "Ilustrirana Premium grafika ranga {rank}"
   },
-  room: {
+  "room": {
     "showcaseTag": "PRIKAZ · Primjeri igrača, nije meč uživo. Red je zatvoren.",
     "showcaseShort": "PRIKAZ",
     "queueClosed": "RED ZATVOREN",
@@ -78,7 +78,6 @@ export const play: TextBag["play"] = {
   "arena": {
     "ariaLabel": "Pregled sobe za meč",
     "captain": "Kapetan",
-    "ping": "Ping {ping}",
     "mapPlates": "Ploče mapa",
     "selectMap": "Odaberi {map}",
     "settings": {
@@ -127,5 +126,5 @@ export const play: TextBag["play"] = {
       ]
     },
     "findMatchReason": "Matchmaking se otvara s natjecateljskom betom. Ranked redovi još ne rade."
-  },
+  }
 };

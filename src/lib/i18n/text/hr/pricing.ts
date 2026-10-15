@@ -1,7 +1,7 @@
 import type { TextBag } from "../types";
 
 export const pricing: TextBag["pricing"] = {
-  matrix: {
+  "matrix": {
     "kicker": "MATRICA ZNAČAJKI",
     "title": "Usporedba članstava",
     "note": "Zlatna kvačica: uključeno. Crtica: nije uključeno. Uskoro: dio plana, ali još nije objavljeno. Nijedan plan ne kupuje rating, matchmaking ni prednost u redu.",
@@ -26,13 +26,13 @@ export const pricing: TextBag["pricing"] = {
       "advantage": "Povećanje ratinga, prednost u matchmakingu ili redu"
     }
   },
-  plansR11: {
+  "plansR11": {
     "termsPlusStats": "Statistika igrača: grafikon kretanja ratinga iz zabilježenih mečeva. Pokazatelji % headshotova i preciznosti uskoro.",
     "codexTitle": "Premium kodeks rangova i animirana kartica",
     "codexBody": "Ovo su umjetnost rangova i animirana kartica profila koje Premium uključuje. To je kozmetika na istoj ljestvici Rating Points bez natjecateljske prednosti.",
     "codexLink": "Otvori Premium kodeks rangova"
   },
-  premiumExtras: {
+  "premiumExtras": {
     "card": {
       "previewTag": "PREGLED",
       "previewNote": "Pregled animirane Premium kartice profila. Ime i vrijednosti su primjeri. Pravi profil prikazuje ovu karticu samo kad je njegov spremljeni plan Premium.",
@@ -40,8 +40,7 @@ export const pricing: TextBag["pricing"] = {
       "seal": "PEČAT ELITE",
       "rank": "Rang",
       "rating": "Rejting",
-      "sampleName": "Primjer igrača",
-      "ownTitle": "Tvoja Premium kartica profila"
+      "sampleName": "Primjer igrača"
     },
     "analysis": {
       "metaTitle": "Proširena analiza meča",
@@ -164,7 +163,6 @@ export const pricing: TextBag["pricing"] = {
     "title": "Usporedba članstava",
     "note": "Svaki redak odražava stranicu danas. Plaćanje stiže uskoro, a plaćeni plan nikad ne otvara red niti kupuje prednost.",
     "caption": "Free, Plus i Premium uspoređeni prema onome što stranica danas radi",
-    "includedToday": "Uključeno danas",
     "columns": {
       "free": "Free",
       "plus": "Plus",

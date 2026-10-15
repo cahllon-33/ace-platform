@@ -1,7 +1,7 @@
 import type { TextBag } from "../types";
 
 export const home: TextBag["home"] = {
-  ops: {
+  "ops": {
     "identityKicker": "IDENTITÁSKÖZPONT",
     "signedOutTitle": "Bejelentkezés Steammel",
     "signedOutBody": "Csatlakozz a hivatalos Steam OpenID-val, hogy itt lásd a Steam-avatarodat, a rangemblémádat és a Rating Pointsodat. Az A.C.E. soha nem kér Steam-jelszót.",
@@ -99,15 +99,12 @@ export const home: TextBag["home"] = {
     ]
   },
   "identity": {
-    "profilePlaceholder": "[Player_Profile]",
-    "notAvailable": "n/a",
     "elite": "ELITE"
   },
   "membership": {
     "compareLink": "A teljes összehasonlító táblázat"
   },
   "loot": {
-    "exampleCard": "Hamarosan",
     "wear": {
       "factoryNew": "Factory New",
       "minimalWear": "Minimal Wear"
@@ -121,7 +118,6 @@ export const home: TextBag["home"] = {
       "tlv": "Tel Aviv Relay"
     },
     "tileAria": "{name}. Szerver hamarosan.",
-    "tileSample": "Hamarosan · {sample}",
     "note": "A 128-tick regionális szerverek a versenybétával érkeznek."
   },
   "telemetry": {

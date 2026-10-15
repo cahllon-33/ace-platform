@@ -1,13 +1,13 @@
 import type { TextBag } from "../types";
 
 export const play: TextBag["play"] = {
-  premium: {
+  "premium": {
     "tag": "PREMIUM",
     "sample": "PREMIUM 示例",
     "note": "标有“Premium 示例”的位置仅为展示 Premium 插画段位图。他们是示例选手，不是订阅用户。Premium 插画仅为外观，绝不会改变评分或匹配。",
     "artAlt": "{rank} Premium 插画段位图"
   },
-  room: {
+  "room": {
     "showcaseTag": "展示 · 示例选手，并非实时比赛。队列已关闭。",
     "showcaseShort": "展示",
     "queueClosed": "队列已关闭",
@@ -78,7 +78,6 @@ export const play: TextBag["play"] = {
   "arena": {
     "ariaLabel": "比赛房间预览",
     "captain": "队长",
-    "ping": "Ping {ping}",
     "mapPlates": "地图图片",
     "selectMap": "选择 {map}",
     "settings": {
@@ -127,5 +126,5 @@ export const play: TextBag["play"] = {
       ]
     },
     "findMatchReason": "匹配将随竞技测试版开放。排位队列尚未运行。"
-  },
+  }
 };

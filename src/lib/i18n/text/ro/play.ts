@@ -1,13 +1,13 @@
 import type { TextBag } from "../types";
 
 export const play: TextBag["play"] = {
-  premium: {
+  "premium": {
     "tag": "PREMIUM",
     "sample": "EXEMPLU PREMIUM",
     "note": "Locurile marcate Exemplu Premium arată arta ilustrată de rang Premium doar pentru prezentare. Sunt jucători de exemplu, nu abonați. Arta Premium este pur cosmetică și nu schimbă niciodată ratingul sau matchmakingul.",
     "artAlt": "Artă ilustrată de rang Premium {rank}"
   },
-  room: {
+  "room": {
     "showcaseTag": "PREZENTARE · Jucători exemplu, nu un meci live. Coada este închisă.",
     "showcaseShort": "PREZENTARE",
     "queueClosed": "COADĂ ÎNCHISĂ",
@@ -78,7 +78,6 @@ export const play: TextBag["play"] = {
   "arena": {
     "ariaLabel": "Previzualizare cameră de meci",
     "captain": "Căpitan",
-    "ping": "Ping {ping}",
     "mapPlates": "Plăci de hărți",
     "selectMap": "Selectează {map}",
     "settings": {
@@ -127,5 +126,5 @@ export const play: TextBag["play"] = {
       ]
     },
     "findMatchReason": "Matchmakingul se deschide odată cu beta competitivă. Cozile ranked nu rulează încă."
-  },
+  }
 };

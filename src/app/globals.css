@@ -1911,7 +1911,6 @@ html[dir="rtl"] .ace-hub-card-face {
   padding: 0.5rem 0.95rem;
 }
 
-.ace-ladder-preview,
 .ace-shield {
   border: 1px solid rgba(255, 215, 0, 0.32);
   background: linear-gradient(180deg, #121318, #020203);
@@ -1921,12 +1920,6 @@ html[dir="rtl"] .ace-hub-card-face {
 .ace-shield.ace-ops-card {
   border: 1px solid #ffd700;
   background: #040406;
-}
-
-.ace-ladder-preview {
-  border: 2px solid #ffd700;
-  background: #020203;
-  box-shadow: 0 0 22px rgba(255, 215, 0, 0.16);
 }
 
 .ace-vault-banner {

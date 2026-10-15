@@ -1,7 +1,7 @@
 import type { TextBag } from "../types";
 
 export const ranks: TextBag["ranks"] = {
-  rpRules: {
+  "rpRules": {
     "kicker": "A.C.E RATING POINTS KURALLARI",
     "title": "Rating Points nasıl değişir",
     "lede": "Kural sürümü {version}. Her yeni oyuncu 3. kademede, {tier}, {start} RP ile başlar. Merdiven bilerek yavaştır: ortanın üstündeki her kademe bir öncekinden daha fazla galibiyet ister.",
@@ -46,29 +46,29 @@ export const ranks: TextBag["ranks"] = {
     "ex4": "Ortalaması senden 200 RP düşük bir takıma karşı galibiyet +{weakWin} kazandırır, mağlubiyet −{weakLoss} kaybettirir.",
     "note": "Bu rakamları, doğrulanmış bir maç sonucunu uygulayan kodun aynısı hesaplar. Bunlar örnektir, kayıtlı maçlar değildir."
   },
-  premiumCodex: {
+  "premiumCodex": {
     "kicker": "PREMIUM RÜTBE KODEKSİ",
     "title": "Premium rütbe kodeksi",
     "lede": "Her rütbe için bir tane olmak üzere on resimli kristal amblem. Bu, standart rütbelerle aynı Rating Points merdiveninde kozmetik profil sanatıdır. Reyting, eşleştirme veya sırayı değiştirmez.",
     "cosmetic": "Kozmetik sanat · aynı RP merdiveni · yalnızca A.C.E Premium 7 $/ay",
     "imgAlt": "{name} Premium rütbe sanatı, seviye {level}"
   },
-  premiumRanks: {
-    kicker: "PREMIUM RÜTBELER",
-    plan: "A.C.E PREMIUM · yalnızca ayda 7 $",
-    title: "Premium rütbe görselleri",
-    lede: "Orijinal resimli A.C.E. rütbe seti: III/II/I bölümlü on kristal amblem, reyting protokolü, Legend ayrıntı kartı ve sürükleyerek döndürülen 3D görüntüleyici. Premium üyeler için profil görselidir. Standart rütbelerle aynı Rating Points merdivenini okur ve hiçbir rekabet avantajı sağlamaz.",
-    demo: "Demo değerleri: bu panodaki ilerleme, kazanma oranı ve bölüm değerleri örnektir, canlı istatistik değildir. Giriş yaptığında gösterilen reyting kayıtlı reytingindir.",
-    locked: "Yakında: ödeme henüz yok, bu yüzden bugün hiçbir hesap Premium değil. Sunucu Premium rütbe görsellerini yalnızca kayıtlı planı Premium olan bir profile uygular.",
-    standardKicker: "STANDART RÜTBELER",
-    standardNote: "Her hesap bu 3D vektör amblemleri taşır.",
-    legendTag: "PREMIUM",
-    pickerTitle: "Profilindeki rütbe görseli",
-    pickerStandard: "Standart",
-    pickerPremium: "Premium",
-    pickerLocked: "Premium rütbe görselleri A.C.E Premium içindir (ayda 7 $). Yakında: ödeme henüz yok.",
-    pickerSaved: "Kaydedildi.",
-    pickerFailed: "Kaydedilmedi. Premium rütbe görselleri A.C.E Premium gerektirir.",
+  "premiumRanks": {
+    "kicker": "PREMIUM RÜTBELER",
+    "plan": "A.C.E PREMIUM · yalnızca ayda 7 $",
+    "title": "Premium rütbe görselleri",
+    "lede": "Orijinal resimli A.C.E. rütbe seti: III/II/I bölümlü on kristal amblem, reyting protokolü, Legend ayrıntı kartı ve sürükleyerek döndürülen 3D görüntüleyici. Premium üyeler için profil görselidir. Standart rütbelerle aynı Rating Points merdivenini okur ve hiçbir rekabet avantajı sağlamaz.",
+    "demo": "Demo değerleri: bu panodaki ilerleme, kazanma oranı ve bölüm değerleri örnektir, canlı istatistik değildir. Giriş yaptığında gösterilen reyting kayıtlı reytingindir.",
+    "locked": "Yakında: ödeme henüz yok, bu yüzden bugün hiçbir hesap Premium değil. Sunucu Premium rütbe görsellerini yalnızca kayıtlı planı Premium olan bir profile uygular.",
+    "standardKicker": "STANDART RÜTBELER",
+    "standardNote": "Her hesap bu 3D vektör amblemleri taşır.",
+    "legendTag": "PREMIUM",
+    "pickerTitle": "Profilindeki rütbe görseli",
+    "pickerStandard": "Standart",
+    "pickerPremium": "Premium",
+    "pickerLocked": "Premium rütbe görselleri A.C.E Premium içindir (ayda 7 $). Yakında: ödeme henüz yok.",
+    "pickerSaved": "Kaydedildi.",
+    "pickerFailed": "Kaydedilmedi. Premium rütbe görselleri A.C.E Premium gerektirir."
   },
   "meta": {
     "title": "Rekabetçi Rütbeler",
@@ -142,10 +142,7 @@ export const ranks: TextBag["ranks"] = {
   "card": {
     "rank": "Rütbe {level}",
     "targetWinRate": "{winRate} hedef kazanma oranı",
-    "calibrationTarget": "Kalibrasyon hedefi",
-    "floor": "Taban",
-    "samplesNote": "Her kademe için hedef rakamlar.",
-    "progressMockup": "İlerleme"
+    "floor": "Taban"
   },
   "turntable": {
     "stageLabel": "{name} yörünge amblemi. Döndürmek için sürükleyin.",

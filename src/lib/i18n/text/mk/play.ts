@@ -1,13 +1,13 @@
 import type { TextBag } from "../types";
 
 export const play: TextBag["play"] = {
-  premium: {
+  "premium": {
     "tag": "PREMIUM",
     "sample": "PREMIUM ПРИМЕР",
     "note": "Местата означени како Premium пример ја прикажуваат илустрираната Premium уметност на рангот само како приказ. Тоа се примерни играчи, не претплатници. Premium уметноста е само козметичка и никогаш не го менува рејтингот или спарувањето.",
     "artAlt": "Илустрирана Premium уметност на ранг {rank}"
   },
-  room: {
+  "room": {
     "showcaseTag": "ПРИКАЗ · Примерни играчи, не е меч во живо. Редицата е затворена.",
     "showcaseShort": "ПРИКАЗ",
     "queueClosed": "РЕДИЦАТА Е ЗАТВОРЕНА",
@@ -78,7 +78,6 @@ export const play: TextBag["play"] = {
   "arena": {
     "ariaLabel": "Преглед на собата за натпревар",
     "captain": "Капитен",
-    "ping": "Ping {ping}",
     "mapPlates": "Плочи на мапи",
     "selectMap": "Избери {map}",
     "settings": {
@@ -127,5 +126,5 @@ export const play: TextBag["play"] = {
       ]
     },
     "findMatchReason": "Matchmaking се отвора со натпреварувачката бета. Ranked редиците сè уште не работат."
-  },
+  }
 };

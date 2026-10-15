@@ -73,31 +73,6 @@ export const teams: TextBag["teams"] = {
       "briefTitle": "Ringkasan Operasi 100 Tim",
       "briefBody": "Satu tata letak kompetitif mencakup seluruh bidang 100 tim. Saat pendaftaran dibuka, 28 klan pertama yang diterima mendapat bye Babak 1 dan maju ke Babak 2. 72 klan lainnya bermain di Babak 1. Nama di slot kosong adalah placeholder sampai klan mendaftar. Buku aturan lengkap ada di bawah pohon. Lobi pertandingan dibuka bersama beta kompetitif, dan hadiah dikonfirmasi per acara."
     },
-    "timeline": {
-      "ariaLabel": "Linimasa peluncuran turnamen",
-      "kicker": "PETA JALAN KEJUARAAN",
-      "title": "LINIMASA PELUNCURAN TURNAMEN",
-      "stageLabel": "Tahap {id}",
-      "stages": {
-        "registrations": {
-          "title": "Pendaftaran Terbuka",
-          "state": "DENYUT PRATINJAU"
-        },
-        "calibration": {
-          "title": "Bagan Kalibrasi Regional",
-          "state": "TERKUNCI"
-        },
-        "quarterFinals": {
-          "title": "Perempat Final Elite Pro",
-          "state": "TERKUNCI"
-        },
-        "finals": {
-          "title": "Grand Apex Finals",
-          "state": "TERKUNCI"
-        }
-      },
-      "disclaimer": "Tahap 01 dibuka pertama saat pendaftaran dimulai. Tahap 02–04 menyusul. Kumpulan hadiah dikonfirmasi di halaman acara setelah diumumkan."
-    },
     "bracket": {
       "kicker": "Knockout 100 tim · segera hadir",
       "title": "Matriks Bagan 100 Tim",

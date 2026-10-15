@@ -1,13 +1,13 @@
 import type { TextBag } from "../types";
 
 export const play: TextBag["play"] = {
-  premium: {
+  "premium": {
     "tag": "PREMIUM",
     "sample": "PREMIUM MINTA",
     "note": "A Premium mintával jelölt helyek az illusztrált Premium rangképet csak bemutatásként mutatják. Ezek mintajátékosok, nem előfizetők. A Premium kép csak kozmetikai, és soha nem változtat a pontszámon vagy a párosításon.",
     "artAlt": "{rank} illusztrált Premium rangkép"
   },
-  room: {
+  "room": {
     "showcaseTag": "BEMUTATÓ · Mintajátékosok, nem élő meccs. A sor zárva.",
     "showcaseShort": "BEMUTATÓ",
     "queueClosed": "SOR ZÁRVA",
@@ -78,7 +78,6 @@ export const play: TextBag["play"] = {
   "arena": {
     "ariaLabel": "Meccsszoba előnézete",
     "captain": "Kapitány",
-    "ping": "Ping {ping}",
     "mapPlates": "Pályatáblák",
     "selectMap": "{map} kiválasztása",
     "settings": {
@@ -127,5 +126,5 @@ export const play: TextBag["play"] = {
       ]
     },
     "findMatchReason": "A párosítás a versenybétával nyílik. A ranked sorok még nem futnak."
-  },
+  }
 };

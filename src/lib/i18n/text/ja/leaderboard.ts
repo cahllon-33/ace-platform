@@ -54,21 +54,5 @@ export const leaderboard: TextBag["leaderboard"] = {
     "srLabel": "リーダーボードを検索",
     "fieldLabel": "プレイヤーを検索",
     "placeholder": "表示名"
-  },
-  "seasonPreview": {
-    "banner": "シーズン1 ラダー",
-    "noteLive": "Steam 連携済みの名前は A.C.E. アカウントです。K/D は試合サーバーがキルを記録し始めると表示されます。",
-    "noteSample": "シーズン1 の記録は、ランク戦が行われるとここに表示されます。"
-  },
-  "playerCard": {
-    "kicker": "プレイヤーカードのプレビュー",
-    "title": "オペレーター資料",
-    "badge": "Premium",
-    "note": "ランクマッチングが始まると、カードに実際の数値が反映されます。",
-    "currentRank": "現在のランク",
-    "rankValue": "A.C.E. Legend(ディビジョン I)",
-    "competitiveRating": "競技レーティング",
-    "seasonRank": "シーズン順位",
-    "seasonTop": "(上位 {percent})"
   }
 };

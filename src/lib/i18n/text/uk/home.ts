@@ -1,7 +1,7 @@
 import type { TextBag } from "../types";
 
 export const home: TextBag["home"] = {
-  ops: {
+  "ops": {
     "identityKicker": "ЦЕНТР ІДЕНТИФІКАЦІЇ",
     "signedOutTitle": "Увійти через Steam",
     "signedOutBody": "Підключіться через офіційний Steam OpenID, щоб бачити тут свій аватар Steam, емблему рангу та Rating Points. A.C.E. ніколи не запитує пароль Steam.",
@@ -99,15 +99,12 @@ export const home: TextBag["home"] = {
     ]
   },
   "identity": {
-    "profilePlaceholder": "[Player_Profile]",
-    "notAvailable": "н/д",
     "elite": "ЕЛІТА"
   },
   "membership": {
     "compareLink": "Переглянути повну таблицю порівняння"
   },
   "loot": {
-    "exampleCard": "Незабаром",
     "wear": {
       "factoryNew": "Factory New",
       "minimalWear": "Minimal Wear"
@@ -121,7 +118,6 @@ export const home: TextBag["home"] = {
       "tlv": "Tel Aviv Relay"
     },
     "tileAria": "{name}. Сервер незабаром.",
-    "tileSample": "Незабаром · {sample}",
     "note": "Регіональні сервери 128 тік з’являться разом зі змагальною бетою."
   },
   "telemetry": {

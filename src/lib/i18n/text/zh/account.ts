@@ -1,7 +1,7 @@
 import type { TextBag } from "../types";
 
 export const account: TextBag["account"] = {
-  statsConsole: {
+  "statsConsole": {
     "metaTitle": "玩家数据",
     "kicker": "玩家数据",
     "title": "玩家数据",
@@ -100,7 +100,6 @@ export const account: TextBag["account"] = {
     "kicker": "玩家身份",
     "bannerPlaceholder": "资料横幅 · 即将推出",
     "levelBadge": "等级 {level}",
-    "premiumBadge": "PREMIUM",
     "rosterLevel": "阵容等级 {level}。",
     "trend": {
       "title": "竞技评分表现趋势",

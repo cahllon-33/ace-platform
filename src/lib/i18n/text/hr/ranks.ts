@@ -1,7 +1,7 @@
 import type { TextBag } from "../types";
 
 export const ranks: TextBag["ranks"] = {
-  rpRules: {
+  "rpRules": {
     "kicker": "A.C.E PRAVILA RATING POINTS",
     "title": "Kako se mijenjaju Rating Points",
     "lede": "Verzija pravila {version}. Svaki novi igrač počinje s {start} RP na razini 3, {tier}. Ljestvica je namjerno spora: svaka razina iznad sredine traži više pobjeda od prethodne.",
@@ -46,29 +46,29 @@ export const ranks: TextBag["ranks"] = {
     "ex4": "Protiv tima s prosječno 200 RP manje od tebe pobjeda donosi +{weakWin}, a poraz košta −{weakLoss}.",
     "note": "Ove brojke izračunava isti kod koji primjenjuje potvrđeni rezultat meča. To su primjeri, a ne spremljeni mečevi."
   },
-  premiumCodex: {
+  "premiumCodex": {
     "kicker": "PREMIUM KODEKS RANGOVA",
     "title": "Premium kodeks rangova",
     "lede": "Deset ilustriranih kristalnih amblema, po jedan za svaki rang. To je kozmetička umjetnost profila na istoj ljestvici Rating Points kao standardni rangovi. Ne mijenja rating, matchmaking ni red čekanja.",
     "cosmetic": "Kozmetička umjetnost · ista RP ljestvica · samo A.C.E Premium 7 $/mj.",
     "imgAlt": "Premium umjetnost ranga {name}, razina {level}"
   },
-  premiumRanks: {
-    kicker: "PREMIUM RANGOVI",
-    plan: "A.C.E PREMIUM · samo 7 $/mj.",
-    title: "Premium grafika rangova",
-    lede: "Izvorni ilustrirani set rangova A.C.E.: deset kristalnih amblema s divizijama III/II/I, protokol rejtinga, kartica detalja Legend i 3D preglednik koji se okreće povlačenjem. To je grafika profila za Premium članove. Čita istu ljestvicu Rating Pointsa kao standardni rangovi i ne daje nikakvu natjecateljsku prednost.",
-    demo: "Demo vrijednosti: napredak, postotak pobjeda i divizije na ovoj ploči su primjeri, ne statistika uživo. Kad si prijavljen, prikazani rejting je tvoj spremljeni rejting.",
-    locked: "Uskoro: plaćanje još ne postoji, pa danas nijedan račun nije Premium. Poslužitelj primjenjuje Premium grafiku rangova na profil samo ako je njegov spremljeni plan Premium.",
-    standardKicker: "STANDARDNI RANGOVI",
-    standardNote: "Svaki račun nosi ove 3D vektorske ambleme.",
-    legendTag: "PREMIUM",
-    pickerTitle: "Grafika ranga na tvom profilu",
-    pickerStandard: "Standardna",
-    pickerPremium: "Premium",
-    pickerLocked: "Premium grafika rangova je za A.C.E Premium (7 $/mj.). Uskoro: plaćanje još ne postoji.",
-    pickerSaved: "Spremljeno.",
-    pickerFailed: "Nije spremljeno. Premium grafika rangova zahtijeva A.C.E Premium.",
+  "premiumRanks": {
+    "kicker": "PREMIUM RANGOVI",
+    "plan": "A.C.E PREMIUM · samo 7 $/mj.",
+    "title": "Premium grafika rangova",
+    "lede": "Izvorni ilustrirani set rangova A.C.E.: deset kristalnih amblema s divizijama III/II/I, protokol rejtinga, kartica detalja Legend i 3D preglednik koji se okreće povlačenjem. To je grafika profila za Premium članove. Čita istu ljestvicu Rating Pointsa kao standardni rangovi i ne daje nikakvu natjecateljsku prednost.",
+    "demo": "Demo vrijednosti: napredak, postotak pobjeda i divizije na ovoj ploči su primjeri, ne statistika uživo. Kad si prijavljen, prikazani rejting je tvoj spremljeni rejting.",
+    "locked": "Uskoro: plaćanje još ne postoji, pa danas nijedan račun nije Premium. Poslužitelj primjenjuje Premium grafiku rangova na profil samo ako je njegov spremljeni plan Premium.",
+    "standardKicker": "STANDARDNI RANGOVI",
+    "standardNote": "Svaki račun nosi ove 3D vektorske ambleme.",
+    "legendTag": "PREMIUM",
+    "pickerTitle": "Grafika ranga na tvom profilu",
+    "pickerStandard": "Standardna",
+    "pickerPremium": "Premium",
+    "pickerLocked": "Premium grafika rangova je za A.C.E Premium (7 $/mj.). Uskoro: plaćanje još ne postoji.",
+    "pickerSaved": "Spremljeno.",
+    "pickerFailed": "Nije spremljeno. Premium grafika rangova zahtijeva A.C.E Premium."
   },
   "meta": {
     "title": "Natjecateljski rangovi",
@@ -142,10 +142,7 @@ export const ranks: TextBag["ranks"] = {
   "card": {
     "rank": "Rang {level}",
     "targetWinRate": "{winRate} ciljani postotak pobjeda",
-    "calibrationTarget": "Kalibracijski cilj",
-    "floor": "Donja granica",
-    "samplesNote": "Ciljane brojke za svaku razinu.",
-    "progressMockup": "Napredak"
+    "floor": "Donja granica"
   },
   "turntable": {
     "stageLabel": "{name} orbitalni amblem. Povuci za okretanje.",

@@ -59,22 +59,7 @@ export const features: TextBag["features"] = {
     "kicker": "コスメティック · まもなく開始",
     "title": "A.C.E. ルート設計 — 武器ドロップ",
     "lede": "ショップとともに登場する A.C.E. オリジナルの仕上げ。コスメティックが競技に影響することはありません。",
-    "mockDrop": "まもなく開始",
-    "multiplierLabel": "勝率倍率の条件",
-    "ladderLabel": "週間ラダー・ドロップ",
-    "multiplierValue": "{multiplier}× テンプレート",
-    "ladderValue": "週間枠 · まもなく開始",
     "checkout": "決済 · まもなく開始"
-  },
-  "communityRail": {
-    "kicker": "フィード · まもなく開始",
-    "newsTitle": "最新ラダーニュース",
-    "newsItems": [
-      "ブラケットはまだ空です — 0 / 100 チーム。",
-      "アンチチートが完成するまでランク検索は停止中です。"
-    ],
-    "prizesTitle": "デイリー・スキン賞品",
-    "prizesBody": "報酬と決済はシーズン1とともに開始します。"
   },
   "identityPreview": {
     "badge": "プレビュー — 未確定",

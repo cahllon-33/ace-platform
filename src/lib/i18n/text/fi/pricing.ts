@@ -1,7 +1,7 @@
 import type { TextBag } from "../types";
 
 export const pricing: TextBag["pricing"] = {
-  matrix: {
+  "matrix": {
     "kicker": "OMINAISUUSMATRIISI",
     "title": "Jäsenyyksien vertailu",
     "note": "Kultainen rasti: sisältyy. Viiva: ei sisälly. Tulossa: osa tilausta, mutta ei vielä julkaistu. Mikään tilaus ei osta reittausta, ottelunhakua tai jonoetua.",
@@ -26,13 +26,13 @@ export const pricing: TextBag["pricing"] = {
       "advantage": "Reittausboosti, ottelunhaku- tai jonoetu"
     }
   },
-  plansR11: {
+  "plansR11": {
     "termsPlusStats": "Pelaajatilastot: reittauksen kehityskaavio tallennetuista otteluista. Pääosuma-% ja tarkkuusmittarit tulossa pian.",
     "codexTitle": "Premium-arvomerkkikoodeksi ja animoitu kortti",
     "codexBody": "Tämä on Premiumiin sisältyvä arvomerkkitaide ja animoitu profiilikortti. Se on kosmeettista taidetta samalla Rating Points -tikkaalla eikä anna kilpailuetua.",
     "codexLink": "Avaa Premium-arvomerkkikoodeksi"
   },
-  premiumExtras: {
+  "premiumExtras": {
     "card": {
       "previewTag": "ESIKATSELU",
       "previewNote": "Animoidun Premium-profiilikortin esikatselu. Nimi ja arvot ovat esimerkkejä. Oikea profiili näyttää tämän kortin vain, kun sen tallennettu tilaus on Premium.",
@@ -40,8 +40,7 @@ export const pricing: TextBag["pricing"] = {
       "seal": "ELITE-SINETTI",
       "rank": "Arvo",
       "rating": "Luokitus",
-      "sampleName": "Esimerkkipelaaja",
-      "ownTitle": "Premium-profiilikorttisi"
+      "sampleName": "Esimerkkipelaaja"
     },
     "analysis": {
       "metaTitle": "Laajennettu otteluanalyysi",
@@ -164,7 +163,6 @@ export const pricing: TextBag["pricing"] = {
     "title": "Jäsenyysvertailu",
     "note": "Jokainen rivi kuvaa sivustoa tänään. Maksutoiminto on tulossa pian, eikä maksullinen paketti koskaan avaa jonoa tai osta etua.",
     "caption": "Free, Plus ja Premium vertailtuna sen mukaan, mitä sivusto tekee tänään",
-    "includedToday": "Sisältyy tänään",
     "columns": {
       "free": "Free",
       "plus": "Plus",

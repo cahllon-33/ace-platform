@@ -1,7 +1,7 @@
 import type { TextBag } from "../types";
 
 export const ranks: TextBag["ranks"] = {
-  rpRules: {
+  "rpRules": {
     "kicker": "A.C.E 积分规则",
     "title": "Rating Points 如何变化",
     "lede": "规则版本 {version}。每位新玩家都从第 3 段（{tier}）的 {start} RP 开始。天梯刻意放慢：中段以上的每一段都比前一段需要更多胜场。",
@@ -46,29 +46,29 @@ export const ranks: TextBag["ranks"] = {
     "ex4": "对阵平均积分比你低 200 RP 的队伍，胜利 +{weakWin}，失败 −{weakLoss}。",
     "note": "这些数字由应用已验证比赛结果的同一段代码计算。它们是示例，不是已保存的比赛。"
   },
-  premiumCodex: {
+  "premiumCodex": {
     "kicker": "PREMIUM 段位图鉴",
     "title": "Premium 段位图鉴",
     "lede": "十枚插画水晶徽章，每个段位一枚。这是与标准段位同一 Rating Points 阶梯上的外观资料美术，不改变积分、匹配或排队。",
     "cosmetic": "外观美术 · 同一 RP 阶梯 · 仅限 A.C.E Premium 每月 $7",
     "imgAlt": "{name} Premium 段位美术，等级 {level}"
   },
-  premiumRanks: {
-    kicker: "高级段位",
-    plan: "A.C.E PREMIUM · 仅限每月 $7",
-    title: "高级段位美术",
-    lede: "原版插画 A.C.E. 段位套装：十枚带 III/II/I 分段的水晶徽章、评分协议、Legend 详情卡以及可拖动旋转的 3D 查看器。这是 Premium 会员的个人资料美术。它读取与标准段位相同的 Rating Points 阶梯，不提供任何竞技优势。",
-    demo: "演示数值：此面板上的进度、胜率和分段数据均为示例，不是实时统计。登录后显示的评分是你已保存的评分。",
-    locked: "即将推出：结账功能尚不存在，因此目前没有任何账号是 Premium。服务器只会在已保存方案为 Premium 的个人资料上应用高级段位美术。",
-    standardKicker: "标准段位",
-    standardNote: "每个账号都使用这些 3D 矢量徽章。",
-    legendTag: "PREMIUM",
-    pickerTitle: "个人资料上的段位美术",
-    pickerStandard: "标准",
-    pickerPremium: "高级",
-    pickerLocked: "高级段位美术仅限 A.C.E Premium（每月 $7）。即将推出：结账功能尚不存在。",
-    pickerSaved: "已保存。",
-    pickerFailed: "未保存。高级段位美术需要 A.C.E Premium。",
+  "premiumRanks": {
+    "kicker": "高级段位",
+    "plan": "A.C.E PREMIUM · 仅限每月 $7",
+    "title": "高级段位美术",
+    "lede": "原版插画 A.C.E. 段位套装：十枚带 III/II/I 分段的水晶徽章、评分协议、Legend 详情卡以及可拖动旋转的 3D 查看器。这是 Premium 会员的个人资料美术。它读取与标准段位相同的 Rating Points 阶梯，不提供任何竞技优势。",
+    "demo": "演示数值：此面板上的进度、胜率和分段数据均为示例，不是实时统计。登录后显示的评分是你已保存的评分。",
+    "locked": "即将推出：结账功能尚不存在，因此目前没有任何账号是 Premium。服务器只会在已保存方案为 Premium 的个人资料上应用高级段位美术。",
+    "standardKicker": "标准段位",
+    "standardNote": "每个账号都使用这些 3D 矢量徽章。",
+    "legendTag": "PREMIUM",
+    "pickerTitle": "个人资料上的段位美术",
+    "pickerStandard": "标准",
+    "pickerPremium": "高级",
+    "pickerLocked": "高级段位美术仅限 A.C.E Premium（每月 $7）。即将推出：结账功能尚不存在。",
+    "pickerSaved": "已保存。",
+    "pickerFailed": "未保存。高级段位美术需要 A.C.E Premium。"
   },
   "meta": {
     "title": "竞技段位",
@@ -142,10 +142,7 @@ export const ranks: TextBag["ranks"] = {
   "card": {
     "rank": "段位 {level}",
     "targetWinRate": "目标胜率 {winRate}",
-    "calibrationTarget": "定级目标",
-    "floor": "下限",
-    "samplesNote": "各段位的目标数值。",
-    "progressMockup": "进度"
+    "floor": "下限"
   },
   "turntable": {
     "stageLabel": "{name} 环绕徽章。拖动可旋转。",

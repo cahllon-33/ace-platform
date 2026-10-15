@@ -1,7 +1,7 @@
 import type { TextBag } from "../types";
 
 export const pricing: TextBag["pricing"] = {
-  matrix: {
+  "matrix": {
     "kicker": "MATRIZ DE FUNCIONES",
     "title": "Comparativa de membresías",
     "note": "Check dorado: incluido. Guion: no incluido. Próximamente: parte del plan pero aún no lanzado. Ningún plan compra rating, emparejamiento ni prioridad en la cola.",
@@ -26,13 +26,13 @@ export const pricing: TextBag["pricing"] = {
       "advantage": "Aumento de rating o ventaja de emparejamiento o de cola"
     }
   },
-  plansR11: {
+  "plansR11": {
     "termsPlusStats": "Estadísticas de jugador: tu gráfico de evolución del rating a partir de partidas registradas. Los indicadores de % de headshots y precisión llegarán pronto.",
     "codexTitle": "Códice de rangos Premium y tarjeta animada",
     "codexBody": "Este es el arte de rango y la tarjeta de perfil animada que incluye Premium. Es arte cosmético sobre la misma escala de Rating Points y no da ventaja competitiva.",
     "codexLink": "Abrir el códice de rangos Premium"
   },
-  premiumExtras: {
+  "premiumExtras": {
     "card": {
       "previewTag": "VISTA PREVIA",
       "previewNote": "Vista previa de la tarjeta de perfil Premium animada. El nombre y los valores son ejemplos. Un perfil real solo muestra esta tarjeta cuando su plan guardado es Premium.",
@@ -40,8 +40,7 @@ export const pricing: TextBag["pricing"] = {
       "seal": "SELLO ELITE",
       "rank": "Rango",
       "rating": "Rating",
-      "sampleName": "Jugador de ejemplo",
-      "ownTitle": "Tu tarjeta de perfil Premium"
+      "sampleName": "Jugador de ejemplo"
     },
     "analysis": {
       "metaTitle": "Análisis de partida ampliado",
@@ -91,235 +90,226 @@ export const pricing: TextBag["pricing"] = {
       "pricingLink": "Leer las condiciones Premium"
     }
   },
-  meta: {
-    title: "Precios",
-    description:
-      "Membresía A.C.E.: Gratis {free}, Plus {plus}/mes, Premium {premium}/mes. Precios de pantalla fijados en enteros.",
+  "meta": {
+    "title": "Precios",
+    "description": "Membresía A.C.E.: Gratis {free}, Plus {plus}/mes, Premium {premium}/mes. Precios de pantalla fijados en enteros."
   },
-  period: {
-    monthly: "/mes",
+  "period": {
+    "monthly": "/mes"
   },
-  hero: {
-    badge: "Membresía",
-    title: "Niveles de acceso",
-    lede: "Gratis {free}. Plus {plus}/mes. Premium {premium}/mes. Esas cifras están fijadas en enteros. Los planes de pago nunca compran puntuación ni rivales más fáciles.",
+  "hero": {
+    "badge": "Membresía",
+    "title": "Niveles de acceso",
+    "lede": "Gratis {free}. Plus {plus}/mes. Premium {premium}/mes. Esas cifras están fijadas en enteros. Los planes de pago nunca compran puntuación ni rivales más fáciles."
   },
-  tiers: {
-    free: {
-      name: "GRATIS",
-      note: "Grafito",
-      title: "Acceso abierto",
-      points: [
+  "tiers": {
+    "free": {
+      "name": "GRATIS",
+      "note": "Grafito",
+      "title": "Acceso abierto",
+      "points": [
         "Inicia sesión con Steam OpenID. A.C.E. nunca pide una contraseña de Steam.",
         "Una puntuación guardada empieza en 1.200. Ningún resultado de partida la ha cambiado.",
-        "Todas las páginas públicas: jugar, torneos, clasificación, equipos y reglas.",
-      ],
+        "Todas las páginas públicas: jugar, torneos, clasificación, equipos y reglas."
+      ]
     },
-    plus: {
-      name: "A.C.E. PLUS",
-      note: "Plus",
-      title: "Estadísticas de jugador y soporte",
-      points: [
+    "plus": {
+      "name": "A.C.E. PLUS",
+      "note": "Plus",
+      "title": "Estadísticas de jugador y soporte",
+      "points": [
         "Todo lo de Gratis.",
         "Estadísticas de jugador: tu gráfico de evolución del rating a partir de partidas A.C.E. registradas. Los indicadores de % de headshots y precisión llegarán pronto.",
-        "Próximamente: una carta de agradecimiento y soporte por correo en support@ace-platform.gg, cuando exista el pago. Plus no compra rating ni rivales más fáciles.",
-      ],
+        "Próximamente: una carta de agradecimiento y soporte por correo en support@ace-platform.gg, cuando exista el pago. Plus no compra rating ni rivales más fáciles."
+      ]
     },
-    premium: {
-      name: "A.C.E. PREMIUM",
-      note: "Premium",
-      title: "Arte de perfil, insignias y análisis",
-      points: [
+    "premium": {
+      "name": "A.C.E. PREMIUM",
+      "note": "Premium",
+      "title": "Arte de perfil, insignias y análisis",
+      "points": [
         "Todo lo de Plus.",
         "Arte de rango Premium y el códice de rangos Premium, la tarjeta de perfil animada, insignias especiales y el ELITE SEAL.",
         "Próximamente: análisis de partida ampliado, acceso anticipado a betas y soporte prioritario para miembros Premium.",
-        "Sin ventaja competitiva: sin aumento de Rating Points ni ventaja en el emparejamiento.",
-      ],
-    },
+        "Sin ventaja competitiva: sin aumento de Rating Points ni ventaja en el emparejamiento."
+      ]
+    }
   },
-  card: {
-    elite: "ÉLITE",
-    stayFree: "Seguir en Gratis",
-    freeNote: "Disponible ya",
-    choose: "Elegir {plan}",
-    chooseAria: "Elegir {plan} por {price} al mes",
+  "card": {
+    "elite": "ÉLITE",
+    "stayFree": "Seguir en Gratis",
+    "freeNote": "Disponible ya",
+    "choose": "Elegir {plan}",
+    "chooseAria": "Elegir {plan} por {price} al mes"
   },
-  billing: {
-    kicker: "MATRIZ DEL CALENDARIO DE FACTURACIÓN",
-    title: "Cómo funcionará la facturación cuando exista",
-    body: "Plus cuesta exactamente {plus}/mes. Premium cuesta exactamente {premium}/mes.",
-    display: {
-      label: "01 · PANTALLA",
-      body: "Gratis {free}. Plus {plus}/mes. Premium {premium}/mes. Los niveles de pago nunca compran puntuación ni rivales más fáciles.",
+  "billing": {
+    "kicker": "MATRIZ DEL CALENDARIO DE FACTURACIÓN",
+    "title": "Cómo funcionará la facturación cuando exista",
+    "body": "Plus cuesta exactamente {plus}/mes. Premium cuesta exactamente {premium}/mes.",
+    "display": {
+      "label": "01 · PANTALLA",
+      "body": "Gratis {free}. Plus {plus}/mes. Premium {premium}/mes. Los niveles de pago nunca compran puntuación ni rivales más fáciles."
     },
-    rolling: {
-      label: "02 · CICLO RENOVABLE",
-      body: "Cuando exista facturación, los cargos se renovarán en un ciclo mensual continuo. El uso de un mes parcial no es reembolsable. La cancelación detiene el siguiente ciclo y no elimina el periodo prepagado en curso.",
+    "rolling": {
+      "label": "02 · CICLO RENOVABLE",
+      "body": "Cuando exista facturación, los cargos se renovarán en un ciclo mensual continuo. El uso de un mes parcial no es reembolsable. La cancelación detiene el siguiente ciclo y no elimina el periodo prepagado en curso."
     },
-    today: {
-      label: "03 · HOY",
-    },
+    "today": {
+      "label": "03 · HOY"
+    }
   },
-  compare: {
-    kicker: "Lo que A.C.E. puede prometer hoy",
-    title: "Comparación de membresías",
-    note: "Cada fila refleja el estado actual del sitio. El pago llegará pronto, y un plan de pago nunca abre una cola ni compra ventaja.",
-    caption: "Gratis, Plus y Premium comparados según lo que hace el sitio hoy",
-    includedToday: "Incluido hoy",
-    columns: {
-      free: "Gratis",
-      plus: "Plus",
-      premium: "Premium",
+  "compare": {
+    "kicker": "Lo que A.C.E. puede prometer hoy",
+    "title": "Comparación de membresías",
+    "note": "Cada fila refleja el estado actual del sitio. El pago llegará pronto, y un plan de pago nunca abre una cola ni compra ventaja.",
+    "caption": "Gratis, Plus y Premium comparados según lo que hace el sitio hoy",
+    "columns": {
+      "free": "Gratis",
+      "plus": "Plus",
+      "premium": "Premium"
     },
-    rows: {
-      publicSite: {
-        feature: "Sitio público",
-        detail: "Inicio, jugar, torneos, clasificación, equipos, reglas y términos.",
+    "rows": {
+      "publicSite": {
+        "feature": "Sitio público",
+        "detail": "Inicio, jugar, torneos, clasificación, equipos, reglas y términos."
       },
-      steamSignIn: {
-        feature: "Inicio de sesión con Steam",
-        detail: "Steam OpenID oficial. A.C.E. nunca pide una contraseña de Steam.",
+      "steamSignIn": {
+        "feature": "Inicio de sesión con Steam",
+        "detail": "Steam OpenID oficial. A.C.E. nunca pide una contraseña de Steam."
       },
-      startingRating: {
-        feature: "Puntuación inicial",
-        detail: "El número guardado en una cuenta nueva antes de cualquier partida registrada.",
+      "startingRating": {
+        "feature": "Puntuación inicial",
+        "detail": "El número guardado en una cuenta nueva antes de cualquier partida registrada."
       },
-      recordedMatches: {
-        feature: "Partidas registradas",
-        detail: "Victorias y derrotas escritas a partir de una partida A.C.E. terminada.",
+      "recordedMatches": {
+        "feature": "Partidas registradas",
+        "detail": "Victorias y derrotas escritas a partir de una partida A.C.E. terminada."
       },
-      rankedQueue: {
-        feature: "Cola clasificatoria",
-        detail: "BUSCAR PARTIDA sigue cerrado hasta que exista una cola real.",
+      "rankedQueue": {
+        "feature": "Cola clasificatoria",
+        "detail": "BUSCAR PARTIDA sigue cerrado hasta que exista una cola real."
       },
-      cs2Servers: {
-        feature: "Servidores de CS2",
-        detail: "Este sitio no envía una dirección de servidor ni un enlace de conexión.",
+      "cs2Servers": {
+        "feature": "Servidores de CS2",
+        "detail": "Este sitio no envía una dirección de servidor ni un enlace de conexión."
       },
-      antiCheatClient: {
-        feature: "Cliente de anticheat",
-        detail: "No se descarga nada desde este sitio web.",
+      "antiCheatClient": {
+        "feature": "Cliente de anticheat",
+        "detail": "No se descarga nada desde este sitio web."
       },
-      charge: {
-        feature: "Cargo",
-        detail: "Elegir Plus o Premium no cobra ninguna tarjeta.",
+      "charge": {
+        "feature": "Cargo",
+        "detail": "Elegir Plus o Premium no cobra ninguna tarjeta."
       },
-      ratingForSale: {
-        feature: "Puntuación en venta",
-        detail: "Una etiqueta de pago nunca compra puntuación ni rivales más fáciles.",
+      "ratingForSale": {
+        "feature": "Puntuación en venta",
+        "detail": "Una etiqueta de pago nunca compra puntuación ni rivales más fáciles."
       },
-      prizeOrWeapon: {
-        feature: "Premio o arma",
-        detail: "No se entrega ningún skin, cuchillo ni pozo de premios.",
+      "prizeOrWeapon": {
+        "feature": "Premio o arma",
+        "detail": "No se entrega ningún skin, cuchillo ni pozo de premios."
       },
-      goldEliteSeal: {
-        feature: "Sello élite e insignias especiales",
-        detail:
-          "Solo Premium, leído del nivel guardado en el servidor. Cosmético. El pago no establece ese nivel.",
-      },
+      "goldEliteSeal": {
+        "feature": "Sello élite e insignias especiales",
+        "detail": "Solo Premium, leído del nivel guardado en el servidor. Cosmético. El pago no establece ese nivel."
+      }
     },
-    cells: {
-      open: "Abierto",
-      yes: "Sí",
-      noneYet: "Aún ninguno",
-      closed: "Cerrada",
-      notConnected: "Próximamente",
-      notShipped: "No disponible",
-      noCharge: "Sin cargo",
-      notForSale: "No está en venta",
-      none: "Ninguno",
-      no: "No",
-      storedTierOnly: "Solo nivel guardado",
-    },
+    "cells": {
+      "open": "Abierto",
+      "yes": "Sí",
+      "noneYet": "Aún ninguno",
+      "closed": "Cerrada",
+      "notConnected": "Próximamente",
+      "notShipped": "No disponible",
+      "noCharge": "Sin cargo",
+      "notForSale": "No está en venta",
+      "none": "Ninguno",
+      "no": "No",
+      "storedTierOnly": "Solo nivel guardado"
+    }
   },
-  receipt: {
-    plus: {
-      metaTitle: "Recibo de Plus",
-      metaDescription:
-        "La carta de A.C.E. Plus que se muestra en este sitio web. El pago no está activo, así que no se cobra nada y no se envía ningún correo.",
-      planName: "A.C.E. Plus",
-      nextLabel: "Continuar en A.C.E.",
-      nextBody:
-        "Las páginas públicas siguen abiertas. Esta selección no abre una cola y no cambia el nivel guardado.",
+  "receipt": {
+    "plus": {
+      "metaTitle": "Recibo de Plus",
+      "metaDescription": "La carta de A.C.E. Plus que se muestra en este sitio web. El pago no está activo, así que no se cobra nada y no se envía ningún correo.",
+      "planName": "A.C.E. Plus",
+      "nextLabel": "Continuar en A.C.E.",
+      "nextBody": "Las páginas públicas siguen abiertas. Esta selección no abre una cola y no cambia el nivel guardado."
     },
-    premium: {
-      metaTitle: "Recibo de Premium",
-      metaDescription:
-        "La carta de A.C.E. Premium que se muestra en este sitio web. El pago no está activo, así que no se cobra nada y no se envía ningún correo.",
-      planName: "A.C.E. Premium",
-      nextLabel: "Leer los términos Premium",
-      nextBody:
-        "Premium incluye arte de rango Premium, la tarjeta de perfil animada, insignias especiales y el ELITE SEAL, además de todo lo de Plus. Guardar un clan en Squads es gratis para todas las cuentas.",
-    },
+    "premium": {
+      "metaTitle": "Recibo de Premium",
+      "metaDescription": "La carta de A.C.E. Premium que se muestra en este sitio web. El pago no está activo, así que no se cobra nada y no se envía ningún correo.",
+      "planName": "A.C.E. Premium",
+      "nextLabel": "Leer los términos Premium",
+      "nextBody": "Premium incluye arte de rango Premium, la tarjeta de perfil animada, insignias especiales y el ELITE SEAL, además de todo lo de Plus. Guardar un clan en Squads es gratis para todas las cuentas."
+    }
   },
-  letter: {
-    kicker: "{plan} · {price} al mes",
-    title: "Gracias por tu elección",
-    flag: "Esta carta se muestra en el sitio web. No se envió ningún correo. No se cobró ninguna tarjeta. El pago no está activo y el nivel de membresía guardado no se ha cambiado.",
-    greeting: "Estimado jugador:",
-    intro:
-      "Gracias por elegir {plan}. Esta página es el recibo. Recoge el precio de pantalla, lo que esa selección incluye hoy, lo que no incluye y la dirección de soporte publicada en este sitio web.",
-    selected: {
-      title: "Qué se ha seleccionado",
-      items: [
+  "letter": {
+    "kicker": "{plan} · {price} al mes",
+    "title": "Gracias por tu elección",
+    "flag": "Esta carta se muestra en el sitio web. No se envió ningún correo. No se cobró ninguna tarjeta. El pago no está activo y el nivel de membresía guardado no se ha cambiado.",
+    "greeting": "Estimado jugador:",
+    "intro": "Gracias por elegir {plan}. Esta página es el recibo. Recoge el precio de pantalla, lo que esa selección incluye hoy, lo que no incluye y la dirección de soporte publicada en este sitio web.",
+    "selected": {
+      "title": "Qué se ha seleccionado",
+      "items": [
         "Nombre del plan: {plan}.",
         "Precio de pantalla: {price} al mes. La cifra es una etiqueta, no un cargo.",
         "Pago: ninguno. Elegir este plan no cobra ninguna tarjeta.",
         "Correo: ninguno. A.C.E. no envía esta carta a ninguna bandeja de entrada.",
         "Nivel guardado: sin cambios. Las insignias especiales y el sello élite solo aparecen si la cuenta ya tiene Premium guardado.",
-        "Puntuación: no está a la venta. Una cuenta nueva sigue empezando en 1.200.",
-      ],
+        "Puntuación: no está a la venta. Una cuenta nueva sigue empezando en 1.200."
+      ]
     },
-    today: {
-      title: "Lo que puedes usar hoy",
-      items: [
+    "today": {
+      "title": "Lo que puedes usar hoy",
+      "items": [
         "El sitio público: inicio, jugar, torneos, clasificación, equipos, reglas y términos.",
         "Inicio de sesión con Steam mediante el Steam OpenID oficial. A.C.E. nunca pide una contraseña de Steam.",
-        "Las mismas páginas públicas que Gratis. Este precio no abre una cola aparte.",
-      ],
+        "Las mismas páginas públicas que Gratis. Este precio no abre una cola aparte."
+      ]
     },
-    excluded: {
-      title: "Lo que esta selección no incluye",
-      items: [
+    "excluded": {
+      "title": "Lo que esta selección no incluye",
+      "items": [
         "Una cola clasificatoria en vivo. BUSCAR PARTIDA sigue cerrado.",
         "Un servidor de Counter-Strike 2, una dirección de servidor ni un enlace de conexión.",
         "Una descarga anti-cheat. A.C.E Shield está en desarrollo.",
         "Un premio, un skin, un cuchillo ni un pozo de premios.",
         "Una plaza en el cuadro de 100 equipos. Ese cuadro sigue mostrando 0 inscritos hasta que se abra una temporada.",
-        "Rivales más fáciles, una puntuación comprada ni un sitio público distinto al de Gratis.",
-      ],
+        "Rivales más fáciles, una puntuación comprada ni un sitio público distinto al de Gratis."
+      ]
     },
-    trouble: {
-      title: "Si algo no funciona",
-      items: [
+    "trouble": {
+      "title": "Si algo no funciona",
+      "items": [
         "Esperabas un cargo o un nivel de pago. No se aplicó ninguno. La cuenta sigue como estaba.",
         "Esperabas esta carta en tu bandeja de entrada. Solo existe en esta página.",
         "Steam no se conectó. Usa Conectar perfil y marca primero la casilla de los términos. Nunca escribas una contraseña de Steam en A.C.E.",
-        "Necesitas ayuda. Usa la dirección de soporte de abajo o abre las páginas de ayuda de este sitio web.",
-      ],
+        "Necesitas ayuda. Usa la dirección de soporte de abajo o abre las páginas de ayuda de este sitio web."
+      ]
     },
-    support: {
-      title: "Soporte",
-      addressBefore: "La dirección de soporte publicada en este sitio web es ",
-      addressAfter: ".",
-      helpBefore: "Ayuda en el sitio: ",
-      supportLink: "Soporte",
-      helpAnd: " y ",
-      contactLink: "Contacto",
-      rulesBefore: ". Las reglas están en ",
-      rulesLink: "Reglas",
-      rulesAnd: " y ",
-      termsLink: "Términos",
-      helpAfter:
-        ". Un aviso en Soporte no abre un ticket, y el texto escrito en Contacto no se entrega.",
+    "support": {
+      "title": "Soporte",
+      "addressBefore": "La dirección de soporte publicada en este sitio web es ",
+      "addressAfter": ".",
+      "helpBefore": "Ayuda en el sitio: ",
+      "supportLink": "Soporte",
+      "helpAnd": " y ",
+      "contactLink": "Contacto",
+      "rulesBefore": ". Las reglas están en ",
+      "rulesLink": "Reglas",
+      "rulesAnd": " y ",
+      "termsLink": "Términos",
+      "helpAfter": ". Un aviso en Soporte no abre un ticket, y el texto escrito en Contacto no se entrega."
     },
-    next: {
-      title: "Siguiente paso",
-    },
+    "next": {
+      "title": "Siguiente paso"
+    }
   },
-  telemetry: {
-    kicker: "TELEMETRÍA PLUS / PREMIUM",
-    copy: "TELEMETRÍA DEL PANEL BLOQUEADA — Mejora tu plan de suscripción a A.C.E. Plus o Premium para desbloquear curvas de estadísticas dinámicas en tiempo real e índices de especialidad por arma.",
-    cta: "Abrir las tablas de precios",
-  },
+  "telemetry": {
+    "kicker": "TELEMETRÍA PLUS / PREMIUM",
+    "copy": "TELEMETRÍA DEL PANEL BLOQUEADA — Mejora tu plan de suscripción a A.C.E. Plus o Premium para desbloquear curvas de estadísticas dinámicas en tiempo real e índices de especialidad por arma.",
+    "cta": "Abrir las tablas de precios"
+  }
 };

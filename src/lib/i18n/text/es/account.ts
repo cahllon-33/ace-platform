@@ -1,7 +1,7 @@
 import type { TextBag } from "../types";
 
 export const account: TextBag["account"] = {
-  statsConsole: {
+  "statsConsole": {
     "metaTitle": "Estadísticas de jugador",
     "kicker": "ESTADÍSTICAS DE JUGADOR",
     "title": "Estadísticas de jugador",
@@ -27,133 +27,132 @@ export const account: TextBag["account"] = {
     "dashAnalysis": "Abrir análisis de partida (Premium)",
     "chartAria": "Gráfico de evolución del rating"
   },
-  dashboard: {
-    meta: {
-      title: "Puesto de mando",
+  "dashboard": {
+    "meta": {
+      "title": "Puesto de mando"
     },
-    kicker: "Autenticado",
-    title: "Puesto de mando",
-    lede: "Sesión iniciada mediante Steam OpenID. La sesión se guarda en una cookie HttpOnly, no en localStorage. La búsqueda clasificatoria sigue cerrada hasta que el anticheat sea real.",
-    eliteBadge: "ÉLITE",
-    stats: {
-      accountStatus: "Estado de la cuenta",
-      subscription: "Suscripción",
-      rank: "Rango A.C.E.",
-      ratingPoints: "Puntos de puntuación",
-      wins: "Victorias",
-      losses: "Derrotas",
-      accountId: "ID interno de la cuenta",
+    "kicker": "Autenticado",
+    "title": "Puesto de mando",
+    "lede": "Sesión iniciada mediante Steam OpenID. La sesión se guarda en una cookie HttpOnly, no en localStorage. La búsqueda clasificatoria sigue cerrada hasta que el anticheat sea real.",
+    "eliteBadge": "ÉLITE",
+    "stats": {
+      "accountStatus": "Estado de la cuenta",
+      "subscription": "Suscripción",
+      "rank": "Rango A.C.E.",
+      "ratingPoints": "Puntos de puntuación",
+      "wins": "Victorias",
+      "losses": "Derrotas",
+      "accountId": "ID interno de la cuenta"
     },
-    accountStatuses: {
-      ACTIVE: "Activa",
-      SUSPENDED: "Suspendida",
-      BANNED: "Bloqueada",
-      TEMP_BANNED: "Bloqueada temporalmente",
-      PERM_BANNED: "Bloqueada permanentemente",
-      UNDER_REVIEW: "En revisión",
+    "accountStatuses": {
+      "ACTIVE": "Activa",
+      "SUSPENDED": "Suspendida",
+      "BANNED": "Bloqueada",
+      "TEMP_BANNED": "Bloqueada temporalmente",
+      "PERM_BANNED": "Bloqueada permanentemente",
+      "UNDER_REVIEW": "En revisión"
     },
-    tiers: {
-      FREE: "Gratis",
-      PLUS: "Plus",
-      PREMIUM: "Premium",
+    "tiers": {
+      "FREE": "Gratis",
+      "PLUS": "Plus",
+      "PREMIUM": "Premium"
     },
-    roles: {
-      CAPTAIN: "Capitán",
-      PLAYER: "Jugador",
+    "roles": {
+      "CAPTAIN": "Capitán",
+      "PLAYER": "Jugador"
     },
-    settings: {
-      title: "PERFIL DE CONFIGURACIÓN DEL PANEL",
-      billingNotLive: "Todas las cuentas están en Free hasta que exista el pago.",
-      cancelReason: "No existe ninguna suscripción facturada que cancelar. El pago no está implementado.",
-      cancelButton: "Cancelar suscripción",
+    "settings": {
+      "title": "PERFIL DE CONFIGURACIÓN DEL PANEL",
+      "billingNotLive": "Todas las cuentas están en Free hasta que exista el pago.",
+      "cancelReason": "No existe ninguna suscripción facturada que cancelar. El pago no está implementado.",
+      "cancelButton": "Cancelar suscripción"
     },
-    rankedReason: "El emparejamiento clasificatorio se deniega hasta que exista una integración de anticheat verificada.",
-    rankedButton: "Buscar partida clasificatoria",
-    roster: {
-      title: "Plantilla 5v5",
-      body: "Un capitán. Cuatro invitaciones. Los capitanes invitan a otros ID de cuenta A.C.E., que solo se crean después de un inicio de sesión de Steam verificado.",
+    "rankedReason": "El emparejamiento clasificatorio se deniega hasta que exista una integración de anticheat verificada.",
+    "rankedButton": "Buscar partida clasificatoria",
+    "roster": {
+      "title": "Plantilla 5v5",
+      "body": "Un capitán. Cuatro invitaciones. Los capitanes invitan a otros ID de cuenta A.C.E., que solo se crean después de un inicio de sesión de Steam verificado."
     },
-    pendingInvites: "Invitaciones pendientes",
+    "pendingInvites": "Invitaciones pendientes"
   },
-  forms: {
-    requestFailed: "La solicitud falló.",
-    createTeam: {
-      acceptRequired: "Acepta los Términos del servicio, el EULA de anticheat y la Política de privacidad para continuar.",
-      failed: "No se pudo crear el equipo.",
-      nameLabel: "Nombre del nuevo equipo 5v5",
-      submitAria: "Fundar un nuevo equipo 5v5",
-      submit: "Fundar equipo",
+  "forms": {
+    "requestFailed": "La solicitud falló.",
+    "createTeam": {
+      "acceptRequired": "Acepta los Términos del servicio, el EULA de anticheat y la Política de privacidad para continuar.",
+      "failed": "No se pudo crear el equipo.",
+      "nameLabel": "Nombre del nuevo equipo 5v5",
+      "submitAria": "Fundar un nuevo equipo 5v5",
+      "submit": "Fundar equipo"
     },
-    invite: {
-      failed: "La invitación falló.",
-      label: "Invitar a un agente libre por SteamID o ID de cuenta A.C.E.",
-      submitAria: "Enviar invitación al equipo",
-      submit: "Enviar invitación",
-    },
+    "invite": {
+      "failed": "La invitación falló.",
+      "label": "Invitar a un agente libre por SteamID o ID de cuenta A.C.E.",
+      "submitAria": "Enviar invitación al equipo",
+      "submit": "Enviar invitación"
+    }
   },
-  profile: {
-    meta: {
-      notFoundTitle: "Perfil del jugador",
-      title: "{name} · Perfil A.C.E.",
-      description: "Expediente de jugador A.C.E. Las sesiones Plus y Premium desbloquean los gráficos de tendencia de telemetría.",
+  "profile": {
+    "meta": {
+      "notFoundTitle": "Perfil del jugador",
+      "title": "{name} · Perfil A.C.E.",
+      "description": "Expediente de jugador A.C.E. Las sesiones Plus y Premium desbloquean los gráficos de tendencia de telemetría."
     },
-    kicker: "Identidad del jugador",
-    bannerPlaceholder: "Banner de perfil · próximamente",
-    levelBadge: "NIVEL {level}",
-    premiumBadge: "PREMIUM",
-    rosterLevel: "Nivel de plantilla {level}.",
-    trend: {
-      title: "Tendencia de rendimiento de la puntuación competitiva",
-      note: "Puntos de puntuación a lo largo de registros consecutivos del historial de partidas.",
+    "kicker": "Identidad del jugador",
+    "bannerPlaceholder": "Banner de perfil · próximamente",
+    "levelBadge": "NIVEL {level}",
+    "rosterLevel": "Nivel de plantilla {level}.",
+    "trend": {
+      "title": "Tendencia de rendimiento de la puntuación competitiva",
+      "note": "Puntos de puntuación a lo largo de registros consecutivos del historial de partidas."
     },
-    combat: {
-      title: "Matriz detallada de datos de combate",
-      kills: "Bajas totales",
-      deaths: "Muertes totales",
-      kd: "K/D calculado",
-      headshots: "Tiros a la cabeza totales",
-      headshotPct: "Rango de % de tiros a la cabeza",
-      knifeKills: "Bajas especiales con cuchillo",
+    "combat": {
+      "title": "Matriz detallada de datos de combate",
+      "kills": "Bajas totales",
+      "deaths": "Muertes totales",
+      "kd": "K/D calculado",
+      "headshots": "Tiros a la cabeza totales",
+      "headshotPct": "Rango de % de tiros a la cabeza",
+      "knifeKills": "Bajas especiales con cuchillo"
     },
-    weapon: {
-      title: "Especialización en arma insignia",
-      note: "Plataforma de arma principal calibrada",
-      accuracy: "Índice de precisión",
-      kills: "Bajas totales con el arma",
+    "weapon": {
+      "title": "Especialización en arma insignia",
+      "note": "Plataforma de arma principal calibrada",
+      "accuracy": "Índice de precisión",
+      "kills": "Bajas totales con el arma"
     },
-    gear: {
-      title: "Especificaciones del equipo",
-      cpu: "CPU",
-      gpu: "GPU",
-      monitor: "Frecuencia de actualización del monitor (Hz)",
-      mouse: "Modelo de ratón",
-      dpi: "Configuración de DPI activa",
+    "gear": {
+      "title": "Especificaciones del equipo",
+      "cpu": "CPU",
+      "gpu": "GPU",
+      "monitor": "Frecuencia de actualización del monitor (Hz)",
+      "mouse": "Modelo de ratón",
+      "dpi": "Configuración de DPI activa"
     },
-    networksTitle: "Enlace al perfil de Steam",
-    back: "Volver a la plantilla del clan",
+    "networksTitle": "Enlace al perfil de Steam",
+    "back": "Volver a la plantilla del clan"
   },
-  networks: {
-    note: "Un enlace escrito aquí se queda en este navegador y no se guarda. A.C.E. nunca pide una contraseña de Steam.",
-    labels: {
-      steam: "Perfil de Steam",
+  "networks": {
+    "note": "Un enlace escrito aquí se queda en este navegador y no se guarda. A.C.E. nunca pide una contraseña de Steam.",
+    "labels": {
+      "steam": "Perfil de Steam"
     },
-    open: "Abrir {label} >",
+    "open": "Abrir {label} >"
   },
-  ratingTrend: {
-    chartAria: "Tendencia de rendimiento de la puntuación competitiva",
-    pointAria: "Partida {match}: puntuación {rating}",
-    axisLabel: "P{match}",
-    idle: "Pasa el cursor sobre un nodo para ver un registro de puntuación.",
-    readout: "Partida {match} · puntuación {rating}",
+  "ratingTrend": {
+    "chartAria": "Tendencia de rendimiento de la puntuación competitiva",
+    "pointAria": "Partida {match}: puntuación {rating}",
+    "axisLabel": "P{match}",
+    "idle": "Pasa el cursor sobre un nodo para ver un registro de puntuación.",
+    "readout": "Partida {match} · puntuación {rating}"
   },
-  loginError: {
-    meta: {
-      title: "Error de inicio de sesión",
+  "loginError": {
+    "meta": {
+      "title": "Error de inicio de sesión"
     },
-    title: "El inicio de sesión con Steam no se completó",
-    notConfigured: "Steam OpenID todavía no está configurado en este servidor. A.C.E. nunca pide una contraseña de Steam.",
-    unavailable: "Steam no respondió a la solicitud de verificación. Inténtalo de nuevo en un momento. A.C.E. nunca pide una contraseña de Steam.",
-    unverified: "No se pudo verificar en el servidor la respuesta de OpenID. A.C.E. nunca pide una contraseña de Steam.",
-    returnHome: "Volver al inicio",
-  },
+    "title": "El inicio de sesión con Steam no se completó",
+    "notConfigured": "Steam OpenID todavía no está configurado en este servidor. A.C.E. nunca pide una contraseña de Steam.",
+    "unavailable": "Steam no respondió a la solicitud de verificación. Inténtalo de nuevo en un momento. A.C.E. nunca pide una contraseña de Steam.",
+    "unverified": "No se pudo verificar en el servidor la respuesta de OpenID. A.C.E. nunca pide una contraseña de Steam.",
+    "returnHome": "Volver al inicio"
+  }
 };

@@ -73,31 +73,6 @@ export const teams: TextBag["teams"] = {
       "briefTitle": "Operativni sažetak 100 timova",
       "briefBody": "Jedan natjecateljski raspored pokriva cijelo polje od 100 timova. Kad se prijave otvore, prvih 28 prihvaćenih klanova dobiva slobodan prolaz u 1. kolu i ide u 2. kolo. Ostala 72 klana igraju 1. kolo. Imena na nepopunjenim mjestima privremena su dok se klanovi ne prijave. Cijeli pravilnik nalazi se ispod stabla. Predvorja mečeva otvaraju se s natjecateljskom betom, a nagrade se potvrđuju po događaju."
     },
-    "timeline": {
-      "ariaLabel": "Vremenska crta pokretanja turnira",
-      "kicker": "PLAN PRVENSTVA",
-      "title": "VREMENSKA CRTA POKRETANJA TURNIRA",
-      "stageLabel": "Faza {id}",
-      "stages": {
-        "registrations": {
-          "title": "Otvorene prijave",
-          "state": "PULS PREGLEDA"
-        },
-        "calibration": {
-          "title": "Regionalni kalibracijski kosturi",
-          "state": "ZAKLJUČANO"
-        },
-        "quarterFinals": {
-          "title": "Elite Pro četvrtfinale",
-          "state": "ZAKLJUČANO"
-        },
-        "finals": {
-          "title": "Grand Apex finale",
-          "state": "ZAKLJUČANO"
-        }
-      },
-      "disclaimer": "Faza 01 otvara se prva kad prijave počnu. Slijede faze 02–04. Nagradni fondovi potvrđuju se na stranici događaja nakon objave."
-    },
     "bracket": {
       "kicker": "Nokaut 100 timova · uskoro",
       "title": "Matrica kostura 100 timova",

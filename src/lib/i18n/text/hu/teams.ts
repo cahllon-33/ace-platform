@@ -73,31 +73,6 @@ export const teams: TextBag["teams"] = {
       "briefTitle": "100 csapatos műveleti összefoglaló",
       "briefBody": "Egyetlen versenyelrendezés fedi le a teljes 100 csapatos mezőnyt. Amikor a nevezés megnyílik, az első 28 elfogadott klán erőnyerőként kihagyja az 1. fordulót és a 2. fordulóba jut. A többi 72 klán játssza az 1. fordulót. A kitöltetlen helyek nevei helyőrzők, amíg a klánok nem neveznek. A teljes szabálykönyv a fa alatt található. A meccslobbik a versenybétával nyílnak, és a díjakat eseményenként erősítik meg."
     },
-    "timeline": {
-      "ariaLabel": "A torna indulásának idővonala",
-      "kicker": "BAJNOKSÁGI ÜTEMTERV",
-      "title": "A TORNA INDULÁSÁNAK IDŐVONALA",
-      "stageLabel": "{id}. szakasz",
-      "stages": {
-        "registrations": {
-          "title": "Nyílt nevezés",
-          "state": "ELŐNÉZETI PULZUS"
-        },
-        "calibration": {
-          "title": "Regionális kalibrációs ágrajzok",
-          "state": "ZÁROLVA"
-        },
-        "quarterFinals": {
-          "title": "Elite Pro negyeddöntők",
-          "state": "ZÁROLVA"
-        },
-        "finals": {
-          "title": "Grand Apex döntők",
-          "state": "ZÁROLVA"
-        }
-      },
-      "disclaimer": "A 01. szakasz nyílik elsőként a nevezés indulásakor. A 02–04. szakaszok követik. A díjalapokat az eseményoldalon erősítik meg a bejelentés után."
-    },
     "bracket": {
       "kicker": "100 csapatos kieséses torna · hamarosan",
       "title": "100 csapatos ágrajzmátrix",

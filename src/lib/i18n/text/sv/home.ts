@@ -1,7 +1,7 @@
 import type { TextBag } from "../types";
 
 export const home: TextBag["home"] = {
-  ops: {
+  "ops": {
     "identityKicker": "IDENTITETSNAV",
     "signedOutTitle": "Logga in med Steam",
     "signedOutBody": "Anslut med officiella Steam OpenID för att se din Steam-avatar, ditt rankemblem och dina Rating Points här. A.C.E. ber aldrig om ett Steam-lösenord.",
@@ -99,15 +99,12 @@ export const home: TextBag["home"] = {
     ]
   },
   "identity": {
-    "profilePlaceholder": "[Player_Profile]",
-    "notAvailable": "saknas",
     "elite": "ELIT"
   },
   "membership": {
     "compareLink": "Se hela jämförelsetabellen"
   },
   "loot": {
-    "exampleCard": "Kommer snart",
     "wear": {
       "factoryNew": "Factory New",
       "minimalWear": "Minimal Wear"
@@ -121,7 +118,6 @@ export const home: TextBag["home"] = {
       "tlv": "Tel Aviv Relay"
     },
     "tileAria": "{name}. Server kommer snart.",
-    "tileSample": "Kommer snart · {sample}",
     "note": "Regionala 128-tick-servrar kommer med tävlingsbetan."
   },
   "telemetry": {

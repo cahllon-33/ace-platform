@@ -1,7 +1,7 @@
 import type { TextBag } from "../types";
 
 export const pricing: TextBag["pricing"] = {
-  matrix: {
+  "matrix": {
     "kicker": "مصفوفة الميزات",
     "title": "مقارنة العضويات",
     "note": "علامة ذهبية: مشمول. شَرطة: غير مشمول. قريبًا: ضمن الخطة لكن لم يُطلق بعد. لا تشتري أي خطة تقييمًا أو مطابقة أو أولوية في الطابور.",
@@ -26,13 +26,13 @@ export const pricing: TextBag["pricing"] = {
       "advantage": "رفع التقييم أو أفضلية في المطابقة أو الطابور"
     }
   },
-  plansR11: {
+  "plansR11": {
     "termsPlusStats": "إحصاءات اللاعب: رسم تغيّر تقييمك من المباريات المسجّلة. مؤشرات نسبة الطلقات في الرأس والدقة قريبًا.",
     "codexTitle": "مخطوطة الرتب المميزة والبطاقة المتحركة",
     "codexBody": "هذا هو فن الرتب وبطاقة الملف المتحركة المضمّنان في Premium. إنه فن تجميلي على سلّم Rating Points نفسه ولا يمنح أي أفضلية تنافسية.",
     "codexLink": "افتح مخطوطة الرتب المميزة"
   },
-  premiumExtras: {
+  "premiumExtras": {
     "card": {
       "previewTag": "معاينة",
       "previewNote": "معاينة لبطاقة ملف Premium المتحركة. الاسم والقيم أمثلة. يعرض الملف الحقيقي هذه البطاقة فقط عندما تكون خطته المخزنة Premium.",
@@ -40,8 +40,7 @@ export const pricing: TextBag["pricing"] = {
       "seal": "ختم ELITE",
       "rank": "الرتبة",
       "rating": "التقييم",
-      "sampleName": "لاعب تجريبي",
-      "ownTitle": "بطاقة ملفك في Premium"
+      "sampleName": "لاعب تجريبي"
     },
     "analysis": {
       "metaTitle": "تحليل المباراة الموسّع",
@@ -164,7 +163,6 @@ export const pricing: TextBag["pricing"] = {
     "title": "مقارنة العضويات",
     "note": "كل صف يعكس حالة الموقع اليوم. الدفع قريبًا، والخطة المدفوعة لا تفتح قائمة انتظار ولا تشتري أفضلية أبدًا.",
     "caption": "مقارنة بين المجانية وPlus وPremium وفق ما يقدمه الموقع اليوم",
-    "includedToday": "المشمول اليوم",
     "columns": {
       "free": "المجانية",
       "plus": "Plus",

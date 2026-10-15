@@ -59,22 +59,7 @@ export const features: TextBag["features"] = {
     "kicker": "Kosmetiikka · tulossa pian",
     "title": "A.C.E. LOOT-ARKKITEHTUURI — ASEPUDOTUKSET",
     "lede": "Alkuperäiset A.C.E.-viimeistelyt saapuvat kaupan myötä. Kosmetiikka ei koskaan vaikuta kilpailuun.",
-    "mockDrop": "Tulossa pian",
-    "multiplierLabel": "Voittoprosentin kerroinvaatimukset",
-    "ladderLabel": "Viikoittaiset tikapuupudotukset",
-    "multiplierValue": "{multiplier}× pohja",
-    "ladderValue": "Viikkopaikka · tulossa pian",
     "checkout": "Kassa · tulossa pian"
-  },
-  "communityRail": {
-    "kicker": "Syöte · tulossa pian",
-    "newsTitle": "Uusimmat tikapuu-uutiset",
-    "newsItems": [
-      "Kaavio on yhä tyhjä — 0 / 100 joukkuetta.",
-      "Ranked-haku pysyy suljettuna, kunnes huijauksenesto on olemassa."
-    ],
-    "prizesTitle": "Päivittäiset skinipalkinnot",
-    "prizesBody": "Palkinnot ja kassa avautuvat kauden 1 myötä."
   },
   "identityPreview": {
     "badge": "Esikatselu — ei vahvistettu",

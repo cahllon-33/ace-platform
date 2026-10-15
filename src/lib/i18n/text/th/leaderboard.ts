@@ -54,21 +54,5 @@ export const leaderboard: TextBag["leaderboard"] = {
     "srLabel": "ค้นหาในลีดเดอร์บอร์ด",
     "fieldLabel": "ค้นหาผู้เล่น",
     "placeholder": "ชื่อที่แสดง"
-  },
-  "seasonPreview": {
-    "banner": "บันไดซีซัน 1",
-    "noteLive": "ชื่อที่เชื่อมกับ Steam คือบัญชี A.C.E. K/D จะแสดงเมื่อเซิร์ฟเวอร์แข่งขันบันทึกการสังหาร",
-    "noteSample": "สถิติซีซัน 1 จะปรากฏที่นี่เมื่อมีการแข่งขันจัดอันดับ"
-  },
-  "playerCard": {
-    "kicker": "ตัวอย่างการ์ดผู้เล่น",
-    "title": "แฟ้มผู้ปฏิบัติการ",
-    "badge": "Premium",
-    "note": "การ์ดของคุณจะแสดงตัวเลขจริงเมื่อระบบจับคู่จัดอันดับเปิด",
-    "currentRank": "อันดับปัจจุบัน",
-    "rankValue": "A.C.E. Legend (ดิวิชัน I)",
-    "competitiveRating": "เรตติ้งการแข่งขัน",
-    "seasonRank": "อันดับซีซัน",
-    "seasonTop": "(Top {percent})"
   }
 };

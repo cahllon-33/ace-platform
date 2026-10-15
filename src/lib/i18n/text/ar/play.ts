@@ -1,13 +1,13 @@
 import type { TextBag } from "../types";
 
 export const play: TextBag["play"] = {
-  premium: {
+  "premium": {
     "tag": "PREMIUM",
     "sample": "عيّنة PREMIUM",
     "note": "تعرض الخانات المعلَّمة «عيّنة Premium» فن الرتبة المرسوم الخاص بـ Premium للعرض فقط. هؤلاء لاعبون للعرض وليسوا مشتركين. فن Premium تجميلي فقط ولا يغيّر التقييم أو المطابقة أبدًا.",
     "artAlt": "فن رتبة {rank} المرسوم من Premium"
   },
-  room: {
+  "room": {
     "showcaseTag": "عرض توضيحي · لاعبون للعرض، وليست مباراة مباشرة. الطابور مغلق.",
     "showcaseShort": "عرض توضيحي",
     "queueClosed": "الطابور مغلق",
@@ -78,7 +78,6 @@ export const play: TextBag["play"] = {
   "arena": {
     "ariaLabel": "معاينة غرفة المباراة",
     "captain": "القائد",
-    "ping": "Ping {ping}",
     "mapPlates": "لوحات الخرائط",
     "selectMap": "اختر {map}",
     "settings": {
@@ -127,5 +126,5 @@ export const play: TextBag["play"] = {
       ]
     },
     "findMatchReason": "تُفتح المطابقة مع النسخة التجريبية التنافسية. قوائم الانتظار المصنفة لا تعمل بعد."
-  },
+  }
 };

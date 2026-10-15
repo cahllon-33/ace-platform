@@ -1,7 +1,7 @@
 import type { TextBag } from "../types";
 
 export const home: TextBag["home"] = {
-  ops: {
+  "ops": {
     "identityKicker": "PUSAT IDENTITAS",
     "signedOutTitle": "Masuk dengan Steam",
     "signedOutBody": "Hubungkan dengan Steam OpenID resmi untuk melihat avatar Steam, lambang rank, dan Rating Points kamu di sini. A.C.E. tidak pernah meminta kata sandi Steam.",
@@ -99,15 +99,12 @@ export const home: TextBag["home"] = {
     ]
   },
   "identity": {
-    "profilePlaceholder": "[Player_Profile]",
-    "notAvailable": "t/a",
     "elite": "ELITE"
   },
   "membership": {
     "compareLink": "Lihat tabel perbandingan lengkap"
   },
   "loot": {
-    "exampleCard": "Segera hadir",
     "wear": {
       "factoryNew": "Factory New",
       "minimalWear": "Minimal Wear"
@@ -121,7 +118,6 @@ export const home: TextBag["home"] = {
       "tlv": "Tel Aviv Relay"
     },
     "tileAria": "{name}. Server segera hadir.",
-    "tileSample": "Segera hadir · {sample}",
     "note": "Server regional 128-tick hadir bersama beta kompetitif."
   },
   "telemetry": {

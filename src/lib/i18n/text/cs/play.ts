@@ -1,13 +1,13 @@
 import type { TextBag } from "../types";
 
 export const play: TextBag["play"] = {
-  premium: {
+  "premium": {
     "tag": "PREMIUM",
     "sample": "UKÁZKA PREMIUM",
     "note": "Místa označená jako Ukázka Premium zobrazují ilustrovanou grafiku hodnosti Premium pouze pro ukázku. Jde o ukázkové hráče, ne předplatitele. Grafika Premium je čistě kosmetická a nikdy nemění hodnocení ani matchmaking.",
     "artAlt": "Ilustrovaná grafika hodnosti Premium {rank}"
   },
-  room: {
+  "room": {
     "showcaseTag": "UKÁZKA · Ukázkoví hráči, nejde o živý zápas. Fronta je zavřená.",
     "showcaseShort": "UKÁZKA",
     "queueClosed": "FRONTA ZAVŘENÁ",
@@ -20,108 +20,111 @@ export const play: TextBag["play"] = {
     "operatorB": "Původní grafika operátora A.C.E pro tým B: rebel s kapucí v grafitové výstroji se zlatými prvky",
     "artNote": "Původní grafika postav A.C.E. Nejde o herní modely."
   },
-  meta: {
-    title: "Hrát",
-    description: "Hodnocený matchmaking 5v5 se otevře, jakmile poběží anti-cheat A.C.E Shield.",
+  "meta": {
+    "title": "Hrát",
+    "description": "Hodnocený matchmaking 5v5 se otevře, jakmile poběží anti-cheat A.C.E Shield."
   },
-  boards: {
-    label: "Tabule front",
-    title: "Tři tabule 5v5",
-    note: "Volba zůstává na této stránce. Rankingové hledání je zavřené a výběr tabule nehledá soupeře.",
-    items: {
-      open: {
-        name: "Otevřená tabule",
-        rules: [
+  "boards": {
+    "label": "Tabule front",
+    "title": "Tři tabule 5v5",
+    "note": "Volba zůstává na této stránce. Rankingové hledání je zavřené a výběr tabule nehledá soupeře.",
+    "items": {
+      "open": {
+        "name": "Otevřená tabule",
+        "rules": [
           "Skupina libovolné velikosti, až pět hráčů",
           "Žádné rozpětí hodnocení",
           "Kontrolou identity je Steam OpenID",
-          "Určeno pro otevřený trénink, až bude fronta existovat",
-        ],
+          "Určeno pro otevřený trénink, až bude fronta existovat"
+        ]
       },
-      calibration: {
-        name: "Kalibrační tabule",
-        rules: [
+      "calibration": {
+        "name": "Kalibrační tabule",
+        "rules": [
           "Sólo, duo nebo trio",
           "Plánované rozpětí {points} bodů hodnocení",
           "Profil Steam už musí být uložen",
-          "Používá pravidlo hodnocení A.C.E. · vyhledávání již brzy",
-        ],
+          "Používá pravidlo hodnocení A.C.E. · vyhledávání již brzy"
+        ]
       },
-      elite: {
-        name: "Elitní tabule",
-        rules: [
+      "elite": {
+        "name": "Elitní tabule",
+        "rules": [
           "Sólo nebo duo",
           "Plánované rozpětí {points} bodů hodnocení",
           "Uložené členství musí být Plus nebo Premium",
-          "Přísnější psaná podmínka vstupu. Není připojen žádný fond cen",
-        ],
-      },
-    },
+          "Přísnější psaná podmínka vstupu. Není připojen žádný fond cen"
+        ]
+      }
+    }
   },
-  veto: {
-    kicker: "VETO MAP",
-    title: "Vyberte mapu",
-    lede: "Odmítejte mapy, dokud nezůstane jediná. Tato lobby nespouští Counter-Strike 2 a neotevírá server.",
-    mapSelected: "Vybraná mapa: {map}",
-    yourBan: "Váš zákaz",
-    opponentBan: "Zákaz soupeře",
-    selected: "Vybráno",
-    declined: "Odmítnuto",
-    decline: "Odmítnout",
-    reset: "Resetovat veto",
-    declinedToast: "Mapa {map} byla odmítnuta. Tato stránka neotevírá server.",
-    lockKicker: "ZÁPASOVÁ MÍSTNOST 5v5",
-    lockTitle: "Zbývající mapou je {map}",
-    lockBody:
-      "Tvoje zápasová místnost. Soutěžní zápasy zde začnou po spuštění soutěžní bety.",
-    close: "Zavřít",
+  "veto": {
+    "kicker": "VETO MAP",
+    "title": "Vyberte mapu",
+    "lede": "Odmítejte mapy, dokud nezůstane jediná. Tato lobby nespouští Counter-Strike 2 a neotevírá server.",
+    "mapSelected": "Vybraná mapa: {map}",
+    "yourBan": "Váš zákaz",
+    "opponentBan": "Zákaz soupeře",
+    "selected": "Vybráno",
+    "declined": "Odmítnuto",
+    "decline": "Odmítnout",
+    "reset": "Resetovat veto",
+    "declinedToast": "Mapa {map} byla odmítnuta. Tato stránka neotevírá server.",
+    "lockKicker": "ZÁPASOVÁ MÍSTNOST 5v5",
+    "lockTitle": "Zbývající mapou je {map}",
+    "lockBody": "Tvoje zápasová místnost. Soutěžní zápasy zde začnou po spuštění soutěžní bety.",
+    "close": "Zavřít"
   },
-  arena: {
-    ariaLabel: "Náhled zápasové místnosti",
-    captain: "Kapitán",
-    ping: "Ping {ping}",
-    mapPlates: "Destičky map",
-    selectMap: "Vybrat {map}",
-    settings: {
-      region: "Region",
-      mode: "Režim",
-      antiCheat: "Anti-cheat",
-      simulator: "Náhled",
+  "arena": {
+    "ariaLabel": "Náhled zápasové místnosti",
+    "captain": "Kapitán",
+    "mapPlates": "Destičky map",
+    "selectMap": "Vybrat {map}",
+    "settings": {
+      "region": "Region",
+      "mode": "Režim",
+      "antiCheat": "Anti-cheat",
+      "simulator": "Náhled"
     },
-    chat: {
-      title: "TÝMOVÝ CHAT",
-      kicker: "TÝMOVÝ CHAT · JIŽ BRZY",
-      captainName: "{name} (kapitán)",
-      layoutName: "{name}",
-      samples: ["gl hf", "jdeme na to", "dust 2 nám sedí", "připraven"],
-      inputLabel: "Zpráva v týmovém chatu",
-      placeholder: "Zpráva týmu…",
-      send: "Odeslat",
+    "chat": {
+      "title": "TÝMOVÝ CHAT",
+      "kicker": "TÝMOVÝ CHAT · JIŽ BRZY",
+      "captainName": "{name} (kapitán)",
+      "layoutName": "{name}",
+      "samples": [
+        "gl hf",
+        "jdeme na to",
+        "dust 2 nám sedí",
+        "připraven"
+      ],
+      "inputLabel": "Zpráva v týmovém chatu",
+      "placeholder": "Zpráva týmu…",
+      "send": "Odeslat"
     },
-    tiles: {
-      map: "Mapa",
-      server: "Server",
-      serverValue: "EU West · již brzy",
-      mode: "Režim",
+    "tiles": {
+      "map": "Mapa",
+      "server": "Server",
+      "serverValue": "EU West · již brzy",
+      "mode": "Režim"
     },
-    identity: {
-      title: "OVĚŘENÍ IDENTITY",
-      kicker: "OVĚŘENÍ TOTOŽNOSTI · JIŽ BRZY",
-      rows: [
+    "identity": {
+      "title": "OVĚŘENÍ IDENTITY",
+      "kicker": "OVĚŘENÍ TOTOŽNOSTI · JIŽ BRZY",
+      "rows": [
         "Ověření e-mailu · již brzy",
         "Ověření telefonu · již brzy",
-        "Ověření obličeje · již brzy",
-      ],
+        "Ověření obličeje · již brzy"
+      ]
     },
-    security: {
-      title: "ZABEZPEČENÍ ZÁPASU",
-      kicker: "A.C.E SHIELD · VE VÝVOJI",
-      rows: [
+    "security": {
+      "title": "ZABEZPEČENÍ ZÁPASU",
+      "kicker": "A.C.E SHIELD · VE VÝVOJI",
+      "rows": [
         "Ochrana anti-cheat · ve vývoji",
         "Kontrola integrity serveru · ve vývoji",
-        "Šifrování zápasových dat · ve vývoji",
-      ],
+        "Šifrování zápasových dat · ve vývoji"
+      ]
     },
-    findMatchReason: "Matchmaking se otevře se soutěžní betou. Hodnocené fronty zatím neběží.",
-  },
+    "findMatchReason": "Matchmaking se otevře se soutěžní betou. Hodnocené fronty zatím neběží."
+  }
 };

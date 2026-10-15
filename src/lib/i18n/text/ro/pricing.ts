@@ -1,7 +1,7 @@
 import type { TextBag } from "../types";
 
 export const pricing: TextBag["pricing"] = {
-  matrix: {
+  "matrix": {
     "kicker": "MATRICEA FUNCȚIILOR",
     "title": "Comparația abonamentelor",
     "note": "Bifă aurie: inclus. Liniuță: neinclus. În curând: parte din plan, dar încă nelansat. Niciun plan nu cumpără rating, matchmaking sau prioritate la coadă.",
@@ -26,13 +26,13 @@ export const pricing: TextBag["pricing"] = {
       "advantage": "Creștere de rating, avantaj la matchmaking sau la coadă"
     }
   },
-  plansR11: {
+  "plansR11": {
     "termsPlusStats": "Statistici de jucător: graficul evoluției ratingului din meciurile înregistrate. Indicatorii pentru % headshot și precizie vin în curând.",
     "codexTitle": "Codexul rangurilor Premium și cardul animat",
     "codexBody": "Aceasta este arta de rang și cardul de profil animat incluse în Premium. Este artă cosmetică pe aceeași scară Rating Points și nu oferă avantaj competitiv.",
     "codexLink": "Deschide codexul rangurilor Premium"
   },
-  premiumExtras: {
+  "premiumExtras": {
     "card": {
       "previewTag": "PREVIZUALIZARE",
       "previewNote": "Previzualizarea cardului de profil Premium animat. Numele și valorile sunt exemple. Un profil real afișează acest card doar când planul său stocat este Premium.",
@@ -40,8 +40,7 @@ export const pricing: TextBag["pricing"] = {
       "seal": "SIGILIUL ELITE",
       "rank": "Rang",
       "rating": "Rating",
-      "sampleName": "Jucător exemplu",
-      "ownTitle": "Cardul tău de profil Premium"
+      "sampleName": "Jucător exemplu"
     },
     "analysis": {
       "metaTitle": "Analiză extinsă a meciului",
@@ -164,7 +163,6 @@ export const pricing: TextBag["pricing"] = {
     "title": "Comparație abonamente",
     "note": "Fiecare rând reflectă site-ul de astăzi. Plata vine în curând, iar un plan plătit nu deschide niciodată o coadă și nu cumpără un avantaj.",
     "caption": "Free, Plus și Premium comparate după ce face site-ul astăzi",
-    "includedToday": "Inclus astăzi",
     "columns": {
       "free": "Free",
       "plus": "Plus",

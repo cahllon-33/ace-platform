@@ -1,7 +1,7 @@
 import type { TextBag } from "../types";
 
 export const pricing: TextBag["pricing"] = {
-  matrix: {
+  "matrix": {
     "kicker": "機能マトリクス",
     "title": "メンバーシップ比較",
     "note": "金のチェック：含まれる。ダッシュ：含まれない。近日公開：プランに含まれるが未リリース。どのプランでもレーティング、マッチメイキング、キュー優先は買えません。",
@@ -26,13 +26,13 @@ export const pricing: TextBag["pricing"] = {
       "advantage": "レーティングブースト、マッチメイキングやキューの優遇"
     }
   },
-  plansR11: {
+  "plansR11": {
     "termsPlusStats": "プレイヤー統計：記録された試合からのレーティング推移グラフ。ヘッドショット率と命中率のゲージは近日公開。",
     "codexTitle": "プレミアムランク・コーデックスとアニメーションカード",
     "codexBody": "これはPremiumに含まれるランクアートとアニメーションプロフィールカードです。同じRating Pointsラダー上の見た目だけのアートで、競技上の有利はありません。",
     "codexLink": "プレミアムランク・コーデックスを開く"
   },
-  premiumExtras: {
+  "premiumExtras": {
     "card": {
       "previewTag": "プレビュー",
       "previewNote": "アニメーション付きPremiumプロフィールカードのプレビューです。名前と数値はサンプルです。実際のプロフィールでは、保存されたプランがPremiumの場合にのみこのカードが表示されます。",
@@ -40,8 +40,7 @@ export const pricing: TextBag["pricing"] = {
       "seal": "ELITEシール",
       "rank": "ランク",
       "rating": "レーティング",
-      "sampleName": "サンプルプレイヤー",
-      "ownTitle": "あなたのPremiumプロフィールカード"
+      "sampleName": "サンプルプレイヤー"
     },
     "analysis": {
       "metaTitle": "拡張マッチ分析",
@@ -164,7 +163,6 @@ export const pricing: TextBag["pricing"] = {
     "title": "メンバーシップ比較",
     "note": "各行はサイトの現状を反映しています。決済はまもなく開始し、有料プランでキューが開いたり有利になったりすることはありません。",
     "caption": "Free、Plus、Premium を現在のサイト機能で比較",
-    "includedToday": "現在含まれるもの",
     "columns": {
       "free": "Free",
       "plus": "Plus",

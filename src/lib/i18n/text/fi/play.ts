@@ -1,13 +1,13 @@
 import type { TextBag } from "../types";
 
 export const play: TextBag["play"] = {
-  premium: {
+  "premium": {
     "tag": "PREMIUM",
     "sample": "PREMIUM-ESIMERKKI",
     "note": "Premium-esimerkiksi merkityt paikat näyttävät kuvitetun Premium-arvomerkin vain esittelyä varten. Ne ovat esimerkkipelaajia, eivät tilaajia. Premium-kuvitus on puhtaasti kosmeettinen eikä koskaan muuta pisteitä tai otteluiden muodostusta.",
     "artAlt": "Kuvitettu Premium-arvomerkki {rank}"
   },
-  room: {
+  "room": {
     "showcaseTag": "NÄYTÖS · Esimerkkipelaajia, ei live-ottelu. Jono on suljettu.",
     "showcaseShort": "NÄYTÖS",
     "queueClosed": "JONO SULJETTU",
@@ -78,7 +78,6 @@ export const play: TextBag["play"] = {
   "arena": {
     "ariaLabel": "Otteluhuoneen esikatselu",
     "captain": "Kapteeni",
-    "ping": "Ping {ping}",
     "mapPlates": "Karttalaatat",
     "selectMap": "Valitse {map}",
     "settings": {
@@ -127,5 +126,5 @@ export const play: TextBag["play"] = {
       ]
     },
     "findMatchReason": "Matchmaking avautuu kilpailubetan myötä. Ranked-jonot eivät ole vielä käynnissä."
-  },
+  }
 };

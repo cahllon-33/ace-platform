@@ -1,7 +1,7 @@
 import type { TextBag } from "../types";
 
 export const home: TextBag["home"] = {
-  ops: {
+  "ops": {
     "identityKicker": "ศูนย์ตัวตน",
     "signedOutTitle": "ลงชื่อเข้าใช้ด้วย Steam",
     "signedOutBody": "เชื่อมต่อด้วย Steam OpenID ทางการเพื่อดูอวาตาร์ Steam ตราแรงก์ และ Rating Points ของคุณที่นี่ A.C.E. ไม่เคยขอรหัสผ่าน Steam",
@@ -99,15 +99,12 @@ export const home: TextBag["home"] = {
     ]
   },
   "identity": {
-    "profilePlaceholder": "[Player_Profile]",
-    "notAvailable": "ไม่มี",
     "elite": "ELITE"
   },
   "membership": {
     "compareLink": "ดูตารางเปรียบเทียบฉบับเต็ม"
   },
   "loot": {
-    "exampleCard": "เร็ว ๆ นี้",
     "wear": {
       "factoryNew": "Factory New",
       "minimalWear": "Minimal Wear"
@@ -121,7 +118,6 @@ export const home: TextBag["home"] = {
       "tlv": "Tel Aviv Relay"
     },
     "tileAria": "{name} เซิร์ฟเวอร์เร็ว ๆ นี้",
-    "tileSample": "เร็ว ๆ นี้ · {sample}",
     "note": "เซิร์ฟเวอร์ภูมิภาค 128-tick จะมาพร้อมเบต้าการแข่งขัน"
   },
   "telemetry": {

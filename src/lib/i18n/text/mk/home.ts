@@ -1,7 +1,7 @@
 import type { TextBag } from "../types";
 
 export const home: TextBag["home"] = {
-  ops: {
+  "ops": {
     "identityKicker": "ЦЕНТАР ЗА ИДЕНТИТЕТ",
     "signedOutTitle": "Најави се преку Steam",
     "signedOutBody": "Поврзи се преку официјалниот Steam OpenID за тука да ги видиш твојот Steam аватар, амблемот на рангот и Rating Points. A.C.E. никогаш не бара Steam лозинка.",
@@ -99,15 +99,12 @@ export const home: TextBag["home"] = {
     ]
   },
   "identity": {
-    "profilePlaceholder": "[Player_Profile]",
-    "notAvailable": "н/п",
     "elite": "ELITE"
   },
   "membership": {
     "compareLink": "Види ја целата табела за споредба"
   },
   "loot": {
-    "exampleCard": "Наскоро",
     "wear": {
       "factoryNew": "Factory New",
       "minimalWear": "Minimal Wear"
@@ -121,7 +118,6 @@ export const home: TextBag["home"] = {
       "tlv": "Tel Aviv Relay"
     },
     "tileAria": "{name}. Серверот доаѓа наскоро.",
-    "tileSample": "Наскоро · {sample}",
     "note": "Регионалните 128-tick сервери пристигнуваат со натпреварувачката бета."
   },
   "telemetry": {

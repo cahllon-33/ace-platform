@@ -59,22 +59,7 @@ export const features: TextBag["features"] = {
     "kicker": "Kozmetikumok · hamarosan",
     "title": "A.C.E. LOOT ARCHITEKTÚRA — FEGYVERDROPOK",
     "lede": "Eredeti A.C.E. bevonatok, a bolttal érkeznek. A kozmetikumok soha nem befolyásolják a versenyt.",
-    "mockDrop": "Hamarosan",
-    "multiplierLabel": "Győzelmi arány szorzó követelmények",
-    "ladderLabel": "Heti létradropok",
-    "multiplierValue": "{multiplier}× sablon",
-    "ladderValue": "Heti hely · hamarosan",
     "checkout": "Fizetés · hamarosan"
-  },
-  "communityRail": {
-    "kicker": "Hírfolyam · hamarosan",
-    "newsTitle": "Legfrissebb létrahírek",
-    "newsItems": [
-      "Az ágrajz üres — 0 / 100 csapat.",
-      "A ranked keresés zárva marad, amíg nincs csalásellenes rendszer."
-    ],
-    "prizesTitle": "Napi skindíjak",
-    "prizesBody": "A jutalmak és a fizetés az 1. szezonnal nyílnak."
   },
   "identityPreview": {
     "badge": "Előnézet — nem megerősített",

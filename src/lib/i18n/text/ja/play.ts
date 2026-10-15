@@ -1,13 +1,13 @@
 import type { TextBag } from "../types";
 
 export const play: TextBag["play"] = {
-  premium: {
+  "premium": {
     "tag": "PREMIUM",
     "sample": "PREMIUMサンプル",
     "note": "「Premiumサンプル」と表示された枠は、Premiumのイラストランクアートを表示例としてのみ示しています。サンプル選手であり、加入者ではありません。Premiumアートは見た目だけのもので、レーティングやマッチングを変えることはありません。",
     "artAlt": "{rank}のPremiumイラストランクアート"
   },
-  room: {
+  "room": {
     "showcaseTag": "ショーケース · サンプル選手でありライブの試合ではありません。キューは閉じています。",
     "showcaseShort": "ショーケース",
     "queueClosed": "キュー停止中",
@@ -78,7 +78,6 @@ export const play: TextBag["play"] = {
   "arena": {
     "ariaLabel": "マッチルームのプレビュー",
     "captain": "キャプテン",
-    "ping": "Ping {ping}",
     "mapPlates": "マップイメージ",
     "selectMap": "{map} を選択",
     "settings": {
@@ -127,5 +126,5 @@ export const play: TextBag["play"] = {
       ]
     },
     "findMatchReason": "マッチメイキングは競技ベータとともに開始します。ランクキューはまだ稼働していません。"
-  },
+  }
 };

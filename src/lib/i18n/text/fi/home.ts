@@ -1,7 +1,7 @@
 import type { TextBag } from "../types";
 
 export const home: TextBag["home"] = {
-  ops: {
+  "ops": {
     "identityKicker": "IDENTITEETTIKESKUS",
     "signedOutTitle": "Kirjaudu Steamilla",
     "signedOutBody": "Yhdistä virallisella Steam OpenID:llä nähdäksesi täällä Steam-avatarisi, arvomerkkisi ja Rating Pointsisi. A.C.E. ei koskaan kysy Steam-salasanaa.",
@@ -99,15 +99,12 @@ export const home: TextBag["home"] = {
     ]
   },
   "identity": {
-    "profilePlaceholder": "[Player_Profile]",
-    "notAvailable": "ei saatavilla",
     "elite": "ELITE"
   },
   "membership": {
     "compareLink": "Katso koko vertailutaulukko"
   },
   "loot": {
-    "exampleCard": "Tulossa pian",
     "wear": {
       "factoryNew": "Factory New",
       "minimalWear": "Minimal Wear"
@@ -121,7 +118,6 @@ export const home: TextBag["home"] = {
       "tlv": "Tel Aviv Relay"
     },
     "tileAria": "{name}. Palvelin tulossa pian.",
-    "tileSample": "Tulossa pian · {sample}",
     "note": "128-tick-aluepalvelimet saapuvat kilpailubetan myötä."
   },
   "telemetry": {

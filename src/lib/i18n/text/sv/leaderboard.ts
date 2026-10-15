@@ -54,21 +54,5 @@ export const leaderboard: TextBag["leaderboard"] = {
     "srLabel": "Sök i topplistan",
     "fieldLabel": "Sök spelare",
     "placeholder": "Visningsnamn"
-  },
-  "seasonPreview": {
-    "banner": "SÄSONG 1-STEGE",
-    "noteLive": "Steam-kopplade namn är A.C.E.-konton. K/D visas när matchservrar registrerar kills.",
-    "noteSample": "Säsong 1-resultat visas här när rankade matcher spelas."
-  },
-  "playerCard": {
-    "kicker": "Förhandsvisning av spelarkort",
-    "title": "Operatörsdossier",
-    "badge": "Premium",
-    "note": "Ditt kort fylls med riktiga siffror när rankad matchning öppnar.",
-    "currentRank": "Nuvarande rank",
-    "rankValue": "A.C.E. Legend (division I)",
-    "competitiveRating": "Tävlingsrating",
-    "seasonRank": "Säsongsplacering",
-    "seasonTop": "(Topp {percent})"
   }
 };

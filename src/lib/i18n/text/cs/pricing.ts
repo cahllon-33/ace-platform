@@ -1,7 +1,7 @@
 import type { TextBag } from "../types";
 
 export const pricing: TextBag["pricing"] = {
-  matrix: {
+  "matrix": {
     "kicker": "MATICE FUNKCÍ",
     "title": "Srovnání členství",
     "note": "Zlatá fajfka: zahrnuto. Pomlčka: nezahrnuto. Brzy: součást plánu, ale zatím nevydáno. Žádný plán nekupuje rating, matchmaking ani přednost ve frontě.",
@@ -26,13 +26,13 @@ export const pricing: TextBag["pricing"] = {
       "advantage": "Navýšení ratingu, výhoda v matchmakingu nebo frontě"
     }
   },
-  plansR11: {
+  "plansR11": {
     "termsPlusStats": "Statistiky hráče: graf vývoje ratingu ze zaznamenaných zápasů. Ukazatele % headshotů a přesnosti brzy.",
     "codexTitle": "Kodex prémiových ranků a animovaná karta",
     "codexBody": "Toto je grafika ranků a animovaná profilová karta, které Premium obsahuje. Je to kosmetika na stejném žebříčku Rating Points bez soutěžní výhody.",
     "codexLink": "Otevřít kodex prémiových ranků"
   },
-  premiumExtras: {
+  "premiumExtras": {
     "card": {
       "previewTag": "NÁHLED",
       "previewNote": "Náhled animované prémiové profilové karty. Jméno a hodnoty jsou ukázkové. Skutečný profil tuto kartu zobrazí jen tehdy, když je jeho uložený plán Premium.",
@@ -40,8 +40,7 @@ export const pricing: TextBag["pricing"] = {
       "seal": "PEČEŤ ELITE",
       "rank": "Hodnost",
       "rating": "Rating",
-      "sampleName": "Ukázkový hráč",
-      "ownTitle": "Tvoje prémiová profilová karta"
+      "sampleName": "Ukázkový hráč"
     },
     "analysis": {
       "metaTitle": "Rozšířená analýza zápasu",
@@ -91,235 +90,226 @@ export const pricing: TextBag["pricing"] = {
       "pricingLink": "Přečíst podmínky Premium"
     }
   },
-  meta: {
-    title: "Ceník",
-    description:
-      "Členství A.C.E.: Zdarma {free}, Plus {plus}/měs., Premium {premium}/měs. Zobrazené ceny jsou uzamčené na celá čísla.",
+  "meta": {
+    "title": "Ceník",
+    "description": "Členství A.C.E.: Zdarma {free}, Plus {plus}/měs., Premium {premium}/měs. Zobrazené ceny jsou uzamčené na celá čísla."
   },
-  period: {
-    monthly: "/měs.",
+  "period": {
+    "monthly": "/měs."
   },
-  hero: {
-    badge: "Členství",
-    title: "Úrovně přístupu",
-    lede: "Zdarma {free}. Plus {plus}/měs. Premium {premium}/měs. Tyto částky jsou uzamčené na celá čísla. Placené tarify nikdy nekupují hodnocení ani snadnější soupeře.",
+  "hero": {
+    "badge": "Členství",
+    "title": "Úrovně přístupu",
+    "lede": "Zdarma {free}. Plus {plus}/měs. Premium {premium}/měs. Tyto částky jsou uzamčené na celá čísla. Placené tarify nikdy nekupují hodnocení ani snadnější soupeře."
   },
-  tiers: {
-    free: {
-      name: "ZDARMA",
-      note: "Grafit",
-      title: "Otevřený přístup",
-      points: [
+  "tiers": {
+    "free": {
+      "name": "ZDARMA",
+      "note": "Grafit",
+      "title": "Otevřený přístup",
+      "points": [
         "Přihlášení přes Steam OpenID. A.C.E. nikdy nežádá heslo ke službě Steam.",
         "Uložené hodnocení začíná na 1 200. Žádný výsledek zápasu ho nezměnil.",
-        "Všechny veřejné stránky: hra, turnaje, žebříček, týmy a pravidla.",
-      ],
+        "Všechny veřejné stránky: hra, turnaje, žebříček, týmy a pravidla."
+      ]
     },
-    plus: {
-      name: "A.C.E. PLUS",
-      note: "Plus",
-      title: "Statistiky hráče a podpora",
-      points: [
+    "plus": {
+      "name": "A.C.E. PLUS",
+      "note": "Plus",
+      "title": "Statistiky hráče a podpora",
+      "points": [
         "Vše z plánu Zdarma.",
         "Statistiky hráče: graf vývoje ratingu ze zaznamenaných zápasů A.C.E. Ukazatele % headshotů a přesnosti brzy.",
-        "Brzy: děkovný dopis a e-mailová podpora na support@ace-platform.gg, jakmile bude existovat platba. Plus nekupuje rating ani snazší soupeře.",
-      ],
+        "Brzy: děkovný dopis a e-mailová podpora na support@ace-platform.gg, jakmile bude existovat platba. Plus nekupuje rating ani snazší soupeře."
+      ]
     },
-    premium: {
-      name: "A.C.E. PREMIUM",
-      note: "Premium",
-      title: "Grafika profilu, odznaky a analýza",
-      points: [
+    "premium": {
+      "name": "A.C.E. PREMIUM",
+      "note": "Premium",
+      "title": "Grafika profilu, odznaky a analýza",
+      "points": [
         "Vše z Plus.",
         "Prémiová grafika ranků a kodex prémiových ranků, animovaná profilová karta, speciální odznaky a ELITE SEAL.",
         "Brzy: rozšířená analýza zápasů, předčasný přístup k betám a prioritní podpora pro členy Premium.",
-        "Žádná soutěžní výhoda: žádné navýšení Rating Points ani výhoda v matchmakingu.",
-      ],
-    },
+        "Žádná soutěžní výhoda: žádné navýšení Rating Points ani výhoda v matchmakingu."
+      ]
+    }
   },
-  card: {
-    elite: "ELITA",
-    stayFree: "Zůstat u tarifu zdarma",
-    freeNote: "Dostupné hned",
-    choose: "Zvolit {plan}",
-    chooseAria: "Zvolit {plan} za {price} měsíčně",
+  "card": {
+    "elite": "ELITA",
+    "stayFree": "Zůstat u tarifu zdarma",
+    "freeNote": "Dostupné hned",
+    "choose": "Zvolit {plan}",
+    "chooseAria": "Zvolit {plan} za {price} měsíčně"
   },
-  billing: {
-    kicker: "MATICE ČASOVÉ OSY VYÚČTOVÁNÍ",
-    title: "Jak bude vyúčtování fungovat, až bude existovat",
-    body: "Plus stojí přesně {plus}/měs. Premium stojí přesně {premium}/měs.",
-    display: {
-      label: "01 · ZOBRAZENÍ",
-      body: "Zdarma {free}. Plus {plus}/měs. Premium {premium}/měs. Placené tarify nikdy nekupují hodnocení ani snadnější soupeře.",
+  "billing": {
+    "kicker": "MATICE ČASOVÉ OSY VYÚČTOVÁNÍ",
+    "title": "Jak bude vyúčtování fungovat, až bude existovat",
+    "body": "Plus stojí přesně {plus}/měs. Premium stojí přesně {premium}/měs.",
+    "display": {
+      "label": "01 · ZOBRAZENÍ",
+      "body": "Zdarma {free}. Plus {plus}/měs. Premium {premium}/měs. Placené tarify nikdy nekupují hodnocení ani snadnější soupeře."
     },
-    rolling: {
-      label: "02 · PRŮBĚŽNÝ CYKLUS",
-      body: "Až bude vyúčtování existovat, platby se budou obnovovat v průběžném měsíčním cyklu. Částečně využitý měsíc se nevrací. Zrušení zastaví další cyklus a nemaže aktuální předplacené období.",
+    "rolling": {
+      "label": "02 · PRŮBĚŽNÝ CYKLUS",
+      "body": "Až bude vyúčtování existovat, platby se budou obnovovat v průběžném měsíčním cyklu. Částečně využitý měsíc se nevrací. Zrušení zastaví další cyklus a nemaže aktuální předplacené období."
     },
-    today: {
-      label: "03 · DNES",
-    },
+    "today": {
+      "label": "03 · DNES"
+    }
   },
-  compare: {
-    kicker: "Co může A.C.E. slíbit už dnes",
-    title: "Srovnání členství",
-    note: "Každý řádek odpovídá dnešnímu stavu webu. Platba bude brzy k dispozici a placený plán nikdy neotevírá frontu ani nekupuje výhodu.",
-    caption: "Srovnání tarifů Zdarma, Plus a Premium podle toho, co web dělá dnes",
-    includedToday: "Zahrnuto dnes",
-    columns: {
-      free: "Zdarma",
-      plus: "Plus",
-      premium: "Premium",
+  "compare": {
+    "kicker": "Co může A.C.E. slíbit už dnes",
+    "title": "Srovnání členství",
+    "note": "Každý řádek odpovídá dnešnímu stavu webu. Platba bude brzy k dispozici a placený plán nikdy neotevírá frontu ani nekupuje výhodu.",
+    "caption": "Srovnání tarifů Zdarma, Plus a Premium podle toho, co web dělá dnes",
+    "columns": {
+      "free": "Zdarma",
+      "plus": "Plus",
+      "premium": "Premium"
     },
-    rows: {
-      publicSite: {
-        feature: "Veřejný web",
-        detail: "Domů, hra, turnaje, žebříček, týmy, pravidla a podmínky.",
+    "rows": {
+      "publicSite": {
+        "feature": "Veřejný web",
+        "detail": "Domů, hra, turnaje, žebříček, týmy, pravidla a podmínky."
       },
-      steamSignIn: {
-        feature: "Přihlášení přes Steam",
-        detail: "Oficiální Steam OpenID. A.C.E. nikdy nežádá heslo ke službě Steam.",
+      "steamSignIn": {
+        "feature": "Přihlášení přes Steam",
+        "detail": "Oficiální Steam OpenID. A.C.E. nikdy nežádá heslo ke službě Steam."
       },
-      startingRating: {
-        feature: "Počáteční hodnocení",
-        detail: "Číslo uložené u nového účtu před jakýmkoli zaznamenaným zápasem.",
+      "startingRating": {
+        "feature": "Počáteční hodnocení",
+        "detail": "Číslo uložené u nového účtu před jakýmkoli zaznamenaným zápasem."
       },
-      recordedMatches: {
-        feature: "Zaznamenané zápasy",
-        detail: "Výhry a prohry zapsané z dokončeného zápasu A.C.E.",
+      "recordedMatches": {
+        "feature": "Zaznamenané zápasy",
+        "detail": "Výhry a prohry zapsané z dokončeného zápasu A.C.E."
       },
-      rankedQueue: {
-        feature: "Rankingová fronta",
-        detail: "NAJÍT ZÁPAS zůstává zavřené, dokud nebude existovat skutečná fronta.",
+      "rankedQueue": {
+        "feature": "Rankingová fronta",
+        "detail": "NAJÍT ZÁPAS zůstává zavřené, dokud nebude existovat skutečná fronta."
       },
-      cs2Servers: {
-        feature: "Servery CS2",
-        detail: "Tento web neposílá adresu serveru ani odkaz pro připojení.",
+      "cs2Servers": {
+        "feature": "Servery CS2",
+        "detail": "Tento web neposílá adresu serveru ani odkaz pro připojení."
       },
-      antiCheatClient: {
-        feature: "Klient anti-cheatu",
-        detail: "Z tohoto webu se nic nestahuje.",
+      "antiCheatClient": {
+        "feature": "Klient anti-cheatu",
+        "detail": "Z tohoto webu se nic nestahuje."
       },
-      charge: {
-        feature: "Platba",
-        detail: "Volba Plus nebo Premium nestrhává platbu z karty.",
+      "charge": {
+        "feature": "Platba",
+        "detail": "Volba Plus nebo Premium nestrhává platbu z karty."
       },
-      ratingForSale: {
-        feature: "Prodej hodnocení",
-        detail: "Placený štítek nikdy nekupuje hodnocení ani snadnější soupeře.",
+      "ratingForSale": {
+        "feature": "Prodej hodnocení",
+        "detail": "Placený štítek nikdy nekupuje hodnocení ani snadnější soupeře."
       },
-      prizeOrWeapon: {
-        feature: "Cena nebo zbraň",
-        detail: "Nedoručuje se žádný skin, nůž ani fond cen.",
+      "prizeOrWeapon": {
+        "feature": "Cena nebo zbraň",
+        "detail": "Nedoručuje se žádný skin, nůž ani fond cen."
       },
-      goldEliteSeal: {
-        feature: "Elitní pečeť a speciální odznaky",
-        detail:
-          "Pouze Premium, načteno z úrovně uložené na serveru. Kosmetické. Platba tuto úroveň nenastavuje.",
-      },
+      "goldEliteSeal": {
+        "feature": "Elitní pečeť a speciální odznaky",
+        "detail": "Pouze Premium, načteno z úrovně uložené na serveru. Kosmetické. Platba tuto úroveň nenastavuje."
+      }
     },
-    cells: {
-      open: "Otevřeno",
-      yes: "Ano",
-      noneYet: "Zatím žádné",
-      closed: "Zavřeno",
-      notConnected: "Již brzy",
-      notShipped: "Nedodáno",
-      noCharge: "Bez platby",
-      notForSale: "Není na prodej",
-      none: "Žádné",
-      no: "Ne",
-      storedTierOnly: "Jen uložený tarif",
-    },
+    "cells": {
+      "open": "Otevřeno",
+      "yes": "Ano",
+      "noneYet": "Zatím žádné",
+      "closed": "Zavřeno",
+      "notConnected": "Již brzy",
+      "notShipped": "Nedodáno",
+      "noCharge": "Bez platby",
+      "notForSale": "Není na prodej",
+      "none": "Žádné",
+      "no": "Ne",
+      "storedTierOnly": "Jen uložený tarif"
+    }
   },
-  receipt: {
-    plus: {
-      metaTitle: "Potvrzení Plus",
-      metaDescription:
-        "Dopis A.C.E. Plus zobrazený na tomto webu. Pokladna není v provozu, takže se nic neúčtuje a neodesílá se žádný e-mail.",
-      planName: "A.C.E. Plus",
-      nextLabel: "Pokračovat na A.C.E.",
-      nextBody:
-        "Veřejné stránky zůstávají otevřené. Tato volba neotevírá frontu a nemění uložený tarif.",
+  "receipt": {
+    "plus": {
+      "metaTitle": "Potvrzení Plus",
+      "metaDescription": "Dopis A.C.E. Plus zobrazený na tomto webu. Pokladna není v provozu, takže se nic neúčtuje a neodesílá se žádný e-mail.",
+      "planName": "A.C.E. Plus",
+      "nextLabel": "Pokračovat na A.C.E.",
+      "nextBody": "Veřejné stránky zůstávají otevřené. Tato volba neotevírá frontu a nemění uložený tarif."
     },
-    premium: {
-      metaTitle: "Potvrzení Premium",
-      metaDescription:
-        "Dopis A.C.E. Premium zobrazený na tomto webu. Pokladna není v provozu, takže se nic neúčtuje a neodesílá se žádný e-mail.",
-      planName: "A.C.E. Premium",
-      nextLabel: "Přečíst podmínky Premium",
-      nextBody:
-        "Premium tvoří prémiová grafika ranků, animovaná profilová karta, speciální odznaky a ELITE SEAL a k tomu vše z Plus. Uložení klanu ve Squads je zdarma pro každý účet.",
-    },
+    "premium": {
+      "metaTitle": "Potvrzení Premium",
+      "metaDescription": "Dopis A.C.E. Premium zobrazený na tomto webu. Pokladna není v provozu, takže se nic neúčtuje a neodesílá se žádný e-mail.",
+      "planName": "A.C.E. Premium",
+      "nextLabel": "Přečíst podmínky Premium",
+      "nextBody": "Premium tvoří prémiová grafika ranků, animovaná profilová karta, speciální odznaky a ELITE SEAL a k tomu vše z Plus. Uložení klanu ve Squads je zdarma pro každý účet."
+    }
   },
-  letter: {
-    kicker: "{plan} · {price} měsíčně",
-    title: "Děkujeme za váš výběr",
-    flag: "Tento dopis se zobrazuje na webu. Žádný e-mail nebyl odeslán. Z žádné karty nebyla stržena platba. Pokladna není v provozu a uložený tarif členství se nezměnil.",
-    greeting: "Milý hráči,",
-    intro:
-      "Děkujeme, že jste zvolili {plan}. Tato stránka je potvrzením. Zaznamenává zobrazenou cenu, co tato volba dnes zahrnuje, co nezahrnuje, a adresu podpory zveřejněnou na tomto webu.",
-    selected: {
-      title: "Co bylo zvoleno",
-      items: [
+  "letter": {
+    "kicker": "{plan} · {price} měsíčně",
+    "title": "Děkujeme za váš výběr",
+    "flag": "Tento dopis se zobrazuje na webu. Žádný e-mail nebyl odeslán. Z žádné karty nebyla stržena platba. Pokladna není v provozu a uložený tarif členství se nezměnil.",
+    "greeting": "Milý hráči,",
+    "intro": "Děkujeme, že jste zvolili {plan}. Tato stránka je potvrzením. Zaznamenává zobrazenou cenu, co tato volba dnes zahrnuje, co nezahrnuje, a adresu podpory zveřejněnou na tomto webu.",
+    "selected": {
+      "title": "Co bylo zvoleno",
+      "items": [
         "Název tarifu: {plan}.",
         "Zobrazená cena: {price} měsíčně. Částka je štítek, ne platba.",
         "Platba: žádná. Volba tohoto tarifu nestrhává platbu z karty.",
         "E-mail: žádný. A.C.E. tento dopis neodesílá do schránky.",
         "Uložená úroveň: beze změny. Speciální odznaky a elitní pečeť se zobrazí, jen když má účet již uloženo Premium.",
-        "Hodnocení: není na prodej. Nový účet stále začíná na 1 200.",
-      ],
+        "Hodnocení: není na prodej. Nový účet stále začíná na 1 200."
+      ]
     },
-    today: {
-      title: "Co můžete používat už dnes",
-      items: [
+    "today": {
+      "title": "Co můžete používat už dnes",
+      "items": [
         "Veřejný web: domů, hra, turnaje, žebříček, týmy, pravidla a podmínky.",
         "Přihlášení přes Steam pomocí oficiálního Steam OpenID. A.C.E. nikdy nežádá heslo ke službě Steam.",
-        "Stejné veřejné stránky jako u tarifu zdarma. Tato cena neotevírá samostatnou frontu.",
-      ],
+        "Stejné veřejné stránky jako u tarifu zdarma. Tato cena neotevírá samostatnou frontu."
+      ]
     },
-    excluded: {
-      title: "Co tato volba nezahrnuje",
-      items: [
+    "excluded": {
+      "title": "Co tato volba nezahrnuje",
+      "items": [
         "Živou rankingovou frontu. NAJÍT ZÁPAS zůstává zavřené.",
         "Server Counter-Strike 2, adresu serveru ani odkaz pro připojení.",
         "Stažení anti-cheatu. A.C.E Shield je ve vývoji.",
         "Cenu, skin, nůž ani fond cen.",
         "Místo na tabuli 100 týmů. Tato tabule ukazuje 0 registrovaných, dokud se neotevře sezóna.",
-        "Snadnější soupeře, koupené hodnocení ani jiný veřejný web než u tarifu zdarma.",
-      ],
+        "Snadnější soupeře, koupené hodnocení ani jiný veřejný web než u tarifu zdarma."
+      ]
     },
-    trouble: {
-      title: "Pokud něco nefunguje",
-      items: [
+    "trouble": {
+      "title": "Pokud něco nefunguje",
+      "items": [
         "Čekali jste platbu nebo placený tarif. Nic z toho nebylo použito. Účet zůstává, jak byl.",
         "Čekali jste tento dopis ve schránce. Existuje pouze na této stránce.",
         "Steam se nepřipojil. Použijte Připojit profil a nejprve zaškrtněte souhlas s podmínkami. Nikdy nezadávejte heslo ke službě Steam do A.C.E.",
-        "Potřebujete pomoc. Použijte adresu podpory níže nebo otevřete stránky nápovědy na tomto webu.",
-      ],
+        "Potřebujete pomoc. Použijte adresu podpory níže nebo otevřete stránky nápovědy na tomto webu."
+      ]
     },
-    support: {
-      title: "Podpora",
-      addressBefore: "Adresa podpory uvedená na tomto webu je ",
-      addressAfter: ".",
-      helpBefore: "Nápověda na webu: ",
-      supportLink: "Podpora",
-      helpAnd: " a ",
-      contactLink: "Kontakt",
-      rulesBefore: ". Pravidla najdete na stránkách ",
-      rulesLink: "Pravidla",
-      rulesAnd: " a ",
-      termsLink: "Podmínky",
-      helpAfter:
-        ". Výzva na stránce Podpora neotevírá požadavek a text napsaný na stránce Kontakt se nedoručuje.",
+    "support": {
+      "title": "Podpora",
+      "addressBefore": "Adresa podpory uvedená na tomto webu je ",
+      "addressAfter": ".",
+      "helpBefore": "Nápověda na webu: ",
+      "supportLink": "Podpora",
+      "helpAnd": " a ",
+      "contactLink": "Kontakt",
+      "rulesBefore": ". Pravidla najdete na stránkách ",
+      "rulesLink": "Pravidla",
+      "rulesAnd": " a ",
+      "termsLink": "Podmínky",
+      "helpAfter": ". Výzva na stránce Podpora neotevírá požadavek a text napsaný na stránce Kontakt se nedoručuje."
     },
-    next: {
-      title: "Další krok",
-    },
+    "next": {
+      "title": "Další krok"
+    }
   },
-  telemetry: {
-    kicker: "TELEMETRIE PLUS / PREMIUM",
-    copy: "TELEMETRIE PŘEHLEDU UZAMČENA — Přejděte na předplatné A.C.E. Plus nebo Premium a odemkněte dynamické křivky statistik v reálném čase a indexy specializace na zbraně.",
-    cta: "Otevřít ceník",
-  },
+  "telemetry": {
+    "kicker": "TELEMETRIE PLUS / PREMIUM",
+    "copy": "TELEMETRIE PŘEHLEDU UZAMČENA — Přejděte na předplatné A.C.E. Plus nebo Premium a odemkněte dynamické křivky statistik v reálném čase a indexy specializace na zbraně.",
+    "cta": "Otevřít ceník"
+  }
 };

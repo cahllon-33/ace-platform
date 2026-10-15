@@ -1,7 +1,7 @@
 import type { TextBag } from "../types";
 
 export const home: TextBag["home"] = {
-  ops: {
+  "ops": {
     "identityKicker": "पहचान हब",
     "signedOutTitle": "Steam से साइन इन करें",
     "signedOutBody": "आधिकारिक Steam OpenID से जुड़ें और यहाँ अपना Steam अवतार, रैंक प्रतीक और Rating Points देखें। A.C.E. कभी Steam पासवर्ड नहीं माँगता।",
@@ -99,15 +99,12 @@ export const home: TextBag["home"] = {
     ]
   },
   "identity": {
-    "profilePlaceholder": "[Player_Profile]",
-    "notAvailable": "लागू नहीं",
     "elite": "ELITE"
   },
   "membership": {
     "compareLink": "पूरी तुलना तालिका देखें"
   },
   "loot": {
-    "exampleCard": "जल्द आ रहा है",
     "wear": {
       "factoryNew": "Factory New",
       "minimalWear": "Minimal Wear"
@@ -121,7 +118,6 @@ export const home: TextBag["home"] = {
       "tlv": "Tel Aviv Relay"
     },
     "tileAria": "{name}। सर्वर जल्द आ रहा है।",
-    "tileSample": "जल्द आ रहा है · {sample}",
     "note": "128-टिक क्षेत्रीय सर्वर प्रतिस्पर्धी बीटा के साथ आएँगे।"
   },
   "telemetry": {

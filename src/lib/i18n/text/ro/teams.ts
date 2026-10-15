@@ -73,31 +73,6 @@ export const teams: TextBag["teams"] = {
       "briefTitle": "Brief operațional pentru 100 de echipe",
       "briefBody": "O singură machetă competitivă acoperă întregul câmp de 100 de echipe. Când se deschid înscrierile, primele 28 de clanuri acceptate primesc bye în Runda 1 și avansează în Runda 2. Celelalte 72 de clanuri joacă Runda 1. Numele de pe locurile neocupate sunt substituenți până la înscrierea clanurilor. Regulamentul complet se află sub arbore. Lobby-urile de meci se deschid odată cu beta competitivă, iar premiile se confirmă pe eveniment."
     },
-    "timeline": {
-      "ariaLabel": "Cronologia lansării turneului",
-      "kicker": "FOAIA DE PARCURS A CAMPIONATULUI",
-      "title": "CRONOLOGIA LANSĂRII TURNEULUI",
-      "stageLabel": "Etapa {id}",
-      "stages": {
-        "registrations": {
-          "title": "Înscrieri deschise",
-          "state": "PULS DE PREVIZUALIZARE"
-        },
-        "calibration": {
-          "title": "Tablouri regionale de calibrare",
-          "state": "BLOCAT"
-        },
-        "quarterFinals": {
-          "title": "Sferturile Elite Pro",
-          "state": "BLOCAT"
-        },
-        "finals": {
-          "title": "Finalele Grand Apex",
-          "state": "BLOCAT"
-        }
-      },
-      "disclaimer": "Etapa 01 se deschide prima când încep înscrierile. Urmează etapele 02–04. Fondurile de premii se confirmă pe pagina evenimentului după anunț."
-    },
     "bracket": {
       "kicker": "Eliminatorii cu 100 de echipe · în curând",
       "title": "Matricea tabloului cu 100 de echipe",

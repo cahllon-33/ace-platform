@@ -1,7 +1,7 @@
 import type { TextBag } from "../types";
 
 export const home: TextBag["home"] = {
-  ops: {
+  "ops": {
     "identityKicker": "مركز الهوية",
     "signedOutTitle": "سجّل الدخول عبر Steam",
     "signedOutBody": "اتصل عبر Steam OpenID الرسمي لترى هنا صورة Steam الرمزية وشعار رتبتك ونقاط Rating Points. لا تطلب A.C.E. كلمة مرور Steam أبدًا.",
@@ -99,15 +99,12 @@ export const home: TextBag["home"] = {
     ]
   },
   "identity": {
-    "profilePlaceholder": "[Player_Profile]",
-    "notAvailable": "غير متاح",
     "elite": "النخبة"
   },
   "membership": {
     "compareLink": "عرض جدول المقارنة الكامل"
   },
   "loot": {
-    "exampleCard": "قريبًا",
     "wear": {
       "factoryNew": "Factory New",
       "minimalWear": "Minimal Wear"
@@ -121,7 +118,6 @@ export const home: TextBag["home"] = {
       "tlv": "Tel Aviv Relay"
     },
     "tileAria": "{name}. الخادم قريبًا.",
-    "tileSample": "قريبًا · {sample}",
     "note": "تصل الخوادم الإقليمية بمعدل 128 تيك مع النسخة التجريبية التنافسية."
   },
   "telemetry": {

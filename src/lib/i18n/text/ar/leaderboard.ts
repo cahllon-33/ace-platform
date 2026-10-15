@@ -54,21 +54,5 @@ export const leaderboard: TextBag["leaderboard"] = {
     "srLabel": "البحث في لوحة المتصدرين",
     "fieldLabel": "البحث عن لاعبين",
     "placeholder": "الاسم المعروض"
-  },
-  "seasonPreview": {
-    "banner": "سلّم الموسم الأول",
-    "noteLive": "الأسماء المرتبطة بـ Steam هي حسابات A.C.E. تظهر نسبة القتل/الموت بعد أن تبدأ خوادم المباريات بتسجيل عمليات القتل.",
-    "noteSample": "تظهر سجلات الموسم الأول هنا مع إقامة المباريات المصنفة."
-  },
-  "playerCard": {
-    "kicker": "معاينة بطاقة اللاعب",
-    "title": "ملف المشغّل",
-    "badge": "Premium",
-    "note": "ستمتلئ بطاقتك بأرقام حقيقية عند فتح المطابقة المصنفة.",
-    "currentRank": "المرتبة الحالية",
-    "rankValue": "A.C.E. Legend (القسم I)",
-    "competitiveRating": "التصنيف التنافسي",
-    "seasonRank": "مرتبة الموسم",
-    "seasonTop": "(أعلى {percent})"
   }
 };

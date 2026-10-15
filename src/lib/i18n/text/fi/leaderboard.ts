@@ -54,21 +54,5 @@ export const leaderboard: TextBag["leaderboard"] = {
     "srLabel": "Hae tulostaulusta",
     "fieldLabel": "Hae pelaajia",
     "placeholder": "Näyttönimi"
-  },
-  "seasonPreview": {
-    "banner": "KAUDEN 1 TIKAPUUT",
-    "noteLive": "Steamiin linkitetyt nimet ovat A.C.E.-tilejä. K/D näkyy, kun otteluserverit tallentavat tappoja.",
-    "noteSample": "Kauden 1 tulokset näkyvät täällä, kun ranked-otteluita pelataan."
-  },
-  "playerCard": {
-    "kicker": "Pelaajakortin esikatselu",
-    "title": "Operaattorin kansio",
-    "badge": "Premium",
-    "note": "Korttisi täyttyy oikeilla luvuilla, kun ranked-matchmaking avautuu.",
-    "currentRank": "Nykyinen ranking",
-    "rankValue": "A.C.E. Legend (divisioona I)",
-    "competitiveRating": "Kilpailuluokitus",
-    "seasonRank": "Kauden sijoitus",
-    "seasonTop": "(Top {percent})"
   }
 };

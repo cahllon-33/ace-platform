@@ -1,13 +1,13 @@
 import type { TextBag } from "../types";
 
 export const play: TextBag["play"] = {
-  premium: {
+  "premium": {
     "tag": "PREMIUM",
     "sample": "PREMIUM नमूना",
     "note": "Premium नमूना वाले स्लॉट केवल प्रदर्शन के लिए Premium का चित्रित रैंक आर्ट दिखाते हैं। ये नमूना खिलाड़ी हैं, सब्सक्राइबर नहीं। Premium आर्ट केवल सजावटी है और रेटिंग या मैचमेकिंग को कभी नहीं बदलता।",
     "artAlt": "{rank} Premium चित्रित रैंक आर्ट"
   },
-  room: {
+  "room": {
     "showcaseTag": "शोकेस · नमूना खिलाड़ी, लाइव मैच नहीं। कतार बंद है।",
     "showcaseShort": "शोकेस",
     "queueClosed": "कतार बंद",
@@ -78,7 +78,6 @@ export const play: TextBag["play"] = {
   "arena": {
     "ariaLabel": "मैच रूम पूर्वावलोकन",
     "captain": "कप्तान",
-    "ping": "पिंग {ping}",
     "mapPlates": "मैप प्लेटें",
     "selectMap": "{map} चुनें",
     "settings": {
@@ -127,5 +126,5 @@ export const play: TextBag["play"] = {
       ]
     },
     "findMatchReason": "मैचमेकिंग प्रतिस्पर्धी बीटा के साथ खुलेगी। रैंक्ड कतारें अभी नहीं चल रहीं।"
-  },
+  }
 };

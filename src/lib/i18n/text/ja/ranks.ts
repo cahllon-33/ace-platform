@@ -1,7 +1,7 @@
 import type { TextBag } from "../types";
 
 export const ranks: TextBag["ranks"] = {
-  rpRules: {
+  "rpRules": {
     "kicker": "A.C.E レーティングポイント規定",
     "title": "Rating Points の変動",
     "lede": "規定バージョン {version}。新規プレイヤーは全員、ティア3（{tier}）の {start} RP から始まります。ラダーは意図的にゆっくり進みます。中盤より上のティアは、前のティアより多くの勝利が必要です。",
@@ -46,29 +46,29 @@ export const ranks: TextBag["ranks"] = {
     "ex4": "平均が自分より 200 RP 低いチーム相手では、勝利で +{weakWin}、敗北で −{weakLoss}。",
     "note": "これらの数値は、検証済みの試合結果を適用するコードと同じコードで計算しています。保存された試合ではなく例です。"
   },
-  premiumCodex: {
+  "premiumCodex": {
     "kicker": "プレミアムランク・コーデックス",
     "title": "プレミアムランク・コーデックス",
     "lede": "ランクごとに1つ、計10個のイラストのクリスタルエンブレム。標準ランクと同じRating Pointsラダー上の見た目だけのプロフィールアートです。レーティング、マッチメイキング、キューは変わりません。",
     "cosmetic": "見た目のアート · 同じRPラダー · A.C.E Premium 月額$7のみ",
     "imgAlt": "{name}のPremiumランクアート、レベル{level}"
   },
-  premiumRanks: {
-    kicker: "プレミアムランク",
-    plan: "A.C.E PREMIUM · 月額$7のみ",
-    title: "プレミアムランクアート",
-    lede: "オリジナルのイラスト版A.C.E.ランクセット：III/II/Iディビジョン付きの10個のクリスタルエンブレム、レーティングプロトコル、Legend詳細カード、ドラッグで回転する3Dビューア。Premiumメンバー向けのプロフィールアートです。標準ランクと同じRating Pointsのラダーを読み取り、競技上の優位性は一切ありません。",
-    demo: "デモ値：このボードの進捗、勝率、ディビジョンはサンプルで、ライブ統計ではありません。サインイン中は、表示されるレーティングが保存済みのレーティングです。",
-    locked: "近日公開：決済はまだ存在しないため、現在Premiumのアカウントはありません。サーバーは保存されたプランがPremiumのプロフィールにのみプレミアムランクアートを適用します。",
-    standardKicker: "標準ランク",
-    standardNote: "すべてのアカウントがこの3Dベクターエンブレムを使います。",
-    legendTag: "PREMIUM",
-    pickerTitle: "プロフィールのランクアート",
-    pickerStandard: "標準",
-    pickerPremium: "プレミアム",
-    pickerLocked: "プレミアムランクアートはA.C.E Premium（月額$7）向けです。近日公開：決済はまだ存在しません。",
-    pickerSaved: "保存しました。",
-    pickerFailed: "保存されませんでした。プレミアムランクアートにはA.C.E Premiumが必要です。",
+  "premiumRanks": {
+    "kicker": "プレミアムランク",
+    "plan": "A.C.E PREMIUM · 月額$7のみ",
+    "title": "プレミアムランクアート",
+    "lede": "オリジナルのイラスト版A.C.E.ランクセット：III/II/Iディビジョン付きの10個のクリスタルエンブレム、レーティングプロトコル、Legend詳細カード、ドラッグで回転する3Dビューア。Premiumメンバー向けのプロフィールアートです。標準ランクと同じRating Pointsのラダーを読み取り、競技上の優位性は一切ありません。",
+    "demo": "デモ値：このボードの進捗、勝率、ディビジョンはサンプルで、ライブ統計ではありません。サインイン中は、表示されるレーティングが保存済みのレーティングです。",
+    "locked": "近日公開：決済はまだ存在しないため、現在Premiumのアカウントはありません。サーバーは保存されたプランがPremiumのプロフィールにのみプレミアムランクアートを適用します。",
+    "standardKicker": "標準ランク",
+    "standardNote": "すべてのアカウントがこの3Dベクターエンブレムを使います。",
+    "legendTag": "PREMIUM",
+    "pickerTitle": "プロフィールのランクアート",
+    "pickerStandard": "標準",
+    "pickerPremium": "プレミアム",
+    "pickerLocked": "プレミアムランクアートはA.C.E Premium（月額$7）向けです。近日公開：決済はまだ存在しません。",
+    "pickerSaved": "保存しました。",
+    "pickerFailed": "保存されませんでした。プレミアムランクアートにはA.C.E Premiumが必要です。"
   },
   "meta": {
     "title": "競技ランク",
@@ -142,10 +142,7 @@ export const ranks: TextBag["ranks"] = {
   "card": {
     "rank": "ランク {level}",
     "targetWinRate": "目標勝率 {winRate}",
-    "calibrationTarget": "キャリブレーション目標",
-    "floor": "下限",
-    "samplesNote": "各ティアの目標値。",
-    "progressMockup": "進行状況"
+    "floor": "下限"
   },
   "turntable": {
     "stageLabel": "{name} のオービタル・エンブレム。ドラッグで回転。",

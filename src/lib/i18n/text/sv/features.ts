@@ -59,22 +59,7 @@ export const features: TextBag["features"] = {
     "kicker": "Kosmetika · kommer snart",
     "title": "A.C.E. BELÖNINGSARKITEKTUR — VAPENDROPPAR",
     "lede": "Original-finishar från A.C.E. som kommer med butiken. Kosmetika påverkar aldrig tävlingen.",
-    "mockDrop": "Kommer snart",
-    "multiplierLabel": "Krav för vinstprocentmultiplikator",
-    "ladderLabel": "Veckovisa stegdroppar",
-    "multiplierValue": "{multiplier}×-mall",
-    "ladderValue": "Veckoplats · kommer snart",
     "checkout": "Betalning · kommer snart"
-  },
-  "communityRail": {
-    "kicker": "Flöde · kommer snart",
-    "newsTitle": "Senaste stegnyheterna",
-    "newsItems": [
-      "Slutspelsträdet är tomt — 0 av 100 lag.",
-      "Rankad sökning förblir stängd tills anti-fusk finns."
-    ],
-    "prizesTitle": "Dagliga skin-priser",
-    "prizesBody": "Belöningar och betalning öppnar med säsong 1."
   },
   "identityPreview": {
     "badge": "Förhandsvisning — ej bekräftad",

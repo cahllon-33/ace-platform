@@ -1,7 +1,7 @@
 import type { TextBag } from "../types";
 
 export const pricing: TextBag["pricing"] = {
-  matrix: {
+  "matrix": {
     "kicker": "MATRIKS FITUR",
     "title": "Perbandingan keanggotaan",
     "note": "Centang emas: termasuk. Garis: tidak termasuk. Segera hadir: bagian dari paket tetapi belum dirilis. Tidak ada paket yang membeli rating, matchmaking, atau prioritas antrean.",
@@ -26,13 +26,13 @@ export const pricing: TextBag["pricing"] = {
       "advantage": "Dongkrak rating, keunggulan matchmaking atau antrean"
     }
   },
-  plansR11: {
+  "plansR11": {
     "termsPlusStats": "Statistik pemain: grafik pergerakan rating dari pertandingan yang tercatat. Pengukur % headshot dan akurasi segera hadir.",
     "codexTitle": "Kodeks rank Premium dan kartu animasi",
     "codexBody": "Ini adalah seni rank dan kartu profil animasi yang termasuk dalam Premium. Ini seni kosmetik di tangga Rating Points yang sama dan tidak memberi keunggulan kompetitif.",
     "codexLink": "Buka kodeks rank Premium"
   },
-  premiumExtras: {
+  "premiumExtras": {
     "card": {
       "previewTag": "PRATINJAU",
       "previewNote": "Pratinjau kartu profil Premium animasi. Nama dan nilai adalah contoh. Profil asli hanya menampilkan kartu ini jika paket tersimpannya Premium.",
@@ -40,8 +40,7 @@ export const pricing: TextBag["pricing"] = {
       "seal": "SEGEL ELITE",
       "rank": "Peringkat",
       "rating": "Rating",
-      "sampleName": "Pemain contoh",
-      "ownTitle": "Kartu profil Premium-mu"
+      "sampleName": "Pemain contoh"
     },
     "analysis": {
       "metaTitle": "Analisis pertandingan lanjutan",
@@ -164,7 +163,6 @@ export const pricing: TextBag["pricing"] = {
     "title": "Perbandingan keanggotaan",
     "note": "Setiap baris mencerminkan situs hari ini. Pembayaran segera hadir, dan paket berbayar tidak pernah membuka antrean atau membeli keunggulan.",
     "caption": "Free, Plus, dan Premium dibandingkan berdasarkan apa yang dilakukan situs hari ini",
-    "includedToday": "Termasuk hari ini",
     "columns": {
       "free": "Free",
       "plus": "Plus",

@@ -1,13 +1,13 @@
 import type { TextBag } from "../types";
 
 export const play: TextBag["play"] = {
-  premium: {
+  "premium": {
     "tag": "PREMIUM",
     "sample": "ตัวอย่าง PREMIUM",
     "note": "ช่องที่ระบุว่าตัวอย่าง Premium แสดงอาร์ตแรงก์ภาพวาดของ Premium เพื่อการแสดงผลเท่านั้น เป็นผู้เล่นตัวอย่าง ไม่ใช่สมาชิก อาร์ต Premium เป็นเพียงความสวยงามและไม่เปลี่ยนเรตติ้งหรือการจับคู่",
     "artAlt": "อาร์ตแรงก์ภาพวาด Premium ของ {rank}"
   },
-  room: {
+  "room": {
     "showcaseTag": "ตัวอย่าง · ผู้เล่นตัวอย่าง ไม่ใช่แมตช์สด คิวปิดอยู่",
     "showcaseShort": "ตัวอย่าง",
     "queueClosed": "คิวปิดอยู่",
@@ -78,7 +78,6 @@ export const play: TextBag["play"] = {
   "arena": {
     "ariaLabel": "ตัวอย่างห้องแข่งขัน",
     "captain": "กัปตัน",
-    "ping": "Ping {ping}",
     "mapPlates": "แผ่นแมป",
     "selectMap": "เลือก {map}",
     "settings": {
@@ -127,5 +126,5 @@ export const play: TextBag["play"] = {
       ]
     },
     "findMatchReason": "ระบบจับคู่จะเปิดพร้อมเบต้าการแข่งขัน คิวจัดอันดับยังไม่ทำงาน"
-  },
+  }
 };

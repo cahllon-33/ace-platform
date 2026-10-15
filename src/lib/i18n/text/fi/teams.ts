@@ -73,31 +73,6 @@ export const teams: TextBag["teams"] = {
       "briefTitle": "100 joukkueen operaatiokatsaus",
       "briefBody": "Yksi kilpailuasettelu kattaa koko 100 joukkueen kentän. Kun ilmoittautuminen avautuu, ensimmäiset 28 hyväksyttyä klaania saavat vapaakierroksen 1. kierrokselta ja etenevät 2. kierrokselle. Muut 72 klaania pelaavat 1. kierroksen. Täyttämättömien paikkojen nimet ovat paikkamerkkejä, kunnes klaanit ilmoittautuvat. Koko sääntökirja on puun alla. Otteluaulat avautuvat kilpailubetan myötä, ja palkinnot vahvistetaan tapahtumakohtaisesti."
     },
-    "timeline": {
-      "ariaLabel": "Turnauksen julkaisuaikataulu",
-      "kicker": "MESTARUUDEN TIEKARTTA",
-      "title": "TURNAUKSEN JULKAISUAIKATAULU",
-      "stageLabel": "Vaihe {id}",
-      "stages": {
-        "registrations": {
-          "title": "Avoimet ilmoittautumiset",
-          "state": "ESIKATSELUPULSSI"
-        },
-        "calibration": {
-          "title": "Alueelliset kalibrointikaaviot",
-          "state": "LUKITTU"
-        },
-        "quarterFinals": {
-          "title": "Elite Pro -puolivälierät",
-          "state": "LUKITTU"
-        },
-        "finals": {
-          "title": "Grand Apex -finaalit",
-          "state": "LUKITTU"
-        }
-      },
-      "disclaimer": "Vaihe 01 avautuu ensin, kun ilmoittautuminen alkaa. Vaiheet 02–04 seuraavat. Palkintopotit vahvistetaan tapahtumasivulla, kun ne julkistetaan."
-    },
     "bracket": {
       "kicker": "100 joukkueen pudotuspelit · tulossa pian",
       "title": "100 joukkueen kaaviomatriisi",

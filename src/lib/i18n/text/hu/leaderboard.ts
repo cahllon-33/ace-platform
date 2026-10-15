@@ -54,21 +54,5 @@ export const leaderboard: TextBag["leaderboard"] = {
     "srLabel": "Keresés a ranglistán",
     "fieldLabel": "Játékosok keresése",
     "placeholder": "Megjelenített név"
-  },
-  "seasonPreview": {
-    "banner": "1. SZEZON LÉTRÁJA",
-    "noteLive": "A Steamhez kapcsolt nevek A.C.E.-fiókok. A K/D akkor jelenik meg, amikor a meccsszerverek rögzítik az öléseket.",
-    "noteSample": "Az 1. szezon eredményei itt jelennek meg, ahogy ranked meccseket játszanak."
-  },
-  "playerCard": {
-    "kicker": "Játékoskártya előnézete",
-    "title": "Operátori dosszié",
-    "badge": "Premium",
-    "note": "A kártyád valós számokkal telik meg, amikor a ranked párosítás megnyílik.",
-    "currentRank": "Jelenlegi rang",
-    "rankValue": "A.C.E. Legend (I. divízió)",
-    "competitiveRating": "Versenyértékelés",
-    "seasonRank": "Szezonhelyezés",
-    "seasonTop": "(Top {percent})"
   }
 };

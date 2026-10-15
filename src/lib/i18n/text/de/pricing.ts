@@ -1,7 +1,7 @@
 import type { TextBag } from "../types";
 
 export const pricing: TextBag["pricing"] = {
-  matrix: {
+  "matrix": {
     "kicker": "FEATURE-MATRIX",
     "title": "Mitgliedschaften im Vergleich",
     "note": "Goldener Haken: enthalten. Strich: nicht enthalten. Demnächst: Teil des Plans, aber noch nicht veröffentlicht. Kein Plan kauft Rating, Matchmaking oder Warteschlangen-Priorität.",
@@ -26,13 +26,13 @@ export const pricing: TextBag["pricing"] = {
       "advantage": "Rating-Boost, Matchmaking- oder Warteschlangen-Vorteil"
     }
   },
-  plansR11: {
+  "plansR11": {
     "termsPlusStats": "Spielerstatistiken: dein Rating-Verlauf aus erfassten Matches. Anzeigen für Headshot-% und Treffsicherheit folgen in Kürze.",
     "codexTitle": "Premium-Rang-Codex und animierte Karte",
     "codexBody": "Das sind die Rang-Art und die animierte Profilkarte, die Premium enthält. Es ist kosmetische Art auf derselben Rating-Points-Leiter und bringt keinen Wettbewerbsvorteil.",
     "codexLink": "Premium-Rang-Codex öffnen"
   },
-  premiumExtras: {
+  "premiumExtras": {
     "card": {
       "previewTag": "VORSCHAU",
       "previewNote": "Vorschau der animierten Premium-Profilkarte. Name und Werte sind Beispiele. Ein echtes Profil zeigt diese Karte nur, wenn sein gespeicherter Plan Premium ist.",
@@ -40,8 +40,7 @@ export const pricing: TextBag["pricing"] = {
       "seal": "ELITE-SIEGEL",
       "rank": "Rang",
       "rating": "Rating",
-      "sampleName": "Beispielspieler",
-      "ownTitle": "Deine Premium-Profilkarte"
+      "sampleName": "Beispielspieler"
     },
     "analysis": {
       "metaTitle": "Erweiterte Matchanalyse",
@@ -91,235 +90,226 @@ export const pricing: TextBag["pricing"] = {
       "pricingLink": "Premium-Bedingungen lesen"
     }
   },
-  meta: {
-    title: "Preise",
-    description:
-      "A.C.E.-Mitgliedschaft: Kostenlos {free}, Plus {plus}/Monat, Premium {premium}/Monat. Anzeigepreise als ganze Zahlen gesperrt.",
+  "meta": {
+    "title": "Preise",
+    "description": "A.C.E.-Mitgliedschaft: Kostenlos {free}, Plus {plus}/Monat, Premium {premium}/Monat. Anzeigepreise als ganze Zahlen gesperrt."
   },
-  period: {
-    monthly: "/Monat",
+  "period": {
+    "monthly": "/Monat"
   },
-  hero: {
-    badge: "Mitgliedschaft",
-    title: "Zugangsstufen",
-    lede: "Kostenlos {free}. Plus {plus}/Monat. Premium {premium}/Monat. Diese Beträge sind als ganze Zahlen gesperrt. Bezahlte Pläne kaufen niemals Wertung oder leichtere Gegner.",
+  "hero": {
+    "badge": "Mitgliedschaft",
+    "title": "Zugangsstufen",
+    "lede": "Kostenlos {free}. Plus {plus}/Monat. Premium {premium}/Monat. Diese Beträge sind als ganze Zahlen gesperrt. Bezahlte Pläne kaufen niemals Wertung oder leichtere Gegner."
   },
-  tiers: {
-    free: {
-      name: "KOSTENLOS",
-      note: "Graphit",
-      title: "Offener Zugang",
-      points: [
+  "tiers": {
+    "free": {
+      "name": "KOSTENLOS",
+      "note": "Graphit",
+      "title": "Offener Zugang",
+      "points": [
         "Melde dich mit Steam OpenID an. A.C.E. fragt niemals nach einem Steam-Passwort.",
         "Eine gespeicherte Wertung startet bei 1.200. Kein Matchergebnis hat sie verändert.",
-        "Alle öffentlichen Seiten: Spielen, Turniere, Rangliste, Teams und Regeln.",
-      ],
+        "Alle öffentlichen Seiten: Spielen, Turniere, Rangliste, Teams und Regeln."
+      ]
     },
-    plus: {
-      name: "A.C.E. PLUS",
-      note: "Plus",
-      title: "Spielerstatistiken und Support",
-      points: [
+    "plus": {
+      "name": "A.C.E. PLUS",
+      "note": "Plus",
+      "title": "Spielerstatistiken und Support",
+      "points": [
         "Alles aus Free.",
         "Spielerstatistiken: dein Rating-Verlauf aus erfassten A.C.E.-Matches. Anzeigen für Headshot-% und Treffsicherheit folgen in Kürze.",
-        "Demnächst: ein Dankesbrief und E-Mail-Support unter support@ace-platform.gg, sobald es einen Checkout gibt. Plus kauft kein Rating und keine leichteren Gegner.",
-      ],
+        "Demnächst: ein Dankesbrief und E-Mail-Support unter support@ace-platform.gg, sobald es einen Checkout gibt. Plus kauft kein Rating und keine leichteren Gegner."
+      ]
     },
-    premium: {
-      name: "A.C.E. PREMIUM",
-      note: "Premium",
-      title: "Profilkunst, Abzeichen und Analyse",
-      points: [
+    "premium": {
+      "name": "A.C.E. PREMIUM",
+      "note": "Premium",
+      "title": "Profilkunst, Abzeichen und Analyse",
+      "points": [
         "Alles aus Plus.",
         "Premium-Rang-Art und der Premium-Rang-Codex, die animierte Profilkarte, Sonderabzeichen und das ELITE SEAL.",
         "Demnächst: erweiterte Match-Analyse, früher Beta-Zugang und bevorzugter Support für Premium-Mitglieder.",
-        "Kein Wettbewerbsvorteil: kein Rating-Points-Boost und kein Matchmaking-Vorteil.",
-      ],
-    },
+        "Kein Wettbewerbsvorteil: kein Rating-Points-Boost und kein Matchmaking-Vorteil."
+      ]
+    }
   },
-  card: {
-    elite: "ELITE",
-    stayFree: "Beim kostenlosen Plan bleiben",
-    freeNote: "Jetzt verfügbar",
-    choose: "{plan} wählen",
-    chooseAria: "{plan} für {price} pro Monat wählen",
+  "card": {
+    "elite": "ELITE",
+    "stayFree": "Beim kostenlosen Plan bleiben",
+    "freeNote": "Jetzt verfügbar",
+    "choose": "{plan} wählen",
+    "chooseAria": "{plan} für {price} pro Monat wählen"
   },
-  billing: {
-    kicker: "ZEITLEISTE DER ABRECHNUNG",
-    title: "So wird die Abrechnung funktionieren, sobald es sie gibt",
-    body: "Plus kostet genau {plus}/Monat. Premium kostet genau {premium}/Monat.",
-    display: {
-      label: "01 · ANZEIGE",
-      body: "Kostenlos {free}. Plus {plus}/Monat. Premium {premium}/Monat. Bezahlte Stufen kaufen niemals Wertung oder leichtere Gegner.",
+  "billing": {
+    "kicker": "ZEITLEISTE DER ABRECHNUNG",
+    "title": "So wird die Abrechnung funktionieren, sobald es sie gibt",
+    "body": "Plus kostet genau {plus}/Monat. Premium kostet genau {premium}/Monat.",
+    "display": {
+      "label": "01 · ANZEIGE",
+      "body": "Kostenlos {free}. Plus {plus}/Monat. Premium {premium}/Monat. Bezahlte Stufen kaufen niemals Wertung oder leichtere Gegner."
     },
-    rolling: {
-      label: "02 · LAUFENDER ZYKLUS",
-      body: "Sobald es eine Abrechnung gibt, verlängern sich die Belastungen in einem laufenden Monatszyklus. Ein angebrochener Monat wird nicht erstattet. Eine Kündigung stoppt den nächsten Zyklus und löscht nicht den aktuellen, bereits bezahlten Zeitraum.",
+    "rolling": {
+      "label": "02 · LAUFENDER ZYKLUS",
+      "body": "Sobald es eine Abrechnung gibt, verlängern sich die Belastungen in einem laufenden Monatszyklus. Ein angebrochener Monat wird nicht erstattet. Eine Kündigung stoppt den nächsten Zyklus und löscht nicht den aktuellen, bereits bezahlten Zeitraum."
     },
-    today: {
-      label: "03 · HEUTE",
-    },
+    "today": {
+      "label": "03 · HEUTE"
+    }
   },
-  compare: {
-    kicker: "Was A.C.E. heute versprechen kann",
-    title: "Vergleich der Mitgliedschaften",
-    note: "Jede Zeile gibt den heutigen Stand der Website wieder. Die Bezahlung folgt in Kürze, und ein bezahlter Plan öffnet nie eine Warteschlange und kauft keinen Vorteil.",
-    caption: "Kostenlos, Plus und Premium im Vergleich danach, was die Website heute tut",
-    includedToday: "Heute enthalten",
-    columns: {
-      free: "Kostenlos",
-      plus: "Plus",
-      premium: "Premium",
+  "compare": {
+    "kicker": "Was A.C.E. heute versprechen kann",
+    "title": "Vergleich der Mitgliedschaften",
+    "note": "Jede Zeile gibt den heutigen Stand der Website wieder. Die Bezahlung folgt in Kürze, und ein bezahlter Plan öffnet nie eine Warteschlange und kauft keinen Vorteil.",
+    "caption": "Kostenlos, Plus und Premium im Vergleich danach, was die Website heute tut",
+    "columns": {
+      "free": "Kostenlos",
+      "plus": "Plus",
+      "premium": "Premium"
     },
-    rows: {
-      publicSite: {
-        feature: "Öffentliche Website",
-        detail: "Start, Spielen, Turniere, Rangliste, Teams, Regeln und Bedingungen.",
+    "rows": {
+      "publicSite": {
+        "feature": "Öffentliche Website",
+        "detail": "Start, Spielen, Turniere, Rangliste, Teams, Regeln und Bedingungen."
       },
-      steamSignIn: {
-        feature: "Steam-Anmeldung",
-        detail: "Offizielles Steam OpenID. A.C.E. fragt niemals nach einem Steam-Passwort.",
+      "steamSignIn": {
+        "feature": "Steam-Anmeldung",
+        "detail": "Offizielles Steam OpenID. A.C.E. fragt niemals nach einem Steam-Passwort."
       },
-      startingRating: {
-        feature: "Startwertung",
-        detail: "Die Zahl, die auf einem neuen Konto vor jedem erfassten Spiel gespeichert ist.",
+      "startingRating": {
+        "feature": "Startwertung",
+        "detail": "Die Zahl, die auf einem neuen Konto vor jedem erfassten Spiel gespeichert ist."
       },
-      recordedMatches: {
-        feature: "Erfasste Spiele",
-        detail: "Siege und Niederlagen, die aus einem beendeten A.C.E.-Spiel geschrieben werden.",
+      "recordedMatches": {
+        "feature": "Erfasste Spiele",
+        "detail": "Siege und Niederlagen, die aus einem beendeten A.C.E.-Spiel geschrieben werden."
       },
-      rankedQueue: {
-        feature: "Rangliste-Warteschlange",
-        detail: "«SPIEL FINDEN» bleibt geschlossen, bis es eine echte Warteschlange gibt.",
+      "rankedQueue": {
+        "feature": "Rangliste-Warteschlange",
+        "detail": "«SPIEL FINDEN» bleibt geschlossen, bis es eine echte Warteschlange gibt."
       },
-      cs2Servers: {
-        feature: "CS2-Server",
-        detail: "Diese Website sendet weder eine Serveradresse noch einen Verbindungslink.",
+      "cs2Servers": {
+        "feature": "CS2-Server",
+        "detail": "Diese Website sendet weder eine Serveradresse noch einen Verbindungslink."
       },
-      antiCheatClient: {
-        feature: "Anti-Cheat-Client",
-        detail: "Von dieser Website wird nichts heruntergeladen.",
+      "antiCheatClient": {
+        "feature": "Anti-Cheat-Client",
+        "detail": "Von dieser Website wird nichts heruntergeladen."
       },
-      charge: {
-        feature: "Belastung",
-        detail: "Die Wahl von Plus oder Premium belastet keine Karte.",
+      "charge": {
+        "feature": "Belastung",
+        "detail": "Die Wahl von Plus oder Premium belastet keine Karte."
       },
-      ratingForSale: {
-        feature: "Käufliche Wertung",
-        detail: "Ein bezahltes Etikett kauft niemals Wertung oder leichtere Gegner.",
+      "ratingForSale": {
+        "feature": "Käufliche Wertung",
+        "detail": "Ein bezahltes Etikett kauft niemals Wertung oder leichtere Gegner."
       },
-      prizeOrWeapon: {
-        feature: "Preis oder Waffe",
-        detail: "Es wird kein Skin, kein Messer und kein Preistopf ausgeliefert.",
+      "prizeOrWeapon": {
+        "feature": "Preis oder Waffe",
+        "detail": "Es wird kein Skin, kein Messer und kein Preistopf ausgeliefert."
       },
-      goldEliteSeal: {
-        feature: "Elite-Siegel & Sonderabzeichen",
-        detail:
-          "Nur Premium, ausgelesen aus der auf dem Server gespeicherten Stufe. Kosmetisch. Der Checkout setzt diese Stufe nicht.",
-      },
+      "goldEliteSeal": {
+        "feature": "Elite-Siegel & Sonderabzeichen",
+        "detail": "Nur Premium, ausgelesen aus der auf dem Server gespeicherten Stufe. Kosmetisch. Der Checkout setzt diese Stufe nicht."
+      }
     },
-    cells: {
-      open: "Offen",
-      yes: "Ja",
-      noneYet: "Noch keine",
-      closed: "Geschlossen",
-      notConnected: "Demnächst",
-      notShipped: "Nicht ausgeliefert",
-      noCharge: "Keine Belastung",
-      notForSale: "Nicht käuflich",
-      none: "Keine",
-      no: "Nein",
-      storedTierOnly: "Nur gespeicherte Stufe",
-    },
+    "cells": {
+      "open": "Offen",
+      "yes": "Ja",
+      "noneYet": "Noch keine",
+      "closed": "Geschlossen",
+      "notConnected": "Demnächst",
+      "notShipped": "Nicht ausgeliefert",
+      "noCharge": "Keine Belastung",
+      "notForSale": "Nicht käuflich",
+      "none": "Keine",
+      "no": "Nein",
+      "storedTierOnly": "Nur gespeicherte Stufe"
+    }
   },
-  receipt: {
-    plus: {
-      metaTitle: "Plus-Quittung",
-      metaDescription:
-        "Der A.C.E.-Plus-Brief, der auf dieser Website angezeigt wird. Die Kasse ist nicht in Betrieb, daher wird nichts berechnet und keine E-Mail gesendet.",
-      planName: "A.C.E. Plus",
-      nextLabel: "Weiter auf A.C.E.",
-      nextBody:
-        "Die öffentlichen Seiten bleiben offen. Diese Auswahl öffnet keine Warteschlange und ändert die gespeicherte Stufe nicht.",
+  "receipt": {
+    "plus": {
+      "metaTitle": "Plus-Quittung",
+      "metaDescription": "Der A.C.E.-Plus-Brief, der auf dieser Website angezeigt wird. Die Kasse ist nicht in Betrieb, daher wird nichts berechnet und keine E-Mail gesendet.",
+      "planName": "A.C.E. Plus",
+      "nextLabel": "Weiter auf A.C.E.",
+      "nextBody": "Die öffentlichen Seiten bleiben offen. Diese Auswahl öffnet keine Warteschlange und ändert die gespeicherte Stufe nicht."
     },
-    premium: {
-      metaTitle: "Premium-Quittung",
-      metaDescription:
-        "Der A.C.E.-Premium-Brief, der auf dieser Website angezeigt wird. Die Kasse ist nicht in Betrieb, daher wird nichts berechnet und keine E-Mail gesendet.",
-      planName: "A.C.E. Premium",
-      nextLabel: "Premium-Bedingungen lesen",
-      nextBody:
-        "Premium umfasst Premium-Rang-Art, die animierte Profilkarte, Sonderabzeichen und das ELITE SEAL sowie alles aus Plus. Einen Clan unter Squads zu speichern ist für jedes Konto kostenlos.",
-    },
+    "premium": {
+      "metaTitle": "Premium-Quittung",
+      "metaDescription": "Der A.C.E.-Premium-Brief, der auf dieser Website angezeigt wird. Die Kasse ist nicht in Betrieb, daher wird nichts berechnet und keine E-Mail gesendet.",
+      "planName": "A.C.E. Premium",
+      "nextLabel": "Premium-Bedingungen lesen",
+      "nextBody": "Premium umfasst Premium-Rang-Art, die animierte Profilkarte, Sonderabzeichen und das ELITE SEAL sowie alles aus Plus. Einen Clan unter Squads zu speichern ist für jedes Konto kostenlos."
+    }
   },
-  letter: {
-    kicker: "{plan} · {price} pro Monat",
-    title: "Danke für deine Auswahl",
-    flag: "Dieser Brief wird auf der Website angezeigt. Es wurde keine E-Mail gesendet. Es wurde keine Karte belastet. Die Kasse ist nicht in Betrieb, und die gespeicherte Mitgliedsstufe wurde nicht geändert.",
-    greeting: "Liebe Spielerin, lieber Spieler,",
-    intro:
-      "danke, dass du {plan} gewählt hast. Diese Seite ist die Quittung. Sie hält den Anzeigepreis fest, was diese Auswahl heute enthält, was sie nicht enthält, und die auf dieser Website veröffentlichte Hilfeadresse.",
-    selected: {
-      title: "Was gewählt wurde",
-      items: [
+  "letter": {
+    "kicker": "{plan} · {price} pro Monat",
+    "title": "Danke für deine Auswahl",
+    "flag": "Dieser Brief wird auf der Website angezeigt. Es wurde keine E-Mail gesendet. Es wurde keine Karte belastet. Die Kasse ist nicht in Betrieb, und die gespeicherte Mitgliedsstufe wurde nicht geändert.",
+    "greeting": "Liebe Spielerin, lieber Spieler,",
+    "intro": "danke, dass du {plan} gewählt hast. Diese Seite ist die Quittung. Sie hält den Anzeigepreis fest, was diese Auswahl heute enthält, was sie nicht enthält, und die auf dieser Website veröffentlichte Hilfeadresse.",
+    "selected": {
+      "title": "Was gewählt wurde",
+      "items": [
         "Planname: {plan}.",
         "Anzeigepreis: {price} pro Monat. Der Betrag ist ein Etikett, keine Belastung.",
         "Zahlung: keine. Die Wahl dieses Plans belastet keine Karte.",
         "E-Mail: keine. A.C.E. sendet diesen Brief nicht in ein Postfach.",
         "Gespeicherte Stufe: unverändert. Sonderabzeichen und Elite-Siegel erscheinen nur, wenn das Konto bereits Premium gespeichert hat.",
-        "Wertung: nicht käuflich. Ein neues Konto startet weiterhin bei 1.200.",
-      ],
+        "Wertung: nicht käuflich. Ein neues Konto startet weiterhin bei 1.200."
+      ]
     },
-    today: {
-      title: "Was du heute nutzen kannst",
-      items: [
+    "today": {
+      "title": "Was du heute nutzen kannst",
+      "items": [
         "Die öffentliche Website: Start, Spielen, Turniere, Rangliste, Teams, Regeln und Bedingungen.",
         "Steam-Anmeldung über das offizielle Steam OpenID. A.C.E. fragt niemals nach einem Steam-Passwort.",
-        "Dieselben öffentlichen Seiten wie beim kostenlosen Plan. Dieser Preis öffnet keine eigene Warteschlange.",
-      ],
+        "Dieselben öffentlichen Seiten wie beim kostenlosen Plan. Dieser Preis öffnet keine eigene Warteschlange."
+      ]
     },
-    excluded: {
-      title: "Was diese Auswahl nicht enthält",
-      items: [
+    "excluded": {
+      "title": "Was diese Auswahl nicht enthält",
+      "items": [
         "Eine laufende Rangliste-Warteschlange. «SPIEL FINDEN» bleibt geschlossen.",
         "Einen Counter-Strike 2-Server, eine Serveradresse oder einen Verbindungslink.",
         "Ein Anti-Cheat-Download. A.C.E Shield ist in Entwicklung.",
         "Einen Preis, einen Skin, ein Messer oder einen Preistopf.",
         "Einen Platz auf der Tafel mit 100 Mannschaften. Diese Tafel zeigt weiterhin 0 registriert, bis eine Saison öffnet.",
-        "Leichtere Gegner, eine gekaufte Wertung oder eine andere öffentliche Website als beim kostenlosen Plan.",
-      ],
+        "Leichtere Gegner, eine gekaufte Wertung oder eine andere öffentliche Website als beim kostenlosen Plan."
+      ]
     },
-    trouble: {
-      title: "Wenn etwas nicht funktioniert",
-      items: [
+    "trouble": {
+      "title": "Wenn etwas nicht funktioniert",
+      "items": [
         "Du hast eine Belastung oder eine bezahlte Stufe erwartet. Es wurde keine angewendet. Das Konto bleibt, wie es war.",
         "Du hast diesen Brief in einem Postfach erwartet. Er existiert nur auf dieser Seite.",
         "Steam hat sich nicht verbunden. Nutze «Profil verbinden» und setze zuerst das Häkchen bei den Bedingungen. Gib niemals ein Steam-Passwort bei A.C.E. ein.",
-        "Du brauchst Hilfe. Nutze die Hilfeadresse unten oder öffne die Hilfeseiten auf dieser Website.",
-      ],
+        "Du brauchst Hilfe. Nutze die Hilfeadresse unten oder öffne die Hilfeseiten auf dieser Website."
+      ]
     },
-    support: {
-      title: "Hilfe",
-      addressBefore: "Die auf dieser Website angegebene Hilfeadresse lautet ",
-      addressAfter: ".",
-      helpBefore: "Hilfe auf der Website: ",
-      supportLink: "Hilfe",
-      helpAnd: " und ",
-      contactLink: "Kontakt",
-      rulesBefore: ". Die Regeln stehen unter ",
-      rulesLink: "Regeln",
-      rulesAnd: " und ",
-      termsLink: "Bedingungen",
-      helpAfter:
-        ". Eine Aufforderung auf der Hilfeseite eröffnet keine Anfrage, und auf der Kontaktseite eingegebener Text wird nicht zugestellt.",
+    "support": {
+      "title": "Hilfe",
+      "addressBefore": "Die auf dieser Website angegebene Hilfeadresse lautet ",
+      "addressAfter": ".",
+      "helpBefore": "Hilfe auf der Website: ",
+      "supportLink": "Hilfe",
+      "helpAnd": " und ",
+      "contactLink": "Kontakt",
+      "rulesBefore": ". Die Regeln stehen unter ",
+      "rulesLink": "Regeln",
+      "rulesAnd": " und ",
+      "termsLink": "Bedingungen",
+      "helpAfter": ". Eine Aufforderung auf der Hilfeseite eröffnet keine Anfrage, und auf der Kontaktseite eingegebener Text wird nicht zugestellt."
     },
-    next: {
-      title: "Nächster Schritt",
-    },
+    "next": {
+      "title": "Nächster Schritt"
+    }
   },
-  telemetry: {
-    kicker: "PLUS / PREMIUM TELEMETRIE",
-    copy: "TELEMETRIE DER ÜBERSICHT GESPERRT — Wechsle deinen Abonnementplan zu A.C.E. Plus oder Premium, um dynamische Statistikkurven in Echtzeit und Waffenspezialisierungs-Indizes freizuschalten.",
-    cta: "Preistabellen öffnen",
-  },
+  "telemetry": {
+    "kicker": "PLUS / PREMIUM TELEMETRIE",
+    "copy": "TELEMETRIE DER ÜBERSICHT GESPERRT — Wechsle deinen Abonnementplan zu A.C.E. Plus oder Premium, um dynamische Statistikkurven in Echtzeit und Waffenspezialisierungs-Indizes freizuschalten.",
+    "cta": "Preistabellen öffnen"
+  }
 };

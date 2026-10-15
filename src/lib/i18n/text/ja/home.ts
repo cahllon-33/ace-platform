@@ -1,7 +1,7 @@
 import type { TextBag } from "../types";
 
 export const home: TextBag["home"] = {
-  ops: {
+  "ops": {
     "identityKicker": "アイデンティティハブ",
     "signedOutTitle": "Steamでサインイン",
     "signedOutBody": "公式のSteam OpenIDで接続すると、ここにSteamアバター、ランクエンブレム、Rating Pointsが表示されます。A.C.E.がSteamのパスワードを求めることはありません。",
@@ -99,15 +99,12 @@ export const home: TextBag["home"] = {
     ]
   },
   "identity": {
-    "profilePlaceholder": "[Player_Profile]",
-    "notAvailable": "該当なし",
     "elite": "エリート"
   },
   "membership": {
     "compareLink": "比較表をすべて見る"
   },
   "loot": {
-    "exampleCard": "まもなく開始",
     "wear": {
       "factoryNew": "Factory New",
       "minimalWear": "Minimal Wear"
@@ -121,7 +118,6 @@ export const home: TextBag["home"] = {
       "tlv": "Tel Aviv Relay"
     },
     "tileAria": "{name}。サーバーはまもなく開始。",
-    "tileSample": "まもなく開始 · {sample}",
     "note": "128ティックの地域サーバーは競技ベータとともに提供されます。"
   },
   "telemetry": {

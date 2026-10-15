@@ -1,7 +1,7 @@
 import type { TextBag } from "../types";
 
 export const ranks: TextBag["ranks"] = {
-  rpRules: {
+  "rpRules": {
     "kicker": "ATURAN RATING POINTS A.C.E",
     "title": "Cara Rating Points bergerak",
     "lede": "Versi aturan {version}. Setiap pemain baru mulai dengan {start} RP di tingkat 3, {tier}. Tangga ini sengaja lambat: setiap tingkat di atas bagian tengah butuh lebih banyak kemenangan daripada tingkat sebelumnya.",
@@ -46,29 +46,29 @@ export const ranks: TextBag["ranks"] = {
     "ex4": "Melawan tim dengan rata-rata 200 RP lebih rendah darimu, kemenangan memberi +{weakWin} dan kekalahan mengurangi −{weakLoss}.",
     "note": "Angka-angka ini dihitung oleh kode yang sama yang menerapkan hasil pertandingan terverifikasi. Ini contoh, bukan pertandingan yang tersimpan."
   },
-  premiumCodex: {
+  "premiumCodex": {
     "kicker": "KODEKS RANK PREMIUM",
     "title": "Kodeks rank Premium",
     "lede": "Sepuluh lambang kristal berilustrasi, satu untuk setiap rank. Ini seni profil kosmetik di tangga Rating Points yang sama dengan rank standar. Tidak mengubah rating, matchmaking, atau antrean.",
     "cosmetic": "Seni kosmetik · tangga RP yang sama · hanya A.C.E Premium $7/bulan",
     "imgAlt": "Seni rank Premium {name}, level {level}"
   },
-  premiumRanks: {
-    kicker: "PERINGKAT PREMIUM",
-    plan: "A.C.E PREMIUM · hanya $7/bulan",
-    title: "Seni peringkat Premium",
-    lede: "Set peringkat A.C.E. ilustrasi asli: sepuluh lambang kristal dengan divisi III/II/I, protokol rating, kartu detail Legend, dan penampil 3D yang diputar dengan menyeret. Ini seni profil untuk anggota Premium. Membaca tangga Rating Points yang sama dengan peringkat standar dan tidak memberi keunggulan kompetitif apa pun.",
-    demo: "Nilai demo: progres, win-rate, dan divisi di papan ini adalah contoh, bukan statistik langsung. Saat kamu masuk, rating yang ditampilkan adalah rating tersimpanmu.",
-    locked: "Segera hadir: checkout belum ada, jadi hari ini tidak ada akun Premium. Server menerapkan seni peringkat Premium ke profil hanya jika paket tersimpannya Premium.",
-    standardKicker: "PERINGKAT STANDAR",
-    standardNote: "Setiap akun memakai lambang vektor 3D ini.",
-    legendTag: "PREMIUM",
-    pickerTitle: "Seni peringkat di profilmu",
-    pickerStandard: "Standar",
-    pickerPremium: "Premium",
-    pickerLocked: "Seni peringkat Premium untuk A.C.E Premium ($7/bulan). Segera hadir: checkout belum ada.",
-    pickerSaved: "Tersimpan.",
-    pickerFailed: "Tidak tersimpan. Seni peringkat Premium memerlukan A.C.E Premium.",
+  "premiumRanks": {
+    "kicker": "PERINGKAT PREMIUM",
+    "plan": "A.C.E PREMIUM · hanya $7/bulan",
+    "title": "Seni peringkat Premium",
+    "lede": "Set peringkat A.C.E. ilustrasi asli: sepuluh lambang kristal dengan divisi III/II/I, protokol rating, kartu detail Legend, dan penampil 3D yang diputar dengan menyeret. Ini seni profil untuk anggota Premium. Membaca tangga Rating Points yang sama dengan peringkat standar dan tidak memberi keunggulan kompetitif apa pun.",
+    "demo": "Nilai demo: progres, win-rate, dan divisi di papan ini adalah contoh, bukan statistik langsung. Saat kamu masuk, rating yang ditampilkan adalah rating tersimpanmu.",
+    "locked": "Segera hadir: checkout belum ada, jadi hari ini tidak ada akun Premium. Server menerapkan seni peringkat Premium ke profil hanya jika paket tersimpannya Premium.",
+    "standardKicker": "PERINGKAT STANDAR",
+    "standardNote": "Setiap akun memakai lambang vektor 3D ini.",
+    "legendTag": "PREMIUM",
+    "pickerTitle": "Seni peringkat di profilmu",
+    "pickerStandard": "Standar",
+    "pickerPremium": "Premium",
+    "pickerLocked": "Seni peringkat Premium untuk A.C.E Premium ($7/bulan). Segera hadir: checkout belum ada.",
+    "pickerSaved": "Tersimpan.",
+    "pickerFailed": "Tidak tersimpan. Seni peringkat Premium memerlukan A.C.E Premium."
   },
   "meta": {
     "title": "Peringkat Kompetitif",
@@ -142,10 +142,7 @@ export const ranks: TextBag["ranks"] = {
   "card": {
     "rank": "Peringkat {level}",
     "targetWinRate": "Target win-rate {winRate}",
-    "calibrationTarget": "Target kalibrasi",
-    "floor": "Batas",
-    "samplesNote": "Angka target untuk setiap tingkat.",
-    "progressMockup": "Progres"
+    "floor": "Batas"
   },
   "turntable": {
     "stageLabel": "Emblem orbital {name}. Seret untuk memutar.",

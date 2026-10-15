@@ -1,7 +1,7 @@
 import type { TextBag } from "../types";
 
 export const pricing: TextBag["pricing"] = {
-  matrix: {
+  "matrix": {
     "kicker": "功能矩阵",
     "title": "会员方案对比",
     "note": "金色勾：包含。短横：不包含。即将推出：属于方案但尚未发布。任何方案都不能购买积分、匹配或排队优先。",
@@ -26,13 +26,13 @@ export const pricing: TextBag["pricing"] = {
       "advantage": "积分加成、匹配或排队优势"
     }
   },
-  plansR11: {
+  "plansR11": {
     "termsPlusStats": "玩家数据：基于已记录比赛的积分变化图。爆头率和命中率仪表即将推出。",
     "codexTitle": "Premium 段位图鉴和动态卡",
     "codexBody": "这是 Premium 包含的段位美术和动态资料卡。它是同一 Rating Points 阶梯上的外观美术，不带来任何竞技优势。",
     "codexLink": "打开 Premium 段位图鉴"
   },
-  premiumExtras: {
+  "premiumExtras": {
     "card": {
       "previewTag": "预览",
       "previewNote": "动态 Premium 个人资料卡预览。名称和数值均为示例。只有已保存方案为 Premium 的真实个人资料才会显示此卡片。",
@@ -40,8 +40,7 @@ export const pricing: TextBag["pricing"] = {
       "seal": "ELITE 印章",
       "rank": "段位",
       "rating": "评分",
-      "sampleName": "示例玩家",
-      "ownTitle": "你的 Premium 个人资料卡"
+      "sampleName": "示例玩家"
     },
     "analysis": {
       "metaTitle": "扩展比赛分析",
@@ -164,7 +163,6 @@ export const pricing: TextBag["pricing"] = {
     "title": "会员对比",
     "note": "每一行都反映网站的现状。支付即将推出,付费方案绝不会开启队列或购买优势。",
     "caption": "按网站当前功能对比 Free、Plus 和 Premium",
-    "includedToday": "目前包含",
     "columns": {
       "free": "Free",
       "plus": "Plus",

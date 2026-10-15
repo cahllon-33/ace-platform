@@ -1,7 +1,7 @@
 import type { TextBag } from "../types";
 
 export const ranks: TextBag["ranks"] = {
-  rpRules: {
+  "rpRules": {
     "kicker": "A.C.E REGLER FÖR RATING POINTS",
     "title": "Så rör sig Rating Points",
     "lede": "Regelversion {version}. Varje ny spelare börjar med {start} RP på nivå 3, {tier}. Stegen är långsam med avsikt: varje nivå ovanför mitten kräver fler vinster än den förra.",
@@ -46,29 +46,29 @@ export const ranks: TextBag["ranks"] = {
     "ex4": "Mot ett lag med i snitt 200 RP mindre än du ger en vinst +{weakWin} och en förlust kostar −{weakLoss}.",
     "note": "Siffrorna räknas fram av samma kod som tillämpar ett verifierat matchresultat. De är exempel, inte sparade matcher."
   },
-  premiumCodex: {
+  "premiumCodex": {
     "kicker": "PREMIUM-RANKKODEX",
     "title": "Premium-rankkodex",
     "lede": "Tio illustrerade kristallemblem, ett per rank. Detta är kosmetisk profilkonst på samma Rating Points-stege som standardrankerna. Den ändrar inte rating, matchmaking eller kö.",
     "cosmetic": "Kosmetisk konst · samma RP-stege · endast A.C.E Premium 7 $/mån",
     "imgAlt": "Premium-rankkonst för {name}, nivå {level}"
   },
-  premiumRanks: {
-    kicker: "PREMIUMRANKER",
-    plan: "A.C.E PREMIUM · endast 7 $/mån",
-    title: "Premiumrankkonst",
-    lede: "Den ursprungliga illustrerade A.C.E.-rankuppsättningen: tio kristallemblem med divisionerna III/II/I, ratingprotokollet, Legend-detaljkortet och 3D-visaren som roteras genom att dra. Det är profilkonst för Premium-medlemmar. Den läser samma Rating Points-stege som standardrankerna och ger ingen tävlingsfördel.",
-    demo: "Demovärden: framsteg, vinstandel och divisioner på tavlan är exempel, inte live-statistik. När du är inloggad är den visade ratingen din sparade rating.",
-    locked: "Kommer snart: kassan finns inte än, så inget konto är Premium i dag. Servern använder premiumrankkonst på en profil bara när dess sparade plan är Premium.",
-    standardKicker: "STANDARDRANKER",
-    standardNote: "Alla konton bär dessa 3D-vektoremblem.",
-    legendTag: "PREMIUM",
-    pickerTitle: "Rankkonst på din profil",
-    pickerStandard: "Standard",
-    pickerPremium: "Premium",
-    pickerLocked: "Premiumrankkonst är för A.C.E Premium (7 $/mån). Kommer snart: kassan finns inte än.",
-    pickerSaved: "Sparat.",
-    pickerFailed: "Inte sparat. Premiumrankkonst kräver A.C.E Premium.",
+  "premiumRanks": {
+    "kicker": "PREMIUMRANKER",
+    "plan": "A.C.E PREMIUM · endast 7 $/mån",
+    "title": "Premiumrankkonst",
+    "lede": "Den ursprungliga illustrerade A.C.E.-rankuppsättningen: tio kristallemblem med divisionerna III/II/I, ratingprotokollet, Legend-detaljkortet och 3D-visaren som roteras genom att dra. Det är profilkonst för Premium-medlemmar. Den läser samma Rating Points-stege som standardrankerna och ger ingen tävlingsfördel.",
+    "demo": "Demovärden: framsteg, vinstandel och divisioner på tavlan är exempel, inte live-statistik. När du är inloggad är den visade ratingen din sparade rating.",
+    "locked": "Kommer snart: kassan finns inte än, så inget konto är Premium i dag. Servern använder premiumrankkonst på en profil bara när dess sparade plan är Premium.",
+    "standardKicker": "STANDARDRANKER",
+    "standardNote": "Alla konton bär dessa 3D-vektoremblem.",
+    "legendTag": "PREMIUM",
+    "pickerTitle": "Rankkonst på din profil",
+    "pickerStandard": "Standard",
+    "pickerPremium": "Premium",
+    "pickerLocked": "Premiumrankkonst är för A.C.E Premium (7 $/mån). Kommer snart: kassan finns inte än.",
+    "pickerSaved": "Sparat.",
+    "pickerFailed": "Inte sparat. Premiumrankkonst kräver A.C.E Premium."
   },
   "meta": {
     "title": "Tävlingsranker",
@@ -142,10 +142,7 @@ export const ranks: TextBag["ranks"] = {
   "card": {
     "rank": "Rank {level}",
     "targetWinRate": "{winRate} målvinstprocent",
-    "calibrationTarget": "Kalibreringsmål",
-    "floor": "Golv",
-    "samplesNote": "Målsiffror för varje nivå.",
-    "progressMockup": "Framsteg"
+    "floor": "Golv"
   },
   "turntable": {
     "stageLabel": "{name} orbitalemblem. Dra för att rotera.",
