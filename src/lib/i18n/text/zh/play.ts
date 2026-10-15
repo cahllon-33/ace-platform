@@ -122,29 +122,4 @@ export const play: TextBag["play"] = {
     },
     "findMatchReason": "匹配将随竞技测试版开放。排位队列尚未运行。"
   },
-  "matchFound": {
-    "ariaSignedIn": "{title}。比赛开放后,{name} 将加入阵容。",
-    "banner": "竞技场 · 竞技测试版即将推出",
-    "mapPlate": "地图图片 · DUST II · 无 128 Tick 服务器",
-    "rosterNote": "示例代号。",
-    "teamA": "A 队 · 战术联盟",
-    "teamB": "B 队 · 暗影军团",
-    "clockLabel": "比赛时钟",
-    "clockNote": "此时钟循环播放。队列已关闭。",
-    "chatKicker": "团队聊天",
-    "chatLines": [
-      "等待时钟重置。",
-      "本页面上的 Dust II 只是地图图片。",
-      "此阵容未连接任何服务器。"
-    ],
-    "chatField": "消息不会发送。",
-    "identityKicker": "身份网格",
-    "identityRows": [
-      "不会发送比赛门票邮件。",
-      "未运行任何内核检查。",
-      "实时遥测将随竞技测试版推出。"
-    ],
-    "findMatch": "寻找竞技比赛",
-    "closedNotice": "匹配将随竞技测试版开放。排位队列尚未运行。"
-  }
 };

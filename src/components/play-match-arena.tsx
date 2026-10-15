@@ -95,14 +95,15 @@ function RosterCard({
 function OperatorArt({ side, alt }: { side: "guardian" | "rebel"; alt: string }) {
   return (
     <figure className="ace-room-operator" data-side={side}>
+      <span className="ace-room-operator-glow" aria-hidden="true" />
       {/* eslint-disable-next-line @next/next/no-img-element */}
       <img
         src={`/operators/operator-${side}-640.webp`}
         srcSet={`/operators/operator-${side}-640.webp 640w, /operators/operator-${side}-1280.webp 1280w, /operators/operator-${side}-2560.webp 2560w`}
-        sizes="(min-width: 1024px) 20vw, 45vw"
+        sizes="(min-width: 1280px) 30vw, 100vw"
         alt={alt}
-        width={640}
-        height={800}
+        width={1280}
+        height={720}
         loading="lazy"
       />
     </figure>

@@ -122,29 +122,4 @@ export const play: TextBag["play"] = {
     },
     "findMatchReason": "Matchning öppnar med tävlingsbetan. Rankade köer körs inte ännu."
   },
-  "matchFound": {
-    "ariaSignedIn": "{title}. {name} går med i en trupp när matcherna öppnar.",
-    "banner": "ARENA · TÄVLINGSBETA KOMMER SNART",
-    "mapPlate": "KARTBILD · DUST II · INGEN 128-TICK-SERVER",
-    "rosterNote": "Exempel på spelarnamn.",
-    "teamA": "LAG A · TAKTISK ALLIANS",
-    "teamB": "LAG B · SKUGGLEGIONEN",
-    "clockLabel": "MATCHKLOCKA",
-    "clockNote": "Klockan går i en loop. Kön är stängd.",
-    "chatKicker": "LAGCHATT",
-    "chatLines": [
-      "Väntar tills klockan nollställs.",
-      "Dust II är en kartbild på den här sidan.",
-      "Ingen server är ansluten för den här truppen."
-    ],
-    "chatField": "Meddelanden skickas inte.",
-    "identityKicker": "IDENTITETSRUTNÄT",
-    "identityRows": [
-      "Ingen matchbiljett skickas via e-post.",
-      "Ingen kärnkontroll körs.",
-      "Livetelemetri kommer med tävlingsbetan."
-    ],
-    "findMatch": "HITTA TÄVLINGSMATCH",
-    "closedNotice": "Matchning öppnar med tävlingsbetan. Rankade köer körs inte ännu."
-  }
 };

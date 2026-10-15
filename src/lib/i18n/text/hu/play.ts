@@ -122,29 +122,4 @@ export const play: TextBag["play"] = {
     },
     "findMatchReason": "A párosítás a versenybétával nyílik. A ranked sorok még nem futnak."
   },
-  "matchFound": {
-    "ariaSignedIn": "{title}. {name} csatlakozik egy kerethez, amikor a meccsek megnyílnak.",
-    "banner": "ARÉNA · VERSENYBÉTA HAMAROSAN",
-    "mapPlate": "PÁLYATÁBLA · DUST II · NINCS 128-TICK SZERVER",
-    "rosterNote": "Előnézeti hívójelek.",
-    "teamA": "A CSAPAT · TACTICAL ALLIANCE",
-    "teamB": "B CSAPAT · SHADOW LEGION",
-    "clockLabel": "MECCSÓRA",
-    "clockNote": "Ez az óra ismétlődik. A sor zárva van.",
-    "chatKicker": "CSAPATCSEVEGÉS",
-    "chatLines": [
-      "Várakozás az óra visszaállásáig.",
-      "A Dust II ezen az oldalon egy pályatábla.",
-      "Ehhez a kerethez nincs szerver csatlakoztatva."
-    ],
-    "chatField": "Az üzenetek nem kerülnek elküldésre.",
-    "identityKicker": "AZONOSSÁGI RÁCS",
-    "identityRows": [
-      "Meccsjegy-levél nem kerül kiküldésre.",
-      "Nem fut kernel-ellenőrzés.",
-      "Az élő telemetria a versenybétával érkezik."
-    ],
-    "findMatch": "VERSENYMECCS KERESÉSE",
-    "closedNotice": "A párosítás a versenybétával nyílik. A ranked sorok még nem futnak."
-  }
 };

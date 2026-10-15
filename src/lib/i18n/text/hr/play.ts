@@ -122,29 +122,4 @@ export const play: TextBag["play"] = {
     },
     "findMatchReason": "Matchmaking se otvara s natjecateljskom betom. Ranked redovi još ne rade."
   },
-  "matchFound": {
-    "ariaSignedIn": "{title}. {name} pridružuje se postavi kad se mečevi otvore.",
-    "banner": "ARENA · NATJECATELJSKA BETA USKORO",
-    "mapPlate": "PLOČA MAPE · DUST II · NEMA 128-TICK POSLUŽITELJA",
-    "rosterNote": "Pregledni pozivni znakovi.",
-    "teamA": "TIM A · TACTICAL ALLIANCE",
-    "teamB": "TIM B · SHADOW LEGION",
-    "clockLabel": "SAT MEČA",
-    "clockNote": "Ovaj sat se ponavlja. Red je zatvoren.",
-    "chatKicker": "TIMSKI CHAT",
-    "chatLines": [
-      "Čekanje dok se sat ne resetira.",
-      "Dust II je ploča mape na ovoj stranici.",
-      "Za ovu postavu nije spojen nijedan poslužitelj."
-    ],
-    "chatField": "Poruke se ne šalju.",
-    "identityKicker": "MREŽA IDENTITETA",
-    "identityRows": [
-      "Pošta s ulaznicom za meč ne šalje se.",
-      "Nijedna provjera jezgre nije pokrenuta.",
-      "Telemetrija uživo stiže s natjecateljskom betom."
-    ],
-    "findMatch": "PRONAĐI NATJECATELJSKI MEČ",
-    "closedNotice": "Matchmaking se otvara s natjecateljskom betom. Ranked redovi još ne rade."
-  }
 };

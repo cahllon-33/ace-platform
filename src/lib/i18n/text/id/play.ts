@@ -122,29 +122,4 @@ export const play: TextBag["play"] = {
     },
     "findMatchReason": "Matchmaking dibuka bersama beta kompetitif. Antrean ranked belum berjalan."
   },
-  "matchFound": {
-    "ariaSignedIn": "{title}. {name} bergabung ke roster setelah pertandingan dibuka.",
-    "banner": "ARENA · BETA KOMPETITIF SEGERA HADIR",
-    "mapPlate": "PELAT PETA · DUST II · TIDAK ADA SERVER 128-TICK",
-    "rosterNote": "Callsign pratinjau.",
-    "teamA": "TIM A · TACTICAL ALLIANCE",
-    "teamB": "TIM B · SHADOW LEGION",
-    "clockLabel": "JAM PERTANDINGAN",
-    "clockNote": "Jam ini berulang. Antrean ditutup.",
-    "chatKicker": "OBROLAN TIM",
-    "chatLines": [
-      "Menunggu sampai jam diatur ulang.",
-      "Dust II adalah pelat peta di halaman ini.",
-      "Tidak ada server yang terhubung untuk roster ini."
-    ],
-    "chatField": "Pesan tidak dikirim.",
-    "identityKicker": "GRID IDENTITAS",
-    "identityRows": [
-      "Surel tiket pertandingan tidak dikirim.",
-      "Tidak ada pemeriksaan kernel yang berjalan.",
-      "Telemetri langsung hadir bersama beta kompetitif."
-    ],
-    "findMatch": "CARI PERTANDINGAN KOMPETITIF",
-    "closedNotice": "Matchmaking dibuka bersama beta kompetitif. Antrean ranked belum berjalan."
-  }
 };

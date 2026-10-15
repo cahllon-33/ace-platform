@@ -122,29 +122,4 @@ export const play: TextBag["play"] = {
     },
     "findMatchReason": "Matchmakingul se deschide odată cu beta competitivă. Cozile ranked nu rulează încă."
   },
-  "matchFound": {
-    "ariaSignedIn": "{title}. {name} se alătură unui lot când se deschid meciurile.",
-    "banner": "ARENĂ · BETA COMPETITIVĂ ÎN CURÂND",
-    "mapPlate": "PLACĂ DE HARTĂ · DUST II · FĂRĂ SERVER 128-TICK",
-    "rosterNote": "Indicative de previzualizare.",
-    "teamA": "ECHIPA A · TACTICAL ALLIANCE",
-    "teamB": "ECHIPA B · SHADOW LEGION",
-    "clockLabel": "CEASUL MECIULUI",
-    "clockNote": "Acest ceas se repetă. Coada este închisă.",
-    "chatKicker": "CHAT DE ECHIPĂ",
-    "chatLines": [
-      "Așteptăm până se resetează ceasul.",
-      "Dust II este o placă de hartă pe această pagină.",
-      "Niciun server nu este conectat pentru acest lot."
-    ],
-    "chatField": "Mesajele nu sunt trimise.",
-    "identityKicker": "GRILA IDENTITĂȚII",
-    "identityRows": [
-      "Nu se trimite e-mail cu bilet de meci.",
-      "Nu rulează nicio verificare de kernel.",
-      "Telemetria live sosește odată cu beta competitivă."
-    ],
-    "findMatch": "CAUTĂ MECI COMPETITIV",
-    "closedNotice": "Matchmakingul se deschide odată cu beta competitivă. Cozile ranked nu rulează încă."
-  }
 };

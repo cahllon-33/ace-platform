@@ -122,29 +122,4 @@ export const play: TextBag["play"] = {
     },
     "findMatchReason": "Eşleştirme rekabetçi beta ile açılır. Dereceli sıralar henüz çalışmıyor."
   },
-  "matchFound": {
-    "ariaSignedIn": "{title}. {name}, maçlar açıldığında bir kadroya katılır.",
-    "banner": "ARENA · REKABETÇİ BETA YAKINDA",
-    "mapPlate": "HARİTA GÖRSELİ · DUST II · 128 TICK SUNUCU YOK",
-    "rosterNote": "Örnek oyuncu adları.",
-    "teamA": "TAKIM A · TAKTİK İTTİFAK",
-    "teamB": "TAKIM B · GÖLGE LEJYONU",
-    "clockLabel": "MAÇ SAATİ",
-    "clockNote": "Bu saat döngüyle çalışır. Sıra kapalı.",
-    "chatKicker": "TAKIM SOHBETİ",
-    "chatLines": [
-      "Saat sıfırlanana kadar bekleniyor.",
-      "Dust II bu sayfada bir harita görselidir.",
-      "Bu kadroya bağlı sunucu yok."
-    ],
-    "chatField": "Mesajlar gönderilmez.",
-    "identityKicker": "KİMLİK IZGARASI",
-    "identityRows": [
-      "Maç bileti e-postası gönderilmez.",
-      "Çekirdek kontrolü çalışmıyor.",
-      "Canlı telemetri rekabetçi beta ile geliyor."
-    ],
-    "findMatch": "REKABETÇİ MAÇ BUL",
-    "closedNotice": "Eşleştirme rekabetçi beta ile açılır. Dereceli sıralar henüz çalışmıyor."
-  }
 };

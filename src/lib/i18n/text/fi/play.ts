@@ -122,29 +122,4 @@ export const play: TextBag["play"] = {
     },
     "findMatchReason": "Matchmaking avautuu kilpailubetan myötä. Ranked-jonot eivät ole vielä käynnissä."
   },
-  "matchFound": {
-    "ariaSignedIn": "{title}. {name} liittyy kokoonpanoon, kun ottelut avautuvat.",
-    "banner": "AREENA · KILPAILUBETA TULOSSA PIAN",
-    "mapPlate": "KARTTALAATTA · DUST II · EI 128-TICK-PALVELINTA",
-    "rosterNote": "Esikatselun kutsumerkit.",
-    "teamA": "JOUKKUE A · TACTICAL ALLIANCE",
-    "teamB": "JOUKKUE B · SHADOW LEGION",
-    "clockLabel": "OTTELUKELLO",
-    "clockNote": "Tämä kello toistuu. Jono on suljettu.",
-    "chatKicker": "JOUKKUECHAT",
-    "chatLines": [
-      "Odotetaan, kunnes kello nollautuu.",
-      "Dust II on tämän sivun karttalaatta.",
-      "Tälle kokoonpanolle ei ole yhdistetty palvelinta."
-    ],
-    "chatField": "Viestejä ei lähetetä.",
-    "identityKicker": "HENKILÖLLISYYSRUUDUKKO",
-    "identityRows": [
-      "Otteluvahvistusviestiä ei lähetetä.",
-      "Ydintarkistusta ei ole käynnissä.",
-      "Live-telemetria saapuu kilpailubetan myötä."
-    ],
-    "findMatch": "ETSI KILPAILUOTTELU",
-    "closedNotice": "Matchmaking avautuu kilpailubetan myötä. Ranked-jonot eivät ole vielä käynnissä."
-  }
 };
