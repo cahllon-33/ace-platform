@@ -1,4 +1,5 @@
-import { formatRankLabelWith, RANK_TIERS, rankIllustratedAsset } from "@/lib/ranks";
+import { PremiumShowcase, type PremiumShowcaseLabels } from "@/components/premium-showcase";
+import { RANK_TIERS } from "@/lib/ranks";
 
 export type PremiumCardLabels = {
   planTag: string;
@@ -7,6 +8,7 @@ export type PremiumCardLabels = {
   rating: string;
   previewTag: string;
   rankLabel: string;
+  showcase: PremiumShowcaseLabels;
 };
 
 /**
@@ -51,19 +53,10 @@ export function PremiumProfileCard({
             <p className="ace-pcard-name">{name}</p>
             <p className="ace-pcard-seal">◆ {labels.seal}</p>
           </div>
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img className="ace-pcard-emblem" src={rankIllustratedAsset(tier.level).stillSrc} alt="" />
         </div>
-        <dl className="ace-pcard-stats">
-          <div>
-            <dt>{labels.rank}</dt>
-            <dd>{formatRankLabelWith(labels.rankLabel, tier.level)}</dd>
-          </div>
-          <div>
-            <dt>{labels.rating}</dt>
-            <dd>{rating != null ? `${rating.toLocaleString("en-US")} RP` : "—"}</dd>
-          </div>
-        </dl>
+        <div className="ace-pcard-showcase">
+          <PremiumShowcase level={tier.level} rating={rating} labels={labels.showcase} size="lg" />
+        </div>
       </div>
       <span className="ace-pcard-shimmer" aria-hidden="true" />
     </div>
@@ -73,10 +66,18 @@ export function PremiumProfileCard({
 /** Builds card labels from the server text bag. */
 export function premiumCardLabels(text: {
   pricing: { premiumExtras: { card: { planTag: string; seal: string; rank: string; rating: string; previewTag: string } } };
-  ranks: { emblem: { rankLabel: string } };
+  ranks: { emblem: { rankLabel: string }; showcase: PremiumShowcaseLabels };
 }): PremiumCardLabels {
   const c = text.pricing.premiumExtras.card;
-  return { planTag: c.planTag, seal: c.seal, rank: c.rank, rating: c.rating, previewTag: c.previewTag, rankLabel: text.ranks.emblem.rankLabel };
+  return {
+    planTag: c.planTag,
+    seal: c.seal,
+    rank: c.rank,
+    rating: c.rating,
+    previewTag: c.previewTag,
+    rankLabel: text.ranks.emblem.rankLabel,
+    showcase: text.ranks.showcase,
+  };
 }
 
 /** Preview block: sample name and the Legend floor, always tagged PREVIEW. */

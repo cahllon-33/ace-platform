@@ -1,4 +1,9 @@
 ﻿export const ranks = {
+  "showcase": {
+    "rankTier": "Rank tier {n}",
+    "chip": "Premium",
+    "artAlt": "{rank} Premium rank art"
+  },
   "rpRules": {
     "kicker": "A.C.E RATING POINTS RULES",
     "title": "How Rating Points move",

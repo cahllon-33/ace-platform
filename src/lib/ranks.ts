@@ -156,6 +156,8 @@ export type RankEmblemAsset = {
   heroSrc: string;
   /** Set when a studio GLTF exists. The turntable will load it instead of the still. */
   gltfSrc: string | null;
+  /** High-resolution still (368×528, 4× Lanczos + light unsharp of the original art; design unchanged). Premium art only. */
+  hdSrc?: string;
 };
 
 export function rankEmblemAsset(level: number): RankEmblemAsset {
@@ -178,6 +180,7 @@ export function rankIllustratedAsset(level: number): RankEmblemAsset {
     stillSrc: `/ranks/${file}.png`,
     heroSrc: level === 10 ? "/ranks/10-legend-hero.png" : `/ranks/${file}.png`,
     gltfSrc: null,
+    hdSrc: `/ranks/hd/${file}@4x.webp`,
   };
 }
 

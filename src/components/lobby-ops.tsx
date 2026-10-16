@@ -4,6 +4,7 @@ import { EliteSeal } from "@/components/elite-seal";
 import { FloatingEmblem, PlayerAvatar } from "@/components/floating-emblem";
 import { interpolate } from "@/lib/i18n";
 import { rankArtAsset, rankFromRating, type RankArt } from "@/lib/ranks";
+import { PremiumShowcase } from "@/components/premium-showcase";
 import type { getText } from "@/server/locale";
 
 type Text = Awaited<ReturnType<typeof getText>>;
@@ -47,11 +48,15 @@ export function LobbyOps({ text, player }: { text: Text; player: LobbyOpsPlayer 
                   <span className="ace-ops3d-elite"><EliteSeal className="h-6 w-auto" /> {text.home.identity.elite}</span>
                 ) : null}
               </div>
-              <FloatingEmblem
-                src={rankArtAsset(tier.level, player.art).stillSrc}
-                alt={interpolate(c.emblemAlt, { rank: tier.name })}
-                size={112}
-              />
+              {player.art === "premium" ? (
+                <PremiumShowcase level={tier.level} rating={player.rating} labels={text.ranks.showcase} size="md" />
+              ) : (
+                <FloatingEmblem
+                  src={rankArtAsset(tier.level, player.art).stillSrc}
+                  alt={interpolate(c.emblemAlt, { rank: tier.name })}
+                  size={112}
+                />
+              )}
             </div>
             <dl className="ace-ops3d-metrics">
               <div><dt>{c.rp}</dt><dd>{player.rating.toLocaleString("en-US")}</dd></div>

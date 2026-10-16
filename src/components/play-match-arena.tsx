@@ -4,6 +4,7 @@ import { FormEvent, useState } from "react";
 import { useI18n } from "@/components/locale-provider";
 import { ConnectedCount } from "@/components/connected-count";
 import { useText } from "@/components/text-provider";
+import { PremiumShowcase } from "@/components/premium-showcase";
 import { PlannedButton } from "@/components/ui/button";
 import { interpolate } from "@/lib/i18n";
 import { FloatingEmblem, PlayerAvatar } from "@/components/floating-emblem";
@@ -94,7 +95,11 @@ function RosterCard({
             : interpolate(room.floorRp, { rp: tier.minRating.toLocaleString("en-US") })}
         </p>
       </div>
-      <FloatingEmblem src={rankArtAsset(tier.level, art).stillSrc} alt={premium ? interpolate(text.play.premium.artAlt, { rank: tier.name }) : tier.name} size={premium ? 58 : 52} />
+      {premium ? (
+        <PremiumShowcase level={tier.level} rating={null} labels={text.ranks.showcase} size="sm" caption={false} />
+      ) : (
+        <FloatingEmblem src={rankArtAsset(tier.level, art).stillSrc} alt={tier.name} size={52} />
+      )}
     </li>
   );
 }

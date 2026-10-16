@@ -1,6 +1,11 @@
 import type { TextBag } from "../types";
 
 export const ranks: TextBag["ranks"] = {
+  "showcase": {
+    "rankTier": "Rangstufe {n}",
+    "chip": "Premium",
+    "artAlt": "Premium-Rangmotiv {rank}"
+  },
   "rpRules": {
     "kicker": "A.C.E RATING-POINTS-REGELN",
     "title": "So bewegen sich Rating Points",
