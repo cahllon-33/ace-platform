@@ -17,7 +17,68 @@ export class SteamAuthError extends Error {
 export type SteamProfile = {
   displayName: string;
   avatarUrl: string;
+  /** Steam community profile URL from GetPlayerSummaries (vanity /id/<name>/ when set). "" when unknown. */
+  profileUrl?: string;
+  /** false when Steam returned nothing and displayName is only the placeholder. */
+  found?: boolean;
 };
+
+export function steamPlaceholderName(steamId: string) {
+  return `Player ${steamId.slice(-4)}`;
+}
+
+function acceptedProfileUrl(value: string | undefined): string {
+  if (!value) return "";
+  try {
+    const url = new URL(value);
+    if (url.protocol === "https:" && url.hostname.toLowerCase() === "steamcommunity.com" && /^\/(id|profiles)\/[^/]+\/?$/.test(url.pathname)) {
+      return url.toString();
+    }
+  } catch {
+    return "";
+  }
+  return "";
+}
+
+type SteamSummary = { steamid?: string; personaname?: string; avatarfull?: string; profileurl?: string };
+
+/**
+ * Batch GetPlayerSummaries (Steam allows 100 IDs per call). Only IDs Steam answered for are in the map.
+ * Returns an empty map when STEAM_API_KEY is missing or Steam is unreachable.
+ */
+export async function lookupSteamPersonas(
+  steamIds: string[],
+  fetchImpl: typeof fetch = fetch,
+  timeoutMs = 4000,
+): Promise<Map<string, SteamProfile>> {
+  const out = new Map<string, SteamProfile>();
+  const key = getSteamApiKey();
+  const ids = [...new Set(steamIds.filter((id) => /^\d{17}$/.test(id)))];
+  if (!key || ids.length === 0) return out;
+  for (let i = 0; i < ids.length; i += 100) {
+    const url = new URL("https://api.steampowered.com/ISteamUser/GetPlayerSummaries/v0002/");
+    url.searchParams.set("key", key);
+    url.searchParams.set("steamids", ids.slice(i, i + 100).join(","));
+    try {
+      const response = await fetchImpl(url, { method: "GET", signal: AbortSignal.timeout(timeoutMs) });
+      if (!response.ok) continue;
+      const data = (await response.json()) as { response?: { players?: SteamSummary[] } };
+      for (const player of data.response?.players ?? []) {
+        const name = player.personaname?.trim();
+        if (!player.steamid || !name) continue;
+        out.set(player.steamid, {
+          displayName: name.slice(0, 64),
+          avatarUrl: acceptedAvatar(player.avatarfull),
+          profileUrl: acceptedProfileUrl(player.profileurl),
+          found: true,
+        });
+      }
+    } catch {
+      // Steam unreachable: keep stored values.
+    }
+  }
+  return out;
+}
 
 export type SteamReturn = "dashboard" | "squad";
 
@@ -164,31 +225,6 @@ export async function lookupSteamPersona(
   steamId: string,
   fetchImpl: typeof fetch = fetch,
 ): Promise<SteamProfile> {
-  const fallback = `Player ${steamId.slice(-4)}`;
-  const key = getSteamApiKey();
-  if (!key) {
-    return { displayName: fallback, avatarUrl: "" };
-  }
-
-  const url = new URL("https://api.steampowered.com/ISteamUser/GetPlayerSummaries/v0002/");
-  url.searchParams.set("key", key);
-  url.searchParams.set("steamids", steamId);
-
-  try {
-    const response = await fetchImpl(url, { method: "GET" });
-    if (!response.ok) {
-      return { displayName: fallback, avatarUrl: "" };
-    }
-    const data = (await response.json()) as {
-      response?: { players?: Array<{ personaname?: string; avatarfull?: string }> };
-    };
-    const player = data.response?.players?.[0];
-    const name = player?.personaname?.trim();
-    return {
-      displayName: name || fallback,
-      avatarUrl: acceptedAvatar(player?.avatarfull),
-    };
-  } catch {
-    return { displayName: fallback, avatarUrl: "" };
-  }
+  const found = (await lookupSteamPersonas([steamId], fetchImpl)).get(steamId);
+  return found ?? { displayName: steamPlaceholderName(steamId), avatarUrl: "", profileUrl: "", found: false };
 }

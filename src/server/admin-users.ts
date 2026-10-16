@@ -7,6 +7,8 @@ import { prisma } from "@/lib/db";
 import type { AdminPlayerRow, AdminSecurity, AdminTier } from "@/lib/admin-command";
 import { readAdminGate } from "@/server/admin-gate";
 import { effectiveRankArt } from "@/server/rank-art";
+import { lookupSteamPersonas } from "@/server/steam-openid";
+import { steamProfileUpdate } from "@/server/users";
 import { PRESENCE_WINDOW_MS, readPresence, type ConnectedPlayer } from "@/server/presence";
 
 export type AdminLiveStats = {
@@ -116,7 +118,47 @@ function userToAdminRow(user: User): AdminPlayerRow {
     wins: user.wins,
     losses: user.losses,
     avatarUrl: user.avatarUrl || null,
+    steamProfileUrl: user.steamProfileUrl || "",
+    steamSyncedAt: user.steamSyncedAt ? user.steamSyncedAt.toISOString() : null,
   };
+}
+
+const STEAM_STALE_MS = 6 * 60 * 60 * 1000;
+
+/** Re-sync Steam personas for linked users never synced or older than 6h (max 100 per load, 4s budget). */
+async function refreshStaleSteamProfiles() {
+  const stale = await prisma.user.findMany({
+    where: {
+      steamId: { not: null },
+      OR: [{ steamSyncedAt: null }, { steamSyncedAt: { lt: new Date(Date.now() - STEAM_STALE_MS) } }],
+    },
+    select: { id: true, steamId: true },
+    orderBy: { steamSyncedAt: { sort: "asc", nulls: "first" } },
+    take: 100,
+  });
+  if (stale.length === 0) return;
+  const found = await lookupSteamPersonas(stale.map((row) => row.steamId!));
+  const now = new Date();
+  await Promise.all(
+    stale
+      .filter((row) => found.has(row.steamId!))
+      .map((row) => prisma.user.update({ where: { id: row.id }, data: steamProfileUpdate(found.get(row.steamId!)!, now) })),
+  );
+}
+
+/** Admin-only: re-sync one player's Steam persona (called when the dossier opens). */
+export async function refreshAdminSteamProfile(userId: string): Promise<AdminPlayerRow | null> {
+  if (!(await readAdminGate())) return null;
+  try {
+    const user = await prisma.user.findUnique({ where: { id: userId } });
+    if (!user) return null;
+    if (!user.steamId) return userToAdminRow(user);
+    const profile = (await lookupSteamPersonas([user.steamId])).get(user.steamId);
+    if (!profile) return userToAdminRow(user);
+    return userToAdminRow(await prisma.user.update({ where: { id: user.id }, data: steamProfileUpdate(profile) }));
+  } catch {
+    return null;
+  }
 }
 
 export type AdminMatchBrief = {
@@ -156,6 +198,7 @@ export async function loadAdminDirectory(): Promise<AdminDeskData> {
   // Defense in depth: this is a server function, so re-check the operator gate here, not only in the page.
   if (!(await readAdminGate())) return EMPTY_DESK;
   try {
+    await refreshStaleSteamProfiles().catch(() => undefined);
     const [users, enrollment, presence, liveMatches, disputes, growth] = await Promise.all([
       prisma.user.findMany({ orderBy: { createdAt: "desc" } }),
       prisma.user.count(),

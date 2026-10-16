@@ -22,6 +22,10 @@ export type AdminPlayerRow = {
   losses?: number | null;
   /** Stored Steam avatar URL, or null. */
   avatarUrl?: string | null;
+  /** Steam community profile URL ("" when Steam never returned one). Admin-only. */
+  steamProfileUrl?: string;
+  /** ISO time of the last Steam persona sync, null when never synced. */
+  steamSyncedAt?: string | null;
 };
 
 export type AdminTicket = {
@@ -199,4 +203,15 @@ export function cloneAdminPlayers() {
 
 export function findAdminSeed(id: string) {
   return ADMIN_PLAYERS.find((player) => player.id === id) ?? null;
+}
+
+/** Admin-only Steam helpers. A SteamID64 is 17 digits; anything else has no profile link. */
+export function steamProfileHref(steamId: string | null | undefined): string | null {
+  return steamId && /^\d{17}$/.test(steamId) ? `https://steamcommunity.com/profiles/${steamId}` : null;
+}
+
+/** Vanity name from a stored profile URL (https://steamcommunity.com/id/<vanity>/), else null. */
+export function steamVanity(profileUrl: string | null | undefined): string | null {
+  const match = profileUrl?.match(/^https:\/\/steamcommunity\.com\/id\/([^/]+)\/?$/);
+  return match ? decodeURIComponent(match[1]) : null;
 }

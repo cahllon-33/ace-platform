@@ -8,6 +8,8 @@ import { useRouter } from "next/navigation";
 import { useAdminI18n } from "@/components/admin-locale";
 import {
   formatPipelineUsd,
+  steamProfileHref,
+  steamVanity,
   type AdminPlayerRow,
   type AdminSecurity,
   type AdminTier,
@@ -15,6 +17,7 @@ import {
 import { translateAdmin, type AdminMessageKey } from "@/lib/admin-i18n";
 import {
   disconnectAdminSteam,
+  refreshAdminSteamProfile,
   resetAdminProfile,
   setAdminAccountBan,
   setAdminRankTen,
@@ -27,8 +30,9 @@ import {
 } from "@/server/admin-users";
 import { AdminTvWall } from "@/components/admin-tv-wall";
 import type { TvWall } from "@/server/admin-broadcast";
-import { FloatingEmblem, PlayerAvatar } from "@/components/floating-emblem";
-import { RANK_TIERS, rankArtAsset } from "@/lib/ranks";
+import { PlayerAvatar } from "@/components/floating-emblem";
+import { RankOrb } from "@/components/rank-orb";
+import { RANK_TIERS } from "@/lib/ranks";
 import "./admin-command.css";
 
 function tierOf(level: number) {
@@ -43,8 +47,7 @@ function operatorFor(id: string) {
 }
 
 function AdminRankBadge({ level, art, size, label }: { level: number; art?: "standard" | "premium"; size: number; label: string }) {
-  const tier = tierOf(level);
-  return <FloatingEmblem src={rankArtAsset(tier.level, art ?? "standard").stillSrc} alt={`${label}: ${tier.name}`} size={size} />;
+  return <RankOrb level={level} art={art ?? "standard"} size={size} label={label} />;
 }
 
 const TIER_DB: Record<AdminTier, "FREE" | "PLUS" | "PREMIUM"> = { Free: "FREE", Plus: "PLUS", Premium: "PREMIUM" };
@@ -221,6 +224,7 @@ function PlayerDrawer({
           <div><dt>{t("r23Subscription")}</dt><dd>{t(TIER_KEY[player.tier])}</dd></div>
           <div><dt>{t("dossierStatus")}</dt><dd><span className={`acx-badge is-${player.security.toLowerCase()}`}>{t(SECURITY_KEY[player.security])}</span></dd></div>
         </dl>
+        <SteamIdentity player={player} />
         <p className="acx-note">{t("dossierReadOnly")}</p>
         <dl className="ace-admin-dossier">
           <div>
@@ -391,6 +395,18 @@ export function AdminCommandCenter({
   }
 
   const [onlineExtra, setOnlineExtra] = useState<AdminPlayerRow | null>(null);
+  useEffect(() => {
+    if (!editorId || stats.staging || stats.unavailable) return;
+    let alive = true;
+    void refreshAdminSteamProfile(editorId).then((row) => {
+      if (!alive || !row) return;
+      setPlayers((current) => current.map((item) => (item.id === row.id ? row : item)));
+      setOnlineExtra((current) => (current?.id === row.id ? row : current));
+    });
+    return () => {
+      alive = false;
+    };
+  }, [editorId, stats.staging, stats.unavailable]);
   const editor = players.find((player) => player.id === editorId) ?? (onlineExtra?.id === editorId ? onlineExtra : null);
 
   const [query, setQuery] = useState("");
@@ -661,6 +677,7 @@ export function AdminCommandCenter({
                           </small>
                         </span>
                       </button>
+                      <SteamProfileLink steamId={player.steamId} compact />
                     </td>
                     <td className={player.id === rankPulseId ? "ace-admin-rank-hot" : undefined}>
                       <span className="acx-rankcell">
@@ -1020,6 +1037,7 @@ function OnlineNowPanel({ disabled, onOpen }: { disabled: boolean; onOpen: (play
               <span className={`acx-online-tier is-${player.tier.toLowerCase()}`}>{t(TIER_KEY[player.tier])}</span>
               <time className="acx-online-seen" dateTime={lastSeenAt}>{ago(lastSeenAt)}</time>
             </button>
+            <SteamProfileLink steamId={player.steamId} compact />
           </li>
         ))}
       </ul>
@@ -1036,6 +1054,57 @@ function OnlineNowPanel({ disabled, onOpen }: { disabled: boolean; onOpen: (play
       </header>
       <p className="acx-muted">{t("onlineNote")}</p>
       {body}
+    </section>
+  );
+}
+
+/** Admin-only "Open Steam profile" link (new tab, no referrer). Renders nothing without a SteamID64. */
+function SteamProfileLink({ steamId, compact = false }: { steamId: string; compact?: boolean }) {
+  const { t } = useAdminI18n();
+  const href = steamProfileHref(steamId);
+  if (!href) return null;
+  return (
+    <a
+      className={compact ? "acx-steam-link is-compact" : "acx-steam-link"}
+      href={href}
+      target="_blank"
+      rel="noopener noreferrer"
+      title={`${t("steamOpenProfile")}: ${steamId}`}
+      aria-label={`${t("steamOpenProfile")}: ${steamId}`}
+    >
+      {compact ? t("steamProfileShort") : t("steamOpenProfile")}
+      <span aria-hidden="true"> ↗</span>
+    </a>
+  );
+}
+
+/** Dossier block naming the exact Steam account a ban or change hits. Admin-only, real stored values only. */
+function SteamIdentity({ player }: { player: AdminPlayerRow }) {
+  const { t } = useAdminI18n();
+  const href = steamProfileHref(player.steamId);
+  const vanity = steamVanity(player.steamProfileUrl);
+  const shownUrl = player.steamProfileUrl || href;
+  return (
+    <section className="acx-steam-id" aria-label={t("steamIdentityTitle")}>
+      <p className="acx-steam-id-kicker">{t("steamIdentityTitle")}</p>
+      {href ? (
+        <div className="acx-steam-id-body">
+          <PlayerAvatar src={player.avatarUrl ?? null} name={player.username} alt="" size={56} />
+          <dl>
+            <div><dt>{t("steamPersona")}</dt><dd>{player.username}</dd></div>
+            <div><dt>{t("dossierSteam")}</dt><dd className="ace-admin-mono">{player.steamId}</dd></div>
+            <div><dt>{t("steamVanity")}</dt><dd>{vanity ?? <span className="acx-muted">{t("steamVanityNone")}</span>}</dd></div>
+            <div className="is-wide"><dt>{t("steamProfileUrl")}</dt><dd className="ace-admin-mono">{shownUrl}</dd></div>
+            <div className="is-wide">
+              <dt>{t("steamSynced")}</dt>
+              <dd>{player.steamSyncedAt ? new Date(player.steamSyncedAt).toLocaleString() : <span className="acx-muted">{t("steamNeverSynced")}</span>}</dd>
+            </div>
+          </dl>
+          <SteamProfileLink steamId={player.steamId} />
+        </div>
+      ) : (
+        <p className="acx-empty">{t("decoupledNote")}</p>
+      )}
     </section>
   );
 }

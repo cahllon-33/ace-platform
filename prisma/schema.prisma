@@ -67,6 +67,10 @@ model User {
   /// Public Steam persona kept for existing lobby and leaderboard reads.
   displayName       String
   avatarUrl         String           @default("")
+  /// Steam community profile URL from GetPlayerSummaries (vanity /id/<name>/ when the player set one). "" when unknown.
+  steamProfileUrl   String           @default("")
+  /// Last successful Steam persona sync (login, admin refresh). null = never synced from the Steam Web API.
+  steamSyncedAt     DateTime?
   accountStatus     AccountStatus    @default(ACTIVE)
   subscriptionTier  SubscriptionTier @default(FREE)
   /// null = no explicit choice: PREMIUM plan shows Premium art by default. STANDARD/PREMIUM = explicit choice.
