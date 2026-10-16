@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { setPremiumPreviewLevel } from "@/lib/premium-preview-store";
 import { DivisionChips } from "@/components/division-chips";
 import { RankTurntable } from "@/components/rank-turntable";
 import { useI18n } from "@/components/locale-provider";
@@ -70,7 +71,10 @@ export function RankSystemBoard({
                     name: tier.name,
                     level: tier.level,
                   })}
-                  onClick={() => setSelected(tier)}
+                  onClick={() => {
+                    setSelected(tier);
+                    if (art === "premium") setPremiumPreviewLevel(tier.level);
+                  }}
                 >
                   <span className="ace-rank-medal">
                     {/* eslint-disable-next-line @next/next/no-img-element */}

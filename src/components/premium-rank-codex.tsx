@@ -1,5 +1,6 @@
 import { interpolate } from "@/lib/i18n";
 import { RANK_TIERS, rankIllustratedAsset } from "@/lib/ranks";
+import { PremiumCodexPick } from "@/components/premium-codex-pick";
 import type { getText } from "@/server/locale";
 
 type Text = Awaited<ReturnType<typeof getText>>;
@@ -19,6 +20,7 @@ export function PremiumRankCodex({ text, headingId = "premium-rank-codex" }: { t
       <ol className="ace-pcodex-grid">
         {RANK_TIERS.map((tier) => (
           <li key={tier.level} className="ace-pcodex-card">
+            <PremiumCodexPick level={tier.level} label={interpolate(copy.board.selectEmblem, { name: tier.name, level: tier.level })}>
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src={rankIllustratedAsset(tier.level).stillSrc}
@@ -39,6 +41,7 @@ export function PremiumRankCodex({ text, headingId = "premium-rank-codex" }: { t
                 })}
               </p>
             </div>
+            </PremiumCodexPick>
           </li>
         ))}
       </ol>

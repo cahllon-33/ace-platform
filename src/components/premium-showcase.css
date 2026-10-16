@@ -115,3 +115,18 @@
   mask-composite: intersect;
 }
 .ace-pshow-glass .ace-pshow-artbox .ace-pshow-art, .ace-pshow.is-sm .ace-pshow-glass .ace-pshow-artbox .ace-pshow-art { object-fit: fill; padding: 0; }
+
+/* R34: preview card crossfade when a tier is picked in a rank grid. */
+.ace-pcard-xfade { display: grid; }
+.ace-pcard-xfade-layer { grid-area: 1 / 1; min-width: 0; }
+.ace-pcard-xfade-layer.is-entering { animation: ace-pcard-in 420ms ease both; }
+.ace-pcard-xfade-layer.is-leaving { animation: ace-pcard-out 420ms ease both; pointer-events: none; }
+@keyframes ace-pcard-in { from { opacity: 0; } to { opacity: 1; } }
+@keyframes ace-pcard-out { from { opacity: 1; } to { opacity: 0; } }
+@media (prefers-reduced-motion: reduce) {
+  .ace-pcard-xfade-layer.is-entering, .ace-pcard-xfade-layer.is-leaving { animation-duration: 1ms; }
+}
+.ace-pcodex-pick { display: contents; cursor: pointer; font: inherit; color: inherit; text-align: start; }
+.ace-pcodex-card:has(.ace-pcodex-pick) { cursor: pointer; transition: border-color 200ms ease, box-shadow 200ms ease; }
+.ace-pcodex-card:has(.ace-pcodex-pick:focus-visible) { outline: 2px solid #FFD700; outline-offset: 2px; }
+.ace-pcodex-card:has(.ace-pcodex-pick.is-active) { border-color: rgba(255,215,0,0.75); box-shadow: 0 0 0 1px rgba(255,215,0,0.35), 0 0 18px rgba(255,215,0,0.18); }

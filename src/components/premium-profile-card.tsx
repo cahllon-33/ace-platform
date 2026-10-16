@@ -1,5 +1,6 @@
 import { PremiumShowcase, type PremiumShowcaseLabels } from "@/components/premium-showcase";
 import { RANK_TIERS } from "@/lib/ranks";
+import { PremiumProfileCardLive } from "@/components/premium-profile-card-live";
 
 export type PremiumCardLabels = {
   planTag: string;
@@ -80,7 +81,7 @@ export function premiumCardLabels(text: {
   };
 }
 
-/** Preview block: sample name and the Legend floor, always tagged PREVIEW. */
+/** Preview block: sample name, Legend by default; follows a tier picked in a rank grid on the page. Always tagged PREVIEW. */
 export function PremiumProfileCardPreview({
   text,
 }: {
@@ -89,7 +90,7 @@ export function PremiumProfileCardPreview({
   const c = text.pricing.premiumExtras.card;
   return (
     <div className="ace-pcard-wrap">
-      <PremiumProfileCard name={c.sampleName} level={10} rating={null} labels={premiumCardLabels(text)} preview />
+      <PremiumProfileCardLive name={c.sampleName} defaultLevel={10} labels={premiumCardLabels(text)} />
       <p className="ace-pcard-note">{c.previewNote}</p>
     </div>
   );
