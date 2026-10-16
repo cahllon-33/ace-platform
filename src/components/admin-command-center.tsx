@@ -196,23 +196,31 @@ function PlayerDrawer({
             />
             <span className="acx-hero-vignette" aria-hidden="true" />
           </div>
-          <div className="acx-hero-badge">
-            <AdminRankBadge level={player.rank} art={player.art} size={132} label={t("r23Rank")} />
+          <div className={`acx-hero-rank${player.art === "premium" ? " is-premium" : ""}`}>
+            <AdminRankBadge level={player.rank} art={player.art} size={172} label={t("r23Rank")} />
+            <p className="acx-hero-tier">{tierOf(player.rank).name}</p>
+            <p className="acx-hero-tiernum">
+              {t("colRank")} {player.rank}
+            </p>
+            <p className="acx-hero-rp">
+              {player.rating.toLocaleString("en-US")} <span>RP</span>
+            </p>
+            {player.art === "premium" ? <span className="acx-premium-tag">{t("r23Premium")}</span> : null}
           </div>
         </div>
         <div className="acx-nameplate">
-          {player.avatarUrl ? <PlayerAvatar src={player.avatarUrl} name={player.username} alt="" size={48} /> : null}
+          <PlayerAvatar src={player.avatarUrl ?? null} name={player.username} alt="" size={56} />
           <div className="acx-nameplate-id">
-            <p className="acx-dossier-name">{player.username}</p>
-            <p className="acx-nameplate-rank">
-              {tierOf(player.rank).name} · {t("colRank")} {player.rank}
-              {player.art === "premium" ? <span className="acx-premium-tag">{t("r23Premium")}</span> : null}
+            <p className="acx-nameplate-kicker">{t("steamPersona")}</p>
+            <p className="acx-dossier-name acx-steam-name">{player.username}</p>
+            <p className="acx-nameplate-meta">
+              <span className="ace-admin-mono">{player.steamId === "—" ? t("decoupledNote") : player.steamId}</span>
+              {player.email && player.email !== "—" ? <span className="acx-muted">{player.email}</span> : null}
             </p>
-            <p className="acx-muted">{player.email}</p>
           </div>
           <div className="acx-nameplate-side">
-            <span className="acx-rp">{player.rating.toLocaleString("en-US")} RP</span>
             <span className={`acx-sub-chip is-${player.tier.toLowerCase()}`}>{t(TIER_KEY[player.tier])}</span>
+            <SteamProfileLink steamId={player.steamId} compact />
           </div>
         </div>
         <dl className="acx-dossier-stats acx-dossier-stats-4">

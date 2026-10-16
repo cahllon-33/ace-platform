@@ -1,0 +1,131 @@
+/* Admin-only RankOrb (R31). All sizes derive from --rorb-size; tier color is --rorb-tone (fixed per tier). */
+@property --rorb-a { syntax: "<angle>"; inherits: false; initial-value: 0deg; }
+
+.rorb {
+  --gold: #f5c842;
+  --ring: var(--rorb-tone);
+  position: relative; display: inline-block; flex: none; vertical-align: middle;
+  width: var(--rorb-size); height: var(--rorb-size);
+  font-size: calc(var(--rorb-size) / 16);
+  isolation: isolate;
+}
+.rorb.is-premium { --ring: var(--gold); }
+
+/* soft halo + particles */
+.rorb-halo {
+  position: absolute; inset: -6%; border-radius: 50%; z-index: 0; pointer-events: none;
+  background: radial-gradient(circle at 50% 50%, color-mix(in srgb, var(--rorb-tone) 34%, transparent) 0%, transparent 62%);
+}
+.rorb-halo::before {
+  content: ""; position: absolute; inset: 0; border-radius: 50%;
+  background:
+    radial-gradient(circle at 18% 30%, color-mix(in srgb, var(--rorb-tone) 90%, white) 0 0.12em, transparent 0.2em),
+    radial-gradient(circle at 82% 22%, #fff 0 0.08em, transparent 0.16em),
+    radial-gradient(circle at 88% 70%, color-mix(in srgb, var(--rorb-tone) 90%, white) 0 0.1em, transparent 0.18em),
+    radial-gradient(circle at 12% 76%, #fff 0 0.07em, transparent 0.14em),
+    radial-gradient(circle at 50% 6%, color-mix(in srgb, var(--rorb-tone) 80%, white) 0 0.09em, transparent 0.16em);
+  opacity: 0.85;
+  animation: rorb-drift 18s linear infinite;
+}
+.rorb.is-premium .rorb-halo { background: radial-gradient(circle, rgba(255, 210, 80, 0.42) 0%, rgba(255, 180, 40, 0.12) 45%, transparent 66%); }
+
+/* glossy sphere */
+.rorb-sphere {
+  position: absolute; inset: 17%; z-index: 2; border-radius: 50%; overflow: hidden;
+  background: radial-gradient(circle at 50% 42%, color-mix(in srgb, var(--rorb-tone) 30%, #111) 0%, #07070a 72%);
+  box-shadow:
+    0 0 0 max(1px, 0.06em) color-mix(in srgb, var(--rorb-tone) 70%, transparent),
+    0 0 1.1em color-mix(in srgb, var(--rorb-tone) 45%, transparent),
+    0 0.5em 1em rgba(0, 0, 0, 0.65);
+  animation: rorb-float 6s ease-in-out infinite;
+}
+.rorb.is-premium .rorb-sphere {
+  box-shadow:
+    0 0 0 max(1px, 0.08em) #f5c842,
+    0 0 0 max(2px, 0.16em) rgba(92, 61, 6, 0.9),
+    0 0 1.4em rgba(255, 200, 60, 0.55),
+    0 0.5em 1em rgba(0, 0, 0, 0.7);
+}
+.rorb-art {
+  position: absolute; inset: 9%; background-repeat: no-repeat; background-position: center; background-size: contain;
+  -webkit-mask-image: radial-gradient(circle at 50% 50%, #000 52%, transparent 71%);
+  mask-image: radial-gradient(circle at 50% 50%, #000 52%, transparent 71%);
+}
+.rorb.is-premium .rorb-art { inset: -6% -14%; background-size: cover; background-position: 50% 38%; }
+/* inner shadow + rim light (lit from top-left, tier-colored rim bottom-right) */
+.rorb-shade {
+  position: absolute; inset: 0; border-radius: 50%; pointer-events: none;
+  background:
+    radial-gradient(circle at 68% 78%, color-mix(in srgb, var(--rorb-tone) 38%, transparent) 0%, transparent 34%),
+    radial-gradient(circle at 50% 50%, transparent 54%, rgba(0, 0, 0, 0.72) 100%);
+  box-shadow: inset -0.35em -0.45em 0.9em rgba(0, 0, 0, 0.6), inset 0.12em 0.12em 0.35em rgba(255, 255, 255, 0.18);
+}
+/* specular highlight */
+.rorb-gloss {
+  position: absolute; left: 14%; top: 7%; width: 52%; height: 34%; border-radius: 50%; pointer-events: none;
+  background: radial-gradient(ellipse at 50% 40%, rgba(255, 255, 255, 0.75) 0%, rgba(255, 255, 255, 0.2) 45%, transparent 72%);
+  transform: rotate(-24deg); filter: blur(0.03em);
+}
+.rorb-gloss::after { content: ""; position: absolute; right: -40%; bottom: -150%; width: 22%; height: 22%; border-radius: 50%; background: rgba(255, 255, 255, 0.35); filter: blur(0.06em); }
+/* Premium shimmer sweep */
+.rorb-shimmer { display: none; }
+.rorb.is-premium .rorb-shimmer {
+  display: block; position: absolute; inset: -20%; pointer-events: none;
+  background: linear-gradient(115deg, transparent 38%, rgba(255, 240, 190, 0.0) 42%, rgba(255, 240, 190, 0.55) 50%, rgba(255, 240, 190, 0) 58%, transparent 62%);
+  transform: translateX(-70%); animation: rorb-sweep 4.8s ease-in-out infinite; mix-blend-mode: screen;
+}
+
+/* orbit ring: an ellipse split into back (behind sphere) and front (lower half, over sphere) */
+.rorb-ring {
+  position: absolute; left: 1%; right: 1%; top: 38%; height: 26%; border-radius: 50%; pointer-events: none;
+  transform: rotate(-14deg);
+  background: conic-gradient(from var(--rorb-a), transparent 0deg 250deg, color-mix(in srgb, var(--ring) 60%, transparent) 300deg, #fff 336deg, var(--ring) 344deg, transparent 360deg), transparent;
+  -webkit-mask: radial-gradient(farthest-side, transparent calc(100% - max(1.5px, 0.11em)), #000 calc(100% - max(1.5px, 0.11em)) 100%, transparent 100%);
+  mask: radial-gradient(farthest-side, transparent calc(100% - max(1.5px, 0.11em)), #000 calc(100% - max(1.5px, 0.11em)) 100%, transparent 100%);
+  animation: rorb-orbit 5.5s linear infinite;
+}
+.rorb-ring::before {
+  content: ""; position: absolute; inset: 0; border-radius: 50%;
+  border: max(1px, 0.07em) solid color-mix(in srgb, var(--ring) 70%, transparent);
+}
+.rorb-ring.is-back { z-index: 1; opacity: 0.75; }
+.rorb-ring.is-front {
+  z-index: 3;
+  clip-path: inset(50% 0 0 0);
+  filter: drop-shadow(0 0 0.25em color-mix(in srgb, var(--ring) 80%, transparent));
+}
+.rorb.is-premium .rorb-ring::before { border-color: #f5c842; }
+
+/* crown */
+.rorb-crown { position: absolute; z-index: 4; left: 50%; top: 1%; width: 38%; translate: -50% 0; filter: drop-shadow(0 0.08em 0.12em rgba(0, 0, 0, 0.8)) drop-shadow(0 0 0.35em rgba(255, 200, 60, 0.7)); }
+.rorb-floor { position: absolute; z-index: 0; left: 26%; right: 26%; bottom: 3%; height: 8%; border-radius: 50%; background: radial-gradient(ellipse, color-mix(in srgb, var(--rorb-tone) 45%, transparent), transparent 70%); }
+.rorb.is-premium .rorb-floor { background: radial-gradient(ellipse, rgba(255, 200, 60, 0.55), transparent 70%); }
+
+/* small sizes: keep the sphere, ring (static glint) and crown; drop particles, floor, float */
+.rorb.is-sm .rorb-halo::before, .rorb.is-sm .rorb-floor { display: none; }
+.rorb.is-sm .rorb-sphere { animation: none; inset: 14%; }
+.rorb.is-sm .rorb-ring { animation-duration: 9s; }
+.rorb.is-sm .rorb-crown { width: 46%; top: -8%; }
+.rorb.is-sm .rorb-gloss::after { display: none; }
+
+@keyframes rorb-orbit { to { --rorb-a: 360deg; } }
+@keyframes rorb-float { 0%, 100% { translate: 0 0; } 50% { translate: 0 -0.12em; } }
+@keyframes rorb-drift { to { rotate: 360deg; } }
+@keyframes rorb-sweep { 0%, 35% { transform: translateX(-70%); } 75%, 100% { transform: translateX(70%); } }
+
+@media (prefers-reduced-motion: reduce) {
+  .rorb-sphere, .rorb-ring, .rorb-halo::before, .rorb.is-premium .rorb-shimmer { animation: none !important; }
+  .rorb-ring { --rorb-a: 40deg; }
+}
+
+/* R31 tuning: brighter, thicker rings; Premium keeps the tier-colored orbit (gold lives in bezel, crown, sweep) */
+.rorb.is-premium { --ring: var(--rorb-tone); }
+.rorb-ring::before { border-width: max(1.25px, 0.12em); border-color: color-mix(in srgb, var(--ring) 85%, transparent); box-shadow: 0 0 0.35em color-mix(in srgb, var(--ring) 55%, transparent); }
+.rorb.is-premium .rorb-ring::before { border-color: color-mix(in srgb, var(--ring) 85%, transparent); }
+.rorb-ring.is-back { opacity: 0.9; }
+.rorb-ring {
+  -webkit-mask: radial-gradient(farthest-side, transparent calc(100% - max(2px, 0.2em)), #000 calc(100% - max(2px, 0.2em)) 100%, transparent 100%);
+  mask: radial-gradient(farthest-side, transparent calc(100% - max(2px, 0.2em)), #000 calc(100% - max(2px, 0.2em)) 100%, transparent 100%);
+}
+.rorb-ring::before { border-width: max(1.5px, 0.18em); }
+.rorb.is-sm .rorb-ring::before { border-width: 1.5px; }
