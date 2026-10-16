@@ -1,7 +1,7 @@
 "use client";
 
 import { RP_RULES } from "@/lib/rp-rules";
-import { useEffect, useId, useState, useSyncExternalStore } from "react";
+import { useEffect, useId, useLayoutEffect, useRef, useState, useSyncExternalStore, type ReactNode } from "react";
 import { createPortal } from "react-dom";
 import { useRouter } from "next/navigation";
 import { useAdminI18n } from "@/components/admin-locale";
@@ -693,9 +693,7 @@ export function AdminCommandCenter({
                       <span className={`acx-badge is-${player.security.toLowerCase()}`}>{t(SECURITY_KEY[player.security])}</span>
                     </td>
                     <td>
-                      <details className="acx-menu">
-                        <summary className="acx-btn">{t("actionsMenu")}</summary>
-                        <div className="acx-menu-list" role="group" aria-label={t("colAction")}>
+                      <ActionsMenu label={t("actionsMenu")} groupLabel={t("colAction")}>
                         {(["upgrade", "rank", "reset", "disconnect"] as const).map((kind) => (
                           <button
                             key={kind}
@@ -715,8 +713,7 @@ export function AdminCommandCenter({
                         >
                           {player.security === "Banned" ? t("unbanAction") : t("banAction")}
                         </button>
-                        </div>
-                      </details>
+                      </ActionsMenu>
                     </td>
                   </tr>
                 ))}
@@ -842,5 +839,102 @@ function GrowthSparkline({ days, label, empty }: { days: number[]; label: string
       </svg>
       <div className="acx-spark-scale"><span>0</span><span>{max}</span></div>
     </figure>
+  );
+}
+
+/**
+ * Row actions menu rendered in a portal with fixed positioning, so it is never clipped by the
+ * table's scroll container. It aligns to the trigger's inline-end edge, flips to stay inside the
+ * viewport (8px margin) and opens upward when there is no room below.
+ */
+function ActionsMenu({ label, groupLabel, children }: { label: string; groupLabel: string; children: ReactNode }) {
+  const [open, setOpen] = useState(false);
+  const [pos, setPos] = useState<{ left: number; top: number; maxHeight: number; dir: "rtl" | "ltr" } | null>(null);
+  const trigger = useRef<HTMLButtonElement>(null);
+  const menu = useRef<HTMLDivElement>(null);
+  const menuId = useId();
+
+  useLayoutEffect(() => {
+    if (!open) return;
+    const place = () => {
+      const t = trigger.current?.getBoundingClientRect();
+      const m = menu.current;
+      if (!t || !m) return;
+      const margin = 8;
+      const vw = document.documentElement.clientWidth;
+      const vh = window.innerHeight;
+      const w = Math.min(m.offsetWidth, vw - margin * 2);
+      const rtl = getComputedStyle(trigger.current!).direction === "rtl";
+      let left = rtl ? t.left : t.right - w;
+      left = Math.max(margin, Math.min(left, vw - w - margin));
+      const h = m.scrollHeight;
+      const below = vh - t.bottom - margin;
+      const above = t.top - margin;
+      const up = h + 6 > below && above > below;
+      const maxHeight = Math.max(120, (up ? above : below) - 6);
+      const top = up ? Math.max(margin, t.top - 6 - Math.min(h, maxHeight)) : t.bottom + 6;
+      setPos({ left, top, maxHeight, dir: rtl ? "rtl" : "ltr" });
+    };
+    place();
+    const close = (event: Event) => {
+      const target = event.target as Node | null;
+      if (target && (menu.current?.contains(target) || trigger.current?.contains(target))) return;
+      setOpen(false);
+    };
+    const onKey = (event: KeyboardEvent) => {
+      if (event.key === "Escape") {
+        setOpen(false);
+        trigger.current?.focus();
+      }
+    };
+    window.addEventListener("resize", place);
+    window.addEventListener("scroll", place, true);
+    document.addEventListener("pointerdown", close);
+    document.addEventListener("keydown", onKey);
+    return () => {
+      window.removeEventListener("resize", place);
+      window.removeEventListener("scroll", place, true);
+      document.removeEventListener("pointerdown", close);
+      document.removeEventListener("keydown", onKey);
+    };
+  }, [open]);
+
+  return (
+    <div className="acx-menu">
+      <button
+        ref={trigger}
+        type="button"
+        className={`acx-btn acx-menu-trigger${open ? " is-open" : ""}`}
+        aria-haspopup="true"
+        aria-expanded={open}
+        aria-controls={open ? menuId : undefined}
+        suppressHydrationWarning
+        onClick={() => {
+          setPos(null);
+          setOpen((value) => !value);
+        }}
+      >
+        {label}
+      </button>
+      {open
+        ? createPortal(
+            <div
+              ref={menu}
+              id={menuId}
+              className="acx-menu-pop"
+              role="group"
+              aria-label={groupLabel}
+              dir={pos?.dir}
+              style={pos ? { left: pos.left, top: pos.top, maxHeight: pos.maxHeight } : { left: -9999, top: 0 }}
+              onClick={(event) => {
+                if ((event.target as HTMLElement).closest("button")) setOpen(false);
+              }}
+            >
+              {children}
+            </div>,
+            document.body,
+          )
+        : null}
+    </div>
   );
 }
