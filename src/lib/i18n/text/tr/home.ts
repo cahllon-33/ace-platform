@@ -1,6 +1,15 @@
 import type { TextBag } from "../types";
 
 export const home: TextBag["home"] = {
+  "liveStats": {
+    "kicker": "CANLI",
+    "online": "Şu an çevrimiçi",
+    "registered": "Kayıtlı oyuncular",
+    "earlyTitle": "Erken erişim",
+    "earlyBody": "A.C.E.'nin ilk oyuncularına katıl. Topluluk büyüdüğünde canlı sayılar burada görünecek.",
+    "unavailable": "Canlı sayılar şu anda kullanılamıyor.",
+    "note": "Gerçek sayılar, her 30 saniyede güncellenir."
+  },
   "ops": {
     "identityKicker": "KİMLİK MERKEZİ",
     "signedOutTitle": "Steam ile giriş yap",

@@ -1,6 +1,15 @@
 import type { TextBag } from "../types";
 
 export const home: TextBag["home"] = {
+  "liveStats": {
+    "kicker": "लाइव",
+    "online": "अभी ऑनलाइन",
+    "registered": "पंजीकृत खिलाड़ी",
+    "earlyTitle": "अर्ली एक्सेस",
+    "earlyBody": "A.C.E. के पहले खिलाड़ियों में शामिल हों। समुदाय बढ़ने पर लाइव गिनती यहाँ दिखेगी।",
+    "unavailable": "लाइव गिनती अभी उपलब्ध नहीं है।",
+    "note": "असली गिनती, हर 30 सेकंड में अपडेट।"
+  },
   "ops": {
     "identityKicker": "पहचान हब",
     "signedOutTitle": "Steam से साइन इन करें",

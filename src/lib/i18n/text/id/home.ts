@@ -1,6 +1,15 @@
 import type { TextBag } from "../types";
 
 export const home: TextBag["home"] = {
+  "liveStats": {
+    "kicker": "LANGSUNG",
+    "online": "Online sekarang",
+    "registered": "Pemain terdaftar",
+    "earlyTitle": "Akses awal",
+    "earlyBody": "Bergabunglah dengan pemain pertama di A.C.E. Hitungan langsung akan muncul di sini saat komunitas tumbuh.",
+    "unavailable": "Hitungan langsung sedang tidak tersedia.",
+    "note": "Angka asli, diperbarui setiap 30 detik."
+  },
   "ops": {
     "identityKicker": "PUSAT IDENTITAS",
     "signedOutTitle": "Masuk dengan Steam",

@@ -1,6 +1,15 @@
 import type { TextBag } from "../types";
 
 export const home: TextBag["home"] = {
+  "liveStats": {
+    "kicker": "חי",
+    "online": "מחוברים עכשיו",
+    "registered": "שחקנים רשומים",
+    "earlyTitle": "גישה מוקדמת",
+    "earlyBody": "הצטרפו לשחקנים הראשונים ב-A.C.E. המונים החיים יופיעו כאן כשהקהילה תגדל.",
+    "unavailable": "המונים החיים אינם זמינים כרגע.",
+    "note": "מספרים אמיתיים, מתעדכנים כל 30 שניות."
+  },
   "ops": {
     "identityKicker": "מרכז זהות",
     "signedOutTitle": "התחברות עם Steam",

@@ -1,6 +1,15 @@
 import type { TextBag } from "../types";
 
 export const home: TextBag["home"] = {
+  "liveStats": {
+    "kicker": "ВО ЖИВО",
+    "online": "Моментално онлајн",
+    "registered": "Регистрирани играчи",
+    "earlyTitle": "Ран пристап",
+    "earlyBody": "Придружи се на првите играчи на A.C.E. Бројките во живо ќе се појават тука кога заедницата ќе порасне.",
+    "unavailable": "Бројките во живо моментално не се достапни.",
+    "note": "Вистински бројки, се освежуваат на секои 30 секунди."
+  },
   "ops": {
     "identityKicker": "ЦЕНТАР ЗА ИДЕНТИТЕТ",
     "signedOutTitle": "Најави се преку Steam",

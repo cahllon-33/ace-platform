@@ -1,4 +1,13 @@
 ﻿export const home = {
+  "liveStats": {
+    "kicker": "LIVE",
+    "online": "Online now",
+    "registered": "Registered players",
+    "earlyTitle": "Early access",
+    "earlyBody": "Join the first players on A.C.E. Live counts appear here once the community grows.",
+    "unavailable": "Live counts are unavailable right now.",
+    "note": "Real counts, refreshed every 30 seconds."
+  },
   "ops": {
     "identityKicker": "IDENTITY HUB",
     "signedOutTitle": "Sign in with Steam",

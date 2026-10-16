@@ -1,6 +1,15 @@
 import type { TextBag } from "../types";
 
 export const home: TextBag["home"] = {
+  "liveStats": {
+    "kicker": "라이브",
+    "online": "현재 접속 중",
+    "registered": "등록된 플레이어",
+    "earlyTitle": "얼리 액세스",
+    "earlyBody": "A.C.E.의 첫 플레이어가 되어 보세요. 커뮤니티가 성장하면 실시간 수치가 여기에 표시됩니다.",
+    "unavailable": "현재 실시간 수치를 사용할 수 없습니다.",
+    "note": "실제 수치, 30초마다 갱신."
+  },
   "ops": {
     "identityKicker": "아이덴티티 허브",
     "signedOutTitle": "Steam으로 로그인",

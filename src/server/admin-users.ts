@@ -20,7 +20,52 @@ export type AdminLiveStats = {
   /** Distinct Steam accounts that loaded the site in the last 3 minutes. */
   connected: ConnectedPlayer[];
   presence: "ok" | "down" | "migration";
+  /** Real growth figures from PostgreSQL. null when the database is unavailable or staging rows are shown. */
+  growth?: AdminGrowth | null;
 };
+
+export type AdminGrowth = {
+  steamLinked: number;
+  today: number;
+  last7: number;
+  /** Registrations per UTC day, oldest first, 14 entries (today last). */
+  daily14: number[];
+  premium: number;
+  plus: number;
+  matchesCompleted: number;
+};
+
+function utcDayStart(d: Date) {
+  return new Date(Date.UTC(d.getUTCFullYear(), d.getUTCMonth(), d.getUTCDate()));
+}
+
+async function loadGrowth(): Promise<AdminGrowth> {
+  const now = new Date();
+  const today = utcDayStart(now);
+  const from14 = new Date(today.getTime() - 13 * 86_400_000);
+  const from7 = new Date(today.getTime() - 6 * 86_400_000);
+  const [steamLinked, recent, tiers, matchesCompleted] = await Promise.all([
+    prisma.user.count({ where: { steamId: { not: null } } }),
+    prisma.user.findMany({ where: { createdAt: { gte: from14 } }, select: { createdAt: true } }),
+    prisma.user.groupBy({ by: ["subscriptionTier"], _count: { _all: true } }),
+    prisma.match.count({ where: { state: "COMPLETED" } }),
+  ]);
+  const daily14 = Array.from({ length: 14 }, () => 0);
+  for (const row of recent) {
+    const idx = Math.floor((utcDayStart(row.createdAt).getTime() - from14.getTime()) / 86_400_000);
+    if (idx >= 0 && idx < 14) daily14[idx] += 1;
+  }
+  const tierCount = (tier: string) => tiers.find((row) => row.subscriptionTier === tier)?._count._all ?? 0;
+  return {
+    steamLinked,
+    today: daily14[13],
+    last7: recent.filter((row) => row.createdAt >= from7).length,
+    daily14,
+    premium: tierCount("PREMIUM"),
+    plus: tierCount("PLUS"),
+    matchesCompleted,
+  };
+}
 
 const EMPTY_STATS: AdminLiveStats = {
   enrollment: 0,
@@ -111,7 +156,7 @@ export async function loadAdminDirectory(): Promise<AdminDeskData> {
   // Defense in depth: this is a server function, so re-check the operator gate here, not only in the page.
   if (!(await readAdminGate())) return EMPTY_DESK;
   try {
-    const [users, enrollment, presence, liveMatches, disputes] = await Promise.all([
+    const [users, enrollment, presence, liveMatches, disputes, growth] = await Promise.all([
       prisma.user.findMany({ orderBy: { createdAt: "desc" } }),
       prisma.user.count(),
       readPresence(),
@@ -139,6 +184,7 @@ export async function loadAdminDirectory(): Promise<AdminDeskData> {
           },
         },
       }),
+      loadGrowth().catch(() => null),
     ]);
     const matches: AdminMatchBrief[] = liveMatches.map((match) => ({
       id: match.id,
@@ -173,6 +219,7 @@ export async function loadAdminDirectory(): Promise<AdminDeskData> {
         staging: false,
         connected: presence.players,
         presence: presence.reason,
+        growth,
       },
       matches,
       reports,

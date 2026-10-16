@@ -478,6 +478,36 @@ export function AdminCommandCenter({
           </div>
         </dl>
 
+        <section className="acx-card acx-growth" aria-labelledby="acx-growth">
+          <h2 id="acx-growth" className="acx-card-title">{t("growthTitle")}</h2>
+          <p className="acx-muted">{t("growthLede")}</p>
+          {!stats.growth || stats.unavailable || stats.staging ? (
+            <p className="acx-empty">{t("growthUnavailable")}</p>
+          ) : (
+            <>
+              <dl className="acx-growth-grid">
+                {(
+                  [
+                    ["growthSteam", stats.growth.steamLinked],
+                    ["growthToday", stats.growth.today],
+                    ["growth7d", stats.growth.last7],
+                    ["growthPremium", stats.growth.premium],
+                    ["growthPlus", stats.growth.plus],
+                    ["growthMatches", stats.growth.matchesCompleted],
+                  ] as const
+                ).map(([key, value]) => (
+                  <div key={key}>
+                    <dt>{t(key)}</dt>
+                    <dd>{value.toLocaleString()}</dd>
+                  </div>
+                ))}
+              </dl>
+              <GrowthSparkline days={stats.growth.daily14} label={t("growthSpark")} empty={t("growthSparkEmpty")} />
+            </>
+          )}
+          <p className="acx-muted acx-growth-note">{t("growthPublicNote")}</p>
+        </section>
+
         <div className="acx-grid-3">
           <section className="acx-card" aria-labelledby="acx-connected">
             <h2 id="acx-connected" className="acx-card-title">{t("connectedTitle")}</h2>
@@ -793,5 +823,24 @@ export function AdminCommandCenter({
         />
       ) : null}
     </div>
+  );
+}
+
+function GrowthSparkline({ days, label, empty }: { days: number[]; label: string; empty: string }) {
+  const max = Math.max(0, ...days);
+  if (max === 0) return <p className="acx-empty">{empty}</p>;
+  const w = 280;
+  const h = 56;
+  const step = w / (days.length - 1);
+  const points = days.map((v, i) => `${(i * step).toFixed(1)},${(h - 4 - (v / max) * (h - 8)).toFixed(1)}`).join(" ");
+  return (
+    <figure className="acx-spark">
+      <figcaption>{label}</figcaption>
+      <svg viewBox={`0 0 ${w} ${h}`} role="img" aria-label={`${label}: ${days.join(", ")}`} preserveAspectRatio="none">
+        <polyline points={`0,${h} ${points} ${w},${h}`} fill="rgba(212,175,55,0.14)" stroke="none" />
+        <polyline points={points} fill="none" stroke="#d4af37" strokeWidth="2" strokeLinejoin="round" />
+      </svg>
+      <div className="acx-spark-scale"><span>0</span><span>{max}</span></div>
+    </figure>
   );
 }

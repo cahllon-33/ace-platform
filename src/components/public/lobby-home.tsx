@@ -1,4 +1,6 @@
 import { Suspense } from "react";
+import { LiveStatStrip } from "@/components/public/live-stat-strip";
+import { readPublicStats } from "@/server/public-stats";
 import Link from "next/link";
 import { connection } from "next/server";
 import { HomeLocaleActions, HowItWorksLocale, LocaleLoading } from "@/components/home-locale-actions";
@@ -38,13 +40,14 @@ async function LobbyHomeDynamic() {
     user = null;
   }
 
-  const text = await getText();
+  const [text, liveStats] = await Promise.all([getText(), readPublicStats()]);
   const live = Boolean(user);
   return (
     <main className="ace-lobby-root ace-home-flow">
       <OpeningReel />
       <HeroArena actions={<HomeLocaleActions live={live} />} />
       <PlatformStatus />
+      <LiveStatStrip initial={liveStats} labels={text.home.liveStats} />
       <nav className="ace-home-jumps" aria-label={text.home.jumpNav.label}>
         <Link href="/play">{text.home.jumpNav.play}</Link>
         <Link href="/prizes">{text.home.jumpNav.prizes}</Link>

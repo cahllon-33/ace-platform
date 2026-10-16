@@ -1,6 +1,15 @@
 import type { TextBag } from "../types";
 
 export const home: TextBag["home"] = {
+  "liveStats": {
+    "kicker": "实时",
+    "online": "当前在线",
+    "registered": "注册玩家",
+    "earlyTitle": "抢先体验",
+    "earlyBody": "成为 A.C.E. 的首批玩家。社区壮大后，实时数据将显示在这里。",
+    "unavailable": "实时数据暂时不可用。",
+    "note": "真实数据，每 30 秒刷新一次。"
+  },
   "ops": {
     "identityKicker": "身份中心",
     "signedOutTitle": "使用 Steam 登录",
