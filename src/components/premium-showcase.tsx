@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { useRef, type PointerEvent } from "react";
 import { interpolate } from "@/lib/i18n";
-import { RANK_TIERS, rankIllustratedAsset } from "@/lib/ranks";
+import { PREMIUM_ART_META, RANK_TIERS, rankIllustratedAsset } from "@/lib/ranks";
 import "./premium-showcase.css";
 
 export type PremiumShowcaseLabels = {
@@ -48,6 +48,14 @@ export function PremiumShowcase({
   const card = useRef<HTMLDivElement>(null);
   const dims = SIZES[size];
   const alt = interpolate(labels.artAlt, { rank: tier.name });
+  const meta = PREMIUM_ART_META[tier.level];
+  // Contain-fit box with the art's exact ratio inside the 92:132 glass (max 96% wide, 97% tall), so the feather mask follows the real image edges.
+  const cardRatio = 92 / 132;
+  const artRatio = meta ? meta.w / meta.h : cardRatio;
+  const box =
+    artRatio < cardRatio
+      ? { height: "97%", width: `${((97 * artRatio) / cardRatio).toFixed(2)}%` }
+      : { width: "96%", height: `${((96 * cardRatio) / artRatio).toFixed(2)}%` };
 
   const onMove = (event: PointerEvent<HTMLDivElement>) => {
     if (event.pointerType !== "mouse" || !card.current) return;
@@ -68,7 +76,11 @@ export function PremiumShowcase({
   return (
     <figure
       className={`ace-pshow is-${size}`}
-      style={{ ["--pshow-w" as string]: `${dims.w}px`, ["--pshow-tone" as string]: TONE[tier.level] }}
+      style={{
+        ["--pshow-w" as string]: `${dims.w}px`,
+        ["--pshow-tone" as string]: TONE[tier.level],
+        ["--pshow-art-bg" as string]: meta?.tone ?? "#0a0a0a",
+      }}
       data-tier={tier.level}
     >
       <div className="ace-pshow-stage">
@@ -76,7 +88,9 @@ export function PremiumShowcase({
         <div ref={card} className="ace-pshow-card" onPointerMove={onMove} onPointerLeave={onLeave}>
           <div className="ace-pshow-bezel">
             <div className="ace-pshow-glass">
-              <Image className="ace-pshow-art" src={src} alt={alt} fill sizes={dims.sizes} unoptimized />
+              <span className="ace-pshow-artbox" style={box}>
+                <Image className="ace-pshow-art" src={src} alt={alt} fill sizes={dims.sizes} unoptimized />
+              </span>
               <span className="ace-pshow-sheen" aria-hidden="true" />
               <span className="ace-pshow-gloss" aria-hidden="true" />
             </div>
@@ -88,7 +102,9 @@ export function PremiumShowcase({
             <div className="ace-pshow-reflection" aria-hidden="true">
               <div className="ace-pshow-bezel">
                 <div className="ace-pshow-glass">
-                  <Image className="ace-pshow-art" src={src} alt="" fill sizes={dims.sizes} unoptimized />
+                  <span className="ace-pshow-artbox" style={box}>
+                    <Image className="ace-pshow-art" src={src} alt="" fill sizes={dims.sizes} unoptimized />
+                  </span>
                 </div>
               </div>
             </div>

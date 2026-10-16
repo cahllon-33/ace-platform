@@ -100,3 +100,18 @@
 }
 .ace-pshow-beam { top: 0; bottom: 0; height: auto; -webkit-mask-image: linear-gradient(180deg, transparent 0%, #000 25%, #000 55%, transparent 88%); mask-image: linear-gradient(180deg, transparent 0%, #000 25%, #000 55%, transparent 88%); }
 .ace-pshow-reflection { -webkit-mask-image: linear-gradient(0deg, rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0.3) 12%, transparent 24%); mask-image: linear-gradient(0deg, rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0.3) 12%, transparent 24%); opacity: 0.4; }
+
+/* R33: art blends into the glass. Glass takes the art's own edge tone; the art box has the image's exact ratio
+   and a soft edge feather (no hard inner rectangle). The whole emblem stays inside (contain, never cropped). */
+.ace-pshow-glass {
+  background:
+    radial-gradient(75% 60% at 50% 45%, color-mix(in srgb, var(--pshow-art-bg) 70%, var(--pshow-tone) 8%), var(--pshow-art-bg) 70%, color-mix(in srgb, var(--pshow-art-bg) 70%, #000) 100%);
+}
+.ace-pshow-artbox {
+  position: absolute; left: 50%; top: 50%; translate: -50% -50%; display: block;
+  -webkit-mask-image: linear-gradient(90deg, transparent 0, #000 9%, #000 91%, transparent 100%), linear-gradient(180deg, transparent 0, #000 4%, #000 96%, transparent 100%);
+  -webkit-mask-composite: source-in;
+  mask-image: linear-gradient(90deg, transparent 0, #000 9%, #000 91%, transparent 100%), linear-gradient(180deg, transparent 0, #000 4%, #000 96%, transparent 100%);
+  mask-composite: intersect;
+}
+.ace-pshow-glass .ace-pshow-artbox .ace-pshow-art, .ace-pshow.is-sm .ace-pshow-glass .ace-pshow-artbox .ace-pshow-art { object-fit: fill; padding: 0; }

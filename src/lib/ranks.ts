@@ -184,6 +184,23 @@ export function rankIllustratedAsset(level: number): RankEmblemAsset {
   };
 }
 
+/**
+ * HD Premium art metadata (generated with the HD files): pixel size after trimming only the baked-in
+ * near-black bars, and the median edge tone used as the showcase glass background so the art blends in.
+ */
+export const PREMIUM_ART_META: Record<number, { tone: string; w: number; h: number }> = {
+  1: { tone: "#040507", w: 320, h: 492 },
+  2: { tone: "#0f0806", w: 332, h: 492 },
+  3: { tone: "#130e0c", w: 368, h: 492 },
+  4: { tone: "#090909", w: 368, h: 492 },
+  5: { tone: "#16120f", w: 336, h: 492 },
+  6: { tone: "#171009", w: 344, h: 492 },
+  7: { tone: "#0b1013", w: 340, h: 492 },
+  8: { tone: "#070b17", w: 352, h: 492 },
+  9: { tone: "#0c0811", w: 344, h: 492 },
+  10: { tone: "#1c110b", w: 368, h: 528 },
+};
+
 export function rankArtAsset(level: number, art: RankArt): RankEmblemAsset {
   return art === "premium" ? rankIllustratedAsset(level) : rankEmblemAsset(level);
 }
