@@ -26,7 +26,18 @@ export type AdminPlayerRow = {
   steamProfileUrl?: string;
   /** ISO time of the last Steam persona sync, null when never synced. */
   steamSyncedAt?: string | null;
+  /** Why the most recent Steam sync attempt (this load / dossier open) failed. Not persisted. */
+  steamSyncError?: SteamSyncIssue | null;
 };
+
+/** Serializable Steam sync failure shown in the admin dossier. */
+export type SteamSyncIssue =
+  | { code: "no-key" }
+  | { code: "http"; status: number }
+  | { code: "timeout" }
+  | { code: "network"; detail: string }
+  | { code: "bad-response" }
+  | { code: "not-found" };
 
 export type AdminTicket = {
   id: string;

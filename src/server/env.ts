@@ -20,7 +20,8 @@ export function getAppBaseUrl(): string {
 }
 
 export function getSteamApiKey(): string | undefined {
-  const key = process.env.STEAM_API_KEY?.trim();
+  // Read at call time (never cached at module load). Tolerate a value pasted with surrounding quotes.
+  const key = process.env.STEAM_API_KEY?.trim().replace(/^(["'])(.*)\1$/, "$2").trim();
   return key ? key : undefined;
 }
 

@@ -42,42 +42,89 @@ function acceptedProfileUrl(value: string | undefined): string {
 
 type SteamSummary = { steamid?: string; personaname?: string; avatarfull?: string; profileurl?: string };
 
+/** Why a Steam persona lookup produced no profile. Codes are mapped to admin text in the UI. */
+export type SteamSyncError =
+  | { code: "no-key" }
+  | { code: "http"; status: number }
+  | { code: "timeout" }
+  | { code: "network"; detail: string }
+  | { code: "bad-response" }
+  | { code: "not-found" };
+
+export type SteamLookupResult = { profiles: Map<string, SteamProfile>; errors: Map<string, SteamSyncError> };
+
 /**
- * Batch GetPlayerSummaries (Steam allows 100 IDs per call). Only IDs Steam answered for are in the map.
- * Returns an empty map when STEAM_API_KEY is missing or Steam is unreachable.
+ * Batch GetPlayerSummaries (Steam allows 100 IDs per call). Every requested ID ends up either in
+ * `profiles` or in `errors` with the real reason (missing key, HTTP status, timeout, network, not found).
+ * Failures are also logged server-side (never the key).
  */
+export async function lookupSteamPersonasDetailed(
+  steamIds: string[],
+  fetchImpl: typeof fetch = fetch,
+  timeoutMs = 6000,
+): Promise<SteamLookupResult> {
+  const profiles = new Map<string, SteamProfile>();
+  const errors = new Map<string, SteamSyncError>();
+  const ids = [...new Set(steamIds.filter((id) => /^\d{17}$/.test(id)))];
+  if (ids.length === 0) return { profiles, errors };
+  const key = getSteamApiKey();
+  if (!key) {
+    for (const id of ids) errors.set(id, { code: "no-key" });
+    console.error("[steam-sync] STEAM_API_KEY is not set in this runtime; persona sync skipped");
+    return { profiles, errors };
+  }
+  for (let i = 0; i < ids.length; i += 100) {
+    const batch = ids.slice(i, i + 100);
+    const url = new URL("https://api.steampowered.com/ISteamUser/GetPlayerSummaries/v0002/");
+    url.searchParams.set("key", key);
+    url.searchParams.set("steamids", batch.join(","));
+    let failure: SteamSyncError | null = null;
+    try {
+      const response = await fetchImpl(url, { method: "GET", cache: "no-store", signal: AbortSignal.timeout(timeoutMs) });
+      if (!response.ok) {
+        failure = { code: "http", status: response.status };
+      } else {
+        const data = (await response.json().catch(() => null)) as { response?: { players?: SteamSummary[] } } | null;
+        if (!data || !data.response) {
+          failure = { code: "bad-response" };
+        } else {
+          for (const player of data.response.players ?? []) {
+            const name = player.personaname?.trim();
+            if (!player.steamid || !name) continue;
+            profiles.set(player.steamid, {
+              displayName: name.slice(0, 64),
+              avatarUrl: acceptedAvatar(player.avatarfull),
+              profileUrl: acceptedProfileUrl(player.profileurl),
+              found: true,
+            });
+          }
+        }
+      }
+    } catch (error) {
+      const name = error instanceof Error ? error.name : "";
+      failure =
+        name === "TimeoutError" || name === "AbortError"
+          ? { code: "timeout" }
+          : { code: "network", detail: (error instanceof Error ? error.message : String(error)).slice(0, 120) };
+    }
+    if (failure) {
+      console.error(`[steam-sync] GetPlayerSummaries failed for ${batch.length} id(s):`, JSON.stringify(failure));
+    }
+    for (const id of batch) {
+      if (profiles.has(id)) continue;
+      errors.set(id, failure ?? { code: "not-found" });
+    }
+  }
+  return { profiles, errors };
+}
+
+/** Profiles only (login path). Missing key / Steam failure → empty map; callers keep stored values. */
 export async function lookupSteamPersonas(
   steamIds: string[],
   fetchImpl: typeof fetch = fetch,
   timeoutMs = 4000,
 ): Promise<Map<string, SteamProfile>> {
-  const out = new Map<string, SteamProfile>();
-  const key = getSteamApiKey();
-  const ids = [...new Set(steamIds.filter((id) => /^\d{17}$/.test(id)))];
-  if (!key || ids.length === 0) return out;
-  for (let i = 0; i < ids.length; i += 100) {
-    const url = new URL("https://api.steampowered.com/ISteamUser/GetPlayerSummaries/v0002/");
-    url.searchParams.set("key", key);
-    url.searchParams.set("steamids", ids.slice(i, i + 100).join(","));
-    try {
-      const response = await fetchImpl(url, { method: "GET", signal: AbortSignal.timeout(timeoutMs) });
-      if (!response.ok) continue;
-      const data = (await response.json()) as { response?: { players?: SteamSummary[] } };
-      for (const player of data.response?.players ?? []) {
-        const name = player.personaname?.trim();
-        if (!player.steamid || !name) continue;
-        out.set(player.steamid, {
-          displayName: name.slice(0, 64),
-          avatarUrl: acceptedAvatar(player.avatarfull),
-          profileUrl: acceptedProfileUrl(player.profileurl),
-          found: true,
-        });
-      }
-    } catch {
-      // Steam unreachable: keep stored values.
-    }
-  }
-  return out;
+  return (await lookupSteamPersonasDetailed(steamIds, fetchImpl, timeoutMs)).profiles;
 }
 
 export type SteamReturn = "dashboard" | "squad";

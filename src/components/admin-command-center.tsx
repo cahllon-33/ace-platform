@@ -11,6 +11,7 @@ import {
   steamProfileHref,
   steamVanity,
   type AdminPlayerRow,
+  type SteamSyncIssue,
   type AdminSecurity,
   type AdminTier,
 } from "@/lib/admin-command";
@@ -1105,7 +1106,12 @@ function SteamIdentity({ player }: { player: AdminPlayerRow }) {
             <div className="is-wide"><dt>{t("steamProfileUrl")}</dt><dd className="ace-admin-mono">{shownUrl}</dd></div>
             <div className="is-wide">
               <dt>{t("steamSynced")}</dt>
-              <dd>{player.steamSyncedAt ? new Date(player.steamSyncedAt).toLocaleString() : <span className="acx-muted">{t("steamNeverSynced")}</span>}</dd>
+              <dd>
+                {player.steamSyncedAt ? new Date(player.steamSyncedAt).toLocaleString() : <span className="acx-muted">{t("steamNeverSynced")}</span>}
+                {player.steamSyncError ? (
+                  <span className="acx-steam-sync-error" role="status">{steamSyncErrorText(player.steamSyncError, t)}</span>
+                ) : null}
+              </dd>
             </div>
           </dl>
           <SteamProfileLink steamId={player.steamId} />
@@ -1115,4 +1121,24 @@ function SteamIdentity({ player }: { player: AdminPlayerRow }) {
       )}
     </section>
   );
+}
+
+function steamSyncErrorText(err: SteamSyncIssue, t: (key: AdminMessageKey) => string): string {
+  switch (err.code) {
+    case "no-key":
+      return t("steamErrNoKey");
+    case "http":
+      if (err.status === 401 || err.status === 403) return t("steamErrHttp403").replace("403", String(err.status));
+      if (err.status === 429) return t("steamErrHttp429");
+      if (err.status >= 500) return t("steamErrHttp5xx").replace("{status}", String(err.status));
+      return t("steamErrHttp").replace("{status}", String(err.status));
+    case "timeout":
+      return t("steamErrTimeout");
+    case "network":
+      return t("steamErrNetwork").replace("{detail}", err.detail);
+    case "bad-response":
+      return t("steamErrBadResponse");
+    case "not-found":
+      return t("steamErrNotFound");
+  }
 }

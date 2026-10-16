@@ -7,7 +7,7 @@ import { prisma } from "@/lib/db";
 import type { AdminPlayerRow, AdminSecurity, AdminTier } from "@/lib/admin-command";
 import { readAdminGate } from "@/server/admin-gate";
 import { effectiveRankArt } from "@/server/rank-art";
-import { lookupSteamPersonas } from "@/server/steam-openid";
+import { lookupSteamPersonasDetailed, type SteamSyncError } from "@/server/steam-openid";
 import { steamProfileUpdate } from "@/server/users";
 import { PRESENCE_WINDOW_MS, readPresence, type ConnectedPlayer } from "@/server/presence";
 
@@ -98,7 +98,7 @@ function initialsFor(name: string) {
   return (raw || "AC").toUpperCase().slice(0, 2);
 }
 
-function userToAdminRow(user: User): AdminPlayerRow {
+function userToAdminRow(user: User, steamSyncError: SteamSyncError | null = null): AdminPlayerRow {
   const name = user.username || user.displayName;
   return {
     id: user.id,
@@ -120,13 +120,18 @@ function userToAdminRow(user: User): AdminPlayerRow {
     avatarUrl: user.avatarUrl || null,
     steamProfileUrl: user.steamProfileUrl || "",
     steamSyncedAt: user.steamSyncedAt ? user.steamSyncedAt.toISOString() : null,
+    steamSyncError,
   };
 }
 
 const STEAM_STALE_MS = 6 * 60 * 60 * 1000;
 
-/** Re-sync Steam personas for linked users never synced or older than 6h (max 100 per load, 4s budget). */
-async function refreshStaleSteamProfiles() {
+/**
+ * Re-sync Steam personas for linked users never synced or older than 6h (max 100 per load).
+ * Persists every profile Steam returned; returns the failure reason per user id for the rest.
+ */
+async function refreshStaleSteamProfiles(): Promise<Map<string, SteamSyncError>> {
+  const failures = new Map<string, SteamSyncError>();
   const stale = await prisma.user.findMany({
     where: {
       steamId: { not: null },
@@ -136,27 +141,35 @@ async function refreshStaleSteamProfiles() {
     orderBy: { steamSyncedAt: { sort: "asc", nulls: "first" } },
     take: 100,
   });
-  if (stale.length === 0) return;
-  const found = await lookupSteamPersonas(stale.map((row) => row.steamId!));
+  if (stale.length === 0) return failures;
+  const { profiles, errors } = await lookupSteamPersonasDetailed(stale.map((row) => row.steamId!));
   const now = new Date();
-  await Promise.all(
+  const writes = await Promise.allSettled(
     stale
-      .filter((row) => found.has(row.steamId!))
-      .map((row) => prisma.user.update({ where: { id: row.id }, data: steamProfileUpdate(found.get(row.steamId!)!, now) })),
+      .filter((row) => profiles.has(row.steamId!))
+      .map((row) => prisma.user.update({ where: { id: row.id }, data: steamProfileUpdate(profiles.get(row.steamId!)!, now) })),
   );
+  for (const w of writes) if (w.status === "rejected") console.error("[steam-sync] persist failed:", w.reason);
+  for (const row of stale) {
+    const err = errors.get(row.steamId!);
+    if (err) failures.set(row.id, err);
+  }
+  return failures;
 }
 
-/** Admin-only: re-sync one player's Steam persona (called when the dossier opens). */
+/** Admin-only: always re-sync one player's Steam persona when the dossier opens, and report why if it failed. */
 export async function refreshAdminSteamProfile(userId: string): Promise<AdminPlayerRow | null> {
   if (!(await readAdminGate())) return null;
   try {
     const user = await prisma.user.findUnique({ where: { id: userId } });
     if (!user) return null;
     if (!user.steamId) return userToAdminRow(user);
-    const profile = (await lookupSteamPersonas([user.steamId])).get(user.steamId);
-    if (!profile) return userToAdminRow(user);
+    const { profiles, errors } = await lookupSteamPersonasDetailed([user.steamId]);
+    const profile = profiles.get(user.steamId);
+    if (!profile) return userToAdminRow(user, errors.get(user.steamId) ?? { code: "not-found" });
     return userToAdminRow(await prisma.user.update({ where: { id: user.id }, data: steamProfileUpdate(profile) }));
-  } catch {
+  } catch (error) {
+    console.error("[steam-sync] dossier refresh failed:", error);
     return null;
   }
 }
@@ -198,7 +211,10 @@ export async function loadAdminDirectory(): Promise<AdminDeskData> {
   // Defense in depth: this is a server function, so re-check the operator gate here, not only in the page.
   if (!(await readAdminGate())) return EMPTY_DESK;
   try {
-    await refreshStaleSteamProfiles().catch(() => undefined);
+    const steamFailures = await refreshStaleSteamProfiles().catch((error) => {
+      console.error("[steam-sync] admin-load refresh failed:", error);
+      return new Map<string, SteamSyncError>();
+    });
     const [users, enrollment, presence, liveMatches, disputes, growth] = await Promise.all([
       prisma.user.findMany({ orderBy: { createdAt: "desc" } }),
       prisma.user.count(),
@@ -252,7 +268,7 @@ export async function loadAdminDirectory(): Promise<AdminDeskData> {
       };
     });
     return {
-      players: users.map(userToAdminRow),
+      players: users.map((user) => userToAdminRow(user, steamFailures.get(user.id) ?? null)),
       stats: {
         enrollment,
         online: presence.count,
@@ -426,7 +442,7 @@ export async function loadAdminOnline(): Promise<AdminOnlineSnapshot | null> {
     for (const session of sessions) {
       if (seen.has(session.userId)) continue;
       seen.add(session.userId);
-      players.push({ player: userToAdminRow(session.user), lastSeenAt: session.lastSeenAt.toISOString() });
+      players.push({ player: userToAdminRow(session.user, null), lastSeenAt: session.lastSeenAt.toISOString() });
     }
     return { ...base, status: "ok", players };
   } catch (error) {

@@ -1461,3 +1461,4 @@
 [dir="rtl"] .acx-hero-operator { object-position: 76% bottom; }
 .acx-hero-rp { direction: ltr; unicode-bidi: isolate; }
 @media (max-width: 40rem) { .acx-hero-operator, [dir="rtl"] .acx-hero-operator { height: 62%; object-position: center bottom; } }
+.acx-steam-sync-error { display: block; margin-top: 0.3rem; font-size: 0.76rem; line-height: 1.45; color: #ff8a7a; }
