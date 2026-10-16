@@ -1384,3 +1384,25 @@
 .acx-table thead th { word-break: normal; }
 .acx-table th:nth-child(1) { width: 20%; }
 .acx-table th:nth-child(7) { width: 15%; }
+
+/* R29 online now */
+.acx-online { margin-block: 1rem; }
+.acx-online-head { display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
+.acx-online-head .acx-card-title { display: inline-flex; align-items: center; gap: 0.5rem; }
+.acx-live-dot { width: 0.55rem; height: 0.55rem; border-radius: 50%; background: #3ddc84; animation: acx-live 2s infinite; }
+.acx-live-dot.is-off { background: #666; animation: none; }
+@keyframes acx-live { 0% { box-shadow: 0 0 0 0 rgba(61,220,132,.55); } 70% { box-shadow: 0 0 0 0.45rem rgba(61,220,132,0); } 100% { box-shadow: 0 0 0 0 rgba(61,220,132,0); } }
+@media (prefers-reduced-motion: reduce) { .acx-live-dot { animation: none; } }
+.acx-online-count { font-weight: 800; color: #f3d77a; font-variant-numeric: tabular-nums; }
+.acx-online-list { list-style: none; margin: 0.6rem 0 0; padding: 0; display: grid; gap: 0.4rem; max-height: 26rem; overflow-y: auto; overflow-x: hidden; }
+.acx-online-row { width: 100%; display: grid; grid-template-columns: auto minmax(0, 1.4fr) minmax(0, 1.2fr) auto auto; align-items: center; gap: 0.75rem; padding: 0.5rem 0.7rem; border-radius: 0.7rem; border: 1px solid rgba(212,175,55,.18); background: rgba(0,0,0,.35); color: inherit; text-align: start; cursor: pointer; font: inherit; }
+.acx-online-row:hover, .acx-online-row:focus-visible { border-color: rgba(212,175,55,.6); background: rgba(212,175,55,.06); outline: none; }
+.acx-online-id, .acx-online-rank > span { display: grid; min-width: 0; }
+.acx-online-id strong, .acx-online-id small { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.acx-online-id small, .acx-online-rank small { font-size: 0.7rem; opacity: 0.7; }
+.acx-online-rank { display: flex; align-items: center; gap: 0.5rem; min-width: 0; }
+.acx-online-tier { font-size: 0.68rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; padding: 0.15rem 0.5rem; border-radius: 999px; border: 1px solid rgba(255,255,255,.18); }
+.acx-online-tier.is-premium { border-color: #d4af37; color: #f3d77a; }
+.acx-online-tier.is-plus { border-color: rgba(212,175,55,.45); color: #e8d9a8; }
+.acx-online-seen { font-size: 0.72rem; opacity: 0.7; white-space: nowrap; font-variant-numeric: tabular-nums; }
+@media (max-width: 760px) { .acx-online-row { grid-template-columns: auto minmax(0, 1fr) auto; } .acx-online-rank, .acx-online-tier { display: none; } }

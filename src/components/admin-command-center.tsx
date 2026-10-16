@@ -1,6 +1,7 @@
 "use client";
 
 import { RP_RULES } from "@/lib/rp-rules";
+import type { AdminOnlineSnapshot } from "@/server/admin-users";
 import { useEffect, useId, useLayoutEffect, useRef, useState, useSyncExternalStore, type ReactNode } from "react";
 import { createPortal } from "react-dom";
 import { useRouter } from "next/navigation";
@@ -389,7 +390,8 @@ export function AdminCommandCenter({
     });
   }
 
-  const editor = players.find((player) => player.id === editorId) ?? null;
+  const [onlineExtra, setOnlineExtra] = useState<AdminPlayerRow | null>(null);
+  const editor = players.find((player) => player.id === editorId) ?? (onlineExtra?.id === editorId ? onlineExtra : null);
 
   const [query, setQuery] = useState("");
   const needle = query.trim().toLowerCase();
@@ -507,6 +509,14 @@ export function AdminCommandCenter({
           )}
           <p className="acx-muted acx-growth-note">{t("growthPublicNote")}</p>
         </section>
+
+        <OnlineNowPanel
+          disabled={stats.staging || stats.unavailable}
+          onOpen={(player) => {
+            setOnlineExtra(player);
+            setEditorId(player.id);
+          }}
+        />
 
         <div className="acx-grid-3">
           <section className="acx-card" aria-labelledby="acx-connected">
@@ -936,5 +946,96 @@ function ActionsMenu({ label, groupLabel, children }: { label: string; groupLabe
           )
         : null}
     </div>
+  );
+}
+
+const ONLINE_REFRESH_MS = 15_000;
+
+/** Admin-only live list of signed-in users from the presence window. Polls the gated /admin/online route (gate cookie is scoped to /admin). */
+function OnlineNowPanel({ disabled, onOpen }: { disabled: boolean; onOpen: (player: AdminPlayerRow) => void }) {
+  const { t } = useAdminI18n();
+  const [snap, setSnap] = useState<AdminOnlineSnapshot | null>(null);
+  const [failed, setFailed] = useState(false);
+  const [skew, setSkew] = useState(0);
+  const [now, setNow] = useState(() => Date.now());
+
+  useEffect(() => {
+    if (disabled) return;
+    let alive = true;
+    const load = async () => {
+      if (document.visibilityState === "hidden") return;
+      try {
+        const res = await fetch("/admin/online", { cache: "no-store" });
+        if (!res.ok) throw new Error(String(res.status));
+        const data = (await res.json()) as AdminOnlineSnapshot;
+        if (!alive) return;
+        setSnap(data);
+        setSkew(Date.now() - new Date(data.serverNow).getTime());
+        setFailed(false);
+      } catch {
+        if (alive) setFailed(true);
+      }
+    };
+    void load();
+    const poll = window.setInterval(load, ONLINE_REFRESH_MS);
+    const tick = window.setInterval(() => setNow(Date.now()), 5_000);
+    return () => {
+      alive = false;
+      window.clearInterval(poll);
+      window.clearInterval(tick);
+    };
+  }, [disabled]);
+
+  const players = snap?.status === "ok" ? snap.players : [];
+  const live = !disabled && !failed && snap?.status === "ok";
+  const ago = (iso: string) => {
+    const sec = Math.max(0, Math.round((now - skew - new Date(iso).getTime()) / 1000));
+    return sec < 60 ? t("onlineSeenSec", { count: sec }) : t("onlineSeenMin", { count: Math.floor(sec / 60) });
+  };
+
+  let body: React.ReactNode;
+  if (disabled) body = <p className="acx-empty">{t("onlineNeedsDb")}</p>;
+  else if (failed || snap?.status === "down") body = <p className="acx-empty">{t("onlineUnavailable")}</p>;
+  else if (snap?.status === "migration") body = <p className="acx-empty">{t("connectedMigration")}</p>;
+  else if (!snap) body = <p className="acx-empty">{t("onlineLoading")}</p>;
+  else if (players.length === 0) body = <p className="acx-empty">{t("onlineEmpty")}</p>;
+  else
+    body = (
+      <ul className="acx-online-list">
+        {players.map(({ player, lastSeenAt }) => (
+          <li key={player.id}>
+            <button type="button" className="acx-online-row" onClick={() => onOpen(player)} aria-label={`${t("openDossier")}: ${player.username}`}>
+              <PlayerAvatar src={player.avatarUrl ?? null} name={player.username} alt="" size={36} />
+              <span className="acx-online-id">
+                <strong>{player.username}</strong>
+                <small className="ace-admin-mono">{player.steamId === "—" ? t("decoupledNote") : player.steamId}</small>
+              </span>
+              <span className="acx-online-rank">
+                <AdminRankBadge level={player.rank} art={player.art} size={34} label={t("r23Rank")} />
+                <span>
+                  <b>{tierOf(player.rank).name}</b>
+                  <small className="acx-rp">{player.rating.toLocaleString("en-US")} RP</small>
+                </span>
+              </span>
+              <span className={`acx-online-tier is-${player.tier.toLowerCase()}`}>{t(TIER_KEY[player.tier])}</span>
+              <time className="acx-online-seen" dateTime={lastSeenAt}>{ago(lastSeenAt)}</time>
+            </button>
+          </li>
+        ))}
+      </ul>
+    );
+
+  return (
+    <section id="acx-online" className="acx-card acx-online acx-anchor" aria-labelledby="acx-online-title" aria-live="polite">
+      <header className="acx-online-head">
+        <h2 id="acx-online-title" className="acx-card-title">
+          <i className={`acx-live-dot${live ? "" : " is-off"}`} aria-hidden="true" />
+          {t("onlineTitle")}
+        </h2>
+        <span className="acx-online-count">{live ? t("onlineCount", { count: players.length }) : "—"}</span>
+      </header>
+      <p className="acx-muted">{t("onlineNote")}</p>
+      {body}
+    </section>
   );
 }

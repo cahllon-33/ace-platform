@@ -7,7 +7,7 @@ import { prisma } from "@/lib/db";
 import type { AdminPlayerRow, AdminSecurity, AdminTier } from "@/lib/admin-command";
 import { readAdminGate } from "@/server/admin-gate";
 import { effectiveRankArt } from "@/server/rank-art";
-import { readPresence, type ConnectedPlayer } from "@/server/presence";
+import { PRESENCE_WINDOW_MS, readPresence, type ConnectedPlayer } from "@/server/presence";
 
 export type AdminLiveStats = {
   enrollment: number;
@@ -352,5 +352,42 @@ export async function loadAdminTournaments(): Promise<AdminTournamentRow[]> {
     return rows.map((row) => ({ id: row.id, name: row.name, status: row.status, entries: row._count.entries }));
   } catch {
     return [];
+  }
+}
+
+export type AdminOnlineEntry = { player: AdminPlayerRow; lastSeenAt: string };
+export type AdminOnlineSnapshot = {
+  status: "ok" | "down" | "migration";
+  serverNow: string;
+  windowMs: number;
+  players: AdminOnlineEntry[];
+};
+
+/**
+ * Admin-only: signed-in users with a live session seen inside the presence window, newest first.
+ * Uses the existing `UserSession.lastSeenAt` (no page or IP tracking). Returns null when the gate is closed.
+ */
+export async function loadAdminOnline(): Promise<AdminOnlineSnapshot | null> {
+  if (!(await readAdminGate())) return null;
+  const now = new Date();
+  const base = { serverNow: now.toISOString(), windowMs: PRESENCE_WINDOW_MS };
+  try {
+    const sessions = await prisma.userSession.findMany({
+      where: { revokedAt: null, expiresAt: { gt: now }, lastSeenAt: { gt: new Date(now.getTime() - PRESENCE_WINDOW_MS) } },
+      orderBy: { lastSeenAt: "desc" },
+      include: { user: true },
+      take: 500,
+    });
+    const seen = new Set<string>();
+    const players: AdminOnlineEntry[] = [];
+    for (const session of sessions) {
+      if (seen.has(session.userId)) continue;
+      seen.add(session.userId);
+      players.push({ player: userToAdminRow(session.user), lastSeenAt: session.lastSeenAt.toISOString() });
+    }
+    return { ...base, status: "ok", players };
+  } catch (error) {
+    const message = error instanceof Error ? error.message : "";
+    return { ...base, status: /lastSeenAt|P2022/i.test(message) ? "migration" : "down", players: [] };
   }
 }
