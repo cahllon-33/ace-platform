@@ -6,7 +6,7 @@ import { useI18n } from "@/components/locale-provider";
 import { RegistrationScanner } from "@/components/registration-scanner";
 import { useText } from "@/components/text-provider";
 import { TournamentTeamProfile } from "@/components/tournament-team-profile";
-import { interpolate } from "@/lib/i18n";
+import { interpolate } from "@/lib/interpolate";
 import {
   BRACKET_CAPACITY,
   WING_ROUNDS,

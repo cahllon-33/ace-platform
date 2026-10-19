@@ -3,7 +3,7 @@
 import { useCallback, useEffect, useState } from "react";
 import { useAdminI18n } from "@/components/admin-locale";
 import { ADMIN40_EN, ADMIN40_HE, type Admin40Key } from "@/lib/admin-r40-i18n";
-import { interpolate } from "@/lib/i18n";
+import { interpolate } from "@/lib/interpolate";
 import { describeRp, resolveOverrideRp, type OverrideArt, type OverrideTarget } from "@/lib/rank-override";
 import { RANK_TIERS, type RankDivision } from "@/lib/ranks";
 import { RP_RULES } from "@/lib/rp-rules";

@@ -6,7 +6,7 @@ import { DivisionChips } from "@/components/division-chips";
 import { RankTurntable } from "@/components/rank-turntable";
 import { useI18n } from "@/components/locale-provider";
 import { useText } from "@/components/text-provider";
-import { interpolate } from "@/lib/i18n";
+import { interpolate } from "@/lib/interpolate";
 import {
   RANK_TIERS,
   divisionShowcaseMetrics,

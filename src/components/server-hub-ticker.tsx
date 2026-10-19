@@ -4,7 +4,7 @@ import { useState } from "react";
 import { useI18n } from "@/components/locale-provider";
 import { useText } from "@/components/text-provider";
 import { useUi } from "@/components/use-ui";
-import { interpolate } from "@/lib/i18n";
+import { interpolate } from "@/lib/interpolate";
 
 const NODES = [
   { id: "fra" },

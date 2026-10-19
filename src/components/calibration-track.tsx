@@ -2,7 +2,7 @@
 
 import { useI18n } from "@/components/locale-provider";
 import { useText } from "@/components/text-provider";
-import { interpolate } from "@/lib/i18n";
+import { interpolate } from "@/lib/interpolate";
 
 export function CalibrationTrack({ played }: { played: number }) {
   const { t } = useI18n();

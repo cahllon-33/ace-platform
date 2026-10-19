@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useMemo, useState } from "react";
-import { interpolate } from "@/lib/i18n";
+import { interpolate } from "@/lib/interpolate";
 import {
   CODEX_CATEGORY,
   type CodexSummary,

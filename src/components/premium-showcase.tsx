@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { useRef, type PointerEvent } from "react";
-import { interpolate } from "@/lib/i18n";
+import { interpolate } from "@/lib/interpolate";
 import { PREMIUM_ART_META, RANK_TIERS, rankIllustratedAsset } from "@/lib/ranks";
 import "./premium-showcase.css";
 

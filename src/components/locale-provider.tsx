@@ -10,7 +10,8 @@ import {
   type ReactNode,
 } from "react";
 import { useRouter } from "next/navigation";
-import { DICTIONARIES, EN, interpolate, type MessageKey } from "@/app/i18n";
+import type { MessageBag, MessageKey } from "@/lib/i18n";
+import { interpolate } from "@/lib/interpolate";
 import { SITE_LOCALES, type LocaleOption } from "@/lib/languages";
 import { isLocaleId, LOCALE_COOKIE, LOCALE_STORAGE_KEY } from "@/lib/locale-pref";
 
@@ -84,9 +85,9 @@ export function setLocaleId(id: string) {
   if (typeof window !== "undefined") window.dispatchEvent(new Event("ace-locale"));
 }
 
-export function translate(localeId: string, key: MessageKey, values?: Record<string, string | number>) {
-  const bag = DICTIONARIES[localeId] ?? EN;
-  return interpolate(bag[key] ?? EN[key], values);
+/** Fallback used only outside the provider. The provider's bag (EN-filled on the server) is the real source. */
+export function translate(_localeId: string, key: MessageKey, values?: Record<string, string | number>) {
+  return interpolate(key, values);
 }
 
 const ENGLISH = resolveLocale("en");
@@ -99,9 +100,11 @@ const LocaleContext = createContext<LocaleContextValue>({
 
 export function LocaleProvider({
   initialLocale = "en",
+  messages,
   children,
 }: {
   initialLocale?: string;
+  messages: MessageBag;
   children: ReactNode;
 }) {
   const serverLocale = isLocaleId(initialLocale) ? initialLocale : "en";
@@ -144,8 +147,8 @@ export function LocaleProvider({
   }, [router]);
 
   const t = useCallback(
-    (key: MessageKey, values?: Record<string, string | number>) => translate(localeId, key, values),
-    [localeId],
+    (key: MessageKey, values?: Record<string, string | number>) => interpolate(messages[key] ?? key, values),
+    [messages],
   );
 
   const value = useMemo(

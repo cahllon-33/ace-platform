@@ -10,6 +10,9 @@ import { SupportChatLazy } from "@/components/support-chat-lazy";
 import { ToastHost } from "@/components/toast-host";
 import { TextProvider } from "@/components/text-provider";
 import { clientText, textFor } from "@/lib/i18n/text";
+import { DICTIONARIES, EN, type MessageBag } from "@/lib/i18n";
+import { uiFor } from "@/lib/i18n/ui";
+import { UiProvider } from "@/components/use-ui";
 
 export function SiteShell({
   initialLocale = "en",
@@ -19,7 +22,8 @@ export function SiteShell({
   children: ReactNode;
 }) {
   return (
-    <LocaleProvider initialLocale={initialLocale}>
+    <LocaleProvider initialLocale={initialLocale} messages={{ ...EN, ...(DICTIONARIES[initialLocale] ?? {}) } as MessageBag}>
+      <UiProvider ui={uiFor(initialLocale)}>
       <TextProvider text={clientText(textFor(initialLocale))}>
       <ChampionshipAtmosphere />
       <a
@@ -47,6 +51,7 @@ export function SiteShell({
       <ToastHost />
       <SupportChatLazy />
       </TextProvider>
+      </UiProvider>
     </LocaleProvider>
   );
 }

@@ -7,7 +7,7 @@ import "./squad-workspace.css";
 import { useI18n } from "@/components/locale-provider";
 import { SteamSignInButton } from "@/components/steam-sign-in-button";
 import { useText } from "@/components/text-provider";
-import { interpolate } from "@/lib/i18n";
+import { interpolate } from "@/lib/interpolate";
 import {
   SQUAD_ROLE_KEYS,
   padRosterSlots,

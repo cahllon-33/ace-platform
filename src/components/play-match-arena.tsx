@@ -6,7 +6,7 @@ import { ConnectedCount } from "@/components/connected-count";
 import { useText } from "@/components/text-provider";
 import { PremiumShowcase } from "@/components/premium-showcase";
 import { PlannedButton } from "@/components/ui/button";
-import { interpolate } from "@/lib/i18n";
+import { interpolate } from "@/lib/interpolate";
 import { FloatingEmblem, PlayerAvatar } from "@/components/floating-emblem";
 import { RANK_TIERS, rankArtAsset, type RankArt } from "@/lib/ranks";
 

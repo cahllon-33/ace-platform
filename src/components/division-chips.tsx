@@ -1,7 +1,7 @@
 "use client";
 
 import { useText } from "@/components/text-provider";
-import { interpolate } from "@/lib/i18n";
+import { interpolate } from "@/lib/interpolate";
 import { RANK_DIVISIONS } from "@/lib/site";
 import type { RankDivision } from "@/lib/ranks";
 

@@ -5,7 +5,7 @@ import { FreeAccessPill } from "@/components/free-access-pill";
 import { ComingSoonPlate } from "@/components/coming-soon-plate";
 import { useText } from "@/components/text-provider";
 import { Badge } from "@/components/ui/badge";
-import { interpolate } from "@/lib/i18n";
+import { interpolate } from "@/lib/interpolate";
 import { FREE_PRICE, PLUS_PRICE, PREMIUM_PRICE } from "@/lib/pricing";
 
 const TIERS = [

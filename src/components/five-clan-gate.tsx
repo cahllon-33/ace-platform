@@ -5,7 +5,7 @@ import { useId, useState } from "react";
 import { LegalAcceptanceField } from "@/components/legal-acceptance";
 import { SteamSignInButton } from "@/components/steam-sign-in-button";
 import { useText } from "@/components/text-provider";
-import { interpolate } from "@/lib/i18n";
+import { interpolate } from "@/lib/interpolate";
 
 const GATE_CSS = `
 .ace-gate { margin-top: 1.4rem; border: 1px solid rgba(212,175,55,0.4); border-radius: 1.05rem; background: #101012; padding: 1.1rem 1rem 1.15rem; box-shadow: 0 16px 30px rgba(0,0,0,0.28); }

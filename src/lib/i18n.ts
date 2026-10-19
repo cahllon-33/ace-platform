@@ -85,10 +85,4 @@ for (const locale of SITE_LOCALES) {
   }
 }
 
-export function interpolate(template: string, values?: Record<string, string | number>) {
-  if (!values) return template;
-  return Object.entries(values).reduce(
-    (text, [key, value]) => text.replaceAll(`{${key}}`, String(value)),
-    template,
-  );
-}
+export { interpolate } from "@/lib/interpolate";

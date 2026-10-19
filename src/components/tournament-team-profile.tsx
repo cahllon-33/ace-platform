@@ -3,7 +3,7 @@
 import { useEffect, useId } from "react";
 import Link from "next/link";
 import { useText } from "@/components/text-provider";
-import { interpolate } from "@/lib/i18n";
+import { interpolate } from "@/lib/interpolate";
 import { PLACEHOLDER_GEAR, type LayoutGear, type LayoutPlayer, type LayoutTeam } from "@/lib/tournament-layout";
 
 const GEAR_KEYS = ["processor", "gpu", "mouse", "dpi", "keyboard", "monitor", "headset"] as const satisfies readonly (keyof LayoutGear)[];

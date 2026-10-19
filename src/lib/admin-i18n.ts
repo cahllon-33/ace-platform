@@ -1,4 +1,4 @@
-import { interpolate } from "@/lib/i18n";
+import { interpolate } from "@/lib/interpolate";
 
 export const ADMIN_EN = {
   r23Rank: "Rank",

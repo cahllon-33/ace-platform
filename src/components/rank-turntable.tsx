@@ -2,7 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import { useText } from "@/components/text-provider";
-import { interpolate } from "@/lib/i18n";
+import { interpolate } from "@/lib/interpolate";
 import { rankArtAsset, type RankArt, type RankTier } from "@/lib/ranks";
 
 export const FALLBACK_MS = 2500;

@@ -10,7 +10,8 @@ import {
   type MarketCategory,
   type MarketItem,
 } from "@/lib/marketplace";
-import { interpolate, type MessageKey } from "@/lib/i18n";
+import type { MessageKey } from "@/lib/i18n";
+import { interpolate } from "@/lib/interpolate";
 import type { ClientText } from "@/lib/i18n/text";
 
 function itemPrice(text: ClientText, item: MarketItem) {

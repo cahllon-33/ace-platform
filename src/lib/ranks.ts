@@ -1,4 +1,4 @@
-import { interpolate } from "@/lib/i18n";
+import { interpolate } from "@/lib/interpolate";
 
 export type RankTier = {
   level: 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10;
