@@ -142,7 +142,7 @@ export function SupportChat() {
                   <div key={i} className={`ace-chat-msg is-${m.role}`}>
                     <p dir="auto">{m.content}</p>
                     {m.route ? (
-                      <Link href={m.route} className="ace-chat-src">{k.sources}: {m.route}</Link>
+                      <Link href={m.route} className="ace-chat-src">{k.sources}: <bdi dir="ltr">{m.route}</bdi></Link>
                     ) : null}
                     {m.offerTicket && !escalated ? (
                       <button type="button" className="ace-chat-escalate is-inline" onClick={() => void escalate()} disabled={busy}>{c.escalate}</button>
