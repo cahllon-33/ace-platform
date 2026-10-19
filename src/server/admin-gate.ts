@@ -116,3 +116,13 @@ export async function unlockAdminGate(username: string, password: string) {
   });
   return "ok" as const;
 }
+
+/** Who is acting, for the admin audit log. Never includes a secret: a Steam ID or the literal gate name. */
+export async function readAdminActor(): Promise<string> {
+  const allowlistRaw = process.env.ACE_ADMIN_STEAM_IDS;
+  if (parseAdminSteamIds(allowlistRaw).length > 0) {
+    const steamId = await sessionSteamId();
+    if (steamId && isAllowlistedSteamId(steamId, allowlistRaw)) return `steam:${steamId}`;
+  }
+  return "password-gate";
+}

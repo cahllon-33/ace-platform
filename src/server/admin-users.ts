@@ -5,7 +5,7 @@ import { revalidatePath } from "next/cache";
 import type { AccountStatus, SubscriptionTier, User } from "@prisma/client";
 import { prisma } from "@/lib/db";
 import type { AdminPlayerRow, AdminSecurity, AdminTier } from "@/lib/admin-command";
-import { readAdminGate } from "@/server/admin-gate";
+import { readAdminActor, readAdminGate } from "@/server/admin-gate";
 import { effectiveRankArt } from "@/server/rank-art";
 import { lookupSteamPersonasDetailed, type SteamSyncError } from "@/server/steam-openid";
 import { steamProfileUpdate } from "@/server/users";
@@ -331,8 +331,9 @@ export async function setAdminRankTen(userId: string) {
   if (!user) return { ok: false as const };
   await prisma.user.update({
     where: { id: user.id },
-    data: { rankLevel: 10, competitiveRating: 3000 },
+    data: { rankLevel: 10, competitiveRating: 3000, rankOverrideBaseRp: user.rankOverrideBaseRp ?? user.competitiveRating, rankOverrideAt: new Date() },
   });
+  await prisma.adminAuditLog.create({ data: { actor: await readAdminActor(), action: "rank.override", targetUserId: user.id, oldValue: `${user.competitiveRating} RP`, newValue: "3000 RP (rank 10 shortcut)", reason: "" } });
   revalidatePath("/admin/dashboard");
   return { ok: true as const };
 }
@@ -391,6 +392,8 @@ export async function resetAdminProfile(userId: string) {
         wins: 0,
         losses: 0,
         subscriptionTier: "FREE",
+        rankOverrideBaseRp: null,
+        rankOverrideAt: null,
       },
     });
   });
