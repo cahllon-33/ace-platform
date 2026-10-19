@@ -8,6 +8,8 @@ describe("toast store", () => {
     subscribeToasts((i) => (seen = i));
     for (let n = 0; n < 6; n++) toast(`m${n}`, "success");
     expect(seen.map((t) => t.message)).toEqual(["m2", "m3", "m4", "m5"]);
+    toast("m5", "success");
+    expect(seen).toHaveLength(4);
     dismissToast(seen[0].id);
     expect(seen).toHaveLength(3);
   });

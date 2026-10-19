@@ -9,6 +9,9 @@ const emit = () => listeners.forEach((fn) => fn(items));
 
 /** Push a toast. Auto-dismisses after `ms` (errors stay longer). Max 4 visible. */
 export function toast(message: string, kind: ToastKind = "info", ms?: number): number {
+  // Same message already visible (e.g. a remount): don't stack duplicates.
+  const dup = items.find((t) => t.message === message && t.kind === kind);
+  if (dup) return dup.id;
   const id = ++seq;
   items = [...items.slice(-3), { id, kind, message }];
   emit();
