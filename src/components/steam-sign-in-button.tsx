@@ -44,8 +44,8 @@ export function SteamSignInButton({
     variant === "steam"
       ? `ace-steam-cta${steamTone ? " is-steam" : ""}`
       : variant === "primary"
-        ? "inline-flex items-center justify-center gap-2 rounded-full bg-gradient-to-b from-[#FFD700] to-[#D4AF37] text-[#020203] font-semibold"
-        : "inline-flex items-center justify-center gap-2 rounded-full border border-[#FFD700]/45 text-[#F5F3EC] hover:border-[#FFD700]";
+        ? "inline-flex items-center justify-center gap-2 rounded-full bg-gradient-to-b from-[#FFD76A] to-[#D4AF37] text-[#020203] font-semibold"
+        : "inline-flex items-center justify-center gap-2 rounded-full border border-[#FFD76A]/45 text-[#F5F3EC] hover:border-[#FFD76A]";
 
   const size = compact ? "min-h-11 px-4 text-sm" : variant === "steam" ? "" : "min-h-12 px-6 text-sm";
 

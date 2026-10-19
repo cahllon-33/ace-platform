@@ -24,7 +24,7 @@ function RingGauge({ title, soon, note }: { title: string; soon: string; note: s
             </linearGradient>
           </defs>
           <circle cx="60" cy="60" r="48" fill="none" stroke="#1B1B1F" strokeWidth="14" />
-          <circle cx="60" cy="60" r="48" fill="none" stroke="rgba(255,215,0,0.08)" strokeWidth="2" />
+          <circle cx="60" cy="60" r="48" fill="none" stroke="rgba(212, 175, 55,0.08)" strokeWidth="2" />
           <circle
             className="ace-s3d-ring-arc"
             cx="60"

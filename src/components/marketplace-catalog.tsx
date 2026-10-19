@@ -84,14 +84,14 @@ function AssetMark({ item }: { item: MarketItem }) {
         height={48}
         className="ace-market-glyph h-12 w-12 max-h-12 max-w-12 shrink-0"
       >
-        <rect x="4" y="4" width="40" height="40" rx="8" fill="#0B0B0C" stroke="#FFD700" strokeWidth="1.5" />
+        <rect x="4" y="4" width="40" height="40" rx="8" fill="#0B0B0C" stroke="#FFD76A" strokeWidth="1.5" />
         <path
           d="M14 32 L24 12 L34 32 Z"
           fill="none"
-          stroke="#FFD700"
+          stroke="#FFD76A"
           strokeWidth="1.6"
         />
-        <circle cx="24" cy="28" r="3" fill="#FFD700" />
+        <circle cx="24" cy="28" r="3" fill="#FFD76A" />
       </svg>
     </div>
   );
@@ -133,7 +133,7 @@ export function MarketplaceCatalog() {
             >
               <AssetMark item={item} />
               {item.category === "skins" ? (
-                <p className="text-[0.68rem] font-extrabold leading-5 tracking-[0.06em] text-[#FFD700]">
+                <p className="text-[0.68rem] font-extrabold leading-5 tracking-[0.06em] text-[#FFD76A]">
                   {text.desk.shop.prizeBanner}
                 </p>
               ) : null}

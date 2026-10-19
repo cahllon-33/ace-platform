@@ -18,11 +18,11 @@ const FACTS: { test: RegExp; id: FactId }[] = [
 
 const DESK_CSS = `
 .ace-desk { margin-top: 1.2rem; border: 1px solid rgba(212,175,55,0.35); border-radius: 1rem; background: #101012; padding: 1rem; }
-.ace-desk h2 { color: #ffd700; font-size: 1.15rem; font-weight: 800; }
+.ace-desk h2 { color: #ffd76a; font-size: 1.15rem; font-weight: 800; }
 .ace-desk p { margin-top: 0.4rem; color: #c8c4b8; line-height: 1.5; font-size: 0.88rem; }
 .ace-desk form { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 0.8rem; }
-.ace-desk input { min-height: 2.7rem; flex: 1 1 16rem; border: 1px solid rgba(255,215,0,0.4); border-radius: 0.55rem; background: #0b0b0c; color: #fffef8; padding: 0 0.75rem; }
-.ace-desk button { min-height: 2.7rem; border-radius: 999px; border: 1px solid #ffd700; background: #0b0b0c; color: #ffd700; font-weight: 800; padding: 0 0.9rem; }
+.ace-desk input { min-height: 2.7rem; flex: 1 1 16rem; border: 1px solid rgba(212, 175, 55,0.4); border-radius: 0.55rem; background: #0b0b0c; color: #fffef8; padding: 0 0.75rem; }
+.ace-desk button { min-height: 2.7rem; border-radius: 999px; border: 1px solid #ffd76a; background: #0b0b0c; color: #ffd76a; font-weight: 800; padding: 0 0.9rem; }
 .ace-desk-answer { margin-top: 0.75rem; color: #f5f3ec; }
 `;
 

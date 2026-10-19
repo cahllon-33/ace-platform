@@ -159,7 +159,7 @@ export default async function DashboardPage() {
           {hasEliteSeal(user.subscriptionTier) ? (
             <div className="mb-4 flex items-center gap-3">
               <EliteSeal className="h-16 w-auto" />
-              <span className="text-sm font-bold tracking-[0.22em] text-[#FFD700]">{copy.eliteBadge}</span>
+              <span className="text-sm font-bold tracking-[0.22em] text-[#FFD76A]">{copy.eliteBadge}</span>
             </div>
           ) : null}
           <h2 className="sr-only">{shownName}</h2>
@@ -223,8 +223,8 @@ export default async function DashboardPage() {
               <dd className="break-all font-mono text-xs text-ace-text">{user.id}</dd>
             </div>
           </dl>
-          <div className="mt-6 rounded-2xl border border-[#FFD700]/25 bg-[#08090D] p-4">
-            <h3 className="text-sm font-semibold tracking-[0.12em] text-[#FFD700]">
+          <div className="mt-6 rounded-2xl border border-[#FFD76A]/25 bg-[#08090D] p-4">
+            <h3 className="text-sm font-semibold tracking-[0.12em] text-[#FFD76A]">
               {copy.settings.title}
             </h3>
             <p className="mt-2 text-xs leading-6 text-ace-muted">{text.consent.subscriptionDisclosure}</p>
@@ -257,7 +257,7 @@ export default async function DashboardPage() {
             />
           ) : null}
           <Panel className="ace-dash-links p-5">
-            <h2 className="text-sm font-semibold tracking-[0.12em] text-[#FFD700]">{text.account.statsConsole.dashTitle}</h2>
+            <h2 className="text-sm font-semibold tracking-[0.12em] text-[#FFD76A]">{text.account.statsConsole.dashTitle}</h2>
             <div className="mt-3 flex flex-wrap gap-2">
               <Link className="ace-codex-entry" href="/stats">
                 {text.account.statsConsole.dashStats}

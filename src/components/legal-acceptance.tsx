@@ -17,7 +17,7 @@ export function LegalAcceptanceField({
       <input
         id={id}
         type="checkbox"
-        className="mt-0.5 h-4 w-4 shrink-0 accent-[#FFD700]"
+        className="mt-0.5 h-4 w-4 shrink-0 accent-[#FFD76A]"
         checked={checked}
         required
         aria-required="true"
@@ -25,15 +25,15 @@ export function LegalAcceptanceField({
       />
       <span>
         {copy.label} {copy.readBefore}{" "}
-        <a href="/terms" className="text-[#FFD700] underline-offset-2 hover:underline">
+        <a href="/terms" className="text-[#FFD76A] underline-offset-2 hover:underline">
           {copy.termsLink}
         </a>
         {copy.afterTerms}{" "}
-        <a href="/rules" className="text-[#FFD700] underline-offset-2 hover:underline">
+        <a href="/rules" className="text-[#FFD76A] underline-offset-2 hover:underline">
           {copy.rulesLink}
         </a>
         {copy.afterRules}{" "}
-        <a href="/privacy" className="text-[#FFD700] underline-offset-2 hover:underline">
+        <a href="/privacy" className="text-[#FFD76A] underline-offset-2 hover:underline">
           {copy.privacyLink}
         </a>
         {copy.after}

@@ -24,7 +24,7 @@ export function LobbyMembership() {
       <div className="mt-5 flex justify-center">
         <Link
           href="/pricing"
-          className="inline-flex min-h-11 items-center justify-center rounded-full border border-[#D4AF37]/45 bg-[#0B0B0C] px-6 text-xs font-semibold uppercase tracking-[0.16em] text-[#FFD700] hover:border-[#FFD700]"
+          className="inline-flex min-h-11 items-center justify-center rounded-full border border-[#D4AF37]/45 bg-[#0B0B0C] px-6 text-xs font-semibold uppercase tracking-[0.16em] text-[#FFD76A] hover:border-[#FFD76A]"
         >
           {copy.compareLink}
         </Link>

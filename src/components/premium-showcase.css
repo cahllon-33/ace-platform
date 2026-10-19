@@ -128,5 +128,5 @@
 }
 .ace-pcodex-pick { display: contents; cursor: pointer; font: inherit; color: inherit; text-align: start; }
 .ace-pcodex-card:has(.ace-pcodex-pick) { cursor: pointer; transition: border-color 200ms ease, box-shadow 200ms ease; }
-.ace-pcodex-card:has(.ace-pcodex-pick:focus-visible) { outline: 2px solid #FFD700; outline-offset: 2px; }
-.ace-pcodex-card:has(.ace-pcodex-pick.is-active) { border-color: rgba(255,215,0,0.75); box-shadow: 0 0 0 1px rgba(255,215,0,0.35), 0 0 18px rgba(255,215,0,0.18); }
+.ace-pcodex-card:has(.ace-pcodex-pick:focus-visible) { outline: 2px solid #FFD76A; outline-offset: 2px; }
+.ace-pcodex-card:has(.ace-pcodex-pick.is-active) { border-color: rgba(212, 175, 55,0.75); box-shadow: 0 0 0 1px rgba(212, 175, 55,0.35), 0 0 18px rgba(212, 175, 55,0.18); }

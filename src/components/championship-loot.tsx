@@ -30,9 +30,9 @@ export function ChampionshipLoot() {
               <div className="ace-skin-3d" />
               <div className="ace-skin-floor" />
             </div>
-            <p className="text-[0.58rem] uppercase tracking-[0.18em] text-[#FFD700]">{ui.prizes.cardKicker}</p>
+            <p className="text-[0.58rem] uppercase tracking-[0.18em] text-[#FFD76A]">{ui.prizes.cardKicker}</p>
             <h3 className="mt-1 text-lg font-semibold text-white">
-              {skin.weapon} <span className="text-[#FFD700]">| {skin.finish}</span>
+              {skin.weapon} <span className="text-[#FFD76A]">| {skin.finish}</span>
             </h3>
             <p className="mt-1 text-xs text-[#A9ABB3]">
               {wear[skin.wear]} · {ui.prizes.slots[skin.slot]}

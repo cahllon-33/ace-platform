@@ -47,7 +47,7 @@ export default async function PrivacyPage() {
       <LegalSection n={3} title={privacy.steamBoundary.title}>
         <p>
           {privacy.steamBoundary.callback.before}{" "}
-          <code className="text-[#FFD700]">/api/auth/steam/callback</code>
+          <code className="text-[#FFD76A]">/api/auth/steam/callback</code>
           {privacy.steamBoundary.callback.after}
         </p>
         <p>{privacy.steamBoundary.footerLinks}</p>
@@ -58,7 +58,7 @@ export default async function PrivacyPage() {
       <LegalSection n={5} title={privacy.rights.title}>
         <p>
           {privacy.rights.before}{" "}
-          <a className="text-[#FFD700]" href="mailto:support@ace-platform.gg">
+          <a className="text-[#FFD76A]" href="mailto:support@ace-platform.gg">
             support@ace-platform.gg
           </a>
           {privacy.rights.after}
@@ -67,7 +67,7 @@ export default async function PrivacyPage() {
       <LegalSection n={6} title={privacy.cookies.title}>
         <p>
           {privacy.cookies.before}{" "}
-          <a className="text-[#FFD700]" href="/cookie-policy">
+          <a className="text-[#FFD76A]" href="/cookie-policy">
             {privacy.cookies.link}
           </a>{" "}
           {privacy.cookies.after}

@@ -27,7 +27,7 @@ export function TournamentLocaleIntro() {
           <dd className="mt-2 text-[#F5F3EC]">{t("tourneyStatusValue")}</dd>
         </div>
       </dl>
-      <section className="mt-10 rounded-3xl border border-[#FFD700]/25 bg-[#121212] p-6">
+      <section className="mt-10 rounded-3xl border border-[#FFD76A]/25 bg-[#121212] p-6">
         <h2 className="text-lg font-semibold text-white">{copy.briefTitle}</h2>
         <p className="mt-3 text-sm leading-7 text-[#A9ABB3]">{copy.briefBody}</p>
       </section>

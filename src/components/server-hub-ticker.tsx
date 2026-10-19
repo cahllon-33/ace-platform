@@ -20,7 +20,7 @@ export function ServerHubTicker() {
 
   return (
     <section className="ace-server-hub" aria-label={t("serverHub")}>
-      <p className="text-xs font-extrabold tracking-[0.16em] text-[#FFD700]">{copy.badge}</p>
+      <p className="text-xs font-extrabold tracking-[0.16em] text-[#FFD76A]">{copy.badge}</p>
       <h2 className="ace-widget-title">{t("serverHub")}</h2>
       <ul className="ace-server-nodes mt-4 grid list-none gap-3 p-0 md:grid-cols-3">
         {NODES.map((node) => {
@@ -30,7 +30,7 @@ export function ServerHubTicker() {
               <button
                 type="button"
                 className={`ace-server-tile flex min-h-16 w-full items-center gap-3 border bg-[#020203] px-3 py-3 text-start ${
-                  selected === node.id ? "border-[#FFD700] shadow-[0_0_18px_rgba(255,215,0,0.35)]" : "border-[#FFD700]/45"
+                  selected === node.id ? "border-[#FFD76A] shadow-[0_0_18px_rgba(212, 175, 55,0.35)]" : "border-[#FFD76A]/45"
                 }`}
                 aria-pressed={selected === node.id}
                 aria-label={interpolate(copy.tileAria, { name })}

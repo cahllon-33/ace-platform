@@ -20,10 +20,10 @@ export default async function PrizesPage() {
   ];
   return (
     <main className="mx-auto w-full max-w-[76rem] px-4 py-14 sm:px-6">
-      <p className="text-xs tracking-[0.28em] text-[#FFD700] uppercase">{copy.kicker}</p>
+      <p className="text-xs tracking-[0.28em] text-[#FFD76A] uppercase">{copy.kicker}</p>
       <h1 className="mt-2 text-4xl font-semibold">{copy.title}</h1>
       <p className="mt-4 max-w-3xl text-sm leading-7 text-[#A9ABB3]">{copy.lede}</p>
-      <Link href="/rules#s18" className="mt-3 inline-block text-sm text-[#FFD700] underline underline-offset-4">
+      <Link href="/rules#s18" className="mt-3 inline-block text-sm text-[#FFD76A] underline underline-offset-4">
         {copy.rulebook}
       </Link>
 

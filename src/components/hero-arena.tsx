@@ -133,7 +133,7 @@ export function HeroArena({ actions }: { actions: ReactNode }) {
               <span
                 style={{
                   display: "block",
-                  color: "#FFD700",
+                  color: "#FFD76A",
                   fontSize: "clamp(0.72rem, 1.6vw, 1.15rem)",
                   fontWeight: 800,
                   letterSpacing: "0.22em",

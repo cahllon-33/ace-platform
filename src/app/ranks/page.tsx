@@ -35,7 +35,7 @@ export default async function RanksPage() {
 
   return (
     <main className="mx-auto max-w-[90rem] px-4 py-14 sm:px-6">
-      <p className="text-xs tracking-[0.28em] text-[#FFD700]">{copy.hero.kicker}</p>
+      <p className="text-xs tracking-[0.28em] text-[#FFD76A]">{copy.hero.kicker}</p>
       <h1 className="mt-2 text-4xl font-semibold">{copy.hero.title}</h1>
       <p className="mt-4 max-w-3xl text-sm leading-7 text-[#A9ABB3]">
         {interpolate(copy.hero.lede, { divisions: RANK_DIVISIONS.join(", ") })}
@@ -66,16 +66,16 @@ export default async function RanksPage() {
         <PremiumRankCodex text={text} />
       </section>
       <RpRulesSection text={text} />
-      <section className="mt-12 rounded-3xl border border-[#FFD700]/25 bg-[#121212] p-6 sm:p-8">
+      <section className="mt-12 rounded-3xl border border-[#FFD76A]/25 bg-[#121212] p-6 sm:p-8">
         <h2 className="text-xl font-semibold text-white">{copy.document.title}</h2>
         <p className="mt-3 max-w-3xl text-sm leading-7 text-[#A9ABB3]">{copy.document.body}</p>
         <ol className="mt-6 grid gap-3 md:grid-cols-2">
           {RANK_TIERS.map((tier) => (
-            <li key={tier.level} className="ace-tier-row rounded-2xl border border-[#FFD700]/20 p-4">
+            <li key={tier.level} className="ace-tier-row rounded-2xl border border-[#FFD76A]/20 p-4">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img src={rankEmblemAsset(tier.level).smSrc} alt="" width={72} height={72} loading="lazy" />
               <div>
-              <p className="text-xs tracking-[0.14em] text-[#FFD700]">
+              <p className="text-xs tracking-[0.14em] text-[#FFD76A]">
                 {rankLevelKicker(copy.document.level, tier)}
               </p>
               <p className="mt-1 font-semibold text-[#F5F3EC]">{tier.name}</p>

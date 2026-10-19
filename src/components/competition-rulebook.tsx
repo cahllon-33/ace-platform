@@ -10,14 +10,14 @@ export async function CompetitionRulebook() {
   return (
     <article className="ace-rulebook mx-auto max-w-6xl">
       <header className="ace-rulebook-head">
-        <p className="font-mono text-xs tracking-[0.2em] text-[#FFD700] uppercase">{copy.kicker}</p>
-        <h1 className="mt-4 text-4xl font-semibold tracking-tight text-[#FFD700]">{copy.title}</h1>
+        <p className="font-mono text-xs tracking-[0.2em] text-[#FFD76A] uppercase">{copy.kicker}</p>
+        <h1 className="mt-4 text-4xl font-semibold tracking-tight text-[#FFD76A]">{copy.title}</h1>
         <p className="mt-3 text-xs tracking-[0.14em] text-[#A9ABB3] uppercase">
           {interpolate(copy.version, { version: RULEBOOK_VERSION, date: RULEBOOK_EFFECTIVE })}
         </p>
         <p className="mt-4 text-sm leading-7 text-[#A9ABB3]">{copy.intro}</p>
         {copy.englishNote ? (
-          <p className="mt-3 border-s-2 border-[#FFD700] ps-3 text-xs leading-6 text-[#C9CAD0]">{copy.englishNote}</p>
+          <p className="mt-3 border-s-2 border-[#FFD76A] ps-3 text-xs leading-6 text-[#C9CAD0]">{copy.englishNote}</p>
         ) : null}
       </header>
 

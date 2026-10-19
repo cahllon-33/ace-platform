@@ -9,7 +9,7 @@ export function AntiCheatTelemetry() {
 
   return (
     <article className="ace-hwid" aria-label={t("telemetryTitle")}>
-      <p className="text-xs font-extrabold tracking-[0.16em] text-[#FFD700]">{copy.badge}</p>
+      <p className="text-xs font-extrabold tracking-[0.16em] text-[#FFD76A]">{copy.badge}</p>
       <h2 className="ace-widget-title">{t("telemetryTitle")}</h2>
       <ul className="ace-hwid-lines">
         {copy.lines.map((line, index) => (

@@ -11,8 +11,8 @@ function ChipIcon({ kind }: { kind: ChipKind }) {
     return (
       <svg viewBox="0 0 16 16" width={24} height={24} className={ICON_BOX} aria-hidden="true">
         <rect width="16" height="16" rx="3" fill="#0B0B0C" />
-        <circle cx="8" cy="8" r="5.5" fill="none" stroke="#FFD700" strokeWidth="1.3" />
-        <path d="M8 4.4V8l2.4 1.5" fill="none" stroke="#FFD700" strokeWidth="1.3" />
+        <circle cx="8" cy="8" r="5.5" fill="none" stroke="#FFD76A" strokeWidth="1.3" />
+        <path d="M8 4.4V8l2.4 1.5" fill="none" stroke="#FFD76A" strokeWidth="1.3" />
       </svg>
     );
   }
@@ -20,9 +20,9 @@ function ChipIcon({ kind }: { kind: ChipKind }) {
     return (
       <svg viewBox="0 0 16 16" width={24} height={24} className={ICON_BOX} aria-hidden="true">
         <rect width="16" height="16" rx="3" fill="#0B0B0C" />
-        <circle cx="8" cy="8" r="5.2" fill="none" stroke="#FFD700" strokeWidth="1.3" />
-        <circle cx="8" cy="8" r="1.4" fill="#FFD700" />
-        <path d="M8 1.8v2.2M8 12v2.2M1.8 8h2.2M12 8h2.2" stroke="#FFD700" strokeWidth="1.2" />
+        <circle cx="8" cy="8" r="5.2" fill="none" stroke="#FFD76A" strokeWidth="1.3" />
+        <circle cx="8" cy="8" r="1.4" fill="#FFD76A" />
+        <path d="M8 1.8v2.2M8 12v2.2M1.8 8h2.2M12 8h2.2" stroke="#FFD76A" strokeWidth="1.2" />
       </svg>
     );
   }
@@ -30,8 +30,8 @@ function ChipIcon({ kind }: { kind: ChipKind }) {
     return (
       <svg viewBox="0 0 16 16" width={24} height={24} className={ICON_BOX} aria-hidden="true">
         <rect width="16" height="16" rx="3" fill="#0B0B0C" />
-        <path d="M2 12c2.2-5 4.6-7.6 12-8" fill="none" stroke="#FFD700" strokeWidth="1.4" />
-        <path d="M2 12h12" stroke="#FFD700" strokeWidth="1.1" opacity="0.55" />
+        <path d="M2 12c2.2-5 4.6-7.6 12-8" fill="none" stroke="#FFD76A" strokeWidth="1.4" />
+        <path d="M2 12h12" stroke="#FFD76A" strokeWidth="1.1" opacity="0.55" />
       </svg>
     );
   }
@@ -39,8 +39,8 @@ function ChipIcon({ kind }: { kind: ChipKind }) {
     return (
       <svg viewBox="0 0 16 16" width={24} height={24} className={ICON_BOX} aria-hidden="true">
         <rect width="16" height="16" rx="3" fill="#0B0B0C" />
-        <path d="M11.6 3.2A5.6 5.6 0 1 0 13 10" fill="none" stroke="#FFD700" strokeWidth="1.3" />
-        <path d="M10.2 2.4h3.2V5.6" fill="none" stroke="#FFD700" strokeWidth="1.3" />
+        <path d="M11.6 3.2A5.6 5.6 0 1 0 13 10" fill="none" stroke="#FFD76A" strokeWidth="1.3" />
+        <path d="M10.2 2.4h3.2V5.6" fill="none" stroke="#FFD76A" strokeWidth="1.3" />
       </svg>
     );
   }
@@ -48,18 +48,18 @@ function ChipIcon({ kind }: { kind: ChipKind }) {
     return (
       <svg viewBox="0 0 16 16" width={24} height={24} className={ICON_BOX} aria-hidden="true">
         <rect width="16" height="16" rx="3" fill="#0B0B0C" />
-        <rect x="2.4" y="2.4" width="11.2" height="11.2" rx="2" fill="none" stroke="#FFD700" strokeWidth="1.3" />
-        <circle cx="6" cy="6" r="1" fill="#FFD700" />
-        <circle cx="10" cy="10" r="1" fill="#FFD700" />
-        <circle cx="8" cy="8" r="1" fill="#FFD700" />
+        <rect x="2.4" y="2.4" width="11.2" height="11.2" rx="2" fill="none" stroke="#FFD76A" strokeWidth="1.3" />
+        <circle cx="6" cy="6" r="1" fill="#FFD76A" />
+        <circle cx="10" cy="10" r="1" fill="#FFD76A" />
+        <circle cx="8" cy="8" r="1" fill="#FFD76A" />
       </svg>
     );
   }
   return (
     <svg viewBox="0 0 16 16" width={24} height={24} className={ICON_BOX} aria-hidden="true">
       <rect width="16" height="16" rx="3" fill="#0B0B0C" />
-      <circle cx="8" cy="8" r="5.5" fill="none" stroke="#FFD700" strokeWidth="1.3" />
-      <path d="M5.1 8.2 7.1 10.2 11 5.8" fill="none" stroke="#FFD700" strokeWidth="1.4" />
+      <circle cx="8" cy="8" r="5.5" fill="none" stroke="#FFD76A" strokeWidth="1.3" />
+      <path d="M5.1 8.2 7.1 10.2 11 5.8" fill="none" stroke="#FFD76A" strokeWidth="1.4" />
     </svg>
   );
 }

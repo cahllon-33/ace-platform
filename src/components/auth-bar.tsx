@@ -40,7 +40,7 @@ export async function AuthBar() {
       {hasEliteSeal(user?.subscriptionTier) ? (
         <span className="inline-flex items-center gap-2" title={copy.elite}>
           <EliteSeal className="h-9 w-auto" />
-          <span className="text-[0.65rem] font-bold tracking-[0.18em] text-[#FFD700]">{copy.elite}</span>
+          <span className="text-[0.65rem] font-bold tracking-[0.18em] text-[#FFD76A]">{copy.elite}</span>
         </span>
       ) : null}
       <span className="ace-util-frame" title={copy.notificationsTitle} aria-label={copy.notificationsAria}>

@@ -28,7 +28,7 @@ export default async function StatsPage() {
   const points = access === "unlocked" ? await loadRatingMovement(user) : null;
   return (
     <main className="mx-auto max-w-6xl px-4 py-14 sm:px-6">
-      <p className="text-xs tracking-[0.28em] text-[#FFD700]">{copy.kicker}</p>
+      <p className="text-xs tracking-[0.28em] text-[#FFD76A]">{copy.kicker}</p>
       <h1 className="mt-2 text-4xl font-semibold">{copy.title}</h1>
       <p className="mt-4 max-w-3xl text-sm leading-7 text-[#A9ABB3]">{copy.lede}</p>
       {access !== "unlocked" ? (

@@ -12,7 +12,7 @@ export function LiveIntegrityCounter() {
         <span className="ace-gold-pulse-dot" aria-hidden="true" />
         <ConnectedCount />
       </span>
-      <span className="hidden h-4 w-px bg-[#FFD700]/40 sm:block" aria-hidden="true" />
+      <span className="hidden h-4 w-px bg-[#FFD76A]/40 sm:block" aria-hidden="true" />
       <span>{t("activeMatches", { count: 0 })}</span>
     </div>
   );

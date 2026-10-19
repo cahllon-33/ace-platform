@@ -5,7 +5,7 @@ export function FreeAccessPill({ label, note }: { label: string; note: string })
       aria-label={`${label}. ${note}`}
     >
       <span>{label}</span>
-      <span className="mt-0.5 text-[0.65rem] font-medium uppercase tracking-[0.12em] text-[#FFD700]">
+      <span className="mt-0.5 text-[0.65rem] font-medium uppercase tracking-[0.12em] text-[#FFD76A]">
         {note}
       </span>
     </p>

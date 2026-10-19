@@ -18,7 +18,7 @@ export function ContactEmailForm({
 
   return (
     <form
-      className="mt-6 rounded-2xl border border-[#FFD700] bg-[#0B0B0C] p-5 shadow-[0_0_24px_rgba(255,215,0,0.12)]"
+      className="mt-6 rounded-2xl border border-[#FFD76A] bg-[#0B0B0C] p-5 shadow-[0_0_24px_rgba(212, 175, 55,0.12)]"
       onSubmit={(event) => {
         event.preventDefault();
         if (!signedIn || pending) return;
@@ -29,12 +29,12 @@ export function ContactEmailForm({
         });
       }}
     >
-      <label className="text-xs font-extrabold tracking-[0.14em] text-[#FFD700]" htmlFor="ace-contact-email">
+      <label className="text-xs font-extrabold tracking-[0.14em] text-[#FFD76A]" htmlFor="ace-contact-email">
         {copy.label}
       </label>
       <input
         id="ace-contact-email"
-        className="mt-3 w-full rounded-lg border border-[#FFD700]/50 bg-[#020203] px-3 py-2 text-sm text-[#f5f3ec] outline-none"
+        className="mt-3 w-full rounded-lg border border-[#FFD76A]/50 bg-[#020203] px-3 py-2 text-sm text-[#f5f3ec] outline-none"
         type="email"
         autoComplete="email"
         maxLength={254}
@@ -48,7 +48,7 @@ export function ContactEmailForm({
       {signedIn ? (
         <button
           type="submit"
-          className="mt-4 rounded-full border border-[#FFD700] px-4 py-2 text-xs font-extrabold tracking-[0.12em] text-[#FFD700]"
+          className="mt-4 rounded-full border border-[#FFD76A] px-4 py-2 text-xs font-extrabold tracking-[0.12em] text-[#FFD76A]"
           disabled={pending}
         >
           {pending ? copy.saving : copy.save}

@@ -39,20 +39,20 @@ export function CookieConsentBanner() {
     >
       <div className="ace-cookie-tray-inner">
         <div className="min-w-0 flex-1">
-          <p id="ace-cookie-title" className="font-mono text-[0.65rem] tracking-[0.2em] text-[#FFD700]">
+          <p id="ace-cookie-title" className="font-mono text-[0.65rem] tracking-[0.2em] text-[#FFD76A]">
             {banner.kicker}
           </p>
           <p id="ace-cookie-copy" className="mt-2 max-w-3xl text-sm leading-6 text-[#F5F3EC]">
             {banner.copy.before}{" "}
-            <a href="/terms" className="text-[#FFD700] underline-offset-2 hover:underline">
+            <a href="/terms" className="text-[#FFD76A] underline-offset-2 hover:underline">
               {banner.copy.termsLink}
             </a>
             {banner.copy.afterTerms}{" "}
-            <a href="/rules" className="text-[#FFD700] underline-offset-2 hover:underline">
+            <a href="/rules" className="text-[#FFD76A] underline-offset-2 hover:underline">
               {banner.copy.rulesLink}
             </a>
             {banner.copy.afterRules}{" "}
-            <a href="/cookie-policy" className="text-[#FFD700] underline-offset-2 hover:underline">
+            <a href="/cookie-policy" className="text-[#FFD76A] underline-offset-2 hover:underline">
               {banner.copy.cookiePolicyLink}
             </a>{" "}
             {banner.copy.after}

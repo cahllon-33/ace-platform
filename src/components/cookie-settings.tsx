@@ -42,13 +42,13 @@ export function CookieSettings() {
           aria-modal="true"
           aria-labelledby="cookie-title"
         >
-          <div className="max-w-md rounded-2xl border border-[#FFD700]/40 bg-[#0B0B0C] p-6">
+          <div className="max-w-md rounded-2xl border border-[#FFD76A]/40 bg-[#0B0B0C] p-6">
             <h2 id="cookie-title" className="text-lg font-semibold text-white">
               {settings.title}
             </h2>
             <p className="mt-3 text-sm leading-6 text-ace-muted">
               {settings.body}{" "}
-              <a href="/cookie-policy" className="text-[#FFD700]">
+              <a href="/cookie-policy" className="text-[#FFD76A]">
                 {settings.cookiePolicyLink}
               </a>
             </p>
@@ -100,7 +100,7 @@ export function CookieSettings() {
               </button>
               <button
                 type="button"
-                className="rounded-full border border-[#FFD700]/50 px-4 py-2 text-sm text-[#FFD700]"
+                className="rounded-full border border-[#FFD76A]/50 px-4 py-2 text-sm text-[#FFD76A]"
                 aria-label={settings.closeLabel}
                 onClick={() => setOpen(false)}
               >

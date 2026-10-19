@@ -5,8 +5,8 @@
   --ace-charcoal: #020203;
   --ace-graphite: #121318;
   --ace-line: #3a3208;
-  --ace-gold-bright: #ffd700;
-  --ace-gold: #ffd700;
+  --ace-gold-bright: #ffd76a;
+  --ace-gold: #ffd76a;
   --ace-gold-dark: #8f6418;
   --ace-text: #f5f3ec;
   --ace-muted: #a9abb3;
@@ -146,7 +146,7 @@ html[dir="rtl"] .ace-hub-card-face {
     180deg,
     #fffce0 0%,
     #fff000 32%,
-    #ffd700 68%,
+    #ffd76a 68%,
     #8f6418 100%
   );
   -webkit-background-clip: text;
@@ -197,10 +197,10 @@ html[dir="rtl"] .ace-hub-card-face {
   background-image: linear-gradient(
     110deg,
     #8f6418 0%,
-    #ffd700 28%,
+    #ffd76a 28%,
     #fff000 48%,
     #fffce0 52%,
-    #ffd700 72%,
+    #ffd76a 72%,
     #8f6418 100%
   );
   background-size: 220% 100%;
@@ -209,14 +209,14 @@ html[dir="rtl"] .ace-hub-card-face {
   color: transparent;
   animation: ace-shimmer 4.5s linear infinite;
   filter: drop-shadow(0 0 16px rgba(255, 240, 0, 0.75))
-    drop-shadow(0 12px 36px rgba(255, 215, 0, 0.45))
-    drop-shadow(0 0 64px rgba(255, 215, 0, 0.28));
+    drop-shadow(0 12px 36px rgba(212, 175, 55, 0.45))
+    drop-shadow(0 0 64px rgba(212, 175, 55, 0.28));
 }
 
 .ace-tourney-arena {
   overflow-x: hidden;
   background:
-    radial-gradient(ellipse 80% 40% at 50% 18%, rgba(255, 215, 0, 0.08), transparent 62%),
+    radial-gradient(ellipse 80% 40% at 50% 18%, rgba(212, 175, 55, 0.08), transparent 62%),
     transparent;
 }
 
@@ -237,7 +237,7 @@ html[dir="rtl"] .ace-hub-card-face {
 
 .ace-runway-bloom {
   fill: none;
-  stroke: rgba(255, 215, 0, 0.42);
+  stroke: rgba(212, 175, 55, 0.42);
   stroke-width: 18;
   stroke-linecap: round;
   stroke-linejoin: round;
@@ -259,7 +259,7 @@ html[dir="rtl"] .ace-hub-card-face {
   stroke-linejoin: round;
   stroke-dasharray: 28 140;
   animation: ace-runway-climb 2.2s linear infinite;
-  filter: drop-shadow(0 0 10px #ffd700);
+  filter: drop-shadow(0 0 10px #ffd76a);
 }
 
 @keyframes ace-runway-climb {
@@ -328,20 +328,20 @@ html[dir="rtl"] .ace-hub-card-face {
 }
 
 .ace-glass-laser {
-  border: 1px solid rgba(255, 215, 0, 0.42);
+  border: 1px solid rgba(212, 175, 55, 0.42);
   border-radius: 1.15rem;
   background: rgba(8, 8, 10, 0.42);
   backdrop-filter: blur(24px);
   -webkit-backdrop-filter: blur(24px);
   box-shadow:
     0 0 0 1px rgba(255, 240, 0, 0.12),
-    0 0 28px rgba(255, 215, 0, 0.16),
+    0 0 28px rgba(212, 175, 55, 0.16),
     inset 0 1px 0 rgba(255, 240, 0, 0.18);
 }
 
 .ace-rank-panel {
   border-radius: 1.1rem;
-  border: 1px solid rgba(255, 215, 0, 0.28);
+  border: 1px solid rgba(212, 175, 55, 0.28);
   background: rgba(8, 8, 10, 0.55);
   backdrop-filter: blur(24px);
   -webkit-backdrop-filter: blur(24px);
@@ -478,7 +478,7 @@ html[dir="rtl"] .ace-hub-card-face {
 }
 
 .ace-counter-pulse {
-  border: 1px solid rgba(255, 215, 0, 0.7);
+  border: 1px solid rgba(212, 175, 55, 0.7);
   background: rgba(2, 2, 3, 0.72);
   box-shadow: 0 0 0 1px rgba(255, 240, 0, 0.2);
   animation: ace-gold-border 2.2s ease-in-out infinite;
@@ -489,12 +489,12 @@ html[dir="rtl"] .ace-hub-card-face {
   100% {
     box-shadow:
       0 0 0 1px rgba(255, 240, 0, 0.25),
-      0 0 16px rgba(255, 215, 0, 0.28);
+      0 0 16px rgba(212, 175, 55, 0.28);
   }
   50% {
     box-shadow:
       0 0 0 1px rgba(255, 240, 0, 0.7),
-      0 0 28px rgba(255, 215, 0, 0.55);
+      0 0 28px rgba(212, 175, 55, 0.55);
   }
 }
 
@@ -502,17 +502,17 @@ html[dir="rtl"] .ace-hub-card-face {
   width: 0.55rem;
   height: 0.55rem;
   border-radius: 999px;
-  background: #ffd700;
+  background: #ffd76a;
   box-shadow: 0 0 10px #fff000;
   animation: ace-gold-dot 1.6s ease-out infinite;
 }
 
 @keyframes ace-gold-dot {
   0% {
-    box-shadow: 0 0 0 0 rgba(255, 215, 0, 0.7);
+    box-shadow: 0 0 0 0 rgba(212, 175, 55, 0.7);
   }
   100% {
-    box-shadow: 0 0 0 10px rgba(255, 215, 0, 0);
+    box-shadow: 0 0 0 10px rgba(212, 175, 55, 0);
   }
 }
 
@@ -520,12 +520,12 @@ html[dir="rtl"] .ace-hub-card-face {
   position: relative;
   overflow: hidden;
   isolation: isolate;
-  background: linear-gradient(180deg, #fffce0 0%, #fff000 28%, #ffd700 62%, #b8860b 100%);
+  background: linear-gradient(180deg, #fffce0 0%, #fff000 28%, #ffd76a 62%, #b8860b 100%);
   color: #140800;
   font-weight: 700;
   box-shadow:
     0 0 0 1px rgba(255, 240, 0, 0.55),
-    0 0 22px rgba(255, 215, 0, 0.45),
+    0 0 22px rgba(212, 175, 55, 0.45),
     inset 0 1px 0 rgba(255, 255, 255, 0.55);
   transition:
     transform 0.25s ease,
@@ -552,7 +552,7 @@ html[dir="rtl"] .ace-hub-card-face {
   box-shadow:
     0 0 0 1px rgba(255, 252, 224, 0.9),
     0 0 40px rgba(255, 240, 0, 0.75),
-    0 0 70px rgba(255, 215, 0, 0.4);
+    0 0 70px rgba(212, 175, 55, 0.4);
 }
 
 .ace-gold-foil:hover::after,
@@ -582,7 +582,7 @@ html[dir="rtl"] .ace-hub-card-face {
   height: 12rem;
   right: 6%;
   top: 18%;
-  background: radial-gradient(circle, rgba(255, 215, 0, 0.16), transparent 70%);
+  background: radial-gradient(circle, rgba(212, 175, 55, 0.16), transparent 70%);
 }
 
 .ace-smoke-c {
@@ -599,24 +599,24 @@ html[dir="rtl"] .ace-hub-card-face {
 }
 
 .ace-arena-laser {
-  border: 1px solid rgba(255, 215, 0, 0.45);
+  border: 1px solid rgba(212, 175, 55, 0.45);
   border-radius: 1.1rem;
   box-shadow:
-    0 0 24px rgba(255, 215, 0, 0.2),
-    inset 0 0 40px rgba(255, 215, 0, 0.06);
+    0 0 24px rgba(212, 175, 55, 0.2),
+    inset 0 0 40px rgba(212, 175, 55, 0.06);
   animation: ace-gold-border 3.4s ease-in-out infinite;
 }
 
 .ace-radar-mesh {
   background-image:
-    radial-gradient(circle at 50% 80%, rgba(255, 215, 0, 0.12), transparent 42%),
+    radial-gradient(circle at 50% 80%, rgba(212, 175, 55, 0.12), transparent 42%),
     repeating-radial-gradient(
       circle at 50% 80%,
-      rgba(255, 215, 0, 0.16) 0 1px,
+      rgba(212, 175, 55, 0.16) 0 1px,
       transparent 1px 28px
     ),
-    linear-gradient(rgba(255, 215, 0, 0.06) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255, 215, 0, 0.06) 1px, transparent 1px);
+    linear-gradient(rgba(212, 175, 55, 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(212, 175, 55, 0.06) 1px, transparent 1px);
   background-size: auto, auto, 42px 42px, 42px 42px;
   animation: ace-radar-scan 8s linear infinite;
   opacity: 0.7;
@@ -718,22 +718,22 @@ html[dir="rtl"] .ace-hub-card-face {
   top: 0.35rem;
   width: 1.6rem;
   height: 0.85rem;
-  background: linear-gradient(180deg, #fffce0, #ffd700 60%, #8f6418);
+  background: linear-gradient(180deg, #fffce0, #ffd76a 60%, #8f6418);
   clip-path: polygon(8% 100%, 8% 45%, 28% 70%, 50% 10%, 72% 70%, 92% 45%, 92% 100%);
   filter: drop-shadow(0 0 8px #fff000);
 }
 
 .ace-ops-viewport {
-  border: 1px solid rgba(255, 215, 0, 0.28);
+  border: 1px solid rgba(212, 175, 55, 0.28);
   background:
-    radial-gradient(ellipse at 50% 80%, rgba(255, 215, 0, 0.1), transparent 50%),
+    radial-gradient(ellipse at 50% 80%, rgba(212, 175, 55, 0.1), transparent 50%),
     linear-gradient(180deg, rgba(8, 8, 10, 0.2), rgba(2, 2, 3, 0.85));
 }
 
 .ace-ops-scan {
   position: absolute;
   inset: 0;
-  background: linear-gradient(transparent, rgba(255, 215, 0, 0.12), transparent);
+  background: linear-gradient(transparent, rgba(212, 175, 55, 0.12), transparent);
   height: 30%;
   animation: ace-scan 9s linear infinite;
 }
@@ -742,7 +742,7 @@ html[dir="rtl"] .ace-hub-card-face {
   position: absolute;
   bottom: 12%;
   background: linear-gradient(180deg, rgba(40, 40, 44, 0.55), rgba(8, 8, 10, 0.9));
-  border: 1px solid rgba(255, 215, 0, 0.2);
+  border: 1px solid rgba(212, 175, 55, 0.2);
   transform: perspective(600px) rotateX(12deg);
 }
 
@@ -772,7 +772,7 @@ html[dir="rtl"] .ace-hub-card-face {
   font-size: 0.62rem;
   letter-spacing: 0.18em;
   text-transform: uppercase;
-  color: #ffd700;
+  color: #ffd76a;
 }
 
 .ace-ops-hud-l {
@@ -789,27 +789,27 @@ html[dir="rtl"] .ace-hub-card-face {
   left: 50%;
   bottom: 1rem;
   transform: translateX(-50%);
-  color: rgba(255, 215, 0, 0.7);
+  color: rgba(212, 175, 55, 0.7);
 }
 
 .ace-community-rail {
   box-shadow:
-    0 0 0 1px rgba(255, 215, 0, 0.28),
+    0 0 0 1px rgba(212, 175, 55, 0.28),
     0 16px 40px rgba(0, 0, 0, 0.45),
-    0 0 24px rgba(255, 215, 0, 0.18);
+    0 0 24px rgba(212, 175, 55, 0.18);
 }
 
 .ace-loot-card {
-  border: 1px solid rgba(255, 215, 0, 0.45);
+  border: 1px solid rgba(212, 175, 55, 0.45);
   background: rgba(10, 10, 12, 0.82);
-  box-shadow: 0 0 24px rgba(255, 215, 0, 0.18);
+  box-shadow: 0 0 24px rgba(212, 175, 55, 0.18);
   animation: ace-gold-border 3s ease-in-out infinite;
 }
 
 .ace-skin-plate {
   background:
     linear-gradient(135deg, rgba(255, 240, 0, 0.2), transparent 40%),
-    repeating-linear-gradient(90deg, rgba(255, 215, 0, 0.12) 0 8px, transparent 8px 18px),
+    repeating-linear-gradient(90deg, rgba(212, 175, 55, 0.12) 0 8px, transparent 8px 18px),
     linear-gradient(180deg, #1a1a14, #050506);
 }
 
@@ -878,7 +878,7 @@ html[dir="rtl"] .ace-hub-card-face {
   width: 42rem;
   translate: -50% -50%;
   border-radius: 999px;
-  background: radial-gradient(ellipse, rgba(255, 215, 0, 0.38), transparent 68%);
+  background: radial-gradient(ellipse, rgba(212, 175, 55, 0.38), transparent 68%);
   filter: blur(8px);
   animation: ace-hero-halo 3.2s ease-in-out infinite;
   pointer-events: none;
@@ -901,8 +901,8 @@ html[dir="rtl"] .ace-hub-card-face {
   inset: 8% 6% 0;
   z-index: 0;
   background-image:
-    linear-gradient(rgba(255, 215, 0, 0.09) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255, 215, 0, 0.09) 1px, transparent 1px);
+    linear-gradient(rgba(212, 175, 55, 0.09) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(212, 175, 55, 0.09) 1px, transparent 1px);
   background-size: 46px 46px;
   mask-image: linear-gradient(180deg, transparent, #000 28%, #000 72%, transparent);
   animation: ace-radar-scan 10s linear infinite;
@@ -945,7 +945,7 @@ html[dir="rtl"] .ace-hub-card-face {
   height: 100%;
   overflow: hidden;
   border-radius: 1.35rem;
-  border: 1px solid rgba(255, 215, 0, 0.28);
+  border: 1px solid rgba(212, 175, 55, 0.28);
   box-shadow: 0 28px 70px rgba(0, 0, 0, 0.45);
 }
 
@@ -956,9 +956,9 @@ html[dir="rtl"] .ace-hub-card-face {
   z-index: 1;
   pointer-events: none;
   border-radius: inherit;
-  box-shadow: inset 0 0 0 1px rgba(255, 215, 0, 0.35);
+  box-shadow: inset 0 0 0 1px rgba(212, 175, 55, 0.35);
   background:
-    radial-gradient(ellipse at 50% 18%, rgba(255, 215, 0, 0.14), transparent 42%),
+    radial-gradient(ellipse at 50% 18%, rgba(212, 175, 55, 0.14), transparent 42%),
     linear-gradient(180deg, transparent 55%, rgba(2, 2, 3, 0.42) 100%);
 }
 
@@ -978,15 +978,15 @@ html[dir="rtl"] .ace-hub-card-face {
   width: 100%;
   margin: 0;
   padding: 0.85rem 0 1.15rem;
-  border: 1px solid rgba(255, 215, 0, 0.55);
+  border: 1px solid rgba(212, 175, 55, 0.55);
   border-radius: 1.35rem;
   background:
-    radial-gradient(ellipse at 50% 0%, rgba(255, 215, 0, 0.22), transparent 58%),
+    radial-gradient(ellipse at 50% 0%, rgba(212, 175, 55, 0.22), transparent 58%),
     #0b0b0c;
   box-shadow:
-    0 0 0 1px rgba(255, 215, 0, 0.18),
+    0 0 0 1px rgba(212, 175, 55, 0.18),
     0 18px 50px rgba(0, 0, 0, 0.35),
-    inset 0 0 0 1px rgba(255, 215, 0, 0.12);
+    inset 0 0 0 1px rgba(212, 175, 55, 0.12);
 }
 
 .ace-hero-kicker,
@@ -999,7 +999,7 @@ html[dir="rtl"] .ace-hub-card-face {
   font-size: 0.78rem;
   font-weight: 700;
   letter-spacing: 0.12em;
-  color: #ffd700;
+  color: #ffd76a;
 }
 
 .ace-entrance-title {
@@ -1069,7 +1069,7 @@ html[dir="rtl"] .ace-hub-card-face {
   font-size: 0.78rem;
   font-weight: 700;
   letter-spacing: 0.08em;
-  color: #ffd700;
+  color: #ffd76a;
 }
 
 .ace-hero-chips {
@@ -1103,10 +1103,10 @@ html[dir="rtl"] .ace-hub-card-face {
     grid-template-columns: minmax(22rem, 34rem) minmax(0, 1fr);
     gap: 1rem;
     padding: 0.7rem;
-    border: 1px solid rgba(255, 215, 0, 0.28);
+    border: 1px solid rgba(212, 175, 55, 0.28);
     border-radius: 1.6rem;
     background:
-      radial-gradient(ellipse at 18% 0%, rgba(255, 215, 0, 0.1), transparent 46%),
+      radial-gradient(ellipse at 18% 0%, rgba(212, 175, 55, 0.1), transparent 46%),
       #08080a;
     box-shadow: 0 28px 70px rgba(0, 0, 0, 0.4);
   }
@@ -1127,7 +1127,7 @@ html[dir="rtl"] .ace-hub-card-face {
   align-items: flex-start;
   gap: 0.75rem;
   min-height: 0;
-  border: 1px solid rgba(255, 215, 0, 0.28);
+  border: 1px solid rgba(212, 175, 55, 0.28);
   border-radius: 0.9rem;
   background: #101114;
   padding: 0.85rem 0.9rem;
@@ -1140,9 +1140,9 @@ html[dir="rtl"] .ace-hub-card-face {
   height: 1.2rem;
   flex-shrink: 0;
   fill: none;
-  stroke: #ffd700;
+  stroke: #ffd76a;
   stroke-width: 1.6;
-  filter: drop-shadow(0 0 6px #ffd700);
+  filter: drop-shadow(0 0 6px #ffd76a);
 }
 
 .ace-hero-chip span span:first-child {
@@ -1169,7 +1169,7 @@ html[dir="rtl"] .ace-hub-card-face {
   min-height: 3.35rem;
   align-items: center;
   gap: 0.75rem;
-  border: 1px solid rgba(255, 215, 0, 0.2);
+  border: 1px solid rgba(212, 175, 55, 0.2);
   border-radius: 0.55rem;
   background: #171a21;
   padding: 0 1.35rem;
@@ -1196,7 +1196,7 @@ html[dir="rtl"] .ace-hub-card-face {
   transform: translateY(-1px);
   background: #171a21;
   color: #ffffff;
-  border-color: #ffd700;
+  border-color: #ffd76a;
   animation: ace-steam-laser 1.6s ease-in-out infinite;
 }
 
@@ -1205,12 +1205,12 @@ html[dir="rtl"] .ace-hub-card-face {
   100% {
     box-shadow:
       0 0 0 1px #d4af37,
-      0 0 16px rgba(255, 215, 0, 0.35);
+      0 0 16px rgba(212, 175, 55, 0.35);
   }
   50% {
     box-shadow:
-      0 0 0 1px #ffd700,
-      0 0 28px rgba(255, 215, 0, 0.72),
+      0 0 0 1px #ffd76a,
+      0 0 28px rgba(212, 175, 55, 0.72),
       0 0 46px rgba(212, 175, 55, 0.28);
   }
 }
@@ -1232,17 +1232,17 @@ html[dir="rtl"] .ace-hub-card-face {
 .ace-radar {
   position: absolute;
   inset: 8% 12%;
-  border: 1px solid rgba(255, 215, 0, 0.18);
+  border: 1px solid rgba(212, 175, 55, 0.18);
   border-radius: 50%;
   background:
-    repeating-radial-gradient(circle, rgba(255, 215, 0, 0.12) 0 1px, transparent 1px 42px);
+    repeating-radial-gradient(circle, rgba(212, 175, 55, 0.12) 0 1px, transparent 1px 42px);
 }
 
 .ace-radar::after {
   content: "";
   position: absolute;
   inset: 0;
-  background: conic-gradient(from 0deg, transparent 0 70%, rgba(255, 215, 0, 0.28) 88%, transparent 100%);
+  background: conic-gradient(from 0deg, transparent 0 70%, rgba(212, 175, 55, 0.28) 88%, transparent 100%);
   animation: ace-radar-spin 8s linear infinite;
   border-radius: 50%;
 }
@@ -1272,7 +1272,7 @@ html[dir="rtl"] .ace-hub-card-face {
   animation: ace-elite-float 6.4s ease-in-out infinite;
   filter:
     drop-shadow(0 18px 14px rgba(0, 0, 0, 0.72))
-    drop-shadow(0 0 18px rgba(255, 215, 0, 0.34));
+    drop-shadow(0 0 18px rgba(212, 175, 55, 0.34));
 }
 
 .ace-elite-mark {
@@ -1344,21 +1344,21 @@ html[dir="rtl"] .ace-hub-card-face {
 
 .ace-ops-card {
   overflow: hidden;
-  border: 1px solid rgba(255, 215, 0, 0.72);
+  border: 1px solid rgba(212, 175, 55, 0.72);
   border-radius: 1.1rem;
   background: #040406;
   box-shadow:
-    0 0 0 1px rgba(255, 215, 0, 0.28),
-    0 0 22px rgba(255, 215, 0, 0.12),
+    0 0 0 1px rgba(212, 175, 55, 0.28),
+    0 0 22px rgba(212, 175, 55, 0.12),
     0 18px 32px rgba(0, 0, 0, 0.45);
 }
 
 .ace-rp-chrome {
-  color: #ffd700;
+  color: #ffd76a;
   font-size: 1.8rem;
   font-weight: 800;
   letter-spacing: 0.04em;
-  text-shadow: 0 0 18px rgba(255, 215, 0, 0.55);
+  text-shadow: 0 0 18px rgba(212, 175, 55, 0.55);
 }
 
 .ace-crest-stage {
@@ -1392,9 +1392,9 @@ html[dir="rtl"] .ace-hub-card-face {
 
 .ace-crest-face {
   background:
-    linear-gradient(160deg, #fff6c2, #ffd700 42%, #8a6a10 78%);
+    linear-gradient(160deg, #fff6c2, #ffd76a 42%, #8a6a10 78%);
   transform: translateZ(14px);
-  box-shadow: 0 0 24px rgba(255, 215, 0, 0.45);
+  box-shadow: 0 0 24px rgba(212, 175, 55, 0.45);
 }
 
 @keyframes ace-crest-spin {
@@ -1411,14 +1411,14 @@ html[dir="rtl"] .ace-hub-card-face {
 
 .ace-rp-protocol {
   margin-top: 1.1rem;
-  border: 2px solid #ffd700;
+  border: 2px solid #ffd76a;
   border-radius: 1rem;
   background: #0b0b0c;
   padding: 1rem 1.1rem;
 }
 
 .ace-rp-protocol h3 {
-  color: #ffd700;
+  color: #ffd76a;
   font-size: 0.78rem;
   font-weight: 800;
   letter-spacing: 0.14em;
@@ -1453,7 +1453,7 @@ html[dir="rtl"] .ace-hub-card-face {
   margin-bottom: 1.1rem;
   font-size: 0.62rem;
   letter-spacing: 0.18em;
-  color: #ffd700;
+  color: #ffd76a;
 }
 
 .ace-rank-portrait-row {
@@ -1475,7 +1475,7 @@ html[dir="rtl"] .ace-hub-card-face {
   min-width: 0;
   flex-direction: column;
   align-items: center;
-  border: 1px solid rgba(255, 215, 0, 0.22);
+  border: 1px solid rgba(212, 175, 55, 0.22);
   border-radius: 0.85rem;
   background: #070708;
   padding: 0.85rem 0.4rem 0.65rem;
@@ -1525,15 +1525,15 @@ html[dir="rtl"] .ace-hub-card-face {
 }
 
 .ace-rank-portrait-active {
-  border-color: #ffd700;
+  border-color: #ffd76a;
   background:
-    radial-gradient(ellipse at 50% 22%, rgba(255, 215, 0, 0.16), transparent 62%),
+    radial-gradient(ellipse at 50% 22%, rgba(212, 175, 55, 0.16), transparent 62%),
     #070708;
-  box-shadow: 0 0 0 1px rgba(255, 215, 0, 0.65);
+  box-shadow: 0 0 0 1px rgba(212, 175, 55, 0.65);
 }
 
 .ace-rank-portrait-active .ace-rank-medal {
-  filter: drop-shadow(0 0 16px rgba(255, 215, 0, 0.35));
+  filter: drop-shadow(0 0 16px rgba(212, 175, 55, 0.35));
 }
 
 .ace-rank-portrait-shell {
@@ -1580,17 +1580,17 @@ html[dir="rtl"] .ace-hub-card-face {
   0%,
   100% {
     box-shadow:
-      0 0 0 1px #ffd700,
-      0 0 18px rgba(255, 215, 0, 0.55),
+      0 0 0 1px #ffd76a,
+      0 0 18px rgba(212, 175, 55, 0.55),
       0 0 36px rgba(255, 120, 0, 0.28);
-    filter: drop-shadow(0 0 10px rgba(255, 215, 0, 0.45));
+    filter: drop-shadow(0 0 10px rgba(212, 175, 55, 0.45));
   }
   50% {
     box-shadow:
       0 0 0 1px #fff6c2,
-      0 0 36px rgba(255, 215, 0, 0.95),
+      0 0 36px rgba(212, 175, 55, 0.95),
       0 0 64px rgba(255, 80, 0, 0.45);
-    filter: drop-shadow(0 0 22px rgba(255, 215, 0, 0.8));
+    filter: drop-shadow(0 0 22px rgba(212, 175, 55, 0.8));
   }
 }
 
@@ -1636,19 +1636,19 @@ html[dir="rtl"] .ace-hub-card-face {
 }
 
 .ace-div-chip[data-div="I"] {
-  border: 1px solid #ffd700;
+  border: 1px solid #ffd76a;
   color: #ffe56a;
   box-shadow:
-    0 0 12px #ffd700,
-    0 0 24px rgba(255, 215, 0, 0.75),
-    inset 0 0 10px rgba(255, 215, 0, 0.45);
+    0 0 12px #ffd76a,
+    0 0 24px rgba(212, 175, 55, 0.75),
+    inset 0 0 10px rgba(212, 175, 55, 0.45);
   animation: ace-div-gold-pulse 1.7s ease-in-out infinite;
 }
 
 .ace-div-chip-on[data-div="I"] {
   box-shadow:
-    0 0 16px #ffd700,
-    0 0 32px rgba(255, 215, 0, 0.95),
+    0 0 16px #ffd76a,
+    0 0 32px rgba(212, 175, 55, 0.95),
     inset 0 0 12px rgba(255, 246, 194, 0.55);
 }
 
@@ -1657,15 +1657,15 @@ html[dir="rtl"] .ace-hub-card-face {
   100% {
     filter: brightness(1);
     box-shadow:
-      0 0 12px #ffd700,
-      0 0 22px rgba(255, 215, 0, 0.7),
-      inset 0 0 10px rgba(255, 215, 0, 0.4);
+      0 0 12px #ffd76a,
+      0 0 22px rgba(212, 175, 55, 0.7),
+      inset 0 0 10px rgba(212, 175, 55, 0.4);
   }
   50% {
     filter: brightness(1.28);
     box-shadow:
       0 0 22px #fff6c2,
-      0 0 36px rgba(255, 215, 0, 1),
+      0 0 36px rgba(212, 175, 55, 1),
       inset 0 0 14px rgba(255, 246, 194, 0.7);
   }
 }
@@ -1686,7 +1686,7 @@ html[dir="rtl"] .ace-hub-card-face {
 .ace-rank-detail-card {
   display: grid;
   gap: 1rem;
-  border: 1px solid rgba(255, 215, 0, 0.38);
+  border: 1px solid rgba(212, 175, 55, 0.38);
   background: linear-gradient(180deg, #121318, #020203);
   padding: 1.15rem 1.2rem 1.25rem;
 }
@@ -1712,17 +1712,17 @@ html[dir="rtl"] .ace-hub-card-face {
   display: inline-block;
   width: 1.1rem;
   height: 0.75rem;
-  background: linear-gradient(#ffd700, #8a6a10);
+  background: linear-gradient(#ffd76a, #8a6a10);
   clip-path: polygon(8% 100%, 0 32%, 25% 52%, 50% 0, 75% 52%, 100% 32%, 92% 100%);
-  filter: drop-shadow(0 0 6px #ffd700);
+  filter: drop-shadow(0 0 6px #ffd76a);
 }
 
 .ace-premium-badge {
-  border: 1px solid #ffd700;
+  border: 1px solid #ffd76a;
   padding: 0.12rem 0.45rem;
   font-size: 0.55rem;
   letter-spacing: 0.16em;
-  color: #ffd700;
+  color: #ffd76a;
 }
 
 .ace-progress-track {
@@ -1734,8 +1734,8 @@ html[dir="rtl"] .ace-hub-card-face {
 
 .ace-progress-fill {
   height: 100%;
-  background: linear-gradient(90deg, #8a6a10, #ffd700);
-  box-shadow: 0 0 10px #ffd700;
+  background: linear-gradient(90deg, #8a6a10, #ffd76a);
+  box-shadow: 0 0 10px #ffd76a;
 }
 
 .ace-orbit-wrap {
@@ -1745,7 +1745,7 @@ html[dir="rtl"] .ace-hub-card-face {
   min-height: 20rem;
   overflow: hidden;
   background:
-    radial-gradient(circle at 42% 58%, rgba(255, 215, 0, 0.2), transparent 42%),
+    radial-gradient(circle at 42% 58%, rgba(212, 175, 55, 0.2), transparent 42%),
     #020203;
 }
 
@@ -1778,16 +1778,16 @@ html[dir="rtl"] .ace-hub-card-face {
   background-repeat: no-repeat;
   background-position: center;
   box-shadow:
-    0 0 28px rgba(255, 215, 0, 0.55),
+    0 0 28px rgba(212, 175, 55, 0.55),
     inset 0 0 18px rgba(255, 246, 194, 0.4);
 }
 
 .ace-orbit-ring {
   position: absolute;
   inset: 8%;
-  border: 2px solid rgba(255, 215, 0, 0.7);
+  border: 2px solid rgba(212, 175, 55, 0.7);
   border-radius: 50%;
-  box-shadow: 0 0 14px rgba(255, 215, 0, 0.45);
+  box-shadow: 0 0 14px rgba(212, 175, 55, 0.45);
 }
 
 .ace-orbit-ring-a {
@@ -1797,7 +1797,7 @@ html[dir="rtl"] .ace-hub-card-face {
 .ace-orbit-ring-b {
   inset: 2%;
   transform: rotateX(68deg) rotateZ(-28deg);
-  border-color: rgba(255, 215, 0, 0.45);
+  border-color: rgba(212, 175, 55, 0.45);
 }
 
 .ace-orbit-crown {
@@ -1807,9 +1807,9 @@ html[dir="rtl"] .ace-hub-card-face {
   width: 2.4rem;
   height: 1.5rem;
   translate: -50% 0;
-  background: linear-gradient(#fff6c2, #ffd700 40%, #8a6a10);
+  background: linear-gradient(#fff6c2, #ffd76a 40%, #8a6a10);
   clip-path: polygon(6% 100%, 0 28%, 22% 48%, 50% 0, 78% 48%, 100% 28%, 94% 100%);
-  filter: drop-shadow(0 0 10px #ffd700);
+  filter: drop-shadow(0 0 10px #ffd76a);
   z-index: 2;
 }
 
@@ -1820,10 +1820,10 @@ html[dir="rtl"] .ace-hub-card-face {
   bottom: 1.4rem;
   height: 2.4rem;
   border-radius: 50%;
-  border: 1px solid rgba(255, 215, 0, 0.4);
+  border: 1px solid rgba(212, 175, 55, 0.4);
   box-shadow:
-    0 0 34px rgba(255, 215, 0, 0.35),
-    inset 0 0 16px rgba(255, 215, 0, 0.15);
+    0 0 34px rgba(212, 175, 55, 0.35),
+    inset 0 0 16px rgba(212, 175, 55, 0.15);
 }
 
 .ace-orbit-meta {
@@ -1841,13 +1841,13 @@ html[dir="rtl"] .ace-hub-card-face {
   gap: 0.4rem;
   font-size: 0.62rem;
   letter-spacing: 0.16em;
-  color: #ffd700;
+  color: #ffd76a;
 }
 
 .ace-orbit-mouse {
   width: 0.85rem;
   height: 1.15rem;
-  border: 1px solid #ffd700;
+  border: 1px solid #ffd76a;
   border-radius: 0.7rem;
 }
 
@@ -1924,8 +1924,8 @@ html[dir="rtl"] .ace-hub-card-face {
   height: 0.7rem;
   flex: 0 0 0.7rem;
   border-radius: 999px;
-  background: #ffd700;
-  box-shadow: 0 0 10px rgba(255, 215, 0, 0.85);
+  background: #ffd76a;
+  box-shadow: 0 0 10px rgba(212, 175, 55, 0.85);
 }
 
 .ace-client-badge {
@@ -1933,10 +1933,10 @@ html[dir="rtl"] .ace-hub-card-face {
   align-items: center;
   border: 1px solid #fff6c2;
   border-radius: 999px;
-  background: linear-gradient(180deg, #ffe56a 0%, #ffd700 46%, #c9a227 100%);
+  background: linear-gradient(180deg, #ffe56a 0%, #ffd76a 46%, #c9a227 100%);
   box-shadow:
-    0 0 0 1px rgba(255, 215, 0, 0.55),
-    0 0 22px rgba(255, 215, 0, 0.8);
+    0 0 0 1px rgba(212, 175, 55, 0.55),
+    0 0 22px rgba(212, 175, 55, 0.8);
   color: #020203;
   font-size: 0.72rem;
   font-weight: 800;
@@ -1945,22 +1945,22 @@ html[dir="rtl"] .ace-hub-card-face {
 }
 
 .ace-shield {
-  border: 1px solid rgba(255, 215, 0, 0.32);
+  border: 1px solid rgba(212, 175, 55, 0.32);
   background: linear-gradient(180deg, #121318, #020203);
   padding: 1.15rem 1.2rem 1.2rem;
 }
 
 .ace-shield.ace-ops-card {
-  border: 1px solid #ffd700;
+  border: 1px solid #ffd76a;
   background: #040406;
 }
 
 .ace-vault-banner {
   display: inline-flex;
   max-width: 100%;
-  border: 1px solid #ffd700;
+  border: 1px solid #ffd76a;
   background: #040406;
-  color: #ffd700;
+  color: #ffd76a;
   font-size: 0.68rem;
   font-weight: 800;
   letter-spacing: 0.12em;
@@ -1976,7 +1976,7 @@ html[dir="rtl"] .ace-hub-card-face {
   height: 9rem;
   margin: -4.5rem 0 0 -4.5rem;
   border-radius: 999px;
-  background: radial-gradient(circle, rgba(255, 215, 0, 0.85), rgba(255, 215, 0, 0) 68%);
+  background: radial-gradient(circle, rgba(212, 175, 55, 0.85), rgba(212, 175, 55, 0) 68%);
   filter: blur(18px);
   opacity: 0.4;
   animation: ace-halo-pulse 2.8s ease-in-out infinite;
@@ -1990,10 +1990,10 @@ html[dir="rtl"] .ace-hub-card-face {
 }
 
 .ace-clock-digits {
-  color: #ffd700;
+  color: #ffd76a;
   font-size: 1.05rem;
   letter-spacing: 0.16em;
-  text-shadow: 0 0 12px rgba(255, 215, 0, 0.75);
+  text-shadow: 0 0 12px rgba(212, 175, 55, 0.75);
   animation: ace-clock-tick 0.45s ease-out;
 }
 
@@ -2002,10 +2002,10 @@ html[dir="rtl"] .ace-hub-card-face {
     text-shadow: 0 0 0 transparent;
   }
   45% {
-    text-shadow: 0 0 18px #ffd700;
+    text-shadow: 0 0 18px #ffd76a;
   }
   100% {
-    text-shadow: 0 0 12px rgba(255, 215, 0, 0.75);
+    text-shadow: 0 0 12px rgba(212, 175, 55, 0.75);
   }
 }
 
@@ -2040,14 +2040,14 @@ html[dir="rtl"] .ace-hub-card-face {
 }
 
 .ace-ladder-row {
-  border: 1px solid rgba(255, 215, 0, 0.16);
+  border: 1px solid rgba(212, 175, 55, 0.16);
   margin-top: 0.35rem;
   background: #020203;
 }
 
 .ace-ladder-gold {
-  border-color: #ffd700;
-  box-shadow: 0 0 18px rgba(255, 215, 0, 0.45);
+  border-color: #ffd76a;
+  box-shadow: 0 0 18px rgba(212, 175, 55, 0.45);
 }
 
 .ace-ladder-place {
@@ -2088,8 +2088,8 @@ html[dir="rtl"] .ace-hub-card-face {
 }
 
 .ace-gauge-gold {
-  background: #ffd700;
-  box-shadow: 0 0 8px rgba(255, 215, 0, 0.85);
+  background: #ffd76a;
+  box-shadow: 0 0 8px rgba(212, 175, 55, 0.85);
 }
 
 .ace-gauge-green {
@@ -2098,12 +2098,12 @@ html[dir="rtl"] .ace-hub-card-face {
 }
 
 .ace-ladder-rp {
-  color: #ffd700;
+  color: #ffd76a;
 }
 
 .ace-cal-track {
   margin-top: 1.15rem;
-  border-top: 1px solid rgba(255, 215, 0, 0.2);
+  border-top: 1px solid rgba(212, 175, 55, 0.2);
   padding-top: 0.95rem;
 }
 
@@ -2131,20 +2131,20 @@ html[dir="rtl"] .ace-hub-card-face {
 
 .ace-cal-node {
   aspect-ratio: 1;
-  border: 1px solid rgba(255, 215, 0, 0.55);
+  border: 1px solid rgba(212, 175, 55, 0.55);
   border-radius: 999px;
   background: #020203;
 }
 
 .ace-cal-node-on {
-  background: radial-gradient(circle at 35% 30%, #fff6c2, #ffd700 55%, #8a6a10);
-  box-shadow: 0 0 10px rgba(255, 215, 0, 0.7);
+  background: radial-gradient(circle at 35% 30%, #fff6c2, #ffd76a 55%, #8a6a10);
+  box-shadow: 0 0 10px rgba(212, 175, 55, 0.7);
 }
 
 .ace-shield-ai,
 .ace-shield-line {
   margin-top: 0.75rem;
-  border: 1px solid #ffd700;
+  border: 1px solid #ffd76a;
   background: #020203;
   padding: 0.55rem 0.7rem;
   font-size: 0.72rem;
@@ -2156,7 +2156,7 @@ html[dir="rtl"] .ace-hub-card-face {
 .ace-server-hub,
 .ace-tourney-line,
 .ace-hwid {
-  border: 1px solid rgba(255, 215, 0, 0.32);
+  border: 1px solid rgba(212, 175, 55, 0.32);
   background: linear-gradient(180deg, #121318, #020203);
   padding: 1.15rem 1.2rem 1.2rem;
 }
@@ -2181,7 +2181,7 @@ html[dir="rtl"] .ace-hub-card-face {
   min-height: 4.4rem;
   align-items: center;
   gap: 0.7rem;
-  border: 1px solid rgba(255, 215, 0, 0.45);
+  border: 1px solid rgba(212, 175, 55, 0.45);
   background: rgba(8, 9, 13, 0.72);
   padding: 0.7rem 0.8rem;
   text-align: left;
@@ -2210,8 +2210,8 @@ html[dir="rtl"] .ace-hub-card-face {
     left: 8%;
     right: 8%;
     height: 2px;
-    background: linear-gradient(90deg, transparent, #ffd700 12%, #fff6c2 50%, #ffd700 88%, transparent);
-    box-shadow: 0 0 12px #ffd700;
+    background: linear-gradient(90deg, transparent, #ffd76a 12%, #fff6c2 50%, #ffd76a 88%, transparent);
+    box-shadow: 0 0 12px #ffd76a;
     animation: ace-laser-run 2.8s linear infinite;
     pointer-events: none;
   }
@@ -2231,14 +2231,14 @@ html[dir="rtl"] .ace-hub-card-face {
 .ace-tourney-step {
   position: relative;
   z-index: 1;
-  border: 1px solid rgba(255, 215, 0, 0.28);
+  border: 1px solid rgba(212, 175, 55, 0.28);
   background: #020203;
   padding: 0.85rem 0.75rem 0.9rem;
 }
 
 .ace-tourney-active {
-  border-color: #ffd700;
-  box-shadow: 0 0 18px rgba(255, 215, 0, 0.5);
+  border-color: #ffd76a;
+  box-shadow: 0 0 18px rgba(212, 175, 55, 0.5);
   animation: ace-div-gold-pulse 1.7s ease-in-out infinite;
 }
 
@@ -2257,7 +2257,7 @@ html[dir="rtl"] .ace-hub-card-face {
   align-items: center;
   gap: 0.55rem;
   margin-top: 0.45rem;
-  border: 1px solid rgba(255, 215, 0, 0.45);
+  border: 1px solid rgba(212, 175, 55, 0.45);
   background: #020203;
   padding: 0.55rem 0.7rem;
   font-size: 0.72rem;
@@ -2267,7 +2267,7 @@ html[dir="rtl"] .ace-hub-card-face {
 }
 
 .ace-champ-loot {
-  border: 1px solid rgba(255, 215, 0, 0.32);
+  border: 1px solid rgba(212, 175, 55, 0.32);
   background: linear-gradient(180deg, #121318, #020203);
   padding: 1.25rem 1.2rem 1.4rem;
 }
@@ -2287,10 +2287,10 @@ html[dir="rtl"] .ace-hub-card-face {
 }
 
 .ace-champ-card {
-  border: 1px solid rgba(255, 215, 0, 0.45);
+  border: 1px solid rgba(212, 175, 55, 0.45);
   background: #020203;
   padding: 1rem;
-  box-shadow: 0 0 22px rgba(255, 215, 0, 0.28);
+  box-shadow: 0 0 22px rgba(212, 175, 55, 0.28);
   animation: ace-div-gold-pulse 2.4s ease-in-out infinite;
 }
 
@@ -2300,14 +2300,14 @@ html[dir="rtl"] .ace-hub-card-face {
   transform: perspective(520px) rotateX(18deg) rotateY(-12deg);
   background:
     linear-gradient(125deg, transparent 40%, rgba(255, 246, 194, 0.45) 48%, transparent 56%),
-    radial-gradient(circle at 70% 40%, rgba(255, 215, 0, 0.45), transparent 42%),
+    radial-gradient(circle at 70% 40%, rgba(212, 175, 55, 0.45), transparent 42%),
     linear-gradient(160deg, #3a3208, #020203);
   clip-path: polygon(8% 72%, 18% 22%, 55% 8%, 88% 28%, 94% 58%, 70% 70%, 42% 52%, 22% 78%);
-  filter: drop-shadow(0 16px 14px rgba(0, 0, 0, 0.8)) drop-shadow(0 0 16px rgba(255, 215, 0, 0.4));
+  filter: drop-shadow(0 16px 14px rgba(0, 0, 0, 0.8)) drop-shadow(0 0 16px rgba(212, 175, 55, 0.4));
 }
 
 .ace-match-found {
-  border: 1px solid #ffd700;
+  border: 1px solid #ffd76a;
   background: #040406;
   padding: 1.2rem;
 }
@@ -2332,9 +2332,9 @@ html[dir="rtl"] .ace-hub-card-face {
 }
 
 .ace-rank-metal {
-  background: #ffd700;
+  background: #ffd76a;
   color: #1a1404;
-  box-shadow: 0 0 10px rgba(255, 215, 0, 0.8);
+  box-shadow: 0 0 10px rgba(212, 175, 55, 0.8);
 }
 
 @keyframes ace-rank-pulse {
@@ -2351,7 +2351,7 @@ html[dir="rtl"] .ace-hub-card-face {
   min-height: 3.2rem;
   border: 1px solid #fff6c2;
   border-radius: 999px;
-  background: linear-gradient(180deg, #ffe56a 0%, #ffd700 46%, #c9a227 100%);
+  background: linear-gradient(180deg, #ffe56a 0%, #ffd76a 46%, #c9a227 100%);
   color: #020203;
   font-size: 0.78rem;
   font-weight: 800;
@@ -2363,10 +2363,10 @@ html[dir="rtl"] .ace-hub-card-face {
 @keyframes ace-find-scan {
   0%,
   100% {
-    box-shadow: 0 0 10px rgba(255, 215, 0, 0.35);
+    box-shadow: 0 0 10px rgba(212, 175, 55, 0.35);
   }
   50% {
-    box-shadow: 0 0 28px rgba(255, 215, 0, 0.9);
+    box-shadow: 0 0 28px rgba(212, 175, 55, 0.9);
   }
 }
 
@@ -2375,7 +2375,7 @@ html[dir="rtl"] .ace-hub-card-face {
   flex-wrap: wrap;
   justify-content: space-between;
   gap: 0.75rem;
-  border-bottom: 1px solid rgba(255, 215, 0, 0.22);
+  border-bottom: 1px solid rgba(212, 175, 55, 0.22);
   padding-bottom: 0.85rem;
 }
 
@@ -2389,7 +2389,7 @@ html[dir="rtl"] .ace-hub-card-face {
   align-self: flex-end;
   font-size: 0.78rem;
   letter-spacing: 0.16em;
-  color: #ffd700;
+  color: #ffd76a;
 }
 
 .ace-match-grid {
@@ -2418,28 +2418,28 @@ html[dir="rtl"] .ace-hub-card-face {
   gap: 0.45rem;
   align-items: center;
   margin-top: 0.35rem;
-  border: 1px solid rgba(255, 215, 0, 0.22);
-  border-left: 2px solid #ffd700;
+  border: 1px solid rgba(212, 175, 55, 0.22);
+  border-left: 2px solid #ffd76a;
   padding: 0.45rem 0.55rem;
   font-size: 0.78rem;
   color: #f5f3ec;
-  box-shadow: 0 0 10px rgba(255, 215, 0, 0.12);
+  box-shadow: 0 0 10px rgba(212, 175, 55, 0.12);
 }
 
 .ace-match-center {
   display: grid;
   place-items: center;
   text-align: center;
-  border-left: 1px solid rgba(255, 215, 0, 0.35);
-  border-right: 1px solid rgba(255, 215, 0, 0.35);
+  border-left: 1px solid rgba(212, 175, 55, 0.35);
+  border-right: 1px solid rgba(212, 175, 55, 0.35);
   padding: 0.6rem;
 }
 
 .ace-vs {
   font-size: 1.6rem;
   font-weight: 700;
-  color: #ffd700;
-  text-shadow: 0 0 16px #ffd700;
+  color: #ffd76a;
+  text-shadow: 0 0 16px #ffd76a;
 }
 
 .ace-kickoff {
@@ -2450,7 +2450,7 @@ html[dir="rtl"] .ace-hub-card-face {
 }
 
 .ace-kickoff span {
-  color: #ffd700;
+  color: #ffd76a;
   font-weight: 700;
 }
 
@@ -2468,7 +2468,7 @@ html[dir="rtl"] .ace-hub-card-face {
 
 .ace-match-chat,
 .ace-match-id {
-  border: 1px solid rgba(255, 215, 0, 0.22);
+  border: 1px solid rgba(212, 175, 55, 0.22);
   padding: 0.85rem;
 }
 
@@ -2480,12 +2480,12 @@ html[dir="rtl"] .ace-hub-card-face {
 
 .ace-match-chat strong {
   margin-right: 0.35rem;
-  color: #ffd700;
+  color: #ffd76a;
 }
 
 .ace-chat-field {
   margin-top: 0.7rem;
-  border: 1px solid rgba(255, 215, 0, 0.28);
+  border: 1px solid rgba(212, 175, 55, 0.28);
   padding: 0.45rem 0.6rem;
   font-size: 0.75rem;
   color: #a9abb3;
@@ -2499,7 +2499,7 @@ html[dir="rtl"] .ace-hub-card-face {
 
 .ace-play-page {
   background:
-    radial-gradient(ellipse 70% 40% at 50% 0%, rgba(255, 215, 0, 0.07), transparent 58%),
+    radial-gradient(ellipse 70% 40% at 50% 0%, rgba(212, 175, 55, 0.07), transparent 58%),
     transparent;
 }
 
@@ -2513,7 +2513,7 @@ html[dir="rtl"] .ace-hub-card-face {
     linear-gradient(180deg, rgba(16, 14, 12, 0.97), rgba(6, 6, 8, 0.98));
   padding: 1.25rem 1.3rem 1.2rem;
   box-shadow:
-    inset 0 1px 0 rgba(255, 215, 0, 0.22),
+    inset 0 1px 0 rgba(212, 175, 55, 0.22),
     0 28px 70px rgba(0, 0, 0, 0.48);
 }
 
@@ -2534,7 +2534,7 @@ html[dir="rtl"] .ace-hub-card-face {
   gap: 1rem;
   margin-top: 0.95rem;
   padding-bottom: 1.05rem;
-  border-bottom: 1px solid rgba(255, 215, 0, 0.14);
+  border-bottom: 1px solid rgba(212, 175, 55, 0.14);
 }
 
 @media (min-width: 1100px) {
@@ -2562,8 +2562,8 @@ html[dir="rtl"] .ace-hub-card-face {
   width: 1.55rem;
   height: 1.55rem;
   flex-shrink: 0;
-  fill: #ffd700;
-  filter: drop-shadow(0 0 8px #ffd700);
+  fill: #ffd76a;
+  filter: drop-shadow(0 0 8px #ffd76a);
 }
 
 .ace-play-maps {
@@ -2580,7 +2580,7 @@ html[dir="rtl"] .ace-hub-card-face {
   flex-direction: column;
   align-items: center;
   gap: 0.32rem;
-  border: 1px solid rgba(255, 215, 0, 0.16);
+  border: 1px solid rgba(212, 175, 55, 0.16);
   border-radius: 0.55rem;
   background: #070708;
   padding: 0.28rem 0.28rem 0.38rem;
@@ -2595,14 +2595,14 @@ html[dir="rtl"] .ace-hub-card-face {
 .ace-play-maps button:hover,
 .ace-play-maps button:focus-visible {
   opacity: 1;
-  border-color: rgba(255, 215, 0, 0.45);
+  border-color: rgba(212, 175, 55, 0.45);
 }
 
 .ace-play-maps button.is-active {
-  border-color: #ffd700;
-  color: #ffd700;
+  border-color: #ffd76a;
+  color: #ffd76a;
   opacity: 1;
-  box-shadow: 0 0 0 1px rgba(255, 215, 0, 0.28), 0 10px 22px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 0 1px rgba(212, 175, 55, 0.28), 0 10px 22px rgba(0, 0, 0, 0.4);
 }
 
 .ace-play-map-plate {
@@ -2624,7 +2624,7 @@ html[dir="rtl"] .ace-hub-card-face {
 .ace-play-settings {
   display: grid;
   gap: 0.55rem;
-  border: 1px solid rgba(255, 215, 0, 0.14);
+  border: 1px solid rgba(212, 175, 55, 0.14);
   border-radius: 0.9rem;
   background: rgba(2, 2, 3, 0.45);
   padding: 0.7rem 0.85rem;
@@ -2632,7 +2632,7 @@ html[dir="rtl"] .ace-hub-card-face {
 }
 
 .ace-play-settings > div + div {
-  border-top: 1px solid rgba(255, 215, 0, 0.1);
+  border-top: 1px solid rgba(212, 175, 55, 0.1);
   padding-top: 0.45rem;
 }
 
@@ -2682,7 +2682,7 @@ html[dir="rtl"] .ace-hub-card-face {
 .ace-play-team {
   position: relative;
   overflow: hidden;
-  border: 1px solid rgba(255, 215, 0, 0.14);
+  border: 1px solid rgba(212, 175, 55, 0.14);
   border-radius: 1rem;
   background: rgba(4, 4, 6, 0.55);
   padding: 0.9rem 0.75rem 0.7rem;
@@ -2708,7 +2708,7 @@ html[dir="rtl"] .ace-hub-card-face {
   padding-inline: 0.35rem;
   font-size: 0.72rem;
   letter-spacing: 0.16em;
-  color: #ffd700;
+  color: #ffd76a;
 }
 
 .ace-play-team-note {
@@ -2731,7 +2731,7 @@ html[dir="rtl"] .ace-hub-card-face {
 }
 
 .ace-play-slot:hover {
-  background: rgba(255, 215, 0, 0.06);
+  background: rgba(212, 175, 55, 0.06);
 }
 
 .ace-play-avatar {
@@ -2739,14 +2739,14 @@ html[dir="rtl"] .ace-hub-card-face {
   height: 2.7rem;
   width: 2.7rem;
   place-items: center;
-  border: 1px solid rgba(255, 215, 0, 0.55);
+  border: 1px solid rgba(212, 175, 55, 0.55);
   border-radius: 999px;
   background:
-    radial-gradient(circle at 35% 28%, rgba(255, 215, 0, 0.28), transparent 46%),
+    radial-gradient(circle at 35% 28%, rgba(212, 175, 55, 0.28), transparent 46%),
     linear-gradient(160deg, #2c2618, #0c0c0e);
   font-size: 0.95rem;
   font-weight: 700;
-  color: #ffd700;
+  color: #ffd76a;
   box-shadow: inset 0 0 0 3px rgba(0, 0, 0, 0.4);
 }
 
@@ -2759,7 +2759,7 @@ html[dir="rtl"] .ace-hub-card-face {
 }
 
 .ace-play-avatar[data-skin="2"] {
-  border-color: #ffd700;
+  border-color: #ffd76a;
   color: #ffe9a0;
 }
 
@@ -2790,14 +2790,14 @@ html[dir="rtl"] .ace-hub-card-face {
 }
 
 .ace-play-cap {
-  border: 1px solid rgba(255, 215, 0, 0.55);
+  border: 1px solid rgba(212, 175, 55, 0.55);
   border-radius: 999px;
-  background: rgba(255, 215, 0, 0.1);
+  background: rgba(212, 175, 55, 0.1);
   padding: 0.08rem 0.4rem;
   font-size: 0.48rem;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: #ffd700;
+  color: #ffd76a;
 }
 
 .ace-play-slot-rank {
@@ -2851,16 +2851,16 @@ html[dir="rtl"] .ace-hub-card-face {
   place-items: center;
   width: 3.4rem;
   height: 3.4rem;
-  border: 1px solid rgba(255, 215, 0, 0.7);
+  border: 1px solid rgba(212, 175, 55, 0.7);
   border-radius: 999px;
   background:
-    radial-gradient(circle at 50% 40%, rgba(255, 215, 0, 0.16), transparent 62%),
+    radial-gradient(circle at 50% 40%, rgba(212, 175, 55, 0.16), transparent 62%),
     #070708;
   font-size: 0.95rem;
   font-weight: 700;
   letter-spacing: 0.12em;
-  color: #ffd700;
-  box-shadow: 0 0 0 6px rgba(255, 215, 0, 0.06), 0 0 28px rgba(255, 215, 0, 0.28);
+  color: #ffd76a;
+  box-shadow: 0 0 0 6px rgba(212, 175, 55, 0.06), 0 0 28px rgba(212, 175, 55, 0.28);
 }
 
 .ace-play-desk {
@@ -2877,7 +2877,7 @@ html[dir="rtl"] .ace-hub-card-face {
 }
 
 .ace-play-panel {
-  border: 1px solid rgba(255, 215, 0, 0.14);
+  border: 1px solid rgba(212, 175, 55, 0.14);
   border-radius: 1rem;
   background: rgba(4, 4, 6, 0.62);
   padding: 0.9rem 0.95rem;
@@ -2886,7 +2886,7 @@ html[dir="rtl"] .ace-hub-card-face {
 .ace-play-panel h3 {
   font-size: 0.7rem;
   letter-spacing: 0.16em;
-  color: #ffd700;
+  color: #ffd76a;
 }
 
 .ace-play-panel-kicker {
@@ -2909,7 +2909,7 @@ html[dir="rtl"] .ace-hub-card-face {
 
 .ace-play-chat li {
   margin-top: 0.5rem;
-  border-inline-start: 2px solid rgba(255, 215, 0, 0.4);
+  border-inline-start: 2px solid rgba(212, 175, 55, 0.4);
   padding-inline-start: 0.55rem;
   font-size: 0.78rem;
   line-height: 1.4;
@@ -2917,7 +2917,7 @@ html[dir="rtl"] .ace-hub-card-face {
 }
 
 .ace-play-chat strong {
-  color: #ffd700;
+  color: #ffd76a;
 }
 
 .ace-play-chat-bar {
@@ -2929,7 +2929,7 @@ html[dir="rtl"] .ace-hub-card-face {
 .ace-play-chat-bar input {
   flex: 1;
   min-height: 2.5rem;
-  border: 1px solid rgba(255, 215, 0, 0.22);
+  border: 1px solid rgba(212, 175, 55, 0.22);
   border-radius: 999px;
   background: #070708;
   padding: 0 0.9rem;
@@ -2940,7 +2940,7 @@ html[dir="rtl"] .ace-hub-card-face {
   display: grid;
   width: 2.5rem;
   place-items: center;
-  border: 1px solid rgba(255, 215, 0, 0.55);
+  border: 1px solid rgba(212, 175, 55, 0.55);
   border-radius: 999px;
   background: #16130c;
 }
@@ -2949,7 +2949,7 @@ html[dir="rtl"] .ace-hub-card-face {
   width: 1.05rem;
   height: 1.05rem;
   fill: none;
-  stroke: #ffd700;
+  stroke: #ffd76a;
   stroke-width: 1.8;
 }
 
@@ -3002,7 +3002,7 @@ html[dir="rtl"] .ace-hub-card-face {
   letter-spacing: 0.04em;
   font-variant-numeric: tabular-nums;
   color: #fff6d0;
-  text-shadow: 0 0 22px rgba(255, 215, 0, 0.55), 0 10px 24px rgba(0, 0, 0, 0.55);
+  text-shadow: 0 0 22px rgba(212, 175, 55, 0.55), 0 10px 24px rgba(0, 0, 0, 0.55);
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -3042,7 +3042,7 @@ html[dir="rtl"] .ace-hub-card-face {
 }
 
 .ace-play-tiles li {
-  border: 1px solid rgba(255, 215, 0, 0.18);
+  border: 1px solid rgba(212, 175, 55, 0.18);
   border-radius: 0.65rem;
   background: rgba(2, 2, 3, 0.72);
   padding: 0.5rem 0.4rem;
@@ -3093,7 +3093,7 @@ html[dir="rtl"] .ace-hub-card-face {
   justify-content: space-between;
   gap: 0.85rem;
   margin-top: 1.15rem;
-  border-top: 1px solid rgba(255, 215, 0, 0.12);
+  border-top: 1px solid rgba(212, 175, 55, 0.12);
   padding-top: 1rem;
 }
 
@@ -3101,7 +3101,7 @@ html[dir="rtl"] .ace-hub-card-face {
   display: inline-flex;
   align-items: center;
   gap: 0.45rem;
-  border: 1px solid rgba(255, 215, 0, 0.2);
+  border: 1px solid rgba(212, 175, 55, 0.2);
   border-radius: 999px;
   background: rgba(2, 2, 3, 0.45);
   padding: 0.4rem 0.8rem;
@@ -3119,11 +3119,11 @@ html[dir="rtl"] .ace-hub-card-face {
 }
 
 .ace-lang-bar {
-  border-top: 1px solid #ffd700;
+  border-top: 1px solid #ffd76a;
   background: rgba(5, 5, 6, 0.94);
   backdrop-filter: blur(18px);
   -webkit-backdrop-filter: blur(18px);
-  box-shadow: 0 -1px 0 rgba(255, 215, 0, 0.35);
+  box-shadow: 0 -1px 0 rgba(212, 175, 55, 0.35);
 }
 
 .ace-lang-inner {
@@ -3138,7 +3138,7 @@ html[dir="rtl"] .ace-hub-card-face {
   font-size: 0.58rem;
   letter-spacing: 0.18em;
   text-transform: uppercase;
-  color: #ffd700;
+  color: #ffd76a;
 }
 
 .ace-lang-grid {
@@ -3164,9 +3164,9 @@ html[dir="rtl"] .ace-hub-card-face {
 .ace-lang-grid button:hover,
 .ace-lang-grid button:focus-visible,
 .ace-lang-grid button.is-active {
-  color: #ffd700;
-  text-shadow: 0 0 10px #ffd700, 0 0 18px rgba(255, 215, 0, 0.7);
-  border-color: rgba(255, 215, 0, 0.35);
+  color: #ffd76a;
+  text-shadow: 0 0 10px #ffd76a, 0 0 18px rgba(212, 175, 55, 0.7);
+  border-color: rgba(212, 175, 55, 0.35);
 }
 
 .ace-lang-flag {
@@ -3204,10 +3204,10 @@ html[dir="rtl"] .ace-hub-card-face {
   flex-wrap: wrap;
   align-items: flex-end;
   gap: 1.25rem;
-  border: 1px solid rgba(255, 215, 0, 0.38);
+  border: 1px solid rgba(212, 175, 55, 0.38);
   border-radius: 1.25rem;
   background: color-mix(in srgb, #020203 82%, transparent);
-  box-shadow: 0 -16px 48px rgba(0, 0, 0, 0.55), 0 0 40px rgba(255, 215, 0, 0.12);
+  box-shadow: 0 -16px 48px rgba(0, 0, 0, 0.55), 0 0 40px rgba(212, 175, 55, 0.12);
   backdrop-filter: blur(22px);
   padding: 1.1rem 1.25rem;
 }
@@ -3217,7 +3217,7 @@ html[dir="rtl"] .ace-hub-card-face {
   align-items: flex-start;
   gap: 0.55rem;
   min-height: 2.75rem;
-  border: 1px solid rgba(255, 215, 0, 0.22);
+  border: 1px solid rgba(212, 175, 55, 0.22);
   border-radius: 0.75rem;
   background: rgba(8, 9, 13, 0.72);
   padding: 0.55rem 0.7rem;
@@ -3237,21 +3237,21 @@ html[dir="rtl"] .ace-hub-card-face {
 
 .ace-cookie-option input {
   margin-top: 0.15rem;
-  accent-color: #ffd700;
+  accent-color: #ffd76a;
 }
 
 .ace-cookie-accept {
   min-height: 2.75rem;
   border-radius: 999px;
   border: 1px solid #fff6c2;
-  background: linear-gradient(180deg, #ffe56a 0%, #ffd700 46%, #c9a227 100%);
+  background: linear-gradient(180deg, #ffe56a 0%, #ffd76a 46%, #c9a227 100%);
   color: #020203;
   font-size: 0.72rem;
   font-weight: 800;
   letter-spacing: 0.08em;
   box-shadow:
-    0 0 0 1px rgba(255, 215, 0, 0.65),
-    0 0 22px rgba(255, 215, 0, 0.85);
+    0 0 0 1px rgba(212, 175, 55, 0.65),
+    0 0 22px rgba(212, 175, 55, 0.85);
 }
 
 .ace-cookie-reject {
@@ -3266,8 +3266,8 @@ html[dir="rtl"] .ace-hub-card-face {
 }
 
 .ace-not-found-sub {
-  color: #ffd700;
-  text-shadow: 0 0 18px rgba(255, 215, 0, 0.55), 0 0 36px rgba(255, 215, 0, 0.28);
+  color: #ffd76a;
+  text-shadow: 0 0 18px rgba(212, 175, 55, 0.55), 0 0 36px rgba(212, 175, 55, 0.28);
 }
 
 .ace-plan-cta {
@@ -3277,14 +3277,14 @@ html[dir="rtl"] .ace-hub-card-face {
   align-items: center;
   justify-content: center;
   border-radius: 999px;
-  border: 1px solid #ffd700;
-  background: linear-gradient(180deg, #ffe56a 0%, #ffd700 42%, #c9a227 100%);
+  border: 1px solid #ffd76a;
+  background: linear-gradient(180deg, #ffe56a 0%, #ffd76a 42%, #c9a227 100%);
   color: #020203;
   font-size: 0.82rem;
   font-weight: 700;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  box-shadow: 0 0 16px rgba(255, 215, 0, 0.28);
+  box-shadow: 0 0 16px rgba(212, 175, 55, 0.28);
   transition: box-shadow 180ms ease, transform 180ms ease, filter 180ms ease;
 }
 
@@ -3294,7 +3294,7 @@ html[dir="rtl"] .ace-hub-card-face {
   filter: brightness(1.08);
   box-shadow:
     0 0 0 1px #fff6c2,
-    0 0 22px rgba(255, 215, 0, 0.85),
+    0 0 22px rgba(212, 175, 55, 0.85),
     0 10px 28px rgba(201, 162, 39, 0.45),
     inset 0 1px 0 rgba(255, 255, 255, 0.55);
 }
@@ -3315,9 +3315,9 @@ html[dir="rtl"] .ace-hub-card-face {
   width: min(32rem, 100%);
   overflow: hidden;
   border-radius: 1.35rem;
-  border: 1px solid rgba(255, 215, 0, 0.45);
+  border: 1px solid rgba(212, 175, 55, 0.45);
   background: color-mix(in srgb, #121318 78%, transparent);
-  box-shadow: 0 0 48px rgba(255, 215, 0, 0.18), 0 24px 60px rgba(0, 0, 0, 0.55);
+  box-shadow: 0 0 48px rgba(212, 175, 55, 0.18), 0 24px 60px rgba(0, 0, 0, 0.55);
   padding: 1.75rem 1.5rem 1.4rem;
 }
 
@@ -3331,8 +3331,8 @@ html[dir="rtl"] .ace-hub-card-face {
 .ace-prereg-token {
   aspect-ratio: 1;
   border-radius: 999px;
-  background: radial-gradient(circle at 35% 30%, #fff6c2, #ffd700 45%, #8a6914);
-  box-shadow: 0 0 10px rgba(255, 215, 0, 0.65);
+  background: radial-gradient(circle at 35% 30%, #fff6c2, #ffd76a 45%, #8a6914);
+  box-shadow: 0 0 10px rgba(212, 175, 55, 0.65);
   animation: ace-prereg-pulse 1.8s ease-in-out infinite;
 }
 
@@ -3352,8 +3352,8 @@ html[dir="rtl"] .ace-hub-card-face {
   font-size: 1.15rem;
   font-weight: 700;
   letter-spacing: 0.12em;
-  color: #ffd700;
-  text-shadow: 0 0 18px rgba(255, 215, 0, 0.45);
+  color: #ffd76a;
+  text-shadow: 0 0 18px rgba(212, 175, 55, 0.45);
 }
 
 .ace-prereg-body {
@@ -3385,7 +3385,7 @@ html[dir="rtl"] .ace-hub-card-face {
   z-index: 1;
   width: min(72rem, 100%);
   overflow: visible;
-  border: 1px solid rgba(255, 215, 0, 0.45);
+  border: 1px solid rgba(212, 175, 55, 0.45);
   border-radius: 1.4rem;
   background:
     linear-gradient(160deg, rgba(255, 246, 194, 0.12), rgba(18, 18, 18, 0.72) 32%, rgba(2, 2, 3, 0.88)),
@@ -3408,9 +3408,9 @@ html[dir="rtl"] .ace-hub-card-face {
   height: 8.6rem;
   place-items: center;
   background:
-    linear-gradient(180deg, rgba(255, 215, 0, 0.35), rgba(18, 18, 18, 0.2) 42%, #121212);
+    linear-gradient(180deg, rgba(212, 175, 55, 0.35), rgba(18, 18, 18, 0.2) 42%, #121212);
   clip-path: polygon(50% 0, 100% 18%, 86% 78%, 50% 100%, 14% 78%, 0 18%);
-  color: #ffd700;
+  color: #ffd76a;
   font-size: 1.35rem;
   font-weight: 700;
   letter-spacing: 0.12em;
@@ -3432,7 +3432,7 @@ html[dir="rtl"] .ace-hub-card-face {
 }
 
 .ace-team-tag {
-  color: #ffd700;
+  color: #ffd76a;
 }
 
 .ace-team-grid {
@@ -3459,7 +3459,7 @@ html[dir="rtl"] .ace-hub-card-face {
 
 .ace-team-grid dd {
   margin-top: 0.25rem;
-  color: #ffd700;
+  color: #ffd76a;
   font-size: 1.35rem;
   font-weight: 700;
 }
@@ -3506,7 +3506,7 @@ html[dir="rtl"] .ace-hub-card-face {
 
 .ace-roster-card:hover,
 .ace-roster-card:focus-within {
-  border-color: #ffd700;
+  border-color: #ffd76a;
 }
 
 .ace-roster-avatar {
@@ -3515,11 +3515,11 @@ html[dir="rtl"] .ace-hub-card-face {
   height: 3.1rem;
   place-items: center;
   border-radius: 999px;
-  border: 1px solid rgba(255, 215, 0, 0.7);
+  border: 1px solid rgba(212, 175, 55, 0.7);
   background:
     radial-gradient(circle at 35% 30%, rgba(255, 246, 194, 0.35), transparent 42%),
     #1a1b20;
-  color: #ffd700;
+  color: #ffd76a;
   font-weight: 700;
 }
 
@@ -3532,7 +3532,7 @@ html[dir="rtl"] .ace-hub-card-face {
 .ace-roster-level {
   border-radius: 999px;
   background: #2a2b31;
-  color: #ffd700;
+  color: #ffd76a;
   font-size: 0.68rem;
   letter-spacing: 0.12em;
   padding: 0.15rem 0.45rem;
@@ -3560,7 +3560,7 @@ html[dir="rtl"] .ace-hub-card-face {
 
 .ace-roster-open {
   margin-top: auto;
-  color: #ffd700;
+  color: #ffd76a;
   font-size: 0.68rem;
   font-weight: 700;
   letter-spacing: 0.12em;
@@ -3637,14 +3637,14 @@ html[dir="rtl"] .ace-hub-card-face {
   padding: 1.6rem 1.4rem 1.8rem;
   border-radius: 1.35rem;
   background:
-    radial-gradient(ellipse 80% 40% at 50% 0%, rgba(255, 215, 0, 0.12), transparent 58%),
+    radial-gradient(ellipse 80% 40% at 50% 0%, rgba(212, 175, 55, 0.12), transparent 58%),
     #020203;
   box-shadow:
     0 0 0 1px #d4af37,
     0 0 0 2px #020203,
-    0 0 0 3px #ffd700,
-    0 0 48px rgba(255, 215, 0, 0.22),
-    inset 0 0 80px rgba(255, 215, 0, 0.05);
+    0 0 0 3px #ffd76a,
+    0 0 48px rgba(212, 175, 55, 0.22),
+    inset 0 0 80px rgba(212, 175, 55, 0.05);
 }
 
 .ace-profile-shell::before,
@@ -3653,7 +3653,7 @@ html[dir="rtl"] .ace-hub-card-face {
   pointer-events: none;
   position: absolute;
   inset: 0.45rem;
-  border: 1px solid rgba(255, 215, 0, 0.28);
+  border: 1px solid rgba(212, 175, 55, 0.28);
   border-radius: 1.05rem;
 }
 
@@ -3698,8 +3698,8 @@ html[dir="rtl"] .ace-hub-card-face {
   overflow: hidden;
   border-radius: 0.85rem;
   background:
-    linear-gradient(110deg, rgba(255, 215, 0, 0.28), transparent 42%),
-    repeating-linear-gradient(90deg, rgba(255, 215, 0, 0.08) 0 12px, transparent 12px 48px),
+    linear-gradient(110deg, rgba(212, 175, 55, 0.28), transparent 42%),
+    repeating-linear-gradient(90deg, rgba(212, 175, 55, 0.08) 0 12px, transparent 12px 48px),
     linear-gradient(180deg, #1a1408, #020203);
   color: #d4af37;
   font-size: 0.72rem;
@@ -3722,12 +3722,12 @@ html[dir="rtl"] .ace-hub-card-face {
   height: 6.5rem;
   place-items: center;
   border-radius: 999px;
-  border: 2px solid #ffd700;
+  border: 2px solid #ffd76a;
   background:
     radial-gradient(circle at 32% 28%, rgba(255, 246, 194, 0.4), transparent 46%),
     #121212;
-  box-shadow: 0 0 28px rgba(255, 215, 0, 0.35);
-  color: #ffd700;
+  box-shadow: 0 0 28px rgba(212, 175, 55, 0.35);
+  color: #ffd76a;
   font-size: 2rem;
   font-weight: 700;
 }
@@ -3754,9 +3754,9 @@ html[dir="rtl"] .ace-hub-card-face {
 }
 
 .ace-profile-level {
-  border: 1px solid #ffd700;
-  background: rgba(255, 215, 0, 0.12);
-  color: #ffd700;
+  border: 1px solid #ffd76a;
+  background: rgba(212, 175, 55, 0.12);
+  color: #ffd76a;
 }
 
 .ace-profile-stats,
@@ -3787,11 +3787,11 @@ html[dir="rtl"] .ace-hub-card-face {
 
 .ace-profile-stats dd {
   margin-top: 0.4rem;
-  color: #ffd700;
+  color: #ffd76a;
   font-size: clamp(1.6rem, 2.4vw, 2.2rem);
   font-weight: 800;
   letter-spacing: 0.04em;
-  text-shadow: 0 0 18px rgba(255, 215, 0, 0.35);
+  text-shadow: 0 0 18px rgba(212, 175, 55, 0.35);
 }
 
 .ace-profile-gear strong {
@@ -3806,7 +3806,7 @@ html[dir="rtl"] .ace-hub-card-face {
 .ace-profile-back {
   display: inline-flex;
   margin-top: 1.2rem;
-  color: #ffd700;
+  color: #ffd76a;
   font-size: 0.82rem;
   font-weight: 700;
   letter-spacing: 0.12em;
@@ -3823,11 +3823,11 @@ html[dir="rtl"] .ace-hub-card-face {
 
 .ace-dossier-glass {
   background:
-    linear-gradient(165deg, rgba(255, 215, 0, 0.08), rgba(11, 11, 12, 0.88) 40%, #0b0b0c),
+    linear-gradient(165deg, rgba(212, 175, 55, 0.08), rgba(11, 11, 12, 0.88) 40%, #0b0b0c),
     #0b0b0c;
   box-shadow:
     0 0 0 1px rgba(212, 175, 55, 0.28),
-    0 0 28px rgba(255, 215, 0, 0.16),
+    0 0 28px rgba(212, 175, 55, 0.16),
     inset 0 1px 0 rgba(255, 248, 222, 0.1);
 }
 
@@ -3837,7 +3837,7 @@ html[dir="rtl"] .ace-hub-card-face {
   overflow: hidden;
   min-height: 28rem;
   border-radius: 1rem;
-  border: 1px solid rgba(255, 215, 0, 0.28);
+  border: 1px solid rgba(212, 175, 55, 0.28);
   background: #0b0b0c;
 }
 
@@ -3864,7 +3864,7 @@ html[dir="rtl"] .ace-hub-card-face {
     rgba(11, 11, 12, 0.55);
   backdrop-filter: blur(16px) saturate(1.1);
   -webkit-backdrop-filter: blur(16px) saturate(1.1);
-  box-shadow: inset 0 0 0 1px rgba(255, 215, 0, 0.22);
+  box-shadow: inset 0 0 0 1px rgba(212, 175, 55, 0.22);
 }
 
 .ace-telemetry-lock-kicker {
@@ -3891,7 +3891,7 @@ html[dir="rtl"] .ace-hub-card-face {
   align-items: center;
   justify-content: center;
   border-radius: 999px;
-  background: linear-gradient(180deg, #ffd700, #d4af37);
+  background: linear-gradient(180deg, #ffd76a, #d4af37);
   padding: 0 1.25rem;
   color: #020203 !important;
   font-size: 0.78rem;
@@ -3915,7 +3915,7 @@ html[dir="rtl"] .ace-hub-card-face {
 .ace-dossier-chart-wrap {
   margin-top: 1rem;
   overflow: hidden;
-  border: 1px solid rgba(255, 215, 0, 0.28);
+  border: 1px solid rgba(212, 175, 55, 0.28);
   border-radius: 0.85rem;
   background: #0b0b0c;
   padding: 0.7rem 0.7rem 0.4rem;
@@ -3931,7 +3931,7 @@ html[dir="rtl"] .ace-hub-card-face {
 
 .ace-dossier-chart-readout {
   margin-top: 0.35rem;
-  color: #ffd700;
+  color: #ffd76a;
   font-size: 0.72rem;
   letter-spacing: 0.06em;
 }
@@ -3941,7 +3941,7 @@ html[dir="rtl"] .ace-hub-card-face {
 }
 
 .ace-dossier-knife {
-  border-color: rgba(255, 215, 0, 0.55);
+  border-color: rgba(212, 175, 55, 0.55);
 }
 
 .ace-dossier-weapon {
@@ -3950,7 +3950,7 @@ html[dir="rtl"] .ace-hub-card-face {
   gap: 1rem;
   align-items: center;
   margin-top: 1rem;
-  border: 1px solid rgba(255, 215, 0, 0.35);
+  border: 1px solid rgba(212, 175, 55, 0.35);
   border-radius: 0.95rem;
   background: #0b0b0c;
   padding: 1rem 1.05rem;
@@ -3965,7 +3965,7 @@ html[dir="rtl"] .ace-hub-card-face {
 }
 
 .ace-dossier-weapon-name {
-  color: #ffd700;
+  color: #ffd76a;
   font-size: 1.35rem;
   font-weight: 800;
 }
@@ -4004,7 +4004,7 @@ html[dir="rtl"] .ace-hub-card-face {
 
 .ace-dossier-network {
   min-width: 0;
-  border: 1px solid rgba(255, 215, 0, 0.32);
+  border: 1px solid rgba(212, 175, 55, 0.32);
   border-radius: 0.9rem;
   background: #0b0b0c;
   padding: 0.9rem;
@@ -4012,7 +4012,7 @@ html[dir="rtl"] .ace-hub-card-face {
 
 .ace-dossier-network-label {
   display: block;
-  color: #ffd700;
+  color: #ffd76a;
   font-size: 0.68rem;
   font-weight: 800;
   letter-spacing: 0.1em;
@@ -4022,7 +4022,7 @@ html[dir="rtl"] .ace-hub-card-face {
   width: 100%;
   min-height: 2.5rem;
   margin-top: 0.5rem;
-  border: 1px solid rgba(255, 215, 0, 0.35);
+  border: 1px solid rgba(212, 175, 55, 0.35);
   background: #020203;
   color: #f5f3ec;
   padding: 0 0.7rem;
@@ -4031,7 +4031,7 @@ html[dir="rtl"] .ace-hub-card-face {
 .ace-dossier-network-link {
   display: block;
   margin-top: 0.7rem;
-  border: 1px solid #ffd700;
+  border: 1px solid #ffd76a;
   background: linear-gradient(180deg, #fff1a8 0%, #d4af37 58%, #8a6a14 100%);
   color: #12100a;
   font-size: 0.7rem;
@@ -4096,7 +4096,7 @@ html[dir="rtl"] .ace-hub-card-face {
   width: 100%;
   flex-direction: column;
   gap: 0.85rem;
-  border: 1px solid rgba(255, 215, 0, 0.42);
+  border: 1px solid rgba(212, 175, 55, 0.42);
   border-radius: 1.15rem;
   background:
     linear-gradient(165deg, rgba(255, 246, 194, 0.08), rgba(8, 8, 10, 0.72) 38%, rgba(2, 2, 3, 0.88)),
@@ -4113,10 +4113,10 @@ html[dir="rtl"] .ace-hub-card-face {
 
 .ace-how-card:hover,
 .ace-how-card:focus-within {
-  border-color: #ffd700;
+  border-color: #ffd76a;
   box-shadow:
-    0 0 0 1px #ffd700,
-    0 0 28px rgba(255, 215, 0, 0.38),
+    0 0 0 1px #ffd76a,
+    0 0 28px rgba(212, 175, 55, 0.38),
     0 18px 40px rgba(0, 0, 0, 0.45),
     inset 0 1px 0 rgba(255, 248, 222, 0.45);
   animation: ace-how-glow 2.8s ease-in-out infinite;
@@ -4125,11 +4125,11 @@ html[dir="rtl"] .ace-hub-card-face {
 .ace-how-chip {
   display: inline-flex;
   width: fit-content;
-  border: 1px solid rgba(255, 215, 0, 0.45);
+  border: 1px solid rgba(212, 175, 55, 0.45);
   border-radius: 0.55rem;
   background: #2a2b31;
-  box-shadow: 0 0 16px rgba(255, 215, 0, 0.22);
-  color: #ffd700;
+  box-shadow: 0 0 16px rgba(212, 175, 55, 0.22);
+  color: #ffd76a;
   font-size: 0.68rem;
   font-weight: 800;
   letter-spacing: 0.16em;
@@ -4162,17 +4162,17 @@ html[dir="rtl"] .ace-hub-card-face {
 .ace-how-connector-line {
   width: 1.35rem;
   height: 2px;
-  background: linear-gradient(90deg, #8f6418, #ffd700, #fff6c2);
-  box-shadow: 0 0 10px rgba(255, 215, 0, 0.7);
+  background: linear-gradient(90deg, #8f6418, #ffd76a, #fff6c2);
+  box-shadow: 0 0 10px rgba(212, 175, 55, 0.7);
   animation: ace-how-path 1.8s ease-in-out infinite;
 }
 
 .ace-how-chevron {
-  color: #ffd700;
+  color: #ffd76a;
   font-size: 1.55rem;
   font-weight: 300;
   line-height: 1;
-  text-shadow: 0 0 12px rgba(255, 215, 0, 0.75);
+  text-shadow: 0 0 12px rgba(212, 175, 55, 0.75);
   animation: ace-how-path 1.8s ease-in-out infinite;
 }
 
@@ -4184,7 +4184,7 @@ html[dir="rtl"] .ace-hub-card-face {
   align-items: center;
   margin-top: 1.15rem;
   overflow: visible;
-  border: 1px solid rgba(255, 215, 0, 0.28);
+  border: 1px solid rgba(212, 175, 55, 0.28);
   border-radius: 0.9rem;
   background: rgba(8, 8, 10, 0.72);
   padding: 0.85rem 1rem;
@@ -4218,14 +4218,14 @@ html[dir="rtl"] .ace-hub-card-face {
   0%,
   100% {
     box-shadow:
-      0 0 0 1px #ffd700,
-      0 0 22px rgba(255, 215, 0, 0.28),
+      0 0 0 1px #ffd76a,
+      0 0 22px rgba(212, 175, 55, 0.28),
       0 18px 40px rgba(0, 0, 0, 0.45);
   }
   50% {
     box-shadow:
       0 0 0 1px #fff6c2,
-      0 0 36px rgba(255, 215, 0, 0.55),
+      0 0 36px rgba(212, 175, 55, 0.55),
       0 18px 40px rgba(0, 0, 0, 0.45);
   }
 }
@@ -4270,7 +4270,7 @@ html[dir="rtl"] .ace-hub-card-face {
   .ace-how-connector-line {
     width: 2px;
     height: 0.85rem;
-    background: linear-gradient(180deg, #8f6418, #ffd700, #fff6c2);
+    background: linear-gradient(180deg, #8f6418, #ffd76a, #fff6c2);
   }
 
   .ace-how-chevron {
@@ -4290,14 +4290,14 @@ html[dir="rtl"] .ace-hub-card-face {
 
 .ace-hub-stage {
   overflow-x: hidden;
-  border-bottom: 1px solid rgba(255, 215, 0, 0.2);
+  border-bottom: 1px solid rgba(212, 175, 55, 0.2);
   background:
-    radial-gradient(ellipse 70% 50% at 12% 0%, rgba(255, 215, 0, 0.1), transparent 52%),
+    radial-gradient(ellipse 70% 50% at 12% 0%, rgba(212, 175, 55, 0.1), transparent 52%),
     #020203;
 }
 
 .ace-hub-kicker {
-  color: #ffd700;
+  color: #ffd76a;
   font-size: 0.68rem;
   font-weight: 700;
   letter-spacing: 0.22em;
@@ -4312,7 +4312,7 @@ html[dir="rtl"] .ace-hub-card-face {
 }
 
 .ace-hub-title {
-  background: linear-gradient(180deg, #fff8de 0%, #ffd700 42%, #d4af37 72%, #fff6c2 100%);
+  background: linear-gradient(180deg, #fff8de 0%, #ffd76a 42%, #d4af37 72%, #fff6c2 100%);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
@@ -4320,7 +4320,7 @@ html[dir="rtl"] .ace-hub-card-face {
   font-weight: 800;
   letter-spacing: 0;
   line-height: 1.28;
-  filter: drop-shadow(0 0 16px rgba(255, 215, 0, 0.55));
+  filter: drop-shadow(0 0 16px rgba(212, 175, 55, 0.55));
 }
 
 .ace-hub-badge {
@@ -4349,11 +4349,11 @@ html[dir="rtl"] .ace-hub-card-face {
 .ace-hub-lede {
   max-width: 58rem;
   margin-top: 0.85rem;
-  color: #ffd700;
+  color: #ffd76a;
   font-size: 1rem;
   font-weight: 500;
   line-height: 1.7;
-  text-shadow: 0 0 18px rgba(255, 215, 0, 0.28);
+  text-shadow: 0 0 18px rgba(212, 175, 55, 0.28);
 }
 
 .ace-hub-grid {
@@ -4383,10 +4383,10 @@ html[dir="rtl"] .ace-hub-card-face {
   z-index: 1;
   height: 100%;
   overflow: hidden;
-  border: 1px solid rgba(255, 215, 0, 0.42);
+  border: 1px solid rgba(212, 175, 55, 0.42);
   border-radius: 1.15rem;
   background:
-    linear-gradient(165deg, rgba(255, 215, 0, 0.08), rgba(11, 11, 12, 0.92) 38%, #0b0b0c),
+    linear-gradient(165deg, rgba(212, 175, 55, 0.08), rgba(11, 11, 12, 0.92) 38%, #0b0b0c),
     #0b0b0c;
   box-shadow:
     0 0 0 1px rgba(212, 175, 55, 0.28),
@@ -4399,12 +4399,12 @@ html[dir="rtl"] .ace-hub-card-face {
 
 .ace-hub-card:hover .ace-hub-card-face,
 .ace-hub-card:focus-within .ace-hub-card-face {
-  border-color: #ffd700;
+  border-color: #ffd76a;
   animation: ace-hub-glow 2.8s ease-in-out infinite;
 }
 
 .ace-hub-card-kicker {
-  color: #ffd700;
+  color: #ffd76a;
   font-size: 0.78rem;
   font-weight: 800;
   letter-spacing: 0.06em;
@@ -4412,7 +4412,7 @@ html[dir="rtl"] .ace-hub-card-face {
 
 .ace-hub-card-copy {
   margin-top: 0.7rem;
-  color: #ffd700;
+  color: #ffd76a;
   font-size: 0.94rem;
   line-height: 1.65;
 }
@@ -4430,11 +4430,11 @@ html[dir="rtl"] .ace-hub-card-face {
   max-width: 100%;
   align-items: center;
   gap: 0.4rem;
-  border: 1px solid rgba(255, 215, 0, 0.4);
+  border: 1px solid rgba(212, 175, 55, 0.4);
   border-radius: 999px;
   background: #0b0b0c;
-  box-shadow: 0 0 14px rgba(255, 215, 0, 0.22);
-  color: #ffd700;
+  box-shadow: 0 0 14px rgba(212, 175, 55, 0.22);
+  color: #ffd76a;
   font-size: 0.75rem;
   font-weight: 800;
   letter-spacing: 0.03em;
@@ -4449,7 +4449,7 @@ html[dir="rtl"] .ace-hub-card-face {
   max-height: 24px !important;
   flex: 0 0 24px;
   overflow: hidden;
-  filter: drop-shadow(0 0 6px #ffd700);
+  filter: drop-shadow(0 0 6px #ffd76a);
 }
 
 .ace-hub-note {
@@ -4475,13 +4475,13 @@ html[dir="rtl"] .ace-hub-card-face {
   0%,
   100% {
     box-shadow:
-      0 0 0 1px #ffd700,
-      0 0 22px rgba(255, 215, 0, 0.28);
+      0 0 0 1px #ffd76a,
+      0 0 22px rgba(212, 175, 55, 0.28);
   }
   50% {
     box-shadow:
       0 0 0 1px #fff6c2,
-      0 0 38px rgba(255, 215, 0, 0.55);
+      0 0 38px rgba(212, 175, 55, 0.55);
   }
 }
 
@@ -4520,14 +4520,14 @@ html[dir="rtl"] .ace-hub-card-face {
 
 .ace-market-title {
   margin-top: 0.55rem;
-  color: #ffd700;
+  color: #ffd76a;
   font-size: clamp(1.7rem, 4.4vw, 3.15rem);
   font-weight: 800;
   letter-spacing: 0.02em;
   line-height: 1.12;
   text-shadow:
     0 0 1px #fffef8,
-    0 0 18px rgba(255, 215, 0, 0.55),
+    0 0 18px rgba(212, 175, 55, 0.55),
     0 3px 0 #0b0b0c;
 }
 
@@ -4558,7 +4558,7 @@ html[dir="rtl"] .ace-hub-card-face {
   border: 1px solid #d4af37;
   border-radius: 0.2rem;
   background: #0b0b0c;
-  box-shadow: 0 0 0 1px rgba(255, 215, 0, 0.18);
+  box-shadow: 0 0 0 1px rgba(212, 175, 55, 0.18);
   color: #fffef8;
   font-size: 0.68rem;
   font-weight: 800;
@@ -4598,10 +4598,10 @@ html[dir="rtl"] .ace-hub-card-face {
   z-index: 1;
   height: 100%;
   overflow: hidden;
-  border: 1px solid rgba(255, 215, 0, 0.42);
+  border: 1px solid rgba(212, 175, 55, 0.42);
   border-radius: 1.15rem;
   background:
-    linear-gradient(165deg, rgba(255, 215, 0, 0.08), rgba(11, 11, 12, 0.88) 36%, #0b0b0c),
+    linear-gradient(165deg, rgba(212, 175, 55, 0.08), rgba(11, 11, 12, 0.88) 36%, #0b0b0c),
     rgba(11, 11, 12, 0.86);
   box-shadow:
     0 0 0 1px rgba(212, 175, 55, 0.22),
@@ -4613,10 +4613,10 @@ html[dir="rtl"] .ace-hub-card-face {
 .ace-market-card.is-hot .ace-market-face,
 .ace-market-card:hover .ace-market-face,
 .ace-market-card:focus-within .ace-market-face {
-  border-color: #ffd700;
+  border-color: #ffd76a;
   box-shadow:
-    0 0 0 1px #ffd700,
-    0 0 28px rgba(255, 215, 0, 0.42);
+    0 0 0 1px #ffd76a,
+    0 0 28px rgba(212, 175, 55, 0.42);
 }
 
 .ace-market-card:hover .ace-market-face,
@@ -4630,14 +4630,14 @@ html[dir="rtl"] .ace-hub-card-face {
   justify-content: space-between;
   gap: 0.75rem;
   margin-bottom: 0.85rem;
-  border: 1px solid rgba(255, 215, 0, 0.28);
+  border: 1px solid rgba(212, 175, 55, 0.28);
   border-radius: 0.75rem;
   background: #0b0b0c;
   padding: 0.7rem 0.8rem;
 }
 
 .ace-market-index {
-  color: #ffd700;
+  color: #ffd76a;
   font-size: 0.68rem;
   font-weight: 800;
   letter-spacing: 0.16em;
@@ -4654,7 +4654,7 @@ html[dir="rtl"] .ace-hub-card-face {
 }
 
 .ace-market-tag {
-  color: #ffd700;
+  color: #ffd76a;
   font-size: 0.68rem;
   font-weight: 800;
   letter-spacing: 0.12em;
@@ -4680,7 +4680,7 @@ html[dir="rtl"] .ace-hub-card-face {
   display: block;
   width: 100%;
   margin-top: 1rem;
-  border: 1px solid #ffd700;
+  border: 1px solid #ffd76a;
   background: linear-gradient(180deg, #fff1a8 0%, #d4af37 58%, #8a6a14 100%);
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.45), 0 8px 16px rgba(0, 0, 0, 0.35);
   color: #12100a;
@@ -4691,7 +4691,7 @@ html[dir="rtl"] .ace-hub-card-face {
 }
 
 .ace-prize-mesh {
-  border: 2px solid #ffd700;
+  border: 2px solid #ffd76a;
   background: #020203;
   transform-style: preserve-3d;
   animation: ace-prize-pulse 2.2s ease-in-out infinite;
@@ -4699,7 +4699,7 @@ html[dir="rtl"] .ace-hub-card-face {
 
 .ace-market-notice {
   margin-top: 1.6rem;
-  border: 2px solid #ffd700;
+  border: 2px solid #ffd76a;
   border-radius: 0.85rem;
   background: #0b0b0c;
   color: #fffef8;
@@ -4728,10 +4728,10 @@ html[dir="rtl"] .ace-hub-card-face {
 .ace-market-dialog {
   position: relative;
   width: min(34rem, 100%);
-  border: 1px solid rgba(255, 215, 0, 0.5);
+  border: 1px solid rgba(212, 175, 55, 0.5);
   border-radius: 1.1rem;
   background: rgba(11, 11, 12, 0.78);
-  box-shadow: 0 0 40px rgba(255, 215, 0, 0.22);
+  box-shadow: 0 0 40px rgba(212, 175, 55, 0.22);
   backdrop-filter: blur(28px);
   -webkit-backdrop-filter: blur(28px);
   padding: 1.3rem 1.25rem 1.2rem;
@@ -4739,7 +4739,7 @@ html[dir="rtl"] .ace-hub-card-face {
 
 .ace-market-dialog-title {
   margin-top: 0.35rem;
-  color: #ffd700;
+  color: #ffd76a;
   font-size: 1.35rem;
   font-weight: 800;
 }
@@ -4757,7 +4757,7 @@ html[dir="rtl"] .ace-hub-card-face {
   margin-top: 1.1rem;
   border: 1px solid #d4af37;
   background: #0b0b0c;
-  color: #ffd700;
+  color: #ffd76a;
   font-size: 0.74rem;
   font-weight: 800;
   letter-spacing: 0.12em;
@@ -4768,15 +4768,15 @@ html[dir="rtl"] .ace-hub-card-face {
   0%,
   100% {
     box-shadow:
-      0 0 0 1px #ffd700,
+      0 0 0 1px #ffd76a,
       0 16px 32px rgba(0, 0, 0, 0.55),
-      0 0 18px rgba(255, 215, 0, 0.35);
+      0 0 18px rgba(212, 175, 55, 0.35);
   }
   50% {
     box-shadow:
       0 0 0 2px #fff6c2,
       0 20px 40px rgba(0, 0, 0, 0.62),
-      0 0 36px rgba(255, 215, 0, 0.72);
+      0 0 36px rgba(212, 175, 55, 0.72);
   }
 }
 
@@ -4784,13 +4784,13 @@ html[dir="rtl"] .ace-hub-card-face {
   0%,
   100% {
     box-shadow:
-      0 0 0 1px #ffd700,
-      0 0 22px rgba(255, 215, 0, 0.32);
+      0 0 0 1px #ffd76a,
+      0 0 22px rgba(212, 175, 55, 0.32);
   }
   50% {
     box-shadow:
       0 0 0 1px #fff6c2,
-      0 0 40px rgba(255, 215, 0, 0.58);
+      0 0 40px rgba(212, 175, 55, 0.58);
   }
 }
 
@@ -4837,14 +4837,14 @@ html[dir="rtl"] .ace-hub-card-face {
 
 .ace-squad-title {
   margin-top: 0.55rem;
-  color: #ffd700;
+  color: #ffd76a;
   font-size: clamp(1.7rem, 4.4vw, 3.15rem);
   font-weight: 800;
   letter-spacing: 0.02em;
   line-height: 1.12;
   text-shadow:
     0 0 1px #fffef8,
-    0 0 18px rgba(255, 215, 0, 0.55),
+    0 0 18px rgba(212, 175, 55, 0.55),
     0 3px 0 #0b0b0c;
 }
 
@@ -4876,7 +4876,7 @@ html[dir="rtl"] .ace-hub-card-face {
   border: 1px solid #d4af37;
   border-radius: 0.2rem;
   background: #0b0b0c;
-  box-shadow: 0 0 0 1px rgba(255, 215, 0, 0.18);
+  box-shadow: 0 0 0 1px rgba(212, 175, 55, 0.18);
   color: #fffef8;
   font-size: 0.68rem;
   font-weight: 800;
@@ -4923,10 +4923,10 @@ html[dir="rtl"] .ace-hub-card-face {
   z-index: 1;
   height: 100%;
   overflow: hidden;
-  border: 1px solid rgba(255, 215, 0, 0.42);
+  border: 1px solid rgba(212, 175, 55, 0.42);
   border-radius: 1.05rem;
   background:
-    linear-gradient(165deg, rgba(255, 215, 0, 0.08), rgba(11, 11, 12, 0.88) 36%, #0b0b0c),
+    linear-gradient(165deg, rgba(212, 175, 55, 0.08), rgba(11, 11, 12, 0.88) 36%, #0b0b0c),
     #0b0b0c;
   box-shadow:
     0 0 0 1px rgba(212, 175, 55, 0.22),
@@ -4939,7 +4939,7 @@ html[dir="rtl"] .ace-hub-card-face {
 .ace-squad-card:focus-within .ace-squad-face,
 .ace-squad-agent:hover .ace-squad-face,
 .ace-squad-agent:focus-within .ace-squad-face {
-  border-color: #ffd700;
+  border-color: #ffd76a;
   animation: ace-market-aura 2.4s ease-in-out infinite;
 }
 
@@ -4948,10 +4948,10 @@ html[dir="rtl"] .ace-hub-card-face {
   width: 48px;
   height: 48px;
   place-items: center;
-  border: 1px solid #ffd700;
+  border: 1px solid #ffd76a;
   border-radius: 999px;
   background: #0b0b0c;
-  color: #ffd700;
+  color: #ffd76a;
   font-size: 0.72rem;
   font-weight: 800;
 }
@@ -4990,7 +4990,7 @@ html[dir="rtl"] .ace-hub-card-face {
 }
 
 .ace-squad-stats {
-  border: 1px solid rgba(255, 215, 0, 0.42);
+  border: 1px solid rgba(212, 175, 55, 0.42);
   border-radius: 1.05rem;
   background: rgba(11, 11, 12, 0.78);
   box-shadow: 0 0 0 1px rgba(212, 175, 55, 0.2);
@@ -5001,7 +5001,7 @@ html[dir="rtl"] .ace-hub-card-face {
 
 .ace-squad-panel-title {
   margin-top: 0.4rem;
-  color: #ffd700;
+  color: #ffd76a;
   font-size: 1.15rem;
   font-weight: 800;
 }
@@ -5032,7 +5032,7 @@ html[dir="rtl"] .ace-hub-card-face {
 }
 
 .ace-squad-label {
-  color: #ffd700;
+  color: #ffd76a;
   font-size: 0.68rem;
   font-weight: 800;
   letter-spacing: 0.12em;
@@ -5040,7 +5040,7 @@ html[dir="rtl"] .ace-hub-card-face {
 
 .ace-squad-input {
   min-height: 2.75rem;
-  border: 1px solid rgba(255, 215, 0, 0.45);
+  border: 1px solid rgba(212, 175, 55, 0.45);
   background: #0b0b0c;
   color: #fffef8;
   padding: 0 0.8rem;
@@ -5050,7 +5050,7 @@ html[dir="rtl"] .ace-hub-card-face {
 .ace-squad-recruit {
   display: block;
   width: 100%;
-  border: 1px solid #ffd700;
+  border: 1px solid #ffd76a;
   background: linear-gradient(180deg, #fff1a8 0%, #d4af37 58%, #8a6a14 100%);
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.45), 0 8px 16px rgba(0, 0, 0, 0.35);
   color: #12100a;
@@ -5076,7 +5076,7 @@ html[dir="rtl"] .ace-hub-card-face {
   display: inline-flex;
   align-items: center;
   gap: 0.45rem;
-  color: #ffd700;
+  color: #ffd76a;
   font-size: 0.68rem;
   font-weight: 800;
 }
@@ -5144,7 +5144,7 @@ html[dir="rtl"] .ace-hub-card-face {
 
 .ace-open-still {
   background:
-    radial-gradient(ellipse at 50% 42%, rgba(255, 215, 0, 0.16), transparent 46%),
+    radial-gradient(ellipse at 50% 42%, rgba(212, 175, 55, 0.16), transparent 46%),
     #070708;
 }
 
@@ -5161,7 +5161,7 @@ html[dir="rtl"] .ace-hub-card-face {
   font-weight: 800;
   letter-spacing: 0.08em;
   line-height: 0.95;
-  color: #ffd700;
+  color: #ffd76a;
 }
 
 .ace-open-line {
@@ -5181,7 +5181,7 @@ html[dir="rtl"] .ace-hub-card-face {
   min-height: 3rem;
   border: 0;
   border-radius: 0.55rem;
-  background: #ffd700;
+  background: #ffd76a;
   padding: 0 1.2rem;
   font-size: 0.9rem;
   font-weight: 800;
@@ -5201,7 +5201,7 @@ html[dir="rtl"] .ace-hub-card-face {
 }
 
 .ace-home-jumps a {
-  border: 1px solid rgba(255, 215, 0, 0.35);
+  border: 1px solid rgba(212, 175, 55, 0.35);
   border-radius: 999px;
   background: #0b0b0c;
   padding: 0.45rem 0.85rem;
@@ -5226,8 +5226,8 @@ html[dir="rtl"] .ace-hub-card-face {
   z-index: 0;
   height: 28rem;
   background-image:
-    linear-gradient(rgba(255, 215, 0, 0.08) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255, 215, 0, 0.08) 1px, transparent 1px);
+    linear-gradient(rgba(212, 175, 55, 0.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(212, 175, 55, 0.08) 1px, transparent 1px);
   background-size: 42px 42px;
   mask-image: linear-gradient(180deg, #000, transparent 88%);
   pointer-events: none;
@@ -5242,7 +5242,7 @@ html[dir="rtl"] .ace-hub-card-face {
   font-size: 0.72rem;
   font-weight: 800;
   letter-spacing: 0.18em;
-  color: #ffd700;
+  color: #ffd76a;
 }
 
 .ace-lb h1 {
@@ -5262,7 +5262,7 @@ html[dir="rtl"] .ace-hub-card-face {
 }
 
 .ace-lb-empty {
-  border: 1px solid rgba(255, 215, 0, 0.25);
+  border: 1px solid rgba(212, 175, 55, 0.25);
   border-radius: 1rem;
   padding: 1rem 1.1rem;
 }
@@ -5283,7 +5283,7 @@ html[dir="rtl"] .ace-hub-card-face {
 }
 
 .ace-lb-facts li {
-  border: 1px solid rgba(255, 215, 0, 0.32);
+  border: 1px solid rgba(212, 175, 55, 0.32);
   border-radius: 0.9rem;
   background: #0b0b0c;
   padding: 0.75rem 0.9rem;
@@ -5302,7 +5302,7 @@ html[dir="rtl"] .ace-hub-card-face {
   display: block;
   margin-top: 0.25rem;
   font-size: 1.35rem;
-  color: #ffd700;
+  color: #ffd76a;
 }
 
 .ace-lb-podium {
@@ -5322,10 +5322,10 @@ html[dir="rtl"] .ace-hub-card-face {
   align-items: center;
   justify-content: flex-end;
   gap: 0.35rem;
-  border: 1px solid rgba(255, 215, 0, 0.35);
+  border: 1px solid rgba(212, 175, 55, 0.35);
   border-radius: 1.1rem;
   background:
-    linear-gradient(180deg, rgba(255, 215, 0, 0.08), transparent 40%),
+    linear-gradient(180deg, rgba(212, 175, 55, 0.08), transparent 40%),
     #0b0b0c;
   padding: 1rem 0.9rem 1.05rem;
   text-align: center;
@@ -5333,9 +5333,9 @@ html[dir="rtl"] .ace-hub-card-face {
 
 .ace-lb-pod.is-1 {
   min-height: 18.5rem;
-  border-color: rgba(255, 215, 0, 0.72);
+  border-color: rgba(212, 175, 55, 0.72);
   background:
-    radial-gradient(ellipse at 50% 0%, rgba(255, 215, 0, 0.22), transparent 58%),
+    radial-gradient(ellipse at 50% 0%, rgba(212, 175, 55, 0.22), transparent 58%),
     #0b0b0c;
 }
 
@@ -5357,12 +5357,12 @@ html[dir="rtl"] .ace-hub-card-face {
   place-items: center;
   border-radius: 999px;
   background: #1a1a1c;
-  color: #ffd700;
+  color: #ffd76a;
   font-weight: 800;
 }
 
 .ace-lb-pod.is-1 .ace-lb-pod-place {
-  background: #ffd700;
+  background: #ffd76a;
   color: #121212;
 }
 
@@ -5379,14 +5379,14 @@ html[dir="rtl"] .ace-hub-card-face {
 .ace-lb-stage {
   margin-top: 1.6rem;
   overflow: hidden;
-  border: 1px solid rgba(255, 215, 0, 0.72);
+  border: 1px solid rgba(212, 175, 55, 0.72);
   border-radius: 1.2rem;
   background:
-    linear-gradient(180deg, rgba(255, 215, 0, 0.08), transparent 22%),
+    linear-gradient(180deg, rgba(212, 175, 55, 0.08), transparent 22%),
     #040406;
   box-shadow:
-    0 0 0 1px rgba(255, 215, 0, 0.28),
-    0 0 22px rgba(255, 215, 0, 0.16),
+    0 0 0 1px rgba(212, 175, 55, 0.28),
+    0 0 22px rgba(212, 175, 55, 0.16),
     0 18px 36px rgba(0, 0, 0, 0.45);
 }
 
@@ -5404,16 +5404,16 @@ html[dir="rtl"] .ace-hub-card-face {
   font-weight: 800;
   letter-spacing: 0.16em;
   text-transform: uppercase;
-  color: #ffd700;
-  border-bottom: 1px solid rgba(255, 215, 0, 0.28);
+  color: #ffd76a;
+  border-bottom: 1px solid rgba(212, 175, 55, 0.28);
 }
 
 .ace-lb-row + .ace-lb-row {
-  border-top: 1px solid rgba(255, 215, 0, 0.12);
+  border-top: 1px solid rgba(212, 175, 55, 0.12);
 }
 
 .ace-lb-row.is-1 {
-  background: linear-gradient(90deg, rgba(255, 215, 0, 0.14), transparent 62%);
+  background: linear-gradient(90deg, rgba(212, 175, 55, 0.14), transparent 62%);
 }
 
 .ace-lb-medal {
@@ -5426,9 +5426,9 @@ html[dir="rtl"] .ace-hub-card-face {
   padding: 0;
   border-radius: 0.55rem;
   background: #1a1a1c;
-  color: #ffd700;
+  color: #ffd76a;
   font-weight: 800;
-  border: 1px solid rgba(255, 215, 0, 0.35);
+  border: 1px solid rgba(212, 175, 55, 0.35);
 }
 
 .ace-lb-crown {
@@ -5438,14 +5438,14 @@ html[dir="rtl"] .ace-hub-card-face {
   translate: -50% 0;
   width: 0.95rem;
   height: 0.7rem;
-  fill: #ffd700;
-  filter: drop-shadow(0 0 6px rgba(255, 215, 0, 0.85));
+  fill: #ffd76a;
+  filter: drop-shadow(0 0 6px rgba(212, 175, 55, 0.85));
 }
 
 .ace-lb-row.is-1 .ace-lb-medal {
-  background: #ffd700;
+  background: #ffd76a;
   color: #121212;
-  border-color: #ffd700;
+  border-color: #ffd76a;
 }
 
 .ace-lb-row.is-2 .ace-lb-medal {
@@ -5503,7 +5503,7 @@ html[dir="rtl"] .ace-hub-card-face {
   flex-direction: column;
   align-items: flex-start;
   gap: 0.2rem;
-  color: #ffd700;
+  color: #ffd76a;
   font-size: 0.68rem;
   font-weight: 800;
   letter-spacing: 0.03em;
@@ -5518,7 +5518,7 @@ html[dir="rtl"] .ace-hub-card-face {
   flex-shrink: 0;
   place-items: center;
   border-radius: 999px;
-  border: 1px solid rgba(255, 215, 0, 0.8);
+  border: 1px solid rgba(212, 175, 55, 0.8);
   background: rgba(4, 4, 6, 0.72);
   font-size: 0.85rem;
 }
@@ -5573,10 +5573,10 @@ html[dir="rtl"] .ace-hub-card-face {
   display: block;
   aspect-ratio: 16 / 9;
   overflow: hidden;
-  border: 1px solid rgba(255, 215, 0, 0.42);
+  border: 1px solid rgba(212, 175, 55, 0.42);
   border-radius: 0.55rem;
   background:
-    radial-gradient(ellipse at 50% 30%, rgba(255, 215, 0, 0.16), transparent 62%),
+    radial-gradient(ellipse at 50% 30%, rgba(212, 175, 55, 0.16), transparent 62%),
     #141416;
   box-shadow:
     0 10px 18px rgba(0, 0, 0, 0.55),
@@ -5619,7 +5619,7 @@ html[dir="rtl"] .ace-hub-card-face {
   bottom: -0.45rem;
   height: 0.5rem;
   border-radius: 50%;
-  background: radial-gradient(ellipse, rgba(255, 215, 0, 0.42), transparent 70%);
+  background: radial-gradient(ellipse, rgba(212, 175, 55, 0.42), transparent 70%);
   filter: blur(3px);
   pointer-events: none;
 }
@@ -5629,7 +5629,7 @@ html[dir="rtl"] .ace-hub-card-face {
   transform: rotateY(10deg) rotateX(4deg) scale(1.04);
   box-shadow:
     0 14px 26px rgba(0, 0, 0, 0.6),
-    0 0 18px rgba(255, 215, 0, 0.35),
+    0 0 18px rgba(212, 175, 55, 0.35),
     inset 0 1px 0 rgba(255, 246, 194, 0.22);
 }
 
@@ -5680,7 +5680,7 @@ html[dir="rtl"] .ace-hub-card-face {
 
 .ace-lb-rp {
   text-align: end;
-  color: #ffd700;
+  color: #ffd76a;
   font-weight: 800;
 }
 
@@ -5697,7 +5697,7 @@ html[dir="rtl"] .ace-hub-card-face {
   display: block;
   height: 100%;
   border-radius: inherit;
-  background: linear-gradient(90deg, #8a6a12, #ffd700);
+  background: linear-gradient(90deg, #8a6a12, #ffd76a);
 }
 
 @media (min-width: 900px) {
@@ -5742,7 +5742,7 @@ html[dir="rtl"] .ace-hub-card-face {
   font-size: 0.78rem;
   font-weight: 700;
   letter-spacing: 0.08em;
-  color: #ffd700;
+  color: #ffd76a;
 }
 
 .ace-veto-title {
@@ -5777,7 +5777,7 @@ html[dir="rtl"] .ace-hub-card-face {
   align-items: flex-start;
   justify-content: flex-end;
   overflow: hidden;
-  border: 1px solid rgba(255, 215, 0, 0.35);
+  border: 1px solid rgba(212, 175, 55, 0.35);
   border-radius: 0.9rem;
   background: #0b0b0c;
   padding: 0.75rem;
@@ -5821,8 +5821,8 @@ html[dir="rtl"] .ace-hub-card-face {
 }
 
 .ace-veto-map.is-selected {
-  border-color: #ffd700;
-  box-shadow: 0 0 18px rgba(255, 215, 0, 0.35);
+  border-color: #ffd76a;
+  box-shadow: 0 0 18px rgba(212, 175, 55, 0.35);
   opacity: 1;
   text-decoration: none;
 }
@@ -5841,7 +5841,7 @@ html[dir="rtl"] .ace-hub-card-face {
 
 .ace-veto-toast {
   margin-top: 0.8rem;
-  border: 1px solid #ffd700;
+  border: 1px solid #ffd76a;
   border-radius: 0.7rem;
   background: #121212;
   padding: 0.75rem 0.9rem;
@@ -5861,7 +5861,7 @@ html[dir="rtl"] .ace-hub-card-face {
 
 .ace-veto-modal-card {
   width: min(32rem, 100%);
-  border: 1px solid #ffd700;
+  border: 1px solid #ffd76a;
   border-radius: 1rem;
   background: #0b0b0c;
   padding: 1.25rem;
@@ -5871,7 +5871,7 @@ html[dir="rtl"] .ace-hub-card-face {
 .ace-veto-modal-card h2 {
   margin-top: 0.35rem;
   font-size: 1.6rem;
-  color: #ffd700;
+  color: #ffd76a;
 }
 
 .ace-veto-modal-card p {
@@ -5885,7 +5885,7 @@ html[dir="rtl"] .ace-hub-card-face {
   min-height: 2.75rem;
   border: 0;
   border-radius: 0.55rem;
-  background: #ffd700;
+  background: #ffd76a;
   padding: 0 1rem;
   font-weight: 800;
   color: #121212;
@@ -5966,10 +5966,10 @@ html[dir="rtl"] .ace-hub-card-face {
   min-width: 1.2rem;
   height: 1.2rem;
   place-items: center;
-  border: 1px solid #ffd700;
+  border: 1px solid #ffd76a;
   border-radius: 0.25rem;
   background: #121212;
-  color: #ffd700;
+  color: #ffd76a;
   font-size: 0.68rem;
   font-weight: 800;
   line-height: 1;
@@ -5981,7 +5981,7 @@ html[dir="rtl"] .ace-hub-card-face {
     0 1px 0 #c9a227,
     0 10px 0 #3d3110,
     0 22px 40px rgba(0, 0, 0, 0.45),
-    0 0 0 1px rgba(255, 215, 0, 0.18);
+    0 0 0 1px rgba(212, 175, 55, 0.18);
 }
 
 .ace-home-ops {
@@ -6002,7 +6002,7 @@ html[dir="rtl"] .ace-hub-card-face {
 
 .ace-ops-plate,
 .ace-ops-metrics div {
-  border: 1px solid rgba(255, 215, 0, 0.28);
+  border: 1px solid rgba(212, 175, 55, 0.28);
   border-radius: 0.85rem;
   background: #0b0b0c;
   padding: 0.85rem 0.95rem;
@@ -6038,7 +6038,7 @@ html[dir="rtl"] .ace-hub-card-face {
 
 .ace-stat-slots span {
   height: 0.42rem;
-  border: 1px solid rgba(255, 215, 0, 0.4);
+  border: 1px solid rgba(212, 175, 55, 0.4);
   border-radius: 999px;
   background: transparent;
 }
@@ -6053,7 +6053,7 @@ html[dir="rtl"] .ace-hub-card-face {
   display: flex;
   justify-content: space-between;
   gap: 0.75rem;
-  border-bottom: 1px solid rgba(255, 215, 0, 0.16);
+  border-bottom: 1px solid rgba(212, 175, 55, 0.16);
   padding-bottom: 0.4rem;
 }
 
@@ -6065,7 +6065,7 @@ html[dir="rtl"] .ace-hub-card-face {
 }
 
 .ace-shield-list dd {
-  color: #ffd700;
+  color: #ffd76a;
   font-size: 0.75rem;
   font-weight: 700;
 }
@@ -6155,7 +6155,7 @@ html[dir="rtl"] .ace-hub-card-face {
   bottom: 0.35rem;
   height: 1.1rem;
   border-radius: 50%;
-  background: radial-gradient(ellipse, rgba(255, 215, 0, 0.35), transparent 70%);
+  background: radial-gradient(ellipse, rgba(212, 175, 55, 0.35), transparent 70%);
 }
 
 
@@ -6174,7 +6174,7 @@ html[dir="rtl"] .ace-hub-card-face {
   font-weight: 800;
   letter-spacing: 0.22em;
   text-transform: uppercase;
-  color: #ffd700;
+  color: #ffd76a;
 }
 
 .ace-codex-kicker a {
@@ -6212,7 +6212,7 @@ html[dir="rtl"] .ace-hub-card-face {
   font-weight: 800;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: #ffd700;
+  color: #ffd76a;
 }
 
 .ace-codex-search input {
@@ -6226,7 +6226,7 @@ html[dir="rtl"] .ace-hub-card-face {
 }
 
 .ace-codex-search input:focus-visible {
-  outline: 2px solid #ffd700;
+  outline: 2px solid #ffd76a;
   outline-offset: 2px;
 }
 
@@ -6281,7 +6281,7 @@ html[dir="rtl"] .ace-hub-card-face {
 .ace-codex-columns a span {
   display: block;
   margin-bottom: 0.15rem;
-  color: #ffd700;
+  color: #ffd76a;
   font-size: 0.68rem;
   font-weight: 800;
   letter-spacing: 0.12em;
@@ -6299,7 +6299,7 @@ html[dir="rtl"] .ace-hub-card-face {
 .ace-codex-pager button {
   border: 1px solid rgba(212, 175, 55, 0.55);
   background: #0a0a0c;
-  color: #ffd700;
+  color: #ffd76a;
   padding: 0.65rem 0.9rem;
   font-size: 0.72rem;
   font-weight: 800;
@@ -6313,7 +6313,7 @@ html[dir="rtl"] .ace-hub-card-face {
 
 .ace-codex-pager button:not(:disabled):hover,
 .ace-codex-pager button:not(:disabled):focus-visible {
-  background: #ffd700;
+  background: #ffd76a;
   color: #0a0a0c;
 }
 
@@ -6329,7 +6329,7 @@ html[dir="rtl"] .ace-hub-card-face {
 .ace-codex-article aside a:focus-visible,
 .ace-codex-turn a:hover,
 .ace-codex-turn a:focus-visible {
-  color: #ffd700;
+  color: #ffd76a;
 }
 
 .ace-codex-empty {
@@ -6379,7 +6379,7 @@ html[dir="rtl"] .ace-hub-card-face {
 
 .ace-codex-emblem figcaption {
   margin-top: 0.4rem;
-  color: #ffd700;
+  color: #ffd76a;
   font-size: 0.75rem;
   letter-spacing: 0.08em;
   text-align: center;
@@ -6406,7 +6406,7 @@ html[dir="rtl"] .ace-hub-card-face {
 }
 
 .ace-codex-table-wrap th {
-  color: #ffd700;
+  color: #ffd76a;
   font-size: 0.72rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -6437,7 +6437,7 @@ html[dir="rtl"] .ace-hub-card-face {
 .ace-codex-turn a span,
 .ace-codex-aside-foot {
   display: block;
-  color: #ffd700;
+  color: #ffd76a;
   font-size: 0.72rem;
   font-weight: 800;
   letter-spacing: 0.12em;
@@ -6453,7 +6453,7 @@ html[dir="rtl"] .ace-hub-card-face {
   margin-top: 1rem;
   border: 1px solid rgba(212, 175, 55, 0.55);
   padding: 0.7rem 1rem;
-  color: #ffd700;
+  color: #ffd76a;
   font-size: 0.78rem;
   font-weight: 800;
   letter-spacing: 0.14em;
@@ -6463,7 +6463,7 @@ html[dir="rtl"] .ace-hub-card-face {
 
 .ace-codex-entry:hover,
 .ace-codex-entry:focus-visible {
-  background: #ffd700;
+  background: #ffd76a;
   color: #0a0a0c;
 }
 
@@ -6490,16 +6490,16 @@ html[dir="rtl"] .ace-hub-card-face {
 }
 
 .ace-badge.is-gold {
-  border: 1px solid #ffd700;
-  background: rgba(255, 215, 0, 0.12);
-  color: #ffd700;
+  border: 1px solid #ffd76a;
+  background: rgba(212, 175, 55, 0.12);
+  color: #ffd76a;
 }
 
 .ace-badge.is-special {
   border: 1px solid #fff6c2;
-  background: linear-gradient(135deg, #ffd700, #a8841c 55%, #fff1a8);
+  background: linear-gradient(135deg, #ffd76a, #a8841c 55%, #fff1a8);
   color: #121212;
-  box-shadow: 0 0 14px rgba(255, 215, 0, 0.45);
+  box-shadow: 0 0 14px rgba(212, 175, 55, 0.45);
 }
 
 .ace-badge svg {
@@ -6513,12 +6513,12 @@ html[dir="rtl"] .ace-hub-card-face {
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
-  border-bottom: 1px solid rgba(255, 215, 0, 0.22);
+  border-bottom: 1px solid rgba(212, 175, 55, 0.22);
   padding-bottom: 0.75rem;
 }
 
 .ace-ranks-tabs a {
-  border: 1px solid rgba(255, 215, 0, 0.3);
+  border: 1px solid rgba(212, 175, 55, 0.3);
   border-radius: 999px;
   padding: 0.45rem 1rem;
   font-size: 0.72rem;
@@ -6533,9 +6533,9 @@ html[dir="rtl"] .ace-hub-card-face {
 }
 
 .ace-ranks-tabs a.is-on {
-  background: rgba(255, 215, 0, 0.14);
-  border-color: #ffd700;
-  color: #ffd700;
+  background: rgba(212, 175, 55, 0.14);
+  border-color: #ffd76a;
+  color: #ffd76a;
 }
 
 /* Prizes page */
@@ -6548,7 +6548,7 @@ html[dir="rtl"] .ace-hub-card-face {
 
 .ace-prize-facts > div {
   min-width: 0;
-  border: 1px solid rgba(255, 215, 0, 0.22);
+  border: 1px solid rgba(212, 175, 55, 0.22);
   border-radius: 1rem;
   background: #121212;
   padding: 0.9rem 1rem;
@@ -6572,7 +6572,7 @@ html[dir="rtl"] .ace-hub-card-face {
   position: relative;
   margin-top: 1rem;
   overflow: hidden;
-  border: 1px solid rgba(255, 215, 0, 0.3);
+  border: 1px solid rgba(212, 175, 55, 0.3);
   border-radius: 1.25rem;
   background: #050506;
   aspect-ratio: 16 / 9;
@@ -6599,7 +6599,7 @@ html[dir="rtl"] .ace-hub-card-face {
 
 .ace-live-screen.is-off {
   background:
-    radial-gradient(circle at 50% 40%, rgba(255, 215, 0, 0.08), transparent 55%),
+    radial-gradient(circle at 50% 40%, rgba(212, 175, 55, 0.08), transparent 55%),
     repeating-linear-gradient(0deg, rgba(255, 255, 255, 0.025) 0 2px, transparent 2px 4px),
     #050506;
 }
@@ -6638,7 +6638,7 @@ html[dir="rtl"] .ace-hub-card-face {
 .ace-off-air-next {
   font-size: 0.75rem;
   letter-spacing: 0.08em;
-  color: #ffd700;
+  color: #ffd76a;
 }
 
 .ace-map-pool {
@@ -6653,14 +6653,14 @@ html[dir="rtl"] .ace-hub-card-face {
 .ace-map-card {
   min-width: 0;
   overflow: hidden;
-  border: 1px solid rgba(255, 215, 0, 0.22);
+  border: 1px solid rgba(212, 175, 55, 0.22);
   border-radius: 1rem;
   background: #121212;
   transition: border-color 0.2s ease, transform 0.2s ease;
 }
 
 .ace-map-card:hover {
-  border-color: #ffd700;
+  border-color: #ffd76a;
   transform: translateY(-2px);
 }
 
@@ -6678,7 +6678,7 @@ html[dir="rtl"] .ace-hub-card-face {
 .ace-map-card-index {
   font-size: 0.62rem;
   letter-spacing: 0.2em;
-  color: #ffd700;
+  color: #ffd76a;
 }
 
 .ace-map-card h3 {
@@ -6705,14 +6705,14 @@ html[dir="rtl"] .ace-hub-card-face {
 /* Competition rulebook */
 .ace-rulebook {
   overflow: hidden;
-  border: 1px solid rgba(255, 215, 0, 0.35);
+  border: 1px solid rgba(212, 175, 55, 0.35);
   border-radius: 1.5rem;
   background: #020203;
-  box-shadow: 0 0 80px rgba(255, 215, 0, 0.12);
+  box-shadow: 0 0 80px rgba(212, 175, 55, 0.12);
 }
 
 .ace-rulebook-head {
-  border-bottom: 1px solid rgba(255, 215, 0, 0.25);
+  border-bottom: 1px solid rgba(212, 175, 55, 0.25);
   background: #121318;
   padding: 2.5rem 1.5rem;
 }
@@ -6743,7 +6743,7 @@ html[dir="rtl"] .ace-hub-card-face {
 
 .ace-rulebook-toc {
   min-width: 0;
-  border: 1px solid rgba(255, 215, 0, 0.2);
+  border: 1px solid rgba(212, 175, 55, 0.2);
   border-radius: 1rem;
   background: #0b0b0d;
   padding: 1rem;
@@ -6754,7 +6754,7 @@ html[dir="rtl"] .ace-hub-card-face {
   font-size: 0.68rem;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  color: #ffd700;
+  color: #ffd76a;
 }
 
 .ace-rulebook-toc ol {
@@ -6774,14 +6774,14 @@ html[dir="rtl"] .ace-hub-card-face {
 }
 
 .ace-rulebook-toc a:hover {
-  background: rgba(255, 215, 0, 0.08);
+  background: rgba(212, 175, 55, 0.08);
   color: #ffd76a;
 }
 
 .ace-rulebook-toc a span {
   display: inline-block;
   min-width: 1.6rem;
-  color: #ffd700;
+  color: #ffd76a;
 }
 
 .ace-rulebook-body {
@@ -6796,7 +6796,7 @@ html[dir="rtl"] .ace-hub-card-face {
 }
 
 .ace-rule-section h2 {
-  border-bottom: 1px solid rgba(255, 215, 0, 0.2);
+  border-bottom: 1px solid rgba(212, 175, 55, 0.2);
   padding-bottom: 0.5rem;
   font-size: 1.3rem;
   font-weight: 700;
@@ -6804,7 +6804,7 @@ html[dir="rtl"] .ace-hub-card-face {
 }
 
 .ace-rule-section h2 span {
-  color: #ffd700;
+  color: #ffd76a;
 }
 
 .ace-rule-summary {
@@ -6836,13 +6836,13 @@ html[dir="rtl"] .ace-hub-card-face {
   font-family: ui-monospace, monospace;
   font-size: 0.8rem;
   line-height: 1.9;
-  color: #ffd700;
+  color: #ffd76a;
 }
 
 .ace-rule-pending {
   display: inline-block;
   margin-left: 0.5rem;
-  border: 1px solid rgba(255, 215, 0, 0.45);
+  border: 1px solid rgba(212, 175, 55, 0.45);
   border-radius: 999px;
   padding: 0 0.5rem;
   font-size: 0.62rem;
@@ -6850,13 +6850,13 @@ html[dir="rtl"] .ace-hub-card-face {
   letter-spacing: 0.12em;
   text-transform: uppercase;
   vertical-align: middle;
-  color: #ffd700;
+  color: #ffd76a;
 }
 
 .ace-penalty-wrap {
   margin-top: 1rem;
   overflow-x: auto;
-  border: 1px solid rgba(255, 215, 0, 0.2);
+  border: 1px solid rgba(212, 175, 55, 0.2);
   border-radius: 1rem;
 }
 
@@ -6881,7 +6881,7 @@ html[dir="rtl"] .ace-hub-card-face {
   font-size: 0.66rem;
   letter-spacing: 0.16em;
   text-transform: uppercase;
-  color: #ffd700;
+  color: #ffd76a;
 }
 
 .ace-penalty-table tbody th {
@@ -6917,7 +6917,7 @@ html[dir="rtl"] .ace-hub-card-face {
   gap: 0.5rem;
   overflow: hidden;
   isolation: isolate;
-  border: 1px solid rgba(255, 215, 0, 0.55);
+  border: 1px solid rgba(212, 175, 55, 0.55);
   border-radius: 0.6rem;
   background: linear-gradient(180deg, #2a2a2e 0%, #141416 48%, #0b0b0c 100%);
   box-shadow:
@@ -6925,8 +6925,8 @@ html[dir="rtl"] .ace-hub-card-face {
     inset 0 -1px 0 rgba(0, 0, 0, 0.8),
     inset 0 0 0 1px rgba(0, 0, 0, 0.5),
     0 6px 14px rgba(0, 0, 0, 0.55),
-    0 0 18px rgba(255, 215, 0, 0.12);
-  color: #ffd700;
+    0 0 18px rgba(212, 175, 55, 0.12);
+  color: #ffd76a;
   font-weight: 800;
   letter-spacing: 0.18em;
   text-transform: uppercase;
@@ -6960,7 +6960,7 @@ html[dir="rtl"] .ace-hub-card-face {
   height: 0.45rem;
   border-radius: 999px;
   background: radial-gradient(circle at 35% 35%, #fff6c2, #d4a017 60%, #6b4e00);
-  box-shadow: 0 0 8px rgba(255, 215, 0, 0.7);
+  box-shadow: 0 0 8px rgba(212, 175, 55, 0.7);
 }
 
 .ace-soon-extra {
@@ -6983,7 +6983,7 @@ html[dir="rtl"] .ace-hub-card-face {
 .ace-navbar {
   border-top: 1px solid rgba(255, 255, 255, 0.06);
   background: linear-gradient(180deg, rgba(18, 18, 21, 0.9), rgba(8, 8, 10, 0.9));
-  box-shadow: inset 0 1px 0 rgba(255, 215, 0, 0.05);
+  box-shadow: inset 0 1px 0 rgba(212, 175, 55, 0.05);
 }
 
 .ace-navbar-inner {
@@ -7028,7 +7028,7 @@ html[dir="rtl"] .ace-hub-card-face {
   height: 0.4rem;
   margin-inline: 0.2rem 0.8rem;
   transform: rotate(45deg);
-  border: 1px solid rgba(255, 215, 0, 0.55);
+  border: 1px solid rgba(212, 175, 55, 0.55);
 }
 
 .ace-navgroup > a {
@@ -7049,13 +7049,13 @@ html[dir="rtl"] .ace-hub-card-face {
 }
 
 .ace-navgroup > a:focus-visible {
-  outline: 2px solid #ffd700;
+  outline: 2px solid #ffd76a;
   outline-offset: -4px;
   border-radius: 0.3rem;
 }
 
 .ace-navgroup > a.is-on {
-  color: #ffd700;
+  color: #ffd76a;
 }
 
 .ace-navgroup > a.is-on::after {
@@ -7064,8 +7064,8 @@ html[dir="rtl"] .ace-hub-card-face {
   inset-inline: clamp(0.3rem, 0.5vw, 0.75rem);
   bottom: 0;
   height: 2px;
-  background: linear-gradient(90deg, transparent, #ffd700 20%, #ffd700 80%, transparent);
-  box-shadow: 0 0 10px rgba(255, 215, 0, 0.55);
+  background: linear-gradient(90deg, transparent, #ffd76a 20%, #ffd76a 80%, transparent);
+  box-shadow: 0 0 10px rgba(212, 175, 55, 0.55);
 }
 
 @media (max-width: 1100px) {
@@ -7082,7 +7082,7 @@ html[dir="rtl"] .ace-hub-card-face {
   align-items: center;
   border: 1px solid #fff1a8;
   border-radius: 0.6rem;
-  background: linear-gradient(180deg, #ffe37a 0%, #ffd700 45%, #b8890f 100%);
+  background: linear-gradient(180deg, #ffe37a 0%, #ffd76a 45%, #b8890f 100%);
   padding: 0.5rem 0.95rem;
   font-size: 0.72rem;
   font-weight: 800;
@@ -7090,7 +7090,7 @@ html[dir="rtl"] .ace-hub-card-face {
   text-transform: uppercase;
   white-space: nowrap;
   color: #141008;
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.6), 0 6px 18px rgba(255, 215, 0, 0.22);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.6), 0 6px 18px rgba(212, 175, 55, 0.22);
   transition: filter 0.15s ease, transform 0.15s ease;
 }
 
@@ -7111,7 +7111,7 @@ html[dir="rtl"] .ace-hub-card-face {
   font-size: 0.62rem;
   letter-spacing: 0.22em;
   text-transform: uppercase;
-  color: #ffd700;
+  color: #ffd76a;
 }
 
 .ace-mobile-nav a {
@@ -7123,8 +7123,8 @@ html[dir="rtl"] .ace-hub-card-face {
 }
 
 .ace-mobile-nav a[aria-current="page"] {
-  background: rgba(255, 215, 0, 0.1);
-  color: #ffd700;
+  background: rgba(212, 175, 55, 0.1);
+  color: #ffd76a;
 }
 
 /* Final CTA above footer */
@@ -7132,9 +7132,9 @@ html[dir="rtl"] .ace-hub-card-face {
   position: relative;
   z-index: 10;
   padding: 4rem 1rem;
-  border-top: 1px solid rgba(255, 215, 0, 0.18);
+  border-top: 1px solid rgba(212, 175, 55, 0.18);
   background:
-    radial-gradient(ellipse at 50% 0%, rgba(255, 215, 0, 0.16), transparent 60%),
+    radial-gradient(ellipse at 50% 0%, rgba(212, 175, 55, 0.16), transparent 60%),
     linear-gradient(180deg, #0b0b0d, #020203);
 }
 
@@ -7148,7 +7148,7 @@ html[dir="rtl"] .ace-hub-card-face {
   font-size: 0.7rem;
   letter-spacing: 0.3em;
   text-transform: uppercase;
-  color: #ffd700;
+  color: #ffd76a;
 }
 
 .ace-final-cta h2 {
@@ -7157,7 +7157,7 @@ html[dir="rtl"] .ace-hub-card-face {
   font-weight: 800;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-  background: linear-gradient(180deg, #fff8d6, #ffd700 55%, #a8780a);
+  background: linear-gradient(180deg, #fff8d6, #ffd76a 55%, #a8780a);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -7186,19 +7186,19 @@ html[dir="rtl"] .ace-hub-card-face {
 .ace-ghost-cta {
   display: inline-flex;
   align-items: center;
-  border: 1px solid rgba(255, 215, 0, 0.55);
+  border: 1px solid rgba(212, 175, 55, 0.55);
   border-radius: 0.6rem;
   background: rgba(10, 10, 12, 0.6);
   font-weight: 800;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: #ffd700;
+  color: #ffd76a;
   box-shadow: inset 0 1px 0 rgba(255, 236, 160, 0.2);
   transition: background 0.15s ease;
 }
 
 .ace-ghost-cta:hover {
-  background: rgba(255, 215, 0, 0.1);
+  background: rgba(212, 175, 55, 0.1);
 }
 
 /* Platform status strip */
@@ -7225,7 +7225,7 @@ html[dir="rtl"] .ace-hub-card-face {
   align-items: center;
   gap: 0.3rem 0.7rem;
   min-width: 0;
-  border: 1px solid rgba(255, 215, 0, 0.22);
+  border: 1px solid rgba(212, 175, 55, 0.22);
   border-radius: 0.9rem;
   background: linear-gradient(180deg, #17171a, #0c0c0e);
   padding: 0.85rem 1rem;
@@ -7240,7 +7240,7 @@ html[dir="rtl"] .ace-hub-card-face {
 }
 
 .is-available .ace-status-light { background: #3ddc84; box-shadow: 0 0 10px #3ddc84; }
-.is-inDevelopment .ace-status-light { background: #ffd700; box-shadow: 0 0 10px #ffd700; }
+.is-inDevelopment .ace-status-light { background: #ffd76a; box-shadow: 0 0 10px #ffd76a; }
 .is-comingSoon .ace-status-light { background: #a9abb3; box-shadow: 0 0 8px rgba(169, 171, 179, 0.6); }
 
 .ace-status-name {
@@ -7259,7 +7259,7 @@ html[dir="rtl"] .ace-hub-card-face {
 }
 
 .is-available .ace-status-value { color: #7ff0b0; }
-.is-inDevelopment .ace-status-value { color: #ffd700; }
+.is-inDevelopment .ace-status-value { color: #ffd76a; }
 
 /* Home hero: occasional slow gold/white light sweep */
 .ace-combat-hero {
@@ -7284,9 +7284,9 @@ html[dir="rtl"] .ace-hub-card-face {
   background: linear-gradient(
     100deg,
     transparent 0%,
-    rgba(255, 215, 0, 0.06) 30%,
+    rgba(212, 175, 55, 0.06) 30%,
     rgba(255, 250, 230, 0.2) 50%,
-    rgba(255, 215, 0, 0.06) 70%,
+    rgba(212, 175, 55, 0.06) 70%,
     transparent 100%
   );
   transform: skewX(-18deg);
@@ -7310,10 +7310,10 @@ html[dir="rtl"] .ace-hub-card-face {
 .ace-shield-hero {
   position: relative;
   overflow: hidden;
-  border: 1px solid rgba(255, 215, 0, 0.25);
+  border: 1px solid rgba(212, 175, 55, 0.25);
   border-radius: 1.5rem;
   background:
-    radial-gradient(ellipse at 85% 20%, rgba(255, 215, 0, 0.16), transparent 55%),
+    radial-gradient(ellipse at 85% 20%, rgba(212, 175, 55, 0.16), transparent 55%),
     linear-gradient(180deg, #121215, #070708);
   padding: 2.5rem 1.5rem;
 }
@@ -7329,7 +7329,7 @@ html[dir="rtl"] .ace-hub-card-face {
   width: 16rem;
   height: 16rem;
   fill: none;
-  stroke: rgba(255, 215, 0, 0.16);
+  stroke: rgba(212, 175, 55, 0.16);
   stroke-width: 0.6;
 }
 
@@ -7354,7 +7354,7 @@ html[dir="rtl"] .ace-hub-card-face {
   flex-direction: column;
   align-items: flex-start;
   gap: 0.6rem;
-  border: 1px solid rgba(255, 215, 0, 0.2);
+  border: 1px solid rgba(212, 175, 55, 0.2);
   border-radius: 1rem;
   background: linear-gradient(180deg, #151517, #0b0b0c);
   padding: 1.2rem;
@@ -7365,7 +7365,7 @@ html[dir="rtl"] .ace-hub-card-face {
   width: 1.8rem;
   height: 1.8rem;
   fill: none;
-  stroke: #ffd700;
+  stroke: #ffd76a;
   stroke-width: 1.6;
   stroke-linecap: round;
   stroke-linejoin: round;
@@ -7421,12 +7421,12 @@ html[dir="rtl"] .ace-hub-card-face {
   border-radius: 999px;
 }
 
-.is-designed .ace-shield-node { border-color: #ffd700; background: #ffd700; }
-.is-in-development .ace-shield-node { border-color: #ffd700; box-shadow: 0 0 10px rgba(255, 215, 0, 0.6); }
+.is-designed .ace-shield-node { border-color: #ffd76a; background: #ffd76a; }
+.is-in-development .ace-shield-node { border-color: #ffd76a; box-shadow: 0 0 10px rgba(212, 175, 55, 0.6); }
 
 .ace-shield-panel {
   min-width: 0;
-  border: 1px solid rgba(255, 215, 0, 0.2);
+  border: 1px solid rgba(212, 175, 55, 0.2);
   border-radius: 1.25rem;
   background: #0d0d0f;
   padding: 1.5rem;
@@ -7456,7 +7456,7 @@ html[dir="rtl"] .ace-hub-card-face {
   width: 0.5rem;
   height: 0.5rem;
   transform: rotate(45deg);
-  background: #ffd700;
+  background: #ffd76a;
 }
 
 .ace-shield-faq {
@@ -7481,7 +7481,7 @@ html[dir="rtl"] .ace-hub-card-face {
 .ace-footer {
   border-top: 1px solid rgba(212, 175, 55, 0.22);
   background:
-    radial-gradient(ellipse 60% 120% at 0% 0%, rgba(255, 215, 0, 0.05), transparent 60%),
+    radial-gradient(ellipse 60% 120% at 0% 0%, rgba(212, 175, 55, 0.05), transparent 60%),
     #050506;
 }
 
@@ -7505,7 +7505,7 @@ html[dir="rtl"] .ace-hub-card-face {
   font-size: 1.35rem;
   font-weight: 800;
   letter-spacing: 0.24em;
-  color: #ffd700;
+  color: #ffd76a;
 }
 
 .ace-footer-tagline {
@@ -7537,8 +7537,8 @@ html[dir="rtl"] .ace-hub-card-face {
 
 .ace-footer-social a:hover,
 .ace-footer-social a:focus-visible {
-  color: #ffd700;
-  border-color: #ffd700;
+  color: #ffd76a;
+  border-color: #ffd76a;
 }
 
 .ace-footer-social svg {
@@ -7572,7 +7572,7 @@ html[dir="rtl"] .ace-hub-card-face {
   font-weight: 700;
   letter-spacing: 0.18em;
   text-transform: uppercase;
-  color: #ffd700;
+  color: #ffd76a;
 }
 
 .ace-footer-cols a,
@@ -7645,7 +7645,7 @@ html[dir="rtl"] .ace-hub-card-face {
   transform: translate3d(0, 6px, -10px);
   border-radius: 0.9rem;
   background: linear-gradient(180deg, #6b5410 0%, #2a210a 100%);
-  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.6), 0 2px 0 rgba(255, 215, 0, 0.15);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.6), 0 2px 0 rgba(212, 175, 55, 0.15);
 }
 .ace-plate-face {
   position: relative;
@@ -7654,7 +7654,7 @@ html[dir="rtl"] .ace-hub-card-face {
   gap: 0.9rem;
   padding: 0.85rem 1.6rem;
   border-radius: 0.9rem;
-  border: 1px solid rgba(255, 215, 0, 0.7);
+  border: 1px solid rgba(212, 175, 55, 0.7);
   background:
     linear-gradient(180deg, rgba(255, 255, 255, 0.07) 0%, rgba(255, 255, 255, 0) 38%),
     linear-gradient(180deg, #2b2b30 0%, #17171a 55%, #0c0c0d 100%);
@@ -7662,14 +7662,14 @@ html[dir="rtl"] .ace-hub-card-face {
     inset 0 1px 0 rgba(255, 236, 160, 0.55),
     inset 0 -2px 0 rgba(0, 0, 0, 0.85),
     inset 0 0 0 3px rgba(18, 18, 20, 0.9),
-    inset 0 0 0 4px rgba(255, 215, 0, 0.28);
+    inset 0 0 0 4px rgba(212, 175, 55, 0.28);
 }
 .ace-plate-text {
   font-weight: 800;
   letter-spacing: 0.22em;
   text-transform: uppercase;
   white-space: nowrap;
-  background: linear-gradient(180deg, #fff6c4 0%, #ffd700 42%, #b8860b 70%, #ffe27a 100%);
+  background: linear-gradient(180deg, #fff6c4 0%, #ffd76a 42%, #b8860b 70%, #ffe27a 100%);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -7710,7 +7710,7 @@ html[dir="rtl"] .ace-hub-card-face {
   width: 100%;
   justify-content: center;
   border-radius: 9999px;
-  border: 1px solid rgba(255, 215, 0, 0.35);
+  border: 1px solid rgba(212, 175, 55, 0.35);
   background: #141416;
   padding: 0.8rem 1rem;
   font-size: 0.85rem;
@@ -7725,7 +7725,7 @@ html[dir="rtl"] .ace-hub-card-face {
   margin: 0 auto;
   max-width: 72rem;
   padding: 0 1.5rem;
-  border-top: 1px solid rgb(255 215 0 / 0.12);
+  border-top: 1px solid rgb(212 175 55 / 0.12);
 }
 .ace-footer-notice > summary {
   cursor: pointer;
@@ -7737,7 +7737,7 @@ html[dir="rtl"] .ace-hub-card-face {
   font-size: 0.7rem;
   font-weight: 700;
   letter-spacing: 0.22em;
-  color: #ffd700;
+  color: #ffd76a;
 }
 .ace-footer-notice > summary::-webkit-details-marker { display: none; }
 .ace-footer-notice > summary::after {
@@ -7750,7 +7750,7 @@ html[dir="rtl"] .ace-hub-card-face {
   transition: transform 0.2s ease;
 }
 .ace-footer-notice[open] > summary::after { transform: rotate(-135deg); }
-.ace-footer-notice > summary:focus-visible { outline: 2px solid #ffd700; outline-offset: 2px; }
+.ace-footer-notice > summary:focus-visible { outline: 2px solid #ffd76a; outline-offset: 2px; }
 .ace-footer-notice-body {
   display: grid;
   gap: 0.6rem;
@@ -7765,37 +7765,37 @@ html[dir="rtl"] .ace-hub-card-face {
 }
 
 /* r9: Premium rank art (original illustrated set restored from main) */
-.ace-ranks-section-kicker { font-size: 0.72rem; letter-spacing: 0.28em; color: #ffd700; font-weight: 600; }
-.ace-premium-ranks { margin-top: 3.5rem; padding: 1.5rem; border-radius: 1.5rem; border: 1px solid rgba(255, 215, 0, 0.45); background: linear-gradient(180deg, rgba(255, 215, 0, 0.07), rgba(18, 18, 18, 0.96) 40%); box-shadow: 0 0 40px rgba(255, 215, 0, 0.08); }
+.ace-ranks-section-kicker { font-size: 0.72rem; letter-spacing: 0.28em; color: #ffd76a; font-weight: 600; }
+.ace-premium-ranks { margin-top: 3.5rem; padding: 1.5rem; border-radius: 1.5rem; border: 1px solid rgba(212, 175, 55, 0.45); background: linear-gradient(180deg, rgba(212, 175, 55, 0.07), rgba(18, 18, 18, 0.96) 40%); box-shadow: 0 0 40px rgba(212, 175, 55, 0.08); }
 @media (min-width: 640px) { .ace-premium-ranks { padding: 2rem; } }
 .ace-premium-ranks-head { display: flex; flex-wrap: wrap; align-items: center; gap: 0.75rem; }
-.ace-premium-ranks-plan { font-size: 0.68rem; letter-spacing: 0.18em; font-weight: 700; color: #121212; background: linear-gradient(90deg, #ffd700, #e0a800); border-radius: 999px; padding: 0.3rem 0.75rem; }
-.ace-premium-ranks-note { margin-top: 0.6rem; max-width: 48rem; font-size: 0.78rem; line-height: 1.6; color: #d8c98a; border-left: 2px solid rgba(255, 215, 0, 0.5); padding-left: 0.75rem; }
+.ace-premium-ranks-plan { font-size: 0.68rem; letter-spacing: 0.18em; font-weight: 700; color: #121212; background: linear-gradient(90deg, #ffd76a, #e0a800); border-radius: 999px; padding: 0.3rem 0.75rem; }
+.ace-premium-ranks-note { margin-top: 0.6rem; max-width: 48rem; font-size: 0.78rem; line-height: 1.6; color: #d8c98a; border-left: 2px solid rgba(212, 175, 55, 0.5); padding-left: 0.75rem; }
 .ace-orbit-core.is-illustrated { background-color: #3a2a08; background-size: cover; }
-.ace-rank-art-picker { border: 1px solid rgba(255, 215, 0, 0.25); border-radius: 1rem; padding: 1rem; background: #121212; }
-.ace-rank-art-picker-title { font-size: 0.7rem; letter-spacing: 0.2em; text-transform: uppercase; color: #ffd700; }
+.ace-rank-art-picker { border: 1px solid rgba(212, 175, 55, 0.25); border-radius: 1rem; padding: 1rem; background: #121212; }
+.ace-rank-art-picker-title { font-size: 0.7rem; letter-spacing: 0.2em; text-transform: uppercase; color: #ffd76a; }
 .ace-rank-art-picker-row { margin-top: 0.6rem; display: flex; gap: 0.5rem; flex-wrap: wrap; }
-.ace-rank-art-picker-row button { border: 1px solid rgba(255, 215, 0, 0.35); border-radius: 999px; padding: 0.35rem 0.9rem; font-size: 0.8rem; color: #f5f3ec; }
-.ace-rank-art-picker-row button[aria-pressed="true"] { background: #ffd700; color: #121212; }
+.ace-rank-art-picker-row button { border: 1px solid rgba(212, 175, 55, 0.35); border-radius: 999px; padding: 0.35rem 0.9rem; font-size: 0.8rem; color: #f5f3ec; }
+.ace-rank-art-picker-row button[aria-pressed="true"] { background: #ffd76a; color: #121212; }
 .ace-rank-art-picker-row button:disabled { opacity: 0.45; cursor: not-allowed; }
 .ace-rank-art-picker-note { margin-top: 0.5rem; font-size: 0.75rem; color: #a9abb3; }
 
 /* r10: animated A.C.E Premium profile card */
-.ace-pcard { position: relative; isolation: isolate; overflow: hidden; border-radius: 1.25rem; padding: 2px; max-width: 26rem; background: #1a1712; box-shadow: 0 0 28px rgba(255, 215, 0, 0.14), 0 10px 30px rgba(0, 0, 0, 0.5); }
-.ace-pcard-frame { position: absolute; inset: -50%; z-index: -1; background: conic-gradient(from 0deg, #3a2a08, #ffd700, #8a6a12, #fff3b0, #3a2a08, #ffd700, #3a2a08); animation: ace-pcard-spin 6s linear infinite; }
-.ace-pcard-body { position: relative; border-radius: calc(1.25rem - 2px); padding: 1.1rem 1.2rem; background: radial-gradient(120% 80% at 0% 0%, rgba(255, 215, 0, 0.1), transparent 55%), linear-gradient(160deg, #18181c, #0d0d10); }
+.ace-pcard { position: relative; isolation: isolate; overflow: hidden; border-radius: 1.25rem; padding: 2px; max-width: 26rem; background: #1a1712; box-shadow: 0 0 28px rgba(212, 175, 55, 0.14), 0 10px 30px rgba(0, 0, 0, 0.5); }
+.ace-pcard-frame { position: absolute; inset: -50%; z-index: -1; background: conic-gradient(from 0deg, #3a2a08, #ffd76a, #8a6a12, #fff3b0, #3a2a08, #ffd76a, #3a2a08); animation: ace-pcard-spin 6s linear infinite; }
+.ace-pcard-body { position: relative; border-radius: calc(1.25rem - 2px); padding: 1.1rem 1.2rem; background: radial-gradient(120% 80% at 0% 0%, rgba(212, 175, 55, 0.1), transparent 55%), linear-gradient(160deg, #18181c, #0d0d10); }
 .ace-pcard-top { display: flex; align-items: center; justify-content: space-between; gap: 0.5rem; }
-.ace-pcard-plan { font-size: 0.62rem; letter-spacing: 0.22em; font-weight: 700; color: #ffd700; }
-.ace-pcard-preview { font-size: 0.6rem; letter-spacing: 0.18em; font-weight: 700; color: #121212; background: #ffd700; border-radius: 999px; padding: 0.15rem 0.55rem; }
+.ace-pcard-plan { font-size: 0.62rem; letter-spacing: 0.22em; font-weight: 700; color: #ffd76a; }
+.ace-pcard-preview { font-size: 0.6rem; letter-spacing: 0.18em; font-weight: 700; color: #121212; background: #ffd76a; border-radius: 999px; padding: 0.15rem 0.55rem; }
 .ace-pcard-main { margin-top: 0.8rem; display: flex; align-items: center; gap: 0.85rem; }
-.ace-pcard-avatar { flex: none; display: grid; place-items: center; width: 3.4rem; height: 3.4rem; border-radius: 999px; overflow: hidden; border: 2px solid #ffd700; background: #2a2210; color: #ffd700; font-weight: 700; font-size: 1.3rem; box-shadow: 0 0 14px rgba(255, 215, 0, 0.35); }
+.ace-pcard-avatar { flex: none; display: grid; place-items: center; width: 3.4rem; height: 3.4rem; border-radius: 999px; overflow: hidden; border: 2px solid #ffd76a; background: #2a2210; color: #ffd76a; font-weight: 700; font-size: 1.3rem; box-shadow: 0 0 14px rgba(212, 175, 55, 0.35); }
 .ace-pcard-avatar img { width: 100%; height: 100%; object-fit: cover; }
 .ace-pcard-name { font-weight: 600; font-size: 1.1rem; color: #f5f3ec; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .ace-pcard-seal { margin-top: 0.15rem; font-size: 0.65rem; letter-spacing: 0.2em; color: #e0b84a; }
-.ace-pcard-emblem { margin-left: auto; width: 3.6rem; height: 3.6rem; object-fit: contain; filter: drop-shadow(0 0 8px rgba(255, 215, 0, 0.45)); }
-.ace-pcard-stats { margin-top: 0.9rem; display: grid; grid-template-columns: 1fr 1fr; gap: 0.6rem; border-top: 1px solid rgba(255, 215, 0, 0.2); padding-top: 0.7rem; }
+.ace-pcard-emblem { margin-left: auto; width: 3.6rem; height: 3.6rem; object-fit: contain; filter: drop-shadow(0 0 8px rgba(212, 175, 55, 0.45)); }
+.ace-pcard-stats { margin-top: 0.9rem; display: grid; grid-template-columns: 1fr 1fr; gap: 0.6rem; border-top: 1px solid rgba(212, 175, 55, 0.2); padding-top: 0.7rem; }
 .ace-pcard-stats dt { font-size: 0.6rem; letter-spacing: 0.18em; text-transform: uppercase; color: #a9abb3; }
-.ace-pcard-stats dd { margin-top: 0.15rem; font-weight: 600; color: #ffd700; }
+.ace-pcard-stats dd { margin-top: 0.15rem; font-weight: 600; color: #ffd76a; }
 .ace-pcard-shimmer { pointer-events: none; position: absolute; inset: 0; border-radius: inherit; background: linear-gradient(110deg, transparent 35%, rgba(255, 236, 160, 0.22) 48%, rgba(255, 255, 255, 0.35) 50%, rgba(255, 236, 160, 0.22) 52%, transparent 65%); background-size: 250% 100%; background-position: 150% 0; animation: ace-pcard-sweep 4.5s ease-in-out infinite; }
 .ace-pcard-wrap { margin-top: 1.25rem; display: grid; gap: 0.6rem; }
 .ace-pcard-note { font-size: 0.75rem; line-height: 1.55; color: #a9abb3; max-width: 30rem; }
@@ -7806,39 +7806,39 @@ html[dir="rtl"] .ace-hub-card-face {
 /* r10: extended match analysis (sample layout under Coming soon plate) */
 .ace-analysis-grid { position: relative; margin-top: 1.5rem; display: grid; gap: 1rem; }
 @media (min-width: 900px) { .ace-analysis-grid { grid-template-columns: 1.4fr 1fr; } .ace-analysis-rounds { grid-column: 1 / -1; } }
-.ace-analysis-panel { border: 1px dashed rgba(255, 215, 0, 0.3); border-radius: 1.25rem; padding: 1rem; background: #121212; }
-.ace-analysis-panel h2 { font-size: 0.72rem; letter-spacing: 0.2em; text-transform: uppercase; color: #ffd700; }
+.ace-analysis-panel { border: 1px dashed rgba(212, 175, 55, 0.3); border-radius: 1.25rem; padding: 1rem; background: #121212; }
+.ace-analysis-panel h2 { font-size: 0.72rem; letter-spacing: 0.2em; text-transform: uppercase; color: #ffd76a; }
 .ace-analysis-sample { filter: grayscale(0.6) blur(1.5px); opacity: 0.55; pointer-events: none; user-select: none; }
 .ace-analysis-map { margin-top: 0.75rem; aspect-ratio: 1; border-radius: 0.9rem; background-size: cover; background-position: center; position: relative; }
-.ace-analysis-map::after { content: ""; position: absolute; inset: 0; border-radius: inherit; background: repeating-linear-gradient(0deg, rgba(255,215,0,0.08) 0 1px, transparent 1px 10%), repeating-linear-gradient(90deg, rgba(255,215,0,0.08) 0 1px, transparent 1px 10%); }
-.ace-analysis-ring { margin: 1rem auto 0; width: 9rem; aspect-ratio: 1; border-radius: 999px; border: 10px solid rgba(255, 215, 0, 0.18); display: grid; place-items: center; color: #a9abb3; font-weight: 600; }
-.ace-analysis-bars { margin-top: 0.75rem; height: 9rem; display: flex; align-items: flex-end; gap: 4px; border-bottom: 1px solid rgba(255,215,0,0.3); border-left: 1px solid rgba(255,215,0,0.3); padding: 0 4px; }
-.ace-analysis-bars span { flex: 1; height: 100%; border: 1px dashed rgba(255, 215, 0, 0.18); border-bottom: 0; border-radius: 3px 3px 0 0; }
+.ace-analysis-map::after { content: ""; position: absolute; inset: 0; border-radius: inherit; background: repeating-linear-gradient(0deg, rgba(212, 175, 55,0.08) 0 1px, transparent 1px 10%), repeating-linear-gradient(90deg, rgba(212, 175, 55,0.08) 0 1px, transparent 1px 10%); }
+.ace-analysis-ring { margin: 1rem auto 0; width: 9rem; aspect-ratio: 1; border-radius: 999px; border: 10px solid rgba(212, 175, 55, 0.18); display: grid; place-items: center; color: #a9abb3; font-weight: 600; }
+.ace-analysis-bars { margin-top: 0.75rem; height: 9rem; display: flex; align-items: flex-end; gap: 4px; border-bottom: 1px solid rgba(212, 175, 55,0.3); border-left: 1px solid rgba(212, 175, 55,0.3); padding: 0 4px; }
+.ace-analysis-bars span { flex: 1; height: 100%; border: 1px dashed rgba(212, 175, 55, 0.18); border-bottom: 0; border-radius: 3px 3px 0 0; }
 .ace-analysis-overlay { position: absolute; inset: 0; display: grid; place-items: center; z-index: 2; }
-.ace-analysis-tag { display: inline-block; margin-top: 1rem; font-size: 0.66rem; letter-spacing: 0.2em; font-weight: 700; color: #121212; background: #ffd700; border-radius: 999px; padding: 0.25rem 0.75rem; }
-.ace-analysis-gate { margin-top: 1rem; max-width: 46rem; font-size: 0.85rem; line-height: 1.6; color: #d8c98a; border-left: 2px solid rgba(255, 215, 0, 0.5); padding-left: 0.75rem; }
+.ace-analysis-tag { display: inline-block; margin-top: 1rem; font-size: 0.66rem; letter-spacing: 0.2em; font-weight: 700; color: #121212; background: #ffd76a; border-radius: 999px; padding: 0.25rem 0.75rem; }
+.ace-analysis-gate { margin-top: 1rem; max-width: 46rem; font-size: 0.85rem; line-height: 1.6; color: #d8c98a; border-left: 2px solid rgba(212, 175, 55, 0.5); padding-left: 0.75rem; }
 
 /* Round 11: Premium rank codex */
-.ace-pcodex { margin-top: 2.5rem; border-radius: 1.5rem; border: 1px solid rgba(255,215,0,0.28); background: radial-gradient(120% 80% at 0% 0%, rgba(212,175,55,0.08), transparent 60%), #121212; padding: 1.5rem; }
+.ace-pcodex { margin-top: 2.5rem; border-radius: 1.5rem; border: 1px solid rgba(212, 175, 55,0.28); background: radial-gradient(120% 80% at 0% 0%, rgba(212,175,55,0.08), transparent 60%), #121212; padding: 1.5rem; }
 @media (min-width: 640px) { .ace-pcodex { padding: 2rem; } }
 .ace-pcodex-head { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 0.5rem; }
 .ace-pcodex-grid { margin-top: 1.5rem; display: grid; gap: 0.75rem; }
 @media (min-width: 768px) { .ace-pcodex-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
-.ace-pcodex-card { display: flex; gap: 1rem; align-items: center; border-radius: 1rem; border: 1px solid rgba(255,215,0,0.2); background: linear-gradient(160deg, #17171a, #0d0d0f); padding: 0.9rem 1rem; }
+.ace-pcodex-card { display: flex; gap: 1rem; align-items: center; border-radius: 1rem; border: 1px solid rgba(212, 175, 55,0.2); background: linear-gradient(160deg, #17171a, #0d0d0f); padding: 0.9rem 1rem; }
 .ace-pcodex-card img { width: 88px; height: 88px; object-fit: contain; flex-shrink: 0; filter: drop-shadow(0 8px 16px rgba(0,0,0,0.6)) drop-shadow(0 0 10px rgba(212,175,55,0.18)); }
 
 /* Round 11: 3D player stats console */
 .ace-s3d { margin-top: 1.75rem; display: grid; gap: 1.25rem; }
 @media (min-width: 1024px) { .ace-s3d { grid-template-columns: minmax(0, 1.7fr) minmax(0, 1fr); } }
-.ace-s3d-panel { position: relative; border-radius: 1.5rem; border: 1px solid rgba(255,215,0,0.24); background: linear-gradient(165deg, #1a1a1d 0%, #0e0e10 55%, #09090a 100%); padding: 1.4rem; box-shadow: 0 1px 0 rgba(255,255,255,0.05) inset, 0 -1px 0 rgba(0,0,0,0.6) inset, 0 24px 48px -18px rgba(0,0,0,0.8), 0 0 0 1px rgba(0,0,0,0.4); }
+.ace-s3d-panel { position: relative; border-radius: 1.5rem; border: 1px solid rgba(212, 175, 55,0.24); background: linear-gradient(165deg, #1a1a1d 0%, #0e0e10 55%, #09090a 100%); padding: 1.4rem; box-shadow: 0 1px 0 rgba(255,255,255,0.05) inset, 0 -1px 0 rgba(0,0,0,0.6) inset, 0 24px 48px -18px rgba(0,0,0,0.8), 0 0 0 1px rgba(0,0,0,0.4); }
 .ace-s3d-panel-head { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 0.5rem; }
 .ace-s3d-panel h2 { font-size: 1.05rem; font-weight: 700; color: #f5f3ec; letter-spacing: 0.02em; }
 .ace-s3d-note { margin-top: 0.35rem; font-size: 0.82rem; color: #a9abb3; }
-.ace-s3d-sample, .ace-s3d-soon { font-size: 0.62rem; font-weight: 800; letter-spacing: 0.12em; text-transform: uppercase; color: #ffd700; border: 1px solid rgba(255,215,0,0.4); border-radius: 999px; padding: 0.12rem 0.55rem; }
+.ace-s3d-sample, .ace-s3d-soon { font-size: 0.62rem; font-weight: 800; letter-spacing: 0.12em; text-transform: uppercase; color: #ffd76a; border: 1px solid rgba(212, 175, 55,0.4); border-radius: 999px; padding: 0.12rem 0.55rem; }
 .ace-s3d-kpis { margin-top: 1rem; display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 0.6rem; }
-.ace-s3d-kpis div { border-radius: 0.9rem; background: linear-gradient(180deg, #202024, #121214); border: 1px solid rgba(255,215,0,0.14); padding: 0.6rem 0.75rem; box-shadow: 0 8px 18px -10px rgba(0,0,0,0.9); }
+.ace-s3d-kpis div { border-radius: 0.9rem; background: linear-gradient(180deg, #202024, #121214); border: 1px solid rgba(212, 175, 55,0.14); padding: 0.6rem 0.75rem; box-shadow: 0 8px 18px -10px rgba(0,0,0,0.9); }
 .ace-s3d-kpis dt { font-size: 0.66rem; letter-spacing: 0.1em; text-transform: uppercase; color: #a9abb3; }
-.ace-s3d-kpis dd { margin-top: 0.15rem; font-size: 1.25rem; font-weight: 700; color: #ffd700; font-variant-numeric: tabular-nums; }
+.ace-s3d-kpis dd { margin-top: 0.15rem; font-size: 1.25rem; font-weight: 700; color: #ffd76a; font-variant-numeric: tabular-nums; }
 .ace-s3d-stage { margin-top: 1rem; perspective: 1100px; }
 .ace-s3d-plane { transform: rotateX(16deg); transform-origin: 50% 100%; border-radius: 1rem; border: 1px solid rgba(212,175,55,0.2); background: linear-gradient(180deg, rgba(212,175,55,0.06), rgba(0,0,0,0) 70%), repeating-linear-gradient(90deg, rgba(212,175,55,0.07) 0 1px, transparent 1px 48px), #0b0b0c; padding: 0.75rem; box-shadow: 0 30px 40px -24px rgba(0,0,0,0.95); transition: transform 600ms ease; }
 .ace-s3d-chart:hover .ace-s3d-plane { transform: rotateX(8deg); }
@@ -7853,7 +7853,7 @@ html[dir="rtl"] .ace-hub-card-face {
 .ace-s3d-ring figcaption { display: grid; gap: 0.35rem; justify-items: start; }
 .ace-s3d-ring figcaption strong { color: #f5f3ec; font-size: 0.95rem; }
 .ace-s3d-ring figcaption small { font-size: 0.75rem; line-height: 1.4; color: #a9abb3; }
-.ace-s3d-gate { margin-top: 1.25rem; max-width: 46rem; border-radius: 1rem; border: 1px solid rgba(255,215,0,0.3); background: #121214; padding: 1rem 1.1rem; font-size: 0.88rem; color: #a9abb3; }
+.ace-s3d-gate { margin-top: 1.25rem; max-width: 46rem; border-radius: 1rem; border: 1px solid rgba(212, 175, 55,0.3); background: #121214; padding: 1rem 1.1rem; font-size: 0.88rem; color: #a9abb3; }
 @keyframes ace-s3d-spin { to { transform: rotate(360deg); } }
 @media (prefers-reduced-motion: reduce) {
   .ace-s3d-ring-arc { animation: none; }
@@ -7864,30 +7864,30 @@ html[dir="rtl"] .ace-hub-card-face {
 /* Round 12: floating rank emblem + avatar */
 .ace-float-emblem { position: relative; display: inline-grid; place-items: center; flex-shrink: 0; perspective: 600px; }
 .ace-float-emblem img { position: relative; width: 100%; height: 100%; object-fit: contain; filter: drop-shadow(0 14px 14px rgba(0,0,0,0.65)) drop-shadow(0 0 10px rgba(212,175,55,0.35)); animation: ace-emblem-float 5.5s ease-in-out infinite; transform-style: preserve-3d; }
-.ace-float-emblem-glow { position: absolute; inset: 12%; border-radius: 999px; background: radial-gradient(circle, rgba(255,215,0,0.35), rgba(212,175,55,0.08) 55%, transparent 70%); filter: blur(8px); animation: ace-emblem-glow 5.5s ease-in-out infinite; }
+.ace-float-emblem-glow { position: absolute; inset: 12%; border-radius: 999px; background: radial-gradient(circle, rgba(212, 175, 55,0.35), rgba(212,175,55,0.08) 55%, transparent 70%); filter: blur(8px); animation: ace-emblem-glow 5.5s ease-in-out infinite; }
 @keyframes ace-emblem-float { 0%,100% { transform: translateY(0) rotateY(-10deg) rotateX(4deg); } 50% { transform: translateY(-7px) rotateY(10deg) rotateX(-2deg); } }
 @keyframes ace-emblem-glow { 0%,100% { opacity: 0.55; } 50% { opacity: 1; } }
-.ace-avatar3d { display: inline-grid; place-items: center; flex-shrink: 0; overflow: hidden; border-radius: 1rem; border: 1px solid rgba(255,215,0,0.45); background: linear-gradient(160deg, #2a2516, #0d0d0f); box-shadow: 0 10px 22px -10px rgba(0,0,0,0.9), 0 0 0 3px rgba(212,175,55,0.08); color: #ffd700; font-weight: 800; font-size: 1.1rem; }
+.ace-avatar3d { display: inline-grid; place-items: center; flex-shrink: 0; overflow: hidden; border-radius: 1rem; border: 1px solid rgba(212, 175, 55,0.45); background: linear-gradient(160deg, #2a2516, #0d0d0f); box-shadow: 0 10px 22px -10px rgba(0,0,0,0.9), 0 0 0 3px rgba(212,175,55,0.08); color: #ffd76a; font-weight: 800; font-size: 1.1rem; }
 .ace-avatar3d img { width: 100%; height: 100%; object-fit: cover; }
 
 /* Round 12: home ops panels */
 .ace-ops3d { display: grid; gap: 1rem; }
 @media (min-width: 1024px) { .ace-ops3d { grid-template-columns: 1.25fr 1fr 1fr; align-items: stretch; } }
 .ace-ops3d-stack { display: grid; gap: 1rem; }
-.ace-ops3d-card { position: relative; display: flex; flex-direction: column; gap: 0.6rem; min-width: 0; border-radius: 1.4rem; border: 1px solid rgba(255,215,0,0.22); background: linear-gradient(165deg, #1b1b1e 0%, #0f0f11 55%, #09090a 100%); padding: 1.25rem; box-shadow: 0 1px 0 rgba(255,255,255,0.05) inset, 0 24px 44px -22px rgba(0,0,0,0.9); }
+.ace-ops3d-card { position: relative; display: flex; flex-direction: column; gap: 0.6rem; min-width: 0; border-radius: 1.4rem; border: 1px solid rgba(212, 175, 55,0.22); background: linear-gradient(165deg, #1b1b1e 0%, #0f0f11 55%, #09090a 100%); padding: 1.25rem; box-shadow: 0 1px 0 rgba(255,255,255,0.05) inset, 0 24px 44px -22px rgba(0,0,0,0.9); }
 .ace-ops3d-kicker { font-size: 0.66rem; font-weight: 800; letter-spacing: 0.2em; text-transform: uppercase; color: #d4af37; }
 .ace-ops3d-row { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 0.5rem; }
-.ace-ops3d-chip { font-size: 0.6rem; font-weight: 800; letter-spacing: 0.12em; color: #ffd700; border: 1px solid rgba(255,215,0,0.4); border-radius: 999px; padding: 0.12rem 0.55rem; }
+.ace-ops3d-chip { font-size: 0.6rem; font-weight: 800; letter-spacing: 0.12em; color: #ffd76a; border: 1px solid rgba(212, 175, 55,0.4); border-radius: 999px; padding: 0.12rem 0.55rem; }
 .ace-ops3d-hero { display: flex; align-items: center; gap: 0.9rem; }
 .ace-ops3d-hero .ace-float-emblem { margin-inline-start: auto; }
 .ace-ops3d-name { font-size: 1.3rem; font-weight: 700; color: #f5f3ec; overflow-wrap: anywhere; }
 .ace-ops3d-title { font-size: 1.05rem; font-weight: 700; color: #f5f3ec; }
 .ace-ops3d-rank { font-size: 0.78rem; letter-spacing: 0.1em; color: #ffd76a; }
-.ace-ops3d-elite { display: inline-flex; align-items: center; gap: 0.4rem; margin-top: 0.25rem; font-size: 0.68rem; font-weight: 800; letter-spacing: 0.18em; color: #ffd700; }
+.ace-ops3d-elite { display: inline-flex; align-items: center; gap: 0.4rem; margin-top: 0.25rem; font-size: 0.68rem; font-weight: 800; letter-spacing: 0.18em; color: #ffd76a; }
 .ace-ops3d-metrics { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0.5rem; }
-.ace-ops3d-metrics div { border-radius: 0.85rem; border: 1px solid rgba(255,215,0,0.14); background: linear-gradient(180deg, #202024, #121214); padding: 0.55rem 0.7rem; }
+.ace-ops3d-metrics div { border-radius: 0.85rem; border: 1px solid rgba(212, 175, 55,0.14); background: linear-gradient(180deg, #202024, #121214); padding: 0.55rem 0.7rem; }
 .ace-ops3d-metrics dt { font-size: 0.62rem; letter-spacing: 0.1em; text-transform: uppercase; color: #a9abb3; }
-.ace-ops3d-metrics dd { margin-top: 0.1rem; font-size: 1.15rem; font-weight: 700; color: #ffd700; font-variant-numeric: tabular-nums; }
+.ace-ops3d-metrics dd { margin-top: 0.1rem; font-size: 1.15rem; font-weight: 700; color: #ffd76a; font-variant-numeric: tabular-nums; }
 .ace-ops3d-note { font-size: 0.82rem; line-height: 1.5; color: #a9abb3; }
 .ace-ops3d-list { display: grid; gap: 0.4rem; }
 .ace-ops3d-list div { display: flex; justify-content: space-between; gap: 0.75rem; border-bottom: 1px solid rgba(255,255,255,0.06); padding-bottom: 0.35rem; font-size: 0.82rem; }
@@ -7897,11 +7897,11 @@ html[dir="rtl"] .ace-hub-card-face {
 .ace-ops3d-link { margin-top: auto; font-size: 0.8rem; color: #ffd76a; text-decoration: underline; text-underline-offset: 3px; }
 
 /* Round 12: match room */
-.ace-room-showcase { margin: 0.5rem 0 1rem; display: inline-block; border-radius: 999px; border: 1px solid rgba(255,215,0,0.45); padding: 0.3rem 0.85rem; font-size: 0.72rem; font-weight: 700; letter-spacing: 0.08em; color: #ffd700; background: rgba(212,175,55,0.08); }
+.ace-room-showcase { margin: 0.5rem 0 1rem; display: inline-block; border-radius: 999px; border: 1px solid rgba(212, 175, 55,0.45); padding: 0.3rem 0.85rem; font-size: 0.72rem; font-weight: 700; letter-spacing: 0.08em; color: #ffd76a; background: rgba(212,175,55,0.08); }
 .ace-room-slot { align-items: center; }
 .ace-room-slot .ace-float-emblem { margin-inline-start: auto; }
 .ace-room-rp { font-size: 0.72rem; color: #ffd76a; font-variant-numeric: tabular-nums; }
-.ace-room-operator { position: relative; isolation: isolate; display: block; height: 300px; margin: 0; border-radius: 1.2rem; overflow: hidden; border: 1px solid rgba(255,215,0,0.22); box-shadow: 0 30px 60px -24px rgba(0,0,0,0.95), inset 0 0 0 1px rgba(255,215,0,0.05); background: radial-gradient(ellipse at 50% 85%, rgba(255,190,60,0.14), transparent 60%), #0b0b0c; }
+.ace-room-operator { position: relative; isolation: isolate; display: block; height: 300px; margin: 0; border-radius: 1.2rem; overflow: hidden; border: 1px solid rgba(212, 175, 55,0.22); box-shadow: 0 30px 60px -24px rgba(0,0,0,0.95), inset 0 0 0 1px rgba(212, 175, 55,0.05); background: radial-gradient(ellipse at 50% 85%, rgba(255,190,60,0.14), transparent 60%), #0b0b0c; }
 .ace-room-operator img { position: relative; z-index: 1; display: block; width: 100%; height: 100%; object-fit: cover; object-position: 50% 30%; transform-origin: 50% 90%; animation: ace-operator-float 7s ease-in-out infinite; filter: drop-shadow(0 0 18px rgba(255,200,80,0.18)) contrast(1.04); }
 .ace-room-operator[data-side="rebel"] img { animation-delay: -3.5s; }
 .ace-room-operator::after { content: ""; position: absolute; inset: 0; z-index: 2; pointer-events: none; background: linear-gradient(180deg, rgba(11,11,12,0) 55%, rgba(11,11,12,0.92) 100%), linear-gradient(90deg, rgba(11,11,12,0.55), transparent 22%, transparent 78%, rgba(11,11,12,0.55)); }
@@ -7917,7 +7917,7 @@ html[dir="rtl"] .ace-hub-card-face {
 }
 @media (min-width: 1280px) { .ace-room-operator { height: auto; align-self: stretch; } .ace-play-horizon { grid-template-columns: minmax(0, 0.7fr) minmax(0, 1fr) 4.5rem minmax(0, 1fr) minmax(0, 0.7fr) !important; } }
 .ace-room-sample { font-size: 0.72rem; color: #a9abb3; margin: 0.2rem 0 0.4rem; }
-.ace-room-sample-tag { display: inline-block; margin-inline-end: 0.4rem; font-size: 0.55rem; font-weight: 800; letter-spacing: 0.1em; color: #ffd700; border: 1px solid rgba(255,215,0,0.35); border-radius: 999px; padding: 0 0.35rem; vertical-align: middle; }
+.ace-room-sample-tag { display: inline-block; margin-inline-end: 0.4rem; font-size: 0.55rem; font-weight: 800; letter-spacing: 0.1em; color: #ffd76a; border: 1px solid rgba(212, 175, 55,0.35); border-radius: 999px; padding: 0 0.35rem; vertical-align: middle; }
 .ace-room-pending { display: inline-block; width: 0.55rem; height: 0.55rem; border-radius: 999px; border: 1.5px solid #8a7a4a; margin-inline-end: 0.35rem; vertical-align: middle; }
 .ace-room-art-note { margin-top: 0.75rem; font-size: 0.72rem; color: #8d8f96; }
 
@@ -7926,16 +7926,16 @@ html[dir="rtl"] .ace-hub-card-face {
 }
 
 /* R14: Premium rank art tag (match room, lobby, leaderboard). Cosmetic only. */
-.ace-premium-tag { display: inline-flex; align-items: center; margin-inline-start: 0.4rem; padding: 0.08rem 0.45rem; border-radius: 999px; border: 1px solid rgba(255,215,0,0.7); background: linear-gradient(135deg, #3a2a05, #b8860b 55%, #ffd700); color: #120d02; font-size: 0.58rem; font-weight: 800; letter-spacing: 0.14em; line-height: 1.4; text-transform: uppercase; vertical-align: middle; box-shadow: 0 0 10px rgba(255,200,60,0.35); white-space: nowrap; }
-.ace-room-slot.is-premium { border-color: rgba(255,215,0,0.55); box-shadow: inset 0 0 0 1px rgba(255,215,0,0.18), 0 0 22px -8px rgba(255,200,60,0.45); }
+.ace-premium-tag { display: inline-flex; align-items: center; margin-inline-start: 0.4rem; padding: 0.08rem 0.45rem; border-radius: 999px; border: 1px solid rgba(212, 175, 55,0.7); background: linear-gradient(135deg, #3a2a05, #b8860b 55%, #ffd76a); color: #120d02; font-size: 0.58rem; font-weight: 800; letter-spacing: 0.14em; line-height: 1.4; text-transform: uppercase; vertical-align: middle; box-shadow: 0 0 10px rgba(255,200,60,0.35); white-space: nowrap; }
+.ace-room-slot.is-premium { border-color: rgba(212, 175, 55,0.55); box-shadow: inset 0 0 0 1px rgba(212, 175, 55,0.18), 0 0 22px -8px rgba(255,200,60,0.45); }
 
 /* R17: A.C.E Rating Points rules on /ranks. */
-.ace-rp-rules { margin-top: 3rem; scroll-margin-top: 6rem; border-radius: 1.5rem; border: 1px solid rgba(255,215,0,0.28); padding: 1.5rem; background: radial-gradient(120% 80% at 0% 0%, rgba(255,215,0,0.08), transparent 55%), #111113; }
+.ace-rp-rules { margin-top: 3rem; scroll-margin-top: 6rem; border-radius: 1.5rem; border: 1px solid rgba(212, 175, 55,0.28); padding: 1.5rem; background: radial-gradient(120% 80% at 0% 0%, rgba(212, 175, 55,0.08), transparent 55%), #111113; }
 @media (min-width: 640px) { .ace-rp-rules { padding: 2rem; } }
 .ace-rp-grid { margin-top: 1.5rem; display: grid; gap: 1.25rem; }
 @media (min-width: 1024px) { .ace-rp-grid { grid-template-columns: 1.15fr 1fr; } }
 .ace-rp-card { border-radius: 1rem; border: 1px solid rgba(255,255,255,0.08); background: rgba(0,0,0,0.35); padding: 1.1rem; min-width: 0; }
-.ace-rp-card h3 { font-size: 0.75rem; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: #ffd700; }
+.ace-rp-card h3 { font-size: 0.75rem; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: #ffd76a; }
 .ace-rp-table { margin-top: 0.75rem; width: 100%; border-collapse: collapse; font-size: 0.82rem; }
 .ace-rp-table th, .ace-rp-table td { text-align: start; vertical-align: top; padding: 0.55rem 0.5rem; border-top: 1px solid rgba(255,255,255,0.07); }
 .ace-rp-table thead th { border-top: 0; font-size: 0.66rem; letter-spacing: 0.14em; text-transform: uppercase; color: rgba(255,255,255,0.5); font-weight: 600; }
@@ -7943,7 +7943,7 @@ html[dir="rtl"] .ace-hub-card-face {
 .ace-rp-table td { color: #c9cbd2; line-height: 1.5; }
 .ace-rp-table.is-numeric td { font-variant-numeric: tabular-nums; white-space: nowrap; }
 .ace-rp-table.is-numeric tbody th { width: auto; }
-.ace-rp-table tr.is-start th, .ace-rp-table tr.is-start td { color: #ffd700; }
+.ace-rp-table tr.is-start th, .ace-rp-table tr.is-start td { color: #ffd76a; }
 .ace-rp-examples { margin-top: 0.7rem; display: grid; gap: 0.55rem; padding-inline-start: 1.1rem; list-style: decimal; font-size: 0.82rem; line-height: 1.55; color: #c9cbd2; }
 .ace-rp-note { margin-top: 0.9rem; font-size: 0.72rem; line-height: 1.5; color: rgba(255,255,255,0.5); }
 
@@ -7956,7 +7956,7 @@ html[dir="rtl"] .ace-hub-card-face {
 ::-webkit-scrollbar-thumb { background: linear-gradient(180deg, #8a6d1f, #d4af37); border-radius: 8px; border: 2px solid #0b0a08; }
 ::-webkit-scrollbar-thumb:hover { background: #f3d77a; }
 ::-webkit-scrollbar-corner { background: #0b0a08; }
-.ace-admin-navlink { display: inline-flex; align-items: center; min-height: 2.5rem; padding: 0 0.8rem; border-radius: 0.375rem; border: 1px solid rgba(255,215,0,0.6); color: #FFD700; font-size: 0.7rem; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; background: rgba(255,215,0,0.08); }
+.ace-admin-navlink { display: inline-flex; align-items: center; min-height: 2.5rem; padding: 0 0.8rem; border-radius: 0.375rem; border: 1px solid rgba(212, 175, 55,0.6); color: #FFD76A; font-size: 0.7rem; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; background: rgba(212, 175, 55,0.08); }
 
 /* R38-C: hero hierarchy — expansion lines, one supporting line, compact status strip. Tokens only. */
 .ace-hero-expansion { display: grid; justify-items: center; gap: 0.2rem; margin: 0.5rem 0 0; padding: 0; list-style: none; }

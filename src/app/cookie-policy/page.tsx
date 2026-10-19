@@ -35,7 +35,7 @@ export default async function CookiePolicyPage() {
       <LegalSection n={3} title={policy.analytics.title}>
         <p>
           {policy.analytics.before}{" "}
-          <code className="text-[#FFD700]">ace-cookie-consent-v1</code>{" "}
+          <code className="text-[#FFD76A]">ace-cookie-consent-v1</code>{" "}
           {policy.analytics.after}
         </p>
       </LegalSection>

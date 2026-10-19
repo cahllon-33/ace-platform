@@ -34,7 +34,7 @@ export function PlanCards({ headingLevel = 2 }: { headingLevel?: 2 | 3 }) {
             {tier.id !== "free" ? (
               <>
                 <EliteSeal floating />
-                <p className="mb-4 text-[0.65rem] font-bold tracking-[0.22em] text-[#FFD700]">
+                <p className="mb-4 text-[0.65rem] font-bold tracking-[0.22em] text-[#FFD76A]">
                   {text.card.elite}
                 </p>
               </>
@@ -49,7 +49,7 @@ export function PlanCards({ headingLevel = 2 }: { headingLevel?: 2 | 3 }) {
                 <span className="ms-1 text-base font-medium text-ace-muted">{text.period.monthly}</span>
               ) : null}
             </p>
-            <p className="mt-4 text-sm font-semibold tracking-wide text-[#FFD700]">{copy.title}</p>
+            <p className="mt-4 text-sm font-semibold tracking-wide text-[#FFD76A]">{copy.title}</p>
             <ul className="mt-6 flex flex-1 flex-col gap-3 text-sm leading-6">
               {copy.points.map((point) => (
                 <li key={point} className="flex gap-3 text-[#C8C4B8]">
@@ -59,7 +59,7 @@ export function PlanCards({ headingLevel = 2 }: { headingLevel?: 2 | 3 }) {
               ))}
             </ul>
             {tier.id !== "free" ? (
-              <div className="mt-6 border-t border-[#FFD700]/20 pt-4">
+              <div className="mt-6 border-t border-[#FFD76A]/20 pt-4">
                 <ComingSoonPlate label={soon} size="md" />
               </div>
             ) : null}
