@@ -355,5 +355,42 @@ export const UI_PL: Ui = {
       "s3": "Jak zgłosić oszusta?",
       "kbNote": "Odpowiedzi pochodzą z treści strony A.C.E."
     }
+  },
+  "r40": {
+    "dash": {
+      "kicker": "Centrum dowodzenia",
+      "welcome": "Witaj ponownie, {name}",
+      "quick": "Szybkie akcje",
+      "qProfile": "Profil publiczny",
+      "qBoard": "Ranking",
+      "qRanks": "Tabela rang",
+      "qPlay": "Graj",
+      "statRp": "Ocena",
+      "statRank": "Ranga",
+      "statRecord": "Bilans",
+      "statWinRate": "Odsetek wygranych",
+      "statPlan": "Plan",
+      "toNext": "{rp} RP do {next}",
+      "top": "Szczyt rankingu",
+      "activity": "Ostatnia aktywność",
+      "activityEmpty": "Brak zarejestrowanej aktywności. Mecze i logowania pojawią się tutaj, gdy tylko nastąpią.",
+      "evSignIn": "Zalogowano przez Steam",
+      "evRating": "Ocena {before} → {after}",
+      "noRecord": "Brak meczów",
+      "account": "Konto"
+    },
+    "nf": {
+      "code": "Błąd 404",
+      "title": "Ta strona jest poza mapą",
+      "body": "Link może być stary lub błędnie wpisany. Każda część A.C.E. jest stąd o jedno kliknięcie.",
+      "home": "Wróć na stronę główną",
+      "ranks": "Zobacz rangi"
+    },
+    "err": {
+      "code": "Coś się zepsuło",
+      "title": "Wystąpił nieoczekiwany błąd",
+      "body": "Nic nie zostało pobrane, a twoje konto jest bezpieczne. Spróbuj ponownie lub wróć na stronę główną.",
+      "retry": "Spróbuj ponownie"
+    }
   }
 };

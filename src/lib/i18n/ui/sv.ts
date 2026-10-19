@@ -355,5 +355,42 @@ export const UI_SV: Ui = {
       "s3": "Hur anmäler jag en fuskare?",
       "kbNote": "Svaren hämtas från innehållet på A.C.E.:s webbplats."
     }
+  },
+  "r40": {
+    "dash": {
+      "kicker": "Kommandocentral",
+      "welcome": "Välkommen tillbaka, {name}",
+      "quick": "Snabbåtgärder",
+      "qProfile": "Offentlig profil",
+      "qBoard": "Topplista",
+      "qRanks": "Rangtabell",
+      "qPlay": "Spela",
+      "statRp": "Betyg",
+      "statRank": "Rang",
+      "statRecord": "Facit",
+      "statWinRate": "Vinstandel",
+      "statPlan": "Plan",
+      "toNext": "{rp} RP till {next}",
+      "top": "Toppen av stegen",
+      "activity": "Senaste aktivitet",
+      "activityEmpty": "Ingen registrerad aktivitet än. Matcher och inloggningar visas här när de sker.",
+      "evSignIn": "Inloggad med Steam",
+      "evRating": "Betyg {before} → {after}",
+      "noRecord": "Inga matcher än",
+      "account": "Konto"
+    },
+    "nf": {
+      "code": "Fel 404",
+      "title": "Den här sidan är utanför kartan",
+      "body": "Länken kan vara gammal eller felstavad. Allt på A.C.E. är ett klick bort härifrån.",
+      "home": "Tillbaka till start",
+      "ranks": "Visa rangordningar"
+    },
+    "err": {
+      "code": "Något gick sönder",
+      "title": "Ett oväntat fel inträffade",
+      "body": "Inget har debiterats och ditt konto är säkert. Försök igen eller gå tillbaka till start.",
+      "retry": "Försök igen"
+    }
   }
 };

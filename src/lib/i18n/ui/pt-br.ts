@@ -355,5 +355,42 @@ export const UI_PT_BR: Ui = {
       "s3": "Como denuncio um trapaceiro?",
       "kbNote": "As respostas vêm do conteúdo do site da A.C.E."
     }
+  },
+  "r40": {
+    "dash": {
+      "kicker": "Central de comando",
+      "welcome": "Bem-vindo de volta, {name}",
+      "quick": "Ações rápidas",
+      "qProfile": "Perfil público",
+      "qBoard": "Ranking",
+      "qRanks": "Tabela de patentes",
+      "qPlay": "Jogar",
+      "statRp": "Pontuação",
+      "statRank": "Patente",
+      "statRecord": "Histórico",
+      "statWinRate": "Taxa de vitórias",
+      "statPlan": "Plano",
+      "toNext": "{rp} RP até {next}",
+      "top": "Topo do ranking",
+      "activity": "Atividade recente",
+      "activityEmpty": "Ainda não há atividade registrada. Partidas e logins aparecem aqui assim que acontecem.",
+      "evSignIn": "Login com Steam",
+      "evRating": "Pontuação {before} → {after}",
+      "noRecord": "Nenhuma partida ainda",
+      "account": "Conta"
+    },
+    "nf": {
+      "code": "Erro 404",
+      "title": "Esta página está fora do mapa",
+      "body": "O link pode estar antigo ou digitado errado. Todo o A.C.E. está a um clique daqui.",
+      "home": "Voltar ao início",
+      "ranks": "Ver patentes"
+    },
+    "err": {
+      "code": "Algo deu errado",
+      "title": "Ocorreu um erro inesperado",
+      "body": "Nada foi cobrado e sua conta está segura. Tente de novo ou volte ao início.",
+      "retry": "Tentar de novo"
+    }
   }
 };

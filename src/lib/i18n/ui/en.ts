@@ -296,6 +296,43 @@ export const UI_EN = {
       "s3": "How do I report a cheater?",
       "kbNote": "Answers are taken from the A.C.E. site content."
     }
+  },
+  "r40": {
+    "dash": {
+      "kicker": "Command center",
+      "welcome": "Welcome back, {name}",
+      "quick": "Quick actions",
+      "qProfile": "Public profile",
+      "qBoard": "Leaderboard",
+      "qRanks": "Rank table",
+      "qPlay": "Play",
+      "statRp": "Rating",
+      "statRank": "Rank",
+      "statRecord": "Record",
+      "statWinRate": "Win rate",
+      "statPlan": "Plan",
+      "toNext": "{rp} RP to {next}",
+      "top": "Top of the ladder",
+      "activity": "Recent activity",
+      "activityEmpty": "No recorded activity yet. Matches and sign-ins appear here as they happen.",
+      "evSignIn": "Signed in with Steam",
+      "evRating": "Rating {before} → {after}",
+      "noRecord": "No matches yet",
+      "account": "Account"
+    },
+    "nf": {
+      "code": "Error 404",
+      "title": "This page is off the map",
+      "body": "The link may be old or mistyped. Every part of A.C.E. is one click away from here.",
+      "home": "Back to home",
+      "ranks": "View ranks"
+    },
+    "err": {
+      "code": "Something broke",
+      "title": "We hit an unexpected error",
+      "body": "Nothing was charged and your account is safe. Try again or head back home.",
+      "retry": "Try again"
+    }
   }
 } as const;
 

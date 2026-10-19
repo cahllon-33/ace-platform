@@ -355,5 +355,42 @@ export const UI_FR: Ui = {
       "s3": "Comment signaler un tricheur ?",
       "kbNote": "Les réponses proviennent du contenu du site A.C.E."
     }
+  },
+  "r40": {
+    "dash": {
+      "kicker": "Centre de commandement",
+      "welcome": "Bon retour, {name}",
+      "quick": "Actions rapides",
+      "qProfile": "Profil public",
+      "qBoard": "Classement",
+      "qRanks": "Tableau des rangs",
+      "qPlay": "Jouer",
+      "statRp": "Score",
+      "statRank": "Rang",
+      "statRecord": "Bilan",
+      "statWinRate": "Taux de victoire",
+      "statPlan": "Formule",
+      "toNext": "{rp} RP avant {next}",
+      "top": "Sommet du classement",
+      "activity": "Activité récente",
+      "activityEmpty": "Aucune activité enregistrée pour l’instant. Les matchs et connexions apparaîtront ici dès qu’ils auront lieu.",
+      "evSignIn": "Connexion via Steam",
+      "evRating": "Score {before} → {after}",
+      "noRecord": "Aucun match pour l’instant",
+      "account": "Compte"
+    },
+    "nf": {
+      "code": "Erreur 404",
+      "title": "Cette page est hors de la carte",
+      "body": "Le lien est peut-être ancien ou mal saisi. Tout A.C.E. est à un clic d’ici.",
+      "home": "Retour à l’accueil",
+      "ranks": "Voir les rangs"
+    },
+    "err": {
+      "code": "Un problème est survenu",
+      "title": "Une erreur inattendue s’est produite",
+      "body": "Rien n’a été facturé et ton compte est en sécurité. Réessaie ou reviens à l’accueil.",
+      "retry": "Réessayer"
+    }
   }
 };

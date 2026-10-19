@@ -355,5 +355,42 @@ export const UI_ID: Ui = {
       "s3": "Bagaimana melaporkan pemain curang?",
       "kbNote": "Jawaban diambil dari konten situs A.C.E."
     }
+  },
+  "r40": {
+    "dash": {
+      "kicker": "Pusat komando",
+      "welcome": "Selamat datang kembali, {name}",
+      "quick": "Aksi cepat",
+      "qProfile": "Profil publik",
+      "qBoard": "Papan peringkat",
+      "qRanks": "Tabel peringkat",
+      "qPlay": "Main",
+      "statRp": "Rating",
+      "statRank": "Peringkat",
+      "statRecord": "Rekor",
+      "statWinRate": "Rasio menang",
+      "statPlan": "Paket",
+      "toNext": "{rp} RP lagi ke {next}",
+      "top": "Puncak tangga",
+      "activity": "Aktivitas terbaru",
+      "activityEmpty": "Belum ada aktivitas tercatat. Pertandingan dan login akan muncul di sini saat terjadi.",
+      "evSignIn": "Masuk dengan Steam",
+      "evRating": "Rating {before} → {after}",
+      "noRecord": "Belum ada pertandingan",
+      "account": "Akun"
+    },
+    "nf": {
+      "code": "Error 404",
+      "title": "Halaman ini di luar peta",
+      "body": "Tautan mungkin lama atau salah ketik. Semua bagian A.C.E. hanya sekali klik dari sini.",
+      "home": "Kembali ke beranda",
+      "ranks": "Lihat peringkat"
+    },
+    "err": {
+      "code": "Terjadi masalah",
+      "title": "Terjadi kesalahan tak terduga",
+      "body": "Tidak ada tagihan dan akunmu aman. Coba lagi atau kembali ke beranda.",
+      "retry": "Coba lagi"
+    }
   }
 };

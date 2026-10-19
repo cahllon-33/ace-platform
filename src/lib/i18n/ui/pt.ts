@@ -355,5 +355,42 @@ export const UI_PT: Ui = {
       "s3": "Como denuncio um batoteiro?",
       "kbNote": "As respostas vêm do conteúdo do site da A.C.E."
     }
+  },
+  "r40": {
+    "dash": {
+      "kicker": "Centro de comando",
+      "welcome": "Bem-vindo de volta, {name}",
+      "quick": "Ações rápidas",
+      "qProfile": "Perfil público",
+      "qBoard": "Classificação",
+      "qRanks": "Tabela de patentes",
+      "qPlay": "Jogar",
+      "statRp": "Pontuação",
+      "statRank": "Patente",
+      "statRecord": "Registo",
+      "statWinRate": "Taxa de vitórias",
+      "statPlan": "Plano",
+      "toNext": "{rp} RP até {next}",
+      "top": "Topo da classificação",
+      "activity": "Atividade recente",
+      "activityEmpty": "Ainda não há atividade registada. As partidas e os inícios de sessão aparecem aqui à medida que acontecem.",
+      "evSignIn": "Sessão iniciada com Steam",
+      "evRating": "Pontuação {before} → {after}",
+      "noRecord": "Ainda sem partidas",
+      "account": "Conta"
+    },
+    "nf": {
+      "code": "Erro 404",
+      "title": "Esta página está fora do mapa",
+      "body": "A ligação pode estar desatualizada ou mal escrita. Todo o A.C.E. está a um clique daqui.",
+      "home": "Voltar ao início",
+      "ranks": "Ver patentes"
+    },
+    "err": {
+      "code": "Algo correu mal",
+      "title": "Ocorreu um erro inesperado",
+      "body": "Nada foi cobrado e a tua conta está segura. Tenta novamente ou volta ao início.",
+      "retry": "Tentar novamente"
+    }
   }
 };

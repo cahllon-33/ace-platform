@@ -355,5 +355,42 @@ export const UI_TR: Ui = {
       "s3": "Hileciyi nasıl bildiririm?",
       "kbNote": "Yanıtlar A.C.E. sitesinin içeriğinden alınır."
     }
+  },
+  "r40": {
+    "dash": {
+      "kicker": "Komuta merkezi",
+      "welcome": "Tekrar hoş geldin, {name}",
+      "quick": "Hızlı işlemler",
+      "qProfile": "Herkese açık profil",
+      "qBoard": "Sıralama",
+      "qRanks": "Rütbe tablosu",
+      "qPlay": "Oyna",
+      "statRp": "Puan",
+      "statRank": "Rütbe",
+      "statRecord": "Kayıt",
+      "statWinRate": "Kazanma oranı",
+      "statPlan": "Plan",
+      "toNext": "{next} için {rp} RP",
+      "top": "Sıralamanın zirvesi",
+      "activity": "Son etkinlik",
+      "activityEmpty": "Henüz kayıtlı etkinlik yok. Maçlar ve girişler gerçekleştikçe burada görünür.",
+      "evSignIn": "Steam ile giriş yapıldı",
+      "evRating": "Puan {before} → {after}",
+      "noRecord": "Henüz maç yok",
+      "account": "Hesap"
+    },
+    "nf": {
+      "code": "Hata 404",
+      "title": "Bu sayfa haritanın dışında",
+      "body": "Bağlantı eski ya da yanlış yazılmış olabilir. A.C.E.'nin her yeri buradan tek tıkla ulaşılabilir.",
+      "home": "Ana sayfaya dön",
+      "ranks": "Rütbeleri gör"
+    },
+    "err": {
+      "code": "Bir şeyler bozuldu",
+      "title": "Beklenmeyen bir hata oluştu",
+      "body": "Hiçbir ücret alınmadı ve hesabın güvende. Tekrar dene veya ana sayfaya dön.",
+      "retry": "Tekrar dene"
+    }
   }
 };

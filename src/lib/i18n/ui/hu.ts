@@ -355,5 +355,42 @@ export const UI_HU: Ui = {
       "s3": "Hogyan jelentsek egy csalót?",
       "kbNote": "A válaszok az A.C.E. oldal tartalmából származnak."
     }
+  },
+  "r40": {
+    "dash": {
+      "kicker": "Parancsnoki központ",
+      "welcome": "Üdv újra, {name}",
+      "quick": "Gyors műveletek",
+      "qProfile": "Nyilvános profil",
+      "qBoard": "Ranglista",
+      "qRanks": "Rangtáblázat",
+      "qPlay": "Játék",
+      "statRp": "Pontszám",
+      "statRank": "Rang",
+      "statRecord": "Mérleg",
+      "statWinRate": "Győzelmi arány",
+      "statPlan": "Csomag",
+      "toNext": "Még {rp} RP: {next}",
+      "top": "A ranglista csúcsa",
+      "activity": "Legutóbbi aktivitás",
+      "activityEmpty": "Még nincs rögzített aktivitás. A meccsek és bejelentkezések itt jelennek meg, amint megtörténnek.",
+      "evSignIn": "Bejelentkezés Steammel",
+      "evRating": "Pontszám {before} → {after}",
+      "noRecord": "Még nincs meccs",
+      "account": "Fiók"
+    },
+    "nf": {
+      "code": "404-es hiba",
+      "title": "Ez az oldal nincs a térképen",
+      "body": "Lehet, hogy a link régi vagy elgépelt. Az A.C.E. minden része egy kattintásra van innen.",
+      "home": "Vissza a kezdőlapra",
+      "ranks": "Rangok megtekintése"
+    },
+    "err": {
+      "code": "Valami elromlott",
+      "title": "Váratlan hiba történt",
+      "body": "Nem történt terhelés, és a fiókod biztonságban van. Próbáld újra, vagy térj vissza a kezdőlapra.",
+      "retry": "Újra"
+    }
   }
 };

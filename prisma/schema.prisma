@@ -80,6 +80,11 @@ model User {
   competitiveRating Int              @default(1200)
   wins              Int              @default(0)
   losses            Int              @default(0)
+  /// Engine-calculated RP saved when an operator first overrides the rank; null = no override active.
+  rankOverrideBaseRp Int?
+  rankOverrideAt     DateTime?
+  /// Private operator note (admin only, never rendered publicly).
+  adminNote          String           @default("")
   createdAt         DateTime         @default(now())
   updatedAt         DateTime         @updatedAt
 
@@ -336,4 +341,20 @@ model SupportTicket {
   updatedAt  DateTime @updatedAt
 
   @@index([status, createdAt])
+}
+
+/// Append-only operator audit trail (rank overrides, bans, notes, plan changes).
+model AdminAuditLog {
+  id           String   @id @default(cuid())
+  /// "steam:<id>" for an allowlisted owner session, "password-gate" for the backup gate.
+  actor        String
+  action       String
+  targetUserId String?
+  oldValue     String   @default("")
+  newValue     String   @default("")
+  reason       String   @default("")
+  createdAt    DateTime @default(now())
+
+  @@index([targetUserId, createdAt])
+  @@index([createdAt])
 }

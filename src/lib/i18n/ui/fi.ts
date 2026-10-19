@@ -355,5 +355,42 @@ export const UI_FI: Ui = {
       "s3": "Miten ilmoitan huijarista?",
       "kbNote": "Vastaukset perustuvat A.C.E.-sivuston sisältöön."
     }
+  },
+  "r40": {
+    "dash": {
+      "kicker": "Komentokeskus",
+      "welcome": "Tervetuloa takaisin, {name}",
+      "quick": "Pikatoiminnot",
+      "qProfile": "Julkinen profiili",
+      "qBoard": "Tulostaulu",
+      "qRanks": "Arvotaulukko",
+      "qPlay": "Pelaa",
+      "statRp": "Pisteet",
+      "statRank": "Arvo",
+      "statRecord": "Tilasto",
+      "statWinRate": "Voittoprosentti",
+      "statPlan": "Tilaus",
+      "toNext": "{rp} RP tasoon {next}",
+      "top": "Tikkaiden huippu",
+      "activity": "Viimeaikainen toiminta",
+      "activityEmpty": "Ei vielä kirjattua toimintaa. Ottelut ja kirjautumiset näkyvät täällä sitä mukaa kuin niitä tapahtuu.",
+      "evSignIn": "Kirjauduttu Steamilla",
+      "evRating": "Pisteet {before} → {after}",
+      "noRecord": "Ei vielä otteluita",
+      "account": "Tili"
+    },
+    "nf": {
+      "code": "Virhe 404",
+      "title": "Tämä sivu on kartan ulkopuolella",
+      "body": "Linkki voi olla vanha tai kirjoitettu väärin. Kaikki A.C.E.:n osat ovat yhden klikkauksen päässä täältä.",
+      "home": "Takaisin etusivulle",
+      "ranks": "Näytä arvot"
+    },
+    "err": {
+      "code": "Jokin meni rikki",
+      "title": "Tapahtui odottamaton virhe",
+      "body": "Mitään ei veloitettu ja tilisi on turvassa. Yritä uudelleen tai palaa etusivulle.",
+      "retry": "Yritä uudelleen"
+    }
   }
 };

@@ -355,5 +355,42 @@ export const UI_ZH: Ui = {
       "s3": "如何举报作弊者？",
       "kbNote": "回答来自 A.C.E. 网站内容。"
     }
+  },
+  "r40": {
+    "dash": {
+      "kicker": "指挥中心",
+      "welcome": "欢迎回来，{name}",
+      "quick": "快捷操作",
+      "qProfile": "公开资料",
+      "qBoard": "排行榜",
+      "qRanks": "段位表",
+      "qPlay": "开始游戏",
+      "statRp": "积分",
+      "statRank": "段位",
+      "statRecord": "战绩",
+      "statWinRate": "胜率",
+      "statPlan": "方案",
+      "toNext": "距离{next}还差{rp} RP",
+      "top": "阶梯之巅",
+      "activity": "最近动态",
+      "activityEmpty": "暂无记录的动态。比赛和登录发生后会显示在这里。",
+      "evSignIn": "通过 Steam 登录",
+      "evRating": "积分 {before} → {after}",
+      "noRecord": "暂无比赛",
+      "account": "账户"
+    },
+    "nf": {
+      "code": "错误 404",
+      "title": "此页面不在地图上",
+      "body": "链接可能已过期或输入有误。从这里一键即可到达 A.C.E. 的任何页面。",
+      "home": "返回首页",
+      "ranks": "查看段位"
+    },
+    "err": {
+      "code": "出了点问题",
+      "title": "发生了意外错误",
+      "body": "没有产生任何扣费，你的账户是安全的。请重试或返回首页。",
+      "retry": "重试"
+    }
   }
 };

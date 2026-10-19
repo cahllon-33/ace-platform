@@ -355,5 +355,42 @@ export const UI_DE: Ui = {
       "s3": "Wie melde ich einen Cheater?",
       "kbNote": "Antworten stammen aus dem Inhalt der A.C.E.-Website."
     }
+  },
+  "r40": {
+    "dash": {
+      "kicker": "Kommandozentrale",
+      "welcome": "Willkommen zurück, {name}",
+      "quick": "Schnellaktionen",
+      "qProfile": "Öffentliches Profil",
+      "qBoard": "Bestenliste",
+      "qRanks": "Rangtabelle",
+      "qPlay": "Spielen",
+      "statRp": "Wertung",
+      "statRank": "Rang",
+      "statRecord": "Bilanz",
+      "statWinRate": "Siegquote",
+      "statPlan": "Plan",
+      "toNext": "Noch {rp} RP bis {next}",
+      "top": "Spitze der Rangliste",
+      "activity": "Letzte Aktivität",
+      "activityEmpty": "Noch keine erfasste Aktivität. Matches und Anmeldungen erscheinen hier, sobald sie passieren.",
+      "evSignIn": "Mit Steam angemeldet",
+      "evRating": "Wertung {before} → {after}",
+      "noRecord": "Noch keine Matches",
+      "account": "Konto"
+    },
+    "nf": {
+      "code": "Fehler 404",
+      "title": "Diese Seite ist nicht auf der Karte",
+      "body": "Der Link ist vielleicht veraltet oder falsch geschrieben. Jeder Bereich von A.C.E. ist von hier nur einen Klick entfernt.",
+      "home": "Zur Startseite",
+      "ranks": "Ränge ansehen"
+    },
+    "err": {
+      "code": "Etwas ist schiefgelaufen",
+      "title": "Ein unerwarteter Fehler ist aufgetreten",
+      "body": "Es wurde nichts berechnet und dein Konto ist sicher. Versuche es erneut oder kehre zur Startseite zurück.",
+      "retry": "Erneut versuchen"
+    }
   }
 };

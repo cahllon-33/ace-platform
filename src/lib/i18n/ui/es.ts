@@ -355,5 +355,42 @@ export const UI_ES: Ui = {
       "s3": "¿Cómo denuncio a un tramposo?",
       "kbNote": "Las respuestas provienen del contenido del sitio de A.C.E."
     }
+  },
+  "r40": {
+    "dash": {
+      "kicker": "Centro de mando",
+      "welcome": "Bienvenido de nuevo, {name}",
+      "quick": "Acciones rápidas",
+      "qProfile": "Perfil público",
+      "qBoard": "Clasificación",
+      "qRanks": "Tabla de rangos",
+      "qPlay": "Jugar",
+      "statRp": "Puntuación",
+      "statRank": "Rango",
+      "statRecord": "Balance",
+      "statWinRate": "Porcentaje de victorias",
+      "statPlan": "Plan",
+      "toNext": "{rp} RP para {next}",
+      "top": "Cima de la clasificación",
+      "activity": "Actividad reciente",
+      "activityEmpty": "Aún no hay actividad registrada. Las partidas y los inicios de sesión aparecerán aquí cuando ocurran.",
+      "evSignIn": "Sesión iniciada con Steam",
+      "evRating": "Puntuación {before} → {after}",
+      "noRecord": "Aún no hay partidas",
+      "account": "Cuenta"
+    },
+    "nf": {
+      "code": "Error 404",
+      "title": "Esta página está fuera del mapa",
+      "body": "Puede que el enlace sea antiguo o esté mal escrito. Todo A.C.E. está a un clic desde aquí.",
+      "home": "Volver al inicio",
+      "ranks": "Ver rangos"
+    },
+    "err": {
+      "code": "Algo falló",
+      "title": "Se produjo un error inesperado",
+      "body": "No se ha cobrado nada y tu cuenta está a salvo. Inténtalo de nuevo o vuelve al inicio.",
+      "retry": "Reintentar"
+    }
   }
 };

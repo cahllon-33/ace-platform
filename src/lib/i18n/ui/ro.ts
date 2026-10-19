@@ -355,5 +355,42 @@ export const UI_RO: Ui = {
       "s3": "Cum raportez un trișor?",
       "kbNote": "Răspunsurile provin din conținutul site-ului A.C.E."
     }
+  },
+  "r40": {
+    "dash": {
+      "kicker": "Centru de comandă",
+      "welcome": "Bine ai revenit, {name}",
+      "quick": "Acțiuni rapide",
+      "qProfile": "Profil public",
+      "qBoard": "Clasament",
+      "qRanks": "Tabelul rangurilor",
+      "qPlay": "Joacă",
+      "statRp": "Punctaj",
+      "statRank": "Rang",
+      "statRecord": "Bilanț",
+      "statWinRate": "Rată de victorii",
+      "statPlan": "Plan",
+      "toNext": "{rp} RP până la {next}",
+      "top": "Vârful clasamentului",
+      "activity": "Activitate recentă",
+      "activityEmpty": "Nicio activitate înregistrată încă. Meciurile și autentificările apar aici pe măsură ce au loc.",
+      "evSignIn": "Autentificare cu Steam",
+      "evRating": "Punctaj {before} → {after}",
+      "noRecord": "Niciun meci încă",
+      "account": "Cont"
+    },
+    "nf": {
+      "code": "Eroare 404",
+      "title": "Această pagină e în afara hărții",
+      "body": "Linkul poate fi vechi sau greșit scris. Orice parte din A.C.E. e la un clic de aici.",
+      "home": "Înapoi la pagina principală",
+      "ranks": "Vezi rangurile"
+    },
+    "err": {
+      "code": "Ceva s-a stricat",
+      "title": "A apărut o eroare neașteptată",
+      "body": "Nu s-a perceput nicio plată și contul tău e în siguranță. Încearcă din nou sau revino la pagina principală.",
+      "retry": "Încearcă din nou"
+    }
   }
 };

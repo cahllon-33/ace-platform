@@ -355,5 +355,42 @@ export const UI_CS: Ui = {
       "s3": "Jak nahlásím podvodníka?",
       "kbNote": "Odpovědi pocházejí z obsahu webu A.C.E."
     }
+  },
+  "r40": {
+    "dash": {
+      "kicker": "Velitelské centrum",
+      "welcome": "Vítej zpět, {name}",
+      "quick": "Rychlé akce",
+      "qProfile": "Veřejný profil",
+      "qBoard": "Žebříček",
+      "qRanks": "Tabulka hodností",
+      "qPlay": "Hrát",
+      "statRp": "Hodnocení",
+      "statRank": "Hodnost",
+      "statRecord": "Bilance",
+      "statWinRate": "Úspěšnost",
+      "statPlan": "Plán",
+      "toNext": "{rp} RP do {next}",
+      "top": "Vrchol žebříčku",
+      "activity": "Nedávná aktivita",
+      "activityEmpty": "Zatím žádná zaznamenaná aktivita. Zápasy a přihlášení se zde zobrazí, jakmile proběhnou.",
+      "evSignIn": "Přihlášení přes Steam",
+      "evRating": "Hodnocení {before} → {after}",
+      "noRecord": "Zatím žádné zápasy",
+      "account": "Účet"
+    },
+    "nf": {
+      "code": "Chyba 404",
+      "title": "Tato stránka je mimo mapu",
+      "body": "Odkaz může být starý nebo chybně napsaný. Každá část A.C.E. je odsud na jedno kliknutí.",
+      "home": "Zpět na úvod",
+      "ranks": "Zobrazit hodnosti"
+    },
+    "err": {
+      "code": "Něco se pokazilo",
+      "title": "Narazili jsme na neočekávanou chybu",
+      "body": "Nic nebylo účtováno a tvůj účet je v bezpečí. Zkus to znovu nebo se vrať na úvod.",
+      "retry": "Zkusit znovu"
+    }
   }
 };

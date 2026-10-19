@@ -355,5 +355,42 @@ export const UI_KO: Ui = {
       "s3": "치터는 어떻게 신고하나요?",
       "kbNote": "답변은 A.C.E. 사이트 내용에서 가져옵니다."
     }
+  },
+  "r40": {
+    "dash": {
+      "kicker": "커맨드 센터",
+      "welcome": "다시 오신 것을 환영합니다, {name}",
+      "quick": "빠른 작업",
+      "qProfile": "공개 프로필",
+      "qBoard": "리더보드",
+      "qRanks": "랭크 표",
+      "qPlay": "플레이",
+      "statRp": "레이팅",
+      "statRank": "랭크",
+      "statRecord": "전적",
+      "statWinRate": "승률",
+      "statPlan": "플랜",
+      "toNext": "{next}까지 {rp} RP",
+      "top": "래더 정상",
+      "activity": "최근 활동",
+      "activityEmpty": "아직 기록된 활동이 없습니다. 경기와 로그인은 발생하는 대로 여기에 표시됩니다.",
+      "evSignIn": "Steam으로 로그인",
+      "evRating": "레이팅 {before} → {after}",
+      "noRecord": "아직 경기가 없습니다",
+      "account": "계정"
+    },
+    "nf": {
+      "code": "오류 404",
+      "title": "이 페이지는 지도 밖에 있습니다",
+      "body": "링크가 오래되었거나 잘못 입력되었을 수 있습니다. A.C.E.의 모든 곳이 여기서 한 번의 클릭 거리입니다.",
+      "home": "홈으로 돌아가기",
+      "ranks": "랭크 보기"
+    },
+    "err": {
+      "code": "문제가 발생했습니다",
+      "title": "예기치 않은 오류가 발생했습니다",
+      "body": "결제된 금액은 없으며 계정은 안전합니다. 다시 시도하거나 홈으로 돌아가세요.",
+      "retry": "다시 시도"
+    }
   }
 };

@@ -355,5 +355,42 @@ export const UI_HR: Ui = {
       "s3": "Kako prijaviti varalicu?",
       "kbNote": "Odgovori dolaze iz sadržaja stranice A.C.E."
     }
+  },
+  "r40": {
+    "dash": {
+      "kicker": "Zapovjedni centar",
+      "welcome": "Dobro došao natrag, {name}",
+      "quick": "Brze radnje",
+      "qProfile": "Javni profil",
+      "qBoard": "Ljestvica",
+      "qRanks": "Tablica rangova",
+      "qPlay": "Igraj",
+      "statRp": "Ocjena",
+      "statRank": "Rang",
+      "statRecord": "Omjer",
+      "statWinRate": "Postotak pobjeda",
+      "statPlan": "Plan",
+      "toNext": "{rp} RP do {next}",
+      "top": "Vrh ljestvice",
+      "activity": "Nedavna aktivnost",
+      "activityEmpty": "Još nema zabilježene aktivnosti. Mečevi i prijave pojavit će se ovdje kad se dogode.",
+      "evSignIn": "Prijava putem Steama",
+      "evRating": "Ocjena {before} → {after}",
+      "noRecord": "Još nema mečeva",
+      "account": "Račun"
+    },
+    "nf": {
+      "code": "Pogreška 404",
+      "title": "Ova je stranica izvan karte",
+      "body": "Poveznica je možda stara ili pogrešno upisana. Svaki dio A.C.E.-a udaljen je jedan klik odavde.",
+      "home": "Natrag na početnu",
+      "ranks": "Pogledaj rangove"
+    },
+    "err": {
+      "code": "Nešto se pokvarilo",
+      "title": "Došlo je do neočekivane pogreške",
+      "body": "Ništa nije naplaćeno i tvoj je račun siguran. Pokušaj ponovno ili se vrati na početnu.",
+      "retry": "Pokušaj ponovno"
+    }
   }
 };
