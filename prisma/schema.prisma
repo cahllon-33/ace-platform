@@ -316,3 +316,24 @@ model SignInEvent {
   @@index([userId])
 }
 
+
+/// R38-L: AI support chat conversations escalated by the visitor. Reviewed in the admin Support panel.
+/// No IP address is stored; sessionKey is a random per-browser id generated client-side.
+model SupportTicket {
+  id         String   @id @default(cuid())
+  /// "open" | "closed"
+  status     String   @default("open")
+  locale     String   @default("en")
+  sessionKey String   @default("")
+  /// Set when the visitor was signed in (server-side session), otherwise null.
+  userId     String?
+  steamId    String?
+  /// First user message, trimmed, for the admin list.
+  subject    String   @default("")
+  /// [{ role: "user" | "assistant", content: string }]
+  transcript Json
+  createdAt  DateTime @default(now())
+  updatedAt  DateTime @updatedAt
+
+  @@index([status, createdAt])
+}

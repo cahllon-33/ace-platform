@@ -2,6 +2,7 @@
 
 import { RP_RULES } from "@/lib/rp-rules";
 import type { AdminOnlineSnapshot, AdminSignInSnapshot } from "@/server/admin-users";
+import type { AdminSupportSnapshot } from "@/server/admin-support";
 import { useEffect, useId, useLayoutEffect, useRef, useState, useSyncExternalStore, type ReactNode } from "react";
 import { createPortal } from "react-dom";
 import { useRouter } from "next/navigation";
@@ -555,6 +556,8 @@ export function AdminCommandCenter({
           />
         </div>
 
+        <SupportPanel disabled={stats.staging || stats.unavailable} />
+
         <div className="acx-grid-3">
           <section className="acx-card" aria-labelledby="acx-connected">
             <h2 id="acx-connected" className="acx-card-title">{t("connectedTitle")}</h2>
@@ -1077,6 +1080,100 @@ function OnlineNowPanel({ disabled, onOpen }: { disabled: boolean; onOpen: (play
         <span className="acx-online-count">{live ? t("onlineCount", { count: players.length }) : "—"}</span>
       </header>
       <p className="acx-muted">{t("onlineNote")}</p>
+      {body}
+    </section>
+  );
+}
+
+const SUPPORT_REFRESH_MS = 15_000;
+
+/** Admin-only AI-chat escalations. Polls the gated /admin/support route; open/close per ticket. */
+function SupportPanel({ disabled }: { disabled: boolean }) {
+  const { t } = useAdminI18n();
+  const [snap, setSnap] = useState<AdminSupportSnapshot | null>(null);
+  const [failed, setFailed] = useState(false);
+  const [busy, setBusy] = useState<string | null>(null);
+  const [nonce, setNonce] = useState(0);
+
+  useEffect(() => {
+    if (disabled) return;
+    let alive = true;
+    const load = async () => {
+      if (document.visibilityState === "hidden") return;
+      try {
+        const res = await fetch("/admin/support", { cache: "no-store" });
+        if (!res.ok) throw new Error(String(res.status));
+        const data = (await res.json()) as AdminSupportSnapshot;
+        if (alive) {
+          setSnap(data);
+          setFailed(false);
+        }
+      } catch {
+        if (alive) setFailed(true);
+      }
+    };
+    void load();
+    const poll = window.setInterval(load, SUPPORT_REFRESH_MS);
+    return () => {
+      alive = false;
+      window.clearInterval(poll);
+    };
+  }, [disabled, nonce]);
+
+  const toggle = async (id: string, status: "open" | "closed") => {
+    setBusy(id);
+    try {
+      await fetch("/admin/support", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ id, status }) });
+    } finally {
+      setBusy(null);
+      setNonce((n) => n + 1);
+    }
+  };
+
+  let body: React.ReactNode;
+  if (disabled) body = <p className="acx-empty">{t("onlineNeedsDb")}</p>;
+  else if (failed || snap?.status === "down") body = <p className="acx-empty">{t("supportUnavailable")}</p>;
+  else if (snap?.status === "migration") body = <p className="acx-empty">{t("supportMigration")}</p>;
+  else if (!snap) body = <p className="acx-empty">{t("onlineLoading")}</p>;
+  else if (snap.tickets.length === 0) body = <p className="acx-empty">{t("supportEmpty")}</p>;
+  else
+    body = (
+      <ul className="acx-support-list">
+        {snap.tickets.map((ticket) => (
+          <li key={ticket.id} className={`acx-support-item is-${ticket.status}`}>
+            <details>
+              <summary>
+                <span className={`acx-support-status is-${ticket.status}`}>{ticket.status === "open" ? t("supportOpen") : t("supportClosed")}</span>
+                <strong dir="auto">{ticket.subject || "—"}</strong>
+                <small>
+                  {ticket.steamId ? <span className="ace-admin-mono">{ticket.steamId}</span> : t("supportGuest")} · {ticket.locale} ·{" "}
+                  <time dateTime={ticket.at}>{new Date(ticket.at).toLocaleString()}</time>
+                </small>
+              </summary>
+              <ol className="acx-support-transcript">
+                {ticket.transcript.map((m, i) => (
+                  <li key={i} className={`is-${m.role}`}>
+                    <b>{m.role === "user" ? t("supportUser") : t("supportBot")}:</b> <span dir="auto">{m.content}</span>
+                  </li>
+                ))}
+              </ol>
+              <button type="button" className="acx-btn" disabled={busy === ticket.id}
+                onClick={() => void toggle(ticket.id, ticket.status === "open" ? "closed" : "open")}>
+                {ticket.status === "open" ? t("supportClose") : t("supportReopen")}
+              </button>
+            </details>
+          </li>
+        ))}
+      </ul>
+    );
+
+  return (
+    <section className="acx-card acx-support" aria-labelledby="acx-support-title">
+      <h2 id="acx-support-title" className="acx-card-title">
+        {t("supportTitle")}
+        {snap?.status === "ok" ? <span className="acx-support-count">{t("supportOpenCount", { count: snap.open })}</span> : null}
+      </h2>
+      <p className="acx-muted">{t("supportNote")}</p>
       {body}
     </section>
   );

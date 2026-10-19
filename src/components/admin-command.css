@@ -1476,3 +1476,19 @@
 .acx-signins-id small { font-size: 0.7rem; opacity: 0.7; }
 .acx-signins-kind { margin-inline-start: 0.45rem; font-size: 0.6rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; padding: 0.05rem 0.4rem; border-radius: 999px; border: 1px solid rgba(255,255,255,.2); opacity: 0.85; vertical-align: middle; }
 .acx-signins-kind.is-new { border-color: #d4af37; color: #f3d77a; background: rgba(212,175,55,.12); opacity: 1; }
+
+/* R38-L: admin Support panel */
+.acx-support { margin-top: 1rem; }
+.acx-support-count { margin-inline-start: 0.6rem; font-size: 0.7rem; color: #ffd76a; letter-spacing: 0.1em; }
+.acx-support-list { list-style: none; margin: 0.8rem 0 0; padding: 0; display: grid; gap: 0.5rem; }
+.acx-support-item { border: 1px solid rgba(212,175,55,0.2); border-radius: 0.7rem; background: #111318; }
+.acx-support-item.is-closed { opacity: 0.65; }
+.acx-support-item summary { cursor: pointer; display: grid; gap: 0.2rem; padding: 0.6rem 0.8rem; list-style: none; }
+.acx-support-item summary strong { color: #f4f1ea; font-size: 0.88rem; overflow-wrap: anywhere; }
+.acx-support-item summary small { color: #a6a7ac; font-size: 0.72rem; }
+.acx-support-status { justify-self: start; font-size: 0.62rem; font-weight: 800; letter-spacing: 0.14em; text-transform: uppercase; padding: 0.1rem 0.5rem; border-radius: 999px; border: 1px solid currentColor; }
+.acx-support-status.is-open { color: #2ed47a; }
+.acx-support-status.is-closed { color: #a6a7ac; }
+.acx-support-transcript { margin: 0; padding: 0.2rem 0.8rem 0.6rem 2rem; display: grid; gap: 0.35rem; font-size: 0.8rem; color: #d8d6cf; }
+.acx-support-transcript b { color: #ffd76a; }
+.acx-support-item details > button { margin: 0 0.8rem 0.7rem; }
