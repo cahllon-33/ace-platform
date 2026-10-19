@@ -10,6 +10,7 @@ import { effectiveRankArt } from "@/server/rank-art";
 import { lookupSteamPersonasDetailed, type SteamSyncError } from "@/server/steam-openid";
 import { steamProfileUpdate } from "@/server/users";
 import { isAllowlistedSteamId, parseAdminSteamIds } from "@/lib/admin-allowlist";
+import { startOfDayInZone } from "@/server/sign-in-events";
 import { PRESENCE_WINDOW_MS, readPresence, type ConnectedPlayer } from "@/server/presence";
 
 export type AdminLiveStats = {
@@ -458,3 +459,61 @@ export async function loadAdminOnline(): Promise<AdminOnlineSnapshot | null> {
     return { ...base, status: /lastSeenAt|P2022/i.test(message) ? "migration" : "down", players: [] };
   }
 }
+
+export type AdminSignInEntry = {
+  id: string;
+  at: string;
+  steamId: string;
+  personaName: string;
+  avatarUrl: string;
+  isNewUser: boolean;
+  deviceType: string;
+  os: string;
+  browser: string;
+  country: string | null;
+  /** Current admin row for the player (opens the dossier); null if the account was removed. */
+  player: AdminPlayerRow | null;
+};
+export type AdminSignInSnapshot = {
+  status: "ok" | "down" | "migration";
+  serverNow: string;
+  today: { signIns: number; newPlayers: number };
+  events: AdminSignInEntry[];
+};
+
+/** Admin-only: latest 50 Steam sign-ins, newest first, plus today's totals (Asia/Jerusalem day). Null when the gate is closed. */
+export async function loadAdminSignIns(): Promise<AdminSignInSnapshot | null> {
+  if (!(await readAdminGate())) return null;
+  const now = new Date();
+  const base = { serverNow: now.toISOString(), today: { signIns: 0, newPlayers: 0 }, events: [] as AdminSignInEntry[] };
+  try {
+    const dayStart = startOfDayInZone(now);
+    const [rows, signIns, newPlayers] = await Promise.all([
+      prisma.signInEvent.findMany({ orderBy: { createdAt: "desc" }, take: 50, include: { user: true } }),
+      prisma.signInEvent.count({ where: { createdAt: { gte: dayStart } } }),
+      prisma.signInEvent.count({ where: { createdAt: { gte: dayStart }, isNewUser: true } }),
+    ]);
+    return {
+      ...base,
+      status: "ok",
+      today: { signIns, newPlayers },
+      events: rows.map((row) => ({
+        id: row.id,
+        at: row.createdAt.toISOString(),
+        steamId: row.steamId,
+        personaName: row.personaName,
+        avatarUrl: row.avatarUrl,
+        isNewUser: row.isNewUser,
+        deviceType: row.deviceType,
+        os: row.os,
+        browser: row.browser,
+        country: row.country,
+        player: row.user ? userToAdminRow(row.user, null) : null,
+      })),
+    };
+  } catch (error) {
+    const message = error instanceof Error ? error.message : "";
+    return { ...base, status: /SignInEvent|P2021|does not exist/i.test(message) ? "migration" : "down" };
+  }
+}
+

@@ -1,7 +1,7 @@
 "use client";
 
 import { RP_RULES } from "@/lib/rp-rules";
-import type { AdminOnlineSnapshot } from "@/server/admin-users";
+import type { AdminOnlineSnapshot, AdminSignInSnapshot } from "@/server/admin-users";
 import { useEffect, useId, useLayoutEffect, useRef, useState, useSyncExternalStore, type ReactNode } from "react";
 import { createPortal } from "react-dom";
 import { useRouter } from "next/navigation";
@@ -538,13 +538,22 @@ export function AdminCommandCenter({
           <p className="acx-muted acx-growth-note">{t("growthPublicNote")}</p>
         </section>
 
-        <OnlineNowPanel
-          disabled={stats.staging || stats.unavailable}
-          onOpen={(player) => {
-            setOnlineExtra(player);
-            setEditorId(player.id);
-          }}
-        />
+        <div className="acx-live-pair">
+          <OnlineNowPanel
+            disabled={stats.staging || stats.unavailable}
+            onOpen={(player) => {
+              setOnlineExtra(player);
+              setEditorId(player.id);
+            }}
+          />
+          <SignInsPanel
+            disabled={stats.staging || stats.unavailable}
+            onOpen={(player) => {
+              setOnlineExtra(player);
+              setEditorId(player.id);
+            }}
+          />
+        </div>
 
         <div className="acx-grid-3">
           <section className="acx-card" aria-labelledby="acx-connected">
@@ -1068,6 +1077,125 @@ function OnlineNowPanel({ disabled, onOpen }: { disabled: boolean; onOpen: (play
         <span className="acx-online-count">{live ? t("onlineCount", { count: players.length }) : "—"}</span>
       </header>
       <p className="acx-muted">{t("onlineNote")}</p>
+      {body}
+    </section>
+  );
+}
+
+const SIGNINS_REFRESH_MS = 10_000;
+
+/** Admin-only live feed of the latest 50 Steam sign-ins. Polls the gated /admin/signins route every 10s. */
+function SignInsPanel({ disabled, onOpen }: { disabled: boolean; onOpen: (player: AdminPlayerRow) => void }) {
+  const { t } = useAdminI18n();
+  const [snap, setSnap] = useState<AdminSignInSnapshot | null>(null);
+  const [failed, setFailed] = useState(false);
+  const [skew, setSkew] = useState(0);
+  const [now, setNow] = useState(() => Date.now());
+
+  useEffect(() => {
+    if (disabled) return;
+    let alive = true;
+    const load = async () => {
+      if (document.visibilityState === "hidden") return;
+      try {
+        const res = await fetch("/admin/signins", { cache: "no-store" });
+        if (!res.ok) throw new Error(String(res.status));
+        const data = (await res.json()) as AdminSignInSnapshot;
+        if (!alive) return;
+        setSnap(data);
+        setSkew(Date.now() - new Date(data.serverNow).getTime());
+        setFailed(false);
+      } catch {
+        if (alive) setFailed(true);
+      }
+    };
+    void load();
+    const poll = window.setInterval(load, SIGNINS_REFRESH_MS);
+    const tick = window.setInterval(() => setNow(Date.now()), 5_000);
+    const wake = () => {
+      if (document.visibilityState === "visible") void load();
+    };
+    document.addEventListener("visibilitychange", wake);
+    return () => {
+      alive = false;
+      window.clearInterval(poll);
+      window.clearInterval(tick);
+      document.removeEventListener("visibilitychange", wake);
+    };
+  }, [disabled]);
+
+  const events = snap?.status === "ok" ? snap.events : [];
+  const live = !disabled && !failed && snap?.status === "ok";
+  const ago = (iso: string) => {
+    const sec = Math.max(0, Math.round((now - skew - new Date(iso).getTime()) / 1000));
+    if (sec < 60) return t("signinsAgoSec", { count: sec });
+    if (sec < 3600) return t("signinsAgoMin", { count: Math.floor(sec / 60) });
+    if (sec < 86400) return t("signinsAgoHour", { count: Math.floor(sec / 3600) });
+    return t("signinsAgoDay", { count: Math.floor(sec / 86400) });
+  };
+  const deviceLabel = (type: string) =>
+    type === "mobile" ? t("deviceMobile") : type === "tablet" ? t("deviceTablet") : type === "desktop" ? t("deviceDesktop") : t("deviceUnknown");
+
+  let body: React.ReactNode;
+  if (disabled) body = <p className="acx-empty">{t("onlineNeedsDb")}</p>;
+  else if (failed || snap?.status === "down") body = <p className="acx-empty">{t("signinsUnavailable")}</p>;
+  else if (snap?.status === "migration") body = <p className="acx-empty">{t("signinsMigration")}</p>;
+  else if (!snap) body = <p className="acx-empty">{t("onlineLoading")}</p>;
+  else if (events.length === 0) body = <p className="acx-empty">{t("signinsEmpty")}</p>;
+  else
+    body = (
+      <ul className="acx-signins-list">
+        {events.map((event) => {
+          const agent = [deviceLabel(event.deviceType), event.os, event.browser].filter(Boolean).join(" · ");
+          const content = (
+            <>
+              <PlayerAvatar src={event.avatarUrl || null} name={event.personaName} alt="" size={34} />
+              <span className="acx-signins-id">
+                <strong>
+                  {event.personaName}
+                  <span className={`acx-signins-kind${event.isNewUser ? " is-new" : ""}`}>
+                    {event.isNewUser ? t("signinsNew") : t("signinsReturning")}
+                  </span>
+                </strong>
+                <small>
+                  <span className="ace-admin-mono">{event.steamId}</span>
+                  {event.country ? <> · {event.country}</> : null}
+                </small>
+                <small title={agent}>{agent}</small>
+              </span>
+              <time className="acx-online-seen" dateTime={event.at} title={new Date(event.at).toLocaleString()}>
+                {ago(event.at)}
+              </time>
+            </>
+          );
+          const player = event.player;
+          return (
+            <li key={event.id}>
+              {player ? (
+                <button type="button" className="acx-signins-row" onClick={() => onOpen(player)} aria-label={`${t("openDossier")}: ${event.personaName}`}>
+                  {content}
+                </button>
+              ) : (
+                <div className="acx-signins-row is-static">{content}</div>
+              )}
+            </li>
+          );
+        })}
+      </ul>
+    );
+
+  return (
+    <section id="acx-signins" className="acx-card acx-online acx-anchor" aria-labelledby="acx-signins-title" aria-live="polite">
+      <header className="acx-online-head">
+        <h2 id="acx-signins-title" className="acx-card-title">
+          <i className={`acx-live-dot${live ? "" : " is-off"}`} aria-hidden="true" />
+          {t("signinsTitle")}
+        </h2>
+        <span className="acx-online-count">
+          {live && snap ? t("signinsToday", { signins: snap.today.signIns, fresh: snap.today.newPlayers }) : "—"}
+        </span>
+      </header>
+      <p className="acx-muted">{t("signinsNote")}</p>
       {body}
     </section>
   );

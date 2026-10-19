@@ -84,6 +84,7 @@ model User {
   updatedAt         DateTime         @updatedAt
 
   sessions           UserSession[]
+  signInEvents       SignInEvent[]
   captainedTeams     Team[]          @relation("TeamCaptain")
   teamMemberships    TeamMember[]
   sentInvites        TeamInvitation[] @relation("InviteSender")
@@ -292,3 +293,26 @@ model BroadcastFeed {
   embedUrl  String
   createdAt DateTime @default(now())
 }
+
+/// R37: one row per successful Steam login (admin "Sign-ins" feed). No IP address is stored;
+/// country is the 2-letter Vercel geo header when present. Rows older than 90 days are pruned.
+model SignInEvent {
+  id          String   @id @default(cuid())
+  userId      String
+  steamId     String
+  /// Persona name and avatar as Steam reported them at sign-in time.
+  personaName String
+  avatarUrl   String   @default("")
+  isNewUser   Boolean  @default(false)
+  /// "desktop" | "mobile" | "tablet" | "unknown", parsed coarsely from the User-Agent.
+  deviceType  String   @default("unknown")
+  os          String   @default("")
+  browser     String   @default("")
+  country     String?
+  createdAt   DateTime @default(now())
+  user        User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([createdAt])
+  @@index([userId])
+}
+

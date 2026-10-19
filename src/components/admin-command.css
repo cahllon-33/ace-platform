@@ -1463,3 +1463,16 @@
 @media (max-width: 40rem) { .acx-hero-operator, [dir="rtl"] .acx-hero-operator { height: 62%; object-position: center bottom; } }
 .acx-steam-sync-error { display: block; margin-top: 0.3rem; font-size: 0.76rem; line-height: 1.45; color: #ff8a7a; }
 .acx-owner-badge { display: inline-flex; align-items: center; margin-inline-start: 0.45rem; padding: 0.1rem 0.45rem; border-radius: 999px; border: 1px solid rgba(255,215,0,0.7); background: linear-gradient(135deg, rgba(255,215,0,0.22), rgba(212,175,55,0.08)); color: #FFD700; font-size: 0.62rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; vertical-align: middle; }
+
+/* R37: Online now + Sign-ins side by side; stacks when narrow. No horizontal scroll. */
+.acx-live-pair { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 26rem), 1fr)); gap: 1rem; margin-block: 1rem; min-width: 0; }
+.acx-live-pair > .acx-online { margin-block: 0; min-width: 0; }
+.acx-signins-list { list-style: none; margin: 0.6rem 0 0; padding: 0; display: grid; gap: 0.4rem; max-height: 26rem; overflow-y: auto; overflow-x: hidden; }
+.acx-signins-row { width: 100%; display: grid; grid-template-columns: auto minmax(0, 1fr) auto; align-items: center; gap: 0.7rem; padding: 0.5rem 0.7rem; border-radius: 0.7rem; border: 1px solid rgba(212,175,55,.18); background: rgba(0,0,0,.35); color: inherit; text-align: start; cursor: pointer; font: inherit; }
+.acx-signins-row.is-static { cursor: default; }
+.acx-signins-row:not(.is-static):hover, .acx-signins-row:focus-visible { border-color: rgba(212,175,55,.6); background: rgba(212,175,55,.06); outline: none; }
+.acx-signins-id { display: grid; min-width: 0; }
+.acx-signins-id strong, .acx-signins-id small { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.acx-signins-id small { font-size: 0.7rem; opacity: 0.7; }
+.acx-signins-kind { margin-inline-start: 0.45rem; font-size: 0.6rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; padding: 0.05rem 0.4rem; border-radius: 999px; border: 1px solid rgba(255,255,255,.2); opacity: 0.85; vertical-align: middle; }
+.acx-signins-kind.is-new { border-color: #d4af37; color: #f3d77a; background: rgba(212,175,55,.12); opacity: 1; }
