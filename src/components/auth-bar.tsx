@@ -1,3 +1,4 @@
+import { guardDisplayName } from "@/lib/display-name-guard";
 import { AuthToastWatcher } from "@/components/toast-triggers";
 import Link from "next/link";
 import { connection } from "next/server";
@@ -24,8 +25,8 @@ export async function AuthBar() {
   const isOwner = isAllowlistedSteamId(user?.steamId, process.env.ACE_ADMIN_STEAM_IDS);
   const copy = (await getText()).home.shell;
   const level = user ? rankLevelFromRp(user.competitiveRating) : null;
-  const label = user?.displayName ?? null;
-  const initial = user?.displayName?.trim().charAt(0).toUpperCase() ?? "P";
+  const label = user ? guardDisplayName(user.displayName, user.steamId) : null;
+  const initial = label?.trim().charAt(0).toUpperCase() ?? "P";
 
   return (
     <div className="flex flex-wrap items-center justify-end gap-2">

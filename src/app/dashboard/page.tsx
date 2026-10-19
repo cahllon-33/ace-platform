@@ -1,3 +1,4 @@
+import { guardDisplayName } from "@/lib/display-name-guard";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { connection } from "next/server";
@@ -52,6 +53,7 @@ export default async function DashboardPage() {
   const ui = await getUi();
   // One source: displayed rank is derived from stored RP via the published table (same as the rating engine).
   const rankLevel = rankLevelFromRp(user.competitiveRating);
+  const shownName = guardDisplayName(user.displayName, user.steamId);
   const prisma = getPrisma();
   const [memberships, invites] = await Promise.all([
     prisma.teamMember.findMany({
@@ -82,9 +84,9 @@ export default async function DashboardPage() {
               <span className="text-sm font-bold tracking-[0.22em] text-[#FFD700]">{copy.eliteBadge}</span>
             </div>
           ) : null}
-          <h2 className="sr-only">{user.displayName}</h2>
+          <h2 className="sr-only">{shownName}</h2>
           <PlayerCard
-            name={user.displayName}
+            name={shownName}
             avatarUrl={user.avatarUrl || null}
             rp={user.competitiveRating}
             wins={user.wins}
@@ -95,7 +97,7 @@ export default async function DashboardPage() {
               wl: ui.r38.card.wl,
               noMatches: ui.r38.card.noMatches,
               division: ui.r38.card.division,
-              avatarAlt: interpolate(text.home.ops.avatarAlt, { name: user.displayName }),
+              avatarAlt: interpolate(text.home.ops.avatarAlt, { name: shownName }),
             }}
             emblem={
               // eslint-disable-next-line @next/next/no-img-element
@@ -169,7 +171,7 @@ export default async function DashboardPage() {
         <div className="grid gap-4">
           {isPremiumPlan(user.subscriptionTier) ? (
             <PremiumProfileCard
-              name={user.displayName}
+              name={shownName}
               avatarUrl={user.avatarUrl || null}
               level={rankLevel}
               rating={user.competitiveRating}
@@ -209,7 +211,7 @@ export default async function DashboardPage() {
               <ul className="mt-2 text-sm text-ace-muted">
                 {membership.team.members.map((member) => (
                   <li key={member.userId}>
-                    {member.user.displayName} · {copy.roles[member.role]}
+                    {guardDisplayName(member.user.displayName, member.user.steamId)} · {copy.roles[member.role]}
                   </li>
                 ))}
               </ul>

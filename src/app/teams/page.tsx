@@ -1,3 +1,4 @@
+import { guardDisplayName } from "@/lib/display-name-guard";
 import type { Metadata } from "next";
 import { connection } from "next/server";
 import { FiveClanGate } from "@/components/five-clan-gate";
@@ -57,7 +58,7 @@ export default async function TeamsPage({
         isCaptain = membership.role === "CAPTAIN";
         slots = padRosterSlots(
           membership.team.members.map((member) => ({
-            username: member.user.username || member.user.displayName,
+            username: guardDisplayName(member.user.username || member.user.displayName, member.user.steamId),
             rating: member.user.competitiveRating,
             avatarUrl: member.user.avatarUrl,
           })),
@@ -74,12 +75,12 @@ export default async function TeamsPage({
       <FiveClanGate
         fromPremium={from === "premium"}
         signedIn={Boolean(user)}
-        displayName={user?.displayName ?? null}
+        displayName={user ? guardDisplayName(user.displayName, user.steamId) : null}
         teamName={teamName}
       />
       <SquadWorkspace
         signedIn={Boolean(user)}
-        displayName={user?.displayName ?? null}
+        displayName={user ? guardDisplayName(user.displayName, user.steamId) : null}
         teamId={teamId}
         teamName={teamName}
         teamTag={teamTag}

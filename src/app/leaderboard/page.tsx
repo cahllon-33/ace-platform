@@ -1,3 +1,4 @@
+import { guardDisplayName } from "@/lib/display-name-guard";
 import { rankLevelFromRp } from "@/lib/rank-progress";
 import { PlayerBadges } from "@/components/player-badges";
 import { playerBadges, type PlayerBadge } from "@/lib/badges";
@@ -75,7 +76,7 @@ export default async function LeaderboardPage({
     });
     live = rows.map((row) => ({
       id: row.id,
-      name: row.displayName,
+      name: guardDisplayName(row.displayName, row.steamId),
       rp: row.competitiveRating,
       tier: formatRankLabelWith(text.ranks.emblem.rankLabel, rankLevelFromRp(row.competitiveRating)),
       level: rankLevelFromRp(row.competitiveRating),
