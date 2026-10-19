@@ -5,6 +5,7 @@ import { ConnectedCount } from "@/components/connected-count";
 import { useI18n } from "@/components/locale-provider";
 import { SteamSignInButton } from "@/components/steam-sign-in-button";
 import { useText } from "@/components/text-provider";
+import { useUi } from "@/components/use-ui";
 
 export function LocaleLoading({ className }: { className?: string }) {
   const { t } = useI18n();
@@ -13,20 +14,21 @@ export function LocaleLoading({ className }: { className?: string }) {
   );
 }
 
+/** Hero CTAs: one primary (Connect Steam, or Open dashboard when signed in) and one secondary (Explore ranks). */
 export function HomeLocaleActions({ live }: { live: boolean }) {
-  const { t } = useI18n();
+  const hero = useUi().r38.hero;
 
   return (
     <>
       {live ? (
-        <Link href="/play" className="ace-play-now">
-          {t("playNow")}
+        <Link href="/dashboard" className="ace-play-now">
+          {hero.openDashboard}
         </Link>
       ) : (
-        <SteamSignInButton variant="steam" />
+        <SteamSignInButton variant="steam" label={hero.connectSteam} />
       )}
-      <Link href="#how-it-works" className="ace-how-btn">
-        {t("howItWorks")}
+      <Link href="/ranks" className="ace-how-btn">
+        {hero.exploreRanks}
       </Link>
     </>
   );

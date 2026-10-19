@@ -97,6 +97,7 @@ export function SiteFooter() {
       <details className="ace-footer-notice">
         <summary>{t("platformNoticeTitle")}</summary>
         <div className="ace-footer-notice-body">
+          <p>{t("lede")}</p>
           <p>{t("platformNoticeBody")}</p>
           <p>{t("copyrightClaim")}</p>
           <p>{t("copyrightLine")}</p>

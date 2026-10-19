@@ -7955,3 +7955,16 @@ html[dir="rtl"] .ace-hub-card-face {
 ::-webkit-scrollbar-thumb:hover { background: #f3d77a; }
 ::-webkit-scrollbar-corner { background: #0b0a08; }
 .ace-admin-navlink { display: inline-flex; align-items: center; min-height: 2.5rem; padding: 0 0.8rem; border-radius: 0.375rem; border: 1px solid rgba(255,215,0,0.6); color: #FFD700; font-size: 0.7rem; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; background: rgba(255,215,0,0.08); }
+
+/* R38-C: hero hierarchy — expansion lines, one supporting line, compact status strip. Tokens only. */
+.ace-hero-expansion { display: grid; justify-items: center; gap: 0.2rem; margin: 0.5rem 0 0; padding: 0; list-style: none; }
+.ace-hero-expansion li { font-size: 0.7rem; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: var(--ace-t-gold-pale); }
+.ace-hero-line { margin: 0.6rem auto 0.2rem; max-width: 34rem; text-align: center; font-size: clamp(0.98rem, 1.4vw, 1.12rem); line-height: 1.55; color: var(--ace-t-text); }
+.ace-status-strip.is-compact { padding-block: 1rem; }
+.ace-status-strip .ace-status-title { margin: 0 0 0.6rem; font-size: 0.7rem; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: var(--ace-t-muted); }
+.ace-status-strip.is-compact ul { grid-template-columns: repeat(auto-fit, minmax(min(100%, 12.5rem), 1fr)); gap: 0.5rem; }
+.ace-status-strip.is-compact li { padding: 0.6rem 0.8rem; background: linear-gradient(180deg, var(--ace-t-panel-2), var(--ace-t-panel)); border-color: var(--ace-t-line); }
+.is-preparing .ace-status-light { background: var(--ace-t-gold-pale); box-shadow: 0 0 8px rgba(255, 232, 163, 0.5); }
+.is-preparing .ace-status-value { color: var(--ace-t-gold-pale); }
+.is-billingOff .ace-status-light { background: var(--ace-t-muted); }
+.is-billingOff .ace-status-value { color: var(--ace-t-text); letter-spacing: 0.06em; }

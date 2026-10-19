@@ -5,6 +5,7 @@ import { type ReactNode, useEffect, useRef, useState } from "react";
 import { useI18n } from "@/components/locale-provider";
 import { useText } from "@/components/text-provider";
 import { ComingSoonPlate } from "@/components/coming-soon-plate";
+import { useUi } from "@/components/use-ui";
 
 const TAGS = [
   { key: "chipIdentity", status: "statusOpenId", d: "M12 3 4.5 7v5c0 4.5 3.2 7.8 7.5 9 4.3-1.2 7.5-4.5 7.5-9V7L12 3Z" },
@@ -22,6 +23,7 @@ export function HeroArena({ actions }: { actions: ReactNode }) {
   const [tilt, setTilt] = useState({ x: 0, y: 0 });
   const { t } = useI18n();
   const copy = useText().home.hero;
+  const hero = useUi().r38.hero;
 
   useEffect(() => {
     const media = window.matchMedia("(prefers-reduced-motion: reduce)");
@@ -59,6 +61,9 @@ export function HeroArena({ actions }: { actions: ReactNode }) {
             {t("kicker")}
           </p>
           <h1 className="ace-entrance-title">
+            <span className="sr-only">
+              A.C.E. — {hero.expansion1}, {hero.expansion2}, {hero.expansion3}
+            </span>
             <Image
               src="/images/ace-entrance-logo.jpg"
               alt={copy.logoAlt}
@@ -76,7 +81,12 @@ export function HeroArena({ actions }: { actions: ReactNode }) {
               }}
             />
           </h1>
-          <p className="ace-hero-lede">{t("lede")}</p>
+          <ul className="ace-hero-expansion" aria-hidden="true">
+            <li>{hero.expansion1}</li>
+            <li>{hero.expansion2}</li>
+            <li>{hero.expansion3}</li>
+          </ul>
+          <p className="ace-hero-line">{hero.line}</p>
           <div
             className="ace-hero-actions"
             style={{
