@@ -3,7 +3,7 @@ import Link from "next/link";
 import { connection } from "next/server";
 import { RankSystemBoard } from "@/components/rank-system-board";
 import { interpolate } from "@/lib/i18n";
-import { RANK_TIERS, rankEmblemAsset } from "@/lib/ranks";
+import { RANK_TIERS, rankLevelKicker, rankEmblemAsset } from "@/lib/ranks";
 import { RANK_DIVISIONS } from "@/lib/site";
 import { getText } from "@/server/locale";
 import { PremiumProfileCardPreview } from "@/components/premium-profile-card";
@@ -76,7 +76,7 @@ export default async function RanksPage() {
               <img src={rankEmblemAsset(tier.level).stillSrc} alt="" width={72} height={72} loading="lazy" />
               <div>
               <p className="text-xs tracking-[0.14em] text-[#FFD700]">
-                {interpolate(copy.document.level, { level: tier.level, crystal: tier.crystalName })}
+                {rankLevelKicker(copy.document.level, tier)}
               </p>
               <p className="mt-1 font-semibold text-[#F5F3EC]">{tier.name}</p>
               <p className="mt-1 text-sm text-[#A9ABB3]">

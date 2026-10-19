@@ -1,5 +1,5 @@
 import { interpolate } from "@/lib/i18n";
-import { RANK_TIERS, rankIllustratedAsset } from "@/lib/ranks";
+import { RANK_TIERS, rankLevelKicker, rankIllustratedAsset } from "@/lib/ranks";
 import { PremiumCodexPick } from "@/components/premium-codex-pick";
 import type { getText } from "@/server/locale";
 
@@ -31,7 +31,7 @@ export function PremiumRankCodex({ text, headingId = "premium-rank-codex" }: { t
             />
             <div>
               <p className="text-xs tracking-[0.14em] text-[#FFD700]">
-                {interpolate(copy.document.level, { level: tier.level, crystal: tier.crystalName })}
+                {rankLevelKicker(copy.document.level, tier)}
               </p>
               <p className="mt-1 font-semibold text-[#F5F3EC]">{tier.name}</p>
               <p className="mt-1 text-sm text-[#A9ABB3]">

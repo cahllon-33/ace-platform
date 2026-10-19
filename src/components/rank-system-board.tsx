@@ -10,6 +10,8 @@ import { interpolate } from "@/lib/i18n";
 import {
   RANK_TIERS,
   divisionShowcaseMetrics,
+  rankNamesMatch,
+  rankTemplate,
   rankArtAsset,
   type RankArt,
   type RankDivision,
@@ -29,11 +31,7 @@ export function RankSystemBoard({
   const emblemAlt = (tier: RankTier) =>
     tier.level === 10
       ? interpolate(copy.board.emblemAltLegend, { level: tier.level })
-      : interpolate(copy.board.emblemAlt, {
-          level: tier.level,
-          crystal: tier.crystalName,
-          name: tier.name,
-        });
+      : rankTemplate(copy.board.emblemAlt, tier);
   const [selected, setSelected] = useState<RankTier>(RANK_TIERS[9]);
   const [division, setDivision] = useState<RankDivision>("I");
   const asset = rankArtAsset(selected.level, art);
@@ -82,7 +80,9 @@ export function RankSystemBoard({
                     <span className="ace-level-pip">{tier.level}</span>
                   </span>
                   <span className="ace-rank-portrait-name">{tier.crystalName}</span>
-                  <span className="ace-rank-portrait-engine">{tier.name.toUpperCase()}</span>
+                  {rankNamesMatch(tier) ? null : (
+                    <span className="ace-rank-portrait-engine">{tier.name.toUpperCase()}</span>
+                  )}
                 </button>
                 <DivisionChips active={division} onSelect={setDivision} compact />
               </li>

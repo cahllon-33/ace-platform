@@ -1,6 +1,6 @@
 import { interpolate } from "@/lib/i18n";
 import { nextRating, placementCap, winsToReach } from "@/lib/rating";
-import { RANK_TIERS } from "@/lib/ranks";
+import { RANK_TIERS, rankLabelParts } from "@/lib/ranks";
 import { RP_RULES } from "@/lib/rp-rules";
 import type { getText } from "@/server/locale";
 
@@ -8,7 +8,7 @@ type Text = Awaited<ReturnType<typeof getText>>;
 
 const fmt = (n: number) => n.toLocaleString("en-US");
 const tier = (level: number) => RANK_TIERS.find((t) => t.level === level) ?? RANK_TIERS[0];
-const label = (level: number) => `${tier(level).name} / ${tier(level).crystalName}`;
+const label = (level: number) => [...rankLabelParts(tier(level))].reverse().join(" / ");
 
 /** A.C.E Rating Points rules. Every number is read from RP_RULES or computed by the same engine that applies results. */
 export function RpRulesSection({ text }: { text: Text }) {

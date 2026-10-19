@@ -243,3 +243,38 @@ export function divisionShowcaseMetrics(tier: RankTier, division: RankDivision) 
     progress: Math.min(98, tier.mockProgress + 14),
   };
 }
+
+/** True when the standard label and the Premium/engine name read the same (e.g. MASTER / Master). */
+export function rankNamesMatch(tier: Pick<RankTier, "name" | "crystalName">): boolean {
+  const norm = (v: string) => v.toLowerCase().replace(/[^a-z0-9]/g, "");
+  return norm(tier.name) === norm(tier.crystalName);
+}
+
+/** Distinct rank labels to render as separate tokens: [standard] or [standard, premium]. Never "MASTER MASTER". */
+export function rankLabelParts(tier: Pick<RankTier, "name" | "crystalName">): string[] {
+  return rankNamesMatch(tier) ? [tier.crystalName] : [tier.crystalName, tier.name];
+}
+
+/**
+ * Interpolates a template that may contain both `{crystal}` and `{name}`. When the two labels match,
+ * the `{crystal}` slot and its separator are dropped so the label is printed once.
+ */
+export function rankTemplate(template: string, tier: RankTier, vars: Record<string, string | number> = {}): string {
+  const all = { level: tier.level, name: tier.name, crystal: tier.crystalName, ...vars };
+  if (!rankNamesMatch(tier) || !template.includes("{crystal}") || !template.includes("{name}")) {
+    return interpolate(template, all);
+  }
+  const reduced = template
+    .replace(/\s*[·/|,-]\s*\{crystal\}/, "")
+    .replace(/\{crystal\}\s*[·/|,-]\s*/, "")
+    .replace(/\{crystal\}\s*/, "");
+  return interpolate(reduced, all).replace(/\s{2,}/g, " ").trim();
+}
+
+/** Kicker like "LEVEL 7 · MASTER". When the heading below already prints the same name, the crystal slot is dropped. */
+export function rankLevelKicker(template: string, tier: RankTier): string {
+  if (!rankNamesMatch(tier)) return interpolate(template, { level: tier.level, crystal: tier.crystalName });
+  return interpolate(template, { level: tier.level, crystal: "" })
+    .replace(/^[\s·/|,:–-]+|[\s·/|,:–-]+$/g, "")
+    .replace(/\s{2,}/g, " ");
+}

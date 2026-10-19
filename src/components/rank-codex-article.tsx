@@ -1,3 +1,4 @@
+import { rankTemplate } from "@/lib/ranks";
 import Link from "next/link";
 import { interpolate } from "@/lib/i18n";
 import {
@@ -48,11 +49,7 @@ export function RankCodexArticle({ article, text }: { article: CodexArticle; tex
                 })}
               />
               <figcaption>
-                {interpolate(copy.emblemCaption, {
-                  level: emblem.tier.level,
-                  name: emblem.tier.name,
-                  crystal: emblem.tier.crystalName,
-                })}
+                {rankTemplate(copy.emblemCaption, emblem.tier)}
               </figcaption>
             </figure>
           ) : null}

@@ -1,3 +1,4 @@
+import { RankNameTokens } from "@/components/rank-name-tokens";
 import Link from "next/link";
 import { CalibrationTrack } from "@/components/calibration-track";
 import { EliteSeal } from "@/components/elite-seal";
@@ -42,7 +43,7 @@ export function LobbyOps({ text, player }: { text: Text; player: LobbyOpsPlayer 
               />
               <div className="min-w-0">
                 <h2 className="ace-ops3d-name">{player.displayName}</h2>
-                <p className="ace-ops3d-rank">{tier.crystalName} · {tier.name}</p>
+                <p className="ace-ops3d-rank"><RankNameTokens level={tier.level} premiumName /></p>
                 {player.art === "premium" ? <span className="ace-premium-tag">{text.play.premium.tag}</span> : null}
                 {player.elite ? (
                   <span className="ace-ops3d-elite"><EliteSeal className="h-6 w-auto" /> {text.home.identity.elite}</span>

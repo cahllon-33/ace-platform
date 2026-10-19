@@ -7968,3 +7968,9 @@ html[dir="rtl"] .ace-hub-card-face {
 .is-preparing .ace-status-value { color: var(--ace-t-gold-pale); }
 .is-billingOff .ace-status-light { background: var(--ace-t-muted); }
 .is-billingOff .ace-status-value { color: var(--ace-t-text); letter-spacing: 0.06em; }
+
+/* R38-E: rank name / division as separate tokens */
+.ace-rank-tokens { display: inline-flex; flex-wrap: wrap; align-items: center; gap: 0.3rem; }
+.ace-rank-token { display: inline-flex; align-items: center; padding: 0.08rem 0.45rem; border-radius: 999px; border: 1px solid var(--ace-t-line); font-size: 0.72em; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ace-t-gold-pale); background: rgba(212, 175, 55, 0.06); }
+.ace-rank-token.is-alt { color: var(--ace-t-text); border-color: rgba(255, 255, 255, 0.14); }
+.ace-rank-token.is-division { color: var(--ace-t-muted); border-color: rgba(255, 255, 255, 0.12); background: transparent; }
