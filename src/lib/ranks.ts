@@ -158,6 +158,8 @@ export type RankEmblemAsset = {
   gltfSrc: string | null;
   /** High-resolution still (368×528, 4× Lanczos + light unsharp of the original art; design unchanged). Premium art only. */
   hdSrc?: string;
+  /** Static WebP used by lists/tables and as the turntable fallback (no 3D, no animation). */
+  staticSrc: string;
 };
 
 export function rankEmblemAsset(level: number): RankEmblemAsset {
@@ -167,6 +169,7 @@ export function rankEmblemAsset(level: number): RankEmblemAsset {
     stillSrc: `/ranks/emblems/${file}.svg`,
     heroSrc: `/ranks/emblems/${file}.svg`,
     gltfSrc: null,
+    staticSrc: `/ranks/static/${file}.webp`,
   };
 }
 
@@ -181,6 +184,7 @@ export function rankIllustratedAsset(level: number): RankEmblemAsset {
     heroSrc: level === 10 ? "/ranks/10-legend-hero.png" : `/ranks/${file}.png`,
     gltfSrc: null,
     hdSrc: `/ranks/hd/${file}@4x.webp`,
+    staticSrc: `/ranks/hd/${file}@4x.webp`,
   };
 }
 

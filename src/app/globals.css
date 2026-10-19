@@ -8052,3 +8052,7 @@ html[dir="rtl"] .ace-hub-card-face {
 .ace-sound-toggle { display: inline-flex; align-items: center; justify-content: center; width: 2.25rem; height: 2.25rem; border-radius: 999px; border: 1px solid var(--ace-t-line); background: transparent; color: var(--ace-t-muted); cursor: pointer; flex: none; }
 .ace-sound-toggle:hover, .ace-sound-toggle:focus-visible { color: var(--ace-t-gold-hi); border-color: var(--ace-t-line-strong); }
 .ace-sound-toggle[aria-pressed="true"] { color: var(--ace-t-gold-hi); }
+
+/* R38-J: static rank fallback occupies the same box as the rig (no layout shift) */
+.ace-orbit-static { position: absolute; inset: 22%; width: 56%; height: 56%; object-fit: contain; pointer-events: none; }
+.ace-orbit-rig[hidden] { display: block !important; visibility: hidden; }

@@ -149,7 +149,7 @@ export default async function LeaderboardPage({
                   <li key={row.id} className={`ace-lb-pod is-${place}`}>
                     <span className="ace-lb-pod-place">{place}</span>
                     {/* eslint-disable-next-line @next/next/no-img-element */}
-                    <img src={emblem.stillSrc} alt="" />
+                    <img src={emblem.staticSrc} alt="" width={40} height={40} loading="lazy" />
                     <span className="ace-lb-name">{row.name}</span>
                     <span className="ace-lb-tag">{row.live ? lb.tags.stored : lb.tags.showcase}</span>
                     <WeaponCell row={row} size="podium" lb={lb} />
@@ -186,7 +186,7 @@ export default async function LeaderboardPage({
                     </span>
                     <span className="ace-lb-player">
                       {/* eslint-disable-next-line @next/next/no-img-element */}
-                      <img src={emblem.stillSrc} alt="" />
+                      <img src={emblem.staticSrc} alt="" width={40} height={40} loading="lazy" />
                       <span>
                         <span className="ace-lb-name">{row.name}</span>
                         <span className="ace-lb-tag">{row.live ? lb.tags.stored : lb.tags.showcase}</span>

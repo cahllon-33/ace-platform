@@ -5,12 +5,40 @@ import { useText } from "@/components/text-provider";
 import { interpolate } from "@/lib/i18n";
 import { rankArtAsset, type RankArt, type RankTier } from "@/lib/ranks";
 
+export const FALLBACK_MS = 2500;
+
 export function RankTurntable({ tier, art = "standard" }: { tier: RankTier; art?: RankArt }) {
   const copy = useText().ranks.turntable;
   const asset = rankArtAsset(tier.level, art);
   const dragging = useRef(false);
   const last = useRef({ x: 0, y: 0 });
   const [yaw, setYaw] = useState(18);
+  // "3d" while the turntable asset is healthy; "static" after a failed load or 2.5s without one.
+  const [mode, setMode] = useState<"loading" | "3d" | "static">("loading");
+
+  useEffect(() => {
+    const src = asset.gltfSrc ?? asset.heroSrc;
+    let settled = false;
+    const done = (next: "3d" | "static") => {
+      if (settled) return;
+      settled = true;
+      setMode(next);
+    };
+    const timer = window.setTimeout(() => done("static"), FALLBACK_MS);
+    if (asset.gltfSrc) {
+      // GLB slot: only a HEAD-style reachability probe here; a real loader would plug in at this point.
+      fetch(src, { method: "HEAD" }).then((r) => done(r.ok ? "3d" : "static"), () => done("static"));
+    } else {
+      const img = new Image();
+      img.onload = () => done("3d");
+      img.onerror = () => done("static");
+      img.src = src;
+    }
+    return () => {
+      settled = true;
+      window.clearTimeout(timer);
+    };
+  }, [asset.gltfSrc, asset.heroSrc]);
 
   useEffect(() => {
     const timer = window.setInterval(() => {
@@ -26,7 +54,7 @@ export function RankTurntable({ tier, art = "standard" }: { tier: RankTier; art?
   }, []);
 
   return (
-    <div className="ace-orbit-wrap">
+    <div className="ace-orbit-wrap" data-mode={mode}>
       <div
         className="ace-orbit-stage"
         role="application"
@@ -60,7 +88,12 @@ export function RankTurntable({ tier, art = "standard" }: { tier: RankTier; art?
           dragging.current = false;
         }}
       >
+        {mode === "static" ? (
+          // eslint-disable-next-line @next/next/no-img-element
+          <img className="ace-orbit-static" src={asset.staticSrc} alt="" width={512} height={512} decoding="async" />
+        ) : null}
         <div
+          hidden={mode === "static"}
           className="ace-orbit-rig"
           data-gltf-slot={asset.gltfSrc ?? ""}
           style={{ transform: `rotateY(${yaw}deg)` }}

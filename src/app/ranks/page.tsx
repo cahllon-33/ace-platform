@@ -73,7 +73,7 @@ export default async function RanksPage() {
           {RANK_TIERS.map((tier) => (
             <li key={tier.level} className="ace-tier-row rounded-2xl border border-[#FFD700]/20 p-4">
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src={rankEmblemAsset(tier.level).stillSrc} alt="" width={72} height={72} loading="lazy" />
+              <img src={rankEmblemAsset(tier.level).staticSrc} alt="" width={72} height={72} loading="lazy" />
               <div>
               <p className="text-xs tracking-[0.14em] text-[#FFD700]">
                 {rankLevelKicker(copy.document.level, tier)}
