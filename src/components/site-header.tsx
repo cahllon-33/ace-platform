@@ -5,6 +5,7 @@ import { usePathname } from "next/navigation";
 import { useState, type ReactNode } from "react";
 import { AceLogo } from "@/components/ace-logo";
 import { LanguageMenu } from "@/components/language-menu";
+import { SoundToggle } from "@/components/sound-toggle";
 import { useI18n } from "@/components/locale-provider";
 import { useText } from "@/components/text-provider";
 import { useUi } from "@/components/use-ui";
@@ -44,6 +45,7 @@ export function SiteHeader({ auth }: { auth: ReactNode }) {
               {ui.nav.getPremium}
             </Link>
           </span>
+          <SoundToggle />
           <LanguageMenu />
           <div className="hidden md:flex">{auth}</div>
           <button
