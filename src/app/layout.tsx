@@ -7,6 +7,7 @@ import { SITE_LOCALES } from "@/lib/languages";
 import { isLocaleId, LOCALE_COOKIE } from "@/lib/locale-pref";
 import { getText } from "@/server/locale";
 import "./globals.css";
+import "./polish40.css";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",

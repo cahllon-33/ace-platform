@@ -119,7 +119,7 @@ export default async function DashboardPage() {
         <article className="d40-stat">
           <p className="d40-stat-k">{d.statRank}</p>
           <p className="d40-stat-v">{prog.tier.name}</p>
-          <p className="d40-stat-s">{ui.r38.card.division} {prog.division}</p>
+          <p className="d40-stat-s">{interpolate(ui.r38.card.division, { division: prog.division })}</p>
         </article>
         <article className="d40-stat">
           <p className="d40-stat-k">{d.statRecord}</p>

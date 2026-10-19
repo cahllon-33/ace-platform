@@ -68,6 +68,11 @@ export default async function PlayerPage({ params }: { params: Promise<{ steamId
   const matches = user.wins + user.losses;
   const winRate = matches > 0 ? Math.round((user.wins / matches) * 100) : null;
   const since = new Intl.DateTimeFormat(locale, { year: "numeric", month: "long" }).format(user.createdAt);
+  const history = await getPrisma()
+    .ratingHistory.findMany({ where: { userId: user.id }, orderBy: { createdAt: "desc" }, take: 8 })
+    .catch(() => []);
+  const d = ui.r40.dash;
+  const dateFmt = new Intl.DateTimeFormat(locale, { dateStyle: "medium" });
   const badges = playerBadges({
     subscriptionTier: user.subscriptionTier,
     rankLevel: prog.tier.level,
@@ -111,6 +116,7 @@ export default async function PlayerPage({ params }: { params: Promise<{ steamId
           <span>{p.rating}</span>
           <strong>{prog.rp.toLocaleString("en-US")} RP</strong>
           <small className="pl39-bar" aria-hidden="true"><i style={{ width: `${prog.percent}%` }} /></small>
+          <small>{prog.next ? interpolate(d.toNext, { rp: prog.rpToNext, next: `${prog.next.tier.name} ${prog.next.division}` }) : d.top}</small>
         </div>
         <div>
           <span>{p.record}</span>
@@ -123,6 +129,26 @@ export default async function PlayerPage({ params }: { params: Promise<{ steamId
             <strong className="pl39-empty">{ui.r38.card.noMatches}</strong>
           )}
         </div>
+      </section>
+
+      <section className="pl39-history" aria-labelledby="pl39-hist">
+        <h2 id="pl39-hist">{d.activity}</h2>
+        {history.length === 0 ? (
+          <p className="pl39-hist-empty">{d.activityEmpty}</p>
+        ) : (
+          <ol>
+            {history.map((h) => {
+              const delta = h.ratingAfter - h.ratingBefore;
+              return (
+                <li key={h.id}>
+                  <span className={delta >= 0 ? "is-up" : "is-down"}>{delta >= 0 ? `+${delta}` : delta}</span>
+                  <span>{interpolate(d.evRating, { before: h.ratingBefore, after: h.ratingAfter })}</span>
+                  <time dateTime={h.createdAt.toISOString()}>{dateFmt.format(h.createdAt)}</time>
+                </li>
+              );
+            })}
+          </ol>
+        )}
       </section>
 
       <p className="pl39-muted pl39-basis">{ui.r38.journey.basis}</p>

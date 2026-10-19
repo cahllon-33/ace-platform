@@ -1,0 +1,20 @@
+/* R40 design-system layer: one token set applied across every public route. */
+:root { color-scheme: dark; scrollbar-color: #2a2d35 #08090D; }
+::selection { background: rgba(212,175,55,.35); color: #F4F1EA; }
+html { background: #08090D; }
+:focus-visible { outline: 2px solid #FFD76A; outline-offset: 2px; }
+/* Footer */
+.ace-footer { border-top: 1px solid rgba(212,175,55,.16); background: radial-gradient(80% 120% at 50% 0%, rgba(212,175,55,.07), transparent 60%), #050607; }
+.ace-footer-cols a { color: #A6A7AC; transition: color .15s; }
+.ace-footer-cols a:hover { color: #FFD76A; }
+.ace-footer-legal { color: #7d7e84; }
+/* Cookie tray */
+.ace-cookie-tray-inner { border-color: rgba(212,175,55,.32) !important; background: color-mix(in srgb, #111318 90%, transparent) !important; box-shadow: 0 -20px 50px rgba(0,0,0,.6) !important; }
+/* Shared surfaces used by content pages */
+.ace-final-cta { background: radial-gradient(70% 120% at 50% 0%, rgba(212,175,55,.12), transparent 60%), #08090D; border-top: 1px solid rgba(212,175,55,.14); }
+.gold-text { background: linear-gradient(100deg, #D4AF37, #FFD76A 45%, #FFE8A3 60%, #D4AF37); -webkit-background-clip: text; background-clip: text; color: transparent; }
+/* Skeleton utility */
+.ace-skel { position: relative; overflow: hidden; border-radius: .6rem; background: #111318; }
+.ace-skel::after { content: ""; position: absolute; inset: 0; transform: translateX(-100%); background: linear-gradient(90deg, transparent, rgba(255,255,255,.05), transparent); animation: ace-skel 1.4s infinite; }
+@keyframes ace-skel { to { transform: translateX(100%); } }
+@media (prefers-reduced-motion: reduce) { .ace-skel::after { animation: none; } .ace-footer-cols a { transition: none; } }
