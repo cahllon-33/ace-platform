@@ -24,7 +24,10 @@ import { interpolate } from "@/lib/i18n";
 import { rankLevelFromRp } from "@/lib/rank-progress";
 import { CompetitiveJourney } from "@/components/competitive-journey";
 import { getPrisma } from "@/server/db";
-import { getText, getUi } from "@/server/locale";
+import { rankProgress } from "@/lib/rank-progress";
+import "./dash40.css";
+import { getLocaleId, getText, getUi } from "@/server/locale";
+import { SITE_LOCALES } from "@/lib/languages";
 import { readSessionUser } from "@/server/session";
 
 export async function generateMetadata(): Promise<Metadata> {
@@ -55,7 +58,7 @@ export default async function DashboardPage() {
   const rankLevel = rankLevelFromRp(user.competitiveRating);
   const shownName = guardDisplayName(user.displayName, user.steamId);
   const prisma = getPrisma();
-  const [memberships, invites] = await Promise.all([
+  const [memberships, invites, ratingEvents, signIns] = await Promise.all([
     prisma.teamMember.findMany({
       where: { userId: user.id },
       include: { team: { include: { members: { include: { user: true } } } } },
@@ -64,13 +67,88 @@ export default async function DashboardPage() {
       where: { inviteeId: user.id, status: "PENDING" },
       include: { team: true },
     }),
+    prisma.ratingHistory.findMany({ where: { userId: user.id }, orderBy: { createdAt: "desc" }, take: 6 }),
+    prisma.signInEvent.findMany({ where: { userId: user.id }, orderBy: { createdAt: "desc" }, take: 4 }),
   ]);
+  const d = ui.r40.dash;
+  const localeId = await getLocaleId();
+  const lc = SITE_LOCALES.find((l) => l.id === localeId)?.code ?? "en";
+  const prog = rankProgress(user.competitiveRating);
+  const games = user.wins + user.losses;
+  const fmt = new Intl.DateTimeFormat(lc, { dateStyle: "medium", timeStyle: "short" });
+  const activity = [
+    ...ratingEvents.map((e) => ({ id: e.id, at: e.createdAt, up: e.ratingAfter >= e.ratingBefore, label: interpolate(d.evRating, { before: e.ratingBefore, after: e.ratingAfter }), kind: "rating" as const })),
+    ...signIns.map((e) => ({ id: e.id, at: e.createdAt, up: true, label: d.evSignIn, kind: "signin" as const })),
+  ].sort((a, b) => b.at.getTime() - a.at.getTime()).slice(0, 6);
+  const emblemSrc = rankArtAsset(rankLevel, effectiveRankArt(user)).stillSrc;
 
   return (
-    <main className="ace-lobby mx-auto w-full max-w-6xl px-4 py-10 sm:px-6">
-      <p className="text-xs uppercase tracking-[0.22em] text-ace-gold">{copy.kicker}</p>
-      <h1 className="gold-text mt-2 text-4xl font-semibold">{copy.title}</h1>
-      <p className="mt-3 max-w-2xl text-ace-muted">{copy.lede}</p>
+    <main className="ace-lobby d40 mx-auto w-full max-w-6xl px-4 py-10 sm:px-6">
+      <section className="d40-hero" aria-labelledby="d40-title">
+        <div className="d40-hero-id">
+          {user.avatarUrl ? (
+            // eslint-disable-next-line @next/next/no-img-element
+            <img className="d40-avatar" src={user.avatarUrl} alt="" width={88} height={88} />
+          ) : (
+            <span className="d40-avatar d40-avatar-ph" aria-hidden="true">{shownName.slice(0, 1).toUpperCase()}</span>
+          )}
+          <div className="min-w-0">
+            <p className="d40-kicker">{d.kicker}</p>
+            <h1 id="d40-title" className="d40-title">{interpolate(d.welcome, { name: shownName })}</h1>
+            <p className="d40-lede">{copy.lede}</p>
+          </div>
+        </div>
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img className="d40-hero-emblem" src={emblemSrc} alt="" width={120} height={120} />
+      </section>
+
+      <nav className="d40-quick" aria-label={d.quick}>
+        {user.steamId ? <Link href={`/player/${user.steamId}`}>{d.qProfile}<span aria-hidden="true">→</span></Link> : null}
+        <Link href="/leaderboard">{d.qBoard}<span aria-hidden="true">→</span></Link>
+        <Link href="/ranks">{d.qRanks}<span aria-hidden="true">→</span></Link>
+        <Link href="/play">{d.qPlay}<span aria-hidden="true">→</span></Link>
+      </nav>
+
+      <section className="d40-stats" aria-label={copy.title}>
+        <article className="d40-stat d40-stat-wide">
+          <p className="d40-stat-k">{d.statRp}</p>
+          <p className="d40-stat-v">{user.competitiveRating.toLocaleString(lc)} <small>RP</small></p>
+          <div className="d40-bar" role="progressbar" aria-valuemin={0} aria-valuemax={100} aria-valuenow={prog.percent}><span style={{ width: `${prog.percent}%` }} /></div>
+          <p className="d40-stat-s">{prog.next ? interpolate(d.toNext, { rp: prog.rpToNext, next: `${prog.next.tier.name} ${prog.next.division}` }) : d.top}</p>
+        </article>
+        <article className="d40-stat">
+          <p className="d40-stat-k">{d.statRank}</p>
+          <p className="d40-stat-v">{prog.tier.name}</p>
+          <p className="d40-stat-s">{ui.r38.card.division} {prog.division}</p>
+        </article>
+        <article className="d40-stat">
+          <p className="d40-stat-k">{d.statRecord}</p>
+          <p className="d40-stat-v">{games ? `${user.wins}–${user.losses}` : "—"}</p>
+          <p className="d40-stat-s">{games ? `${d.statWinRate} ${Math.round((user.wins / games) * 100)}%` : d.noRecord}</p>
+        </article>
+        <article className="d40-stat">
+          <p className="d40-stat-k">{d.statPlan}</p>
+          <p className="d40-stat-v">{copy.tiers[user.subscriptionTier]}</p>
+          <p className="d40-stat-s">{copy.accountStatuses[user.accountStatus]}</p>
+        </article>
+      </section>
+
+      <section className="d40-activity" aria-labelledby="d40-act">
+        <h2 id="d40-act" className="d40-h2">{d.activity}</h2>
+        {activity.length === 0 ? (
+          <div className="d40-empty"><span aria-hidden="true">◇</span><p>{d.activityEmpty}</p></div>
+        ) : (
+          <ol className="d40-feed">
+            {activity.map((a) => (
+              <li key={a.id} className={a.kind === "rating" ? (a.up ? "is-up" : "is-down") : "is-info"}>
+                <span className="d40-dot" aria-hidden="true" />
+                <span className="d40-feed-l">{a.label}</span>
+                <time dateTime={a.at.toISOString()}>{fmt.format(a.at)}</time>
+              </li>
+            ))}
+          </ol>
+        )}
+      </section>
 
       <div className="mt-8">
         <CompetitiveJourney rp={user.competitiveRating} ui={ui} />

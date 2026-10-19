@@ -1,0 +1,14 @@
+.sp40 { position: relative; isolation: isolate; display: flex; flex: 1; min-height: 72vh; flex-direction: column; align-items: center; justify-content: center; overflow: hidden; padding: 6rem 1rem; text-align: center; background: #08090D; }
+.sp40-glow { position: absolute; inset: auto; width: 42rem; max-width: 120%; aspect-ratio: 1; border-radius: 50%; background: radial-gradient(circle, rgba(212,175,55,.18), transparent 62%); z-index: -1; }
+.sp40-big { margin: 0; font-size: clamp(6rem, 22vw, 13rem); font-weight: 900; line-height: .85; letter-spacing: -.06em; background: linear-gradient(180deg, rgba(255,232,163,.9), rgba(212,175,55,.15)); -webkit-background-clip: text; background-clip: text; color: transparent; user-select: none; }
+.sp40-err .sp40-big { background-image: linear-gradient(180deg, rgba(255,91,91,.8), rgba(255,91,91,.08)); }
+.sp40-code { margin: 1.25rem 0 0; color: #D4AF37; font-size: .72rem; font-weight: 800; letter-spacing: .26em; text-transform: uppercase; }
+.sp40-err .sp40-code { color: #FF5B5B; }
+.sp40-title { margin: .6rem 0 0; color: #F4F1EA; font-size: clamp(1.7rem, 4vw, 2.8rem); font-weight: 900; letter-spacing: -.02em; }
+.sp40-body { margin: .9rem 0 0; max-width: 34rem; color: #A6A7AC; font-size: 1rem; line-height: 1.6; }
+.sp40-actions { margin-top: 2rem; display: flex; flex-wrap: wrap; justify-content: center; gap: .75rem; }
+.sp40-primary, .sp40-ghost { display: inline-flex; min-height: 3rem; align-items: center; justify-content: center; border-radius: .8rem; padding: 0 1.4rem; font-size: .88rem; font-weight: 800; text-decoration: none; cursor: pointer; transition: transform .18s, border-color .18s; }
+.sp40-primary { border: 0; background: linear-gradient(180deg, #FFD76A, #D4AF37); color: #120E02; box-shadow: 0 10px 26px -10px rgba(212,175,55,.75); }
+.sp40-ghost { border: 1px solid rgba(212,175,55,.35); background: #111318; color: #F4F1EA; }
+.sp40-primary:hover, .sp40-ghost:hover { transform: translateY(-1px); }
+@media (prefers-reduced-motion: reduce) { .sp40-primary, .sp40-ghost { transition: none; } }
