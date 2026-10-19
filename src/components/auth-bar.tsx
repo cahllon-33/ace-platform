@@ -8,6 +8,7 @@ import { STEAM_AUTH_HREF } from "@/lib/site";
 import { getText } from "@/server/locale";
 import { readSessionUser } from "@/server/session";
 import { isAllowlistedSteamId } from "@/lib/admin-allowlist";
+import { rankLevelFromRp } from "@/lib/rank-progress";
 
 export async function AuthBar() {
   await connection();
@@ -21,7 +22,7 @@ export async function AuthBar() {
   // Server-side only: SteamID from the session record, matched against ACE_ADMIN_STEAM_IDS.
   const isOwner = isAllowlistedSteamId(user?.steamId, process.env.ACE_ADMIN_STEAM_IDS);
   const copy = (await getText()).home.shell;
-  const level = user?.rankLevel ?? null;
+  const level = user ? rankLevelFromRp(user.competitiveRating) : null;
   const label = user?.displayName ?? null;
   const initial = user?.displayName?.trim().charAt(0).toUpperCase() ?? "P";
 

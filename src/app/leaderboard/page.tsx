@@ -1,3 +1,4 @@
+import { rankLevelFromRp } from "@/lib/rank-progress";
 import { PlayerBadges } from "@/components/player-badges";
 import { playerBadges, type PlayerBadge } from "@/lib/badges";
 import type { Metadata } from "next";
@@ -93,8 +94,8 @@ export default async function LeaderboardPage({
       id: row.id,
       name: row.displayName,
       rp: row.competitiveRating,
-      tier: formatRankLabelWith(text.ranks.emblem.rankLabel, row.rankLevel),
-      level: row.rankLevel,
+      tier: formatRankLabelWith(text.ranks.emblem.rankLabel, rankLevelFromRp(row.competitiveRating)),
+      level: rankLevelFromRp(row.competitiveRating),
       flag: null,
       weapon: null,
       weaponName: null,
@@ -103,7 +104,7 @@ export default async function LeaderboardPage({
       // Computed here on the server from stored rows; only the badge labels reach the page.
       badges: playerBadges({
         subscriptionTier: row.subscriptionTier,
-        rankLevel: row.rankLevel,
+        rankLevel: rankLevelFromRp(row.competitiveRating),
         wins: row.wins,
         losses: row.losses,
         steamLinked: row.steamId !== null,

@@ -18,6 +18,8 @@ import { PremiumProfileCard, premiumCardLabels } from "@/components/premium-prof
 import { playerBadges } from "@/lib/badges";
 import { hasEliteSeal, telemetryUnlocked } from "@/lib/pricing";
 import { formatRankLabelWith } from "@/lib/ranks";
+import { rankLevelFromRp } from "@/lib/rank-progress";
+import { CompetitiveJourney } from "@/components/competitive-journey";
 import { getPrisma } from "@/server/db";
 import { getText, getUi } from "@/server/locale";
 import { readSessionUser } from "@/server/session";
@@ -46,6 +48,8 @@ export default async function DashboardPage() {
   const text = await getText();
   const copy = text.account.dashboard;
   const ui = await getUi();
+  // One source: displayed rank is derived from stored RP via the published table (same as the rating engine).
+  const rankLevel = rankLevelFromRp(user.competitiveRating);
   const prisma = getPrisma();
   const [memberships, invites] = await Promise.all([
     prisma.teamMember.findMany({
@@ -64,7 +68,11 @@ export default async function DashboardPage() {
       <h1 className="gold-text mt-2 text-4xl font-semibold">{copy.title}</h1>
       <p className="mt-3 max-w-2xl text-ace-muted">{copy.lede}</p>
 
-      <div className="mt-10 grid gap-4 lg:grid-cols-[minmax(0,1.2fr)_minmax(16rem,0.8fr)]">
+      <div className="mt-8">
+        <CompetitiveJourney rp={user.competitiveRating} ui={ui} />
+      </div>
+
+      <div className="mt-6 grid gap-4 lg:grid-cols-[minmax(0,1.2fr)_minmax(16rem,0.8fr)]">
         <Panel className="border-ace-gold/35 p-6">
           {hasEliteSeal(user.subscriptionTier) ? (
             <div className="mb-4 flex items-center gap-3">
@@ -76,7 +84,7 @@ export default async function DashboardPage() {
           <PlayerBadges
             badges={playerBadges({
               subscriptionTier: user.subscriptionTier,
-              rankLevel: user.rankLevel,
+              rankLevel: rankLevel,
               wins: user.wins,
               losses: user.losses,
               steamLinked: Boolean(user.steamId),
@@ -94,7 +102,7 @@ export default async function DashboardPage() {
             <div>
               <dt className="text-ace-muted">{copy.stats.rank}</dt>
               <dd className="text-ace-gold-bright">
-                {formatRankLabelWith(text.ranks.emblem.rankLabel, user.rankLevel)}
+                {formatRankLabelWith(text.ranks.emblem.rankLabel, rankLevel)}
               </dd>
             </div>
             <div>
@@ -142,7 +150,7 @@ export default async function DashboardPage() {
             <PremiumProfileCard
               name={user.displayName}
               avatarUrl={user.avatarUrl || null}
-              level={user.rankLevel}
+              level={rankLevel}
               rating={user.competitiveRating}
               labels={premiumCardLabels(await getText())}
             />
@@ -163,7 +171,7 @@ export default async function DashboardPage() {
               <p className="mt-2 text-xs leading-5 text-ace-muted">{text.account.statsConsole.lockedBody}</p>
             ) : null}
           </Panel>
-          <RankEmblem level={user.rankLevel} art={effectiveRankArt(user)} />
+          <RankEmblem level={rankLevel} art={effectiveRankArt(user)} />
           <RankArtPicker current={effectiveRankArt(user)} premiumAllowed={canUsePremiumRankArt(user.subscriptionTier)} />
         </div>
       </div>

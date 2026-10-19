@@ -12,7 +12,8 @@ import { LobbyMembership } from "@/components/lobby-identity";
 import { LobbyOps } from "@/components/lobby-ops";
 import { effectiveRankArt } from "@/server/rank-art";
 import { hasEliteSeal } from "@/lib/pricing";
-import { getText } from "@/server/locale";
+import { getText, getUi } from "@/server/locale";
+import { CompetitiveJourney } from "@/components/competitive-journey";
 import { readSessionUser } from "@/server/session";
 
 function LobbyFallback() {
@@ -40,13 +41,18 @@ async function LobbyHomeDynamic() {
     user = null;
   }
 
-  const [text, liveStats] = await Promise.all([getText(), readPublicStats()]);
+  const [text, liveStats, ui] = await Promise.all([getText(), readPublicStats(), getUi()]);
   const live = Boolean(user);
   return (
     <main className="ace-lobby-root ace-home-flow">
       <OpeningReel />
       <HeroArena actions={<HomeLocaleActions live={live} />} />
       <PlatformStatus />
+      {user ? (
+        <div className="ace-home-journey">
+          <CompetitiveJourney rp={user.competitiveRating} ui={ui} />
+        </div>
+      ) : null}
       <LiveStatStrip initial={liveStats} labels={text.home.liveStats} />
       <nav className="ace-home-jumps" aria-label={text.home.jumpNav.label}>
         <Link href="/play">{text.home.jumpNav.play}</Link>

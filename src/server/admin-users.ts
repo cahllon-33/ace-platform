@@ -11,6 +11,7 @@ import { lookupSteamPersonasDetailed, type SteamSyncError } from "@/server/steam
 import { steamProfileUpdate } from "@/server/users";
 import { isAllowlistedSteamId, parseAdminSteamIds } from "@/lib/admin-allowlist";
 import { startOfDayInZone } from "@/server/sign-in-events";
+import { rankLevelFromRp } from "@/lib/rank-progress";
 import { PRESENCE_WINDOW_MS, readPresence, type ConnectedPlayer } from "@/server/presence";
 
 export type AdminLiveStats = {
@@ -108,7 +109,7 @@ function userToAdminRow(user: User, steamSyncError: SteamSyncError | null = null
     username: name,
     email: user.email ?? "—",
     steamId: user.steamId ?? "—",
-    rank: user.rankLevel,
+    rank: rankLevelFromRp(user.competitiveRating),
     rating: user.competitiveRating,
     tier: tierLabel(user.subscriptionTier),
     security: securityLabel(user.accountStatus),

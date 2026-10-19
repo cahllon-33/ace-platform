@@ -1,3 +1,4 @@
+import { rankLevelFromRp } from "@/lib/rank-progress";
 import { prisma } from "@/lib/db";
 import {
   PLACEHOLDER_GEAR,
@@ -50,8 +51,8 @@ export async function listTeamRosters(): Promise<{
       agents: agents.map((user) => ({
         id: user.id,
         username: user.username || user.displayName,
-        rankLevel: user.rankLevel,
-        rankLabel: `Rank ${user.rankLevel}`,
+        rankLevel: rankLevelFromRp(user.competitiveRating),
+        rankLabel: `Rank ${rankLevelFromRp(user.competitiveRating)}`,
         kd: `${user.wins}-${user.losses}`,
         rating: user.competitiveRating,
         role: "Support",
@@ -82,7 +83,7 @@ export async function listTeamRosters(): Promise<{
             name: user.displayName || user.username,
             role: ROLES[index] ?? "Player",
             tag,
-            level: user.rankLevel,
+            level: rankLevelFromRp(user.competitiveRating),
             matches: user.wins + user.losses,
             winRate: winRate(user.wins, user.losses),
             kd: `${user.wins}-${user.losses}`,
