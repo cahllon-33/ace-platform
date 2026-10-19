@@ -45,7 +45,7 @@ export function PremiumProfileCard({
           <span className="ace-pcard-avatar">
             {avatarUrl ? (
               // eslint-disable-next-line @next/next/no-img-element
-              <img src={avatarUrl} alt="" />
+              <img loading="lazy" src={avatarUrl} alt="" />
             ) : (
               <span aria-hidden="true">{name.slice(0, 1).toUpperCase()}</span>
             )}

@@ -77,7 +77,7 @@ export function RankSystemBoard({
                 >
                   <span className="ace-rank-medal">
                     {/* eslint-disable-next-line @next/next/no-img-element */}
-                    <img src={still} alt={emblemAlt(tier)} />
+                    <img loading="lazy" src={still} alt={emblemAlt(tier)} />
                     <span className="ace-level-pip">{tier.level}</span>
                   </span>
                   <span className="ace-rank-portrait-name">{tier.crystalName}</span>
@@ -100,7 +100,7 @@ export function RankSystemBoard({
           <article className={`ace-rank-detail-card ace-div-aura ace-div-aura-${division}`}>
             <span className="ace-rank-medal ace-rank-medal-detail">
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
+              <img loading="lazy"
                 src={asset.stillSrc}
                 alt={emblemAlt(selected)}
                 className="ace-rank-detail-thumb"

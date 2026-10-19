@@ -77,7 +77,7 @@ export function MapVeto({ onLocked }: { onLocked?: (map: string) => void }) {
                 disabled={!yourTurn || isBanned || Boolean(decider)}
                 onClick={() => ban(map.name)}
               >
-                <img src={map.plate} alt="" />
+                <img src={map.plate} alt="" loading="lazy" decoding="async" width={320} height={180} />
                 <span className="ace-veto-name">{map.name}</span>
                 <span className="ace-veto-action">
                   {isDecider ? copy.selected : isBanned ? copy.declined : copy.decline}

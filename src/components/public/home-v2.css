@@ -63,7 +63,11 @@
 @media (max-width: 860px) {
   .h39-hero-inner { grid-template-columns: 1fr; min-height: 0; }
   .h39-hero-aside { min-height: 0; order: -1; }
-  .h39-stack { width: min(15rem, 70%); }
+  .h39-stack { width: min(10rem, 52%); }
+}
+@media (max-width: 520px) {
+  /* Phones: text-first hero (badges appear in the ten-rank ladder right below). Keeps LCP on the headline. */
+  .h39-hero-aside:has(> .h39-stack) { display: none; }
   .h39-hero:not(.is-in) .h39-hero-aside:has(.h39-me) { order: 0; }
   .h39-steps, .h39-plans { grid-template-columns: 1fr; }
   .h39-steps li, .h39-steps li + li { padding: 1.3rem 0; border-inline-start: 0; border-bottom: 1px solid rgba(255,255,255,0.08); }
@@ -77,3 +81,4 @@
 .h39-status .ace-status-strip { max-width: none; margin: 0; }
 .h39-status .ace-status-strip ul { display: grid; grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr)); gap: 0.6rem; width: 100%; }
 .h39-status { width: 100%; box-sizing: border-box; } .h39-status > * { width: 100%; } .h39-section { width: 100%; box-sizing: border-box; }
+.h39-actions-ph { min-height: 7.6rem; width: 100%; }

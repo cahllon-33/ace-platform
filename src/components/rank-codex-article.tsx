@@ -41,7 +41,7 @@ export function RankCodexArticle({ article, text }: { article: CodexArticle; tex
           {emblem ? (
             <figure className="ace-codex-emblem">
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
+              <img loading="lazy"
                 src={emblem.asset.stillSrc}
                 alt={interpolate(copy.emblemAlt, {
                   name: emblem.tier.name,
