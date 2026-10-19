@@ -106,7 +106,12 @@ function stem(w: string): string[] {
 }
 
 export function tokenize(input: string): string[] {
-  const text = input.normalize("NFKC").toLowerCase().replace(/[׳']/g, "'");
+  const text = input
+    .normalize("NFKC")
+    .toLowerCase()
+    .replace(/[׳']/g, "'")
+    // multi-word phrases that must stay one concept
+    .replace(/pay[\s-]*(?:to|2)[\s-]*win|פיי[\s-]*טו[\s-]*וין|יתרון\s+בתשלום|לקנות\s+יתרון/g, " paytowin ");
   const out: string[] = [];
   for (const raw of text.split(/[^\p{L}\p{N}$+'-]+/u)) {
     const w = raw.replace(/^['-]+|['-]+$/g, "");
@@ -147,7 +152,9 @@ export const SYNONYMS: Syn[] = [
   { forms: ["abandon", "abandoning", "leave", "leaving", "quit", "draw", "נטישה", "נוטש", "נוטשים", "לנטוש", "לעזוב", "עוזב", "תיקו"], en: ["abandoning", "leaving", "draw", "50"], boost: /how-points-move\.sections\.1|rpRules\.rAbandon/ },
   { forms: ["highest", "max", "maximum", "best", "ceiling", "הכי", "גבוהה", "הגבוהה", "הגבוה", "עליונה", "המקסימלית"], en: ["ceiling", "3,000", "legend", "eleventh"], boost: /rank-10|gateLast|floor-ceiling/ },
   { forms: ["support", "contact", "email", "help", "תמיכה", "קשר", "מייל", "אימייל", "עזרה"], en: ["support", "contact", "support@ace-platform.gg"], boost: /contact/ },
-  { forms: ["advantage", "pay2win", "p2w", "paytowin", "boost", "יתרון", "בוסט"], en: ["advantage", "boost", "competitive", "plan"], boost: /antiCheat\.faq|matrix\.rows\.advantage/ },
+  { forms: ["paytowin", "pay2win", "p2w"], en: ["advantage", "never", "buy", "competitive", "paid"], boost: /antiCheat\.faq|r39\.home\.sub|matrix\.rows\.advantage/ },
+  { forms: ["play", "playing", "לשחק", "משחקים", "להצטרף", "הצטרפות"], en: ["connect", "steam", "calibrate", "sign"], boost: /r39\.home\.step/ },
+  { forms: ["advantage", "boost", "יתרון", "בוסט"], en: ["advantage", "boost", "competitive", "plan"], boost: /antiCheat\.faq|matrix\.rows\.advantage/ },
   { forms: ["premium", "פרימיום", "פרמיום"], en: ["premium"] },
   { forms: ["plus", "פלוס"], en: ["plus"] },
   { forms: ["free", "חינם", "חינמי"], en: ["free"] },

@@ -82,3 +82,20 @@ describe("site knowledge answers", () => {
     expect(tokenize("cheaters")).toContain("cheater");
   });
 });
+
+describe("phrase queries", () => {
+  it.each([
+    ["en", "Is there pay to win?"],
+    ["he", "האם יש יתרון בתשלום?"],
+    ["he", "פיי טו וין?"],
+  ])("[%s] %s → no paid advantage", (l, q) => {
+    const a = kbAnswer(q, l);
+    expect(a.found).toBe(true);
+    if (a.found) expect(a.answer).toMatch(/advantage|יתרון/i);
+  });
+  it("[he] how to start playing → steps", () => {
+    const a = kbAnswer("איך מתחילים לשחק?", "he");
+    expect(a.found).toBe(true);
+    if (a.found) expect(a.answer).toMatch(/Steam/);
+  });
+});
