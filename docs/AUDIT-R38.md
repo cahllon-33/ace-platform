@@ -21,3 +21,7 @@ Scores are honest 1–10 judgements of the current state, not targets.
 Also noted (not changed, needs the owner):
 - D31 tournament bracket staging clan list starts with "NEXsus Clan". It is a staging bracket name, not an account, but it conflicts with the spirit of "never seed NEXsus".
 - `moreNav` exists in `src/lib/site.ts`; the header renders it as the right-hand "Explore" row, not a "MORE" dropdown.
+
+## Design tokens (R38-B)
+
+`src/app/globals.css` `:root` now holds the approved palette as `--ace-t-*` (bg `#08090D`/`#050607`, panels `#111318`/`#171A20`, gold `#D4AF37`/`#FFD76A`/`#FFE8A3`, text `#F4F1EA`/`#A6A7AC`, success `#2ED47A`, error `#FF5B5B`, plus line, radius, focus ring and shadow). Tailwind gets matching `ace-t-*` colors. Legacy variables (`--ace-gold`, `--ace-graphite`, …) keep their values so nothing shifts visually; new UI uses `--ace-t-*` only.
