@@ -31,6 +31,8 @@ import {
   type AdminReport,
 } from "@/server/admin-users";
 import { AdminTvWall } from "@/components/admin-tv-wall";
+import { AdminAuditPanel, AdminPlayerOps, CsvExportButton, useAdmin40 } from "@/components/admin-ops";
+import "@/components/admin-r40.css";
 import type { TvWall } from "@/server/admin-broadcast";
 import { PlayerAvatar } from "@/components/floating-emblem";
 import { RankOrb } from "@/components/rank-orb";
@@ -159,6 +161,7 @@ function PlayerDrawer({
   staging,
   onClose,
   onBan,
+  onChanged,
 }: {
   player: AdminPlayerRow;
   dir: "ltr" | "rtl";
@@ -166,6 +169,7 @@ function PlayerDrawer({
   staging: boolean;
   onClose: () => void;
   onBan: () => void;
+  onChanged: () => void;
 }) {
   const { t } = useAdminI18n();
   const titleId = useId();
@@ -257,6 +261,7 @@ function PlayerDrawer({
             <dd>{t(SECURITY_KEY[player.security])}</dd>
           </div>
         </dl>
+        {staging ? null : <AdminPlayerOps playerId={player.id} name={player.username} banned={player.security === "Banned"} onChanged={onChanged} />}
         <div className="acx-drawer-actions">
         <button
           type="button"
@@ -423,12 +428,21 @@ export function AdminCommandCenter({
   const editor = players.find((player) => player.id === editorId) ?? (onlineExtra?.id === editorId ? onlineExtra : null);
 
   const [query, setQuery] = useState("");
+  const [filter, setFilter] = useState<"all" | "Free" | "Plus" | "Premium" | "banned">("all");
+  const [sortBy, setSortBy] = useState<"rp" | "name" | "new">("rp");
+  const [page, setPage] = useState(0);
+  const [auditKey, setAuditKey] = useState(0);
+  const t40 = useAdmin40();
+  const PAGE = 25;
   const needle = query.trim().toLowerCase();
-  const shown = needle
-    ? players.filter((player) =>
-        [player.username, player.email, player.steamId].some((value) => value.toLowerCase().includes(needle)),
-      )
-    : players;
+  const filtered = players
+    .filter((player) => !needle || [player.username, player.email, player.steamId].some((value) => value.toLowerCase().includes(needle)))
+    .filter((player) => filter === "all" || (filter === "banned" ? player.security === "Banned" : player.tier === filter))
+    .slice()
+    .sort((a, b) => (sortBy === "rp" ? b.rating - a.rating : sortBy === "name" ? a.username.localeCompare(b.username) : b.registeredOn.localeCompare(a.registeredOn)));
+  const pages = Math.max(1, Math.ceil(filtered.length / PAGE));
+  const safePage = Math.min(page, pages - 1);
+  const shown = filtered.slice(safePage * PAGE, safePage * PAGE + PAGE);
   const dbState = stats.staging ? "preview" : stats.unavailable ? "down" : "live";
   const nav: Array<[string, AdminMessageKey, number | null]> = [
     ["acx-overview", "navOverview", null],
@@ -437,6 +451,7 @@ export function AdminCommandCenter({
     ["acx-matches", "navMatches", matches.length],
     ["acx-reports", "navReports", reports.length],
     ["acx-tournaments", "navTournaments", tournaments.length],
+    ["acx-audit", "navAudit", null],
   ];
 
   return (
@@ -642,7 +657,7 @@ export function AdminCommandCenter({
           <div className="acx-card-head">
             <div>
               <h2 id="admin-registry-title" className="acx-section-title">{t("registryTitle")}</h2>
-              <p className="acx-muted">{t("playersCount", { shown: shown.length, total: players.length })}</p>
+              <p className="acx-muted">{t("playersCount", { shown: filtered.length, total: players.length })}</p>
             </div>
             <label className="acx-search">
               <span className="sr-only">{t("searchPlayers")}</span>
@@ -651,10 +666,31 @@ export function AdminCommandCenter({
                 className="ace-admin-input"
                 placeholder={t("searchPlayers")}
                 value={query}
-                onChange={(event) => setQuery(event.target.value)}
+                onChange={(event) => {
+                  setQuery(event.target.value);
+                  setPage(0);
+                }}
                 suppressHydrationWarning
               />
             </label>
+          </div>
+          <div className="ax-toolbar">
+            <div className="ax-chips" role="group" aria-label={t40("all")}>
+              {(["all", "Free", "Plus", "Premium", "banned"] as const).map((f) => (
+                <button key={f} type="button" aria-pressed={filter === f} onClick={() => { setFilter(f); setPage(0); }}>
+                  {f === "all" ? t40("all") : f === "banned" ? t40("banned") : f}
+                </button>
+              ))}
+            </div>
+            <label className="ax-sort">
+              <span>{t40("sort")}</span>
+              <select value={sortBy} onChange={(e) => setSortBy(e.target.value as "rp" | "name" | "new")}>
+                <option value="rp">{t40("sortRp")}</option>
+                <option value="name">{t40("sortName")}</option>
+                <option value="new">{t40("sortNew")}</option>
+              </select>
+            </label>
+            {stats.staging ? null : <CsvExportButton />}
           </div>
           {flash ? (
             <p className="ace-admin-flash" role="status">
@@ -774,6 +810,13 @@ export function AdminCommandCenter({
               </tbody>
             </table>
           </div>
+          {pages > 1 ? (
+            <div className="ax-pager">
+              <button type="button" className="ax-btn" disabled={safePage === 0} onClick={() => setPage(safePage - 1)}>{t40("prev")}</button>
+              <span>{t40("page", { page: safePage + 1, pages })}</span>
+              <button type="button" className="ax-btn" disabled={safePage >= pages - 1} onClick={() => setPage(safePage + 1)}>{t40("next")}</button>
+            </div>
+          ) : null}
         </section>
 
         <div className="acx-grid-3">
@@ -839,6 +882,7 @@ export function AdminCommandCenter({
               </dl>
             ) : null}
           </section>
+          <AdminAuditPanel refreshKey={auditKey} />
           <section id="acx-tournaments" className="acx-card acx-anchor" aria-labelledby="acx-tournaments-title">
             <h2 id="acx-tournaments-title" className="acx-card-title">{t("tournamentsTitle")}</h2>
             <p className="acx-muted">{t("tournamentsNote")}</p>
@@ -871,6 +915,10 @@ export function AdminCommandCenter({
           staging={stats.staging}
           onClose={() => setEditorId(null)}
           onBan={() => runBan(editor, editor.security !== "Banned")}
+          onChanged={() => {
+            setAuditKey((k) => k + 1);
+            router.refresh();
+          }}
         />
       ) : null}
     </div>

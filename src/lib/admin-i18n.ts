@@ -2,6 +2,7 @@ import { interpolate } from "@/lib/i18n";
 
 export const ADMIN_EN = {
   r23Rank: "Rank",
+  navAudit: "Audit log",
   r23Wl: "Wins / losses",
   r23WlEmpty: "No recorded matches",
   r23Premium: "Premium art",
@@ -304,6 +305,7 @@ export const ADMIN_EN = {
 
 export const ADMIN_HE: Record<keyof typeof ADMIN_EN, string> = {
   r23Rank: "דרגה",
+  navAudit: "יומן ביקורת",
   r23Wl: "ניצחונות / הפסדים",
   r23WlEmpty: "אין משחקים מתועדים",
   r23Premium: "אמנות פרימיום",
