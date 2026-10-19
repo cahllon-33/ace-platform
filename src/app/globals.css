@@ -6945,9 +6945,10 @@ html[dir="rtl"] .ace-hub-card-face {
   animation: ace-soon-sheen 5.5s ease-in-out infinite;
 }
 
+/* R38-M: composited sheen (190% / 40% width = 475%) */
 @keyframes ace-soon-sheen {
-  0%, 60% { left: -60%; }
-  100% { left: 130%; }
+  0%, 60% { transform: translateX(0) skewX(-20deg); }
+  100% { transform: translateX(475%) skewX(-20deg); }
 }
 
 .ace-soon.is-sm { padding: 0.28rem 0.7rem; font-size: 0.6rem; }
@@ -7293,11 +7294,12 @@ html[dir="rtl"] .ace-hub-card-face {
   animation: ace-hero-sweep 9s cubic-bezier(0.45, 0, 0.25, 1) 1.5s infinite;
 }
 
+/* R38-M: transform instead of `left` (composited, no layout shift). 160% of parent / 28% width = 571.43% */
 @keyframes ace-hero-sweep {
-  0% { left: -40%; opacity: 0; }
+  0% { transform: translateX(0); opacity: 0; }
   4% { opacity: 1; }
-  30% { left: 120%; opacity: 1; }
-  31%, 100% { left: 120%; opacity: 0; }
+  30% { transform: translateX(571.43%); opacity: 1; }
+  31%, 100% { transform: translateX(571.43%); opacity: 0; }
 }
 
 @media (prefers-reduced-motion: reduce) {
