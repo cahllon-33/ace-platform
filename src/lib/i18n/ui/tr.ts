@@ -301,5 +301,59 @@ export const UI_TR: Ui = {
       "thinking": "Yazıyor…",
       "tooLong": "Mesaj çok uzun (en fazla {max} karakter)."
     }
+  },
+  "r39": {
+    "home": {
+      "kicker": "Counter-Strike 2 · Rekabetçi platform",
+      "h1a": "Rekabet et.",
+      "h1b": "Kalibre ol.",
+      "h1c": "Yüksel.",
+      "sub": "Steam girişi, herkese açık RP merdiveni ve asla avantaj satın almayan planlarla dereceli CS2.",
+      "trust1": "Yalnızca CS2",
+      "trust2": "Steam OpenID ile giriş",
+      "trust3": "$0 · $4 · $7 — kazanmak için ödeme yok",
+      "trust4": "10 rütbe · 1.200 RP ile başla",
+      "stepsKicker": "Nasıl çalışır",
+      "stepsTitle": "İlk rütbene üç adım",
+      "step1t": "Steam'i bağla",
+      "step1b": "Steam OpenID ile giriş yap. A.C.E. Steam şifreni asla görmez.",
+      "step2t": "Kalibre ol",
+      "step2b": "3. kademeden 1.200 RP ile başlarsın. Kaydedilen her maç RP'ni yayımlanmış kurallara göre değiştirir.",
+      "step3t": "Yüksel",
+      "step3b": "Galibiyet +20 RP'ye kadar (en iyi oyuncuya +22), mağlubiyet −23'e kadar. Rütben her zaman RP'ni izler.",
+      "ranksTitle": "On rütbe. Tek bir açık tablo.",
+      "ranksBody": "Rozet renkleri her kademe için sabittir ve rütben her zaman kayıtlı RP'nden hesaplanır.",
+      "ranksCta": "Tüm rütbeler",
+      "plansTitle": "Galibiyet satın almayan planlar",
+      "plansBody": "Ücretli planlar yalnızca kozmetik ve kolaylık sağlar. Ödeme henüz aktif değil, bu yüzden bugün herkes Free'de.",
+      "plansCta": "Planları karşılaştır",
+      "free": "Ücretsiz",
+      "perMonth": "/ay",
+      "signedInKicker": "Tekrar hoş geldin"
+    },
+    "profile": {
+      "kicker": "OYUNCU",
+      "notFound": "Oyuncu bulunamadı",
+      "notFoundBody": "Bu Steam ID'yi kullanan bir A.C.E. hesabı yok ya da profil herkese açık değil.",
+      "rating": "Puan",
+      "rank": "Rütbe",
+      "record": "Kayıt",
+      "memberSince": "{date} tarihinden beri üye",
+      "steamProfile": "Steam profili",
+      "yourProfile": "Bu senin profilin",
+      "backToBoard": "Liderlik tablosuna dön"
+    },
+    "board": {
+      "podium": "En iyi oyuncular",
+      "viewProfile": "Profili gör"
+    },
+    "chat": {
+      "sources": "Kaynaklar",
+      "noMatch": "Bunu A.C.E. sitesinin içeriğinde bulamadım. Soruyu ekibe bilet olarak gönderebilirsin.",
+      "s1": "Premium ne kadar?",
+      "s2": "Nasıl RP kazanırım?",
+      "s3": "Hileciyi nasıl bildiririm?",
+      "kbNote": "Yanıtlar A.C.E. sitesinin içeriğinden alınır."
+    }
   }
 };

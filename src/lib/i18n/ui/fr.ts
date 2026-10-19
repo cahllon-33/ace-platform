@@ -301,5 +301,59 @@ export const UI_FR: Ui = {
       "thinking": "Écrit…",
       "tooLong": "Message trop long ({max} caractères max.)."
     }
+  },
+  "r39": {
+    "home": {
+      "kicker": "Counter-Strike 2 · Plateforme compétitive",
+      "h1a": "Affrontez.",
+      "h1b": "Calibrez.",
+      "h1c": "Montez.",
+      "sub": "CS2 classé avec connexion Steam, une échelle de RP publique et des offres qui n'achètent jamais d'avantage.",
+      "trust1": "CS2 uniquement",
+      "trust2": "Connexion Steam OpenID",
+      "trust3": "0 $ · 4 $ · 7 $ — pas de pay-to-win",
+      "trust4": "10 rangs · départ à 1 200 RP",
+      "stepsKicker": "Comment ça marche",
+      "stepsTitle": "Trois étapes vers votre premier rang",
+      "step1t": "Connectez Steam",
+      "step1b": "Connectez-vous avec Steam OpenID. A.C.E. ne voit jamais votre mot de passe Steam.",
+      "step2t": "Calibrez",
+      "step2b": "Vous commencez au palier 3 avec 1 200 RP. Chaque match enregistré modifie vos RP selon des règles publiées.",
+      "step3t": "Montez",
+      "step3b": "Une victoire rapporte jusqu'à +20 RP (+22 en meilleur fragger) ; une défaite coûte jusqu'à −23. Votre rang suit toujours vos RP.",
+      "ranksTitle": "Dix rangs. Un tableau public.",
+      "ranksBody": "Les couleurs des badges sont fixes par palier, et votre rang est toujours calculé à partir de vos RP enregistrés.",
+      "ranksCta": "Voir tous les rangs",
+      "plansTitle": "Des offres qui n'achètent pas de victoires",
+      "plansBody": "Les offres payantes sont uniquement cosmétiques et pratiques. Le paiement n'est pas encore actif : tout le monde est en Gratuit aujourd'hui.",
+      "plansCta": "Comparer les offres",
+      "free": "Gratuit",
+      "perMonth": "/mois",
+      "signedInKicker": "Bon retour"
+    },
+    "profile": {
+      "kicker": "JOUEUR",
+      "notFound": "Joueur introuvable",
+      "notFoundBody": "Aucun compte A.C.E. n'utilise cet identifiant Steam, ou le profil n'est pas public.",
+      "rating": "Classement",
+      "rank": "Rang",
+      "record": "Bilan",
+      "memberSince": "Membre depuis {date}",
+      "steamProfile": "Profil Steam",
+      "yourProfile": "C'est votre profil",
+      "backToBoard": "Retour au classement"
+    },
+    "board": {
+      "podium": "Meilleurs joueurs",
+      "viewProfile": "Voir le profil"
+    },
+    "chat": {
+      "sources": "Sources",
+      "noMatch": "Je n'ai pas trouvé cela dans le contenu du site A.C.E. Vous pouvez envoyer votre question à l'équipe sous forme de ticket.",
+      "s1": "Combien coûte Premium ?",
+      "s2": "Comment gagner des RP ?",
+      "s3": "Comment signaler un tricheur ?",
+      "kbNote": "Les réponses proviennent du contenu du site A.C.E."
+    }
   }
 };

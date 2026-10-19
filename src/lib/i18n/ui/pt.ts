@@ -301,5 +301,59 @@ export const UI_PT: Ui = {
       "thinking": "A escrever…",
       "tooLong": "Mensagem demasiado longa (máx. {max} caracteres)."
     }
+  },
+  "r39": {
+    "home": {
+      "kicker": "Counter-Strike 2 · Plataforma competitiva",
+      "h1a": "Compete.",
+      "h1b": "Calibra.",
+      "h1c": "Sobe.",
+      "sub": "CS2 ranqueado com início de sessão Steam, uma escada de RP pública e planos que nunca compram vantagem.",
+      "trust1": "Apenas CS2",
+      "trust2": "Início de sessão Steam OpenID",
+      "trust3": "$0 · $4 · $7 — sem pagar para ganhar",
+      "trust4": "10 patentes · começa com 1.200 RP",
+      "stepsKicker": "Como funciona",
+      "stepsTitle": "Três passos até à primeira patente",
+      "step1t": "Liga o Steam",
+      "step1b": "Inicia sessão com Steam OpenID. A A.C.E. nunca vê a tua palavra-passe do Steam.",
+      "step2t": "Calibra",
+      "step2b": "Começas no nível 3 com 1.200 RP. Cada partida registada altera os teus RP segundo regras publicadas.",
+      "step3t": "Sobe",
+      "step3b": "Uma vitória dá até +20 RP (+22 como melhor jogador); uma derrota custa até −23. A tua patente segue sempre os teus RP.",
+      "ranksTitle": "Dez patentes. Uma tabela pública.",
+      "ranksBody": "As cores dos emblemas são fixas por nível e a tua patente é sempre calculada a partir dos RP guardados.",
+      "ranksCta": "Ver todas as patentes",
+      "plansTitle": "Planos que nunca compram vitórias",
+      "plansBody": "Os planos pagos são apenas estéticos e de conveniência. O pagamento ainda não está ativo, por isso hoje todos estão no Grátis.",
+      "plansCta": "Comparar planos",
+      "free": "Grátis",
+      "perMonth": "/mês",
+      "signedInKicker": "Bem-vindo de volta"
+    },
+    "profile": {
+      "kicker": "JOGADOR",
+      "notFound": "Jogador não encontrado",
+      "notFoundBody": "Nenhuma conta A.C.E. usa este Steam ID, ou o perfil não é público.",
+      "rating": "Pontuação",
+      "rank": "Patente",
+      "record": "Registo",
+      "memberSince": "Membro desde {date}",
+      "steamProfile": "Perfil Steam",
+      "yourProfile": "Este é o teu perfil",
+      "backToBoard": "Voltar à classificação"
+    },
+    "board": {
+      "podium": "Melhores jogadores",
+      "viewProfile": "Ver perfil"
+    },
+    "chat": {
+      "sources": "Fontes",
+      "noMatch": "Não encontrei isto no conteúdo do site da A.C.E. Podes enviar a tua pergunta à equipa como pedido.",
+      "s1": "Quanto custa o Premium?",
+      "s2": "Como ganho RP?",
+      "s3": "Como denuncio um batoteiro?",
+      "kbNote": "As respostas vêm do conteúdo do site da A.C.E."
+    }
   }
 };

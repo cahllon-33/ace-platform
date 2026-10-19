@@ -301,5 +301,59 @@ export const UI_ZH: Ui = {
       "thinking": "正在输入…",
       "tooLong": "消息过长（最多 {max} 个字符）。"
     }
+  },
+  "r39": {
+    "home": {
+      "kicker": "Counter-Strike 2 · 竞技平台",
+      "h1a": "竞技。",
+      "h1b": "校准。",
+      "h1c": "晋升。",
+      "sub": "使用 Steam 登录、公开 RP 天梯，以及永不出售优势的方案的排位 CS2。",
+      "trust1": "仅限 CS2",
+      "trust2": "Steam OpenID 登录",
+      "trust3": "$0 · $4 · $7 — 不能花钱取胜",
+      "trust4": "10 个段位 · 以 1,200 RP 起步",
+      "stepsKicker": "运作方式",
+      "stepsTitle": "三步获得首个段位",
+      "step1t": "连接 Steam",
+      "step1b": "通过 Steam OpenID 登录。A.C.E. 永远看不到你的 Steam 密码。",
+      "step2t": "校准",
+      "step2b": "你从第 3 级、1,200 RP 起步。每场记录的比赛都会按公开规则调整你的 RP。",
+      "step3t": "晋升",
+      "step3b": "胜利最多 +20 RP（最佳选手 +22），失败最多 −23。你的段位始终跟随 RP。",
+      "ranksTitle": "十个段位。一张公开表格。",
+      "ranksBody": "徽章颜色按等级固定，段位始终根据你保存的 RP 计算。",
+      "ranksCta": "查看所有段位",
+      "plansTitle": "不卖胜利的方案",
+      "plansBody": "付费方案仅提供外观与便利。支付尚未开通，所以今天所有人都是 Free。",
+      "plansCta": "比较方案",
+      "free": "免费",
+      "perMonth": "/月",
+      "signedInKicker": "欢迎回来"
+    },
+    "profile": {
+      "kicker": "玩家",
+      "notFound": "未找到玩家",
+      "notFoundBody": "没有 A.C.E. 账户使用此 Steam ID，或该资料未公开。",
+      "rating": "评分",
+      "rank": "段位",
+      "record": "战绩",
+      "memberSince": "{date} 加入",
+      "steamProfile": "Steam 资料",
+      "yourProfile": "这是你的资料",
+      "backToBoard": "返回排行榜"
+    },
+    "board": {
+      "podium": "顶尖玩家",
+      "viewProfile": "查看资料"
+    },
+    "chat": {
+      "sources": "来源",
+      "noMatch": "我在 A.C.E. 网站内容中没有找到这个。你可以把问题作为工单发送给团队。",
+      "s1": "Premium 多少钱？",
+      "s2": "如何获得 RP？",
+      "s3": "如何举报作弊者？",
+      "kbNote": "回答来自 A.C.E. 网站内容。"
+    }
   }
 };

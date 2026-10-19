@@ -301,5 +301,59 @@ export const UI_PL: Ui = {
       "thinking": "Pisze…",
       "tooLong": "Wiadomość jest za długa (maks. {max} znaków)."
     }
+  },
+  "r39": {
+    "home": {
+      "kicker": "Counter-Strike 2 · Platforma rywalizacji",
+      "h1a": "Rywalizuj.",
+      "h1b": "Kalibruj.",
+      "h1c": "Awansuj.",
+      "sub": "Rankingowe CS2 z logowaniem Steam, publiczną drabinką RP i planami, które nigdy nie kupują przewagi.",
+      "trust1": "Tylko CS2",
+      "trust2": "Logowanie Steam OpenID",
+      "trust3": "$0 · $4 · $7 — bez pay-to-win",
+      "trust4": "10 rang · start z 1200 RP",
+      "stepsKicker": "Jak to działa",
+      "stepsTitle": "Trzy kroki do pierwszej rangi",
+      "step1t": "Połącz Steam",
+      "step1b": "Zaloguj się przez Steam OpenID. A.C.E. nigdy nie widzi Twojego hasła Steam.",
+      "step2t": "Kalibracja",
+      "step2b": "Zaczynasz na poziomie 3 z 1200 RP. Każdy zapisany mecz zmienia RP według opublikowanych zasad.",
+      "step3t": "Awans",
+      "step3b": "Wygrana daje do +20 RP (+22 dla najlepszego gracza), porażka kosztuje do −23. Ranga zawsze wynika z RP.",
+      "ranksTitle": "Dziesięć rang. Jedna publiczna tabela.",
+      "ranksBody": "Kolory odznak są stałe dla poziomów, a ranga zawsze liczona jest z zapisanych RP.",
+      "ranksCta": "Zobacz wszystkie rangi",
+      "plansTitle": "Plany, które nie kupują wygranych",
+      "plansBody": "Płatne plany to tylko kosmetyka i wygoda. Płatności nie są jeszcze aktywne, więc dziś wszyscy mają Free.",
+      "plansCta": "Porównaj plany",
+      "free": "Darmowy",
+      "perMonth": "/mies.",
+      "signedInKicker": "Witaj ponownie"
+    },
+    "profile": {
+      "kicker": "GRACZ",
+      "notFound": "Nie znaleziono gracza",
+      "notFoundBody": "Żadne konto A.C.E. nie używa tego Steam ID albo profil nie jest publiczny.",
+      "rating": "Wynik",
+      "rank": "Ranga",
+      "record": "Bilans",
+      "memberSince": "Członek od {date}",
+      "steamProfile": "Profil Steam",
+      "yourProfile": "To Twój profil",
+      "backToBoard": "Wróć do rankingu"
+    },
+    "board": {
+      "podium": "Najlepsi gracze",
+      "viewProfile": "Zobacz profil"
+    },
+    "chat": {
+      "sources": "Źródła",
+      "noMatch": "Nie znalazłem tego w treściach strony A.C.E. Możesz wysłać pytanie do zespołu jako zgłoszenie.",
+      "s1": "Ile kosztuje Premium?",
+      "s2": "Jak zdobyć RP?",
+      "s3": "Jak zgłosić oszusta?",
+      "kbNote": "Odpowiedzi pochodzą z treści strony A.C.E."
+    }
   }
 };

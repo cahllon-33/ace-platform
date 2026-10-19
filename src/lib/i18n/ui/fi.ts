@@ -301,5 +301,59 @@ export const UI_FI: Ui = {
       "thinking": "Kirjoittaa…",
       "tooLong": "Viesti on liian pitkä (enintään {max} merkkiä)."
     }
+  },
+  "r39": {
+    "home": {
+      "kicker": "Counter-Strike 2 · Kilpailualusta",
+      "h1a": "Kilpaile.",
+      "h1b": "Kalibroi.",
+      "h1c": "Nouse.",
+      "sub": "Rankattua CS2:ta Steam-kirjautumisella, julkisella RP-tikkaalla ja tilauksilla, jotka eivät koskaan osta etua.",
+      "trust1": "Vain CS2",
+      "trust2": "Steam OpenID -kirjautuminen",
+      "trust3": "$0 · $4 · $7 — ei pay-to-winiä",
+      "trust4": "10 rankia · aloitus 1 200 RP:llä",
+      "stepsKicker": "Näin se toimii",
+      "stepsTitle": "Kolme askelta ensimmäiseen rankiin",
+      "step1t": "Yhdistä Steam",
+      "step1b": "Kirjaudu Steam OpenID:llä. A.C.E. ei koskaan näe Steam-salasanaasi.",
+      "step2t": "Kalibroi",
+      "step2b": "Aloitat tasolta 3 1 200 RP:llä. Jokainen tallennettu ottelu muuttaa RP:täsi julkaistujen sääntöjen mukaan.",
+      "step3t": "Nouse",
+      "step3b": "Voitto antaa jopa +20 RP (+22 parhaalle pelaajalle), tappio maksaa jopa −23. Rankisi seuraa aina RP:täsi.",
+      "ranksTitle": "Kymmenen rankia. Yksi julkinen taulukko.",
+      "ranksBody": "Merkkien värit ovat kiinteät tasoittain, ja rankisi lasketaan aina tallennetusta RP:stä.",
+      "ranksCta": "Katso kaikki rankit",
+      "plansTitle": "Tilaukset, jotka eivät osta voittoja",
+      "plansBody": "Maksulliset tilaukset ovat vain kosmeettisia ja mukavuutta. Maksaminen ei ole vielä käytössä, joten tänään kaikilla on Free.",
+      "plansCta": "Vertaa tilauksia",
+      "free": "Ilmainen",
+      "perMonth": "/kk",
+      "signedInKicker": "Tervetuloa takaisin"
+    },
+    "profile": {
+      "kicker": "PELAAJA",
+      "notFound": "Pelaajaa ei löytynyt",
+      "notFoundBody": "Mikään A.C.E.-tili ei käytä tätä Steam ID:tä, tai profiili ei ole julkinen.",
+      "rating": "Luokitus",
+      "rank": "Rank",
+      "record": "Tulokset",
+      "memberSince": "Jäsen alkaen {date}",
+      "steamProfile": "Steam-profiili",
+      "yourProfile": "Tämä on profiilisi",
+      "backToBoard": "Takaisin tulostaululle"
+    },
+    "board": {
+      "podium": "Parhaat pelaajat",
+      "viewProfile": "Näytä profiili"
+    },
+    "chat": {
+      "sources": "Lähteet",
+      "noMatch": "En löytänyt tätä A.C.E.-sivuston sisällöstä. Voit lähettää kysymyksesi tiimille tikettinä.",
+      "s1": "Paljonko Premium maksaa?",
+      "s2": "Miten saan RP:tä?",
+      "s3": "Miten ilmoitan huijarista?",
+      "kbNote": "Vastaukset perustuvat A.C.E.-sivuston sisältöön."
+    }
   }
 };

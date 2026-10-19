@@ -301,5 +301,59 @@ export const UI_RO: Ui = {
       "thinking": "Scrie…",
       "tooLong": "Mesajul este prea lung (max. {max} caractere)."
     }
+  },
+  "r39": {
+    "home": {
+      "kicker": "Counter-Strike 2 · Platformă competitivă",
+      "h1a": "Concurează.",
+      "h1b": "Calibrează.",
+      "h1c": "Urcă.",
+      "sub": "CS2 clasificat cu autentificare Steam, o scară RP publică și planuri care nu cumpără niciodată avantaj.",
+      "trust1": "Doar CS2",
+      "trust2": "Autentificare Steam OpenID",
+      "trust3": "$0 · $4 · $7 — fără pay-to-win",
+      "trust4": "10 ranguri · start cu 1.200 RP",
+      "stepsKicker": "Cum funcționează",
+      "stepsTitle": "Trei pași până la primul rang",
+      "step1t": "Conectează Steam",
+      "step1b": "Autentifică-te cu Steam OpenID. A.C.E. nu vede niciodată parola ta Steam.",
+      "step2t": "Calibrează",
+      "step2b": "Începi la nivelul 3 cu 1.200 RP. Fiecare meci înregistrat îți modifică RP după reguli publicate.",
+      "step3t": "Urcă",
+      "step3b": "O victorie aduce până la +20 RP (+22 pentru cel mai bun jucător); o înfrângere costă până la −23. Rangul urmează mereu RP.",
+      "ranksTitle": "Zece ranguri. Un tabel public.",
+      "ranksBody": "Culorile insignelor sunt fixe pe nivel, iar rangul tău se calculează mereu din RP-ul stocat.",
+      "ranksCta": "Vezi toate rangurile",
+      "plansTitle": "Planuri care nu cumpără victorii",
+      "plansBody": "Planurile plătite sunt doar cosmetice și de confort. Plata nu este încă activă, deci azi toată lumea are Free.",
+      "plansCta": "Compară planurile",
+      "free": "Gratuit",
+      "perMonth": "/lună",
+      "signedInKicker": "Bine ai revenit"
+    },
+    "profile": {
+      "kicker": "JUCĂTOR",
+      "notFound": "Jucător negăsit",
+      "notFoundBody": "Niciun cont A.C.E. nu folosește acest Steam ID sau profilul nu este public.",
+      "rating": "Scor",
+      "rank": "Rang",
+      "record": "Bilanț",
+      "memberSince": "Membru din {date}",
+      "steamProfile": "Profil Steam",
+      "yourProfile": "Acesta este profilul tău",
+      "backToBoard": "Înapoi la clasament"
+    },
+    "board": {
+      "podium": "Cei mai buni jucători",
+      "viewProfile": "Vezi profilul"
+    },
+    "chat": {
+      "sources": "Surse",
+      "noMatch": "Nu am găsit asta în conținutul site-ului A.C.E. Poți trimite întrebarea echipei ca tichet.",
+      "s1": "Cât costă Premium?",
+      "s2": "Cum câștig RP?",
+      "s3": "Cum raportez un trișor?",
+      "kbNote": "Răspunsurile provin din conținutul site-ului A.C.E."
+    }
   }
 };

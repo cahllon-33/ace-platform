@@ -301,5 +301,59 @@ export const UI_DE: Ui = {
       "thinking": "Schreibt…",
       "tooLong": "Nachricht ist zu lang (max. {max} Zeichen)."
     }
+  },
+  "r39": {
+    "home": {
+      "kicker": "Counter-Strike 2 · Wettkampfplattform",
+      "h1a": "Antreten.",
+      "h1b": "Kalibrieren.",
+      "h1c": "Aufsteigen.",
+      "sub": "Ranked CS2 mit Steam-Anmeldung, öffentlicher RP-Leiter und Abos, die nie einen Vorteil kaufen.",
+      "trust1": "Nur CS2",
+      "trust2": "Steam-OpenID-Anmeldung",
+      "trust3": "$0 · $4 · $7 — kein Pay-to-Win",
+      "trust4": "10 Ränge · Start mit 1.200 RP",
+      "stepsKicker": "So funktioniert's",
+      "stepsTitle": "In drei Schritten zum ersten Rang",
+      "step1t": "Steam verbinden",
+      "step1b": "Melde dich mit Steam OpenID an. A.C.E. sieht dein Steam-Passwort nie.",
+      "step2t": "Kalibrieren",
+      "step2b": "Du startest auf Stufe 3 mit 1.200 RP. Jedes erfasste Match verändert deine RP nach veröffentlichten Regeln.",
+      "step3t": "Aufsteigen",
+      "step3b": "Ein Sieg bringt bis zu +20 RP (+22 als Top-Fragger), eine Niederlage kostet bis zu −23. Dein Rang folgt immer deinen RP.",
+      "ranksTitle": "Zehn Ränge. Eine öffentliche Tabelle.",
+      "ranksBody": "Abzeichenfarben sind pro Stufe fest, und dein Rang wird immer aus deinen gespeicherten RP berechnet.",
+      "ranksCta": "Alle Ränge ansehen",
+      "plansTitle": "Abos, die keine Siege kaufen",
+      "plansBody": "Bezahlte Abos sind nur Kosmetik und Komfort. Der Checkout ist noch nicht live, daher sind heute alle auf Free.",
+      "plansCta": "Abos vergleichen",
+      "free": "Free",
+      "perMonth": "/Monat",
+      "signedInKicker": "Willkommen zurück"
+    },
+    "profile": {
+      "kicker": "SPIELER",
+      "notFound": "Spieler nicht gefunden",
+      "notFoundBody": "Kein A.C.E.-Konto nutzt diese Steam-ID, oder das Profil ist nicht öffentlich.",
+      "rating": "Wertung",
+      "rank": "Rang",
+      "record": "Bilanz",
+      "memberSince": "Mitglied seit {date}",
+      "steamProfile": "Steam-Profil",
+      "yourProfile": "Das ist dein Profil",
+      "backToBoard": "Zurück zur Rangliste"
+    },
+    "board": {
+      "podium": "Top-Spieler",
+      "viewProfile": "Profil ansehen"
+    },
+    "chat": {
+      "sources": "Quellen",
+      "noMatch": "Das habe ich im Inhalt der A.C.E.-Website nicht gefunden. Du kannst deine Frage als Ticket an das Team senden.",
+      "s1": "Was kostet Premium?",
+      "s2": "Wie bekomme ich RP?",
+      "s3": "Wie melde ich einen Cheater?",
+      "kbNote": "Antworten stammen aus dem Inhalt der A.C.E.-Website."
+    }
   }
 };

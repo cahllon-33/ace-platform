@@ -301,5 +301,59 @@ export const UI_JA: Ui = {
       "thinking": "入力中…",
       "tooLong": "メッセージが長すぎます（最大{max}文字）。"
     }
+  },
+  "r39": {
+    "home": {
+      "kicker": "Counter-Strike 2 · 競技プラットフォーム",
+      "h1a": "競え。",
+      "h1b": "調整せよ。",
+      "h1c": "昇れ。",
+      "sub": "Steamログイン、公開RPラダー、そして優位性を決して買えないプランで遊ぶランク制CS2。",
+      "trust1": "CS2専用",
+      "trust2": "Steam OpenIDでログイン",
+      "trust3": "$0 · $4 · $7 — ペイ・トゥ・ウィンなし",
+      "trust4": "10ランク · 1,200 RPからスタート",
+      "stepsKicker": "仕組み",
+      "stepsTitle": "最初のランクまで3ステップ",
+      "step1t": "Steamを接続",
+      "step1b": "Steam OpenIDでログイン。A.C.E.があなたのSteamパスワードを見ることはありません。",
+      "step2t": "キャリブレーション",
+      "step2b": "ティア3、1,200 RPからスタート。記録された試合ごとに公開ルールでRPが変動します。",
+      "step3t": "昇格",
+      "step3b": "勝利で最大+20 RP(トップフラッガーは+22)、敗北で最大−23。ランクは常にRPに従います。",
+      "ranksTitle": "10のランク。ひとつの公開テーブル。",
+      "ranksBody": "バッジの色はティアごとに固定され、ランクは常に保存されたRPから計算されます。",
+      "ranksCta": "すべてのランクを見る",
+      "plansTitle": "勝利を買えないプラン",
+      "plansBody": "有料プランは見た目と利便性のみ。決済はまだ開始していないため、現在は全員がFreeです。",
+      "plansCta": "プランを比較",
+      "free": "無料",
+      "perMonth": "/月",
+      "signedInKicker": "おかえりなさい"
+    },
+    "profile": {
+      "kicker": "プレイヤー",
+      "notFound": "プレイヤーが見つかりません",
+      "notFoundBody": "このSteam IDを使うA.C.E.アカウントがないか、プロフィールが非公開です。",
+      "rating": "レーティング",
+      "rank": "ランク",
+      "record": "戦績",
+      "memberSince": "{date}からのメンバー",
+      "steamProfile": "Steamプロフィール",
+      "yourProfile": "これはあなたのプロフィールです",
+      "backToBoard": "リーダーボードに戻る"
+    },
+    "board": {
+      "podium": "トッププレイヤー",
+      "viewProfile": "プロフィールを見る"
+    },
+    "chat": {
+      "sources": "出典",
+      "noMatch": "A.C.E.サイトの内容には見つかりませんでした。質問をチケットとしてチームに送れます。",
+      "s1": "Premiumの料金は?",
+      "s2": "RPを得るには?",
+      "s3": "チーターを報告するには?",
+      "kbNote": "回答はA.C.E.サイトの内容から引用しています。"
+    }
   }
 };

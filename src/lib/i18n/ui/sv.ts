@@ -301,5 +301,59 @@ export const UI_SV: Ui = {
       "thinking": "Skriver…",
       "tooLong": "Meddelandet är för långt (max {max} tecken)."
     }
+  },
+  "r39": {
+    "home": {
+      "kicker": "Counter-Strike 2 · Tävlingsplattform",
+      "h1a": "Tävla.",
+      "h1b": "Kalibrera.",
+      "h1c": "Klättra.",
+      "sub": "Rankad CS2 med Steam-inloggning, en offentlig RP-stege och planer som aldrig köper en fördel.",
+      "trust1": "Endast CS2",
+      "trust2": "Steam OpenID-inloggning",
+      "trust3": "$0 · $4 · $7 — ingen pay-to-win",
+      "trust4": "10 ranker · start på 1 200 RP",
+      "stepsKicker": "Så fungerar det",
+      "stepsTitle": "Tre steg till din första rank",
+      "step1t": "Anslut Steam",
+      "step1b": "Logga in med Steam OpenID. A.C.E. ser aldrig ditt Steam-lösenord.",
+      "step2t": "Kalibrera",
+      "step2b": "Du börjar på nivå 3 med 1 200 RP. Varje registrerad match ändrar dina RP enligt publicerade regler.",
+      "step3t": "Klättra",
+      "step3b": "En vinst ger upp till +20 RP (+22 som bästa spelare); en förlust kostar upp till −23. Din rank följer alltid dina RP.",
+      "ranksTitle": "Tio ranker. En offentlig tabell.",
+      "ranksBody": "Märkenas färger är fasta per nivå och din rank räknas alltid från dina sparade RP.",
+      "ranksCta": "Se alla ranker",
+      "plansTitle": "Planer som aldrig köper vinster",
+      "plansBody": "Betalda planer är bara kosmetika och bekvämlighet. Betalningen är inte aktiv än, så alla har Free i dag.",
+      "plansCta": "Jämför planer",
+      "free": "Gratis",
+      "perMonth": "/mån",
+      "signedInKicker": "Välkommen tillbaka"
+    },
+    "profile": {
+      "kicker": "SPELARE",
+      "notFound": "Spelaren hittades inte",
+      "notFoundBody": "Inget A.C.E.-konto använder detta Steam-ID, eller så är profilen inte offentlig.",
+      "rating": "Betyg",
+      "rank": "Rank",
+      "record": "Resultat",
+      "memberSince": "Medlem sedan {date}",
+      "steamProfile": "Steam-profil",
+      "yourProfile": "Det här är din profil",
+      "backToBoard": "Tillbaka till topplistan"
+    },
+    "board": {
+      "podium": "Toppspelare",
+      "viewProfile": "Visa profil"
+    },
+    "chat": {
+      "sources": "Källor",
+      "noMatch": "Jag hittade inte detta i innehållet på A.C.E.:s webbplats. Du kan skicka frågan till teamet som ett ärende.",
+      "s1": "Vad kostar Premium?",
+      "s2": "Hur får jag RP?",
+      "s3": "Hur anmäler jag en fuskare?",
+      "kbNote": "Svaren hämtas från innehållet på A.C.E.:s webbplats."
+    }
   }
 };

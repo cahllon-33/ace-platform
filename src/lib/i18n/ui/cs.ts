@@ -301,5 +301,59 @@ export const UI_CS: Ui = {
       "thinking": "Píše…",
       "tooLong": "Zpráva je příliš dlouhá (max. {max} znaků)."
     }
+  },
+  "r39": {
+    "home": {
+      "kicker": "Counter-Strike 2 · Soutěžní platforma",
+      "h1a": "Soupeř.",
+      "h1b": "Kalibruj.",
+      "h1c": "Stoupej.",
+      "sub": "Hodnocené CS2 s přihlášením přes Steam, veřejným žebříčkem RP a plány, které nikdy nekupují výhodu.",
+      "trust1": "Pouze CS2",
+      "trust2": "Přihlášení Steam OpenID",
+      "trust3": "$0 · $4 · $7 — žádné pay-to-win",
+      "trust4": "10 hodností · start s 1 200 RP",
+      "stepsKicker": "Jak to funguje",
+      "stepsTitle": "Tři kroky k první hodnosti",
+      "step1t": "Připoj Steam",
+      "step1b": "Přihlas se přes Steam OpenID. A.C.E. nikdy nevidí tvé heslo ke Steamu.",
+      "step2t": "Kalibrace",
+      "step2b": "Začínáš na úrovni 3 s 1 200 RP. Každý zaznamenaný zápas mění RP podle zveřejněných pravidel.",
+      "step3t": "Postup",
+      "step3b": "Výhra dá až +20 RP (+22 nejlepšímu hráči), prohra stojí až −23. Hodnost vždy odpovídá RP.",
+      "ranksTitle": "Deset hodností. Jedna veřejná tabulka.",
+      "ranksBody": "Barvy odznaků jsou pro každou úroveň pevné a hodnost se vždy počítá z uložených RP.",
+      "ranksCta": "Zobrazit všechny hodnosti",
+      "plansTitle": "Plány, které nekupují výhry",
+      "plansBody": "Placené plány jsou jen kosmetika a pohodlí. Platby zatím nejsou aktivní, takže dnes mají všichni Free.",
+      "plansCta": "Porovnat plány",
+      "free": "Zdarma",
+      "perMonth": "/měsíc",
+      "signedInKicker": "Vítej zpět"
+    },
+    "profile": {
+      "kicker": "HRÁČ",
+      "notFound": "Hráč nenalezen",
+      "notFoundBody": "Žádný účet A.C.E. nepoužívá toto Steam ID, nebo profil není veřejný.",
+      "rating": "Hodnocení",
+      "rank": "Hodnost",
+      "record": "Bilance",
+      "memberSince": "Členem od {date}",
+      "steamProfile": "Profil Steam",
+      "yourProfile": "Toto je tvůj profil",
+      "backToBoard": "Zpět na žebříček"
+    },
+    "board": {
+      "podium": "Nejlepší hráči",
+      "viewProfile": "Zobrazit profil"
+    },
+    "chat": {
+      "sources": "Zdroje",
+      "noMatch": "V obsahu webu A.C.E. jsem to nenašel. Otázku můžeš poslat týmu jako tiket.",
+      "s1": "Kolik stojí Premium?",
+      "s2": "Jak získám RP?",
+      "s3": "Jak nahlásím podvodníka?",
+      "kbNote": "Odpovědi pocházejí z obsahu webu A.C.E."
+    }
   }
 };

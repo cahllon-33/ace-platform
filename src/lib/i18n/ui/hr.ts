@@ -301,5 +301,59 @@ export const UI_HR: Ui = {
       "thinking": "Piše…",
       "tooLong": "Poruka je preduga (najviše {max} znakova)."
     }
+  },
+  "r39": {
+    "home": {
+      "kicker": "Counter-Strike 2 · Natjecateljska platforma",
+      "h1a": "Natječi se.",
+      "h1b": "Kalibriraj.",
+      "h1c": "Uzdigni se.",
+      "sub": "Rangirani CS2 s prijavom putem Steama, javnom RP ljestvicom i planovima koji nikad ne kupuju prednost.",
+      "trust1": "Samo CS2",
+      "trust2": "Prijava Steam OpenID",
+      "trust3": "$0 · $4 · $7 — bez pay-to-win",
+      "trust4": "10 rangova · početak s 1.200 RP",
+      "stepsKicker": "Kako radi",
+      "stepsTitle": "Tri koraka do prvog ranga",
+      "step1t": "Poveži Steam",
+      "step1b": "Prijavi se putem Steam OpenID. A.C.E. nikad ne vidi tvoju Steam lozinku.",
+      "step2t": "Kalibracija",
+      "step2b": "Počinješ na razini 3 s 1.200 RP. Svaki zabilježeni meč mijenja RP prema objavljenim pravilima.",
+      "step3t": "Uspon",
+      "step3b": "Pobjeda donosi do +20 RP (+22 najboljem igraču), poraz košta do −23. Rang uvijek prati RP.",
+      "ranksTitle": "Deset rangova. Jedna javna tablica.",
+      "ranksBody": "Boje značaka fiksne su po razini, a rang se uvijek računa iz spremljenih RP.",
+      "ranksCta": "Pogledaj sve rangove",
+      "plansTitle": "Planovi koji ne kupuju pobjede",
+      "plansBody": "Plaćeni planovi samo su kozmetika i udobnost. Plaćanje još nije aktivno, pa su danas svi na Free.",
+      "plansCta": "Usporedi planove",
+      "free": "Besplatno",
+      "perMonth": "/mj.",
+      "signedInKicker": "Dobro došao natrag"
+    },
+    "profile": {
+      "kicker": "IGRAČ",
+      "notFound": "Igrač nije pronađen",
+      "notFoundBody": "Nijedan A.C.E. račun ne koristi ovaj Steam ID ili profil nije javan.",
+      "rating": "Ocjena",
+      "rank": "Rang",
+      "record": "Omjer",
+      "memberSince": "Član od {date}",
+      "steamProfile": "Steam profil",
+      "yourProfile": "Ovo je tvoj profil",
+      "backToBoard": "Natrag na ljestvicu"
+    },
+    "board": {
+      "podium": "Najbolji igrači",
+      "viewProfile": "Pogledaj profil"
+    },
+    "chat": {
+      "sources": "Izvori",
+      "noMatch": "Ovo nisam pronašao u sadržaju stranice A.C.E. Pitanje možeš poslati timu kao prijavu.",
+      "s1": "Koliko košta Premium?",
+      "s2": "Kako dobiti RP?",
+      "s3": "Kako prijaviti varalicu?",
+      "kbNote": "Odgovori dolaze iz sadržaja stranice A.C.E."
+    }
   }
 };

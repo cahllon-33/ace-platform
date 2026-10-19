@@ -301,5 +301,59 @@ export const UI_KO: Ui = {
       "thinking": "입력 중…",
       "tooLong": "메시지가 너무 깁니다(최대 {max}자)."
     }
+  },
+  "r39": {
+    "home": {
+      "kicker": "Counter-Strike 2 · 경쟁 플랫폼",
+      "h1a": "경쟁하라.",
+      "h1b": "보정하라.",
+      "h1c": "올라서라.",
+      "sub": "Steam 로그인, 공개 RP 사다리, 그리고 결코 이점을 사지 않는 요금제로 즐기는 랭크 CS2.",
+      "trust1": "CS2 전용",
+      "trust2": "Steam OpenID 로그인",
+      "trust3": "$0 · $4 · $7 — 페이투윈 없음",
+      "trust4": "10개 랭크 · 1,200 RP로 시작",
+      "stepsKicker": "작동 방식",
+      "stepsTitle": "첫 랭크까지 세 단계",
+      "step1t": "Steam 연결",
+      "step1b": "Steam OpenID로 로그인하세요. A.C.E.는 Steam 비밀번호를 절대 보지 않습니다.",
+      "step2t": "보정",
+      "step2b": "3티어, 1,200 RP로 시작합니다. 기록된 모든 경기가 공개된 규칙에 따라 RP를 바꿉니다.",
+      "step3t": "상승",
+      "step3b": "승리 시 최대 +20 RP(탑 프래거 +22), 패배 시 최대 −23. 랭크는 항상 RP를 따릅니다.",
+      "ranksTitle": "10개 랭크. 하나의 공개 표.",
+      "ranksBody": "배지 색상은 티어별로 고정되며, 랭크는 항상 저장된 RP로 계산됩니다.",
+      "ranksCta": "모든 랭크 보기",
+      "plansTitle": "승리를 사지 않는 요금제",
+      "plansBody": "유료 요금제는 외형과 편의 기능뿐입니다. 결제가 아직 열리지 않아 오늘은 모두 Free입니다.",
+      "plansCta": "요금제 비교",
+      "free": "무료",
+      "perMonth": "/월",
+      "signedInKicker": "다시 오신 것을 환영합니다"
+    },
+    "profile": {
+      "kicker": "플레이어",
+      "notFound": "플레이어를 찾을 수 없음",
+      "notFoundBody": "이 Steam ID를 쓰는 A.C.E. 계정이 없거나 프로필이 비공개입니다.",
+      "rating": "레이팅",
+      "rank": "랭크",
+      "record": "전적",
+      "memberSince": "{date}부터 회원",
+      "steamProfile": "Steam 프로필",
+      "yourProfile": "내 프로필입니다",
+      "backToBoard": "리더보드로 돌아가기"
+    },
+    "board": {
+      "podium": "상위 플레이어",
+      "viewProfile": "프로필 보기"
+    },
+    "chat": {
+      "sources": "출처",
+      "noMatch": "A.C.E. 사이트 내용에서 찾지 못했습니다. 질문을 팀에 티켓으로 보낼 수 있습니다.",
+      "s1": "Premium은 얼마인가요?",
+      "s2": "RP는 어떻게 얻나요?",
+      "s3": "치터는 어떻게 신고하나요?",
+      "kbNote": "답변은 A.C.E. 사이트 내용에서 가져옵니다."
+    }
   }
 };

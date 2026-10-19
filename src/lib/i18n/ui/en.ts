@@ -242,6 +242,60 @@ export const UI_EN = {
       "thinking": "Typing…",
       "tooLong": "Message is too long (max {max} characters)."
     }
+  },
+  "r39": {
+    "home": {
+      "kicker": "Counter-Strike 2 · Competitive platform",
+      "h1a": "Compete.",
+      "h1b": "Calibrate.",
+      "h1c": "Rise.",
+      "sub": "Ranked CS2 with Steam sign-in, a public RP ladder and plans that never buy an advantage.",
+      "trust1": "CS2 only",
+      "trust2": "Steam OpenID sign-in",
+      "trust3": "$0 · $4 · $7 — no pay-to-win",
+      "trust4": "10 ranks · start at 1,200 RP",
+      "stepsKicker": "How it works",
+      "stepsTitle": "Three steps to your first rank",
+      "step1t": "Connect Steam",
+      "step1b": "Sign in with Steam OpenID. A.C.E. never sees your Steam password.",
+      "step2t": "Calibrate",
+      "step2b": "You start at tier 3 with 1,200 RP. Every recorded match moves your RP by published rules.",
+      "step3t": "Climb",
+      "step3b": "A win gives up to +20 RP (+22 as top fragger); a loss costs up to −23. Your rank always follows your RP.",
+      "ranksTitle": "Ten ranks. One public table.",
+      "ranksBody": "Badge colors are fixed per tier, and your rank is always calculated from your stored RP.",
+      "ranksCta": "See every rank",
+      "plansTitle": "Plans that never buy wins",
+      "plansBody": "Paid plans are cosmetic and convenience only. Checkout is not live yet, so everyone is on Free today.",
+      "plansCta": "Compare plans",
+      "free": "Free",
+      "perMonth": "/month",
+      "signedInKicker": "Welcome back"
+    },
+    "profile": {
+      "kicker": "PLAYER",
+      "notFound": "Player not found",
+      "notFoundBody": "No A.C.E. account uses this Steam ID, or the profile is not public.",
+      "rating": "Rating",
+      "rank": "Rank",
+      "record": "Record",
+      "memberSince": "Member since {date}",
+      "steamProfile": "Steam profile",
+      "yourProfile": "This is your profile",
+      "backToBoard": "Back to the leaderboard"
+    },
+    "board": {
+      "podium": "Top players",
+      "viewProfile": "View profile"
+    },
+    "chat": {
+      "sources": "Sources",
+      "noMatch": "I couldn't find this in the A.C.E. site content. You can send your question to the team as a ticket.",
+      "s1": "How much does Premium cost?",
+      "s2": "How do I gain RP?",
+      "s3": "How do I report a cheater?",
+      "kbNote": "Answers are taken from the A.C.E. site content."
+    }
   }
 } as const;
 

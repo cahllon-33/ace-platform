@@ -301,5 +301,59 @@ export const UI_HU: Ui = {
       "thinking": "Ír…",
       "tooLong": "Az üzenet túl hosszú (legfeljebb {max} karakter)."
     }
+  },
+  "r39": {
+    "home": {
+      "kicker": "Counter-Strike 2 · Versenyplatform",
+      "h1a": "Versenyezz.",
+      "h1b": "Kalibrálj.",
+      "h1c": "Emelkedj.",
+      "sub": "Rangsorolt CS2 Steam-bejelentkezéssel, nyilvános RP-létrával és csomagokkal, amelyek soha nem vásárolnak előnyt.",
+      "trust1": "Csak CS2",
+      "trust2": "Steam OpenID bejelentkezés",
+      "trust3": "$0 · $4 · $7 — nincs pay-to-win",
+      "trust4": "10 rang · kezdés 1200 RP-vel",
+      "stepsKicker": "Így működik",
+      "stepsTitle": "Három lépés az első rangig",
+      "step1t": "Csatlakoztasd a Steamet",
+      "step1b": "Jelentkezz be Steam OpenID-val. Az A.C.E. soha nem látja a Steam-jelszavadat.",
+      "step2t": "Kalibrálás",
+      "step2b": "A 3. szinten kezdesz 1200 RP-vel. Minden rögzített meccs a közzétett szabályok szerint változtatja az RP-det.",
+      "step3t": "Emelkedés",
+      "step3b": "Egy győzelem akár +20 RP (+22 a legjobb játékosnak), egy vereség akár −23. A rangod mindig az RP-det követi.",
+      "ranksTitle": "Tíz rang. Egy nyilvános táblázat.",
+      "ranksBody": "A jelvények színe szintenként rögzített, és a rangod mindig a tárolt RP-ből számolódik.",
+      "ranksCta": "Összes rang",
+      "plansTitle": "Csomagok, amelyek nem vásárolnak győzelmet",
+      "plansBody": "A fizetős csomagok csak kozmetikai és kényelmi jellegűek. A fizetés még nem él, így ma mindenki Free-n van.",
+      "plansCta": "Csomagok összehasonlítása",
+      "free": "Ingyenes",
+      "perMonth": "/hó",
+      "signedInKicker": "Üdv újra"
+    },
+    "profile": {
+      "kicker": "JÁTÉKOS",
+      "notFound": "A játékos nem található",
+      "notFoundBody": "Egyik A.C.E.-fiók sem használja ezt a Steam-azonosítót, vagy a profil nem nyilvános.",
+      "rating": "Pontszám",
+      "rank": "Rang",
+      "record": "Mérleg",
+      "memberSince": "Tag {date} óta",
+      "steamProfile": "Steam-profil",
+      "yourProfile": "Ez a te profilod",
+      "backToBoard": "Vissza a ranglistához"
+    },
+    "board": {
+      "podium": "Legjobb játékosok",
+      "viewProfile": "Profil megtekintése"
+    },
+    "chat": {
+      "sources": "Források",
+      "noMatch": "Ezt nem találtam az A.C.E. oldal tartalmában. A kérdésedet jegyként elküldheted a csapatnak.",
+      "s1": "Mennyibe kerül a Premium?",
+      "s2": "Hogyan szerzek RP-t?",
+      "s3": "Hogyan jelentsek egy csalót?",
+      "kbNote": "A válaszok az A.C.E. oldal tartalmából származnak."
+    }
   }
 };

@@ -301,5 +301,59 @@ export const UI_ID: Ui = {
       "thinking": "Mengetik…",
       "tooLong": "Pesan terlalu panjang (maks. {max} karakter)."
     }
+  },
+  "r39": {
+    "home": {
+      "kicker": "Counter-Strike 2 · Platform kompetitif",
+      "h1a": "Bertanding.",
+      "h1b": "Kalibrasi.",
+      "h1c": "Naik.",
+      "sub": "CS2 berperingkat dengan masuk Steam, tangga RP publik, dan paket yang tidak pernah membeli keunggulan.",
+      "trust1": "Hanya CS2",
+      "trust2": "Masuk dengan Steam OpenID",
+      "trust3": "$0 · $4 · $7 — tanpa pay-to-win",
+      "trust4": "10 peringkat · mulai dengan 1.200 RP",
+      "stepsKicker": "Cara kerjanya",
+      "stepsTitle": "Tiga langkah menuju peringkat pertama",
+      "step1t": "Hubungkan Steam",
+      "step1b": "Masuk dengan Steam OpenID. A.C.E. tidak pernah melihat kata sandi Steam Anda.",
+      "step2t": "Kalibrasi",
+      "step2b": "Anda mulai di tingkat 3 dengan 1.200 RP. Setiap pertandingan tercatat mengubah RP sesuai aturan yang dipublikasikan.",
+      "step3t": "Naik",
+      "step3b": "Kemenangan memberi hingga +20 RP (+22 untuk pemain terbaik); kekalahan hingga −23. Peringkat selalu mengikuti RP.",
+      "ranksTitle": "Sepuluh peringkat. Satu tabel publik.",
+      "ranksBody": "Warna lencana tetap per tingkat, dan peringkat Anda selalu dihitung dari RP yang tersimpan.",
+      "ranksCta": "Lihat semua peringkat",
+      "plansTitle": "Paket yang tidak membeli kemenangan",
+      "plansBody": "Paket berbayar hanya kosmetik dan kenyamanan. Pembayaran belum aktif, jadi hari ini semua orang di Free.",
+      "plansCta": "Bandingkan paket",
+      "free": "Gratis",
+      "perMonth": "/bulan",
+      "signedInKicker": "Selamat datang kembali"
+    },
+    "profile": {
+      "kicker": "PEMAIN",
+      "notFound": "Pemain tidak ditemukan",
+      "notFoundBody": "Tidak ada akun A.C.E. dengan Steam ID ini, atau profilnya tidak publik.",
+      "rating": "Rating",
+      "rank": "Peringkat",
+      "record": "Rekor",
+      "memberSince": "Anggota sejak {date}",
+      "steamProfile": "Profil Steam",
+      "yourProfile": "Ini profil Anda",
+      "backToBoard": "Kembali ke papan peringkat"
+    },
+    "board": {
+      "podium": "Pemain teratas",
+      "viewProfile": "Lihat profil"
+    },
+    "chat": {
+      "sources": "Sumber",
+      "noMatch": "Saya tidak menemukan ini di konten situs A.C.E. Anda bisa mengirim pertanyaan ke tim sebagai tiket.",
+      "s1": "Berapa harga Premium?",
+      "s2": "Bagaimana cara mendapat RP?",
+      "s3": "Bagaimana melaporkan pemain curang?",
+      "kbNote": "Jawaban diambil dari konten situs A.C.E."
+    }
   }
 };

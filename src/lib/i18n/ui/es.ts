@@ -301,5 +301,59 @@ export const UI_ES: Ui = {
       "thinking": "Escribiendo…",
       "tooLong": "El mensaje es demasiado largo (máx. {max} caracteres)."
     }
+  },
+  "r39": {
+    "home": {
+      "kicker": "Counter-Strike 2 · Plataforma competitiva",
+      "h1a": "Compite.",
+      "h1b": "Calibra.",
+      "h1c": "Asciende.",
+      "sub": "CS2 clasificatorio con inicio de sesión de Steam, una escalera de RP pública y planes que nunca compran ventaja.",
+      "trust1": "Solo CS2",
+      "trust2": "Inicio de sesión con Steam OpenID",
+      "trust3": "$0 · $4 · $7 — sin pagar para ganar",
+      "trust4": "10 rangos · empiezas con 1.200 RP",
+      "stepsKicker": "Cómo funciona",
+      "stepsTitle": "Tres pasos hasta tu primer rango",
+      "step1t": "Conecta Steam",
+      "step1b": "Inicia sesión con Steam OpenID. A.C.E. nunca ve tu contraseña de Steam.",
+      "step2t": "Calibra",
+      "step2b": "Empiezas en el nivel 3 con 1.200 RP. Cada partida registrada mueve tus RP según reglas publicadas.",
+      "step3t": "Asciende",
+      "step3b": "Una victoria da hasta +20 RP (+22 como mejor jugador); una derrota cuesta hasta −23. Tu rango siempre sigue a tus RP.",
+      "ranksTitle": "Diez rangos. Una tabla pública.",
+      "ranksBody": "Los colores de las insignias son fijos por nivel y tu rango siempre se calcula con tus RP guardados.",
+      "ranksCta": "Ver todos los rangos",
+      "plansTitle": "Planes que nunca compran victorias",
+      "plansBody": "Los planes de pago son solo estéticos y de comodidad. El pago aún no está activo, así que hoy todos están en Gratis.",
+      "plansCta": "Comparar planes",
+      "free": "Gratis",
+      "perMonth": "/mes",
+      "signedInKicker": "Bienvenido de nuevo"
+    },
+    "profile": {
+      "kicker": "JUGADOR",
+      "notFound": "Jugador no encontrado",
+      "notFoundBody": "Ninguna cuenta de A.C.E. usa este Steam ID, o el perfil no es público.",
+      "rating": "Puntuación",
+      "rank": "Rango",
+      "record": "Historial",
+      "memberSince": "Miembro desde {date}",
+      "steamProfile": "Perfil de Steam",
+      "yourProfile": "Este es tu perfil",
+      "backToBoard": "Volver a la clasificación"
+    },
+    "board": {
+      "podium": "Mejores jugadores",
+      "viewProfile": "Ver perfil"
+    },
+    "chat": {
+      "sources": "Fuentes",
+      "noMatch": "No encontré esto en el contenido del sitio de A.C.E. Puedes enviar tu pregunta al equipo como ticket.",
+      "s1": "¿Cuánto cuesta Premium?",
+      "s2": "¿Cómo gano RP?",
+      "s3": "¿Cómo denuncio a un tramposo?",
+      "kbNote": "Las respuestas provienen del contenido del sitio de A.C.E."
+    }
   }
 };
