@@ -271,7 +271,8 @@ export const UI_HU: Ui = {
       "matchFoundTitle": "Meccs találva",
       "previewNote": "Csak elrendezési előnézet: nem fut sor vagy szerver, a nevek helyőrzők.",
       "accept": "Elfogadás",
-      "waiting": "Várakozás a játékosokra"
+      "waiting": "Várakozás a játékosokra",
+      "note": "Valódi fiókok legalább egy rögzített rangsorolt meccsel, a tárolt RP szerint rendezve. Nincsenek bemutató vagy kitalált sorok."
     },
     "toast": {
       "region": "Értesítések",

@@ -271,7 +271,8 @@ export const UI_PL: Ui = {
       "matchFoundTitle": "Znaleziono mecz",
       "previewNote": "Tylko podgląd układu: nie działa żadna kolejka ani serwer, a nazwy są przykładowe.",
       "accept": "Akceptuj",
-      "waiting": "Oczekiwanie na graczy"
+      "waiting": "Oczekiwanie na graczy",
+      "note": "Prawdziwe konta z co najmniej jednym zapisanym meczem rankingowym, uporządkowane według zapisanych RP. Bez wierszy pokazowych ani zmyślonych."
     },
     "toast": {
       "region": "Powiadomienia",

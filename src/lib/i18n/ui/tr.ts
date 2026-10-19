@@ -271,7 +271,8 @@ export const UI_TR: Ui = {
       "matchFoundTitle": "Maç bulundu",
       "previewNote": "Yalnızca yerleşim önizlemesi: çalışan bir sıra veya sunucu yok, isimler yer tutucudur.",
       "accept": "Kabul et",
-      "waiting": "Oyuncular bekleniyor"
+      "waiting": "Oyuncular bekleniyor",
+      "note": "En az bir kayıtlı dereceli maçı olan gerçek hesaplar, kayıtlı RP'ye göre sıralanır. Vitrin veya uydurma satır yoktur."
     },
     "toast": {
       "region": "Bildirimler",

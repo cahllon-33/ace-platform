@@ -271,7 +271,8 @@ export const UI_ZH: Ui = {
       "matchFoundTitle": "已找到比赛",
       "previewNote": "仅为布局预览：没有运行中的队列或服务器，名称均为占位。",
       "accept": "接受",
-      "waiting": "等待玩家"
+      "waiting": "等待玩家",
+      "note": "至少有一场已记录排位赛的真实账号，按已保存的 RP 排序。没有展示行或虚构行。"
     },
     "toast": {
       "region": "通知",

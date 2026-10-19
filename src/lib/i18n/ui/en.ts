@@ -212,7 +212,8 @@ export const UI_EN = {
       "matchFoundTitle": "Match found",
       "previewNote": "Layout preview only: no queue or server is running, and the names are placeholders.",
       "accept": "Accept",
-      "waiting": "Waiting for players"
+      "waiting": "Waiting for players",
+      "note": "Real accounts with at least one recorded ranked match, ordered by stored RP. No showcase or invented rows."
     },
     "toast": {
       "region": "Notifications",

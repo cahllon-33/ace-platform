@@ -271,7 +271,8 @@ export const UI_ES: Ui = {
       "matchFoundTitle": "Partida encontrada",
       "previewNote": "Solo una vista previa del diseño: no hay cola ni servidor en marcha y los nombres son marcadores.",
       "accept": "Aceptar",
-      "waiting": "Esperando jugadores"
+      "waiting": "Esperando jugadores",
+      "note": "Cuentas reales con al menos una partida clasificatoria registrada, ordenadas por RP guardados. Sin filas de muestra ni inventadas."
     },
     "toast": {
       "region": "Notificaciones",

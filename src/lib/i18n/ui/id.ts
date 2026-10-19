@@ -271,7 +271,8 @@ export const UI_ID: Ui = {
       "matchFoundTitle": "Pertandingan ditemukan",
       "previewNote": "Hanya pratinjau tata letak: tidak ada antrean atau server yang berjalan, dan nama hanya contoh.",
       "accept": "Terima",
-      "waiting": "Menunggu pemain"
+      "waiting": "Menunggu pemain",
+      "note": "Akun asli dengan setidaknya satu pertandingan berperingkat tercatat, diurutkan menurut RP tersimpan. Tanpa baris contoh atau karangan."
     },
     "toast": {
       "region": "Notifikasi",

@@ -271,7 +271,8 @@ export const UI_HR: Ui = {
       "matchFoundTitle": "Meč pronađen",
       "previewNote": "Samo pregled izgleda: ne radi nikakav red ni poslužitelj, a imena su privremena.",
       "accept": "Prihvati",
-      "waiting": "Čeka se igrače"
+      "waiting": "Čeka se igrače",
+      "note": "Stvarni računi s barem jednim zabilježenim rangiranim mečem, poredani po spremljenim RP-ovima. Bez izložbenih ili izmišljenih redaka."
     },
     "toast": {
       "region": "Obavijesti",

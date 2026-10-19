@@ -9,7 +9,8 @@ import type { TextBag } from "@/lib/i18n/text";
 import { formatRankLabelWith, rankArtAsset, type RankArt } from "@/lib/ranks";
 import { effectiveRankArt } from "@/server/rank-art";
 import { getPrisma } from "@/server/db";
-import { getText } from "@/server/locale";
+import { getText, getUi } from "@/server/locale";
+import { MatchPreview } from "@/components/match-preview";
 
 /** Dynamic route: opt out of instant navigation prerender (reads request data). */
 export const instant = false;
@@ -24,26 +25,6 @@ export async function generateMetadata(): Promise<Metadata> {
 
 type LeaderboardText = TextBag["leaderboard"];
 type CountryCode = keyof LeaderboardText["countries"];
-
-const SHOWCASE: ReadonlyArray<{
-  name: string;
-  rp: number;
-  level: number;
-  flag: CountryCode;
-  weapon: WeaponSlug;
-  weaponName: string;
-}> = [
-  { name: "Vesper", rp: 2480, level: 10, flag: "il", weapon: "ak47", weaponName: "AK-47" },
-  { name: "Ironline", rp: 2360, level: 10, flag: "us", weapon: "awp", weaponName: "AWP" },
-  { name: "Halcyon", rp: 2210, level: 10, flag: "de", weapon: "m4a4", weaponName: "M4A4" },
-  { name: "Quill", rp: 2080, level: 10, flag: "ua", weapon: "deagle", weaponName: "Desert Eagle" },
-  { name: "Northglass", rp: 1960, level: 10, flag: "se", weapon: "awp", weaponName: "AWP" },
-  { name: "Bramble", rp: 1840, level: 9, flag: "fr", weapon: "ak47", weaponName: "AK-47" },
-  { name: "Cinderwell", rp: 1720, level: 8, flag: "pl", weapon: "mp9", weaponName: "MP9" },
-  { name: "Marrow", rp: 1610, level: 7, flag: "br", weapon: "m4a1s", weaponName: "M4A1-S" },
-  { name: "Kestrel", rp: 1510, level: 6, flag: "jp", weapon: "usps", weaponName: "USP-S" },
-  { name: "Sableline", rp: 1410, level: 5, flag: "kr", weapon: "famas", weaponName: "FAMAS" },
-];
 
 type BoardRow = {
   id: string;
@@ -66,16 +47,18 @@ export default async function LeaderboardPage({
   searchParams: Promise<{ q?: string }>;
 }) {
   await connection();
-  const text = await getText();
+  const [text, ui] = await Promise.all([getText(), getUi()]);
   const lb = text.leaderboard;
   const { q } = await searchParams;
   const query = q?.trim() ?? "";
   let live: BoardRow[] = [];
   try {
     const rows = await getPrisma().user.findMany({
-      where: query
-        ? { displayName: { contains: query, mode: "insensitive" } }
-        : undefined,
+      // Real rows only: accounts with at least one recorded ranked match.
+      where: {
+        OR: [{ wins: { gt: 0 } }, { losses: { gt: 0 } }],
+        ...(query ? { displayName: { contains: query, mode: "insensitive" as const } } : {}),
+      },
       orderBy: { competitiveRating: "desc" },
       take: 50,
       select: {
@@ -114,24 +97,8 @@ export default async function LeaderboardPage({
     live = [];
   }
 
-  const board: BoardRow[] =
-    live.length > 0
-      ? live
-      : SHOWCASE.filter((row) =>
-          query ? row.name.toLowerCase().includes(query.toLowerCase()) : true,
-        ).map((row) => ({
-          id: row.name,
-          name: row.name,
-          rp: row.rp,
-          tier: formatRankLabelWith(text.ranks.emblem.rankLabel, row.level),
-          level: row.level,
-          flag: row.flag,
-          weapon: row.weapon,
-          weaponName: row.weaponName,
-          live: false,
-          art: "standard",
-          badges: [],
-        }));
+  // No showcase fallback: an empty board says so honestly.
+  const board: BoardRow[] = live;
 
   const top = board[0]?.rp ?? 1;
   const podium =
@@ -149,7 +116,7 @@ export default async function LeaderboardPage({
         <div>
           <p className="ace-lb-kicker">{lb.hero.kicker}</p>
           <h1>{lb.hero.title}</h1>
-          <p className="ace-lb-note">{lb.hero.note}</p>
+          <p className="ace-lb-note">{ui.r38.board.note}</p>
         </div>
         <ul className="ace-lb-facts">
           <li>
@@ -168,7 +135,10 @@ export default async function LeaderboardPage({
       </header>
 
       {board.length === 0 ? (
-        <p className="ace-lb-empty">{lb.empty}</p>
+        <div className="ace-lb-empty-state" role="status">
+          <h2>{ui.r38.board.emptyTitle}</h2>
+          <p>{ui.r38.board.emptyBody}</p>
+        </div>
       ) : (
         <>
           {podium.length === 3 ? (
@@ -252,6 +222,7 @@ export default async function LeaderboardPage({
           </section>
         </>
       )}
+      <MatchPreview ui={ui} />
     </main>
   );
 }

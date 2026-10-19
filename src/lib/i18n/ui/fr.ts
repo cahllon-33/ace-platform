@@ -271,7 +271,8 @@ export const UI_FR: Ui = {
       "matchFoundTitle": "Match trouvé",
       "previewNote": "Simple aperçu de la mise en page : aucune file ni aucun serveur ne tourne, et les noms sont fictifs.",
       "accept": "Accepter",
-      "waiting": "En attente de joueurs"
+      "waiting": "En attente de joueurs",
+      "note": "Comptes réels ayant au moins un match classé enregistré, triés par RP enregistrés. Aucune ligne de démonstration ou inventée."
     },
     "toast": {
       "region": "Notifications",

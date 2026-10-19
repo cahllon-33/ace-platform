@@ -271,7 +271,8 @@ export const UI_CS: Ui = {
       "matchFoundTitle": "Zápas nalezen",
       "previewNote": "Pouze náhled rozvržení: neběží žádná fronta ani server a jména jsou zástupná.",
       "accept": "Přijmout",
-      "waiting": "Čekání na hráče"
+      "waiting": "Čekání na hráče",
+      "note": "Skutečné účty s alespoň jedním zaznamenaným hodnoceným zápasem, seřazené podle uložených RP. Žádné ukázkové ani vymyšlené řádky."
     },
     "toast": {
       "region": "Oznámení",

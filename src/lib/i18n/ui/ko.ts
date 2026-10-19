@@ -271,7 +271,8 @@ export const UI_KO: Ui = {
       "matchFoundTitle": "매치 발견",
       "previewNote": "레이아웃 미리보기일 뿐입니다. 대기열이나 서버는 실행되지 않으며 이름은 임시입니다.",
       "accept": "수락",
-      "waiting": "플레이어 대기 중"
+      "waiting": "플레이어 대기 중",
+      "note": "기록된 랭크 경기가 한 번 이상 있는 실제 계정을 저장된 RP 순으로 표시합니다. 견본이나 꾸며낸 행은 없습니다."
     },
     "toast": {
       "region": "알림",

@@ -271,7 +271,8 @@ export const UI_FI: Ui = {
       "matchFoundTitle": "Ottelu löytyi",
       "previewNote": "Vain asettelun esikatselu: jonoa tai palvelinta ei ole käynnissä, ja nimet ovat paikkamerkkejä.",
       "accept": "Hyväksy",
-      "waiting": "Odotetaan pelaajia"
+      "waiting": "Odotetaan pelaajia",
+      "note": "Oikeat tilit, joilla on vähintään yksi kirjattu rankattu ottelu, järjestettynä tallennettujen RP-pisteiden mukaan. Ei esittely- tai keksittyjä rivejä."
     },
     "toast": {
       "region": "Ilmoitukset",

@@ -271,7 +271,8 @@ export const UI_DE: Ui = {
       "matchFoundTitle": "Match gefunden",
       "previewNote": "Nur eine Layout-Vorschau: Keine Warteschlange und kein Server laufen, die Namen sind Platzhalter.",
       "accept": "Annehmen",
-      "waiting": "Warte auf Spieler"
+      "waiting": "Warte auf Spieler",
+      "note": "Echte Konten mit mindestens einem erfassten gewerteten Match, sortiert nach gespeicherten RP. Keine Showcase- oder erfundenen Zeilen."
     },
     "toast": {
       "region": "Benachrichtigungen",

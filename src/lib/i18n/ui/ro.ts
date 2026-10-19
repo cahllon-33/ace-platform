@@ -271,7 +271,8 @@ export const UI_RO: Ui = {
       "matchFoundTitle": "Meci găsit",
       "previewNote": "Doar o previzualizare a aspectului: nu rulează nicio coadă sau server, iar numele sunt substituenți.",
       "accept": "Acceptă",
-      "waiting": "Se așteaptă jucători"
+      "waiting": "Se așteaptă jucători",
+      "note": "Conturi reale cu cel puțin un meci clasat înregistrat, ordonate după RP-urile salvate. Fără rânduri de prezentare sau inventate."
     },
     "toast": {
       "region": "Notificări",

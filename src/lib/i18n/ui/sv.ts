@@ -271,7 +271,8 @@ export const UI_SV: Ui = {
       "matchFoundTitle": "Match hittad",
       "previewNote": "Endast en förhandsvisning av layouten: ingen kö eller server körs och namnen är platshållare.",
       "accept": "Acceptera",
-      "waiting": "Väntar på spelare"
+      "waiting": "Väntar på spelare",
+      "note": "Riktiga konton med minst en registrerad rankad match, sorterade efter sparade RP. Inga visnings- eller påhittade rader."
     },
     "toast": {
       "region": "Aviseringar",
