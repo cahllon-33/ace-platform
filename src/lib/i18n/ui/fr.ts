@@ -223,5 +223,82 @@ export const UI_FR: Ui = {
         "a": "Via la page de contact. Les signalements sont examinés selon la section 14 du règlement."
       }
     ]
+  },
+  "r38": {
+    "hero": {
+      "expansion1": "Autonomous Anti-Cheat",
+      "expansion2": "Competitive Calibration",
+      "expansion3": "Elite Players",
+      "line": "Construis ton identité compétitive. Calibre ton niveau. Grimpe dans les rangs A.C.E.",
+      "connectSteam": "Connecter Steam",
+      "openDashboard": "Ouvrir le tableau de bord",
+      "exploreRanks": "Découvrir les rangs"
+    },
+    "status": {
+      "title": "État de la plateforme",
+      "steam": "Connexion Steam",
+      "shield": "A.C.E. Shield",
+      "servers": "Serveurs compétitifs",
+      "tournaments": "Tournois",
+      "billing": "Facturation",
+      "available": "Disponible",
+      "inDevelopment": "En développement",
+      "comingSoon": "Bientôt",
+      "preparing": "En préparation",
+      "billingOff": "Inactif · aucun paiement encaissé"
+    },
+    "card": {
+      "matches": "Matchs",
+      "wl": "V/D",
+      "kd": "K/D",
+      "noMatches": "Aucun match enregistré",
+      "division": "Division {division}"
+    },
+    "journey": {
+      "title": "Ton parcours compétitif",
+      "currentRp": "RP actuels",
+      "current": "Actuel",
+      "next": "Suivant",
+      "toGo": "{rp} RP avant la division suivante",
+      "top": "Division la plus haute atteinte",
+      "basis": "Calculé à partir de tes RP enregistrés et du tableau des rangs publié."
+    },
+    "board": {
+      "emptyTitle": "Aucun match classé pour l’instant",
+      "emptyBody": "Les joueurs apparaissent ici après leur premier match classé enregistré. Rien sur ce tableau n’est inventé.",
+      "previewTag": "APERÇU",
+      "lobbyTitle": "Salon",
+      "matchFoundTitle": "Match trouvé",
+      "previewNote": "Simple aperçu de la mise en page : aucune file ni aucun serveur ne tourne, et les noms sont fictifs.",
+      "accept": "Accepter",
+      "waiting": "En attente de joueurs"
+    },
+    "toast": {
+      "region": "Notifications",
+      "dismiss": "Fermer la notification",
+      "signedIn": "Connecté en tant que {name}",
+      "signedOut": "Tu es déconnecté.",
+      "authFailed": "La connexion Steam n’a pas abouti. Réessaie."
+    },
+    "sound": {
+      "on": "Sons de l’interface : activés",
+      "off": "Sons de l’interface : désactivés"
+    },
+    "chat": {
+      "open": "Ouvrir le chat d’assistance",
+      "close": "Fermer le chat d’assistance",
+      "title": "Assistance A.C.E.",
+      "greeting": "Salut ! Je suis l’assistant d’aide d’A.C.E. Pose-moi tes questions sur les rangs, les offres, les règles ou ton compte.",
+      "placeholder": "Écris ta question…",
+      "send": "Envoyer",
+      "unavailable": "Le chat d’assistance n’est pas encore disponible.",
+      "disclaimer": "Les réponses automatiques peuvent se tromper. Les bannissements et décisions de compte relèvent uniquement de l’administration.",
+      "escalate": "Envoyer à l’équipe",
+      "escalated": "Enregistré comme ticket d’assistance. L’administration l’examinera.",
+      "error": "Une erreur est survenue. Réessaie.",
+      "rateLimited": "Trop de messages. Patiente un instant.",
+      "thinking": "Écrit…",
+      "tooLong": "Message trop long ({max} caractères max.)."
+    }
   }
 };

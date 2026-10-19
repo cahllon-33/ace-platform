@@ -223,5 +223,82 @@ export const UI_ES: Ui = {
         "a": "Desde la página de contacto. Las denuncias se revisan según la sección 14 del reglamento."
       }
     ]
+  },
+  "r38": {
+    "hero": {
+      "expansion1": "Autonomous Anti-Cheat",
+      "expansion2": "Competitive Calibration",
+      "expansion3": "Elite Players",
+      "line": "Construye tu identidad competitiva. Calibra tu habilidad. Sube en los rangos de A.C.E.",
+      "connectSteam": "Conectar Steam",
+      "openDashboard": "Abrir panel",
+      "exploreRanks": "Explorar rangos"
+    },
+    "status": {
+      "title": "Estado de la plataforma",
+      "steam": "Inicio de sesión con Steam",
+      "shield": "A.C.E. Shield",
+      "servers": "Servidores competitivos",
+      "tournaments": "Torneos",
+      "billing": "Facturación",
+      "available": "Disponible",
+      "inDevelopment": "En desarrollo",
+      "comingSoon": "Próximamente",
+      "preparing": "En preparación",
+      "billingOff": "No activo · no se cobran pagos"
+    },
+    "card": {
+      "matches": "Partidas",
+      "wl": "V/D",
+      "kd": "K/D",
+      "noMatches": "Sin partidas registradas",
+      "division": "División {division}"
+    },
+    "journey": {
+      "title": "Tu trayectoria competitiva",
+      "currentRp": "RP actuales",
+      "current": "Actual",
+      "next": "Siguiente",
+      "toGo": "{rp} RP para la siguiente división",
+      "top": "División más alta alcanzada",
+      "basis": "Calculado a partir de tus RP guardados y la tabla de rangos publicada."
+    },
+    "board": {
+      "emptyTitle": "Aún no hay partidas clasificatorias",
+      "emptyBody": "Los jugadores aparecen aquí tras su primera partida clasificatoria registrada. Nada en esta tabla es inventado.",
+      "previewTag": "VISTA PREVIA",
+      "lobbyTitle": "Sala",
+      "matchFoundTitle": "Partida encontrada",
+      "previewNote": "Solo una vista previa del diseño: no hay cola ni servidor en marcha y los nombres son marcadores.",
+      "accept": "Aceptar",
+      "waiting": "Esperando jugadores"
+    },
+    "toast": {
+      "region": "Notificaciones",
+      "dismiss": "Cerrar notificación",
+      "signedIn": "Sesión iniciada como {name}",
+      "signedOut": "Has cerrado sesión.",
+      "authFailed": "El inicio de sesión con Steam no se completó. Inténtalo de nuevo."
+    },
+    "sound": {
+      "on": "Sonidos de interfaz: activados",
+      "off": "Sonidos de interfaz: desactivados"
+    },
+    "chat": {
+      "open": "Abrir chat de soporte",
+      "close": "Cerrar chat de soporte",
+      "title": "Soporte A.C.E.",
+      "greeting": "¡Hola! Soy el asistente de soporte de A.C.E. Pregúntame sobre rangos, planes, reglas o tu cuenta.",
+      "placeholder": "Escribe tu pregunta…",
+      "send": "Enviar",
+      "unavailable": "El chat de soporte aún no está disponible.",
+      "disclaimer": "Las respuestas automáticas pueden equivocarse. Las sanciones y decisiones sobre cuentas las toma solo la administración.",
+      "escalate": "Enviar al equipo",
+      "escalated": "Guardado como ticket de soporte. La administración lo revisará.",
+      "error": "Algo salió mal. Inténtalo de nuevo.",
+      "rateLimited": "Demasiados mensajes. Espera un momento.",
+      "thinking": "Escribiendo…",
+      "tooLong": "El mensaje es demasiado largo (máx. {max} caracteres)."
+    }
   }
 };

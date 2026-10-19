@@ -223,5 +223,82 @@ export const UI_ARZ: Ui = {
         "a": "عبر صفحة التواصل. تُراجَع البلاغات وفق البند 14 من كتاب القواعد."
       }
     ]
+  },
+  "r38": {
+    "hero": {
+      "expansion1": "Autonomous Anti-Cheat",
+      "expansion2": "Competitive Calibration",
+      "expansion3": "Elite Players",
+      "line": "ابني هويتك التنافسية. ظبط مستواك. اطلع في رتب A.C.E.",
+      "connectSteam": "ادخل بـ Steam",
+      "openDashboard": "افتح لوحة التحكم",
+      "exploreRanks": "اكتشف الرتب"
+    },
+    "status": {
+      "title": "حالة المنصة",
+      "steam": "الدخول بـ Steam",
+      "shield": "A.C.E. Shield",
+      "servers": "السيرفرات التنافسية",
+      "tournaments": "البطولات",
+      "billing": "الدفع",
+      "available": "متاح",
+      "inDevelopment": "تحت التطوير",
+      "comingSoon": "قريب",
+      "preparing": "بنجهزه",
+      "billingOff": "مش شغال · مفيش أي دفع"
+    },
+    "card": {
+      "matches": "الماتشات",
+      "wl": "ك/خ",
+      "kd": "K/D",
+      "noMatches": "مفيش ماتشات متسجلة",
+      "division": "القسم {division}"
+    },
+    "journey": {
+      "title": "رحلتك التنافسية",
+      "currentRp": "الـ RP الحالي",
+      "current": "الحالي",
+      "next": "اللي بعده",
+      "toGo": "{rp} RP للقسم اللي بعده",
+      "top": "وصلت لأعلى قسم",
+      "basis": "متحسوبة من الـ RP المتخزن عندك وجدول الرتب المنشور."
+    },
+    "board": {
+      "emptyTitle": "لسه مفيش ماتشات مصنفة",
+      "emptyBody": "اللاعيبة هيظهروا هنا بعد أول ماتش مصنف يتسجل لهم. مفيش حاجة في اللوحة دي متألفة.",
+      "previewTag": "معاينة",
+      "lobbyTitle": "اللوبي",
+      "matchFoundTitle": "لقينا ماتش",
+      "previewNote": "معاينة للتصميم بس: مفيش طابور ولا سيرفر شغال، والأسامي مؤقتة.",
+      "accept": "قبول",
+      "waiting": "مستنيين اللاعيبة"
+    },
+    "toast": {
+      "region": "الإشعارات",
+      "dismiss": "اقفل الإشعار",
+      "signedIn": "داخل باسم {name}",
+      "signedOut": "انت خرجت.",
+      "authFailed": "الدخول بـ Steam مكملش. جرب تاني."
+    },
+    "sound": {
+      "on": "أصوات الواجهة: شغالة",
+      "off": "أصوات الواجهة: مقفولة"
+    },
+    "chat": {
+      "open": "افتح شات الدعم",
+      "close": "اقفل شات الدعم",
+      "title": "دعم A.C.E.",
+      "greeting": "أهلًا! أنا مساعد الدعم بتاع A.C.E. اسألني عن الرتب أو الباقات أو القواعد أو حسابك.",
+      "placeholder": "اكتب سؤالك…",
+      "send": "ابعت",
+      "unavailable": "شات الدعم لسه مش متاح.",
+      "disclaimer": "الردود الأوتوماتيك ممكن تغلط. الحظر وقرارات الحسابات بتاخدها الإدارة بس.",
+      "escalate": "ابعت للفريق",
+      "escalated": "اتحفظت كتذكرة دعم. الإدارة هتراجعها.",
+      "error": "حصلت مشكلة. جرب تاني.",
+      "rateLimited": "رسايل كتير قوي. استنى شوية.",
+      "thinking": "بيكتب…",
+      "tooLong": "الرسالة طويلة قوي (أقصى حاجة {max} حرف)."
+    }
   }
 };

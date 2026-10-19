@@ -223,5 +223,82 @@ export const UI_ID: Ui = {
         "a": "Melalui halaman kontak. Laporan ditinjau sesuai bagian 14 buku aturan."
       }
     ]
+  },
+  "r38": {
+    "hero": {
+      "expansion1": "Autonomous Anti-Cheat",
+      "expansion2": "Competitive Calibration",
+      "expansion3": "Elite Players",
+      "line": "Bangun identitas kompetitifmu. Kalibrasi kemampuanmu. Naiki peringkat A.C.E.",
+      "connectSteam": "Hubungkan Steam",
+      "openDashboard": "Buka dasbor",
+      "exploreRanks": "Jelajahi peringkat"
+    },
+    "status": {
+      "title": "Status platform",
+      "steam": "Masuk dengan Steam",
+      "shield": "A.C.E. Shield",
+      "servers": "Server kompetitif",
+      "tournaments": "Turnamen",
+      "billing": "Penagihan",
+      "available": "Tersedia",
+      "inDevelopment": "Dalam pengembangan",
+      "comingSoon": "Segera hadir",
+      "preparing": "Sedang disiapkan",
+      "billingOff": "Belum aktif · tidak ada pembayaran"
+    },
+    "card": {
+      "matches": "Pertandingan",
+      "wl": "M/K",
+      "kd": "K/D",
+      "noMatches": "Belum ada pertandingan tercatat",
+      "division": "Divisi {division}"
+    },
+    "journey": {
+      "title": "Perjalanan kompetitifmu",
+      "currentRp": "RP saat ini",
+      "current": "Saat ini",
+      "next": "Berikutnya",
+      "toGo": "{rp} RP menuju divisi berikutnya",
+      "top": "Divisi tertinggi tercapai",
+      "basis": "Dihitung dari RP tersimpan dan tabel peringkat yang dipublikasikan."
+    },
+    "board": {
+      "emptyTitle": "Belum ada pertandingan berperingkat",
+      "emptyBody": "Pemain muncul di sini setelah pertandingan berperingkat pertama mereka tercatat. Tidak ada yang dikarang di papan ini.",
+      "previewTag": "PRATINJAU",
+      "lobbyTitle": "Lobi",
+      "matchFoundTitle": "Pertandingan ditemukan",
+      "previewNote": "Hanya pratinjau tata letak: tidak ada antrean atau server yang berjalan, dan nama hanya contoh.",
+      "accept": "Terima",
+      "waiting": "Menunggu pemain"
+    },
+    "toast": {
+      "region": "Notifikasi",
+      "dismiss": "Tutup notifikasi",
+      "signedIn": "Masuk sebagai {name}",
+      "signedOut": "Kamu telah keluar.",
+      "authFailed": "Masuk dengan Steam tidak selesai. Silakan coba lagi."
+    },
+    "sound": {
+      "on": "Suara antarmuka: aktif",
+      "off": "Suara antarmuka: mati"
+    },
+    "chat": {
+      "open": "Buka obrolan dukungan",
+      "close": "Tutup obrolan dukungan",
+      "title": "Dukungan A.C.E.",
+      "greeting": "Hai! Saya asisten dukungan A.C.E. Tanyakan tentang peringkat, paket, aturan, atau akunmu.",
+      "placeholder": "Ketik pertanyaanmu…",
+      "send": "Kirim",
+      "unavailable": "Obrolan dukungan belum tersedia.",
+      "disclaimer": "Jawaban otomatis bisa salah. Larangan dan keputusan akun hanya dibuat oleh administrasi.",
+      "escalate": "Kirim ke tim",
+      "escalated": "Disimpan sebagai tiket dukungan. Administrasi akan meninjaunya.",
+      "error": "Terjadi kesalahan. Silakan coba lagi.",
+      "rateLimited": "Terlalu banyak pesan. Tunggu sebentar.",
+      "thinking": "Mengetik…",
+      "tooLong": "Pesan terlalu panjang (maks. {max} karakter)."
+    }
   }
 };

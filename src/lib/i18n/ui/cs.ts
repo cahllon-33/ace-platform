@@ -223,5 +223,82 @@ export const UI_CS: Ui = {
         "a": "Přes kontaktní stránku. Hlášení se posuzují podle oddílu 14 pravidel."
       }
     ]
+  },
+  "r38": {
+    "hero": {
+      "expansion1": "Autonomous Anti-Cheat",
+      "expansion2": "Competitive Calibration",
+      "expansion3": "Elite Players",
+      "line": "Vybuduj si soutěžní identitu. Zkalibruj své dovednosti. Stoupej v hodnostech A.C.E.",
+      "connectSteam": "Připojit Steam",
+      "openDashboard": "Otevřít přehled",
+      "exploreRanks": "Prozkoumat hodnosti"
+    },
+    "status": {
+      "title": "Stav platformy",
+      "steam": "Přihlášení přes Steam",
+      "shield": "A.C.E. Shield",
+      "servers": "Soutěžní servery",
+      "tournaments": "Turnaje",
+      "billing": "Platby",
+      "available": "Dostupné",
+      "inDevelopment": "Ve vývoji",
+      "comingSoon": "Již brzy",
+      "preparing": "Připravujeme",
+      "billingOff": "Neaktivní · žádné platby se nevybírají"
+    },
+    "card": {
+      "matches": "Zápasy",
+      "wl": "V/P",
+      "kd": "K/D",
+      "noMatches": "Žádné zaznamenané zápasy",
+      "division": "Divize {division}"
+    },
+    "journey": {
+      "title": "Tvoje soutěžní cesta",
+      "currentRp": "Aktuální RP",
+      "current": "Aktuální",
+      "next": "Další",
+      "toGo": "{rp} RP do další divize",
+      "top": "Dosažena nejvyšší divize",
+      "basis": "Vypočteno z tvých uložených RP a zveřejněné tabulky hodností."
+    },
+    "board": {
+      "emptyTitle": "Zatím žádné hodnocené zápasy",
+      "emptyBody": "Hráči se zde objeví po svém prvním zaznamenaném hodnoceném zápase. Nic na této tabuli není vymyšlené.",
+      "previewTag": "NÁHLED",
+      "lobbyTitle": "Lobby",
+      "matchFoundTitle": "Zápas nalezen",
+      "previewNote": "Pouze náhled rozvržení: neběží žádná fronta ani server a jména jsou zástupná.",
+      "accept": "Přijmout",
+      "waiting": "Čekání na hráče"
+    },
+    "toast": {
+      "region": "Oznámení",
+      "dismiss": "Zavřít oznámení",
+      "signedIn": "Přihlášen jako {name}",
+      "signedOut": "Byl jsi odhlášen.",
+      "authFailed": "Přihlášení přes Steam nebylo dokončeno. Zkus to znovu."
+    },
+    "sound": {
+      "on": "Zvuky rozhraní: zapnuto",
+      "off": "Zvuky rozhraní: vypnuto"
+    },
+    "chat": {
+      "open": "Otevřít chat podpory",
+      "close": "Zavřít chat podpory",
+      "title": "Podpora A.C.E.",
+      "greeting": "Ahoj! Jsem asistent podpory A.C.E. Zeptej se mě na hodnosti, plány, pravidla nebo svůj účet.",
+      "placeholder": "Napiš svou otázku…",
+      "send": "Odeslat",
+      "unavailable": "Chat podpory zatím není k dispozici.",
+      "disclaimer": "Automatické odpovědi mohou být chybné. O zákazech a účtech rozhoduje pouze administrace.",
+      "escalate": "Poslat týmu",
+      "escalated": "Uloženo jako tiket podpory. Administrace ho posoudí.",
+      "error": "Něco se pokazilo. Zkus to znovu.",
+      "rateLimited": "Příliš mnoho zpráv. Chvíli počkej.",
+      "thinking": "Píše…",
+      "tooLong": "Zpráva je příliš dlouhá (max. {max} znaků)."
+    }
   }
 };

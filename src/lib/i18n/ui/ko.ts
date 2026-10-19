@@ -223,5 +223,82 @@ export const UI_KO: Ui = {
         "a": "문의 페이지를 이용하세요. 신고는 규칙서 제14조에 따라 검토됩니다."
       }
     ]
+  },
+  "r38": {
+    "hero": {
+      "expansion1": "Autonomous Anti-Cheat",
+      "expansion2": "Competitive Calibration",
+      "expansion3": "Elite Players",
+      "line": "경쟁 정체성을 만들어 보세요. 실력을 보정하세요. A.C.E. 랭크를 올라가세요.",
+      "connectSteam": "Steam 연결",
+      "openDashboard": "대시보드 열기",
+      "exploreRanks": "랭크 둘러보기"
+    },
+    "status": {
+      "title": "플랫폼 상태",
+      "steam": "Steam 로그인",
+      "shield": "A.C.E. Shield",
+      "servers": "경쟁 서버",
+      "tournaments": "토너먼트",
+      "billing": "결제",
+      "available": "이용 가능",
+      "inDevelopment": "개발 중",
+      "comingSoon": "곧 출시",
+      "preparing": "준비 중",
+      "billingOff": "비활성 · 결제가 이루어지지 않음"
+    },
+    "card": {
+      "matches": "경기",
+      "wl": "승/패",
+      "kd": "K/D",
+      "noMatches": "기록된 경기 없음",
+      "division": "디비전 {division}"
+    },
+    "journey": {
+      "title": "나의 경쟁 여정",
+      "currentRp": "현재 RP",
+      "current": "현재",
+      "next": "다음",
+      "toGo": "다음 디비전까지 {rp} RP",
+      "top": "최고 디비전 달성",
+      "basis": "저장된 RP와 공개된 랭크 표를 기준으로 계산합니다."
+    },
+    "board": {
+      "emptyTitle": "아직 랭크 경기가 없습니다",
+      "emptyBody": "첫 랭크 경기가 기록되면 여기에 표시됩니다. 이 보드에는 꾸며낸 내용이 없습니다.",
+      "previewTag": "미리보기",
+      "lobbyTitle": "로비",
+      "matchFoundTitle": "매치 발견",
+      "previewNote": "레이아웃 미리보기일 뿐입니다. 대기열이나 서버는 실행되지 않으며 이름은 임시입니다.",
+      "accept": "수락",
+      "waiting": "플레이어 대기 중"
+    },
+    "toast": {
+      "region": "알림",
+      "dismiss": "알림 닫기",
+      "signedIn": "{name}(으)로 로그인됨",
+      "signedOut": "로그아웃했습니다.",
+      "authFailed": "Steam 로그인이 완료되지 않았습니다. 다시 시도해 주세요."
+    },
+    "sound": {
+      "on": "UI 사운드: 켜짐",
+      "off": "UI 사운드: 꺼짐"
+    },
+    "chat": {
+      "open": "지원 채팅 열기",
+      "close": "지원 채팅 닫기",
+      "title": "A.C.E. 지원",
+      "greeting": "안녕하세요! A.C.E. 지원 도우미입니다. 랭크, 요금제, 규칙 또는 계정에 대해 물어보세요.",
+      "placeholder": "질문을 입력하세요…",
+      "send": "보내기",
+      "unavailable": "지원 채팅은 아직 이용할 수 없습니다.",
+      "disclaimer": "자동 답변은 틀릴 수 있습니다. 제재와 계정 결정은 운영진만 내립니다.",
+      "escalate": "팀에 보내기",
+      "escalated": "지원 티켓으로 저장되었습니다. 운영진이 검토합니다.",
+      "error": "문제가 발생했습니다. 다시 시도해 주세요.",
+      "rateLimited": "메시지가 너무 많습니다. 잠시 기다려 주세요.",
+      "thinking": "입력 중…",
+      "tooLong": "메시지가 너무 깁니다(최대 {max}자)."
+    }
   }
 };

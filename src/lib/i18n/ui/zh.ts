@@ -223,5 +223,82 @@ export const UI_ZH: Ui = {
         "a": "请通过联系页面举报。举报将依据规则手册第 14 条进行审核。"
       }
     ]
+  },
+  "r38": {
+    "hero": {
+      "expansion1": "Autonomous Anti-Cheat",
+      "expansion2": "Competitive Calibration",
+      "expansion3": "Elite Players",
+      "line": "打造你的竞技身份。校准你的实力。攀登 A.C.E. 段位。",
+      "connectSteam": "连接 Steam",
+      "openDashboard": "打开控制台",
+      "exploreRanks": "查看段位"
+    },
+    "status": {
+      "title": "平台状态",
+      "steam": "Steam 登录",
+      "shield": "A.C.E. Shield",
+      "servers": "竞技服务器",
+      "tournaments": "锦标赛",
+      "billing": "计费",
+      "available": "可用",
+      "inDevelopment": "开发中",
+      "comingSoon": "即将推出",
+      "preparing": "准备中",
+      "billingOff": "未启用 · 不收取任何费用"
+    },
+    "card": {
+      "matches": "比赛",
+      "wl": "胜/负",
+      "kd": "K/D",
+      "noMatches": "暂无记录的比赛",
+      "division": "第 {division} 分级"
+    },
+    "journey": {
+      "title": "你的竞技之路",
+      "currentRp": "当前 RP",
+      "current": "当前",
+      "next": "下一级",
+      "toGo": "距下一分级还差 {rp} RP",
+      "top": "已达到最高分级",
+      "basis": "根据你已保存的 RP 和公开的段位表计算。"
+    },
+    "board": {
+      "emptyTitle": "暂无排位比赛",
+      "emptyBody": "玩家在第一场排位比赛被记录后会出现在这里。此榜单没有任何虚构内容。",
+      "previewTag": "预览",
+      "lobbyTitle": "大厅",
+      "matchFoundTitle": "已找到比赛",
+      "previewNote": "仅为布局预览：没有运行中的队列或服务器，名称均为占位。",
+      "accept": "接受",
+      "waiting": "等待玩家"
+    },
+    "toast": {
+      "region": "通知",
+      "dismiss": "关闭通知",
+      "signedIn": "已以 {name} 身份登录",
+      "signedOut": "你已退出登录。",
+      "authFailed": "Steam 登录未完成，请重试。"
+    },
+    "sound": {
+      "on": "界面音效：开",
+      "off": "界面音效：关"
+    },
+    "chat": {
+      "open": "打开客服聊天",
+      "close": "关闭客服聊天",
+      "title": "A.C.E. 客服",
+      "greeting": "你好！我是 A.C.E. 客服助手。可以问我关于段位、套餐、规则或账号的问题。",
+      "placeholder": "输入你的问题…",
+      "send": "发送",
+      "unavailable": "客服聊天暂不可用。",
+      "disclaimer": "自动回复可能有误。封禁和账号决定仅由管理团队作出。",
+      "escalate": "发送给团队",
+      "escalated": "已保存为客服工单，管理团队会进行审核。",
+      "error": "出了点问题，请重试。",
+      "rateLimited": "消息过多，请稍候。",
+      "thinking": "正在输入…",
+      "tooLong": "消息过长（最多 {max} 个字符）。"
+    }
   }
 };

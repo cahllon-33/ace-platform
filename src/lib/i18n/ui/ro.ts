@@ -223,5 +223,82 @@ export const UI_RO: Ui = {
         "a": "Prin pagina de contact. Rapoartele sunt analizate conform secțiunii 14 din regulament."
       }
     ]
+  },
+  "r38": {
+    "hero": {
+      "expansion1": "Autonomous Anti-Cheat",
+      "expansion2": "Competitive Calibration",
+      "expansion3": "Elite Players",
+      "line": "Construiește-ți identitatea competitivă. Calibrează-ți abilitatea. Urcă în rangurile A.C.E.",
+      "connectSteam": "Conectează Steam",
+      "openDashboard": "Deschide panoul",
+      "exploreRanks": "Explorează rangurile"
+    },
+    "status": {
+      "title": "Starea platformei",
+      "steam": "Autentificare cu Steam",
+      "shield": "A.C.E. Shield",
+      "servers": "Servere competitive",
+      "tournaments": "Turnee",
+      "billing": "Facturare",
+      "available": "Disponibil",
+      "inDevelopment": "În dezvoltare",
+      "comingSoon": "În curând",
+      "preparing": "În pregătire",
+      "billingOff": "Inactiv · nu se încasează plăți"
+    },
+    "card": {
+      "matches": "Meciuri",
+      "wl": "V/Î",
+      "kd": "K/D",
+      "noMatches": "Niciun meci înregistrat",
+      "division": "Divizia {division}"
+    },
+    "journey": {
+      "title": "Parcursul tău competitiv",
+      "currentRp": "RP actuale",
+      "current": "Actuală",
+      "next": "Următoarea",
+      "toGo": "{rp} RP până la divizia următoare",
+      "top": "Ai atins cea mai înaltă divizie",
+      "basis": "Calculat din RP-urile tale salvate și din tabelul de ranguri publicat."
+    },
+    "board": {
+      "emptyTitle": "Încă nu există meciuri clasate",
+      "emptyBody": "Jucătorii apar aici după primul lor meci clasat înregistrat. Nimic de pe acest tabel nu este inventat.",
+      "previewTag": "PREVIZUALIZARE",
+      "lobbyTitle": "Lobby",
+      "matchFoundTitle": "Meci găsit",
+      "previewNote": "Doar o previzualizare a aspectului: nu rulează nicio coadă sau server, iar numele sunt substituenți.",
+      "accept": "Acceptă",
+      "waiting": "Se așteaptă jucători"
+    },
+    "toast": {
+      "region": "Notificări",
+      "dismiss": "Închide notificarea",
+      "signedIn": "Conectat ca {name}",
+      "signedOut": "Te-ai deconectat.",
+      "authFailed": "Autentificarea cu Steam nu s-a finalizat. Încearcă din nou."
+    },
+    "sound": {
+      "on": "Sunete interfață: pornite",
+      "off": "Sunete interfață: oprite"
+    },
+    "chat": {
+      "open": "Deschide chatul de asistență",
+      "close": "Închide chatul de asistență",
+      "title": "Asistență A.C.E.",
+      "greeting": "Salut! Sunt asistentul de suport A.C.E. Întreabă-mă despre ranguri, planuri, reguli sau contul tău.",
+      "placeholder": "Scrie întrebarea ta…",
+      "send": "Trimite",
+      "unavailable": "Chatul de asistență nu este încă disponibil.",
+      "disclaimer": "Răspunsurile automate pot fi greșite. Banările și deciziile privind conturile sunt luate doar de administrație.",
+      "escalate": "Trimite echipei",
+      "escalated": "Salvat ca tichet de asistență. Administrația îl va analiza.",
+      "error": "Ceva nu a mers bine. Încearcă din nou.",
+      "rateLimited": "Prea multe mesaje. Așteaptă puțin.",
+      "thinking": "Scrie…",
+      "tooLong": "Mesajul este prea lung (max. {max} caractere)."
+    }
   }
 };

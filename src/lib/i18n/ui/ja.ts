@@ -223,5 +223,82 @@ export const UI_JA: Ui = {
         "a": "お問い合わせページからご連絡ください。報告はルールブック第14条に基づいて審査されます。"
       }
     ]
+  },
+  "r38": {
+    "hero": {
+      "expansion1": "Autonomous Anti-Cheat",
+      "expansion2": "Competitive Calibration",
+      "expansion3": "Elite Players",
+      "line": "競技者としてのアイデンティティを築こう。スキルをキャリブレーションしよう。A.C.E.ランクを駆け上がろう。",
+      "connectSteam": "Steamと連携",
+      "openDashboard": "ダッシュボードを開く",
+      "exploreRanks": "ランクを見る"
+    },
+    "status": {
+      "title": "プラットフォームの状況",
+      "steam": "Steamサインイン",
+      "shield": "A.C.E. Shield",
+      "servers": "競技サーバー",
+      "tournaments": "トーナメント",
+      "billing": "課金",
+      "available": "利用可能",
+      "inDevelopment": "開発中",
+      "comingSoon": "近日公開",
+      "preparing": "準備中",
+      "billingOff": "未稼働・支払いは発生しません"
+    },
+    "card": {
+      "matches": "試合数",
+      "wl": "勝/敗",
+      "kd": "K/D",
+      "noMatches": "記録された試合はありません",
+      "division": "ディビジョン {division}"
+    },
+    "journey": {
+      "title": "あなたの競技ジャーニー",
+      "currentRp": "現在のRP",
+      "current": "現在",
+      "next": "次",
+      "toGo": "次のディビジョンまで {rp} RP",
+      "top": "最上位ディビジョンに到達",
+      "basis": "保存されているRPと公開ランク表から計算しています。"
+    },
+    "board": {
+      "emptyTitle": "ランク戦はまだありません",
+      "emptyBody": "初めてのランク戦が記録されるとここに表示されます。このボードに作られたデータはありません。",
+      "previewTag": "プレビュー",
+      "lobbyTitle": "ロビー",
+      "matchFoundTitle": "マッチが見つかりました",
+      "previewNote": "レイアウトのプレビューのみです。キューやサーバーは動いておらず、名前は仮のものです。",
+      "accept": "承認",
+      "waiting": "プレイヤーを待っています"
+    },
+    "toast": {
+      "region": "通知",
+      "dismiss": "通知を閉じる",
+      "signedIn": "{name} としてサインイン中",
+      "signedOut": "サインアウトしました。",
+      "authFailed": "Steamサインインが完了しませんでした。もう一度お試しください。"
+    },
+    "sound": {
+      "on": "UIサウンド：オン",
+      "off": "UIサウンド：オフ"
+    },
+    "chat": {
+      "open": "サポートチャットを開く",
+      "close": "サポートチャットを閉じる",
+      "title": "A.C.E. サポート",
+      "greeting": "こんにちは！A.C.E.サポートアシスタントです。ランク、プラン、ルール、アカウントについて質問してください。",
+      "placeholder": "質問を入力…",
+      "send": "送信",
+      "unavailable": "サポートチャットはまだご利用いただけません。",
+      "disclaimer": "自動応答は誤っている場合があります。BANやアカウントに関する判断は運営のみが行います。",
+      "escalate": "チームに送信",
+      "escalated": "サポートチケットとして保存しました。運営が確認します。",
+      "error": "問題が発生しました。もう一度お試しください。",
+      "rateLimited": "メッセージが多すぎます。少しお待ちください。",
+      "thinking": "入力中…",
+      "tooLong": "メッセージが長すぎます（最大{max}文字）。"
+    }
   }
 };

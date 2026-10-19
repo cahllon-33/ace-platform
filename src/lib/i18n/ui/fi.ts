@@ -223,5 +223,82 @@ export const UI_FI: Ui = {
         "a": "Yhteydenottosivun kautta. Ilmoitukset käsitellään sääntökirjan kohdan 14 mukaisesti."
       }
     ]
+  },
+  "r38": {
+    "hero": {
+      "expansion1": "Autonomous Anti-Cheat",
+      "expansion2": "Competitive Calibration",
+      "expansion3": "Elite Players",
+      "line": "Rakenna kilpailuidentiteettisi. Kalibroi taitosi. Nouse A.C.E.-arvoissa.",
+      "connectSteam": "Yhdistä Steam",
+      "openDashboard": "Avaa hallintapaneeli",
+      "exploreRanks": "Tutustu arvoihin"
+    },
+    "status": {
+      "title": "Alustan tila",
+      "steam": "Steam-kirjautuminen",
+      "shield": "A.C.E. Shield",
+      "servers": "Kilpailupalvelimet",
+      "tournaments": "Turnaukset",
+      "billing": "Laskutus",
+      "available": "Saatavilla",
+      "inDevelopment": "Kehityksessä",
+      "comingSoon": "Tulossa pian",
+      "preparing": "Valmisteilla",
+      "billingOff": "Ei käytössä · maksuja ei peritä"
+    },
+    "card": {
+      "matches": "Ottelut",
+      "wl": "V/H",
+      "kd": "K/D",
+      "noMatches": "Ei kirjattuja otteluita",
+      "division": "Divisioona {division}"
+    },
+    "journey": {
+      "title": "Kilpailupolkusi",
+      "currentRp": "Nykyiset RP",
+      "current": "Nykyinen",
+      "next": "Seuraava",
+      "toGo": "{rp} RP seuraavaan divisioonaan",
+      "top": "Korkein divisioona saavutettu",
+      "basis": "Laskettu tallennetuista RP-pisteistäsi ja julkaistusta arvotaulukosta."
+    },
+    "board": {
+      "emptyTitle": "Ei vielä rankattuja otteluita",
+      "emptyBody": "Pelaajat näkyvät täällä ensimmäisen kirjatun rankatun ottelunsa jälkeen. Mitään tällä taululla ei ole keksitty.",
+      "previewTag": "ESIKATSELU",
+      "lobbyTitle": "Aula",
+      "matchFoundTitle": "Ottelu löytyi",
+      "previewNote": "Vain asettelun esikatselu: jonoa tai palvelinta ei ole käynnissä, ja nimet ovat paikkamerkkejä.",
+      "accept": "Hyväksy",
+      "waiting": "Odotetaan pelaajia"
+    },
+    "toast": {
+      "region": "Ilmoitukset",
+      "dismiss": "Sulje ilmoitus",
+      "signedIn": "Kirjautunut nimellä {name}",
+      "signedOut": "Olet kirjautunut ulos.",
+      "authFailed": "Steam-kirjautuminen ei valmistunut. Yritä uudelleen."
+    },
+    "sound": {
+      "on": "Käyttöliittymän äänet: päällä",
+      "off": "Käyttöliittymän äänet: pois"
+    },
+    "chat": {
+      "open": "Avaa tukichat",
+      "close": "Sulje tukichat",
+      "title": "A.C.E.-tuki",
+      "greeting": "Hei! Olen A.C.E.:n tukiavustaja. Kysy minulta arvoista, tilauksista, säännöistä tai tilistäsi.",
+      "placeholder": "Kirjoita kysymyksesi…",
+      "send": "Lähetä",
+      "unavailable": "Tukichat ei ole vielä käytettävissä.",
+      "disclaimer": "Automaattiset vastaukset voivat olla vääriä. Porttikielloista ja tileistä päättää vain ylläpito.",
+      "escalate": "Lähetä tiimille",
+      "escalated": "Tallennettu tukipyynnöksi. Ylläpito käy sen läpi.",
+      "error": "Jokin meni pieleen. Yritä uudelleen.",
+      "rateLimited": "Liian monta viestiä. Odota hetki.",
+      "thinking": "Kirjoittaa…",
+      "tooLong": "Viesti on liian pitkä (enintään {max} merkkiä)."
+    }
   }
 };

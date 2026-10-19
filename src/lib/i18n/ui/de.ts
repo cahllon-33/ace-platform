@@ -223,5 +223,82 @@ export const UI_DE: Ui = {
         "a": "Über die Kontaktseite. Meldungen werden nach Abschnitt 14 des Regelwerks geprüft."
       }
     ]
+  },
+  "r38": {
+    "hero": {
+      "expansion1": "Autonomous Anti-Cheat",
+      "expansion2": "Competitive Calibration",
+      "expansion3": "Elite Players",
+      "line": "Baue deine Wettkampf-Identität auf. Kalibriere dein Können. Steig in den A.C.E.-Rängen auf.",
+      "connectSteam": "Steam verbinden",
+      "openDashboard": "Dashboard öffnen",
+      "exploreRanks": "Ränge entdecken"
+    },
+    "status": {
+      "title": "Plattformstatus",
+      "steam": "Steam-Anmeldung",
+      "shield": "A.C.E. Shield",
+      "servers": "Wettkampfserver",
+      "tournaments": "Turniere",
+      "billing": "Abrechnung",
+      "available": "Verfügbar",
+      "inDevelopment": "In Entwicklung",
+      "comingSoon": "Demnächst",
+      "preparing": "In Vorbereitung",
+      "billingOff": "Nicht aktiv · keine Zahlungen"
+    },
+    "card": {
+      "matches": "Matches",
+      "wl": "S/N",
+      "kd": "K/D",
+      "noMatches": "Keine erfassten Matches",
+      "division": "Division {division}"
+    },
+    "journey": {
+      "title": "Deine Wettkampf-Reise",
+      "currentRp": "Aktuelle RP",
+      "current": "Aktuell",
+      "next": "Nächste",
+      "toGo": "{rp} RP bis zur nächsten Division",
+      "top": "Höchste Division erreicht",
+      "basis": "Berechnet aus deinen gespeicherten RP und der veröffentlichten Rangtabelle."
+    },
+    "board": {
+      "emptyTitle": "Noch keine gewerteten Matches",
+      "emptyBody": "Spieler erscheinen hier nach ihrem ersten erfassten gewerteten Match. Nichts auf dieser Tafel ist erfunden.",
+      "previewTag": "VORSCHAU",
+      "lobbyTitle": "Lobby",
+      "matchFoundTitle": "Match gefunden",
+      "previewNote": "Nur eine Layout-Vorschau: Keine Warteschlange und kein Server laufen, die Namen sind Platzhalter.",
+      "accept": "Annehmen",
+      "waiting": "Warte auf Spieler"
+    },
+    "toast": {
+      "region": "Benachrichtigungen",
+      "dismiss": "Benachrichtigung schließen",
+      "signedIn": "Angemeldet als {name}",
+      "signedOut": "Du hast dich abgemeldet.",
+      "authFailed": "Die Steam-Anmeldung wurde nicht abgeschlossen. Bitte versuche es erneut."
+    },
+    "sound": {
+      "on": "UI-Sounds: an",
+      "off": "UI-Sounds: aus"
+    },
+    "chat": {
+      "open": "Support-Chat öffnen",
+      "close": "Support-Chat schließen",
+      "title": "A.C.E. Support",
+      "greeting": "Hi! Ich bin der Support-Assistent von A.C.E. Frag mich zu Rängen, Plänen, Regeln oder deinem Konto.",
+      "placeholder": "Schreib deine Frage…",
+      "send": "Senden",
+      "unavailable": "Der Support-Chat ist noch nicht verfügbar.",
+      "disclaimer": "Automatische Antworten können falsch sein. Über Sperren und Konten entscheidet nur die Administration.",
+      "escalate": "An das Team senden",
+      "escalated": "Als Support-Ticket gespeichert. Die Administration prüft es.",
+      "error": "Etwas ist schiefgelaufen. Bitte versuche es erneut.",
+      "rateLimited": "Zu viele Nachrichten. Bitte warte kurz.",
+      "thinking": "Schreibt…",
+      "tooLong": "Nachricht ist zu lang (max. {max} Zeichen)."
+    }
   }
 };

@@ -165,6 +165,83 @@ export const UI_EN = {
       { q: "How do I report a cheater?", a: "Use the contact page. Reports are reviewed under section 14 of the rulebook." },
     ],
   },
+  r38: {
+    "hero": {
+      "expansion1": "Autonomous Anti-Cheat",
+      "expansion2": "Competitive Calibration",
+      "expansion3": "Elite Players",
+      "line": "Build your competitive identity. Calibrate your skill. Climb the A.C.E. ranks.",
+      "connectSteam": "Connect Steam",
+      "openDashboard": "Open dashboard",
+      "exploreRanks": "Explore ranks"
+    },
+    "status": {
+      "title": "Platform status",
+      "steam": "Steam sign-in",
+      "shield": "A.C.E. Shield",
+      "servers": "Competitive servers",
+      "tournaments": "Tournaments",
+      "billing": "Billing",
+      "available": "Available",
+      "inDevelopment": "In development",
+      "comingSoon": "Coming soon",
+      "preparing": "Preparing",
+      "billingOff": "Not live · no payments taken"
+    },
+    "card": {
+      "matches": "Matches",
+      "wl": "W/L",
+      "kd": "K/D",
+      "noMatches": "No recorded matches",
+      "division": "Division {division}"
+    },
+    "journey": {
+      "title": "Your competitive journey",
+      "currentRp": "Current RP",
+      "current": "Current",
+      "next": "Next",
+      "toGo": "{rp} RP to the next division",
+      "top": "Highest division reached",
+      "basis": "Calculated from your stored RP and the published rank table."
+    },
+    "board": {
+      "emptyTitle": "No ranked matches yet",
+      "emptyBody": "Players appear here after their first recorded ranked match. Nothing on this board is invented.",
+      "previewTag": "PREVIEW",
+      "lobbyTitle": "Lobby",
+      "matchFoundTitle": "Match found",
+      "previewNote": "Layout preview only: no queue or server is running, and the names are placeholders.",
+      "accept": "Accept",
+      "waiting": "Waiting for players"
+    },
+    "toast": {
+      "region": "Notifications",
+      "dismiss": "Dismiss notification",
+      "signedIn": "Signed in as {name}",
+      "signedOut": "You have signed out.",
+      "authFailed": "Steam sign-in did not complete. Please try again."
+    },
+    "sound": {
+      "on": "UI sounds: on",
+      "off": "UI sounds: off"
+    },
+    "chat": {
+      "open": "Open support chat",
+      "close": "Close support chat",
+      "title": "A.C.E. Support",
+      "greeting": "Hi! I'm the A.C.E. support assistant. Ask me about ranks, plans, rules or your account.",
+      "placeholder": "Type your question…",
+      "send": "Send",
+      "unavailable": "Support chat is not available yet.",
+      "disclaimer": "Automated answers can be wrong. Bans and account decisions are made only by the administration.",
+      "escalate": "Send to the team",
+      "escalated": "Saved as a support ticket. The administration will review it.",
+      "error": "Something went wrong. Please try again.",
+      "rateLimited": "Too many messages. Please wait a moment.",
+      "thinking": "Typing…",
+      "tooLong": "Message is too long (max {max} characters)."
+    }
+  }
 } as const;
 
 type Widen<T> = T extends string

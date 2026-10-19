@@ -223,5 +223,82 @@ export const UI_HR: Ui = {
         "a": "Putem stranice za kontakt. Prijave se razmatraju prema odjeljku 14 pravilnika."
       }
     ]
+  },
+  "r38": {
+    "hero": {
+      "expansion1": "Autonomous Anti-Cheat",
+      "expansion2": "Competitive Calibration",
+      "expansion3": "Elite Players",
+      "line": "Izgradi svoj natjecateljski identitet. Kalibriraj svoju vještinu. Penji se kroz A.C.E. rangove.",
+      "connectSteam": "Poveži Steam",
+      "openDashboard": "Otvori nadzornu ploču",
+      "exploreRanks": "Istraži rangove"
+    },
+    "status": {
+      "title": "Status platforme",
+      "steam": "Prijava putem Steama",
+      "shield": "A.C.E. Shield",
+      "servers": "Natjecateljski poslužitelji",
+      "tournaments": "Turniri",
+      "billing": "Naplata",
+      "available": "Dostupno",
+      "inDevelopment": "U razvoju",
+      "comingSoon": "Uskoro",
+      "preparing": "U pripremi",
+      "billingOff": "Nije aktivno · ne naplaćuje se ništa"
+    },
+    "card": {
+      "matches": "Mečevi",
+      "wl": "P/I",
+      "kd": "K/D",
+      "noMatches": "Nema zabilježenih mečeva",
+      "division": "Divizija {division}"
+    },
+    "journey": {
+      "title": "Tvoj natjecateljski put",
+      "currentRp": "Trenutni RP",
+      "current": "Trenutno",
+      "next": "Sljedeće",
+      "toGo": "{rp} RP do sljedeće divizije",
+      "top": "Dosegnuta najviša divizija",
+      "basis": "Izračunato iz tvojih spremljenih RP-ova i objavljene tablice rangova."
+    },
+    "board": {
+      "emptyTitle": "Još nema rangiranih mečeva",
+      "emptyBody": "Igrači se ovdje pojavljuju nakon svog prvog zabilježenog rangiranog meča. Ništa na ovoj ploči nije izmišljeno.",
+      "previewTag": "PREGLED",
+      "lobbyTitle": "Predvorje",
+      "matchFoundTitle": "Meč pronađen",
+      "previewNote": "Samo pregled izgleda: ne radi nikakav red ni poslužitelj, a imena su privremena.",
+      "accept": "Prihvati",
+      "waiting": "Čeka se igrače"
+    },
+    "toast": {
+      "region": "Obavijesti",
+      "dismiss": "Zatvori obavijest",
+      "signedIn": "Prijavljen kao {name}",
+      "signedOut": "Odjavio si se.",
+      "authFailed": "Prijava putem Steama nije dovršena. Pokušaj ponovno."
+    },
+    "sound": {
+      "on": "Zvukovi sučelja: uključeni",
+      "off": "Zvukovi sučelja: isključeni"
+    },
+    "chat": {
+      "open": "Otvori chat podrške",
+      "close": "Zatvori chat podrške",
+      "title": "A.C.E. podrška",
+      "greeting": "Bok! Ja sam asistent podrške A.C.E. Pitaj me o rangovima, planovima, pravilima ili svom računu.",
+      "placeholder": "Upiši svoje pitanje…",
+      "send": "Pošalji",
+      "unavailable": "Chat podrške još nije dostupan.",
+      "disclaimer": "Automatski odgovori mogu biti pogrešni. O zabranama i računima odlučuje samo administracija.",
+      "escalate": "Pošalji timu",
+      "escalated": "Spremljeno kao zahtjev za podršku. Administracija će ga pregledati.",
+      "error": "Nešto je pošlo po zlu. Pokušaj ponovno.",
+      "rateLimited": "Previše poruka. Pričekaj trenutak.",
+      "thinking": "Piše…",
+      "tooLong": "Poruka je preduga (najviše {max} znakova)."
+    }
   }
 };

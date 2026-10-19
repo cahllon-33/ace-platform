@@ -223,5 +223,82 @@ export const UI_PL: Ui = {
         "a": "Przez stronę kontaktową. Zgłoszenia są rozpatrywane zgodnie z sekcją 14 regulaminu."
       }
     ]
+  },
+  "r38": {
+    "hero": {
+      "expansion1": "Autonomous Anti-Cheat",
+      "expansion2": "Competitive Calibration",
+      "expansion3": "Elite Players",
+      "line": "Zbuduj swoją tożsamość rywalizacyjną. Skalibruj umiejętności. Wspinaj się po rangach A.C.E.",
+      "connectSteam": "Połącz ze Steam",
+      "openDashboard": "Otwórz panel",
+      "exploreRanks": "Poznaj rangi"
+    },
+    "status": {
+      "title": "Status platformy",
+      "steam": "Logowanie przez Steam",
+      "shield": "A.C.E. Shield",
+      "servers": "Serwery rywalizacyjne",
+      "tournaments": "Turnieje",
+      "billing": "Płatności",
+      "available": "Dostępne",
+      "inDevelopment": "W budowie",
+      "comingSoon": "Wkrótce",
+      "preparing": "W przygotowaniu",
+      "billingOff": "Nieaktywne · żadne płatności nie są pobierane"
+    },
+    "card": {
+      "matches": "Mecze",
+      "wl": "W/P",
+      "kd": "K/D",
+      "noMatches": "Brak zapisanych meczów",
+      "division": "Dywizja {division}"
+    },
+    "journey": {
+      "title": "Twoja ścieżka rywalizacji",
+      "currentRp": "Obecne RP",
+      "current": "Obecna",
+      "next": "Następna",
+      "toGo": "{rp} RP do następnej dywizji",
+      "top": "Osiągnięto najwyższą dywizję",
+      "basis": "Obliczone na podstawie zapisanych RP i opublikowanej tabeli rang."
+    },
+    "board": {
+      "emptyTitle": "Brak meczów rankingowych",
+      "emptyBody": "Gracze pojawią się tutaj po pierwszym zapisanym meczu rankingowym. Nic na tej tablicy nie jest zmyślone.",
+      "previewTag": "PODGLĄD",
+      "lobbyTitle": "Poczekalnia",
+      "matchFoundTitle": "Znaleziono mecz",
+      "previewNote": "Tylko podgląd układu: nie działa żadna kolejka ani serwer, a nazwy są przykładowe.",
+      "accept": "Akceptuj",
+      "waiting": "Oczekiwanie na graczy"
+    },
+    "toast": {
+      "region": "Powiadomienia",
+      "dismiss": "Zamknij powiadomienie",
+      "signedIn": "Zalogowano jako {name}",
+      "signedOut": "Wylogowano.",
+      "authFailed": "Logowanie przez Steam nie zostało ukończone. Spróbuj ponownie."
+    },
+    "sound": {
+      "on": "Dźwięki interfejsu: włączone",
+      "off": "Dźwięki interfejsu: wyłączone"
+    },
+    "chat": {
+      "open": "Otwórz czat pomocy",
+      "close": "Zamknij czat pomocy",
+      "title": "Pomoc A.C.E.",
+      "greeting": "Cześć! Jestem asystentem pomocy A.C.E. Zapytaj mnie o rangi, plany, zasady lub swoje konto.",
+      "placeholder": "Wpisz pytanie…",
+      "send": "Wyślij",
+      "unavailable": "Czat pomocy nie jest jeszcze dostępny.",
+      "disclaimer": "Automatyczne odpowiedzi mogą być błędne. O banach i kontach decyduje wyłącznie administracja.",
+      "escalate": "Wyślij do zespołu",
+      "escalated": "Zapisano jako zgłoszenie. Administracja je rozpatrzy.",
+      "error": "Coś poszło nie tak. Spróbuj ponownie.",
+      "rateLimited": "Za dużo wiadomości. Poczekaj chwilę.",
+      "thinking": "Pisze…",
+      "tooLong": "Wiadomość jest za długa (maks. {max} znaków)."
+    }
   }
 };

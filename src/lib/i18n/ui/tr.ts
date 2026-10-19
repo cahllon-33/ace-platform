@@ -223,5 +223,82 @@ export const UI_TR: Ui = {
         "a": "İletişim sayfasından bildirin. Bildirimler kural kitabının 14. bölümüne göre incelenir."
       }
     ]
+  },
+  "r38": {
+    "hero": {
+      "expansion1": "Autonomous Anti-Cheat",
+      "expansion2": "Competitive Calibration",
+      "expansion3": "Elite Players",
+      "line": "Rekabetçi kimliğini oluştur. Yeteneğini kalibre et. A.C.E. rütbelerinde yüksel.",
+      "connectSteam": "Steam'i bağla",
+      "openDashboard": "Paneli aç",
+      "exploreRanks": "Rütbeleri keşfet"
+    },
+    "status": {
+      "title": "Platform durumu",
+      "steam": "Steam ile giriş",
+      "shield": "A.C.E. Shield",
+      "servers": "Rekabetçi sunucular",
+      "tournaments": "Turnuvalar",
+      "billing": "Faturalandırma",
+      "available": "Kullanılabilir",
+      "inDevelopment": "Geliştiriliyor",
+      "comingSoon": "Yakında",
+      "preparing": "Hazırlanıyor",
+      "billingOff": "Aktif değil · ödeme alınmıyor"
+    },
+    "card": {
+      "matches": "Maçlar",
+      "wl": "G/M",
+      "kd": "K/D",
+      "noMatches": "Kayıtlı maç yok",
+      "division": "Lig {division}"
+    },
+    "journey": {
+      "title": "Rekabet yolculuğun",
+      "currentRp": "Mevcut RP",
+      "current": "Mevcut",
+      "next": "Sonraki",
+      "toGo": "Sonraki lige {rp} RP",
+      "top": "En yüksek lige ulaşıldı",
+      "basis": "Kayıtlı RP'n ve yayımlanan rütbe tablosundan hesaplanır."
+    },
+    "board": {
+      "emptyTitle": "Henüz dereceli maç yok",
+      "emptyBody": "Oyuncular ilk kayıtlı dereceli maçlarından sonra burada görünür. Bu tablodaki hiçbir şey uydurma değildir.",
+      "previewTag": "ÖNİZLEME",
+      "lobbyTitle": "Lobi",
+      "matchFoundTitle": "Maç bulundu",
+      "previewNote": "Yalnızca yerleşim önizlemesi: çalışan bir sıra veya sunucu yok, isimler yer tutucudur.",
+      "accept": "Kabul et",
+      "waiting": "Oyuncular bekleniyor"
+    },
+    "toast": {
+      "region": "Bildirimler",
+      "dismiss": "Bildirimi kapat",
+      "signedIn": "{name} olarak giriş yapıldı",
+      "signedOut": "Çıkış yaptın.",
+      "authFailed": "Steam ile giriş tamamlanmadı. Lütfen tekrar dene."
+    },
+    "sound": {
+      "on": "Arayüz sesleri: açık",
+      "off": "Arayüz sesleri: kapalı"
+    },
+    "chat": {
+      "open": "Destek sohbetini aç",
+      "close": "Destek sohbetini kapat",
+      "title": "A.C.E. Destek",
+      "greeting": "Merhaba! Ben A.C.E. destek asistanıyım. Rütbeler, planlar, kurallar veya hesabın hakkında soru sorabilirsin.",
+      "placeholder": "Sorunu yaz…",
+      "send": "Gönder",
+      "unavailable": "Destek sohbeti henüz kullanılamıyor.",
+      "disclaimer": "Otomatik yanıtlar hatalı olabilir. Yasaklar ve hesap kararları yalnızca yönetim tarafından verilir.",
+      "escalate": "Ekibe gönder",
+      "escalated": "Destek talebi olarak kaydedildi. Yönetim inceleyecek.",
+      "error": "Bir şeyler ters gitti. Lütfen tekrar dene.",
+      "rateLimited": "Çok fazla mesaj. Lütfen biraz bekle.",
+      "thinking": "Yazıyor…",
+      "tooLong": "Mesaj çok uzun (en fazla {max} karakter)."
+    }
   }
 };

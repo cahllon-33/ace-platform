@@ -223,5 +223,82 @@ export const UI_SV: Ui = {
         "a": "Via kontaktsidan. Rapporter granskas enligt avsnitt 14 i regelboken."
       }
     ]
+  },
+  "r38": {
+    "hero": {
+      "expansion1": "Autonomous Anti-Cheat",
+      "expansion2": "Competitive Calibration",
+      "expansion3": "Elite Players",
+      "line": "Bygg din tävlingsidentitet. Kalibrera din skicklighet. Klättra i A.C.E.-rankerna.",
+      "connectSteam": "Anslut Steam",
+      "openDashboard": "Öppna instrumentpanelen",
+      "exploreRanks": "Utforska rankerna"
+    },
+    "status": {
+      "title": "Plattformsstatus",
+      "steam": "Steam-inloggning",
+      "shield": "A.C.E. Shield",
+      "servers": "Tävlingsservrar",
+      "tournaments": "Turneringar",
+      "billing": "Betalning",
+      "available": "Tillgänglig",
+      "inDevelopment": "Under utveckling",
+      "comingSoon": "Kommer snart",
+      "preparing": "Förbereds",
+      "billingOff": "Inte aktiv · inga betalningar tas"
+    },
+    "card": {
+      "matches": "Matcher",
+      "wl": "V/F",
+      "kd": "K/D",
+      "noMatches": "Inga registrerade matcher",
+      "division": "Division {division}"
+    },
+    "journey": {
+      "title": "Din tävlingsresa",
+      "currentRp": "Nuvarande RP",
+      "current": "Nuvarande",
+      "next": "Nästa",
+      "toGo": "{rp} RP till nästa division",
+      "top": "Högsta divisionen nådd",
+      "basis": "Beräknat utifrån dina sparade RP och den publicerade ranktabellen."
+    },
+    "board": {
+      "emptyTitle": "Inga rankade matcher än",
+      "emptyBody": "Spelare visas här efter sin första registrerade rankade match. Inget på den här tavlan är påhittat.",
+      "previewTag": "FÖRHANDSVISNING",
+      "lobbyTitle": "Lobby",
+      "matchFoundTitle": "Match hittad",
+      "previewNote": "Endast en förhandsvisning av layouten: ingen kö eller server körs och namnen är platshållare.",
+      "accept": "Acceptera",
+      "waiting": "Väntar på spelare"
+    },
+    "toast": {
+      "region": "Aviseringar",
+      "dismiss": "Stäng avisering",
+      "signedIn": "Inloggad som {name}",
+      "signedOut": "Du har loggat ut.",
+      "authFailed": "Steam-inloggningen slutfördes inte. Försök igen."
+    },
+    "sound": {
+      "on": "Gränssnittsljud: på",
+      "off": "Gränssnittsljud: av"
+    },
+    "chat": {
+      "open": "Öppna supportchatten",
+      "close": "Stäng supportchatten",
+      "title": "A.C.E. Support",
+      "greeting": "Hej! Jag är A.C.E.:s supportassistent. Fråga mig om ranker, planer, regler eller ditt konto.",
+      "placeholder": "Skriv din fråga…",
+      "send": "Skicka",
+      "unavailable": "Supportchatten är inte tillgänglig än.",
+      "disclaimer": "Automatiska svar kan vara fel. Avstängningar och kontobeslut fattas endast av administrationen.",
+      "escalate": "Skicka till teamet",
+      "escalated": "Sparat som supportärende. Administrationen granskar det.",
+      "error": "Något gick fel. Försök igen.",
+      "rateLimited": "För många meddelanden. Vänta en stund.",
+      "thinking": "Skriver…",
+      "tooLong": "Meddelandet är för långt (max {max} tecken)."
+    }
   }
 };

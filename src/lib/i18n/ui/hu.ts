@@ -223,5 +223,82 @@ export const UI_HU: Ui = {
         "a": "A kapcsolatfelvételi oldalon. A bejelentéseket a szabálykönyv 14. pontja szerint vizsgáljuk."
       }
     ]
+  },
+  "r38": {
+    "hero": {
+      "expansion1": "Autonomous Anti-Cheat",
+      "expansion2": "Competitive Calibration",
+      "expansion3": "Elite Players",
+      "line": "Építsd fel versenyzői identitásod. Kalibráld a tudásod. Lépj feljebb az A.C.E. rangokban.",
+      "connectSteam": "Steam csatlakoztatása",
+      "openDashboard": "Irányítópult megnyitása",
+      "exploreRanks": "Rangok felfedezése"
+    },
+    "status": {
+      "title": "Platform állapota",
+      "steam": "Steam-bejelentkezés",
+      "shield": "A.C.E. Shield",
+      "servers": "Versenyszerverek",
+      "tournaments": "Tornák",
+      "billing": "Számlázás",
+      "available": "Elérhető",
+      "inDevelopment": "Fejlesztés alatt",
+      "comingSoon": "Hamarosan",
+      "preparing": "Előkészítés alatt",
+      "billingOff": "Nem aktív · nincs fizetés"
+    },
+    "card": {
+      "matches": "Meccsek",
+      "wl": "Gy/V",
+      "kd": "K/D",
+      "noMatches": "Nincs rögzített meccs",
+      "division": "{division}. divízió"
+    },
+    "journey": {
+      "title": "Versenyzői utad",
+      "currentRp": "Jelenlegi RP",
+      "current": "Jelenlegi",
+      "next": "Következő",
+      "toGo": "{rp} RP a következő divízióig",
+      "top": "Elérted a legmagasabb divíziót",
+      "basis": "A tárolt RP-d és a közzétett rangtáblázat alapján számolva."
+    },
+    "board": {
+      "emptyTitle": "Még nincs rangsorolt meccs",
+      "emptyBody": "A játékosok az első rögzített rangsorolt meccsük után jelennek meg itt. Ezen a táblán semmi sem kitalált.",
+      "previewTag": "ELŐNÉZET",
+      "lobbyTitle": "Lobbi",
+      "matchFoundTitle": "Meccs találva",
+      "previewNote": "Csak elrendezési előnézet: nem fut sor vagy szerver, a nevek helyőrzők.",
+      "accept": "Elfogadás",
+      "waiting": "Várakozás a játékosokra"
+    },
+    "toast": {
+      "region": "Értesítések",
+      "dismiss": "Értesítés bezárása",
+      "signedIn": "Bejelentkezve: {name}",
+      "signedOut": "Kijelentkeztél.",
+      "authFailed": "A Steam-bejelentkezés nem fejeződött be. Próbáld újra."
+    },
+    "sound": {
+      "on": "Felület hangjai: be",
+      "off": "Felület hangjai: ki"
+    },
+    "chat": {
+      "open": "Támogatási chat megnyitása",
+      "close": "Támogatási chat bezárása",
+      "title": "A.C.E. támogatás",
+      "greeting": "Szia! Az A.C.E. támogatási asszisztense vagyok. Kérdezz a rangokról, csomagokról, szabályokról vagy a fiókodról.",
+      "placeholder": "Írd be a kérdésed…",
+      "send": "Küldés",
+      "unavailable": "A támogatási chat még nem érhető el.",
+      "disclaimer": "Az automatikus válaszok tévedhetnek. Kitiltásokról és fiókokról csak az adminisztráció dönt.",
+      "escalate": "Küldés a csapatnak",
+      "escalated": "Támogatási jegyként mentve. Az adminisztráció átnézi.",
+      "error": "Hiba történt. Próbáld újra.",
+      "rateLimited": "Túl sok üzenet. Várj egy kicsit.",
+      "thinking": "Ír…",
+      "tooLong": "Az üzenet túl hosszú (legfeljebb {max} karakter)."
+    }
   }
 };
