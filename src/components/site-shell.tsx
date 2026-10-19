@@ -28,6 +28,8 @@ export function SiteShell({
       >
         <T k="skipToContent" />
       </a>
+      {/* Rendered before streamed content so the fixed consent tray paints with the shell. */}
+      <CookieConsentBanner />
       <Suspense fallback={<div className="h-[4.25rem] border-b border-[#FFD700]/30 bg-[#020203]" />}>
         <SiteHeader
           auth={
@@ -42,7 +44,6 @@ export function SiteShell({
       </div>
       <FinalCtaSlot />
       <SiteFooter />
-      <CookieConsentBanner />
       <ToastHost />
       <SupportChatLazy />
       </TextProvider>

@@ -8095,3 +8095,10 @@ html[dir="rtl"] .ace-hub-card-face {
 .ace-chat-suggest { display: grid; gap: 0.4rem; justify-items: start; }
 .ace-chat-suggest button { border: 1px solid var(--ace-t-line); border-radius: 999px; background: transparent; color: var(--ace-t-text); font-size: 0.78rem; padding: 0.35rem 0.8rem; cursor: pointer; text-align: start; }
 .ace-chat-suggest button:hover, .ace-chat-suggest button:focus-visible { border-color: var(--ace-t-gold-hi); color: var(--ace-t-gold-hi); }
+
+/* R39 perf: compact cookie tray on phones so it never dominates the first paint */
+@media (max-width: 640px) {
+  .ace-cookie-tray-inner { flex-direction: column; align-items: stretch; gap: .6rem; padding: .7rem .85rem; }
+  .ace-cookie-tray-inner > .min-w-0 { width: 100%; }
+  #ace-cookie-copy { font-size: .74rem; line-height: 1.35; }
+}

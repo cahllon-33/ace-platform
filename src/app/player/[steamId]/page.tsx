@@ -98,7 +98,7 @@ export default async function PlayerPage({ params }: { params: Promise<{ steamId
           </div>
         </div>
         {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img className="pl39-emblem" src={emblem.staticSrc} alt={prog.tier.name} width={220} height={220} decoding="async" fetchPriority="high" />
+        <img className="pl39-emblem" src={emblem.mdSrc} alt={prog.tier.name} width={220} height={220} decoding="async" fetchPriority="high" />
       </section>
 
       <section className="pl39-stats" aria-label={p.rating}>

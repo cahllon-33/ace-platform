@@ -158,6 +158,9 @@ export type RankEmblemAsset = {
   gltfSrc: string | null;
   /** High-resolution still (368×528, 4× Lanczos + light unsharp of the original art; design unchanged). Premium art only. */
   hdSrc?: string;
+  /** Downscaled copies of staticSrc (same art) for small list/table sizes. */
+  smSrc?: string;
+  mdSrc?: string;
   /** Static WebP used by lists/tables and as the turntable fallback (no 3D, no animation). */
   staticSrc: string;
 };
@@ -170,6 +173,8 @@ export function rankEmblemAsset(level: number): RankEmblemAsset {
     heroSrc: `/ranks/emblems/${file}.svg`,
     gltfSrc: null,
     staticSrc: `/ranks/static/${file}.webp`,
+    smSrc: `/ranks/static/192/${file}.webp`,
+    mdSrc: `/ranks/static/384/${file}.webp`,
   };
 }
 

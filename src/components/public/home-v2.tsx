@@ -11,7 +11,7 @@ import { FREE_PRICE, PLUS_PRICE, PREMIUM_PRICE } from "@/lib/pricing";
  */
 export function HomeHeroV2({ ui, actions, aside, signedIn }: { ui: Ui; actions: ReactNode; aside?: ReactNode; signedIn: boolean }) {
   const h = ui.r39.home;
-  const showcase = [3, 6, 10].map((level) => ({ level, tier: RANK_TIERS[level - 1], src: rankEmblemAsset(level).staticSrc }));
+  const showcase = [3, 6, 10].map((level) => ({ level, tier: RANK_TIERS[level - 1], src: rankEmblemAsset(level).mdSrc }));
   return (
     <section className="h39-hero" aria-labelledby="h39-title">
       <div className="h39-hero-bg" aria-hidden="true" />
@@ -22,8 +22,10 @@ export function HomeHeroV2({ ui, actions, aside, signedIn }: { ui: Ui; actions: 
             {signedIn ? h.signedInKicker : h.kicker}
           </p>
           <h1 id="h39-title" className="h39-title">
-            <span>{h.h1a}</span>
-            <span>{h.h1b}</span>
+            {h.h1a}
+            <br />
+            {h.h1b}
+            <br />
             <span className="h39-title-gold">{h.h1c}</span>
           </h1>
           <p className="h39-sub">{h.sub}</p>
@@ -92,7 +94,7 @@ export function HomeRanksV2({ ui }: { ui: Ui }) {
         {RANK_TIERS.map((tier) => (
           <li key={tier.level}>
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src={rankEmblemAsset(tier.level).staticSrc} alt="" width={96} height={96} loading="lazy" decoding="async" />
+            <img src={rankEmblemAsset(tier.level).smSrc} alt="" width={96} height={96} loading="lazy" decoding="async" />
             <span className="h39-ladder-n">{tier.level}</span>
             <span className="h39-ladder-name">{tier.name}</span>
           </li>

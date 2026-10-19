@@ -147,7 +147,7 @@ export default async function LeaderboardPage({
                   <>
                     <span className="lb39-pod-place">#{i + 1}</span>
                     {/* eslint-disable-next-line @next/next/no-img-element */}
-                    <img src={emblem.staticSrc} alt="" width={112} height={112} decoding="async" fetchPriority={i === 0 ? "high" : "auto"} />
+                    <img src={emblem.mdSrc} alt="" width={112} height={112} decoding="async" fetchPriority={i === 0 ? "high" : "auto"} />
                     <span className="lb39-pod-name">{row.name}</span>
                     <span className="lb39-pod-tier">{row.tier.replace(/^Rank \d+ · /, "")}</span>
                     <span className="lb39-pod-rp">{row.rp.toLocaleString("en-US")} <small>RP</small></span>
@@ -181,7 +181,7 @@ export default async function LeaderboardPage({
                     <span className="lb39-place">{index + 1}</span>
                     <span className="lb39-player">
                       {/* eslint-disable-next-line @next/next/no-img-element */}
-                      <img src={emblem.staticSrc} alt="" width={40} height={40} loading="lazy" decoding="async" />
+                      <img src={emblem.smSrc} alt="" width={40} height={40} loading="lazy" decoding="async" />
                       <span className="lb39-player-id">
                         {href ? <a href={href} className="lb39-name">{row.name}</a> : <span className="lb39-name">{row.name}</span>}
                         <span className="lb39-tags">

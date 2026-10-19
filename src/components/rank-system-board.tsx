@@ -54,7 +54,8 @@ export function RankSystemBoard({
       <div className="notranslate" translate="no">
         <ul className="ace-rank-portrait-row">
           {RANK_TIERS.map((tier) => {
-            const still = rankArtAsset(tier.level, art).staticSrc;
+            const artAsset = rankArtAsset(tier.level, art);
+            const still = artAsset.smSrc ?? artAsset.staticSrc;
             const active = tier.level === selected.level;
             return (
               <li
