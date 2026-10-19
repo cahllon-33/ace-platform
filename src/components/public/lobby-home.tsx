@@ -1,17 +1,13 @@
+import { HomeHeroV2, HomePlansV2, HomeRanksV2, HomeStepsV2 } from "@/components/public/home-v2";
+import { PlayerCard } from "@/components/player-card";
+import { guardDisplayName } from "@/lib/display-name-guard";
+import { interpolate } from "@/lib/i18n";
 import { Suspense } from "react";
 import { LiveStatStrip } from "@/components/public/live-stat-strip";
 import { readPublicStats } from "@/server/public-stats";
-import Link from "next/link";
 import { connection } from "next/server";
-import { HomeLocaleActions, HowItWorksLocale, LocaleLoading } from "@/components/home-locale-actions";
+import { HomeLocaleActions, LocaleLoading } from "@/components/home-locale-actions";
 import { PlatformStatus } from "@/components/platform-status";
-import { HeroArena } from "@/components/hero-arena";
-import { OpeningReel } from "@/components/opening-reel";
-import { HomeWorkspaceCharter } from "@/components/home-workspace-charter";
-import { LobbyMembership } from "@/components/lobby-identity";
-import { LobbyOps } from "@/components/lobby-ops";
-import { effectiveRankArt } from "@/server/rank-art";
-import { hasEliteSeal } from "@/lib/pricing";
 import { getText, getUi } from "@/server/locale";
 import { CompetitiveJourney } from "@/components/competitive-journey";
 import { readSessionUser } from "@/server/session";
@@ -43,50 +39,43 @@ async function LobbyHomeDynamic() {
 
   const [text, liveStats, ui] = await Promise.all([getText(), readPublicStats(), getUi()]);
   const live = Boolean(user);
+  const shownName = user ? guardDisplayName(user.displayName, user.steamId) : "";
   return (
-    <main className="ace-lobby-root ace-home-flow">
-      <OpeningReel />
-      <HeroArena actions={<HomeLocaleActions live={live} />} />
-      <PlatformStatus />
-      {user ? (
-        <div className="ace-home-journey">
-          <CompetitiveJourney rp={user.competitiveRating} ui={ui} />
-        </div>
-      ) : null}
-      <LiveStatStrip initial={liveStats} labels={text.home.liveStats} />
-      <nav className="ace-home-jumps" aria-label={text.home.jumpNav.label}>
-        <Link href="/play">{text.home.jumpNav.play}</Link>
-        <Link href="/prizes">{text.home.jumpNav.prizes}</Link>
-        <Link href="/teams">{text.home.jumpNav.teams}</Link>
-        <Link href="/leaderboard">{text.home.jumpNav.leaderboard}</Link>
-        <Link href="/ranks">{text.home.jumpNav.ranks}</Link>
-        <Link href="/features">{text.home.jumpNav.systems}</Link>
-      </nav>
-      <HomeWorkspaceCharter />
-
-
-      <LobbyOps
-        text={text}
+    <main className="ace-lobby-root ace-home-flow h39-home">
+      <HomeHeroV2
         ui={ui}
-        player={
-          user
-            ? {
-                displayName: user.displayName,
-                avatarUrl: user.avatarUrl || null,
-                rating: user.competitiveRating,
-                wins: user.wins,
-                losses: user.losses,
-                art: effectiveRankArt(user),
-                elite: hasEliteSeal(user.subscriptionTier),
-              }
-            : null
+        signedIn={live}
+        actions={<HomeLocaleActions live={live} />}
+        aside={
+          user ? (
+            <div className="h39-me">
+              <PlayerCard
+                name={shownName}
+                avatarUrl={user.avatarUrl || null}
+                rp={user.competitiveRating}
+                wins={user.wins}
+                losses={user.losses}
+                labels={{
+                  rp: text.home.ops.rp,
+                  matches: ui.r38.card.matches,
+                  wl: ui.r38.card.wl,
+                  noMatches: ui.r38.card.noMatches,
+                  division: ui.r38.card.division,
+                  avatarAlt: interpolate(text.home.ops.avatarAlt, { name: shownName }),
+                }}
+              />
+              <CompetitiveJourney rp={user.competitiveRating} ui={ui} />
+            </div>
+          ) : undefined
         }
       />
-
-
-      <LobbyMembership />
-
-      <HowItWorksLocale />
+      <HomeStepsV2 ui={ui} />
+      <HomeRanksV2 ui={ui} />
+      <HomePlansV2 ui={ui} />
+      <div className="h39-section h39-status">
+        <PlatformStatus />
+        <LiveStatStrip initial={liveStats} labels={text.home.liveStats} />
+      </div>
     </main>
   );
 }

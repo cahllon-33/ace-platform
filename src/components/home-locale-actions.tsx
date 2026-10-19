@@ -25,7 +25,7 @@ export function HomeLocaleActions({ live }: { live: boolean }) {
           {hero.openDashboard}
         </Link>
       ) : (
-        <SteamSignInButton variant="steam" label={hero.connectSteam} />
+        <SteamSignInButton variant="primary" label={hero.connectSteam} />
       )}
       <Link href="/ranks" className="ace-how-btn">
         {hero.exploreRanks}
