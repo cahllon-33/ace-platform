@@ -1,21 +1,21 @@
 import { headers } from "next/headers";
 import { connection } from "next/server";
 import { createRateLimiter, sanitizeHistory } from "@/lib/ai-support-policy";
-import { aiSupportAvailable, askSupportModel, saveSupportTicket } from "@/server/ai-support";
+import { aiModelConfigured, answerSupport, saveSupportTicket } from "@/server/ai-support";
+import { uiFor } from "@/lib/i18n/ui";
 
 const allow = createRateLimiter();
 const allowTicket = createRateLimiter(2, 6);
 const NO_STORE = { "Cache-Control": "no-store" };
 
-/** Whether the chat is configured. Never reveals the key. */
+/** The chat always works (site knowledge base); `mode` says whether a model writes the replies. Never reveals the key. */
 export async function GET() {
   await connection();
-  return Response.json({ available: aiSupportAvailable() }, { headers: NO_STORE });
+  return Response.json({ available: true, mode: aiModelConfigured() ? "llm" : "kb" }, { headers: NO_STORE });
 }
 
 export async function POST(request: Request) {
   await connection();
-  if (!aiSupportAvailable()) return Response.json({ error: "unavailable" }, { status: 503, headers: NO_STORE });
   const len = Number(request.headers.get("content-length") ?? 0);
   if (len > 32_000) return Response.json({ error: "too_long" }, { status: 413, headers: NO_STORE });
 
@@ -44,8 +44,8 @@ export async function POST(request: Request) {
       const ticketId = await saveSupportTicket(history, locale, sessionKey);
       return Response.json({ ticketId }, { headers: NO_STORE });
     }
-    const reply = await askSupportModel(history, locale);
-    return Response.json({ reply }, { headers: NO_STORE });
+    const result = await answerSupport(history, locale, uiFor(locale).r39.chat.noMatch);
+    return Response.json(result, { headers: NO_STORE });
   } catch {
     return Response.json({ error: "failed" }, { status: 502, headers: NO_STORE });
   }

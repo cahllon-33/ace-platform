@@ -2,8 +2,10 @@ import { getPrisma } from "@/server/db";
 import { readSessionUser } from "@/server/session";
 import { buildSystemPrompt, type ChatMessage } from "@/lib/ai-support-policy";
 import { SITE_LOCALES } from "@/lib/languages";
+import { kbAnswer } from "@/lib/site-kb-corpus";
 
-export function aiSupportAvailable(): boolean {
+/** The model is optional: without a key the chat answers from the site knowledge base. */
+export function aiModelConfigured(): boolean {
   return Boolean(process.env.OPENAI_API_KEY?.trim());
 }
 
@@ -12,7 +14,7 @@ function localeName(id: string): string {
 }
 
 /** Calls the model server-side. The key never leaves the server. */
-export async function askSupportModel(history: ChatMessage[], locale: string): Promise<string> {
+export async function askSupportModel(history: ChatMessage[], locale: string, context?: string): Promise<string> {
   const key = process.env.OPENAI_API_KEY?.trim();
   if (!key) throw new Error("unavailable");
   const base = (process.env.OPENAI_BASE_URL?.trim() || "https://api.openai.com/v1").replace(/\/$/, "");
@@ -23,7 +25,7 @@ export async function askSupportModel(history: ChatMessage[], locale: string): P
       model: process.env.OPENAI_MODEL?.trim() || "gpt-4o-mini",
       temperature: 0.3,
       max_tokens: 350,
-      messages: [{ role: "system", content: buildSystemPrompt(localeName(locale)) }, ...history],
+      messages: [{ role: "system", content: buildSystemPrompt(localeName(locale), context) }, ...history],
     }),
     signal: AbortSignal.timeout(20_000),
   });
@@ -54,4 +56,29 @@ export async function saveSupportTicket(history: ChatMessage[], locale: string, 
     select: { id: true },
   });
   return ticket.id;
+}
+
+export type SupportReply = { reply: string; route: string | null; offerTicket: boolean; mode: "kb" | "llm" };
+
+/**
+ * Answer from the site's own content. With OPENAI_API_KEY the model writes the reply from the retrieved
+ * passages (RAG); without it, or if the model fails, the best matching published passage is the reply.
+ */
+export async function answerSupport(history: ChatMessage[], locale: string, noMatch: string): Promise<SupportReply> {
+  const question = [...history].reverse().find((m) => m.role === "user")?.content ?? "";
+  const kb = kbAnswer(question, locale);
+  if (aiModelConfigured()) {
+    const context = kb.hits
+      .slice(0, 4)
+      .map((h) => `- (${h.doc.route}) ${h.doc.answer}`)
+      .join("\n");
+    try {
+      const reply = await askSupportModel(history, locale, context || "(no matching site content)");
+      return { reply, route: kb.found ? kb.route : null, offerTicket: !kb.found, mode: "llm" };
+    } catch {
+      /* fall through to the knowledge base */
+    }
+  }
+  if (kb.found) return { reply: kb.answer, route: kb.route, offerTicket: false, mode: "kb" };
+  return { reply: noMatch, route: null, offerTicket: true, mode: "kb" };
 }

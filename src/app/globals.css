@@ -8087,3 +8087,11 @@ html[dir="rtl"] .ace-hub-card-face {
 /* R38-M: keep the footer CTA below the fold while streamed page sections arrive (CLS) */
 #main-content { min-height: calc(100dvh - 4.25rem); }
 .ace-consented .ace-cookie-tray { display: none; }
+/* R39: KB chat */
+.ace-chat-msg p { margin: 0; }
+.ace-chat-src { display: inline-block; margin-top: 0.4rem; font-size: 0.72rem; font-weight: 700; color: var(--ace-t-gold-hi); text-decoration: none; }
+.ace-chat-src:hover, .ace-chat-src:focus-visible { text-decoration: underline; }
+.ace-chat-escalate.is-inline { margin-top: 0.5rem; display: block; }
+.ace-chat-suggest { display: grid; gap: 0.4rem; justify-items: start; }
+.ace-chat-suggest button { border: 1px solid var(--ace-t-line); border-radius: 999px; background: transparent; color: var(--ace-t-text); font-size: 0.78rem; padding: 0.35rem 0.8rem; cursor: pointer; text-align: start; }
+.ace-chat-suggest button:hover, .ace-chat-suggest button:focus-visible { border-color: var(--ace-t-gold-hi); color: var(--ace-t-gold-hi); }
