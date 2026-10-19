@@ -53,7 +53,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
       <body className="flex min-h-full flex-col bg-[#020203] font-sans text-ace-text">
         <script
           dangerouslySetInnerHTML={{
-            __html: `window.__ACE_LOCALE=${JSON.stringify(locale.id)}`,
+            __html: `window.__ACE_LOCALE=${JSON.stringify(locale.id)};try{if(localStorage.getItem("ace-cookie-consent-v1"))document.documentElement.classList.add("ace-consented")}catch(e){}`,
           }}
         />
         <SiteShell initialLocale={locale.id}>{children}</SiteShell>

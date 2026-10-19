@@ -25,7 +25,9 @@ export function CookieConsentBanner() {
   const banner = text.consent.banner;
   const categories = text.consent.categories;
 
-  if (!ready || consent) return null;
+  // R39: rendered on the server too, so it paints with the HTML instead of after hydration (LCP).
+  // Visitors who already chose are hidden before paint by the inline `ace-consented` class (layout.tsx).
+  if (ready && consent) return null;
 
   return (
     <div

@@ -1,3 +1,4 @@
+import "./lb39.css";
 import { guardDisplayName } from "@/lib/display-name-guard";
 import { rankLevelFromRp } from "@/lib/rank-progress";
 import { PlayerBadges } from "@/components/player-badges";
@@ -40,6 +41,9 @@ type BoardRow = {
   /** Server gate result (effectiveRankArt) for stored rows; showcase rows are always standard. */
   art: RankArt;
   badges: PlayerBadge[];
+  steamId: string | null;
+  wins: number;
+  losses: number;
 };
 
 export default async function LeaderboardPage({
@@ -85,6 +89,9 @@ export default async function LeaderboardPage({
       weaponName: null,
       live: true,
       art: effectiveRankArt(row),
+      steamId: row.steamId,
+      wins: row.wins,
+      losses: row.losses,
       // Computed here on the server from stored rows; only the badge labels reach the page.
       badges: playerBadges({
         subscriptionTier: row.subscriptionTier,
@@ -100,39 +107,27 @@ export default async function LeaderboardPage({
 
   // No showcase fallback: an empty board says so honestly.
   const board: BoardRow[] = live;
-
   const top = board[0]?.rp ?? 1;
-  const podium =
-    board.length >= 3
-      ? [
-          { row: board[1], place: 2 },
-          { row: board[0], place: 1 },
-          { row: board[2], place: 3 },
-        ]
-      : [];
+  const podium = board.slice(0, 3);
+  const b39 = ui.r39.board;
+  const profileHref = (row: BoardRow) => (row.steamId ? `/player/${row.steamId}` : null);
 
   return (
-    <main className="ace-lb">
-      <header className="ace-lb-hero">
-        <div>
-          <p className="ace-lb-kicker">{lb.hero.kicker}</p>
-          <h1>{lb.hero.title}</h1>
-          <p className="ace-lb-note">{ui.r38.board.note}</p>
-        </div>
-        <ul className="ace-lb-facts">
-          <li>
-            <span>{lb.facts.seats}</span>
-            <strong>{board.length}</strong>
-          </li>
-          <li>
-            <span>{lb.facts.storedAccounts}</span>
-            <strong>{live.length}</strong>
-          </li>
-          <li>
-            <span>{lb.facts.killsStored}</span>
-            <strong>{lb.facts.none}</strong>
-          </li>
-        </ul>
+    <main className="lb39">
+      <header className="lb39-hero">
+        <p className="lb39-kicker">{lb.hero.kicker}</p>
+        <h1>{lb.hero.title}</h1>
+        <p className="lb39-note">{ui.r38.board.note}</p>
+        <dl className="lb39-facts">
+          <div>
+            <dt>{lb.facts.storedAccounts}</dt>
+            <dd>{live.length}</dd>
+          </div>
+          <div>
+            <dt>{lb.facts.killsStored}</dt>
+            <dd>{lb.facts.none}</dd>
+          </div>
+        </dl>
       </header>
 
       {board.length === 0 ? (
@@ -142,79 +137,66 @@ export default async function LeaderboardPage({
         </div>
       ) : (
         <>
-          {podium.length === 3 ? (
-            <ol className="ace-lb-podium" aria-label={lb.podiumLabel}>
-              {podium.map(({ row, place }) => {
+          <section aria-labelledby="lb39-podium">
+            <h2 id="lb39-podium" className="lb39-h2">{b39.podium}</h2>
+            <ol className="lb39-podium">
+              {podium.map((row, i) => {
+                const href = profileHref(row);
                 const emblem = rankArtAsset(row.level, row.art);
-                return (
-                  <li key={row.id} className={`ace-lb-pod is-${place}`}>
-                    <span className="ace-lb-pod-place">{place}</span>
+                const body = (
+                  <>
+                    <span className="lb39-pod-place">#{i + 1}</span>
                     {/* eslint-disable-next-line @next/next/no-img-element */}
-                    <img src={emblem.staticSrc} alt="" width={40} height={40} loading="lazy" />
-                    <span className="ace-lb-name">{row.name}</span>
-                    <span className="ace-lb-tag">{row.live ? lb.tags.stored : lb.tags.showcase}</span>
-                    <WeaponCell row={row} size="podium" lb={lb} />
-                    <span className="ace-lb-rp">{row.rp.toLocaleString("en-US")} RP</span>
+                    <img src={emblem.staticSrc} alt="" width={112} height={112} decoding="async" fetchPriority={i === 0 ? "high" : "auto"} />
+                    <span className="lb39-pod-name">{row.name}</span>
+                    <span className="lb39-pod-tier">{row.tier.replace(/^Rank \d+ · /, "")}</span>
+                    <span className="lb39-pod-rp">{row.rp.toLocaleString("en-US")} <small>RP</small></span>
+                    <span className="lb39-pod-wl">{row.wins}–{row.losses}</span>
+                  </>
+                );
+                return (
+                  <li key={row.id} className={`lb39-pod is-${i + 1}`}>
+                    {href ? <a href={href} aria-label={`${b39.viewProfile}: ${row.name}`}>{body}</a> : <div>{body}</div>}
                   </li>
                 );
               })}
             </ol>
-          ) : null}
+          </section>
 
-          <section className="ace-lb-stage" aria-label={lb.boardLabel}>
-            <div className="ace-lb-head">
-              <span>{lb.table.rank}</span>
+          <section className="lb39-table" aria-label={lb.boardLabel}>
+            <div className="lb39-head" aria-hidden="true">
+              <span>#</span>
               <span>{lb.table.player}</span>
-              <span>{lb.table.country}</span>
               <span>{lb.table.tier}</span>
-              <span>{lb.table.leadWeapon}</span>
+              <span>{ui.r38.card.wl}</span>
               <span>{lb.table.rating}</span>
             </div>
             <ol>
               {board.map((row, index) => {
-                const place = index + 1;
                 const emblem = rankArtAsset(row.level, row.art);
-                const width = Math.max(8, Math.round((row.rp / top) * 100));
+                const width = Math.max(6, Math.round((row.rp / top) * 100));
+                const href = profileHref(row);
                 return (
-                  <li key={row.id} className={`ace-lb-row is-${place <= 3 ? place : "rest"}`}>
-                    <span className="ace-lb-medal">
-                      {place === 1 ? (
-                        <svg className="ace-lb-crown" viewBox="0 0 24 16" aria-hidden="true">
-                          <path d="M2 14h20L19 6l-5 4L12 2 10 10 5 6 2 14z" />
-                        </svg>
-                      ) : null}
-                      {place}
-                    </span>
-                    <span className="ace-lb-player">
+                  <li key={row.id} className="lb39-row">
+                    <span className="lb39-place">{index + 1}</span>
+                    <span className="lb39-player">
                       {/* eslint-disable-next-line @next/next/no-img-element */}
-                      <img src={emblem.staticSrc} alt="" width={40} height={40} loading="lazy" />
-                      <span>
-                        <span className="ace-lb-name">{row.name}</span>
-                        <span className="ace-lb-tag">{row.live ? lb.tags.stored : lb.tags.showcase}</span>
-                        {row.art === "premium" ? <span className="ace-premium-tag">{text.play.premium.tag}</span> : null}
-                        <PlayerBadges badges={row.badges} />
+                      <img src={emblem.staticSrc} alt="" width={40} height={40} loading="lazy" decoding="async" />
+                      <span className="lb39-player-id">
+                        {href ? <a href={href} className="lb39-name">{row.name}</a> : <span className="lb39-name">{row.name}</span>}
+                        <span className="lb39-tags">
+                          {row.art === "premium" ? <span className="ace-premium-tag">{text.play.premium.tag}</span> : null}
+                          <PlayerBadges badges={row.badges} />
+                        </span>
                       </span>
                     </span>
-                    <span className="ace-lb-country">
-                      {row.flag ? (
-                        <>
-                          <LocaleFlag code={row.flag} />
-                          <span>{lb.countries[row.flag]}</span>
-                        </>
-                      ) : (
-                        "—"
-                      )}
+                    <span className="lb39-tier">
+                      <b>{row.level}</b> {row.tier.replace(/^Rank \d+ · /, "")}
                     </span>
-                    <span className="ace-lb-skill" aria-label={row.tier}>
-                      <span>{row.level}</span>
-                      <span>{row.tier.replace(/^Rank \d+ · /, "")}</span>
-                    </span>
-                    <WeaponCell row={row} lb={lb} />
-                    <span className="ace-lb-rp">
+                    <span className="lb39-wl">{row.wins}–{row.losses}</span>
+                    <span className="lb39-rp">
                       <span>{row.rp.toLocaleString("en-US")} RP</span>
-                      <span className="ace-lb-bar" aria-hidden="true">
-                        <span style={{ width: `${width}%` }} />
-                      </span>
+                      <span className="lb39-bar" aria-hidden="true"><span style={{ width: `${width}%` }} /></span>
                     </span>
                   </li>
                 );
@@ -223,7 +205,9 @@ export default async function LeaderboardPage({
           </section>
         </>
       )}
-      <MatchPreview ui={ui} />
+      <div className="lb39-preview">
+        <MatchPreview ui={ui} />
+      </div>
     </main>
   );
 }

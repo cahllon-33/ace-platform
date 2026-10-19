@@ -8086,3 +8086,4 @@ html[dir="rtl"] .ace-hub-card-face {
 
 /* R38-M: keep the footer CTA below the fold while streamed page sections arrive (CLS) */
 #main-content { min-height: calc(100dvh - 4.25rem); }
+.ace-consented .ace-cookie-tray { display: none; }
