@@ -4,6 +4,7 @@ import { createHmac, timingSafeEqual } from "node:crypto";
 import { cookies, headers } from "next/headers";
 import { getSessionSecret, isProduction } from "@/server/env";
 import { readSessionUser } from "@/server/session";
+import { adminGateDecision, isAllowlistedSteamId, parseAdminSteamIds } from "@/lib/admin-allowlist";
 
 const GATE_COOKIE = "ace_admin_gate";
 const GATE_HOURS = 12;
@@ -47,39 +48,42 @@ function sameSecret(left: string, right: string) {
   return timingSafeEqual(a, b);
 }
 
-export async function readAdminGate() {
+async function passwordGateValid() {
   const username = process.env.ACE_ADMIN_USERNAME?.trim() ?? "";
   const password = process.env.ACE_ADMIN_PASSWORD ?? "";
-  if (!username || !password) {
-    return false;
-  }
+  if (!username || !password) return false;
   const jar = await cookies();
   const token = jar.get(GATE_COOKIE)?.value;
-  if (!token || token.length !== gateToken().length) {
-    return false;
+  if (!token || token.length !== gateToken().length) return false;
+  return sameSecret(token, gateToken());
+}
+
+/** SteamID of the signed-in user, read from the server-side session record (never from the request body). */
+async function sessionSteamId(): Promise<string | null> {
+  try {
+    const user = await readSessionUser();
+    return user?.steamId ?? null;
+  } catch {
+    return null;
   }
-  if (!sameSecret(token, gateToken())) {
-    return false;
-  }
-  return adminRoleAllowed();
 }
 
 /**
- * Operator role: when ACE_ADMIN_STEAM_IDS is set (comma separated SteamID64 list), the admin surface also
- * requires a signed-in Steam session whose SteamID is on that list. Checked on the server for every read and action.
+ * Admin gate, checked on the server for every admin read and action.
+ * ACE_ADMIN_STEAM_IDS set: an allowlisted Steam session opens the gate directly; the
+ * username/password gate cookie remains a backup. Unset: username/password gate only (unchanged).
  */
-async function adminRoleAllowed() {
-  const allow = (process.env.ACE_ADMIN_STEAM_IDS ?? "")
-    .split(",")
-    .map((value) => value.trim())
-    .filter(Boolean);
-  if (allow.length === 0) return true;
-  try {
-    const user = await readSessionUser();
-    return Boolean(user?.steamId && allow.includes(user.steamId));
-  } catch {
-    return false;
-  }
+export async function readAdminGate() {
+  const allowlistRaw = process.env.ACE_ADMIN_STEAM_IDS;
+  const steamId = parseAdminSteamIds(allowlistRaw).length > 0 ? await sessionSteamId() : null;
+  return adminGateDecision({ passwordGateValid: await passwordGateValid(), sessionSteamId: steamId, allowlistRaw }).open;
+}
+
+/** True when the signed-in Steam session is on ACE_ADMIN_STEAM_IDS (used for the nav Admin link). */
+export async function readIsSteamOwner() {
+  const allowlistRaw = process.env.ACE_ADMIN_STEAM_IDS;
+  if (parseAdminSteamIds(allowlistRaw).length === 0) return false;
+  return isAllowlistedSteamId(await sessionSteamId(), allowlistRaw);
 }
 
 export async function unlockAdminGate(username: string, password: string) {

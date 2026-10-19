@@ -9,6 +9,7 @@ import { readAdminGate } from "@/server/admin-gate";
 import { effectiveRankArt } from "@/server/rank-art";
 import { lookupSteamPersonasDetailed, type SteamSyncError } from "@/server/steam-openid";
 import { steamProfileUpdate } from "@/server/users";
+import { isAllowlistedSteamId, parseAdminSteamIds } from "@/lib/admin-allowlist";
 import { PRESENCE_WINDOW_MS, readPresence, type ConnectedPlayer } from "@/server/presence";
 
 export type AdminLiveStats = {
@@ -121,21 +122,28 @@ function userToAdminRow(user: User, steamSyncError: SteamSyncError | null = null
     steamProfileUrl: user.steamProfileUrl || "",
     steamSyncedAt: user.steamSyncedAt ? user.steamSyncedAt.toISOString() : null,
     steamSyncError,
+    owner: isAllowlistedSteamId(user.steamId, process.env.ACE_ADMIN_STEAM_IDS),
   };
 }
 
 const STEAM_STALE_MS = 6 * 60 * 60 * 1000;
 
 /**
- * Re-sync Steam personas for linked users never synced or older than 6h (max 100 per load).
+ * Re-sync Steam personas for linked users never synced or older than 6h (max 100 per load); owners on every load.
  * Persists every profile Steam returned; returns the failure reason per user id for the rest.
  */
 async function refreshStaleSteamProfiles(): Promise<Map<string, SteamSyncError>> {
   const failures = new Map<string, SteamSyncError>();
+  const owners = parseAdminSteamIds(process.env.ACE_ADMIN_STEAM_IDS);
   const stale = await prisma.user.findMany({
     where: {
       steamId: { not: null },
-      OR: [{ steamSyncedAt: null }, { steamSyncedAt: { lt: new Date(Date.now() - STEAM_STALE_MS) } }],
+      // Owners (ACE_ADMIN_STEAM_IDS) are re-synced on every admin load; everyone else after 6h.
+      OR: [
+        { steamSyncedAt: null },
+        { steamSyncedAt: { lt: new Date(Date.now() - STEAM_STALE_MS) } },
+        ...(owners.length > 0 ? [{ steamId: { in: owners } }] : []),
+      ],
     },
     select: { id: true, steamId: true },
     orderBy: { steamSyncedAt: { sort: "asc", nulls: "first" } },

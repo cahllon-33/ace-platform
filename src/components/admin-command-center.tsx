@@ -213,7 +213,10 @@ function PlayerDrawer({
           <PlayerAvatar src={player.avatarUrl ?? null} name={player.username} alt="" size={56} />
           <div className="acx-nameplate-id">
             <p className="acx-nameplate-kicker">{t("steamPersona")}</p>
-            <p className="acx-dossier-name acx-steam-name">{player.username}</p>
+            <p className="acx-dossier-name acx-steam-name">
+              {player.username}
+              {player.owner ? <span className="acx-owner-badge" title={t("ownerBadgeTitle")}>{t("ownerBadge")}</span> : null}
+            </p>
             <p className="acx-nameplate-meta">
               <span className="ace-admin-mono">{player.steamId === "—" ? t("decoupledNote") : player.steamId}</span>
               {player.email && player.email !== "—" ? <span className="acx-muted">{player.email}</span> : null}
@@ -679,7 +682,10 @@ export function AdminCommandCenter({
                       >
                         <PlayerAvatar src={player.avatarUrl ?? null} name={player.username} alt="" size={38} />
                         <span>
-                          <strong>{player.username}</strong>
+                          <strong>
+                            {player.username}
+                            {player.owner ? <span className="acx-owner-badge">{t("ownerBadge")}</span> : null}
+                          </strong>
                           <small>{player.email}</small>
                           <small className="ace-admin-mono" title={t("colSteam")}>
                             {player.steamId === "—" ? t("decoupledNote") : player.steamId}

@@ -1462,3 +1462,4 @@
 .acx-hero-rp { direction: ltr; unicode-bidi: isolate; }
 @media (max-width: 40rem) { .acx-hero-operator, [dir="rtl"] .acx-hero-operator { height: 62%; object-position: center bottom; } }
 .acx-steam-sync-error { display: block; margin-top: 0.3rem; font-size: 0.76rem; line-height: 1.45; color: #ff8a7a; }
+.acx-owner-badge { display: inline-flex; align-items: center; margin-inline-start: 0.45rem; padding: 0.1rem 0.45rem; border-radius: 999px; border: 1px solid rgba(255,215,0,0.7); background: linear-gradient(135deg, rgba(255,215,0,0.22), rgba(212,175,55,0.08)); color: #FFD700; font-size: 0.62rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; vertical-align: middle; }

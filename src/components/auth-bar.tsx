@@ -7,6 +7,7 @@ import { hasEliteSeal } from "@/lib/pricing";
 import { STEAM_AUTH_HREF } from "@/lib/site";
 import { getText } from "@/server/locale";
 import { readSessionUser } from "@/server/session";
+import { isAllowlistedSteamId } from "@/lib/admin-allowlist";
 
 export async function AuthBar() {
   await connection();
@@ -17,6 +18,8 @@ export async function AuthBar() {
     user = null;
   }
 
+  // Server-side only: SteamID from the session record, matched against ACE_ADMIN_STEAM_IDS.
+  const isOwner = isAllowlistedSteamId(user?.steamId, process.env.ACE_ADMIN_STEAM_IDS);
   const copy = (await getText()).home.shell;
   const level = user?.rankLevel ?? null;
   const label = user?.displayName ?? null;
@@ -25,6 +28,11 @@ export async function AuthBar() {
   return (
     <div className="flex flex-wrap items-center justify-end gap-2">
       <HubSearch />
+      {isOwner ? (
+        <Link href="/admin/dashboard" prefetch={false} className="ace-admin-navlink no-underline">
+          Admin
+        </Link>
+      ) : null}
       {hasEliteSeal(user?.subscriptionTier) ? (
         <span className="inline-flex items-center gap-2" title={copy.elite}>
           <EliteSeal className="h-9 w-auto" />

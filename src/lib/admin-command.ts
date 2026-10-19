@@ -28,6 +28,8 @@ export type AdminPlayerRow = {
   steamSyncedAt?: string | null;
   /** Why the most recent Steam sync attempt (this load / dossier open) failed. Not persisted. */
   steamSyncError?: SteamSyncIssue | null;
+  /** True when the account's SteamID is on ACE_ADMIN_STEAM_IDS (site owner). Admin-only. */
+  owner?: boolean;
 };
 
 /** Serializable Steam sync failure shown in the admin dossier. */
