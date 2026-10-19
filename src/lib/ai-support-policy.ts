@@ -24,7 +24,7 @@ export function buildSystemPrompt(localeName: string): string {
 }
 
 /** Validate and trim the incoming history. Returns null when invalid. */
-export function sanitizeHistory(input: unknown): ChatMessage[] | null {
+export function sanitizeHistory(input: unknown, opts: { allowAssistantLast?: boolean } = {}): ChatMessage[] | null {
   if (!Array.isArray(input) || input.length === 0) return null;
   const out: ChatMessage[] = [];
   for (const raw of input.slice(-CHAT_MAX_TURNS)) {
@@ -36,7 +36,8 @@ export function sanitizeHistory(input: unknown): ChatMessage[] | null {
     if (role === "user" && text.length > CHAT_MAX_CHARS) return null;
     out.push({ role, content: text.slice(0, 2000) });
   }
-  if (out.length === 0 || out[out.length - 1].role !== "user") return null;
+  if (out.length === 0 || !out.some((m) => m.role === "user")) return null;
+  if (!opts.allowAssistantLast && out[out.length - 1].role !== "user") return null;
   return out;
 }
 

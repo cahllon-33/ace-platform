@@ -101,8 +101,7 @@ export function SupportChat() {
     if (busy || escalated || !messages.some((m) => m.role === "user")) return;
     setBusy(true);
     try {
-      const history = messages[messages.length - 1]?.role === "user" ? messages : [...messages, { role: "user" as const, content: "—" }];
-      await post({ messages: history, escalate: true });
+      await post({ messages, escalate: true });
       setEscalated(true);
       toast(c.escalated, "success");
     } catch (e) {

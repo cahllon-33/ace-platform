@@ -21,6 +21,9 @@ describe("ai support policy", () => {
     expect(sanitizeHistory([{ role: "system", content: "x" }])).toBeNull();
     expect(sanitizeHistory([{ role: "assistant", content: "x" }])).toBeNull();
     expect(sanitizeHistory("nope")).toBeNull();
+    const conv = [{ role: "user", content: "q" }, { role: "assistant", content: "a" }];
+    expect(sanitizeHistory(conv)).toBeNull();
+    expect(sanitizeHistory(conv, { allowAssistantLast: true })).toHaveLength(2);
   });
   it("rate limits", () => {
     const allow = createRateLimiter(2, 3);

@@ -25,14 +25,15 @@ export async function POST(request: Request) {
   } catch {
     return Response.json({ error: "bad_request" }, { status: 400, headers: NO_STORE });
   }
-  const history = sanitizeHistory(body.messages);
+  const escalate = body.escalate === true;
+  // Escalation saves the whole conversation, which normally ends with the assistant's reply.
+  const history = sanitizeHistory(body.messages, { allowAssistantLast: escalate });
   if (!history) return Response.json({ error: "bad_request" }, { status: 400, headers: NO_STORE });
   const locale = typeof body.locale === "string" ? body.locale : "en";
   const sessionKey = typeof body.sessionKey === "string" ? body.sessionKey.replace(/[^\w-]/g, "").slice(0, 64) : "";
 
   const h = await headers();
   const ip = (h.get("x-forwarded-for")?.split(",")[0] ?? h.get("x-real-ip") ?? "local").trim();
-  const escalate = body.escalate === true;
   const limiter = escalate ? allowTicket : allow;
   if (!limiter(`ip:${ip}`) || (sessionKey && !limiter(`s:${sessionKey}`))) {
     return Response.json({ error: "rate_limited" }, { status: 429, headers: NO_STORE });
