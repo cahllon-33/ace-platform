@@ -1,3 +1,4 @@
+import { AuthToastWatcher } from "@/components/toast-triggers";
 import Link from "next/link";
 import { connection } from "next/server";
 import { HubSearch } from "@/components/hub-search";
@@ -28,6 +29,7 @@ export async function AuthBar() {
 
   return (
     <div className="flex flex-wrap items-center justify-end gap-2">
+      <AuthToastWatcher name={label} />
       <HubSearch />
       {isOwner ? (
         <Link href="/admin/dashboard" prefetch={false} className="ace-admin-navlink no-underline">

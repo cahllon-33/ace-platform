@@ -6,6 +6,7 @@ import { FinalCtaSlot } from "@/components/final-cta-slot";
 import { LocaleProvider, T } from "@/components/locale-provider";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
+import { ToastHost } from "@/components/toast-host";
 import { TextProvider } from "@/components/text-provider";
 import { clientText, textFor } from "@/lib/i18n/text";
 
@@ -41,6 +42,7 @@ export function SiteShell({
       <FinalCtaSlot />
       <SiteFooter />
       <CookieConsentBanner />
+      <ToastHost />
       </TextProvider>
     </LocaleProvider>
   );

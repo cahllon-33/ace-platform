@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { ToastOnMount } from "@/components/toast-triggers";
 import { ButtonLink } from "@/components/ui/button";
 import { getText } from "@/server/locale";
 
@@ -19,6 +20,7 @@ export default async function LoginErrorPage({
   const copy = text.account.loginError;
   return (
     <main className="mx-auto max-w-2xl px-4 py-16">
+      <ToastOnMount kind="authFailed" />
       <h1 className="text-3xl font-semibold text-white">{copy.title}</h1>
       <p className="mt-4 text-ace-muted">
         {reason === "steam-not-configured"
