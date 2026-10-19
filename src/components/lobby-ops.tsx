@@ -1,8 +1,8 @@
-import { RankNameTokens } from "@/components/rank-name-tokens";
+import { PlayerCard, type PlayerCardLabels } from "@/components/player-card";
+import type { Ui } from "@/lib/i18n/ui";
 import Link from "next/link";
 import { CalibrationTrack } from "@/components/calibration-track";
 import { EliteSeal } from "@/components/elite-seal";
-import { FloatingEmblem, PlayerAvatar } from "@/components/floating-emblem";
 import { interpolate } from "@/lib/i18n";
 import { rankArtAsset, rankFromRating, type RankArt } from "@/lib/ranks";
 import { PremiumShowcase } from "@/components/premium-showcase";
@@ -20,13 +20,21 @@ export type LobbyOpsPlayer = {
   elite: boolean;
 };
 
-export function LobbyOps({ text, player }: { text: Text; player: LobbyOpsPlayer | null }) {
+export function LobbyOps({ text, player, ui }: { text: Text; player: LobbyOpsPlayer | null; ui: Ui }) {
   const c = text.home.ops;
   const na = c.na;
   const matches = player ? player.wins + player.losses : 0;
   const winRate = player && matches > 0 ? `${Math.round((player.wins / matches) * 100)}%` : na;
   const tier = player ? rankFromRating(player.rating) : null;
   const placement = Math.min(10, matches);
+  const cardLabels: PlayerCardLabels = {
+    rp: c.rp,
+    matches: ui.r38.card.matches,
+    wl: ui.r38.card.wl,
+    noMatches: ui.r38.card.noMatches,
+    division: ui.r38.card.division,
+    avatarAlt: player ? interpolate(c.avatarAlt, { name: player.displayName }) : "",
+  };
 
   return (
     <section id="identity" className="ace-ops3d mx-auto max-w-[76rem] px-4 py-8 sm:px-6" aria-label={c.identityKicker}>
@@ -34,41 +42,32 @@ export function LobbyOps({ text, player }: { text: Text; player: LobbyOpsPlayer 
         <p className="ace-ops3d-kicker">{c.identityKicker}</p>
         {player && tier ? (
           <>
-            <div className="ace-ops3d-hero">
-              <PlayerAvatar
-                src={player.avatarUrl}
-                name={player.displayName}
-                alt={interpolate(c.avatarAlt, { name: player.displayName })}
-                size={72}
-              />
-              <div className="min-w-0">
-                <h2 className="ace-ops3d-name">{player.displayName}</h2>
-                <p className="ace-ops3d-rank"><RankNameTokens level={tier.level} premiumName /></p>
-                {player.art === "premium" ? <span className="ace-premium-tag">{text.play.premium.tag}</span> : null}
-                {player.elite ? (
-                  <span className="ace-ops3d-elite"><EliteSeal className="h-6 w-auto" /> {text.home.identity.elite}</span>
-                ) : null}
-              </div>
-              {player.art === "premium" ? (
-                <PremiumShowcase level={tier.level} rating={player.rating} labels={text.ranks.showcase} size="md" />
-              ) : (
-                <FloatingEmblem
-                  src={rankArtAsset(tier.level, player.art).stillSrc}
-                  alt={interpolate(c.emblemAlt, { rank: tier.name })}
-                  size={112}
-                />
-              )}
+            <PlayerCard
+              name={player.displayName}
+              avatarUrl={player.avatarUrl}
+              rp={player.rating}
+              wins={player.wins}
+              losses={player.losses}
+              labels={cardLabels}
+              emblem={
+                player.art === "premium" ? undefined : (
+                  // eslint-disable-next-line @next/next/no-img-element
+                  <img src={rankArtAsset(tier.level, player.art).stillSrc} alt={interpolate(c.emblemAlt, { rank: tier.name })} width={72} height={72} />
+                )
+              }
+            />
+            <div className="ace-ops3d-tags">
+              {player.art === "premium" ? <span className="ace-premium-tag">{text.play.premium.tag}</span> : null}
+              {player.elite ? (
+                <span className="ace-ops3d-elite"><EliteSeal className="h-6 w-auto" /> {text.home.identity.elite}</span>
+              ) : null}
             </div>
-            <dl className="ace-ops3d-metrics">
-              <div><dt>{c.rp}</dt><dd>{player.rating.toLocaleString("en-US")}</dd></div>
-              <div><dt>{c.wins}</dt><dd>{player.wins}</dd></div>
-              <div><dt>{c.losses}</dt><dd>{player.losses}</dd></div>
-              <div><dt>{c.winRate}</dt><dd>{winRate}</dd></div>
-              <div><dt>{c.matches}</dt><dd>{matches}</dd></div>
-              <div><dt>{c.kd}</dt><dd>{na}</dd></div>
-            </dl>
-            <p className="ace-ops3d-note">{c.kdNote}</p>
-            <CalibrationTrack played={placement} />
+            {player.art === "premium" ? (
+              <div className="ace-ops3d-showcase">
+                <PremiumShowcase level={tier.level} rating={player.rating} labels={text.ranks.showcase} size="md" />
+              </div>
+            ) : null}
+                        <CalibrationTrack played={placement} />
             <Link className="ace-ops3d-cta" href="/dashboard">{c.openDeck}</Link>
           </>
         ) : (

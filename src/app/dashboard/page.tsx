@@ -17,7 +17,9 @@ import { canUsePremiumRankArt, effectiveRankArt, isPremiumPlan } from "@/server/
 import { PremiumProfileCard, premiumCardLabels } from "@/components/premium-profile-card";
 import { playerBadges } from "@/lib/badges";
 import { hasEliteSeal, telemetryUnlocked } from "@/lib/pricing";
-import { formatRankLabelWith } from "@/lib/ranks";
+import { formatRankLabelWith, rankArtAsset } from "@/lib/ranks";
+import { PlayerCard } from "@/components/player-card";
+import { interpolate } from "@/lib/i18n";
 import { rankLevelFromRp } from "@/lib/rank-progress";
 import { CompetitiveJourney } from "@/components/competitive-journey";
 import { getPrisma } from "@/server/db";
@@ -80,7 +82,26 @@ export default async function DashboardPage() {
               <span className="text-sm font-bold tracking-[0.22em] text-[#FFD700]">{copy.eliteBadge}</span>
             </div>
           ) : null}
-          <h2 className="text-xl font-semibold text-white">{user.displayName}</h2>
+          <h2 className="sr-only">{user.displayName}</h2>
+          <PlayerCard
+            name={user.displayName}
+            avatarUrl={user.avatarUrl || null}
+            rp={user.competitiveRating}
+            wins={user.wins}
+            losses={user.losses}
+            labels={{
+              rp: text.home.ops.rp,
+              matches: ui.r38.card.matches,
+              wl: ui.r38.card.wl,
+              noMatches: ui.r38.card.noMatches,
+              division: ui.r38.card.division,
+              avatarAlt: interpolate(text.home.ops.avatarAlt, { name: user.displayName }),
+            }}
+            emblem={
+              // eslint-disable-next-line @next/next/no-img-element
+              <img src={rankArtAsset(rankLevel, effectiveRankArt(user)).stillSrc} alt="" width={72} height={72} />
+            }
+          />
           <PlayerBadges
             badges={playerBadges({
               subscriptionTier: user.subscriptionTier,

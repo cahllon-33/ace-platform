@@ -67,6 +67,7 @@ async function LobbyHomeDynamic() {
 
       <LobbyOps
         text={text}
+        ui={ui}
         player={
           user
             ? {
