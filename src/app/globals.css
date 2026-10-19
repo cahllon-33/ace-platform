@@ -8025,7 +8025,7 @@ html[dir="rtl"] .ace-hub-card-face {
 .ace-mpreview-note { margin: 0; flex: 1 1 18rem; font-size: 0.82rem; line-height: 1.5; color: var(--ace-t-muted); }
 .ace-mpreview-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 20rem), 1fr)); gap: 0.8rem; margin-top: 0.9rem; }
 .ace-mpreview-card { border: 1px solid rgba(255,255,255,0.08); border-radius: 0.8rem; background: linear-gradient(180deg, var(--ace-t-panel-2), var(--ace-t-panel)); padding: 0.9rem 1rem; min-width: 0; }
-.ace-mpreview-card h3 { margin: 0 0 0.7rem; font-size: 0.85rem; font-weight: 800; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ace-t-text); }
+.ace-mpreview-card .ace-mpreview-h { margin: 0 0 0.7rem; font-size: 0.85rem; font-weight: 800; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ace-t-text); }
 .ace-mpreview-slots, .ace-mpreview-teams ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 0.35rem; }
 .ace-mpreview-slots li, .ace-mpreview-teams li { display: flex; align-items: center; gap: 0.5rem; padding: 0.4rem 0.6rem; border-radius: 0.5rem; background: rgba(0,0,0,0.3); font-family: var(--font-geist-mono), ui-monospace, monospace; font-size: 0.8rem; color: var(--ace-t-text); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .ace-mpreview-dot { width: 0.45rem; height: 0.45rem; border-radius: 999px; background: var(--ace-t-muted); flex: none; }
@@ -8081,3 +8081,6 @@ html[dir="rtl"] .ace-hub-card-face {
 .ace-chat-foot p { margin: 0.4rem 0 0; font-size: 0.7rem; line-height: 1.4; color: var(--ace-t-muted); }
 .ace-chat-escalate { background: none; border: 1px solid var(--ace-t-line); border-radius: 999px; color: var(--ace-t-gold-hi); font-size: 0.75rem; font-weight: 700; padding: 0.3rem 0.8rem; cursor: pointer; }
 .ace-chat-escalate:disabled { opacity: 0.5; cursor: not-allowed; }
+
+/* R38-M: keep the footer CTA below the fold while streamed page sections arrive (CLS) */
+#main-content { min-height: calc(100dvh - 4.25rem); }

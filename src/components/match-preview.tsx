@@ -16,9 +16,9 @@ export function MatchPreview({ ui }: { ui: Ui }) {
       </header>
       <div className="ace-mpreview-grid">
         <article className="ace-mpreview-card" aria-label={`${b.lobbyTitle} — ${b.previewTag}`}>
-          <h3>
+          <h2 className="ace-mpreview-h">
             {b.lobbyTitle} <span className="ace-mpreview-tag is-inline">{b.previewTag}</span>
-          </h3>
+          </h2>
           <ul className="ace-mpreview-slots">
             {NAMES.slice(0, 5).map((name) => (
               <li key={name}>
@@ -30,9 +30,9 @@ export function MatchPreview({ ui }: { ui: Ui }) {
           <p className="ace-mpreview-status">{b.waiting}</p>
         </article>
         <article className="ace-mpreview-card is-found" aria-label={`${b.matchFoundTitle} — ${b.previewTag}`}>
-          <h3>
+          <h2 className="ace-mpreview-h">
             {b.matchFoundTitle} <span className="ace-mpreview-tag is-inline">{b.previewTag}</span>
-          </h3>
+          </h2>
           <div className="ace-mpreview-teams">
             <ul>
               {NAMES.slice(0, 5).map((name) => (
