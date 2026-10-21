@@ -320,7 +320,7 @@ export const UI_SV: Ui = {
       "step2t": "Kalibrera",
       "step2b": "Du börjar på nivå 3 med 1 200 RP. Varje registrerad match ändrar dina RP enligt publicerade regler.",
       "step3t": "Klättra",
-      "step3b": "En vinst ger upp till +30 RP (+32 som bästa spelare); en förlust kostar upp till −23. Din rank följer alltid dina RP.",
+      "step3b": "En vinst ger upp till +30 RP (+32 som bästa spelare); en förlust kostar upp till −30. Din rank följer alltid dina RP.",
       "ranksTitle": "Tio ranker. En offentlig tabell.",
       "ranksBody": "Märkenas färger är fasta per nivå och din rank räknas alltid från dina sparade RP.",
       "ranksCta": "Se alla ranker",

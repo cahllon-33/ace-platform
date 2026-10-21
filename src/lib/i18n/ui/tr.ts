@@ -320,7 +320,7 @@ export const UI_TR: Ui = {
       "step2t": "Kalibre ol",
       "step2b": "3. kademeden 1.200 RP ile başlarsın. Kaydedilen her maç RP'ni yayımlanmış kurallara göre değiştirir.",
       "step3t": "Yüksel",
-      "step3b": "Galibiyet +20 RP'ye kadar (en iyi oyuncuya +32), mağlubiyet −30'e kadar. Rütben her zaman RP'ni izler.",
+      "step3b": "Galibiyet +30 RP'ye kadar (en iyi oyuncuya +32), mağlubiyet −30'e kadar. Rütben her zaman RP'ni izler.",
       "ranksTitle": "On rütbe. Tek bir açık tablo.",
       "ranksBody": "Rozet renkleri her kademe için sabittir ve rütben her zaman kayıtlı RP'nden hesaplanır.",
       "ranksCta": "Tüm rütbeler",

@@ -320,7 +320,7 @@ export const UI_RO: Ui = {
       "step2t": "Calibrează",
       "step2b": "Începi la nivelul 3 cu 1.200 RP. Fiecare meci înregistrat îți modifică RP după reguli publicate.",
       "step3t": "Urcă",
-      "step3b": "O victorie aduce până la +30 RP (+32 pentru cel mai bun jucător); o înfrângere costă până la −23. Rangul urmează mereu RP.",
+      "step3b": "O victorie aduce până la +30 RP (+32 pentru cel mai bun jucător); o înfrângere costă până la −30. Rangul urmează mereu RP.",
       "ranksTitle": "Zece ranguri. Un tabel public.",
       "ranksBody": "Culorile insignelor sunt fixe pe nivel, iar rangul tău se calculează mereu din RP-ul stocat.",
       "ranksCta": "Vezi toate rangurile",

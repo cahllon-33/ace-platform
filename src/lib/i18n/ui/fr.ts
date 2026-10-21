@@ -320,7 +320,7 @@ export const UI_FR: Ui = {
       "step2t": "Calibrez",
       "step2b": "Vous commencez au palier 3 avec 1 200 RP. Chaque match enregistré modifie vos RP selon des règles publiées.",
       "step3t": "Montez",
-      "step3b": "Une victoire rapporte jusqu'à +30 RP (+32 en meilleur fragger) ; une défaite coûte jusqu'à −23. Votre rang suit toujours vos RP.",
+      "step3b": "Une victoire rapporte jusqu'à +30 RP (+32 en meilleur fragger) ; une défaite coûte jusqu'à −30. Votre rang suit toujours vos RP.",
       "ranksTitle": "Dix rangs. Un tableau public.",
       "ranksBody": "Les couleurs des badges sont fixes par palier, et votre rang est toujours calculé à partir de vos RP enregistrés.",
       "ranksCta": "Voir tous les rangs",

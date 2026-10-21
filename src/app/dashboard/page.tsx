@@ -101,7 +101,7 @@ export default async function DashboardPage() {
             <p className="d40-lede">{copy.lede}</p>
           </div>
         </div>
-        <span className="d40-hero-emblem"><RankOrb level={rankLevel} art={effectiveRankArt(user)} size={120} label={d.statRank} priority prestige={prestigeBadge(user.competitiveRating, user.subscriptionTier)} />{(() => { const pr = prestigeForRp(user.competitiveRating); return pr && !prestigeSetFor(user.subscriptionTier) ? <span className="pr41-milestone">{interpolate(ui.r41c.pr.milestone, { n: pr.level })} · {pr.name}</span> : null; })()}</span>
+        <span className="d40-hero-emblem"><RankOrb level={rankLevel} art={effectiveRankArt(user)} size={120} label={d.statRank} priority prestige={prestigeBadge(user.competitiveRating, user.subscriptionTier)} />{(() => { const pr = prestigeForRp(user.competitiveRating); if (!pr) return null; return <span className="pr41-milestone">{prestigeSetFor(user.subscriptionTier) ? interpolate(ui.r41c.pr.level, { n: pr.level, name: pr.name }) : `${interpolate(ui.r41c.pr.milestone, { n: pr.level })} · ${pr.name}`}</span>; })()}</span>
       </section>
 
       <nav className="d40-quick" aria-label={d.quick}>

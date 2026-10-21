@@ -320,7 +320,7 @@ export const UI_HR: Ui = {
       "step2t": "Kalibracija",
       "step2b": "Počinješ na razini 3 s 1.200 RP. Svaki zabilježeni meč mijenja RP prema objavljenim pravilima.",
       "step3t": "Uspon",
-      "step3b": "Pobjeda donosi do +30 RP (+32 najboljem igraču), poraz košta do −23. Rang uvijek prati RP.",
+      "step3b": "Pobjeda donosi do +30 RP (+32 najboljem igraču), poraz košta do −30. Rang uvijek prati RP.",
       "ranksTitle": "Deset rangova. Jedna javna tablica.",
       "ranksBody": "Boje značaka fiksne su po razini, a rang se uvijek računa iz spremljenih RP.",
       "ranksCta": "Pogledaj sve rangove",

@@ -1,11 +1,14 @@
 "use client";
 
-import { EliteSeal } from "@/components/elite-seal";
+import "./plan-cards.css";
+import { RankOrb } from "@/components/rank-orb";
+import { PrestigeEmblem } from "@/components/prestige-emblem";
+import { PRESTIGE_LEVELS } from "@/lib/prestige";
+import { RANK_TIERS } from "@/lib/ranks";
+
 import { FreeAccessPill } from "@/components/free-access-pill";
-import { ComingSoonPlate } from "@/components/coming-soon-plate";
 import { useText } from "@/components/text-provider";
 import { useUi } from "@/components/use-ui";
-import { Badge } from "@/components/ui/badge";
 import { interpolate } from "@/lib/interpolate";
 import { FREE_PRICE, PLUS_PRICE, PREMIUM_PRICE } from "@/lib/pricing";
 
@@ -15,63 +18,52 @@ const TIERS = [
   { id: "premium", price: PREMIUM_PRICE, monthly: true, highlight: true },
 ] as const;
 
+/**
+ * R41b plan cards, shared by the home page and /pricing. Price, perks, the badge preview for that plan
+ * and an honest CTA (checkout is not live: paid plans say so). Premium = refined gold, Plus = platinum.
+ * Paid plans are cosmetic/convenience only; the no-pay-to-win line is part of every paid card.
+ */
 export function PlanCards({ headingLevel = 2 }: { headingLevel?: 2 | 3 }) {
   const all = useText();
-  const pr = useUi().r41c.pr;
   const text = all.pricing;
+  const pr = useUi().r41c.pr;
   const soon = text.compare.cells.notConnected;
   const Heading = headingLevel === 2 ? "h2" : "h3";
+  const legend = RANK_TIERS[9];
+  const top = PRESTIGE_LEVELS[4];
+  const first = PRESTIGE_LEVELS[0];
 
   return (
-    <ul className="mt-8 grid gap-5 lg:grid-cols-3">
+    <ul className="pc41">
       {TIERS.map((tier) => {
         const copy = text.tiers[tier.id];
         return (
-          <li
-            key={tier.id}
-            className={`ace-card-hover flex flex-col rounded-3xl p-8 ${
-              tier.highlight ? "ace-plan-premium" : tier.id === "plus" ? "ace-plan-plus" : "ace-plan-free"
-            }`}
-          >
-            {tier.id !== "free" ? (
-              <>
-                <EliteSeal floating />
-                <p className="mb-4 text-[0.65rem] font-bold tracking-[0.22em] text-[#FFD76A]">
-                  {text.card.elite}
-                </p>
-              </>
-            ) : null}
-            <div className="flex items-center justify-between gap-3">
-              <Heading className="text-2xl font-semibold text-white">{copy.name}</Heading>
-              <Badge tone={tier.highlight ? "gold" : "muted"}>{copy.note}</Badge>
+          <li key={tier.id} className={`pc41-card is-${tier.id}`}>
+            {tier.highlight ? <span className="pc41-flag">{copy.note}</span> : null}
+            <div className="pc41-badge" aria-hidden="true">
+              {tier.id === "free" ? (
+                <RankOrb level={10} size={104} label={legend.name} />
+              ) : (
+                <PrestigeEmblem badge={{ ...(tier.id === "premium" ? top : first), set: tier.id }} size={120} label={pr.title} />
+              )}
             </div>
-            <p className="gold-text mt-6 text-5xl font-semibold">
+            <Heading className="pc41-name">{copy.name}</Heading>
+            <p className="pc41-title">{copy.title}</p>
+            <p className="pc41-price">
               {tier.price}
-              {tier.monthly ? (
-                <span className="ms-1 text-base font-medium text-ace-muted">{text.period.monthly}</span>
-              ) : null}
+              {tier.monthly ? <span>{text.period.monthly}</span> : null}
             </p>
-            <p className="mt-4 text-sm font-semibold tracking-wide text-[#FFD76A]">{copy.title}</p>
-            <ul className="mt-6 flex flex-1 flex-col gap-3 text-sm leading-6">
-              {copy.points.map((point) => (
-                <li key={point} className="flex gap-3 text-[#C8C4B8]">
-                  <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-ace-gold" />
-                  {point}
-                </li>
-              ))}
+            <ul className="pc41-perks">
+              {copy.points.map((point) => <li key={point}>{point}</li>)}
               {tier.id !== "free" ? (
-                <li className="flex gap-3 text-[#C8C4B8]">
-                  <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-ace-gold" />
-                  <span>{pr.perk} · <a href="/badges" className="text-[#FFD76A] underline-offset-2 hover:underline">{tier.id === "premium" ? pr.premium : pr.plus}</a></span>
+                <li className="is-prestige">
+                  {pr.perk} · <a href="/badges">{tier.id === "premium" ? pr.premium : pr.plus}</a>
                 </li>
-              ) : null}
+              ) : (
+                <li className="is-prestige">{legend.name} · <a href="/badges">{pr.open}</a></li>
+              )}
             </ul>
-            {tier.id !== "free" ? (
-              <div className="mt-6 border-t border-[#FFD76A]/20 pt-4">
-                <ComingSoonPlate label={soon} size="md" />
-              </div>
-            ) : null}
-            <div className="mt-8">
+            <div className="pc41-cta">
               {tier.id === "free" ? (
                 <FreeAccessPill label={text.card.stayFree} note={text.card.freeNote} />
               ) : (
@@ -79,7 +71,7 @@ export function PlanCards({ headingLevel = 2 }: { headingLevel?: 2 | 3 }) {
                   type="button"
                   disabled
                   aria-disabled="true"
-                  className="ace-soon-button"
+                  className="pc41-btn"
                   aria-label={`${interpolate(text.card.chooseAria, { plan: copy.name, price: tier.price })} · ${soon}`}
                 >
                   {soon}

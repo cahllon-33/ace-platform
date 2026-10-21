@@ -261,7 +261,7 @@ export const UI_EN = {
       "step2t": "Calibrate",
       "step2b": "You start at tier 3 with 1,200 RP. Every recorded match moves your RP by published rules.",
       "step3t": "Climb",
-      "step3b": "A win gives up to +30 RP (+32 as top fragger); a loss costs up to −23. Your rank always follows your RP.",
+      "step3b": "A win gives up to +30 RP (+32 as top fragger); a loss costs up to −30. Your rank always follows your RP.",
       "ranksTitle": "Ten ranks. One public table.",
       "ranksBody": "Badge colors are fixed per tier, and your rank is always calculated from your stored RP.",
       "ranksCta": "See every rank",

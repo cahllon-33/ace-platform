@@ -320,7 +320,7 @@ export const UI_PT: Ui = {
       "step2t": "Calibra",
       "step2b": "Começas no nível 3 com 1.200 RP. Cada partida registada altera os teus RP segundo regras publicadas.",
       "step3t": "Sobe",
-      "step3b": "Uma vitória dá até +30 RP (+32 como melhor jogador); uma derrota custa até −23. A tua patente segue sempre os teus RP.",
+      "step3b": "Uma vitória dá até +30 RP (+32 como melhor jogador); uma derrota custa até −30. A tua patente segue sempre os teus RP.",
       "ranksTitle": "Dez patentes. Uma tabela pública.",
       "ranksBody": "As cores dos emblemas são fixas por nível e a tua patente é sempre calculada a partir dos RP guardados.",
       "ranksCta": "Ver todas as patentes",

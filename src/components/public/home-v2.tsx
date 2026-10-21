@@ -1,10 +1,10 @@
 import Link from "next/link";
 import { RankOrb } from "@/components/rank-orb";
+import { PlanCards } from "@/components/plan-cards";
 import "./home-v2.css";
 import type { ReactNode } from "react";
 import type { Ui } from "@/lib/i18n/ui";
 import { RANK_TIERS, rankEmblemAsset } from "@/lib/ranks";
-import { FREE_PRICE, PLUS_PRICE, PREMIUM_PRICE } from "@/lib/pricing";
 
 /**
  * R39 home: one strong hero (display type, two CTAs, four honest facts), then short, clearly separated
@@ -106,11 +106,6 @@ export function HomeRanksV2({ ui }: { ui: Ui }) {
 
 export function HomePlansV2({ ui }: { ui: Ui }) {
   const h = ui.r39.home;
-  const plans = [
-    { name: h.free, price: FREE_PRICE, period: "" },
-    { name: "A.C.E. Plus", price: PLUS_PRICE, period: h.perMonth },
-    { name: "A.C.E. Premium", price: PREMIUM_PRICE, period: h.perMonth },
-  ];
   return (
     <section className="h39-section" aria-labelledby="h39-plans">
       <div className="h39-split">
@@ -120,17 +115,7 @@ export function HomePlansV2({ ui }: { ui: Ui }) {
         </div>
         <Link href="/pricing" className="h39-link">{h.plansCta} →</Link>
       </div>
-      <ul className="h39-plans">
-        {plans.map((p, i) => (
-          <li key={p.name} className={i === 2 ? "is-top" : undefined}>
-            <span className="h39-plan-name">{p.name}</span>
-            <span className="h39-plan-price">
-              {p.price}
-              <small>{p.period}</small>
-            </span>
-          </li>
-        ))}
-      </ul>
+      <PlanCards headingLevel={3} />
     </section>
   );
 }

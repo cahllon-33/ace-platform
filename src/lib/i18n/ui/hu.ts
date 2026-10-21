@@ -320,7 +320,7 @@ export const UI_HU: Ui = {
       "step2t": "Kalibrálás",
       "step2b": "A 3. szinten kezdesz 1200 RP-vel. Minden rögzített meccs a közzétett szabályok szerint változtatja az RP-det.",
       "step3t": "Emelkedés",
-      "step3b": "Egy győzelem akár +30 RP (+32 a legjobb játékosnak), egy vereség akár −23. A rangod mindig az RP-det követi.",
+      "step3b": "Egy győzelem akár +30 RP (+32 a legjobb játékosnak), egy vereség akár −30. A rangod mindig az RP-det követi.",
       "ranksTitle": "Tíz rang. Egy nyilvános táblázat.",
       "ranksBody": "A jelvények színe szintenként rögzített, és a rangod mindig a tárolt RP-ből számolódik.",
       "ranksCta": "Összes rang",

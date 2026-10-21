@@ -320,7 +320,7 @@ export const UI_ID: Ui = {
       "step2t": "Kalibrasi",
       "step2b": "Anda mulai di tingkat 3 dengan 1.200 RP. Setiap pertandingan tercatat mengubah RP sesuai aturan yang dipublikasikan.",
       "step3t": "Naik",
-      "step3b": "Kemenangan memberi hingga +30 RP (+32 untuk pemain terbaik); kekalahan hingga −23. Peringkat selalu mengikuti RP.",
+      "step3b": "Kemenangan memberi hingga +30 RP (+32 untuk pemain terbaik); kekalahan hingga −30. Peringkat selalu mengikuti RP.",
       "ranksTitle": "Sepuluh peringkat. Satu tabel publik.",
       "ranksBody": "Warna lencana tetap per tingkat, dan peringkat Anda selalu dihitung dari RP yang tersimpan.",
       "ranksCta": "Lihat semua peringkat",

@@ -320,7 +320,7 @@ export const UI_DE: Ui = {
       "step2t": "Kalibrieren",
       "step2b": "Du startest auf Stufe 3 mit 1.200 RP. Jedes erfasste Match verändert deine RP nach veröffentlichten Regeln.",
       "step3t": "Aufsteigen",
-      "step3b": "Ein Sieg bringt bis zu +30 RP (+32 als Top-Fragger), eine Niederlage kostet bis zu −23. Dein Rang folgt immer deinen RP.",
+      "step3b": "Ein Sieg bringt bis zu +30 RP (+32 als Top-Fragger), eine Niederlage kostet bis zu −30. Dein Rang folgt immer deinen RP.",
       "ranksTitle": "Zehn Ränge. Eine öffentliche Tabelle.",
       "ranksBody": "Abzeichenfarben sind pro Stufe fest, und dein Rang wird immer aus deinen gespeicherten RP berechnet.",
       "ranksCta": "Alle Ränge ansehen",

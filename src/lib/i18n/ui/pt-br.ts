@@ -320,7 +320,7 @@ export const UI_PT_BR: Ui = {
       "step2t": "Calibre",
       "step2b": "Você começa no nível 3 com 1.200 RP. Cada partida registrada muda seus RP por regras publicadas.",
       "step3t": "Suba",
-      "step3b": "Uma vitória dá até +30 RP (+32 como melhor jogador); uma derrota custa até −23. Seu rank sempre segue seus RP.",
+      "step3b": "Uma vitória dá até +30 RP (+32 como melhor jogador); uma derrota custa até −30. Seu rank sempre segue seus RP.",
       "ranksTitle": "Dez ranks. Uma tabela pública.",
       "ranksBody": "As cores dos emblemas são fixas por nível e seu rank é sempre calculado a partir dos RP salvos.",
       "ranksCta": "Ver todos os ranks",

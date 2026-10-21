@@ -40,7 +40,7 @@ export default async function BadgesPage() {
           <ul className="pr41-grid">
             {PRESTIGE_LEVELS.map((p) => (
               <li key={p.level}>
-                <RankOrb level={10} art="standard" size={128} label={interpolate(pr.level, { n: p.level, name: p.name })} prestige={{ level: p.level, set, name: p.name }} />
+                <RankOrb level={10} art="standard" size={128} label={interpolate(pr.level, { n: p.level, name: p.name })} prestige={{ level: p.level, set, name: p.name, slug: p.slug }} />
                 <strong>{interpolate(pr.level, { n: p.level, name: p.name })}</strong>
                 <span className="in41-muted">{interpolate(pr.from, { rp: p.minRp.toLocaleString("en-US") })}</span>
               </li>

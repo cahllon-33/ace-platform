@@ -320,7 +320,7 @@ export const UI_PL: Ui = {
       "step2t": "Kalibracja",
       "step2b": "Zaczynasz na poziomie 3 z 1200 RP. Każdy zapisany mecz zmienia RP według opublikowanych zasad.",
       "step3t": "Awans",
-      "step3b": "Wygrana daje do +30 RP (+32 dla najlepszego gracza), porażka kosztuje do −23. Ranga zawsze wynika z RP.",
+      "step3b": "Wygrana daje do +30 RP (+32 dla najlepszego gracza), porażka kosztuje do −30. Ranga zawsze wynika z RP.",
       "ranksTitle": "Dziesięć rang. Jedna publiczna tabela.",
       "ranksBody": "Kolory odznak są stałe dla poziomów, a ranga zawsze liczona jest z zapisanych RP.",
       "ranksCta": "Zobacz wszystkie rangi",

@@ -320,7 +320,7 @@ export const UI_CS: Ui = {
       "step2t": "Kalibrace",
       "step2b": "Začínáš na úrovni 3 s 1 200 RP. Každý zaznamenaný zápas mění RP podle zveřejněných pravidel.",
       "step3t": "Postup",
-      "step3b": "Výhra dá až +30 RP (+32 nejlepšímu hráči), prohra stojí až −23. Hodnost vždy odpovídá RP.",
+      "step3b": "Výhra dá až +30 RP (+32 nejlepšímu hráči), prohra stojí až −30. Hodnost vždy odpovídá RP.",
       "ranksTitle": "Deset hodností. Jedna veřejná tabulka.",
       "ranksBody": "Barvy odznaků jsou pro každou úroveň pevné a hodnost se vždy počítá z uložených RP.",
       "ranksCta": "Zobrazit všechny hodnosti",

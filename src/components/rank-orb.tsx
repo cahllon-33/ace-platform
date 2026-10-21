@@ -1,5 +1,7 @@
 import { rankArtAsset, RANK_TIERS, type RankArt } from "@/lib/ranks";
 import "./rank-orb.css";
+import { PrestigeEmblem } from "@/components/prestige-emblem";
+import type { PrestigeBadge } from "@/lib/prestige";
 
 /** Fixed tier colors (same values as the public .ace-rank-tone-N palette). Never user-editable. */
 const TIER_TONE: Record<number, string> = {
@@ -21,17 +23,18 @@ const TIER_TONE: Record<number, string> = {
  * a travelling glint, and a soft particle halo. Premium adds a gold crown, a gold ring and a shimmer sweep.
  * `size` is in px; below 64px the decorative layers are reduced so table badges stay crisp and cheap.
  */
-export function RankOrb({ level, art = "standard", size, label, priority = false, prestige = null }: { level: number; art?: RankArt; size: number; label: string; priority?: boolean; prestige?: { level: number; set: "plus" | "premium"; name: string } | null }) {
+export function RankOrb({ level, art = "standard", size, label, priority = false, prestige = null }: { level: number; art?: RankArt; size: number; label: string; priority?: boolean; prestige?: PrestigeBadge | null }) {
+  if (prestige) return <PrestigeEmblem badge={prestige} size={size} label={label} priority={priority} />;
   const tier = RANK_TIERS[Math.min(10, Math.max(1, Math.round(level))) - 1];
   const asset = rankArtAsset(tier.level, art);
   const premium = art === "premium";
   const scale = size >= 120 ? "is-lg" : size >= 64 ? "is-md" : "is-sm";
   return (
     <span
-      className={`rorb ${scale}${premium ? " is-premium" : ""}${prestige ? ` is-prestige is-pr-${prestige.set}` : ""}`}
+      className={`rorb ${scale}${premium ? " is-premium" : ""}`}
       style={{ ["--rorb-size" as string]: `${size}px`, ["--rorb-tone" as string]: TIER_TONE[tier.level] }}
       role="img"
-      aria-label={`${label}: ${tier.name}${premium ? " (Premium)" : ""}${prestige ? ` · ${prestige.name}` : ""}`}
+      aria-label={`${label}: ${tier.name}${premium ? " (Premium)" : ""}`}
       data-tier={tier.level}
     >
       <span className="rorb-halo" aria-hidden="true" />
@@ -78,36 +81,8 @@ export function RankOrb({ level, art = "standard", size, label, priority = false
           <circle cx="32" cy="26" r="3.2" fill="var(--rorb-tone)" stroke="#fff3b0" strokeWidth="0.8" />
         </svg>
       ) : null}
-      {prestige ? <PrestigeLayer level={prestige.level} set={prestige.set} small={size < 64} /> : null}
       <span className="rorb-floor" aria-hidden="true" />
     </span>
   );
 }
 
-/**
- * Prestige bezel (original A.C.E. art): a fine engraved ring like a watch bezel, with five markers
- * lit up to the prestige level. Same shape for Plus (platinum) and Premium (gold); only the finish differs.
- */
-function PrestigeLayer({ level, set, small }: { level: number; set: "plus" | "premium"; small: boolean }) {
-  // Watch-bezel style: 60 fine engraved ticks, 5 hour markers; markers lit up to the prestige level.
-  const ticks = Array.from({ length: 60 }, (_, i) => i);
-  return (
-    <>
-      <span className="rorb-aureole" aria-hidden="true" data-set={set}>
-        <svg viewBox="-50 -50 100 100">
-          <circle r="47.5" className="bezel" />
-          <circle r="41" className="bezel in" />
-          {ticks.map((i) => (
-            <line key={i} x1="0" y1={i % 12 === 0 ? -46.5 : -46} x2="0" y2={i % 12 === 0 ? -41.5 : -44} transform={`rotate(${i * 6})`}
-              className={i % 12 === 0 ? (i / 12 < level ? "mk on" : "mk") : "tk"} />
-          ))}
-        </svg>
-      </span>
-      {small ? null : (
-        <span className="rorb-pips" aria-hidden="true">
-          {Array.from({ length: 5 }, (_, i) => <i key={i} className={i < level ? "on" : ""} />)}
-        </span>
-      )}
-    </>
-  );
-}

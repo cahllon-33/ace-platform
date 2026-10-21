@@ -1,0 +1,27 @@
+/* R41b plan cards. Mobile: stacked. ≥960px: three columns, Premium highlighted. */
+.pc41 { list-style: none; margin: 2rem 0 0; padding: 0; display: grid; gap: 1.25rem; }
+@media (min-width: 960px) { .pc41 { grid-template-columns: repeat(3, minmax(0, 1fr)); align-items: stretch; } }
+.pc41-card { position: relative; display: flex; flex-direction: column; gap: .35rem; padding: 1.6rem 1.5rem 1.5rem; border-radius: 1.4rem; min-width: 0;
+  background: linear-gradient(180deg, #15161b, #0d0e12); border: 1px solid rgba(169, 171, 179, 0.22); box-shadow: 0 30px 60px -40px rgba(0, 0, 0, .9); }
+.pc41-card.is-plus { border-color: rgba(214, 222, 232, 0.42); background: radial-gradient(120% 60% at 50% 0%, rgba(210, 222, 236, 0.10), transparent 60%), linear-gradient(180deg, #16181d, #0d0e12); }
+.pc41-card.is-premium { border-color: rgba(227, 185, 85, 0.75); background: radial-gradient(120% 60% at 50% 0%, rgba(227, 185, 85, 0.16), transparent 62%), linear-gradient(180deg, #17150f, #0d0d0f);
+  box-shadow: 0 0 0 1px rgba(227, 185, 85, 0.18), 0 0 46px -10px rgba(227, 185, 85, 0.35), 0 30px 60px -40px rgba(0, 0, 0, .9); }
+.pc41-flag { position: absolute; top: -0.7rem; inset-inline-start: 50%; transform: translateX(-50%); padding: .25rem .8rem; border-radius: 999px; font-size: .68rem; font-weight: 800; letter-spacing: .16em; text-transform: uppercase; color: #0b0b0c; background: linear-gradient(180deg, #f3dc9a, #c9a043); white-space: nowrap; }
+html[dir="rtl"] .pc41-flag { transform: translateX(50%); }
+.pc41-badge { display: grid; place-items: center; height: 8.5rem; margin-bottom: .4rem; }
+.pc41-name { margin: 0; font-size: 1.05rem; font-weight: 800; letter-spacing: .14em; color: #f4f1ea; text-align: center; }
+.pc41-title { margin: 0; text-align: center; font-size: .85rem; color: #a6a7ac; }
+.pc41-card.is-plus .pc41-name { color: #e3e8ee; } .pc41-card.is-premium .pc41-name { color: #f3dc9a; }
+.pc41-price { margin: .7rem 0 .4rem; text-align: center; font-size: 2.6rem; font-weight: 700; line-height: 1; color: #f4f1ea; font-variant-numeric: tabular-nums; }
+.pc41-card.is-premium .pc41-price { background: linear-gradient(180deg, #fff1c4, #d4a93c); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.pc41-price span { margin-inline-start: .25rem; font-size: .9rem; font-weight: 500; color: #a6a7ac; -webkit-text-fill-color: #a6a7ac; }
+.pc41-perks { list-style: none; margin: .8rem 0 0; padding: .9rem 0 0; border-top: 1px solid rgba(255, 255, 255, .07); display: grid; gap: .6rem; flex: 1; align-content: start; font-size: .86rem; line-height: 1.55; color: #c8c4b8; }
+.pc41-perks li { position: relative; padding-inline-start: 1.15rem; }
+.pc41-perks li::before { content: ""; position: absolute; inset-inline-start: 0; top: .55em; width: .42rem; height: .42rem; border-radius: 50%; background: #8d99a6; }
+.pc41-card.is-plus .pc41-perks li::before { background: #d6dee8; } .pc41-card.is-premium .pc41-perks li::before { background: #e3b955; }
+.pc41-perks li.is-prestige { color: #ece7da; font-weight: 600; }
+.pc41-perks a { color: #ffd76a; text-decoration: none; } .pc41-perks a:hover { text-decoration: underline; }
+.pc41-cta { margin-top: 1.2rem; }
+.pc41-btn { width: 100%; min-height: 2.9rem; border-radius: .85rem; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; font-size: .78rem; cursor: not-allowed;
+  border: 1px solid rgba(214, 222, 232, .45); background: rgba(214, 222, 232, .06); color: #e3e8ee; }
+.pc41-card.is-premium .pc41-btn { border-color: rgba(227, 185, 85, .8); background: linear-gradient(180deg, rgba(243, 220, 154, .16), rgba(201, 160, 67, .08)); color: #f3dc9a; }

@@ -5,14 +5,14 @@
  * Names are original A.C.E. names (not taken from any other platform) and are not rank names.
  */
 export type PrestigeSet = "plus" | "premium";
-export type PrestigeLevel = { level: 1 | 2 | 3 | 4 | 5; name: string; minRp: number };
+export type PrestigeLevel = { level: 1 | 2 | 3 | 4 | 5; name: string; slug: string; minRp: number };
 
 export const PRESTIGE_LEVELS: readonly PrestigeLevel[] = [
-  { level: 1, name: "Gilded", minRp: 2000 },
-  { level: 2, name: "Radiant", minRp: 2200 },
-  { level: 3, name: "Exalted", minRp: 2400 },
-  { level: 4, name: "Mythic", minRp: 2600 },
-  { level: 5, name: "Eternal", minRp: 2800 },
+  { level: 1, name: "A.C.E. Transcendent", slug: "transcendent", minRp: 2000 },
+  { level: 2, name: "A.C.E. Apex Tyrant", slug: "apex-tyrant", minRp: 2200 },
+  { level: 3, name: "A.C.E. Cosmic Titan", slug: "cosmic-titan", minRp: 2400 },
+  { level: 4, name: "A.C.E. Supernova", slug: "supernova", minRp: 2600 },
+  { level: 5, name: "A.C.E. Overlord", slug: "overlord", minRp: 2800 },
 ] as const;
 
 export const PRESTIGE_MIN_RP = PRESTIGE_LEVELS[0].minRp;
@@ -31,8 +31,9 @@ export function prestigeSetFor(plan: string | null | undefined): PrestigeSet | n
 }
 
 /** The prestige layer to render on a RankOrb, or null. */
-export function prestigeBadge(rp: number, plan: string | null | undefined): { level: number; set: PrestigeSet; name: string } | null {
+export type PrestigeBadge = { level: number; set: PrestigeSet; name: string; slug: string };
+export function prestigeBadge(rp: number, plan: string | null | undefined): PrestigeBadge | null {
   const p = prestigeForRp(rp);
   const set = prestigeSetFor(plan);
-  return p && set ? { level: p.level, set, name: p.name } : null;
+  return p && set ? { level: p.level, set, name: p.name, slug: p.slug } : null;
 }

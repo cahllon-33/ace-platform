@@ -320,7 +320,7 @@ export const UI_FI: Ui = {
       "step2t": "Kalibroi",
       "step2b": "Aloitat tasolta 3 1 200 RP:llä. Jokainen tallennettu ottelu muuttaa RP:täsi julkaistujen sääntöjen mukaan.",
       "step3t": "Nouse",
-      "step3b": "Voitto antaa jopa +30 RP (+32 parhaalle pelaajalle), tappio maksaa jopa −23. Rankisi seuraa aina RP:täsi.",
+      "step3b": "Voitto antaa jopa +30 RP (+32 parhaalle pelaajalle), tappio maksaa jopa −30. Rankisi seuraa aina RP:täsi.",
       "ranksTitle": "Kymmenen rankia. Yksi julkinen taulukko.",
       "ranksBody": "Merkkien värit ovat kiinteät tasoittain, ja rankisi lasketaan aina tallennetusta RP:stä.",
       "ranksCta": "Katso kaikki rankit",
