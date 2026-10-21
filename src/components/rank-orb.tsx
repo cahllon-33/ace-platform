@@ -85,27 +85,27 @@ export function RankOrb({ level, art = "standard", size, label, priority = false
 }
 
 /**
- * Prestige aureole (original A.C.E. art): a faceted rotating halo of 12 blades behind the orb and
- * one star pip per prestige level on an arc below it. Plus = platinum, Premium = gold with a sweep.
+ * Prestige bezel (original A.C.E. art): a fine engraved ring like a watch bezel, with five markers
+ * lit up to the prestige level. Same shape for Plus (platinum) and Premium (gold); only the finish differs.
  */
 function PrestigeLayer({ level, set, small }: { level: number; set: "plus" | "premium"; small: boolean }) {
-  const blades = Array.from({ length: 12 }, (_, i) => i * 30);
-  const pips = Array.from({ length: level }, (_, i) => i);
+  // Watch-bezel style: 60 fine engraved ticks, 5 hour markers; markers lit up to the prestige level.
+  const ticks = Array.from({ length: 60 }, (_, i) => i);
   return (
     <>
-      <span className="rorb-aureole" aria-hidden="true">
+      <span className="rorb-aureole" aria-hidden="true" data-set={set}>
         <svg viewBox="-50 -50 100 100">
-          {blades.map((a) => (
-            <path key={a} d="M0 -49 L2.6 -41 L0 -37 L-2.6 -41 Z" transform={`rotate(${a})`} className={a % 60 ? "b2" : "b1"} />
+          <circle r="47.5" className="bezel" />
+          <circle r="41" className="bezel in" />
+          {ticks.map((i) => (
+            <line key={i} x1="0" y1={i % 12 === 0 ? -46.5 : -46} x2="0" y2={i % 12 === 0 ? -41.5 : -44} transform={`rotate(${i * 6})`}
+              className={i % 12 === 0 ? (i / 12 < level ? "mk on" : "mk") : "tk"} />
           ))}
-          <circle r="36" className="ring" />
         </svg>
       </span>
       {small ? null : (
-        <span className="rorb-pips" aria-hidden="true" data-set={set}>
-          {pips.map((i) => (
-            <svg key={i} viewBox="0 0 20 20"><path d="M10 1 L12.6 7.4 L19 10 L12.6 12.6 L10 19 L7.4 12.6 L1 10 L7.4 7.4 Z" /></svg>
-          ))}
+        <span className="rorb-pips" aria-hidden="true">
+          {Array.from({ length: 5 }, (_, i) => <i key={i} className={i < level ? "on" : ""} />)}
         </span>
       )}
     </>
