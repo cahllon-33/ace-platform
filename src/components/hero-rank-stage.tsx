@@ -45,13 +45,16 @@ export function HeroRankStage({ player, ui }: { player: HeroRankPlayer; ui: Ui }
       <div className="hrs-stage" aria-hidden="true">
         <span className="hrs-aura" />
         <span className="hrs-field">{Array.from({ length: 14 }, (_, i) => <i key={i} />)}</span>
-        <span className="hrs-tilt">
-          <span className="hrs-orbit is-a"><b className="hrs-sat" /><b className="hrs-sat is-2" /></span>
-          <span className="hrs-orbit is-b"><b className="hrs-sat" /></span>
-          <span className="hrs-orbit is-c"><b className="hrs-sat" /><b className="hrs-sat is-3" /></span>
+        <span className="hrs-rings is-back">
+          <span className="hrs-orbit is-a"><span className="hrs-path"><b className="hrs-sat" /><b className="hrs-sat is-2" /></span></span>
+          <span className="hrs-orbit is-b"><span className="hrs-path"><b className="hrs-sat is-3" /></span></span>
         </span>
         <span className="hrs-spin">
           <RankOrb level={prog.tier.level} art={player.art} size={240} label={t.kicker} priority prestige={badge} />
+        </span>
+        <span className="hrs-rings is-front">
+          <span className="hrs-orbit is-a"><span className="hrs-path"><b className="hrs-sat" /><b className="hrs-sat is-2" /></span></span>
+          <span className="hrs-orbit is-b"><span className="hrs-path"><b className="hrs-sat is-3" /></span></span>
         </span>
         <span className="hrs-plinth" />
       </div>
