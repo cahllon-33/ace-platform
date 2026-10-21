@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-import { getAppBaseUrl } from "@/server/env";
+import { postLoginOrigin } from "@/server/post-login";
 import { attachSessionCookie, persistSession } from "@/server/session";
 import { lookupSteamPersona, readLoginDestination, SteamAuthError, verifySteamCallback } from "@/server/steam-openid";
 import { upsertSteamUser } from "@/server/users";
@@ -25,7 +25,8 @@ export async function GET(request: Request) {
     const session = await persistSession(user.id);
     const destination = readLoginDestination(url.searchParams.get("state") ?? "");
     const path = destination === "squad" ? "/teams?from=premium" : "/dashboard";
-    const response = NextResponse.redirect(new URL(path, getAppBaseUrl()));
+    const response = NextResponse.redirect(new URL(path, postLoginOrigin(request)));
+    response.headers.set("Cache-Control", "no-store");
     return attachSessionCookie(response, session.token, session.expiresAt);
   } catch (error) {
     const reason = error instanceof SteamAuthError ? error.code : "steam-verify-failed";

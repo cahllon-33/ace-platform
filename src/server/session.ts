@@ -18,10 +18,15 @@ export function createSessionToken(): string {
   return randomBytes(32).toString("base64url");
 }
 
-function cookieSettings(expiresAt: Date) {
+// SameSite must be "lax": the Steam OpenID return is a cross-site navigation
+// (steamcommunity.com -> /api/auth/steam/callback -> 302 /dashboard). With
+// "strict" the browser stores the cookie but withholds it on that redirected
+// page load (and on any later arrival from an external link), so the header
+// rendered as signed-out. Lax still blocks cross-site POST/subresource sends.
+export function cookieSettings(expiresAt: Date) {
   return {
     httpOnly: true as const,
-    sameSite: "strict" as const,
+    sameSite: "lax" as const,
     secure: isProduction(),
     path: "/",
     expires: expiresAt,
