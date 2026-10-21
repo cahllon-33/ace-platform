@@ -22,22 +22,19 @@ export default async function FeaturesPage() {
   const copy = text.features.page;
 
   return (
-    <main className="px-4 py-14 sm:px-6">
-      <article className="mx-auto max-w-5xl overflow-hidden rounded-3xl border border-[#FFD76A]/35 bg-[#020203] shadow-[0_0_80px_rgba(212, 175, 55,0.12)]">
-        <header className="border-b border-[#FFD76A]/25 bg-[#121318] px-6 py-10 sm:px-10">
-          <p className="font-mono text-xs tracking-[0.2em] text-[#FFD76A]">
-            {copy.header.kicker}
-          </p>
-          <h1 className="mt-4 text-4xl font-semibold tracking-tight text-[#FFD76A]">
-            {copy.header.title}
-          </h1>
-          <p className="mt-4 text-sm leading-7 text-[#A9ABB3]">{copy.header.lede}</p>
-          <LegalDisclaimer />
-        </header>
+    <main className="lg41 lg41-wide">
+      <header className="lg41-hero">
+        <div className="lg41-glow" aria-hidden="true" />
+        <p className="lg41-kicker">{copy.header.kicker}</p>
+        <h1 className="lg41-title">{copy.header.title}</h1>
+        <p className="lg41-lede">{copy.header.lede}</p>
+        <LegalDisclaimer />
+      </header>
+      <article className="lg41-body">
 
-        <section className="border-b border-[#FFD76A]/15 px-6 py-10 sm:px-10">
-          <p className="font-mono text-[0.65rem] tracking-[0.2em] text-[#FFD76A]">SPEC-01</p>
-          <h2 className="mt-2 text-2xl font-semibold text-[#F5F3EC]">{copy.kernel.title}</h2>
+        <section className="lg41-sec">
+          <p className="lg41-num" aria-hidden="true">01</p><div className="lg41-sec-body">
+          <h2 className="lg41-h2">{copy.kernel.title}</h2>
           {copy.kernel.paragraphs.map((paragraph) => (
             <p key={paragraph} className="mt-4 text-sm leading-7 text-[#A9ABB3]">
               {paragraph}
@@ -54,21 +51,21 @@ export default async function FeaturesPage() {
               </div>
             ))}
           </dl>
-        </section>
+        </div></section>
 
-        <section className="border-b border-[#FFD76A]/15 px-6 py-10 sm:px-10">
-          <p className="font-mono text-[0.65rem] tracking-[0.2em] text-[#FFD76A]">SPEC-02</p>
-          <h2 className="mt-2 text-2xl font-semibold text-[#F5F3EC]">{copy.faceScan.title}</h2>
+        <section className="lg41-sec">
+          <p className="lg41-num" aria-hidden="true">02</p><div className="lg41-sec-body">
+          <h2 className="lg41-h2">{copy.faceScan.title}</h2>
           {copy.faceScan.paragraphs.map((paragraph) => (
             <p key={paragraph} className="mt-4 text-sm leading-7 text-[#A9ABB3]">
               {paragraph}
             </p>
           ))}
-        </section>
+        </div></section>
 
-        <section className="px-6 py-10 sm:px-10">
-          <p className="font-mono text-[0.65rem] tracking-[0.2em] text-[#FFD76A]">SPEC-03</p>
-          <h2 className="mt-2 text-2xl font-semibold text-[#F5F3EC]">
+        <section className="lg41-sec">
+          <p className="lg41-num" aria-hidden="true">03</p><div className="lg41-sec-body">
+          <h2 className="lg41-h2">
             {copy.calibration.title}
           </h2>
           <p className="mt-4 text-sm leading-7 text-[#A9ABB3]">
@@ -79,8 +76,8 @@ export default async function FeaturesPage() {
               startingRating: RATING_CONFIG.startingRating,
             })}
           </p>
-          <div className="mt-6 overflow-x-auto">
-            <table className="w-full min-w-[40rem] border-collapse text-start text-sm">
+          <div className="mt-6">
+            <table className="w-full border-collapse text-start text-xs sm:text-sm">
               <thead>
                 <tr className="border-b border-[#FFD76A]/25 text-xs tracking-[0.12em] text-[#FFD76A]">
                   <th className="py-3 pe-3 font-medium">{copy.calibration.table.level}</th>
@@ -108,9 +105,9 @@ export default async function FeaturesPage() {
             <Link href="/rules" className="text-[#FFD76A]">/rules</Link>
             {copy.calibration.divisions.after}
           </p>
-        </section>
+        </div></section>
       </article>
-      <div className="mx-auto mt-8 grid max-w-5xl gap-4">
+      <div className="mt-6 grid gap-4">
         <ServerHubTicker />
         <div className="grid gap-4 lg:grid-cols-2">
           <ComingSoonShield />

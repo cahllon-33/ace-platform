@@ -27,8 +27,9 @@ export default async function PricingPage() {
   return (
     <main className="ace-lobby relative px-4 py-14 sm:px-6 sm:py-16">
       <div className="mx-auto max-w-6xl">
+        <header className="pg41-hero">
         <Badge>{text.hero.badge}</Badge>
-        <h1 className="gold-text mt-4 text-4xl font-semibold tracking-tight sm:text-5xl">
+        <h1 className="pg41-h1 mt-4">
           {text.hero.title}
         </h1>
         <p className="mt-4 max-w-2xl text-lg leading-8 text-ace-muted">
@@ -37,6 +38,7 @@ export default async function PricingPage() {
         <div className="mt-6 max-w-3xl">
           <LegalDisclaimer />
         </div>
+        </header>
 
         <PlanCompare />
 

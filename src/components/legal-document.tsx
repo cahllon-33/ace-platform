@@ -1,6 +1,7 @@
 import type { ReactNode } from "react";
 import { interpolate } from "@/lib/i18n";
 import { getText } from "@/server/locale";
+import "./legal-document.css";
 
 /** Effective date shared by the Terms, Privacy Policy, Cookie Policy and Premium terms. */
 export const LEGAL_EFFECTIVE = "15 October 2026";
@@ -37,22 +38,17 @@ export function LegalDocument({
   children: ReactNode;
 }) {
   return (
-    <main className="px-4 py-14 sm:px-6">
-      <article className="mx-auto max-w-3xl overflow-hidden rounded-3xl border border-[#FFD76A]/35 bg-[#020203] shadow-[0_0_80px_rgba(212, 175, 55,0.12)]">
-        <header className="border-b border-[#FFD76A]/25 bg-[#121318] px-6 py-10 sm:px-10">
-          {notice ? (
-            <p role="note" className="mb-5 rounded-xl border border-[#FFD76A]/30 px-4 py-3 text-xs leading-5 text-[#A9ABB3]">
-              {notice}
-            </p>
-          ) : null}
-          <p className="font-mono text-xs tracking-[0.2em] text-[#FFD76A]">{kicker}</p>
-          <h1 className="mt-4 text-4xl font-semibold tracking-tight text-[#FFD76A]">{title}</h1>
-          <p className="mt-4 text-sm leading-7 text-[#A9ABB3]">{lede}</p>
-          <LegalMeta />
-          <LegalDisclaimer />
-        </header>
-        <div className="space-y-8 px-6 py-8 text-sm leading-7 text-[#A9ABB3] sm:px-10">{children}</div>
-      </article>
+    <main className="lg41">
+      <header className="lg41-hero">
+        <div className="lg41-glow" aria-hidden="true" />
+        {notice ? <p role="note" className="lg41-notice">{notice}</p> : null}
+        <p className="lg41-kicker">{kicker}</p>
+        <h1 className="lg41-title">{title}</h1>
+        <p className="lg41-lede">{lede}</p>
+        <LegalMeta />
+        <LegalDisclaimer />
+      </header>
+      <article className="lg41-body">{children}</article>
     </main>
   );
 }
@@ -69,13 +65,14 @@ export function LegalSection({
   title: string;
   children: ReactNode;
 }) {
+  const clean = title.replace(/^\d+\.\s*/, "");
   return (
-    <section>
-      {code ? (
-        <p className="font-mono text-[0.65rem] tracking-[0.2em] text-[#FFD76A]">{code}</p>
-      ) : null}
-      <h2 className="mt-2 text-xl font-semibold text-[#F5F3EC]">{n ? `${n}. ${title.replace(/^\d+\.\s*/, "")}` : title}</h2>
-      <div className="mt-3 space-y-3">{children}</div>
+    <section className="lg41-sec">
+      <p className="lg41-num" aria-hidden="true">{code ?? (n ? String(n).padStart(2, "0") : "§")}</p>
+      <div className="lg41-sec-body">
+        <h2>{n ? `${n}. ${clean}` : title}</h2>
+        <div className="lg41-copy">{children}</div>
+      </div>
     </section>
   );
 }

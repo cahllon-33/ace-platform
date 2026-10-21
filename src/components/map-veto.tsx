@@ -58,7 +58,7 @@ export function MapVeto({ onLocked }: { onLocked?: (map: string) => void }) {
   return (
     <section className="ace-veto" aria-labelledby="ace-veto-title">
       <p className="ace-veto-kicker">{copy.kicker}</p>
-      <h1 id="ace-veto-title" className="ace-veto-title">
+      <h1 id="ace-veto-title" className="ace-veto-title pg41-h1">
         {copy.title}
       </h1>
       <p className="ace-veto-lede">{copy.lede}</p>

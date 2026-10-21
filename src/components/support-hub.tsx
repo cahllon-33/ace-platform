@@ -46,9 +46,9 @@ export function SupportHub() {
 
   return (
     <>
-      <header className="ace-desk-hero">
+      <header className="ace-desk-hero pg41-hero">
         <p className="ace-desk-kicker">{t("supportKicker")}</p>
-        <h1 className="ace-desk-title">{t("supportTitle")}</h1>
+        <h1 className="ace-desk-title pg41-h1">{t("supportTitle")}</h1>
         <p className="ace-desk-lede">{t("supportLede")}</p>
       </header>
       <ul className="ace-desk-grid">

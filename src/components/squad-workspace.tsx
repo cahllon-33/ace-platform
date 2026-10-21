@@ -32,9 +32,9 @@ export type SquadWorkspaceProps = {
 export function TeamsLocaleHero() {
   const hero = useText().teams.hero;
   return (
-    <header className="ace-squad-hero">
+    <header className="ace-squad-hero pg41-hero">
       <p className="ace-squad-kicker">{hero.kicker}</p>
-      <h1 className="ace-squad-title mt-2 text-[clamp(1.7rem,4.4vw,3.15rem)] font-extrabold text-[#FFD76A]">
+      <h1 className="ace-squad-title pg41-h1 mt-2">
         {hero.title}
       </h1>
       <p className="ace-squad-sub">{hero.lede}</p>

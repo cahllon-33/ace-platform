@@ -11,9 +11,9 @@ export function PageIntro({
   children: ReactNode;
 }) {
   return (
-    <header className="max-w-3xl">
+    <header className="pg41-hero">
       <Badge>{kicker}</Badge>
-      <h1 className="mt-4 text-4xl font-semibold tracking-tight text-[#F5F3EC] sm:text-5xl">
+      <h1 className="pg41-h1 mt-4">
         {title}
       </h1>
       <div className="mt-4 text-lg leading-8 text-ace-muted">{children}</div>

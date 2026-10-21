@@ -1,0 +1,19 @@
+.lg41 { max-width: 60rem; margin: 0 auto; padding: 2.5rem 1rem 4rem; }
+.lg41-hero { position: relative; overflow: hidden; padding: 2.5rem 2rem 2rem; border-radius: 1.5rem; border: 1px solid rgba(212,175,55,.3); background: linear-gradient(160deg, #15130d 0%, #0b0b0c 60%); }
+.lg41-glow { position: absolute; inset: -40% 40% auto -20%; height: 120%; background: radial-gradient(closest-side, rgba(255,215,106,.18), transparent); pointer-events: none; }
+.lg41-hero > * { position: relative; }
+.lg41-notice { margin: 0 0 1.25rem; padding: .75rem 1rem; border-radius: .8rem; border: 1px solid rgba(212,175,55,.3); font-size: .8rem; color: #b9b3a3; }
+.lg41-kicker { margin: 0; font: 800 .7rem/1.4 ui-monospace, monospace; letter-spacing: .22em; text-transform: uppercase; color: #FFD76A; }
+.lg41-title { margin: .6rem 0 0; font-size: clamp(2rem, 5vw, 3rem); line-height: 1.05; letter-spacing: -.02em; font-weight: 700; background: linear-gradient(180deg, #fff3c9, #FFD76A 55%, #b8862b); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.lg41-lede { margin: 1rem 0 0; max-width: 46rem; color: #c3bdae; line-height: 1.75; font-size: .95rem; }
+.lg41-body { margin-top: 1.25rem; display: grid; gap: .75rem; }
+.lg41-sec { display: grid; grid-template-columns: 3.25rem minmax(0, 1fr); gap: 1rem; padding: 1.4rem 1.5rem; border-radius: 1.1rem; background: #0e0e0f; border: 1px solid #25221a; }
+.lg41-num { margin: .1rem 0 0; font: 800 .75rem/1 ui-monospace, monospace; letter-spacing: .12em; color: #0b0b0c; background: linear-gradient(135deg, #FFE9A3, #d4af37); border-radius: .6rem; height: 2.25rem; display: grid; place-items: center; overflow: hidden; }
+.lg41-sec-body h2 { margin: 0; font-size: 1.15rem; color: #f5f3ec; font-weight: 650; }
+.lg41-copy { margin-top: .6rem; display: grid; gap: .7rem; color: #a9a395; font-size: .9rem; line-height: 1.75; }
+.lg41-copy a { color: #FFD76A; }
+@media (max-width: 560px) { .lg41-hero { padding: 1.75rem 1.25rem; } .lg41-sec { grid-template-columns: 1fr; gap: .5rem; padding: 1.15rem; } .lg41-num { width: 2.25rem; } }
+.lg41-wide { max-width: 72rem; }
+.lg41-h2, .lg41-sec-body > h2 { margin: 0; font-size: 1.2rem; color: #f5f3ec; font-weight: 650; }
+.lg41-sec-body { min-width: 0; }
+.lg41-sec-body table th, .lg41-sec-body table td { padding-inline-end: .5rem; overflow-wrap: anywhere; }

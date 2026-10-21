@@ -31,12 +31,12 @@ export default async function AntiCheatPage() {
   const copy = ui.antiCheat;
   return (
     <main className="ace-shield-page mx-auto w-full max-w-[76rem] px-4 py-14 sm:px-6">
-      <header className="ace-shield-hero">
+      <header className="ace-shield-hero pg41-hero">
         <svg className="ace-shield-mark" viewBox="0 0 24 24" aria-hidden="true">
           <path d={ICONS.identity} />
         </svg>
         <p className="text-xs tracking-[0.28em] text-[#FFD76A] uppercase">{copy.kicker}</p>
-        <h1 className="mt-2 text-4xl font-semibold sm:text-5xl">{copy.title}</h1>
+        <h1 className="pg41-h1 mt-2">{copy.title}</h1>
         <p className="mt-4 max-w-3xl text-base leading-7 text-[#C9CAD0]">{copy.lede}</p>
         <div className="mt-6 flex flex-wrap items-center gap-3">
           <span className="text-xs uppercase tracking-[0.18em] text-[#A9ABB3]">{copy.statusLabel}</span>

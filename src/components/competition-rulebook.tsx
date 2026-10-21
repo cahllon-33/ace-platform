@@ -9,9 +9,9 @@ export async function CompetitionRulebook() {
   const text = rulebookFor(await getLocaleId());
   return (
     <article className="ace-rulebook mx-auto max-w-6xl">
-      <header className="ace-rulebook-head">
+      <header className="ace-rulebook-head pg41-hero">
         <p className="font-mono text-xs tracking-[0.2em] text-[#FFD76A] uppercase">{copy.kicker}</p>
-        <h1 className="mt-4 text-4xl font-semibold tracking-tight text-[#FFD76A]">{copy.title}</h1>
+        <h1 className="pg41-h1 mt-4">{copy.title}</h1>
         <p className="mt-3 text-xs tracking-[0.14em] text-[#A9ABB3] uppercase">
           {interpolate(copy.version, { version: RULEBOOK_VERSION, date: RULEBOOK_EFFECTIVE })}
         </p>

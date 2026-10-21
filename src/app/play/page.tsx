@@ -1,3 +1,4 @@
+import { guardDisplayName } from "@/lib/display-name-guard";
 import type { Metadata } from "next";
 import { connection } from "next/server";
 import { PlayDesk } from "@/components/play-desk";
@@ -25,7 +26,7 @@ export default async function PlayPage() {
   try {
     const user = await readSessionUser();
     if (user?.displayName) {
-      captainLabel = user.displayName;
+      captainLabel = guardDisplayName(user.displayName, user.steamId);
       captain = {
         avatarUrl: user.avatarUrl || null,
         rating: user.competitiveRating,

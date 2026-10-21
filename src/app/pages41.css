@@ -1,0 +1,6 @@
+/* R41 shared page skin: black/gold hero band + headline for the remaining public pages. */
+.pg41-hero { position: relative; isolation: isolate; overflow: hidden; padding: clamp(1.5rem, 4vw, 2.75rem); border-radius: 1.5rem; border: 1px solid rgba(212,175,55,.3); background: linear-gradient(160deg, #16130c 0%, #0b0b0c 62%); box-shadow: 0 30px 80px -50px rgba(212,175,55,.45); }
+.pg41-hero::before { content: ""; position: absolute; z-index: -1; inset: -50% 45% auto -25%; height: 150%; background: radial-gradient(closest-side, rgba(255,215,106,.16), transparent); pointer-events: none; }
+.pg41-hero::after { content: ""; position: absolute; z-index: -1; inset: auto 0 0 0; height: 1px; background: linear-gradient(90deg, transparent, rgba(255,215,106,.55), transparent); }
+.pg41-h1 { font-size: clamp(2rem, 5vw, 3.25rem) !important; line-height: 1.05; letter-spacing: -.02em; font-weight: 750; background: linear-gradient(180deg, #fff3c9, #FFD76A 55%, #b8862b); -webkit-background-clip: text; background-clip: text; color: transparent !important; overflow-wrap: anywhere; }
+html { background: #020203; }
