@@ -1,3 +1,4 @@
+import { prestigeBadge, prestigeForRp, prestigeSetFor } from "@/lib/prestige";
 import { VerifiedMark } from "@/components/verified-mark";
 import { isVerified, verifyTier } from "@/lib/verification";
 import "./player.css";
@@ -104,7 +105,7 @@ export default async function PlayerPage({ params }: { params: Promise<{ steamId
             </div>
           </div>
         </div>
-        <span className="pl39-emblem"><RankOrb level={prog.tier.level} art={art} size={200} label={p.rank} priority /></span>
+        <span className="pl39-emblem"><RankOrb level={prog.tier.level} art={art} size={200} label={p.rank} priority prestige={prestigeBadge(user.competitiveRating, user.subscriptionTier)} />{(() => { const pr = prestigeForRp(user.competitiveRating); return pr && !prestigeSetFor(user.subscriptionTier) ? <span className="pr41-milestone">{interpolate(ui.r41c.pr.milestone, { n: pr.level })} · {pr.name}</span> : null; })()}</span>
       </section>
 
       <section className="pl39-stats" aria-label={p.rating}>

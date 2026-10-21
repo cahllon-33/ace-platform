@@ -1,3 +1,4 @@
+import { prestigeBadge } from "@/lib/prestige";
 import "./stats.css";
 import type { Metadata } from "next";
 import Link from "next/link";
@@ -85,7 +86,7 @@ export default async function StatsPage({ params }: { params: Promise<{ steamId:
   return (
     <main className="st41">
       <header className="st41-hero">
-        <span className="st41-orb"><RankOrb level={prog.tier.level} art={effectiveRankArt(user)} size={96} label={`${prog.tier.name} ${prog.division}`} priority /></span>
+        <span className="st41-orb"><RankOrb level={prog.tier.level} art={effectiveRankArt(user)} size={96} label={`${prog.tier.name} ${prog.division}`} priority prestige={prestigeBadge(user.competitiveRating, user.subscriptionTier)} /></span>
         <div>
           <p className="st41-kicker">{st.kicker}</p>
           <h1>{name}{isVerified(user) ? <VerifiedMark tier={verifyTier(user.subscriptionTier)} label={ui.r41.vf.tip} size={22} /> : null}</h1>

@@ -1,3 +1,4 @@
+import { prestigeBadge } from "@/lib/prestige";
 import { VerifiedMark } from "@/components/verified-mark";
 import { isVerified, verifyTier, type VerifyTier } from "@/lib/verification";
 import "./lb39.css";
@@ -43,6 +44,7 @@ type BoardRow = {
   live: boolean;
   /** Server gate result (effectiveRankArt) for stored rows; showcase rows are always standard. */
   art: RankArt;
+  prestige?: ReturnType<typeof prestigeBadge>;
   badges: PlayerBadge[];
   steamId: string | null;
   wins: number;
@@ -96,6 +98,7 @@ export default async function LeaderboardPage({
       weaponName: null,
       live: true,
       art: effectiveRankArt(row),
+      prestige: prestigeBadge(row.competitiveRating, row.subscriptionTier),
       steamId: row.steamId,
       wins: row.wins,
       losses: row.losses,
@@ -153,7 +156,7 @@ export default async function LeaderboardPage({
                 const body = (
                   <>
                     <span className="lb39-pod-place">#{i + 1}</span>
-                    <RankOrb level={row.level} art={row.art} size={112} label={text.leaderboard.hero.title} priority={i === 0} />
+                    <RankOrb level={row.level} art={row.art} size={112} label={text.leaderboard.hero.title} priority={i === 0} prestige={row.prestige ?? null} />
                     <span className="lb39-pod-name">{row.name}{row.verify ? <VerifiedMark tier={row.verify} label={ui.r41.vf.tip} size={16} /> : null}</span>
                     <span className="lb39-pod-tier">{row.tier.replace(/^Rank \d+ · /, "")}</span>
                     <span className="lb39-pod-rp">{row.rp.toLocaleString("en-US")} <small>RP</small></span>
@@ -185,7 +188,7 @@ export default async function LeaderboardPage({
                   <li key={row.id} className="lb39-row">
                     <span className="lb39-place">{index + 1}</span>
                     <span className="lb39-player">
-                      <RankOrb level={row.level} art={row.art} size={40} label={text.leaderboard.hero.title} />
+                      <RankOrb level={row.level} art={row.art} size={40} label={text.leaderboard.hero.title} prestige={row.prestige ?? null} />
                       <span className="lb39-player-id">
                         {href ? <a href={href} className="lb39-name">{row.name}</a> : <span className="lb39-name">{row.name}</span>}{row.verify ? <VerifiedMark tier={row.verify} label={ui.r41.vf.tip} size={15} /> : null}
                         <span className="lb39-tags">

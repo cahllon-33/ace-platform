@@ -21,17 +21,17 @@ const TIER_TONE: Record<number, string> = {
  * a travelling glint, and a soft particle halo. Premium adds a gold crown, a gold ring and a shimmer sweep.
  * `size` is in px; below 64px the decorative layers are reduced so table badges stay crisp and cheap.
  */
-export function RankOrb({ level, art = "standard", size, label, priority = false }: { level: number; art?: RankArt; size: number; label: string; priority?: boolean }) {
+export function RankOrb({ level, art = "standard", size, label, priority = false, prestige = null }: { level: number; art?: RankArt; size: number; label: string; priority?: boolean; prestige?: { level: number; set: "plus" | "premium"; name: string } | null }) {
   const tier = RANK_TIERS[Math.min(10, Math.max(1, Math.round(level))) - 1];
   const asset = rankArtAsset(tier.level, art);
   const premium = art === "premium";
   const scale = size >= 120 ? "is-lg" : size >= 64 ? "is-md" : "is-sm";
   return (
     <span
-      className={`rorb ${scale}${premium ? " is-premium" : ""}`}
+      className={`rorb ${scale}${premium ? " is-premium" : ""}${prestige ? ` is-prestige is-pr-${prestige.set}` : ""}`}
       style={{ ["--rorb-size" as string]: `${size}px`, ["--rorb-tone" as string]: TIER_TONE[tier.level] }}
       role="img"
-      aria-label={`${label}: ${tier.name}${premium ? " (Premium)" : ""}`}
+      aria-label={`${label}: ${tier.name}${premium ? " (Premium)" : ""}${prestige ? ` · ${prestige.name}` : ""}`}
       data-tier={tier.level}
     >
       <span className="rorb-halo" aria-hidden="true" />
@@ -78,7 +78,36 @@ export function RankOrb({ level, art = "standard", size, label, priority = false
           <circle cx="32" cy="26" r="3.2" fill="var(--rorb-tone)" stroke="#fff3b0" strokeWidth="0.8" />
         </svg>
       ) : null}
+      {prestige ? <PrestigeLayer level={prestige.level} set={prestige.set} small={size < 64} /> : null}
       <span className="rorb-floor" aria-hidden="true" />
     </span>
+  );
+}
+
+/**
+ * Prestige aureole (original A.C.E. art): a faceted rotating halo of 12 blades behind the orb and
+ * one star pip per prestige level on an arc below it. Plus = platinum, Premium = gold with a sweep.
+ */
+function PrestigeLayer({ level, set, small }: { level: number; set: "plus" | "premium"; small: boolean }) {
+  const blades = Array.from({ length: 12 }, (_, i) => i * 30);
+  const pips = Array.from({ length: level }, (_, i) => i);
+  return (
+    <>
+      <span className="rorb-aureole" aria-hidden="true">
+        <svg viewBox="-50 -50 100 100">
+          {blades.map((a) => (
+            <path key={a} d="M0 -49 L2.6 -41 L0 -37 L-2.6 -41 Z" transform={`rotate(${a})`} className={a % 60 ? "b2" : "b1"} />
+          ))}
+          <circle r="36" className="ring" />
+        </svg>
+      </span>
+      {small ? null : (
+        <span className="rorb-pips" aria-hidden="true" data-set={set}>
+          {pips.map((i) => (
+            <svg key={i} viewBox="0 0 20 20"><path d="M10 1 L12.6 7.4 L19 10 L12.6 12.6 L10 19 L7.4 12.6 L1 10 L7.4 7.4 Z" /></svg>
+          ))}
+        </span>
+      )}
+    </>
   );
 }

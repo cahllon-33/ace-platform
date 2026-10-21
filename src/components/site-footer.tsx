@@ -77,6 +77,7 @@ export function SiteFooter() {
               </Link>
             ))}
             <Link href="/seasons">{ui.r41.se.title}</Link>
+            <Link href="/badges">{ui.r41c.pr.open}</Link>
           </nav>
           <nav aria-label={ui.footer.company}>
             <p>{ui.footer.company}</p>

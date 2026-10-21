@@ -67,6 +67,7 @@ export default async function RanksPage() {
         <PremiumRankCodex text={text} />
       </section>
       <RpRulesSection text={text} ui={ui} />
+      <p className="mx-auto max-w-6xl px-4"><a href="/badges" className="font-bold text-[#FFD76A]">{ui.r41c.pr.open} →</a></p>
       <section className="mt-12 rounded-3xl border border-[#FFD76A]/25 bg-[#121212] p-6 sm:p-8">
         <h2 className="text-xl font-semibold text-white">{copy.document.title}</h2>
         <p className="mt-3 max-w-3xl text-sm leading-7 text-[#A9ABB3]">{copy.document.body}</p>

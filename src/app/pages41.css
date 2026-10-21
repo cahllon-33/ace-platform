@@ -4,3 +4,4 @@
 .pg41-hero::after { content: ""; position: absolute; z-index: -1; inset: auto 0 0 0; height: 1px; background: linear-gradient(90deg, transparent, rgba(255,215,106,.55), transparent); }
 .pg41-h1 { font-size: clamp(2rem, 5vw, 3.25rem) !important; line-height: 1.05; letter-spacing: -.02em; font-weight: 750; background: linear-gradient(180deg, #fff3c9, #FFD76A 55%, #b8862b); -webkit-background-clip: text; background-clip: text; color: transparent !important; overflow-wrap: anywhere; }
 html { background: #020203; }
+.pr41-milestone { display: block; margin-top: .6rem; text-align: center; font-size: .8rem; font-weight: 800; color: #FFD76A; letter-spacing: .04em; }

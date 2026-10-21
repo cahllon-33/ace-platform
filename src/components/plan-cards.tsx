@@ -4,6 +4,7 @@ import { EliteSeal } from "@/components/elite-seal";
 import { FreeAccessPill } from "@/components/free-access-pill";
 import { ComingSoonPlate } from "@/components/coming-soon-plate";
 import { useText } from "@/components/text-provider";
+import { useUi } from "@/components/use-ui";
 import { Badge } from "@/components/ui/badge";
 import { interpolate } from "@/lib/interpolate";
 import { FREE_PRICE, PLUS_PRICE, PREMIUM_PRICE } from "@/lib/pricing";
@@ -16,6 +17,7 @@ const TIERS = [
 
 export function PlanCards({ headingLevel = 2 }: { headingLevel?: 2 | 3 }) {
   const all = useText();
+  const pr = useUi().r41c.pr;
   const text = all.pricing;
   const soon = text.compare.cells.notConnected;
   const Heading = headingLevel === 2 ? "h2" : "h3";
@@ -57,6 +59,12 @@ export function PlanCards({ headingLevel = 2 }: { headingLevel?: 2 | 3 }) {
                   {point}
                 </li>
               ))}
+              {tier.id !== "free" ? (
+                <li className="flex gap-3 text-[#C8C4B8]">
+                  <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-ace-gold" />
+                  <span>{pr.perk} · <a href="/badges" className="text-[#FFD76A] underline-offset-2 hover:underline">{tier.id === "premium" ? pr.premium : pr.plus}</a></span>
+                </li>
+              ) : null}
             </ul>
             {tier.id !== "free" ? (
               <div className="mt-6 border-t border-[#FFD76A]/20 pt-4">

@@ -1,3 +1,4 @@
+import { prestigeBadge, prestigeForRp, prestigeSetFor } from "@/lib/prestige";
 import { VerifiedMark } from "@/components/verified-mark";
 import { isVerified, verifyTier } from "@/lib/verification";
 import { guardDisplayName } from "@/lib/display-name-guard";
@@ -100,7 +101,7 @@ export default async function DashboardPage() {
             <p className="d40-lede">{copy.lede}</p>
           </div>
         </div>
-        <span className="d40-hero-emblem"><RankOrb level={rankLevel} art={effectiveRankArt(user)} size={120} label={d.statRank} priority /></span>
+        <span className="d40-hero-emblem"><RankOrb level={rankLevel} art={effectiveRankArt(user)} size={120} label={d.statRank} priority prestige={prestigeBadge(user.competitiveRating, user.subscriptionTier)} />{(() => { const pr = prestigeForRp(user.competitiveRating); return pr && !prestigeSetFor(user.subscriptionTier) ? <span className="pr41-milestone">{interpolate(ui.r41c.pr.milestone, { n: pr.level })} · {pr.name}</span> : null; })()}</span>
       </section>
 
       <nav className="d40-quick" aria-label={d.quick}>
@@ -180,7 +181,7 @@ export default async function DashboardPage() {
               avatarAlt: interpolate(text.home.ops.avatarAlt, { name: shownName }),
             }}
             emblem={
-              <RankOrb level={rankLevel} art={effectiveRankArt(user)} size={72} label={d.statRank} />
+              <RankOrb level={rankLevel} art={effectiveRankArt(user)} size={72} label={d.statRank} prestige={prestigeBadge(user.competitiveRating, user.subscriptionTier)} />
             }
           />
           <PlayerBadges

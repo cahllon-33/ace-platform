@@ -44,7 +44,7 @@ export async function AuthBar() {
         </Link>
       ) : null}
       {hasEliteSeal(user?.subscriptionTier) ? (
-        <span className="inline-flex items-center gap-2" title={copy.elite}>
+        <span className="hx-elite inline-flex items-center gap-2" title={copy.elite}>
           <EliteSeal className="h-9 w-auto" />
           <span className="text-[0.65rem] font-bold tracking-[0.18em] text-[#FFD76A]">{copy.elite}</span>
         </span>
