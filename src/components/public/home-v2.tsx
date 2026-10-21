@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { RankOrb } from "@/components/rank-orb";
 import "./home-v2.css";
 import type { ReactNode } from "react";
 import type { Ui } from "@/lib/i18n/ui";
@@ -34,9 +35,9 @@ export function HomeHeroV2({ ui, actions, aside, signedIn }: { ui: Ui; actions: 
         <div className="h39-hero-aside">
           {aside ?? (
             <div className="h39-stack" aria-hidden="true">
-              {showcase.map(({ level, src }, i) => (
+              {showcase.map(({ level }, i) => (
                 // eslint-disable-next-line @next/next/no-img-element
-                <img key={level} src={src} alt="" width={512} height={512} className={`h39-stack-badge is-${i}`} decoding="async" fetchPriority={i === 1 ? "high" : "low"} />
+                <span key={level} className={`h39-stack-badge is-${i}`}><RankOrb level={level} size={i === 1 ? 300 : 170} label={RANK_TIERS[level - 1].name} priority={i === 1} /></span>
               ))}
               <span className="h39-stack-ring" />
             </div>
@@ -93,8 +94,7 @@ export function HomeRanksV2({ ui }: { ui: Ui }) {
       <ul className="h39-ladder">
         {RANK_TIERS.map((tier) => (
           <li key={tier.level}>
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src={rankEmblemAsset(tier.level).smSrc} alt="" width={96} height={96} loading="lazy" decoding="async" />
+            <RankOrb level={tier.level} size={84} label={tier.name} />
             <span className="h39-ladder-n">{tier.level}</span>
             <span className="h39-ladder-name">{tier.name}</span>
           </li>

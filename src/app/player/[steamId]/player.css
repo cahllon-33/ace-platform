@@ -42,3 +42,5 @@
 .pl39-stats > div { transition: border-color .18s, transform .18s; }
 .pl39-stats > div:hover { border-color: rgba(212,175,55,.45); transform: translateY(-2px); }
 @media (prefers-reduced-motion: reduce) { .pl39-stats > div { transition: none; } }
+.pl39-emblem { container-type: inline-size; display: block; }
+.pl39-emblem .rorb { --rorb-size: 100cqw !important; }

@@ -1,4 +1,5 @@
 import "./player.css";
+import { RankOrb } from "@/components/rank-orb";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { connection } from "next/server";
@@ -64,7 +65,6 @@ export default async function PlayerPage({ params }: { params: Promise<{ steamId
   const name = guardDisplayName(user.displayName, user.steamId);
   const prog = rankProgress(user.competitiveRating);
   const art = effectiveRankArt(user);
-  const emblem = rankArtAsset(prog.tier.level, art);
   const matches = user.wins + user.losses;
   const winRate = matches > 0 ? Math.round((user.wins / matches) * 100) : null;
   const since = new Intl.DateTimeFormat(locale, { year: "numeric", month: "long" }).format(user.createdAt);
@@ -102,8 +102,7 @@ export default async function PlayerPage({ params }: { params: Promise<{ steamId
             </div>
           </div>
         </div>
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img className="pl39-emblem" src={emblem.mdSrc ?? emblem.staticSrc} alt={prog.tier.name} width={220} height={220} decoding="async" fetchPriority="high" />
+        <span className="pl39-emblem"><RankOrb level={prog.tier.level} art={art} size={200} label={p.rank} priority /></span>
       </section>
 
       <section className="pl39-stats" aria-label={p.rating}>

@@ -1,4 +1,5 @@
 import { guardDisplayName } from "@/lib/display-name-guard";
+import { RankOrb } from "@/components/rank-orb";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { connection } from "next/server";
@@ -80,7 +81,6 @@ export default async function DashboardPage() {
     ...ratingEvents.map((e) => ({ id: e.id, at: e.createdAt, up: e.ratingAfter >= e.ratingBefore, label: interpolate(d.evRating, { before: e.ratingBefore, after: e.ratingAfter }), kind: "rating" as const })),
     ...signIns.map((e) => ({ id: e.id, at: e.createdAt, up: true, label: d.evSignIn, kind: "signin" as const })),
   ].sort((a, b) => b.at.getTime() - a.at.getTime()).slice(0, 6);
-  const emblemSrc = rankArtAsset(rankLevel, effectiveRankArt(user)).stillSrc;
 
   return (
     <main className="ace-lobby d40 mx-auto w-full max-w-6xl px-4 py-10 sm:px-6">
@@ -98,8 +98,7 @@ export default async function DashboardPage() {
             <p className="d40-lede">{copy.lede}</p>
           </div>
         </div>
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img className="d40-hero-emblem" src={emblemSrc} alt="" width={120} height={120} />
+        <span className="d40-hero-emblem"><RankOrb level={rankLevel} art={effectiveRankArt(user)} size={120} label={d.statRank} priority /></span>
       </section>
 
       <nav className="d40-quick" aria-label={d.quick}>
@@ -178,8 +177,7 @@ export default async function DashboardPage() {
               avatarAlt: interpolate(text.home.ops.avatarAlt, { name: shownName }),
             }}
             emblem={
-              // eslint-disable-next-line @next/next/no-img-element
-              <img src={rankArtAsset(rankLevel, effectiveRankArt(user)).stillSrc} alt="" width={72} height={72} />
+              <RankOrb level={rankLevel} art={effectiveRankArt(user)} size={72} label={d.statRank} />
             }
           />
           <PlayerBadges

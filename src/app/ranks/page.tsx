@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { RankOrb } from "@/components/rank-orb";
 import Link from "next/link";
 import { connection } from "next/server";
 import { RankSystemBoard } from "@/components/rank-system-board";
@@ -72,8 +73,7 @@ export default async function RanksPage() {
         <ol className="mt-6 grid gap-3 md:grid-cols-2">
           {RANK_TIERS.map((tier) => (
             <li key={tier.level} className="ace-tier-row rounded-2xl border border-[#FFD76A]/20 p-4">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src={rankEmblemAsset(tier.level).smSrc} alt="" width={72} height={72} loading="lazy" />
+              <RankOrb level={tier.level} size={72} label={tier.name} />
               <div>
               <p className="text-xs tracking-[0.14em] text-[#FFD76A]">
                 {rankLevelKicker(copy.document.level, tier)}

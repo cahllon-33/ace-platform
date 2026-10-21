@@ -1,4 +1,5 @@
 import "./lb39.css";
+import { RankOrb } from "@/components/rank-orb";
 import { guardDisplayName } from "@/lib/display-name-guard";
 import { rankLevelFromRp } from "@/lib/rank-progress";
 import { PlayerBadges } from "@/components/player-badges";
@@ -142,12 +143,10 @@ export default async function LeaderboardPage({
             <ol className="lb39-podium">
               {podium.map((row, i) => {
                 const href = profileHref(row);
-                const emblem = rankArtAsset(row.level, row.art);
                 const body = (
                   <>
                     <span className="lb39-pod-place">#{i + 1}</span>
-                    {/* eslint-disable-next-line @next/next/no-img-element */}
-                    <img src={emblem.mdSrc ?? emblem.staticSrc} alt="" width={112} height={112} decoding="async" fetchPriority={i === 0 ? "high" : "auto"} />
+                    <RankOrb level={row.level} art={row.art} size={112} label={text.leaderboard.hero.title} priority={i === 0} />
                     <span className="lb39-pod-name">{row.name}</span>
                     <span className="lb39-pod-tier">{row.tier.replace(/^Rank \d+ · /, "")}</span>
                     <span className="lb39-pod-rp">{row.rp.toLocaleString("en-US")} <small>RP</small></span>
@@ -173,15 +172,13 @@ export default async function LeaderboardPage({
             </div>
             <ol>
               {board.map((row, index) => {
-                const emblem = rankArtAsset(row.level, row.art);
                 const width = Math.max(6, Math.round((row.rp / top) * 100));
                 const href = profileHref(row);
                 return (
                   <li key={row.id} className="lb39-row">
                     <span className="lb39-place">{index + 1}</span>
                     <span className="lb39-player">
-                      {/* eslint-disable-next-line @next/next/no-img-element */}
-                      <img src={emblem.smSrc ?? emblem.staticSrc} alt="" width={40} height={40} loading="lazy" decoding="async" />
+                      <RankOrb level={row.level} art={row.art} size={40} label={text.leaderboard.hero.title} />
                       <span className="lb39-player-id">
                         {href ? <a href={href} className="lb39-name">{row.name}</a> : <span className="lb39-name">{row.name}</span>}
                         <span className="lb39-tags">

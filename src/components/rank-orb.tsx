@@ -21,7 +21,7 @@ const TIER_TONE: Record<number, string> = {
  * a travelling glint, and a soft particle halo. Premium adds a gold crown, a gold ring and a shimmer sweep.
  * `size` is in px; below 64px the decorative layers are reduced so table badges stay crisp and cheap.
  */
-export function RankOrb({ level, art = "standard", size, label }: { level: number; art?: RankArt; size: number; label: string }) {
+export function RankOrb({ level, art = "standard", size, label, priority = false }: { level: number; art?: RankArt; size: number; label: string; priority?: boolean }) {
   const tier = RANK_TIERS[Math.min(10, Math.max(1, Math.round(level))) - 1];
   const asset = rankArtAsset(tier.level, art);
   const premium = art === "premium";
@@ -37,7 +37,19 @@ export function RankOrb({ level, art = "standard", size, label }: { level: numbe
       <span className="rorb-halo" aria-hidden="true" />
       <span className="rorb-ring is-back" aria-hidden="true" />
       <span className="rorb-sphere" aria-hidden="true">
-        <span className="rorb-art" style={{ backgroundImage: `url(${asset.heroSrc})` }} />
+        <span className="rorb-art">
+          {/* Static WebP still inside the orb: lazy by default, and the plain fallback when motion is reduced. */}
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src={premium ? asset.staticSrc : size <= 96 ? asset.smSrc ?? asset.staticSrc : asset.mdSrc ?? asset.staticSrc}
+            alt=""
+            width={size}
+            height={size}
+            loading={priority ? "eager" : "lazy"}
+            decoding="async"
+            fetchPriority={priority ? "high" : "auto"}
+          />
+        </span>
         <span className="rorb-shade" />
         <span className="rorb-shimmer" />
         <span className="rorb-gloss" />

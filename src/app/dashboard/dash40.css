@@ -35,3 +35,4 @@
 @media (max-width: 900px) { .d40-stats { grid-template-columns: repeat(2, minmax(0, 1fr)); } .d40-stat-wide { grid-column: span 2; } }
 @media (max-width: 560px) { .d40-hero { padding: 1.25rem; } .d40-hero-emblem { display: none; } .d40-avatar { width: 4rem; height: 4rem; } .d40-feed li { grid-template-columns: auto 1fr; } .d40-feed time { grid-column: 2; } }
 @media (prefers-reduced-motion: reduce) { .d40-quick a { transition: none; } }
+.d40-hero-emblem { display: block; }
