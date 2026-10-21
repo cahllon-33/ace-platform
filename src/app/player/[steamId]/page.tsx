@@ -154,6 +154,7 @@ export default async function PlayerPage({ params }: { params: Promise<{ steamId
 
       <p className="pl39-muted pl39-basis">{ui.r38.journey.basis}</p>
       <div className="pl39-actions">
+        <Link href={`/player/${user.steamId}/stats`} className="pl39-link">{ui.r41.st.open} →</Link>
         <a href={`https://steamcommunity.com/profiles/${user.steamId}`} className="pl39-link" rel="noopener noreferrer" target="_blank">{p.steamProfile} ↗</a>
         <Link href="/leaderboard" className="pl39-link">{text.leaderboard.hero.title} →</Link>
       </div>

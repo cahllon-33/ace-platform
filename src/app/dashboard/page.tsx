@@ -105,6 +105,7 @@ export default async function DashboardPage() {
 
       <nav className="d40-quick" aria-label={d.quick}>
         {user.steamId ? <Link href={`/player/${user.steamId}`}>{d.qProfile}<span aria-hidden="true">→</span></Link> : null}
+        {user.steamId ? <Link href={`/player/${user.steamId}/stats`}>{ui.r41.st.open}<span aria-hidden="true">→</span></Link> : null}
         <Link href="/leaderboard">{d.qBoard}<span aria-hidden="true">→</span></Link>
         <Link href="/ranks">{d.qRanks}<span aria-hidden="true">→</span></Link>
         <Link href="/play">{d.qPlay}<span aria-hidden="true">→</span></Link>

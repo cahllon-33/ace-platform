@@ -58,28 +58,28 @@ enum MatchState {
 }
 
 model User {
-  id                String           @id @default(uuid())
+  id                 String           @id @default(uuid())
   /// Indexed unique SteamID64 for OpenID callback upserts. Null after an operator disconnect.
-  steamId           String?          @unique
+  steamId            String?          @unique
   /// Player contact address. The unique constraint is the lookup index. Empty until the signed-in player saves one. Saving it does not verify the mailbox.
-  email             String?          @unique
-  username          String
+  email              String?          @unique
+  username           String
   /// Public Steam persona kept for existing lobby and leaderboard reads.
-  displayName       String
-  avatarUrl         String           @default("")
+  displayName        String
+  avatarUrl          String           @default("")
   /// Steam community profile URL from GetPlayerSummaries (vanity /id/<name>/ when the player set one). "" when unknown.
-  steamProfileUrl   String           @default("")
+  steamProfileUrl    String           @default("")
   /// Last successful Steam persona sync (login, admin refresh). null = never synced from the Steam Web API.
-  steamSyncedAt     DateTime?
-  accountStatus     AccountStatus    @default(ACTIVE)
-  subscriptionTier  SubscriptionTier @default(FREE)
+  steamSyncedAt      DateTime?
+  accountStatus      AccountStatus    @default(ACTIVE)
+  subscriptionTier   SubscriptionTier @default(FREE)
   /// null = no explicit choice: PREMIUM plan shows Premium art by default. STANDARD/PREMIUM = explicit choice.
-  rankArt           RankArt?
+  rankArt            RankArt?
   /// Engine ladder step. Database CHECK plus application code keep this in 1–10.
-  rankLevel         Int              @default(3)
-  competitiveRating Int              @default(1200)
-  wins              Int              @default(0)
-  losses            Int              @default(0)
+  rankLevel          Int              @default(3)
+  competitiveRating  Int              @default(1200)
+  wins               Int              @default(0)
+  losses             Int              @default(0)
   /// Engine-calculated RP saved when an operator first overrides the rank; null = no override active.
   rankOverrideBaseRp Int?
   rankOverrideAt     DateTime?
@@ -87,32 +87,32 @@ model User {
   adminNote          String           @default("")
   /// Operator verification (R41). The public check also requires a linked Steam account and ACTIVE status.
   verifiedAt         DateTime?
-  createdAt         DateTime         @default(now())
-  updatedAt         DateTime         @updatedAt
+  createdAt          DateTime         @default(now())
+  updatedAt          DateTime         @updatedAt
 
   sessions           UserSession[]
   signInEvents       SignInEvent[]
-  captainedTeams     Team[]          @relation("TeamCaptain")
+  captainedTeams     Team[]           @relation("TeamCaptain")
   teamMemberships    TeamMember[]
   sentInvites        TeamInvitation[] @relation("InviteSender")
   receivedInvites    TeamInvitation[] @relation("InviteRecipient")
   ratingHistory      RatingHistory[]
   bans               BanRecord[]
   matchPlayers       MatchPlayer[]
-  createdTournaments Tournament[]    @relation("TournamentCreator")
-  reports            MatchDispute[]  @relation("DisputeReporter")
+  createdTournaments Tournament[]     @relation("TournamentCreator")
+  reports            MatchDispute[]   @relation("DisputeReporter")
 }
 
 model UserSession {
-  id        String   @id @default(cuid())
-  userId    String
-  tokenHash String   @unique
-  expiresAt DateTime
-  revokedAt DateTime?
-  createdAt DateTime @default(now())
+  id         String    @id @default(cuid())
+  userId     String
+  tokenHash  String    @unique
+  expiresAt  DateTime
+  revokedAt  DateTime?
+  createdAt  DateTime  @default(now())
   /// Refreshed while the player loads the site. Presence counts this, not the 14-day cookie alone.
-  lastSeenAt DateTime @default(now())
-  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  lastSeenAt DateTime  @default(now())
+  user       User      @relation(fields: [userId], references: [id], onDelete: Cascade)
 
   @@index([userId])
   @@index([expiresAt])
@@ -135,11 +135,11 @@ model Team {
   createdAt       DateTime @default(now())
   updatedAt       DateTime @updatedAt
 
-  members          TeamMember[]
-  invitations      TeamInvitation[]
-  entries          TournamentEntry[]
-  matchHistoryAsA  MatchHistory[] @relation("MatchHistoryTeamA")
-  matchHistoryAsB  MatchHistory[] @relation("MatchHistoryTeamB")
+  members         TeamMember[]
+  invitations     TeamInvitation[]
+  entries         TournamentEntry[]
+  matchHistoryAsA MatchHistory[]    @relation("MatchHistoryTeamA")
+  matchHistoryAsB MatchHistory[]    @relation("MatchHistoryTeamB")
 
   @@index([captainId])
 }
@@ -173,14 +173,14 @@ model TeamInvitation {
 }
 
 model Tournament {
-  id          String           @id @default(cuid())
+  id          String            @id @default(cuid())
   name        String
-  status      TournamentStatus @default(DRAFT)
+  status      TournamentStatus  @default(DRAFT)
   createdById String
   lockedAt    DateTime?
-  createdAt   DateTime         @default(now())
-  updatedAt   DateTime         @updatedAt
-  createdBy   User             @relation("TournamentCreator", fields: [createdById], references: [id])
+  createdAt   DateTime          @default(now())
+  updatedAt   DateTime          @updatedAt
+  createdBy   User              @relation("TournamentCreator", fields: [createdById], references: [id])
   entries     TournamentEntry[]
   matches     Match[]
 }
@@ -199,42 +199,42 @@ model TournamentEntry {
 
 /// Conceptual MR12 score log. Live CS2 servers are not attached.
 model MatchHistory {
-  id               String   @id @default(uuid())
-  mapName          String
-  scoreTeamA       Int
-  scoreTeamB       Int
-  telemetryStatus  String   @default("SECURE")
-  executedAt       DateTime @default(now())
-  teamAId          String?
-  teamBId          String?
-  teamA            Team?    @relation("MatchHistoryTeamA", fields: [teamAId], references: [id])
-  teamB            Team?    @relation("MatchHistoryTeamB", fields: [teamBId], references: [id])
+  id              String   @id @default(uuid())
+  mapName         String
+  scoreTeamA      Int
+  scoreTeamB      Int
+  telemetryStatus String   @default("SECURE")
+  executedAt      DateTime @default(now())
+  teamAId         String?
+  teamBId         String?
+  teamA           Team?    @relation("MatchHistoryTeamA", fields: [teamAId], references: [id])
+  teamB           Team?    @relation("MatchHistoryTeamB", fields: [teamBId], references: [id])
 
   @@index([executedAt])
 }
 
 model Match {
-  id            String      @id @default(cuid())
+  id            String         @id @default(cuid())
   tournamentId  String?
   round         Int
   slot          Int
-  state         MatchState  @default(PENDING)
+  state         MatchState     @default(PENDING)
   /// Regulation shell for A.C.E. competitive matches.
-  format        String      @default("5v5")
-  ruleset       String      @default("MR12")
+  format        String         @default("5v5")
+  ruleset       String         @default("MR12")
   mapName       String?
-  scoreA        Int         @default(0)
-  scoreB        Int         @default(0)
+  scoreA        Int            @default(0)
+  scoreB        Int            @default(0)
   teamAId       String?
   teamBId       String?
   winnerTeamId  String?
-  source        String      @default("unverified")
-  ratingApplied Boolean     @default(false)
+  source        String         @default("unverified")
+  ratingApplied Boolean        @default(false)
   startedAt     DateTime?
   endedAt       DateTime?
-  createdAt     DateTime    @default(now())
-  updatedAt     DateTime    @updatedAt
-  tournament    Tournament? @relation(fields: [tournamentId], references: [id], onDelete: Cascade)
+  createdAt     DateTime       @default(now())
+  updatedAt     DateTime       @updatedAt
+  tournament    Tournament?    @relation(fields: [tournamentId], references: [id], onDelete: Cascade)
   players       MatchPlayer[]
   disputes      MatchDispute[]
 
@@ -243,14 +243,43 @@ model Match {
 }
 
 model MatchPlayer {
-  id      String @id @default(cuid())
-  matchId String
-  userId  String
-  teamId  String?
-  match   Match  @relation(fields: [matchId], references: [id], onDelete: Cascade)
-  user    User   @relation(fields: [userId], references: [id], onDelete: Cascade)
+  id             String            @id @default(cuid())
+  matchId        String
+  userId         String
+  teamId         String?
+  /// Per-match stat line, filled only from a verified match server report. Null = not recorded.
+  kills          Int?
+  deaths         Int?
+  assists        Int?
+  damage         Int?
+  roundsPlayed   Int?
+  headshotKills  Int?
+  clutchesWon    Int?
+  clutchesPlayed Int?
+  entryWins      Int?
+  entryAttempts  Int?
+  utilityDamage  Int?
+  multi2k        Int?
+  multi3k        Int?
+  multi4k        Int?
+  multi5k        Int?
+  match          Match             @relation(fields: [matchId], references: [id], onDelete: Cascade)
+  user           User              @relation(fields: [userId], references: [id], onDelete: Cascade)
+  weapons        MatchWeaponStat[]
 
   @@unique([matchId, userId])
+}
+
+model MatchWeaponStat {
+  id            String      @id @default(cuid())
+  matchPlayerId String
+  weapon        String
+  kills         Int         @default(0)
+  headshotKills Int         @default(0)
+  damage        Int         @default(0)
+  matchPlayer   MatchPlayer @relation(fields: [matchPlayerId], references: [id], onDelete: Cascade)
+
+  @@unique([matchPlayerId, weapon])
 }
 
 model MatchDispute {
@@ -264,31 +293,31 @@ model MatchDispute {
 }
 
 model RatingHistory {
-  id             String   @id @default(cuid())
-  userId         String
-  matchId        String?
-  ratingBefore   Int
-  ratingAfter    Int
-  rankBefore     Int
-  rankAfter      Int
+  id               String   @id @default(cuid())
+  userId           String
+  matchId          String?
+  ratingBefore     Int
+  ratingAfter      Int
+  rankBefore       Int
+  rankAfter        Int
   algorithmVersion String
-  reason         String
-  createdAt      DateTime @default(now())
-  user           User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  reason           String
+  createdAt        DateTime @default(now())
+  user             User     @relation(fields: [userId], references: [id], onDelete: Cascade)
 
   @@index([userId])
 }
 
 model BanRecord {
-  id        String    @id @default(cuid())
+  id        String        @id @default(cuid())
   userId    String
   status    AccountStatus
   reason    String
-  startsAt  DateTime  @default(now())
+  startsAt  DateTime      @default(now())
   expiresAt DateTime?
   issuerId  String?
-  createdAt DateTime  @default(now())
-  user      User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+  createdAt DateTime      @default(now())
+  user      User          @relation(fields: [userId], references: [id], onDelete: Cascade)
 
   @@index([userId, expiresAt])
 }
@@ -322,7 +351,6 @@ model SignInEvent {
   @@index([createdAt])
   @@index([userId])
 }
-
 
 /// R38-L: AI support chat conversations escalated by the visitor. Reviewed in the admin Support panel.
 /// No IP address is stored; sessionKey is a random per-browser id generated client-side.
