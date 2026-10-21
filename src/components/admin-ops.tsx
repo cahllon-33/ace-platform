@@ -2,6 +2,7 @@
 
 import { useCallback, useEffect, useState } from "react";
 import { useAdminI18n } from "@/components/admin-locale";
+import { listPlayerReports, resolvePlayerReport } from "@/server/player-reports";
 import { ADMIN40_EN, ADMIN40_HE, type Admin40Key } from "@/lib/admin-r40-i18n";
 import { interpolate } from "@/lib/interpolate";
 import { describeRp, resolveOverrideRp, type OverrideArt, type OverrideTarget } from "@/lib/rank-override";
@@ -215,6 +216,42 @@ export function AdminAuditPanel({ refreshKey }: { refreshKey: number }) {
       <h2 id="ax-audit-t" className="acx-section-title">{t("audit")}</h2>
       <p className="acx-muted">{t("auditLede")}</p>
       {entries ? <AuditList entries={entries} /> : <div className="ax-skel" aria-hidden="true"><i /><i /><i /></div>}
+    </section>
+  );
+}
+
+type ReportRow = Awaited<ReturnType<typeof listPlayerReports>>[number];
+
+export function AdminPlayerReports({ onChanged }: { onChanged: () => void }) {
+  const t = useAdmin40();
+  const [rows, setRows] = useState<ReportRow[] | null>(null);
+  const [tick, setTick] = useState(0);
+  useEffect(() => {
+    void listPlayerReports("open").then(setRows);
+  }, [tick]);
+  const act = (id: string, outcome: "actioned" | "dismissed") =>
+    void resolvePlayerReport(id, outcome).then(() => { setTick((n) => n + 1); onChanged(); });
+  return (
+    <section id="acx-player-reports" className="acx-card acx-anchor ax-audit" aria-labelledby="ax-pr-t">
+      <h2 id="ax-pr-t" className="acx-section-title">{t("playerReports")}</h2>
+      <p className="acx-muted">{t("playerReportsLede")}</p>
+      {!rows ? <div className="ax-skel" aria-hidden="true"><i /><i /></div> : rows.length === 0 ? <p className="acx-muted">{t("reportsEmpty")}</p> : (
+        <ul className="ax-reports">
+          {rows.map((r) => (
+            <li key={r.id}>
+              <div>
+                <strong dir="ltr">{r.targetSteamId}</strong> · {r.reason}
+                <small> · {t("reportFrom", { name: r.reporter.displayName })} · {new Date(r.createdAt).toISOString().slice(0, 16).replace("T", " ")} UTC</small>
+                {r.details ? <p>{r.details}</p> : null}
+              </div>
+              <span className="ax-row-actions">
+                <button type="button" className="ax-btn" onClick={() => act(r.id, "actioned")}>{t("actioned")}</button>
+                <button type="button" className="ax-btn ax-ghost" onClick={() => act(r.id, "dismissed")}>{t("dismiss")}</button>
+              </span>
+            </li>
+          ))}
+        </ul>
+      )}
     </section>
   );
 }

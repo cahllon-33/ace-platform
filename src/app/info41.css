@@ -1,0 +1,22 @@
+.in41 { max-width: 56rem; margin: 0 auto; padding: 2.5rem 1rem 4rem; display: grid; gap: 1rem; color: #ece7da; }
+.in41-lede { margin: .9rem 0 0; color: #c3bdae; line-height: 1.7; max-width: 44rem; }
+.in41-card { margin: 0; padding: 1.25rem 1.4rem; border-radius: 1.1rem; background: #0e0e0f; border: 1px solid #25221a; line-height: 1.7; }
+.in41-muted { color: #a9a395; }
+.in41-btn { display: inline-flex; align-items: center; justify-content: center; min-height: 2.75rem; padding: 0 1.2rem; border-radius: .8rem; border: 0; font-weight: 800; color: #0b0b0c; background: linear-gradient(180deg, #FFE9A3, #d4af37); text-decoration: none; cursor: pointer; }
+.in41-link { color: #FFD76A; text-decoration: none; font-weight: 700; }
+.in41-list { list-style: none; margin: 0; padding: 0; display: grid; gap: .5rem; }
+.in41-list li { display: flex; justify-content: space-between; gap: 1rem; flex-wrap: wrap; padding: .9rem 1.1rem; border-radius: .9rem; background: #0e0e0f; border: 1px solid #25221a; }
+.in41-list li.is-unread { border-color: rgba(255,215,106,.5); }
+.in41-list time { color: #a9a395; font-size: .85rem; }
+.in41-status { list-style: none; margin: 0; padding: 0; display: grid; gap: .6rem; }
+.in41-status li { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding: 1rem 1.2rem; border-radius: 1rem; background: #0e0e0f; border: 1px solid #25221a; }
+.in41-dot { display: inline-flex; align-items: center; gap: .5rem; font-weight: 700; }
+.in41-dot::before { content: ""; width: .6rem; height: .6rem; border-radius: 50%; background: currentColor; box-shadow: 0 0 10px currentColor; }
+.in41-ok { color: #7bd88f; } .in41-down { color: #ff7a6b; } .in41-idle { color: #a9a395; }
+.in41-form { display: grid; gap: .9rem; }
+.in41-form label { display: grid; gap: .35rem; font-size: .85rem; color: #d8d2c3; font-weight: 600; }
+.in41-form input, .in41-form select, .in41-form textarea { min-height: 2.75rem; padding: .6rem .8rem; border-radius: .7rem; border: 1px solid #3a3424; background: #08080a; color: #f5f3ec; font: inherit; }
+.in41-form textarea { min-height: 7rem; resize: vertical; }
+.in41-ok-box { border-color: rgba(123,216,143,.5); }
+.in41-err-box { border-color: rgba(255,122,107,.55); }
+.in41-points { margin: 0; padding-inline-start: 1.2rem; display: grid; gap: .6rem; color: #c3bdae; line-height: 1.7; }

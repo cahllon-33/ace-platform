@@ -154,6 +154,7 @@ export async function setPlayerVerified(userId: string, verified: boolean, reaso
   if ((user.verifiedAt != null) === verified) return { ok: false as const, error: "nochange" };
   await prisma.$transaction([
     prisma.user.update({ where: { id: user.id }, data: { verifiedAt: verified ? new Date() : null } }),
+    ...(verified ? [prisma.notification.create({ data: { userId: user.id, kind: "verify.grant" } })] : []),
     prisma.adminAuditLog.create({ data: { actor: await readAdminActor(), action: verified ? "verify.grant" : "verify.revoke", targetUserId: user.id, oldValue: user.verifiedAt ? "verified" : "not verified", newValue: verified ? "verified" : "not verified", reason: cleanReason(reasonRaw) } }),
   ]);
   revalidateSite(user.steamId);

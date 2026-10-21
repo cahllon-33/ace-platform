@@ -58,3 +58,9 @@
 .ax-skel i { display: block; height: 2rem; border-radius: .5rem; background: linear-gradient(90deg, #111318 25%, #1b1e25 50%, #111318 75%); background-size: 200% 100%; animation: ax-shimmer 1.4s infinite; }
 @keyframes ax-shimmer { to { background-position: -200% 0; } }
 @media (prefers-reduced-motion: reduce) { .ax-skel i { animation: none; } .acx .acx-kpi, .ax-btn { transition: none; } }
+
+.ax-reports { list-style: none; margin: .75rem 0 0; padding: 0; display: grid; gap: .5rem; }
+.ax-reports li { display: flex; justify-content: space-between; gap: .75rem; flex-wrap: wrap; padding: .75rem .9rem; border-radius: .7rem; border: 1px solid rgba(212,175,55,.2); }
+.ax-reports p { margin: .35rem 0 0; color: #b9b3a3; overflow-wrap: anywhere; }
+.ax-row-actions { display: inline-flex; gap: .4rem; align-items: center; }
+.ax-ghost { background: transparent !important; color: #FFD76A !important; border: 1px solid rgba(212,175,55,.45) !important; }

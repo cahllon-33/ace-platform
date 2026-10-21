@@ -101,6 +101,8 @@ model User {
   matchPlayers       MatchPlayer[]
   createdTournaments Tournament[]     @relation("TournamentCreator")
   reports            MatchDispute[]   @relation("DisputeReporter")
+  playerReportsFiled PlayerReport[]   @relation("PlayerReportReporter")
+  notifications      Notification[]
 }
 
 model UserSession {
@@ -387,4 +389,31 @@ model AdminAuditLog {
 
   @@index([targetUserId, createdAt])
   @@index([createdAt])
+}
+
+model PlayerReport {
+  id            String    @id @default(cuid())
+  reporterId    String
+  targetSteamId String
+  reason        String
+  details       String    @default("")
+  status        String    @default("open")
+  resolvedBy    String?
+  resolvedAt    DateTime?
+  createdAt     DateTime  @default(now())
+  reporter      User      @relation("PlayerReportReporter", fields: [reporterId], references: [id], onDelete: Cascade)
+
+  @@index([status, createdAt])
+  @@index([reporterId, createdAt])
+}
+
+model Notification {
+  id        String    @id @default(cuid())
+  userId    String
+  kind      String
+  readAt    DateTime?
+  createdAt DateTime  @default(now())
+  user      User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId, readAt])
 }

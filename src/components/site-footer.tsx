@@ -76,13 +76,17 @@ export function SiteFooter() {
                 {ui.nav[item.key]}
               </Link>
             ))}
+            <Link href="/seasons">{ui.r41.se.title}</Link>
           </nav>
           <nav aria-label={ui.footer.company}>
             <p>{ui.footer.company}</p>
+            <Link href="/about">{ui.r41.ab.title}</Link>
             <Link href="/features">{ui.nav.features}</Link>
             <Link href="/shop">{ui.nav.shop}</Link>
             <Link href="/support">{t("support")}</Link>
             <Link href="/contact">{t("contact")}</Link>
+            <Link href="/status">{ui.r41.ss.title}</Link>
+            <Link href="/report">{ui.r41.rp.open}</Link>
           </nav>
           <nav aria-label={ui.footer.legal}>
             <p>{ui.footer.legal}</p>

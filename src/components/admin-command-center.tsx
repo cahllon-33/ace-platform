@@ -31,7 +31,7 @@ import {
   type AdminReport,
 } from "@/server/admin-users";
 import { AdminTvWall } from "@/components/admin-tv-wall";
-import { AdminAuditPanel, AdminPlayerOps, CsvExportButton, useAdmin40 } from "@/components/admin-ops";
+import { AdminAuditPanel, AdminPlayerOps, AdminPlayerReports, CsvExportButton, useAdmin40 } from "@/components/admin-ops";
 import "@/components/admin-r40.css";
 import type { TvWall } from "@/server/admin-broadcast";
 import { PlayerAvatar } from "@/components/floating-emblem";
@@ -451,6 +451,7 @@ export function AdminCommandCenter({
     ["acx-matches", "navMatches", matches.length],
     ["acx-reports", "navReports", reports.length],
     ["acx-tournaments", "navTournaments", tournaments.length],
+    ["acx-player-reports", "navPlayerReports", null],
     ["acx-audit", "navAudit", null],
   ];
 
@@ -882,6 +883,7 @@ export function AdminCommandCenter({
               </dl>
             ) : null}
           </section>
+          <AdminPlayerReports onChanged={() => setAuditKey((n) => n + 1)} />
           <AdminAuditPanel refreshKey={auditKey} />
           <section id="acx-tournaments" className="acx-card acx-anchor" aria-labelledby="acx-tournaments-title">
             <h2 id="acx-tournaments-title" className="acx-card-title">{t("tournamentsTitle")}</h2>

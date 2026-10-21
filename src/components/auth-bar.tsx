@@ -1,3 +1,4 @@
+import { prisma } from "@/lib/db";
 import { getUi } from "@/server/locale";
 import { VerifiedMark } from "@/components/verified-mark";
 import { isVerified, verifyTier } from "@/lib/verification";
@@ -27,6 +28,7 @@ export async function AuthBar() {
   // Server-side only: SteamID from the session record, matched against ACE_ADMIN_STEAM_IDS.
   const isOwner = isAllowlistedSteamId(user?.steamId, process.env.ACE_ADMIN_STEAM_IDS);
   const copy = (await getText()).home.shell;
+  const unread = user ? await prisma.notification.count({ where: { userId: user.id, readAt: null } }).catch(() => 0) : 0;
   const level = user ? rankLevelFromRp(user.competitiveRating) : null;
   const label = user ? guardDisplayName(user.displayName, user.steamId) : null;
   const initial = label?.trim().charAt(0).toUpperCase() ?? "P";
@@ -47,14 +49,13 @@ export async function AuthBar() {
           <span className="text-[0.65rem] font-bold tracking-[0.18em] text-[#FFD76A]">{copy.elite}</span>
         </span>
       ) : null}
-      <span className="ace-util-frame" title={copy.notificationsTitle} aria-label={copy.notificationsAria}>
+      <Link href="/notifications" prefetch={false} className="ace-util-frame no-underline" title={copy.notificationsTitle} aria-label={copy.notificationsAria}>
         <svg viewBox="0 0 24 24" className="h-4 w-4" aria-hidden="true" fill="none" stroke="currentColor" strokeWidth="1.8">
           <path d="M6 16V10a6 6 0 1 1 12 0v6l1.5 2H4.5L6 16Z" />
           <path d="M10 19a2 2 0 0 0 4 0" />
         </svg>
-        <span className="ace-util-count">0</span>
-        <span className="sr-only"><T k="notifications" /></span>
-      </span>
+        {unread > 0 ? <span className="ace-util-count">{unread > 9 ? "9+" : unread}</span> : null}
+      </Link>
       <Link
         href={user ? "/dashboard" : STEAM_AUTH_HREF}
         prefetch={false}

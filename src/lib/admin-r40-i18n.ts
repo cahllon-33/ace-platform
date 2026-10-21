@@ -11,6 +11,7 @@ export const ADMIN40_EN = {
   colWhen: "When", colWho: "Who", colAction: "Action", colTarget: "Player", colChange: "Change", colReason: "Reason",
   exportCsv: "Export CSV", all: "All", banned: "Banned", overridden: "Overridden", sort: "Sort", sortRp: "RP (high → low)", sortName: "Name (A → Z)", sortNew: "Newest first",
   verifyTitle: "Verification", verifyOn: "Verified · Steam linked, good standing, operator reviewed", verifyOff: "Not verified", verifyIneligible: "Needs a linked Steam account and ACTIVE status first", grant: "Grant verification", revoke: "Revoke verification",
+  playerReports: "Player reports", playerReportsLede: "Reports sent through /report. Oldest open report first; every outcome is audited.", reportsEmpty: "No open player reports.", actioned: "Mark actioned", dismiss: "Dismiss", reportFrom: "From {name}", navPlayerReports: "Player reports",
   prev: "Previous", next: "Next", page: "Page {page} of {pages}", loading: "Loading…",
 };
 export const ADMIN40_HE: Record<keyof typeof ADMIN40_EN, string> = {
@@ -25,6 +26,7 @@ export const ADMIN40_HE: Record<keyof typeof ADMIN40_EN, string> = {
   colWhen: "מתי", colWho: "מי", colAction: "פעולה", colTarget: "שחקן", colChange: "שינוי", colReason: "סיבה",
   exportCsv: "ייצוא CSV", all: "הכול", banned: "חסומים", overridden: "עם דריסה", sort: "מיון", sortRp: "RP (גבוה ← נמוך)", sortName: "שם (א ← ת)", sortNew: "החדשים קודם",
   verifyTitle: "אימות", verifyOn: "מאומת · Steam מחובר, חשבון תקין, נבדק על ידי מפעיל", verifyOff: "לא מאומת", verifyIneligible: "נדרשים חשבון Steam מחובר וסטטוס ACTIVE", grant: "הענקת אימות", revoke: "ביטול אימות",
+  playerReports: "דיווחי שחקנים", playerReportsLede: "דיווחים שנשלחו דרך ‎/report. הדיווח הפתוח הישן ביותר ראשון; כל החלטה נרשמת ביומן.", reportsEmpty: "אין דיווחי שחקנים פתוחים.", actioned: "סימון כטופל", dismiss: "דחייה", reportFrom: "מאת {name}", navPlayerReports: "דיווחי שחקנים",
   prev: "הקודם", next: "הבא", page: "עמוד {page} מתוך {pages}", loading: "טוען…",
 };
 export type Admin40Key = keyof typeof ADMIN40_EN;
