@@ -85,6 +85,8 @@ model User {
   rankOverrideAt     DateTime?
   /// Private operator note (admin only, never rendered publicly).
   adminNote          String           @default("")
+  /// Operator verification (R41). The public check also requires a linked Steam account and ACTIVE status.
+  verifiedAt         DateTime?
   createdAt         DateTime         @default(now())
   updatedAt         DateTime         @updatedAt
 

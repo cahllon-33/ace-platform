@@ -392,5 +392,82 @@ export const UI_CS: Ui = {
       "body": "Nic nebylo účtováno a tvůj účet je v bezpečí. Zkus to znovu nebo se vrať na úvod.",
       "retry": "Zkusit znovu"
     }
+  },
+  "r41": {
+    "vf": {
+      "label": "Ověřený hráč",
+      "tip": "Ověřeno: propojený Steam, účet v pořádku, zkontrolováno A.C.E."
+    },
+    "st": {
+      "kicker": "Výkon",
+      "title": "Statistiky hráče",
+      "lede": "Každé číslo pochází ze zaznamenaných zápasů A.C.E. Nic se neodhaduje.",
+      "empty": "Zatím žádné zaznamenané zápasy. Statistiky se zobrazí po prvním hodnoceném zápase.",
+      "winRate": "Úspěšnost",
+      "adr": "ADR",
+      "kr": "K/R",
+      "hs": "HS%",
+      "clutch": "Vyhrané clutche",
+      "entry": "Úspěšné vstupy",
+      "utility": "Poškození granáty",
+      "heatmap": "Aktivita",
+      "heatmapEmpty": "Zatím žádné herní dny",
+      "rpChart": "Vývoj RP",
+      "rpEmpty": "Zatím žádné změny hodnocení",
+      "maps": "Mapy",
+      "weapons": "Zbraně",
+      "multi": "Multikilly",
+      "totals": "Součty",
+      "matches": "Zápasy",
+      "kills": "Zabití",
+      "deaths": "Úmrtí",
+      "open": "Zobrazit statistiky",
+      "less": "Méně",
+      "more": "Více",
+      "none": "—"
+    },
+    "ab": {
+      "title": "O A.C.E.",
+      "lede": "Soutěžní platforma pro Counter-Strike 2 postavená na jedné veřejné tabulce hodností a plánech, které nikdy nekupují výhodu.",
+      "b1": "A.C.E. provozuje hodnocené hry, žebříčky a turnaje v CS2. Přihlášení přes Steam OpenID; tvé heslo ke Steamu nikdy nevidíme.",
+      "b2": "Tvá hodnost se počítá jen ze zaznamenaných výsledků podle zveřejněných pravidel. Placené plány jsou jen kosmetické a pro pohodlí.",
+      "b3": "A.C.E. je nezávislá platforma a není spojena se společností Valve."
+    },
+    "ss": {
+      "title": "Stav serverů",
+      "lede": "Živé kontroly z tohoto serveru v okamžiku otevření stránky. Nic se zde neodhaduje.",
+      "web": "Web",
+      "db": "Databáze",
+      "match": "Herní servery",
+      "ok": "V provozu",
+      "down": "Nedostupné",
+      "notLive": "Zatím nespuštěno",
+      "checked": "Zkontrolováno {time}"
+    },
+    "rp": {
+      "title": "Nahlásit hráče",
+      "lede": "Řekni operátorům, co se stalo. Každé hlášení kontroluje člověk.",
+      "target": "SteamID64 hráče",
+      "reason": "Důvod",
+      "rCheat": "Podvádění",
+      "rToxic": "Urážlivé chování",
+      "rOther": "Jiné",
+      "details": "Podrobnosti (volitelné)",
+      "submit": "Odeslat hlášení",
+      "signIn": "Pro odeslání hlášení se přihlas přes Steam.",
+      "sent": "Hlášení přijato. Operátoři kontrolují každé hlášení.",
+      "invalid": "Zadej platné SteamID64 (17 číslic).",
+      "open": "Nahlásit hráče"
+    },
+    "nt": {
+      "title": "Oznámení",
+      "empty": "Vše máš přečtené.",
+      "markRead": "Označit vše jako přečtené"
+    },
+    "se": {
+      "title": "Sezóny",
+      "lede": "Sezóny vynulují umístění a udělí odznaky za konec sezóny.",
+      "none": "Zatím nezačala žádná sezóna. První sezóna bude oznámena zde."
+    }
   }
 };

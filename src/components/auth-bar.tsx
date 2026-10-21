@@ -1,3 +1,6 @@
+import { getUi } from "@/server/locale";
+import { VerifiedMark } from "@/components/verified-mark";
+import { isVerified, verifyTier } from "@/lib/verification";
 import { guardDisplayName } from "@/lib/display-name-guard";
 import { AuthToastWatcher } from "@/components/toast-triggers";
 import Link from "next/link";
@@ -31,6 +34,7 @@ export async function AuthBar() {
   return (
     <div className="flex flex-wrap items-center justify-end gap-2">
       <AuthToastWatcher name={label} />
+      {user && isVerified(user) ? <VerifiedMark tier={verifyTier(user.subscriptionTier)} label={(await getUi()).r41.vf.tip} size={18} /> : null}
       <HubSearch />
       {isOwner ? (
         <Link href="/admin/dashboard" prefetch={false} className="ace-admin-navlink no-underline">

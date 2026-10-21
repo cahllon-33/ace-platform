@@ -392,5 +392,82 @@ export const UI_FI: Ui = {
       "body": "Mitään ei veloitettu ja tilisi on turvassa. Yritä uudelleen tai palaa etusivulle.",
       "retry": "Yritä uudelleen"
     }
+  },
+  "r41": {
+    "vf": {
+      "label": "Vahvistettu pelaaja",
+      "tip": "Vahvistettu: Steam yhdistetty, tili kunnossa, A.C.E.:n tarkastama."
+    },
+    "st": {
+      "kicker": "Suoritus",
+      "title": "Pelaajatilastot",
+      "lede": "Jokainen luku tulee kirjatuista A.C.E.-otteluista. Mitään ei arvioida.",
+      "empty": "Ei vielä kirjattuja otteluita. Tilastot näkyvät ensimmäisen rankattu-ottelun jälkeen.",
+      "winRate": "Voittoprosentti",
+      "adr": "ADR",
+      "kr": "K/R",
+      "hs": "HS%",
+      "clutch": "Voitetut clutchit",
+      "entry": "Avausten onnistuminen",
+      "utility": "Utility-vahinko",
+      "heatmap": "Aktiivisuus",
+      "heatmapEmpty": "Ei vielä pelipäiviä",
+      "rpChart": "RP-kehitys",
+      "rpEmpty": "Ei vielä pistemuutoksia",
+      "maps": "Kartat",
+      "weapons": "Aseet",
+      "multi": "Monitapot",
+      "totals": "Yhteensä",
+      "matches": "Ottelut",
+      "kills": "Tapot",
+      "deaths": "Kuolemat",
+      "open": "Näytä tilastot",
+      "less": "Vähemmän",
+      "more": "Enemmän",
+      "none": "—"
+    },
+    "ab": {
+      "title": "Tietoa A.C.E.:stä",
+      "lede": "Counter-Strike 2 -kilpailualusta, joka perustuu yhteen julkiseen arvotaulukkoon ja tilauksiin, jotka eivät koskaan osta etua.",
+      "b1": "A.C.E. pyörittää rankattuja pelejä, tikkaita ja turnauksia CS2:ssa. Kirjautuminen tapahtuu Steam OpenID:llä; emme näe Steam-salasanaasi.",
+      "b2": "Arvosi lasketaan vain kirjatuista tuloksista julkaistujen sääntöjen mukaan. Maksulliset tilaukset ovat vain kosmeettisia ja mukavuutta.",
+      "b3": "A.C.E. on itsenäinen alusta eikä liity Valveen."
+    },
+    "ss": {
+      "title": "Palvelimien tila",
+      "lede": "Reaaliaikaiset tarkistukset tältä palvelimelta sivun avaushetkellä. Mitään ei arvioida.",
+      "web": "Verkkosivusto",
+      "db": "Tietokanta",
+      "match": "Ottelupalvelimet",
+      "ok": "Toiminnassa",
+      "down": "Ei käytettävissä",
+      "notLive": "Ei vielä käytössä",
+      "checked": "Tarkistettu {time}"
+    },
+    "rp": {
+      "title": "Ilmoita pelaajasta",
+      "lede": "Kerro operaattoreille, mitä tapahtui. Ihminen tarkistaa jokaisen ilmoituksen.",
+      "target": "Pelaajan SteamID64",
+      "reason": "Syy",
+      "rCheat": "Huijaaminen",
+      "rToxic": "Loukkaava käytös",
+      "rOther": "Muu",
+      "details": "Lisätiedot (valinnainen)",
+      "submit": "Lähetä ilmoitus",
+      "signIn": "Kirjaudu Steamilla lähettääksesi ilmoituksen.",
+      "sent": "Ilmoitus vastaanotettu. Operaattorit tarkistavat jokaisen ilmoituksen.",
+      "invalid": "Anna kelvollinen SteamID64 (17 numeroa).",
+      "open": "Ilmoita pelaajasta"
+    },
+    "nt": {
+      "title": "Ilmoitukset",
+      "empty": "Kaikki luettu.",
+      "markRead": "Merkitse kaikki luetuiksi"
+    },
+    "se": {
+      "title": "Kaudet",
+      "lede": "Kaudet nollaavat sijoitukset ja jakavat kauden päätösmerkit.",
+      "none": "Yhtään kautta ei ole vielä alkanut. Ensimmäinen kausi julkistetaan täällä."
+    }
   }
 };

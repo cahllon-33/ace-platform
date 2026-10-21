@@ -392,5 +392,82 @@ export const UI_RO: Ui = {
       "body": "Nu s-a perceput nicio plată și contul tău e în siguranță. Încearcă din nou sau revino la pagina principală.",
       "retry": "Încearcă din nou"
     }
+  },
+  "r41": {
+    "vf": {
+      "label": "Jucător verificat",
+      "tip": "Verificat: Steam conectat, cont în regulă, verificat de A.C.E."
+    },
+    "st": {
+      "kicker": "Performanță",
+      "title": "Statistici jucător",
+      "lede": "Fiecare cifră provine din meciuri A.C.E. înregistrate. Nimic nu e estimat.",
+      "empty": "Niciun meci înregistrat încă. Statisticile apar după primul meci clasat.",
+      "winRate": "Rată de victorii",
+      "adr": "ADR",
+      "kr": "K/R",
+      "hs": "HS%",
+      "clutch": "Clutch-uri câștigate",
+      "entry": "Reușită la intrare",
+      "utility": "Daune din utilitare",
+      "heatmap": "Activitate",
+      "heatmapEmpty": "Nicio zi de joc încă",
+      "rpChart": "Evoluție RP",
+      "rpEmpty": "Nicio schimbare de punctaj încă",
+      "maps": "Hărți",
+      "weapons": "Arme",
+      "multi": "Multi-kill-uri",
+      "totals": "Totaluri",
+      "matches": "Meciuri",
+      "kills": "Ucideri",
+      "deaths": "Morți",
+      "open": "Vezi statisticile",
+      "less": "Mai puțin",
+      "more": "Mai mult",
+      "none": "—"
+    },
+    "ab": {
+      "title": "Despre A.C.E.",
+      "lede": "O platformă competitivă Counter-Strike 2 construită în jurul unui tabel public de ranguri și al unor planuri care nu cumpără niciodată avantaj.",
+      "b1": "A.C.E. organizează meciuri clasate, clasamente și turnee CS2. Autentificarea e prin Steam OpenID; nu vedem niciodată parola ta Steam.",
+      "b2": "Rangul tău se calculează doar din rezultate înregistrate, după reguli publicate. Planurile plătite sunt doar cosmetice și de confort.",
+      "b3": "A.C.E. este o platformă independentă și nu este afiliată cu Valve."
+    },
+    "ss": {
+      "title": "Starea serverelor",
+      "lede": "Verificări live de pe acest server în momentul deschiderii paginii. Nimic nu e estimat.",
+      "web": "Site",
+      "db": "Bază de date",
+      "match": "Servere de meci",
+      "ok": "Funcțional",
+      "down": "Indisponibil",
+      "notLive": "Încă neactiv",
+      "checked": "Verificat {time}"
+    },
+    "rp": {
+      "title": "Raportează un jucător",
+      "lede": "Spune-le operatorilor ce s-a întâmplat. Fiecare raport e analizat de un om.",
+      "target": "SteamID64 al jucătorului",
+      "reason": "Motiv",
+      "rCheat": "Trișat",
+      "rToxic": "Comportament abuziv",
+      "rOther": "Altceva",
+      "details": "Detalii (opțional)",
+      "submit": "Trimite raportul",
+      "signIn": "Autentifică-te cu Steam pentru a trimite un raport.",
+      "sent": "Raport primit. Operatorii analizează fiecare raport.",
+      "invalid": "Introdu un SteamID64 valid (17 cifre).",
+      "open": "Raportează un jucător"
+    },
+    "nt": {
+      "title": "Notificări",
+      "empty": "Ești la zi.",
+      "markRead": "Marchează tot ca citit"
+    },
+    "se": {
+      "title": "Sezoane",
+      "lede": "Sezoanele vor reseta clasarea și vor acorda insigne de final de sezon.",
+      "none": "Niciun sezon nu a început încă. Primul va fi anunțat aici."
+    }
   }
 };

@@ -392,5 +392,82 @@ export const UI_PL: Ui = {
       "body": "Nic nie zostało pobrane, a twoje konto jest bezpieczne. Spróbuj ponownie lub wróć na stronę główną.",
       "retry": "Spróbuj ponownie"
     }
+  },
+  "r41": {
+    "vf": {
+      "label": "Zweryfikowany gracz",
+      "tip": "Zweryfikowano: Steam połączony, konto w dobrej kondycji, sprawdzone przez A.C.E."
+    },
+    "st": {
+      "kicker": "Wyniki",
+      "title": "Statystyki gracza",
+      "lede": "Każda liczba pochodzi z zapisanych meczów A.C.E. Nic nie jest szacowane.",
+      "empty": "Brak zapisanych meczów. Statystyki pojawią się po pierwszym meczu rankingowym.",
+      "winRate": "Odsetek wygranych",
+      "adr": "ADR",
+      "kr": "K/R",
+      "hs": "HS%",
+      "clutch": "Wygrane clutche",
+      "entry": "Skuteczność wejść",
+      "utility": "Obrażenia z granatów",
+      "heatmap": "Aktywność",
+      "heatmapEmpty": "Brak dni z meczami",
+      "rpChart": "Postęp RP",
+      "rpEmpty": "Brak zmian oceny",
+      "maps": "Mapy",
+      "weapons": "Bronie",
+      "multi": "Multikille",
+      "totals": "Sumy",
+      "matches": "Mecze",
+      "kills": "Zabójstwa",
+      "deaths": "Śmierci",
+      "open": "Zobacz statystyki",
+      "less": "Mniej",
+      "more": "Więcej",
+      "none": "—"
+    },
+    "ab": {
+      "title": "O A.C.E.",
+      "lede": "Platforma rywalizacji w Counter-Strike 2 oparta na jednej publicznej tabeli rang i planach, które nigdy nie kupują przewagi.",
+      "b1": "A.C.E. prowadzi mecze rankingowe, drabinki i turnieje CS2. Logowanie przez Steam OpenID; nigdy nie widzimy twojego hasła Steam.",
+      "b2": "Twoja ranga jest liczona tylko z zapisanych wyników według opublikowanych zasad. Płatne plany są wyłącznie kosmetyczne i dla wygody.",
+      "b3": "A.C.E. jest niezależną platformą i nie jest powiązana z Valve."
+    },
+    "ss": {
+      "title": "Stan serwerów",
+      "lede": "Sprawdzenie na żywo z tego serwera w chwili otwarcia strony. Nic nie jest szacowane.",
+      "web": "Strona",
+      "db": "Baza danych",
+      "match": "Serwery meczowe",
+      "ok": "Działa",
+      "down": "Niedostępne",
+      "notLive": "Jeszcze nieaktywne",
+      "checked": "Sprawdzono {time}"
+    },
+    "rp": {
+      "title": "Zgłoś gracza",
+      "lede": "Powiedz operatorom, co się stało. Każde zgłoszenie sprawdza człowiek.",
+      "target": "SteamID64 gracza",
+      "reason": "Powód",
+      "rCheat": "Oszukiwanie",
+      "rToxic": "Obraźliwe zachowanie",
+      "rOther": "Inne",
+      "details": "Szczegóły (opcjonalnie)",
+      "submit": "Wyślij zgłoszenie",
+      "signIn": "Zaloguj się przez Steam, aby wysłać zgłoszenie.",
+      "sent": "Zgłoszenie przyjęte. Operatorzy sprawdzają każde zgłoszenie.",
+      "invalid": "Podaj prawidłowy SteamID64 (17 cyfr).",
+      "open": "Zgłoś gracza"
+    },
+    "nt": {
+      "title": "Powiadomienia",
+      "empty": "Wszystko przeczytane.",
+      "markRead": "Oznacz wszystko jako przeczytane"
+    },
+    "se": {
+      "title": "Sezony",
+      "lede": "Sezony wyzerują pozycje i przyznają odznaki na koniec sezonu.",
+      "none": "Żaden sezon jeszcze się nie zaczął. Pierwszy zostanie ogłoszony tutaj."
+    }
   }
 };

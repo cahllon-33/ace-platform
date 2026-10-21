@@ -8,7 +8,7 @@ import { readAdminActor, readAdminGate } from "@/server/admin-gate";
 import { canUsePremiumRankArt } from "@/server/rank-art";
 
 export type AuditEntry = { id: string; actor: string; action: string; targetUserId: string | null; targetName: string | null; oldValue: string; newValue: string; reason: string; at: string };
-export type PlayerOps = { note: string; overrideActive: boolean; baseRp: number | null; baseLabel: string | null; rp: number; art: "auto" | "standard" | "premium"; premiumAllowed: boolean; audit: AuditEntry[] };
+export type PlayerOps = { note: string; overrideActive: boolean; baseRp: number | null; baseLabel: string | null; rp: number; art: "auto" | "standard" | "premium"; premiumAllowed: boolean; verified: boolean; verifyEligible: boolean; audit: AuditEntry[] };
 
 const SITE_PATHS = ["/admin/dashboard", "/leaderboard", "/dashboard", "/"];
 function revalidateSite(steamId?: string | null) {
@@ -46,6 +46,8 @@ export async function loadPlayerOps(userId: string): Promise<PlayerOps | null> {
     rp: user.competitiveRating,
     art: artLabel(user.rankArt),
     premiumAllowed: canUsePremiumRankArt(user.subscriptionTier),
+    verified: user.verifiedAt != null,
+    verifyEligible: Boolean(user.steamId) && user.accountStatus === "ACTIVE",
     audit: toEntries(rows, new Map([[user.id, user.displayName]])),
   };
 }
@@ -142,4 +144,18 @@ export async function exportPlayersCsv(): Promise<string | null> {
   });
   await audit("export.csv", null, "", `${rows.length} rows`, "");
   return toCsv(rows, ["id", "steamId", "name", "status", "plan", "rp", "rank", "division", "wins", "losses", "override", "joined"]);
+}
+
+/** Grant/revoke the operator review step of verification. The public mark also needs Steam + ACTIVE. */
+export async function setPlayerVerified(userId: string, verified: boolean, reasonRaw: string) {
+  const user = await gated(userId);
+  if (!user) return { ok: false as const, error: "denied" };
+  if (verified && !(user.steamId && user.accountStatus === "ACTIVE")) return { ok: false as const, error: "not_eligible" };
+  if ((user.verifiedAt != null) === verified) return { ok: false as const, error: "nochange" };
+  await prisma.$transaction([
+    prisma.user.update({ where: { id: user.id }, data: { verifiedAt: verified ? new Date() : null } }),
+    prisma.adminAuditLog.create({ data: { actor: await readAdminActor(), action: verified ? "verify.grant" : "verify.revoke", targetUserId: user.id, oldValue: user.verifiedAt ? "verified" : "not verified", newValue: verified ? "verified" : "not verified", reason: cleanReason(reasonRaw) } }),
+  ]);
+  revalidateSite(user.steamId);
+  return { ok: true as const };
 }

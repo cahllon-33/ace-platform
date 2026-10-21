@@ -392,5 +392,82 @@ export const UI_HU: Ui = {
       "body": "Nem történt terhelés, és a fiókod biztonságban van. Próbáld újra, vagy térj vissza a kezdőlapra.",
       "retry": "Újra"
     }
+  },
+  "r41": {
+    "vf": {
+      "label": "Ellenőrzött játékos",
+      "tip": "Ellenőrizve: Steam összekapcsolva, rendezett fiók, az A.C.E. átnézte."
+    },
+    "st": {
+      "kicker": "Teljesítmény",
+      "title": "Játékosstatisztika",
+      "lede": "Minden szám rögzített A.C.E.-meccsekből származik. Semmi sem becslés.",
+      "empty": "Még nincs rögzített meccs. A statisztikák az első rangsorolt meccs után jelennek meg.",
+      "winRate": "Győzelmi arány",
+      "adr": "ADR",
+      "kr": "K/R",
+      "hs": "HS%",
+      "clutch": "Megnyert clutchok",
+      "entry": "Belépési siker",
+      "utility": "Utility-sebzés",
+      "heatmap": "Aktivitás",
+      "heatmapEmpty": "Még nincs játéknap",
+      "rpChart": "RP-alakulás",
+      "rpEmpty": "Még nincs pontváltozás",
+      "maps": "Pályák",
+      "weapons": "Fegyverek",
+      "multi": "Többszörös ölések",
+      "totals": "Összesen",
+      "matches": "Meccsek",
+      "kills": "Ölések",
+      "deaths": "Halálok",
+      "open": "Statisztika megtekintése",
+      "less": "Kevesebb",
+      "more": "Több",
+      "none": "—"
+    },
+    "ab": {
+      "title": "Az A.C.E.-ről",
+      "lede": "Counter-Strike 2 versenyplatform egyetlen nyilvános rangtáblázattal és olyan csomagokkal, amelyek soha nem vesznek előnyt.",
+      "b1": "Az A.C.E. rangsorolt játékot, ranglistákat és tornákat szervez CS2-ben. A belépés Steam OpenID-vel történik; a Steam-jelszavadat soha nem látjuk.",
+      "b2": "A rangodat csak rögzített eredményekből, közzétett szabályok szerint számoljuk. A fizetős csomagok csak kozmetikai és kényelmi célúak.",
+      "b3": "Az A.C.E. független platform, nem áll kapcsolatban a Valve-val."
+    },
+    "ss": {
+      "title": "Szerverállapot",
+      "lede": "Élő ellenőrzés erről a szerverről az oldal megnyitásakor. Semmi sem becslés.",
+      "web": "Weboldal",
+      "db": "Adatbázis",
+      "match": "Meccsszerverek",
+      "ok": "Működik",
+      "down": "Nem elérhető",
+      "notLive": "Még nem él",
+      "checked": "Ellenőrizve: {time}"
+    },
+    "rp": {
+      "title": "Játékos jelentése",
+      "lede": "Mondd el az operátoroknak, mi történt. Minden jelentést ember néz át.",
+      "target": "A játékos SteamID64 azonosítója",
+      "reason": "Ok",
+      "rCheat": "Csalás",
+      "rToxic": "Bántó viselkedés",
+      "rOther": "Egyéb",
+      "details": "Részletek (nem kötelező)",
+      "submit": "Jelentés küldése",
+      "signIn": "Jelentés küldéséhez jelentkezz be Steammel.",
+      "sent": "Jelentés megérkezett. Az operátorok minden jelentést átnéznek.",
+      "invalid": "Adj meg érvényes SteamID64-et (17 számjegy).",
+      "open": "Játékos jelentése"
+    },
+    "nt": {
+      "title": "Értesítések",
+      "empty": "Minden olvasva.",
+      "markRead": "Összes olvasottnak jelölése"
+    },
+    "se": {
+      "title": "Szezonok",
+      "lede": "A szezonok nullázzák a helyezést és szezonvégi jelvényeket adnak.",
+      "none": "Még nem indult szezon. Az elsőt itt jelentjük be."
+    }
   }
 };

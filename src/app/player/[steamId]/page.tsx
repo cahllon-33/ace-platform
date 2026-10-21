@@ -1,3 +1,5 @@
+import { VerifiedMark } from "@/components/verified-mark";
+import { isVerified, verifyTier } from "@/lib/verification";
 import "./player.css";
 import { RankOrb } from "@/components/rank-orb";
 import type { Metadata } from "next";
@@ -94,7 +96,7 @@ export default async function PlayerPage({ params }: { params: Promise<{ steamId
           )}
           <div className="pl39-id-text">
             <p className="pl39-kicker">{p.kicker}</p>
-            <h1 id="pl39-name">{name}</h1>
+            <h1 id="pl39-name">{name}{isVerified(user) ? <VerifiedMark tier={verifyTier(user.subscriptionTier)} label={ui.r41.vf.tip} size={26} /> : null}</h1>
             <p className="pl39-muted">{interpolate(p.memberSince, { date: since })}</p>
             <div className="pl39-tags">
               <PlayerBadges badges={badges} />

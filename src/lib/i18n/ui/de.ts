@@ -392,5 +392,82 @@ export const UI_DE: Ui = {
       "body": "Es wurde nichts berechnet und dein Konto ist sicher. Versuche es erneut oder kehre zur Startseite zurück.",
       "retry": "Erneut versuchen"
     }
+  },
+  "r41": {
+    "vf": {
+      "label": "Verifizierter Spieler",
+      "tip": "Verifiziert: Steam verknüpft, Konto in gutem Zustand, von A.C.E. geprüft."
+    },
+    "st": {
+      "kicker": "Leistung",
+      "title": "Spielerstatistik",
+      "lede": "Jede Zahl stammt aus erfassten A.C.E.-Matches. Nichts ist geschätzt.",
+      "empty": "Noch keine erfassten Matches. Statistiken erscheinen hier nach dem ersten Ranked-Match.",
+      "winRate": "Siegquote",
+      "adr": "ADR",
+      "kr": "K/R",
+      "hs": "HS%",
+      "clutch": "Gewonnene Clutches",
+      "entry": "Entry-Erfolg",
+      "utility": "Utility-Schaden",
+      "heatmap": "Aktivität",
+      "heatmapEmpty": "Noch keine Spieltage",
+      "rpChart": "RP-Verlauf",
+      "rpEmpty": "Noch keine Wertungsänderungen",
+      "maps": "Maps",
+      "weapons": "Waffen",
+      "multi": "Multi-Kills",
+      "totals": "Summen",
+      "matches": "Matches",
+      "kills": "Kills",
+      "deaths": "Tode",
+      "open": "Statistik ansehen",
+      "less": "Weniger",
+      "more": "Mehr",
+      "none": "—"
+    },
+    "ab": {
+      "title": "Über A.C.E.",
+      "lede": "Eine Wettkampfplattform für Counter-Strike 2 mit einer öffentlichen Rangtabelle und Plänen, die nie einen Vorteil verkaufen.",
+      "b1": "A.C.E. betreibt Ranked-Spiele, Ranglisten und Turniere für CS2. Die Anmeldung läuft über Steam OpenID; dein Steam-Passwort sehen wir nie.",
+      "b2": "Dein Rang wird nur aus erfassten Ergebnissen nach veröffentlichten Regeln berechnet. Bezahlte Pläne sind nur kosmetisch und für Komfort.",
+      "b3": "A.C.E. ist eine unabhängige Plattform und nicht mit Valve verbunden."
+    },
+    "ss": {
+      "title": "Serverstatus",
+      "lede": "Live-Prüfungen dieses Servers zum Zeitpunkt des Seitenaufrufs. Nichts hier ist geschätzt.",
+      "web": "Website",
+      "db": "Datenbank",
+      "match": "Match-Server",
+      "ok": "In Betrieb",
+      "down": "Nicht verfügbar",
+      "notLive": "Noch nicht live",
+      "checked": "Geprüft {time}"
+    },
+    "rp": {
+      "title": "Spieler melden",
+      "lede": "Sag den Operatoren, was passiert ist. Jede Meldung wird von einem Menschen geprüft.",
+      "target": "SteamID64 des Spielers",
+      "reason": "Grund",
+      "rCheat": "Cheating",
+      "rToxic": "Beleidigendes Verhalten",
+      "rOther": "Sonstiges",
+      "details": "Details (optional)",
+      "submit": "Meldung senden",
+      "signIn": "Melde dich mit Steam an, um eine Meldung zu senden.",
+      "sent": "Meldung erhalten. Operatoren prüfen jede Meldung.",
+      "invalid": "Gib eine gültige SteamID64 ein (17 Ziffern).",
+      "open": "Spieler melden"
+    },
+    "nt": {
+      "title": "Benachrichtigungen",
+      "empty": "Du bist auf dem neuesten Stand.",
+      "markRead": "Alle als gelesen markieren"
+    },
+    "se": {
+      "title": "Saisons",
+      "lede": "Saisons setzen die Platzierung zurück und vergeben Saisonabzeichen.",
+      "none": "Noch keine Saison gestartet. Die erste Saison wird hier angekündigt."
+    }
   }
 };

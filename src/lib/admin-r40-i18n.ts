@@ -10,6 +10,7 @@ export const ADMIN40_EN = {
   ban: "Ban", unban: "Unban", audit: "Audit log", auditEmpty: "No operator actions recorded yet.", auditLede: "Every operator change: who, when, old value, new value and reason.",
   colWhen: "When", colWho: "Who", colAction: "Action", colTarget: "Player", colChange: "Change", colReason: "Reason",
   exportCsv: "Export CSV", all: "All", banned: "Banned", overridden: "Overridden", sort: "Sort", sortRp: "RP (high → low)", sortName: "Name (A → Z)", sortNew: "Newest first",
+  verifyTitle: "Verification", verifyOn: "Verified · Steam linked, good standing, operator reviewed", verifyOff: "Not verified", verifyIneligible: "Needs a linked Steam account and ACTIVE status first", grant: "Grant verification", revoke: "Revoke verification",
   prev: "Previous", next: "Next", page: "Page {page} of {pages}", loading: "Loading…",
 };
 export const ADMIN40_HE: Record<keyof typeof ADMIN40_EN, string> = {
@@ -23,6 +24,7 @@ export const ADMIN40_HE: Record<keyof typeof ADMIN40_EN, string> = {
   ban: "חסימה", unban: "שחרור חסימה", audit: "יומן ביקורת", auditEmpty: "עדיין לא תועדו פעולות מפעיל.", auditLede: "כל שינוי של מפעיל: מי, מתי, ערך ישן, ערך חדש וסיבה.",
   colWhen: "מתי", colWho: "מי", colAction: "פעולה", colTarget: "שחקן", colChange: "שינוי", colReason: "סיבה",
   exportCsv: "ייצוא CSV", all: "הכול", banned: "חסומים", overridden: "עם דריסה", sort: "מיון", sortRp: "RP (גבוה ← נמוך)", sortName: "שם (א ← ת)", sortNew: "החדשים קודם",
+  verifyTitle: "אימות", verifyOn: "מאומת · Steam מחובר, חשבון תקין, נבדק על ידי מפעיל", verifyOff: "לא מאומת", verifyIneligible: "נדרשים חשבון Steam מחובר וסטטוס ACTIVE", grant: "הענקת אימות", revoke: "ביטול אימות",
   prev: "הקודם", next: "הבא", page: "עמוד {page} מתוך {pages}", loading: "טוען…",
 };
 export type Admin40Key = keyof typeof ADMIN40_EN;

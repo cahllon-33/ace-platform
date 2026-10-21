@@ -392,5 +392,82 @@ export const UI_PT: Ui = {
       "body": "Nada foi cobrado e a tua conta está segura. Tenta novamente ou volta ao início.",
       "retry": "Tentar novamente"
     }
+  },
+  "r41": {
+    "vf": {
+      "label": "Jogador verificado",
+      "tip": "Verificado: Steam ligado, conta em boa situação, revista pela A.C.E."
+    },
+    "st": {
+      "kicker": "Desempenho",
+      "title": "Estatísticas do jogador",
+      "lede": "Cada número vem de partidas A.C.E. registadas. Nada é estimado.",
+      "empty": "Ainda não há partidas registadas. As estatísticas aparecem após a primeira partida competitiva.",
+      "winRate": "Taxa de vitórias",
+      "adr": "ADR",
+      "kr": "K/R",
+      "hs": "HS%",
+      "clutch": "Clutches ganhos",
+      "entry": "Sucesso de entrada",
+      "utility": "Dano de utilitários",
+      "heatmap": "Atividade",
+      "heatmapEmpty": "Ainda sem dias de jogo",
+      "rpChart": "Progresso de RP",
+      "rpEmpty": "Ainda sem alterações de pontuação",
+      "maps": "Mapas",
+      "weapons": "Armas",
+      "multi": "Multi-kills",
+      "totals": "Totais",
+      "matches": "Partidas",
+      "kills": "Abates",
+      "deaths": "Mortes",
+      "open": "Ver estatísticas",
+      "less": "Menos",
+      "more": "Mais",
+      "none": "—"
+    },
+    "ab": {
+      "title": "Sobre a A.C.E.",
+      "lede": "Uma plataforma de competição de Counter-Strike 2 assente numa tabela de patentes pública e em planos que nunca compram vantagem.",
+      "b1": "A A.C.E. gere partidas competitivas, ladders e torneios de CS2. O início de sessão é via Steam OpenID; nunca vemos a tua palavra-passe Steam.",
+      "b2": "A tua patente é calculada apenas a partir de resultados registados e regras publicadas. Os planos pagos são apenas estéticos e de conveniência.",
+      "b3": "A A.C.E. é uma plataforma independente e não está associada à Valve."
+    },
+    "ss": {
+      "title": "Estado dos servidores",
+      "lede": "Verificações em direto deste servidor no momento em que abriste a página. Nada é estimado.",
+      "web": "Site",
+      "db": "Base de dados",
+      "match": "Servidores de partida",
+      "ok": "Operacional",
+      "down": "Indisponível",
+      "notLive": "Ainda não ativo",
+      "checked": "Verificado {time}"
+    },
+    "rp": {
+      "title": "Denunciar jogador",
+      "lede": "Diz aos operadores o que aconteceu. Cada denúncia é analisada por uma pessoa.",
+      "target": "SteamID64 do jogador",
+      "reason": "Motivo",
+      "rCheat": "Batota",
+      "rToxic": "Comportamento abusivo",
+      "rOther": "Outro",
+      "details": "Detalhes (opcional)",
+      "submit": "Enviar denúncia",
+      "signIn": "Inicia sessão com Steam para enviar uma denúncia.",
+      "sent": "Denúncia recebida. Os operadores analisam cada denúncia.",
+      "invalid": "Introduz um SteamID64 válido (17 dígitos).",
+      "open": "Denunciar jogador"
+    },
+    "nt": {
+      "title": "Notificações",
+      "empty": "Está tudo em dia.",
+      "markRead": "Marcar tudo como lido"
+    },
+    "se": {
+      "title": "Temporadas",
+      "lede": "As temporadas vão repor a classificação e atribuir emblemas de fim de temporada.",
+      "none": "Ainda não começou nenhuma temporada. A primeira será anunciada aqui."
+    }
   }
 };

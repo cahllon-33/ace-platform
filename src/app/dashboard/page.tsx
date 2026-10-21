@@ -1,3 +1,5 @@
+import { VerifiedMark } from "@/components/verified-mark";
+import { isVerified, verifyTier } from "@/lib/verification";
 import { guardDisplayName } from "@/lib/display-name-guard";
 import { RankOrb } from "@/components/rank-orb";
 import type { Metadata } from "next";
@@ -94,7 +96,7 @@ export default async function DashboardPage() {
           )}
           <div className="min-w-0">
             <p className="d40-kicker">{d.kicker}</p>
-            <h1 id="d40-title" className="d40-title">{interpolate(d.welcome, { name: shownName })}</h1>
+            <h1 id="d40-title" className="d40-title">{interpolate(d.welcome, { name: shownName })}{isVerified(user) ? <VerifiedMark tier={verifyTier(user.subscriptionTier)} label={ui.r41.vf.tip} size={24} /> : null}</h1>
             <p className="d40-lede">{copy.lede}</p>
           </div>
         </div>

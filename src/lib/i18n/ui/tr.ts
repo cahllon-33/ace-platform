@@ -392,5 +392,82 @@ export const UI_TR: Ui = {
       "body": "Hiçbir ücret alınmadı ve hesabın güvende. Tekrar dene veya ana sayfaya dön.",
       "retry": "Tekrar dene"
     }
+  },
+  "r41": {
+    "vf": {
+      "label": "Doğrulanmış oyuncu",
+      "tip": "Doğrulandı: Steam bağlı, hesap iyi durumda, A.C.E. tarafından incelendi."
+    },
+    "st": {
+      "kicker": "Performans",
+      "title": "Oyuncu istatistikleri",
+      "lede": "Her sayı kayıtlı A.C.E. maçlarından gelir. Hiçbir şey tahmin değildir.",
+      "empty": "Henüz kayıtlı maç yok. İstatistikler ilk dereceli maçtan sonra görünür.",
+      "winRate": "Kazanma oranı",
+      "adr": "ADR",
+      "kr": "K/R",
+      "hs": "HS%",
+      "clutch": "Kazanılan clutch'lar",
+      "entry": "Giriş başarısı",
+      "utility": "Utility hasarı",
+      "heatmap": "Etkinlik",
+      "heatmapEmpty": "Henüz maç günü yok",
+      "rpChart": "RP gelişimi",
+      "rpEmpty": "Henüz puan değişikliği yok",
+      "maps": "Haritalar",
+      "weapons": "Silahlar",
+      "multi": "Çoklu öldürmeler",
+      "totals": "Toplamlar",
+      "matches": "Maçlar",
+      "kills": "Öldürmeler",
+      "deaths": "Ölümler",
+      "open": "İstatistikleri gör",
+      "less": "Az",
+      "more": "Çok",
+      "none": "—"
+    },
+    "ab": {
+      "title": "A.C.E. hakkında",
+      "lede": "Tek bir herkese açık rütbe tablosu ve asla avantaj satın almayan planlar üzerine kurulu bir Counter-Strike 2 rekabet platformu.",
+      "b1": "A.C.E. CS2 için dereceli oyun, merdiven ve turnuvalar düzenler. Giriş Steam OpenID iledir; Steam şifreni asla görmeyiz.",
+      "b2": "Rütben yalnızca kayıtlı sonuçlardan, yayınlanmış kurallarla hesaplanır. Ücretli planlar yalnızca kozmetik ve kolaylık içindir.",
+      "b3": "A.C.E. bağımsız bir platformdur ve Valve ile bağlantılı değildir."
+    },
+    "ss": {
+      "title": "Sunucu durumu",
+      "lede": "Sayfayı açtığın anda bu sunucudan canlı kontroller. Hiçbir şey tahmin değildir.",
+      "web": "Web sitesi",
+      "db": "Veritabanı",
+      "match": "Maç sunucuları",
+      "ok": "Çalışıyor",
+      "down": "Kullanılamıyor",
+      "notLive": "Henüz yayında değil",
+      "checked": "Kontrol edildi {time}"
+    },
+    "rp": {
+      "title": "Oyuncu bildir",
+      "lede": "Operatörlere ne olduğunu anlat. Her bildirimi bir insan inceler.",
+      "target": "Oyuncunun SteamID64'ü",
+      "reason": "Sebep",
+      "rCheat": "Hile",
+      "rToxic": "Taciz edici davranış",
+      "rOther": "Diğer",
+      "details": "Ayrıntılar (isteğe bağlı)",
+      "submit": "Bildirimi gönder",
+      "signIn": "Bildirim göndermek için Steam ile giriş yap.",
+      "sent": "Bildirim alındı. Operatörler her bildirimi inceler.",
+      "invalid": "Geçerli bir SteamID64 gir (17 hane).",
+      "open": "Oyuncu bildir"
+    },
+    "nt": {
+      "title": "Bildirimler",
+      "empty": "Her şey okundu.",
+      "markRead": "Tümünü okundu işaretle"
+    },
+    "se": {
+      "title": "Sezonlar",
+      "lede": "Sezonlar sıralamayı sıfırlayacak ve sezon sonu rozetleri verecek.",
+      "none": "Henüz bir sezon başlamadı. İlk sezon burada duyurulacak."
+    }
   }
 };

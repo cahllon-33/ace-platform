@@ -392,5 +392,82 @@ export const UI_ID: Ui = {
       "body": "Tidak ada tagihan dan akunmu aman. Coba lagi atau kembali ke beranda.",
       "retry": "Coba lagi"
     }
+  },
+  "r41": {
+    "vf": {
+      "label": "Pemain terverifikasi",
+      "tip": "Terverifikasi: Steam tertaut, akun dalam kondisi baik, ditinjau oleh A.C.E."
+    },
+    "st": {
+      "kicker": "Performa",
+      "title": "Statistik pemain",
+      "lede": "Setiap angka berasal dari pertandingan A.C.E. yang tercatat. Tidak ada yang diperkirakan.",
+      "empty": "Belum ada pertandingan tercatat. Statistik muncul setelah pertandingan ranked pertama.",
+      "winRate": "Rasio menang",
+      "adr": "ADR",
+      "kr": "K/R",
+      "hs": "HS%",
+      "clutch": "Clutch dimenangkan",
+      "entry": "Keberhasilan entry",
+      "utility": "Damage utilitas",
+      "heatmap": "Aktivitas",
+      "heatmapEmpty": "Belum ada hari bermain",
+      "rpChart": "Perkembangan RP",
+      "rpEmpty": "Belum ada perubahan rating",
+      "maps": "Map",
+      "weapons": "Senjata",
+      "multi": "Multi-kill",
+      "totals": "Total",
+      "matches": "Pertandingan",
+      "kills": "Kill",
+      "deaths": "Death",
+      "open": "Lihat statistik",
+      "less": "Sedikit",
+      "more": "Banyak",
+      "none": "—"
+    },
+    "ab": {
+      "title": "Tentang A.C.E.",
+      "lede": "Platform kompetisi Counter-Strike 2 yang dibangun di atas satu tabel peringkat publik dan paket yang tidak pernah membeli keunggulan.",
+      "b1": "A.C.E. menjalankan permainan ranked, ladder, dan turnamen CS2. Masuk lewat Steam OpenID; kami tidak pernah melihat kata sandi Steam-mu.",
+      "b2": "Peringkatmu dihitung hanya dari hasil tercatat dengan aturan yang dipublikasikan. Paket berbayar hanya kosmetik dan kenyamanan.",
+      "b3": "A.C.E. adalah platform independen dan tidak berafiliasi dengan Valve."
+    },
+    "ss": {
+      "title": "Status server",
+      "lede": "Pemeriksaan langsung dari server ini saat halaman dibuka. Tidak ada yang diperkirakan.",
+      "web": "Situs web",
+      "db": "Database",
+      "match": "Server pertandingan",
+      "ok": "Beroperasi",
+      "down": "Tidak tersedia",
+      "notLive": "Belum aktif",
+      "checked": "Diperiksa {time}"
+    },
+    "rp": {
+      "title": "Laporkan pemain",
+      "lede": "Ceritakan kepada operator apa yang terjadi. Setiap laporan ditinjau oleh manusia.",
+      "target": "SteamID64 pemain",
+      "reason": "Alasan",
+      "rCheat": "Curang",
+      "rToxic": "Perilaku kasar",
+      "rOther": "Lainnya",
+      "details": "Detail (opsional)",
+      "submit": "Kirim laporan",
+      "signIn": "Masuk dengan Steam untuk mengirim laporan.",
+      "sent": "Laporan diterima. Operator meninjau setiap laporan.",
+      "invalid": "Masukkan SteamID64 yang valid (17 digit).",
+      "open": "Laporkan pemain"
+    },
+    "nt": {
+      "title": "Notifikasi",
+      "empty": "Semua sudah dibaca.",
+      "markRead": "Tandai semua dibaca"
+    },
+    "se": {
+      "title": "Musim",
+      "lede": "Musim akan mengatur ulang peringkat dan memberi lencana akhir musim.",
+      "none": "Belum ada musim yang dimulai. Musim pertama diumumkan di sini."
+    }
   }
 };

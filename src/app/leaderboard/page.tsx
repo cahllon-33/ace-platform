@@ -1,3 +1,5 @@
+import { VerifiedMark } from "@/components/verified-mark";
+import { isVerified, verifyTier, type VerifyTier } from "@/lib/verification";
 import "./lb39.css";
 import { RankOrb } from "@/components/rank-orb";
 import { guardDisplayName } from "@/lib/display-name-guard";
@@ -45,6 +47,7 @@ type BoardRow = {
   steamId: string | null;
   wins: number;
   losses: number;
+  verify: VerifyTier | null;
 };
 
 export default async function LeaderboardPage({
@@ -63,6 +66,7 @@ export default async function LeaderboardPage({
       // Real rows only: accounts with at least one recorded ranked match.
       where: {
         OR: [{ wins: { gt: 0 } }, { losses: { gt: 0 } }],
+        accountStatus: "ACTIVE",
         ...(query ? { displayName: { contains: query, mode: "insensitive" as const } } : {}),
       },
       orderBy: { competitiveRating: "desc" },
@@ -77,6 +81,8 @@ export default async function LeaderboardPage({
         wins: true,
         losses: true,
         steamId: true,
+        accountStatus: true,
+        verifiedAt: true,
       },
     });
     live = rows.map((row) => ({
@@ -93,6 +99,7 @@ export default async function LeaderboardPage({
       steamId: row.steamId,
       wins: row.wins,
       losses: row.losses,
+      verify: isVerified(row) ? verifyTier(row.subscriptionTier) : null,
       // Computed here on the server from stored rows; only the badge labels reach the page.
       badges: playerBadges({
         subscriptionTier: row.subscriptionTier,
@@ -147,7 +154,7 @@ export default async function LeaderboardPage({
                   <>
                     <span className="lb39-pod-place">#{i + 1}</span>
                     <RankOrb level={row.level} art={row.art} size={112} label={text.leaderboard.hero.title} priority={i === 0} />
-                    <span className="lb39-pod-name">{row.name}</span>
+                    <span className="lb39-pod-name">{row.name}{row.verify ? <VerifiedMark tier={row.verify} label={ui.r41.vf.tip} size={16} /> : null}</span>
                     <span className="lb39-pod-tier">{row.tier.replace(/^Rank \d+ · /, "")}</span>
                     <span className="lb39-pod-rp">{row.rp.toLocaleString("en-US")} <small>RP</small></span>
                     <span className="lb39-pod-wl">{row.wins}–{row.losses}</span>
@@ -180,7 +187,7 @@ export default async function LeaderboardPage({
                     <span className="lb39-player">
                       <RankOrb level={row.level} art={row.art} size={40} label={text.leaderboard.hero.title} />
                       <span className="lb39-player-id">
-                        {href ? <a href={href} className="lb39-name">{row.name}</a> : <span className="lb39-name">{row.name}</span>}
+                        {href ? <a href={href} className="lb39-name">{row.name}</a> : <span className="lb39-name">{row.name}</span>}{row.verify ? <VerifiedMark tier={row.verify} label={ui.r41.vf.tip} size={15} /> : null}
                         <span className="lb39-tags">
                           {row.art === "premium" ? <span className="ace-premium-tag">{text.play.premium.tag}</span> : null}
                           <PlayerBadges badges={row.badges} />

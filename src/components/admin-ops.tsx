@@ -15,6 +15,7 @@ import {
   resetRankOverride,
   saveAdminNote,
   setBanWithReason,
+  setPlayerVerified,
   type AuditEntry,
   type PlayerOps,
 } from "@/server/admin-ops";
@@ -123,6 +124,17 @@ export function AdminPlayerOps({ playerId, name, banned, onChanged }: { playerId
         <button type="button" className="ax-btn" disabled={!ops.overrideActive} onClick={() => setPending({ kind: "reset", to: ops.baseLabel ?? "" })}>{t("reset")}</button>
       </div>
       {msg ? <p className="ax-flash" role="status">{msg}</p> : null}
+
+      <h3 className="ax-h3">{t("verifyTitle")}</h3>
+      <p className={`ax-pill ${ops.verified ? "" : "is-warn"}`}>{ops.verified ? t("verifyOn") : ops.verifyEligible ? t("verifyOff") : t("verifyIneligible")}</p>
+      <button
+        type="button"
+        className="ax-btn"
+        disabled={!ops.verified && !ops.verifyEligible}
+        onClick={() => void setPlayerVerified(playerId, !ops.verified, reason).then((r) => { setMsg(r.ok ? t("done") : t("failed", { error: r.error })); reload(); onChanged(); })}
+      >
+        {ops.verified ? t("revoke") : t("grant")}
+      </button>
 
       <h3 className="ax-h3">{t("note")}</h3>
       <textarea rows={3} maxLength={2000} value={note} onChange={(e) => setNote(e.target.value)} aria-describedby="ax-note-hint" />

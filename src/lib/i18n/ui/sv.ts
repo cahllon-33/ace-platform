@@ -392,5 +392,82 @@ export const UI_SV: Ui = {
       "body": "Inget har debiterats och ditt konto är säkert. Försök igen eller gå tillbaka till start.",
       "retry": "Försök igen"
     }
+  },
+  "r41": {
+    "vf": {
+      "label": "Verifierad spelare",
+      "tip": "Verifierad: Steam kopplat, kontot i gott skick, granskat av A.C.E."
+    },
+    "st": {
+      "kicker": "Prestation",
+      "title": "Spelarstatistik",
+      "lede": "Varje siffra kommer från registrerade A.C.E.-matcher. Inget är uppskattat.",
+      "empty": "Inga registrerade matcher än. Statistik visas efter första rankade matchen.",
+      "winRate": "Vinstandel",
+      "adr": "ADR",
+      "kr": "K/R",
+      "hs": "HS%",
+      "clutch": "Vunna clutchar",
+      "entry": "Lyckade entrys",
+      "utility": "Utility-skada",
+      "heatmap": "Aktivitet",
+      "heatmapEmpty": "Inga matchdagar än",
+      "rpChart": "RP-utveckling",
+      "rpEmpty": "Inga betygsändringar än",
+      "maps": "Kartor",
+      "weapons": "Vapen",
+      "multi": "Multikills",
+      "totals": "Totalt",
+      "matches": "Matcher",
+      "kills": "Kills",
+      "deaths": "Dödsfall",
+      "open": "Visa statistik",
+      "less": "Mindre",
+      "more": "Mer",
+      "none": "—"
+    },
+    "ab": {
+      "title": "Om A.C.E.",
+      "lede": "En tävlingsplattform för Counter-Strike 2 byggd kring en offentlig rangtabell och planer som aldrig köper fördelar.",
+      "b1": "A.C.E. driver rankat spel, stegar och turneringar i CS2. Inloggning sker med Steam OpenID; vi ser aldrig ditt Steam-lösenord.",
+      "b2": "Din rang räknas bara fram ur registrerade resultat enligt publicerade regler. Betalplaner är bara kosmetiska och för bekvämlighet.",
+      "b3": "A.C.E. är en oberoende plattform och är inte knuten till Valve."
+    },
+    "ss": {
+      "title": "Serverstatus",
+      "lede": "Livekontroller från den här servern när du öppnade sidan. Inget är uppskattat.",
+      "web": "Webbplats",
+      "db": "Databas",
+      "match": "Matchservrar",
+      "ok": "I drift",
+      "down": "Ej tillgänglig",
+      "notLive": "Inte live än",
+      "checked": "Kontrollerad {time}"
+    },
+    "rp": {
+      "title": "Rapportera spelare",
+      "lede": "Berätta för operatörerna vad som hände. Varje rapport granskas av en människa.",
+      "target": "Spelarens SteamID64",
+      "reason": "Anledning",
+      "rCheat": "Fusk",
+      "rToxic": "Kränkande beteende",
+      "rOther": "Annat",
+      "details": "Detaljer (valfritt)",
+      "submit": "Skicka rapport",
+      "signIn": "Logga in med Steam för att skicka en rapport.",
+      "sent": "Rapporten mottagen. Operatörerna granskar varje rapport.",
+      "invalid": "Ange ett giltigt SteamID64 (17 siffror).",
+      "open": "Rapportera spelare"
+    },
+    "nt": {
+      "title": "Aviseringar",
+      "empty": "Allt är läst.",
+      "markRead": "Markera alla som lästa"
+    },
+    "se": {
+      "title": "Säsonger",
+      "lede": "Säsonger nollställer placeringen och delar ut säsongsmärken.",
+      "none": "Ingen säsong har startat än. Den första annonseras här."
+    }
   }
 };

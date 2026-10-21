@@ -392,5 +392,82 @@ export const UI_HR: Ui = {
       "body": "Ništa nije naplaćeno i tvoj je račun siguran. Pokušaj ponovno ili se vrati na početnu.",
       "retry": "Pokušaj ponovno"
     }
+  },
+  "r41": {
+    "vf": {
+      "label": "Provjereni igrač",
+      "tip": "Provjereno: Steam povezan, račun u redu, pregledao A.C.E."
+    },
+    "st": {
+      "kicker": "Izvedba",
+      "title": "Statistika igrača",
+      "lede": "Svaki broj dolazi iz zabilježenih A.C.E. mečeva. Ništa nije procijenjeno.",
+      "empty": "Još nema zabilježenih mečeva. Statistika će se pojaviti nakon prvog rangiranog meča.",
+      "winRate": "Postotak pobjeda",
+      "adr": "ADR",
+      "kr": "K/R",
+      "hs": "HS%",
+      "clutch": "Dobiveni clutchevi",
+      "entry": "Uspjeh ulaska",
+      "utility": "Šteta od opreme",
+      "heatmap": "Aktivnost",
+      "heatmapEmpty": "Još nema dana igranja",
+      "rpChart": "Napredak RP-a",
+      "rpEmpty": "Još nema promjena ocjene",
+      "maps": "Mape",
+      "weapons": "Oružja",
+      "multi": "Višestruka ubojstva",
+      "totals": "Ukupno",
+      "matches": "Mečevi",
+      "kills": "Ubojstva",
+      "deaths": "Smrti",
+      "open": "Pogledaj statistiku",
+      "less": "Manje",
+      "more": "Više",
+      "none": "—"
+    },
+    "ab": {
+      "title": "O A.C.E.-u",
+      "lede": "Natjecateljska platforma za Counter-Strike 2 izgrađena oko jedne javne tablice rangova i planova koji nikad ne kupuju prednost.",
+      "b1": "A.C.E. vodi rangirane igre, ljestvice i turnire za CS2. Prijava je putem Steam OpenID-a; nikad ne vidimo tvoju Steam lozinku.",
+      "b2": "Tvoj rang računa se samo iz zabilježenih rezultata prema objavljenim pravilima. Plaćeni planovi su samo kozmetički i za udobnost.",
+      "b3": "A.C.E. je neovisna platforma i nije povezan s Valveom."
+    },
+    "ss": {
+      "title": "Stanje poslužitelja",
+      "lede": "Provjere uživo s ovog poslužitelja u trenutku otvaranja stranice. Ništa nije procijenjeno.",
+      "web": "Web-stranica",
+      "db": "Baza podataka",
+      "match": "Poslužitelji mečeva",
+      "ok": "Radi",
+      "down": "Nedostupno",
+      "notLive": "Još nije aktivno",
+      "checked": "Provjereno {time}"
+    },
+    "rp": {
+      "title": "Prijavi igrača",
+      "lede": "Reci operaterima što se dogodilo. Svaku prijavu pregledava osoba.",
+      "target": "SteamID64 igrača",
+      "reason": "Razlog",
+      "rCheat": "Varanje",
+      "rToxic": "Uvredljivo ponašanje",
+      "rOther": "Ostalo",
+      "details": "Pojedinosti (neobavezno)",
+      "submit": "Pošalji prijavu",
+      "signIn": "Prijavi se putem Steama za slanje prijave.",
+      "sent": "Prijava primljena. Operateri pregledavaju svaku prijavu.",
+      "invalid": "Unesi valjani SteamID64 (17 znamenki).",
+      "open": "Prijavi igrača"
+    },
+    "nt": {
+      "title": "Obavijesti",
+      "empty": "Sve je pročitano.",
+      "markRead": "Označi sve kao pročitano"
+    },
+    "se": {
+      "title": "Sezone",
+      "lede": "Sezone će resetirati plasman i dodijeliti značke na kraju sezone.",
+      "none": "Još nije počela nijedna sezona. Prva će biti najavljena ovdje."
+    }
   }
 };

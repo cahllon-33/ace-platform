@@ -333,6 +333,83 @@ export const UI_EN = {
       "body": "Nothing was charged and your account is safe. Try again or head back home.",
       "retry": "Try again"
     }
+  },
+  "r41": {
+    "vf": {
+      "label": "Verified player",
+      "tip": "Verified: Steam linked, account in good standing, reviewed by A.C.E."
+    },
+    "st": {
+      "kicker": "Performance",
+      "title": "Player stats",
+      "lede": "Every figure comes from recorded A.C.E. matches. Nothing is estimated.",
+      "empty": "No recorded matches yet. Stats appear here after the first ranked match.",
+      "winRate": "Win rate",
+      "adr": "ADR",
+      "kr": "K/R",
+      "hs": "HS%",
+      "clutch": "Clutches won",
+      "entry": "Entry success",
+      "utility": "Utility damage",
+      "heatmap": "Activity",
+      "heatmapEmpty": "No match days yet",
+      "rpChart": "RP progress",
+      "rpEmpty": "No rating changes yet",
+      "maps": "Maps",
+      "weapons": "Weapons",
+      "multi": "Multi-kills",
+      "totals": "Totals",
+      "matches": "Matches",
+      "kills": "Kills",
+      "deaths": "Deaths",
+      "open": "View stats",
+      "less": "Less",
+      "more": "More",
+      "none": "—"
+    },
+    "ab": {
+      "title": "About A.C.E.",
+      "lede": "A Counter-Strike 2 competition platform built around one public rank table and plans that never buy an advantage.",
+      "b1": "A.C.E. runs ranked play, ladders and tournaments for CS2. Sign-in is Steam OpenID; we never see your Steam password.",
+      "b2": "Your rank is calculated only from recorded results using published rules. Paid plans are cosmetic and convenience only.",
+      "b3": "A.C.E. is an independent platform and is not affiliated with Valve."
+    },
+    "ss": {
+      "title": "Server status",
+      "lede": "Live checks from this server at the moment you opened the page. Nothing here is estimated.",
+      "web": "Website",
+      "db": "Database",
+      "match": "Match servers",
+      "ok": "Operational",
+      "down": "Unavailable",
+      "notLive": "Not live yet",
+      "checked": "Checked {time}"
+    },
+    "rp": {
+      "title": "Report a player",
+      "lede": "Tell the operators what happened. Every report is reviewed by a person.",
+      "target": "Player SteamID64",
+      "reason": "Reason",
+      "rCheat": "Cheating",
+      "rToxic": "Abusive behaviour",
+      "rOther": "Other",
+      "details": "Details (optional)",
+      "submit": "Send report",
+      "signIn": "Sign in with Steam to send a report.",
+      "sent": "Report received. Operators review every report.",
+      "invalid": "Enter a valid SteamID64 (17 digits).",
+      "open": "Report a player"
+    },
+    "nt": {
+      "title": "Notifications",
+      "empty": "You're all caught up.",
+      "markRead": "Mark all read"
+    },
+    "se": {
+      "title": "Seasons",
+      "lede": "Seasons will reset placement and award end-of-season badges.",
+      "none": "No season has started yet. The first season is announced here when it opens."
+    }
   }
 } as const;
 

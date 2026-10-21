@@ -392,5 +392,82 @@ export const UI_FR: Ui = {
       "body": "Rien n’a été facturé et ton compte est en sécurité. Réessaie ou reviens à l’accueil.",
       "retry": "Réessayer"
     }
+  },
+  "r41": {
+    "vf": {
+      "label": "Joueur vérifié",
+      "tip": "Vérifié : Steam associé, compte en règle, contrôlé par A.C.E."
+    },
+    "st": {
+      "kicker": "Performance",
+      "title": "Statistiques du joueur",
+      "lede": "Chaque chiffre provient de matchs A.C.E. enregistrés. Rien n’est estimé.",
+      "empty": "Aucun match enregistré pour l’instant. Les statistiques apparaîtront après le premier match classé.",
+      "winRate": "Taux de victoire",
+      "adr": "ADR",
+      "kr": "K/R",
+      "hs": "HS%",
+      "clutch": "Clutchs gagnés",
+      "entry": "Réussite en entry",
+      "utility": "Dégâts utilitaires",
+      "heatmap": "Activité",
+      "heatmapEmpty": "Aucun jour de jeu pour l’instant",
+      "rpChart": "Progression RP",
+      "rpEmpty": "Aucun changement de score pour l’instant",
+      "maps": "Cartes",
+      "weapons": "Armes",
+      "multi": "Multi-kills",
+      "totals": "Totaux",
+      "matches": "Matchs",
+      "kills": "Éliminations",
+      "deaths": "Morts",
+      "open": "Voir les statistiques",
+      "less": "Moins",
+      "more": "Plus",
+      "none": "—"
+    },
+    "ab": {
+      "title": "À propos d’A.C.E.",
+      "lede": "Une plateforme de compétition Counter-Strike 2 bâtie autour d’un tableau de rangs public et de formules qui n’achètent jamais d’avantage.",
+      "b1": "A.C.E. organise des matchs classés, des ladders et des tournois CS2. La connexion se fait via Steam OpenID ; nous ne voyons jamais ton mot de passe Steam.",
+      "b2": "Ton rang est calculé uniquement à partir des résultats enregistrés selon des règles publiées. Les formules payantes sont uniquement esthétiques et pratiques.",
+      "b3": "A.C.E. est une plateforme indépendante, non affiliée à Valve."
+    },
+    "ss": {
+      "title": "État des serveurs",
+      "lede": "Contrôles en direct depuis ce serveur à l’ouverture de la page. Rien n’est estimé.",
+      "web": "Site web",
+      "db": "Base de données",
+      "match": "Serveurs de match",
+      "ok": "Opérationnel",
+      "down": "Indisponible",
+      "notLive": "Pas encore actif",
+      "checked": "Vérifié {time}"
+    },
+    "rp": {
+      "title": "Signaler un joueur",
+      "lede": "Explique aux opérateurs ce qui s’est passé. Chaque signalement est examiné par une personne.",
+      "target": "SteamID64 du joueur",
+      "reason": "Motif",
+      "rCheat": "Triche",
+      "rToxic": "Comportement abusif",
+      "rOther": "Autre",
+      "details": "Détails (facultatif)",
+      "submit": "Envoyer le signalement",
+      "signIn": "Connecte-toi avec Steam pour envoyer un signalement.",
+      "sent": "Signalement reçu. Les opérateurs examinent chaque signalement.",
+      "invalid": "Saisis un SteamID64 valide (17 chiffres).",
+      "open": "Signaler un joueur"
+    },
+    "nt": {
+      "title": "Notifications",
+      "empty": "Tu es à jour.",
+      "markRead": "Tout marquer comme lu"
+    },
+    "se": {
+      "title": "Saisons",
+      "lede": "Les saisons réinitialiseront le classement et attribueront des badges de fin de saison.",
+      "none": "Aucune saison n’a encore commencé. La première sera annoncée ici."
+    }
   }
 };
