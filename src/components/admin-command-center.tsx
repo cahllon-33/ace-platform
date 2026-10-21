@@ -36,6 +36,8 @@ import "@/components/admin-r40.css";
 import type { TvWall } from "@/server/admin-broadcast";
 import { PlayerAvatar } from "@/components/floating-emblem";
 import { RankOrb } from "@/components/rank-orb";
+import { AdminSetRankModal } from "@/components/admin-set-rank";
+import { prestigeBadge } from "@/lib/prestige";
 import { RANK_TIERS } from "@/lib/ranks";
 import "./admin-command.css";
 
@@ -325,6 +327,7 @@ export function AdminCommandCenter({
   const [copilotReply, setCopilotReply] = useState<string | null>(null);
   const [reportId, setReportId] = useState<string | null>(reports[0]?.id ?? null);
   const [editorId, setEditorId] = useState<string | null>(null);
+  const [rankFor, setRankFor] = useState<{ id: string; name: string; rating: number; plan: "Free" | "Plus" | "Premium" } | null>(null);
   const [flash, setFlash] = useState<string | null>(null);
   const [rankPulseId, setRankPulseId] = useState<string | null>(null);
 
@@ -745,9 +748,12 @@ export function AdminCommandCenter({
                     </td>
                     <td className={player.id === rankPulseId ? "ace-admin-rank-hot" : undefined}>
                       <span className="acx-rankcell">
-                        <AdminRankBadge level={player.rank} art={player.art} size={46} label={t("r23Rank")} />
+                        {(() => {
+                          const pb = prestigeBadge(player.rating, String(player.tier).toUpperCase());
+                          return pb ? <RankOrb level={10} size={46} label={t("r23Rank")} prestige={pb} /> : <AdminRankBadge level={player.rank} art={player.art} size={46} label={t("r23Rank")} />;
+                        })()}
                         <span>
-                          <strong>{tierOf(player.rank).name}</strong>
+                          <strong>{prestigeBadge(player.rating, String(player.tier).toUpperCase())?.name ?? tierOf(player.rank).name}</strong>
                           <small>
                             {t("colRank")} {player.rank}
                             {player.art === "premium" ? <span className="acx-premium-tag">{t("r23Premium")}</span> : null}
@@ -785,6 +791,9 @@ export function AdminCommandCenter({
                     </td>
                     <td>
                       <ActionsMenu label={t("actionsMenu")} groupLabel={t("colAction")}>
+                        <button type="button" suppressHydrationWarning className="acx-btn is-gold" onClick={() => setRankFor({ id: player.id, name: player.username, rating: player.rating, plan: player.tier })}>
+                          {t40("srMenu")}
+                        </button>
                         {(["upgrade", "rank", "reset", "disconnect"] as const).map((kind) => (
                           <button
                             key={kind}
@@ -909,6 +918,7 @@ export function AdminCommandCenter({
       {overlay ? (
         <CommandOverlay overlay={overlay} dir={dir} lang={lang} onClose={() => setOverlay(null)} />
       ) : null}
+      {rankFor ? <AdminSetRankModal player={rankFor} onClose={() => setRankFor(null)} /> : null}
       {editor ? (
         <PlayerDrawer
           player={editor}

@@ -37,3 +37,12 @@ describe("prestige levels", () => {
     for (const p of PRESTIGE_LEVELS) for (const px of [192, 512]) expect(existsSync(join(process.cwd(), "public/prestige", `${p.slug}-${px}.webp`))).toBe(true);
   });
 });
+
+describe("admin override labels include prestige", () => {
+  it("describeRp names the prestige badge at 2,150+", async () => {
+    const { describeRp } = await import("./rank-override");
+    expect(describeRp(2149)).not.toMatch(/Ascendant/);
+    expect(describeRp(2150)).toMatch(/A\.C\.E\. Ascendant · 2150 RP$/);
+    expect(describeRp(2950)).toMatch(/A\.C\.E\. Paragon/);
+  });
+});

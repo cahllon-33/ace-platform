@@ -1495,3 +1495,4 @@
 /* R41 admin polish: cards size to content; the audit log gets the full row so its table is readable. */
 .acx-card { align-self: start; }
 #acx-audit { grid-column: 1 / -1; }
+.acx-btn.is-gold { border-color: rgba(212, 175, 55, .6); color: #ffd76a; }

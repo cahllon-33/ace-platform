@@ -1,5 +1,6 @@
 /** R40 admin strings (admin is English/Hebrew only). */
 export const ADMIN40_EN = {
+  srMenu: "Set Rank & RP", srTitle: "Set Rank & RP", srLede: "Pick a tier, division or prestige badge, or type an exact RP. Saved as an audited rank override; reset to calculated restores the engine value.", srPick: "Ranks", srPrestige: "Prestige badges", srRp: "RP ({min}–{max})", srResult: "Result", srNoPrestige: "No prestige badge", srFreeNote: "Free plan: shows the A.C.E. Legend badge with a text milestone.", srSave: "Save", srSaving: "Saving…", srInvalid: "Enter a whole number from {min} to {max}.", srFrom: "from {rp} RP",
   opsTitle: "Operator tools", overrideTitle: "Rank override", overrideLede: "Writes the player's RP, so the new rank shows everywhere on the site.",
   modeDivision: "Tier & division", modeRp: "Exact RP", tier: "Tier", division: "Division", rp: "RP", art: "Badge art",
   artKeep: "Keep current", artAuto: "Automatic (by plan)", artStandard: "Standard", artPremium: "Premium (Premium plan only)",
@@ -15,6 +16,7 @@ export const ADMIN40_EN = {
   prev: "Previous", next: "Next", page: "Page {page} of {pages}", loading: "Loading…",
 };
 export const ADMIN40_HE: Record<keyof typeof ADMIN40_EN, string> = {
+  srMenu: "קביעת דרגה ו-RP", srTitle: "קביעת דרגה ו-RP", srLede: "בחר דרגה, חלוקה או תג יוקרה, או הקלד RP מדויק. נשמר כעקיפת דרגה מתועדת; 'איפוס לחישוב' מחזיר את ערך המנוע.", srPick: "דרגות", srPrestige: "תגי יוקרה", srRp: "RP ({min}–{max})", srResult: "תוצאה", srNoPrestige: "אין תג יוקרה", srFreeNote: "מסלול חינמי: מוצג תג A.C.E. Legend עם ציון אבן דרך בטקסט.", srSave: "שמירה", srSaving: "שומר…", srInvalid: "הזן מספר שלם בין {min} ל-{max}.", srFrom: "מ-{rp} RP",
   opsTitle: "כלי מפעיל", overrideTitle: "דריסת דרגה", overrideLede: "כותב את ה-RP של השחקן, כך שהדרגה החדשה מוצגת בכל האתר.",
   modeDivision: "דרגה ודיוויזיה", modeRp: "RP מדויק", tier: "דרגה", division: "דיוויזיה", rp: "RP", art: "עיצוב תג",
   artKeep: "ללא שינוי", artAuto: "אוטומטי (לפי מסלול)", artStandard: "רגיל", artPremium: "פרימיום (למסלול Premium בלבד)",

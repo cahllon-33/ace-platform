@@ -1,6 +1,7 @@
 import { RANK_TIERS, type RankDivision } from "@/lib/ranks";
 import { rankLevelFromRp, rankProgress } from "@/lib/rank-progress";
 import { RP_RULES } from "@/lib/rp-rules";
+import { prestigeForRp } from "@/lib/prestige";
 
 /**
  * Admin rank override. The override writes the stored RP (the ONE rank source), so every page that reads
@@ -56,7 +57,8 @@ export function planReset(current: { competitiveRating: number; rankOverrideBase
 
 export function describeRp(rp: number): string {
   const p = rankProgress(rp);
-  return `${p.tier.name} ${p.division} · ${rp} RP`;
+  const pr = prestigeForRp(rp);
+  return `${p.tier.name} ${p.division}${pr ? ` · ${pr.name}` : ""} · ${rp} RP`;
 }
 
 export function cleanReason(reason: unknown): string {
