@@ -483,6 +483,12 @@ export const UI_RO: Ui = {
       "watch": "Urmărește live"
     }
   },
+  "r42": {
+    "playTitle": "Joacă acum",
+    "playSub": "Găsește un meci CS2 clasat și urcă",
+    "newPill": "NOU",
+    "shopAria": "Deschide magazinul"
+  },
   "r41c": {
     "v5": {
       "vTier": "Victoriile și înfrângerile se înmulțesc cu {t7} la nivelurile 7–9 și cu {t10} la nivelul 10 ({top}), așa că un bilanț de 50% îți păstrează rangul la orice nivel.",

@@ -483,6 +483,12 @@ export const UI_ID: Ui = {
       "watch": "Tonton langsung"
     }
   },
+  "r42": {
+    "playTitle": "Main sekarang",
+    "playSub": "Temukan laga CS2 berperingkat dan mulai naik",
+    "newPill": "BARU",
+    "shopAria": "Buka toko"
+  },
   "r41c": {
     "v5": {
       "vTier": "Kemenangan dan kekalahan sama-sama dikalikan {t7} di tingkat 7–9 dan {t10} di tingkat 10 ({top}), jadi rekor 50% mempertahankan peringkatmu di setiap tingkat.",

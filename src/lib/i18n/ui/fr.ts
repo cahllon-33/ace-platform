@@ -483,6 +483,12 @@ export const UI_FR: Ui = {
       "watch": "Regarder en direct"
     }
   },
+  "r42": {
+    "playTitle": "Jouer maintenant",
+    "playSub": "Trouve un match CS2 classé et grimpe",
+    "newPill": "NOUVEAU",
+    "shopAria": "Ouvrir la boutique"
+  },
   "r41c": {
     "v5": {
       "vTier": "Les victoires et les défaites sont multipliées par {t7} aux niveaux 7–9 et par {t10} au niveau 10 ({top}) : un bilan de 50 % maintient donc votre rang à chaque niveau.",

@@ -483,6 +483,12 @@ export const UI_HR: Ui = {
       "watch": "Gledaj uživo"
     }
   },
+  "r42": {
+    "playTitle": "Igraj sada",
+    "playSub": "Pronađi rangirani CS2 meč i penji se",
+    "newPill": "NOVO",
+    "shopAria": "Otvori trgovinu"
+  },
   "r41c": {
     "v5": {
       "vTier": "Pobjede i porazi množe se s {t7} na razinama 7–9 i s {t10} na razini 10 ({top}), pa omjer od 50 % zadržava rang na svakoj razini.",

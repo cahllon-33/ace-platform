@@ -483,6 +483,12 @@ export const UI_PT_BR: Ui = {
       "watch": "Assistir ao vivo"
     }
   },
+  "r42": {
+    "playTitle": "Jogar agora",
+    "playSub": "Encontre uma partida ranqueada de CS2 e suba",
+    "newPill": "NOVO",
+    "shopAria": "Abrir a loja"
+  },
   "r41c": {
     "v5": {
       "vTier": "Vitórias e derrotas são multiplicadas por {t7} nos níveis 7–9 e por {t10} no nível 10 ({top}), então um histórico de 50% mantém seu rank em qualquer nível.",

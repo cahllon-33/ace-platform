@@ -483,6 +483,12 @@ export const UI_CS: Ui = {
       "watch": "Sledovat živě"
     }
   },
+  "r42": {
+    "playTitle": "Hrát teď",
+    "playSub": "Najdi hodnocený zápas CS2 a stoupej",
+    "newPill": "NOVÉ",
+    "shopAria": "Otevřít obchod"
+  },
   "r41c": {
     "v5": {
       "vTier": "Výhry i prohry se v úrovních 7–9 násobí {t7} a v úrovni 10 ({top}) násobí {t10}, takže bilance 50 % udrží hodnost na každé úrovni.",

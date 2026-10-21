@@ -483,6 +483,12 @@ export const UI_FI: Ui = {
       "watch": "Katso suorana"
     }
   },
+  "r42": {
+    "playTitle": "Pelaa nyt",
+    "playSub": "Löydä rankattu CS2-ottelu ja nouse",
+    "newPill": "UUSI",
+    "shopAria": "Avaa kauppa"
+  },
   "r41c": {
     "v5": {
       "vTier": "Sekä voitot että tappiot kerrotaan {t7}:llä tasoilla 7–9 ja {t10}:llä tasolla 10 ({top}), joten 50 %:n tulos pitää arvosi jokaisella tasolla.",

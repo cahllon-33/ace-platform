@@ -483,6 +483,12 @@ export const UI_DE: Ui = {
       "watch": "Live ansehen"
     }
   },
+  "r42": {
+    "playTitle": "Jetzt spielen",
+    "playSub": "Finde ein Ranked-CS2-Match und steig auf",
+    "newPill": "NEU",
+    "shopAria": "Shop öffnen"
+  },
   "r41c": {
     "v5": {
       "vTier": "Siege und Niederlagen werden in den Stufen 7–9 beide mit {t7} und in Stufe 10 ({top}) mit {t10} multipliziert, sodass eine Bilanz von 50 % deinen Rang auf jeder Stufe hält.",

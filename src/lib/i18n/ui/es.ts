@@ -483,6 +483,12 @@ export const UI_ES: Ui = {
       "watch": "Ver en directo"
     }
   },
+  "r42": {
+    "playTitle": "Jugar ahora",
+    "playSub": "Encuentra una partida clasificatoria de CS2 y sube",
+    "newPill": "NUEVO",
+    "shopAria": "Abrir la tienda"
+  },
   "r41c": {
     "v5": {
       "vTier": "Las victorias y las derrotas se multiplican por {t7} en los niveles 7–9 y por {t10} en el nivel 10 ({top}), así que un balance del 50 % mantiene tu rango en cualquier nivel.",

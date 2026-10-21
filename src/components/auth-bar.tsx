@@ -60,7 +60,7 @@ export async function AuthBar() {
       </Link>
       {user ? (
         <Link
-          href="/dashboard"
+          href={user.steamId ? `/player/${user.steamId}` : "/dashboard"}
           prefetch={false}
           className="ace-level-chip no-underline"
           title={label ?? undefined}

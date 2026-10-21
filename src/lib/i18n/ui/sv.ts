@@ -483,6 +483,12 @@ export const UI_SV: Ui = {
       "watch": "Titta live"
     }
   },
+  "r42": {
+    "playTitle": "Spela nu",
+    "playSub": "Hitta en rankad CS2-match och klättra",
+    "newPill": "NYTT",
+    "shopAria": "Öppna butiken"
+  },
   "r41c": {
     "v5": {
       "vTier": "Både vinster och förluster multipliceras med {t7} på nivå 7–9 och med {t10} på nivå 10 ({top}), så ett facit på 50 % håller din rang på varje nivå.",

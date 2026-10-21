@@ -483,6 +483,12 @@ export const UI_PT: Ui = {
       "watch": "Ver em direto"
     }
   },
+  "r42": {
+    "playTitle": "Jogar agora",
+    "playSub": "Encontra um jogo competitivo de CS2 e sobe",
+    "newPill": "NOVO",
+    "shopAria": "Abrir a loja"
+  },
   "r41c": {
     "v5": {
       "vTier": "Vitórias e derrotas são multiplicadas por {t7} nos escalões 7–9 e por {t10} no escalão 10 ({top}), por isso um registo de 50% mantém o teu rank em qualquer nível.",

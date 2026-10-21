@@ -483,6 +483,12 @@ export const UI_HU: Ui = {
       "watch": "Élő nézése"
     }
   },
+  "r42": {
+    "playTitle": "Játssz most",
+    "playSub": "Találj rangsorolt CS2-meccset, és lépj feljebb",
+    "newPill": "ÚJ",
+    "shopAria": "Bolt megnyitása"
+  },
   "r41c": {
     "v5": {
       "vTier": "A győzelmeket és a vereségeket is {t7}-del szorozzuk a 7–9. szinten és {t10}-del a 10. szinten ({top}), így az 50%-os mérleg minden szinten megtartja a rangodat.",

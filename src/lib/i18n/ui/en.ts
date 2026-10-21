@@ -424,6 +424,12 @@ export const UI_EN = {
       "watch": "Watch live"
     }
   },
+  "r42": {
+    "playTitle": "Play Now",
+    "playSub": "Find a ranked CS2 match and start climbing",
+    "newPill": "NEW",
+    "shopAria": "Open the shop"
+  },
   "r41c": {
     "v5": {
       "vTier": "Wins and losses are both multiplied by {t7} in tiers 7–9 and by {t10} in tier 10 ({top}), so a 50% record holds your rank at every level.",

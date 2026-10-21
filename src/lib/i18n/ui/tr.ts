@@ -483,6 +483,12 @@ export const UI_TR: Ui = {
       "watch": "Canlı izle"
     }
   },
+  "r42": {
+    "playTitle": "Şimdi oyna",
+    "playSub": "Dereceli bir CS2 maçı bul ve yüksel",
+    "newPill": "YENİ",
+    "shopAria": "Mağazayı aç"
+  },
   "r41c": {
     "v5": {
       "vTier": "Galibiyetler ve mağlubiyetler 7–9. kademelerde {t7}, 10. kademede ({top}) {t10} ile çarpılır; böylece %50'lik bir kayıt her seviyede rütbeni korur.",

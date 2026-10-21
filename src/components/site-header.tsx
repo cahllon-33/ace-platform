@@ -34,8 +34,16 @@ export function SiteHeader({ auth }: { auth: ReactNode }) {
   const buttonRef = useRef<HTMLButtonElement>(null);
 
   const groups = [
-    { label: ui.nav.compete, items: [...siteNav, { href: "/pricing", key: "pricing" } as const] },
-    { label: ui.nav.explore, items: moreNav },
+    {
+      label: ui.nav.compete,
+      items: [
+        ...siteNav.slice(0, 2),
+        { href: "/shop", key: "shop" } as const,
+        ...siteNav.slice(2),
+        { href: "/pricing", key: "pricing" } as const,
+      ],
+    },
+    { label: ui.nav.explore, items: moreNav.filter((item) => item.href !== "/shop") },
   ];
 
   useEffect(() => {
@@ -90,6 +98,11 @@ export function SiteHeader({ auth }: { auth: ReactNode }) {
         <div className="hx-tools">
           <SoundToggle />
           <LanguageMenu />
+          <Link href="/shop" className="hx-shop" aria-label={ui.r42.shopAria} title={ui.nav.shop}>
+            <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinejoin="round">
+              <path d="M5 8h14l-1.2 12H6.2z" /><path d="M9 8V6.5a3 3 0 0 1 6 0V8" />
+            </svg>
+          </Link>
           <div className="hx-auth">{auth}</div>
           <Link href="/pricing" className="hx-cta">
             {ui.nav.getPremium}
@@ -128,6 +141,16 @@ export function SiteHeader({ auth }: { auth: ReactNode }) {
             <span aria-hidden="true">×</span>
           </button>
         </div>
+        <Link href="/play" className="hx-play" onClick={close}>
+          <span className="hx-play-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="22" height="22"><path d="M8 5.5v13l10.5-6.5z" fill="currentColor" /></svg>
+          </span>
+          <span className="hx-play-text">
+            <strong>{ui.r42.playTitle}</strong>
+            <small>{ui.r42.playSub}</small>
+          </span>
+          <span aria-hidden="true" className="hx-arrow">→</span>
+        </Link>
         <nav aria-label={copy.mobileNav} className="hx-drawer-nav">
           {groups.map((group) => (
             <section key={group.label}>
@@ -138,7 +161,10 @@ export function SiteHeader({ auth }: { auth: ReactNode }) {
                   return (
                     <li key={item.href}>
                       <Link href={item.href} aria-current={active ? "page" : undefined} className={active ? "is-on" : undefined} onClick={close}>
-                        <span>{ui.nav[item.key]}</span>
+                        <span>
+                          {ui.nav[item.key]}
+                          {item.href === "/shop" ? <span className="hx-pill">{ui.r42.newPill}</span> : null}
+                        </span>
                         <span aria-hidden="true" className="hx-arrow">→</span>
                       </Link>
                     </li>

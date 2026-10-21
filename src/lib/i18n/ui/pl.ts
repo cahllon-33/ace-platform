@@ -483,6 +483,12 @@ export const UI_PL: Ui = {
       "watch": "Oglądaj na żywo"
     }
   },
+  "r42": {
+    "playTitle": "Graj teraz",
+    "playSub": "Znajdź rankingowy mecz CS2 i wspinaj się",
+    "newPill": "NOWE",
+    "shopAria": "Otwórz sklep"
+  },
   "r41c": {
     "v5": {
       "vTier": "Wygrane i porażki są mnożone przez {t7} na poziomach 7–9 i przez {t10} na poziomie 10 ({top}), więc bilans 50% utrzymuje rangę na każdym poziomie.",
