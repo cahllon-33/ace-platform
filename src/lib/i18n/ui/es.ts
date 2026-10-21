@@ -495,7 +495,7 @@ export const UI_ES: Ui = {
       "title": "Reglas de insignias",
       "lede": "Cómo se gana cada insignia de A.C.E. Las insignias son solo estéticas: nunca cambian el emparejamiento, los RP ni ninguna regla.",
       "ranks": "Las insignias de rango (niveles 1–10) siguen tus RP. Todos ven el mismo rango y el mismo color fijo de nivel.",
-      "prestige": "Las insignias de prestigio son cinco metas a largo plazo por encima de {elite} RP: una cada 200 RP de 2.000 a 2.800.",
+      "prestige": "Las insignias de prestigio son cinco metas a largo plazo por encima de {elite} RP: una cada 200 RP de 2.150 a 2.950.",
       "free": "Free: tu insignia sigue siendo A.C.E. Legend y tu nivel de prestigio se muestra como un hito en texto. Tus RP nunca tienen tope.",
       "plus": "Plus: el set de prestigio de platino.",
       "premium": "Premium: el set de prestigio dorado animado.",
@@ -503,8 +503,9 @@ export const UI_ES: Ui = {
       "level": "Prestigio {n} · {name}",
       "from": "Desde {rp} RP",
       "milestone": "Prestigio {n} alcanzado",
-      "perk": "Set de insignias de prestigio (2.000–3.000 RP), ganado con RP",
-      "open": "Reglas de insignias"
+      "perk": "Set de insignias de prestigio (2.150–3.000 RP), ganado con RP",
+      "open": "Reglas de insignias",
+      "wins": "Unas {n} victorias en partidas igualadas tras el nivel anterior"
     }
   }
 };

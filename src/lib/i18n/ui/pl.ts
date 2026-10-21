@@ -495,7 +495,7 @@ export const UI_PL: Ui = {
       "title": "Zasady odznak",
       "lede": "Jak zdobywa się każdą odznakę A.C.E. Odznaki są wyłącznie kosmetyczne: nigdy nie zmieniają matchmakingu, RP ani żadnej zasady.",
       "ranks": "Odznaki rang (poziomy 1–10) podążają za twoim RP. Każdy widzi tę samą rangę i ten sam stały kolor poziomu.",
-      "prestige": "Odznaki prestiżu to pięć długoterminowych celów powyżej {elite} RP: jedna co 200 RP od 2000 do 2800.",
+      "prestige": "Odznaki prestiżu to pięć długoterminowych celów powyżej {elite} RP: jedna co 200 RP od 2150 do 2950.",
       "free": "Free: twoja odznaka pozostaje A.C.E. Legend, a poziom prestiżu jest pokazywany jako tekstowy kamień milowy. RP nigdy nie ma limitu.",
       "plus": "Plus: platynowy zestaw prestiżu.",
       "premium": "Premium: animowany złoty zestaw prestiżu.",
@@ -503,8 +503,9 @@ export const UI_PL: Ui = {
       "level": "Prestiż {n} · {name}",
       "from": "Od {rp} RP",
       "milestone": "Osiągnięto prestiż {n}",
-      "perk": "Zestaw odznak prestiżu (2000–3000 RP), zdobywany za RP",
-      "open": "Zasady odznak"
+      "perk": "Zestaw odznak prestiżu (2150–3000 RP), zdobywany za RP",
+      "open": "Zasady odznak",
+      "wins": "Około {n} wygranych w wyrównanych meczach po poprzednim progu"
     }
   }
 };

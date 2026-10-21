@@ -495,7 +495,7 @@ export const UI_HU: Ui = {
       "title": "Jelvényszabályok",
       "lede": "Hogyan szerezhető meg minden A.C.E. jelvény. A jelvények csak kozmetikaiak: soha nem változtatják a párosítást, az RP-t vagy bármely szabályt.",
       "ranks": "A rangjelvények (1–10. szint) az RP-det követik. Mindenki ugyanazt a rangot és ugyanazt a fix szintszínt látja.",
-      "prestige": "A presztízsjelvények öt hosszú távú cél {elite} RP fölött: 200 RP-nként egy, 2000-től 2800-ig.",
+      "prestige": "A presztízsjelvények öt hosszú távú cél {elite} RP fölött: 200 RP-nként egy, 2150-től 2950-ig.",
       "free": "Free: a jelvényed A.C.E. Legend marad, a presztízsszinted szöveges mérföldkőként jelenik meg. Az RP-d soha nincs korlátozva.",
       "plus": "Plus: a platina presztízskészlet.",
       "premium": "Premium: az animált arany presztízskészlet.",
@@ -503,8 +503,9 @@ export const UI_HU: Ui = {
       "level": "Presztízs {n} · {name}",
       "from": "{rp} RP-től",
       "milestone": "Presztízs {n} elérve",
-      "perk": "Presztízsjelvény-készlet (2000–3000 RP), RP-vel szerezhető",
-      "open": "Jelvényszabályok"
+      "perk": "Presztízsjelvény-készlet (2150–3000 RP), RP-vel szerezhető",
+      "open": "Jelvényszabályok",
+      "wins": "Kb. {n} győzelem kiegyenlített meccseken az előző szint után"
     }
   }
 };

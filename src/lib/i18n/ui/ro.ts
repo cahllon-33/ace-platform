@@ -495,7 +495,7 @@ export const UI_RO: Ui = {
       "title": "Regulile insignelor",
       "lede": "Cum se câștigă fiecare insignă A.C.E. Insignele sunt doar cosmetice: nu schimbă niciodată matchmakingul, RP-ul sau vreo regulă.",
       "ranks": "Insignele de rang (nivelurile 1–10) îți urmează RP-ul. Toți văd același rang și aceeași culoare fixă de nivel.",
-      "prestige": "Insignele de prestigiu sunt cinci obiective pe termen lung peste {elite} RP: una la fiecare 200 RP, de la 2.000 la 2.800.",
+      "prestige": "Insignele de prestigiu sunt cinci obiective pe termen lung peste {elite} RP: una la fiecare 200 RP, de la 2.150 la 2.950.",
       "free": "Free: insigna rămâne A.C.E. Legend, iar nivelul de prestigiu apare ca reper text. RP-ul nu e niciodată plafonat.",
       "plus": "Plus: setul de prestigiu din platină.",
       "premium": "Premium: setul de prestigiu auriu animat.",
@@ -503,8 +503,9 @@ export const UI_RO: Ui = {
       "level": "Prestigiu {n} · {name}",
       "from": "De la {rp} RP",
       "milestone": "Prestigiu {n} atins",
-      "perk": "Set de insigne de prestigiu (2.000–3.000 RP), câștigat cu RP",
-      "open": "Regulile insignelor"
+      "perk": "Set de insigne de prestigiu (2.150–3.000 RP), câștigat cu RP",
+      "open": "Regulile insignelor",
+      "wins": "Aproximativ {n} victorii în meciuri echilibrate după treapta anterioară"
     }
   }
 };

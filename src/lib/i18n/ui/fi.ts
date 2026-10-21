@@ -495,7 +495,7 @@ export const UI_FI: Ui = {
       "title": "Merkkisäännöt",
       "lede": "Miten jokainen A.C.E.-merkki ansaitaan. Merkit ovat vain kosmeettisia: ne eivät koskaan muuta ottelujärjestelmää, RP:tä tai mitään sääntöä.",
       "ranks": "Arvomerkit (tasot 1–10) seuraavat RP:täsi. Jokainen näkee saman arvon ja saman kiinteän tasovärin.",
-      "prestige": "Arvovaltamerkit ovat viisi pitkän aikavälin tavoitetta yli {elite} RP:n: yksi 200 RP:n välein 2 000:sta 2 800:aan.",
+      "prestige": "Arvovaltamerkit ovat viisi pitkän aikavälin tavoitetta yli {elite} RP:n: yksi 200 RP:n välein 2 150:sta 2 950:aan.",
       "free": "Free: merkkisi pysyy A.C.E. Legendinä ja arvovaltatasosi näkyy tekstimuotoisena virstanpylväänä. RP:täsi ei koskaan rajoiteta.",
       "plus": "Plus: platinainen arvovaltasarja.",
       "premium": "Premium: animoitu kultainen arvovaltasarja.",
@@ -503,8 +503,9 @@ export const UI_FI: Ui = {
       "level": "Arvovalta {n} · {name}",
       "from": "Alkaen {rp} RP",
       "milestone": "Arvovalta {n} saavutettu",
-      "perk": "Arvovaltamerkkisarja (2 000–3 000 RP), ansaitaan RP:llä",
-      "open": "Merkkisäännöt"
+      "perk": "Arvovaltamerkkisarja (2 150–3 000 RP), ansaitaan RP:llä",
+      "open": "Merkkisäännöt",
+      "wins": "Noin {n} voittoa tasaisissa otteluissa edellisen tason jälkeen"
     }
   }
 };

@@ -495,7 +495,7 @@ export const UI_ID: Ui = {
       "title": "Aturan lencana",
       "lede": "Cara mendapatkan setiap lencana A.C.E. Lencana hanya kosmetik: tidak pernah mengubah matchmaking, RP, atau aturan apa pun.",
       "ranks": "Lencana peringkat (tingkat 1–10) mengikuti RP-mu. Semua orang melihat peringkat yang sama dan warna tingkat tetap yang sama.",
-      "prestige": "Lencana prestise adalah lima target jangka panjang di atas {elite} RP: satu setiap 200 RP dari 2.000 sampai 2.800.",
+      "prestige": "Lencana prestise adalah lima target jangka panjang di atas {elite} RP: satu setiap 200 RP dari 2.150 sampai 2.950.",
       "free": "Free: lencanamu tetap A.C.E. Legend dan level prestise ditampilkan sebagai pencapaian teks. RP-mu tidak pernah dibatasi.",
       "plus": "Plus: set prestise platinum.",
       "premium": "Premium: set prestise emas beranimasi.",
@@ -503,8 +503,9 @@ export const UI_ID: Ui = {
       "level": "Prestise {n} · {name}",
       "from": "Mulai {rp} RP",
       "milestone": "Prestise {n} tercapai",
-      "perk": "Set lencana prestise (2.000–3.000 RP), diraih dengan RP",
-      "open": "Aturan lencana"
+      "perk": "Set lencana prestise (2.150–3.000 RP), diraih dengan RP",
+      "open": "Aturan lencana",
+      "wins": "Sekitar {n} kemenangan di laga seimbang setelah tahap sebelumnya"
     }
   }
 };

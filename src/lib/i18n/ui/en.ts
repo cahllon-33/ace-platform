@@ -436,7 +436,7 @@ export const UI_EN = {
       "title": "Badge rules",
       "lede": "How every A.C.E. badge is earned. Badges are cosmetic: they never change matchmaking, RP or any rule.",
       "ranks": "Rank badges (tiers 1–10) follow your RP. Every player sees the same rank and the same fixed tier color.",
-      "prestige": "Prestige badges are five long-term goals above {elite} RP: one every 200 RP from 2,000 to 2,800.",
+      "prestige": "Prestige badges are five long-term goals above {elite} RP: one every 200 RP from 2,150 to 2,950.",
       "free": "Free: your badge stays A.C.E. Legend and your prestige level is shown as a text milestone. Your RP is never capped.",
       "plus": "Plus: the platinum prestige set.",
       "premium": "Premium: the animated gold prestige set.",
@@ -444,8 +444,9 @@ export const UI_EN = {
       "level": "Prestige {n} · {name}",
       "from": "From {rp} RP",
       "milestone": "Prestige {n} reached",
-      "perk": "Prestige badge set (2,000–3,000 RP), earned by RP",
-      "open": "Badge rules"
+      "perk": "Prestige badge set (2,150–3,000 RP), earned by RP",
+      "open": "Badge rules",
+      "wins": "About {n} even-match wins after the previous step"
     }
   }
 } as const;

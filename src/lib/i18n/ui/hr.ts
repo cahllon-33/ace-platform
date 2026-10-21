@@ -495,7 +495,7 @@ export const UI_HR: Ui = {
       "title": "Pravila znački",
       "lede": "Kako se osvaja svaka A.C.E. značka. Značke su samo kozmetičke: nikad ne mijenjaju matchmaking, RP ni neko pravilo.",
       "ranks": "Značke ranga (razine 1–10) prate tvoje RP. Svi vide isti rang i istu fiksnu boju razine.",
-      "prestige": "Značke prestiža su pet dugoročnih ciljeva iznad {elite} RP: jedna svakih 200 RP od 2.000 do 2.800.",
+      "prestige": "Značke prestiža su pet dugoročnih ciljeva iznad {elite} RP: jedna svakih 200 RP od 2.150 do 2.950.",
       "free": "Free: značka ostaje A.C.E. Legend, a razina prestiža prikazuje se kao tekstualni miljokaz. RP nikad nije ograničen.",
       "plus": "Plus: platinasti set prestiža.",
       "premium": "Premium: animirani zlatni set prestiža.",
@@ -503,8 +503,9 @@ export const UI_HR: Ui = {
       "level": "Prestiž {n} · {name}",
       "from": "Od {rp} RP",
       "milestone": "Dosegnut prestiž {n}",
-      "perk": "Set znački prestiža (2.000–3.000 RP), osvaja se RP-om",
-      "open": "Pravila znački"
+      "perk": "Set znački prestiža (2.150–3.000 RP), osvaja se RP-om",
+      "open": "Pravila znački",
+      "wins": "Oko {n} pobjeda u izjednačenim mečevima nakon prethodne razine"
     }
   }
 };

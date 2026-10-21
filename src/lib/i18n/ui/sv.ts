@@ -495,7 +495,7 @@ export const UI_SV: Ui = {
       "title": "Märkesregler",
       "lede": "Hur varje A.C.E.-märke tjänas in. Märken är rent kosmetiska: de ändrar aldrig matchning, RP eller någon regel.",
       "ranks": "Rangmärken (nivå 1–10) följer din RP. Alla ser samma rang och samma fasta nivåfärg.",
-      "prestige": "Prestigemärken är fem långsiktiga mål över {elite} RP: ett var 200:e RP från 2 000 till 2 800.",
+      "prestige": "Prestigemärken är fem långsiktiga mål över {elite} RP: ett var 200:e RP från 2 150 till 2 950.",
       "free": "Free: ditt märke förblir A.C.E. Legend och din prestigenivå visas som en textmilstolpe. Din RP har aldrig något tak.",
       "plus": "Plus: platinaserien av prestigemärken.",
       "premium": "Premium: den animerade guldserien av prestigemärken.",
@@ -503,8 +503,9 @@ export const UI_SV: Ui = {
       "level": "Prestige {n} · {name}",
       "from": "Från {rp} RP",
       "milestone": "Prestige {n} uppnådd",
-      "perk": "Prestigemärkesserie (2 000–3 000 RP), intjänad med RP",
-      "open": "Märkesregler"
+      "perk": "Prestigemärkesserie (2 150–3 000 RP), intjänad med RP",
+      "open": "Märkesregler",
+      "wins": "Ungefär {n} vinster i jämna matcher efter föregående steg"
     }
   }
 };

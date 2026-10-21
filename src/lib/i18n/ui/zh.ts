@@ -495,7 +495,7 @@ export const UI_ZH: Ui = {
       "title": "徽章规则",
       "lede": "A.C.E. 每枚徽章的获得方式。徽章仅为外观：绝不改变匹配、RP 或任何规则。",
       "ranks": "段位徽章（第 1–10 段）跟随你的 RP。所有人看到相同的段位和相同的固定段位颜色。",
-      "prestige": "荣耀徽章是 {elite} RP 之上的五个长期目标：从 2,000 到 2,800，每 200 RP 一枚。",
+      "prestige": "荣耀徽章是 {elite} RP 之上的五个长期目标：从 2,150 到 2,950，每 200 RP 一枚。",
       "free": "Free：徽章保持 A.C.E. Legend，荣耀等级以文字里程碑显示。你的 RP 永不封顶。",
       "plus": "Plus：铂金荣耀系列。",
       "premium": "Premium：动态黄金荣耀系列。",
@@ -503,8 +503,9 @@ export const UI_ZH: Ui = {
       "level": "荣耀 {n} · {name}",
       "from": "{rp} RP 起",
       "milestone": "已达成荣耀 {n}",
-      "perk": "荣耀徽章系列（2,000–3,000 RP），凭 RP 获得",
-      "open": "徽章规则"
+      "perk": "荣耀徽章系列（2,150–3,000 RP），凭 RP 获得",
+      "open": "徽章规则",
+      "wins": "从上一阶段起约需在势均力敌的比赛中赢 {n} 场"
     }
   }
 };

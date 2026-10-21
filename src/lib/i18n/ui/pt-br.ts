@@ -495,7 +495,7 @@ export const UI_PT_BR: Ui = {
       "title": "Regras dos emblemas",
       "lede": "Como cada emblema A.C.E. é conquistado. Emblemas são só cosméticos: nunca mudam o matchmaking, os RP ou qualquer regra.",
       "ranks": "Os emblemas de rank (níveis 1–10) seguem seus RP. Todo mundo vê o mesmo rank e a mesma cor fixa de nível.",
-      "prestige": "Os emblemas de prestígio são cinco metas de longo prazo acima de {elite} RP: um a cada 200 RP, de 2.000 a 2.800.",
+      "prestige": "Os emblemas de prestígio são cinco metas de longo prazo acima de {elite} RP: um a cada 200 RP, de 2.150 a 2.950.",
       "free": "Free: seu emblema continua A.C.E. Legend e o nível de prestígio aparece como marco em texto. Seus RP nunca têm limite.",
       "plus": "Plus: o conjunto de prestígio em platina.",
       "premium": "Premium: o conjunto de prestígio dourado animado.",
@@ -503,8 +503,9 @@ export const UI_PT_BR: Ui = {
       "level": "Prestígio {n} · {name}",
       "from": "A partir de {rp} RP",
       "milestone": "Prestígio {n} alcançado",
-      "perk": "Conjunto de emblemas de prestígio (2.000–3.000 RP), conquistado com RP",
-      "open": "Regras dos emblemas"
+      "perk": "Conjunto de emblemas de prestígio (2.150–3.000 RP), conquistado com RP",
+      "open": "Regras dos emblemas",
+      "wins": "Cerca de {n} vitórias em partidas equilibradas após o nível anterior"
     }
   }
 };

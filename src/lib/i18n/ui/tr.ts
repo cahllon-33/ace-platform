@@ -495,7 +495,7 @@ export const UI_TR: Ui = {
       "title": "Rozet kuralları",
       "lede": "Her A.C.E. rozetinin nasıl kazanıldığı. Rozetler yalnızca görseldir: eşleştirmeyi, RP'yi veya herhangi bir kuralı asla değiştirmez.",
       "ranks": "Rütbe rozetleri (kademe 1–10) RP'ni takip eder. Herkes aynı rütbeyi ve aynı sabit kademe rengini görür.",
-      "prestige": "Prestij rozetleri {elite} RP üzerindeki beş uzun vadeli hedeftir: 2.000'den 2.800'e her 200 RP'de bir.",
+      "prestige": "Prestij rozetleri {elite} RP üzerindeki beş uzun vadeli hedeftir: 2.150'den 2.950'e her 200 RP'de bir.",
       "free": "Free: rozetin A.C.E. Legend olarak kalır ve prestij seviyen metin kilometre taşı olarak gösterilir. RP'n asla sınırlanmaz.",
       "plus": "Plus: platin prestij seti.",
       "premium": "Premium: animasyonlu altın prestij seti.",
@@ -503,8 +503,9 @@ export const UI_TR: Ui = {
       "level": "Prestij {n} · {name}",
       "from": "{rp} RP'den itibaren",
       "milestone": "Prestij {n} ulaşıldı",
-      "perk": "Prestij rozet seti (2.000–3.000 RP), RP ile kazanılır",
-      "open": "Rozet kuralları"
+      "perk": "Prestij rozet seti (2.150–3.000 RP), RP ile kazanılır",
+      "open": "Rozet kuralları",
+      "wins": "Önceki aşamadan sonra dengeli maçlarda yaklaşık {n} galibiyet"
     }
   }
 };

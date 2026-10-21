@@ -495,7 +495,7 @@ export const UI_FR: Ui = {
       "title": "Règles des badges",
       "lede": "Comment chaque badge A.C.E. s'obtient. Les badges sont purement esthétiques : ils ne changent jamais le matchmaking, les RP ni aucune règle.",
       "ranks": "Les badges de rang (niveaux 1–10) suivent vos RP. Tout le monde voit le même rang et la même couleur fixe de niveau.",
-      "prestige": "Les badges de prestige sont cinq objectifs à long terme au-delà de {elite} RP : un tous les 200 RP de 2 000 à 2 800.",
+      "prestige": "Les badges de prestige sont cinq objectifs à long terme au-delà de {elite} RP : un tous les 200 RP de 2 150 à 2 950.",
       "free": "Free : votre badge reste A.C.E. Legend et votre niveau de prestige s'affiche comme un palier texte. Vos RP ne sont jamais plafonnés.",
       "plus": "Plus : la série de prestige platine.",
       "premium": "Premium : la série de prestige or animée.",
@@ -503,8 +503,9 @@ export const UI_FR: Ui = {
       "level": "Prestige {n} · {name}",
       "from": "Dès {rp} RP",
       "milestone": "Prestige {n} atteint",
-      "perk": "Série de badges de prestige (2 000–3 000 RP), gagnée par les RP",
-      "open": "Règles des badges"
+      "perk": "Série de badges de prestige (2 150–3 000 RP), gagnée par les RP",
+      "open": "Règles des badges",
+      "wins": "Environ {n} victoires en matchs équilibrés après le palier précédent"
     }
   }
 };

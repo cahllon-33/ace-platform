@@ -495,7 +495,7 @@ export const UI_DE: Ui = {
       "title": "Abzeichenregeln",
       "lede": "Wie jedes A.C.E.-Abzeichen verdient wird. Abzeichen sind rein kosmetisch: Sie ändern weder Matchmaking noch RP noch irgendeine Regel.",
       "ranks": "Rangabzeichen (Stufen 1–10) folgen deinen RP. Jeder sieht denselben Rang und dieselbe feste Stufenfarbe.",
-      "prestige": "Prestige-Abzeichen sind fünf Langzeitziele über {elite} RP: eines alle 200 RP von 2.000 bis 2.800.",
+      "prestige": "Prestige-Abzeichen sind fünf Langzeitziele über {elite} RP: eines alle 200 RP von 2.150 bis 2.950.",
       "free": "Free: Dein Abzeichen bleibt A.C.E. Legend und deine Prestige-Stufe erscheint als Text-Meilenstein. Deine RP werden nie begrenzt.",
       "plus": "Plus: das Platin-Prestige-Set.",
       "premium": "Premium: das animierte Gold-Prestige-Set.",
@@ -503,8 +503,9 @@ export const UI_DE: Ui = {
       "level": "Prestige {n} · {name}",
       "from": "Ab {rp} RP",
       "milestone": "Prestige {n} erreicht",
-      "perk": "Prestige-Abzeichen-Set (2.000–3.000 RP), durch RP verdient",
-      "open": "Abzeichenregeln"
+      "perk": "Prestige-Abzeichen-Set (2.150–3.000 RP), durch RP verdient",
+      "open": "Abzeichenregeln",
+      "wins": "Etwa {n} Siege in ausgeglichenen Matches nach der vorherigen Stufe"
     }
   }
 };

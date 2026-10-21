@@ -495,7 +495,7 @@ export const UI_CS: Ui = {
       "title": "Pravidla odznaků",
       "lede": "Jak se získává každý odznak A.C.E. Odznaky jsou čistě kosmetické: nemění matchmaking, RP ani žádné pravidlo.",
       "ranks": "Odznaky hodností (úrovně 1–10) sledují vaše RP. Každý hráč vidí stejnou hodnost a stejnou pevnou barvu úrovně.",
-      "prestige": "Odznaky prestiže jsou pět dlouhodobých cílů nad {elite} RP: jeden každých 200 RP od 2 000 do 2 800.",
+      "prestige": "Odznaky prestiže jsou pět dlouhodobých cílů nad {elite} RP: jeden každých 200 RP od 2 150 do 2 950.",
       "free": "Free: váš odznak zůstává A.C.E. Legend a úroveň prestiže se ukazuje jako textový milník. RP nejsou nikdy omezené.",
       "plus": "Plus: platinová sada prestiže.",
       "premium": "Premium: animovaná zlatá sada prestiže.",
@@ -503,8 +503,9 @@ export const UI_CS: Ui = {
       "level": "Prestiž {n} · {name}",
       "from": "Od {rp} RP",
       "milestone": "Dosažena prestiž {n}",
-      "perk": "Sada odznaků prestiže (2 000–3 000 RP), získaná za RP",
-      "open": "Pravidla odznaků"
+      "perk": "Sada odznaků prestiže (2 150–3 000 RP), získaná za RP",
+      "open": "Pravidla odznaků",
+      "wins": "Zhruba {n} výher ve vyrovnaných zápasech po předchozím stupni"
     }
   }
 };
