@@ -1,0 +1,151 @@
+/* R44 signed-in hero rank stage. Tier color = --hrs-tone (fixed per tier). Transform/opacity animation only. */
+.hrs {
+  --gold: #f5c842;
+  --plat: #dfe8f5;
+  position: relative; width: min(34rem, 100%); min-width: 0;
+  display: grid; gap: 0.25rem; isolation: isolate;
+  padding: 1.25rem 1.25rem 1.4rem; border-radius: 1.5rem;
+  background:
+    radial-gradient(120% 70% at 50% 0%, color-mix(in srgb, var(--hrs-tone) 16%, transparent), transparent 60%),
+    linear-gradient(180deg, rgba(18, 19, 24, 0.92), rgba(8, 9, 12, 0.96));
+  border: 1px solid color-mix(in srgb, var(--hrs-tone) 32%, rgba(255, 255, 255, 0.06));
+  box-shadow: 0 30px 80px -30px color-mix(in srgb, var(--hrs-tone) 40%, transparent), inset 0 1px 0 rgba(255, 255, 255, 0.05);
+  overflow: hidden;
+}
+.hrs.is-premium { border-color: color-mix(in srgb, var(--gold) 45%, transparent); }
+.hrs.is-plus { border-color: color-mix(in srgb, var(--plat) 34%, transparent); }
+
+/* ---- stage ---- */
+.hrs-stage { position: relative; width: min(20rem, 100%); aspect-ratio: 1; margin: -0.25rem auto 0; perspective: 900px; }
+.hrs-aura {
+  position: absolute; inset: 4%; border-radius: 50%;
+  background: radial-gradient(circle, color-mix(in srgb, var(--hrs-tone) 42%, transparent) 0%, color-mix(in srgb, var(--hrs-tone) 10%, transparent) 42%, transparent 68%);
+  filter: blur(6px); animation: hrs-breathe 5.5s ease-in-out infinite;
+}
+.hrs.is-premium.has-prestige .hrs-aura { background: radial-gradient(circle, rgba(255, 170, 40, 0.5) 0%, rgba(255, 110, 20, 0.14) 45%, transparent 70%); }
+.hrs.is-plus.has-prestige .hrs-aura { background: radial-gradient(circle, rgba(215, 230, 255, 0.4) 0%, rgba(150, 180, 230, 0.12) 45%, transparent 70%); }
+
+.hrs-field { position: absolute; inset: 0; pointer-events: none; }
+.hrs-field i {
+  position: absolute; bottom: 18%; width: 3px; height: 3px; border-radius: 50%;
+  background: color-mix(in srgb, var(--hrs-tone) 75%, white);
+  box-shadow: 0 0 6px var(--hrs-tone); opacity: 0;
+  animation: hrs-rise 6s linear infinite;
+}
+.hrs-field i:nth-child(1) { left: 14%; animation-delay: 0s; }
+.hrs-field i:nth-child(2) { left: 22%; animation-delay: 1.9s; width: 2px; height: 2px; }
+.hrs-field i:nth-child(3) { left: 31%; animation-delay: 3.4s; }
+.hrs-field i:nth-child(4) { left: 40%; animation-delay: 0.8s; width: 2px; height: 2px; }
+.hrs-field i:nth-child(5) { left: 48%; animation-delay: 4.6s; }
+.hrs-field i:nth-child(6) { left: 56%; animation-delay: 2.6s; width: 4px; height: 4px; }
+.hrs-field i:nth-child(7) { left: 63%; animation-delay: 5.2s; }
+.hrs-field i:nth-child(8) { left: 71%; animation-delay: 1.2s; width: 2px; height: 2px; }
+.hrs-field i:nth-child(9) { left: 79%; animation-delay: 3.9s; }
+.hrs-field i:nth-child(10) { left: 86%; animation-delay: 0.4s; width: 2px; height: 2px; }
+.hrs-field i:nth-child(11) { left: 36%; animation-delay: 5.8s; animation-duration: 8s; }
+.hrs-field i:nth-child(12) { left: 66%; animation-delay: 2.2s; animation-duration: 7.5s; }
+.hrs-field i:nth-child(13) { left: 18%; animation-delay: 4.1s; animation-duration: 9s; }
+.hrs-field i:nth-child(14) { left: 82%; animation-delay: 6.3s; animation-duration: 8.5s; }
+
+.hrs-tilt { position: absolute; inset: 0; transform-style: preserve-3d; transform: rotateX(72deg) rotateY(-12deg); }
+.hrs-orbit {
+  position: absolute; border-radius: 50%; transform-style: preserve-3d;
+  border: 1px solid color-mix(in srgb, var(--hrs-tone) 55%, transparent);
+  box-shadow: 0 0 14px color-mix(in srgb, var(--hrs-tone) 35%, transparent), inset 0 0 14px color-mix(in srgb, var(--hrs-tone) 20%, transparent);
+  animation: hrs-orbit 14s linear infinite;
+}
+.hrs-orbit.is-a { inset: 6%; }
+.hrs-orbit.is-b { inset: -1%; border-style: dashed; opacity: 0.55; animation-duration: 26s; animation-direction: reverse; }
+.hrs-orbit.is-c { inset: 14%; opacity: 0.8; animation-duration: 9s; }
+.hrs.is-premium .hrs-orbit { border-color: color-mix(in srgb, var(--gold) 60%, transparent); }
+.hrs-sat {
+  position: absolute; top: -5px; left: calc(50% - 5px); width: 10px; height: 10px; border-radius: 50%;
+  background: radial-gradient(circle at 35% 35%, #fff, color-mix(in srgb, var(--hrs-tone) 85%, white) 45%, var(--hrs-tone));
+  box-shadow: 0 0 10px 2px var(--hrs-tone), 0 0 24px color-mix(in srgb, var(--hrs-tone) 60%, transparent);
+  transform: rotateX(-72deg);
+}
+.hrs-sat.is-2 { top: auto; bottom: -4px; width: 7px; height: 7px; }
+.hrs-sat.is-3 { top: calc(50% - 3px); left: -3px; width: 6px; height: 6px; }
+
+.hrs-spin {
+  position: absolute; inset: 0; display: grid; place-items: center; transform-style: preserve-3d;
+  animation: hrs-yaw 9s ease-in-out infinite;
+}
+.hrs-spin > * { filter: drop-shadow(0 18px 30px rgba(0, 0, 0, 0.6)); }
+.hrs-plinth {
+  position: absolute; left: 22%; right: 22%; bottom: 7%; height: 9%; border-radius: 50%;
+  background: radial-gradient(ellipse, color-mix(in srgb, var(--hrs-tone) 45%, transparent), transparent 70%);
+  filter: blur(4px); opacity: 0.8;
+}
+
+/* ---- panel ---- */
+.hrs-panel { position: relative; display: grid; gap: 0.7rem; min-width: 0; }
+.hrs-kicker { margin: 0; font-size: 0.68rem; font-weight: 800; letter-spacing: 0.22em; text-transform: uppercase; color: color-mix(in srgb, var(--hrs-tone) 80%, white); }
+.hrs-id { display: flex; align-items: center; gap: 0.75rem; min-width: 0; }
+.hrs-avatar {
+  flex: none; width: 44px; height: 44px; border-radius: 0.8rem; object-fit: cover;
+  border: 1px solid color-mix(in srgb, var(--hrs-tone) 55%, transparent);
+  box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.5), 0 0 18px color-mix(in srgb, var(--hrs-tone) 30%, transparent);
+}
+.hrs-avatar.is-empty { display: grid; place-items: center; font-weight: 800; color: #fff; background: #1b1d24; }
+.hrs-id-text { display: grid; gap: 0.15rem; min-width: 0; }
+.hrs-name { font-size: 1.05rem; color: #fff; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.hrs-finish { justify-self: start; font-size: 0.62rem; font-weight: 800; letter-spacing: 0.12em; text-transform: uppercase; padding: 0.15rem 0.5rem; border-radius: 999px; }
+.hrs-finish.is-premium { color: #1a1205; background: linear-gradient(90deg, #fff1b8, #f5c842 45%, #e08a1e); }
+.hrs-finish.is-plus { color: #10141b; background: linear-gradient(90deg, #ffffff, #cfd9e8 55%, #93a3bb); }
+
+.hrs-tier { margin: 0; display: flex; flex-wrap: wrap; align-items: baseline; gap: 0.2rem 0.7rem; }
+.hrs-tier-name { font-size: clamp(1.6rem, 4vw, 2.1rem); font-weight: 800; line-height: 1.05; letter-spacing: -0.01em; color: var(--hrs-tone); text-shadow: 0 0 28px color-mix(in srgb, var(--hrs-tone) 45%, transparent); }
+.hrs-tier-div { font-size: 0.8rem; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: rgba(255, 255, 255, 0.7); }
+.hrs-prestige { margin: -0.3rem 0 0; font-size: 0.82rem; font-weight: 700; color: #ffcf6b; }
+.hrs.is-plus .hrs-prestige { color: var(--plat); }
+.hrs.is-free .hrs-prestige { color: rgba(255, 255, 255, 0.72); }
+
+.hrs-rp { margin: 0; display: flex; align-items: baseline; gap: 0.45rem; }
+.hrs-rp-num { font-size: clamp(2.4rem, 7vw, 3.2rem); font-weight: 800; line-height: 1; color: #fff; font-variant-numeric: tabular-nums; }
+.hrs-rp-unit { font-size: 0.85rem; font-weight: 800; letter-spacing: 0.2em; color: rgba(255, 255, 255, 0.55); }
+
+.hrs-next {
+  display: flex; align-items: center; gap: 0.85rem; min-width: 0;
+  padding: 0.7rem 0.9rem; border-radius: 1rem;
+  background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.07);
+}
+.hrs-ring { position: relative; flex: none; width: 64px; height: 64px; display: grid; place-items: center; }
+.hrs-ring svg { position: absolute; inset: 0; transform: rotate(-90deg); }
+.hrs-ring circle { fill: none; stroke-width: 6; }
+.hrs-ring-track { stroke: rgba(255, 255, 255, 0.08); }
+.hrs-ring-fill {
+  stroke: var(--hrs-tone); stroke-linecap: round; stroke-dashoffset: var(--hrs-dash);
+  filter: drop-shadow(0 0 4px var(--hrs-tone));
+  animation: hrs-fill 1.6s cubic-bezier(.2, .8, .2, 1) both 0.2s;
+}
+.hrs-ring-orb { position: relative; display: grid; place-items: center; }
+.hrs-next-text { display: grid; gap: 0.1rem; min-width: 0; flex: 1; }
+.hrs-next-k { font-size: 0.62rem; font-weight: 800; letter-spacing: 0.18em; text-transform: uppercase; color: rgba(255, 255, 255, 0.5); }
+.hrs-next-text strong { font-size: 0.92rem; color: #fff; overflow-wrap: anywhere; }
+.hrs-next-go { font-size: 0.76rem; color: rgba(255, 255, 255, 0.62); }
+.hrs-pct { flex: none; font-size: 1.05rem; font-weight: 800; color: var(--hrs-tone); font-variant-numeric: tabular-nums; }
+
+.hrs-record { margin: 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0.5rem; }
+.hrs-record div { padding: 0.55rem 0.7rem; border-radius: 0.8rem; background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.06); min-width: 0; }
+.hrs-record dt { font-size: 0.6rem; font-weight: 800; letter-spacing: 0.16em; text-transform: uppercase; color: rgba(255, 255, 255, 0.5); }
+.hrs-record dd { margin: 0.15rem 0 0; font-size: 1.05rem; font-weight: 800; color: #fff; font-variant-numeric: tabular-nums; }
+.hrs-record dd span { margin: 0 0.15rem; color: rgba(255, 255, 255, 0.35); }
+.hrs-empty { margin: 0; font-size: 0.82rem; color: rgba(255, 255, 255, 0.6); padding-inline-start: 0.75rem; border-inline-start: 2px solid color-mix(in srgb, var(--hrs-tone) 60%, transparent); }
+
+@media (max-width: 480px) {
+  .hrs { padding: 1rem 0.9rem 1.1rem; border-radius: 1.2rem; }
+  .hrs-stage { width: min(16rem, 100%); }
+}
+
+@keyframes hrs-orbit { to { rotate: 360deg; } }
+@keyframes hrs-yaw { 0%, 100% { transform: rotateY(-22deg) translateY(0); } 50% { transform: rotateY(22deg) translateY(-6px); } }
+@keyframes hrs-breathe { 0%, 100% { opacity: 0.75; transform: scale(0.96); } 50% { opacity: 1; transform: scale(1.04); } }
+@keyframes hrs-rise { 0% { opacity: 0; transform: translateY(0) scale(0.6); } 15% { opacity: 1; } 100% { opacity: 0; transform: translateY(-14rem) scale(1); } }
+@keyframes hrs-fill { from { stroke-dashoffset: 276.46; } }
+
+@media (prefers-reduced-motion: reduce) {
+  .hrs-aura, .hrs-field i, .hrs-orbit, .hrs-spin, .hrs-ring-fill { animation: none; }
+  .hrs-field i { opacity: 0.45; }
+  .hrs-spin { transform: rotateY(-10deg); }
+}

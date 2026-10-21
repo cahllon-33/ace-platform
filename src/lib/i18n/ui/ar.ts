@@ -483,6 +483,16 @@ export const UI_AR: Ui = {
       "watch": "شاهد مباشرة"
     }
   },
+  "r44": {
+    "kicker": "رتبتك",
+    "next": "التالي",
+    "winRate": "نسبة الفوز",
+    "noMatches": "لا توجد مباريات مصنفة بعد. ستظهر نتيجتك الأولى هنا.",
+    "finishPlus": "Plus · لمسة بلاتينية",
+    "finishPremium": "Premium · لمسة نار ذهبية",
+    "progressAria": "التقدم نحو {name}",
+    "matches": "المباريات"
+  },
   "r42": {
     "playTitle": "العب الآن",
     "playSub": "ابحث عن مباراة CS2 مصنفة وابدأ الصعود",

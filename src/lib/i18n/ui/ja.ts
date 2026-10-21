@@ -483,6 +483,16 @@ export const UI_JA: Ui = {
       "watch": "ライブを見る"
     }
   },
+  "r44": {
+    "kicker": "あなたのランク",
+    "next": "次",
+    "winRate": "勝率",
+    "noMatches": "ランクマッチはまだありません。最初の結果がここに表示されます。",
+    "finishPlus": "Plus · プラチナ仕上げ",
+    "finishPremium": "Premium · ゴールドファイア仕上げ",
+    "progressAria": "{name} への進捗",
+    "matches": "試合"
+  },
   "r42": {
     "playTitle": "今すぐプレイ",
     "playSub": "CS2のランクマッチを探して上を目指そう",

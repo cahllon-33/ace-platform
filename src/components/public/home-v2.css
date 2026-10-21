@@ -86,3 +86,4 @@
 .h39-stack-badge { container-type: inline-size; display: block; }
 .h39-stack-badge .rorb { --rorb-size: 100cqw !important; }
 .h39-ladder .rorb { margin-inline: auto; }
+.h39-me.is-r44 { width: min(34rem, 100%); }

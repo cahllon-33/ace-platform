@@ -483,6 +483,16 @@ export const UI_PL: Ui = {
       "watch": "Oglądaj na żywo"
     }
   },
+  "r44": {
+    "kicker": "Twoja ranga",
+    "next": "Następna",
+    "winRate": "Odsetek wygranych",
+    "noMatches": "Brak meczów rankingowych. Twój pierwszy wynik pojawi się tutaj.",
+    "finishPlus": "Plus · platynowe wykończenie",
+    "finishPremium": "Premium · złoty ogień",
+    "progressAria": "Postęp do {name}",
+    "matches": "Mecze"
+  },
   "r42": {
     "playTitle": "Graj teraz",
     "playSub": "Znajdź rankingowy mecz CS2 i wspinaj się",

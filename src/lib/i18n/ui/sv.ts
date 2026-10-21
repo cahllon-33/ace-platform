@@ -483,6 +483,16 @@ export const UI_SV: Ui = {
       "watch": "Titta live"
     }
   },
+  "r44": {
+    "kicker": "Din rank",
+    "next": "Nästa",
+    "winRate": "Vinstandel",
+    "noMatches": "Inga rankade matcher än. Ditt första resultat visas här.",
+    "finishPlus": "Plus · platinafinish",
+    "finishPremium": "Premium · guldeldsfinish",
+    "progressAria": "Framsteg mot {name}",
+    "matches": "Matcher"
+  },
   "r42": {
     "playTitle": "Spela nu",
     "playSub": "Hitta en rankad CS2-match och klättra",

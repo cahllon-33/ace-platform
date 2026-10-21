@@ -483,6 +483,16 @@ export const UI_HE: Ui = {
       "watch": "צפייה בשידור"
     }
   },
+  "r44": {
+    "kicker": "הדרגה שלך",
+    "next": "הבא",
+    "winRate": "אחוז ניצחונות",
+    "noMatches": "עדיין אין משחקים מדורגים. התוצאה הראשונה שלך תופיע כאן.",
+    "finishPlus": "Plus · גימור פלטינה",
+    "finishPremium": "Premium · גימור אש זהב",
+    "progressAria": "התקדמות אל {name}",
+    "matches": "משחקים"
+  },
   "r42": {
     "playTitle": "שחק עכשיו",
     "playSub": "מצא משחק דירוג ב-CS2 והתחל לטפס",

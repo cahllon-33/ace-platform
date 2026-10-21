@@ -483,6 +483,16 @@ export const UI_ES: Ui = {
       "watch": "Ver en directo"
     }
   },
+  "r44": {
+    "kicker": "Tu rango",
+    "next": "Siguiente",
+    "winRate": "Tasa de victorias",
+    "noMatches": "Aún no hay partidas clasificatorias. Tu primer resultado aparecerá aquí.",
+    "finishPlus": "Plus · acabado platino",
+    "finishPremium": "Premium · acabado de fuego dorado",
+    "progressAria": "Progreso hacia {name}",
+    "matches": "Partidas"
+  },
   "r42": {
     "playTitle": "Jugar ahora",
     "playSub": "Encuentra una partida clasificatoria de CS2 y sube",

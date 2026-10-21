@@ -483,6 +483,16 @@ export const UI_HU: Ui = {
       "watch": "Élő nézése"
     }
   },
+  "r44": {
+    "kicker": "A rangod",
+    "next": "Következő",
+    "winRate": "Győzelmi arány",
+    "noMatches": "Még nincs rangsorolt meccsed. Az első eredményed itt jelenik meg.",
+    "finishPlus": "Plus · platina kivitel",
+    "finishPremium": "Premium · arany tűz kivitel",
+    "progressAria": "Haladás: {name}",
+    "matches": "Meccsek"
+  },
   "r42": {
     "playTitle": "Játssz most",
     "playSub": "Találj rangsorolt CS2-meccset, és lépj feljebb",

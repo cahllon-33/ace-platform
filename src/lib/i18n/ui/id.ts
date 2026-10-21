@@ -483,6 +483,16 @@ export const UI_ID: Ui = {
       "watch": "Tonton langsung"
     }
   },
+  "r44": {
+    "kicker": "Peringkatmu",
+    "next": "Berikutnya",
+    "winRate": "Rasio menang",
+    "noMatches": "Belum ada pertandingan ranked. Hasil pertamamu akan muncul di sini.",
+    "finishPlus": "Plus · hasil akhir platinum",
+    "finishPremium": "Premium · hasil akhir api emas",
+    "progressAria": "Progres menuju {name}",
+    "matches": "Pertandingan"
+  },
   "r42": {
     "playTitle": "Main sekarang",
     "playSub": "Temukan laga CS2 berperingkat dan mulai naik",

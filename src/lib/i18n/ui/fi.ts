@@ -483,6 +483,16 @@ export const UI_FI: Ui = {
       "watch": "Katso suorana"
     }
   },
+  "r44": {
+    "kicker": "Sinun arvosi",
+    "next": "Seuraava",
+    "winRate": "Voittoprosentti",
+    "noMatches": "Ei vielä rankattuja otteluita. Ensimmäinen tuloksesi näkyy tässä.",
+    "finishPlus": "Plus · platinaviimeistely",
+    "finishPremium": "Premium · kultainen tuliviimeistely",
+    "progressAria": "Eteneminen: {name}",
+    "matches": "Ottelut"
+  },
   "r42": {
     "playTitle": "Pelaa nyt",
     "playSub": "Löydä rankattu CS2-ottelu ja nouse",

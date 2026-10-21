@@ -483,6 +483,16 @@ export const UI_HI: Ui = {
       "watch": "लाइव देखें"
     }
   },
+  "r44": {
+    "kicker": "आपकी रैंक",
+    "next": "अगला",
+    "winRate": "जीत दर",
+    "noMatches": "अभी तक कोई रैंक्ड मैच नहीं। आपका पहला नतीजा यहाँ दिखेगा।",
+    "finishPlus": "Plus · प्लैटिनम फ़िनिश",
+    "finishPremium": "Premium · गोल्ड फ़ायर फ़िनिश",
+    "progressAria": "{name} की ओर प्रगति",
+    "matches": "मैच"
+  },
   "r42": {
     "playTitle": "अभी खेलें",
     "playSub": "रैंक्ड CS2 मैच ढूंढें और ऊपर चढ़ें",

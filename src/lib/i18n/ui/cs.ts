@@ -483,6 +483,16 @@ export const UI_CS: Ui = {
       "watch": "Sledovat živě"
     }
   },
+  "r44": {
+    "kicker": "Tvoje hodnost",
+    "next": "Další",
+    "winRate": "Míra výher",
+    "noMatches": "Zatím žádné hodnocené zápasy. Tvůj první výsledek se zobrazí tady.",
+    "finishPlus": "Plus · platinová úprava",
+    "finishPremium": "Premium · zlatý oheň",
+    "progressAria": "Postup k {name}",
+    "matches": "Zápasy"
+  },
   "r42": {
     "playTitle": "Hrát teď",
     "playSub": "Najdi hodnocený zápas CS2 a stoupej",

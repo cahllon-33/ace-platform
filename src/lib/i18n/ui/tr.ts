@@ -483,6 +483,16 @@ export const UI_TR: Ui = {
       "watch": "Canlı izle"
     }
   },
+  "r44": {
+    "kicker": "Rütben",
+    "next": "Sonraki",
+    "winRate": "Kazanma oranı",
+    "noMatches": "Henüz dereceli maç yok. İlk sonucun burada görünecek.",
+    "finishPlus": "Plus · platin kaplama",
+    "finishPremium": "Premium · altın ateş kaplama",
+    "progressAria": "{name} hedefine ilerleme",
+    "matches": "Maçlar"
+  },
   "r42": {
     "playTitle": "Şimdi oyna",
     "playSub": "Dereceli bir CS2 maçı bul ve yüksel",

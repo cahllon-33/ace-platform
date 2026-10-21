@@ -483,6 +483,16 @@ export const UI_ZH: Ui = {
       "watch": "观看直播"
     }
   },
+  "r44": {
+    "kicker": "你的段位",
+    "next": "下一级",
+    "winRate": "胜率",
+    "noMatches": "还没有排位比赛。你的第一场结果会显示在这里。",
+    "finishPlus": "Plus · 铂金质感",
+    "finishPremium": "Premium · 金色火焰质感",
+    "progressAria": "距离 {name} 的进度",
+    "matches": "比赛"
+  },
   "r42": {
     "playTitle": "立即开玩",
     "playSub": "寻找 CS2 排位赛，开始攀升",

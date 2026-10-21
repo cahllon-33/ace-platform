@@ -483,6 +483,16 @@ export const UI_RO: Ui = {
       "watch": "Urmărește live"
     }
   },
+  "r44": {
+    "kicker": "Rangul tău",
+    "next": "Următorul",
+    "winRate": "Rată de victorii",
+    "noMatches": "Încă nu ai meciuri clasate. Primul tău rezultat va apărea aici.",
+    "finishPlus": "Plus · finisaj platină",
+    "finishPremium": "Premium · finisaj foc auriu",
+    "progressAria": "Progres spre {name}",
+    "matches": "Meciuri"
+  },
   "r42": {
     "playTitle": "Joacă acum",
     "playSub": "Găsește un meci CS2 clasat și urcă",

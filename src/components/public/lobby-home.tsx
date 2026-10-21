@@ -2,7 +2,8 @@ import { headers } from "next/headers";
 import { HomeLiveBlock } from "@/components/live-block";
 import { loadLive, requestHost } from "@/server/live";
 import { HomeHeroV2, HomePlansV2, HomeRanksV2, HomeStepsV2 } from "@/components/public/home-v2";
-import { PlayerCard } from "@/components/player-card";
+import { HeroRankStage } from "@/components/hero-rank-stage";
+import { effectiveRankArt } from "@/server/rank-art";
 import { guardDisplayName } from "@/lib/display-name-guard";
 import { interpolate } from "@/lib/i18n";
 import { Suspense } from "react";
@@ -12,7 +13,6 @@ import { connection } from "next/server";
 import { HomeLocaleActions, LocaleLoading } from "@/components/home-locale-actions";
 import { PlatformStatus } from "@/components/platform-status";
 import { getText, getUi } from "@/server/locale";
-import { CompetitiveJourney } from "@/components/competitive-journey";
 import { readSessionUser } from "@/server/session";
 
 function LobbyFallback() {
@@ -51,23 +51,20 @@ async function LobbyHomeDynamic() {
         actions={<HomeLocaleActions live={live} />}
         aside={
           user ? (
-            <div className="h39-me">
-              <PlayerCard
-                name={shownName}
-                avatarUrl={user.avatarUrl || null}
-                rp={user.competitiveRating}
-                wins={user.wins}
-                losses={user.losses}
-                labels={{
-                  rp: text.home.ops.rp,
-                  matches: ui.r38.card.matches,
-                  wl: ui.r38.card.wl,
-                  noMatches: ui.r38.card.noMatches,
-                  division: ui.r38.card.division,
+            <div className="h39-me is-r44">
+              <HeroRankStage
+                ui={ui}
+                player={{
+                  name: shownName,
+                  avatarUrl: user.avatarUrl || null,
                   avatarAlt: interpolate(text.home.ops.avatarAlt, { name: shownName }),
+                  rp: user.competitiveRating,
+                  plan: user.subscriptionTier,
+                  art: effectiveRankArt(user),
+                  wins: user.wins,
+                  losses: user.losses,
                 }}
               />
-              <CompetitiveJourney rp={user.competitiveRating} ui={ui} />
             </div>
           ) : undefined
         }

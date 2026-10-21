@@ -483,6 +483,16 @@ export const UI_HR: Ui = {
       "watch": "Gledaj uživo"
     }
   },
+  "r44": {
+    "kicker": "Tvoj rang",
+    "next": "Sljedeći",
+    "winRate": "Postotak pobjeda",
+    "noMatches": "Još nema rangiranih mečeva. Tvoj prvi rezultat pojavit će se ovdje.",
+    "finishPlus": "Plus · platinasta završnica",
+    "finishPremium": "Premium · zlatna vatrena završnica",
+    "progressAria": "Napredak prema {name}",
+    "matches": "Mečevi"
+  },
   "r42": {
     "playTitle": "Igraj sada",
     "playSub": "Pronađi rangirani CS2 meč i penji se",

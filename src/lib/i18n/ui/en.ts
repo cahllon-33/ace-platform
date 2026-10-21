@@ -424,6 +424,16 @@ export const UI_EN = {
       "watch": "Watch live"
     }
   },
+  "r44": {
+    "kicker": "Your rank",
+    "next": "Next",
+    "winRate": "Win rate",
+    "noMatches": "No ranked matches yet. Your first result will show up here.",
+    "finishPlus": "Plus · platinum finish",
+    "finishPremium": "Premium · gold fire finish",
+    "progressAria": "Progress to {name}",
+    "matches": "Matches"
+  },
   "r42": {
     "playTitle": "Play Now",
     "playSub": "Find a ranked CS2 match and start climbing",

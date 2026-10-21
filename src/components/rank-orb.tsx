@@ -4,7 +4,7 @@ import { PrestigeEmblem } from "@/components/prestige-emblem";
 import type { PrestigeBadge } from "@/lib/prestige";
 
 /** Fixed tier colors (same values as the public .ace-rank-tone-N palette). Never user-editable. */
-const TIER_TONE: Record<number, string> = {
+export const TIER_TONE: Record<number, string> = {
   1: "#9aa3ad",
   2: "#c08a4a",
   3: "#d4a094",

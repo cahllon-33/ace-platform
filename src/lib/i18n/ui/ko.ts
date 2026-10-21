@@ -483,6 +483,16 @@ export const UI_KO: Ui = {
       "watch": "라이브 보기"
     }
   },
+  "r44": {
+    "kicker": "내 랭크",
+    "next": "다음",
+    "winRate": "승률",
+    "noMatches": "아직 랭크 경기가 없습니다. 첫 결과가 여기에 표시됩니다.",
+    "finishPlus": "Plus · 플래티넘 마감",
+    "finishPremium": "Premium · 골드 파이어 마감",
+    "progressAria": "{name}까지 진행도",
+    "matches": "경기"
+  },
   "r42": {
     "playTitle": "지금 플레이",
     "playSub": "CS2 랭크 매치를 찾고 올라가세요",

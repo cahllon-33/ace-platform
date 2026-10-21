@@ -483,6 +483,16 @@ export const UI_TH: Ui = {
       "watch": "ดูสด"
     }
   },
+  "r44": {
+    "kicker": "แรงก์ของคุณ",
+    "next": "ถัดไป",
+    "winRate": "อัตราชนะ",
+    "noMatches": "ยังไม่มีแมตช์จัดอันดับ ผลแรกของคุณจะแสดงที่นี่",
+    "finishPlus": "Plus · ผิวแพลทินัม",
+    "finishPremium": "Premium · ผิวเพลิงทอง",
+    "progressAria": "ความคืบหน้าสู่ {name}",
+    "matches": "แมตช์"
+  },
   "r42": {
     "playTitle": "เล่นเลย",
     "playSub": "หาแมตช์ CS2 แบบจัดอันดับแล้วไต่ขึ้นไป",

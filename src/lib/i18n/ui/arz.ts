@@ -483,6 +483,16 @@ export const UI_ARZ: Ui = {
       "watch": "اتفرج لايف"
     }
   },
+  "r44": {
+    "kicker": "رتبتك",
+    "next": "اللي بعده",
+    "winRate": "نسبة الفوز",
+    "noMatches": "لسه مفيش ماتشات مصنفة. أول نتيجة ليك هتظهر هنا.",
+    "finishPlus": "Plus · لمسة بلاتين",
+    "finishPremium": "Premium · لمسة نار دهبي",
+    "progressAria": "التقدم لـ {name}",
+    "matches": "الماتشات"
+  },
   "r42": {
     "playTitle": "العب دلوقتي",
     "playSub": "لاقي ماتش CS2 متصنف وابدأ تطلع",

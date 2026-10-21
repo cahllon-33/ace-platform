@@ -483,6 +483,16 @@ export const UI_PT_BR: Ui = {
       "watch": "Assistir ao vivo"
     }
   },
+  "r44": {
+    "kicker": "Seu rank",
+    "next": "Próximo",
+    "winRate": "Taxa de vitória",
+    "noMatches": "Ainda sem partidas ranqueadas. Seu primeiro resultado aparecerá aqui.",
+    "finishPlus": "Plus · acabamento platina",
+    "finishPremium": "Premium · acabamento fogo dourado",
+    "progressAria": "Progresso até {name}",
+    "matches": "Partidas"
+  },
   "r42": {
     "playTitle": "Jogar agora",
     "playSub": "Encontre uma partida ranqueada de CS2 e suba",
