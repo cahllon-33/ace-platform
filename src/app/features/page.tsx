@@ -53,18 +53,9 @@ export default async function FeaturesPage() {
           </dl>
         </div></section>
 
-        <section className="lg41-sec">
-          <p className="lg41-num" aria-hidden="true">02</p><div className="lg41-sec-body">
-          <h2 className="lg41-h2">{copy.faceScan.title}</h2>
-          {copy.faceScan.paragraphs.map((paragraph) => (
-            <p key={paragraph} className="mt-4 text-sm leading-7 text-[#A9ABB3]">
-              {paragraph}
-            </p>
-          ))}
-        </div></section>
 
         <section className="lg41-sec">
-          <p className="lg41-num" aria-hidden="true">03</p><div className="lg41-sec-body">
+          <p className="lg41-num" aria-hidden="true">02</p><div className="lg41-sec-body">
           <h2 className="lg41-h2">
             {copy.calibration.title}
           </h2>
