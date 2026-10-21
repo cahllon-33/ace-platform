@@ -42,8 +42,8 @@ export function SiteFooter() {
     <footer className="ace-footer relative z-10 mt-auto">
       <div className="ace-footer-inner">
         <div className="ace-footer-brand">
-          <Link href="/" className="ace-footer-logo" aria-label="A.C.E.">
-            A.C.E.
+          <Link href="/" className="ace-footer-logo" aria-label="A.C.E">
+            A.C.E
           </Link>
           <p className="ace-footer-tagline">{ui.footer.tagline}</p>
           {socialNetworks.length > 0 ? (

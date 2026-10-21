@@ -15,6 +15,7 @@ import { getText } from "@/server/locale";
 import { readSessionUser } from "@/server/session";
 import { isAllowlistedSteamId } from "@/lib/admin-allowlist";
 import { rankLevelFromRp } from "@/lib/rank-progress";
+import { RANK_TIERS } from "@/lib/ranks";
 
 export async function AuthBar() {
   await connection();
@@ -31,7 +32,8 @@ export async function AuthBar() {
   const unread = user ? await prisma.notification.count({ where: { userId: user.id, readAt: null } }).catch(() => 0) : 0;
   const level = user ? rankLevelFromRp(user.competitiveRating) : null;
   const label = user ? guardDisplayName(user.displayName, user.steamId) : null;
-  const initial = label?.trim().charAt(0).toUpperCase() ?? "P";
+  const initial = label?.trim().charAt(0).toUpperCase() ?? "";
+  const tier = level ? RANK_TIERS[level - 1] : null;
 
   return (
     <div className="flex flex-wrap items-center justify-end gap-2">
@@ -56,25 +58,33 @@ export async function AuthBar() {
         </svg>
         {unread > 0 ? <span className="ace-util-count">{unread > 9 ? "9+" : unread}</span> : null}
       </Link>
-      <Link
-        href={user ? "/dashboard" : STEAM_AUTH_HREF}
-        prefetch={false}
-        className="ace-level-chip no-underline"
-        title={user && label ? label : copy.connectProfileTitle}
-        aria-label={user ? copy.openProfileAria : copy.connectProfileAria}
-      >
-        <span className="ace-level-ring" aria-hidden="true">
-          {initial}
-        </span>
-        <span className="flex min-w-0 flex-col leading-tight">
-          <span className="text-[0.6rem] uppercase tracking-[0.14em] text-[#D4AF37]">
-            {level ? <T k="levelLabel" values={{ level }} /> : <T k="levelEmpty" />}
+      {user ? (
+        <Link
+          href="/dashboard"
+          prefetch={false}
+          className="ace-level-chip no-underline"
+          title={label ?? undefined}
+          aria-label={copy.openProfileAria}
+        >
+          {user.avatarUrl ? (
+            // eslint-disable-next-line @next/next/no-img-element
+            <img src={user.avatarUrl} alt="" width={34} height={34} className="ace-chip-avatar" referrerPolicy="no-referrer" />
+          ) : (
+            <span className="ace-chip-initial" aria-hidden="true">{initial}</span>
+          )}
+          <span className="flex min-w-0 flex-col leading-tight">
+            <span className="max-w-[9rem] truncate text-xs font-semibold text-[#F5F3EC]">{label}</span>
+            <span className="text-[0.62rem] tracking-[0.06em] text-[#D4AF37]">
+              {tier?.name} · {user.competitiveRating.toLocaleString("en-US")} RP
+            </span>
           </span>
-          <span className="max-w-[9rem] truncate text-xs text-[#F5F3EC]">
-            {label ?? <T k="connectProfile" />}
-          </span>
-        </span>
-      </Link>
+        </Link>
+      ) : (
+        <a href={STEAM_AUTH_HREF} className="ace-chip-signin" aria-label={copy.connectProfileAria}>
+          <svg viewBox="0 0 24 24" className="h-4 w-4" aria-hidden="true" fill="none" stroke="currentColor" strokeWidth="1.8"><circle cx="12" cy="8" r="3.6" /><path d="M4.5 20a7.5 7.5 0 0 1 15 0" /></svg>
+          <T k="signInSteam" />
+        </a>
+      )}
       {user ? (
         <form action="/api/auth/logout" method="post">
           <button

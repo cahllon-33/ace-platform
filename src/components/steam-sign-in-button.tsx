@@ -39,15 +39,9 @@ export function SteamSignInButton({
   const acceptId = useId();
   const [accepted, setAccepted] = useState(false);
 
-  const [steamTone, setSteamTone] = useState(false);
-  const skin =
-    variant === "steam"
-      ? `ace-steam-cta${steamTone ? " is-steam" : ""}`
-      : variant === "primary"
-        ? "inline-flex items-center justify-center gap-2 rounded-full bg-gradient-to-b from-[#FFD76A] to-[#D4AF37] text-[#020203] font-semibold"
-        : "inline-flex items-center justify-center gap-2 rounded-full border border-[#FFD76A]/45 text-[#F5F3EC] hover:border-[#FFD76A]";
-
-  const size = compact ? "min-h-11 px-4 text-sm" : variant === "steam" ? "" : "min-h-12 px-6 text-sm";
+  // R42: every Steam sign-in button uses one Steam-style dark skin (see .ace-steam-btn in globals.css).
+  const skin = `ace-steam-btn${variant === "steam" ? " is-wide" : ""}`;
+  const size = compact ? "is-compact" : "";
 
   return (
     <div
@@ -59,15 +53,12 @@ export function SteamSignInButton({
         href={next === "squad" ? `${STEAM_AUTH_HREF}?next=squad` : STEAM_AUTH_HREF}
         aria-disabled={!accepted}
         aria-label={`${text}. Official Steam OpenID sign-in`}
-        className={`${skin} ${size} ${accepted ? "" : "pointer-events-none opacity-45"}`}
-        onPointerDown={() => {
-          if (variant === "steam") setSteamTone(true);
-        }}
+        className={`${skin} ${size}${accepted ? "" : " is-locked"}`}
         onClick={(event) => {
           if (!accepted) event.preventDefault();
         }}
       >
-        <SteamMark className={variant === "steam" ? "ace-steam-mark" : "h-5 w-5"} />
+        <SteamMark className="ace-steam-btn-mark" />
         {text}
       </a>
     </div>

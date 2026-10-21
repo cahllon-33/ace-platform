@@ -8102,3 +8102,21 @@ html[dir="rtl"] .ace-hub-card-face {
   .ace-cookie-tray-inner > .min-w-0 { width: 100%; }
   #ace-cookie-copy { font-size: .74rem; line-height: 1.35; }
 }
+
+/* R42 Steam sign-in button: Steam-style dark skin (neutral glyph, no extra marks). */
+.ace-steam-btn { display: inline-flex; align-items: center; justify-content: center; gap: .6rem; min-height: 3rem; padding: 0 1.4rem; border-radius: .6rem;
+  background: linear-gradient(180deg, #1f2d3d 0%, #171a21 100%); border: 1px solid #2a475e; color: #e6edf3; font-weight: 700; font-size: .9rem; letter-spacing: .02em;
+  text-decoration: none; box-shadow: inset 0 1px 0 rgba(255,255,255,.06), 0 6px 18px -10px rgba(0,0,0,.8); transition: background-color .15s ease, border-color .15s ease, box-shadow .15s ease; }
+.ace-steam-btn:hover { background: linear-gradient(180deg, #24384d 0%, #1b2838 100%); border-color: #66c0f4; box-shadow: inset 0 1px 0 rgba(255,255,255,.08), 0 0 0 1px rgba(102,192,244,.25); }
+.ace-steam-btn:focus-visible { outline: 2px solid #66c0f4; outline-offset: 2px; }
+.ace-steam-btn.is-wide { width: 100%; }
+.ace-steam-btn.is-compact { min-height: 2.75rem; padding: 0 1rem; font-size: .85rem; }
+.ace-steam-btn-mark { width: 1.25rem; height: 1.25rem; flex: none; }
+/* locked until the terms box is ticked: clearly inactive, still readable */
+.ace-steam-btn.is-locked { pointer-events: none; background: #14171d; border-style: dashed; border-color: #3a4552; color: #8b96a3; box-shadow: none; }
+.ace-steam-btn.is-locked .ace-steam-btn-mark { opacity: .55; }
+/* R42 header profile chip */
+.ace-chip-avatar { width: 2.1rem; height: 2.1rem; flex: none; border-radius: 50%; object-fit: cover; box-shadow: 0 0 0 2px #D4AF37, 0 0 10px rgba(212,175,55,.35); background: #111; }
+.ace-chip-initial { display: inline-grid; place-items: center; width: 2.1rem; height: 2.1rem; flex: none; border-radius: 50%; box-shadow: 0 0 0 2px #D4AF37; color: #FFD76A; font-weight: 800; font-size: .85rem; background: #121318; }
+.ace-chip-signin { display: inline-flex; align-items: center; gap: .5rem; min-height: 2.5rem; padding: 0 .9rem; border-radius: .6rem; background: linear-gradient(180deg, #1f2d3d, #171a21); border: 1px solid #2a475e; color: #e6edf3; font-size: .8rem; font-weight: 700; text-decoration: none; }
+.ace-chip-signin:hover { border-color: #66c0f4; }

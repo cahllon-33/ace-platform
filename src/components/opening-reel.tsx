@@ -54,7 +54,7 @@ export function OpeningReel() {
         <div className="ace-open-still" />
       )}
       <div className="ace-open-copy">
-        <p className="ace-open-mark">A.C.E.</p>
+        <p className="ace-open-mark">A.C.E</p>
         <p className="ace-open-line">{copy.line}</p>
       </div>
       <button type="button" className="ace-open-skip" onClick={close}>

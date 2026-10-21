@@ -16,9 +16,7 @@ export function AceLogo({ compact = false }: { compact?: boolean }) {
             : "h-10 w-10 rounded-sm object-contain"
         }
       />
-      <span className="text-lg font-semibold tracking-[0.22em] text-[#FFD76A]">
-        A.C.E.
-      </span>
+      <span className="ace-wordmark text-lg font-semibold tracking-[0.04em] text-[#FFD76A]">A.C.E</span>
     </span>
   );
 }

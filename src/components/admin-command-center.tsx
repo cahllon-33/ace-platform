@@ -461,7 +461,7 @@ export function AdminCommandCenter({
         <div className="acx-brand">
           <span className="acx-brand-mark" aria-hidden="true">A</span>
           <span>
-            <strong>A.C.E.</strong>
+            <strong>A.C.E</strong>
             <small>{t("navBrand")}</small>
           </span>
         </div>
