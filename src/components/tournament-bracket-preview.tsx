@@ -14,7 +14,6 @@ import {
   type BracketSlot,
   type WingMatch,
 } from "@/lib/dual-wing-bracket";
-import { bracketField } from "@/lib/staging-clans";
 import type { LayoutTeam } from "@/lib/tournament-layout";
 import "./tournament-dual-wing.css";
 
@@ -252,7 +251,8 @@ export function TournamentBracketPreview({
   const copy = useText().teams.tournaments.bracket;
   const router = useRouter();
   const params = useSearchParams();
-  const field = useMemo(() => bracketField(teams), [teams]);
+  // Real registered teams only; unfilled competitor slots render as open.
+  const field = useMemo(() => teams.slice(0, BRACKET_CAPACITY.competitors), [teams]);
   const bracket = useMemo(() => buildDualWing(field), [field]);
   const selectedIndex = field.findIndex((team) => team.id === params.get("team"));
   const selected = selectedIndex >= 0 ? field[selectedIndex]! : null;

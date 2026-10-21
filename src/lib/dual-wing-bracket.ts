@@ -24,7 +24,6 @@ export const WING_ROUNDS = [
 export type WingRoundId = (typeof WING_ROUNDS)[number]["id"];
 
 const SIDE_MATCHES = 32;
-const BYE_MATCHES_PER_SIDE = 14;
 const COMPETITOR_SLOTS = 100;
 const BYE_SLOTS = 28;
 
@@ -33,26 +32,37 @@ export const BRACKET_CAPACITY = {
   byes: BYE_SLOTS,
 } as const;
 
-function takeTeam(pool: LayoutTeam[], cursor: { n: number }): BracketSlot {
-  const team = pool[cursor.n];
-  if (!team) return { kind: "open" };
-  cursor.n += 1;
-  return { kind: "team", team };
+/** Standard seed order for a power-of-two draw: 1 v N, and every block holds a balanced spread of seeds. */
+export function seedOrder(size: number): number[] {
+  let order = [1];
+  while (order.length < size) {
+    const n = order.length * 2;
+    order = order.flatMap((seed) => [seed, n + 1 - seed]);
+  }
+  return order;
 }
 
+const WING_SLOTS = SIDE_MATCHES * 2;
+const WING_COMPETITORS = COMPETITOR_SLOTS / 2;
+const WING_SEEDS = seedOrder(WING_SLOTS);
+
+/**
+ * 50 competitor slots per wing in a 64-slot tree. Seeds 51-64 are byes, so the 14 byes fall
+ * one per match against seeds 1-14 and spread evenly through every quarter of the wing.
+ * Both wings use the identical pattern, so the halves mirror each other exactly.
+ */
 function firstRound(pool: LayoutTeam[], wing: "left" | "right"): WingMatch[] {
-  const cursor = { n: 0 };
-  return Array.from({ length: SIDE_MATCHES }, (_, index) => {
-    const home = takeTeam(pool, cursor);
-    const away: BracketSlot =
-      index < BYE_MATCHES_PER_SIDE ? { kind: "bye" } : takeTeam(pool, cursor);
-    return {
-      id: `${wing}-r128-${index}`,
-      round: "r128",
-      index,
-      slots: [home, away],
-    };
-  });
+  const slot = (seed: number): BracketSlot => {
+    if (seed > WING_COMPETITORS) return { kind: "bye" };
+    const team = pool[seed - 1];
+    return team ? { kind: "team", team } : { kind: "open" };
+  };
+  return Array.from({ length: SIDE_MATCHES }, (_, index) => ({
+    id: `${wing}-r128-${index}`,
+    round: "r128",
+    index,
+    slots: [slot(WING_SEEDS[index * 2]!), slot(WING_SEEDS[index * 2 + 1]!)] as [BracketSlot, BracketSlot],
+  }));
 }
 
 /** A bye sends its paired clan into round 2. Unplayed matches stay open. */
@@ -88,8 +98,9 @@ function descend(first: WingMatch[], wing: "left" | "right"): Record<WingRoundId
 export function buildDualWing(teams: LayoutTeam[]) {
   const stored = teams.slice(0, COMPETITOR_SLOTS);
   return {
-    left: descend(firstRound(stored.slice(0, 50), "left"), "left"),
-    right: descend(firstRound(stored.slice(50), "right"), "right"),
+    // Alternate seeds between wings (1→left, 2→right, …) so both halves stay equally strong.
+    left: descend(firstRound(stored.filter((_, i) => i % 2 === 0), "left"), "left"),
+    right: descend(firstRound(stored.filter((_, i) => i % 2 === 1), "right"), "right"),
     stored: stored.length,
   };
 }
