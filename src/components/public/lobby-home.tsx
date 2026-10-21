@@ -1,3 +1,6 @@
+import { headers } from "next/headers";
+import { HomeLiveBlock } from "@/components/live-block";
+import { loadLive, requestHost } from "@/server/live";
 import { HomeHeroV2, HomePlansV2, HomeRanksV2, HomeStepsV2 } from "@/components/public/home-v2";
 import { PlayerCard } from "@/components/player-card";
 import { guardDisplayName } from "@/lib/display-name-guard";
@@ -37,7 +40,7 @@ async function LobbyHomeDynamic() {
     user = null;
   }
 
-  const [text, liveStats, ui] = await Promise.all([getText(), readPublicStats(), getUi()]);
+  const [text, liveStats, ui, broadcast, h] = await Promise.all([getText(), readPublicStats(), getUi(), loadLive(), headers()]);
   const live = Boolean(user);
   const shownName = user ? guardDisplayName(user.displayName, user.steamId) : "";
   return (
@@ -71,6 +74,7 @@ async function LobbyHomeDynamic() {
       />
       <HomeStepsV2 ui={ui} />
       <HomeRanksV2 ui={ui} />
+      <HomeLiveBlock feeds={broadcast.feeds} host={requestHost(h)} copy={ui.r41b.lv} />
       <HomePlansV2 ui={ui} />
       <div className="h39-section h39-status">
         <PlatformStatus />

@@ -469,5 +469,18 @@ export const UI_HR: Ui = {
       "lede": "Sezone će resetirati plasman i dodijeliti značke na kraju sezone.",
       "none": "Još nije počela nijedna sezona. Prva će biti najavljena ovdje."
     }
+  },
+  "r41b": {
+    "lv": {
+      "nav": "Uživo",
+      "title": "Prijenosi uživo",
+      "lede": "Službeni prijenosi A.C.E. turnira. Prijenos se ovdje prikazuje samo dok ga operateri drže u eteru.",
+      "none": "Trenutačno nema prijenosa uživo",
+      "noneBody": "Kad službeni prijenos krene, pojavit će se ovdje. U međuvremenu pogledajte turnire ispod.",
+      "schedule": "Nadolazeći turniri",
+      "noSchedule": "Još nema zakazanih turnira.",
+      "onAir": "U eteru",
+      "watch": "Gledaj uživo"
+    }
   }
 };

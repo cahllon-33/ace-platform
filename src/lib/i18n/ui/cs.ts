@@ -469,5 +469,18 @@ export const UI_CS: Ui = {
       "lede": "Sezóny vynulují umístění a udělí odznaky za konec sezóny.",
       "none": "Zatím nezačala žádná sezóna. První sezóna bude oznámena zde."
     }
+  },
+  "r41b": {
+    "lv": {
+      "nav": "Živě",
+      "title": "Živé přenosy",
+      "lede": "Oficiální přenosy turnajů A.C.E. Přenos se zde zobrazí jen tehdy, když ho operátoři pustí do éteru.",
+      "none": "Právě neprobíhá žádný přenos",
+      "noneBody": "Jakmile začne oficiální přenos, objeví se zde. Mezitím se podívejte na turnaje níže.",
+      "schedule": "Nadcházející turnaje",
+      "noSchedule": "Zatím nejsou naplánovány žádné turnaje.",
+      "onAir": "Vysíláme",
+      "watch": "Sledovat živě"
+    }
   }
 };

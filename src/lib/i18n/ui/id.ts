@@ -469,5 +469,18 @@ export const UI_ID: Ui = {
       "lede": "Musim akan mengatur ulang peringkat dan memberi lencana akhir musim.",
       "none": "Belum ada musim yang dimulai. Musim pertama diumumkan di sini."
     }
+  },
+  "r41b": {
+    "lv": {
+      "nav": "Live",
+      "title": "Siaran langsung",
+      "lede": "Siaran resmi turnamen A.C.E. Siaran hanya tampil di sini saat operator menayangkannya.",
+      "none": "Tidak ada siaran langsung saat ini",
+      "noneBody": "Saat siaran resmi tayang, siaran itu muncul di sini. Sementara itu, lihat turnamen di bawah.",
+      "schedule": "Turnamen mendatang",
+      "noSchedule": "Belum ada turnamen terjadwal.",
+      "onAir": "Tayang",
+      "watch": "Tonton langsung"
+    }
   }
 };

@@ -469,5 +469,18 @@ export const UI_SV: Ui = {
       "lede": "Säsonger nollställer placeringen och delar ut säsongsmärken.",
       "none": "Ingen säsong har startat än. Den första annonseras här."
     }
+  },
+  "r41b": {
+    "lv": {
+      "nav": "Live",
+      "title": "Livesändningar",
+      "lede": "Officiella A.C.E.-turneringsstreams. En sändning visas här bara medan operatörerna har den i sändning.",
+      "none": "Ingen livesändning just nu",
+      "noneBody": "När en officiell stream går i sändning visas den här. Under tiden kan du se turneringarna nedan.",
+      "schedule": "Kommande turneringar",
+      "noSchedule": "Inga turneringar är schemalagda än.",
+      "onAir": "I sändning",
+      "watch": "Titta live"
+    }
   }
 };

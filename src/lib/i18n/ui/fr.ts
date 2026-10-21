@@ -469,5 +469,18 @@ export const UI_FR: Ui = {
       "lede": "Les saisons réinitialiseront le classement et attribueront des badges de fin de saison.",
       "none": "Aucune saison n’a encore commencé. La première sera annoncée ici."
     }
+  },
+  "r41b": {
+    "lv": {
+      "nav": "Direct",
+      "title": "Diffusions en direct",
+      "lede": "Streams officiels des tournois A.C.E. Une diffusion apparaît ici uniquement lorsque les opérateurs l'ont mise à l'antenne.",
+      "none": "Aucune diffusion en direct pour le moment",
+      "noneBody": "Dès qu'un stream officiel passe à l'antenne, il apparaît ici. En attendant, voyez les tournois ci-dessous.",
+      "schedule": "Tournois à venir",
+      "noSchedule": "Aucun tournoi programmé pour l'instant.",
+      "onAir": "À l'antenne",
+      "watch": "Regarder en direct"
+    }
   }
 };

@@ -82,6 +82,9 @@ export function SiteHeader({ auth }: { auth: ReactNode }) {
               </Link>
             );
           })}
+          <Link href="/live" aria-current={isActive(pathname, "/live") ? "page" : undefined} className={isActive(pathname, "/live") ? "is-on" : undefined}>
+            {ui.r41b.lv.nav}
+          </Link>
         </nav>
 
         <div className="hx-tools">
@@ -141,6 +144,14 @@ export function SiteHeader({ auth }: { auth: ReactNode }) {
                     </li>
                   );
                 })}
+                {group.label === ui.nav.compete ? (
+                  <li>
+                    <Link href="/live" aria-current={isActive(pathname, "/live") ? "page" : undefined} onClick={close}>
+                      <span>{ui.r41b.lv.nav}</span>
+                      <span aria-hidden="true" className="hx-arrow">→</span>
+                    </Link>
+                  </li>
+                ) : null}
               </ul>
             </section>
           ))}

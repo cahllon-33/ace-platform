@@ -469,5 +469,18 @@ export const UI_ES: Ui = {
       "lede": "Las temporadas reiniciarán la clasificación y darán insignias de fin de temporada.",
       "none": "Aún no ha empezado ninguna temporada. La primera se anunciará aquí."
     }
+  },
+  "r41b": {
+    "lv": {
+      "nav": "En directo",
+      "title": "Retransmisiones en directo",
+      "lede": "Streams oficiales de torneos de A.C.E. Una retransmisión aparece aquí solo mientras los operadores la tienen en antena.",
+      "none": "No hay retransmisión en directo ahora",
+      "noneBody": "Cuando un stream oficial salga al aire aparecerá aquí. Mientras tanto, mira los torneos de abajo.",
+      "schedule": "Próximos torneos",
+      "noSchedule": "Aún no hay torneos programados.",
+      "onAir": "En antena",
+      "watch": "Ver en directo"
+    }
   }
 };

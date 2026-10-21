@@ -20,3 +20,4 @@
 .in41-ok-box { border-color: rgba(123,216,143,.5); }
 .in41-err-box { border-color: rgba(255,122,107,.55); }
 .in41-points { margin: 0; padding-inline-start: 1.2rem; display: grid; gap: .6rem; color: #c3bdae; line-height: 1.7; }
+.in41-wide { max-width: 72rem; }

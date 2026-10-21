@@ -469,5 +469,18 @@ export const UI_HU: Ui = {
       "lede": "A szezonok nullázzák a helyezést és szezonvégi jelvényeket adnak.",
       "none": "Még nem indult szezon. Az elsőt itt jelentjük be."
     }
+  },
+  "r41b": {
+    "lv": {
+      "nav": "Élő",
+      "title": "Élő közvetítések",
+      "lede": "Az A.C.E. tornák hivatalos streamjei. Közvetítés csak akkor jelenik meg itt, amikor az operátorok adásba tették.",
+      "none": "Most nincs élő közvetítés",
+      "noneBody": "Amint egy hivatalos stream adásba kerül, itt jelenik meg. Addig nézd meg a lenti tornákat.",
+      "schedule": "Közelgő tornák",
+      "noSchedule": "Még nincs ütemezett torna.",
+      "onAir": "Adásban",
+      "watch": "Élő nézése"
+    }
   }
 };

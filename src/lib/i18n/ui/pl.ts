@@ -469,5 +469,18 @@ export const UI_PL: Ui = {
       "lede": "Sezony wyzerują pozycje i przyznają odznaki na koniec sezonu.",
       "none": "Żaden sezon jeszcze się nie zaczął. Pierwszy zostanie ogłoszony tutaj."
     }
+  },
+  "r41b": {
+    "lv": {
+      "nav": "Na żywo",
+      "title": "Transmisje na żywo",
+      "lede": "Oficjalne transmisje turniejów A.C.E. Transmisja pojawia się tu tylko wtedy, gdy operatorzy puszczą ją na antenę.",
+      "none": "Brak transmisji na żywo",
+      "noneBody": "Gdy oficjalna transmisja wejdzie na antenę, pojawi się tutaj. Tymczasem zobacz turnieje poniżej.",
+      "schedule": "Nadchodzące turnieje",
+      "noSchedule": "Nie zaplanowano jeszcze turniejów.",
+      "onAir": "Na antenie",
+      "watch": "Oglądaj na żywo"
+    }
   }
 };

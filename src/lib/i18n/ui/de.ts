@@ -469,5 +469,18 @@ export const UI_DE: Ui = {
       "lede": "Saisons setzen die Platzierung zurück und vergeben Saisonabzeichen.",
       "none": "Noch keine Saison gestartet. Die erste Saison wird hier angekündigt."
     }
+  },
+  "r41b": {
+    "lv": {
+      "nav": "Live",
+      "title": "Live-Übertragungen",
+      "lede": "Offizielle A.C.E.-Turnierstreams. Eine Übertragung erscheint hier nur, solange das Team sie auf Sendung geschaltet hat.",
+      "none": "Gerade keine Live-Übertragung",
+      "noneBody": "Sobald ein offizieller Stream auf Sendung geht, erscheint er hier. Bis dahin: die Turniere unten.",
+      "schedule": "Kommende Turniere",
+      "noSchedule": "Noch keine Turniere geplant.",
+      "onAir": "Auf Sendung",
+      "watch": "Live ansehen"
+    }
   }
 };

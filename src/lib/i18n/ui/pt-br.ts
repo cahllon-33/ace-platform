@@ -469,5 +469,18 @@ export const UI_PT_BR: Ui = {
       "lede": "As temporadas vão zerar a classificação e dar emblemas de fim de temporada.",
       "none": "Nenhuma temporada começou ainda. A primeira será anunciada aqui."
     }
+  },
+  "r41b": {
+    "lv": {
+      "nav": "Ao vivo",
+      "title": "Transmissões ao vivo",
+      "lede": "Streams oficiais dos torneios A.C.E. Uma transmissão só aparece aqui enquanto os operadores a deixam no ar.",
+      "none": "Nenhuma transmissão ao vivo agora",
+      "noneBody": "Quando um stream oficial entrar no ar, ele aparece aqui. Enquanto isso, veja os torneios abaixo.",
+      "schedule": "Próximos torneios",
+      "noSchedule": "Ainda não há torneios agendados.",
+      "onAir": "No ar",
+      "watch": "Assistir ao vivo"
+    }
   }
 };

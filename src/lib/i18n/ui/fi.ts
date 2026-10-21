@@ -469,5 +469,18 @@ export const UI_FI: Ui = {
       "lede": "Kaudet nollaavat sijoitukset ja jakavat kauden päätösmerkit.",
       "none": "Yhtään kautta ei ole vielä alkanut. Ensimmäinen kausi julkistetaan täällä."
     }
+  },
+  "r41b": {
+    "lv": {
+      "nav": "Live",
+      "title": "Suorat lähetykset",
+      "lede": "A.C.E.:n viralliset turnauslähetykset. Lähetys näkyy täällä vain, kun ylläpito on laittanut sen lähetykseen.",
+      "none": "Ei suoraa lähetystä juuri nyt",
+      "noneBody": "Kun virallinen lähetys alkaa, se näkyy täällä. Sillä välin katso turnaukset alta.",
+      "schedule": "Tulevat turnaukset",
+      "noSchedule": "Turnauksia ei ole vielä aikataulutettu.",
+      "onAir": "Lähetyksessä",
+      "watch": "Katso suorana"
+    }
   }
 };

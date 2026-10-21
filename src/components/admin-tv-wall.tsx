@@ -4,14 +4,14 @@ import { useRef, useState, type FormEvent } from "react";
 import { useRouter } from "next/navigation";
 import type { AdminMessageKey } from "@/lib/admin-i18n";
 import type { TvFeed } from "@/lib/broadcast";
-import { addBroadcastFeed, removeBroadcastFeed } from "@/server/admin-broadcast";
+import { addBroadcastFeed, removeBroadcastFeed, setBroadcastLive } from "@/server/admin-broadcast";
 
 /** The wall always shows 8 slots; unfilled slots say so (no fake live tiles). */
 const WALL_SLOTS = 8;
 
 type T = (key: AdminMessageKey, values?: Record<string, string | number>) => string;
 
-function TvTile({ feed, focused, onFocus, onRemove, t }: { feed: TvFeed; focused: boolean; onFocus: () => void; onRemove: () => void; t: T }) {
+function TvTile({ feed, focused, onFocus, onRemove, onLive, t }: { feed: TvFeed; focused: boolean; onFocus: () => void; onRemove: () => void; onLive: () => void; t: T }) {
   const ref = useRef<HTMLDivElement>(null);
   return (
     <figure className={`ace-tv-tile${focused ? " is-focused" : ""}`} ref={ref}>
@@ -39,9 +39,14 @@ function TvTile({ feed, focused, onFocus, onRemove, t }: { feed: TvFeed; focused
             {t("tvFullscreen")}
           </button>
           {feed.source === "admin" ? (
+            <>
+            <button type="button" className="ace-admin-ghost" aria-pressed={Boolean(feed.isLive)} onClick={onLive}>
+              {feed.isLive ? t("tvLiveOff") : t("tvLiveOn")}
+            </button>
             <button type="button" className="ace-admin-ghost" onClick={onRemove}>
               {t("tvRemove")}
             </button>
+            </>
           ) : null}
         </span>
       </figcaption>
@@ -95,6 +100,7 @@ export function AdminTvWall({ feeds, dbAvailable, t }: { feeds: TvFeed[]; dbAvai
             focused={focus === feed.id}
             t={t}
             onFocus={() => setFocus((current) => (current === feed.id ? null : feed.id))}
+            onLive={() => void setBroadcastLive(feed.id, !feed.isLive).then((r) => { setNote(t(r.ok ? "tvSaved" : "tvDbDown")); if (r.ok) router.refresh(); })}
             onRemove={() =>
               void removeBroadcastFeed(feed.id).then((result) => {
                 setNote(t(result.ok ? "tvRemoved" : "tvDbDown"));

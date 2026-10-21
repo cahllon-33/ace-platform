@@ -469,5 +469,18 @@ export const UI_RO: Ui = {
       "lede": "Sezoanele vor reseta clasarea și vor acorda insigne de final de sezon.",
       "none": "Niciun sezon nu a început încă. Primul va fi anunțat aici."
     }
+  },
+  "r41b": {
+    "lv": {
+      "nav": "Live",
+      "title": "Transmisiuni live",
+      "lede": "Transmisiunile oficiale ale turneelor A.C.E. O transmisiune apare aici doar cât timp operatorii o țin în emisie.",
+      "none": "Nicio transmisiune live acum",
+      "noneBody": "Când o transmisiune oficială intră în emisie, apare aici. Până atunci, vezi turneele de mai jos.",
+      "schedule": "Turnee viitoare",
+      "noSchedule": "Nu există încă turnee programate.",
+      "onAir": "În emisie",
+      "watch": "Urmărește live"
+    }
   }
 };

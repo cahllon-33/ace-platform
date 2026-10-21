@@ -469,5 +469,18 @@ export const UI_TR: Ui = {
       "lede": "Sezonlar sıralamayı sıfırlayacak ve sezon sonu rozetleri verecek.",
       "none": "Henüz bir sezon başlamadı. İlk sezon burada duyurulacak."
     }
+  },
+  "r41b": {
+    "lv": {
+      "nav": "Canlı",
+      "title": "Canlı yayınlar",
+      "lede": "Resmî A.C.E. turnuva yayınları. Bir yayın burada yalnızca operatörler yayına aldığında görünür.",
+      "none": "Şu anda canlı yayın yok",
+      "noneBody": "Resmî bir yayın başladığında burada görünür. Bu arada aşağıdaki turnuvalara göz at.",
+      "schedule": "Yaklaşan turnuvalar",
+      "noSchedule": "Henüz planlanmış turnuva yok.",
+      "onAir": "Yayında",
+      "watch": "Canlı izle"
+    }
   }
 };

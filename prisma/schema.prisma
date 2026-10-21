@@ -329,6 +329,8 @@ model BroadcastFeed {
   id        String   @id @default(cuid())
   title     String
   embedUrl  String
+  /// Operator switch: shown on the public /live page only while true. Never inferred.
+  isLive    Boolean  @default(false)
   createdAt DateTime @default(now())
 }
 

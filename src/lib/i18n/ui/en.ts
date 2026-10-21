@@ -410,6 +410,19 @@ export const UI_EN = {
       "lede": "Seasons will reset placement and award end-of-season badges.",
       "none": "No season has started yet. The first season is announced here when it opens."
     }
+  },
+  "r41b": {
+    "lv": {
+      "nav": "Live",
+      "title": "Live broadcasts",
+      "lede": "Official A.C.E. tournament streams. A broadcast shows here only while operators have it on air.",
+      "none": "No live broadcast right now",
+      "noneBody": "When an official stream goes on air it appears here. Meanwhile, see the tournaments below.",
+      "schedule": "Upcoming tournaments",
+      "noSchedule": "No tournaments scheduled yet.",
+      "onAir": "On air",
+      "watch": "Watch live"
+    }
   }
 } as const;
 
