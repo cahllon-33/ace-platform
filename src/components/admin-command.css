@@ -1492,3 +1492,6 @@
 .acx-support-transcript { margin: 0; padding: 0.2rem 0.8rem 0.6rem 2rem; display: grid; gap: 0.35rem; font-size: 0.8rem; color: #d8d6cf; }
 .acx-support-transcript b { color: #ffd76a; }
 .acx-support-item details > button { margin: 0 0.8rem 0.7rem; }
+/* R41 admin polish: cards size to content; the audit log gets the full row so its table is readable. */
+.acx-card { align-self: start; }
+#acx-audit { grid-column: 1 / -1; }

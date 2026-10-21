@@ -6,7 +6,7 @@ import type { AdminMessageKey } from "@/lib/admin-i18n";
 import type { TvFeed } from "@/lib/broadcast";
 import { addBroadcastFeed, removeBroadcastFeed, setBroadcastLive } from "@/server/admin-broadcast";
 
-/** The wall always shows 8 slots; unfilled slots say so (no fake live tiles). */
+/** With feeds, the wall fills up to 8 slots (unfilled ones say so). With none, only the empty state shows. */
 const WALL_SLOTS = 8;
 
 type T = (key: AdminMessageKey, values?: Record<string, string | number>) => string;
@@ -112,7 +112,7 @@ export function AdminTvWall({ feeds, dbAvailable, t }: { feeds: TvFeed[]; dbAvai
             }
           />
         ))}
-        {focus
+        {focus || feeds.length === 0
           ? null
           : Array.from({ length: Math.max(0, WALL_SLOTS - feeds.length) }, (_, index) => (
               <div key={`slot-${index}`} className="ace-tv-slot" aria-hidden="true">
