@@ -283,20 +283,20 @@ export const codex: TextBag["codex"] = {
     },
     "how-points-move": {
       title: "Comment un résultat enregistré fait évoluer les points de cote",
-      lede: "Une victoire ou une défaite enregistrée est mesurée par rapport au classement moyen de l'autre équipe. Contre une équipe de même niveau, une victoire vaut +15 et une défaite −15. Les règles complètes sont sur la page Rangs.",
+      lede: "Une victoire ou une défaite enregistrée est mesurée par rapport au classement moyen de l'autre équipe. Contre une équipe de même niveau, une victoire vaut +20 et une défaite −20. Les règles complètes sont sur la page Rangs.",
       sections: [
         {
           heading: "Le pas",
           paragraphs: [
-            "Le score attendu est la probabilité que le moteur attribue avant le match, d'après les deux classements seulement. À classement égal, elle vaut une moitié : une victoire vaut 15 Rating Points et une défaite en coûte 15.",
-            "Contre un classement plus élevé, une victoire vaut plus de 15 et une défaite coûte moins. Contre un classement plus bas, c'est l'inverse. Une victoire rapporte toujours de 8 à 20 et une défaite coûte toujours de 8 à 23. Aux paliers 7 à 9, les gains de victoire sont multipliés par 0,8 et au palier 10 par 0,7 : le haut de l'échelle prend donc plus de temps. Le classement reste entre 100 et 3 000.",
+            "Le score attendu est la probabilité que le moteur attribue avant le match, d'après les deux classements seulement. À classement égal, elle vaut une moitié : une victoire vaut 20 Rating Points et une défaite en coûte 15.",
+            "Contre un classement plus élevé, une victoire vaut plus de 20 et une défaite coûte moins. Contre un classement plus bas, c'est l'inverse. Une victoire donne toujours de 10 à 30 et une défaite coûte toujours de 10 à 30. Aux niveaux 7–9, victoires et défaites sont multipliées par 0,85 et au niveau 10 par 0,75 : le sommet bouge plus calmement. Le classement reste entre 100 et 3 000.",
             "Sur un résultat d'équipe, chaque joueur est mesuré par rapport au classement moyen de l'autre équipe. Un bonus MVP de match de 2 RP est prévu lorsque le serveur enregistrera les éliminations ; d'ici là, aucun bonus personnel n'est appliqué.",
           ],
         },
         {
           heading: "Le match nul",
           paragraphs: [
-            "Un match nul ne change rien : chaque joueur garde le même classement. Abandonner ou quitter un match coûte 50 RP, quel que soit le résultat.",
+            "Un match nul ne change rien : chaque joueur garde son classement. Abandonner ou quitter un match coûte le double d'une défaite normale, au moins 30 RP, quel que soit le résultat.",
             "Le tableau de cette page montre le moteur appliqué à des valeurs d’exemple. Ces lignes ne sont pas des matchs enregistrés, et elles ne concernent pas votre compte.",
           ],
         },

@@ -6,7 +6,7 @@ import { RankSystemBoard } from "@/components/rank-system-board";
 import { interpolate } from "@/lib/i18n";
 import { RANK_TIERS, rankLevelKicker, rankEmblemAsset } from "@/lib/ranks";
 import { RANK_DIVISIONS } from "@/lib/site";
-import { getText } from "@/server/locale";
+import { getText, getUi } from "@/server/locale";
 import { PremiumProfileCardPreview } from "@/components/premium-profile-card";
 import { PremiumRankCodex } from "@/components/premium-rank-codex";
 import { RpRulesSection } from "@/components/rp-rules-section";
@@ -24,7 +24,7 @@ export async function generateMetadata(): Promise<Metadata> {
 
 export default async function RanksPage() {
   await connection();
-  const text = await getText();
+  const [text, ui] = await Promise.all([getText(), getUi()]);
   const copy = text.ranks;
   let rating: number | null = null;
   try {
@@ -66,7 +66,7 @@ export default async function RanksPage() {
         </div>
         <PremiumRankCodex text={text} />
       </section>
-      <RpRulesSection text={text} />
+      <RpRulesSection text={text} ui={ui} />
       <section className="mt-12 rounded-3xl border border-[#FFD76A]/25 bg-[#121212] p-6 sm:p-8">
         <h2 className="text-xl font-semibold text-white">{copy.document.title}</h2>
         <p className="mt-3 max-w-3xl text-sm leading-7 text-[#A9ABB3]">{copy.document.body}</p>

@@ -176,7 +176,7 @@ export const ID: MessageBag = {
  statusTeamLayout: "100 TIM",
  statusPublicSite: "SITUS PUBLIK",
  rankProtocolTitle: "PROTOKOL PERINGKAT A.C.E.",
- rankProtocolBody: "Aturan tertulis membandingkan pemain dengan rata-rata rating tim lawan. Melawan tim setara, kemenangan tercatat bernilai +15 RP dan kekalahan −15 RP, selalu dalam 8 sampai 23 RP per pertandingan, dan 10 tingkat serta 3 divisi dibaca dari angka itu. Halaman ini tidak memvalidasi pertandingan, jadi tidak ada perubahan rating yang diterapkan di sini.",
+ rankProtocolBody: "Aturan tertulis membandingkan pemain dengan rata-rata rating tim lawan. Melawan tim setara, kemenangan tercatat bernilai +20 RP dan kekalahan −20 RP, selalu dalam 10 sampai 30 RP per pertandingan, dan 10 tingkat serta 3 divisi dibaca dari angka itu. Halaman ini tidak memvalidasi pertandingan, jadi tidak ada perubahan rating yang diterapkan di sini.",
  rankProgress: "Kemajuan peringkat",
  competitiveRating: "Peringkat kompetitif",
  targetWinRate: "Target rasio menang",

@@ -320,7 +320,7 @@ export const UI_ES: Ui = {
       "step2t": "Calibra",
       "step2b": "Empiezas en el nivel 3 con 1.200 RP. Cada partida registrada mueve tus RP según reglas publicadas.",
       "step3t": "Asciende",
-      "step3b": "Una victoria da hasta +20 RP (+22 como mejor jugador); una derrota cuesta hasta −23. Tu rango siempre sigue a tus RP.",
+      "step3b": "Una victoria da hasta +30 RP (+32 como mejor jugador); una derrota cuesta hasta −23. Tu rango siempre sigue a tus RP.",
       "ranksTitle": "Diez rangos. Una tabla pública.",
       "ranksBody": "Los colores de las insignias son fijos por nivel y tu rango siempre se calcula con tus RP guardados.",
       "ranksCta": "Ver todos los rangos",
@@ -481,6 +481,30 @@ export const UI_ES: Ui = {
       "noSchedule": "Aún no hay torneos programados.",
       "onAir": "En antena",
       "watch": "Ver en directo"
+    }
+  },
+  "r41c": {
+    "v5": {
+      "vTier": "Las victorias y las derrotas se multiplican por {t7} en los niveles 7–9 y por {t10} en el nivel 10 ({top}), así que un balance del 50 % mantiene tu rango en cualquier nivel.",
+      "vPlacement": "Tus primeras {n} partidas se mueven {pk}× más rápido para que encuentres tu nivel pronto. Durante la clasificación tu rating no puede superar el nivel {maxTier} ({cap} RP).",
+      "vAbandon": "Cuenta como una derrota doble, al menos −{abandon} RP, sea cual sea el resultado, y sin bonus de MVP.",
+      "ex2": "Cada derrota por el camino suma victorias. En los niveles 7–9 una victoria da +{win7} y una derrota cuesta −{loss7}, así que ganar más del {breakEven} % de las partidas igualadas te mantiene subiendo."
+    },
+    "pr": {
+      "kicker": "Prestigio",
+      "title": "Reglas de insignias",
+      "lede": "Cómo se gana cada insignia de A.C.E. Las insignias son solo estéticas: nunca cambian el emparejamiento, los RP ni ninguna regla.",
+      "ranks": "Las insignias de rango (niveles 1–10) siguen tus RP. Todos ven el mismo rango y el mismo color fijo de nivel.",
+      "prestige": "Las insignias de prestigio son cinco metas a largo plazo por encima de {elite} RP: una cada 200 RP de 2.000 a 2.800.",
+      "free": "Free: tu insignia sigue siendo A.C.E. Legend y tu nivel de prestigio se muestra como un hito en texto. Tus RP nunca tienen tope.",
+      "plus": "Plus: el set de prestigio de platino.",
+      "premium": "Premium: el set de prestigio dorado animado.",
+      "lose": "Si bajas de un umbral de prestigio, la insignia baja con tus RP; si lo vuelves a alcanzar, vuelve.",
+      "level": "Prestigio {n} · {name}",
+      "from": "Desde {rp} RP",
+      "milestone": "Prestigio {n} alcanzado",
+      "perk": "Set de insignias de prestigio (2.000–3.000 RP), ganado con RP",
+      "open": "Reglas de insignias"
     }
   }
 };

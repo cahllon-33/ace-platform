@@ -320,7 +320,7 @@ export const UI_HU: Ui = {
       "step2t": "Kalibrálás",
       "step2b": "A 3. szinten kezdesz 1200 RP-vel. Minden rögzített meccs a közzétett szabályok szerint változtatja az RP-det.",
       "step3t": "Emelkedés",
-      "step3b": "Egy győzelem akár +20 RP (+22 a legjobb játékosnak), egy vereség akár −23. A rangod mindig az RP-det követi.",
+      "step3b": "Egy győzelem akár +30 RP (+32 a legjobb játékosnak), egy vereség akár −23. A rangod mindig az RP-det követi.",
       "ranksTitle": "Tíz rang. Egy nyilvános táblázat.",
       "ranksBody": "A jelvények színe szintenként rögzített, és a rangod mindig a tárolt RP-ből számolódik.",
       "ranksCta": "Összes rang",
@@ -481,6 +481,30 @@ export const UI_HU: Ui = {
       "noSchedule": "Még nincs ütemezett torna.",
       "onAir": "Adásban",
       "watch": "Élő nézése"
+    }
+  },
+  "r41c": {
+    "v5": {
+      "vTier": "A győzelmeket és a vereségeket is {t7}-del szorozzuk a 7–9. szinten és {t10}-del a 10. szinten ({top}), így az 50%-os mérleg minden szinten megtartja a rangodat.",
+      "vPlacement": "Az első {n} meccsed {pk}× gyorsabban mozog, hogy hamar megtaláld a szinted. Besorolás közben a pontszámod nem mehet a(z) {maxTier}. szint ({cap} RP) fölé.",
+      "vAbandon": "Dupla vereségnek számít, legalább −{abandon} RP, az eredménytől függetlenül, MVP-bónusz nélkül.",
+      "ex2": "Minden vereség útközben további győzelmeket kíván. A 7–9. szinten a győzelem +{win7}, a vereség −{loss7}, így ha az egyenlő meccsek több mint {breakEven}%-át megnyered, tovább emelkedsz."
+    },
+    "pr": {
+      "kicker": "Presztízs",
+      "title": "Jelvényszabályok",
+      "lede": "Hogyan szerezhető meg minden A.C.E. jelvény. A jelvények csak kozmetikaiak: soha nem változtatják a párosítást, az RP-t vagy bármely szabályt.",
+      "ranks": "A rangjelvények (1–10. szint) az RP-det követik. Mindenki ugyanazt a rangot és ugyanazt a fix szintszínt látja.",
+      "prestige": "A presztízsjelvények öt hosszú távú cél {elite} RP fölött: 200 RP-nként egy, 2000-től 2800-ig.",
+      "free": "Free: a jelvényed A.C.E. Legend marad, a presztízsszinted szöveges mérföldkőként jelenik meg. Az RP-d soha nincs korlátozva.",
+      "plus": "Plus: a platina presztízskészlet.",
+      "premium": "Premium: az animált arany presztízskészlet.",
+      "lose": "Ha egy presztízsküszöb alá esel, a jelvény követi az RP-det lefelé; ha újra eléred, visszatér.",
+      "level": "Presztízs {n} · {name}",
+      "from": "{rp} RP-től",
+      "milestone": "Presztízs {n} elérve",
+      "perk": "Presztízsjelvény-készlet (2000–3000 RP), RP-vel szerezhető",
+      "open": "Jelvényszabályok"
     }
   }
 };

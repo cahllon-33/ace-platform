@@ -261,7 +261,7 @@ export const UI_EN = {
       "step2t": "Calibrate",
       "step2b": "You start at tier 3 with 1,200 RP. Every recorded match moves your RP by published rules.",
       "step3t": "Climb",
-      "step3b": "A win gives up to +20 RP (+22 as top fragger); a loss costs up to −23. Your rank always follows your RP.",
+      "step3b": "A win gives up to +30 RP (+32 as top fragger); a loss costs up to −23. Your rank always follows your RP.",
       "ranksTitle": "Ten ranks. One public table.",
       "ranksBody": "Badge colors are fixed per tier, and your rank is always calculated from your stored RP.",
       "ranksCta": "See every rank",
@@ -422,6 +422,30 @@ export const UI_EN = {
       "noSchedule": "No tournaments scheduled yet.",
       "onAir": "On air",
       "watch": "Watch live"
+    }
+  },
+  "r41c": {
+    "v5": {
+      "vTier": "Wins and losses are both multiplied by {t7} in tiers 7–9 and by {t10} in tier 10 ({top}), so a 50% record holds your rank at every level.",
+      "vPlacement": "Your first {n} matches move {pk}× faster so you find your level quickly. During placement your rating cannot rise above tier {maxTier} ({cap} RP).",
+      "vAbandon": "Counts as a double loss, at least −{abandon} RP, whatever the result, and no MVP bonus.",
+      "ex2": "Every loss along the way adds wins back. In tiers 7–9 a win gives +{win7} and a loss costs −{loss7}, so winning more than {breakEven}% of equal matches keeps you climbing."
+    },
+    "pr": {
+      "kicker": "Prestige",
+      "title": "Badge rules",
+      "lede": "How every A.C.E. badge is earned. Badges are cosmetic: they never change matchmaking, RP or any rule.",
+      "ranks": "Rank badges (tiers 1–10) follow your RP. Every player sees the same rank and the same fixed tier color.",
+      "prestige": "Prestige badges are five long-term goals above {elite} RP: one every 200 RP from 2,000 to 2,800.",
+      "free": "Free: your badge stays A.C.E. Legend and your prestige level is shown as a text milestone. Your RP is never capped.",
+      "plus": "Plus: the platinum prestige set.",
+      "premium": "Premium: the animated gold prestige set.",
+      "lose": "Drop below a prestige threshold and the badge follows your RP back down; reach it again and it returns.",
+      "level": "Prestige {n} · {name}",
+      "from": "From {rp} RP",
+      "milestone": "Prestige {n} reached",
+      "perk": "Prestige badge set (2,000–3,000 RP), earned by RP",
+      "open": "Badge rules"
     }
   }
 } as const;

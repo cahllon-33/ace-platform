@@ -177,7 +177,7 @@ export const DE: MessageBag = {
  statusTeamLayout: "FELD MIT 100 TEAMS",
  statusPublicSite: "ÖFFENTLICHE WEBSITE",
  rankProtocolTitle: "A.C.E. WERTUNGSPROTOKOLL",
- rankProtocolBody: "Die schriftliche Regel vergleicht einen Spieler mit der Durchschnittswertung des anderen Teams. Gegen ein gleich starkes Team bringt ein aufgezeichneter Sieg +15 RP und eine Niederlage −15 RP, immer innerhalb von 8 bis 23 RP pro Match, und die 10 Stufen und 3 Divisionen werden aus dieser Zahl gelesen. Diese Seite bestätigt kein Match, daher wird hier keine Wertungsänderung angewendet.",
+ rankProtocolBody: "Die schriftliche Regel vergleicht einen Spieler mit der Durchschnittswertung des anderen Teams. Gegen ein gleich starkes Team bringt ein aufgezeichneter Sieg +20 RP und eine Niederlage −20 RP, immer innerhalb von 10 bis 30 RP pro Match, und die 10 Stufen und 3 Divisionen werden aus dieser Zahl gelesen. Diese Seite bestätigt kein Match, daher wird hier keine Wertungsänderung angewendet.",
  rankProgress: "Rangfortschritt",
  competitiveRating: "Wettkampfwertung",
  targetWinRate: "Ziel-Siegquote",

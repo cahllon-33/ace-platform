@@ -26,7 +26,7 @@ const n = (x: number) => String(x);
 /** Number tokens near "RP"-ish context that may legitimately appear. */
 const ALLOWED_SIGNED = new Set([
   base, RP_RULES.win.min, RP_RULES.win.max, RP_RULES.maxGainWithMvp, RP_RULES.loss.min, RP_RULES.loss.max,
-  RP_RULES.mvpBonus, RP_RULES.abandonPenalty, Math.round(base * 0.8), Math.round(base * 0.7), 0,
+  RP_RULES.mvpBonus, RP_RULES.abandonPenalty, Math.round(base * 0.85), Math.round(base * 0.75), 2 * base, 0,
 ]);
 const total = winsToReach(RP_RULES.startingRating, 1950).total;
 
@@ -86,9 +86,9 @@ describe("RP figures in user-facing text match rp-rules.ts", () => {
   });
 
   it("wins-to-top figure quoted anywhere is the computed one", () => {
-    const bad = all.filter(([, s]) => /1[,.\s]?200\D{1,30}1[,.\s]?950/.test(s) && /\b(?!56\b)\d{2}\b(?=\D{0,12}(?:wins|victoires|Siege|vitórias|victorias))/.test(s));
+    const bad = all.filter(([, s]) => /1[,.\s]?200\D{1,30}1[,.\s]?950/.test(s) && /\b(?!41\b)\d{2}\b(?=\D{0,12}(?:wins|victoires|Siege|vitórias|victorias))/.test(s));
     expect(bad.map(([p]) => p)).toEqual([]);
-    expect(total).toBe(56);
+    expect(total).toBe(41);
   });
 
   it("source showcase/sample data uses the configured start rating, not 1000", () => {
@@ -109,6 +109,6 @@ describe("RP figures in user-facing text match rp-rules.ts", () => {
 
   it("config sanity", () => {
     expect(n(RP_RULES.startingRating)).toBe("1200");
-    expect(base).toBe(15);
+    expect(base).toBe(20);
   });
 });

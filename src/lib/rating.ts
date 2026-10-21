@@ -46,35 +46,47 @@ export function placementCap(): number {
   return next ? next.minRating - 1 : RP_RULES.ceiling;
 }
 
+export function tierKMultiplier(rating: number): number {
+  return RP_RULES.tierKMultiplier[rankFromRating(rating).level] ?? 1;
+}
+
+function rawLoss(rating: number, opponentAverage: number, k: number) {
+  return Math.round(clamp(k * expectedScore(rating, opponentAverage), RP_RULES.loss.min, RP_RULES.loss.max) * tierKMultiplier(rating));
+}
+
 export function playerMatchDelta(input: PlayerMatchInput): PlayerMatchResult {
   const { rating } = input;
   let delta: number;
   let mvpApplied = false;
+  const placing = input.matchesPlayed < RP_RULES.placementMatches;
+  const k = RP_RULES.kFactor * (placing ? RP_RULES.placementKMultiplier : 1);
   if (input.abandoned) {
-    delta = -RP_RULES.abandonPenalty;
+    delta = RP_RULES.abandonMode === "double"
+      ? -Math.max(RP_RULES.abandonPenalty, 2 * rawLoss(rating, input.opponentAverage, k))
+      : -RP_RULES.abandonPenalty;
   } else if (input.outcome === "draw") {
     delta = RP_RULES.draw;
   } else {
     const expected = expectedScore(rating, input.opponentAverage);
     const mvp = Boolean(input.mvp && input.killsRecorded);
     if (input.outcome === "win") {
-      const base = clamp(RP_RULES.kFactor * (1 - expected), RP_RULES.win.min, RP_RULES.win.max);
-      delta = Math.round(base * tierWinMultiplier(rating));
+      const base = clamp(k * (1 - expected), RP_RULES.win.min, RP_RULES.win.max);
+      delta = Math.round(base * tierWinMultiplier(rating) * tierKMultiplier(rating));
       if (mvp) {
         delta = Math.min(RP_RULES.maxGainWithMvp, delta + RP_RULES.mvpBonus);
         mvpApplied = true;
       }
     } else {
-      delta = -Math.round(clamp(RP_RULES.kFactor * expected, RP_RULES.loss.min, RP_RULES.loss.max));
+      delta = -rawLoss(rating, input.opponentAverage, k);
       if (mvp) {
-        delta = Math.min(-RP_RULES.loss.min, delta + RP_RULES.mvpBonus);
+        delta = Math.min(-Math.round(RP_RULES.loss.min * tierKMultiplier(rating)), delta + RP_RULES.mvpBonus);
         mvpApplied = true;
       }
     }
   }
   let after = clamp(rating + delta, RP_RULES.floor, RP_RULES.ceiling);
   let placementCapped = false;
-  if (input.matchesPlayed < RP_RULES.placementMatches && after > rating) {
+  if (placing && after > rating) {
     const cap = Math.max(rating, placementCap());
     if (after > cap) {
       after = cap;

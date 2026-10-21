@@ -320,7 +320,7 @@ export const UI_SV: Ui = {
       "step2t": "Kalibrera",
       "step2b": "Du börjar på nivå 3 med 1 200 RP. Varje registrerad match ändrar dina RP enligt publicerade regler.",
       "step3t": "Klättra",
-      "step3b": "En vinst ger upp till +20 RP (+22 som bästa spelare); en förlust kostar upp till −23. Din rank följer alltid dina RP.",
+      "step3b": "En vinst ger upp till +30 RP (+32 som bästa spelare); en förlust kostar upp till −23. Din rank följer alltid dina RP.",
       "ranksTitle": "Tio ranker. En offentlig tabell.",
       "ranksBody": "Märkenas färger är fasta per nivå och din rank räknas alltid från dina sparade RP.",
       "ranksCta": "Se alla ranker",
@@ -481,6 +481,30 @@ export const UI_SV: Ui = {
       "noSchedule": "Inga turneringar är schemalagda än.",
       "onAir": "I sändning",
       "watch": "Titta live"
+    }
+  },
+  "r41c": {
+    "v5": {
+      "vTier": "Både vinster och förluster multipliceras med {t7} på nivå 7–9 och med {t10} på nivå 10 ({top}), så ett facit på 50 % håller din rang på varje nivå.",
+      "vPlacement": "Dina första {n} matcher rör sig {pk}× snabbare så att du hittar din nivå fort. Under placeringen kan ratingen inte gå över nivå {maxTier} ({cap} RP).",
+      "vAbandon": "Räknas som en dubbel förlust, minst −{abandon} RP, oavsett resultat, och ingen MVP-bonus.",
+      "ex2": "Varje förlust på vägen kräver fler vinster. På nivå 7–9 ger en vinst +{win7} och en förlust kostar −{loss7}, så vinner du mer än {breakEven} % av jämna matcher fortsätter du klättra."
+    },
+    "pr": {
+      "kicker": "Prestige",
+      "title": "Märkesregler",
+      "lede": "Hur varje A.C.E.-märke tjänas in. Märken är rent kosmetiska: de ändrar aldrig matchning, RP eller någon regel.",
+      "ranks": "Rangmärken (nivå 1–10) följer din RP. Alla ser samma rang och samma fasta nivåfärg.",
+      "prestige": "Prestigemärken är fem långsiktiga mål över {elite} RP: ett var 200:e RP från 2 000 till 2 800.",
+      "free": "Free: ditt märke förblir A.C.E. Legend och din prestigenivå visas som en textmilstolpe. Din RP har aldrig något tak.",
+      "plus": "Plus: platinaserien av prestigemärken.",
+      "premium": "Premium: den animerade guldserien av prestigemärken.",
+      "lose": "Faller du under en prestigegräns följer märket din RP nedåt; når du den igen kommer det tillbaka.",
+      "level": "Prestige {n} · {name}",
+      "from": "Från {rp} RP",
+      "milestone": "Prestige {n} uppnådd",
+      "perk": "Prestigemärkesserie (2 000–3 000 RP), intjänad med RP",
+      "open": "Märkesregler"
     }
   }
 };

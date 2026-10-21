@@ -260,20 +260,20 @@ export const codex: TextBag["codex"] = {
     },
     "how-points-move": {
       "title": "Hogyan mozdítja egy rögzített eredmény a Rating Pointsot",
-      "lede": "Egy rögzített győzelmet vagy vereséget a másik csapat átlagos értékszámához mérünk. Egyenlő csapat ellen a győzelem +15, a vereség −15. A teljes szabályok a Rangok oldalon vannak.",
+      "lede": "Egy rögzített győzelmet vagy vereséget a másik csapat átlagos értékszámához mérünk. Egyenlő csapat ellen a győzelem +20, a vereség −20. A teljes szabályok a Rangok oldalon vannak.",
       "sections": [
         {
           "heading": "A lépés",
           "paragraphs": [
-            "A várható eredmény az az esély, amelyet a motor a meccs előtt kizárólag a két értékszám alapján rendel. Egyenlő értékszámnál ez fél, így egy győzelem 15 Rating Points-ot ér, egy vereség 15-be kerül.",
-            "Magasabb értékszám ellen a győzelem többet ér 15-nél, a vereség kevesebbe kerül. Alacsonyabb ellen fordítva. Egy győzelem mindig 8–20-et ad, egy vereség mindig 8–23-be kerül. A 7–9. szinten a győzelmi nyereséget 0,8-del, a 10. szinten 0,7-del szorozzuk, így a létra csúcsa tovább tart. Az értékszám 100 és 3000 között marad.",
+            "A várható eredmény az az esély, amelyet a motor a meccs előtt kizárólag a két értékszám alapján rendel. Egyenlő értékszámnál ez fél, így egy győzelem 20 Rating Points-ot ér, egy vereség 20-be kerül.",
+            "Magasabb pontszám ellen a győzelem többet ér 20-nál, a vereség kevesebbe kerül. Alacsonyabb ellen fordítva. A győzelem mindig 10–30 pontot ad, a vereség mindig 10–30 pontba kerül. A 7–9. szinten a győzelmeket és vereségeket 0,85-del, a 10. szinten 0,75-del szorozzuk, így a csúcs nyugodtabban mozog. A pontszám 100 és 3000 között marad.",
             "Csapateredménynél minden játékost a másik csapat átlagos értékszámához mérünk. A 2 RP-s meccs-MVP-bónusz arra az időre van tervezve, amikor a szerver rögzíti az öléseket; addig nincs személyes bónusz."
           ]
         },
         {
           "heading": "Döntetlen",
           "paragraphs": [
-            "A döntetlen semmit nem változtat: minden játékos megtartja az értékszámát. Egy meccs elhagyása vagy félbehagyása 50 RP-be kerül, az eredménytől függetlenül.",
+            "A döntetlen semmit sem változtat: mindenki megtartja a pontszámát. A meccs elhagyása vagy félbehagyása egy normál vereség kétszeresébe kerül, legalább 30 RP, az eredménytől függetlenül.",
             "Az oldalon lévő táblázat a motor példabemenetekkel. A sorok nem tárolt meccsek, és nem a fiókod."
           ]
         }

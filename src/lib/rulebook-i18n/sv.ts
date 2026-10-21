@@ -119,10 +119,10 @@ export const RB_SV: RulebookText = {
     ],
     [
       "Rating Points (RP) ändras bara genom verifierade matchresultat, enligt A.C.E-reglerna för Rating Points som publiceras på sidan Ranger. Varje nytt konto börjar med 1 200 RP på nivå 3 (Vanguard).",
-      "Mot ett lag med samma genomsnittliga rating ger en vinst +15 RP och en förlust kostar −15 RP. Beloppet justeras efter det andra lagets genomsnittliga rating och ligger alltid mellan 8 och 23 RP per match. Oavgjort ändrar ingenting.",
-      "Vinstpoäng multipliceras med 0,8 på nivå 7–9 och med 0,7 på nivå 10. Förluster minskas inte. Ratingen hålls mellan 100 och 3 000 RP och sjunker inte vid inaktivitet.",
+      "Mot ett lag med samma genomsnittliga rating ger en vinst +20 RP och en förlust kostar −20 RP. Beloppet justeras efter det andra lagets genomsnittliga rating och ligger alltid mellan 10 och 30 RP per match. Oavgjort ändrar ingenting.",
+      "Både vinster och förluster multipliceras med 0,85 på nivå 7–9 och med 0,75 på nivå 10, så ett facit på 50 % håller rangen på varje nivå. Ratingen stannar mellan 100 och 3 000 RP och sjunker inte vid inaktivitet.",
       "En spelares första 10 matcher är placeringsmatcher. Under placeringen kan ratingen inte stiga över nivå 5.",
-      "En spelare som lämnar eller överger en match förlorar 50 RP oavsett resultat och kan inte få matchens MVP-bonus.",
+      "En spelare som överger eller lämnar en match förlorar dubbelt så mycket som en vanlig förlust, minst 30 RP, oavsett resultat, och kan inte få MVP-bonusen.",
       "Matchens MVP (flest kills; vid lika mest skada och sedan minst antal dödsfall) får 2 RP mer vid vinst och förlorar 2 RP mindre vid förlust, inom gränserna per match. Bonusen gäller först när servern registrerar kills. Ingen betalplan ändrar Rating Points."
     ],
     [

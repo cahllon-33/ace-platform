@@ -177,7 +177,7 @@ export const PL: MessageBag = {
  statusTeamLayout: "100 DRUŻYN",
  statusPublicSite: "STRONA PUBLICZNA",
  rankProtocolTitle: "PROTOKÓŁ OCENY A.C.E.",
- rankProtocolBody: "Zapisana zasada porównuje gracza ze średnim ratingiem drugiej drużyny. Przeciwko równej drużynie zapisana wygrana to +15 RP, a przegrana −15 RP, zawsze w granicach od 8 do 23 RP na mecz, a 10 poziomów i 3 dywizje odczytuje się z tej liczby. Ta strona nie zatwierdza meczu, więc nie nalicza tu żadnej zmiany ratingu.",
+ rankProtocolBody: "Zapisana zasada porównuje gracza ze średnim ratingiem drugiej drużyny. Przeciwko równej drużynie zapisana wygrana to +20 RP, a przegrana −20 RP, zawsze w granicach od 10 do 30 RP na mecz, a 10 poziomów i 3 dywizje odczytuje się z tej liczby. Ta strona nie zatwierdza meczu, więc nie nalicza tu żadnej zmiany ratingu.",
  rankProgress: "Postęp rangi",
  competitiveRating: "Ocena turniejowa",
  targetWinRate: "Docelowy procent wygranych",

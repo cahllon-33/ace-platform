@@ -320,7 +320,7 @@ export const UI_PT: Ui = {
       "step2t": "Calibra",
       "step2b": "Começas no nível 3 com 1.200 RP. Cada partida registada altera os teus RP segundo regras publicadas.",
       "step3t": "Sobe",
-      "step3b": "Uma vitória dá até +20 RP (+22 como melhor jogador); uma derrota custa até −23. A tua patente segue sempre os teus RP.",
+      "step3b": "Uma vitória dá até +30 RP (+32 como melhor jogador); uma derrota custa até −23. A tua patente segue sempre os teus RP.",
       "ranksTitle": "Dez patentes. Uma tabela pública.",
       "ranksBody": "As cores dos emblemas são fixas por nível e a tua patente é sempre calculada a partir dos RP guardados.",
       "ranksCta": "Ver todas as patentes",
@@ -481,6 +481,30 @@ export const UI_PT: Ui = {
       "noSchedule": "Ainda não há torneios agendados.",
       "onAir": "No ar",
       "watch": "Ver em direto"
+    }
+  },
+  "r41c": {
+    "v5": {
+      "vTier": "Vitórias e derrotas são multiplicadas por {t7} nos escalões 7–9 e por {t10} no escalão 10 ({top}), por isso um registo de 50% mantém o teu rank em qualquer nível.",
+      "vPlacement": "As tuas primeiras {n} partidas movem-se {pk}× mais depressa para encontrares o teu nível. Durante a colocação o rating não passa do escalão {maxTier} ({cap} RP).",
+      "vAbandon": "Conta como derrota a dobrar, pelo menos −{abandon} RP, seja qual for o resultado, e sem bónus de MVP.",
+      "ex2": "Cada derrota pelo caminho junta vitórias. Nos escalões 7–9 uma vitória dá +{win7} e uma derrota custa −{loss7}, por isso ganhar mais de {breakEven}% das partidas equilibradas mantém-te a subir."
+    },
+    "pr": {
+      "kicker": "Prestígio",
+      "title": "Regras dos emblemas",
+      "lede": "Como se ganha cada emblema A.C.E. Os emblemas são só estéticos: nunca mudam o matchmaking, os RP ou qualquer regra.",
+      "ranks": "Os emblemas de rank (escalões 1–10) seguem os teus RP. Todos veem o mesmo rank e a mesma cor fixa de escalão.",
+      "prestige": "Os emblemas de prestígio são cinco metas de longo prazo acima de {elite} RP: um a cada 200 RP, de 2.000 a 2.800.",
+      "free": "Free: o teu emblema continua A.C.E. Legend e o nível de prestígio aparece como marco em texto. Os teus RP nunca têm limite.",
+      "plus": "Plus: o conjunto de prestígio em platina.",
+      "premium": "Premium: o conjunto de prestígio dourado animado.",
+      "lose": "Se desceres abaixo de um limiar de prestígio, o emblema acompanha os RP; ao voltares a atingi-lo, regressa.",
+      "level": "Prestígio {n} · {name}",
+      "from": "A partir de {rp} RP",
+      "milestone": "Prestígio {n} alcançado",
+      "perk": "Conjunto de emblemas de prestígio (2.000–3.000 RP), ganho com RP",
+      "open": "Regras dos emblemas"
     }
   }
 };

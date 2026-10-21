@@ -320,7 +320,7 @@ export const UI_DE: Ui = {
       "step2t": "Kalibrieren",
       "step2b": "Du startest auf Stufe 3 mit 1.200 RP. Jedes erfasste Match verändert deine RP nach veröffentlichten Regeln.",
       "step3t": "Aufsteigen",
-      "step3b": "Ein Sieg bringt bis zu +20 RP (+22 als Top-Fragger), eine Niederlage kostet bis zu −23. Dein Rang folgt immer deinen RP.",
+      "step3b": "Ein Sieg bringt bis zu +30 RP (+32 als Top-Fragger), eine Niederlage kostet bis zu −23. Dein Rang folgt immer deinen RP.",
       "ranksTitle": "Zehn Ränge. Eine öffentliche Tabelle.",
       "ranksBody": "Abzeichenfarben sind pro Stufe fest, und dein Rang wird immer aus deinen gespeicherten RP berechnet.",
       "ranksCta": "Alle Ränge ansehen",
@@ -481,6 +481,30 @@ export const UI_DE: Ui = {
       "noSchedule": "Noch keine Turniere geplant.",
       "onAir": "Auf Sendung",
       "watch": "Live ansehen"
+    }
+  },
+  "r41c": {
+    "v5": {
+      "vTier": "Siege und Niederlagen werden in den Stufen 7–9 beide mit {t7} und in Stufe 10 ({top}) mit {t10} multipliziert, sodass eine Bilanz von 50 % deinen Rang auf jeder Stufe hält.",
+      "vPlacement": "Deine ersten {n} Matches zählen {pk}× stärker, damit du schnell dein Niveau findest. Während der Platzierung steigt deine Wertung nicht über Stufe {maxTier} ({cap} RP).",
+      "vAbandon": "Zählt als doppelte Niederlage, mindestens −{abandon} RP, unabhängig vom Ergebnis, und ohne MVP-Bonus.",
+      "ex2": "Jede Niederlage unterwegs kostet zusätzliche Siege. In den Stufen 7–9 bringt ein Sieg +{win7} und eine Niederlage kostet −{loss7}; wer mehr als {breakEven} % der ausgeglichenen Matches gewinnt, steigt weiter."
+    },
+    "pr": {
+      "kicker": "Prestige",
+      "title": "Abzeichenregeln",
+      "lede": "Wie jedes A.C.E.-Abzeichen verdient wird. Abzeichen sind rein kosmetisch: Sie ändern weder Matchmaking noch RP noch irgendeine Regel.",
+      "ranks": "Rangabzeichen (Stufen 1–10) folgen deinen RP. Jeder sieht denselben Rang und dieselbe feste Stufenfarbe.",
+      "prestige": "Prestige-Abzeichen sind fünf Langzeitziele über {elite} RP: eines alle 200 RP von 2.000 bis 2.800.",
+      "free": "Free: Dein Abzeichen bleibt A.C.E. Legend und deine Prestige-Stufe erscheint als Text-Meilenstein. Deine RP werden nie begrenzt.",
+      "plus": "Plus: das Platin-Prestige-Set.",
+      "premium": "Premium: das animierte Gold-Prestige-Set.",
+      "lose": "Fällst du unter eine Prestige-Schwelle, folgt das Abzeichen deinen RP nach unten; erreichst du sie wieder, kehrt es zurück.",
+      "level": "Prestige {n} · {name}",
+      "from": "Ab {rp} RP",
+      "milestone": "Prestige {n} erreicht",
+      "perk": "Prestige-Abzeichen-Set (2.000–3.000 RP), durch RP verdient",
+      "open": "Abzeichenregeln"
     }
   }
 };

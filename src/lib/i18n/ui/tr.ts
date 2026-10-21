@@ -320,7 +320,7 @@ export const UI_TR: Ui = {
       "step2t": "Kalibre ol",
       "step2b": "3. kademeden 1.200 RP ile başlarsın. Kaydedilen her maç RP'ni yayımlanmış kurallara göre değiştirir.",
       "step3t": "Yüksel",
-      "step3b": "Galibiyet +20 RP'ye kadar (en iyi oyuncuya +22), mağlubiyet −23'e kadar. Rütben her zaman RP'ni izler.",
+      "step3b": "Galibiyet +20 RP'ye kadar (en iyi oyuncuya +32), mağlubiyet −30'e kadar. Rütben her zaman RP'ni izler.",
       "ranksTitle": "On rütbe. Tek bir açık tablo.",
       "ranksBody": "Rozet renkleri her kademe için sabittir ve rütben her zaman kayıtlı RP'nden hesaplanır.",
       "ranksCta": "Tüm rütbeler",
@@ -481,6 +481,30 @@ export const UI_TR: Ui = {
       "noSchedule": "Henüz planlanmış turnuva yok.",
       "onAir": "Yayında",
       "watch": "Canlı izle"
+    }
+  },
+  "r41c": {
+    "v5": {
+      "vTier": "Galibiyetler ve mağlubiyetler 7–9. kademelerde {t7}, 10. kademede ({top}) {t10} ile çarpılır; böylece %50'lik bir kayıt her seviyede rütbeni korur.",
+      "vPlacement": "İlk {n} maçın {pk}× daha hızlı ilerler, böylece seviyeni çabuk bulursun. Yerleştirme sırasında puanın {maxTier}. kademeyi ({cap} RP) geçemez.",
+      "vAbandon": "Sonuç ne olursa olsun çift mağlubiyet sayılır, en az −{abandon} RP, MVP bonusu yok.",
+      "ex2": "Yoldaki her mağlubiyet gereken galibiyeti artırır. 7–9. kademelerde galibiyet +{win7}, mağlubiyet −{loss7}; dengeli maçların %{breakEven}'inden fazlasını kazanırsan tırmanmaya devam edersin."
+    },
+    "pr": {
+      "kicker": "Prestij",
+      "title": "Rozet kuralları",
+      "lede": "Her A.C.E. rozetinin nasıl kazanıldığı. Rozetler yalnızca görseldir: eşleştirmeyi, RP'yi veya herhangi bir kuralı asla değiştirmez.",
+      "ranks": "Rütbe rozetleri (kademe 1–10) RP'ni takip eder. Herkes aynı rütbeyi ve aynı sabit kademe rengini görür.",
+      "prestige": "Prestij rozetleri {elite} RP üzerindeki beş uzun vadeli hedeftir: 2.000'den 2.800'e her 200 RP'de bir.",
+      "free": "Free: rozetin A.C.E. Legend olarak kalır ve prestij seviyen metin kilometre taşı olarak gösterilir. RP'n asla sınırlanmaz.",
+      "plus": "Plus: platin prestij seti.",
+      "premium": "Premium: animasyonlu altın prestij seti.",
+      "lose": "Bir prestij eşiğinin altına düşersen rozet RP ile birlikte iner; yeniden ulaşınca geri gelir.",
+      "level": "Prestij {n} · {name}",
+      "from": "{rp} RP'den itibaren",
+      "milestone": "Prestij {n} ulaşıldı",
+      "perk": "Prestij rozet seti (2.000–3.000 RP), RP ile kazanılır",
+      "open": "Rozet kuralları"
     }
   }
 };

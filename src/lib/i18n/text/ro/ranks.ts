@@ -45,7 +45,7 @@ export const ranks: TextBag["ranks"] = {
     "colWin": "Victorie",
     "colLoss": "Înfrângere",
     "examplesTitle": "Exemple calculate",
-    "ex1": "De la {start} la {elite} RP ({top}) împotriva unor echipe egale, doar cu victorii: {w1} victorii a câte +15 până la nivelul 6, apoi {w2} victorii a câte +{win7} la nivelurile 7–9. În total {total} victorii.",
+    "ex1": "De la {start} la {elite} RP ({top}) împotriva unor echipe egale, doar cu victorii: {w1} victorii a câte +{win} până la nivelul 6, apoi {w2} victorii a câte +{win7} la nivelurile 7–9. În total {total} victorii.",
     "ex2": "Fiecare înfrângere pe drum adaugă victorii. La nivelurile 7–9 o victorie aduce +{win7}, dar o înfrângere costă în continuare −{loss}, așa că trebuie să câștigi cel puțin {breakEven}% din meciurile echilibrate ca să urci în continuare.",
     "ex3": "Împotriva unei echipe cu în medie 200 RP mai mult decât tine, o victorie aduce +{strongWin}, iar o înfrângere costă −{strongLoss}.",
     "ex4": "Împotriva unei echipe cu în medie 200 RP mai puțin decât tine, o victorie aduce +{weakWin}, iar o înfrângere costă −{weakLoss}.",

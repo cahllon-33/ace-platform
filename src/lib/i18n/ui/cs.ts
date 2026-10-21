@@ -320,7 +320,7 @@ export const UI_CS: Ui = {
       "step2t": "Kalibrace",
       "step2b": "Začínáš na úrovni 3 s 1 200 RP. Každý zaznamenaný zápas mění RP podle zveřejněných pravidel.",
       "step3t": "Postup",
-      "step3b": "Výhra dá až +20 RP (+22 nejlepšímu hráči), prohra stojí až −23. Hodnost vždy odpovídá RP.",
+      "step3b": "Výhra dá až +30 RP (+32 nejlepšímu hráči), prohra stojí až −23. Hodnost vždy odpovídá RP.",
       "ranksTitle": "Deset hodností. Jedna veřejná tabulka.",
       "ranksBody": "Barvy odznaků jsou pro každou úroveň pevné a hodnost se vždy počítá z uložených RP.",
       "ranksCta": "Zobrazit všechny hodnosti",
@@ -481,6 +481,30 @@ export const UI_CS: Ui = {
       "noSchedule": "Zatím nejsou naplánovány žádné turnaje.",
       "onAir": "Vysíláme",
       "watch": "Sledovat živě"
+    }
+  },
+  "r41c": {
+    "v5": {
+      "vTier": "Výhry i prohry se v úrovních 7–9 násobí {t7} a v úrovni 10 ({top}) násobí {t10}, takže bilance 50 % udrží hodnost na každé úrovni.",
+      "vPlacement": "Prvních {n} zápasů se pohybuje {pk}× rychleji, abyste rychle našli svou úroveň. Během umisťování hodnocení nepřekročí úroveň {maxTier} ({cap} RP).",
+      "vAbandon": "Počítá se jako dvojitá prohra, nejméně −{abandon} RP, bez ohledu na výsledek, a bez bonusu MVP.",
+      "ex2": "Každá prohra na cestě přidá výhry. V úrovních 7–9 dá výhra +{win7} a prohra stojí −{loss7}, takže výhry ve víc než {breakEven} % vyrovnaných zápasů vás posouvají výš."
+    },
+    "pr": {
+      "kicker": "Prestiž",
+      "title": "Pravidla odznaků",
+      "lede": "Jak se získává každý odznak A.C.E. Odznaky jsou čistě kosmetické: nemění matchmaking, RP ani žádné pravidlo.",
+      "ranks": "Odznaky hodností (úrovně 1–10) sledují vaše RP. Každý hráč vidí stejnou hodnost a stejnou pevnou barvu úrovně.",
+      "prestige": "Odznaky prestiže jsou pět dlouhodobých cílů nad {elite} RP: jeden každých 200 RP od 2 000 do 2 800.",
+      "free": "Free: váš odznak zůstává A.C.E. Legend a úroveň prestiže se ukazuje jako textový milník. RP nejsou nikdy omezené.",
+      "plus": "Plus: platinová sada prestiže.",
+      "premium": "Premium: animovaná zlatá sada prestiže.",
+      "lose": "Klesnete-li pod práh prestiže, odznak jde s RP dolů; když ho znovu dosáhnete, vrátí se.",
+      "level": "Prestiž {n} · {name}",
+      "from": "Od {rp} RP",
+      "milestone": "Dosažena prestiž {n}",
+      "perk": "Sada odznaků prestiže (2 000–3 000 RP), získaná za RP",
+      "open": "Pravidla odznaků"
     }
   }
 };

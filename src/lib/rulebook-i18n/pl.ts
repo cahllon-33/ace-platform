@@ -119,10 +119,10 @@ export const RB_PL: RulebookText = {
     ],
     [
       "Rating Points (RP) zmieniają się wyłącznie na podstawie zweryfikowanych wyników meczów, według zasad Rating Points A.C.E opublikowanych na stronie Rang. Każde nowe konto zaczyna z 1200 RP na poziomie 3 (Vanguard).",
-      "Przeciwko drużynie o tym samym średnim ratingu wygrana daje +15 RP, a przegrana kosztuje −15 RP. Wartość jest dostosowywana do średniego ratingu drugiej drużyny i zawsze mieści się między 8 a 23 RP na mecz. Remis niczego nie zmienia.",
-      "Zyski za wygraną są mnożone przez 0,8 na poziomach 7–9 i przez 0,7 na poziomie 10. Przegrane nie są zmniejszane. Rating pozostaje między 100 a 3000 RP i nie spada z powodu braku aktywności.",
+      "Przeciwko drużynie o tym samym średnim ratingu wygrana daje +20 RP, a przegrana kosztuje −20 RP. Wartość jest dostosowywana do średniego ratingu drugiej drużyny i zawsze mieści się między 10 a 30 RP na mecz. Remis niczego nie zmienia.",
+      "Wygrane i porażki są mnożone przez 0,85 na poziomach 7–9 i przez 0,75 na poziomie 10, więc bilans 50% utrzymuje rangę na każdym poziomie. Rating pozostaje między 100 a 3000 RP i nie spada podczas nieaktywności.",
       "Pierwsze 10 meczów gracza to mecze kwalifikacyjne. W trakcie kwalifikacji rating nie może wzrosnąć powyżej poziomu 5.",
-      "Gracz, który porzuca lub opuszcza mecz, traci 50 RP niezależnie od wyniku i nie może otrzymać bonusu MVP meczu.",
+      "Gracz, który porzuci mecz lub z niego wyjdzie, traci dwukrotność zwykłej porażki, co najmniej 30 RP, niezależnie od wyniku, i nie może otrzymać bonusu MVP.",
       "MVP meczu (najwięcej zabójstw; przy remisie więcej obrażeń, potem mniej zgonów) zyskuje 2 RP więcej przy wygranej i traci 2 RP mniej przy przegranej, w granicach limitów na mecz. Ten bonus obowiązuje dopiero, gdy serwer zapisuje zabójstwa. Żaden płatny plan nie zmienia Rating Points."
     ],
     [

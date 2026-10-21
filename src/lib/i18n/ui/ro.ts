@@ -320,7 +320,7 @@ export const UI_RO: Ui = {
       "step2t": "Calibrează",
       "step2b": "Începi la nivelul 3 cu 1.200 RP. Fiecare meci înregistrat îți modifică RP după reguli publicate.",
       "step3t": "Urcă",
-      "step3b": "O victorie aduce până la +20 RP (+22 pentru cel mai bun jucător); o înfrângere costă până la −23. Rangul urmează mereu RP.",
+      "step3b": "O victorie aduce până la +30 RP (+32 pentru cel mai bun jucător); o înfrângere costă până la −23. Rangul urmează mereu RP.",
       "ranksTitle": "Zece ranguri. Un tabel public.",
       "ranksBody": "Culorile insignelor sunt fixe pe nivel, iar rangul tău se calculează mereu din RP-ul stocat.",
       "ranksCta": "Vezi toate rangurile",
@@ -481,6 +481,30 @@ export const UI_RO: Ui = {
       "noSchedule": "Nu există încă turnee programate.",
       "onAir": "În emisie",
       "watch": "Urmărește live"
+    }
+  },
+  "r41c": {
+    "v5": {
+      "vTier": "Victoriile și înfrângerile se înmulțesc cu {t7} la nivelurile 7–9 și cu {t10} la nivelul 10 ({top}), așa că un bilanț de 50% îți păstrează rangul la orice nivel.",
+      "vPlacement": "Primele tale {n} meciuri se mișcă de {pk}× mai repede ca să-ți găsești repede nivelul. În timpul plasării ratingul nu poate trece de nivelul {maxTier} ({cap} RP).",
+      "vAbandon": "Contează ca o înfrângere dublă, cel puțin −{abandon} RP, indiferent de rezultat, și fără bonus MVP.",
+      "ex2": "Fiecare înfrângere pe drum adaugă victorii. La nivelurile 7–9 o victorie dă +{win7}, iar o înfrângere costă −{loss7}, deci câștigând peste {breakEven}% din meciurile echilibrate continui să urci."
+    },
+    "pr": {
+      "kicker": "Prestigiu",
+      "title": "Regulile insignelor",
+      "lede": "Cum se câștigă fiecare insignă A.C.E. Insignele sunt doar cosmetice: nu schimbă niciodată matchmakingul, RP-ul sau vreo regulă.",
+      "ranks": "Insignele de rang (nivelurile 1–10) îți urmează RP-ul. Toți văd același rang și aceeași culoare fixă de nivel.",
+      "prestige": "Insignele de prestigiu sunt cinci obiective pe termen lung peste {elite} RP: una la fiecare 200 RP, de la 2.000 la 2.800.",
+      "free": "Free: insigna rămâne A.C.E. Legend, iar nivelul de prestigiu apare ca reper text. RP-ul nu e niciodată plafonat.",
+      "plus": "Plus: setul de prestigiu din platină.",
+      "premium": "Premium: setul de prestigiu auriu animat.",
+      "lose": "Dacă scazi sub un prag de prestigiu, insigna urmează RP-ul în jos; când îl atingi din nou, revine.",
+      "level": "Prestigiu {n} · {name}",
+      "from": "De la {rp} RP",
+      "milestone": "Prestigiu {n} atins",
+      "perk": "Set de insigne de prestigiu (2.000–3.000 RP), câștigat cu RP",
+      "open": "Regulile insignelor"
     }
   }
 };

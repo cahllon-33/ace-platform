@@ -45,7 +45,7 @@ export const ranks: TextBag["ranks"] = {
     "colWin": "Menang",
     "colLoss": "Kalah",
     "examplesTitle": "Contoh perhitungan",
-    "ex1": "Dari {start} ke {elite} RP ({top}) melawan tim setara, hanya dengan kemenangan: {w1} kemenangan @ +15 sampai tingkat 6, lalu {w2} kemenangan @ +{win7} di tingkat 7–9. Total {total} kemenangan.",
+    "ex1": "Dari {start} ke {elite} RP ({top}) melawan tim setara, hanya dengan kemenangan: {w1} kemenangan @ +{win} sampai tingkat 6, lalu {w2} kemenangan @ +{win7} di tingkat 7–9. Total {total} kemenangan.",
     "ex2": "Setiap kekalahan di sepanjang jalan menambah kemenangan yang dibutuhkan. Di tingkat 7–9 kemenangan memberi +{win7} tetapi kekalahan tetap mengurangi −{loss}, jadi kamu perlu memenangkan setidaknya {breakEven}% pertandingan seimbang untuk terus naik.",
     "ex3": "Melawan tim dengan rata-rata 200 RP lebih tinggi darimu, kemenangan memberi +{strongWin} dan kekalahan mengurangi −{strongLoss}.",
     "ex4": "Melawan tim dengan rata-rata 200 RP lebih rendah darimu, kemenangan memberi +{weakWin} dan kekalahan mengurangi −{weakLoss}.",

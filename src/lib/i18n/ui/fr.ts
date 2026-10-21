@@ -320,7 +320,7 @@ export const UI_FR: Ui = {
       "step2t": "Calibrez",
       "step2b": "Vous commencez au palier 3 avec 1 200 RP. Chaque match enregistré modifie vos RP selon des règles publiées.",
       "step3t": "Montez",
-      "step3b": "Une victoire rapporte jusqu'à +20 RP (+22 en meilleur fragger) ; une défaite coûte jusqu'à −23. Votre rang suit toujours vos RP.",
+      "step3b": "Une victoire rapporte jusqu'à +30 RP (+32 en meilleur fragger) ; une défaite coûte jusqu'à −23. Votre rang suit toujours vos RP.",
       "ranksTitle": "Dix rangs. Un tableau public.",
       "ranksBody": "Les couleurs des badges sont fixes par palier, et votre rang est toujours calculé à partir de vos RP enregistrés.",
       "ranksCta": "Voir tous les rangs",
@@ -481,6 +481,30 @@ export const UI_FR: Ui = {
       "noSchedule": "Aucun tournoi programmé pour l'instant.",
       "onAir": "À l'antenne",
       "watch": "Regarder en direct"
+    }
+  },
+  "r41c": {
+    "v5": {
+      "vTier": "Les victoires et les défaites sont multipliées par {t7} aux niveaux 7–9 et par {t10} au niveau 10 ({top}) : un bilan de 50 % maintient donc votre rang à chaque niveau.",
+      "vPlacement": "Vos {n} premiers matchs comptent {pk}× plus pour trouver vite votre niveau. Pendant le placement, votre classement ne peut pas dépasser le niveau {maxTier} ({cap} RP).",
+      "vAbandon": "Compte comme une double défaite, au moins −{abandon} RP, quel que soit le résultat, et sans bonus MVP.",
+      "ex2": "Chaque défaite en chemin ajoute des victoires à faire. Aux niveaux 7–9, une victoire rapporte +{win7} et une défaite coûte −{loss7} : gagner plus de {breakEven} % des matchs équilibrés vous fait progresser."
+    },
+    "pr": {
+      "kicker": "Prestige",
+      "title": "Règles des badges",
+      "lede": "Comment chaque badge A.C.E. s'obtient. Les badges sont purement esthétiques : ils ne changent jamais le matchmaking, les RP ni aucune règle.",
+      "ranks": "Les badges de rang (niveaux 1–10) suivent vos RP. Tout le monde voit le même rang et la même couleur fixe de niveau.",
+      "prestige": "Les badges de prestige sont cinq objectifs à long terme au-delà de {elite} RP : un tous les 200 RP de 2 000 à 2 800.",
+      "free": "Free : votre badge reste A.C.E. Legend et votre niveau de prestige s'affiche comme un palier texte. Vos RP ne sont jamais plafonnés.",
+      "plus": "Plus : la série de prestige platine.",
+      "premium": "Premium : la série de prestige or animée.",
+      "lose": "Si vous repassez sous un seuil de prestige, le badge suit vos RP ; en l'atteignant de nouveau, il revient.",
+      "level": "Prestige {n} · {name}",
+      "from": "Dès {rp} RP",
+      "milestone": "Prestige {n} atteint",
+      "perk": "Série de badges de prestige (2 000–3 000 RP), gagnée par les RP",
+      "open": "Règles des badges"
     }
   }
 };

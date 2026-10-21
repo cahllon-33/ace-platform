@@ -119,10 +119,10 @@ export const RB_ES: RulebookText = {
     ],
     [
       "Los Rating Points (RP) solo cambian mediante resultados de partida verificados, según las reglas de Rating Points de A.C.E publicadas en la página de Rangos. Cada cuenta nueva empieza con 1.200 RP en el nivel 3 (Vanguard).",
-      "Contra un equipo con la misma puntuación media, una victoria da +15 RP y una derrota cuesta −15 RP. La cantidad se ajusta según la puntuación media del otro equipo y siempre queda entre 8 y 23 RP por partida. Un empate no cambia nada.",
-      "Las ganancias por victoria se multiplican por 0,8 en los niveles 7–9 y por 0,7 en el nivel 10. Las derrotas no se reducen. Las puntuaciones se mantienen entre 100 y 3.000 RP y no decaen por inactividad.",
+      "Contra un equipo con la misma puntuación media, una victoria da +20 RP y una derrota cuesta −20 RP. La cantidad se ajusta según la puntuación media del otro equipo y siempre queda entre 10 y 30 RP por partida. Un empate no cambia nada.",
+      "Las victorias y las derrotas se multiplican por 0,85 en los niveles 7–9 y por 0,75 en el nivel 10, así que un balance del 50 % mantiene el rango en cualquier nivel. El rating se mantiene entre 100 y 3.000 RP y no baja por inactividad.",
       "Las primeras 10 partidas de un jugador son de clasificación. Durante la clasificación la puntuación no puede subir por encima del nivel 5.",
-      "Un jugador que abandona o sale de una partida pierde 50 RP, sea cual sea el resultado, y no puede recibir el bono MVP de la partida.",
+      "Quien abandona o sale de una partida pierde el doble de una derrota normal, al menos 30 RP, sea cual sea el resultado, y no puede recibir el bonus de MVP.",
       "El MVP de la partida (más bajas; en caso de empate, más daño y después menos muertes) gana 2 RP más en una victoria y pierde 2 RP menos en una derrota, dentro de los límites por partida. Este bono solo se aplica cuando el servidor registre las bajas. Ningún plan de pago cambia los Rating Points."
     ],
     [

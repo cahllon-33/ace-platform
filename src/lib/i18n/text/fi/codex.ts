@@ -260,20 +260,20 @@ export const codex: TextBag["codex"] = {
     },
     "how-points-move": {
       "title": "Miten kirjattu tulos siirtää luokituspisteitä",
-      "lede": "Tallennettu voitto tai tappio mitataan toisen joukkueen keskimääräistä luokitusta vasten. Tasaväkistä joukkuetta vastaan voitto on +15 ja tappio −15. Täydelliset säännöt ovat Arvot-sivulla.",
+      "lede": "Tallennettu voitto tai tappio mitataan toisen joukkueen keskimääräistä luokitusta vasten. Tasaväkistä joukkuetta vastaan voitto on +20 ja tappio −20. Täydelliset säännöt ovat Arvot-sivulla.",
       "sections": [
         {
           "heading": "Askel",
           "paragraphs": [
-            "Odotettu tulos on todennäköisyys, jonka moottori antaa ennen ottelua pelkästään kahden luokituksen perusteella. Tasaväkisillä luokituksilla se on puolet, joten voitto on 15 Rating Pointsin arvoinen ja tappio maksaa 15.",
-            "Korkeampaa luokitusta vastaan voitto on yli 15:n arvoinen ja tappio maksaa vähemmän. Matalampaa vastaan päinvastoin. Voitto tuo aina 8–20 ja tappio maksaa aina 8–23. Tasoilla 7–9 voittopisteet kerrotaan 0,8:lla ja tasolla 10 0,7:llä, joten tikkaiden huippu vie kauemmin. Luokitus pysyy välillä 100–3 000.",
+            "Odotettu tulos on todennäköisyys, jonka moottori antaa ennen ottelua pelkästään kahden luokituksen perusteella. Tasaväkisillä luokituksilla se on puolet, joten voitto on 20 Rating Pointsin arvoinen ja tappio maksaa 15.",
+            "Korkeampaa luokitusta vastaan voitto on arvoltaan yli 20 ja tappio maksaa vähemmän. Matalampaa vastaan päinvastoin. Voitto antaa aina 10–30 ja tappio maksaa aina 10–30. Tasoilla 7–9 voitot ja tappiot kerrotaan 0,85:llä ja tasolla 10 0,75:llä, joten huippu liikkuu tasaisemmin. Luokitus pysyy välillä 100–3 000.",
             "Joukkuetuloksessa jokainen pelaaja mitataan toisen joukkueen keskimääräistä luokitusta vasten. 2 RP:n ottelun MVP-bonus on suunniteltu siihen hetkeen, kun palvelin tallentaa tappoja; siihen asti henkilökohtaista bonusta ei sovelleta."
           ]
         },
         {
           "heading": "Tasapeli",
           "paragraphs": [
-            "Tasapeli ei muuta mitään: jokainen pelaaja säilyttää luokituksensa. Ottelun hylkääminen tai siitä poistuminen maksaa 50 RP tuloksesta riippumatta.",
+            "Tasapeli ei muuta mitään: jokainen pelaaja pitää luokituksensa. Ottelun hylkääminen tai siitä poistuminen maksaa kaksinkertaisen normaalin tappion, vähintään 30 RP, tuloksesta riippumatta.",
             "Tämän sivun taulukko on moottori esimerkkisyötteillä. Rivit eivät ole tallennettuja otteluita eivätkä ne ole tilisi."
           ]
         }

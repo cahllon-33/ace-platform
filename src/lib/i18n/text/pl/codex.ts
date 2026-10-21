@@ -283,20 +283,20 @@ export const codex: TextBag["codex"] = {
     },
     "how-points-move": {
       title: "Jak zapisany wynik zmienia punkty oceny",
-      lede: "Zapisana wygrana lub przegrana jest mierzona względem średniego ratingu drugiej drużyny. Przeciwko równej drużynie wygrana to +15, a przegrana −15. Pełne zasady są na stronie Rang.",
+      lede: "Zapisana wygrana lub przegrana jest mierzona względem średniego ratingu drugiej drużyny. Przeciwko równej drużynie wygrana to +20, a przegrana −20. Pełne zasady są na stronie Rang.",
       sections: [
         {
           heading: "Krok",
           paragraphs: [
-            "Oczekiwany wynik to szansa, jaką silnik przypisuje przed meczem wyłącznie na podstawie dwóch ratingów. Przy równym ratingu wynosi ona połowę, więc wygrana jest warta 15 Rating Points, a przegrana kosztuje 15.",
-            "Przeciwko wyższemu ratingowi wygrana jest warta więcej niż 15, a przegrana kosztuje mniej. Przeciwko niższemu jest odwrotnie. Wygrana zawsze daje od 8 do 20, a przegrana zawsze kosztuje od 8 do 23. Na poziomach 7–9 zyski za wygraną są mnożone przez 0,8, a na poziomie 10 przez 0,7, więc szczyt drabinki zajmuje więcej czasu. Rating pozostaje między 100 a 3000.",
+            "Oczekiwany wynik to szansa, jaką silnik przypisuje przed meczem wyłącznie na podstawie dwóch ratingów. Przy równym ratingu wynosi ona połowę, więc wygrana jest warta 20 Rating Points, a przegrana kosztuje 15.",
+            "Przeciw wyższemu ratingowi wygrana jest warta więcej niż 20, a porażka kosztuje mniej. Przeciw niższemu odwrotnie. Wygrana zawsze daje od 10 do 30, a porażka zawsze kosztuje od 10 do 30. Na poziomach 7–9 wygrane i porażki są mnożone przez 0,85, a na poziomie 10 przez 0,75, więc szczyt porusza się stabilniej. Rating utrzymuje się między 100 a 3000.",
             "Przy wyniku drużynowym każdy gracz jest mierzony względem średniego ratingu drugiej drużyny. Bonus MVP meczu w wysokości 2 RP jest planowany na czas, gdy serwer będzie zapisywał zabójstwa; do tego czasu nie ma żadnego bonusu osobistego.",
           ],
         },
         {
           heading: "Remis",
           paragraphs: [
-            "Remis niczego nie zmienia: każdy gracz zachowuje swój rating. Porzucenie lub opuszczenie meczu kosztuje 50 RP niezależnie od wyniku.",
+            "Remis niczego nie zmienia: każdy gracz zachowuje swój rating. Porzucenie lub opuszczenie meczu kosztuje dwukrotność zwykłej porażki, co najmniej 30 RP, niezależnie od wyniku.",
             "Tabela na tej stronie pokazuje działanie silnika na przykładowych danych. Te wiersze nie są zapisanymi meczami i nie są Twoim kontem.",
           ],
         },

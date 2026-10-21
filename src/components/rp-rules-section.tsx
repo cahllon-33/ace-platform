@@ -2,17 +2,20 @@ import { interpolate } from "@/lib/i18n";
 import { nextRating, placementCap, winsToReach } from "@/lib/rating";
 import { RANK_TIERS, rankLabelParts } from "@/lib/ranks";
 import { RP_RULES } from "@/lib/rp-rules";
-import type { getText } from "@/server/locale";
+import type { getText, getUi } from "@/server/locale";
 
 type Text = Awaited<ReturnType<typeof getText>>;
+type Ui = Awaited<ReturnType<typeof getUi>>;
 
 const fmt = (n: number) => n.toLocaleString("en-US");
 const tier = (level: number) => RANK_TIERS.find((t) => t.level === level) ?? RANK_TIERS[0];
 const label = (level: number) => [...rankLabelParts(tier(level))].reverse().join(" / ");
 
 /** A.C.E Rating Points rules. Every number is read from RP_RULES or computed by the same engine that applies results. */
-export function RpRulesSection({ text }: { text: Text }) {
-  const copy = text.ranks.rpRules;
+export function RpRulesSection({ text, ui }: { text: Text; ui: Ui }) {
+  const v5 = RP_RULES.version === "ace-rp-v5";
+  // v5 rewords only the rules that changed; v4 keeps its original strings (one-line switch in rp-rules.ts).
+  const copy = v5 ? { ...text.ranks.rpRules, ...ui.r41c.v5 } : text.ranks.rpRules;
   const top = RANK_TIERS[RANK_TIERS.length - 1];
   const climb = winsToReach(RP_RULES.startingRating, top.minRating);
   const [early, late] = climb.byMultiplier;
@@ -28,8 +31,10 @@ export function RpRulesSection({ text }: { text: Text }) {
     winMax: `${RP_RULES.win.max} (MVP +${RP_RULES.maxGainWithMvp})`,
     lossMin: RP_RULES.loss.min,
     lossMax: RP_RULES.loss.max,
-    t7: RP_RULES.tierWinMultiplier[7],
-    t10: RP_RULES.tierWinMultiplier[10],
+    t7: v5 ? RP_RULES.tierKMultiplier[7] : RP_RULES.tierWinMultiplier[7],
+    t10: v5 ? RP_RULES.tierKMultiplier[10] : RP_RULES.tierWinMultiplier[10],
+    pk: RP_RULES.placementKMultiplier,
+    loss7: -delta(1700, 0, 1700),
     top: label(10),
     mvp: RP_RULES.mvpBonus,
     n: RP_RULES.placementMatches,

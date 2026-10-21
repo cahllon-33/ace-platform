@@ -320,7 +320,7 @@ export const UI_FI: Ui = {
       "step2t": "Kalibroi",
       "step2b": "Aloitat tasolta 3 1 200 RP:llä. Jokainen tallennettu ottelu muuttaa RP:täsi julkaistujen sääntöjen mukaan.",
       "step3t": "Nouse",
-      "step3b": "Voitto antaa jopa +20 RP (+22 parhaalle pelaajalle), tappio maksaa jopa −23. Rankisi seuraa aina RP:täsi.",
+      "step3b": "Voitto antaa jopa +30 RP (+32 parhaalle pelaajalle), tappio maksaa jopa −23. Rankisi seuraa aina RP:täsi.",
       "ranksTitle": "Kymmenen rankia. Yksi julkinen taulukko.",
       "ranksBody": "Merkkien värit ovat kiinteät tasoittain, ja rankisi lasketaan aina tallennetusta RP:stä.",
       "ranksCta": "Katso kaikki rankit",
@@ -481,6 +481,30 @@ export const UI_FI: Ui = {
       "noSchedule": "Turnauksia ei ole vielä aikataulutettu.",
       "onAir": "Lähetyksessä",
       "watch": "Katso suorana"
+    }
+  },
+  "r41c": {
+    "v5": {
+      "vTier": "Sekä voitot että tappiot kerrotaan {t7}:llä tasoilla 7–9 ja {t10}:llä tasolla 10 ({top}), joten 50 %:n tulos pitää arvosi jokaisella tasolla.",
+      "vPlacement": "Ensimmäiset {n} otteluasi liikkuvat {pk}× nopeammin, jotta löydät tasosi nopeasti. Sijoitusten aikana luokituksesi ei nouse tason {maxTier} ({cap} RP) yli.",
+      "vAbandon": "Lasketaan kaksinkertaiseksi tappioksi, vähintään −{abandon} RP, tuloksesta riippumatta, eikä MVP-bonusta.",
+      "ex2": "Jokainen tappio matkalla lisää tarvittavia voittoja. Tasoilla 7–9 voitto antaa +{win7} ja tappio maksaa −{loss7}, joten yli {breakEven} %:n voittoprosentti tasaisissa otteluissa pitää sinut nousussa."
+    },
+    "pr": {
+      "kicker": "Arvovalta",
+      "title": "Merkkisäännöt",
+      "lede": "Miten jokainen A.C.E.-merkki ansaitaan. Merkit ovat vain kosmeettisia: ne eivät koskaan muuta ottelujärjestelmää, RP:tä tai mitään sääntöä.",
+      "ranks": "Arvomerkit (tasot 1–10) seuraavat RP:täsi. Jokainen näkee saman arvon ja saman kiinteän tasovärin.",
+      "prestige": "Arvovaltamerkit ovat viisi pitkän aikavälin tavoitetta yli {elite} RP:n: yksi 200 RP:n välein 2 000:sta 2 800:aan.",
+      "free": "Free: merkkisi pysyy A.C.E. Legendinä ja arvovaltatasosi näkyy tekstimuotoisena virstanpylväänä. RP:täsi ei koskaan rajoiteta.",
+      "plus": "Plus: platinainen arvovaltasarja.",
+      "premium": "Premium: animoitu kultainen arvovaltasarja.",
+      "lose": "Jos putoat arvovaltarajan alle, merkki seuraa RP:täsi alas; kun saavutat sen uudelleen, se palaa.",
+      "level": "Arvovalta {n} · {name}",
+      "from": "Alkaen {rp} RP",
+      "milestone": "Arvovalta {n} saavutettu",
+      "perk": "Arvovaltamerkkisarja (2 000–3 000 RP), ansaitaan RP:llä",
+      "open": "Merkkisäännöt"
     }
   }
 };

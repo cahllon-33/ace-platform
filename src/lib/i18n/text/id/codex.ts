@@ -260,20 +260,20 @@ export const codex: TextBag["codex"] = {
     },
     "how-points-move": {
       "title": "Cara hasil tercatat menggeser Rating Points",
-      "lede": "Kemenangan atau kekalahan yang tercatat diukur terhadap rata-rata rating tim lawan. Melawan tim setara, kemenangan bernilai +15 dan kekalahan −15. Aturan lengkapnya ada di halaman Rank.",
+      "lede": "Kemenangan atau kekalahan yang tercatat diukur terhadap rata-rata rating tim lawan. Melawan tim setara, kemenangan bernilai +20 dan kekalahan −20. Aturan lengkapnya ada di halaman Rank.",
       "sections": [
         {
           "heading": "Langkah",
           "paragraphs": [
-            "Skor yang diharapkan adalah peluang yang diberikan mesin sebelum pertandingan, hanya berdasarkan dua rating. Dengan rating yang sama peluangnya setengah, jadi kemenangan bernilai 15 Rating Points dan kekalahan mengurangi 15.",
-            "Melawan rating yang lebih tinggi, kemenangan bernilai lebih dari 15 dan kekalahan mengurangi lebih sedikit. Melawan rating yang lebih rendah, sebaliknya. Kemenangan selalu memberi 8 sampai 20 dan kekalahan selalu mengurangi 8 sampai 23. Di tingkat 7–9 perolehan kemenangan dikalikan 0,8 dan di tingkat 10 dikalikan 0,7, jadi puncak tangga butuh waktu lebih lama. Rating dijaga antara 100 dan 3.000.",
+            "Skor yang diharapkan adalah peluang yang diberikan mesin sebelum pertandingan, hanya berdasarkan dua rating. Dengan rating yang sama peluangnya setengah, jadi kemenangan bernilai 20 Rating Points dan kekalahan mengurangi 15.",
+            "Melawan rating lebih tinggi, kemenangan bernilai lebih dari 20 dan kekalahan lebih murah. Melawan rating lebih rendah, sebaliknya. Kemenangan selalu memberi 10 sampai 30 dan kekalahan selalu mengurangi 10 sampai 30. Di tingkat 7–9 kemenangan dan kekalahan dikalikan 0,85 dan di tingkat 10 dikalikan 0,75, jadi puncak bergerak lebih stabil. Rating dijaga di antara 100 dan 3.000.",
             "Pada hasil tim, setiap pemain diukur terhadap rata-rata rating tim lawan. Bonus MVP pertandingan sebesar 2 RP direncanakan saat server mencatat kill; sampai saat itu tidak ada bonus pribadi yang diterapkan."
           ]
         },
         {
           "heading": "Seri",
           "paragraphs": [
-            "Seri tidak mengubah apa pun: setiap pemain mempertahankan rating yang sama. Meninggalkan atau keluar dari pertandingan mengurangi 50 RP, apa pun hasilnya.",
+            "Seri tidak mengubah apa pun: setiap pemain mempertahankan rating-nya. Meninggalkan atau keluar dari pertandingan menghabiskan dua kali kekalahan normal, minimal 30 RP, apa pun hasilnya.",
             "Tabel di halaman ini adalah mesin yang bekerja dengan input contoh. Baris itu bukan pertandingan tersimpan dan bukan akunmu."
           ]
         }

@@ -119,10 +119,10 @@ export const RB_FI: RulebookText = {
     ],
     [
       "Rating Points (RP) muuttuvat vain vahvistettujen ottelutulosten kautta Arvot-sivulla julkaistujen A.C.E Rating Points -sääntöjen mukaan. Jokainen uusi tili aloittaa 1 200 RP:llä tasolta 3 (Vanguard).",
-      "Saman keskiluokituksen joukkuetta vastaan voitto tuo +15 RP ja tappio maksaa −15 RP. Määrää säädetään toisen joukkueen keskimääräisen luokituksen mukaan, ja se pysyy aina 8–23 RP:ssä ottelua kohden. Tasapeli ei muuta mitään.",
-      "Voittopisteet kerrotaan 0,8:lla tasoilla 7–9 ja 0,7:llä tasolla 10. Tappioita ei pienennetä. Luokitukset pysyvät välillä 100–3 000 RP eivätkä laske passiivisuuden vuoksi.",
+      "Saman keskiluokituksen joukkuetta vastaan voitto tuo +20 RP ja tappio maksaa −20 RP. Määrää säädetään toisen joukkueen keskimääräisen luokituksen mukaan, ja se pysyy aina 10–30 RP:ssä ottelua kohden. Tasapeli ei muuta mitään.",
+      "Sekä voitot että tappiot kerrotaan 0,85:llä tasoilla 7–9 ja 0,75:llä tasolla 10, joten 50 %:n tulos pitää arvon jokaisella tasolla. Luokitus pysyy välillä 100–3 000 RP eikä laske poissaolon aikana.",
       "Pelaajan ensimmäiset 10 ottelua ovat sijoitusotteluita. Sijoituksen aikana luokitus ei voi nousta tason 5 yläpuolelle.",
-      "Pelaaja, joka hylkää ottelun tai poistuu siitä, menettää 50 RP tuloksesta riippumatta eikä voi saada ottelun MVP-bonusta.",
+      "Ottelun hylkäävä tai siitä poistuva pelaaja menettää kaksinkertaisen normaalin tappion, vähintään 30 RP, tuloksesta riippumatta, eikä voi saada MVP-bonusta.",
       "Ottelun MVP (eniten tappoja; tasatilanteessa suurempi vahinko, sitten vähemmät kuolemat) saa 2 RP enemmän voitosta ja menettää 2 RP vähemmän tappiosta ottelukohtaisten rajojen puitteissa. Bonus on voimassa vasta, kun palvelin tallentaa tappoja. Mikään maksullinen tilaus ei muuta Rating Pointseja."
     ],
     [

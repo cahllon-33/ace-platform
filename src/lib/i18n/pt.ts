@@ -194,7 +194,7 @@ export const PT: MessageBag = {
  statusTeamLayout: "100 EQUIPAS",
  statusPublicSite: "SITE PÚBLICO",
  rankProtocolTitle: "PROTOCOLO DE PONTUAÇÃO A.C.E.",
- rankProtocolBody: "A regra escrita compara um jogador com a pontuação média da outra equipa. Contra uma equipa equilibrada uma vitória registada vale +15 RP e uma derrota −15 RP, sempre entre 8 e 23 RP por partida, e os 10 escalões e 3 divisões leem-se a partir desse número. Esta página não valida nenhuma partida, por isso aqui não é aplicada nenhuma alteração de pontuação.",
+ rankProtocolBody: "A regra escrita compara um jogador com a pontuação média da outra equipa. Contra uma equipa equilibrada uma vitória registada vale +20 RP e uma derrota −20 RP, sempre entre 10 e 30 RP por partida, e os 10 escalões e 3 divisões leem-se a partir desse número. Esta página não valida nenhuma partida, por isso aqui não é aplicada nenhuma alteração de pontuação.",
  rankProgress: "Progresso de rank",
  competitiveRating: "Pontuação competitiva",
  targetWinRate: "Meta de vitórias",

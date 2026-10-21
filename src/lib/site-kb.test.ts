@@ -20,11 +20,11 @@ const CASES: Case[] = [
   { l: "he", q: "אפשר לקבל החזר כספי?", has: [HE, /החזר|מוחזר/] },
   { l: "he", q: "איך מבטלים מנוי?", has: [HE, /לבטל|ביטול/] },
   // RP gain / loss
-  { l: "en", q: "How many RP do I get for a win?", route: "/ranks", has: [/\+15|15/] },
+  { l: "en", q: "How many RP do I get for a win?", route: "/ranks", has: [/\+20|20/] },
   { l: "he", q: "כמה נקודות מקבלים על ניצחון?", route: "/ranks", has: [/15/, HE] },
-  { l: "en", q: "How much RP do I lose when I lose a match?", route: "/ranks", has: [/15|23|loss/i] },
-  { l: "en", q: "What happens if I abandon a match?", route: "/ranks", has: [/50/] },
-  { l: "he", q: "מה קורה אם אני נוטש משחק?", route: "/ranks", has: [/50/, HE] },
+  { l: "en", q: "How much RP do I lose when I lose a match?", route: "/ranks", has: [/20|30|loss/i] },
+  { l: "en", q: "What happens if I abandon a match?", route: "/ranks", has: [/30|double|twice/i] },
+  { l: "he", q: "מה קורה אם אני נוטש משחק?", route: "/ranks", has: [/30/, HE] },
   { l: "en", q: "Do I get extra points as MVP?", route: "/ranks", has: [/MVP|2 RP|bonus/i] },
   // rank up / start
   { l: "en", q: "How do I rank up?", route: "/ranks", has: [/recorded|result|Rating Points/i] },

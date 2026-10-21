@@ -194,7 +194,7 @@ export const SV: MessageBag = {
  statusTeamLayout: "FÄLT MED 100 LAG",
  statusPublicSite: "OFFENTLIG WEBBPLATS",
  rankProtocolTitle: "A.C.E. BETYGSPROTOKOLL",
- rankProtocolBody: "Den skrivna regeln jämför en spelare med det andra lagets genomsnittliga rating. Mot ett jämnt lag ger en registrerad vinst +15 RP och en förlust −15 RP, alltid inom 8 till 23 RP per match, och de 10 nivåerna och 3 divisionerna läses av från den siffran. Den här sidan godkänner ingen match, så ingen ratingändring tillämpas här.",
+ rankProtocolBody: "Den skrivna regeln jämför en spelare med det andra lagets genomsnittliga rating. Mot ett jämnt lag ger en registrerad vinst +20 RP och en förlust −20 RP, alltid inom 10 till 30 RP per match, och de 10 nivåerna och 3 divisionerna läses av från den siffran. Den här sidan godkänner ingen match, så ingen ratingändring tillämpas här.",
  rankProgress: "Rankframsteg",
  competitiveRating: "Tävlingsbetyg",
  targetWinRate: "Målvinstprocent",

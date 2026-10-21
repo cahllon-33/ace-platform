@@ -45,7 +45,7 @@ export const ranks: TextBag["ranks"] = {
     "colWin": "Victoria",
     "colLoss": "Derrota",
     "examplesTitle": "Ejemplos prácticos",
-    "ex1": "De {start} a {elite} RP ({top}) contra equipos igualados, solo con victorias: {w1} victorias a +15 hasta el nivel 6 y después {w2} victorias a +{win7} en los niveles 7–9. En total, {total} victorias.",
+    "ex1": "De {start} a {elite} RP ({top}) contra equipos igualados, solo con victorias: {w1} victorias a +{win} hasta el nivel 6 y después {w2} victorias a +{win7} en los niveles 7–9. En total, {total} victorias.",
     "ex2": "Cada derrota en el camino añade más victorias. En los niveles 7–9 una victoria da +{win7} pero una derrota sigue costando −{loss}, así que necesitas ganar al menos el {breakEven} % de las partidas igualadas para seguir subiendo.",
     "ex3": "Contra un equipo con 200 RP más de media que tú, una victoria da +{strongWin} y una derrota cuesta −{strongLoss}.",
     "ex4": "Contra un equipo con 200 RP menos de media que tú, una victoria da +{weakWin} y una derrota cuesta −{weakLoss}.",

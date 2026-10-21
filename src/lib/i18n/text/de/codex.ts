@@ -283,20 +283,20 @@ export const codex: TextBag["codex"] = {
     },
     "how-points-move": {
       title: "Wie ein eingetragenes Ergebnis die Wertungspunkte verändert",
-      lede: "Ein aufgezeichneter Sieg oder eine Niederlage wird an der Durchschnittswertung des anderen Teams gemessen. Gegen ein gleich starkes Team bringt ein Sieg +15 und eine Niederlage −15. Die vollständigen Regeln stehen auf der Ranks-Seite.",
+      lede: "Ein aufgezeichneter Sieg oder eine Niederlage wird an der Durchschnittswertung des anderen Teams gemessen. Gegen ein gleich starkes Team bringt ein Sieg +20 und eine Niederlage −20. Die vollständigen Regeln stehen auf der Ranks-Seite.",
       sections: [
         {
           heading: "Der Schritt",
           paragraphs: [
-            "Der erwartete Score ist die Chance, die die Engine vor dem Match vergibt, allein aus den beiden Wertungen. Bei gleicher Wertung liegt sie bei der Hälfte, daher bringt ein Sieg 15 Rating Points und eine Niederlage kostet 15.",
-            "Gegen eine höhere Wertung bringt ein Sieg mehr als 15 und eine Niederlage kostet weniger. Gegen eine niedrigere Wertung ist es umgekehrt. Ein Sieg bringt immer 8 bis 20, eine Niederlage kostet immer 8 bis 23. In den Stufen 7–9 werden Siegpunkte mit 0,8 multipliziert, in Stufe 10 mit 0,7, daher dauert die Spitze der Leiter länger. Die Wertung bleibt zwischen 100 und 3.000.",
+            "Der erwartete Score ist die Chance, die die Engine vor dem Match vergibt, allein aus den beiden Wertungen. Bei gleicher Wertung liegt sie bei der Hälfte, daher bringt ein Sieg 20 Rating Points und eine Niederlage kostet 15.",
+            "Gegen eine höhere Wertung bringt ein Sieg mehr als 20 und eine Niederlage kostet weniger. Gegen eine niedrigere Wertung ist es umgekehrt. Ein Sieg bringt immer 10 bis 30, eine Niederlage kostet immer 10 bis 30. In den Stufen 7–9 werden Siege und Niederlagen mit 0,85 und in Stufe 10 mit 0,75 multipliziert, sodass sich die Spitze ruhiger bewegt. Die Wertung bleibt zwischen 100 und 3.000.",
             "Bei einem Teamergebnis wird jeder Spieler an der Durchschnittswertung des anderen Teams gemessen. Ein Match-MVP-Bonus von 2 RP ist geplant, sobald der Server Kills aufzeichnet; bis dahin gibt es keinen persönlichen Bonus.",
           ],
         },
         {
           heading: "Ein Unentschieden",
           paragraphs: [
-            "Ein Unentschieden ändert nichts: Jeder Spieler behält seine Wertung. Wer ein Match abbricht oder verlässt, verliert 50 RP, unabhängig vom Ergebnis.",
+            "Ein Unentschieden ändert nichts: Jeder Spieler behält seine Wertung. Wer ein Match abbricht oder verlässt, verliert das Doppelte einer normalen Niederlage, mindestens 30 RP, unabhängig vom Ergebnis.",
             "Die Tabelle auf dieser Seite zeigt die Engine bei der Arbeit mit Beispieleingaben. Diese Zeilen sind keine gespeicherten Spiele und nicht Ihr Konto.",
           ],
         },

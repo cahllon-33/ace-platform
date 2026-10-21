@@ -320,7 +320,7 @@ export const UI_HR: Ui = {
       "step2t": "Kalibracija",
       "step2b": "Počinješ na razini 3 s 1.200 RP. Svaki zabilježeni meč mijenja RP prema objavljenim pravilima.",
       "step3t": "Uspon",
-      "step3b": "Pobjeda donosi do +20 RP (+22 najboljem igraču), poraz košta do −23. Rang uvijek prati RP.",
+      "step3b": "Pobjeda donosi do +30 RP (+32 najboljem igraču), poraz košta do −23. Rang uvijek prati RP.",
       "ranksTitle": "Deset rangova. Jedna javna tablica.",
       "ranksBody": "Boje značaka fiksne su po razini, a rang se uvijek računa iz spremljenih RP.",
       "ranksCta": "Pogledaj sve rangove",
@@ -481,6 +481,30 @@ export const UI_HR: Ui = {
       "noSchedule": "Još nema zakazanih turnira.",
       "onAir": "U eteru",
       "watch": "Gledaj uživo"
+    }
+  },
+  "r41c": {
+    "v5": {
+      "vTier": "Pobjede i porazi množe se s {t7} na razinama 7–9 i s {t10} na razini 10 ({top}), pa omjer od 50 % zadržava rang na svakoj razini.",
+      "vPlacement": "Tvojih prvih {n} mečeva kreće se {pk}× brže da brzo nađeš svoju razinu. Tijekom plasmana rejting ne može prijeći razinu {maxTier} ({cap} RP).",
+      "vAbandon": "Računa se kao dvostruki poraz, najmanje −{abandon} RP, bez obzira na rezultat, i bez MVP bonusa.",
+      "ex2": "Svaki poraz usput dodaje pobjede. Na razinama 7–9 pobjeda daje +{win7}, a poraz košta −{loss7}, pa pobjeđivanjem u više od {breakEven} % izjednačenih mečeva nastavljaš rasti."
+    },
+    "pr": {
+      "kicker": "Prestiž",
+      "title": "Pravila znački",
+      "lede": "Kako se osvaja svaka A.C.E. značka. Značke su samo kozmetičke: nikad ne mijenjaju matchmaking, RP ni neko pravilo.",
+      "ranks": "Značke ranga (razine 1–10) prate tvoje RP. Svi vide isti rang i istu fiksnu boju razine.",
+      "prestige": "Značke prestiža su pet dugoročnih ciljeva iznad {elite} RP: jedna svakih 200 RP od 2.000 do 2.800.",
+      "free": "Free: značka ostaje A.C.E. Legend, a razina prestiža prikazuje se kao tekstualni miljokaz. RP nikad nije ograničen.",
+      "plus": "Plus: platinasti set prestiža.",
+      "premium": "Premium: animirani zlatni set prestiža.",
+      "lose": "Padneš li ispod praga prestiža, značka prati RP prema dolje; kad ga ponovno dosegneš, vraća se.",
+      "level": "Prestiž {n} · {name}",
+      "from": "Od {rp} RP",
+      "milestone": "Dosegnut prestiž {n}",
+      "perk": "Set znački prestiža (2.000–3.000 RP), osvaja se RP-om",
+      "open": "Pravila znački"
     }
   }
 };

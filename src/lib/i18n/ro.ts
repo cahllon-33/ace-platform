@@ -194,7 +194,7 @@ export const RO: MessageBag = {
  statusTeamLayout: "100 DE ECHIPE",
  statusPublicSite: "SITE PUBLIC",
  rankProtocolTitle: "PROTOCOLUL DE RATING A.C.E.",
- rankProtocolBody: "Regula scrisă compară un jucător cu ratingul mediu al celeilalte echipe. Împotriva unei echipe egale o victorie înregistrată înseamnă +15 RP, iar o înfrângere −15 RP, mereu între 8 și 23 RP pe meci, iar cele 10 niveluri și 3 divizii se citesc din acest număr. Această pagină nu validează un meci, așa că aici nu se aplică nicio modificare de rating.",
+ rankProtocolBody: "Regula scrisă compară un jucător cu ratingul mediu al celeilalte echipe. Împotriva unei echipe egale o victorie înregistrată înseamnă +20 RP, iar o înfrângere −20 RP, mereu între 10 și 30 RP pe meci, iar cele 10 niveluri și 3 divizii se citesc din acest număr. Această pagină nu validează un meci, așa că aici nu se aplică nicio modificare de rating.",
  rankProgress: "Progres de rang",
  competitiveRating: "Rating competitiv",
  targetWinRate: "Țintă de victorii",

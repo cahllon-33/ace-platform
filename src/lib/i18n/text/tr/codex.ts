@@ -260,20 +260,20 @@ export const codex: TextBag["codex"] = {
     },
     "how-points-move": {
       "title": "Kaydedilmiş bir sonuç Derece Puanlarını nasıl değiştirir",
-      "lede": "Kaydedilmiş bir galibiyet veya mağlubiyet, diğer takımın ortalama puanına göre ölçülür. Denk bir takıma karşı galibiyet +15, mağlubiyet −15'tir. Kuralların tamamı Rütbeler sayfasındadır.",
+      "lede": "Kaydedilmiş bir galibiyet veya mağlubiyet, diğer takımın ortalama puanına göre ölçülür. Denk bir takıma karşı galibiyet +20, mağlubiyet −20'tir. Kuralların tamamı Rütbeler sayfasındadır.",
       "sections": [
         {
           "heading": "Adım",
           "paragraphs": [
-            "Beklenen skor, motorun maçtan önce yalnızca iki puana dayanarak verdiği olasılıktır. Puanlar eşitse bu yarıdır; bu yüzden galibiyet 15 Rating Points değerindedir ve mağlubiyet 15 kaybettirir.",
-            "Daha yüksek bir puana karşı galibiyet 15'ten fazla değerlidir ve mağlubiyet daha az kaybettirir. Daha düşük bir puana karşı tam tersi. Galibiyet her zaman 8 ile 20 arası kazandırır, mağlubiyet her zaman 8 ile 23 arası kaybettirir. 7–9. kademelerde galibiyet kazançları 0,8, 10. kademede 0,7 ile çarpılır; bu yüzden merdivenin zirvesi daha uzun sürer. Puan 100 ile 3.000 arasında tutulur.",
+            "Beklenen skor, motorun maçtan önce yalnızca iki puana dayanarak verdiği olasılıktır. Puanlar eşitse bu yarıdır; bu yüzden galibiyet 20 Rating Points değerindedir ve mağlubiyet 20 kaybettirir.",
+            "Daha yüksek puana karşı galibiyet 20'den fazla eder, mağlubiyet daha az kaybettirir. Daha düşük puana karşı tersi geçerlidir. Galibiyet her zaman 10 ile 30 arası verir, mağlubiyet her zaman 10 ile 30 arası kaybettirir. 7–9. kademelerde galibiyet ve mağlubiyet 0,85, 10. kademede 0,75 ile çarpılır; zirve daha dengeli hareket eder. Puan 100 ile 3.000 arasında tutulur.",
             "Takım sonucunda her oyuncu diğer takımın ortalama puanına göre ölçülür. Sunucu öldürmeleri kaydetmeye başladığında 2 RP'lik bir maç MVP bonusu planlanıyor; o zamana kadar kişisel bonus uygulanmaz."
           ]
         },
         {
           "heading": "Beraberlik",
           "paragraphs": [
-            "Beraberlik hiçbir şeyi değiştirmez: her oyuncu puanını korur. Bir maçı bırakmak veya maçtan ayrılmak, sonuç ne olursa olsun 50 RP'ye mal olur.",
+            "Beraberlik hiçbir şeyi değiştirmez: her oyuncu puanını korur. Maçı terk etmek veya maçtan ayrılmak, sonuç ne olursa olsun normal mağlubiyetin iki katına, en az 30 RP'ye mal olur.",
             "Bu sayfadaki tablo, motorun örnek girdiler üzerinde çalışmasıdır. Bu satırlar kayıtlı maçlar değildir ve sizin hesabınız değildir."
           ]
         }

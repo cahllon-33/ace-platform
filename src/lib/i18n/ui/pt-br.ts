@@ -320,7 +320,7 @@ export const UI_PT_BR: Ui = {
       "step2t": "Calibre",
       "step2b": "Você começa no nível 3 com 1.200 RP. Cada partida registrada muda seus RP por regras publicadas.",
       "step3t": "Suba",
-      "step3b": "Uma vitória dá até +20 RP (+22 como melhor jogador); uma derrota custa até −23. Seu rank sempre segue seus RP.",
+      "step3b": "Uma vitória dá até +30 RP (+32 como melhor jogador); uma derrota custa até −23. Seu rank sempre segue seus RP.",
       "ranksTitle": "Dez ranks. Uma tabela pública.",
       "ranksBody": "As cores dos emblemas são fixas por nível e seu rank é sempre calculado a partir dos RP salvos.",
       "ranksCta": "Ver todos os ranks",
@@ -481,6 +481,30 @@ export const UI_PT_BR: Ui = {
       "noSchedule": "Ainda não há torneios agendados.",
       "onAir": "No ar",
       "watch": "Assistir ao vivo"
+    }
+  },
+  "r41c": {
+    "v5": {
+      "vTier": "Vitórias e derrotas são multiplicadas por {t7} nos níveis 7–9 e por {t10} no nível 10 ({top}), então um histórico de 50% mantém seu rank em qualquer nível.",
+      "vPlacement": "Suas primeiras {n} partidas andam {pk}× mais rápido para você achar seu nível logo. Durante a colocação seu rating não passa do nível {maxTier} ({cap} RP).",
+      "vAbandon": "Conta como derrota dobrada, pelo menos −{abandon} RP, seja qual for o resultado, e sem bônus de MVP.",
+      "ex2": "Cada derrota no caminho soma vitórias. Nos níveis 7–9 uma vitória dá +{win7} e uma derrota custa −{loss7}, então vencer mais de {breakEven}% das partidas equilibradas mantém você subindo."
+    },
+    "pr": {
+      "kicker": "Prestígio",
+      "title": "Regras dos emblemas",
+      "lede": "Como cada emblema A.C.E. é conquistado. Emblemas são só cosméticos: nunca mudam o matchmaking, os RP ou qualquer regra.",
+      "ranks": "Os emblemas de rank (níveis 1–10) seguem seus RP. Todo mundo vê o mesmo rank e a mesma cor fixa de nível.",
+      "prestige": "Os emblemas de prestígio são cinco metas de longo prazo acima de {elite} RP: um a cada 200 RP, de 2.000 a 2.800.",
+      "free": "Free: seu emblema continua A.C.E. Legend e o nível de prestígio aparece como marco em texto. Seus RP nunca têm limite.",
+      "plus": "Plus: o conjunto de prestígio em platina.",
+      "premium": "Premium: o conjunto de prestígio dourado animado.",
+      "lose": "Se cair abaixo de um limite de prestígio, o emblema acompanha seus RP; ao atingir de novo, ele volta.",
+      "level": "Prestígio {n} · {name}",
+      "from": "A partir de {rp} RP",
+      "milestone": "Prestígio {n} alcançado",
+      "perk": "Conjunto de emblemas de prestígio (2.000–3.000 RP), conquistado com RP",
+      "open": "Regras dos emblemas"
     }
   }
 };

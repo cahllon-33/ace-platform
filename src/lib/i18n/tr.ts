@@ -194,7 +194,7 @@ export const TR: MessageBag = {
  statusTeamLayout: "100 TAKIMLIK ALAN",
  statusPublicSite: "HERKESE AÇIK SİTE",
  rankProtocolTitle: "A.C.E. PUAN KURALI",
- rankProtocolBody: "Yazılı kural, bir oyuncuyu diğer takımın ortalama puanıyla karşılaştırır. Denk bir takıma karşı kaydedilmiş galibiyet +15 RP, mağlubiyet −15 RP'dir; her zaman maç başına 8 ile 23 RP arasındadır ve 10 kademe ile 3 lig bu sayıdan okunur. Bu sayfa bir maçı doğrulamaz, bu yüzden burada puan değişikliği uygulanmaz.",
+ rankProtocolBody: "Yazılı kural, bir oyuncuyu diğer takımın ortalama puanıyla karşılaştırır. Denk bir takıma karşı kaydedilmiş galibiyet +20 RP, mağlubiyet −20 RP'dir; her zaman maç başına 10 ile 30 RP arasındadır ve 10 kademe ile 3 lig bu sayıdan okunur. Bu sayfa bir maçı doğrulamaz, bu yüzden burada puan değişikliği uygulanmaz.",
  rankProgress: "Rütbe ilerlemesi",
  competitiveRating: "Rekabet puanı",
  targetWinRate: "Hedef galibiyet oranı",

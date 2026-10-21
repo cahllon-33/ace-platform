@@ -260,20 +260,20 @@ export const codex: TextBag["codex"] = {
     },
     "how-points-move": {
       "title": "Hur ett registrerat resultat flyttar ratingpoäng",
-      "lede": "En registrerad vinst eller förlust mäts mot det andra lagets genomsnittliga rating. Mot ett jämnt lag ger en vinst +15 och en förlust −15. De fullständiga reglerna finns på sidan Ranger.",
+      "lede": "En registrerad vinst eller förlust mäts mot det andra lagets genomsnittliga rating. Mot ett jämnt lag ger en vinst +20 och en förlust −20. De fullständiga reglerna finns på sidan Ranger.",
       "sections": [
         {
           "heading": "Steget",
           "paragraphs": [
-            "Förväntat resultat är chansen som motorn tilldelar före matchen, enbart utifrån de två ratingarna. Vid lika rating är den en halv, så en vinst är värd 15 Rating Points och en förlust kostar 15.",
-            "Mot en högre rating är en vinst värd mer än 15 och en förlust kostar mindre. Mot en lägre är det tvärtom. En vinst ger alltid 8 till 20 och en förlust kostar alltid 8 till 23. På nivå 7–9 multipliceras vinstpoäng med 0,8 och på nivå 10 med 0,7, så toppen av stegen tar längre tid. Ratingen hålls mellan 100 och 3 000.",
+            "Förväntat resultat är chansen som motorn tilldelar före matchen, enbart utifrån de två ratingarna. Vid lika rating är den en halv, så en vinst är värd 20 Rating Points och en förlust kostar 15.",
+            "Mot en högre rating är en vinst värd mer än 20 och en förlust kostar mindre. Mot en lägre är det tvärtom. En vinst ger alltid 10 till 30 och en förlust kostar alltid 10 till 30. På nivå 7–9 multipliceras vinster och förluster med 0,85 och på nivå 10 med 0,75, så toppen rör sig stadigare. Ratingen hålls mellan 100 och 3 000.",
             "Vid ett lagresultat mäts varje spelare mot det andra lagets genomsnittliga rating. En MVP-bonus på 2 RP är planerad för när servern registrerar kills; fram till dess tillämpas ingen personlig bonus."
           ]
         },
         {
           "heading": "Oavgjort",
           "paragraphs": [
-            "Oavgjort ändrar ingenting: varje spelare behåller sin rating. Att lämna eller överge en match kostar 50 RP oavsett resultat.",
+            "Oavgjort ändrar ingenting: varje spelare behåller sin rating. Att överge eller lämna en match kostar dubbelt så mycket som en vanlig förlust, minst 30 RP, oavsett resultat.",
             "Tabellen på den här sidan är motorn som räknar på exempelvärden. Raderna är inga sparade matcher och inte ditt konto."
           ]
         }

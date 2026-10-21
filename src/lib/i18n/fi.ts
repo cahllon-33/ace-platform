@@ -198,7 +198,7 @@ export const FI: MessageBag = {
  statusPublicSite: "JULKINEN SIVUSTO",
  rankProtocolTitle: "A.C.E. ARVOSANAPROTOKOLLA",
  rankProtocolBody:
-  "Kirjattu sääntö vertaa pelaajaa toisen joukkueen keskimääräiseen luokitukseen. Tasaväkistä joukkuetta vastaan tallennettu voitto on +15 RP ja tappio −15 RP, aina 8–23 RP:n sisällä ottelua kohden, ja 10 tasoa ja 3 divisioonaa luetaan tästä luvusta. Tämä sivu ei vahvista ottelua, joten luokitusmuutosta ei sovelleta tässä.",
+  "Kirjattu sääntö vertaa pelaajaa toisen joukkueen keskimääräiseen luokitukseen. Tasaväkistä joukkuetta vastaan tallennettu voitto on +20 RP ja tappio −20 RP, aina 10–30 RP:n sisällä ottelua kohden, ja 10 tasoa ja 3 divisioonaa luetaan tästä luvusta. Tämä sivu ei vahvista ottelua, joten luokitusmuutosta ei sovelleta tässä.",
  rankProgress: "Arvon eteneminen",
  competitiveRating: "Kilpailuarvosana",
  targetWinRate: "Tavoitevoittoprosentti",

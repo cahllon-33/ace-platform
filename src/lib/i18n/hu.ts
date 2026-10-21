@@ -204,7 +204,7 @@ export const HU: MessageBag = {
  statusPublicSite: "NYILVÁNOS OLDAL",
  rankProtocolTitle: "A.C.E. ÉRTÉKELÉSI PROTOKOLL",
  rankProtocolBody:
- "Az írott szabály a játékost a másik csapat átlagos értékszámához hasonlítja. Egyenlő csapat ellen egy rögzített győzelem +15 RP, egy vereség −15 RP, mindig meccsenként 8 és 23 RP között, és a 10 szint és a 3 divízió ebből a számból olvasható ki. Ez az oldal nem hitelesít meccset, így itt nem történik értékszám-változás.",
+ "Az írott szabály a játékost a másik csapat átlagos értékszámához hasonlítja. Egyenlő csapat ellen egy rögzített győzelem +20 RP, egy vereség −20 RP, mindig meccsenként 10 és 30 RP között, és a 10 szint és a 3 divízió ebből a számból olvasható ki. Ez az oldal nem hitelesít meccset, így itt nem történik értékszám-változás.",
  rankProgress: "Rang előrehaladása",
  competitiveRating: "Versenyértékelés",
  targetWinRate: "Célzott győzelmi arány",

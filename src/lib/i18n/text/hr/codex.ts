@@ -260,20 +260,20 @@ export const codex: TextBag["codex"] = {
     },
     "how-points-move": {
       "title": "Kako zabilježeni rezultat pomiče Rating Points",
-      "lede": "Zabilježena pobjeda ili poraz mjeri se u odnosu na prosječni rejting drugog tima. Protiv jednakog tima pobjeda je +15, a poraz −15. Potpuna pravila nalaze se na stranici Rangovi.",
+      "lede": "Zabilježena pobjeda ili poraz mjeri se u odnosu na prosječni rejting drugog tima. Protiv jednakog tima pobjeda je +20, a poraz −20. Potpuna pravila nalaze se na stranici Rangovi.",
       "sections": [
         {
           "heading": "Korak",
           "paragraphs": [
-            "Očekivani rezultat je šansa koju sustav dodjeljuje prije meča, samo na temelju dvaju rejtinga. Pri jednakom rejtingu ona iznosi polovicu, pa pobjeda vrijedi 15 Rating Points, a poraz košta 15.",
-            "Protiv višeg rejtinga pobjeda vrijedi više od 15, a poraz košta manje. Protiv nižeg je obrnuto. Pobjeda uvijek donosi od 8 do 20, a poraz uvijek košta od 8 do 23. Na razinama 7–9 dobici od pobjede množe se s 0,8, a na razini 10 s 0,7, pa vrh ljestvice traje dulje. Rejting ostaje između 100 i 3.000.",
+            "Očekivani rezultat je šansa koju sustav dodjeljuje prije meča, samo na temelju dvaju rejtinga. Pri jednakom rejtingu ona iznosi polovicu, pa pobjeda vrijedi 20 Rating Points, a poraz košta 15.",
+            "Protiv višeg rejtinga pobjeda vrijedi više od 20, a poraz košta manje. Protiv nižeg obrnuto. Pobjeda uvijek daje 10 do 30, a poraz uvijek košta 10 do 30. Na razinama 7–9 pobjede i porazi množe se s 0,85, a na razini 10 s 0,75, pa je vrh stabilniji. Rejting se drži između 100 i 3.000.",
             "Kod timskog rezultata svaki se igrač mjeri u odnosu na prosječni rejting drugog tima. MVP bonus meča od 2 RP planiran je za trenutak kad poslužitelj počne bilježiti ubojstva; do tada se ne primjenjuje osobni bonus."
           ]
         },
         {
           "heading": "Neriješeno",
           "paragraphs": [
-            "Neriješeno ništa ne mijenja: svaki igrač zadržava svoj rejting. Napuštanje ili izlazak iz meča košta 50 RP bez obzira na rezultat.",
+            "Neriješeno ništa ne mijenja: svaki igrač zadržava rejting. Napuštanje ili izlazak iz meča košta dvostruko od običnog poraza, najmanje 30 RP, bez obzira na rezultat.",
             "Tablica na ovoj stranici je motor koji radi s primjernim ulazima. Ti retci nisu spremljeni mečevi i nisu tvoj račun."
           ]
         }

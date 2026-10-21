@@ -320,7 +320,7 @@ export const UI_PL: Ui = {
       "step2t": "Kalibracja",
       "step2b": "Zaczynasz na poziomie 3 z 1200 RP. Każdy zapisany mecz zmienia RP według opublikowanych zasad.",
       "step3t": "Awans",
-      "step3b": "Wygrana daje do +20 RP (+22 dla najlepszego gracza), porażka kosztuje do −23. Ranga zawsze wynika z RP.",
+      "step3b": "Wygrana daje do +30 RP (+32 dla najlepszego gracza), porażka kosztuje do −23. Ranga zawsze wynika z RP.",
       "ranksTitle": "Dziesięć rang. Jedna publiczna tabela.",
       "ranksBody": "Kolory odznak są stałe dla poziomów, a ranga zawsze liczona jest z zapisanych RP.",
       "ranksCta": "Zobacz wszystkie rangi",
@@ -481,6 +481,30 @@ export const UI_PL: Ui = {
       "noSchedule": "Nie zaplanowano jeszcze turniejów.",
       "onAir": "Na antenie",
       "watch": "Oglądaj na żywo"
+    }
+  },
+  "r41c": {
+    "v5": {
+      "vTier": "Wygrane i porażki są mnożone przez {t7} na poziomach 7–9 i przez {t10} na poziomie 10 ({top}), więc bilans 50% utrzymuje rangę na każdym poziomie.",
+      "vPlacement": "Twoje pierwsze {n} meczów liczy się {pk}× mocniej, by szybko znaleźć twój poziom. W trakcie kwalifikacji rating nie przekroczy poziomu {maxTier} ({cap} RP).",
+      "vAbandon": "Liczy się jako podwójna porażka, co najmniej −{abandon} RP, niezależnie od wyniku, i bez bonusu MVP.",
+      "ex2": "Każda porażka po drodze dokłada wygranych. Na poziomach 7–9 wygrana daje +{win7}, a porażka kosztuje −{loss7}, więc wygrywając ponad {breakEven}% wyrównanych meczów, wciąż się wspinasz."
+    },
+    "pr": {
+      "kicker": "Prestiż",
+      "title": "Zasady odznak",
+      "lede": "Jak zdobywa się każdą odznakę A.C.E. Odznaki są wyłącznie kosmetyczne: nigdy nie zmieniają matchmakingu, RP ani żadnej zasady.",
+      "ranks": "Odznaki rang (poziomy 1–10) podążają za twoim RP. Każdy widzi tę samą rangę i ten sam stały kolor poziomu.",
+      "prestige": "Odznaki prestiżu to pięć długoterminowych celów powyżej {elite} RP: jedna co 200 RP od 2000 do 2800.",
+      "free": "Free: twoja odznaka pozostaje A.C.E. Legend, a poziom prestiżu jest pokazywany jako tekstowy kamień milowy. RP nigdy nie ma limitu.",
+      "plus": "Plus: platynowy zestaw prestiżu.",
+      "premium": "Premium: animowany złoty zestaw prestiżu.",
+      "lose": "Spadniesz poniżej progu prestiżu — odznaka spada razem z RP; osiągniesz go znowu — wraca.",
+      "level": "Prestiż {n} · {name}",
+      "from": "Od {rp} RP",
+      "milestone": "Osiągnięto prestiż {n}",
+      "perk": "Zestaw odznak prestiżu (2000–3000 RP), zdobywany za RP",
+      "open": "Zasady odznak"
     }
   }
 };

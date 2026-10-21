@@ -260,20 +260,20 @@ export const codex: TextBag["codex"] = {
     },
     "how-points-move": {
       "title": "Cum mută un rezultat înregistrat Rating Points",
-      "lede": "O victorie sau o înfrângere înregistrată se măsoară față de ratingul mediu al celeilalte echipe. Împotriva unei echipe egale o victorie înseamnă +15, iar o înfrângere −15. Regulile complete sunt pe pagina Ranguri.",
+      "lede": "O victorie sau o înfrângere înregistrată se măsoară față de ratingul mediu al celeilalte echipe. Împotriva unei echipe egale o victorie înseamnă +20, iar o înfrângere −20. Regulile complete sunt pe pagina Ranguri.",
       "sections": [
         {
           "heading": "Pasul",
           "paragraphs": [
-            "Scorul așteptat este șansa pe care motorul o atribuie înainte de meci, doar pe baza celor două ratinguri. La ratinguri egale este o jumătate, așa că o victorie valorează 15 Rating Points, iar o înfrângere costă 15.",
-            "Împotriva unui rating mai mare, o victorie valorează mai mult de 15, iar o înfrângere costă mai puțin. Împotriva unuia mai mic, invers. O victorie aduce mereu între 8 și 20, iar o înfrângere costă mereu între 8 și 23. La nivelurile 7–9 câștigurile din victorii se înmulțesc cu 0,8, iar la nivelul 10 cu 0,7, așa că vârful clasamentului durează mai mult. Ratingul rămâne între 100 și 3.000.",
+            "Scorul așteptat este șansa pe care motorul o atribuie înainte de meci, doar pe baza celor două ratinguri. La ratinguri egale este o jumătate, așa că o victorie valorează 20 Rating Points, iar o înfrângere costă 15.",
+            "Contra unui rating mai mare, o victorie valorează mai mult de 20, iar o înfrângere costă mai puțin. Contra unuia mai mic, invers. O victorie dă mereu între 10 și 30, iar o înfrângere costă mereu între 10 și 30. La nivelurile 7–9 victoriile și înfrângerile se înmulțesc cu 0,85, iar la nivelul 10 cu 0,75, deci vârful se mișcă mai stabil. Ratingul rămâne între 100 și 3.000.",
             "La un rezultat de echipă, fiecare jucător este măsurat față de ratingul mediu al celeilalte echipe. Un bonus MVP de 2 RP este planificat pentru momentul în care serverul va înregistra eliminările; până atunci nu se aplică niciun bonus personal."
           ]
         },
         {
           "heading": "Egalul",
           "paragraphs": [
-            "Un egal nu schimbă nimic: fiecare jucător își păstrează ratingul. Abandonarea sau părăsirea unui meci costă 50 RP, indiferent de rezultat.",
+            "O remiză nu schimbă nimic: fiecare jucător își păstrează ratingul. Abandonarea sau părăsirea unui meci costă dublul unei înfrângeri normale, cel puțin 30 RP, indiferent de rezultat.",
             "Tabelul de pe această pagină este motorul lucrând pe date exemplu. Acele rânduri nu sunt meciuri stocate și nu sunt contul tău."
           ]
         }

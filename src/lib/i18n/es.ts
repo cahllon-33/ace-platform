@@ -194,7 +194,7 @@ export const ES: MessageBag = {
  statusTeamLayout: "100 EQUIPOS",
  statusPublicSite: "SITIO PÚBLICO",
  rankProtocolTitle: "PROTOCOLO DE PUNTUACIÓN A.C.E.",
- rankProtocolBody: "La regla escrita compara a un jugador con la puntuación media del otro equipo. Contra un equipo igualado una victoria registrada es +15 RP y una derrota −15 RP, siempre entre 8 y 23 RP por partida, y los 10 niveles y 3 divisiones se leen a partir de ese número. Esta página no valida ninguna partida, así que aquí no se aplica ningún cambio de puntuación.",
+ rankProtocolBody: "La regla escrita compara a un jugador con la puntuación media del otro equipo. Contra un equipo igualado una victoria registrada es +20 RP y una derrota −20 RP, siempre entre 10 y 30 RP por partida, y los 10 niveles y 3 divisiones se leen a partir de ese número. Esta página no valida ninguna partida, así que aquí no se aplica ningún cambio de puntuación.",
  rankProgress: "Progreso de rango",
  competitiveRating: "Puntuación competitiva",
  targetWinRate: "Porcentaje de victorias objetivo",

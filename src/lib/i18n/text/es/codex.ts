@@ -283,20 +283,20 @@ export const codex: TextBag["codex"] = {
     },
     "how-points-move": {
       title: "Cómo mueve un resultado registrado los Puntos de Rating",
-      lede: "Una victoria o derrota registrada se mide frente a la puntuación media del otro equipo. Contra un equipo igualado una victoria es +15 y una derrota −15. Las reglas completas están en la página de Rangos.",
+      lede: "Una victoria o derrota registrada se mide frente a la puntuación media del otro equipo. Contra un equipo igualado una victoria es +20 y una derrota −20. Las reglas completas están en la página de Rangos.",
       sections: [
         {
           heading: "El paso",
           paragraphs: [
-            "La puntuación esperada es la probabilidad que el motor asigna antes de la partida, basada solo en las dos puntuaciones. Con puntuaciones iguales es de la mitad, así que una victoria vale 15 Rating Points y una derrota cuesta 15.",
-            "Contra una puntuación más alta, una victoria vale más de 15 y una derrota cuesta menos. Contra una más baja, al revés. Una victoria siempre da de 8 a 20 y una derrota siempre cuesta de 8 a 23. En los niveles 7–9 las ganancias por victoria se multiplican por 0,8 y en el nivel 10 por 0,7, por eso la cima de la escalera lleva más tiempo. La puntuación se mantiene entre 100 y 3.000.",
+            "La puntuación esperada es la probabilidad que el motor asigna antes de la partida, basada solo en las dos puntuaciones. Con puntuaciones iguales es de la mitad, así que una victoria vale 20 Rating Points y una derrota cuesta 15.",
+            "Contra un rating mayor, una victoria vale más de 20 y una derrota cuesta menos. Contra uno menor, al revés. Una victoria siempre da de 10 a 30 y una derrota siempre cuesta de 10 a 30. En los niveles 7–9 victorias y derrotas se multiplican por 0,85 y en el nivel 10 por 0,75, así la cima es más estable. El rating se mantiene entre 100 y 3.000.",
             "En un resultado por equipos, cada jugador se mide frente a la puntuación media del otro equipo. Hay previsto un bono MVP de partida de 2 RP para cuando el servidor registre las bajas; hasta entonces no se aplica ningún bono personal.",
           ],
         },
         {
           heading: "Un empate",
           paragraphs: [
-            "Un empate no cambia nada: cada jugador conserva la misma puntuación. Abandonar o salir de una partida cuesta 50 RP, sea cual sea el resultado.",
+            "Un empate no cambia nada: cada jugador conserva su rating. Abandonar o salir de una partida cuesta el doble de una derrota normal, al menos 30 RP, sea cual sea el resultado.",
             "La tabla de esta página es el motor trabajando con datos de ejemplo. Esas filas no son partidas almacenadas ni son tu cuenta.",
           ],
         },

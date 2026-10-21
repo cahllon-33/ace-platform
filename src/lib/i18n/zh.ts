@@ -190,7 +190,7 @@ export const ZH: MessageBag = {
  statusTeamLayout: "100 支队伍",
  statusPublicSite: "公开网站",
  rankProtocolTitle: "A.C.E. 评分规则",
- rankProtocolBody: "书面规则将玩家与对方队伍的平均积分进行比较。对阵实力相当的队伍，记录的胜利 +15 RP，失败 −15 RP，每场始终在 8 到 23 RP 之间，10 个段位和 3 个分段都由这个数字确定。本页面不验证比赛，因此这里不会产生积分变化。",
+ rankProtocolBody: "书面规则将玩家与对方队伍的平均积分进行比较。对阵实力相当的队伍，记录的胜利 +20 RP，失败 −20 RP，每场始终在 10 到 30 RP 之间，10 个段位和 3 个分段都由这个数字确定。本页面不验证比赛，因此这里不会产生积分变化。",
  rankProgress: "段位进度",
  competitiveRating: "竞技评分",
  targetWinRate: "目标胜率",

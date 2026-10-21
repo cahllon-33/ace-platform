@@ -176,7 +176,7 @@ export const KO: MessageBag = {
  statusTeamLayout: "100팀 참가",
  statusPublicSite: "공개 사이트",
  rankProtocolTitle: "A.C.E. 레이팅 프로토콜",
- rankProtocolBody: "규정은 플레이어를 상대 팀의 평균 레이팅과 비교합니다. 동급 팀 상대로 기록된 승리는 +15 RP, 패배는 −15 RP이며 항상 경기당 8~23 RP 범위이고, 10개 티어와 3개 디비전은 이 수치로 결정됩니다. 이 페이지는 경기를 검증하지 않으므로 여기서 레이팅이 변하지 않습니다.",
+ rankProtocolBody: "규정은 플레이어를 상대 팀의 평균 레이팅과 비교합니다. 동급 팀 상대로 기록된 승리는 +20 RP, 패배는 −20 RP이며 항상 경기당 10~30 RP 범위이고, 10개 티어와 3개 디비전은 이 수치로 결정됩니다. 이 페이지는 경기를 검증하지 않으므로 여기서 레이팅이 변하지 않습니다.",
  rankProgress: "랭크 진행도",
  competitiveRating: "경쟁 레이팅",
  targetWinRate: "목표 승률",

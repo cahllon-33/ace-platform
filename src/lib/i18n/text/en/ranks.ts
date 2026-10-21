@@ -43,7 +43,7 @@
     "colWin": "Win",
     "colLoss": "Loss",
     "examplesTitle": "Worked examples",
-    "ex1": "From {start} to {elite} RP ({top}) against equal teams, with wins only: {w1} wins at +15 through tier 6, then {w2} wins at +{win7} through tiers 7–9. That is {total} wins in total.",
+    "ex1": "From {start} to {elite} RP ({top}) against equal teams, with wins only: {w1} wins at +{win} through tier 6, then {w2} wins at +{win7} through tiers 7–9. That is {total} wins in total.",
     "ex2": "Every loss along the way adds more wins. In tiers 7–9 a win gives +{win7} but a loss still costs −{loss}, so you need to win at least {breakEven}% of equal matches to keep climbing.",
     "ex3": "Against a team averaging 200 RP more than you, a win gives +{strongWin} and a loss costs −{strongLoss}.",
     "ex4": "Against a team averaging 200 RP less than you, a win gives +{weakWin} and a loss costs −{weakLoss}.",

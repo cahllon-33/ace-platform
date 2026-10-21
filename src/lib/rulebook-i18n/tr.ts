@@ -119,10 +119,10 @@ export const RB_TR: RulebookText = {
     ],
     [
       "Rating Points (RP), yalnızca doğrulanmış maç sonuçlarıyla, Rütbeler sayfasında yayımlanan A.C.E Rating Points kurallarına göre değişir. Her yeni hesap 3. kademede (Vanguard) 1.200 RP ile başlar.",
-      "Aynı ortalama puana sahip bir takıma karşı galibiyet +15 RP kazandırır, mağlubiyet −15 RP kaybettirir. Miktar diğer takımın ortalama puanına göre ayarlanır ve her zaman maç başına 8 ile 23 RP arasında kalır. Beraberlik hiçbir şeyi değiştirmez.",
-      "Galibiyet kazançları 7–9. kademelerde 0,8, 10. kademede 0,7 ile çarpılır. Mağlubiyetler azaltılmaz. Puanlar 100 ile 3.000 RP arasında kalır ve hareketsizlik nedeniyle düşmez.",
+      "Aynı ortalama puana sahip bir takıma karşı galibiyet +20 RP kazandırır, mağlubiyet −20 RP kaybettirir. Miktar diğer takımın ortalama puanına göre ayarlanır ve her zaman maç başına 10 ile 30 RP arasında kalır. Beraberlik hiçbir şeyi değiştirmez.",
+      "Galibiyetler ve mağlubiyetler 7–9. kademelerde 0,85, 10. kademede 0,75 ile çarpılır; böylece %50'lik bir kayıt her seviyede rütbeyi korur. Puan 100 ile 3.000 RP arasında kalır ve aktif olmadığında düşmez.",
       "Bir oyuncunun ilk 10 maçı yerleştirme maçıdır. Yerleştirme sırasında puan 5. kademenin üstüne çıkamaz.",
-      "Bir maçı bırakan veya maçtan ayrılan oyuncu, sonuç ne olursa olsun 50 RP kaybeder ve maç MVP bonusunu alamaz.",
+      "Maçı terk eden veya maçtan ayrılan oyuncu, sonuç ne olursa olsun normal mağlubiyetin iki katını, en az 30 RP kaybeder ve MVP bonusunu alamaz.",
       "Maçın MVP'si (en çok öldürme; eşitlikte daha fazla hasar, sonra daha az ölüm) maç başına sınırlar içinde, galibiyette 2 RP daha fazla kazanır ve mağlubiyette 2 RP daha az kaybeder. Bu bonus yalnızca sunucu öldürmeleri kaydettiğinde geçerlidir. Hiçbir ücretli plan Rating Points'i değiştirmez."
     ],
     [

@@ -45,7 +45,7 @@ export const ranks: TextBag["ranks"] = {
     "colWin": "Galibiyet",
     "colLoss": "Mağlubiyet",
     "examplesTitle": "Hesaplanmış örnekler",
-    "ex1": "Denk takımlara karşı yalnızca galibiyetlerle {start} → {elite} RP ({top}): 6. kademeye kadar +15'ten {w1} galibiyet, ardından 7–9. kademelerde +{win7}'den {w2} galibiyet. Toplam {total} galibiyet.",
+    "ex1": "Denk takımlara karşı yalnızca galibiyetlerle {start} → {elite} RP ({top}): 6. kademeye kadar +{win}'ten {w1} galibiyet, ardından 7–9. kademelerde +{win7}'den {w2} galibiyet. Toplam {total} galibiyet.",
     "ex2": "Yoldaki her mağlubiyet ek galibiyet gerektirir. 7–9. kademelerde galibiyet +{win7} kazandırır ama mağlubiyet hâlâ −{loss} kaybettirir; yükselmeye devam etmek için denk maçların en az %{breakEven}'ini kazanman gerekir.",
     "ex3": "Ortalaması senden 200 RP yüksek bir takıma karşı galibiyet +{strongWin} kazandırır, mağlubiyet −{strongLoss} kaybettirir.",
     "ex4": "Ortalaması senden 200 RP düşük bir takıma karşı galibiyet +{weakWin} kazandırır, mağlubiyet −{weakLoss} kaybettirir.",

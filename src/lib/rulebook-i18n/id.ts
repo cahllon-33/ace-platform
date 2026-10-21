@@ -119,10 +119,10 @@ export const RB_ID: RulebookText = {
     ],
     [
       "Rating Points (RP) hanya berubah melalui hasil pertandingan terverifikasi, sesuai aturan Rating Points A.C.E yang dipublikasikan di halaman Rank. Setiap akun baru mulai dengan 1.200 RP di tingkat 3 (Vanguard).",
-      "Melawan tim dengan rata-rata rating yang sama, kemenangan memberi +15 RP dan kekalahan mengurangi −15 RP. Jumlahnya disesuaikan dengan rata-rata rating tim lawan dan selalu berada antara 8 dan 23 RP per pertandingan. Seri tidak mengubah apa pun.",
-      "Perolehan kemenangan dikalikan 0,8 di tingkat 7–9 dan 0,7 di tingkat 10. Kekalahan tidak dikurangi. Rating tetap antara 100 dan 3.000 RP dan tidak turun karena tidak aktif.",
+      "Melawan tim dengan rata-rata rating yang sama, kemenangan memberi +20 RP dan kekalahan mengurangi −20 RP. Jumlahnya disesuaikan dengan rata-rata rating tim lawan dan selalu berada antara 10 dan 30 RP per pertandingan. Seri tidak mengubah apa pun.",
+      "Kemenangan dan kekalahan sama-sama dikalikan 0,85 di tingkat 7–9 dan 0,75 di tingkat 10, jadi rekor 50% mempertahankan peringkat di setiap tingkat. Rating tetap di antara 100 dan 3.000 RP dan tidak turun saat tidak aktif.",
       "10 pertandingan pertama seorang pemain adalah pertandingan penempatan. Selama penempatan rating tidak bisa naik di atas tingkat 5.",
-      "Pemain yang meninggalkan atau keluar dari pertandingan kehilangan 50 RP apa pun hasilnya, dan tidak dapat menerima bonus MVP pertandingan.",
+      "Pemain yang meninggalkan atau keluar dari pertandingan kehilangan dua kali kekalahan normal, minimal 30 RP, apa pun hasilnya, dan tidak bisa menerima bonus MVP.",
       "MVP pertandingan (kill terbanyak; jika seri, damage lebih banyak lalu kematian lebih sedikit) mendapat 2 RP lebih banyak saat menang dan kehilangan 2 RP lebih sedikit saat kalah, dalam batas per pertandingan. Bonus ini baru berlaku setelah server mencatat kill. Tidak ada paket berbayar yang mengubah Rating Points."
     ],
     [

@@ -320,7 +320,7 @@ export const UI_ID: Ui = {
       "step2t": "Kalibrasi",
       "step2b": "Anda mulai di tingkat 3 dengan 1.200 RP. Setiap pertandingan tercatat mengubah RP sesuai aturan yang dipublikasikan.",
       "step3t": "Naik",
-      "step3b": "Kemenangan memberi hingga +20 RP (+22 untuk pemain terbaik); kekalahan hingga −23. Peringkat selalu mengikuti RP.",
+      "step3b": "Kemenangan memberi hingga +30 RP (+32 untuk pemain terbaik); kekalahan hingga −23. Peringkat selalu mengikuti RP.",
       "ranksTitle": "Sepuluh peringkat. Satu tabel publik.",
       "ranksBody": "Warna lencana tetap per tingkat, dan peringkat Anda selalu dihitung dari RP yang tersimpan.",
       "ranksCta": "Lihat semua peringkat",
@@ -481,6 +481,30 @@ export const UI_ID: Ui = {
       "noSchedule": "Belum ada turnamen terjadwal.",
       "onAir": "Tayang",
       "watch": "Tonton langsung"
+    }
+  },
+  "r41c": {
+    "v5": {
+      "vTier": "Kemenangan dan kekalahan sama-sama dikalikan {t7} di tingkat 7–9 dan {t10} di tingkat 10 ({top}), jadi rekor 50% mempertahankan peringkatmu di setiap tingkat.",
+      "vPlacement": "{n} pertandingan pertamamu bergerak {pk}× lebih cepat agar kamu cepat menemukan levelmu. Selama penempatan, rating-mu tidak bisa naik melewati tingkat {maxTier} ({cap} RP).",
+      "vAbandon": "Dihitung sebagai kekalahan ganda, minimal −{abandon} RP, apa pun hasilnya, dan tanpa bonus MVP.",
+      "ex2": "Setiap kekalahan di perjalanan menambah kemenangan yang dibutuhkan. Di tingkat 7–9 kemenangan memberi +{win7} dan kekalahan mengurangi −{loss7}, jadi menang lebih dari {breakEven}% pertandingan setara membuatmu terus naik."
+    },
+    "pr": {
+      "kicker": "Prestise",
+      "title": "Aturan lencana",
+      "lede": "Cara mendapatkan setiap lencana A.C.E. Lencana hanya kosmetik: tidak pernah mengubah matchmaking, RP, atau aturan apa pun.",
+      "ranks": "Lencana peringkat (tingkat 1–10) mengikuti RP-mu. Semua orang melihat peringkat yang sama dan warna tingkat tetap yang sama.",
+      "prestige": "Lencana prestise adalah lima target jangka panjang di atas {elite} RP: satu setiap 200 RP dari 2.000 sampai 2.800.",
+      "free": "Free: lencanamu tetap A.C.E. Legend dan level prestise ditampilkan sebagai pencapaian teks. RP-mu tidak pernah dibatasi.",
+      "plus": "Plus: set prestise platinum.",
+      "premium": "Premium: set prestise emas beranimasi.",
+      "lose": "Jika turun di bawah ambang prestise, lencana ikut turun bersama RP; capai lagi dan lencana kembali.",
+      "level": "Prestise {n} · {name}",
+      "from": "Mulai {rp} RP",
+      "milestone": "Prestise {n} tercapai",
+      "perk": "Set lencana prestise (2.000–3.000 RP), diraih dengan RP",
+      "open": "Aturan lencana"
     }
   }
 };

@@ -281,20 +281,20 @@
     },
     "how-points-move": {
       title: "How a recorded result moves Rating Points",
-      lede: "A recorded win or loss is measured against the other team's average rating. Against an equal team a win is +15 and a loss is −15. The full rules are on the Ranks page.",
+      lede: "A recorded win or loss is measured against the other team's average rating. Against an equal team a win is +20 and a loss is −20. The full rules are on the Ranks page.",
       sections: [
         {
           heading: "The step",
           paragraphs: [
-            "Expected score is the chance the engine assigns before the match, based only on the two ratings. Against an equal rating that chance is one half, so a win is worth 15 Rating Points and a loss costs 15.",
-            "Against a higher rating, a win is worth more than 15 and a loss costs less. Against a lower rating, the opposite. A win always gives 8 to 20 and a loss always costs 8 to 23. In tiers 7–9 win gains are multiplied by 0.8 and in tier 10 by 0.7, so the top of the ladder takes longer. The rating is held between 100 and 3,000.",
+            "Expected score is the chance the engine assigns before the match, based only on the two ratings. Against an equal rating that chance is one half, so a win is worth 20 Rating Points and a loss costs 15.",
+            "Against a higher rating, a win is worth more than 20 and a loss costs less. Against a lower rating, the opposite. A win always gives 10 to 30 and a loss always costs 10 to 30. In tiers 7–9 wins and losses are both multiplied by 0.85 and in tier 10 by 0.75, so the top moves more steadily. The rating is held between 100 and 3,000.",
             "On a team result, every player is measured against the other team's average rating. A match MVP bonus of 2 RP is planned for when the server records kills; until then no personal bonus is applied.",
           ],
         },
         {
           heading: "A draw",
           paragraphs: [
-            "A draw changes nothing: every player keeps the same rating. Abandoning or leaving a match costs 50 RP, whatever the result.",
+            "A draw changes nothing: every player keeps the same rating. Abandoning or leaving a match costs twice the normal loss, at least 30 RP, whatever the result.",
             "The table on this page is the engine working on example inputs. Those rows are not stored matches, and they are not your account.",
           ],
         },
