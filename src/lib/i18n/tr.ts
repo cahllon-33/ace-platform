@@ -120,7 +120,7 @@ export const TR: MessageBag = {
  "A.C.E. Gizlilik Politikasındaki veri minimizasyonu saklama parametrelerini açıkça kabul ediyorum.",
  contactSend: "GÜVENLİ TELEMETRİ İLETİSİ GÖNDER",
  contactCorporate:
- "A.C.E | Güvenli e-posta geçidi: support@ace-platform.gg",
+ "A.C.E | Güvenli e-posta geçidi: ace.platform.official@gmail.com",
  contactModalTitle: "Çevrimiçi iletişim formu · yakında",
  contactModalBody:
  "Bu formdaki mesajlar henüz iletilmiyor. Form, destek ekibimizle birlikte açılacak. A.C.E asla Steam şifreni istemez.",

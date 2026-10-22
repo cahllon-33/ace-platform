@@ -120,7 +120,7 @@ export const EN = {
  "I explicitly consent to the data minimization storage parameters under the A.C.E Privacy Policy.",
  contactSend: "SEND SECURE TELEMETRY MESSAGE",
  contactCorporate:
- "A.C.E | Secure Email Gateway: support@ace-platform.gg",
+ "A.C.E | Secure Email Gateway: ace.platform.official@gmail.com",
  contactModalTitle: "Online contact form · coming soon",
  contactModalBody:
  "Messages from this form are not delivered yet. The form opens together with our support desk. A.C.E never asks for your Steam password.",

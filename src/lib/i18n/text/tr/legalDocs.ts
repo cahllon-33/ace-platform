@@ -3,13 +3,13 @@ import type { TextBag } from "../types";
 export const legalDocs: TextBag["legalDocs"] = {
   r14: {
     "effective": "Yürürlük tarihi: {date}",
-    "contact": "İletişim: support@ace-platform.gg",
+    "contact": "İletişim: ace.platform.official@gmail.com",
     "definitionsTitle": "Tanımlar",
     "definitions": "Bu Koşullarda “A.C.E” ve “biz”, A.C.E anlamına gelir. “Site”, ace-platform.gg anlamına gelir. “Hesap”, Steam girişiyle oluşturulan A.C.E profilidir. “Plan”, Free, Plus veya Premium anlamına gelir. “Kural Kitabı”, /rules adresindeki Rekabet Kural Kitabıdır. “Admin”, bir etkinlikte Kural Kitabını uygulayan personeldir.",
     "suspensionTitle": "Hesap kısıtlamaları ve askıya alma",
     "suspension": "Bu Koşulları veya Kural Kitabını ihlal eden bir Hesabı, örneğin hile, hesap paylaşımı, yasak atlatma, taciz veya dolandırıcılık nedeniyle uyarabilir, kısıtlayabilir, askıya alabilir veya kapatabiliriz. Ücretli bir plan bir Hesabı kısıtlamadan asla korumaz.",
     "disputesTitle": "Kural kararları ve itirazlar",
-    "disputes": "Maç anlaşmazlıkları ve cezalar Kural Kitabının 15. ve 16. bölümlerine tabidir. Hesabınla ilgili bir karara, SteamID'n ve kanıtlarınla support@ace-platform.gg adresine e-posta göndererek itiraz edebilirsin. İtirazı ilk kararı vermeyen bir personel inceler ve sonucu gerekçesiyle bildirir. Bu, ülkenin yasalarına göre sahip olduğun hakları sınırlamaz.",
+    "disputes": "Maç anlaşmazlıkları ve cezalar Kural Kitabının 15. ve 16. bölümlerine tabidir. Hesabınla ilgili bir karara, SteamID'n ve kanıtlarınla ace.platform.official@gmail.com adresine e-posta göndererek itiraz edebilirsin. İtirazı ilk kararı vermeyen bir personel inceler ve sonucu gerekçesiyle bildirir. Bu, ülkenin yasalarına göre sahip olduğun hakları sınırlamaz.",
     "changesTitle": "Bu Koşullardaki değişiklikler",
     "changes": "Bu Koşulları güncelleyebiliriz. Her yeni sürüm bu sayfada yeni bir yürürlük tarihiyle yayımlanır. Önemli bir değişiklik yayımlandıktan 7 gün sonra yürürlüğe girer ve başlamış bir ödeme dönemine asla uygulanmaz.",
     "languageTitle": "Dil",
@@ -73,7 +73,7 @@ export const legalDocs: TextBag["legalDocs"] = {
       "contact": {
         "title": "8. İletişim",
         "paragraphs": [
-          "support@ace-platform.gg — A.C.E"
+          "ace.platform.official@gmail.com — A.C.E"
         ]
       }
     }
@@ -139,7 +139,7 @@ export const legalDocs: TextBag["legalDocs"] = {
     },
     "controller": {
       "title": "Veri sorumlusu",
-      "body": "A.C.E İletişim: support@ace-platform.gg."
+      "body": "A.C.E İletişim: ace.platform.official@gmail.com."
     }
   },
   "cookiePolicy": {

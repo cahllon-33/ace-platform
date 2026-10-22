@@ -120,7 +120,7 @@ export const HI: MessageBag = {
  "मुझे A.C.E गोपनीयता नीति के आँकड़ा-न्यूनीकरण भंडारण मानकों पर स्पष्ट सहमति है।",
  contactSend: "सुरक्षित दूरमाप संदेश भेजें",
  contactCorporate:
- "A.C.E | सुरक्षित ईमेल द्वार: support@ace-platform.gg",
+ "A.C.E | सुरक्षित ईमेल द्वार: ace.platform.official@gmail.com",
  contactModalTitle: "ऑनलाइन संपर्क फ़ॉर्म · जल्द आ रहा है",
  contactModalBody:
  "इस फ़ॉर्म से भेजे गए संदेश अभी पहुँचाए नहीं जाते। फ़ॉर्म हमारी सहायता सेवा के साथ शुरू होगा। A.C.E कभी आपका Steam पासवर्ड नहीं माँगता।",

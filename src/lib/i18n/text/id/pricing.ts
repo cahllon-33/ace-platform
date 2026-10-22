@@ -5,7 +5,7 @@ export const pricing: TextBag["pricing"] = {
     "kicker": "MATRIKS FITUR",
     "title": "Perbandingan keanggotaan",
     "note": "Centang emas: termasuk. Garis: tidak termasuk. Segera hadir: bagian dari paket tetapi belum dirilis. Tidak ada paket yang membeli rating, matchmaking, atau prioritas antrean.",
-    "checkout": "Checkout belum ada, jadi hari ini setiap akun berada di Free.",
+    "checkout": "Checkout berjalan melalui Paddle, Merchant of Record kami. Paketmu berubah begitu Paddle mengonfirmasi pembayaran.",
     "feature": "Fitur",
     "included": "Termasuk",
     "notIncluded": "Tidak termasuk",
@@ -55,7 +55,7 @@ export const pricing: TextBag["pricing"] = {
       "headshot": "% headshot",
       "rounds": "Performa per ronde",
       "noData": "Tidak ada data",
-      "locked": "Analisis pertandingan lanjutan adalah bagian dari A.C.E Premium ($7/bulan). Segera hadir: checkout belum ada, jadi hari ini tidak ada akun Premium.",
+      "locked": "Analisis pertandingan lanjutan termasuk dalam A.C.E Premium ($7/bulan). Berlangganan di halaman harga melalui checkout Paddle.",
       "premiumNote": "Paketmu Premium. Analisismu akan muncul di sini setelah parsing demo tersedia.",
       "signIn": "Masuk dengan Steam untuk memeriksa akses analisismu.",
       "plansLink": "Lihat paket"
@@ -65,7 +65,7 @@ export const pricing: TextBag["pricing"] = {
       "metaDescription": "Apa yang termasuk dalam A.C.E Plus dan Premium, apa yang tidak termasuk dalam paket mana pun, dan cara pembatalan.",
       "kicker": "ACE-LEGAL / KETENTUAN PREMIUM",
       "title": "Ketentuan A.C.E Premium",
-      "intro": "Ketentuan ini menjelaskan apa saja yang termasuk dalam paket berbayar. Ketentuan ini merupakan bagian dari Ketentuan Layanan di /terms. Pembayaran belum tersedia, jadi hari ini tidak ada yang bisa dibeli atau ditagih.",
+      "intro": "Ketentuan ini menjelaskan isi paket berbayar. Ketentuan ini bagian dari Ketentuan Layanan di /terms. Pembayaran diproses oleh Paddle sebagai Merchant of Record.",
       "pricesTitle": "1. Paket, harga, dan pembatalan",
       "prices": "Free {free}. Plus {plus} per bulan. Premium {premium} per bulan. Paket diperpanjang setiap bulan. Kamu dapat membatalkan kapan saja tanpa denda di pengaturan dasbor dan tetap memiliki akses hingga akhir bulan yang sudah dibayar. Bulan parsial tidak dikembalikan kecuali hukum negaramu mewajibkannya.",
       "plusTitle": "2. Isi Plus",
@@ -143,8 +143,8 @@ export const pricing: TextBag["pricing"] = {
     "chooseAria": "Pilih {plan} {price} per bulan"
   },
   "billing": {
-    "kicker": "MATRIKS LINIMASA PENAGIHAN",
-    "title": "Cara penagihan bekerja setelah tersedia",
+    "kicker": "PENAGIHAN",
+    "title": "Cara kerja penagihan",
     "body": "Plus tepat {plus}/bln. Premium tepat {premium}/bln.",
     "display": {
       "label": "01 · TAMPILAN",
@@ -152,16 +152,17 @@ export const pricing: TextBag["pricing"] = {
     },
     "rolling": {
       "label": "02 · SIKLUS BERGULIR",
-      "body": "Saat penagihan tersedia, tagihan diperpanjang dalam siklus bulanan bergulir. Penggunaan sebagian bulan tidak dapat dikembalikan. Pembatalan menghentikan siklus berikutnya dan tidak menghapus periode prabayar saat ini."
+      "body": "Paddle menagih paketmu setiap bulan sampai kamu membatalkan. Batalkan kapan saja di Kelola langganan; paket tetap aktif sampai akhir periode yang dibayar. Refund mengikuti Kebijakan Refund (14 hari)."
     },
     "today": {
-      "label": "03 · HARI INI"
+      "label": "03 · CHECKOUT",
+      "body": "Bayar di checkout aman Paddle dari kartu paket. Jika tombol menampilkan Segera hadir, pembayaran belum diaktifkan."
     }
   },
   "compare": {
     "kicker": "Yang dapat dijanjikan A.C.E hari ini",
     "title": "Perbandingan keanggotaan",
-    "note": "Setiap baris mencerminkan situs hari ini. Pembayaran segera hadir, dan paket berbayar tidak pernah membuka antrean atau membeli keunggulan.",
+    "note": "Setiap baris mencerminkan situs hari ini. Paket berbayar dibeli melalui checkout Paddle dan tidak pernah membuka antrean atau membeli keunggulan.",
     "caption": "Free, Plus, dan Premium dibandingkan berdasarkan apa yang dilakukan situs hari ini",
     "columns": {
       "free": "Free",

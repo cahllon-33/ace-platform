@@ -5,7 +5,7 @@ export const pricing: TextBag["pricing"] = {
     "kicker": "FUNKTIONSMATRIS",
     "title": "Jämförelse av medlemskap",
     "note": "Guldbock: ingår. Streck: ingår inte. Kommer snart: del av planen men inte släppt än. Ingen plan köper rating, matchmaking eller köprioritet.",
-    "checkout": "Betalning finns inte än, så i dag är alla konton på Free.",
+    "checkout": "Betalningen sker via Paddle, vår Merchant of Record. Din plan ändras så snart Paddle bekräftar betalningen.",
     "feature": "Funktion",
     "included": "Ingår",
     "notIncluded": "Ingår inte",
@@ -55,7 +55,7 @@ export const pricing: TextBag["pricing"] = {
       "headshot": "Headshot-%",
       "rounds": "Prestation per rond",
       "noData": "Inga data",
-      "locked": "Utökad matchanalys ingår i A.C.E Premium (7 $/mån). Kommer snart: kassan finns inte än, så inget konto är Premium i dag.",
+      "locked": "Utökad matchanalys ingår i A.C.E Premium (7 $/mån). Prenumerera på prissidan via Paddles kassa.",
       "premiumNote": "Din plan är Premium. Din analys visas här när demotolkning finns.",
       "signIn": "Logga in med Steam för att kontrollera din analysåtkomst.",
       "plansLink": "Se planer"
@@ -65,7 +65,7 @@ export const pricing: TextBag["pricing"] = {
       "metaDescription": "Vad A.C.E Plus och Premium innehåller, vad ingen plan innehåller och hur uppsägning fungerar.",
       "kicker": "ACE-LEGAL / PREMIUMVILLKOR",
       "title": "A.C.E Premium-villkor",
-      "intro": "Dessa villkor beskriver vad de betalda planerna innehåller. De ingår i Användarvillkoren på /terms. Betalning finns inte ännu, så i dag kan inget köpas eller debiteras.",
+      "intro": "Dessa villkor beskriver vad de betalda planerna innehåller. De ingår i användarvillkoren på /terms. Betalningar hanteras av Paddle som Merchant of Record.",
       "pricesTitle": "1. Planer, priser och uppsägning",
       "prices": "Free {free}. Plus {plus} per månad. Premium {premium} per månad. Planer förnyas månadsvis. Du kan säga upp när som helst utan avgift i panelens inställningar och behålla åtkomsten till slutet av den betalda månaden. En påbörjad månad återbetalas inte om inte lagen i ditt land kräver det.",
       "plusTitle": "2. Vad Plus innehåller",
@@ -143,8 +143,8 @@ export const pricing: TextBag["pricing"] = {
     "chooseAria": "Välj {plan} för {price} per månad"
   },
   "billing": {
-    "kicker": "BETALNINGSTIDSLINJE",
-    "title": "Hur betalningen fungerar när den finns",
+    "kicker": "FAKTURERING",
+    "title": "Så fungerar faktureringen",
     "body": "Plus kostar exakt {plus}/mån. Premium kostar exakt {premium}/mån.",
     "display": {
       "label": "01 · VISNING",
@@ -152,16 +152,17 @@ export const pricing: TextBag["pricing"] = {
     },
     "rolling": {
       "label": "02 · LÖPANDE CYKEL",
-      "body": "När betalning finns förnyas avgiften månadsvis. Delvis använd månad återbetalas inte. Uppsägning stoppar nästa cykel och tar inte bort den redan betalda perioden."
+      "body": "Paddle debiterar din plan varje månad tills du säger upp den. Säg upp när du vill under Hantera prenumeration; planen gäller till slutet av den betalda perioden. Återbetalning enligt återbetalningspolicyn (14 dagar)."
     },
     "today": {
-      "label": "03 · I DAG"
+      "label": "03 · KASSA",
+      "body": "Betala i Paddles säkra kassa från plankorten. Om en knapp visar Kommer snart är betalningar inte aktiverade än."
     }
   },
   "compare": {
     "kicker": "Vad A.C.E kan lova i dag",
     "title": "Jämförelse av medlemskap",
-    "note": "Varje rad speglar webbplatsen i dag. Betalning kommer snart, och en betald plan öppnar aldrig en kö eller köper en fördel.",
+    "note": "Varje rad visar webbplatsen i dag. Betalda planer köps via Paddles kassa och öppnar aldrig en kö eller köper en fördel.",
     "caption": "Free, Plus och Premium jämförda utifrån vad webbplatsen gör i dag",
     "columns": {
       "free": "Free",

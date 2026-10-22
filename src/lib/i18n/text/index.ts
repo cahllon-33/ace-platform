@@ -1,3 +1,4 @@
+import { withContact } from "@/lib/contact";
 import { SITE_LOCALES } from "@/lib/languages";
 import { TEXT_AR } from "./ar";
 import { TEXT_ARZ } from "./arz";
@@ -65,8 +66,12 @@ for (const locale of SITE_LOCALES) {
   }
 }
 
+const CONTACTED = new Map<string, TextBag>();
 export function textFor(localeId: string): TextBag {
-  return TEXTS[localeId] ?? TEXT_EN;
+  const id = TEXTS[localeId] ? localeId : "en";
+  let bag = CONTACTED.get(id);
+  if (!bag) { bag = withContact(TEXTS[id] ?? TEXT_EN); CONTACTED.set(id, bag); }
+  return bag;
 }
 
 export function clientText(bag: TextBag): ClientText {

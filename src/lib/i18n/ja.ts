@@ -118,7 +118,7 @@ export const JA: MessageBag = {
  contactConsent: "A.C.E プライバシーポリシーのデータ最小化の保存条件に、明示的に同意する。",
  contactSend: "安全な遠隔計測メッセージを送る",
  contactCorporate:
- "A.C.E | 安全メール関門：support@ace-platform.gg",
+ "A.C.E | 安全メール関門：ace.platform.official@gmail.com",
  contactModalTitle: "オンラインお問い合わせフォーム · まもなく開始",
  contactModalBody:
  "このフォームのメッセージはまだ配信されません。フォームはサポート窓口と同時に開始します。A.C.E が Steam のパスワードを求めることは決してありません。",

@@ -3,13 +3,13 @@ import type { TextBag } from "../types";
 export const legalDocs: TextBag["legalDocs"] = {
   r14: {
     "effective": "Gäller från: {date}",
-    "contact": "Kontakt: support@ace-platform.gg",
+    "contact": "Kontakt: ace.platform.official@gmail.com",
     "definitionsTitle": "Definitioner",
     "definitions": "I dessa Villkor avser ”A.C.E” och ”vi” A.C.E ”Webbplatsen” avser ace-platform.gg. ”Konto” avser A.C.E-profilen som skapas via Steam-inloggning. ”Plan” avser Free, Plus eller Premium. ”Regelboken” avser tävlingsreglerna på /rules. ”Admin” avser en personal som tillämpar Regelboken vid ett evenemang.",
     "suspensionTitle": "Kontobegränsningar och avstängning",
     "suspension": "Vi kan varna, begränsa, stänga av eller avsluta ett Konto som bryter mot dessa Villkor eller Regelboken, till exempel för fusk, kontodelning, kringgående av avstängning, trakasserier eller bedrägeri. En betald plan skyddar aldrig ett Konto från en begränsning.",
     "disputesTitle": "Regelbeslut och överklaganden",
-    "disputes": "Matchtvister och straff följer avsnitt 15 och 16 i Regelboken. Du kan överklaga ett beslut om ditt Konto genom att mejla support@ace-platform.gg med ditt SteamID och dina bevis. En personal som inte fattade det första beslutet granskar överklagandet och meddelar utfallet och skälet. Detta begränsar inte någon rättighet du har enligt lagen i ditt land.",
+    "disputes": "Matchtvister och straff följer avsnitt 15 och 16 i Regelboken. Du kan överklaga ett beslut om ditt Konto genom att mejla ace.platform.official@gmail.com med ditt SteamID och dina bevis. En personal som inte fattade det första beslutet granskar överklagandet och meddelar utfallet och skälet. Detta begränsar inte någon rättighet du har enligt lagen i ditt land.",
     "changesTitle": "Ändringar av dessa Villkor",
     "changes": "Vi kan uppdatera dessa Villkor. Varje ny version publiceras på denna sida med ett nytt ikraftträdandedatum. En väsentlig ändring gäller 7 dagar efter publicering och tillämpas aldrig på en betalningsperiod som redan har börjat.",
     "languageTitle": "Språk",
@@ -73,7 +73,7 @@ export const legalDocs: TextBag["legalDocs"] = {
       "contact": {
         "title": "8. Kontakt",
         "paragraphs": [
-          "support@ace-platform.gg — A.C.E"
+          "ace.platform.official@gmail.com — A.C.E"
         ]
       }
     }
@@ -139,7 +139,7 @@ export const legalDocs: TextBag["legalDocs"] = {
     },
     "controller": {
       "title": "Personuppgiftsansvarig",
-      "body": "A.C.E. Kontakt: support@ace-platform.gg."
+      "body": "A.C.E. Kontakt: ace.platform.official@gmail.com."
     }
   },
   "cookiePolicy": {

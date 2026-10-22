@@ -5,7 +5,7 @@ export const pricing: TextBag["pricing"] = {
     "kicker": "ÖZELLİK MATRİSİ",
     "title": "Üyelik karşılaştırması",
     "note": "Altın onay: dahil. Çizgi: dahil değil. Yakında: planın parçası ama henüz yayınlanmadı. Hiçbir plan reyting, eşleştirme veya sıra önceliği satın almaz.",
-    "checkout": "Ödeme sistemi henüz yok; bu yüzden bugün her hesap Free'de.",
+    "checkout": "Ödeme, Merchant of Record'umuz Paddle üzerinden yapılır. Paddle ödemeyi onaylar onaylamaz planın değişir.",
     "feature": "Özellik",
     "included": "Dahil",
     "notIncluded": "Dahil değil",
@@ -55,7 +55,7 @@ export const pricing: TextBag["pricing"] = {
       "headshot": "Headshot %",
       "rounds": "Raunt bazında performans",
       "noData": "Veri yok",
-      "locked": "Gelişmiş maç analizi A.C.E Premium'un (ayda 7 $) parçasıdır. Yakında: ödeme henüz yok, bu yüzden bugün hiçbir hesap Premium değil.",
+      "locked": "Gelişmiş maç analizi A.C.E Premium'un (ayda 7 $) parçasıdır. Fiyatlar sayfasından Paddle ödemesiyle abone ol.",
       "premiumNote": "Planın Premium. Analizin, demo ayrıştırma var olduğunda burada görünecek.",
       "signIn": "Analiz erişimini kontrol etmek için Steam ile giriş yap.",
       "plansLink": "Planları gör"
@@ -65,7 +65,7 @@ export const pricing: TextBag["pricing"] = {
       "metaDescription": "A.C.E Plus ve Premium'un neleri içerdiği, hiçbir planın neleri içermediği ve iptalin nasıl işlediği.",
       "kicker": "ACE-LEGAL / PREMIUM KOŞULLARI",
       "title": "A.C.E Premium koşulları",
-      "intro": "Bu koşullar ücretli Planların neleri içerdiğini açıklar. /terms adresindeki Hizmet Koşullarının parçasıdır. Ödeme henüz yok, bu yüzden bugün hiçbir şey satın alınamaz veya ücretlendirilemez.",
+      "intro": "Bu şartlar ücretli planların neleri kapsadığını açıklar ve /terms adresindeki Hizmet Şartları'nın parçasıdır. Ödemeler Merchant of Record olarak Paddle tarafından işlenir.",
       "pricesTitle": "1. Planlar, fiyatlar ve iptal",
       "prices": "Free {free}. Plus aylık {plus}. Premium aylık {premium}. Planlar aylık yenilenir. İstediğin zaman panel ayarlarından cezasız iptal edebilir ve ödenen ayın sonuna kadar erişimi koruyabilirsin. Kısmi ay, ülkenin yasası gerektirmedikçe iade edilmez.",
       "plusTitle": "2. Plus neleri içerir",
@@ -143,8 +143,8 @@ export const pricing: TextBag["pricing"] = {
     "chooseAria": "{plan} planını aylık {price} ile seç"
   },
   "billing": {
-    "kicker": "ÖDEME ZAMAN ÇİZELGESİ",
-    "title": "Ödeme devreye girdiğinde nasıl işleyecek",
+    "kicker": "FATURALANDIRMA",
+    "title": "Faturalandırma nasıl işler",
     "body": "Plus aylık tam {plus}. Premium aylık tam {premium}.",
     "display": {
       "label": "01 · GÖSTERİM",
@@ -152,16 +152,17 @@ export const pricing: TextBag["pricing"] = {
     },
     "rolling": {
       "label": "02 · AYLIK DÖNGÜ",
-      "body": "Ödeme devreye girdiğinde ücretler aylık döngüyle yenilenir. Kısmen kullanılan ay iade edilmez. İptal bir sonraki döngüyü durdurur ve mevcut ön ödemeli dönemi silmez."
+      "body": "Paddle, iptal edene kadar planını her ay ücretlendirir. Aboneliği yönet bölümünden istediğin zaman iptal edebilirsin; plan ödenen dönemin sonuna kadar sürer. İadeler İade Politikası'na (14 gün) göre yapılır."
     },
     "today": {
-      "label": "03 · BUGÜN"
+      "label": "03 · ÖDEME",
+      "body": "Plan kartlarından Paddle'ın güvenli ödeme sayfasında öde. Bir düğmede Yakında yazıyorsa ödemeler henüz açılmamıştır."
     }
   },
   "compare": {
     "kicker": "A.C.E'nin bugün vaat edebildikleri",
     "title": "Üyelik karşılaştırması",
-    "note": "Her satır sitenin bugünkü durumunu yansıtır. Ödeme yakında geliyor ve ücretli bir plan asla sıra açmaz veya avantaj satın almaz.",
+    "note": "Her satır sitenin bugünkü halini gösterir. Ücretli planlar Paddle ödemesiyle satın alınır ve asla sıra açmaz ya da avantaj satın almaz.",
     "caption": "Free, Plus ve Premium'un sitenin bugün yaptıklarına göre karşılaştırması",
     "columns": {
       "free": "Free",

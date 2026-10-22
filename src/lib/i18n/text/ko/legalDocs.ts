@@ -3,13 +3,13 @@ import type { TextBag } from "../types";
 export const legalDocs: TextBag["legalDocs"] = {
   r14: {
     "effective": "시행일: {date}",
-    "contact": "문의: support@ace-platform.gg",
+    "contact": "문의: ace.platform.official@gmail.com",
     "definitionsTitle": "정의",
     "definitions": "본 약관에서 'A.C.E'와 '당사'는 A.C.E를 뜻합니다. '사이트'는 ace-platform.gg를 뜻합니다. '계정'은 Steam 로그인으로 생성된 A.C.E 프로필을 뜻합니다. '플랜'은 Free, Plus 또는 Premium을 뜻합니다. '룰북'은 /rules의 경쟁 룰북을 뜻합니다. '관리자'는 이벤트에서 룰북을 적용하는 스태프를 뜻합니다.",
     "suspensionTitle": "계정 제한 및 정지",
     "suspension": "본 약관이나 룰북을 위반한 계정에 대해 부정행위, 계정 공유, 제재 회피, 괴롭힘, 사기 등을 이유로 경고, 제한, 정지 또는 폐쇄할 수 있습니다. 유료 플랜은 어떤 계정도 제한에서 보호하지 않습니다.",
     "disputesTitle": "규칙 결정 및 이의 제기",
-    "disputes": "경기 분쟁과 처벌은 룰북 15조와 16조를 따릅니다. 계정에 관한 결정에 대해 SteamID와 증거를 첨부해 support@ace-platform.gg로 이메일을 보내 이의를 제기할 수 있습니다. 첫 결정에 관여하지 않은 스태프가 검토하고 결과와 사유를 알려 드립니다. 이는 거주 국가의 법률에 따른 권리를 제한하지 않습니다.",
+    "disputes": "경기 분쟁과 처벌은 룰북 15조와 16조를 따릅니다. 계정에 관한 결정에 대해 SteamID와 증거를 첨부해 ace.platform.official@gmail.com로 이메일을 보내 이의를 제기할 수 있습니다. 첫 결정에 관여하지 않은 스태프가 검토하고 결과와 사유를 알려 드립니다. 이는 거주 국가의 법률에 따른 권리를 제한하지 않습니다.",
     "changesTitle": "약관 변경",
     "changes": "당사는 본 약관을 개정할 수 있습니다. 새 버전은 새로운 시행일과 함께 이 페이지에 게시됩니다. 중요한 변경은 게시 7일 후 효력이 발생하며 이미 시작된 결제 기간에는 적용되지 않습니다.",
     "languageTitle": "언어",
@@ -75,7 +75,7 @@ export const legalDocs: TextBag["legalDocs"] = {
       contact: {
         title: "8. 문의",
         paragraphs: [
-          "support@ace-platform.gg — A.C.E",
+          "ace.platform.official@gmail.com — A.C.E",
         ],
       },
     },
@@ -149,7 +149,7 @@ export const legalDocs: TextBag["legalDocs"] = {
     },
     controller: {
       title: "개인정보 처리자",
-      body: "A.C.E 문의: support@ace-platform.gg.",
+      body: "A.C.E 문의: ace.platform.official@gmail.com.",
     },
   },
   cookiePolicy: {

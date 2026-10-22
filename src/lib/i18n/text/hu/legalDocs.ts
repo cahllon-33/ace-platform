@@ -3,13 +3,13 @@ import type { TextBag } from "../types";
 export const legalDocs: TextBag["legalDocs"] = {
   r14: {
     "effective": "Hatálybalépés napja: {date}",
-    "contact": "Kapcsolat: support@ace-platform.gg",
+    "contact": "Kapcsolat: ace.platform.official@gmail.com",
     "definitionsTitle": "Fogalmak",
     "definitions": "E Feltételekben az „A.C.E”, „mi” az A.C.E-t jelenti. A „Webhely” az ace-platform.gg. A „Fiók” a Steam-bejelentkezéssel létrehozott A.C.E-profil. A „Csomag” a Free, Plus vagy Premium. A „Szabálykönyv” a /rules oldalon található versenyszabályzat. Az „Admin” az a munkatárs, aki egy eseményen alkalmazza a Szabálykönyvet.",
     "suspensionTitle": "Fiókkorlátozás és felfüggesztés",
     "suspension": "Figyelmeztethetjük, korlátozhatjuk, felfüggeszthetjük vagy megszüntethetjük azt a Fiókot, amely megsérti e Feltételeket vagy a Szabálykönyvet, például csalás, fiókmegosztás, kitiltás kijátszása, zaklatás vagy visszaélés miatt. Fizetős csomag soha nem védi meg a Fiókot a korlátozástól.",
     "disputesTitle": "Szabálydöntések és fellebbezés",
-    "disputes": "A meccsvitákra és büntetésekre a Szabálykönyv 15. és 16. szakasza vonatkozik. A Fiókodat érintő döntés ellen fellebbezhetsz a support@ace-platform.gg címre írva SteamID-ddel és bizonyítékaiddal. A fellebbezést olyan munkatárs vizsgálja, aki nem hozta az első döntést, és közli az eredményt és az indoklást. Ez nem korlátozza az országod joga szerinti jogaidat.",
+    "disputes": "A meccsvitákra és büntetésekre a Szabálykönyv 15. és 16. szakasza vonatkozik. A Fiókodat érintő döntés ellen fellebbezhetsz a ace.platform.official@gmail.com címre írva SteamID-ddel és bizonyítékaiddal. A fellebbezést olyan munkatárs vizsgálja, aki nem hozta az első döntést, és közli az eredményt és az indoklást. Ez nem korlátozza az országod joga szerinti jogaidat.",
     "changesTitle": "E Feltételek módosítása",
     "changes": "E Feltételeket frissíthetjük. Minden új változat új hatálybalépési dátummal jelenik meg ezen az oldalon. A lényeges módosítás a közzététel után 7 nappal lép hatályba, és soha nem vonatkozik már megkezdett fizetési időszakra.",
     "languageTitle": "Nyelv",
@@ -73,7 +73,7 @@ export const legalDocs: TextBag["legalDocs"] = {
       "contact": {
         "title": "8. Kapcsolat",
         "paragraphs": [
-          "support@ace-platform.gg — A.C.E"
+          "ace.platform.official@gmail.com — A.C.E"
         ]
       }
     }
@@ -139,7 +139,7 @@ export const legalDocs: TextBag["legalDocs"] = {
     },
     "controller": {
       "title": "Adatkezelő",
-      "body": "A.C.E. Kapcsolat: support@ace-platform.gg."
+      "body": "A.C.E. Kapcsolat: ace.platform.official@gmail.com."
     }
   },
   "cookiePolicy": {

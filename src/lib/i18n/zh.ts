@@ -118,7 +118,7 @@ export const ZH: MessageBag = {
  contactConsent: "我明确同意 A.C.E 隐私政策中的数据最小化存储参数。",
  contactSend: "发送安全遥测消息",
  contactCorporate:
- "A.C.E | 安全邮件网关：support@ace-platform.gg",
+ "A.C.E | 安全邮件网关：ace.platform.official@gmail.com",
  contactModalTitle: "在线联系表单 · 即将推出",
  contactModalBody:
  "此表单中的消息尚不会送达。表单将与我们的支持服务同时开放。A.C.E 绝不会索要你的 Steam 密码。",

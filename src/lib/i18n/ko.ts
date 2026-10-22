@@ -110,7 +110,7 @@ export const KO: MessageBag = {
  contactInquiryGeneral: "일반",
  contactConsent: "본인은 A.C.E 개인정보 처리방침의 데이터 최소화 저장 조건에 명시적으로 동의합니다.",
  contactSend: "보안 텔레메트리 메시지 보내기",
- contactCorporate: "A.C.E | 보안 이메일 게이트웨이: support@ace-platform.gg",
+ contactCorporate: "A.C.E | 보안 이메일 게이트웨이: ace.platform.official@gmail.com",
  contactModalTitle: "온라인 문의 양식 · 곧 출시",
  contactModalBody: "이 양식의 메시지는 아직 전달되지 않습니다. 양식은 고객 지원과 함께 열립니다. A.C.E는 절대 Steam 비밀번호를 요청하지 않습니다.",
  contactDisclosure: "온라인 문의 양식은 곧 열립니다. A.C.E는 절대 Steam 비밀번호를 요청하지 않습니다.",

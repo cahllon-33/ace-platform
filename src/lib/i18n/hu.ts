@@ -128,7 +128,7 @@ export const HU: MessageBag = {
  "Kifejezetten hozzájárulok az adatminimalizálás tárolási feltételeihez az A.C.E adatvédelmi szabályzata szerint.",
  contactSend: "BIZTONSÁGOS TELEMETRIAÜZENET KÜLDÉSE",
  contactCorporate:
- "A.C.E | Biztonságos e-mail-átjáró: support@ace-platform.gg",
+ "A.C.E | Biztonságos e-mail-átjáró: ace.platform.official@gmail.com",
  contactModalTitle: "Online kapcsolatfelvételi űrlap · hamarosan",
  contactModalBody:
  "Az űrlapról küldött üzenetek még nem kerülnek kézbesítésre. Az űrlap az ügyfélszolgálatunkkal együtt indul. Az A.C.E soha nem kéri a Steam-jelszavadat.",

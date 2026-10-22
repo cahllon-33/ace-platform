@@ -5,7 +5,7 @@ export const pricing: TextBag["pricing"] = {
     "kicker": "OMINAISUUSMATRIISI",
     "title": "Jäsenyyksien vertailu",
     "note": "Kultainen rasti: sisältyy. Viiva: ei sisälly. Tulossa: osa tilausta, mutta ei vielä julkaistu. Mikään tilaus ei osta reittausta, ottelunhakua tai jonoetua.",
-    "checkout": "Maksua ei vielä ole, joten tänään jokainen tili on Free.",
+    "checkout": "Maksu tapahtuu Paddlen kautta, joka on myyjämme (Merchant of Record). Tilauksesi muuttuu heti, kun Paddle vahvistaa maksun.",
     "feature": "Ominaisuus",
     "included": "Sisältyy",
     "notIncluded": "Ei sisälly",
@@ -55,7 +55,7 @@ export const pricing: TextBag["pricing"] = {
       "headshot": "Pääosuma-%",
       "rounds": "Kierroskohtainen suoritus",
       "noData": "Ei tietoja",
-      "locked": "Laajennettu otteluanalyysi kuuluu A.C.E Premiumiin (7 $/kk). Tulossa: maksua ei vielä ole, joten mikään tili ei ole tänään Premium.",
+      "locked": "Laajennettu otteluanalyysi kuuluu A.C.E Premiumiin (7 $/kk). Tilaa hinnastosivulla Paddlen kassalla.",
       "premiumNote": "Tilauksesi on Premium. Analyysisi näkyy täällä, kun demojen jäsennys on olemassa.",
       "signIn": "Kirjaudu Steamilla tarkistaaksesi analyysin käyttöoikeutesi.",
       "plansLink": "Katso tilaukset"
@@ -65,7 +65,7 @@ export const pricing: TextBag["pricing"] = {
       "metaDescription": "Mitä A.C.E Plus ja Premium sisältävät, mitä mikään tilaus ei sisällä ja miten peruutus toimii.",
       "kicker": "ACE-LEGAL / PREMIUM-EHDOT",
       "title": "A.C.E Premium -ehdot",
-      "intro": "Nämä ehdot kuvaavat, mitä maksulliset tilaukset sisältävät. Ne ovat osa käyttöehtoja osoitteessa /terms. Maksamista ei vielä ole, joten tänään mitään ei voi ostaa eikä mitään veloiteta.",
+      "intro": "Nämä ehdot kuvaavat, mitä maksulliset tilaukset sisältävät. Ne ovat osa käyttöehtoja osoitteessa /terms. Maksut käsittelee Paddle Merchant of Recordina.",
       "pricesTitle": "1. Tilaukset, hinnat ja peruutus",
       "prices": "Free {free}. Plus {plus} kuukaudessa. Premium {premium} kuukaudessa. Tilaukset uusiutuvat kuukausittain. Voit perua milloin tahansa ilman seuraamuksia hallintapaneelin asetuksista, ja käyttöoikeus säilyy maksetun kuukauden loppuun. Aloitettua kuukautta ei hyvitetä, ellei maasi laki sitä vaadi.",
       "plusTitle": "2. Mitä Plus sisältää",
@@ -143,8 +143,8 @@ export const pricing: TextBag["pricing"] = {
     "chooseAria": "Valitse {plan} {price} kuukaudessa"
   },
   "billing": {
-    "kicker": "LASKUTUKSEN AIKAJANA",
-    "title": "Miten laskutus toimii, kun se on olemassa",
+    "kicker": "LASKUTUS",
+    "title": "Näin laskutus toimii",
     "body": "Plus on tasan {plus}/kk. Premium on tasan {premium}/kk.",
     "display": {
       "label": "01 · HINTA",
@@ -152,16 +152,17 @@ export const pricing: TextBag["pricing"] = {
     },
     "rolling": {
       "label": "02 · JATKUVA JAKSO",
-      "body": "Kun laskutus on olemassa, maksut uusiutuvat kuukausittain jatkuvana jaksona. Osittaista kuukautta ei hyvitetä. Peruminen lopettaa seuraavan jakson eikä poista nykyistä ennalta maksettua jaksoa."
+      "body": "Paddle veloittaa tilauksesi kuukausittain, kunnes perut sen. Voit perua milloin tahansa kohdassa Hallitse tilausta; tilaus jatkuu maksetun jakson loppuun. Palautukset palautuskäytännön mukaan (14 päivää)."
     },
     "today": {
-      "label": "03 · TÄNÄÄN"
+      "label": "03 · KASSA",
+      "body": "Maksa Paddlen turvallisella kassalla tilauskorteista. Jos painikkeessa lukee Tulossa pian, maksut eivät ole vielä käytössä."
     }
   },
   "compare": {
     "kicker": "Mitä A.C.E voi luvata tänään",
     "title": "Jäsenyysvertailu",
-    "note": "Jokainen rivi kuvaa sivustoa tänään. Maksutoiminto on tulossa pian, eikä maksullinen paketti koskaan avaa jonoa tai osta etua.",
+    "note": "Jokainen rivi kuvaa sivustoa tänään. Maksulliset tilaukset ostetaan Paddlen kassalla, eivätkä ne koskaan avaa jonoa tai osta etua.",
     "caption": "Free, Plus ja Premium vertailtuna sen mukaan, mitä sivusto tekee tänään",
     "columns": {
       "free": "Free",

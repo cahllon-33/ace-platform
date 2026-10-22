@@ -120,7 +120,7 @@ export const FR: MessageBag = {
  "Je consens explicitement aux paramètres de minimisation du stockage des données de la Politique de confidentialité A.C.E.",
  contactSend: "ENVOYER UN MESSAGE TÉLÉMÉTRIQUE SÉCURISÉ",
  contactCorporate:
- "A.C.E | Passerelle e-mail sécurisée : support@ace-platform.gg",
+ "A.C.E | Passerelle e-mail sécurisée : ace.platform.official@gmail.com",
  contactModalTitle: "Formulaire de contact en ligne · bientôt",
  contactModalBody:
  "Les messages de ce formulaire ne sont pas encore transmis. Le formulaire ouvrira en même temps que notre support. A.C.E ne vous demandera jamais votre mot de passe Steam.",

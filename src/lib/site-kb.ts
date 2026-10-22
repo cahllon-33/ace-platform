@@ -151,7 +151,7 @@ export const SYNONYMS: Syn[] = [
   { forms: ["lose", "loss", "losses", "lost", "הפסד", "הפסדים", "מפסידים", "הפסדתי", "מפסיד"], en: ["loss", "lose", "equal"], boost: /rpRules\.rLoss|how-points-move\.lede/ },
   { forms: ["abandon", "abandoning", "leave", "leaving", "quit", "draw", "נטישה", "נוטש", "נוטשים", "לנטוש", "לעזוב", "עוזב", "תיקו"], en: ["abandoning", "leaving", "draw", "50"], boost: /how-points-move\.sections\.1|rpRules\.rAbandon/ },
   { forms: ["highest", "max", "maximum", "best", "ceiling", "הכי", "גבוהה", "הגבוהה", "הגבוה", "עליונה", "המקסימלית"], en: ["ceiling", "3,000", "legend", "eleventh"], boost: /rank-10|gateLast|floor-ceiling/ },
-  { forms: ["support", "contact", "email", "help", "תמיכה", "קשר", "מייל", "אימייל", "עזרה"], en: ["support", "contact", "support@ace-platform.gg"], boost: /contact/ },
+  { forms: ["support", "contact", "email", "help", "תמיכה", "קשר", "מייל", "אימייל", "עזרה"], en: ["support", "contact", "ace.platform.official@gmail.com"], boost: /contact/ },
   { forms: ["paytowin", "pay2win", "p2w"], en: ["advantage", "never", "buy", "competitive", "paid"], boost: /antiCheat\.faq|r39\.home\.sub|matrix\.rows\.advantage/ },
   { forms: ["play", "playing", "לשחק", "משחקים", "להצטרף", "הצטרפות"], en: ["connect", "steam", "calibrate", "sign"], boost: /r39\.home\.step/ },
   { forms: ["advantage", "boost", "יתרון", "בוסט"], en: ["advantage", "boost", "competitive", "plan"], boost: /antiCheat\.faq|matrix\.rows\.advantage/ },

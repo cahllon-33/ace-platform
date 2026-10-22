@@ -3,13 +3,13 @@ import type { TextBag } from "../types";
 export const legalDocs: TextBag["legalDocs"] = {
   r14: {
     "effective": "Datum stupanja na snagu: {date}",
-    "contact": "Kontakt: support@ace-platform.gg",
+    "contact": "Kontakt: ace.platform.official@gmail.com",
     "definitionsTitle": "Definicije",
     "definitions": "U ovim Uvjetima „A.C.E”, „mi” znači A.C.E „Stranica” znači ace-platform.gg. „Račun” znači A.C.E profil stvoren prijavom putem Steama. „Plan” znači Free, Plus ili Premium. „Pravilnik” znači Natjecateljski pravilnik na /rules. „Admin” znači član osoblja koji primjenjuje Pravilnik na događaju.",
     "suspensionTitle": "Ograničenja i suspenzija računa",
     "suspension": "Možemo upozoriti, ograničiti, suspendirati ili zatvoriti Račun koji krši ove Uvjete ili Pravilnik, npr. zbog varanja, dijeljenja računa, izbjegavanja zabrane, uznemiravanja ili prijevare. Plaćeni plan nikad ne štiti Račun od ograničenja.",
     "disputesTitle": "Odluke o pravilima i žalbe",
-    "disputes": "Sporovi u mečevima i kazne prate odjeljke 15 i 16 Pravilnika. Na odluku o svom Računu možeš se žaliti e-poštom na support@ace-platform.gg uz SteamID i dokaze. Žalbu razmatra član osoblja koji nije donio prvu odluku i javlja ti ishod i razlog. To ne ograničava prava koja imaš prema zakonu svoje zemlje.",
+    "disputes": "Sporovi u mečevima i kazne prate odjeljke 15 i 16 Pravilnika. Na odluku o svom Računu možeš se žaliti e-poštom na ace.platform.official@gmail.com uz SteamID i dokaze. Žalbu razmatra član osoblja koji nije donio prvu odluku i javlja ti ishod i razlog. To ne ograničava prava koja imaš prema zakonu svoje zemlje.",
     "changesTitle": "Izmjene ovih Uvjeta",
     "changes": "Ove Uvjete možemo ažurirati. Svaka nova verzija objavljuje se na ovoj stranici s novim datumom stupanja na snagu. Bitna izmjena stupa na snagu 7 dana nakon objave i nikad se ne primjenjuje na već započeto razdoblje plaćanja.",
     "languageTitle": "Jezik",
@@ -73,7 +73,7 @@ export const legalDocs: TextBag["legalDocs"] = {
       "contact": {
         "title": "8. Kontakt",
         "paragraphs": [
-          "support@ace-platform.gg — A.C.E"
+          "ace.platform.official@gmail.com — A.C.E"
         ]
       }
     }
@@ -139,7 +139,7 @@ export const legalDocs: TextBag["legalDocs"] = {
     },
     "controller": {
       "title": "Voditelj obrade",
-      "body": "A.C.E. Kontakt: support@ace-platform.gg."
+      "body": "A.C.E. Kontakt: ace.platform.official@gmail.com."
     }
   },
   "cookiePolicy": {

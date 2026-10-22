@@ -1,3 +1,4 @@
+import { CONTACT_EMAIL } from "@/lib/contact";
 import Link from "next/link";
 import { interpolate } from "@/lib/i18n";
 import { getText } from "@/server/locale";
@@ -73,7 +74,7 @@ export async function MembershipLetter({
         <h2>{letter.support.title}</h2>
         <p>
           {letter.support.addressBefore}
-          <a href="mailto:support@ace-platform.gg">support@ace-platform.gg</a>
+          <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>
           {letter.support.addressAfter}
         </p>
         <p>

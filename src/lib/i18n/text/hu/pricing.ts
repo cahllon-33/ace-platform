@@ -5,7 +5,7 @@ export const pricing: TextBag["pricing"] = {
     "kicker": "FUNKCIÓMÁTRIX",
     "title": "Tagságok összehasonlítása",
     "note": "Arany pipa: benne van. Vonal: nincs benne. Hamarosan: a csomag része, de még nem jelent meg. Egyik csomag sem vásárol ratinget, párosítást vagy sorelsőbbséget.",
-    "checkout": "Fizetés még nincs, ezért ma minden fiók Free.",
+    "checkout": "A fizetés a Paddle-en keresztül történik, amely a Merchant of Recordunk. A csomagod azonnal megváltozik, amint a Paddle megerősíti a fizetést.",
     "feature": "Funkció",
     "included": "Benne van",
     "notIncluded": "Nincs benne",
@@ -55,7 +55,7 @@ export const pricing: TextBag["pricing"] = {
       "headshot": "Fejlövés %",
       "rounds": "Körönkénti teljesítmény",
       "noData": "Nincs adat",
-      "locked": "A bővített meccselemzés az A.C.E Premium része (7 $/hó). Hamarosan: fizetés még nincs, így ma egyetlen fiók sem Premium.",
+      "locked": "A bővített meccselemzés az A.C.E Premium része (7 $/hó). Fizess elő az árak oldalon a Paddle pénztárral.",
       "premiumNote": "A csomagod Premium. Az elemzésed itt jelenik meg, amint létezik demófeldolgozás.",
       "signIn": "Jelentkezz be Steammel, hogy ellenőrizd az elemzéshez való hozzáférésed.",
       "plansLink": "Csomagok megtekintése"
@@ -65,7 +65,7 @@ export const pricing: TextBag["pricing"] = {
       "metaDescription": "Mit tartalmaz az A.C.E Plus és Premium, mit nem tartalmaz egyik csomag sem, és hogyan működik a lemondás.",
       "kicker": "ACE-LEGAL / PREMIUM FELTÉTELEK",
       "title": "A.C.E Premium feltételek",
-      "intro": "Ezek a feltételek leírják, mit tartalmaznak a fizetős csomagok. A /terms oldalon található Felhasználási feltételek részét képezik. Fizetés még nincs, így ma semmit nem lehet megvenni, és semmit nem terhelünk.",
+      "intro": "Ezek a feltételek leírják, mit tartalmaznak a fizetős csomagok. A /terms oldalon található Felhasználási feltételek részei. A fizetéseket a Paddle kezeli Merchant of Recordként.",
       "pricesTitle": "1. Csomagok, árak és lemondás",
       "prices": "Free {free}. Plus havi {plus}. Premium havi {premium}. A csomagok havonta megújulnak. Bármikor, büntetés nélkül lemondhatod az irányítópult beállításaiban, és a hozzáférés a kifizetett hónap végéig megmarad. A megkezdett hónapot nem térítjük vissza, kivéve ha országod joga előírja.",
       "plusTitle": "2. Mit tartalmaz a Plus",
@@ -143,8 +143,8 @@ export const pricing: TextBag["pricing"] = {
     "chooseAria": "{plan} választása havi {price} áron"
   },
   "billing": {
-    "kicker": "SZÁMLÁZÁSI IDŐVONAL",
-    "title": "Hogyan működik majd a számlázás, ha lesz",
+    "kicker": "SZÁMLÁZÁS",
+    "title": "Így működik a számlázás",
     "body": "A Plus pontosan {plus}/hó. A Premium pontosan {premium}/hó.",
     "display": {
       "label": "01 · MEGJELENÍTÉS",
@@ -152,16 +152,17 @@ export const pricing: TextBag["pricing"] = {
     },
     "rolling": {
       "label": "02 · GÖRDÜLŐ CIKLUS",
-      "body": "Ha lesz számlázás, a díjak havi gördülő ciklusban újulnak meg. A töredékhónap nem téríthető vissza. A lemondás leállítja a következő ciklust, és nem törli a jelenlegi előre fizetett időszakot."
+      "body": "A Paddle havonta terheli a csomagodat, amíg le nem mondod. Bármikor lemondhatod az Előfizetés kezelése alatt; a csomag a kifizetett időszak végéig megmarad. Visszatérítés a Visszatérítési szabályzat szerint (14 nap)."
     },
     "today": {
-      "label": "03 · MA"
+      "label": "03 · PÉNZTÁR",
+      "body": "Fizess a Paddle biztonságos pénztárában a csomagkártyákról. Ha egy gomb Hamarosan feliratot mutat, a fizetés még nincs bekapcsolva."
     }
   },
   "compare": {
     "kicker": "Amit az A.C.E ma ígérhet",
     "title": "Tagságok összehasonlítása",
-    "note": "Minden sor az oldal mai állapotát tükrözi. A fizetés hamarosan érkezik, és egy fizetős csomag soha nem nyit sort és nem vásárol előnyt.",
+    "note": "Minden sor a mai oldalt tükrözi. A fizetős csomagokat a Paddle pénztárban lehet megvenni, és sosem nyitnak sort vagy vesznek előnyt.",
     "caption": "Free, Plus és Premium összehasonlítva az oldal mai működése szerint",
     "columns": {
       "free": "Free",

@@ -3,13 +3,13 @@ import type { TextBag } from "../types";
 export const legalDocs: TextBag["legalDocs"] = {
   r14: {
     "effective": "تاريخ السريان: {date}",
-    "contact": "التواصل: support@ace-platform.gg",
+    "contact": "التواصل: ace.platform.official@gmail.com",
     "definitionsTitle": "التعريفات",
     "definitions": "في هذه الشروط، تعني «A.C.E» و«نحن» A.C.E ويعني «الموقع» ace-platform.gg. ويعني «الحساب» ملف A.C.E المُنشأ عبر تسجيل الدخول بـ Steam. وتعني «الخطة» Free أو Plus أو Premium. ويعني «كتاب القواعد» كتاب القواعد التنافسي في ‎/rules. ويعني «المشرف» عضو الفريق الذي يطبّق كتاب القواعد في فعالية.",
     "suspensionTitle": "قيود الحساب وتعليقه",
     "suspension": "يجوز لنا تحذير أو تقييد أو تعليق أو إغلاق أي حساب يخالف هذه الشروط أو كتاب القواعد، مثل الغش أو مشاركة الحساب أو التحايل على الحظر أو التحرش أو الاحتيال. لا تحمي الخطة المدفوعة أي حساب من القيود أبدًا.",
     "disputesTitle": "قرارات القواعد والطعون",
-    "disputes": "تخضع نزاعات المباريات والعقوبات للقسمين 15 و16 من كتاب القواعد. يمكنك الطعن في قرار يخص حسابك بمراسلة support@ace-platform.gg مع SteamID والأدلة. يراجع الطعنَ عضوٌ في الفريق لم يتخذ القرار الأول، ويبلغك بالنتيجة والسبب. لا يحدّ هذا من أي حق لك بموجب قانون بلدك.",
+    "disputes": "تخضع نزاعات المباريات والعقوبات للقسمين 15 و16 من كتاب القواعد. يمكنك الطعن في قرار يخص حسابك بمراسلة ace.platform.official@gmail.com مع SteamID والأدلة. يراجع الطعنَ عضوٌ في الفريق لم يتخذ القرار الأول، ويبلغك بالنتيجة والسبب. لا يحدّ هذا من أي حق لك بموجب قانون بلدك.",
     "changesTitle": "التغييرات على هذه الشروط",
     "changes": "يجوز لنا تحديث هذه الشروط. تُنشر كل نسخة جديدة في هذه الصفحة بتاريخ سريان جديد. يسري التغيير الجوهري بعد 7 أيام من نشره ولا يُطبَّق أبدًا على فترة دفع بدأت بالفعل.",
     "languageTitle": "اللغة",
@@ -73,7 +73,7 @@ export const legalDocs: TextBag["legalDocs"] = {
       "contact": {
         "title": "8. التواصل",
         "paragraphs": [
-          "support@ace-platform.gg — A.C.E"
+          "ace.platform.official@gmail.com — A.C.E"
         ]
       }
     }
@@ -139,7 +139,7 @@ export const legalDocs: TextBag["legalDocs"] = {
     },
     "controller": {
       "title": "المسؤول عن البيانات",
-      "body": "A.C.E للتواصل: support@ace-platform.gg."
+      "body": "A.C.E للتواصل: ace.platform.official@gmail.com."
     }
   },
   "cookiePolicy": {

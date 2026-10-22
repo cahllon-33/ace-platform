@@ -5,7 +5,7 @@ export const pricing: TextBag["pricing"] = {
     "kicker": "MATICE FUNKCÍ",
     "title": "Srovnání členství",
     "note": "Zlatá fajfka: zahrnuto. Pomlčka: nezahrnuto. Brzy: součást plánu, ale zatím nevydáno. Žádný plán nekupuje rating, matchmaking ani přednost ve frontě.",
-    "checkout": "Platba zatím neexistuje, takže dnes je každý účet na Free.",
+    "checkout": "Platba probíhá přes Paddle, našeho prodejce (Merchant of Record). Plán se změní, jakmile Paddle platbu potvrdí.",
     "feature": "Funkce",
     "included": "Zahrnuto",
     "notIncluded": "Nezahrnuto",
@@ -55,7 +55,7 @@ export const pricing: TextBag["pricing"] = {
       "headshot": "% headshotů",
       "rounds": "Výkon po kolech",
       "noData": "Žádná data",
-      "locked": "Rozšířená analýza zápasu je součástí A.C.E Premium (7 $/měsíc). Již brzy: platba zatím neexistuje, takže dnes žádný účet není Premium.",
+      "locked": "Rozšířená analýza zápasů je součástí A.C.E Premium (7 $ měsíčně). Předplatné sjednáš na stránce cen přes pokladnu Paddle.",
       "premiumNote": "Tvůj plán je Premium. Tvá analýza se tu objeví, jakmile bude existovat zpracování dem.",
       "signIn": "Přihlas se přes Steam a ověř si přístup k analýze.",
       "plansLink": "Zobrazit plány"
@@ -65,7 +65,7 @@ export const pricing: TextBag["pricing"] = {
       "metaDescription": "Co zahrnují A.C.E Plus a Premium, co nezahrnuje žádný plán a jak funguje zrušení.",
       "kicker": "ACE-LEGAL / PODMÍNKY PREMIUM",
       "title": "Podmínky A.C.E Premium",
-      "intro": "Tyto podmínky popisují, co placené plány zahrnují. Jsou součástí Podmínek služby na /terms. Platby zatím neexistují, takže dnes nelze nic koupit ani nic není účtováno.",
+      "intro": "Tyto podmínky popisují, co placené plány obsahují. Jsou součástí Podmínek služby na /terms. Platby zpracovává Paddle jako Merchant of Record.",
       "pricesTitle": "1. Plány, ceny a zrušení",
       "prices": "Free {free}. Plus {plus} měsíčně. Premium {premium} měsíčně. Plány se obnovují měsíčně. Zrušit je můžeš kdykoli bez sankce v nastavení panelu a přístup ti zůstane do konce zaplaceného měsíce. Načatý měsíc se nevrací, pokud to nevyžaduje zákon tvé země.",
       "plusTitle": "2. Co zahrnuje Plus",
@@ -143,8 +143,8 @@ export const pricing: TextBag["pricing"] = {
     "chooseAria": "Zvolit {plan} za {price} měsíčně"
   },
   "billing": {
-    "kicker": "MATICE ČASOVÉ OSY VYÚČTOVÁNÍ",
-    "title": "Jak bude vyúčtování fungovat, až bude existovat",
+    "kicker": "PLATBY",
+    "title": "Jak funguje platba",
     "body": "Plus stojí přesně {plus}/měs. Premium stojí přesně {premium}/měs.",
     "display": {
       "label": "01 · ZOBRAZENÍ",
@@ -152,16 +152,17 @@ export const pricing: TextBag["pricing"] = {
     },
     "rolling": {
       "label": "02 · PRŮBĚŽNÝ CYKLUS",
-      "body": "Až bude vyúčtování existovat, platby se budou obnovovat v průběžném měsíčním cyklu. Částečně využitý měsíc se nevrací. Zrušení zastaví další cyklus a nemaže aktuální předplacené období."
+      "body": "Paddle účtuje plán každý měsíc, dokud ho nezrušíš. Zrušit můžeš kdykoli ve Správě předplatného; plán ti zůstane do konce zaplaceného období. Refundace podle Zásad refundace (14 dní)."
     },
     "today": {
-      "label": "03 · DNES"
+      "label": "03 · POKLADNA",
+      "body": "Plať v zabezpečené pokladně Paddle z karet plánů. Pokud tlačítko ukazuje Již brzy, platby ještě nejsou zapnuté."
     }
   },
   "compare": {
     "kicker": "Co může A.C.E slíbit už dnes",
     "title": "Srovnání členství",
-    "note": "Každý řádek odpovídá dnešnímu stavu webu. Platba bude brzy k dispozici a placený plán nikdy neotevírá frontu ani nekupuje výhodu.",
+    "note": "Každý řádek odpovídá dnešnímu stavu webu. Placené plány se kupují přes pokladnu Paddle a nikdy neotevírají frontu ani nekupují výhodu.",
     "caption": "Srovnání tarifů Zdarma, Plus a Premium podle toho, co web dělá dnes",
     "columns": {
       "free": "Zdarma",

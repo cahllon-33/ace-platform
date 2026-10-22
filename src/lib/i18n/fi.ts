@@ -122,7 +122,7 @@ export const FI: MessageBag = {
   "Annan nimenomaisen suostumukseni tietojen minimoinnin tallennusparametreihin A.C.E:n tietosuojakäytännön nojalla.",
  contactSend: "LÄHETÄ SUOJATTU TELEMETRIAVIESTI",
  contactCorporate:
-  "A.C.E | Suojattu sähköpostiyhdyskäytävä: support@ace-platform.gg",
+  "A.C.E | Suojattu sähköpostiyhdyskäytävä: ace.platform.official@gmail.com",
  contactModalTitle: "Verkkoyhteydenottolomake · tulossa pian",
  contactModalBody:
   "Tämän lomakkeen viestejä ei vielä välitetä. Lomake avautuu yhdessä tukipalvelumme kanssa. A.C.E ei koskaan pyydä Steam-salasanaasi.",

@@ -3,13 +3,13 @@ import type { TextBag } from "../types";
 export const legalDocs: TextBag["legalDocs"] = {
   r14: {
     "effective": "تاريخ السريان: {date}",
-    "contact": "التواصل: support@ace-platform.gg",
+    "contact": "التواصل: ace.platform.official@gmail.com",
     "definitionsTitle": "التعريفات",
     "definitions": "في الشروط دي، «A.C.E» و«إحنا» معناهم A.C.E و«الموقع» معناه ace-platform.gg. و«الحساب» هو ملف A.C.E اللي بيتعمل بالدخول بـ Steam. و«الخطة» هي Free أو Plus أو Premium. و«كتاب القواعد» هو كتاب القواعد التنافسي في ‎/rules. و«المشرف» هو حد من الفريق بيطبّق كتاب القواعد في فعالية.",
     "suspensionTitle": "قيود الحساب وإيقافه",
     "suspension": "ممكن نحذّر أو نقيّد أو نوقف أو نقفل أي حساب بيخالف الشروط دي أو كتاب القواعد، زي الغش أو مشاركة الحساب أو التحايل على الحظر أو التحرش أو النصب. الخطة المدفوعة عمرها ما بتحمي الحساب من القيود.",
     "disputesTitle": "قرارات القواعد والتظلمات",
-    "disputes": "نزاعات الماتشات والعقوبات ماشية على القسمين 15 و16 من كتاب القواعد. تقدر تتظلم من قرار يخص حسابك بإيميل على support@ace-platform.gg فيه SteamID بتاعك والأدلة. حد من الفريق ماخدش القرار الأول بيراجع التظلم ويقولك النتيجة والسبب. ده مش بيقلل من أي حق ليك حسب قانون بلدك.",
+    "disputes": "نزاعات الماتشات والعقوبات ماشية على القسمين 15 و16 من كتاب القواعد. تقدر تتظلم من قرار يخص حسابك بإيميل على ace.platform.official@gmail.com فيه SteamID بتاعك والأدلة. حد من الفريق ماخدش القرار الأول بيراجع التظلم ويقولك النتيجة والسبب. ده مش بيقلل من أي حق ليك حسب قانون بلدك.",
     "changesTitle": "التغييرات في الشروط دي",
     "changes": "ممكن نحدّث الشروط دي. كل نسخة جديدة بتتنشر في الصفحة دي بتاريخ سريان جديد. التغيير المهم بيسري بعد 7 أيام من نشره وعمره ما بيتطبق على فترة دفع بدأت خلاص.",
     "languageTitle": "اللغة",
@@ -73,7 +73,7 @@ export const legalDocs: TextBag["legalDocs"] = {
       "contact": {
         "title": "8. التواصل",
         "paragraphs": [
-          "support@ace-platform.gg — A.C.E"
+          "ace.platform.official@gmail.com — A.C.E"
         ]
       }
     }
@@ -139,7 +139,7 @@ export const legalDocs: TextBag["legalDocs"] = {
     },
     "controller": {
       "title": "المسؤول عن البيانات",
-      "body": "A.C.E للتواصل: support@ace-platform.gg."
+      "body": "A.C.E للتواصل: ace.platform.official@gmail.com."
     }
   },
   "cookiePolicy": {

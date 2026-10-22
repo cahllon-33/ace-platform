@@ -3,7 +3,7 @@
     "kicker": "FEATURE MATRIX",
     "title": "Membership comparison",
     "note": "Gold check: included. Dash: not included. Coming soon: part of the plan but not released yet. No plan buys rating, matchmaking or queue priority.",
-    "checkout": "Checkout does not exist yet, so every account is on Free today.",
+    "checkout": "Checkout runs through Paddle, our Merchant of Record. Your plan changes as soon as Paddle confirms the payment.",
     "feature": "Feature",
     "included": "Included",
     "notIncluded": "Not included",
@@ -53,7 +53,7 @@
       "headshot": "Headshot %",
       "rounds": "Per-round performance",
       "noData": "No data",
-      "locked": "Extended match analysis is part of A.C.E Premium ($7/month). Coming soon: checkout does not exist yet, so no account is Premium today.",
+      "locked": "Extended match analysis is part of A.C.E Premium ($7/month). Subscribe on the pricing page through Paddle checkout.",
       "premiumNote": "Your plan is Premium. Your analysis will appear here once demo parsing exists.",
       "signIn": "Sign in with Steam to check your analysis access.",
       "plansLink": "See plans"
@@ -63,7 +63,7 @@
       "metaDescription": "What A.C.E Plus and Premium include, what no plan includes, and how cancelling works.",
       "kicker": "ACE-LEGAL / PREMIUM TERMS",
       "title": "A.C.E Premium terms",
-      "intro": "These terms describe what the paid Plans include. They form part of the Terms of Service at /terms. Checkout does not exist yet, so nothing can be bought or charged today.",
+      "intro": "These terms describe what the paid Plans include. They form part of the Terms of Service at /terms. Payments are processed by Paddle as Merchant of Record.",
       "pricesTitle": "1. Plans, prices and cancelling",
       "prices": "Free {free}. Plus {plus} per month. Premium {premium} per month. Plans renew monthly. You can cancel at any time in dashboard settings with no penalty and keep access until the end of the paid month. A partial month is not refunded unless the law of your country requires it.",
       "plusTitle": "2. What Plus includes",
@@ -141,8 +141,8 @@
     "chooseAria": "Choose {plan} {price} per month"
   },
   "billing": {
-    "kicker": "BILLING TIMELINE MATRIX",
-    "title": "How billing will work once it exists",
+    "kicker": "BILLING",
+    "title": "How billing works",
     "body": "Plus is exactly {plus}/mo. Premium is exactly {premium}/mo.",
     "display": {
       "label": "01 · DISPLAY",
@@ -150,16 +150,17 @@
     },
     "rolling": {
       "label": "02 · ROLLING CYCLE",
-      "body": "When billing exists, charges renew on a monthly rolling cycle. Partial month usage is non-refundable. Cancellation stops the next cycle and does not erase the current prepaid window."
+      "body": "Paddle charges your plan every month until you cancel. Cancel any time under Manage subscription; you keep the plan until the end of the paid period. Refunds follow the Refund Policy (14 days)."
     },
     "today": {
-      "label": "03 · TODAY"
+      "label": "03 · CHECKOUT",
+      "body": "Pay in Paddle's secure checkout from the plan cards. If a button shows Coming soon, payments are not switched on yet."
     }
   },
   "compare": {
     "kicker": "What A.C.E can promise today",
     "title": "Membership comparison",
-    "note": "Every row reflects the site today. Checkout is coming soon, and a paid plan never opens a queue or buys an advantage.",
+    "note": "Every row reflects the site today. Paid plans are bought through Paddle checkout and never open a queue or buy an advantage.",
     "caption": "Free, Plus, and Premium compared by what the site does today",
     "columns": {
       "free": "Free",

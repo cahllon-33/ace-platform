@@ -3,13 +3,13 @@ import type { TextBag } from "../types";
 export const legalDocs: TextBag["legalDocs"] = {
   r14: {
     "effective": "生效日期：{date}",
-    "contact": "联系方式：support@ace-platform.gg",
+    "contact": "联系方式：ace.platform.official@gmail.com",
     "definitionsTitle": "定义",
     "definitions": "在本条款中，“A.C.E”和“我们”指 A.C.E。“本网站”指 ace-platform.gg。“账号”指通过 Steam 登录创建的 A.C.E 资料。“方案”指 Free、Plus 或 Premium。“规则手册”指 /rules 上的竞技规则手册。“管理员”指在赛事中执行规则手册的工作人员。",
     "suspensionTitle": "账号限制与停用",
     "suspension": "对于违反本条款或规则手册的账号，例如作弊、共享账号、规避封禁、骚扰或欺诈，我们可以警告、限制、停用或关闭。付费方案绝不能使账号免受限制。",
     "disputesTitle": "规则裁决与申诉",
-    "disputes": "比赛争议和处罚依据规则手册第 15 和第 16 节。你可以发送邮件至 support@ace-platform.gg，附上 SteamID 和证据，对涉及你账号的决定提出申诉。由未参与初次决定的工作人员审核申诉，并告知结果和理由。这不限制你根据所在国家法律享有的任何权利。",
+    "disputes": "比赛争议和处罚依据规则手册第 15 和第 16 节。你可以发送邮件至 ace.platform.official@gmail.com，附上 SteamID 和证据，对涉及你账号的决定提出申诉。由未参与初次决定的工作人员审核申诉，并告知结果和理由。这不限制你根据所在国家法律享有的任何权利。",
     "changesTitle": "本条款的变更",
     "changes": "我们可能更新本条款。每个新版本都会以新的生效日期发布在本页面。重大变更在发布 7 天后生效，且绝不适用于已开始的付费周期。",
     "languageTitle": "语言",
@@ -73,7 +73,7 @@ export const legalDocs: TextBag["legalDocs"] = {
       "contact": {
         "title": "8. 联系方式",
         "paragraphs": [
-          "support@ace-platform.gg — A.C.E"
+          "ace.platform.official@gmail.com — A.C.E"
         ]
       }
     }
@@ -139,7 +139,7 @@ export const legalDocs: TextBag["legalDocs"] = {
     },
     "controller": {
       "title": "数据控制者",
-      "body": "A.C.E 联系方式:support@ace-platform.gg。"
+      "body": "A.C.E 联系方式:ace.platform.official@gmail.com。"
     }
   },
   "cookiePolicy": {

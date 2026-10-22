@@ -120,7 +120,7 @@ export const RO: MessageBag = {
  "Consimt explicit la parametrii de minimizare a stocării datelor din Politica de confidențialitate A.C.E.",
  contactSend: "TRIMITE MESAJ TELEMETRIC SECURIZAT",
  contactCorporate:
- "A.C.E | Gateway de e-mail securizat: support@ace-platform.gg",
+ "A.C.E | Gateway de e-mail securizat: ace.platform.official@gmail.com",
  contactModalTitle: "Formular de contact online · în curând",
  contactModalBody:
  "Mesajele din acest formular nu sunt încă livrate. Formularul se deschide odată cu echipa noastră de asistență. A.C.E nu îți cere niciodată parola Steam.",

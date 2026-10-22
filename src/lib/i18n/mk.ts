@@ -110,7 +110,7 @@ export const MK: MessageBag = {
  contactInquiryGeneral: "Општо",
  contactConsent: "Изрично се согласувам со параметрите за чување со минимизирање на податоците според Политиката за приватност на A.C.E.",
  contactSend: "ИСПРАТИ БЕЗБЕДНА ТЕЛЕМЕТРИСКА ПОРАКА",
- contactCorporate: "A.C.E | Безбеден портал за е-пошта: support@ace-platform.gg",
+ contactCorporate: "A.C.E | Безбеден портал за е-пошта: ace.platform.official@gmail.com",
  contactModalTitle: "Онлајн формулар за контакт · наскоро",
  contactModalBody: "Пораките од овој формулар сè уште не се доставуваат. Формуларот се отвора заедно со нашата поддршка. A.C.E никогаш не ја бара твојата Steam-лозинка.",
  contactDisclosure: "Онлајн формуларот за контакт наскоро се отвора. A.C.E никогаш не ја бара твојата Steam-лозинка.",

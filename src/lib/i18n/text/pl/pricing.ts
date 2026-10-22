@@ -5,7 +5,7 @@ export const pricing: TextBag["pricing"] = {
     "kicker": "MACIERZ FUNKCJI",
     "title": "Porównanie planów",
     "note": "Złoty znacznik: w zestawie. Kreska: brak. Wkrótce: część planu, jeszcze nie wydana. Żaden plan nie kupuje ratingu, matchmakingu ani pierwszeństwa w kolejce.",
-    "checkout": "Płatności jeszcze nie ma, więc dziś każde konto jest na Free.",
+    "checkout": "Płatność odbywa się przez Paddle, naszego Merchant of Record. Plan zmienia się, gdy tylko Paddle potwierdzi płatność.",
     "feature": "Funkcja",
     "included": "W zestawie",
     "notIncluded": "Brak",
@@ -55,7 +55,7 @@ export const pricing: TextBag["pricing"] = {
       "headshot": "% headshotów",
       "rounds": "Wyniki w każdej rundzie",
       "noData": "Brak danych",
-      "locked": "Rozszerzona analiza meczu jest częścią A.C.E Premium (7 $/mies.). Wkrótce: płatności jeszcze nie istnieją, więc dziś żadne konto nie jest Premium.",
+      "locked": "Rozszerzona analiza meczów jest częścią A.C.E Premium (7 $/mies.). Zasubskrybuj na stronie cennika przez kasę Paddle.",
       "premiumNote": "Twój plan to Premium. Twoja analiza pojawi się tutaj, gdy powstanie analiza dem.",
       "signIn": "Zaloguj się przez Steam, aby sprawdzić dostęp do analizy.",
       "plansLink": "Zobacz plany"
@@ -65,7 +65,7 @@ export const pricing: TextBag["pricing"] = {
       "metaDescription": "Co obejmują A.C.E Plus i Premium, czego nie obejmuje żaden plan i jak działa anulowanie.",
       "kicker": "ACE-LEGAL / WARUNKI PREMIUM",
       "title": "Warunki A.C.E Premium",
-      "intro": "Te warunki opisują, co obejmują płatne plany. Stanowią część Regulaminu pod /terms. Płatności jeszcze nie istnieją, więc dziś nie można niczego kupić ani nic nie jest pobierane.",
+      "intro": "Te warunki opisują, co obejmują płatne plany. Są częścią Warunków korzystania pod /terms. Płatności przetwarza Paddle jako Merchant of Record.",
       "pricesTitle": "1. Plany, ceny i anulowanie",
       "prices": "Free {free}. Plus {plus} miesięcznie. Premium {premium} miesięcznie. Plany odnawiają się co miesiąc. Możesz zrezygnować w każdej chwili bez kary w ustawieniach panelu i zachować dostęp do końca opłaconego miesiąca. Niepełny miesiąc nie podlega zwrotowi, chyba że wymaga tego prawo Twojego kraju.",
       "plusTitle": "2. Co obejmuje Plus",
@@ -143,8 +143,8 @@ export const pricing: TextBag["pricing"] = {
     "chooseAria": "Wybierz {plan} za {price} miesięcznie"
   },
   "billing": {
-    "kicker": "HARMONOGRAM ROZLICZEŃ",
-    "title": "Jak będą działać rozliczenia, gdy powstaną",
+    "kicker": "ROZLICZENIA",
+    "title": "Jak działają rozliczenia",
     "body": "Plus kosztuje dokładnie {plus}/mies. Premium kosztuje dokładnie {premium}/mies.",
     "display": {
       "label": "01 · WYŚWIETLANIE",
@@ -152,16 +152,17 @@ export const pricing: TextBag["pricing"] = {
     },
     "rolling": {
       "label": "02 · CYKL ODNAWIALNY",
-      "body": "Gdy rozliczenia powstaną, opłaty będą odnawiane w miesięcznym cyklu. Częściowo wykorzystany miesiąc nie podlega zwrotowi. Anulowanie zatrzymuje następny cykl i nie kasuje bieżącego, już opłaconego okresu."
+      "body": "Paddle pobiera opłatę za plan co miesiąc, dopóki go nie anulujesz. Anuluj w dowolnym momencie w Zarządzaj subskrypcją; plan zostaje do końca opłaconego okresu. Zwroty zgodnie z Polityką zwrotów (14 dni)."
     },
     "today": {
-      "label": "03 · DZIŚ"
+      "label": "03 · KASA",
+      "body": "Zapłać w bezpiecznej kasie Paddle z kart planów. Jeśli przycisk pokazuje Wkrótce, płatności nie są jeszcze włączone."
     }
   },
   "compare": {
     "kicker": "Co A.C.E może dziś obiecać",
     "title": "Porównanie członkostwa",
-    "note": "Każdy wiersz odzwierciedla obecny stan strony. Płatności pojawią się wkrótce, a płatny plan nigdy nie otwiera kolejki ani nie daje przewagi.",
+    "note": "Każdy wiersz pokazuje stronę na dziś. Płatne plany kupuje się przez kasę Paddle i nigdy nie otwierają kolejki ani nie kupują przewagi.",
     "caption": "Darmowy, Plus i Premium w porównaniu według tego, co strona robi dziś",
     "columns": {
       "free": "Darmowy",

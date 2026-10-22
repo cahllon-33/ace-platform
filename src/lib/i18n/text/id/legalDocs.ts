@@ -3,13 +3,13 @@ import type { TextBag } from "../types";
 export const legalDocs: TextBag["legalDocs"] = {
   r14: {
     "effective": "Tanggal berlaku: {date}",
-    "contact": "Kontak: support@ace-platform.gg",
+    "contact": "Kontak: ace.platform.official@gmail.com",
     "definitionsTitle": "Definisi",
     "definitions": "Dalam Ketentuan ini, “A.C.E” dan “kami” berarti A.C.E “Situs” berarti ace-platform.gg. “Akun” berarti profil A.C.E yang dibuat melalui login Steam. “Paket” berarti Free, Plus, atau Premium. “Buku Aturan” berarti Buku Aturan Kompetitif di /rules. “Admin” berarti staf yang menerapkan Buku Aturan pada suatu acara.",
     "suspensionTitle": "Pembatasan dan penangguhan akun",
     "suspension": "Kami dapat memperingatkan, membatasi, menangguhkan, atau menutup Akun yang melanggar Ketentuan ini atau Buku Aturan, misalnya karena curang, berbagi akun, menghindari larangan, pelecehan, atau penipuan. Paket berbayar tidak pernah melindungi Akun dari pembatasan.",
     "disputesTitle": "Keputusan aturan dan banding",
-    "disputes": "Sengketa pertandingan dan hukuman mengikuti bagian 15 dan 16 Buku Aturan. Kamu dapat mengajukan banding atas keputusan terkait Akunmu dengan mengirim email ke support@ace-platform.gg beserta SteamID dan buktimu. Staf yang tidak membuat keputusan pertama meninjau banding dan memberi tahu hasil beserta alasannya. Ini tidak membatasi hak apa pun yang kamu miliki menurut hukum negaramu.",
+    "disputes": "Sengketa pertandingan dan hukuman mengikuti bagian 15 dan 16 Buku Aturan. Kamu dapat mengajukan banding atas keputusan terkait Akunmu dengan mengirim email ke ace.platform.official@gmail.com beserta SteamID dan buktimu. Staf yang tidak membuat keputusan pertama meninjau banding dan memberi tahu hasil beserta alasannya. Ini tidak membatasi hak apa pun yang kamu miliki menurut hukum negaramu.",
     "changesTitle": "Perubahan Ketentuan ini",
     "changes": "Kami dapat memperbarui Ketentuan ini. Setiap versi baru diterbitkan di halaman ini dengan tanggal berlaku baru. Perubahan material berlaku 7 hari setelah diterbitkan dan tidak pernah berlaku untuk periode pembayaran yang sudah dimulai.",
     "languageTitle": "Bahasa",
@@ -73,7 +73,7 @@ export const legalDocs: TextBag["legalDocs"] = {
       "contact": {
         "title": "8. Kontak",
         "paragraphs": [
-          "support@ace-platform.gg — A.C.E"
+          "ace.platform.official@gmail.com — A.C.E"
         ]
       }
     }
@@ -139,7 +139,7 @@ export const legalDocs: TextBag["legalDocs"] = {
     },
     "controller": {
       "title": "Pengendali",
-      "body": "A.C.E. Kontak: support@ace-platform.gg."
+      "body": "A.C.E. Kontak: ace.platform.official@gmail.com."
     }
   },
   "cookiePolicy": {

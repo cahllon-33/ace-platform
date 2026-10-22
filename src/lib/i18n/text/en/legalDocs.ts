@@ -1,13 +1,13 @@
 ﻿export const legalDocs = {
   r14: {
     "effective": "Effective date: {date}",
-    "contact": "Contact: support@ace-platform.gg",
+    "contact": "Contact: ace.platform.official@gmail.com",
     "definitionsTitle": "Definitions",
     "definitions": "In these Terms, \"A.C.E\", \"we\" and \"us\" mean the A.C.E operator. \"Site\" means ace-platform.gg. \"Account\" means the A.C.E profile created through Steam sign-in. \"Plan\" means Free, Plus or Premium. \"Rulebook\" means the Competitive Rulebook at /rules. \"Admin\" means a staff member who applies the Rulebook to an event.",
     "suspensionTitle": "Account restrictions and suspension",
     "suspension": "We may warn, restrict, suspend or close an Account that breaks these Terms or the Rulebook, for example for cheating, account sharing, ban evasion, harassment or fraud. A paid Plan never protects an Account from a restriction.",
     "disputesTitle": "Rule decisions and appeals",
-    "disputes": "Match disputes and penalties follow sections 15 and 16 of the Rulebook. You may appeal a decision about your Account by emailing support@ace-platform.gg with your SteamID and your evidence. A staff member who did not make the first decision reviews the appeal and tells you the outcome and the reason. This does not limit any right you have under the law of your country.",
+    "disputes": "Match disputes and penalties follow sections 15 and 16 of the Rulebook. You may appeal a decision about your Account by emailing ace.platform.official@gmail.com with your SteamID and your evidence. A staff member who did not make the first decision reviews the appeal and tells you the outcome and the reason. This does not limit any right you have under the law of your country.",
     "changesTitle": "Changes to these Terms",
     "changes": "We may update these Terms. Each new version is published on this page with a new effective date. A material change takes effect 7 days after publication and never applies to a payment period that has already started.",
     "languageTitle": "Language",
@@ -73,7 +73,7 @@
       contact: {
         title: "8. Contact",
         paragraphs: [
-          "support@ace-platform.gg — A.C.E",
+          "ace.platform.official@gmail.com — A.C.E",
         ],
       },
     },
@@ -147,7 +147,7 @@
     },
     controller: {
       title: "Controller",
-      body: "A.C.E. Contact: support@ace-platform.gg.",
+      body: "A.C.E. Contact: ace.platform.official@gmail.com.",
     },
   },
   cookiePolicy: {

@@ -16,7 +16,7 @@ const packs = {
     platformNoticeBody:
       "לוחות הטורניר, טבלאות המובילים וכרטיסי הסקינים באתר הם דוגמאות. הם אינם פריטים של Valve ואינם פרסים בתשלום. האתר אינו מפעיל תוכנת אנטי-צ'יט. פתיחת האתר אינה מבטלת זכות משפטית ואינה חתימה על חוזה. A.C.E אינה אוספת מזהה חומרה ואינה מוחקת חשבון מפני שמישהו פונה לעורך דין או לבית משפט.",
     copyrightLine: "© 2026 A.C.E אין שיוך ל-Valve.",
-    corporateStrip: "A.C.E | תמיכה: support@ace-platform.gg | אין שיוך ל-Valve",
+    corporateStrip: "A.C.E | תמיכה: ace.platform.official@gmail.com | אין שיוך ל-Valve",
     shieldAi: "תשתית AI: לא פרוסה",
     shieldNeural: "ניתוח עצבי: לא פועל",
     shieldClient: "לקוח אנטי-צ'יט",
@@ -62,7 +62,7 @@ const packs = {
     platformNoticeBody:
       "لوحات البطولة ولوحات المتصدرين وبطاقات السكنات في هذا الموقع أمثلة. ليست أغراض Valve وليست جوائز مدفوعة. هذا الموقع لا يشغّل برنامج مكافحة غش. فتح الموقع لا يلغي حقاً قانونياً ولا يوقّع عقداً. A.C.E لا تجمع معرّف عتاد ولا تحذف حساباً لأن شخصاً تواصل مع محامٍ أو محكمة.",
     copyrightLine: "© 2026 A.C.E غير تابعة لـ Valve.",
-    corporateStrip: "A.C.E | الدعم: support@ace-platform.gg | غير تابعة لـ Valve",
+    corporateStrip: "A.C.E | الدعم: ace.platform.official@gmail.com | غير تابعة لـ Valve",
     shieldAi: "بنية الذكاء الاصطناعي: غير منشورة",
     shieldNeural: "التحليل العصبي: لا يعمل",
     shieldClient: "عميل مكافحة الغش",
@@ -108,7 +108,7 @@ const packs = {
     platformNoticeBody:
       "لوحات البطولة ولوحات الترتيب وبطاقات السكنات في الموقع ده أمثلة. مش حاجات Valve ومش جوايز مدفوعة. الموقع مش بيشغّل برنامج مكافحة غش. فتح الموقع مش بيلغي حق قانوني ومش بيوقّع عقد. A.C.E مش بتجمع معرّف جهاز ومش بتمسح حساب عشان حد كلّم محامي أو محكمة.",
     copyrightLine: "© 2026 A.C.E مش تابعة لـ Valve.",
-    corporateStrip: "A.C.E | الدعم: support@ace-platform.gg | مش تابعة لـ Valve",
+    corporateStrip: "A.C.E | الدعم: ace.platform.official@gmail.com | مش تابعة لـ Valve",
     shieldAi: "بنية الذكاء الاصطناعي: مش متجهزة",
     shieldNeural: "التحليل العصبي: مش شغال",
     shieldClient: "عميل مكافحة الغش",
@@ -154,7 +154,7 @@ const packs = {
     platformNoticeBody:
       "Турнирные сетки, таблицы и карточки скинов на этом сайте — примеры. Это не предметы Valve и не оплаченные призы. Сайт не запускает программу античита. Открытие сайта не отменяет законное право и не подписывает договор. A.C.E не собирает идентификатор оборудования и не удаляет аккаунт из-за обращения к юристу или в суд.",
     copyrightLine: "© 2026 A.C.E. Не связана с Valve.",
-    corporateStrip: "A.C.E | Поддержка: support@ace-platform.gg | Не связана с Valve",
+    corporateStrip: "A.C.E | Поддержка: ace.platform.official@gmail.com | Не связана с Valve",
     shieldAi: "ИНФРАСТРУКТУРА ИИ: НЕ РАЗВЁРНУТА",
     shieldNeural: "НЕЙРОАНАЛИЗ: НЕ РАБОТАЕТ",
     shieldClient: "Клиент античита",
@@ -200,7 +200,7 @@ const packs = {
     platformNoticeBody:
       "Los cuadros, las clasificaciones y las tarjetas de aspectos de este sitio son ejemplos. No son objetos de Valve ni premios pagados. Este sitio no ejecuta un programa antitrampas. Abrir el sitio no anula un derecho legal ni firma un contrato. A.C.E no recoge un identificador de hardware ni borra una cuenta porque alguien contacte a un abogado o a un tribunal.",
     copyrightLine: "© 2026 A.C.E. Sin afiliación con Valve.",
-    corporateStrip: "A.C.E | Soporte: support@ace-platform.gg | Sin afiliación con Valve",
+    corporateStrip: "A.C.E | Soporte: ace.platform.official@gmail.com | Sin afiliación con Valve",
     shieldAi: "INFRAESTRUCTURA DE IA: NO DESPLEGADA",
     shieldNeural: "ANÁLISIS NEURONAL: NO EN MARCHA",
     shieldClient: "Cliente antitrampas",
@@ -246,7 +246,7 @@ const packs = {
     platformNoticeBody:
       "Chaves, tabelas e cartões de skins neste site são exemplos. Não são itens da Valve nem prêmios pagos. Este site não executa um programa antitrapaça. Abrir o site não cancela um direito legal nem assina um contrato. A A.C.E não coleta um identificador de hardware e não apaga uma conta porque alguém procurou um advogado ou um tribunal.",
     copyrightLine: "© 2026 A.C.E. Sem vínculo com a Valve.",
-    corporateStrip: "A.C.E | Suporte: support@ace-platform.gg | Sem vínculo com a Valve",
+    corporateStrip: "A.C.E | Suporte: ace.platform.official@gmail.com | Sem vínculo com a Valve",
     shieldAi: "INFRAESTRUTURA DE IA: NÃO IMPLANTADA",
     shieldNeural: "ANÁLISE NEURAL: NÃO EM EXECUÇÃO",
     shieldClient: "Cliente antitrapaça",
@@ -292,7 +292,7 @@ const packs = {
     platformNoticeBody:
       "Les tableaux, classements et cartes de skins de ce site sont des exemples. Ce ne sont pas des objets Valve ni des prix payés. Ce site n'exécute pas de programme anti-triche. Ouvrir le site n'annule pas un droit et ne signe pas un contrat. A.C.E ne collecte pas d'identifiant matériel et ne supprime pas un compte parce que quelqu'un contacte un avocat ou un tribunal.",
     copyrightLine: "© 2026 A.C.E. Sans lien avec Valve.",
-    corporateStrip: "A.C.E | Support : support@ace-platform.gg | Sans lien avec Valve",
+    corporateStrip: "A.C.E | Support : ace.platform.official@gmail.com | Sans lien avec Valve",
     shieldAi: "INFRASTRUCTURE IA : NON DÉPLOYÉE",
     shieldNeural: "ANALYSE NEURONALE : ARRÊTÉE",
     shieldClient: "Client anti-triche",
@@ -338,7 +338,7 @@ const packs = {
     platformNoticeBody:
       "本网站上的赛事树、排行榜和皮肤卡片都是示例。它们不是 Valve 物品，也不是已支付的奖品。本网站不运行反作弊程序。打开网站不会取消一项法定权利，也不会签署合同。A.C.E 不收集硬件标识，也不会因为有人联系律师或法院而删除账户。",
     copyrightLine: "© 2026 A.C.E 与 Valve 无关联。",
-    corporateStrip: "A.C.E | 支持：support@ace-platform.gg | 与 Valve 无关联",
+    corporateStrip: "A.C.E | 支持：ace.platform.official@gmail.com | 与 Valve 无关联",
     shieldAi: "人工智能基础设施：未部署",
     shieldNeural: "神经分析：未运行",
     shieldClient: "反作弊客户端",
@@ -384,7 +384,7 @@ const packs = {
     platformNoticeBody:
       "このサイトのトーナメント表、順位表、スキンカードは見本です。Valveの物品でも、支払われた賞品でもありません。このサイトはアンチチートプログラムを動かしていません。サイトを開いても法的権利は取り消されず、契約にも署名しません。A.C.E はハードウェア識別子を集めず、弁護士や裁判所へ連絡したことを理由にアカウントを削除しません。",
     copyrightLine: "© 2026 A.C.E Valveとは無関係です。",
-    corporateStrip: "A.C.E | サポート: support@ace-platform.gg | Valveとは無関係",
+    corporateStrip: "A.C.E | サポート: ace.platform.official@gmail.com | Valveとは無関係",
     shieldAi: "AI基盤: 未配備",
     shieldNeural: "ニューラル分析: 停止中",
     shieldClient: "アンチチートクライアント",
@@ -430,7 +430,7 @@ const packs = {
     platformNoticeBody:
       "इस साइट पर टूर्नामेंट बोर्ड, लीडरबोर्ड और स्किन कार्ड उदाहरण हैं। वे Valve की वस्तुएँ नहीं हैं और भुगतान किए गए पुरस्कार नहीं हैं। यह साइट एंटी-चीट प्रोग्राम नहीं चलाती। साइट खोलना किसी कानूनी अधिकार को रद्द नहीं करता और अनुबंध पर हस्ताक्षर नहीं करता। A.C.E हार्डवेयर पहचान नहीं लेती और वकील या अदालत से संपर्क करने पर खाता नहीं हटाती।",
     copyrightLine: "© 2026 A.C.E Valve से संबद्ध नहीं।",
-    corporateStrip: "A.C.E | सहायता: support@ace-platform.gg | Valve से संबद्ध नहीं",
+    corporateStrip: "A.C.E | सहायता: ace.platform.official@gmail.com | Valve से संबद्ध नहीं",
     shieldAi: "एआई ढाँचा: तैनात नहीं",
     shieldNeural: "न्यूरल विश्लेषण: नहीं चल रहा",
     shieldClient: "एंटी-चीट क्लाइंट",
@@ -476,7 +476,7 @@ const packs = {
     platformNoticeBody:
       "Turneringsträd, topplistor och skinnkort på den här webbplatsen är exempel. De är inte Valve-föremål och inte betalda priser. Webbplatsen kör inget anti-fuskprogram. Att öppna webbplatsen upphäver ingen juridisk rättighet och skriver inte under ett avtal. A.C.E samlar inte in en hårdvaruidentifierare och raderar inte ett konto för att någon kontaktar en jurist eller en domstol.",
     copyrightLine: "© 2026 A.C.E. Inte ansluten till Valve.",
-    corporateStrip: "A.C.E | Support: support@ace-platform.gg | Inte ansluten till Valve",
+    corporateStrip: "A.C.E | Support: ace.platform.official@gmail.com | Inte ansluten till Valve",
     shieldAi: "AI-INFRASTRUKTUR: INTE DRIFTSATT",
     shieldNeural: "NEURAL ANALYS: KÖRS INTE",
     shieldClient: "Anti-fuskklient",
@@ -522,7 +522,7 @@ const packs = {
     platformNoticeBody:
       "Turnierbäume, Ranglisten und Skin-Karten auf dieser Website sind Beispiele. Sie sind keine Valve-Gegenstände und keine bezahlten Preise. Diese Website führt kein Anti-Cheat-Programm aus. Das Öffnen der Website hebt kein Recht auf und unterschreibt keinen Vertrag. A.C.E erfasst keine Hardware-Kennung und löscht kein Konto, weil jemand einen Anwalt oder ein Gericht kontaktiert.",
     copyrightLine: "© 2026 A.C.E. Nicht mit Valve verbunden.",
-    corporateStrip: "A.C.E | Support: support@ace-platform.gg | Nicht mit Valve verbunden",
+    corporateStrip: "A.C.E | Support: ace.platform.official@gmail.com | Nicht mit Valve verbunden",
     shieldAi: "KI-INFRASTRUKTUR: NICHT AUSGEROLLT",
     shieldNeural: "NEURONALE ANALYSE: LÄUFT NICHT",
     shieldClient: "Anti-Cheat-Client",
@@ -568,7 +568,7 @@ const packs = {
     platformNoticeBody:
       "Турнірні сітки, таблиці та картки скінів на цьому сайті є прикладами. Це не предмети Valve і не оплачені призи. Сайт не запускає програму античиту. Відкриття сайту не скасовує законне право і не підписує договір. A.C.E не збирає ідентифікатор обладнання і не видаляє обліковий запис через звернення до юриста чи суду.",
     copyrightLine: "© 2026 A.C.E. Не пов’язана з Valve.",
-    corporateStrip: "A.C.E | Підтримка: support@ace-platform.gg | Не пов’язана з Valve",
+    corporateStrip: "A.C.E | Підтримка: ace.platform.official@gmail.com | Не пов’язана з Valve",
     shieldAi: "ІНФРАСТРУКТУРА ШІ: НЕ РОЗГОРНУТА",
     shieldNeural: "НЕЙРОАНАЛІЗ: НЕ ПРАЦЮЄ",
     shieldClient: "Клієнт античиту",
@@ -614,7 +614,7 @@ const packs = {
     platformNoticeBody:
       "ผังทัวร์นาเมนต์ ตารางอันดับ และการ์ดสกินบนเว็บไซต์นี้เป็นตัวอย่าง ไม่ใช่ไอเทมของ Valve และไม่ใช่รางวัลที่จ่ายเงินแล้ว เว็บไซต์นี้ไม่ได้รันโปรแกรมแอนตี้ชีต การเปิดเว็บไซต์ไม่ได้ยกเลิกสิทธิทางกฎหมายและไม่ได้ลงนามในสัญญา A.C.E ไม่เก็บตัวระบุฮาร์ดแวร์ และไม่ลบบัญชีเพราะมีคนติดต่อทนายหรือศาล",
     copyrightLine: "© 2026 A.C.E ไม่ได้สังกัด Valve",
-    corporateStrip: "A.C.E | ช่วยเหลือ: support@ace-platform.gg | ไม่ได้สังกัด Valve",
+    corporateStrip: "A.C.E | ช่วยเหลือ: ace.platform.official@gmail.com | ไม่ได้สังกัด Valve",
     shieldAi: "โครงสร้าง AI: ยังไม่ติดตั้ง",
     shieldNeural: "การวิเคราะห์ประสาท: ไม่ทำงาน",
     shieldClient: "ไคลเอนต์แอนตี้ชีต",
@@ -660,7 +660,7 @@ const packs = {
     platformNoticeBody:
       "Tablourile, clasamentele și cardurile de skin de pe acest site sunt exemple. Nu sunt obiecte Valve și nu sunt premii plătite. Acest site nu rulează un program anti-cheat. Deschiderea site-ului nu anulează un drept legal și nu semnează un contract. A.C.E nu colectează un identificator hardware și nu șterge un cont pentru că cineva contactează un avocat sau o instanță.",
     copyrightLine: "© 2026 A.C.E. Fără legătură cu Valve.",
-    corporateStrip: "A.C.E | Suport: support@ace-platform.gg | Fără legătură cu Valve",
+    corporateStrip: "A.C.E | Suport: ace.platform.official@gmail.com | Fără legătură cu Valve",
     shieldAi: "INFRASTRUCTURĂ AI: NEIMPLEMENTATĂ",
     shieldNeural: "ANALIZĂ NEURALĂ: NU RULEAZĂ",
     shieldClient: "Client anti-cheat",
@@ -706,7 +706,7 @@ const packs = {
     platformNoticeBody:
       "Bu sitedeki turnuva ağaçları, sıralamalar ve skin kartları örnektir. Valve eşyası değildir ve ödenmiş ödül değildir. Bu site bir hile önleme programı çalıştırmaz. Siteyi açmak bir yasal hakkı iptal etmez ve sözleşme imzalamaz. A.C.E bir donanım kimliği toplamaz ve birisi avukat ya da mahkemeyle iletişime geçti diye hesabı silmez.",
     copyrightLine: "© 2026 A.C.E Valve ile bağlantılı değildir.",
-    corporateStrip: "A.C.E | Destek: support@ace-platform.gg | Valve ile bağlantılı değildir",
+    corporateStrip: "A.C.E | Destek: ace.platform.official@gmail.com | Valve ile bağlantılı değildir",
     shieldAi: "YAPAY ZEKÂ ALTYAPISI: KONUŞLANDIRILMADI",
     shieldNeural: "SİNİRSEL ANALİZ: ÇALIŞMIYOR",
     shieldClient: "Hile önleme istemcisi",
@@ -752,7 +752,7 @@ const packs = {
     platformNoticeBody:
       "Drabinki, rankingi i karty skinów na tej stronie są przykładami. To nie są przedmioty Valve ani opłacone nagrody. Ta strona nie uruchamia programu antycheat. Otwarcie strony nie uchyla prawa i nie podpisuje umowy. A.C.E nie zbiera identyfikatora sprzętu i nie usuwa konta dlatego, że ktoś kontaktuje się z prawnikiem albo sądem.",
     copyrightLine: "© 2026 A.C.E. Bez powiązania z Valve.",
-    corporateStrip: "A.C.E | Pomoc: support@ace-platform.gg | Bez powiązania z Valve",
+    corporateStrip: "A.C.E | Pomoc: ace.platform.official@gmail.com | Bez powiązania z Valve",
     shieldAi: "INFRASTRUKTURA AI: NIEWDROŻONA",
     shieldNeural: "ANALIZA NEURONOWA: NIE DZIAŁA",
     shieldClient: "Klient antycheat",

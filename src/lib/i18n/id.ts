@@ -110,7 +110,7 @@ export const ID: MessageBag = {
  contactInquiryGeneral: "Umum",
  contactConsent: "Saya secara tegas menyetujui parameter penyimpanan minimisasi data menurut Kebijakan Privasi A.C.E.",
  contactSend: "KIRIM PESAN TELEMETRI AMAN",
- contactCorporate: "A.C.E | Gerbang email aman: support@ace-platform.gg",
+ contactCorporate: "A.C.E | Gerbang email aman: ace.platform.official@gmail.com",
  contactModalTitle: "Formulir kontak online · segera hadir",
  contactModalBody: "Pesan dari formulir ini belum terkirim. Formulir dibuka bersamaan dengan layanan dukungan kami. A.C.E tidak pernah meminta kata sandi Steam-mu.",
  contactDisclosure: "Formulir kontak online segera dibuka. A.C.E tidak pernah meminta kata sandi Steam-mu.",

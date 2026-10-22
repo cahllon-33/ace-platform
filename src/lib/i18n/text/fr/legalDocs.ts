@@ -3,13 +3,13 @@ import type { TextBag } from "../types";
 export const legalDocs: TextBag["legalDocs"] = {
   r14: {
     "effective": "Date d’effet : {date}",
-    "contact": "Contact : support@ace-platform.gg",
+    "contact": "Contact : ace.platform.official@gmail.com",
     "definitionsTitle": "Définitions",
     "definitions": "Dans les présentes Conditions, « A.C.E », « nous » désignent A.C.E « Site » désigne ace-platform.gg. « Compte » désigne le profil A.C.E créé via la connexion Steam. « Formule » désigne Free, Plus ou Premium. « Règlement » désigne le Règlement compétitif sur /rules. « Admin » désigne un membre de l’équipe qui applique le Règlement à un événement.",
     "suspensionTitle": "Restrictions et suspension de compte",
     "suspension": "Nous pouvons avertir, restreindre, suspendre ou fermer un Compte qui enfreint ces Conditions ou le Règlement, par exemple pour triche, partage de compte, contournement de bannissement, harcèlement ou fraude. Une formule payante ne protège jamais un Compte d’une restriction.",
     "disputesTitle": "Décisions et recours",
-    "disputes": "Les litiges de match et les sanctions suivent les sections 15 et 16 du Règlement. Tu peux faire appel d’une décision concernant ton Compte en écrivant à support@ace-platform.gg avec ton SteamID et tes preuves. Un membre de l’équipe qui n’a pas pris la première décision examine l’appel et t’indique le résultat et le motif. Cela ne limite aucun droit dont tu disposes selon la loi de ton pays.",
+    "disputes": "Les litiges de match et les sanctions suivent les sections 15 et 16 du Règlement. Tu peux faire appel d’une décision concernant ton Compte en écrivant à ace.platform.official@gmail.com avec ton SteamID et tes preuves. Un membre de l’équipe qui n’a pas pris la première décision examine l’appel et t’indique le résultat et le motif. Cela ne limite aucun droit dont tu disposes selon la loi de ton pays.",
     "changesTitle": "Modifications des présentes Conditions",
     "changes": "Nous pouvons mettre à jour ces Conditions. Chaque nouvelle version est publiée sur cette page avec une nouvelle date d’effet. Une modification importante prend effet 7 jours après sa publication et ne s’applique jamais à une période de paiement déjà commencée.",
     "languageTitle": "Langue",
@@ -75,7 +75,7 @@ export const legalDocs: TextBag["legalDocs"] = {
       contact: {
         title: "8. Contact",
         paragraphs: [
-          "support@ace-platform.gg — A.C.E",
+          "ace.platform.official@gmail.com — A.C.E",
         ],
       },
     },
@@ -149,7 +149,7 @@ export const legalDocs: TextBag["legalDocs"] = {
     },
     controller: {
       title: "Responsable du traitement",
-      body: "A.C.E. Contact : support@ace-platform.gg.",
+      body: "A.C.E. Contact : ace.platform.official@gmail.com.",
     },
   },
   cookiePolicy: {

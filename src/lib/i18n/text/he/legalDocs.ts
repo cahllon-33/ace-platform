@@ -3,13 +3,13 @@ import type { TextBag } from "../types";
 export const legalDocs: TextBag["legalDocs"] = {
   r14: {
     "effective": "תאריך תחילה: {date}",
-    "contact": "יצירת קשר: support@ace-platform.gg",
+    "contact": "יצירת קשר: ace.platform.official@gmail.com",
     "definitionsTitle": "הגדרות",
     "definitions": "בתנאים אלה, \"A.C.E\" ו\"אנחנו\" הם מפעיל A.C.E \"האתר\" הוא ace-platform.gg. \"חשבון\" הוא פרופיל A.C.E שנוצר בהתחברות דרך Steam. \"מסלול\" הוא Free, Plus או Premium. \"ספר החוקים\" הוא ספר החוקים התחרותי ב-/rules. \"אדמין\" הוא איש צוות שמיישם את ספר החוקים באירוע.",
     "suspensionTitle": "הגבלה והשעיה של חשבון",
     "suspension": "אנחנו רשאים להזהיר, להגביל, להשעות או לסגור חשבון שמפר את התנאים או את ספר החוקים, למשל בשל רמאות, שיתוף חשבון, עקיפת הרחקה, הטרדה או הונאה. מסלול בתשלום לעולם לא מגן על חשבון מפני הגבלה.",
     "disputesTitle": "החלטות לפי החוקים וערעורים",
-    "disputes": "מחלוקות במשחקים ועונשים נקבעים לפי סעיפים 15 ו-16 בספר החוקים. אפשר לערער על החלטה שנוגעת לחשבון שלך במייל ל-support@ace-platform.gg עם ה-SteamID והראיות שלך. איש צוות שלא קיבל את ההחלטה הראשונה בודק את הערעור ומודיע לך על התוצאה ועל הנימוק. אין בכך כדי לגרוע מזכות כלשהי שיש לך לפי הדין במדינתך.",
+    "disputes": "מחלוקות במשחקים ועונשים נקבעים לפי סעיפים 15 ו-16 בספר החוקים. אפשר לערער על החלטה שנוגעת לחשבון שלך במייל ל-ace.platform.official@gmail.com עם ה-SteamID והראיות שלך. איש צוות שלא קיבל את ההחלטה הראשונה בודק את הערעור ומודיע לך על התוצאה ועל הנימוק. אין בכך כדי לגרוע מזכות כלשהי שיש לך לפי הדין במדינתך.",
     "changesTitle": "שינויים בתנאים",
     "changes": "אנחנו רשאים לעדכן את התנאים. כל גרסה חדשה מתפרסמת בעמוד הזה עם תאריך תחילה חדש. שינוי מהותי נכנס לתוקף 7 ימים לאחר הפרסום ולעולם לא חל על תקופת תשלום שכבר התחילה.",
     "languageTitle": "שפה",
@@ -75,7 +75,7 @@ export const legalDocs: TextBag["legalDocs"] = {
       contact: {
         title: "8. יצירת קשר",
         paragraphs: [
-          "support@ace-platform.gg — A.C.E",
+          "ace.platform.official@gmail.com — A.C.E",
         ],
       },
     },
@@ -149,7 +149,7 @@ export const legalDocs: TextBag["legalDocs"] = {
     },
     controller: {
       title: "בעל השליטה במידע",
-      body: "A.C.E יצירת קשר: support@ace-platform.gg.",
+      body: "A.C.E יצירת קשר: ace.platform.official@gmail.com.",
     },
   },
   cookiePolicy: {

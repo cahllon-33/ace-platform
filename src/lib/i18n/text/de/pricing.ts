@@ -5,7 +5,7 @@ export const pricing: TextBag["pricing"] = {
     "kicker": "FEATURE-MATRIX",
     "title": "Mitgliedschaften im Vergleich",
     "note": "Goldener Haken: enthalten. Strich: nicht enthalten. Demnächst: Teil des Plans, aber noch nicht veröffentlicht. Kein Plan kauft Rating, Matchmaking oder Warteschlangen-Priorität.",
-    "checkout": "Einen Checkout gibt es noch nicht, daher ist heute jedes Konto auf Free.",
+    "checkout": "Der Checkout läuft über Paddle, unseren Merchant of Record. Dein Plan ändert sich, sobald Paddle die Zahlung bestätigt.",
     "feature": "Funktion",
     "included": "Enthalten",
     "notIncluded": "Nicht enthalten",
@@ -55,7 +55,7 @@ export const pricing: TextBag["pricing"] = {
       "headshot": "Headshot-Quote",
       "rounds": "Leistung pro Runde",
       "noData": "Keine Daten",
-      "locked": "Die erweiterte Matchanalyse ist Teil von A.C.E Premium (7 $/Monat). Demnächst: Einen Checkout gibt es noch nicht, daher ist heute kein Konto Premium.",
+      "locked": "Erweiterte Match-Analyse ist Teil von A.C.E Premium (7 $/Monat). Abonniere auf der Preisseite über den Paddle-Checkout.",
       "premiumNote": "Dein Plan ist Premium. Deine Analyse erscheint hier, sobald Demo-Auswertung existiert.",
       "signIn": "Melde dich mit Steam an, um deinen Analysezugang zu prüfen.",
       "plansLink": "Pläne ansehen"
@@ -65,7 +65,7 @@ export const pricing: TextBag["pricing"] = {
       "metaDescription": "Was A.C.E Plus und Premium enthalten, was kein Plan enthält und wie die Kündigung funktioniert.",
       "kicker": "ACE-LEGAL / PREMIUM-BEDINGUNGEN",
       "title": "A.C.E Premium-Bedingungen",
-      "intro": "Diese Bedingungen beschreiben, was die bezahlten Pläne enthalten. Sie sind Teil der Nutzungsbedingungen unter /terms. Einen Checkout gibt es noch nicht, daher kann heute nichts gekauft oder berechnet werden.",
+      "intro": "Diese Bedingungen beschreiben, was die bezahlten Pläne enthalten. Sie sind Teil der Nutzungsbedingungen unter /terms. Zahlungen verarbeitet Paddle als Merchant of Record.",
       "pricesTitle": "1. Pläne, Preise und Kündigung",
       "prices": "Free {free}. Plus {plus} pro Monat. Premium {premium} pro Monat. Pläne verlängern sich monatlich. Du kannst jederzeit ohne Strafe in den Dashboard-Einstellungen kündigen und behältst den Zugang bis zum Ende des bezahlten Monats. Ein angebrochener Monat wird nicht erstattet, sofern das Recht deines Landes es nicht vorschreibt.",
       "plusTitle": "2. Was Plus enthält",
@@ -143,8 +143,8 @@ export const pricing: TextBag["pricing"] = {
     "chooseAria": "{plan} für {price} pro Monat wählen"
   },
   "billing": {
-    "kicker": "ZEITLEISTE DER ABRECHNUNG",
-    "title": "So wird die Abrechnung funktionieren, sobald es sie gibt",
+    "kicker": "ABRECHNUNG",
+    "title": "So funktioniert die Abrechnung",
     "body": "Plus kostet genau {plus}/Monat. Premium kostet genau {premium}/Monat.",
     "display": {
       "label": "01 · ANZEIGE",
@@ -152,16 +152,17 @@ export const pricing: TextBag["pricing"] = {
     },
     "rolling": {
       "label": "02 · LAUFENDER ZYKLUS",
-      "body": "Sobald es eine Abrechnung gibt, verlängern sich die Belastungen in einem laufenden Monatszyklus. Ein angebrochener Monat wird nicht erstattet. Eine Kündigung stoppt den nächsten Zyklus und löscht nicht den aktuellen, bereits bezahlten Zeitraum."
+      "body": "Paddle berechnet deinen Plan jeden Monat, bis du kündigst. Kündige jederzeit unter Abo verwalten; der Plan bleibt bis zum Ende des bezahlten Zeitraums. Erstattungen gemäß Erstattungsrichtlinie (14 Tage)."
     },
     "today": {
-      "label": "03 · HEUTE"
+      "label": "03 · CHECKOUT",
+      "body": "Bezahle im sicheren Paddle-Checkout über die Plan-Karten. Zeigt ein Button „Demnächst“, sind Zahlungen noch nicht aktiviert."
     }
   },
   "compare": {
     "kicker": "Was A.C.E heute versprechen kann",
     "title": "Vergleich der Mitgliedschaften",
-    "note": "Jede Zeile gibt den heutigen Stand der Website wieder. Die Bezahlung folgt in Kürze, und ein bezahlter Plan öffnet nie eine Warteschlange und kauft keinen Vorteil.",
+    "note": "Jede Zeile zeigt den heutigen Stand der Seite. Bezahlte Pläne werden über den Paddle-Checkout gekauft und öffnen nie eine Queue oder kaufen einen Vorteil.",
     "caption": "Kostenlos, Plus und Premium im Vergleich danach, was die Website heute tut",
     "columns": {
       "free": "Kostenlos",

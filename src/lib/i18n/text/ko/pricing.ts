@@ -5,7 +5,7 @@ export const pricing: TextBag["pricing"] = {
     "kicker": "기능 매트릭스",
     "title": "멤버십 비교",
     "note": "금색 체크: 포함. 대시: 미포함. 곧 제공: 플랜에 포함되지만 아직 출시되지 않음. 어떤 플랜도 레이팅, 매치메이킹, 대기열 우선권을 사지 않습니다.",
-    "checkout": "아직 결제가 없으므로 오늘 모든 계정은 Free입니다.",
+    "checkout": "결제는 판매 대행사(Merchant of Record)인 Paddle을 통해 진행됩니다. Paddle이 결제를 확인하면 바로 플랜이 바뀝니다.",
     "feature": "기능",
     "included": "포함",
     "notIncluded": "미포함",
@@ -55,7 +55,7 @@ export const pricing: TextBag["pricing"] = {
       "headshot": "헤드샷 %",
       "rounds": "라운드별 성과",
       "noData": "데이터 없음",
-      "locked": "확장 매치 분석은 A.C.E Premium(월 $7)에 포함됩니다. 곧 제공: 결제가 아직 없어 현재 Premium 계정은 없습니다.",
+      "locked": "확장 매치 분석은 A.C.E Premium(월 $7)에 포함됩니다. 요금 페이지에서 Paddle 결제로 구독하세요.",
       "premiumNote": "플랜이 Premium입니다. 데모 분석이 생기면 여기에 분석이 표시됩니다.",
       "signIn": "Steam으로 로그인해 분석 이용 권한을 확인하세요.",
       "plansLink": "플랜 보기"
@@ -65,7 +65,7 @@ export const pricing: TextBag["pricing"] = {
       "metaDescription": "A.C.E Plus와 Premium에 포함된 것, 어떤 플랜에도 포함되지 않은 것, 해지 방법.",
       "kicker": "ACE-LEGAL / PREMIUM 약관",
       "title": "A.C.E Premium 약관",
-      "intro": "본 약관은 유료 플랜에 포함되는 내용을 설명합니다. /terms의 이용약관의 일부입니다. 아직 결제 기능이 없어 현재는 아무것도 구매하거나 청구할 수 없습니다.",
+      "intro": "이 약관은 유료 플랜의 포함 내용을 설명하며 /terms의 서비스 약관의 일부입니다. 결제는 Merchant of Record인 Paddle이 처리합니다.",
       "pricesTitle": "1. 플랜, 가격, 해지",
       "prices": "Free {free}. Plus 월 {plus}. Premium 월 {premium}. 플랜은 매월 갱신됩니다. 대시보드 설정에서 언제든 위약금 없이 해지할 수 있으며 결제한 달의 마지막까지 이용할 수 있습니다. 일부 사용한 달은 거주 국가의 법률이 요구하지 않는 한 환불되지 않습니다.",
       "plusTitle": "2. Plus 포함 내용",
@@ -143,8 +143,8 @@ export const pricing: TextBag["pricing"] = {
     "chooseAria": "{plan} 선택, 월 {price}"
   },
   "billing": {
-    "kicker": "결제 일정 매트릭스",
-    "title": "결제가 생기면 작동하는 방식",
+    "kicker": "결제",
+    "title": "결제 방식",
     "body": "Plus는 정확히 월 {plus}입니다. Premium은 정확히 월 {premium}입니다.",
     "display": {
       "label": "01 · 표시",
@@ -152,16 +152,17 @@ export const pricing: TextBag["pricing"] = {
     },
     "rolling": {
       "label": "02 · 월간 자동 주기",
-      "body": "결제가 생기면 요금은 월 단위 주기로 갱신됩니다. 한 달 중 일부만 사용한 기간은 환불되지 않습니다. 해지하면 다음 주기가 중단되며, 이미 결제된 현재 기간은 사라지지 않습니다."
+      "body": "Paddle은 해지할 때까지 매월 플랜 요금을 청구합니다. 구독 관리에서 언제든 해지할 수 있으며, 결제한 기간이 끝날 때까지 플랜이 유지됩니다. 환불은 환불 정책(14일)을 따릅니다."
     },
     "today": {
-      "label": "03 · 현재"
+      "label": "03 · 결제",
+      "body": "플랜 카드에서 Paddle의 안전한 결제로 결제하세요. 버튼에 '곧 제공'이 표시되면 아직 결제가 켜지지 않은 것입니다."
     }
   },
   "compare": {
     "kicker": "A.C.E가 오늘 약속할 수 있는 것",
     "title": "멤버십 비교",
-    "note": "모든 항목은 현재 사이트 상태를 반영합니다. 결제는 곧 제공되며, 유료 플랜은 대기열을 열거나 유리함을 사 주지 않습니다.",
+    "note": "각 행은 현재 사이트를 반영합니다. 유료 플랜은 Paddle 결제로 구매하며 대기열을 열거나 이점을 사지 않습니다.",
     "caption": "현재 사이트가 실제로 하는 일 기준으로 비교한 무료, Plus, Premium",
     "columns": {
       "free": "무료",

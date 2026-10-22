@@ -119,7 +119,7 @@ export const TH: MessageBag = {
  contactConsent: "ข้าพเจ้ายินยอมอย่างชัดแจ้งต่อเกณฑ์การเก็บข้อมูลแบบลดทอนภายใต้นโยบายความเป็นส่วนตัวของ A.C.E",
  contactSend: "ส่งข้อความการวัดทางไกลที่ปลอดภัย",
  contactCorporate:
- "A.C.E | ช่องทางอีเมลปลอดภัย: support@ace-platform.gg",
+ "A.C.E | ช่องทางอีเมลปลอดภัย: ace.platform.official@gmail.com",
  contactModalTitle: "แบบฟอร์มติดต่อออนไลน์ · เร็ว ๆ นี้",
  contactModalBody:
  "ข้อความจากแบบฟอร์มนี้ยังไม่ถูกส่ง แบบฟอร์มจะเปิดพร้อมฝ่ายสนับสนุนของเรา A.C.E ไม่เคยขอรหัสผ่าน Steam ของคุณ",

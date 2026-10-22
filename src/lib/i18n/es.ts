@@ -120,7 +120,7 @@ export const ES: MessageBag = {
  "Doy mi consentimiento explícito a los parámetros de minimización del almacenamiento de datos de la Política de privacidad de A.C.E.",
  contactSend: "ENVIAR MENSAJE DE TELEMETRÍA SEGURA",
  contactCorporate:
- "A.C.E | Pasarela de correo segura: support@ace-platform.gg",
+ "A.C.E | Pasarela de correo segura: ace.platform.official@gmail.com",
  contactModalTitle: "Formulario de contacto en línea · próximamente",
  contactModalBody:
  "Los mensajes de este formulario aún no se entregan. El formulario abrirá junto con nuestro equipo de soporte. A.C.E nunca te pedirá tu contraseña de Steam.",

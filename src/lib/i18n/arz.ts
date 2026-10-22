@@ -119,7 +119,7 @@ export const ARZ: MessageBag = {
  contactConsent: "أنا موافق بصراحة على قواعد تقليل تخزين البيانات حسب سياسة خصوصية A.C.E.",
  contactSend: "ابعت رسالة القياس الآمنة",
  contactCorporate:
- "A.C.E | بوابة الإيميل الآمنة: support@ace-platform.gg",
+ "A.C.E | بوابة الإيميل الآمنة: ace.platform.official@gmail.com",
  contactModalTitle: "نموذج الاتصال عبر الإنترنت · قريبًا",
  contactModalBody:
  "لا تُسلَّم الرسائل من هذا النموذج بعد. يُفتح النموذج مع مكتب الدعم لدينا. لا تطلب A.C.E أبدًا كلمة مرور Steam الخاصة بك.",

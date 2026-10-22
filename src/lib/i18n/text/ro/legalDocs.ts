@@ -3,13 +3,13 @@ import type { TextBag } from "../types";
 export const legalDocs: TextBag["legalDocs"] = {
   r14: {
     "effective": "Data intrării în vigoare: {date}",
-    "contact": "Contact: support@ace-platform.gg",
+    "contact": "Contact: ace.platform.official@gmail.com",
     "definitionsTitle": "Definiții",
     "definitions": "În acești Termeni, „A.C.E”, „noi” înseamnă A.C.E „Site” înseamnă ace-platform.gg. „Cont” înseamnă profilul A.C.E creat prin autentificarea Steam. „Plan” înseamnă Free, Plus sau Premium. „Regulament” înseamnă Regulamentul competițional de la /rules. „Admin” înseamnă un membru al echipei care aplică Regulamentul la un eveniment.",
     "suspensionTitle": "Restricții și suspendarea contului",
     "suspension": "Putem avertiza, restricționa, suspenda sau închide un Cont care încalcă acești Termeni sau Regulamentul, de exemplu pentru trișat, partajarea contului, eludarea unei interdicții, hărțuire sau fraudă. Un plan plătit nu protejează niciodată un Cont de o restricție.",
     "disputesTitle": "Decizii privind regulile și contestații",
-    "disputes": "Disputele de meci și sancțiunile urmează secțiunile 15 și 16 din Regulament. Poți contesta o decizie privind Contul tău, scriind la support@ace-platform.gg cu SteamID-ul și dovezile tale. Un membru al echipei care nu a luat prima decizie analizează contestația și îți comunică rezultatul și motivul. Aceasta nu limitează niciun drept pe care îl ai conform legii țării tale.",
+    "disputes": "Disputele de meci și sancțiunile urmează secțiunile 15 și 16 din Regulament. Poți contesta o decizie privind Contul tău, scriind la ace.platform.official@gmail.com cu SteamID-ul și dovezile tale. Un membru al echipei care nu a luat prima decizie analizează contestația și îți comunică rezultatul și motivul. Aceasta nu limitează niciun drept pe care îl ai conform legii țării tale.",
     "changesTitle": "Modificări ale acestor Termeni",
     "changes": "Putem actualiza acești Termeni. Fiecare versiune nouă este publicată pe această pagină cu o nouă dată de intrare în vigoare. O modificare importantă intră în vigoare la 7 zile după publicare și nu se aplică niciodată unei perioade de plată deja începute.",
     "languageTitle": "Limbă",
@@ -73,7 +73,7 @@ export const legalDocs: TextBag["legalDocs"] = {
       "contact": {
         "title": "8. Contact",
         "paragraphs": [
-          "support@ace-platform.gg — A.C.E"
+          "ace.platform.official@gmail.com — A.C.E"
         ]
       }
     }
@@ -139,7 +139,7 @@ export const legalDocs: TextBag["legalDocs"] = {
     },
     "controller": {
       "title": "Operator de date",
-      "body": "A.C.E. Contact: support@ace-platform.gg."
+      "body": "A.C.E. Contact: ace.platform.official@gmail.com."
     }
   },
   "cookiePolicy": {

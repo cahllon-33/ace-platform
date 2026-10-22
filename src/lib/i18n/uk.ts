@@ -110,7 +110,7 @@ export const UK: MessageBag = {
  contactInquiryGeneral: "Загальний",
  contactConsent: "Я явно погоджуюся з параметрами мінімізації зберігання даних за політикою конфіденційності A.C.E.",
  contactSend: "НАДІСЛАТИ ЗАХИЩЕНЕ ТЕЛЕМЕТРИЧНЕ ПОВІДОМЛЕННЯ",
- contactCorporate: "A.C.E | Захищений поштовий шлюз: support@ace-platform.gg",
+ contactCorporate: "A.C.E | Захищений поштовий шлюз: ace.platform.official@gmail.com",
  contactModalTitle: "Онлайн-форма зв'язку · незабаром",
  contactModalBody: "Повідомлення з цієї форми поки не доставляються. Форма відкриється разом зі службою підтримки. A.C.E ніколи не запитує ваш пароль Steam.",
  contactDisclosure: "Онлайн-форма зв'язку незабаром відкриється. A.C.E ніколи не запитує ваш пароль Steam.",

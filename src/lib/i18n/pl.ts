@@ -110,7 +110,7 @@ export const PL: MessageBag = {
  contactInquiryGeneral: "Ogólne",
  contactConsent: "Wyraźnie zgadzam się na parametry minimalizacji przechowywania danych z polityki prywatności A.C.E.",
  contactSend: "WYŚLIJ ZABEZPIECZONĄ WIADOMOŚĆ TELEMETRYCZNĄ",
- contactCorporate: "A.C.E | Zabezpieczona brama poczty: support@ace-platform.gg",
+ contactCorporate: "A.C.E | Zabezpieczona brama poczty: ace.platform.official@gmail.com",
  contactModalTitle: "Formularz kontaktowy online · wkrótce",
  contactModalBody: "Wiadomości z tego formularza nie są jeszcze dostarczane. Formularz ruszy razem z naszym działem wsparcia. A.C.E nigdy nie prosi o hasło do Steam.",
  contactDisclosure: "Formularz kontaktowy online ruszy wkrótce. A.C.E nigdy nie prosi o hasło do Steam.",

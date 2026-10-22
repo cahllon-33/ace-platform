@@ -5,7 +5,7 @@ export const pricing: TextBag["pricing"] = {
     "kicker": "機能マトリクス",
     "title": "メンバーシップ比較",
     "note": "金のチェック：含まれる。ダッシュ：含まれない。近日公開：プランに含まれるが未リリース。どのプランでもレーティング、マッチメイキング、キュー優先は買えません。",
-    "checkout": "決済はまだないため、現在すべてのアカウントはFreeです。",
+    "checkout": "決済はMerchant of RecordであるPaddleで行われます。Paddleが支払いを確認するとすぐにプランが切り替わります。",
     "feature": "機能",
     "included": "含まれる",
     "notIncluded": "含まれない",
@@ -55,7 +55,7 @@ export const pricing: TextBag["pricing"] = {
       "headshot": "ヘッドショット率",
       "rounds": "ラウンドごとのパフォーマンス",
       "noData": "データなし",
-      "locked": "拡張マッチ分析はA.C.E Premium（月額$7）に含まれます。近日公開：決済はまだ存在しないため、現在Premiumのアカウントはありません。",
+      "locked": "詳細なマッチ分析はA.C.E Premium（月額$7）に含まれます。料金ページからPaddle決済で登録できます。",
       "premiumNote": "あなたのプランはPremiumです。デモ解析が実装され次第、ここに分析が表示されます。",
       "signIn": "Steamでサインインして分析へのアクセスを確認してください。",
       "plansLink": "プランを見る"
@@ -65,7 +65,7 @@ export const pricing: TextBag["pricing"] = {
       "metaDescription": "A.C.E PlusとPremiumに含まれるもの、どのプランにも含まれないもの、解約の方法。",
       "kicker": "ACE-LEGAL / PREMIUM規約",
       "title": "A.C.E Premium規約",
-      "intro": "本規約は有料プランの内容を説明します。/termsの利用規約の一部です。決済機能はまだないため、現在は何も購入できず、請求も発生しません。",
+      "intro": "この規約は有料プランの内容を定めるもので、/termsの利用規約の一部です。支払いはMerchant of RecordとしてPaddleが処理します。",
       "pricesTitle": "1. プラン、料金、解約",
       "prices": "Free {free}。Plus 月額{plus}。Premium 月額{premium}。プランは毎月更新されます。ダッシュボードの設定からいつでも違約金なしで解約でき、支払済みの月末まで利用できます。月の途中の分は、お住まいの国の法律で求められる場合を除き返金されません。",
       "plusTitle": "2. Plusに含まれるもの",
@@ -143,8 +143,8 @@ export const pricing: TextBag["pricing"] = {
     "chooseAria": "{plan} を月額 {price} で選択"
   },
   "billing": {
-    "kicker": "支払いタイムライン",
-    "title": "支払い開始後の仕組み",
+    "kicker": "請求",
+    "title": "請求のしくみ",
     "body": "Plus は月額ちょうど {plus}。Premium は月額ちょうど {premium} です。",
     "display": {
       "label": "01 · 表示価格",
@@ -152,16 +152,17 @@ export const pricing: TextBag["pricing"] = {
     },
     "rolling": {
       "label": "02 · 月次更新",
-      "body": "支払い開始後は、月単位で自動更新されます。月の途中までの利用分は返金されません。解約すると次の更新が止まり、支払い済みの期間はそのまま利用できます。"
+      "body": "Paddleは解約するまで毎月プラン料金を請求します。サブスクリプション管理からいつでも解約でき、支払済み期間の終わりまでプランは続きます。返金は返金ポリシー（14日）に従います。"
     },
     "today": {
-      "label": "03 · 現在"
+      "label": "03 · 決済",
+      "body": "プランカードからPaddleの安全な決済でお支払いください。ボタンに「近日公開」と表示される場合、決済はまだ有効になっていません。"
     }
   },
   "compare": {
     "kicker": "A.C.E が現在お約束できること",
     "title": "メンバーシップ比較",
-    "note": "各行はサイトの現状を反映しています。決済はまもなく開始し、有料プランでキューが開いたり有利になったりすることはありません。",
+    "note": "各行は現在のサイトを反映しています。有料プランはPaddle決済で購入し、キューを開いたり優位性を買ったりすることはありません。",
     "caption": "Free、Plus、Premium を現在のサイト機能で比較",
     "columns": {
       "free": "Free",

@@ -110,7 +110,7 @@ export const CS: MessageBag = {
  contactInquiryGeneral: "Obecný",
  contactConsent: "Výslovně souhlasím s parametry ukládání při minimalizaci údajů podle zásad ochrany soukromí A.C.E.",
  contactSend: "ODESLAT ZABEZPEČENOU TELEMETRICKOU ZPRÁVU",
- contactCorporate: "A.C.E | Zabezpečená e-mailová brána: support@ace-platform.gg",
+ contactCorporate: "A.C.E | Zabezpečená e-mailová brána: ace.platform.official@gmail.com",
  contactModalTitle: "Online kontaktní formulář · již brzy",
  contactModalBody: "Zprávy z tohoto formuláře se zatím nedoručují. Formulář se otevře spolu s naší podporou. A.C.E nikdy nežádá tvé heslo ke Steamu.",
  contactDisclosure: "Online kontaktní formulář se brzy otevře. A.C.E nikdy nežádá tvé heslo ke Steamu.",

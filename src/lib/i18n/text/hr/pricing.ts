@@ -5,7 +5,7 @@ export const pricing: TextBag["pricing"] = {
     "kicker": "MATRICA ZNAČAJKI",
     "title": "Usporedba članstava",
     "note": "Zlatna kvačica: uključeno. Crtica: nije uključeno. Uskoro: dio plana, ali još nije objavljeno. Nijedan plan ne kupuje rating, matchmaking ni prednost u redu.",
-    "checkout": "Naplata još ne postoji, pa je danas svaki račun na Free.",
+    "checkout": "Plaćanje ide preko Paddlea, našeg Merchant of Recorda. Plan se mijenja čim Paddle potvrdi uplatu.",
     "feature": "Značajka",
     "included": "Uključeno",
     "notIncluded": "Nije uključeno",
@@ -55,7 +55,7 @@ export const pricing: TextBag["pricing"] = {
       "headshot": "% headshotova",
       "rounds": "Učinak po rundi",
       "noData": "Nema podataka",
-      "locked": "Proširena analiza meča dio je A.C.E Premium (7 $/mj.). Uskoro: plaćanje još ne postoji, pa danas nijedan račun nije Premium.",
+      "locked": "Proširena analiza mečeva dio je A.C.E Premiuma (7 $ mjesečno). Pretplati se na stranici cijena putem Paddle naplate.",
       "premiumNote": "Tvoj plan je Premium. Analiza će se pojaviti ovdje kad bude postojala obrada demo snimki.",
       "signIn": "Prijavi se putem Steama da provjeriš pristup analizi.",
       "plansLink": "Pogledaj planove"
@@ -65,7 +65,7 @@ export const pricing: TextBag["pricing"] = {
       "metaDescription": "Što uključuju A.C.E Plus i Premium, što ne uključuje nijedan plan i kako funkcionira otkazivanje.",
       "kicker": "ACE-LEGAL / PREMIUM UVJETI",
       "title": "Uvjeti A.C.E Premium",
-      "intro": "Ovi uvjeti opisuju što uključuju plaćeni planovi. Dio su Uvjeta korištenja na /terms. Naplata još ne postoji pa se danas ništa ne može kupiti ni naplatiti.",
+      "intro": "Ovi uvjeti opisuju što uključuju plaćeni planovi. Dio su Uvjeta korištenja na /terms. Plaćanja obrađuje Paddle kao Merchant of Record.",
       "pricesTitle": "1. Planovi, cijene i otkazivanje",
       "prices": "Free {free}. Plus {plus} mjesečno. Premium {premium} mjesečno. Planovi se obnavljaju mjesečno. Otkazati možeš bilo kada bez kazne u postavkama nadzorne ploče i zadržati pristup do kraja plaćenog mjeseca. Započeti mjesec ne vraća se, osim ako to traži zakon tvoje zemlje.",
       "plusTitle": "2. Što uključuje Plus",
@@ -143,8 +143,8 @@ export const pricing: TextBag["pricing"] = {
     "chooseAria": "Odaberi {plan} za {price} mjesečno"
   },
   "billing": {
-    "kicker": "MATRICA VREMENSKE CRTE NAPLATE",
-    "title": "Kako će naplata raditi kad bude postojala",
+    "kicker": "NAPLATA",
+    "title": "Kako funkcionira naplata",
     "body": "Plus je točno {plus}/mj. Premium je točno {premium}/mj.",
     "display": {
       "label": "01 · PRIKAZ",
@@ -152,16 +152,17 @@ export const pricing: TextBag["pricing"] = {
     },
     "rolling": {
       "label": "02 · KONTINUIRANI CIKLUS",
-      "body": "Kad naplata bude postojala, naknade se obnavljaju u mjesečnom kontinuiranom ciklusu. Djelomični mjesec ne vraća se. Otkazivanje zaustavlja sljedeći ciklus i ne briše trenutačno unaprijed plaćeno razdoblje."
+      "body": "Paddle naplaćuje plan svaki mjesec dok ga ne otkažeš. Otkaži bilo kada u Upravljanju pretplatom; plan ostaje do kraja plaćenog razdoblja. Povrati prema Politici povrata (14 dana)."
     },
     "today": {
-      "label": "03 · DANAS"
+      "label": "03 · NAPLATA",
+      "body": "Plati u sigurnoj Paddle naplati s kartica planova. Ako gumb prikazuje Uskoro, plaćanja još nisu uključena."
     }
   },
   "compare": {
     "kicker": "Što A.C.E može obećati danas",
     "title": "Usporedba članstava",
-    "note": "Svaki redak odražava stranicu danas. Plaćanje stiže uskoro, a plaćeni plan nikad ne otvara red niti kupuje prednost.",
+    "note": "Svaki red prikazuje stranicu danas. Plaćeni planovi kupuju se putem Paddle naplate i nikad ne otvaraju red ni ne kupuju prednost.",
     "caption": "Free, Plus i Premium uspoređeni prema onome što stranica danas radi",
     "columns": {
       "free": "Free",

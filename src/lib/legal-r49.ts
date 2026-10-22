@@ -12,8 +12,9 @@ export type LegalDoc = { kicker: string; title: string; lede: string; sections: 
 
 const OP = "Daniel Kahlon, operating A.C.E";
 const ADDRESS = "Bat Yam, Israel";
-/** Single contact source (env ACE_CONTACT_EMAIL, inlined at build). "" = not set: email lines are hidden. */
-export const CONTACT_EMAIL = (process.env.ACE_CONTACT_EMAIL || "").trim();
+/** Single contact source: src/lib/contact.ts (default address, env ACE_CONTACT_EMAIL overrides). */
+import { CONTACT_EMAIL } from "@/lib/contact";
+export { CONTACT_EMAIL };
 /** Token in the legal text; resolved by resolveContact(). [[...]] marks a segment dropped when no email is set. */
 const MAIL = "{contact}";
 

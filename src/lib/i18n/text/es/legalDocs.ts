@@ -3,13 +3,13 @@ import type { TextBag } from "../types";
 export const legalDocs: TextBag["legalDocs"] = {
   r14: {
     "effective": "Fecha de entrada en vigor: {date}",
-    "contact": "Contacto: support@ace-platform.gg",
+    "contact": "Contacto: ace.platform.official@gmail.com",
     "definitionsTitle": "Definiciones",
     "definitions": "En estos Términos, «A.C.E», «nosotros» significa A.C.E «Sitio» significa ace-platform.gg. «Cuenta» significa el perfil de A.C.E creado mediante el inicio de sesión con Steam. «Plan» significa Free, Plus o Premium. «Reglamento» significa el Reglamento Competitivo en /rules. «Admin» significa un miembro del equipo que aplica el Reglamento en un evento.",
     "suspensionTitle": "Restricciones y suspensión de cuentas",
     "suspension": "Podemos advertir, restringir, suspender o cerrar una Cuenta que incumpla estos Términos o el Reglamento, por ejemplo por trampas, compartir cuenta, evadir una sanción, acoso o fraude. Un plan de pago nunca protege una Cuenta de una restricción.",
     "disputesTitle": "Decisiones sobre reglas y apelaciones",
-    "disputes": "Las disputas de partida y las sanciones siguen las secciones 15 y 16 del Reglamento. Puedes apelar una decisión sobre tu Cuenta escribiendo a support@ace-platform.gg con tu SteamID y tus pruebas. Un miembro del equipo que no tomó la primera decisión revisa la apelación y te comunica el resultado y el motivo. Esto no limita ningún derecho que tengas según la ley de tu país.",
+    "disputes": "Las disputas de partida y las sanciones siguen las secciones 15 y 16 del Reglamento. Puedes apelar una decisión sobre tu Cuenta escribiendo a ace.platform.official@gmail.com con tu SteamID y tus pruebas. Un miembro del equipo que no tomó la primera decisión revisa la apelación y te comunica el resultado y el motivo. Esto no limita ningún derecho que tengas según la ley de tu país.",
     "changesTitle": "Cambios en estos Términos",
     "changes": "Podemos actualizar estos Términos. Cada nueva versión se publica en esta página con una nueva fecha de entrada en vigor. Un cambio importante entra en vigor 7 días después de su publicación y nunca se aplica a un periodo de pago ya iniciado.",
     "languageTitle": "Idioma",
@@ -75,7 +75,7 @@ export const legalDocs: TextBag["legalDocs"] = {
       contact: {
         title: "8. Contacto",
         paragraphs: [
-          "support@ace-platform.gg — A.C.E",
+          "ace.platform.official@gmail.com — A.C.E",
         ],
       },
     },
@@ -149,7 +149,7 @@ export const legalDocs: TextBag["legalDocs"] = {
     },
     controller: {
       title: "Responsable del tratamiento",
-      body: "A.C.E. Contacto: support@ace-platform.gg.",
+      body: "A.C.E. Contacto: ace.platform.official@gmail.com.",
     },
   },
   cookiePolicy: {

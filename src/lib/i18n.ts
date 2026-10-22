@@ -1,3 +1,4 @@
+import { withContact } from "@/lib/contact";
 /**
  * Public i18n. Every SITE_LOCALES id has a complete MessageBag.
  * Adding a language means one row in languages.ts, one flag, and one bag here.
@@ -50,7 +51,7 @@ export { RO } from "@/lib/i18n/ro";
 export { TR } from "@/lib/i18n/tr";
 export { PL } from "@/lib/i18n/pl";
 
-export const DICTIONARIES: Record<string, MessageBag> = {
+export const DICTIONARIES: Record<string, MessageBag> = withContact({
   en: EN,
   he: HE,
   ar: AR,
@@ -77,7 +78,7 @@ export const DICTIONARIES: Record<string, MessageBag> = {
   hu: HU,
   hr: HR,
   mk: MK,
-};
+});
 
 for (const locale of SITE_LOCALES) {
   if (!DICTIONARIES[locale.id]) {

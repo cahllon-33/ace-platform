@@ -5,7 +5,7 @@ export const pricing: TextBag["pricing"] = {
     "kicker": "功能矩阵",
     "title": "会员方案对比",
     "note": "金色勾：包含。短横：不包含。即将推出：属于方案但尚未发布。任何方案都不能购买积分、匹配或排队优先。",
-    "checkout": "结账功能尚未上线，因此目前所有账号都是 Free。",
+    "checkout": "结账通过我们的记录商家（Merchant of Record）Paddle 完成。Paddle 确认付款后，你的方案会立即变更。",
     "feature": "功能",
     "included": "包含",
     "notIncluded": "不包含",
@@ -55,7 +55,7 @@ export const pricing: TextBag["pricing"] = {
       "headshot": "爆头率",
       "rounds": "每回合表现",
       "noData": "暂无数据",
-      "locked": "扩展比赛分析属于 A.C.E Premium（每月 $7）。即将推出：结账功能尚不存在，因此目前没有任何账号是 Premium。",
+      "locked": "扩展比赛分析包含在 A.C.E Premium（每月 $7）中。请在定价页面通过 Paddle 结账订阅。",
       "premiumNote": "你的方案是 Premium。演示文件解析上线后，你的分析将显示在这里。",
       "signIn": "使用 Steam 登录以查看你的分析权限。",
       "plansLink": "查看方案"
@@ -65,7 +65,7 @@ export const pricing: TextBag["pricing"] = {
       "metaDescription": "A.C.E Plus 和 Premium 包含什么、任何方案都不包含什么，以及如何取消。",
       "kicker": "ACE-LEGAL / PREMIUM 条款",
       "title": "A.C.E Premium 条款",
-      "intro": "本条款说明付费方案包含的内容，是 /terms 服务条款的组成部分。结账功能尚不存在，因此目前无法购买任何内容，也不会产生任何费用。",
+      "intro": "本条款说明付费方案包含的内容，是 /terms 服务条款的一部分。付款由 Paddle 作为记录商家处理。",
       "pricesTitle": "1. 方案、价格与取消",
       "prices": "Free {free}。Plus 每月 {plus}。Premium 每月 {premium}。方案按月续订。你可以随时在仪表板设置中免费取消，并保留访问权限至已付月份结束。未满一个月的部分不予退款，除非你所在国家的法律要求。",
       "plusTitle": "2. Plus 包含",
@@ -143,8 +143,8 @@ export const pricing: TextBag["pricing"] = {
     "chooseAria": "以每月 {price} 选择 {plan}"
   },
   "billing": {
-    "kicker": "计费时间线",
-    "title": "计费上线后的运作方式",
+    "kicker": "账单",
+    "title": "账单如何运作",
     "body": "Plus 每月恰好 {plus}。Premium 每月恰好 {premium}。",
     "display": {
       "label": "01 · 显示价格",
@@ -152,16 +152,17 @@ export const pricing: TextBag["pricing"] = {
     },
     "rolling": {
       "label": "02 · 按月滚动",
-      "body": "计费上线后,费用按月自动续订。当月部分使用不予退款。取消将停止下一个周期,不会取消当前已预付的期间。"
+      "body": "Paddle 每月收取方案费用，直到你取消。你可以随时在“管理订阅”中取消，方案保留至已付费周期结束。退款遵循退款政策（14 天）。"
     },
     "today": {
-      "label": "03 · 现状"
+      "label": "03 · 结账",
+      "body": "在方案卡片上通过 Paddle 的安全结账付款。如果按钮显示“即将推出”，说明付款尚未开启。"
     }
   },
   "compare": {
     "kicker": "A.C.E 目前能承诺的内容",
     "title": "会员对比",
-    "note": "每一行都反映网站的现状。支付即将推出,付费方案绝不会开启队列或购买优势。",
+    "note": "每一行都反映网站当前状态。付费方案通过 Paddle 结账购买，绝不会开放队列或购买优势。",
     "caption": "按网站当前功能对比 Free、Plus 和 Premium",
     "columns": {
       "free": "Free",

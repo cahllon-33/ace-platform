@@ -3,13 +3,13 @@ import type { TextBag } from "../types";
 export const legalDocs: TextBag["legalDocs"] = {
   r14: {
     "effective": "Voimassa alkaen: {date}",
-    "contact": "Yhteystiedot: support@ace-platform.gg",
+    "contact": "Yhteystiedot: ace.platform.official@gmail.com",
     "definitionsTitle": "Määritelmät",
     "definitions": "Näissä Ehdoissa ”A.C.E” ja ”me” tarkoittavat A.C.E:tä. ”Sivusto” tarkoittaa ace-platform.gg:tä. ”Tili” tarkoittaa Steam-kirjautumisella luotua A.C.E-profiilia. ”Tilaus” tarkoittaa Free-, Plus- tai Premium-tasoa. ”Sääntökirja” tarkoittaa kilpailusääntöjä osoitteessa /rules. ”Admin” tarkoittaa henkilökunnan jäsentä, joka soveltaa Sääntökirjaa tapahtumassa.",
     "suspensionTitle": "Tilin rajoitukset ja jäädytys",
     "suspension": "Voimme varoittaa, rajoittaa, jäädyttää tai sulkea Tilin, joka rikkoo näitä Ehtoja tai Sääntökirjaa, esimerkiksi huijaamisen, tilin jakamisen, porttikiellon kiertämisen, häirinnän tai petoksen vuoksi. Maksullinen tilaus ei koskaan suojaa Tiliä rajoituksilta.",
     "disputesTitle": "Sääntöpäätökset ja valitukset",
-    "disputes": "Otteluriidat ja rangaistukset noudattavat Sääntökirjan kohtia 15 ja 16. Voit valittaa Tiliäsi koskevasta päätöksestä sähköpostitse osoitteeseen support@ace-platform.gg SteamID:si ja todisteidesi kanssa. Valituksen käsittelee henkilökunnan jäsen, joka ei tehnyt ensimmäistä päätöstä, ja hän kertoo lopputuloksen ja perustelut. Tämä ei rajoita maasi lain mukaisia oikeuksiasi.",
+    "disputes": "Otteluriidat ja rangaistukset noudattavat Sääntökirjan kohtia 15 ja 16. Voit valittaa Tiliäsi koskevasta päätöksestä sähköpostitse osoitteeseen ace.platform.official@gmail.com SteamID:si ja todisteidesi kanssa. Valituksen käsittelee henkilökunnan jäsen, joka ei tehnyt ensimmäistä päätöstä, ja hän kertoo lopputuloksen ja perustelut. Tämä ei rajoita maasi lain mukaisia oikeuksiasi.",
     "changesTitle": "Näiden Ehtojen muutokset",
     "changes": "Voimme päivittää näitä Ehtoja. Jokainen uusi versio julkaistaan tällä sivulla uudella voimaantulopäivällä. Olennainen muutos tulee voimaan 7 päivän kuluttua julkaisusta eikä koskaan koske jo alkanutta maksujaksoa.",
     "languageTitle": "Kieli",
@@ -73,7 +73,7 @@ export const legalDocs: TextBag["legalDocs"] = {
       "contact": {
         "title": "8. Yhteystiedot",
         "paragraphs": [
-          "support@ace-platform.gg — A.C.E"
+          "ace.platform.official@gmail.com — A.C.E"
         ]
       }
     }
@@ -139,7 +139,7 @@ export const legalDocs: TextBag["legalDocs"] = {
     },
     "controller": {
       "title": "Rekisterinpitäjä",
-      "body": "A.C.E. Yhteys: support@ace-platform.gg."
+      "body": "A.C.E. Yhteys: ace.platform.official@gmail.com."
     }
   },
   "cookiePolicy": {

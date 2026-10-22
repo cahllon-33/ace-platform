@@ -5,7 +5,7 @@ export const pricing: TextBag["pricing"] = {
     "kicker": "MATRIZ DE FUNCIONALIDADES",
     "title": "Comparação de planos",
     "note": "Visto dourado: incluído. Traço: não incluído. Em breve: faz parte do plano, mas ainda não foi lançado. Nenhum plano compra rating, matchmaking ou prioridade na fila.",
-    "checkout": "O pagamento ainda não existe, por isso hoje todas as contas estão no Free.",
+    "checkout": "O pagamento é feito pela Paddle, a nossa Merchant of Record. O teu plano muda assim que a Paddle confirma o pagamento.",
     "feature": "Funcionalidade",
     "included": "Incluído",
     "notIncluded": "Não incluído",
@@ -55,7 +55,7 @@ export const pricing: TextBag["pricing"] = {
       "headshot": "% de headshots",
       "rounds": "Desempenho por ronda",
       "noData": "Sem dados",
-      "locked": "A análise de partida alargada faz parte do A.C.E Premium (7 $/mês). Em breve: o pagamento ainda não existe, por isso hoje nenhuma conta é Premium.",
+      "locked": "A análise de partidas alargada faz parte do A.C.E Premium (7 $/mês). Subscreve na página de preços através do checkout da Paddle.",
       "premiumNote": "O teu plano é Premium. A tua análise aparecerá aqui quando existir análise de demos.",
       "signIn": "Inicia sessão com o Steam para verificar o teu acesso à análise.",
       "plansLink": "Ver planos"
@@ -65,7 +65,7 @@ export const pricing: TextBag["pricing"] = {
       "metaDescription": "O que o A.C.E Plus e o Premium incluem, o que nenhum plano inclui e como funciona o cancelamento.",
       "kicker": "ACE-LEGAL / TERMOS PREMIUM",
       "title": "Termos do A.C.E Premium",
-      "intro": "Estes termos descrevem o que os planos pagos incluem. Fazem parte dos Termos de Serviço em /terms. O pagamento ainda não existe, por isso hoje nada pode ser comprado nem cobrado.",
+      "intro": "Estes termos descrevem o que os planos pagos incluem. Fazem parte dos Termos de Serviço em /terms. Os pagamentos são processados pela Paddle como Merchant of Record.",
       "pricesTitle": "1. Planos, preços e cancelamento",
       "prices": "Free {free}. Plus {plus} por mês. Premium {premium} por mês. Os planos renovam mensalmente. Podes cancelar a qualquer momento sem penalização nas definições do painel e manter o acesso até ao fim do mês pago. Um mês parcial não é reembolsado, salvo se a lei do teu país o exigir.",
       "plusTitle": "2. O que o Plus inclui",
@@ -143,8 +143,8 @@ export const pricing: TextBag["pricing"] = {
     "chooseAria": "Escolher {plan} por {price} por mês"
   },
   "billing": {
-    "kicker": "MATRIZ DO CALENDÁRIO DE FATURAÇÃO",
-    "title": "Como funcionará a faturação quando existir",
+    "kicker": "FATURAÇÃO",
+    "title": "Como funciona a faturação",
     "body": "O Plus custa exatamente {plus}/mês. O Premium custa exatamente {premium}/mês.",
     "display": {
       "label": "01 · APRESENTAÇÃO",
@@ -152,16 +152,17 @@ export const pricing: TextBag["pricing"] = {
     },
     "rolling": {
       "label": "02 · CICLO CONTÍNUO",
-      "body": "Quando existir faturação, as cobranças renovam-se num ciclo mensal contínuo. A utilização de um mês parcial não é reembolsável. O cancelamento interrompe o ciclo seguinte e não apaga o período pré-pago em curso."
+      "body": "A Paddle cobra o teu plano todos os meses até cancelares. Cancela quando quiseres em Gerir subscrição; manténs o plano até ao fim do período pago. Reembolsos segundo a Política de Reembolso (14 dias)."
     },
     "today": {
-      "label": "03 · HOJE"
+      "label": "03 · CHECKOUT",
+      "body": "Paga no checkout seguro da Paddle a partir dos cartões de plano. Se um botão mostrar Em breve, os pagamentos ainda não estão ativos."
     }
   },
   "compare": {
     "kicker": "O que a A.C.E pode prometer hoje",
     "title": "Comparação de subscrições",
-    "note": "Cada linha reflete o site atual. O pagamento estará disponível em breve, e um plano pago nunca abre uma fila nem compra vantagem.",
+    "note": "Cada linha reflete o site hoje. Os planos pagos compram-se pelo checkout da Paddle e nunca abrem fila nem compram vantagem.",
     "caption": "Gratuito, Plus e Premium comparados pelo que o sítio faz hoje",
     "columns": {
       "free": "Gratuito",

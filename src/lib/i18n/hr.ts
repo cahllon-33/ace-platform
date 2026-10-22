@@ -110,7 +110,7 @@ export const HR: MessageBag = {
   contactInquiryGeneral: "Opći",
   contactConsent: "Izričito pristajem na parametre pohrane prema načelu smanjenja podataka iz Pravila privatnosti A.C.E.",
   contactSend: "POŠALJI SIGURNU TELEMETRIJSKU PORUKU",
-  contactCorporate: "A.C.E | Sigurni e-mail pristupnik: support@ace-platform.gg",
+  contactCorporate: "A.C.E | Sigurni e-mail pristupnik: ace.platform.official@gmail.com",
   contactModalTitle: "Online obrazac za kontakt · uskoro",
   contactModalBody: "Poruke iz ovog obrasca još se ne dostavljaju. Obrazac se otvara zajedno s našom podrškom. A.C.E nikad ne traži tvoju Steam lozinku.",
   contactDisclosure: "Online obrazac za kontakt otvara se uskoro. A.C.E nikad ne traži tvoju Steam lozinku.",

@@ -5,7 +5,7 @@ export const pricing: TextBag["pricing"] = {
     "kicker": "MATRICEA FUNCȚIILOR",
     "title": "Comparația abonamentelor",
     "note": "Bifă aurie: inclus. Liniuță: neinclus. În curând: parte din plan, dar încă nelansat. Niciun plan nu cumpără rating, matchmaking sau prioritate la coadă.",
-    "checkout": "Plata nu există încă, așa că azi fiecare cont este pe Free.",
+    "checkout": "Plata se face prin Paddle, Merchant of Record-ul nostru. Planul tău se schimbă imediat ce Paddle confirmă plata.",
     "feature": "Funcție",
     "included": "Inclus",
     "notIncluded": "Neinclus",
@@ -55,7 +55,7 @@ export const pricing: TextBag["pricing"] = {
       "headshot": "% headshot",
       "rounds": "Performanță pe rundă",
       "noData": "Fără date",
-      "locked": "Analiza extinsă a meciului face parte din A.C.E Premium (7 $/lună). În curând: checkout-ul nu există încă, deci astăzi niciun cont nu este Premium.",
+      "locked": "Analiza extinsă a meciurilor face parte din A.C.E Premium (7 $/lună). Abonează-te pe pagina de prețuri prin checkout-ul Paddle.",
       "premiumNote": "Planul tău este Premium. Analiza ta va apărea aici când va exista procesarea demo-urilor.",
       "signIn": "Autentifică-te cu Steam pentru a-ți verifica accesul la analiză.",
       "plansLink": "Vezi planurile"
@@ -65,7 +65,7 @@ export const pricing: TextBag["pricing"] = {
       "metaDescription": "Ce includ A.C.E Plus și Premium, ce nu include niciun plan și cum funcționează anularea.",
       "kicker": "ACE-LEGAL / TERMENI PREMIUM",
       "title": "Termenii A.C.E Premium",
-      "intro": "Acești termeni descriu ce includ planurile plătite. Fac parte din Termenii serviciului de la /terms. Plata nu există încă, deci astăzi nu se poate cumpăra și nu se taxează nimic.",
+      "intro": "Acești termeni descriu ce includ planurile plătite. Fac parte din Termenii serviciului de la /terms. Plățile sunt procesate de Paddle ca Merchant of Record.",
       "pricesTitle": "1. Planuri, prețuri și anulare",
       "prices": "Free {free}. Plus {plus} pe lună. Premium {premium} pe lună. Planurile se reînnoiesc lunar. Poți anula oricând fără penalizare din setările panoului și păstrezi accesul până la sfârșitul lunii plătite. O lună parțială nu se rambursează decât dacă legea țării tale o cere.",
       "plusTitle": "2. Ce include Plus",
@@ -143,8 +143,8 @@ export const pricing: TextBag["pricing"] = {
     "chooseAria": "Alege {plan} la {price} pe lună"
   },
   "billing": {
-    "kicker": "MATRICEA CRONOLOGIEI DE FACTURARE",
-    "title": "Cum va funcționa facturarea când va exista",
+    "kicker": "FACTURARE",
+    "title": "Cum funcționează facturarea",
     "body": "Plus costă exact {plus}/lună. Premium costă exact {premium}/lună.",
     "display": {
       "label": "01 · AFIȘARE",
@@ -152,16 +152,17 @@ export const pricing: TextBag["pricing"] = {
     },
     "rolling": {
       "label": "02 · CICLU CONTINUU",
-      "body": "Când va exista facturare, taxele se reînnoiesc într-un ciclu lunar continuu. Utilizarea parțială a lunii nu se rambursează. Anularea oprește ciclul următor și nu șterge perioada preplătită curentă."
+      "body": "Paddle îți taxează planul lunar până anulezi. Anulează oricând din Gestionează abonamentul; păstrezi planul până la sfârșitul perioadei plătite. Rambursări conform Politicii de rambursare (14 zile)."
     },
     "today": {
-      "label": "03 · ASTĂZI"
+      "label": "03 · CHECKOUT",
+      "body": "Plătește în checkout-ul securizat Paddle din cardurile planurilor. Dacă un buton arată În curând, plățile nu sunt încă activate."
     }
   },
   "compare": {
     "kicker": "Ce poate promite A.C.E astăzi",
     "title": "Comparație abonamente",
-    "note": "Fiecare rând reflectă site-ul de astăzi. Plata vine în curând, iar un plan plătit nu deschide niciodată o coadă și nu cumpără un avantaj.",
+    "note": "Fiecare rând reflectă site-ul de azi. Planurile plătite se cumpără prin checkout-ul Paddle și nu deschid niciodată o coadă și nu cumpără avantaje.",
     "caption": "Free, Plus și Premium comparate după ce face site-ul astăzi",
     "columns": {
       "free": "Free",

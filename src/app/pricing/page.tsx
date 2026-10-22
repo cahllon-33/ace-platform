@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { PlanCards } from "@/components/plan-cards";
 import { PlanCompare } from "@/components/plan-compare";
-import { ComingSoonPlate } from "@/components/coming-soon-plate";
 import { LegalDisclaimer } from "@/components/legal-document";
 import { Badge } from "@/components/ui/badge";
 import { interpolate } from "@/lib/i18n";
@@ -76,7 +75,7 @@ export default async function PricingPage() {
             </li>
             <li className="rounded-2xl border border-[#FFD76A]/20 p-4">
               <p className="text-xs tracking-[0.14em] text-[#FFD76A]">{text.billing.today.label}</p>
-              <ComingSoonPlate label={text.compare.cells.notConnected} size="sm" className="mt-3" />
+              <p className="mt-2 text-sm leading-6 text-[#F5F3EC]">{text.billing.today.body}</p>
             </li>
           </ol>
         </section>

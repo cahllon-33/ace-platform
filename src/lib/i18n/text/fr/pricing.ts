@@ -5,7 +5,7 @@ export const pricing: TextBag["pricing"] = {
     "kicker": "MATRICE DES FONCTIONS",
     "title": "Comparatif des abonnements",
     "note": "Coche dorée : inclus. Tiret : non inclus. Bientôt : prévu dans l’offre mais pas encore sorti. Aucune offre n’achète de rating, de matchmaking ou de priorité de file.",
-    "checkout": "Le paiement n’existe pas encore : tous les comptes sont en Free aujourd’hui.",
+    "checkout": "Le paiement passe par Paddle, notre Merchant of Record. Ton offre change dès que Paddle confirme le paiement.",
     "feature": "Fonction",
     "included": "Inclus",
     "notIncluded": "Non inclus",
@@ -55,7 +55,7 @@ export const pricing: TextBag["pricing"] = {
       "headshot": "% de headshots",
       "rounds": "Performance par manche",
       "noData": "Aucune donnée",
-      "locked": "L'analyse de match avancée fait partie d'A.C.E Premium (7 $/mois). Bientôt : le paiement n'existe pas encore, donc aucun compte n'est Premium aujourd'hui.",
+      "locked": "L’analyse de match étendue fait partie d’A.C.E Premium (7 $/mois). Abonne-toi sur la page des tarifs via le paiement Paddle.",
       "premiumNote": "Ton forfait est Premium. Ton analyse apparaîtra ici dès que l'analyse des démos existera.",
       "signIn": "Connecte-toi avec Steam pour vérifier ton accès à l'analyse.",
       "plansLink": "Voir les forfaits"
@@ -65,7 +65,7 @@ export const pricing: TextBag["pricing"] = {
       "metaDescription": "Ce qu'incluent A.C.E Plus et Premium, ce qu'aucun forfait n'inclut et comment fonctionne la résiliation.",
       "kicker": "ACE-LEGAL / CONDITIONS PREMIUM",
       "title": "Conditions A.C.E Premium",
-      "intro": "Ces conditions décrivent ce que comprennent les formules payantes. Elles font partie des Conditions d’utilisation sur /terms. Le paiement n’existe pas encore : rien ne peut être acheté ni facturé aujourd’hui.",
+      "intro": "Ces conditions décrivent ce que comprennent les offres payantes. Elles font partie des Conditions d’utilisation sur /terms. Les paiements sont traités par Paddle en tant que Merchant of Record.",
       "pricesTitle": "1. Forfaits, prix et résiliation",
       "prices": "Free {free}. Plus {plus} par mois. Premium {premium} par mois. Les formules se renouvellent chaque mois. Tu peux résilier à tout moment sans pénalité dans les paramètres du tableau de bord et garder l’accès jusqu’à la fin du mois payé. Un mois entamé n’est pas remboursé sauf si la loi de ton pays l’impose.",
       "plusTitle": "2. Ce qu'inclut Plus",
@@ -143,8 +143,8 @@ export const pricing: TextBag["pricing"] = {
     "chooseAria": "Choisir {plan} à {price} par mois"
   },
   "billing": {
-    "kicker": "CHRONOLOGIE DE FACTURATION",
-    "title": "Comment la facturation fonctionnera une fois en place",
+    "kicker": "FACTURATION",
+    "title": "Comment fonctionne la facturation",
     "body": "Plus coûte exactement {plus}/mois. Premium coûte exactement {premium}/mois.",
     "display": {
       "label": "01 · AFFICHAGE",
@@ -152,16 +152,17 @@ export const pricing: TextBag["pricing"] = {
     },
     "rolling": {
       "label": "02 · CYCLE RENOUVELABLE",
-      "body": "Lorsque la facturation existera, les prélèvements se renouvelleront selon un cycle mensuel. Un mois partiellement utilisé n'est pas remboursable. La résiliation arrête le cycle suivant et n'efface pas la période prépayée en cours."
+      "body": "Paddle facture ton offre chaque mois jusqu’à résiliation. Résilie à tout moment dans Gérer l’abonnement ; tu gardes l’offre jusqu’à la fin de la période payée. Remboursements selon la Politique de remboursement (14 jours)."
     },
     "today": {
-      "label": "03 · AUJOURD'HUI"
+      "label": "03 · PAIEMENT",
+      "body": "Paie dans le paiement sécurisé Paddle depuis les cartes d’offre. Si un bouton affiche Bientôt, les paiements ne sont pas encore activés."
     }
   },
   "compare": {
     "kicker": "Ce qu'A.C.E peut promettre aujourd'hui",
     "title": "Comparaison des abonnements",
-    "note": "Chaque ligne reflète le site tel qu'il est aujourd'hui. Le paiement arrive bientôt, et un forfait payant n'ouvre jamais de file ni n'achète d'avantage.",
+    "note": "Chaque ligne reflète le site aujourd’hui. Les offres payantes s’achètent via le paiement Paddle et n’ouvrent jamais de file ni n’achètent d’avantage.",
     "caption": "Gratuit, Plus et Premium comparés selon ce que le site fait aujourd'hui",
     "columns": {
       "free": "Gratuit",

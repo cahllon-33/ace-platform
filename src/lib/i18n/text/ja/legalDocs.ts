@@ -3,13 +3,13 @@ import type { TextBag } from "../types";
 export const legalDocs: TextBag["legalDocs"] = {
   r14: {
     "effective": "施行日：{date}",
-    "contact": "お問い合わせ：support@ace-platform.gg",
+    "contact": "お問い合わせ：ace.platform.official@gmail.com",
     "definitionsTitle": "定義",
     "definitions": "本規約において「A.C.E」「当社」とはA.C.Eを指します。「本サイト」とはace-platform.ggを指します。「アカウント」とはSteamサインインで作成されたA.C.Eプロフィールを指します。「プラン」とはFree、Plus、Premiumを指します。「ルールブック」とは/rulesの競技ルールブックを指します。「管理者」とはイベントでルールブックを適用するスタッフを指します。",
     "suspensionTitle": "アカウントの制限と停止",
     "suspension": "本規約またはルールブックに違反するアカウントに対し、不正行為、アカウント共有、BAN回避、嫌がらせ、詐欺などを理由に、警告、制限、停止、または閉鎖を行うことがあります。有料プランによってアカウントが制限を免れることはありません。",
     "disputesTitle": "ルール上の判断と異議申し立て",
-    "disputes": "試合の紛争と罰則はルールブック第15条および第16条に従います。アカウントに関する判断には、SteamIDと証拠を添えてsupport@ace-platform.ggへメールすることで異議を申し立てられます。最初の判断に関与していないスタッフが審査し、結果と理由をお伝えします。これはお住まいの国の法律に基づく権利を制限するものではありません。",
+    "disputes": "試合の紛争と罰則はルールブック第15条および第16条に従います。アカウントに関する判断には、SteamIDと証拠を添えてace.platform.official@gmail.comへメールすることで異議を申し立てられます。最初の判断に関与していないスタッフが審査し、結果と理由をお伝えします。これはお住まいの国の法律に基づく権利を制限するものではありません。",
     "changesTitle": "本規約の変更",
     "changes": "当社は本規約を更新することがあります。新しい版は施行日を改めて本ページに掲載します。重要な変更は掲載から7日後に発効し、すでに開始した支払期間には適用されません。",
     "languageTitle": "言語",
@@ -73,7 +73,7 @@ export const legalDocs: TextBag["legalDocs"] = {
       "contact": {
         "title": "8. 連絡先",
         "paragraphs": [
-          "support@ace-platform.gg — A.C.E"
+          "ace.platform.official@gmail.com — A.C.E"
         ]
       }
     }
@@ -139,7 +139,7 @@ export const legalDocs: TextBag["legalDocs"] = {
     },
     "controller": {
       "title": "管理者",
-      "body": "A.C.E 連絡先:support@ace-platform.gg。"
+      "body": "A.C.E 連絡先:ace.platform.official@gmail.com。"
     }
   },
   "cookiePolicy": {

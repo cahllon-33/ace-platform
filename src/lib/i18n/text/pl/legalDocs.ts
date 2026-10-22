@@ -3,13 +3,13 @@ import type { TextBag } from "../types";
 export const legalDocs: TextBag["legalDocs"] = {
   r14: {
     "effective": "Data wejścia w życie: {date}",
-    "contact": "Kontakt: support@ace-platform.gg",
+    "contact": "Kontakt: ace.platform.official@gmail.com",
     "definitionsTitle": "Definicje",
     "definitions": "W niniejszym Regulaminie „A.C.E”, „my” oznacza A.C.E „Serwis” oznacza ace-platform.gg. „Konto” oznacza profil A.C.E utworzony przez logowanie Steam. „Plan” oznacza Free, Plus lub Premium. „Regulamin rozgrywek” oznacza regulamin pod adresem /rules. „Admin” oznacza członka zespołu stosującego Regulamin rozgrywek podczas wydarzenia.",
     "suspensionTitle": "Ograniczenia i zawieszenie konta",
     "suspension": "Możemy ostrzec, ograniczyć, zawiesić lub zamknąć Konto naruszające ten Regulamin lub Regulamin rozgrywek, np. za oszukiwanie, udostępnianie konta, obchodzenie bana, nękanie lub oszustwo. Płatny plan nigdy nie chroni Konta przed ograniczeniem.",
     "disputesTitle": "Decyzje dotyczące zasad i odwołania",
-    "disputes": "Spory meczowe i kary podlegają sekcjom 15 i 16 Regulaminu rozgrywek. Od decyzji dotyczącej Twojego Konta możesz odwołać się, pisząc na support@ace-platform.gg z SteamID i dowodami. Odwołanie rozpatruje członek zespołu, który nie wydał pierwszej decyzji, i przekazuje wynik wraz z uzasadnieniem. Nie ogranicza to praw przysługujących Ci na mocy prawa Twojego kraju.",
+    "disputes": "Spory meczowe i kary podlegają sekcjom 15 i 16 Regulaminu rozgrywek. Od decyzji dotyczącej Twojego Konta możesz odwołać się, pisząc na ace.platform.official@gmail.com z SteamID i dowodami. Odwołanie rozpatruje członek zespołu, który nie wydał pierwszej decyzji, i przekazuje wynik wraz z uzasadnieniem. Nie ogranicza to praw przysługujących Ci na mocy prawa Twojego kraju.",
     "changesTitle": "Zmiany Regulaminu",
     "changes": "Możemy aktualizować ten Regulamin. Każda nowa wersja jest publikowana na tej stronie z nową datą wejścia w życie. Istotna zmiana obowiązuje po 7 dniach od publikacji i nigdy nie dotyczy rozpoczętego już okresu płatności.",
     "languageTitle": "Język",
@@ -75,7 +75,7 @@ export const legalDocs: TextBag["legalDocs"] = {
       contact: {
         title: "8. Kontakt",
         paragraphs: [
-          "support@ace-platform.gg — A.C.E",
+          "ace.platform.official@gmail.com — A.C.E",
         ],
       },
     },
@@ -149,7 +149,7 @@ export const legalDocs: TextBag["legalDocs"] = {
     },
     controller: {
       title: "Administrator danych",
-      body: "A.C.E. Kontakt: support@ace-platform.gg.",
+      body: "A.C.E. Kontakt: ace.platform.official@gmail.com.",
     },
   },
   cookiePolicy: {

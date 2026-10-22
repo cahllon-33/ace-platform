@@ -120,7 +120,7 @@ export const SV: MessageBag = {
  "Jag samtycker uttryckligen till parametrarna för dataminimering i A.C.E:s integritetspolicy.",
  contactSend: "SKICKA SÄKERT TELEMETRIMEDDELANDE",
  contactCorporate:
- "A.C.E | Säker e-postgateway: support@ace-platform.gg",
+ "A.C.E | Säker e-postgateway: ace.platform.official@gmail.com",
  contactModalTitle: "Kontaktformulär online · snart",
  contactModalBody:
  "Meddelanden från det här formuläret levereras inte ännu. Formuläret öppnar tillsammans med vår support. A.C.E ber aldrig om ditt Steam-lösenord.",

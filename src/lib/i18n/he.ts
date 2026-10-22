@@ -120,7 +120,7 @@ export const HE: MessageBag = {
  "אני מסכים במפורש לפרמטרי האחסון של מזעור הנתונים לפי מדיניות הפרטיות של A.C.E.",
  contactSend: "שליחת הודעת טלמטריה מאובטחת",
  contactCorporate:
- "A.C.E | שער דוא״ל מאובטח: support@ace-platform.gg",
+ "A.C.E | שער דוא״ל מאובטח: ace.platform.official@gmail.com",
  contactModalTitle: "טופס יצירת קשר מקוון · בקרוב",
  contactModalBody:
  "הודעות מטופס זה עדיין אינן נמסרות. הטופס ייפתח יחד עם מוקד התמיכה שלנו. A.C.E לעולם לא מבקשת את סיסמת ה-Steam שלך.",

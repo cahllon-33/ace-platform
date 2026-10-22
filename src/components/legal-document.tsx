@@ -1,7 +1,6 @@
 import type { ReactNode } from "react";
 import { interpolate } from "@/lib/i18n";
 import { getText } from "@/server/locale";
-import { CONTACT_EMAIL } from "@/lib/legal-r49";
 import "./legal-document.css";
 
 /** Effective date shared by the Terms, Privacy Policy, Cookie Policy and Premium terms. */
@@ -11,7 +10,7 @@ async function LegalMeta() {
   const r14 = (await getText()).legalDocs.r14;
   return (
     <p className="mt-4 font-mono text-[0.7rem] tracking-[0.12em] text-[#C9CAD0] uppercase">
-      {interpolate(r14.effective, { date: LEGAL_EFFECTIVE })} {CONTACT_EMAIL ? ` · ${r14.contact.replace("support@ace-platform.gg", CONTACT_EMAIL)}` : null}
+      {interpolate(r14.effective, { date: LEGAL_EFFECTIVE })} · {r14.contact}
     </p>
   );
 }
