@@ -683,7 +683,13 @@ export const UI_PT_BR: Ui = {
     "prizeNote": "Os prêmios são apenas não monetários: cosméticos ou tempo de assinatura. As taxas nunca financiam prêmios em dinheiro.",
     "communityTitle": "Comunidade",
     "communityLede": "Siga a A.C.E para notícias de partidas, torneios e destaques.",
-    "followOn": "A.C.E no {network}"
+    "followOn": "A.C.E no {network}",
+    "changePlan": "Mudar para {plan}",
+    "changing": "Mudando de plano…",
+    "changed": "Mudança de plano enviada à Paddle. Seu plano atualiza assim que a Paddle confirmar.",
+    "changeFailed": "A mudança de plano falhou. Tente de novo ou use Gerenciar assinatura.",
+    "manualNote": "Seu plano atual foi concedido pela A.C.E, não comprado. Assinar inicia uma assinatura Paddle separada.",
+    "checkoutError": "A Paddle não conseguiu abrir o checkout: {reason}"
   },
   "r49b": {
     "title": "Inventário Steam",

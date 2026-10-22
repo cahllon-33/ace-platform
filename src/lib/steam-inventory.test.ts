@@ -46,3 +46,23 @@ describe("adjustmentEffect", () => {
     expect(adjustmentEffect({ ...adj({ action: "refund", status: "approved" }), event_type: "transaction.completed" })).toBeNull();
   });
 });
+
+import { checkoutActionFor, paddleLocale } from "@/lib/paddle-client";
+describe("checkoutActionFor (R49e)", () => {
+  it("never leaves a dead button", () => {
+    expect(checkoutActionFor({ tier: "FREE" }, "plus")).toBe("subscribe");
+    expect(checkoutActionFor({ tier: "PREMIUM" }, "premium")).toBe("current");
+    // owner / manually granted Premium without a Paddle subscription can still test-buy PLUS
+    expect(checkoutActionFor({ tier: "PREMIUM", hasSub: false }, "plus")).toBe("subscribe-manual");
+    // live Paddle subscriber on a higher (or lower) plan switches instead of a second checkout
+    expect(checkoutActionFor({ tier: "PREMIUM", hasSub: true, subStatus: "active" }, "plus")).toBe("change");
+    expect(checkoutActionFor({ tier: "PLUS", hasSub: true, subStatus: "past_due" }, "premium")).toBe("change");
+    expect(checkoutActionFor({ tier: "PLUS", hasSub: true, subStatus: "canceled" }, "premium")).toBe("subscribe-manual");
+  });
+  it("maps site locales to Paddle checkout locales", () => {
+    expect(paddleLocale("he")).toBe("en");
+    expect(paddleLocale("pt-BR")).toBe("pt");
+    expect(paddleLocale("zh")).toBe("zh-Hans");
+    expect(paddleLocale("de")).toBe("de");
+  });
+});

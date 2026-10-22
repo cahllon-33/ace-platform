@@ -683,7 +683,13 @@ export const UI_AR: Ui = {
     "prizeNote": "الجوائز غير نقدية فقط: عناصر تجميلية أو مدة اشتراك. رسوم الدخول لا تموّل جوائز نقدية أبدًا.",
     "communityTitle": "المجتمع",
     "communityLede": "تابع A.C.E لأخبار المباريات والبطولات وأبرز اللقطات.",
-    "followOn": "A.C.E على {network}"
+    "followOn": "A.C.E على {network}",
+    "changePlan": "التبديل إلى {plan}",
+    "changing": "جارٍ تبديل الخطة…",
+    "changed": "أُرسل تغيير الخطة إلى Paddle. تتحدث خطتك فور تأكيد Paddle.",
+    "changeFailed": "فشل تغيير الخطة. حاول مجددًا أو استخدم إدارة الاشتراك.",
+    "manualNote": "خطتك الحالية مُنحت من A.C.E ولم تُشترَ. الاشتراك يبدأ اشتراك Paddle منفصلًا.",
+    "checkoutError": "تعذّر على Paddle فتح صفحة الدفع: {reason}"
   },
   "r49b": {
     "title": "مخزون Steam",

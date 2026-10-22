@@ -7,7 +7,7 @@ export async function GET() {
   const cfg = readPaddleConfig();
   let user: Awaited<ReturnType<typeof readSessionUser>> = null;
   try { user = await readSessionUser(); } catch { user = null; }
-  const me = user && user.steamId ? { id: user.id, tier: user.subscriptionTier, email: user.email ?? null } : null;
+  const me = user && user.steamId ? { id: user.id, tier: user.subscriptionTier, email: user.email ?? null, hasSub: !!user.paddleSubscriptionId, subStatus: user.subscriptionStatus || null } : null;
   return NextResponse.json(
     cfg ? { enabled: true, env: cfg.env, clientToken: cfg.clientToken, prices: cfg.prices, me } : { enabled: false, me },
     { headers: { "Cache-Control": "no-store" } },

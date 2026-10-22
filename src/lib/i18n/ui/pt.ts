@@ -683,7 +683,13 @@ export const UI_PT: Ui = {
     "prizeNote": "Os prémios são apenas não monetários: cosméticos ou tempo de subscrição. As taxas nunca financiam prémios em dinheiro.",
     "communityTitle": "Comunidade",
     "communityLede": "Segue a A.C.E para notícias de partidas, torneios e destaques.",
-    "followOn": "A.C.E no {network}"
+    "followOn": "A.C.E no {network}",
+    "changePlan": "Mudar para {plan}",
+    "changing": "A mudar de plano…",
+    "changed": "Mudança de plano enviada à Paddle. O teu plano atualiza assim que a Paddle confirmar.",
+    "changeFailed": "A mudança de plano falhou. Tenta de novo ou usa Gerir subscrição.",
+    "manualNote": "O teu plano atual foi atribuído pela A.C.E, não comprado. Subscrever inicia uma subscrição Paddle separada.",
+    "checkoutError": "A Paddle não conseguiu abrir o checkout: {reason}"
   },
   "r49b": {
     "title": "Inventário Steam",

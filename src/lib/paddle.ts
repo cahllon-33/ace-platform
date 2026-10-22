@@ -114,3 +114,5 @@ export function adjustmentEffect(e: PaddleEventIn): "revoke" | "partial" | "pend
   if (a === "refund" && e.data.type === "partial") return "partial";
   return "revoke";
 }
+
+export { checkoutActionFor, paddleLocale, type CheckoutAction } from "@/lib/paddle-client";

@@ -683,7 +683,13 @@ export const UI_ZH: Ui = {
     "prizeNote": "奖品仅为非现金：装饰或订阅时长。报名费绝不用于现金奖金。",
     "communityTitle": "社区",
     "communityLede": "关注 A.C.E，获取比赛新闻、赛事和精彩集锦。",
-    "followOn": "A.C.E 的 {network}"
+    "followOn": "A.C.E 的 {network}",
+    "changePlan": "切换到 {plan}",
+    "changing": "正在切换方案…",
+    "changed": "方案变更已发送至 Paddle。Paddle 确认后你的方案会立即更新。",
+    "changeFailed": "方案变更失败。请重试或使用“管理订阅”。",
+    "manualNote": "你当前的方案由 A.C.E 授予，并非购买。订阅将开始一个独立的 Paddle 订阅。",
+    "checkoutError": "Paddle 无法打开结账：{reason}"
   },
   "r49b": {
     "title": "Steam 库存",

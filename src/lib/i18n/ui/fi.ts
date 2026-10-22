@@ -683,7 +683,13 @@ export const UI_FI: Ui = {
     "prizeNote": "Palkinnot ovat vain ei-rahallisia: kosmetiikkaa tai tilausaikaa. Osallistumismaksuilla ei koskaan rahoiteta rahapalkintoja.",
     "communityTitle": "Yhteisö",
     "communityLede": "Seuraa A.C.E:tä otteluuutisten, turnausten ja kohokohtien takia.",
-    "followOn": "A.C.E palvelussa {network}"
+    "followOn": "A.C.E palvelussa {network}",
+    "changePlan": "Vaihda tilaukseen {plan}",
+    "changing": "Vaihdetaan tilausta…",
+    "changed": "Tilauksen vaihto lähetetty Paddlelle. Tilauksesi päivittyy, kun Paddle vahvistaa sen.",
+    "changeFailed": "Tilauksen vaihto epäonnistui. Yritä uudelleen tai käytä kohtaa Hallitse tilausta.",
+    "manualNote": "Nykyisen tilauksesi myönsi A.C.E, sitä ei ostettu. Tilaaminen aloittaa erillisen Paddle-tilauksen.",
+    "checkoutError": "Paddle ei voinut avata kassaa: {reason}"
   },
   "r49b": {
     "title": "Steam-inventaario",

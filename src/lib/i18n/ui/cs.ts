@@ -683,7 +683,13 @@ export const UI_CS: Ui = {
     "prizeNote": "Ceny jsou pouze nepeněžní: kosmetika nebo čas předplatného. Startovné nikdy nefinancuje peněžní ceny.",
     "communityTitle": "Komunita",
     "communityLede": "Sledujte A.C.E kvůli novinkám o zápasech, turnajích a sestřihům.",
-    "followOn": "A.C.E na {network}"
+    "followOn": "A.C.E na {network}",
+    "changePlan": "Přejít na {plan}",
+    "changing": "Měním plán…",
+    "changed": "Změna plánu odeslána do Paddle. Plán se aktualizuje, jakmile ji Paddle potvrdí.",
+    "changeFailed": "Změna plánu selhala. Zkus to znovu nebo použij Správu předplatného.",
+    "manualNote": "Tvůj současný plán udělil A.C.E, nebyl koupen. Předplatné spustí samostatné předplatné Paddle.",
+    "checkoutError": "Paddle nemohl otevřít pokladnu: {reason}"
   },
   "r49b": {
     "title": "Inventář Steam",

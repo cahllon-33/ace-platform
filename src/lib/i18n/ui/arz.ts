@@ -683,7 +683,13 @@ export const UI_ARZ: Ui = {
     "prizeNote": "الجوايز مش فلوس: كوزمتكس أو مدة اشتراك بس. رسوم الدخول عمرها ما بتموّل جوايز فلوس.",
     "communityTitle": "المجتمع",
     "communityLede": "تابع A.C.E لأخبار الماتشات والبطولات وأحلى اللقطات.",
-    "followOn": "A.C.E على {network}"
+    "followOn": "A.C.E على {network}",
+    "changePlan": "حوّل لـ{plan}",
+    "changing": "بنغيّر الخطة…",
+    "changed": "تغيير الخطة اتبعت لـPaddle. خطتك هتتحدث أول ما Paddle تأكد.",
+    "changeFailed": "تغيير الخطة فشل. جرّب تاني أو استخدم إدارة الاشتراك.",
+    "manualNote": "خطتك الحالية A.C.E اديتهالك ومش متشترية. الاشتراك هيفتح اشتراك Paddle منفصل.",
+    "checkoutError": "Paddle مقدرتش تفتح صفحة الدفع: {reason}"
   },
   "r49b": {
     "title": "مخزون Steam",

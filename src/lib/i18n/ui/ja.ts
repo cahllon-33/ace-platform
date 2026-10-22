@@ -683,7 +683,13 @@ export const UI_JA: Ui = {
     "prizeNote": "賞品は非現金のみ（コスメティックまたは購読期間）です。参加費が賞金に充てられることはありません。",
     "communityTitle": "コミュニティ",
     "communityLede": "試合ニュース、大会、ハイライトは A.C.E をフォロー。",
-    "followOn": "{network} の A.C.E"
+    "followOn": "{network} の A.C.E",
+    "changePlan": "{plan}に切り替える",
+    "changing": "プランを切り替えています…",
+    "changed": "プラン変更をPaddleに送信しました。Paddleが確認するとプランが更新されます。",
+    "changeFailed": "プラン変更に失敗しました。もう一度試すか、サブスクリプション管理を使ってください。",
+    "manualNote": "現在のプランはA.C.Eが付与したもので、購入したものではありません。登録すると別のPaddleサブスクリプションが始まります。",
+    "checkoutError": "Paddleが決済を開けませんでした：{reason}"
   },
   "r49b": {
     "title": "Steamインベントリ",

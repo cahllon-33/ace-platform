@@ -624,7 +624,13 @@ export const UI_EN = {
     "prizeNote": "Prizes are non-cash only: cosmetics or subscription time. Entry fees never fund cash prizes.",
     "communityTitle": "Community",
     "communityLede": "Follow A.C.E for match news, tournaments and highlights.",
-    "followOn": "A.C.E on {network}"
+    "followOn": "A.C.E on {network}",
+    "changePlan": "Switch to {plan}",
+    "changing": "Switching plan…",
+    "changed": "Plan change sent to Paddle. Your plan updates as soon as Paddle confirms it.",
+    "changeFailed": "The plan change failed. Try again or use Manage subscription.",
+    "manualNote": "Your current plan was granted by A.C.E, not bought. Subscribing starts a separate Paddle subscription.",
+    "checkoutError": "Paddle could not open the checkout: {reason}"
   },
   "r49b": {
     "title": "Steam inventory",

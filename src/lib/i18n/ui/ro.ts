@@ -683,7 +683,13 @@ export const UI_RO: Ui = {
     "prizeNote": "Premiile sunt doar nemonetare: cosmetice sau timp de abonament. Taxele de participare nu finanțează niciodată premii în bani.",
     "communityTitle": "Comunitate",
     "communityLede": "Urmărește A.C.E pentru știri despre meciuri, turnee și momente de top.",
-    "followOn": "A.C.E pe {network}"
+    "followOn": "A.C.E pe {network}",
+    "changePlan": "Treci la {plan}",
+    "changing": "Se schimbă planul…",
+    "changed": "Schimbarea planului a fost trimisă la Paddle. Planul se actualizează imediat ce Paddle confirmă.",
+    "changeFailed": "Schimbarea planului a eșuat. Încearcă din nou sau folosește Gestionează abonamentul.",
+    "manualNote": "Planul tău actual a fost acordat de A.C.E, nu cumpărat. Abonarea pornește un abonament Paddle separat.",
+    "checkoutError": "Paddle nu a putut deschide checkout-ul: {reason}"
   },
   "r49b": {
     "title": "Inventar Steam",

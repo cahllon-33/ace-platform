@@ -683,7 +683,13 @@ export const UI_DE: Ui = {
     "prizeNote": "Preise sind ausschließlich nicht-monetär: Kosmetik oder Abo-Zeit. Startgebühren finanzieren nie Geldpreise.",
     "communityTitle": "Community",
     "communityLede": "Folge A.C.E für Match-News, Turniere und Highlights.",
-    "followOn": "A.C.E auf {network}"
+    "followOn": "A.C.E auf {network}",
+    "changePlan": "Zu {plan} wechseln",
+    "changing": "Plan wird gewechselt…",
+    "changed": "Planwechsel an Paddle gesendet. Dein Plan wird aktualisiert, sobald Paddle ihn bestätigt.",
+    "changeFailed": "Der Planwechsel ist fehlgeschlagen. Versuch es erneut oder nutze „Abo verwalten“.",
+    "manualNote": "Dein aktueller Plan wurde von A.C.E vergeben, nicht gekauft. Ein Abo startet ein separates Paddle-Abo.",
+    "checkoutError": "Paddle konnte den Checkout nicht öffnen: {reason}"
   },
   "r49b": {
     "title": "Steam-Inventar",

@@ -683,7 +683,13 @@ export const UI_HU: Ui = {
     "prizeNote": "A díjak kizárólag nem pénzbeliek: kozmetikumok vagy előfizetési idő. A nevezési díjak soha nem finanszíroznak pénzdíjat.",
     "communityTitle": "Közösség",
     "communityLede": "Kövesd az A.C.E-t meccshírekért, tornákért és kiemelt pillanatokért.",
-    "followOn": "A.C.E itt: {network}"
+    "followOn": "A.C.E itt: {network}",
+    "changePlan": "Váltás erre: {plan}",
+    "changing": "Csomag váltása…",
+    "changed": "A csomagváltás elküldve a Paddle-nek. A csomagod frissül, amint a Paddle megerősíti.",
+    "changeFailed": "A csomagváltás nem sikerült. Próbáld újra, vagy használd az Előfizetés kezelését.",
+    "manualNote": "A jelenlegi csomagodat az A.C.E adta, nem vásároltad. Az előfizetés külön Paddle-előfizetést indít.",
+    "checkoutError": "A Paddle nem tudta megnyitni a pénztárat: {reason}"
   },
   "r49b": {
     "title": "Steam-leltár",

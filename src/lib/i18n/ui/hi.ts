@@ -683,7 +683,13 @@ export const UI_HI: Ui = {
     "prizeNote": "इनाम केवल गैर-नकद हैं: कॉस्मेटिक्स या सदस्यता समय। एंट्री फ़ीस से कभी नकद इनाम नहीं दिए जाते।",
     "communityTitle": "समुदाय",
     "communityLede": "मैच समाचार, टूर्नामेंट और हाइलाइट्स के लिए A.C.E को फ़ॉलो करें।",
-    "followOn": "{network} पर A.C.E"
+    "followOn": "{network} पर A.C.E",
+    "changePlan": "{plan} पर स्विच करें",
+    "changing": "प्लान बदला जा रहा है…",
+    "changed": "प्लान बदलाव Paddle को भेजा गया। Paddle की पुष्टि होते ही आपका प्लान अपडेट होगा।",
+    "changeFailed": "प्लान बदलाव विफल रहा। फिर से कोशिश करें या Manage subscription का उपयोग करें।",
+    "manualNote": "आपका मौजूदा प्लान A.C.E ने दिया है, खरीदा नहीं गया। सदस्यता लेने से अलग Paddle सदस्यता शुरू होगी।",
+    "checkoutError": "Paddle चेकआउट नहीं खोल सका: {reason}"
   },
   "r49b": {
     "title": "Steam इन्वेंटरी",

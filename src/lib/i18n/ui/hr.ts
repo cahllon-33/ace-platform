@@ -683,7 +683,13 @@ export const UI_HR: Ui = {
     "prizeNote": "Nagrade su isključivo nenovčane: kozmetika ili vrijeme pretplate. Kotizacije nikad ne financiraju novčane nagrade.",
     "communityTitle": "Zajednica",
     "communityLede": "Prati A.C.E za vijesti o mečevima, turnire i najbolje trenutke.",
-    "followOn": "A.C.E na {network}"
+    "followOn": "A.C.E na {network}",
+    "changePlan": "Prijeđi na {plan}",
+    "changing": "Mijenjam plan…",
+    "changed": "Promjena plana poslana Paddleu. Plan se ažurira čim je Paddle potvrdi.",
+    "changeFailed": "Promjena plana nije uspjela. Pokušaj ponovno ili koristi Upravljanje pretplatom.",
+    "manualNote": "Tvoj trenutni plan dodijelio je A.C.E, nije kupljen. Pretplata pokreće zasebnu Paddle pretplatu.",
+    "checkoutError": "Paddle nije mogao otvoriti naplatu: {reason}"
   },
   "r49b": {
     "title": "Steam inventar",

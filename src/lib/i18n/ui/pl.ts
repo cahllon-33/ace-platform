@@ -683,7 +683,13 @@ export const UI_PL: Ui = {
     "prizeNote": "Nagrody są wyłącznie niepieniężne: kosmetyki lub czas subskrypcji. Wpisowe nigdy nie finansuje nagród pieniężnych.",
     "communityTitle": "Społeczność",
     "communityLede": "Obserwuj A.C.E, by śledzić mecze, turnieje i najlepsze akcje.",
-    "followOn": "A.C.E na {network}"
+    "followOn": "A.C.E na {network}",
+    "changePlan": "Przejdź na {plan}",
+    "changing": "Zmieniam plan…",
+    "changed": "Zmiana planu wysłana do Paddle. Plan zaktualizuje się, gdy Paddle ją potwierdzi.",
+    "changeFailed": "Zmiana planu nie powiodła się. Spróbuj ponownie lub użyj Zarządzaj subskrypcją.",
+    "manualNote": "Twój obecny plan przyznało A.C.E, nie został kupiony. Subskrypcja uruchomi osobną subskrypcję Paddle.",
+    "checkoutError": "Paddle nie mógł otworzyć kasy: {reason}"
   },
   "r49b": {
     "title": "Ekwipunek Steam",

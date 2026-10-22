@@ -683,7 +683,13 @@ export const UI_HE: Ui = {
     "prizeNote": "הפרסים אינם כספיים: קוסמטיקה או זמן מנוי בלבד. דמי ההשתתפות לעולם אינם מממנים פרסים כספיים.",
     "communityTitle": "קהילה",
     "communityLede": "עקבו אחרי A.C.E לחדשות משחקים, טורנירים ורגעים נבחרים.",
-    "followOn": "A.C.E ב-{network}"
+    "followOn": "A.C.E ב-{network}",
+    "changePlan": "מעבר ל־{plan}",
+    "changing": "מחליף מנוי…",
+    "changed": "שינוי המנוי נשלח ל־Paddle. המנוי יתעדכן ברגע ש־Paddle תאשר.",
+    "changeFailed": "שינוי המנוי נכשל. נסו שוב או השתמשו בניהול המנוי.",
+    "manualNote": "המנוי הנוכחי שלך הוענק על ידי A.C.E ולא נרכש. הרשמה תפתח מנוי Paddle נפרד.",
+    "checkoutError": "Paddle לא הצליחה לפתוח את התשלום: {reason}"
   },
   "r49b": {
     "title": "מלאי Steam",

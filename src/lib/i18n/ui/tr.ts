@@ -683,7 +683,13 @@ export const UI_TR: Ui = {
     "prizeNote": "Ödüller yalnızca nakit dışıdır: kozmetik veya abonelik süresi. Katılım ücretleri asla nakit ödülleri finanse etmez.",
     "communityTitle": "Topluluk",
     "communityLede": "Maç haberleri, turnuvalar ve öne çıkanlar için A.C.E'yi takip et.",
-    "followOn": "{network} üzerinde A.C.E"
+    "followOn": "{network} üzerinde A.C.E",
+    "changePlan": "{plan} planına geç",
+    "changing": "Plan değiştiriliyor…",
+    "changed": "Plan değişikliği Paddle'a gönderildi. Paddle onaylar onaylamaz planın güncellenir.",
+    "changeFailed": "Plan değişikliği başarısız oldu. Tekrar dene veya Aboneliği yönet'i kullan.",
+    "manualNote": "Mevcut planın A.C.E tarafından verildi, satın alınmadı. Abone olmak ayrı bir Paddle aboneliği başlatır.",
+    "checkoutError": "Paddle ödeme sayfasını açamadı: {reason}"
   },
   "r49b": {
     "title": "Steam envanteri",

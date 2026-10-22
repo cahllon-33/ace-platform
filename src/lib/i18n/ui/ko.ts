@@ -683,7 +683,13 @@ export const UI_KO: Ui = {
     "prizeNote": "상품은 비현금만 제공됩니다: 코스메틱 또는 구독 기간. 참가비는 절대 현금 상금에 쓰이지 않습니다.",
     "communityTitle": "커뮤니티",
     "communityLede": "경기 소식, 토너먼트, 하이라이트는 A.C.E를 팔로우하세요.",
-    "followOn": "{network}의 A.C.E"
+    "followOn": "{network}의 A.C.E",
+    "changePlan": "{plan}(으)로 변경",
+    "changing": "플랜 변경 중…",
+    "changed": "플랜 변경을 Paddle에 보냈습니다. Paddle이 확인하면 플랜이 업데이트됩니다.",
+    "changeFailed": "플랜 변경에 실패했습니다. 다시 시도하거나 구독 관리를 이용하세요.",
+    "manualNote": "현재 플랜은 A.C.E가 부여한 것으로 구매한 것이 아닙니다. 구독하면 별도의 Paddle 구독이 시작됩니다.",
+    "checkoutError": "Paddle이 결제를 열 수 없습니다: {reason}"
   },
   "r49b": {
     "title": "Steam 인벤토리",

@@ -683,7 +683,13 @@ export const UI_FR: Ui = {
     "prizeNote": "Les prix sont uniquement non monétaires : cosmétiques ou temps d'abonnement. Les frais d'inscription ne financent jamais de prix en argent.",
     "communityTitle": "Communauté",
     "communityLede": "Suis A.C.E pour les infos de matchs, les tournois et les temps forts.",
-    "followOn": "A.C.E sur {network}"
+    "followOn": "A.C.E sur {network}",
+    "changePlan": "Passer à {plan}",
+    "changing": "Changement d’offre…",
+    "changed": "Changement d’offre envoyé à Paddle. Ton offre se met à jour dès que Paddle le confirme.",
+    "changeFailed": "Le changement d’offre a échoué. Réessaie ou utilise Gérer l’abonnement.",
+    "manualNote": "Ton offre actuelle a été attribuée par A.C.E, pas achetée. S’abonner démarre un abonnement Paddle séparé.",
+    "checkoutError": "Paddle n’a pas pu ouvrir le paiement : {reason}"
   },
   "r49b": {
     "title": "Inventaire Steam",

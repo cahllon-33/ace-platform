@@ -683,7 +683,13 @@ export const UI_SV: Ui = {
     "prizeNote": "Priser är endast icke-kontanta: kosmetik eller prenumerationstid. Anmälningsavgifter finansierar aldrig kontantpriser.",
     "communityTitle": "Community",
     "communityLede": "Följ A.C.E för matchnyheter, turneringar och höjdpunkter.",
-    "followOn": "A.C.E på {network}"
+    "followOn": "A.C.E på {network}",
+    "changePlan": "Byt till {plan}",
+    "changing": "Byter plan…",
+    "changed": "Planbytet har skickats till Paddle. Din plan uppdateras så snart Paddle bekräftar det.",
+    "changeFailed": "Planbytet misslyckades. Försök igen eller använd Hantera prenumeration.",
+    "manualNote": "Din nuvarande plan gavs av A.C.E och köptes inte. En prenumeration startar en separat Paddle-prenumeration.",
+    "checkoutError": "Paddle kunde inte öppna kassan: {reason}"
   },
   "r49b": {
     "title": "Steam-inventarium",

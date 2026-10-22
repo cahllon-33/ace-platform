@@ -683,7 +683,13 @@ export const UI_ID: Ui = {
     "prizeNote": "Hadiah hanya non-tunai: kosmetik atau waktu langganan. Biaya masuk tidak pernah mendanai hadiah uang.",
     "communityTitle": "Komunitas",
     "communityLede": "Ikuti A.C.E untuk berita pertandingan, turnamen, dan sorotan.",
-    "followOn": "A.C.E di {network}"
+    "followOn": "A.C.E di {network}",
+    "changePlan": "Beralih ke {plan}",
+    "changing": "Mengganti paket…",
+    "changed": "Perubahan paket dikirim ke Paddle. Paketmu diperbarui begitu Paddle mengonfirmasi.",
+    "changeFailed": "Perubahan paket gagal. Coba lagi atau gunakan Kelola langganan.",
+    "manualNote": "Paketmu saat ini diberikan oleh A.C.E, bukan dibeli. Berlangganan memulai langganan Paddle terpisah.",
+    "checkoutError": "Paddle tidak dapat membuka checkout: {reason}"
   },
   "r49b": {
     "title": "Inventaris Steam",
