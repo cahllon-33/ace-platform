@@ -3,7 +3,7 @@ import type { MessageBag } from "./en";
 export const TR: MessageBag = {
  slogan: "OYNA. REKABET ET. ELİT OL.",
  kicker: "CS2 ELİT REKABET PLATFORMU",
- lede: "A.C.E., bir Counter-Strike 2 rekabet sitesidir. Giriş Steam OpenID kullanır. Anti-cheat, maç sunucuları ve ödül ödemeleri burada çalışmıyor.",
+ lede: "A.C.E, bir Counter-Strike 2 rekabet sitesidir. Giriş Steam OpenID kullanır. Anti-cheat, maç sunucuları ve ödül ödemeleri burada çalışmıyor.",
  playNow: "ŞİMDİ OYNA",
  signInSteam: "STEAM ile giriş yap",
  connectProfile: "Profili bağla",
@@ -15,13 +15,13 @@ export const TR: MessageBag = {
  registeredTeams: "Kayıtlı takımlar: 0/100",
  registered: "Kayıtlı",
  teams: "Takımlar",
- ranksTitle: "A.C.E. rütbeleri",
+ ranksTitle: "A.C.E rütbeleri",
  championshipLoot: "Şampiyona ganimet sistemi",
  calibrationStatus: "Rütbe kalibrasyon durumu",
  navTournaments: "TURNUVALAR",
  brandSubline: "OTONOM ANTI-CHEAT • REKABETÇİ KALİBRASYON • ELİT OYUNCULAR",
  languagesKicker: "Diller",
- step1: "Resmi Steam OpenID ile bir hesap oluştur. A.C.E. asla Steam şifresi istemez.",
+ step1: "Resmi Steam OpenID ile bir hesap oluştur. A.C.E asla Steam şifresi istemez.",
  step2: "Kimlik doğrulama A.C.E Shield ile gelecek.",
  step3: "Doğrulanmış bir oturumdan sonra komuta güvertesinden 5v5 takım kur.",
  step4: "Uygun yarışmaları bul. Dereceli MAÇ BUL kapalı kalır.",
@@ -31,7 +31,7 @@ export const TR: MessageBag = {
  kd: "K/D",
  statsEmpty:
  "İstatistiklerin ilk kayıtlı maçlarından sonra burada görünür.",
- statsLive: "Galibiyet ve mağlubiyetler A.C.E. hesabındandır. K/D henüz saklanmıyor.",
+ statsLive: "Galibiyet ve mağlubiyetler A.C.E hesabındandır. K/D henüz saklanmıyor.",
  membership: "ÜYELİK",
  membershipLede: "Ücretsiz $0. Plus aylık $4. Premium aylık $7. Ücretli planlar asla reyting, daha kolay rakip veya sırada öncelik satın almaz. Ödeme yakında açılıyor.",
  graphite: "GRAFİT",
@@ -84,13 +84,13 @@ export const TR: MessageBag = {
  cookiePolicy: "Çerez politikası",
  support: "Destek",
  contact: "İletişim",
- supportKicker: "A.C.E. DESTEK · YARDIM MERKEZİ",
+ supportKicker: "A.C.E DESTEK · YARDIM MERKEZİ",
  supportTitle: "Teknik destek merkezi",
  supportLede:
  "Kurulum, kalibrasyon ve üyelik soruları için bilgi merkezi. Hile önleme, dereceli sıralar ve ödeme yakında geliyor.",
  supportCat1Title: "Çekirdek Anti-Cheat kurulumu",
  supportCat1Body:
- "Sürücü kurulum uyarıları, donanım uyumu ve Güvenli Önyükleme telemetri ayarları burada gelecekteki çekirdek ilkesi olarak belgelenir. A.C.E. çalışan bir Anti-Cheat istemcisi göndermez, sürücü kurmaz ve bu sitede Güvenli Önyükleme veya HWID verisi toplamaz.",
+ "Sürücü kurulum uyarıları, donanım uyumu ve Güvenli Önyükleme telemetri ayarları burada gelecekteki çekirdek ilkesi olarak belgelenir. A.C.E çalışan bir Anti-Cheat istemcisi göndermez, sürücü kurmaz ve bu sitede Güvenli Önyükleme veya HWID verisi toplamaz.",
  supportCat2Title: "Eşleştirme ve kalibrasyon",
  supportCat2Body:
  "On yerleştirme maçı, bölüm hesaplama hızı ve sezonluk puan yeniden kalibrasyonu planlanan kalibrasyon anlatısıdır. Dereceli MAÇ BUL, doğrulanmış bir Anti-Cheat yolu olana kadar hata durumunda kapalı kalır. Bu sayfadaki rakamlar canlı maç sonuçları değildir.",
@@ -103,7 +103,7 @@ export const TR: MessageBag = {
  "Destek talepleri rekabetçi beta ile açılacak. Şimdilik bize iletişim sayfasından ulaşabilirsin.",
  supportDisclosure:
  "Hile önleme, eşleştirme ve ödeme için canlı destek rekabetçi beta ile açılacak.",
- contactKicker: "A.C.E. İLETİŞİM · KURUMSAL TERMİNAL",
+ contactKicker: "A.C.E İLETİŞİM · KURUMSAL TERMİNAL",
  contactTitle: "Kurumsal iletişim terminali",
  contactLede:
  "Sponsorluk, medya, teknik ve genel başvurular. Buraya yazılan iletiler iletilmez ve telemetri olarak saklanmaz.",
@@ -120,17 +120,17 @@ export const TR: MessageBag = {
  "A.C.E. Gizlilik Politikasındaki veri minimizasyonu saklama parametrelerini açıkça kabul ediyorum.",
  contactSend: "GÜVENLİ TELEMETRİ İLETİSİ GÖNDER",
  contactCorporate:
- "A.C.E. | Güvenli e-posta geçidi: support@ace-platform.gg",
+ "A.C.E | Güvenli e-posta geçidi: support@ace-platform.gg",
  contactModalTitle: "Çevrimiçi iletişim formu · yakında",
  contactModalBody:
- "Bu formdaki mesajlar henüz iletilmiyor. Form, destek ekibimizle birlikte açılacak. A.C.E. asla Steam şifreni istemez.",
+ "Bu formdaki mesajlar henüz iletilmiyor. Form, destek ekibimizle birlikte açılacak. A.C.E asla Steam şifreni istemez.",
  contactDisclosure:
- "Çevrimiçi iletişim formu yakında açılıyor. A.C.E. asla Steam şifreni istemez.",
+ "Çevrimiçi iletişim formu yakında açılıyor. A.C.E asla Steam şifreni istemez.",
  closeOverlay: "Kapat",
- loadingAce: "A.C.E. yükleniyor...",
+ loadingAce: "A.C.E yükleniyor...",
  supportCategory: "KATEGORİ {n}",
  shopKicker: "A.C.E. MAĞAZA · YAKINDA",
- shopTitle: "A.C.E. PAZAR — ELİT SİLAH ÖZELLEŞTİRME",
+ shopTitle: "A.C.E PAZAR — ELİT SİLAH ÖZELLEŞTİRME",
  shopLede:
  "Envanterini doğrulanmış üst düzey skinler, özel profil öğeleri ve lig erişim araçlarıyla donat.",
  shopNote:
@@ -164,8 +164,8 @@ export const TR: MessageBag = {
  "Kazanma oranı ve seriler kayıtlı maçlardan doldurulur.",
  squadInviteLabel: "STEAMID İLE SERBEST AJAN DAVET ET",
  squadInviteNote:
- "Yalnızca resmi Steam OpenID. Bir A.C.E. hesabına bağlı SteamID yapıştır. Asla Steam şifresi girme.",
- squadInvitePlaceholder: "SteamID64 veya A.C.E. hesap kimliği",
+ "Yalnızca resmi Steam OpenID. Bir A.C.E hesabına bağlı SteamID yapıştır. Asla Steam şifresi girme.",
+ squadInvitePlaceholder: "SteamID64 veya A.C.E hesap kimliği",
  squadSend: "GÜVENLİ DAVET GÖNDER >",
  squadCaptainOnly: "Yalnızca atanmış kaptan davet gönderebilir.",
  squadInviteFailed: "Davet başarısız oldu.",
@@ -181,10 +181,10 @@ export const TR: MessageBag = {
  tourneyStatusValue: "Açık değil · yalnızca gösterim",
  tourneyLoading: "Eşleşme ağacı yükleniyor…",
  platformNoticeTitle: "PLATFORM BİLDİRİMİ",
- platformNoticeBody: "Bu sitedeki turnuva ağaçları, sıralamalar ve skin kartları örnektir. Valve eşyası değildir ve ödenmiş ödül değildir. Bu site bir hile önleme programı çalıştırmaz. Siteyi açmak bir yasal hakkı iptal etmez ve sözleşme imzalamaz. A.C.E. bir donanım kimliği toplamaz ve birisi avukat ya da mahkemeyle iletişime geçti diye hesabı silmez.",
-  copyrightLine: "© 2026 A.C.E. Valve ile bağlantılı değildir.",
+ platformNoticeBody: "Bu sitedeki turnuva ağaçları, sıralamalar ve skin kartları örnektir. Valve eşyası değildir ve ödenmiş ödül değildir. Bu site bir hile önleme programı çalıştırmaz. Siteyi açmak bir yasal hakkı iptal etmez ve sözleşme imzalamaz. A.C.E bir donanım kimliği toplamaz ve birisi avukat ya da mahkemeyle iletişime geçti diye hesabı silmez.",
+  copyrightLine: "© 2026 A.C.E Valve ile bağlantılı değildir.",
   copyrightClaim:
-    "Bu sitedeki özgün metin, düzen, amblemler ve grafikler A.C.E. şirketine aittir. Yazılı izin olmadan kopyalamak yasaktır. A.C.E. bu hakkı ileri sürebilir. Counter-Strike 2 ve harita adları Valve'a aittir.",
+    "Bu sitedeki özgün metin, düzen, amblemler ve grafikler A.C.E şirketine aittir. Yazılı izin olmadan kopyalamak yasaktır. A.C.E bu hakkı ileri sürebilir. Counter-Strike 2 ve harita adları Valve'a aittir.",
  shieldServerValue: "Yakında",
  tvGames: "Maç televizyonu",
  pathsKicker: "BU SİTEDEKİ BEŞ YOL",
@@ -193,7 +193,7 @@ export const TR: MessageBag = {
  statusWrittenRule: "YAZILI KURAL",
  statusTeamLayout: "100 TAKIMLIK ALAN",
  statusPublicSite: "HERKESE AÇIK SİTE",
- rankProtocolTitle: "A.C.E. PUAN KURALI",
+ rankProtocolTitle: "A.C.E PUAN KURALI",
  rankProtocolBody: "Yazılı kural, bir oyuncuyu diğer takımın ortalama puanıyla karşılaştırır. Denk bir takıma karşı kaydedilmiş galibiyet +20 RP, mağlubiyet −20 RP'dir; her zaman maç başına 10 ile 30 RP arasındadır ve 10 kademe ile 3 lig bu sayıdan okunur. Bu sayfa bir maçı doğrulamaz, bu yüzden burada puan değişikliği uygulanmaz.",
  rankProgress: "Rütbe ilerlemesi",
  competitiveRating: "Rekabet puanı",

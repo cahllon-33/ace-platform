@@ -5,7 +5,7 @@ export const legalDocs: TextBag["legalDocs"] = {
     "effective": "Yürürlük tarihi: {date}",
     "contact": "İletişim: support@ace-platform.gg",
     "definitionsTitle": "Tanımlar",
-    "definitions": "Bu Koşullarda “A.C.E.” ve “biz”, A.C.E. anlamına gelir. “Site”, ace-platform.gg anlamına gelir. “Hesap”, Steam girişiyle oluşturulan A.C.E. profilidir. “Plan”, Free, Plus veya Premium anlamına gelir. “Kural Kitabı”, /rules adresindeki Rekabet Kural Kitabıdır. “Admin”, bir etkinlikte Kural Kitabını uygulayan personeldir.",
+    "definitions": "Bu Koşullarda “A.C.E” ve “biz”, A.C.E anlamına gelir. “Site”, ace-platform.gg anlamına gelir. “Hesap”, Steam girişiyle oluşturulan A.C.E profilidir. “Plan”, Free, Plus veya Premium anlamına gelir. “Kural Kitabı”, /rules adresindeki Rekabet Kural Kitabıdır. “Admin”, bir etkinlikte Kural Kitabını uygulayan personeldir.",
     "suspensionTitle": "Hesap kısıtlamaları ve askıya alma",
     "suspension": "Bu Koşulları veya Kural Kitabını ihlal eden bir Hesabı, örneğin hile, hesap paylaşımı, yasak atlatma, taciz veya dolandırıcılık nedeniyle uyarabilir, kısıtlayabilir, askıya alabilir veya kapatabiliriz. Ücretli bir plan bir Hesabı kısıtlamadan asla korumaz.",
     "disputesTitle": "Kural kararları ve itirazlar",
@@ -25,18 +25,18 @@ export const legalDocs: TextBag["legalDocs"] = {
     },
     "kicker": "ACE-LEGAL / HİZMET KOŞULLARI",
     "title": "Hizmet Koşulları",
-    "lede": "Bu Koşullar A.C.E. web sitesini ve A.C.E. Hesabını kullanımını düzenler. /rules adresindeki Rekabet Kural Kitabı, Gizlilik Politikası, Çerez Politikası ve Premium koşulları bu Koşulların parçasıdır.",
+    "lede": "Bu Koşullar A.C.E web sitesini ve A.C.E. Hesabını kullanımını düzenler. /rules adresindeki Rekabet Kural Kitabı, Gizlilik Politikası, Çerez Politikası ve Premium koşulları bu Koşulların parçasıdır.",
     "sections": {
       "operator": {
         "title": "1. İşletmeci ve bağımsızlık",
         "paragraphs": [
-          "Hizmet, A.C.E. tarafından işletilir. Siteyi kullanmak bu Koşulları, Gizlilik Politikası'nı, Çerez Politikası'nı ve Rekabet Kural Kitabı'nı kabul ettiğiniz anlamına gelir."
+          "Hizmet, A.C.E tarafından işletilir. Siteyi kullanmak bu Koşulları, Gizlilik Politikası'nı, Çerez Politikası'nı ve Rekabet Kural Kitabı'nı kabul ettiğiniz anlamına gelir."
         ]
       },
       "eligibility": {
         "title": "2. Uygunluk ve hesaplar",
         "paragraphs": [
-          "Hesaplar yalnızca resmi Steam OpenID girişiyle oluşturulur, kişi başına bir Hesap. A.C.E. asla Steam şifreni istemez."
+          "Hesaplar yalnızca resmi Steam OpenID girişiyle oluşturulur, kişi başına bir Hesap. A.C.E asla Steam şifreni istemez."
         ]
       },
       "notActive": {
@@ -60,20 +60,20 @@ export const legalDocs: TextBag["legalDocs"] = {
       "liability": {
         "title": "6. Sorumluluğun sınırlandırılması",
         "paragraphs": [
-          "Yasanın izin verdiği ölçüde A.C.E.; kaybedilen rütbe, hiçbir zaman gerçek eşya olmamış kozmetiklerin kaybı veya üçüncü taraf Steam / CS2 kesintilerinden sorumlu değildir. Ülkenizdeki vazgeçilemeyen zorunlu tüketici hakları saklıdır."
+          "Yasanın izin verdiği ölçüde A.C.E; kaybedilen rütbe, hiçbir zaman gerçek eşya olmamış kozmetiklerin kaybı veya üçüncü taraf Steam / CS2 kesintilerinden sorumlu değildir. Ülkenizdeki vazgeçilemeyen zorunlu tüketici hakları saklıdır."
         ]
       },
       "copyright": {
         "title": "7. Özgün site materyalinin telif hakkı",
         "paragraphs": [
-          "Bu site için oluşturulan özgün metin, sayfa düzeni, amblemler ve grafikler A.C.E'ye aittir. Bu özgün materyali yazılı izin olmadan başka bir ürün için kopyalayamaz, yeniden yayımlayamaz veya kazıyamazsınız. Yasanın izin verdiği durumlarda A.C.E. bu hakkı, dava yoluyla da dahil olmak üzere kullanabilir. Bu bildirim dava açmaz, tazminat belirlemez ve bir mahkeme sonucunu garanti etmez.",
-          "Counter-Strike 2, Steam ve Dust II, Mirage, Inferno, Nuke, Ancient, Anubis ve Train harita adları Valve'a aittir. A.C.E. bunlar üzerinde hak iddia etmez. Bu siteyi açmak hiçbir yasal hakkı ortadan kaldırmaz ve sözleşme imzalamak anlamına gelmez."
+          "Bu site için oluşturulan özgün metin, sayfa düzeni, amblemler ve grafikler A.C.E'ye aittir. Bu özgün materyali yazılı izin olmadan başka bir ürün için kopyalayamaz, yeniden yayımlayamaz veya kazıyamazsınız. Yasanın izin verdiği durumlarda A.C.E bu hakkı, dava yoluyla da dahil olmak üzere kullanabilir. Bu bildirim dava açmaz, tazminat belirlemez ve bir mahkeme sonucunu garanti etmez.",
+          "Counter-Strike 2, Steam ve Dust II, Mirage, Inferno, Nuke, Ancient, Anubis ve Train harita adları Valve'a aittir. A.C.E bunlar üzerinde hak iddia etmez. Bu siteyi açmak hiçbir yasal hakkı ortadan kaldırmaz ve sözleşme imzalamak anlamına gelmez."
         ]
       },
       "contact": {
         "title": "8. İletişim",
         "paragraphs": [
-          "support@ace-platform.gg — A.C.E."
+          "support@ace-platform.gg — A.C.E"
         ]
       }
     }
@@ -93,14 +93,14 @@ export const legalDocs: TextBag["legalDocs"] = {
       "stored": [
         {
           "label": "Doğrulanmış 64 bit SteamID",
-          "body": "Steam'in resmi OpenID beyanıyla döner ve bir A.C.E. hesabı oluşturulmadan veya güncellenmeden önce sunucuda kontrol edilir."
+          "body": "Steam'in resmi OpenID beyanıyla döner ve bir A.C.E hesabı oluşturulmadan veya güncellenmeden önce sunucuda kontrol edilir."
         },
         {
           "label": "Herkese açık Steam görünen adı",
           "body": "bir Steam Web API anahtarı yapılandırıldığında. Bu bir profil adıdır, e-posta kutusu değildir."
         },
         {
-          "label": "A.C.E. hesap kayıtları",
+          "label": "A.C.E hesap kayıtları",
           "body": "rütbe seviyesi, derece puanı, galibiyet/mağlubiyet, takım üyeliği ve oturum belirteci özetleri gibi."
         }
       ],
@@ -122,13 +122,13 @@ export const legalDocs: TextBag["legalDocs"] = {
       "title": "Üçüncü taraf yerleştirmeler ve Steam OpenID sınırı",
       "callback": {
         "before": "Steam ile oturum açma A.C.E.'den ayrılır, Steam'de kimlik doğrular ve şuraya döner:",
-        "after": ". Sunucu, bir oturum yazmadan önce OpenID beyanını (iddia edilen kimlik ve Steam'in imzalı parametreleri dahil) doğrular. Steam'in tuttuğu veriler Steam'in gizlilik politikasına tabidir. A.C.E. yalnızca hesabı işletmek için gereken doğrulanmış SteamID'yi ve herkese açık profil alanlarını saklar."
+        "after": ". Sunucu, bir oturum yazmadan önce OpenID beyanını (iddia edilen kimlik ve Steam'in imzalı parametreleri dahil) doğrular. Steam'in tuttuğu veriler Steam'in gizlilik politikasına tabidir. A.C.E yalnızca hesabı işletmek için gereken doğrulanmış SteamID'yi ve herkese açık profil alanlarını saklar."
       },
-      "footerLinks": "Alt bilgideki harici ağ simgeleri herkese açık sitelere dizin bağlantılarıdır. Resmi A.C.E. hesapları değildir ve izleme bileşenleri yerleştirmez."
+      "footerLinks": "Alt bilgideki harici ağ simgeleri herkese açık sitelere dizin bağlantılarıdır. Resmi A.C.E hesapları değildir ve izleme bileşenleri yerleştirmez."
     },
     "rights": {
       "title": "Hakların",
-      "before": "Kişisel veri hakları bulunan bir bölgedeyseniz, A.C.E. hesap verilerinize erişim, düzeltme veya silme talebinde bulunmak için şu adrese e-posta gönderebilirsiniz:",
+      "before": "Kişisel veri hakları bulunan bir bölgedeyseniz, A.C.E hesap verilerinize erişim, düzeltme veya silme talebinde bulunmak için şu adrese e-posta gönderebilirsiniz:",
       "after": ". Site hesabını silmek, Valve'ın verdiği bir Steam veya VAC kararını değiştirmez."
     },
     "cookies": {
@@ -139,20 +139,20 @@ export const legalDocs: TextBag["legalDocs"] = {
     },
     "controller": {
       "title": "Veri sorumlusu",
-      "body": "A.C.E. İletişim: support@ace-platform.gg."
+      "body": "A.C.E İletişim: support@ace-platform.gg."
     }
   },
   "cookiePolicy": {
     "meta": {
       "title": "Çerez Politikası",
-      "description": "A.C.E. çerez ve telemetri gizlilik denetimi. Ayrılmış isteğe bağlı kategorileri kabul etmediğiniz sürece yalnızca zorunlu oturum çerezleri."
+      "description": "A.C.E çerez ve telemetri gizlilik denetimi. Ayrılmış isteğe bağlı kategorileri kabul etmediğiniz sürece yalnızca zorunlu oturum çerezleri."
     },
     "kicker": "ACE-LEGAL / ÇEREZ POLİTİKASI",
     "title": "Çerez Politikası",
     "lede": "Bu Çerez Politikası, bu sitenin gerçekten kullandığı çerezleri, sonraya ayrılan kategorileri ve toplanmayanları listeler.",
     "audit": {
       "title": "Bu sitedeki izleyiciler",
-      "body": "A.C.E. bu herkese açık sitede reklam pikselleri, Google Analytics, Meta Pixel, parmak izi SDK'ları veya başka üçüncü taraf davranışsal izleyiciler çalıştırmaz. Onay panelindeki isteğe bağlı \"Analiz İzleyicileri\" ve \"Pazarlama İzleyicileri\" yalnızca kategorilerdir. Bunları işaretlemek bugün hiçbir betik yüklemez. İleride bir izleyici eklenirse, önce kayıtlı tercihi okur ve siz kabul etmediğiniz sürece kapalı kalır."
+      "body": "A.C.E bu herkese açık sitede reklam pikselleri, Google Analytics, Meta Pixel, parmak izi SDK'ları veya başka üçüncü taraf davranışsal izleyiciler çalıştırmaz. Onay panelindeki isteğe bağlı \"Analiz İzleyicileri\" ve \"Pazarlama İzleyicileri\" yalnızca kategorilerdir. Bunları işaretlemek bugün hiçbir betik yüklemez. İleride bir izleyici eklenirse, önce kayıtlı tercihi okur ve siz kabul etmediğiniz sürece kapalı kalır."
     },
     "essential": {
       "title": "Zorunlu çerezler [Gerekli / Kilitli]",
@@ -169,7 +169,7 @@ export const legalDocs: TextBag["legalDocs"] = {
     },
     "marketing": {
       "title": "Pazarlama İzleyicileri [İsteğe bağlı]",
-      "body": "Ayrılmış. A.C.E. davranışsal profilleri satmaz, kiralamaz veya aracılık etmez. Bu sitede pazarlama etiket yöneticisi yoktur."
+      "body": "Ayrılmış. A.C.E davranışsal profilleri satmaz, kiralamaz veya aracılık etmez. Bu sitede pazarlama etiket yöneticisi yoktur."
     },
     "change": {
       "title": "Tercihinizi nasıl değiştirirsiniz",

@@ -2,7 +2,7 @@
   meta: {
     title: "Calibration Codex",
     description:
-      "A.C.E. ranks explained. Each question opens a full answer on Rating Points and the code for that rank. The codex does not apply a match.",
+      "A.C.E ranks explained. Each question opens a full answer on Rating Points and the code for that rank. The codex does not apply a match.",
     articleTitle: "{title} — Calibration Codex",
   },
   groups: {
@@ -31,7 +31,7 @@
     searchLabel: "Search the codex",
     searchPlaceholder: "Try 1950, Recruit, or draw",
     empty: "No entry matches that search.",
-    columnLabel: "A.C.E. column {n}",
+    columnLabel: "A.C.E column {n}",
     pagerLabel: "Codex pages",
     first: "First",
     previous: "Previous",
@@ -40,7 +40,7 @@
     pageOf: "Page {n} of {m}",
   },
   article: {
-    breadcrumb: "A.C.E. · Calibration Codex",
+    breadcrumb: "A.C.E · Calibration Codex",
     status:
       "This page explains the written ladder. It does not apply a match, and it does not change a stored rating.",
     emblemAlt: "{name} emblem, rank {level}",
@@ -65,7 +65,7 @@
     turnLabel: "Continue through the codex",
     previous: "Previous",
     next: "Next",
-    alsoIn: "Also in A.C.E.",
+    alsoIn: "Also in A.C.E",
     backToBoard: "Back to the rank board",
   },
   rankArticle: {
@@ -144,21 +144,21 @@
     },
     "rank-10-a-c-e-legend": {
       stance:
-        "A.C.E. Legend is the last mark. The crystal label is ACE ELITE. The official name is A.C.E. Legend.",
+        "A.C.E Legend is the last mark. The crystal label is ACE ELITE. The official name is A.C.E Legend.",
       detail:
         "The band opens at 1,950 and ends at the engine ceiling, 3,000. There is no eleventh rank. A stored rating cannot rise past 3,000.",
     },
   },
   articles: {
     "what-a-rank-is": {
-      title: "What an A.C.E. rank is",
-      lede: "A rank is the mark that contains your stored Rating Points. Ten marks cover the whole ladder, from Recruit to A.C.E. Legend.",
+      title: "What an A.C.E rank is",
+      lede: "A rank is the mark that contains your stored Rating Points. Ten marks cover the whole ladder, from Recruit to A.C.E Legend.",
       sections: [
         {
           heading: "One number, one mark",
           paragraphs: [
             "The account stores a competitive rating. The ladder reads that number and returns the highest rank whose floor the number has reached. You do not hold two ranks at once.",
-            "Recruit is rank 1. A.C.E. Legend is rank 10. The official name is the name in the ladder. The shorter word on the emblem is the crystal label for the same rank.",
+            "Recruit is rank 1. A.C.E Legend is rank 10. The official name is the name in the ladder. The shorter word on the emblem is the crystal label for the same rank.",
             "This codex explains the written ladder. It does not apply a match, and it does not change a stored rating.",
           ],
         },
@@ -166,7 +166,7 @@
           heading: "How the floors sit",
           paragraphs: [
             "Recruit covers the start of the ladder. Operative opens at 1,100. From Vanguard through Grandmaster, each new floor is 100 points higher: 1,200, 1,300, 1,400, 1,500, 1,600, then 1,700.",
-            "Sovereign opens at 1,800 and keeps the account until 1,949. A.C.E. Legend opens at 1,950. The engine ceiling is 3,000, so Legend is the longest band.",
+            "Sovereign opens at 1,800 and keeps the account until 1,949. A.C.E Legend opens at 1,950. The engine ceiling is 3,000, so Legend is the longest band.",
           ],
         },
         {
@@ -185,14 +185,14 @@
         {
           heading: "Why both exist",
           paragraphs: [
-            "The engine and the profile use the official name: Recruit, Operative, Vanguard, Specialist, Veteran, Elite, Master, Grandmaster, Sovereign, A.C.E. Legend.",
+            "The engine and the profile use the official name: Recruit, Operative, Vanguard, Specialist, Veteran, Elite, Master, Grandmaster, Sovereign, A.C.E Legend.",
             "The emblem also carries a crystal label: IRON, BRONZE, SILVER, GOLD, PLATINUM, DIAMOND, MASTER, GRANDMASTER, IMMORTAL, ACE ELITE. That label is artwork. It does not create an eleventh rank and it does not store a second number.",
           ],
         },
         {
           heading: "Where they diverge",
           paragraphs: [
-            "Specialist’s crystal label is GOLD. Veteran’s is PLATINUM. Elite’s is DIAMOND. Sovereign’s is IMMORTAL. A.C.E. Legend’s is ACE ELITE. In each case the floor still belongs to the official name.",
+            "Specialist’s crystal label is GOLD. Veteran’s is PLATINUM. Elite’s is DIAMOND. Sovereign’s is IMMORTAL. A.C.E Legend’s is ACE ELITE. In each case the floor still belongs to the official name.",
             "Master and Grandmaster use the same word in both places.",
           ],
         },
@@ -308,7 +308,7 @@
           heading: "The stops",
           paragraphs: [
             "A loss at 100 Rating Points stays at 100. A win at 3,000 stays at 3,000. Recruit’s ladder floor is written as 0, but the stored number never uses the gap under 100.",
-            "1,949 is Sovereign. 1,950 is A.C.E. Legend. There is no in-between mark.",
+            "1,949 is Sovereign. 1,950 is A.C.E Legend. There is no in-between mark.",
           ],
         },
         {
@@ -355,7 +355,7 @@
           heading: "What the desk does not do",
           paragraphs: [
             "FIND MATCH does not search for opponents. It does not change Rating Points. The rank on an account is still the stored number, read by the ladder in this codex.",
-            "There is no separate top queue above Legend. A.C.E. Legend is the last mark, and it opens at 1,950 Rating Points.",
+            "There is no separate top queue above Legend. A.C.E Legend is the last mark, and it opens at 1,950 Rating Points.",
           ],
         },
       ],
@@ -461,12 +461,12 @@
     },
     "how-a-roster-is-assembled": {
       title: "How a roster is assembled",
-      lede: "A captain invites a player who already has an A.C.E. account. There is no public share link, and a Steam password is never asked for.",
+      lede: "A captain invites a player who already has an A.C.E account. There is no public share link, and a Steam password is never asked for.",
       sections: [
         {
           heading: "The invite that exists",
           paragraphs: [
-            "On the teams page, a signed-in captain pastes a SteamID64 or an A.C.E. account ID. The account must already be linked through Steam OpenID. The server writes a pending invitation when the database accepts it.",
+            "On the teams page, a signed-in captain pastes a SteamID64 or an A.C.E account ID. The account must already be linked through Steam OpenID. The server writes a pending invitation when the database accepts it.",
             "The roster holds five players, including the captain. A captain cannot invite their own account. A player who is already on the roster is refused. If the database is down, the invite fails and no invitation is stored.",
           ],
         },

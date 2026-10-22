@@ -45,7 +45,7 @@ export const desk: TextBag["desk"] = {
   "support": {
     "meta": {
       "title": "Support",
-      "description": "A.C.E. hjälpcenter. Desker för anti-fusk, rankat och betalning öppnar med tävlingsbetan."
+      "description": "A.C.E hjälpcenter. Desker för anti-fusk, rankat och betalning öppnar med tävlingsbetan."
     }
   },
   "contact": {

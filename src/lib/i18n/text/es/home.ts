@@ -13,7 +13,7 @@ export const home: TextBag["home"] = {
   "ops": {
     "identityKicker": "CENTRO DE IDENTIDAD",
     "signedOutTitle": "Inicia sesión con Steam",
-    "signedOutBody": "Conéctate con Steam OpenID oficial para ver aquí tu avatar de Steam, tu emblema de rango y tus Rating Points. A.C.E. nunca pide una contraseña de Steam.",
+    "signedOutBody": "Conéctate con Steam OpenID oficial para ver aquí tu avatar de Steam, tu emblema de rango y tus Rating Points. A.C.E nunca pide una contraseña de Steam.",
     "connect": "Iniciar sesión con Steam",
     "openDeck": "Abrir Command Deck",
     "avatarAlt": "Avatar de Steam de {name}",
@@ -25,7 +25,7 @@ export const home: TextBag["home"] = {
     "matches": "Partidas",
     "kd": "K/D",
     "na": "n/d",
-    "kdNote": "El K/D muestra n/d porque A.C.E. aún no registra bajas ni muertes.",
+    "kdNote": "El K/D muestra n/d porque A.C.E aún no registra bajas ni muertes.",
     "shieldKicker": "A.C.E SHIELD",
     "shieldChip": "EN DESARROLLO",
     "shieldTitle": "Estado de integridad",
@@ -43,21 +43,21 @@ export const home: TextBag["home"] = {
     "seasonBody": "La temporada 1 aún no tiene fecha de inicio ni de fin, así que no hay cuenta atrás. Las fechas se publicarán en este sitio antes de que empiece la temporada.",
     "statsKicker": "TUS ESTADÍSTICAS",
     "statsSignedOut": "Inicia sesión con Steam para ver tus estadísticas.",
-    "statsEmpty": "Aún no hay partidas registradas. Las victorias y derrotas aparecen tras tu primera partida A.C.E. registrada.",
-    "statsLive": "Las victorias y derrotas provienen de tu cuenta A.C.E. guardada.",
+    "statsEmpty": "Aún no hay partidas registradas. Las victorias y derrotas aparecen tras tu primera partida A.C.E registrada.",
+    "statsLive": "Las victorias y derrotas provienen de tu cuenta A.C.E guardada.",
     "statsLink": "Abrir estadísticas de jugador"
   },
   "meta": {
-    "title": "A.C.E. — Plataforma competitiva de CS2",
-    "description": "A.C.E. es una plataforma competitiva planificada de Counter-Strike 2 para la identidad de los jugadores, la calibración, los equipos y los torneos. Este sitio web público es una vista previa. El emparejamiento clasificatorio, el anticheat, los pagos y los premios no están activos."
+    "title": "A.C.E — Plataforma competitiva de CS2",
+    "description": "A.C.E es una plataforma competitiva planificada de Counter-Strike 2 para la identidad de los jugadores, la calibración, los equipos y los torneos. Este sitio web público es una vista previa. El emparejamiento clasificatorio, el anticheat, los pagos y los premios no están activos."
   },
   "opening": {
-    "dialogLabel": "Apertura de A.C.E.",
+    "dialogLabel": "Apertura de A.C.E",
     "line": "A.C.E: Anticheat autónomo, calibración competitiva, jugadores de élite",
     "enter": "Entrar al sitio"
   },
   "hero": {
-    "logoAlt": "A.C.E. Anticheat autónomo, calibración competitiva, jugadores de élite",
+    "logoAlt": "A.C.E Anticheat autónomo, calibración competitiva, jugadores de élite",
     "arenaAlt": "Placa de la arena A.C.E. Imagen original del escenario, no es arte de Valve. La pantalla lleva la etiqueta televisión de partidas. La emisión en directo está apagada."
   },
   "broadcast": {
@@ -91,7 +91,7 @@ export const home: TextBag["home"] = {
       },
       {
         "kicker": "RANGOS 3D FIJOS",
-        "copy": "Diez escalones, de Recruit a A.C.E. Legend. Una puntuación guardada aparece después de iniciar sesión con Steam. Esta página no aplica ninguna partida.",
+        "copy": "Diez escalones, de Recruit a A.C.E Legend. Una puntuación guardada aparece después de iniciar sesión con Steam. Esta página no aplica ninguna partida.",
         "chips": [
           "REGLA DE PUNTUACIÓN REGISTRADA",
           "TORNO EN ESTA PÁGINA"
@@ -134,13 +134,13 @@ export const home: TextBag["home"] = {
     "lines": [
       "A.C.E SHIELD: EN DESARROLLO",
       "MATRIZ DE BLOQUEO DE HARDWARE: NO SE RECOGE NINGÚN IDENTIFICADOR",
-      "ENLACE A.C.E. SHIELD: NO HAY NINGÚN CLIENTE INSTALADO"
+      "ENLACE A.C.E SHIELD: NO HAY NINGÚN CLIENTE INSTALADO"
     ],
     "note": "Este sitio web no ejecuta un cliente de núcleo, no analiza la memoria y no aplica ningún bloqueo de hardware."
   },
   "comingSoon": {
     "badge": "NO DISPONIBLE",
-    "body": "El cliente de escritorio de A.C.E. no se ofrece para descargar. La temporada 1 en este sitio web no instala software ni abre ningún registro de entrada."
+    "body": "El cliente de escritorio de A.C.E no se ofrece para descargar. La temporada 1 en este sitio web no instala software ni abre ningún registro de entrada."
   },
   "operative": {
     "kicker": "Ventana táctica cinematográfica · entorno CSS original · no es arte de Valve",
@@ -149,7 +149,7 @@ export const home: TextBag["home"] = {
     "note": "Texto de campaña. Las colas clasificatorias, los servidores en vivo y los premios no están activos."
   },
   "howStatus": {
-    "label": "SUBSISTEMA DE REGISTRO A.C.E. — MOTOR DE CALIBRACIÓN LISTO",
+    "label": "SUBSISTEMA DE REGISTRO A.C.E — MOTOR DE CALIBRACIÓN LISTO",
     "note": "Las colas clasificatorias abrirán cuando A.C.E Shield y la calibración estén activos."
   },
   "shell": {

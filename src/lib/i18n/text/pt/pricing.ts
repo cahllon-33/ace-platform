@@ -70,10 +70,10 @@ export const pricing: TextBag["pricing"] = {
       "prices": "Free {free}. Plus {plus} por mês. Premium {premium} por mês. Os planos renovam mensalmente. Podes cancelar a qualquer momento sem penalização nas definições do painel e manter o acesso até ao fim do mês pago. Um mês parcial não é reembolsado, salvo se a lei do teu país o exigir.",
       "plusTitle": "2. O que o Plus inclui",
       "plus1": "Tudo o que o Free inclui.",
-      "plus2": "Em breve: uma carta de agradecimento e suporte por e-mail em support@ace-platform.gg, quando o pagamento existir.",
+      "plus2": "Suporte por e-mail para membros em {email} e uma carta de agradecimento da equipa.",
       "premiumTitle": "3. O que o Premium inclui",
       "prem1": "Tudo o que o Plus inclui.",
-      "prem2": "Arte de rank Premium e o códice de ranks Premium: o conjunto original de emblemas ilustrados da A.C.E. no seu perfil. Apenas cosmético, na mesma escada de Rating Points.",
+      "prem2": "Arte de rank Premium e o códice de ranks Premium: o conjunto original de emblemas ilustrados da A.C.E no seu perfil. Apenas cosmético, na mesma escada de Rating Points.",
       "prem3": "O cartão de perfil Premium animado.",
       "prem4": "Distintivos especiais e o SELO ELITE.",
       "prem5": "Em breve: análise de partida alargada (mapa de calor de mortes, % de headshots, desempenho por ronda), quando existir análise de demos.",
@@ -85,14 +85,14 @@ export const pricing: TextBag["pricing"] = {
       "soon": "Tudo o que estiver marcado como Em breve não é prometido até ser lançado. Até lá, o preço não o inclui.",
       "languageTitle": "6. Idioma",
       "language": "As traduções são fornecidas por conveniência. Se uma tradução diferir do texto em inglês, aplica-se o texto em inglês.",
-      "contact": "Dúvidas: support@ace-platform.gg",
+      "contact": "Dúvidas: {email}",
       "footerLink": "Termos Premium",
       "pricingLink": "Ler os termos Premium"
     }
   },
   "meta": {
     "title": "Preços",
-    "description": "Subscrição A.C.E.: Gratuito {free}, Plus {plus}/mês, Premium {premium}/mês. Preços de apresentação fixados em valores inteiros."
+    "description": "Subscrição A.C.E: Gratuito {free}, Plus {plus}/mês, Premium {premium}/mês. Preços de apresentação fixados em valores inteiros."
   },
   "period": {
     "monthly": "/mês"
@@ -108,23 +108,23 @@ export const pricing: TextBag["pricing"] = {
       "note": "Grafite",
       "title": "Acesso aberto",
       "points": [
-        "Inicie sessão com o Steam OpenID. A A.C.E. nunca pede a palavra-passe da Steam.",
+        "Inicie sessão com o Steam OpenID. A A.C.E nunca pede a palavra-passe da Steam.",
         "Uma pontuação guardada começa em 1.200. Nenhum resultado de partida a alterou.",
         "Todas as páginas públicas: jogar, torneios, classificação, equipas e regras."
       ]
     },
     "plus": {
-      "name": "A.C.E. PLUS",
+      "name": "A.C.E PLUS",
       "note": "Plus",
       "title": "Estatísticas de jogador e suporte",
       "points": [
         "Tudo o que o Grátis inclui.",
-        "Estatísticas de jogador: o seu gráfico de evolução do rating a partir de partidas A.C.E. registadas. Os indicadores de % de headshots e precisão chegam em breve.",
-        "Em breve: uma carta de agradecimento e suporte por e-mail em support@ace-platform.gg, quando o pagamento existir. O Plus não compra rating nem adversários mais fáceis."
+        "Estatísticas de jogador: o seu gráfico de evolução do rating a partir de partidas A.C.E registadas. Os indicadores de % de headshots e precisão chegam em breve.",
+        "Suporte por e-mail para membros em {email} e uma carta de agradecimento da equipa. O Plus não compra rating nem adversários mais fáceis."
       ]
     },
     "premium": {
-      "name": "A.C.E. PREMIUM",
+      "name": "A.C.E PREMIUM",
       "note": "Premium",
       "title": "Arte de perfil, distintivos e análise",
       "points": [
@@ -159,7 +159,7 @@ export const pricing: TextBag["pricing"] = {
     }
   },
   "compare": {
-    "kicker": "O que a A.C.E. pode prometer hoje",
+    "kicker": "O que a A.C.E pode prometer hoje",
     "title": "Comparação de subscrições",
     "note": "Cada linha reflete o site atual. O pagamento estará disponível em breve, e um plano pago nunca abre uma fila nem compra vantagem.",
     "caption": "Gratuito, Plus e Premium comparados pelo que o sítio faz hoje",
@@ -175,7 +175,7 @@ export const pricing: TextBag["pricing"] = {
       },
       "steamSignIn": {
         "feature": "Início de sessão Steam",
-        "detail": "Steam OpenID oficial. A A.C.E. nunca pede a palavra-passe da Steam."
+        "detail": "Steam OpenID oficial. A A.C.E nunca pede a palavra-passe da Steam."
       },
       "startingRating": {
         "feature": "Pontuação inicial",
@@ -183,7 +183,7 @@ export const pricing: TextBag["pricing"] = {
       },
       "recordedMatches": {
         "feature": "Partidas registadas",
-        "detail": "Vitórias e derrotas escritas a partir de uma partida A.C.E. concluída."
+        "detail": "Vitórias e derrotas escritas a partir de uma partida A.C.E concluída."
       },
       "rankedQueue": {
         "feature": "Fila ranqueada",
@@ -231,15 +231,15 @@ export const pricing: TextBag["pricing"] = {
   "receipt": {
     "plus": {
       "metaTitle": "Recibo Plus",
-      "metaDescription": "A carta A.C.E. Plus apresentada neste sítio. O pagamento não está ativo, por isso nada é cobrado e nenhum e-mail é enviado.",
-      "planName": "A.C.E. Plus",
-      "nextLabel": "Continuar na A.C.E.",
+      "metaDescription": "A carta A.C.E Plus apresentada neste sítio. O pagamento não está ativo, por isso nada é cobrado e nenhum e-mail é enviado.",
+      "planName": "A.C.E Plus",
+      "nextLabel": "Continuar na A.C.E",
       "nextBody": "As páginas públicas continuam abertas. Esta seleção não abre uma fila e não altera a patente guardada."
     },
     "premium": {
       "metaTitle": "Recibo Premium",
-      "metaDescription": "A carta A.C.E. Premium apresentada neste sítio. O pagamento não está ativo, por isso nada é cobrado e nenhum e-mail é enviado.",
-      "planName": "A.C.E. Premium",
+      "metaDescription": "A carta A.C.E Premium apresentada neste sítio. O pagamento não está ativo, por isso nada é cobrado e nenhum e-mail é enviado.",
+      "planName": "A.C.E Premium",
       "nextLabel": "Ler os termos Premium",
       "nextBody": "O Premium inclui arte de rank Premium, o cartão de perfil animado, emblemas especiais e o ELITE SEAL, além de tudo do Plus. Guardar um clã em Squads é gratuito para todas as contas."
     }
@@ -256,7 +256,7 @@ export const pricing: TextBag["pricing"] = {
         "Nome do plano: {plan}.",
         "Preço apresentado: {price} por mês. O valor é uma etiqueta, não uma cobrança.",
         "Pagamento: nenhum. Escolher este plano não usa um cartão.",
-        "E-mail: nenhum. A A.C.E. não envia esta carta para uma caixa de correio.",
+        "E-mail: nenhum. A A.C.E não envia esta carta para uma caixa de correio.",
         "Nível guardado: inalterado. Os emblemas especiais e o selo de elite só aparecem quando a conta já tem Premium guardado.",
         "Pontuação: não está à venda. Uma conta nova continua a começar em 1.200."
       ]
@@ -265,7 +265,7 @@ export const pricing: TextBag["pricing"] = {
       "title": "O que pode usar hoje",
       "items": [
         "O site público: início, jogar, torneios, classificação, equipas, regras e termos.",
-        "Início de sessão Steam através do Steam OpenID oficial. A A.C.E. nunca pede a palavra-passe da Steam.",
+        "Início de sessão Steam através do Steam OpenID oficial. A A.C.E nunca pede a palavra-passe da Steam.",
         "As mesmas páginas públicas que o Gratuito. Este preço não abre uma fila separada."
       ]
     },
@@ -309,7 +309,7 @@ export const pricing: TextBag["pricing"] = {
   },
   "telemetry": {
     "kicker": "TELEMETRIA PLUS / PREMIUM",
-    "copy": "TELEMETRIA DO PAINEL BLOQUEADA — Atualize o seu plano de subscrição para A.C.E. Plus ou Premium para desbloquear curvas de estatísticas dinâmicas em tempo real e índices de especialidade de armas.",
+    "copy": "TELEMETRIA DO PAINEL BLOQUEADA — Atualize o seu plano de subscrição para A.C.E Plus ou Premium para desbloquear curvas de estatísticas dinâmicas em tempo real e índices de especialidade de armas.",
     "cta": "Abrir as tabelas de preços"
   }
 };

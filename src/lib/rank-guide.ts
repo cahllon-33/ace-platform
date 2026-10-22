@@ -3,7 +3,7 @@ import type { TextBag } from "@/lib/i18n/text";
 import { RANK_TIERS, rankEmblemAsset, type RankTier } from "@/lib/ranks";
 import { RATING_CONFIG } from "@/lib/rating";
 
-export const CODEX_CATEGORY = "A.C.E.";
+export const CODEX_CATEGORY = "A.C.E";
 
 export type CodexText = Pick<TextBag, "codex" | "ranks">;
 

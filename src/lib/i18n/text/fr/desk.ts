@@ -3,7 +3,7 @@ import type { TextBag } from "../types";
 export const desk: TextBag["desk"] = {
   shop: {
     meta: {
-      title: "Marché A.C.E.",
+      title: "Marché A.C.E",
       description:
         "Cartes de récompenses de championnat. La boutique et les récompenses ouvriront bientôt.",
     },
@@ -29,7 +29,7 @@ export const desk: TextBag["desk"] = {
         price: "Exemple uniquement · aucune valeur monétaire",
       },
       crown: {
-        name: "Cadre d'avatar Couronne A.C.E.",
+        name: "Cadre d'avatar Couronne A.C.E",
         tag: "Ornement de profil",
         price: "Bientôt",
       },

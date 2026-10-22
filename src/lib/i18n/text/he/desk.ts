@@ -3,7 +3,7 @@ import type { TextBag } from "../types";
 export const desk: TextBag["desk"] = {
   shop: {
     meta: {
-      title: "שוק A.C.E.",
+      title: "שוק A.C.E",
       description:
         "כרטיסי פרסי אליפות. החנות והפרסים ייפתחו בקרוב.",
     },
@@ -49,14 +49,14 @@ export const desk: TextBag["desk"] = {
     meta: {
       title: "תמיכה",
       description:
-        "מרכז העזרה של A.C.E. מוקדי Anti-Cheat, משחקים מדורגים וחיובים ייפתחו עם הבטא התחרותית.",
+        "מרכז העזרה של A.C.E מוקדי Anti-Cheat, משחקים מדורגים וחיובים ייפתחו עם הבטא התחרותית.",
     },
   },
   contact: {
     meta: {
       title: "יצירת קשר",
       description:
-        "יצירת קשר עם A.C.E. הטופס המקוון ייפתח בקרוב.",
+        "יצירת קשר עם A.C.E הטופס המקוון ייפתח בקרוב.",
     },
   },
   contactEmail: {

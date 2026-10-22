@@ -4,18 +4,18 @@ export const features: TextBag["features"] = {
   "page": {
     "meta": {
       "title": "Funktionen",
-      "description": "Spezifizierte Architektur des A.C.E.-Anti-Cheat-Kerns, biometrische Gesichtsscan-Verknüpfung und zehn Stufen der Fähigkeitskalibrierung. Diese Systeme sind auf dieser Website nicht in Betrieb."
+      "description": "Spezifizierte Architektur des A.C.E-Anti-Cheat-Kerns, biometrische Gesichtsscan-Verknüpfung und zehn Stufen der Fähigkeitskalibrierung. Diese Systeme sind auf dieser Website nicht in Betrieb."
     },
     "header": {
       "kicker": "ACE-FUNKTIONEN / KERN / GESICHTSSCAN / KALIBRIERUNG",
       "title": "Spezifikation der Plattformfunktionen",
-      "lede": "Diese Seite ist die technische Karte in Produktionsqualität für drei geplante A.C.E.-Systeme: den autonomen Anti-Cheat-Kern, die biometrische Gesichtsscan-Verknüpfung und die Kalibrierungsleiter mit zehn Stufen. Nichts auf dieser Seite ist ein laufender Kern, ein laufendes Kameraprodukt oder eine laufende Rangliste-Warteschlange. Steam OpenID, 5v5-Mannschaften, Turnierbaum-Layouts und eine Wertungsberechnung nach Elo-Art existieren in diesem Repository. Eigene CS2-Server, Zahlungen, Preise und ein herunterladbarer Integritäts-Client existieren nicht."
+      "lede": "Diese Seite ist die technische Karte in Produktionsqualität für drei geplante A.C.E-Systeme: den autonomen Anti-Cheat-Kern, die biometrische Gesichtsscan-Verknüpfung und die Kalibrierungsleiter mit zehn Stufen. Nichts auf dieser Seite ist ein laufender Kern, ein laufendes Kameraprodukt oder eine laufende Rangliste-Warteschlange. Steam OpenID, 5v5-Mannschaften, Turnierbaum-Layouts und eine Wertungsberechnung nach Elo-Art existieren in diesem Repository. Eigene CS2-Server, Zahlungen, Preise und ein herunterladbarer Integritäts-Client existieren nicht."
     },
     "kernel": {
       "title": "Architektur des Anti-Cheat-Kerns",
       "paragraphs": [
-        "Die spezifizierte autonome sichere Schale ist ein hardwaregebundener Integritäts-Client, der neben Counter-Strike 2 auf dem Rechner eines Spielers laufen und einen signierten Zustand ALLOW oder DENY an die von A.C.E. verwalteten Server melden würde. Der Kern ist ausfallsicher geschlossen entworfen: Fehlt der Client, ist er gestoppt, veraltet, gefälscht oder ungeprüft, wird die Ranglisten-Zulassung verweigert. Der Browser entscheidet niemals über die Zulassung. Die Rangliste-Schaltfläche «SPIEL FINDEN» auf dieser Website bleibt aus diesem Grund bereits geschlossen.",
-        "Geplante Kernschichten umfassen einen Handshake im Benutzermodus, der die geprüfte 64-Bit-SteamID an das A.C.E.-Konto bindet, eine Bestätigungsfläche für die Hardware-Kennung (HWID), eine Signatur-Beobachtungsliste für bekannte Cheat-Familien und einen Server-zu-Server-Zulassungsweg, der durch ein gemeinsames Geheimnis geschützt ist. Eine bestätigte Cheat-Signatur, eine verweigerte Integritätsprüfung oder eine gefälschte Gerätekennung soll laut Spezifikation sofort den Kontostatus auf BANNED oder PERM_BANNED ändern und, sobald ein abgerechnetes Produkt besteht, zum vollständigen Verfall bereits bezahlter Abonnementzeit ohne jede Erstattungspflicht führen. Mit dieser Website wird kein solcher Client ausgeliefert. Download-Karten mit «Demnächst» sind nur Layout."
+        "Die spezifizierte autonome sichere Schale ist ein hardwaregebundener Integritäts-Client, der neben Counter-Strike 2 auf dem Rechner eines Spielers laufen und einen signierten Zustand ALLOW oder DENY an die von A.C.E verwalteten Server melden würde. Der Kern ist ausfallsicher geschlossen entworfen: Fehlt der Client, ist er gestoppt, veraltet, gefälscht oder ungeprüft, wird die Ranglisten-Zulassung verweigert. Der Browser entscheidet niemals über die Zulassung. Die Rangliste-Schaltfläche «SPIEL FINDEN» auf dieser Website bleibt aus diesem Grund bereits geschlossen.",
+        "Geplante Kernschichten umfassen einen Handshake im Benutzermodus, der die geprüfte 64-Bit-SteamID an das A.C.E-Konto bindet, eine Bestätigungsfläche für die Hardware-Kennung (HWID), eine Signatur-Beobachtungsliste für bekannte Cheat-Familien und einen Server-zu-Server-Zulassungsweg, der durch ein gemeinsames Geheimnis geschützt ist. Eine bestätigte Cheat-Signatur, eine verweigerte Integritätsprüfung oder eine gefälschte Gerätekennung soll laut Spezifikation sofort den Kontostatus auf BANNED oder PERM_BANNED ändern und, sobald ein abgerechnetes Produkt besteht, zum vollständigen Verfall bereits bezahlter Abonnementzeit ohne jede Erstattungspflicht führen. Mit dieser Website wird kein solcher Client ausgeliefert. Download-Karten mit «Demnächst» sind nur Layout."
       ],
       "stats": [
         {
@@ -35,7 +35,7 @@ export const features: TextBag["features"] = {
     "faceScan": {
       "title": "Biometrische Gesichtsscan-Verknüpfung",
       "paragraphs": [
-        "Der Gesichtsscan ist eine spezifizierte künftige Schicht zur Identitätsbindung, kein Kameraprodukt auf dieser Website. Der geplante Entwurf würde erst nach ausdrücklicher Einwilligung und einer gesonderten rechtlichen Prüfung eine auf Lebendigkeit geprüfte Gesichtsvorlage an dasselbe A.C.E.-Konto binden, das bereits eine vom Server geprüfte SteamID enthält. Der Zweck ist, Kontoteilung zur Umgehung einer früheren Einschränkung zu erschweren. A.C.E. erfasst heute keine Gesichtsbilder, keine Gesichts-Embeddings, keine E-Mail-Adressen und keine Hardware-Fingerabdrücke. Die laufende Datenschutzhaltung bleibt strikte Notwendigkeit: nur die geprüfte 64-Bit-SteamID und der öffentliche Steam-Anzeigename.",
+        "Der Gesichtsscan ist eine spezifizierte künftige Schicht zur Identitätsbindung, kein Kameraprodukt auf dieser Website. Der geplante Entwurf würde erst nach ausdrücklicher Einwilligung und einer gesonderten rechtlichen Prüfung eine auf Lebendigkeit geprüfte Gesichtsvorlage an dasselbe A.C.E-Konto binden, das bereits eine vom Server geprüfte SteamID enthält. Der Zweck ist, Kontoteilung zur Umgehung einer früheren Einschränkung zu erschweren. A.C.E erfasst heute keine Gesichtsbilder, keine Gesichts-Embeddings, keine E-Mail-Adressen und keine Hardware-Fingerabdrücke. Die laufende Datenschutzhaltung bleibt strikte Notwendigkeit: nur die geprüfte 64-Bit-SteamID und der öffentliche Steam-Anzeigename.",
         "Falls Face Scan jemals umgesetzt wird, ersetzt es nicht Steam OpenID, wird nicht zum Verkauf verhaltensbasierter Werbung genutzt und schaltet Ranglisten-Warteschlangen nicht von sich aus frei. Für die Zulassung zu Ranglistenspielen bleibt ein verifizierter Anti-Cheat-Weg erforderlich. Bis diese Prüfung vorliegt, ist jedes Face-Scan-Panel in der Lobby eine Designvorschau."
       ]
     },
@@ -57,8 +57,8 @@ export const features: TextBag["features"] = {
   },
   "loot": {
     "kicker": "Kosmetik · demnächst",
-    "title": "A.C.E.-BEUTEARCHITEKTUR — WAFFENFUNDE",
-    "lede": "Originale A.C.E.-Finishes, die mit dem Shop kommen. Kosmetik beeinflusst nie den Wettkampf.",
+    "title": "A.C.E-BEUTEARCHITEKTUR — WAFFENFUNDE",
+    "lede": "Originale A.C.E-Finishes, die mit dem Shop kommen. Kosmetik beeinflusst nie den Wettkampf.",
     "checkout": "Checkout · demnächst"
   },
   "identityPreview": {
@@ -85,23 +85,23 @@ export const features: TextBag["features"] = {
       },
       "anti-cheat": {
         "title": "Anti-Cheat-Überblick",
-        "body": "A.C.E. hat kein funktionierendes Anti-Cheat-Produkt. Die Rangliste-Spielersuche bleibt geschlossen, bis eine echte Anbindung besteht."
+        "body": "A.C.E hat kein funktionierendes Anti-Cheat-Produkt. Die Rangliste-Spielersuche bleibt geschlossen, bis eine echte Anbindung besteht."
       },
       "download-client": {
         "title": "Client herunterladen",
-        "body": "Es gibt keinen A.C.E.-Desktop-Client zum Herunterladen. Ein nativer Client gehört nicht zur aktuellen Web-Phase."
+        "body": "Es gibt keinen A.C.E-Desktop-Client zum Herunterladen. Ein nativer Client gehört nicht zur aktuellen Web-Phase."
       },
       "mobile-app": {
         "title": "App für Mobilgeräte",
-        "body": "Die A.C.E.-App ist auf der Roadmap."
+        "body": "Die A.C.E-App ist auf der Roadmap."
       },
       "news": {
         "title": "Nachrichten",
-        "body": "Der A.C.E.-Newsroom öffnet bald."
+        "body": "Der A.C.E-Newsroom öffnet bald."
       },
       "about": {
         "title": "Über uns",
-        "body": "A.C.E. ist eine unabhängige Wettkampfseite für Counter-Strike 2 in der öffentlichen Website-Vorschau. Sie ist nicht mit Valve verbunden."
+        "body": "A.C.E ist eine unabhängige Wettkampfseite für Counter-Strike 2 in der öffentlichen Website-Vorschau. Sie ist nicht mit Valve verbunden."
       },
       "advertising": {
         "title": "Werbung",

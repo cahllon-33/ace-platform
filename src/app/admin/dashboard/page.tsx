@@ -11,7 +11,7 @@ import { loadTvWall } from "@/server/admin-broadcast";
 export const instant = false;
 
 export const metadata: Metadata = {
-  title: "A.C.E. League Supreme Command Center",
+  title: "A.C.E League Supreme Command Center",
   description:
     "Operator command suite. Hebrew renders when the Hebrew flag is active. Every other locale falls back to English LTR. No live Anti-Cheat, staff session, billing, or Steam token revocation runs here.",
 };

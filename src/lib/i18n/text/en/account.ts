@@ -3,10 +3,10 @@
     "metaTitle": "Player stats",
     "kicker": "PLAYER STATS",
     "title": "Player stats",
-    "lede": "Rating movement from your recorded A.C.E. matches, with headshot % and accuracy gauges. Included in A.C.E Plus ($4/month) and A.C.E Premium ($7/month).",
+    "lede": "Rating movement from your recorded A.C.E matches, with headshot % and accuracy gauges. Included in A.C.E Plus ($4/month) and A.C.E Premium ($7/month).",
     "movementTitle": "Rating movement",
-    "movementNote": "Each point is a rating change written from a recorded A.C.E. match.",
-    "noMatches": "No recorded matches yet, so the graph is empty. It fills in after your first recorded A.C.E. match.",
+    "movementNote": "Each point is a rating change written from a recorded A.C.E match.",
+    "noMatches": "No recorded matches yet, so the graph is empty. It fills in after your first recorded A.C.E match.",
     "currentLabel": "Current rating",
     "netLabel": "Net change",
     "changesLabel": "Recorded changes",
@@ -19,7 +19,7 @@
     "lockedBody": "Your stored plan is Free. Plus ($4/month) and Premium ($7/month) both unlock this page. Coming soon: checkout does not exist yet.",
     "signIn": "Sign in with Steam to see your player stats.",
     "plansLink": "See plans",
-    "rosterNote": "Example roster profile: these players have no recorded A.C.E. matches, so the stats show no numbers.",
+    "rosterNote": "Example roster profile: these players have no recorded A.C.E matches, so the stats show no numbers.",
     "dashTitle": "Stats and analysis",
     "dashStats": "Open player stats",
     "dashAnalysis": "Open match analysis (Premium)",
@@ -36,7 +36,7 @@
     "stats": {
       "accountStatus": "Account status",
       "subscription": "Subscription",
-      "rank": "A.C.E. rank",
+      "rank": "A.C.E rank",
       "ratingPoints": "Rating points",
       "wins": "Wins",
       "losses": "Losses",
@@ -69,7 +69,7 @@
     "rankedButton": "Find ranked match",
     "roster": {
       "title": "5v5 roster",
-      "body": "One captain. Four invites. Captains invite other A.C.E. account IDs, which are created only after a verified Steam login."
+      "body": "One captain. Four invites. Captains invite other A.C.E account IDs, which are created only after a verified Steam login."
     },
     "pendingInvites": "Pending invitations"
   },
@@ -84,7 +84,7 @@
     },
     "invite": {
       "failed": "Invite failed.",
-      "label": "Invite free agent via SteamID or A.C.E. account ID",
+      "label": "Invite free agent via SteamID or A.C.E account ID",
       "submitAria": "Send team invitation",
       "submit": "Send invite"
     }
@@ -92,8 +92,8 @@
   "profile": {
     "meta": {
       "notFoundTitle": "Player profile",
-      "title": "{name} · A.C.E. profile",
-      "description": "A.C.E. player dossier. Plus and Premium sessions unlock telemetry trend graphs."
+      "title": "{name} · A.C.E profile",
+      "description": "A.C.E player dossier. Plus and Premium sessions unlock telemetry trend graphs."
     },
     "kicker": "Player identity",
     "bannerPlaceholder": "Profile banner · coming soon",
@@ -130,7 +130,7 @@
     "back": "Return to clan roster"
   },
   "networks": {
-    "note": "A link typed here stays in this browser and is not saved. A.C.E. never asks for a Steam password.",
+    "note": "A link typed here stays in this browser and is not saved. A.C.E never asks for a Steam password.",
     "labels": {
       "steam": "Steam profile"
     },
@@ -148,9 +148,9 @@
       "title": "Sign-in error"
     },
     "title": "Steam sign-in did not complete",
-    "notConfigured": "Steam OpenID is not configured on this server yet. A.C.E. never asks for a Steam password.",
-    "unavailable": "Steam did not answer the verification request. Try again in a moment. A.C.E. never asks for a Steam password.",
-    "unverified": "The OpenID callback could not be verified on the server. A.C.E. never asks for a Steam password.",
+    "notConfigured": "Steam OpenID is not configured on this server yet. A.C.E never asks for a Steam password.",
+    "unavailable": "Steam did not answer the verification request. Try again in a moment. A.C.E never asks for a Steam password.",
+    "unverified": "The OpenID callback could not be verified on the server. A.C.E never asks for a Steam password.",
     "returnHome": "Return home"
   }
 }as const;

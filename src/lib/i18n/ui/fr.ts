@@ -25,7 +25,7 @@ export const UI_FR: Ui = {
     "company": "Entreprise",
     "legal": "Mentions légales",
     "tagline": "Des classements compétitifs Counter-Strike 2, construits autour du fair-play.",
-    "follow": "Suivre A.C.E.",
+    "follow": "Suivre A.C.E",
     "rights": "Tous droits réservés.",
     "legalLine": "© 2026 A.C.E. Plateforme indépendante, non affiliée à Valve. Counter-Strike et CS2 sont des marques de Valve Corporation."
   },
@@ -149,7 +149,7 @@ export const UI_FR: Ui = {
   "antiCheat": {
     "kicker": "A.C.E Shield",
     "title": "Anti-triche",
-    "lede": "A.C.E Shield est le système d’intégrité conçu pour chaque match A.C.E. : contrôles client, serveur, match et comportement qui travaillent ensemble, pensés d’abord pour la vie privée.",
+    "lede": "A.C.E Shield est le système d’intégrité conçu pour chaque match A.C.E : contrôles client, serveur, match et comportement qui travaillent ensemble, pensés d’abord pour la vie privée.",
     "statusLabel": "Phase de déploiement",
     "pillarsTitle": "Piliers de l’architecture",
     "pillars": {
@@ -237,7 +237,7 @@ export const UI_FR: Ui = {
     "status": {
       "title": "État de la plateforme",
       "steam": "Connexion Steam",
-      "shield": "A.C.E. Shield",
+      "shield": "A.C.E Shield",
       "servers": "Serveurs compétitifs",
       "tournaments": "Tournois",
       "billing": "Facturation",
@@ -288,7 +288,7 @@ export const UI_FR: Ui = {
     "chat": {
       "open": "Ouvrir le chat d’assistance",
       "close": "Fermer le chat d’assistance",
-      "title": "Assistance A.C.E.",
+      "title": "Assistance A.C.E",
       "greeting": "Salut ! Je suis l’assistant d’aide d’A.C.E. Pose-moi tes questions sur les rangs, les offres, les règles ou ton compte.",
       "placeholder": "Écris ta question…",
       "send": "Envoyer",
@@ -316,7 +316,7 @@ export const UI_FR: Ui = {
       "stepsKicker": "Comment ça marche",
       "stepsTitle": "Trois étapes vers votre premier rang",
       "step1t": "Connectez Steam",
-      "step1b": "Connectez-vous avec Steam OpenID. A.C.E. ne voit jamais votre mot de passe Steam.",
+      "step1b": "Connectez-vous avec Steam OpenID. A.C.E ne voit jamais votre mot de passe Steam.",
       "step2t": "Calibrez",
       "step2b": "Vous commencez au palier 3 avec 1 200 RP. Chaque match enregistré modifie vos RP selon des règles publiées.",
       "step3t": "Montez",
@@ -334,7 +334,7 @@ export const UI_FR: Ui = {
     "profile": {
       "kicker": "JOUEUR",
       "notFound": "Joueur introuvable",
-      "notFoundBody": "Aucun compte A.C.E. n'utilise cet identifiant Steam, ou le profil n'est pas public.",
+      "notFoundBody": "Aucun compte A.C.E n'utilise cet identifiant Steam, ou le profil n'est pas public.",
       "rating": "Classement",
       "rank": "Rang",
       "record": "Bilan",
@@ -382,7 +382,7 @@ export const UI_FR: Ui = {
     "nf": {
       "code": "Erreur 404",
       "title": "Cette page est hors de la carte",
-      "body": "Le lien est peut-être ancien ou mal saisi. Tout A.C.E. est à un clic d’ici.",
+      "body": "Le lien est peut-être ancien ou mal saisi. Tout A.C.E est à un clic d’ici.",
       "home": "Retour à l’accueil",
       "ranks": "Voir les rangs"
     },
@@ -401,7 +401,7 @@ export const UI_FR: Ui = {
     "st": {
       "kicker": "Performance",
       "title": "Statistiques du joueur",
-      "lede": "Chaque chiffre provient de matchs A.C.E. enregistrés. Rien n’est estimé.",
+      "lede": "Chaque chiffre provient de matchs A.C.E enregistrés. Rien n’est estimé.",
       "empty": "Aucun match enregistré pour l’instant. Les statistiques apparaîtront après le premier match classé.",
       "winRate": "Taux de victoire",
       "adr": "ADR",
@@ -429,9 +429,9 @@ export const UI_FR: Ui = {
     "ab": {
       "title": "À propos d’A.C.E.",
       "lede": "Une plateforme de compétition Counter-Strike 2 bâtie autour d’un tableau de rangs public et de formules qui n’achètent jamais d’avantage.",
-      "b1": "A.C.E. organise des matchs classés, des ladders et des tournois CS2. La connexion se fait via Steam OpenID ; nous ne voyons jamais ton mot de passe Steam.",
+      "b1": "A.C.E organise des matchs classés, des ladders et des tournois CS2. La connexion se fait via Steam OpenID ; nous ne voyons jamais ton mot de passe Steam.",
       "b2": "Ton rang est calculé uniquement à partir des résultats enregistrés selon des règles publiées. Les formules payantes sont uniquement esthétiques et pratiques.",
-      "b3": "A.C.E. est une plateforme indépendante, non affiliée à Valve."
+      "b3": "A.C.E est une plateforme indépendante, non affiliée à Valve."
     },
     "ss": {
       "title": "État des serveurs",
@@ -494,7 +494,7 @@ export const UI_FR: Ui = {
   },
   "r45": {
     "title": "Au-delà de Legend",
-    "lede": "Cinq badges de prestige au-dessus d'A.C.E. Legend, un tous les 200 RP de 2 150 à 2 950. Gagnés uniquement en jouant.",
+    "lede": "Cinq badges de prestige au-dessus d'A.C.E Legend, un tous les 200 RP de 2 150 à 2 950. Gagnés uniquement en jouant.",
     "plus": "Plus · platine",
     "premium": "Premium · feu doré",
     "fair": "Le même RP pour tous. Seuils de prestige, matchmaking et classement sont identiques sur chaque offre. Rien ici ne s'achète.",
@@ -527,10 +527,10 @@ export const UI_FR: Ui = {
     "pr": {
       "kicker": "Prestige",
       "title": "Règles des badges",
-      "lede": "Comment chaque badge A.C.E. s'obtient. Les badges sont purement esthétiques : ils ne changent jamais le matchmaking, les RP ni aucune règle.",
+      "lede": "Comment chaque badge A.C.E s'obtient. Les badges sont purement esthétiques : ils ne changent jamais le matchmaking, les RP ni aucune règle.",
       "ranks": "Les badges de rang (niveaux 1–10) suivent vos RP. Tout le monde voit le même rang et la même couleur fixe de niveau.",
       "prestige": "Les badges de prestige sont cinq objectifs à long terme au-delà de {elite} RP : un tous les 200 RP de 2 150 à 2 950.",
-      "free": "Free : votre badge reste A.C.E. Legend et votre niveau de prestige s'affiche comme un palier texte. Vos RP ne sont jamais plafonnés.",
+      "free": "Free : votre badge reste A.C.E Legend et votre niveau de prestige s'affiche comme un palier texte. Vos RP ne sont jamais plafonnés.",
       "plus": "Plus : la série de prestige platine.",
       "premium": "Premium : la série de prestige or animée.",
       "lose": "Si vous repassez sous un seuil de prestige, le badge suit vos RP ; en l'atteignant de nouveau, il revient.",
@@ -683,5 +683,19 @@ export const UI_FR: Ui = {
     "communityTitle": "Communauté",
     "communityLede": "Suis A.C.E pour les infos de matchs, les tournois et les temps forts.",
     "followOn": "A.C.E sur {network}"
+  },
+  "r49b": {
+    "title": "Inventaire Steam",
+    "private": "Inventaire privé",
+    "privateBody": "L’inventaire Steam de ce joueur est privé.",
+    "empty": "Aucun objet CS2 dans l’inventaire public.",
+    "unavailable": "Impossible de charger l’inventaire Steam pour le moment.",
+    "hiddenOwner": "Ta vitrine d’inventaire est masquée sur ton profil.",
+    "hide": "Masquer la vitrine",
+    "show": "Afficher la vitrine",
+    "priceSource": "Prix : offre la plus basse du Marché de la communauté Steam, en cache.",
+    "note": "Vitrine uniquement. A.C.E n’achète, ne vend et n’échange jamais d’objets Steam.",
+    "updated": "Mis à jour le {date}",
+    "more": "+{n} autres objets"
   }
 };

@@ -24,7 +24,7 @@ export const UI_EN = {
     company: "Company",
     legal: "Legal",
     tagline: "Competitive Counter-Strike 2 ladders, built around fair play.",
-    follow: "Follow A.C.E.",
+    follow: "Follow A.C.E",
     rights: "All rights reserved.",
     legalLine: "© 2026 A.C.E. Independent platform, not affiliated with Valve. Counter-Strike and CS2 are trademarks of Valve Corporation.",
   },
@@ -57,7 +57,7 @@ export const UI_EN = {
   maps: {
     kicker: "Competitive map pool",
     title: "Maps & Broadcast",
-    lede: "Seven maps make up the A.C.E. competitive pool. Teams ban and pick from this list during the map veto set out in the rulebook. Tournament broadcasts appear on the screen below.",
+    lede: "Seven maps make up the A.C.E competitive pool. Teams ban and pick from this list during the map veto set out in the rulebook. Tournament broadcasts appear on the screen below.",
     rulebook: "Read the veto rules",
     screen: "Broadcast screen",
     offAir: "Off air",
@@ -98,10 +98,10 @@ export const UI_EN = {
     factValues: { season: "Season 1" },
   },
   rules: {
-    kicker: "A.C.E. competition rulebook",
+    kicker: "A.C.E competition rulebook",
     title: "Competition rules",
     version: "Version {version} · effective {date}",
-    intro: "The rules every A.C.E. competition is played under. Clauses marked “Applies once deployed” take effect when the system they depend on launches.",
+    intro: "The rules every A.C.E competition is played under. Clauses marked “Applies once deployed” take effect when the system they depend on launches.",
     pending: "Applies once deployed",
     contents: "Contents",
     penalties: { offence: "Offence", first: "First offence", repeat: "Repeat offence", rule: "Rule" },
@@ -132,7 +132,7 @@ export const UI_EN = {
   antiCheat: {
     kicker: "A.C.E Shield",
     title: "Anti-Cheat",
-    lede: "A.C.E Shield is the integrity system being built for every A.C.E. match: client, server, match and behaviour checks working together, designed with privacy first.",
+    lede: "A.C.E Shield is the integrity system being built for every A.C.E match: client, server, match and behaviour checks working together, designed with privacy first.",
     statusLabel: "Deployment phase",
     pillarsTitle: "Architecture pillars",
     pillars: {
@@ -170,7 +170,7 @@ export const UI_EN = {
       "expansion1": "Autonomous Anti-Cheat",
       "expansion2": "Competitive Calibration",
       "expansion3": "Elite Players",
-      "line": "Build your competitive identity. Calibrate your skill. Climb the A.C.E. ranks.",
+      "line": "Build your competitive identity. Calibrate your skill. Climb the A.C.E ranks.",
       "connectSteam": "Connect Steam",
       "openDashboard": "Open dashboard",
       "exploreRanks": "Explore ranks"
@@ -178,7 +178,7 @@ export const UI_EN = {
     "status": {
       "title": "Platform status",
       "steam": "Steam sign-in",
-      "shield": "A.C.E. Shield",
+      "shield": "A.C.E Shield",
       "servers": "Competitive servers",
       "tournaments": "Tournaments",
       "billing": "Billing",
@@ -229,8 +229,8 @@ export const UI_EN = {
     "chat": {
       "open": "Open support chat",
       "close": "Close support chat",
-      "title": "A.C.E. Support",
-      "greeting": "Hi! I'm the A.C.E. support assistant. Ask me about ranks, plans, rules or your account.",
+      "title": "A.C.E Support",
+      "greeting": "Hi! I'm the A.C.E support assistant. Ask me about ranks, plans, rules or your account.",
       "placeholder": "Type your question…",
       "send": "Send",
       "unavailable": "Support chat is not available yet.",
@@ -257,7 +257,7 @@ export const UI_EN = {
       "stepsKicker": "How it works",
       "stepsTitle": "Three steps to your first rank",
       "step1t": "Connect Steam",
-      "step1b": "Sign in with Steam OpenID. A.C.E. never sees your Steam password.",
+      "step1b": "Sign in with Steam OpenID. A.C.E never sees your Steam password.",
       "step2t": "Calibrate",
       "step2b": "You start at tier 3 with 1,200 RP. Every recorded match moves your RP by published rules.",
       "step3t": "Climb",
@@ -275,7 +275,7 @@ export const UI_EN = {
     "profile": {
       "kicker": "PLAYER",
       "notFound": "Player not found",
-      "notFoundBody": "No A.C.E. account uses this Steam ID, or the profile is not public.",
+      "notFoundBody": "No A.C.E account uses this Steam ID, or the profile is not public.",
       "rating": "Rating",
       "rank": "Rank",
       "record": "Record",
@@ -290,11 +290,11 @@ export const UI_EN = {
     },
     "chat": {
       "sources": "Sources",
-      "noMatch": "I couldn't find this in the A.C.E. site content. You can send your question to the team as a ticket.",
+      "noMatch": "I couldn't find this in the A.C.E site content. You can send your question to the team as a ticket.",
       "s1": "How much does Premium cost?",
       "s2": "How do I gain RP?",
       "s3": "How do I report a cheater?",
-      "kbNote": "Answers are taken from the A.C.E. site content."
+      "kbNote": "Answers are taken from the A.C.E site content."
     }
   },
   "r40": {
@@ -323,7 +323,7 @@ export const UI_EN = {
     "nf": {
       "code": "Error 404",
       "title": "This page is off the map",
-      "body": "The link may be old or mistyped. Every part of A.C.E. is one click away from here.",
+      "body": "The link may be old or mistyped. Every part of A.C.E is one click away from here.",
       "home": "Back to home",
       "ranks": "View ranks"
     },
@@ -342,7 +342,7 @@ export const UI_EN = {
     "st": {
       "kicker": "Performance",
       "title": "Player stats",
-      "lede": "Every figure comes from recorded A.C.E. matches. Nothing is estimated.",
+      "lede": "Every figure comes from recorded A.C.E matches. Nothing is estimated.",
       "empty": "No recorded matches yet. Stats appear here after the first ranked match.",
       "winRate": "Win rate",
       "adr": "ADR",
@@ -368,11 +368,11 @@ export const UI_EN = {
       "none": "—"
     },
     "ab": {
-      "title": "About A.C.E.",
+      "title": "About A.C.E",
       "lede": "A Counter-Strike 2 competition platform built around one public rank table and plans that never buy an advantage.",
-      "b1": "A.C.E. runs ranked play, ladders and tournaments for CS2. Sign-in is Steam OpenID; we never see your Steam password.",
+      "b1": "A.C.E runs ranked play, ladders and tournaments for CS2. Sign-in is Steam OpenID; we never see your Steam password.",
       "b2": "Your rank is calculated only from recorded results using published rules. Paid plans are cosmetic and convenience only.",
-      "b3": "A.C.E. is an independent platform and is not affiliated with Valve."
+      "b3": "A.C.E is an independent platform and is not affiliated with Valve."
     },
     "ss": {
       "title": "Server status",
@@ -415,7 +415,7 @@ export const UI_EN = {
     "lv": {
       "nav": "Live",
       "title": "Live broadcasts",
-      "lede": "Official A.C.E. tournament streams. A broadcast shows here only while operators have it on air.",
+      "lede": "Official A.C.E tournament streams. A broadcast shows here only while operators have it on air.",
       "none": "No live broadcast right now",
       "noneBody": "When an official stream goes on air it appears here. Meanwhile, see the tournaments below.",
       "schedule": "Upcoming tournaments",
@@ -425,7 +425,7 @@ export const UI_EN = {
     }
   },
   "r46": {
-    "aria": "What A.C.E. stands for",
+    "aria": "What A.C.E stands for",
     "fair": "Fair Play Protection",
     "fairSub": "Steam sign-in, published rules and player reports reviewed by admins.",
     "calib": "Competitive Calibration",
@@ -435,7 +435,7 @@ export const UI_EN = {
   },
   "r45": {
     "title": "Beyond Legend",
-    "lede": "Five prestige badges above A.C.E. Legend, one every 200 RP from 2,150 to 2,950. Earned only by playing.",
+    "lede": "Five prestige badges above A.C.E Legend, one every 200 RP from 2,150 to 2,950. Earned only by playing.",
     "plus": "Plus · platinum",
     "premium": "Premium · gold fire",
     "fair": "Same RP for everyone. Prestige thresholds, matchmaking and rating are identical on every plan. Nothing here can be bought.",
@@ -468,10 +468,10 @@ export const UI_EN = {
     "pr": {
       "kicker": "Prestige",
       "title": "Badge rules",
-      "lede": "How every A.C.E. badge is earned. Badges are cosmetic: they never change matchmaking, RP or any rule.",
+      "lede": "How every A.C.E badge is earned. Badges are cosmetic: they never change matchmaking, RP or any rule.",
       "ranks": "Rank badges (tiers 1–10) follow your RP. Every player sees the same rank and the same fixed tier color.",
       "prestige": "Prestige badges are five long-term goals above {elite} RP: one every 200 RP from 2,150 to 2,950.",
-      "free": "Free: your badge stays A.C.E. Legend and your prestige level is shown as a text milestone. Your RP is never capped.",
+      "free": "Free: your badge stays A.C.E Legend and your prestige level is shown as a text milestone. Your RP is never capped.",
       "plus": "Plus: the platinum prestige set.",
       "premium": "Premium: the animated gold prestige set.",
       "lose": "Drop below a prestige threshold and the badge follows your RP back down; reach it again and it returns.",
@@ -624,6 +624,20 @@ export const UI_EN = {
     "communityTitle": "Community",
     "communityLede": "Follow A.C.E for match news, tournaments and highlights.",
     "followOn": "A.C.E on {network}"
+  },
+  "r49b": {
+    "title": "Steam inventory",
+    "private": "Inventory private",
+    "privateBody": "This player's Steam inventory is private.",
+    "empty": "No CS2 items in the public inventory.",
+    "unavailable": "The Steam inventory could not be loaded right now.",
+    "hiddenOwner": "Your inventory showcase is hidden from your profile.",
+    "hide": "Hide showcase",
+    "show": "Show showcase",
+    "priceSource": "Prices: Steam Community Market lowest listing, cached.",
+    "note": "Showcase only. A.C.E never buys, sells or trades Steam items.",
+    "updated": "Updated {date}",
+    "more": "+{n} more items"
   }
 } as const;
 

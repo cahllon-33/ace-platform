@@ -5,10 +5,10 @@ export const account: TextBag["account"] = {
     "metaTitle": "Statistik pemain",
     "kicker": "STATISTIK PEMAIN",
     "title": "Statistik pemain",
-    "lede": "Pergerakan rating dari pertandingan A.C.E. milikmu yang tercatat, dengan pengukur % headshot dan akurasi. Termasuk dalam A.C.E Plus ($4/bulan) dan A.C.E Premium ($7/bulan).",
+    "lede": "Pergerakan rating dari pertandingan A.C.E milikmu yang tercatat, dengan pengukur % headshot dan akurasi. Termasuk dalam A.C.E Plus ($4/bulan) dan A.C.E Premium ($7/bulan).",
     "movementTitle": "Pergerakan rating",
-    "movementNote": "Setiap titik adalah perubahan rating yang ditulis dari pertandingan A.C.E. yang tercatat.",
-    "noMatches": "Belum ada pertandingan tercatat, jadi grafiknya kosong. Grafik akan terisi setelah pertandingan A.C.E. pertamamu tercatat.",
+    "movementNote": "Setiap titik adalah perubahan rating yang ditulis dari pertandingan A.C.E yang tercatat.",
+    "noMatches": "Belum ada pertandingan tercatat, jadi grafiknya kosong. Grafik akan terisi setelah pertandingan A.C.E pertamamu tercatat.",
     "currentLabel": "Rating saat ini",
     "netLabel": "Perubahan bersih",
     "changesLabel": "Perubahan tercatat",
@@ -21,7 +21,7 @@ export const account: TextBag["account"] = {
     "lockedBody": "Paket tersimpanmu adalah Free. Plus ($4/bulan) dan Premium ($7/bulan) sama-sama membuka halaman ini. Segera hadir: checkout belum ada.",
     "signIn": "Masuk dengan Steam untuk melihat statistik pemainmu.",
     "plansLink": "Lihat paket",
-    "rosterNote": "Contoh profil roster: pemain ini tidak memiliki pertandingan A.C.E. tercatat, jadi statistik tidak menampilkan angka.",
+    "rosterNote": "Contoh profil roster: pemain ini tidak memiliki pertandingan A.C.E tercatat, jadi statistik tidak menampilkan angka.",
     "dashTitle": "Statistik dan analisis",
     "dashStats": "Buka statistik pemain",
     "dashAnalysis": "Buka analisis pertandingan (Premium)",
@@ -38,7 +38,7 @@ export const account: TextBag["account"] = {
     "stats": {
       "accountStatus": "Status akun",
       "subscription": "Langganan",
-      "rank": "Peringkat A.C.E.",
+      "rank": "Peringkat A.C.E",
       "ratingPoints": "Poin rating",
       "wins": "Menang",
       "losses": "Kalah",
@@ -71,7 +71,7 @@ export const account: TextBag["account"] = {
     "rankedButton": "Cari pertandingan ranked",
     "roster": {
       "title": "Roster 5v5",
-      "body": "Satu kapten. Empat undangan. Kapten mengundang ID akun A.C.E. lain, yang dibuat hanya setelah login Steam terverifikasi."
+      "body": "Satu kapten. Empat undangan. Kapten mengundang ID akun A.C.E lain, yang dibuat hanya setelah login Steam terverifikasi."
     },
     "pendingInvites": "Undangan tertunda"
   },
@@ -132,7 +132,7 @@ export const account: TextBag["account"] = {
     "back": "Kembali ke roster klan"
   },
   "networks": {
-    "note": "Tautan yang diketik di sini tetap di browser ini dan tidak disimpan. A.C.E. tidak pernah meminta kata sandi Steam.",
+    "note": "Tautan yang diketik di sini tetap di browser ini dan tidak disimpan. A.C.E tidak pernah meminta kata sandi Steam.",
     "labels": {
       "steam": "Profil Steam"
     },
@@ -150,9 +150,9 @@ export const account: TextBag["account"] = {
       "title": "Galat masuk"
     },
     "title": "Masuk Steam tidak selesai",
-    "notConfigured": "Steam OpenID belum dikonfigurasi di server ini. A.C.E. tidak pernah meminta kata sandi Steam.",
-    "unavailable": "Steam tidak menjawab permintaan verifikasi. Coba lagi sebentar lagi. A.C.E. tidak pernah meminta kata sandi Steam.",
-    "unverified": "Callback OpenID tidak dapat diverifikasi di server. A.C.E. tidak pernah meminta kata sandi Steam.",
+    "notConfigured": "Steam OpenID belum dikonfigurasi di server ini. A.C.E tidak pernah meminta kata sandi Steam.",
+    "unavailable": "Steam tidak menjawab permintaan verifikasi. Coba lagi sebentar lagi. A.C.E tidak pernah meminta kata sandi Steam.",
+    "unverified": "Callback OpenID tidak dapat diverifikasi di server. A.C.E tidak pernah meminta kata sandi Steam.",
     "returnHome": "Kembali ke beranda"
   }
 };

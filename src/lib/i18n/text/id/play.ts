@@ -44,7 +44,7 @@ export const play: TextBag["play"] = {
           "Solo, duo, atau trio",
           "Jendela rencana {points} poin rating",
           "Profil Steam harus sudah tersimpan",
-          "Menggunakan aturan rating A.C.E. · pencarian segera hadir"
+          "Menggunakan aturan rating A.C.E · pencarian segera hadir"
         ]
       },
       "elite": {

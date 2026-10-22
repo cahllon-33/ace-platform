@@ -1,7 +1,7 @@
 import type { TextBag } from "../types";
 
 export const consent: TextBag["consent"] = {
-  "valveDisclaimer": "A.C.E. on itsenäinen Counter-Strike 2 -kilpailusivusto. Se ei ole Valve Corporationin kumppani, valtuuttama tai hyväksymä. Steam ja Counter-Strike ovat omistajiensa tavaramerkkejä. Kilpailusäännöt ovat A.C.E.:n omaa tekstiä tälle pelille.",
+  "valveDisclaimer": "A.C.E on itsenäinen Counter-Strike 2 -kilpailusivusto. Se ei ole Valve Corporationin kumppani, valtuuttama tai hyväksymä. Steam ja Counter-Strike ovat omistajiensa tavaramerkkejä. Kilpailusäännöt ovat A.C.E:n omaa tekstiä tälle pelille.",
   "acceptance": {
     "label": "Hyväksyn nimenomaisesti käyttöehdot, Anti-Cheat EULA:n ja tietosuojakäytännön.",
     "readBefore": "Lue",
@@ -21,7 +21,7 @@ export const consent: TextBag["consent"] = {
     "optional": "Valinnainen"
   },
   "banner": {
-    "kicker": "A.C.E. SIVUSTOILMOITUS",
+    "kicker": "A.C.E SIVUSTOILMOITUS",
     "copy": {
       "before": "Hyväksy tallentaa tämän selaimen evästevalinnat. Se ei ole sähköinen allekirjoitus, se ei kerää laitetelemetriaa, se ei käynnistä huijauksenestoasiakasta eikä avaa kilpailujonoa. Lue",
       "termsLink": "käyttöehdot",

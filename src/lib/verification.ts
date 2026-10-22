@@ -1,5 +1,5 @@
 /**
- * A.C.E. verified mark. Honest definition — all must hold:
+ * A.C.E verified mark. Honest definition — all must hold:
  *  1. a Steam account is linked (steamId present),
  *  2. the account is in good standing (status ACTIVE, i.e. not banned or suspended),
  *  3. an operator completed the manual review (verifiedAt set, audited).

@@ -3,7 +3,7 @@ import { getText } from "@/server/locale";
 
 export type WeaponSlug = "ak47" | "awp" | "m4a4" | "deagle" | "mp9" | "m4a1s" | "usps" | "famas";
 
-/** Original A.C.E. weapon art (16:9, dark charcoal backdrop). Not a Valve model, skin, or inventory item. */
+/** Original A.C.E weapon art (16:9, dark charcoal backdrop). Not a Valve model, skin, or inventory item. */
 export async function SampleWeapon({
   slug,
   name,

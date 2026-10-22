@@ -62,7 +62,7 @@ export function HeroArena({ actions }: { actions: ReactNode }) {
           </p>
           <h1 className="ace-entrance-title">
             <span className="sr-only">
-              A.C.E. — {hero.expansion1}, {hero.expansion2}, {hero.expansion3}
+              A.C.E — {hero.expansion1}, {hero.expansion2}, {hero.expansion3}
             </span>
             <Image
               src="/images/ace-entrance-logo.jpg"

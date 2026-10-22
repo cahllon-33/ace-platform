@@ -5,10 +5,10 @@ export const account: TextBag["account"] = {
     "metaTitle": "Statistiques joueur",
     "kicker": "STATISTIQUES JOUEUR",
     "title": "Statistiques joueur",
-    "lede": "Évolution du rating à partir de tes matchs A.C.E. enregistrés, avec des jauges de % de headshots et de précision. Inclus dans A.C.E Plus (4 $/mois) et A.C.E Premium (7 $/mois).",
+    "lede": "Évolution du rating à partir de tes matchs A.C.E enregistrés, avec des jauges de % de headshots et de précision. Inclus dans A.C.E Plus (4 $/mois) et A.C.E Premium (7 $/mois).",
     "movementTitle": "Évolution du rating",
-    "movementNote": "Chaque point est un changement de rating écrit à partir d’un match A.C.E. enregistré.",
-    "noMatches": "Aucun match enregistré pour l’instant, le graphique est donc vide. Il se remplit après ton premier match A.C.E. enregistré.",
+    "movementNote": "Chaque point est un changement de rating écrit à partir d’un match A.C.E enregistré.",
+    "noMatches": "Aucun match enregistré pour l’instant, le graphique est donc vide. Il se remplit après ton premier match A.C.E enregistré.",
     "currentLabel": "Rating actuel",
     "netLabel": "Variation nette",
     "changesLabel": "Changements enregistrés",
@@ -21,7 +21,7 @@ export const account: TextBag["account"] = {
     "lockedBody": "Ton offre enregistrée est Free. Plus (4 $/mois) et Premium (7 $/mois) débloquent tous deux cette page. Bientôt : le paiement n’existe pas encore.",
     "signIn": "Connecte-toi avec Steam pour voir tes statistiques joueur.",
     "plansLink": "Voir les offres",
-    "rosterNote": "Profil d’effectif d’exemple : ces joueurs n’ont aucun match A.C.E. enregistré, les statistiques n’affichent donc aucun chiffre.",
+    "rosterNote": "Profil d’effectif d’exemple : ces joueurs n’ont aucun match A.C.E enregistré, les statistiques n’affichent donc aucun chiffre.",
     "dashTitle": "Statistiques et analyse",
     "dashStats": "Ouvrir les statistiques joueur",
     "dashAnalysis": "Ouvrir l’analyse de match (Premium)",
@@ -38,7 +38,7 @@ export const account: TextBag["account"] = {
     "stats": {
       "accountStatus": "Statut du compte",
       "subscription": "Abonnement",
-      "rank": "Rang A.C.E.",
+      "rank": "Rang A.C.E",
       "ratingPoints": "Points de cote",
       "wins": "Victoires",
       "losses": "Défaites",
@@ -71,7 +71,7 @@ export const account: TextBag["account"] = {
     "rankedButton": "Trouver un match classé",
     "roster": {
       "title": "Effectif 5v5",
-      "body": "Un capitaine. Quatre invitations. Les capitaines invitent d'autres ID de compte A.C.E., qui ne sont créés qu'après une connexion Steam vérifiée."
+      "body": "Un capitaine. Quatre invitations. Les capitaines invitent d'autres ID de compte A.C.E, qui ne sont créés qu'après une connexion Steam vérifiée."
     },
     "pendingInvites": "Invitations en attente"
   },
@@ -132,7 +132,7 @@ export const account: TextBag["account"] = {
     "back": "Retour à l'effectif du clan"
   },
   "networks": {
-    "note": "Un lien saisi ici reste dans ce navigateur et n'est pas enregistré. A.C.E. ne demande jamais un mot de passe Steam.",
+    "note": "Un lien saisi ici reste dans ce navigateur et n'est pas enregistré. A.C.E ne demande jamais un mot de passe Steam.",
     "labels": {
       "steam": "Profil Steam"
     },
@@ -150,9 +150,9 @@ export const account: TextBag["account"] = {
       "title": "Erreur de connexion"
     },
     "title": "La connexion Steam n'a pas abouti",
-    "notConfigured": "Steam OpenID n'est pas encore configuré sur ce serveur. A.C.E. ne demande jamais un mot de passe Steam.",
-    "unavailable": "Steam n'a pas répondu à la demande de vérification. Réessayez dans un instant. A.C.E. ne demande jamais un mot de passe Steam.",
-    "unverified": "Le retour OpenID n'a pas pu être vérifié sur le serveur. A.C.E. ne demande jamais un mot de passe Steam.",
+    "notConfigured": "Steam OpenID n'est pas encore configuré sur ce serveur. A.C.E ne demande jamais un mot de passe Steam.",
+    "unavailable": "Steam n'a pas répondu à la demande de vérification. Réessayez dans un instant. A.C.E ne demande jamais un mot de passe Steam.",
+    "unverified": "Le retour OpenID n'a pas pu être vérifié sur le serveur. A.C.E ne demande jamais un mot de passe Steam.",
     "returnHome": "Retour à l'accueil"
   }
 };

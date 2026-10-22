@@ -8,7 +8,7 @@ export const leaderboard: TextBag["leaderboard"] = {
   "hero": {
     "kicker": "RANGLISTE",
     "title": "Wettkampf-Rangliste",
-    "note": "Bis Spieler Steam verknüpfen und eine Wertung erhalten, füllen Schauplätze diese Tafel. Land und hervorgehobene Waffe sind dort illustrativ. Die Waffenrenderings sind originale A.C.E.-Studiografiken, keine Valve-Skins. Kills werden noch nicht erfasst, daher ist die hervorgehobene Waffe keine Top-Frag-Statistik."
+    "note": "Bis Spieler Steam verknüpfen und eine Wertung erhalten, füllen Schauplätze diese Tafel. Land und hervorgehobene Waffe sind dort illustrativ. Die Waffenrenderings sind originale A.C.E-Studiografiken, keine Valve-Skins. Kills werden noch nicht erfasst, daher ist die hervorgehobene Waffe keine Top-Frag-Statistik."
   },
   "facts": {
     "seats": "Plätze",

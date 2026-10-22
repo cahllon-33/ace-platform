@@ -25,7 +25,7 @@ export const UI_ES: Ui = {
     "company": "Empresa",
     "legal": "Legal",
     "tagline": "Clasificaciones competitivas de Counter-Strike 2, construidas en torno al juego limpio.",
-    "follow": "Sigue a A.C.E.",
+    "follow": "Sigue a A.C.E",
     "rights": "Todos los derechos reservados.",
     "legalLine": "© 2026 A.C.E. Plataforma independiente, sin afiliación con Valve. Counter-Strike y CS2 son marcas de Valve Corporation."
   },
@@ -149,7 +149,7 @@ export const UI_ES: Ui = {
   "antiCheat": {
     "kicker": "A.C.E Shield",
     "title": "Antitrampas",
-    "lede": "A.C.E Shield es el sistema de integridad que se está construyendo para cada partido de A.C.E.: controles de cliente, servidor, partido y comportamiento trabajando juntos, con la privacidad primero.",
+    "lede": "A.C.E Shield es el sistema de integridad que se está construyendo para cada partido de A.C.E: controles de cliente, servidor, partido y comportamiento trabajando juntos, con la privacidad primero.",
     "statusLabel": "Fase de despliegue",
     "pillarsTitle": "Pilares de la arquitectura",
     "pillars": {
@@ -237,7 +237,7 @@ export const UI_ES: Ui = {
     "status": {
       "title": "Estado de la plataforma",
       "steam": "Inicio de sesión con Steam",
-      "shield": "A.C.E. Shield",
+      "shield": "A.C.E Shield",
       "servers": "Servidores competitivos",
       "tournaments": "Torneos",
       "billing": "Facturación",
@@ -288,7 +288,7 @@ export const UI_ES: Ui = {
     "chat": {
       "open": "Abrir chat de soporte",
       "close": "Cerrar chat de soporte",
-      "title": "Soporte A.C.E.",
+      "title": "Soporte A.C.E",
       "greeting": "¡Hola! Soy el asistente de soporte de A.C.E. Pregúntame sobre rangos, planes, reglas o tu cuenta.",
       "placeholder": "Escribe tu pregunta…",
       "send": "Enviar",
@@ -316,7 +316,7 @@ export const UI_ES: Ui = {
       "stepsKicker": "Cómo funciona",
       "stepsTitle": "Tres pasos hasta tu primer rango",
       "step1t": "Conecta Steam",
-      "step1b": "Inicia sesión con Steam OpenID. A.C.E. nunca ve tu contraseña de Steam.",
+      "step1b": "Inicia sesión con Steam OpenID. A.C.E nunca ve tu contraseña de Steam.",
       "step2t": "Calibra",
       "step2b": "Empiezas en el nivel 3 con 1.200 RP. Cada partida registrada mueve tus RP según reglas publicadas.",
       "step3t": "Asciende",
@@ -334,7 +334,7 @@ export const UI_ES: Ui = {
     "profile": {
       "kicker": "JUGADOR",
       "notFound": "Jugador no encontrado",
-      "notFoundBody": "Ninguna cuenta de A.C.E. usa este Steam ID, o el perfil no es público.",
+      "notFoundBody": "Ninguna cuenta de A.C.E usa este Steam ID, o el perfil no es público.",
       "rating": "Puntuación",
       "rank": "Rango",
       "record": "Historial",
@@ -382,7 +382,7 @@ export const UI_ES: Ui = {
     "nf": {
       "code": "Error 404",
       "title": "Esta página está fuera del mapa",
-      "body": "Puede que el enlace sea antiguo o esté mal escrito. Todo A.C.E. está a un clic desde aquí.",
+      "body": "Puede que el enlace sea antiguo o esté mal escrito. Todo A.C.E está a un clic desde aquí.",
       "home": "Volver al inicio",
       "ranks": "Ver rangos"
     },
@@ -427,11 +427,11 @@ export const UI_ES: Ui = {
       "none": "—"
     },
     "ab": {
-      "title": "Acerca de A.C.E.",
+      "title": "Acerca de A.C.E",
       "lede": "Una plataforma competitiva de Counter-Strike 2 basada en una tabla de rangos pública y planes que nunca compran ventaja.",
-      "b1": "A.C.E. gestiona partidas clasificatorias, ladders y torneos de CS2. El acceso es con Steam OpenID; nunca vemos tu contraseña de Steam.",
+      "b1": "A.C.E gestiona partidas clasificatorias, ladders y torneos de CS2. El acceso es con Steam OpenID; nunca vemos tu contraseña de Steam.",
       "b2": "Tu rango se calcula solo con resultados registrados y reglas publicadas. Los planes de pago son solo estéticos y de comodidad.",
-      "b3": "A.C.E. es una plataforma independiente y no está afiliada a Valve."
+      "b3": "A.C.E es una plataforma independiente y no está afiliada a Valve."
     },
     "ss": {
       "title": "Estado de los servidores",
@@ -494,7 +494,7 @@ export const UI_ES: Ui = {
   },
   "r45": {
     "title": "Más allá de Legend",
-    "lede": "Cinco insignias de prestigio por encima de A.C.E. Legend, una cada 200 RP de 2.150 a 2.950. Solo se ganan jugando.",
+    "lede": "Cinco insignias de prestigio por encima de A.C.E Legend, una cada 200 RP de 2.150 a 2.950. Solo se ganan jugando.",
     "plus": "Plus · platino",
     "premium": "Premium · fuego dorado",
     "fair": "El mismo RP para todos. Los umbrales de prestigio, el emparejamiento y la clasificación son iguales en todos los planes. Nada de esto se compra.",
@@ -530,7 +530,7 @@ export const UI_ES: Ui = {
       "lede": "Cómo se gana cada insignia de A.C.E. Las insignias son solo estéticas: nunca cambian el emparejamiento, los RP ni ninguna regla.",
       "ranks": "Las insignias de rango (niveles 1–10) siguen tus RP. Todos ven el mismo rango y el mismo color fijo de nivel.",
       "prestige": "Las insignias de prestigio son cinco metas a largo plazo por encima de {elite} RP: una cada 200 RP de 2.150 a 2.950.",
-      "free": "Free: tu insignia sigue siendo A.C.E. Legend y tu nivel de prestigio se muestra como un hito en texto. Tus RP nunca tienen tope.",
+      "free": "Free: tu insignia sigue siendo A.C.E Legend y tu nivel de prestigio se muestra como un hito en texto. Tus RP nunca tienen tope.",
       "plus": "Plus: el set de prestigio de platino.",
       "premium": "Premium: el set de prestigio dorado animado.",
       "lose": "Si bajas de un umbral de prestigio, la insignia baja con tus RP; si lo vuelves a alcanzar, vuelve.",
@@ -683,5 +683,19 @@ export const UI_ES: Ui = {
     "communityTitle": "Comunidad",
     "communityLede": "Sigue a A.C.E para noticias de partidas, torneos y mejores jugadas.",
     "followOn": "A.C.E en {network}"
+  },
+  "r49b": {
+    "title": "Inventario de Steam",
+    "private": "Inventario privado",
+    "privateBody": "El inventario de Steam de este jugador es privado.",
+    "empty": "No hay objetos de CS2 en el inventario público.",
+    "unavailable": "No se pudo cargar el inventario de Steam ahora.",
+    "hiddenOwner": "Tu vitrina de inventario está oculta en tu perfil.",
+    "hide": "Ocultar vitrina",
+    "show": "Mostrar vitrina",
+    "priceSource": "Precios: oferta más baja del Mercado de la Comunidad Steam, en caché.",
+    "note": "Solo exhibición. A.C.E nunca compra, vende ni intercambia objetos de Steam.",
+    "updated": "Actualizado {date}",
+    "more": "+{n} objetos más"
   }
 };

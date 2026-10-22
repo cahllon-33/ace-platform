@@ -37,6 +37,10 @@ export type PaddleEventIn = {
     current_billing_period?: { ends_at?: string } | null;
     billing_period?: { ends_at?: string } | null;
     scheduled_change?: { action?: string; effective_at?: string } | null;
+    /** adjustment.* only */
+    action?: string;
+    transaction_id?: string;
+    type?: string;
   };
 };
 
@@ -99,3 +103,14 @@ export function orderAmountMatches(items: PaddleEventIn["data"]["items"], amount
   return Number.isFinite(total) && total === amountCents;
 }
 
+
+/** R49b: what an adjustment event means for a one-time order. */
+export function adjustmentEffect(e: PaddleEventIn): "revoke" | "partial" | "pending" | null {
+  if (!e.event_type.startsWith("adjustment.")) return null;
+  const a = e.data.action;
+  if (a !== "refund" && a !== "chargeback" && a !== "chargeback_reverse") return null;
+  if (a === "chargeback_reverse") return null; // money returned to us: nothing to revoke
+  if (e.data.status !== "approved") return "pending";
+  if (a === "refund" && e.data.type === "partial") return "partial";
+  return "revoke";
+}

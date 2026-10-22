@@ -3,7 +3,7 @@ import type { TextBag } from "../types";
 export const desk: TextBag["desk"] = {
   "shop": {
     "meta": {
-      "title": "A.C.E. Marketplace",
+      "title": "A.C.E Marketplace",
       "description": "Bajnoki jutalomkártyák. A bolt és a jutalmak hamarosan nyílnak."
     },
     "heroHonesty": "Első pillantás a közelgő bajnoki jutalmakra. A bolt hamarosan nyílik; ma semmit nem terhelünk.",
@@ -26,7 +26,7 @@ export const desk: TextBag["desk"] = {
         "price": "Hamarosan"
       },
       "crown": {
-        "name": "A.C.E. Crown avatarkeret",
+        "name": "A.C.E Crown avatarkeret",
         "tag": "Profildísz",
         "price": "Hamarosan"
       },
@@ -45,13 +45,13 @@ export const desk: TextBag["desk"] = {
   "support": {
     "meta": {
       "title": "Támogatás",
-      "description": "A.C.E. súgóközpont. A csalásellenes, ranked és számlázási pultok a versenybétával nyílnak."
+      "description": "A.C.E súgóközpont. A csalásellenes, ranked és számlázási pultok a versenybétával nyílnak."
     }
   },
   "contact": {
     "meta": {
       "title": "Kapcsolat",
-      "description": "Lépj kapcsolatba az A.C.E.-vel. Az online űrlap hamarosan nyílik."
+      "description": "Lépj kapcsolatba az A.C.E-vel. Az online űrlap hamarosan nyílik."
     }
   },
   "contactEmail": {

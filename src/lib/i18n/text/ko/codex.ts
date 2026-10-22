@@ -4,7 +4,7 @@ export const codex: TextBag["codex"] = {
   meta: {
     title: "캘리브레이션 코덱스",
     description:
-      "A.C.E. 랭크 해설입니다. 각 질문을 열면 레이팅 포인트와 해당 랭크의 규정에 대한 전체 답변을 볼 수 있습니다. 코덱스는 매치 결과를 적용하지 않습니다.",
+      "A.C.E 랭크 해설입니다. 각 질문을 열면 레이팅 포인트와 해당 랭크의 규정에 대한 전체 답변을 볼 수 있습니다. 코덱스는 매치 결과를 적용하지 않습니다.",
     articleTitle: "{title} — 캘리브레이션 코덱스",
   },
   groups: {
@@ -33,7 +33,7 @@ export const codex: TextBag["codex"] = {
     searchLabel: "코덱스 검색",
     searchPlaceholder: "1950, Recruit, 무승부 등으로 검색해 보세요",
     empty: "검색과 일치하는 항목이 없습니다.",
-    columnLabel: "A.C.E. 칼럼 {n}",
+    columnLabel: "A.C.E 칼럼 {n}",
     pagerLabel: "코덱스 페이지",
     first: "처음",
     previous: "이전",
@@ -42,7 +42,7 @@ export const codex: TextBag["codex"] = {
     pageOf: "{m}페이지 중 {n}페이지",
   },
   article: {
-    breadcrumb: "A.C.E. · 캘리브레이션 코덱스",
+    breadcrumb: "A.C.E · 캘리브레이션 코덱스",
     status:
       "이 페이지는 명문화된 래더를 설명합니다. 매치 결과를 적용하지 않으며, 저장된 레이팅을 변경하지 않습니다.",
     emblemAlt: "{name} 엠블럼, 랭크 {level}",
@@ -67,7 +67,7 @@ export const codex: TextBag["codex"] = {
     turnLabel: "코덱스 계속 읽기",
     previous: "이전",
     next: "다음",
-    alsoIn: "A.C.E.의 다른 페이지",
+    alsoIn: "A.C.E의 다른 페이지",
     backToBoard: "랭크 보드로 돌아가기",
   },
   rankArticle: {
@@ -146,21 +146,21 @@ export const codex: TextBag["codex"] = {
     },
     "rank-10-a-c-e-legend": {
       stance:
-        "A.C.E. Legend 랭크는 마지막 마크입니다. 크리스털 라벨은 ACE ELITE입니다. 공식 이름은 A.C.E. Legend입니다.",
+        "A.C.E Legend 랭크는 마지막 마크입니다. 크리스털 라벨은 ACE ELITE입니다. 공식 이름은 A.C.E Legend입니다.",
       detail:
         "구간은 1,950에서 시작하여 엔진 상한인 3,000에서 끝납니다. 11번째 랭크는 없습니다. 저장된 레이팅은 3,000을 넘을 수 없습니다.",
     },
   },
   articles: {
     "what-a-rank-is": {
-      title: "A.C.E. 랭크란 무엇인가",
-      lede: "랭크는 저장된 레이팅 포인트가 속한 마크입니다. Recruit부터 A.C.E. Legend까지 10개의 마크가 래더 전체를 구성합니다.",
+      title: "A.C.E 랭크란 무엇인가",
+      lede: "랭크는 저장된 레이팅 포인트가 속한 마크입니다. Recruit부터 A.C.E Legend까지 10개의 마크가 래더 전체를 구성합니다.",
       sections: [
         {
           heading: "하나의 숫자, 하나의 마크",
           paragraphs: [
             "계정에는 경쟁 레이팅이 저장됩니다. 래더는 그 숫자를 읽고, 숫자가 도달한 하한선 중 가장 높은 랭크를 반환합니다. 두 개의 랭크를 동시에 가질 수는 없습니다.",
-            "Recruit는 랭크 1입니다. A.C.E. Legend는 랭크 10입니다. 공식 이름은 래더에 있는 이름입니다. 엠블럼에 새겨진 더 짧은 단어는 같은 랭크의 크리스털 라벨입니다.",
+            "Recruit는 랭크 1입니다. A.C.E Legend는 랭크 10입니다. 공식 이름은 래더에 있는 이름입니다. 엠블럼에 새겨진 더 짧은 단어는 같은 랭크의 크리스털 라벨입니다.",
             "이 코덱스는 명문화된 래더를 설명합니다. 매치 결과를 적용하지 않으며, 저장된 레이팅을 변경하지 않습니다.",
           ],
         },
@@ -168,7 +168,7 @@ export const codex: TextBag["codex"] = {
           heading: "하한선의 배치",
           paragraphs: [
             "Recruit 랭크는 래더의 시작 부분을 담당합니다. Operative 랭크는 1,100에서 열립니다. Vanguard부터 Grandmaster까지는 새 하한선이 100포인트씩 높아집니다: 1,200, 1,300, 1,400, 1,500, 1,600, 그리고 1,700입니다.",
-            "Sovereign 랭크는 1,800에서 열리며 1,949까지 계정을 유지합니다. A.C.E. Legend 랭크는 1,950에서 열립니다. 엔진 상한이 3,000이므로 Legend가 가장 긴 구간입니다.",
+            "Sovereign 랭크는 1,800에서 열리며 1,949까지 계정을 유지합니다. A.C.E Legend 랭크는 1,950에서 열립니다. 엔진 상한이 3,000이므로 Legend가 가장 긴 구간입니다.",
           ],
         },
         {
@@ -187,14 +187,14 @@ export const codex: TextBag["codex"] = {
         {
           heading: "두 이름이 모두 있는 이유",
           paragraphs: [
-            "엔진과 프로필은 공식 이름을 사용합니다: Recruit, Operative, Vanguard, Specialist, Veteran, Elite, Master, Grandmaster, Sovereign, A.C.E. Legend.",
+            "엔진과 프로필은 공식 이름을 사용합니다: Recruit, Operative, Vanguard, Specialist, Veteran, Elite, Master, Grandmaster, Sovereign, A.C.E Legend.",
             "엠블럼에는 크리스털 라벨도 있습니다: IRON, BRONZE, SILVER, GOLD, PLATINUM, DIAMOND, MASTER, GRANDMASTER, IMMORTAL, ACE ELITE. 이 라벨은 아트워크입니다. 11번째 랭크를 만들지 않으며, 두 번째 숫자를 저장하지 않습니다.",
           ],
         },
         {
           heading: "두 이름이 다른 경우",
           paragraphs: [
-            "Specialist의 크리스털 라벨은 GOLD입니다. Veteran은 PLATINUM입니다. Elite는 DIAMOND입니다. Sovereign은 IMMORTAL입니다. A.C.E. Legend는 ACE ELITE입니다. 어느 경우든 하한선은 여전히 공식 이름에 속합니다.",
+            "Specialist의 크리스털 라벨은 GOLD입니다. Veteran은 PLATINUM입니다. Elite는 DIAMOND입니다. Sovereign은 IMMORTAL입니다. A.C.E Legend는 ACE ELITE입니다. 어느 경우든 하한선은 여전히 공식 이름에 속합니다.",
             "Master와 Grandmaster는 두 곳 모두에서 같은 단어를 사용합니다.",
           ],
         },
@@ -310,7 +310,7 @@ export const codex: TextBag["codex"] = {
           heading: "한계값",
           paragraphs: [
             "100 레이팅 포인트에서 패배해도 100에 머뭅니다. 3,000에서 승리해도 3,000에 머뭅니다. Recruit의 래더 하한선은 0으로 적혀 있지만, 저장되는 숫자는 100 미만의 구간을 결코 사용하지 않습니다.",
-            "1,949는 Sovereign입니다. 1,950은 A.C.E. Legend입니다. 그 사이의 마크는 없습니다.",
+            "1,949는 Sovereign입니다. 1,950은 A.C.E Legend입니다. 그 사이의 마크는 없습니다.",
           ],
         },
         {
@@ -357,7 +357,7 @@ export const codex: TextBag["codex"] = {
           heading: "데스크가 하지 않는 일",
           paragraphs: [
             "매치 찾기는 상대를 검색하지 않습니다. 레이팅 포인트를 변경하지 않습니다. 계정의 랭크는 여전히 저장된 숫자이며, 이 코덱스의 래더가 그 숫자를 읽습니다.",
-            "Legend 위에 별도의 최상위 대기열은 없습니다. A.C.E. Legend는 마지막 마크이며, 1,950 레이팅 포인트에서 열립니다.",
+            "Legend 위에 별도의 최상위 대기열은 없습니다. A.C.E Legend는 마지막 마크이며, 1,950 레이팅 포인트에서 열립니다.",
           ],
         },
       ],
@@ -463,12 +463,12 @@ export const codex: TextBag["codex"] = {
     },
     "how-a-roster-is-assembled": {
       title: "로스터를 구성하는 방법",
-      lede: "주장은 이미 A.C.E. 계정이 있는 선수를 초대합니다. 공개 공유 링크는 없으며, Steam 비밀번호를 요구하는 일은 결코 없습니다.",
+      lede: "주장은 이미 A.C.E 계정이 있는 선수를 초대합니다. 공개 공유 링크는 없으며, Steam 비밀번호를 요구하는 일은 결코 없습니다.",
       sections: [
         {
           heading: "실제로 존재하는 초대 기능",
           paragraphs: [
-            "팀 페이지에서 로그인한 주장은 SteamID64 또는 A.C.E. 계정 ID를 붙여 넣습니다. 해당 계정은 이미 Steam OpenID로 연결되어 있어야 합니다. 데이터베이스가 수락하면 서버가 대기 중인 초대를 기록합니다.",
+            "팀 페이지에서 로그인한 주장은 SteamID64 또는 A.C.E 계정 ID를 붙여 넣습니다. 해당 계정은 이미 Steam OpenID로 연결되어 있어야 합니다. 데이터베이스가 수락하면 서버가 대기 중인 초대를 기록합니다.",
             "로스터는 주장을 포함해 5명으로 구성됩니다. 주장은 자신의 계정을 초대할 수 없습니다. 이미 로스터에 있는 선수는 거부됩니다. 데이터베이스가 중단되면 초대는 실패하며, 초대 내역은 저장되지 않습니다.",
           ],
         },

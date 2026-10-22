@@ -5,10 +5,10 @@ export const account: TextBag["account"] = {
     "metaTitle": "Spelarstatistik",
     "kicker": "SPELARSTATISTIK",
     "title": "Spelarstatistik",
-    "lede": "Ratingutveckling från dina registrerade A.C.E.-matcher, med mätare för headshot-% och träffsäkerhet. Ingår i A.C.E Plus (4 $/mån) och A.C.E Premium (7 $/mån).",
+    "lede": "Ratingutveckling från dina registrerade A.C.E-matcher, med mätare för headshot-% och träffsäkerhet. Ingår i A.C.E Plus (4 $/mån) och A.C.E Premium (7 $/mån).",
     "movementTitle": "Ratingutveckling",
-    "movementNote": "Varje punkt är en ratingändring skriven från en registrerad A.C.E.-match.",
-    "noMatches": "Inga registrerade matcher än, så grafen är tom. Den fylls efter din första registrerade A.C.E.-match.",
+    "movementNote": "Varje punkt är en ratingändring skriven från en registrerad A.C.E-match.",
+    "noMatches": "Inga registrerade matcher än, så grafen är tom. Den fylls efter din första registrerade A.C.E-match.",
     "currentLabel": "Nuvarande rating",
     "netLabel": "Nettoförändring",
     "changesLabel": "Registrerade ändringar",
@@ -21,7 +21,7 @@ export const account: TextBag["account"] = {
     "lockedBody": "Din sparade plan är Free. Plus (4 $/mån) och Premium (7 $/mån) låser båda upp den här sidan. Kommer snart: betalning finns inte än.",
     "signIn": "Logga in med Steam för att se din spelarstatistik.",
     "plansLink": "Se planer",
-    "rosterNote": "Exempelprofil i truppen: de här spelarna har inga registrerade A.C.E.-matcher, så statistiken visar inga siffror.",
+    "rosterNote": "Exempelprofil i truppen: de här spelarna har inga registrerade A.C.E-matcher, så statistiken visar inga siffror.",
     "dashTitle": "Statistik och analys",
     "dashStats": "Öppna spelarstatistik",
     "dashAnalysis": "Öppna matchanalys (Premium)",
@@ -38,7 +38,7 @@ export const account: TextBag["account"] = {
     "stats": {
       "accountStatus": "Kontostatus",
       "subscription": "Prenumeration",
-      "rank": "A.C.E.-rank",
+      "rank": "A.C.E-rank",
       "ratingPoints": "Ratingpoäng",
       "wins": "Vinster",
       "losses": "Förluster",
@@ -71,7 +71,7 @@ export const account: TextBag["account"] = {
     "rankedButton": "Hitta rankad match",
     "roster": {
       "title": "5v5-trupp",
-      "body": "En kapten. Fyra inbjudningar. Kaptener bjuder in andra A.C.E.-konto-ID:n, som skapas först efter en verifierad Steam-inloggning."
+      "body": "En kapten. Fyra inbjudningar. Kaptener bjuder in andra A.C.E-konto-ID:n, som skapas först efter en verifierad Steam-inloggning."
     },
     "pendingInvites": "Väntande inbjudningar"
   },
@@ -86,7 +86,7 @@ export const account: TextBag["account"] = {
     },
     "invite": {
       "failed": "Inbjudan misslyckades.",
-      "label": "Bjud in en fri agent via SteamID eller A.C.E.-konto-ID",
+      "label": "Bjud in en fri agent via SteamID eller A.C.E-konto-ID",
       "submitAria": "Skicka laginbjudan",
       "submit": "Skicka inbjudan"
     }
@@ -94,8 +94,8 @@ export const account: TextBag["account"] = {
   "profile": {
     "meta": {
       "notFoundTitle": "Spelarprofil",
-      "title": "{name} · A.C.E.-profil",
-      "description": "A.C.E. spelardossier. Plus- och Premium-sessioner låser upp trenddiagram för telemetri."
+      "title": "{name} · A.C.E-profil",
+      "description": "A.C.E spelardossier. Plus- och Premium-sessioner låser upp trenddiagram för telemetri."
     },
     "kicker": "Spelaridentitet",
     "bannerPlaceholder": "Profilbanner · kommer snart",
@@ -132,7 +132,7 @@ export const account: TextBag["account"] = {
     "back": "Tillbaka till klanens trupp"
   },
   "networks": {
-    "note": "En länk som skrivs här stannar i den här webbläsaren och sparas inte. A.C.E. ber aldrig om ett Steam-lösenord.",
+    "note": "En länk som skrivs här stannar i den här webbläsaren och sparas inte. A.C.E ber aldrig om ett Steam-lösenord.",
     "labels": {
       "steam": "Steam-profil"
     },
@@ -150,9 +150,9 @@ export const account: TextBag["account"] = {
       "title": "Inloggningsfel"
     },
     "title": "Steam-inloggningen slutfördes inte",
-    "notConfigured": "Steam OpenID är inte konfigurerat på den här servern ännu. A.C.E. ber aldrig om ett Steam-lösenord.",
-    "unavailable": "Steam svarade inte på verifieringsbegäran. Försök igen om en stund. A.C.E. ber aldrig om ett Steam-lösenord.",
-    "unverified": "OpenID-svaret kunde inte verifieras på servern. A.C.E. ber aldrig om ett Steam-lösenord.",
+    "notConfigured": "Steam OpenID är inte konfigurerat på den här servern ännu. A.C.E ber aldrig om ett Steam-lösenord.",
+    "unavailable": "Steam svarade inte på verifieringsbegäran. Försök igen om en stund. A.C.E ber aldrig om ett Steam-lösenord.",
+    "unverified": "OpenID-svaret kunde inte verifieras på servern. A.C.E ber aldrig om ett Steam-lösenord.",
     "returnHome": "Till startsidan"
   }
 };

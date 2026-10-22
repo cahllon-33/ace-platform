@@ -1,4 +1,6 @@
 import { equippedStyles } from "@/server/cosmetics";
+import { inventoryShowcase } from "@/server/steam-inventory";
+import { InventoryBannerStrip, InventoryShowcase } from "@/components/inventory-showcase";
 import { prestigeBadge, prestigeForRp, prestigeSetFor } from "@/lib/prestige";
 import { VerifiedMark } from "@/components/verified-mark";
 import { isVerified, verifyTier } from "@/lib/verification";
@@ -78,6 +80,9 @@ export default async function PlayerPage({ params }: { params: Promise<{ steamId
   const d = ui.r40.dash;
   // R49 equipped cosmetics (purchased through Paddle; visual only).
   const fx = await equippedStyles(user.id);
+  // R49b public CS2 inventory (cached ~6h). Not fetched at all when the player hid it and the viewer is someone else.
+  const isOwner = viewer?.id === user.id;
+  const inv = user.inventoryHidden ? null : await inventoryShowcase(user.steamId!).catch(() => null);
   const dateFmt = new Intl.DateTimeFormat(locale, { dateStyle: "medium" });
   const badges = playerBadges({
     subscriptionTier: user.subscriptionTier,
@@ -106,6 +111,7 @@ export default async function PlayerPage({ params }: { params: Promise<{ steamId
               <PlayerBadges badges={badges} />
               {viewer?.id === user.id ? <span className="pl39-you">{p.yourProfile}</span> : null}
             </div>
+            <InventoryBannerStrip data={inv} label={ui.r49b.title} />
           </div>
         </div>
         <span className="pl39-emblem"><RankOrb level={prog.tier.level} art={art} size={200} label={p.rank} priority prestige={prestigeBadge(user.competitiveRating, user.subscriptionTier)} />{(() => { const pr = prestigeForRp(user.competitiveRating); if (!pr) return null; return <span className="pr41-milestone">{prestigeSetFor(user.subscriptionTier) ? interpolate(ui.r41c.pr.level, { n: pr.level, name: pr.name }) : `${interpolate(ui.r41c.pr.milestone, { n: pr.level })} · ${pr.name}`}</span>; })()}</span>
@@ -155,6 +161,8 @@ export default async function PlayerPage({ params }: { params: Promise<{ steamId
           </ol>
         )}
       </section>
+
+      <InventoryShowcase data={inv} hidden={user.inventoryHidden} isOwner={isOwner} t={ui.r49b} locale={locale} />
 
       <p className="pl39-muted pl39-basis">{ui.r38.journey.basis}</p>
       <div className="pl39-actions">

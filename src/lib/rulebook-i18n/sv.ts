@@ -4,18 +4,18 @@ export const RB_SV: RulebookText = {
   "summary16": "Domarna väljer en påföljd ur intervallet nedan utifrån uppsåt, påverkan och upprepning. Upprepade förseelser flyttas uppåt i intervallet.",
   "clauses": [
     [
-      "Denna regelbok gäller för varje tävling som A.C.E. arrangerar: cuper, ligor, stegar och uppvisningsmatcher. En evenemangssida kan lägga till evenemangsspecifika villkor; vid motstridighet med denna regelbok gäller evenemangssidan, men endast för det evenemanget.",
-      "”Arrangör” avser A.C.E.:s driftteam. ”Domare” avser en medlem av arrangören som tilldelats ett evenemang. ”Lag” avser en registrerad laguppställning. ”Kapten” avser den spelare som företräder laget. ”Match” avser en eller flera kartor mellan två lag. ”Serie” avser en uppsättning kartor i formatet bäst av en, bäst av tre eller bäst av fem.",
+      "Denna regelbok gäller för varje tävling som A.C.E arrangerar: cuper, ligor, stegar och uppvisningsmatcher. En evenemangssida kan lägga till evenemangsspecifika villkor; vid motstridighet med denna regelbok gäller evenemangssidan, men endast för det evenemanget.",
+      "”Arrangör” avser A.C.E:s driftteam. ”Domare” avser en medlem av arrangören som tilldelats ett evenemang. ”Lag” avser en registrerad laguppställning. ”Kapten” avser den spelare som företräder laget. ”Match” avser en eller flera kartor mellan två lag. ”Serie” avser en uppsättning kartor i formatet bäst av en, bäst av tre eller bäst av fem.",
       "Genom att anmäla sig godkänner varje spelare och lag denna regelbok, användarvillkoren och integritetspolicyn.",
       "Domarna får avgöra situationer som denna regelbok inte täcker, vägledda av fair play och reglernas anda. Sådana beslut dokumenteras och publiceras tillsammans med matchresultatet."
     ],
     [
-      "Spelare får inte ha en aktiv avstängning från A.C.E., och det Steam-konto de använder får inte ha en spelavstängning som utfärdats under de senaste 2 åren.",
+      "Spelare får inte ha en aktiv avstängning från A.C.E, och det Steam-konto de använder får inte ha en spelavstängning som utfärdats under de senaste 2 åren.",
       "Arrangörens personal och domare får inte spela i ett evenemang som de administrerar.",
       "Region- eller rankinggränser fastställs per evenemang och publiceras innan anmälan öppnar. En spelare utanför gränserna får inte spela, inte ens som reserv."
     ],
     [
-      "Varje spelare använder ett A.C.E.-konto som är kopplat till ett Steam-konto via inloggning med Steam. A.C.E. ber aldrig om ett Steam-lösenord; den som gör det är inte arrangören.",
+      "Varje spelare använder ett A.C.E-konto som är kopplat till ett Steam-konto via inloggning med Steam. A.C.E ber aldrig om ett Steam-lösenord; den som gör det är inte arrangören.",
       "Det är förbjudet att dela konto, spela på någon annans konto eller låta någon annan spela på ditt. Båda kontona bestraffas.",
       "Att skapa ett nytt konto för att undvika en påföljd, en ranking eller en begränsning är kringgående av avstängning och behandlas som en integritetsförseelse (avsnitt 14).",
       "Visningsnamn och avatarer måste följa uppförandereglerna (avsnitt 13). Domarna kan kräva en ändring före en match.",
@@ -89,8 +89,8 @@ export const RB_SV: RulebookText = {
       "Ghosting (att ta emot information från åskådare eller sändningar), stream sniping, att spela på någon annans konto och kringgående av avstängning är förbjudet.",
       "Matchfixning, att förlora med avsikt och att spela på någon match där ditt lag deltar eller i ditt evenemang är förbjudet.",
       "Att använda en kart- eller spelbugg som domaren har förbjudit, eller som tydligt bryter spelets avsedda mekanik, är förbjudet.",
-      "Spelare måste köra A.C.E.:s anti-fusk-klient under hela matchen när evenemanget kräver det.",
-      "Admins kan begära demos eller skärminspelningar för granskning. Hårdvaruuppgifter begärs först när A.C.E.:s antifuskklient finns och Integritetspolicyn beskriver dem. Att vägra en rimlig begäran utan giltigt skäl kan beaktas i beslutet.",
+      "Spelare måste köra A.C.E:s anti-fusk-klient under hela matchen när evenemanget kräver det.",
+      "Admins kan begära demos eller skärminspelningar för granskning. Hårdvaruuppgifter begärs först när A.C.E:s antifuskklient finns och Integritetspolicyn beskriver dem. Att vägra en rimlig begäran utan giltigt skäl kan beaktas i beslutet.",
       "Vem som helst kan i förtroende rapportera en misstänkt överträdelse till arrangören. Offentliga anklagelser utan rapport är en uppförandeförseelse."
     ],
     [
@@ -105,7 +105,7 @@ export const RB_SV: RulebookText = {
       "Avstängningar gäller personen och varje konto som hen kontrollerar."
     ],
     [
-      "A.C.E. har rätt att sända varje match som A.C.E. arrangerar. Lag får inte vägra en sändning.",
+      "A.C.E har rätt att sända varje match som A.C.E arrangerar. Lag får inte vägra en sändning.",
       "Spelare får strömma sina egna matcher endast med minst 2 minuters fördröjning och endast om evenemangssidan tillåter det. Officiella sändningar använder den fördröjning som arrangören fastställt.",
       "Spelare får inte titta på någon direktsändning av sin egen match medan den spelas.",
       "Matcher som är schemalagda för sändning kan flyttas upp till 2 timmar med 24 timmars varsel. Lagen måste vara tillgängliga vid den nya tiden eller begära ett domarbeslut.",

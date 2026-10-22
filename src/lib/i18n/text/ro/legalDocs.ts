@@ -5,7 +5,7 @@ export const legalDocs: TextBag["legalDocs"] = {
     "effective": "Data intrării în vigoare: {date}",
     "contact": "Contact: support@ace-platform.gg",
     "definitionsTitle": "Definiții",
-    "definitions": "În acești Termeni, „A.C.E.”, „noi” înseamnă A.C.E. „Site” înseamnă ace-platform.gg. „Cont” înseamnă profilul A.C.E. creat prin autentificarea Steam. „Plan” înseamnă Free, Plus sau Premium. „Regulament” înseamnă Regulamentul competițional de la /rules. „Admin” înseamnă un membru al echipei care aplică Regulamentul la un eveniment.",
+    "definitions": "În acești Termeni, „A.C.E”, „noi” înseamnă A.C.E „Site” înseamnă ace-platform.gg. „Cont” înseamnă profilul A.C.E creat prin autentificarea Steam. „Plan” înseamnă Free, Plus sau Premium. „Regulament” înseamnă Regulamentul competițional de la /rules. „Admin” înseamnă un membru al echipei care aplică Regulamentul la un eveniment.",
     "suspensionTitle": "Restricții și suspendarea contului",
     "suspension": "Putem avertiza, restricționa, suspenda sau închide un Cont care încalcă acești Termeni sau Regulamentul, de exemplu pentru trișat, partajarea contului, eludarea unei interdicții, hărțuire sau fraudă. Un plan plătit nu protejează niciodată un Cont de o restricție.",
     "disputesTitle": "Decizii privind regulile și contestații",
@@ -21,11 +21,11 @@ export const legalDocs: TextBag["legalDocs"] = {
   "terms": {
     "meta": {
       "title": "Termeni și condiții",
-      "description": "Termenii și condițiile site-ului A.C.E. pentru acest site de competiții Counter-Strike 2. Ranked, plățile și anti-cheat nu sunt active."
+      "description": "Termenii și condițiile site-ului A.C.E pentru acest site de competiții Counter-Strike 2. Ranked, plățile și anti-cheat nu sunt active."
     },
     "kicker": "ACE-LEGAL / TERMENI ȘI CONDIȚII",
     "title": "Termeni și condiții",
-    "lede": "Acești Termeni reglementează utilizarea site-ului A.C.E. și a Contului tău A.C.E. Regulamentul competițional de la /rules, Politica de confidențialitate, Politica de cookie-uri și termenii Premium fac parte din acești Termeni.",
+    "lede": "Acești Termeni reglementează utilizarea site-ului A.C.E și a Contului tău A.C.E. Regulamentul competițional de la /rules, Politica de confidențialitate, Politica de cookie-uri și termenii Premium fac parte din acești Termeni.",
     "sections": {
       "operator": {
         "title": "1. Operator și independență",
@@ -36,7 +36,7 @@ export const legalDocs: TextBag["legalDocs"] = {
       "eligibility": {
         "title": "2. Eligibilitate și conturi",
         "paragraphs": [
-          "Conturile se creează doar prin autentificarea oficială Steam OpenID, un Cont per persoană. A.C.E. nu îți cere niciodată parola Steam."
+          "Conturile se creează doar prin autentificarea oficială Steam OpenID, un Cont per persoană. A.C.E nu îți cere niciodată parola Steam."
         ]
       },
       "notActive": {
@@ -60,20 +60,20 @@ export const legalDocs: TextBag["legalDocs"] = {
       "liability": {
         "title": "6. Limitarea răspunderii",
         "paragraphs": [
-          "În măsura permisă de lege, A.C.E. nu răspunde pentru rang pierdut, cosmetice pierdute care nu au fost niciodată obiecte reale sau întreruperi Steam / CS2 ale terților. Drepturile obligatorii ale consumatorilor din țara ta la care nu se poate renunța nu sunt excluse."
+          "În măsura permisă de lege, A.C.E nu răspunde pentru rang pierdut, cosmetice pierdute care nu au fost niciodată obiecte reale sau întreruperi Steam / CS2 ale terților. Drepturile obligatorii ale consumatorilor din țara ta la care nu se poate renunța nu sunt excluse."
         ]
       },
       "copyright": {
         "title": "7. Drepturi de autor asupra materialului original al site-ului",
         "paragraphs": [
-          "Textul original, aspectul paginilor, emblemele și grafica create pentru acest site aparțin A.C.E. Nu copia, republica sau extrage acel material original pentru alt produs fără permisiune scrisă. Unde legea permite, A.C.E. poate aplica acest drept, inclusiv prin proces. Această notificare nu inițiază proceduri, nu stabilește daune și nu garantează un rezultat în instanță.",
-          "Counter-Strike 2, Steam și numele hărților Dust II, Mirage, Inferno, Nuke, Ancient, Anubis și Train aparțin Valve. A.C.E. nu le revendică. Deschiderea acestei pagini nu anulează un drept legal și nu semnează un contract."
+          "Textul original, aspectul paginilor, emblemele și grafica create pentru acest site aparțin A.C.E. Nu copia, republica sau extrage acel material original pentru alt produs fără permisiune scrisă. Unde legea permite, A.C.E poate aplica acest drept, inclusiv prin proces. Această notificare nu inițiază proceduri, nu stabilește daune și nu garantează un rezultat în instanță.",
+          "Counter-Strike 2, Steam și numele hărților Dust II, Mirage, Inferno, Nuke, Ancient, Anubis și Train aparțin Valve. A.C.E nu le revendică. Deschiderea acestei pagini nu anulează un drept legal și nu semnează un contract."
         ]
       },
       "contact": {
         "title": "8. Contact",
         "paragraphs": [
-          "support@ace-platform.gg — A.C.E."
+          "support@ace-platform.gg — A.C.E"
         ]
       }
     }
@@ -81,11 +81,11 @@ export const legalDocs: TextBag["legalDocs"] = {
   "privacy": {
     "meta": {
       "title": "Politica de confidențialitate",
-      "description": "Politica de confidențialitate A.C.E.: doar date necesare, doar Steam OpenID, fără parole Steam, fără vânzarea datelor comportamentale."
+      "description": "Politica de confidențialitate A.C.E: doar date necesare, doar Steam OpenID, fără parole Steam, fără vânzarea datelor comportamentale."
     },
     "kicker": "ACE-LEGAL / POLITICA DE CONFIDENȚIALITATE",
     "title": "Politica de confidențialitate",
-    "lede": "Această Politică de confidențialitate explică ce date personale păstrează A.C.E. când folosești acest site, de ce și cât timp. Dacă o traducere diferă de textul în engleză, se aplică textul în engleză.",
+    "lede": "Această Politică de confidențialitate explică ce date personale păstrează A.C.E când folosești acest site, de ce și cât timp. Dacă o traducere diferă de textul în engleză, se aplică textul în engleză.",
     "strictNecessity": {
       "title": "Principiul strictei necesități",
       "intro": "Colectăm datele minime de cont necesare pentru a identifica un jucător competitiv și a opri fraudele evidente pe serviciul nostru. Nu colectăm jurnale inutile, nu extragem inventare Steam private și nu vindem date comportamentale terților.",
@@ -121,14 +121,14 @@ export const legalDocs: TextBag["legalDocs"] = {
     "steamBoundary": {
       "title": "Încorporări terțe și granița Steam OpenID",
       "callback": {
-        "before": "Autentificarea Steam părăsește A.C.E., se autentifică pe Steam și revine la",
-        "after": ". Serverul verifică aserțiunea OpenID (inclusiv identitatea revendicată și parametrii semnați de Steam) înainte de a scrie o sesiune. Politica de confidențialitate Steam guvernează datele deținute de Steam. A.C.E. păstrează doar SteamID-ul verificat și câmpurile publice de persona necesare pentru funcționarea contului."
+        "before": "Autentificarea Steam părăsește A.C.E, se autentifică pe Steam și revine la",
+        "after": ". Serverul verifică aserțiunea OpenID (inclusiv identitatea revendicată și parametrii semnați de Steam) înainte de a scrie o sesiune. Politica de confidențialitate Steam guvernează datele deținute de Steam. A.C.E păstrează doar SteamID-ul verificat și câmpurile publice de persona necesare pentru funcționarea contului."
       },
-      "footerLinks": "Pictogramele rețelelor externe din subsol sunt linkuri de director către pagini publice. Nu sunt conturi oficiale A.C.E. și nu încorporează widgeturi de urmărire."
+      "footerLinks": "Pictogramele rețelelor externe din subsol sunt linkuri de director către pagini publice. Nu sunt conturi oficiale A.C.E și nu încorporează widgeturi de urmărire."
     },
     "rights": {
       "title": "Drepturile tale",
-      "before": "Dacă te afli într-o regiune cu drepturi privind datele personale, poți solicita accesul, rectificarea sau ștergerea datelor contului tău A.C.E. scriind la",
+      "before": "Dacă te afli într-o regiune cu drepturi privind datele personale, poți solicita accesul, rectificarea sau ștergerea datelor contului tău A.C.E scriind la",
       "after": ". Ștergerea unui cont de pe site nu schimbă nicio decizie Steam sau VAC luată de Valve."
     },
     "cookies": {
@@ -145,14 +145,14 @@ export const legalDocs: TextBag["legalDocs"] = {
   "cookiePolicy": {
     "meta": {
       "title": "Politica de cookie-uri",
-      "description": "Auditul A.C.E. privind confidențialitatea cookie-urilor și a telemetriei. Doar cookie-uri de sesiune necesare, dacă nu alegi categoriile opționale rezervate."
+      "description": "Auditul A.C.E privind confidențialitatea cookie-urilor și a telemetriei. Doar cookie-uri de sesiune necesare, dacă nu alegi categoriile opționale rezervate."
     },
     "kicker": "ACE-LEGAL / POLITICA DE COOKIE-URI",
     "title": "Politica de cookie-uri",
     "lede": "Această Politică de cookie-uri enumeră cookie-urile pe care site-ul le setează efectiv, categoriile rezervate pentru mai târziu și ce nu se colectează.",
     "audit": {
       "title": "Instrumente de urmărire pe acest site",
-      "body": "A.C.E. nu rulează pe acest site public pixeli publicitari, Google Analytics, Meta Pixel, SDK-uri de amprentare sau alte trackere comportamentale ale terților. „Trackerele de analiză” și „Trackerele de marketing” opționale din bannerul de consimțământ sunt doar categorii. Bifarea lor astăzi nu încarcă niciun script. Dacă un tracker este adăugat mai târziu, va citi mai întâi preferința salvată și va rămâne oprit fără consimțământul tău."
+      "body": "A.C.E nu rulează pe acest site public pixeli publicitari, Google Analytics, Meta Pixel, SDK-uri de amprentare sau alte trackere comportamentale ale terților. „Trackerele de analiză” și „Trackerele de marketing” opționale din bannerul de consimțământ sunt doar categorii. Bifarea lor astăzi nu încarcă niciun script. Dacă un tracker este adăugat mai târziu, va citi mai întâi preferința salvată și va rămâne oprit fără consimțământul tău."
     },
     "essential": {
       "title": "Cookie-uri necesare [Obligatoriu / Blocat]",
@@ -169,7 +169,7 @@ export const legalDocs: TextBag["legalDocs"] = {
     },
     "marketing": {
       "title": "Trackere de marketing [Opțional]",
-      "body": "Rezervat. A.C.E. nu vinde, nu închiriază și nu intermediază profiluri comportamentale. Acest site nu are un manager de etichete de marketing."
+      "body": "Rezervat. A.C.E nu vinde, nu închiriază și nu intermediază profiluri comportamentale. Acest site nu are un manager de etichete de marketing."
     },
     "change": {
       "title": "Cum îți schimbi alegerea",

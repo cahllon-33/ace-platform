@@ -37,7 +37,7 @@ export type FreeAgentView = {
 };
 
 export const SQUAD_DISCLOSURE =
-  "A.C.E. SQUAD SYSTEM NOTICE: All clan rosters, player profiles, and telemetry stats displayed on this page are conceptual pre-registration preview layouts only. Anti-cheat badges are layout samples — not a live check. No tournament compliance is verified here.";
+  "A.C.E SQUAD SYSTEM NOTICE: All clan rosters, player profiles, and telemetry stats displayed on this page are conceptual pre-registration preview layouts only. Anti-cheat badges are layout samples — not a live check. No tournament compliance is verified here.";
 
 export const LAYOUT_SLOTS: SquadSlotView[] = [
   {
@@ -92,7 +92,7 @@ export const FREE_AGENTS: FreeAgentView[] = [
     id: "fa-01",
     username: "kite-awp",
     rankLevel: 10,
-    rankLabel: "Rank 10 · A.C.E. Legend",
+    rankLabel: "Rank 10 · A.C.E Legend",
     kd: "1.42",
     rating: 1840,
     role: "AWPer",

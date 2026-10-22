@@ -13,7 +13,7 @@ export const home: TextBag["home"] = {
   "ops": {
     "identityKicker": "CENTRUM TOŻSAMOŚCI",
     "signedOutTitle": "Zaloguj się przez Steam",
-    "signedOutBody": "Połącz się przez oficjalny Steam OpenID, aby zobaczyć tu swój awatar Steam, emblemat rangi i Rating Points. A.C.E. nigdy nie prosi o hasło Steam.",
+    "signedOutBody": "Połącz się przez oficjalny Steam OpenID, aby zobaczyć tu swój awatar Steam, emblemat rangi i Rating Points. A.C.E nigdy nie prosi o hasło Steam.",
     "connect": "Zaloguj się przez Steam",
     "openDeck": "Otwórz Command Deck",
     "avatarAlt": "Awatar Steam gracza {name}",
@@ -25,7 +25,7 @@ export const home: TextBag["home"] = {
     "matches": "Mecze",
     "kd": "K/D",
     "na": "b/d",
-    "kdNote": "K/D pokazuje b/d, bo A.C.E. nie zapisuje jeszcze zabójstw i śmierci.",
+    "kdNote": "K/D pokazuje b/d, bo A.C.E nie zapisuje jeszcze zabójstw i śmierci.",
     "shieldKicker": "A.C.E SHIELD",
     "shieldChip": "W PRZYGOTOWANIU",
     "shieldTitle": "Status integralności",
@@ -48,11 +48,11 @@ export const home: TextBag["home"] = {
     "statsLink": "Otwórz statystyki gracza"
   },
   "meta": {
-    "title": "A.C.E. — platforma rywalizacji CS2",
-    "description": "A.C.E. to planowana platforma rywalizacji w Counter-Strike 2 obejmująca tożsamość graczy, kalibrację, drużyny i turnieje. Ta publiczna strona to podgląd. Dobieranie rankingowe, antycheat, płatności i nagrody nie są aktywne."
+    "title": "A.C.E — platforma rywalizacji CS2",
+    "description": "A.C.E to planowana platforma rywalizacji w Counter-Strike 2 obejmująca tożsamość graczy, kalibrację, drużyny i turnieje. Ta publiczna strona to podgląd. Dobieranie rankingowe, antycheat, płatności i nagrody nie są aktywne."
   },
   "opening": {
-    "dialogLabel": "Otwarcie A.C.E.",
+    "dialogLabel": "Otwarcie A.C.E",
     "line": "A.C.E: Autonomiczny Anticheat, kalibracja konkurencyjna, elitarni gracze",
     "enter": "Wejdź na stronę"
   },
@@ -91,7 +91,7 @@ export const home: TextBag["home"] = {
       },
       {
         "kicker": "NIERUCHOME RANGI 3D",
-        "copy": "Dziesięć szczebli od Recruit do A.C.E. Legend. Zapisana ocena pojawia się po zalogowaniu przez Steam. Ta strona nie zalicza żadnego meczu.",
+        "copy": "Dziesięć szczebli od Recruit do A.C.E Legend. Zapisana ocena pojawia się po zalogowaniu przez Steam. Ta strona nie zalicza żadnego meczu.",
         "chips": [
           "ZASADA OCENY W DOKUMENTACJI",
           "STÓŁ OBROTOWY NA TEJ STRONIE"
@@ -134,13 +134,13 @@ export const home: TextBag["home"] = {
     "lines": [
       "A.C.E SHIELD: W PRZYGOTOWANIU",
       "MATRYCA BLOKAD SPRZĘTOWYCH: ŻADEN IDENTYFIKATOR NIE JEST ZBIERANY",
-      "ŁĄCZE TARCZY A.C.E.: ŻADEN KLIENT NIE JEST ZAINSTALOWANY"
+      "ŁĄCZE TARCZY A.C.E: ŻADEN KLIENT NIE JEST ZAINSTALOWANY"
     ],
     "note": "Ta strona nie uruchamia klienta jądra, nie skanuje pamięci i nie nakłada blokad sprzętowych."
   },
   "comingSoon": {
     "badge": "NIEDOSTĘPNE",
-    "body": "Klient desktopowy A.C.E. nie jest oferowany do pobrania. Sezon 1 na tej stronie nie instaluje oprogramowania ani nie otwiera meldunku."
+    "body": "Klient desktopowy A.C.E nie jest oferowany do pobrania. Sezon 1 na tej stronie nie instaluje oprogramowania ani nie otwiera meldunku."
   },
   "operative": {
     "kicker": "Kinowy widok taktyczny · oryginalne środowisko CSS · to nie grafika Valve",
@@ -149,7 +149,7 @@ export const home: TextBag["home"] = {
     "note": "Tekst kampanii. Kolejki rankingowe, serwery na żywo i nagrody nie są aktywne."
   },
   "howStatus": {
-    "label": "PODSYSTEM REJESTRACJI A.C.E. — SILNIK KALIBRACJI GOTOWY",
+    "label": "PODSYSTEM REJESTRACJI A.C.E — SILNIK KALIBRACJI GOTOWY",
     "note": "Kolejki rankingowe ruszą, gdy A.C.E Shield i kalibracja zaczną działać."
   },
   "shell": {

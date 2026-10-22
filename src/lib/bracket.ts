@@ -56,7 +56,7 @@ export function buildSingleEliminationBracket(teamIds: string[]): BracketPlan {
     throw new Error("A tournament needs at least two teams.");
   }
   if (teamIds.length > MAX_TEAMS) {
-    throw new Error(`A.C.E. brackets support at most ${MAX_TEAMS} teams.`);
+    throw new Error(`A.C.E brackets support at most ${MAX_TEAMS} teams.`);
   }
 
   const unique = new Set(teamIds);

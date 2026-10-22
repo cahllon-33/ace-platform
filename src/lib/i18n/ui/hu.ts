@@ -25,7 +25,7 @@ export const UI_HU: Ui = {
     "company": "Cég",
     "legal": "Jogi információk",
     "tagline": "Versenyszerű Counter-Strike 2 ranglisták, a fair play köré építve.",
-    "follow": "Kövesd az A.C.E.-t",
+    "follow": "Kövesd az A.C.E-t",
     "rights": "Minden jog fenntartva.",
     "legalLine": "© 2026 A.C.E. Független platform, nem áll kapcsolatban a Valve-val. A Counter-Strike és a CS2 a Valve Corporation védjegye."
   },
@@ -58,7 +58,7 @@ export const UI_HU: Ui = {
   "maps": {
     "kicker": "Versenypálya-készlet",
     "title": "Pályák és közvetítés",
-    "lede": "Az A.C.E. versenykészlete hét pályából áll. A csapatok a szabálykönyv szerinti pályavétó során ebből tiltanak és választanak. A versenyközvetítések az alábbi képernyőn jelennek meg.",
+    "lede": "Az A.C.E versenykészlete hét pályából áll. A csapatok a szabálykönyv szerinti pályavétó során ebből tiltanak és választanak. A versenyközvetítések az alábbi képernyőn jelennek meg.",
     "rulebook": "A vétó szabályai",
     "screen": "Közvetítési képernyő",
     "offAir": "Nincs adás",
@@ -110,10 +110,10 @@ export const UI_HU: Ui = {
     }
   },
   "rules": {
-    "kicker": "Az A.C.E. versenyszabálykönyve",
+    "kicker": "Az A.C.E versenyszabálykönyve",
     "title": "Versenyszabályok",
     "version": "{version}. verzió · hatályos: {date}",
-    "intro": "Minden A.C.E. verseny ezek szerint a szabályok szerint zajlik. Az „Bevezetéskor lép hatályba” jelölésű pontok akkor lépnek életbe, amikor az érintett rendszer elindul.",
+    "intro": "Minden A.C.E verseny ezek szerint a szabályok szerint zajlik. Az „Bevezetéskor lép hatályba” jelölésű pontok akkor lépnek életbe, amikor az érintett rendszer elindul.",
     "pending": "Bevezetéskor lép hatályba",
     "contents": "Tartalom",
     "penalties": {
@@ -149,7 +149,7 @@ export const UI_HU: Ui = {
   "antiCheat": {
     "kicker": "A.C.E Shield",
     "title": "Csalásvédelem",
-    "lede": "Az A.C.E Shield a minden A.C.E. mérkőzéshez készülő tisztességvédelmi rendszer: kliens-, szerver-, mérkőzés- és viselkedésellenőrzések működnek együtt, az adatvédelmet helyezve előtérbe.",
+    "lede": "Az A.C.E Shield a minden A.C.E mérkőzéshez készülő tisztességvédelmi rendszer: kliens-, szerver-, mérkőzés- és viselkedésellenőrzések működnek együtt, az adatvédelmet helyezve előtérbe.",
     "statusLabel": "Bevezetési szakasz",
     "pillarsTitle": "Az architektúra pillérei",
     "pillars": {
@@ -229,7 +229,7 @@ export const UI_HU: Ui = {
       "expansion1": "Autonomous Anti-Cheat",
       "expansion2": "Competitive Calibration",
       "expansion3": "Elite Players",
-      "line": "Építsd fel versenyzői identitásod. Kalibráld a tudásod. Lépj feljebb az A.C.E. rangokban.",
+      "line": "Építsd fel versenyzői identitásod. Kalibráld a tudásod. Lépj feljebb az A.C.E rangokban.",
       "connectSteam": "Steam csatlakoztatása",
       "openDashboard": "Irányítópult megnyitása",
       "exploreRanks": "Rangok felfedezése"
@@ -237,7 +237,7 @@ export const UI_HU: Ui = {
     "status": {
       "title": "Platform állapota",
       "steam": "Steam-bejelentkezés",
-      "shield": "A.C.E. Shield",
+      "shield": "A.C.E Shield",
       "servers": "Versenyszerverek",
       "tournaments": "Tornák",
       "billing": "Számlázás",
@@ -288,8 +288,8 @@ export const UI_HU: Ui = {
     "chat": {
       "open": "Támogatási chat megnyitása",
       "close": "Támogatási chat bezárása",
-      "title": "A.C.E. támogatás",
-      "greeting": "Szia! Az A.C.E. támogatási asszisztense vagyok. Kérdezz a rangokról, csomagokról, szabályokról vagy a fiókodról.",
+      "title": "A.C.E támogatás",
+      "greeting": "Szia! Az A.C.E támogatási asszisztense vagyok. Kérdezz a rangokról, csomagokról, szabályokról vagy a fiókodról.",
       "placeholder": "Írd be a kérdésed…",
       "send": "Küldés",
       "unavailable": "A támogatási chat még nem érhető el.",
@@ -316,7 +316,7 @@ export const UI_HU: Ui = {
       "stepsKicker": "Így működik",
       "stepsTitle": "Három lépés az első rangig",
       "step1t": "Csatlakoztasd a Steamet",
-      "step1b": "Jelentkezz be Steam OpenID-val. Az A.C.E. soha nem látja a Steam-jelszavadat.",
+      "step1b": "Jelentkezz be Steam OpenID-val. Az A.C.E soha nem látja a Steam-jelszavadat.",
       "step2t": "Kalibrálás",
       "step2b": "A 3. szinten kezdesz 1200 RP-vel. Minden rögzített meccs a közzétett szabályok szerint változtatja az RP-det.",
       "step3t": "Emelkedés",
@@ -334,7 +334,7 @@ export const UI_HU: Ui = {
     "profile": {
       "kicker": "JÁTÉKOS",
       "notFound": "A játékos nem található",
-      "notFoundBody": "Egyik A.C.E.-fiók sem használja ezt a Steam-azonosítót, vagy a profil nem nyilvános.",
+      "notFoundBody": "Egyik A.C.E-fiók sem használja ezt a Steam-azonosítót, vagy a profil nem nyilvános.",
       "rating": "Pontszám",
       "rank": "Rang",
       "record": "Mérleg",
@@ -349,11 +349,11 @@ export const UI_HU: Ui = {
     },
     "chat": {
       "sources": "Források",
-      "noMatch": "Ezt nem találtam az A.C.E. oldal tartalmában. A kérdésedet jegyként elküldheted a csapatnak.",
+      "noMatch": "Ezt nem találtam az A.C.E oldal tartalmában. A kérdésedet jegyként elküldheted a csapatnak.",
       "s1": "Mennyibe kerül a Premium?",
       "s2": "Hogyan szerzek RP-t?",
       "s3": "Hogyan jelentsek egy csalót?",
-      "kbNote": "A válaszok az A.C.E. oldal tartalmából származnak."
+      "kbNote": "A válaszok az A.C.E oldal tartalmából származnak."
     }
   },
   "r40": {
@@ -382,7 +382,7 @@ export const UI_HU: Ui = {
     "nf": {
       "code": "404-es hiba",
       "title": "Ez az oldal nincs a térképen",
-      "body": "Lehet, hogy a link régi vagy elgépelt. Az A.C.E. minden része egy kattintásra van innen.",
+      "body": "Lehet, hogy a link régi vagy elgépelt. Az A.C.E minden része egy kattintásra van innen.",
       "home": "Vissza a kezdőlapra",
       "ranks": "Rangok megtekintése"
     },
@@ -396,12 +396,12 @@ export const UI_HU: Ui = {
   "r41": {
     "vf": {
       "label": "Ellenőrzött játékos",
-      "tip": "Ellenőrizve: Steam összekapcsolva, rendezett fiók, az A.C.E. átnézte."
+      "tip": "Ellenőrizve: Steam összekapcsolva, rendezett fiók, az A.C.E átnézte."
     },
     "st": {
       "kicker": "Teljesítmény",
       "title": "Játékosstatisztika",
-      "lede": "Minden szám rögzített A.C.E.-meccsekből származik. Semmi sem becslés.",
+      "lede": "Minden szám rögzített A.C.E-meccsekből származik. Semmi sem becslés.",
       "empty": "Még nincs rögzített meccs. A statisztikák az első rangsorolt meccs után jelennek meg.",
       "winRate": "Győzelmi arány",
       "adr": "ADR",
@@ -427,11 +427,11 @@ export const UI_HU: Ui = {
       "none": "—"
     },
     "ab": {
-      "title": "Az A.C.E.-ről",
+      "title": "Az A.C.E-ről",
       "lede": "Counter-Strike 2 versenyplatform egyetlen nyilvános rangtáblázattal és olyan csomagokkal, amelyek soha nem vesznek előnyt.",
-      "b1": "Az A.C.E. rangsorolt játékot, ranglistákat és tornákat szervez CS2-ben. A belépés Steam OpenID-vel történik; a Steam-jelszavadat soha nem látjuk.",
+      "b1": "Az A.C.E rangsorolt játékot, ranglistákat és tornákat szervez CS2-ben. A belépés Steam OpenID-vel történik; a Steam-jelszavadat soha nem látjuk.",
       "b2": "A rangodat csak rögzített eredményekből, közzétett szabályok szerint számoljuk. A fizetős csomagok csak kozmetikai és kényelmi célúak.",
-      "b3": "Az A.C.E. független platform, nem áll kapcsolatban a Valve-val."
+      "b3": "Az A.C.E független platform, nem áll kapcsolatban a Valve-val."
     },
     "ss": {
       "title": "Szerverállapot",
@@ -474,7 +474,7 @@ export const UI_HU: Ui = {
     "lv": {
       "nav": "Élő",
       "title": "Élő közvetítések",
-      "lede": "Az A.C.E. tornák hivatalos streamjei. Közvetítés csak akkor jelenik meg itt, amikor az operátorok adásba tették.",
+      "lede": "Az A.C.E tornák hivatalos streamjei. Közvetítés csak akkor jelenik meg itt, amikor az operátorok adásba tették.",
       "none": "Most nincs élő közvetítés",
       "noneBody": "Amint egy hivatalos stream adásba kerül, itt jelenik meg. Addig nézd meg a lenti tornákat.",
       "schedule": "Közelgő tornák",
@@ -484,7 +484,7 @@ export const UI_HU: Ui = {
     }
   },
   "r46": {
-    "aria": "Amit az A.C.E. képvisel",
+    "aria": "Amit az A.C.E képvisel",
     "fair": "Fair play védelem",
     "fairSub": "Steam-bejelentkezés, nyilvános szabályok és adminok által ellenőrzött játékosbejelentések.",
     "calib": "Versenyszintű kalibrálás",
@@ -494,7 +494,7 @@ export const UI_HU: Ui = {
   },
   "r45": {
     "title": "Legenden túl",
-    "lede": "Öt presztízsjelvény az A.C.E. Legend felett, 200 RP-nként 2150 és 2950 között. Csak játékkal szerezhető.",
+    "lede": "Öt presztízsjelvény az A.C.E Legend felett, 200 RP-nként 2150 és 2950 között. Csak játékkal szerezhető.",
     "plus": "Plus · platina",
     "premium": "Premium · arany tűz",
     "fair": "Mindenkinek ugyanaz az RP. A presztízsküszöbök, a párosítás és a pontozás minden csomagban azonos. Itt semmit sem lehet megvenni.",
@@ -527,10 +527,10 @@ export const UI_HU: Ui = {
     "pr": {
       "kicker": "Presztízs",
       "title": "Jelvényszabályok",
-      "lede": "Hogyan szerezhető meg minden A.C.E. jelvény. A jelvények csak kozmetikaiak: soha nem változtatják a párosítást, az RP-t vagy bármely szabályt.",
+      "lede": "Hogyan szerezhető meg minden A.C.E jelvény. A jelvények csak kozmetikaiak: soha nem változtatják a párosítást, az RP-t vagy bármely szabályt.",
       "ranks": "A rangjelvények (1–10. szint) az RP-det követik. Mindenki ugyanazt a rangot és ugyanazt a fix szintszínt látja.",
       "prestige": "A presztízsjelvények öt hosszú távú cél {elite} RP fölött: 200 RP-nként egy, 2150-től 2950-ig.",
-      "free": "Free: a jelvényed A.C.E. Legend marad, a presztízsszinted szöveges mérföldkőként jelenik meg. Az RP-d soha nincs korlátozva.",
+      "free": "Free: a jelvényed A.C.E Legend marad, a presztízsszinted szöveges mérföldkőként jelenik meg. Az RP-d soha nincs korlátozva.",
       "plus": "Plus: a platina presztízskészlet.",
       "premium": "Premium: az animált arany presztízskészlet.",
       "lose": "Ha egy presztízsküszöb alá esel, a jelvény követi az RP-det lefelé; ha újra eléred, visszatér.",
@@ -683,5 +683,19 @@ export const UI_HU: Ui = {
     "communityTitle": "Közösség",
     "communityLede": "Kövesd az A.C.E-t meccshírekért, tornákért és kiemelt pillanatokért.",
     "followOn": "A.C.E itt: {network}"
+  },
+  "r49b": {
+    "title": "Steam-leltár",
+    "private": "A leltár privát",
+    "privateBody": "A játékos Steam-leltára privát.",
+    "empty": "A nyilvános leltárban nincs CS2-tárgy.",
+    "unavailable": "A Steam-leltár most nem tölthető be.",
+    "hiddenOwner": "A leltárbemutatód rejtve van a profilodon.",
+    "hide": "Bemutató elrejtése",
+    "show": "Bemutató megjelenítése",
+    "priceSource": "Árak: a Steam Közösségi Piac legalacsonyabb ajánlata, gyorsítótárazva.",
+    "note": "Csak bemutató. Az A.C.E soha nem vesz, ad el vagy cserél Steam-tárgyakat.",
+    "updated": "Frissítve: {date}",
+    "more": "+{n} további tárgy"
   }
 };

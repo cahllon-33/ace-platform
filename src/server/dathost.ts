@@ -41,7 +41,7 @@ async function call<T>(cfg: DathostConfig, path: string, init: RequestInit = {},
   return (type.includes("json") ? await res.json() : await res.text()) as T;
 }
 
-/** Only the fields A.C.E. uses. Secrets (rcon, gslt, ftp/mysql passwords) are dropped by toServerView. */
+/** Only the fields A.C.E uses. Secrets (rcon, gslt, ftp/mysql passwords) are dropped by toServerView. */
 type RawServer = {
   id: string; name: string; game: string; location: string; on: boolean; booting: boolean; server_error?: string;
   ip: string; raw_ip?: string; ports: { game: number; gotv?: number | null };
@@ -140,7 +140,7 @@ export function buildMatchBody(serverId: string, input: CreateMatchInput) {
     ...input.team2.steamIds.map((s) => ({ steam_id_64: s, team: "team2" as const })),
   ];
   if (players.some((p) => !STEAM64.test(p.steam_id_64))) throw new Error("Every player needs a valid SteamID64.");
-  if (!isAceMap(input.map)) throw new Error("Map is not in the A.C.E. pool.");
+  if (!isAceMap(input.map)) throw new Error("Map is not in the A.C.E pool.");
   return {
     game_server_id: serverId,
     team1: { name: input.team1.name.slice(0, 40) },

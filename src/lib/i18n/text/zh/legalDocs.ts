@@ -5,7 +5,7 @@ export const legalDocs: TextBag["legalDocs"] = {
     "effective": "生效日期：{date}",
     "contact": "联系方式：support@ace-platform.gg",
     "definitionsTitle": "定义",
-    "definitions": "在本条款中，“A.C.E.”和“我们”指 A.C.E.。“本网站”指 ace-platform.gg。“账号”指通过 Steam 登录创建的 A.C.E. 资料。“方案”指 Free、Plus 或 Premium。“规则手册”指 /rules 上的竞技规则手册。“管理员”指在赛事中执行规则手册的工作人员。",
+    "definitions": "在本条款中，“A.C.E”和“我们”指 A.C.E。“本网站”指 ace-platform.gg。“账号”指通过 Steam 登录创建的 A.C.E 资料。“方案”指 Free、Plus 或 Premium。“规则手册”指 /rules 上的竞技规则手册。“管理员”指在赛事中执行规则手册的工作人员。",
     "suspensionTitle": "账号限制与停用",
     "suspension": "对于违反本条款或规则手册的账号，例如作弊、共享账号、规避封禁、骚扰或欺诈，我们可以警告、限制、停用或关闭。付费方案绝不能使账号免受限制。",
     "disputesTitle": "规则裁决与申诉",
@@ -21,22 +21,22 @@ export const legalDocs: TextBag["legalDocs"] = {
   "terms": {
     "meta": {
       "title": "服务条款",
-      "description": "A.C.E. 网站服务条款,适用于本《反恐精英 2》竞技网站。排位、支付和反作弊均未上线。"
+      "description": "A.C.E 网站服务条款,适用于本《反恐精英 2》竞技网站。排位、支付和反作弊均未上线。"
     },
     "kicker": "ACE-LEGAL / 服务条款",
     "title": "服务条款",
-    "lede": "本条款适用于你对 A.C.E. 网站和 A.C.E. 账号的使用。/rules 上的竞技规则手册、隐私政策、Cookie 政策和 Premium 条款均为本条款的组成部分。",
+    "lede": "本条款适用于你对 A.C.E 网站和 A.C.E 账号的使用。/rules 上的竞技规则手册、隐私政策、Cookie 政策和 Premium 条款均为本条款的组成部分。",
     "sections": {
       "operator": {
         "title": "1. 运营方与独立性",
         "paragraphs": [
-          "本服务由 A.C.E.运营。使用本网站即表示你接受本条款、隐私政策、Cookie 政策和竞技规则手册。"
+          "本服务由 A.C.E运营。使用本网站即表示你接受本条款、隐私政策、Cookie 政策和竞技规则手册。"
         ]
       },
       "eligibility": {
         "title": "2. 资格与账户",
         "paragraphs": [
-          "账号只能通过官方 Steam OpenID 登录创建，每人一个账号。A.C.E. 绝不会索要你的 Steam 密码。"
+          "账号只能通过官方 Steam OpenID 登录创建，每人一个账号。A.C.E 绝不会索要你的 Steam 密码。"
         ]
       },
       "notActive": {
@@ -60,20 +60,20 @@ export const legalDocs: TextBag["legalDocs"] = {
       "liability": {
         "title": "6. 责任限制",
         "paragraphs": [
-          "在法律允许的范围内,A.C.E. 不对段位损失、从未真实存在的装饰品损失,或第三方 Steam / CS2 的服务中断承担责任。你所在国家不可放弃的强制性消费者权利不受影响。"
+          "在法律允许的范围内,A.C.E 不对段位损失、从未真实存在的装饰品损失,或第三方 Steam / CS2 的服务中断承担责任。你所在国家不可放弃的强制性消费者权利不受影响。"
         ]
       },
       "copyright": {
         "title": "7. 网站原创内容的版权",
         "paragraphs": [
-          "为本网站创作的原创文字、页面布局、徽章和图形归 A.C.E. 所有。未经书面许可,不得为其他产品复制、转载或抓取这些原创内容。在法律允许的情况下,A.C.E. 可以主张该权利,包括提出索赔。本声明不构成起诉,不设定赔偿金额,也不保证任何法院判决结果。",
-          "Counter-Strike 2、Steam 以及地图名称 Dust II、Mirage、Inferno、Nuke、Ancient、Anubis 和 Train 归 Valve 所有。A.C.E. 不主张对其拥有权利。打开本网站不会取消任何法定权利,也不会订立合同。"
+          "为本网站创作的原创文字、页面布局、徽章和图形归 A.C.E 所有。未经书面许可,不得为其他产品复制、转载或抓取这些原创内容。在法律允许的情况下,A.C.E 可以主张该权利,包括提出索赔。本声明不构成起诉,不设定赔偿金额,也不保证任何法院判决结果。",
+          "Counter-Strike 2、Steam 以及地图名称 Dust II、Mirage、Inferno、Nuke、Ancient、Anubis 和 Train 归 Valve 所有。A.C.E 不主张对其拥有权利。打开本网站不会取消任何法定权利,也不会订立合同。"
         ]
       },
       "contact": {
         "title": "8. 联系方式",
         "paragraphs": [
-          "support@ace-platform.gg — A.C.E."
+          "support@ace-platform.gg — A.C.E"
         ]
       }
     }
@@ -81,11 +81,11 @@ export const legalDocs: TextBag["legalDocs"] = {
   "privacy": {
     "meta": {
       "title": "隐私政策",
-      "description": "A.C.E. 隐私政策:严格必要的数据,仅限 Steam OpenID,不收集 Steam 密码,不出售行为数据。"
+      "description": "A.C.E 隐私政策:严格必要的数据,仅限 Steam OpenID,不收集 Steam 密码,不出售行为数据。"
     },
     "kicker": "ACE-LEGAL / 隐私政策",
     "title": "隐私政策",
-    "lede": "本隐私政策说明你使用本网站时 A.C.E. 存储哪些个人数据、原因以及保存多久。若译文与英文文本不一致，以英文文本为准。",
+    "lede": "本隐私政策说明你使用本网站时 A.C.E 存储哪些个人数据、原因以及保存多久。若译文与英文文本不一致，以英文文本为准。",
     "strictNecessity": {
       "title": "严格必要原则",
       "intro": "我们只收集识别竞技玩家和阻止针对本服务的明显欺诈所需的最少账户数据。我们不收集不必要的日志,不抓取私密的 Steam 库存,也不出售第三方行为数据。",
@@ -93,14 +93,14 @@ export const legalDocs: TextBag["legalDocs"] = {
       "stored": [
         {
           "label": "经过验证的 64 位 SteamID",
-          "body": "由 Steam 官方 OpenID 断言返回,并在创建或更新 A.C.E. 账户前于服务器上核验。"
+          "body": "由 Steam 官方 OpenID 断言返回,并在创建或更新 A.C.E 账户前于服务器上核验。"
         },
         {
           "label": "公开的 Steam 显示名称",
           "body": "在配置了 Steam Web API 密钥时获取。这是个人资料名称,不是电子邮箱。"
         },
         {
-          "label": "A.C.E. 账户记录",
+          "label": "A.C.E 账户记录",
           "body": "例如段位等级、评分、胜/负、战队成员身份和会话令牌哈希。"
         }
       ],
@@ -121,10 +121,10 @@ export const legalDocs: TextBag["legalDocs"] = {
     "steamBoundary": {
       "title": "第三方嵌入与 Steam OpenID 边界",
       "callback": {
-        "before": "Steam 登录会离开 A.C.E.,在 Steam 完成验证,然后返回",
-        "after": "。服务器在写入会话前会核验 OpenID 断言(包括声明的身份和 Steam 签名参数)。Steam 持有的数据受 Steam 隐私政策约束。A.C.E. 仅保存运营账户所需的已验证 SteamID 和公开资料字段。"
+        "before": "Steam 登录会离开 A.C.E,在 Steam 完成验证,然后返回",
+        "after": "。服务器在写入会话前会核验 OpenID 断言(包括声明的身份和 Steam 签名参数)。Steam 持有的数据受 Steam 隐私政策约束。A.C.E 仅保存运营账户所需的已验证 SteamID 和公开资料字段。"
       },
-      "footerLinks": "页脚中的外部网络图标是指向公开网站的目录链接。它们不是 A.C.E. 官方账号,也不嵌入追踪组件。"
+      "footerLinks": "页脚中的外部网络图标是指向公开网站的目录链接。它们不是 A.C.E 官方账号,也不嵌入追踪组件。"
     },
     "rights": {
       "title": "你的权利",
@@ -139,7 +139,7 @@ export const legalDocs: TextBag["legalDocs"] = {
     },
     "controller": {
       "title": "数据控制者",
-      "body": "A.C.E. 联系方式:support@ace-platform.gg。"
+      "body": "A.C.E 联系方式:support@ace-platform.gg。"
     }
   },
   "cookiePolicy": {
@@ -152,13 +152,13 @@ export const legalDocs: TextBag["legalDocs"] = {
     "lede": "本 Cookie 政策列出本网站实际设置的 Cookie、预留给以后的类别以及不会收集的内容。",
     "audit": {
       "title": "本网站的追踪工具",
-      "body": "A.C.E. 不在本公开网站上运行广告像素、Google Analytics、Meta Pixel、指纹识别 SDK 或其他第三方行为追踪器。同意面板中可选的“分析追踪器”和“营销追踪器”仅为类别,勾选它们目前不会加载任何脚本。如果以后添加追踪器,它会先读取已保存的偏好,在你未同意时保持关闭。"
+      "body": "A.C.E 不在本公开网站上运行广告像素、Google Analytics、Meta Pixel、指纹识别 SDK 或其他第三方行为追踪器。同意面板中可选的“分析追踪器”和“营销追踪器”仅为类别,勾选它们目前不会加载任何脚本。如果以后添加追踪器,它会先读取已保存的偏好,在你未同意时保持关闭。"
     },
     "essential": {
       "title": "必要 Cookie [必需 / 已锁定]",
       "session": {
         "label": "会话 Cookie",
-        "body": "— 仅在 Steam OpenID 回调验证通过后设置。HttpOnly,页面 JavaScript 无法读取,用于保持你在 A.C.E. 的登录状态。"
+        "body": "— 仅在 Steam OpenID 回调验证通过后设置。HttpOnly,页面 JavaScript 无法读取,用于保持你在 A.C.E 的登录状态。"
       },
       "necessity": "这些 Cookie 是运营已验证账户所严格必需的,并非广告标识符。"
     },
@@ -169,7 +169,7 @@ export const legalDocs: TextBag["legalDocs"] = {
     },
     "marketing": {
       "title": "营销追踪器 [可选]",
-      "body": "预留。A.C.E. 不出售、出租或中介任何行为档案。本网站没有营销标签管理器。"
+      "body": "预留。A.C.E 不出售、出租或中介任何行为档案。本网站没有营销标签管理器。"
     },
     "change": {
       "title": "如何更改你的选择",

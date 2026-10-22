@@ -13,7 +13,7 @@ export const home: TextBag["home"] = {
   "ops": {
     "identityKicker": "CENTRU DE IDENTITATE",
     "signedOutTitle": "Conectează-te cu Steam",
-    "signedOutBody": "Conectează-te prin Steam OpenID oficial ca să vezi aici avatarul Steam, emblema de rang și Rating Points. A.C.E. nu cere niciodată parola Steam.",
+    "signedOutBody": "Conectează-te prin Steam OpenID oficial ca să vezi aici avatarul Steam, emblema de rang și Rating Points. A.C.E nu cere niciodată parola Steam.",
     "connect": "Conectează-te cu Steam",
     "openDeck": "Deschide Command Deck",
     "avatarAlt": "Avatarul Steam al lui {name}",
@@ -25,7 +25,7 @@ export const home: TextBag["home"] = {
     "matches": "Meciuri",
     "kd": "K/D",
     "na": "n/a",
-    "kdNote": "K/D arată n/a deoarece A.C.E. nu înregistrează încă eliminările și decesele.",
+    "kdNote": "K/D arată n/a deoarece A.C.E nu înregistrează încă eliminările și decesele.",
     "shieldKicker": "A.C.E SHIELD",
     "shieldChip": "ÎN DEZVOLTARE",
     "shieldTitle": "Stare de integritate",
@@ -43,21 +43,21 @@ export const home: TextBag["home"] = {
     "seasonBody": "Sezonul 1 nu are încă dată de început sau de sfârșit, deci nu există numărătoare inversă. Datele vor fi publicate pe acest site înainte de începerea sezonului.",
     "statsKicker": "STATISTICILE TALE",
     "statsSignedOut": "Conectează-te cu Steam ca să-ți vezi statisticile.",
-    "statsEmpty": "Încă nu există meciuri înregistrate. Victoriile și înfrângerile apar după primul tău meci A.C.E. înregistrat.",
-    "statsLive": "Victoriile și înfrângerile provin din contul tău A.C.E. salvat.",
+    "statsEmpty": "Încă nu există meciuri înregistrate. Victoriile și înfrângerile apar după primul tău meci A.C.E înregistrat.",
+    "statsLive": "Victoriile și înfrângerile provin din contul tău A.C.E salvat.",
     "statsLink": "Deschide statisticile de jucător"
   },
   "meta": {
-    "title": "A.C.E. — Platformă competitivă CS2",
-    "description": "A.C.E. este o platformă competitivă Counter-Strike 2 planificată pentru identitatea jucătorilor, calibrare, echipe și turnee. Acest site public este o previzualizare. Matchmakingul ranked, anti-cheatul, plățile și premiile nu sunt active."
+    "title": "A.C.E — Platformă competitivă CS2",
+    "description": "A.C.E este o platformă competitivă Counter-Strike 2 planificată pentru identitatea jucătorilor, calibrare, echipe și turnee. Acest site public este o previzualizare. Matchmakingul ranked, anti-cheatul, plățile și premiile nu sunt active."
   },
   "opening": {
-    "dialogLabel": "Deschidere A.C.E.",
+    "dialogLabel": "Deschidere A.C.E",
     "line": "A.C.E: Anti-cheat autonom, calibrare competitivă, jucători de elită",
     "enter": "Intră pe site"
   },
   "hero": {
-    "logoAlt": "A.C.E. Anti-cheat autonom, calibrare competitivă, jucători de elită",
+    "logoAlt": "A.C.E Anti-cheat autonom, calibrare competitivă, jucători de elită",
     "arenaAlt": "Placă de arenă A.C.E. Imagine originală de scenă, nu artă Valve. Ecranul poartă eticheta televiziune de jocuri. Transmisia live este oprită."
   },
   "broadcast": {
@@ -91,7 +91,7 @@ export const home: TextBag["home"] = {
       },
       {
         "kicker": "RANGURI 3D FIXE",
-        "copy": "Zece niveluri de la Recruit la A.C.E. Legend. Un rating stocat apare după autentificarea Steam. Această pagină nu înregistrează un meci.",
+        "copy": "Zece niveluri de la Recruit la A.C.E Legend. Un rating stocat apare după autentificarea Steam. Această pagină nu înregistrează un meci.",
         "chips": [
           "REGULA DE RATING ÎNREGISTRATĂ",
           "MASĂ ROTATIVĂ PE ACEASTĂ PAGINĂ"
@@ -134,13 +134,13 @@ export const home: TextBag["home"] = {
     "lines": [
       "A.C.E SHIELD: ÎN DEZVOLTARE",
       "MATRICE DE INTERDICȚII HARDWARE: NU SE COLECTEAZĂ IDENTIFICATOR",
-      "LEGĂTURĂ A.C.E. SHIELD: NICIUN CLIENT INSTALAT"
+      "LEGĂTURĂ A.C.E SHIELD: NICIUN CLIENT INSTALAT"
     ],
     "note": "Acest site nu rulează un client kernel, nu scanează memoria și nu emite interdicții hardware."
   },
   "comingSoon": {
     "badge": "INDISPONIBIL",
-    "body": "Clientul desktop A.C.E. nu este oferit pentru descărcare. Sezonul 1 pe acest site nu instalează software și nu deschide check-in."
+    "body": "Clientul desktop A.C.E nu este oferit pentru descărcare. Sezonul 1 pe acest site nu instalează software și nu deschide check-in."
   },
   "operative": {
     "kicker": "Vizor tactic cinematic · mediu CSS original · nu artă Valve",
@@ -149,7 +149,7 @@ export const home: TextBag["home"] = {
     "note": "Text de campanie. Cozile ranked, serverele live și premiile nu sunt active."
   },
   "howStatus": {
-    "label": "SUBSISTEMUL DE ÎNREGISTRARE A.C.E. — MOTOR DE CALIBRARE PREGĂTIT",
+    "label": "SUBSISTEMUL DE ÎNREGISTRARE A.C.E — MOTOR DE CALIBRARE PREGĂTIT",
     "note": "Cozile ranked se deschid când A.C.E Shield și calibrarea devin active."
   },
   "shell": {

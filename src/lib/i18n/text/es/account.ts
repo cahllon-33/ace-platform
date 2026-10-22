@@ -5,10 +5,10 @@ export const account: TextBag["account"] = {
     "metaTitle": "Estadísticas de jugador",
     "kicker": "ESTADÍSTICAS DE JUGADOR",
     "title": "Estadísticas de jugador",
-    "lede": "Evolución del rating a partir de tus partidas A.C.E. registradas, con indicadores de % de headshots y precisión. Incluido en A.C.E Plus (4 $/mes) y A.C.E Premium (7 $/mes).",
+    "lede": "Evolución del rating a partir de tus partidas A.C.E registradas, con indicadores de % de headshots y precisión. Incluido en A.C.E Plus (4 $/mes) y A.C.E Premium (7 $/mes).",
     "movementTitle": "Evolución del rating",
     "movementNote": "Cada punto es un cambio de rating registrado a partir de una partida A.C.E.",
-    "noMatches": "Aún no hay partidas registradas, así que el gráfico está vacío. Se llenará tras tu primera partida A.C.E. registrada.",
+    "noMatches": "Aún no hay partidas registradas, así que el gráfico está vacío. Se llenará tras tu primera partida A.C.E registrada.",
     "currentLabel": "Rating actual",
     "netLabel": "Cambio neto",
     "changesLabel": "Cambios registrados",
@@ -21,7 +21,7 @@ export const account: TextBag["account"] = {
     "lockedBody": "Tu plan guardado es Free. Plus (4 $/mes) y Premium (7 $/mes) desbloquean esta página. Próximamente: el pago aún no existe.",
     "signIn": "Inicia sesión con Steam para ver tus estadísticas de jugador.",
     "plansLink": "Ver planes",
-    "rosterNote": "Perfil de plantilla de ejemplo: estos jugadores no tienen partidas A.C.E. registradas, así que las estadísticas no muestran números.",
+    "rosterNote": "Perfil de plantilla de ejemplo: estos jugadores no tienen partidas A.C.E registradas, así que las estadísticas no muestran números.",
     "dashTitle": "Estadísticas y análisis",
     "dashStats": "Abrir estadísticas de jugador",
     "dashAnalysis": "Abrir análisis de partida (Premium)",
@@ -38,7 +38,7 @@ export const account: TextBag["account"] = {
     "stats": {
       "accountStatus": "Estado de la cuenta",
       "subscription": "Suscripción",
-      "rank": "Rango A.C.E.",
+      "rank": "Rango A.C.E",
       "ratingPoints": "Puntos de puntuación",
       "wins": "Victorias",
       "losses": "Derrotas",
@@ -71,7 +71,7 @@ export const account: TextBag["account"] = {
     "rankedButton": "Buscar partida clasificatoria",
     "roster": {
       "title": "Plantilla 5v5",
-      "body": "Un capitán. Cuatro invitaciones. Los capitanes invitan a otros ID de cuenta A.C.E., que solo se crean después de un inicio de sesión de Steam verificado."
+      "body": "Un capitán. Cuatro invitaciones. Los capitanes invitan a otros ID de cuenta A.C.E, que solo se crean después de un inicio de sesión de Steam verificado."
     },
     "pendingInvites": "Invitaciones pendientes"
   },
@@ -132,7 +132,7 @@ export const account: TextBag["account"] = {
     "back": "Volver a la plantilla del clan"
   },
   "networks": {
-    "note": "Un enlace escrito aquí se queda en este navegador y no se guarda. A.C.E. nunca pide una contraseña de Steam.",
+    "note": "Un enlace escrito aquí se queda en este navegador y no se guarda. A.C.E nunca pide una contraseña de Steam.",
     "labels": {
       "steam": "Perfil de Steam"
     },
@@ -150,9 +150,9 @@ export const account: TextBag["account"] = {
       "title": "Error de inicio de sesión"
     },
     "title": "El inicio de sesión con Steam no se completó",
-    "notConfigured": "Steam OpenID todavía no está configurado en este servidor. A.C.E. nunca pide una contraseña de Steam.",
-    "unavailable": "Steam no respondió a la solicitud de verificación. Inténtalo de nuevo en un momento. A.C.E. nunca pide una contraseña de Steam.",
-    "unverified": "No se pudo verificar en el servidor la respuesta de OpenID. A.C.E. nunca pide una contraseña de Steam.",
+    "notConfigured": "Steam OpenID todavía no está configurado en este servidor. A.C.E nunca pide una contraseña de Steam.",
+    "unavailable": "Steam no respondió a la solicitud de verificación. Inténtalo de nuevo en un momento. A.C.E nunca pide una contraseña de Steam.",
+    "unverified": "No se pudo verificar en el servidor la respuesta de OpenID. A.C.E nunca pide una contraseña de Steam.",
     "returnHome": "Volver al inicio"
   }
 };

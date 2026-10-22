@@ -6,14 +6,14 @@ export const home: TextBag["home"] = {
     "online": "현재 접속 중",
     "registered": "등록된 플레이어",
     "earlyTitle": "얼리 액세스",
-    "earlyBody": "A.C.E.의 첫 플레이어가 되어 보세요. 커뮤니티가 성장하면 실시간 수치가 여기에 표시됩니다.",
+    "earlyBody": "A.C.E의 첫 플레이어가 되어 보세요. 커뮤니티가 성장하면 실시간 수치가 여기에 표시됩니다.",
     "unavailable": "현재 실시간 수치를 사용할 수 없습니다.",
     "note": "실제 수치, 30초마다 갱신."
   },
   "ops": {
     "identityKicker": "아이덴티티 허브",
     "signedOutTitle": "Steam으로 로그인",
-    "signedOutBody": "공식 Steam OpenID로 연결하면 여기에서 Steam 아바타, 랭크 엠블럼, Rating Points를 볼 수 있습니다. A.C.E.는 Steam 비밀번호를 절대 요구하지 않습니다.",
+    "signedOutBody": "공식 Steam OpenID로 연결하면 여기에서 Steam 아바타, 랭크 엠블럼, Rating Points를 볼 수 있습니다. A.C.E는 Steam 비밀번호를 절대 요구하지 않습니다.",
     "connect": "Steam으로 로그인",
     "openDeck": "Command Deck 열기",
     "avatarAlt": "{name}의 Steam 아바타",
@@ -25,7 +25,7 @@ export const home: TextBag["home"] = {
     "matches": "경기",
     "kd": "K/D",
     "na": "n/a",
-    "kdNote": "A.C.E.가 아직 킬과 데스를 기록하지 않아 K/D는 n/a로 표시됩니다.",
+    "kdNote": "A.C.E가 아직 킬과 데스를 기록하지 않아 K/D는 n/a로 표시됩니다.",
     "shieldKicker": "A.C.E SHIELD",
     "shieldChip": "개발 중",
     "shieldTitle": "무결성 상태",
@@ -43,22 +43,22 @@ export const home: TextBag["home"] = {
     "seasonBody": "시즌 1은 아직 시작일과 종료일이 없어 카운트다운이 없습니다. 일정은 시즌 시작 전에 이 사이트에 공개됩니다.",
     "statsKicker": "내 통계",
     "statsSignedOut": "통계를 보려면 Steam으로 로그인하세요.",
-    "statsEmpty": "아직 기록된 경기가 없습니다. 첫 A.C.E. 경기가 기록되면 승패가 표시됩니다.",
-    "statsLive": "승패는 저장된 A.C.E. 계정에서 가져옵니다.",
+    "statsEmpty": "아직 기록된 경기가 없습니다. 첫 A.C.E 경기가 기록되면 승패가 표시됩니다.",
+    "statsLive": "승패는 저장된 A.C.E 계정에서 가져옵니다.",
     "statsLink": "플레이어 통계 열기"
   },
   "meta": {
-    "title": "A.C.E. — CS2 경쟁 플랫폼",
-    "description": "A.C.E.는 플레이어 신원, 캘리브레이션, 팀, 토너먼트를 위한 Counter-Strike 2 경쟁 플랫폼으로 계획되어 있습니다. 이 공개 웹사이트는 미리보기입니다. 랭크 매치메이킹, 안티치트, 결제, 상금은 작동하지 않습니다."
+    "title": "A.C.E — CS2 경쟁 플랫폼",
+    "description": "A.C.E는 플레이어 신원, 캘리브레이션, 팀, 토너먼트를 위한 Counter-Strike 2 경쟁 플랫폼으로 계획되어 있습니다. 이 공개 웹사이트는 미리보기입니다. 랭크 매치메이킹, 안티치트, 결제, 상금은 작동하지 않습니다."
   },
   "opening": {
-    "dialogLabel": "A.C.E. 오프닝",
+    "dialogLabel": "A.C.E 오프닝",
     "line": "A.C.E: 자율 안티치트, 경쟁 캘리브레이션, 엘리트 플레이어",
     "enter": "사이트 입장"
   },
   "hero": {
-    "logoAlt": "A.C.E. 자율 안티치트, 경쟁 캘리브레이션, 엘리트 플레이어",
-    "arenaAlt": "A.C.E. 아레나 플레이트. 독창적인 무대 이미지이며 Valve 아트워크가 아닙니다. 화면에는 게임 텔레비전이라고 표시되어 있습니다. 실시간 방송은 꺼져 있습니다."
+    "logoAlt": "A.C.E 자율 안티치트, 경쟁 캘리브레이션, 엘리트 플레이어",
+    "arenaAlt": "A.C.E 아레나 플레이트. 독창적인 무대 이미지이며 Valve 아트워크가 아닙니다. 화면에는 게임 텔레비전이라고 표시되어 있습니다. 실시간 방송은 꺼져 있습니다."
   },
   "broadcast": {
     "kicker": "토너먼트 시청",
@@ -77,7 +77,7 @@ export const home: TextBag["home"] = {
   },
   "charter": {
     "kicker": "마스터 로비 작업 공간",
-    "title": "A.C.E. 경쟁 매치메이킹 로비 및 배정 센터",
+    "title": "A.C.E 경쟁 매치메이킹 로비 및 배정 센터",
     "badge": "서버 · 곧 출시",
     "lede": "이 로비는 서버를 배정하지 않고, 안티치트 클라이언트를 시작하지 않으며, 상금을 지급하지 않습니다.",
     "modules": [
@@ -91,7 +91,7 @@ export const home: TextBag["home"] = {
       },
       {
         "kicker": "고정 3D 랭크",
-        "copy": "Recruit부터 A.C.E. Legend까지 10개 티어. 저장된 레이팅은 Steam 로그인 후 표시됩니다. 이 페이지는 매치 결과를 적용하지 않습니다.",
+        "copy": "Recruit부터 A.C.E Legend까지 10개 티어. 저장된 레이팅은 Steam 로그인 후 표시됩니다. 이 페이지는 매치 결과를 적용하지 않습니다.",
         "chips": [
           "레이팅 규칙 문서화됨",
           "이 페이지의 턴테이블"
@@ -134,13 +134,13 @@ export const home: TextBag["home"] = {
     "lines": [
       "A.C.E SHIELD: 개발 중",
       "하드웨어 차단 매트릭스: 식별자를 수집하지 않음",
-      "A.C.E. 실드 링크: 설치된 클라이언트 없음"
+      "A.C.E 실드 링크: 설치된 클라이언트 없음"
     ],
     "note": "이 웹사이트는 커널 클라이언트를 실행하지 않고, 메모리를 검사하지 않으며, 하드웨어 차단을 내리지 않습니다."
   },
   "comingSoon": {
     "badge": "이용 불가",
-    "body": "A.C.E. 데스크톱 클라이언트는 다운로드로 제공되지 않습니다. 이 웹사이트의 시즌 1은 소프트웨어를 설치하거나 체크인을 열지 않습니다."
+    "body": "A.C.E 데스크톱 클라이언트는 다운로드로 제공되지 않습니다. 이 웹사이트의 시즌 1은 소프트웨어를 설치하거나 체크인을 열지 않습니다."
   },
   "operative": {
     "kicker": "시네마틱 전술 뷰포트 · 독창적인 CSS 환경 · Valve 아트 아님",
@@ -149,7 +149,7 @@ export const home: TextBag["home"] = {
     "note": "캠페인 문구입니다. 랭크 대기열, 실시간 서버, 상금은 작동하지 않습니다."
   },
   "howStatus": {
-    "label": "A.C.E. 등록 하위 시스템 — 캘리브레이션 엔진 준비됨",
+    "label": "A.C.E 등록 하위 시스템 — 캘리브레이션 엔진 준비됨",
     "note": "랭크 대기열은 A.C.E Shield와 캘리브레이션이 가동되면 열립니다."
   },
   "shell": {
@@ -161,13 +161,13 @@ export const home: TextBag["home"] = {
     "connectProfileTitle": "프로필 연결",
     "openProfileAria": "커맨드 덱 프로필 열기",
     "connectProfileAria": "Steam OpenID로 프로필 연결",
-    "signOutAria": "A.C.E.에서 로그아웃"
+    "signOutAria": "A.C.E에서 로그아웃"
   },
   "notFound": {
     "kicker": "그리드 예외",
     "title": "오류 404 — 레이더 텔레메트리 손실",
     "body": "요청한 좌표는 활성 서버 그리드에 존재하지 않습니다.",
-    "homeAria": "A.C.E. 홈페이지 로비로 돌아가기",
+    "homeAria": "A.C.E 홈페이지 로비로 돌아가기",
     "cta": "로비로 돌아가기"
   },
   "error": {

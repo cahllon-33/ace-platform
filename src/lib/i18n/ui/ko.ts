@@ -25,9 +25,9 @@ export const UI_KO: Ui = {
     "company": "회사",
     "legal": "법적 고지",
     "tagline": "공정한 플레이를 중심으로 만든 Counter-Strike 2 경쟁 래더.",
-    "follow": "A.C.E. 팔로우",
+    "follow": "A.C.E 팔로우",
     "rights": "모든 권리 보유.",
-    "legalLine": "© 2026 A.C.E. Valve와 제휴하지 않은 독립 플랫폼입니다. Counter-Strike 및 CS2는 Valve Corporation의 상표입니다."
+    "legalLine": "© 2026 A.C.E Valve와 제휴하지 않은 독립 플랫폼입니다. Counter-Strike 및 CS2는 Valve Corporation의 상표입니다."
   },
   "soon": {
     "label": "출시 예정"
@@ -229,7 +229,7 @@ export const UI_KO: Ui = {
       "expansion1": "Autonomous Anti-Cheat",
       "expansion2": "Competitive Calibration",
       "expansion3": "Elite Players",
-      "line": "경쟁 정체성을 만들어 보세요. 실력을 보정하세요. A.C.E. 랭크를 올라가세요.",
+      "line": "경쟁 정체성을 만들어 보세요. 실력을 보정하세요. A.C.E 랭크를 올라가세요.",
       "connectSteam": "Steam 연결",
       "openDashboard": "대시보드 열기",
       "exploreRanks": "랭크 둘러보기"
@@ -237,7 +237,7 @@ export const UI_KO: Ui = {
     "status": {
       "title": "플랫폼 상태",
       "steam": "Steam 로그인",
-      "shield": "A.C.E. Shield",
+      "shield": "A.C.E Shield",
       "servers": "경쟁 서버",
       "tournaments": "토너먼트",
       "billing": "결제",
@@ -288,8 +288,8 @@ export const UI_KO: Ui = {
     "chat": {
       "open": "지원 채팅 열기",
       "close": "지원 채팅 닫기",
-      "title": "A.C.E. 지원",
-      "greeting": "안녕하세요! A.C.E. 지원 도우미입니다. 랭크, 요금제, 규칙 또는 계정에 대해 물어보세요.",
+      "title": "A.C.E 지원",
+      "greeting": "안녕하세요! A.C.E 지원 도우미입니다. 랭크, 요금제, 규칙 또는 계정에 대해 물어보세요.",
       "placeholder": "질문을 입력하세요…",
       "send": "보내기",
       "unavailable": "지원 채팅은 아직 이용할 수 없습니다.",
@@ -316,7 +316,7 @@ export const UI_KO: Ui = {
       "stepsKicker": "작동 방식",
       "stepsTitle": "첫 랭크까지 세 단계",
       "step1t": "Steam 연결",
-      "step1b": "Steam OpenID로 로그인하세요. A.C.E.는 Steam 비밀번호를 절대 보지 않습니다.",
+      "step1b": "Steam OpenID로 로그인하세요. A.C.E는 Steam 비밀번호를 절대 보지 않습니다.",
       "step2t": "보정",
       "step2b": "3티어, 1,200 RP로 시작합니다. 기록된 모든 경기가 공개된 규칙에 따라 RP를 바꿉니다.",
       "step3t": "상승",
@@ -334,7 +334,7 @@ export const UI_KO: Ui = {
     "profile": {
       "kicker": "플레이어",
       "notFound": "플레이어를 찾을 수 없음",
-      "notFoundBody": "이 Steam ID를 쓰는 A.C.E. 계정이 없거나 프로필이 비공개입니다.",
+      "notFoundBody": "이 Steam ID를 쓰는 A.C.E 계정이 없거나 프로필이 비공개입니다.",
       "rating": "레이팅",
       "rank": "랭크",
       "record": "전적",
@@ -349,11 +349,11 @@ export const UI_KO: Ui = {
     },
     "chat": {
       "sources": "출처",
-      "noMatch": "A.C.E. 사이트 내용에서 찾지 못했습니다. 질문을 팀에 티켓으로 보낼 수 있습니다.",
+      "noMatch": "A.C.E 사이트 내용에서 찾지 못했습니다. 질문을 팀에 티켓으로 보낼 수 있습니다.",
       "s1": "Premium은 얼마인가요?",
       "s2": "RP는 어떻게 얻나요?",
       "s3": "치터는 어떻게 신고하나요?",
-      "kbNote": "답변은 A.C.E. 사이트 내용에서 가져옵니다."
+      "kbNote": "답변은 A.C.E 사이트 내용에서 가져옵니다."
     }
   },
   "r40": {
@@ -382,7 +382,7 @@ export const UI_KO: Ui = {
     "nf": {
       "code": "오류 404",
       "title": "이 페이지는 지도 밖에 있습니다",
-      "body": "링크가 오래되었거나 잘못 입력되었을 수 있습니다. A.C.E.의 모든 곳이 여기서 한 번의 클릭 거리입니다.",
+      "body": "링크가 오래되었거나 잘못 입력되었을 수 있습니다. A.C.E의 모든 곳이 여기서 한 번의 클릭 거리입니다.",
       "home": "홈으로 돌아가기",
       "ranks": "랭크 보기"
     },
@@ -396,12 +396,12 @@ export const UI_KO: Ui = {
   "r41": {
     "vf": {
       "label": "인증된 플레이어",
-      "tip": "인증됨: Steam 연결, 계정 상태 양호, A.C.E. 검토 완료."
+      "tip": "인증됨: Steam 연결, 계정 상태 양호, A.C.E 검토 완료."
     },
     "st": {
       "kicker": "퍼포먼스",
       "title": "플레이어 통계",
-      "lede": "모든 수치는 기록된 A.C.E. 경기에서 나옵니다. 추정치는 없습니다.",
+      "lede": "모든 수치는 기록된 A.C.E 경기에서 나옵니다. 추정치는 없습니다.",
       "empty": "아직 기록된 경기가 없습니다. 첫 랭크 경기 후 통계가 표시됩니다.",
       "winRate": "승률",
       "adr": "ADR",
@@ -427,11 +427,11 @@ export const UI_KO: Ui = {
       "none": "—"
     },
     "ab": {
-      "title": "A.C.E. 소개",
+      "title": "A.C.E 소개",
       "lede": "하나의 공개 랭크 표와 절대 이점을 사지 않는 플랜을 중심으로 한 Counter-Strike 2 대회 플랫폼입니다.",
-      "b1": "A.C.E.는 CS2 랭크 경기, 래더, 토너먼트를 운영합니다. 로그인은 Steam OpenID이며 Steam 비밀번호는 절대 보지 않습니다.",
+      "b1": "A.C.E는 CS2 랭크 경기, 래더, 토너먼트를 운영합니다. 로그인은 Steam OpenID이며 Steam 비밀번호는 절대 보지 않습니다.",
       "b2": "랭크는 공개된 규칙에 따라 기록된 결과로만 계산됩니다. 유료 플랜은 외형과 편의 기능만 제공합니다.",
-      "b3": "A.C.E.는 독립 플랫폼이며 Valve와 제휴하지 않았습니다."
+      "b3": "A.C.E는 독립 플랫폼이며 Valve와 제휴하지 않았습니다."
     },
     "ss": {
       "title": "서버 상태",
@@ -474,7 +474,7 @@ export const UI_KO: Ui = {
     "lv": {
       "nav": "라이브",
       "title": "라이브 방송",
-      "lede": "A.C.E. 공식 대회 방송입니다. 운영진이 방송 중으로 설정한 동안에만 여기에 표시됩니다.",
+      "lede": "A.C.E 공식 대회 방송입니다. 운영진이 방송 중으로 설정한 동안에만 여기에 표시됩니다.",
       "none": "지금은 라이브 방송이 없습니다",
       "noneBody": "공식 방송이 시작되면 여기에 표시됩니다. 그동안 아래 대회를 확인하세요.",
       "schedule": "예정된 대회",
@@ -484,7 +484,7 @@ export const UI_KO: Ui = {
     }
   },
   "r46": {
-    "aria": "A.C.E.가 지향하는 것",
+    "aria": "A.C.E가 지향하는 것",
     "fair": "페어플레이 보호",
     "fairSub": "Steam 로그인, 공개 규칙, 관리자가 검토하는 플레이어 신고.",
     "calib": "경쟁 캘리브레이션",
@@ -494,7 +494,7 @@ export const UI_KO: Ui = {
   },
   "r45": {
     "title": "Legend 너머",
-    "lede": "A.C.E. Legend 위의 프레스티지 배지 5종, 2,150~2,950 RP 구간에서 200 RP마다 하나씩. 플레이로만 획득합니다.",
+    "lede": "A.C.E Legend 위의 프레스티지 배지 5종, 2,150~2,950 RP 구간에서 200 RP마다 하나씩. 플레이로만 획득합니다.",
     "plus": "Plus · 플래티넘",
     "premium": "Premium · 골드 파이어",
     "fair": "모두에게 같은 RP. 프레스티지 기준, 매치메이킹, 레이팅은 모든 플랜에서 동일합니다. 여기엔 살 수 있는 것이 없습니다.",
@@ -527,10 +527,10 @@ export const UI_KO: Ui = {
     "pr": {
       "kicker": "프레스티지",
       "title": "배지 규정",
-      "lede": "A.C.E. 배지를 얻는 방법입니다. 배지는 외형 전용이며 매칭, RP, 어떤 규칙도 바꾸지 않습니다.",
+      "lede": "A.C.E 배지를 얻는 방법입니다. 배지는 외형 전용이며 매칭, RP, 어떤 규칙도 바꾸지 않습니다.",
       "ranks": "랭크 배지(1~10티어)는 RP를 따릅니다. 모두가 같은 랭크와 같은 고정 티어 색을 봅니다.",
       "prestige": "프레스티지 배지는 {elite} RP 위의 다섯 가지 장기 목표입니다. 2,150부터 2,950까지 200 RP마다 하나씩.",
-      "free": "Free: 배지는 A.C.E. Legend로 유지되고 프레스티지 단계는 텍스트 마일스톤으로 표시됩니다. RP 상한은 없습니다.",
+      "free": "Free: 배지는 A.C.E Legend로 유지되고 프레스티지 단계는 텍스트 마일스톤으로 표시됩니다. RP 상한은 없습니다.",
       "plus": "Plus: 플래티넘 프레스티지 세트.",
       "premium": "Premium: 애니메이션 골드 프레스티지 세트.",
       "lose": "기준 아래로 내려가면 배지도 RP를 따라 내려가고, 다시 도달하면 돌아옵니다.",
@@ -683,5 +683,19 @@ export const UI_KO: Ui = {
     "communityTitle": "커뮤니티",
     "communityLede": "경기 소식, 토너먼트, 하이라이트는 A.C.E를 팔로우하세요.",
     "followOn": "{network}의 A.C.E"
+  },
+  "r49b": {
+    "title": "Steam 인벤토리",
+    "private": "인벤토리 비공개",
+    "privateBody": "이 플레이어의 Steam 인벤토리는 비공개입니다.",
+    "empty": "공개 인벤토리에 CS2 아이템이 없습니다.",
+    "unavailable": "지금은 Steam 인벤토리를 불러올 수 없습니다.",
+    "hiddenOwner": "인벤토리 쇼케이스가 프로필에서 숨겨져 있습니다.",
+    "hide": "쇼케이스 숨기기",
+    "show": "쇼케이스 표시",
+    "priceSource": "가격: Steam 커뮤니티 장터 최저 판매가(캐시).",
+    "note": "전시 전용. A.C.E는 Steam 아이템을 사거나 팔거나 거래하지 않습니다.",
+    "updated": "{date} 업데이트",
+    "more": "+{n}개 더"
   }
 };

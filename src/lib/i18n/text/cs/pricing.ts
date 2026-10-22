@@ -70,10 +70,10 @@ export const pricing: TextBag["pricing"] = {
       "prices": "Free {free}. Plus {plus} měsíčně. Premium {premium} měsíčně. Plány se obnovují měsíčně. Zrušit je můžeš kdykoli bez sankce v nastavení panelu a přístup ti zůstane do konce zaplaceného měsíce. Načatý měsíc se nevrací, pokud to nevyžaduje zákon tvé země.",
       "plusTitle": "2. Co zahrnuje Plus",
       "plus1": "Vše z Free.",
-      "plus2": "Již brzy: děkovný dopis a e-mailová podpora na support@ace-platform.gg, jakmile bude existovat platba.",
+      "plus2": "E-mailová podpora pro členy na {email} a děkovný dopis od týmu.",
       "premiumTitle": "3. Co zahrnuje Premium",
       "prem1": "Vše z Plus.",
-      "prem2": "Prémiová grafika ranků a kodex prémiových ranků: původní ilustrovaná sada emblémů A.C.E. na tvém profilu. Pouze kosmetika, na stejném žebříčku Rating Points.",
+      "prem2": "Prémiová grafika ranků a kodex prémiových ranků: původní ilustrovaná sada emblémů A.C.E na tvém profilu. Pouze kosmetika, na stejném žebříčku Rating Points.",
       "prem3": "Animovaná prémiová profilová karta.",
       "prem4": "Speciální odznaky a PEČEŤ ELITE.",
       "prem5": "Již brzy: rozšířená analýza zápasu (heatmapa úmrtí, % headshotů, výkon po kolech), jakmile bude existovat zpracování dem.",
@@ -85,14 +85,14 @@ export const pricing: TextBag["pricing"] = {
       "soon": "Nic označeného Již brzy není slíbeno, dokud to nevyjde. Do té doby to cena nezahrnuje.",
       "languageTitle": "6. Jazyk",
       "language": "Překlady jsou poskytnuty pro pohodlí. Pokud se překlad liší od anglického textu, platí anglický text.",
-      "contact": "Dotazy: support@ace-platform.gg",
+      "contact": "Dotazy: {email}",
       "footerLink": "Podmínky Premium",
       "pricingLink": "Přečíst podmínky Premium"
     }
   },
   "meta": {
     "title": "Ceník",
-    "description": "Členství A.C.E.: Zdarma {free}, Plus {plus}/měs., Premium {premium}/měs. Zobrazené ceny jsou uzamčené na celá čísla."
+    "description": "Členství A.C.E: Zdarma {free}, Plus {plus}/měs., Premium {premium}/měs. Zobrazené ceny jsou uzamčené na celá čísla."
   },
   "period": {
     "monthly": "/měs."
@@ -108,23 +108,23 @@ export const pricing: TextBag["pricing"] = {
       "note": "Grafit",
       "title": "Otevřený přístup",
       "points": [
-        "Přihlášení přes Steam OpenID. A.C.E. nikdy nežádá heslo ke službě Steam.",
+        "Přihlášení přes Steam OpenID. A.C.E nikdy nežádá heslo ke službě Steam.",
         "Uložené hodnocení začíná na 1 200. Žádný výsledek zápasu ho nezměnil.",
         "Všechny veřejné stránky: hra, turnaje, žebříček, týmy a pravidla."
       ]
     },
     "plus": {
-      "name": "A.C.E. PLUS",
+      "name": "A.C.E PLUS",
       "note": "Plus",
       "title": "Statistiky hráče a podpora",
       "points": [
         "Vše z plánu Zdarma.",
         "Statistiky hráče: graf vývoje ratingu ze zaznamenaných zápasů A.C.E. Ukazatele % headshotů a přesnosti brzy.",
-        "Brzy: děkovný dopis a e-mailová podpora na support@ace-platform.gg, jakmile bude existovat platba. Plus nekupuje rating ani snazší soupeře."
+        "E-mailová podpora pro členy na {email} a děkovný dopis od týmu. Plus nekupuje rating ani snazší soupeře."
       ]
     },
     "premium": {
-      "name": "A.C.E. PREMIUM",
+      "name": "A.C.E PREMIUM",
       "note": "Premium",
       "title": "Grafika profilu, odznaky a analýza",
       "points": [
@@ -159,7 +159,7 @@ export const pricing: TextBag["pricing"] = {
     }
   },
   "compare": {
-    "kicker": "Co může A.C.E. slíbit už dnes",
+    "kicker": "Co může A.C.E slíbit už dnes",
     "title": "Srovnání členství",
     "note": "Každý řádek odpovídá dnešnímu stavu webu. Platba bude brzy k dispozici a placený plán nikdy neotevírá frontu ani nekupuje výhodu.",
     "caption": "Srovnání tarifů Zdarma, Plus a Premium podle toho, co web dělá dnes",
@@ -175,7 +175,7 @@ export const pricing: TextBag["pricing"] = {
       },
       "steamSignIn": {
         "feature": "Přihlášení přes Steam",
-        "detail": "Oficiální Steam OpenID. A.C.E. nikdy nežádá heslo ke službě Steam."
+        "detail": "Oficiální Steam OpenID. A.C.E nikdy nežádá heslo ke službě Steam."
       },
       "startingRating": {
         "feature": "Počáteční hodnocení",
@@ -231,15 +231,15 @@ export const pricing: TextBag["pricing"] = {
   "receipt": {
     "plus": {
       "metaTitle": "Potvrzení Plus",
-      "metaDescription": "Dopis A.C.E. Plus zobrazený na tomto webu. Pokladna není v provozu, takže se nic neúčtuje a neodesílá se žádný e-mail.",
-      "planName": "A.C.E. Plus",
-      "nextLabel": "Pokračovat na A.C.E.",
+      "metaDescription": "Dopis A.C.E Plus zobrazený na tomto webu. Pokladna není v provozu, takže se nic neúčtuje a neodesílá se žádný e-mail.",
+      "planName": "A.C.E Plus",
+      "nextLabel": "Pokračovat na A.C.E",
       "nextBody": "Veřejné stránky zůstávají otevřené. Tato volba neotevírá frontu a nemění uložený tarif."
     },
     "premium": {
       "metaTitle": "Potvrzení Premium",
-      "metaDescription": "Dopis A.C.E. Premium zobrazený na tomto webu. Pokladna není v provozu, takže se nic neúčtuje a neodesílá se žádný e-mail.",
-      "planName": "A.C.E. Premium",
+      "metaDescription": "Dopis A.C.E Premium zobrazený na tomto webu. Pokladna není v provozu, takže se nic neúčtuje a neodesílá se žádný e-mail.",
+      "planName": "A.C.E Premium",
       "nextLabel": "Přečíst podmínky Premium",
       "nextBody": "Premium tvoří prémiová grafika ranků, animovaná profilová karta, speciální odznaky a ELITE SEAL a k tomu vše z Plus. Uložení klanu ve Squads je zdarma pro každý účet."
     }
@@ -256,7 +256,7 @@ export const pricing: TextBag["pricing"] = {
         "Název tarifu: {plan}.",
         "Zobrazená cena: {price} měsíčně. Částka je štítek, ne platba.",
         "Platba: žádná. Volba tohoto tarifu nestrhává platbu z karty.",
-        "E-mail: žádný. A.C.E. tento dopis neodesílá do schránky.",
+        "E-mail: žádný. A.C.E tento dopis neodesílá do schránky.",
         "Uložená úroveň: beze změny. Speciální odznaky a elitní pečeť se zobrazí, jen když má účet již uloženo Premium.",
         "Hodnocení: není na prodej. Nový účet stále začíná na 1 200."
       ]
@@ -265,7 +265,7 @@ export const pricing: TextBag["pricing"] = {
       "title": "Co můžete používat už dnes",
       "items": [
         "Veřejný web: domů, hra, turnaje, žebříček, týmy, pravidla a podmínky.",
-        "Přihlášení přes Steam pomocí oficiálního Steam OpenID. A.C.E. nikdy nežádá heslo ke službě Steam.",
+        "Přihlášení přes Steam pomocí oficiálního Steam OpenID. A.C.E nikdy nežádá heslo ke službě Steam.",
         "Stejné veřejné stránky jako u tarifu zdarma. Tato cena neotevírá samostatnou frontu."
       ]
     },
@@ -309,7 +309,7 @@ export const pricing: TextBag["pricing"] = {
   },
   "telemetry": {
     "kicker": "TELEMETRIE PLUS / PREMIUM",
-    "copy": "TELEMETRIE PŘEHLEDU UZAMČENA — Přejděte na předplatné A.C.E. Plus nebo Premium a odemkněte dynamické křivky statistik v reálném čase a indexy specializace na zbraně.",
+    "copy": "TELEMETRIE PŘEHLEDU UZAMČENA — Přejděte na předplatné A.C.E Plus nebo Premium a odemkněte dynamické křivky statistik v reálném čase a indexy specializace na zbraně.",
     "cta": "Otevřít ceník"
   }
 };

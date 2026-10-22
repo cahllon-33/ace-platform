@@ -3,7 +3,7 @@ import type { TextBag } from "../types";
 export const codex: TextBag["codex"] = {
   "meta": {
     "title": "定级典籍",
-    "description": "A.C.E. 段位详解。每个问题都会展开关于评分和该段位规则的完整解答。典籍不会计入比赛结果。",
+    "description": "A.C.E 段位详解。每个问题都会展开关于评分和该段位规则的完整解答。典籍不会计入比赛结果。",
     "articleTitle": "{title} — 定级典籍"
   },
   "groups": {
@@ -31,7 +31,7 @@ export const codex: TextBag["codex"] = {
     "searchLabel": "搜索典籍",
     "searchPlaceholder": "试试 1950、Recruit 或平局",
     "empty": "没有与该搜索匹配的条目。",
-    "columnLabel": "A.C.E. 专栏 {n}",
+    "columnLabel": "A.C.E 专栏 {n}",
     "pagerLabel": "典籍页面",
     "first": "首页",
     "previous": "上一页",
@@ -40,7 +40,7 @@ export const codex: TextBag["codex"] = {
     "pageOf": "第 {n} / {m} 页"
   },
   "article": {
-    "breadcrumb": "A.C.E. · 定级典籍",
+    "breadcrumb": "A.C.E · 定级典籍",
     "status": "本页解释书面天梯规则。它不会计入比赛结果,也不会更改已保存的评分。",
     "emblemAlt": "{name} 徽章,段位 {level}",
     "emblemCaption": "段位 {level} · {name} · {crystal}",
@@ -63,7 +63,7 @@ export const codex: TextBag["codex"] = {
     "turnLabel": "继续阅读典籍",
     "previous": "上一页",
     "next": "下一页",
-    "alsoIn": "A.C.E. 其他内容",
+    "alsoIn": "A.C.E 其他内容",
     "backToBoard": "返回段位面板"
   },
   "rankArticle": {
@@ -124,20 +124,20 @@ export const codex: TextBag["codex"] = {
       "detail": "区间为 1,800 至 1,949,共 150 分而非 100 分。1,949 仍属于 Sovereign。Legend 从 1,950 开始。"
     },
     "rank-10-a-c-e-legend": {
-      "stance": "A.C.E. Legend 是最后一个标记。水晶名称为 ACE ELITE,官方名称为 A.C.E. Legend。",
+      "stance": "A.C.E Legend 是最后一个标记。水晶名称为 ACE ELITE,官方名称为 A.C.E Legend。",
       "detail": "区间从 1,950 开始,止于引擎上限 3,000。没有第十一个段位。已保存的评分不能超过 3,000。"
     }
   },
   "articles": {
     "what-a-rank-is": {
-      "title": "什么是 A.C.E. 段位",
-      "lede": "段位是包含你已保存评分的标记。十个标记覆盖整个天梯,从 Recruit 到 A.C.E. Legend。",
+      "title": "什么是 A.C.E 段位",
+      "lede": "段位是包含你已保存评分的标记。十个标记覆盖整个天梯,从 Recruit 到 A.C.E Legend。",
       "sections": [
         {
           "heading": "一个数值,一个标记",
           "paragraphs": [
             "账户保存一个竞技评分。天梯读取该数值,并返回该数值已达到下限的最高段位。你不会同时拥有两个段位。",
-            "Recruit 为段位 1,A.C.E. Legend 为段位 10。官方名称即天梯中的名称,徽章上较短的词是同一段位的水晶名称。",
+            "Recruit 为段位 1,A.C.E Legend 为段位 10。官方名称即天梯中的名称,徽章上较短的词是同一段位的水晶名称。",
             "本典籍解释书面天梯规则。它不会计入比赛结果,也不会更改已保存的评分。"
           ]
         },
@@ -145,7 +145,7 @@ export const codex: TextBag["codex"] = {
           "heading": "下限如何分布",
           "paragraphs": [
             "Recruit 覆盖天梯的起点。Operative 从 1,100 开始。从 Vanguard 到 Grandmaster,每个新下限高 100 分:1,200、1,300、1,400、1,500、1,600,然后是 1,700。",
-            "Sovereign 从 1,800 开始,一直持续到 1,949。A.C.E. Legend 从 1,950 开始。引擎上限为 3,000,因此 Legend 是最宽的区间。"
+            "Sovereign 从 1,800 开始,一直持续到 1,949。A.C.E Legend 从 1,950 开始。引擎上限为 3,000,因此 Legend 是最宽的区间。"
           ]
         },
         {
@@ -164,14 +164,14 @@ export const codex: TextBag["codex"] = {
         {
           "heading": "为何两者并存",
           "paragraphs": [
-            "引擎和个人资料使用官方名称:Recruit、Operative、Vanguard、Specialist、Veteran、Elite、Master、Grandmaster、Sovereign、A.C.E. Legend。",
+            "引擎和个人资料使用官方名称:Recruit、Operative、Vanguard、Specialist、Veteran、Elite、Master、Grandmaster、Sovereign、A.C.E Legend。",
             "徽章还带有水晶名称:IRON、BRONZE、SILVER、GOLD、PLATINUM、DIAMOND、MASTER、GRANDMASTER、IMMORTAL、ACE ELITE。该名称属于美术,不会创造第十一个段位,也不会保存第二个数值。"
           ]
         },
         {
           "heading": "两者不同之处",
           "paragraphs": [
-            "Specialist 的水晶名称为 GOLD,Veteran 为 PLATINUM,Elite 为 DIAMOND,Sovereign 为 IMMORTAL,A.C.E. Legend 为 ACE ELITE。在每种情况下,下限仍归属于官方名称。",
+            "Specialist 的水晶名称为 GOLD,Veteran 为 PLATINUM,Elite 为 DIAMOND,Sovereign 为 IMMORTAL,A.C.E Legend 为 ACE ELITE。在每种情况下,下限仍归属于官方名称。",
             "Master 和 Grandmaster 在两处使用相同的词。"
           ]
         }
@@ -287,7 +287,7 @@ export const codex: TextBag["codex"] = {
           "heading": "止点",
           "paragraphs": [
             "在 100 分时失败仍为 100。在 3,000 分时获胜仍为 3,000。天梯中 Recruit 的下限写为 0,但保存的数值从不使用 100 以下的部分。",
-            "1,949 为 Sovereign,1,950 为 A.C.E. Legend。两者之间没有中间标记。"
+            "1,949 为 Sovereign,1,950 为 A.C.E Legend。两者之间没有中间标记。"
           ]
         },
         {
@@ -334,7 +334,7 @@ export const codex: TextBag["codex"] = {
           "heading": "服务台不做什么",
           "paragraphs": [
             "“寻找比赛”不会搜索对手,也不会改变评分。账户的段位仍是已保存的数值,由本典籍中的天梯读取。",
-            "Legend 之上没有单独的顶级队列。A.C.E. Legend 是最后一个标记,从 1,950 分开始。"
+            "Legend 之上没有单独的顶级队列。A.C.E Legend 是最后一个标记,从 1,950 分开始。"
           ]
         }
       ]
@@ -440,12 +440,12 @@ export const codex: TextBag["codex"] = {
     },
     "how-a-roster-is-assembled": {
       "title": "阵容如何组建",
-      "lede": "队长邀请已有 A.C.E. 账户的玩家。没有公开的分享链接,也绝不会索要 Steam 密码。",
+      "lede": "队长邀请已有 A.C.E 账户的玩家。没有公开的分享链接,也绝不会索要 Steam 密码。",
       "sections": [
         {
           "heading": "现有的邀请功能",
           "paragraphs": [
-            "在战队页面上,已登录的队长粘贴 SteamID64 或 A.C.E. 账户 ID。该账户必须已通过 Steam OpenID 绑定。数据库接受后,服务器会写入一条待处理邀请。",
+            "在战队页面上,已登录的队长粘贴 SteamID64 或 A.C.E 账户 ID。该账户必须已通过 Steam OpenID 绑定。数据库接受后,服务器会写入一条待处理邀请。",
             "阵容包括队长在内共五名玩家。队长不能邀请自己的账户。已在阵容中的玩家会被拒绝。如果数据库宕机,邀请会失败且不会保存。"
           ]
         },

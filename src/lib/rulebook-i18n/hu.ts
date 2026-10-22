@@ -4,18 +4,18 @@ export const RB_HU: RulebookText = {
   "summary16": "A bírók a szándék, a hatás és az ismétlődés alapján választanak büntetést az alábbi tartományból. Az ismételt szabálysértések a tartomány magasabb fokozatába kerülnek.",
   "clauses": [
     [
-      "Ez a szabálykönyv minden A.C.E. által szervezett versenyre vonatkozik: kupákra, ligákra, ranglétrákra és bemutató mérkőzésekre. Az eseményoldal eseményspecifikus feltételeket adhat hozzá; ha ezek ellentmondanak a szabálykönyvnek, az eseményoldal csak az adott eseményre nézve elsőbbséget élvez.",
-      "„Szervező”: az A.C.E. üzemeltetési csapata. „Bíró”: a szervező egy eseményhez beosztott tagja. „Csapat”: regisztrált keret. „Kapitány”: a csapatot képviselő játékos. „Mérkőzés”: két csapat között játszott egy vagy több pálya. „Sorozat”: egy nyert pályáig (BO1), két nyert pályáig (BO3) vagy három nyert pályáig (BO5) tartó pályasorozat.",
+      "Ez a szabálykönyv minden A.C.E által szervezett versenyre vonatkozik: kupákra, ligákra, ranglétrákra és bemutató mérkőzésekre. Az eseményoldal eseményspecifikus feltételeket adhat hozzá; ha ezek ellentmondanak a szabálykönyvnek, az eseményoldal csak az adott eseményre nézve elsőbbséget élvez.",
+      "„Szervező”: az A.C.E üzemeltetési csapata. „Bíró”: a szervező egy eseményhez beosztott tagja. „Csapat”: regisztrált keret. „Kapitány”: a csapatot képviselő játékos. „Mérkőzés”: két csapat között játszott egy vagy több pálya. „Sorozat”: egy nyert pályáig (BO1), két nyert pályáig (BO3) vagy három nyert pályáig (BO5) tartó pályasorozat.",
       "A regisztrációval minden játékos és csapat elfogadja ezt a szabálykönyvet, a Felhasználási feltételeket és az Adatvédelmi szabályzatot.",
       "A bírók a szabálykönyv által nem szabályozott helyzetekben a sportszerűség és a szabályok szellemének megfelelően dönthetnek. Ezeket a döntéseket rögzítik, és a mérkőzés eredményével együtt közzéteszik."
     ],
     [
-      "A játékos nem állhat érvényes A.C.E.-eltiltás alatt, és az általa használt Steam-fiókon nem lehet az elmúlt 2 évben kiszabott játékkitiltás.",
+      "A játékos nem állhat érvényes A.C.E-eltiltás alatt, és az általa használt Steam-fiókon nem lehet az elmúlt 2 évben kiszabott játékkitiltás.",
       "A szervező munkatársai és a bírók nem játszhatnak olyan eseményen, amelyet ők felügyelnek.",
       "A régióra vagy értékelésre vonatkozó korlátokat eseményenként határozzák meg, és a regisztráció megnyitása előtt közzéteszik. A korlátokon kívül eső játékos nem játszhat, cserejátékosként sem."
     ],
     [
-      "Minden játékos egyetlen A.C.E.-fiókot használ, amely Steam-bejelentkezéssel egyetlen Steam-fiókhoz kapcsolódik. Az A.C.E. soha nem kéri a Steam-jelszót; aki kéri, az nem a szervező.",
+      "Minden játékos egyetlen A.C.E-fiókot használ, amely Steam-bejelentkezéssel egyetlen Steam-fiókhoz kapcsolódik. Az A.C.E soha nem kéri a Steam-jelszót; aki kéri, az nem a szervező.",
       "Tilos a fiók megosztása, más fiókjával játszani, vagy megengedni másnak, hogy a saját fiókkal játsszon. Mindkét fiók büntetést kap.",
       "Új fiók létrehozása büntetés, értékelés vagy korlátozás elkerülése céljából eltiltás megkerülésének minősül, és a verseny tisztaságát sértő szabálysértésként kezelendő (14. szakasz).",
       "A megjelenített neveknek és avatároknak meg kell felelniük a magatartási szabályoknak (13. szakasz). A bírók a mérkőzés előtt módosítást kérhetnek.",
@@ -43,7 +43,7 @@ export const RB_HU: RulebookText = {
     ],
     [
       "Mindkét csapatnak 15 perccel a tervezett kezdés előtt a mérkőzés lobbijában kell lennie, minden játékos bejelentkezésével.",
-      "A mérkőzéseket az A.C.E. által biztosított szervereken játsszák. A csapatok bírói jóváhagyás nélkül nem helyezhetik át a mérkőzést másik szerverre.",
+      "A mérkőzéseket az A.C.E által biztosított szervereken játsszák. A csapatok bírói jóváhagyás nélkül nem helyezhetik át a mérkőzést másik szerverre.",
       "Késes kört csak ott játszanak, ahol ez a szabálykönyv előírja. Egyébként a kezdőoldalakat a vétó határozza meg.",
       "Az elkezdett pályát végig kell játszani. Újraindítás csak a 9. szakasz szerint megengedett.",
       "A mérkőzés végét követő 15 percen belül mindkét kapitány megerősíti az eredményt. A győztes feltölti a végső eredménytábla képernyőképét. A szerver a demókat legalább 14 napig megőrzi."
@@ -89,8 +89,8 @@ export const RB_HU: RulebookText = {
       "Tilos a ghosting (információszerzés nézőktől vagy közvetítésekből), a stream sniping, más fiókjával való játék és az eltiltás megkerülése.",
       "Tilos a bundázás, a szándékos vereség, valamint fogadás bármely olyan mérkőzésre, amelyen a saját csapatod szerepel, vagy amely a saját eseményedhez tartozik.",
       "Tilos olyan pálya- vagy játékhiba használata, amelyet a bíró tiltottnak nyilvánított, vagy amely egyértelműen sérti a játék rendeltetésszerű mechanikáját.",
-      "Ha az esemény megköveteli, a játékosoknak a teljes mérkőzés alatt futtatniuk kell az A.C.E. csalásellenes kliensét.",
-      "Az adminok demókat vagy képernyőfelvételeket kérhetnek felülvizsgálatra. Hardveradatokat csak akkor kérünk, ha az A.C.E. anti-cheat kliens már létezik, és az Adatvédelmi irányelvek leírják őket. Egy észszerű kérés alapos ok nélküli megtagadása figyelembe vehető a döntésnél.",
+      "Ha az esemény megköveteli, a játékosoknak a teljes mérkőzés alatt futtatniuk kell az A.C.E csalásellenes kliensét.",
+      "Az adminok demókat vagy képernyőfelvételeket kérhetnek felülvizsgálatra. Hardveradatokat csak akkor kérünk, ha az A.C.E anti-cheat kliens már létezik, és az Adatvédelmi irányelvek leírják őket. Egy észszerű kérés alapos ok nélküli megtagadása figyelembe vehető a döntésnél.",
       "Bárki bizalmasan jelezheti a szervezőnek a feltételezett szabálysértést. A bejelentés nélküli nyilvános vádaskodás magatartási szabálysértés."
     ],
     [
@@ -105,7 +105,7 @@ export const RB_HU: RulebookText = {
       "Az eltiltás a személyre és az általa irányított összes fiókra vonatkozik."
     ],
     [
-      "Az A.C.E. jogosult bármely általa szervezett mérkőzést közvetíteni. A csapatok nem utasíthatják el a közvetítést.",
+      "Az A.C.E jogosult bármely általa szervezett mérkőzést közvetíteni. A csapatok nem utasíthatják el a közvetítést.",
       "A játékosok saját mérkőzéseiket csak legalább 2 perces késleltetéssel és csak akkor közvetíthetik, ha az eseményoldal ezt megengedi. A hivatalos közvetítések a szervező által meghatározott késleltetést használják.",
       "A játékosok nem nézhetik saját mérkőzésük élő közvetítését a mérkőzés alatt.",
       "A közvetítésre ütemezett mérkőzések 24 órás előzetes értesítéssel legfeljebb 2 órával áthelyezhetők. A csapatoknak az új időpontban rendelkezésre kell állniuk, vagy bírói döntést kell kérniük.",

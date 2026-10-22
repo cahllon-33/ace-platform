@@ -5,10 +5,10 @@ export const account: TextBag["account"] = {
     "metaTitle": "Játékosstatisztika",
     "kicker": "JÁTÉKOSSTATISZTIKA",
     "title": "Játékosstatisztika",
-    "lede": "A rating alakulása a rögzített A.C.E. meccseidből, fejlövés-% és pontosság mérőkkel. Része az A.C.E Plusnak (4 $/hó) és az A.C.E Premiumnak (7 $/hó).",
+    "lede": "A rating alakulása a rögzített A.C.E meccseidből, fejlövés-% és pontosság mérőkkel. Része az A.C.E Plusnak (4 $/hó) és az A.C.E Premiumnak (7 $/hó).",
     "movementTitle": "Rating alakulása",
-    "movementNote": "Minden pont egy rögzített A.C.E. meccsből írt ratingváltozás.",
-    "noMatches": "Még nincs rögzített meccs, ezért a grafikon üres. Az első rögzített A.C.E. meccsed után feltöltődik.",
+    "movementNote": "Minden pont egy rögzített A.C.E meccsből írt ratingváltozás.",
+    "noMatches": "Még nincs rögzített meccs, ezért a grafikon üres. Az első rögzített A.C.E meccsed után feltöltődik.",
     "currentLabel": "Jelenlegi rating",
     "netLabel": "Nettó változás",
     "changesLabel": "Rögzített változások",
@@ -21,7 +21,7 @@ export const account: TextBag["account"] = {
     "lockedBody": "A tárolt csomagod Free. A Plus (4 $/hó) és a Premium (7 $/hó) is feloldja ezt az oldalt. Hamarosan: fizetés még nincs.",
     "signIn": "Jelentkezz be Steammel a statisztikáid megtekintéséhez.",
     "plansLink": "Csomagok megtekintése",
-    "rosterNote": "Minta keretprofil: ezeknek a játékosoknak nincs rögzített A.C.E. meccsük, ezért a statisztika nem mutat számokat.",
+    "rosterNote": "Minta keretprofil: ezeknek a játékosoknak nincs rögzített A.C.E meccsük, ezért a statisztika nem mutat számokat.",
     "dashTitle": "Statisztika és elemzés",
     "dashStats": "Játékosstatisztika megnyitása",
     "dashAnalysis": "Meccselemzés megnyitása (Premium)",
@@ -38,7 +38,7 @@ export const account: TextBag["account"] = {
     "stats": {
       "accountStatus": "Fiók állapota",
       "subscription": "Előfizetés",
-      "rank": "A.C.E. rang",
+      "rank": "A.C.E rang",
       "ratingPoints": "Értékelési pontok",
       "wins": "Győzelmek",
       "losses": "Vereségek",
@@ -71,7 +71,7 @@ export const account: TextBag["account"] = {
     "rankedButton": "Ranked meccs keresése",
     "roster": {
       "title": "5v5 keret",
-      "body": "Egy kapitány. Négy meghívó. A kapitányok más A.C.E.-fiókazonosítókat hívnak meg, amelyek csak ellenőrzött Steam-bejelentkezés után jönnek létre."
+      "body": "Egy kapitány. Négy meghívó. A kapitányok más A.C.E-fiókazonosítókat hívnak meg, amelyek csak ellenőrzött Steam-bejelentkezés után jönnek létre."
     },
     "pendingInvites": "Függő meghívók"
   },
@@ -86,7 +86,7 @@ export const account: TextBag["account"] = {
     },
     "invite": {
       "failed": "A meghívás sikertelen.",
-      "label": "Szabad játékos meghívása SteamID-vel vagy A.C.E.-fiókazonosítóval",
+      "label": "Szabad játékos meghívása SteamID-vel vagy A.C.E-fiókazonosítóval",
       "submitAria": "Csapatmeghívó küldése",
       "submit": "Meghívó küldése"
     }
@@ -94,8 +94,8 @@ export const account: TextBag["account"] = {
   "profile": {
     "meta": {
       "notFoundTitle": "Játékosprofil",
-      "title": "{name} · A.C.E. profil",
-      "description": "A.C.E. játékosdosszié. A Plus és Premium munkamenetek feloldják a telemetriai trendgrafikonokat."
+      "title": "{name} · A.C.E profil",
+      "description": "A.C.E játékosdosszié. A Plus és Premium munkamenetek feloldják a telemetriai trendgrafikonokat."
     },
     "kicker": "Játékos identitása",
     "bannerPlaceholder": "Profilbanner · hamarosan",
@@ -132,7 +132,7 @@ export const account: TextBag["account"] = {
     "back": "Vissza a klán keretéhez"
   },
   "networks": {
-    "note": "Az ide írt link ebben a böngészőben marad, és nem kerül mentésre. Az A.C.E. soha nem kéri a Steam-jelszavadat.",
+    "note": "Az ide írt link ebben a böngészőben marad, és nem kerül mentésre. Az A.C.E soha nem kéri a Steam-jelszavadat.",
     "labels": {
       "steam": "Steam-profil"
     },
@@ -150,9 +150,9 @@ export const account: TextBag["account"] = {
       "title": "Bejelentkezési hiba"
     },
     "title": "A Steam-bejelentkezés nem fejeződött be",
-    "notConfigured": "A Steam OpenID még nincs beállítva ezen a szerveren. Az A.C.E. soha nem kéri a Steam-jelszavadat.",
-    "unavailable": "A Steam nem válaszolt az ellenőrzési kérésre. Próbáld újra egy pillanat múlva. Az A.C.E. soha nem kéri a Steam-jelszavadat.",
-    "unverified": "Az OpenID visszahívást nem sikerült ellenőrizni a szerveren. Az A.C.E. soha nem kéri a Steam-jelszavadat.",
+    "notConfigured": "A Steam OpenID még nincs beállítva ezen a szerveren. Az A.C.E soha nem kéri a Steam-jelszavadat.",
+    "unavailable": "A Steam nem válaszolt az ellenőrzési kérésre. Próbáld újra egy pillanat múlva. Az A.C.E soha nem kéri a Steam-jelszavadat.",
+    "unverified": "Az OpenID visszahívást nem sikerült ellenőrizni a szerveren. Az A.C.E soha nem kéri a Steam-jelszavadat.",
     "returnHome": "Vissza a kezdőlapra"
   }
 };

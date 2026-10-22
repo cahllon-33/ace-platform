@@ -44,7 +44,7 @@ export const play: TextBag["play"] = {
           "Sólo, duo nebo trio",
           "Plánované rozpětí {points} bodů hodnocení",
           "Profil Steam už musí být uložen",
-          "Používá pravidlo hodnocení A.C.E. · vyhledávání již brzy"
+          "Používá pravidlo hodnocení A.C.E · vyhledávání již brzy"
         ]
       },
       "elite": {

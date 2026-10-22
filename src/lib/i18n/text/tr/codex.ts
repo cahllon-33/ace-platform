@@ -3,7 +3,7 @@ import type { TextBag } from "../types";
 export const codex: TextBag["codex"] = {
   "meta": {
     "title": "Kalibrasyon Kodeksi",
-    "description": "A.C.E. rütbeleri açıklandı. Her soru, Derece Puanları ve o rütbenin kuralları hakkında tam bir yanıt açar. Kodeks maç sonucu işlemez.",
+    "description": "A.C.E rütbeleri açıklandı. Her soru, Derece Puanları ve o rütbenin kuralları hakkında tam bir yanıt açar. Kodeks maç sonucu işlemez.",
     "articleTitle": "{title} — Kalibrasyon Kodeksi"
   },
   "groups": {
@@ -31,7 +31,7 @@ export const codex: TextBag["codex"] = {
     "searchLabel": "Kodekste ara",
     "searchPlaceholder": "1950, Recruit veya beraberlik deneyin",
     "empty": "Bu aramayla eşleşen kayıt yok.",
-    "columnLabel": "A.C.E. sütunu {n}",
+    "columnLabel": "A.C.E sütunu {n}",
     "pagerLabel": "Kodeks sayfaları",
     "first": "İlk",
     "previous": "Önceki",
@@ -40,7 +40,7 @@ export const codex: TextBag["codex"] = {
     "pageOf": "Sayfa {n} / {m}"
   },
   "article": {
-    "breadcrumb": "A.C.E. · Kalibrasyon Kodeksi",
+    "breadcrumb": "A.C.E · Kalibrasyon Kodeksi",
     "status": "Bu sayfa yazılı sıralamayı açıklar. Maç sonucu işlemez ve kayıtlı dereceyi değiştirmez.",
     "emblemAlt": "{name} amblemi, rütbe {level}",
     "emblemCaption": "Rütbe {level} · {name} · {crystal}",
@@ -63,7 +63,7 @@ export const codex: TextBag["codex"] = {
     "turnLabel": "Kodeksi okumaya devam et",
     "previous": "Önceki",
     "next": "Sonraki",
-    "alsoIn": "A.C.E.'de ayrıca",
+    "alsoIn": "A.C.E'de ayrıca",
     "backToBoard": "Rütbe panosuna dön"
   },
   "rankArticle": {
@@ -124,20 +124,20 @@ export const codex: TextBag["codex"] = {
       "detail": "Aralık 1.800'den 1.949'a kadardır. Bu 100 değil, 150 puandır. 1.949 hâlâ Sovereign'dır. Legend 1.950'de açılır."
     },
     "rank-10-a-c-e-legend": {
-      "stance": "A.C.E. Legend son işarettir. Kristal adı ACE ELITE, resmi adı A.C.E. Legend'dır.",
+      "stance": "A.C.E Legend son işarettir. Kristal adı ACE ELITE, resmi adı A.C.E Legend'dır.",
       "detail": "Aralık 1.950'de açılır ve motorun tavanı olan 3.000'de biter. On birinci rütbe yoktur. Kayıtlı derece 3.000'i aşamaz."
     }
   },
   "articles": {
     "what-a-rank-is": {
-      "title": "A.C.E. rütbesi nedir",
-      "lede": "Rütbe, kayıtlı Derece Puanlarınızı içeren işarettir. On işaret, Recruit'ten A.C.E. Legend'a kadar tüm sıralamayı kapsar.",
+      "title": "A.C.E rütbesi nedir",
+      "lede": "Rütbe, kayıtlı Derece Puanlarınızı içeren işarettir. On işaret, Recruit'ten A.C.E Legend'a kadar tüm sıralamayı kapsar.",
       "sections": [
         {
           "heading": "Tek sayı, tek işaret",
           "paragraphs": [
             "Hesap bir rekabet derecesi saklar. Sıralama bu sayıyı okur ve sayının tabanına ulaştığı en yüksek rütbeyi döndürür. Aynı anda iki rütbeniz olamaz.",
-            "Recruit 1. rütbedir. A.C.E. Legend 10. rütbedir. Resmi ad, sıralamadaki addır. Amblemdeki daha kısa kelime aynı rütbenin kristal adıdır.",
+            "Recruit 1. rütbedir. A.C.E Legend 10. rütbedir. Resmi ad, sıralamadaki addır. Amblemdeki daha kısa kelime aynı rütbenin kristal adıdır.",
             "Bu kodeks yazılı sıralamayı açıklar. Maç sonucu işlemez ve kayıtlı dereceyi değiştirmez."
           ]
         },
@@ -145,7 +145,7 @@ export const codex: TextBag["codex"] = {
           "heading": "Tabanlar nasıl dizilir",
           "paragraphs": [
             "Recruit sıralamanın başlangıcını kapsar. Operative 1.100'de açılır. Vanguard'dan Grandmaster'a kadar her yeni taban 100 puan daha yüksektir: 1.200, 1.300, 1.400, 1.500, 1.600, ardından 1.700.",
-            "Sovereign 1.800'de açılır ve hesabı 1.949'a kadar tutar. A.C.E. Legend 1.950'de açılır. Motor tavanı 3.000'dir, bu yüzden Legend en uzun aralıktır."
+            "Sovereign 1.800'de açılır ve hesabı 1.949'a kadar tutar. A.C.E Legend 1.950'de açılır. Motor tavanı 3.000'dir, bu yüzden Legend en uzun aralıktır."
           ]
         },
         {
@@ -164,14 +164,14 @@ export const codex: TextBag["codex"] = {
         {
           "heading": "Neden ikisi de var",
           "paragraphs": [
-            "Motor ve profil resmi adı kullanır: Recruit, Operative, Vanguard, Specialist, Veteran, Elite, Master, Grandmaster, Sovereign, A.C.E. Legend.",
+            "Motor ve profil resmi adı kullanır: Recruit, Operative, Vanguard, Specialist, Veteran, Elite, Master, Grandmaster, Sovereign, A.C.E Legend.",
             "Amblem ayrıca bir kristal adı taşır: IRON, BRONZE, SILVER, GOLD, PLATINUM, DIAMOND, MASTER, GRANDMASTER, IMMORTAL, ACE ELITE. Bu ad çizimdir. On birinci bir rütbe yaratmaz ve ikinci bir sayı saklamaz."
           ]
         },
         {
           "heading": "Nerede ayrışırlar",
           "paragraphs": [
-            "Specialist'in kristal adı GOLD'dur. Veteran'ınki PLATINUM, Elite'inki DIAMOND, Sovereign'ınki IMMORTAL, A.C.E. Legend'ınki ACE ELITE'tir. Her durumda taban yine resmi ada aittir.",
+            "Specialist'in kristal adı GOLD'dur. Veteran'ınki PLATINUM, Elite'inki DIAMOND, Sovereign'ınki IMMORTAL, A.C.E Legend'ınki ACE ELITE'tir. Her durumda taban yine resmi ada aittir.",
             "Master ve Grandmaster her iki yerde de aynı kelimeyi kullanır."
           ]
         }
@@ -287,7 +287,7 @@ export const codex: TextBag["codex"] = {
           "heading": "Duraklar",
           "paragraphs": [
             "100 Derece Puanı'nda alınan mağlubiyet 100'de kalır. 3.000'de alınan galibiyet 3.000'de kalır. Recruit'in sıralama tabanı 0 olarak yazılıdır, ancak kayıtlı sayı 100'ün altındaki boşluğu asla kullanmaz.",
-            "1.949 Sovereign'dır. 1.950 A.C.E. Legend'dır. Arada bir işaret yoktur."
+            "1.949 Sovereign'dır. 1.950 A.C.E Legend'dır. Arada bir işaret yoktur."
           ]
         },
         {
@@ -334,7 +334,7 @@ export const codex: TextBag["codex"] = {
           "heading": "Masanın yapmadıkları",
           "paragraphs": [
             "MAÇ BUL rakip aramaz. Derece Puanlarını değiştirmez. Hesaptaki rütbe hâlâ bu kodeksteki sıralamanın okuduğu kayıtlı sayıdır.",
-            "Legend'ın üstünde ayrı bir üst sıra yoktur. A.C.E. Legend son işarettir ve 1.950 Derece Puanı'nda açılır."
+            "Legend'ın üstünde ayrı bir üst sıra yoktur. A.C.E Legend son işarettir ve 1.950 Derece Puanı'nda açılır."
           ]
         }
       ]
@@ -440,12 +440,12 @@ export const codex: TextBag["codex"] = {
     },
     "how-a-roster-is-assembled": {
       "title": "Kadro nasıl kurulur",
-      "lede": "Kaptan, zaten A.C.E. hesabı olan bir oyuncuyu davet eder. Herkese açık paylaşım bağlantısı yoktur ve asla Steam şifresi istenmez.",
+      "lede": "Kaptan, zaten A.C.E hesabı olan bir oyuncuyu davet eder. Herkese açık paylaşım bağlantısı yoktur ve asla Steam şifresi istenmez.",
       "sections": [
         {
           "heading": "Var olan davet",
           "paragraphs": [
-            "Takımlar sayfasında oturum açmış bir kaptan bir SteamID64 veya A.C.E. hesap kimliği yapıştırır. Hesap zaten Steam OpenID ile bağlanmış olmalıdır. Veritabanı kabul ettiğinde sunucu bekleyen bir davet yazar.",
+            "Takımlar sayfasında oturum açmış bir kaptan bir SteamID64 veya A.C.E hesap kimliği yapıştırır. Hesap zaten Steam OpenID ile bağlanmış olmalıdır. Veritabanı kabul ettiğinde sunucu bekleyen bir davet yazar.",
             "Kadro kaptan dahil beş oyuncudan oluşur. Kaptan kendi hesabını davet edemez. Zaten kadroda olan oyuncu reddedilir. Veritabanı çalışmıyorsa davet başarısız olur ve davet kaydedilmez."
           ]
         },

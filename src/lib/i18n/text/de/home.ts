@@ -13,7 +13,7 @@ export const home: TextBag["home"] = {
   "ops": {
     "identityKicker": "IDENTITÄTS-HUB",
     "signedOutTitle": "Mit Steam anmelden",
-    "signedOutBody": "Verbinde dich über das offizielle Steam OpenID, um hier deinen Steam-Avatar, dein Rangemblem und deine Rating Points zu sehen. A.C.E. fragt nie nach einem Steam-Passwort.",
+    "signedOutBody": "Verbinde dich über das offizielle Steam OpenID, um hier deinen Steam-Avatar, dein Rangemblem und deine Rating Points zu sehen. A.C.E fragt nie nach einem Steam-Passwort.",
     "connect": "Mit Steam anmelden",
     "openDeck": "Command Deck öffnen",
     "avatarAlt": "Steam-Avatar von {name}",
@@ -25,7 +25,7 @@ export const home: TextBag["home"] = {
     "matches": "Matches",
     "kd": "K/D",
     "na": "k. A.",
-    "kdNote": "K/D zeigt k. A., weil A.C.E. noch keine Kills und Tode erfasst.",
+    "kdNote": "K/D zeigt k. A., weil A.C.E noch keine Kills und Tode erfasst.",
     "shieldKicker": "A.C.E SHIELD",
     "shieldChip": "IN ENTWICKLUNG",
     "shieldTitle": "Integritätsstatus",
@@ -43,22 +43,22 @@ export const home: TextBag["home"] = {
     "seasonBody": "Saison 1 hat noch kein Start- oder Enddatum, daher gibt es keinen Countdown. Die Termine werden vor Saisonstart auf dieser Website veröffentlicht.",
     "statsKicker": "DEINE STATISTIKEN",
     "statsSignedOut": "Melde dich mit Steam an, um deine Statistiken zu sehen.",
-    "statsEmpty": "Noch keine erfassten Matches. Siege und Niederlagen erscheinen nach deinem ersten erfassten A.C.E.-Match.",
-    "statsLive": "Siege und Niederlagen stammen aus deinem gespeicherten A.C.E.-Konto.",
+    "statsEmpty": "Noch keine erfassten Matches. Siege und Niederlagen erscheinen nach deinem ersten erfassten A.C.E-Match.",
+    "statsLive": "Siege und Niederlagen stammen aus deinem gespeicherten A.C.E-Konto.",
     "statsLink": "Spielerstatistiken öffnen"
   },
   "meta": {
-    "title": "A.C.E. — Wettkampfplattform für CS2",
-    "description": "A.C.E. ist eine geplante Wettkampfplattform für Counter-Strike 2 mit Spieleridentität, Kalibrierung, Mannschaften und Turnieren. Diese öffentliche Website ist eine Vorschau. Rangliste-Spielersuche, Anti-Cheat, Zahlungen und Preise sind nicht aktiv."
+    "title": "A.C.E — Wettkampfplattform für CS2",
+    "description": "A.C.E ist eine geplante Wettkampfplattform für Counter-Strike 2 mit Spieleridentität, Kalibrierung, Mannschaften und Turnieren. Diese öffentliche Website ist eine Vorschau. Rangliste-Spielersuche, Anti-Cheat, Zahlungen und Preise sind nicht aktiv."
   },
   "opening": {
-    "dialogLabel": "A.C.E.-Eröffnung",
+    "dialogLabel": "A.C.E-Eröffnung",
     "line": "A.C.E: Autonomes Anti-Cheat, kompetitive Kalibrierung, Elite-Spieler",
     "enter": "Website betreten"
   },
   "hero": {
     "logoAlt": "A.C.E. Autonomes Anti-Cheat, kompetitive Kalibrierung, Elite-Spieler",
-    "arenaAlt": "A.C.E.-Arenatafel. Eigenes Bühnenbild, keine Grafik von Valve. Der Bildschirm ist als Spielübertragung beschriftet. Die Liveübertragung ist aus."
+    "arenaAlt": "A.C.E-Arenatafel. Eigenes Bühnenbild, keine Grafik von Valve. Der Bildschirm ist als Spielübertragung beschriftet. Die Liveübertragung ist aus."
   },
   "broadcast": {
     "kicker": "TURNIERBLICK",
@@ -77,7 +77,7 @@ export const home: TextBag["home"] = {
   },
   "charter": {
     "kicker": "HAUPTARBEITSBEREICH DES WARTERAUMS",
-    "title": "A.C.E.-WARTERAUM FÜR WETTKAMPF-SPIELERSUCHE UND EINSATZZENTRALE",
+    "title": "A.C.E-WARTERAUM FÜR WETTKAMPF-SPIELERSUCHE UND EINSATZZENTRALE",
     "badge": "SERVER · DEMNÄCHST",
     "lede": "Dieser Warteraum weist keinen Server zu, startet keinen Anti-Cheat-Client und zahlt keinen Preis aus.",
     "modules": [
@@ -91,7 +91,7 @@ export const home: TextBag["home"] = {
       },
       {
         "kicker": "FESTE DREIDIMENSIONALE RÄNGE",
-        "copy": "Zehn Stufen von Recruit bis A.C.E. Legend. Eine gespeicherte Wertung erscheint nach der Steam-Anmeldung. Diese Seite wendet kein Spiel an.",
+        "copy": "Zehn Stufen von Recruit bis A.C.E Legend. Eine gespeicherte Wertung erscheint nach der Steam-Anmeldung. Diese Seite wendet kein Spiel an.",
         "chips": [
           "WERTUNGSREGEL HINTERLEGT",
           "DREHTELLER AUF DIESER SEITE"
@@ -134,13 +134,13 @@ export const home: TextBag["home"] = {
     "lines": [
       "A.C.E SHIELD: IN ENTWICKLUNG",
       "MATRIX DER HARDWARE-SPERREN: ES WIRD KEINE KENNUNG ERFASST",
-      "A.C.E.-SCHILD-VERBINDUNG: ES IST KEIN CLIENT INSTALLIERT"
+      "A.C.E-SCHILD-VERBINDUNG: ES IST KEIN CLIENT INSTALLIERT"
     ],
     "note": "Diese Website führt keinen Kern-Client aus, durchsucht keinen Speicher und verhängt keine Hardware-Sperre."
   },
   "comingSoon": {
     "badge": "NICHT VERFÜGBAR",
-    "body": "Der A.C.E.-Desktop-Client wird nicht zum Herunterladen angeboten. Saison 1 auf dieser Website installiert keine Software und öffnet keine Anmeldung."
+    "body": "Der A.C.E-Desktop-Client wird nicht zum Herunterladen angeboten. Saison 1 auf dieser Website installiert keine Software und öffnet keine Anmeldung."
   },
   "operative": {
     "kicker": "Filmisches taktisches Sichtfenster · eigene CSS-Umgebung · keine Grafik von Valve",
@@ -149,7 +149,7 @@ export const home: TextBag["home"] = {
     "note": "Kampagnentext. Rangliste-Warteschlangen, laufende Server und Preise sind nicht aktiv."
   },
   "howStatus": {
-    "label": "A.C.E.-REGISTRIERUNGSSYSTEM — KALIBRIERUNGSMASCHINE BEREIT",
+    "label": "A.C.E-REGISTRIERUNGSSYSTEM — KALIBRIERUNGSMASCHINE BEREIT",
     "note": "Ranglisten-Warteschlangen öffnen, sobald A.C.E Shield und Kalibrierung live sind."
   },
   "shell": {
@@ -161,13 +161,13 @@ export const home: TextBag["home"] = {
     "connectProfileTitle": "Profil verbinden",
     "openProfileAria": "Profil im Befehlsstand öffnen",
     "connectProfileAria": "Profil über Steam OpenID verbinden",
-    "signOutAria": "Von A.C.E. abmelden"
+    "signOutAria": "Von A.C.E abmelden"
   },
   "notFound": {
     "kicker": "RASTERFEHLER",
     "title": "FEHLER 404 — RADAR-TELEMETRIE VERLOREN",
     "body": "Die angeforderte Koordinate existiert nicht in unserem aktiven Serverraster.",
-    "homeAria": "Zurück zum Warteraum der A.C.E.-Startseite",
+    "homeAria": "Zurück zum Warteraum der A.C.E-Startseite",
     "cta": "ZURÜCK ZUM WARTERAUM"
   },
   "error": {

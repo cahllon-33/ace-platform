@@ -3,7 +3,7 @@ import type { MessageBag } from "./en";
 export const FI: MessageBag = {
  slogan: "PELAA. KILPAILE. OLE ELIITTIÄ.",
  kicker: "CS2-ELIITIN KILPAILUALUSTA",
- lede: "A.C.E. on Counter-Strike 2 -kilpailusivusto. Kirjautuminen käyttää Steam OpenID -tunnistusta. Huijauksenesto, ottelupalvelimet ja palkintojen maksut eivät ole täällä käynnissä.",
+ lede: "A.C.E on Counter-Strike 2 -kilpailusivusto. Kirjautuminen käyttää Steam OpenID -tunnistusta. Huijauksenesto, ottelupalvelimet ja palkintojen maksut eivät ole täällä käynnissä.",
  playNow: "PELAA NYT",
  signInSteam: "Kirjaudu Steamin kautta",
  connectProfile: "Yhdistä profiili",
@@ -15,13 +15,13 @@ export const FI: MessageBag = {
  registeredTeams: "Rekisteröityneet joukkueet: 0/100",
  registered: "Rekisteröity",
  teams: "Joukkueet",
- ranksTitle: "A.C.E.-arvot",
+ ranksTitle: "A.C.E-arvot",
  championshipLoot: "Mestaruuden saalisjärjestelmä",
  calibrationStatus: "Arvokalibroinnin tila",
  navTournaments: "TURNAUKSET",
  brandSubline: "AUTONOMINEN HUIJAUKSENESTO • KILPAILULLINEN KALIBROINTI • ELIITTIPELAJAT",
  languagesKicker: "Kielet",
- step1: "Luo tili virallisella Steam OpenID -tunnistuksella. A.C.E. ei koskaan pyydä Steam-salasanaa.",
+ step1: "Luo tili virallisella Steam OpenID -tunnistuksella. A.C.E ei koskaan pyydä Steam-salasanaa.",
  step2: "Henkilöllisyyden vahvistus tulee A.C.E Shieldin mukana.",
  step3: "Kokoa 5v5-joukkue Command Deck -näkymässä vahvistetun istunnon jälkeen.",
  step4: "Etsi kelvollisia kilpailuja. Sijoitusotteluiden ETSI OTTELU pysyy suljettuna.",
@@ -31,7 +31,7 @@ export const FI: MessageBag = {
  kd: "K/D",
  statsEmpty:
   "Tilastosi näkyvät täällä ensimmäisten tallennettujen otteluiden jälkeen.",
- statsLive: "Voitot ja tappiot tulevat A.C.E.-tililtä. K/D:tä ei vielä tallenneta.",
+ statsLive: "Voitot ja tappiot tulevat A.C.E-tililtä. K/D:tä ei vielä tallenneta.",
  membership: "JÄSENYYS",
  membershipLede:
   "Ilmainen $0. Plus $4/kk. Premium $7/kk. Maksulliset tasot eivät koskaan osta luokitusta, helpompia vastustajia tai jonoetuoikeutta. Maksaminen avautuu pian.",
@@ -86,13 +86,13 @@ export const FI: MessageBag = {
  cookiePolicy: "Evästekäytäntö",
  support: "Tuki",
  contact: "Yhteys",
- supportKicker: "A.C.E. TUKI · OHJEKESKUS",
+ supportKicker: "A.C.E TUKI · OHJEKESKUS",
  supportTitle: "Teknisen tuen keskus",
  supportLede:
   "Tietokeskus asennukseen, kalibrointiin ja jäsenyyteen. Huijauksenesto, rankatut jonot ja maksaminen ovat tulossa pian.",
  supportCat1Title: "Ytimen huijaukseneston asennus",
  supportCat1Body:
-  "Ajurien asennuskehotteet, laitteiston vaatimustenmukaisuus ja Secure Boot -telemetrian säädöt on dokumentoitu täällä tulevana ydinpolitiikkana. A.C.E. ei toimita toimivaa huijauksenestoasiakasohjelmaa, ei asenna ajureita eikä kerää Secure Boot- tai HWID-tietoja tällä sivustolla.",
+  "Ajurien asennuskehotteet, laitteiston vaatimustenmukaisuus ja Secure Boot -telemetrian säädöt on dokumentoitu täällä tulevana ydinpolitiikkana. A.C.E ei toimita toimivaa huijauksenestoasiakasohjelmaa, ei asenna ajureita eikä kerää Secure Boot- tai HWID-tietoja tällä sivustolla.",
  supportCat2Title: "Ottelunhaku ja kalibrointi",
  supportCat2Body:
   "Kymmenen sijoittamisottelua, divisioonan laskentanopeus ja kauden arvosanan uudelleenkalibrointi ovat suunniteltu kalibrointikertomus. Sijoitusotteluiden ETSI OTTELU pysyy varmuuden vuoksi suljettuna, kunnes varmennettu huijauksenestopolku on olemassa. Tämän sivun luvut eivät ole live-ottelutuloksia.",
@@ -105,7 +105,7 @@ export const FI: MessageBag = {
   "Tikettituki avautuu kilpailubetan myötä. Ota toistaiseksi yhteyttä yhteystietosivun kautta.",
  supportDisclosure:
   "Huijauksenestoon, otteluiden muodostukseen ja maksuihin liittyvä livetuki avautuu kilpailubetan myötä.",
- contactKicker: "A.C.E. YHTEYS · YRITYSPÄÄTE",
+ contactKicker: "A.C.E YHTEYS · YRITYSPÄÄTE",
  contactTitle: "Yrityksen yhteyspääte",
  contactLede:
   "Sponsorointi-, media-, tekniset ja yleiset tiedustelut. Tähän syötetyt viestit eivät välity eikä niitä tallenneta telemetriana.",
@@ -119,20 +119,20 @@ export const FI: MessageBag = {
  contactInquiryTechnical: "Tekninen",
  contactInquiryGeneral: "Yleinen",
  contactConsent:
-  "Annan nimenomaisen suostumukseni tietojen minimoinnin tallennusparametreihin A.C.E.:n tietosuojakäytännön nojalla.",
+  "Annan nimenomaisen suostumukseni tietojen minimoinnin tallennusparametreihin A.C.E:n tietosuojakäytännön nojalla.",
  contactSend: "LÄHETÄ SUOJATTU TELEMETRIAVIESTI",
  contactCorporate:
-  "A.C.E. | Suojattu sähköpostiyhdyskäytävä: support@ace-platform.gg",
+  "A.C.E | Suojattu sähköpostiyhdyskäytävä: support@ace-platform.gg",
  contactModalTitle: "Verkkoyhteydenottolomake · tulossa pian",
  contactModalBody:
-  "Tämän lomakkeen viestejä ei vielä välitetä. Lomake avautuu yhdessä tukipalvelumme kanssa. A.C.E. ei koskaan pyydä Steam-salasanaasi.",
+  "Tämän lomakkeen viestejä ei vielä välitetä. Lomake avautuu yhdessä tukipalvelumme kanssa. A.C.E ei koskaan pyydä Steam-salasanaasi.",
  contactDisclosure:
-  "Verkkoyhteydenottolomake avautuu pian. A.C.E. ei koskaan pyydä Steam-salasanaasi.",
+  "Verkkoyhteydenottolomake avautuu pian. A.C.E ei koskaan pyydä Steam-salasanaasi.",
  closeOverlay: "Sulje",
  loadingAce: "Ladataan A.C.E...",
  supportCategory: "KATEGORIA {n}",
- shopKicker: "A.C.E.-KAUPPA · TULOSSA PIAN",
- shopTitle: "A.C.E. MARKKINAPAIKKA — ELIITIN ASEIDEN MUOKKAUS",
+ shopKicker: "A.C.E-KAUPPA · TULOSSA PIAN",
+ shopTitle: "A.C.E MARKKINAPAIKKA — ELIITIN ASEIDEN MUOKKAUS",
  shopLede:
   "Esikatsele asekortteja, profiilikehyksiä ja liigapääsyn tunnisteita. Mikään näistä ei ole toimitettu esine.",
  shopNote:
@@ -166,8 +166,8 @@ export const FI: MessageBag = {
   "Voittoprosentti ja putket täyttyvät tallennetuista otteluista.",
  squadInviteLabel: "KUTSU VAPAA AGENTTI SteamID-TUNNUKSELLA",
  squadInviteNote:
-  "Vain virallinen Steam OpenID. Liitä SteamID, joka on jo liitetty A.C.E.-tiliin. Älä koskaan syötä Steam-salasanaa.",
- squadInvitePlaceholder: "SteamID64 tai A.C.E.-tilin tunnus",
+  "Vain virallinen Steam OpenID. Liitä SteamID, joka on jo liitetty A.C.E-tiliin. Älä koskaan syötä Steam-salasanaa.",
+ squadInvitePlaceholder: "SteamID64 tai A.C.E-tilin tunnus",
  squadSend: "LÄHETÄ SUOJATTU KUTSU >",
  squadCaptainOnly: "Vain nimetty kapteeni saa lähettää kutsuja.",
  squadInviteFailed: "Kutsu epäonnistui.",
@@ -184,10 +184,10 @@ export const FI: MessageBag = {
  tourneyLoading: "Ladataan kaavion asettelua…",
  platformNoticeTitle: "ALUSTAN ILMOITUS",
  platformNoticeBody:
-  "Tämän sivuston turnaustaulut, sijoitustaulut ja skinkortit ovat esimerkkejä. Ne eivät ole Valve-esineitä eivätkä maksettuja palkintoja. Tämä sivusto ei aja huijauksenesto-ohjelmaa. Sivuston avaaminen ei kumoa laillista oikeutta eikä tee sopimusta. A.C.E. ei kerää laitteistotunnistetta eikä poista tiliä sen vuoksi, että joku ottaa yhteyttä asianajajaan tai tuomioistuimeen.",
+  "Tämän sivuston turnaustaulut, sijoitustaulut ja skinkortit ovat esimerkkejä. Ne eivät ole Valve-esineitä eivätkä maksettuja palkintoja. Tämä sivusto ei aja huijauksenesto-ohjelmaa. Sivuston avaaminen ei kumoa laillista oikeutta eikä tee sopimusta. A.C.E ei kerää laitteistotunnistetta eikä poista tiliä sen vuoksi, että joku ottaa yhteyttä asianajajaan tai tuomioistuimeen.",
  copyrightLine: "© 2026 A.C.E. Ei sidoksissa Valveen.",
  copyrightClaim:
-  "Tämän sivuston alkuperäinen teksti, asettelu, tunnukset ja grafiikka kuuluvat A.C.E:lle. Niiden kopioiminen ilman kirjallista lupaa ei ole sallittua. A.C.E. voi valvoa tätä oikeutta. Counter-Strike 2 ja sen karttanimet kuuluvat Valvelle.",
+  "Tämän sivuston alkuperäinen teksti, asettelu, tunnukset ja grafiikka kuuluvat A.C.E:lle. Niiden kopioiminen ilman kirjallista lupaa ei ole sallittua. A.C.E voi valvoa tätä oikeutta. Counter-Strike 2 ja sen karttanimet kuuluvat Valvelle.",
  shieldServerValue: "Tulossa pian",
  tvGames: "Pelitelevisio",
  pathsKicker: "VIISI POLKUA TÄLLÄ SIVUSTOLLA",
@@ -196,7 +196,7 @@ export const FI: MessageBag = {
  statusWrittenRule: "KIRJALLINEN SÄÄNTÖ",
  statusTeamLayout: "100 JOUKKUEEN KENTTÄ",
  statusPublicSite: "JULKINEN SIVUSTO",
- rankProtocolTitle: "A.C.E. ARVOSANAPROTOKOLLA",
+ rankProtocolTitle: "A.C.E ARVOSANAPROTOKOLLA",
  rankProtocolBody:
   "Kirjattu sääntö vertaa pelaajaa toisen joukkueen keskimääräiseen luokitukseen. Tasaväkistä joukkuetta vastaan tallennettu voitto on +20 RP ja tappio −20 RP, aina 10–30 RP:n sisällä ottelua kohden, ja 10 tasoa ja 3 divisioonaa luetaan tästä luvusta. Tämä sivu ei vahvista ottelua, joten luokitusmuutosta ei sovelleta tässä.",
  rankProgress: "Arvon eteneminen",

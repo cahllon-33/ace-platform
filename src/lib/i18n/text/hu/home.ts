@@ -6,14 +6,14 @@ export const home: TextBag["home"] = {
     "online": "Most online",
     "registered": "Regisztrált játékosok",
     "earlyTitle": "Korai hozzáférés",
-    "earlyBody": "Csatlakozz az A.C.E. első játékosaihoz. Az élő számok itt jelennek meg, amint a közösség nő.",
+    "earlyBody": "Csatlakozz az A.C.E első játékosaihoz. Az élő számok itt jelennek meg, amint a közösség nő.",
     "unavailable": "Az élő számok jelenleg nem érhetők el.",
     "note": "Valós számok, 30 másodpercenként frissítve."
   },
   "ops": {
     "identityKicker": "IDENTITÁSKÖZPONT",
     "signedOutTitle": "Bejelentkezés Steammel",
-    "signedOutBody": "Csatlakozz a hivatalos Steam OpenID-val, hogy itt lásd a Steam-avatarodat, a rangemblémádat és a Rating Pointsodat. Az A.C.E. soha nem kér Steam-jelszót.",
+    "signedOutBody": "Csatlakozz a hivatalos Steam OpenID-val, hogy itt lásd a Steam-avatarodat, a rangemblémádat és a Rating Pointsodat. Az A.C.E soha nem kér Steam-jelszót.",
     "connect": "Bejelentkezés Steammel",
     "openDeck": "Command Deck megnyitása",
     "avatarAlt": "{name} Steam-avatarja",
@@ -25,7 +25,7 @@ export const home: TextBag["home"] = {
     "matches": "Meccsek",
     "kd": "K/D",
     "na": "n/a",
-    "kdNote": "A K/D n/a, mert az A.C.E. még nem rögzíti az öléseket és halálokat.",
+    "kdNote": "A K/D n/a, mert az A.C.E még nem rögzíti az öléseket és halálokat.",
     "shieldKicker": "A.C.E SHIELD",
     "shieldChip": "FEJLESZTÉS ALATT",
     "shieldTitle": "Integritás állapota",
@@ -43,22 +43,22 @@ export const home: TextBag["home"] = {
     "seasonBody": "Az 1. szezonnak még nincs kezdő- és záródátuma, ezért nincs visszaszámlálás. A dátumokat a szezon kezdete előtt ezen az oldalon tesszük közzé.",
     "statsKicker": "STATISZTIKÁID",
     "statsSignedOut": "Jelentkezz be Steammel a statisztikáidhoz.",
-    "statsEmpty": "Még nincs rögzített meccs. A győzelmek és vereségek az első rögzített A.C.E. meccsed után jelennek meg.",
-    "statsLive": "A győzelmek és vereségek a tárolt A.C.E. fiókodból származnak.",
+    "statsEmpty": "Még nincs rögzített meccs. A győzelmek és vereségek az első rögzített A.C.E meccsed után jelennek meg.",
+    "statsLive": "A győzelmek és vereségek a tárolt A.C.E fiókodból származnak.",
     "statsLink": "Játékosstatisztika megnyitása"
   },
   "meta": {
-    "title": "A.C.E. — Versenyszintű CS2 platform",
-    "description": "Az A.C.E. egy tervezett Counter-Strike 2 versenyplatform játékosidentitáshoz, kalibrációhoz, csapatokhoz és tornákhoz. Ez a nyilvános weboldal előnézet. A ranked párosítás, a csalásellenes rendszer, a fizetések és a díjak nem aktívak."
+    "title": "A.C.E — Versenyszintű CS2 platform",
+    "description": "Az A.C.E egy tervezett Counter-Strike 2 versenyplatform játékosidentitáshoz, kalibrációhoz, csapatokhoz és tornákhoz. Ez a nyilvános weboldal előnézet. A ranked párosítás, a csalásellenes rendszer, a fizetések és a díjak nem aktívak."
   },
   "opening": {
-    "dialogLabel": "A.C.E. nyitány",
+    "dialogLabel": "A.C.E nyitány",
     "line": "A.C.E: Autonóm csalásellenesség, versenykalibráció, elit játékosok",
     "enter": "Belépés az oldalra"
   },
   "hero": {
     "logoAlt": "A.C.E. Autonóm csalásellenesség, versenykalibráció, elit játékosok",
-    "arenaAlt": "A.C.E. aréna-tábla. Eredeti színpadkép, nem Valve-grafika. A képernyőn a játéktelevízió felirat áll. Az élő adás ki van kapcsolva."
+    "arenaAlt": "A.C.E aréna-tábla. Eredeti színpadkép, nem Valve-grafika. A képernyőn a játéktelevízió felirat áll. Az élő adás ki van kapcsolva."
   },
   "broadcast": {
     "kicker": "TORNAFIGYELŐ",
@@ -77,7 +77,7 @@ export const home: TextBag["home"] = {
   },
   "charter": {
     "kicker": "FŐ LOBBI MUNKATÉR",
-    "title": "A.C.E. VERSENYPÁROSÍTÁSI LOBBI ÉS DISZPÉCSERKÖZPONT",
+    "title": "A.C.E VERSENYPÁROSÍTÁSI LOBBI ÉS DISZPÉCSERKÖZPONT",
     "badge": "SZERVEREK · HAMAROSAN",
     "lede": "Ez a lobbi nem rendel szervert, nem indít csalásellenes klienst, és nem fizet díjat.",
     "modules": [
@@ -91,7 +91,7 @@ export const home: TextBag["home"] = {
       },
       {
         "kicker": "RÖGZÍTETT 3D RANGOK",
-        "copy": "Tíz szint a Recruittól az A.C.E. Legendig. A tárolt értékelés Steam-bejelentkezés után jelenik meg. Ez az oldal nem rögzít meccset.",
+        "copy": "Tíz szint a Recruittól az A.C.E Legendig. A tárolt értékelés Steam-bejelentkezés után jelenik meg. Ez az oldal nem rögzít meccset.",
         "chips": [
           "ÉRTÉKELÉSI SZABÁLY RÖGZÍTVE",
           "FORGÓASZTAL EZEN AZ OLDALON"
@@ -134,13 +134,13 @@ export const home: TextBag["home"] = {
     "lines": [
       "A.C.E SHIELD: FEJLESZTÉS ALATT",
       "HARDVERTILTÁSI MÁTRIX: NEM GYŰJTÜNK AZONOSÍTÓT",
-      "A.C.E. SHIELD KAPCSOLAT: NINCS TELEPÍTETT KLIENS"
+      "A.C.E SHIELD KAPCSOLAT: NINCS TELEPÍTETT KLIENS"
     ],
     "note": "Ez a weboldal nem futtat kernelklienst, nem vizsgálja a memóriát, és nem ad ki hardvertiltást."
   },
   "comingSoon": {
     "badge": "NEM ELÉRHETŐ",
-    "body": "Az A.C.E. asztali kliens nem tölthető le. Az 1. szezon ezen az oldalon nem telepít szoftvert és nem nyit bejelentkezést."
+    "body": "Az A.C.E asztali kliens nem tölthető le. Az 1. szezon ezen az oldalon nem telepít szoftvert és nem nyit bejelentkezést."
   },
   "operative": {
     "kicker": "Filmes taktikai nézet · eredeti CSS-környezet · nem Valve-grafika",
@@ -161,13 +161,13 @@ export const home: TextBag["home"] = {
     "connectProfileTitle": "Profil csatlakoztatása",
     "openProfileAria": "Command Deck profil megnyitása",
     "connectProfileAria": "Profil csatlakoztatása Steam OpenID-n keresztül",
-    "signOutAria": "Kijelentkezés az A.C.E.-ből"
+    "signOutAria": "Kijelentkezés az A.C.E-ből"
   },
   "notFound": {
     "kicker": "RÁCSKIVÉTEL",
     "title": "404-ES HIBA — RADARTELEMETRIA ELVESZETT",
     "body": "A kért koordináta nem létezik az aktív szerverrácsunkban.",
-    "homeAria": "Vissza az A.C.E. kezdőlap lobbijába",
+    "homeAria": "Vissza az A.C.E kezdőlap lobbijába",
     "cta": "VISSZA A LOBBIBA"
   },
   "error": {

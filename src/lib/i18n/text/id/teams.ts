@@ -2,7 +2,7 @@ import type { TextBag } from "../types";
 
 export const teams: TextBag["teams"] = {
   "meta": {
-    "title": "Manajemen Skuad A.C.E.",
+    "title": "Manajemen Skuad A.C.E",
     "description": "Ruang kerja skuad 5v5 Anda. Undangan memerlukan sesi Steam terverifikasi; pemeriksaan anti-cheat hadir bersama A.C.E Shield."
   },
   "hero": {
@@ -18,7 +18,7 @@ export const teams: TextBag["teams"] = {
     "yes": "Ya, lima pemain",
     "no": "Tidak, biarkan kursi terbuka",
     "seatsOpen": "Lima kursi tetap terbuka. Tidak ada yang disimpan.",
-    "connectSteam": "Hubungkan Steam dulu. Tombol kembali ke halaman ini. A.C.E. tidak pernah meminta kata sandi Steam.",
+    "connectSteam": "Hubungkan Steam dulu. Tombol kembali ke halaman ini. A.C.E tidak pernah meminta kata sandi Steam.",
     "alreadyMember": "{name} sudah tergabung di {team}. Klan kedua tidak dibuat dari formulir ini.",
     "thisAccount": "Akun ini",
     "acceptTerms": "Terima ketentuan sebelum menyimpan klan.",
@@ -26,7 +26,7 @@ export const teams: TextBag["teams"] = {
     "clanName": "Nama klan",
     "captainSeat": "Kursi 1, kapten: {name}",
     "signedInSteam": "Akun Steam yang masuk",
-    "seatLabel": "SteamID atau ID akun A.C.E. kursi {seat}",
+    "seatLabel": "SteamID atau ID akun A.C.E kursi {seat}",
     "submit": "Simpan klan lima pemain",
     "saved": "Nama klan disimpan dan empat undangan tertunda. Pemain tersebut tidak masuk roster sampai mereka menerima. Ini bukan kursi di papan 100 tim. Tidak ada yang ditagih."
   },
@@ -42,7 +42,7 @@ export const teams: TextBag["teams"] = {
       "email": "Tidak ada email yang dikirim. Tanda terima paket tetap di situs ini.",
       "charge": "Premium seharga $7 per bulan. Segera hadir: belum ada pembayaran, jadi tidak ada yang ditagih.",
       "board": "Klan tersimpan adalah catatan roster. Klan tidak ditempatkan di papan 100 tim. Papan itu masih menunjukkan 0 terdaftar sampai musim dibuka.",
-      "steam": "Masuk menggunakan Steam OpenID resmi. A.C.E. tidak pernah meminta kata sandi Steam. Dari halaman ini, Steam kembali ke sini.",
+      "steam": "Masuk menggunakan Steam OpenID resmi. A.C.E tidak pernah meminta kata sandi Steam. Dari halaman ini, Steam kembali ke sini.",
       "roster": "Kursi 1 adalah kapten yang masuk. Kursi 2 sampai 5 harus sudah memiliki akun A.C.E. Undangan tetap tertunda sampai setiap pemain menerima.",
       "badge": "Lencana kursi menjadi pemeriksaan A.C.E Shield langsung setelah anti-cheat diluncurkan.",
       "support": "Buka Dukungan atau Kontak di situs ini. Perintah dukungan tidak membuka tiket, dan teks yang diketik di Kontak tidak dikirim.",
@@ -63,11 +63,11 @@ export const teams: TextBag["teams"] = {
   },
   "tournaments": {
     "meta": {
-      "title": "Kejuaraan A.C.E. — Knockout Elite 100 Tim",
+      "title": "Kejuaraan A.C.E — Knockout Elite 100 Tim",
       "description": "Knockout 100 tim. Klik klan untuk membuka rosternya, lalu setiap profil pemain. Pendaftaran segera dibuka."
     },
     "intro": {
-      "title": "KEJUARAAN A.C.E. — KNOCKOUT ELITE 100 TIM",
+      "title": "KEJUARAAN A.C.E — KNOCKOUT ELITE 100 TIM",
       "lede": "Bidang yang dipublikasikan adalah knockout 100 tim. Grafik di bawah adalah tata letak itu. Mengklik klan membuka laci roster. Pendaftaran 0 dari 100. Tidak ada hadiah uang yang diiklankan atau didanai.",
       "formatValue": "Matriks Bagan 100 Tim",
       "briefTitle": "Ringkasan Operasi 100 Tim",
@@ -110,7 +110,7 @@ export const teams: TextBag["teams"] = {
       "count": "Klan {index} dari {total}",
       "next": "Klan berikutnya",
       "close": "Tutup profil",
-      "disclosure": "Setup dan inventaris pemain muncul di sini setelah pemain memilih untuk membagikannya. A.C.E. tidak mengumpulkan data perangkat keras."
+      "disclosure": "Setup dan inventaris pemain muncul di sini setelah pemain memilih untuk membagikannya. A.C.E tidak mengumpulkan data perangkat keras."
     },
     "player": {
       "level": "LVL {level} · RP {rating}",
@@ -140,14 +140,14 @@ export const teams: TextBag["teams"] = {
     "monitor": "Refresh rate · tidak dibagikan",
     "headset": "Tidak dibagikan"
   },
-  "profileDisclosure": "A.C.E. tidak menyimpan inventaris perangkat keras dan tidak menjalankan klien anti-cheat. Grafik tren performa dan matriks pertempuran memerlukan sesi A.C.E. Plus atau Premium. Tautan profil Steam yang diketik di halaman ini tidak disimpan dan bukan handle resmi.",
+  "profileDisclosure": "A.C.E tidak menyimpan inventaris perangkat keras dan tidak menjalankan klien anti-cheat. Grafik tren performa dan matriks pertempuran memerlukan sesi A.C.E Plus atau Premium. Tautan profil Steam yang diketik di halaman ini tidak disimpan dan bukan handle resmi.",
   "errors": {
     "signInRequired": "Harus masuk.",
     "nameLength": "Nama tim harus antara 2 dan 32 karakter.",
     "alreadyCaptain": "Akun ini sudah menjadi kapten tim.",
     "nameTaken": "Tim dengan nama itu sudah ada.",
-    "idRequired": "SteamID atau ID akun A.C.E. diperlukan.",
-    "noAccountForToken": "Tidak ada akun A.C.E. untuk SteamID atau ID akun itu.",
+    "idRequired": "SteamID atau ID akun A.C.E diperlukan.",
+    "noAccountForToken": "Tidak ada akun A.C.E untuk SteamID atau ID akun itu.",
     "clanNeedsFour": "Klan lima pemain memerlukan kapten yang masuk ditambah empat SteamID.",
     "seatNeedsId": "Masing-masing dari empat kursi memerlukan SteamID atau ID akun A.C.E.",
     "seatsDistinct": "Setiap kursi memerlukan pemain yang berbeda.",
@@ -157,7 +157,7 @@ export const teams: TextBag["teams"] = {
     "captainOnly": "Hanya kapten yang ditunjuk yang dapat mengirim undangan.",
     "rosterLimit": "Roster CS2 terdiri dari lima pemain termasuk kapten.",
     "alreadyOnRoster": "Pemain itu sudah ada di roster.",
-    "noAccountForId": "Tidak ada akun A.C.E. untuk ID itu.",
+    "noAccountForId": "Tidak ada akun A.C.E untuk ID itu.",
     "inviteNotFound": "Undangan tidak ditemukan.",
     "inviteNotPending": "Undangan ini tidak lagi tertunda.",
     "rosterFull": "Roster sudah penuh.",

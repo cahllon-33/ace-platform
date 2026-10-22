@@ -3,7 +3,7 @@ import type { TextBag } from "../types";
 export const codex: TextBag["codex"] = {
   "meta": {
     "title": "Kalibracijski kodeks",
-    "description": "Rangovi A.C.E. objašnjeni. Svako pitanje otvara potpuni odgovor o Rating Pointsima i pravilima za taj rang. Kodeks ne bilježi meč.",
+    "description": "Rangovi A.C.E objašnjeni. Svako pitanje otvara potpuni odgovor o Rating Pointsima i pravilima za taj rang. Kodeks ne bilježi meč.",
     "articleTitle": "{title} — Kalibracijski kodeks"
   },
   "groups": {
@@ -31,7 +31,7 @@ export const codex: TextBag["codex"] = {
     "searchLabel": "Pretraži kodeks",
     "searchPlaceholder": "Pokušaj 1950, Recruit ili neriješeno",
     "empty": "Nijedan unos ne odgovara pretrazi.",
-    "columnLabel": "A.C.E. stupac {n}",
+    "columnLabel": "A.C.E stupac {n}",
     "pagerLabel": "Stranice kodeksa",
     "first": "Prva",
     "previous": "Prethodna",
@@ -40,7 +40,7 @@ export const codex: TextBag["codex"] = {
     "pageOf": "Stranica {n} od {m}"
   },
   "article": {
-    "breadcrumb": "A.C.E. · Kalibracijski kodeks",
+    "breadcrumb": "A.C.E · Kalibracijski kodeks",
     "status": "Ova stranica objašnjava napisanu ljestvicu. Ne bilježi meč i ne mijenja spremljeni rejting.",
     "emblemAlt": "Amblem {name}, rang {level}",
     "emblemCaption": "Rang {level} · {name} · {crystal}",
@@ -63,7 +63,7 @@ export const codex: TextBag["codex"] = {
     "turnLabel": "Nastavi kroz kodeks",
     "previous": "Prethodna",
     "next": "Sljedeća",
-    "alsoIn": "Također u A.C.E.",
+    "alsoIn": "Također u A.C.E",
     "backToBoard": "Natrag na ploču rangova"
   },
   "rankArticle": {
@@ -124,20 +124,20 @@ export const codex: TextBag["codex"] = {
       "detail": "Raspon ide od 1.800 do 1.949. To je 150 bodova, ne 100. 1.949 i dalje nosi Sovereign. Legend se otvara na 1.950."
     },
     "rank-10-a-c-e-legend": {
-      "stance": "A.C.E. Legend je zadnja oznaka. Kristalna oznaka je ACE ELITE. Službeni naziv je A.C.E. Legend.",
+      "stance": "A.C.E Legend je zadnja oznaka. Kristalna oznaka je ACE ELITE. Službeni naziv je A.C.E Legend.",
       "detail": "Raspon se otvara na 1.950 i završava na stropu motora, 3.000. Nema jedanaestog ranga. Spremljeni rejting ne može narasti iznad 3.000."
     }
   },
   "articles": {
     "what-a-rank-is": {
-      "title": "Što je A.C.E. rang",
-      "lede": "Rang je oznaka koja sadrži tvoje spremljene Rating Points. Deset oznaka pokriva cijelu ljestvicu, od Recruita do A.C.E. Legenda.",
+      "title": "Što je A.C.E rang",
+      "lede": "Rang je oznaka koja sadrži tvoje spremljene Rating Points. Deset oznaka pokriva cijelu ljestvicu, od Recruita do A.C.E Legenda.",
       "sections": [
         {
           "heading": "Jedan broj, jedna oznaka",
           "paragraphs": [
             "Račun sprema natjecateljski rejting. Ljestvica čita taj broj i vraća najviši rang čiju je donju granicu broj dosegnuo. Ne držiš dva ranga odjednom.",
-            "Recruit je rang 1. A.C.E. Legend je rang 10. Službeni naziv je naziv na ljestvici. Kraća riječ na amblemu je kristalna oznaka za isti rang.",
+            "Recruit je rang 1. A.C.E Legend je rang 10. Službeni naziv je naziv na ljestvici. Kraća riječ na amblemu je kristalna oznaka za isti rang.",
             "Ovaj kodeks objašnjava napisanu ljestvicu. Ne bilježi meč i ne mijenja spremljeni rejting."
           ]
         },
@@ -145,7 +145,7 @@ export const codex: TextBag["codex"] = {
           "heading": "Kako su postavljene donje granice",
           "paragraphs": [
             "Recruit pokriva početak ljestvice. Operative se otvara na 1.100. Od Vanguarda do Grandmastera svaka nova donja granica viša je za 100 bodova: 1.200, 1.300, 1.400, 1.500, 1.600, pa 1.700.",
-            "Sovereign se otvara na 1.800 i drži račun do 1.949. A.C.E. Legend se otvara na 1.950. Strop motora je 3.000, pa je Legend najduži raspon."
+            "Sovereign se otvara na 1.800 i drži račun do 1.949. A.C.E Legend se otvara na 1.950. Strop motora je 3.000, pa je Legend najduži raspon."
           ]
         },
         {
@@ -164,14 +164,14 @@ export const codex: TextBag["codex"] = {
         {
           "heading": "Zašto postoje obje",
           "paragraphs": [
-            "Motor i profil koriste službeni naziv: Recruit, Operative, Vanguard, Specialist, Veteran, Elite, Master, Grandmaster, Sovereign, A.C.E. Legend.",
+            "Motor i profil koriste službeni naziv: Recruit, Operative, Vanguard, Specialist, Veteran, Elite, Master, Grandmaster, Sovereign, A.C.E Legend.",
             "Amblem nosi i kristalnu oznaku: IRON, BRONZE, SILVER, GOLD, PLATINUM, DIAMOND, MASTER, GRANDMASTER, IMMORTAL, ACE ELITE. Ta oznaka je grafika. Ne stvara jedanaesti rang i ne sprema drugi broj."
           ]
         },
         {
           "heading": "Gdje se razlikuju",
           "paragraphs": [
-            "Kristalna oznaka Specialista je GOLD. Veterana PLATINUM. Elitea DIAMOND. Sovereigna IMMORTAL. A.C.E. Legenda ACE ELITE. U svakom slučaju donja granica i dalje pripada službenom nazivu.",
+            "Kristalna oznaka Specialista je GOLD. Veterana PLATINUM. Elitea DIAMOND. Sovereigna IMMORTAL. A.C.E Legenda ACE ELITE. U svakom slučaju donja granica i dalje pripada službenom nazivu.",
             "Master i Grandmaster koriste istu riječ na oba mjesta."
           ]
         }
@@ -287,7 +287,7 @@ export const codex: TextBag["codex"] = {
           "heading": "Graničnici",
           "paragraphs": [
             "Poraz na 100 Rating Pointsa ostaje na 100. Pobjeda na 3.000 ostaje na 3.000. Donja granica Recruita na ljestvici zapisana je kao 0, ali spremljeni broj nikad ne koristi prazninu ispod 100.",
-            "1.949 je Sovereign. 1.950 je A.C.E. Legend. Nema međuoznake."
+            "1.949 je Sovereign. 1.950 je A.C.E Legend. Nema međuoznake."
           ]
         },
         {
@@ -334,7 +334,7 @@ export const codex: TextBag["codex"] = {
           "heading": "Što stol ne radi",
           "paragraphs": [
             "FIND MATCH ne traži protivnike. Ne mijenja Rating Points. Rang na računu i dalje je spremljeni broj koji čita ljestvica ovog kodeksa.",
-            "Nema zasebnog vršnog reda iznad Legenda. A.C.E. Legend je zadnja oznaka i otvara se na 1.950 Rating Pointsa."
+            "Nema zasebnog vršnog reda iznad Legenda. A.C.E Legend je zadnja oznaka i otvara se na 1.950 Rating Pointsa."
           ]
         }
       ]
@@ -440,12 +440,12 @@ export const codex: TextBag["codex"] = {
     },
     "how-a-roster-is-assembled": {
       "title": "Kako se slaže sastav",
-      "lede": "Kapetan poziva igrača koji već ima A.C.E. račun. Nema javne poveznice za dijeljenje, a Steam lozinka se nikad ne traži.",
+      "lede": "Kapetan poziva igrača koji već ima A.C.E račun. Nema javne poveznice za dijeljenje, a Steam lozinka se nikad ne traži.",
       "sections": [
         {
           "heading": "Pozivnica koja postoji",
           "paragraphs": [
-            "Na stranici timova prijavljeni kapetan zalijepi SteamID64 ili ID A.C.E. računa. Račun već mora biti povezan putem Steam OpenID-a. Poslužitelj upisuje pozivnicu na čekanju kad je baza podataka prihvati.",
+            "Na stranici timova prijavljeni kapetan zalijepi SteamID64 ili ID A.C.E računa. Račun već mora biti povezan putem Steam OpenID-a. Poslužitelj upisuje pozivnicu na čekanju kad je baza podataka prihvati.",
             "Sastav ima pet igrača, uključujući kapetana. Kapetan ne može pozvati vlastiti račun. Igrač koji je već u sastavu odbija se. Ako baza podataka ne radi, pozivnica ne uspijeva i ništa se ne sprema."
           ]
         },

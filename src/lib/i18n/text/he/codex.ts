@@ -4,7 +4,7 @@ export const codex: TextBag["codex"] = {
   meta: {
     title: "מדריך הכיול",
     description:
-      "הסבר על הדרגות של A.C.E. כל שאלה פותחת תשובה מלאה על נקודות הדירוג ועל הקוד של אותה דרגה. המדריך אינו מחיל תוצאת משחק.",
+      "הסבר על הדרגות של A.C.E כל שאלה פותחת תשובה מלאה על נקודות הדירוג ועל הקוד של אותה דרגה. המדריך אינו מחיל תוצאת משחק.",
     articleTitle: "{title} — מדריך הכיול",
   },
   groups: {
@@ -33,7 +33,7 @@ export const codex: TextBag["codex"] = {
     searchLabel: "חיפוש במדריך",
     searchPlaceholder: "נסו 1950, Recruit או תיקו",
     empty: "אין ערך שתואם לחיפוש הזה.",
-    columnLabel: "עמודת A.C.E. {n}",
+    columnLabel: "עמודת A.C.E {n}",
     pagerLabel: "עמודי המדריך",
     first: "ראשון",
     previous: "הקודם",
@@ -42,7 +42,7 @@ export const codex: TextBag["codex"] = {
     pageOf: "עמוד {n} מתוך {m}",
   },
   article: {
-    breadcrumb: "A.C.E. · מדריך הכיול",
+    breadcrumb: "A.C.E · מדריך הכיול",
     status:
       "עמוד זה מסביר את הסולם הכתוב. הוא אינו מחיל תוצאת משחק ואינו משנה דירוג שמור.",
     emblemAlt: "סמל {name}, דרגה {level}",
@@ -67,7 +67,7 @@ export const codex: TextBag["codex"] = {
     turnLabel: "המשיכו לעיין במדריך",
     previous: "הקודם",
     next: "הבא",
-    alsoIn: "עוד ב-A.C.E.",
+    alsoIn: "עוד ב-A.C.E",
     backToBoard: "חזרה ללוח הדרגות",
   },
   rankArticle: {
@@ -146,7 +146,7 @@ export const codex: TextBag["codex"] = {
     },
     "rank-10-a-c-e-legend": {
       stance:
-        "A.C.E. Legend היא הסמל האחרון. תווית הקריסטל היא ACE ELITE. השם הרשמי הוא A.C.E. Legend.",
+        "A.C.E Legend היא הסמל האחרון. תווית הקריסטל היא ACE ELITE. השם הרשמי הוא A.C.E Legend.",
       detail:
         "הטווח נפתח ב-1,950 ומסתיים בתקרת המנוע, 3,000. אין דרגה אחת-עשרה. דירוג שמור אינו יכול לעלות מעל 3,000.",
     },
@@ -154,13 +154,13 @@ export const codex: TextBag["codex"] = {
   articles: {
     "what-a-rank-is": {
       title: "מהי דרגה ב-A.C.E.",
-      lede: "דרגה היא הסמל שבטווח שלו נמצאות נקודות הדירוג השמורות שלכם. עשרה סמלים מכסים את כל הסולם, מ-Recruit ועד A.C.E. Legend.",
+      lede: "דרגה היא הסמל שבטווח שלו נמצאות נקודות הדירוג השמורות שלכם. עשרה סמלים מכסים את כל הסולם, מ-Recruit ועד A.C.E Legend.",
       sections: [
         {
           heading: "מספר אחד, סמל אחד",
           paragraphs: [
             "החשבון שומר דירוג תחרותי. הסולם קורא את המספר הזה ומחזיר את הדרגה הגבוהה ביותר שהמספר הגיע לרצפה שלה. אי אפשר להחזיק בשתי דרגות בו-זמנית.",
-            "Recruit היא דרגה 1. A.C.E. Legend היא דרגה 10. השם הרשמי הוא השם שבסולם. המילה הקצרה יותר על הסמל היא תווית הקריסטל של אותה דרגה.",
+            "Recruit היא דרגה 1. A.C.E Legend היא דרגה 10. השם הרשמי הוא השם שבסולם. המילה הקצרה יותר על הסמל היא תווית הקריסטל של אותה דרגה.",
             "מדריך זה מסביר את הסולם הכתוב. הוא אינו מחיל תוצאת משחק ואינו משנה דירוג שמור.",
           ],
         },
@@ -168,7 +168,7 @@ export const codex: TextBag["codex"] = {
           heading: "איך הרצפות ממוקמות",
           paragraphs: [
             "Recruit מכסה את תחילת הסולם. Operative נפתחת ב-1,100. מ-Vanguard ועד Grandmaster, כל רצפה חדשה גבוהה ב-100 נקודות: 1,200, 1,300, 1,400, 1,500, 1,600, ולאחר מכן 1,700.",
-            "Sovereign נפתחת ב-1,800 ומחזיקה את החשבון עד 1,949. A.C.E. Legend נפתחת ב-1,950. תקרת המנוע היא 3,000, ולכן Legend היא הטווח הארוך ביותר.",
+            "Sovereign נפתחת ב-1,800 ומחזיקה את החשבון עד 1,949. A.C.E Legend נפתחת ב-1,950. תקרת המנוע היא 3,000, ולכן Legend היא הטווח הארוך ביותר.",
           ],
         },
         {
@@ -187,14 +187,14 @@ export const codex: TextBag["codex"] = {
         {
           heading: "למה קיימים שניהם",
           paragraphs: [
-            "המנוע והפרופיל משתמשים בשם הרשמי: Recruit, Operative, Vanguard, Specialist, Veteran, Elite, Master, Grandmaster, Sovereign, A.C.E. Legend.",
+            "המנוע והפרופיל משתמשים בשם הרשמי: Recruit, Operative, Vanguard, Specialist, Veteran, Elite, Master, Grandmaster, Sovereign, A.C.E Legend.",
             "הסמל נושא גם תווית קריסטל: IRON, BRONZE, SILVER, GOLD, PLATINUM, DIAMOND, MASTER, GRANDMASTER, IMMORTAL, ACE ELITE. התווית הזו היא חלק מהיצירה הגרפית. היא אינה יוצרת דרגה אחת-עשרה ואינה שומרת מספר נוסף.",
           ],
         },
         {
           heading: "היכן הם נבדלים",
           paragraphs: [
-            "תווית הקריסטל של Specialist היא GOLD. של Veteran היא PLATINUM. של Elite היא DIAMOND. של Sovereign היא IMMORTAL. של A.C.E. Legend היא ACE ELITE. בכל המקרים הרצפה עדיין שייכת לשם הרשמי.",
+            "תווית הקריסטל של Specialist היא GOLD. של Veteran היא PLATINUM. של Elite היא DIAMOND. של Sovereign היא IMMORTAL. של A.C.E Legend היא ACE ELITE. בכל המקרים הרצפה עדיין שייכת לשם הרשמי.",
             "Master ו-Grandmaster משתמשות באותה מילה בשני המקומות.",
           ],
         },
@@ -310,7 +310,7 @@ export const codex: TextBag["codex"] = {
           heading: "נקודות העצירה",
           paragraphs: [
             "הפסד ב-100 נקודות דירוג נשאר על 100. ניצחון ב-3,000 נשאר על 3,000. רצפת הסולם של Recruit כתובה כ-0, אבל המספר השמור לעולם אינו משתמש בפער שמתחת ל-100.",
-            "1,949 הוא Sovereign. 1,950 הוא A.C.E. Legend. אין סמל ביניים.",
+            "1,949 הוא Sovereign. 1,950 הוא A.C.E Legend. אין סמל ביניים.",
           ],
         },
         {
@@ -357,7 +357,7 @@ export const codex: TextBag["codex"] = {
           heading: "מה העמדה אינה עושה",
           paragraphs: [
             "מצא משחק אינו מחפש יריבים. הוא אינו משנה נקודות דירוג. הדרגה בחשבון היא עדיין המספר השמור, כפי שהסולם במדריך הזה קורא אותו.",
-            "אין תור עליון נפרד מעל Legend. A.C.E. Legend היא הסמל האחרון, והיא נפתחת ב-1,950 נקודות דירוג.",
+            "אין תור עליון נפרד מעל Legend. A.C.E Legend היא הסמל האחרון, והיא נפתחת ב-1,950 נקודות דירוג.",
           ],
         },
       ],
@@ -463,12 +463,12 @@ export const codex: TextBag["codex"] = {
     },
     "how-a-roster-is-assembled": {
       title: "איך מרכיבים סגל",
-      lede: "קפטן מזמין שחקן שכבר יש לו חשבון A.C.E. אין קישור שיתוף ציבורי, ולעולם לא מתבקשת סיסמת Steam.",
+      lede: "קפטן מזמין שחקן שכבר יש לו חשבון A.C.E אין קישור שיתוף ציבורי, ולעולם לא מתבקשת סיסמת Steam.",
       sections: [
         {
           heading: "ההזמנה שקיימת",
           paragraphs: [
-            "בעמוד הקבוצות, קפטן מחובר מדביק SteamID64 או מזהה חשבון A.C.E. החשבון חייב להיות מקושר כבר דרך Steam OpenID. השרת כותב הזמנה ממתינה כשמסד הנתונים מקבל אותה.",
+            "בעמוד הקבוצות, קפטן מחובר מדביק SteamID64 או מזהה חשבון A.C.E החשבון חייב להיות מקושר כבר דרך Steam OpenID. השרת כותב הזמנה ממתינה כשמסד הנתונים מקבל אותה.",
             "הסגל מכיל חמישה שחקנים, כולל הקפטן. קפטן אינו יכול להזמין את החשבון של עצמו. שחקן שכבר נמצא בסגל נדחה. אם מסד הנתונים אינו זמין, ההזמנה נכשלת ואף הזמנה אינה נשמרת.",
           ],
         },

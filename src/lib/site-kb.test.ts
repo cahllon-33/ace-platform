@@ -10,7 +10,7 @@ const CASES: Case[] = [
   // prices
   { l: "en", q: "How much does Premium cost?", route: /pricing|premium-terms|terms/, has: ["$7"] },
   { l: "en", q: "What is the price of Plus?", route: /pricing|premium-terms|terms/, has: ["$4"] },
-  { l: "en", q: "Is A.C.E. free?", has: [/\$0|free/i] },
+  { l: "en", q: "Is A.C.E free?", has: [/\$0|free/i] },
   { l: "he", q: "כמה עולה פרימיום?", route: /pricing|premium-terms|terms/, has: ["$7", HE] },
   { l: "he", q: "מה המחיר של פלוס?", route: /pricing|premium-terms|terms/, has: ["$4", HE] },
   { l: "he", q: "כמה עולה המנוי?", has: [/\$4|\$7/, HE] },
@@ -47,7 +47,7 @@ const CASES: Case[] = [
   // Premium badge / perks / pay-to-win
   { l: "en", q: "What does the Premium badge give me?", route: "/pricing", has: [/badge|SEAL/i] },
   { l: "he", q: "מה מקבלים עם התג של פרימיום?", has: [HE] },
-  { l: "en", q: "Is A.C.E. pay to win?", has: [/advantage|boost|no/i] },
+  { l: "en", q: "Is A.C.E pay to win?", has: [/advantage|boost|no/i] },
   // privacy / data / contact / tournaments
   { l: "en", q: "What personal data do you collect?", route: /privacy|cookie/, has: [/./] },
   { l: "en", q: "How do I contact support?", has: [/support@ace-platform\.gg|contact/i] },

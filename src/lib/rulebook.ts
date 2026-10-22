@@ -14,8 +14,8 @@ export const RULEBOOK: RuleSection[] = [
     id: "s1",
     title: "Scope and definitions",
     clauses: [
-      { text: "This rulebook governs every competition that A.C.E. organizes: cups, leagues, ladders, and showmatches. An event page may add event-specific terms; where it conflicts with this rulebook, the event page wins for that event only." },
-      { text: "\"Organizer\" means the A.C.E. operations team. \"Admin\" means an organizer member assigned to an event. \"Team\" means a registered roster. \"Captain\" means the player who represents the team. \"Match\" means one or more maps between two teams. \"Series\" means a best-of-one, best-of-three, or best-of-five set of maps." },
+      { text: "This rulebook governs every competition that A.C.E organizes: cups, leagues, ladders, and showmatches. An event page may add event-specific terms; where it conflicts with this rulebook, the event page wins for that event only." },
+      { text: "\"Organizer\" means the A.C.E operations team. \"Admin\" means an organizer member assigned to an event. \"Team\" means a registered roster. \"Captain\" means the player who represents the team. \"Match\" means one or more maps between two teams. \"Series\" means a best-of-one, best-of-three, or best-of-five set of maps." },
       { text: "By registering, every player and team agrees to this rulebook, the Terms of Service, and the Privacy Policy." },
       { text: "Admins may decide situations this rulebook does not cover, guided by fair play and the spirit of these rules. Such decisions are recorded and published with the match result." },
     ],
@@ -24,7 +24,7 @@ export const RULEBOOK: RuleSection[] = [
     id: "s2",
     title: "Eligibility",
     clauses: [
-      { text: "Players must not be under an active A.C.E. suspension, and must not hold a game ban on the Steam account they use that was issued within the last 2 years." },
+      { text: "Players must not be under an active A.C.E suspension, and must not hold a game ban on the Steam account they use that was issued within the last 2 years." },
       { text: "Organizer staff and admins may not play in an event they administer." },
       { text: "Region or rating limits are set per event and published before registration opens. A player outside the limits may not play, even as a substitute." },
     ],
@@ -33,7 +33,7 @@ export const RULEBOOK: RuleSection[] = [
     id: "s3",
     title: "Accounts and identity",
     clauses: [
-      { text: "Each player uses one A.C.E. account linked to one Steam account through Steam sign-in. A.C.E. never asks for a Steam password; anyone who does is not the organizer." },
+      { text: "Each player uses one A.C.E account linked to one Steam account through Steam sign-in. A.C.E never asks for a Steam password; anyone who does is not the organizer." },
       { text: "Sharing an account, playing on another person's account, or letting another person play on yours is forbidden. Both accounts are penalized." },
       { text: "Creating a new account to avoid a penalty, a rating, or a restriction is ban evasion and is treated as an integrity offence (section 14)." },
       { text: "Display names and avatars must follow the conduct rules (section 13). Admins may require a change before a match." },
@@ -77,7 +77,7 @@ export const RULEBOOK: RuleSection[] = [
     title: "Match procedure",
     clauses: [
       { text: "Both teams must be in the match lobby 15 minutes before the scheduled start, with all players checked in." },
-      { text: "Matches are played on servers provided by A.C.E. Teams may not move a match to another server without admin approval.", pending: true },
+      { text: "Matches are played on servers provided by A.C.E Teams may not move a match to another server without admin approval.", pending: true },
       { text: "A knife round is played only where this rulebook calls for it. Otherwise starting sides follow the veto." },
       { text: "Once a map is live, it is played to completion. Restarts are allowed only under section 9." },
       { text: "Within 15 minutes of the end of a match, both captains confirm the result. The winner uploads a screenshot of the final scoreboard. Demos are kept by the server for at least 14 days.", pending: true },
@@ -151,8 +151,8 @@ export const RULEBOOK: RuleSection[] = [
       { text: "Ghosting (receiving information from spectators or streams), stream sniping, playing on another person's account, and ban evasion are forbidden." },
       { text: "Match fixing, deliberately losing, and betting on any match involving your team or your event are forbidden." },
       { text: "Using a map or game bug that the admin has listed as banned, or that clearly breaks the game's intended mechanics, is forbidden." },
-      { text: "Players must run the A.C.E. anti-cheat client for the whole match when it is required by the event.", pending: true },
-      { text: "Admins may request demos or screen recordings for review. Hardware details are requested only once the A.C.E. anti-cheat client exists and the Privacy Policy describes them. Refusing a reasonable request without a valid reason may be taken into account in the decision." },
+      { text: "Players must run the A.C.E anti-cheat client for the whole match when it is required by the event.", pending: true },
+      { text: "Admins may request demos or screen recordings for review. Hardware details are requested only once the A.C.E anti-cheat client exists and the Privacy Policy describes them. Refusing a reasonable request without a valid reason may be taken into account in the decision." },
       { text: "Anyone may report a suspected violation privately to the organizer. Public accusations without a report are a conduct offence." },
     ],
   },
@@ -180,7 +180,7 @@ export const RULEBOOK: RuleSection[] = [
     id: "s17",
     title: "Broadcast",
     clauses: [
-      { text: "A.C.E. holds the right to broadcast any match it organizes. Teams may not refuse a broadcast." },
+      { text: "A.C.E holds the right to broadcast any match it organizes. Teams may not refuse a broadcast." },
       { text: "Players may stream their own matches only with a delay of at least 2 minutes and only if the event page allows it. Official broadcasts use the delay set by the organizer." },
       { text: "Players must not watch any live broadcast of their own match while it is being played." },
       { text: "Scheduled broadcast matches may be moved by up to 2 hours with 24 hours' notice. Teams must be available for the new time or request an admin decision." },

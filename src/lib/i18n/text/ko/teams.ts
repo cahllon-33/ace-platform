@@ -2,7 +2,7 @@ import type { TextBag } from "../types";
 
 export const teams: TextBag["teams"] = {
   "meta": {
-    "title": "A.C.E. 스쿼드 관리",
+    "title": "A.C.E 스쿼드 관리",
     "description": "5v5 스쿼드 작업 공간입니다. 초대에는 인증된 Steam 세션이 필요하며, 안티치트 검사는 A.C.E Shield와 함께 제공됩니다."
   },
   "hero": {
@@ -14,11 +14,11 @@ export const teams: TextBag["teams"] = {
     "kickerPremium": "플랜 선택 후 클랜 기록",
     "kickerDefault": "클랜 기록",
     "title": "5인 팀인가요?",
-    "intro": "1번 자리는 Steam으로 로그인한 플레이어입니다. 2번부터 5번 자리는 이미 A.C.E. 계정이 있어야 합니다. 클랜을 저장해도 $7가 청구되지 않고, 이메일이 발송되지 않으며, 클랜이 100팀 보드에 올라가지 않습니다.",
+    "intro": "1번 자리는 Steam으로 로그인한 플레이어입니다. 2번부터 5번 자리는 이미 A.C.E 계정이 있어야 합니다. 클랜을 저장해도 $7가 청구되지 않고, 이메일이 발송되지 않으며, 클랜이 100팀 보드에 올라가지 않습니다.",
     "yes": "예, 5명입니다",
     "no": "아니요, 자리를 비워 두기",
     "seatsOpen": "다섯 자리는 비어 있습니다. 아무것도 저장되지 않았습니다.",
-    "connectSteam": "먼저 Steam을 연결하세요. 버튼을 누르면 이 페이지로 돌아옵니다. A.C.E.는 Steam 비밀번호를 절대 요구하지 않습니다.",
+    "connectSteam": "먼저 Steam을 연결하세요. 버튼을 누르면 이 페이지로 돌아옵니다. A.C.E는 Steam 비밀번호를 절대 요구하지 않습니다.",
     "alreadyMember": "{name}님은 이미 {team} 소속입니다. 이 양식으로 두 번째 클랜을 만들 수 없습니다.",
     "thisAccount": "이 계정",
     "acceptTerms": "클랜을 저장하기 전에 약관에 동의하세요.",
@@ -26,7 +26,7 @@ export const teams: TextBag["teams"] = {
     "clanName": "클랜 이름",
     "captainSeat": "1번 자리, 주장: {name}",
     "signedInSteam": "로그인한 Steam 계정",
-    "seatLabel": "{seat}번 자리 SteamID 또는 A.C.E. 계정 ID",
+    "seatLabel": "{seat}번 자리 SteamID 또는 A.C.E 계정 ID",
     "submit": "5인 클랜 저장",
     "saved": "클랜 이름이 저장되었고 초대 4건이 대기 중입니다. 해당 플레이어들은 수락하기 전까지 로스터에 포함되지 않습니다. 이것은 100팀 보드의 자리가 아닙니다. 아무것도 청구되지 않았습니다."
   },
@@ -42,8 +42,8 @@ export const teams: TextBag["teams"] = {
       "email": "이메일은 발송되지 않습니다. 플랜 영수증은 이 웹사이트에 남습니다.",
       "charge": "Premium은 월 $7입니다. 곧 제공: 아직 결제가 없으므로 아무것도 청구되지 않습니다.",
       "board": "저장된 클랜은 로스터 기록입니다. 100팀 보드에 올라가지 않습니다. 시즌이 열리기 전까지 그 보드는 계속 등록 0으로 표시됩니다.",
-      "steam": "로그인은 공식 Steam OpenID를 사용합니다. A.C.E.는 Steam 비밀번호를 절대 요구하지 않습니다. 이 페이지에서 로그인하면 Steam이 이곳으로 돌려보냅니다.",
-      "roster": "1번 자리는 로그인한 주장입니다. 2번부터 5번 자리는 이미 A.C.E. 계정이 있어야 합니다. 초대는 각 플레이어가 수락할 때까지 대기 상태로 남습니다.",
+      "steam": "로그인은 공식 Steam OpenID를 사용합니다. A.C.E는 Steam 비밀번호를 절대 요구하지 않습니다. 이 페이지에서 로그인하면 Steam이 이곳으로 돌려보냅니다.",
+      "roster": "1번 자리는 로그인한 주장입니다. 2번부터 5번 자리는 이미 A.C.E 계정이 있어야 합니다. 초대는 각 플레이어가 수락할 때까지 대기 상태로 남습니다.",
       "badge": "좌석 배지는 안티치트 출시 후 실제 A.C.E Shield 검사가 됩니다.",
       "support": "이 웹사이트의 지원 또는 문의 페이지를 여세요. 지원 안내는 티켓을 열지 않으며, 문의 페이지에 입력한 내용은 전달되지 않습니다.",
       "rating": "새 레이팅은 1,200에서 시작합니다. 이 페이지는 레이팅 판매, 대기열 개설, CS2 서버 연결, 상품 지급을 하지 않습니다."
@@ -63,11 +63,11 @@ export const teams: TextBag["teams"] = {
   },
   "tournaments": {
     "meta": {
-      "title": "A.C.E. 챔피언십 — 100팀 엘리트 녹아웃",
+      "title": "A.C.E 챔피언십 — 100팀 엘리트 녹아웃",
       "description": "100팀 녹아웃 토너먼트입니다. 클랜을 클릭하면 로스터와 각 플레이어 프로필이 열립니다. 참가 신청은 곧 열립니다."
     },
     "intro": {
-      "title": "A.C.E. 챔피언십 — 100팀 엘리트 녹아웃",
+      "title": "A.C.E 챔피언십 — 100팀 엘리트 녹아웃",
       "lede": "공개된 대회 형식은 100팀 녹아웃입니다. 아래 그래프가 그 레이아웃입니다. 클랜을 클릭하면 로스터 서랍이 열립니다. 등록은 100팀 중 0팀입니다. 현금 상금은 광고되지 않으며 재원도 없습니다.",
       "formatValue": "100팀 대진 매트릭스",
       "briefTitle": "100팀 운영 브리프",
@@ -110,7 +110,7 @@ export const teams: TextBag["teams"] = {
       "count": "클랜 {total}개 중 {index}번째",
       "next": "다음 클랜",
       "close": "프로필 닫기",
-      "disclosure": "플레이어가 공유를 선택하면 장비와 인벤토리가 여기에 표시됩니다. A.C.E.는 하드웨어 데이터를 수집하지 않습니다."
+      "disclosure": "플레이어가 공유를 선택하면 장비와 인벤토리가 여기에 표시됩니다. A.C.E는 하드웨어 데이터를 수집하지 않습니다."
     },
     "player": {
       "level": "레벨 {level} · RP {rating}",
@@ -140,16 +140,16 @@ export const teams: TextBag["teams"] = {
     "monitor": "주사율 · 비공개",
     "headset": "비공개"
   },
-  "profileDisclosure": "A.C.E.는 하드웨어 인벤토리를 저장하지 않으며 안티치트 클라이언트를 실행하지 않습니다. 성능 추세 그래프와 전투 매트릭스는 A.C.E. Plus 또는 Premium 세션이 필요합니다. 이 페이지에 입력한 Steam 프로필 링크는 저장되지 않으며 공식 핸들이 아닙니다.",
+  "profileDisclosure": "A.C.E는 하드웨어 인벤토리를 저장하지 않으며 안티치트 클라이언트를 실행하지 않습니다. 성능 추세 그래프와 전투 매트릭스는 A.C.E Plus 또는 Premium 세션이 필요합니다. 이 페이지에 입력한 Steam 프로필 링크는 저장되지 않으며 공식 핸들이 아닙니다.",
   "errors": {
     "signInRequired": "로그인이 필요합니다.",
     "nameLength": "팀 이름은 2자 이상 32자 이하여야 합니다.",
     "alreadyCaptain": "이 계정은 이미 팀의 주장입니다.",
     "nameTaken": "같은 이름의 팀이 이미 있습니다.",
-    "idRequired": "SteamID 또는 A.C.E. 계정 ID가 필요합니다.",
-    "noAccountForToken": "해당 SteamID 또는 계정 ID의 A.C.E. 계정이 없습니다.",
+    "idRequired": "SteamID 또는 A.C.E 계정 ID가 필요합니다.",
+    "noAccountForToken": "해당 SteamID 또는 계정 ID의 A.C.E 계정이 없습니다.",
     "clanNeedsFour": "5인 클랜에는 로그인한 주장과 SteamID 4개가 필요합니다.",
-    "seatNeedsId": "네 자리 각각에 SteamID 또는 A.C.E. 계정 ID가 필요합니다.",
+    "seatNeedsId": "네 자리 각각에 SteamID 또는 A.C.E 계정 ID가 필요합니다.",
     "seatsDistinct": "각 자리에는 서로 다른 플레이어가 필요합니다.",
     "captainHoldsSeat": "주장은 이미 1번 자리를 차지하고 있습니다. 다른 플레이어 4명을 입력하세요.",
     "fewerThanFour": "입력한 ID에 해당하는 계정이 4개 미만입니다.",
@@ -157,7 +157,7 @@ export const teams: TextBag["teams"] = {
     "captainOnly": "지정된 주장만 초대를 보낼 수 있습니다.",
     "rosterLimit": "CS2 로스터는 주장을 포함해 5명입니다.",
     "alreadyOnRoster": "해당 플레이어는 이미 로스터에 있습니다.",
-    "noAccountForId": "해당 ID의 A.C.E. 계정이 없습니다.",
+    "noAccountForId": "해당 ID의 A.C.E 계정이 없습니다.",
     "inviteNotFound": "초대를 찾을 수 없습니다.",
     "inviteNotPending": "이 초대는 더 이상 대기 중이 아닙니다.",
     "rosterFull": "로스터가 이미 가득 찼습니다.",

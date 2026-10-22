@@ -4,18 +4,18 @@ export const RB_PL: RulebookText = {
   "summary16": "Sędziowie wybierają karę z poniższego zakresu, biorąc pod uwagę zamiar, skutki i powtarzalność. Powtarzające się wykroczenia przesuwają karę w górę zakresu.",
   "clauses": [
     [
-      "Niniejszy regulamin obowiązuje we wszystkich rozgrywkach organizowanych przez A.C.E.: pucharach, ligach, drabinkach rankingowych i meczach pokazowych. Strona wydarzenia może dodać własne warunki; w razie sprzeczności z regulaminem strona wydarzenia ma pierwszeństwo wyłącznie dla tego wydarzenia.",
-      "„Organizator” oznacza zespół operacyjny A.C.E. „Sędzia” oznacza członka organizatora przydzielonego do wydarzenia. „Drużyna” oznacza zarejestrowany skład. „Kapitan” oznacza gracza reprezentującego drużynę. „Mecz” oznacza jedną lub więcej map rozgrywanych przez dwie drużyny. „Seria” oznacza zestaw map w formacie do jednej, dwóch lub trzech wygranych (BO1, BO3, BO5).",
+      "Niniejszy regulamin obowiązuje we wszystkich rozgrywkach organizowanych przez A.C.E: pucharach, ligach, drabinkach rankingowych i meczach pokazowych. Strona wydarzenia może dodać własne warunki; w razie sprzeczności z regulaminem strona wydarzenia ma pierwszeństwo wyłącznie dla tego wydarzenia.",
+      "„Organizator” oznacza zespół operacyjny A.C.E „Sędzia” oznacza członka organizatora przydzielonego do wydarzenia. „Drużyna” oznacza zarejestrowany skład. „Kapitan” oznacza gracza reprezentującego drużynę. „Mecz” oznacza jedną lub więcej map rozgrywanych przez dwie drużyny. „Seria” oznacza zestaw map w formacie do jednej, dwóch lub trzech wygranych (BO1, BO3, BO5).",
       "Rejestrując się, każdy gracz i każda drużyna akceptują niniejszy regulamin, Warunki korzystania z usługi oraz Politykę prywatności.",
       "Sędziowie mogą rozstrzygać sytuacje nieprzewidziane w regulaminie, kierując się zasadami fair play i duchem przepisów. Takie decyzje są dokumentowane i publikowane wraz z wynikiem meczu."
     ],
     [
-      "Gracz nie może być objęty aktywnym zawieszeniem A.C.E., a na używanym przez niego koncie Steam nie może ciążyć blokada gry nałożona w ciągu ostatnich 2 lat.",
+      "Gracz nie może być objęty aktywnym zawieszeniem A.C.E, a na używanym przez niego koncie Steam nie może ciążyć blokada gry nałożona w ciągu ostatnich 2 lat.",
       "Pracownicy organizatora i sędziowie nie mogą grać w wydarzeniu, które obsługują.",
       "Limity regionu lub rankingu ustala się dla każdego wydarzenia i publikuje przed otwarciem rejestracji. Gracz spoza tych limitów nie może grać, również jako rezerwowy."
     ],
     [
-      "Każdy gracz korzysta z jednego konta A.C.E. połączonego z jednym kontem Steam poprzez logowanie Steam. A.C.E. nigdy nie prosi o hasło do Steam; ktoś, kto o nie prosi, nie jest organizatorem.",
+      "Każdy gracz korzysta z jednego konta A.C.E połączonego z jednym kontem Steam poprzez logowanie Steam. A.C.E nigdy nie prosi o hasło do Steam; ktoś, kto o nie prosi, nie jest organizatorem.",
       "Udostępnianie konta, granie na cudzym koncie lub pozwalanie innej osobie grać na swoim jest zabronione. Karane są oba konta.",
       "Założenie nowego konta w celu uniknięcia kary, rankingu lub ograniczenia jest obejściem blokady i traktuje się je jako naruszenie uczciwości rozgrywek (sekcja 14).",
       "Nazwy wyświetlane i awatary muszą być zgodne z zasadami zachowania (sekcja 13). Sędziowie mogą zażądać ich zmiany przed meczem.",
@@ -89,8 +89,8 @@ export const RB_PL: RulebookText = {
       "Zabronione są ghosting (otrzymywanie informacji od widzów lub z transmisji), stream sniping, granie na cudzym koncie i obchodzenie blokad.",
       "Zabronione są ustawianie meczów, celowe przegrywanie i obstawianie zakładów na jakikolwiek mecz z udziałem twojej drużyny lub w twoim wydarzeniu.",
       "Zabronione jest wykorzystywanie błędu mapy lub gry, który sędzia uznał za zakazany albo który wyraźnie łamie zamierzoną mechanikę gry.",
-      "Gracze muszą mieć uruchomiony klient anti-cheat A.C.E. przez cały mecz, jeśli wymaga tego wydarzenie.",
-      "Admini mogą zażądać dem lub nagrań ekranu do weryfikacji. Dane sprzętowe będą wymagane dopiero, gdy powstanie klient anti-cheat A.C.E. i opisze je Polityka prywatności. Odmowa spełnienia rozsądnej prośby bez ważnego powodu może zostać uwzględniona przy decyzji.",
+      "Gracze muszą mieć uruchomiony klient anti-cheat A.C.E przez cały mecz, jeśli wymaga tego wydarzenie.",
+      "Admini mogą zażądać dem lub nagrań ekranu do weryfikacji. Dane sprzętowe będą wymagane dopiero, gdy powstanie klient anti-cheat A.C.E i opisze je Polityka prywatności. Odmowa spełnienia rozsądnej prośby bez ważnego powodu może zostać uwzględniona przy decyzji.",
       "Każdy może poufnie zgłosić organizatorowi podejrzenie naruszenia. Publiczne oskarżenia bez zgłoszenia są wykroczeniem dotyczącym zachowania."
     ],
     [
@@ -105,7 +105,7 @@ export const RB_PL: RulebookText = {
       "Blokady obejmują osobę i wszystkie kontrolowane przez nią konta."
     ],
     [
-      "A.C.E. ma prawo transmitować każdy organizowany przez siebie mecz. Drużyny nie mogą odmówić transmisji.",
+      "A.C.E ma prawo transmitować każdy organizowany przez siebie mecz. Drużyny nie mogą odmówić transmisji.",
       "Gracze mogą streamować własne mecze tylko z opóźnieniem co najmniej 2 minut i tylko wtedy, gdy zezwala na to strona wydarzenia. Oficjalne transmisje stosują opóźnienie ustalone przez organizatora.",
       "Gracze nie mogą oglądać transmisji na żywo własnego meczu w trakcie jego trwania.",
       "Mecze zaplanowane do transmisji mogą zostać przesunięte maksymalnie o 2 godziny z wyprzedzeniem 24 godzin. Drużyny muszą być dostępne w nowym terminie lub poprosić o decyzję sędziego.",

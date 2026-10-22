@@ -62,7 +62,7 @@ export const ranks: TextBag["ranks"] = {
     "kicker": "RANGURI PREMIUM",
     "plan": "A.C.E PREMIUM · doar 7 $/lună",
     "title": "Grafică de rang Premium",
-    "lede": "Setul original ilustrat de ranguri A.C.E.: zece embleme de cristal cu diviziile III/II/I, protocolul de rating, cardul de detaliu Legend și vizualizatorul 3D rotit prin tragere. Este grafică de profil pentru membrii Premium. Citește aceeași scară Rating Points ca rangurile standard și nu oferă niciun avantaj competitiv.",
+    "lede": "Setul original ilustrat de ranguri A.C.E: zece embleme de cristal cu diviziile III/II/I, protocolul de rating, cardul de detaliu Legend și vizualizatorul 3D rotit prin tragere. Este grafică de profil pentru membrii Premium. Citește aceeași scară Rating Points ca rangurile standard și nu oferă niciun avantaj competitiv.",
     "demo": "Valori demo: progresul, procentul de victorii și diviziile de pe această tablă sunt exemple, nu statistici live. Când ești autentificat, ratingul afișat este ratingul tău stocat.",
     "locked": "În curând: checkout-ul nu există încă, deci astăzi niciun cont nu este Premium. Serverul aplică grafica de rang Premium unui profil doar când planul său stocat este Premium.",
     "standardKicker": "RANGURI STANDARD",
@@ -77,12 +77,12 @@ export const ranks: TextBag["ranks"] = {
   },
   "meta": {
     "title": "Ranguri competitive",
-    "description": "Cele zece ranguri A.C.E., de la Iron Recruit la A.C.E. Legend, cu divizii și praguri de rating."
+    "description": "Cele zece ranguri A.C.E, de la Iron Recruit la A.C.E Legend, cu divizii și praguri de rating."
   },
   "hero": {
     "kicker": "CALIBRARE",
     "title": "Ranguri competitive",
-    "lede": "Zece niveluri de la Recruit la A.C.E. Legend, fiecare cu diviziile {divisions}. Trage sau folosește săgețile pentru a roti emblema. Autentificat, îți vezi propriul rating; altfel pragul fiecărui nivel."
+    "lede": "Zece niveluri de la Recruit la A.C.E Legend, fiecare cu diviziile {divisions}. Trage sau folosește săgețile pentru a roti emblema. Autentificat, îți vezi propriul rating; altfel pragul fiecărui nivel."
   },
   "codexLink": "Deschide Codexul de calibrare",
   "document": {
@@ -134,9 +134,9 @@ export const ranks: TextBag["ranks"] = {
     }
   },
   "board": {
-    "selectEmblem": "Selectează emblema de rang A.C.E. {name}, nivelul {level}",
-    "emblemAlt": "Insignă de profil cu emblemă A.C.E. cristalină 3D personalizată nivel {level} {crystal} {name}",
-    "emblemAltLegend": "Insignă de profil cu emblemă A.C.E. cristalină 3D personalizată nivel {level}",
+    "selectEmblem": "Selectează emblema de rang A.C.E {name}, nivelul {level}",
+    "emblemAlt": "Insignă de profil cu emblemă A.C.E cristalină 3D personalizată nivel {level} {crystal} {name}",
+    "emblemAltLegend": "Insignă de profil cu emblemă A.C.E cristalină 3D personalizată nivel {level}",
     "premium": "NIVEL DE TOP"
   },
   "division": {

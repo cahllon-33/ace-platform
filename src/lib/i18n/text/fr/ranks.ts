@@ -62,7 +62,7 @@ export const ranks: TextBag["ranks"] = {
     "kicker": "RANGS PREMIUM",
     "plan": "A.C.E PREMIUM · 7 $/mois uniquement",
     "title": "Visuels de rang Premium",
-    "lede": "Le jeu original illustré des rangs A.C.E. : dix emblèmes de cristal avec divisions III/II/I, le protocole de classement, la fiche détaillée Legend et la visionneuse 3D à faire pivoter par glisser. C'est un visuel de profil pour les membres Premium. Il lit la même échelle de Rating Points que les rangs standard et ne donne aucun avantage compétitif.",
+    "lede": "Le jeu original illustré des rangs A.C.E : dix emblèmes de cristal avec divisions III/II/I, le protocole de classement, la fiche détaillée Legend et la visionneuse 3D à faire pivoter par glisser. C'est un visuel de profil pour les membres Premium. Il lit la même échelle de Rating Points que les rangs standard et ne donne aucun avantage compétitif.",
     "demo": "Valeurs de démonstration : la progression, le taux de victoire et les divisions de ce tableau sont des exemples, pas des statistiques en direct. Une fois connecté, le classement affiché est ton classement enregistré.",
     "locked": "Bientôt : le paiement n'existe pas encore, donc aucun compte n'est Premium aujourd'hui. Le serveur n'applique les visuels de rang Premium qu'à un profil dont le forfait enregistré est Premium.",
     "standardKicker": "RANGS STANDARD",
@@ -77,12 +77,12 @@ export const ranks: TextBag["ranks"] = {
   },
   "meta": {
     "title": "Rangs compétitifs",
-    "description": "Les dix rangs A.C.E., d'Iron Recruit à A.C.E. Legend, avec divisions et seuils de classement."
+    "description": "Les dix rangs A.C.E, d'Iron Recruit à A.C.E Legend, avec divisions et seuils de classement."
   },
   "hero": {
     "kicker": "CALIBRAGE",
     "title": "Rangs compétitifs",
-    "lede": "Dix paliers de Recruit à A.C.E. Legend, chacun avec les divisions {divisions}. Faites glisser ou utilisez les flèches pour faire pivoter un emblème. Connecté, vous voyez votre propre classement ; sinon le seuil de chaque palier."
+    "lede": "Dix paliers de Recruit à A.C.E Legend, chacun avec les divisions {divisions}. Faites glisser ou utilisez les flèches pour faire pivoter un emblème. Connecté, vous voyez votre propre classement ; sinon le seuil de chaque palier."
   },
   "codexLink": "Ouvrir le Codex de calibrage",
   "document": {
@@ -134,9 +134,9 @@ export const ranks: TextBag["ranks"] = {
     }
   },
   "board": {
-    "selectEmblem": "Sélectionner l'emblème du rang A.C.E. {name}, niveau {level}",
-    "emblemAlt": "Badge de profil A.C.E. : emblème cristallin 3D personnalisé {name} {crystal}, niveau {level}",
-    "emblemAltLegend": "Badge de profil A.C.E. : emblème cristallin 3D personnalisé, niveau {level}",
+    "selectEmblem": "Sélectionner l'emblème du rang A.C.E {name}, niveau {level}",
+    "emblemAlt": "Badge de profil A.C.E : emblème cristallin 3D personnalisé {name} {crystal}, niveau {level}",
+    "emblemAltLegend": "Badge de profil A.C.E : emblème cristallin 3D personnalisé, niveau {level}",
     "premium": "PALIER SUPRÊME"
   },
   "division": {

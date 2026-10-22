@@ -4,18 +4,18 @@ export const RB_HR: RulebookText = {
   "summary16": "Suci odabiru kaznu iz donjeg raspona prema namjeri, učinku i ponavljanju. Ponovljeni prekršaji pomiču se prema višem kraju raspona.",
   "clauses": [
     [
-      "Ovaj pravilnik vrijedi za sva natjecanja koja organizira A.C.E.: kupove, lige, ljestvice i revijalne utakmice. Stranica događaja može dodati uvjete specifične za događaj; ako su u suprotnosti s ovim pravilnikom, stranica događaja ima prednost samo za taj događaj.",
-      "„Organizator” je operativni tim A.C.E.-a. „Sudac” je član organizatora raspoređen na događaj. „Momčad” je prijavljeni sastav. „Kapetan” je igrač koji predstavlja momčad. „Utakmica” je jedna ili više mapa između dviju momčadi. „Serija” je niz mapa do jedne pobjede (BO1), dviju pobjeda (BO3) ili triju pobjeda (BO5).",
+      "Ovaj pravilnik vrijedi za sva natjecanja koja organizira A.C.E: kupove, lige, ljestvice i revijalne utakmice. Stranica događaja može dodati uvjete specifične za događaj; ako su u suprotnosti s ovim pravilnikom, stranica događaja ima prednost samo za taj događaj.",
+      "„Organizator” je operativni tim A.C.E-a. „Sudac” je član organizatora raspoređen na događaj. „Momčad” je prijavljeni sastav. „Kapetan” je igrač koji predstavlja momčad. „Utakmica” je jedna ili više mapa između dviju momčadi. „Serija” je niz mapa do jedne pobjede (BO1), dviju pobjeda (BO3) ili triju pobjeda (BO5).",
       "Prijavom svaki igrač i svaka momčad prihvaćaju ovaj pravilnik, Uvjete korištenja i Pravila o privatnosti.",
       "Suci mogu odlučivati o situacijama koje ovaj pravilnik ne pokriva, u skladu sa sportskim duhom i duhom pravila. Takve se odluke bilježe i objavljuju uz rezultat utakmice."
     ],
     [
-      "Igrač ne smije imati aktivnu A.C.E. zabranu, a Steam račun kojim se koristi ne smije imati zabranu igranja izrečenu u posljednje 2 godine.",
+      "Igrač ne smije imati aktivnu A.C.E zabranu, a Steam račun kojim se koristi ne smije imati zabranu igranja izrečenu u posljednje 2 godine.",
       "Osoblje organizatora i suci ne smiju igrati na događaju koji nadziru.",
       "Ograničenja po regiji ili rejtingu određuju se za svaki događaj i objavljuju prije otvaranja prijava. Igrač izvan tih ograničenja ne smije igrati, ni kao zamjena."
     ],
     [
-      "Svaki igrač koristi jedan A.C.E. račun povezan s jednim Steam računom putem prijave preko Steama. A.C.E. nikada ne traži vašu Steam lozinku; tko je traži, nije organizator.",
+      "Svaki igrač koristi jedan A.C.E račun povezan s jednim Steam računom putem prijave preko Steama. A.C.E nikada ne traži vašu Steam lozinku; tko je traži, nije organizator.",
       "Zabranjeno je dijeliti račun, igrati na tuđem računu ili dopustiti drugome da igra na vašem. Kažnjavaju se oba računa.",
       "Otvaranje novog računa radi izbjegavanja kazne, rejtinga ili ograničenja smatra se izbjegavanjem zabrane i tretira se kao prekršaj protiv integriteta natjecanja (odjeljak 14).",
       "Prikazna imena i avatari moraju biti u skladu s pravilima ponašanja (odjeljak 13). Suci mogu zatražiti izmjenu prije utakmice.",
@@ -89,8 +89,8 @@ export const RB_HR: RulebookText = {
       "Zabranjeni su ghosting (dobivanje informacija od gledatelja ili prijenosa), stream sniping, igranje na tuđem računu i izbjegavanje zabrane.",
       "Zabranjeni su namještanje utakmica, namjerni poraz i klađenje na bilo koju utakmicu u kojoj sudjeluje vaša momčad ili koja je dio vašeg događaja.",
       "Zabranjeno je koristiti grešku na mapi ili u igri koju je sudac proglasio nedopuštenom ili koja očito krši predviđenu mehaniku igre.",
-      "Ako događaj to zahtijeva, igrači moraju tijekom cijele utakmice imati pokrenut A.C.E. anti-cheat klijent.",
-      "Admini mogu zatražiti demo snimke ili snimke zaslona radi provjere. Podaci o hardveru tražit će se tek kad postoji A.C.E. anti-cheat klijent i kad ih opišu Pravila privatnosti. Odbijanje razumnog zahtjeva bez valjanog razloga može se uzeti u obzir pri odluci.",
+      "Ako događaj to zahtijeva, igrači moraju tijekom cijele utakmice imati pokrenut A.C.E anti-cheat klijent.",
+      "Admini mogu zatražiti demo snimke ili snimke zaslona radi provjere. Podaci o hardveru tražit će se tek kad postoji A.C.E anti-cheat klijent i kad ih opišu Pravila privatnosti. Odbijanje razumnog zahtjeva bez valjanog razloga može se uzeti u obzir pri odluci.",
       "Svatko može povjerljivo prijaviti sumnju na prekršaj organizatoru. Javno optuživanje bez prijave prekršaj je ponašanja."
     ],
     [
@@ -105,7 +105,7 @@ export const RB_HR: RulebookText = {
       "Zabrana se odnosi na osobu i sve račune kojima upravlja."
     ],
     [
-      "A.C.E. ima pravo prenositi svaku utakmicu koju organizira. Momčadi ne mogu odbiti prijenos.",
+      "A.C.E ima pravo prenositi svaku utakmicu koju organizira. Momčadi ne mogu odbiti prijenos.",
       "Igrači smiju prenositi vlastite utakmice samo s odgodom od najmanje 2 minute i samo ako to stranica događaja dopušta. Službeni prijenosi koriste odgodu koju odredi organizator.",
       "Igrači tijekom utakmice ne smiju gledati prijenos uživo vlastite utakmice.",
       "Utakmice zakazane za prijenos mogu se uz najavu 24 sata unaprijed pomaknuti za najviše 2 sata. Momčadi moraju biti dostupne u novom terminu ili zatražiti odluku suca.",

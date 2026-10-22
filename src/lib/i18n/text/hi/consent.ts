@@ -1,7 +1,7 @@
 import type { TextBag } from "../types";
 
 export const consent: TextBag["consent"] = {
-  "valveDisclaimer": "A.C.E. एक स्वतंत्र Counter-Strike 2 प्रतियोगिता साइट है। यह Valve Corporation से संबद्ध, अधिकृत या समर्थित नहीं है। Steam और Counter-Strike अपने स्वामियों के चिह्न हैं। प्रतियोगिता नियम उस गेम के लिए A.C.E. का अपना पाठ हैं।",
+  "valveDisclaimer": "A.C.E एक स्वतंत्र Counter-Strike 2 प्रतियोगिता साइट है। यह Valve Corporation से संबद्ध, अधिकृत या समर्थित नहीं है। Steam और Counter-Strike अपने स्वामियों के चिह्न हैं। प्रतियोगिता नियम उस गेम के लिए A.C.E का अपना पाठ हैं।",
   "acceptance": {
     "label": "मैं सेवा की शर्तें, Anti-Cheat EULA और गोपनीयता नीति को स्पष्ट रूप से स्वीकार करता/करती हूँ।",
     "readBefore": "पढ़ें",
@@ -21,7 +21,7 @@ export const consent: TextBag["consent"] = {
     "optional": "वैकल्पिक"
   },
   "banner": {
-    "kicker": "A.C.E. साइट सूचना",
+    "kicker": "A.C.E साइट सूचना",
     "copy": {
       "before": "स्वीकार करें इस ब्राउज़र के कुकी विकल्प सहेजता है। यह इलेक्ट्रॉनिक हस्ताक्षर नहीं है, यह डिवाइस टेलीमेट्री एकत्र नहीं करता, एंटी-चीट क्लाइंट शुरू नहीं करता और प्रतिस्पर्धी कतार नहीं खोलता। जारी रखने से पहले पढ़ें",
       "termsLink": "सेवा की शर्तें",

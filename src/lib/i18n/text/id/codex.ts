@@ -3,7 +3,7 @@ import type { TextBag } from "../types";
 export const codex: TextBag["codex"] = {
   "meta": {
     "title": "Kodeks Kalibrasi",
-    "description": "Peringkat A.C.E. dijelaskan. Setiap pertanyaan membuka jawaban lengkap tentang Rating Points dan aturan untuk peringkat itu. Kodeks ini tidak mencatat pertandingan.",
+    "description": "Peringkat A.C.E dijelaskan. Setiap pertanyaan membuka jawaban lengkap tentang Rating Points dan aturan untuk peringkat itu. Kodeks ini tidak mencatat pertandingan.",
     "articleTitle": "{title} — Kodeks Kalibrasi"
   },
   "groups": {
@@ -31,7 +31,7 @@ export const codex: TextBag["codex"] = {
     "searchLabel": "Cari di kodeks",
     "searchPlaceholder": "Coba 1950, Recruit, atau seri",
     "empty": "Tidak ada entri yang cocok dengan pencarian itu.",
-    "columnLabel": "Kolom A.C.E. {n}",
+    "columnLabel": "Kolom A.C.E {n}",
     "pagerLabel": "Halaman kodeks",
     "first": "Pertama",
     "previous": "Sebelumnya",
@@ -40,7 +40,7 @@ export const codex: TextBag["codex"] = {
     "pageOf": "Halaman {n} dari {m}"
   },
   "article": {
-    "breadcrumb": "A.C.E. · Kodeks Kalibrasi",
+    "breadcrumb": "A.C.E · Kodeks Kalibrasi",
     "status": "Halaman ini menjelaskan tangga tertulis. Halaman ini tidak mencatat pertandingan dan tidak mengubah rating yang disimpan.",
     "emblemAlt": "Lambang {name}, peringkat {level}",
     "emblemCaption": "Peringkat {level} · {name} · {crystal}",
@@ -63,7 +63,7 @@ export const codex: TextBag["codex"] = {
     "turnLabel": "Lanjutkan membaca kodeks",
     "previous": "Sebelumnya",
     "next": "Berikutnya",
-    "alsoIn": "Juga di A.C.E.",
+    "alsoIn": "Juga di A.C.E",
     "backToBoard": "Kembali ke papan peringkat"
   },
   "rankArticle": {
@@ -124,20 +124,20 @@ export const codex: TextBag["codex"] = {
       "detail": "Rentang dari 1.800 sampai 1.949. Itu 150 poin, bukan 100. 1.949 masih memakai Sovereign. Legend terbuka di 1.950."
     },
     "rank-10-a-c-e-legend": {
-      "stance": "A.C.E. Legend adalah tanda terakhir. Label kristalnya ACE ELITE. Nama resminya A.C.E. Legend.",
+      "stance": "A.C.E Legend adalah tanda terakhir. Label kristalnya ACE ELITE. Nama resminya A.C.E Legend.",
       "detail": "Rentang terbuka di 1.950 dan berakhir di batas atas mesin, 3.000. Tidak ada peringkat kesebelas. Rating tersimpan tidak bisa naik melewati 3.000."
     }
   },
   "articles": {
     "what-a-rank-is": {
       "title": "Apa itu peringkat A.C.E.",
-      "lede": "Peringkat adalah tanda yang memuat Rating Points tersimpanmu. Sepuluh tanda mencakup seluruh tangga, dari Recruit sampai A.C.E. Legend.",
+      "lede": "Peringkat adalah tanda yang memuat Rating Points tersimpanmu. Sepuluh tanda mencakup seluruh tangga, dari Recruit sampai A.C.E Legend.",
       "sections": [
         {
           "heading": "Satu angka, satu tanda",
           "paragraphs": [
             "Akun menyimpan rating kompetitif. Tangga membaca angka itu dan mengembalikan peringkat tertinggi yang batas bawahnya sudah dicapai. Kamu tidak memegang dua peringkat sekaligus.",
-            "Recruit adalah peringkat 1. A.C.E. Legend adalah peringkat 10. Nama resmi adalah nama di tangga. Kata yang lebih pendek pada lambang adalah label kristal untuk peringkat yang sama.",
+            "Recruit adalah peringkat 1. A.C.E Legend adalah peringkat 10. Nama resmi adalah nama di tangga. Kata yang lebih pendek pada lambang adalah label kristal untuk peringkat yang sama.",
             "Kodeks ini menjelaskan tangga tertulis. Kodeks ini tidak mencatat pertandingan dan tidak mengubah rating yang disimpan."
           ]
         },
@@ -145,7 +145,7 @@ export const codex: TextBag["codex"] = {
           "heading": "Letak batas bawah",
           "paragraphs": [
             "Recruit mencakup awal tangga. Operative terbuka di 1.100. Dari Vanguard sampai Grandmaster, setiap batas bawah baru 100 poin lebih tinggi: 1.200, 1.300, 1.400, 1.500, 1.600, lalu 1.700.",
-            "Sovereign terbuka di 1.800 dan menahan akun sampai 1.949. A.C.E. Legend terbuka di 1.950. Batas atas mesin adalah 3.000, jadi Legend adalah rentang terpanjang."
+            "Sovereign terbuka di 1.800 dan menahan akun sampai 1.949. A.C.E Legend terbuka di 1.950. Batas atas mesin adalah 3.000, jadi Legend adalah rentang terpanjang."
           ]
         },
         {
@@ -164,14 +164,14 @@ export const codex: TextBag["codex"] = {
         {
           "heading": "Mengapa keduanya ada",
           "paragraphs": [
-            "Mesin dan profil memakai nama resmi: Recruit, Operative, Vanguard, Specialist, Veteran, Elite, Master, Grandmaster, Sovereign, A.C.E. Legend.",
+            "Mesin dan profil memakai nama resmi: Recruit, Operative, Vanguard, Specialist, Veteran, Elite, Master, Grandmaster, Sovereign, A.C.E Legend.",
             "Lambang juga membawa label kristal: IRON, BRONZE, SILVER, GOLD, PLATINUM, DIAMOND, MASTER, GRANDMASTER, IMMORTAL, ACE ELITE. Label itu karya seni. Tidak menciptakan peringkat kesebelas dan tidak menyimpan angka kedua."
           ]
         },
         {
           "heading": "Di mana keduanya berbeda",
           "paragraphs": [
-            "Label kristal Specialist adalah GOLD. Veteran PLATINUM. Elite DIAMOND. Sovereign IMMORTAL. A.C.E. Legend ACE ELITE. Dalam setiap kasus batas bawah tetap milik nama resmi.",
+            "Label kristal Specialist adalah GOLD. Veteran PLATINUM. Elite DIAMOND. Sovereign IMMORTAL. A.C.E Legend ACE ELITE. Dalam setiap kasus batas bawah tetap milik nama resmi.",
             "Master dan Grandmaster memakai kata yang sama di kedua tempat."
           ]
         }
@@ -287,7 +287,7 @@ export const codex: TextBag["codex"] = {
           "heading": "Titik henti",
           "paragraphs": [
             "Kalah di 100 Rating Points tetap di 100. Menang di 3.000 tetap di 3.000. Batas tangga Recruit tertulis 0, tetapi angka tersimpan tidak pernah memakai celah di bawah 100.",
-            "1.949 adalah Sovereign. 1.950 adalah A.C.E. Legend. Tidak ada tanda di antaranya."
+            "1.949 adalah Sovereign. 1.950 adalah A.C.E Legend. Tidak ada tanda di antaranya."
           ]
         },
         {
@@ -334,7 +334,7 @@ export const codex: TextBag["codex"] = {
           "heading": "Apa yang tidak dilakukan meja",
           "paragraphs": [
             "FIND MATCH tidak mencari lawan. Tidak mengubah Rating Points. Peringkat pada akun tetap angka tersimpan, dibaca oleh tangga di kodeks ini.",
-            "Tidak ada antrean puncak terpisah di atas Legend. A.C.E. Legend adalah tanda terakhir, dan terbuka di 1.950 Rating Points."
+            "Tidak ada antrean puncak terpisah di atas Legend. A.C.E Legend adalah tanda terakhir, dan terbuka di 1.950 Rating Points."
           ]
         }
       ]

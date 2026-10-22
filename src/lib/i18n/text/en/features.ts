@@ -2,18 +2,18 @@
   "page": {
     "meta": {
       "title": "Features",
-      "description": "Specified A.C.E. Anti-Cheat Kernel architecture, biometric Face Scan linkage, and ten skill calibration tiers. These systems are not live on this website."
+      "description": "Specified A.C.E Anti-Cheat Kernel architecture, biometric Face Scan linkage, and ten skill calibration tiers. These systems are not live on this website."
     },
     "header": {
       "kicker": "ACE-FEATURES / KERNEL / FACE-SCAN / CALIBRATION",
       "title": "Platform feature specification",
-      "lede": "This page is the production-grade technical map for three intended A.C.E. systems: the Autonomous Anti-Cheat Kernel, biometric Face Scan linkage, and the ten-tier skill calibration ladder. Nothing on this page is a live kernel, a live camera product, or a live ranked queue. Steam OpenID, 5v5 teams, bracket layouts, and Elo-style rating math exist in this repository. Dedicated CS2 servers, payments, prizes, and a downloadable integrity client do not."
+      "lede": "This page is the production-grade technical map for three intended A.C.E systems: the Autonomous Anti-Cheat Kernel, biometric Face Scan linkage, and the ten-tier skill calibration ladder. Nothing on this page is a live kernel, a live camera product, or a live ranked queue. Steam OpenID, 5v5 teams, bracket layouts, and Elo-style rating math exist in this repository. Dedicated CS2 servers, payments, prizes, and a downloadable integrity client do not."
     },
     "kernel": {
       "title": "Anti-Cheat Kernel architecture",
       "paragraphs": [
-        "The specified Autonomous Secure Shell is a hardware-linked integrity client that would run beside Counter-Strike 2 on a player machine and report a signed ALLOW or DENY state to A.C.E. managed servers. The kernel design is fail-closed: if the client is missing, stopped, outdated, spoofed, or unverified, ranked admission is denied. The browser is never an eligibility oracle. Ranked FIND MATCH on this website already fail-closes for that reason.",
-        "Intended kernel layers include a user-mode handshake that binds the verified 64-bit SteamID to the A.C.E. account, a hardware-identifier (HWID) attestation surface, a signature watchlist for known cheat families, and a server-to-server eligibility route protected by a shared secret. A cheat-signature validation, a refused integrity check, or a spoofed device identifier is specified to produce an immediate account status change to BANNED or PERM_BANNED and, when a billing product exists, complete forfeiture of prepaid subscription time with zero refund liability. No such client ships with this website. Coming Soon download cards are layout only."
+        "The specified Autonomous Secure Shell is a hardware-linked integrity client that would run beside Counter-Strike 2 on a player machine and report a signed ALLOW or DENY state to A.C.E managed servers. The kernel design is fail-closed: if the client is missing, stopped, outdated, spoofed, or unverified, ranked admission is denied. The browser is never an eligibility oracle. Ranked FIND MATCH on this website already fail-closes for that reason.",
+        "Intended kernel layers include a user-mode handshake that binds the verified 64-bit SteamID to the A.C.E account, a hardware-identifier (HWID) attestation surface, a signature watchlist for known cheat families, and a server-to-server eligibility route protected by a shared secret. A cheat-signature validation, a refused integrity check, or a spoofed device identifier is specified to produce an immediate account status change to BANNED or PERM_BANNED and, when a billing product exists, complete forfeiture of prepaid subscription time with zero refund liability. No such client ships with this website. Coming Soon download cards are layout only."
       ],
       "stats": [
         {
@@ -33,7 +33,7 @@
     "faceScan": {
       "title": "Biometric Face Scan linkage",
       "paragraphs": [
-        "Face Scan is a specified future identity-binding layer, not a camera product on this website. The intended design would, only after explicit consent and a separate legal review, bind a liveness-checked facial template to the same A.C.E. account that already holds a server-verified SteamID. The purpose is to resist account sharing used to evade a prior restriction. A.C.E. does not collect facial images, facial embeddings, email addresses, or hardware fingerprints today. The live privacy posture remains Strict Necessity: verified 64-bit SteamID and public Steam display name only.",
+        "Face Scan is a specified future identity-binding layer, not a camera product on this website. The intended design would, only after explicit consent and a separate legal review, bind a liveness-checked facial template to the same A.C.E account that already holds a server-verified SteamID. The purpose is to resist account sharing used to evade a prior restriction. A.C.E does not collect facial images, facial embeddings, email addresses, or hardware fingerprints today. The live privacy posture remains Strict Necessity: verified 64-bit SteamID and public Steam display name only.",
         "If Face Scan is ever implemented, it will not replace Steam OpenID, will not be used to sell behavioral advertising, and will not unlock ranked queues by itself. Ranked admission still requires a verified Anti-Cheat path. Until that review exists, any Face Scan panel in the lobby is a design preview."
       ]
     },
@@ -55,8 +55,8 @@
   },
   "loot": {
     "kicker": "Cosmetics · coming soon",
-    "title": "A.C.E. LOOT ARCHITECTURE — WEAPON DROPS",
-    "lede": "Original A.C.E. finishes, arriving with the shop. Cosmetics never affect competition.",
+    "title": "A.C.E LOOT ARCHITECTURE — WEAPON DROPS",
+    "lede": "Original A.C.E finishes, arriving with the shop. Cosmetics never affect competition.",
     "checkout": "Checkout · coming soon"
   },
   "identityPreview": {
@@ -83,23 +83,23 @@
       },
       "anti-cheat": {
         "title": "Anti-Cheat Overview",
-        "body": "A.C.E. does not have a working Anti-Cheat product. Ranked matchmaking stays closed until a real integration exists."
+        "body": "A.C.E does not have a working Anti-Cheat product. Ranked matchmaking stays closed until a real integration exists."
       },
       "download-client": {
         "title": "Download Client",
-        "body": "There is no A.C.E. desktop client to download. A native client is not in the current web stage."
+        "body": "There is no A.C.E desktop client to download. A native client is not in the current web stage."
       },
       "mobile-app": {
         "title": "Mobile App",
-        "body": "The A.C.E. mobile app is on the roadmap."
+        "body": "The A.C.E mobile app is on the roadmap."
       },
       "news": {
         "title": "News",
-        "body": "The A.C.E. newsroom opens soon."
+        "body": "The A.C.E newsroom opens soon."
       },
       "about": {
         "title": "About Us",
-        "body": "A.C.E. is an independent Counter-Strike 2 competition site in public website preview. It is not affiliated with Valve."
+        "body": "A.C.E is an independent Counter-Strike 2 competition site in public website preview. It is not affiliated with Valve."
       },
       "advertising": {
         "title": "Advertising",

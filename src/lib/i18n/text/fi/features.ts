@@ -4,18 +4,18 @@ export const features: TextBag["features"] = {
   "page": {
     "meta": {
       "title": "Ominaisuudet",
-      "description": "Määritelty A.C.E. Anti-Cheat -ytimen arkkitehtuuri, biometrinen Face Scan -kytkentä ja kymmenen taitokalibrointitasoa. Nämä järjestelmät eivät ole käytössä tällä sivustolla."
+      "description": "Määritelty A.C.E Anti-Cheat -ytimen arkkitehtuuri, biometrinen Face Scan -kytkentä ja kymmenen taitokalibrointitasoa. Nämä järjestelmät eivät ole käytössä tällä sivustolla."
     },
     "header": {
       "kicker": "ACE-OMINAISUUDET / YDIN / FACE-SCAN / KALIBROINTI",
       "title": "Alustan ominaisuusmäärittely",
-      "lede": "Tämä sivu on tuotantotason tekninen kartta kolmelle suunnitellulle A.C.E.-järjestelmälle: autonominen huijauksenestoydin, biometrinen Face Scan -kytkentä ja kymmenportainen taitokalibrointi. Mikään tällä sivulla ei ole toimiva ydin, toimiva kameratuote tai toimiva ranked-jono. Steam OpenID, 5v5-joukkueet, kaavioasettelut ja Elo-tyyppinen luokituslaskenta ovat tässä repositoriossa. Omistettuja CS2-palvelimia, maksuja, palkintoja ja ladattavaa eheysasiakasta ei ole."
+      "lede": "Tämä sivu on tuotantotason tekninen kartta kolmelle suunnitellulle A.C.E-järjestelmälle: autonominen huijauksenestoydin, biometrinen Face Scan -kytkentä ja kymmenportainen taitokalibrointi. Mikään tällä sivulla ei ole toimiva ydin, toimiva kameratuote tai toimiva ranked-jono. Steam OpenID, 5v5-joukkueet, kaavioasettelut ja Elo-tyyppinen luokituslaskenta ovat tässä repositoriossa. Omistettuja CS2-palvelimia, maksuja, palkintoja ja ladattavaa eheysasiakasta ei ole."
     },
     "kernel": {
       "title": "Anti-Cheat-ytimen arkkitehtuuri",
       "paragraphs": [
-        "Määritelty Autonomous Secure Shell on laitteistoon sidottu eheysasiakas, joka toimisi Counter-Strike 2:n rinnalla pelaajan koneella ja raportoisi allekirjoitetun ALLOW- tai DENY-tilan A.C.E.:n hallinnoimille palvelimille. Ytimen suunnittelu on fail-closed: jos asiakas puuttuu, on pysäytetty, vanhentunut, väärennetty tai vahvistamaton, ranked-pääsy evätään. Selain ei koskaan ole kelpoisuuden ratkaisija. Ranked ETSI OTTELU tällä sivustolla on jo suljettu tästä syystä.",
-        "Suunniteltuihin ydinkerroksiin kuuluvat käyttäjätilan kättely, joka sitoo vahvistetun 64-bittisen SteamID:n A.C.E.-tiliin, laitteistotunnisteen (HWID) todennuspinta, tunnettujen huijausperheiden allekirjoitusseurantalista ja jaetulla salaisuudella suojattu palvelimelta palvelimelle -kelpoisuusreitti. Huijausallekirjoituksen tunnistus, kieltäytyminen eheystarkistuksesta tai väärennetty laitetunniste on määritelty aiheuttamaan välittömän tilin tilamuutoksen BANNED- tai PERM_BANNED-tilaan ja, kun laskutustuote on olemassa, ennalta maksetun tilausajan täydellisen menetyksen ilman hyvitysvelvollisuutta. Tällaista asiakasta ei toimiteta tämän sivuston mukana. Tulossa pian -latauskortit ovat vain asettelua."
+        "Määritelty Autonomous Secure Shell on laitteistoon sidottu eheysasiakas, joka toimisi Counter-Strike 2:n rinnalla pelaajan koneella ja raportoisi allekirjoitetun ALLOW- tai DENY-tilan A.C.E:n hallinnoimille palvelimille. Ytimen suunnittelu on fail-closed: jos asiakas puuttuu, on pysäytetty, vanhentunut, väärennetty tai vahvistamaton, ranked-pääsy evätään. Selain ei koskaan ole kelpoisuuden ratkaisija. Ranked ETSI OTTELU tällä sivustolla on jo suljettu tästä syystä.",
+        "Suunniteltuihin ydinkerroksiin kuuluvat käyttäjätilan kättely, joka sitoo vahvistetun 64-bittisen SteamID:n A.C.E-tiliin, laitteistotunnisteen (HWID) todennuspinta, tunnettujen huijausperheiden allekirjoitusseurantalista ja jaetulla salaisuudella suojattu palvelimelta palvelimelle -kelpoisuusreitti. Huijausallekirjoituksen tunnistus, kieltäytyminen eheystarkistuksesta tai väärennetty laitetunniste on määritelty aiheuttamaan välittömän tilin tilamuutoksen BANNED- tai PERM_BANNED-tilaan ja, kun laskutustuote on olemassa, ennalta maksetun tilausajan täydellisen menetyksen ilman hyvitysvelvollisuutta. Tällaista asiakasta ei toimiteta tämän sivuston mukana. Tulossa pian -latauskortit ovat vain asettelua."
       ],
       "stats": [
         {
@@ -35,7 +35,7 @@ export const features: TextBag["features"] = {
     "faceScan": {
       "title": "Biometrinen Face Scan -kytkentä",
       "paragraphs": [
-        "Face Scan on määritelty tuleva identiteetin sidontakerros, ei kameratuote tällä sivustolla. Suunniteltu malli sitoisi vain nimenomaisen suostumuksen ja erillisen oikeudellisen arvioinnin jälkeen elävyystarkistetun kasvopohjan samaan A.C.E.-tiliin, jolla on jo palvelimen vahvistama SteamID. Tarkoitus on estää tilien jakamista aiemman rajoituksen kiertämiseksi. A.C.E. ei tänään kerää kasvokuvia, kasvoupotuksia, sähköpostiosoitteita tai laitteistosormenjälkiä. Voimassa oleva tietosuojalinja on Välttämättömyys: vain vahvistettu 64-bittinen SteamID ja julkinen Steam-näyttönimi.",
+        "Face Scan on määritelty tuleva identiteetin sidontakerros, ei kameratuote tällä sivustolla. Suunniteltu malli sitoisi vain nimenomaisen suostumuksen ja erillisen oikeudellisen arvioinnin jälkeen elävyystarkistetun kasvopohjan samaan A.C.E-tiliin, jolla on jo palvelimen vahvistama SteamID. Tarkoitus on estää tilien jakamista aiemman rajoituksen kiertämiseksi. A.C.E ei tänään kerää kasvokuvia, kasvoupotuksia, sähköpostiosoitteita tai laitteistosormenjälkiä. Voimassa oleva tietosuojalinja on Välttämättömyys: vain vahvistettu 64-bittinen SteamID ja julkinen Steam-näyttönimi.",
         "Jos Face Scan koskaan toteutetaan, se ei korvaa Steam OpenID:tä, sitä ei käytetä käyttäytymispohjaisen mainonnan myyntiin, eikä se yksinään avaa ranked-jonoja. Ranked-pääsy vaatii edelleen vahvistetun huijauksenestopolun. Kunnes arviointi on tehty, mikä tahansa aulan Face Scan -paneeli on suunnitteluesikatselu."
       ]
     },
@@ -57,8 +57,8 @@ export const features: TextBag["features"] = {
   },
   "loot": {
     "kicker": "Kosmetiikka · tulossa pian",
-    "title": "A.C.E. LOOT-ARKKITEHTUURI — ASEPUDOTUKSET",
-    "lede": "Alkuperäiset A.C.E.-viimeistelyt saapuvat kaupan myötä. Kosmetiikka ei koskaan vaikuta kilpailuun.",
+    "title": "A.C.E LOOT-ARKKITEHTUURI — ASEPUDOTUKSET",
+    "lede": "Alkuperäiset A.C.E-viimeistelyt saapuvat kaupan myötä. Kosmetiikka ei koskaan vaikuta kilpailuun.",
     "checkout": "Kassa · tulossa pian"
   },
   "identityPreview": {
@@ -85,23 +85,23 @@ export const features: TextBag["features"] = {
       },
       "anti-cheat": {
         "title": "Huijauksenesto yleiskatsaus",
-        "body": "A.C.E.:llä ei ole toimivaa huijauksenestotuotetta. Ranked-matchmaking pysyy suljettuna, kunnes todellinen integraatio on olemassa."
+        "body": "A.C.E:llä ei ole toimivaa huijauksenestotuotetta. Ranked-matchmaking pysyy suljettuna, kunnes todellinen integraatio on olemassa."
       },
       "download-client": {
         "title": "Lataa asiakas",
-        "body": "Ladattavaa A.C.E.-työpöytäasiakasta ei ole. Natiiviasiakas ei kuulu nykyiseen verkkovaiheeseen."
+        "body": "Ladattavaa A.C.E-työpöytäasiakasta ei ole. Natiiviasiakas ei kuulu nykyiseen verkkovaiheeseen."
       },
       "mobile-app": {
         "title": "Mobiilisovellus",
-        "body": "A.C.E.-mobiilisovellus on tiekartalla."
+        "body": "A.C.E-mobiilisovellus on tiekartalla."
       },
       "news": {
         "title": "Uutiset",
-        "body": "A.C.E.-uutishuone avautuu pian."
+        "body": "A.C.E-uutishuone avautuu pian."
       },
       "about": {
         "title": "Tietoa meistä",
-        "body": "A.C.E. on itsenäinen Counter-Strike 2 -kilpailusivusto julkisessa esikatseluvaiheessa. Se ei ole Valven kumppani."
+        "body": "A.C.E on itsenäinen Counter-Strike 2 -kilpailusivusto julkisessa esikatseluvaiheessa. Se ei ole Valven kumppani."
       },
       "advertising": {
         "title": "Mainonta",

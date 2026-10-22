@@ -1,4 +1,4 @@
-// Builds optimized WebP variants of the original A.C.E. weapon art.
+// Builds optimized WebP variants of the original A.C.E weapon art.
 // Source: a folder of 16:9 JPGs (default ../weapons-ace). Output: public/images/weapons/<slug>-{640,1280,2560}.webp
 import sharp from "sharp";
 import { readdirSync, mkdirSync } from "node:fs";

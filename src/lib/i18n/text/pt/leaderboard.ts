@@ -8,7 +8,7 @@ export const leaderboard: TextBag["leaderboard"] = {
   "hero": {
     "kicker": "CLASSIFICAÇÃO",
     "title": "Quadro competitivo",
-    "note": "Até os jogadores associarem a conta Steam e obterem uma classificação, o quadro mostra lugares de demonstração. O país e a arma em destaque são ilustrativos. As imagens das armas são arte original do estúdio A.C.E., não skins da Valve. As eliminações ainda não são registadas, por isso a arma em destaque não é uma estatística de melhor jogador."
+    "note": "Até os jogadores associarem a conta Steam e obterem uma classificação, o quadro mostra lugares de demonstração. O país e a arma em destaque são ilustrativos. As imagens das armas são arte original do estúdio A.C.E, não skins da Valve. As eliminações ainda não são registadas, por isso a arma em destaque não é uma estatística de melhor jogador."
   },
   "facts": {
     "seats": "Lugares",

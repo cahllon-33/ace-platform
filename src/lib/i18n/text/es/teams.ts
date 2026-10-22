@@ -18,7 +18,7 @@ export const teams: TextBag["teams"] = {
     "yes": "Sí, cinco jugadores",
     "no": "No, dejar las plazas abiertas",
     "seatsOpen": "Las cinco plazas siguen abiertas. No se guardó nada.",
-    "connectSteam": "Conecta Steam primero. El botón vuelve a esta página. A.C.E. nunca pide una contraseña de Steam.",
+    "connectSteam": "Conecta Steam primero. El botón vuelve a esta página. A.C.E nunca pide una contraseña de Steam.",
     "alreadyMember": "{name} ya pertenece a {team}. Este formulario no crea un segundo clan.",
     "thisAccount": "Esta cuenta",
     "acceptTerms": "Acepta los términos antes de guardar un clan.",
@@ -26,7 +26,7 @@ export const teams: TextBag["teams"] = {
     "clanName": "Nombre del clan",
     "captainSeat": "Plaza 1, capitán: {name}",
     "signedInSteam": "Cuenta de Steam con sesión iniciada",
-    "seatLabel": "SteamID o ID de cuenta A.C.E. de la plaza {seat}",
+    "seatLabel": "SteamID o ID de cuenta A.C.E de la plaza {seat}",
     "submit": "Guardar el clan de cinco jugadores",
     "saved": "El nombre del clan se ha guardado y hay cuatro invitaciones pendientes. Esos jugadores no están en la plantilla hasta que acepten. Esto no es una plaza en el cuadro de 100 equipos. No se cobró nada."
   },
@@ -42,7 +42,7 @@ export const teams: TextBag["teams"] = {
       "email": "No se envía ningún correo. Los recibos de plan se quedan en este sitio.",
       "charge": "Premium cuesta $7 al mes. Próximamente: aún no hay pago, así que no se cobra nada.",
       "board": "Un clan guardado es un registro de plantilla. No se coloca en el cuadro de 100 equipos. Ese cuadro sigue mostrando 0 inscritos hasta que se abra una temporada.",
-      "steam": "El inicio de sesión usa el Steam OpenID oficial. A.C.E. nunca pide una contraseña de Steam. Desde esta página, Steam te devuelve aquí.",
+      "steam": "El inicio de sesión usa el Steam OpenID oficial. A.C.E nunca pide una contraseña de Steam. Desde esta página, Steam te devuelve aquí.",
       "roster": "La plaza 1 es el capitán con sesión iniciada. Las plazas 2 a 5 ya deben tener cuentas A.C.E. Las invitaciones siguen pendientes hasta que cada jugador acepte.",
       "badge": "Las insignias de cada puesto serán comprobaciones reales de A.C.E Shield cuando se lance el anti-cheat.",
       "support": "Abre Soporte o Contacto en este sitio web. Un aviso de soporte no abre un ticket, y el texto escrito en Contacto no se entrega.",
@@ -63,11 +63,11 @@ export const teams: TextBag["teams"] = {
   },
   "tournaments": {
     "meta": {
-      "title": "Campeonato A.C.E. — Eliminatoria de élite de 100 equipos",
+      "title": "Campeonato A.C.E — Eliminatoria de élite de 100 equipos",
       "description": "La eliminatoria de 100 equipos. Haz clic en un clan para abrir su plantilla y luego cada perfil de jugador. Las inscripciones abrirán pronto."
     },
     "intro": {
-      "title": "CAMPEONATO A.C.E. — ELIMINATORIA DE ÉLITE DE 100 EQUIPOS",
+      "title": "CAMPEONATO A.C.E — ELIMINATORIA DE ÉLITE DE 100 EQUIPOS",
       "lede": "El cuadro publicado es una eliminatoria de 100 equipos. El gráfico de abajo es ese diseño. Al hacer clic en un clan se abre el panel de su plantilla. La inscripción es 0 de 100. No se anuncia ni se financia ningún premio en metálico.",
       "formatValue": "Matriz de cuadro de 100 equipos",
       "briefTitle": "Informe de operaciones de 100 equipos",
@@ -110,7 +110,7 @@ export const teams: TextBag["teams"] = {
       "count": "Clan {index} de {total}",
       "next": "Clan siguiente",
       "close": "Cerrar perfil",
-      "disclosure": "La configuración y el inventario de los jugadores aparecerán aquí cuando decidan compartirlos. A.C.E. no recopila datos de hardware."
+      "disclosure": "La configuración y el inventario de los jugadores aparecerán aquí cuando decidan compartirlos. A.C.E no recopila datos de hardware."
     },
     "player": {
       "level": "NV {level} · RP {rating}",
@@ -140,14 +140,14 @@ export const teams: TextBag["teams"] = {
     "monitor": "Frecuencia de actualización · no compartida",
     "headset": "No compartido"
   },
-  "profileDisclosure": "A.C.E. no guarda inventarios de hardware y no ejecuta ningún cliente de anticheat. Los gráficos de tendencia de rendimiento y la matriz de combate requieren una sesión de A.C.E. Plus o Premium. Un enlace de perfil de Steam escrito en esta página no se guarda y no es un identificador oficial.",
+  "profileDisclosure": "A.C.E no guarda inventarios de hardware y no ejecuta ningún cliente de anticheat. Los gráficos de tendencia de rendimiento y la matriz de combate requieren una sesión de A.C.E Plus o Premium. Un enlace de perfil de Steam escrito en esta página no se guarda y no es un identificador oficial.",
   "errors": {
     "signInRequired": "Es necesario iniciar sesión.",
     "nameLength": "Los nombres de equipo deben tener entre 2 y 32 caracteres.",
     "alreadyCaptain": "Esta cuenta ya es capitana de un equipo.",
     "nameTaken": "Ya existe un equipo con ese nombre.",
     "idRequired": "Se necesita un SteamID o un ID de cuenta A.C.E.",
-    "noAccountForToken": "No existe ninguna cuenta A.C.E. para ese SteamID o ID de cuenta.",
+    "noAccountForToken": "No existe ninguna cuenta A.C.E para ese SteamID o ID de cuenta.",
     "clanNeedsFour": "Un clan de cinco jugadores necesita al capitán con sesión iniciada más cuatro SteamID.",
     "seatNeedsId": "Cada una de las cuatro plazas necesita un SteamID o un ID de cuenta A.C.E.",
     "seatsDistinct": "Cada plaza necesita un jugador distinto.",
@@ -157,7 +157,7 @@ export const teams: TextBag["teams"] = {
     "captainOnly": "Solo el capitán designado puede enviar invitaciones.",
     "rosterLimit": "Una plantilla de CS2 tiene cinco jugadores, incluido el capitán.",
     "alreadyOnRoster": "Ese jugador ya está en la plantilla.",
-    "noAccountForId": "No existe ninguna cuenta A.C.E. para ese ID.",
+    "noAccountForId": "No existe ninguna cuenta A.C.E para ese ID.",
     "inviteNotFound": "No se encontró la invitación.",
     "inviteNotPending": "Esta invitación ya no está pendiente.",
     "rosterFull": "La plantilla ya está completa.",

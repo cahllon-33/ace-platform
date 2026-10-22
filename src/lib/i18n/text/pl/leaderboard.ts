@@ -8,7 +8,7 @@ export const leaderboard: TextBag["leaderboard"] = {
   "hero": {
     "kicker": "TABELA",
     "title": "Tabela turniejowa",
-    "note": "Dopóki gracze nie połączą konta Steam i nie zdobędą rankingu, tablicę wypełniają miejsca prezentacyjne. Ich kraj i wyróżniona broń mają charakter poglądowy. Rendery broni to oryginalne grafiki studia A.C.E., nie skórki Valve. Zabójstwa nie są jeszcze rejestrowane, więc wyróżniona broń nie jest statystyką najlepszego fragera."
+    "note": "Dopóki gracze nie połączą konta Steam i nie zdobędą rankingu, tablicę wypełniają miejsca prezentacyjne. Ich kraj i wyróżniona broń mają charakter poglądowy. Rendery broni to oryginalne grafiki studia A.C.E, nie skórki Valve. Zabójstwa nie są jeszcze rejestrowane, więc wyróżniona broń nie jest statystyką najlepszego fragera."
   },
   "facts": {
     "seats": "Miejsca",

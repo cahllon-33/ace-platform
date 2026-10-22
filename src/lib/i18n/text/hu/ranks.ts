@@ -62,7 +62,7 @@ export const ranks: TextBag["ranks"] = {
     "kicker": "PRÉMIUM RANGOK",
     "plan": "A.C.E PREMIUM · csak 7 $/hó",
     "title": "Prémium ranggrafika",
-    "lede": "Az eredeti illusztrált A.C.E. rangkészlet: tíz kristályembléma III/II/I divíziókkal, az értékelési protokoll, a Legend részletkártya és a húzással forgatható 3D nézegető. Ez profilgrafika a Premium tagoknak. Ugyanazt a Rating Points létrát olvassa, mint a standard rangok, és semmilyen versenyelőnyt nem ad.",
+    "lede": "Az eredeti illusztrált A.C.E rangkészlet: tíz kristályembléma III/II/I divíziókkal, az értékelési protokoll, a Legend részletkártya és a húzással forgatható 3D nézegető. Ez profilgrafika a Premium tagoknak. Ugyanazt a Rating Points létrát olvassa, mint a standard rangok, és semmilyen versenyelőnyt nem ad.",
     "demo": "Demóértékek: a táblán látható haladás, győzelmi arány és divízió minták, nem élő statisztikák. Bejelentkezve a megjelenített értékelés a tárolt értékelésed.",
     "locked": "Hamarosan: fizetés még nincs, így ma egyetlen fiók sem Premium. A szerver csak akkor alkalmaz prémium ranggrafikát egy profilra, ha a tárolt csomagja Premium.",
     "standardKicker": "STANDARD RANGOK",
@@ -77,12 +77,12 @@ export const ranks: TextBag["ranks"] = {
   },
   "meta": {
     "title": "Versenyrangok",
-    "description": "A tíz A.C.E. rang az Iron Recruittól az A.C.E. Legendig, divíziókkal és értékelési alsó határokkal."
+    "description": "A tíz A.C.E rang az Iron Recruittól az A.C.E Legendig, divíziókkal és értékelési alsó határokkal."
   },
   "hero": {
     "kicker": "KALIBRÁCIÓ",
     "title": "Versenyrangok",
-    "lede": "Tíz szint a Recruittól az A.C.E. Legendig, mindegyik {divisions} divízióval. Húzd vagy használd a nyílbillentyűket az embléma forgatásához. Bejelentkezve a saját értékelésedet látod, egyébként minden szint alsó határát."
+    "lede": "Tíz szint a Recruittól az A.C.E Legendig, mindegyik {divisions} divízióval. Húzd vagy használd a nyílbillentyűket az embléma forgatásához. Bejelentkezve a saját értékelésedet látod, egyébként minden szint alsó határát."
   },
   "codexLink": "Kalibrációs kódex megnyitása",
   "document": {
@@ -134,9 +134,9 @@ export const ranks: TextBag["ranks"] = {
     }
   },
   "board": {
-    "selectEmblem": "A.C.E. {name} rangembléma kiválasztása, {level}. szint",
-    "emblemAlt": "A.C.E. egyedi 3D kristályos {level}. szintű {crystal} {name} embléma profiljelvény",
-    "emblemAltLegend": "A.C.E. egyedi 3D kristályos {level}. szintű embléma profiljelvény",
+    "selectEmblem": "A.C.E {name} rangembléma kiválasztása, {level}. szint",
+    "emblemAlt": "A.C.E egyedi 3D kristályos {level}. szintű {crystal} {name} embléma profiljelvény",
+    "emblemAltLegend": "A.C.E egyedi 3D kristályos {level}. szintű embléma profiljelvény",
     "premium": "CSÚCSSZINT"
   },
   "division": {

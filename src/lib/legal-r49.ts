@@ -1,21 +1,34 @@
 /**
  * R49 legal drafts (English, binding version). Original A.C.E-specific text, not copied from any other platform.
- * Placeholders in [BRACKETS] must be filled by the operator before launch. They are deliberately visible.
+ * Operator details are filled in. The contact email and effective date are config values:
+ *  - ACE_CONTACT_EMAIL: when unset, every email line is hidden (and "{contact}" falls back to the Support page).
+ *  - ACE_LEGAL_EFFECTIVE_DATE: defaults to the build (deploy) date, see next.config.ts.
  */
-export const LEGAL_R49_EFFECTIVE = "[EFFECTIVE DATE]";
-export const LEGAL_PLACEHOLDERS = ["[OPERATOR NAME]", "[OPERATOR ADDRESS]", "[CONTACT EMAIL]", "[GOVERNING LAW COUNTRY]", "[EFFECTIVE DATE]", "[DEMO RETENTION PERIOD]"] as const;
+export const LEGAL_R49_EFFECTIVE = process.env.ACE_LEGAL_EFFECTIVE_DATE || "";
+/** Placeholders still open (only the contact email, until ACE_CONTACT_EMAIL is set). */
+export const LEGAL_PLACEHOLDERS = [] as const;
 
 export type LegalDoc = { kicker: string; title: string; lede: string; sections: { title: string; body: string[] }[] };
 
-const OP = "[OPERATOR NAME]";
-const MAIL = "[CONTACT EMAIL]";
+const OP = "Daniel Kahlon, operating A.C.E";
+const ADDRESS = "Bat Yam, Israel";
+/** Single contact source (env ACE_CONTACT_EMAIL, inlined at build). "" = not set: email lines are hidden. */
+export const CONTACT_EMAIL = (process.env.ACE_CONTACT_EMAIL || "").trim();
+/** Token in the legal text; resolved by resolveContact(). [[...]] marks a segment dropped when no email is set. */
+const MAIL = "{contact}";
+
+/** Fill {contact} with the configured email, or drop [[optional]] segments and fall back to the Support page. */
+export function resolveContact(text: string, email: string = CONTACT_EMAIL): string {
+  if (email) return text.replace(/\[\[|\]\]/g, "").replaceAll("{contact}", email);
+  return text.replace(/\[\[[^\]]*\]\]\s?/g, "").replaceAll("{contact}", "our Support page (/support)").replace(/\s+([.,])/g, "$1");
+}
 
 export const TERMS: LegalDoc = {
   kicker: "A.C.E / TERMS OF SERVICE",
   title: "Terms of Service",
   lede: `These Terms are an agreement between you and ${OP} ("A.C.E", "we", "us"), the operator of the A.C.E competitive Counter-Strike 2 platform. By signing in or paying for anything on A.C.E you accept them.`,
   sections: [
-    { title: "Who we are", body: [`A.C.E is operated by ${OP}, [OPERATOR ADDRESS]. Contact: ${MAIL}. A.C.E is an independent community platform. It is not affiliated with, endorsed by or sponsored by Valve Corporation. Counter-Strike and Steam are trademarks of Valve Corporation.`] },
+    { title: "Who we are", body: [`A.C.E is operated by ${OP}, ${ADDRESS}. [[Contact: ${MAIL}. ]]A.C.E is an independent community platform. It is not affiliated with, endorsed by or sponsored by Valve Corporation. Counter-Strike and Steam are trademarks of Valve Corporation.`] },
     { title: "Your account", body: ["You sign in with your Steam account through Steam OpenID. We never see your Steam password. One person, one A.C.E account: sharing, selling or buying accounts, boosting and using a second account to dodge a restriction are not allowed.", "You must be old enough to use Steam in your country and, if you are under the age of majority where you live, you need a parent or guardian's permission to buy anything."] },
     { title: "Fair play", body: ["Cheats, scripts, exploits, macros that automate play, ghosting, match fixing and harassment are prohibited. The Competitive Rulebook at /rules is part of these Terms. We may warn, restrict, suspend or close an account that breaks these Terms or the Rulebook, and we may void match results and rating changes connected to the violation. A paid plan or purchase never protects an account from enforcement."] },
     { title: "Plans: A.C.E PLUS and A.C.E PREMIUM", body: ["A.C.E PLUS costs US$4 per month and A.C.E PREMIUM costs US$7 per month (local taxes may be added at checkout). Plans renew automatically every month until you cancel. You can cancel at any time from Manage subscription on your account page; your plan stays active until the end of the period you already paid for.", "Plans are cosmetic and convenience features only. No plan, cosmetic or purchase gives any gameplay advantage, changes matchmaking, or adds rating points (RP). Rank names and the ranking system are the same for every player."] },
@@ -28,18 +41,18 @@ export const TERMS: LegalDoc = {
     { title: "Liability", body: ["A.C.E is provided as is. To the extent the law allows, we are not liable for indirect or consequential loss, and our total liability to you is limited to the amount you paid us in the 12 months before the claim. Nothing in these Terms limits liability that cannot be limited by law, or your statutory rights as a consumer."] },
     { title: "Ending your account", body: [`You can stop using A.C.E at any time and ask us to delete your account at ${MAIL} (see the Privacy Policy). We may end these Terms if you seriously or repeatedly break them.`] },
     { title: "Changes to these Terms", body: ["We may update these Terms. The new version is published here with a new effective date. A material change takes effect 14 days after publication and never applies to a billing period that has already started."] },
-    { title: "Law and disputes", body: [`These Terms are governed by the law of [GOVERNING LAW COUNTRY]. If you are a consumer, you also keep the protection of the mandatory law of the country where you live and may bring a claim there. Please contact ${MAIL} first so we can try to solve the problem.`] },
+    { title: "Law and disputes", body: [`These Terms are governed by the law of Israel, and the competent courts of Tel Aviv, Israel have jurisdiction. If you are a consumer, you also keep the protection of the mandatory law of the country where you live and may bring a claim there. Please contact ${MAIL} first so we can try to solve the problem.`] },
   ],
 };
 
 export const PRIVACY: LegalDoc = {
   kicker: "A.C.E / PRIVACY POLICY",
   title: "Privacy Policy",
-  lede: `This policy explains what personal data A.C.E collects, why, and your rights. The controller is ${OP}, [OPERATOR ADDRESS], ${MAIL}.`,
+  lede: `This policy explains what personal data A.C.E collects, why, and your rights. The controller is ${OP}, ${ADDRESS}[[, ${MAIL}]].`,
   sections: [
     { title: "Data from Steam sign-in", body: ["When you sign in through Steam OpenID we receive your SteamID64. We then read your public Steam profile (persona name, avatar and profile URL) through the Steam Web API. We never receive your Steam password or payment details. Purpose: creating and securing your account (contract)."] },
     { title: "Account and gameplay data", body: ["We store your A.C.E profile, optional contact email, team memberships, rating points, rank, wins and losses, match statistics (such as kills, deaths, assists, damage and MVPs), queue and ready-check activity, reports you file or that concern you, and moderation records. Purpose: running ranked matches, leaderboards, tournaments and fair-play enforcement (contract and legitimate interest in fair competition)."] },
-    { title: "Match servers, demos and GOTV", body: ["Matches are played on game servers hosted by DatHost. The server sees your IP address while you are connected, and server logs may contain it. Matches may be recorded as GOTV demo files (which contain player names, SteamIDs, chat and in-game movement) and may be broadcast through GOTV with a delay. Demos are kept for review of disputes and cheating reports and are deleted when no longer needed, normally within [DEMO RETENTION PERIOD]. Purpose: fair play and dispute resolution (legitimate interest)."] },
+    { title: "Match servers, demos and GOTV", body: ["Matches are played on game servers hosted by DatHost. The server sees your IP address while you are connected, and server logs may contain it. Matches may be recorded as GOTV demo files (which contain player names, SteamIDs, chat and in-game movement) and may be broadcast through GOTV with a delay. Demos are kept for review of disputes and cheating reports and are deleted when no longer needed, normally within 30 days. Purpose: fair play and dispute resolution (legitimate interest)."] },
     { title: "Payments", body: ["Paddle.com is our Merchant of Record. Paddle collects and processes your payment details, billing address and tax information as an independent controller under its own privacy policy (paddle.com/legal/privacy). We receive from Paddle only what we need to run your plan or order: a customer ID, subscription or transaction ID, plan or item, status, dates and amounts. We never receive your full card number."] },
     { title: "Cookies and local storage", body: ["We use a small number of strictly necessary cookies (sign-in session, language, admin security) and local storage for your cookie choice and interface settings. Details are in the Cookie Policy at /cookies."] },
     { title: "Who we share data with", body: ["Processors that help us run A.C.E: our hosting and database providers (Vercel and Neon), DatHost (game servers), Paddle (payments, as Merchant of Record), and Valve (Steam sign-in and profile data). Public profile, leaderboard and match data are visible to other visitors by design. We do not sell personal data and do not use it for third-party advertising."] },
@@ -60,7 +73,7 @@ export const REFUNDS: LegalDoc = {
     { title: "Renewals", body: ["Monthly renewals can be refunded within 14 days of the renewal payment if you have not used the paid features in that period. You can cancel at any time to stop the next renewal; you keep access until the end of the paid period."] },
     { title: "Tournament entry fees", body: ["Entry fees are refundable until registration closes. If we cancel a paid tournament, every entry fee is refunded automatically. After the tournament starts, or if a team is disqualified for breaking the Rulebook, the entry fee is not refunded."] },
     { title: "Cases we always refund", body: ["Duplicate charges, charges after you cancelled, a purchase that was never delivered to your account, and a paid feature or event we discontinue before you could use it."] },
-    { title: "How to request a refund", body: ["Use the receipt email from Paddle (paddle.net) or Manage subscription on your account page, or contact [CONTACT EMAIL] with your order number. Approved refunds go back to the original payment method, normally within 5 to 10 business days. A refunded cosmetic or plan is removed from your account."] },
+    { title: "How to request a refund", body: ["Use the receipt email from Paddle (paddle.net) or Manage subscription on your account page, or contact {contact} with your order number. Approved refunds go back to the original payment method, normally within 5 to 10 business days. A refunded cosmetic or plan is removed from your account."] },
     { title: "Chargebacks and fraud", body: ["Please contact us before disputing a charge with your bank. We may refuse refunds that show clear abuse (for example repeatedly buying and refunding), and accounts involved in payment fraud may be restricted."] },
     { title: "Your statutory rights", body: ["This policy does not limit any rights you have under the consumer law of your country."] },
   ],

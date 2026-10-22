@@ -4,7 +4,7 @@ export const codex: TextBag["codex"] = {
   meta: {
     title: "Códice de calibración",
     description:
-      "Los rangos de A.C.E., explicados. Cada pregunta abre una respuesta completa sobre los Puntos de Rating y el código de ese rango. El códice no aplica ninguna partida.",
+      "Los rangos de A.C.E, explicados. Cada pregunta abre una respuesta completa sobre los Puntos de Rating y el código de ese rango. El códice no aplica ninguna partida.",
     articleTitle: "{title} — Códice de calibración",
   },
   groups: {
@@ -33,7 +33,7 @@ export const codex: TextBag["codex"] = {
     searchLabel: "Buscar en el códice",
     searchPlaceholder: "Prueba 1950, Recruit o empate",
     empty: "Ninguna entrada coincide con esa búsqueda.",
-    columnLabel: "Columna de A.C.E. {n}",
+    columnLabel: "Columna de A.C.E {n}",
     pagerLabel: "Páginas del códice",
     first: "Primera",
     previous: "Anterior",
@@ -42,7 +42,7 @@ export const codex: TextBag["codex"] = {
     pageOf: "Página {n} de {m}",
   },
   article: {
-    breadcrumb: "A.C.E. · Códice de calibración",
+    breadcrumb: "A.C.E · Códice de calibración",
     status:
       "Esta página explica la escalera escrita. No aplica ninguna partida y no modifica ninguna puntuación almacenada.",
     emblemAlt: "Emblema de {name}, rango {level}",
@@ -67,7 +67,7 @@ export const codex: TextBag["codex"] = {
     turnLabel: "Seguir por el códice",
     previous: "Anterior",
     next: "Siguiente",
-    alsoIn: "También en A.C.E.",
+    alsoIn: "También en A.C.E",
     backToBoard: "Volver al tablero de rangos",
   },
   rankArticle: {
@@ -146,7 +146,7 @@ export const codex: TextBag["codex"] = {
     },
     "rank-10-a-c-e-legend": {
       stance:
-        "A.C.E. Legend es la última insignia. La etiqueta de cristal es ACE ELITE. El nombre oficial es A.C.E. Legend.",
+        "A.C.E Legend es la última insignia. La etiqueta de cristal es ACE ELITE. El nombre oficial es A.C.E Legend.",
       detail:
         "La franja se abre en 1,950 y termina en el techo del motor, 3,000. No hay un undécimo rango. Una puntuación almacenada no puede superar 3,000.",
     },
@@ -154,13 +154,13 @@ export const codex: TextBag["codex"] = {
   articles: {
     "what-a-rank-is": {
       title: "Qué es un rango de A.C.E.",
-      lede: "Un rango es la insignia que contiene tus Puntos de Rating almacenados. Diez insignias cubren toda la escalera, de Recruit a A.C.E. Legend.",
+      lede: "Un rango es la insignia que contiene tus Puntos de Rating almacenados. Diez insignias cubren toda la escalera, de Recruit a A.C.E Legend.",
       sections: [
         {
           heading: "Un número, una insignia",
           paragraphs: [
             "La cuenta almacena una puntuación competitiva. La escalera lee ese número y devuelve el rango más alto cuyo suelo ha alcanzado. No tienes dos rangos a la vez.",
-            "Recruit es el rango 1. A.C.E. Legend es el rango 10. El nombre oficial es el nombre que figura en la escalera. La palabra más corta del emblema es la etiqueta de cristal del mismo rango.",
+            "Recruit es el rango 1. A.C.E Legend es el rango 10. El nombre oficial es el nombre que figura en la escalera. La palabra más corta del emblema es la etiqueta de cristal del mismo rango.",
             "Este códice explica la escalera escrita. No aplica ninguna partida y no modifica ninguna puntuación almacenada.",
           ],
         },
@@ -168,7 +168,7 @@ export const codex: TextBag["codex"] = {
           heading: "Cómo se sitúan los suelos",
           paragraphs: [
             "Recruit cubre el inicio de la escalera. Operative se abre en 1,100. De Vanguard a Grandmaster, cada nuevo suelo está 100 puntos más arriba: 1,200, 1,300, 1,400, 1,500, 1,600 y, después, 1,700.",
-            "Sovereign se abre en 1,800 y mantiene la cuenta hasta 1,949. A.C.E. Legend se abre en 1,950. El techo del motor es 3,000, así que Legend es la franja más larga.",
+            "Sovereign se abre en 1,800 y mantiene la cuenta hasta 1,949. A.C.E Legend se abre en 1,950. El techo del motor es 3,000, así que Legend es la franja más larga.",
           ],
         },
         {
@@ -187,14 +187,14 @@ export const codex: TextBag["codex"] = {
         {
           heading: "Por qué existen ambos",
           paragraphs: [
-            "El motor y el perfil usan el nombre oficial: Recruit, Operative, Vanguard, Specialist, Veteran, Elite, Master, Grandmaster, Sovereign, A.C.E. Legend.",
+            "El motor y el perfil usan el nombre oficial: Recruit, Operative, Vanguard, Specialist, Veteran, Elite, Master, Grandmaster, Sovereign, A.C.E Legend.",
             "El emblema también lleva una etiqueta de cristal: IRON, BRONZE, SILVER, GOLD, PLATINUM, DIAMOND, MASTER, GRANDMASTER, IMMORTAL, ACE ELITE. Esa etiqueta es parte de la ilustración. No crea un undécimo rango ni almacena un segundo número.",
           ],
         },
         {
           heading: "Dónde difieren",
           paragraphs: [
-            "La etiqueta de cristal de Specialist es GOLD. La de Veteran es PLATINUM. La de Elite es DIAMOND. La de Sovereign es IMMORTAL. La de A.C.E. Legend es ACE ELITE. En todos los casos, el suelo sigue perteneciendo al nombre oficial.",
+            "La etiqueta de cristal de Specialist es GOLD. La de Veteran es PLATINUM. La de Elite es DIAMOND. La de Sovereign es IMMORTAL. La de A.C.E Legend es ACE ELITE. En todos los casos, el suelo sigue perteneciendo al nombre oficial.",
             "Master y Grandmaster usan la misma palabra en ambos lugares.",
           ],
         },
@@ -310,7 +310,7 @@ export const codex: TextBag["codex"] = {
           heading: "Los topes",
           paragraphs: [
             "Una derrota con 100 Puntos de Rating se queda en 100. Una victoria con 3,000 se queda en 3,000. El suelo de Recruit en la escalera figura como 0, pero el número almacenado nunca usa el tramo por debajo de 100.",
-            "1,949 es Sovereign. 1,950 es A.C.E. Legend. No hay ninguna insignia intermedia.",
+            "1,949 es Sovereign. 1,950 es A.C.E Legend. No hay ninguna insignia intermedia.",
           ],
         },
         {
@@ -357,7 +357,7 @@ export const codex: TextBag["codex"] = {
           heading: "Lo que la mesa no hace",
           paragraphs: [
             "BUSCAR PARTIDA no busca rivales. No modifica los Puntos de Rating. El rango de una cuenta sigue siendo el número almacenado, leído por la escalera de este códice.",
-            "No hay ninguna cola superior aparte por encima de Legend. A.C.E. Legend es la última insignia y se abre en 1,950 Puntos de Rating.",
+            "No hay ninguna cola superior aparte por encima de Legend. A.C.E Legend es la última insignia y se abre en 1,950 Puntos de Rating.",
           ],
         },
       ],

@@ -25,7 +25,7 @@ export const UI_FI: Ui = {
     "company": "Yritys",
     "legal": "Oikeudelliset tiedot",
     "tagline": "Kilpailulliset Counter-Strike 2 -tikapuut, rakennettu reilun pelin varaan.",
-    "follow": "Seuraa A.C.E.:tä",
+    "follow": "Seuraa A.C.E:tä",
     "rights": "Kaikki oikeudet pidätetään.",
     "legalLine": "© 2026 A.C.E. Itsenäinen alusta, ei sidoksissa Valveen. Counter-Strike ja CS2 ovat Valve Corporationin tavaramerkkejä."
   },
@@ -229,7 +229,7 @@ export const UI_FI: Ui = {
       "expansion1": "Autonomous Anti-Cheat",
       "expansion2": "Competitive Calibration",
       "expansion3": "Elite Players",
-      "line": "Rakenna kilpailuidentiteettisi. Kalibroi taitosi. Nouse A.C.E.-arvoissa.",
+      "line": "Rakenna kilpailuidentiteettisi. Kalibroi taitosi. Nouse A.C.E-arvoissa.",
       "connectSteam": "Yhdistä Steam",
       "openDashboard": "Avaa hallintapaneeli",
       "exploreRanks": "Tutustu arvoihin"
@@ -237,7 +237,7 @@ export const UI_FI: Ui = {
     "status": {
       "title": "Alustan tila",
       "steam": "Steam-kirjautuminen",
-      "shield": "A.C.E. Shield",
+      "shield": "A.C.E Shield",
       "servers": "Kilpailupalvelimet",
       "tournaments": "Turnaukset",
       "billing": "Laskutus",
@@ -288,8 +288,8 @@ export const UI_FI: Ui = {
     "chat": {
       "open": "Avaa tukichat",
       "close": "Sulje tukichat",
-      "title": "A.C.E.-tuki",
-      "greeting": "Hei! Olen A.C.E.:n tukiavustaja. Kysy minulta arvoista, tilauksista, säännöistä tai tilistäsi.",
+      "title": "A.C.E-tuki",
+      "greeting": "Hei! Olen A.C.E:n tukiavustaja. Kysy minulta arvoista, tilauksista, säännöistä tai tilistäsi.",
       "placeholder": "Kirjoita kysymyksesi…",
       "send": "Lähetä",
       "unavailable": "Tukichat ei ole vielä käytettävissä.",
@@ -316,7 +316,7 @@ export const UI_FI: Ui = {
       "stepsKicker": "Näin se toimii",
       "stepsTitle": "Kolme askelta ensimmäiseen rankiin",
       "step1t": "Yhdistä Steam",
-      "step1b": "Kirjaudu Steam OpenID:llä. A.C.E. ei koskaan näe Steam-salasanaasi.",
+      "step1b": "Kirjaudu Steam OpenID:llä. A.C.E ei koskaan näe Steam-salasanaasi.",
       "step2t": "Kalibroi",
       "step2b": "Aloitat tasolta 3 1 200 RP:llä. Jokainen tallennettu ottelu muuttaa RP:täsi julkaistujen sääntöjen mukaan.",
       "step3t": "Nouse",
@@ -334,7 +334,7 @@ export const UI_FI: Ui = {
     "profile": {
       "kicker": "PELAAJA",
       "notFound": "Pelaajaa ei löytynyt",
-      "notFoundBody": "Mikään A.C.E.-tili ei käytä tätä Steam ID:tä, tai profiili ei ole julkinen.",
+      "notFoundBody": "Mikään A.C.E-tili ei käytä tätä Steam ID:tä, tai profiili ei ole julkinen.",
       "rating": "Luokitus",
       "rank": "Rank",
       "record": "Tulokset",
@@ -349,11 +349,11 @@ export const UI_FI: Ui = {
     },
     "chat": {
       "sources": "Lähteet",
-      "noMatch": "En löytänyt tätä A.C.E.-sivuston sisällöstä. Voit lähettää kysymyksesi tiimille tikettinä.",
+      "noMatch": "En löytänyt tätä A.C.E-sivuston sisällöstä. Voit lähettää kysymyksesi tiimille tikettinä.",
       "s1": "Paljonko Premium maksaa?",
       "s2": "Miten saan RP:tä?",
       "s3": "Miten ilmoitan huijarista?",
-      "kbNote": "Vastaukset perustuvat A.C.E.-sivuston sisältöön."
+      "kbNote": "Vastaukset perustuvat A.C.E-sivuston sisältöön."
     }
   },
   "r40": {
@@ -382,7 +382,7 @@ export const UI_FI: Ui = {
     "nf": {
       "code": "Virhe 404",
       "title": "Tämä sivu on kartan ulkopuolella",
-      "body": "Linkki voi olla vanha tai kirjoitettu väärin. Kaikki A.C.E.:n osat ovat yhden klikkauksen päässä täältä.",
+      "body": "Linkki voi olla vanha tai kirjoitettu väärin. Kaikki A.C.E:n osat ovat yhden klikkauksen päässä täältä.",
       "home": "Takaisin etusivulle",
       "ranks": "Näytä arvot"
     },
@@ -396,12 +396,12 @@ export const UI_FI: Ui = {
   "r41": {
     "vf": {
       "label": "Vahvistettu pelaaja",
-      "tip": "Vahvistettu: Steam yhdistetty, tili kunnossa, A.C.E.:n tarkastama."
+      "tip": "Vahvistettu: Steam yhdistetty, tili kunnossa, A.C.E:n tarkastama."
     },
     "st": {
       "kicker": "Suoritus",
       "title": "Pelaajatilastot",
-      "lede": "Jokainen luku tulee kirjatuista A.C.E.-otteluista. Mitään ei arvioida.",
+      "lede": "Jokainen luku tulee kirjatuista A.C.E-otteluista. Mitään ei arvioida.",
       "empty": "Ei vielä kirjattuja otteluita. Tilastot näkyvät ensimmäisen rankattu-ottelun jälkeen.",
       "winRate": "Voittoprosentti",
       "adr": "ADR",
@@ -427,11 +427,11 @@ export const UI_FI: Ui = {
       "none": "—"
     },
     "ab": {
-      "title": "Tietoa A.C.E.:stä",
+      "title": "Tietoa A.C.E:stä",
       "lede": "Counter-Strike 2 -kilpailualusta, joka perustuu yhteen julkiseen arvotaulukkoon ja tilauksiin, jotka eivät koskaan osta etua.",
-      "b1": "A.C.E. pyörittää rankattuja pelejä, tikkaita ja turnauksia CS2:ssa. Kirjautuminen tapahtuu Steam OpenID:llä; emme näe Steam-salasanaasi.",
+      "b1": "A.C.E pyörittää rankattuja pelejä, tikkaita ja turnauksia CS2:ssa. Kirjautuminen tapahtuu Steam OpenID:llä; emme näe Steam-salasanaasi.",
       "b2": "Arvosi lasketaan vain kirjatuista tuloksista julkaistujen sääntöjen mukaan. Maksulliset tilaukset ovat vain kosmeettisia ja mukavuutta.",
-      "b3": "A.C.E. on itsenäinen alusta eikä liity Valveen."
+      "b3": "A.C.E on itsenäinen alusta eikä liity Valveen."
     },
     "ss": {
       "title": "Palvelimien tila",
@@ -474,7 +474,7 @@ export const UI_FI: Ui = {
     "lv": {
       "nav": "Live",
       "title": "Suorat lähetykset",
-      "lede": "A.C.E.:n viralliset turnauslähetykset. Lähetys näkyy täällä vain, kun ylläpito on laittanut sen lähetykseen.",
+      "lede": "A.C.E:n viralliset turnauslähetykset. Lähetys näkyy täällä vain, kun ylläpito on laittanut sen lähetykseen.",
       "none": "Ei suoraa lähetystä juuri nyt",
       "noneBody": "Kun virallinen lähetys alkaa, se näkyy täällä. Sillä välin katso turnaukset alta.",
       "schedule": "Tulevat turnaukset",
@@ -484,7 +484,7 @@ export const UI_FI: Ui = {
     }
   },
   "r46": {
-    "aria": "Mitä A.C.E. edustaa",
+    "aria": "Mitä A.C.E edustaa",
     "fair": "Reilun pelin suoja",
     "fairSub": "Steam-kirjautuminen, julkiset säännöt ja ylläpidon tarkistamat pelaajailmoitukset.",
     "calib": "Kilpailullinen kalibrointi",
@@ -494,7 +494,7 @@ export const UI_FI: Ui = {
   },
   "r45": {
     "title": "Legendin tuolla puolen",
-    "lede": "Viisi arvomerkkiä A.C.E. Legendin yläpuolella, yksi 200 RP:n välein 2 150–2 950. Ansaitaan vain pelaamalla.",
+    "lede": "Viisi arvomerkkiä A.C.E Legendin yläpuolella, yksi 200 RP:n välein 2 150–2 950. Ansaitaan vain pelaamalla.",
     "plus": "Plus · platina",
     "premium": "Premium · kultainen tuli",
     "fair": "Sama RP kaikille. Arvorajat, matchmaking ja luokitus ovat samat jokaisessa tilauksessa. Mitään tästä ei voi ostaa.",
@@ -527,10 +527,10 @@ export const UI_FI: Ui = {
     "pr": {
       "kicker": "Arvovalta",
       "title": "Merkkisäännöt",
-      "lede": "Miten jokainen A.C.E.-merkki ansaitaan. Merkit ovat vain kosmeettisia: ne eivät koskaan muuta ottelujärjestelmää, RP:tä tai mitään sääntöä.",
+      "lede": "Miten jokainen A.C.E-merkki ansaitaan. Merkit ovat vain kosmeettisia: ne eivät koskaan muuta ottelujärjestelmää, RP:tä tai mitään sääntöä.",
       "ranks": "Arvomerkit (tasot 1–10) seuraavat RP:täsi. Jokainen näkee saman arvon ja saman kiinteän tasovärin.",
       "prestige": "Arvovaltamerkit ovat viisi pitkän aikavälin tavoitetta yli {elite} RP:n: yksi 200 RP:n välein 2 150:sta 2 950:aan.",
-      "free": "Free: merkkisi pysyy A.C.E. Legendinä ja arvovaltatasosi näkyy tekstimuotoisena virstanpylväänä. RP:täsi ei koskaan rajoiteta.",
+      "free": "Free: merkkisi pysyy A.C.E Legendinä ja arvovaltatasosi näkyy tekstimuotoisena virstanpylväänä. RP:täsi ei koskaan rajoiteta.",
       "plus": "Plus: platinainen arvovaltasarja.",
       "premium": "Premium: animoitu kultainen arvovaltasarja.",
       "lose": "Jos putoat arvovaltarajan alle, merkki seuraa RP:täsi alas; kun saavutat sen uudelleen, se palaa.",
@@ -683,5 +683,19 @@ export const UI_FI: Ui = {
     "communityTitle": "Yhteisö",
     "communityLede": "Seuraa A.C.E:tä otteluuutisten, turnausten ja kohokohtien takia.",
     "followOn": "A.C.E palvelussa {network}"
+  },
+  "r49b": {
+    "title": "Steam-inventaario",
+    "private": "Inventaario on yksityinen",
+    "privateBody": "Pelaajan Steam-inventaario on yksityinen.",
+    "empty": "Julkisessa inventaariossa ei ole CS2-esineitä.",
+    "unavailable": "Steam-inventaariota ei voi ladata juuri nyt.",
+    "hiddenOwner": "Inventaarioesittelysi on piilotettu profiilistasi.",
+    "hide": "Piilota esittely",
+    "show": "Näytä esittely",
+    "priceSource": "Hinnat: Steam-yhteisön kauppapaikan halvin tarjous, välimuistissa.",
+    "note": "Vain esittely. A.C.E ei koskaan osta, myy tai vaihda Steam-esineitä.",
+    "updated": "Päivitetty {date}",
+    "more": "+{n} muuta esinettä"
   }
 };

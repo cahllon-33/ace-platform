@@ -4,18 +4,18 @@ export const RB_ID: RulebookText = {
   "summary16": "Wasit memilih hukuman dari rentang di bawah berdasarkan niat, dampak, dan pengulangan. Pelanggaran berulang naik ke tingkat yang lebih tinggi dalam rentang tersebut.",
   "clauses": [
     [
-      "Buku peraturan ini berlaku untuk setiap kompetisi yang diselenggarakan A.C.E.: piala, liga, tangga peringkat, dan pertandingan ekshibisi. Halaman acara dapat menambahkan ketentuan khusus; jika bertentangan dengan buku peraturan ini, halaman acara yang berlaku khusus untuk acara tersebut.",
-      "\"Penyelenggara\" adalah tim operasional A.C.E. \"Wasit\" adalah anggota penyelenggara yang ditugaskan pada suatu acara. \"Tim\" adalah roster yang terdaftar. \"Kapten\" adalah pemain yang mewakili tim. \"Pertandingan\" adalah satu peta atau lebih antara dua tim. \"Seri\" adalah rangkaian peta dengan format best-of-one, best-of-three, atau best-of-five.",
+      "Buku peraturan ini berlaku untuk setiap kompetisi yang diselenggarakan A.C.E: piala, liga, tangga peringkat, dan pertandingan ekshibisi. Halaman acara dapat menambahkan ketentuan khusus; jika bertentangan dengan buku peraturan ini, halaman acara yang berlaku khusus untuk acara tersebut.",
+      "\"Penyelenggara\" adalah tim operasional A.C.E \"Wasit\" adalah anggota penyelenggara yang ditugaskan pada suatu acara. \"Tim\" adalah roster yang terdaftar. \"Kapten\" adalah pemain yang mewakili tim. \"Pertandingan\" adalah satu peta atau lebih antara dua tim. \"Seri\" adalah rangkaian peta dengan format best-of-one, best-of-three, atau best-of-five.",
       "Dengan mendaftar, setiap pemain dan tim menyetujui buku peraturan ini, Ketentuan Layanan, dan Kebijakan Privasi.",
       "Wasit dapat memutuskan situasi yang tidak diatur dalam buku peraturan ini, berpedoman pada permainan yang adil dan semangat aturan ini. Keputusan tersebut dicatat dan diumumkan bersama hasil pertandingan."
     ],
     [
-      "Pemain tidak boleh sedang menjalani skorsing aktif dari A.C.E., dan akun Steam yang digunakan tidak boleh memiliki larangan bermain yang dijatuhkan dalam 2 tahun terakhir.",
+      "Pemain tidak boleh sedang menjalani skorsing aktif dari A.C.E, dan akun Steam yang digunakan tidak boleh memiliki larangan bermain yang dijatuhkan dalam 2 tahun terakhir.",
       "Staf penyelenggara dan wasit tidak boleh bermain di acara yang mereka kelola.",
       "Batasan wilayah atau rating ditetapkan per acara dan diumumkan sebelum pendaftaran dibuka. Pemain di luar batasan tidak boleh bermain, termasuk sebagai cadangan."
     ],
     [
-      "Setiap pemain menggunakan satu akun A.C.E. yang terhubung ke satu akun Steam melalui masuk dengan Steam. A.C.E. tidak pernah meminta kata sandi Steam; siapa pun yang memintanya bukan penyelenggara.",
+      "Setiap pemain menggunakan satu akun A.C.E yang terhubung ke satu akun Steam melalui masuk dengan Steam. A.C.E tidak pernah meminta kata sandi Steam; siapa pun yang memintanya bukan penyelenggara.",
       "Berbagi akun, bermain di akun orang lain, atau membiarkan orang lain bermain di akun Anda dilarang. Kedua akun dikenai hukuman.",
       "Membuat akun baru untuk menghindari hukuman, rating, atau pembatasan adalah penghindaran larangan dan diperlakukan sebagai pelanggaran integritas (bagian 14).",
       "Nama tampilan dan avatar harus mematuhi aturan perilaku (bagian 13). Wasit dapat meminta perubahan sebelum pertandingan.",
@@ -89,8 +89,8 @@ export const RB_ID: RulebookText = {
       "Ghosting (menerima informasi dari penonton atau siaran), stream sniping, bermain di akun orang lain, dan penghindaran larangan dilarang.",
       "Pengaturan pertandingan, sengaja kalah, dan bertaruh pada pertandingan apa pun yang melibatkan tim Anda atau dalam acara Anda dilarang.",
       "Menggunakan bug peta atau game yang telah dinyatakan terlarang oleh wasit, atau yang jelas merusak mekanika game yang dimaksudkan, dilarang.",
-      "Pemain wajib menjalankan klien anti-cheat A.C.E. sepanjang pertandingan jika diwajibkan oleh acara.",
-      "Admin dapat meminta demo atau rekaman layar untuk ditinjau. Detail perangkat keras hanya akan diminta setelah klien anti-cheat A.C.E. tersedia dan Kebijakan Privasi menjelaskannya. Menolak permintaan yang wajar tanpa alasan yang sah dapat dipertimbangkan dalam keputusan.",
+      "Pemain wajib menjalankan klien anti-cheat A.C.E sepanjang pertandingan jika diwajibkan oleh acara.",
+      "Admin dapat meminta demo atau rekaman layar untuk ditinjau. Detail perangkat keras hanya akan diminta setelah klien anti-cheat A.C.E tersedia dan Kebijakan Privasi menjelaskannya. Menolak permintaan yang wajar tanpa alasan yang sah dapat dipertimbangkan dalam keputusan.",
       "Siapa pun dapat melaporkan dugaan pelanggaran secara pribadi kepada penyelenggara. Tuduhan di depan umum tanpa laporan adalah pelanggaran perilaku."
     ],
     [
@@ -105,7 +105,7 @@ export const RB_ID: RulebookText = {
       "Larangan berlaku untuk orang tersebut dan setiap akun yang dikendalikannya."
     ],
     [
-      "A.C.E. berhak menyiarkan setiap pertandingan yang diselenggarakannya. Tim tidak boleh menolak siaran.",
+      "A.C.E berhak menyiarkan setiap pertandingan yang diselenggarakannya. Tim tidak boleh menolak siaran.",
       "Pemain hanya boleh menyiarkan pertandingannya sendiri dengan jeda minimal 2 menit dan hanya jika halaman acara mengizinkannya. Siaran resmi menggunakan jeda yang ditetapkan penyelenggara.",
       "Pemain tidak boleh menonton siaran langsung pertandingannya sendiri selama pertandingan berlangsung.",
       "Pertandingan yang dijadwalkan untuk disiarkan dapat dipindahkan hingga 2 jam dengan pemberitahuan 24 jam sebelumnya. Tim harus tersedia pada waktu baru atau meminta keputusan wasit.",

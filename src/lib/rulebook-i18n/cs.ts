@@ -4,18 +4,18 @@ export const RB_CS: RulebookText = {
   "summary16": "Rozhodčí volí trest z níže uvedeného rozpětí podle úmyslu, dopadu a opakování. Opakovaná porušení se posouvají výš v rozpětí.",
   "clauses": [
     [
-      "Tato pravidla platí pro všechny soutěže, které A.C.E. pořádá: poháry, ligy, žebříčky a exhibiční zápasy. Stránka akce může doplnit vlastní podmínky; jsou-li v rozporu s těmito pravidly, má stránka akce přednost, a to jen pro danou akci.",
-      "„Pořadatel“ je provozní tým A.C.E. „Rozhodčí“ je člen pořadatele přidělený k akci. „Tým“ je registrovaná soupiska. „Kapitán“ je hráč, který tým zastupuje. „Zápas“ je jedna nebo více map mezi dvěma týmy. „Série“ je sada map ve formátu na jednu, dvě nebo tři vítězné mapy (BO1, BO3, BO5).",
+      "Tato pravidla platí pro všechny soutěže, které A.C.E pořádá: poháry, ligy, žebříčky a exhibiční zápasy. Stránka akce může doplnit vlastní podmínky; jsou-li v rozporu s těmito pravidly, má stránka akce přednost, a to jen pro danou akci.",
+      "„Pořadatel“ je provozní tým A.C.E „Rozhodčí“ je člen pořadatele přidělený k akci. „Tým“ je registrovaná soupiska. „Kapitán“ je hráč, který tým zastupuje. „Zápas“ je jedna nebo více map mezi dvěma týmy. „Série“ je sada map ve formátu na jednu, dvě nebo tři vítězné mapy (BO1, BO3, BO5).",
       "Registrací každý hráč a každý tým přijímá tato pravidla, Podmínky služby a Zásady ochrany osobních údajů.",
       "Rozhodčí mohou rozhodovat situace, které tato pravidla neupravují, v duchu fair play a smyslu pravidel. Taková rozhodnutí se zaznamenávají a zveřejňují spolu s výsledkem zápasu."
     ],
     [
-      "Hráč nesmí mít aktivní suspendaci od A.C.E. a na používaném účtu Steam nesmí mít herní ban udělený v posledních 2 letech.",
+      "Hráč nesmí mít aktivní suspendaci od A.C.E a na používaném účtu Steam nesmí mít herní ban udělený v posledních 2 letech.",
       "Zaměstnanci pořadatele a rozhodčí nesmějí hrát v akci, kterou spravují.",
       "Omezení podle regionu nebo ratingu se stanovují pro každou akci a zveřejňují se před otevřením registrace. Hráč mimo tato omezení nesmí hrát, ani jako náhradník."
     ],
     [
-      "Každý hráč používá jeden účet A.C.E. propojený s jedním účtem Steam přes přihlášení Steam. A.C.E. nikdy nežádá heslo ke Steamu; kdo o něj žádá, není pořadatel.",
+      "Každý hráč používá jeden účet A.C.E propojený s jedním účtem Steam přes přihlášení Steam. A.C.E nikdy nežádá heslo ke Steamu; kdo o něj žádá, není pořadatel.",
       "Sdílení účtu, hraní na cizím účtu nebo umožnění jiné osobě hrát na vašem účtu je zakázáno. Trestány jsou oba účty.",
       "Založení nového účtu za účelem vyhnutí se trestu, ratingu nebo omezení je obcházení banu a posuzuje se jako porušení integrity (oddíl 14).",
       "Zobrazovaná jména a avatary musí odpovídat pravidlům chování (oddíl 13). Rozhodčí mohou před zápasem vyžadovat jejich změnu.",
@@ -89,8 +89,8 @@ export const RB_CS: RulebookText = {
       "Zakázány jsou ghosting (získávání informací od diváků nebo ze streamů), stream sniping, hraní na cizím účtu a obcházení banu.",
       "Zakázány jsou ovlivňování zápasů, úmyslná prohra a sázení na jakýkoli zápas vašeho týmu nebo ve vaší akci.",
       "Je zakázáno využívat chybu mapy nebo hry, kterou rozhodčí označil za zakázanou nebo která zjevně narušuje zamýšlené herní mechaniky.",
-      "Hráči musí mít po celý zápas spuštěného anti-cheat klienta A.C.E., pokud to akce vyžaduje.",
-      "Admini si mohou vyžádat dema nebo záznamy obrazovky k přezkumu. Údaje o hardwaru se budou vyžadovat až poté, co bude existovat anti-cheat klient A.C.E. a popíší je Zásady ochrany osobních údajů. Odmítnutí přiměřené žádosti bez pádného důvodu může být zohledněno v rozhodnutí.",
+      "Hráči musí mít po celý zápas spuštěného anti-cheat klienta A.C.E, pokud to akce vyžaduje.",
+      "Admini si mohou vyžádat dema nebo záznamy obrazovky k přezkumu. Údaje o hardwaru se budou vyžadovat až poté, co bude existovat anti-cheat klient A.C.E a popíší je Zásady ochrany osobních údajů. Odmítnutí přiměřené žádosti bez pádného důvodu může být zohledněno v rozhodnutí.",
       "Kdokoli může podezření na porušení pravidel důvěrně oznámit pořadateli. Veřejná obvinění bez oznámení jsou porušením pravidel chování."
     ],
     [
@@ -105,7 +105,7 @@ export const RB_CS: RulebookText = {
       "Bany se vztahují na osobu i na všechny účty, které ovládá."
     ],
     [
-      "A.C.E. má právo vysílat jakýkoli zápas, který pořádá. Týmy nemohou vysílání odmítnout.",
+      "A.C.E má právo vysílat jakýkoli zápas, který pořádá. Týmy nemohou vysílání odmítnout.",
       "Hráči smějí streamovat své zápasy jen se zpožděním nejméně 2 minuty a jen pokud to stránka akce povoluje. Oficiální přenosy používají zpoždění stanovené pořadatelem.",
       "Hráči nesmějí sledovat živý přenos vlastního zápasu, zatímco se hraje.",
       "Zápasy naplánované k vysílání lze posunout nejvýše o 2 hodiny s oznámením 24 hodin předem. Týmy musí být k dispozici v novém čase, nebo požádat o rozhodnutí rozhodčího.",

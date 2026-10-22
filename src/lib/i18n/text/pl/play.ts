@@ -44,7 +44,7 @@ export const play: TextBag["play"] = {
           "Solo, w duecie lub w trójce",
           "Planowany przedział {points} punktów oceny",
           "Profil Steam musi być już zapisany",
-          "Używa zasady rankingu A.C.E. · wyszukiwanie wkrótce"
+          "Używa zasady rankingu A.C.E · wyszukiwanie wkrótce"
         ]
       },
       "elite": {

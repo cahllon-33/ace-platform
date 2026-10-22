@@ -62,7 +62,7 @@ export const ranks: TextBag["ranks"] = {
     "kicker": "PREMIUM-RÄNGE",
     "plan": "A.C.E PREMIUM · nur 7 $/Monat",
     "title": "Premium-Rangkunst",
-    "lede": "Das originale illustrierte A.C.E.-Rangset: zehn Kristallembleme mit den Divisionen III/II/I, das Rating-Protokoll, die Legend-Detailkarte und der 3D-Viewer zum Drehen per Ziehen. Es ist Profilkunst für Premium-Mitglieder. Es liest dieselbe Rating-Points-Leiter wie die Standardränge und verschafft keinen Wettbewerbsvorteil.",
+    "lede": "Das originale illustrierte A.C.E-Rangset: zehn Kristallembleme mit den Divisionen III/II/I, das Rating-Protokoll, die Legend-Detailkarte und der 3D-Viewer zum Drehen per Ziehen. Es ist Profilkunst für Premium-Mitglieder. Es liest dieselbe Rating-Points-Leiter wie die Standardränge und verschafft keinen Wettbewerbsvorteil.",
     "demo": "Demowerte: Fortschritt, Siegquote und Divisionswerte auf dieser Tafel sind Beispiele, keine Live-Statistiken. Wenn du angemeldet bist, ist das angezeigte Rating dein gespeichertes Rating.",
     "locked": "Demnächst: Einen Checkout gibt es noch nicht, daher ist heute kein Konto Premium. Der Server wendet Premium-Rangkunst nur auf ein Profil an, dessen gespeicherter Plan Premium ist.",
     "standardKicker": "STANDARDRÄNGE",
@@ -77,12 +77,12 @@ export const ranks: TextBag["ranks"] = {
   },
   "meta": {
     "title": "Wettkampfränge",
-    "description": "Die zehn A.C.E.-Ränge, von Iron Recruit bis A.C.E. Legend, mit Divisionen und Wertungsuntergrenzen."
+    "description": "Die zehn A.C.E-Ränge, von Iron Recruit bis A.C.E Legend, mit Divisionen und Wertungsuntergrenzen."
   },
   "hero": {
     "kicker": "KALIBRIERUNG",
     "title": "Wettkampfränge",
-    "lede": "Zehn Stufen von Recruit bis A.C.E. Legend, jeweils mit den Divisionen {divisions}. Ziehe oder nutze die Pfeiltasten, um ein Emblem zu drehen. Angemeldet siehst du deine eigene Wertung, sonst die Untergrenze jeder Stufe."
+    "lede": "Zehn Stufen von Recruit bis A.C.E Legend, jeweils mit den Divisionen {divisions}. Ziehe oder nutze die Pfeiltasten, um ein Emblem zu drehen. Angemeldet siehst du deine eigene Wertung, sonst die Untergrenze jeder Stufe."
   },
   "codexLink": "Kalibrierungs-Codex öffnen",
   "document": {
@@ -134,9 +134,9 @@ export const ranks: TextBag["ranks"] = {
     }
   },
   "board": {
-    "selectEmblem": "Rangemblem A.C.E. {name} wählen, Stufe {level}",
-    "emblemAlt": "Eigenes kristallines 3D-Profilabzeichen von A.C.E., Stufe {level}, {crystal}, Emblem {name}",
-    "emblemAltLegend": "Eigenes kristallines 3D-Profilabzeichen von A.C.E., Emblem der Stufe {level}",
+    "selectEmblem": "Rangemblem A.C.E {name} wählen, Stufe {level}",
+    "emblemAlt": "Eigenes kristallines 3D-Profilabzeichen von A.C.E, Stufe {level}, {crystal}, Emblem {name}",
+    "emblemAltLegend": "Eigenes kristallines 3D-Profilabzeichen von A.C.E, Emblem der Stufe {level}",
     "premium": "HÖCHSTE STUFE"
   },
   "division": {

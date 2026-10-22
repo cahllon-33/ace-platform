@@ -44,7 +44,7 @@ export const play: TextBag["play"] = {
           "Yksin, kaksin tai kolmisin",
           "Suunniteltu {points} luokituspisteen ikkuna",
           "Steam-profiilin on oltava jo tallennettu",
-          "Käyttää A.C.E.-luokitussääntöä · haku tulossa pian"
+          "Käyttää A.C.E-luokitussääntöä · haku tulossa pian"
         ]
       },
       "elite": {

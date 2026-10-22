@@ -1,7 +1,7 @@
 import type { TextBag } from "../types";
 
 export const consent: TextBag["consent"] = {
-  "valveDisclaimer": "A.C.E., bağımsız bir Counter-Strike 2 rekabet sitesidir. Valve Corporation ile bağlantılı değildir, onun tarafından yetkilendirilmemiş veya onaylanmamıştır. Steam ve Counter-Strike, sahiplerinin markalarıdır. Rekabet kuralları, A.C.E.'nin bu oyun için hazırladığı kendi metnidir.",
+  "valveDisclaimer": "A.C.E, bağımsız bir Counter-Strike 2 rekabet sitesidir. Valve Corporation ile bağlantılı değildir, onun tarafından yetkilendirilmemiş veya onaylanmamıştır. Steam ve Counter-Strike, sahiplerinin markalarıdır. Rekabet kuralları, A.C.E.'nin bu oyun için hazırladığı kendi metnidir.",
   "acceptance": {
     "label": "Hizmet Koşulları'nı, Hile Karşıtı EULA'yı ve Gizlilik Politikası'nı açıkça kabul ediyorum.",
     "readBefore": "Okuyun:",

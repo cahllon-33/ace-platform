@@ -62,7 +62,7 @@ export const ranks: TextBag["ranks"] = {
     "kicker": "PREMIUM RÜTBELER",
     "plan": "A.C.E PREMIUM · yalnızca ayda 7 $",
     "title": "Premium rütbe görselleri",
-    "lede": "Orijinal resimli A.C.E. rütbe seti: III/II/I bölümlü on kristal amblem, reyting protokolü, Legend ayrıntı kartı ve sürükleyerek döndürülen 3D görüntüleyici. Premium üyeler için profil görselidir. Standart rütbelerle aynı Rating Points merdivenini okur ve hiçbir rekabet avantajı sağlamaz.",
+    "lede": "Orijinal resimli A.C.E rütbe seti: III/II/I bölümlü on kristal amblem, reyting protokolü, Legend ayrıntı kartı ve sürükleyerek döndürülen 3D görüntüleyici. Premium üyeler için profil görselidir. Standart rütbelerle aynı Rating Points merdivenini okur ve hiçbir rekabet avantajı sağlamaz.",
     "demo": "Demo değerleri: bu panodaki ilerleme, kazanma oranı ve bölüm değerleri örnektir, canlı istatistik değildir. Giriş yaptığında gösterilen reyting kayıtlı reytingindir.",
     "locked": "Yakında: ödeme henüz yok, bu yüzden bugün hiçbir hesap Premium değil. Sunucu Premium rütbe görsellerini yalnızca kayıtlı planı Premium olan bir profile uygular.",
     "standardKicker": "STANDART RÜTBELER",
@@ -77,12 +77,12 @@ export const ranks: TextBag["ranks"] = {
   },
   "meta": {
     "title": "Rekabetçi Rütbeler",
-    "description": "Iron Recruit'ten A.C.E. Legend'a kadar on A.C.E. rütbesi; ligler ve derece tabanlarıyla."
+    "description": "Iron Recruit'ten A.C.E Legend'a kadar on A.C.E rütbesi; ligler ve derece tabanlarıyla."
   },
   "hero": {
     "kicker": "KALİBRASYON",
     "title": "Rekabetçi Rütbeler",
-    "lede": "Recruit'ten A.C.E. Legend'a on kademe; her birinde {divisions} ligleri var. Bir amblemi döndürmek için sürükleyin veya ok tuşlarını kullanın. Oturum açtıysanız kendi derecenizi, aksi halde her kademenin tabanını görürsünüz."
+    "lede": "Recruit'ten A.C.E Legend'a on kademe; her birinde {divisions} ligleri var. Bir amblemi döndürmek için sürükleyin veya ok tuşlarını kullanın. Oturum açtıysanız kendi derecenizi, aksi halde her kademenin tabanını görürsünüz."
   },
   "codexLink": "Kalibrasyon Kodeksini aç",
   "document": {
@@ -134,7 +134,7 @@ export const ranks: TextBag["ranks"] = {
     }
   },
   "board": {
-    "selectEmblem": "A.C.E. {name} rütbe amblemini seç, seviye {level}",
+    "selectEmblem": "A.C.E {name} rütbe amblemini seç, seviye {level}",
     "emblemAlt": "A.C.E. Özel 3D Kristal Seviye {level} {crystal} {name} amblem profil rozeti",
     "emblemAltLegend": "A.C.E. Özel 3D Kristal Seviye {level} Amblem Profil Rozeti",
     "premium": "EN ÜST KADEME"

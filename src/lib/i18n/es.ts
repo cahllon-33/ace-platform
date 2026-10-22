@@ -3,7 +3,7 @@ import type { MessageBag } from "./en";
 export const ES: MessageBag = {
  slogan: "JUEGA. COMPITE. SÉ ÉLITE.",
  kicker: "PLATAFORMA COMPETITIVA CS2 DE ÉLITE",
- lede: "A.C.E. es un sitio competitivo de Counter-Strike 2. El acceso usa Steam OpenID. El anticheat, los servidores de partida y el pago de premios no están en marcha aquí.",
+ lede: "A.C.E es un sitio competitivo de Counter-Strike 2. El acceso usa Steam OpenID. El anticheat, los servidores de partida y el pago de premios no están en marcha aquí.",
  playNow: "JUGAR AHORA",
  signInSteam: "Iniciar sesión con STEAM",
  connectProfile: "Conectar perfil",
@@ -15,13 +15,13 @@ export const ES: MessageBag = {
  registeredTeams: "Equipos registrados: 0/100",
  registered: "Registrados",
  teams: "Equipos",
- ranksTitle: "Rangos A.C.E.",
+ ranksTitle: "Rangos A.C.E",
  championshipLoot: "Sistema de botín de campeonato",
  calibrationStatus: "Estado de calibración de rango",
  navTournaments: "TORNEOS",
  brandSubline: "ANTICHEAT AUTÓNOMO • CALIBRACIÓN COMPETITIVA • JUGADORES DE ÉLITE",
  languagesKicker: "Idiomas",
- step1: "Crea una cuenta con el Steam OpenID oficial. A.C.E. nunca pide una contraseña de Steam.",
+ step1: "Crea una cuenta con el Steam OpenID oficial. A.C.E nunca pide una contraseña de Steam.",
  step2: "La verificación de identidad llegará con A.C.E Shield.",
  step3: "Forma un equipo 5v5 desde el puesto de mando después de una sesión verificada.",
  step4: "Busca competiciones elegibles. BUSCAR PARTIDA clasificatorio permanece cerrado.",
@@ -84,13 +84,13 @@ export const ES: MessageBag = {
  cookiePolicy: "Política de cookies",
  support: "Soporte",
  contact: "Contacto",
- supportKicker: "SOPORTE A.C.E. · CENTRO DE AYUDA",
+ supportKicker: "SOPORTE A.C.E · CENTRO DE AYUDA",
  supportTitle: "Centro de soporte técnico",
  supportLede:
  "Centro de ayuda sobre configuración, calibración y suscripción. El anti-cheat, las colas clasificatorias y la facturación llegarán pronto.",
  supportCat1Title: "Configuración del anticheat de núcleo",
  supportCat1Body:
- "Los avisos de instalación de controladores, el cumplimiento del hardware y los ajustes de telemetría de Arranque seguro se documentan aquí como política futura de núcleo. A.C.E. no entrega un cliente de anticheat funcional, no instala controladores y no recoge datos de Arranque seguro ni de HWID en este sitio.",
+ "Los avisos de instalación de controladores, el cumplimiento del hardware y los ajustes de telemetría de Arranque seguro se documentan aquí como política futura de núcleo. A.C.E no entrega un cliente de anticheat funcional, no instala controladores y no recoge datos de Arranque seguro ni de HWID en este sitio.",
  supportCat2Title: "Emparejamiento y calibración",
  supportCat2Body:
  "Diez partidas de colocación, la velocidad de cálculo de división y la recalibración de puntuación de temporada son la historia de calibración planificada. BUSCAR PARTIDA clasificatorio permanece cerrado ante fallo hasta que exista una vía de anticheat verificada. Las cifras de esta página no son resultados de partidas en vivo.",
@@ -103,7 +103,7 @@ export const ES: MessageBag = {
  "El soporte por tickets abrirá con la beta competitiva. Por ahora, contáctanos desde la página de contacto.",
  supportDisclosure:
  "La atención en directo para anti-cheat, emparejamiento y facturación abrirá con la beta competitiva.",
- contactKicker: "CONTACTO A.C.E. · TERMINAL CORPORATIVO",
+ contactKicker: "CONTACTO A.C.E · TERMINAL CORPORATIVO",
  contactTitle: "Terminal de contacto corporativo",
  contactLede:
  "Consultas de patrocinio, medios, técnica y generales. Los mensajes escritos aquí no se transmiten y no se almacenan como telemetría.",
@@ -120,17 +120,17 @@ export const ES: MessageBag = {
  "Doy mi consentimiento explícito a los parámetros de minimización del almacenamiento de datos de la Política de privacidad de A.C.E.",
  contactSend: "ENVIAR MENSAJE DE TELEMETRÍA SEGURA",
  contactCorporate:
- "A.C.E. | Pasarela de correo segura: support@ace-platform.gg",
+ "A.C.E | Pasarela de correo segura: support@ace-platform.gg",
  contactModalTitle: "Formulario de contacto en línea · próximamente",
  contactModalBody:
- "Los mensajes de este formulario aún no se entregan. El formulario abrirá junto con nuestro equipo de soporte. A.C.E. nunca te pedirá tu contraseña de Steam.",
+ "Los mensajes de este formulario aún no se entregan. El formulario abrirá junto con nuestro equipo de soporte. A.C.E nunca te pedirá tu contraseña de Steam.",
  contactDisclosure:
- "El formulario de contacto en línea abrirá pronto. A.C.E. nunca te pedirá tu contraseña de Steam.",
+ "El formulario de contacto en línea abrirá pronto. A.C.E nunca te pedirá tu contraseña de Steam.",
  closeOverlay: "Cerrar",
  loadingAce: "Cargando A.C.E...",
  supportCategory: "CATEGORÍA {n}",
- shopKicker: "TIENDA A.C.E. · PRÓXIMAMENTE",
- shopTitle: "MERCADO A.C.E. — PERSONALIZACIÓN ÉLITE DE ARMAS",
+ shopKicker: "TIENDA A.C.E · PRÓXIMAMENTE",
+ shopTitle: "MERCADO A.C.E — PERSONALIZACIÓN ÉLITE DE ARMAS",
  shopLede:
  "Equipa tu inventario con skins de alto nivel verificados, elementos de perfil personalizados y herramientas de acceso a la liga.",
  shopNote:
@@ -181,10 +181,10 @@ export const ES: MessageBag = {
  tourneyStatusValue: "No abierto · solo demostración",
  tourneyLoading: "Cargando el cuadro…",
  platformNoticeTitle: "AVISO DE LA PLATAFORMA",
- platformNoticeBody: "Los cuadros, las clasificaciones y las tarjetas de aspectos de este sitio son ejemplos. No son objetos de Valve ni premios pagados. Este sitio no ejecuta un programa antitrampas. Abrir el sitio no anula un derecho legal ni firma un contrato. A.C.E. no recoge un identificador de hardware ni borra una cuenta porque alguien contacte a un abogado o a un tribunal.",
+ platformNoticeBody: "Los cuadros, las clasificaciones y las tarjetas de aspectos de este sitio son ejemplos. No son objetos de Valve ni premios pagados. Este sitio no ejecuta un programa antitrampas. Abrir el sitio no anula un derecho legal ni firma un contrato. A.C.E no recoge un identificador de hardware ni borra una cuenta porque alguien contacte a un abogado o a un tribunal.",
   copyrightLine: "© 2026 A.C.E. Sin afiliación con Valve.",
   copyrightClaim:
-    "El texto, el diseño, los emblemas y los gráficos originales de este sitio pertenecen a A.C.E. Copiarlos sin permiso escrito no está permitido. A.C.E. puede hacer valer ese derecho. Counter-Strike 2 y los nombres de los mapas pertenecen a Valve.",
+    "El texto, el diseño, los emblemas y los gráficos originales de este sitio pertenecen a A.C.E. Copiarlos sin permiso escrito no está permitido. A.C.E puede hacer valer ese derecho. Counter-Strike 2 y los nombres de los mapas pertenecen a Valve.",
  shieldServerValue: "Próximamente",
  tvGames: "Televisión de partidas",
  pathsKicker: "CINCO CAMINOS EN ESTE SITIO",

@@ -13,7 +13,7 @@ export const home: TextBag["home"] = {
   "ops": {
     "identityKicker": "IDENTITETSNAV",
     "signedOutTitle": "Logga in med Steam",
-    "signedOutBody": "Anslut med officiella Steam OpenID för att se din Steam-avatar, ditt rankemblem och dina Rating Points här. A.C.E. ber aldrig om ett Steam-lösenord.",
+    "signedOutBody": "Anslut med officiella Steam OpenID för att se din Steam-avatar, ditt rankemblem och dina Rating Points här. A.C.E ber aldrig om ett Steam-lösenord.",
     "connect": "Logga in med Steam",
     "openDeck": "Öppna Command Deck",
     "avatarAlt": "Steam-avatar för {name}",
@@ -25,7 +25,7 @@ export const home: TextBag["home"] = {
     "matches": "Matcher",
     "kd": "K/D",
     "na": "–",
-    "kdNote": "K/D visar – eftersom A.C.E. inte registrerar kills och dödsfall än.",
+    "kdNote": "K/D visar – eftersom A.C.E inte registrerar kills och dödsfall än.",
     "shieldKicker": "A.C.E SHIELD",
     "shieldChip": "UNDER UTVECKLING",
     "shieldTitle": "Integritetsstatus",
@@ -43,22 +43,22 @@ export const home: TextBag["home"] = {
     "seasonBody": "Säsong 1 har inget start- eller slutdatum än, så det finns ingen nedräkning. Datumen publiceras på den här webbplatsen innan säsongen öppnar.",
     "statsKicker": "DIN STATISTIK",
     "statsSignedOut": "Logga in med Steam för att se din statistik.",
-    "statsEmpty": "Inga registrerade matcher än. Vinster och förluster visas efter din första registrerade A.C.E.-match.",
-    "statsLive": "Vinster och förluster kommer från ditt sparade A.C.E.-konto.",
+    "statsEmpty": "Inga registrerade matcher än. Vinster och förluster visas efter din första registrerade A.C.E-match.",
+    "statsLive": "Vinster och förluster kommer från ditt sparade A.C.E-konto.",
     "statsLink": "Öppna spelarstatistik"
   },
   "meta": {
-    "title": "A.C.E. — Tävlingsplattform för CS2",
-    "description": "A.C.E. är en planerad tävlingsplattform för Counter-Strike 2 med spelaridentitet, kalibrering, lag och turneringar. Den här publika webbplatsen är en förhandsversion. Rankad matchning, anti-fusk, betalningar och priser är inte aktiva."
+    "title": "A.C.E — Tävlingsplattform för CS2",
+    "description": "A.C.E är en planerad tävlingsplattform för Counter-Strike 2 med spelaridentitet, kalibrering, lag och turneringar. Den här publika webbplatsen är en förhandsversion. Rankad matchning, anti-fusk, betalningar och priser är inte aktiva."
   },
   "opening": {
-    "dialogLabel": "A.C.E. intro",
+    "dialogLabel": "A.C.E intro",
     "line": "A.C.E: Autonomt anti-fusk, tävlingskalibrering, elitspelare",
     "enter": "Gå in på webbplatsen"
   },
   "hero": {
     "logoAlt": "A.C.E. Autonomt anti-fusk, tävlingskalibrering, elitspelare",
-    "arenaAlt": "A.C.E. arenaplatta. Originalbild av scenen, inte Valve-grafik. Skärmen är märkt spel-tv. Ingen direktsändning pågår."
+    "arenaAlt": "A.C.E arenaplatta. Originalbild av scenen, inte Valve-grafik. Skärmen är märkt spel-tv. Ingen direktsändning pågår."
   },
   "broadcast": {
     "kicker": "TURNERINGSBEVAKNING",
@@ -77,7 +77,7 @@ export const home: TextBag["home"] = {
   },
   "charter": {
     "kicker": "HUVUDLOBBY",
-    "title": "A.C.E. LOBBY FÖR TÄVLINGSMATCHNING OCH UTSKICKSCENTRAL",
+    "title": "A.C.E LOBBY FÖR TÄVLINGSMATCHNING OCH UTSKICKSCENTRAL",
     "badge": "SERVRAR · KOMMER SNART",
     "lede": "Den här lobbyn tilldelar ingen server, startar ingen anti-fusk-klient och betalar inga priser.",
     "modules": [
@@ -91,7 +91,7 @@ export const home: TextBag["home"] = {
       },
       {
         "kicker": "FASTA 3D-RANKER",
-        "copy": "Tio nivåer från Recruit till A.C.E. Legend. En sparad rating visas efter Steam-inloggning. Den här sidan registrerar inga matchresultat.",
+        "copy": "Tio nivåer från Recruit till A.C.E Legend. En sparad rating visas efter Steam-inloggning. Den här sidan registrerar inga matchresultat.",
         "chips": [
           "RATINGREGEL DOKUMENTERAD",
           "VRIDBORD PÅ DEN HÄR SIDAN"
@@ -134,13 +134,13 @@ export const home: TextBag["home"] = {
     "lines": [
       "A.C.E SHIELD: UNDER UTVECKLING",
       "HÅRDVARUBANN-MATRIS: INGEN IDENTIFIERARE SAMLAS IN",
-      "A.C.E. SHIELD-LÄNK: INGEN KLIENT ÄR INSTALLERAD"
+      "A.C.E SHIELD-LÄNK: INGEN KLIENT ÄR INSTALLERAD"
     ],
     "note": "Den här webbplatsen kör ingen kärnklient, skannar inte minnet och utfärdar inga hårdvarubann."
   },
   "comingSoon": {
     "badge": "INTE TILLGÄNGLIG",
-    "body": "A.C.E.:s skrivbordsklient erbjuds inte för nedladdning. Säsong 1 på den här webbplatsen installerar ingen programvara och öppnar ingen incheckning."
+    "body": "A.C.E:s skrivbordsklient erbjuds inte för nedladdning. Säsong 1 på den här webbplatsen installerar ingen programvara och öppnar ingen incheckning."
   },
   "operative": {
     "kicker": "Filmisk taktisk vy · original-CSS-miljö · inte Valve-grafik",
@@ -149,7 +149,7 @@ export const home: TextBag["home"] = {
     "note": "Kampanjtext. Rankade köer, aktiva servrar och priser är inte aktiva."
   },
   "howStatus": {
-    "label": "A.C.E. REGISTRERINGSSYSTEM — KALIBRERINGSMOTORN REDO",
+    "label": "A.C.E REGISTRERINGSSYSTEM — KALIBRERINGSMOTORN REDO",
     "note": "Rankade köer öppnar när A.C.E Shield och kalibreringen går live."
   },
   "shell": {
@@ -167,7 +167,7 @@ export const home: TextBag["home"] = {
     "kicker": "RUTNÄTSFEL",
     "title": "FEL 404 — RADARTELEMETRI FÖRLORAD",
     "body": "Koordinaten du begärde finns inte i vårt aktiva servernät.",
-    "homeAria": "Tillbaka till lobbyn på A.C.E.:s startsida",
+    "homeAria": "Tillbaka till lobbyn på A.C.E:s startsida",
     "cta": "TILLBAKA TILL LOBBYN"
   },
   "error": {

@@ -3,7 +3,7 @@ import type { TextBag } from "../types";
 export const desk: TextBag["desk"] = {
   "shop": {
     "meta": {
-      "title": "A.C.E. Marketplace",
+      "title": "A.C.E Marketplace",
       "description": "Carduri cu recompense de campionat. Magazinul și recompensele se deschid în curând."
     },
     "heroHonesty": "O primă privire asupra recompenselor viitoare de campionat. Magazinul se deschide în curând; astăzi nu se taxează nimic.",
@@ -26,7 +26,7 @@ export const desk: TextBag["desk"] = {
         "price": "În curând"
       },
       "crown": {
-        "name": "Ramă de avatar A.C.E. Crown",
+        "name": "Ramă de avatar A.C.E Crown",
         "tag": "Ornament de profil",
         "price": "În curând"
       },

@@ -5,10 +5,10 @@ export const account: TextBag["account"] = {
     "metaTitle": "플레이어 통계",
     "kicker": "플레이어 통계",
     "title": "플레이어 통계",
-    "lede": "기록된 A.C.E. 경기의 레이팅 변화와 헤드샷 %, 명중률 게이지. A.C.E Plus(월 $4)와 A.C.E Premium(월 $7)에 포함됩니다.",
+    "lede": "기록된 A.C.E 경기의 레이팅 변화와 헤드샷 %, 명중률 게이지. A.C.E Plus(월 $4)와 A.C.E Premium(월 $7)에 포함됩니다.",
     "movementTitle": "레이팅 변화",
-    "movementNote": "각 점은 기록된 A.C.E. 경기에서 기록된 레이팅 변화입니다.",
-    "noMatches": "아직 기록된 경기가 없어 그래프가 비어 있습니다. 첫 A.C.E. 경기가 기록되면 채워집니다.",
+    "movementNote": "각 점은 기록된 A.C.E 경기에서 기록된 레이팅 변화입니다.",
+    "noMatches": "아직 기록된 경기가 없어 그래프가 비어 있습니다. 첫 A.C.E 경기가 기록되면 채워집니다.",
     "currentLabel": "현재 레이팅",
     "netLabel": "순변화",
     "changesLabel": "기록된 변화",
@@ -21,7 +21,7 @@ export const account: TextBag["account"] = {
     "lockedBody": "저장된 플랜은 Free입니다. Plus(월 $4)와 Premium(월 $7) 모두 이 페이지를 엽니다. 곧 제공: 아직 결제가 없습니다.",
     "signIn": "플레이어 통계를 보려면 Steam으로 로그인하세요.",
     "plansLink": "플랜 보기",
-    "rosterNote": "예시 로스터 프로필: 이 선수들은 기록된 A.C.E. 경기가 없어 통계에 숫자가 표시되지 않습니다.",
+    "rosterNote": "예시 로스터 프로필: 이 선수들은 기록된 A.C.E 경기가 없어 통계에 숫자가 표시되지 않습니다.",
     "dashTitle": "통계 및 분석",
     "dashStats": "플레이어 통계 열기",
     "dashAnalysis": "경기 분석 열기 (Premium)",
@@ -38,7 +38,7 @@ export const account: TextBag["account"] = {
     "stats": {
       "accountStatus": "계정 상태",
       "subscription": "구독",
-      "rank": "A.C.E. 랭크",
+      "rank": "A.C.E 랭크",
       "ratingPoints": "레이팅 포인트",
       "wins": "승리",
       "losses": "패배",
@@ -71,7 +71,7 @@ export const account: TextBag["account"] = {
     "rankedButton": "랭크 매치 찾기",
     "roster": {
       "title": "5v5 로스터",
-      "body": "주장 1명. 초대 4건. 주장은 다른 A.C.E. 계정 ID를 초대하며, 이 ID는 검증된 Steam 로그인 후에만 생성됩니다."
+      "body": "주장 1명. 초대 4건. 주장은 다른 A.C.E 계정 ID를 초대하며, 이 ID는 검증된 Steam 로그인 후에만 생성됩니다."
     },
     "pendingInvites": "대기 중인 초대"
   },
@@ -86,7 +86,7 @@ export const account: TextBag["account"] = {
     },
     "invite": {
       "failed": "초대에 실패했습니다.",
-      "label": "SteamID 또는 A.C.E. 계정 ID로 자유 계약 선수 초대",
+      "label": "SteamID 또는 A.C.E 계정 ID로 자유 계약 선수 초대",
       "submitAria": "팀 초대 보내기",
       "submit": "초대 보내기"
     }
@@ -94,8 +94,8 @@ export const account: TextBag["account"] = {
   "profile": {
     "meta": {
       "notFoundTitle": "플레이어 프로필",
-      "title": "{name} · A.C.E. 프로필",
-      "description": "A.C.E. 플레이어 신상 파일입니다. Plus 및 Premium 세션에서는 텔레메트리 추세 그래프가 잠금 해제됩니다."
+      "title": "{name} · A.C.E 프로필",
+      "description": "A.C.E 플레이어 신상 파일입니다. Plus 및 Premium 세션에서는 텔레메트리 추세 그래프가 잠금 해제됩니다."
     },
     "kicker": "플레이어 신원",
     "bannerPlaceholder": "프로필 배너 · 곧 출시",
@@ -132,7 +132,7 @@ export const account: TextBag["account"] = {
     "back": "클랜 로스터로 돌아가기"
   },
   "networks": {
-    "note": "여기에 입력한 링크는 이 브라우저에만 남으며 저장되지 않습니다. A.C.E.는 Steam 비밀번호를 절대 요구하지 않습니다.",
+    "note": "여기에 입력한 링크는 이 브라우저에만 남으며 저장되지 않습니다. A.C.E는 Steam 비밀번호를 절대 요구하지 않습니다.",
     "labels": {
       "steam": "Steam 프로필"
     },
@@ -150,9 +150,9 @@ export const account: TextBag["account"] = {
       "title": "로그인 오류"
     },
     "title": "Steam 로그인이 완료되지 않았습니다",
-    "notConfigured": "이 서버에는 아직 Steam OpenID가 구성되어 있지 않습니다. A.C.E.는 Steam 비밀번호를 절대 요구하지 않습니다.",
-    "unavailable": "Steam이 인증 요청에 응답하지 않았습니다. 잠시 후 다시 시도하세요. A.C.E.는 Steam 비밀번호를 절대 요구하지 않습니다.",
-    "unverified": "서버에서 OpenID 콜백을 검증할 수 없었습니다. A.C.E.는 Steam 비밀번호를 절대 요구하지 않습니다.",
+    "notConfigured": "이 서버에는 아직 Steam OpenID가 구성되어 있지 않습니다. A.C.E는 Steam 비밀번호를 절대 요구하지 않습니다.",
+    "unavailable": "Steam이 인증 요청에 응답하지 않았습니다. 잠시 후 다시 시도하세요. A.C.E는 Steam 비밀번호를 절대 요구하지 않습니다.",
+    "unverified": "서버에서 OpenID 콜백을 검증할 수 없었습니다. A.C.E는 Steam 비밀번호를 절대 요구하지 않습니다.",
     "returnHome": "홈으로 돌아가기"
   }
 };

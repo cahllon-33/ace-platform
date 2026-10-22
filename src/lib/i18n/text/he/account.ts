@@ -5,10 +5,10 @@ export const account: TextBag["account"] = {
     "metaTitle": "סטטיסטיקות שחקן",
     "kicker": "סטטיסטיקות שחקן",
     "title": "סטטיסטיקות שחקן",
-    "lede": "תנועת הדירוג ממשחקי A.C.E. המתועדים שלך, עם מדדי אחוז פגיעות ראש ודיוק. כלול ב-A.C.E Plus (‏$4 לחודש) וב-A.C.E Premium (‏$7 לחודש).",
+    "lede": "תנועת הדירוג ממשחקי A.C.E המתועדים שלך, עם מדדי אחוז פגיעות ראש ודיוק. כלול ב-A.C.E Plus (‏$4 לחודש) וב-A.C.E Premium (‏$7 לחודש).",
     "movementTitle": "תנועת דירוג",
-    "movementNote": "כל נקודה היא שינוי דירוג שנכתב ממשחק A.C.E. מתועד.",
-    "noMatches": "עדיין אין משחקים מתועדים, ולכן הגרף ריק. הוא יתמלא אחרי משחק ה-A.C.E. המתועד הראשון שלך.",
+    "movementNote": "כל נקודה היא שינוי דירוג שנכתב ממשחק A.C.E מתועד.",
+    "noMatches": "עדיין אין משחקים מתועדים, ולכן הגרף ריק. הוא יתמלא אחרי משחק ה-A.C.E המתועד הראשון שלך.",
     "currentLabel": "דירוג נוכחי",
     "netLabel": "שינוי נטו",
     "changesLabel": "שינויים מתועדים",
@@ -21,7 +21,7 @@ export const account: TextBag["account"] = {
     "lockedBody": "התוכנית השמורה שלך היא Free. גם Plus (‏$4 לחודש) וגם Premium (‏$7 לחודש) פותחים את העמוד הזה. בקרוב: עדיין אין אפשרות תשלום.",
     "signIn": "התחברו עם Steam כדי לראות את הסטטיסטיקות שלכם.",
     "plansLink": "לצפייה בתוכניות",
-    "rosterNote": "פרופיל סגל לדוגמה: לשחקנים האלה אין משחקי A.C.E. מתועדים, ולכן הסטטיסטיקות לא מציגות מספרים.",
+    "rosterNote": "פרופיל סגל לדוגמה: לשחקנים האלה אין משחקי A.C.E מתועדים, ולכן הסטטיסטיקות לא מציגות מספרים.",
     "dashTitle": "סטטיסטיקות וניתוח",
     "dashStats": "לפתיחת סטטיסטיקות שחקן",
     "dashAnalysis": "לפתיחת ניתוח משחקים (Premium)",
@@ -38,7 +38,7 @@ export const account: TextBag["account"] = {
     "stats": {
       "accountStatus": "מצב החשבון",
       "subscription": "מנוי",
-      "rank": "דרגת A.C.E.",
+      "rank": "דרגת A.C.E",
       "ratingPoints": "נקודות דירוג",
       "wins": "ניצחונות",
       "losses": "הפסדים",
@@ -71,7 +71,7 @@ export const account: TextBag["account"] = {
     "rankedButton": "מצא משחק מדורג",
     "roster": {
       "title": "סגל 5v5",
-      "body": "קפטן אחד. ארבע הזמנות. קפטנים מזמינים מזהי חשבון A.C.E. אחרים, שנוצרים רק אחרי התחברות Steam מאומתת."
+      "body": "קפטן אחד. ארבע הזמנות. קפטנים מזמינים מזהי חשבון A.C.E אחרים, שנוצרים רק אחרי התחברות Steam מאומתת."
     },
     "pendingInvites": "הזמנות ממתינות"
   },
@@ -95,7 +95,7 @@ export const account: TextBag["account"] = {
     "meta": {
       "notFoundTitle": "פרופיל שחקן",
       "title": "{name} · פרופיל A.C.E.",
-      "description": "תיק השחקן של A.C.E. סשנים של Plus ו-Premium פותחים גרפי מגמה של טלמטריה."
+      "description": "תיק השחקן של A.C.E סשנים של Plus ו-Premium פותחים גרפי מגמה של טלמטריה."
     },
     "kicker": "זהות השחקן",
     "bannerPlaceholder": "באנר פרופיל · בקרוב",
@@ -132,7 +132,7 @@ export const account: TextBag["account"] = {
     "back": "חזרה לסגל הקלאן"
   },
   "networks": {
-    "note": "קישור שמוקלד כאן נשאר בדפדפן הזה ולא נשמר. A.C.E. לעולם לא מבקשת סיסמת Steam.",
+    "note": "קישור שמוקלד כאן נשאר בדפדפן הזה ולא נשמר. A.C.E לעולם לא מבקשת סיסמת Steam.",
     "labels": {
       "steam": "פרופיל Steam"
     },
@@ -150,9 +150,9 @@ export const account: TextBag["account"] = {
       "title": "שגיאת התחברות"
     },
     "title": "ההתחברות דרך Steam לא הושלמה",
-    "notConfigured": "Steam OpenID עדיין לא מוגדר בשרת הזה. A.C.E. לעולם לא מבקשת סיסמת Steam.",
-    "unavailable": "Steam לא ענה לבקשת האימות. נסו שוב בעוד רגע. A.C.E. לעולם לא מבקשת סיסמת Steam.",
-    "unverified": "לא ניתן היה לאמת בשרת את קריאת החזרה של OpenID. A.C.E. לעולם לא מבקשת סיסמת Steam.",
+    "notConfigured": "Steam OpenID עדיין לא מוגדר בשרת הזה. A.C.E לעולם לא מבקשת סיסמת Steam.",
+    "unavailable": "Steam לא ענה לבקשת האימות. נסו שוב בעוד רגע. A.C.E לעולם לא מבקשת סיסמת Steam.",
+    "unverified": "לא ניתן היה לאמת בשרת את קריאת החזרה של OpenID. A.C.E לעולם לא מבקשת סיסמת Steam.",
     "returnHome": "חזרה לדף הבית"
   }
 };

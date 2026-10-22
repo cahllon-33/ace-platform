@@ -70,10 +70,10 @@ export const pricing: TextBag["pricing"] = {
       "prices": "Free {free}. Plus {plus} mjesečno. Premium {premium} mjesečno. Planovi se obnavljaju mjesečno. Otkazati možeš bilo kada bez kazne u postavkama nadzorne ploče i zadržati pristup do kraja plaćenog mjeseca. Započeti mjesec ne vraća se, osim ako to traži zakon tvoje zemlje.",
       "plusTitle": "2. Što uključuje Plus",
       "plus1": "Sve iz Free.",
-      "plus2": "Uskoro: zahvalnica i podrška e-poštom na support@ace-platform.gg, kad bude postojalo plaćanje.",
+      "plus2": "Podrška e-poštom za članove na {email} i zahvalno pismo tima.",
       "premiumTitle": "3. Što uključuje Premium",
       "prem1": "Sve iz Plus.",
-      "prem2": "Premium umjetnost rangova i Premium kodeks rangova: originalni ilustrirani A.C.E. set amblema na tvom profilu. Samo kozmetika, na istoj ljestvici Rating Points.",
+      "prem2": "Premium umjetnost rangova i Premium kodeks rangova: originalni ilustrirani A.C.E set amblema na tvom profilu. Samo kozmetika, na istoj ljestvici Rating Points.",
       "prem3": "Animirana Premium kartica profila.",
       "prem4": "Posebne značke i PEČAT ELITE.",
       "prem5": "Uskoro: proširena analiza meča (toplinska karta smrti, % headshotova, učinak po rundi), kad bude postojala obrada demo snimki.",
@@ -85,14 +85,14 @@ export const pricing: TextBag["pricing"] = {
       "soon": "Ništa označeno kao Uskoro nije obećano dok ne bude objavljeno. Do tada cijena to ne uključuje.",
       "languageTitle": "6. Jezik",
       "language": "Prijevodi su pruženi radi praktičnosti. Ako se prijevod razlikuje od engleskog teksta, primjenjuje se engleski tekst.",
-      "contact": "Pitanja: support@ace-platform.gg",
+      "contact": "Pitanja: {email}",
       "footerLink": "Premium uvjeti",
       "pricingLink": "Pročitaj Premium uvjete"
     }
   },
   "meta": {
     "title": "Cijene",
-    "description": "A.C.E. članstvo: Free {free}, Plus {plus}/mj., Premium {premium}/mj. Prikazane cijene zaključane na cijele brojeve."
+    "description": "A.C.E članstvo: Free {free}, Plus {plus}/mj., Premium {premium}/mj. Prikazane cijene zaključane na cijele brojeve."
   },
   "period": {
     "monthly": "/mj."
@@ -108,23 +108,23 @@ export const pricing: TextBag["pricing"] = {
       "note": "Grafit",
       "title": "Otvoreni pristup",
       "points": [
-        "Prijavi se putem Steam OpenID-a. A.C.E. nikad ne traži Steam lozinku.",
+        "Prijavi se putem Steam OpenID-a. A.C.E nikad ne traži Steam lozinku.",
         "Spremljeni rejting počinje od 1.200. Nijedan rezultat meča ga nije promijenio.",
         "Sve javne stranice: igraj, turniri, ljestvica, timovi i pravila."
       ]
     },
     "plus": {
-      "name": "A.C.E. PLUS",
+      "name": "A.C.E PLUS",
       "note": "Plus",
       "title": "Statistika igrača i podrška",
       "points": [
         "Sve iz plana Free.",
-        "Statistika igrača: grafikon kretanja ratinga iz zabilježenih A.C.E. mečeva. Pokazatelji % headshotova i preciznosti uskoro.",
-        "Uskoro: pismo zahvale i podrška e-poštom na support@ace-platform.gg, kad naplata bude postojala. Plus ne kupuje rating ni lakše protivnike."
+        "Statistika igrača: grafikon kretanja ratinga iz zabilježenih A.C.E mečeva. Pokazatelji % headshotova i preciznosti uskoro.",
+        "Podrška e-poštom za članove na {email} i zahvalno pismo tima. Plus ne kupuje rating ni lakše protivnike."
       ]
     },
     "premium": {
-      "name": "A.C.E. PREMIUM",
+      "name": "A.C.E PREMIUM",
       "note": "Premium",
       "title": "Grafika profila, značke i analiza",
       "points": [
@@ -159,7 +159,7 @@ export const pricing: TextBag["pricing"] = {
     }
   },
   "compare": {
-    "kicker": "Što A.C.E. može obećati danas",
+    "kicker": "Što A.C.E može obećati danas",
     "title": "Usporedba članstava",
     "note": "Svaki redak odražava stranicu danas. Plaćanje stiže uskoro, a plaćeni plan nikad ne otvara red niti kupuje prednost.",
     "caption": "Free, Plus i Premium uspoređeni prema onome što stranica danas radi",
@@ -175,7 +175,7 @@ export const pricing: TextBag["pricing"] = {
       },
       "steamSignIn": {
         "feature": "Steam prijava",
-        "detail": "Službeni Steam OpenID. A.C.E. nikad ne traži Steam lozinku."
+        "detail": "Službeni Steam OpenID. A.C.E nikad ne traži Steam lozinku."
       },
       "startingRating": {
         "feature": "Početni rejting",
@@ -183,7 +183,7 @@ export const pricing: TextBag["pricing"] = {
       },
       "recordedMatches": {
         "feature": "Zabilježeni mečevi",
-        "detail": "Pobjede i porazi zapisani iz završenog A.C.E. meča."
+        "detail": "Pobjede i porazi zapisani iz završenog A.C.E meča."
       },
       "rankedQueue": {
         "feature": "Ranked red",
@@ -231,15 +231,15 @@ export const pricing: TextBag["pricing"] = {
   "receipt": {
     "plus": {
       "metaTitle": "Plus potvrda",
-      "metaDescription": "A.C.E. Plus pismo prikazano na ovoj stranici. Plaćanje nije aktivno, pa se ništa ne naplaćuje i ne šalje se e-pošta.",
-      "planName": "A.C.E. Plus",
-      "nextLabel": "Nastavi na A.C.E.",
+      "metaDescription": "A.C.E Plus pismo prikazano na ovoj stranici. Plaćanje nije aktivno, pa se ništa ne naplaćuje i ne šalje se e-pošta.",
+      "planName": "A.C.E Plus",
+      "nextLabel": "Nastavi na A.C.E",
       "nextBody": "Javne stranice ostaju otvorene. Ovaj odabir ne otvara red i ne mijenja spremljenu razinu."
     },
     "premium": {
       "metaTitle": "Premium potvrda",
-      "metaDescription": "A.C.E. Premium pismo prikazano na ovoj stranici. Plaćanje nije aktivno, pa se ništa ne naplaćuje i ne šalje se e-pošta.",
-      "planName": "A.C.E. Premium",
+      "metaDescription": "A.C.E Premium pismo prikazano na ovoj stranici. Plaćanje nije aktivno, pa se ništa ne naplaćuje i ne šalje se e-pošta.",
+      "planName": "A.C.E Premium",
       "nextLabel": "Pročitaj Premium uvjete",
       "nextBody": "Premium čine Premium umjetnost rangova, animirana kartica profila, posebne značke i ELITE SEAL te sve iz Plusa. Spremanje klana u Squads besplatno je za svaki račun."
     }
@@ -256,7 +256,7 @@ export const pricing: TextBag["pricing"] = {
         "Naziv plana: {plan}.",
         "Prikazana cijena: {price} mjesečno. Iznos je oznaka, ne naplata.",
         "Plaćanje: nema. Odabir ovog plana ne uzima karticu.",
-        "E-pošta: nema. A.C.E. ne šalje ovo pismo u pretinac.",
+        "E-pošta: nema. A.C.E ne šalje ovo pismo u pretinac.",
         "Spremljena razina: nepromijenjena. Posebne značke i elitni pečat pojavljuju se samo kad račun već sprema Premium.",
         "Rejting: nije na prodaju. Novi račun i dalje počinje od 1.200."
       ]
@@ -265,7 +265,7 @@ export const pricing: TextBag["pricing"] = {
       "title": "Što danas možeš koristiti",
       "items": [
         "Javnu stranicu: početna, igraj, turniri, ljestvica, timovi, pravila i uvjeti.",
-        "Steam prijavu putem službenog Steam OpenID-a. A.C.E. nikad ne traži Steam lozinku.",
+        "Steam prijavu putem službenog Steam OpenID-a. A.C.E nikad ne traži Steam lozinku.",
         "Iste javne stranice kao Free. Ova cijena ne otvara zaseban red."
       ]
     },
@@ -309,7 +309,7 @@ export const pricing: TextBag["pricing"] = {
   },
   "telemetry": {
     "kicker": "PLUS / PREMIUM TELEMETRIJA",
-    "copy": "TELEMETRIJA NADZORNE PLOČE ZAKLJUČANA — Nadogradi pretplatu na A.C.E. Plus ili Premium za otključavanje dinamičnih krivulja statistike u stvarnom vremenu i indeksa specijalnosti oružja.",
+    "copy": "TELEMETRIJA NADZORNE PLOČE ZAKLJUČANA — Nadogradi pretplatu na A.C.E Plus ili Premium za otključavanje dinamičnih krivulja statistike u stvarnom vremenu i indeksa specijalnosti oružja.",
     "cta": "Otvori tablice cijena"
   }
 };

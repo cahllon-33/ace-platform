@@ -1,3 +1,4 @@
+import { CONTACT_EMAIL } from "@/lib/legal-r49";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { LegalDocument, LegalSection } from "@/components/legal-document";
@@ -27,7 +28,7 @@ export default async function PremiumTermsPage() {
         <ul className="list-disc space-y-1 pl-5">
           <li>{t.plus1}</li>
           <li>{text.pricing.plansR11.termsPlusStats}</li>
-          <li>{t.plus2}</li>
+          {CONTACT_EMAIL ? <li>{interpolate(t.plus2, { email: CONTACT_EMAIL })}</li> : null}
         </ul>
       </LegalSection>
       <LegalSection title={t.premiumTitle}>
@@ -55,7 +56,7 @@ export default async function PremiumTermsPage() {
       </LegalSection>
       <LegalSection title={t.languageTitle}>
         <p>{t.language}</p>
-        <p className="mt-3">{t.contact}</p>
+        {CONTACT_EMAIL ? <p className="mt-3">{interpolate(t.contact, { email: CONTACT_EMAIL })}</p> : null}
       </LegalSection>
     </LegalDocument>
   );

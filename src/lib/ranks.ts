@@ -13,7 +13,7 @@ export type RankTier = {
   toneClass: string;
 };
 
-/** Original A.C.E. ladder. Rank 1 is the default for new Steam-linked accounts. */
+/** Original A.C.E ladder. Rank 1 is the default for new Steam-linked accounts. */
 export const RANK_TIERS: RankTier[] = [
   {
     level: 1,
@@ -107,7 +107,7 @@ export const RANK_TIERS: RankTier[] = [
   },
   {
     level: 10,
-    name: "A.C.E. Legend",
+    name: "A.C.E Legend",
     crystalName: "ACE ELITE",
     material: "Luxury Molten Radiant Gold Crown framework",
     minRating: 1950,
@@ -181,7 +181,7 @@ export function rankEmblemAsset(level: number): RankEmblemAsset {
 /** Standard ranks use the vector set; Premium rank art is the original illustrated set. */
 export type RankArt = "standard" | "premium";
 
-/** Original illustrated A.C.E. emblems (restored from main). Profile art for A.C.E Premium only. */
+/** Original illustrated A.C.E emblems (restored from main). Profile art for A.C.E Premium only. */
 export function rankIllustratedAsset(level: number): RankEmblemAsset {
   const file = EMBLEM_FILES[Math.min(9, Math.max(0, level - 1))];
   return {

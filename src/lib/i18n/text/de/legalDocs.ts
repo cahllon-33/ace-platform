@@ -5,7 +5,7 @@ export const legalDocs: TextBag["legalDocs"] = {
     "effective": "Gültig ab: {date}",
     "contact": "Kontakt: support@ace-platform.gg",
     "definitionsTitle": "Begriffsbestimmungen",
-    "definitions": "In diesen Bedingungen bedeuten „A.C.E.“, „wir“ und „uns“ die A.C.E. „Website“ bedeutet ace-platform.gg. „Konto“ bedeutet das über die Steam-Anmeldung erstellte A.C.E.-Profil. „Plan“ bedeutet Free, Plus oder Premium. „Regelwerk“ bedeutet das Wettbewerbsregelwerk unter /rules. „Admin“ bedeutet ein Teammitglied, das das Regelwerk bei einem Event anwendet.",
+    "definitions": "In diesen Bedingungen bedeuten „A.C.E“, „wir“ und „uns“ die A.C.E „Website“ bedeutet ace-platform.gg. „Konto“ bedeutet das über die Steam-Anmeldung erstellte A.C.E-Profil. „Plan“ bedeutet Free, Plus oder Premium. „Regelwerk“ bedeutet das Wettbewerbsregelwerk unter /rules. „Admin“ bedeutet ein Teammitglied, das das Regelwerk bei einem Event anwendet.",
     "suspensionTitle": "Kontobeschränkungen und Sperren",
     "suspension": "Wir können ein Konto verwarnen, beschränken, sperren oder schließen, wenn es gegen diese Bedingungen oder das Regelwerk verstößt, etwa durch Cheaten, Kontoteilung, Sperrumgehung, Belästigung oder Betrug. Ein bezahlter Plan schützt ein Konto nie vor einer Beschränkung.",
     "disputesTitle": "Regelentscheidungen und Einsprüche",
@@ -23,22 +23,22 @@ export const legalDocs: TextBag["legalDocs"] = {
     meta: {
       title: "Nutzungsbedingungen",
       description:
-        "Nutzungsbedingungen der A.C.E.-Website für diese Counter-Strike 2-Wettkampfseite. Ranglistenspiele, Zahlungen und Anti-Cheat sind nicht in Betrieb.",
+        "Nutzungsbedingungen der A.C.E-Website für diese Counter-Strike 2-Wettkampfseite. Ranglistenspiele, Zahlungen und Anti-Cheat sind nicht in Betrieb.",
     },
     kicker: "ACE-RECHTLICHES / NUTZUNGSBEDINGUNGEN",
     title: "Nutzungsbedingungen",
-    lede: "Diese Bedingungen regeln deine Nutzung der A.C.E.-Website und deines A.C.E.-Kontos. Das Wettbewerbsregelwerk unter /rules, die Datenschutzerklärung, die Cookie-Richtlinie und die Premium-Bedingungen sind Teil dieser Bedingungen.",
+    lede: "Diese Bedingungen regeln deine Nutzung der A.C.E-Website und deines A.C.E-Kontos. Das Wettbewerbsregelwerk unter /rules, die Datenschutzerklärung, die Cookie-Richtlinie und die Premium-Bedingungen sind Teil dieser Bedingungen.",
     sections: {
       operator: {
         title: "1. Betreiber und Unabhängigkeit",
         paragraphs: [
-          "Der Dienst wird von A.C.E. betrieben. Mit der Nutzung der Website akzeptierst du diese Bedingungen, die Datenschutzerklärung, die Cookie-Richtlinie und das Wettkampfregelwerk.",
+          "Der Dienst wird von A.C.E betrieben. Mit der Nutzung der Website akzeptierst du diese Bedingungen, die Datenschutzerklärung, die Cookie-Richtlinie und das Wettkampfregelwerk.",
         ],
       },
       eligibility: {
         title: "2. Teilnahmeberechtigung und Konten",
         paragraphs: [
-          "Konten werden nur über die offizielle Steam-OpenID-Anmeldung erstellt, ein Konto pro Person. A.C.E. fragt nie nach deinem Steam-Passwort.",
+          "Konten werden nur über die offizielle Steam-OpenID-Anmeldung erstellt, ein Konto pro Person. A.C.E fragt nie nach deinem Steam-Passwort.",
         ],
       },
       notActive: {
@@ -62,20 +62,20 @@ export const legalDocs: TextBag["legalDocs"] = {
       liability: {
         title: "6. Haftungsbeschränkung",
         paragraphs: [
-          "Soweit gesetzlich zulässig, haftet A.C.E. nicht für verlorenen Rang, verlorene Kosmetik, die niemals echte Gegenstände war, oder Ausfälle von Steam / CS2 durch Dritte. Zwingende Verbraucherrechte in Ihrem Land werden nicht ausgeschlossen, soweit auf sie nicht verzichtet werden kann.",
+          "Soweit gesetzlich zulässig, haftet A.C.E nicht für verlorenen Rang, verlorene Kosmetik, die niemals echte Gegenstände war, oder Ausfälle von Steam / CS2 durch Dritte. Zwingende Verbraucherrechte in Ihrem Land werden nicht ausgeschlossen, soweit auf sie nicht verzichtet werden kann.",
         ],
       },
       copyright: {
         title: "7. Urheberrecht an eigenem Website-Material",
         paragraphs: [
-          "Originaltexte, Seitenlayout, Embleme und Grafiken, die für diese Website erstellt wurden, gehören A.C.E. Sie dürfen dieses Originalmaterial ohne schriftliche Genehmigung nicht für ein anderes Produkt kopieren, erneut veröffentlichen oder automatisiert auslesen. Soweit das Gesetz es zulässt, kann A.C.E. dieses Recht durchsetzen, auch durch eine Klage. Dieser Hinweis leitet kein Verfahren ein, legt keinen Schadensersatz fest und garantiert kein Gerichtsergebnis.",
-          "Counter-Strike 2, Steam und die Kartennamen Dust II, Mirage, Inferno, Nuke, Ancient, Anubis und Train gehören Valve. A.C.E. beansprucht sie nicht. Das Öffnen dieser Website hebt kein gesetzliches Recht auf und schließt keinen Vertrag.",
+          "Originaltexte, Seitenlayout, Embleme und Grafiken, die für diese Website erstellt wurden, gehören A.C.E. Sie dürfen dieses Originalmaterial ohne schriftliche Genehmigung nicht für ein anderes Produkt kopieren, erneut veröffentlichen oder automatisiert auslesen. Soweit das Gesetz es zulässt, kann A.C.E dieses Recht durchsetzen, auch durch eine Klage. Dieser Hinweis leitet kein Verfahren ein, legt keinen Schadensersatz fest und garantiert kein Gerichtsergebnis.",
+          "Counter-Strike 2, Steam und die Kartennamen Dust II, Mirage, Inferno, Nuke, Ancient, Anubis und Train gehören Valve. A.C.E beansprucht sie nicht. Das Öffnen dieser Website hebt kein gesetzliches Recht auf und schließt keinen Vertrag.",
         ],
       },
       contact: {
         title: "8. Kontakt",
         paragraphs: [
-          "support@ace-platform.gg — A.C.E.",
+          "support@ace-platform.gg — A.C.E",
         ],
       },
     },
@@ -84,11 +84,11 @@ export const legalDocs: TextBag["legalDocs"] = {
     meta: {
       title: "Datenschutzrichtlinie",
       description:
-        "Datenschutzrichtlinie von A.C.E.: nur unbedingt erforderliche Daten, ausschließlich Steam OpenID, keine Steam-Passwörter, kein Verkauf von Verhaltensdaten.",
+        "Datenschutzrichtlinie von A.C.E: nur unbedingt erforderliche Daten, ausschließlich Steam OpenID, keine Steam-Passwörter, kein Verkauf von Verhaltensdaten.",
     },
     kicker: "ACE-LEGAL / DATENSCHUTZERKLÄRUNG",
     title: "Datenschutzrichtlinie",
-    lede: "Diese Datenschutzerklärung erklärt, welche personenbezogenen Daten die A.C.E. bei der Nutzung dieser Website speichert, warum und wie lange. Weicht eine Übersetzung vom englischen Text ab, gilt der englische Text.",
+    lede: "Diese Datenschutzerklärung erklärt, welche personenbezogenen Daten die A.C.E bei der Nutzung dieser Website speichert, warum und wie lange. Weicht eine Übersetzung vom englischen Text ab, gilt der englische Text.",
     strictNecessity: {
       title: "Grundsatz der unbedingten Erforderlichkeit",
       intro:
@@ -97,14 +97,14 @@ export const legalDocs: TextBag["legalDocs"] = {
       stored: [
         {
           label: "Geprüfte 64-Bit-SteamID",
-          body: "wird von der offiziellen OpenID-Bestätigung von Steam übermittelt und auf dem Server geprüft, bevor ein A.C.E.-Konto erstellt oder aktualisiert wird.",
+          body: "wird von der offiziellen OpenID-Bestätigung von Steam übermittelt und auf dem Server geprüft, bevor ein A.C.E-Konto erstellt oder aktualisiert wird.",
         },
         {
           label: "Öffentlicher Steam-Anzeigename",
           body: "sofern ein Steam-Web-API-Schlüssel eingerichtet ist. Dies ist ein Profilname, kein E-Mail-Postfach.",
         },
         {
-          label: "A.C.E.-Kontodaten",
+          label: "A.C.E-Kontodaten",
           body: "etwa Rangstufe, Wertungspunkte, Siege/Niederlagen, Mannschaftszugehörigkeit und Hashwerte von Sitzungstoken.",
         },
       ],
@@ -126,17 +126,17 @@ export const legalDocs: TextBag["legalDocs"] = {
     steamBoundary: {
       title: "Einbettungen Dritter und die Grenze von Steam OpenID",
       callback: {
-        before: "Bei der Anmeldung über Steam verlassen Sie A.C.E., authentifizieren sich bei Steam und kehren anschließend zu",
+        before: "Bei der Anmeldung über Steam verlassen Sie A.C.E, authentifizieren sich bei Steam und kehren anschließend zu",
         after:
-          " zurück. Der Server prüft die OpenID-Bestätigung (einschließlich der beanspruchten Identität und der signierten Parameter von Steam), bevor eine Sitzung angelegt wird. Für die Daten, die Steam speichert, gilt die Datenschutzrichtlinie von Steam. A.C.E. speichert nur die geprüfte SteamID und die öffentlichen Profilfelder, die für den Betrieb des Kontos erforderlich sind.",
+          " zurück. Der Server prüft die OpenID-Bestätigung (einschließlich der beanspruchten Identität und der signierten Parameter von Steam), bevor eine Sitzung angelegt wird. Für die Daten, die Steam speichert, gilt die Datenschutzrichtlinie von Steam. A.C.E speichert nur die geprüfte SteamID und die öffentlichen Profilfelder, die für den Betrieb des Kontos erforderlich sind.",
       },
       footerLinks:
-        "Die Symbole externer Netzwerke in der Fußzeile sind Verzeichnisverweise auf öffentliche Websites. Sie sind keine offiziellen A.C.E.-Konten und binden keine Tracking-Widgets ein.",
+        "Die Symbole externer Netzwerke in der Fußzeile sind Verzeichnisverweise auf öffentliche Websites. Sie sind keine offiziellen A.C.E-Konten und binden keine Tracking-Widgets ein.",
     },
     rights: {
       title: "Deine Rechte",
       before:
-        "Wenn Sie sich in einer Region mit Rechten an personenbezogenen Daten befinden, können Sie Auskunft, Berichtigung oder Löschung Ihrer A.C.E.-Kontodaten per E-Mail beantragen an",
+        "Wenn Sie sich in einer Region mit Rechten an personenbezogenen Daten befinden, können Sie Auskunft, Berichtigung oder Löschung Ihrer A.C.E-Kontodaten per E-Mail beantragen an",
       after:
         ". Das Löschen eines Website-Kontos ändert keine Steam- oder VAC-Entscheidung von Valve.",
     },
@@ -163,13 +163,13 @@ export const legalDocs: TextBag["legalDocs"] = {
     lede: "Diese Cookie-Richtlinie listet die Cookies, die diese Website tatsächlich setzt, die für später reservierten Kategorien und was nicht erhoben wird.",
     audit: {
       title: "Tracker auf dieser Website",
-      body: "A.C.E. setzt auf dieser öffentlichen Website keine Werbepixel, kein Google Analytics, kein Meta Pixel, keine Fingerprinting-SDKs und keine anderen Verhaltenstracker von Drittanbietern ein. Die optionalen „Analyse-Tracker“ und „Marketing-Tracker“ in der Einwilligungsleiste sind nur Kategorien. Wenn Sie sie aktivieren, wird derzeit kein Skript geladen. Wird später ein Tracker hinzugefügt, liest er zuerst die gespeicherte Einstellung und bleibt deaktiviert, sofern Sie nicht eingewilligt haben.",
+      body: "A.C.E setzt auf dieser öffentlichen Website keine Werbepixel, kein Google Analytics, kein Meta Pixel, keine Fingerprinting-SDKs und keine anderen Verhaltenstracker von Drittanbietern ein. Die optionalen „Analyse-Tracker“ und „Marketing-Tracker“ in der Einwilligungsleiste sind nur Kategorien. Wenn Sie sie aktivieren, wird derzeit kein Skript geladen. Wird später ein Tracker hinzugefügt, liest er zuerst die gespeicherte Einstellung und bleibt deaktiviert, sofern Sie nicht eingewilligt haben.",
     },
     essential: {
       title: "Notwendige Cookies [Erforderlich / Gesperrt]",
       session: {
         label: "Sitzungscookie",
-        body: "— wird erst nach einem geprüften Steam-OpenID-Rückruf gesetzt. HttpOnly, für JavaScript auf der Seite nicht lesbar, dient dazu, Sie bei A.C.E. angemeldet zu halten.",
+        body: "— wird erst nach einem geprüften Steam-OpenID-Rückruf gesetzt. HttpOnly, für JavaScript auf der Seite nicht lesbar, dient dazu, Sie bei A.C.E angemeldet zu halten.",
       },
       necessity:
         "Diese Cookies sind für den Betrieb eines authentifizierten Kontos unbedingt erforderlich. Sie sind keine Werbe-IDs.",
@@ -181,7 +181,7 @@ export const legalDocs: TextBag["legalDocs"] = {
     },
     marketing: {
       title: "Marketing-Tracker [Optional]",
-      body: "Reserviert. A.C.E. verkauft, vermietet oder vermittelt keine Verhaltensprofile. Auf dieser Website gibt es keinen Marketing-Tag-Manager.",
+      body: "Reserviert. A.C.E verkauft, vermietet oder vermittelt keine Verhaltensprofile. Auf dieser Website gibt es keinen Marketing-Tag-Manager.",
     },
     change: {
       title: "So ändern Sie Ihre Wahl",

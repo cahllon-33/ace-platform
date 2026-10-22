@@ -2,7 +2,7 @@ import type { TextBag } from "../types";
 
 export const consent: TextBag["consent"] = {
   valveDisclaimer:
-    "A.C.E.는 독립적인 Counter-Strike 2 대회 사이트입니다. Valve Corporation과 제휴하지 않았으며, Valve의 승인이나 보증을 받지 않았습니다. Steam과 Counter-Strike는 각 소유자의 상표입니다. 대회 규정은 해당 게임을 위해 A.C.E.가 직접 작성한 문서입니다.",
+    "A.C.E는 독립적인 Counter-Strike 2 대회 사이트입니다. Valve Corporation과 제휴하지 않았으며, Valve의 승인이나 보증을 받지 않았습니다. Steam과 Counter-Strike는 각 소유자의 상표입니다. 대회 규정은 해당 게임을 위해 A.C.E가 직접 작성한 문서입니다.",
   acceptance: {
     label: "본인은 이용 약관, 안티치트 EULA, 개인정보 처리방침에 명시적으로 동의합니다.",
     readBefore: "자세한 내용은",
@@ -22,7 +22,7 @@ export const consent: TextBag["consent"] = {
     optional: "선택",
   },
   banner: {
-    kicker: "A.C.E. 사이트 고지",
+    kicker: "A.C.E 사이트 고지",
     copy: {
       before:
         "동의를 누르면 이 브라우저의 쿠키 선택이 저장됩니다. 이는 전자 서명이 아니며, 기기 텔레메트리를 수집하지 않고, 안티치트 클라이언트를 시작하지 않으며, 경쟁 대기열을 열지 않습니다. 계속하기 전에",

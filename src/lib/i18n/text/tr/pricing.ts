@@ -70,10 +70,10 @@ export const pricing: TextBag["pricing"] = {
       "prices": "Free {free}. Plus aylık {plus}. Premium aylık {premium}. Planlar aylık yenilenir. İstediğin zaman panel ayarlarından cezasız iptal edebilir ve ödenen ayın sonuna kadar erişimi koruyabilirsin. Kısmi ay, ülkenin yasası gerektirmedikçe iade edilmez.",
       "plusTitle": "2. Plus neleri içerir",
       "plus1": "Free'deki her şey.",
-      "plus2": "Yakında: ödeme var olduğunda bir teşekkür mektubu ve support@ace-platform.gg üzerinden e-posta desteği.",
+      "plus2": "Üyelere {email} adresinden e-posta desteği ve ekipten bir teşekkür mektubu.",
       "premiumTitle": "3. Premium neleri içerir",
       "prem1": "Plus'taki her şey.",
-      "prem2": "Premium rütbe sanatı ve Premium rütbe kodeksi: profilinde orijinal resimli A.C.E. amblem seti. Yalnızca kozmetik, aynı Rating Points merdiveninde.",
+      "prem2": "Premium rütbe sanatı ve Premium rütbe kodeksi: profilinde orijinal resimli A.C.E amblem seti. Yalnızca kozmetik, aynı Rating Points merdiveninde.",
       "prem3": "Animasyonlu Premium profil kartı.",
       "prem4": "Özel rozetler ve ELITE MÜHRÜ.",
       "prem5": "Yakında: demo ayrıştırma var olduğunda gelişmiş maç analizi (ölüm ısı haritası, headshot %, raunt bazında performans).",
@@ -85,14 +85,14 @@ export const pricing: TextBag["pricing"] = {
       "soon": "Yakında olarak işaretlenen hiçbir şey yayınlanana kadar vaat edilmez. O zamana kadar fiyata dahil değildir.",
       "languageTitle": "6. Dil",
       "language": "Çeviriler kolaylık için sunulur. Bir çeviri İngilizce metinden farklıysa İngilizce metin geçerlidir.",
-      "contact": "Sorular: support@ace-platform.gg",
+      "contact": "Sorular: {email}",
       "footerLink": "Premium koşulları",
       "pricingLink": "Premium koşullarını oku"
     }
   },
   "meta": {
     "title": "Fiyatlandırma",
-    "description": "A.C.E. üyeliği: Free {free}, Plus aylık {plus}, Premium aylık {premium}. Sabit tam sayı fiyatlar."
+    "description": "A.C.E üyeliği: Free {free}, Plus aylık {plus}, Premium aylık {premium}. Sabit tam sayı fiyatlar."
   },
   "period": {
     "monthly": "/ay"
@@ -108,23 +108,23 @@ export const pricing: TextBag["pricing"] = {
       "note": "Grafit",
       "title": "Açık erişim",
       "points": [
-        "Steam OpenID ile oturum açın. A.C.E. asla Steam şifresi istemez.",
+        "Steam OpenID ile oturum açın. A.C.E asla Steam şifresi istemez.",
         "Kayıtlı bir puan 1.200'den başlar. Hiçbir maç sonucu onu değiştirmedi.",
         "Tüm herkese açık sayfalar: oyna, turnuvalar, sıralama, takımlar ve kurallar."
       ]
     },
     "plus": {
-      "name": "A.C.E. PLUS",
+      "name": "A.C.E PLUS",
       "note": "Plus",
       "title": "Oyuncu istatistikleri ve destek",
       "points": [
         "Free'deki her şey.",
-        "Oyuncu istatistikleri: kayıtlı A.C.E. maçlarından reyting değişim grafiğin. Kafa vuruşu % ve isabet göstergeleri yakında.",
-        "Yakında: ödeme sistemi açıldığında bir teşekkür mektubu ve support@ace-platform.gg üzerinden e-posta desteği. Plus reyting ya da daha kolay rakip satın almaz."
+        "Oyuncu istatistikleri: kayıtlı A.C.E maçlarından reyting değişim grafiğin. Kafa vuruşu % ve isabet göstergeleri yakında.",
+        "Üyelere {email} adresinden e-posta desteği ve ekipten bir teşekkür mektubu. Plus reyting ya da daha kolay rakip satın almaz."
       ]
     },
     "premium": {
-      "name": "A.C.E. PREMIUM",
+      "name": "A.C.E PREMIUM",
       "note": "Premium",
       "title": "Profil görselleri, rozetler ve analiz",
       "points": [
@@ -159,7 +159,7 @@ export const pricing: TextBag["pricing"] = {
     }
   },
   "compare": {
-    "kicker": "A.C.E.'nin bugün vaat edebildikleri",
+    "kicker": "A.C.E'nin bugün vaat edebildikleri",
     "title": "Üyelik karşılaştırması",
     "note": "Her satır sitenin bugünkü durumunu yansıtır. Ödeme yakında geliyor ve ücretli bir plan asla sıra açmaz veya avantaj satın almaz.",
     "caption": "Free, Plus ve Premium'un sitenin bugün yaptıklarına göre karşılaştırması",
@@ -175,7 +175,7 @@ export const pricing: TextBag["pricing"] = {
       },
       "steamSignIn": {
         "feature": "Steam ile oturum açma",
-        "detail": "Resmi Steam OpenID. A.C.E. asla Steam şifresi istemez."
+        "detail": "Resmi Steam OpenID. A.C.E asla Steam şifresi istemez."
       },
       "startingRating": {
         "feature": "Başlangıç derecesi",
@@ -183,7 +183,7 @@ export const pricing: TextBag["pricing"] = {
       },
       "recordedMatches": {
         "feature": "Kaydedilen maçlar",
-        "detail": "Tamamlanmış bir A.C.E. maçından yazılan galibiyet ve mağlubiyetler."
+        "detail": "Tamamlanmış bir A.C.E maçından yazılan galibiyet ve mağlubiyetler."
       },
       "rankedQueue": {
         "feature": "Dereceli sıra",
@@ -231,15 +231,15 @@ export const pricing: TextBag["pricing"] = {
   "receipt": {
     "plus": {
       "metaTitle": "Plus makbuzu",
-      "metaDescription": "Bu sitede gösterilen A.C.E. Plus mektubu. Ödeme aktif değil, bu yüzden ücret alınmaz ve e-posta gönderilmez.",
-      "planName": "A.C.E. Plus",
-      "nextLabel": "A.C.E.'de devam et",
+      "metaDescription": "Bu sitede gösterilen A.C.E Plus mektubu. Ödeme aktif değil, bu yüzden ücret alınmaz ve e-posta gönderilmez.",
+      "planName": "A.C.E Plus",
+      "nextLabel": "A.C.E'de devam et",
       "nextBody": "Herkese açık sayfalar açık kalır. Bu seçim bir sıra açmaz ve kayıtlı kademeyi değiştirmez."
     },
     "premium": {
       "metaTitle": "Premium makbuzu",
-      "metaDescription": "Bu sitede gösterilen A.C.E. Premium mektubu. Ödeme aktif değil, bu yüzden ücret alınmaz ve e-posta gönderilmez.",
-      "planName": "A.C.E. Premium",
+      "metaDescription": "Bu sitede gösterilen A.C.E Premium mektubu. Ödeme aktif değil, bu yüzden ücret alınmaz ve e-posta gönderilmez.",
+      "planName": "A.C.E Premium",
       "nextLabel": "Premium koşullarını oku",
       "nextBody": "Premium; Premium rütbe sanatı, animasyonlu profil kartı, özel rozetler ve ELITE SEAL ile Plus'taki her şeydir. Squads'ta klan kaydetmek her hesap için ücretsizdir."
     }
@@ -256,7 +256,7 @@ export const pricing: TextBag["pricing"] = {
         "Plan adı: {plan}.",
         "Gösterim fiyatı: aylık {price}. Bu tutar bir etikettir, ücret değildir.",
         "Ödeme: yok. Bu planı seçmek kart gerektirmez.",
-        "E-posta: yok. A.C.E. bu mektubu bir gelen kutusuna göndermez.",
+        "E-posta: yok. A.C.E bu mektubu bir gelen kutusuna göndermez.",
         "Kayıtlı kademe: değişmedi. Özel rozetler ve elit mühür yalnızca hesapta zaten Premium kayıtlıysa görünür.",
         "Puan: satılık değil. Yeni bir hesap yine 1.200'den başlar."
       ]
@@ -265,7 +265,7 @@ export const pricing: TextBag["pricing"] = {
       "title": "Bugün kullanabilecekleriniz",
       "items": [
         "Herkese açık site: ana sayfa, oyna, turnuvalar, sıralama, takımlar, kurallar ve koşullar.",
-        "Resmi Steam OpenID ile Steam oturumu. A.C.E. asla Steam şifresi istemez.",
+        "Resmi Steam OpenID ile Steam oturumu. A.C.E asla Steam şifresi istemez.",
         "Free ile aynı herkese açık sayfalar. Bu fiyat ayrı bir sıra açmaz."
       ]
     },
@@ -309,7 +309,7 @@ export const pricing: TextBag["pricing"] = {
   },
   "telemetry": {
     "kicker": "PLUS / PREMIUM TELEMETRİSİ",
-    "copy": "PANEL TELEMETRİSİ KİLİTLİ — Dinamik gerçek zamanlı istatistik eğrilerinin ve silah uzmanlık endekslerinin kilidini açmak için aboneliğinizi A.C.E. Plus veya Premium'a yükseltin.",
+    "copy": "PANEL TELEMETRİSİ KİLİTLİ — Dinamik gerçek zamanlı istatistik eğrilerinin ve silah uzmanlık endekslerinin kilidini açmak için aboneliğinizi A.C.E Plus veya Premium'a yükseltin.",
     "cta": "Fiyat tablolarını aç"
   }
 };

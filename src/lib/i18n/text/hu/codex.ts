@@ -3,7 +3,7 @@ import type { TextBag } from "../types";
 export const codex: TextBag["codex"] = {
   "meta": {
     "title": "Kalibrációs kódex",
-    "description": "Az A.C.E. rangjai magyarázva. Minden kérdés teljes választ nyit a Rating Pointsról és az adott rang szabályairól. A kódex nem rögzít meccset.",
+    "description": "Az A.C.E rangjai magyarázva. Minden kérdés teljes választ nyit a Rating Pointsról és az adott rang szabályairól. A kódex nem rögzít meccset.",
     "articleTitle": "{title} — Kalibrációs kódex"
   },
   "groups": {
@@ -31,7 +31,7 @@ export const codex: TextBag["codex"] = {
     "searchLabel": "Keresés a kódexben",
     "searchPlaceholder": "Próbáld: 1950, Recruit vagy döntetlen",
     "empty": "Egyetlen bejegyzés sem felel meg a keresésnek.",
-    "columnLabel": "A.C.E. oszlop {n}",
+    "columnLabel": "A.C.E oszlop {n}",
     "pagerLabel": "Kódexoldalak",
     "first": "Első",
     "previous": "Előző",
@@ -40,7 +40,7 @@ export const codex: TextBag["codex"] = {
     "pageOf": "{n}. oldal / {m}"
   },
   "article": {
-    "breadcrumb": "A.C.E. · Kalibrációs kódex",
+    "breadcrumb": "A.C.E · Kalibrációs kódex",
     "status": "Ez az oldal az írott létrát magyarázza. Nem rögzít meccset, és nem módosít tárolt értékelést.",
     "emblemAlt": "{name} embléma, {level}. rang",
     "emblemCaption": "{level}. rang · {name} · {crystal}",
@@ -63,7 +63,7 @@ export const codex: TextBag["codex"] = {
     "turnLabel": "Tovább a kódexben",
     "previous": "Előző",
     "next": "Következő",
-    "alsoIn": "Szintén az A.C.E.-ben",
+    "alsoIn": "Szintén az A.C.E-ben",
     "backToBoard": "Vissza a rangtáblához"
   },
   "rankArticle": {
@@ -124,20 +124,20 @@ export const codex: TextBag["codex"] = {
       "detail": "A sáv 1800-tól 1949-ig tart. Ez 150 pont, nem 100. Az 1949 még Sovereign. A Legend 1950-nél nyílik."
     },
     "rank-10-a-c-e-legend": {
-      "stance": "Az A.C.E. Legend az utolsó jelzés. A kristálycímke ACE ELITE. A hivatalos név A.C.E. Legend.",
+      "stance": "Az A.C.E Legend az utolsó jelzés. A kristálycímke ACE ELITE. A hivatalos név A.C.E Legend.",
       "detail": "A sáv 1950-nél nyílik és a motor plafonjánál, 3000-nél ér véget. Nincs tizenegyedik rang. A tárolt értékelés nem emelkedhet 3000 fölé."
     }
   },
   "articles": {
     "what-a-rank-is": {
-      "title": "Mi az A.C.E. rang",
-      "lede": "A rang az a jelzés, amely a tárolt Rating Pointsodat tartalmazza. Tíz jelzés fedi le az egész létrát, a Recruittól az A.C.E. Legendig.",
+      "title": "Mi az A.C.E rang",
+      "lede": "A rang az a jelzés, amely a tárolt Rating Pointsodat tartalmazza. Tíz jelzés fedi le az egész létrát, a Recruittól az A.C.E Legendig.",
       "sections": [
         {
           "heading": "Egy szám, egy jelzés",
           "paragraphs": [
             "A fiók versenyértékelést tárol. A létra kiolvassa a számot, és azt a legmagasabb rangot adja vissza, amelynek alsó határát a szám elérte. Egyszerre nem lehet két rangod.",
-            "A Recruit az 1. rang. Az A.C.E. Legend a 10. rang. A hivatalos név a létrában szereplő név. Az emblémán lévő rövidebb szó ugyanannak a rangnak a kristálycímkéje.",
+            "A Recruit az 1. rang. Az A.C.E Legend a 10. rang. A hivatalos név a létrában szereplő név. Az emblémán lévő rövidebb szó ugyanannak a rangnak a kristálycímkéje.",
             "Ez a kódex az írott létrát magyarázza. Nem rögzít meccset, és nem módosít tárolt értékelést."
           ]
         },
@@ -145,7 +145,7 @@ export const codex: TextBag["codex"] = {
           "heading": "Hogyan helyezkednek el az alsó határok",
           "paragraphs": [
             "A Recruit fedi a létra elejét. Az Operative 1100-nál nyílik. A Vanguardtól a Grandmasterig minden új alsó határ 100 ponttal magasabb: 1200, 1300, 1400, 1500, 1600, majd 1700.",
-            "A Sovereign 1800-nál nyílik, és 1949-ig tartja a fiókot. Az A.C.E. Legend 1950-nél nyílik. A motor plafonja 3000, így a Legend a leghosszabb sáv."
+            "A Sovereign 1800-nál nyílik, és 1949-ig tartja a fiókot. Az A.C.E Legend 1950-nél nyílik. A motor plafonja 3000, így a Legend a leghosszabb sáv."
           ]
         },
         {
@@ -164,14 +164,14 @@ export const codex: TextBag["codex"] = {
         {
           "heading": "Miért létezik mindkettő",
           "paragraphs": [
-            "A motor és a profil a hivatalos nevet használja: Recruit, Operative, Vanguard, Specialist, Veteran, Elite, Master, Grandmaster, Sovereign, A.C.E. Legend.",
+            "A motor és a profil a hivatalos nevet használja: Recruit, Operative, Vanguard, Specialist, Veteran, Elite, Master, Grandmaster, Sovereign, A.C.E Legend.",
             "Az emblémán kristálycímke is van: IRON, BRONZE, SILVER, GOLD, PLATINUM, DIAMOND, MASTER, GRANDMASTER, IMMORTAL, ACE ELITE. A címke grafika. Nem hoz létre tizenegyedik rangot, és nem tárol második számot."
           ]
         },
         {
           "heading": "Hol térnek el",
           "paragraphs": [
-            "A Specialist kristálycímkéje GOLD. A Veterané PLATINUM. Az Elite-é DIAMOND. A Sovereigné IMMORTAL. Az A.C.E. Legendé ACE ELITE. Az alsó határ minden esetben a hivatalos névhez tartozik.",
+            "A Specialist kristálycímkéje GOLD. A Veterané PLATINUM. Az Elite-é DIAMOND. A Sovereigné IMMORTAL. Az A.C.E Legendé ACE ELITE. Az alsó határ minden esetben a hivatalos névhez tartozik.",
             "A Master és a Grandmaster mindkét helyen ugyanazt a szót használja."
           ]
         }
@@ -287,7 +287,7 @@ export const codex: TextBag["codex"] = {
           "heading": "A megállók",
           "paragraphs": [
             "Vereség 100 Rating Pointnál 100-on marad. Győzelem 3000-nél 3000-en marad. A Recruit létrabeli alsó határa 0-ként szerepel, de a tárolt szám sosem használja a 100 alatti rést.",
-            "Az 1949 Sovereign. Az 1950 A.C.E. Legend. Nincs köztes jelzés."
+            "Az 1949 Sovereign. Az 1950 A.C.E Legend. Nincs köztes jelzés."
           ]
         },
         {
@@ -334,7 +334,7 @@ export const codex: TextBag["codex"] = {
           "heading": "Mit nem csinál a pult",
           "paragraphs": [
             "A FIND MATCH nem keres ellenfeleket. Nem változtatja a Rating Pointsot. A fiók rangja továbbra is a tárolt szám, amelyet a kódex létrája olvas ki.",
-            "Nincs külön csúcssor a Legend fölött. Az A.C.E. Legend az utolsó jelzés, és 1950 Rating Pointnál nyílik."
+            "Nincs külön csúcssor a Legend fölött. Az A.C.E Legend az utolsó jelzés, és 1950 Rating Pointnál nyílik."
           ]
         }
       ]
@@ -440,12 +440,12 @@ export const codex: TextBag["codex"] = {
     },
     "how-a-roster-is-assembled": {
       "title": "Hogyan áll össze egy keret",
-      "lede": "Egy kapitány olyan játékost hív meg, akinek már van A.C.E.-fiókja. Nincs nyilvános megosztási link, és Steam-jelszót soha nem kérnek.",
+      "lede": "Egy kapitány olyan játékost hív meg, akinek már van A.C.E-fiókja. Nincs nyilvános megosztási link, és Steam-jelszót soha nem kérnek.",
       "sections": [
         {
           "heading": "A létező meghívó",
           "paragraphs": [
-            "A csapatok oldalán egy bejelentkezett kapitány beilleszt egy SteamID64-et vagy A.C.E.-fiókazonosítót. A fióknak már Steam OpenID-n keresztül összekötöttnek kell lennie. A szerver függő meghívót ír, amikor az adatbázis elfogadja.",
+            "A csapatok oldalán egy bejelentkezett kapitány beilleszt egy SteamID64-et vagy A.C.E-fiókazonosítót. A fióknak már Steam OpenID-n keresztül összekötöttnek kell lennie. A szerver függő meghívót ír, amikor az adatbázis elfogadja.",
             "A keret öt játékost tartalmaz, a kapitánnyal együtt. Kapitány nem hívhatja meg a saját fiókját. A már keretben lévő játékost elutasítja. Ha az adatbázis nem elérhető, a meghívó sikertelen, és nem tárolódik meghívás."
           ]
         },

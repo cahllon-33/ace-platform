@@ -3,7 +3,7 @@ import type { TextBag } from "../types";
 export const desk: TextBag["desk"] = {
   "shop": {
     "meta": {
-      "title": "A.C.E. Marketplace",
+      "title": "A.C.E Marketplace",
       "description": "चैंपियनशिप पुरस्कार कार्ड। दुकान और पुरस्कार जल्द खुलेंगे।"
     },
     "heroHonesty": "आने वाले चैंपियनशिप पुरस्कारों की पहली झलक। दुकान जल्द खुलेगी; आज कोई शुल्क नहीं लिया जाता।",
@@ -26,7 +26,7 @@ export const desk: TextBag["desk"] = {
         "price": "जल्द आ रहा है"
       },
       "crown": {
-        "name": "A.C.E. Crown अवतार फ़्रेम",
+        "name": "A.C.E Crown अवतार फ़्रेम",
         "tag": "प्रोफ़ाइल सजावट",
         "price": "जल्द आ रहा है"
       },
@@ -45,13 +45,13 @@ export const desk: TextBag["desk"] = {
   "support": {
     "meta": {
       "title": "सहायता",
-      "description": "A.C.E. सहायता केंद्र। एंटी-चीट, रैंक्ड और बिलिंग डेस्क प्रतिस्पर्धी बीटा के साथ खुलेंगे।"
+      "description": "A.C.E सहायता केंद्र। एंटी-चीट, रैंक्ड और बिलिंग डेस्क प्रतिस्पर्धी बीटा के साथ खुलेंगे।"
     }
   },
   "contact": {
     "meta": {
       "title": "संपर्क",
-      "description": "A.C.E. से संपर्क करें। ऑनलाइन फ़ॉर्म जल्द खुलेगा।"
+      "description": "A.C.E से संपर्क करें। ऑनलाइन फ़ॉर्म जल्द खुलेगा।"
     }
   },
   "contactEmail": {

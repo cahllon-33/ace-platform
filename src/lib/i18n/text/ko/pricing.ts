@@ -70,10 +70,10 @@ export const pricing: TextBag["pricing"] = {
       "prices": "Free {free}. Plus 월 {plus}. Premium 월 {premium}. 플랜은 매월 갱신됩니다. 대시보드 설정에서 언제든 위약금 없이 해지할 수 있으며 결제한 달의 마지막까지 이용할 수 있습니다. 일부 사용한 달은 거주 국가의 법률이 요구하지 않는 한 환불되지 않습니다.",
       "plusTitle": "2. Plus 포함 내용",
       "plus1": "Free의 모든 것.",
-      "plus2": "곧 제공: 결제가 생기면 감사 편지와 support@ace-platform.gg 이메일 지원.",
+      "plus2": "회원 이메일 지원({email})과 팀의 감사 편지.",
       "premiumTitle": "3. Premium 포함 내용",
       "prem1": "Plus의 모든 것.",
-      "prem2": "Premium 랭크 아트와 Premium 랭크 코덱스: 프로필에 표시되는 A.C.E. 오리지널 일러스트 엠블럼 세트. 외형 전용이며 같은 Rating Points 래더 위에 있습니다.",
+      "prem2": "Premium 랭크 아트와 Premium 랭크 코덱스: 프로필에 표시되는 A.C.E 오리지널 일러스트 엠블럼 세트. 외형 전용이며 같은 Rating Points 래더 위에 있습니다.",
       "prem3": "애니메이션 Premium 프로필 카드.",
       "prem4": "특별 배지와 ELITE 인장.",
       "prem5": "곧 제공: 데모 분석이 생기면 확장 매치 분석(사망 히트맵, 헤드샷 %, 라운드별 성과).",
@@ -85,14 +85,14 @@ export const pricing: TextBag["pricing"] = {
       "soon": "곧 제공으로 표시된 것은 출시 전까지 약속된 것이 아닙니다. 그때까지 가격에 포함되지 않습니다.",
       "languageTitle": "6. 언어",
       "language": "번역은 편의를 위해 제공됩니다. 번역이 영어 원문과 다르면 영어 원문이 적용됩니다.",
-      "contact": "문의: support@ace-platform.gg",
+      "contact": "문의: {email}",
       "footerLink": "Premium 약관",
       "pricingLink": "Premium 약관 읽기"
     }
   },
   "meta": {
     "title": "요금",
-    "description": "A.C.E. 멤버십: 무료 {free}, Plus 월 {plus}, Premium 월 {premium}. 표시 가격은 정수 금액으로 고정됩니다."
+    "description": "A.C.E 멤버십: 무료 {free}, Plus 월 {plus}, Premium 월 {premium}. 표시 가격은 정수 금액으로 고정됩니다."
   },
   "period": {
     "monthly": "/월"
@@ -108,23 +108,23 @@ export const pricing: TextBag["pricing"] = {
       "note": "그래파이트",
       "title": "오픈 액세스",
       "points": [
-        "Steam OpenID로 로그인합니다. A.C.E.는 Steam 비밀번호를 절대 요구하지 않습니다.",
+        "Steam OpenID로 로그인합니다. A.C.E는 Steam 비밀번호를 절대 요구하지 않습니다.",
         "저장된 레이팅은 1,200에서 시작합니다. 아직 어떤 경기 결과도 이를 바꾸지 않았습니다.",
         "모든 공개 페이지: 플레이, 토너먼트, 순위표, 팀, 규칙."
       ]
     },
     "plus": {
-      "name": "A.C.E. PLUS",
+      "name": "A.C.E PLUS",
       "note": "Plus",
       "title": "플레이어 통계 및 지원",
       "points": [
         "무료 플랜의 모든 기능.",
-        "플레이어 통계: 기록된 A.C.E. 경기의 레이팅 변화 그래프. 헤드샷 %와 명중률 게이지는 곧 제공됩니다.",
-        "곧 제공: 결제가 생기면 감사 편지와 support@ace-platform.gg 이메일 지원. Plus는 레이팅이나 더 쉬운 상대를 사지 않습니다."
+        "플레이어 통계: 기록된 A.C.E 경기의 레이팅 변화 그래프. 헤드샷 %와 명중률 게이지는 곧 제공됩니다.",
+        "회원 이메일 지원({email})과 팀의 감사 편지. Plus는 레이팅이나 더 쉬운 상대를 사지 않습니다."
       ]
     },
     "premium": {
-      "name": "A.C.E. PREMIUM",
+      "name": "A.C.E PREMIUM",
       "note": "Premium",
       "title": "프로필 아트, 배지, 분석",
       "points": [
@@ -159,7 +159,7 @@ export const pricing: TextBag["pricing"] = {
     }
   },
   "compare": {
-    "kicker": "A.C.E.가 오늘 약속할 수 있는 것",
+    "kicker": "A.C.E가 오늘 약속할 수 있는 것",
     "title": "멤버십 비교",
     "note": "모든 항목은 현재 사이트 상태를 반영합니다. 결제는 곧 제공되며, 유료 플랜은 대기열을 열거나 유리함을 사 주지 않습니다.",
     "caption": "현재 사이트가 실제로 하는 일 기준으로 비교한 무료, Plus, Premium",
@@ -175,7 +175,7 @@ export const pricing: TextBag["pricing"] = {
       },
       "steamSignIn": {
         "feature": "Steam 로그인",
-        "detail": "공식 Steam OpenID. A.C.E.는 Steam 비밀번호를 절대 요구하지 않습니다."
+        "detail": "공식 Steam OpenID. A.C.E는 Steam 비밀번호를 절대 요구하지 않습니다."
       },
       "startingRating": {
         "feature": "시작 레이팅",
@@ -183,7 +183,7 @@ export const pricing: TextBag["pricing"] = {
       },
       "recordedMatches": {
         "feature": "기록된 매치",
-        "detail": "완료된 A.C.E. 매치에서 기록된 승리와 패배입니다."
+        "detail": "완료된 A.C.E 매치에서 기록된 승리와 패배입니다."
       },
       "rankedQueue": {
         "feature": "랭크 대기열",
@@ -231,15 +231,15 @@ export const pricing: TextBag["pricing"] = {
   "receipt": {
     "plus": {
       "metaTitle": "Plus 영수증",
-      "metaDescription": "이 웹사이트에 표시되는 A.C.E. Plus 편지입니다. 결제가 운영 중이 아니므로 아무것도 청구되지 않으며 이메일도 발송되지 않습니다.",
-      "planName": "A.C.E. Plus",
-      "nextLabel": "A.C.E.에서 계속하기",
+      "metaDescription": "이 웹사이트에 표시되는 A.C.E Plus 편지입니다. 결제가 운영 중이 아니므로 아무것도 청구되지 않으며 이메일도 발송되지 않습니다.",
+      "planName": "A.C.E Plus",
+      "nextLabel": "A.C.E에서 계속하기",
       "nextBody": "공개 페이지는 계속 열려 있습니다. 이 선택은 대기열을 열지 않으며 저장된 티어를 바꾸지 않습니다."
     },
     "premium": {
       "metaTitle": "Premium 영수증",
-      "metaDescription": "이 웹사이트에 표시되는 A.C.E. Premium 편지입니다. 결제가 운영 중이 아니므로 아무것도 청구되지 않으며 이메일도 발송되지 않습니다.",
-      "planName": "A.C.E. Premium",
+      "metaDescription": "이 웹사이트에 표시되는 A.C.E Premium 편지입니다. 결제가 운영 중이 아니므로 아무것도 청구되지 않으며 이메일도 발송되지 않습니다.",
+      "planName": "A.C.E Premium",
       "nextLabel": "Premium 약관 읽기",
       "nextBody": "Premium은 Premium 랭크 아트, 애니메이션 프로필 카드, 특별 배지와 ELITE SEAL에 Plus의 모든 것을 더한 것입니다. Squads에 클랜 저장은 모든 계정에 무료입니다."
     }
@@ -256,7 +256,7 @@ export const pricing: TextBag["pricing"] = {
         "플랜 이름: {plan}.",
         "표시 가격: 월 {price}. 이 수치는 라벨일 뿐 청구가 아닙니다.",
         "결제: 없음. 이 플랜을 선택해도 카드 정보를 받지 않습니다.",
-        "이메일: 없음. A.C.E.는 이 편지를 받은편지함으로 보내지 않습니다.",
+        "이메일: 없음. A.C.E는 이 편지를 받은편지함으로 보내지 않습니다.",
         "저장된 등급: 변경 없음. 특별 배지와 엘리트 인장은 계정에 이미 Premium이 저장되어 있을 때만 표시됩니다.",
         "레이팅: 판매하지 않습니다. 신규 계정은 여전히 1,200에서 시작합니다."
       ]
@@ -265,7 +265,7 @@ export const pricing: TextBag["pricing"] = {
       "title": "오늘 이용할 수 있는 것",
       "items": [
         "공개 사이트: 홈, 플레이, 토너먼트, 순위표, 팀, 규칙, 약관.",
-        "공식 Steam OpenID를 통한 Steam 로그인. A.C.E.는 Steam 비밀번호를 절대 요구하지 않습니다.",
+        "공식 Steam OpenID를 통한 Steam 로그인. A.C.E는 Steam 비밀번호를 절대 요구하지 않습니다.",
         "무료와 같은 공개 페이지. 이 가격으로 별도의 대기열이 열리지 않습니다."
       ]
     },
@@ -285,7 +285,7 @@ export const pricing: TextBag["pricing"] = {
       "items": [
         "청구나 유료 티어 적용을 예상했다면: 아무것도 적용되지 않았습니다. 계정은 그대로입니다.",
         "이 편지가 받은편지함에 올 것으로 예상했다면: 이 편지는 이 페이지에만 존재합니다.",
-        "Steam이 연결되지 않았다면: 먼저 약관 체크박스에 동의한 뒤 프로필 연결을 사용하세요. A.C.E.에 Steam 비밀번호를 절대 입력하지 마세요.",
+        "Steam이 연결되지 않았다면: 먼저 약관 체크박스에 동의한 뒤 프로필 연결을 사용하세요. A.C.E에 Steam 비밀번호를 절대 입력하지 마세요.",
         "도움이 필요하다면: 아래 지원 주소를 이용하거나 이 웹사이트의 도움말 페이지를 여세요."
       ]
     },
@@ -309,7 +309,7 @@ export const pricing: TextBag["pricing"] = {
   },
   "telemetry": {
     "kicker": "PLUS / PREMIUM 텔레메트리",
-    "copy": "대시보드 텔레메트리 잠김 — 구독 플랜을 A.C.E. Plus 또는 Premium으로 업그레이드하면 동적 실시간 전적 곡선과 무기 숙련도 지표가 잠금 해제됩니다.",
+    "copy": "대시보드 텔레메트리 잠김 — 구독 플랜을 A.C.E Plus 또는 Premium으로 업그레이드하면 동적 실시간 전적 곡선과 무기 숙련도 지표가 잠금 해제됩니다.",
     "cta": "요금표 열기"
   }
 };

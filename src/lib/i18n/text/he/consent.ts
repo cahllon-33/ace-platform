@@ -2,7 +2,7 @@ import type { TextBag } from "../types";
 
 export const consent: TextBag["consent"] = {
   valveDisclaimer:
-    "A.C.E. הוא אתר תחרויות עצמאי ל-Counter-Strike 2. הוא אינו קשור ל-Valve Corporation, אינו מורשה על ידה ואינו נתמך על ידה. Steam ו-Counter-Strike הם סימנים של בעליהם. קוד התחרות הוא טקסט מקורי של A.C.E. עבור המשחק הזה.",
+    "A.C.E הוא אתר תחרויות עצמאי ל-Counter-Strike 2. הוא אינו קשור ל-Valve Corporation, אינו מורשה על ידה ואינו נתמך על ידה. Steam ו-Counter-Strike הם סימנים של בעליהם. קוד התחרות הוא טקסט מקורי של A.C.E עבור המשחק הזה.",
   acceptance: {
     label: "אני מאשר במפורש את תנאי השימוש, את הסכם הרישיון (EULA) של האנטי-צ'יט ואת מדיניות הפרטיות.",
     readBefore: "קראו את",

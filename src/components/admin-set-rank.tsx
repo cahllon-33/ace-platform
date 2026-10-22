@@ -107,7 +107,7 @@ export function AdminSetRankModal({ player, onClose }: { player: { id: string; n
                 <li key={p.slug}>
                   <button type="button" className={pr?.level === p.level ? "is-on" : undefined} onClick={() => setRpText(String(p.minRp))}>
                     <RankOrb level={10} size={72} label={p.name} prestige={{ level: p.level, set: finish, name: p.name, slug: p.slug }} />
-                    <strong>{p.name.replace("A.C.E. ", "")}</strong>
+                    <strong>{p.name.replace("A.C.E ", "")}</strong>
                     <small>{p.minRp.toLocaleString("en-US")}</small>
                   </button>
                 </li>

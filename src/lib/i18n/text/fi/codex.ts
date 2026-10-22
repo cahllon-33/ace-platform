@@ -3,7 +3,7 @@ import type { TextBag } from "../types";
 export const codex: TextBag["codex"] = {
   "meta": {
     "title": "Kalibrointikodeksi",
-    "description": "A.C.E.-arvot selitettyinä. Jokainen kysymys avaa täyden vastauksen luokituspisteistä ja kyseisen arvon säännöistä. Kodeksi ei kirjaa ottelua.",
+    "description": "A.C.E-arvot selitettyinä. Jokainen kysymys avaa täyden vastauksen luokituspisteistä ja kyseisen arvon säännöistä. Kodeksi ei kirjaa ottelua.",
     "articleTitle": "{title} — Kalibrointikodeksi"
   },
   "groups": {
@@ -31,7 +31,7 @@ export const codex: TextBag["codex"] = {
     "searchLabel": "Hae kodeksista",
     "searchPlaceholder": "Kokeile 1950, Recruit tai tasapeli",
     "empty": "Mikään merkintä ei vastaa hakua.",
-    "columnLabel": "A.C.E.-sarake {n}",
+    "columnLabel": "A.C.E-sarake {n}",
     "pagerLabel": "Kodeksin sivut",
     "first": "Ensimmäinen",
     "previous": "Edellinen",
@@ -40,7 +40,7 @@ export const codex: TextBag["codex"] = {
     "pageOf": "Sivu {n}/{m}"
   },
   "article": {
-    "breadcrumb": "A.C.E. · Kalibrointikodeksi",
+    "breadcrumb": "A.C.E · Kalibrointikodeksi",
     "status": "Tämä sivu selittää kirjoitetut tikkaat. Se ei kirjaa ottelua eikä muuta tallennettua luokitusta.",
     "emblemAlt": "{name}-tunnus, arvo {level}",
     "emblemCaption": "Arvo {level} · {name} · {crystal}",
@@ -63,7 +63,7 @@ export const codex: TextBag["codex"] = {
     "turnLabel": "Jatka kodeksin läpi",
     "previous": "Edellinen",
     "next": "Seuraava",
-    "alsoIn": "Myös A.C.E.:ssä",
+    "alsoIn": "Myös A.C.E:ssä",
     "backToBoard": "Takaisin arvotaululle"
   },
   "rankArticle": {
@@ -124,20 +124,20 @@ export const codex: TextBag["codex"] = {
       "detail": "Alue kulkee 1 800:sta 1 949:ään. Se on 150 pistettä, ei 100. 1 949 kantaa yhä Sovereignia. Legend avautuu 1 950:ssä."
     },
     "rank-10-a-c-e-legend": {
-      "stance": "A.C.E. Legend on viimeinen merkki. Kristallinimi on ACE ELITE. Virallinen nimi on A.C.E. Legend.",
+      "stance": "A.C.E Legend on viimeinen merkki. Kristallinimi on ACE ELITE. Virallinen nimi on A.C.E Legend.",
       "detail": "Alue avautuu 1 950:ssä ja päättyy moottorin kattoon, 3 000:een. Yhdettätoista arvoa ei ole. Tallennettu luokitus ei voi nousta yli 3 000:n."
     }
   },
   "articles": {
     "what-a-rank-is": {
-      "title": "Mikä A.C.E.-arvo on",
-      "lede": "Arvo on merkki, joka sisältää tallennetut luokituspisteesi. Kymmenen merkkiä kattaa koko tikkaat Recruitista A.C.E. Legendiin.",
+      "title": "Mikä A.C.E-arvo on",
+      "lede": "Arvo on merkki, joka sisältää tallennetut luokituspisteesi. Kymmenen merkkiä kattaa koko tikkaat Recruitista A.C.E Legendiin.",
       "sections": [
         {
           "heading": "Yksi luku, yksi merkki",
           "paragraphs": [
             "Tili tallentaa kilpailuluokituksen. Tikkaat lukevat luvun ja palauttavat korkeimman arvon, jonka alarajan luku on saavuttanut. Sinulla ei ole kahta arvoa yhtä aikaa.",
-            "Recruit on arvo 1. A.C.E. Legend on arvo 10. Virallinen nimi on tikkaiden nimi. Tunnuksen lyhyempi sana on saman arvon kristallinimi.",
+            "Recruit on arvo 1. A.C.E Legend on arvo 10. Virallinen nimi on tikkaiden nimi. Tunnuksen lyhyempi sana on saman arvon kristallinimi.",
             "Tämä kodeksi selittää kirjoitetut tikkaat. Se ei kirjaa ottelua eikä muuta tallennettua luokitusta."
           ]
         },
@@ -145,7 +145,7 @@ export const codex: TextBag["codex"] = {
           "heading": "Miten alarajat asettuvat",
           "paragraphs": [
             "Recruit kattaa tikkaiden alun. Operative avautuu 1 100:ssa. Vanguardista Grandmasteriin jokainen uusi alaraja on 100 pistettä korkeammalla: 1 200, 1 300, 1 400, 1 500, 1 600 ja sitten 1 700.",
-            "Sovereign avautuu 1 800:ssa ja pitää tilin 1 949:ään asti. A.C.E. Legend avautuu 1 950:ssä. Moottorin katto on 3 000, joten Legend on pisin alue."
+            "Sovereign avautuu 1 800:ssa ja pitää tilin 1 949:ään asti. A.C.E Legend avautuu 1 950:ssä. Moottorin katto on 3 000, joten Legend on pisin alue."
           ]
         },
         {
@@ -164,14 +164,14 @@ export const codex: TextBag["codex"] = {
         {
           "heading": "Miksi molemmat ovat olemassa",
           "paragraphs": [
-            "Moottori ja profiili käyttävät virallista nimeä: Recruit, Operative, Vanguard, Specialist, Veteran, Elite, Master, Grandmaster, Sovereign, A.C.E. Legend.",
+            "Moottori ja profiili käyttävät virallista nimeä: Recruit, Operative, Vanguard, Specialist, Veteran, Elite, Master, Grandmaster, Sovereign, A.C.E Legend.",
             "Tunnuksessa on myös kristallinimi: IRON, BRONZE, SILVER, GOLD, PLATINUM, DIAMOND, MASTER, GRANDMASTER, IMMORTAL, ACE ELITE. Nimi on taidetta. Se ei luo yhdettätoista arvoa eikä tallenna toista lukua."
           ]
         },
         {
           "heading": "Missä ne eroavat",
           "paragraphs": [
-            "Specialistin kristallinimi on GOLD. Veteranin PLATINUM. Eliten DIAMOND. Sovereignin IMMORTAL. A.C.E. Legendin ACE ELITE. Jokaisessa tapauksessa alaraja kuuluu yhä viralliselle nimelle.",
+            "Specialistin kristallinimi on GOLD. Veteranin PLATINUM. Eliten DIAMOND. Sovereignin IMMORTAL. A.C.E Legendin ACE ELITE. Jokaisessa tapauksessa alaraja kuuluu yhä viralliselle nimelle.",
             "Master ja Grandmaster käyttävät samaa sanaa molemmissa paikoissa."
           ]
         }
@@ -287,7 +287,7 @@ export const codex: TextBag["codex"] = {
           "heading": "Pysäytykset",
           "paragraphs": [
             "Tappio 100 luokituspisteessä pysyy 100:ssa. Voitto 3 000:ssa pysyy 3 000:ssa. Recruitin tikasalaraja on kirjattu nollaksi, mutta tallennettu luku ei koskaan käytä alle 100:n väliä.",
-            "1 949 on Sovereign. 1 950 on A.C.E. Legend. Välimerkkiä ei ole."
+            "1 949 on Sovereign. 1 950 on A.C.E Legend. Välimerkkiä ei ole."
           ]
         },
         {
@@ -334,7 +334,7 @@ export const codex: TextBag["codex"] = {
           "heading": "Mitä deski ei tee",
           "paragraphs": [
             "FIND MATCH ei etsi vastustajia. Se ei muuta luokituspisteitä. Tilin arvo on yhä tallennettu luku, jonka tämän kodeksin tikkaat lukevat.",
-            "Legendin yläpuolella ei ole erillistä huippujonoa. A.C.E. Legend on viimeinen merkki, ja se avautuu 1 950 luokituspisteessä."
+            "Legendin yläpuolella ei ole erillistä huippujonoa. A.C.E Legend on viimeinen merkki, ja se avautuu 1 950 luokituspisteessä."
           ]
         }
       ]
@@ -440,12 +440,12 @@ export const codex: TextBag["codex"] = {
     },
     "how-a-roster-is-assembled": {
       "title": "Miten kokoonpano kootaan",
-      "lede": "Kapteeni kutsuu pelaajan, jolla on jo A.C.E.-tili. Julkista jakolinkkiä ei ole, eikä Steam-salasanaa koskaan kysytä.",
+      "lede": "Kapteeni kutsuu pelaajan, jolla on jo A.C.E-tili. Julkista jakolinkkiä ei ole, eikä Steam-salasanaa koskaan kysytä.",
       "sections": [
         {
           "heading": "Olemassa oleva kutsu",
           "paragraphs": [
-            "Joukkuesivulla kirjautunut kapteeni liittää SteamID64:n tai A.C.E.-tilitunnuksen. Tilin on oltava jo linkitetty Steam OpenID:llä. Palvelin kirjoittaa odottavan kutsun, kun tietokanta hyväksyy sen.",
+            "Joukkuesivulla kirjautunut kapteeni liittää SteamID64:n tai A.C.E-tilitunnuksen. Tilin on oltava jo linkitetty Steam OpenID:llä. Palvelin kirjoittaa odottavan kutsun, kun tietokanta hyväksyy sen.",
             "Kokoonpanossa on viisi pelaajaa kapteeni mukaan lukien. Kapteeni ei voi kutsua omaa tiliään. Jo kokoonpanossa oleva pelaaja hylätään. Jos tietokanta on alhaalla, kutsu epäonnistuu eikä kutsua tallenneta."
           ]
         },

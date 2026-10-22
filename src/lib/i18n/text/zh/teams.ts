@@ -2,7 +2,7 @@ import type { TextBag } from "../types";
 
 export const teams: TextBag["teams"] = {
   "meta": {
-    "title": "A.C.E. 小队管理",
+    "title": "A.C.E 小队管理",
     "description": "你的 5v5 小队工作区。邀请需要经过验证的 Steam 会话;反作弊检查将随 A.C.E Shield 推出。"
   },
   "hero": {
@@ -14,11 +14,11 @@ export const teams: TextBag["teams"] = {
     "kickerPremium": "选择方案后的战队记录",
     "kickerDefault": "战队记录",
     "title": "你们是五人战队吗?",
-    "intro": "席位 1 是通过 Steam 登录的玩家。席位 2 至 5 必须已有 A.C.E. 账户。保存战队不会收取 $7,不会发送邮件,也不会将战队放上 100 队榜单。",
+    "intro": "席位 1 是通过 Steam 登录的玩家。席位 2 至 5 必须已有 A.C.E 账户。保存战队不会收取 $7,不会发送邮件,也不会将战队放上 100 队榜单。",
     "yes": "是,五名玩家",
     "no": "否,保留空席位",
     "seatsOpen": "五个席位保持空置。未保存任何内容。",
-    "connectSteam": "请先连接 Steam。按钮会带你回到本页面。A.C.E. 绝不会索要 Steam 密码。",
+    "connectSteam": "请先连接 Steam。按钮会带你回到本页面。A.C.E 绝不会索要 Steam 密码。",
     "alreadyMember": "{name} 已属于 {team}。此表单不会创建第二支战队。",
     "thisAccount": "此账户",
     "acceptTerms": "保存战队前请先接受条款。",
@@ -26,7 +26,7 @@ export const teams: TextBag["teams"] = {
     "clanName": "战队名称",
     "captainSeat": "席位 1,队长:{name}",
     "signedInSteam": "已登录的 Steam 账户",
-    "seatLabel": "席位 {seat} 的 SteamID 或 A.C.E. 账户 ID",
+    "seatLabel": "席位 {seat} 的 SteamID 或 A.C.E 账户 ID",
     "submit": "保存五人战队",
     "saved": "战队名称已保存,四个邀请待处理。这些玩家在接受前不会进入阵容。这并不是 100 队榜单上的席位。未扣任何费用。"
   },
@@ -42,8 +42,8 @@ export const teams: TextBag["teams"] = {
       "email": "不会发送邮件。方案收据保留在本网站上。",
       "charge": "Premium 为每月 $7。即将推出:目前没有支付,因此不会扣费。",
       "board": "已保存的战队是阵容记录,不会放上 100 队榜单。在赛季开始前,该榜单仍显示 0 支已报名。",
-      "steam": "登录使用官方 Steam OpenID。A.C.E. 绝不会索要 Steam 密码。从本页面前往 Steam 后,会返回此处。",
-      "roster": "席位 1 是已登录的队长。席位 2 至 5 必须已有 A.C.E. 账户。邀请在每位玩家接受前保持待处理。",
+      "steam": "登录使用官方 Steam OpenID。A.C.E 绝不会索要 Steam 密码。从本页面前往 Steam 后,会返回此处。",
+      "roster": "席位 1 是已登录的队长。席位 2 至 5 必须已有 A.C.E 账户。邀请在每位玩家接受前保持待处理。",
       "badge": "反作弊上线后,席位徽章将成为真正的 A.C.E Shield 检查。",
       "support": "请打开本网站的“支持”或“联系我们”。支持请求不会创建工单,在联系页面输入的文字也不会被发送。",
       "rating": "新积分从 1,200 开始。本页面不出售积分、不开启队列、不连接 CS2 服务器，也不发放奖品。"
@@ -63,11 +63,11 @@ export const teams: TextBag["teams"] = {
   },
   "tournaments": {
     "meta": {
-      "title": "A.C.E. 锦标赛 — 100 队精英淘汰赛",
+      "title": "A.C.E 锦标赛 — 100 队精英淘汰赛",
       "description": "100 队淘汰赛。点击战队可打开其阵容,再查看每位玩家的资料。报名即将开放。"
     },
     "intro": {
-      "title": "A.C.E. 锦标赛 — 100 队精英淘汰赛",
+      "title": "A.C.E 锦标赛 — 100 队精英淘汰赛",
       "lede": "公布的赛制为 100 队淘汰赛,下图即为该布局。点击战队可打开阵容抽屉。报名人数为 0 / 100。没有宣传或提供任何现金奖励。",
       "formatValue": "100 队对阵矩阵",
       "briefTitle": "100 队运营简报",
@@ -110,7 +110,7 @@ export const teams: TextBag["teams"] = {
       "count": "第 {index} / {total} 支战队",
       "next": "下一支战队",
       "close": "关闭资料",
-      "disclosure": "玩家选择分享后,其设备和库存将显示在这里。A.C.E. 不收集硬件数据。"
+      "disclosure": "玩家选择分享后,其设备和库存将显示在这里。A.C.E 不收集硬件数据。"
     },
     "player": {
       "level": "等级 {level} · RP {rating}",
@@ -140,16 +140,16 @@ export const teams: TextBag["teams"] = {
     "monitor": "刷新率 · 未分享",
     "headset": "未分享"
   },
-  "profileDisclosure": "A.C.E. 不存储硬件清单,也不运行反作弊客户端。表现趋势图和战斗矩阵需要 A.C.E. Plus 或 Premium 会话。在本页面输入的 Steam 个人资料链接不会被保存,也不是官方账号。",
+  "profileDisclosure": "A.C.E 不存储硬件清单,也不运行反作弊客户端。表现趋势图和战斗矩阵需要 A.C.E Plus 或 Premium 会话。在本页面输入的 Steam 个人资料链接不会被保存,也不是官方账号。",
   "errors": {
     "signInRequired": "需要登录。",
     "nameLength": "战队名称须为 2 至 32 个字符。",
     "alreadyCaptain": "此账户已是某支战队的队长。",
     "nameTaken": "已存在同名战队。",
-    "idRequired": "需要 SteamID 或 A.C.E. 账户 ID。",
-    "noAccountForToken": "该 SteamID 或账户 ID 没有对应的 A.C.E. 账户。",
+    "idRequired": "需要 SteamID 或 A.C.E 账户 ID。",
+    "noAccountForToken": "该 SteamID 或账户 ID 没有对应的 A.C.E 账户。",
     "clanNeedsFour": "五人战队需要已登录的队长加上四个 SteamID。",
-    "seatNeedsId": "四个席位都需要 SteamID 或 A.C.E. 账户 ID。",
+    "seatNeedsId": "四个席位都需要 SteamID 或 A.C.E 账户 ID。",
     "seatsDistinct": "每个席位需要不同的玩家。",
     "captainHoldsSeat": "队长已占据席位 1。请填写另外四名玩家。",
     "fewerThanFour": "这些 ID 对应的账户少于四个。",
@@ -157,7 +157,7 @@ export const teams: TextBag["teams"] = {
     "captainOnly": "只有指定的队长才能发送邀请。",
     "rosterLimit": "CS2 阵容为包括队长在内的五名玩家。",
     "alreadyOnRoster": "该玩家已在阵容中。",
-    "noAccountForId": "该 ID 没有对应的 A.C.E. 账户。",
+    "noAccountForId": "该 ID 没有对应的 A.C.E 账户。",
     "inviteNotFound": "未找到邀请。",
     "inviteNotPending": "此邀请已不再处于待处理状态。",
     "rosterFull": "阵容已满。",

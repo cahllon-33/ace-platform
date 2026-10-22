@@ -3,12 +3,12 @@ import type { TextBag } from "../types";
 export const leaderboard: TextBag["leaderboard"] = {
   "meta": {
     "title": "Ljestvica",
-    "description": "A.C.E. natjecateljska ploča. Spremljeni Steam računi prikazuju se prvi. Prazna mjesta ostaju prikazni redovi."
+    "description": "A.C.E natjecateljska ploča. Spremljeni Steam računi prikazuju se prvi. Prazna mjesta ostaju prikazni redovi."
   },
   "hero": {
     "kicker": "LJESTVICA",
     "title": "Natjecateljska ploča",
-    "note": "Prikazna mjesta popunjavaju ploču dok igrači ne povežu Steam i ne steknu rejting. Njihova zemlja i istaknuto oružje su ilustrativni. Prikazi oružja originalna su A.C.E. studijska umjetnost, ne Valveovi skinovi. Ubojstva se još ne prate, pa istaknuto oružje nije top-frag statistika."
+    "note": "Prikazna mjesta popunjavaju ploču dok igrači ne povežu Steam i ne steknu rejting. Njihova zemlja i istaknuto oružje su ilustrativni. Prikazi oružja originalna su A.C.E studijska umjetnost, ne Valveovi skinovi. Ubojstva se još ne prate, pa istaknuto oružje nije top-frag statistika."
   },
   "facts": {
     "seats": "Mjesta",

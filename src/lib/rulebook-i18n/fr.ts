@@ -4,18 +4,18 @@ export const RB_FR: RulebookText = {
   "summary16": "Les arbitres choisissent une sanction dans la fourchette ci-dessous selon l'intention, l'impact et la récidive. Les infractions répétées montent dans la fourchette.",
   "clauses": [
     [
-      "Le présent règlement s'applique à toute compétition organisée par A.C.E. : coupes, ligues, classements et matchs d'exhibition. La page d'un événement peut ajouter des conditions propres ; en cas de contradiction avec ce règlement, la page de l'événement prévaut pour cet événement uniquement.",
-      "« Organisateur » désigne l'équipe des opérations d'A.C.E. « Arbitre » désigne un membre de l'organisateur affecté à un événement. « Équipe » désigne un effectif inscrit. « Capitaine » désigne le joueur qui représente l'équipe. « Match » désigne une ou plusieurs cartes entre deux équipes. « Série » désigne un ensemble de cartes au meilleur d'une, de trois ou de cinq.",
+      "Le présent règlement s'applique à toute compétition organisée par A.C.E : coupes, ligues, classements et matchs d'exhibition. La page d'un événement peut ajouter des conditions propres ; en cas de contradiction avec ce règlement, la page de l'événement prévaut pour cet événement uniquement.",
+      "« Organisateur » désigne l'équipe des opérations d'A.C.E « Arbitre » désigne un membre de l'organisateur affecté à un événement. « Équipe » désigne un effectif inscrit. « Capitaine » désigne le joueur qui représente l'équipe. « Match » désigne une ou plusieurs cartes entre deux équipes. « Série » désigne un ensemble de cartes au meilleur d'une, de trois ou de cinq.",
       "En s'inscrivant, chaque joueur et chaque équipe acceptent le présent règlement, les Conditions d'utilisation et la Politique de confidentialité.",
       "Les arbitres peuvent trancher les situations que ce règlement ne prévoit pas, en s'inspirant du fair-play et de l'esprit des règles. Ces décisions sont consignées et publiées avec le résultat du match."
     ],
     [
-      "Les joueurs ne doivent pas faire l'objet d'une suspension A.C.E. en cours, et le compte Steam utilisé ne doit pas porter de bannissement de jeu prononcé au cours des 2 dernières années.",
+      "Les joueurs ne doivent pas faire l'objet d'une suspension A.C.E en cours, et le compte Steam utilisé ne doit pas porter de bannissement de jeu prononcé au cours des 2 dernières années.",
       "Le personnel de l'organisateur et les arbitres ne peuvent pas jouer dans un événement qu'ils administrent.",
       "Les limites de région ou de classement sont fixées pour chaque événement et publiées avant l'ouverture des inscriptions. Un joueur hors de ces limites ne peut pas jouer, même comme remplaçant."
     ],
     [
-      "Chaque joueur utilise un seul compte A.C.E., lié à un seul compte Steam via la connexion Steam. A.C.E. ne demande jamais de mot de passe Steam ; quiconque le demande n'est pas l'organisateur.",
+      "Chaque joueur utilise un seul compte A.C.E, lié à un seul compte Steam via la connexion Steam. A.C.E ne demande jamais de mot de passe Steam ; quiconque le demande n'est pas l'organisateur.",
       "Il est interdit de partager un compte, de jouer sur le compte d'une autre personne ou de laisser quelqu'un jouer sur le sien. Les deux comptes sont sanctionnés.",
       "Créer un nouveau compte pour échapper à une sanction, à un classement ou à une restriction constitue un contournement de sanction, traité comme une infraction à l'intégrité (section 14).",
       "Les pseudonymes et avatars doivent respecter les règles de conduite (section 13). Les arbitres peuvent exiger une modification avant un match.",
@@ -89,8 +89,8 @@ export const RB_FR: RulebookText = {
       "Le ghosting (recevoir des informations de spectateurs ou de diffusions), le stream sniping, le fait de jouer sur le compte d'autrui et le contournement de sanction sont interdits.",
       "L'arrangement de matchs, la défaite volontaire et les paris sur tout match impliquant votre équipe ou dans votre événement sont interdits.",
       "L'utilisation d'un bug de carte ou de jeu que l'arbitre a déclaré interdit, ou qui contourne manifestement les mécaniques prévues du jeu, est interdite.",
-      "Les joueurs doivent exécuter le client anti-triche A.C.E. pendant tout le match lorsque l'événement l'exige.",
-      "Les admins peuvent demander des démos ou des enregistrements d’écran pour examen. Les informations matérielles ne seront demandées qu’une fois le client anti-triche A.C.E. disponible et décrit dans la Politique de confidentialité. Refuser une demande raisonnable sans motif valable peut être pris en compte dans la décision.",
+      "Les joueurs doivent exécuter le client anti-triche A.C.E pendant tout le match lorsque l'événement l'exige.",
+      "Les admins peuvent demander des démos ou des enregistrements d’écran pour examen. Les informations matérielles ne seront demandées qu’une fois le client anti-triche A.C.E disponible et décrit dans la Politique de confidentialité. Refuser une demande raisonnable sans motif valable peut être pris en compte dans la décision.",
       "Toute personne peut signaler en privé une infraction présumée à l'organisateur. Les accusations publiques sans signalement constituent une infraction de conduite."
     ],
     [
@@ -105,7 +105,7 @@ export const RB_FR: RulebookText = {
       "Les bannissements s'appliquent à la personne et à tous les comptes qu'elle contrôle."
     ],
     [
-      "A.C.E. a le droit de diffuser tout match qu'elle organise. Les équipes ne peuvent pas refuser une diffusion.",
+      "A.C.E a le droit de diffuser tout match qu'elle organise. Les équipes ne peuvent pas refuser une diffusion.",
       "Les joueurs ne peuvent diffuser leurs propres matchs qu'avec un délai d'au moins 2 minutes et seulement si la page de l'événement l'autorise. Les diffusions officielles utilisent le délai fixé par l'organisateur.",
       "Les joueurs ne doivent regarder aucune diffusion en direct de leur propre match pendant qu'il se joue.",
       "Les matchs programmés pour diffusion peuvent être décalés de 2 heures au plus avec un préavis de 24 heures. Les équipes doivent être disponibles au nouvel horaire ou demander une décision de l'arbitre.",

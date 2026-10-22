@@ -14,8 +14,8 @@ describe("rank labels never duplicate (R38-E)", () => {
     expect(rankLabelParts(tier(1))).toEqual(["IRON", "Recruit"]);
   });
   it("drops the crystal slot in combined templates when names match", () => {
-    const alt = "A.C.E. Custom 3D Crystalline Level {level} {crystal} {name} emblem profile badge";
-    expect(rankTemplate(alt, tier(7))).toBe("A.C.E. Custom 3D Crystalline Level 7 Master emblem profile badge");
+    const alt = "A.C.E Custom 3D Crystalline Level {level} {crystal} {name} emblem profile badge";
+    expect(rankTemplate(alt, tier(7))).toBe("A.C.E Custom 3D Crystalline Level 7 Master emblem profile badge");
     expect(rankTemplate("Rank {level} · {name} · {crystal}", tier(8))).toBe("Rank 8 · Grandmaster");
     expect(rankTemplate("Rank {level} · {name} · {crystal}", tier(1))).toBe("Rank 1 · Recruit · IRON");
   });

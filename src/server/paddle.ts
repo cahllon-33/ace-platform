@@ -23,9 +23,10 @@ export async function applyPaddleEvent(e: PaddleEventIn, cfg: PaddleConfig): Pro
   const seen = await prisma.paddleEvent.findUnique({ where: { id: e.event_id } });
   if (seen) return "duplicate";
   const { fulfilOrder } = await import("@/server/commerce");
-  const order = await fulfilOrder(e);
+  const { revokeForAdjustment } = await import("@/server/commerce");
+  const order = (await revokeForAdjustment(e)) ?? (await fulfilOrder(e));
   if (order) {
-    const o = await prisma.paddleOrder.findUnique({ where: { id: e.data.id! }, select: { userId: true } });
+    const o = await prisma.paddleOrder.findUnique({ where: { id: (e.data.transaction_id ?? e.data.id)! }, select: { userId: true } });
     await prisma.paddleEvent.create({ data: { id: e.event_id, type: e.event_type, userId: o?.userId ?? null, occurredAt, outcome: order } }).catch(() => undefined);
     return order;
   }

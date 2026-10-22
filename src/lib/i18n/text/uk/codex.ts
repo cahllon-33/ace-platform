@@ -31,7 +31,7 @@ export const codex: TextBag["codex"] = {
     "searchLabel": "Пошук у кодексі",
     "searchPlaceholder": "Спробуйте 1950, Recruit або нічия",
     "empty": "Жоден запис не відповідає пошуку.",
-    "columnLabel": "Колонка A.C.E. {n}",
+    "columnLabel": "Колонка A.C.E {n}",
     "pagerLabel": "Сторінки кодексу",
     "first": "Перша",
     "previous": "Попередня",
@@ -40,7 +40,7 @@ export const codex: TextBag["codex"] = {
     "pageOf": "Сторінка {n} з {m}"
   },
   "article": {
-    "breadcrumb": "A.C.E. · Кодекс калібрування",
+    "breadcrumb": "A.C.E · Кодекс калібрування",
     "status": "Ця сторінка пояснює писану драбину. Вона не застосовує результат матчу й не змінює збережений рейтинг.",
     "emblemAlt": "Емблема {name}, звання {level}",
     "emblemCaption": "Звання {level} · {name} · {crystal}",
@@ -63,7 +63,7 @@ export const codex: TextBag["codex"] = {
     "turnLabel": "Читати кодекс далі",
     "previous": "Попередня",
     "next": "Наступна",
-    "alsoIn": "Також в A.C.E.",
+    "alsoIn": "Також в A.C.E",
     "backToBoard": "Назад до таблиці звань"
   },
   "rankArticle": {
@@ -124,20 +124,20 @@ export const codex: TextBag["codex"] = {
       "detail": "Діапазон — від 1 800 до 1 949. Це 150 очок, а не 100. 1 949 — це ще Sovereign. Legend починається з 1 950."
     },
     "rank-10-a-c-e-legend": {
-      "stance": "A.C.E. Legend — остання позначка. Кристалічна назва — ACE ELITE. Офіційна назва — A.C.E. Legend.",
+      "stance": "A.C.E Legend — остання позначка. Кристалічна назва — ACE ELITE. Офіційна назва — A.C.E Legend.",
       "detail": "Діапазон починається з 1 950 і закінчується на стелі рушія — 3 000. Одинадцятого звання немає. Збережений рейтинг не може перевищити 3 000."
     }
   },
   "articles": {
     "what-a-rank-is": {
       "title": "Що таке звання A.C.E.",
-      "lede": "Звання — це позначка, що містить ваші збережені очки рейтингу. Десять позначок охоплюють усю драбину — від Recruit до A.C.E. Legend.",
+      "lede": "Звання — це позначка, що містить ваші збережені очки рейтингу. Десять позначок охоплюють усю драбину — від Recruit до A.C.E Legend.",
       "sections": [
         {
           "heading": "Одне число — одна позначка",
           "paragraphs": [
             "Акаунт зберігає змагальний рейтинг. Драбина зчитує це число й повертає найвище звання, нижньої межі якого досягнуто. Ви не можете мати два звання одночасно.",
-            "Recruit — звання 1. A.C.E. Legend — звання 10. Офіційна назва — це назва в драбині. Коротше слово на емблемі — кристалічна назва того самого звання.",
+            "Recruit — звання 1. A.C.E Legend — звання 10. Офіційна назва — це назва в драбині. Коротше слово на емблемі — кристалічна назва того самого звання.",
             "Цей кодекс пояснює писану драбину. Він не застосовує результат матчу й не змінює збережений рейтинг."
           ]
         },
@@ -145,7 +145,7 @@ export const codex: TextBag["codex"] = {
           "heading": "Як розташовані межі",
           "paragraphs": [
             "Recruit охоплює початок драбини. Operative починається з 1 100. Від Vanguard до Grandmaster кожна нова межа на 100 очок вища: 1 200, 1 300, 1 400, 1 500, 1 600, потім 1 700.",
-            "Sovereign починається з 1 800 і триває до 1 949. A.C.E. Legend починається з 1 950. Стеля рушія — 3 000, тож Legend — найширший діапазон."
+            "Sovereign починається з 1 800 і триває до 1 949. A.C.E Legend починається з 1 950. Стеля рушія — 3 000, тож Legend — найширший діапазон."
           ]
         },
         {
@@ -164,14 +164,14 @@ export const codex: TextBag["codex"] = {
         {
           "heading": "Навіщо обидві",
           "paragraphs": [
-            "Рушій і профіль використовують офіційну назву: Recruit, Operative, Vanguard, Specialist, Veteran, Elite, Master, Grandmaster, Sovereign, A.C.E. Legend.",
+            "Рушій і профіль використовують офіційну назву: Recruit, Operative, Vanguard, Specialist, Veteran, Elite, Master, Grandmaster, Sovereign, A.C.E Legend.",
             "Емблема має також кристалічну назву: IRON, BRONZE, SILVER, GOLD, PLATINUM, DIAMOND, MASTER, GRANDMASTER, IMMORTAL, ACE ELITE. Ця назва — графіка. Вона не створює одинадцятого звання й не зберігає другого числа."
           ]
         },
         {
           "heading": "Де вони розходяться",
           "paragraphs": [
-            "Кристалічна назва Specialist — GOLD. Veteran — PLATINUM. Elite — DIAMOND. Sovereign — IMMORTAL. A.C.E. Legend — ACE ELITE. У кожному разі межа належить офіційній назві.",
+            "Кристалічна назва Specialist — GOLD. Veteran — PLATINUM. Elite — DIAMOND. Sovereign — IMMORTAL. A.C.E Legend — ACE ELITE. У кожному разі межа належить офіційній назві.",
             "Master і Grandmaster використовують те саме слово в обох місцях."
           ]
         }
@@ -287,7 +287,7 @@ export const codex: TextBag["codex"] = {
           "heading": "Упори",
           "paragraphs": [
             "Поразка при 100 очках залишає 100. Перемога при 3 000 залишає 3 000. Межа Recruit у драбині записана як 0, але збережене число ніколи не опускається нижче 100.",
-            "1 949 — це Sovereign. 1 950 — A.C.E. Legend. Проміжної позначки немає."
+            "1 949 — це Sovereign. 1 950 — A.C.E Legend. Проміжної позначки немає."
           ]
         },
         {
@@ -334,7 +334,7 @@ export const codex: TextBag["codex"] = {
           "heading": "Чого стіл не робить",
           "paragraphs": [
             "ЗНАЙТИ МАТЧ не шукає суперників і не змінює очки рейтингу. Звання акаунта — це й надалі збережене число, яке драбина в цьому кодексі зчитує.",
-            "Окремої топ-черги над Legend немає. A.C.E. Legend — остання позначка, і вона починається з 1 950 очок рейтингу."
+            "Окремої топ-черги над Legend немає. A.C.E Legend — остання позначка, і вона починається з 1 950 очок рейтингу."
           ]
         }
       ]

@@ -62,7 +62,7 @@ export const ranks: TextBag["ranks"] = {
     "kicker": "高级段位",
     "plan": "A.C.E PREMIUM · 仅限每月 $7",
     "title": "高级段位美术",
-    "lede": "原版插画 A.C.E. 段位套装：十枚带 III/II/I 分段的水晶徽章、评分协议、Legend 详情卡以及可拖动旋转的 3D 查看器。这是 Premium 会员的个人资料美术。它读取与标准段位相同的 Rating Points 阶梯，不提供任何竞技优势。",
+    "lede": "原版插画 A.C.E 段位套装：十枚带 III/II/I 分段的水晶徽章、评分协议、Legend 详情卡以及可拖动旋转的 3D 查看器。这是 Premium 会员的个人资料美术。它读取与标准段位相同的 Rating Points 阶梯，不提供任何竞技优势。",
     "demo": "演示数值：此面板上的进度、胜率和分段数据均为示例，不是实时统计。登录后显示的评分是你已保存的评分。",
     "locked": "即将推出：结账功能尚不存在，因此目前没有任何账号是 Premium。服务器只会在已保存方案为 Premium 的个人资料上应用高级段位美术。",
     "standardKicker": "标准段位",
@@ -77,12 +77,12 @@ export const ranks: TextBag["ranks"] = {
   },
   "meta": {
     "title": "竞技段位",
-    "description": "A.C.E. 的十个段位,从 Iron Recruit 到 A.C.E. Legend,含分级与评分下限。"
+    "description": "A.C.E 的十个段位,从 Iron Recruit 到 A.C.E Legend,含分级与评分下限。"
   },
   "hero": {
     "kicker": "定级",
     "title": "竞技段位",
-    "lede": "从 Recruit 到 A.C.E. Legend 共十个段位,每个段位含 {divisions} 分级。拖动或使用方向键旋转徽章。登录后显示你自己的评分,否则显示各段位下限。"
+    "lede": "从 Recruit 到 A.C.E Legend 共十个段位,每个段位含 {divisions} 分级。拖动或使用方向键旋转徽章。登录后显示你自己的评分,否则显示各段位下限。"
   },
   "codexLink": "打开定级典籍",
   "document": {
@@ -134,9 +134,9 @@ export const ranks: TextBag["ranks"] = {
     }
   },
   "board": {
-    "selectEmblem": "选择 A.C.E. {name} 段位徽章,等级 {level}",
-    "emblemAlt": "A.C.E. 定制 3D 水晶等级 {level} {crystal} {name} 徽章个人资料标志",
-    "emblemAltLegend": "A.C.E. 定制 3D 水晶等级 {level} 徽章个人资料标志",
+    "selectEmblem": "选择 A.C.E {name} 段位徽章,等级 {level}",
+    "emblemAlt": "A.C.E 定制 3D 水晶等级 {level} {crystal} {name} 徽章个人资料标志",
+    "emblemAltLegend": "A.C.E 定制 3D 水晶等级 {level} 徽章个人资料标志",
     "premium": "最高段位"
   },
   "division": {

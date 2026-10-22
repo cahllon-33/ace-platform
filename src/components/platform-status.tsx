@@ -7,7 +7,7 @@ type State = "available" | "inDevelopment" | "comingSoon" | "preparing" | "billi
 /**
  * Honest platform status. Each state reflects the code today:
  * - Steam sign-in: live OpenID routes (/api/auth/steam).
- * - A.C.E. Shield: in development, no client ships.
+ * - A.C.E Shield: in development, no client ships.
  * - Competitive servers: no game server integration exists.
  * - Tournaments: bracket/rulebook pages exist, no funded or running event.
  * - Billing: no payment provider is integrated, so no payment can be taken.

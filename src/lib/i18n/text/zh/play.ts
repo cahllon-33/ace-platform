@@ -44,7 +44,7 @@ export const play: TextBag["play"] = {
           "单排、双排或三排",
           "计划评分区间 {points} 分",
           "必须已保存 Steam 个人资料",
-          "使用 A.C.E. 评分规则 · 搜索即将推出"
+          "使用 A.C.E 评分规则 · 搜索即将推出"
         ]
       },
       "elite": {

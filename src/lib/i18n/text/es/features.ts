@@ -4,18 +4,18 @@ export const features: TextBag["features"] = {
   "page": {
     "meta": {
       "title": "Funciones",
-      "description": "Arquitectura especificada del núcleo anticheat de A.C.E., vinculación biométrica por escaneo facial y diez escalones de calibración de habilidad. Estos sistemas no están en vivo en este sitio web."
+      "description": "Arquitectura especificada del núcleo anticheat de A.C.E, vinculación biométrica por escaneo facial y diez escalones de calibración de habilidad. Estos sistemas no están en vivo en este sitio web."
     },
     "header": {
       "kicker": "ACE-FEATURES / NÚCLEO / ESCANEO FACIAL / CALIBRACIÓN",
       "title": "Especificación de funciones de la plataforma",
-      "lede": "Esta página es el mapa técnico de nivel de producción de tres sistemas previstos de A.C.E.: el núcleo anticheat autónomo, la vinculación biométrica por escaneo facial y la escalera de calibración de habilidad de diez escalones. Nada en esta página es un núcleo en vivo, un producto de cámara en vivo ni una cola clasificatoria en vivo. Steam OpenID, los equipos 5v5, los diseños de cuadro y el cálculo de puntuación de tipo Elo existen en este repositorio. Los servidores dedicados de CS2, los pagos, los premios y un cliente de integridad descargable no existen."
+      "lede": "Esta página es el mapa técnico de nivel de producción de tres sistemas previstos de A.C.E: el núcleo anticheat autónomo, la vinculación biométrica por escaneo facial y la escalera de calibración de habilidad de diez escalones. Nada en esta página es un núcleo en vivo, un producto de cámara en vivo ni una cola clasificatoria en vivo. Steam OpenID, los equipos 5v5, los diseños de cuadro y el cálculo de puntuación de tipo Elo existen en este repositorio. Los servidores dedicados de CS2, los pagos, los premios y un cliente de integridad descargable no existen."
     },
     "kernel": {
       "title": "Arquitectura del núcleo anticheat",
       "paragraphs": [
         "La Envoltura segura autónoma especificada es un cliente de integridad vinculado al hardware que se ejecutaría junto a Counter-Strike 2 en el equipo del jugador y comunicaría un estado firmado ALLOW o DENY a los servidores gestionados por A.C.E. El diseño del núcleo se cierra ante fallo: si el cliente falta, está detenido, desactualizado, suplantado o no verificado, se deniega la admisión clasificatoria. El navegador nunca decide la elegibilidad. BUSCAR PARTIDA clasificatorio en este sitio web ya se cierra ante fallo por ese motivo.",
-        "Las capas previstas del núcleo incluyen un enlace en modo usuario que vincula el SteamID verificado de 64 bits a la cuenta A.C.E., una superficie de certificación del identificador de hardware (HWID), una lista de vigilancia de firmas de familias de trampas conocidas y una ruta de elegibilidad de servidor a servidor protegida por un secreto compartido. Una validación de firma de trampas, una comprobación de integridad rechazada o un identificador de dispositivo suplantado se especifican para producir un cambio inmediato del estado de la cuenta a BANNED o PERM_BANNED y, cuando exista un producto de facturación, la pérdida total del tiempo de suscripción prepagado sin ninguna obligación de reembolso. Con este sitio web no se entrega ningún cliente de ese tipo. Las tarjetas de descarga Próximamente son solo diseño."
+        "Las capas previstas del núcleo incluyen un enlace en modo usuario que vincula el SteamID verificado de 64 bits a la cuenta A.C.E, una superficie de certificación del identificador de hardware (HWID), una lista de vigilancia de firmas de familias de trampas conocidas y una ruta de elegibilidad de servidor a servidor protegida por un secreto compartido. Una validación de firma de trampas, una comprobación de integridad rechazada o un identificador de dispositivo suplantado se especifican para producir un cambio inmediato del estado de la cuenta a BANNED o PERM_BANNED y, cuando exista un producto de facturación, la pérdida total del tiempo de suscripción prepagado sin ninguna obligación de reembolso. Con este sitio web no se entrega ningún cliente de ese tipo. Las tarjetas de descarga Próximamente son solo diseño."
       ],
       "stats": [
         {
@@ -35,7 +35,7 @@ export const features: TextBag["features"] = {
     "faceScan": {
       "title": "Vinculación biométrica por escaneo facial",
       "paragraphs": [
-        "El escaneo facial es una capa futura de vinculación de identidad especificada, no un producto de cámara en este sitio web. El diseño previsto, solo tras un consentimiento explícito y una revisión legal aparte, vincularía una plantilla facial con prueba de vida a la misma cuenta A.C.E. que ya tiene un SteamID verificado por el servidor. El objetivo es impedir que se comparta una cuenta para eludir una restricción previa. A.C.E. no recoge hoy imágenes faciales, representaciones faciales, direcciones de correo ni huellas de hardware. La postura de privacidad en vigor sigue siendo la de estricta necesidad: solo el SteamID verificado de 64 bits y el nombre visible público de Steam.",
+        "El escaneo facial es una capa futura de vinculación de identidad especificada, no un producto de cámara en este sitio web. El diseño previsto, solo tras un consentimiento explícito y una revisión legal aparte, vincularía una plantilla facial con prueba de vida a la misma cuenta A.C.E que ya tiene un SteamID verificado por el servidor. El objetivo es impedir que se comparta una cuenta para eludir una restricción previa. A.C.E no recoge hoy imágenes faciales, representaciones faciales, direcciones de correo ni huellas de hardware. La postura de privacidad en vigor sigue siendo la de estricta necesidad: solo el SteamID verificado de 64 bits y el nombre visible público de Steam.",
         "Si Face Scan llega a implementarse, no sustituirá a Steam OpenID, no se usará para vender publicidad conductual y no desbloqueará por sí solo las colas clasificatorias. El acceso a las clasificatorias seguirá requiriendo una vía de Anti-Cheat verificada. Hasta que exista esa revisión, cualquier panel de Face Scan en el lobby es una vista previa de diseño."
       ]
     },
@@ -57,8 +57,8 @@ export const features: TextBag["features"] = {
   },
   "loot": {
     "kicker": "Cosméticos · próximamente",
-    "title": "ARQUITECTURA DE BOTÍN A.C.E. — BOTINES DE ARMAS",
-    "lede": "Acabados originales de A.C.E. que llegarán con la tienda. Los cosméticos nunca afectan a la competición.",
+    "title": "ARQUITECTURA DE BOTÍN A.C.E — BOTINES DE ARMAS",
+    "lede": "Acabados originales de A.C.E que llegarán con la tienda. Los cosméticos nunca afectan a la competición.",
     "checkout": "Pago · próximamente"
   },
   "identityPreview": {
@@ -85,23 +85,23 @@ export const features: TextBag["features"] = {
       },
       "anti-cheat": {
         "title": "Resumen del anticheat",
-        "body": "A.C.E. no tiene un producto de anticheat funcional. El emparejamiento clasificatorio sigue cerrado hasta que exista una integración real."
+        "body": "A.C.E no tiene un producto de anticheat funcional. El emparejamiento clasificatorio sigue cerrado hasta que exista una integración real."
       },
       "download-client": {
         "title": "Descargar cliente",
-        "body": "No hay ningún cliente de escritorio de A.C.E. para descargar. Un cliente nativo no forma parte de la etapa web actual."
+        "body": "No hay ningún cliente de escritorio de A.C.E para descargar. Un cliente nativo no forma parte de la etapa web actual."
       },
       "mobile-app": {
         "title": "Aplicación móvil",
-        "body": "La app móvil de A.C.E. está en la hoja de ruta."
+        "body": "La app móvil de A.C.E está en la hoja de ruta."
       },
       "news": {
         "title": "Noticias",
-        "body": "La sala de prensa de A.C.E. abrirá pronto."
+        "body": "La sala de prensa de A.C.E abrirá pronto."
       },
       "about": {
         "title": "Quiénes somos",
-        "body": "A.C.E. es un sitio independiente de competición de Counter-Strike 2 en vista previa pública. No está afiliado a Valve."
+        "body": "A.C.E es un sitio independiente de competición de Counter-Strike 2 en vista previa pública. No está afiliado a Valve."
       },
       "advertising": {
         "title": "Publicidad",

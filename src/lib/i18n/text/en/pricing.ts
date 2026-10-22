@@ -68,10 +68,10 @@
       "prices": "Free {free}. Plus {plus} per month. Premium {premium} per month. Plans renew monthly. You can cancel at any time in dashboard settings with no penalty and keep access until the end of the paid month. A partial month is not refunded unless the law of your country requires it.",
       "plusTitle": "2. What Plus includes",
       "plus1": "Everything in Free.",
-      "plus2": "Coming soon: a thank-you letter and email support at support@ace-platform.gg, once checkout exists.",
+      "plus2": "Member email support at {email} and a thank-you letter from the team.",
       "premiumTitle": "3. What Premium includes",
       "prem1": "Everything in Plus.",
-      "prem2": "Premium rank art and the Premium rank codex: the original illustrated A.C.E. emblem set on your profile. Cosmetic only, on the same Rating Points ladder.",
+      "prem2": "Premium rank art and the Premium rank codex: the original illustrated A.C.E emblem set on your profile. Cosmetic only, on the same Rating Points ladder.",
       "prem3": "The animated Premium profile card.",
       "prem4": "Special badges and the ELITE SEAL.",
       "prem5": "Coming soon: extended match analysis (death heatmap, headshot %, per-round performance), once demo parsing exists.",
@@ -83,14 +83,14 @@
       "soon": "Anything marked Coming soon is not promised until it is released. Until then, the price does not include it.",
       "languageTitle": "6. Language",
       "language": "Translations are provided for convenience. If a translation differs from the English text, the English text applies.",
-      "contact": "Questions: support@ace-platform.gg",
+      "contact": "Questions: {email}",
       "footerLink": "Premium terms",
       "pricingLink": "Read the Premium terms"
     }
   },
   "meta": {
     "title": "Pricing",
-    "description": "A.C.E. membership: Free {free}, Plus {plus}/mo, Premium {premium}/mo. Integer-locked display prices."
+    "description": "A.C.E membership: Free {free}, Plus {plus}/mo, Premium {premium}/mo. Integer-locked display prices."
   },
   "period": {
     "monthly": "/mo"
@@ -106,23 +106,23 @@
       "note": "Graphite",
       "title": "Open access",
       "points": [
-        "Sign in with Steam OpenID. A.C.E. never asks for a Steam password.",
+        "Sign in with Steam OpenID. A.C.E never asks for a Steam password.",
         "A stored rating starts at 1,200. No match result has changed it.",
         "All public pages: play, tournaments, leaderboard, teams and rules."
       ]
     },
     "plus": {
-      "name": "A.C.E. PLUS",
+      "name": "A.C.E PLUS",
       "note": "Plus",
       "title": "Player stats and support",
       "points": [
         "Everything in Free.",
-        "Player stats: your rating movement graph from recorded A.C.E. matches. Headshot % and accuracy gauges are coming soon.",
-        "Coming soon: a thank-you letter and email support at support@ace-platform.gg, once checkout exists. Plus does not buy rating or easier opponents."
+        "Player stats: your rating movement graph from recorded A.C.E matches. Headshot % and accuracy gauges are coming soon.",
+        "Member email support at {email} and a thank-you letter from the team. Plus does not buy rating or easier opponents."
       ]
     },
     "premium": {
-      "name": "A.C.E. PREMIUM",
+      "name": "A.C.E PREMIUM",
       "note": "Premium",
       "title": "Profile art, badges and analysis",
       "points": [
@@ -157,7 +157,7 @@
     }
   },
   "compare": {
-    "kicker": "What A.C.E. can promise today",
+    "kicker": "What A.C.E can promise today",
     "title": "Membership comparison",
     "note": "Every row reflects the site today. Checkout is coming soon, and a paid plan never opens a queue or buys an advantage.",
     "caption": "Free, Plus, and Premium compared by what the site does today",
@@ -173,7 +173,7 @@
       },
       "steamSignIn": {
         "feature": "Steam sign-in",
-        "detail": "Official Steam OpenID. A.C.E. never asks for a Steam password."
+        "detail": "Official Steam OpenID. A.C.E never asks for a Steam password."
       },
       "startingRating": {
         "feature": "Starting rating",
@@ -181,7 +181,7 @@
       },
       "recordedMatches": {
         "feature": "Recorded matches",
-        "detail": "Wins and losses written from a finished A.C.E. match."
+        "detail": "Wins and losses written from a finished A.C.E match."
       },
       "rankedQueue": {
         "feature": "Ranked queue",
@@ -229,15 +229,15 @@
   "receipt": {
     "plus": {
       "metaTitle": "Plus receipt",
-      "metaDescription": "The A.C.E. Plus letter shown on this website. Checkout is not live, so nothing is charged and no email is sent.",
-      "planName": "A.C.E. Plus",
-      "nextLabel": "Continue on A.C.E.",
+      "metaDescription": "The A.C.E Plus letter shown on this website. Checkout is not live, so nothing is charged and no email is sent.",
+      "planName": "A.C.E Plus",
+      "nextLabel": "Continue on A.C.E",
       "nextBody": "The public pages stay open. This selection does not open a queue and does not change the stored tier."
     },
     "premium": {
       "metaTitle": "Premium receipt",
-      "metaDescription": "The A.C.E. Premium letter shown on this website. Checkout is not live, so nothing is charged and no email is sent.",
-      "planName": "A.C.E. Premium",
+      "metaDescription": "The A.C.E Premium letter shown on this website. Checkout is not live, so nothing is charged and no email is sent.",
+      "planName": "A.C.E Premium",
       "nextLabel": "Read the Premium terms",
       "nextBody": "Premium is Premium rank art, the animated profile card, special badges and the ELITE SEAL, plus everything in Plus. Saving a clan on Squads is free for every account."
     }
@@ -254,7 +254,7 @@
         "Plan name: {plan}.",
         "Display price: {price} per month. The figure is a label, not a charge.",
         "Payment: none. Choosing this plan does not take a card.",
-        "Email: none. A.C.E. does not send this letter to an inbox.",
+        "Email: none. A.C.E does not send this letter to an inbox.",
         "Stored tier: unchanged. Special badges and the elite seal appear only when the account already stores Premium.",
         "Rating: not for sale. A new account still starts at 1,200."
       ]
@@ -263,7 +263,7 @@
       "title": "What you can use today",
       "items": [
         "The public site: home, play, tournaments, leaderboard, teams, rules and terms.",
-        "Steam sign-in through official Steam OpenID. A.C.E. never asks for a Steam password.",
+        "Steam sign-in through official Steam OpenID. A.C.E never asks for a Steam password.",
         "The same public pages as Free. This price does not open a separate queue."
       ]
     },
@@ -307,7 +307,7 @@
   },
   "telemetry": {
     "kicker": "PLUS / PREMIUM TELEMETRY",
-    "copy": "DASHBOARD TELEMETRY LOCKED — Upgrade your subscription plan to A.C.E. Plus or Premium to unlock dynamic real-time stat curves and weapon specialty indexes.",
+    "copy": "DASHBOARD TELEMETRY LOCKED — Upgrade your subscription plan to A.C.E Plus or Premium to unlock dynamic real-time stat curves and weapon specialty indexes.",
     "cta": "Open pricing tables"
   }
 }as const;

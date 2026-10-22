@@ -2,7 +2,7 @@ import type { TextBag } from "../types";
 
 export const teams: TextBag["teams"] = {
   "meta": {
-    "title": "Gestionarea echipei A.C.E.",
+    "title": "Gestionarea echipei A.C.E",
     "description": "Spațiul de lucru al echipei tale 5v5. Invitațiile necesită o sesiune Steam verificată; verificările anti-cheat sosesc odată cu A.C.E Shield."
   },
   "hero": {
@@ -18,7 +18,7 @@ export const teams: TextBag["teams"] = {
     "yes": "Da, cinci jucători",
     "no": "Nu, lasă locurile deschise",
     "seatsOpen": "Cele cinci locuri rămân deschise. Nimic nu a fost stocat.",
-    "connectSteam": "Conectează mai întâi Steam. Butonul revine la această pagină. A.C.E. nu cere niciodată parola Steam.",
+    "connectSteam": "Conectează mai întâi Steam. Butonul revine la această pagină. A.C.E nu cere niciodată parola Steam.",
     "alreadyMember": "{name} aparține deja echipei {team}. Din acest formular nu se creează un al doilea clan.",
     "thisAccount": "Acest cont",
     "acceptTerms": "Acceptă termenii înainte de a salva un clan.",
@@ -26,7 +26,7 @@ export const teams: TextBag["teams"] = {
     "clanName": "Numele clanului",
     "captainSeat": "Locul 1, căpitan: {name}",
     "signedInSteam": "Contul Steam autentificat",
-    "seatLabel": "SteamID sau ID de cont A.C.E. pentru locul {seat}",
+    "seatLabel": "SteamID sau ID de cont A.C.E pentru locul {seat}",
     "submit": "Stochează clanul de cinci jucători",
     "saved": "Numele clanului este stocat și patru invitații sunt în așteptare. Acei jucători nu sunt în lot până nu acceptă. Acesta nu este un loc pe tabla de 100 de echipe. Nu s-a taxat nimic."
   },
@@ -42,7 +42,7 @@ export const teams: TextBag["teams"] = {
       "email": "Nu se trimite niciun e-mail. Chitanțele planurilor rămân pe acest site.",
       "charge": "Premium costă 7 $ pe lună. În curând: plata nu există încă, deci nu se taxează nimic.",
       "board": "Un clan stocat este o înregistrare de lot. Nu este plasat pe tabla de 100 de echipe. Tabla arată încă 0 înscrise până se deschide un sezon.",
-      "steam": "Autentificarea folosește Steam OpenID oficial. A.C.E. nu cere niciodată parola Steam. De pe această pagină, Steam revine aici.",
+      "steam": "Autentificarea folosește Steam OpenID oficial. A.C.E nu cere niciodată parola Steam. De pe această pagină, Steam revine aici.",
       "roster": "Locul 1 este căpitanul autentificat. Locurile 2–5 trebuie să aibă deja conturi A.C.E. Invitațiile rămân în așteptare până când fiecare jucător acceptă.",
       "badge": "Insignele locurilor devin verificări A.C.E Shield live când se lansează anti-cheatul.",
       "support": "Deschide Asistență sau Contact pe acest site. O solicitare de asistență nu deschide un tichet, iar textul scris pe Contact nu este livrat.",
@@ -63,11 +63,11 @@ export const teams: TextBag["teams"] = {
   },
   "tournaments": {
     "meta": {
-      "title": "Campionatul A.C.E. — Eliminatorii de elită cu 100 de echipe",
+      "title": "Campionatul A.C.E — Eliminatorii de elită cu 100 de echipe",
       "description": "Eliminatoriile cu 100 de echipe. Apasă pe un clan pentru a-i deschide lotul, apoi fiecare profil de jucător. Înscrierile se deschid în curând."
     },
     "intro": {
-      "title": "CAMPIONATUL A.C.E. — ELIMINATORII DE ELITĂ CU 100 DE ECHIPE",
+      "title": "CAMPIONATUL A.C.E — ELIMINATORII DE ELITĂ CU 100 DE ECHIPE",
       "lede": "Câmpul publicat este o eliminatorie cu 100 de echipe. Graficul de mai jos este acea machetă. Apăsarea pe un clan deschide sertarul lotului. Înscrieri: 0 din 100. Nu se anunță și nu se finanțează un premiu în bani.",
       "formatValue": "Matricea tabloului cu 100 de echipe",
       "briefTitle": "Brief operațional pentru 100 de echipe",
@@ -110,7 +110,7 @@ export const teams: TextBag["teams"] = {
       "count": "Clanul {index} din {total}",
       "next": "Clanul următor",
       "close": "Închide profilul",
-      "disclosure": "Configurațiile și inventarele jucătorilor apar aici când jucătorii aleg să le împărtășească. A.C.E. nu colectează date hardware."
+      "disclosure": "Configurațiile și inventarele jucătorilor apar aici când jucătorii aleg să le împărtășească. A.C.E nu colectează date hardware."
     },
     "player": {
       "level": "NIV {level} · RP {rating}",
@@ -140,14 +140,14 @@ export const teams: TextBag["teams"] = {
     "monitor": "Rată de reîmprospătare · nedistribuit",
     "headset": "Nedistribuit"
   },
-  "profileDisclosure": "A.C.E. nu stochează inventare hardware și nu rulează un client anti-cheat. Graficele de tendință a performanței și matricea de luptă necesită o sesiune A.C.E. Plus sau Premium. Un link de profil Steam scris pe această pagină nu este salvat și nu este un identificator oficial.",
+  "profileDisclosure": "A.C.E nu stochează inventare hardware și nu rulează un client anti-cheat. Graficele de tendință a performanței și matricea de luptă necesită o sesiune A.C.E Plus sau Premium. Un link de profil Steam scris pe această pagină nu este salvat și nu este un identificator oficial.",
   "errors": {
     "signInRequired": "Autentificare necesară.",
     "nameLength": "Numele echipei trebuie să aibă între 2 și 32 de caractere.",
     "alreadyCaptain": "Acest cont este deja căpitanul unei echipe.",
     "nameTaken": "Există deja o echipă cu acest nume.",
     "idRequired": "Este necesar un SteamID sau un ID de cont A.C.E.",
-    "noAccountForToken": "Nu există niciun cont A.C.E. pentru acel SteamID sau ID de cont.",
+    "noAccountForToken": "Nu există niciun cont A.C.E pentru acel SteamID sau ID de cont.",
     "clanNeedsFour": "Un clan de cinci jucători are nevoie de căpitanul autentificat plus patru SteamID-uri.",
     "seatNeedsId": "Fiecare dintre cele patru locuri are nevoie de un SteamID sau ID de cont A.C.E.",
     "seatsDistinct": "Fiecare loc are nevoie de un jucător diferit.",
@@ -157,7 +157,7 @@ export const teams: TextBag["teams"] = {
     "captainOnly": "Doar căpitanul desemnat poate trimite invitații.",
     "rosterLimit": "Un lot CS2 are cinci jucători, inclusiv căpitanul.",
     "alreadyOnRoster": "Acel jucător este deja în lot.",
-    "noAccountForId": "Nu există niciun cont A.C.E. pentru acel ID.",
+    "noAccountForId": "Nu există niciun cont A.C.E pentru acel ID.",
     "inviteNotFound": "Invitația nu a fost găsită.",
     "inviteNotPending": "Această invitație nu mai este în așteptare.",
     "rosterFull": "Lotul este deja complet.",

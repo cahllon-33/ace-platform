@@ -3,7 +3,7 @@ import type { TextBag } from "../types";
 export const codex: TextBag["codex"] = {
   "meta": {
     "title": "Codexul de calibrare",
-    "description": "Rangurile A.C.E. explicate. Fiecare întrebare deschide un răspuns complet despre Rating Points și regulile acelui rang. Codexul nu înregistrează un meci.",
+    "description": "Rangurile A.C.E explicate. Fiecare întrebare deschide un răspuns complet despre Rating Points și regulile acelui rang. Codexul nu înregistrează un meci.",
     "articleTitle": "{title} — Codexul de calibrare"
   },
   "groups": {
@@ -31,7 +31,7 @@ export const codex: TextBag["codex"] = {
     "searchLabel": "Caută în codex",
     "searchPlaceholder": "Încearcă 1950, Recruit sau egal",
     "empty": "Nicio intrare nu corespunde căutării.",
-    "columnLabel": "Coloana A.C.E. {n}",
+    "columnLabel": "Coloana A.C.E {n}",
     "pagerLabel": "Paginile codexului",
     "first": "Prima",
     "previous": "Anterioară",
@@ -40,7 +40,7 @@ export const codex: TextBag["codex"] = {
     "pageOf": "Pagina {n} din {m}"
   },
   "article": {
-    "breadcrumb": "A.C.E. · Codexul de calibrare",
+    "breadcrumb": "A.C.E · Codexul de calibrare",
     "status": "Această pagină explică scara scrisă. Nu înregistrează un meci și nu modifică un rating stocat.",
     "emblemAlt": "Emblema {name}, rangul {level}",
     "emblemCaption": "Rangul {level} · {name} · {crystal}",
@@ -63,7 +63,7 @@ export const codex: TextBag["codex"] = {
     "turnLabel": "Continuă prin codex",
     "previous": "Anterioară",
     "next": "Următoare",
-    "alsoIn": "Tot în A.C.E.",
+    "alsoIn": "Tot în A.C.E",
     "backToBoard": "Înapoi la tabla rangurilor"
   },
   "rankArticle": {
@@ -124,20 +124,20 @@ export const codex: TextBag["codex"] = {
       "detail": "Intervalul merge de la 1.800 la 1.949. Sunt 150 de puncte, nu 100. 1.949 poartă încă Sovereign. Legend se deschide la 1.950."
     },
     "rank-10-a-c-e-legend": {
-      "stance": "A.C.E. Legend este ultimul semn. Eticheta de cristal este ACE ELITE. Numele oficial este A.C.E. Legend.",
+      "stance": "A.C.E Legend este ultimul semn. Eticheta de cristal este ACE ELITE. Numele oficial este A.C.E Legend.",
       "detail": "Intervalul se deschide la 1.950 și se termină la plafonul motorului, 3.000. Nu există un al unsprezecelea rang. Un rating stocat nu poate urca peste 3.000."
     }
   },
   "articles": {
     "what-a-rank-is": {
       "title": "Ce este un rang A.C.E.",
-      "lede": "Un rang este semnul care conține Rating Points stocate. Zece semne acoperă întreaga scară, de la Recruit la A.C.E. Legend.",
+      "lede": "Un rang este semnul care conține Rating Points stocate. Zece semne acoperă întreaga scară, de la Recruit la A.C.E Legend.",
       "sections": [
         {
           "heading": "Un număr, un semn",
           "paragraphs": [
             "Contul stochează un rating competitiv. Scara citește acel număr și returnează cel mai înalt rang al cărui prag a fost atins. Nu deții două ranguri simultan.",
-            "Recruit este rangul 1. A.C.E. Legend este rangul 10. Numele oficial este numele din scară. Cuvântul mai scurt de pe emblemă este eticheta de cristal a aceluiași rang.",
+            "Recruit este rangul 1. A.C.E Legend este rangul 10. Numele oficial este numele din scară. Cuvântul mai scurt de pe emblemă este eticheta de cristal a aceluiași rang.",
             "Acest codex explică scara scrisă. Nu înregistrează un meci și nu modifică un rating stocat."
           ]
         },
@@ -145,7 +145,7 @@ export const codex: TextBag["codex"] = {
           "heading": "Cum sunt așezate pragurile",
           "paragraphs": [
             "Recruit acoperă începutul scării. Operative se deschide la 1.100. De la Vanguard la Grandmaster, fiecare prag nou este cu 100 de puncte mai sus: 1.200, 1.300, 1.400, 1.500, 1.600, apoi 1.700.",
-            "Sovereign se deschide la 1.800 și păstrează contul până la 1.949. A.C.E. Legend se deschide la 1.950. Plafonul motorului este 3.000, așa că Legend este cel mai lung interval."
+            "Sovereign se deschide la 1.800 și păstrează contul până la 1.949. A.C.E Legend se deschide la 1.950. Plafonul motorului este 3.000, așa că Legend este cel mai lung interval."
           ]
         },
         {
@@ -164,14 +164,14 @@ export const codex: TextBag["codex"] = {
         {
           "heading": "De ce există ambele",
           "paragraphs": [
-            "Motorul și profilul folosesc numele oficial: Recruit, Operative, Vanguard, Specialist, Veteran, Elite, Master, Grandmaster, Sovereign, A.C.E. Legend.",
+            "Motorul și profilul folosesc numele oficial: Recruit, Operative, Vanguard, Specialist, Veteran, Elite, Master, Grandmaster, Sovereign, A.C.E Legend.",
             "Emblema poartă și o etichetă de cristal: IRON, BRONZE, SILVER, GOLD, PLATINUM, DIAMOND, MASTER, GRANDMASTER, IMMORTAL, ACE ELITE. Eticheta este grafică. Nu creează un al unsprezecelea rang și nu stochează un al doilea număr."
           ]
         },
         {
           "heading": "Unde diferă",
           "paragraphs": [
-            "Eticheta de cristal a lui Specialist este GOLD. A lui Veteran, PLATINUM. A lui Elite, DIAMOND. A lui Sovereign, IMMORTAL. A lui A.C.E. Legend, ACE ELITE. În fiecare caz pragul aparține tot numelui oficial.",
+            "Eticheta de cristal a lui Specialist este GOLD. A lui Veteran, PLATINUM. A lui Elite, DIAMOND. A lui Sovereign, IMMORTAL. A lui A.C.E Legend, ACE ELITE. În fiecare caz pragul aparține tot numelui oficial.",
             "Master și Grandmaster folosesc același cuvânt în ambele locuri."
           ]
         }
@@ -287,7 +287,7 @@ export const codex: TextBag["codex"] = {
           "heading": "Opririle",
           "paragraphs": [
             "O înfrângere la 100 Rating Points rămâne la 100. O victorie la 3.000 rămâne la 3.000. Pragul lui Recruit pe scară este scris 0, dar numărul stocat nu folosește niciodată spațiul de sub 100.",
-            "1.949 este Sovereign. 1.950 este A.C.E. Legend. Nu există un semn intermediar."
+            "1.949 este Sovereign. 1.950 este A.C.E Legend. Nu există un semn intermediar."
           ]
         },
         {
@@ -334,7 +334,7 @@ export const codex: TextBag["codex"] = {
           "heading": "Ce nu face biroul",
           "paragraphs": [
             "FIND MATCH nu caută adversari. Nu modifică Rating Points. Rangul unui cont este tot numărul stocat, citit de scara din acest codex.",
-            "Nu există o coadă de top separată deasupra lui Legend. A.C.E. Legend este ultimul semn și se deschide la 1.950 Rating Points."
+            "Nu există o coadă de top separată deasupra lui Legend. A.C.E Legend este ultimul semn și se deschide la 1.950 Rating Points."
           ]
         }
       ]

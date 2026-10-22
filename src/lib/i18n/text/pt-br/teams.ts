@@ -18,7 +18,7 @@ export const teams: TextBag["teams"] = {
     "yes": "Sim, cinco jogadores",
     "no": "Não, deixar as vagas abertas",
     "seatsOpen": "As cinco vagas continuam abertas. Nada foi salvo.",
-    "connectSteam": "Conecte a Steam primeiro. O botão volta para esta página. A A.C.E. nunca pede a senha da Steam.",
+    "connectSteam": "Conecte a Steam primeiro. O botão volta para esta página. A A.C.E nunca pede a senha da Steam.",
     "alreadyMember": "{name} já faz parte de {team}. Este formulário não cria um segundo clã.",
     "thisAccount": "Esta conta",
     "acceptTerms": "Aceite os termos antes de salvar um clã.",
@@ -26,7 +26,7 @@ export const teams: TextBag["teams"] = {
     "clanName": "Nome do clã",
     "captainSeat": "Vaga 1, capitão: {name}",
     "signedInSteam": "Conta Steam conectada",
-    "seatLabel": "SteamID ou ID da conta A.C.E. da vaga {seat}",
+    "seatLabel": "SteamID ou ID da conta A.C.E da vaga {seat}",
     "submit": "Salvar o clã de cinco jogadores",
     "saved": "O nome do clã foi salvo e quatro convites estão pendentes. Esses jogadores não estão no elenco até aceitarem. Isto não é uma vaga na chave de 100 equipes. Nada foi cobrado."
   },
@@ -42,7 +42,7 @@ export const teams: TextBag["teams"] = {
       "email": "Nenhum e-mail é enviado. Os recibos de plano ficam neste site.",
       "charge": "O Premium custa $7 por mês. Em breve: ainda não há pagamento, então nada é cobrado.",
       "board": "Um clã salvo é um registro de elenco. Ele não é colocado na chave de 100 equipes. Essa chave continua mostrando 0 inscritas até uma temporada abrir.",
-      "steam": "O login usa o Steam OpenID oficial. A A.C.E. nunca pede a senha da Steam. A partir desta página, a Steam retorna para cá.",
+      "steam": "O login usa o Steam OpenID oficial. A A.C.E nunca pede a senha da Steam. A partir desta página, a Steam retorna para cá.",
       "roster": "A vaga 1 é o capitão conectado. As vagas 2 a 5 já precisam ter contas A.C.E. Os convites ficam pendentes até cada jogador aceitar.",
       "badge": "Os emblemas de vaga viram verificações reais do A.C.E Shield quando o anti-cheat for lançado.",
       "support": "Abra Suporte ou Contato neste site. Uma solicitação de suporte não abre um chamado, e o texto digitado em Contato não é entregue.",
@@ -63,11 +63,11 @@ export const teams: TextBag["teams"] = {
   },
   "tournaments": {
     "meta": {
-      "title": "Campeonato A.C.E. — Mata-mata de elite com 100 equipes",
+      "title": "Campeonato A.C.E — Mata-mata de elite com 100 equipes",
       "description": "O mata-mata de 100 equipes. Clique em um clã para abrir o elenco e depois cada perfil de jogador. As inscrições abrem em breve."
     },
     "intro": {
-      "title": "CAMPEONATO A.C.E. — MATA-MATA DE ELITE COM 100 EQUIPES",
+      "title": "CAMPEONATO A.C.E — MATA-MATA DE ELITE COM 100 EQUIPES",
       "lede": "O campo publicado é um mata-mata com 100 equipes. O gráfico abaixo é esse layout. Clicar em um clã abre a gaveta do elenco. Inscrições: 0 de 100. Nenhum prêmio em dinheiro é anunciado ou financiado.",
       "formatValue": "Matriz de chave com 100 equipes",
       "briefTitle": "Briefing de operações com 100 equipes",
@@ -110,7 +110,7 @@ export const teams: TextBag["teams"] = {
       "count": "Clã {index} de {total}",
       "next": "Próximo clã",
       "close": "Fechar perfil",
-      "disclosure": "Setups e inventários aparecem aqui quando os jogadores decidirem compartilhá-los. A A.C.E. não coleta dados de hardware."
+      "disclosure": "Setups e inventários aparecem aqui quando os jogadores decidirem compartilhá-los. A A.C.E não coleta dados de hardware."
     },
     "player": {
       "level": "NÍV. {level} · RP {rating}",
@@ -140,14 +140,14 @@ export const teams: TextBag["teams"] = {
     "monitor": "Taxa de atualização · não compartilhada",
     "headset": "Não compartilhado"
   },
-  "profileDisclosure": "A A.C.E. não armazena inventários de hardware e não executa um cliente anti-cheat. Os gráficos de tendência de desempenho e a matriz de combate exigem uma sessão A.C.E. Plus ou Premium. Um link de perfil Steam digitado nesta página não é salvo e não é um identificador oficial.",
+  "profileDisclosure": "A A.C.E não armazena inventários de hardware e não executa um cliente anti-cheat. Os gráficos de tendência de desempenho e a matriz de combate exigem uma sessão A.C.E Plus ou Premium. Um link de perfil Steam digitado nesta página não é salvo e não é um identificador oficial.",
   "errors": {
     "signInRequired": "É necessário fazer login.",
     "nameLength": "O nome da equipe deve ter entre 2 e 32 caracteres.",
     "alreadyCaptain": "Esta conta já é capitã de uma equipe.",
     "nameTaken": "Já existe uma equipe com esse nome.",
     "idRequired": "É necessário um SteamID ou um ID de conta A.C.E.",
-    "noAccountForToken": "Não existe conta A.C.E. para esse SteamID ou ID de conta.",
+    "noAccountForToken": "Não existe conta A.C.E para esse SteamID ou ID de conta.",
     "clanNeedsFour": "Um clã de cinco jogadores precisa do capitão conectado e de mais quatro SteamIDs.",
     "seatNeedsId": "Cada uma das quatro vagas precisa de um SteamID ou de um ID de conta A.C.E.",
     "seatsDistinct": "Cada vaga precisa de um jogador diferente.",
@@ -157,7 +157,7 @@ export const teams: TextBag["teams"] = {
     "captainOnly": "Somente o capitão designado pode enviar convites.",
     "rosterLimit": "Um elenco de CS2 tem cinco jogadores, incluindo o capitão.",
     "alreadyOnRoster": "Esse jogador já está no elenco.",
-    "noAccountForId": "Não existe conta A.C.E. para esse ID.",
+    "noAccountForId": "Não existe conta A.C.E para esse ID.",
     "inviteNotFound": "Convite não encontrado.",
     "inviteNotPending": "Este convite não está mais pendente.",
     "rosterFull": "O elenco já está completo.",

@@ -3,7 +3,7 @@ import type { TextBag } from "../types";
 export const codex: TextBag["codex"] = {
   "meta": {
     "title": "कैलिब्रेशन कोडेक्स",
-    "description": "A.C.E. रैंक की व्याख्या। हर सवाल Rating Points और उस रैंक के नियमों पर पूरा जवाब खोलता है। कोडेक्स कोई मैच दर्ज नहीं करता।",
+    "description": "A.C.E रैंक की व्याख्या। हर सवाल Rating Points और उस रैंक के नियमों पर पूरा जवाब खोलता है। कोडेक्स कोई मैच दर्ज नहीं करता।",
     "articleTitle": "{title} — कैलिब्रेशन कोडेक्स"
   },
   "groups": {
@@ -31,7 +31,7 @@ export const codex: TextBag["codex"] = {
     "searchLabel": "कोडेक्स में खोजें",
     "searchPlaceholder": "1950, Recruit या ड्रॉ आज़माएँ",
     "empty": "कोई प्रविष्टि इस खोज से मेल नहीं खाती।",
-    "columnLabel": "A.C.E. कॉलम {n}",
+    "columnLabel": "A.C.E कॉलम {n}",
     "pagerLabel": "कोडेक्स पेज",
     "first": "पहला",
     "previous": "पिछला",
@@ -40,7 +40,7 @@ export const codex: TextBag["codex"] = {
     "pageOf": "पेज {n} / {m}"
   },
   "article": {
-    "breadcrumb": "A.C.E. · कैलिब्रेशन कोडेक्स",
+    "breadcrumb": "A.C.E · कैलिब्रेशन कोडेक्स",
     "status": "यह पेज लिखित सीढ़ी समझाता है। यह कोई मैच दर्ज नहीं करता और संग्रहीत रेटिंग नहीं बदलता।",
     "emblemAlt": "{name} प्रतीक, रैंक {level}",
     "emblemCaption": "रैंक {level} · {name} · {crystal}",
@@ -63,7 +63,7 @@ export const codex: TextBag["codex"] = {
     "turnLabel": "कोडेक्स में आगे बढ़ें",
     "previous": "पिछला",
     "next": "अगला",
-    "alsoIn": "A.C.E. में और भी",
+    "alsoIn": "A.C.E में और भी",
     "backToBoard": "रैंक बोर्ड पर वापस"
   },
   "rankArticle": {
@@ -124,20 +124,20 @@ export const codex: TextBag["codex"] = {
       "detail": "बैंड 1,800 से 1,949 तक है। यह 150 पॉइंट है, 100 नहीं। 1,949 अब भी Sovereign है। Legend 1,950 पर खुलता है।"
     },
     "rank-10-a-c-e-legend": {
-      "stance": "A.C.E. Legend आखिरी निशान है। क्रिस्टल लेबल ACE ELITE है। आधिकारिक नाम A.C.E. Legend है।",
+      "stance": "A.C.E Legend आखिरी निशान है। क्रिस्टल लेबल ACE ELITE है। आधिकारिक नाम A.C.E Legend है।",
       "detail": "बैंड 1,950 पर खुलता है और इंजन की छत 3,000 पर खत्म होता है। कोई ग्यारहवीं रैंक नहीं है। संग्रहीत रेटिंग 3,000 से ऊपर नहीं जा सकती।"
     }
   },
   "articles": {
     "what-a-rank-is": {
-      "title": "A.C.E. रैंक क्या है",
-      "lede": "रैंक वह निशान है जिसमें आपके संग्रहीत Rating Points आते हैं। दस निशान पूरी सीढ़ी कवर करते हैं, Recruit से A.C.E. Legend तक।",
+      "title": "A.C.E रैंक क्या है",
+      "lede": "रैंक वह निशान है जिसमें आपके संग्रहीत Rating Points आते हैं। दस निशान पूरी सीढ़ी कवर करते हैं, Recruit से A.C.E Legend तक।",
       "sections": [
         {
           "heading": "एक संख्या, एक निशान",
           "paragraphs": [
             "अकाउंट एक प्रतियोगी रेटिंग संग्रहीत करता है। सीढ़ी वह संख्या पढ़ती है और वह सबसे ऊँची रैंक लौटाती है जिसकी निचली सीमा संख्या छू चुकी है। आपके पास एक साथ दो रैंक नहीं होतीं।",
-            "Recruit रैंक 1 है। A.C.E. Legend रैंक 10 है। आधिकारिक नाम सीढ़ी का नाम है। प्रतीक पर छोटा शब्द उसी रैंक का क्रिस्टल लेबल है।",
+            "Recruit रैंक 1 है। A.C.E Legend रैंक 10 है। आधिकारिक नाम सीढ़ी का नाम है। प्रतीक पर छोटा शब्द उसी रैंक का क्रिस्टल लेबल है।",
             "यह कोडेक्स लिखित सीढ़ी समझाता है। यह कोई मैच दर्ज नहीं करता और संग्रहीत रेटिंग नहीं बदलता।"
           ]
         },
@@ -145,7 +145,7 @@ export const codex: TextBag["codex"] = {
           "heading": "निचली सीमाएँ कैसे बैठती हैं",
           "paragraphs": [
             "Recruit सीढ़ी की शुरुआत कवर करता है। Operative 1,100 पर खुलता है। Vanguard से Grandmaster तक, हर नई निचली सीमा 100 पॉइंट ऊँची है: 1,200, 1,300, 1,400, 1,500, 1,600, फिर 1,700।",
-            "Sovereign 1,800 पर खुलता है और अकाउंट को 1,949 तक रखता है। A.C.E. Legend 1,950 पर खुलता है। इंजन की छत 3,000 है, इसलिए Legend सबसे लंबा बैंड है।"
+            "Sovereign 1,800 पर खुलता है और अकाउंट को 1,949 तक रखता है। A.C.E Legend 1,950 पर खुलता है। इंजन की छत 3,000 है, इसलिए Legend सबसे लंबा बैंड है।"
           ]
         },
         {
@@ -164,14 +164,14 @@ export const codex: TextBag["codex"] = {
         {
           "heading": "दोनों क्यों हैं",
           "paragraphs": [
-            "इंजन और प्रोफ़ाइल आधिकारिक नाम उपयोग करते हैं: Recruit, Operative, Vanguard, Specialist, Veteran, Elite, Master, Grandmaster, Sovereign, A.C.E. Legend।",
+            "इंजन और प्रोफ़ाइल आधिकारिक नाम उपयोग करते हैं: Recruit, Operative, Vanguard, Specialist, Veteran, Elite, Master, Grandmaster, Sovereign, A.C.E Legend।",
             "प्रतीक पर क्रिस्टल लेबल भी होता है: IRON, BRONZE, SILVER, GOLD, PLATINUM, DIAMOND, MASTER, GRANDMASTER, IMMORTAL, ACE ELITE। वह लेबल कलाकृति है। यह ग्यारहवीं रैंक नहीं बनाता और दूसरी संख्या संग्रहीत नहीं करता।"
           ]
         },
         {
           "heading": "कहाँ अलग होते हैं",
           "paragraphs": [
-            "Specialist का क्रिस्टल लेबल GOLD है। Veteran का PLATINUM। Elite का DIAMOND। Sovereign का IMMORTAL। A.C.E. Legend का ACE ELITE। हर मामले में निचली सीमा आधिकारिक नाम की ही रहती है।",
+            "Specialist का क्रिस्टल लेबल GOLD है। Veteran का PLATINUM। Elite का DIAMOND। Sovereign का IMMORTAL। A.C.E Legend का ACE ELITE। हर मामले में निचली सीमा आधिकारिक नाम की ही रहती है।",
             "Master और Grandmaster दोनों जगह एक ही शब्द उपयोग करते हैं।"
           ]
         }
@@ -287,7 +287,7 @@ export const codex: TextBag["codex"] = {
           "heading": "रुकावटें",
           "paragraphs": [
             "100 Rating Points पर हार 100 पर ही रहती है। 3,000 पर जीत 3,000 पर ही रहती है। Recruit की सीढ़ी निचली सीमा 0 लिखी है, लेकिन संग्रहीत संख्या 100 के नीचे का अंतर कभी उपयोग नहीं करती।",
-            "1,949 Sovereign है। 1,950 A.C.E. Legend है। बीच में कोई निशान नहीं है।"
+            "1,949 Sovereign है। 1,950 A.C.E Legend है। बीच में कोई निशान नहीं है।"
           ]
         },
         {
@@ -334,7 +334,7 @@ export const codex: TextBag["codex"] = {
           "heading": "डेस्क क्या नहीं करता",
           "paragraphs": [
             "FIND MATCH विरोधियों को नहीं खोजता। यह Rating Points नहीं बदलता। अकाउंट की रैंक अब भी संग्रहीत संख्या है, जिसे इस कोडेक्स की सीढ़ी पढ़ती है।",
-            "Legend के ऊपर कोई अलग शीर्ष कतार नहीं है। A.C.E. Legend आखिरी निशान है, और यह 1,950 Rating Points पर खुलता है।"
+            "Legend के ऊपर कोई अलग शीर्ष कतार नहीं है। A.C.E Legend आखिरी निशान है, और यह 1,950 Rating Points पर खुलता है।"
           ]
         }
       ]
@@ -440,12 +440,12 @@ export const codex: TextBag["codex"] = {
     },
     "how-a-roster-is-assembled": {
       "title": "रोस्टर कैसे बनता है",
-      "lede": "कप्तान ऐसे खिलाड़ी को आमंत्रित करता है जिसके पास पहले से A.C.E. अकाउंट है। कोई सार्वजनिक शेयर लिंक नहीं है, और Steam पासवर्ड कभी नहीं माँगा जाता।",
+      "lede": "कप्तान ऐसे खिलाड़ी को आमंत्रित करता है जिसके पास पहले से A.C.E अकाउंट है। कोई सार्वजनिक शेयर लिंक नहीं है, और Steam पासवर्ड कभी नहीं माँगा जाता।",
       "sections": [
         {
           "heading": "जो निमंत्रण मौजूद है",
           "paragraphs": [
-            "टीम पेज पर, साइन-इन कप्तान SteamID64 या A.C.E. अकाउंट ID पेस्ट करता है। अकाउंट पहले से Steam OpenID से लिंक होना चाहिए। डेटाबेस स्वीकार करने पर सर्वर लंबित निमंत्रण लिखता है।",
+            "टीम पेज पर, साइन-इन कप्तान SteamID64 या A.C.E अकाउंट ID पेस्ट करता है। अकाउंट पहले से Steam OpenID से लिंक होना चाहिए। डेटाबेस स्वीकार करने पर सर्वर लंबित निमंत्रण लिखता है।",
             "रोस्टर में कप्तान सहित पाँच खिलाड़ी होते हैं। कप्तान अपना अकाउंट आमंत्रित नहीं कर सकता। जो खिलाड़ी पहले से रोस्टर में है, उसे मना किया जाता है। अगर डेटाबेस बंद है, तो निमंत्रण विफल होता है और कोई निमंत्रण संग्रहीत नहीं होता।"
           ]
         },

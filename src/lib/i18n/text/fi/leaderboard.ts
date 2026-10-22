@@ -3,12 +3,12 @@ import type { TextBag } from "../types";
 export const leaderboard: TextBag["leaderboard"] = {
   "meta": {
     "title": "Tulostaulu",
-    "description": "A.C.E.:n kilpailutaulu. Tallennetut Steam-tilit näkyvät ensin. Tyhjät paikat pysyvät esittelyriveinä."
+    "description": "A.C.E:n kilpailutaulu. Tallennetut Steam-tilit näkyvät ensin. Tyhjät paikat pysyvät esittelyriveinä."
   },
   "hero": {
     "kicker": "TULOSTAULU",
     "title": "Kilpailutaulu",
-    "note": "Esittelypaikat täyttävät taulun, kunnes pelaajat yhdistävät Steamin ja ansaitsevat luokituksen. Heidän maansa ja esitelty aseensa ovat havainnollisia. Aserenderöinnit ovat alkuperäistä A.C.E.-studiotaidetta, eivät Valven skinejä. Tappoja ei vielä seurata, joten esitelty ase ei ole top-frag-tilasto."
+    "note": "Esittelypaikat täyttävät taulun, kunnes pelaajat yhdistävät Steamin ja ansaitsevat luokituksen. Heidän maansa ja esitelty aseensa ovat havainnollisia. Aserenderöinnit ovat alkuperäistä A.C.E-studiotaidetta, eivät Valven skinejä. Tappoja ei vielä seurata, joten esitelty ase ei ole top-frag-tilasto."
   },
   "facts": {
     "seats": "Paikat",

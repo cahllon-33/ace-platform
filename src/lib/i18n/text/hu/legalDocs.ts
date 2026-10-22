@@ -5,7 +5,7 @@ export const legalDocs: TextBag["legalDocs"] = {
     "effective": "Hatálybalépés napja: {date}",
     "contact": "Kapcsolat: support@ace-platform.gg",
     "definitionsTitle": "Fogalmak",
-    "definitions": "E Feltételekben az „A.C.E.”, „mi” az A.C.E-t jelenti. A „Webhely” az ace-platform.gg. A „Fiók” a Steam-bejelentkezéssel létrehozott A.C.E.-profil. A „Csomag” a Free, Plus vagy Premium. A „Szabálykönyv” a /rules oldalon található versenyszabályzat. Az „Admin” az a munkatárs, aki egy eseményen alkalmazza a Szabálykönyvet.",
+    "definitions": "E Feltételekben az „A.C.E”, „mi” az A.C.E-t jelenti. A „Webhely” az ace-platform.gg. A „Fiók” a Steam-bejelentkezéssel létrehozott A.C.E-profil. A „Csomag” a Free, Plus vagy Premium. A „Szabálykönyv” a /rules oldalon található versenyszabályzat. Az „Admin” az a munkatárs, aki egy eseményen alkalmazza a Szabálykönyvet.",
     "suspensionTitle": "Fiókkorlátozás és felfüggesztés",
     "suspension": "Figyelmeztethetjük, korlátozhatjuk, felfüggeszthetjük vagy megszüntethetjük azt a Fiókot, amely megsérti e Feltételeket vagy a Szabálykönyvet, például csalás, fiókmegosztás, kitiltás kijátszása, zaklatás vagy visszaélés miatt. Fizetős csomag soha nem védi meg a Fiókot a korlátozástól.",
     "disputesTitle": "Szabálydöntések és fellebbezés",
@@ -21,22 +21,22 @@ export const legalDocs: TextBag["legalDocs"] = {
   "terms": {
     "meta": {
       "title": "Felhasználási feltételek",
-      "description": "Az A.C.E. weboldal felhasználási feltételei ehhez a Counter-Strike 2 versenyoldalhoz. A ranked, a fizetések és a csalásellenes rendszer nem élnek."
+      "description": "Az A.C.E weboldal felhasználási feltételei ehhez a Counter-Strike 2 versenyoldalhoz. A ranked, a fizetések és a csalásellenes rendszer nem élnek."
     },
     "kicker": "ACE-LEGAL / FELHASZNÁLÁSI FELTÉTELEK",
     "title": "Felhasználási feltételek",
-    "lede": "E Feltételek szabályozzák az A.C.E. webhely és az A.C.E. Fiókod használatát. A /rules oldalon található Szabálykönyv, az Adatvédelmi irányelvek, a Cookie-szabályzat és a Premium feltételek e Feltételek részét képezik.",
+    "lede": "E Feltételek szabályozzák az A.C.E webhely és az A.C.E. Fiókod használatát. A /rules oldalon található Szabálykönyv, az Adatvédelmi irányelvek, a Cookie-szabályzat és a Premium feltételek e Feltételek részét képezik.",
     "sections": {
       "operator": {
         "title": "1. Üzemeltető és függetlenség",
         "paragraphs": [
-          "A szolgáltatást az A.C.E. üzemelteti. Az oldal használatával elfogadod ezeket a feltételeket, az Adatvédelmi szabályzatot, a Sütiszabályzatot és a versenyszabálykönyvet."
+          "A szolgáltatást az A.C.E üzemelteti. Az oldal használatával elfogadod ezeket a feltételeket, az Adatvédelmi szabályzatot, a Sütiszabályzatot és a versenyszabálykönyvet."
         ]
       },
       "eligibility": {
         "title": "2. Jogosultság és fiókok",
         "paragraphs": [
-          "Fiók csak a hivatalos Steam OpenID bejelentkezéssel hozható létre, személyenként egy. Az A.C.E. soha nem kéri a Steam-jelszavadat."
+          "Fiók csak a hivatalos Steam OpenID bejelentkezéssel hozható létre, személyenként egy. Az A.C.E soha nem kéri a Steam-jelszavadat."
         ]
       },
       "notActive": {
@@ -60,20 +60,20 @@ export const legalDocs: TextBag["legalDocs"] = {
       "liability": {
         "title": "6. Felelősségkorlátozás",
         "paragraphs": [
-          "A jogszabályok által megengedett mértékben az A.C.E. nem felel elvesztett rangért, soha nem valós tárgyként létezett elvesztett kozmetikumokért, vagy harmadik fél Steam / CS2 kimaradásaiért. Az országod kötelező fogyasztói jogai nincsenek kizárva, ahol azokról nem lehet lemondani."
+          "A jogszabályok által megengedett mértékben az A.C.E nem felel elvesztett rangért, soha nem valós tárgyként létezett elvesztett kozmetikumokért, vagy harmadik fél Steam / CS2 kimaradásaiért. Az országod kötelező fogyasztói jogai nincsenek kizárva, ahol azokról nem lehet lemondani."
         ]
       },
       "copyright": {
         "title": "7. Az oldal eredeti anyagainak szerzői joga",
         "paragraphs": [
-          "Az ehhez a weboldalhoz készült eredeti szöveg, oldalelrendezés, emblémák és grafikák az A.C.E. tulajdonát képezik. Írásos engedély nélkül nem másolhatod, teheted közzé újra vagy gyűjtheted ki ezt az eredeti anyagot más termékhez. Ahol a jog megengedi, az A.C.E. érvényesítheti ezt a jogot, akár igénnyel is. Ez a közlemény nem indít pert, nem állapít meg kártérítést és nem garantál bírósági eredményt.",
-          "A Counter-Strike 2, a Steam és a Dust II, Mirage, Inferno, Nuke, Ancient, Anubis és Train pályanevek a Valve tulajdonai. Az A.C.E. nem tart rájuk igényt. Az oldal megnyitása nem szüntet meg jogot és nem köt szerződést."
+          "Az ehhez a weboldalhoz készült eredeti szöveg, oldalelrendezés, emblémák és grafikák az A.C.E tulajdonát képezik. Írásos engedély nélkül nem másolhatod, teheted közzé újra vagy gyűjtheted ki ezt az eredeti anyagot más termékhez. Ahol a jog megengedi, az A.C.E érvényesítheti ezt a jogot, akár igénnyel is. Ez a közlemény nem indít pert, nem állapít meg kártérítést és nem garantál bírósági eredményt.",
+          "A Counter-Strike 2, a Steam és a Dust II, Mirage, Inferno, Nuke, Ancient, Anubis és Train pályanevek a Valve tulajdonai. Az A.C.E nem tart rájuk igényt. Az oldal megnyitása nem szüntet meg jogot és nem köt szerződést."
         ]
       },
       "contact": {
         "title": "8. Kapcsolat",
         "paragraphs": [
-          "support@ace-platform.gg — A.C.E."
+          "support@ace-platform.gg — A.C.E"
         ]
       }
     }
@@ -81,11 +81,11 @@ export const legalDocs: TextBag["legalDocs"] = {
   "privacy": {
     "meta": {
       "title": "Adatvédelmi szabályzat",
-      "description": "Az A.C.E. adatvédelmi szabályzata: szigorúan szükséges adatok, csak Steam OpenID, nincs Steam-jelszó, nincs viselkedési adatok eladása."
+      "description": "Az A.C.E adatvédelmi szabályzata: szigorúan szükséges adatok, csak Steam OpenID, nincs Steam-jelszó, nincs viselkedési adatok eladása."
     },
     "kicker": "ACE-LEGAL / ADATVÉDELMI IRÁNYELVEK",
     "title": "Adatvédelmi szabályzat",
-    "lede": "Ez az Adatvédelmi irányelv elmagyarázza, milyen személyes adatokat tárol az A.C.E., amikor ezt a webhelyet használod, miért és meddig. Ha egy fordítás eltér az angol szövegtől, az angol szöveg az irányadó.",
+    "lede": "Ez az Adatvédelmi irányelv elmagyarázza, milyen személyes adatokat tárol az A.C.E, amikor ezt a webhelyet használod, miért és meddig. Ha egy fordítás eltér az angol szövegtől, az angol szöveg az irányadó.",
     "strictNecessity": {
       "title": "A szigorú szükségesség elve",
       "intro": "A versenyjátékos azonosításához és a saját szolgáltatásunkon elkövetett nyilvánvaló csalás megállításához szükséges minimális fiókadatot gyűjtjük. Nem gyűjtünk szükségtelen naplókat, nem gyűjtünk ki privát Steam-készleteket, és nem adunk el harmadik féltől származó viselkedési adatokat.",
@@ -93,14 +93,14 @@ export const legalDocs: TextBag["legalDocs"] = {
       "stored": [
         {
           "label": "Ellenőrzött 64 bites SteamID",
-          "body": "amelyet a Steam hivatalos OpenID-állítása ad vissza, és amelyet a szerver ellenőriz az A.C.E.-fiók létrehozása vagy frissítése előtt."
+          "body": "amelyet a Steam hivatalos OpenID-állítása ad vissza, és amelyet a szerver ellenőriz az A.C.E-fiók létrehozása vagy frissítése előtt."
         },
         {
           "label": "Nyilvános Steam megjelenítendő név",
           "body": "ha Steam Web API kulcs be van állítva. Ez egy personanév, nem e-mail-postafiók."
         },
         {
-          "label": "A.C.E. fiókrekordok",
+          "label": "A.C.E fiókrekordok",
           "body": "például rangszint, értékelési pontok, győzelmek/vereségek, csapattagság és munkamenet-tokenek hash-ei."
         }
       ],
@@ -121,14 +121,14 @@ export const legalDocs: TextBag["legalDocs"] = {
     "steamBoundary": {
       "title": "Harmadik féltől származó beágyazások és a Steam OpenID határa",
       "callback": {
-        "before": "A Steam-bejelentkezés elhagyja az A.C.E.-t, a Steamen hitelesít, majd visszatér ide:",
-        "after": ". A szerver a munkamenet létrehozása előtt ellenőrzi az OpenID-állítást (beleértve az állított identitást és a Steam aláírt paramétereit). A Steam által tárolt adatokra a Steam adatvédelmi szabályzata vonatkozik. Az A.C.E. csak az ellenőrzött SteamID-t és a fiók működtetéséhez szükséges nyilvános persona mezőket tárolja."
+        "before": "A Steam-bejelentkezés elhagyja az A.C.E-t, a Steamen hitelesít, majd visszatér ide:",
+        "after": ". A szerver a munkamenet létrehozása előtt ellenőrzi az OpenID-állítást (beleértve az állított identitást és a Steam aláírt paramétereit). A Steam által tárolt adatokra a Steam adatvédelmi szabályzata vonatkozik. Az A.C.E csak az ellenőrzött SteamID-t és a fiók működtetéséhez szükséges nyilvános persona mezőket tárolja."
       },
-      "footerLinks": "A lábléc külső hálózati ikonjai nyilvános weboldalakra mutató könyvtári linkek. Nem hivatalos A.C.E.-fiókok, és nem ágyaznak be követő widgeteket."
+      "footerLinks": "A lábléc külső hálózati ikonjai nyilvános weboldalakra mutató könyvtári linkek. Nem hivatalos A.C.E-fiókok, és nem ágyaznak be követő widgeteket."
     },
     "rights": {
       "title": "Jogaid",
-      "before": "Ha olyan régióban vagy, ahol személyes adatokkal kapcsolatos jogok vannak, kérheted A.C.E.-fiókadataid hozzáférését, helyesbítését vagy törlését e-mailben ide:",
+      "before": "Ha olyan régióban vagy, ahol személyes adatokkal kapcsolatos jogok vannak, kérheted A.C.E-fiókadataid hozzáférését, helyesbítését vagy törlését e-mailben ide:",
       "after": ". A webhelyfiók törlése nem változtat a Valve által hozott Steam- vagy VAC-döntéseken."
     },
     "cookies": {
@@ -145,20 +145,20 @@ export const legalDocs: TextBag["legalDocs"] = {
   "cookiePolicy": {
     "meta": {
       "title": "Sütiszabályzat",
-      "description": "Az A.C.E. süti- és telemetria-adatvédelmi auditja. Csak alapvető munkamenet-sütik, hacsak nem választod a fenntartott opcionális kategóriákat."
+      "description": "Az A.C.E süti- és telemetria-adatvédelmi auditja. Csak alapvető munkamenet-sütik, hacsak nem választod a fenntartott opcionális kategóriákat."
     },
     "kicker": "ACE-LEGAL / COOKIE-SZABÁLYZAT",
     "title": "Sütiszabályzat",
     "lede": "Ez a Cookie-szabályzat felsorolja a webhely által ténylegesen beállított sütiket, a későbbre fenntartott kategóriákat és azt, amit nem gyűjtünk.",
     "audit": {
       "title": "Követőkódok ezen a webhelyen",
-      "body": "Az A.C.E. ezen a nyilvános oldalon nem futtat hirdetési pixeleket, Google Analyticset, Meta Pixelt, ujjlenyomat-SDK-kat vagy más harmadik féltől származó viselkedéskövetőket. A hozzájárulási sáv opcionális „Analitikai követők” és „Marketingkövetők” elemei csak kategóriák. Bejelölésük ma nem tölt be szkriptet. Ha később követő kerül hozzáadásra, először a tárolt beállítást olvassa, és kikapcsolva marad, hacsak nem járultál hozzá."
+      "body": "Az A.C.E ezen a nyilvános oldalon nem futtat hirdetési pixeleket, Google Analyticset, Meta Pixelt, ujjlenyomat-SDK-kat vagy más harmadik féltől származó viselkedéskövetőket. A hozzájárulási sáv opcionális „Analitikai követők” és „Marketingkövetők” elemei csak kategóriák. Bejelölésük ma nem tölt be szkriptet. Ha később követő kerül hozzáadásra, először a tárolt beállítást olvassa, és kikapcsolva marad, hacsak nem járultál hozzá."
     },
     "essential": {
       "title": "Alapvető sütik [Kötelező / Zárolt]",
       "session": {
         "label": "Munkamenet-süti",
-        "body": "— csak ellenőrzött Steam OpenID visszahívás után kerül beállításra. HttpOnly, az oldal JavaScriptje nem olvashatja, arra szolgál, hogy bejelentkezve maradj az A.C.E.-n."
+        "body": "— csak ellenőrzött Steam OpenID visszahívás után kerül beállításra. HttpOnly, az oldal JavaScriptje nem olvashatja, arra szolgál, hogy bejelentkezve maradj az A.C.E-n."
       },
       "necessity": "Ezek a sütik szigorúan szükségesek egy hitelesített fiók működtetéséhez. Nem hirdetési azonosítók."
     },
@@ -169,7 +169,7 @@ export const legalDocs: TextBag["legalDocs"] = {
     },
     "marketing": {
       "title": "Marketingkövetők [Opcionális]",
-      "body": "Fenntartva. Az A.C.E. nem ad el, nem ad bérbe és nem közvetít viselkedési profilokat. Ezen az oldalon nincs marketing tagkezelő."
+      "body": "Fenntartva. Az A.C.E nem ad el, nem ad bérbe és nem közvetít viselkedési profilokat. Ezen az oldalon nincs marketing tagkezelő."
     },
     "change": {
       "title": "Hogyan módosíthatod a választásodat",

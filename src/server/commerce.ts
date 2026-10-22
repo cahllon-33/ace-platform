@@ -1,5 +1,5 @@
 import { getPrisma } from "@/server/db";
-import { orderAmountMatches, type PaddleEventIn } from "@/lib/paddle";
+import { adjustmentEffect, orderAmountMatches, type PaddleEventIn } from "@/lib/paddle";
 import { paddleApiBase, type PaddleConfig } from "@/server/paddle";
 import { registerTeam } from "@/server/tournaments";
 
@@ -80,4 +80,29 @@ export async function fulfilOrder(e: PaddleEventIn): Promise<string | null> {
     }
   }
   return "order-unknown";
+}
+
+/**
+ * R49b: approved full refund or chargeback of a one-time order → revoke what it granted and record it on the order.
+ * Partial refunds and pending adjustments are recorded only. Returns null when the event is not about one of our orders.
+ */
+export async function revokeForAdjustment(e: PaddleEventIn): Promise<string | null> {
+  const effect = adjustmentEffect(e);
+  const txn = e.data.transaction_id;
+  if (!effect || !txn) return null;
+  const prisma = getPrisma();
+  const order = await prisma.paddleOrder.findUnique({ where: { id: txn } });
+  if (!order) return null;
+  if (effect === "pending") return "adjustment-pending";
+  if (effect === "partial") {
+    await prisma.paddleOrder.update({ where: { id: order.id }, data: { status: order.status === "completed" ? "partial-refund" : order.status } });
+    return "adjustment-partial";
+  }
+  if (order.refundedAt) return "refund-duplicate";
+  const status = e.data.action === "chargeback" ? "chargeback" : "refunded";
+  const ops = [prisma.paddleOrder.update({ where: { id: order.id }, data: { status, refundedAt: new Date() } })];
+  if (order.kind === "COSMETIC") await prisma.$transaction([...ops, prisma.cosmeticOwnership.deleteMany({ where: { orderId: order.id } })]);
+  else if (order.kind === "TOURNAMENT_ENTRY" && order.teamId) await prisma.$transaction([...ops, prisma.tournamentEntry.deleteMany({ where: { tournamentId: order.refId, teamId: order.teamId } })]);
+  else await prisma.$transaction(ops);
+  return `revoked:${order.kind}:${status}`;
 }

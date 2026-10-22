@@ -25,7 +25,7 @@ export const UI_RO: Ui = {
     "company": "Companie",
     "legal": "Informații legale",
     "tagline": "Clasamente competitive Counter-Strike 2, construite în jurul jocului corect.",
-    "follow": "Urmărește A.C.E.",
+    "follow": "Urmărește A.C.E",
     "rights": "Toate drepturile rezervate.",
     "legalLine": "© 2026 A.C.E. Platformă independentă, neafiliată cu Valve. Counter-Strike și CS2 sunt mărci comerciale ale Valve Corporation."
   },
@@ -110,7 +110,7 @@ export const UI_RO: Ui = {
     }
   },
   "rules": {
-    "kicker": "Regulamentul competițiilor A.C.E.",
+    "kicker": "Regulamentul competițiilor A.C.E",
     "title": "Reguli de competiție",
     "version": "Versiunea {version} · în vigoare din {date}",
     "intro": "Regulile după care se joacă orice competiție A.C.E. Clauzele marcate „Se aplică după lansare” intră în vigoare când sistemul de care depind este lansat.",
@@ -149,7 +149,7 @@ export const UI_RO: Ui = {
   "antiCheat": {
     "kicker": "A.C.E Shield",
     "title": "Anti-cheat",
-    "lede": "A.C.E Shield este sistemul de integritate construit pentru fiecare meci A.C.E.: verificări ale clientului, serverului, meciului și comportamentului care lucrează împreună, cu confidențialitatea pe primul loc.",
+    "lede": "A.C.E Shield este sistemul de integritate construit pentru fiecare meci A.C.E: verificări ale clientului, serverului, meciului și comportamentului care lucrează împreună, cu confidențialitatea pe primul loc.",
     "statusLabel": "Etapa de implementare",
     "pillarsTitle": "Pilonii arhitecturii",
     "pillars": {
@@ -237,7 +237,7 @@ export const UI_RO: Ui = {
     "status": {
       "title": "Starea platformei",
       "steam": "Autentificare cu Steam",
-      "shield": "A.C.E. Shield",
+      "shield": "A.C.E Shield",
       "servers": "Servere competitive",
       "tournaments": "Turnee",
       "billing": "Facturare",
@@ -288,7 +288,7 @@ export const UI_RO: Ui = {
     "chat": {
       "open": "Deschide chatul de asistență",
       "close": "Închide chatul de asistență",
-      "title": "Asistență A.C.E.",
+      "title": "Asistență A.C.E",
       "greeting": "Salut! Sunt asistentul de suport A.C.E. Întreabă-mă despre ranguri, planuri, reguli sau contul tău.",
       "placeholder": "Scrie întrebarea ta…",
       "send": "Trimite",
@@ -316,7 +316,7 @@ export const UI_RO: Ui = {
       "stepsKicker": "Cum funcționează",
       "stepsTitle": "Trei pași până la primul rang",
       "step1t": "Conectează Steam",
-      "step1b": "Autentifică-te cu Steam OpenID. A.C.E. nu vede niciodată parola ta Steam.",
+      "step1b": "Autentifică-te cu Steam OpenID. A.C.E nu vede niciodată parola ta Steam.",
       "step2t": "Calibrează",
       "step2b": "Începi la nivelul 3 cu 1.200 RP. Fiecare meci înregistrat îți modifică RP după reguli publicate.",
       "step3t": "Urcă",
@@ -334,7 +334,7 @@ export const UI_RO: Ui = {
     "profile": {
       "kicker": "JUCĂTOR",
       "notFound": "Jucător negăsit",
-      "notFoundBody": "Niciun cont A.C.E. nu folosește acest Steam ID sau profilul nu este public.",
+      "notFoundBody": "Niciun cont A.C.E nu folosește acest Steam ID sau profilul nu este public.",
       "rating": "Scor",
       "rank": "Rang",
       "record": "Bilanț",
@@ -382,7 +382,7 @@ export const UI_RO: Ui = {
     "nf": {
       "code": "Eroare 404",
       "title": "Această pagină e în afara hărții",
-      "body": "Linkul poate fi vechi sau greșit scris. Orice parte din A.C.E. e la un clic de aici.",
+      "body": "Linkul poate fi vechi sau greșit scris. Orice parte din A.C.E e la un clic de aici.",
       "home": "Înapoi la pagina principală",
       "ranks": "Vezi rangurile"
     },
@@ -401,7 +401,7 @@ export const UI_RO: Ui = {
     "st": {
       "kicker": "Performanță",
       "title": "Statistici jucător",
-      "lede": "Fiecare cifră provine din meciuri A.C.E. înregistrate. Nimic nu e estimat.",
+      "lede": "Fiecare cifră provine din meciuri A.C.E înregistrate. Nimic nu e estimat.",
       "empty": "Niciun meci înregistrat încă. Statisticile apar după primul meci clasat.",
       "winRate": "Rată de victorii",
       "adr": "ADR",
@@ -427,11 +427,11 @@ export const UI_RO: Ui = {
       "none": "—"
     },
     "ab": {
-      "title": "Despre A.C.E.",
+      "title": "Despre A.C.E",
       "lede": "O platformă competitivă Counter-Strike 2 construită în jurul unui tabel public de ranguri și al unor planuri care nu cumpără niciodată avantaj.",
-      "b1": "A.C.E. organizează meciuri clasate, clasamente și turnee CS2. Autentificarea e prin Steam OpenID; nu vedem niciodată parola ta Steam.",
+      "b1": "A.C.E organizează meciuri clasate, clasamente și turnee CS2. Autentificarea e prin Steam OpenID; nu vedem niciodată parola ta Steam.",
       "b2": "Rangul tău se calculează doar din rezultate înregistrate, după reguli publicate. Planurile plătite sunt doar cosmetice și de confort.",
-      "b3": "A.C.E. este o platformă independentă și nu este afiliată cu Valve."
+      "b3": "A.C.E este o platformă independentă și nu este afiliată cu Valve."
     },
     "ss": {
       "title": "Starea serverelor",
@@ -484,7 +484,7 @@ export const UI_RO: Ui = {
     }
   },
   "r46": {
-    "aria": "Ce reprezintă A.C.E.",
+    "aria": "Ce reprezintă A.C.E",
     "fair": "Protecția fair play",
     "fairSub": "Autentificare Steam, reguli publice și raportări ale jucătorilor verificate de admini.",
     "calib": "Calibrare competitivă",
@@ -494,7 +494,7 @@ export const UI_RO: Ui = {
   },
   "r45": {
     "title": "Dincolo de Legend",
-    "lede": "Cinci insigne de prestigiu peste A.C.E. Legend, câte una la fiecare 200 RP între 2.150 și 2.950. Se câștigă doar jucând.",
+    "lede": "Cinci insigne de prestigiu peste A.C.E Legend, câte una la fiecare 200 RP între 2.150 și 2.950. Se câștigă doar jucând.",
     "plus": "Plus · platină",
     "premium": "Premium · foc auriu",
     "fair": "Același RP pentru toți. Pragurile de prestigiu, matchmaking-ul și ratingul sunt identice pe orice plan. Nimic de aici nu se cumpără.",
@@ -530,7 +530,7 @@ export const UI_RO: Ui = {
       "lede": "Cum se câștigă fiecare insignă A.C.E. Insignele sunt doar cosmetice: nu schimbă niciodată matchmakingul, RP-ul sau vreo regulă.",
       "ranks": "Insignele de rang (nivelurile 1–10) îți urmează RP-ul. Toți văd același rang și aceeași culoare fixă de nivel.",
       "prestige": "Insignele de prestigiu sunt cinci obiective pe termen lung peste {elite} RP: una la fiecare 200 RP, de la 2.150 la 2.950.",
-      "free": "Free: insigna rămâne A.C.E. Legend, iar nivelul de prestigiu apare ca reper text. RP-ul nu e niciodată plafonat.",
+      "free": "Free: insigna rămâne A.C.E Legend, iar nivelul de prestigiu apare ca reper text. RP-ul nu e niciodată plafonat.",
       "plus": "Plus: setul de prestigiu din platină.",
       "premium": "Premium: setul de prestigiu auriu animat.",
       "lose": "Dacă scazi sub un prag de prestigiu, insigna urmează RP-ul în jos; când îl atingi din nou, revine.",
@@ -683,5 +683,19 @@ export const UI_RO: Ui = {
     "communityTitle": "Comunitate",
     "communityLede": "Urmărește A.C.E pentru știri despre meciuri, turnee și momente de top.",
     "followOn": "A.C.E pe {network}"
+  },
+  "r49b": {
+    "title": "Inventar Steam",
+    "private": "Inventar privat",
+    "privateBody": "Inventarul Steam al acestui jucător este privat.",
+    "empty": "Niciun obiect CS2 în inventarul public.",
+    "unavailable": "Inventarul Steam nu poate fi încărcat acum.",
+    "hiddenOwner": "Vitrina ta de inventar este ascunsă pe profil.",
+    "hide": "Ascunde vitrina",
+    "show": "Arată vitrina",
+    "priceSource": "Prețuri: cea mai mică ofertă din Piața Comunității Steam, din cache.",
+    "note": "Doar vitrină. A.C.E nu cumpără, nu vinde și nu schimbă niciodată obiecte Steam.",
+    "updated": "Actualizat {date}",
+    "more": "+{n} obiecte în plus"
   }
 };

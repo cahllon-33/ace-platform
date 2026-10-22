@@ -25,7 +25,7 @@ export const UI_DE: Ui = {
     "company": "Unternehmen",
     "legal": "Rechtliches",
     "tagline": "Kompetitive Counter-Strike-2-Ranglisten, gebaut für Fairplay.",
-    "follow": "Folge A.C.E.",
+    "follow": "Folge A.C.E",
     "rights": "Alle Rechte vorbehalten.",
     "legalLine": "© 2026 A.C.E. Unabhängige Plattform, nicht mit Valve verbunden. Counter-Strike und CS2 sind Marken der Valve Corporation."
   },
@@ -58,7 +58,7 @@ export const UI_DE: Ui = {
   "maps": {
     "kicker": "Wettkampf-Mappool",
     "title": "Maps & Übertragung",
-    "lede": "Sieben Maps bilden den A.C.E.-Wettkampfpool. Teams bannen und picken daraus im Map-Veto nach dem Regelwerk. Turnierübertragungen erscheinen auf dem Bildschirm unten.",
+    "lede": "Sieben Maps bilden den A.C.E-Wettkampfpool. Teams bannen und picken daraus im Map-Veto nach dem Regelwerk. Turnierübertragungen erscheinen auf dem Bildschirm unten.",
     "rulebook": "Veto-Regeln lesen",
     "screen": "Übertragungsbildschirm",
     "offAir": "Nicht auf Sendung",
@@ -110,10 +110,10 @@ export const UI_DE: Ui = {
     }
   },
   "rules": {
-    "kicker": "A.C.E.-Wettkampfregelwerk",
+    "kicker": "A.C.E-Wettkampfregelwerk",
     "title": "Wettkampfregeln",
     "version": "Version {version} · gültig ab {date}",
-    "intro": "Die Regeln, nach denen jeder A.C.E.-Wettbewerb gespielt wird. Mit „Gilt ab Einführung“ markierte Klauseln treten in Kraft, sobald das zugrunde liegende System startet.",
+    "intro": "Die Regeln, nach denen jeder A.C.E-Wettbewerb gespielt wird. Mit „Gilt ab Einführung“ markierte Klauseln treten in Kraft, sobald das zugrunde liegende System startet.",
     "pending": "Gilt ab Einführung",
     "contents": "Inhalt",
     "penalties": {
@@ -149,7 +149,7 @@ export const UI_DE: Ui = {
   "antiCheat": {
     "kicker": "A.C.E Shield",
     "title": "Anti-Cheat",
-    "lede": "A.C.E Shield ist das Integritätssystem, das für jedes A.C.E.-Match entsteht: Client-, Server-, Match- und Verhaltensprüfungen, die zusammenarbeiten – mit Datenschutz an erster Stelle.",
+    "lede": "A.C.E Shield ist das Integritätssystem, das für jedes A.C.E-Match entsteht: Client-, Server-, Match- und Verhaltensprüfungen, die zusammenarbeiten – mit Datenschutz an erster Stelle.",
     "statusLabel": "Bereitstellungsphase",
     "pillarsTitle": "Architektur-Säulen",
     "pillars": {
@@ -229,7 +229,7 @@ export const UI_DE: Ui = {
       "expansion1": "Autonomous Anti-Cheat",
       "expansion2": "Competitive Calibration",
       "expansion3": "Elite Players",
-      "line": "Baue deine Wettkampf-Identität auf. Kalibriere dein Können. Steig in den A.C.E.-Rängen auf.",
+      "line": "Baue deine Wettkampf-Identität auf. Kalibriere dein Können. Steig in den A.C.E-Rängen auf.",
       "connectSteam": "Steam verbinden",
       "openDashboard": "Dashboard öffnen",
       "exploreRanks": "Ränge entdecken"
@@ -237,7 +237,7 @@ export const UI_DE: Ui = {
     "status": {
       "title": "Plattformstatus",
       "steam": "Steam-Anmeldung",
-      "shield": "A.C.E. Shield",
+      "shield": "A.C.E Shield",
       "servers": "Wettkampfserver",
       "tournaments": "Turniere",
       "billing": "Abrechnung",
@@ -288,7 +288,7 @@ export const UI_DE: Ui = {
     "chat": {
       "open": "Support-Chat öffnen",
       "close": "Support-Chat schließen",
-      "title": "A.C.E. Support",
+      "title": "A.C.E Support",
       "greeting": "Hi! Ich bin der Support-Assistent von A.C.E. Frag mich zu Rängen, Plänen, Regeln oder deinem Konto.",
       "placeholder": "Schreib deine Frage…",
       "send": "Senden",
@@ -316,7 +316,7 @@ export const UI_DE: Ui = {
       "stepsKicker": "So funktioniert's",
       "stepsTitle": "In drei Schritten zum ersten Rang",
       "step1t": "Steam verbinden",
-      "step1b": "Melde dich mit Steam OpenID an. A.C.E. sieht dein Steam-Passwort nie.",
+      "step1b": "Melde dich mit Steam OpenID an. A.C.E sieht dein Steam-Passwort nie.",
       "step2t": "Kalibrieren",
       "step2b": "Du startest auf Stufe 3 mit 1.200 RP. Jedes erfasste Match verändert deine RP nach veröffentlichten Regeln.",
       "step3t": "Aufsteigen",
@@ -334,7 +334,7 @@ export const UI_DE: Ui = {
     "profile": {
       "kicker": "SPIELER",
       "notFound": "Spieler nicht gefunden",
-      "notFoundBody": "Kein A.C.E.-Konto nutzt diese Steam-ID, oder das Profil ist nicht öffentlich.",
+      "notFoundBody": "Kein A.C.E-Konto nutzt diese Steam-ID, oder das Profil ist nicht öffentlich.",
       "rating": "Wertung",
       "rank": "Rang",
       "record": "Bilanz",
@@ -349,11 +349,11 @@ export const UI_DE: Ui = {
     },
     "chat": {
       "sources": "Quellen",
-      "noMatch": "Das habe ich im Inhalt der A.C.E.-Website nicht gefunden. Du kannst deine Frage als Ticket an das Team senden.",
+      "noMatch": "Das habe ich im Inhalt der A.C.E-Website nicht gefunden. Du kannst deine Frage als Ticket an das Team senden.",
       "s1": "Was kostet Premium?",
       "s2": "Wie bekomme ich RP?",
       "s3": "Wie melde ich einen Cheater?",
-      "kbNote": "Antworten stammen aus dem Inhalt der A.C.E.-Website."
+      "kbNote": "Antworten stammen aus dem Inhalt der A.C.E-Website."
     }
   },
   "r40": {
@@ -382,7 +382,7 @@ export const UI_DE: Ui = {
     "nf": {
       "code": "Fehler 404",
       "title": "Diese Seite ist nicht auf der Karte",
-      "body": "Der Link ist vielleicht veraltet oder falsch geschrieben. Jeder Bereich von A.C.E. ist von hier nur einen Klick entfernt.",
+      "body": "Der Link ist vielleicht veraltet oder falsch geschrieben. Jeder Bereich von A.C.E ist von hier nur einen Klick entfernt.",
       "home": "Zur Startseite",
       "ranks": "Ränge ansehen"
     },
@@ -396,12 +396,12 @@ export const UI_DE: Ui = {
   "r41": {
     "vf": {
       "label": "Verifizierter Spieler",
-      "tip": "Verifiziert: Steam verknüpft, Konto in gutem Zustand, von A.C.E. geprüft."
+      "tip": "Verifiziert: Steam verknüpft, Konto in gutem Zustand, von A.C.E geprüft."
     },
     "st": {
       "kicker": "Leistung",
       "title": "Spielerstatistik",
-      "lede": "Jede Zahl stammt aus erfassten A.C.E.-Matches. Nichts ist geschätzt.",
+      "lede": "Jede Zahl stammt aus erfassten A.C.E-Matches. Nichts ist geschätzt.",
       "empty": "Noch keine erfassten Matches. Statistiken erscheinen hier nach dem ersten Ranked-Match.",
       "winRate": "Siegquote",
       "adr": "ADR",
@@ -427,11 +427,11 @@ export const UI_DE: Ui = {
       "none": "—"
     },
     "ab": {
-      "title": "Über A.C.E.",
+      "title": "Über A.C.E",
       "lede": "Eine Wettkampfplattform für Counter-Strike 2 mit einer öffentlichen Rangtabelle und Plänen, die nie einen Vorteil verkaufen.",
-      "b1": "A.C.E. betreibt Ranked-Spiele, Ranglisten und Turniere für CS2. Die Anmeldung läuft über Steam OpenID; dein Steam-Passwort sehen wir nie.",
+      "b1": "A.C.E betreibt Ranked-Spiele, Ranglisten und Turniere für CS2. Die Anmeldung läuft über Steam OpenID; dein Steam-Passwort sehen wir nie.",
       "b2": "Dein Rang wird nur aus erfassten Ergebnissen nach veröffentlichten Regeln berechnet. Bezahlte Pläne sind nur kosmetisch und für Komfort.",
-      "b3": "A.C.E. ist eine unabhängige Plattform und nicht mit Valve verbunden."
+      "b3": "A.C.E ist eine unabhängige Plattform und nicht mit Valve verbunden."
     },
     "ss": {
       "title": "Serverstatus",
@@ -474,7 +474,7 @@ export const UI_DE: Ui = {
     "lv": {
       "nav": "Live",
       "title": "Live-Übertragungen",
-      "lede": "Offizielle A.C.E.-Turnierstreams. Eine Übertragung erscheint hier nur, solange das Team sie auf Sendung geschaltet hat.",
+      "lede": "Offizielle A.C.E-Turnierstreams. Eine Übertragung erscheint hier nur, solange das Team sie auf Sendung geschaltet hat.",
       "none": "Gerade keine Live-Übertragung",
       "noneBody": "Sobald ein offizieller Stream auf Sendung geht, erscheint er hier. Bis dahin: die Turniere unten.",
       "schedule": "Kommende Turniere",
@@ -484,7 +484,7 @@ export const UI_DE: Ui = {
     }
   },
   "r46": {
-    "aria": "Wofür A.C.E. steht",
+    "aria": "Wofür A.C.E steht",
     "fair": "Fair-Play-Schutz",
     "fairSub": "Steam-Anmeldung, veröffentlichte Regeln und Spielermeldungen, geprüft von Admins.",
     "calib": "Kompetitive Kalibrierung",
@@ -494,7 +494,7 @@ export const UI_DE: Ui = {
   },
   "r45": {
     "title": "Jenseits von Legend",
-    "lede": "Fünf Prestige-Abzeichen über A.C.E. Legend, alle 200 RP von 2.150 bis 2.950. Nur durch Spielen verdient.",
+    "lede": "Fünf Prestige-Abzeichen über A.C.E Legend, alle 200 RP von 2.150 bis 2.950. Nur durch Spielen verdient.",
     "plus": "Plus · Platin",
     "premium": "Premium · Goldfeuer",
     "fair": "Gleiche RP für alle. Prestige-Schwellen, Matchmaking und Wertung sind in jedem Plan identisch. Nichts davon ist käuflich.",
@@ -527,10 +527,10 @@ export const UI_DE: Ui = {
     "pr": {
       "kicker": "Prestige",
       "title": "Abzeichenregeln",
-      "lede": "Wie jedes A.C.E.-Abzeichen verdient wird. Abzeichen sind rein kosmetisch: Sie ändern weder Matchmaking noch RP noch irgendeine Regel.",
+      "lede": "Wie jedes A.C.E-Abzeichen verdient wird. Abzeichen sind rein kosmetisch: Sie ändern weder Matchmaking noch RP noch irgendeine Regel.",
       "ranks": "Rangabzeichen (Stufen 1–10) folgen deinen RP. Jeder sieht denselben Rang und dieselbe feste Stufenfarbe.",
       "prestige": "Prestige-Abzeichen sind fünf Langzeitziele über {elite} RP: eines alle 200 RP von 2.150 bis 2.950.",
-      "free": "Free: Dein Abzeichen bleibt A.C.E. Legend und deine Prestige-Stufe erscheint als Text-Meilenstein. Deine RP werden nie begrenzt.",
+      "free": "Free: Dein Abzeichen bleibt A.C.E Legend und deine Prestige-Stufe erscheint als Text-Meilenstein. Deine RP werden nie begrenzt.",
       "plus": "Plus: das Platin-Prestige-Set.",
       "premium": "Premium: das animierte Gold-Prestige-Set.",
       "lose": "Fällst du unter eine Prestige-Schwelle, folgt das Abzeichen deinen RP nach unten; erreichst du sie wieder, kehrt es zurück.",
@@ -683,5 +683,19 @@ export const UI_DE: Ui = {
     "communityTitle": "Community",
     "communityLede": "Folge A.C.E für Match-News, Turniere und Highlights.",
     "followOn": "A.C.E auf {network}"
+  },
+  "r49b": {
+    "title": "Steam-Inventar",
+    "private": "Inventar privat",
+    "privateBody": "Das Steam-Inventar dieses Spielers ist privat.",
+    "empty": "Keine CS2-Items im öffentlichen Inventar.",
+    "unavailable": "Das Steam-Inventar kann gerade nicht geladen werden.",
+    "hiddenOwner": "Deine Inventar-Vitrine ist auf deinem Profil ausgeblendet.",
+    "hide": "Vitrine ausblenden",
+    "show": "Vitrine anzeigen",
+    "priceSource": "Preise: niedrigstes Angebot im Steam-Communitymarkt, zwischengespeichert.",
+    "note": "Nur zur Ansicht. A.C.E kauft, verkauft oder tauscht niemals Steam-Items.",
+    "updated": "Aktualisiert {date}",
+    "more": "+{n} weitere Items"
   }
 };

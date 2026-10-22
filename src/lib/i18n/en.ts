@@ -1,7 +1,7 @@
 export const EN = {
  slogan: "PLAY. COMPETE. BE ELITE.",
  kicker: "CS2 ELITE COMPETITIVE PLATFORM",
- lede: "A.C.E. is a Counter-Strike 2 competitive site. Sign-in uses Steam OpenID. Anti-cheat, match servers and prize payouts are not running here.",
+ lede: "A.C.E is a Counter-Strike 2 competitive site. Sign-in uses Steam OpenID. Anti-cheat, match servers and prize payouts are not running here.",
  playNow: "PLAY NOW",
  signInSteam: "Sign in through STEAM",
  connectProfile: "Connect Profile",
@@ -19,7 +19,7 @@ export const EN = {
  navTournaments: "TOURNAMENTS",
  brandSubline: "AUTONOMOUS ANTI-CHEAT • COMPETITIVE CALIBRATION • ELITE PLAYERS",
  languagesKicker: "Languages",
- step1: "Create an account with official Steam OpenID. A.C.E. never asks for a Steam password.",
+ step1: "Create an account with official Steam OpenID. A.C.E never asks for a Steam password.",
  step2: "Identity verification arrives with A.C.E Shield.",
  step3: "Build a 5v5 team from Command Deck after a verified session.",
  step4: "Find eligible competitions. Ranked FIND MATCH remains closed.",
@@ -29,7 +29,7 @@ export const EN = {
  kd: "K/D",
  statsEmpty:
  "Your stats appear here after your first recorded matches.",
- statsLive: "Wins/losses from the A.C.E. account. K/D is not stored yet.",
+ statsLive: "Wins/losses from the A.C.E account. K/D is not stored yet.",
  membership: "MEMBERSHIP",
  membershipLede:
  "Free $0. Plus $4/mo. Premium $7/mo. Paid plans never buy rating, easier opponents or queue priority. Billing opens soon.",
@@ -84,13 +84,13 @@ export const EN = {
  cookiePolicy: "Cookie Policy",
  support: "Support",
  contact: "Contact",
- supportKicker: "A.C.E. SUPPORT · HELP CENTER",
+ supportKicker: "A.C.E SUPPORT · HELP CENTER",
  supportTitle: "Tech Support Hub",
  supportLede:
  "Knowledge center for setup, calibration and membership questions. Anti-cheat, ranked queues and billing are coming soon.",
  supportCat1Title: "Kernel Anti-Cheat Setup",
  supportCat1Body:
- "Driver installation prompts, hardware compliance and Secure Boot telemetry adjustments are documented here as future kernel policy. A.C.E. does not ship a working Anti-Cheat client, does not install drivers and does not collect Secure Boot or HWID data on this website.",
+ "Driver installation prompts, hardware compliance and Secure Boot telemetry adjustments are documented here as future kernel policy. A.C.E does not ship a working Anti-Cheat client, does not install drivers and does not collect Secure Boot or HWID data on this website.",
  supportCat2Title: "Matchmaking & Calibration",
  supportCat2Body:
  "Ten placement matches, division calculation speed and seasonal rating recalibration are the planned calibration story. Ranked FIND MATCH stays fail-closed until a verified Anti-Cheat path exists. Figures on this page are not live match results.",
@@ -103,7 +103,7 @@ export const EN = {
  "Ticket support opens with the competitive beta. For now, reach us through the contact page.",
  supportDisclosure:
  "Live support desks for anti-cheat, matchmaking and billing open with the competitive beta.",
- contactKicker: "A.C.E. CONTACT · CORPORATE TERMINAL",
+ contactKicker: "A.C.E CONTACT · CORPORATE TERMINAL",
  contactTitle: "Corporate Contact Terminal",
  contactLede:
  "Sponsorship, media, technical and general inquiries. Messages entered here are not transmitted and are not stored as telemetry.",
@@ -117,20 +117,20 @@ export const EN = {
  contactInquiryTechnical: "Technical",
  contactInquiryGeneral: "General",
  contactConsent:
- "I explicitly consent to the data minimization storage parameters under the A.C.E. Privacy Policy.",
+ "I explicitly consent to the data minimization storage parameters under the A.C.E Privacy Policy.",
  contactSend: "SEND SECURE TELEMETRY MESSAGE",
  contactCorporate:
- "A.C.E. | Secure Email Gateway: support@ace-platform.gg",
+ "A.C.E | Secure Email Gateway: support@ace-platform.gg",
  contactModalTitle: "Online contact form · coming soon",
  contactModalBody:
- "Messages from this form are not delivered yet. The form opens together with our support desk. A.C.E. never asks for your Steam password.",
+ "Messages from this form are not delivered yet. The form opens together with our support desk. A.C.E never asks for your Steam password.",
  contactDisclosure:
- "The online contact form opens soon. A.C.E. never asks for your Steam password.",
+ "The online contact form opens soon. A.C.E never asks for your Steam password.",
  closeOverlay: "Close",
  loadingAce: "Loading A.C.E...",
  supportCategory: "CATEGORY {n}",
- shopKicker: "A.C.E. SHOP · COMING SOON",
- shopTitle: "A.C.E. MARKETPLACE — ELITE WEAPON CUSTOMIZATION",
+ shopKicker: "A.C.E SHOP · COMING SOON",
+ shopTitle: "A.C.E MARKETPLACE — ELITE WEAPON CUSTOMIZATION",
  shopLede:
  "Preview weapon cards, profile frames and league-access labels. None of these are delivered items.",
  shopNote:
@@ -164,8 +164,8 @@ export const EN = {
  "Win-rate and streaks fill in from recorded matches.",
  squadInviteLabel: "INVITE FREE AGENT VIA STEAMID",
  squadInviteNote:
- "Official Steam OpenID only. Paste a SteamID already linked to an A.C.E. account. Never enter a Steam password.",
- squadInvitePlaceholder: "SteamID64 or A.C.E. account ID",
+ "Official Steam OpenID only. Paste a SteamID already linked to an A.C.E account. Never enter a Steam password.",
+ squadInvitePlaceholder: "SteamID64 or A.C.E account ID",
  squadSend: "SEND SECURE INVITE >",
  squadCaptainOnly: "Only the designated captain may send invitations.",
  squadInviteFailed: "Invite failed.",
@@ -182,10 +182,10 @@ export const EN = {
  tourneyLoading: "Loading bracket layout…",
  platformNoticeTitle: "PLATFORM NOTICE",
  platformNoticeBody:
- "Tournament boards, leaderboards and skin cards on this website are examples. They are not Valve items and they are not paid prizes. This site does not run an anti-cheat program. Opening the site does not cancel a legal right and it does not sign a contract. A.C.E. does not collect a hardware identifier and does not delete an account because someone contacts a lawyer or a court.",
+ "Tournament boards, leaderboards and skin cards on this website are examples. They are not Valve items and they are not paid prizes. This site does not run an anti-cheat program. Opening the site does not cancel a legal right and it does not sign a contract. A.C.E does not collect a hardware identifier and does not delete an account because someone contacts a lawyer or a court.",
   copyrightLine: "© 2026 A.C.E. Not affiliated with Valve.",
   copyrightClaim:
-    "Original text, layout, emblems, and graphics on this website belong to A.C.E. Copying them without written permission is not allowed. A.C.E. may enforce that right. Counter-Strike 2 and its map names belong to Valve.",
+    "Original text, layout, emblems, and graphics on this website belong to A.C.E. Copying them without written permission is not allowed. A.C.E may enforce that right. Counter-Strike 2 and its map names belong to Valve.",
  shieldServerValue: "Coming soon",
  tvGames: "Games television",
  pathsKicker: "FIVE PATHS ON THIS SITE",
@@ -194,7 +194,7 @@ export const EN = {
  statusWrittenRule: "WRITTEN RULE",
  statusTeamLayout: "100-TEAM FIELD",
  statusPublicSite: "PUBLIC SITE",
- rankProtocolTitle: "A.C.E. RATING PROTOCOL",
+ rankProtocolTitle: "A.C.E RATING PROTOCOL",
  rankProtocolBody:
  "The written rule compares a player with the other team's average rating. Against an equal team a recorded win is +20 RP and a loss is −20 RP, always within 10 to 30 RP per match, and the 10 tiers and 3 divisions are read from that number. This page does not validate a match, so no rating change is applied here.",
  rankProgress: "Rank Progress",

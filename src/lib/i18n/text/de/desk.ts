@@ -3,7 +3,7 @@ import type { TextBag } from "../types";
 export const desk: TextBag["desk"] = {
   shop: {
     meta: {
-      title: "A.C.E.-Marktplatz",
+      title: "A.C.E-Marktplatz",
       description:
         "Meisterschafts-Belohnungskarten. Shop und Belohnungen öffnen bald.",
     },
@@ -29,7 +29,7 @@ export const desk: TextBag["desk"] = {
         price: "Nur Beispiel · kein Geldwert",
       },
       crown: {
-        name: "A.C.E.-Kronen-Avatarrahmen",
+        name: "A.C.E-Kronen-Avatarrahmen",
         tag: "Profilschmuck",
         price: "Demnächst",
       },
@@ -49,7 +49,7 @@ export const desk: TextBag["desk"] = {
     meta: {
       title: "Hilfe",
       description:
-        "A.C.E.-Hilfecenter. Support für Anti-Cheat, Ranglisten und Abrechnung startet mit der Wettkampf-Beta.",
+        "A.C.E-Hilfecenter. Support für Anti-Cheat, Ranglisten und Abrechnung startet mit der Wettkampf-Beta.",
     },
   },
   contact: {

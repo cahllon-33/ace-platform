@@ -33,7 +33,7 @@ export async function evaluateEligibility(
   });
 
   if (!user) {
-    return { steamId, decision: "DENY", reason: "No A.C.E. account is linked to this SteamID." };
+    return { steamId, decision: "DENY", reason: "No A.C.E account is linked to this SteamID." };
   }
 
   if (BLOCKING_STATUS.has(user.accountStatus)) {
@@ -52,7 +52,7 @@ export async function evaluateEligibility(
     return {
       steamId,
       decision: "DENY",
-      reason: "Player is already assigned to an in-progress A.C.E. match.",
+      reason: "Player is already assigned to an in-progress A.C.E match.",
     };
   }
 

@@ -2,7 +2,7 @@ import type { TextBag } from "../types";
 
 export const teams: TextBag["teams"] = {
   "meta": {
-    "title": "A.C.E. osztagkezelés",
+    "title": "A.C.E osztagkezelés",
     "description": "Az 5v5 osztagod munkatere. A meghívókhoz ellenőrzött Steam-munkamenet kell; a csalásellenes ellenőrzések az A.C.E Shielddel érkeznek."
   },
   "hero": {
@@ -14,11 +14,11 @@ export const teams: TextBag["teams"] = {
     "kickerPremium": "Klánrekord a csomagválasztás után",
     "kickerDefault": "Klánrekord",
     "title": "Ötfős csapat vagytok?",
-    "intro": "Az 1. hely a Steammel bejelentkezett játékos. A 2–5. helyeknek már A.C.E.-fiókkal kell rendelkezniük. Egy klán mentése nem terhel 7 $-t, nem küld e-mailt, és nem helyezi a klánt a 100 csapatos táblára.",
+    "intro": "Az 1. hely a Steammel bejelentkezett játékos. A 2–5. helyeknek már A.C.E-fiókkal kell rendelkezniük. Egy klán mentése nem terhel 7 $-t, nem küld e-mailt, és nem helyezi a klánt a 100 csapatos táblára.",
     "yes": "Igen, öt játékos",
     "no": "Nem, a helyek maradjanak nyitva",
     "seatsOpen": "Az öt hely nyitva marad. Semmi nem lett tárolva.",
-    "connectSteam": "Előbb csatlakoztasd a Steamet. A gomb visszatér erre az oldalra. Az A.C.E. soha nem kéri a Steam-jelszavadat.",
+    "connectSteam": "Előbb csatlakoztasd a Steamet. A gomb visszatér erre az oldalra. Az A.C.E soha nem kéri a Steam-jelszavadat.",
     "alreadyMember": "{name} már a(z) {team} tagja. Ezzel az űrlappal nem jön létre második klán.",
     "thisAccount": "Ez a fiók",
     "acceptTerms": "Klán mentése előtt fogadd el a feltételeket.",
@@ -26,7 +26,7 @@ export const teams: TextBag["teams"] = {
     "clanName": "Klán neve",
     "captainSeat": "1. hely, kapitány: {name}",
     "signedInSteam": "Bejelentkezett Steam-fiók",
-    "seatLabel": "{seat}. hely SteamID vagy A.C.E.-fiókazonosító",
+    "seatLabel": "{seat}. hely SteamID vagy A.C.E-fiókazonosító",
     "submit": "Ötfős klán mentése",
     "saved": "A klán neve tárolva, és négy meghívó függőben van. Ezek a játékosok csak elfogadás után kerülnek a keretbe. Ez nem hely a 100 csapatos táblán. Semmit nem terheltünk."
   },
@@ -42,8 +42,8 @@ export const teams: TextBag["teams"] = {
       "email": "Nem küldünk e-mailt. A csomagnyugták ezen az oldalon maradnak.",
       "charge": "A Premium havi 7 $. Hamarosan: még nincs fizetés, így semmit nem terhelünk.",
       "board": "A tárolt klán keretrekord. Nem kerül a 100 csapatos táblára. A tábla a szezon indulásáig 0 regisztráltat mutat.",
-      "steam": "A bejelentkezés hivatalos Steam OpenID-t használ. Az A.C.E. soha nem kéri a Steam-jelszavadat. Erről az oldalról a Steam ide tér vissza.",
-      "roster": "Az 1. hely a bejelentkezett kapitány. A 2–5. helyeknek már A.C.E.-fiókkal kell rendelkezniük. A meghívók függőben maradnak, amíg minden játékos el nem fogadja.",
+      "steam": "A bejelentkezés hivatalos Steam OpenID-t használ. Az A.C.E soha nem kéri a Steam-jelszavadat. Erről az oldalról a Steam ide tér vissza.",
+      "roster": "Az 1. hely a bejelentkezett kapitány. A 2–5. helyeknek már A.C.E-fiókkal kell rendelkezniük. A meghívók függőben maradnak, amíg minden játékos el nem fogadja.",
       "badge": "A helyjelvények élő A.C.E Shield ellenőrzésekké válnak, amikor a csalásellenes rendszer elindul.",
       "support": "Nyisd meg a Támogatás vagy Kapcsolat oldalt ezen az oldalon. A támogatási felszólítás nem nyit jegyet, és a Kapcsolat oldalon beírt szöveg nem kerül továbbításra.",
       "rating": "Egy új értékszám 1200-ról indul. Ez az oldal nem árul értékszámot, nem nyit sort, nem csatlakoztat CS2-szervert és nem ad át díjat."
@@ -63,7 +63,7 @@ export const teams: TextBag["teams"] = {
   },
   "tournaments": {
     "meta": {
-      "title": "A.C.E. bajnokság — 100 csapatos elit kieséses torna",
+      "title": "A.C.E bajnokság — 100 csapatos elit kieséses torna",
       "description": "A 100 csapatos kieséses torna. Kattints egy klánra a keret megnyitásához, majd az egyes játékosprofilokhoz. A nevezés hamarosan nyílik."
     },
     "intro": {
@@ -110,7 +110,7 @@ export const teams: TextBag["teams"] = {
       "count": "Klán {index} / {total}",
       "next": "Következő klán",
       "close": "Profil bezárása",
-      "disclosure": "A játékosok felszerelései és készletei itt jelennek meg, ha a játékosok megosztják őket. Az A.C.E. nem gyűjt hardveradatot."
+      "disclosure": "A játékosok felszerelései és készletei itt jelennek meg, ha a játékosok megosztják őket. Az A.C.E nem gyűjt hardveradatot."
     },
     "player": {
       "level": "SZINT {level} · RP {rating}",
@@ -140,16 +140,16 @@ export const teams: TextBag["teams"] = {
     "monitor": "Frissítési frekvencia · nincs megosztva",
     "headset": "Nincs megosztva"
   },
-  "profileDisclosure": "Az A.C.E. nem tárol hardverkészleteket és nem futtat csalásellenes klienst. A teljesítménytrend-grafikonokhoz és a harci mátrixhoz A.C.E. Plus vagy Premium munkamenet szükséges. Az ezen az oldalon beírt Steam-profil link nem kerül mentésre és nem hivatalos azonosító.",
+  "profileDisclosure": "Az A.C.E nem tárol hardverkészleteket és nem futtat csalásellenes klienst. A teljesítménytrend-grafikonokhoz és a harci mátrixhoz A.C.E Plus vagy Premium munkamenet szükséges. Az ezen az oldalon beírt Steam-profil link nem kerül mentésre és nem hivatalos azonosító.",
   "errors": {
     "signInRequired": "Bejelentkezés szükséges.",
     "nameLength": "A csapatnévnek 2 és 32 karakter között kell lennie.",
     "alreadyCaptain": "Ez a fiók már egy csapat kapitánya.",
     "nameTaken": "Ilyen nevű csapat már létezik.",
-    "idRequired": "SteamID vagy A.C.E.-fiókazonosító szükséges.",
-    "noAccountForToken": "Ehhez a SteamID-hez vagy fiókazonosítóhoz nem tartozik A.C.E.-fiók.",
+    "idRequired": "SteamID vagy A.C.E-fiókazonosító szükséges.",
+    "noAccountForToken": "Ehhez a SteamID-hez vagy fiókazonosítóhoz nem tartozik A.C.E-fiók.",
     "clanNeedsFour": "Egy ötfős klánhoz a bejelentkezett kapitány és négy SteamID kell.",
-    "seatNeedsId": "Mind a négy helyhez SteamID vagy A.C.E.-fiókazonosító kell.",
+    "seatNeedsId": "Mind a négy helyhez SteamID vagy A.C.E-fiókazonosító kell.",
     "seatsDistinct": "Minden helyre másik játékos kell.",
     "captainHoldsSeat": "A kapitány már az 1. helyen van. Használj négy másik játékost.",
     "fewerThanFour": "Ezek az azonosítók négynél kevesebb fiókhoz tartoznak.",
@@ -157,7 +157,7 @@ export const teams: TextBag["teams"] = {
     "captainOnly": "Csak a kijelölt kapitány küldhet meghívót.",
     "rosterLimit": "Egy CS2 keret öt játékosból áll, a kapitánnyal együtt.",
     "alreadyOnRoster": "Ez a játékos már a keretben van.",
-    "noAccountForId": "Ehhez az azonosítóhoz nem tartozik A.C.E.-fiók.",
+    "noAccountForId": "Ehhez az azonosítóhoz nem tartozik A.C.E-fiók.",
     "inviteNotFound": "A meghívó nem található.",
     "inviteNotPending": "Ez a meghívó már nincs függőben.",
     "rosterFull": "A keret már megtelt.",

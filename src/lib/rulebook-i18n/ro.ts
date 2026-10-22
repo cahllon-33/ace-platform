@@ -4,18 +4,18 @@ export const RB_RO: RulebookText = {
   "summary16": "Arbitrii aleg o sancțiune din intervalul de mai jos în funcție de intenție, efect și repetare. Abaterile repetate se apropie de limita superioară a intervalului.",
   "clauses": [
     [
-      "Acest regulament se aplică tuturor competițiilor organizate de A.C.E.: cupe, ligi, clasamente ladder și meciuri demonstrative. Pagina evenimentului poate adăuga condiții specifice; dacă acestea contrazic regulamentul, pagina evenimentului prevalează doar pentru acel eveniment.",
-      "„Organizator” înseamnă echipa operațională A.C.E. „Arbitru” este un membru al organizatorului desemnat pentru un eveniment. „Echipă” este un lot înscris. „Căpitan” este jucătorul care reprezintă echipa. „Meci” înseamnă una sau mai multe hărți jucate între două echipe. „Serie” este o succesiune de hărți până la o victorie (BO1), două victorii (BO3) sau trei victorii (BO5).",
+      "Acest regulament se aplică tuturor competițiilor organizate de A.C.E: cupe, ligi, clasamente ladder și meciuri demonstrative. Pagina evenimentului poate adăuga condiții specifice; dacă acestea contrazic regulamentul, pagina evenimentului prevalează doar pentru acel eveniment.",
+      "„Organizator” înseamnă echipa operațională A.C.E „Arbitru” este un membru al organizatorului desemnat pentru un eveniment. „Echipă” este un lot înscris. „Căpitan” este jucătorul care reprezintă echipa. „Meci” înseamnă una sau mai multe hărți jucate între două echipe. „Serie” este o succesiune de hărți până la o victorie (BO1), două victorii (BO3) sau trei victorii (BO5).",
       "Prin înscriere, fiecare jucător și fiecare echipă acceptă acest regulament, Termenii de utilizare și Politica de confidențialitate.",
       "Arbitrii pot decide în situații neacoperite de acest regulament, în spiritul fair-play-ului și al regulilor. Aceste decizii sunt consemnate și publicate împreună cu rezultatul meciului."
     ],
     [
-      "Jucătorul nu trebuie să aibă o suspendare A.C.E. activă, iar contul Steam folosit nu trebuie să aibă o interdicție de joc aplicată în ultimii 2 ani.",
+      "Jucătorul nu trebuie să aibă o suspendare A.C.E activă, iar contul Steam folosit nu trebuie să aibă o interdicție de joc aplicată în ultimii 2 ani.",
       "Personalul organizatorului și arbitrii nu pot juca într-un eveniment pe care îl supraveghează.",
       "Limitele de regiune sau de rating se stabilesc pentru fiecare eveniment și se publică înainte de deschiderea înscrierilor. Un jucător din afara acestor limite nu poate juca, nici ca rezervă."
     ],
     [
-      "Fiecare jucător folosește un singur cont A.C.E., legat de un singur cont Steam prin autentificarea cu Steam. A.C.E. nu îți cere niciodată parola Steam; cine o cere nu este organizatorul.",
+      "Fiecare jucător folosește un singur cont A.C.E, legat de un singur cont Steam prin autentificarea cu Steam. A.C.E nu îți cere niciodată parola Steam; cine o cere nu este organizatorul.",
       "Este interzis să partajezi contul, să joci pe contul altcuiva sau să lași pe altcineva să joace pe contul tău. Ambele conturi sunt sancționate.",
       "Crearea unui cont nou pentru a evita o sancțiune, un rating sau o restricție este considerată eludarea suspendării și este tratată ca abatere de la integritatea competiției (secțiunea 14).",
       "Numele afișate și avatarurile trebuie să respecte regulile de conduită (secțiunea 13). Arbitrii pot cere modificarea lor înainte de meci.",
@@ -89,8 +89,8 @@ export const RB_RO: RulebookText = {
       "Sunt interzise ghosting-ul (obținerea de informații de la spectatori sau din transmisiuni), stream sniping-ul, jocul pe contul altcuiva și eludarea suspendării.",
       "Sunt interzise aranjarea meciurilor, pierderea intenționată și pariurile pe orice meci la care participă echipa ta sau care face parte din evenimentul tău.",
       "Este interzisă folosirea unei erori de hartă sau de joc declarate nepermise de arbitru ori care încalcă evident mecanica intenționată a jocului.",
-      "Dacă evenimentul o cere, jucătorii trebuie să ruleze clientul anti-cheat A.C.E. pe toată durata meciului.",
-      "Adminii pot cere demo-uri sau înregistrări de ecran pentru analiză. Datele despre hardware vor fi cerute doar după ce clientul anti-cheat A.C.E. există și Politica de confidențialitate le descrie. Refuzul unei cereri rezonabile fără un motiv valid poate fi luat în considerare la decizie.",
+      "Dacă evenimentul o cere, jucătorii trebuie să ruleze clientul anti-cheat A.C.E pe toată durata meciului.",
+      "Adminii pot cere demo-uri sau înregistrări de ecran pentru analiză. Datele despre hardware vor fi cerute doar după ce clientul anti-cheat A.C.E există și Politica de confidențialitate le descrie. Refuzul unei cereri rezonabile fără un motiv valid poate fi luat în considerare la decizie.",
       "Oricine poate raporta confidențial organizatorului o abatere suspectată. Acuzațiile publice fără raportare constituie abatere de conduită."
     ],
     [
@@ -105,7 +105,7 @@ export const RB_RO: RulebookText = {
       "Suspendarea se aplică persoanei și tuturor conturilor pe care le controlează."
     ],
     [
-      "A.C.E. are dreptul de a transmite orice meci pe care îl organizează. Echipele nu pot refuza transmisiunea.",
+      "A.C.E are dreptul de a transmite orice meci pe care îl organizează. Echipele nu pot refuza transmisiunea.",
       "Jucătorii își pot transmite propriile meciuri doar cu o întârziere de cel puțin 2 minute și doar dacă pagina evenimentului permite. Transmisiunile oficiale folosesc întârzierea stabilită de organizator.",
       "Jucătorii nu pot urmări transmisiunea live a propriului meci în timpul meciului.",
       "Meciurile programate pentru transmisiune pot fi mutate cu cel mult 2 ore, cu o notificare de 24 de ore. Echipele trebuie să fie disponibile la noua oră sau să ceară o decizie a arbitrului.",

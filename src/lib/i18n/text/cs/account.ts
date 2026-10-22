@@ -5,7 +5,7 @@ export const account: TextBag["account"] = {
     "metaTitle": "Statistiky hráče",
     "kicker": "STATISTIKY HRÁČE",
     "title": "Statistiky hráče",
-    "lede": "Vývoj ratingu z tvých zaznamenaných zápasů A.C.E. s ukazateli % headshotů a přesnosti. Součást A.C.E Plus (4 $/měs.) a A.C.E Premium (7 $/měs.).",
+    "lede": "Vývoj ratingu z tvých zaznamenaných zápasů A.C.E s ukazateli % headshotů a přesnosti. Součást A.C.E Plus (4 $/měs.) a A.C.E Premium (7 $/měs.).",
     "movementTitle": "Vývoj ratingu",
     "movementNote": "Každý bod je změna ratingu zapsaná ze zápasu A.C.E.",
     "noMatches": "Zatím žádné zaznamenané zápasy, graf je proto prázdný. Naplní se po tvém prvním zaznamenaném zápase A.C.E.",
@@ -21,7 +21,7 @@ export const account: TextBag["account"] = {
     "lockedBody": "Tvůj uložený plán je Free. Plus (4 $/měs.) i Premium (7 $/měs.) tuto stránku odemykají. Brzy: platba zatím neexistuje.",
     "signIn": "Přihlas se přes Steam a uvidíš své statistiky.",
     "plansLink": "Zobrazit plány",
-    "rosterNote": "Ukázkový profil soupisky: tito hráči nemají zaznamenané zápasy A.C.E., proto statistiky neukazují čísla.",
+    "rosterNote": "Ukázkový profil soupisky: tito hráči nemají zaznamenané zápasy A.C.E, proto statistiky neukazují čísla.",
     "dashTitle": "Statistiky a analýza",
     "dashStats": "Otevřít statistiky hráče",
     "dashAnalysis": "Otevřít analýzu zápasů (Premium)",
@@ -38,7 +38,7 @@ export const account: TextBag["account"] = {
     "stats": {
       "accountStatus": "Stav účtu",
       "subscription": "Předplatné",
-      "rank": "Hodnost A.C.E.",
+      "rank": "Hodnost A.C.E",
       "ratingPoints": "Body hodnocení",
       "wins": "Výhry",
       "losses": "Prohry",
@@ -71,7 +71,7 @@ export const account: TextBag["account"] = {
     "rankedButton": "Najít rankingový zápas",
     "roster": {
       "title": "Soupiska 5v5",
-      "body": "Jeden kapitán. Čtyři pozvánky. Kapitáni zvou jiná ID účtů A.C.E., která vznikají až po ověřeném přihlášení přes Steam."
+      "body": "Jeden kapitán. Čtyři pozvánky. Kapitáni zvou jiná ID účtů A.C.E, která vznikají až po ověřeném přihlášení přes Steam."
     },
     "pendingInvites": "Čekající pozvánky"
   },
@@ -132,7 +132,7 @@ export const account: TextBag["account"] = {
     "back": "Zpět na soupisku klanu"
   },
   "networks": {
-    "note": "Odkaz zadaný zde zůstává v tomto prohlížeči a neukládá se. A.C.E. nikdy nežádá heslo ke službě Steam.",
+    "note": "Odkaz zadaný zde zůstává v tomto prohlížeči a neukládá se. A.C.E nikdy nežádá heslo ke službě Steam.",
     "labels": {
       "steam": "Profil Steam"
     },
@@ -150,9 +150,9 @@ export const account: TextBag["account"] = {
       "title": "Chyba přihlášení"
     },
     "title": "Přihlášení přes Steam nebylo dokončeno",
-    "notConfigured": "Steam OpenID zatím není na tomto serveru nakonfigurováno. A.C.E. nikdy nežádá heslo ke službě Steam.",
-    "unavailable": "Steam neodpověděl na ověřovací požadavek. Zkuste to za chvíli znovu. A.C.E. nikdy nežádá heslo ke službě Steam.",
-    "unverified": "Zpětné volání OpenID se na serveru nepodařilo ověřit. A.C.E. nikdy nežádá heslo ke službě Steam.",
+    "notConfigured": "Steam OpenID zatím není na tomto serveru nakonfigurováno. A.C.E nikdy nežádá heslo ke službě Steam.",
+    "unavailable": "Steam neodpověděl na ověřovací požadavek. Zkuste to za chvíli znovu. A.C.E nikdy nežádá heslo ke službě Steam.",
+    "unverified": "Zpětné volání OpenID se na serveru nepodařilo ověřit. A.C.E nikdy nežádá heslo ke službě Steam.",
     "returnHome": "Zpět domů"
   }
 };

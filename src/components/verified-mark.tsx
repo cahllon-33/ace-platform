@@ -8,7 +8,7 @@ const STOPS: Record<VerifyTier, [string, string, string]> = {
 };
 
 /**
- * Original A.C.E. verified mark: a heater shield with a raised "A" apex chevron and a check cut through it.
+ * Original A.C.E verified mark: a heater shield with a raised "A" apex chevron and a check cut through it.
  * Silver (Free), platinum (Plus), animated gold (Premium). Decorative finish only — verification itself is
  * Steam linked + good standing + operator review (see lib/verification).
  */

@@ -5,10 +5,10 @@ export const account: TextBag["account"] = {
     "metaTitle": "Statistici de jucător",
     "kicker": "STATISTICI DE JUCĂTOR",
     "title": "Statistici de jucător",
-    "lede": "Evoluția ratingului din meciurile tale A.C.E. înregistrate, cu indicatori pentru % headshot și precizie. Inclus în A.C.E Plus (4 $/lună) și A.C.E Premium (7 $/lună).",
+    "lede": "Evoluția ratingului din meciurile tale A.C.E înregistrate, cu indicatori pentru % headshot și precizie. Inclus în A.C.E Plus (4 $/lună) și A.C.E Premium (7 $/lună).",
     "movementTitle": "Evoluția ratingului",
-    "movementNote": "Fiecare punct este o schimbare de rating scrisă dintr-un meci A.C.E. înregistrat.",
-    "noMatches": "Încă nu există meciuri înregistrate, așa că graficul este gol. Se completează după primul tău meci A.C.E. înregistrat.",
+    "movementNote": "Fiecare punct este o schimbare de rating scrisă dintr-un meci A.C.E înregistrat.",
+    "noMatches": "Încă nu există meciuri înregistrate, așa că graficul este gol. Se completează după primul tău meci A.C.E înregistrat.",
     "currentLabel": "Rating actual",
     "netLabel": "Schimbare netă",
     "changesLabel": "Schimbări înregistrate",
@@ -21,7 +21,7 @@ export const account: TextBag["account"] = {
     "lockedBody": "Planul tău salvat este Free. Plus (4 $/lună) și Premium (7 $/lună) deblochează această pagină. În curând: plata nu există încă.",
     "signIn": "Conectează-te cu Steam ca să-ți vezi statisticile.",
     "plansLink": "Vezi planurile",
-    "rosterNote": "Profil de lot exemplu: acești jucători nu au meciuri A.C.E. înregistrate, așa că statisticile nu arată cifre.",
+    "rosterNote": "Profil de lot exemplu: acești jucători nu au meciuri A.C.E înregistrate, așa că statisticile nu arată cifre.",
     "dashTitle": "Statistici și analiză",
     "dashStats": "Deschide statisticile de jucător",
     "dashAnalysis": "Deschide analiza meciurilor (Premium)",
@@ -38,7 +38,7 @@ export const account: TextBag["account"] = {
     "stats": {
       "accountStatus": "Starea contului",
       "subscription": "Abonament",
-      "rank": "Rang A.C.E.",
+      "rank": "Rang A.C.E",
       "ratingPoints": "Puncte de rating",
       "wins": "Victorii",
       "losses": "Înfrângeri",
@@ -71,7 +71,7 @@ export const account: TextBag["account"] = {
     "rankedButton": "Caută meci ranked",
     "roster": {
       "title": "Lot 5v5",
-      "body": "Un căpitan. Patru invitații. Căpitanii invită alte ID-uri de cont A.C.E., create doar după o autentificare Steam verificată."
+      "body": "Un căpitan. Patru invitații. Căpitanii invită alte ID-uri de cont A.C.E, create doar după o autentificare Steam verificată."
     },
     "pendingInvites": "Invitații în așteptare"
   },
@@ -132,7 +132,7 @@ export const account: TextBag["account"] = {
     "back": "Înapoi la lotul clanului"
   },
   "networks": {
-    "note": "Un link scris aici rămâne în acest browser și nu este salvat. A.C.E. nu cere niciodată parola Steam.",
+    "note": "Un link scris aici rămâne în acest browser și nu este salvat. A.C.E nu cere niciodată parola Steam.",
     "labels": {
       "steam": "Profil Steam"
     },
@@ -150,9 +150,9 @@ export const account: TextBag["account"] = {
       "title": "Eroare de autentificare"
     },
     "title": "Autentificarea Steam nu s-a finalizat",
-    "notConfigured": "Steam OpenID nu este încă configurat pe acest server. A.C.E. nu cere niciodată parola Steam.",
-    "unavailable": "Steam nu a răspuns la cererea de verificare. Încearcă din nou peste un moment. A.C.E. nu cere niciodată parola Steam.",
-    "unverified": "Callback-ul OpenID nu a putut fi verificat pe server. A.C.E. nu cere niciodată parola Steam.",
+    "notConfigured": "Steam OpenID nu este încă configurat pe acest server. A.C.E nu cere niciodată parola Steam.",
+    "unavailable": "Steam nu a răspuns la cererea de verificare. Încearcă din nou peste un moment. A.C.E nu cere niciodată parola Steam.",
+    "unverified": "Callback-ul OpenID nu a putut fi verificat pe server. A.C.E nu cere niciodată parola Steam.",
     "returnHome": "Înapoi acasă"
   }
 };

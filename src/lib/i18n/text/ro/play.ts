@@ -44,7 +44,7 @@ export const play: TextBag["play"] = {
           "Solo, duo sau trio",
           "Interval planificat de {points} puncte de rating",
           "Un profil Steam trebuie să fie deja stocat",
-          "Folosește regula de rating A.C.E. · căutare în curând"
+          "Folosește regula de rating A.C.E · căutare în curând"
         ]
       },
       "elite": {

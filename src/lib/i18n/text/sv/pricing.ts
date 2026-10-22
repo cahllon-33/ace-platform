@@ -70,10 +70,10 @@ export const pricing: TextBag["pricing"] = {
       "prices": "Free {free}. Plus {plus} per månad. Premium {premium} per månad. Planer förnyas månadsvis. Du kan säga upp när som helst utan avgift i panelens inställningar och behålla åtkomsten till slutet av den betalda månaden. En påbörjad månad återbetalas inte om inte lagen i ditt land kräver det.",
       "plusTitle": "2. Vad Plus innehåller",
       "plus1": "Allt i Free.",
-      "plus2": "Kommer snart: ett tackbrev och e-postsupport på support@ace-platform.gg, när kassan finns.",
+      "plus2": "E-postsupport för medlemmar på {email} och ett tackbrev från teamet.",
       "premiumTitle": "3. Vad Premium innehåller",
       "prem1": "Allt i Plus.",
-      "prem2": "Premium-rankkonst och Premium-rankkodexen: den ursprungliga illustrerade A.C.E.-emblemuppsättningen på din profil. Endast kosmetiskt, på samma Rating Points-stege.",
+      "prem2": "Premium-rankkonst och Premium-rankkodexen: den ursprungliga illustrerade A.C.E-emblemuppsättningen på din profil. Endast kosmetiskt, på samma Rating Points-stege.",
       "prem3": "Det animerade Premium-profilkortet.",
       "prem4": "Specialmärken och ELITE-SIGILLET.",
       "prem5": "Kommer snart: utökad matchanalys (värmekarta över dödsfall, headshot-%, prestation per rond), när demotolkning finns.",
@@ -85,14 +85,14 @@ export const pricing: TextBag["pricing"] = {
       "soon": "Inget som är märkt Kommer snart är utlovat förrän det släpps. Tills dess ingår det inte i priset.",
       "languageTitle": "6. Språk",
       "language": "Översättningar tillhandahålls för bekvämlighet. Om en översättning skiljer sig från den engelska texten gäller den engelska texten.",
-      "contact": "Frågor: support@ace-platform.gg",
+      "contact": "Frågor: {email}",
       "footerLink": "Premiumvillkor",
       "pricingLink": "Läs premiumvillkoren"
     }
   },
   "meta": {
     "title": "Priser",
-    "description": "A.C.E.-medlemskap: Free {free}, Plus {plus}/mån, Premium {premium}/mån. Fasta heltalspriser."
+    "description": "A.C.E-medlemskap: Free {free}, Plus {plus}/mån, Premium {premium}/mån. Fasta heltalspriser."
   },
   "period": {
     "monthly": "/mån"
@@ -108,23 +108,23 @@ export const pricing: TextBag["pricing"] = {
       "note": "Grafit",
       "title": "Öppen åtkomst",
       "points": [
-        "Logga in med Steam OpenID. A.C.E. ber aldrig om ett Steam-lösenord.",
+        "Logga in med Steam OpenID. A.C.E ber aldrig om ett Steam-lösenord.",
         "En sparad rating börjar på 1 200. Inget matchresultat har ändrat den.",
         "Alla publika sidor: spela, turneringar, topplista, lag och regler."
       ]
     },
     "plus": {
-      "name": "A.C.E. PLUS",
+      "name": "A.C.E PLUS",
       "note": "Plus",
       "title": "Spelarstatistik och support",
       "points": [
         "Allt i Free.",
-        "Spelarstatistik: din graf över ratingutvecklingen från registrerade A.C.E.-matcher. Mätare för headshot-% och träffsäkerhet kommer snart.",
-        "Kommer snart: ett tackbrev och e-postsupport på support@ace-platform.gg, när betalning finns. Plus köper inte rating eller lättare motståndare."
+        "Spelarstatistik: din graf över ratingutvecklingen från registrerade A.C.E-matcher. Mätare för headshot-% och träffsäkerhet kommer snart.",
+        "E-postsupport för medlemmar på {email} och ett tackbrev från teamet. Plus köper inte rating eller lättare motståndare."
       ]
     },
     "premium": {
-      "name": "A.C.E. PREMIUM",
+      "name": "A.C.E PREMIUM",
       "note": "Premium",
       "title": "Profilkonst, märken och analys",
       "points": [
@@ -159,7 +159,7 @@ export const pricing: TextBag["pricing"] = {
     }
   },
   "compare": {
-    "kicker": "Vad A.C.E. kan lova i dag",
+    "kicker": "Vad A.C.E kan lova i dag",
     "title": "Jämförelse av medlemskap",
     "note": "Varje rad speglar webbplatsen i dag. Betalning kommer snart, och en betald plan öppnar aldrig en kö eller köper en fördel.",
     "caption": "Free, Plus och Premium jämförda utifrån vad webbplatsen gör i dag",
@@ -175,7 +175,7 @@ export const pricing: TextBag["pricing"] = {
       },
       "steamSignIn": {
         "feature": "Steam-inloggning",
-        "detail": "Officiellt Steam OpenID. A.C.E. ber aldrig om ett Steam-lösenord."
+        "detail": "Officiellt Steam OpenID. A.C.E ber aldrig om ett Steam-lösenord."
       },
       "startingRating": {
         "feature": "Startrating",
@@ -183,7 +183,7 @@ export const pricing: TextBag["pricing"] = {
       },
       "recordedMatches": {
         "feature": "Registrerade matcher",
-        "detail": "Vinster och förluster från en avslutad A.C.E.-match."
+        "detail": "Vinster och förluster från en avslutad A.C.E-match."
       },
       "rankedQueue": {
         "feature": "Rankad kö",
@@ -231,15 +231,15 @@ export const pricing: TextBag["pricing"] = {
   "receipt": {
     "plus": {
       "metaTitle": "Plus-kvitto",
-      "metaDescription": "A.C.E. Plus-brevet som visas på den här webbplatsen. Betalning är inte aktiv, så inget debiteras och inget e-postmeddelande skickas.",
-      "planName": "A.C.E. Plus",
-      "nextLabel": "Fortsätt på A.C.E.",
+      "metaDescription": "A.C.E Plus-brevet som visas på den här webbplatsen. Betalning är inte aktiv, så inget debiteras och inget e-postmeddelande skickas.",
+      "planName": "A.C.E Plus",
+      "nextLabel": "Fortsätt på A.C.E",
       "nextBody": "De publika sidorna förblir öppna. Valet öppnar ingen kö och ändrar inte den sparade nivån."
     },
     "premium": {
       "metaTitle": "Premium-kvitto",
-      "metaDescription": "A.C.E. Premium-brevet som visas på den här webbplatsen. Betalning är inte aktiv, så inget debiteras och inget e-postmeddelande skickas.",
-      "planName": "A.C.E. Premium",
+      "metaDescription": "A.C.E Premium-brevet som visas på den här webbplatsen. Betalning är inte aktiv, så inget debiteras och inget e-postmeddelande skickas.",
+      "planName": "A.C.E Premium",
       "nextLabel": "Läs Premium-villkoren",
       "nextBody": "Premium är Premium-rankkonst, det animerade profilkortet, specialmärken och ELITE SEAL, plus allt i Plus. Att spara en klan i Squads är gratis för alla konton."
     }
@@ -256,7 +256,7 @@ export const pricing: TextBag["pricing"] = {
         "Plannamn: {plan}.",
         "Visningspris: {price} per månad. Beloppet är en etikett, inte en debitering.",
         "Betalning: ingen. Att välja den här planen kräver inget kort.",
-        "E-post: ingen. A.C.E. skickar inte det här brevet till en inkorg.",
+        "E-post: ingen. A.C.E skickar inte det här brevet till en inkorg.",
         "Sparad nivå: oförändrad. Specialmärken och elitsigillet visas bara när kontot redan har Premium sparat.",
         "Rating: inte till salu. Ett nytt konto börjar fortfarande på 1 200."
       ]
@@ -265,7 +265,7 @@ export const pricing: TextBag["pricing"] = {
       "title": "Vad du kan använda i dag",
       "items": [
         "Den publika webbplatsen: start, spela, turneringar, topplista, lag, regler och villkor.",
-        "Steam-inloggning via officiellt Steam OpenID. A.C.E. ber aldrig om ett Steam-lösenord.",
+        "Steam-inloggning via officiellt Steam OpenID. A.C.E ber aldrig om ett Steam-lösenord.",
         "Samma publika sidor som Free. Priset öppnar ingen separat kö."
       ]
     },
@@ -309,7 +309,7 @@ export const pricing: TextBag["pricing"] = {
   },
   "telemetry": {
     "kicker": "PLUS / PREMIUM-TELEMETRI",
-    "copy": "PANELTELEMETRI LÅST — Uppgradera till A.C.E. Plus eller Premium för att låsa upp dynamiska statistikkurvor i realtid och vapenspecialiseringsindex.",
+    "copy": "PANELTELEMETRI LÅST — Uppgradera till A.C.E Plus eller Premium för att låsa upp dynamiska statistikkurvor i realtid och vapenspecialiseringsindex.",
     "cta": "Öppna pristabellerna"
   }
 };

@@ -13,7 +13,7 @@ export const home: TextBag["home"] = {
   "ops": {
     "identityKicker": "CENTAR IDENTITETA",
     "signedOutTitle": "Prijavi se putem Steama",
-    "signedOutBody": "Poveži se službenim Steam OpenID-om da ovdje vidiš svoj Steam avatar, amblem ranga i Rating Points. A.C.E. nikad ne traži Steam lozinku.",
+    "signedOutBody": "Poveži se službenim Steam OpenID-om da ovdje vidiš svoj Steam avatar, amblem ranga i Rating Points. A.C.E nikad ne traži Steam lozinku.",
     "connect": "Prijavi se putem Steama",
     "openDeck": "Otvori Command Deck",
     "avatarAlt": "Steam avatar igrača {name}",
@@ -25,7 +25,7 @@ export const home: TextBag["home"] = {
     "matches": "Mečevi",
     "kd": "K/D",
     "na": "n/d",
-    "kdNote": "K/D prikazuje n/d jer A.C.E. još ne bilježi ubojstva i smrti.",
+    "kdNote": "K/D prikazuje n/d jer A.C.E još ne bilježi ubojstva i smrti.",
     "shieldKicker": "A.C.E SHIELD",
     "shieldChip": "U RAZVOJU",
     "shieldTitle": "Status integriteta",
@@ -43,22 +43,22 @@ export const home: TextBag["home"] = {
     "seasonBody": "Sezona 1 još nema datum početka ni završetka, pa nema odbrojavanja. Datumi će biti objavljeni na ovoj stranici prije početka sezone.",
     "statsKicker": "TVOJA STATISTIKA",
     "statsSignedOut": "Prijavi se putem Steama da vidiš svoju statistiku.",
-    "statsEmpty": "Još nema zabilježenih mečeva. Pobjede i porazi pojavit će se nakon tvog prvog zabilježenog A.C.E. meča.",
-    "statsLive": "Pobjede i porazi dolaze s tvog spremljenog A.C.E. računa.",
+    "statsEmpty": "Još nema zabilježenih mečeva. Pobjede i porazi pojavit će se nakon tvog prvog zabilježenog A.C.E meča.",
+    "statsLive": "Pobjede i porazi dolaze s tvog spremljenog A.C.E računa.",
     "statsLink": "Otvori statistiku igrača"
   },
   "meta": {
-    "title": "A.C.E. — Natjecateljska CS2 platforma",
-    "description": "A.C.E. je planirana natjecateljska platforma za Counter-Strike 2 za identitet igrača, kalibraciju, timove i turnire. Ova javna stranica je pregled. Ranked matchmaking, anti-cheat, plaćanja i nagrade nisu aktivni."
+    "title": "A.C.E — Natjecateljska CS2 platforma",
+    "description": "A.C.E je planirana natjecateljska platforma za Counter-Strike 2 za identitet igrača, kalibraciju, timove i turnire. Ova javna stranica je pregled. Ranked matchmaking, anti-cheat, plaćanja i nagrade nisu aktivni."
   },
   "opening": {
-    "dialogLabel": "A.C.E. uvod",
+    "dialogLabel": "A.C.E uvod",
     "line": "A.C.E: Autonomni anti-cheat, natjecateljska kalibracija, elitni igrači",
     "enter": "Uđi na stranicu"
   },
   "hero": {
     "logoAlt": "A.C.E. Autonomni anti-cheat, natjecateljska kalibracija, elitni igrači",
-    "arenaAlt": "A.C.E. ploča arene. Originalna slika pozornice, ne Valveova umjetnost. Na zaslonu piše televizija igara. Prijenos uživo je isključen."
+    "arenaAlt": "A.C.E ploča arene. Originalna slika pozornice, ne Valveova umjetnost. Na zaslonu piše televizija igara. Prijenos uživo je isključen."
   },
   "broadcast": {
     "kicker": "PRAĆENJE TURNIRA",
@@ -77,7 +77,7 @@ export const home: TextBag["home"] = {
   },
   "charter": {
     "kicker": "GLAVNI RADNI PROSTOR PREDVORJA",
-    "title": "A.C.E. NATJECATELJSKO PREDVORJE ZA MATCHMAKING I CENTAR ZA RASPOREĐIVANJE",
+    "title": "A.C.E NATJECATELJSKO PREDVORJE ZA MATCHMAKING I CENTAR ZA RASPOREĐIVANJE",
     "badge": "POSLUŽITELJI · USKORO",
     "lede": "Ovo predvorje ne dodjeljuje poslužitelj, ne pokreće anti-cheat klijent i ne isplaćuje nagradu.",
     "modules": [
@@ -91,7 +91,7 @@ export const home: TextBag["home"] = {
       },
       {
         "kicker": "FIKSNI 3D RANGOVI",
-        "copy": "Deset razina od Recruita do A.C.E. Legenda. Spremljeni rejting pojavljuje se nakon Steam prijave. Ova stranica ne bilježi meč.",
+        "copy": "Deset razina od Recruita do A.C.E Legenda. Spremljeni rejting pojavljuje se nakon Steam prijave. Ova stranica ne bilježi meč.",
         "chips": [
           "PRAVILO REJTINGA ZABILJEŽENO",
           "OKRETNI STOL NA OVOJ STRANICI"
@@ -134,13 +134,13 @@ export const home: TextBag["home"] = {
     "lines": [
       "A.C.E SHIELD: U RAZVOJU",
       "MATRICA HARDVERSKIH ZABRANA: NE PRIKUPLJA SE IDENTIFIKATOR",
-      "A.C.E. SHIELD VEZA: KLIJENT NIJE INSTALIRAN"
+      "A.C.E SHIELD VEZA: KLIJENT NIJE INSTALIRAN"
     ],
     "note": "Ova stranica ne pokreće kernel klijent, ne skenira memoriju i ne izdaje hardversku zabranu."
   },
   "comingSoon": {
     "badge": "NIJE DOSTUPNO",
-    "body": "A.C.E. desktop klijent nije ponuđen za preuzimanje. Sezona 1 na ovoj stranici ne instalira softver niti otvara prijavu."
+    "body": "A.C.E desktop klijent nije ponuđen za preuzimanje. Sezona 1 na ovoj stranici ne instalira softver niti otvara prijavu."
   },
   "operative": {
     "kicker": "Filmski taktički prikaz · originalno CSS okruženje · nije Valveova umjetnost",
@@ -149,7 +149,7 @@ export const home: TextBag["home"] = {
     "note": "Tekst kampanje. Ranked redovi, poslužitelji uživo i nagrade nisu aktivni."
   },
   "howStatus": {
-    "label": "A.C.E. PODSUSTAV REGISTRACIJE — KALIBRACIJSKI MOTOR SPREMAN",
+    "label": "A.C.E PODSUSTAV REGISTRACIJE — KALIBRACIJSKI MOTOR SPREMAN",
     "note": "Ranked redovi otvaraju se kad A.C.E Shield i kalibracija krenu uživo."
   },
   "shell": {

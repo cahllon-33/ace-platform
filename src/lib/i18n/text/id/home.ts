@@ -13,7 +13,7 @@ export const home: TextBag["home"] = {
   "ops": {
     "identityKicker": "PUSAT IDENTITAS",
     "signedOutTitle": "Masuk dengan Steam",
-    "signedOutBody": "Hubungkan dengan Steam OpenID resmi untuk melihat avatar Steam, lambang rank, dan Rating Points kamu di sini. A.C.E. tidak pernah meminta kata sandi Steam.",
+    "signedOutBody": "Hubungkan dengan Steam OpenID resmi untuk melihat avatar Steam, lambang rank, dan Rating Points kamu di sini. A.C.E tidak pernah meminta kata sandi Steam.",
     "connect": "Masuk dengan Steam",
     "openDeck": "Buka Command Deck",
     "avatarAlt": "Avatar Steam {name}",
@@ -25,7 +25,7 @@ export const home: TextBag["home"] = {
     "matches": "Pertandingan",
     "kd": "K/D",
     "na": "n/a",
-    "kdNote": "K/D menampilkan n/a karena A.C.E. belum mencatat kill dan death.",
+    "kdNote": "K/D menampilkan n/a karena A.C.E belum mencatat kill dan death.",
     "shieldKicker": "A.C.E SHIELD",
     "shieldChip": "DALAM PENGEMBANGAN",
     "shieldTitle": "Status integritas",
@@ -43,21 +43,21 @@ export const home: TextBag["home"] = {
     "seasonBody": "Musim 1 belum punya tanggal mulai atau selesai, jadi tidak ada hitung mundur. Tanggalnya akan diumumkan di situs ini sebelum musim dibuka.",
     "statsKicker": "STATISTIKMU",
     "statsSignedOut": "Masuk dengan Steam untuk melihat statistikmu.",
-    "statsEmpty": "Belum ada pertandingan tercatat. Menang dan kalah muncul setelah pertandingan A.C.E. pertamamu tercatat.",
-    "statsLive": "Menang dan kalah berasal dari akun A.C.E. yang tersimpan.",
+    "statsEmpty": "Belum ada pertandingan tercatat. Menang dan kalah muncul setelah pertandingan A.C.E pertamamu tercatat.",
+    "statsLive": "Menang dan kalah berasal dari akun A.C.E yang tersimpan.",
     "statsLink": "Buka statistik pemain"
   },
   "meta": {
-    "title": "A.C.E. — Platform CS2 Kompetitif",
-    "description": "A.C.E. adalah platform kompetitif Counter-Strike 2 yang direncanakan untuk identitas pemain, kalibrasi, tim, dan turnamen. Situs publik ini adalah pratinjau. Matchmaking ranked, Anti-Cheat, pembayaran, dan hadiah belum aktif."
+    "title": "A.C.E — Platform CS2 Kompetitif",
+    "description": "A.C.E adalah platform kompetitif Counter-Strike 2 yang direncanakan untuk identitas pemain, kalibrasi, tim, dan turnamen. Situs publik ini adalah pratinjau. Matchmaking ranked, Anti-Cheat, pembayaran, dan hadiah belum aktif."
   },
   "opening": {
-    "dialogLabel": "Pembukaan A.C.E.",
+    "dialogLabel": "Pembukaan A.C.E",
     "line": "A.C.E: Anti-Cheat Otonom, Kalibrasi Kompetitif, Pemain Elite",
     "enter": "Masuk ke situs"
   },
   "hero": {
-    "logoAlt": "A.C.E. Anti-Cheat Otonom, Kalibrasi Kompetitif, Pemain Elite",
+    "logoAlt": "A.C.E Anti-Cheat Otonom, Kalibrasi Kompetitif, Pemain Elite",
     "arenaAlt": "Pelat arena A.C.E. Gambar panggung orisinal, bukan karya seni Valve. Layar bertuliskan televisi game. Siaran langsung mati."
   },
   "broadcast": {
@@ -91,7 +91,7 @@ export const home: TextBag["home"] = {
       },
       {
         "kicker": "PERINGKAT 3D TETAP",
-        "copy": "Sepuluh tingkat dari Recruit hingga A.C.E. Legend. Rating tersimpan muncul setelah masuk Steam. Halaman ini tidak mencatat pertandingan.",
+        "copy": "Sepuluh tingkat dari Recruit hingga A.C.E Legend. Rating tersimpan muncul setelah masuk Steam. Halaman ini tidak mencatat pertandingan.",
         "chips": [
           "ATURAN RATING TERCATAT",
           "PUTAR MEJA DI HALAMAN INI"
@@ -134,13 +134,13 @@ export const home: TextBag["home"] = {
     "lines": [
       "A.C.E SHIELD: DALAM PENGEMBANGAN",
       "MATRIKS BAN PERANGKAT KERAS: TIDAK ADA PENGENAL YANG DIKUMPULKAN",
-      "TAUTAN A.C.E. SHIELD: TIDAK ADA KLIEN TERPASANG"
+      "TAUTAN A.C.E SHIELD: TIDAK ADA KLIEN TERPASANG"
     ],
     "note": "Situs ini tidak menjalankan klien kernel, tidak memindai memori, dan tidak mengeluarkan ban perangkat keras."
   },
   "comingSoon": {
     "badge": "TIDAK TERSEDIA",
-    "body": "Klien desktop A.C.E. tidak tersedia untuk diunduh. Musim 1 di situs ini tidak memasang perangkat lunak atau membuka check-in."
+    "body": "Klien desktop A.C.E tidak tersedia untuk diunduh. Musim 1 di situs ini tidak memasang perangkat lunak atau membuka check-in."
   },
   "operative": {
     "kicker": "Viewport taktis sinematik · lingkungan CSS orisinal · bukan seni Valve",
@@ -149,7 +149,7 @@ export const home: TextBag["home"] = {
     "note": "Teks kampanye. Antrean ranked, server langsung, dan hadiah belum aktif."
   },
   "howStatus": {
-    "label": "SUBSISTEM PENDAFTARAN A.C.E. — MESIN KALIBRASI SIAP",
+    "label": "SUBSISTEM PENDAFTARAN A.C.E — MESIN KALIBRASI SIAP",
     "note": "Antrean ranked dibuka saat A.C.E Shield dan kalibrasi aktif."
   },
   "shell": {
@@ -161,7 +161,7 @@ export const home: TextBag["home"] = {
     "connectProfileTitle": "Hubungkan Profil",
     "openProfileAria": "Buka profil Command Deck",
     "connectProfileAria": "Hubungkan Profil melalui Steam OpenID",
-    "signOutAria": "Keluar dari A.C.E."
+    "signOutAria": "Keluar dari A.C.E"
   },
   "notFound": {
     "kicker": "PENGECUALIAN GRID",

@@ -3,7 +3,7 @@ import type { TextBag } from "../types";
 export const codex: TextBag["codex"] = {
   "meta": {
     "title": "دليل المعايرة",
-    "description": "شرح مراتب A.C.E. يفتح كل سؤال إجابة كاملة عن نقاط التصنيف وقواعد تلك المرتبة. الدليل لا يطبّق نتيجة مباراة.",
+    "description": "شرح مراتب A.C.E يفتح كل سؤال إجابة كاملة عن نقاط التصنيف وقواعد تلك المرتبة. الدليل لا يطبّق نتيجة مباراة.",
     "articleTitle": "{title} — دليل المعايرة"
   },
   "groups": {
@@ -31,7 +31,7 @@ export const codex: TextBag["codex"] = {
     "searchLabel": "ابحث في الدليل",
     "searchPlaceholder": "جرّب 1950 أو Recruit أو تعادل",
     "empty": "لا يوجد مدخل يطابق هذا البحث.",
-    "columnLabel": "عمود A.C.E. رقم {n}",
+    "columnLabel": "عمود A.C.E رقم {n}",
     "pagerLabel": "صفحات الدليل",
     "first": "الأولى",
     "previous": "السابقة",
@@ -40,7 +40,7 @@ export const codex: TextBag["codex"] = {
     "pageOf": "الصفحة {n} من {m}"
   },
   "article": {
-    "breadcrumb": "A.C.E. · دليل المعايرة",
+    "breadcrumb": "A.C.E · دليل المعايرة",
     "status": "تشرح هذه الصفحة السلّم المكتوب. لا تطبّق نتيجة مباراة ولا تغيّر تصنيفًا محفوظًا.",
     "emblemAlt": "شعار {name}، المرتبة {level}",
     "emblemCaption": "المرتبة {level} · {name} · {crystal}",
@@ -63,7 +63,7 @@ export const codex: TextBag["codex"] = {
     "turnLabel": "تابع قراءة الدليل",
     "previous": "السابق",
     "next": "التالي",
-    "alsoIn": "أيضًا في A.C.E.",
+    "alsoIn": "أيضًا في A.C.E",
     "backToBoard": "العودة إلى لوحة المراتب"
   },
   "rankArticle": {
@@ -124,20 +124,20 @@ export const codex: TextBag["codex"] = {
       "detail": "يمتد النطاق من 1,800 حتى 1,949، أي 150 نقطة وليس 100. لا تزال 1,949 ضمن Sovereign. تبدأ Legend عند 1,950."
     },
     "rank-10-a-c-e-legend": {
-      "stance": "A.C.E. Legend هي العلامة الأخيرة. اسم الكريستال ACE ELITE، والاسم الرسمي A.C.E. Legend.",
+      "stance": "A.C.E Legend هي العلامة الأخيرة. اسم الكريستال ACE ELITE، والاسم الرسمي A.C.E Legend.",
       "detail": "يبدأ النطاق عند 1,950 وينتهي عند سقف المحرك، 3,000. لا توجد مرتبة حادية عشرة. لا يمكن أن يتجاوز التصنيف المحفوظ 3,000."
     }
   },
   "articles": {
     "what-a-rank-is": {
       "title": "ما هي مرتبة A.C.E.",
-      "lede": "المرتبة هي العلامة التي تضم نقاط تصنيفك المحفوظة. عشر علامات تغطي السلّم كله، من Recruit إلى A.C.E. Legend.",
+      "lede": "المرتبة هي العلامة التي تضم نقاط تصنيفك المحفوظة. عشر علامات تغطي السلّم كله، من Recruit إلى A.C.E Legend.",
       "sections": [
         {
           "heading": "رقم واحد، علامة واحدة",
           "paragraphs": [
             "يحفظ الحساب تصنيفًا تنافسيًا. يقرأ السلّم هذا الرقم ويعيد أعلى مرتبة بلغ الرقم حدها الأدنى. لا تحمل مرتبتين في وقت واحد.",
-            "Recruit هي المرتبة 1، وA.C.E. Legend هي المرتبة 10. الاسم الرسمي هو الاسم في السلّم، والكلمة الأقصر على الشعار هي اسم الكريستال للمرتبة نفسها.",
+            "Recruit هي المرتبة 1، وA.C.E Legend هي المرتبة 10. الاسم الرسمي هو الاسم في السلّم، والكلمة الأقصر على الشعار هي اسم الكريستال للمرتبة نفسها.",
             "يشرح هذا الدليل السلّم المكتوب. لا يطبّق نتيجة مباراة ولا يغيّر تصنيفًا محفوظًا."
           ]
         },
@@ -145,7 +145,7 @@ export const codex: TextBag["codex"] = {
           "heading": "كيف تتوزع الحدود الدنيا",
           "paragraphs": [
             "تغطي Recruit بداية السلّم. تبدأ Operative عند 1,100. ومن Vanguard حتى Grandmaster، يرتفع كل حد جديد بمقدار 100 نقطة: 1,200 و1,300 و1,400 و1,500 و1,600 ثم 1,700.",
-            "تبدأ Sovereign عند 1,800 وتبقى حتى 1,949. تبدأ A.C.E. Legend عند 1,950. سقف المحرك 3,000، لذا فإن Legend هي أطول نطاق."
+            "تبدأ Sovereign عند 1,800 وتبقى حتى 1,949. تبدأ A.C.E Legend عند 1,950. سقف المحرك 3,000، لذا فإن Legend هي أطول نطاق."
           ]
         },
         {
@@ -164,14 +164,14 @@ export const codex: TextBag["codex"] = {
         {
           "heading": "لماذا يوجد الاثنان",
           "paragraphs": [
-            "يستخدم المحرك والملف الشخصي الاسم الرسمي: Recruit وOperative وVanguard وSpecialist وVeteran وElite وMaster وGrandmaster وSovereign وA.C.E. Legend.",
+            "يستخدم المحرك والملف الشخصي الاسم الرسمي: Recruit وOperative وVanguard وSpecialist وVeteran وElite وMaster وGrandmaster وSovereign وA.C.E Legend.",
             "يحمل الشعار أيضًا اسم كريستال: IRON وBRONZE وSILVER وGOLD وPLATINUM وDIAMOND وMASTER وGRANDMASTER وIMMORTAL وACE ELITE. هذا الاسم عمل فني، لا ينشئ مرتبة حادية عشرة ولا يحفظ رقمًا ثانيًا."
           ]
         },
         {
           "heading": "أين يختلفان",
           "paragraphs": [
-            "اسم كريستال Specialist هو GOLD، وVeteran هو PLATINUM، وElite هو DIAMOND، وSovereign هو IMMORTAL، وA.C.E. Legend هو ACE ELITE. وفي كل حالة يبقى الحد الأدنى تابعًا للاسم الرسمي.",
+            "اسم كريستال Specialist هو GOLD، وVeteran هو PLATINUM، وElite هو DIAMOND، وSovereign هو IMMORTAL، وA.C.E Legend هو ACE ELITE. وفي كل حالة يبقى الحد الأدنى تابعًا للاسم الرسمي.",
             "تستخدم Master وGrandmaster الكلمة نفسها في الموضعين."
           ]
         }
@@ -287,7 +287,7 @@ export const codex: TextBag["codex"] = {
           "heading": "نقاط التوقف",
           "paragraphs": [
             "الخسارة عند 100 نقطة تصنيف تبقى عند 100. والفوز عند 3,000 يبقى عند 3,000. الحد الأدنى لـ Recruit في السلّم مكتوب 0، لكن الرقم المحفوظ لا يستخدم أبدًا ما دون 100.",
-            "1,949 هي Sovereign، و1,950 هي A.C.E. Legend. لا توجد علامة بينهما."
+            "1,949 هي Sovereign، و1,950 هي A.C.E Legend. لا توجد علامة بينهما."
           ]
         },
         {
@@ -334,7 +334,7 @@ export const codex: TextBag["codex"] = {
           "heading": "ما لا يفعله المكتب",
           "paragraphs": [
             "زر البحث عن مباراة لا يبحث عن خصوم ولا يغيّر نقاط التصنيف. تبقى مرتبة الحساب هي الرقم المحفوظ الذي يقرؤه السلّم في هذا الدليل.",
-            "لا توجد قائمة انتظار عليا منفصلة فوق Legend. A.C.E. Legend هي العلامة الأخيرة، وتبدأ عند 1,950 نقطة تصنيف."
+            "لا توجد قائمة انتظار عليا منفصلة فوق Legend. A.C.E Legend هي العلامة الأخيرة، وتبدأ عند 1,950 نقطة تصنيف."
           ]
         }
       ]
@@ -440,12 +440,12 @@ export const codex: TextBag["codex"] = {
     },
     "how-a-roster-is-assembled": {
       "title": "كيف تُجمع التشكيلة",
-      "lede": "يدعو القائد لاعبًا لديه حساب A.C.E. بالفعل. لا يوجد رابط مشاركة عام، ولا تُطلب كلمة مرور Steam أبدًا.",
+      "lede": "يدعو القائد لاعبًا لديه حساب A.C.E بالفعل. لا يوجد رابط مشاركة عام، ولا تُطلب كلمة مرور Steam أبدًا.",
       "sections": [
         {
           "heading": "الدعوة الموجودة",
           "paragraphs": [
-            "في صفحة الفرق، يلصق القائد المسجّل دخوله SteamID64 أو معرّف حساب A.C.E. يجب أن يكون الحساب مرتبطًا مسبقًا عبر Steam OpenID. يكتب الخادم دعوة معلّقة عندما تقبلها قاعدة البيانات.",
+            "في صفحة الفرق، يلصق القائد المسجّل دخوله SteamID64 أو معرّف حساب A.C.E يجب أن يكون الحساب مرتبطًا مسبقًا عبر Steam OpenID. يكتب الخادم دعوة معلّقة عندما تقبلها قاعدة البيانات.",
             "تضم التشكيلة خمسة لاعبين بمن فيهم القائد. لا يمكن للقائد دعوة حسابه الخاص. يُرفض اللاعب الموجود في التشكيلة بالفعل. إذا تعطلت قاعدة البيانات، تفشل الدعوة ولا تُحفظ."
           ]
         },

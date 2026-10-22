@@ -5,10 +5,10 @@ export const account: TextBag["account"] = {
     "metaTitle": "إحصائيات اللاعب",
     "kicker": "إحصائيات اللاعب",
     "title": "إحصائيات اللاعب",
-    "lede": "تغيّر التقييم من ماتشاتك المتسجلة في A.C.E.، مع مؤشرات نسبة الهيدشوت والدقة. موجود في A.C.E Plus (4$ في الشهر) وA.C.E Premium (7$ في الشهر).",
+    "lede": "تغيّر التقييم من ماتشاتك المتسجلة في A.C.E، مع مؤشرات نسبة الهيدشوت والدقة. موجود في A.C.E Plus (4$ في الشهر) وA.C.E Premium (7$ في الشهر).",
     "movementTitle": "تغيّر التقييم",
     "movementNote": "كل نقطة تغيير في التقييم متسجل من ماتش A.C.E.",
-    "noMatches": "مفيش ماتشات متسجلة لسه، فالرسم فاضي. هيتملي بعد أول ماتش A.C.E. يتسجل ليك.",
+    "noMatches": "مفيش ماتشات متسجلة لسه، فالرسم فاضي. هيتملي بعد أول ماتش A.C.E يتسجل ليك.",
     "currentLabel": "التقييم الحالي",
     "netLabel": "صافي التغيّر",
     "changesLabel": "التغييرات المتسجلة",
@@ -21,7 +21,7 @@ export const account: TextBag["account"] = {
     "lockedBody": "خطتك المتسجلة Free. Plus (4$ في الشهر) وPremium (7$ في الشهر) بيفتحوا الصفحة دي. قريب: الدفع لسه مش موجود.",
     "signIn": "ادخل بـ Steam عشان تشوف إحصائياتك.",
     "plansLink": "شوف الخطط",
-    "rosterNote": "بروفايل تشكيلة كمثال: اللاعيبة دول معندهمش ماتشات A.C.E. متسجلة، فالإحصائيات مش بتعرض أرقام.",
+    "rosterNote": "بروفايل تشكيلة كمثال: اللاعيبة دول معندهمش ماتشات A.C.E متسجلة، فالإحصائيات مش بتعرض أرقام.",
     "dashTitle": "الإحصائيات والتحليل",
     "dashStats": "افتح إحصائيات اللاعب",
     "dashAnalysis": "افتح تحليل الماتشات (Premium)",
@@ -38,7 +38,7 @@ export const account: TextBag["account"] = {
     "stats": {
       "accountStatus": "حالة الحساب",
       "subscription": "الاشتراك",
-      "rank": "مرتبة A.C.E.",
+      "rank": "مرتبة A.C.E",
       "ratingPoints": "نقاط التصنيف",
       "wins": "الانتصارات",
       "losses": "الهزائم",
@@ -71,7 +71,7 @@ export const account: TextBag["account"] = {
     "rankedButton": "ابحث عن مباراة مصنفة",
     "roster": {
       "title": "تشكيلة 5v5",
-      "body": "قائد واحد وأربع دعوات. يدعو القادة معرّفات حسابات A.C.E. أخرى، ولا تُنشأ هذه الحسابات إلا بعد تسجيل دخول موثّق عبر Steam."
+      "body": "قائد واحد وأربع دعوات. يدعو القادة معرّفات حسابات A.C.E أخرى، ولا تُنشأ هذه الحسابات إلا بعد تسجيل دخول موثّق عبر Steam."
     },
     "pendingInvites": "الدعوات المعلّقة"
   },
@@ -95,7 +95,7 @@ export const account: TextBag["account"] = {
     "meta": {
       "notFoundTitle": "الملف الشخصي للاعب",
       "title": "{name} · ملف A.C.E.",
-      "description": "ملف لاعب A.C.E. تتيح جلسات Plus وPremium رسومًا بيانية لاتجاهات القياس."
+      "description": "ملف لاعب A.C.E تتيح جلسات Plus وPremium رسومًا بيانية لاتجاهات القياس."
     },
     "kicker": "هوية اللاعب",
     "bannerPlaceholder": "لافتة الملف الشخصي · قريبًا",
@@ -132,7 +132,7 @@ export const account: TextBag["account"] = {
     "back": "العودة إلى تشكيلة العشيرة"
   },
   "networks": {
-    "note": "يبقى الرابط المكتوب هنا في هذا المتصفح ولا يُحفظ. لا تطلب A.C.E. كلمة مرور Steam أبدًا.",
+    "note": "يبقى الرابط المكتوب هنا في هذا المتصفح ولا يُحفظ. لا تطلب A.C.E كلمة مرور Steam أبدًا.",
     "labels": {
       "steam": "ملف Steam"
     },
@@ -150,9 +150,9 @@ export const account: TextBag["account"] = {
       "title": "خطأ في تسجيل الدخول"
     },
     "title": "لم يكتمل تسجيل الدخول عبر Steam",
-    "notConfigured": "لم يُضبط Steam OpenID على هذا الخادم بعد. لا تطلب A.C.E. كلمة مرور Steam أبدًا.",
-    "unavailable": "لم يستجب Steam لطلب التحقق. حاول مجددًا بعد قليل. لا تطلب A.C.E. كلمة مرور Steam أبدًا.",
-    "unverified": "تعذّر التحقق من استجابة OpenID على الخادم. لا تطلب A.C.E. كلمة مرور Steam أبدًا.",
+    "notConfigured": "لم يُضبط Steam OpenID على هذا الخادم بعد. لا تطلب A.C.E كلمة مرور Steam أبدًا.",
+    "unavailable": "لم يستجب Steam لطلب التحقق. حاول مجددًا بعد قليل. لا تطلب A.C.E كلمة مرور Steam أبدًا.",
+    "unverified": "تعذّر التحقق من استجابة OpenID على الخادم. لا تطلب A.C.E كلمة مرور Steam أبدًا.",
     "returnHome": "العودة إلى الرئيسية"
   }
 };

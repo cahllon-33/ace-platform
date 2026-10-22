@@ -4,18 +4,18 @@ export const features: TextBag["features"] = {
   "page": {
     "meta": {
       "title": "Fonctions",
-      "description": "Architecture spécifiée du noyau anti-triche A.C.E., liaison biométrique par scan facial et dix paliers de calibrage du niveau. Ces systèmes ne sont pas en ligne sur ce site."
+      "description": "Architecture spécifiée du noyau anti-triche A.C.E, liaison biométrique par scan facial et dix paliers de calibrage du niveau. Ces systèmes ne sont pas en ligne sur ce site."
     },
     "header": {
       "kicker": "ACE-FONCTIONS / NOYAU / SCAN FACIAL / CALIBRAGE",
       "title": "Spécification des fonctions de la plateforme",
-      "lede": "Cette page est la carte technique de niveau production de trois systèmes A.C.E. prévus : le noyau anti-triche autonome, la liaison biométrique par scan facial et l'échelle de calibrage du niveau en dix paliers. Rien sur cette page n'est un noyau en direct, un produit caméra en direct ni une file classée en direct. Steam OpenID, les équipes 5v5, les maquettes de tableaux et les calculs de cote de type Elo existent dans ce dépôt. Les serveurs CS2 dédiés, les paiements, les prix et un client d'intégrité téléchargeable n'existent pas."
+      "lede": "Cette page est la carte technique de niveau production de trois systèmes A.C.E prévus : le noyau anti-triche autonome, la liaison biométrique par scan facial et l'échelle de calibrage du niveau en dix paliers. Rien sur cette page n'est un noyau en direct, un produit caméra en direct ni une file classée en direct. Steam OpenID, les équipes 5v5, les maquettes de tableaux et les calculs de cote de type Elo existent dans ce dépôt. Les serveurs CS2 dédiés, les paiements, les prix et un client d'intégrité téléchargeable n'existent pas."
     },
     "kernel": {
       "title": "Architecture du noyau anti-triche",
       "paragraphs": [
         "L'Enveloppe sécurisée autonome spécifiée est un client d'intégrité lié au matériel qui fonctionnerait à côté de Counter-Strike 2 sur la machine du joueur et transmettrait un état signé ALLOW ou DENY aux serveurs gérés par A.C.E. La conception du noyau est fermée en cas d'échec : si le client manque, est arrêté, obsolète, usurpé ou non vérifié, l'admission classée est refusée. Le navigateur ne fait jamais foi pour l'éligibilité. TROUVER UN MATCH classé sur ce site se ferme déjà en cas d'échec pour cette raison.",
-        "Les couches de noyau prévues comprennent une poignée de main en mode utilisateur qui lie le SteamID 64 bits vérifié au compte A.C.E., une surface d'attestation de l'identifiant matériel (HWID), une liste de surveillance des signatures des familles de triche connues et une route d'éligibilité de serveur à serveur protégée par un secret partagé. Une validation de signature de triche, un contrôle d'intégrité refusé ou un identifiant d'appareil usurpé est spécifié pour entraîner un changement immédiat du statut du compte en BANNED ou PERM_BANNED et, lorsqu'un produit facturé existera, la perte totale du temps d'abonnement prépayé sans aucune obligation de remboursement. Aucun client de ce type n'est livré avec ce site. Les cartes de téléchargement Bientôt ne sont qu'une mise en page."
+        "Les couches de noyau prévues comprennent une poignée de main en mode utilisateur qui lie le SteamID 64 bits vérifié au compte A.C.E, une surface d'attestation de l'identifiant matériel (HWID), une liste de surveillance des signatures des familles de triche connues et une route d'éligibilité de serveur à serveur protégée par un secret partagé. Une validation de signature de triche, un contrôle d'intégrité refusé ou un identifiant d'appareil usurpé est spécifié pour entraîner un changement immédiat du statut du compte en BANNED ou PERM_BANNED et, lorsqu'un produit facturé existera, la perte totale du temps d'abonnement prépayé sans aucune obligation de remboursement. Aucun client de ce type n'est livré avec ce site. Les cartes de téléchargement Bientôt ne sont qu'une mise en page."
       ],
       "stats": [
         {
@@ -35,7 +35,7 @@ export const features: TextBag["features"] = {
     "faceScan": {
       "title": "Liaison biométrique par scan facial",
       "paragraphs": [
-        "Le scan facial est une couche future de liaison d'identité spécifiée, pas un produit caméra sur ce site. La conception prévue ne lierait, qu'après un consentement explicite et un examen juridique distinct, un modèle facial vérifié par détection du vivant au même compte A.C.E. qui détient déjà un SteamID vérifié par le serveur. L'objectif est de résister au partage de compte utilisé pour contourner une restriction antérieure. A.C.E. ne collecte aujourd'hui ni images faciales, ni empreintes faciales numériques, ni adresses e-mail, ni empreintes matérielles. La politique de confidentialité en vigueur reste la stricte nécessité : uniquement le SteamID 64 bits vérifié et le nom d'affichage Steam public.",
+        "Le scan facial est une couche future de liaison d'identité spécifiée, pas un produit caméra sur ce site. La conception prévue ne lierait, qu'après un consentement explicite et un examen juridique distinct, un modèle facial vérifié par détection du vivant au même compte A.C.E qui détient déjà un SteamID vérifié par le serveur. L'objectif est de résister au partage de compte utilisé pour contourner une restriction antérieure. A.C.E ne collecte aujourd'hui ni images faciales, ni empreintes faciales numériques, ni adresses e-mail, ni empreintes matérielles. La politique de confidentialité en vigueur reste la stricte nécessité : uniquement le SteamID 64 bits vérifié et le nom d'affichage Steam public.",
         "Si Face Scan est un jour mis en œuvre, il ne remplacera pas Steam OpenID, ne servira pas à vendre de la publicité comportementale et n'ouvrira pas à lui seul les files classées. L'accès aux parties classées exigera toujours un parcours Anti-Cheat vérifié. Tant que cet examen n'existe pas, tout panneau Face Scan du lobby est un aperçu de design."
       ]
     },
@@ -57,8 +57,8 @@ export const features: TextBag["features"] = {
   },
   "loot": {
     "kicker": "Cosmétiques · bientôt",
-    "title": "ARCHITECTURE DE BUTIN A.C.E. — DROPS D'ARMES",
-    "lede": "Finitions originales A.C.E., disponibles avec la boutique. Les cosmétiques n'affectent jamais la compétition.",
+    "title": "ARCHITECTURE DE BUTIN A.C.E — DROPS D'ARMES",
+    "lede": "Finitions originales A.C.E, disponibles avec la boutique. Les cosmétiques n'affectent jamais la compétition.",
     "checkout": "Paiement · bientôt"
   },
   "identityPreview": {
@@ -85,23 +85,23 @@ export const features: TextBag["features"] = {
       },
       "anti-cheat": {
         "title": "Présentation de l'anti-triche",
-        "body": "A.C.E. n'a pas de produit anti-triche fonctionnel. Le matchmaking classé reste fermé tant qu'une vraie intégration n'existe pas."
+        "body": "A.C.E n'a pas de produit anti-triche fonctionnel. Le matchmaking classé reste fermé tant qu'une vraie intégration n'existe pas."
       },
       "download-client": {
         "title": "Télécharger le client",
-        "body": "Il n'y a pas de client de bureau A.C.E. à télécharger. Un client natif ne fait pas partie de l'étape web actuelle."
+        "body": "Il n'y a pas de client de bureau A.C.E à télécharger. Un client natif ne fait pas partie de l'étape web actuelle."
       },
       "mobile-app": {
         "title": "Application mobile",
-        "body": "L'application mobile A.C.E. est prévue dans la feuille de route."
+        "body": "L'application mobile A.C.E est prévue dans la feuille de route."
       },
       "news": {
         "title": "Actualités",
-        "body": "La salle de presse A.C.E. ouvrira bientôt."
+        "body": "La salle de presse A.C.E ouvrira bientôt."
       },
       "about": {
         "title": "À propos",
-        "body": "A.C.E. est un site de compétition Counter-Strike 2 indépendant, en aperçu public. Il n'est pas affilié à Valve."
+        "body": "A.C.E est un site de compétition Counter-Strike 2 indépendant, en aperçu public. Il n'est pas affilié à Valve."
       },
       "advertising": {
         "title": "Publicité",

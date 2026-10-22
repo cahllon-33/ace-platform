@@ -3,7 +3,7 @@ import type { TextBag } from "../types";
 export const desk: TextBag["desk"] = {
   shop: {
     meta: {
-      title: "A.C.E. 마켓플레이스",
+      title: "A.C.E 마켓플레이스",
       description:
         "챔피언십 보상 카드입니다. 상점과 보상은 곧 열립니다.",
     },
@@ -29,7 +29,7 @@ export const desk: TextBag["desk"] = {
         price: "예시 전용 · 현금 가치 없음",
       },
       crown: {
-        name: "A.C.E. 왕관 아바타 프레임",
+        name: "A.C.E 왕관 아바타 프레임",
         tag: "프로필 장식",
         price: "곧 출시",
       },
@@ -49,14 +49,14 @@ export const desk: TextBag["desk"] = {
     meta: {
       title: "지원",
       description:
-        "A.C.E. 도움말 센터입니다. 안티치트, 랭크, 결제 지원은 경쟁 베타와 함께 열립니다.",
+        "A.C.E 도움말 센터입니다. 안티치트, 랭크, 결제 지원은 경쟁 베타와 함께 열립니다.",
     },
   },
   contact: {
     meta: {
       title: "문의",
       description:
-        "A.C.E.에 문의하세요. 온라인 양식은 곧 열립니다.",
+        "A.C.E에 문의하세요. 온라인 양식은 곧 열립니다.",
     },
   },
   contactEmail: {

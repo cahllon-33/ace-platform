@@ -44,7 +44,7 @@ export const play: TextBag["play"] = {
           "Solo, duo ili trio",
           "Planirani raspon od {points} bodova rejtinga",
           "Steam profil mora već biti spremljen",
-          "Koristi A.C.E. pravilo rejtinga · pretraga uskoro"
+          "Koristi A.C.E pravilo rejtinga · pretraga uskoro"
         ]
       },
       "elite": {

@@ -4,7 +4,7 @@ export const codex: TextBag["codex"] = {
   meta: {
     title: "Códice de Calibração",
     description:
-      "Os ranks da A.C.E. explicados. Cada pergunta abre uma resposta completa sobre os Pontos de Rating e o código desse rank. O códice não aplica nenhuma partida.",
+      "Os ranks da A.C.E explicados. Cada pergunta abre uma resposta completa sobre os Pontos de Rating e o código desse rank. O códice não aplica nenhuma partida.",
     articleTitle: "{title} — Códice de Calibração",
   },
   groups: {
@@ -33,7 +33,7 @@ export const codex: TextBag["codex"] = {
     searchLabel: "Pesquisar no códice",
     searchPlaceholder: "Experimente 1950, Recruit ou empate",
     empty: "Nenhuma entrada corresponde a essa pesquisa.",
-    columnLabel: "Coluna A.C.E. {n}",
+    columnLabel: "Coluna A.C.E {n}",
     pagerLabel: "Páginas do códice",
     first: "Primeira",
     previous: "Anterior",
@@ -42,7 +42,7 @@ export const codex: TextBag["codex"] = {
     pageOf: "Página {n} de {m}",
   },
   article: {
-    breadcrumb: "A.C.E. · Códice de Calibração",
+    breadcrumb: "A.C.E · Códice de Calibração",
     status:
       "Esta página explica a escada escrita. Não aplica nenhuma partida e não altera nenhum rating guardado.",
     emblemAlt: "Emblema de {name}, rank {level}",
@@ -67,7 +67,7 @@ export const codex: TextBag["codex"] = {
     turnLabel: "Continuar pelo códice",
     previous: "Anterior",
     next: "Seguinte",
-    alsoIn: "Também na A.C.E.",
+    alsoIn: "Também na A.C.E",
     backToBoard: "Voltar ao quadro de ranks",
   },
   rankArticle: {
@@ -146,7 +146,7 @@ export const codex: TextBag["codex"] = {
     },
     "rank-10-a-c-e-legend": {
       stance:
-        "A.C.E. Legend é a última marca. O rótulo de cristal é ACE ELITE. O nome oficial é A.C.E. Legend.",
+        "A.C.E Legend é a última marca. O rótulo de cristal é ACE ELITE. O nome oficial é A.C.E Legend.",
       detail:
         "A faixa abre aos 1.950 e termina no teto do motor, 3.000. Não existe um décimo primeiro rank. Um rating guardado não pode subir acima de 3.000.",
     },
@@ -154,13 +154,13 @@ export const codex: TextBag["codex"] = {
   articles: {
     "what-a-rank-is": {
       title: "O que é um rank A.C.E.",
-      lede: "Um rank é a marca que contém os seus Pontos de Rating guardados. Dez marcas cobrem toda a escada, de Recruit a A.C.E. Legend.",
+      lede: "Um rank é a marca que contém os seus Pontos de Rating guardados. Dez marcas cobrem toda a escada, de Recruit a A.C.E Legend.",
       sections: [
         {
           heading: "Um número, uma marca",
           paragraphs: [
             "A conta guarda um rating competitivo. A escada lê esse número e devolve o rank mais alto cujo piso o número já atingiu. Não tem dois ranks ao mesmo tempo.",
-            "Recruit é o rank 1. A.C.E. Legend é o rank 10. O nome oficial é o nome que consta da escada. A palavra mais curta no emblema é o rótulo de cristal do mesmo rank.",
+            "Recruit é o rank 1. A.C.E Legend é o rank 10. O nome oficial é o nome que consta da escada. A palavra mais curta no emblema é o rótulo de cristal do mesmo rank.",
             "Este códice explica a escada escrita. Não aplica nenhuma partida e não altera nenhum rating guardado.",
           ],
         },
@@ -168,7 +168,7 @@ export const codex: TextBag["codex"] = {
           heading: "Como se dispõem os pisos",
           paragraphs: [
             "Recruit cobre o início da escada. Operative abre aos 1.100. De Vanguard a Grandmaster, cada novo piso fica 100 pontos acima: 1.200, 1.300, 1.400, 1.500, 1.600 e depois 1.700.",
-            "Sovereign abre aos 1.800 e mantém a conta até aos 1.949. A.C.E. Legend abre aos 1.950. O teto do motor é 3.000, pelo que Legend é a faixa mais longa.",
+            "Sovereign abre aos 1.800 e mantém a conta até aos 1.949. A.C.E Legend abre aos 1.950. O teto do motor é 3.000, pelo que Legend é a faixa mais longa.",
           ],
         },
         {
@@ -187,14 +187,14 @@ export const codex: TextBag["codex"] = {
         {
           heading: "Porque existem os dois",
           paragraphs: [
-            "O motor e o perfil utilizam o nome oficial: Recruit, Operative, Vanguard, Specialist, Veteran, Elite, Master, Grandmaster, Sovereign, A.C.E. Legend.",
+            "O motor e o perfil utilizam o nome oficial: Recruit, Operative, Vanguard, Specialist, Veteran, Elite, Master, Grandmaster, Sovereign, A.C.E Legend.",
             "O emblema tem também um rótulo de cristal: IRON, BRONZE, SILVER, GOLD, PLATINUM, DIAMOND, MASTER, GRANDMASTER, IMMORTAL, ACE ELITE. Esse rótulo é arte. Não cria um décimo primeiro rank e não guarda um segundo número.",
           ],
         },
         {
           heading: "Onde divergem",
           paragraphs: [
-            "O rótulo de cristal de Specialist é GOLD. O de Veteran é PLATINUM. O de Elite é DIAMOND. O de Sovereign é IMMORTAL. O de A.C.E. Legend é ACE ELITE. Em todos os casos, o piso continua a pertencer ao nome oficial.",
+            "O rótulo de cristal de Specialist é GOLD. O de Veteran é PLATINUM. O de Elite é DIAMOND. O de Sovereign é IMMORTAL. O de A.C.E Legend é ACE ELITE. Em todos os casos, o piso continua a pertencer ao nome oficial.",
             "Master e Grandmaster usam a mesma palavra nos dois sítios.",
           ],
         },
@@ -310,7 +310,7 @@ export const codex: TextBag["codex"] = {
           heading: "Os limites",
           paragraphs: [
             "Uma derrota com 100 Pontos de Rating fica nos 100. Uma vitória com 3.000 fica nos 3.000. O piso de Recruit na escada está escrito como 0, mas o número guardado nunca usa o intervalo abaixo de 100.",
-            "1.949 é Sovereign. 1.950 é A.C.E. Legend. Não existe nenhuma marca intermédia.",
+            "1.949 é Sovereign. 1.950 é A.C.E Legend. Não existe nenhuma marca intermédia.",
           ],
         },
         {
@@ -357,7 +357,7 @@ export const codex: TextBag["codex"] = {
           heading: "O que o balcão não faz",
           paragraphs: [
             "ENCONTRAR PARTIDA não procura adversários. Não altera os Pontos de Rating. O rank de uma conta continua a ser o número guardado, lido pela escada deste códice.",
-            "Não existe nenhuma fila de topo separada acima de Legend. A.C.E. Legend é a última marca e abre aos 1.950 Pontos de Rating.",
+            "Não existe nenhuma fila de topo separada acima de Legend. A.C.E Legend é a última marca e abre aos 1.950 Pontos de Rating.",
           ],
         },
       ],

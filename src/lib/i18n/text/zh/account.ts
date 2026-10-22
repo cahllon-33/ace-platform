@@ -5,10 +5,10 @@ export const account: TextBag["account"] = {
     "metaTitle": "玩家数据",
     "kicker": "玩家数据",
     "title": "玩家数据",
-    "lede": "基于你已记录的 A.C.E. 比赛的积分变化，并配有爆头率和命中率仪表。包含在 A.C.E Plus（每月 $4）和 A.C.E Premium（每月 $7）中。",
+    "lede": "基于你已记录的 A.C.E 比赛的积分变化，并配有爆头率和命中率仪表。包含在 A.C.E Plus（每月 $4）和 A.C.E Premium（每月 $7）中。",
     "movementTitle": "积分变化",
-    "movementNote": "每个点都是从一场已记录的 A.C.E. 比赛写入的积分变化。",
-    "noMatches": "尚无已记录的比赛，因此图表为空。你的第一场 A.C.E. 比赛被记录后将显示数据。",
+    "movementNote": "每个点都是从一场已记录的 A.C.E 比赛写入的积分变化。",
+    "noMatches": "尚无已记录的比赛，因此图表为空。你的第一场 A.C.E 比赛被记录后将显示数据。",
     "currentLabel": "当前积分",
     "netLabel": "净变化",
     "changesLabel": "已记录变化",
@@ -21,7 +21,7 @@ export const account: TextBag["account"] = {
     "lockedBody": "你保存的方案是 Free。Plus（每月 $4）和 Premium（每月 $7）都能解锁本页。即将推出：结账功能尚未上线。",
     "signIn": "使用 Steam 登录以查看你的玩家数据。",
     "plansLink": "查看方案",
-    "rosterNote": "示例阵容资料：这些选手没有已记录的 A.C.E. 比赛，因此数据不显示任何数字。",
+    "rosterNote": "示例阵容资料：这些选手没有已记录的 A.C.E 比赛，因此数据不显示任何数字。",
     "dashTitle": "数据与分析",
     "dashStats": "打开玩家数据",
     "dashAnalysis": "打开比赛分析（Premium）",
@@ -38,7 +38,7 @@ export const account: TextBag["account"] = {
     "stats": {
       "accountStatus": "账户状态",
       "subscription": "订阅",
-      "rank": "A.C.E. 段位",
+      "rank": "A.C.E 段位",
       "ratingPoints": "评分",
       "wins": "胜场",
       "losses": "负场",
@@ -71,7 +71,7 @@ export const account: TextBag["account"] = {
     "rankedButton": "寻找排位比赛",
     "roster": {
       "title": "5v5 阵容",
-      "body": "一名队长,四个邀请。队长可邀请其他 A.C.E. 账户 ID,这些账户仅在通过 Steam 登录验证后创建。"
+      "body": "一名队长,四个邀请。队长可邀请其他 A.C.E 账户 ID,这些账户仅在通过 Steam 登录验证后创建。"
     },
     "pendingInvites": "待处理的邀请"
   },
@@ -86,7 +86,7 @@ export const account: TextBag["account"] = {
     },
     "invite": {
       "failed": "邀请失败。",
-      "label": "通过 SteamID 或 A.C.E. 账户 ID 邀请自由玩家",
+      "label": "通过 SteamID 或 A.C.E 账户 ID 邀请自由玩家",
       "submitAria": "发送战队邀请",
       "submit": "发送邀请"
     }
@@ -94,8 +94,8 @@ export const account: TextBag["account"] = {
   "profile": {
     "meta": {
       "notFoundTitle": "玩家资料",
-      "title": "{name} · A.C.E. 资料",
-      "description": "A.C.E. 玩家档案。Plus 和 Premium 会话可解锁遥测趋势图。"
+      "title": "{name} · A.C.E 资料",
+      "description": "A.C.E 玩家档案。Plus 和 Premium 会话可解锁遥测趋势图。"
     },
     "kicker": "玩家身份",
     "bannerPlaceholder": "资料横幅 · 即将推出",
@@ -132,7 +132,7 @@ export const account: TextBag["account"] = {
     "back": "返回战队阵容"
   },
   "networks": {
-    "note": "在此输入的链接仅保留在此浏览器中,不会被保存。A.C.E. 绝不会索要 Steam 密码。",
+    "note": "在此输入的链接仅保留在此浏览器中,不会被保存。A.C.E 绝不会索要 Steam 密码。",
     "labels": {
       "steam": "Steam 个人资料"
     },
@@ -150,9 +150,9 @@ export const account: TextBag["account"] = {
       "title": "登录错误"
     },
     "title": "Steam 登录未完成",
-    "notConfigured": "此服务器尚未配置 Steam OpenID。A.C.E. 绝不会索要 Steam 密码。",
-    "unavailable": "Steam 未响应验证请求。请稍后重试。A.C.E. 绝不会索要 Steam 密码。",
-    "unverified": "服务器无法验证 OpenID 回调。A.C.E. 绝不会索要 Steam 密码。",
+    "notConfigured": "此服务器尚未配置 Steam OpenID。A.C.E 绝不会索要 Steam 密码。",
+    "unavailable": "Steam 未响应验证请求。请稍后重试。A.C.E 绝不会索要 Steam 密码。",
+    "unverified": "服务器无法验证 OpenID 回调。A.C.E 绝不会索要 Steam 密码。",
     "returnHome": "返回首页"
   }
 };

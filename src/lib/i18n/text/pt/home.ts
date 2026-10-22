@@ -13,7 +13,7 @@ export const home: TextBag["home"] = {
   "ops": {
     "identityKicker": "CENTRAL DE IDENTIDADE",
     "signedOutTitle": "Entrar com a Steam",
-    "signedOutBody": "Ligue-se com o Steam OpenID oficial para ver aqui o seu avatar da Steam, o seu emblema de rank e os seus Rating Points. A A.C.E. nunca pede a palavra-passe da Steam.",
+    "signedOutBody": "Ligue-se com o Steam OpenID oficial para ver aqui o seu avatar da Steam, o seu emblema de rank e os seus Rating Points. A A.C.E nunca pede a palavra-passe da Steam.",
     "connect": "Entrar com a Steam",
     "openDeck": "Abrir o Command Deck",
     "avatarAlt": "Avatar da Steam de {name}",
@@ -25,7 +25,7 @@ export const home: TextBag["home"] = {
     "matches": "Partidas",
     "kd": "K/D",
     "na": "n/d",
-    "kdNote": "O K/D mostra n/d porque a A.C.E. ainda não regista abates e mortes.",
+    "kdNote": "O K/D mostra n/d porque a A.C.E ainda não regista abates e mortes.",
     "shieldKicker": "A.C.E SHIELD",
     "shieldChip": "EM DESENVOLVIMENTO",
     "shieldTitle": "Estado de integridade",
@@ -43,21 +43,21 @@ export const home: TextBag["home"] = {
     "seasonBody": "A Temporada 1 ainda não tem data de início nem de fim, por isso não há contagem decrescente. As datas serão publicadas neste site antes do início da temporada.",
     "statsKicker": "AS SUAS ESTATÍSTICAS",
     "statsSignedOut": "Inicie sessão com a Steam para ver as suas estatísticas.",
-    "statsEmpty": "Ainda não há partidas registadas. Vitórias e derrotas aparecem após a sua primeira partida A.C.E. registada.",
-    "statsLive": "Vitórias e derrotas vêm da sua conta A.C.E. guardada.",
+    "statsEmpty": "Ainda não há partidas registadas. Vitórias e derrotas aparecem após a sua primeira partida A.C.E registada.",
+    "statsLive": "Vitórias e derrotas vêm da sua conta A.C.E guardada.",
     "statsLink": "Abrir estatísticas de jogador"
   },
   "meta": {
-    "title": "A.C.E. — Plataforma competitiva de CS2",
-    "description": "A A.C.E. é uma plataforma competitiva de Counter-Strike 2 planeada para identidade de jogadores, calibração, equipas e torneios. Este sítio público é uma pré-visualização. O matchmaking ranqueado, o Anti-Cheat, os pagamentos e os prémios não estão ativos."
+    "title": "A.C.E — Plataforma competitiva de CS2",
+    "description": "A A.C.E é uma plataforma competitiva de Counter-Strike 2 planeada para identidade de jogadores, calibração, equipas e torneios. Este sítio público é uma pré-visualização. O matchmaking ranqueado, o Anti-Cheat, os pagamentos e os prémios não estão ativos."
   },
   "opening": {
-    "dialogLabel": "Abertura da A.C.E.",
+    "dialogLabel": "Abertura da A.C.E",
     "line": "A.C.E: Anti-Cheat autónomo, calibração competitiva, jogadores de elite",
     "enter": "Entrar no sítio"
   },
   "hero": {
-    "logoAlt": "A.C.E. Anti-Cheat autónomo, calibração competitiva, jogadores de elite",
+    "logoAlt": "A.C.E Anti-Cheat autónomo, calibração competitiva, jogadores de elite",
     "arenaAlt": "Placa da arena A.C.E. Imagem de palco original, não é arte da Valve. O ecrã tem a etiqueta televisão das partidas. A transmissão ao vivo está desligada."
   },
   "broadcast": {
@@ -91,7 +91,7 @@ export const home: TextBag["home"] = {
       },
       {
         "kicker": "RANKS 3D FIXOS",
-        "copy": "Dez patentes, de Recruit a A.C.E. Legend. Uma pontuação guardada aparece após o início de sessão na Steam. Esta página não aplica uma partida.",
+        "copy": "Dez patentes, de Recruit a A.C.E Legend. Uma pontuação guardada aparece após o início de sessão na Steam. Esta página não aplica uma partida.",
         "chips": [
           "REGRA DE PONTUAÇÃO REGISTADA",
           "PLATAFORMA GIRATÓRIA NESTA PÁGINA"
@@ -134,13 +134,13 @@ export const home: TextBag["home"] = {
     "lines": [
       "A.C.E SHIELD: EM DESENVOLVIMENTO",
       "MATRIZ DE BANIMENTO DE HARDWARE: NENHUM IDENTIFICADOR É RECOLHIDO",
-      "LIGAÇÃO A.C.E. SHIELD: NENHUM CLIENTE ESTÁ INSTALADO"
+      "LIGAÇÃO A.C.E SHIELD: NENHUM CLIENTE ESTÁ INSTALADO"
     ],
     "note": "Este sítio não executa um cliente de kernel, não analisa a memória e não aplica banimentos de hardware."
   },
   "comingSoon": {
     "badge": "NÃO DISPONÍVEL",
-    "body": "O cliente de computador da A.C.E. não está disponível para transferência. A Temporada 1 neste sítio não instala software nem abre um registo de presença."
+    "body": "O cliente de computador da A.C.E não está disponível para transferência. A Temporada 1 neste sítio não instala software nem abre um registo de presença."
   },
   "operative": {
     "kicker": "Visor tático cinematográfico · ambiente CSS original · não é arte da Valve",
@@ -149,7 +149,7 @@ export const home: TextBag["home"] = {
     "note": "Texto de campanha. As filas ranqueadas, os servidores ao vivo e os prémios não estão ativos."
   },
   "howStatus": {
-    "label": "SUBSISTEMA DE REGISTO A.C.E. — MOTOR DE CALIBRAÇÃO PRONTO",
+    "label": "SUBSISTEMA DE REGISTO A.C.E — MOTOR DE CALIBRAÇÃO PRONTO",
     "note": "As filas classificativas abrem quando o A.C.E Shield e a calibração estiverem ativos."
   },
   "shell": {

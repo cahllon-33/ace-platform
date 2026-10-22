@@ -3,12 +3,12 @@ import type { TextBag } from "../types";
 export const leaderboard: TextBag["leaderboard"] = {
   "meta": {
     "title": "Ranglista",
-    "description": "Az A.C.E. versenytáblája. A tárolt Steam-fiókok jelennek meg elöl. Az üres helyek bemutató sorok maradnak."
+    "description": "Az A.C.E versenytáblája. A tárolt Steam-fiókok jelennek meg elöl. Az üres helyek bemutató sorok maradnak."
   },
   "hero": {
     "kicker": "RANGLISTA",
     "title": "Versenytábla",
-    "note": "Bemutató helyek töltik ki a táblát, amíg a játékosok össze nem kapcsolják a Steamet és értékelést nem szereznek. Országuk és kiemelt fegyverük szemléltető. A fegyverképek eredeti A.C.E. stúdiógrafikák, nem Valve skinek. Az ölések még nincsenek követve, így a kiemelt fegyver nem top-frag statisztika."
+    "note": "Bemutató helyek töltik ki a táblát, amíg a játékosok össze nem kapcsolják a Steamet és értékelést nem szereznek. Országuk és kiemelt fegyverük szemléltető. A fegyverképek eredeti A.C.E stúdiógrafikák, nem Valve skinek. Az ölések még nincsenek követve, így a kiemelt fegyver nem top-frag statisztika."
   },
   "facts": {
     "seats": "Helyek",

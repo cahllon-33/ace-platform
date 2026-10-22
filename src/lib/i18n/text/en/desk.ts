@@ -1,7 +1,7 @@
 export const desk = {
   shop: {
     meta: {
-      title: "A.C.E. Marketplace",
+      title: "A.C.E Marketplace",
       description:
         "Championship reward cards. The shop and rewards open soon.",
     },
@@ -27,7 +27,7 @@ export const desk = {
         price: "Coming soon",
       },
       crown: {
-        name: "A.C.E. Crown Avatar Frame",
+        name: "A.C.E Crown Avatar Frame",
         tag: "Profile Flair",
         price: "Coming soon",
       },
@@ -47,7 +47,7 @@ export const desk = {
     meta: {
       title: "Support",
       description:
-        "A.C.E. help center. Anti-cheat, ranked and billing desks open with the competitive beta.",
+        "A.C.E help center. Anti-cheat, ranked and billing desks open with the competitive beta.",
     },
   },
   contact: {

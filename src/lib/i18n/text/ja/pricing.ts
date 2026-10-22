@@ -70,10 +70,10 @@ export const pricing: TextBag["pricing"] = {
       "prices": "Free {free}。Plus 月額{plus}。Premium 月額{premium}。プランは毎月更新されます。ダッシュボードの設定からいつでも違約金なしで解約でき、支払済みの月末まで利用できます。月の途中の分は、お住まいの国の法律で求められる場合を除き返金されません。",
       "plusTitle": "2. Plusに含まれるもの",
       "plus1": "Freeのすべて。",
-      "plus2": "近日公開：決済の実装後、お礼の手紙とsupport@ace-platform.ggでのメールサポート。",
+      "plus2": "会員向けメールサポート（{email}）とチームからのお礼の手紙。",
       "premiumTitle": "3. Premiumに含まれるもの",
       "prem1": "Plusのすべて。",
-      "prem2": "Premiumランクアートとプレミアムランク・コーデックス：プロフィールに表示されるA.C.E.オリジナルのイラストエンブレムセット。見た目のみで、同じRating Pointsラダー上にあります。",
+      "prem2": "Premiumランクアートとプレミアムランク・コーデックス：プロフィールに表示されるA.C.Eオリジナルのイラストエンブレムセット。見た目のみで、同じRating Pointsラダー上にあります。",
       "prem3": "アニメーション付きPremiumプロフィールカード。",
       "prem4": "特別バッジとELITEシール。",
       "prem5": "近日公開：デモ解析の実装後、拡張マッチ分析（デスヒートマップ、ヘッドショット率、ラウンドごとのパフォーマンス）。",
@@ -85,14 +85,14 @@ export const pricing: TextBag["pricing"] = {
       "soon": "「近日公開」と表示されたものは、リリースされるまで約束されたものではありません。それまで料金には含まれません。",
       "languageTitle": "6. 言語",
       "language": "翻訳は便宜のために提供されています。翻訳と英語の本文が異なる場合は、英語の本文が優先されます。",
-      "contact": "お問い合わせ：support@ace-platform.gg",
+      "contact": "お問い合わせ：{email}",
       "footerLink": "Premium規約",
       "pricingLink": "Premium規約を読む"
     }
   },
   "meta": {
     "title": "料金",
-    "description": "A.C.E. メンバーシップ:Free {free}、Plus 月額{plus}、Premium 月額{premium}。表示価格は整数で固定。"
+    "description": "A.C.E メンバーシップ:Free {free}、Plus 月額{plus}、Premium 月額{premium}。表示価格は整数で固定。"
   },
   "period": {
     "monthly": "/月"
@@ -108,23 +108,23 @@ export const pricing: TextBag["pricing"] = {
       "note": "グラファイト",
       "title": "オープンアクセス",
       "points": [
-        "Steam OpenID でサインイン。A.C.E. が Steam のパスワードを求めることは決してありません。",
+        "Steam OpenID でサインイン。A.C.E が Steam のパスワードを求めることは決してありません。",
         "保存されたレーティングは 1,200 から始まります。試合結果による変更はまだありません。",
         "すべての公開ページ:プレイ、トーナメント、リーダーボード、チーム、ルール。"
       ]
     },
     "plus": {
-      "name": "A.C.E. PLUS",
+      "name": "A.C.E PLUS",
       "note": "Plus",
       "title": "プレイヤー統計とサポート",
       "points": [
         "Free のすべての内容。",
-        "プレイヤー統計：記録されたA.C.E.の試合からのレーティング推移グラフ。ヘッドショット率と命中率のゲージは近日公開。",
-        "近日公開：決済が用意され次第、お礼の手紙とsupport@ace-platform.ggでのメールサポート。Plusでレーティングや弱い対戦相手は買えません。"
+        "プレイヤー統計：記録されたA.C.Eの試合からのレーティング推移グラフ。ヘッドショット率と命中率のゲージは近日公開。",
+        "会員向けメールサポート（{email}）とチームからのお礼の手紙。 Plusでレーティングや弱い対戦相手は買えません。"
       ]
     },
     "premium": {
-      "name": "A.C.E. PREMIUM",
+      "name": "A.C.E PREMIUM",
       "note": "Premium",
       "title": "プロフィールアート、バッジ、分析",
       "points": [
@@ -159,7 +159,7 @@ export const pricing: TextBag["pricing"] = {
     }
   },
   "compare": {
-    "kicker": "A.C.E. が現在お約束できること",
+    "kicker": "A.C.E が現在お約束できること",
     "title": "メンバーシップ比較",
     "note": "各行はサイトの現状を反映しています。決済はまもなく開始し、有料プランでキューが開いたり有利になったりすることはありません。",
     "caption": "Free、Plus、Premium を現在のサイト機能で比較",
@@ -175,7 +175,7 @@ export const pricing: TextBag["pricing"] = {
       },
       "steamSignIn": {
         "feature": "Steam サインイン",
-        "detail": "公式 Steam OpenID。A.C.E. が Steam のパスワードを求めることは決してありません。"
+        "detail": "公式 Steam OpenID。A.C.E が Steam のパスワードを求めることは決してありません。"
       },
       "startingRating": {
         "feature": "初期レーティング",
@@ -183,7 +183,7 @@ export const pricing: TextBag["pricing"] = {
       },
       "recordedMatches": {
         "feature": "記録された試合",
-        "detail": "終了した A.C.E. の試合から記録される勝敗。"
+        "detail": "終了した A.C.E の試合から記録される勝敗。"
       },
       "rankedQueue": {
         "feature": "ランクキュー",
@@ -231,15 +231,15 @@ export const pricing: TextBag["pricing"] = {
   "receipt": {
     "plus": {
       "metaTitle": "Plus レシート",
-      "metaDescription": "このサイトに表示される A.C.E. Plus のレター。決済は稼働していないため、請求もメール送信もありません。",
-      "planName": "A.C.E. Plus",
-      "nextLabel": "A.C.E. を続ける",
+      "metaDescription": "このサイトに表示される A.C.E Plus のレター。決済は稼働していないため、請求もメール送信もありません。",
+      "planName": "A.C.E Plus",
+      "nextLabel": "A.C.E を続ける",
       "nextBody": "公開ページは引き続き利用できます。この選択でキューが開いたり、保存済みティアが変わったりすることはありません。"
     },
     "premium": {
       "metaTitle": "Premium レシート",
-      "metaDescription": "このサイトに表示される A.C.E. Premium のレター。決済は稼働していないため、請求もメール送信もありません。",
-      "planName": "A.C.E. Premium",
+      "metaDescription": "このサイトに表示される A.C.E Premium のレター。決済は稼働していないため、請求もメール送信もありません。",
+      "planName": "A.C.E Premium",
       "nextLabel": "Premium規約を読む",
       "nextBody": "PremiumはPremiumランクアート、アニメーションプロフィールカード、特別バッジ、ELITE SEALに加え、Plusのすべてを含みます。Squadsでのクラン保存はすべてのアカウントで無料です。"
     }
@@ -256,7 +256,7 @@ export const pricing: TextBag["pricing"] = {
         "プラン名:{plan}。",
         "表示価格:月額 {price}。この金額は表示であり、請求ではありません。",
         "支払い:なし。このプランを選んでもカードは請求されません。",
-        "メール:なし。A.C.E. はこのレターをメールで送信しません。",
+        "メール:なし。A.C.E はこのレターをメールで送信しません。",
         "保存済みティア:変更なし。特別バッジとエリートシールは、アカウントに既に Premium が保存されている場合にのみ表示されます。",
         "レーティング：販売しません。新規アカウントは引き続き 1,200 から始まります。"
       ]
@@ -265,7 +265,7 @@ export const pricing: TextBag["pricing"] = {
       "title": "現在利用できるもの",
       "items": [
         "公開サイト:ホーム、プレイ、トーナメント、リーダーボード、チーム、ルール、規約。",
-        "公式 Steam OpenID による Steam サインイン。A.C.E. が Steam のパスワードを求めることは決してありません。",
+        "公式 Steam OpenID による Steam サインイン。A.C.E が Steam のパスワードを求めることは決してありません。",
         "Free と同じ公開ページ。この料金で別のキューが開くことはありません。"
       ]
     },
@@ -285,7 +285,7 @@ export const pricing: TextBag["pricing"] = {
       "items": [
         "請求や有料ティアの適用を想定していた場合:何も適用されていません。アカウントは元のままです。",
         "このレターがメールで届くと思っていた場合:このページにのみ存在します。",
-        "Steam に接続できなかった場合:「プロフィールを連携」を使い、先に規約のチェックボックスに同意してください。A.C.E. に Steam のパスワードを入力しないでください。",
+        "Steam に接続できなかった場合:「プロフィールを連携」を使い、先に規約のチェックボックスに同意してください。A.C.E に Steam のパスワードを入力しないでください。",
         "ヘルプが必要な場合:下記のサポート窓口を利用するか、このサイトのヘルプページを開いてください。"
       ]
     },
@@ -309,7 +309,7 @@ export const pricing: TextBag["pricing"] = {
   },
   "telemetry": {
     "kicker": "PLUS / PREMIUM テレメトリ",
-    "copy": "ダッシュボードのテレメトリはロック中 — A.C.E. Plus または Premium にアップグレードすると、リアルタイムの統計カーブや武器特化指標を利用できるようになります。",
+    "copy": "ダッシュボードのテレメトリはロック中 — A.C.E Plus または Premium にアップグレードすると、リアルタイムの統計カーブや武器特化指標を利用できるようになります。",
     "cta": "料金表を開く"
   }
 };

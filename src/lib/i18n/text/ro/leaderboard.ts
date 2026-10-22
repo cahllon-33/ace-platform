@@ -8,7 +8,7 @@ export const leaderboard: TextBag["leaderboard"] = {
   "hero": {
     "kicker": "CLASAMENT",
     "title": "Tablă competitivă",
-    "note": "Locurile de prezentare umplu tabla până când jucătorii își conectează Steam și obțin un rating. Țara și arma lor reprezentativă sunt ilustrative. Randările armelor sunt artă originală de studio A.C.E., nu skinuri Valve. Uciderile nu sunt încă urmărite, deci arma reprezentativă nu este o statistică de top-frag."
+    "note": "Locurile de prezentare umplu tabla până când jucătorii își conectează Steam și obțin un rating. Țara și arma lor reprezentativă sunt ilustrative. Randările armelor sunt artă originală de studio A.C.E, nu skinuri Valve. Uciderile nu sunt încă urmărite, deci arma reprezentativă nu este o statistică de top-frag."
   },
   "facts": {
     "seats": "Locuri",

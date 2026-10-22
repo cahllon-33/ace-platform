@@ -25,7 +25,7 @@ export const UI_CS: Ui = {
     "company": "Společnost",
     "legal": "Právní informace",
     "tagline": "Soutěžní žebříčky Counter-Strike 2 postavené na férové hře.",
-    "follow": "Sledujte A.C.E.",
+    "follow": "Sledujte A.C.E",
     "rights": "Všechna práva vyhrazena.",
     "legalLine": "© 2026 A.C.E. Nezávislá platforma bez vazby na Valve. Counter-Strike a CS2 jsou ochranné známky Valve Corporation."
   },
@@ -58,7 +58,7 @@ export const UI_CS: Ui = {
   "maps": {
     "kicker": "Soutěžní map pool",
     "title": "Mapy a vysílání",
-    "lede": "Soutěžní pool A.C.E. tvoří sedm map. Týmy z nich banují a vybírají během veta podle pravidel. Turnajová vysílání se objeví na obrazovce níže.",
+    "lede": "Soutěžní pool A.C.E tvoří sedm map. Týmy z nich banují a vybírají během veta podle pravidel. Turnajová vysílání se objeví na obrazovce níže.",
     "rulebook": "Pravidla veta",
     "screen": "Vysílací obrazovka",
     "offAir": "Mimo vysílání",
@@ -110,7 +110,7 @@ export const UI_CS: Ui = {
     }
   },
   "rules": {
-    "kicker": "Soutěžní řád A.C.E.",
+    "kicker": "Soutěžní řád A.C.E",
     "title": "Soutěžní pravidla",
     "version": "Verze {version} · platná od {date}",
     "intro": "Pravidla, podle kterých se hrají všechny soutěže A.C.E. Body označené „Platí po nasazení“ vstoupí v platnost, až bude spuštěn systém, na kterém závisí.",
@@ -149,7 +149,7 @@ export const UI_CS: Ui = {
   "antiCheat": {
     "kicker": "A.C.E Shield",
     "title": "Anti-cheat",
-    "lede": "A.C.E Shield je systém férové hry budovaný pro každý zápas A.C.E.: kontroly klienta, serveru, zápasu a chování pracují společně a soukromí je na prvním místě.",
+    "lede": "A.C.E Shield je systém férové hry budovaný pro každý zápas A.C.E: kontroly klienta, serveru, zápasu a chování pracují společně a soukromí je na prvním místě.",
     "statusLabel": "Fáze nasazení",
     "pillarsTitle": "Pilíře architektury",
     "pillars": {
@@ -237,7 +237,7 @@ export const UI_CS: Ui = {
     "status": {
       "title": "Stav platformy",
       "steam": "Přihlášení přes Steam",
-      "shield": "A.C.E. Shield",
+      "shield": "A.C.E Shield",
       "servers": "Soutěžní servery",
       "tournaments": "Turnaje",
       "billing": "Platby",
@@ -288,7 +288,7 @@ export const UI_CS: Ui = {
     "chat": {
       "open": "Otevřít chat podpory",
       "close": "Zavřít chat podpory",
-      "title": "Podpora A.C.E.",
+      "title": "Podpora A.C.E",
       "greeting": "Ahoj! Jsem asistent podpory A.C.E. Zeptej se mě na hodnosti, plány, pravidla nebo svůj účet.",
       "placeholder": "Napiš svou otázku…",
       "send": "Odeslat",
@@ -316,7 +316,7 @@ export const UI_CS: Ui = {
       "stepsKicker": "Jak to funguje",
       "stepsTitle": "Tři kroky k první hodnosti",
       "step1t": "Připoj Steam",
-      "step1b": "Přihlas se přes Steam OpenID. A.C.E. nikdy nevidí tvé heslo ke Steamu.",
+      "step1b": "Přihlas se přes Steam OpenID. A.C.E nikdy nevidí tvé heslo ke Steamu.",
       "step2t": "Kalibrace",
       "step2b": "Začínáš na úrovni 3 s 1 200 RP. Každý zaznamenaný zápas mění RP podle zveřejněných pravidel.",
       "step3t": "Postup",
@@ -334,7 +334,7 @@ export const UI_CS: Ui = {
     "profile": {
       "kicker": "HRÁČ",
       "notFound": "Hráč nenalezen",
-      "notFoundBody": "Žádný účet A.C.E. nepoužívá toto Steam ID, nebo profil není veřejný.",
+      "notFoundBody": "Žádný účet A.C.E nepoužívá toto Steam ID, nebo profil není veřejný.",
       "rating": "Hodnocení",
       "rank": "Hodnost",
       "record": "Bilance",
@@ -349,7 +349,7 @@ export const UI_CS: Ui = {
     },
     "chat": {
       "sources": "Zdroje",
-      "noMatch": "V obsahu webu A.C.E. jsem to nenašel. Otázku můžeš poslat týmu jako tiket.",
+      "noMatch": "V obsahu webu A.C.E jsem to nenašel. Otázku můžeš poslat týmu jako tiket.",
       "s1": "Kolik stojí Premium?",
       "s2": "Jak získám RP?",
       "s3": "Jak nahlásím podvodníka?",
@@ -382,7 +382,7 @@ export const UI_CS: Ui = {
     "nf": {
       "code": "Chyba 404",
       "title": "Tato stránka je mimo mapu",
-      "body": "Odkaz může být starý nebo chybně napsaný. Každá část A.C.E. je odsud na jedno kliknutí.",
+      "body": "Odkaz může být starý nebo chybně napsaný. Každá část A.C.E je odsud na jedno kliknutí.",
       "home": "Zpět na úvod",
       "ranks": "Zobrazit hodnosti"
     },
@@ -427,11 +427,11 @@ export const UI_CS: Ui = {
       "none": "—"
     },
     "ab": {
-      "title": "O A.C.E.",
+      "title": "O A.C.E",
       "lede": "Soutěžní platforma pro Counter-Strike 2 postavená na jedné veřejné tabulce hodností a plánech, které nikdy nekupují výhodu.",
-      "b1": "A.C.E. provozuje hodnocené hry, žebříčky a turnaje v CS2. Přihlášení přes Steam OpenID; tvé heslo ke Steamu nikdy nevidíme.",
+      "b1": "A.C.E provozuje hodnocené hry, žebříčky a turnaje v CS2. Přihlášení přes Steam OpenID; tvé heslo ke Steamu nikdy nevidíme.",
       "b2": "Tvá hodnost se počítá jen ze zaznamenaných výsledků podle zveřejněných pravidel. Placené plány jsou jen kosmetické a pro pohodlí.",
-      "b3": "A.C.E. je nezávislá platforma a není spojena se společností Valve."
+      "b3": "A.C.E je nezávislá platforma a není spojena se společností Valve."
     },
     "ss": {
       "title": "Stav serverů",
@@ -484,7 +484,7 @@ export const UI_CS: Ui = {
     }
   },
   "r46": {
-    "aria": "Za čím A.C.E. stojí",
+    "aria": "Za čím A.C.E stojí",
     "fair": "Ochrana férové hry",
     "fairSub": "Přihlášení přes Steam, zveřejněná pravidla a hlášení hráčů kontrolovaná administrátory.",
     "calib": "Soutěžní kalibrace",
@@ -494,7 +494,7 @@ export const UI_CS: Ui = {
   },
   "r45": {
     "title": "Za hranicí Legend",
-    "lede": "Pět prestižních odznaků nad A.C.E. Legend, jeden každých 200 RP od 2 150 do 2 950. Získáš je jen hraním.",
+    "lede": "Pět prestižních odznaků nad A.C.E Legend, jeden každých 200 RP od 2 150 do 2 950. Získáš je jen hraním.",
     "plus": "Plus · platina",
     "premium": "Premium · zlatý oheň",
     "fair": "Stejné RP pro všechny. Prahy prestiže, matchmaking i hodnocení jsou na každém plánu stejné. Nic z toho nelze koupit.",
@@ -530,7 +530,7 @@ export const UI_CS: Ui = {
       "lede": "Jak se získává každý odznak A.C.E. Odznaky jsou čistě kosmetické: nemění matchmaking, RP ani žádné pravidlo.",
       "ranks": "Odznaky hodností (úrovně 1–10) sledují vaše RP. Každý hráč vidí stejnou hodnost a stejnou pevnou barvu úrovně.",
       "prestige": "Odznaky prestiže jsou pět dlouhodobých cílů nad {elite} RP: jeden každých 200 RP od 2 150 do 2 950.",
-      "free": "Free: váš odznak zůstává A.C.E. Legend a úroveň prestiže se ukazuje jako textový milník. RP nejsou nikdy omezené.",
+      "free": "Free: váš odznak zůstává A.C.E Legend a úroveň prestiže se ukazuje jako textový milník. RP nejsou nikdy omezené.",
       "plus": "Plus: platinová sada prestiže.",
       "premium": "Premium: animovaná zlatá sada prestiže.",
       "lose": "Klesnete-li pod práh prestiže, odznak jde s RP dolů; když ho znovu dosáhnete, vrátí se.",
@@ -683,5 +683,19 @@ export const UI_CS: Ui = {
     "communityTitle": "Komunita",
     "communityLede": "Sledujte A.C.E kvůli novinkám o zápasech, turnajích a sestřihům.",
     "followOn": "A.C.E na {network}"
+  },
+  "r49b": {
+    "title": "Inventář Steam",
+    "private": "Inventář je soukromý",
+    "privateBody": "Inventář Steam tohoto hráče je soukromý.",
+    "empty": "Ve veřejném inventáři nejsou žádné předměty CS2.",
+    "unavailable": "Inventář Steam teď nelze načíst.",
+    "hiddenOwner": "Tvoje ukázka inventáře je na profilu skrytá.",
+    "hide": "Skrýt ukázku",
+    "show": "Zobrazit ukázku",
+    "priceSource": "Ceny: nejnižší nabídka na Steam Community Market, v mezipaměti.",
+    "note": "Pouze ukázka. A.C.E nikdy nekupuje, neprodává ani neobchoduje předměty Steam.",
+    "updated": "Aktualizováno {date}",
+    "more": "+{n} dalších předmětů"
   }
 };

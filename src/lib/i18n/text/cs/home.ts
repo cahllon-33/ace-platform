@@ -6,14 +6,14 @@ export const home: TextBag["home"] = {
     "online": "Právě online",
     "registered": "Registrovaní hráči",
     "earlyTitle": "Předběžný přístup",
-    "earlyBody": "Přidej se k prvním hráčům A.C.E. Živé počty se zde objeví, až komunita vyroste.",
+    "earlyBody": "Přidej se k prvním hráčům A.C.E Živé počty se zde objeví, až komunita vyroste.",
     "unavailable": "Živé počty nejsou momentálně dostupné.",
     "note": "Skutečné počty, obnovované každých 30 sekund."
   },
   "ops": {
     "identityKicker": "CENTRUM IDENTITY",
     "signedOutTitle": "Přihlásit se přes Steam",
-    "signedOutBody": "Připoj se přes oficiální Steam OpenID a uvidíš tu svůj Steam avatar, emblém ranku a Rating Points. A.C.E. nikdy nežádá heslo ke Steamu.",
+    "signedOutBody": "Připoj se přes oficiální Steam OpenID a uvidíš tu svůj Steam avatar, emblém ranku a Rating Points. A.C.E nikdy nežádá heslo ke Steamu.",
     "connect": "Přihlásit se přes Steam",
     "openDeck": "Otevřít Command Deck",
     "avatarAlt": "Steam avatar hráče {name}",
@@ -25,7 +25,7 @@ export const home: TextBag["home"] = {
     "matches": "Zápasy",
     "kd": "K/D",
     "na": "n/a",
-    "kdNote": "K/D ukazuje n/a, protože A.C.E. zatím nezaznamenává zabití a smrti.",
+    "kdNote": "K/D ukazuje n/a, protože A.C.E zatím nezaznamenává zabití a smrti.",
     "shieldKicker": "A.C.E SHIELD",
     "shieldChip": "VE VÝVOJI",
     "shieldTitle": "Stav integrity",
@@ -48,16 +48,16 @@ export const home: TextBag["home"] = {
     "statsLink": "Otevřít statistiky hráče"
   },
   "meta": {
-    "title": "A.C.E. — soutěžní platforma CS2",
-    "description": "A.C.E. je plánovaná soutěžní platforma pro Counter-Strike 2 zaměřená na identitu hráčů, kalibraci, týmy a turnaje. Tento veřejný web je náhled. Rankingové párování, anti-cheat, platby a ceny nejsou aktivní."
+    "title": "A.C.E — soutěžní platforma CS2",
+    "description": "A.C.E je plánovaná soutěžní platforma pro Counter-Strike 2 zaměřená na identitu hráčů, kalibraci, týmy a turnaje. Tento veřejný web je náhled. Rankingové párování, anti-cheat, platby a ceny nejsou aktivní."
   },
   "opening": {
-    "dialogLabel": "Úvod A.C.E.",
+    "dialogLabel": "Úvod A.C.E",
     "line": "A.C.E: autonomní anti-cheat, soutěžní kalibrace, elitní hráči",
     "enter": "Vstoupit na web"
   },
   "hero": {
-    "logoAlt": "A.C.E. — autonomní anti-cheat, soutěžní kalibrace, elitní hráči",
+    "logoAlt": "A.C.E — autonomní anti-cheat, soutěžní kalibrace, elitní hráči",
     "arenaAlt": "Destička arény A.C.E. Původní obrázek scény, nejde o grafiku Valve. Obrazovka je označena jako herní televize. Živé vysílání je vypnuto."
   },
   "broadcast": {
@@ -91,7 +91,7 @@ export const home: TextBag["home"] = {
       },
       {
         "kicker": "PEVNÉ 3D HODNOSTI",
-        "copy": "Deset stupňů od Recruit po A.C.E. Legend. Uložené hodnocení se zobrazí po přihlášení přes Steam. Tato stránka nezapočítává žádný zápas.",
+        "copy": "Deset stupňů od Recruit po A.C.E Legend. Uložené hodnocení se zobrazí po přihlášení přes Steam. Tato stránka nezapočítává žádný zápas.",
         "chips": [
           "PRAVIDLO HODNOCENÍ JE ZDOKUMENTOVÁNO",
           "OTOČNÝ STOJAN NA TÉTO STRÁNCE"
@@ -134,13 +134,13 @@ export const home: TextBag["home"] = {
     "lines": [
       "A.C.E SHIELD: VE VÝVOJI",
       "MATICE HARDWAROVÝCH ZÁKAZŮ: ŽÁDNÝ IDENTIFIKÁTOR SE NESBÍRÁ",
-      "SPOJENÍ ŠTÍTU A.C.E.: ŽÁDNÝ KLIENT NENÍ NAINSTALOVÁN"
+      "SPOJENÍ ŠTÍTU A.C.E: ŽÁDNÝ KLIENT NENÍ NAINSTALOVÁN"
     ],
     "note": "Tento web nespouští klienta jádra, neskenuje paměť a nevydává hardwarový zákaz."
   },
   "comingSoon": {
     "badge": "NENÍ K DISPOZICI",
-    "body": "Desktopový klient A.C.E. není nabízen ke stažení. 1. sezóna na tomto webu neinstaluje software ani neotevírá registraci."
+    "body": "Desktopový klient A.C.E není nabízen ke stažení. 1. sezóna na tomto webu neinstaluje software ani neotevírá registraci."
   },
   "operative": {
     "kicker": "Filmový taktický výhled · původní prostředí CSS · nejde o grafiku Valve",
@@ -149,7 +149,7 @@ export const home: TextBag["home"] = {
     "note": "Kampaňový text. Rankingové fronty, živé servery a ceny nejsou aktivní."
   },
   "howStatus": {
-    "label": "REGISTRAČNÍ SUBSYSTÉM A.C.E. — KALIBRAČNÍ ENGINE PŘIPRAVEN",
+    "label": "REGISTRAČNÍ SUBSYSTÉM A.C.E — KALIBRAČNÍ ENGINE PŘIPRAVEN",
     "note": "Hodnocené fronty se otevřou, jakmile poběží A.C.E Shield a kalibrace."
   },
   "shell": {

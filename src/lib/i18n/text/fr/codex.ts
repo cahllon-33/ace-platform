@@ -4,7 +4,7 @@ export const codex: TextBag["codex"] = {
   meta: {
     title: "Codex de calibrage",
     description:
-      "Les rangs A.C.E. expliqués. Chaque question ouvre une réponse complète sur les points de cote et le code de ce rang. Le codex n’applique aucun match.",
+      "Les rangs A.C.E expliqués. Chaque question ouvre une réponse complète sur les points de cote et le code de ce rang. Le codex n’applique aucun match.",
     articleTitle: "{title} — Codex de calibrage",
   },
   groups: {
@@ -33,7 +33,7 @@ export const codex: TextBag["codex"] = {
     searchLabel: "Rechercher dans le codex",
     searchPlaceholder: "Essayez 1950, Recruit ou nul",
     empty: "Aucune entrée ne correspond à cette recherche.",
-    columnLabel: "Colonne A.C.E. {n}",
+    columnLabel: "Colonne A.C.E {n}",
     pagerLabel: "Pages du codex",
     first: "Première",
     previous: "Précédente",
@@ -42,7 +42,7 @@ export const codex: TextBag["codex"] = {
     pageOf: "Page {n} sur {m}",
   },
   article: {
-    breadcrumb: "A.C.E. · Codex de calibrage",
+    breadcrumb: "A.C.E · Codex de calibrage",
     status:
       "Cette page explique l’échelle écrite. Elle n’applique aucun match et ne modifie aucune cote enregistrée.",
     emblemAlt: "Emblème {name}, rang {level}",
@@ -146,21 +146,21 @@ export const codex: TextBag["codex"] = {
     },
     "rank-10-a-c-e-legend": {
       stance:
-        "A.C.E. Legend est le dernier palier. Le libellé cristal est ACE ELITE. Le nom officiel est A.C.E. Legend.",
+        "A.C.E Legend est le dernier palier. Le libellé cristal est ACE ELITE. Le nom officiel est A.C.E Legend.",
       detail:
         "La tranche s’ouvre à 1 950 et se termine au plafond du moteur, 3 000. Il n’existe pas de onzième rang. Une cote enregistrée ne peut pas dépasser 3 000.",
     },
   },
   articles: {
     "what-a-rank-is": {
-      title: "Qu’est-ce qu’un rang A.C.E. ?",
-      lede: "Un rang est le palier qui contient vos points de cote enregistrés. Dix paliers couvrent toute l’échelle, de Recruit à A.C.E. Legend.",
+      title: "Qu’est-ce qu’un rang A.C.E ?",
+      lede: "Un rang est le palier qui contient vos points de cote enregistrés. Dix paliers couvrent toute l’échelle, de Recruit à A.C.E Legend.",
       sections: [
         {
           heading: "Un nombre, un palier",
           paragraphs: [
             "Le compte enregistre une cote compétitive. L’échelle lit ce nombre et renvoie le rang le plus élevé dont le plancher a été atteint. Vous ne détenez jamais deux rangs à la fois.",
-            "Recruit est le rang 1. A.C.E. Legend est le rang 10. Le nom officiel est celui qui figure dans l’échelle. Le mot plus court gravé sur l’emblème est le libellé cristal du même rang.",
+            "Recruit est le rang 1. A.C.E Legend est le rang 10. Le nom officiel est celui qui figure dans l’échelle. Le mot plus court gravé sur l’emblème est le libellé cristal du même rang.",
             "Ce codex explique l’échelle écrite. Il n’applique aucun match et ne modifie aucune cote enregistrée.",
           ],
         },
@@ -168,7 +168,7 @@ export const codex: TextBag["codex"] = {
           heading: "Comment se répartissent les planchers",
           paragraphs: [
             "Recruit couvre le début de l’échelle. Operative s’ouvre à 1 100. De Vanguard à Grandmaster, chaque nouveau plancher se situe 100 points plus haut : 1 200, 1 300, 1 400, 1 500, 1 600, puis 1 700.",
-            "Sovereign s’ouvre à 1 800 et conserve le compte jusqu’à 1 949. A.C.E. Legend s’ouvre à 1 950. Le plafond du moteur est de 3 000, si bien que Legend est la tranche la plus longue.",
+            "Sovereign s’ouvre à 1 800 et conserve le compte jusqu’à 1 949. A.C.E Legend s’ouvre à 1 950. Le plafond du moteur est de 3 000, si bien que Legend est la tranche la plus longue.",
           ],
         },
         {
@@ -187,14 +187,14 @@ export const codex: TextBag["codex"] = {
         {
           heading: "Pourquoi les deux existent",
           paragraphs: [
-            "Le moteur et le profil utilisent le nom officiel : Recruit, Operative, Vanguard, Specialist, Veteran, Elite, Master, Grandmaster, Sovereign, A.C.E. Legend.",
+            "Le moteur et le profil utilisent le nom officiel : Recruit, Operative, Vanguard, Specialist, Veteran, Elite, Master, Grandmaster, Sovereign, A.C.E Legend.",
             "L’emblème porte aussi un libellé cristal : IRON, BRONZE, SILVER, GOLD, PLATINUM, DIAMOND, MASTER, GRANDMASTER, IMMORTAL, ACE ELITE. Ce libellé relève de l’illustration. Il ne crée pas de onzième rang et n’enregistre pas de second nombre.",
           ],
         },
         {
           heading: "Là où ils diffèrent",
           paragraphs: [
-            "Le libellé cristal de Specialist est GOLD. Celui de Veteran est PLATINUM. Celui d’Elite est DIAMOND. Celui de Sovereign est IMMORTAL. Celui d’A.C.E. Legend est ACE ELITE. Dans chaque cas, le plancher appartient toujours au nom officiel.",
+            "Le libellé cristal de Specialist est GOLD. Celui de Veteran est PLATINUM. Celui d’Elite est DIAMOND. Celui de Sovereign est IMMORTAL. Celui d’A.C.E Legend est ACE ELITE. Dans chaque cas, le plancher appartient toujours au nom officiel.",
             "Master et Grandmaster utilisent le même mot aux deux endroits.",
           ],
         },
@@ -310,7 +310,7 @@ export const codex: TextBag["codex"] = {
           heading: "Les butées",
           paragraphs: [
             "Une défaite à 100 points de cote laisse le compte à 100. Une victoire à 3 000 le laisse à 3 000. Le plancher de Recruit est écrit à 0 dans l’échelle, mais le nombre enregistré n’utilise jamais l’intervalle sous 100.",
-            "1 949 correspond à Sovereign. 1 950 correspond à A.C.E. Legend. Il n’existe aucun palier intermédiaire.",
+            "1 949 correspond à Sovereign. 1 950 correspond à A.C.E Legend. Il n’existe aucun palier intermédiaire.",
           ],
         },
         {
@@ -357,7 +357,7 @@ export const codex: TextBag["codex"] = {
           heading: "Ce que l’espace ne fait pas",
           paragraphs: [
             "TROUVER UN MATCH ne recherche pas d’adversaires. Cette commande ne modifie pas les points de cote. Le rang d’un compte reste le nombre enregistré, lu par l’échelle décrite dans ce codex.",
-            "Il n’existe aucune file supérieure distincte au-dessus de Legend. A.C.E. Legend est le dernier palier, et il s’ouvre à 1 950 points de cote.",
+            "Il n’existe aucune file supérieure distincte au-dessus de Legend. A.C.E Legend est le dernier palier, et il s’ouvre à 1 950 points de cote.",
           ],
         },
       ],

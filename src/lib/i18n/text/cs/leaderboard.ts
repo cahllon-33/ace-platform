@@ -8,7 +8,7 @@ export const leaderboard: TextBag["leaderboard"] = {
   "hero": {
     "kicker": "ŽEBŘÍČEK",
     "title": "Soutěžní tabule",
-    "note": "Dokud hráči nepropojí Steam a nezískají hodnocení, vyplňují tabuli ukázková místa. Jejich země a zobrazená zbraň jsou ilustrativní. Rendery zbraní jsou původní tvorba studia A.C.E., nikoli skiny Valve. Zabití se zatím nezaznamenávají, takže zobrazená zbraň není statistikou nejlepšího fraggera."
+    "note": "Dokud hráči nepropojí Steam a nezískají hodnocení, vyplňují tabuli ukázková místa. Jejich země a zobrazená zbraň jsou ilustrativní. Rendery zbraní jsou původní tvorba studia A.C.E, nikoli skiny Valve. Zabití se zatím nezaznamenávají, takže zobrazená zbraň není statistikou nejlepšího fraggera."
   },
   "facts": {
     "seats": "Místa",

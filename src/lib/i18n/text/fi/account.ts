@@ -5,10 +5,10 @@ export const account: TextBag["account"] = {
     "metaTitle": "Pelaajatilastot",
     "kicker": "PELAAJATILASTOT",
     "title": "Pelaajatilastot",
-    "lede": "Reittauksen kehitys tallennetuista A.C.E.-otteluistasi pääosuma-% ja tarkkuusmittareineen. Sisältyy A.C.E Plussaan (4 $/kk) ja A.C.E Premiumiin (7 $/kk).",
+    "lede": "Reittauksen kehitys tallennetuista A.C.E-otteluistasi pääosuma-% ja tarkkuusmittareineen. Sisältyy A.C.E Plussaan (4 $/kk) ja A.C.E Premiumiin (7 $/kk).",
     "movementTitle": "Reittauksen kehitys",
-    "movementNote": "Jokainen piste on tallennetusta A.C.E.-ottelusta kirjattu reittausmuutos.",
-    "noMatches": "Tallennettuja otteluita ei vielä ole, joten kaavio on tyhjä. Se täyttyy ensimmäisen tallennetun A.C.E.-ottelusi jälkeen.",
+    "movementNote": "Jokainen piste on tallennetusta A.C.E-ottelusta kirjattu reittausmuutos.",
+    "noMatches": "Tallennettuja otteluita ei vielä ole, joten kaavio on tyhjä. Se täyttyy ensimmäisen tallennetun A.C.E-ottelusi jälkeen.",
     "currentLabel": "Nykyinen reittaus",
     "netLabel": "Nettomuutos",
     "changesLabel": "Tallennetut muutokset",
@@ -21,7 +21,7 @@ export const account: TextBag["account"] = {
     "lockedBody": "Tallennettu tilauksesi on Free. Plus (4 $/kk) ja Premium (7 $/kk) avaavat tämän sivun. Tulossa: maksua ei vielä ole.",
     "signIn": "Kirjaudu Steamilla nähdäksesi pelaajatilastosi.",
     "plansLink": "Katso tilaukset",
-    "rosterNote": "Esimerkkikokoonpanon profiili: näillä pelaajilla ei ole tallennettuja A.C.E.-otteluita, joten tilastot eivät näytä lukuja.",
+    "rosterNote": "Esimerkkikokoonpanon profiili: näillä pelaajilla ei ole tallennettuja A.C.E-otteluita, joten tilastot eivät näytä lukuja.",
     "dashTitle": "Tilastot ja analyysi",
     "dashStats": "Avaa pelaajatilastot",
     "dashAnalysis": "Avaa otteluanalyysi (Premium)",
@@ -38,7 +38,7 @@ export const account: TextBag["account"] = {
     "stats": {
       "accountStatus": "Tilin tila",
       "subscription": "Tilaus",
-      "rank": "A.C.E.-ranking",
+      "rank": "A.C.E-ranking",
       "ratingPoints": "Luokituspisteet",
       "wins": "Voitot",
       "losses": "Tappiot",
@@ -71,7 +71,7 @@ export const account: TextBag["account"] = {
     "rankedButton": "Etsi ranked-ottelu",
     "roster": {
       "title": "5v5-kokoonpano",
-      "body": "Yksi kapteeni. Neljä kutsua. Kapteenit kutsuvat muita A.C.E.-tilitunnuksia, jotka luodaan vasta vahvistetun Steam-kirjautumisen jälkeen."
+      "body": "Yksi kapteeni. Neljä kutsua. Kapteenit kutsuvat muita A.C.E-tilitunnuksia, jotka luodaan vasta vahvistetun Steam-kirjautumisen jälkeen."
     },
     "pendingInvites": "Odottavat kutsut"
   },
@@ -86,7 +86,7 @@ export const account: TextBag["account"] = {
     },
     "invite": {
       "failed": "Kutsu epäonnistui.",
-      "label": "Kutsu vapaa pelaaja SteamID:llä tai A.C.E.-tilitunnuksella",
+      "label": "Kutsu vapaa pelaaja SteamID:llä tai A.C.E-tilitunnuksella",
       "submitAria": "Lähetä joukkuekutsu",
       "submit": "Lähetä kutsu"
     }
@@ -94,8 +94,8 @@ export const account: TextBag["account"] = {
   "profile": {
     "meta": {
       "notFoundTitle": "Pelaajaprofiili",
-      "title": "{name} · A.C.E.-profiili",
-      "description": "A.C.E.-pelaajakansio. Plus- ja Premium-istunnot avaavat telemetrian trendikaaviot."
+      "title": "{name} · A.C.E-profiili",
+      "description": "A.C.E-pelaajakansio. Plus- ja Premium-istunnot avaavat telemetrian trendikaaviot."
     },
     "kicker": "Pelaajan identiteetti",
     "bannerPlaceholder": "Profiilibanneri · tulossa pian",
@@ -132,7 +132,7 @@ export const account: TextBag["account"] = {
     "back": "Palaa klaanin kokoonpanoon"
   },
   "networks": {
-    "note": "Tähän kirjoitettu linkki pysyy tässä selaimessa eikä sitä tallenneta. A.C.E. ei koskaan kysy Steam-salasanaa.",
+    "note": "Tähän kirjoitettu linkki pysyy tässä selaimessa eikä sitä tallenneta. A.C.E ei koskaan kysy Steam-salasanaa.",
     "labels": {
       "steam": "Steam-profiili"
     },
@@ -150,9 +150,9 @@ export const account: TextBag["account"] = {
       "title": "Kirjautumisvirhe"
     },
     "title": "Steam-kirjautuminen ei valmistunut",
-    "notConfigured": "Steam OpenID:tä ei ole vielä määritetty tälle palvelimelle. A.C.E. ei koskaan kysy Steam-salasanaa.",
-    "unavailable": "Steam ei vastannut vahvistuspyyntöön. Yritä hetken kuluttua uudelleen. A.C.E. ei koskaan kysy Steam-salasanaa.",
-    "unverified": "OpenID-takaisinkutsua ei voitu vahvistaa palvelimella. A.C.E. ei koskaan kysy Steam-salasanaa.",
+    "notConfigured": "Steam OpenID:tä ei ole vielä määritetty tälle palvelimelle. A.C.E ei koskaan kysy Steam-salasanaa.",
+    "unavailable": "Steam ei vastannut vahvistuspyyntöön. Yritä hetken kuluttua uudelleen. A.C.E ei koskaan kysy Steam-salasanaa.",
+    "unverified": "OpenID-takaisinkutsua ei voitu vahvistaa palvelimella. A.C.E ei koskaan kysy Steam-salasanaa.",
     "returnHome": "Palaa etusivulle"
   }
 };

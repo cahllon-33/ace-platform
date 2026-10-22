@@ -5,17 +5,17 @@ export const RB_TR: RulebookText = {
   "clauses": [
     [
       "Bu kural kitabı, A.C.E.'nin düzenlediği tüm müsabakalara uygulanır: kupalar, ligler, sıralama merdivenleri ve gösteri maçları. Etkinlik sayfası etkinliğe özel şartlar ekleyebilir; bu kural kitabıyla çeliştiği durumda yalnızca o etkinlik için etkinlik sayfası geçerlidir.",
-      "\"Organizatör\", A.C.E. operasyon ekibidir. \"Hakem\", bir etkinliğe atanmış organizatör üyesidir. \"Takım\", kayıtlı kadrodur. \"Kaptan\", takımı temsil eden oyuncudur. \"Maç\", iki takım arasında oynanan bir veya daha fazla haritadır. \"Seri\", tek maç (BO1), üç maçta iki galibiyet (BO3) veya beş maçta üç galibiyet (BO5) formatındaki harita grubudur.",
+      "\"Organizatör\", A.C.E operasyon ekibidir. \"Hakem\", bir etkinliğe atanmış organizatör üyesidir. \"Takım\", kayıtlı kadrodur. \"Kaptan\", takımı temsil eden oyuncudur. \"Maç\", iki takım arasında oynanan bir veya daha fazla haritadır. \"Seri\", tek maç (BO1), üç maçta iki galibiyet (BO3) veya beş maçta üç galibiyet (BO5) formatındaki harita grubudur.",
       "Kayıt olan her oyuncu ve takım bu kural kitabını, Hizmet Şartları'nı ve Gizlilik Politikası'nı kabul etmiş sayılır.",
       "Hakemler, bu kural kitabının kapsamadığı durumlara adil oyun ilkesi ve kuralların ruhu doğrultusunda karar verebilir. Bu kararlar kayda geçirilir ve maç sonucuyla birlikte yayımlanır."
     ],
     [
-      "Oyuncular, aktif bir A.C.E. uzaklaştırması altında olmamalı ve kullandıkları Steam hesabında son 2 yıl içinde verilmiş bir oyun yasağı bulunmamalıdır.",
+      "Oyuncular, aktif bir A.C.E uzaklaştırması altında olmamalı ve kullandıkları Steam hesabında son 2 yıl içinde verilmiş bir oyun yasağı bulunmamalıdır.",
       "Organizatör personeli ve hakemler, yönettikleri bir etkinlikte oynayamaz.",
       "Bölge veya puan sınırları her etkinlik için belirlenir ve kayıtlar açılmadan önce yayımlanır. Sınırların dışında kalan bir oyuncu, yedek olarak da oynayamaz."
     ],
     [
-      "Her oyuncu, Steam ile giriş üzerinden tek bir Steam hesabına bağlı tek bir A.C.E. hesabı kullanır. A.C.E. asla Steam şifresi istemez; isteyen kişi organizatör değildir.",
+      "Her oyuncu, Steam ile giriş üzerinden tek bir Steam hesabına bağlı tek bir A.C.E hesabı kullanır. A.C.E asla Steam şifresi istemez; isteyen kişi organizatör değildir.",
       "Hesap paylaşmak, başka birinin hesabıyla oynamak veya başkasının kendi hesabınızla oynamasına izin vermek yasaktır. Her iki hesap da cezalandırılır.",
       "Bir cezadan, puandan veya kısıtlamadan kaçmak için yeni hesap açmak yasak atlatmadır ve dürüstlük ihlali olarak değerlendirilir (bölüm 14).",
       "Görünen adlar ve avatarlar davranış kurallarına (bölüm 13) uymalıdır. Hakemler maçtan önce değişiklik isteyebilir.",
@@ -43,7 +43,7 @@ export const RB_TR: RulebookText = {
     ],
     [
       "Her iki takım, planlanan başlangıçtan 15 dakika önce tüm oyuncuların girişi yapılmış şekilde maç lobisinde olmalıdır.",
-      "Maçlar A.C.E. tarafından sağlanan sunucularda oynanır. Takımlar hakem onayı olmadan bir maçı başka bir sunucuya taşıyamaz.",
+      "Maçlar A.C.E tarafından sağlanan sunucularda oynanır. Takımlar hakem onayı olmadan bir maçı başka bir sunucuya taşıyamaz.",
       "Bıçak raundu yalnızca bu kural kitabının öngördüğü durumlarda oynanır. Diğer durumlarda başlangıç tarafları vetoya göre belirlenir.",
       "Başlayan bir harita sonuna kadar oynanır. Yeniden başlatmaya yalnızca bölüm 9 kapsamında izin verilir.",
       "Maç bittikten sonraki 15 dakika içinde iki kaptan da sonucu onaylar. Kazanan takım son skor tablosunun ekran görüntüsünü yükler. Demolar sunucuda en az 14 gün saklanır."
@@ -89,8 +89,8 @@ export const RB_TR: RulebookText = {
       "Ghosting (izleyicilerden veya yayınlardan bilgi almak), yayın takibi (stream sniping), başkasının hesabıyla oynamak ve yasak atlatmak yasaktır.",
       "Şike, kasten kaybetmek ve kendi takımınızın oynadığı ya da kendi etkinliğinizdeki herhangi bir maça bahis oynamak yasaktır.",
       "Hakemin yasaklı olarak listelediği veya oyunun amaçlanan mekaniklerini açıkça bozan bir harita ya da oyun hatasını kullanmak yasaktır.",
-      "Etkinlik gerektirdiğinde oyuncular maç boyunca A.C.E. hile önleme istemcisini çalıştırmalıdır.",
-      "Adminler inceleme için demo veya ekran kaydı isteyebilir. Donanım bilgileri ancak A.C.E. hile önleme istemcisi var olduğunda ve Gizlilik Politikası bunları açıkladığında istenir. Makul bir talebi geçerli bir neden olmadan reddetmek kararda dikkate alınabilir.",
+      "Etkinlik gerektirdiğinde oyuncular maç boyunca A.C.E hile önleme istemcisini çalıştırmalıdır.",
+      "Adminler inceleme için demo veya ekran kaydı isteyebilir. Donanım bilgileri ancak A.C.E hile önleme istemcisi var olduğunda ve Gizlilik Politikası bunları açıkladığında istenir. Makul bir talebi geçerli bir neden olmadan reddetmek kararda dikkate alınabilir.",
       "Herkes şüpheli bir ihlali organizatöre gizli olarak bildirebilir. Bildirim yapmadan alenen suçlamak davranış ihlalidir."
     ],
     [
@@ -105,7 +105,7 @@ export const RB_TR: RulebookText = {
       "Yasaklar kişiye ve kişinin kontrol ettiği tüm hesaplara uygulanır."
     ],
     [
-      "A.C.E., düzenlediği her maçı yayınlama hakkına sahiptir. Takımlar yayını reddedemez.",
+      "A.C.E, düzenlediği her maçı yayınlama hakkına sahiptir. Takımlar yayını reddedemez.",
       "Oyuncular kendi maçlarını yalnızca en az 2 dakika gecikmeyle ve etkinlik sayfası izin veriyorsa yayınlayabilir. Resmi yayınlar organizatörün belirlediği gecikmeyi kullanır.",
       "Oyuncular kendi maçlarının canlı yayınını maç sürerken izleyemez.",
       "Yayın programındaki maçlar 24 saat önceden haber verilerek en fazla 2 saat kaydırılabilir. Takımlar yeni saatte hazır olmalı ya da hakem kararı talep etmelidir.",

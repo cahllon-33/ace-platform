@@ -3,7 +3,7 @@ import type { TextBag } from "../types";
 export const desk: TextBag["desk"] = {
   "shop": {
     "meta": {
-      "title": "A.C.E. Marketplace",
+      "title": "A.C.E Marketplace",
       "description": "Mestaruuspalkintokortit. Kauppa ja palkinnot avautuvat pian."
     },
     "heroHonesty": "Ensikatsaus tuleviin mestaruuspalkintoihin. Kauppa avautuu pian; tänään mitään ei veloiteta.",
@@ -26,7 +26,7 @@ export const desk: TextBag["desk"] = {
         "price": "Tulossa pian"
       },
       "crown": {
-        "name": "A.C.E. Crown -avatarkehys",
+        "name": "A.C.E Crown -avatarkehys",
         "tag": "Profiilikoriste",
         "price": "Tulossa pian"
       },
@@ -45,13 +45,13 @@ export const desk: TextBag["desk"] = {
   "support": {
     "meta": {
       "title": "Tuki",
-      "description": "A.C.E.-ohjekeskus. Huijauksenesto-, ranked- ja laskutuspisteet avautuvat kilpailubetan myötä."
+      "description": "A.C.E-ohjekeskus. Huijauksenesto-, ranked- ja laskutuspisteet avautuvat kilpailubetan myötä."
     }
   },
   "contact": {
     "meta": {
       "title": "Yhteystiedot",
-      "description": "Ota yhteyttä A.C.E.:hen. Verkkolomake avautuu pian."
+      "description": "Ota yhteyttä A.C.E:hen. Verkkolomake avautuu pian."
     }
   },
   "contactEmail": {

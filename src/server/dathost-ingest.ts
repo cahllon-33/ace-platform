@@ -15,7 +15,7 @@ export type MatchSummary = {
 
 const n = (v: unknown) => (typeof v === "number" && Number.isFinite(v) ? Math.round(v) : null);
 
-/** Pure: DatHost match payload -> what A.C.E. stores. Spectators are dropped; ties have no winner. */
+/** Pure: DatHost match payload -> what A.C.E stores. Spectators are dropped; ties have no winner. */
 export function summarizeDathostMatch(m: Cs2Match): MatchSummary {
   const scoreA = n(m.team1?.stats?.score) ?? 0;
   const scoreB = n(m.team2?.stats?.score) ?? 0;

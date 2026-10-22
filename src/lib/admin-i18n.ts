@@ -93,7 +93,7 @@ export const ADMIN_EN = {
   deviceTablet: "Tablet",
   deviceUnknown: "Unknown device",
   ownerBadgeTitle: "Site owner (ACE_ADMIN_STEAM_IDS)",
-  kicker: "A.C.E. ADMIN",
+  kicker: "A.C.E ADMIN",
   title: "A.C.E. Operator Desk",
   status: "Signed in as operator · live database",
   statusNote:
@@ -106,7 +106,7 @@ export const ADMIN_EN = {
   onlineValue: "{count} on the website",
   connectedTitle: "Connected on the website",
   connectedLede:
-    "Steam accounts that opened A.C.E. in the last 3 minutes. This is not a live match and not an anti-cheat scan.",
+    "Steam accounts that opened A.C.E in the last 3 minutes. This is not a live match and not an anti-cheat scan.",
   connectedEmpty: "None. A player appears here after a successful Steam sign-in, while they are still on the site.",
   connectedUnavailable:
     "Database unavailable. This list stays empty until PostgreSQL is connected. Sample rows below are not live sessions.",
@@ -232,7 +232,7 @@ export const ADMIN_EN = {
   steamBody:
     "Steam OpenID layout flags for {name} were cleared in this console. The identity row remains in the index.",
   steamHonest:
-    "This overlay is a layout confirmation only. No Steam OpenID session was deleted, no Valve API was called, and A.C.E. never asks for a Steam password.",
+    "This overlay is a layout confirmation only. No Steam OpenID session was deleted, no Valve API was called, and A.C.E never asks for a Steam password.",
   upgradeKicker: "SUBSCRIPTION OVERRIDE",
   upgradeTitle: "Account flagged Premium in this console",
   upgradeBody:
@@ -292,7 +292,7 @@ export const ADMIN_EN = {
   gateDenied: "ACCESS DENIED — UNAUTHORIZED TELEMETRY BREACH",
   gateMissing: "The operator gate is not configured on the server.",
   disclosure:
-    "All video elements, telemetry reports, player listings, financial counters, and ticket histories are conceptual operator staging. A.C.E. does not run a live Anti-Cheat client, does not collect HWID, does not revoke Steam tokens from this page, and does not process live billing.",
+    "All video elements, telemetry reports, player listings, financial counters, and ticket histories are conceptual operator staging. A.C.E does not run a live Anti-Cheat client, does not collect HWID, does not revoke Steam tokens from this page, and does not process live billing.",
   tierFree: "Free",
   tierPlus: "Plus",
   tierPremium: "Premium",
@@ -400,7 +400,7 @@ export const ADMIN_HE: Record<keyof typeof ADMIN_EN, string> = {
   deviceTablet: "טאבלט",
   deviceUnknown: "מכשיר לא ידוע",
   ownerBadgeTitle: "בעל האתר (ACE_ADMIN_STEAM_IDS)",
-  kicker: "A.C.E. ניהול",
+  kicker: "A.C.E ניהול",
   title: "שולחן המפעיל של A.C.E.",
   status: "מחובר כמפעיל · מסד נתונים חי",
   statusNote:
@@ -413,7 +413,7 @@ export const ADMIN_HE: Record<keyof typeof ADMIN_EN, string> = {
   onlineValue: "{count} באתר",
   connectedTitle: "מחוברים לאתר",
   connectedLede:
-    "חשבונות Steam שפתחו את A.C.E. בשלוש הדקות האחרונות. זה לא משחק חי ולא סריקת אנטי-צ'יט.",
+    "חשבונות Steam שפתחו את A.C.E בשלוש הדקות האחרונות. זה לא משחק חי ולא סריקת אנטי-צ'יט.",
   connectedEmpty: "אין. שחקן מופיע כאן אחרי כניסת Steam מוצלחת, כל עוד הוא באתר.",
   connectedUnavailable:
     "מסד הנתונים לא מחובר. הרשימה נשארת ריקה עד ש-PostgreSQL עולה. השורות לדוגמה למטה אינן סשנים חיים.",
@@ -538,7 +538,7 @@ export const ADMIN_HE: Record<keyof typeof ADMIN_EN, string> = {
   steamTitle: "פרמטרי אסימון אימות Valve נותקו",
   steamBody: "דגלי פריסת Steam OpenID עבור {name} נוקו בקונסולה זו. שורת הזהות נשארת באינדקס.",
   steamHonest:
-    "חלון זה הוא אישור פריסה בלבד. לא נמחקה הפעלת Steam OpenID, לא נקרא API של Valve, ו-A.C.E. לעולם לא מבקשת סיסמת Steam.",
+    "חלון זה הוא אישור פריסה בלבד. לא נמחקה הפעלת Steam OpenID, לא נקרא API של Valve, ו-A.C.E לעולם לא מבקשת סיסמת Steam.",
   upgradeKicker: "עקיפת מנוי",
   upgradeTitle: "החשבון סומן כ-Premium בקונסולה זו",
   upgradeBody:
@@ -594,7 +594,7 @@ export const ADMIN_HE: Record<keyof typeof ADMIN_EN, string> = {
   gateDenied: "ACCESS DENIED — UNAUTHORIZED TELEMETRY BREACH",
   gateMissing: "שער המפעיל אינו מוגדר בשרת.",
   disclosure:
-    "כל רכיבי הווידאו, דיווחי הטלמטריה, רשימות השחקנים, מוני הכספים והיסטוריית הכרטיסים הם תצוגת מפעיל מושגית. A.C.E. אינה מריצה אנטי-צ'יט חי, אינה אוספת HWID, אינה מבטלת אסימוני Steam מדף זה, ואינה מעבדת חיוב חי.",
+    "כל רכיבי הווידאו, דיווחי הטלמטריה, רשימות השחקנים, מוני הכספים והיסטוריית הכרטיסים הם תצוגת מפעיל מושגית. A.C.E אינה מריצה אנטי-צ'יט חי, אינה אוספת HWID, אינה מבטלת אסימוני Steam מדף זה, ואינה מעבדת חיוב חי.",
   tierFree: "חינם",
   tierPlus: "Plus",
   tierPremium: "Premium",

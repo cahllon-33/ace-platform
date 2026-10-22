@@ -2,7 +2,7 @@ import type { TextBag } from "../types";
 
 export const teams: TextBag["teams"] = {
   "meta": {
-    "title": "Správa týmu A.C.E.",
+    "title": "Správa týmu A.C.E",
     "description": "Pracovní prostor tvého týmu 5v5. Pozvánky vyžadují ověřenou relaci Steam; kontroly anti-cheat přijdou s A.C.E Shield."
   },
   "hero": {
@@ -18,7 +18,7 @@ export const teams: TextBag["teams"] = {
     "yes": "Ano, pět hráčů",
     "no": "Ne, nechat místa volná",
     "seatsOpen": "Pět míst zůstává volných. Nic nebylo uloženo.",
-    "connectSteam": "Nejprve připojte Steam. Tlačítko vás vrátí na tuto stránku. A.C.E. nikdy nežádá heslo ke službě Steam.",
+    "connectSteam": "Nejprve připojte Steam. Tlačítko vás vrátí na tuto stránku. A.C.E nikdy nežádá heslo ke službě Steam.",
     "alreadyMember": "{name} už patří do týmu {team}. Druhý klan se z tohoto formuláře nezakládá.",
     "thisAccount": "Tento účet",
     "acceptTerms": "Před uložením klanu přijměte podmínky.",
@@ -42,7 +42,7 @@ export const teams: TextBag["teams"] = {
       "email": "Žádný e-mail se neposílá. Potvrzení plánů zůstávají na tomto webu.",
       "charge": "Premium stojí $7 měsíčně. Již brzy: platba zatím není, takže se nic neúčtuje.",
       "board": "Uložený klan je záznam soupisky. Není zařazen na tabuli 100 týmů. Tato tabule ukazuje 0 registrovaných, dokud se neotevře sezóna.",
-      "steam": "Přihlášení používá oficiální Steam OpenID. A.C.E. nikdy nežádá heslo ke službě Steam. Z této stránky vás Steam vrátí sem.",
+      "steam": "Přihlášení používá oficiální Steam OpenID. A.C.E nikdy nežádá heslo ke službě Steam. Z této stránky vás Steam vrátí sem.",
       "roster": "Místo 1 je přihlášený kapitán. Místa 2 až 5 už musí mít účty A.C.E. Pozvánky čekají, dokud je každý hráč nepřijme.",
       "badge": "Odznaky míst se stanou skutečnými kontrolami A.C.E Shield po spuštění anti-cheatu.",
       "support": "Otevřete na tomto webu Podporu nebo Kontakt. Výzva podpory neotevírá požadavek a text napsaný na stránce Kontakt se nedoručuje.",
@@ -63,11 +63,11 @@ export const teams: TextBag["teams"] = {
   },
   "tournaments": {
     "meta": {
-      "title": "Šampionát A.C.E. — elitní vyřazovací pole 100 týmů",
+      "title": "Šampionát A.C.E — elitní vyřazovací pole 100 týmů",
       "description": "Vyřazovací turnaj 100 týmů. Klikni na klan a otevři jeho soupisku a pak profil každého hráče. Registrace se brzy otevře."
     },
     "intro": {
-      "title": "ŠAMPIONÁT A.C.E. — ELITNÍ VYŘAZOVACÍ POLE 100 TÝMŮ",
+      "title": "ŠAMPIONÁT A.C.E — ELITNÍ VYŘAZOVACÍ POLE 100 TÝMŮ",
       "lede": "Zveřejněné pole je vyřazovací soutěž 100 týmů. Graf níže je toto rozvržení. Kliknutím na klan se otevře panel soupisky. Registrace je 0 ze 100. Žádná peněžní cena se neinzeruje ani nefinancuje.",
       "formatValue": "Matice pavouka 100 týmů",
       "briefTitle": "Provozní shrnutí pro 100 týmů",
@@ -110,7 +110,7 @@ export const teams: TextBag["teams"] = {
       "count": "Klan {index} z {total}",
       "next": "Další klan",
       "close": "Zavřít profil",
-      "disclosure": "Sestavy a inventáře hráčů se zde objeví, až se je hráči rozhodnou sdílet. A.C.E. nesbírá údaje o hardwaru."
+      "disclosure": "Sestavy a inventáře hráčů se zde objeví, až se je hráči rozhodnou sdílet. A.C.E nesbírá údaje o hardwaru."
     },
     "player": {
       "level": "ÚR. {level} · RP {rating}",
@@ -140,7 +140,7 @@ export const teams: TextBag["teams"] = {
     "monitor": "Obnovovací frekvence · nesdíleno",
     "headset": "Nesdíleno"
   },
-  "profileDisclosure": "A.C.E. neukládá inventáře hardwaru a nespouští klienta anti-cheatu. Grafy výkonnostních trendů a bojová matice vyžadují relaci A.C.E. Plus nebo Premium. Odkaz na profil Steam zadaný na této stránce se neukládá a není oficiálním identifikátorem.",
+  "profileDisclosure": "A.C.E neukládá inventáře hardwaru a nespouští klienta anti-cheatu. Grafy výkonnostních trendů a bojová matice vyžadují relaci A.C.E Plus nebo Premium. Odkaz na profil Steam zadaný na této stránce se neukládá a není oficiálním identifikátorem.",
   "errors": {
     "signInRequired": "Je vyžadováno přihlášení.",
     "nameLength": "Název týmu musí mít 2 až 32 znaků.",

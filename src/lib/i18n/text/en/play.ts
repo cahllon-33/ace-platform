@@ -42,7 +42,7 @@
           "Solo, duo, or trio",
           "A planned window of {points} rating points",
           "A Steam profile must already be stored",
-          "Uses the A.C.E. rating rule · search coming soon"
+          "Uses the A.C.E rating rule · search coming soon"
         ]
       },
       "elite": {

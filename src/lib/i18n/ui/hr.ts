@@ -25,7 +25,7 @@ export const UI_HR: Ui = {
     "company": "Tvrtka",
     "legal": "Pravne informacije",
     "tagline": "Natjecateljske ljestvice za Counter-Strike 2, izgrađene oko poštene igre.",
-    "follow": "Prati A.C.E.",
+    "follow": "Prati A.C.E",
     "rights": "Sva prava pridržana.",
     "legalLine": "© 2026 A.C.E. Neovisna platforma, nije povezana s tvrtkom Valve. Counter-Strike i CS2 zaštitni su znakovi tvrtke Valve Corporation."
   },
@@ -58,7 +58,7 @@ export const UI_HR: Ui = {
   "maps": {
     "kicker": "Natjecateljski skup mapa",
     "title": "Mape i prijenos",
-    "lede": "Sedam mapa čini A.C.E. natjecateljski skup. Timovi iz njega zabranjuju i biraju tijekom veta prema pravilniku. Prijenosi turnira prikazuju se na ekranu ispod.",
+    "lede": "Sedam mapa čini A.C.E natjecateljski skup. Timovi iz njega zabranjuju i biraju tijekom veta prema pravilniku. Prijenosi turnira prikazuju se na ekranu ispod.",
     "rulebook": "Pravila veta",
     "screen": "Ekran prijenosa",
     "offAir": "Nije u eteru",
@@ -110,10 +110,10 @@ export const UI_HR: Ui = {
     }
   },
   "rules": {
-    "kicker": "A.C.E. pravilnik natjecanja",
+    "kicker": "A.C.E pravilnik natjecanja",
     "title": "Pravila natjecanja",
     "version": "Verzija {version} · vrijedi od {date}",
-    "intro": "Pravila prema kojima se igra svako A.C.E. natjecanje. Točke označene s „Primjenjuje se nakon uvođenja” stupaju na snagu kad se pokrene sustav o kojem ovise.",
+    "intro": "Pravila prema kojima se igra svako A.C.E natjecanje. Točke označene s „Primjenjuje se nakon uvođenja” stupaju na snagu kad se pokrene sustav o kojem ovise.",
     "pending": "Primjenjuje se nakon uvođenja",
     "contents": "Sadržaj",
     "penalties": {
@@ -149,7 +149,7 @@ export const UI_HR: Ui = {
   "antiCheat": {
     "kicker": "A.C.E Shield",
     "title": "Zaštita od varanja",
-    "lede": "A.C.E Shield je sustav poštene igre koji se gradi za svaku A.C.E. utakmicu: provjere klijenta, poslužitelja, utakmice i ponašanja rade zajedno, a privatnost je na prvom mjestu.",
+    "lede": "A.C.E Shield je sustav poštene igre koji se gradi za svaku A.C.E utakmicu: provjere klijenta, poslužitelja, utakmice i ponašanja rade zajedno, a privatnost je na prvom mjestu.",
     "statusLabel": "Faza uvođenja",
     "pillarsTitle": "Stupovi arhitekture",
     "pillars": {
@@ -229,7 +229,7 @@ export const UI_HR: Ui = {
       "expansion1": "Autonomous Anti-Cheat",
       "expansion2": "Competitive Calibration",
       "expansion3": "Elite Players",
-      "line": "Izgradi svoj natjecateljski identitet. Kalibriraj svoju vještinu. Penji se kroz A.C.E. rangove.",
+      "line": "Izgradi svoj natjecateljski identitet. Kalibriraj svoju vještinu. Penji se kroz A.C.E rangove.",
       "connectSteam": "Poveži Steam",
       "openDashboard": "Otvori nadzornu ploču",
       "exploreRanks": "Istraži rangove"
@@ -237,7 +237,7 @@ export const UI_HR: Ui = {
     "status": {
       "title": "Status platforme",
       "steam": "Prijava putem Steama",
-      "shield": "A.C.E. Shield",
+      "shield": "A.C.E Shield",
       "servers": "Natjecateljski poslužitelji",
       "tournaments": "Turniri",
       "billing": "Naplata",
@@ -288,7 +288,7 @@ export const UI_HR: Ui = {
     "chat": {
       "open": "Otvori chat podrške",
       "close": "Zatvori chat podrške",
-      "title": "A.C.E. podrška",
+      "title": "A.C.E podrška",
       "greeting": "Bok! Ja sam asistent podrške A.C.E. Pitaj me o rangovima, planovima, pravilima ili svom računu.",
       "placeholder": "Upiši svoje pitanje…",
       "send": "Pošalji",
@@ -316,7 +316,7 @@ export const UI_HR: Ui = {
       "stepsKicker": "Kako radi",
       "stepsTitle": "Tri koraka do prvog ranga",
       "step1t": "Poveži Steam",
-      "step1b": "Prijavi se putem Steam OpenID. A.C.E. nikad ne vidi tvoju Steam lozinku.",
+      "step1b": "Prijavi se putem Steam OpenID. A.C.E nikad ne vidi tvoju Steam lozinku.",
       "step2t": "Kalibracija",
       "step2b": "Počinješ na razini 3 s 1.200 RP. Svaki zabilježeni meč mijenja RP prema objavljenim pravilima.",
       "step3t": "Uspon",
@@ -334,7 +334,7 @@ export const UI_HR: Ui = {
     "profile": {
       "kicker": "IGRAČ",
       "notFound": "Igrač nije pronađen",
-      "notFoundBody": "Nijedan A.C.E. račun ne koristi ovaj Steam ID ili profil nije javan.",
+      "notFoundBody": "Nijedan A.C.E račun ne koristi ovaj Steam ID ili profil nije javan.",
       "rating": "Ocjena",
       "rank": "Rang",
       "record": "Omjer",
@@ -382,7 +382,7 @@ export const UI_HR: Ui = {
     "nf": {
       "code": "Pogreška 404",
       "title": "Ova je stranica izvan karte",
-      "body": "Poveznica je možda stara ili pogrešno upisana. Svaki dio A.C.E.-a udaljen je jedan klik odavde.",
+      "body": "Poveznica je možda stara ili pogrešno upisana. Svaki dio A.C.E-a udaljen je jedan klik odavde.",
       "home": "Natrag na početnu",
       "ranks": "Pogledaj rangove"
     },
@@ -401,7 +401,7 @@ export const UI_HR: Ui = {
     "st": {
       "kicker": "Izvedba",
       "title": "Statistika igrača",
-      "lede": "Svaki broj dolazi iz zabilježenih A.C.E. mečeva. Ništa nije procijenjeno.",
+      "lede": "Svaki broj dolazi iz zabilježenih A.C.E mečeva. Ništa nije procijenjeno.",
       "empty": "Još nema zabilježenih mečeva. Statistika će se pojaviti nakon prvog rangiranog meča.",
       "winRate": "Postotak pobjeda",
       "adr": "ADR",
@@ -427,11 +427,11 @@ export const UI_HR: Ui = {
       "none": "—"
     },
     "ab": {
-      "title": "O A.C.E.-u",
+      "title": "O A.C.E-u",
       "lede": "Natjecateljska platforma za Counter-Strike 2 izgrađena oko jedne javne tablice rangova i planova koji nikad ne kupuju prednost.",
-      "b1": "A.C.E. vodi rangirane igre, ljestvice i turnire za CS2. Prijava je putem Steam OpenID-a; nikad ne vidimo tvoju Steam lozinku.",
+      "b1": "A.C.E vodi rangirane igre, ljestvice i turnire za CS2. Prijava je putem Steam OpenID-a; nikad ne vidimo tvoju Steam lozinku.",
       "b2": "Tvoj rang računa se samo iz zabilježenih rezultata prema objavljenim pravilima. Plaćeni planovi su samo kozmetički i za udobnost.",
-      "b3": "A.C.E. je neovisna platforma i nije povezan s Valveom."
+      "b3": "A.C.E je neovisna platforma i nije povezan s Valveom."
     },
     "ss": {
       "title": "Stanje poslužitelja",
@@ -474,7 +474,7 @@ export const UI_HR: Ui = {
     "lv": {
       "nav": "Uživo",
       "title": "Prijenosi uživo",
-      "lede": "Službeni prijenosi A.C.E. turnira. Prijenos se ovdje prikazuje samo dok ga operateri drže u eteru.",
+      "lede": "Službeni prijenosi A.C.E turnira. Prijenos se ovdje prikazuje samo dok ga operateri drže u eteru.",
       "none": "Trenutačno nema prijenosa uživo",
       "noneBody": "Kad službeni prijenos krene, pojavit će se ovdje. U međuvremenu pogledajte turnire ispod.",
       "schedule": "Nadolazeći turniri",
@@ -484,7 +484,7 @@ export const UI_HR: Ui = {
     }
   },
   "r46": {
-    "aria": "Što A.C.E. predstavlja",
+    "aria": "Što A.C.E predstavlja",
     "fair": "Zaštita fair playa",
     "fairSub": "Prijava putem Steama, objavljena pravila i prijave igrača koje pregledavaju admini.",
     "calib": "Natjecateljska kalibracija",
@@ -494,7 +494,7 @@ export const UI_HR: Ui = {
   },
   "r45": {
     "title": "Iza Legenda",
-    "lede": "Pet prestižnih znački iznad A.C.E. Legend, po jedna svakih 200 RP od 2.150 do 2.950. Osvajaju se samo igrom.",
+    "lede": "Pet prestižnih znački iznad A.C.E Legend, po jedna svakih 200 RP od 2.150 do 2.950. Osvajaju se samo igrom.",
     "plus": "Plus · platina",
     "premium": "Premium · zlatna vatra",
     "fair": "Isti RP za sve. Pragovi prestiža, matchmaking i rejting jednaki su na svakom planu. Ništa od ovoga se ne kupuje.",
@@ -527,10 +527,10 @@ export const UI_HR: Ui = {
     "pr": {
       "kicker": "Prestiž",
       "title": "Pravila znački",
-      "lede": "Kako se osvaja svaka A.C.E. značka. Značke su samo kozmetičke: nikad ne mijenjaju matchmaking, RP ni neko pravilo.",
+      "lede": "Kako se osvaja svaka A.C.E značka. Značke su samo kozmetičke: nikad ne mijenjaju matchmaking, RP ni neko pravilo.",
       "ranks": "Značke ranga (razine 1–10) prate tvoje RP. Svi vide isti rang i istu fiksnu boju razine.",
       "prestige": "Značke prestiža su pet dugoročnih ciljeva iznad {elite} RP: jedna svakih 200 RP od 2.150 do 2.950.",
-      "free": "Free: značka ostaje A.C.E. Legend, a razina prestiža prikazuje se kao tekstualni miljokaz. RP nikad nije ograničen.",
+      "free": "Free: značka ostaje A.C.E Legend, a razina prestiža prikazuje se kao tekstualni miljokaz. RP nikad nije ograničen.",
       "plus": "Plus: platinasti set prestiža.",
       "premium": "Premium: animirani zlatni set prestiža.",
       "lose": "Padneš li ispod praga prestiža, značka prati RP prema dolje; kad ga ponovno dosegneš, vraća se.",
@@ -683,5 +683,19 @@ export const UI_HR: Ui = {
     "communityTitle": "Zajednica",
     "communityLede": "Prati A.C.E za vijesti o mečevima, turnire i najbolje trenutke.",
     "followOn": "A.C.E na {network}"
+  },
+  "r49b": {
+    "title": "Steam inventar",
+    "private": "Inventar je privatan",
+    "privateBody": "Steam inventar ovog igrača je privatan.",
+    "empty": "U javnom inventaru nema CS2 predmeta.",
+    "unavailable": "Steam inventar trenutno se ne može učitati.",
+    "hiddenOwner": "Tvoj prikaz inventara skriven je s profila.",
+    "hide": "Sakrij prikaz",
+    "show": "Prikaži prikaz",
+    "priceSource": "Cijene: najniža ponuda na Steam Community Marketu, spremljeno.",
+    "note": "Samo prikaz. A.C.E nikad ne kupuje, ne prodaje i ne mijenja Steam predmete.",
+    "updated": "Ažurirano {date}",
+    "more": "+{n} predmeta više"
   }
 };

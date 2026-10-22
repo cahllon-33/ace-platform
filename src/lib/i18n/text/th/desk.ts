@@ -3,7 +3,7 @@ import type { TextBag } from "../types";
 export const desk: TextBag["desk"] = {
   "shop": {
     "meta": {
-      "title": "A.C.E. Marketplace",
+      "title": "A.C.E Marketplace",
       "description": "การ์ดรางวัลชิงแชมป์ ร้านค้าและรางวัลจะเปิดเร็ว ๆ นี้"
     },
     "heroHonesty": "ดูรางวัลชิงแชมป์ที่กำลังจะมาก่อนใคร ร้านค้าจะเปิดเร็ว ๆ นี้ วันนี้ไม่มีการเรียกเก็บเงิน",
@@ -26,7 +26,7 @@ export const desk: TextBag["desk"] = {
         "price": "เร็ว ๆ นี้"
       },
       "crown": {
-        "name": "กรอบอวาตาร์ A.C.E. Crown",
+        "name": "กรอบอวาตาร์ A.C.E Crown",
         "tag": "ของตกแต่งโปรไฟล์",
         "price": "เร็ว ๆ นี้"
       },
@@ -45,13 +45,13 @@ export const desk: TextBag["desk"] = {
   "support": {
     "meta": {
       "title": "ฝ่ายสนับสนุน",
-      "description": "ศูนย์ช่วยเหลือ A.C.E. ฝ่ายป้องกันการโกง จัดอันดับ และการเรียกเก็บเงินจะเปิดพร้อมเบต้าการแข่งขัน"
+      "description": "ศูนย์ช่วยเหลือ A.C.E ฝ่ายป้องกันการโกง จัดอันดับ และการเรียกเก็บเงินจะเปิดพร้อมเบต้าการแข่งขัน"
     }
   },
   "contact": {
     "meta": {
       "title": "ติดต่อ",
-      "description": "ติดต่อ A.C.E. แบบฟอร์มออนไลน์จะเปิดเร็ว ๆ นี้"
+      "description": "ติดต่อ A.C.E แบบฟอร์มออนไลน์จะเปิดเร็ว ๆ นี้"
     }
   },
   "contactEmail": {

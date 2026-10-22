@@ -96,6 +96,8 @@ model User {
   subscriptionExpiresAt DateTime?
   /// occurred_at of the last applied Paddle event: older events are ignored (out-of-order delivery).
   subscriptionEventAt  DateTime?
+  /// R49b: the player chose to hide the Steam inventory showcase on their public profile.
+  inventoryHidden      Boolean        @default(false)
   createdAt          DateTime         @default(now())
   updatedAt          DateTime         @updatedAt
 
@@ -235,7 +237,7 @@ model Match {
   round         Int
   slot          Int
   state         MatchState     @default(PENDING)
-  /// Regulation shell for A.C.E. competitive matches.
+  /// Regulation shell for A.C.E competitive matches.
   format        String         @default("5v5")
   ruleset       String         @default("MR12")
   mapName       String?
@@ -612,6 +614,8 @@ model PaddleOrder {
   status       String    @default("pending")
   createdAt    DateTime  @default(now())
   completedAt  DateTime?
+  /// R49b: set when an approved full refund or chargeback revoked what the order granted.
+  refundedAt   DateTime?
 
   @@index([userId])
   @@index([kind, refId])
@@ -622,4 +626,22 @@ model SiteSetting {
   key       String   @id
   value     String
   updatedAt DateTime @updatedAt
+}
+
+/// R49b cache of a player's public CS2 inventory (appid 730, context 2), refreshed about every 6 hours.
+model SteamInventoryCache {
+  steamId   String   @id
+  /// public | private | error
+  status    String
+  /// Parsed top items (JSON array of InventoryItem), [] when private/error.
+  items     Json
+  total     Int      @default(0)
+  fetchedAt DateTime
+}
+
+/// R49b cache of Steam Community Market priceoverview (USD). lowest = null means Steam returned no listing price.
+model SteamMarketPrice {
+  marketHashName String   @id
+  lowest         String?
+  fetchedAt      DateTime
 }

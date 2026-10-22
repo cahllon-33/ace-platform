@@ -4,18 +4,18 @@ export const features: TextBag["features"] = {
   "page": {
     "meta": {
       "title": "Fitur",
-      "description": "Arsitektur Kernel Anti-Cheat A.C.E. yang ditetapkan, tautan biometrik Face Scan, dan sepuluh tingkat kalibrasi keterampilan. Sistem ini belum aktif di situs ini."
+      "description": "Arsitektur Kernel Anti-Cheat A.C.E yang ditetapkan, tautan biometrik Face Scan, dan sepuluh tingkat kalibrasi keterampilan. Sistem ini belum aktif di situs ini."
     },
     "header": {
       "kicker": "ACE-FITUR / KERNEL / FACE-SCAN / KALIBRASI",
       "title": "Spesifikasi fitur platform",
-      "lede": "Halaman ini adalah peta teknis tingkat produksi untuk tiga sistem A.C.E. yang direncanakan: Kernel Anti-Cheat Otonom, tautan biometrik Face Scan, dan tangga kalibrasi keterampilan sepuluh tingkat. Tidak ada apa pun di halaman ini yang merupakan kernel aktif, produk kamera aktif, atau antrean ranked aktif. Steam OpenID, tim 5v5, tata letak bagan, dan perhitungan rating gaya Elo ada di repositori ini. Server CS2 khusus, pembayaran, hadiah, dan klien integritas yang dapat diunduh tidak ada."
+      "lede": "Halaman ini adalah peta teknis tingkat produksi untuk tiga sistem A.C.E yang direncanakan: Kernel Anti-Cheat Otonom, tautan biometrik Face Scan, dan tangga kalibrasi keterampilan sepuluh tingkat. Tidak ada apa pun di halaman ini yang merupakan kernel aktif, produk kamera aktif, atau antrean ranked aktif. Steam OpenID, tim 5v5, tata letak bagan, dan perhitungan rating gaya Elo ada di repositori ini. Server CS2 khusus, pembayaran, hadiah, dan klien integritas yang dapat diunduh tidak ada."
     },
     "kernel": {
       "title": "Arsitektur Kernel Anti-Cheat",
       "paragraphs": [
         "Autonomous Secure Shell yang ditetapkan adalah klien integritas terikat perangkat keras yang akan berjalan di samping Counter-Strike 2 di mesin pemain dan melaporkan status ALLOW atau DENY bertanda tangan ke server yang dikelola A.C.E. Desain kernel bersifat fail-closed: jika klien hilang, dihentikan, usang, dipalsukan, atau tidak terverifikasi, akses ranked ditolak. Browser tidak pernah menjadi penentu kelayakan. CARI PERTANDINGAN ranked di situs ini sudah tertutup karena alasan itu.",
-        "Lapisan kernel yang direncanakan mencakup jabat tangan mode pengguna yang mengikat SteamID 64-bit terverifikasi ke akun A.C.E., permukaan atestasi pengenal perangkat keras (HWID), daftar pantau tanda tangan untuk keluarga cheat yang dikenal, dan rute kelayakan server-ke-server yang dilindungi rahasia bersama. Validasi tanda tangan cheat, penolakan pemeriksaan integritas, atau pengenal perangkat yang dipalsukan ditetapkan untuk menghasilkan perubahan status akun segera menjadi BANNED atau PERM_BANNED dan, jika produk penagihan ada, hilangnya seluruh waktu langganan prabayar tanpa kewajiban pengembalian dana. Klien semacam itu tidak disertakan dengan situs ini. Kartu unduhan Segera Hadir hanyalah tata letak."
+        "Lapisan kernel yang direncanakan mencakup jabat tangan mode pengguna yang mengikat SteamID 64-bit terverifikasi ke akun A.C.E, permukaan atestasi pengenal perangkat keras (HWID), daftar pantau tanda tangan untuk keluarga cheat yang dikenal, dan rute kelayakan server-ke-server yang dilindungi rahasia bersama. Validasi tanda tangan cheat, penolakan pemeriksaan integritas, atau pengenal perangkat yang dipalsukan ditetapkan untuk menghasilkan perubahan status akun segera menjadi BANNED atau PERM_BANNED dan, jika produk penagihan ada, hilangnya seluruh waktu langganan prabayar tanpa kewajiban pengembalian dana. Klien semacam itu tidak disertakan dengan situs ini. Kartu unduhan Segera Hadir hanyalah tata letak."
       ],
       "stats": [
         {
@@ -35,7 +35,7 @@ export const features: TextBag["features"] = {
     "faceScan": {
       "title": "Tautan biometrik Face Scan",
       "paragraphs": [
-        "Face Scan adalah lapisan pengikatan identitas masa depan yang ditetapkan, bukan produk kamera di situs ini. Desain yang direncanakan, hanya setelah persetujuan eksplisit dan tinjauan hukum terpisah, akan mengikat templat wajah yang diperiksa keaktifannya ke akun A.C.E. yang sama yang sudah memegang SteamID terverifikasi server. Tujuannya adalah menahan berbagi akun yang digunakan untuk menghindari pembatasan sebelumnya. A.C.E. tidak mengumpulkan gambar wajah, embedding wajah, alamat surel, atau sidik jari perangkat keras hari ini. Postur privasi yang berlaku tetap Kebutuhan Ketat: hanya SteamID 64-bit terverifikasi dan nama tampilan Steam publik.",
+        "Face Scan adalah lapisan pengikatan identitas masa depan yang ditetapkan, bukan produk kamera di situs ini. Desain yang direncanakan, hanya setelah persetujuan eksplisit dan tinjauan hukum terpisah, akan mengikat templat wajah yang diperiksa keaktifannya ke akun A.C.E yang sama yang sudah memegang SteamID terverifikasi server. Tujuannya adalah menahan berbagi akun yang digunakan untuk menghindari pembatasan sebelumnya. A.C.E tidak mengumpulkan gambar wajah, embedding wajah, alamat surel, atau sidik jari perangkat keras hari ini. Postur privasi yang berlaku tetap Kebutuhan Ketat: hanya SteamID 64-bit terverifikasi dan nama tampilan Steam publik.",
         "Jika Face Scan pernah diterapkan, ia tidak akan menggantikan Steam OpenID, tidak akan digunakan untuk menjual iklan perilaku, dan tidak akan membuka antrean ranked dengan sendirinya. Akses ranked tetap memerlukan jalur Anti-Cheat terverifikasi. Sampai tinjauan itu ada, panel Face Scan apa pun di lobi adalah pratinjau desain."
       ]
     },
@@ -57,8 +57,8 @@ export const features: TextBag["features"] = {
   },
   "loot": {
     "kicker": "Kosmetik · segera hadir",
-    "title": "ARSITEKTUR LOOT A.C.E. — DROP SENJATA",
-    "lede": "Finishing A.C.E. orisinal, hadir bersama toko. Kosmetik tidak pernah memengaruhi kompetisi.",
+    "title": "ARSITEKTUR LOOT A.C.E — DROP SENJATA",
+    "lede": "Finishing A.C.E orisinal, hadir bersama toko. Kosmetik tidak pernah memengaruhi kompetisi.",
     "checkout": "Pembayaran · segera hadir"
   },
   "identityPreview": {
@@ -85,23 +85,23 @@ export const features: TextBag["features"] = {
       },
       "anti-cheat": {
         "title": "Ikhtisar Anti-Cheat",
-        "body": "A.C.E. tidak memiliki produk Anti-Cheat yang berfungsi. Matchmaking ranked tetap tertutup sampai integrasi nyata ada."
+        "body": "A.C.E tidak memiliki produk Anti-Cheat yang berfungsi. Matchmaking ranked tetap tertutup sampai integrasi nyata ada."
       },
       "download-client": {
         "title": "Unduh Klien",
-        "body": "Tidak ada klien desktop A.C.E. untuk diunduh. Klien native tidak ada dalam tahap web saat ini."
+        "body": "Tidak ada klien desktop A.C.E untuk diunduh. Klien native tidak ada dalam tahap web saat ini."
       },
       "mobile-app": {
         "title": "Aplikasi Seluler",
-        "body": "Aplikasi seluler A.C.E. ada di peta jalan."
+        "body": "Aplikasi seluler A.C.E ada di peta jalan."
       },
       "news": {
         "title": "Berita",
-        "body": "Ruang berita A.C.E. segera dibuka."
+        "body": "Ruang berita A.C.E segera dibuka."
       },
       "about": {
         "title": "Tentang Kami",
-        "body": "A.C.E. adalah situs kompetisi Counter-Strike 2 independen dalam pratinjau situs publik. Tidak berafiliasi dengan Valve."
+        "body": "A.C.E adalah situs kompetisi Counter-Strike 2 independen dalam pratinjau situs publik. Tidak berafiliasi dengan Valve."
       },
       "advertising": {
         "title": "Periklanan",

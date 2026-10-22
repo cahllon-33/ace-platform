@@ -10,7 +10,7 @@ describe("ai support policy", () => {
     expect(p).toContain("$7");
     expect(p).toContain("no pay-to-win");
     expect(p).toContain("in development");
-    expect(p).toContain("reviewed only by the A.C.E. administration");
+    expect(p).toContain("reviewed only by the A.C.E administration");
     expect(p).toMatch(/Never claim: demo parsing, kernel-level anti-cheat/);
     expect(p).toContain("Hebrew");
     expect(p).not.toMatch(/faceit|esea|\besl\b/i);

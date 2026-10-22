@@ -3,7 +3,7 @@ import type { TextBag } from "../types";
 export const codex: TextBag["codex"] = {
   "meta": {
     "title": "โคเด็กซ์การปรับเทียบ",
-    "description": "คำอธิบายแรงก์ A.C.E. แต่ละคำถามเปิดคำตอบเต็มเรื่อง Rating Points และกติกาของแรงก์นั้น โคเด็กซ์นี้ไม่บันทึกแมตช์",
+    "description": "คำอธิบายแรงก์ A.C.E แต่ละคำถามเปิดคำตอบเต็มเรื่อง Rating Points และกติกาของแรงก์นั้น โคเด็กซ์นี้ไม่บันทึกแมตช์",
     "articleTitle": "{title} — โคเด็กซ์การปรับเทียบ"
   },
   "groups": {
@@ -31,7 +31,7 @@ export const codex: TextBag["codex"] = {
     "searchLabel": "ค้นหาในโคเด็กซ์",
     "searchPlaceholder": "ลอง 1950, Recruit หรือ เสมอ",
     "empty": "ไม่มีรายการที่ตรงกับการค้นหา",
-    "columnLabel": "คอลัมน์ A.C.E. {n}",
+    "columnLabel": "คอลัมน์ A.C.E {n}",
     "pagerLabel": "หน้าโคเด็กซ์",
     "first": "แรก",
     "previous": "ก่อนหน้า",
@@ -40,7 +40,7 @@ export const codex: TextBag["codex"] = {
     "pageOf": "หน้า {n} จาก {m}"
   },
   "article": {
-    "breadcrumb": "A.C.E. · โคเด็กซ์การปรับเทียบ",
+    "breadcrumb": "A.C.E · โคเด็กซ์การปรับเทียบ",
     "status": "หน้านี้อธิบายบันไดที่เขียนไว้ ไม่บันทึกแมตช์ และไม่เปลี่ยนเรตติ้งที่จัดเก็บ",
     "emblemAlt": "ตราสัญลักษณ์ {name} แรงก์ {level}",
     "emblemCaption": "แรงก์ {level} · {name} · {crystal}",
@@ -63,7 +63,7 @@ export const codex: TextBag["codex"] = {
     "turnLabel": "อ่านโคเด็กซ์ต่อ",
     "previous": "ก่อนหน้า",
     "next": "ถัดไป",
-    "alsoIn": "มีใน A.C.E. ด้วย",
+    "alsoIn": "มีใน A.C.E ด้วย",
     "backToBoard": "กลับไปที่กระดานแรงก์"
   },
   "rankArticle": {
@@ -124,20 +124,20 @@ export const codex: TextBag["codex"] = {
       "detail": "ช่วงตั้งแต่ 1,800 ถึง 1,949 นั่นคือ 150 แต้ม ไม่ใช่ 100 1,949 ยังเป็น Sovereign Legend เปิดที่ 1,950"
     },
     "rank-10-a-c-e-legend": {
-      "stance": "A.C.E. Legend คือเครื่องหมายสุดท้าย ป้ายคริสตัลคือ ACE ELITE ชื่อทางการคือ A.C.E. Legend",
+      "stance": "A.C.E Legend คือเครื่องหมายสุดท้าย ป้ายคริสตัลคือ ACE ELITE ชื่อทางการคือ A.C.E Legend",
       "detail": "ช่วงเปิดที่ 1,950 และสิ้นสุดที่เพดานของเอนจิน 3,000 ไม่มีแรงก์ที่สิบเอ็ด เรตติ้งที่จัดเก็บขึ้นเกิน 3,000 ไม่ได้"
     }
   },
   "articles": {
     "what-a-rank-is": {
-      "title": "แรงก์ A.C.E. คืออะไร",
-      "lede": "แรงก์คือเครื่องหมายที่ครอบ Rating Points ที่จัดเก็บของคุณ สิบเครื่องหมายครอบคลุมทั้งบันได จาก Recruit ถึง A.C.E. Legend",
+      "title": "แรงก์ A.C.E คืออะไร",
+      "lede": "แรงก์คือเครื่องหมายที่ครอบ Rating Points ที่จัดเก็บของคุณ สิบเครื่องหมายครอบคลุมทั้งบันได จาก Recruit ถึง A.C.E Legend",
       "sections": [
         {
           "heading": "หนึ่งตัวเลข หนึ่งเครื่องหมาย",
           "paragraphs": [
             "บัญชีจัดเก็บเรตติ้งแข่งขัน บันไดอ่านตัวเลขนั้นและคืนแรงก์สูงสุดที่ตัวเลขไปถึงขั้นต่ำ คุณไม่ได้ถือสองแรงก์พร้อมกัน",
-            "Recruit คือแรงก์ 1 A.C.E. Legend คือแรงก์ 10 ชื่อทางการคือชื่อในบันได คำที่สั้นกว่าบนตราคือป้ายคริสตัลของแรงก์เดียวกัน",
+            "Recruit คือแรงก์ 1 A.C.E Legend คือแรงก์ 10 ชื่อทางการคือชื่อในบันได คำที่สั้นกว่าบนตราคือป้ายคริสตัลของแรงก์เดียวกัน",
             "โคเด็กซ์นี้อธิบายบันไดที่เขียนไว้ ไม่บันทึกแมตช์ และไม่เปลี่ยนเรตติ้งที่จัดเก็บ"
           ]
         },
@@ -145,7 +145,7 @@ export const codex: TextBag["codex"] = {
           "heading": "ขั้นต่ำเรียงอย่างไร",
           "paragraphs": [
             "Recruit ครอบคลุมจุดเริ่มของบันได Operative เปิดที่ 1,100 จาก Vanguard ถึง Grandmaster ขั้นต่ำใหม่แต่ละขั้นสูงขึ้น 100 แต้ม: 1,200, 1,300, 1,400, 1,500, 1,600 แล้ว 1,700",
-            "Sovereign เปิดที่ 1,800 และคงบัญชีไว้จนถึง 1,949 A.C.E. Legend เปิดที่ 1,950 เพดานเอนจินคือ 3,000 ดังนั้น Legend จึงเป็นช่วงที่ยาวที่สุด"
+            "Sovereign เปิดที่ 1,800 และคงบัญชีไว้จนถึง 1,949 A.C.E Legend เปิดที่ 1,950 เพดานเอนจินคือ 3,000 ดังนั้น Legend จึงเป็นช่วงที่ยาวที่สุด"
           ]
         },
         {
@@ -164,14 +164,14 @@ export const codex: TextBag["codex"] = {
         {
           "heading": "ทำไมจึงมีทั้งสอง",
           "paragraphs": [
-            "เอนจินและโปรไฟล์ใช้ชื่อทางการ: Recruit, Operative, Vanguard, Specialist, Veteran, Elite, Master, Grandmaster, Sovereign, A.C.E. Legend",
+            "เอนจินและโปรไฟล์ใช้ชื่อทางการ: Recruit, Operative, Vanguard, Specialist, Veteran, Elite, Master, Grandmaster, Sovereign, A.C.E Legend",
             "ตรายังมีป้ายคริสตัล: IRON, BRONZE, SILVER, GOLD, PLATINUM, DIAMOND, MASTER, GRANDMASTER, IMMORTAL, ACE ELITE ป้ายนั้นเป็นงานศิลป์ ไม่สร้างแรงก์ที่สิบเอ็ดและไม่จัดเก็บตัวเลขที่สอง"
           ]
         },
         {
           "heading": "ตรงไหนที่ต่างกัน",
           "paragraphs": [
-            "ป้ายคริสตัลของ Specialist คือ GOLD ของ Veteran คือ PLATINUM ของ Elite คือ DIAMOND ของ Sovereign คือ IMMORTAL ของ A.C.E. Legend คือ ACE ELITE ทุกกรณีขั้นต่ำยังเป็นของชื่อทางการ",
+            "ป้ายคริสตัลของ Specialist คือ GOLD ของ Veteran คือ PLATINUM ของ Elite คือ DIAMOND ของ Sovereign คือ IMMORTAL ของ A.C.E Legend คือ ACE ELITE ทุกกรณีขั้นต่ำยังเป็นของชื่อทางการ",
             "Master และ Grandmaster ใช้คำเดียวกันทั้งสองที่"
           ]
         }
@@ -287,7 +287,7 @@ export const codex: TextBag["codex"] = {
           "heading": "จุดหยุด",
           "paragraphs": [
             "แพ้ที่ 100 Rating Points ยังอยู่ที่ 100 ชนะที่ 3,000 ยังอยู่ที่ 3,000 ขั้นต่ำบันไดของ Recruit เขียนเป็น 0 แต่ตัวเลขที่จัดเก็บไม่เคยใช้ช่องว่างใต้ 100",
-            "1,949 คือ Sovereign 1,950 คือ A.C.E. Legend ไม่มีเครื่องหมายระหว่างกลาง"
+            "1,949 คือ Sovereign 1,950 คือ A.C.E Legend ไม่มีเครื่องหมายระหว่างกลาง"
           ]
         },
         {
@@ -334,7 +334,7 @@ export const codex: TextBag["codex"] = {
           "heading": "สิ่งที่โต๊ะไม่ทำ",
           "paragraphs": [
             "FIND MATCH ไม่ค้นหาคู่แข่ง ไม่เปลี่ยน Rating Points แรงก์ในบัญชียังเป็นตัวเลขที่จัดเก็บ ซึ่งบันไดในโคเด็กซ์นี้อ่าน",
-            "ไม่มีคิวสูงสุดแยกเหนือ Legend A.C.E. Legend คือเครื่องหมายสุดท้าย และเปิดที่ 1,950 Rating Points"
+            "ไม่มีคิวสูงสุดแยกเหนือ Legend A.C.E Legend คือเครื่องหมายสุดท้าย และเปิดที่ 1,950 Rating Points"
           ]
         }
       ]
@@ -440,12 +440,12 @@ export const codex: TextBag["codex"] = {
     },
     "how-a-roster-is-assembled": {
       "title": "รายชื่อถูกจัดอย่างไร",
-      "lede": "กัปตันเชิญผู้เล่นที่มีบัญชี A.C.E. อยู่แล้ว ไม่มีลิงก์แชร์สาธารณะ และไม่เคยขอรหัสผ่าน Steam",
+      "lede": "กัปตันเชิญผู้เล่นที่มีบัญชี A.C.E อยู่แล้ว ไม่มีลิงก์แชร์สาธารณะ และไม่เคยขอรหัสผ่าน Steam",
       "sections": [
         {
           "heading": "คำเชิญที่มีอยู่",
           "paragraphs": [
-            "ในหน้าทีม กัปตันที่ลงชื่อเข้าใช้วาง SteamID64 หรือ ID บัญชี A.C.E. บัญชีต้องเชื่อมผ่าน Steam OpenID แล้ว เซิร์ฟเวอร์เขียนคำเชิญที่รอดำเนินการเมื่อฐานข้อมูลยอมรับ",
+            "ในหน้าทีม กัปตันที่ลงชื่อเข้าใช้วาง SteamID64 หรือ ID บัญชี A.C.E บัญชีต้องเชื่อมผ่าน Steam OpenID แล้ว เซิร์ฟเวอร์เขียนคำเชิญที่รอดำเนินการเมื่อฐานข้อมูลยอมรับ",
             "รายชื่อมีผู้เล่นห้าคน รวมกัปตัน กัปตันเชิญบัญชีตัวเองไม่ได้ ผู้เล่นที่อยู่ในรายชื่อแล้วจะถูกปฏิเสธ หากฐานข้อมูลล่ม คำเชิญจะล้มเหลวและไม่มีการจัดเก็บคำเชิญ"
           ]
         },

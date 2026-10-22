@@ -46,7 +46,7 @@ export const BRAND_SUBLINE =
 export type SocialKey = "x" | "twitch" | "youtube" | "instagram" | "discord";
 
 /**
- * Official A.C.E. social profiles. A link appears in the footer only when its
+ * Official A.C.E social profiles. A link appears in the footer only when its
  * NEXT_PUBLIC_SOCIAL_* variable is set, so the site never shows a placeholder link.
  */
 export const socialNetworks: { key: SocialKey; label: string; href: string }[] = (

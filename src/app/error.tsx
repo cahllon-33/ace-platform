@@ -12,7 +12,7 @@ export default function ErrorPage({ error, reset }: { error: Error & { digest?: 
   const nf = useUi().r40.nf;
 
   useEffect(() => {
-    console.error("A.C.E. public page error", error.digest ?? error.message);
+    console.error("A.C.E public page error", error.digest ?? error.message);
   }, [error]);
 
   return (

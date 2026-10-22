@@ -75,7 +75,7 @@ async function BroadcastScreen({ ui }: { ui: Ui }) {
       <div className="ace-live-screen">
         <iframe
           src={config.embedUrl}
-          title={`A.C.E. · ${provider}`}
+          title={`A.C.E · ${provider}`}
           allow="autoplay; encrypted-media; picture-in-picture; fullscreen"
           allowFullScreen
           referrerPolicy="strict-origin-when-cross-origin"

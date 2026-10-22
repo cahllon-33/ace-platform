@@ -4,18 +4,18 @@ export const RB_FI: RulebookText = {
   "summary16": "Tuomarit valitsevat rangaistuksen alla olevasta asteikosta tahallisuuden, vaikutuksen ja toistuvuuden perusteella. Toistuvat rikkeet nostavat rangaistusta asteikolla.",
   "clauses": [
     [
-      "Tätä sääntökirjaa sovelletaan kaikkiin A.C.E.:n järjestämiin kilpailuihin: cupeihin, liigoihin, rankingtikkaisiin ja näytösotteluihin. Tapahtumasivu voi lisätä tapahtumakohtaisia ehtoja; jos ne ovat ristiriidassa tämän sääntökirjan kanssa, tapahtumasivu on ensisijainen vain kyseisessä tapahtumassa.",
-      "”Järjestäjä” tarkoittaa A.C.E.:n operatiivista tiimiä. ”Tuomari” tarkoittaa tapahtumaan nimettyä järjestäjän jäsentä. ”Joukkue” tarkoittaa rekisteröityä kokoonpanoa. ”Kapteeni” tarkoittaa joukkuetta edustavaa pelaajaa. ”Ottelu” tarkoittaa yhtä tai useampaa karttaa kahden joukkueen välillä. ”Sarja” tarkoittaa karttojen kokonaisuutta muodossa paras yhdestä, paras kolmesta tai paras viidestä.",
+      "Tätä sääntökirjaa sovelletaan kaikkiin A.C.E:n järjestämiin kilpailuihin: cupeihin, liigoihin, rankingtikkaisiin ja näytösotteluihin. Tapahtumasivu voi lisätä tapahtumakohtaisia ehtoja; jos ne ovat ristiriidassa tämän sääntökirjan kanssa, tapahtumasivu on ensisijainen vain kyseisessä tapahtumassa.",
+      "”Järjestäjä” tarkoittaa A.C.E:n operatiivista tiimiä. ”Tuomari” tarkoittaa tapahtumaan nimettyä järjestäjän jäsentä. ”Joukkue” tarkoittaa rekisteröityä kokoonpanoa. ”Kapteeni” tarkoittaa joukkuetta edustavaa pelaajaa. ”Ottelu” tarkoittaa yhtä tai useampaa karttaa kahden joukkueen välillä. ”Sarja” tarkoittaa karttojen kokonaisuutta muodossa paras yhdestä, paras kolmesta tai paras viidestä.",
       "Ilmoittautumalla jokainen pelaaja ja joukkue hyväksyy tämän sääntökirjan, käyttöehdot ja tietosuojakäytännön.",
       "Tuomarit voivat ratkaista tilanteet, joita tämä sääntökirja ei kata, reilun pelin ja sääntöjen hengen mukaisesti. Tällaiset päätökset kirjataan ja julkaistaan ottelun tuloksen yhteydessä."
     ],
     [
-      "Pelaajalla ei saa olla voimassa olevaa A.C.E.:n pelikieltoa, eikä hänen käyttämällään Steam-tilillä saa olla viimeisten 2 vuoden aikana annettua pelikieltoa.",
+      "Pelaajalla ei saa olla voimassa olevaa A.C.E:n pelikieltoa, eikä hänen käyttämällään Steam-tilillä saa olla viimeisten 2 vuoden aikana annettua pelikieltoa.",
       "Järjestäjän henkilökunta ja tuomarit eivät saa pelata tapahtumassa, jota he hallinnoivat.",
       "Alue- tai rankingrajat määritetään tapahtumakohtaisesti ja julkaistaan ennen ilmoittautumisen alkua. Rajojen ulkopuolinen pelaaja ei saa pelata, ei edes varamiehenä."
     ],
     [
-      "Jokainen pelaaja käyttää yhtä A.C.E.-tiliä, joka on yhdistetty yhteen Steam-tiliin Steam-kirjautumisella. A.C.E. ei koskaan kysy Steam-salasanaa; sitä kysyvä ei ole järjestäjä.",
+      "Jokainen pelaaja käyttää yhtä A.C.E-tiliä, joka on yhdistetty yhteen Steam-tiliin Steam-kirjautumisella. A.C.E ei koskaan kysy Steam-salasanaa; sitä kysyvä ei ole järjestäjä.",
       "Tilin jakaminen, toisen henkilön tilillä pelaaminen tai toisen henkilön päästäminen pelaamaan omalla tilillä on kielletty. Molempia tilejä rangaistaan.",
       "Uuden tilin luominen rangaistuksen, rankingin tai rajoituksen välttämiseksi on pelikiellon kiertämistä, ja sitä käsitellään kilpailun rehellisyyttä koskevana rikkeenä (kohta 14).",
       "Näyttönimien ja avatarien on noudatettava käytössääntöjä (kohta 13). Tuomarit voivat vaatia muutosta ennen ottelua.",
@@ -43,7 +43,7 @@ export const RB_FI: RulebookText = {
     ],
     [
       "Molempien joukkueiden on oltava ottelun aulassa 15 minuuttia ennen suunniteltua alkua kaikki pelaajat kirjautuneina.",
-      "Ottelut pelataan A.C.E.:n tarjoamilla palvelimilla. Joukkueet eivät saa siirtää ottelua toiselle palvelimelle ilman tuomarin lupaa.",
+      "Ottelut pelataan A.C.E:n tarjoamilla palvelimilla. Joukkueet eivät saa siirtää ottelua toiselle palvelimelle ilman tuomarin lupaa.",
       "Veitsierä pelataan vain, kun tämä sääntökirja niin määrää. Muutoin aloituspuolet määräytyvät veton mukaan.",
       "Alkanut kartta pelataan loppuun. Uudelleenaloitus on sallittu vain kohdan 9 mukaisesti.",
       "15 minuutin kuluessa ottelun päättymisestä molemmat kapteenit vahvistavat tuloksen. Voittaja lataa kuvakaappauksen lopullisesta tulostaulusta. Palvelin säilyttää demot vähintään 14 päivää."
@@ -89,8 +89,8 @@ export const RB_FI: RulebookText = {
       "Ghosting (tiedon saaminen katsojilta tai lähetyksistä), stream sniping, toisen henkilön tilillä pelaaminen ja pelikiellon kiertäminen ovat kiellettyjä.",
       "Ottelumanipulaatio, tahallinen häviäminen ja vedonlyönti mihin tahansa otteluun, jossa oma joukkueesi pelaa tai joka kuuluu omaan tapahtumaasi, ovat kiellettyjä.",
       "Sellaisen kartta- tai pelivirheen käyttö, jonka tuomari on julistanut kielletyksi tai joka selvästi rikkoo pelin tarkoitetun mekaniikan, on kielletty.",
-      "Pelaajien on pidettävä A.C.E.:n huijauksenestosovellus käynnissä koko ottelun ajan, kun tapahtuma sitä edellyttää.",
-      "Adminit voivat pyytää demoja tai näyttötallenteita tarkistettavaksi. Laitteistotietoja pyydetään vasta, kun A.C.E.-huijauksenestoasiakas on olemassa ja tietosuojakäytäntö kuvaa ne. Kohtuullisesta pyynnöstä kieltäytyminen ilman pätevää syytä voidaan ottaa huomioon päätöksessä.",
+      "Pelaajien on pidettävä A.C.E:n huijauksenestosovellus käynnissä koko ottelun ajan, kun tapahtuma sitä edellyttää.",
+      "Adminit voivat pyytää demoja tai näyttötallenteita tarkistettavaksi. Laitteistotietoja pyydetään vasta, kun A.C.E-huijauksenestoasiakas on olemassa ja tietosuojakäytäntö kuvaa ne. Kohtuullisesta pyynnöstä kieltäytyminen ilman pätevää syytä voidaan ottaa huomioon päätöksessä.",
       "Kuka tahansa voi ilmoittaa epäillystä rikkeestä järjestäjälle luottamuksellisesti. Julkiset syytökset ilman ilmoitusta ovat käytösrike."
     ],
     [
@@ -105,7 +105,7 @@ export const RB_FI: RulebookText = {
       "Pelikiellot koskevat henkilöä ja kaikkia hänen hallitsemiaan tilejä."
     ],
     [
-      "A.C.E.:llä on oikeus lähettää mikä tahansa järjestämänsä ottelu. Joukkueet eivät voi kieltäytyä lähetyksestä.",
+      "A.C.E:llä on oikeus lähettää mikä tahansa järjestämänsä ottelu. Joukkueet eivät voi kieltäytyä lähetyksestä.",
       "Pelaajat saavat striimata omia otteluitaan vain vähintään 2 minuutin viiveellä ja vain, jos tapahtumasivu sen sallii. Viralliset lähetykset käyttävät järjestäjän määrittämää viivettä.",
       "Pelaajat eivät saa katsoa oman ottelunsa suoraa lähetystä ottelun aikana.",
       "Lähetettäväksi aikataulutettuja otteluita voidaan siirtää enintään 2 tuntia 24 tunnin varoitusajalla. Joukkueiden on oltava käytettävissä uutena aikana tai pyydettävä tuomarin päätöstä.",

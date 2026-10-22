@@ -5,10 +5,10 @@ export const account: TextBag["account"] = {
     "metaTitle": "Estatísticas de jogador",
     "kicker": "ESTATÍSTICAS DE JOGADOR",
     "title": "Estatísticas de jogador",
-    "lede": "Evolução do rating a partir das suas partidas A.C.E. registradas, com indicadores de % de headshots e precisão. Incluído no A.C.E Plus (US$ 4/mês) e no A.C.E Premium (US$ 7/mês).",
+    "lede": "Evolução do rating a partir das suas partidas A.C.E registradas, com indicadores de % de headshots e precisão. Incluído no A.C.E Plus (US$ 4/mês) e no A.C.E Premium (US$ 7/mês).",
     "movementTitle": "Evolução do rating",
     "movementNote": "Cada ponto é uma mudança de rating registrada a partir de uma partida A.C.E.",
-    "noMatches": "Ainda não há partidas registradas, então o gráfico está vazio. Ele será preenchido após sua primeira partida A.C.E. registrada.",
+    "noMatches": "Ainda não há partidas registradas, então o gráfico está vazio. Ele será preenchido após sua primeira partida A.C.E registrada.",
     "currentLabel": "Rating atual",
     "netLabel": "Variação líquida",
     "changesLabel": "Mudanças registradas",
@@ -21,7 +21,7 @@ export const account: TextBag["account"] = {
     "lockedBody": "Seu plano salvo é Free. O Plus (US$ 4/mês) e o Premium (US$ 7/mês) desbloqueiam esta página. Em breve: o pagamento ainda não existe.",
     "signIn": "Entre com a Steam para ver suas estatísticas de jogador.",
     "plansLink": "Ver planos",
-    "rosterNote": "Perfil de elenco de exemplo: esses jogadores não têm partidas A.C.E. registradas, então as estatísticas não mostram números.",
+    "rosterNote": "Perfil de elenco de exemplo: esses jogadores não têm partidas A.C.E registradas, então as estatísticas não mostram números.",
     "dashTitle": "Estatísticas e análise",
     "dashStats": "Abrir estatísticas de jogador",
     "dashAnalysis": "Abrir análise de partida (Premium)",
@@ -38,7 +38,7 @@ export const account: TextBag["account"] = {
     "stats": {
       "accountStatus": "Status da conta",
       "subscription": "Assinatura",
-      "rank": "Rank A.C.E.",
+      "rank": "Rank A.C.E",
       "ratingPoints": "Pontos de rating",
       "wins": "Vitórias",
       "losses": "Derrotas",
@@ -71,7 +71,7 @@ export const account: TextBag["account"] = {
     "rankedButton": "Encontrar partida ranqueada",
     "roster": {
       "title": "Elenco 5v5",
-      "body": "Um capitão. Quatro convites. Os capitães convidam outros IDs de conta A.C.E., que só são criados depois de um login verificado na Steam."
+      "body": "Um capitão. Quatro convites. Os capitães convidam outros IDs de conta A.C.E, que só são criados depois de um login verificado na Steam."
     },
     "pendingInvites": "Convites pendentes"
   },
@@ -132,7 +132,7 @@ export const account: TextBag["account"] = {
     "back": "Voltar ao elenco do clã"
   },
   "networks": {
-    "note": "Um link digitado aqui fica neste navegador e não é salvo. A A.C.E. nunca pede a senha da Steam.",
+    "note": "Um link digitado aqui fica neste navegador e não é salvo. A A.C.E nunca pede a senha da Steam.",
     "labels": {
       "steam": "Perfil Steam"
     },
@@ -150,9 +150,9 @@ export const account: TextBag["account"] = {
       "title": "Erro de login"
     },
     "title": "O login com a Steam não foi concluído",
-    "notConfigured": "O Steam OpenID ainda não está configurado neste servidor. A A.C.E. nunca pede a senha da Steam.",
-    "unavailable": "A Steam não respondeu à solicitação de verificação. Tente novamente em instantes. A A.C.E. nunca pede a senha da Steam.",
-    "unverified": "O retorno do OpenID não pôde ser verificado no servidor. A A.C.E. nunca pede a senha da Steam.",
+    "notConfigured": "O Steam OpenID ainda não está configurado neste servidor. A A.C.E nunca pede a senha da Steam.",
+    "unavailable": "A Steam não respondeu à solicitação de verificação. Tente novamente em instantes. A A.C.E nunca pede a senha da Steam.",
+    "unverified": "O retorno do OpenID não pôde ser verificado no servidor. A A.C.E nunca pede a senha da Steam.",
     "returnHome": "Voltar ao início"
   }
 };

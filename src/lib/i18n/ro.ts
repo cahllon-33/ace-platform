@@ -3,7 +3,7 @@ import type { MessageBag } from "./en";
 export const RO: MessageBag = {
  slogan: "JOACĂ. COMPETIȚI. FI ELITĂ.",
  kicker: "PLATFORMĂ CS2 COMPETITIVĂ DE ELITĂ",
- lede: "A.C.E. este un site competitiv pentru Counter-Strike 2. Autentificarea folosește Steam OpenID. Anti-cheat-ul, serverele de meci și plățile de premii nu rulează aici.",
+ lede: "A.C.E este un site competitiv pentru Counter-Strike 2. Autentificarea folosește Steam OpenID. Anti-cheat-ul, serverele de meci și plățile de premii nu rulează aici.",
  playNow: "JOACĂ ACUM",
  signInSteam: "Autentificare prin STEAM",
  connectProfile: "Conectează profilul",
@@ -15,13 +15,13 @@ export const RO: MessageBag = {
  registeredTeams: "Echipe înregistrate: 0/100",
  registered: "Înregistrați",
  teams: "Echipe",
- ranksTitle: "Ranguri A.C.E.",
+ ranksTitle: "Ranguri A.C.E",
  championshipLoot: "Sistem de recompense de campionat",
  calibrationStatus: "Starea calibrării rangului",
  navTournaments: "TURNEE",
  brandSubline: "ANTI-CHEAT AUTONOM • CALIBRARE COMPETITIVĂ • JUCĂTORI DE ELITĂ",
  languagesKicker: "Limbi",
- step1: "Creează un cont cu Steam OpenID oficial. A.C.E. nu cere niciodată parola Steam.",
+ step1: "Creează un cont cu Steam OpenID oficial. A.C.E nu cere niciodată parola Steam.",
  step2: "Verificarea identității vine odată cu A.C.E Shield.",
  step3: "Construiește o echipă 5v5 din puntea de comandă după o sesiune verificată.",
  step4: "Găsește competiții eligibile. GĂSEȘTE MECI de clasament rămâne închis.",
@@ -84,13 +84,13 @@ export const RO: MessageBag = {
  cookiePolicy: "Politica de cookie-uri",
  support: "Suport",
  contact: "Contact",
- supportKicker: "SUPORT A.C.E. · CENTRU DE AJUTOR",
+ supportKicker: "SUPORT A.C.E · CENTRU DE AJUTOR",
  supportTitle: "Centru de suport tehnic",
  supportLede:
  "Centru de informații pentru configurare, calibrare și abonament. Anti-cheat-ul, cozile clasate și plățile vin în curând.",
  supportCat1Title: "Configurare Anti-Cheat de nucleu",
  supportCat1Body:
- "Solicitările de instalare a driverelor, conformitatea hardware și ajustările de telemetrie pentru Pornirea securizată sunt documentate aici ca politică viitoare de nucleu. A.C.E. nu livrează un client Anti-Cheat funcțional, nu instalează drivere și nu colectează date de Pornire securizată sau HWID pe acest site.",
+ "Solicitările de instalare a driverelor, conformitatea hardware și ajustările de telemetrie pentru Pornirea securizată sunt documentate aici ca politică viitoare de nucleu. A.C.E nu livrează un client Anti-Cheat funcțional, nu instalează drivere și nu colectează date de Pornire securizată sau HWID pe acest site.",
  supportCat2Title: "Matchmaking și calibrare",
  supportCat2Body:
  "Zece meciuri de plasare, viteza de calcul a diviziei și recalibrarea ratingului de sezon sunt povestea de calibrare planificată. GĂSEȘTE MECI de clasament rămâne închis la eșec până există o cale Anti-Cheat verificată. Cifrele de pe această pagină nu sunt rezultate de meciuri în direct.",
@@ -103,7 +103,7 @@ export const RO: MessageBag = {
  "Asistența prin tichete se deschide odată cu beta competitivă. Până atunci, contactează-ne prin pagina de contact.",
  supportDisclosure:
  "Asistența live pentru anti-cheat, matchmaking și plăți se deschide odată cu beta competitivă.",
- contactKicker: "CONTACT A.C.E. · TERMINAL CORPORATIV",
+ contactKicker: "CONTACT A.C.E · TERMINAL CORPORATIV",
  contactTitle: "Terminal de contact corporativ",
  contactLede:
  "Solicitări de sponsorizare, presă, tehnice și generale. Mesajele introduse aici nu sunt transmise și nu sunt stocate ca telemetrie.",
@@ -120,17 +120,17 @@ export const RO: MessageBag = {
  "Consimt explicit la parametrii de minimizare a stocării datelor din Politica de confidențialitate A.C.E.",
  contactSend: "TRIMITE MESAJ TELEMETRIC SECURIZAT",
  contactCorporate:
- "A.C.E. | Gateway de e-mail securizat: support@ace-platform.gg",
+ "A.C.E | Gateway de e-mail securizat: support@ace-platform.gg",
  contactModalTitle: "Formular de contact online · în curând",
  contactModalBody:
- "Mesajele din acest formular nu sunt încă livrate. Formularul se deschide odată cu echipa noastră de asistență. A.C.E. nu îți cere niciodată parola Steam.",
+ "Mesajele din acest formular nu sunt încă livrate. Formularul se deschide odată cu echipa noastră de asistență. A.C.E nu îți cere niciodată parola Steam.",
  contactDisclosure:
- "Formularul de contact online se deschide în curând. A.C.E. nu îți cere niciodată parola Steam.",
+ "Formularul de contact online se deschide în curând. A.C.E nu îți cere niciodată parola Steam.",
  closeOverlay: "Închide",
  loadingAce: "Se încarcă A.C.E...",
  supportCategory: "CATEGORIA {n}",
- shopKicker: "MAGAZIN A.C.E. · ÎN CURÂND",
- shopTitle: "PIAȚA A.C.E. — PERSONALIZARE ARME DE ELITĂ",
+ shopKicker: "MAGAZIN A.C.E · ÎN CURÂND",
+ shopTitle: "PIAȚA A.C.E — PERSONALIZARE ARME DE ELITĂ",
  shopLede:
  "Echipează-ți inventarul cu skin-uri de nivel înalt verificate, elemente de profil personalizate și unelte de acces la ligă.",
  shopNote:
@@ -181,10 +181,10 @@ export const RO: MessageBag = {
  tourneyStatusValue: "Nedeschis · doar demonstrație",
  tourneyLoading: "Se încarcă tabloul…",
  platformNoticeTitle: "ANUNȚUL PLATFORMEI",
- platformNoticeBody: "Tablourile, clasamentele și cardurile de skin de pe acest site sunt exemple. Nu sunt obiecte Valve și nu sunt premii plătite. Acest site nu rulează un program anti-cheat. Deschiderea site-ului nu anulează un drept legal și nu semnează un contract. A.C.E. nu colectează un identificator hardware și nu șterge un cont pentru că cineva contactează un avocat sau o instanță.",
+ platformNoticeBody: "Tablourile, clasamentele și cardurile de skin de pe acest site sunt exemple. Nu sunt obiecte Valve și nu sunt premii plătite. Acest site nu rulează un program anti-cheat. Deschiderea site-ului nu anulează un drept legal și nu semnează un contract. A.C.E nu colectează un identificator hardware și nu șterge un cont pentru că cineva contactează un avocat sau o instanță.",
   copyrightLine: "© 2026 A.C.E. Fără legătură cu Valve.",
   copyrightClaim:
-    "Textul, aspectul, emblemele și grafica originale de pe acest site aparțin A.C.E. Copierea fără permisiune scrisă nu este permisă. A.C.E. poate apăra acest drept. Counter-Strike 2 și numele hărților aparțin Valve.",
+    "Textul, aspectul, emblemele și grafica originale de pe acest site aparțin A.C.E. Copierea fără permisiune scrisă nu este permisă. A.C.E poate apăra acest drept. Counter-Strike 2 și numele hărților aparțin Valve.",
  shieldServerValue: "În curând",
  tvGames: "Televiziunea meciurilor",
  pathsKicker: "CINCI CĂI PE ACEST SITE",

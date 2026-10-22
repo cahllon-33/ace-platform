@@ -3,7 +3,7 @@ import type { TextBag } from "../types";
 export const desk: TextBag["desk"] = {
   "shop": {
     "meta": {
-      "title": "A.C.E. Marketplace",
+      "title": "A.C.E Marketplace",
       "description": "Картички со шампионски награди. Продавницата и наградите се отвораат наскоро."
     },
     "heroHonesty": "Прв поглед на претстојните шампионски награди. Продавницата се отвора наскоро; денес ништо не се наплаќа.",
@@ -26,7 +26,7 @@ export const desk: TextBag["desk"] = {
         "price": "Наскоро"
       },
       "crown": {
-        "name": "A.C.E. Crown рамка за аватар",
+        "name": "A.C.E Crown рамка за аватар",
         "tag": "Украс на профил",
         "price": "Наскоро"
       },
@@ -45,7 +45,7 @@ export const desk: TextBag["desk"] = {
   "support": {
     "meta": {
       "title": "Поддршка",
-      "description": "A.C.E. центар за помош. Шалтерите за anti-cheat, ranked и наплата се отвораат со натпреварувачката бета."
+      "description": "A.C.E центар за помош. Шалтерите за anti-cheat, ranked и наплата се отвораат со натпреварувачката бета."
     }
   },
   "contact": {

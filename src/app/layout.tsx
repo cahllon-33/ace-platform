@@ -27,11 +27,11 @@ export async function generateMetadata(): Promise<Metadata> {
   return {
     title: {
       default: text.home.meta.title,
-      template: "%s · A.C.E.",
+      template: "%s · A.C.E",
     },
     description: text.home.meta.description,
     metadataBase: new URL(process.env.APP_BASE_URL || "http://localhost:3000"),
-    openGraph: { type: "website", siteName: "A.C.E.", title: text.home.meta.title, description: text.home.meta.description },
+    openGraph: { type: "website", siteName: "A.C.E", title: text.home.meta.title, description: text.home.meta.description },
     twitter: { card: "summary_large_image", title: text.home.meta.title, description: text.home.meta.description },
     other: {
       google: "notranslate",

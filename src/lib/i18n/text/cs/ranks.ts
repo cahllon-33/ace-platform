@@ -62,7 +62,7 @@ export const ranks: TextBag["ranks"] = {
     "kicker": "PRÉMIOVÉ HODNOSTI",
     "plan": "A.C.E PREMIUM · pouze 7 $/měsíc",
     "title": "Prémiová grafika hodností",
-    "lede": "Původní ilustrovaná sada hodností A.C.E.: deset krystalových emblémů s divizemi III/II/I, ratingový protokol, detailní karta Legend a 3D prohlížeč otáčený tažením. Je to grafika profilu pro členy Premium. Čte stejný žebříček Rating Points jako standardní hodnosti a nedává žádnou soutěžní výhodu.",
+    "lede": "Původní ilustrovaná sada hodností A.C.E: deset krystalových emblémů s divizemi III/II/I, ratingový protokol, detailní karta Legend a 3D prohlížeč otáčený tažením. Je to grafika profilu pro členy Premium. Čte stejný žebříček Rating Points jako standardní hodnosti a nedává žádnou soutěžní výhodu.",
     "demo": "Ukázkové hodnoty: postup, podíl výher a divize na této tabuli jsou ukázky, ne živé statistiky. Po přihlášení je zobrazený rating tvůj uložený rating.",
     "locked": "Již brzy: platba zatím neexistuje, takže dnes žádný účet není Premium. Server použije prémiovou grafiku hodností na profil jen tehdy, když je jeho uložený plán Premium.",
     "standardKicker": "STANDARDNÍ HODNOSTI",
@@ -77,12 +77,12 @@ export const ranks: TextBag["ranks"] = {
   },
   "meta": {
     "title": "Soutěžní hodnosti",
-    "description": "Deset hodností A.C.E., od Iron Recruit po A.C.E. Legend, s divizemi a spodními hranicemi hodnocení."
+    "description": "Deset hodností A.C.E, od Iron Recruit po A.C.E Legend, s divizemi a spodními hranicemi hodnocení."
   },
   "hero": {
     "kicker": "KALIBRACE",
     "title": "Soutěžní hodnosti",
-    "lede": "Deset úrovní od Recruit po A.C.E. Legend, každá s divizemi {divisions}. Přetáhni nebo použij šipky k otočení znaku. Po přihlášení vidíš své hodnocení, jinak spodní hranici každé úrovně."
+    "lede": "Deset úrovní od Recruit po A.C.E Legend, každá s divizemi {divisions}. Přetáhni nebo použij šipky k otočení znaku. Po přihlášení vidíš své hodnocení, jinak spodní hranici každé úrovně."
   },
   "codexLink": "Otevřít kalibrační kodex",
   "document": {
@@ -134,9 +134,9 @@ export const ranks: TextBag["ranks"] = {
     }
   },
   "board": {
-    "selectEmblem": "Vybrat emblém hodnosti A.C.E. {name}, úroveň {level}",
-    "emblemAlt": "Profilový odznak A.C.E. — vlastní 3D krystalický emblém úrovně {level} {crystal} {name}",
-    "emblemAltLegend": "Profilový odznak A.C.E. — vlastní 3D krystalický emblém úrovně {level}",
+    "selectEmblem": "Vybrat emblém hodnosti A.C.E {name}, úroveň {level}",
+    "emblemAlt": "Profilový odznak A.C.E — vlastní 3D krystalický emblém úrovně {level} {crystal} {name}",
+    "emblemAltLegend": "Profilový odznak A.C.E — vlastní 3D krystalický emblém úrovně {level}",
     "premium": "NEJVYŠŠÍ ÚROVEŇ"
   },
   "division": {

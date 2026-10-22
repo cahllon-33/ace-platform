@@ -1,7 +1,7 @@
 import type { TextBag } from "../types";
 
 export const consent: TextBag["consent"] = {
-  "valveDisclaimer": "A.C.E. är en oberoende tävlingsplats för Counter-Strike 2. Den är inte ansluten till, auktoriserad eller godkänd av Valve Corporation. Steam och Counter-Strike är varumärken som tillhör sina respektive ägare. Tävlingsreglerna är A.C.E.:s egen text för spelet.",
+  "valveDisclaimer": "A.C.E är en oberoende tävlingsplats för Counter-Strike 2. Den är inte ansluten till, auktoriserad eller godkänd av Valve Corporation. Steam och Counter-Strike är varumärken som tillhör sina respektive ägare. Tävlingsreglerna är A.C.E:s egen text för spelet.",
   "acceptance": {
     "label": "Jag godkänner uttryckligen användarvillkoren, anti-fusk-EULA:n och integritetspolicyn.",
     "readBefore": "Läs",
@@ -21,7 +21,7 @@ export const consent: TextBag["consent"] = {
     "optional": "Valfria"
   },
   "banner": {
-    "kicker": "A.C.E. WEBBPLATSMEDDELANDE",
+    "kicker": "A.C.E WEBBPLATSMEDDELANDE",
     "copy": {
       "before": "Godkänn sparar den här webbläsarens cookieval. Det är ingen elektronisk underskrift, samlar inte in enhetstelemetri, startar ingen anti-fusk-klient och öppnar ingen tävlingskö. Läs",
       "termsLink": "användarvillkoren",

@@ -70,10 +70,10 @@ export const pricing: TextBag["pricing"] = {
       "prices": "Free {free}. Plus havi {plus}. Premium havi {premium}. A csomagok havonta megújulnak. Bármikor, büntetés nélkül lemondhatod az irányítópult beállításaiban, és a hozzáférés a kifizetett hónap végéig megmarad. A megkezdett hónapot nem térítjük vissza, kivéve ha országod joga előírja.",
       "plusTitle": "2. Mit tartalmaz a Plus",
       "plus1": "Mindent, ami a Free-ben van.",
-      "plus2": "Hamarosan: köszönőlevél és e-mailes támogatás a support@ace-platform.gg címen, amint létezik fizetés.",
+      "plus2": "E-mailes támogatás tagoknak: {email}, és köszönőlevél a csapattól.",
       "premiumTitle": "3. Mit tartalmaz a Premium",
       "prem1": "Mindent, ami a Plusban van.",
-      "prem2": "Prémium rangművészet és a prémium rangkódex: az eredeti, illusztrált A.C.E. emblémakészlet a profilodon. Csak kozmetikai, ugyanazon a Rating Points létrán.",
+      "prem2": "Prémium rangművészet és a prémium rangkódex: az eredeti, illusztrált A.C.E emblémakészlet a profilodon. Csak kozmetikai, ugyanazon a Rating Points létrán.",
       "prem3": "Az animált Premium profilkártya.",
       "prem4": "Különleges jelvények és az ELITE PECSÉT.",
       "prem5": "Hamarosan: bővített meccselemzés (halálozási hőtérkép, fejlövés %, körönkénti teljesítmény), amint létezik demófeldolgozás.",
@@ -85,14 +85,14 @@ export const pricing: TextBag["pricing"] = {
       "soon": "Semmi, ami Hamarosan jelölést kapott, nem ígéret a megjelenéséig. Addig az ár nem tartalmazza.",
       "languageTitle": "6. Nyelv",
       "language": "A fordítások a kényelmet szolgálják. Ha egy fordítás eltér az angol szövegtől, az angol szöveg az irányadó.",
-      "contact": "Kérdések: support@ace-platform.gg",
+      "contact": "Kérdések: {email}",
       "footerLink": "Premium feltételek",
       "pricingLink": "A Premium feltételek elolvasása"
     }
   },
   "meta": {
     "title": "Árak",
-    "description": "A.C.E. tagság: Free {free}, Plus {plus}/hó, Premium {premium}/hó. Egész számra rögzített megjelenített árak."
+    "description": "A.C.E tagság: Free {free}, Plus {plus}/hó, Premium {premium}/hó. Egész számra rögzített megjelenített árak."
   },
   "period": {
     "monthly": "/hó"
@@ -108,23 +108,23 @@ export const pricing: TextBag["pricing"] = {
       "note": "Grafit",
       "title": "Nyílt hozzáférés",
       "points": [
-        "Jelentkezz be Steam OpenID-vel. Az A.C.E. soha nem kéri a Steam-jelszavadat.",
+        "Jelentkezz be Steam OpenID-vel. Az A.C.E soha nem kéri a Steam-jelszavadat.",
         "A tárolt értékszám 1200-ról indul. Egyetlen meccseredmény sem változtatta meg.",
         "Minden nyilvános oldal: játék, tornák, ranglista, csapatok és szabályok."
       ]
     },
     "plus": {
-      "name": "A.C.E. PLUS",
+      "name": "A.C.E PLUS",
       "note": "Plus",
       "title": "Játékosstatisztika és támogatás",
       "points": [
         "Minden, ami a Free-ben.",
-        "Játékosstatisztika: a rating alakulásának grafikonja a rögzített A.C.E. meccsekből. A fejlövés-% és a pontosság mérői hamarosan érkeznek.",
-        "Hamarosan: köszönőlevél és e-mailes támogatás a support@ace-platform.gg címen, amint lesz fizetés. A Plus nem vásárol ratinget vagy könnyebb ellenfeleket."
+        "Játékosstatisztika: a rating alakulásának grafikonja a rögzített A.C.E meccsekből. A fejlövés-% és a pontosság mérői hamarosan érkeznek.",
+        "E-mailes támogatás tagoknak: {email}, és köszönőlevél a csapattól. A Plus nem vásárol ratinget vagy könnyebb ellenfeleket."
       ]
     },
     "premium": {
-      "name": "A.C.E. PREMIUM",
+      "name": "A.C.E PREMIUM",
       "note": "Premium",
       "title": "Profilgrafika, jelvények és elemzés",
       "points": [
@@ -159,7 +159,7 @@ export const pricing: TextBag["pricing"] = {
     }
   },
   "compare": {
-    "kicker": "Amit az A.C.E. ma ígérhet",
+    "kicker": "Amit az A.C.E ma ígérhet",
     "title": "Tagságok összehasonlítása",
     "note": "Minden sor az oldal mai állapotát tükrözi. A fizetés hamarosan érkezik, és egy fizetős csomag soha nem nyit sort és nem vásárol előnyt.",
     "caption": "Free, Plus és Premium összehasonlítva az oldal mai működése szerint",
@@ -175,7 +175,7 @@ export const pricing: TextBag["pricing"] = {
       },
       "steamSignIn": {
         "feature": "Steam-bejelentkezés",
-        "detail": "Hivatalos Steam OpenID. Az A.C.E. soha nem kéri a Steam-jelszavadat."
+        "detail": "Hivatalos Steam OpenID. Az A.C.E soha nem kéri a Steam-jelszavadat."
       },
       "startingRating": {
         "feature": "Kezdő értékelés",
@@ -183,7 +183,7 @@ export const pricing: TextBag["pricing"] = {
       },
       "recordedMatches": {
         "feature": "Rögzített meccsek",
-        "detail": "Befejezett A.C.E.-meccsből írt győzelmek és vereségek."
+        "detail": "Befejezett A.C.E-meccsből írt győzelmek és vereségek."
       },
       "rankedQueue": {
         "feature": "Ranked sor",
@@ -231,15 +231,15 @@ export const pricing: TextBag["pricing"] = {
   "receipt": {
     "plus": {
       "metaTitle": "Plus nyugta",
-      "metaDescription": "Az ezen az oldalon megjelenített A.C.E. Plus levél. A fizetés nem él, így semmit nem terhelünk és e-mailt sem küldünk.",
-      "planName": "A.C.E. Plus",
-      "nextLabel": "Folytatás az A.C.E.-n",
+      "metaDescription": "Az ezen az oldalon megjelenített A.C.E Plus levél. A fizetés nem él, így semmit nem terhelünk és e-mailt sem küldünk.",
+      "planName": "A.C.E Plus",
+      "nextLabel": "Folytatás az A.C.E-n",
       "nextBody": "A nyilvános oldalak nyitva maradnak. Ez a választás nem nyit sort és nem változtatja meg a tárolt szintet."
     },
     "premium": {
       "metaTitle": "Premium nyugta",
-      "metaDescription": "Az ezen az oldalon megjelenített A.C.E. Premium levél. A fizetés nem él, így semmit nem terhelünk és e-mailt sem küldünk.",
-      "planName": "A.C.E. Premium",
+      "metaDescription": "Az ezen az oldalon megjelenített A.C.E Premium levél. A fizetés nem él, így semmit nem terhelünk és e-mailt sem küldünk.",
+      "planName": "A.C.E Premium",
       "nextLabel": "A Premium feltételek elolvasása",
       "nextBody": "A Premium: prémium rangművészet, animált profilkártya, különleges jelvények és az ELITE SEAL, valamint minden, ami a Plusban van. Klán mentése a Squadsban minden fióknak ingyenes."
     }
@@ -256,7 +256,7 @@ export const pricing: TextBag["pricing"] = {
         "Csomag neve: {plan}.",
         "Megjelenített ár: havi {price}. Az összeg címke, nem terhelés.",
         "Fizetés: nincs. A csomag választása nem kér kártyát.",
-        "E-mail: nincs. Az A.C.E. nem küldi el ezt a levelet postafiókba.",
+        "E-mail: nincs. Az A.C.E nem küldi el ezt a levelet postafiókba.",
         "Tárolt szint: változatlan. A különleges jelvények és az elit pecsét csak akkor jelennek meg, ha a fiók már Premiumot tárol.",
         "Értékszám: nem eladó. Egy új fiók továbbra is 1200-ról indul."
       ]
@@ -265,7 +265,7 @@ export const pricing: TextBag["pricing"] = {
       "title": "Amit ma használhatsz",
       "items": [
         "A nyilvános oldal: kezdőlap, játék, tornák, ranglista, csapatok, szabályok és feltételek.",
-        "Steam-bejelentkezés a hivatalos Steam OpenID-n keresztül. Az A.C.E. soha nem kéri a Steam-jelszavadat.",
+        "Steam-bejelentkezés a hivatalos Steam OpenID-n keresztül. Az A.C.E soha nem kéri a Steam-jelszavadat.",
         "Ugyanazok a nyilvános oldalak, mint a Free-ben. Ez az ár nem nyit külön sort."
       ]
     },
@@ -285,7 +285,7 @@ export const pricing: TextBag["pricing"] = {
       "items": [
         "Terhelésre vagy fizetős szintre számítottál. Semmi nem lett alkalmazva. A fiók változatlan.",
         "Ezt a levelet postafiókban vártad. Csak ezen az oldalon létezik.",
-        "A Steam nem csatlakozott. Használd a Profil csatlakoztatása gombot, és előbb fogadd el a feltételek jelölőnégyzetét. Soha ne írd be a Steam-jelszavadat az A.C.E.-be.",
+        "A Steam nem csatlakozott. Használd a Profil csatlakoztatása gombot, és előbb fogadd el a feltételek jelölőnégyzetét. Soha ne írd be a Steam-jelszavadat az A.C.E-be.",
         "Segítségre van szükséged. Használd az alábbi támogatási címet, vagy nyisd meg az oldal súgóoldalait."
       ]
     },
@@ -309,7 +309,7 @@ export const pricing: TextBag["pricing"] = {
   },
   "telemetry": {
     "kicker": "PLUS / PREMIUM TELEMETRIA",
-    "copy": "VEZÉRLŐPULT-TELEMETRIA ZÁROLVA — Frissítsd előfizetésedet A.C.E. Plus vagy Premium csomagra a dinamikus valós idejű statisztikai görbék és fegyverspecialitás-indexek feloldásához.",
+    "copy": "VEZÉRLŐPULT-TELEMETRIA ZÁROLVA — Frissítsd előfizetésedet A.C.E Plus vagy Premium csomagra a dinamikus valós idejű statisztikai görbék és fegyverspecialitás-indexek feloldásához.",
     "cta": "Árlisták megnyitása"
   }
 };

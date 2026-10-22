@@ -5,7 +5,7 @@ import { readIsSteamOwner } from "@/server/admin-gate";
 import { loadCommerce } from "@/server/commerce-admin";
 
 export const instant = false;
-export const metadata: Metadata = { title: "A.C.E. Payments", robots: { index: false, follow: false } };
+export const metadata: Metadata = { title: "A.C.E Payments", robots: { index: false, follow: false } };
 
 /** Owner-only (ACE_ADMIN_STEAM_IDS Steam session). Every action re-checks inside the server action. */
 export default async function AdminCommercePage() {

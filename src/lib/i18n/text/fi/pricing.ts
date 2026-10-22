@@ -70,10 +70,10 @@ export const pricing: TextBag["pricing"] = {
       "prices": "Free {free}. Plus {plus} kuukaudessa. Premium {premium} kuukaudessa. Tilaukset uusiutuvat kuukausittain. Voit perua milloin tahansa ilman seuraamuksia hallintapaneelin asetuksista, ja käyttöoikeus säilyy maksetun kuukauden loppuun. Aloitettua kuukautta ei hyvitetä, ellei maasi laki sitä vaadi.",
       "plusTitle": "2. Mitä Plus sisältää",
       "plus1": "Kaiken Freen sisällön.",
-      "plus2": "Tulossa: kiitoskirje ja sähköpostituki osoitteessa support@ace-platform.gg, kun maksu on olemassa.",
+      "plus2": "Jäsenten sähköpostituki osoitteessa {email} ja kiitoskirje tiimiltä.",
       "premiumTitle": "3. Mitä Premium sisältää",
       "prem1": "Kaiken Plussan sisällön.",
-      "prem2": "Premium-arvomerkkitaide ja Premium-arvomerkkikoodeksi: alkuperäinen kuvitettu A.C.E.-tunnussarja profiilissasi. Vain kosmeettinen, samalla Rating Points -tikkaalla.",
+      "prem2": "Premium-arvomerkkitaide ja Premium-arvomerkkikoodeksi: alkuperäinen kuvitettu A.C.E-tunnussarja profiilissasi. Vain kosmeettinen, samalla Rating Points -tikkaalla.",
       "prem3": "Animoitu Premium-profiilikortti.",
       "prem4": "Erikoismerkit ja ELITE-SINETTI.",
       "prem5": "Tulossa: laajennettu otteluanalyysi (kuolemien lämpökartta, pääosuma-%, kierroskohtainen suoritus), kun demojen jäsennys on olemassa.",
@@ -85,14 +85,14 @@ export const pricing: TextBag["pricing"] = {
       "soon": "Mikään Tulossa-merkitty ei ole luvattu ennen julkaisua. Siihen asti hinta ei sisällä sitä.",
       "languageTitle": "6. Kieli",
       "language": "Käännökset tarjotaan käytön helpottamiseksi. Jos käännös poikkeaa englanninkielisestä tekstistä, englanninkielinen teksti on voimassa.",
-      "contact": "Kysymykset: support@ace-platform.gg",
+      "contact": "Kysymykset: {email}",
       "footerLink": "Premium-ehdot",
       "pricingLink": "Lue Premium-ehdot"
     }
   },
   "meta": {
     "title": "Hinnoittelu",
-    "description": "A.C.E.-jäsenyys: Free {free}, Plus {plus}/kk, Premium {premium}/kk. Kokonaislukuihin lukitut näyttöhinnat."
+    "description": "A.C.E-jäsenyys: Free {free}, Plus {plus}/kk, Premium {premium}/kk. Kokonaislukuihin lukitut näyttöhinnat."
   },
   "period": {
     "monthly": "/kk"
@@ -108,23 +108,23 @@ export const pricing: TextBag["pricing"] = {
       "note": "Grafiitti",
       "title": "Avoin pääsy",
       "points": [
-        "Kirjaudu Steam OpenID:llä. A.C.E. ei koskaan kysy Steam-salasanaa.",
+        "Kirjaudu Steam OpenID:llä. A.C.E ei koskaan kysy Steam-salasanaa.",
         "Tallennettu luokitus alkaa 1 200:sta. Mikään ottelutulos ei ole muuttanut sitä.",
         "Kaikki julkiset sivut: pelaa, turnaukset, tulostaulu, joukkueet ja säännöt."
       ]
     },
     "plus": {
-      "name": "A.C.E. PLUS",
+      "name": "A.C.E PLUS",
       "note": "Plus",
       "title": "Pelaajatilastot ja tuki",
       "points": [
         "Kaikki Free-paketin sisältö.",
-        "Pelaajatilastot: reittauksesi kehityskaavio tallennetuista A.C.E.-otteluista. Pääosuma-% ja tarkkuusmittarit tulossa pian.",
-        "Tulossa: kiitoskirje ja sähköpostituki osoitteessa support@ace-platform.gg, kun maksu on olemassa. Plus ei osta reittausta eikä helpompia vastustajia."
+        "Pelaajatilastot: reittauksesi kehityskaavio tallennetuista A.C.E-otteluista. Pääosuma-% ja tarkkuusmittarit tulossa pian.",
+        "Jäsenten sähköpostituki osoitteessa {email} ja kiitoskirje tiimiltä. Plus ei osta reittausta eikä helpompia vastustajia."
       ]
     },
     "premium": {
-      "name": "A.C.E. PREMIUM",
+      "name": "A.C.E PREMIUM",
       "note": "Premium",
       "title": "Profiilikuvitus, merkit ja analyysi",
       "points": [
@@ -159,7 +159,7 @@ export const pricing: TextBag["pricing"] = {
     }
   },
   "compare": {
-    "kicker": "Mitä A.C.E. voi luvata tänään",
+    "kicker": "Mitä A.C.E voi luvata tänään",
     "title": "Jäsenyysvertailu",
     "note": "Jokainen rivi kuvaa sivustoa tänään. Maksutoiminto on tulossa pian, eikä maksullinen paketti koskaan avaa jonoa tai osta etua.",
     "caption": "Free, Plus ja Premium vertailtuna sen mukaan, mitä sivusto tekee tänään",
@@ -175,7 +175,7 @@ export const pricing: TextBag["pricing"] = {
       },
       "steamSignIn": {
         "feature": "Steam-kirjautuminen",
-        "detail": "Virallinen Steam OpenID. A.C.E. ei koskaan kysy Steam-salasanaa."
+        "detail": "Virallinen Steam OpenID. A.C.E ei koskaan kysy Steam-salasanaa."
       },
       "startingRating": {
         "feature": "Aloitusluokitus",
@@ -183,7 +183,7 @@ export const pricing: TextBag["pricing"] = {
       },
       "recordedMatches": {
         "feature": "Kirjatut ottelut",
-        "detail": "Voitot ja tappiot kirjattuna päättyneestä A.C.E.-ottelusta."
+        "detail": "Voitot ja tappiot kirjattuna päättyneestä A.C.E-ottelusta."
       },
       "rankedQueue": {
         "feature": "Ranked-jono",
@@ -231,15 +231,15 @@ export const pricing: TextBag["pricing"] = {
   "receipt": {
     "plus": {
       "metaTitle": "Plus-kuitti",
-      "metaDescription": "Tällä sivustolla näytettävä A.C.E. Plus -kirje. Maksutoiminto ei ole käytössä, joten mitään ei veloiteta eikä sähköpostia lähetetä.",
-      "planName": "A.C.E. Plus",
-      "nextLabel": "Jatka A.C.E.:ssä",
+      "metaDescription": "Tällä sivustolla näytettävä A.C.E Plus -kirje. Maksutoiminto ei ole käytössä, joten mitään ei veloiteta eikä sähköpostia lähetetä.",
+      "planName": "A.C.E Plus",
+      "nextLabel": "Jatka A.C.E:ssä",
       "nextBody": "Julkiset sivut pysyvät avoimina. Tämä valinta ei avaa jonoa eikä muuta tallennettua tasoa."
     },
     "premium": {
       "metaTitle": "Premium-kuitti",
-      "metaDescription": "Tällä sivustolla näytettävä A.C.E. Premium -kirje. Maksutoiminto ei ole käytössä, joten mitään ei veloiteta eikä sähköpostia lähetetä.",
-      "planName": "A.C.E. Premium",
+      "metaDescription": "Tällä sivustolla näytettävä A.C.E Premium -kirje. Maksutoiminto ei ole käytössä, joten mitään ei veloiteta eikä sähköpostia lähetetä.",
+      "planName": "A.C.E Premium",
       "nextLabel": "Lue Premium-ehdot",
       "nextBody": "Premium sisältää Premium-arvomerkkitaiteen, animoidun profiilikortin, erikoismerkit ja ELITE SEALin sekä kaiken Plussasta. Klaanin tallentaminen Squadsiin on maksutonta jokaiselle tilille."
     }
@@ -256,7 +256,7 @@ export const pricing: TextBag["pricing"] = {
         "Paketin nimi: {plan}.",
         "Näyttöhinta: {price} kuukaudessa. Luku on merkintä, ei veloitus.",
         "Maksu: ei mitään. Paketin valinta ei vaadi korttia.",
-        "Sähköposti: ei mitään. A.C.E. ei lähetä tätä kirjettä sähköpostiin.",
+        "Sähköposti: ei mitään. A.C.E ei lähetä tätä kirjettä sähköpostiin.",
         "Tallennettu taso: ennallaan. Erikoismerkit ja eliittisinetti näkyvät vain, kun tilille on jo tallennettu Premium.",
         "Luokitus: ei myytävänä. Uusi tili aloittaa edelleen 1 200:sta."
       ]
@@ -265,7 +265,7 @@ export const pricing: TextBag["pricing"] = {
       "title": "Mitä voit käyttää tänään",
       "items": [
         "Julkinen sivusto: etusivu, pelaa, turnaukset, tulostaulu, joukkueet, säännöt ja ehdot.",
-        "Steam-kirjautuminen virallisen Steam OpenID:n kautta. A.C.E. ei koskaan kysy Steam-salasanaa.",
+        "Steam-kirjautuminen virallisen Steam OpenID:n kautta. A.C.E ei koskaan kysy Steam-salasanaa.",
         "Samat julkiset sivut kuin Free-paketissa. Tämä hinta ei avaa erillistä jonoa."
       ]
     },
@@ -285,7 +285,7 @@ export const pricing: TextBag["pricing"] = {
       "items": [
         "Odotit veloitusta tai maksullista tasoa. Mitään ei sovellettu. Tili pysyy ennallaan.",
         "Odotit tätä kirjettä sähköpostiin. Se on olemassa vain tällä sivulla.",
-        "Steam ei yhdistänyt. Käytä Yhdistä profiili -toimintoa ja hyväksy ensin ehtojen valintaruutu. Älä koskaan kirjoita Steam-salasanaa A.C.E.:hen.",
+        "Steam ei yhdistänyt. Käytä Yhdistä profiili -toimintoa ja hyväksy ensin ehtojen valintaruutu. Älä koskaan kirjoita Steam-salasanaa A.C.E:hen.",
         "Tarvitset apua. Käytä alla olevaa tukiosoitetta tai avaa sivuston ohjesivut."
       ]
     },
@@ -309,7 +309,7 @@ export const pricing: TextBag["pricing"] = {
   },
   "telemetry": {
     "kicker": "PLUS / PREMIUM -TELEMETRIA",
-    "copy": "HALLINTAPANEELIN TELEMETRIA LUKITTU — Päivitä tilauksesi A.C.E. Plus- tai Premium-pakettiin avataksesi dynaamiset reaaliaikaiset tilastokäyrät ja aseiden erikoisuusindeksit.",
+    "copy": "HALLINTAPANEELIN TELEMETRIA LUKITTU — Päivitä tilauksesi A.C.E Plus- tai Premium-pakettiin avataksesi dynaamiset reaaliaikaiset tilastokäyrät ja aseiden erikoisuusindeksit.",
     "cta": "Avaa hintataulukot"
   }
 };

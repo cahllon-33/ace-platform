@@ -4,18 +4,18 @@ export const RB_DE: RulebookText = {
   "summary16": "Schiedsrichter wählen eine Strafe aus dem folgenden Rahmen nach Absicht, Auswirkung und Wiederholung. Wiederholte Verstöße werden höher im Rahmen eingestuft.",
   "clauses": [
     [
-      "Dieses Regelwerk gilt für jeden Wettbewerb, den A.C.E. veranstaltet: Cups, Ligen, Ladders und Showmatches. Eine Eventseite kann eventspezifische Bedingungen ergänzen; bei Widersprüchen zu diesem Regelwerk hat die Eventseite nur für dieses Event Vorrang.",
-      "„Veranstalter“ bezeichnet das Operations-Team von A.C.E. „Schiedsrichter“ bezeichnet ein Mitglied des Veranstalters, das einem Event zugeteilt ist. „Team“ bezeichnet ein registriertes Lineup. „Kapitän“ bezeichnet den Spieler, der das Team vertritt. „Match“ bezeichnet eine oder mehrere Maps zwischen zwei Teams. „Serie“ bezeichnet eine Folge von Maps im Format Best-of-One, Best-of-Three oder Best-of-Five.",
+      "Dieses Regelwerk gilt für jeden Wettbewerb, den A.C.E veranstaltet: Cups, Ligen, Ladders und Showmatches. Eine Eventseite kann eventspezifische Bedingungen ergänzen; bei Widersprüchen zu diesem Regelwerk hat die Eventseite nur für dieses Event Vorrang.",
+      "„Veranstalter“ bezeichnet das Operations-Team von A.C.E „Schiedsrichter“ bezeichnet ein Mitglied des Veranstalters, das einem Event zugeteilt ist. „Team“ bezeichnet ein registriertes Lineup. „Kapitän“ bezeichnet den Spieler, der das Team vertritt. „Match“ bezeichnet eine oder mehrere Maps zwischen zwei Teams. „Serie“ bezeichnet eine Folge von Maps im Format Best-of-One, Best-of-Three oder Best-of-Five.",
       "Mit der Anmeldung akzeptieren alle Spieler und Teams dieses Regelwerk, die Nutzungsbedingungen und die Datenschutzerklärung.",
       "Schiedsrichter dürfen Situationen, die dieses Regelwerk nicht abdeckt, nach den Grundsätzen des Fair Play und im Sinne dieser Regeln entscheiden. Solche Entscheidungen werden dokumentiert und mit dem Matchergebnis veröffentlicht."
     ],
     [
-      "Spieler dürfen keiner aktiven A.C.E.-Sperre unterliegen, und auf dem verwendeten Steam-Konto darf kein Spielbann aus den letzten 2 Jahren bestehen.",
+      "Spieler dürfen keiner aktiven A.C.E-Sperre unterliegen, und auf dem verwendeten Steam-Konto darf kein Spielbann aus den letzten 2 Jahren bestehen.",
       "Mitarbeiter des Veranstalters und Schiedsrichter dürfen nicht in einem Event spielen, das sie betreuen.",
       "Regions- oder Ratinggrenzen werden je Event festgelegt und vor Anmeldebeginn veröffentlicht. Ein Spieler außerhalb dieser Grenzen darf nicht spielen, auch nicht als Ersatz."
     ],
     [
-      "Jeder Spieler nutzt ein A.C.E.-Konto, das über die Steam-Anmeldung mit genau einem Steam-Konto verknüpft ist. A.C.E. fragt niemals nach einem Steam-Passwort; wer danach fragt, ist nicht der Veranstalter.",
+      "Jeder Spieler nutzt ein A.C.E-Konto, das über die Steam-Anmeldung mit genau einem Steam-Konto verknüpft ist. A.C.E fragt niemals nach einem Steam-Passwort; wer danach fragt, ist nicht der Veranstalter.",
       "Das Teilen eines Kontos, das Spielen auf dem Konto einer anderen Person oder das Überlassen des eigenen Kontos ist verboten. Beide Konten werden bestraft.",
       "Wer ein neues Konto erstellt, um einer Strafe, einem Rating oder einer Einschränkung zu entgehen, umgeht eine Sperre; dies wird als Integritätsverstoß behandelt (Abschnitt 14).",
       "Anzeigenamen und Avatare müssen den Verhaltensregeln entsprechen (Abschnitt 13). Schiedsrichter können vor einem Match eine Änderung verlangen.",
@@ -43,7 +43,7 @@ export const RB_DE: RulebookText = {
     ],
     [
       "Beide Teams müssen 15 Minuten vor dem geplanten Start mit allen eingecheckten Spielern in der Match-Lobby sein.",
-      "Matches werden auf Servern gespielt, die A.C.E. bereitstellt. Teams dürfen ein Match ohne Zustimmung des Schiedsrichters nicht auf einen anderen Server verlegen.",
+      "Matches werden auf Servern gespielt, die A.C.E bereitstellt. Teams dürfen ein Match ohne Zustimmung des Schiedsrichters nicht auf einen anderen Server verlegen.",
       "Eine Messerrunde wird nur gespielt, wo dieses Regelwerk sie vorsieht. Ansonsten ergeben sich die Startseiten aus dem Veto.",
       "Eine begonnene Map wird zu Ende gespielt. Neustarts sind nur nach Abschnitt 9 zulässig.",
       "Innerhalb von 15 Minuten nach Matchende bestätigen beide Kapitäne das Ergebnis. Der Gewinner lädt einen Screenshot des finalen Scoreboards hoch. Demos werden vom Server mindestens 14 Tage aufbewahrt."
@@ -89,8 +89,8 @@ export const RB_DE: RulebookText = {
       "Ghosting (Informationen von Zuschauern oder Streams erhalten), Stream-Sniping, Spielen auf fremden Konten und Sperrumgehung sind verboten.",
       "Spielmanipulation, absichtliches Verlieren und Wetten auf Matches mit dem eigenen Team oder im eigenen Event sind verboten.",
       "Die Nutzung eines Map- oder Spielfehlers, den der Schiedsrichter als verboten gelistet hat oder der die vorgesehene Spielmechanik offensichtlich aushebelt, ist verboten.",
-      "Spieler müssen den A.C.E.-Anti-Cheat-Client während des gesamten Matches ausführen, wenn das Event dies verlangt.",
-      "Schiedsrichter können Demos oder Bildschirmaufnahmen zur Prüfung anfordern. Hardwaredaten werden erst angefordert, wenn der A.C.E.-Anti-Cheat-Client existiert und die Datenschutzerklärung sie beschreibt. Die Verweigerung einer angemessenen Anfrage ohne triftigen Grund kann bei der Entscheidung berücksichtigt werden.",
+      "Spieler müssen den A.C.E-Anti-Cheat-Client während des gesamten Matches ausführen, wenn das Event dies verlangt.",
+      "Schiedsrichter können Demos oder Bildschirmaufnahmen zur Prüfung anfordern. Hardwaredaten werden erst angefordert, wenn der A.C.E-Anti-Cheat-Client existiert und die Datenschutzerklärung sie beschreibt. Die Verweigerung einer angemessenen Anfrage ohne triftigen Grund kann bei der Entscheidung berücksichtigt werden.",
       "Jeder kann einen vermuteten Verstoß vertraulich an den Veranstalter melden. Öffentliche Anschuldigungen ohne Meldung sind ein Verhaltensverstoß."
     ],
     [
@@ -105,7 +105,7 @@ export const RB_DE: RulebookText = {
       "Sperren gelten für die Person und für jedes Konto, das sie kontrolliert."
     ],
     [
-      "A.C.E. hat das Recht, jedes von ihr veranstaltete Match zu übertragen. Teams dürfen eine Übertragung nicht ablehnen.",
+      "A.C.E hat das Recht, jedes von ihr veranstaltete Match zu übertragen. Teams dürfen eine Übertragung nicht ablehnen.",
       "Spieler dürfen ihre eigenen Matches nur mit mindestens 2 Minuten Verzögerung streamen und nur, wenn die Eventseite dies erlaubt. Offizielle Übertragungen nutzen die vom Veranstalter festgelegte Verzögerung.",
       "Spieler dürfen keine Live-Übertragung ihres eigenen Matches ansehen, während es läuft.",
       "Für Übertragungen angesetzte Matches können mit 24 Stunden Vorlauf um bis zu 2 Stunden verschoben werden. Teams müssen zum neuen Termin verfügbar sein oder eine Schiedsrichterentscheidung beantragen.",

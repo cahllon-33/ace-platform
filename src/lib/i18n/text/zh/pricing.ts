@@ -70,10 +70,10 @@ export const pricing: TextBag["pricing"] = {
       "prices": "Free {free}。Plus 每月 {plus}。Premium 每月 {premium}。方案按月续订。你可以随时在仪表板设置中免费取消，并保留访问权限至已付月份结束。未满一个月的部分不予退款，除非你所在国家的法律要求。",
       "plusTitle": "2. Plus 包含",
       "plus1": "Free 的全部内容。",
-      "plus2": "即将推出：结账上线后，提供感谢信和 support@ace-platform.gg 邮件支持。",
+      "plus2": "会员邮件支持（{email}）以及团队的感谢信。",
       "premiumTitle": "3. Premium 包含",
       "prem1": "Plus 的全部内容。",
-      "prem2": "Premium 段位美术与 Premium 段位图鉴：显示在你资料上的 A.C.E. 原创插画徽章套组。仅为外观，位于同一 Rating Points 阶梯。",
+      "prem2": "Premium 段位美术与 Premium 段位图鉴：显示在你资料上的 A.C.E 原创插画徽章套组。仅为外观，位于同一 Rating Points 阶梯。",
       "prem3": "动态 Premium 个人资料卡。",
       "prem4": "特殊徽章和 ELITE 印章。",
       "prem5": "即将推出：演示文件解析上线后提供扩展比赛分析（死亡热力图、爆头率、每回合表现）。",
@@ -85,14 +85,14 @@ export const pricing: TextBag["pricing"] = {
       "soon": "标记为即将推出的内容在发布前不构成承诺。在此之前，价格不包含这些内容。",
       "languageTitle": "6. 语言",
       "language": "译文仅为方便提供。如译文与英文文本不一致，以英文文本为准。",
-      "contact": "问题：support@ace-platform.gg",
+      "contact": "问题：{email}",
       "footerLink": "Premium 条款",
       "pricingLink": "阅读 Premium 条款"
     }
   },
   "meta": {
     "title": "价格",
-    "description": "A.C.E. 会员:Free {free},Plus 每月 {plus},Premium 每月 {premium}。固定整数显示价格。"
+    "description": "A.C.E 会员:Free {free},Plus 每月 {plus},Premium 每月 {premium}。固定整数显示价格。"
   },
   "period": {
     "monthly": "/月"
@@ -108,23 +108,23 @@ export const pricing: TextBag["pricing"] = {
       "note": "石墨",
       "title": "开放访问",
       "points": [
-        "使用 Steam OpenID 登录。A.C.E. 绝不会索要 Steam 密码。",
+        "使用 Steam OpenID 登录。A.C.E 绝不会索要 Steam 密码。",
         "已保存的积分从 1,200 开始。尚无比赛结果改变它。",
         "所有公开页面:游戏、锦标赛、排行榜、战队和规则。"
       ]
     },
     "plus": {
-      "name": "A.C.E. PLUS",
+      "name": "A.C.E PLUS",
       "note": "Plus",
       "title": "玩家数据与支持",
       "points": [
         "包含 Free 的全部内容。",
-        "玩家数据：基于已记录 A.C.E. 比赛的积分变化图。爆头率和命中率仪表即将推出。",
-        "即将推出：结账功能上线后，提供感谢信和 support@ace-platform.gg 邮件支持。Plus 不会购买积分或更弱的对手。"
+        "玩家数据：基于已记录 A.C.E 比赛的积分变化图。爆头率和命中率仪表即将推出。",
+        "会员邮件支持（{email}）以及团队的感谢信。 Plus 不会购买积分或更弱的对手。"
       ]
     },
     "premium": {
-      "name": "A.C.E. PREMIUM",
+      "name": "A.C.E PREMIUM",
       "note": "Premium",
       "title": "个人资料美术、徽章与分析",
       "points": [
@@ -159,7 +159,7 @@ export const pricing: TextBag["pricing"] = {
     }
   },
   "compare": {
-    "kicker": "A.C.E. 目前能承诺的内容",
+    "kicker": "A.C.E 目前能承诺的内容",
     "title": "会员对比",
     "note": "每一行都反映网站的现状。支付即将推出,付费方案绝不会开启队列或购买优势。",
     "caption": "按网站当前功能对比 Free、Plus 和 Premium",
@@ -175,7 +175,7 @@ export const pricing: TextBag["pricing"] = {
       },
       "steamSignIn": {
         "feature": "Steam 登录",
-        "detail": "官方 Steam OpenID。A.C.E. 绝不会索要 Steam 密码。"
+        "detail": "官方 Steam OpenID。A.C.E 绝不会索要 Steam 密码。"
       },
       "startingRating": {
         "feature": "初始评分",
@@ -183,7 +183,7 @@ export const pricing: TextBag["pricing"] = {
       },
       "recordedMatches": {
         "feature": "已记录比赛",
-        "detail": "根据已结束的 A.C.E. 比赛写入的胜负。"
+        "detail": "根据已结束的 A.C.E 比赛写入的胜负。"
       },
       "rankedQueue": {
         "feature": "排位队列",
@@ -231,15 +231,15 @@ export const pricing: TextBag["pricing"] = {
   "receipt": {
     "plus": {
       "metaTitle": "Plus 收据",
-      "metaDescription": "本网站显示的 A.C.E. Plus 信函。支付尚未上线,因此不会扣费,也不会发送邮件。",
-      "planName": "A.C.E. Plus",
-      "nextLabel": "继续浏览 A.C.E.",
+      "metaDescription": "本网站显示的 A.C.E Plus 信函。支付尚未上线,因此不会扣费,也不会发送邮件。",
+      "planName": "A.C.E Plus",
+      "nextLabel": "继续浏览 A.C.E",
       "nextBody": "公开页面保持开放。此选择不会开启队列,也不会更改已保存的等级。"
     },
     "premium": {
       "metaTitle": "Premium 收据",
-      "metaDescription": "本网站显示的 A.C.E. Premium 信函。支付尚未上线,因此不会扣费,也不会发送邮件。",
-      "planName": "A.C.E. Premium",
+      "metaDescription": "本网站显示的 A.C.E Premium 信函。支付尚未上线,因此不会扣费,也不会发送邮件。",
+      "planName": "A.C.E Premium",
       "nextLabel": "阅读 Premium 条款",
       "nextBody": "Premium 包含 Premium 段位美术、动态资料卡、特殊徽章和 ELITE SEAL，以及 Plus 的全部内容。在 Squads 保存战队对所有账号免费。"
     }
@@ -256,7 +256,7 @@ export const pricing: TextBag["pricing"] = {
         "方案名称:{plan}。",
         "显示价格:每月 {price}。该数字只是标价,不是扣费。",
         "付款:无。选择此方案不需要银行卡。",
-        "邮件:无。A.C.E. 不会将此信函发送到邮箱。",
+        "邮件:无。A.C.E 不会将此信函发送到邮箱。",
         "已保存等级:未更改。特殊徽章和精英印章仅在账户已保存 Premium 时显示。",
         "积分：不出售。新账号仍从 1,200 开始。"
       ]
@@ -265,7 +265,7 @@ export const pricing: TextBag["pricing"] = {
       "title": "目前可以使用的内容",
       "items": [
         "公开网站:首页、游戏、锦标赛、排行榜、战队、规则和条款。",
-        "通过官方 Steam OpenID 登录。A.C.E. 绝不会索要 Steam 密码。",
+        "通过官方 Steam OpenID 登录。A.C.E 绝不会索要 Steam 密码。",
         "与 Free 相同的公开页面。此价格不会开启单独的队列。"
       ]
     },
@@ -285,7 +285,7 @@ export const pricing: TextBag["pricing"] = {
       "items": [
         "你以为会扣费或获得付费等级:实际上未应用任何内容,账户保持原样。",
         "你以为会在邮箱中收到此信函:它只存在于本页面。",
-        "Steam 未连接:请使用“绑定个人资料”,并先勾选条款复选框。切勿在 A.C.E. 输入 Steam 密码。",
+        "Steam 未连接:请使用“绑定个人资料”,并先勾选条款复选框。切勿在 A.C.E 输入 Steam 密码。",
         "你需要帮助:请使用下方的支持地址,或打开本网站的帮助页面。"
       ]
     },
@@ -309,7 +309,7 @@ export const pricing: TextBag["pricing"] = {
   },
   "telemetry": {
     "kicker": "PLUS / PREMIUM 遥测",
-    "copy": "控制面板遥测已锁定 — 升级到 A.C.E. Plus 或 Premium,即可解锁实时动态统计曲线和武器专精指数。",
+    "copy": "控制面板遥测已锁定 — 升级到 A.C.E Plus 或 Premium,即可解锁实时动态统计曲线和武器专精指数。",
     "cta": "打开价格表"
   }
 };

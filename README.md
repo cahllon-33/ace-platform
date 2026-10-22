@@ -1,6 +1,6 @@
-# A.C.E.
+# A.C.E
 
-A.C.E. is an independent competitive CS2 platform (Autonomous Anti-Cheat, Competitive Calibration, Elite Players). It is an independent platform and is **not** affiliated with Valve or Steam.
+A.C.E is an independent competitive CS2 platform (Autonomous Anti-Cheat, Competitive Calibration, Elite Players). It is an independent platform and is **not** affiliated with Valve or Steam.
 
 This codebase now includes a public website plus Steam OpenID sign-in, PostgreSQL/Prisma models, 5v5 teams, a single-elimination bracket engine, rating math, and a game-server eligibility API. It does **not** include live CS2 servers, real payments, prizes, or a working Anti-Cheat client.
 
@@ -38,7 +38,7 @@ npm start
 
 ## Steam login
 
-A.C.E. never asks for a Steam password. Sign-in redirects to Steam OpenID. The callback is verified on the server; the 64-bit SteamID is taken only from Steam’s claimed_id after `is_valid:true`.
+A.C.E never asks for a Steam password. Sign-in redirects to Steam OpenID. The callback is verified on the server; the 64-bit SteamID is taken only from Steam’s claimed_id after `is_valid:true`.
 
 Set `SESSION_SECRET` (long random string) and `APP_BASE_URL` (must match the Steam return URL). `STEAM_API_KEY` is optional (public persona name only).
 

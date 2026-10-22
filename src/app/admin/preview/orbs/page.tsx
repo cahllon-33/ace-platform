@@ -8,7 +8,7 @@ import { adminPreviewEnabled } from "@/server/admin-preview";
 export const instant = false;
 
 export const metadata: Metadata = {
-  title: "A.C.E. rank orbs · dev preview",
+  title: "A.C.E rank orbs · dev preview",
   robots: { index: false, follow: false },
 };
 

@@ -1,7 +1,7 @@
 import type { TextBag } from "../types";
 
 export const consent: TextBag["consent"] = {
-  "valveDisclaimer": "A.C.E. adalah situs kompetisi Counter-Strike 2 independen. Situs ini tidak berafiliasi dengan, diberi wewenang, atau didukung oleh Valve Corporation. Steam dan Counter-Strike adalah merek milik pemiliknya. Aturan kompetisi adalah teks milik A.C.E. sendiri untuk game tersebut.",
+  "valveDisclaimer": "A.C.E adalah situs kompetisi Counter-Strike 2 independen. Situs ini tidak berafiliasi dengan, diberi wewenang, atau didukung oleh Valve Corporation. Steam dan Counter-Strike adalah merek milik pemiliknya. Aturan kompetisi adalah teks milik A.C.E sendiri untuk game tersebut.",
   "acceptance": {
     "label": "Saya secara tegas menerima Ketentuan Layanan, EULA Anti-Cheat, dan Kebijakan Privasi.",
     "readBefore": "Baca",
@@ -21,7 +21,7 @@ export const consent: TextBag["consent"] = {
     "optional": "Opsional"
   },
   "banner": {
-    "kicker": "PEMBERITAHUAN SITUS A.C.E.",
+    "kicker": "PEMBERITAHUAN SITUS A.C.E",
     "copy": {
       "before": "Terima menyimpan pilihan cookie browser ini. Ini bukan tanda tangan elektronik, tidak mengumpulkan telemetri perangkat, tidak menjalankan klien anti-cheat, dan tidak membuka antrean kompetitif. Baca",
       "termsLink": "Ketentuan Layanan",

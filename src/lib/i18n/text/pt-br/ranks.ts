@@ -62,7 +62,7 @@ export const ranks: TextBag["ranks"] = {
     "kicker": "RANKS PREMIUM",
     "plan": "A.C.E PREMIUM · somente US$ 7/mês",
     "title": "Arte de rank Premium",
-    "lede": "O conjunto original ilustrado de ranks A.C.E.: dez emblemas de cristal com divisões III/II/I, o protocolo de rating, o card de detalhe Legend e o visualizador 3D que gira ao arrastar. É arte de perfil para membros Premium. Lê a mesma escada de Rating Points dos ranks padrão e não dá nenhuma vantagem competitiva.",
+    "lede": "O conjunto original ilustrado de ranks A.C.E: dez emblemas de cristal com divisões III/II/I, o protocolo de rating, o card de detalhe Legend e o visualizador 3D que gira ao arrastar. É arte de perfil para membros Premium. Lê a mesma escada de Rating Points dos ranks padrão e não dá nenhuma vantagem competitiva.",
     "demo": "Valores de demonstração: progresso, taxa de vitórias e divisões neste painel são exemplos, não estatísticas ao vivo. Com login feito, o rating mostrado é o seu rating salvo.",
     "locked": "Em breve: o checkout ainda não existe, então hoje nenhuma conta é Premium. O servidor só aplica a arte de rank Premium a um perfil cujo plano salvo seja Premium.",
     "standardKicker": "RANKS PADRÃO",
@@ -77,12 +77,12 @@ export const ranks: TextBag["ranks"] = {
   },
   "meta": {
     "title": "Ranks competitivos",
-    "description": "As dez patentes A.C.E., de Iron Recruit a A.C.E. Legend, com divisões e pisos de classificação."
+    "description": "As dez patentes A.C.E, de Iron Recruit a A.C.E Legend, com divisões e pisos de classificação."
   },
   "hero": {
     "kicker": "CALIBRAÇÃO",
     "title": "Ranks competitivos",
-    "lede": "Dez patamares de Recruit a A.C.E. Legend, cada um com as divisões {divisions}. Arraste ou use as setas para girar um emblema. Conectado, você vê sua própria classificação; senão, o piso de cada patamar."
+    "lede": "Dez patamares de Recruit a A.C.E Legend, cada um com as divisões {divisions}. Arraste ou use as setas para girar um emblema. Conectado, você vê sua própria classificação; senão, o piso de cada patamar."
   },
   "codexLink": "Abrir o Códice de Calibração",
   "document": {
@@ -134,9 +134,9 @@ export const ranks: TextBag["ranks"] = {
     }
   },
   "board": {
-    "selectEmblem": "Selecionar o emblema do rank A.C.E. {name}, nível {level}",
-    "emblemAlt": "Emblema de perfil cristalino 3D personalizado A.C.E., nível {level}, {crystal}, {name}",
-    "emblemAltLegend": "Emblema de perfil cristalino 3D personalizado A.C.E., nível {level}",
+    "selectEmblem": "Selecionar o emblema do rank A.C.E {name}, nível {level}",
+    "emblemAlt": "Emblema de perfil cristalino 3D personalizado A.C.E, nível {level}, {crystal}, {name}",
+    "emblemAltLegend": "Emblema de perfil cristalino 3D personalizado A.C.E, nível {level}",
     "premium": "PATAMAR MÁXIMO"
   },
   "division": {

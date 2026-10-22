@@ -8,7 +8,7 @@ export const leaderboard: TextBag["leaderboard"] = {
   "hero": {
     "kicker": "PAPAN PERINGKAT",
     "title": "Papan kompetitif",
-    "note": "Kursi pameran mengisi papan ini sampai pemain menautkan Steam dan mendapatkan rating. Negara dan senjata unggulan mereka bersifat ilustratif. Render senjata adalah seni studio A.C.E. orisinal, bukan skin Valve. Kill belum dilacak, jadi senjata unggulan bukan statistik top-frag."
+    "note": "Kursi pameran mengisi papan ini sampai pemain menautkan Steam dan mendapatkan rating. Negara dan senjata unggulan mereka bersifat ilustratif. Render senjata adalah seni studio A.C.E orisinal, bukan skin Valve. Kill belum dilacak, jadi senjata unggulan bukan statistik top-frag."
   },
   "facts": {
     "seats": "Kursi",

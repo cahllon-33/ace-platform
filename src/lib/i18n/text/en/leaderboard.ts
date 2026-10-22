@@ -1,12 +1,12 @@
 ﻿export const leaderboard = {
   "meta": {
     "title": "Leaderboard",
-    "description": "A.C.E. competitive board. Stored Steam accounts appear first. Empty seats stay showcase rows."
+    "description": "A.C.E competitive board. Stored Steam accounts appear first. Empty seats stay showcase rows."
   },
   "hero": {
     "kicker": "LEADERBOARD",
     "title": "Competitive board",
-    "note": "Showcase seats fill this board until players link Steam and earn a rating. Their country and featured weapon are illustrative. Weapon renders are original A.C.E. studio art, not Valve skins. Kills are not tracked yet, so the featured weapon is not a top-frag stat."
+    "note": "Showcase seats fill this board until players link Steam and earn a rating. Their country and featured weapon are illustrative. Weapon renders are original A.C.E studio art, not Valve skins. Kills are not tracked yet, so the featured weapon is not a top-frag stat."
   },
   "facts": {
     "seats": "Seats",

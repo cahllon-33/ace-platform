@@ -4,7 +4,7 @@ export const codex: TextBag["codex"] = {
   meta: {
     title: "Kodeks kalibracji",
     description:
-      "Rangi A.C.E. wyjaśnione. Każde pytanie otwiera pełną odpowiedź na temat punktów oceny i zasad danej rangi. Kodeks nie zalicza żadnego meczu.",
+      "Rangi A.C.E wyjaśnione. Każde pytanie otwiera pełną odpowiedź na temat punktów oceny i zasad danej rangi. Kodeks nie zalicza żadnego meczu.",
     articleTitle: "{title} — Kodeks kalibracji",
   },
   groups: {
@@ -33,7 +33,7 @@ export const codex: TextBag["codex"] = {
     searchLabel: "Przeszukaj kodeks",
     searchPlaceholder: "Spróbuj: 1950, Recruit albo remis",
     empty: "Żaden wpis nie pasuje do tego wyszukiwania.",
-    columnLabel: "Kolumna A.C.E. {n}",
+    columnLabel: "Kolumna A.C.E {n}",
     pagerLabel: "Strony kodeksu",
     first: "Pierwsza",
     previous: "Poprzednia",
@@ -42,7 +42,7 @@ export const codex: TextBag["codex"] = {
     pageOf: "Strona {n} z {m}",
   },
   article: {
-    breadcrumb: "A.C.E. · Kodeks kalibracji",
+    breadcrumb: "A.C.E · Kodeks kalibracji",
     status:
       "Ta strona wyjaśnia spisaną drabinę rang. Nie zalicza żadnego meczu i nie zmienia zapisanej oceny.",
     emblemAlt: "Emblemat {name}, ranga {level}",
@@ -67,7 +67,7 @@ export const codex: TextBag["codex"] = {
     turnLabel: "Czytaj dalej w kodeksie",
     previous: "Poprzedni",
     next: "Następny",
-    alsoIn: "Także w A.C.E.",
+    alsoIn: "Także w A.C.E",
     backToBoard: "Wróć do tablicy rang",
   },
   rankArticle: {
@@ -146,7 +146,7 @@ export const codex: TextBag["codex"] = {
     },
     "rank-10-a-c-e-legend": {
       stance:
-        "A.C.E. Legend to ostatni znak. Etykieta kryształu to ACE ELITE. Oficjalna nazwa to A.C.E. Legend.",
+        "A.C.E Legend to ostatni znak. Etykieta kryształu to ACE ELITE. Oficjalna nazwa to A.C.E Legend.",
       detail:
         "Przedział zaczyna się od 1950 i kończy na suficie silnika, czyli 3000. Nie ma jedenastej rangi. Zapisana ocena nie może wzrosnąć powyżej 3000.",
     },
@@ -154,13 +154,13 @@ export const codex: TextBag["codex"] = {
   articles: {
     "what-a-rank-is": {
       title: "Czym jest ranga A.C.E.",
-      lede: "Ranga to znak, w którego przedziale mieszczą się Twoje zapisane punkty oceny. Dziesięć znaków obejmuje całą drabinę, od rangi Recruit do A.C.E. Legend.",
+      lede: "Ranga to znak, w którego przedziale mieszczą się Twoje zapisane punkty oceny. Dziesięć znaków obejmuje całą drabinę, od rangi Recruit do A.C.E Legend.",
       sections: [
         {
           heading: "Jedna liczba, jeden znak",
           paragraphs: [
             "Konto przechowuje ocenę rywalizacyjną. Drabina odczytuje tę liczbę i zwraca najwyższą rangę, której próg liczba osiągnęła. Nie można mieć dwóch rang jednocześnie.",
-            "Recruit to ranga 1. A.C.E. Legend to ranga 10. Oficjalna nazwa to nazwa zapisana w drabinie. Krótsze słowo na emblemacie to etykieta kryształu tej samej rangi.",
+            "Recruit to ranga 1. A.C.E Legend to ranga 10. Oficjalna nazwa to nazwa zapisana w drabinie. Krótsze słowo na emblemacie to etykieta kryształu tej samej rangi.",
             "Ten kodeks wyjaśnia spisaną drabinę rang. Nie zalicza żadnego meczu i nie zmienia zapisanej oceny.",
           ],
         },
@@ -168,7 +168,7 @@ export const codex: TextBag["codex"] = {
           heading: "Jak rozmieszczone są progi",
           paragraphs: [
             "Recruit obejmuje początek drabiny. Ranga Operative zaczyna się od 1100. Od rangi Vanguard do Grandmaster każdy kolejny próg jest o 100 punktów wyższy: 1200, 1300, 1400, 1500, 1600, a następnie 1700.",
-            "Ranga Sovereign zaczyna się od 1800 i obejmuje konto aż do 1949. Ranga A.C.E. Legend zaczyna się od 1950. Sufit silnika wynosi 3000, więc Legend ma najdłuższy przedział.",
+            "Ranga Sovereign zaczyna się od 1800 i obejmuje konto aż do 1949. Ranga A.C.E Legend zaczyna się od 1950. Sufit silnika wynosi 3000, więc Legend ma najdłuższy przedział.",
           ],
         },
         {
@@ -187,14 +187,14 @@ export const codex: TextBag["codex"] = {
         {
           heading: "Dlaczego istnieją obie",
           paragraphs: [
-            "Silnik i profil używają nazwy oficjalnej: Recruit, Operative, Vanguard, Specialist, Veteran, Elite, Master, Grandmaster, Sovereign, A.C.E. Legend.",
+            "Silnik i profil używają nazwy oficjalnej: Recruit, Operative, Vanguard, Specialist, Veteran, Elite, Master, Grandmaster, Sovereign, A.C.E Legend.",
             "Emblemat nosi także etykietę kryształu: IRON, BRONZE, SILVER, GOLD, PLATINUM, DIAMOND, MASTER, GRANDMASTER, IMMORTAL, ACE ELITE. Ta etykieta jest elementem grafiki. Nie tworzy jedenastej rangi i nie przechowuje drugiej liczby.",
           ],
         },
         {
           heading: "Gdzie się różnią",
           paragraphs: [
-            "Etykieta kryształu rangi Specialist to GOLD. Rangi Veteran — PLATINUM. Rangi Elite — DIAMOND. Rangi Sovereign — IMMORTAL. Rangi A.C.E. Legend — ACE ELITE. W każdym przypadku próg nadal należy do nazwy oficjalnej.",
+            "Etykieta kryształu rangi Specialist to GOLD. Rangi Veteran — PLATINUM. Rangi Elite — DIAMOND. Rangi Sovereign — IMMORTAL. Rangi A.C.E Legend — ACE ELITE. W każdym przypadku próg nadal należy do nazwy oficjalnej.",
             "Master i Grandmaster używają tego samego słowa w obu miejscach.",
           ],
         },
@@ -310,7 +310,7 @@ export const codex: TextBag["codex"] = {
           heading: "Granice",
           paragraphs: [
             "Przegrana przy 100 punktach oceny pozostawia 100. Wygrana przy 3000 pozostawia 3000. Próg rangi Recruit w drabinie jest zapisany jako 0, ale zapisana liczba nigdy nie korzysta z zakresu poniżej 100.",
-            "1949 to ranga Sovereign. 1950 to A.C.E. Legend. Nie ma znaku pośredniego.",
+            "1949 to ranga Sovereign. 1950 to A.C.E Legend. Nie ma znaku pośredniego.",
           ],
         },
         {
@@ -357,7 +357,7 @@ export const codex: TextBag["codex"] = {
           heading: "Czego pulpit nie robi",
           paragraphs: [
             "ZNAJDŹ MECZ nie szuka przeciwników. Nie zmienia punktów oceny. Ranga na koncie to nadal zapisana liczba odczytywana przez drabinę opisaną w tym kodeksie.",
-            "Nie ma osobnej najwyższej kolejki ponad rangą Legend. A.C.E. Legend to ostatni znak i zaczyna się od 1950 punktów oceny.",
+            "Nie ma osobnej najwyższej kolejki ponad rangą Legend. A.C.E Legend to ostatni znak i zaczyna się od 1950 punktów oceny.",
           ],
         },
       ],

@@ -6,14 +6,14 @@ export const home: TextBag["home"] = {
     "online": "Paikalla nyt",
     "registered": "Rekisteröityneet pelaajat",
     "earlyTitle": "Ennakkokäyttö",
-    "earlyBody": "Liity A.C.E.:n ensimmäisten pelaajien joukkoon. Live-luvut näkyvät täällä, kun yhteisö kasvaa.",
+    "earlyBody": "Liity A.C.E:n ensimmäisten pelaajien joukkoon. Live-luvut näkyvät täällä, kun yhteisö kasvaa.",
     "unavailable": "Live-luvut eivät ole juuri nyt saatavilla.",
     "note": "Todelliset luvut, päivittyvät 30 sekunnin välein."
   },
   "ops": {
     "identityKicker": "IDENTITEETTIKESKUS",
     "signedOutTitle": "Kirjaudu Steamilla",
-    "signedOutBody": "Yhdistä virallisella Steam OpenID:llä nähdäksesi täällä Steam-avatarisi, arvomerkkisi ja Rating Pointsisi. A.C.E. ei koskaan kysy Steam-salasanaa.",
+    "signedOutBody": "Yhdistä virallisella Steam OpenID:llä nähdäksesi täällä Steam-avatarisi, arvomerkkisi ja Rating Pointsisi. A.C.E ei koskaan kysy Steam-salasanaa.",
     "connect": "Kirjaudu Steamilla",
     "openDeck": "Avaa Command Deck",
     "avatarAlt": "Pelaajan {name} Steam-avatar",
@@ -25,7 +25,7 @@ export const home: TextBag["home"] = {
     "matches": "Ottelut",
     "kd": "K/D",
     "na": "–",
-    "kdNote": "K/D näyttää –, koska A.C.E. ei vielä tallenna tappoja ja kuolemia.",
+    "kdNote": "K/D näyttää –, koska A.C.E ei vielä tallenna tappoja ja kuolemia.",
     "shieldKicker": "A.C.E SHIELD",
     "shieldChip": "KEHITYKSESSÄ",
     "shieldTitle": "Eheystila",
@@ -43,22 +43,22 @@ export const home: TextBag["home"] = {
     "seasonBody": "Kaudella 1 ei ole vielä alkamis- eikä päättymispäivää, joten lähtölaskentaa ei ole. Päivämäärät julkaistaan tällä sivustolla ennen kauden alkua.",
     "statsKicker": "TILASTOSI",
     "statsSignedOut": "Kirjaudu Steamilla nähdäksesi tilastosi.",
-    "statsEmpty": "Ei vielä tallennettuja otteluita. Voitot ja tappiot näkyvät ensimmäisen tallennetun A.C.E.-ottelusi jälkeen.",
-    "statsLive": "Voitot ja tappiot tulevat tallennetulta A.C.E.-tililtäsi.",
+    "statsEmpty": "Ei vielä tallennettuja otteluita. Voitot ja tappiot näkyvät ensimmäisen tallennetun A.C.E-ottelusi jälkeen.",
+    "statsLive": "Voitot ja tappiot tulevat tallennetulta A.C.E-tililtäsi.",
     "statsLink": "Avaa pelaajatilastot"
   },
   "meta": {
-    "title": "A.C.E. — Kilpailullinen CS2-alusta",
-    "description": "A.C.E. on suunniteltu Counter-Strike 2 -kilpailualusta pelaajaidentiteetille, kalibroinnille, joukkueille ja turnauksille. Tämä julkinen sivusto on esikatselu. Ranked-matchmaking, huijauksenesto, maksut ja palkinnot eivät ole käytössä."
+    "title": "A.C.E — Kilpailullinen CS2-alusta",
+    "description": "A.C.E on suunniteltu Counter-Strike 2 -kilpailualusta pelaajaidentiteetille, kalibroinnille, joukkueille ja turnauksille. Tämä julkinen sivusto on esikatselu. Ranked-matchmaking, huijauksenesto, maksut ja palkinnot eivät ole käytössä."
   },
   "opening": {
-    "dialogLabel": "A.C.E.-avaus",
+    "dialogLabel": "A.C.E-avaus",
     "line": "A.C.E: Autonominen huijauksenesto, kilpailullinen kalibrointi, eliittipelaajat",
     "enter": "Siirry sivustolle"
   },
   "hero": {
     "logoAlt": "A.C.E. Autonominen huijauksenesto, kilpailullinen kalibrointi, eliittipelaajat",
-    "arenaAlt": "A.C.E.-areenalaatta. Alkuperäinen lavakuva, ei Valven taidetta. Näytössä lukee pelitelevisio. Suora lähetys on pois päältä."
+    "arenaAlt": "A.C.E-areenalaatta. Alkuperäinen lavakuva, ei Valven taidetta. Näytössä lukee pelitelevisio. Suora lähetys on pois päältä."
   },
   "broadcast": {
     "kicker": "TURNAUSSEURANTA",
@@ -77,7 +77,7 @@ export const home: TextBag["home"] = {
   },
   "charter": {
     "kicker": "PÄÄAULAN TYÖTILA",
-    "title": "A.C.E.:N KILPAILULLINEN MATCHMAKING-AULA JA LÄHETYSKESKUS",
+    "title": "A.C.E:N KILPAILULLINEN MATCHMAKING-AULA JA LÄHETYSKESKUS",
     "badge": "PALVELIMET · TULOSSA PIAN",
     "lede": "Tämä aula ei määritä palvelinta, käynnistä huijauksenestoasiakasta tai maksa palkintoa.",
     "modules": [
@@ -91,7 +91,7 @@ export const home: TextBag["home"] = {
       },
       {
         "kicker": "KIINTEÄT 3D-RANKINGIT",
-        "copy": "Kymmenen tasoa Recruitista A.C.E. Legendiin. Tallennettu luokitus näkyy Steam-kirjautumisen jälkeen. Tämä sivu ei kirjaa ottelua.",
+        "copy": "Kymmenen tasoa Recruitista A.C.E Legendiin. Tallennettu luokitus näkyy Steam-kirjautumisen jälkeen. Tämä sivu ei kirjaa ottelua.",
         "chips": [
           "LUOKITUSSÄÄNTÖ TALLESSA",
           "KIERTOPÖYTÄ TÄLLÄ SIVULLA"
@@ -134,13 +134,13 @@ export const home: TextBag["home"] = {
     "lines": [
       "A.C.E SHIELD: KEHITTEILLÄ",
       "LAITTEISTOBANNIMATRIISI: TUNNISTETTA EI KERÄTÄ",
-      "A.C.E. SHIELD -LINKKI: ASIAKASTA EI OLE ASENNETTU"
+      "A.C.E SHIELD -LINKKI: ASIAKASTA EI OLE ASENNETTU"
     ],
     "note": "Tämä sivusto ei aja ytimen asiakasta, ei skannaa muistia eikä anna laitteistobannia."
   },
   "comingSoon": {
     "badge": "EI SAATAVILLA",
-    "body": "A.C.E.-työpöytäasiakasta ei tarjota ladattavaksi. Kausi 1 tällä sivustolla ei asenna ohjelmistoa eikä avaa sisäänkirjautumista."
+    "body": "A.C.E-työpöytäasiakasta ei tarjota ladattavaksi. Kausi 1 tällä sivustolla ei asenna ohjelmistoa eikä avaa sisäänkirjautumista."
   },
   "operative": {
     "kicker": "Elokuvallinen taktinen näkymä · alkuperäinen CSS-ympäristö · ei Valven taidetta",
@@ -149,7 +149,7 @@ export const home: TextBag["home"] = {
     "note": "Kampanjateksti. Ranked-jonot, live-palvelimet ja palkinnot eivät ole käytössä."
   },
   "howStatus": {
-    "label": "A.C.E.-REKISTERÖINTIALIJÄRJESTELMÄ — KALIBROINTIMOOTTORI VALMIS",
+    "label": "A.C.E-REKISTERÖINTIALIJÄRJESTELMÄ — KALIBROINTIMOOTTORI VALMIS",
     "note": "Ranked-jonot avautuvat, kun A.C.E Shield ja kalibrointi otetaan käyttöön."
   },
   "shell": {
@@ -161,13 +161,13 @@ export const home: TextBag["home"] = {
     "connectProfileTitle": "Yhdistä profiili",
     "openProfileAria": "Avaa Command Deck -profiili",
     "connectProfileAria": "Yhdistä profiili Steam OpenID:n kautta",
-    "signOutAria": "Kirjaudu ulos A.C.E.:stä"
+    "signOutAria": "Kirjaudu ulos A.C.E:stä"
   },
   "notFound": {
     "kicker": "RUUDUKKOPOIKKEUS",
     "title": "VIRHE 404 — TUTKATELEMETRIA KADONNUT",
     "body": "Pyytämääsi koordinaattia ei ole aktiivisessa palvelinruudukossamme.",
-    "homeAria": "Palaa A.C.E.-etusivun aulaan",
+    "homeAria": "Palaa A.C.E-etusivun aulaan",
     "cta": "PALAA AULAAN"
   },
   "error": {

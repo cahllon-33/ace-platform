@@ -1,4 +1,4 @@
-// Generates the ten A.C.E. rank emblems as layered SVG (public/ranks/emblems).
+// Generates the ten A.C.E rank emblems as layered SVG (public/ranks/emblems).
 // Run: node scripts/generate-rank-emblems.mjs
 import { writeFileSync } from "node:fs";
 
@@ -60,7 +60,7 @@ function emblem(t, level) {
         )
         .join("")
     : "";
-  return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="1024" height="1024" role="img" aria-label="A.C.E. rank ${level} emblem">
+  return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="1024" height="1024" role="img" aria-label="A.C.E rank ${level} emblem">
 <defs>
   <linearGradient id="${id}-metal" x1="0" y1="0" x2="0.35" y2="1">
     <stop offset="0" stop-color="${t.hi}"/><stop offset="0.38" stop-color="${t.mid}"/><stop offset="0.62" stop-color="${t.lo}"/><stop offset="0.82" stop-color="${t.mid}"/><stop offset="1" stop-color="${t.hi}"/>

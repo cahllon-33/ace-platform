@@ -25,9 +25,9 @@ export const UI_TR: Ui = {
     "company": "Şirket",
     "legal": "Yasal",
     "tagline": "Adil oyun üzerine kurulu rekabetçi Counter-Strike 2 sıralamaları.",
-    "follow": "A.C.E.'yi takip et",
+    "follow": "A.C.E'yi takip et",
     "rights": "Tüm hakları saklıdır.",
-    "legalLine": "© 2026 A.C.E. Valve ile bağlantısı olmayan bağımsız bir platformdur. Counter-Strike ve CS2, Valve Corporation'ın ticari markalarıdır."
+    "legalLine": "© 2026 A.C.E Valve ile bağlantısı olmayan bağımsız bir platformdur. Counter-Strike ve CS2, Valve Corporation'ın ticari markalarıdır."
   },
   "soon": {
     "label": "Çok yakında"
@@ -58,7 +58,7 @@ export const UI_TR: Ui = {
   "maps": {
     "kicker": "Rekabetçi harita havuzu",
     "title": "Haritalar ve Yayın",
-    "lede": "A.C.E. rekabetçi havuzu yedi haritadan oluşur. Takımlar kural kitabındaki harita veto sürecinde bu listeden yasaklar ve seçer. Turnuva yayınları aşağıdaki ekranda görünür.",
+    "lede": "A.C.E rekabetçi havuzu yedi haritadan oluşur. Takımlar kural kitabındaki harita veto sürecinde bu listeden yasaklar ve seçer. Turnuva yayınları aşağıdaki ekranda görünür.",
     "rulebook": "Veto kurallarını oku",
     "screen": "Yayın ekranı",
     "offAir": "Yayın dışı",
@@ -110,10 +110,10 @@ export const UI_TR: Ui = {
     }
   },
   "rules": {
-    "kicker": "A.C.E. yarışma kural kitabı",
+    "kicker": "A.C.E yarışma kural kitabı",
     "title": "Yarışma kuralları",
     "version": "Sürüm {version} · {date} itibarıyla geçerli",
-    "intro": "Tüm A.C.E. yarışmaları bu kurallara göre oynanır. “Devreye alındığında geçerli” olarak işaretlenen maddeler, bağlı oldukları sistem kullanıma açıldığında yürürlüğe girer.",
+    "intro": "Tüm A.C.E yarışmaları bu kurallara göre oynanır. “Devreye alındığında geçerli” olarak işaretlenen maddeler, bağlı oldukları sistem kullanıma açıldığında yürürlüğe girer.",
     "pending": "Devreye alındığında geçerli",
     "contents": "İçindekiler",
     "penalties": {
@@ -149,7 +149,7 @@ export const UI_TR: Ui = {
   "antiCheat": {
     "kicker": "A.C.E Shield",
     "title": "Hile Koruması",
-    "lede": "A.C.E Shield, her A.C.E. maçı için geliştirilen dürüstlük sistemidir: istemci, sunucu, maç ve davranış kontrolleri birlikte çalışır ve tasarım gizliliği önceliklendirir.",
+    "lede": "A.C.E Shield, her A.C.E maçı için geliştirilen dürüstlük sistemidir: istemci, sunucu, maç ve davranış kontrolleri birlikte çalışır ve tasarım gizliliği önceliklendirir.",
     "statusLabel": "Dağıtım aşaması",
     "pillarsTitle": "Mimari temeller",
     "pillars": {
@@ -229,7 +229,7 @@ export const UI_TR: Ui = {
       "expansion1": "Autonomous Anti-Cheat",
       "expansion2": "Competitive Calibration",
       "expansion3": "Elite Players",
-      "line": "Rekabetçi kimliğini oluştur. Yeteneğini kalibre et. A.C.E. rütbelerinde yüksel.",
+      "line": "Rekabetçi kimliğini oluştur. Yeteneğini kalibre et. A.C.E rütbelerinde yüksel.",
       "connectSteam": "Steam'i bağla",
       "openDashboard": "Paneli aç",
       "exploreRanks": "Rütbeleri keşfet"
@@ -237,7 +237,7 @@ export const UI_TR: Ui = {
     "status": {
       "title": "Platform durumu",
       "steam": "Steam ile giriş",
-      "shield": "A.C.E. Shield",
+      "shield": "A.C.E Shield",
       "servers": "Rekabetçi sunucular",
       "tournaments": "Turnuvalar",
       "billing": "Faturalandırma",
@@ -289,7 +289,7 @@ export const UI_TR: Ui = {
       "open": "Destek sohbetini aç",
       "close": "Destek sohbetini kapat",
       "title": "A.C.E. Destek",
-      "greeting": "Merhaba! Ben A.C.E. destek asistanıyım. Rütbeler, planlar, kurallar veya hesabın hakkında soru sorabilirsin.",
+      "greeting": "Merhaba! Ben A.C.E destek asistanıyım. Rütbeler, planlar, kurallar veya hesabın hakkında soru sorabilirsin.",
       "placeholder": "Sorunu yaz…",
       "send": "Gönder",
       "unavailable": "Destek sohbeti henüz kullanılamıyor.",
@@ -316,7 +316,7 @@ export const UI_TR: Ui = {
       "stepsKicker": "Nasıl çalışır",
       "stepsTitle": "İlk rütbene üç adım",
       "step1t": "Steam'i bağla",
-      "step1b": "Steam OpenID ile giriş yap. A.C.E. Steam şifreni asla görmez.",
+      "step1b": "Steam OpenID ile giriş yap. A.C.E Steam şifreni asla görmez.",
       "step2t": "Kalibre ol",
       "step2b": "3. kademeden 1.200 RP ile başlarsın. Kaydedilen her maç RP'ni yayımlanmış kurallara göre değiştirir.",
       "step3t": "Yüksel",
@@ -334,7 +334,7 @@ export const UI_TR: Ui = {
     "profile": {
       "kicker": "OYUNCU",
       "notFound": "Oyuncu bulunamadı",
-      "notFoundBody": "Bu Steam ID'yi kullanan bir A.C.E. hesabı yok ya da profil herkese açık değil.",
+      "notFoundBody": "Bu Steam ID'yi kullanan bir A.C.E hesabı yok ya da profil herkese açık değil.",
       "rating": "Puan",
       "rank": "Rütbe",
       "record": "Kayıt",
@@ -349,11 +349,11 @@ export const UI_TR: Ui = {
     },
     "chat": {
       "sources": "Kaynaklar",
-      "noMatch": "Bunu A.C.E. sitesinin içeriğinde bulamadım. Soruyu ekibe bilet olarak gönderebilirsin.",
+      "noMatch": "Bunu A.C.E sitesinin içeriğinde bulamadım. Soruyu ekibe bilet olarak gönderebilirsin.",
       "s1": "Premium ne kadar?",
       "s2": "Nasıl RP kazanırım?",
       "s3": "Hileciyi nasıl bildiririm?",
-      "kbNote": "Yanıtlar A.C.E. sitesinin içeriğinden alınır."
+      "kbNote": "Yanıtlar A.C.E sitesinin içeriğinden alınır."
     }
   },
   "r40": {
@@ -396,12 +396,12 @@ export const UI_TR: Ui = {
   "r41": {
     "vf": {
       "label": "Doğrulanmış oyuncu",
-      "tip": "Doğrulandı: Steam bağlı, hesap iyi durumda, A.C.E. tarafından incelendi."
+      "tip": "Doğrulandı: Steam bağlı, hesap iyi durumda, A.C.E tarafından incelendi."
     },
     "st": {
       "kicker": "Performans",
       "title": "Oyuncu istatistikleri",
-      "lede": "Her sayı kayıtlı A.C.E. maçlarından gelir. Hiçbir şey tahmin değildir.",
+      "lede": "Her sayı kayıtlı A.C.E maçlarından gelir. Hiçbir şey tahmin değildir.",
       "empty": "Henüz kayıtlı maç yok. İstatistikler ilk dereceli maçtan sonra görünür.",
       "winRate": "Kazanma oranı",
       "adr": "ADR",
@@ -427,11 +427,11 @@ export const UI_TR: Ui = {
       "none": "—"
     },
     "ab": {
-      "title": "A.C.E. hakkında",
+      "title": "A.C.E hakkında",
       "lede": "Tek bir herkese açık rütbe tablosu ve asla avantaj satın almayan planlar üzerine kurulu bir Counter-Strike 2 rekabet platformu.",
-      "b1": "A.C.E. CS2 için dereceli oyun, merdiven ve turnuvalar düzenler. Giriş Steam OpenID iledir; Steam şifreni asla görmeyiz.",
+      "b1": "A.C.E CS2 için dereceli oyun, merdiven ve turnuvalar düzenler. Giriş Steam OpenID iledir; Steam şifreni asla görmeyiz.",
       "b2": "Rütben yalnızca kayıtlı sonuçlardan, yayınlanmış kurallarla hesaplanır. Ücretli planlar yalnızca kozmetik ve kolaylık içindir.",
-      "b3": "A.C.E. bağımsız bir platformdur ve Valve ile bağlantılı değildir."
+      "b3": "A.C.E bağımsız bir platformdur ve Valve ile bağlantılı değildir."
     },
     "ss": {
       "title": "Sunucu durumu",
@@ -474,7 +474,7 @@ export const UI_TR: Ui = {
     "lv": {
       "nav": "Canlı",
       "title": "Canlı yayınlar",
-      "lede": "Resmî A.C.E. turnuva yayınları. Bir yayın burada yalnızca operatörler yayına aldığında görünür.",
+      "lede": "Resmî A.C.E turnuva yayınları. Bir yayın burada yalnızca operatörler yayına aldığında görünür.",
       "none": "Şu anda canlı yayın yok",
       "noneBody": "Resmî bir yayın başladığında burada görünür. Bu arada aşağıdaki turnuvalara göz at.",
       "schedule": "Yaklaşan turnuvalar",
@@ -484,7 +484,7 @@ export const UI_TR: Ui = {
     }
   },
   "r46": {
-    "aria": "A.C.E. neyi temsil eder",
+    "aria": "A.C.E neyi temsil eder",
     "fair": "Adil Oyun Koruması",
     "fairSub": "Steam ile giriş, yayımlanmış kurallar ve yöneticilerin incelediği oyuncu bildirimleri.",
     "calib": "Rekabetçi Kalibrasyon",
@@ -494,7 +494,7 @@ export const UI_TR: Ui = {
   },
   "r45": {
     "title": "Legend'in ötesi",
-    "lede": "A.C.E. Legend'in üzerinde beş prestij rozeti; 2.150'den 2.950'ye her 200 RP'de bir. Yalnızca oynayarak kazanılır.",
+    "lede": "A.C.E Legend'in üzerinde beş prestij rozeti; 2.150'den 2.950'ye her 200 RP'de bir. Yalnızca oynayarak kazanılır.",
     "plus": "Plus · platin",
     "premium": "Premium · altın ateş",
     "fair": "Herkes için aynı RP. Prestij eşikleri, eşleştirme ve puanlama her planda aynıdır. Burada hiçbir şey satın alınamaz.",
@@ -527,10 +527,10 @@ export const UI_TR: Ui = {
     "pr": {
       "kicker": "Prestij",
       "title": "Rozet kuralları",
-      "lede": "Her A.C.E. rozetinin nasıl kazanıldığı. Rozetler yalnızca görseldir: eşleştirmeyi, RP'yi veya herhangi bir kuralı asla değiştirmez.",
+      "lede": "Her A.C.E rozetinin nasıl kazanıldığı. Rozetler yalnızca görseldir: eşleştirmeyi, RP'yi veya herhangi bir kuralı asla değiştirmez.",
       "ranks": "Rütbe rozetleri (kademe 1–10) RP'ni takip eder. Herkes aynı rütbeyi ve aynı sabit kademe rengini görür.",
       "prestige": "Prestij rozetleri {elite} RP üzerindeki beş uzun vadeli hedeftir: 2.150'den 2.950'e her 200 RP'de bir.",
-      "free": "Free: rozetin A.C.E. Legend olarak kalır ve prestij seviyen metin kilometre taşı olarak gösterilir. RP'n asla sınırlanmaz.",
+      "free": "Free: rozetin A.C.E Legend olarak kalır ve prestij seviyen metin kilometre taşı olarak gösterilir. RP'n asla sınırlanmaz.",
       "plus": "Plus: platin prestij seti.",
       "premium": "Premium: animasyonlu altın prestij seti.",
       "lose": "Bir prestij eşiğinin altına düşersen rozet RP ile birlikte iner; yeniden ulaşınca geri gelir.",
@@ -683,5 +683,19 @@ export const UI_TR: Ui = {
     "communityTitle": "Topluluk",
     "communityLede": "Maç haberleri, turnuvalar ve öne çıkanlar için A.C.E'yi takip et.",
     "followOn": "{network} üzerinde A.C.E"
+  },
+  "r49b": {
+    "title": "Steam envanteri",
+    "private": "Envanter gizli",
+    "privateBody": "Bu oyuncunun Steam envanteri gizli.",
+    "empty": "Herkese açık envanterde CS2 eşyası yok.",
+    "unavailable": "Steam envanteri şu anda yüklenemedi.",
+    "hiddenOwner": "Envanter vitrinin profilinde gizli.",
+    "hide": "Vitrini gizle",
+    "show": "Vitrini göster",
+    "priceSource": "Fiyatlar: Steam Topluluk Pazarı en düşük ilan, önbellekten.",
+    "note": "Yalnızca vitrin. A.C.E asla Steam eşyası almaz, satmaz veya takas etmez.",
+    "updated": "Güncellendi {date}",
+    "more": "+{n} eşya daha"
   }
 };

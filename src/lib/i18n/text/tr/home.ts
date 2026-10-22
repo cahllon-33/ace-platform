@@ -6,14 +6,14 @@ export const home: TextBag["home"] = {
     "online": "Şu an çevrimiçi",
     "registered": "Kayıtlı oyuncular",
     "earlyTitle": "Erken erişim",
-    "earlyBody": "A.C.E.'nin ilk oyuncularına katıl. Topluluk büyüdüğünde canlı sayılar burada görünecek.",
+    "earlyBody": "A.C.E'nin ilk oyuncularına katıl. Topluluk büyüdüğünde canlı sayılar burada görünecek.",
     "unavailable": "Canlı sayılar şu anda kullanılamıyor.",
     "note": "Gerçek sayılar, her 30 saniyede güncellenir."
   },
   "ops": {
     "identityKicker": "KİMLİK MERKEZİ",
     "signedOutTitle": "Steam ile giriş yap",
-    "signedOutBody": "Steam avatarını, rütbe amblemini ve Rating Points'ini burada görmek için resmi Steam OpenID ile bağlan. A.C.E. asla Steam şifresi istemez.",
+    "signedOutBody": "Steam avatarını, rütbe amblemini ve Rating Points'ini burada görmek için resmi Steam OpenID ile bağlan. A.C.E asla Steam şifresi istemez.",
     "connect": "Steam ile giriş yap",
     "openDeck": "Command Deck'i aç",
     "avatarAlt": "{name} Steam avatarı",
@@ -25,7 +25,7 @@ export const home: TextBag["home"] = {
     "matches": "Maçlar",
     "kd": "K/D",
     "na": "yok",
-    "kdNote": "A.C.E. henüz öldürme ve ölümleri kaydetmediği için K/D 'yok' gösterir.",
+    "kdNote": "A.C.E henüz öldürme ve ölümleri kaydetmediği için K/D 'yok' gösterir.",
     "shieldKicker": "A.C.E SHIELD",
     "shieldChip": "GELİŞTİRİLİYOR",
     "shieldTitle": "Bütünlük durumu",
@@ -43,22 +43,22 @@ export const home: TextBag["home"] = {
     "seasonBody": "Sezon 1'in henüz başlangıç veya bitiş tarihi yok, bu yüzden geri sayım yok. Tarihler sezon açılmadan önce bu sitede yayınlanacak.",
     "statsKicker": "İSTATİSTİKLERİN",
     "statsSignedOut": "İstatistiklerini görmek için Steam ile giriş yap.",
-    "statsEmpty": "Henüz kayıtlı maç yok. Galibiyet ve mağlubiyetler ilk kayıtlı A.C.E. maçından sonra görünür.",
-    "statsLive": "Galibiyet ve mağlubiyetler kayıtlı A.C.E. hesabından gelir.",
+    "statsEmpty": "Henüz kayıtlı maç yok. Galibiyet ve mağlubiyetler ilk kayıtlı A.C.E maçından sonra görünür.",
+    "statsLive": "Galibiyet ve mağlubiyetler kayıtlı A.C.E hesabından gelir.",
     "statsLink": "Oyuncu istatistiklerini aç"
   },
   "meta": {
-    "title": "A.C.E. — Rekabetçi CS2 Platformu",
-    "description": "A.C.E., oyuncu kimliği, kalibrasyon, takımlar ve turnuvalar için planlanan bir Counter-Strike 2 rekabet platformudur. Bu herkese açık site bir önizlemedir. Dereceli eşleştirme, hile karşıtı sistem, ödemeler ve ödüller aktif değildir."
+    "title": "A.C.E — Rekabetçi CS2 Platformu",
+    "description": "A.C.E, oyuncu kimliği, kalibrasyon, takımlar ve turnuvalar için planlanan bir Counter-Strike 2 rekabet platformudur. Bu herkese açık site bir önizlemedir. Dereceli eşleştirme, hile karşıtı sistem, ödemeler ve ödüller aktif değildir."
   },
   "opening": {
-    "dialogLabel": "A.C.E. açılışı",
+    "dialogLabel": "A.C.E açılışı",
     "line": "A.C.E: Otonom Hile Karşıtı, Rekabetçi Kalibrasyon, Elit Oyuncular",
     "enter": "Siteye gir"
   },
   "hero": {
     "logoAlt": "A.C.E. Otonom Hile Karşıtı, Rekabetçi Kalibrasyon, Elit Oyuncular",
-    "arenaAlt": "A.C.E. arena görseli. Özgün sahne görüntüsüdür, Valve çizimi değildir. Ekranda oyun televizyonu yazıyor. Canlı yayın yok."
+    "arenaAlt": "A.C.E arena görseli. Özgün sahne görüntüsüdür, Valve çizimi değildir. Ekranda oyun televizyonu yazıyor. Canlı yayın yok."
   },
   "broadcast": {
     "kicker": "TURNUVA İZLEME",
@@ -91,7 +91,7 @@ export const home: TextBag["home"] = {
       },
       {
         "kicker": "SABİT 3D RÜTBELER",
-        "copy": "Recruit'ten A.C.E. Legend'a on kademe. Kayıtlı derece Steam ile oturum açtıktan sonra görünür. Bu sayfa maç sonucu işlemez.",
+        "copy": "Recruit'ten A.C.E Legend'a on kademe. Kayıtlı derece Steam ile oturum açtıktan sonra görünür. Bu sayfa maç sonucu işlemez.",
         "chips": [
           "DERECE KURALI KAYITLI",
           "BU SAYFADA DÖNER TABLA"
@@ -134,13 +134,13 @@ export const home: TextBag["home"] = {
     "lines": [
       "A.C.E SHIELD: GELİŞTİRİLİYOR",
       "DONANIM YASAĞI MATRİSİ: HİÇBİR TANIMLAYICI TOPLANMAZ",
-      "A.C.E. SHIELD BAĞLANTISI: İSTEMCİ KURULU DEĞİL"
+      "A.C.E SHIELD BAĞLANTISI: İSTEMCİ KURULU DEĞİL"
     ],
     "note": "Bu site çekirdek düzeyinde istemci çalıştırmaz, belleği taramaz ve donanım yasağı uygulamaz."
   },
   "comingSoon": {
     "badge": "KULLANILAMIYOR",
-    "body": "A.C.E. masaüstü istemcisi indirilmek üzere sunulmuyor. Bu sitedeki 1. Sezon yazılım yüklemez ve check-in açmaz."
+    "body": "A.C.E masaüstü istemcisi indirilmek üzere sunulmuyor. Bu sitedeki 1. Sezon yazılım yüklemez ve check-in açmaz."
   },
   "operative": {
     "kicker": "Sinematik taktik görünüm · özgün CSS ortamı · Valve çizimi değil",
@@ -149,7 +149,7 @@ export const home: TextBag["home"] = {
     "note": "Kampanya metni. Dereceli sıralar, canlı sunucular ve ödüller aktif değil."
   },
   "howStatus": {
-    "label": "A.C.E. KAYIT ALT SİSTEMİ — KALİBRASYON MOTORU HAZIR",
+    "label": "A.C.E KAYIT ALT SİSTEMİ — KALİBRASYON MOTORU HAZIR",
     "note": "Dereceli sıralar A.C.E Shield ve kalibrasyon devreye girdiğinde açılır."
   },
   "shell": {
@@ -161,13 +161,13 @@ export const home: TextBag["home"] = {
     "connectProfileTitle": "Profili Bağla",
     "openProfileAria": "Komuta Merkezi profilini aç",
     "connectProfileAria": "Profili Steam OpenID ile bağla",
-    "signOutAria": "A.C.E.'den çıkış yap"
+    "signOutAria": "A.C.E'den çıkış yap"
   },
   "notFound": {
     "kicker": "IZGARA İSTİSNASI",
     "title": "HATA 404 — RADAR TELEMETRİSİ KAYBOLDU",
     "body": "İstediğiniz koordinat aktif sunucu ızgaramızda bulunmuyor.",
-    "homeAria": "A.C.E. ana sayfa lobisine dön",
+    "homeAria": "A.C.E ana sayfa lobisine dön",
     "cta": "LOBİYE DÖN"
   },
   "error": {

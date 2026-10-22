@@ -25,7 +25,7 @@ export const UI_PT_BR: Ui = {
     "company": "Empresa",
     "legal": "Jurídico",
     "tagline": "Rankings competitivos de Counter-Strike 2, feitos em torno do jogo limpo.",
-    "follow": "Siga a A.C.E.",
+    "follow": "Siga a A.C.E",
     "rights": "Todos os direitos reservados.",
     "legalLine": "© 2026 A.C.E. Plataforma independente, sem afiliação à Valve. Counter-Strike e CS2 são marcas da Valve Corporation."
   },
@@ -149,7 +149,7 @@ export const UI_PT_BR: Ui = {
   "antiCheat": {
     "kicker": "A.C.E Shield",
     "title": "Anti-cheat",
-    "lede": "O A.C.E Shield é o sistema de integridade em construção para cada jogo A.C.E.: verificações de cliente, servidor, jogo e comportamento trabalhando em conjunto, com a privacidade em primeiro lugar.",
+    "lede": "O A.C.E Shield é o sistema de integridade em construção para cada jogo A.C.E: verificações de cliente, servidor, jogo e comportamento trabalhando em conjunto, com a privacidade em primeiro lugar.",
     "statusLabel": "Fase de implementação",
     "pillarsTitle": "Pilares da arquitetura",
     "pillars": {
@@ -237,7 +237,7 @@ export const UI_PT_BR: Ui = {
     "status": {
       "title": "Status da plataforma",
       "steam": "Login com Steam",
-      "shield": "A.C.E. Shield",
+      "shield": "A.C.E Shield",
       "servers": "Servidores competitivos",
       "tournaments": "Torneios",
       "billing": "Cobrança",
@@ -288,7 +288,7 @@ export const UI_PT_BR: Ui = {
     "chat": {
       "open": "Abrir chat de suporte",
       "close": "Fechar chat de suporte",
-      "title": "Suporte A.C.E.",
+      "title": "Suporte A.C.E",
       "greeting": "Oi! Sou o assistente de suporte da A.C.E. Pergunte sobre ranks, planos, regras ou sua conta.",
       "placeholder": "Digite sua pergunta…",
       "send": "Enviar",
@@ -316,7 +316,7 @@ export const UI_PT_BR: Ui = {
       "stepsKicker": "Como funciona",
       "stepsTitle": "Três passos até seu primeiro rank",
       "step1t": "Conecte a Steam",
-      "step1b": "Entre com Steam OpenID. A A.C.E. nunca vê sua senha da Steam.",
+      "step1b": "Entre com Steam OpenID. A A.C.E nunca vê sua senha da Steam.",
       "step2t": "Calibre",
       "step2b": "Você começa no nível 3 com 1.200 RP. Cada partida registrada muda seus RP por regras publicadas.",
       "step3t": "Suba",
@@ -334,7 +334,7 @@ export const UI_PT_BR: Ui = {
     "profile": {
       "kicker": "JOGADOR",
       "notFound": "Jogador não encontrado",
-      "notFoundBody": "Nenhuma conta A.C.E. usa este Steam ID, ou o perfil não é público.",
+      "notFoundBody": "Nenhuma conta A.C.E usa este Steam ID, ou o perfil não é público.",
       "rating": "Pontuação",
       "rank": "Rank",
       "record": "Histórico",
@@ -382,7 +382,7 @@ export const UI_PT_BR: Ui = {
     "nf": {
       "code": "Erro 404",
       "title": "Esta página está fora do mapa",
-      "body": "O link pode estar antigo ou digitado errado. Todo o A.C.E. está a um clique daqui.",
+      "body": "O link pode estar antigo ou digitado errado. Todo o A.C.E está a um clique daqui.",
       "home": "Voltar ao início",
       "ranks": "Ver patentes"
     },
@@ -427,11 +427,11 @@ export const UI_PT_BR: Ui = {
       "none": "—"
     },
     "ab": {
-      "title": "Sobre a A.C.E.",
+      "title": "Sobre a A.C.E",
       "lede": "Uma plataforma de competição de Counter-Strike 2 construída em torno de uma tabela de patentes pública e planos que nunca compram vantagem.",
-      "b1": "A A.C.E. organiza partidas ranqueadas, ladders e torneios de CS2. O login é via Steam OpenID; nunca vemos sua senha do Steam.",
+      "b1": "A A.C.E organiza partidas ranqueadas, ladders e torneios de CS2. O login é via Steam OpenID; nunca vemos sua senha do Steam.",
       "b2": "Sua patente é calculada só a partir de resultados registrados com regras publicadas. Os planos pagos são apenas cosméticos e de conveniência.",
-      "b3": "A A.C.E. é uma plataforma independente e não é afiliada à Valve."
+      "b3": "A A.C.E é uma plataforma independente e não é afiliada à Valve."
     },
     "ss": {
       "title": "Status dos servidores",
@@ -484,7 +484,7 @@ export const UI_PT_BR: Ui = {
     }
   },
   "r46": {
-    "aria": "O que a A.C.E. representa",
+    "aria": "O que a A.C.E representa",
     "fair": "Proteção ao Fair Play",
     "fairSub": "Login pela Steam, regras publicadas e denúncias de jogadores revisadas por admins.",
     "calib": "Calibração Competitiva",
@@ -494,7 +494,7 @@ export const UI_PT_BR: Ui = {
   },
   "r45": {
     "title": "Além do Legend",
-    "lede": "Cinco insígnias de prestígio acima do A.C.E. Legend, uma a cada 200 RP de 2.150 a 2.950. Conquistadas só jogando.",
+    "lede": "Cinco insígnias de prestígio acima do A.C.E Legend, uma a cada 200 RP de 2.150 a 2.950. Conquistadas só jogando.",
     "plus": "Plus · platina",
     "premium": "Premium · fogo dourado",
     "fair": "O mesmo RP para todos. Limites de prestígio, matchmaking e rating são iguais em todos os planos. Nada aqui pode ser comprado.",
@@ -527,10 +527,10 @@ export const UI_PT_BR: Ui = {
     "pr": {
       "kicker": "Prestígio",
       "title": "Regras dos emblemas",
-      "lede": "Como cada emblema A.C.E. é conquistado. Emblemas são só cosméticos: nunca mudam o matchmaking, os RP ou qualquer regra.",
+      "lede": "Como cada emblema A.C.E é conquistado. Emblemas são só cosméticos: nunca mudam o matchmaking, os RP ou qualquer regra.",
       "ranks": "Os emblemas de rank (níveis 1–10) seguem seus RP. Todo mundo vê o mesmo rank e a mesma cor fixa de nível.",
       "prestige": "Os emblemas de prestígio são cinco metas de longo prazo acima de {elite} RP: um a cada 200 RP, de 2.150 a 2.950.",
-      "free": "Free: seu emblema continua A.C.E. Legend e o nível de prestígio aparece como marco em texto. Seus RP nunca têm limite.",
+      "free": "Free: seu emblema continua A.C.E Legend e o nível de prestígio aparece como marco em texto. Seus RP nunca têm limite.",
       "plus": "Plus: o conjunto de prestígio em platina.",
       "premium": "Premium: o conjunto de prestígio dourado animado.",
       "lose": "Se cair abaixo de um limite de prestígio, o emblema acompanha seus RP; ao atingir de novo, ele volta.",
@@ -683,5 +683,19 @@ export const UI_PT_BR: Ui = {
     "communityTitle": "Comunidade",
     "communityLede": "Siga a A.C.E para notícias de partidas, torneios e destaques.",
     "followOn": "A.C.E no {network}"
+  },
+  "r49b": {
+    "title": "Inventário Steam",
+    "private": "Inventário privado",
+    "privateBody": "O inventário Steam deste jogador é privado.",
+    "empty": "Nenhum item de CS2 no inventário público.",
+    "unavailable": "Não foi possível carregar o inventário Steam agora.",
+    "hiddenOwner": "Sua vitrine de inventário está oculta no perfil.",
+    "hide": "Ocultar vitrine",
+    "show": "Mostrar vitrine",
+    "priceSource": "Preços: menor oferta do Mercado da Comunidade Steam, em cache.",
+    "note": "Apenas vitrine. A A.C.E nunca compra, vende ou troca itens Steam.",
+    "updated": "Atualizado em {date}",
+    "more": "+{n} itens"
   }
 };

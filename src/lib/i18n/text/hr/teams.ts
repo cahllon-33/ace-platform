@@ -2,7 +2,7 @@ import type { TextBag } from "../types";
 
 export const teams: TextBag["teams"] = {
   "meta": {
-    "title": "A.C.E. upravljanje odredom",
+    "title": "A.C.E upravljanje odredom",
     "description": "Radni prostor tvog 5v5 odreda. Pozivnice zahtijevaju provjerenu Steam sesiju; anti-cheat provjere stižu s A.C.E Shieldom."
   },
   "hero": {
@@ -14,11 +14,11 @@ export const teams: TextBag["teams"] = {
     "kickerPremium": "Zapis klana nakon odabira plana",
     "kickerDefault": "Zapis klana",
     "title": "Jeste li tim od pet?",
-    "intro": "Mjesto 1 je igrač prijavljen putem Steama. Mjesta 2 do 5 moraju već imati A.C.E. račune. Spremanje klana ne naplaćuje 7 $, ne šalje e-poštu i ne stavlja klan na ploču od 100 timova.",
+    "intro": "Mjesto 1 je igrač prijavljen putem Steama. Mjesta 2 do 5 moraju već imati A.C.E račune. Spremanje klana ne naplaćuje 7 $, ne šalje e-poštu i ne stavlja klan na ploču od 100 timova.",
     "yes": "Da, pet igrača",
     "no": "Ne, ostavi mjesta otvorena",
     "seatsOpen": "Pet mjesta ostaje otvoreno. Ništa nije spremljeno.",
-    "connectSteam": "Najprije poveži Steam. Gumb se vraća na ovu stranicu. A.C.E. nikad ne traži Steam lozinku.",
+    "connectSteam": "Najprije poveži Steam. Gumb se vraća na ovu stranicu. A.C.E nikad ne traži Steam lozinku.",
     "alreadyMember": "{name} već pripada timu {team}. Ovim obrascem ne stvara se drugi klan.",
     "thisAccount": "Ovaj račun",
     "acceptTerms": "Prihvati uvjete prije spremanja klana.",
@@ -26,7 +26,7 @@ export const teams: TextBag["teams"] = {
     "clanName": "Ime klana",
     "captainSeat": "Mjesto 1, kapetan: {name}",
     "signedInSteam": "Prijavljeni Steam račun",
-    "seatLabel": "SteamID ili A.C.E. ID računa za mjesto {seat}",
+    "seatLabel": "SteamID ili A.C.E ID računa za mjesto {seat}",
     "submit": "Spremi klan od pet igrača",
     "saved": "Ime klana je spremljeno i četiri pozivnice čekaju. Ti igrači nisu u postavi dok ne prihvate. Ovo nije mjesto na ploči od 100 timova. Ništa nije naplaćeno."
   },
@@ -42,8 +42,8 @@ export const teams: TextBag["teams"] = {
       "email": "E-pošta se ne šalje. Potvrde planova ostaju na ovoj stranici.",
       "charge": "Premium stoji 7 $ mjesečno. Uskoro: plaćanje još ne postoji, pa se ništa ne naplaćuje.",
       "board": "Spremljeni klan je zapis postave. Ne stavlja se na ploču od 100 timova. Ta ploča i dalje pokazuje 0 prijavljenih dok sezona ne počne.",
-      "steam": "Prijava koristi službeni Steam OpenID. A.C.E. nikad ne traži Steam lozinku. S ove stranice Steam se vraća ovdje.",
-      "roster": "Mjesto 1 je prijavljeni kapetan. Mjesta 2 do 5 moraju već imati A.C.E. račune. Pozivnice čekaju dok svaki igrač ne prihvati.",
+      "steam": "Prijava koristi službeni Steam OpenID. A.C.E nikad ne traži Steam lozinku. S ove stranice Steam se vraća ovdje.",
+      "roster": "Mjesto 1 je prijavljeni kapetan. Mjesta 2 do 5 moraju već imati A.C.E račune. Pozivnice čekaju dok svaki igrač ne prihvati.",
       "badge": "Značke mjesta postaju A.C.E Shield provjere uživo kad anti-cheat krene.",
       "support": "Otvori Podršku ili Kontakt na ovoj stranici. Upit podršci ne otvara zahtjev, a tekst upisan na Kontaktu ne dostavlja se.",
       "rating": "Novi rejting počinje od 1.200. Ova stranica ne prodaje rejting, ne otvara red, ne spaja CS2 poslužitelj i ne dodjeljuje nagrade."
@@ -63,11 +63,11 @@ export const teams: TextBag["teams"] = {
   },
   "tournaments": {
     "meta": {
-      "title": "A.C.E. prvenstvo — elitni nokaut 100 timova",
+      "title": "A.C.E prvenstvo — elitni nokaut 100 timova",
       "description": "Nokaut 100 timova. Klikni klan da otvoriš njegovu postavu, zatim profil svakog igrača. Prijave se otvaraju uskoro."
     },
     "intro": {
-      "title": "A.C.E. PRVENSTVO — ELITNI NOKAUT 100 TIMOVA",
+      "title": "A.C.E PRVENSTVO — ELITNI NOKAUT 100 TIMOVA",
       "lede": "Objavljeno polje je nokaut 100 timova. Graf ispod je taj raspored. Klik na klan otvara ladicu s postavom. Prijavljeno 0 od 100. Novčana nagrada nije oglašena ni financirana.",
       "formatValue": "Matrica kostura 100 timova",
       "briefTitle": "Operativni sažetak 100 timova",
@@ -110,7 +110,7 @@ export const teams: TextBag["teams"] = {
       "count": "Klan {index} od {total}",
       "next": "Sljedeći klan",
       "close": "Zatvori profil",
-      "disclosure": "Postavke i inventari igrača pojavljuju se ovdje kad ih igrači odluče podijeliti. A.C.E. ne prikuplja hardverske podatke."
+      "disclosure": "Postavke i inventari igrača pojavljuju se ovdje kad ih igrači odluče podijeliti. A.C.E ne prikuplja hardverske podatke."
     },
     "player": {
       "level": "RAZ {level} · RP {rating}",
@@ -140,16 +140,16 @@ export const teams: TextBag["teams"] = {
     "monitor": "Frekvencija osvježavanja · nije podijeljeno",
     "headset": "Nije podijeljeno"
   },
-  "profileDisclosure": "A.C.E. ne sprema hardverske inventare i ne pokreće anti-cheat klijent. Grafovi trendova izvedbe i borbena matrica zahtijevaju A.C.E. Plus ili Premium sesiju. Poveznica Steam profila upisana na ovoj stranici ne sprema se i nije službeni identifikator.",
+  "profileDisclosure": "A.C.E ne sprema hardverske inventare i ne pokreće anti-cheat klijent. Grafovi trendova izvedbe i borbena matrica zahtijevaju A.C.E Plus ili Premium sesiju. Poveznica Steam profila upisana na ovoj stranici ne sprema se i nije službeni identifikator.",
   "errors": {
     "signInRequired": "Potrebna je prijava.",
     "nameLength": "Ime tima mora imati između 2 i 32 znaka.",
     "alreadyCaptain": "Ovaj račun već je kapetan tima.",
     "nameTaken": "Tim s tim imenom već postoji.",
-    "idRequired": "Potreban je SteamID ili A.C.E. ID računa.",
-    "noAccountForToken": "Za taj SteamID ili ID računa ne postoji A.C.E. račun.",
+    "idRequired": "Potreban je SteamID ili A.C.E ID računa.",
+    "noAccountForToken": "Za taj SteamID ili ID računa ne postoji A.C.E račun.",
     "clanNeedsFour": "Klan od pet igrača treba prijavljenog kapetana i četiri SteamID-a.",
-    "seatNeedsId": "Svako od četiri mjesta treba SteamID ili A.C.E. ID računa.",
+    "seatNeedsId": "Svako od četiri mjesta treba SteamID ili A.C.E ID računa.",
     "seatsDistinct": "Svako mjesto treba drugog igrača.",
     "captainHoldsSeat": "Kapetan već drži mjesto 1. Koristi četiri druga igrača.",
     "fewerThanFour": "Ti ID-jevi pripadaju manje od četiri računa.",
@@ -157,7 +157,7 @@ export const teams: TextBag["teams"] = {
     "captainOnly": "Samo imenovani kapetan može slati pozivnice.",
     "rosterLimit": "CS2 postava ima pet igrača uključujući kapetana.",
     "alreadyOnRoster": "Taj igrač je već u postavi.",
-    "noAccountForId": "Za taj ID ne postoji A.C.E. račun.",
+    "noAccountForId": "Za taj ID ne postoji A.C.E račun.",
     "inviteNotFound": "Pozivnica nije pronađena.",
     "inviteNotPending": "Ova pozivnica više nije na čekanju.",
     "rosterFull": "Postava je već puna.",

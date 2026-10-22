@@ -1,4 +1,4 @@
-/** Competitive map pool shown on /maps. Plates in /public/images are original A.C.E. art. */
+/** Competitive map pool shown on /maps. Plates in /public/images are original A.C.E art. */
 export const MAP_POOL = [
   { slug: "dust", name: "Dust II", src: "/images/map-dust.jpg" },
   { slug: "mirage", name: "Mirage", src: "/images/map-mirage.jpg" },

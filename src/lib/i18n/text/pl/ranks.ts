@@ -62,7 +62,7 @@ export const ranks: TextBag["ranks"] = {
     "kicker": "RANGI PREMIUM",
     "plan": "A.C.E PREMIUM · tylko 7 $/mies.",
     "title": "Grafika rang Premium",
-    "lede": "Oryginalny ilustrowany zestaw rang A.C.E.: dziesięć kryształowych emblematów z dywizjami III/II/I, protokół ratingu, karta szczegółów Legend i przeglądarka 3D obracana przeciąganiem. To grafika profilu dla członków Premium. Odczytuje tę samą drabinkę Rating Points co rangi standardowe i nie daje żadnej przewagi rywalizacyjnej.",
+    "lede": "Oryginalny ilustrowany zestaw rang A.C.E: dziesięć kryształowych emblematów z dywizjami III/II/I, protokół ratingu, karta szczegółów Legend i przeglądarka 3D obracana przeciąganiem. To grafika profilu dla członków Premium. Odczytuje tę samą drabinkę Rating Points co rangi standardowe i nie daje żadnej przewagi rywalizacyjnej.",
     "demo": "Wartości demonstracyjne: postęp, odsetek wygranych i dywizje na tej tablicy to przykłady, nie statystyki na żywo. Po zalogowaniu pokazany rating to twój zapisany rating.",
     "locked": "Wkrótce: płatności jeszcze nie istnieją, więc dziś żadne konto nie jest Premium. Serwer nakłada grafikę rang Premium na profil tylko wtedy, gdy jego zapisany plan to Premium.",
     "standardKicker": "RANGI STANDARDOWE",
@@ -77,12 +77,12 @@ export const ranks: TextBag["ranks"] = {
   },
   "meta": {
     "title": "Rangi turniejowe",
-    "description": "Dziesięć rang A.C.E., od Iron Recruit do A.C.E. Legend, z dywizjami i progami rankingu."
+    "description": "Dziesięć rang A.C.E, od Iron Recruit do A.C.E Legend, z dywizjami i progami rankingu."
   },
   "hero": {
     "kicker": "KALIBRACJA",
     "title": "Rangi turniejowe",
-    "lede": "Dziesięć poziomów od Recruit do A.C.E. Legend, każdy z dywizjami {divisions}. Przeciągnij lub użyj strzałek, aby obrócić emblemat. Po zalogowaniu widzisz swój ranking, w przeciwnym razie próg każdego poziomu."
+    "lede": "Dziesięć poziomów od Recruit do A.C.E Legend, każdy z dywizjami {divisions}. Przeciągnij lub użyj strzałek, aby obrócić emblemat. Po zalogowaniu widzisz swój ranking, w przeciwnym razie próg każdego poziomu."
   },
   "codexLink": "Otwórz Kodeks kalibracji",
   "document": {
@@ -134,9 +134,9 @@ export const ranks: TextBag["ranks"] = {
     }
   },
   "board": {
-    "selectEmblem": "Wybierz emblemat rangi A.C.E. {name}, poziom {level}",
-    "emblemAlt": "Autorska kryształowa odznaka profilu A.C.E. 3D: emblemat {name} {crystal}, poziom {level}",
-    "emblemAltLegend": "Autorska kryształowa odznaka profilu A.C.E. 3D: emblemat poziomu {level}",
+    "selectEmblem": "Wybierz emblemat rangi A.C.E {name}, poziom {level}",
+    "emblemAlt": "Autorska kryształowa odznaka profilu A.C.E 3D: emblemat {name} {crystal}, poziom {level}",
+    "emblemAltLegend": "Autorska kryształowa odznaka profilu A.C.E 3D: emblemat poziomu {level}",
     "premium": "NAJWYŻSZY POZIOM"
   },
   "division": {

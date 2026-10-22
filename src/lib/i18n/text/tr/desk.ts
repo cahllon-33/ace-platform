@@ -45,13 +45,13 @@ export const desk: TextBag["desk"] = {
   "support": {
     "meta": {
       "title": "Destek",
-      "description": "A.C.E. yardım merkezi. Hile karşıtı, dereceli ve ödeme masaları rekabetçi beta ile açılır."
+      "description": "A.C.E yardım merkezi. Hile karşıtı, dereceli ve ödeme masaları rekabetçi beta ile açılır."
     }
   },
   "contact": {
     "meta": {
       "title": "İletişim",
-      "description": "A.C.E. ile iletişime geçin. Çevrimiçi form yakında açılıyor."
+      "description": "A.C.E ile iletişime geçin. Çevrimiçi form yakında açılıyor."
     }
   },
   "contactEmail": {

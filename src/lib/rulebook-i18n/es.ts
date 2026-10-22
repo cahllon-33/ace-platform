@@ -4,18 +4,18 @@ export const RB_ES: RulebookText = {
   "summary16": "Los árbitros eligen la sanción dentro del rango siguiente según la intención, el impacto y la reincidencia. Las infracciones repetidas suben dentro del rango.",
   "clauses": [
     [
-      "Este reglamento rige todas las competiciones que organiza A.C.E.: copas, ligas, escalafones y partidas de exhibición. La página de un evento puede añadir condiciones propias; si contradice este reglamento, prevalece la página del evento solo para ese evento.",
-      "«Organizador» es el equipo de operaciones de A.C.E. «Árbitro» es un miembro del organizador asignado a un evento. «Equipo» es una plantilla registrada. «Capitán» es el jugador que representa al equipo. «Partida» es uno o varios mapas entre dos equipos. «Serie» es un conjunto de mapas al mejor de uno, de tres o de cinco.",
+      "Este reglamento rige todas las competiciones que organiza A.C.E: copas, ligas, escalafones y partidas de exhibición. La página de un evento puede añadir condiciones propias; si contradice este reglamento, prevalece la página del evento solo para ese evento.",
+      "«Organizador» es el equipo de operaciones de A.C.E «Árbitro» es un miembro del organizador asignado a un evento. «Equipo» es una plantilla registrada. «Capitán» es el jugador que representa al equipo. «Partida» es uno o varios mapas entre dos equipos. «Serie» es un conjunto de mapas al mejor de uno, de tres o de cinco.",
       "Al inscribirse, cada jugador y cada equipo aceptan este reglamento, los Términos de servicio y la Política de privacidad.",
       "Los árbitros pueden resolver situaciones que este reglamento no contempla, guiándose por el juego limpio y el espíritu de estas normas. Esas decisiones se registran y se publican junto con el resultado de la partida."
     ],
     [
-      "Los jugadores no pueden estar bajo una suspensión activa de A.C.E. ni tener en la cuenta de Steam que usan un bloqueo de juego emitido en los últimos 2 años.",
+      "Los jugadores no pueden estar bajo una suspensión activa de A.C.E ni tener en la cuenta de Steam que usan un bloqueo de juego emitido en los últimos 2 años.",
       "El personal del organizador y los árbitros no pueden jugar en un evento que administran.",
       "Los límites de región o de clasificación se fijan para cada evento y se publican antes de abrir la inscripción. Un jugador fuera de esos límites no puede jugar, ni siquiera como suplente."
     ],
     [
-      "Cada jugador usa una cuenta de A.C.E. vinculada a una sola cuenta de Steam mediante el inicio de sesión de Steam. A.C.E. nunca pide la contraseña de Steam; quien la pida no es el organizador.",
+      "Cada jugador usa una cuenta de A.C.E vinculada a una sola cuenta de Steam mediante el inicio de sesión de Steam. A.C.E nunca pide la contraseña de Steam; quien la pida no es el organizador.",
       "Está prohibido compartir una cuenta, jugar en la cuenta de otra persona o dejar que otra persona juegue en la tuya. Se sanciona a ambas cuentas.",
       "Crear una cuenta nueva para eludir una sanción, una clasificación o una restricción es evasión de sanción y se trata como infracción de integridad (sección 14).",
       "Los nombres visibles y los avatares deben cumplir las normas de conducta (sección 13). Los árbitros pueden exigir un cambio antes de una partida.",
@@ -89,8 +89,8 @@ export const RB_ES: RulebookText = {
       "Están prohibidos el ghosting (recibir información de espectadores o retransmisiones), el stream sniping, jugar en la cuenta de otra persona y la evasión de sanciones.",
       "Están prohibidos el amaño de partidas, perder a propósito y apostar en cualquier partida en la que participe tu equipo o en tu evento.",
       "Está prohibido usar un fallo del mapa o del juego que el árbitro haya declarado prohibido o que rompa claramente las mecánicas previstas del juego.",
-      "Los jugadores deben ejecutar el cliente antitrampas de A.C.E. durante toda la partida cuando el evento lo exija.",
-      "Los admins pueden pedir demos o grabaciones de pantalla para revisarlas. Los datos de hardware solo se pedirán cuando exista el cliente antitrampas de A.C.E. y la Política de privacidad los describa. Negarse a una solicitud razonable sin motivo válido puede tenerse en cuenta en la decisión.",
+      "Los jugadores deben ejecutar el cliente antitrampas de A.C.E durante toda la partida cuando el evento lo exija.",
+      "Los admins pueden pedir demos o grabaciones de pantalla para revisarlas. Los datos de hardware solo se pedirán cuando exista el cliente antitrampas de A.C.E y la Política de privacidad los describa. Negarse a una solicitud razonable sin motivo válido puede tenerse en cuenta en la decisión.",
       "Cualquier persona puede denunciar en privado al organizador una posible infracción. Las acusaciones públicas sin denuncia son una infracción de conducta."
     ],
     [
@@ -105,7 +105,7 @@ export const RB_ES: RulebookText = {
       "Los bloqueos se aplican a la persona y a todas las cuentas que controla."
     ],
     [
-      "A.C.E. tiene derecho a retransmitir cualquier partida que organice. Los equipos no pueden negarse a una retransmisión.",
+      "A.C.E tiene derecho a retransmitir cualquier partida que organice. Los equipos no pueden negarse a una retransmisión.",
       "Los jugadores solo pueden retransmitir sus propias partidas con un retraso mínimo de 2 minutos y solo si la página del evento lo permite. Las retransmisiones oficiales usan el retraso fijado por el organizador.",
       "Los jugadores no pueden ver ninguna retransmisión en directo de su propia partida mientras se juega.",
       "Las partidas programadas para retransmisión pueden moverse hasta 2 horas con 24 horas de aviso. Los equipos deben estar disponibles en el nuevo horario o pedir una decisión del árbitro.",

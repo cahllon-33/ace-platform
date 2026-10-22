@@ -3,7 +3,7 @@ import type { MessageBag } from "./en";
 export const SV: MessageBag = {
  slogan: "SPELA. TÄVLA. BLI ELIT.",
  kicker: "CS2 ELITPLATTFORM FÖR TÄVLING",
- lede: "A.C.E. är en tävlingssajt för Counter-Strike 2. Inloggning använder Steam OpenID. Anticheat, matchservrar och prisutbetalningar körs inte här.",
+ lede: "A.C.E är en tävlingssajt för Counter-Strike 2. Inloggning använder Steam OpenID. Anticheat, matchservrar och prisutbetalningar körs inte här.",
  playNow: "SPELA NU",
  signInSteam: "Logga in via STEAM",
  connectProfile: "Anslut profil",
@@ -15,13 +15,13 @@ export const SV: MessageBag = {
  registeredTeams: "Registrerade lag: 0/100",
  registered: "Registrerade",
  teams: "Lag",
- ranksTitle: "A.C.E.-ranker",
+ ranksTitle: "A.C.E-ranker",
  championshipLoot: "Mästerskapsbytessystem",
  calibrationStatus: "Status för rankkalibrering",
  navTournaments: "TURNERINGAR",
  brandSubline: "AUTONOMT ANTI-CHEAT • TÄVLINGSKALIBRERING • ELITSPELARE",
  languagesKicker: "Språk",
- step1: "Skapa ett konto med officiell Steam OpenID. A.C.E. ber aldrig om ett Steam-lösenord.",
+ step1: "Skapa ett konto med officiell Steam OpenID. A.C.E ber aldrig om ett Steam-lösenord.",
  step2: "Identitetsverifiering kommer med A.C.E Shield.",
  step3: "Bygg ett 5v5-lag från kommandodäcket efter en verifierad session.",
  step4: "Hitta giltiga tävlingar. Rankad HITTA MATCH förblir stängd.",
@@ -31,7 +31,7 @@ export const SV: MessageBag = {
  kd: "K/D",
  statsEmpty:
  "Din statistik visas här efter dina första registrerade matcher.",
- statsLive: "Vinster och förluster från A.C.E.-kontot. K/D lagras inte ännu.",
+ statsLive: "Vinster och förluster från A.C.E-kontot. K/D lagras inte ännu.",
  membership: "MEDLEMSKAP",
  membershipLede: "Gratis $0. Plus $4/mån. Premium $7/mån. Betalda planer köper aldrig rating, lättare motståndare eller förtur i kön. Betalningen öppnar snart.",
  graphite: "GRAFIT",
@@ -84,13 +84,13 @@ export const SV: MessageBag = {
  cookiePolicy: "Kakpolicy",
  support: "Support",
  contact: "Kontakt",
- supportKicker: "A.C.E. SUPPORT · HJÄLPCENTER",
+ supportKicker: "A.C.E SUPPORT · HJÄLPCENTER",
  supportTitle: "Tekniskt supporthubb",
  supportLede:
  "Kunskapscenter för installation, kalibrering och medlemskap. Anti-cheat, rankade köer och betalning kommer snart.",
  supportCat1Title: "Installation av kärn-anti-cheat",
  supportCat1Body:
- "Uppmaningar om drivrutinsinstallation, hårdvaruefterlevnad och telemetrijusteringar för säker start dokumenteras här som framtida kärnpolicy. A.C.E. levererar inte en fungerande anti-cheat-klient, installerar inte drivrutiner och samlar inte in data om säker start eller HWID på den här webbplatsen.",
+ "Uppmaningar om drivrutinsinstallation, hårdvaruefterlevnad och telemetrijusteringar för säker start dokumenteras här som framtida kärnpolicy. A.C.E levererar inte en fungerande anti-cheat-klient, installerar inte drivrutiner och samlar inte in data om säker start eller HWID på den här webbplatsen.",
  supportCat2Title: "Matchning och kalibrering",
  supportCat2Body:
  "Tio placeringsmatcher, beräkningshastighet för division och säsongsvis omkalibrering av ranking är den planerade kalibreringsberättelsen. Rankad HITTA MATCH förblir stängd vid fel tills en verifierad anti-cheat-väg finns. Siffrorna på den här sidan är inte live-matchresultat.",
@@ -103,7 +103,7 @@ export const SV: MessageBag = {
  "Ärendesupport öppnar med tävlingsbetan. Tills vidare når du oss via kontaktsidan.",
  supportDisclosure:
  "Livesupport för anti-cheat, matchning och betalning öppnar med tävlingsbetan.",
- contactKicker: "A.C.E. KONTAKT · FÖRETAGSTERMINAL",
+ contactKicker: "A.C.E KONTAKT · FÖRETAGSTERMINAL",
  contactTitle: "Företagets kontaktterminal",
  contactLede:
  "Förfrågningar om sponsring, media, teknik och allmänna frågor. Meddelanden som skrivs här skickas inte och lagras inte som telemetri.",
@@ -120,17 +120,17 @@ export const SV: MessageBag = {
  "Jag samtycker uttryckligen till parametrarna för dataminimering i A.C.E:s integritetspolicy.",
  contactSend: "SKICKA SÄKERT TELEMETRIMEDDELANDE",
  contactCorporate:
- "A.C.E. | Säker e-postgateway: support@ace-platform.gg",
+ "A.C.E | Säker e-postgateway: support@ace-platform.gg",
  contactModalTitle: "Kontaktformulär online · snart",
  contactModalBody:
- "Meddelanden från det här formuläret levereras inte ännu. Formuläret öppnar tillsammans med vår support. A.C.E. ber aldrig om ditt Steam-lösenord.",
+ "Meddelanden från det här formuläret levereras inte ännu. Formuläret öppnar tillsammans med vår support. A.C.E ber aldrig om ditt Steam-lösenord.",
  contactDisclosure:
- "Kontaktformuläret online öppnar snart. A.C.E. ber aldrig om ditt Steam-lösenord.",
+ "Kontaktformuläret online öppnar snart. A.C.E ber aldrig om ditt Steam-lösenord.",
  closeOverlay: "Stäng",
  loadingAce: "Laddar A.C.E...",
  supportCategory: "KATEGORI {n}",
- shopKicker: "A.C.E.-BUTIK · SNART",
- shopTitle: "A.C.E. MARKNAD — ELITANPASSNING AV VAPEN",
+ shopKicker: "A.C.E-BUTIK · SNART",
+ shopTitle: "A.C.E MARKNAD — ELITANPASSNING AV VAPEN",
  shopLede:
  "Utrusta ditt förråd med verifierade högklassiga skinn, egna profilelement och verktyg för ligaåtkomst.",
  shopNote:
@@ -164,8 +164,8 @@ export const SV: MessageBag = {
  "Vinstprocent och sviter fylls i från registrerade matcher.",
  squadInviteLabel: "BJUD IN FRI AGENT VIA STEAMID",
  squadInviteNote:
- "Endast officiell Steam OpenID. Klistra in ett SteamID som redan är kopplat till ett A.C.E.-konto. Ange aldrig ett Steam-lösenord.",
- squadInvitePlaceholder: "SteamID64 eller A.C.E.-konto-ID",
+ "Endast officiell Steam OpenID. Klistra in ett SteamID som redan är kopplat till ett A.C.E-konto. Ange aldrig ett Steam-lösenord.",
+ squadInvitePlaceholder: "SteamID64 eller A.C.E-konto-ID",
  squadSend: "SKICKA SÄKER INBJUDAN >",
  squadCaptainOnly: "Bara den utsedda kaptenen får skicka inbjudningar.",
  squadInviteFailed: "Inbjudan misslyckades.",
@@ -181,10 +181,10 @@ export const SV: MessageBag = {
  tourneyStatusValue: "Inte öppen · endast demonstration",
  tourneyLoading: "Laddar slutspelsträd…",
  platformNoticeTitle: "PLATTFORMENS MEDDELANDE",
- platformNoticeBody: "Turneringsträd, topplistor och skinnkort på den här webbplatsen är exempel. De är inte Valve-föremål och inte betalda priser. Webbplatsen kör inget anti-fuskprogram. Att öppna webbplatsen upphäver ingen juridisk rättighet och skriver inte under ett avtal. A.C.E. samlar inte in en hårdvaruidentifierare och raderar inte ett konto för att någon kontaktar en jurist eller en domstol.",
+ platformNoticeBody: "Turneringsträd, topplistor och skinnkort på den här webbplatsen är exempel. De är inte Valve-föremål och inte betalda priser. Webbplatsen kör inget anti-fuskprogram. Att öppna webbplatsen upphäver ingen juridisk rättighet och skriver inte under ett avtal. A.C.E samlar inte in en hårdvaruidentifierare och raderar inte ett konto för att någon kontaktar en jurist eller en domstol.",
   copyrightLine: "© 2026 A.C.E. Inte ansluten till Valve.",
   copyrightClaim:
-    "Originaltext, layout, emblem och grafik på den här webbplatsen tillhör A.C.E. Kopiering utan skriftligt tillstånd är inte tillåten. A.C.E. kan hävda den rätten. Counter-Strike 2 och kartnamnen tillhör Valve.",
+    "Originaltext, layout, emblem och grafik på den här webbplatsen tillhör A.C.E. Kopiering utan skriftligt tillstånd är inte tillåten. A.C.E kan hävda den rätten. Counter-Strike 2 och kartnamnen tillhör Valve.",
  shieldServerValue: "Snart",
  tvGames: "Matchtelevision",
  pathsKicker: "FEM VÄGAR PÅ DEN HÄR WEBBPLATSEN",
@@ -193,7 +193,7 @@ export const SV: MessageBag = {
  statusWrittenRule: "SKRIVEN REGEL",
  statusTeamLayout: "FÄLT MED 100 LAG",
  statusPublicSite: "OFFENTLIG WEBBPLATS",
- rankProtocolTitle: "A.C.E. BETYGSPROTOKOLL",
+ rankProtocolTitle: "A.C.E BETYGSPROTOKOLL",
  rankProtocolBody: "Den skrivna regeln jämför en spelare med det andra lagets genomsnittliga rating. Mot ett jämnt lag ger en registrerad vinst +20 RP och en förlust −20 RP, alltid inom 10 till 30 RP per match, och de 10 nivåerna och 3 divisionerna läses av från den siffran. Den här sidan godkänner ingen match, så ingen ratingändring tillämpas här.",
  rankProgress: "Rankframsteg",
  competitiveRating: "Tävlingsbetyg",

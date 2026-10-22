@@ -44,7 +44,7 @@ export const play: TextBag["play"] = {
           "Solo, ikili veya üçlü",
           "{points} derece puanlık planlanan aralık",
           "Bir Steam profili önceden kaydedilmiş olmalı",
-          "A.C.E. derece kuralını kullanır · arama yakında"
+          "A.C.E derece kuralını kullanır · arama yakında"
         ]
       },
       "elite": {

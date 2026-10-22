@@ -62,7 +62,7 @@ export const ranks: TextBag["ranks"] = {
     "kicker": "프리미엄 랭크",
     "plan": "A.C.E PREMIUM · 월 $7 전용",
     "title": "프리미엄 랭크 아트",
-    "lede": "오리지널 일러스트 A.C.E. 랭크 세트: III/II/I 디비전이 있는 크리스탈 엠블럼 10개, 레이팅 프로토콜, Legend 상세 카드, 드래그로 회전하는 3D 뷰어. Premium 회원을 위한 프로필 아트입니다. 표준 랭크와 같은 Rating Points 래더를 읽으며 어떤 경쟁상의 이점도 주지 않습니다.",
+    "lede": "오리지널 일러스트 A.C.E 랭크 세트: III/II/I 디비전이 있는 크리스탈 엠블럼 10개, 레이팅 프로토콜, Legend 상세 카드, 드래그로 회전하는 3D 뷰어. Premium 회원을 위한 프로필 아트입니다. 표준 랭크와 같은 Rating Points 래더를 읽으며 어떤 경쟁상의 이점도 주지 않습니다.",
     "demo": "데모 값: 이 보드의 진행도, 승률, 디비전 수치는 예시이며 실시간 통계가 아닙니다. 로그인하면 표시되는 레이팅은 저장된 레이팅입니다.",
     "locked": "곧 제공: 결제가 아직 없어 현재 Premium 계정은 없습니다. 서버는 저장된 플랜이 Premium인 프로필에만 프리미엄 랭크 아트를 적용합니다.",
     "standardKicker": "표준 랭크",
@@ -77,12 +77,12 @@ export const ranks: TextBag["ranks"] = {
   },
   "meta": {
     "title": "경쟁 랭크",
-    "description": "Iron Recruit부터 A.C.E. Legend까지, 디비전과 레이팅 하한이 있는 A.C.E.의 10개 등급."
+    "description": "Iron Recruit부터 A.C.E Legend까지, 디비전과 레이팅 하한이 있는 A.C.E의 10개 등급."
   },
   "hero": {
     "kicker": "캘리브레이션",
     "title": "경쟁 랭크",
-    "lede": "Recruit부터 A.C.E. Legend까지 10개 등급, 각 등급은 디비전 {divisions}을(를) 가집니다. 드래그하거나 화살표 키로 엠블럼을 회전하세요. 로그인하면 내 레이팅이, 아니면 각 등급의 하한이 표시됩니다."
+    "lede": "Recruit부터 A.C.E Legend까지 10개 등급, 각 등급은 디비전 {divisions}을(를) 가집니다. 드래그하거나 화살표 키로 엠블럼을 회전하세요. 로그인하면 내 레이팅이, 아니면 각 등급의 하한이 표시됩니다."
   },
   "codexLink": "캘리브레이션 코덱스 열기",
   "document": {
@@ -134,9 +134,9 @@ export const ranks: TextBag["ranks"] = {
     }
   },
   "board": {
-    "selectEmblem": "A.C.E. {name} 랭크 엠블럼 선택, 레벨 {level}",
-    "emblemAlt": "A.C.E. 커스텀 3D 크리스털 레벨 {level} {crystal} {name} 엠블럼 프로필 배지",
-    "emblemAltLegend": "A.C.E. 커스텀 3D 크리스털 레벨 {level} 엠블럼 프로필 배지",
+    "selectEmblem": "A.C.E {name} 랭크 엠블럼 선택, 레벨 {level}",
+    "emblemAlt": "A.C.E 커스텀 3D 크리스털 레벨 {level} {crystal} {name} 엠블럼 프로필 배지",
+    "emblemAltLegend": "A.C.E 커스텀 3D 크리스털 레벨 {level} 엠블럼 프로필 배지",
     "premium": "최상위 등급"
   },
   "division": {

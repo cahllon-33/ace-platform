@@ -6,14 +6,14 @@ export const home: TextBag["home"] = {
     "online": "当前在线",
     "registered": "注册玩家",
     "earlyTitle": "抢先体验",
-    "earlyBody": "成为 A.C.E. 的首批玩家。社区壮大后，实时数据将显示在这里。",
+    "earlyBody": "成为 A.C.E 的首批玩家。社区壮大后，实时数据将显示在这里。",
     "unavailable": "实时数据暂时不可用。",
     "note": "真实数据，每 30 秒刷新一次。"
   },
   "ops": {
     "identityKicker": "身份中心",
     "signedOutTitle": "使用 Steam 登录",
-    "signedOutBody": "通过官方 Steam OpenID 连接，即可在此查看你的 Steam 头像、段位徽章和 Rating Points。A.C.E. 从不索要 Steam 密码。",
+    "signedOutBody": "通过官方 Steam OpenID 连接，即可在此查看你的 Steam 头像、段位徽章和 Rating Points。A.C.E 从不索要 Steam 密码。",
     "connect": "使用 Steam 登录",
     "openDeck": "打开 Command Deck",
     "avatarAlt": "{name} 的 Steam 头像",
@@ -25,7 +25,7 @@ export const home: TextBag["home"] = {
     "matches": "比赛",
     "kd": "K/D",
     "na": "n/a",
-    "kdNote": "由于 A.C.E. 尚未记录击杀和死亡，K/D 显示为 n/a。",
+    "kdNote": "由于 A.C.E 尚未记录击杀和死亡，K/D 显示为 n/a。",
     "shieldKicker": "A.C.E SHIELD",
     "shieldChip": "开发中",
     "shieldTitle": "完整性状态",
@@ -43,22 +43,22 @@ export const home: TextBag["home"] = {
     "seasonBody": "第 1 赛季尚无开始或结束日期，因此没有倒计时。日期将在赛季开放前于本站公布。",
     "statsKicker": "你的数据",
     "statsSignedOut": "使用 Steam 登录以查看你的数据。",
-    "statsEmpty": "尚无已记录的比赛。你的第一场 A.C.E. 比赛被记录后将显示胜负。",
-    "statsLive": "胜负来自你保存的 A.C.E. 账号。",
+    "statsEmpty": "尚无已记录的比赛。你的第一场 A.C.E 比赛被记录后将显示胜负。",
+    "statsLive": "胜负来自你保存的 A.C.E 账号。",
     "statsLink": "打开玩家数据"
   },
   "meta": {
-    "title": "A.C.E. — CS2 竞技平台",
-    "description": "A.C.E. 是一个规划中的《反恐精英 2》竞技平台,涵盖玩家身份、定级、战队和锦标赛。本公开网站为预览版。排位匹配、反作弊、支付和奖品均未启用。"
+    "title": "A.C.E — CS2 竞技平台",
+    "description": "A.C.E 是一个规划中的《反恐精英 2》竞技平台,涵盖玩家身份、定级、战队和锦标赛。本公开网站为预览版。排位匹配、反作弊、支付和奖品均未启用。"
   },
   "opening": {
-    "dialogLabel": "A.C.E. 开场",
+    "dialogLabel": "A.C.E 开场",
     "line": "A.C.E:自主反作弊、竞技定级、精英玩家",
     "enter": "进入网站"
   },
   "hero": {
-    "logoAlt": "A.C.E. 自主反作弊、竞技定级、精英玩家",
-    "arenaAlt": "A.C.E. 竞技场图。原创舞台图片,并非 Valve 美术。屏幕标注为游戏电视。目前没有直播。"
+    "logoAlt": "A.C.E 自主反作弊、竞技定级、精英玩家",
+    "arenaAlt": "A.C.E 竞技场图。原创舞台图片,并非 Valve 美术。屏幕标注为游戏电视。目前没有直播。"
   },
   "broadcast": {
     "kicker": "赛事观看",
@@ -77,7 +77,7 @@ export const home: TextBag["home"] = {
   },
   "charter": {
     "kicker": "主大厅工作区",
-    "title": "A.C.E. 竞技匹配大厅与调度中心",
+    "title": "A.C.E 竞技匹配大厅与调度中心",
     "badge": "服务器 · 即将推出",
     "lede": "此大厅不会分配服务器、启动反作弊客户端或发放奖品。",
     "modules": [
@@ -91,7 +91,7 @@ export const home: TextBag["home"] = {
       },
       {
         "kicker": "固定 3D 段位",
-        "copy": "从 Recruit 到 A.C.E. Legend 共十个段位。使用 Steam 登录后显示已保存的评分。本页面不会计入比赛结果。",
+        "copy": "从 Recruit 到 A.C.E Legend 共十个段位。使用 Steam 登录后显示已保存的评分。本页面不会计入比赛结果。",
         "chips": [
           "评分规则已存档",
           "本页面的旋转展台"
@@ -134,13 +134,13 @@ export const home: TextBag["home"] = {
     "lines": [
       "A.C.E SHIELD:开发中",
       "硬件封禁矩阵:不收集任何标识符",
-      "A.C.E. SHIELD 连接:未安装客户端"
+      "A.C.E SHIELD 连接:未安装客户端"
     ],
     "note": "本网站不运行内核客户端,不扫描内存,也不实施硬件封禁。"
   },
   "comingSoon": {
     "badge": "不可用",
-    "body": "A.C.E. 桌面客户端不提供下载。本网站的第 1 赛季不会安装软件或开启签到。"
+    "body": "A.C.E 桌面客户端不提供下载。本网站的第 1 赛季不会安装软件或开启签到。"
   },
   "operative": {
     "kicker": "电影感战术视角 · 原创 CSS 场景 · 非 Valve 美术",
@@ -149,7 +149,7 @@ export const home: TextBag["home"] = {
     "note": "宣传文案。排位队列、在线服务器和奖品均未启用。"
   },
   "howStatus": {
-    "label": "A.C.E. 注册子系统 — 定级引擎就绪",
+    "label": "A.C.E 注册子系统 — 定级引擎就绪",
     "note": "A.C.E Shield 和定级上线后,排位队列将开放。"
   },
   "shell": {
@@ -161,13 +161,13 @@ export const home: TextBag["home"] = {
     "connectProfileTitle": "绑定个人资料",
     "openProfileAria": "打开指挥台个人资料",
     "connectProfileAria": "通过 Steam OpenID 绑定个人资料",
-    "signOutAria": "退出 A.C.E."
+    "signOutAria": "退出 A.C.E"
   },
   "notFound": {
     "kicker": "网格异常",
     "title": "错误 404 — 雷达遥测丢失",
     "body": "你请求的坐标不在我们的活动服务器网格中。",
-    "homeAria": "返回 A.C.E. 首页大厅",
+    "homeAria": "返回 A.C.E 首页大厅",
     "cta": "返回大厅"
   },
   "error": {

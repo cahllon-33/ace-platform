@@ -3,7 +3,7 @@ import type { TextBag } from "../types";
 export const codex: TextBag["codex"] = {
   "meta": {
     "title": "キャリブレーション・コーデックス",
-    "description": "A.C.E. のランク解説。各質問を開くと、レーティングポイントとそのランクの規定について詳しい回答が表示されます。コーデックスで試合結果が反映されることはありません。",
+    "description": "A.C.E のランク解説。各質問を開くと、レーティングポイントとそのランクの規定について詳しい回答が表示されます。コーデックスで試合結果が反映されることはありません。",
     "articleTitle": "{title} — キャリブレーション・コーデックス"
   },
   "groups": {
@@ -31,7 +31,7 @@ export const codex: TextBag["codex"] = {
     "searchLabel": "コーデックスを検索",
     "searchPlaceholder": "例:1950、Recruit、引き分け",
     "empty": "検索に一致する項目はありません。",
-    "columnLabel": "A.C.E. コラム {n}",
+    "columnLabel": "A.C.E コラム {n}",
     "pagerLabel": "コーデックスのページ",
     "first": "最初",
     "previous": "前へ",
@@ -40,7 +40,7 @@ export const codex: TextBag["codex"] = {
     "pageOf": "{n} / {m} ページ"
   },
   "article": {
-    "breadcrumb": "A.C.E. · キャリブレーション・コーデックス",
+    "breadcrumb": "A.C.E · キャリブレーション・コーデックス",
     "status": "このページは成文化されたラダーを解説するものです。試合結果を反映したり、保存済みのレーティングを変更したりすることはありません。",
     "emblemAlt": "{name} エンブレム、ランク {level}",
     "emblemCaption": "ランク {level} · {name} · {crystal}",
@@ -63,7 +63,7 @@ export const codex: TextBag["codex"] = {
     "turnLabel": "コーデックスを続けて読む",
     "previous": "前へ",
     "next": "次へ",
-    "alsoIn": "A.C.E. のその他のページ",
+    "alsoIn": "A.C.E のその他のページ",
     "backToBoard": "ランクボードに戻る"
   },
   "rankArticle": {
@@ -124,20 +124,20 @@ export const codex: TextBag["codex"] = {
       "detail": "帯域は 1,800〜1,949 で、幅は100ではなく150ポイントです。1,949 はまだ Sovereign です。Legend は 1,950 から始まります。"
     },
     "rank-10-a-c-e-legend": {
-      "stance": "A.C.E. Legend は最後のマークです。クリスタル名は ACE ELITE、正式名は A.C.E. Legend です。",
+      "stance": "A.C.E Legend は最後のマークです。クリスタル名は ACE ELITE、正式名は A.C.E Legend です。",
       "detail": "帯域は 1,950 から始まり、エンジンの上限 3,000 で終わります。11番目のランクはありません。保存済みレーティングが 3,000 を超えることはありません。"
     }
   },
   "articles": {
     "what-a-rank-is": {
-      "title": "A.C.E. のランクとは",
-      "lede": "ランクとは、保存済みのレーティングポイントを含むマークです。Recruit から A.C.E. Legend までの10のマークでラダー全体をカバーします。",
+      "title": "A.C.E のランクとは",
+      "lede": "ランクとは、保存済みのレーティングポイントを含むマークです。Recruit から A.C.E Legend までの10のマークでラダー全体をカバーします。",
       "sections": [
         {
           "heading": "1つの数値、1つのマーク",
           "paragraphs": [
             "アカウントには競技レーティングが保存されます。ラダーはその数値を読み取り、到達済みの下限の中で最も高いランクを返します。2つのランクを同時に持つことはありません。",
-            "Recruit がランク1、A.C.E. Legend がランク10です。正式名はラダー上の名称で、エンブレムに刻まれた短い単語は同じランクのクリスタル名です。",
+            "Recruit がランク1、A.C.E Legend がランク10です。正式名はラダー上の名称で、エンブレムに刻まれた短い単語は同じランクのクリスタル名です。",
             "このコーデックスは成文化されたラダーを解説するものです。試合結果を反映したり、保存済みのレーティングを変更したりすることはありません。"
           ]
         },
@@ -145,7 +145,7 @@ export const codex: TextBag["codex"] = {
           "heading": "下限の配置",
           "paragraphs": [
             "Recruit はラダーの始まりをカバーします。Operative は 1,100 から始まります。Vanguard から Grandmaster までは、下限が100ポイントずつ上がります:1,200、1,300、1,400、1,500、1,600、そして 1,700。",
-            "Sovereign は 1,800 から始まり、1,949 まで続きます。A.C.E. Legend は 1,950 から始まります。エンジンの上限は 3,000 なので、Legend が最も広い帯域です。"
+            "Sovereign は 1,800 から始まり、1,949 まで続きます。A.C.E Legend は 1,950 から始まります。エンジンの上限は 3,000 なので、Legend が最も広い帯域です。"
           ]
         },
         {
@@ -164,14 +164,14 @@ export const codex: TextBag["codex"] = {
         {
           "heading": "2つの名前がある理由",
           "paragraphs": [
-            "エンジンとプロフィールは正式名を使います:Recruit、Operative、Vanguard、Specialist、Veteran、Elite、Master、Grandmaster、Sovereign、A.C.E. Legend。",
+            "エンジンとプロフィールは正式名を使います:Recruit、Operative、Vanguard、Specialist、Veteran、Elite、Master、Grandmaster、Sovereign、A.C.E Legend。",
             "エンブレムにはクリスタル名も刻まれています:IRON、BRONZE、SILVER、GOLD、PLATINUM、DIAMOND、MASTER、GRANDMASTER、IMMORTAL、ACE ELITE。この名前はアートワークであり、11番目のランクを作ることも、2つ目の数値を保存することもありません。"
           ]
         },
         {
           "heading": "名前が異なるランク",
           "paragraphs": [
-            "Specialist のクリスタル名は GOLD、Veteran は PLATINUM、Elite は DIAMOND、Sovereign は IMMORTAL、A.C.E. Legend は ACE ELITE です。いずれの場合も、下限は正式名に属します。",
+            "Specialist のクリスタル名は GOLD、Veteran は PLATINUM、Elite は DIAMOND、Sovereign は IMMORTAL、A.C.E Legend は ACE ELITE です。いずれの場合も、下限は正式名に属します。",
             "Master と Grandmaster は両方で同じ単語を使います。"
           ]
         }
@@ -287,7 +287,7 @@ export const codex: TextBag["codex"] = {
           "heading": "上限と下限",
           "paragraphs": [
             "100 レーティングポイントで負けても 100 のまま、3,000 で勝っても 3,000 のままです。Recruit のラダー下限は 0 と記載されていますが、保存される数値が 100 未満になることはありません。",
-            "1,949 は Sovereign、1,950 は A.C.E. Legend です。中間のマークはありません。"
+            "1,949 は Sovereign、1,950 は A.C.E Legend です。中間のマークはありません。"
           ]
         },
         {
@@ -334,7 +334,7 @@ export const codex: TextBag["codex"] = {
           "heading": "デスクがしないこと",
           "paragraphs": [
             "「マッチを探す」は対戦相手を探さず、レーティングポイントも変更しません。アカウントのランクは引き続き保存済みの数値であり、このコーデックスのラダーで読み取られます。",
-            "Legend より上の特別なキューはありません。A.C.E. Legend が最後のマークで、1,950 レーティングポイントから始まります。"
+            "Legend より上の特別なキューはありません。A.C.E Legend が最後のマークで、1,950 レーティングポイントから始まります。"
           ]
         }
       ]
@@ -440,12 +440,12 @@ export const codex: TextBag["codex"] = {
     },
     "how-a-roster-is-assembled": {
       "title": "ロスターの組み方",
-      "lede": "キャプテンは、既に A.C.E. アカウントを持つプレイヤーを招待します。公開の共有リンクはなく、Steam のパスワードを求められることもありません。",
+      "lede": "キャプテンは、既に A.C.E アカウントを持つプレイヤーを招待します。公開の共有リンクはなく、Steam のパスワードを求められることもありません。",
       "sections": [
         {
           "heading": "実在する招待機能",
           "paragraphs": [
-            "チームページで、サインイン中のキャプテンが SteamID64 または A.C.E. アカウントIDを貼り付けます。そのアカウントは既に Steam OpenID で連携されている必要があります。データベースが受け付けると、サーバーが保留中の招待を書き込みます。",
+            "チームページで、サインイン中のキャプテンが SteamID64 または A.C.E アカウントIDを貼り付けます。そのアカウントは既に Steam OpenID で連携されている必要があります。データベースが受け付けると、サーバーが保留中の招待を書き込みます。",
             "ロスターはキャプテンを含む5人です。キャプテンは自分のアカウントを招待できません。既にロスターにいるプレイヤーは拒否されます。データベースが停止している場合、招待は失敗し、何も保存されません。"
           ]
         },

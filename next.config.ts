@@ -3,6 +3,11 @@ import type { NextConfig } from "next";
 const nextConfig: NextConfig = {
   /* config options here */
   cacheComponents: true,
+  // R49b legal config, inlined at build so server and client agree. Unset email = email lines hidden.
+  env: {
+    ACE_CONTACT_EMAIL: process.env.ACE_CONTACT_EMAIL ?? "",
+    ACE_LEGAL_EFFECTIVE_DATE: process.env.ACE_LEGAL_EFFECTIVE_DATE || new Date().toISOString().slice(0, 10),
+  },
   devIndicators: false,
   poweredByHeader: false,
   async headers() {

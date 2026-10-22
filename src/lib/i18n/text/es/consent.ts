@@ -2,7 +2,7 @@ import type { TextBag } from "../types";
 
 export const consent: TextBag["consent"] = {
   valveDisclaimer:
-    "A.C.E. es un sitio independiente de competición de Counter-Strike 2. No está afiliado, autorizado ni respaldado por Valve Corporation. Steam y Counter-Strike son marcas de sus titulares. El código de competición es texto propio de A.C.E. para ese juego.",
+    "A.C.E es un sitio independiente de competición de Counter-Strike 2. No está afiliado, autorizado ni respaldado por Valve Corporation. Steam y Counter-Strike son marcas de sus titulares. El código de competición es texto propio de A.C.E para ese juego.",
   acceptance: {
     label: "Acepto expresamente los Términos del servicio, el EULA de anticheat y la Política de privacidad.",
     readBefore: "Lee los",

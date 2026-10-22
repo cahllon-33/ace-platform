@@ -4,18 +4,18 @@ export const features: TextBag["features"] = {
   "page": {
     "meta": {
       "title": "Značajke",
-      "description": "Specificirana arhitektura A.C.E. Anti-Cheat jezgre, biometrijsko povezivanje Face Scan i deset razina kalibracije vještine. Ovi sustavi nisu aktivni na ovoj stranici."
+      "description": "Specificirana arhitektura A.C.E Anti-Cheat jezgre, biometrijsko povezivanje Face Scan i deset razina kalibracije vještine. Ovi sustavi nisu aktivni na ovoj stranici."
     },
     "header": {
       "kicker": "ACE-ZNAČAJKE / JEZGRA / FACE-SCAN / KALIBRACIJA",
       "title": "Specifikacija značajki platforme",
-      "lede": "Ova stranica je tehnička karta produkcijske razine za tri planirana A.C.E. sustava: autonomnu anti-cheat jezgru, biometrijsko povezivanje Face Scan i ljestvicu kalibracije vještine s deset razina. Ništa na ovoj stranici nije aktivna jezgra, aktivni proizvod s kamerom ni aktivni ranked red. Steam OpenID, 5v5 timovi, rasporedi kostura i Elo izračun rejtinga postoje u ovom repozitoriju. Namjenski CS2 poslužitelji, plaćanja, nagrade i klijent za integritet koji se može preuzeti ne postoje."
+      "lede": "Ova stranica je tehnička karta produkcijske razine za tri planirana A.C.E sustava: autonomnu anti-cheat jezgru, biometrijsko povezivanje Face Scan i ljestvicu kalibracije vještine s deset razina. Ništa na ovoj stranici nije aktivna jezgra, aktivni proizvod s kamerom ni aktivni ranked red. Steam OpenID, 5v5 timovi, rasporedi kostura i Elo izračun rejtinga postoje u ovom repozitoriju. Namjenski CS2 poslužitelji, plaćanja, nagrade i klijent za integritet koji se može preuzeti ne postoje."
     },
     "kernel": {
       "title": "Arhitektura Anti-Cheat jezgre",
       "paragraphs": [
         "Specificirani Autonomous Secure Shell je klijent za integritet vezan uz hardver koji bi radio uz Counter-Strike 2 na računalu igrača i prijavljivao potpisano stanje ALLOW ili DENY poslužiteljima kojima upravlja A.C.E. Dizajn jezgre je fail-closed: ako klijent nedostaje, zaustavljen je, zastario, krivotvoren ili neprovjeren, ranked pristup se odbija. Preglednik nikad ne odlučuje o podobnosti. Ranked PRONAĐI MEČ na ovoj stranici već je zatvoren iz tog razloga.",
-        "Planirani slojevi jezgre uključuju rukovanje u korisničkom načinu koje veže provjereni 64-bitni SteamID uz A.C.E. račun, površinu za atestaciju hardverskog identifikatora (HWID), popis praćenja potpisa poznatih obitelji varanja i rutu podobnosti poslužitelj–poslužitelj zaštićenu zajedničkom tajnom. Potvrda potpisa varanja, odbijena provjera integriteta ili krivotvoreni identifikator uređaja specificirani su da odmah promijene status računa u BANNED ili PERM_BANNED te, kad postoji proizvod naplate, potpuni gubitak unaprijed plaćenog vremena pretplate bez obveze povrata. Takav klijent ne isporučuje se s ovom stranicom. Kartice preuzimanja Uskoro samo su raspored."
+        "Planirani slojevi jezgre uključuju rukovanje u korisničkom načinu koje veže provjereni 64-bitni SteamID uz A.C.E račun, površinu za atestaciju hardverskog identifikatora (HWID), popis praćenja potpisa poznatih obitelji varanja i rutu podobnosti poslužitelj–poslužitelj zaštićenu zajedničkom tajnom. Potvrda potpisa varanja, odbijena provjera integriteta ili krivotvoreni identifikator uređaja specificirani su da odmah promijene status računa u BANNED ili PERM_BANNED te, kad postoji proizvod naplate, potpuni gubitak unaprijed plaćenog vremena pretplate bez obveze povrata. Takav klijent ne isporučuje se s ovom stranicom. Kartice preuzimanja Uskoro samo su raspored."
       ],
       "stats": [
         {
@@ -35,7 +35,7 @@ export const features: TextBag["features"] = {
     "faceScan": {
       "title": "Biometrijsko povezivanje Face Scan",
       "paragraphs": [
-        "Face Scan je specificirani budući sloj vezivanja identiteta, ne proizvod s kamerom na ovoj stranici. Planirani dizajn bi, tek nakon izričitog pristanka i zasebne pravne provjere, vezao predložak lica provjeren na živost uz isti A.C.E. račun koji već ima SteamID provjeren na poslužitelju. Svrha je spriječiti dijeljenje računa radi izbjegavanja prethodnog ograničenja. A.C.E. danas ne prikuplja slike lica, ugradnje lica, adrese e-pošte ni hardverske otiske. Važeći pristup privatnosti ostaje Stroga nužnost: samo provjereni 64-bitni SteamID i javno Steam ime za prikaz.",
+        "Face Scan je specificirani budući sloj vezivanja identiteta, ne proizvod s kamerom na ovoj stranici. Planirani dizajn bi, tek nakon izričitog pristanka i zasebne pravne provjere, vezao predložak lica provjeren na živost uz isti A.C.E račun koji već ima SteamID provjeren na poslužitelju. Svrha je spriječiti dijeljenje računa radi izbjegavanja prethodnog ograničenja. A.C.E danas ne prikuplja slike lica, ugradnje lica, adrese e-pošte ni hardverske otiske. Važeći pristup privatnosti ostaje Stroga nužnost: samo provjereni 64-bitni SteamID i javno Steam ime za prikaz.",
         "Ako se Face Scan ikad implementira, neće zamijeniti Steam OpenID, neće se koristiti za prodaju bihevioralnog oglašavanja i sam neće otvoriti ranked redove. Ranked pristup i dalje zahtijeva provjereni anti-cheat put. Dok ta provjera ne postoji, svaki Face Scan panel u predvorju pregled je dizajna."
       ]
     },
@@ -57,8 +57,8 @@ export const features: TextBag["features"] = {
   },
   "loot": {
     "kicker": "Kozmetika · uskoro",
-    "title": "A.C.E. LOOT ARHITEKTURA — DROPOVI ORUŽJA",
-    "lede": "Originalne A.C.E. završne obrade, stižu s trgovinom. Kozmetika nikad ne utječe na natjecanje.",
+    "title": "A.C.E LOOT ARHITEKTURA — DROPOVI ORUŽJA",
+    "lede": "Originalne A.C.E završne obrade, stižu s trgovinom. Kozmetika nikad ne utječe na natjecanje.",
     "checkout": "Plaćanje · uskoro"
   },
   "identityPreview": {
@@ -85,23 +85,23 @@ export const features: TextBag["features"] = {
       },
       "anti-cheat": {
         "title": "Pregled anti-cheata",
-        "body": "A.C.E. nema funkcionalan anti-cheat proizvod. Ranked matchmaking ostaje zatvoren dok ne postoji stvarna integracija."
+        "body": "A.C.E nema funkcionalan anti-cheat proizvod. Ranked matchmaking ostaje zatvoren dok ne postoji stvarna integracija."
       },
       "download-client": {
         "title": "Preuzmi klijent",
-        "body": "Nema A.C.E. desktop klijenta za preuzimanje. Nativni klijent nije dio trenutne web faze."
+        "body": "Nema A.C.E desktop klijenta za preuzimanje. Nativni klijent nije dio trenutne web faze."
       },
       "mobile-app": {
         "title": "Mobilna aplikacija",
-        "body": "A.C.E. mobilna aplikacija je u planu."
+        "body": "A.C.E mobilna aplikacija je u planu."
       },
       "news": {
         "title": "Vijesti",
-        "body": "A.C.E. redakcija otvara se uskoro."
+        "body": "A.C.E redakcija otvara se uskoro."
       },
       "about": {
         "title": "O nama",
-        "body": "A.C.E. je neovisna stranica za Counter-Strike 2 natjecanja u javnom pregledu. Nije povezana s Valveom."
+        "body": "A.C.E je neovisna stranica za Counter-Strike 2 natjecanja u javnom pregledu. Nije povezana s Valveom."
       },
       "advertising": {
         "title": "Oglašavanje",

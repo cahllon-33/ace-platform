@@ -5,7 +5,7 @@ export const legalDocs: TextBag["legalDocs"] = {
     "effective": "Voimassa alkaen: {date}",
     "contact": "Yhteystiedot: support@ace-platform.gg",
     "definitionsTitle": "Määritelmät",
-    "definitions": "Näissä Ehdoissa ”A.C.E.” ja ”me” tarkoittavat A.C.E:tä. ”Sivusto” tarkoittaa ace-platform.gg:tä. ”Tili” tarkoittaa Steam-kirjautumisella luotua A.C.E.-profiilia. ”Tilaus” tarkoittaa Free-, Plus- tai Premium-tasoa. ”Sääntökirja” tarkoittaa kilpailusääntöjä osoitteessa /rules. ”Admin” tarkoittaa henkilökunnan jäsentä, joka soveltaa Sääntökirjaa tapahtumassa.",
+    "definitions": "Näissä Ehdoissa ”A.C.E” ja ”me” tarkoittavat A.C.E:tä. ”Sivusto” tarkoittaa ace-platform.gg:tä. ”Tili” tarkoittaa Steam-kirjautumisella luotua A.C.E-profiilia. ”Tilaus” tarkoittaa Free-, Plus- tai Premium-tasoa. ”Sääntökirja” tarkoittaa kilpailusääntöjä osoitteessa /rules. ”Admin” tarkoittaa henkilökunnan jäsentä, joka soveltaa Sääntökirjaa tapahtumassa.",
     "suspensionTitle": "Tilin rajoitukset ja jäädytys",
     "suspension": "Voimme varoittaa, rajoittaa, jäädyttää tai sulkea Tilin, joka rikkoo näitä Ehtoja tai Sääntökirjaa, esimerkiksi huijaamisen, tilin jakamisen, porttikiellon kiertämisen, häirinnän tai petoksen vuoksi. Maksullinen tilaus ei koskaan suojaa Tiliä rajoituksilta.",
     "disputesTitle": "Sääntöpäätökset ja valitukset",
@@ -21,11 +21,11 @@ export const legalDocs: TextBag["legalDocs"] = {
   "terms": {
     "meta": {
       "title": "Käyttöehdot",
-      "description": "A.C.E.-sivuston käyttöehdot tälle Counter-Strike 2 -kilpailusivustolle. Ranked, maksut ja huijauksenesto eivät ole käytössä."
+      "description": "A.C.E-sivuston käyttöehdot tälle Counter-Strike 2 -kilpailusivustolle. Ranked, maksut ja huijauksenesto eivät ole käytössä."
     },
     "kicker": "ACE-LEGAL / KÄYTTÖEHDOT",
     "title": "Käyttöehdot",
-    "lede": "Nämä Ehdot koskevat A.C.E.-sivuston ja A.C.E.-Tilisi käyttöä. Kilpailusäännöt osoitteessa /rules, tietosuojakäytäntö, evästekäytäntö ja Premium-ehdot ovat osa näitä Ehtoja.",
+    "lede": "Nämä Ehdot koskevat A.C.E-sivuston ja A.C.E-Tilisi käyttöä. Kilpailusäännöt osoitteessa /rules, tietosuojakäytäntö, evästekäytäntö ja Premium-ehdot ovat osa näitä Ehtoja.",
     "sections": {
       "operator": {
         "title": "1. Ylläpitäjä ja riippumattomuus",
@@ -36,7 +36,7 @@ export const legalDocs: TextBag["legalDocs"] = {
       "eligibility": {
         "title": "2. Kelpoisuus ja tilit",
         "paragraphs": [
-          "Tilit luodaan vain virallisella Steam OpenID -kirjautumisella, yksi Tili henkilöä kohden. A.C.E. ei koskaan kysy Steam-salasanaasi."
+          "Tilit luodaan vain virallisella Steam OpenID -kirjautumisella, yksi Tili henkilöä kohden. A.C.E ei koskaan kysy Steam-salasanaasi."
         ]
       },
       "notActive": {
@@ -60,20 +60,20 @@ export const legalDocs: TextBag["legalDocs"] = {
       "liability": {
         "title": "6. Vastuunrajoitus",
         "paragraphs": [
-          "Lain sallimissa rajoissa A.C.E. ei vastaa menetetystä rankingista, menetetyistä kosmetiikoista, jotka eivät koskaan olleet todellisia esineitä, tai kolmannen osapuolen Steam- / CS2-katkoista. Maasi pakottavia kuluttajansuojaoikeuksia ei suljeta pois, jos niistä ei voi luopua."
+          "Lain sallimissa rajoissa A.C.E ei vastaa menetetystä rankingista, menetetyistä kosmetiikoista, jotka eivät koskaan olleet todellisia esineitä, tai kolmannen osapuolen Steam- / CS2-katkoista. Maasi pakottavia kuluttajansuojaoikeuksia ei suljeta pois, jos niistä ei voi luopua."
         ]
       },
       "copyright": {
         "title": "7. Tekijänoikeus sivuston alkuperäiseen materiaaliin",
         "paragraphs": [
-          "Tälle sivustolle luotu alkuperäinen teksti, sivuasettelu, emblemit ja grafiikka kuuluvat A.C.E:lle. Et saa kopioida, julkaista uudelleen tai kaapia tätä alkuperäistä materiaalia toiseen tuotteeseen ilman kirjallista lupaa. Lain salliessa A.C.E. voi panna tämän oikeuden täytäntöön, myös vaatimuksella. Tämä ilmoitus ei käynnistä oikeusjuttua, ei määrää vahingonkorvausta eikä takaa tuomioistuimen ratkaisua.",
-          "Counter-Strike 2, Steam ja karttojen nimet Dust II, Mirage, Inferno, Nuke, Ancient, Anubis ja Train kuuluvat Valvelle. A.C.E. ei vaadi niitä itselleen. Tämän sivuston avaaminen ei kumoa laillista oikeutta eikä solmi sopimusta."
+          "Tälle sivustolle luotu alkuperäinen teksti, sivuasettelu, emblemit ja grafiikka kuuluvat A.C.E:lle. Et saa kopioida, julkaista uudelleen tai kaapia tätä alkuperäistä materiaalia toiseen tuotteeseen ilman kirjallista lupaa. Lain salliessa A.C.E voi panna tämän oikeuden täytäntöön, myös vaatimuksella. Tämä ilmoitus ei käynnistä oikeusjuttua, ei määrää vahingonkorvausta eikä takaa tuomioistuimen ratkaisua.",
+          "Counter-Strike 2, Steam ja karttojen nimet Dust II, Mirage, Inferno, Nuke, Ancient, Anubis ja Train kuuluvat Valvelle. A.C.E ei vaadi niitä itselleen. Tämän sivuston avaaminen ei kumoa laillista oikeutta eikä solmi sopimusta."
         ]
       },
       "contact": {
         "title": "8. Yhteystiedot",
         "paragraphs": [
-          "support@ace-platform.gg — A.C.E."
+          "support@ace-platform.gg — A.C.E"
         ]
       }
     }
@@ -81,11 +81,11 @@ export const legalDocs: TextBag["legalDocs"] = {
   "privacy": {
     "meta": {
       "title": "Tietosuojakäytäntö",
-      "description": "A.C.E.:n tietosuojakäytäntö: vain välttämättömät tiedot, vain Steam OpenID, ei Steam-salasanoja, ei käyttäytymistietojen myyntiä."
+      "description": "A.C.E:n tietosuojakäytäntö: vain välttämättömät tiedot, vain Steam OpenID, ei Steam-salasanoja, ei käyttäytymistietojen myyntiä."
     },
     "kicker": "ACE-LEGAL / TIETOSUOJAKÄYTÄNTÖ",
     "title": "Tietosuojakäytäntö",
-    "lede": "Tämä tietosuojakäytäntö kertoo, mitä henkilötietoja A.C.E. tallentaa, kun käytät tätä sivustoa, miksi ja kuinka kauan. Jos käännös eroaa englanninkielisestä tekstistä, englanninkielinen teksti on ratkaiseva.",
+    "lede": "Tämä tietosuojakäytäntö kertoo, mitä henkilötietoja A.C.E tallentaa, kun käytät tätä sivustoa, miksi ja kuinka kauan. Jos käännös eroaa englanninkielisestä tekstistä, englanninkielinen teksti on ratkaiseva.",
     "strictNecessity": {
       "title": "Välttämättömyyden periaate",
       "intro": "Keräämme vähimmäismäärän tilitietoja, joita tarvitaan kilpapelaajan tunnistamiseen ja ilmeisten petosten estämiseen omassa palvelussamme. Emme kerää tarpeettomia lokeja, emme kaavi yksityisiä Steam-inventaarioita emmekä myy kolmansien osapuolten käyttäytymistietoja.",
@@ -93,14 +93,14 @@ export const legalDocs: TextBag["legalDocs"] = {
       "stored": [
         {
           "label": "Vahvistettu 64-bittinen SteamID",
-          "body": "jonka Steamin virallinen OpenID-vakuutus palauttaa ja joka tarkistetaan palvelimella ennen A.C.E.-tilin luomista tai päivittämistä."
+          "body": "jonka Steamin virallinen OpenID-vakuutus palauttaa ja joka tarkistetaan palvelimella ennen A.C.E-tilin luomista tai päivittämistä."
         },
         {
           "label": "Julkinen Steam-näyttönimi",
           "body": "kun Steam Web API -avain on määritetty. Tämä on hahmonimi, ei sähköpostilaatikko."
         },
         {
-          "label": "A.C.E.-tilitiedot",
+          "label": "A.C.E-tilitiedot",
           "body": "kuten rankingtaso, luokituspisteet, voitot/tappiot, joukkuejäsenyys ja istuntotunnisteiden tiivisteet."
         }
       ],
@@ -121,14 +121,14 @@ export const legalDocs: TextBag["legalDocs"] = {
     "steamBoundary": {
       "title": "Kolmannen osapuolen upotukset ja Steam OpenID -raja",
       "callback": {
-        "before": "Steam-kirjautuminen poistuu A.C.E.:stä, tunnistautuu Steamissa ja palaa osoitteeseen",
-        "after": ". Palvelin vahvistaa OpenID-vakuutuksen (mukaan lukien väitetyn identiteetin ja Steamin allekirjoittamat parametrit) ennen istunnon kirjoittamista. Steamin tietosuojakäytäntö koskee Steamin hallussa olevia tietoja. A.C.E. säilyttää vain vahvistetun SteamID:n ja tilin toimintaan tarvittavat julkiset hahmokentät."
+        "before": "Steam-kirjautuminen poistuu A.C.E:stä, tunnistautuu Steamissa ja palaa osoitteeseen",
+        "after": ". Palvelin vahvistaa OpenID-vakuutuksen (mukaan lukien väitetyn identiteetin ja Steamin allekirjoittamat parametrit) ennen istunnon kirjoittamista. Steamin tietosuojakäytäntö koskee Steamin hallussa olevia tietoja. A.C.E säilyttää vain vahvistetun SteamID:n ja tilin toimintaan tarvittavat julkiset hahmokentät."
       },
-      "footerLinks": "Alatunnisteen ulkoisten verkkojen kuvakkeet ovat hakemistolinkkejä julkisille sivustoille. Ne eivät ole virallisia A.C.E.-tilejä eivätkä upota seurantawidgettejä."
+      "footerLinks": "Alatunnisteen ulkoisten verkkojen kuvakkeet ovat hakemistolinkkejä julkisille sivustoille. Ne eivät ole virallisia A.C.E-tilejä eivätkä upota seurantawidgettejä."
     },
     "rights": {
       "title": "Oikeutesi",
-      "before": "Jos olet alueella, jolla on henkilötieto-oikeuksia, voit pyytää A.C.E.-tilitietojesi tarkastamista, korjaamista tai poistamista lähettämällä sähköpostia osoitteeseen",
+      "before": "Jos olet alueella, jolla on henkilötieto-oikeuksia, voit pyytää A.C.E-tilitietojesi tarkastamista, korjaamista tai poistamista lähettämällä sähköpostia osoitteeseen",
       "after": ". Sivuston tilin poistaminen ei muuta Valven tekemiä Steam- tai VAC-päätöksiä."
     },
     "cookies": {
@@ -145,20 +145,20 @@ export const legalDocs: TextBag["legalDocs"] = {
   "cookiePolicy": {
     "meta": {
       "title": "Evästekäytäntö",
-      "description": "A.C.E.:n eväste- ja telemetriatietosuoja-auditointi. Vain välttämättömät istuntoevästeet, ellet valitse varattuja valinnaisia luokkia."
+      "description": "A.C.E:n eväste- ja telemetriatietosuoja-auditointi. Vain välttämättömät istuntoevästeet, ellet valitse varattuja valinnaisia luokkia."
     },
     "kicker": "ACE-LEGAL / EVÄSTEKÄYTÄNTÖ",
     "title": "Evästekäytäntö",
     "lede": "Tämä evästekäytäntö luettelee evästeet, joita sivusto todella asettaa, myöhemmäksi varatut luokat ja sen, mitä ei kerätä.",
     "audit": {
       "title": "Seurantatyökalut tällä sivustolla",
-      "body": "A.C.E. ei käytä tällä julkisella sivustolla mainospikseleitä, Google Analyticsia, Meta Pixeliä, sormenjälki-SDK:ita tai muita kolmannen osapuolen käyttäytymisseurantoja. Suostumuspalkin valinnaiset ”Analytiikkaseurannat” ja ”Markkinointiseurannat” ovat vain luokkia. Niiden valitseminen ei tänään lataa skriptiä. Jos seurain lisätään myöhemmin, se lukee ensin tallennetun valinnan ja pysyy pois päältä, ellet ole antanut suostumusta."
+      "body": "A.C.E ei käytä tällä julkisella sivustolla mainospikseleitä, Google Analyticsia, Meta Pixeliä, sormenjälki-SDK:ita tai muita kolmannen osapuolen käyttäytymisseurantoja. Suostumuspalkin valinnaiset ”Analytiikkaseurannat” ja ”Markkinointiseurannat” ovat vain luokkia. Niiden valitseminen ei tänään lataa skriptiä. Jos seurain lisätään myöhemmin, se lukee ensin tallennetun valinnan ja pysyy pois päältä, ellet ole antanut suostumusta."
     },
     "essential": {
       "title": "Välttämättömät evästeet [Pakollinen / lukittu]",
       "session": {
         "label": "Istuntoeväste",
-        "body": "— asetetaan vain vahvistetun Steam OpenID -takaisinkutsun jälkeen. HttpOnly, sivun JavaScript ei voi lukea sitä, käytetään pitämään sinut kirjautuneena A.C.E.:hen."
+        "body": "— asetetaan vain vahvistetun Steam OpenID -takaisinkutsun jälkeen. HttpOnly, sivun JavaScript ei voi lukea sitä, käytetään pitämään sinut kirjautuneena A.C.E:hen."
       },
       "necessity": "Nämä evästeet ovat ehdottoman välttämättömiä tunnistetun tilin käyttämiseksi. Ne eivät ole mainostunnisteita."
     },
@@ -169,7 +169,7 @@ export const legalDocs: TextBag["legalDocs"] = {
     },
     "marketing": {
       "title": "Markkinointiseurannat [Valinnainen]",
-      "body": "Varattu. A.C.E. ei myy, vuokraa tai välitä käyttäytymisprofiileja. Tällä sivustolla ei ole markkinoinnin tagienhallintaa."
+      "body": "Varattu. A.C.E ei myy, vuokraa tai välitä käyttäytymisprofiileja. Tällä sivustolla ei ole markkinoinnin tagienhallintaa."
     },
     "change": {
       "title": "Kuinka muutat valintaasi",

@@ -1,7 +1,7 @@
 import type { TextBag } from "../types";
 
 export const consent: TextBag["consent"] = {
-  "valveDisclaimer": "A.C.E. は独立した Counter-Strike 2 の競技サイトです。Valve Corporation とは提携しておらず、承認や推奨も受けていません。Steam および Counter-Strike は各権利者の商標です。競技規約は A.C.E. が同ゲーム向けに独自に作成したものです。",
+  "valveDisclaimer": "A.C.E は独立した Counter-Strike 2 の競技サイトです。Valve Corporation とは提携しておらず、承認や推奨も受けていません。Steam および Counter-Strike は各権利者の商標です。競技規約は A.C.E が同ゲーム向けに独自に作成したものです。",
   "acceptance": {
     "label": "利用規約、アンチチート EULA、プライバシーポリシーに明示的に同意します。",
     "readBefore": "確認:",
@@ -21,7 +21,7 @@ export const consent: TextBag["consent"] = {
     "optional": "任意"
   },
   "banner": {
-    "kicker": "A.C.E. サイトのお知らせ",
+    "kicker": "A.C.E サイトのお知らせ",
     "copy": {
       "before": "「同意」を押すと、このブラウザの Cookie 設定が保存されます。電子署名ではなく、端末のテレメトリを収集せず、アンチチート・クライアントを起動せず、競技キューも開きません。続行する前に",
       "termsLink": "利用規約",

@@ -62,7 +62,7 @@ export const ranks: TextBag["ranks"] = {
     "kicker": "PREMIUM-ARVOT",
     "plan": "A.C.E PREMIUM · vain 7 $/kk",
     "title": "Premium-arvokuvitus",
-    "lede": "Alkuperäinen kuvitettu A.C.E.-arvosarja: kymmenen kristallitunnusta divisioonilla III/II/I, luokitusprotokolla, Legend-tietokortti ja vetämällä pyöritettävä 3D-katselin. Se on profiilikuvitus Premium-jäsenille. Se lukee samoja Rating Points -tikkaita kuin vakioarvot eikä anna kilpailuetua.",
+    "lede": "Alkuperäinen kuvitettu A.C.E-arvosarja: kymmenen kristallitunnusta divisioonilla III/II/I, luokitusprotokolla, Legend-tietokortti ja vetämällä pyöritettävä 3D-katselin. Se on profiilikuvitus Premium-jäsenille. Se lukee samoja Rating Points -tikkaita kuin vakioarvot eikä anna kilpailuetua.",
     "demo": "Demoarvot: taulun edistyminen, voittoprosentti ja divisioonat ovat esimerkkejä, eivät reaaliaikaisia tilastoja. Kirjautuneena näytetty luokitus on tallennettu luokituksesi.",
     "locked": "Tulossa: maksua ei vielä ole, joten mikään tili ei ole tänään Premium. Palvelin käyttää Premium-arvokuvitusta profiilissa vain, jos sen tallennettu tilaus on Premium.",
     "standardKicker": "VAKIOARVOT",
@@ -77,12 +77,12 @@ export const ranks: TextBag["ranks"] = {
   },
   "meta": {
     "title": "Kilpailurankingit",
-    "description": "A.C.E.:n kymmenen rankingia Iron Recruitista A.C.E. Legendiin divisioonineen ja luokituslattioineen."
+    "description": "A.C.E:n kymmenen rankingia Iron Recruitista A.C.E Legendiin divisioonineen ja luokituslattioineen."
   },
   "hero": {
     "kicker": "KALIBROINTI",
     "title": "Kilpailurankingit",
-    "lede": "Kymmenen tasoa Recruitista A.C.E. Legendiin, kussakin divisioonat {divisions}. Vedä tai käytä nuolinäppäimiä emblemin kiertämiseen. Kirjautuneena näet oman luokituksesi; muuten kunkin tason lattian."
+    "lede": "Kymmenen tasoa Recruitista A.C.E Legendiin, kussakin divisioonat {divisions}. Vedä tai käytä nuolinäppäimiä emblemin kiertämiseen. Kirjautuneena näet oman luokituksesi; muuten kunkin tason lattian."
   },
   "codexLink": "Avaa Kalibrointikoodeksi",
   "document": {
@@ -134,9 +134,9 @@ export const ranks: TextBag["ranks"] = {
     }
   },
   "board": {
-    "selectEmblem": "Valitse A.C.E. {name} -emblemi, taso {level}",
-    "emblemAlt": "A.C.E.:n mukautettu 3D-kristallinen taso {level} {crystal} {name} -emblemin profiilimerkki",
-    "emblemAltLegend": "A.C.E.:n mukautettu 3D-kristallinen tason {level} emblemin profiilimerkki",
+    "selectEmblem": "Valitse A.C.E {name} -emblemi, taso {level}",
+    "emblemAlt": "A.C.E:n mukautettu 3D-kristallinen taso {level} {crystal} {name} -emblemin profiilimerkki",
+    "emblemAltLegend": "A.C.E:n mukautettu 3D-kristallinen tason {level} emblemin profiilimerkki",
     "premium": "HUIPPUTASO"
   },
   "division": {

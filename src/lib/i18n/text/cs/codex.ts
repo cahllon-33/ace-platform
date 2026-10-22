@@ -33,7 +33,7 @@ export const codex: TextBag["codex"] = {
     searchLabel: "Hledat v kodexu",
     searchPlaceholder: "Zkuste 1950, Recruit nebo remíza",
     empty: "Hledání neodpovídá žádná položka.",
-    columnLabel: "Sloupec A.C.E. {n}",
+    columnLabel: "Sloupec A.C.E {n}",
     pagerLabel: "Stránky kodexu",
     first: "První",
     previous: "Předchozí",
@@ -42,7 +42,7 @@ export const codex: TextBag["codex"] = {
     pageOf: "Stránka {n} z {m}",
   },
   article: {
-    breadcrumb: "A.C.E. · Kalibrační kodex",
+    breadcrumb: "A.C.E · Kalibrační kodex",
     status:
       "Tato stránka vysvětluje psaný žebříček. Nezapočítává žádný zápas a nemění uložené hodnocení.",
     emblemAlt: "Emblém {name}, hodnost {level}",
@@ -67,7 +67,7 @@ export const codex: TextBag["codex"] = {
     turnLabel: "Pokračovat kodexem",
     previous: "Předchozí",
     next: "Další",
-    alsoIn: "Také v A.C.E.",
+    alsoIn: "Také v A.C.E",
     backToBoard: "Zpět na tabuli hodností",
   },
   rankArticle: {
@@ -146,7 +146,7 @@ export const codex: TextBag["codex"] = {
     },
     "rank-10-a-c-e-legend": {
       stance:
-        "A.C.E. Legend je poslední odznak. Krystalový štítek zní ACE ELITE. Oficiální název je A.C.E. Legend.",
+        "A.C.E Legend je poslední odznak. Krystalový štítek zní ACE ELITE. Oficiální název je A.C.E Legend.",
       detail:
         "Pásmo začíná na 1 950 a končí na stropu enginu, 3 000. Jedenáctá hodnost neexistuje. Uložené hodnocení nemůže vystoupat nad 3 000.",
     },
@@ -154,13 +154,13 @@ export const codex: TextBag["codex"] = {
   articles: {
     "what-a-rank-is": {
       title: "Co je hodnost A.C.E.",
-      lede: "Hodnost je odznak, do jehož pásma spadají vaše uložené body hodnocení. Deset odznaků pokrývá celý žebříček, od hodnosti Recruit po A.C.E. Legend.",
+      lede: "Hodnost je odznak, do jehož pásma spadají vaše uložené body hodnocení. Deset odznaků pokrývá celý žebříček, od hodnosti Recruit po A.C.E Legend.",
       sections: [
         {
           heading: "Jedno číslo, jeden odznak",
           paragraphs: [
             "Účet ukládá soutěžní hodnocení. Žebříček toto číslo přečte a vrátí nejvyšší hodnost, jejíž dolní hranice číslo dosáhlo. Nikdy nedržíte dvě hodnosti zároveň.",
-            "Recruit je hodnost 1. A.C.E. Legend je hodnost 10. Oficiální název je název v žebříčku. Kratší slovo na emblému je krystalový štítek téže hodnosti.",
+            "Recruit je hodnost 1. A.C.E Legend je hodnost 10. Oficiální název je název v žebříčku. Kratší slovo na emblému je krystalový štítek téže hodnosti.",
             "Tento kodex vysvětluje psaný žebříček. Nezapočítává žádný zápas a nemění uložené hodnocení.",
           ],
         },
@@ -168,7 +168,7 @@ export const codex: TextBag["codex"] = {
           heading: "Jak jsou rozloženy dolní hranice",
           paragraphs: [
             "Recruit pokrývá začátek žebříčku. Operative se otevírá na 1 100. Od hodnosti Vanguard po Grandmaster je každá další dolní hranice o 100 bodů vyšší: 1 200, 1 300, 1 400, 1 500, 1 600 a poté 1 700.",
-            "Sovereign se otevírá na 1 800 a drží účet až do 1 949. A.C.E. Legend se otevírá na 1 950. Strop enginu je 3 000, takže Legend má nejdelší pásmo.",
+            "Sovereign se otevírá na 1 800 a drží účet až do 1 949. A.C.E Legend se otevírá na 1 950. Strop enginu je 3 000, takže Legend má nejdelší pásmo.",
           ],
         },
         {
@@ -187,14 +187,14 @@ export const codex: TextBag["codex"] = {
         {
           heading: "Proč existují oba",
           paragraphs: [
-            "Engine i profil používají oficiální název: Recruit, Operative, Vanguard, Specialist, Veteran, Elite, Master, Grandmaster, Sovereign, A.C.E. Legend.",
+            "Engine i profil používají oficiální název: Recruit, Operative, Vanguard, Specialist, Veteran, Elite, Master, Grandmaster, Sovereign, A.C.E Legend.",
             "Emblém nese také krystalový štítek: IRON, BRONZE, SILVER, GOLD, PLATINUM, DIAMOND, MASTER, GRANDMASTER, IMMORTAL, ACE ELITE. Tento štítek je grafika. Nevytváří jedenáctou hodnost a neukládá druhé číslo.",
           ],
         },
         {
           heading: "Kde se liší",
           paragraphs: [
-            "Krystalový štítek hodnosti Specialist je GOLD. U hodnosti Veteran je to PLATINUM. U hodnosti Elite DIAMOND. U hodnosti Sovereign IMMORTAL. U hodnosti A.C.E. Legend ACE ELITE. Ve všech případech dolní hranice stále patří oficiálnímu názvu.",
+            "Krystalový štítek hodnosti Specialist je GOLD. U hodnosti Veteran je to PLATINUM. U hodnosti Elite DIAMOND. U hodnosti Sovereign IMMORTAL. U hodnosti A.C.E Legend ACE ELITE. Ve všech případech dolní hranice stále patří oficiálnímu názvu.",
             "Master a Grandmaster používají na obou místech stejné slovo.",
           ],
         },
@@ -310,7 +310,7 @@ export const codex: TextBag["codex"] = {
           heading: "Zarážky",
           paragraphs: [
             "Prohra při 100 bodech hodnocení zůstane na 100. Výhra při 3 000 zůstane na 3 000. Dolní hranice hodnosti Recruit v žebříčku je zapsána jako 0, ale uložené číslo mezeru pod 100 nikdy nevyužije.",
-            "1 949 je Sovereign. 1 950 je A.C.E. Legend. Žádný mezistupeň neexistuje.",
+            "1 949 je Sovereign. 1 950 je A.C.E Legend. Žádný mezistupeň neexistuje.",
           ],
         },
         {
@@ -357,7 +357,7 @@ export const codex: TextBag["codex"] = {
           heading: "Co pult nedělá",
           paragraphs: [
             "NAJÍT ZÁPAS nehledá soupeře. Nemění body hodnocení. Hodnost na účtu je stále uložené číslo, které čte žebříček popsaný v tomto kodexu.",
-            "Nad hodností Legend neexistuje žádná samostatná nejvyšší fronta. A.C.E. Legend je poslední odznak a otevírá se na 1 950 bodech hodnocení.",
+            "Nad hodností Legend neexistuje žádná samostatná nejvyšší fronta. A.C.E Legend je poslední odznak a otevírá se na 1 950 bodech hodnocení.",
           ],
         },
       ],

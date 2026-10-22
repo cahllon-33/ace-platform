@@ -44,7 +44,7 @@ export const play: TextBag["play"] = {
           "Egyedül, ketten vagy hárman",
           "Tervezett {points} értékelési pontos ablak",
           "Egy Steam-profilnak már tárolva kell lennie",
-          "Az A.C.E. értékelési szabályát használja · a keresés hamarosan"
+          "Az A.C.E értékelési szabályát használja · a keresés hamarosan"
         ]
       },
       "elite": {

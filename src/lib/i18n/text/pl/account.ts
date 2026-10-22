@@ -5,7 +5,7 @@ export const account: TextBag["account"] = {
     "metaTitle": "Statystyki gracza",
     "kicker": "STATYSTYKI GRACZA",
     "title": "Statystyki gracza",
-    "lede": "Zmiany ratingu z Twoich zapisanych meczów A.C.E. ze wskaźnikami % headshotów i celności. W zestawie A.C.E Plus (4 $/mies.) i A.C.E Premium (7 $/mies.).",
+    "lede": "Zmiany ratingu z Twoich zapisanych meczów A.C.E ze wskaźnikami % headshotów i celności. W zestawie A.C.E Plus (4 $/mies.) i A.C.E Premium (7 $/mies.).",
     "movementTitle": "Zmiany ratingu",
     "movementNote": "Każdy punkt to zmiana ratingu zapisana z meczu A.C.E.",
     "noMatches": "Brak zapisanych meczów, więc wykres jest pusty. Wypełni się po Twoim pierwszym zapisanym meczu A.C.E.",
@@ -21,7 +21,7 @@ export const account: TextBag["account"] = {
     "lockedBody": "Twój zapisany plan to Free. Plus (4 $/mies.) i Premium (7 $/mies.) odblokowują tę stronę. Wkrótce: płatności jeszcze nie ma.",
     "signIn": "Zaloguj się przez Steam, aby zobaczyć swoje statystyki.",
     "plansLink": "Zobacz plany",
-    "rosterNote": "Przykładowy profil składu: ci gracze nie mają zapisanych meczów A.C.E., więc statystyki nie pokazują liczb.",
+    "rosterNote": "Przykładowy profil składu: ci gracze nie mają zapisanych meczów A.C.E, więc statystyki nie pokazują liczb.",
     "dashTitle": "Statystyki i analiza",
     "dashStats": "Otwórz statystyki gracza",
     "dashAnalysis": "Otwórz analizę meczów (Premium)",
@@ -38,7 +38,7 @@ export const account: TextBag["account"] = {
     "stats": {
       "accountStatus": "Status konta",
       "subscription": "Subskrypcja",
-      "rank": "Ranga A.C.E.",
+      "rank": "Ranga A.C.E",
       "ratingPoints": "Punkty oceny",
       "wins": "Wygrane",
       "losses": "Przegrane",
@@ -71,7 +71,7 @@ export const account: TextBag["account"] = {
     "rankedButton": "Znajdź mecz rankingowy",
     "roster": {
       "title": "Skład 5v5",
-      "body": "Jeden kapitan. Cztery zaproszenia. Kapitanowie zapraszają inne identyfikatory kont A.C.E., które powstają wyłącznie po zweryfikowanym logowaniu przez Steam."
+      "body": "Jeden kapitan. Cztery zaproszenia. Kapitanowie zapraszają inne identyfikatory kont A.C.E, które powstają wyłącznie po zweryfikowanym logowaniu przez Steam."
     },
     "pendingInvites": "Oczekujące zaproszenia"
   },
@@ -132,7 +132,7 @@ export const account: TextBag["account"] = {
     "back": "Wróć do składu klanu"
   },
   "networks": {
-    "note": "Link wpisany tutaj pozostaje w tej przeglądarce i nie jest zapisywany. A.C.E. nigdy nie prosi o hasło Steam.",
+    "note": "Link wpisany tutaj pozostaje w tej przeglądarce i nie jest zapisywany. A.C.E nigdy nie prosi o hasło Steam.",
     "labels": {
       "steam": "Profil Steam"
     },
@@ -150,9 +150,9 @@ export const account: TextBag["account"] = {
       "title": "Błąd logowania"
     },
     "title": "Logowanie przez Steam nie zostało ukończone",
-    "notConfigured": "Steam OpenID nie jest jeszcze skonfigurowany na tym serwerze. A.C.E. nigdy nie prosi o hasło Steam.",
-    "unavailable": "Steam nie odpowiedział na żądanie weryfikacji. Spróbuj ponownie za chwilę. A.C.E. nigdy nie prosi o hasło Steam.",
-    "unverified": "Nie udało się zweryfikować odpowiedzi OpenID na serwerze. A.C.E. nigdy nie prosi o hasło Steam.",
+    "notConfigured": "Steam OpenID nie jest jeszcze skonfigurowany na tym serwerze. A.C.E nigdy nie prosi o hasło Steam.",
+    "unavailable": "Steam nie odpowiedział na żądanie weryfikacji. Spróbuj ponownie za chwilę. A.C.E nigdy nie prosi o hasło Steam.",
+    "unverified": "Nie udało się zweryfikować odpowiedzi OpenID na serwerze. A.C.E nigdy nie prosi o hasło Steam.",
     "returnHome": "Wróć na stronę główną"
   }
 };

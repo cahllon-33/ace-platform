@@ -25,9 +25,9 @@ export const UI_JA: Ui = {
     "company": "会社情報",
     "legal": "法的情報",
     "tagline": "フェアプレーを軸にした Counter-Strike 2 の競技ラダー。",
-    "follow": "A.C.E. をフォロー",
+    "follow": "A.C.E をフォロー",
     "rights": "無断転載を禁じます。",
-    "legalLine": "© 2026 A.C.E. Valveとは提携していない独立したプラットフォームです。Counter-StrikeおよびCS2はValve Corporationの商標です。"
+    "legalLine": "© 2026 A.C.E Valveとは提携していない独立したプラットフォームです。Counter-StrikeおよびCS2はValve Corporationの商標です。"
   },
   "soon": {
     "label": "近日公開"
@@ -58,7 +58,7 @@ export const UI_JA: Ui = {
   "maps": {
     "kicker": "競技マッププール",
     "title": "マップと配信",
-    "lede": "A.C.E.の競技マッププールは7つのマップで構成されます。各チームはルールブックに定めるマップ選択（veto）でこの中からBANとPICKを行います。大会の配信は下の画面に表示されます。",
+    "lede": "A.C.Eの競技マッププールは7つのマップで構成されます。各チームはルールブックに定めるマップ選択（veto）でこの中からBANとPICKを行います。大会の配信は下の画面に表示されます。",
     "rulebook": "vetoのルールを見る",
     "screen": "配信スクリーン",
     "offAir": "放送休止中",
@@ -110,10 +110,10 @@ export const UI_JA: Ui = {
     }
   },
   "rules": {
-    "kicker": "A.C.E. 大会ルールブック",
+    "kicker": "A.C.E 大会ルールブック",
     "title": "大会ルール",
     "version": "バージョン {version} · {date} 施行",
-    "intro": "すべてのA.C.E.大会に適用されるルールです。「導入後に適用」と記載された条項は、関連するシステムの公開時に発効します。",
+    "intro": "すべてのA.C.E大会に適用されるルールです。「導入後に適用」と記載された条項は、関連するシステムの公開時に発効します。",
     "pending": "導入後に適用",
     "contents": "目次",
     "penalties": {
@@ -149,7 +149,7 @@ export const UI_JA: Ui = {
   "antiCheat": {
     "kicker": "A.C.E Shield",
     "title": "アンチチート",
-    "lede": "A.C.E Shieldは、すべてのA.C.E.の試合のために開発中の公正性システムです。クライアント、サーバー、試合、行動のチェックが連携し、プライバシーを最優先に設計されています。",
+    "lede": "A.C.E Shieldは、すべてのA.C.Eの試合のために開発中の公正性システムです。クライアント、サーバー、試合、行動のチェックが連携し、プライバシーを最優先に設計されています。",
     "statusLabel": "導入フェーズ",
     "pillarsTitle": "アーキテクチャの柱",
     "pillars": {
@@ -229,7 +229,7 @@ export const UI_JA: Ui = {
       "expansion1": "Autonomous Anti-Cheat",
       "expansion2": "Competitive Calibration",
       "expansion3": "Elite Players",
-      "line": "競技者としてのアイデンティティを築こう。スキルをキャリブレーションしよう。A.C.E.ランクを駆け上がろう。",
+      "line": "競技者としてのアイデンティティを築こう。スキルをキャリブレーションしよう。A.C.Eランクを駆け上がろう。",
       "connectSteam": "Steamと連携",
       "openDashboard": "ダッシュボードを開く",
       "exploreRanks": "ランクを見る"
@@ -237,7 +237,7 @@ export const UI_JA: Ui = {
     "status": {
       "title": "プラットフォームの状況",
       "steam": "Steamサインイン",
-      "shield": "A.C.E. Shield",
+      "shield": "A.C.E Shield",
       "servers": "競技サーバー",
       "tournaments": "トーナメント",
       "billing": "課金",
@@ -288,8 +288,8 @@ export const UI_JA: Ui = {
     "chat": {
       "open": "サポートチャットを開く",
       "close": "サポートチャットを閉じる",
-      "title": "A.C.E. サポート",
-      "greeting": "こんにちは！A.C.E.サポートアシスタントです。ランク、プラン、ルール、アカウントについて質問してください。",
+      "title": "A.C.E サポート",
+      "greeting": "こんにちは！A.C.Eサポートアシスタントです。ランク、プラン、ルール、アカウントについて質問してください。",
       "placeholder": "質問を入力…",
       "send": "送信",
       "unavailable": "サポートチャットはまだご利用いただけません。",
@@ -316,7 +316,7 @@ export const UI_JA: Ui = {
       "stepsKicker": "仕組み",
       "stepsTitle": "最初のランクまで3ステップ",
       "step1t": "Steamを接続",
-      "step1b": "Steam OpenIDでログイン。A.C.E.があなたのSteamパスワードを見ることはありません。",
+      "step1b": "Steam OpenIDでログイン。A.C.EがあなたのSteamパスワードを見ることはありません。",
       "step2t": "キャリブレーション",
       "step2b": "ティア3、1,200 RPからスタート。記録された試合ごとに公開ルールでRPが変動します。",
       "step3t": "昇格",
@@ -334,7 +334,7 @@ export const UI_JA: Ui = {
     "profile": {
       "kicker": "プレイヤー",
       "notFound": "プレイヤーが見つかりません",
-      "notFoundBody": "このSteam IDを使うA.C.E.アカウントがないか、プロフィールが非公開です。",
+      "notFoundBody": "このSteam IDを使うA.C.Eアカウントがないか、プロフィールが非公開です。",
       "rating": "レーティング",
       "rank": "ランク",
       "record": "戦績",
@@ -349,11 +349,11 @@ export const UI_JA: Ui = {
     },
     "chat": {
       "sources": "出典",
-      "noMatch": "A.C.E.サイトの内容には見つかりませんでした。質問をチケットとしてチームに送れます。",
+      "noMatch": "A.C.Eサイトの内容には見つかりませんでした。質問をチケットとしてチームに送れます。",
       "s1": "Premiumの料金は?",
       "s2": "RPを得るには?",
       "s3": "チーターを報告するには?",
-      "kbNote": "回答はA.C.E.サイトの内容から引用しています。"
+      "kbNote": "回答はA.C.Eサイトの内容から引用しています。"
     }
   },
   "r40": {
@@ -382,7 +382,7 @@ export const UI_JA: Ui = {
     "nf": {
       "code": "エラー 404",
       "title": "このページはマップの外です",
-      "body": "リンクが古いか、入力が間違っている可能性があります。A.C.E.のすべてにここからワンクリックで移動できます。",
+      "body": "リンクが古いか、入力が間違っている可能性があります。A.C.Eのすべてにここからワンクリックで移動できます。",
       "home": "ホームに戻る",
       "ranks": "ランクを見る"
     },
@@ -396,12 +396,12 @@ export const UI_JA: Ui = {
   "r41": {
     "vf": {
       "label": "認証済みプレイヤー",
-      "tip": "認証済み：Steam連携済み、アカウント良好、A.C.E.が確認済み。"
+      "tip": "認証済み：Steam連携済み、アカウント良好、A.C.Eが確認済み。"
     },
     "st": {
       "kicker": "パフォーマンス",
       "title": "プレイヤー統計",
-      "lede": "すべての数値は記録されたA.C.E.の試合に基づきます。推定値はありません。",
+      "lede": "すべての数値は記録されたA.C.Eの試合に基づきます。推定値はありません。",
       "empty": "記録された試合はまだありません。最初のランク戦の後に統計が表示されます。",
       "winRate": "勝率",
       "adr": "ADR",
@@ -427,11 +427,11 @@ export const UI_JA: Ui = {
       "none": "—"
     },
     "ab": {
-      "title": "A.C.E.について",
+      "title": "A.C.Eについて",
       "lede": "ひとつの公開ランク表と、決して優位を買えないプランを軸にしたCounter-Strike 2の競技プラットフォームです。",
-      "b1": "A.C.E.はCS2のランク戦、ラダー、トーナメントを運営します。サインインはSteam OpenIDで、Steamのパスワードを見ることはありません。",
+      "b1": "A.C.EはCS2のランク戦、ラダー、トーナメントを運営します。サインインはSteam OpenIDで、Steamのパスワードを見ることはありません。",
       "b2": "ランクは公開ルールに従い、記録された結果だけから計算されます。有料プランは見た目と利便性のみです。",
-      "b3": "A.C.E.は独立したプラットフォームで、Valveとは提携していません。"
+      "b3": "A.C.Eは独立したプラットフォームで、Valveとは提携していません。"
     },
     "ss": {
       "title": "サーバー状況",
@@ -474,7 +474,7 @@ export const UI_JA: Ui = {
     "lv": {
       "nav": "ライブ",
       "title": "ライブ配信",
-      "lede": "A.C.E. 公式大会の配信です。運営が配信中に設定している間だけここに表示されます。",
+      "lede": "A.C.E 公式大会の配信です。運営が配信中に設定している間だけここに表示されます。",
       "none": "現在ライブ配信はありません",
       "noneBody": "公式配信が始まるとここに表示されます。それまでは下の大会をご覧ください。",
       "schedule": "今後の大会",
@@ -484,7 +484,7 @@ export const UI_JA: Ui = {
     }
   },
   "r46": {
-    "aria": "A.C.E. が大切にすること",
+    "aria": "A.C.E が大切にすること",
     "fair": "フェアプレー保護",
     "fairSub": "Steam サインイン、公開ルール、管理者が確認するプレイヤー報告。",
     "calib": "競技キャリブレーション",
@@ -494,7 +494,7 @@ export const UI_JA: Ui = {
   },
   "r45": {
     "title": "Legend の先へ",
-    "lede": "A.C.E. Legend の上にある 5 つのプレステージバッジ。2,150〜2,950 RP の間で 200 RP ごとに 1 つ。プレイでのみ獲得できます。",
+    "lede": "A.C.E Legend の上にある 5 つのプレステージバッジ。2,150〜2,950 RP の間で 200 RP ごとに 1 つ。プレイでのみ獲得できます。",
     "plus": "Plus · プラチナ",
     "premium": "Premium · ゴールドファイア",
     "fair": "RP は全員共通。プレステージの基準、マッチメイキング、レーティングはどのプランでも同じです。購入できるものはありません。",
@@ -527,10 +527,10 @@ export const UI_JA: Ui = {
     "pr": {
       "kicker": "プレステージ",
       "title": "バッジ規約",
-      "lede": "A.C.E. の各バッジの獲得方法です。バッジは見た目だけのもので、マッチング、RP、ルールを変えることはありません。",
+      "lede": "A.C.E の各バッジの獲得方法です。バッジは見た目だけのもので、マッチング、RP、ルールを変えることはありません。",
       "ranks": "ランクバッジ（ティア1〜10）はRPに連動します。全員が同じランクと同じ固定のティア色を見ます。",
       "prestige": "プレステージバッジは {elite} RP を超えた先の5つの長期目標です。2,150〜2,950 まで 200 RP ごとに1つ。",
-      "free": "Free：バッジは A.C.E. Legend のままで、プレステージはテキストの到達表示になります。RPに上限はありません。",
+      "free": "Free：バッジは A.C.E Legend のままで、プレステージはテキストの到達表示になります。RPに上限はありません。",
       "plus": "Plus：プラチナのプレステージセット。",
       "premium": "Premium：アニメーション付きゴールドのプレステージセット。",
       "lose": "しきい値を下回るとバッジもRPに合わせて下がり、再び到達すると戻ります。",
@@ -683,5 +683,19 @@ export const UI_JA: Ui = {
     "communityTitle": "コミュニティ",
     "communityLede": "試合ニュース、大会、ハイライトは A.C.E をフォロー。",
     "followOn": "{network} の A.C.E"
+  },
+  "r49b": {
+    "title": "Steamインベントリ",
+    "private": "インベントリは非公開",
+    "privateBody": "このプレイヤーのSteamインベントリは非公開です。",
+    "empty": "公開インベントリにCS2アイテムはありません。",
+    "unavailable": "現在Steamインベントリを読み込めません。",
+    "hiddenOwner": "あなたのインベントリ展示はプロフィールで非表示です。",
+    "hide": "展示を隠す",
+    "show": "展示を表示",
+    "priceSource": "価格：Steamコミュニティマーケットの最安出品（キャッシュ）。",
+    "note": "展示のみ。A.C.EはSteamアイテムの購入・販売・トレードを一切行いません。",
+    "updated": "更新 {date}",
+    "more": "ほか{n}点"
   }
 };

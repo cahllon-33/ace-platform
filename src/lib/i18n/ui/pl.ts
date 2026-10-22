@@ -25,7 +25,7 @@ export const UI_PL: Ui = {
     "company": "Firma",
     "legal": "Informacje prawne",
     "tagline": "Rankingi rywalizacji w Counter-Strike 2 oparte na uczciwej grze.",
-    "follow": "Obserwuj A.C.E.",
+    "follow": "Obserwuj A.C.E",
     "rights": "Wszelkie prawa zastrzeżone.",
     "legalLine": "© 2026 A.C.E. Niezależna platforma, niepowiązana z Valve. Counter-Strike i CS2 są znakami towarowymi Valve Corporation."
   },
@@ -110,7 +110,7 @@ export const UI_PL: Ui = {
     }
   },
   "rules": {
-    "kicker": "Regulamin rozgrywek A.C.E.",
+    "kicker": "Regulamin rozgrywek A.C.E",
     "title": "Zasady rozgrywek",
     "version": "Wersja {version} · obowiązuje od {date}",
     "intro": "Zasady, według których rozgrywane są wszystkie zawody A.C.E. Punkty oznaczone „Obowiązuje po wdrożeniu” wchodzą w życie, gdy uruchomiony zostanie system, od którego zależą.",
@@ -149,7 +149,7 @@ export const UI_PL: Ui = {
   "antiCheat": {
     "kicker": "A.C.E Shield",
     "title": "Anty-cheat",
-    "lede": "A.C.E Shield to system uczciwej gry budowany dla każdego meczu A.C.E.: kontrole klienta, serwera, meczu i zachowania działające razem, z prywatnością na pierwszym miejscu.",
+    "lede": "A.C.E Shield to system uczciwej gry budowany dla każdego meczu A.C.E: kontrole klienta, serwera, meczu i zachowania działające razem, z prywatnością na pierwszym miejscu.",
     "statusLabel": "Etap wdrożenia",
     "pillarsTitle": "Filary architektury",
     "pillars": {
@@ -237,7 +237,7 @@ export const UI_PL: Ui = {
     "status": {
       "title": "Status platformy",
       "steam": "Logowanie przez Steam",
-      "shield": "A.C.E. Shield",
+      "shield": "A.C.E Shield",
       "servers": "Serwery rywalizacyjne",
       "tournaments": "Turnieje",
       "billing": "Płatności",
@@ -288,7 +288,7 @@ export const UI_PL: Ui = {
     "chat": {
       "open": "Otwórz czat pomocy",
       "close": "Zamknij czat pomocy",
-      "title": "Pomoc A.C.E.",
+      "title": "Pomoc A.C.E",
       "greeting": "Cześć! Jestem asystentem pomocy A.C.E. Zapytaj mnie o rangi, plany, zasady lub swoje konto.",
       "placeholder": "Wpisz pytanie…",
       "send": "Wyślij",
@@ -316,7 +316,7 @@ export const UI_PL: Ui = {
       "stepsKicker": "Jak to działa",
       "stepsTitle": "Trzy kroki do pierwszej rangi",
       "step1t": "Połącz Steam",
-      "step1b": "Zaloguj się przez Steam OpenID. A.C.E. nigdy nie widzi Twojego hasła Steam.",
+      "step1b": "Zaloguj się przez Steam OpenID. A.C.E nigdy nie widzi Twojego hasła Steam.",
       "step2t": "Kalibracja",
       "step2b": "Zaczynasz na poziomie 3 z 1200 RP. Każdy zapisany mecz zmienia RP według opublikowanych zasad.",
       "step3t": "Awans",
@@ -334,7 +334,7 @@ export const UI_PL: Ui = {
     "profile": {
       "kicker": "GRACZ",
       "notFound": "Nie znaleziono gracza",
-      "notFoundBody": "Żadne konto A.C.E. nie używa tego Steam ID albo profil nie jest publiczny.",
+      "notFoundBody": "Żadne konto A.C.E nie używa tego Steam ID albo profil nie jest publiczny.",
       "rating": "Wynik",
       "rank": "Ranga",
       "record": "Bilans",
@@ -382,7 +382,7 @@ export const UI_PL: Ui = {
     "nf": {
       "code": "Błąd 404",
       "title": "Ta strona jest poza mapą",
-      "body": "Link może być stary lub błędnie wpisany. Każda część A.C.E. jest stąd o jedno kliknięcie.",
+      "body": "Link może być stary lub błędnie wpisany. Każda część A.C.E jest stąd o jedno kliknięcie.",
       "home": "Wróć na stronę główną",
       "ranks": "Zobacz rangi"
     },
@@ -427,11 +427,11 @@ export const UI_PL: Ui = {
       "none": "—"
     },
     "ab": {
-      "title": "O A.C.E.",
+      "title": "O A.C.E",
       "lede": "Platforma rywalizacji w Counter-Strike 2 oparta na jednej publicznej tabeli rang i planach, które nigdy nie kupują przewagi.",
-      "b1": "A.C.E. prowadzi mecze rankingowe, drabinki i turnieje CS2. Logowanie przez Steam OpenID; nigdy nie widzimy twojego hasła Steam.",
+      "b1": "A.C.E prowadzi mecze rankingowe, drabinki i turnieje CS2. Logowanie przez Steam OpenID; nigdy nie widzimy twojego hasła Steam.",
       "b2": "Twoja ranga jest liczona tylko z zapisanych wyników według opublikowanych zasad. Płatne plany są wyłącznie kosmetyczne i dla wygody.",
-      "b3": "A.C.E. jest niezależną platformą i nie jest powiązana z Valve."
+      "b3": "A.C.E jest niezależną platformą i nie jest powiązana z Valve."
     },
     "ss": {
       "title": "Stan serwerów",
@@ -494,7 +494,7 @@ export const UI_PL: Ui = {
   },
   "r45": {
     "title": "Ponad Legend",
-    "lede": "Pięć odznak prestiżu powyżej A.C.E. Legend, co 200 RP od 2150 do 2950. Zdobywane wyłącznie grą.",
+    "lede": "Pięć odznak prestiżu powyżej A.C.E Legend, co 200 RP od 2150 do 2950. Zdobywane wyłącznie grą.",
     "plus": "Plus · platyna",
     "premium": "Premium · złoty ogień",
     "fair": "Takie samo RP dla wszystkich. Progi prestiżu, matchmaking i ranking są identyczne w każdym planie. Niczego tu nie da się kupić.",
@@ -530,7 +530,7 @@ export const UI_PL: Ui = {
       "lede": "Jak zdobywa się każdą odznakę A.C.E. Odznaki są wyłącznie kosmetyczne: nigdy nie zmieniają matchmakingu, RP ani żadnej zasady.",
       "ranks": "Odznaki rang (poziomy 1–10) podążają za twoim RP. Każdy widzi tę samą rangę i ten sam stały kolor poziomu.",
       "prestige": "Odznaki prestiżu to pięć długoterminowych celów powyżej {elite} RP: jedna co 200 RP od 2150 do 2950.",
-      "free": "Free: twoja odznaka pozostaje A.C.E. Legend, a poziom prestiżu jest pokazywany jako tekstowy kamień milowy. RP nigdy nie ma limitu.",
+      "free": "Free: twoja odznaka pozostaje A.C.E Legend, a poziom prestiżu jest pokazywany jako tekstowy kamień milowy. RP nigdy nie ma limitu.",
       "plus": "Plus: platynowy zestaw prestiżu.",
       "premium": "Premium: animowany złoty zestaw prestiżu.",
       "lose": "Spadniesz poniżej progu prestiżu — odznaka spada razem z RP; osiągniesz go znowu — wraca.",
@@ -683,5 +683,19 @@ export const UI_PL: Ui = {
     "communityTitle": "Społeczność",
     "communityLede": "Obserwuj A.C.E, by śledzić mecze, turnieje i najlepsze akcje.",
     "followOn": "A.C.E na {network}"
+  },
+  "r49b": {
+    "title": "Ekwipunek Steam",
+    "private": "Ekwipunek prywatny",
+    "privateBody": "Ekwipunek Steam tego gracza jest prywatny.",
+    "empty": "Brak przedmiotów CS2 w publicznym ekwipunku.",
+    "unavailable": "Nie można teraz wczytać ekwipunku Steam.",
+    "hiddenOwner": "Twoja gablota ekwipunku jest ukryta na profilu.",
+    "hide": "Ukryj gablotę",
+    "show": "Pokaż gablotę",
+    "priceSource": "Ceny: najniższa oferta na Rynku Społeczności Steam, z pamięci podręcznej.",
+    "note": "Tylko prezentacja. A.C.E nigdy nie kupuje, nie sprzedaje ani nie wymienia przedmiotów Steam.",
+    "updated": "Zaktualizowano {date}",
+    "more": "+{n} więcej przedmiotów"
   }
 };

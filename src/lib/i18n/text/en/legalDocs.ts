@@ -3,7 +3,7 @@
     "effective": "Effective date: {date}",
     "contact": "Contact: support@ace-platform.gg",
     "definitionsTitle": "Definitions",
-    "definitions": "In these Terms, \"A.C.E.\", \"we\" and \"us\" mean the A.C.E operator. \"Site\" means ace-platform.gg. \"Account\" means the A.C.E. profile created through Steam sign-in. \"Plan\" means Free, Plus or Premium. \"Rulebook\" means the Competitive Rulebook at /rules. \"Admin\" means a staff member who applies the Rulebook to an event.",
+    "definitions": "In these Terms, \"A.C.E\", \"we\" and \"us\" mean the A.C.E operator. \"Site\" means ace-platform.gg. \"Account\" means the A.C.E profile created through Steam sign-in. \"Plan\" means Free, Plus or Premium. \"Rulebook\" means the Competitive Rulebook at /rules. \"Admin\" means a staff member who applies the Rulebook to an event.",
     "suspensionTitle": "Account restrictions and suspension",
     "suspension": "We may warn, restrict, suspend or close an Account that breaks these Terms or the Rulebook, for example for cheating, account sharing, ban evasion, harassment or fraud. A paid Plan never protects an Account from a restriction.",
     "disputesTitle": "Rule decisions and appeals",
@@ -21,11 +21,11 @@
     meta: {
       title: "Terms of Service",
       description:
-        "A.C.E. website Terms of Service for this Counter-Strike 2 competition site. Ranked, payments, and Anti-Cheat are not live.",
+        "A.C.E website Terms of Service for this Counter-Strike 2 competition site. Ranked, payments, and Anti-Cheat are not live.",
     },
     kicker: "ACE-LEGAL / TERMS OF SERVICE",
     title: "Terms of Service",
-    lede: "These Terms govern your use of the A.C.E. website and your A.C.E. Account. The Competitive Rulebook at /rules, the Privacy Policy, the Cookie Policy and the Premium terms form part of these Terms.",
+    lede: "These Terms govern your use of the A.C.E website and your A.C.E. Account. The Competitive Rulebook at /rules, the Privacy Policy, the Cookie Policy and the Premium terms form part of these Terms.",
     sections: {
       operator: {
         title: "1. Operator and independence",
@@ -36,7 +36,7 @@
       eligibility: {
         title: "2. Eligibility and accounts",
         paragraphs: [
-          "Accounts are created only through official Steam OpenID sign-in, one Account per person. A.C.E. never asks for your Steam password.",
+          "Accounts are created only through official Steam OpenID sign-in, one Account per person. A.C.E never asks for your Steam password.",
         ],
       },
       notActive: {
@@ -60,20 +60,20 @@
       liability: {
         title: "6. Limitation of liability",
         paragraphs: [
-          "To the extent permitted by law, A.C.E. is not liable for lost rank, lost cosmetics that were never real items, or third-party Steam / CS2 outages. Mandatory consumer rights in your country are not excluded where they cannot be waived.",
+          "To the extent permitted by law, A.C.E is not liable for lost rank, lost cosmetics that were never real items, or third-party Steam / CS2 outages. Mandatory consumer rights in your country are not excluded where they cannot be waived.",
         ],
       },
       copyright: {
         title: "7. Copyright in original site material",
         paragraphs: [
-          "Original text, page layout, emblems, and graphics created for this website belong to A.C.E. You may not copy, republish, or scrape that original material for another product without written permission. Where the law allows, A.C.E. may enforce that right, including by a claim. This notice does not file a case, does not set damages, and does not guarantee a court result.",
-          "Counter-Strike 2, Steam, and the map names Dust II, Mirage, Inferno, Nuke, Ancient, Anubis, and Train belong to Valve. A.C.E. does not claim them. Opening this website does not cancel a legal right and does not sign a contract.",
+          "Original text, page layout, emblems, and graphics created for this website belong to A.C.E. You may not copy, republish, or scrape that original material for another product without written permission. Where the law allows, A.C.E may enforce that right, including by a claim. This notice does not file a case, does not set damages, and does not guarantee a court result.",
+          "Counter-Strike 2, Steam, and the map names Dust II, Mirage, Inferno, Nuke, Ancient, Anubis, and Train belong to Valve. A.C.E does not claim them. Opening this website does not cancel a legal right and does not sign a contract.",
         ],
       },
       contact: {
         title: "8. Contact",
         paragraphs: [
-          "support@ace-platform.gg — A.C.E.",
+          "support@ace-platform.gg — A.C.E",
         ],
       },
     },
@@ -82,11 +82,11 @@
     meta: {
       title: "Privacy Policy",
       description:
-        "A.C.E. Privacy Policy: strict-necessity data, Steam OpenID only, no Steam passwords, no behavioral data sales.",
+        "A.C.E Privacy Policy: strict-necessity data, Steam OpenID only, no Steam passwords, no behavioral data sales.",
     },
     kicker: "ACE-LEGAL / PRIVACY POLICY",
     title: "Privacy Policy",
-    lede: "This Privacy Policy explains what personal data A.C.E. stores when you use this website, why, and for how long. If a translation differs from the English text, the English text applies.",
+    lede: "This Privacy Policy explains what personal data A.C.E stores when you use this website, why, and for how long. If a translation differs from the English text, the English text applies.",
     strictNecessity: {
       title: "Strict Necessity philosophy",
       intro:
@@ -95,14 +95,14 @@
       stored: [
         {
           label: "Verified 64-bit SteamID",
-          body: "returned by Steam’s official OpenID assertion, checked on the server before an A.C.E. account is created or updated.",
+          body: "returned by Steam’s official OpenID assertion, checked on the server before an A.C.E account is created or updated.",
         },
         {
           label: "Public Steam display name",
           body: "when a Steam Web API key is configured. This is a persona string, not an email inbox.",
         },
         {
-          label: "A.C.E. account records",
+          label: "A.C.E account records",
           body: "such as rank level, rating points, wins/losses, team membership, and session token hashes.",
         },
       ],
@@ -124,17 +124,17 @@
     steamBoundary: {
       title: "Third-party embed and Steam OpenID boundary",
       callback: {
-        before: "Steam sign-in leaves A.C.E., authenticates on Steam, and returns to",
+        before: "Steam sign-in leaves A.C.E, authenticates on Steam, and returns to",
         after:
-          ". The server verifies the OpenID assertion (including claimed identity and Steam’s signed parameters) before writing a session. Steam’s privacy policy governs data Steam holds. A.C.E. only persists the verified SteamID and public persona fields needed to operate the account.",
+          ". The server verifies the OpenID assertion (including claimed identity and Steam’s signed parameters) before writing a session. Steam’s privacy policy governs data Steam holds. A.C.E only persists the verified SteamID and public persona fields needed to operate the account.",
       },
       footerLinks:
-        "External network icons in the footer are directory links to public websites. They are not official A.C.E. accounts and do not embed tracking widgets.",
+        "External network icons in the footer are directory links to public websites. They are not official A.C.E accounts and do not embed tracking widgets.",
     },
     rights: {
       title: "Your rights",
       before:
-        "If you are in a region with personal-data rights, you may request access, correction, or deletion of your A.C.E. account data by emailing",
+        "If you are in a region with personal-data rights, you may request access, correction, or deletion of your A.C.E account data by emailing",
       after:
         ". Deleting a website Account does not change a Steam or VAC decision made by Valve.",
     },
@@ -154,14 +154,14 @@
     meta: {
       title: "Cookie Policy",
       description:
-        "A.C.E. cookie and telemetry privacy audit. Essential session cookies only unless you opt into reserved optional categories.",
+        "A.C.E cookie and telemetry privacy audit. Essential session cookies only unless you opt into reserved optional categories.",
     },
     kicker: "ACE-LEGAL / COOKIE POLICY",
     title: "Cookie Policy",
     lede: "This Cookie Policy lists the cookies this website actually sets, the categories reserved for later, and what is not collected.",
     audit: {
       title: "Trackers on this website",
-      body: "A.C.E. does not run advertising pixels, Google Analytics, Meta Pixel, fingerprinting SDKs, or other third-party behavioral trackers on this public website. Optional “Analytics Trackers” and “Marketing Trackers” in the consent tray are categories only. Checking them does not load a script today. If a tracker is added later, it will read the stored preference first and stay off unless you opted in.",
+      body: "A.C.E does not run advertising pixels, Google Analytics, Meta Pixel, fingerprinting SDKs, or other third-party behavioral trackers on this public website. Optional “Analytics Trackers” and “Marketing Trackers” in the consent tray are categories only. Checking them does not load a script today. If a tracker is added later, it will read the stored preference first and stay off unless you opted in.",
     },
     essential: {
       title: "Essential cookies [Required / Locked]",
@@ -179,7 +179,7 @@
     },
     marketing: {
       title: "Marketing Trackers [Optional]",
-      body: "Reserved. A.C.E. does not sell, rent, or broker behavioral profiles. There is no marketing tag manager on this site.",
+      body: "Reserved. A.C.E does not sell, rent, or broker behavioral profiles. There is no marketing tag manager on this site.",
     },
     change: {
       title: "How to change your choice",

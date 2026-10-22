@@ -5,10 +5,10 @@ export const account: TextBag["account"] = {
     "metaTitle": "Spielerstatistiken",
     "kicker": "SPIELERSTATISTIKEN",
     "title": "Spielerstatistiken",
-    "lede": "Rating-Verlauf aus deinen erfassten A.C.E.-Matches, mit Anzeigen für Headshot-% und Treffsicherheit. Enthalten in A.C.E Plus ($4/Monat) und A.C.E Premium ($7/Monat).",
+    "lede": "Rating-Verlauf aus deinen erfassten A.C.E-Matches, mit Anzeigen für Headshot-% und Treffsicherheit. Enthalten in A.C.E Plus ($4/Monat) und A.C.E Premium ($7/Monat).",
     "movementTitle": "Rating-Verlauf",
-    "movementNote": "Jeder Punkt ist eine Rating-Änderung aus einem erfassten A.C.E.-Match.",
-    "noMatches": "Noch keine erfassten Matches, daher ist die Grafik leer. Sie füllt sich nach deinem ersten erfassten A.C.E.-Match.",
+    "movementNote": "Jeder Punkt ist eine Rating-Änderung aus einem erfassten A.C.E-Match.",
+    "noMatches": "Noch keine erfassten Matches, daher ist die Grafik leer. Sie füllt sich nach deinem ersten erfassten A.C.E-Match.",
     "currentLabel": "Aktuelles Rating",
     "netLabel": "Netto-Änderung",
     "changesLabel": "Erfasste Änderungen",
@@ -21,7 +21,7 @@ export const account: TextBag["account"] = {
     "lockedBody": "Dein gespeicherter Plan ist Free. Plus ($4/Monat) und Premium ($7/Monat) schalten diese Seite frei. Demnächst: Einen Checkout gibt es noch nicht.",
     "signIn": "Melde dich mit Steam an, um deine Spielerstatistiken zu sehen.",
     "plansLink": "Pläne ansehen",
-    "rosterNote": "Beispiel-Kaderprofil: Diese Spieler haben keine erfassten A.C.E.-Matches, daher zeigen die Statistiken keine Zahlen.",
+    "rosterNote": "Beispiel-Kaderprofil: Diese Spieler haben keine erfassten A.C.E-Matches, daher zeigen die Statistiken keine Zahlen.",
     "dashTitle": "Statistiken und Analyse",
     "dashStats": "Spielerstatistiken öffnen",
     "dashAnalysis": "Match-Analyse öffnen (Premium)",
@@ -38,7 +38,7 @@ export const account: TextBag["account"] = {
     "stats": {
       "accountStatus": "Kontostatus",
       "subscription": "Abonnement",
-      "rank": "A.C.E.-Rang",
+      "rank": "A.C.E-Rang",
       "ratingPoints": "Wertungspunkte",
       "wins": "Siege",
       "losses": "Niederlagen",
@@ -71,7 +71,7 @@ export const account: TextBag["account"] = {
     "rankedButton": "Ranglistenspiel finden",
     "roster": {
       "title": "5v5-Aufstellung",
-      "body": "Ein Kapitän. Vier Einladungen. Kapitäne laden andere A.C.E.-Kontokennungen ein, die erst nach einer geprüften Steam-Anmeldung entstehen."
+      "body": "Ein Kapitän. Vier Einladungen. Kapitäne laden andere A.C.E-Kontokennungen ein, die erst nach einer geprüften Steam-Anmeldung entstehen."
     },
     "pendingInvites": "Ausstehende Einladungen"
   },
@@ -86,7 +86,7 @@ export const account: TextBag["account"] = {
     },
     "invite": {
       "failed": "Einladung fehlgeschlagen.",
-      "label": "Freien Spieler über SteamID oder A.C.E.-Kontokennung einladen",
+      "label": "Freien Spieler über SteamID oder A.C.E-Kontokennung einladen",
       "submitAria": "Mannschaftseinladung senden",
       "submit": "Einladung senden"
     }
@@ -94,8 +94,8 @@ export const account: TextBag["account"] = {
   "profile": {
     "meta": {
       "notFoundTitle": "Spielerprofil",
-      "title": "{name} · A.C.E.-Profil",
-      "description": "A.C.E.-Spielerakte. Plus- und Premium-Sitzungen schalten Telemetrie-Verlaufsgrafiken frei."
+      "title": "{name} · A.C.E-Profil",
+      "description": "A.C.E-Spielerakte. Plus- und Premium-Sitzungen schalten Telemetrie-Verlaufsgrafiken frei."
     },
     "kicker": "Spieleridentität",
     "bannerPlaceholder": "Profilbanner · demnächst",
@@ -132,7 +132,7 @@ export const account: TextBag["account"] = {
     "back": "Zurück zur Clan-Aufstellung"
   },
   "networks": {
-    "note": "Ein hier eingegebener Link bleibt in diesem Browser und wird nicht gespeichert. A.C.E. fragt niemals nach einem Steam-Passwort.",
+    "note": "Ein hier eingegebener Link bleibt in diesem Browser und wird nicht gespeichert. A.C.E fragt niemals nach einem Steam-Passwort.",
     "labels": {
       "steam": "Steam-Profil"
     },
@@ -150,9 +150,9 @@ export const account: TextBag["account"] = {
       "title": "Anmeldefehler"
     },
     "title": "Die Steam-Anmeldung wurde nicht abgeschlossen",
-    "notConfigured": "Steam OpenID ist auf diesem Server noch nicht eingerichtet. A.C.E. fragt niemals nach einem Steam-Passwort.",
-    "unavailable": "Steam hat auf die Prüfungsanfrage nicht geantwortet. Versuche es gleich noch einmal. A.C.E. fragt niemals nach einem Steam-Passwort.",
-    "unverified": "Der OpenID-Rückruf konnte auf dem Server nicht geprüft werden. A.C.E. fragt niemals nach einem Steam-Passwort.",
+    "notConfigured": "Steam OpenID ist auf diesem Server noch nicht eingerichtet. A.C.E fragt niemals nach einem Steam-Passwort.",
+    "unavailable": "Steam hat auf die Prüfungsanfrage nicht geantwortet. Versuche es gleich noch einmal. A.C.E fragt niemals nach einem Steam-Passwort.",
+    "unverified": "Der OpenID-Rückruf konnte auf dem Server nicht geprüft werden. A.C.E fragt niemals nach einem Steam-Passwort.",
     "returnHome": "Zurück zum Start"
   }
 };

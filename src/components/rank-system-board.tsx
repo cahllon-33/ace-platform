@@ -23,7 +23,7 @@ export function RankSystemBoard({
   art = "standard",
 }: {
   liveRating?: number | null;
-  /** "premium" shows the original illustrated A.C.E. set (A.C.E Premium profile art). */
+  /** "premium" shows the original illustrated A.C.E set (A.C.E Premium profile art). */
   art?: RankArt;
 }) {
   const { t } = useI18n();

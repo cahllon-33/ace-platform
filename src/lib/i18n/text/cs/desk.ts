@@ -3,7 +3,7 @@ import type { TextBag } from "../types";
 export const desk: TextBag["desk"] = {
   shop: {
     meta: {
-      title: "Tržiště A.C.E.",
+      title: "Tržiště A.C.E",
       description:
         "Karty šampionátových odměn. Obchod a odměny se brzy otevřou.",
     },

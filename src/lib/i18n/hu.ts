@@ -4,7 +4,7 @@ export const HU: MessageBag = {
  slogan: "JÁTSZ. VERSENYEZZ. LÉGY ELIT.",
  kicker: "CS2 ELIT VERSENYPLATFORMA",
  lede:
- "Az A.C.E. egy Counter-Strike 2 versenyoldal. A bejelentkezés a Steam OpenID használatával történik. Az anti-cheat, a meccsszerverek és a díjkifizetések itt nem futnak.",
+ "Az A.C.E egy Counter-Strike 2 versenyoldal. A bejelentkezés a Steam OpenID használatával történik. Az anti-cheat, a meccsszerverek és a díjkifizetések itt nem futnak.",
  playNow: "JÁTSSZ MOST",
  signInSteam: "Bejelentkezés a STEAM segítségével",
  connectProfile: "Profil csatlakoztatása",
@@ -16,14 +16,14 @@ export const HU: MessageBag = {
  registeredTeams: "Regisztrált csapatok: 0/100",
  registered: "Regisztrált",
  teams: "Csapatok",
- ranksTitle: "A.C.E. rangok",
+ ranksTitle: "A.C.E rangok",
  championshipLoot: "Bajnoki zsákmányrendszer",
  calibrationStatus: "Rangkalibráció állapota",
  navTournaments: "BAJNOKSÁGOK",
  brandSubline: "AUTONÓM ANTI-CHEAT • VERSENYKALIBRÁCIÓ • ELIT JÁTÉKOSOK",
  languagesKicker: "Nyelvek",
  step1:
- "Hozz létre fiókot a hivatalos Steam OpenID használatával. Az A.C.E. soha nem kér Steam jelszót.",
+ "Hozz létre fiókot a hivatalos Steam OpenID használatával. Az A.C.E soha nem kér Steam jelszót.",
  step2:
  "A személyazonosság-ellenőrzés az A.C.E Shielddel érkezik.",
  step3:
@@ -36,7 +36,7 @@ export const HU: MessageBag = {
  kd: "K/D",
  statsEmpty:
  "A statisztikáid az első rögzített mérkőzéseid után jelennek meg itt.",
- statsLive: "Győzelmek és vereségek az A.C.E. fiókból. A K/D még nincs tárolva.",
+ statsLive: "Győzelmek és vereségek az A.C.E fiókból. A K/D még nincs tárolva.",
  membership: "TAGSÁG",
  membershipLede:
  "Ingyenes $0. Plus $4/hó. Premium $7/hó. A fizetős csomagok soha nem vásárolnak értékelést, könnyebb ellenfeleket vagy elsőbbséget a sorban. A fizetés hamarosan elindul.",
@@ -98,7 +98,7 @@ export const HU: MessageBag = {
  "Tudásközpont a beállításhoz, kalibráláshoz és előfizetéshez. A csalásellenes rendszer, a rangsorolt sorok és a fizetés hamarosan érkeznek.",
  supportCat1Title: "Kernel anti-cheat beállítása",
  supportCat1Body:
- "Az illesztőprogram-telepítés kérdései, a hardvermegfelelés és a Secure Boot telemetria módosításai itt jövőbeli kernelirányelvként vannak leírva. Az A.C.E. nem ad ki működő anti-cheat klienst, nem telepít illesztőprogramokat, és ezen a weboldalon nem gyűjt Secure Boot vagy HWID adatot.",
+ "Az illesztőprogram-telepítés kérdései, a hardvermegfelelés és a Secure Boot telemetria módosításai itt jövőbeli kernelirányelvként vannak leírva. Az A.C.E nem ad ki működő anti-cheat klienst, nem telepít illesztőprogramokat, és ezen a weboldalon nem gyűjt Secure Boot vagy HWID adatot.",
  supportCat2Title: "Meccskeresés és kalibráció",
  supportCat2Body:
  "Tíz helyezési meccs, a divíziószámítás sebessége és a szezonális értékelés újrakalibrálása a tervezett kalibráció. A rangsorolt MECCS KERESÉSE hiba esetén zárva marad, amíg nincs ellenőrzött anti-cheat útvonal. Az ezen az oldalon látható számok nem élő meccseredmények.",
@@ -111,7 +111,7 @@ export const HU: MessageBag = {
  "A jegyalapú támogatás a versenyszintű bétával indul. Addig a kapcsolatfelvételi oldalon érsz el minket.",
  supportDisclosure:
  "Az élő támogatás a csalásellenes rendszerhez, a párosításhoz és a fizetéshez a versenyszintű bétával indul.",
- contactKicker: "A.C.E. KAPCSOLAT · VÁLLALATI TERMINÁL",
+ contactKicker: "A.C.E KAPCSOLAT · VÁLLALATI TERMINÁL",
  contactTitle: "Vállalati kapcsolati terminál",
  contactLede:
  "Szponzorációs, média-, technikai és általános megkeresések. Az ide beírt üzenetek nem kerülnek elküldésre, és nem tárolódnak telemetriaként.",
@@ -125,19 +125,19 @@ export const HU: MessageBag = {
  contactInquiryTechnical: "Technikai",
  contactInquiryGeneral: "Általános",
  contactConsent:
- "Kifejezetten hozzájárulok az adatminimalizálás tárolási feltételeihez az A.C.E. adatvédelmi szabályzata szerint.",
+ "Kifejezetten hozzájárulok az adatminimalizálás tárolási feltételeihez az A.C.E adatvédelmi szabályzata szerint.",
  contactSend: "BIZTONSÁGOS TELEMETRIAÜZENET KÜLDÉSE",
  contactCorporate:
- "A.C.E. | Biztonságos e-mail-átjáró: support@ace-platform.gg",
+ "A.C.E | Biztonságos e-mail-átjáró: support@ace-platform.gg",
  contactModalTitle: "Online kapcsolatfelvételi űrlap · hamarosan",
  contactModalBody:
- "Az űrlapról küldött üzenetek még nem kerülnek kézbesítésre. Az űrlap az ügyfélszolgálatunkkal együtt indul. Az A.C.E. soha nem kéri a Steam-jelszavadat.",
+ "Az űrlapról küldött üzenetek még nem kerülnek kézbesítésre. Az űrlap az ügyfélszolgálatunkkal együtt indul. Az A.C.E soha nem kéri a Steam-jelszavadat.",
  contactDisclosure:
- "Az online kapcsolatfelvételi űrlap hamarosan elindul. Az A.C.E. soha nem kéri a Steam-jelszavadat.",
+ "Az online kapcsolatfelvételi űrlap hamarosan elindul. Az A.C.E soha nem kéri a Steam-jelszavadat.",
  closeOverlay: "Bezárás",
- loadingAce: "A.C.E. betöltése...",
+ loadingAce: "A.C.E betöltése...",
  supportCategory: "{n}. KATEGÓRIA",
- shopKicker: "A.C.E. BOLT · HAMAROSAN",
+ shopKicker: "A.C.E BOLT · HAMAROSAN",
  shopTitle: "A.C.E. PIACTÉR — ELIT FEGYVERTESTRESZABÁS",
  shopLede:
  "Fegyverkártyák, profilkeretek és ligahozzáférési címkék előnézete. Ezek közül egyik sem kézbesített tárgy.",
@@ -172,8 +172,8 @@ export const HU: MessageBag = {
  "A győzelmi arány és a sorozatok a rögzített mérkőzésekből töltődnek fel.",
  squadInviteLabel: "SZABADÜGYNÖK MEGHÍVÁSA STEAMID ALAPJÁN",
  squadInviteNote:
- "Csak hivatalos Steam OpenID. Illessz be egy SteamID értéket, amely már egy A.C.E. fiókhoz van kötve. Soha ne adj meg Steam jelszót.",
- squadInvitePlaceholder: "SteamID64 vagy A.C.E. fiókazonosító",
+ "Csak hivatalos Steam OpenID. Illessz be egy SteamID értéket, amely már egy A.C.E fiókhoz van kötve. Soha ne adj meg Steam jelszót.",
+ squadInvitePlaceholder: "SteamID64 vagy A.C.E fiókazonosító",
  squadSend: "BIZTONSÁGOS MEGHÍVÓ KÜLDÉSE >",
  squadCaptainOnly: "Meghívót csak a kijelölt kapitány küldhet.",
  squadInviteFailed: "A meghívás sikertelen.",
@@ -190,10 +190,10 @@ export const HU: MessageBag = {
  tourneyLoading: "Lebonyolítási elrendezés betöltése…",
  platformNoticeTitle: "PLATFORMÉRTESÍTÉS",
  platformNoticeBody:
- "A bajnoki táblák, a ranglisták és a skinkártyák ezen a weboldalon példák. Nem Valve-tárgyak, és nem fizetett díjak. Ez az oldal nem futtat anti-cheat programot. Az oldal megnyitása nem szüntet meg jogot, és nem jelent szerződéskötést. Az A.C.E. nem gyűjt hardverazonosítót, és nem töröl fiókot azért, mert valaki ügyvéddel vagy bírósággal lép kapcsolatba.",
+ "A bajnoki táblák, a ranglisták és a skinkártyák ezen a weboldalon példák. Nem Valve-tárgyak, és nem fizetett díjak. Ez az oldal nem futtat anti-cheat programot. Az oldal megnyitása nem szüntet meg jogot, és nem jelent szerződéskötést. Az A.C.E nem gyűjt hardverazonosítót, és nem töröl fiókot azért, mert valaki ügyvéddel vagy bírósággal lép kapcsolatba.",
  copyrightLine: "© 2026 A.C.E. Nem áll kapcsolatban a Valve-val.",
  copyrightClaim:
- "Az eredeti szöveg, az elrendezés, az emblémák és a grafikák ezen a weboldalon az A.C.E. tulajdonát képezik. Írásos engedély nélkül másolni őket nem szabad. Az A.C.E. érvényesítheti ezt a jogot. A Counter-Strike 2 és a pályanevei a Valve tulajdonát képezik.",
+ "Az eredeti szöveg, az elrendezés, az emblémák és a grafikák ezen a weboldalon az A.C.E tulajdonát képezik. Írásos engedély nélkül másolni őket nem szabad. Az A.C.E érvényesítheti ezt a jogot. A Counter-Strike 2 és a pályanevei a Valve tulajdonát képezik.",
  shieldServerValue: "Hamarosan",
  tvGames: "Játéktelevízió",
  pathsKicker: "ÖT ÚTVONAL EZEN AZ OLDALON",

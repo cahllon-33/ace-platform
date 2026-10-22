@@ -58,12 +58,12 @@
   },
   "meta": {
     "title": "Competitive Ranks",
-    "description": "The ten A.C.E. ranks, from Iron Recruit to A.C.E. Legend, with divisions and rating floors."
+    "description": "The ten A.C.E ranks, from Iron Recruit to A.C.E Legend, with divisions and rating floors."
   },
   "hero": {
     "kicker": "CALIBRATION",
     "title": "Competitive Ranks",
-    "lede": "Ten tiers from Recruit to A.C.E. Legend, each with divisions {divisions}. Drag or use the arrow keys to rotate an emblem. Signed in, you see your own rating; otherwise each tier floor."
+    "lede": "Ten tiers from Recruit to A.C.E Legend, each with divisions {divisions}. Drag or use the arrow keys to rotate an emblem. Signed in, you see your own rating; otherwise each tier floor."
   },
   "codexLink": "Open the Calibration Codex",
   "document": {
@@ -115,9 +115,9 @@
     }
   },
   "board": {
-    "selectEmblem": "Select A.C.E. {name} rank emblem, level {level}",
-    "emblemAlt": "A.C.E. Custom 3D Crystalline Level {level} {crystal} {name} emblem profile badge",
-    "emblemAltLegend": "A.C.E. Custom 3D Crystalline Level {level} Emblem Profile Badge",
+    "selectEmblem": "Select A.C.E {name} rank emblem, level {level}",
+    "emblemAlt": "A.C.E Custom 3D Crystalline Level {level} {crystal} {name} emblem profile badge",
+    "emblemAltLegend": "A.C.E Custom 3D Crystalline Level {level} Emblem Profile Badge",
     "premium": "TOP TIER"
   },
   "division": {
@@ -146,7 +146,7 @@
     "kicker": "PREMIUM RANKS",
     "plan": "A.C.E PREMIUM · $7/month only",
     "title": "Premium rank art",
-    "lede": "The original illustrated A.C.E. rank set: ten crystal emblems with III/II/I divisions, the rating protocol, the Legend detail card and the drag-to-rotate 3D viewer. It is profile art for Premium members. It reads the same Rating Points ladder as the standard ranks and gives no competitive advantage.",
+    "lede": "The original illustrated A.C.E rank set: ten crystal emblems with III/II/I divisions, the rating protocol, the Legend detail card and the drag-to-rotate 3D viewer. It is profile art for Premium members. It reads the same Rating Points ladder as the standard ranks and gives no competitive advantage.",
     "demo": "Demo values: progress, win-rate and division figures on this board are samples, not live stats. When you are signed in, the rating shown is your stored rating.",
     "locked": "Coming soon: checkout does not exist yet, so no account is Premium today. The server applies Premium rank art to a profile only when its stored plan is Premium.",
     "standardKicker": "STANDARD RANKS",

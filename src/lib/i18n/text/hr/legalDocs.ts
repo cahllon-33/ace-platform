@@ -5,7 +5,7 @@ export const legalDocs: TextBag["legalDocs"] = {
     "effective": "Datum stupanja na snagu: {date}",
     "contact": "Kontakt: support@ace-platform.gg",
     "definitionsTitle": "Definicije",
-    "definitions": "U ovim Uvjetima „A.C.E.”, „mi” znači A.C.E. „Stranica” znači ace-platform.gg. „Račun” znači A.C.E. profil stvoren prijavom putem Steama. „Plan” znači Free, Plus ili Premium. „Pravilnik” znači Natjecateljski pravilnik na /rules. „Admin” znači član osoblja koji primjenjuje Pravilnik na događaju.",
+    "definitions": "U ovim Uvjetima „A.C.E”, „mi” znači A.C.E „Stranica” znači ace-platform.gg. „Račun” znači A.C.E profil stvoren prijavom putem Steama. „Plan” znači Free, Plus ili Premium. „Pravilnik” znači Natjecateljski pravilnik na /rules. „Admin” znači član osoblja koji primjenjuje Pravilnik na događaju.",
     "suspensionTitle": "Ograničenja i suspenzija računa",
     "suspension": "Možemo upozoriti, ograničiti, suspendirati ili zatvoriti Račun koji krši ove Uvjete ili Pravilnik, npr. zbog varanja, dijeljenja računa, izbjegavanja zabrane, uznemiravanja ili prijevare. Plaćeni plan nikad ne štiti Račun od ograničenja.",
     "disputesTitle": "Odluke o pravilima i žalbe",
@@ -21,11 +21,11 @@ export const legalDocs: TextBag["legalDocs"] = {
   "terms": {
     "meta": {
       "title": "Uvjeti korištenja",
-      "description": "Uvjeti korištenja web-stranice A.C.E. za ovu stranicu Counter-Strike 2 natjecanja. Ranked, plaćanja i anti-cheat nisu aktivni."
+      "description": "Uvjeti korištenja web-stranice A.C.E za ovu stranicu Counter-Strike 2 natjecanja. Ranked, plaćanja i anti-cheat nisu aktivni."
     },
     "kicker": "ACE-LEGAL / UVJETI KORIŠTENJA",
     "title": "Uvjeti korištenja",
-    "lede": "Ovi Uvjeti uređuju korištenje A.C.E. stranice i tvog A.C.E. Računa. Natjecateljski pravilnik na /rules, Pravila privatnosti, Pravila o kolačićima i Premium uvjeti dio su ovih Uvjeta.",
+    "lede": "Ovi Uvjeti uređuju korištenje A.C.E stranice i tvog A.C.E. Računa. Natjecateljski pravilnik na /rules, Pravila privatnosti, Pravila o kolačićima i Premium uvjeti dio su ovih Uvjeta.",
     "sections": {
       "operator": {
         "title": "1. Operater i neovisnost",
@@ -36,7 +36,7 @@ export const legalDocs: TextBag["legalDocs"] = {
       "eligibility": {
         "title": "2. Podobnost i računi",
         "paragraphs": [
-          "Računi se stvaraju samo službenom prijavom Steam OpenID, jedan Račun po osobi. A.C.E. nikad ne traži tvoju Steam lozinku."
+          "Računi se stvaraju samo službenom prijavom Steam OpenID, jedan Račun po osobi. A.C.E nikad ne traži tvoju Steam lozinku."
         ]
       },
       "notActive": {
@@ -60,20 +60,20 @@ export const legalDocs: TextBag["legalDocs"] = {
       "liability": {
         "title": "6. Ograničenje odgovornosti",
         "paragraphs": [
-          "U mjeri dopuštenoj zakonom, A.C.E. ne odgovara za izgubljeni rang, izgubljenu kozmetiku koja nikad nije bila stvarni predmet ni za prekide Steama / CS2 trećih strana. Obvezna potrošačka prava u tvojoj zemlji nisu isključena ako se ne mogu odreći."
+          "U mjeri dopuštenoj zakonom, A.C.E ne odgovara za izgubljeni rang, izgubljenu kozmetiku koja nikad nije bila stvarni predmet ni za prekide Steama / CS2 trećih strana. Obvezna potrošačka prava u tvojoj zemlji nisu isključena ako se ne mogu odreći."
         ]
       },
       "copyright": {
         "title": "7. Autorsko pravo na izvorni materijal stranice",
         "paragraphs": [
-          "Izvorni tekst, raspored stranica, amblemi i grafika stvoreni za ovu stranicu pripadaju A.C.E. Ne smiješ kopirati, ponovno objavljivati ni prikupljati taj izvorni materijal za drugi proizvod bez pisanog dopuštenja. Gdje zakon dopušta, A.C.E. može ostvarivati to pravo, uključujući tužbom. Ova obavijest ne pokreće postupak, ne određuje štetu i ne jamči sudski ishod.",
-          "Counter-Strike 2, Steam i nazivi mapa Dust II, Mirage, Inferno, Nuke, Ancient, Anubis i Train pripadaju Valveu. A.C.E. ih ne prisvaja. Otvaranje ove stranice ne poništava zakonsko pravo i ne potpisuje ugovor."
+          "Izvorni tekst, raspored stranica, amblemi i grafika stvoreni za ovu stranicu pripadaju A.C.E. Ne smiješ kopirati, ponovno objavljivati ni prikupljati taj izvorni materijal za drugi proizvod bez pisanog dopuštenja. Gdje zakon dopušta, A.C.E može ostvarivati to pravo, uključujući tužbom. Ova obavijest ne pokreće postupak, ne određuje štetu i ne jamči sudski ishod.",
+          "Counter-Strike 2, Steam i nazivi mapa Dust II, Mirage, Inferno, Nuke, Ancient, Anubis i Train pripadaju Valveu. A.C.E ih ne prisvaja. Otvaranje ove stranice ne poništava zakonsko pravo i ne potpisuje ugovor."
         ]
       },
       "contact": {
         "title": "8. Kontakt",
         "paragraphs": [
-          "support@ace-platform.gg — A.C.E."
+          "support@ace-platform.gg — A.C.E"
         ]
       }
     }
@@ -81,11 +81,11 @@ export const legalDocs: TextBag["legalDocs"] = {
   "privacy": {
     "meta": {
       "title": "Pravila privatnosti",
-      "description": "Pravila privatnosti A.C.E.: samo nužni podaci, samo Steam OpenID, bez Steam lozinki, bez prodaje podataka o ponašanju."
+      "description": "Pravila privatnosti A.C.E: samo nužni podaci, samo Steam OpenID, bez Steam lozinki, bez prodaje podataka o ponašanju."
     },
     "kicker": "ACE-LEGAL / PRAVILA PRIVATNOSTI",
     "title": "Pravila privatnosti",
-    "lede": "Ova Pravila privatnosti objašnjavaju koje osobne podatke A.C.E. čuva kad koristiš ovu stranicu, zašto i koliko dugo. Ako se prijevod razlikuje od engleskog teksta, vrijedi engleski tekst.",
+    "lede": "Ova Pravila privatnosti objašnjavaju koje osobne podatke A.C.E čuva kad koristiš ovu stranicu, zašto i koliko dugo. Ako se prijevod razlikuje od engleskog teksta, vrijedi engleski tekst.",
     "strictNecessity": {
       "title": "Načelo stroge nužnosti",
       "intro": "Prikupljamo minimalne podatke računa potrebne za identifikaciju natjecateljskog igrača i zaustavljanje očite prijevare na vlastitoj usluzi. Ne prikupljamo nepotrebne zapise, ne izvlačimo privatne Steam inventare i ne prodajemo podatke o ponašanju trećih strana.",
@@ -93,14 +93,14 @@ export const legalDocs: TextBag["legalDocs"] = {
       "stored": [
         {
           "label": "Provjereni 64-bitni SteamID",
-          "body": "koji vraća službena Steamova OpenID potvrda, provjeren na poslužitelju prije stvaranja ili ažuriranja A.C.E. računa."
+          "body": "koji vraća službena Steamova OpenID potvrda, provjeren na poslužitelju prije stvaranja ili ažuriranja A.C.E računa."
         },
         {
           "label": "Javno Steam ime za prikaz",
           "body": "kad je konfiguriran Steam Web API ključ. Ovo je naziv persone, ne pretinac e-pošte."
         },
         {
-          "label": "Zapisi A.C.E. računa",
+          "label": "Zapisi A.C.E računa",
           "body": "kao što su razina ranga, bodovi rejtinga, pobjede/porazi, članstvo u timu i sažeci tokena sesije."
         }
       ],
@@ -121,14 +121,14 @@ export const legalDocs: TextBag["legalDocs"] = {
     "steamBoundary": {
       "title": "Ugradnje trećih strana i granica Steam OpenID-a",
       "callback": {
-        "before": "Steam prijava napušta A.C.E., autentificira se na Steamu i vraća se na",
-        "after": ". Poslužitelj provjerava OpenID potvrdu (uključujući navedeni identitet i Steamove potpisane parametre) prije zapisivanja sesije. Steamova pravila privatnosti uređuju podatke koje drži Steam. A.C.E. čuva samo provjereni SteamID i javna polja persone potrebna za rad računa."
+        "before": "Steam prijava napušta A.C.E, autentificira se na Steamu i vraća se na",
+        "after": ". Poslužitelj provjerava OpenID potvrdu (uključujući navedeni identitet i Steamove potpisane parametre) prije zapisivanja sesije. Steamova pravila privatnosti uređuju podatke koje drži Steam. A.C.E čuva samo provjereni SteamID i javna polja persone potrebna za rad računa."
       },
-      "footerLinks": "Ikone vanjskih mreža u podnožju poveznice su imenika na javne stranice. Nisu službeni A.C.E. računi i ne ugrađuju widgete za praćenje."
+      "footerLinks": "Ikone vanjskih mreža u podnožju poveznice su imenika na javne stranice. Nisu službeni A.C.E računi i ne ugrađuju widgete za praćenje."
     },
     "rights": {
       "title": "Tvoja prava",
-      "before": "Ako si u regiji s pravima na osobne podatke, možeš zatražiti pristup, ispravak ili brisanje podataka svog A.C.E. računa slanjem e-pošte na",
+      "before": "Ako si u regiji s pravima na osobne podatke, možeš zatražiti pristup, ispravak ili brisanje podataka svog A.C.E računa slanjem e-pošte na",
       "after": ". Brisanje računa na stranici ne mijenja nijednu Steam ili VAC odluku tvrtke Valve."
     },
     "cookies": {
@@ -145,14 +145,14 @@ export const legalDocs: TextBag["legalDocs"] = {
   "cookiePolicy": {
     "meta": {
       "title": "Pravila o kolačićima",
-      "description": "A.C.E. revizija privatnosti kolačića i telemetrije. Samo nužni kolačići sesije, osim ako odabereš rezervirane neobavezne kategorije."
+      "description": "A.C.E revizija privatnosti kolačića i telemetrije. Samo nužni kolačići sesije, osim ako odabereš rezervirane neobavezne kategorije."
     },
     "kicker": "ACE-LEGAL / PRAVILA O KOLAČIĆIMA",
     "title": "Pravila o kolačićima",
     "lede": "Ova Pravila o kolačićima navode kolačiće koje ova stranica stvarno postavlja, kategorije rezervirane za kasnije i ono što se ne prikuplja.",
     "audit": {
       "title": "Alati za praćenje na ovoj stranici",
-      "body": "A.C.E. na ovoj javnoj stranici ne pokreće oglasne piksele, Google Analytics, Meta Pixel, SDK-ove za otiske ni druge pratitelje ponašanja trećih strana. Neobavezni „Analitički pratitelji” i „Marketinški pratitelji” u traci privole samo su kategorije. Njihovo označavanje danas ne učitava skriptu. Ako se pratitelj doda kasnije, najprije će pročitati spremljenu postavku i ostati isključen osim ako si pristao."
+      "body": "A.C.E na ovoj javnoj stranici ne pokreće oglasne piksele, Google Analytics, Meta Pixel, SDK-ove za otiske ni druge pratitelje ponašanja trećih strana. Neobavezni „Analitički pratitelji” i „Marketinški pratitelji” u traci privole samo su kategorije. Njihovo označavanje danas ne učitava skriptu. Ako se pratitelj doda kasnije, najprije će pročitati spremljenu postavku i ostati isključen osim ako si pristao."
     },
     "essential": {
       "title": "Nužni kolačići [Obavezno / Zaključano]",
@@ -169,7 +169,7 @@ export const legalDocs: TextBag["legalDocs"] = {
     },
     "marketing": {
       "title": "Marketinški pratitelji [Neobavezno]",
-      "body": "Rezervirano. A.C.E. ne prodaje, ne iznajmljuje i ne posreduje profile ponašanja. Na ovoj stranici nema marketinškog upravitelja oznaka."
+      "body": "Rezervirano. A.C.E ne prodaje, ne iznajmljuje i ne posreduje profile ponašanja. Na ovoj stranici nema marketinškog upravitelja oznaka."
     },
     "change": {
       "title": "Kako promijeniti izbor",

@@ -2,7 +2,7 @@ import type { PrestigeBadge } from "@/lib/prestige";
 import "./prestige-emblem.css";
 
 /**
- * Prestige emblem (R41b): original A.C.E. art per level on a transparent WebP, shown like the rank
+ * Prestige emblem (R41b): original A.C.E art per level on a transparent WebP, shown like the rank
  * orbs: 3D turn with parallax layers (halo behind, embers in front), per-theme fire glow, rising flame
  * plumes and embers, and a light sweep. Premium = full effect; Plus = cooler platinum glow, fewer embers.
  * Transform/opacity-only animation (GPU-composited). Reduced motion = static image + static glow.

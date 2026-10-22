@@ -1,7 +1,7 @@
 import type { TextBag } from "../types";
 
 export const consent: TextBag["consent"] = {
-  "valveDisclaimer": "A.C.E. 是一个独立的《反恐精英 2》(Counter-Strike 2)竞技网站,与 Valve Corporation 无关联,也未获其授权或认可。Steam 和 Counter-Strike 是其各自所有者的商标。竞赛规则是 A.C.E. 为该游戏自行编写的文本。",
+  "valveDisclaimer": "A.C.E 是一个独立的《反恐精英 2》(Counter-Strike 2)竞技网站,与 Valve Corporation 无关联,也未获其授权或认可。Steam 和 Counter-Strike 是其各自所有者的商标。竞赛规则是 A.C.E 为该游戏自行编写的文本。",
   "acceptance": {
     "label": "我明确接受服务条款、反作弊最终用户许可协议和隐私政策。",
     "readBefore": "阅读",
@@ -21,7 +21,7 @@ export const consent: TextBag["consent"] = {
     "optional": "可选"
   },
   "banner": {
-    "kicker": "A.C.E. 网站公告",
+    "kicker": "A.C.E 网站公告",
     "copy": {
       "before": "点击“接受”会保存此浏览器的 Cookie 选择。这不是电子签名,不会收集设备遥测数据,不会启动反作弊客户端,也不会开启竞技队列。继续之前,请阅读",
       "termsLink": "服务条款",

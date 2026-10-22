@@ -2,7 +2,7 @@ import type { TextBag } from "../types";
 
 export const teams: TextBag["teams"] = {
   "meta": {
-    "title": "Zarządzanie składem A.C.E.",
+    "title": "Zarządzanie składem A.C.E",
     "description": "Przestrzeń Twojego składu 5v5. Zaproszenia wymagają zweryfikowanej sesji Steam; kontrole anti-cheat pojawią się wraz z A.C.E Shield."
   },
   "hero": {
@@ -18,7 +18,7 @@ export const teams: TextBag["teams"] = {
     "yes": "Tak, pięciu graczy",
     "no": "Nie, zostaw miejsca wolne",
     "seatsOpen": "Pięć miejsc pozostaje wolnych. Nic nie zostało zapisane.",
-    "connectSteam": "Najpierw połącz Steam. Przycisk wraca na tę stronę. A.C.E. nigdy nie prosi o hasło Steam.",
+    "connectSteam": "Najpierw połącz Steam. Przycisk wraca na tę stronę. A.C.E nigdy nie prosi o hasło Steam.",
     "alreadyMember": "{name} należy już do klanu {team}. Ten formularz nie tworzy drugiego klanu.",
     "thisAccount": "To konto",
     "acceptTerms": "Zaakceptuj warunki przed zapisaniem klanu.",
@@ -42,7 +42,7 @@ export const teams: TextBag["teams"] = {
       "email": "Żaden e-mail nie jest wysyłany. Potwierdzenia planów pozostają na tej stronie.",
       "charge": "Premium kosztuje $7 miesięcznie. Wkrótce: płatności jeszcze nie ma, więc nic nie jest pobierane.",
       "board": "Zapisany klan to wpis składu. Nie jest umieszczany w tabeli 100 drużyn. Ta tabela nadal pokazuje 0 zarejestrowanych, dopóki nie otworzy się sezon.",
-      "steam": "Logowanie używa oficjalnego Steam OpenID. A.C.E. nigdy nie prosi o hasło Steam. Z tej strony Steam wraca tutaj.",
+      "steam": "Logowanie używa oficjalnego Steam OpenID. A.C.E nigdy nie prosi o hasło Steam. Z tej strony Steam wraca tutaj.",
       "roster": "Miejsce 1 to zalogowany kapitan. Miejsca od 2 do 5 muszą już mieć konta A.C.E. Zaproszenia oczekują, dopóki każdy gracz ich nie zaakceptuje.",
       "badge": "Odznaki miejsc staną się prawdziwymi kontrolami A.C.E Shield po uruchomieniu anti-cheatu.",
       "support": "Otwórz Pomoc lub Kontakt na tej stronie. Zgłoszenie w Pomocy nie otwiera sprawy, a tekst wpisany w Kontakcie nie jest dostarczany.",
@@ -63,11 +63,11 @@ export const teams: TextBag["teams"] = {
   },
   "tournaments": {
     "meta": {
-      "title": "Mistrzostwa A.C.E. — elitarny turniej pucharowy 100 drużyn",
+      "title": "Mistrzostwa A.C.E — elitarny turniej pucharowy 100 drużyn",
       "description": "Turniej pucharowy na 100 drużyn. Kliknij klan, aby otworzyć jego skład, a potem profil każdego gracza. Zapisy ruszą wkrótce."
     },
     "intro": {
-      "title": "MISTRZOSTWA A.C.E. — ELITARNY TURNIEJ PUCHAROWY 100 DRUŻYN",
+      "title": "MISTRZOSTWA A.C.E — ELITARNY TURNIEJ PUCHAROWY 100 DRUŻYN",
       "lede": "Opublikowane pole to turniej pucharowy dla 100 drużyn. Poniższy graf przedstawia ten układ. Kliknięcie klanu otwiera panel ze składem. Rejestracja: 0 ze 100. Żadna nagroda pieniężna nie jest reklamowana ani finansowana.",
       "formatValue": "Matryca drabinki 100 drużyn",
       "briefTitle": "Skrót operacyjny dla 100 drużyn",
@@ -110,7 +110,7 @@ export const teams: TextBag["teams"] = {
       "count": "Klan {index} z {total}",
       "next": "Następny klan",
       "close": "Zamknij profil",
-      "disclosure": "Sprzęt i ekwipunek graczy pojawią się tutaj, gdy zdecydują się je udostępnić. A.C.E. nie zbiera danych o sprzęcie."
+      "disclosure": "Sprzęt i ekwipunek graczy pojawią się tutaj, gdy zdecydują się je udostępnić. A.C.E nie zbiera danych o sprzęcie."
     },
     "player": {
       "level": "POZ. {level} · RP {rating}",
@@ -140,14 +140,14 @@ export const teams: TextBag["teams"] = {
     "monitor": "Odświeżanie · nie udostępniono",
     "headset": "Nie udostępniono"
   },
-  "profileDisclosure": "A.C.E. nie przechowuje spisów sprzętu i nie uruchamia klienta antycheatu. Wykresy trendów wydajności i matryca walki wymagają sesji A.C.E. Plus lub Premium. Link do profilu Steam wpisany na tej stronie nie jest zapisywany i nie jest oficjalnym identyfikatorem.",
+  "profileDisclosure": "A.C.E nie przechowuje spisów sprzętu i nie uruchamia klienta antycheatu. Wykresy trendów wydajności i matryca walki wymagają sesji A.C.E Plus lub Premium. Link do profilu Steam wpisany na tej stronie nie jest zapisywany i nie jest oficjalnym identyfikatorem.",
   "errors": {
     "signInRequired": "Wymagane zalogowanie.",
     "nameLength": "Nazwa drużyny musi mieć od 2 do 32 znaków.",
     "alreadyCaptain": "To konto jest już kapitanem drużyny.",
     "nameTaken": "Drużyna o tej nazwie już istnieje.",
     "idRequired": "Wymagany jest SteamID lub identyfikator konta A.C.E.",
-    "noAccountForToken": "Nie ma konta A.C.E. dla tego SteamID lub identyfikatora konta.",
+    "noAccountForToken": "Nie ma konta A.C.E dla tego SteamID lub identyfikatora konta.",
     "clanNeedsFour": "Klan pięciu graczy wymaga zalogowanego kapitana i czterech SteamID.",
     "seatNeedsId": "Każde z czterech miejsc wymaga SteamID lub identyfikatora konta A.C.E.",
     "seatsDistinct": "Każde miejsce wymaga innego gracza.",
@@ -157,7 +157,7 @@ export const teams: TextBag["teams"] = {
     "captainOnly": "Zaproszenia może wysyłać tylko wyznaczony kapitan.",
     "rosterLimit": "Skład CS2 to pięciu graczy łącznie z kapitanem.",
     "alreadyOnRoster": "Ten gracz jest już w składzie.",
-    "noAccountForId": "Nie ma konta A.C.E. o tym identyfikatorze.",
+    "noAccountForId": "Nie ma konta A.C.E o tym identyfikatorze.",
     "inviteNotFound": "Nie znaleziono zaproszenia.",
     "inviteNotPending": "To zaproszenie nie oczekuje już na odpowiedź.",
     "rosterFull": "Skład jest już pełny.",

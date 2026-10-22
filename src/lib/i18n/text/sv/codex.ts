@@ -3,7 +3,7 @@ import type { TextBag } from "../types";
 export const codex: TextBag["codex"] = {
   "meta": {
     "title": "Kalibreringskodex",
-    "description": "A.C.E.:s ranker förklarade. Varje fråga öppnar ett fullständigt svar om ratingpoäng och reglerna för den ranken. Kodexen registrerar inga matchresultat.",
+    "description": "A.C.E:s ranker förklarade. Varje fråga öppnar ett fullständigt svar om ratingpoäng och reglerna för den ranken. Kodexen registrerar inga matchresultat.",
     "articleTitle": "{title} — Kalibreringskodex"
   },
   "groups": {
@@ -31,7 +31,7 @@ export const codex: TextBag["codex"] = {
     "searchLabel": "Sök i kodexen",
     "searchPlaceholder": "Prova 1950, Recruit eller oavgjort",
     "empty": "Ingen post matchar sökningen.",
-    "columnLabel": "A.C.E.-kolumn {n}",
+    "columnLabel": "A.C.E-kolumn {n}",
     "pagerLabel": "Kodexsidor",
     "first": "Första",
     "previous": "Föregående",
@@ -40,7 +40,7 @@ export const codex: TextBag["codex"] = {
     "pageOf": "Sida {n} av {m}"
   },
   "article": {
-    "breadcrumb": "A.C.E. · Kalibreringskodex",
+    "breadcrumb": "A.C.E · Kalibreringskodex",
     "status": "Den här sidan förklarar den skrivna stegen. Den registrerar inga matchresultat och ändrar ingen sparad rating.",
     "emblemAlt": "{name}-emblem, rank {level}",
     "emblemCaption": "Rank {level} · {name} · {crystal}",
@@ -63,7 +63,7 @@ export const codex: TextBag["codex"] = {
     "turnLabel": "Fortsätt genom kodexen",
     "previous": "Föregående",
     "next": "Nästa",
-    "alsoIn": "Mer på A.C.E.",
+    "alsoIn": "Mer på A.C.E",
     "backToBoard": "Tillbaka till rankbrädan"
   },
   "rankArticle": {
@@ -124,20 +124,20 @@ export const codex: TextBag["codex"] = {
       "detail": "Intervallet går från 1 800 till 1 949. Det är 150 poäng, inte 100. 1 949 bär fortfarande Sovereign. Legend öppnar vid 1 950."
     },
     "rank-10-a-c-e-legend": {
-      "stance": "A.C.E. Legend är det sista märket. Kristallnamnet är ACE ELITE. Det officiella namnet är A.C.E. Legend.",
+      "stance": "A.C.E Legend är det sista märket. Kristallnamnet är ACE ELITE. Det officiella namnet är A.C.E Legend.",
       "detail": "Intervallet öppnar vid 1 950 och slutar vid motorns tak, 3 000. Det finns ingen elfte rank. En sparad rating kan inte överstiga 3 000."
     }
   },
   "articles": {
     "what-a-rank-is": {
-      "title": "Vad en A.C.E.-rank är",
-      "lede": "En rank är märket som innehåller dina sparade ratingpoäng. Tio märken täcker hela stegen, från Recruit till A.C.E. Legend.",
+      "title": "Vad en A.C.E-rank är",
+      "lede": "En rank är märket som innehåller dina sparade ratingpoäng. Tio märken täcker hela stegen, från Recruit till A.C.E Legend.",
       "sections": [
         {
           "heading": "Ett tal, ett märke",
           "paragraphs": [
             "Kontot sparar en tävlingsrating. Stegen läser talet och returnerar den högsta rank vars golv talet har nått. Du har aldrig två ranker samtidigt.",
-            "Recruit är rank 1. A.C.E. Legend är rank 10. Det officiella namnet är namnet i stegen. Det kortare ordet på emblemet är kristallnamnet för samma rank.",
+            "Recruit är rank 1. A.C.E Legend är rank 10. Det officiella namnet är namnet i stegen. Det kortare ordet på emblemet är kristallnamnet för samma rank.",
             "Den här kodexen förklarar den skrivna stegen. Den registrerar inga matchresultat och ändrar ingen sparad rating."
           ]
         },
@@ -145,7 +145,7 @@ export const codex: TextBag["codex"] = {
           "heading": "Hur golven ligger",
           "paragraphs": [
             "Recruit täcker stegens början. Operative öppnar vid 1 100. Från Vanguard till Grandmaster ligger varje nytt golv 100 poäng högre: 1 200, 1 300, 1 400, 1 500, 1 600 och sedan 1 700.",
-            "Sovereign öppnar vid 1 800 och gäller till 1 949. A.C.E. Legend öppnar vid 1 950. Motorns tak är 3 000, så Legend är det längsta intervallet."
+            "Sovereign öppnar vid 1 800 och gäller till 1 949. A.C.E Legend öppnar vid 1 950. Motorns tak är 3 000, så Legend är det längsta intervallet."
           ]
         },
         {
@@ -164,14 +164,14 @@ export const codex: TextBag["codex"] = {
         {
           "heading": "Varför båda finns",
           "paragraphs": [
-            "Motorn och profilen använder det officiella namnet: Recruit, Operative, Vanguard, Specialist, Veteran, Elite, Master, Grandmaster, Sovereign, A.C.E. Legend.",
+            "Motorn och profilen använder det officiella namnet: Recruit, Operative, Vanguard, Specialist, Veteran, Elite, Master, Grandmaster, Sovereign, A.C.E Legend.",
             "Emblemet bär också ett kristallnamn: IRON, BRONZE, SILVER, GOLD, PLATINUM, DIAMOND, MASTER, GRANDMASTER, IMMORTAL, ACE ELITE. Det namnet är konst. Det skapar ingen elfte rank och sparar inget andra tal."
           ]
         },
         {
           "heading": "Där de skiljer sig",
           "paragraphs": [
-            "Specialists kristallnamn är GOLD. Veterans är PLATINUM. Elites är DIAMOND. Sovereigns är IMMORTAL. A.C.E. Legends är ACE ELITE. I samtliga fall tillhör golvet det officiella namnet.",
+            "Specialists kristallnamn är GOLD. Veterans är PLATINUM. Elites är DIAMOND. Sovereigns är IMMORTAL. A.C.E Legends är ACE ELITE. I samtliga fall tillhör golvet det officiella namnet.",
             "Master och Grandmaster använder samma ord på båda ställena."
           ]
         }
@@ -287,7 +287,7 @@ export const codex: TextBag["codex"] = {
           "heading": "Stoppen",
           "paragraphs": [
             "En förlust vid 100 ratingpoäng stannar på 100. En vinst vid 3 000 stannar på 3 000. Recruits golv i stegen är skrivet som 0, men det sparade talet använder aldrig utrymmet under 100.",
-            "1 949 är Sovereign. 1 950 är A.C.E. Legend. Det finns inget mellanliggande märke."
+            "1 949 är Sovereign. 1 950 är A.C.E Legend. Det finns inget mellanliggande märke."
           ]
         },
         {
@@ -334,7 +334,7 @@ export const codex: TextBag["codex"] = {
           "heading": "Vad desken inte gör",
           "paragraphs": [
             "HITTA MATCH söker inte efter motståndare. Den ändrar inte ratingpoängen. Kontots rank är fortfarande det sparade talet, avläst av stegen i den här kodexen.",
-            "Det finns ingen separat toppkö över Legend. A.C.E. Legend är det sista märket och öppnar vid 1 950 ratingpoäng."
+            "Det finns ingen separat toppkö över Legend. A.C.E Legend är det sista märket och öppnar vid 1 950 ratingpoäng."
           ]
         }
       ]
@@ -440,12 +440,12 @@ export const codex: TextBag["codex"] = {
     },
     "how-a-roster-is-assembled": {
       "title": "Hur en trupp sätts ihop",
-      "lede": "En kapten bjuder in en spelare som redan har ett A.C.E.-konto. Det finns ingen publik delningslänk, och ett Steam-lösenord efterfrågas aldrig.",
+      "lede": "En kapten bjuder in en spelare som redan har ett A.C.E-konto. Det finns ingen publik delningslänk, och ett Steam-lösenord efterfrågas aldrig.",
       "sections": [
         {
           "heading": "Inbjudan som finns",
           "paragraphs": [
-            "På lagsidan klistrar en inloggad kapten in ett SteamID64 eller ett A.C.E.-konto-ID. Kontot måste redan vara kopplat via Steam OpenID. Servern skriver en väntande inbjudan när databasen godtar den.",
+            "På lagsidan klistrar en inloggad kapten in ett SteamID64 eller ett A.C.E-konto-ID. Kontot måste redan vara kopplat via Steam OpenID. Servern skriver en väntande inbjudan när databasen godtar den.",
             "Truppen har fem spelare inklusive kaptenen. En kapten kan inte bjuda in sitt eget konto. En spelare som redan finns i truppen nekas. Om databasen ligger nere misslyckas inbjudan och ingen inbjudan sparas."
           ]
         },

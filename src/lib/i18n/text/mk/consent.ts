@@ -1,7 +1,7 @@
 import type { TextBag } from "../types";
 
 export const consent: TextBag["consent"] = {
-  "valveDisclaimer": "A.C.E. е независна страница за натпревари во Counter-Strike 2. Не е поврзана со Valve Corporation, ниту е овластена или поддржана од неа. Steam и Counter-Strike се ознаки на нивните сопственици. Натпреварувачките правила се сопствен текст на A.C.E. за таа игра.",
+  "valveDisclaimer": "A.C.E е независна страница за натпревари во Counter-Strike 2. Не е поврзана со Valve Corporation, ниту е овластена или поддржана од неа. Steam и Counter-Strike се ознаки на нивните сопственици. Натпреварувачките правила се сопствен текст на A.C.E за таа игра.",
   "acceptance": {
     "label": "Изрично ги прифаќам Условите за користење, Anti-Cheat EULA и Политиката за приватност.",
     "readBefore": "Прочитај",
@@ -21,7 +21,7 @@ export const consent: TextBag["consent"] = {
     "optional": "Изборно"
   },
   "banner": {
-    "kicker": "ИЗВЕСТУВАЊЕ НА A.C.E.",
+    "kicker": "ИЗВЕСТУВАЊЕ НА A.C.E",
     "copy": {
       "before": "Прифаќањето ги зачувува изборите за колачиња на овој прелистувач. Тоа не е електронски потпис, не собира телеметрија од уредот, не стартува anti-cheat клиент и не отвора натпреварувачка редица. Прочитај ги",
       "termsLink": "Условите за користење",

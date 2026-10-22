@@ -25,7 +25,7 @@ export const UI_SV: Ui = {
     "company": "Företag",
     "legal": "Juridik",
     "tagline": "Tävlingsstegar för Counter-Strike 2, byggda kring fair play.",
-    "follow": "Följ A.C.E.",
+    "follow": "Följ A.C.E",
     "rights": "Med ensamrätt.",
     "legalLine": "© 2026 A.C.E. Oberoende plattform utan koppling till Valve. Counter-Strike och CS2 är varumärken som tillhör Valve Corporation."
   },
@@ -229,7 +229,7 @@ export const UI_SV: Ui = {
       "expansion1": "Autonomous Anti-Cheat",
       "expansion2": "Competitive Calibration",
       "expansion3": "Elite Players",
-      "line": "Bygg din tävlingsidentitet. Kalibrera din skicklighet. Klättra i A.C.E.-rankerna.",
+      "line": "Bygg din tävlingsidentitet. Kalibrera din skicklighet. Klättra i A.C.E-rankerna.",
       "connectSteam": "Anslut Steam",
       "openDashboard": "Öppna instrumentpanelen",
       "exploreRanks": "Utforska rankerna"
@@ -237,7 +237,7 @@ export const UI_SV: Ui = {
     "status": {
       "title": "Plattformsstatus",
       "steam": "Steam-inloggning",
-      "shield": "A.C.E. Shield",
+      "shield": "A.C.E Shield",
       "servers": "Tävlingsservrar",
       "tournaments": "Turneringar",
       "billing": "Betalning",
@@ -288,8 +288,8 @@ export const UI_SV: Ui = {
     "chat": {
       "open": "Öppna supportchatten",
       "close": "Stäng supportchatten",
-      "title": "A.C.E. Support",
-      "greeting": "Hej! Jag är A.C.E.:s supportassistent. Fråga mig om ranker, planer, regler eller ditt konto.",
+      "title": "A.C.E Support",
+      "greeting": "Hej! Jag är A.C.E:s supportassistent. Fråga mig om ranker, planer, regler eller ditt konto.",
       "placeholder": "Skriv din fråga…",
       "send": "Skicka",
       "unavailable": "Supportchatten är inte tillgänglig än.",
@@ -316,7 +316,7 @@ export const UI_SV: Ui = {
       "stepsKicker": "Så fungerar det",
       "stepsTitle": "Tre steg till din första rank",
       "step1t": "Anslut Steam",
-      "step1b": "Logga in med Steam OpenID. A.C.E. ser aldrig ditt Steam-lösenord.",
+      "step1b": "Logga in med Steam OpenID. A.C.E ser aldrig ditt Steam-lösenord.",
       "step2t": "Kalibrera",
       "step2b": "Du börjar på nivå 3 med 1 200 RP. Varje registrerad match ändrar dina RP enligt publicerade regler.",
       "step3t": "Klättra",
@@ -334,7 +334,7 @@ export const UI_SV: Ui = {
     "profile": {
       "kicker": "SPELARE",
       "notFound": "Spelaren hittades inte",
-      "notFoundBody": "Inget A.C.E.-konto använder detta Steam-ID, eller så är profilen inte offentlig.",
+      "notFoundBody": "Inget A.C.E-konto använder detta Steam-ID, eller så är profilen inte offentlig.",
       "rating": "Betyg",
       "rank": "Rank",
       "record": "Resultat",
@@ -349,11 +349,11 @@ export const UI_SV: Ui = {
     },
     "chat": {
       "sources": "Källor",
-      "noMatch": "Jag hittade inte detta i innehållet på A.C.E.:s webbplats. Du kan skicka frågan till teamet som ett ärende.",
+      "noMatch": "Jag hittade inte detta i innehållet på A.C.E:s webbplats. Du kan skicka frågan till teamet som ett ärende.",
       "s1": "Vad kostar Premium?",
       "s2": "Hur får jag RP?",
       "s3": "Hur anmäler jag en fuskare?",
-      "kbNote": "Svaren hämtas från innehållet på A.C.E.:s webbplats."
+      "kbNote": "Svaren hämtas från innehållet på A.C.E:s webbplats."
     }
   },
   "r40": {
@@ -382,7 +382,7 @@ export const UI_SV: Ui = {
     "nf": {
       "code": "Fel 404",
       "title": "Den här sidan är utanför kartan",
-      "body": "Länken kan vara gammal eller felstavad. Allt på A.C.E. är ett klick bort härifrån.",
+      "body": "Länken kan vara gammal eller felstavad. Allt på A.C.E är ett klick bort härifrån.",
       "home": "Tillbaka till start",
       "ranks": "Visa rangordningar"
     },
@@ -401,7 +401,7 @@ export const UI_SV: Ui = {
     "st": {
       "kicker": "Prestation",
       "title": "Spelarstatistik",
-      "lede": "Varje siffra kommer från registrerade A.C.E.-matcher. Inget är uppskattat.",
+      "lede": "Varje siffra kommer från registrerade A.C.E-matcher. Inget är uppskattat.",
       "empty": "Inga registrerade matcher än. Statistik visas efter första rankade matchen.",
       "winRate": "Vinstandel",
       "adr": "ADR",
@@ -427,11 +427,11 @@ export const UI_SV: Ui = {
       "none": "—"
     },
     "ab": {
-      "title": "Om A.C.E.",
+      "title": "Om A.C.E",
       "lede": "En tävlingsplattform för Counter-Strike 2 byggd kring en offentlig rangtabell och planer som aldrig köper fördelar.",
-      "b1": "A.C.E. driver rankat spel, stegar och turneringar i CS2. Inloggning sker med Steam OpenID; vi ser aldrig ditt Steam-lösenord.",
+      "b1": "A.C.E driver rankat spel, stegar och turneringar i CS2. Inloggning sker med Steam OpenID; vi ser aldrig ditt Steam-lösenord.",
       "b2": "Din rang räknas bara fram ur registrerade resultat enligt publicerade regler. Betalplaner är bara kosmetiska och för bekvämlighet.",
-      "b3": "A.C.E. är en oberoende plattform och är inte knuten till Valve."
+      "b3": "A.C.E är en oberoende plattform och är inte knuten till Valve."
     },
     "ss": {
       "title": "Serverstatus",
@@ -474,7 +474,7 @@ export const UI_SV: Ui = {
     "lv": {
       "nav": "Live",
       "title": "Livesändningar",
-      "lede": "Officiella A.C.E.-turneringsstreams. En sändning visas här bara medan operatörerna har den i sändning.",
+      "lede": "Officiella A.C.E-turneringsstreams. En sändning visas här bara medan operatörerna har den i sändning.",
       "none": "Ingen livesändning just nu",
       "noneBody": "När en officiell stream går i sändning visas den här. Under tiden kan du se turneringarna nedan.",
       "schedule": "Kommande turneringar",
@@ -484,7 +484,7 @@ export const UI_SV: Ui = {
     }
   },
   "r46": {
-    "aria": "Vad A.C.E. står för",
+    "aria": "Vad A.C.E står för",
     "fair": "Skydd för schysst spel",
     "fairSub": "Steam-inloggning, publicerade regler och spelarrapporter som granskas av admins.",
     "calib": "Tävlingskalibrering",
@@ -494,7 +494,7 @@ export const UI_SV: Ui = {
   },
   "r45": {
     "title": "Bortom Legend",
-    "lede": "Fem prestigemärken över A.C.E. Legend, ett var 200:e RP från 2 150 till 2 950. Förtjänas bara genom att spela.",
+    "lede": "Fem prestigemärken över A.C.E Legend, ett var 200:e RP från 2 150 till 2 950. Förtjänas bara genom att spela.",
     "plus": "Plus · platina",
     "premium": "Premium · guldeld",
     "fair": "Samma RP för alla. Prestigegränser, matchmaking och rating är identiska i varje plan. Inget här går att köpa.",
@@ -527,10 +527,10 @@ export const UI_SV: Ui = {
     "pr": {
       "kicker": "Prestige",
       "title": "Märkesregler",
-      "lede": "Hur varje A.C.E.-märke tjänas in. Märken är rent kosmetiska: de ändrar aldrig matchning, RP eller någon regel.",
+      "lede": "Hur varje A.C.E-märke tjänas in. Märken är rent kosmetiska: de ändrar aldrig matchning, RP eller någon regel.",
       "ranks": "Rangmärken (nivå 1–10) följer din RP. Alla ser samma rang och samma fasta nivåfärg.",
       "prestige": "Prestigemärken är fem långsiktiga mål över {elite} RP: ett var 200:e RP från 2 150 till 2 950.",
-      "free": "Free: ditt märke förblir A.C.E. Legend och din prestigenivå visas som en textmilstolpe. Din RP har aldrig något tak.",
+      "free": "Free: ditt märke förblir A.C.E Legend och din prestigenivå visas som en textmilstolpe. Din RP har aldrig något tak.",
       "plus": "Plus: platinaserien av prestigemärken.",
       "premium": "Premium: den animerade guldserien av prestigemärken.",
       "lose": "Faller du under en prestigegräns följer märket din RP nedåt; når du den igen kommer det tillbaka.",
@@ -683,5 +683,19 @@ export const UI_SV: Ui = {
     "communityTitle": "Community",
     "communityLede": "Följ A.C.E för matchnyheter, turneringar och höjdpunkter.",
     "followOn": "A.C.E på {network}"
+  },
+  "r49b": {
+    "title": "Steam-inventarium",
+    "private": "Inventariet är privat",
+    "privateBody": "Spelarens Steam-inventarium är privat.",
+    "empty": "Inga CS2-föremål i det offentliga inventariet.",
+    "unavailable": "Steam-inventariet kunde inte laddas just nu.",
+    "hiddenOwner": "Din inventarievisning är dold på profilen.",
+    "hide": "Dölj visning",
+    "show": "Visa visning",
+    "priceSource": "Priser: lägsta erbjudande på Steams communitymarknad, cachat.",
+    "note": "Endast visning. A.C.E köper, säljer eller byter aldrig Steam-föremål.",
+    "updated": "Uppdaterad {date}",
+    "more": "+{n} fler föremål"
   }
 };

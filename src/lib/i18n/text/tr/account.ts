@@ -5,10 +5,10 @@ export const account: TextBag["account"] = {
     "metaTitle": "Oyuncu istatistikleri",
     "kicker": "OYUNCU İSTATİSTİKLERİ",
     "title": "Oyuncu istatistikleri",
-    "lede": "Kayıtlı A.C.E. maçlarından reyting değişimi, kafa vuruşu % ve isabet göstergeleriyle. A.C.E Plus (4 $/ay) ve A.C.E Premium (7 $/ay) içinde.",
+    "lede": "Kayıtlı A.C.E maçlarından reyting değişimi, kafa vuruşu % ve isabet göstergeleriyle. A.C.E Plus (4 $/ay) ve A.C.E Premium (7 $/ay) içinde.",
     "movementTitle": "Reyting değişimi",
-    "movementNote": "Her nokta, kayıtlı bir A.C.E. maçından yazılan bir reyting değişikliğidir.",
-    "noMatches": "Henüz kayıtlı maç yok, bu yüzden grafik boş. İlk kayıtlı A.C.E. maçından sonra dolar.",
+    "movementNote": "Her nokta, kayıtlı bir A.C.E maçından yazılan bir reyting değişikliğidir.",
+    "noMatches": "Henüz kayıtlı maç yok, bu yüzden grafik boş. İlk kayıtlı A.C.E maçından sonra dolar.",
     "currentLabel": "Mevcut reyting",
     "netLabel": "Net değişim",
     "changesLabel": "Kayıtlı değişiklikler",
@@ -21,7 +21,7 @@ export const account: TextBag["account"] = {
     "lockedBody": "Kayıtlı planın Free. Plus (4 $/ay) ve Premium (7 $/ay) bu sayfayı açar. Yakında: ödeme sistemi henüz yok.",
     "signIn": "Oyuncu istatistiklerini görmek için Steam ile giriş yap.",
     "plansLink": "Planları gör",
-    "rosterNote": "Örnek kadro profili: bu oyuncuların kayıtlı A.C.E. maçı yok, bu yüzden istatistikler sayı göstermez.",
+    "rosterNote": "Örnek kadro profili: bu oyuncuların kayıtlı A.C.E maçı yok, bu yüzden istatistikler sayı göstermez.",
     "dashTitle": "İstatistik ve analiz",
     "dashStats": "Oyuncu istatistiklerini aç",
     "dashAnalysis": "Maç analizini aç (Premium)",
@@ -38,7 +38,7 @@ export const account: TextBag["account"] = {
     "stats": {
       "accountStatus": "Hesap durumu",
       "subscription": "Abonelik",
-      "rank": "A.C.E. rütbesi",
+      "rank": "A.C.E rütbesi",
       "ratingPoints": "Derece puanı",
       "wins": "Galibiyetler",
       "losses": "Mağlubiyetler",
@@ -71,7 +71,7 @@ export const account: TextBag["account"] = {
     "rankedButton": "Dereceli maç bul",
     "roster": {
       "title": "5v5 kadro",
-      "body": "Bir kaptan. Dört davet. Kaptanlar diğer A.C.E. hesap kimliklerini davet eder; bu hesaplar yalnızca doğrulanmış bir Steam girişinden sonra oluşturulur."
+      "body": "Bir kaptan. Dört davet. Kaptanlar diğer A.C.E hesap kimliklerini davet eder; bu hesaplar yalnızca doğrulanmış bir Steam girişinden sonra oluşturulur."
     },
     "pendingInvites": "Bekleyen davetler"
   },
@@ -86,7 +86,7 @@ export const account: TextBag["account"] = {
     },
     "invite": {
       "failed": "Davet başarısız oldu.",
-      "label": "SteamID veya A.C.E. hesap kimliğiyle serbest oyuncu davet et",
+      "label": "SteamID veya A.C.E hesap kimliğiyle serbest oyuncu davet et",
       "submitAria": "Takım daveti gönder",
       "submit": "Davet gönder"
     }
@@ -94,8 +94,8 @@ export const account: TextBag["account"] = {
   "profile": {
     "meta": {
       "notFoundTitle": "Oyuncu profili",
-      "title": "{name} · A.C.E. profili",
-      "description": "A.C.E. oyuncu dosyası. Plus ve Premium oturumları telemetri eğilim grafiklerinin kilidini açar."
+      "title": "{name} · A.C.E profili",
+      "description": "A.C.E oyuncu dosyası. Plus ve Premium oturumları telemetri eğilim grafiklerinin kilidini açar."
     },
     "kicker": "Oyuncu kimliği",
     "bannerPlaceholder": "Profil afişi · yakında",
@@ -132,7 +132,7 @@ export const account: TextBag["account"] = {
     "back": "Klan kadrosuna dön"
   },
   "networks": {
-    "note": "Buraya yazılan bağlantı bu tarayıcıda kalır ve kaydedilmez. A.C.E. asla Steam şifresi istemez.",
+    "note": "Buraya yazılan bağlantı bu tarayıcıda kalır ve kaydedilmez. A.C.E asla Steam şifresi istemez.",
     "labels": {
       "steam": "Steam profili"
     },
@@ -150,9 +150,9 @@ export const account: TextBag["account"] = {
       "title": "Oturum açma hatası"
     },
     "title": "Steam ile oturum açma tamamlanmadı",
-    "notConfigured": "Bu sunucuda Steam OpenID henüz yapılandırılmadı. A.C.E. asla Steam şifresi istemez.",
-    "unavailable": "Steam doğrulama isteğine yanıt vermedi. Birazdan tekrar deneyin. A.C.E. asla Steam şifresi istemez.",
-    "unverified": "OpenID geri dönüşü sunucuda doğrulanamadı. A.C.E. asla Steam şifresi istemez.",
+    "notConfigured": "Bu sunucuda Steam OpenID henüz yapılandırılmadı. A.C.E asla Steam şifresi istemez.",
+    "unavailable": "Steam doğrulama isteğine yanıt vermedi. Birazdan tekrar deneyin. A.C.E asla Steam şifresi istemez.",
+    "unverified": "OpenID geri dönüşü sunucuda doğrulanamadı. A.C.E asla Steam şifresi istemez.",
     "returnHome": "Ana sayfaya dön"
   }
 };

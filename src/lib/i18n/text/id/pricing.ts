@@ -70,10 +70,10 @@ export const pricing: TextBag["pricing"] = {
       "prices": "Free {free}. Plus {plus} per bulan. Premium {premium} per bulan. Paket diperpanjang setiap bulan. Kamu dapat membatalkan kapan saja tanpa denda di pengaturan dasbor dan tetap memiliki akses hingga akhir bulan yang sudah dibayar. Bulan parsial tidak dikembalikan kecuali hukum negaramu mewajibkannya.",
       "plusTitle": "2. Isi Plus",
       "plus1": "Semua yang ada di Free.",
-      "plus2": "Segera hadir: surat terima kasih dan dukungan email di support@ace-platform.gg, setelah checkout tersedia.",
+      "plus2": "Dukungan email anggota di {email} dan surat terima kasih dari tim.",
       "premiumTitle": "3. Isi Premium",
       "prem1": "Semua yang ada di Plus.",
-      "prem2": "Seni rank Premium dan kodeks rank Premium: set lambang A.C.E. ilustrasi asli di profilmu. Hanya kosmetik, di tangga Rating Points yang sama.",
+      "prem2": "Seni rank Premium dan kodeks rank Premium: set lambang A.C.E ilustrasi asli di profilmu. Hanya kosmetik, di tangga Rating Points yang sama.",
       "prem3": "Kartu profil Premium animasi.",
       "prem4": "Lencana khusus dan SEGEL ELITE.",
       "prem5": "Segera hadir: analisis pertandingan lanjutan (heatmap kematian, % headshot, performa per ronde), setelah parsing demo tersedia.",
@@ -85,14 +85,14 @@ export const pricing: TextBag["pricing"] = {
       "soon": "Apa pun yang ditandai Segera hadir tidak dijanjikan sampai dirilis. Sampai saat itu, harga tidak mencakupnya.",
       "languageTitle": "6. Bahasa",
       "language": "Terjemahan disediakan demi kemudahan. Jika terjemahan berbeda dari teks bahasa Inggris, teks bahasa Inggris yang berlaku.",
-      "contact": "Pertanyaan: support@ace-platform.gg",
+      "contact": "Pertanyaan: {email}",
       "footerLink": "Ketentuan Premium",
       "pricingLink": "Baca ketentuan Premium"
     }
   },
   "meta": {
     "title": "Harga",
-    "description": "Keanggotaan A.C.E.: Free {free}, Plus {plus}/bln, Premium {premium}/bln. Harga tampilan terkunci bilangan bulat."
+    "description": "Keanggotaan A.C.E: Free {free}, Plus {plus}/bln, Premium {premium}/bln. Harga tampilan terkunci bilangan bulat."
   },
   "period": {
     "monthly": "/bln"
@@ -108,23 +108,23 @@ export const pricing: TextBag["pricing"] = {
       "note": "Grafit",
       "title": "Akses terbuka",
       "points": [
-        "Masuk dengan Steam OpenID. A.C.E. tidak pernah meminta kata sandi Steam.",
+        "Masuk dengan Steam OpenID. A.C.E tidak pernah meminta kata sandi Steam.",
         "Rating tersimpan dimulai dari 1.200. Belum ada hasil pertandingan yang mengubahnya.",
         "Semua halaman publik: main, turnamen, papan peringkat, tim, dan aturan."
       ]
     },
     "plus": {
-      "name": "A.C.E. PLUS",
+      "name": "A.C.E PLUS",
       "note": "Plus",
       "title": "Statistik pemain dan dukungan",
       "points": [
         "Semua yang ada di Free.",
-        "Statistik pemain: grafik pergerakan rating dari pertandingan A.C.E. yang tercatat. Pengukur % headshot dan akurasi segera hadir.",
-        "Segera hadir: surat terima kasih dan dukungan email di support@ace-platform.gg, setelah checkout tersedia. Plus tidak membeli rating atau lawan yang lebih mudah."
+        "Statistik pemain: grafik pergerakan rating dari pertandingan A.C.E yang tercatat. Pengukur % headshot dan akurasi segera hadir.",
+        "Dukungan email anggota di {email} dan surat terima kasih dari tim. Plus tidak membeli rating atau lawan yang lebih mudah."
       ]
     },
     "premium": {
-      "name": "A.C.E. PREMIUM",
+      "name": "A.C.E PREMIUM",
       "note": "Premium",
       "title": "Seni profil, lencana, dan analisis",
       "points": [
@@ -159,7 +159,7 @@ export const pricing: TextBag["pricing"] = {
     }
   },
   "compare": {
-    "kicker": "Yang dapat dijanjikan A.C.E. hari ini",
+    "kicker": "Yang dapat dijanjikan A.C.E hari ini",
     "title": "Perbandingan keanggotaan",
     "note": "Setiap baris mencerminkan situs hari ini. Pembayaran segera hadir, dan paket berbayar tidak pernah membuka antrean atau membeli keunggulan.",
     "caption": "Free, Plus, dan Premium dibandingkan berdasarkan apa yang dilakukan situs hari ini",
@@ -175,7 +175,7 @@ export const pricing: TextBag["pricing"] = {
       },
       "steamSignIn": {
         "feature": "Masuk Steam",
-        "detail": "Steam OpenID resmi. A.C.E. tidak pernah meminta kata sandi Steam."
+        "detail": "Steam OpenID resmi. A.C.E tidak pernah meminta kata sandi Steam."
       },
       "startingRating": {
         "feature": "Rating awal",
@@ -183,7 +183,7 @@ export const pricing: TextBag["pricing"] = {
       },
       "recordedMatches": {
         "feature": "Pertandingan tercatat",
-        "detail": "Menang dan kalah yang ditulis dari pertandingan A.C.E. yang selesai."
+        "detail": "Menang dan kalah yang ditulis dari pertandingan A.C.E yang selesai."
       },
       "rankedQueue": {
         "feature": "Antrean ranked",
@@ -231,15 +231,15 @@ export const pricing: TextBag["pricing"] = {
   "receipt": {
     "plus": {
       "metaTitle": "Tanda terima Plus",
-      "metaDescription": "Surat A.C.E. Plus yang ditampilkan di situs ini. Pembayaran belum aktif, jadi tidak ada yang ditagih dan tidak ada surel yang dikirim.",
-      "planName": "A.C.E. Plus",
-      "nextLabel": "Lanjutkan di A.C.E.",
+      "metaDescription": "Surat A.C.E Plus yang ditampilkan di situs ini. Pembayaran belum aktif, jadi tidak ada yang ditagih dan tidak ada surel yang dikirim.",
+      "planName": "A.C.E Plus",
+      "nextLabel": "Lanjutkan di A.C.E",
       "nextBody": "Halaman publik tetap terbuka. Pilihan ini tidak membuka antrean dan tidak mengubah tingkat tersimpan."
     },
     "premium": {
       "metaTitle": "Tanda terima Premium",
-      "metaDescription": "Surat A.C.E. Premium yang ditampilkan di situs ini. Pembayaran belum aktif, jadi tidak ada yang ditagih dan tidak ada surel yang dikirim.",
-      "planName": "A.C.E. Premium",
+      "metaDescription": "Surat A.C.E Premium yang ditampilkan di situs ini. Pembayaran belum aktif, jadi tidak ada yang ditagih dan tidak ada surel yang dikirim.",
+      "planName": "A.C.E Premium",
       "nextLabel": "Baca ketentuan Premium",
       "nextBody": "Premium berisi seni rank Premium, kartu profil animasi, lencana khusus, dan ELITE SEAL, ditambah semua yang ada di Plus. Menyimpan klan di Squads gratis untuk setiap akun."
     }
@@ -256,7 +256,7 @@ export const pricing: TextBag["pricing"] = {
         "Nama paket: {plan}.",
         "Harga tampilan: {price} per bulan. Angka ini adalah label, bukan tagihan.",
         "Pembayaran: tidak ada. Memilih paket ini tidak mengambil kartu.",
-        "Surel: tidak ada. A.C.E. tidak mengirim surat ini ke kotak masuk.",
+        "Surel: tidak ada. A.C.E tidak mengirim surat ini ke kotak masuk.",
         "Tingkat tersimpan: tidak berubah. Lencana khusus dan segel elite hanya muncul jika akun sudah menyimpan Premium.",
         "Rating: tidak dijual. Akun baru tetap dimulai dari 1.200."
       ]
@@ -265,7 +265,7 @@ export const pricing: TextBag["pricing"] = {
       "title": "Yang dapat Anda gunakan hari ini",
       "items": [
         "Situs publik: beranda, main, turnamen, papan peringkat, tim, aturan, dan ketentuan.",
-        "Masuk Steam melalui Steam OpenID resmi. A.C.E. tidak pernah meminta kata sandi Steam.",
+        "Masuk Steam melalui Steam OpenID resmi. A.C.E tidak pernah meminta kata sandi Steam.",
         "Halaman publik yang sama dengan Free. Harga ini tidak membuka antrean terpisah."
       ]
     },
@@ -309,7 +309,7 @@ export const pricing: TextBag["pricing"] = {
   },
   "telemetry": {
     "kicker": "TELEMETRI PLUS / PREMIUM",
-    "copy": "TELEMETRI DASBOR TERKUNCI — Tingkatkan paket langganan Anda ke A.C.E. Plus atau Premium untuk membuka kurva statistik real-time dinamis dan indeks spesialisasi senjata.",
+    "copy": "TELEMETRI DASBOR TERKUNCI — Tingkatkan paket langganan Anda ke A.C.E Plus atau Premium untuk membuka kurva statistik real-time dinamis dan indeks spesialisasi senjata.",
     "cta": "Buka tabel harga"
   }
 };

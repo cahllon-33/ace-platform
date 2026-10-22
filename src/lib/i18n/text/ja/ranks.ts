@@ -62,7 +62,7 @@ export const ranks: TextBag["ranks"] = {
     "kicker": "プレミアムランク",
     "plan": "A.C.E PREMIUM · 月額$7のみ",
     "title": "プレミアムランクアート",
-    "lede": "オリジナルのイラスト版A.C.E.ランクセット：III/II/Iディビジョン付きの10個のクリスタルエンブレム、レーティングプロトコル、Legend詳細カード、ドラッグで回転する3Dビューア。Premiumメンバー向けのプロフィールアートです。標準ランクと同じRating Pointsのラダーを読み取り、競技上の優位性は一切ありません。",
+    "lede": "オリジナルのイラスト版A.C.Eランクセット：III/II/Iディビジョン付きの10個のクリスタルエンブレム、レーティングプロトコル、Legend詳細カード、ドラッグで回転する3Dビューア。Premiumメンバー向けのプロフィールアートです。標準ランクと同じRating Pointsのラダーを読み取り、競技上の優位性は一切ありません。",
     "demo": "デモ値：このボードの進捗、勝率、ディビジョンはサンプルで、ライブ統計ではありません。サインイン中は、表示されるレーティングが保存済みのレーティングです。",
     "locked": "近日公開：決済はまだ存在しないため、現在Premiumのアカウントはありません。サーバーは保存されたプランがPremiumのプロフィールにのみプレミアムランクアートを適用します。",
     "standardKicker": "標準ランク",
@@ -77,12 +77,12 @@ export const ranks: TextBag["ranks"] = {
   },
   "meta": {
     "title": "競技ランク",
-    "description": "Iron Recruit から A.C.E. Legend までの A.C.E. の10ランク。ディビジョンとレーティング下限付き。"
+    "description": "Iron Recruit から A.C.E Legend までの A.C.E の10ランク。ディビジョンとレーティング下限付き。"
   },
   "hero": {
     "kicker": "キャリブレーション",
     "title": "競技ランク",
-    "lede": "Recruit から A.C.E. Legend までの10ティア。各ティアにディビジョン {divisions} があります。ドラッグするか矢印キーでエンブレムを回転できます。サインイン中は自分のレーティング、それ以外は各ティアの下限が表示されます。"
+    "lede": "Recruit から A.C.E Legend までの10ティア。各ティアにディビジョン {divisions} があります。ドラッグするか矢印キーでエンブレムを回転できます。サインイン中は自分のレーティング、それ以外は各ティアの下限が表示されます。"
   },
   "codexLink": "キャリブレーション・コーデックスを開く",
   "document": {
@@ -134,9 +134,9 @@ export const ranks: TextBag["ranks"] = {
     }
   },
   "board": {
-    "selectEmblem": "A.C.E. {name} ランクエンブレム(レベル {level})を選択",
-    "emblemAlt": "A.C.E. カスタム3Dクリスタル レベル {level} {crystal} {name} エンブレム・プロフィールバッジ",
-    "emblemAltLegend": "A.C.E. カスタム3Dクリスタル レベル {level} エンブレム・プロフィールバッジ",
+    "selectEmblem": "A.C.E {name} ランクエンブレム(レベル {level})を選択",
+    "emblemAlt": "A.C.E カスタム3Dクリスタル レベル {level} {crystal} {name} エンブレム・プロフィールバッジ",
+    "emblemAltLegend": "A.C.E カスタム3Dクリスタル レベル {level} エンブレム・プロフィールバッジ",
     "premium": "最上位ティア"
   },
   "division": {

@@ -5,10 +5,10 @@ export const account: TextBag["account"] = {
     "metaTitle": "Statistika igrača",
     "kicker": "STATISTIKA IGRAČA",
     "title": "Statistika igrača",
-    "lede": "Kretanje ratinga iz tvojih zabilježenih A.C.E. mečeva, s pokazateljima % headshotova i preciznosti. Uključeno u A.C.E Plus (4 $/mj.) i A.C.E Premium (7 $/mj.).",
+    "lede": "Kretanje ratinga iz tvojih zabilježenih A.C.E mečeva, s pokazateljima % headshotova i preciznosti. Uključeno u A.C.E Plus (4 $/mj.) i A.C.E Premium (7 $/mj.).",
     "movementTitle": "Kretanje ratinga",
-    "movementNote": "Svaka točka je promjena ratinga zapisana iz A.C.E. meča.",
-    "noMatches": "Još nema zabilježenih mečeva pa je grafikon prazan. Popunit će se nakon tvog prvog zabilježenog A.C.E. meča.",
+    "movementNote": "Svaka točka je promjena ratinga zapisana iz A.C.E meča.",
+    "noMatches": "Još nema zabilježenih mečeva pa je grafikon prazan. Popunit će se nakon tvog prvog zabilježenog A.C.E meča.",
     "currentLabel": "Trenutni rating",
     "netLabel": "Neto promjena",
     "changesLabel": "Zabilježene promjene",
@@ -21,7 +21,7 @@ export const account: TextBag["account"] = {
     "lockedBody": "Tvoj spremljeni plan je Free. Plus (4 $/mj.) i Premium (7 $/mj.) otključavaju ovu stranicu. Uskoro: naplata još ne postoji.",
     "signIn": "Prijavi se putem Steama da vidiš svoju statistiku.",
     "plansLink": "Pogledaj planove",
-    "rosterNote": "Primjer profila sastava: ovi igrači nemaju zabilježenih A.C.E. mečeva, pa statistika ne prikazuje brojeve.",
+    "rosterNote": "Primjer profila sastava: ovi igrači nemaju zabilježenih A.C.E mečeva, pa statistika ne prikazuje brojeve.",
     "dashTitle": "Statistika i analiza",
     "dashStats": "Otvori statistiku igrača",
     "dashAnalysis": "Otvori analizu mečeva (Premium)",
@@ -38,7 +38,7 @@ export const account: TextBag["account"] = {
     "stats": {
       "accountStatus": "Status računa",
       "subscription": "Pretplata",
-      "rank": "A.C.E. rang",
+      "rank": "A.C.E rang",
       "ratingPoints": "Bodovi rejtinga",
       "wins": "Pobjede",
       "losses": "Porazi",
@@ -71,7 +71,7 @@ export const account: TextBag["account"] = {
     "rankedButton": "Pronađi ranked meč",
     "roster": {
       "title": "5v5 postava",
-      "body": "Jedan kapetan. Četiri pozivnice. Kapetani pozivaju druge A.C.E. ID-jeve računa, koji se stvaraju tek nakon provjerene Steam prijave."
+      "body": "Jedan kapetan. Četiri pozivnice. Kapetani pozivaju druge A.C.E ID-jeve računa, koji se stvaraju tek nakon provjerene Steam prijave."
     },
     "pendingInvites": "Pozivnice na čekanju"
   },
@@ -86,7 +86,7 @@ export const account: TextBag["account"] = {
     },
     "invite": {
       "failed": "Pozivnica nije uspjela.",
-      "label": "Pozovi slobodnog igrača putem SteamID-a ili A.C.E. ID-a računa",
+      "label": "Pozovi slobodnog igrača putem SteamID-a ili A.C.E ID-a računa",
       "submitAria": "Pošalji timsku pozivnicu",
       "submit": "Pošalji pozivnicu"
     }
@@ -94,8 +94,8 @@ export const account: TextBag["account"] = {
   "profile": {
     "meta": {
       "notFoundTitle": "Profil igrača",
-      "title": "{name} · A.C.E. profil",
-      "description": "A.C.E. dosje igrača. Plus i Premium sesije otključavaju grafove trendova telemetrije."
+      "title": "{name} · A.C.E profil",
+      "description": "A.C.E dosje igrača. Plus i Premium sesije otključavaju grafove trendova telemetrije."
     },
     "kicker": "Identitet igrača",
     "bannerPlaceholder": "Banner profila · uskoro",
@@ -132,7 +132,7 @@ export const account: TextBag["account"] = {
     "back": "Povratak na postavu klana"
   },
   "networks": {
-    "note": "Poveznica upisana ovdje ostaje u ovom pregledniku i ne sprema se. A.C.E. nikad ne traži Steam lozinku.",
+    "note": "Poveznica upisana ovdje ostaje u ovom pregledniku i ne sprema se. A.C.E nikad ne traži Steam lozinku.",
     "labels": {
       "steam": "Steam profil"
     },
@@ -150,9 +150,9 @@ export const account: TextBag["account"] = {
       "title": "Pogreška prijave"
     },
     "title": "Steam prijava nije dovršena",
-    "notConfigured": "Steam OpenID još nije konfiguriran na ovom poslužitelju. A.C.E. nikad ne traži Steam lozinku.",
-    "unavailable": "Steam nije odgovorio na zahtjev za provjeru. Pokušaj ponovno za trenutak. A.C.E. nikad ne traži Steam lozinku.",
-    "unverified": "OpenID povratni poziv nije bilo moguće provjeriti na poslužitelju. A.C.E. nikad ne traži Steam lozinku.",
+    "notConfigured": "Steam OpenID još nije konfiguriran na ovom poslužitelju. A.C.E nikad ne traži Steam lozinku.",
+    "unavailable": "Steam nije odgovorio na zahtjev za provjeru. Pokušaj ponovno za trenutak. A.C.E nikad ne traži Steam lozinku.",
+    "unverified": "OpenID povratni poziv nije bilo moguće provjeriti na poslužitelju. A.C.E nikad ne traži Steam lozinku.",
     "returnHome": "Povratak na početnu"
   }
 };

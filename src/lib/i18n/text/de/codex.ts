@@ -4,7 +4,7 @@ export const codex: TextBag["codex"] = {
   meta: {
     title: "Kalibrierungs-Kodex",
     description:
-      "Die Ränge von A.C.E. erklärt. Jede Frage öffnet eine vollständige Antwort zu den Wertungspunkten und zum Kodex des jeweiligen Rangs. Der Kodex wertet kein Spiel.",
+      "Die Ränge von A.C.E erklärt. Jede Frage öffnet eine vollständige Antwort zu den Wertungspunkten und zum Kodex des jeweiligen Rangs. Der Kodex wertet kein Spiel.",
     articleTitle: "{title} — Kalibrierungs-Kodex",
   },
   groups: {
@@ -33,7 +33,7 @@ export const codex: TextBag["codex"] = {
     searchLabel: "Kodex durchsuchen",
     searchPlaceholder: "Versuchen Sie 1950, Recruit oder Unentschieden",
     empty: "Kein Eintrag passt zu dieser Suche.",
-    columnLabel: "A.C.E.-Spalte {n}",
+    columnLabel: "A.C.E-Spalte {n}",
     pagerLabel: "Kodex-Seiten",
     first: "Erste",
     previous: "Zurück",
@@ -42,7 +42,7 @@ export const codex: TextBag["codex"] = {
     pageOf: "Seite {n} von {m}",
   },
   article: {
-    breadcrumb: "A.C.E. · Kalibrierungs-Kodex",
+    breadcrumb: "A.C.E · Kalibrierungs-Kodex",
     status:
       "Diese Seite erklärt die schriftlich festgelegte Rangleiter. Sie wertet kein Spiel und ändert keine gespeicherte Wertung.",
     emblemAlt: "Emblem {name}, Rang {level}",
@@ -67,7 +67,7 @@ export const codex: TextBag["codex"] = {
     turnLabel: "Weiter durch den Kodex",
     previous: "Zurück",
     next: "Weiter",
-    alsoIn: "Außerdem bei A.C.E.",
+    alsoIn: "Außerdem bei A.C.E",
     backToBoard: "Zurück zur Rangtafel",
   },
   rankArticle: {
@@ -146,21 +146,21 @@ export const codex: TextBag["codex"] = {
     },
     "rank-10-a-c-e-legend": {
       stance:
-        "A.C.E. Legend ist das letzte Abzeichen. Die Kristallbezeichnung lautet ACE ELITE. Der offizielle Name ist A.C.E. Legend.",
+        "A.C.E Legend ist das letzte Abzeichen. Die Kristallbezeichnung lautet ACE ELITE. Der offizielle Name ist A.C.E Legend.",
       detail:
         "Der Bereich beginnt bei 1.950 und endet an der Obergrenze der Engine, 3.000. Es gibt keinen elften Rang. Eine gespeicherte Wertung kann nicht über 3.000 steigen.",
     },
   },
   articles: {
     "what-a-rank-is": {
-      title: "Was ein A.C.E.-Rang ist",
-      lede: "Ein Rang ist das Abzeichen, in dessen Bereich Ihre gespeicherten Wertungspunkte liegen. Zehn Abzeichen decken die gesamte Rangleiter ab, von Recruit bis A.C.E. Legend.",
+      title: "Was ein A.C.E-Rang ist",
+      lede: "Ein Rang ist das Abzeichen, in dessen Bereich Ihre gespeicherten Wertungspunkte liegen. Zehn Abzeichen decken die gesamte Rangleiter ab, von Recruit bis A.C.E Legend.",
       sections: [
         {
           heading: "Eine Zahl, ein Abzeichen",
           paragraphs: [
             "Das Konto speichert eine Wettkampfwertung. Die Rangleiter liest diese Zahl und gibt den höchsten Rang zurück, dessen Untergrenze die Zahl erreicht hat. Sie tragen nie zwei Ränge gleichzeitig.",
-            "Recruit ist Rang 1. A.C.E. Legend ist Rang 10. Der offizielle Name ist der Name in der Rangleiter. Das kürzere Wort auf dem Emblem ist die Kristallbezeichnung desselben Rangs.",
+            "Recruit ist Rang 1. A.C.E Legend ist Rang 10. Der offizielle Name ist der Name in der Rangleiter. Das kürzere Wort auf dem Emblem ist die Kristallbezeichnung desselben Rangs.",
             "Dieser Kodex erklärt die schriftlich festgelegte Rangleiter. Er wertet kein Spiel und ändert keine gespeicherte Wertung.",
           ],
         },
@@ -168,7 +168,7 @@ export const codex: TextBag["codex"] = {
           heading: "Wo die Untergrenzen liegen",
           paragraphs: [
             "Recruit deckt den Anfang der Rangleiter ab. Operative beginnt bei 1.100. Von Vanguard bis Grandmaster liegt jede neue Untergrenze 100 Punkte höher: 1.200, 1.300, 1.400, 1.500, 1.600, dann 1.700.",
-            "Sovereign beginnt bei 1.800 und hält das Konto bis 1.949. A.C.E. Legend beginnt bei 1.950. Die Obergrenze der Engine liegt bei 3.000, daher ist Legend der längste Bereich.",
+            "Sovereign beginnt bei 1.800 und hält das Konto bis 1.949. A.C.E Legend beginnt bei 1.950. Die Obergrenze der Engine liegt bei 3.000, daher ist Legend der längste Bereich.",
           ],
         },
         {
@@ -187,14 +187,14 @@ export const codex: TextBag["codex"] = {
         {
           heading: "Warum es beide gibt",
           paragraphs: [
-            "Die Engine und das Profil verwenden den offiziellen Namen: Recruit, Operative, Vanguard, Specialist, Veteran, Elite, Master, Grandmaster, Sovereign, A.C.E. Legend.",
+            "Die Engine und das Profil verwenden den offiziellen Namen: Recruit, Operative, Vanguard, Specialist, Veteran, Elite, Master, Grandmaster, Sovereign, A.C.E Legend.",
             "Das Emblem trägt außerdem eine Kristallbezeichnung: IRON, BRONZE, SILVER, GOLD, PLATINUM, DIAMOND, MASTER, GRANDMASTER, IMMORTAL, ACE ELITE. Diese Bezeichnung ist Gestaltung. Sie schafft keinen elften Rang und speichert keine zweite Zahl.",
           ],
         },
         {
           heading: "Wo sie voneinander abweichen",
           paragraphs: [
-            "Die Kristallbezeichnung von Specialist ist GOLD. Die von Veteran ist PLATINUM. Die von Elite ist DIAMOND. Die von Sovereign ist IMMORTAL. Die von A.C.E. Legend ist ACE ELITE. In jedem Fall gehört die Untergrenze weiterhin zum offiziellen Namen.",
+            "Die Kristallbezeichnung von Specialist ist GOLD. Die von Veteran ist PLATINUM. Die von Elite ist DIAMOND. Die von Sovereign ist IMMORTAL. Die von A.C.E Legend ist ACE ELITE. In jedem Fall gehört die Untergrenze weiterhin zum offiziellen Namen.",
             "Master und Grandmaster verwenden an beiden Stellen dasselbe Wort.",
           ],
         },
@@ -310,7 +310,7 @@ export const codex: TextBag["codex"] = {
           heading: "Die Grenzen",
           paragraphs: [
             "Eine Niederlage bei 100 Wertungspunkten bleibt bei 100. Ein Sieg bei 3.000 bleibt bei 3.000. Die Untergrenze von Recruit in der Rangleiter ist als 0 angegeben, doch die gespeicherte Zahl nutzt den Bereich unter 100 nie.",
-            "1.949 ist Sovereign. 1.950 ist A.C.E. Legend. Dazwischen gibt es kein Abzeichen.",
+            "1.949 ist Sovereign. 1.950 ist A.C.E Legend. Dazwischen gibt es kein Abzeichen.",
           ],
         },
         {
@@ -357,7 +357,7 @@ export const codex: TextBag["codex"] = {
           heading: "Was der Spieltisch nicht tut",
           paragraphs: [
             "SPIEL FINDEN sucht keine Gegner. Es ändert keine Wertungspunkte. Der Rang eines Kontos ist weiterhin die gespeicherte Zahl, gelesen von der Rangleiter in diesem Kodex.",
-            "Es gibt keine separate Spitzenwarteschlange oberhalb von Legend. A.C.E. Legend ist das letzte Abzeichen und beginnt bei 1.950 Wertungspunkten.",
+            "Es gibt keine separate Spitzenwarteschlange oberhalb von Legend. A.C.E Legend ist das letzte Abzeichen und beginnt bei 1.950 Wertungspunkten.",
           ],
         },
       ],
@@ -463,12 +463,12 @@ export const codex: TextBag["codex"] = {
     },
     "how-a-roster-is-assembled": {
       title: "Wie ein Kader zusammengestellt wird",
-      lede: "Ein Kapitän lädt einen Spieler ein, der bereits ein A.C.E.-Konto hat. Es gibt keinen öffentlichen Freigabelink, und es wird niemals nach einem Steam-Passwort gefragt.",
+      lede: "Ein Kapitän lädt einen Spieler ein, der bereits ein A.C.E-Konto hat. Es gibt keinen öffentlichen Freigabelink, und es wird niemals nach einem Steam-Passwort gefragt.",
       sections: [
         {
           heading: "Die Einladung, die es gibt",
           paragraphs: [
-            "Auf der Mannschaftsseite fügt ein angemeldeter Kapitän eine SteamID64 oder eine A.C.E.-Kontokennung ein. Das Konto muss bereits über Steam OpenID verknüpft sein. Der Server legt eine ausstehende Einladung an, wenn die Datenbank sie annimmt.",
+            "Auf der Mannschaftsseite fügt ein angemeldeter Kapitän eine SteamID64 oder eine A.C.E-Kontokennung ein. Das Konto muss bereits über Steam OpenID verknüpft sein. Der Server legt eine ausstehende Einladung an, wenn die Datenbank sie annimmt.",
             "Der Kader umfasst fünf Spieler, einschließlich des Kapitäns. Ein Kapitän kann nicht sein eigenes Konto einladen. Ein Spieler, der bereits im Kader steht, wird abgelehnt. Ist die Datenbank nicht verfügbar, schlägt die Einladung fehl, und es wird keine Einladung gespeichert.",
           ],
         },

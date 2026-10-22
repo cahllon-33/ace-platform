@@ -5,7 +5,7 @@ export const legalDocs: TextBag["legalDocs"] = {
     "effective": "Tanggal berlaku: {date}",
     "contact": "Kontak: support@ace-platform.gg",
     "definitionsTitle": "Definisi",
-    "definitions": "Dalam Ketentuan ini, “A.C.E.” dan “kami” berarti A.C.E. “Situs” berarti ace-platform.gg. “Akun” berarti profil A.C.E. yang dibuat melalui login Steam. “Paket” berarti Free, Plus, atau Premium. “Buku Aturan” berarti Buku Aturan Kompetitif di /rules. “Admin” berarti staf yang menerapkan Buku Aturan pada suatu acara.",
+    "definitions": "Dalam Ketentuan ini, “A.C.E” dan “kami” berarti A.C.E “Situs” berarti ace-platform.gg. “Akun” berarti profil A.C.E yang dibuat melalui login Steam. “Paket” berarti Free, Plus, atau Premium. “Buku Aturan” berarti Buku Aturan Kompetitif di /rules. “Admin” berarti staf yang menerapkan Buku Aturan pada suatu acara.",
     "suspensionTitle": "Pembatasan dan penangguhan akun",
     "suspension": "Kami dapat memperingatkan, membatasi, menangguhkan, atau menutup Akun yang melanggar Ketentuan ini atau Buku Aturan, misalnya karena curang, berbagi akun, menghindari larangan, pelecehan, atau penipuan. Paket berbayar tidak pernah melindungi Akun dari pembatasan.",
     "disputesTitle": "Keputusan aturan dan banding",
@@ -21,11 +21,11 @@ export const legalDocs: TextBag["legalDocs"] = {
   "terms": {
     "meta": {
       "title": "Ketentuan Layanan",
-      "description": "Ketentuan Layanan situs A.C.E. untuk situs kompetisi Counter-Strike 2 ini. Ranked, pembayaran, dan Anti-Cheat belum aktif."
+      "description": "Ketentuan Layanan situs A.C.E untuk situs kompetisi Counter-Strike 2 ini. Ranked, pembayaran, dan Anti-Cheat belum aktif."
     },
     "kicker": "ACE-LEGAL / KETENTUAN LAYANAN",
     "title": "Ketentuan Layanan",
-    "lede": "Ketentuan ini mengatur penggunaan situs web A.C.E. dan Akun A.C.E. milikmu. Buku Aturan Kompetitif di /rules, Kebijakan Privasi, Kebijakan Cookie, dan ketentuan Premium merupakan bagian dari Ketentuan ini.",
+    "lede": "Ketentuan ini mengatur penggunaan situs web A.C.E dan Akun A.C.E milikmu. Buku Aturan Kompetitif di /rules, Kebijakan Privasi, Kebijakan Cookie, dan ketentuan Premium merupakan bagian dari Ketentuan ini.",
     "sections": {
       "operator": {
         "title": "1. Operator dan independensi",
@@ -36,7 +36,7 @@ export const legalDocs: TextBag["legalDocs"] = {
       "eligibility": {
         "title": "2. Kelayakan dan akun",
         "paragraphs": [
-          "Akun hanya dibuat melalui login resmi Steam OpenID, satu Akun per orang. A.C.E. tidak pernah meminta kata sandi Steam-mu."
+          "Akun hanya dibuat melalui login resmi Steam OpenID, satu Akun per orang. A.C.E tidak pernah meminta kata sandi Steam-mu."
         ]
       },
       "notActive": {
@@ -60,20 +60,20 @@ export const legalDocs: TextBag["legalDocs"] = {
       "liability": {
         "title": "6. Batasan tanggung jawab",
         "paragraphs": [
-          "Sejauh diizinkan hukum, A.C.E. tidak bertanggung jawab atas hilangnya peringkat, hilangnya kosmetik yang tidak pernah menjadi item nyata, atau gangguan Steam / CS2 pihak ketiga. Hak konsumen wajib di negara Anda tidak dikecualikan jika tidak dapat dilepaskan."
+          "Sejauh diizinkan hukum, A.C.E tidak bertanggung jawab atas hilangnya peringkat, hilangnya kosmetik yang tidak pernah menjadi item nyata, atau gangguan Steam / CS2 pihak ketiga. Hak konsumen wajib di negara Anda tidak dikecualikan jika tidak dapat dilepaskan."
         ]
       },
       "copyright": {
         "title": "7. Hak cipta atas materi orisinal situs",
         "paragraphs": [
-          "Teks orisinal, tata letak halaman, emblem, dan grafis yang dibuat untuk situs ini milik A.C.E. Anda tidak boleh menyalin, menerbitkan ulang, atau mengambil materi orisinal itu untuk produk lain tanpa izin tertulis. Jika hukum mengizinkan, A.C.E. dapat menegakkan hak tersebut, termasuk melalui gugatan. Pemberitahuan ini tidak mengajukan perkara, tidak menetapkan ganti rugi, dan tidak menjamin hasil pengadilan.",
-          "Counter-Strike 2, Steam, dan nama peta Dust II, Mirage, Inferno, Nuke, Ancient, Anubis, dan Train adalah milik Valve. A.C.E. tidak mengklaimnya. Membuka situs ini tidak membatalkan hak hukum dan tidak menandatangani kontrak."
+          "Teks orisinal, tata letak halaman, emblem, dan grafis yang dibuat untuk situs ini milik A.C.E. Anda tidak boleh menyalin, menerbitkan ulang, atau mengambil materi orisinal itu untuk produk lain tanpa izin tertulis. Jika hukum mengizinkan, A.C.E dapat menegakkan hak tersebut, termasuk melalui gugatan. Pemberitahuan ini tidak mengajukan perkara, tidak menetapkan ganti rugi, dan tidak menjamin hasil pengadilan.",
+          "Counter-Strike 2, Steam, dan nama peta Dust II, Mirage, Inferno, Nuke, Ancient, Anubis, dan Train adalah milik Valve. A.C.E tidak mengklaimnya. Membuka situs ini tidak membatalkan hak hukum dan tidak menandatangani kontrak."
         ]
       },
       "contact": {
         "title": "8. Kontak",
         "paragraphs": [
-          "support@ace-platform.gg — A.C.E."
+          "support@ace-platform.gg — A.C.E"
         ]
       }
     }
@@ -81,11 +81,11 @@ export const legalDocs: TextBag["legalDocs"] = {
   "privacy": {
     "meta": {
       "title": "Kebijakan Privasi",
-      "description": "Kebijakan Privasi A.C.E.: data seperlunya, hanya Steam OpenID, tanpa kata sandi Steam, tanpa penjualan data perilaku."
+      "description": "Kebijakan Privasi A.C.E: data seperlunya, hanya Steam OpenID, tanpa kata sandi Steam, tanpa penjualan data perilaku."
     },
     "kicker": "ACE-LEGAL / KEBIJAKAN PRIVASI",
     "title": "Kebijakan Privasi",
-    "lede": "Kebijakan Privasi ini menjelaskan data pribadi apa yang disimpan A.C.E. saat kamu menggunakan situs ini, mengapa, dan berapa lama. Jika terjemahan berbeda dari teks bahasa Inggris, teks bahasa Inggris yang berlaku.",
+    "lede": "Kebijakan Privasi ini menjelaskan data pribadi apa yang disimpan A.C.E saat kamu menggunakan situs ini, mengapa, dan berapa lama. Jika terjemahan berbeda dari teks bahasa Inggris, teks bahasa Inggris yang berlaku.",
     "strictNecessity": {
       "title": "Filosofi Kebutuhan Ketat",
       "intro": "Kami mengumpulkan data akun minimum yang diperlukan untuk mengidentifikasi pemain kompetitif dan menghentikan penipuan yang jelas di layanan kami sendiri. Kami tidak mengumpulkan log yang tidak perlu, tidak mengambil inventaris Steam pribadi, dan tidak menjual data perilaku pihak ketiga.",
@@ -93,14 +93,14 @@ export const legalDocs: TextBag["legalDocs"] = {
       "stored": [
         {
           "label": "SteamID 64-bit terverifikasi",
-          "body": "yang dikembalikan oleh pernyataan OpenID resmi Steam, diperiksa di server sebelum akun A.C.E. dibuat atau diperbarui."
+          "body": "yang dikembalikan oleh pernyataan OpenID resmi Steam, diperiksa di server sebelum akun A.C.E dibuat atau diperbarui."
         },
         {
           "label": "Nama tampilan Steam publik",
           "body": "jika kunci Steam Web API dikonfigurasi. Ini adalah string persona, bukan kotak masuk surel."
         },
         {
-          "label": "Catatan akun A.C.E.",
+          "label": "Catatan akun A.C.E",
           "body": "seperti level peringkat, poin rating, menang/kalah, keanggotaan tim, dan hash token sesi."
         }
       ],
@@ -121,10 +121,10 @@ export const legalDocs: TextBag["legalDocs"] = {
     "steamBoundary": {
       "title": "Batas embed pihak ketiga dan Steam OpenID",
       "callback": {
-        "before": "Masuk Steam meninggalkan A.C.E., melakukan autentikasi di Steam, lalu kembali ke",
-        "after": ". Server memverifikasi pernyataan OpenID (termasuk identitas yang diklaim dan parameter yang ditandatangani Steam) sebelum menulis sesi. Kebijakan privasi Steam mengatur data yang disimpan Steam. A.C.E. hanya menyimpan SteamID terverifikasi dan bidang persona publik yang diperlukan untuk mengoperasikan akun."
+        "before": "Masuk Steam meninggalkan A.C.E, melakukan autentikasi di Steam, lalu kembali ke",
+        "after": ". Server memverifikasi pernyataan OpenID (termasuk identitas yang diklaim dan parameter yang ditandatangani Steam) sebelum menulis sesi. Kebijakan privasi Steam mengatur data yang disimpan Steam. A.C.E hanya menyimpan SteamID terverifikasi dan bidang persona publik yang diperlukan untuk mengoperasikan akun."
       },
-      "footerLinks": "Ikon jaringan eksternal di footer adalah tautan direktori ke situs publik. Itu bukan akun resmi A.C.E. dan tidak menyematkan widget pelacakan."
+      "footerLinks": "Ikon jaringan eksternal di footer adalah tautan direktori ke situs publik. Itu bukan akun resmi A.C.E dan tidak menyematkan widget pelacakan."
     },
     "rights": {
       "title": "Hak-hakmu",
@@ -152,7 +152,7 @@ export const legalDocs: TextBag["legalDocs"] = {
     "lede": "Kebijakan Cookie ini mencantumkan cookie yang benar-benar dipasang situs ini, kategori yang dicadangkan untuk nanti, dan apa yang tidak dikumpulkan.",
     "audit": {
       "title": "Pelacak di situs ini",
-      "body": "A.C.E. tidak menjalankan piksel iklan, Google Analytics, Meta Pixel, SDK sidik jari, atau pelacak perilaku pihak ketiga lainnya di situs publik ini. “Pelacak Analitik” dan “Pelacak Pemasaran” opsional di panel persetujuan hanyalah kategori. Mencentangnya tidak memuat skrip hari ini. Jika pelacak ditambahkan nanti, ia akan membaca preferensi tersimpan terlebih dahulu dan tetap nonaktif kecuali Anda menyetujuinya."
+      "body": "A.C.E tidak menjalankan piksel iklan, Google Analytics, Meta Pixel, SDK sidik jari, atau pelacak perilaku pihak ketiga lainnya di situs publik ini. “Pelacak Analitik” dan “Pelacak Pemasaran” opsional di panel persetujuan hanyalah kategori. Mencentangnya tidak memuat skrip hari ini. Jika pelacak ditambahkan nanti, ia akan membaca preferensi tersimpan terlebih dahulu dan tetap nonaktif kecuali Anda menyetujuinya."
     },
     "essential": {
       "title": "Cookie esensial [Wajib / Terkunci]",
@@ -169,7 +169,7 @@ export const legalDocs: TextBag["legalDocs"] = {
     },
     "marketing": {
       "title": "Pelacak Pemasaran [Opsional]",
-      "body": "Dicadangkan. A.C.E. tidak menjual, menyewakan, atau memperantarai profil perilaku. Tidak ada pengelola tag pemasaran di situs ini."
+      "body": "Dicadangkan. A.C.E tidak menjual, menyewakan, atau memperantarai profil perilaku. Tidak ada pengelola tag pemasaran di situs ini."
     },
     "change": {
       "title": "Cara mengubah pilihan Anda",

@@ -3,12 +3,12 @@ import type { TextBag } from "../types";
 export const leaderboard: TextBag["leaderboard"] = {
   "meta": {
     "title": "Sıralama",
-    "description": "A.C.E. rekabet tablosu. Kayıtlı Steam hesapları önce görünür. Boş koltuklar örnek satır olarak kalır."
+    "description": "A.C.E rekabet tablosu. Kayıtlı Steam hesapları önce görünür. Boş koltuklar örnek satır olarak kalır."
   },
   "hero": {
     "kicker": "SIRALAMA",
     "title": "Rekabet tablosu",
-    "note": "Oyuncular Steam'i bağlayıp bir derece kazanana kadar bu tabloyu örnek koltuklar doldurur. Ülke ve öne çıkan silah temsilidir. Silah görselleri A.C.E. stüdyosunun özgün çizimleridir, Valve kaplamaları değildir. Leşler henüz kaydedilmiyor, bu yüzden öne çıkan silah bir en çok leş istatistiği değildir."
+    "note": "Oyuncular Steam'i bağlayıp bir derece kazanana kadar bu tabloyu örnek koltuklar doldurur. Ülke ve öne çıkan silah temsilidir. Silah görselleri A.C.E stüdyosunun özgün çizimleridir, Valve kaplamaları değildir. Leşler henüz kaydedilmiyor, bu yüzden öne çıkan silah bir en çok leş istatistiği değildir."
   },
   "facts": {
     "seats": "Koltuklar",

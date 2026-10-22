@@ -5,7 +5,7 @@ export const legalDocs: TextBag["legalDocs"] = {
     "effective": "시행일: {date}",
     "contact": "문의: support@ace-platform.gg",
     "definitionsTitle": "정의",
-    "definitions": "본 약관에서 'A.C.E.'와 '당사'는 A.C.E.를 뜻합니다. '사이트'는 ace-platform.gg를 뜻합니다. '계정'은 Steam 로그인으로 생성된 A.C.E. 프로필을 뜻합니다. '플랜'은 Free, Plus 또는 Premium을 뜻합니다. '룰북'은 /rules의 경쟁 룰북을 뜻합니다. '관리자'는 이벤트에서 룰북을 적용하는 스태프를 뜻합니다.",
+    "definitions": "본 약관에서 'A.C.E'와 '당사'는 A.C.E를 뜻합니다. '사이트'는 ace-platform.gg를 뜻합니다. '계정'은 Steam 로그인으로 생성된 A.C.E 프로필을 뜻합니다. '플랜'은 Free, Plus 또는 Premium을 뜻합니다. '룰북'은 /rules의 경쟁 룰북을 뜻합니다. '관리자'는 이벤트에서 룰북을 적용하는 스태프를 뜻합니다.",
     "suspensionTitle": "계정 제한 및 정지",
     "suspension": "본 약관이나 룰북을 위반한 계정에 대해 부정행위, 계정 공유, 제재 회피, 괴롭힘, 사기 등을 이유로 경고, 제한, 정지 또는 폐쇄할 수 있습니다. 유료 플랜은 어떤 계정도 제한에서 보호하지 않습니다.",
     "disputesTitle": "규칙 결정 및 이의 제기",
@@ -23,22 +23,22 @@ export const legalDocs: TextBag["legalDocs"] = {
     meta: {
       title: "서비스 이용약관",
       description:
-        "Counter-Strike 2 대회 사이트인 A.C.E. 웹사이트의 서비스 이용약관입니다. 랭크, 결제, 안티치트는 운영되지 않습니다.",
+        "Counter-Strike 2 대회 사이트인 A.C.E 웹사이트의 서비스 이용약관입니다. 랭크, 결제, 안티치트는 운영되지 않습니다.",
     },
     kicker: "ACE-LEGAL / 서비스 이용약관",
     title: "서비스 이용약관",
-    lede: "본 약관은 A.C.E. 웹사이트와 A.C.E. 계정 이용에 적용됩니다. /rules의 경쟁 룰북, 개인정보 처리방침, 쿠키 정책, Premium 약관은 본 약관의 일부입니다.",
+    lede: "본 약관은 A.C.E 웹사이트와 A.C.E 계정 이용에 적용됩니다. /rules의 경쟁 룰북, 개인정보 처리방침, 쿠키 정책, Premium 약관은 본 약관의 일부입니다.",
     sections: {
       operator: {
         title: "1. 운영자 및 독립성",
         paragraphs: [
-          "이 서비스는 A.C.E.가 운영합니다. 사이트를 이용하면 본 약관, 개인정보 처리방침, 쿠키 정책 및 대회 규정집에 동의하는 것입니다.",
+          "이 서비스는 A.C.E가 운영합니다. 사이트를 이용하면 본 약관, 개인정보 처리방침, 쿠키 정책 및 대회 규정집에 동의하는 것입니다.",
         ],
       },
       eligibility: {
         title: "2. 이용 자격 및 계정",
         paragraphs: [
-          "계정은 공식 Steam OpenID 로그인으로만 생성되며 1인 1계정입니다. A.C.E.는 Steam 비밀번호를 절대 요구하지 않습니다.",
+          "계정은 공식 Steam OpenID 로그인으로만 생성되며 1인 1계정입니다. A.C.E는 Steam 비밀번호를 절대 요구하지 않습니다.",
         ],
       },
       notActive: {
@@ -62,20 +62,20 @@ export const legalDocs: TextBag["legalDocs"] = {
       liability: {
         title: "6. 책임의 제한",
         paragraphs: [
-          "법이 허용하는 범위에서, A.C.E.는 랭크 손실, 실제 아이템이 아니었던 코스메틱의 손실, 제3자인 Steam / CS2의 장애에 대해 책임을 지지 않습니다. 귀하의 국가에서 포기할 수 없는 강행적 소비자 권리는 배제되지 않습니다.",
+          "법이 허용하는 범위에서, A.C.E는 랭크 손실, 실제 아이템이 아니었던 코스메틱의 손실, 제3자인 Steam / CS2의 장애에 대해 책임을 지지 않습니다. 귀하의 국가에서 포기할 수 없는 강행적 소비자 권리는 배제되지 않습니다.",
         ],
       },
       copyright: {
         title: "7. 사이트 고유 자료의 저작권",
         paragraphs: [
-          "이 웹사이트를 위해 제작된 고유한 문안, 페이지 레이아웃, 엠블럼, 그래픽은 A.C.E.에 속합니다. 서면 허가 없이 해당 고유 자료를 다른 제품을 위해 복제, 재게시, 스크래핑할 수 없습니다. 법이 허용하는 경우, A.C.E.는 청구를 포함하여 그 권리를 행사할 수 있습니다. 이 고지는 소송을 제기하는 것이 아니며, 손해배상액을 정하지 않고, 법원 판결을 보장하지 않습니다.",
-          "Counter-Strike 2, Steam, 그리고 Dust II, Mirage, Inferno, Nuke, Ancient, Anubis, Train 등의 맵 이름은 Valve에 속합니다. A.C.E.는 이에 대한 권리를 주장하지 않습니다. 이 웹사이트를 여는 것은 법적 권리를 취소하지 않으며 계약을 체결하는 것도 아닙니다.",
+          "이 웹사이트를 위해 제작된 고유한 문안, 페이지 레이아웃, 엠블럼, 그래픽은 A.C.E에 속합니다. 서면 허가 없이 해당 고유 자료를 다른 제품을 위해 복제, 재게시, 스크래핑할 수 없습니다. 법이 허용하는 경우, A.C.E는 청구를 포함하여 그 권리를 행사할 수 있습니다. 이 고지는 소송을 제기하는 것이 아니며, 손해배상액을 정하지 않고, 법원 판결을 보장하지 않습니다.",
+          "Counter-Strike 2, Steam, 그리고 Dust II, Mirage, Inferno, Nuke, Ancient, Anubis, Train 등의 맵 이름은 Valve에 속합니다. A.C.E는 이에 대한 권리를 주장하지 않습니다. 이 웹사이트를 여는 것은 법적 권리를 취소하지 않으며 계약을 체결하는 것도 아닙니다.",
         ],
       },
       contact: {
         title: "8. 문의",
         paragraphs: [
-          "support@ace-platform.gg — A.C.E.",
+          "support@ace-platform.gg — A.C.E",
         ],
       },
     },
@@ -84,11 +84,11 @@ export const legalDocs: TextBag["legalDocs"] = {
     meta: {
       title: "개인정보 처리방침",
       description:
-        "A.C.E. 개인정보 처리방침: 꼭 필요한 데이터만 처리하며, Steam OpenID만 사용하고, Steam 비밀번호를 받지 않으며, 행동 데이터를 판매하지 않습니다.",
+        "A.C.E 개인정보 처리방침: 꼭 필요한 데이터만 처리하며, Steam OpenID만 사용하고, Steam 비밀번호를 받지 않으며, 행동 데이터를 판매하지 않습니다.",
     },
     kicker: "ACE-LEGAL / 개인정보 처리방침",
     title: "개인정보 처리방침",
-    lede: "본 개인정보 처리방침은 사이트 이용 시 A.C.E.가 어떤 개인정보를, 왜, 얼마 동안 저장하는지 설명합니다. 번역본과 영어 원문이 다를 경우 영어 원문이 우선합니다.",
+    lede: "본 개인정보 처리방침은 사이트 이용 시 A.C.E가 어떤 개인정보를, 왜, 얼마 동안 저장하는지 설명합니다. 번역본과 영어 원문이 다를 경우 영어 원문이 우선합니다.",
     strictNecessity: {
       title: "엄격한 필요성 원칙",
       intro:
@@ -97,14 +97,14 @@ export const legalDocs: TextBag["legalDocs"] = {
       stored: [
         {
           label: "검증된 64비트 SteamID",
-          body: "Steam의 공식 OpenID 어설션으로 반환되며, A.C.E. 계정이 생성되거나 갱신되기 전에 서버에서 확인됩니다.",
+          body: "Steam의 공식 OpenID 어설션으로 반환되며, A.C.E 계정이 생성되거나 갱신되기 전에 서버에서 확인됩니다.",
         },
         {
           label: "공개 Steam 표시 이름",
           body: "Steam Web API 키가 설정된 경우에 저장됩니다. 이는 페르소나 문자열이며 이메일 수신함이 아닙니다.",
         },
         {
-          label: "A.C.E. 계정 기록",
+          label: "A.C.E 계정 기록",
           body: "랭크 레벨, 레이팅 포인트, 승/패, 팀 소속, 세션 토큰 해시 등입니다.",
         },
       ],
@@ -126,17 +126,17 @@ export const legalDocs: TextBag["legalDocs"] = {
     steamBoundary: {
       title: "제3자 임베드 및 Steam OpenID의 경계",
       callback: {
-        before: "Steam 로그인은 A.C.E.를 벗어나 Steam에서 인증한 뒤 다음 경로로 돌아옵니다:",
+        before: "Steam 로그인은 A.C.E를 벗어나 Steam에서 인증한 뒤 다음 경로로 돌아옵니다:",
         after:
-          ". 서버는 세션을 기록하기 전에 OpenID 어설션(주장된 신원 및 Steam의 서명된 매개변수 포함)을 검증합니다. Steam이 보유한 데이터에는 Steam의 개인정보 처리방침이 적용됩니다. A.C.E.는 계정 운영에 필요한 검증된 SteamID와 공개 페르소나 항목만 보관합니다.",
+          ". 서버는 세션을 기록하기 전에 OpenID 어설션(주장된 신원 및 Steam의 서명된 매개변수 포함)을 검증합니다. Steam이 보유한 데이터에는 Steam의 개인정보 처리방침이 적용됩니다. A.C.E는 계정 운영에 필요한 검증된 SteamID와 공개 페르소나 항목만 보관합니다.",
       },
       footerLinks:
-        "푸터의 외부 네트워크 아이콘은 공개 웹사이트로 연결되는 디렉터리 링크입니다. 공식 A.C.E. 계정이 아니며, 추적 위젯을 삽입하지 않습니다.",
+        "푸터의 외부 네트워크 아이콘은 공개 웹사이트로 연결되는 디렉터리 링크입니다. 공식 A.C.E 계정이 아니며, 추적 위젯을 삽입하지 않습니다.",
     },
     rights: {
       title: "이용자의 권리",
       before:
-        "개인정보 권리가 보장되는 지역에 거주하는 경우, 다음 이메일로 A.C.E. 계정 데이터의 열람, 정정, 삭제를 요청할 수 있습니다:",
+        "개인정보 권리가 보장되는 지역에 거주하는 경우, 다음 이메일로 A.C.E 계정 데이터의 열람, 정정, 삭제를 요청할 수 있습니다:",
       after:
         ". 사이트 계정을 삭제해도 Valve가 내린 Steam 또는 VAC 결정은 바뀌지 않습니다.",
     },
@@ -149,27 +149,27 @@ export const legalDocs: TextBag["legalDocs"] = {
     },
     controller: {
       title: "개인정보 처리자",
-      body: "A.C.E. 문의: support@ace-platform.gg.",
+      body: "A.C.E 문의: support@ace-platform.gg.",
     },
   },
   cookiePolicy: {
     meta: {
       title: "쿠키 정책",
       description:
-        "A.C.E. 쿠키 및 텔레메트리 개인정보 감사입니다. 예약된 선택 항목에 동의하지 않는 한 필수 세션 쿠키만 사용합니다.",
+        "A.C.E 쿠키 및 텔레메트리 개인정보 감사입니다. 예약된 선택 항목에 동의하지 않는 한 필수 세션 쿠키만 사용합니다.",
     },
     kicker: "ACE-LEGAL / 쿠키 정책",
     title: "쿠키 정책",
     lede: "본 쿠키 정책은 사이트가 실제로 설정하는 쿠키, 추후를 위해 예약된 카테고리, 수집하지 않는 항목을 안내합니다.",
     audit: {
       title: "이 사이트의 추적 도구",
-      body: "A.C.E.는 이 공개 웹사이트에서 광고 픽셀, Google Analytics, Meta Pixel, 핑거프린팅 SDK, 기타 제3자 행동 추적 도구를 실행하지 않습니다. 동의 트레이의 선택 항목인 “분석 추적 도구”와 “마케팅 추적 도구”는 분류일 뿐입니다. 현재는 이를 선택해도 스크립트가 로드되지 않습니다. 나중에 추적 도구가 추가되면, 먼저 저장된 설정을 읽고 귀하가 동의하지 않는 한 비활성 상태로 유지됩니다.",
+      body: "A.C.E는 이 공개 웹사이트에서 광고 픽셀, Google Analytics, Meta Pixel, 핑거프린팅 SDK, 기타 제3자 행동 추적 도구를 실행하지 않습니다. 동의 트레이의 선택 항목인 “분석 추적 도구”와 “마케팅 추적 도구”는 분류일 뿐입니다. 현재는 이를 선택해도 스크립트가 로드되지 않습니다. 나중에 추적 도구가 추가되면, 먼저 저장된 설정을 읽고 귀하가 동의하지 않는 한 비활성 상태로 유지됩니다.",
     },
     essential: {
       title: "필수 쿠키 [필수 / 잠김]",
       session: {
         label: "세션 쿠키",
-        body: "— 검증된 Steam OpenID 콜백 이후에만 설정됩니다. HttpOnly 속성으로 페이지 JavaScript에서 읽을 수 없으며, A.C.E.에서 로그인 상태를 유지하는 데 사용됩니다.",
+        body: "— 검증된 Steam OpenID 콜백 이후에만 설정됩니다. HttpOnly 속성으로 페이지 JavaScript에서 읽을 수 없으며, A.C.E에서 로그인 상태를 유지하는 데 사용됩니다.",
       },
       necessity:
         "이 쿠키는 인증된 계정을 운영하는 데 반드시 필요합니다. 광고 ID가 아닙니다.",
@@ -181,7 +181,7 @@ export const legalDocs: TextBag["legalDocs"] = {
     },
     marketing: {
       title: "마케팅 추적 도구 [선택]",
-      body: "예약된 항목입니다. A.C.E.는 행동 프로필을 판매, 대여, 중개하지 않습니다. 이 사이트에는 마케팅 태그 관리자가 없습니다.",
+      body: "예약된 항목입니다. A.C.E는 행동 프로필을 판매, 대여, 중개하지 않습니다. 이 사이트에는 마케팅 태그 관리자가 없습니다.",
     },
     change: {
       title: "선택을 변경하는 방법",

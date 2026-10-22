@@ -4,18 +4,18 @@ export const RB_PT_BR: RulebookText = {
   "summary16": "Os árbitros escolhem a punição dentro da faixa abaixo conforme a intenção, o impacto e a reincidência. Infrações repetidas sobem na faixa.",
   "clauses": [
     [
-      "Este regulamento rege todas as competições organizadas pela A.C.E.: copas, ligas, rankings e partidas de exibição. A página de um evento pode acrescentar condições próprias; em caso de conflito com este regulamento, a página do evento prevalece apenas para aquele evento.",
-      "\"Organizador\" é a equipe de operações da A.C.E. \"Árbitro\" é um membro do organizador designado para um evento. \"Time\" é uma line-up registrada. \"Capitão\" é o jogador que representa o time. \"Partida\" é um ou mais mapas entre dois times. \"Série\" é um conjunto de mapas em melhor de um, melhor de três ou melhor de cinco.",
+      "Este regulamento rege todas as competições organizadas pela A.C.E: copas, ligas, rankings e partidas de exibição. A página de um evento pode acrescentar condições próprias; em caso de conflito com este regulamento, a página do evento prevalece apenas para aquele evento.",
+      "\"Organizador\" é a equipe de operações da A.C.E \"Árbitro\" é um membro do organizador designado para um evento. \"Time\" é uma line-up registrada. \"Capitão\" é o jogador que representa o time. \"Partida\" é um ou mais mapas entre dois times. \"Série\" é um conjunto de mapas em melhor de um, melhor de três ou melhor de cinco.",
       "Ao se inscrever, cada jogador e cada time aceitam este regulamento, os Termos de Serviço e a Política de Privacidade.",
       "Os árbitros podem decidir situações não previstas neste regulamento, orientados pelo jogo limpo e pelo espírito destas regras. Essas decisões são registradas e publicadas com o resultado da partida."
     ],
     [
-      "Os jogadores não podem estar sob suspensão ativa da A.C.E., nem ter na conta Steam utilizada um banimento de jogo aplicado nos últimos 2 anos.",
+      "Os jogadores não podem estar sob suspensão ativa da A.C.E, nem ter na conta Steam utilizada um banimento de jogo aplicado nos últimos 2 anos.",
       "A equipe do organizador e os árbitros não podem jogar em um evento que administram.",
       "Limites de região ou de rating são definidos por evento e publicados antes da abertura das inscrições. Um jogador fora desses limites não pode jogar, nem mesmo como reserva."
     ],
     [
-      "Cada jogador usa uma conta A.C.E. vinculada a uma única conta Steam pelo login Steam. A A.C.E. nunca pede a senha da Steam; quem pede não é o organizador.",
+      "Cada jogador usa uma conta A.C.E vinculada a uma única conta Steam pelo login Steam. A A.C.E nunca pede a senha da Steam; quem pede não é o organizador.",
       "É proibido compartilhar conta, jogar na conta de outra pessoa ou deixar outra pessoa jogar na sua. As duas contas são punidas.",
       "Criar uma nova conta para escapar de uma punição, de um rating ou de uma restrição é evasão de banimento e é tratado como infração de integridade (seção 14).",
       "Nomes de exibição e avatares devem seguir as regras de conduta (seção 13). Os árbitros podem exigir alteração antes de uma partida.",
@@ -89,8 +89,8 @@ export const RB_PT_BR: RulebookText = {
       "São proibidos ghosting (receber informações de espectadores ou transmissões), stream sniping, jogar na conta de outra pessoa e evasão de banimento.",
       "São proibidos a manipulação de resultados, perder de propósito e apostar em qualquer partida do seu time ou do seu evento.",
       "É proibido usar um bug de mapa ou de jogo que o árbitro tenha listado como proibido, ou que quebre claramente as mecânicas previstas do jogo.",
-      "Os jogadores devem rodar o cliente antitrapaça da A.C.E. durante toda a partida quando o evento exigir.",
-      "Os admins podem pedir demos ou gravações de tela para análise. Os dados de hardware só serão pedidos quando o cliente anti-trapaça A.C.E. existir e a Política de Privacidade os descrever. Recusar um pedido razoável sem motivo válido pode ser tido em conta na decisão.",
+      "Os jogadores devem rodar o cliente antitrapaça da A.C.E durante toda a partida quando o evento exigir.",
+      "Os admins podem pedir demos ou gravações de tela para análise. Os dados de hardware só serão pedidos quando o cliente anti-trapaça A.C.E existir e a Política de Privacidade os descrever. Recusar um pedido razoável sem motivo válido pode ser tido em conta na decisão.",
       "Qualquer pessoa pode denunciar uma suspeita de violação ao organizador de forma privada. Acusações públicas sem denúncia são infração de conduta."
     ],
     [
@@ -105,7 +105,7 @@ export const RB_PT_BR: RulebookText = {
       "Banimentos valem para a pessoa e para todas as contas que ela controla."
     ],
     [
-      "A A.C.E. tem o direito de transmitir qualquer partida que organize. Os times não podem recusar uma transmissão.",
+      "A A.C.E tem o direito de transmitir qualquer partida que organize. Os times não podem recusar uma transmissão.",
       "Os jogadores só podem transmitir as próprias partidas com atraso mínimo de 2 minutos e apenas se a página do evento permitir. As transmissões oficiais usam o atraso definido pelo organizador.",
       "Os jogadores não podem assistir a nenhuma transmissão ao vivo da própria partida enquanto ela acontece.",
       "Partidas programadas para transmissão podem ser movidas em até 2 horas com aviso de 24 horas. Os times devem estar disponíveis no novo horário ou pedir uma decisão do árbitro.",

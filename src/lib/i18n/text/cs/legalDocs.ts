@@ -5,7 +5,7 @@ export const legalDocs: TextBag["legalDocs"] = {
     "effective": "Datum účinnosti: {date}",
     "contact": "Kontakt: support@ace-platform.gg",
     "definitionsTitle": "Definice",
-    "definitions": "V těchto Podmínkách „A.C.E.“, „my“ znamená A.C.E. „Web“ znamená ace-platform.gg. „Účet“ znamená profil A.C.E. vytvořený přihlášením přes Steam. „Plán“ znamená Free, Plus nebo Premium. „Pravidla“ znamenají soutěžní pravidla na /rules. „Admin“ znamená člena týmu, který pravidla uplatňuje na akci.",
+    "definitions": "V těchto Podmínkách „A.C.E“, „my“ znamená A.C.E „Web“ znamená ace-platform.gg. „Účet“ znamená profil A.C.E vytvořený přihlášením přes Steam. „Plán“ znamená Free, Plus nebo Premium. „Pravidla“ znamenají soutěžní pravidla na /rules. „Admin“ znamená člena týmu, který pravidla uplatňuje na akci.",
     "suspensionTitle": "Omezení a pozastavení účtu",
     "suspension": "Účet, který porušuje tyto Podmínky nebo Pravidla, například podváděním, sdílením účtu, obcházením banu, obtěžováním nebo podvodem, můžeme varovat, omezit, pozastavit nebo zrušit. Placený plán nikdy nechrání účet před omezením.",
     "disputesTitle": "Rozhodnutí o pravidlech a odvolání",
@@ -23,11 +23,11 @@ export const legalDocs: TextBag["legalDocs"] = {
     meta: {
       title: "Podmínky služby",
       description:
-        "Podmínky služby webu A.C.E. pro tento soutěžní web Counter-Strike 2. Rankingové hry, platby a anti-cheat nejsou v provozu.",
+        "Podmínky služby webu A.C.E pro tento soutěžní web Counter-Strike 2. Rankingové hry, platby a anti-cheat nejsou v provozu.",
     },
     kicker: "ACE-LEGAL / PODMÍNKY SLUŽBY",
     title: "Podmínky služby",
-    lede: "Tyto Podmínky upravují používání webu A.C.E. a tvého účtu A.C.E. Soutěžní pravidla na /rules, Zásady ochrany osobních údajů, Zásady cookies a podmínky Premium jsou součástí těchto Podmínek.",
+    lede: "Tyto Podmínky upravují používání webu A.C.E a tvého účtu A.C.E. Soutěžní pravidla na /rules, Zásady ochrany osobních údajů, Zásady cookies a podmínky Premium jsou součástí těchto Podmínek.",
     sections: {
       operator: {
         title: "1. Provozovatel a nezávislost",
@@ -38,7 +38,7 @@ export const legalDocs: TextBag["legalDocs"] = {
       eligibility: {
         title: "2. Způsobilost a účty",
         paragraphs: [
-          "Účty se vytvářejí jen oficiálním přihlášením Steam OpenID, jeden účet na osobu. A.C.E. nikdy nežádá heslo ke Steamu.",
+          "Účty se vytvářejí jen oficiálním přihlášením Steam OpenID, jeden účet na osobu. A.C.E nikdy nežádá heslo ke Steamu.",
         ],
       },
       notActive: {
@@ -62,20 +62,20 @@ export const legalDocs: TextBag["legalDocs"] = {
       liability: {
         title: "6. Omezení odpovědnosti",
         paragraphs: [
-          "V rozsahu povoleném právními předpisy A.C.E. neodpovídá za ztracenou hodnost, za ztracenou kosmetiku, která nikdy nebyla skutečným předmětem, ani za výpadky Steam / CS2 způsobené třetí stranou. Kogentní spotřebitelská práva ve vaší zemi nejsou vyloučena tam, kde se jich nelze vzdát.",
+          "V rozsahu povoleném právními předpisy A.C.E neodpovídá za ztracenou hodnost, za ztracenou kosmetiku, která nikdy nebyla skutečným předmětem, ani za výpadky Steam / CS2 způsobené třetí stranou. Kogentní spotřebitelská práva ve vaší zemi nejsou vyloučena tam, kde se jich nelze vzdát.",
         ],
       },
       copyright: {
         title: "7. Autorská práva k původnímu obsahu webu",
         paragraphs: [
-          "Původní texty, rozvržení stránek, emblémy a grafika vytvořené pro tento web patří společnosti A.C.E. Tento původní obsah nesmíte bez písemného souhlasu kopírovat, znovu zveřejňovat ani automaticky stahovat pro jiný produkt. Tam, kde to právo dovoluje, může A.C.E. toto právo vymáhat, a to i formou žaloby. Toto upozornění nezahajuje žádné řízení, nestanoví výši náhrady škody a nezaručuje výsledek soudního řízení.",
-          "Counter-Strike 2, Steam a názvy map Dust II, Mirage, Inferno, Nuke, Ancient, Anubis a Train patří společnosti Valve. A.C.E. si je nenárokuje. Otevření tohoto webu neruší žádné zákonné právo a neuzavírá smlouvu.",
+          "Původní texty, rozvržení stránek, emblémy a grafika vytvořené pro tento web patří společnosti A.C.E. Tento původní obsah nesmíte bez písemného souhlasu kopírovat, znovu zveřejňovat ani automaticky stahovat pro jiný produkt. Tam, kde to právo dovoluje, může A.C.E toto právo vymáhat, a to i formou žaloby. Toto upozornění nezahajuje žádné řízení, nestanoví výši náhrady škody a nezaručuje výsledek soudního řízení.",
+          "Counter-Strike 2, Steam a názvy map Dust II, Mirage, Inferno, Nuke, Ancient, Anubis a Train patří společnosti Valve. A.C.E si je nenárokuje. Otevření tohoto webu neruší žádné zákonné právo a neuzavírá smlouvu.",
         ],
       },
       contact: {
         title: "8. Kontakt",
         paragraphs: [
-          "support@ace-platform.gg — A.C.E.",
+          "support@ace-platform.gg — A.C.E",
         ],
       },
     },
@@ -84,11 +84,11 @@ export const legalDocs: TextBag["legalDocs"] = {
     meta: {
       title: "Zásady ochrany soukromí",
       description:
-        "Zásady ochrany soukromí A.C.E.: pouze nezbytně nutné údaje, výhradně Steam OpenID, žádná hesla ke službě Steam, žádný prodej údajů o chování.",
+        "Zásady ochrany soukromí A.C.E: pouze nezbytně nutné údaje, výhradně Steam OpenID, žádná hesla ke službě Steam, žádný prodej údajů o chování.",
     },
     kicker: "ACE-LEGAL / ZÁSADY OCHRANY OSOBNÍCH ÚDAJŮ",
     title: "Zásady ochrany soukromí",
-    lede: "Tyto Zásady vysvětlují, jaké osobní údaje A.C.E. uchovává, když používáš tento web, proč a jak dlouho. Pokud se překlad liší od anglického textu, platí anglický text.",
+    lede: "Tyto Zásady vysvětlují, jaké osobní údaje A.C.E uchovává, když používáš tento web, proč a jak dlouho. Pokud se překlad liší od anglického textu, platí anglický text.",
     strictNecessity: {
       title: "Zásada nezbytné nutnosti",
       intro:
@@ -97,14 +97,14 @@ export const legalDocs: TextBag["legalDocs"] = {
       stored: [
         {
           label: "Ověřené 64bitové SteamID",
-          body: "vrácené oficiálním tvrzením OpenID služby Steam a ověřené na serveru předtím, než je účet A.C.E. vytvořen nebo aktualizován.",
+          body: "vrácené oficiálním tvrzením OpenID služby Steam a ověřené na serveru předtím, než je účet A.C.E vytvořen nebo aktualizován.",
         },
         {
           label: "Veřejné zobrazované jméno Steam",
           body: "pokud je nastaven klíč Steam Web API. Jde o řetězec přezdívky, nikoli o e-mailovou schránku.",
         },
         {
-          label: "Záznamy účtu A.C.E.",
+          label: "Záznamy účtu A.C.E",
           body: "například úroveň hodnosti, body hodnocení, výhry/prohry, členství v týmu a hashe tokenů relace.",
         },
       ],
@@ -126,17 +126,17 @@ export const legalDocs: TextBag["legalDocs"] = {
     steamBoundary: {
       title: "Hranice vložených prvků třetích stran a Steam OpenID",
       callback: {
-        before: "Přihlášení přes Steam opustí A.C.E., proběhne ověření na straně Steam a poté se vrátí na",
+        before: "Přihlášení přes Steam opustí A.C.E, proběhne ověření na straně Steam a poté se vrátí na",
         after:
-          ". Server ověří tvrzení OpenID (včetně deklarované identity a podepsaných parametrů služby Steam) dříve, než zapíše relaci. Údaje, které uchovává Steam, se řídí zásadami ochrany soukromí služby Steam. A.C.E. trvale ukládá pouze ověřené SteamID a veřejná pole profilu potřebná k provozu účtu.",
+          ". Server ověří tvrzení OpenID (včetně deklarované identity a podepsaných parametrů služby Steam) dříve, než zapíše relaci. Údaje, které uchovává Steam, se řídí zásadami ochrany soukromí služby Steam. A.C.E trvale ukládá pouze ověřené SteamID a veřejná pole profilu potřebná k provozu účtu.",
       },
       footerLinks:
-        "Ikony externích sítí v zápatí jsou odkazy adresáře na veřejné weby. Nejsou to oficiální účty A.C.E. a nevkládají sledovací widgety.",
+        "Ikony externích sítí v zápatí jsou odkazy adresáře na veřejné weby. Nejsou to oficiální účty A.C.E a nevkládají sledovací widgety.",
     },
     rights: {
       title: "Tvá práva",
       before:
-        "Pokud se nacházíte v oblasti, kde platí práva týkající se osobních údajů, můžete požádat o přístup k údajům svého účtu A.C.E., jejich opravu nebo výmaz e-mailem na adresu",
+        "Pokud se nacházíte v oblasti, kde platí práva týkající se osobních údajů, můžete požádat o přístup k údajům svého účtu A.C.E, jejich opravu nebo výmaz e-mailem na adresu",
       after:
         ". Smazání účtu na webu nemění žádné rozhodnutí Steamu nebo VAC vydané společností Valve.",
     },
@@ -156,14 +156,14 @@ export const legalDocs: TextBag["legalDocs"] = {
     meta: {
       title: "Zásady souborů cookie",
       description:
-        "Audit souborů cookie a telemetrie A.C.E. z hlediska soukromí. Pouze nezbytné soubory cookie relace, pokud se nepřihlásíte k vyhrazeným volitelným kategoriím.",
+        "Audit souborů cookie a telemetrie A.C.E z hlediska soukromí. Pouze nezbytné soubory cookie relace, pokud se nepřihlásíte k vyhrazeným volitelným kategoriím.",
     },
     kicker: "ACE-LEGAL / ZÁSADY COOKIES",
     title: "Zásady souborů cookie",
     lede: "Tyto Zásady cookies uvádějí cookies, které tento web skutečně ukládá, kategorie vyhrazené na později a co se neshromažďuje.",
     audit: {
       title: "Sledovací nástroje na tomto webu",
-      body: "A.C.E. na tomto veřejném webu nepoužívá reklamní pixely, Google Analytics, Meta Pixel, SDK pro fingerprinting ani jiné sledovací nástroje chování třetích stran. Volitelné „Analytické sledovací nástroje“ a „Marketingové sledovací nástroje“ v panelu souhlasu jsou pouze kategorie. Jejich zaškrtnutí dnes nenačte žádný skript. Pokud bude sledovací nástroj přidán později, nejprve načte uloženou volbu a zůstane vypnutý, pokud jste s ním nesouhlasili.",
+      body: "A.C.E na tomto veřejném webu nepoužívá reklamní pixely, Google Analytics, Meta Pixel, SDK pro fingerprinting ani jiné sledovací nástroje chování třetích stran. Volitelné „Analytické sledovací nástroje“ a „Marketingové sledovací nástroje“ v panelu souhlasu jsou pouze kategorie. Jejich zaškrtnutí dnes nenačte žádný skript. Pokud bude sledovací nástroj přidán později, nejprve načte uloženou volbu a zůstane vypnutý, pokud jste s ním nesouhlasili.",
     },
     essential: {
       title: "Nezbytné soubory cookie [povinné / uzamčené]",
@@ -181,7 +181,7 @@ export const legalDocs: TextBag["legalDocs"] = {
     },
     marketing: {
       title: "Marketingové sledovací nástroje [volitelné]",
-      body: "Vyhrazeno. A.C.E. neprodává, nepronajímá ani nezprostředkovává profily chování. Na tomto webu není žádný marketingový správce značek.",
+      body: "Vyhrazeno. A.C.E neprodává, nepronajímá ani nezprostředkovává profily chování. Na tomto webu není žádný marketingový správce značek.",
     },
     change: {
       title: "Jak změnit svou volbu",

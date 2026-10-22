@@ -62,7 +62,7 @@ export const ranks: TextBag["ranks"] = {
     "kicker": "PERINGKAT PREMIUM",
     "plan": "A.C.E PREMIUM · hanya $7/bulan",
     "title": "Seni peringkat Premium",
-    "lede": "Set peringkat A.C.E. ilustrasi asli: sepuluh lambang kristal dengan divisi III/II/I, protokol rating, kartu detail Legend, dan penampil 3D yang diputar dengan menyeret. Ini seni profil untuk anggota Premium. Membaca tangga Rating Points yang sama dengan peringkat standar dan tidak memberi keunggulan kompetitif apa pun.",
+    "lede": "Set peringkat A.C.E ilustrasi asli: sepuluh lambang kristal dengan divisi III/II/I, protokol rating, kartu detail Legend, dan penampil 3D yang diputar dengan menyeret. Ini seni profil untuk anggota Premium. Membaca tangga Rating Points yang sama dengan peringkat standar dan tidak memberi keunggulan kompetitif apa pun.",
     "demo": "Nilai demo: progres, win-rate, dan divisi di papan ini adalah contoh, bukan statistik langsung. Saat kamu masuk, rating yang ditampilkan adalah rating tersimpanmu.",
     "locked": "Segera hadir: checkout belum ada, jadi hari ini tidak ada akun Premium. Server menerapkan seni peringkat Premium ke profil hanya jika paket tersimpannya Premium.",
     "standardKicker": "PERINGKAT STANDAR",
@@ -77,12 +77,12 @@ export const ranks: TextBag["ranks"] = {
   },
   "meta": {
     "title": "Peringkat Kompetitif",
-    "description": "Sepuluh peringkat A.C.E., dari Iron Recruit hingga A.C.E. Legend, dengan divisi dan batas rating."
+    "description": "Sepuluh peringkat A.C.E, dari Iron Recruit hingga A.C.E Legend, dengan divisi dan batas rating."
   },
   "hero": {
     "kicker": "KALIBRASI",
     "title": "Peringkat Kompetitif",
-    "lede": "Sepuluh tingkat dari Recruit hingga A.C.E. Legend, masing-masing dengan divisi {divisions}. Seret atau gunakan tombol panah untuk memutar emblem. Saat masuk, Anda melihat rating Anda sendiri; jika tidak, batas tiap tingkat."
+    "lede": "Sepuluh tingkat dari Recruit hingga A.C.E Legend, masing-masing dengan divisi {divisions}. Seret atau gunakan tombol panah untuk memutar emblem. Saat masuk, Anda melihat rating Anda sendiri; jika tidak, batas tiap tingkat."
   },
   "codexLink": "Buka Kodeks Kalibrasi",
   "document": {
@@ -134,9 +134,9 @@ export const ranks: TextBag["ranks"] = {
     }
   },
   "board": {
-    "selectEmblem": "Pilih emblem peringkat A.C.E. {name}, level {level}",
-    "emblemAlt": "Lencana profil emblem A.C.E. Kristal 3D Kustom Level {level} {crystal} {name}",
-    "emblemAltLegend": "Lencana Profil Emblem A.C.E. Kristal 3D Kustom Level {level}",
+    "selectEmblem": "Pilih emblem peringkat A.C.E {name}, level {level}",
+    "emblemAlt": "Lencana profil emblem A.C.E Kristal 3D Kustom Level {level} {crystal} {name}",
+    "emblemAltLegend": "Lencana Profil Emblem A.C.E Kristal 3D Kustom Level {level}",
     "premium": "TINGKAT TERATAS"
   },
   "division": {

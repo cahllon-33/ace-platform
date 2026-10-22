@@ -70,10 +70,10 @@ export const pricing: TextBag["pricing"] = {
       "prices": "Free {free}. Plus {plus} pe lună. Premium {premium} pe lună. Planurile se reînnoiesc lunar. Poți anula oricând fără penalizare din setările panoului și păstrezi accesul până la sfârșitul lunii plătite. O lună parțială nu se rambursează decât dacă legea țării tale o cere.",
       "plusTitle": "2. Ce include Plus",
       "plus1": "Tot ce include Free.",
-      "plus2": "În curând: o scrisoare de mulțumire și suport prin e-mail la support@ace-platform.gg, când va exista checkout-ul.",
+      "plus2": "Suport pe e-mail pentru membri la {email} și o scrisoare de mulțumire de la echipă.",
       "premiumTitle": "3. Ce include Premium",
       "prem1": "Tot ce include Plus.",
-      "prem2": "Arta de rang Premium și codexul rangurilor Premium: setul original de embleme A.C.E. ilustrate pe profilul tău. Doar cosmetic, pe aceeași scară Rating Points.",
+      "prem2": "Arta de rang Premium și codexul rangurilor Premium: setul original de embleme A.C.E ilustrate pe profilul tău. Doar cosmetic, pe aceeași scară Rating Points.",
       "prem3": "Cardul de profil Premium animat.",
       "prem4": "Insigne speciale și SIGILIUL ELITE.",
       "prem5": "În curând: analiză extinsă a meciului (hartă termică a morților, % headshot, performanță pe rundă), când va exista procesarea demo-urilor.",
@@ -85,14 +85,14 @@ export const pricing: TextBag["pricing"] = {
       "soon": "Nimic marcat În curând nu este promis până la lansare. Până atunci, prețul nu îl include.",
       "languageTitle": "6. Limba",
       "language": "Traducerile sunt oferite pentru comoditate. Dacă o traducere diferă de textul în engleză, se aplică textul în engleză.",
-      "contact": "Întrebări: support@ace-platform.gg",
+      "contact": "Întrebări: {email}",
       "footerLink": "Termeni Premium",
       "pricingLink": "Citește termenii Premium"
     }
   },
   "meta": {
     "title": "Prețuri",
-    "description": "Abonament A.C.E.: Free {free}, Plus {plus}/lună, Premium {premium}/lună. Prețuri afișate blocate la numere întregi."
+    "description": "Abonament A.C.E: Free {free}, Plus {plus}/lună, Premium {premium}/lună. Prețuri afișate blocate la numere întregi."
   },
   "period": {
     "monthly": "/lună"
@@ -108,23 +108,23 @@ export const pricing: TextBag["pricing"] = {
       "note": "Grafit",
       "title": "Acces deschis",
       "points": [
-        "Autentifică-te cu Steam OpenID. A.C.E. nu cere niciodată parola Steam.",
+        "Autentifică-te cu Steam OpenID. A.C.E nu cere niciodată parola Steam.",
         "Un rating salvat începe de la 1.200. Niciun rezultat de meci nu l-a schimbat.",
         "Toate paginile publice: joacă, turnee, clasament, echipe și reguli."
       ]
     },
     "plus": {
-      "name": "A.C.E. PLUS",
+      "name": "A.C.E PLUS",
       "note": "Plus",
       "title": "Statistici de jucător și suport",
       "points": [
         "Tot ce include Free.",
-        "Statistici de jucător: graficul evoluției ratingului din meciurile A.C.E. înregistrate. Indicatorii pentru % headshot și precizie vin în curând.",
-        "În curând: o scrisoare de mulțumire și suport prin e-mail la support@ace-platform.gg, după ce va exista plata. Plus nu cumpără rating sau adversari mai ușori."
+        "Statistici de jucător: graficul evoluției ratingului din meciurile A.C.E înregistrate. Indicatorii pentru % headshot și precizie vin în curând.",
+        "Suport pe e-mail pentru membri la {email} și o scrisoare de mulțumire de la echipă. Plus nu cumpără rating sau adversari mai ușori."
       ]
     },
     "premium": {
-      "name": "A.C.E. PREMIUM",
+      "name": "A.C.E PREMIUM",
       "note": "Premium",
       "title": "Grafică de profil, insigne și analiză",
       "points": [
@@ -159,7 +159,7 @@ export const pricing: TextBag["pricing"] = {
     }
   },
   "compare": {
-    "kicker": "Ce poate promite A.C.E. astăzi",
+    "kicker": "Ce poate promite A.C.E astăzi",
     "title": "Comparație abonamente",
     "note": "Fiecare rând reflectă site-ul de astăzi. Plata vine în curând, iar un plan plătit nu deschide niciodată o coadă și nu cumpără un avantaj.",
     "caption": "Free, Plus și Premium comparate după ce face site-ul astăzi",
@@ -175,7 +175,7 @@ export const pricing: TextBag["pricing"] = {
       },
       "steamSignIn": {
         "feature": "Autentificare Steam",
-        "detail": "Steam OpenID oficial. A.C.E. nu cere niciodată parola Steam."
+        "detail": "Steam OpenID oficial. A.C.E nu cere niciodată parola Steam."
       },
       "startingRating": {
         "feature": "Rating inițial",
@@ -183,7 +183,7 @@ export const pricing: TextBag["pricing"] = {
       },
       "recordedMatches": {
         "feature": "Meciuri înregistrate",
-        "detail": "Victorii și înfrângeri scrise dintr-un meci A.C.E. terminat."
+        "detail": "Victorii și înfrângeri scrise dintr-un meci A.C.E terminat."
       },
       "rankedQueue": {
         "feature": "Coadă ranked",
@@ -231,15 +231,15 @@ export const pricing: TextBag["pricing"] = {
   "receipt": {
     "plus": {
       "metaTitle": "Chitanță Plus",
-      "metaDescription": "Scrisoarea A.C.E. Plus afișată pe acest site. Plata nu este activă, deci nu se taxează nimic și nu se trimite e-mail.",
-      "planName": "A.C.E. Plus",
-      "nextLabel": "Continuă pe A.C.E.",
+      "metaDescription": "Scrisoarea A.C.E Plus afișată pe acest site. Plata nu este activă, deci nu se taxează nimic și nu se trimite e-mail.",
+      "planName": "A.C.E Plus",
+      "nextLabel": "Continuă pe A.C.E",
       "nextBody": "Paginile publice rămân deschise. Această selecție nu deschide o coadă și nu schimbă nivelul stocat."
     },
     "premium": {
       "metaTitle": "Chitanță Premium",
-      "metaDescription": "Scrisoarea A.C.E. Premium afișată pe acest site. Plata nu este activă, deci nu se taxează nimic și nu se trimite e-mail.",
-      "planName": "A.C.E. Premium",
+      "metaDescription": "Scrisoarea A.C.E Premium afișată pe acest site. Plata nu este activă, deci nu se taxează nimic și nu se trimite e-mail.",
+      "planName": "A.C.E Premium",
       "nextLabel": "Citește termenii Premium",
       "nextBody": "Premium înseamnă arta de rang Premium, cardul de profil animat, insigne speciale și ELITE SEAL, plus tot ce include Plus. Salvarea unui clan în Squads este gratuită pentru orice cont."
     }
@@ -256,7 +256,7 @@ export const pricing: TextBag["pricing"] = {
         "Numele planului: {plan}.",
         "Preț afișat: {price} pe lună. Suma este o etichetă, nu o taxă.",
         "Plată: niciuna. Alegerea acestui plan nu preia un card.",
-        "E-mail: niciunul. A.C.E. nu trimite această scrisoare într-o căsuță.",
+        "E-mail: niciunul. A.C.E nu trimite această scrisoare într-o căsuță.",
         "Nivel stocat: neschimbat. Insignele speciale și sigiliul elite apar doar când contul stochează deja Premium.",
         "Rating: nu este de vânzare. Un cont nou începe în continuare de la 1.200."
       ]
@@ -265,7 +265,7 @@ export const pricing: TextBag["pricing"] = {
       "title": "Ce poți folosi astăzi",
       "items": [
         "Site-ul public: acasă, joacă, turnee, clasament, echipe, reguli și termeni.",
-        "Autentificare Steam prin Steam OpenID oficial. A.C.E. nu cere niciodată parola Steam.",
+        "Autentificare Steam prin Steam OpenID oficial. A.C.E nu cere niciodată parola Steam.",
         "Aceleași pagini publice ca Free. Acest preț nu deschide o coadă separată."
       ]
     },
@@ -309,7 +309,7 @@ export const pricing: TextBag["pricing"] = {
   },
   "telemetry": {
     "kicker": "TELEMETRIE PLUS / PREMIUM",
-    "copy": "TELEMETRIA PANOULUI BLOCATĂ — Treci la A.C.E. Plus sau Premium pentru a debloca curbe statistice dinamice în timp real și indici de specializare pe arme.",
+    "copy": "TELEMETRIA PANOULUI BLOCATĂ — Treci la A.C.E Plus sau Premium pentru a debloca curbe statistice dinamice în timp real și indici de specializare pe arme.",
     "cta": "Deschide tabelele de prețuri"
   }
 };

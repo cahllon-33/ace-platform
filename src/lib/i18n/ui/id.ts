@@ -25,7 +25,7 @@ export const UI_ID: Ui = {
     "company": "Perusahaan",
     "legal": "Legal",
     "tagline": "Tangga kompetitif Counter-Strike 2 yang dibangun di atas permainan yang adil.",
-    "follow": "Ikuti A.C.E.",
+    "follow": "Ikuti A.C.E",
     "rights": "Hak cipta dilindungi undang-undang.",
     "legalLine": "© 2026 A.C.E. Platform independen, tidak berafiliasi dengan Valve. Counter-Strike dan CS2 adalah merek dagang Valve Corporation."
   },
@@ -149,7 +149,7 @@ export const UI_ID: Ui = {
   "antiCheat": {
     "kicker": "A.C.E Shield",
     "title": "Anti-Cheat",
-    "lede": "A.C.E Shield adalah sistem integritas yang sedang dibangun untuk setiap pertandingan A.C.E.: pemeriksaan klien, server, pertandingan, dan perilaku yang bekerja bersama, dengan privasi sebagai prioritas.",
+    "lede": "A.C.E Shield adalah sistem integritas yang sedang dibangun untuk setiap pertandingan A.C.E: pemeriksaan klien, server, pertandingan, dan perilaku yang bekerja bersama, dengan privasi sebagai prioritas.",
     "statusLabel": "Tahap penerapan",
     "pillarsTitle": "Pilar arsitektur",
     "pillars": {
@@ -237,7 +237,7 @@ export const UI_ID: Ui = {
     "status": {
       "title": "Status platform",
       "steam": "Masuk dengan Steam",
-      "shield": "A.C.E. Shield",
+      "shield": "A.C.E Shield",
       "servers": "Server kompetitif",
       "tournaments": "Turnamen",
       "billing": "Penagihan",
@@ -288,7 +288,7 @@ export const UI_ID: Ui = {
     "chat": {
       "open": "Buka obrolan dukungan",
       "close": "Tutup obrolan dukungan",
-      "title": "Dukungan A.C.E.",
+      "title": "Dukungan A.C.E",
       "greeting": "Hai! Saya asisten dukungan A.C.E. Tanyakan tentang peringkat, paket, aturan, atau akunmu.",
       "placeholder": "Ketik pertanyaanmu…",
       "send": "Kirim",
@@ -316,7 +316,7 @@ export const UI_ID: Ui = {
       "stepsKicker": "Cara kerjanya",
       "stepsTitle": "Tiga langkah menuju peringkat pertama",
       "step1t": "Hubungkan Steam",
-      "step1b": "Masuk dengan Steam OpenID. A.C.E. tidak pernah melihat kata sandi Steam Anda.",
+      "step1b": "Masuk dengan Steam OpenID. A.C.E tidak pernah melihat kata sandi Steam Anda.",
       "step2t": "Kalibrasi",
       "step2b": "Anda mulai di tingkat 3 dengan 1.200 RP. Setiap pertandingan tercatat mengubah RP sesuai aturan yang dipublikasikan.",
       "step3t": "Naik",
@@ -334,7 +334,7 @@ export const UI_ID: Ui = {
     "profile": {
       "kicker": "PEMAIN",
       "notFound": "Pemain tidak ditemukan",
-      "notFoundBody": "Tidak ada akun A.C.E. dengan Steam ID ini, atau profilnya tidak publik.",
+      "notFoundBody": "Tidak ada akun A.C.E dengan Steam ID ini, atau profilnya tidak publik.",
       "rating": "Rating",
       "rank": "Peringkat",
       "record": "Rekor",
@@ -382,7 +382,7 @@ export const UI_ID: Ui = {
     "nf": {
       "code": "Error 404",
       "title": "Halaman ini di luar peta",
-      "body": "Tautan mungkin lama atau salah ketik. Semua bagian A.C.E. hanya sekali klik dari sini.",
+      "body": "Tautan mungkin lama atau salah ketik. Semua bagian A.C.E hanya sekali klik dari sini.",
       "home": "Kembali ke beranda",
       "ranks": "Lihat peringkat"
     },
@@ -401,7 +401,7 @@ export const UI_ID: Ui = {
     "st": {
       "kicker": "Performa",
       "title": "Statistik pemain",
-      "lede": "Setiap angka berasal dari pertandingan A.C.E. yang tercatat. Tidak ada yang diperkirakan.",
+      "lede": "Setiap angka berasal dari pertandingan A.C.E yang tercatat. Tidak ada yang diperkirakan.",
       "empty": "Belum ada pertandingan tercatat. Statistik muncul setelah pertandingan ranked pertama.",
       "winRate": "Rasio menang",
       "adr": "ADR",
@@ -427,11 +427,11 @@ export const UI_ID: Ui = {
       "none": "—"
     },
     "ab": {
-      "title": "Tentang A.C.E.",
+      "title": "Tentang A.C.E",
       "lede": "Platform kompetisi Counter-Strike 2 yang dibangun di atas satu tabel peringkat publik dan paket yang tidak pernah membeli keunggulan.",
-      "b1": "A.C.E. menjalankan permainan ranked, ladder, dan turnamen CS2. Masuk lewat Steam OpenID; kami tidak pernah melihat kata sandi Steam-mu.",
+      "b1": "A.C.E menjalankan permainan ranked, ladder, dan turnamen CS2. Masuk lewat Steam OpenID; kami tidak pernah melihat kata sandi Steam-mu.",
       "b2": "Peringkatmu dihitung hanya dari hasil tercatat dengan aturan yang dipublikasikan. Paket berbayar hanya kosmetik dan kenyamanan.",
-      "b3": "A.C.E. adalah platform independen dan tidak berafiliasi dengan Valve."
+      "b3": "A.C.E adalah platform independen dan tidak berafiliasi dengan Valve."
     },
     "ss": {
       "title": "Status server",
@@ -484,7 +484,7 @@ export const UI_ID: Ui = {
     }
   },
   "r46": {
-    "aria": "Apa arti A.C.E.",
+    "aria": "Apa arti A.C.E",
     "fair": "Perlindungan Fair Play",
     "fairSub": "Masuk lewat Steam, aturan terbuka, dan laporan pemain yang ditinjau admin.",
     "calib": "Kalibrasi Kompetitif",
@@ -494,7 +494,7 @@ export const UI_ID: Ui = {
   },
   "r45": {
     "title": "Melampaui Legend",
-    "lede": "Lima lencana prestise di atas A.C.E. Legend, satu setiap 200 RP dari 2.150 hingga 2.950. Hanya didapat dengan bermain.",
+    "lede": "Lima lencana prestise di atas A.C.E Legend, satu setiap 200 RP dari 2.150 hingga 2.950. Hanya didapat dengan bermain.",
     "plus": "Plus · platinum",
     "premium": "Premium · api emas",
     "fair": "RP sama untuk semua. Ambang prestise, matchmaking, dan rating identik di setiap paket. Tidak ada yang bisa dibeli di sini.",
@@ -530,7 +530,7 @@ export const UI_ID: Ui = {
       "lede": "Cara mendapatkan setiap lencana A.C.E. Lencana hanya kosmetik: tidak pernah mengubah matchmaking, RP, atau aturan apa pun.",
       "ranks": "Lencana peringkat (tingkat 1–10) mengikuti RP-mu. Semua orang melihat peringkat yang sama dan warna tingkat tetap yang sama.",
       "prestige": "Lencana prestise adalah lima target jangka panjang di atas {elite} RP: satu setiap 200 RP dari 2.150 sampai 2.950.",
-      "free": "Free: lencanamu tetap A.C.E. Legend dan level prestise ditampilkan sebagai pencapaian teks. RP-mu tidak pernah dibatasi.",
+      "free": "Free: lencanamu tetap A.C.E Legend dan level prestise ditampilkan sebagai pencapaian teks. RP-mu tidak pernah dibatasi.",
       "plus": "Plus: set prestise platinum.",
       "premium": "Premium: set prestise emas beranimasi.",
       "lose": "Jika turun di bawah ambang prestise, lencana ikut turun bersama RP; capai lagi dan lencana kembali.",
@@ -683,5 +683,19 @@ export const UI_ID: Ui = {
     "communityTitle": "Komunitas",
     "communityLede": "Ikuti A.C.E untuk berita pertandingan, turnamen, dan sorotan.",
     "followOn": "A.C.E di {network}"
+  },
+  "r49b": {
+    "title": "Inventaris Steam",
+    "private": "Inventaris privat",
+    "privateBody": "Inventaris Steam pemain ini privat.",
+    "empty": "Tidak ada item CS2 di inventaris publik.",
+    "unavailable": "Inventaris Steam tidak dapat dimuat sekarang.",
+    "hiddenOwner": "Etalase inventarismu disembunyikan dari profil.",
+    "hide": "Sembunyikan etalase",
+    "show": "Tampilkan etalase",
+    "priceSource": "Harga: listing terendah Steam Community Market, di-cache.",
+    "note": "Hanya etalase. A.C.E tidak pernah membeli, menjual, atau menukar item Steam.",
+    "updated": "Diperbarui {date}",
+    "more": "+{n} item lagi"
   }
 };

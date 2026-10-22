@@ -10,6 +10,8 @@ import { CheckoutLegal, PaddleCheckoutButton } from "@/components/paddle-checkou
 import { FreeAccessPill } from "@/components/free-access-pill";
 import { useText } from "@/components/text-provider";
 import { useUi } from "@/components/use-ui";
+import { interpolate } from "@/lib/interpolate";
+import { CONTACT_EMAIL } from "@/lib/legal-r49";
 import { FREE_PRICE, PLUS_PRICE, PREMIUM_PRICE } from "@/lib/pricing";
 
 const TIERS = [
@@ -53,7 +55,7 @@ export function PlanCards({ headingLevel = 2 }: { headingLevel?: 2 | 3 }) {
               {tier.monthly ? <span>{text.period.monthly}</span> : null}
             </p>
             <ul className="pc41-perks">
-              {copy.points.map((point) => <li key={point}>{point}</li>)}
+              {copy.points.filter((point) => CONTACT_EMAIL || !point.includes("{email}")).map((point) => <li key={point}>{interpolate(point, { email: CONTACT_EMAIL })}</li>)}
               {tier.id !== "free" ? (
                 <li className="is-prestige">
                   {pr.perk} · <a href="/badges">{tier.id === "premium" ? pr.premium : pr.plus}</a>

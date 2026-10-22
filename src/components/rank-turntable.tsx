@@ -114,7 +114,7 @@ export function RankTurntable({ tier, art = "standard" }: { tier: RankTier; art?
           {copy.dragToRotate}
         </p>
         <p className="ace-orbit-id">
-          A.C.E.
+          A.C.E
           <br />
           {copy.rankSystem}
         </p>

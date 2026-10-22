@@ -62,7 +62,7 @@ export const ranks: TextBag["ranks"] = {
     "kicker": "PREMIUM RANGOVI",
     "plan": "A.C.E PREMIUM · samo 7 $/mj.",
     "title": "Premium grafika rangova",
-    "lede": "Izvorni ilustrirani set rangova A.C.E.: deset kristalnih amblema s divizijama III/II/I, protokol rejtinga, kartica detalja Legend i 3D preglednik koji se okreće povlačenjem. To je grafika profila za Premium članove. Čita istu ljestvicu Rating Pointsa kao standardni rangovi i ne daje nikakvu natjecateljsku prednost.",
+    "lede": "Izvorni ilustrirani set rangova A.C.E: deset kristalnih amblema s divizijama III/II/I, protokol rejtinga, kartica detalja Legend i 3D preglednik koji se okreće povlačenjem. To je grafika profila za Premium članove. Čita istu ljestvicu Rating Pointsa kao standardni rangovi i ne daje nikakvu natjecateljsku prednost.",
     "demo": "Demo vrijednosti: napredak, postotak pobjeda i divizije na ovoj ploči su primjeri, ne statistika uživo. Kad si prijavljen, prikazani rejting je tvoj spremljeni rejting.",
     "locked": "Uskoro: plaćanje još ne postoji, pa danas nijedan račun nije Premium. Poslužitelj primjenjuje Premium grafiku rangova na profil samo ako je njegov spremljeni plan Premium.",
     "standardKicker": "STANDARDNI RANGOVI",
@@ -77,12 +77,12 @@ export const ranks: TextBag["ranks"] = {
   },
   "meta": {
     "title": "Natjecateljski rangovi",
-    "description": "Deset A.C.E. rangova, od Iron Recruita do A.C.E. Legenda, s divizijama i donjim granicama rejtinga."
+    "description": "Deset A.C.E rangova, od Iron Recruita do A.C.E Legenda, s divizijama i donjim granicama rejtinga."
   },
   "hero": {
     "kicker": "KALIBRACIJA",
     "title": "Natjecateljski rangovi",
-    "lede": "Deset razina od Recruita do A.C.E. Legenda, svaka s divizijama {divisions}. Povuci ili koristi strelice za okretanje amblema. Kad si prijavljen, vidiš svoj rejting; inače donju granicu svake razine."
+    "lede": "Deset razina od Recruita do A.C.E Legenda, svaka s divizijama {divisions}. Povuci ili koristi strelice za okretanje amblema. Kad si prijavljen, vidiš svoj rejting; inače donju granicu svake razine."
   },
   "codexLink": "Otvori Kalibracijski kodeks",
   "document": {
@@ -134,9 +134,9 @@ export const ranks: TextBag["ranks"] = {
     }
   },
   "board": {
-    "selectEmblem": "Odaberi A.C.E. {name} amblem ranga, razina {level}",
-    "emblemAlt": "A.C.E. prilagođena 3D kristalna profilna značka amblema razine {level} {crystal} {name}",
-    "emblemAltLegend": "A.C.E. prilagođena 3D kristalna profilna značka amblema razine {level}",
+    "selectEmblem": "Odaberi A.C.E {name} amblem ranga, razina {level}",
+    "emblemAlt": "A.C.E prilagođena 3D kristalna profilna značka amblema razine {level} {crystal} {name}",
+    "emblemAltLegend": "A.C.E prilagođena 3D kristalna profilna značka amblema razine {level}",
     "premium": "NAJVIŠA RAZINA"
   },
   "division": {

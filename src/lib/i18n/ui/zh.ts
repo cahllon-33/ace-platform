@@ -25,9 +25,9 @@ export const UI_ZH: Ui = {
     "company": "公司",
     "legal": "法律信息",
     "tagline": "以公平竞技为核心的 Counter-Strike 2 竞技天梯。",
-    "follow": "关注 A.C.E.",
+    "follow": "关注 A.C.E",
     "rights": "保留所有权利。",
-    "legalLine": "© 2026 A.C.E. 独立平台，与 Valve 无关联。Counter-Strike 和 CS2 是 Valve Corporation 的商标。"
+    "legalLine": "© 2026 A.C.E 独立平台，与 Valve 无关联。Counter-Strike 和 CS2 是 Valve Corporation 的商标。"
   },
   "soon": {
     "label": "即将推出"
@@ -58,7 +58,7 @@ export const UI_ZH: Ui = {
   "maps": {
     "kicker": "竞技地图池",
     "title": "地图与直播",
-    "lede": "A.C.E. 竞技地图池由七张地图组成。各队在规则手册规定的地图禁选环节中从中禁用和选择。赛事直播将显示在下方屏幕上。",
+    "lede": "A.C.E 竞技地图池由七张地图组成。各队在规则手册规定的地图禁选环节中从中禁用和选择。赛事直播将显示在下方屏幕上。",
     "rulebook": "查看禁选规则",
     "screen": "直播屏幕",
     "offAir": "未在直播",
@@ -110,10 +110,10 @@ export const UI_ZH: Ui = {
     }
   },
   "rules": {
-    "kicker": "A.C.E. 竞赛规则手册",
+    "kicker": "A.C.E 竞赛规则手册",
     "title": "竞赛规则",
     "version": "版本 {version} · 自 {date} 起生效",
-    "intro": "所有 A.C.E. 赛事均依据本规则进行。标注“部署后适用”的条款将在其所依赖的系统上线后生效。",
+    "intro": "所有 A.C.E 赛事均依据本规则进行。标注“部署后适用”的条款将在其所依赖的系统上线后生效。",
     "pending": "部署后适用",
     "contents": "目录",
     "penalties": {
@@ -149,7 +149,7 @@ export const UI_ZH: Ui = {
   "antiCheat": {
     "kicker": "A.C.E Shield",
     "title": "反作弊",
-    "lede": "A.C.E Shield 是正在为每场 A.C.E. 比赛打造的公正系统：客户端、服务器、比赛与行为检测协同工作，并以隐私优先为设计原则。",
+    "lede": "A.C.E Shield 是正在为每场 A.C.E 比赛打造的公正系统：客户端、服务器、比赛与行为检测协同工作，并以隐私优先为设计原则。",
     "statusLabel": "部署阶段",
     "pillarsTitle": "架构支柱",
     "pillars": {
@@ -229,7 +229,7 @@ export const UI_ZH: Ui = {
       "expansion1": "Autonomous Anti-Cheat",
       "expansion2": "Competitive Calibration",
       "expansion3": "Elite Players",
-      "line": "打造你的竞技身份。校准你的实力。攀登 A.C.E. 段位。",
+      "line": "打造你的竞技身份。校准你的实力。攀登 A.C.E 段位。",
       "connectSteam": "连接 Steam",
       "openDashboard": "打开控制台",
       "exploreRanks": "查看段位"
@@ -237,7 +237,7 @@ export const UI_ZH: Ui = {
     "status": {
       "title": "平台状态",
       "steam": "Steam 登录",
-      "shield": "A.C.E. Shield",
+      "shield": "A.C.E Shield",
       "servers": "竞技服务器",
       "tournaments": "锦标赛",
       "billing": "计费",
@@ -288,8 +288,8 @@ export const UI_ZH: Ui = {
     "chat": {
       "open": "打开客服聊天",
       "close": "关闭客服聊天",
-      "title": "A.C.E. 客服",
-      "greeting": "你好！我是 A.C.E. 客服助手。可以问我关于段位、套餐、规则或账号的问题。",
+      "title": "A.C.E 客服",
+      "greeting": "你好！我是 A.C.E 客服助手。可以问我关于段位、套餐、规则或账号的问题。",
       "placeholder": "输入你的问题…",
       "send": "发送",
       "unavailable": "客服聊天暂不可用。",
@@ -316,7 +316,7 @@ export const UI_ZH: Ui = {
       "stepsKicker": "运作方式",
       "stepsTitle": "三步获得首个段位",
       "step1t": "连接 Steam",
-      "step1b": "通过 Steam OpenID 登录。A.C.E. 永远看不到你的 Steam 密码。",
+      "step1b": "通过 Steam OpenID 登录。A.C.E 永远看不到你的 Steam 密码。",
       "step2t": "校准",
       "step2b": "你从第 3 级、1,200 RP 起步。每场记录的比赛都会按公开规则调整你的 RP。",
       "step3t": "晋升",
@@ -334,7 +334,7 @@ export const UI_ZH: Ui = {
     "profile": {
       "kicker": "玩家",
       "notFound": "未找到玩家",
-      "notFoundBody": "没有 A.C.E. 账户使用此 Steam ID，或该资料未公开。",
+      "notFoundBody": "没有 A.C.E 账户使用此 Steam ID，或该资料未公开。",
       "rating": "评分",
       "rank": "段位",
       "record": "战绩",
@@ -349,11 +349,11 @@ export const UI_ZH: Ui = {
     },
     "chat": {
       "sources": "来源",
-      "noMatch": "我在 A.C.E. 网站内容中没有找到这个。你可以把问题作为工单发送给团队。",
+      "noMatch": "我在 A.C.E 网站内容中没有找到这个。你可以把问题作为工单发送给团队。",
       "s1": "Premium 多少钱？",
       "s2": "如何获得 RP？",
       "s3": "如何举报作弊者？",
-      "kbNote": "回答来自 A.C.E. 网站内容。"
+      "kbNote": "回答来自 A.C.E 网站内容。"
     }
   },
   "r40": {
@@ -382,7 +382,7 @@ export const UI_ZH: Ui = {
     "nf": {
       "code": "错误 404",
       "title": "此页面不在地图上",
-      "body": "链接可能已过期或输入有误。从这里一键即可到达 A.C.E. 的任何页面。",
+      "body": "链接可能已过期或输入有误。从这里一键即可到达 A.C.E 的任何页面。",
       "home": "返回首页",
       "ranks": "查看段位"
     },
@@ -396,12 +396,12 @@ export const UI_ZH: Ui = {
   "r41": {
     "vf": {
       "label": "已认证玩家",
-      "tip": "已认证：已绑定 Steam，账户状态良好，经 A.C.E. 审核。"
+      "tip": "已认证：已绑定 Steam，账户状态良好，经 A.C.E 审核。"
     },
     "st": {
       "kicker": "表现",
       "title": "玩家数据",
-      "lede": "每个数字都来自已记录的 A.C.E. 比赛，没有任何估算。",
+      "lede": "每个数字都来自已记录的 A.C.E 比赛，没有任何估算。",
       "empty": "暂无已记录的比赛。首场排位赛后数据会显示在这里。",
       "winRate": "胜率",
       "adr": "ADR",
@@ -427,11 +427,11 @@ export const UI_ZH: Ui = {
       "none": "—"
     },
     "ab": {
-      "title": "关于 A.C.E.",
+      "title": "关于 A.C.E",
       "lede": "一个围绕唯一公开段位表、且付费方案绝不购买优势的 Counter-Strike 2 竞技平台。",
-      "b1": "A.C.E. 运营 CS2 排位赛、天梯和锦标赛。通过 Steam OpenID 登录，我们永远看不到你的 Steam 密码。",
+      "b1": "A.C.E 运营 CS2 排位赛、天梯和锦标赛。通过 Steam OpenID 登录，我们永远看不到你的 Steam 密码。",
       "b2": "你的段位只根据已记录的结果和公开规则计算。付费方案仅提供外观与便利功能。",
-      "b3": "A.C.E. 是独立平台，与 Valve 无关联。"
+      "b3": "A.C.E 是独立平台，与 Valve 无关联。"
     },
     "ss": {
       "title": "服务器状态",
@@ -474,7 +474,7 @@ export const UI_ZH: Ui = {
     "lv": {
       "nav": "直播",
       "title": "赛事直播",
-      "lede": "A.C.E. 官方赛事直播。只有在运营人员将其设为直播中时才会显示在这里。",
+      "lede": "A.C.E 官方赛事直播。只有在运营人员将其设为直播中时才会显示在这里。",
       "none": "当前没有直播",
       "noneBody": "官方直播开始后会显示在这里。在此之前，请查看下方的赛事。",
       "schedule": "即将开始的赛事",
@@ -484,7 +484,7 @@ export const UI_ZH: Ui = {
     }
   },
   "r46": {
-    "aria": "A.C.E. 的坚持",
+    "aria": "A.C.E 的坚持",
     "fair": "公平竞技保护",
     "fairSub": "Steam 登录、公开规则，以及由管理员审核的玩家举报。",
     "calib": "竞技校准",
@@ -494,7 +494,7 @@ export const UI_ZH: Ui = {
   },
   "r45": {
     "title": "超越 Legend",
-    "lede": "A.C.E. Legend 之上的五枚荣耀徽章，从 2,150 到 2,950 RP 每 200 RP 一枚。只能通过比赛获得。",
+    "lede": "A.C.E Legend 之上的五枚荣耀徽章，从 2,150 到 2,950 RP 每 200 RP 一枚。只能通过比赛获得。",
     "plus": "Plus · 铂金",
     "premium": "Premium · 金色火焰",
     "fair": "所有人的 RP 相同。荣耀门槛、匹配和评分在每个方案中都一样。这里没有任何东西可以购买。",
@@ -527,10 +527,10 @@ export const UI_ZH: Ui = {
     "pr": {
       "kicker": "荣耀",
       "title": "徽章规则",
-      "lede": "A.C.E. 每枚徽章的获得方式。徽章仅为外观：绝不改变匹配、RP 或任何规则。",
+      "lede": "A.C.E 每枚徽章的获得方式。徽章仅为外观：绝不改变匹配、RP 或任何规则。",
       "ranks": "段位徽章（第 1–10 段）跟随你的 RP。所有人看到相同的段位和相同的固定段位颜色。",
       "prestige": "荣耀徽章是 {elite} RP 之上的五个长期目标：从 2,150 到 2,950，每 200 RP 一枚。",
-      "free": "Free：徽章保持 A.C.E. Legend，荣耀等级以文字里程碑显示。你的 RP 永不封顶。",
+      "free": "Free：徽章保持 A.C.E Legend，荣耀等级以文字里程碑显示。你的 RP 永不封顶。",
       "plus": "Plus：铂金荣耀系列。",
       "premium": "Premium：动态黄金荣耀系列。",
       "lose": "跌破荣耀门槛时徽章随 RP 回落；再次达到时恢复。",
@@ -683,5 +683,19 @@ export const UI_ZH: Ui = {
     "communityTitle": "社区",
     "communityLede": "关注 A.C.E，获取比赛新闻、赛事和精彩集锦。",
     "followOn": "A.C.E 的 {network}"
+  },
+  "r49b": {
+    "title": "Steam 库存",
+    "private": "库存未公开",
+    "privateBody": "该玩家的 Steam 库存未公开。",
+    "empty": "公开库存中没有 CS2 物品。",
+    "unavailable": "暂时无法加载 Steam 库存。",
+    "hiddenOwner": "你的库存展示已在个人资料中隐藏。",
+    "hide": "隐藏展示",
+    "show": "显示展示",
+    "priceSource": "价格：Steam 社区市场最低挂单（缓存）。",
+    "note": "仅供展示。A.C.E 从不购买、出售或交易 Steam 物品。",
+    "updated": "更新于 {date}",
+    "more": "另有 {n} 件物品"
   }
 };
