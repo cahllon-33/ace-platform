@@ -14,6 +14,7 @@ import type { Cs2Match } from "@/server/dathost";
 import { healthTick } from "@/server/server-health";
 import { connectDetails, randomServerPassword } from "@/server/discord";
 import { anticheatBlock } from "@/server/anticheat";
+import { groupEntries, pickMatch, splitGroups } from "@/lib/party";
 import { cleanupMatchDiscord, readLobbyDiscord, setupMatchDiscord } from "@/server/discord-match";
 
 /** States that hold the (single) DatHost server. */
@@ -46,9 +47,20 @@ async function requeue(tx: Tx, userIds: string[]) {
 async function formLobby(tx: Tx, now: Date) {
   const busy = await tx.queueLobby.count({ where: { state: { in: [...ACTIVE_STATES] } } });
   if (busy) return;
-  const entries = await tx.queueEntry.findMany({ orderBy: { joinedAt: "asc" }, take: QUEUE_SIZE });
-  if (entries.length < QUEUE_SIZE) return;
-  const { team1, team2 } = balanceTeams(entries.map((e) => ({ userId: e.userId, rp: e.rp })));
+  const all = await tx.queueEntry.findMany({ orderBy: { joinedAt: "asc" }, take: 60 });
+  if (all.length < QUEUE_SIZE) return;
+  // R52: parties stay together. With no parties waiting this is exactly the old oldest-10 + balanceTeams path.
+  let entries = all.slice(0, QUEUE_SIZE);
+  let teams: { team1: { userId: string; rp: number }[]; team2: { userId: string; rp: number }[] } | null = null;
+  if (all.some((e) => e.partyId)) {
+    const picked = pickMatch(groupEntries(all.map((e) => ({ userId: e.userId, rp: e.rp, partyId: e.partyId, joinedAt: e.joinedAt.getTime() }))), QUEUE_SIZE);
+    if (!picked) return;
+    teams = splitGroups(picked);
+    if (!teams) return;
+    const ids = new Set(picked.flatMap((g) => g.seats.map((x) => x.userId)));
+    entries = all.filter((e) => ids.has(e.userId));
+  }
+  const { team1, team2 } = teams ?? balanceTeams(entries.map((e) => ({ userId: e.userId, rp: e.rp })));
   const joined = new Map(entries.map((e) => [e.userId, e.joinedAt.getTime()]));
   const waited = (id: string) => Math.max(0, Math.round((now.getTime() - (joined.get(id) ?? now.getTime())) / 1000));
   await tx.queueEntry.deleteMany({ where: { id: { in: entries.map((e) => e.id) } } });
@@ -130,24 +142,42 @@ async function recordBan(tx: Tx, lobbyId: string, pool: string[], bans: Ban[], s
 }
 
 export async function joinQueue(userId: string) {
-  const ac = await anticheatBlock(userId);
-  if (ac) return { ok: false as const, error: ac };
+  const prisma = getPrisma();
+  // R52: in a party of 2+, only the leader queues, and the whole party goes in together.
+  const membership = await prisma.partyMember.findUnique({ where: { userId }, select: { party: { select: { id: true, leaderId: true, members: { select: { userId: true } } } } } });
+  const party = membership && membership.party.members.length > 1 ? membership.party : null;
+  if (party && party.leaderId !== userId) return { ok: false as const, error: "party-leader-only" };
+  const ids = party ? party.members.map((m) => m.userId) : [userId];
+  for (const id of ids) {
+    const ac = await anticheatBlock(id);
+    if (ac) return { ok: false as const, error: id === userId ? ac : "party-member-blocked" };
+  }
   return locked(async (tx) => {
-    const user = await tx.user.findUnique({ where: { id: userId }, select: { id: true, steamId: true, accountStatus: true, competitiveRating: true } });
-    if (!user?.steamId) return { ok: false as const, error: "steam-required" };
-    if (user.accountStatus !== "ACTIVE") return { ok: false as const, error: "not-eligible" };
-    const restricted = await tx.queueBan.findFirst({ where: { userId, revokedAt: null, OR: [{ until: null }, { until: { gt: new Date() } }] } });
-    if (restricted) return { ok: false as const, error: restricted.kind === "BAN" ? "banned" : "cooldown" };
-    const seated = await tx.queueLobbyPlayer.count({ where: { userId, declined: false, lobby: { state: { in: [...ACTIVE_STATES] } } } });
-    if (seated) return { ok: false as const, error: "in-match" };
-    await tx.queueEntry.upsert({ where: { userId }, create: { userId, rp: user.competitiveRating }, update: {} });
-    await formLobby(tx, new Date());
+    for (const id of ids) {
+      const user = await tx.user.findUnique({ where: { id }, select: { id: true, steamId: true, accountStatus: true, competitiveRating: true } });
+      const mine = id === userId;
+      if (!user?.steamId) return { ok: false as const, error: mine ? "steam-required" : "party-member-blocked" };
+      if (user.accountStatus !== "ACTIVE") return { ok: false as const, error: mine ? "not-eligible" : "party-member-blocked" };
+      const restricted = await tx.queueBan.findFirst({ where: { userId: id, revokedAt: null, OR: [{ until: null }, { until: { gt: new Date() } }] } });
+      if (restricted) return { ok: false as const, error: !mine ? "party-member-blocked" : restricted.kind === "BAN" ? "banned" : "cooldown" };
+      const seated = await tx.queueLobbyPlayer.count({ where: { userId: id, declined: false, lobby: { state: { in: [...ACTIVE_STATES] } } } });
+      if (seated) return { ok: false as const, error: mine ? "in-match" : "party-member-blocked" };
+    }
+    const users = await tx.user.findMany({ where: { id: { in: ids } }, select: { id: true, competitiveRating: true } });
+    const now = new Date();
+    for (const u of users) {
+      await tx.queueEntry.upsert({ where: { userId: u.id }, create: { userId: u.id, rp: u.competitiveRating, partyId: party?.id ?? null, joinedAt: now }, update: { partyId: party?.id ?? null } });
+    }
+    await formLobby(tx, now);
     return { ok: true as const };
   });
 }
 
 export async function leaveQueue(userId: string) {
-  await getPrisma().queueEntry.deleteMany({ where: { userId } });
+  const prisma = getPrisma();
+  const mine = await prisma.queueEntry.findUnique({ where: { userId }, select: { partyId: true } });
+  // R52: a party leaves the queue together.
+  await prisma.queueEntry.deleteMany({ where: mine?.partyId ? { partyId: mine.partyId } : { userId } });
   return { ok: true as const };
 }
 

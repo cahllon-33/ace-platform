@@ -3,13 +3,16 @@
  * empty tables return empty lists. Only public profile fields are exposed; "me" needs the session.
  */
 import { getPrisma } from "@/server/db";
-import { rankFromRating } from "@/lib/ranks";
+import { RANK_TIERS, rankFromRating } from "@/lib/ranks";
 
 type PlayerRow = { id: string; displayName: string; avatarUrl: string; steamId: string | null; competitiveRating: number; wins: number; losses: number; verifiedAt: Date | null };
 const pub = (u: PlayerRow) => {
   const r = rankFromRating(u.competitiveRating);
   const games = u.wins + u.losses;
-  return { id: u.id, name: u.displayName, avatarUrl: u.avatarUrl || null, steamId: u.steamId, rp: u.competitiveRating, level: r.level, wins: u.wins, losses: u.losses, winRate: games ? Math.round((u.wins / games) * 100) : null, verified: !!u.verifiedAt };
+  const next = RANK_TIERS.find((t) => t.minRating > u.competitiveRating);
+  // Progress (0-100) from the current tier floor to the next tier; 100 at the top tier.
+  const levelProgress = next ? Math.round(((u.competitiveRating - r.minRating) / (next.minRating - r.minRating)) * 100) : 100;
+  return { levelProgress, rankName: r.name, nextLevelAt: next?.minRating ?? null, id: u.id, name: u.displayName, avatarUrl: u.avatarUrl || null, steamId: u.steamId, rp: u.competitiveRating, level: r.level, wins: u.wins, losses: u.losses, winRate: games ? Math.round((u.wins / games) * 100) : null, verified: !!u.verifiedAt };
 };
 const PSEL = { id: true, displayName: true, avatarUrl: true, steamId: true, competitiveRating: true, wins: true, losses: true, verifiedAt: true } as const;
 const ACTIVE = { accountStatus: "ACTIVE" as const, steamId: { not: null } };

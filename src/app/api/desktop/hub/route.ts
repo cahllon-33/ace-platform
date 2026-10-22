@@ -1,6 +1,8 @@
+import { statsAccess } from "@/server/player-stats";
 import { connection } from "next/server";
 import { readSessionUser } from "@/server/session";
 import * as hub from "@/server/desktop-hub";
+import * as v2 from "@/server/desktop-v2";
 
 /** R51 native-screen data for the A.C.E desktop app. ?section=leaderboard|pros|teams|matches|player&id=|me|party|notifications */
 export async function GET(request: Request) {
@@ -19,6 +21,38 @@ export async function GET(request: Request) {
         const id = (u.searchParams.get("id") ?? "").slice(0, 64);
         const p = id ? await hub.hubPlayer(id) : null;
         return p ? json(p) : json({ error: "not-found" }, 404);
+      }
+      // R52 (desktop v2) public sections; personalised when signed in.
+      case "arena": case "squads": case "clans": case "clan": case "ladder": case "intel": case "contracts": case "armory": case "news": case "circuit": case "membership": case "search": {
+        const me = await readSessionUser();
+        const q = (k: string) => (u.searchParams.get(k) ?? "").slice(0, 64) || undefined;
+        if (section === "arena") return json(await v2.arena(me?.id ?? null));
+        if (section === "squads") return json(await v2.squadFinder(me?.id ?? null, { filter: q("filter"), language: q("language") }));
+        if (section === "clans") return json({ rows: await v2.clans({ q: q("q"), region: q("region"), language: q("language") }) });
+        if (section === "clan") { const c = await v2.clan(q("id") ?? "", me?.id ?? null); return c ? json(c) : json({ error: "not-found" }, 404); }
+        if (section === "ladder") return json(await v2.ladder({ region: q("region"), country: q("country"), period: q("period") }));
+        if (section === "intel") {
+          const id = q("id") ?? me?.id;
+          if (!id) return json({ error: "sign-in" }, 401);
+          const r = await v2.intel(id, { range: q("range"), map: q("map"), type: q("type") });
+          if (!r) return json({ error: "not-found" }, 404);
+          // Rating movement is a PLUS/PREMIUM feature on the site; the desktop app follows the same rule.
+          if (statsAccess(me) !== "unlocked") r.rating = { band: [], highest: null, lowest: null, locked: true };
+          return json(r);
+        }
+        if (section === "contracts") return json({ rows: await v2.contracts(me?.id ?? null) });
+        if (section === "armory") return json({ rows: await v2.armory(me?.id ?? null) });
+        if (section === "news") return json({ rows: await v2.news(20) });
+        if (section === "circuit") return json(await v2.circuit(me?.id ?? null));
+        if (section === "membership") return json(await v2.membership(me?.id ?? null));
+        return json({ rows: await v2.searchPlayers(q("q") ?? "") });
+      }
+      case "comms": case "thread": {
+        const me = await readSessionUser();
+        if (!me) return json({ error: "sign-in" }, 401);
+        if (section === "comms") return json(await v2.comms(me.id));
+        const t = await v2.thread(me.id, (u.searchParams.get("with") ?? "").slice(0, 40));
+        return t ? json({ rows: t }) : json({ error: "friends-only" }, 403);
       }
       case "me": case "party": case "notifications": {
         const me = await readSessionUser();

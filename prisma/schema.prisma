@@ -58,71 +58,81 @@ enum MatchState {
 }
 
 model User {
-  id                 String           @id @default(uuid())
+  id                    String           @id @default(uuid())
   /// Indexed unique SteamID64 for OpenID callback upserts. Null after an operator disconnect.
-  steamId            String?          @unique
+  steamId               String?          @unique
   /// Player contact address. The unique constraint is the lookup index. Empty until the signed-in player saves one. Saving it does not verify the mailbox.
-  email              String?          @unique
-  username           String
+  email                 String?          @unique
+  username              String
   /// Public Steam persona kept for existing lobby and leaderboard reads.
-  displayName        String
-  avatarUrl          String           @default("")
+  displayName           String
+  avatarUrl             String           @default("")
   /// Steam community profile URL from GetPlayerSummaries (vanity /id/<name>/ when the player set one). "" when unknown.
-  steamProfileUrl    String           @default("")
+  steamProfileUrl       String           @default("")
   /// Last successful Steam persona sync (login, admin refresh). null = never synced from the Steam Web API.
-  steamSyncedAt      DateTime?
-  accountStatus      AccountStatus    @default(ACTIVE)
-  subscriptionTier   SubscriptionTier @default(FREE)
+  steamSyncedAt         DateTime?
+  accountStatus         AccountStatus    @default(ACTIVE)
+  subscriptionTier      SubscriptionTier @default(FREE)
   /// null = no explicit choice: PREMIUM plan shows Premium art by default. STANDARD/PREMIUM = explicit choice.
-  rankArt            RankArt?
+  rankArt               RankArt?
   /// Engine ladder step. Database CHECK plus application code keep this in 1–10.
-  rankLevel          Int              @default(3)
-  competitiveRating  Int              @default(1200)
-  wins               Int              @default(0)
-  losses             Int              @default(0)
+  rankLevel             Int              @default(3)
+  competitiveRating     Int              @default(1200)
+  wins                  Int              @default(0)
+  losses                Int              @default(0)
   /// Engine-calculated RP saved when an operator first overrides the rank; null = no override active.
-  rankOverrideBaseRp Int?
-  rankOverrideAt     DateTime?
+  rankOverrideBaseRp    Int?
+  rankOverrideAt        DateTime?
   /// Private operator note (admin only, never rendered publicly).
-  adminNote          String           @default("")
+  adminNote             String           @default("")
   /// Operator verification (R41). The public check also requires a linked Steam account and ACTIVE status.
-  verifiedAt         DateTime?
+  verifiedAt            DateTime?
   /// R49 Paddle Billing. Set only by the verified webhook. null = never subscribed through Paddle.
-  paddleCustomerId     String?        @unique
-  paddleSubscriptionId String?        @unique
+  paddleCustomerId      String?          @unique
+  paddleSubscriptionId  String?          @unique
   /// Paddle subscription status (active, trialing, past_due, paused, canceled). "" = none.
-  subscriptionStatus   String         @default("")
+  subscriptionStatus    String           @default("")
   /// End of the paid period from Paddle (current_billing_period.ends_at). The plan lapses after this plus a short grace.
   subscriptionExpiresAt DateTime?
   /// occurred_at of the last applied Paddle event: older events are ignored (out-of-order delivery).
-  subscriptionEventAt  DateTime?
+  subscriptionEventAt   DateTime?
   /// R49b: the player chose to hide the Steam inventory showcase on their public profile.
-  inventoryHidden      Boolean        @default(false)
+  inventoryHidden       Boolean          @default(false)
   /// R50 linked Discord account (OAuth identify). null = not linked.
-  discordId            String?        @unique
-  discordUsername      String         @default("")
-  discordLinkedAt      DateTime?
-  createdAt          DateTime         @default(now())
-  updatedAt          DateTime         @updatedAt
+  discordId             String?          @unique
+  discordUsername       String           @default("")
+  discordLinkedAt       DateTime?
+  createdAt             DateTime         @default(now())
+  updatedAt             DateTime         @updatedAt
 
   sessions           UserSession[]
   anticheatSessions  AnticheatSession[]
   anticheatEvents    AnticheatEvent[]
   signInEvents       SignInEvent[]
-  captainedTeams     Team[]           @relation("TeamCaptain")
+  captainedTeams     Team[]             @relation("TeamCaptain")
   teamMemberships    TeamMember[]
-  sentInvites        TeamInvitation[] @relation("InviteSender")
-  receivedInvites    TeamInvitation[] @relation("InviteRecipient")
+  sentInvites        TeamInvitation[]   @relation("InviteSender")
+  receivedInvites    TeamInvitation[]   @relation("InviteRecipient")
   ratingHistory      RatingHistory[]
   bans               BanRecord[]
   matchPlayers       MatchPlayer[]
-  createdTournaments Tournament[]     @relation("TournamentCreator")
-  reports            MatchDispute[]   @relation("DisputeReporter")
-  playerReportsFiled PlayerReport[]   @relation("PlayerReportReporter")
+  createdTournaments Tournament[]       @relation("TournamentCreator")
+  reports            MatchDispute[]     @relation("DisputeReporter")
+  playerReportsFiled PlayerReport[]     @relation("PlayerReportReporter")
   notifications      Notification[]
   queueEntry         QueueEntry?
   queueBans          QueueBan[]
   lobbySeats         QueueLobbyPlayer[]
+  partyLed           Party[]            @relation("PartyLeader")
+  partyMembership    PartyMember?
+  partyInvites       PartyInvite[]
+  clubsOwned         Club[]             @relation("ClubOwner")
+  clubMemberships    ClubMember[]
+  friendsOut         Friendship[]       @relation("FriendRequester")
+  friendsIn          Friendship[]       @relation("FriendAddressee")
+  messagesSent       DirectMessage[]    @relation("DmFrom")
+  messagesReceived   DirectMessage[]    @relation("DmTo")
+  missionRewards     MissionReward[]
 }
 
 model UserSession {
@@ -195,18 +205,18 @@ model TeamInvitation {
 }
 
 model Tournament {
-  id          String            @id @default(cuid())
-  name        String
-  status      TournamentStatus  @default(DRAFT)
-  createdById String
-  lockedAt    DateTime?
-  createdAt   DateTime          @default(now())
-  updatedAt   DateTime          @updatedAt
+  id            String            @id @default(cuid())
+  name          String
+  status        TournamentStatus  @default(DRAFT)
+  createdById   String
+  lockedAt      DateTime?
+  createdAt     DateTime          @default(now())
+  updatedAt     DateTime          @updatedAt
   /// R49 optional entry fee in USD cents (null/0 = free). Prizes are never cash (Terms): cosmetics or subscription time only.
   entryFeeCents Int?
-  createdBy   User              @relation("TournamentCreator", fields: [createdById], references: [id])
-  entries     TournamentEntry[]
-  matches     Match[]
+  createdBy     User              @relation("TournamentCreator", fields: [createdById], references: [id])
+  entries       TournamentEntry[]
+  matches       Match[]
 }
 
 model TournamentEntry {
@@ -465,6 +475,8 @@ model QueueEntry {
   id       String   @id @default(cuid())
   userId   String   @unique
   rp       Int
+  /// R52: set when the party leader queued the whole party; members of one party are always seated on the same team.
+  partyId  String?
   joinedAt DateTime @default(now())
   user     User     @relation(fields: [userId], references: [id], onDelete: Cascade)
 
@@ -509,19 +521,19 @@ model QueueLobby {
 }
 
 model QueueLobbyPlayer {
-  id       String     @id @default(cuid())
-  lobbyId  String
-  userId   String
-  team     String
-  rp       Int
-  accepted Boolean    @default(false)
-  declined Boolean    @default(false)
+  id        String     @id @default(cuid())
+  lobbyId   String
+  userId    String
+  team      String
+  rp        Int
+  accepted  Boolean    @default(false)
+  declined  Boolean    @default(false)
   /// Seconds the player waited in queue before this lobby formed (feeds the queue-time estimate).
   waitedSec Int?
   /// Replaced by an admin mid-match (still listed, no longer on the DatHost roster).
-  replaced Boolean   @default(false)
-  lobby    QueueLobby @relation(fields: [lobbyId], references: [id], onDelete: Cascade)
-  user     User       @relation(fields: [userId], references: [id], onDelete: Cascade)
+  replaced  Boolean    @default(false)
+  lobby     QueueLobby @relation(fields: [lobbyId], references: [id], onDelete: Cascade)
+  user      User       @relation(fields: [userId], references: [id], onDelete: Cascade)
 
   @@unique([lobbyId, userId])
   @@index([userId])
@@ -584,19 +596,22 @@ enum CosmeticKind {
 
 /// R49 cosmetic catalog (admin-managed, one-time Paddle purchases). Strictly cosmetic: no gameplay effect.
 model CosmeticItem {
-  id          String       @id @default(cuid())
-  slug        String       @unique
+  id          String              @id @default(cuid())
+  slug        String              @unique
   kind        CosmeticKind
   name        String
-  description String       @default("")
+  description String              @default("")
   /// USD cents. Charged through a Paddle transaction created server-side at this amount.
   priceCents  Int
   /// #rrggbb accent the cosmetic renders with (name colour, frame, banner gradient or card glow).
   color       String
-  active      Boolean      @default(true)
-  createdAt   DateTime     @default(now())
-  updatedAt   DateTime     @updatedAt
+  active      Boolean             @default(true)
+  /// R52: owner-picked "this week" highlight in the shop / desktop app. Never changes the price.
+  featured    Boolean             @default(false)
+  createdAt   DateTime            @default(now())
+  updatedAt   DateTime            @updatedAt
   owners      CosmeticOwnership[]
+  missions    Mission[]
 }
 
 model CosmeticOwnership {
@@ -615,17 +630,17 @@ model CosmeticOwnership {
 /// R49 one-time Paddle orders (cosmetics, tournament entry). id = Paddle transaction id (txn_...), created server-side.
 /// Fulfilment happens only on a verified transaction.completed webhook for this exact id and amount.
 model PaddleOrder {
-  id           String    @id
-  userId       String
-  kind         String
-  refId        String
-  teamId       String?
-  amountCents  Int
-  status       String    @default("pending")
-  createdAt    DateTime  @default(now())
-  completedAt  DateTime?
+  id          String    @id
+  userId      String
+  kind        String
+  refId       String
+  teamId      String?
+  amountCents Int
+  status      String    @default("pending")
+  createdAt   DateTime  @default(now())
+  completedAt DateTime?
   /// R49b: set when an approved full refund or chargeback revoked what the order granted.
-  refundedAt   DateTime?
+  refundedAt  DateTime?
 
   @@index([userId])
   @@index([kind, refId])
@@ -690,4 +705,169 @@ model AnticheatEvent {
 
   @@index([createdAt])
   @@index([userId, createdAt])
+}
+
+/// R52 party (max 5) for queueing together. The leader starts the queue for every member.
+model Party {
+  id        String        @id @default(cuid())
+  leaderId  String
+  /// SITE_LOCALES id or "any".
+  language  String        @default("any")
+  /// Subset of PARTY_TAGS (serious, casual, verified, mic, premium).
+  tags      String[]
+  /// Listed in Party Finder and joinable without an invite.
+  isOpen    Boolean       @default(true)
+  note      String        @default("")
+  createdAt DateTime      @default(now())
+  leader    User          @relation("PartyLeader", fields: [leaderId], references: [id], onDelete: Cascade)
+  members   PartyMember[]
+  invites   PartyInvite[]
+
+  @@index([isOpen, createdAt])
+}
+
+model PartyMember {
+  id       String   @id @default(cuid())
+  partyId  String
+  userId   String   @unique
+  joinedAt DateTime @default(now())
+  party    Party    @relation(fields: [partyId], references: [id], onDelete: Cascade)
+  user     User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([partyId])
+}
+
+model PartyInvite {
+  id        String   @id @default(cuid())
+  partyId   String
+  userId    String
+  createdAt DateTime @default(now())
+  party     Party    @relation(fields: [partyId], references: [id], onDelete: Cascade)
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([partyId, userId])
+  @@index([userId])
+}
+
+/// R52 clubs: open communities (not tournament teams).
+model Club {
+  id          String       @id @default(cuid())
+  name        String       @unique
+  tag         String
+  description String       @default("")
+  region      String       @default("global")
+  language    String       @default("any")
+  isOpen      Boolean      @default(true)
+  ownerId     String
+  createdAt   DateTime     @default(now())
+  owner       User         @relation("ClubOwner", fields: [ownerId], references: [id], onDelete: Cascade)
+  members     ClubMember[]
+}
+
+model ClubMember {
+  id       String   @id @default(cuid())
+  clubId   String
+  userId   String
+  /// OWNER | MEMBER
+  role     String   @default("MEMBER")
+  joinedAt DateTime @default(now())
+  club     Club     @relation(fields: [clubId], references: [id], onDelete: Cascade)
+  user     User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([clubId, userId])
+  @@index([userId])
+}
+
+/// R52 friends. status: PENDING | ACCEPTED. One row per pair (requester -> addressee).
+model Friendship {
+  id          String   @id @default(cuid())
+  requesterId String
+  addresseeId String
+  status      String   @default("PENDING")
+  createdAt   DateTime @default(now())
+  requester   User     @relation("FriendRequester", fields: [requesterId], references: [id], onDelete: Cascade)
+  addressee   User     @relation("FriendAddressee", fields: [addresseeId], references: [id], onDelete: Cascade)
+
+  @@unique([requesterId, addresseeId])
+  @@index([addresseeId])
+}
+
+/// R52 direct messages between accepted friends (plain text, max 500 chars).
+model DirectMessage {
+  id        String    @id @default(cuid())
+  fromId    String
+  toId      String
+  body      String
+  createdAt DateTime  @default(now())
+  readAt    DateTime?
+  from      User      @relation("DmFrom", fields: [fromId], references: [id], onDelete: Cascade)
+  to        User      @relation("DmTo", fields: [toId], references: [id], onDelete: Cascade)
+
+  @@index([fromId, toId, createdAt])
+  @@index([toId, readAt])
+}
+
+/// R52 owner-defined missions. Progress is computed from recorded matches inside [startsAt, endsAt). Rewards are cosmetic only.
+model Mission {
+  id           String          @id @default(cuid())
+  title        String
+  description  String          @default("")
+  /// matches | wins | kills | mvps | headshots
+  metric       String
+  target       Int
+  startsAt     DateTime
+  endsAt       DateTime
+  rewardItemId String?
+  active       Boolean         @default(true)
+  createdAt    DateTime        @default(now())
+  rewardItem   CosmeticItem?   @relation(fields: [rewardItemId], references: [id], onDelete: SetNull)
+  rewards      MissionReward[]
+
+  @@index([active, endsAt])
+}
+
+model MissionReward {
+  id        String   @id @default(cuid())
+  missionId String
+  userId    String
+  createdAt DateTime @default(now())
+  mission   Mission  @relation(fields: [missionId], references: [id], onDelete: Cascade)
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([missionId, userId])
+}
+
+/// R52 owner-written A.C.E news posts (desktop home + news list).
+model NewsPost {
+  id        String   @id @default(cuid())
+  title     String
+  body      String   @default("")
+  url       String   @default("")
+  published Boolean  @default(true)
+  createdAt DateTime @default(now())
+
+  @@index([published, createdAt])
+}
+
+/// R52 A.C.E League seasons (owner-edited). Dates drive the public timeline; registration uses the linked tournament.
+model LeagueSeason {
+  id                   String    @id @default(cuid())
+  name                 String
+  /// DRAFT (hidden) | UPCOMING | REGISTRATION | REGULAR | PLAYOFFS | FINISHED
+  status               String    @default("DRAFT")
+  description          String    @default("")
+  prizeText            String    @default("")
+  registrationOpensAt  DateTime?
+  registrationClosesAt DateTime?
+  regularStartsAt      DateTime?
+  regularEndsAt        DateTime?
+  playoffsStartsAt     DateTime?
+  finalsAt             DateTime?
+  nextSeasonAt         DateTime?
+  /// Existing tournament used for team registration (5+ player teams).
+  tournamentId         String?
+  createdAt            DateTime  @default(now())
+  updatedAt            DateTime  @updatedAt
+
+  @@index([status])
 }

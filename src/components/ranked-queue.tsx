@@ -91,7 +91,7 @@ export function RankedQueue({ signedIn, initial }: { signedIn: boolean; initial:
   const askNotify = async () => { unlockAudio(); if ("Notification" in window) setPerm(await Notification.requestPermission()); };
 
   const act = (fn: () => Promise<QueueResult>) => { unlockAudio(); start(async () => apply(await fn())); };
-  const errText = error === "anticheat-required" ? desktopStrings(acLocaleId).errAnticheat : error === "banned" ? b.errBanned : error === "cooldown" ? b.errCooldown : error ? (r.errors as Record<string, string>)[error] ?? r.errors.unavailable : null;
+  const errText = error === "anticheat-required" ? desktopStrings(acLocaleId).errAnticheat : error === "party-leader-only" ? desktopStrings(acLocaleId).errPartyLeader : error === "party-member-blocked" ? desktopStrings(acLocaleId).errPartyMember : error === "banned" ? b.errBanned : error === "cooldown" ? b.errCooldown : error ? (r.errors as Record<string, string>)[error] ?? r.errors.unavailable : null;
   const regionName = view?.region ? REGION_LABELS[view.region] ?? view.region : "";
   const restriction = view?.restriction ?? null;
   const restrictLeft = restriction?.until ? Math.max(0, Math.floor((new Date(restriction.until).getTime() - now) / 1000)) : null;
