@@ -5,6 +5,7 @@ import { STEAM_AUTH_HREF } from "@/lib/site";
 import { useUi } from "@/components/use-ui";
 import { useI18n } from "@/components/locale-provider";
 import { discordStrings } from "@/lib/discord-i18n";
+import { desktopStrings } from "@/lib/desktop-i18n";
 import { interpolate } from "@/lib/interpolate";
 import { mapLabel } from "@/lib/queue";
 import { PlayMatchArena } from "@/components/play-match-arena";
@@ -32,7 +33,8 @@ const clock = (s: number) => `${Math.floor(s / 60)}:${String(s % 60).padStart(2,
 
 export function RankedQueue({ signedIn, initial }: { signedIn: boolean; initial: QueueView | null }) {
   const ui = useUi();
-  const ds = discordStrings(useI18n().locale.id);
+  const acLocaleId = useI18n().locale.id;
+  const ds = discordStrings(acLocaleId);
   const [cmdCopied, setCmdCopied] = useState(false);
   const r = ui.r48;
   const [view, setView] = useState<QueueView | null>(initial);
@@ -89,7 +91,7 @@ export function RankedQueue({ signedIn, initial }: { signedIn: boolean; initial:
   const askNotify = async () => { unlockAudio(); if ("Notification" in window) setPerm(await Notification.requestPermission()); };
 
   const act = (fn: () => Promise<QueueResult>) => { unlockAudio(); start(async () => apply(await fn())); };
-  const errText = error === "banned" ? b.errBanned : error === "cooldown" ? b.errCooldown : error ? (r.errors as Record<string, string>)[error] ?? r.errors.unavailable : null;
+  const errText = error === "anticheat-required" ? desktopStrings(acLocaleId).errAnticheat : error === "banned" ? b.errBanned : error === "cooldown" ? b.errCooldown : error ? (r.errors as Record<string, string>)[error] ?? r.errors.unavailable : null;
   const regionName = view?.region ? REGION_LABELS[view.region] ?? view.region : "";
   const restriction = view?.restriction ?? null;
   const restrictLeft = restriction?.until ? Math.max(0, Math.floor((new Date(restriction.until).getTime() - now) / 1000)) : null;

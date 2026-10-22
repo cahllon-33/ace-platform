@@ -13,6 +13,7 @@ import {
 import type { Cs2Match } from "@/server/dathost";
 import { healthTick } from "@/server/server-health";
 import { connectDetails, randomServerPassword } from "@/server/discord";
+import { anticheatBlock } from "@/server/anticheat";
 import { cleanupMatchDiscord, readLobbyDiscord, setupMatchDiscord } from "@/server/discord-match";
 
 /** States that hold the (single) DatHost server. */
@@ -129,6 +130,8 @@ async function recordBan(tx: Tx, lobbyId: string, pool: string[], bans: Ban[], s
 }
 
 export async function joinQueue(userId: string) {
+  const ac = await anticheatBlock(userId);
+  if (ac) return { ok: false as const, error: ac };
   return locked(async (tx) => {
     const user = await tx.user.findUnique({ where: { id: userId }, select: { id: true, steamId: true, accountStatus: true, competitiveRating: true } });
     if (!user?.steamId) return { ok: false as const, error: "steam-required" };
@@ -149,6 +152,8 @@ export async function leaveQueue(userId: string) {
 }
 
 export async function answerReady(userId: string, accept: boolean) {
+  const ac = accept ? await anticheatBlock(userId) : null;
+  if (ac) return { ok: false as const, error: ac };
   const res = await locked(async (tx) => {
     const seat = await tx.queueLobbyPlayer.findFirst({ where: { userId, lobby: { state: "READY" } } });
     if (!seat) return { ok: false as const, error: "no-ready-check" };

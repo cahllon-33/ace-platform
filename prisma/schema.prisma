@@ -106,6 +106,8 @@ model User {
   updatedAt          DateTime         @updatedAt
 
   sessions           UserSession[]
+  anticheatSessions  AnticheatSession[]
+  anticheatEvents    AnticheatEvent[]
   signInEvents       SignInEvent[]
   captainedTeams     Team[]           @relation("TeamCaptain")
   teamMemberships    TeamMember[]
@@ -652,4 +654,40 @@ model SteamMarketPrice {
   marketHashName String   @id
   lowest         String?
   fetchedAt      DateTime
+}
+
+/// R51 A.C.E desktop anti-cheat (user-mode). One row per desktop client login; the HMAC key is derived from SESSION_SECRET + id and never stored.
+model AnticheatSession {
+  id              String           @id @default(cuid())
+  userId          String
+  clientVersion   String           @default("")
+  machineHash     String           @default("")
+  lastHeartbeatAt DateTime?
+  lastSeq         Int              @default(0)
+  cs2Running      Boolean          @default(false)
+  /// clean | flagged
+  status          String           @default("clean")
+  revokedAt       DateTime?
+  createdAt       DateTime         @default(now())
+  user            User             @relation(fields: [userId], references: [id], onDelete: Cascade)
+  events          AnticheatEvent[]
+
+  @@index([userId, lastHeartbeatAt])
+}
+
+/// R51 anti-cheat violation / notable event reported by the desktop client or the server.
+model AnticheatEvent {
+  id        String            @id @default(cuid())
+  userId    String
+  sessionId String?
+  /// process | window | module | launch-flag | file-hash | tamper | signature
+  kind      String
+  severity  String            @default("warn")
+  detail    String            @default("")
+  createdAt DateTime          @default(now())
+  user      User              @relation(fields: [userId], references: [id], onDelete: Cascade)
+  session   AnticheatSession? @relation(fields: [sessionId], references: [id], onDelete: SetNull)
+
+  @@index([createdAt])
+  @@index([userId, createdAt])
 }
