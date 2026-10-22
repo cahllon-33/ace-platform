@@ -39,9 +39,3 @@ export function useAutoConnect(lobbyId: string | null, url: string | null) {
   return phase;
 }
 
-/** R48d owner "Join server": fetches the connect URL (with password) on click only, then launches. */
-export async function joinWith(fetchUrl: () => Promise<{ ok: true; data: string } | { ok: false; error: string }>) {
-  const r = await fetchUrl();
-  if (r.ok) launchSteam(r.data);
-  return r.ok ? null : r.error;
-}

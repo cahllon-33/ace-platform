@@ -1,7 +1,7 @@
 "use server";
 
 import { getPrisma } from "@/server/db";
-import { buildConnectUrl } from "@/lib/queue";
+import { resolvedConnect } from "@/server/connect-address";
 import { readAdminActor, readIsSteamOwner } from "@/server/admin-gate";
 import {
   dathost, DathostError, GAME_MODES, MAPS_SOURCES, readDathostConfig, safeServerPath, toSettingsView,
@@ -76,7 +76,7 @@ export async function loadOverview() {
 export async function ownerJoinUrl() {
   return guard<string>(async (api) => {
     const raw = await api.getRaw();
-    return buildConnectUrl(`${raw.ip}:${raw.ports.game}`, raw.cs2_settings?.password);
+    return (await resolvedConnect(raw.ip, raw.ports.game, raw.cs2_settings?.password)).connectUrl;
   }, ["server.join", "owner join (steam://connect)"]);
 }
 

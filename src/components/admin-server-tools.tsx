@@ -11,7 +11,7 @@ import { cancelLobbyAction, createTestLobbyAction, testBotsAction, testLobbiesAc
 import type { FileEntry, SettingsView } from "@/server/dathost";
 import type { LobbyView } from "@/server/queue-engine";
 import { OpsTab, type OpsTabId } from "@/components/admin-server-ops";
-import { joinWith, launchSteam, useAutoConnect } from "@/components/auto-connect";
+import { useAutoConnect } from "@/components/auto-connect";
 import "./admin-server-tools.css";
 
 type Tab = "console" | "settings" | "files" | "plugins" | "usage" | "power" | "test" | OpsTabId;
@@ -50,12 +50,17 @@ export function AdminServerTools({ maps, initialTab = "console" }: { maps: strin
 export function JoinServerButton({ onError }: { onError?: (e: string | null) => void }) {
   const { hebrew } = useAdminI18n();
   const t = (k: Srv48Key) => (hebrew ? SRV48_HE : SRV48_EN)[k];
-  const [pending, start] = useTransition();
+  const [url, setUrl] = useState<string | null>(null);
+  // Prefetched on mount (owner-only action) so the click is a plain synchronous <a href="steam://..."> navigation.
+  useEffect(() => {
+    let on = true;
+    void ownerJoinUrl().then((r) => { if (!on) return; if (r.ok) setUrl(r.data); else onError?.(r.error); });
+    return () => { on = false; };
+  }, [onError]);
   return (
-    <button type="button" className="acx-btn is-gold s48-joinsrv" title={t("joinServerNote")} aria-label={t("joinServerNote")} disabled={pending}
-      onClick={() => start(async () => { const e = await joinWith(ownerJoinUrl); onError?.(e); })}>
+    <a className={`acx-btn is-gold s48-joinsrv${url ? "" : " is-wait"}`} href={url ?? undefined} aria-disabled={!url} title={t("joinServerNote")} aria-label={t("joinServerNote")}>
       <span aria-hidden="true">▶</span> {t("joinServer")}
-    </button>
+    </a>
   );
 }
 
@@ -353,7 +358,7 @@ function TestTab({ t, maps, onError }: P & { maps: string[] }) {
       {mine?.connectUrl ? (
         <div className="s48-join">
           {auto === "launching" ? <p className="asv-note" role="status">{t("autoConnect")}</p> : null}
-          <a className="acx-btn is-gold s48-join-btn" href={mine.connectUrl} onClick={(e) => { e.preventDefault(); launchSteam(mine.connectUrl!); }}>{t("joinMatch")}</a>
+          <a className="acx-btn is-gold s48-join-btn" href={mine.connectUrl}>{t("joinMatch")}</a>
           {auto === "hint" ? <p className="acx-muted">{t("autoHint")}</p> : null}
         </div>
       ) : null}

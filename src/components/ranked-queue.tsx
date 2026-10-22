@@ -10,7 +10,7 @@ import { banMapAction, joinQueueAction, leaveQueueAction, pollQueue, readyAction
 import type { QueueView } from "@/server/queue-engine";
 import { notify, playBan, playLive, playMatchFound, playTick, unlockAudio } from "@/components/queue-alerts";
 import { REGION_LABELS } from "@/lib/queue";
-import { launchSteam, useAutoConnect } from "@/components/auto-connect";
+import { useAutoConnect } from "@/components/auto-connect";
 import "./ranked-queue.css";
 
 const POLL_MS = 2000;
@@ -111,7 +111,7 @@ export function RankedQueue({ signedIn, initial }: { signedIn: boolean; initial:
           {perm !== "granted" && perm !== "denied" ? <button type="button" className="r48-chip r48-chip-btn" onClick={askNotify}>{b.alertsOn}</button> : perm === "granted" ? <span className="r48-chip">{b.alertsActive}</span> : null}
         </div>
       </header>
-      {activeLobby?.state === "LIVE" ? <p className="r48-banner" role="status"><strong>{b.activeMatch}</strong>{activeLobby.connectUrl ? <a className="r48-btn r48-btn-gold r48-btn-sm" href={activeLobby.connectUrl} onClick={(e) => { e.preventDefault(); launchSteam(activeLobby.connectUrl!); }}>{b.reconnect}</a> : null}</p> : null}
+      {activeLobby?.state === "LIVE" ? <p className="r48-banner" role="status"><strong>{b.activeMatch}</strong>{activeLobby.connectUrl ? <a className="r48-btn r48-btn-gold r48-btn-sm" href={activeLobby.connectUrl}>{b.reconnect}</a> : null}</p> : null}
 
       {errText ? <p className="r48-error" role="alert">{errText}</p> : null}
 
@@ -224,7 +224,7 @@ export function RankedQueue({ signedIn, initial }: { signedIn: boolean; initial:
           {activeLobby.state === "LIVE" && activeLobby.connectUrl ? (
             <div className="r48-connect">
               {autoPhase === "launching" ? <p className="r48-auto" role="status">{c.launching}</p> : null}
-              <a className="r48-btn r48-btn-gold r48-btn-lg r48-join" href={activeLobby.connectUrl} onClick={(e) => { e.preventDefault(); launchSteam(activeLobby.connectUrl!); }}>{c.join}</a>
+              <a className="r48-btn r48-btn-gold r48-btn-lg r48-join" href={activeLobby.connectUrl}>{c.join}</a>
               {autoPhase === "hint" ? <p className="r48-warn" role="note">{c.hint}</p> : null}
               <p className="r48-sub">{r.connectNote}</p>
               {activeLobby.address ? (

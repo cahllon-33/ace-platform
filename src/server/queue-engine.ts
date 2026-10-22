@@ -1,3 +1,4 @@
+import { resolvedConnect } from "@/server/connect-address";
 import { Prisma } from "@prisma/client";
 import { getPrisma } from "@/server/db";
 import { dathost, DathostError, isAceMap, readDathostConfig } from "@/server/dathost";
@@ -7,7 +8,7 @@ import { rankFromRating, type RankArt } from "@/lib/ranks";
 import {
   ACTIVE_DUTY, QUEUE_SIZE, READY_SECONDS, VETO_TURN_SECONDS,
   applyBan, autoBanMap, balanceTeams, captainOf, dodgeCooldownMinutes, estimateWaitSeconds, leaverCooldownMinutes, readyOutcome, remainingMaps,
-  buildConnectUrl, vetoTurn, winProbability, type Ban, type Side,
+  vetoTurn, winProbability, type Ban, type Side,
 } from "@/lib/queue";
 import type { Cs2Match } from "@/server/dathost";
 import { healthTick } from "@/server/server-health";
@@ -242,10 +243,7 @@ async function penalizeLeavers(lobbyId: string, m: Cs2Match, now: Date) {
 async function connectTarget(api: ReturnType<typeof dathost>) {
   for (let i = 0; i < 2; i++) {
     const raw = await api.getRaw().catch(() => null);
-    if (raw?.ip && raw.ports?.game) {
-      const address = `${raw.ip}:${raw.ports.game}`;
-      return { address, connectUrl: buildConnectUrl(address, raw.cs2_settings?.password) };
-    }
+    if (raw?.ip && raw.ports?.game) return resolvedConnect(raw.ip, raw.ports.game, raw.cs2_settings?.password);
   }
   return null;
 }
