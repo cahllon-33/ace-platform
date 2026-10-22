@@ -231,6 +231,11 @@ function PlayerDrawer({
           </div>
           <div className="acx-nameplate-side">
             <span className={`acx-sub-chip is-${player.tier.toLowerCase()}`}>{t(TIER_KEY[player.tier])}</span>
+            {player.billing ? (
+              <span className="acx-muted acx-billing" data-billing={player.billing.status || "none"}>
+                {player.billing.paddle ? `${t("billingPaddle")} · ${player.billing.status || "—"}${player.billing.expiresAt ? ` · ${t("billingUntil")} ${player.billing.expiresAt.slice(0, 10)}` : ""}` : t("billingManual")}
+              </span>
+            ) : null}
             <SteamProfileLink steamId={player.steamId} compact />
           </div>
         </div>
@@ -477,6 +482,10 @@ export function AdminCommandCenter({
           ))}
           <a href="/admin/servers" className="acx-nav-ext">
             <span>{admin.hebrew ? "שרתים" : "Servers"}</span>
+            <span className="acx-count" aria-hidden="true">↗</span>
+          </a>
+          <a href="/admin/commerce" className="acx-nav-ext">
+            <span>{admin.hebrew ? "תשלומים" : "Payments"}</span>
             <span className="acx-count" aria-hidden="true">↗</span>
           </a>
         </nav>

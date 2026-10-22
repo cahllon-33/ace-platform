@@ -17,3 +17,8 @@
 .lg41-h2, .lg41-sec-body > h2 { margin: 0; font-size: 1.2rem; color: #f5f3ec; font-weight: 650; }
 .lg41-sec-body { min-width: 0; }
 .lg41-sec-body table th, .lg41-sec-body table td { padding-inline-end: .5rem; overflow-wrap: anywhere; }
+
+/* R49 */
+.lg49-nav{margin-top:14px;font-size:.8rem;color:#a9aab2}.lg49-nav a{color:#ffd76a}
+.lg49-sec{margin-bottom:22px}.lg49-sec p{margin-top:8px;line-height:1.65;overflow-wrap:anywhere}
+.lg49-n{color:#ffd76a;font-family:ui-monospace,monospace;font-size:.8em;margin-inline-end:6px}

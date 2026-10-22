@@ -1,3 +1,4 @@
+import { lapseIfExpired } from "@/server/paddle";
 import { createHash, randomBytes } from "node:crypto";
 import { cookies } from "next/headers";
 import type { NextResponse } from "next/server";
@@ -77,6 +78,8 @@ export async function readSessionUser() {
   }
 
   await touchPresence(record.id, record.lastSeenAt);
+  // R49: a Paddle plan past its paid period (+ grace) lapses to FREE on the next read.
+  if (await lapseIfExpired(record.user).catch(() => false)) return { ...record.user, subscriptionTier: "FREE" as const, subscriptionStatus: "expired" };
   return record.user;
 }
 

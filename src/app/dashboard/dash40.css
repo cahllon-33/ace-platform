@@ -36,3 +36,12 @@
 @media (max-width: 560px) { .d40-hero { padding: 1.25rem; } .d40-hero-emblem { display: none; } .d40-avatar { width: 4rem; height: 4rem; } .d40-feed li { grid-template-columns: auto 1fr; } .d40-feed time { grid-column: 2; } }
 @media (prefers-reduced-motion: reduce) { .d40-quick a { transition: none; } }
 .d40-hero-emblem { display: block; }
+
+/* R49 membership */
+.ms49{border:1px solid rgba(255,215,106,.22);border-radius:14px;padding:14px 16px;background:rgba(255,215,106,.04);display:grid;gap:8px;justify-items:start}
+.ms49-t{font-size:.95rem;font-weight:700;color:#f5f3ec}
+.ms49-line{font-size:.85rem;color:#d9dae0}
+.ms49-line.is-warn{color:#ffb74d}
+.ms49-btn{display:inline-flex;align-items:center;min-height:40px;padding:0 16px;border-radius:10px;background:linear-gradient(180deg,#ffd76a,#c9a13c);color:#141414;font-weight:800;font-size:.85rem;text-decoration:none}
+.ms49-btn.is-ghost{background:transparent;border:1px solid rgba(255,215,106,.45);color:#ffd76a}
+.ms49-note{font-size:.75rem;color:#a9aab2}

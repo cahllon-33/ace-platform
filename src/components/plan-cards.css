@@ -25,3 +25,12 @@ html[dir="rtl"] .pc41-flag { transform: translateX(50%); }
 .pc41-btn { width: 100%; min-height: 2.9rem; border-radius: .85rem; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; font-size: .78rem; cursor: not-allowed;
   border: 1px solid rgba(214, 222, 232, .45); background: rgba(214, 222, 232, .06); color: #e3e8ee; }
 .pc41-card.is-premium .pc41-btn { border-color: rgba(227, 185, 85, .8); background: linear-gradient(180deg, rgba(243, 220, 154, .16), rgba(201, 160, 67, .08)); color: #f3dc9a; }
+
+/* R49 checkout */
+.pc41-btn.is-current{display:inline-flex;align-items:center;justify-content:center;opacity:.8;cursor:default}
+a.pc41-btn{display:inline-flex;align-items:center;justify-content:center;text-decoration:none}
+.pc49-legal{margin-top:.6rem;font-size:.72rem;line-height:1.45;color:#a9aab2;overflow-wrap:anywhere}
+.pc49-legal a{color:#ffd76a}
+.pc49-note{margin-top:.5rem;font-size:.8rem;color:#d9dae0}
+.pc49-note.is-err{color:#ff8a80}
+.shop49{max-width:1180px;margin:0 auto 2.5rem;padding:0 16px}

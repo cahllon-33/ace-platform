@@ -1,0 +1,13 @@
+.cm49{max-width:1180px;margin:0 auto;padding:24px 16px;display:grid;gap:16px}
+.cm49-head{display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:space-between}
+.cm49-card{display:grid;gap:10px;min-width:0}
+.cm49-chips{display:flex;flex-wrap:wrap;gap:8px}.cm49-chips li{border:1px solid #333;border-radius:999px;padding:4px 12px;font-size:.85rem}
+.cm49-wrap{overflow-x:auto;max-width:100%}
+.cm49-table{width:100%;border-collapse:collapse;font-size:.85rem}.cm49-table th,.cm49-table td{padding:6px 8px;border-bottom:1px solid #26262a;text-align:start;white-space:nowrap}
+.cm49-table small{color:#8a8b93;margin-inline-start:4px}
+.cm49-sw{display:inline-block;width:12px;height:12px;border-radius:3px;vertical-align:middle}
+.cm49-form{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:10px;align-items:end}
+.cm49-form label{display:grid;gap:4px;font-size:.8rem;color:#c9cad0}
+.cm49-form input,.cm49-form select,.cm49-fees input{min-height:38px;border-radius:8px;background:#0c0c0e;color:#eee;border:1px solid #333;padding:0 10px;max-width:100%}
+.cm49-form .cm49-wide{grid-column:1/-1}.cm49-check{display:flex!important;align-items:center;gap:8px}
+.cm49-fees{display:grid;gap:8px}.cm49-fees li{display:flex;flex-wrap:wrap;gap:10px;align-items:center;justify-content:space-between;border-bottom:1px solid #26262a;padding:6px 0}

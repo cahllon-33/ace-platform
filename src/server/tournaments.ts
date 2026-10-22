@@ -11,11 +11,15 @@ export async function createTournament(createdById: string, name: string) {
   });
 }
 
-export async function registerTeam(userId: string, tournamentId: string, teamId: string) {
+export async function registerTeam(userId: string, tournamentId: string, teamId: string, opts: { paid?: boolean } = {}) {
   const prisma = getPrisma();
   const tournament = await prisma.tournament.findUnique({ where: { id: tournamentId } });
   if (!tournament || tournament.status !== "REGISTRATION") {
     throw new Error("Registration is closed.");
+  }
+  // R49: a paid event registers only from a verified Paddle transaction.completed (commerce.fulfilOrder).
+  if (tournament.entryFeeCents && tournament.entryFeeCents > 0 && !opts.paid) {
+    throw new Error("This event has an entry fee. Pay through the checkout to register.");
   }
 
   const captain = await prisma.teamMember.findFirst({

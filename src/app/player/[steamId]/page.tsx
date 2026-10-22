@@ -1,3 +1,4 @@
+import { equippedStyles } from "@/server/cosmetics";
 import { prestigeBadge, prestigeForRp, prestigeSetFor } from "@/lib/prestige";
 import { VerifiedMark } from "@/components/verified-mark";
 import { isVerified, verifyTier } from "@/lib/verification";
@@ -75,6 +76,8 @@ export default async function PlayerPage({ params }: { params: Promise<{ steamId
     .ratingHistory.findMany({ where: { userId: user.id }, orderBy: { createdAt: "desc" }, take: 8 })
     .catch(() => []);
   const d = ui.r40.dash;
+  // R49 equipped cosmetics (purchased through Paddle; visual only).
+  const fx = await equippedStyles(user.id);
   const dateFmt = new Intl.DateTimeFormat(locale, { dateStyle: "medium" });
   const badges = playerBadges({
     subscriptionTier: user.subscriptionTier,
@@ -86,18 +89,18 @@ export default async function PlayerPage({ params }: { params: Promise<{ steamId
 
   return (
     <main className="pl39">
-      <section className="pl39-banner" aria-labelledby="pl39-name">
-        <div className="pl39-banner-bg" aria-hidden="true" />
+      <section className="pl39-banner" aria-labelledby="pl39-name" style={fx.CARD_EFFECT}>
+        <div className="pl39-banner-bg" aria-hidden="true" style={fx.BANNER} />
         <div className="pl39-id">
           {user.avatarUrl ? (
             // eslint-disable-next-line @next/next/no-img-element
-            <img className="pl39-avatar" src={user.avatarUrl} alt="" width={128} height={128} />
+            <img className="pl39-avatar" src={user.avatarUrl} alt="" width={128} height={128} style={fx.FRAME} />
           ) : (
-            <span className="pl39-avatar is-empty" aria-hidden="true">{name.charAt(0).toUpperCase()}</span>
+            <span className="pl39-avatar is-empty" aria-hidden="true" style={fx.FRAME}>{name.charAt(0).toUpperCase()}</span>
           )}
           <div className="pl39-id-text">
             <p className="pl39-kicker">{p.kicker}</p>
-            <h1 id="pl39-name">{name}{isVerified(user) ? <VerifiedMark tier={verifyTier(user.subscriptionTier)} label={ui.r41.vf.tip} size={26} /> : null}</h1>
+            <h1 id="pl39-name"><span style={fx.NAME_COLOR}>{name}</span>{isVerified(user) ? <VerifiedMark tier={verifyTier(user.subscriptionTier)} label={ui.r41.vf.tip} size={26} /> : null}</h1>
             <p className="pl39-muted">{interpolate(p.memberSince, { date: since })}</p>
             <div className="pl39-tags">
               <PlayerBadges badges={badges} />

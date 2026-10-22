@@ -26,6 +26,8 @@ export type AdminPlayerRow = {
   steamProfileUrl?: string;
   /** ISO time of the last Steam persona sync, null when never synced. */
   steamSyncedAt?: string | null;
+  /** R49 billing state: Paddle subscription (webhook-set) or a manual/admin grant. */
+  billing?: { paddle: boolean; status: string; expiresAt: string | null };
   /** Why the most recent Steam sync attempt (this load / dossier open) failed. Not persisted. */
   steamSyncError?: SteamSyncIssue | null;
   /** True when the account's SteamID is on ACE_ADMIN_STEAM_IDS (site owner). Admin-only. */

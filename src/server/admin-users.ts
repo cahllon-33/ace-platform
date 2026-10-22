@@ -123,6 +123,7 @@ function userToAdminRow(user: User, steamSyncError: SteamSyncError | null = null
     avatarUrl: user.avatarUrl || null,
     steamProfileUrl: user.steamProfileUrl || "",
     steamSyncedAt: user.steamSyncedAt ? user.steamSyncedAt.toISOString() : null,
+    billing: { paddle: !!user.paddleSubscriptionId, status: user.subscriptionStatus, expiresAt: user.subscriptionExpiresAt ? user.subscriptionExpiresAt.toISOString() : null },
     steamSyncError,
     owner: isAllowlistedSteamId(user.steamId, process.env.ACE_ADMIN_STEAM_IDS),
   };

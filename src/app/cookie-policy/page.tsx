@@ -1,50 +1,9 @@
 import type { Metadata } from "next";
-import { LegalDocument, LegalSection } from "@/components/legal-document";
-import { getLocaleId, getText } from "@/server/locale";
+import { LegalR49 } from "@/components/legal-r49";
+import { COOKIES } from "@/lib/legal-r49";
 
-export async function generateMetadata(): Promise<Metadata> {
-  const text = await getText();
-  return {
-    title: text.legalDocs.cookiePolicy.meta.title,
-    description: text.legalDocs.cookiePolicy.meta.description,
-  };
-}
+export const metadata: Metadata = { title: COOKIES.title, description: "A.C.E Cookie Policy: strictly necessary cookies only, local storage and Paddle checkout cookies." };
 
-export default async function CookiePolicyPage() {
-  const [text, localeId] = await Promise.all([getText(), getLocaleId()]);
-  const policy = text.legalDocs.cookiePolicy;
-  return (
-    <LegalDocument
-      kicker={policy.kicker}
-      title={policy.title}
-      lede={policy.lede}
-      notice={localeId !== "en" ? text.legalDocs.translationNotice : undefined}
-    >
-      <LegalSection n={1} title={policy.audit.title}>
-        <p>{policy.audit.body}</p>
-      </LegalSection>
-      <LegalSection n={2} title={policy.essential.title}>
-        <ul className="list-disc space-y-2 ps-5">
-          <li>
-            <strong className="text-[#F5F3EC]">{policy.essential.session.label}</strong>{" "}
-            {policy.essential.session.body}
-          </li>
-          <li>{policy.essential.necessity}</li>
-        </ul>
-      </LegalSection>
-      <LegalSection n={3} title={policy.analytics.title}>
-        <p>
-          {policy.analytics.before}{" "}
-          <code className="text-[#FFD76A]">ace-cookie-consent-v1</code>{" "}
-          {policy.analytics.after}
-        </p>
-      </LegalSection>
-      <LegalSection n={4} title={policy.marketing.title}>
-        <p>{policy.marketing.body}</p>
-      </LegalSection>
-      <LegalSection n={5} title={policy.change.title}>
-        <p>{policy.change.body}</p>
-      </LegalSection>
-    </LegalDocument>
-  );
+export default function Page() {
+  return <LegalR49 doc={COOKIES} />;
 }

@@ -1,0 +1,24 @@
+.cs49{max-width:1180px;margin:0 auto 3rem;padding:0 16px}
+.cs49-t{font-size:1.5rem;font-weight:800;color:#f5f3ec}
+.cs49-note{margin:.3rem 0 1rem;color:#c9cad0;font-size:.9rem}
+.cs49-empty{border:1px dashed rgba(255,255,255,.18);border-radius:14px;padding:22px;color:#a9aab2;text-align:center}
+.cs49-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:14px}
+.cs49-card{border:1px solid rgba(255,255,255,.1);border-radius:16px;padding:14px;background:#141416;display:grid;gap:6px;align-content:start;min-width:0}
+.cs49-prev{border-radius:12px;background:#0c0c0e;padding:14px;display:flex;justify-content:center}
+.cs49-prev-card{display:flex;align-items:center;gap:10px;padding:10px 14px;border-radius:12px;background:#1b1b1f;min-width:0}
+.cs49-prev-av{width:34px;height:34px;border-radius:10px;background:#333}
+.cs49-prev-name{font-weight:800;color:#eee}
+.cs49-kind{font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;color:#ffd76a}
+.cs49-name{font-weight:800;color:#f5f3ec;overflow-wrap:anywhere}
+.cs49-desc{font-size:.82rem;color:#b9bac2}
+.cs49-owned{font-size:.75rem;color:#8fd19e}
+.pc49-buy{min-height:40px;border-radius:10px;padding:0 14px;font-weight:800;font-size:.85rem;background:linear-gradient(180deg,#ffd76a,#c9a13c);color:#141414;border:0;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;text-decoration:none}
+.pc49-buy:disabled{opacity:.55;cursor:not-allowed;background:#2a2a2e;color:#c9cad0}
+.pc49-buy.is-on{background:transparent;border:1px solid #ffd76a;color:#ffd76a}
+.te49{max-width:1180px;margin:2rem auto;padding:0 16px}
+.te49-list{display:grid;gap:12px}
+.te49-row{border:1px solid rgba(255,255,255,.1);border-radius:14px;padding:14px;background:#141416;display:flex;flex-wrap:wrap;gap:10px;align-items:center;justify-content:space-between}
+.te49-name{font-weight:800;color:#f5f3ec;overflow-wrap:anywhere}
+.te49-fee{color:#ffd76a;font-weight:700}
+.te49-act{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.te49-sel{min-height:40px;border-radius:10px;background:#0c0c0e;color:#eee;border:1px solid #333;padding:0 10px;max-width:100%}

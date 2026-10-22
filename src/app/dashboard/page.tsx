@@ -30,6 +30,7 @@ import { CompetitiveJourney } from "@/components/competitive-journey";
 import { getPrisma } from "@/server/db";
 import { rankProgress } from "@/lib/rank-progress";
 import "./dash40.css";
+import { MembershipManage } from "@/components/membership-manage";
 import { getLocaleId, getText, getUi } from "@/server/locale";
 import { SITE_LOCALES } from "@/lib/languages";
 import { readSessionUser } from "@/server/session";
@@ -201,6 +202,9 @@ export default async function DashboardPage() {
             <div>
               <dt className="text-ace-muted">{copy.stats.subscription}</dt>
               <dd className="text-ace-text">{copy.tiers[user.subscriptionTier]}</dd>
+            </div>
+            <div className="sm:col-span-2">
+              <MembershipManage user={user} />
             </div>
             <div>
               <dt className="text-ace-muted">{copy.stats.rank}</dt>

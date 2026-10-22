@@ -3,6 +3,7 @@ import { Suspense } from "react";
 import { connection } from "next/server";
 import { TournamentBracketPreview } from "@/components/tournament-bracket-preview";
 import { TournamentLocaleIntro, TournamentLocaleLoading } from "@/components/tournament-locale-intro";
+import { TournamentEntryServer } from "@/components/tournament-entry-server";
 import { TournamentRulebook } from "@/components/tournament-rulebook";
 import { getText } from "@/server/locale";
 import { listTeamRosters } from "@/server/rosters";
@@ -32,6 +33,9 @@ export default function TournamentsPage() {
       <TournamentLocaleIntro />
       <Suspense fallback={<TournamentLocaleLoading />}>
         <TournamentField />
+      </Suspense>
+      <Suspense fallback={null}>
+        <TournamentEntryServer />
       </Suspense>
       <TournamentRulebook />
     </main>

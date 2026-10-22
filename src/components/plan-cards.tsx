@@ -6,10 +6,10 @@ import { PrestigeEmblem } from "@/components/prestige-emblem";
 import { PRESTIGE_LEVELS } from "@/lib/prestige";
 import { RANK_TIERS } from "@/lib/ranks";
 
+import { CheckoutLegal, PaddleCheckoutButton } from "@/components/paddle-checkout";
 import { FreeAccessPill } from "@/components/free-access-pill";
 import { useText } from "@/components/text-provider";
 import { useUi } from "@/components/use-ui";
-import { interpolate } from "@/lib/interpolate";
 import { FREE_PRICE, PLUS_PRICE, PREMIUM_PRICE } from "@/lib/pricing";
 
 const TIERS = [
@@ -20,14 +20,13 @@ const TIERS = [
 
 /**
  * R41b plan cards, shared by the home page and /pricing. Price, perks, the badge preview for that plan
- * and an honest CTA (checkout is not live: paid plans say so). Premium = refined gold, Plus = platinum.
+ * and the R49 Paddle checkout ("coming soon" until Paddle keys are configured). Premium = refined gold, Plus = platinum.
  * Paid plans are cosmetic/convenience only; the no-pay-to-win line is part of every paid card.
  */
 export function PlanCards({ headingLevel = 2 }: { headingLevel?: 2 | 3 }) {
   const all = useText();
   const text = all.pricing;
   const pr = useUi().r41c.pr;
-  const soon = text.compare.cells.notConnected;
   const Heading = headingLevel === 2 ? "h2" : "h3";
   const legend = RANK_TIERS[9];
   const top = PRESTIGE_LEVELS[4];
@@ -67,15 +66,10 @@ export function PlanCards({ headingLevel = 2 }: { headingLevel?: 2 | 3 }) {
               {tier.id === "free" ? (
                 <FreeAccessPill label={text.card.stayFree} note={text.card.freeNote} />
               ) : (
-                <button
-                  type="button"
-                  disabled
-                  aria-disabled="true"
-                  className="pc41-btn"
-                  aria-label={`${interpolate(text.card.chooseAria, { plan: copy.name, price: tier.price })} · ${soon}`}
-                >
-                  {soon}
-                </button>
+                <>
+                  <PaddleCheckoutButton plan={tier.id} planName={copy.name} />
+                  <CheckoutLegal />
+                </>
               )}
             </div>
           </li>
