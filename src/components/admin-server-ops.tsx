@@ -40,8 +40,8 @@ export function OpsTab({ tab, t, lang, onError }: { tab: OpsTabId; t: (k: Srv48K
         ) : <p className="acx-muted">{t("noDemos")}</p>}
         <div className="s48-table-wrap">
           <table className="s48-table">
-            <thead><tr><th>{t("when")}</th><th>{t("state")}</th><th>Map</th><th>{t("score")}</th><th>{t("rpApplied")}</th></tr></thead>
-            <tbody>{h.rows.map((r) => <tr key={r.id}><td>{when(r.at)}</td><td>{r.state}{r.isTest ? " · TEST" : ""}{r.error ? <small> {r.error}</small> : null}</td><td>{mapLabel(r.map)}</td><td>{r.scoreA ?? "—"} : {r.scoreB ?? "—"}</td><td>{r.ratingApplied ? "✓" : "—"}</td></tr>)}</tbody>
+            <thead><tr><th>{t("when")}</th><th>{t("state")}</th><th>Map</th><th>{t("score")}</th><th>{t("rpApplied")}</th><th>{t("demos")}</th></tr></thead>
+            <tbody>{h.rows.map((r) => <tr key={r.id}><td>{when(r.at)}</td><td>{r.state}{r.isTest ? " · TEST" : ""}{r.error ? <small> {r.error}</small> : null}</td><td>{mapLabel(r.map)}</td><td>{r.scoreA ?? "—"} : {r.scoreB ?? "—"}</td><td>{r.ratingApplied ? "✓" : "—"}</td><td>{r.demo ? <a className="acx-btn" href={`/api/admin/dathost/file?path=${encodeURIComponent(r.demo)}`} download>⤓ .dem</a> : <span className="acx-muted">—</span>}</td></tr>)}</tbody>
           </table>
         </div>
       </div>

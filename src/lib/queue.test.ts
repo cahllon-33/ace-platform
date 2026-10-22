@@ -83,3 +83,18 @@ describe("R48c connect url", () => {
     expect(autoLaunchKey("x1")).toBe("ace-autoconnect-x1");
   });
 });
+
+import { demoForMatch, gotvFix } from "@/lib/queue";
+describe("R48f demos", () => {
+  it("enables GOTV only when off", () => {
+    expect(gotvFix({ enable_gotv: false })).toEqual({ "cs2_settings.enable_gotv": "true" });
+    expect(gotvFix(undefined)).toEqual({ "cs2_settings.enable_gotv": "true" });
+    expect(gotvFix({ enable_gotv: true })).toBeNull();
+  });
+  it("finds the match demo", () => {
+    const files = [{ path: "6ad9_round01.txt" }, { path: "6ad9.dem" }, { path: "other.dem" }];
+    expect(demoForMatch(files, "6ad9")).toBe("6ad9.dem");
+    expect(demoForMatch(files, "zzz")).toBeNull();
+    expect(demoForMatch(files, null)).toBeNull();
+  });
+});

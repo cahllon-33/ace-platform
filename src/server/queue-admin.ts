@@ -1,3 +1,4 @@
+import { demoForMatch } from "@/lib/queue";
 import { getPrisma } from "@/server/db";
 import { dathost, DathostError, readDathostConfig, type FileEntry } from "@/server/dathost";
 import { ACTIVE_STATES, lobbyView, type LobbyView } from "@/server/queue-engine";
@@ -180,7 +181,7 @@ export async function matchHistory() {
     demos: demos.map((d) => ({ path: d.path, size: d.size, matchId: lobbies.find((l) => l.dathostMatchId && d.path.includes(l.dathostMatchId))?.id ?? null })),
     rows: lobbies.map((l) => ({
       id: l.id, state: l.state, isTest: l.isTest, map: l.map, scoreA: l.scoreA, scoreB: l.scoreB, players: l._count.players, error: l.error,
-      at: (l.endedAt ?? l.updatedAt).toISOString(), dathostMatchId: l.dathostMatchId, ratingApplied: l.matchId ? !!m.get(l.matchId)?.ratingApplied : false,
+      at: (l.endedAt ?? l.updatedAt).toISOString(), dathostMatchId: l.dathostMatchId, demo: demoForMatch(demos, l.dathostMatchId), ratingApplied: l.matchId ? !!m.get(l.matchId)?.ratingApplied : false,
     })),
   };
 }

@@ -8,7 +8,7 @@ import { rankFromRating, type RankArt } from "@/lib/ranks";
 import {
   ACTIVE_DUTY, QUEUE_SIZE, READY_SECONDS, VETO_TURN_SECONDS,
   applyBan, autoBanMap, balanceTeams, captainOf, dodgeCooldownMinutes, estimateWaitSeconds, leaverCooldownMinutes, readyOutcome, remainingMaps,
-  normalizeConnectUrl, vetoTurn, winProbability, type Ban, type Side,
+  gotvFix, normalizeConnectUrl, vetoTurn, winProbability, type Ban, type Side,
 } from "@/lib/queue";
 import type { Cs2Match } from "@/server/dathost";
 import { healthTick } from "@/server/server-health";
@@ -192,6 +192,10 @@ export async function launchLobby(lobbyId: string) {
   try {
     const api = dathost(cfg);
     const base = getAppBaseUrl();
+    // Demo recording: DatHost only writes a .dem for the match when GOTV is on. Turn it on (persistent) if needed.
+    const pre = await api.getRaw().catch(() => null);
+    const fix = pre ? gotvFix(pre.cs2_settings) : null;
+    if (fix) await api.update(fix).catch(() => undefined);
     const match = await api.createMatch({
       team1: { name: "A.C.E Alpha", steamIds: ids("team1") },
       team2: { name: "A.C.E Bravo", steamIds: ids("team2") },

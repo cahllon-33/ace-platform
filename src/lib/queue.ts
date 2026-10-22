@@ -131,5 +131,19 @@ export function normalizeConnectUrl(url: string | null): string | null {
   return m ? buildConnectUrl(m[1], m[2] ? decodeURIComponent(m[2]) : null) : url;
 }
 
+/**
+ * R48f: DatHost records the GOTV demo of a cs2-match only when GOTV is enabled on the game server (the match API has
+ * no demo switch of its own). Returns the settings update needed before a site match is created, or null if already on.
+ */
+export function gotvFix(cs2Settings: { enable_gotv?: boolean } | null | undefined): Record<string, string> | null {
+  return cs2Settings?.enable_gotv ? null : { "cs2_settings.enable_gotv": "true" };
+}
+
+/** Matches a server .dem file to a DatHost match id (DatHost names demos after the match id). */
+export function demoForMatch(files: { path: string }[], dathostMatchId: string | null): string | null {
+  if (!dathostMatchId) return null;
+  return files.find((f) => /\.dem$/i.test(f.path) && f.path.includes(dathostMatchId))?.path ?? null;
+}
+
 /** localStorage key that makes the automatic CS2 launch fire once per lobby. */
 export const autoLaunchKey = (lobbyId: string) => `ace-autoconnect-${lobbyId}`;
