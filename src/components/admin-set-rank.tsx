@@ -9,7 +9,7 @@ import { applyRankOverride } from "@/server/admin-ops";
 import { RANK_TIERS, type RankDivision } from "@/lib/ranks";
 import { rankProgress } from "@/lib/rank-progress";
 import { divisionFloorRp } from "@/lib/rank-override";
-import { PRESTIGE_LEVELS, prestigeBadge, prestigeForRp } from "@/lib/prestige";
+import { PRESTIGE_LEVELS, prestigeForRp } from "@/lib/prestige";
 import { RP_RULES } from "@/lib/rp-rules";
 import "./admin-set-rank.css";
 
@@ -33,7 +33,19 @@ export function AdminSetRankModal({ player, onClose }: { player: { id: string; n
   const valid = rpText.trim() !== "" && Number.isInteger(rp) && rp >= min && rp <= max;
   const prog = rankProgress(valid ? rp : player.rating);
   const pr = valid ? prestigeForRp(rp) : null;
-  const badge = valid ? prestigeBadge(rp, player.plan.toUpperCase()) : null;
+  // Preview-only finish (R45b): defaults to the player's plan; never changes the subscription.
+  const [finish, setFinish] = useState<"plus" | "premium">(player.plan === "Premium" ? "premium" : "plus");
+  const badge = pr ? { level: pr.level, set: finish, name: pr.name, slug: pr.slug } : null;
+  const art = finish === "premium" ? "premium" : "standard";
+  const toggle = (
+    <div className="asr-seg" role="radiogroup" aria-label={t("srFinish")}>
+      {(["plus", "premium"] as const).map((f) => (
+        <button key={f} type="button" role="radio" aria-checked={finish === f} className={`is-${f}${finish === f ? " is-on" : ""}`} onClick={() => setFinish(f)}>
+          {f === "plus" ? t("srPlus") : t("srPremium")}
+        </button>
+      ))}
+    </div>
+  );
 
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => e.key === "Escape" && onClose();
@@ -69,7 +81,7 @@ export function AdminSetRankModal({ player, onClose }: { player: { id: string; n
             <ul className="asr-tiers">
               {RANK_TIERS.map((tier) => (
                 <li key={tier.level} className={valid && prog.tier.level === tier.level && !pr ? "is-on" : undefined}>
-                  <RankOrb level={tier.level} size={40} label={tier.name} />
+                  <RankOrb level={tier.level} art={art} size={40} label={tier.name} />
                   <span className="asr-tname">{tier.name}</span>
                   <span className="asr-divs">
                     {DIVS.map((d) => {
@@ -85,12 +97,16 @@ export function AdminSetRankModal({ player, onClose }: { player: { id: string; n
                 </li>
               ))}
             </ul>
-            <p className="asr-label">{t("srPrestige")}</p>
+            <div className="asr-prow">
+              <p className="asr-label">{t("srPrestige")}</p>
+              {toggle}
+            </div>
+            <p className="asr-hint">{t("srFinishHint")}</p>
             <ul className="asr-prestige">
               {PRESTIGE_LEVELS.map((p) => (
                 <li key={p.slug}>
                   <button type="button" className={pr?.level === p.level ? "is-on" : undefined} onClick={() => setRpText(String(p.minRp))}>
-                    <RankOrb level={10} size={56} label={p.name} prestige={{ level: p.level, set: player.plan === "Plus" ? "plus" : "premium", name: p.name, slug: p.slug }} />
+                    <RankOrb level={10} size={72} label={p.name} prestige={{ level: p.level, set: finish, name: p.name, slug: p.slug }} />
                     <strong>{p.name.replace("A.C.E. ", "")}</strong>
                     <small>{p.minRp.toLocaleString("en-US")}</small>
                   </button>
@@ -100,8 +116,9 @@ export function AdminSetRankModal({ player, onClose }: { player: { id: string; n
           </section>
           <aside className="asr-side">
             <div className="asr-preview">
-              <RankOrb level={prog.tier.level} size={128} label={prog.tier.name} prestige={badge} />
+              <RankOrb key={`${finish}-${badge?.slug ?? prog.tier.level}`} level={prog.tier.level} art={art} size={128} label={prog.tier.name} prestige={badge} />
             </div>
+            {toggle}
             <p className="asr-result-label">{t("srResult")}</p>
             <p className="asr-result">{prog.tier.name} {prog.division}</p>
             <p className="asr-result-sub">{pr ? pr.name : t("srNoPrestige")}</p>

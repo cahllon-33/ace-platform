@@ -20,7 +20,7 @@
 .asr-prestige button:hover, .asr-prestige button.is-on { border-color: #d4af37; background: rgba(212, 175, 55, .08); }
 .asr-prestige strong { font-size: .74rem; } .asr-prestige small { color: #a6a7ac; font-size: .68rem; }
 .asr-side { display: grid; gap: .5rem; align-content: start; padding: 1rem; border-radius: 1rem; background: #0f1014; border: 1px solid rgba(255, 255, 255, .06); }
-.asr-preview { display: grid; place-items: center; height: 9.5rem; }
+.asr-preview { display: grid; place-items: center; height: 10.5rem; }
 .asr-result-label { margin: 0; color: #a6a7ac; font-size: .68rem; letter-spacing: .14em; text-transform: uppercase; text-align: center; }
 .asr-result { margin: 0; text-align: center; font-size: 1.1rem; font-weight: 800; }
 .asr-result-sub { margin: 0 0 .4rem; text-align: center; color: #ffd76a; font-size: .82rem; font-weight: 700; }
@@ -34,3 +34,15 @@
 .asr-cancel { border: 1px solid rgba(255, 255, 255, .15); background: transparent; color: #c8c4b8; }
 .asr-save { border: 0; color: #0b0b0c; background: linear-gradient(180deg, #ffe9a3, #d4af37); }
 .asr-save:disabled { opacity: .45; cursor: not-allowed; }
+
+/* R45b finish toggle (preview only) */
+.asr-prow { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: .5rem; }
+.asr-seg { display: inline-flex; padding: 3px; gap: 3px; border-radius: 999px; background: rgba(255,255,255,.04); border: 1px solid rgba(255,255,255,.1); justify-self: center; }
+.asr-seg button { border: 0; cursor: pointer; padding: .35rem .8rem; border-radius: 999px; font-size: .68rem; font-weight: 800; letter-spacing: .06em; color: rgba(255,255,255,.65); background: transparent; }
+.asr-seg button.is-plus.is-on { color: #10141b; background: linear-gradient(90deg, #fff, #cfd9e8 55%, #93a3bb); }
+.asr-seg button.is-premium.is-on { color: #1a1205; background: linear-gradient(90deg, #fff1b8, #f5c842 45%, #e08a1e); }
+.asr-seg button:focus-visible { outline: 2px solid #ffd76a; outline-offset: 2px; }
+.asr-hint { margin: .15rem 0 .5rem; font-size: .7rem; color: rgba(255,255,255,.5); }
+.asr-side > .asr-seg { margin: .1rem auto .4rem; }
+.asr-seg button { white-space: nowrap; }
+.asr-side > .asr-seg button { padding: .3rem .55rem; font-size: .6rem; letter-spacing: .03em; }
