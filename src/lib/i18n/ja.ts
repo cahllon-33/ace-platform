@@ -118,7 +118,7 @@ export const JA: MessageBag = {
  contactConsent: "A.C.E. プライバシーポリシーのデータ最小化の保存条件に、明示的に同意する。",
  contactSend: "安全な遠隔計測メッセージを送る",
  contactCorporate:
- "A.C.E. Competitions Ltd. | 安全メール関門：support@ace-platform.gg | 法人登録番号：未定",
+ "A.C.E. | 安全メール関門：support@ace-platform.gg",
  contactModalTitle: "オンラインお問い合わせフォーム · まもなく開始",
  contactModalBody:
  "このフォームのメッセージはまだ配信されません。フォームはサポート窓口と同時に開始します。A.C.E. が Steam のパスワードを求めることは決してありません。",
@@ -178,9 +178,9 @@ export const JA: MessageBag = {
  tourneyLoading: "対戦表の画面を読み込み中…",
  platformNoticeTitle: "プラットフォーム通知",
  platformNoticeBody: "このサイトのトーナメント表、順位表、スキンカードは見本です。Valveの物品でも、支払われた賞品でもありません。このサイトはアンチチートプログラムを動かしていません。サイトを開いても法的権利は取り消されず、契約にも署名しません。A.C.E. はハードウェア識別子を集めず、弁護士や裁判所へ連絡したことを理由にアカウントを削除しません。",
-  copyrightLine: "© 2026 A.C.E. Competitions Ltd. Valveとは無関係です。",
+  copyrightLine: "© 2026 A.C.E. Valveとは無関係です。",
   copyrightClaim:
-    "このサイトの原文、レイアウト、エンブレム、グラフィックは A.C.E. Competitions Ltd. に帰属します。書面の許可なく複製することはできません。A.C.E. はこの権利を行使できます。Counter-Strike 2 とマップ名は Valve に帰属します。",
+    "このサイトの原文、レイアウト、エンブレム、グラフィックは A.C.E. に帰属します。書面の許可なく複製することはできません。A.C.E. はこの権利を行使できます。Counter-Strike 2 とマップ名は Valve に帰属します。",
  shieldServerValue: "まもなく開始",
  tvGames: "試合テレビ",
  pathsKicker: "このサイトの5つの経路",

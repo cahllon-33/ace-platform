@@ -118,7 +118,7 @@ export const ZH: MessageBag = {
  contactConsent: "我明确同意 A.C.E. 隐私政策中的数据最小化存储参数。",
  contactSend: "发送安全遥测消息",
  contactCorporate:
- "A.C.E. Competitions Ltd. | 安全邮件网关：support@ace-platform.gg | 公司注册编号：待定",
+ "A.C.E. | 安全邮件网关：support@ace-platform.gg",
  contactModalTitle: "在线联系表单 · 即将推出",
  contactModalBody:
  "此表单中的消息尚不会送达。表单将与我们的支持服务同时开放。A.C.E. 绝不会索要你的 Steam 密码。",
@@ -178,9 +178,9 @@ export const ZH: MessageBag = {
  tourneyLoading: "正在加载对阵版面…",
  platformNoticeTitle: "平台声明",
  platformNoticeBody: "本网站上的赛事树、排行榜和皮肤卡片都是示例。它们不是 Valve 物品，也不是已支付的奖品。本网站不运行反作弊程序。打开网站不会取消一项法定权利，也不会签署合同。A.C.E. 不收集硬件标识，也不会因为有人联系律师或法院而删除账户。",
-  copyrightLine: "© 2026 A.C.E. Competitions Ltd. 与 Valve 无关联。",
+  copyrightLine: "© 2026 A.C.E. 与 Valve 无关联。",
   copyrightClaim:
-    "本网站的原创文字、版式、徽章和图形归 A.C.E. Competitions Ltd. 所有。未经书面许可不得复制。A.C.E. 可以维护这项权利。Counter-Strike 2 及其地图名称归 Valve 所有。",
+    "本网站的原创文字、版式、徽章和图形归 A.C.E. 所有。未经书面许可不得复制。A.C.E. 可以维护这项权利。Counter-Strike 2 及其地图名称归 Valve 所有。",
  shieldServerValue: "即将推出",
  tvGames: "比赛电视",
  pathsKicker: "本站的五条路径",

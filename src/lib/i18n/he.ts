@@ -120,7 +120,7 @@ export const HE: MessageBag = {
  "אני מסכים במפורש לפרמטרי האחסון של מזעור הנתונים לפי מדיניות הפרטיות של A.C.E.",
  contactSend: "שליחת הודעת טלמטריה מאובטחת",
  contactCorporate:
- "A.C.E. Competitions Ltd. | שער דוא״ל מאובטח: support@ace-platform.gg | מזהה רישום תאגידי: ממתין",
+ "A.C.E. | שער דוא״ל מאובטח: support@ace-platform.gg",
  contactModalTitle: "טופס יצירת קשר מקוון · בקרוב",
  contactModalBody:
  "הודעות מטופס זה עדיין אינן נמסרות. הטופס ייפתח יחד עם מוקד התמיכה שלנו. A.C.E. לעולם לא מבקשת את סיסמת ה-Steam שלך.",
@@ -182,9 +182,9 @@ export const HE: MessageBag = {
  tourneyLoading: "טוען את פריסת עץ ההדחה…",
  platformNoticeTitle: "הודעת הפלטפורמה",
  platformNoticeBody: "לוחות הטורניר, טבלאות המובילים וכרטיסי הסקינים באתר הם דוגמאות. הם אינם פריטים של Valve ואינם פרסים בתשלום. האתר אינו מפעיל תוכנת אנטי-צ'יט. פתיחת האתר אינה מבטלת זכות משפטית ואינה חתימה על חוזה. A.C.E. אינה אוספת מזהה חומרה ואינה מוחקת חשבון מפני שמישהו פונה לעורך דין או לבית משפט.",
-  copyrightLine: "© 2026 A.C.E. Competitions Ltd. אין שיוך ל-Valve.",
+  copyrightLine: "© 2026 A.C.E. אין שיוך ל-Valve.",
   copyrightClaim:
-    "הטקסט, העיצוב, הסמלים והגרפיקה המקוריים באתר שייכים ל-A.C.E. Competitions Ltd. העתקה בלי אישור בכתב אסורה. A.C.E. רשאית לאכוף את הזכות הזו. Counter-Strike 2 ושמות המפות שייכים ל-Valve.",
+    "הטקסט, העיצוב, הסמלים והגרפיקה המקוריים באתר שייכים ל-A.C.E. העתקה בלי אישור בכתב אסורה. A.C.E. רשאית לאכוף את הזכות הזו. Counter-Strike 2 ושמות המפות שייכים ל-Valve.",
  shieldServerValue: "בקרוב",
  tvGames: "טלוויזיית משחקים",
  pathsKicker: "חמישה מסלולים באתר",

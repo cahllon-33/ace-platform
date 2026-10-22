@@ -27,7 +27,7 @@ export const UI_MK: Ui = {
     "tagline": "Натпреварувачки табели за Counter-Strike 2, изградени околу чесна игра.",
     "follow": "Следи го A.C.E.",
     "rights": "Сите права се задржани.",
-    "legalLine": "© 2026 A.C.E. Competitions Ltd. Независна платформа, не е поврзана со Valve. Counter-Strike и CS2 се заштитни знаци на Valve Corporation."
+    "legalLine": "© 2026 A.C.E. Независна платформа, не е поврзана со Valve. Counter-Strike и CS2 се заштитни знаци на Valve Corporation."
   },
   "soon": {
     "label": "Наскоро"

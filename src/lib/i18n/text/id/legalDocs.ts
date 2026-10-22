@@ -5,7 +5,7 @@ export const legalDocs: TextBag["legalDocs"] = {
     "effective": "Tanggal berlaku: {date}",
     "contact": "Kontak: support@ace-platform.gg",
     "definitionsTitle": "Definisi",
-    "definitions": "Dalam Ketentuan ini, “A.C.E.” dan “kami” berarti A.C.E. Competitions Ltd. “Situs” berarti ace-platform.gg. “Akun” berarti profil A.C.E. yang dibuat melalui login Steam. “Paket” berarti Free, Plus, atau Premium. “Buku Aturan” berarti Buku Aturan Kompetitif di /rules. “Admin” berarti staf yang menerapkan Buku Aturan pada suatu acara.",
+    "definitions": "Dalam Ketentuan ini, “A.C.E.” dan “kami” berarti A.C.E. “Situs” berarti ace-platform.gg. “Akun” berarti profil A.C.E. yang dibuat melalui login Steam. “Paket” berarti Free, Plus, atau Premium. “Buku Aturan” berarti Buku Aturan Kompetitif di /rules. “Admin” berarti staf yang menerapkan Buku Aturan pada suatu acara.",
     "suspensionTitle": "Pembatasan dan penangguhan akun",
     "suspension": "Kami dapat memperingatkan, membatasi, menangguhkan, atau menutup Akun yang melanggar Ketentuan ini atau Buku Aturan, misalnya karena curang, berbagi akun, menghindari larangan, pelecehan, atau penipuan. Paket berbayar tidak pernah melindungi Akun dari pembatasan.",
     "disputesTitle": "Keputusan aturan dan banding",
@@ -30,7 +30,7 @@ export const legalDocs: TextBag["legalDocs"] = {
       "operator": {
         "title": "1. Operator dan independensi",
         "paragraphs": [
-          "Layanan dioperasikan oleh A.C.E. Competitions Ltd. (nomor registrasi perusahaan akan dipublikasikan). Menggunakan situs berarti Anda menerima Ketentuan ini, Kebijakan Privasi, Kebijakan Cookie, dan Buku Aturan Kompetitif."
+          "Layanan dioperasikan oleh A.C.E. Menggunakan situs berarti Anda menerima Ketentuan ini, Kebijakan Privasi, Kebijakan Cookie, dan Buku Aturan Kompetitif."
         ]
       },
       "eligibility": {
@@ -66,14 +66,14 @@ export const legalDocs: TextBag["legalDocs"] = {
       "copyright": {
         "title": "7. Hak cipta atas materi orisinal situs",
         "paragraphs": [
-          "Teks orisinal, tata letak halaman, emblem, dan grafis yang dibuat untuk situs ini milik A.C.E. Competitions Ltd. Anda tidak boleh menyalin, menerbitkan ulang, atau mengambil materi orisinal itu untuk produk lain tanpa izin tertulis. Jika hukum mengizinkan, A.C.E. dapat menegakkan hak tersebut, termasuk melalui gugatan. Pemberitahuan ini tidak mengajukan perkara, tidak menetapkan ganti rugi, dan tidak menjamin hasil pengadilan.",
+          "Teks orisinal, tata letak halaman, emblem, dan grafis yang dibuat untuk situs ini milik A.C.E. Anda tidak boleh menyalin, menerbitkan ulang, atau mengambil materi orisinal itu untuk produk lain tanpa izin tertulis. Jika hukum mengizinkan, A.C.E. dapat menegakkan hak tersebut, termasuk melalui gugatan. Pemberitahuan ini tidak mengajukan perkara, tidak menetapkan ganti rugi, dan tidak menjamin hasil pengadilan.",
           "Counter-Strike 2, Steam, dan nama peta Dust II, Mirage, Inferno, Nuke, Ancient, Anubis, dan Train adalah milik Valve. A.C.E. tidak mengklaimnya. Membuka situs ini tidak membatalkan hak hukum dan tidak menandatangani kontrak."
         ]
       },
       "contact": {
         "title": "8. Kontak",
         "paragraphs": [
-          "support@ace-platform.gg — A.C.E. Competitions Ltd. — Nomor registrasi perusahaan akan dipublikasikan."
+          "support@ace-platform.gg — A.C.E."
         ]
       }
     }
@@ -85,7 +85,7 @@ export const legalDocs: TextBag["legalDocs"] = {
     },
     "kicker": "ACE-LEGAL / KEBIJAKAN PRIVASI",
     "title": "Kebijakan Privasi",
-    "lede": "Kebijakan Privasi ini menjelaskan data pribadi apa yang disimpan A.C.E. Competitions Ltd. saat kamu menggunakan situs ini, mengapa, dan berapa lama. Jika terjemahan berbeda dari teks bahasa Inggris, teks bahasa Inggris yang berlaku.",
+    "lede": "Kebijakan Privasi ini menjelaskan data pribadi apa yang disimpan A.C.E. saat kamu menggunakan situs ini, mengapa, dan berapa lama. Jika terjemahan berbeda dari teks bahasa Inggris, teks bahasa Inggris yang berlaku.",
     "strictNecessity": {
       "title": "Filosofi Kebutuhan Ketat",
       "intro": "Kami mengumpulkan data akun minimum yang diperlukan untuk mengidentifikasi pemain kompetitif dan menghentikan penipuan yang jelas di layanan kami sendiri. Kami tidak mengumpulkan log yang tidak perlu, tidak mengambil inventaris Steam pribadi, dan tidak menjual data perilaku pihak ketiga.",
@@ -139,7 +139,7 @@ export const legalDocs: TextBag["legalDocs"] = {
     },
     "controller": {
       "title": "Pengendali",
-      "body": "A.C.E. Competitions Ltd. Nomor registrasi perusahaan akan dipublikasikan. Kontak: support@ace-platform.gg."
+      "body": "A.C.E. Kontak: support@ace-platform.gg."
     }
   },
   "cookiePolicy": {

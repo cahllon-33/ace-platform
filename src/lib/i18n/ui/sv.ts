@@ -27,7 +27,7 @@ export const UI_SV: Ui = {
     "tagline": "Tävlingsstegar för Counter-Strike 2, byggda kring fair play.",
     "follow": "Följ A.C.E.",
     "rights": "Med ensamrätt.",
-    "legalLine": "© 2026 A.C.E. Competitions Ltd. Oberoende plattform utan koppling till Valve. Counter-Strike och CS2 är varumärken som tillhör Valve Corporation."
+    "legalLine": "© 2026 A.C.E. Oberoende plattform utan koppling till Valve. Counter-Strike och CS2 är varumärken som tillhör Valve Corporation."
   },
   "soon": {
     "label": "Kommer snart"

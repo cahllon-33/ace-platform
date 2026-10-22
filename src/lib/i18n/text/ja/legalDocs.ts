@@ -5,7 +5,7 @@ export const legalDocs: TextBag["legalDocs"] = {
     "effective": "施行日：{date}",
     "contact": "お問い合わせ：support@ace-platform.gg",
     "definitionsTitle": "定義",
-    "definitions": "本規約において「A.C.E.」「当社」とはA.C.E. Competitions Ltd.を指します。「本サイト」とはace-platform.ggを指します。「アカウント」とはSteamサインインで作成されたA.C.E.プロフィールを指します。「プラン」とはFree、Plus、Premiumを指します。「ルールブック」とは/rulesの競技ルールブックを指します。「管理者」とはイベントでルールブックを適用するスタッフを指します。",
+    "definitions": "本規約において「A.C.E.」「当社」とはA.C.E.を指します。「本サイト」とはace-platform.ggを指します。「アカウント」とはSteamサインインで作成されたA.C.E.プロフィールを指します。「プラン」とはFree、Plus、Premiumを指します。「ルールブック」とは/rulesの競技ルールブックを指します。「管理者」とはイベントでルールブックを適用するスタッフを指します。",
     "suspensionTitle": "アカウントの制限と停止",
     "suspension": "本規約またはルールブックに違反するアカウントに対し、不正行為、アカウント共有、BAN回避、嫌がらせ、詐欺などを理由に、警告、制限、停止、または閉鎖を行うことがあります。有料プランによってアカウントが制限を免れることはありません。",
     "disputesTitle": "ルール上の判断と異議申し立て",
@@ -30,7 +30,7 @@ export const legalDocs: TextBag["legalDocs"] = {
       "operator": {
         "title": "1. 運営者と独立性",
         "paragraphs": [
-          "本サービスは A.C.E. Competitions Ltd.(会社登録番号は今後公開予定)が運営しています。本サイトを利用することで、本規約、プライバシーポリシー、Cookie ポリシー、競技ルールブックに同意したものとみなされます。"
+          "本サービスは A.C.E.が運営しています。本サイトを利用することで、本規約、プライバシーポリシー、Cookie ポリシー、競技ルールブックに同意したものとみなされます。"
         ]
       },
       "eligibility": {
@@ -66,14 +66,14 @@ export const legalDocs: TextBag["legalDocs"] = {
       "copyright": {
         "title": "7. 本サイト独自の素材の著作権",
         "paragraphs": [
-          "本サイトのために作成されたオリジナルの文章、ページレイアウト、エンブレム、グラフィックは A.C.E. Competitions Ltd. に帰属します。書面による許可なく、これらの素材を他の製品のために複製、再公開、スクレイピングすることはできません。法律で認められる場合、A.C.E. は請求を含めてその権利を行使することがあります。本告知は訴訟を提起するものではなく、損害額を定めるものでも、裁判の結果を保証するものでもありません。",
+          "本サイトのために作成されたオリジナルの文章、ページレイアウト、エンブレム、グラフィックは A.C.E. に帰属します。書面による許可なく、これらの素材を他の製品のために複製、再公開、スクレイピングすることはできません。法律で認められる場合、A.C.E. は請求を含めてその権利を行使することがあります。本告知は訴訟を提起するものではなく、損害額を定めるものでも、裁判の結果を保証するものでもありません。",
           "Counter-Strike 2、Steam、およびマップ名 Dust II、Mirage、Inferno、Nuke、Ancient、Anubis、Train は Valve に帰属します。A.C.E. はこれらの権利を主張しません。本サイトを開くことで法的権利が失われることはなく、契約が成立することもありません。"
         ]
       },
       "contact": {
         "title": "8. 連絡先",
         "paragraphs": [
-          "support@ace-platform.gg — A.C.E. Competitions Ltd. — 会社登録番号は今後公開予定。"
+          "support@ace-platform.gg — A.C.E."
         ]
       }
     }
@@ -85,7 +85,7 @@ export const legalDocs: TextBag["legalDocs"] = {
     },
     "kicker": "ACE-LEGAL / プライバシーポリシー",
     "title": "プライバシーポリシー",
-    "lede": "本プライバシーポリシーは、本サイトのご利用時にA.C.E. Competitions Ltd.がどの個人データを、なぜ、どれだけの期間保存するかを説明します。翻訳と英語の本文が異なる場合は、英語の本文が優先します。",
+    "lede": "本プライバシーポリシーは、本サイトのご利用時にA.C.E.がどの個人データを、なぜ、どれだけの期間保存するかを説明します。翻訳と英語の本文が異なる場合は、英語の本文が優先します。",
     "strictNecessity": {
       "title": "必要最小限の原則",
       "intro": "競技プレイヤーの識別と、当社サービス上の明らかな不正の防止に必要な最小限のアカウントデータのみを収集します。不要なログを収集せず、非公開の Steam インベントリをスクレイピングせず、第三者の行動データを販売しません。",
@@ -139,7 +139,7 @@ export const legalDocs: TextBag["legalDocs"] = {
     },
     "controller": {
       "title": "管理者",
-      "body": "A.C.E. Competitions Ltd. 会社登録番号は今後公開予定。連絡先:support@ace-platform.gg。"
+      "body": "A.C.E. 連絡先:support@ace-platform.gg。"
     }
   },
   "cookiePolicy": {

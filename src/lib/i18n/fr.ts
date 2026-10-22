@@ -120,7 +120,7 @@ export const FR: MessageBag = {
  "Je consens explicitement aux paramètres de minimisation du stockage des données de la Politique de confidentialité A.C.E.",
  contactSend: "ENVOYER UN MESSAGE TÉLÉMÉTRIQUE SÉCURISÉ",
  contactCorporate:
- "A.C.E. Competitions Ltd. | Passerelle e-mail sécurisée : support@ace-platform.gg | ID de registre d'entreprise : en attente",
+ "A.C.E. | Passerelle e-mail sécurisée : support@ace-platform.gg",
  contactModalTitle: "Formulaire de contact en ligne · bientôt",
  contactModalBody:
  "Les messages de ce formulaire ne sont pas encore transmis. Le formulaire ouvrira en même temps que notre support. A.C.E. ne vous demandera jamais votre mot de passe Steam.",
@@ -182,9 +182,9 @@ export const FR: MessageBag = {
  tourneyLoading: "Chargement du tableau…",
  platformNoticeTitle: "AVIS DE LA PLATEFORME",
  platformNoticeBody: "Les tableaux, classements et cartes de skins de ce site sont des exemples. Ce ne sont pas des objets Valve ni des prix payés. Ce site n'exécute pas de programme anti-triche. Ouvrir le site n'annule pas un droit et ne signe pas un contrat. A.C.E. ne collecte pas d'identifiant matériel et ne supprime pas un compte parce que quelqu'un contacte un avocat ou un tribunal.",
-  copyrightLine: "© 2026 A.C.E. Competitions Ltd. Sans lien avec Valve.",
+  copyrightLine: "© 2026 A.C.E. Sans lien avec Valve.",
   copyrightClaim:
-    "Le texte, la mise en page, les emblèmes et les graphismes originaux de ce site appartiennent à A.C.E. Competitions Ltd. Les copier sans autorisation écrite n'est pas permis. A.C.E. peut faire valoir ce droit. Counter-Strike 2 et les noms des cartes appartiennent à Valve.",
+    "Le texte, la mise en page, les emblèmes et les graphismes originaux de ce site appartiennent à A.C.E. Les copier sans autorisation écrite n'est pas permis. A.C.E. peut faire valoir ce droit. Counter-Strike 2 et les noms des cartes appartiennent à Valve.",
  shieldServerValue: "Bientôt",
  tvGames: "Télévision des matchs",
  pathsKicker: "CINQ PARCOURS SUR CE SITE",

@@ -63,7 +63,7 @@ export const HU: MessageBag = {
  brand: "Márka",
  explore: "Felfedezés",
  networks: "Hálózatok",
- copyright: "© 2026 A.C.E. Competitions Ltd. Nem áll kapcsolatban a Valve-val.",
+ copyright: "© 2026 A.C.E. Nem áll kapcsolatban a Valve-val.",
  skipToContent: "Ugrás a tartalomra",
  openMenu: "Menü megnyitása",
  closeMenu: "Menü bezárása",
@@ -128,7 +128,7 @@ export const HU: MessageBag = {
  "Kifejezetten hozzájárulok az adatminimalizálás tárolási feltételeihez az A.C.E. adatvédelmi szabályzata szerint.",
  contactSend: "BIZTONSÁGOS TELEMETRIAÜZENET KÜLDÉSE",
  contactCorporate:
- "A.C.E. Competitions Ltd. | Biztonságos e-mail-átjáró: support@ace-platform.gg | Cégjegyzékszám: függőben",
+ "A.C.E. | Biztonságos e-mail-átjáró: support@ace-platform.gg",
  contactModalTitle: "Online kapcsolatfelvételi űrlap · hamarosan",
  contactModalBody:
  "Az űrlapról küldött üzenetek még nem kerülnek kézbesítésre. Az űrlap az ügyfélszolgálatunkkal együtt indul. Az A.C.E. soha nem kéri a Steam-jelszavadat.",
@@ -191,9 +191,9 @@ export const HU: MessageBag = {
  platformNoticeTitle: "PLATFORMÉRTESÍTÉS",
  platformNoticeBody:
  "A bajnoki táblák, a ranglisták és a skinkártyák ezen a weboldalon példák. Nem Valve-tárgyak, és nem fizetett díjak. Ez az oldal nem futtat anti-cheat programot. Az oldal megnyitása nem szüntet meg jogot, és nem jelent szerződéskötést. Az A.C.E. nem gyűjt hardverazonosítót, és nem töröl fiókot azért, mert valaki ügyvéddel vagy bírósággal lép kapcsolatba.",
- copyrightLine: "© 2026 A.C.E. Competitions Ltd. Nem áll kapcsolatban a Valve-val.",
+ copyrightLine: "© 2026 A.C.E. Nem áll kapcsolatban a Valve-val.",
  copyrightClaim:
- "Az eredeti szöveg, az elrendezés, az emblémák és a grafikák ezen a weboldalon az A.C.E. Competitions Ltd. tulajdonát képezik. Írásos engedély nélkül másolni őket nem szabad. Az A.C.E. érvényesítheti ezt a jogot. A Counter-Strike 2 és a pályanevei a Valve tulajdonát képezik.",
+ "Az eredeti szöveg, az elrendezés, az emblémák és a grafikák ezen a weboldalon az A.C.E. tulajdonát képezik. Írásos engedély nélkül másolni őket nem szabad. Az A.C.E. érvényesítheti ezt a jogot. A Counter-Strike 2 és a pályanevei a Valve tulajdonát képezik.",
  shieldServerValue: "Hamarosan",
  tvGames: "Játéktelevízió",
  pathsKicker: "ÖT ÚTVONAL EZEN AZ OLDALON",

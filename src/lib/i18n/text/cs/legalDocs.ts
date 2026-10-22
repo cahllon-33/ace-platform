@@ -5,7 +5,7 @@ export const legalDocs: TextBag["legalDocs"] = {
     "effective": "Datum účinnosti: {date}",
     "contact": "Kontakt: support@ace-platform.gg",
     "definitionsTitle": "Definice",
-    "definitions": "V těchto Podmínkách „A.C.E.“, „my“ znamená A.C.E. Competitions Ltd. „Web“ znamená ace-platform.gg. „Účet“ znamená profil A.C.E. vytvořený přihlášením přes Steam. „Plán“ znamená Free, Plus nebo Premium. „Pravidla“ znamenají soutěžní pravidla na /rules. „Admin“ znamená člena týmu, který pravidla uplatňuje na akci.",
+    "definitions": "V těchto Podmínkách „A.C.E.“, „my“ znamená A.C.E. „Web“ znamená ace-platform.gg. „Účet“ znamená profil A.C.E. vytvořený přihlášením přes Steam. „Plán“ znamená Free, Plus nebo Premium. „Pravidla“ znamenají soutěžní pravidla na /rules. „Admin“ znamená člena týmu, který pravidla uplatňuje na akci.",
     "suspensionTitle": "Omezení a pozastavení účtu",
     "suspension": "Účet, který porušuje tyto Podmínky nebo Pravidla, například podváděním, sdílením účtu, obcházením banu, obtěžováním nebo podvodem, můžeme varovat, omezit, pozastavit nebo zrušit. Placený plán nikdy nechrání účet před omezením.",
     "disputesTitle": "Rozhodnutí o pravidlech a odvolání",
@@ -32,7 +32,7 @@ export const legalDocs: TextBag["legalDocs"] = {
       operator: {
         title: "1. Provozovatel a nezávislost",
         paragraphs: [
-          "Službu provozuje společnost A.C.E. Competitions Ltd. (registrační číslo společnosti bude zveřejněno). Používáním webu přijímáte tyto Podmínky, Zásady ochrany osobních údajů, Zásady cookies a Soutěžní řád.",
+          "Službu provozuje společnost A.C.E. Používáním webu přijímáte tyto Podmínky, Zásady ochrany osobních údajů, Zásady cookies a Soutěžní řád.",
         ],
       },
       eligibility: {
@@ -68,14 +68,14 @@ export const legalDocs: TextBag["legalDocs"] = {
       copyright: {
         title: "7. Autorská práva k původnímu obsahu webu",
         paragraphs: [
-          "Původní texty, rozvržení stránek, emblémy a grafika vytvořené pro tento web patří společnosti A.C.E. Competitions Ltd. Tento původní obsah nesmíte bez písemného souhlasu kopírovat, znovu zveřejňovat ani automaticky stahovat pro jiný produkt. Tam, kde to právo dovoluje, může A.C.E. toto právo vymáhat, a to i formou žaloby. Toto upozornění nezahajuje žádné řízení, nestanoví výši náhrady škody a nezaručuje výsledek soudního řízení.",
+          "Původní texty, rozvržení stránek, emblémy a grafika vytvořené pro tento web patří společnosti A.C.E. Tento původní obsah nesmíte bez písemného souhlasu kopírovat, znovu zveřejňovat ani automaticky stahovat pro jiný produkt. Tam, kde to právo dovoluje, může A.C.E. toto právo vymáhat, a to i formou žaloby. Toto upozornění nezahajuje žádné řízení, nestanoví výši náhrady škody a nezaručuje výsledek soudního řízení.",
           "Counter-Strike 2, Steam a názvy map Dust II, Mirage, Inferno, Nuke, Ancient, Anubis a Train patří společnosti Valve. A.C.E. si je nenárokuje. Otevření tohoto webu neruší žádné zákonné právo a neuzavírá smlouvu.",
         ],
       },
       contact: {
         title: "8. Kontakt",
         paragraphs: [
-          "support@ace-platform.gg — A.C.E. Competitions Ltd. — Registrační číslo společnosti bude zveřejněno.",
+          "support@ace-platform.gg — A.C.E.",
         ],
       },
     },
@@ -88,7 +88,7 @@ export const legalDocs: TextBag["legalDocs"] = {
     },
     kicker: "ACE-LEGAL / ZÁSADY OCHRANY OSOBNÍCH ÚDAJŮ",
     title: "Zásady ochrany soukromí",
-    lede: "Tyto Zásady vysvětlují, jaké osobní údaje A.C.E. Competitions Ltd. uchovává, když používáš tento web, proč a jak dlouho. Pokud se překlad liší od anglického textu, platí anglický text.",
+    lede: "Tyto Zásady vysvětlují, jaké osobní údaje A.C.E. uchovává, když používáš tento web, proč a jak dlouho. Pokud se překlad liší od anglického textu, platí anglický text.",
     strictNecessity: {
       title: "Zásada nezbytné nutnosti",
       intro:
@@ -149,7 +149,7 @@ export const legalDocs: TextBag["legalDocs"] = {
     },
     controller: {
       title: "Správce údajů",
-      body: "A.C.E. Competitions Ltd. Registrační číslo společnosti bude zveřejněno. Kontakt: support@ace-platform.gg.",
+      body: "A.C.E. Kontakt: support@ace-platform.gg.",
     },
   },
   cookiePolicy: {

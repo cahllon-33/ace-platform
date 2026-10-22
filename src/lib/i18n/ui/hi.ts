@@ -27,7 +27,7 @@ export const UI_HI: Ui = {
     "tagline": "निष्पक्ष खेल पर आधारित प्रतिस्पर्धी Counter-Strike 2 लैडर।",
     "follow": "A.C.E. को फ़ॉलो करें",
     "rights": "सर्वाधिकार सुरक्षित।",
-    "legalLine": "© 2026 A.C.E. Competitions Ltd. स्वतंत्र प्लेटफ़ॉर्म, Valve से संबद्ध नहीं। Counter-Strike और CS2, Valve Corporation के ट्रेडमार्क हैं।"
+    "legalLine": "© 2026 A.C.E. स्वतंत्र प्लेटफ़ॉर्म, Valve से संबद्ध नहीं। Counter-Strike और CS2, Valve Corporation के ट्रेडमार्क हैं।"
   },
   "soon": {
     "label": "जल्द आ रहा है"

@@ -120,7 +120,7 @@ export const PT: MessageBag = {
  "Eu consinto explicitamente com os parâmetros de minimização de armazenamento de dados da Política de Privacidade da A.C.E.",
  contactSend: "ENVIAR MENSAGEM DE TELEMETRIA SEGURA",
  contactCorporate:
- "A.C.E. Competitions Ltd. | Gateway de e-mail seguro: support@ace-platform.gg | ID de registro corporativo: pendente",
+ "A.C.E. | Gateway de e-mail seguro: support@ace-platform.gg",
  contactModalTitle: "Formulário de contacto online · em breve",
  contactModalBody:
  "As mensagens deste formulário ainda não são entregues. O formulário abre juntamente com a nossa equipa de suporte. A A.C.E. nunca pede a sua palavra-passe Steam.",
@@ -182,9 +182,9 @@ export const PT: MessageBag = {
  tourneyLoading: "Carregando o chaveamento…",
  platformNoticeTitle: "AVISO DA PLATAFORMA",
  platformNoticeBody: "Chaves, tabelas e cartões de skins neste site são exemplos. Não são itens da Valve nem prêmios pagos. Este site não executa um programa antitrapaça. Abrir o site não cancela um direito legal nem assina um contrato. A A.C.E. não coleta um identificador de hardware e não apaga uma conta porque alguém procurou um advogado ou um tribunal.",
-  copyrightLine: "© 2026 A.C.E. Competitions Ltd. Sem vínculo com a Valve.",
+  copyrightLine: "© 2026 A.C.E. Sem vínculo com a Valve.",
   copyrightClaim:
-    "O texto, o layout, os emblemas e os gráficos originais deste site pertencem à A.C.E. Competitions Ltd. Copiá-los sem permissão escrita não é permitido. A A.C.E. pode fazer valer esse direito. Counter-Strike 2 e os nomes dos mapas pertencem à Valve.",
+    "O texto, o layout, os emblemas e os gráficos originais deste site pertencem à A.C.E. Copiá-los sem permissão escrita não é permitido. A A.C.E. pode fazer valer esse direito. Counter-Strike 2 e os nomes dos mapas pertencem à Valve.",
  shieldServerValue: "Em breve",
  tvGames: "Televisão das partidas",
  pathsKicker: "CINCO CAMINHOS NESTE SITE",

@@ -56,7 +56,7 @@ export const EN = {
  brand: "Brand",
  explore: "Explore",
  networks: "Networks",
- copyright: "© 2026 A.C.E. Competitions Ltd. Not affiliated with Valve.",
+ copyright: "© 2026 A.C.E. Not affiliated with Valve.",
  skipToContent: "Skip to content",
  openMenu: "Open menu",
  closeMenu: "Close menu",
@@ -120,7 +120,7 @@ export const EN = {
  "I explicitly consent to the data minimization storage parameters under the A.C.E. Privacy Policy.",
  contactSend: "SEND SECURE TELEMETRY MESSAGE",
  contactCorporate:
- "A.C.E. Competitions Ltd. | Secure Email Gateway: support@ace-platform.gg | Corporate Registry ID: Pending",
+ "A.C.E. | Secure Email Gateway: support@ace-platform.gg",
  contactModalTitle: "Online contact form · coming soon",
  contactModalBody:
  "Messages from this form are not delivered yet. The form opens together with our support desk. A.C.E. never asks for your Steam password.",
@@ -183,9 +183,9 @@ export const EN = {
  platformNoticeTitle: "PLATFORM NOTICE",
  platformNoticeBody:
  "Tournament boards, leaderboards and skin cards on this website are examples. They are not Valve items and they are not paid prizes. This site does not run an anti-cheat program. Opening the site does not cancel a legal right and it does not sign a contract. A.C.E. does not collect a hardware identifier and does not delete an account because someone contacts a lawyer or a court.",
-  copyrightLine: "© 2026 A.C.E. Competitions Ltd. Not affiliated with Valve.",
+  copyrightLine: "© 2026 A.C.E. Not affiliated with Valve.",
   copyrightClaim:
-    "Original text, layout, emblems, and graphics on this website belong to A.C.E. Competitions Ltd. Copying them without written permission is not allowed. A.C.E. may enforce that right. Counter-Strike 2 and its map names belong to Valve.",
+    "Original text, layout, emblems, and graphics on this website belong to A.C.E. Copying them without written permission is not allowed. A.C.E. may enforce that right. Counter-Strike 2 and its map names belong to Valve.",
  shieldServerValue: "Coming soon",
  tvGames: "Games television",
  pathsKicker: "FIVE PATHS ON THIS SITE",

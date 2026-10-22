@@ -5,7 +5,7 @@ export const legalDocs: TextBag["legalDocs"] = {
     "effective": "Yürürlük tarihi: {date}",
     "contact": "İletişim: support@ace-platform.gg",
     "definitionsTitle": "Tanımlar",
-    "definitions": "Bu Koşullarda “A.C.E.” ve “biz”, A.C.E. Competitions Ltd. anlamına gelir. “Site”, ace-platform.gg anlamına gelir. “Hesap”, Steam girişiyle oluşturulan A.C.E. profilidir. “Plan”, Free, Plus veya Premium anlamına gelir. “Kural Kitabı”, /rules adresindeki Rekabet Kural Kitabıdır. “Admin”, bir etkinlikte Kural Kitabını uygulayan personeldir.",
+    "definitions": "Bu Koşullarda “A.C.E.” ve “biz”, A.C.E. anlamına gelir. “Site”, ace-platform.gg anlamına gelir. “Hesap”, Steam girişiyle oluşturulan A.C.E. profilidir. “Plan”, Free, Plus veya Premium anlamına gelir. “Kural Kitabı”, /rules adresindeki Rekabet Kural Kitabıdır. “Admin”, bir etkinlikte Kural Kitabını uygulayan personeldir.",
     "suspensionTitle": "Hesap kısıtlamaları ve askıya alma",
     "suspension": "Bu Koşulları veya Kural Kitabını ihlal eden bir Hesabı, örneğin hile, hesap paylaşımı, yasak atlatma, taciz veya dolandırıcılık nedeniyle uyarabilir, kısıtlayabilir, askıya alabilir veya kapatabiliriz. Ücretli bir plan bir Hesabı kısıtlamadan asla korumaz.",
     "disputesTitle": "Kural kararları ve itirazlar",
@@ -30,7 +30,7 @@ export const legalDocs: TextBag["legalDocs"] = {
       "operator": {
         "title": "1. İşletmeci ve bağımsızlık",
         "paragraphs": [
-          "Hizmet, A.C.E. Competitions Ltd. (şirket sicil numarası yayımlanacaktır) tarafından işletilir. Siteyi kullanmak bu Koşulları, Gizlilik Politikası'nı, Çerez Politikası'nı ve Rekabet Kural Kitabı'nı kabul ettiğiniz anlamına gelir."
+          "Hizmet, A.C.E. tarafından işletilir. Siteyi kullanmak bu Koşulları, Gizlilik Politikası'nı, Çerez Politikası'nı ve Rekabet Kural Kitabı'nı kabul ettiğiniz anlamına gelir."
         ]
       },
       "eligibility": {
@@ -66,14 +66,14 @@ export const legalDocs: TextBag["legalDocs"] = {
       "copyright": {
         "title": "7. Özgün site materyalinin telif hakkı",
         "paragraphs": [
-          "Bu site için oluşturulan özgün metin, sayfa düzeni, amblemler ve grafikler A.C.E. Competitions Ltd.'ye aittir. Bu özgün materyali yazılı izin olmadan başka bir ürün için kopyalayamaz, yeniden yayımlayamaz veya kazıyamazsınız. Yasanın izin verdiği durumlarda A.C.E. bu hakkı, dava yoluyla da dahil olmak üzere kullanabilir. Bu bildirim dava açmaz, tazminat belirlemez ve bir mahkeme sonucunu garanti etmez.",
+          "Bu site için oluşturulan özgün metin, sayfa düzeni, amblemler ve grafikler A.C.E'ye aittir. Bu özgün materyali yazılı izin olmadan başka bir ürün için kopyalayamaz, yeniden yayımlayamaz veya kazıyamazsınız. Yasanın izin verdiği durumlarda A.C.E. bu hakkı, dava yoluyla da dahil olmak üzere kullanabilir. Bu bildirim dava açmaz, tazminat belirlemez ve bir mahkeme sonucunu garanti etmez.",
           "Counter-Strike 2, Steam ve Dust II, Mirage, Inferno, Nuke, Ancient, Anubis ve Train harita adları Valve'a aittir. A.C.E. bunlar üzerinde hak iddia etmez. Bu siteyi açmak hiçbir yasal hakkı ortadan kaldırmaz ve sözleşme imzalamak anlamına gelmez."
         ]
       },
       "contact": {
         "title": "8. İletişim",
         "paragraphs": [
-          "support@ace-platform.gg — A.C.E. Competitions Ltd. — Şirket sicil numarası yayımlanacaktır."
+          "support@ace-platform.gg — A.C.E."
         ]
       }
     }
@@ -85,7 +85,7 @@ export const legalDocs: TextBag["legalDocs"] = {
     },
     "kicker": "ACE-LEGAL / GİZLİLİK POLİTİKASI",
     "title": "Gizlilik Politikası",
-    "lede": "Bu Gizlilik Politikası, bu siteyi kullandığında A.C.E. Competitions Ltd.'nin hangi kişisel verileri, neden ve ne kadar süre sakladığını açıklar. Bir çeviri İngilizce metinden farklıysa İngilizce metin geçerlidir.",
+    "lede": "Bu Gizlilik Politikası, bu siteyi kullandığında A.C.E'nin hangi kişisel verileri, neden ve ne kadar süre sakladığını açıklar. Bir çeviri İngilizce metinden farklıysa İngilizce metin geçerlidir.",
     "strictNecessity": {
       "title": "Katı Gereklilik ilkesi",
       "intro": "Rekabetçi bir oyuncuyu tanımlamak ve kendi hizmetimizdeki açık dolandırıcılığı durdurmak için gereken asgari hesap verisini toplarız. Gereksiz kayıt toplamayız, özel Steam envanterini kazımayız ve üçüncü taraf davranışsal veri satmayız.",
@@ -139,7 +139,7 @@ export const legalDocs: TextBag["legalDocs"] = {
     },
     "controller": {
       "title": "Veri sorumlusu",
-      "body": "A.C.E. Competitions Ltd. Şirket sicil numarası yayımlanacaktır. İletişim: support@ace-platform.gg."
+      "body": "A.C.E. İletişim: support@ace-platform.gg."
     }
   },
   "cookiePolicy": {

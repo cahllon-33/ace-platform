@@ -120,7 +120,7 @@ export const RO: MessageBag = {
  "Consimt explicit la parametrii de minimizare a stocării datelor din Politica de confidențialitate A.C.E.",
  contactSend: "TRIMITE MESAJ TELEMETRIC SECURIZAT",
  contactCorporate:
- "A.C.E. Competitions Ltd. | Gateway de e-mail securizat: support@ace-platform.gg | ID registru corporativ: în așteptare",
+ "A.C.E. | Gateway de e-mail securizat: support@ace-platform.gg",
  contactModalTitle: "Formular de contact online · în curând",
  contactModalBody:
  "Mesajele din acest formular nu sunt încă livrate. Formularul se deschide odată cu echipa noastră de asistență. A.C.E. nu îți cere niciodată parola Steam.",
@@ -182,9 +182,9 @@ export const RO: MessageBag = {
  tourneyLoading: "Se încarcă tabloul…",
  platformNoticeTitle: "ANUNȚUL PLATFORMEI",
  platformNoticeBody: "Tablourile, clasamentele și cardurile de skin de pe acest site sunt exemple. Nu sunt obiecte Valve și nu sunt premii plătite. Acest site nu rulează un program anti-cheat. Deschiderea site-ului nu anulează un drept legal și nu semnează un contract. A.C.E. nu colectează un identificator hardware și nu șterge un cont pentru că cineva contactează un avocat sau o instanță.",
-  copyrightLine: "© 2026 A.C.E. Competitions Ltd. Fără legătură cu Valve.",
+  copyrightLine: "© 2026 A.C.E. Fără legătură cu Valve.",
   copyrightClaim:
-    "Textul, aspectul, emblemele și grafica originale de pe acest site aparțin A.C.E. Competitions Ltd. Copierea fără permisiune scrisă nu este permisă. A.C.E. poate apăra acest drept. Counter-Strike 2 și numele hărților aparțin Valve.",
+    "Textul, aspectul, emblemele și grafica originale de pe acest site aparțin A.C.E. Copierea fără permisiune scrisă nu este permisă. A.C.E. poate apăra acest drept. Counter-Strike 2 și numele hărților aparțin Valve.",
  shieldServerValue: "În curând",
  tvGames: "Televiziunea meciurilor",
  pathsKicker: "CINCI CĂI PE ACEST SITE",

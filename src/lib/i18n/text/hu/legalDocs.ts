@@ -5,7 +5,7 @@ export const legalDocs: TextBag["legalDocs"] = {
     "effective": "Hatálybalépés napja: {date}",
     "contact": "Kapcsolat: support@ace-platform.gg",
     "definitionsTitle": "Fogalmak",
-    "definitions": "E Feltételekben az „A.C.E.”, „mi” az A.C.E. Competitions Ltd.-t jelenti. A „Webhely” az ace-platform.gg. A „Fiók” a Steam-bejelentkezéssel létrehozott A.C.E.-profil. A „Csomag” a Free, Plus vagy Premium. A „Szabálykönyv” a /rules oldalon található versenyszabályzat. Az „Admin” az a munkatárs, aki egy eseményen alkalmazza a Szabálykönyvet.",
+    "definitions": "E Feltételekben az „A.C.E.”, „mi” az A.C.E-t jelenti. A „Webhely” az ace-platform.gg. A „Fiók” a Steam-bejelentkezéssel létrehozott A.C.E.-profil. A „Csomag” a Free, Plus vagy Premium. A „Szabálykönyv” a /rules oldalon található versenyszabályzat. Az „Admin” az a munkatárs, aki egy eseményen alkalmazza a Szabálykönyvet.",
     "suspensionTitle": "Fiókkorlátozás és felfüggesztés",
     "suspension": "Figyelmeztethetjük, korlátozhatjuk, felfüggeszthetjük vagy megszüntethetjük azt a Fiókot, amely megsérti e Feltételeket vagy a Szabálykönyvet, például csalás, fiókmegosztás, kitiltás kijátszása, zaklatás vagy visszaélés miatt. Fizetős csomag soha nem védi meg a Fiókot a korlátozástól.",
     "disputesTitle": "Szabálydöntések és fellebbezés",
@@ -30,7 +30,7 @@ export const legalDocs: TextBag["legalDocs"] = {
       "operator": {
         "title": "1. Üzemeltető és függetlenség",
         "paragraphs": [
-          "A szolgáltatást az A.C.E. Competitions Ltd. üzemelteti (cégjegyzékszám később kerül közzétételre). Az oldal használatával elfogadod ezeket a feltételeket, az Adatvédelmi szabályzatot, a Sütiszabályzatot és a versenyszabálykönyvet."
+          "A szolgáltatást az A.C.E. üzemelteti. Az oldal használatával elfogadod ezeket a feltételeket, az Adatvédelmi szabályzatot, a Sütiszabályzatot és a versenyszabálykönyvet."
         ]
       },
       "eligibility": {
@@ -66,14 +66,14 @@ export const legalDocs: TextBag["legalDocs"] = {
       "copyright": {
         "title": "7. Az oldal eredeti anyagainak szerzői joga",
         "paragraphs": [
-          "Az ehhez a weboldalhoz készült eredeti szöveg, oldalelrendezés, emblémák és grafikák az A.C.E. Competitions Ltd. tulajdonát képezik. Írásos engedély nélkül nem másolhatod, teheted közzé újra vagy gyűjtheted ki ezt az eredeti anyagot más termékhez. Ahol a jog megengedi, az A.C.E. érvényesítheti ezt a jogot, akár igénnyel is. Ez a közlemény nem indít pert, nem állapít meg kártérítést és nem garantál bírósági eredményt.",
+          "Az ehhez a weboldalhoz készült eredeti szöveg, oldalelrendezés, emblémák és grafikák az A.C.E. tulajdonát képezik. Írásos engedély nélkül nem másolhatod, teheted közzé újra vagy gyűjtheted ki ezt az eredeti anyagot más termékhez. Ahol a jog megengedi, az A.C.E. érvényesítheti ezt a jogot, akár igénnyel is. Ez a közlemény nem indít pert, nem állapít meg kártérítést és nem garantál bírósági eredményt.",
           "A Counter-Strike 2, a Steam és a Dust II, Mirage, Inferno, Nuke, Ancient, Anubis és Train pályanevek a Valve tulajdonai. Az A.C.E. nem tart rájuk igényt. Az oldal megnyitása nem szüntet meg jogot és nem köt szerződést."
         ]
       },
       "contact": {
         "title": "8. Kapcsolat",
         "paragraphs": [
-          "support@ace-platform.gg — A.C.E. Competitions Ltd. — A cégjegyzékszám később kerül közzétételre."
+          "support@ace-platform.gg — A.C.E."
         ]
       }
     }
@@ -85,7 +85,7 @@ export const legalDocs: TextBag["legalDocs"] = {
     },
     "kicker": "ACE-LEGAL / ADATVÉDELMI IRÁNYELVEK",
     "title": "Adatvédelmi szabályzat",
-    "lede": "Ez az Adatvédelmi irányelv elmagyarázza, milyen személyes adatokat tárol az A.C.E. Competitions Ltd., amikor ezt a webhelyet használod, miért és meddig. Ha egy fordítás eltér az angol szövegtől, az angol szöveg az irányadó.",
+    "lede": "Ez az Adatvédelmi irányelv elmagyarázza, milyen személyes adatokat tárol az A.C.E., amikor ezt a webhelyet használod, miért és meddig. Ha egy fordítás eltér az angol szövegtől, az angol szöveg az irányadó.",
     "strictNecessity": {
       "title": "A szigorú szükségesség elve",
       "intro": "A versenyjátékos azonosításához és a saját szolgáltatásunkon elkövetett nyilvánvaló csalás megállításához szükséges minimális fiókadatot gyűjtjük. Nem gyűjtünk szükségtelen naplókat, nem gyűjtünk ki privát Steam-készleteket, és nem adunk el harmadik féltől származó viselkedési adatokat.",
@@ -139,7 +139,7 @@ export const legalDocs: TextBag["legalDocs"] = {
     },
     "controller": {
       "title": "Adatkezelő",
-      "body": "A.C.E. Competitions Ltd. A cégjegyzékszám később kerül közzétételre. Kapcsolat: support@ace-platform.gg."
+      "body": "A.C.E. Kapcsolat: support@ace-platform.gg."
     }
   },
   "cookiePolicy": {

@@ -5,7 +5,7 @@ export const legalDocs: TextBag["legalDocs"] = {
     "effective": "시행일: {date}",
     "contact": "문의: support@ace-platform.gg",
     "definitionsTitle": "정의",
-    "definitions": "본 약관에서 'A.C.E.'와 '당사'는 A.C.E. Competitions Ltd.를 뜻합니다. '사이트'는 ace-platform.gg를 뜻합니다. '계정'은 Steam 로그인으로 생성된 A.C.E. 프로필을 뜻합니다. '플랜'은 Free, Plus 또는 Premium을 뜻합니다. '룰북'은 /rules의 경쟁 룰북을 뜻합니다. '관리자'는 이벤트에서 룰북을 적용하는 스태프를 뜻합니다.",
+    "definitions": "본 약관에서 'A.C.E.'와 '당사'는 A.C.E.를 뜻합니다. '사이트'는 ace-platform.gg를 뜻합니다. '계정'은 Steam 로그인으로 생성된 A.C.E. 프로필을 뜻합니다. '플랜'은 Free, Plus 또는 Premium을 뜻합니다. '룰북'은 /rules의 경쟁 룰북을 뜻합니다. '관리자'는 이벤트에서 룰북을 적용하는 스태프를 뜻합니다.",
     "suspensionTitle": "계정 제한 및 정지",
     "suspension": "본 약관이나 룰북을 위반한 계정에 대해 부정행위, 계정 공유, 제재 회피, 괴롭힘, 사기 등을 이유로 경고, 제한, 정지 또는 폐쇄할 수 있습니다. 유료 플랜은 어떤 계정도 제한에서 보호하지 않습니다.",
     "disputesTitle": "규칙 결정 및 이의 제기",
@@ -32,7 +32,7 @@ export const legalDocs: TextBag["legalDocs"] = {
       operator: {
         title: "1. 운영자 및 독립성",
         paragraphs: [
-          "이 서비스는 A.C.E. Competitions Ltd.가 운영합니다(사업자 등록번호는 추후 공개 예정). 사이트를 이용하면 본 약관, 개인정보 처리방침, 쿠키 정책 및 대회 규정집에 동의하는 것입니다.",
+          "이 서비스는 A.C.E.가 운영합니다. 사이트를 이용하면 본 약관, 개인정보 처리방침, 쿠키 정책 및 대회 규정집에 동의하는 것입니다.",
         ],
       },
       eligibility: {
@@ -68,14 +68,14 @@ export const legalDocs: TextBag["legalDocs"] = {
       copyright: {
         title: "7. 사이트 고유 자료의 저작권",
         paragraphs: [
-          "이 웹사이트를 위해 제작된 고유한 문안, 페이지 레이아웃, 엠블럼, 그래픽은 A.C.E. Competitions Ltd.에 속합니다. 서면 허가 없이 해당 고유 자료를 다른 제품을 위해 복제, 재게시, 스크래핑할 수 없습니다. 법이 허용하는 경우, A.C.E.는 청구를 포함하여 그 권리를 행사할 수 있습니다. 이 고지는 소송을 제기하는 것이 아니며, 손해배상액을 정하지 않고, 법원 판결을 보장하지 않습니다.",
+          "이 웹사이트를 위해 제작된 고유한 문안, 페이지 레이아웃, 엠블럼, 그래픽은 A.C.E.에 속합니다. 서면 허가 없이 해당 고유 자료를 다른 제품을 위해 복제, 재게시, 스크래핑할 수 없습니다. 법이 허용하는 경우, A.C.E.는 청구를 포함하여 그 권리를 행사할 수 있습니다. 이 고지는 소송을 제기하는 것이 아니며, 손해배상액을 정하지 않고, 법원 판결을 보장하지 않습니다.",
           "Counter-Strike 2, Steam, 그리고 Dust II, Mirage, Inferno, Nuke, Ancient, Anubis, Train 등의 맵 이름은 Valve에 속합니다. A.C.E.는 이에 대한 권리를 주장하지 않습니다. 이 웹사이트를 여는 것은 법적 권리를 취소하지 않으며 계약을 체결하는 것도 아닙니다.",
         ],
       },
       contact: {
         title: "8. 문의",
         paragraphs: [
-          "support@ace-platform.gg — A.C.E. Competitions Ltd. — 사업자 등록번호 추후 공개 예정.",
+          "support@ace-platform.gg — A.C.E.",
         ],
       },
     },
@@ -88,7 +88,7 @@ export const legalDocs: TextBag["legalDocs"] = {
     },
     kicker: "ACE-LEGAL / 개인정보 처리방침",
     title: "개인정보 처리방침",
-    lede: "본 개인정보 처리방침은 사이트 이용 시 A.C.E. Competitions Ltd.가 어떤 개인정보를, 왜, 얼마 동안 저장하는지 설명합니다. 번역본과 영어 원문이 다를 경우 영어 원문이 우선합니다.",
+    lede: "본 개인정보 처리방침은 사이트 이용 시 A.C.E.가 어떤 개인정보를, 왜, 얼마 동안 저장하는지 설명합니다. 번역본과 영어 원문이 다를 경우 영어 원문이 우선합니다.",
     strictNecessity: {
       title: "엄격한 필요성 원칙",
       intro:
@@ -149,7 +149,7 @@ export const legalDocs: TextBag["legalDocs"] = {
     },
     controller: {
       title: "개인정보 처리자",
-      body: "A.C.E. Competitions Ltd. 사업자 등록번호 추후 공개 예정. 문의: support@ace-platform.gg.",
+      body: "A.C.E. 문의: support@ace-platform.gg.",
     },
   },
   cookiePolicy: {

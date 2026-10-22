@@ -27,7 +27,7 @@ export const UI_RO: Ui = {
     "tagline": "Clasamente competitive Counter-Strike 2, construite în jurul jocului corect.",
     "follow": "Urmărește A.C.E.",
     "rights": "Toate drepturile rezervate.",
-    "legalLine": "© 2026 A.C.E. Competitions Ltd. Platformă independentă, neafiliată cu Valve. Counter-Strike și CS2 sunt mărci comerciale ale Valve Corporation."
+    "legalLine": "© 2026 A.C.E. Platformă independentă, neafiliată cu Valve. Counter-Strike și CS2 sunt mărci comerciale ale Valve Corporation."
   },
   "soon": {
     "label": "În curând"

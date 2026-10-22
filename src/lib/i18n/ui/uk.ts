@@ -27,7 +27,7 @@ export const UI_UK: Ui = {
     "tagline": "Змагальні рейтинги Counter-Strike 2, побудовані на чесній грі.",
     "follow": "Стежте за A.C.E.",
     "rights": "Усі права захищено.",
-    "legalLine": "© 2026 A.C.E. Competitions Ltd. Незалежна платформа, не пов’язана з Valve. Counter-Strike і CS2 — торговельні марки Valve Corporation."
+    "legalLine": "© 2026 A.C.E. Незалежна платформа, не пов’язана з Valve. Counter-Strike і CS2 — торговельні марки Valve Corporation."
   },
   "soon": {
     "label": "Незабаром"

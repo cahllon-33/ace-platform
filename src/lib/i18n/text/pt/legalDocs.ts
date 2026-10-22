@@ -5,7 +5,7 @@ export const legalDocs: TextBag["legalDocs"] = {
     "effective": "Data de entrada em vigor: {date}",
     "contact": "Contacto: support@ace-platform.gg",
     "definitionsTitle": "Definições",
-    "definitions": "Nestes Termos, «A.C.E.», «nós» significa A.C.E. Competitions Ltd. «Site» significa ace-platform.gg. «Conta» significa o perfil A.C.E. criado através do início de sessão Steam. «Plano» significa Free, Plus ou Premium. «Regulamento» significa o Regulamento Competitivo em /rules. «Admin» significa um membro da equipa que aplica o Regulamento num evento.",
+    "definitions": "Nestes Termos, «A.C.E.», «nós» significa A.C.E. «Site» significa ace-platform.gg. «Conta» significa o perfil A.C.E. criado através do início de sessão Steam. «Plano» significa Free, Plus ou Premium. «Regulamento» significa o Regulamento Competitivo em /rules. «Admin» significa um membro da equipa que aplica o Regulamento num evento.",
     "suspensionTitle": "Restrições e suspensão de conta",
     "suspension": "Podemos avisar, restringir, suspender ou encerrar uma Conta que viole estes Termos ou o Regulamento, por exemplo por batota, partilha de conta, evasão de banimento, assédio ou fraude. Um plano pago nunca protege uma Conta de uma restrição.",
     "disputesTitle": "Decisões sobre regras e recursos",
@@ -32,7 +32,7 @@ export const legalDocs: TextBag["legalDocs"] = {
       operator: {
         title: "1. Operador e independência",
         paragraphs: [
-          "O serviço é explorado pela A.C.E. Competitions Ltd. (o número de registo da empresa será publicado). Ao utilizar o site, aceita estes Termos, a Política de Privacidade, a Política de Cookies e o Regulamento de Competição.",
+          "O serviço é explorado pela A.C.E. Ao utilizar o site, aceita estes Termos, a Política de Privacidade, a Política de Cookies e o Regulamento de Competição.",
         ],
       },
       eligibility: {
@@ -68,14 +68,14 @@ export const legalDocs: TextBag["legalDocs"] = {
       copyright: {
         title: "7. Direitos de autor sobre o material original do site",
         paragraphs: [
-          "O texto original, o layout das páginas, os emblemas e os gráficos criados para este site pertencem à A.C.E. Competitions Ltd. Não pode copiar, republicar nem extrair automaticamente esse material original para outro produto sem autorização escrita. Quando a lei o permita, a A.C.E. pode fazer valer esse direito, incluindo através de uma ação judicial. Este aviso não instaura nenhum processo, não fixa indemnizações e não garante nenhum resultado em tribunal.",
+          "O texto original, o layout das páginas, os emblemas e os gráficos criados para este site pertencem à A.C.E. Não pode copiar, republicar nem extrair automaticamente esse material original para outro produto sem autorização escrita. Quando a lei o permita, a A.C.E. pode fazer valer esse direito, incluindo através de uma ação judicial. Este aviso não instaura nenhum processo, não fixa indemnizações e não garante nenhum resultado em tribunal.",
           "Counter-Strike 2, Steam e os nomes dos mapas Dust II, Mirage, Inferno, Nuke, Ancient, Anubis e Train pertencem à Valve. A A.C.E. não os reivindica. Abrir este site não anula nenhum direito legal e não constitui a assinatura de um contrato.",
         ],
       },
       contact: {
         title: "8. Contacto",
         paragraphs: [
-          "support@ace-platform.gg — A.C.E. Competitions Ltd. — O número de registo da empresa será publicado.",
+          "support@ace-platform.gg — A.C.E.",
         ],
       },
     },
@@ -88,7 +88,7 @@ export const legalDocs: TextBag["legalDocs"] = {
     },
     kicker: "ACE-LEGAL / POLÍTICA DE PRIVACIDADE",
     title: "Política de Privacidade",
-    lede: "Esta Política de Privacidade explica que dados pessoais a A.C.E. Competitions Ltd. guarda quando usas este site, porquê e durante quanto tempo. Se uma tradução divergir do texto em inglês, prevalece o texto em inglês.",
+    lede: "Esta Política de Privacidade explica que dados pessoais a A.C.E. guarda quando usas este site, porquê e durante quanto tempo. Se uma tradução divergir do texto em inglês, prevalece o texto em inglês.",
     strictNecessity: {
       title: "Filosofia de estrita necessidade",
       intro:
@@ -149,7 +149,7 @@ export const legalDocs: TextBag["legalDocs"] = {
     },
     controller: {
       title: "Responsável pelo tratamento",
-      body: "A.C.E. Competitions Ltd. O número de registo da empresa será publicado. Contacto: support@ace-platform.gg.",
+      body: "A.C.E. Contacto: support@ace-platform.gg.",
     },
   },
   cookiePolicy: {

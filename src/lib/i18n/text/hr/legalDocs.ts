@@ -5,7 +5,7 @@ export const legalDocs: TextBag["legalDocs"] = {
     "effective": "Datum stupanja na snagu: {date}",
     "contact": "Kontakt: support@ace-platform.gg",
     "definitionsTitle": "Definicije",
-    "definitions": "U ovim Uvjetima „A.C.E.”, „mi” znači A.C.E. Competitions Ltd. „Stranica” znači ace-platform.gg. „Račun” znači A.C.E. profil stvoren prijavom putem Steama. „Plan” znači Free, Plus ili Premium. „Pravilnik” znači Natjecateljski pravilnik na /rules. „Admin” znači član osoblja koji primjenjuje Pravilnik na događaju.",
+    "definitions": "U ovim Uvjetima „A.C.E.”, „mi” znači A.C.E. „Stranica” znači ace-platform.gg. „Račun” znači A.C.E. profil stvoren prijavom putem Steama. „Plan” znači Free, Plus ili Premium. „Pravilnik” znači Natjecateljski pravilnik na /rules. „Admin” znači član osoblja koji primjenjuje Pravilnik na događaju.",
     "suspensionTitle": "Ograničenja i suspenzija računa",
     "suspension": "Možemo upozoriti, ograničiti, suspendirati ili zatvoriti Račun koji krši ove Uvjete ili Pravilnik, npr. zbog varanja, dijeljenja računa, izbjegavanja zabrane, uznemiravanja ili prijevare. Plaćeni plan nikad ne štiti Račun od ograničenja.",
     "disputesTitle": "Odluke o pravilima i žalbe",
@@ -30,7 +30,7 @@ export const legalDocs: TextBag["legalDocs"] = {
       "operator": {
         "title": "1. Operater i neovisnost",
         "paragraphs": [
-          "Uslugu vodi A.C.E. Competitions Ltd. (matični broj tvrtke bit će objavljen). Korištenjem stranice prihvaćaš ove Uvjete, Pravila privatnosti, Pravila o kolačićima i Natjecateljski pravilnik."
+          "Uslugu vodi A.C.E. Korištenjem stranice prihvaćaš ove Uvjete, Pravila privatnosti, Pravila o kolačićima i Natjecateljski pravilnik."
         ]
       },
       "eligibility": {
@@ -66,14 +66,14 @@ export const legalDocs: TextBag["legalDocs"] = {
       "copyright": {
         "title": "7. Autorsko pravo na izvorni materijal stranice",
         "paragraphs": [
-          "Izvorni tekst, raspored stranica, amblemi i grafika stvoreni za ovu stranicu pripadaju A.C.E. Competitions Ltd. Ne smiješ kopirati, ponovno objavljivati ni prikupljati taj izvorni materijal za drugi proizvod bez pisanog dopuštenja. Gdje zakon dopušta, A.C.E. može ostvarivati to pravo, uključujući tužbom. Ova obavijest ne pokreće postupak, ne određuje štetu i ne jamči sudski ishod.",
+          "Izvorni tekst, raspored stranica, amblemi i grafika stvoreni za ovu stranicu pripadaju A.C.E. Ne smiješ kopirati, ponovno objavljivati ni prikupljati taj izvorni materijal za drugi proizvod bez pisanog dopuštenja. Gdje zakon dopušta, A.C.E. može ostvarivati to pravo, uključujući tužbom. Ova obavijest ne pokreće postupak, ne određuje štetu i ne jamči sudski ishod.",
           "Counter-Strike 2, Steam i nazivi mapa Dust II, Mirage, Inferno, Nuke, Ancient, Anubis i Train pripadaju Valveu. A.C.E. ih ne prisvaja. Otvaranje ove stranice ne poništava zakonsko pravo i ne potpisuje ugovor."
         ]
       },
       "contact": {
         "title": "8. Kontakt",
         "paragraphs": [
-          "support@ace-platform.gg — A.C.E. Competitions Ltd. — Matični broj tvrtke bit će objavljen."
+          "support@ace-platform.gg — A.C.E."
         ]
       }
     }
@@ -85,7 +85,7 @@ export const legalDocs: TextBag["legalDocs"] = {
     },
     "kicker": "ACE-LEGAL / PRAVILA PRIVATNOSTI",
     "title": "Pravila privatnosti",
-    "lede": "Ova Pravila privatnosti objašnjavaju koje osobne podatke A.C.E. Competitions Ltd. čuva kad koristiš ovu stranicu, zašto i koliko dugo. Ako se prijevod razlikuje od engleskog teksta, vrijedi engleski tekst.",
+    "lede": "Ova Pravila privatnosti objašnjavaju koje osobne podatke A.C.E. čuva kad koristiš ovu stranicu, zašto i koliko dugo. Ako se prijevod razlikuje od engleskog teksta, vrijedi engleski tekst.",
     "strictNecessity": {
       "title": "Načelo stroge nužnosti",
       "intro": "Prikupljamo minimalne podatke računa potrebne za identifikaciju natjecateljskog igrača i zaustavljanje očite prijevare na vlastitoj usluzi. Ne prikupljamo nepotrebne zapise, ne izvlačimo privatne Steam inventare i ne prodajemo podatke o ponašanju trećih strana.",
@@ -139,7 +139,7 @@ export const legalDocs: TextBag["legalDocs"] = {
     },
     "controller": {
       "title": "Voditelj obrade",
-      "body": "A.C.E. Competitions Ltd. Matični broj tvrtke bit će objavljen. Kontakt: support@ace-platform.gg."
+      "body": "A.C.E. Kontakt: support@ace-platform.gg."
     }
   },
   "cookiePolicy": {

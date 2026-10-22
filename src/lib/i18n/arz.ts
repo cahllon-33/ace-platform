@@ -119,7 +119,7 @@ export const ARZ: MessageBag = {
  contactConsent: "أنا موافق بصراحة على قواعد تقليل تخزين البيانات حسب سياسة خصوصية A.C.E.",
  contactSend: "ابعت رسالة القياس الآمنة",
  contactCorporate:
- "A.C.E. Competitions Ltd. | بوابة الإيميل الآمنة: support@ace-platform.gg | رقم السجل الشركاتي: لسه معلّق",
+ "A.C.E. | بوابة الإيميل الآمنة: support@ace-platform.gg",
  contactModalTitle: "نموذج الاتصال عبر الإنترنت · قريبًا",
  contactModalBody:
  "لا تُسلَّم الرسائل من هذا النموذج بعد. يُفتح النموذج مع مكتب الدعم لدينا. لا تطلب A.C.E. أبدًا كلمة مرور Steam الخاصة بك.",
@@ -179,9 +179,9 @@ export const ARZ: MessageBag = {
  tourneyLoading: "بنحمّل شكل الشجرة…",
  platformNoticeTitle: "تنبيه المنصة",
  platformNoticeBody: "لوحات البطولة ولوحات الترتيب وبطاقات السكنات في الموقع ده أمثلة. مش حاجات Valve ومش جوايز مدفوعة. الموقع مش بيشغّل برنامج مكافحة غش. فتح الموقع مش بيلغي حق قانوني ومش بيوقّع عقد. A.C.E. مش بتجمع معرّف جهاز ومش بتمسح حساب عشان حد كلّم محامي أو محكمة.",
-  copyrightLine: "© 2026 A.C.E. Competitions Ltd. مش تابعة لـ Valve.",
+  copyrightLine: "© 2026 A.C.E. مش تابعة لـ Valve.",
   copyrightClaim:
-    "النص والتصميم والشعارات والرسوم الأصلية في الموقع ملك A.C.E. Competitions Ltd. النسخ من غير إذن مكتوب ممنوع. A.C.E. تقدر تطالب بالحق ده. Counter-Strike 2 وأسماء الخرايط ملك Valve.",
+    "النص والتصميم والشعارات والرسوم الأصلية في الموقع ملك A.C.E. النسخ من غير إذن مكتوب ممنوع. A.C.E. تقدر تطالب بالحق ده. Counter-Strike 2 وأسماء الخرايط ملك Valve.",
  shieldServerValue: "قريبًا",
  tvGames: "تلفزيون الماتشات",
  pathsKicker: "خمس مسارات في الموقع",

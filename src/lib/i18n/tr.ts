@@ -120,7 +120,7 @@ export const TR: MessageBag = {
  "A.C.E. Gizlilik Politikasındaki veri minimizasyonu saklama parametrelerini açıkça kabul ediyorum.",
  contactSend: "GÜVENLİ TELEMETRİ İLETİSİ GÖNDER",
  contactCorporate:
- "A.C.E. Competitions Ltd. | Güvenli e-posta geçidi: support@ace-platform.gg | Kurumsal sicil kimliği: beklemede",
+ "A.C.E. | Güvenli e-posta geçidi: support@ace-platform.gg",
  contactModalTitle: "Çevrimiçi iletişim formu · yakında",
  contactModalBody:
  "Bu formdaki mesajlar henüz iletilmiyor. Form, destek ekibimizle birlikte açılacak. A.C.E. asla Steam şifreni istemez.",
@@ -182,9 +182,9 @@ export const TR: MessageBag = {
  tourneyLoading: "Eşleşme ağacı yükleniyor…",
  platformNoticeTitle: "PLATFORM BİLDİRİMİ",
  platformNoticeBody: "Bu sitedeki turnuva ağaçları, sıralamalar ve skin kartları örnektir. Valve eşyası değildir ve ödenmiş ödül değildir. Bu site bir hile önleme programı çalıştırmaz. Siteyi açmak bir yasal hakkı iptal etmez ve sözleşme imzalamaz. A.C.E. bir donanım kimliği toplamaz ve birisi avukat ya da mahkemeyle iletişime geçti diye hesabı silmez.",
-  copyrightLine: "© 2026 A.C.E. Competitions Ltd. Valve ile bağlantılı değildir.",
+  copyrightLine: "© 2026 A.C.E. Valve ile bağlantılı değildir.",
   copyrightClaim:
-    "Bu sitedeki özgün metin, düzen, amblemler ve grafikler A.C.E. Competitions Ltd. şirketine aittir. Yazılı izin olmadan kopyalamak yasaktır. A.C.E. bu hakkı ileri sürebilir. Counter-Strike 2 ve harita adları Valve'a aittir.",
+    "Bu sitedeki özgün metin, düzen, amblemler ve grafikler A.C.E. şirketine aittir. Yazılı izin olmadan kopyalamak yasaktır. A.C.E. bu hakkı ileri sürebilir. Counter-Strike 2 ve harita adları Valve'a aittir.",
  shieldServerValue: "Yakında",
  tvGames: "Maç televizyonu",
  pathsKicker: "BU SİTEDEKİ BEŞ YOL",

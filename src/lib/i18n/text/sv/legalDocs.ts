@@ -5,7 +5,7 @@ export const legalDocs: TextBag["legalDocs"] = {
     "effective": "Gäller från: {date}",
     "contact": "Kontakt: support@ace-platform.gg",
     "definitionsTitle": "Definitioner",
-    "definitions": "I dessa Villkor avser ”A.C.E.” och ”vi” A.C.E. Competitions Ltd. ”Webbplatsen” avser ace-platform.gg. ”Konto” avser A.C.E.-profilen som skapas via Steam-inloggning. ”Plan” avser Free, Plus eller Premium. ”Regelboken” avser tävlingsreglerna på /rules. ”Admin” avser en personal som tillämpar Regelboken vid ett evenemang.",
+    "definitions": "I dessa Villkor avser ”A.C.E.” och ”vi” A.C.E. ”Webbplatsen” avser ace-platform.gg. ”Konto” avser A.C.E.-profilen som skapas via Steam-inloggning. ”Plan” avser Free, Plus eller Premium. ”Regelboken” avser tävlingsreglerna på /rules. ”Admin” avser en personal som tillämpar Regelboken vid ett evenemang.",
     "suspensionTitle": "Kontobegränsningar och avstängning",
     "suspension": "Vi kan varna, begränsa, stänga av eller avsluta ett Konto som bryter mot dessa Villkor eller Regelboken, till exempel för fusk, kontodelning, kringgående av avstängning, trakasserier eller bedrägeri. En betald plan skyddar aldrig ett Konto från en begränsning.",
     "disputesTitle": "Regelbeslut och överklaganden",
@@ -30,7 +30,7 @@ export const legalDocs: TextBag["legalDocs"] = {
       "operator": {
         "title": "1. Operatör och oberoende",
         "paragraphs": [
-          "Tjänsten drivs av A.C.E. Competitions Ltd. (organisationsnummer publiceras senare). Genom att använda webbplatsen godkänner du dessa villkor, integritetspolicyn, cookiepolicyn och tävlingsregelboken."
+          "Tjänsten drivs av A.C.E. Genom att använda webbplatsen godkänner du dessa villkor, integritetspolicyn, cookiepolicyn och tävlingsregelboken."
         ]
       },
       "eligibility": {
@@ -66,14 +66,14 @@ export const legalDocs: TextBag["legalDocs"] = {
       "copyright": {
         "title": "7. Upphovsrätt till webbplatsens originalmaterial",
         "paragraphs": [
-          "Originaltext, sidlayout, emblem och grafik som skapats för den här webbplatsen tillhör A.C.E. Competitions Ltd. Du får inte kopiera, återpublicera eller skrapa detta originalmaterial för en annan produkt utan skriftligt tillstånd. Där lagen tillåter kan A.C.E. hävda den rätten, även genom ett anspråk. Detta meddelande inleder inget mål, fastställer inget skadestånd och garanterar inget domstolsutfall.",
+          "Originaltext, sidlayout, emblem och grafik som skapats för den här webbplatsen tillhör A.C.E. Du får inte kopiera, återpublicera eller skrapa detta originalmaterial för en annan produkt utan skriftligt tillstånd. Där lagen tillåter kan A.C.E. hävda den rätten, även genom ett anspråk. Detta meddelande inleder inget mål, fastställer inget skadestånd och garanterar inget domstolsutfall.",
           "Counter-Strike 2, Steam och kartnamnen Dust II, Mirage, Inferno, Nuke, Ancient, Anubis och Train tillhör Valve. A.C.E. gör inga anspråk på dem. Att öppna den här webbplatsen upphäver ingen laglig rättighet och ingår inget avtal."
         ]
       },
       "contact": {
         "title": "8. Kontakt",
         "paragraphs": [
-          "support@ace-platform.gg — A.C.E. Competitions Ltd. — organisationsnummer publiceras senare."
+          "support@ace-platform.gg — A.C.E."
         ]
       }
     }
@@ -85,7 +85,7 @@ export const legalDocs: TextBag["legalDocs"] = {
     },
     "kicker": "ACE-LEGAL / INTEGRITETSPOLICY",
     "title": "Integritetspolicy",
-    "lede": "Denna integritetspolicy förklarar vilka personuppgifter A.C.E. Competitions Ltd. sparar när du använder webbplatsen, varför och hur länge. Om en översättning skiljer sig från den engelska texten gäller den engelska texten.",
+    "lede": "Denna integritetspolicy förklarar vilka personuppgifter A.C.E. sparar när du använder webbplatsen, varför och hur länge. Om en översättning skiljer sig från den engelska texten gäller den engelska texten.",
     "strictNecessity": {
       "title": "Principen om strikt nödvändighet",
       "intro": "Vi samlar in den minsta mängd kontodata som krävs för att identifiera en tävlingsspelare och stoppa uppenbart bedrägeri i vår egen tjänst. Vi samlar inte in onödiga loggar, skrapar inte privata Steam-inventarier och säljer inte tredje parts beteendedata.",
@@ -139,7 +139,7 @@ export const legalDocs: TextBag["legalDocs"] = {
     },
     "controller": {
       "title": "Personuppgiftsansvarig",
-      "body": "A.C.E. Competitions Ltd. Organisationsnummer publiceras senare. Kontakt: support@ace-platform.gg."
+      "body": "A.C.E. Kontakt: support@ace-platform.gg."
     }
   },
   "cookiePolicy": {

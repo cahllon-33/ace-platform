@@ -27,7 +27,7 @@ export const UI_HE: Ui = {
     "tagline": "סולמות תחרותיים ל-Counter-Strike 2, שנבנו סביב משחק הוגן.",
     "follow": "עקבו אחרי A.C.E.",
     "rights": "כל הזכויות שמורות.",
-    "legalLine": "© 2026 A.C.E. Competitions Ltd. פלטפורמה עצמאית שאינה קשורה ל-Valve. ‏Counter-Strike ו-CS2 הם סימנים מסחריים של Valve Corporation."
+    "legalLine": "© 2026 A.C.E. פלטפורמה עצמאית שאינה קשורה ל-Valve. ‏Counter-Strike ו-CS2 הם סימנים מסחריים של Valve Corporation."
   },
   "soon": {
     "label": "בקרוב"

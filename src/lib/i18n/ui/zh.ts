@@ -27,7 +27,7 @@ export const UI_ZH: Ui = {
     "tagline": "以公平竞技为核心的 Counter-Strike 2 竞技天梯。",
     "follow": "关注 A.C.E.",
     "rights": "保留所有权利。",
-    "legalLine": "© 2026 A.C.E. Competitions Ltd. 独立平台，与 Valve 无关联。Counter-Strike 和 CS2 是 Valve Corporation 的商标。"
+    "legalLine": "© 2026 A.C.E. 独立平台，与 Valve 无关联。Counter-Strike 和 CS2 是 Valve Corporation 的商标。"
   },
   "soon": {
     "label": "即将推出"

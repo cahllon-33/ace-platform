@@ -5,7 +5,7 @@ export const legalDocs: TextBag["legalDocs"] = {
     "effective": "Data intrării în vigoare: {date}",
     "contact": "Contact: support@ace-platform.gg",
     "definitionsTitle": "Definiții",
-    "definitions": "În acești Termeni, „A.C.E.”, „noi” înseamnă A.C.E. Competitions Ltd. „Site” înseamnă ace-platform.gg. „Cont” înseamnă profilul A.C.E. creat prin autentificarea Steam. „Plan” înseamnă Free, Plus sau Premium. „Regulament” înseamnă Regulamentul competițional de la /rules. „Admin” înseamnă un membru al echipei care aplică Regulamentul la un eveniment.",
+    "definitions": "În acești Termeni, „A.C.E.”, „noi” înseamnă A.C.E. „Site” înseamnă ace-platform.gg. „Cont” înseamnă profilul A.C.E. creat prin autentificarea Steam. „Plan” înseamnă Free, Plus sau Premium. „Regulament” înseamnă Regulamentul competițional de la /rules. „Admin” înseamnă un membru al echipei care aplică Regulamentul la un eveniment.",
     "suspensionTitle": "Restricții și suspendarea contului",
     "suspension": "Putem avertiza, restricționa, suspenda sau închide un Cont care încalcă acești Termeni sau Regulamentul, de exemplu pentru trișat, partajarea contului, eludarea unei interdicții, hărțuire sau fraudă. Un plan plătit nu protejează niciodată un Cont de o restricție.",
     "disputesTitle": "Decizii privind regulile și contestații",
@@ -30,7 +30,7 @@ export const legalDocs: TextBag["legalDocs"] = {
       "operator": {
         "title": "1. Operator și independență",
         "paragraphs": [
-          "Serviciul este operat de A.C.E. Competitions Ltd. (numărul companiei va fi publicat). Folosind site-ul, accepți acești Termeni, Politica de confidențialitate, Politica de cookie-uri și Regulamentul competitiv."
+          "Serviciul este operat de A.C.E. Folosind site-ul, accepți acești Termeni, Politica de confidențialitate, Politica de cookie-uri și Regulamentul competitiv."
         ]
       },
       "eligibility": {
@@ -66,14 +66,14 @@ export const legalDocs: TextBag["legalDocs"] = {
       "copyright": {
         "title": "7. Drepturi de autor asupra materialului original al site-ului",
         "paragraphs": [
-          "Textul original, aspectul paginilor, emblemele și grafica create pentru acest site aparțin A.C.E. Competitions Ltd. Nu copia, republica sau extrage acel material original pentru alt produs fără permisiune scrisă. Unde legea permite, A.C.E. poate aplica acest drept, inclusiv prin proces. Această notificare nu inițiază proceduri, nu stabilește daune și nu garantează un rezultat în instanță.",
+          "Textul original, aspectul paginilor, emblemele și grafica create pentru acest site aparțin A.C.E. Nu copia, republica sau extrage acel material original pentru alt produs fără permisiune scrisă. Unde legea permite, A.C.E. poate aplica acest drept, inclusiv prin proces. Această notificare nu inițiază proceduri, nu stabilește daune și nu garantează un rezultat în instanță.",
           "Counter-Strike 2, Steam și numele hărților Dust II, Mirage, Inferno, Nuke, Ancient, Anubis și Train aparțin Valve. A.C.E. nu le revendică. Deschiderea acestei pagini nu anulează un drept legal și nu semnează un contract."
         ]
       },
       "contact": {
         "title": "8. Contact",
         "paragraphs": [
-          "support@ace-platform.gg — A.C.E. Competitions Ltd. — Numărul companiei va fi publicat."
+          "support@ace-platform.gg — A.C.E."
         ]
       }
     }
@@ -85,7 +85,7 @@ export const legalDocs: TextBag["legalDocs"] = {
     },
     "kicker": "ACE-LEGAL / POLITICA DE CONFIDENȚIALITATE",
     "title": "Politica de confidențialitate",
-    "lede": "Această Politică de confidențialitate explică ce date personale păstrează A.C.E. Competitions Ltd. când folosești acest site, de ce și cât timp. Dacă o traducere diferă de textul în engleză, se aplică textul în engleză.",
+    "lede": "Această Politică de confidențialitate explică ce date personale păstrează A.C.E. când folosești acest site, de ce și cât timp. Dacă o traducere diferă de textul în engleză, se aplică textul în engleză.",
     "strictNecessity": {
       "title": "Principiul strictei necesități",
       "intro": "Colectăm datele minime de cont necesare pentru a identifica un jucător competitiv și a opri fraudele evidente pe serviciul nostru. Nu colectăm jurnale inutile, nu extragem inventare Steam private și nu vindem date comportamentale terților.",
@@ -139,7 +139,7 @@ export const legalDocs: TextBag["legalDocs"] = {
     },
     "controller": {
       "title": "Operator de date",
-      "body": "A.C.E. Competitions Ltd. Numărul companiei va fi publicat. Contact: support@ace-platform.gg."
+      "body": "A.C.E. Contact: support@ace-platform.gg."
     }
   },
   "cookiePolicy": {

@@ -27,7 +27,7 @@ export const UI_KO: Ui = {
     "tagline": "공정한 플레이를 중심으로 만든 Counter-Strike 2 경쟁 래더.",
     "follow": "A.C.E. 팔로우",
     "rights": "모든 권리 보유.",
-    "legalLine": "© 2026 A.C.E. Competitions Ltd. Valve와 제휴하지 않은 독립 플랫폼입니다. Counter-Strike 및 CS2는 Valve Corporation의 상표입니다."
+    "legalLine": "© 2026 A.C.E. Valve와 제휴하지 않은 독립 플랫폼입니다. Counter-Strike 및 CS2는 Valve Corporation의 상표입니다."
   },
   "soon": {
     "label": "출시 예정"

@@ -27,7 +27,7 @@ export const UI_HU: Ui = {
     "tagline": "Versenyszerű Counter-Strike 2 ranglisták, a fair play köré építve.",
     "follow": "Kövesd az A.C.E.-t",
     "rights": "Minden jog fenntartva.",
-    "legalLine": "© 2026 A.C.E. Competitions Ltd. Független platform, nem áll kapcsolatban a Valve-val. A Counter-Strike és a CS2 a Valve Corporation védjegye."
+    "legalLine": "© 2026 A.C.E. Független platform, nem áll kapcsolatban a Valve-val. A Counter-Strike és a CS2 a Valve Corporation védjegye."
   },
   "soon": {
     "label": "Hamarosan"

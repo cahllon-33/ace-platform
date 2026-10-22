@@ -119,7 +119,7 @@ export const AR: MessageBag = {
  contactConsent: "أوافق صراحةً على معايير تخزين تقليل البيانات وفق سياسة خصوصية A.C.E.",
  contactSend: "إرسال رسالة القياس الآمنة",
  contactCorporate:
- "A.C.E. Competitions Ltd. | بوابة البريد الآمنة: support@ace-platform.gg | معرّف السجل المؤسسي: قيد الانتظار",
+ "A.C.E. | بوابة البريد الآمنة: support@ace-platform.gg",
  contactModalTitle: "نموذج الاتصال عبر الإنترنت · قريبًا",
  contactModalBody:
  "لا تُسلَّم الرسائل من هذا النموذج بعد. يُفتح النموذج مع مكتب الدعم لدينا. لا تطلب A.C.E. أبدًا كلمة مرور Steam الخاصة بك.",
@@ -179,9 +179,9 @@ export const AR: MessageBag = {
  tourneyLoading: "جارٍ تحميل مخطط الشجرة…",
  platformNoticeTitle: "إشعار المنصة",
  platformNoticeBody: "لوحات البطولة ولوحات المتصدرين وبطاقات السكنات في هذا الموقع أمثلة. ليست أغراض Valve وليست جوائز مدفوعة. هذا الموقع لا يشغّل برنامج مكافحة غش. فتح الموقع لا يلغي حقاً قانونياً ولا يوقّع عقداً. A.C.E. لا تجمع معرّف عتاد ولا تحذف حساباً لأن شخصاً تواصل مع محامٍ أو محكمة.",
-  copyrightLine: "© 2026 A.C.E. Competitions Ltd. غير تابعة لـ Valve.",
+  copyrightLine: "© 2026 A.C.E. غير تابعة لـ Valve.",
   copyrightClaim:
-    "النص والتصميم والشعارات والرسوم الأصلية في هذا الموقع مملوكة لـ A.C.E. Competitions Ltd. النسخ بدون إذن مكتوب غير مسموح. يجوز لـ A.C.E. إنفاذ هذا الحق. Counter-Strike 2 وأسماء الخرائط مملوكة لـ Valve.",
+    "النص والتصميم والشعارات والرسوم الأصلية في هذا الموقع مملوكة لـ A.C.E. النسخ بدون إذن مكتوب غير مسموح. يجوز لـ A.C.E. إنفاذ هذا الحق. Counter-Strike 2 وأسماء الخرائط مملوكة لـ Valve.",
  shieldServerValue: "قريبًا",
  tvGames: "تلفزيون المباريات",
  pathsKicker: "خمسة مسارات في هذا الموقع",

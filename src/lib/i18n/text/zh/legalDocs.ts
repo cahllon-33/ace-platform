@@ -5,7 +5,7 @@ export const legalDocs: TextBag["legalDocs"] = {
     "effective": "生效日期：{date}",
     "contact": "联系方式：support@ace-platform.gg",
     "definitionsTitle": "定义",
-    "definitions": "在本条款中，“A.C.E.”和“我们”指 A.C.E. Competitions Ltd.。“本网站”指 ace-platform.gg。“账号”指通过 Steam 登录创建的 A.C.E. 资料。“方案”指 Free、Plus 或 Premium。“规则手册”指 /rules 上的竞技规则手册。“管理员”指在赛事中执行规则手册的工作人员。",
+    "definitions": "在本条款中，“A.C.E.”和“我们”指 A.C.E.。“本网站”指 ace-platform.gg。“账号”指通过 Steam 登录创建的 A.C.E. 资料。“方案”指 Free、Plus 或 Premium。“规则手册”指 /rules 上的竞技规则手册。“管理员”指在赛事中执行规则手册的工作人员。",
     "suspensionTitle": "账号限制与停用",
     "suspension": "对于违反本条款或规则手册的账号，例如作弊、共享账号、规避封禁、骚扰或欺诈，我们可以警告、限制、停用或关闭。付费方案绝不能使账号免受限制。",
     "disputesTitle": "规则裁决与申诉",
@@ -30,7 +30,7 @@ export const legalDocs: TextBag["legalDocs"] = {
       "operator": {
         "title": "1. 运营方与独立性",
         "paragraphs": [
-          "本服务由 A.C.E. Competitions Ltd.(公司注册号待公布)运营。使用本网站即表示你接受本条款、隐私政策、Cookie 政策和竞技规则手册。"
+          "本服务由 A.C.E.运营。使用本网站即表示你接受本条款、隐私政策、Cookie 政策和竞技规则手册。"
         ]
       },
       "eligibility": {
@@ -66,14 +66,14 @@ export const legalDocs: TextBag["legalDocs"] = {
       "copyright": {
         "title": "7. 网站原创内容的版权",
         "paragraphs": [
-          "为本网站创作的原创文字、页面布局、徽章和图形归 A.C.E. Competitions Ltd. 所有。未经书面许可,不得为其他产品复制、转载或抓取这些原创内容。在法律允许的情况下,A.C.E. 可以主张该权利,包括提出索赔。本声明不构成起诉,不设定赔偿金额,也不保证任何法院判决结果。",
+          "为本网站创作的原创文字、页面布局、徽章和图形归 A.C.E. 所有。未经书面许可,不得为其他产品复制、转载或抓取这些原创内容。在法律允许的情况下,A.C.E. 可以主张该权利,包括提出索赔。本声明不构成起诉,不设定赔偿金额,也不保证任何法院判决结果。",
           "Counter-Strike 2、Steam 以及地图名称 Dust II、Mirage、Inferno、Nuke、Ancient、Anubis 和 Train 归 Valve 所有。A.C.E. 不主张对其拥有权利。打开本网站不会取消任何法定权利,也不会订立合同。"
         ]
       },
       "contact": {
         "title": "8. 联系方式",
         "paragraphs": [
-          "support@ace-platform.gg — A.C.E. Competitions Ltd. — 公司注册号待公布。"
+          "support@ace-platform.gg — A.C.E."
         ]
       }
     }
@@ -85,7 +85,7 @@ export const legalDocs: TextBag["legalDocs"] = {
     },
     "kicker": "ACE-LEGAL / 隐私政策",
     "title": "隐私政策",
-    "lede": "本隐私政策说明你使用本网站时 A.C.E. Competitions Ltd. 存储哪些个人数据、原因以及保存多久。若译文与英文文本不一致，以英文文本为准。",
+    "lede": "本隐私政策说明你使用本网站时 A.C.E. 存储哪些个人数据、原因以及保存多久。若译文与英文文本不一致，以英文文本为准。",
     "strictNecessity": {
       "title": "严格必要原则",
       "intro": "我们只收集识别竞技玩家和阻止针对本服务的明显欺诈所需的最少账户数据。我们不收集不必要的日志,不抓取私密的 Steam 库存,也不出售第三方行为数据。",
@@ -139,7 +139,7 @@ export const legalDocs: TextBag["legalDocs"] = {
     },
     "controller": {
       "title": "数据控制者",
-      "body": "A.C.E. Competitions Ltd. 公司注册号待公布。联系方式:support@ace-platform.gg。"
+      "body": "A.C.E. 联系方式:support@ace-platform.gg。"
     }
   },
   "cookiePolicy": {

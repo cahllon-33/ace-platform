@@ -3,7 +3,7 @@
     "effective": "Effective date: {date}",
     "contact": "Contact: support@ace-platform.gg",
     "definitionsTitle": "Definitions",
-    "definitions": "In these Terms, \"A.C.E.\", \"we\" and \"us\" mean A.C.E. Competitions Ltd. \"Site\" means ace-platform.gg. \"Account\" means the A.C.E. profile created through Steam sign-in. \"Plan\" means Free, Plus or Premium. \"Rulebook\" means the Competitive Rulebook at /rules. \"Admin\" means a staff member who applies the Rulebook to an event.",
+    "definitions": "In these Terms, \"A.C.E.\", \"we\" and \"us\" mean the A.C.E operator. \"Site\" means ace-platform.gg. \"Account\" means the A.C.E. profile created through Steam sign-in. \"Plan\" means Free, Plus or Premium. \"Rulebook\" means the Competitive Rulebook at /rules. \"Admin\" means a staff member who applies the Rulebook to an event.",
     "suspensionTitle": "Account restrictions and suspension",
     "suspension": "We may warn, restrict, suspend or close an Account that breaks these Terms or the Rulebook, for example for cheating, account sharing, ban evasion, harassment or fraud. A paid Plan never protects an Account from a restriction.",
     "disputesTitle": "Rule decisions and appeals",
@@ -30,7 +30,7 @@
       operator: {
         title: "1. Operator and independence",
         paragraphs: [
-          "The service is operated by A.C.E. Competitions Ltd. (company registration number to be published). Using the site means you accept these Terms, the Privacy Policy, the Cookie Policy, and the Competitive Rulebook.",
+          "The service is run by the A.C.E operator.. Using the site means you accept these Terms, the Privacy Policy, the Cookie Policy, and the Competitive Rulebook.",
         ],
       },
       eligibility: {
@@ -66,14 +66,14 @@
       copyright: {
         title: "7. Copyright in original site material",
         paragraphs: [
-          "Original text, page layout, emblems, and graphics created for this website belong to A.C.E. Competitions Ltd. You may not copy, republish, or scrape that original material for another product without written permission. Where the law allows, A.C.E. may enforce that right, including by a claim. This notice does not file a case, does not set damages, and does not guarantee a court result.",
+          "Original text, page layout, emblems, and graphics created for this website belong to A.C.E. You may not copy, republish, or scrape that original material for another product without written permission. Where the law allows, A.C.E. may enforce that right, including by a claim. This notice does not file a case, does not set damages, and does not guarantee a court result.",
           "Counter-Strike 2, Steam, and the map names Dust II, Mirage, Inferno, Nuke, Ancient, Anubis, and Train belong to Valve. A.C.E. does not claim them. Opening this website does not cancel a legal right and does not sign a contract.",
         ],
       },
       contact: {
         title: "8. Contact",
         paragraphs: [
-          "support@ace-platform.gg — A.C.E. Competitions Ltd. — Company registration number to be published.",
+          "support@ace-platform.gg — A.C.E.",
         ],
       },
     },
@@ -86,7 +86,7 @@
     },
     kicker: "ACE-LEGAL / PRIVACY POLICY",
     title: "Privacy Policy",
-    lede: "This Privacy Policy explains what personal data A.C.E. Competitions Ltd. stores when you use this website, why, and for how long. If a translation differs from the English text, the English text applies.",
+    lede: "This Privacy Policy explains what personal data A.C.E. stores when you use this website, why, and for how long. If a translation differs from the English text, the English text applies.",
     strictNecessity: {
       title: "Strict Necessity philosophy",
       intro:
@@ -147,7 +147,7 @@
     },
     controller: {
       title: "Controller",
-      body: "A.C.E. Competitions Ltd. Company registration number to be published. Contact: support@ace-platform.gg.",
+      body: "A.C.E. Contact: support@ace-platform.gg.",
     },
   },
   cookiePolicy: {

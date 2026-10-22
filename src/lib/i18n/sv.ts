@@ -120,7 +120,7 @@ export const SV: MessageBag = {
  "Jag samtycker uttryckligen till parametrarna för dataminimering i A.C.E:s integritetspolicy.",
  contactSend: "SKICKA SÄKERT TELEMETRIMEDDELANDE",
  contactCorporate:
- "A.C.E. Competitions Ltd. | Säker e-postgateway: support@ace-platform.gg | Företagsregister-ID: väntar",
+ "A.C.E. | Säker e-postgateway: support@ace-platform.gg",
  contactModalTitle: "Kontaktformulär online · snart",
  contactModalBody:
  "Meddelanden från det här formuläret levereras inte ännu. Formuläret öppnar tillsammans med vår support. A.C.E. ber aldrig om ditt Steam-lösenord.",
@@ -182,9 +182,9 @@ export const SV: MessageBag = {
  tourneyLoading: "Laddar slutspelsträd…",
  platformNoticeTitle: "PLATTFORMENS MEDDELANDE",
  platformNoticeBody: "Turneringsträd, topplistor och skinnkort på den här webbplatsen är exempel. De är inte Valve-föremål och inte betalda priser. Webbplatsen kör inget anti-fuskprogram. Att öppna webbplatsen upphäver ingen juridisk rättighet och skriver inte under ett avtal. A.C.E. samlar inte in en hårdvaruidentifierare och raderar inte ett konto för att någon kontaktar en jurist eller en domstol.",
-  copyrightLine: "© 2026 A.C.E. Competitions Ltd. Inte ansluten till Valve.",
+  copyrightLine: "© 2026 A.C.E. Inte ansluten till Valve.",
   copyrightClaim:
-    "Originaltext, layout, emblem och grafik på den här webbplatsen tillhör A.C.E. Competitions Ltd. Kopiering utan skriftligt tillstånd är inte tillåten. A.C.E. kan hävda den rätten. Counter-Strike 2 och kartnamnen tillhör Valve.",
+    "Originaltext, layout, emblem och grafik på den här webbplatsen tillhör A.C.E. Kopiering utan skriftligt tillstånd är inte tillåten. A.C.E. kan hävda den rätten. Counter-Strike 2 och kartnamnen tillhör Valve.",
  shieldServerValue: "Snart",
  tvGames: "Matchtelevision",
  pathsKicker: "FEM VÄGAR PÅ DEN HÄR WEBBPLATSEN",

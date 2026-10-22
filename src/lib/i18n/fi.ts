@@ -58,7 +58,7 @@ export const FI: MessageBag = {
  brand: "Brändi",
  explore: "Selaa",
  networks: "Verkostot",
- copyright: "© 2026 A.C.E. Competitions Ltd. Ei sidoksissa Valveen.",
+ copyright: "© 2026 A.C.E. Ei sidoksissa Valveen.",
  skipToContent: "Siirry sisältöön",
  openMenu: "Avaa valikko",
  closeMenu: "Sulje valikko",
@@ -122,7 +122,7 @@ export const FI: MessageBag = {
   "Annan nimenomaisen suostumukseni tietojen minimoinnin tallennusparametreihin A.C.E.:n tietosuojakäytännön nojalla.",
  contactSend: "LÄHETÄ SUOJATTU TELEMETRIAVIESTI",
  contactCorporate:
-  "A.C.E. Competitions Ltd. | Suojattu sähköpostiyhdyskäytävä: support@ace-platform.gg | Yritysrekisterin tunnus: vireillä",
+  "A.C.E. | Suojattu sähköpostiyhdyskäytävä: support@ace-platform.gg",
  contactModalTitle: "Verkkoyhteydenottolomake · tulossa pian",
  contactModalBody:
   "Tämän lomakkeen viestejä ei vielä välitetä. Lomake avautuu yhdessä tukipalvelumme kanssa. A.C.E. ei koskaan pyydä Steam-salasanaasi.",
@@ -185,9 +185,9 @@ export const FI: MessageBag = {
  platformNoticeTitle: "ALUSTAN ILMOITUS",
  platformNoticeBody:
   "Tämän sivuston turnaustaulut, sijoitustaulut ja skinkortit ovat esimerkkejä. Ne eivät ole Valve-esineitä eivätkä maksettuja palkintoja. Tämä sivusto ei aja huijauksenesto-ohjelmaa. Sivuston avaaminen ei kumoa laillista oikeutta eikä tee sopimusta. A.C.E. ei kerää laitteistotunnistetta eikä poista tiliä sen vuoksi, että joku ottaa yhteyttä asianajajaan tai tuomioistuimeen.",
- copyrightLine: "© 2026 A.C.E. Competitions Ltd. Ei sidoksissa Valveen.",
+ copyrightLine: "© 2026 A.C.E. Ei sidoksissa Valveen.",
  copyrightClaim:
-  "Tämän sivuston alkuperäinen teksti, asettelu, tunnukset ja grafiikka kuuluvat A.C.E. Competitions Ltd:lle. Niiden kopioiminen ilman kirjallista lupaa ei ole sallittua. A.C.E. voi valvoa tätä oikeutta. Counter-Strike 2 ja sen karttanimet kuuluvat Valvelle.",
+  "Tämän sivuston alkuperäinen teksti, asettelu, tunnukset ja grafiikka kuuluvat A.C.E:lle. Niiden kopioiminen ilman kirjallista lupaa ei ole sallittua. A.C.E. voi valvoa tätä oikeutta. Counter-Strike 2 ja sen karttanimet kuuluvat Valvelle.",
  shieldServerValue: "Tulossa pian",
  tvGames: "Pelitelevisio",
  pathsKicker: "VIISI POLKUA TÄLLÄ SIVUSTOLLA",

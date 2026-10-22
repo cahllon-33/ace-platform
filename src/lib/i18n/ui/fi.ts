@@ -27,7 +27,7 @@ export const UI_FI: Ui = {
     "tagline": "Kilpailulliset Counter-Strike 2 -tikapuut, rakennettu reilun pelin varaan.",
     "follow": "Seuraa A.C.E.:tä",
     "rights": "Kaikki oikeudet pidätetään.",
-    "legalLine": "© 2026 A.C.E. Competitions Ltd. Itsenäinen alusta, ei sidoksissa Valveen. Counter-Strike ja CS2 ovat Valve Corporationin tavaramerkkejä."
+    "legalLine": "© 2026 A.C.E. Itsenäinen alusta, ei sidoksissa Valveen. Counter-Strike ja CS2 ovat Valve Corporationin tavaramerkkejä."
   },
   "soon": {
     "label": "Tulossa pian"

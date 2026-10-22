@@ -5,7 +5,7 @@ export const legalDocs: TextBag["legalDocs"] = {
     "effective": "Voimassa alkaen: {date}",
     "contact": "Yhteystiedot: support@ace-platform.gg",
     "definitionsTitle": "Määritelmät",
-    "definitions": "Näissä Ehdoissa ”A.C.E.” ja ”me” tarkoittavat A.C.E. Competitions Ltd:tä. ”Sivusto” tarkoittaa ace-platform.gg:tä. ”Tili” tarkoittaa Steam-kirjautumisella luotua A.C.E.-profiilia. ”Tilaus” tarkoittaa Free-, Plus- tai Premium-tasoa. ”Sääntökirja” tarkoittaa kilpailusääntöjä osoitteessa /rules. ”Admin” tarkoittaa henkilökunnan jäsentä, joka soveltaa Sääntökirjaa tapahtumassa.",
+    "definitions": "Näissä Ehdoissa ”A.C.E.” ja ”me” tarkoittavat A.C.E:tä. ”Sivusto” tarkoittaa ace-platform.gg:tä. ”Tili” tarkoittaa Steam-kirjautumisella luotua A.C.E.-profiilia. ”Tilaus” tarkoittaa Free-, Plus- tai Premium-tasoa. ”Sääntökirja” tarkoittaa kilpailusääntöjä osoitteessa /rules. ”Admin” tarkoittaa henkilökunnan jäsentä, joka soveltaa Sääntökirjaa tapahtumassa.",
     "suspensionTitle": "Tilin rajoitukset ja jäädytys",
     "suspension": "Voimme varoittaa, rajoittaa, jäädyttää tai sulkea Tilin, joka rikkoo näitä Ehtoja tai Sääntökirjaa, esimerkiksi huijaamisen, tilin jakamisen, porttikiellon kiertämisen, häirinnän tai petoksen vuoksi. Maksullinen tilaus ei koskaan suojaa Tiliä rajoituksilta.",
     "disputesTitle": "Sääntöpäätökset ja valitukset",
@@ -30,7 +30,7 @@ export const legalDocs: TextBag["legalDocs"] = {
       "operator": {
         "title": "1. Ylläpitäjä ja riippumattomuus",
         "paragraphs": [
-          "Palvelua ylläpitää A.C.E. Competitions Ltd. (y-tunnus julkaistaan myöhemmin). Sivuston käyttäminen tarkoittaa, että hyväksyt nämä ehdot, tietosuojakäytännön, evästekäytännön ja kilpailusääntökirjan."
+          "Palvelua ylläpitää A.C.E. Sivuston käyttäminen tarkoittaa, että hyväksyt nämä ehdot, tietosuojakäytännön, evästekäytännön ja kilpailusääntökirjan."
         ]
       },
       "eligibility": {
@@ -66,14 +66,14 @@ export const legalDocs: TextBag["legalDocs"] = {
       "copyright": {
         "title": "7. Tekijänoikeus sivuston alkuperäiseen materiaaliin",
         "paragraphs": [
-          "Tälle sivustolle luotu alkuperäinen teksti, sivuasettelu, emblemit ja grafiikka kuuluvat A.C.E. Competitions Ltd:lle. Et saa kopioida, julkaista uudelleen tai kaapia tätä alkuperäistä materiaalia toiseen tuotteeseen ilman kirjallista lupaa. Lain salliessa A.C.E. voi panna tämän oikeuden täytäntöön, myös vaatimuksella. Tämä ilmoitus ei käynnistä oikeusjuttua, ei määrää vahingonkorvausta eikä takaa tuomioistuimen ratkaisua.",
+          "Tälle sivustolle luotu alkuperäinen teksti, sivuasettelu, emblemit ja grafiikka kuuluvat A.C.E:lle. Et saa kopioida, julkaista uudelleen tai kaapia tätä alkuperäistä materiaalia toiseen tuotteeseen ilman kirjallista lupaa. Lain salliessa A.C.E. voi panna tämän oikeuden täytäntöön, myös vaatimuksella. Tämä ilmoitus ei käynnistä oikeusjuttua, ei määrää vahingonkorvausta eikä takaa tuomioistuimen ratkaisua.",
           "Counter-Strike 2, Steam ja karttojen nimet Dust II, Mirage, Inferno, Nuke, Ancient, Anubis ja Train kuuluvat Valvelle. A.C.E. ei vaadi niitä itselleen. Tämän sivuston avaaminen ei kumoa laillista oikeutta eikä solmi sopimusta."
         ]
       },
       "contact": {
         "title": "8. Yhteystiedot",
         "paragraphs": [
-          "support@ace-platform.gg — A.C.E. Competitions Ltd. — Y-tunnus julkaistaan myöhemmin."
+          "support@ace-platform.gg — A.C.E."
         ]
       }
     }
@@ -85,7 +85,7 @@ export const legalDocs: TextBag["legalDocs"] = {
     },
     "kicker": "ACE-LEGAL / TIETOSUOJAKÄYTÄNTÖ",
     "title": "Tietosuojakäytäntö",
-    "lede": "Tämä tietosuojakäytäntö kertoo, mitä henkilötietoja A.C.E. Competitions Ltd. tallentaa, kun käytät tätä sivustoa, miksi ja kuinka kauan. Jos käännös eroaa englanninkielisestä tekstistä, englanninkielinen teksti on ratkaiseva.",
+    "lede": "Tämä tietosuojakäytäntö kertoo, mitä henkilötietoja A.C.E. tallentaa, kun käytät tätä sivustoa, miksi ja kuinka kauan. Jos käännös eroaa englanninkielisestä tekstistä, englanninkielinen teksti on ratkaiseva.",
     "strictNecessity": {
       "title": "Välttämättömyyden periaate",
       "intro": "Keräämme vähimmäismäärän tilitietoja, joita tarvitaan kilpapelaajan tunnistamiseen ja ilmeisten petosten estämiseen omassa palvelussamme. Emme kerää tarpeettomia lokeja, emme kaavi yksityisiä Steam-inventaarioita emmekä myy kolmansien osapuolten käyttäytymistietoja.",
@@ -139,7 +139,7 @@ export const legalDocs: TextBag["legalDocs"] = {
     },
     "controller": {
       "title": "Rekisterinpitäjä",
-      "body": "A.C.E. Competitions Ltd. Y-tunnus julkaistaan myöhemmin. Yhteys: support@ace-platform.gg."
+      "body": "A.C.E. Yhteys: support@ace-platform.gg."
     }
   },
   "cookiePolicy": {

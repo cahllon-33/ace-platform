@@ -27,7 +27,7 @@ export const UI_FR: Ui = {
     "tagline": "Des classements compétitifs Counter-Strike 2, construits autour du fair-play.",
     "follow": "Suivre A.C.E.",
     "rights": "Tous droits réservés.",
-    "legalLine": "© 2026 A.C.E. Competitions Ltd. Plateforme indépendante, non affiliée à Valve. Counter-Strike et CS2 sont des marques de Valve Corporation."
+    "legalLine": "© 2026 A.C.E. Plateforme indépendante, non affiliée à Valve. Counter-Strike et CS2 sont des marques de Valve Corporation."
   },
   "soon": {
     "label": "Bientôt"
