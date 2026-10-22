@@ -1,104 +1,37 @@
 "use client";
 
-import { FormEvent, useState } from "react";
-import { useI18n } from "@/components/locale-provider";
-import { ConnectedCount } from "@/components/connected-count";
 import { useText } from "@/components/text-provider";
+import { useUi } from "@/components/use-ui";
 import { PremiumShowcase } from "@/components/premium-showcase";
-import { PlannedButton } from "@/components/ui/button";
 import { interpolate } from "@/lib/interpolate";
 import { FloatingEmblem, PlayerAvatar } from "@/components/floating-emblem";
 import { RANK_TIERS, rankArtAsset, type RankArt } from "@/lib/ranks";
+import { mapLabel } from "@/lib/queue";
 
-export type ArenaCaptain = { avatarUrl: string | null; rating: number; level: number; art: RankArt };
+/** One real seat in a queue lobby (stored name, avatar, RP and rank art). R48: no sample rows remain. */
+export type ArenaPlayer = { userId: string; name: string; avatarUrl: string | null; rp: number; level: number; art: RankArt; captain: boolean; me: boolean; accepted?: boolean };
 
-const MAPS = ["DUST II", "Mirage", "Inferno", "Nuke", "Ancient", "Anubis", "Train"] as const;
-
-type RosterRow = {
-  callsign: string;
-  role: string;
-  /** Rank level 1-10 for the showcase emblem. */
-  level: number;
-  skin: number;
-  /** Showcase only: shows the Premium illustrated art, labelled "Premium sample". Not a subscriber. */
-  premiumSample?: boolean;
-  /** Real stored values for the signed-in captain only. */
-  live?: { avatarUrl: string | null; rating: number; art: RankArt };
-};
-
-const TEAM_A_REST: RosterRow[] = [
-  { callsign: "Zyro", role: "AWP", level: 6, skin: 1, premiumSample: true },
-  { callsign: "Kane", role: "Entry", level: 6, skin: 2 },
-  { callsign: "Frost", role: "Lurk", level: 5, skin: 3 },
-  { callsign: "Vex", role: "Support", level: 5, skin: 4 },
-];
-
-const TEAM_B: RosterRow[] = [
-  { callsign: "Razor", role: "IGL", level: 6, skin: 0 },
-  { callsign: "Ghost", role: "AWP", level: 6, skin: 1 },
-  { callsign: "Viper", role: "Entry", level: 5, skin: 2 },
-  { callsign: "Hawk", role: "Lurk", level: 5, skin: 3 },
-  { callsign: "Sable", role: "Support", level: 4, skin: 4, premiumSample: true },
-];
-
-const SAMPLE_CHAT_HANDLES = ["Zyro", "Kane", "Vex"] as const;
-
-function findMap(lockedMap?: string) {
-  if (!lockedMap) return undefined;
-  return MAPS.find((name) => name.toLowerCase() === lockedMap.toLowerCase());
-}
-
-function LightningMark() {
-  return (
-    <svg className="ace-play-bolt" viewBox="0 0 24 24" aria-hidden="true">
-      <path d="M13 2 4 14h7l-1 8 10-14h-7l0-6z" />
-    </svg>
-  );
-}
-
-function RosterCard({
-  row,
-  captain,
-}: {
-  row: RosterRow;
-  captain?: boolean;
-}) {
+function RosterCard({ row }: { row: ArenaPlayer }) {
   const text = useText();
-  const copy = text.play.arena;
-  const room = text.play.room;
+  const ui = useUi();
   const tier = RANK_TIERS[Math.min(10, Math.max(1, row.level)) - 1];
-  // Signed-in captain: the server gate result (effectiveRankArt). Sample rows: only flagged showcase samples.
-  const art: RankArt = row.live ? row.live.art : row.premiumSample ? "premium" : "standard";
-  const premium = art === "premium";
+  const premium = row.art === "premium";
   return (
-    <li className={`ace-play-slot ace-room-slot${premium ? " is-premium" : ""}`}>
-      <PlayerAvatar
-        src={row.live?.avatarUrl ?? null}
-        name={row.callsign}
-        alt={interpolate(room.avatarAlt, { name: row.callsign })}
-        size={44}
-      />
+    <li className={`ace-play-slot ace-room-slot${premium ? " is-premium" : ""}${row.me ? " is-me" : ""}`}>
+      <PlayerAvatar src={row.avatarUrl} name={row.name} alt={interpolate(text.play.room.avatarAlt, { name: row.name })} size={44} />
       <div className="ace-play-slot-meta">
         <p className="ace-play-slot-name">
-          {row.callsign}
-          {captain ? <span className="ace-play-cap">{copy.captain}</span> : null}
-          {premium ? (
-            <span className="ace-premium-tag">{row.live ? text.play.premium.tag : text.play.premium.sample}</span>
-          ) : null}
+          <bdi>{row.name}</bdi>
+          {row.captain ? <span className="ace-play-cap">{ui.r48.captain}</span> : null}
+          {premium ? <span className="ace-premium-tag">{text.play.premium.tag}</span> : null}
         </p>
-        <p className="ace-play-slot-rank">
-          {row.role} · {tier.crystalName}
-        </p>
-        <p className="ace-room-rp">
-          {row.live
-            ? interpolate(room.yourRp, { rp: row.live.rating.toLocaleString("en-US") })
-            : interpolate(room.floorRp, { rp: tier.minRating.toLocaleString("en-US") })}
-        </p>
+        <p className="ace-play-slot-rank">{tier.crystalName}</p>
+        <p className="ace-room-rp">{row.rp.toLocaleString("en-US")} RP</p>
       </div>
       {premium ? (
         <PremiumShowcase level={tier.level} rating={null} labels={text.ranks.showcase} size="sm" caption={false} />
       ) : (
-        <FloatingEmblem src={rankArtAsset(tier.level, art).stillSrc} alt={tier.name} size={52} />
+        <FloatingEmblem src={rankArtAsset(tier.level, row.art).stillSrc} alt={tier.name} size={52} />
       )}
     </li>
   );
@@ -122,221 +55,42 @@ function OperatorArt({ side, alt }: { side: "guardian" | "rebel"; alt: string })
   );
 }
 
-export function PlayMatchArena({
-  captainLabel,
-  captain = null,
-  lockedMap,
-  boardName: boardNameProp,
-}: {
-  captainLabel: string;
-  captain?: ArenaCaptain | null;
-  lockedMap?: string;
-  boardName?: string;
-}) {
-  const { t } = useI18n();
+const avg = (xs: ArenaPlayer[]) => (xs.length ? Math.round(xs.reduce((a, p) => a + p.rp, 0) / xs.length) : 0);
+
+/** Match lobby with the operator art, fed only by real lobby seats. */
+export function PlayMatchArena({ team1, team2, map, title, children }: { team1: ArenaPlayer[]; team2: ArenaPlayer[]; map: string | null; title: string; children?: React.ReactNode }) {
   const text = useText();
-  const copy = text.play.arena;
-  const boardName = boardNameProp ?? text.play.boards.items.calibration.name;
-  const [map, setMap] = useState<(typeof MAPS)[number]>(() => findMap(lockedMap) ?? "DUST II");
-  const [syncedLock, setSyncedLock] = useState(lockedMap);
-  if (lockedMap !== syncedLock) {
-    setSyncedLock(lockedMap);
-    const next = findMap(lockedMap);
-    if (next) setMap(next);
-  }
-  const [draft, setDraft] = useState("");
-  const [added, setAdded] = useState<string[]>([]);
-  const sampleWho = [interpolate(copy.chat.captainName, { name: captainLabel }), ...SAMPLE_CHAT_HANDLES];
-  const lines = [
-    ...copy.chat.samples.map((line, index) => ({ who: sampleWho[index] ?? "", text: line })),
-    ...added.map((line) => ({ who: interpolate(copy.chat.layoutName, { name: captainLabel }), text: line })),
-  ];
-
-  const teamA: RosterRow[] = [
-    {
-      callsign: captainLabel,
-      role: "IGL",
-      level: captain?.level ?? 6,
-      skin: 0,
-      live: captain ? { avatarUrl: captain.avatarUrl, rating: captain.rating, art: captain.art } : undefined,
-    },
-    ...TEAM_A_REST,
-  ];
-
-  function onChat(event: FormEvent<HTMLFormElement>) {
-    event.preventDefault();
-    const message = draft.trim();
-    if (!message) return;
-    setAdded((current) => [...current, message]);
-    setDraft("");
-  }
-
+  const ui = useUi();
+  const r = ui.r48;
   return (
-    <section className="ace-play-arena" aria-label={copy.ariaLabel}>
-      <p className="ace-play-kicker">{t("playKicker")}</p>
-      <p className="ace-room-showcase" role="note">{text.play.room.showcaseTag}</p>
-
+    <section className="ace-play-arena r48-arena" aria-label={title}>
       <header className="ace-play-banner">
         <div className="ace-play-title-row">
-          <LightningMark />
-          <h1>{t("matchFoundTitle")}</h1>
+          <h2 className="r48-arena-title">{title}</h2>
         </div>
-        <div className="ace-play-maps" role="tablist" aria-label={copy.mapPlates}>
-          {MAPS.map((name) => (
-            <button
-              key={name}
-              type="button"
-              role="tab"
-              aria-selected={map === name}
-              aria-label={interpolate(copy.selectMap, { map: name })}
-              className={map === name ? "is-active" : undefined}
-              onClick={() => setMap(name)}
-            >
-              <span className="ace-play-map-plate" data-map={name} />
-              {name}
-            </button>
-          ))}
-        </div>
-        <dl className="ace-play-settings">
-          <div>
-            <dt>{copy.settings.region}</dt>
-            <dd>EU</dd>
-          </div>
-          <div>
-            <dt>{copy.settings.mode}</dt>
-            <dd>{boardName}</dd>
-          </div>
-          <div>
-            <dt>{copy.settings.antiCheat}</dt>
-            <dd>
-              {copy.settings.simulator}
-            </dd>
-          </div>
-        </dl>
+        {map ? (
+          <p className="r48-arena-map">
+            <span className="ace-play-map-plate" data-map={mapLabel(map)} aria-hidden="true" /> {r.map}: <strong>{mapLabel(map)}</strong>
+          </p>
+        ) : null}
       </header>
-
       <div className="ace-play-horizon">
         <OperatorArt side="guardian" alt={text.play.room.operatorA} />
         <article className="ace-play-team" data-side="a">
-          <h2>{t("teamA")}</h2>
-          <p className="ace-play-team-note">{t("teamANote")}</p>
-          <ul>
-            {teamA.map((row, index) => (
-              <RosterCard key={row.callsign} row={row} captain={index === 0} />
-            ))}
-          </ul>
+          <h3>{r.teamA}</h3>
+          <p className="ace-play-team-note">{interpolate(r.avgRp, { rp: avg(team1).toLocaleString("en-US") })}</p>
+          <ul>{team1.map((p) => <RosterCard key={p.userId} row={p} />)}</ul>
         </article>
-
-        <div className="ace-play-vs" aria-hidden="true">
-          <span>VS</span>
-        </div>
-
+        <div className="ace-play-vs" aria-hidden="true"><span>VS</span></div>
         <article className="ace-play-team" data-side="b">
-          <h2>{t("teamB")}</h2>
-          <p className="ace-play-team-note">{t("teamBNote")}</p>
-          <ul>
-            {TEAM_B.map((row) => (
-              <RosterCard key={row.callsign} row={row} />
-            ))}
-          </ul>
+          <h3>{r.teamB}</h3>
+          <p className="ace-play-team-note">{interpolate(r.avgRp, { rp: avg(team2).toLocaleString("en-US") })}</p>
+          <ul>{team2.map((p) => <RosterCard key={p.userId} row={p} />)}</ul>
         </article>
         <OperatorArt side="rebel" alt={text.play.room.operatorB} />
       </div>
-
-      <div className="ace-play-desk">
-        <article className="ace-play-panel ace-play-chat">
-          <h3>{copy.chat.title}</h3>
-          <p className="ace-play-panel-kicker">{copy.chat.kicker}</p>
-          <p className="ace-room-sample">{text.play.room.sampleChat}</p>
-          <ul>
-            {lines.map((line, index) => (
-              <li key={`${line.who}-${index}`}>
-                {index < copy.chat.samples.length ? <span className="ace-room-sample-tag">{text.play.room.sampleLine}</span> : null}
-                <strong>{line.who}:</strong> {line.text}
-              </li>
-            ))}
-          </ul>
-          <form className="ace-play-chat-bar" onSubmit={onChat}>
-            <label className="sr-only" htmlFor="ace-play-chat-input">
-              {copy.chat.inputLabel}
-            </label>
-            <input
-              id="ace-play-chat-input"
-              value={draft}
-              onChange={(event) => setDraft(event.target.value)}
-              placeholder={copy.chat.placeholder}
-              autoComplete="off"
-            />
-            <button type="submit" aria-label={copy.chat.send}>
-              <svg viewBox="0 0 24 24" aria-hidden="true">
-                <path d="M3 12h14M13 6l8 6-8 6" />
-              </svg>
-            </button>
-          </form>
-        </article>
-
-        <article className="ace-play-panel ace-play-countdown">
-          <div className="ace-play-dust" data-map={map} aria-hidden="true" />
-          <div className="ace-play-countdown-copy">
-            <p className="ace-play-clock-label">{text.play.room.showcaseShort}</p>
-            <p className="ace-play-clock">{text.play.room.queueClosed}</p>
-            <p className="ace-play-clock-note">{t("loopingClock")}</p>
-            <ul className="ace-play-tiles">
-              <li>
-                <span>{copy.tiles.map}</span>
-                <strong>{map}</strong>
-              </li>
-              <li>
-                <span>{copy.tiles.server}</span>
-                <strong>{copy.tiles.serverValue}</strong>
-              </li>
-              <li>
-                <span>{copy.tiles.mode}</span>
-                <strong>{boardName}</strong>
-              </li>
-            </ul>
-          </div>
-        </article>
-
-        <div className="ace-play-stack">
-          <article className="ace-play-panel">
-            <h3>{copy.identity.title}</h3>
-            <p className="ace-play-panel-kicker">{copy.identity.kicker}</p>
-            <ul className="ace-play-sec">
-              {copy.identity.rows.map((row) => (
-                <li key={row}>
-                  <span className="ace-room-pending" aria-hidden="true" /> {row}
-                </li>
-              ))}
-            </ul>
-          </article>
-          <article className="ace-play-panel">
-            <h3>{copy.security.title}</h3>
-            <p className="ace-play-panel-kicker">{copy.security.kicker}</p>
-            <ul className="ace-play-sec">
-              {copy.security.rows.map((row) => (
-                <li key={row}>
-                  <span className="ace-room-pending" aria-hidden="true" /> {row}
-                </li>
-              ))}
-            </ul>
-          </article>
-        </div>
-      </div>
-
-      <p className="ace-room-art-note">{text.play.premium.note}</p>
-      <p className="ace-room-art-note">{text.play.room.artNote}</p>
-      <footer className="ace-play-foot">
-        <PlannedButton
-          look="foil"
-          reason={copy.findMatchReason}
-        >
-          {t("findMatch")} <span aria-hidden="true">›</span>
-        </PlannedButton>
-        <p className="ace-play-online">
-          <ConnectedCount />
-        </p>
-      </footer>
+      {children}
+      <p className="ace-room-art-note">{r.lobbyNote}</p>
     </section>
   );
 }

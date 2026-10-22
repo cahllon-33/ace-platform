@@ -27,6 +27,19 @@ export function prismaIngestStore(): IngestStore {
         },
         select: { id: true },
       }),
+    recordLines: async (id, s, users) => {
+      await prisma.match.update({ where: { id }, data: { scoreA: s.scoreA, scoreB: s.scoreB, mapName: s.map ?? undefined, endedAt: new Date() } });
+      for (const l of s.lines) {
+        const userId = users.get(l.steamId);
+        if (!userId) continue;
+        const stats = {
+          teamId: l.team, kills: l.kills, deaths: l.deaths, assists: l.assists, damage: l.damage, roundsPlayed: l.roundsPlayed,
+          headshotKills: l.headshotKills, mvps: l.mvps, multi2k: l.multi2k, multi3k: l.multi3k, multi4k: l.multi4k, multi5k: l.multi5k,
+          entryWins: l.entryWins, entryAttempts: l.entryAttempts, utilityDamage: l.utilityDamage, clutchesWon: l.clutchesWon, clutchesPlayed: l.clutchesPlayed,
+        };
+        await prisma.matchPlayer.upsert({ where: { matchId_userId: { matchId: id, userId } }, create: { matchId: id, userId, ...stats }, update: stats });
+      }
+    },
     completeWithoutRating: async (id) => {
       await prisma.match.update({ where: { id }, data: { state: "COMPLETED", endedAt: new Date() } });
     },

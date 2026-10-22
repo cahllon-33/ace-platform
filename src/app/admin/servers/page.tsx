@@ -12,7 +12,7 @@ export const metadata: Metadata = { title: "A.C.E. Servers", robots: { index: fa
 async function recentMatches(): Promise<RecentMatch[]> {
   try {
     const rows = await getPrisma().match.findMany({
-      where: { source: "dathost" }, orderBy: { createdAt: "desc" }, take: 10,
+      where: { source: { in: ["dathost", "dathost-test"] } }, orderBy: { createdAt: "desc" }, take: 10,
       select: { id: true, externalId: true, mapName: true, scoreA: true, scoreB: true, state: true, ratingApplied: true, endedAt: true, createdAt: true, _count: { select: { players: true } } },
     });
     return rows.map((r) => ({ id: r.id, externalId: r.externalId, map: r.mapName, scoreA: r.scoreA, scoreB: r.scoreB, state: r.state, ratingApplied: r.ratingApplied, at: (r.endedAt ?? r.createdAt).toISOString(), players: r._count.players }));

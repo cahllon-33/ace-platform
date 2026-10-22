@@ -48,6 +48,8 @@ export type IngestStore = {
   createMatch(summary: MatchSummary, userIds: Map<string, string>): Promise<{ id: string }>;
   completeWithoutRating(matchId: string): Promise<void>;
   applyRating(matchId: string, winnerTeamId: "team1" | "team2"): Promise<void>;
+  /** R48: a queue lobby pre-created the match; write scores and stat lines onto it (upsert per player). */
+  recordLines?(matchId: string, summary: MatchSummary, userIds: Map<string, string>): Promise<void>;
 };
 
 export type IngestResult =
@@ -69,7 +71,9 @@ export async function ingestDathostMatch(m: Cs2Match, store: IngestStore, opts: 
   const summary = summarizeDathostMatch(m);
   let matchId = existing?.id ?? null;
   const users = await store.usersBySteamId(summary.lines.map((l) => l.steamId));
-  if (!matchId) {
+  if (matchId) {
+    await store.recordLines?.(matchId, summary, users);
+  } else {
     try {
       matchId = (await store.createMatch(summary, users)).id;
     } catch (e) {

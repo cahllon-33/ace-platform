@@ -5,6 +5,7 @@ import { useEffect, useRef, useState, useTransition } from "react";
 import { useAdminI18n } from "@/components/admin-locale";
 import { serverAction, type ServerActionResult, type ServerSnapshot } from "@/server/dathost-actions";
 import { SERVERS_EN, SERVERS_HE, type ServersKey } from "@/lib/admin-servers-i18n";
+import { AdminServerTools } from "@/components/admin-server-tools";
 import "./admin-command.css";
 import "./admin-servers.css";
 
@@ -101,17 +102,9 @@ export function AdminServersPanel({ owner, initial, matches, maps }: { owner: bo
         </section>
       ) : null}
 
-      <div className="asv-grid">
-        <section className="acx-card asv-console">
-          <p className="acx-card-title">{t("rcon")}</p>
-          <pre ref={logRef} className="asv-log" aria-label={t("log")} tabIndex={0}>{(snap?.log ?? []).join("\n") || "—"}</pre>
-          <form className="asv-cmd" onSubmit={(e) => { e.preventDefault(); if (cmd.trim()) { run("rcon", cmd); setCmd(""); } }}>
-            <span aria-hidden="true">›</span>
-            <input value={cmd} onChange={(e) => setCmd(e.target.value)} placeholder={t("rconPh")} maxLength={300} spellCheck={false} autoComplete="off" aria-label={t("rcon")} disabled={!s?.online} />
-            <button type="submit" className="acx-btn is-gold" disabled={pending || !cmd.trim() || !s?.online}>{t("send")}</button>
-          </form>
-        </section>
+      <AdminServerTools maps={maps} />
 
+      <div className="asv-grid">
         <section className="acx-card asv-matches">
           <p className="acx-card-title">{t("matches")}</p>
           {matches.length === 0 ? (

@@ -103,6 +103,8 @@ model User {
   reports            MatchDispute[]   @relation("DisputeReporter")
   playerReportsFiled PlayerReport[]   @relation("PlayerReportReporter")
   notifications      Notification[]
+  queueEntry         QueueEntry?
+  lobbySeats         QueueLobbyPlayer[]
 }
 
 model UserSession {
@@ -436,4 +438,58 @@ model Cs2PluginEvent {
 
   @@index([serverId, receivedAt])
   @@index([matchId])
+}
+
+/// R48 ranked 5v5 solo queue. One row per waiting player; removed when a lobby forms or the player leaves.
+model QueueEntry {
+  id       String   @id @default(cuid())
+  userId   String   @unique
+  rp       Int
+  joinedAt DateTime @default(now())
+  user     User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([joinedAt])
+}
+
+/// R48 match lobby: ready check -> map veto -> DatHost match. state: READY | VETO | LAUNCHING | LIVE | DONE | CANCELLED | FAILED.
+model QueueLobby {
+  id             String             @id @default(cuid())
+  state          String             @default("READY")
+  /// Owner-only admin test lobby (fewer than 10 players). Never rated unless both sides have registered players.
+  isTest         Boolean            @default(false)
+  readyDeadline  DateTime?
+  mapPool        String[]
+  /// [{ map, by: "team1" | "team2" | "auto" }] in ban order.
+  bans           Json               @default("[]")
+  vetoTurn       String?
+  vetoDeadline   DateTime?
+  captain1Id     String?
+  captain2Id     String?
+  map            String?
+  dathostMatchId String?            @unique
+  matchId        String?            @unique
+  connectUrl     String?
+  serverAddress  String?
+  error          String             @default("")
+  checkedAt      DateTime?
+  createdAt      DateTime           @default(now())
+  updatedAt      DateTime           @updatedAt
+  players        QueueLobbyPlayer[]
+
+  @@index([state])
+}
+
+model QueueLobbyPlayer {
+  id       String     @id @default(cuid())
+  lobbyId  String
+  userId   String
+  team     String
+  rp       Int
+  accepted Boolean    @default(false)
+  declined Boolean    @default(false)
+  lobby    QueueLobby @relation(fields: [lobbyId], references: [id], onDelete: Cascade)
+  user     User       @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([lobbyId, userId])
+  @@index([userId])
 }
