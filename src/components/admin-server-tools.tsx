@@ -10,10 +10,11 @@ import {
 import { cancelLobbyAction, createTestLobbyAction, testBotsAction, testLobbiesAction } from "@/server/queue-actions";
 import type { FileEntry, SettingsView } from "@/server/dathost";
 import type { LobbyView } from "@/server/queue-engine";
+import { OpsTab, type OpsTabId } from "@/components/admin-server-ops";
 import "./admin-server-tools.css";
 
-type Tab = "console" | "settings" | "files" | "plugins" | "usage" | "power" | "test";
-const TABS: [Tab, Srv48Key][] = [["console", "tabConsole"], ["settings", "tabSettings"], ["files", "tabFiles"], ["plugins", "tabPlugins"], ["usage", "tabUsage"], ["power", "tabPower"], ["test", "tabTest"]];
+type Tab = "console" | "settings" | "files" | "plugins" | "usage" | "power" | "test" | OpsTabId;
+const TABS: [Tab, Srv48Key][] = [["console", "tabConsole"], ["settings", "tabSettings"], ["files", "tabFiles"], ["plugins", "tabPlugins"], ["usage", "tabUsage"], ["power", "tabPower"], ["test", "tabTest"], ["matches", "tabMatches"], ["moderation", "tabModeration"], ["health", "tabHealth"], ["history", "tabHistory"], ["audit", "tabAudit"]];
 const mapLabel = (m: string) => (m === "de_dust2" ? "Dust II" : m.replace(/^de_/, "").replace(/^\w/, (c) => c.toUpperCase()));
 const fmtBytes = (n: number) => (n > 1e9 ? `${(n / 1e9).toFixed(2)} GB` : n > 1e6 ? `${(n / 1e6).toFixed(1)} MB` : n > 1e3 ? `${(n / 1e3).toFixed(1)} KB` : `${n} B`);
 
@@ -38,6 +39,7 @@ export function AdminServerTools({ maps, initialTab = "console" }: { maps: strin
         {tab === "usage" ? <UsageTab t={t} lang={lang} onError={setError} /> : null}
         {tab === "power" ? <PowerTab t={t} onError={setError} /> : null}
         {tab === "test" ? <TestTab t={t} maps={maps} onError={setError} /> : null}
+        {["matches", "moderation", "health", "history", "audit"].includes(tab) ? <OpsTab tab={tab as OpsTabId} t={t} lang={lang} onError={setError} /> : null}
       </div>
     </section>
   );

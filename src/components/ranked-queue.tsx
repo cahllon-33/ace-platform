@@ -1,6 +1,6 @@
 "use client";
 
-import { useCallback, useEffect, useState, useTransition } from "react";
+import { useCallback, useEffect, useRef, useState, useTransition } from "react";
 import { STEAM_AUTH_HREF } from "@/lib/site";
 import { useUi } from "@/components/use-ui";
 import { interpolate } from "@/lib/interpolate";
@@ -8,6 +8,8 @@ import { mapLabel } from "@/lib/queue";
 import { PlayMatchArena } from "@/components/play-match-arena";
 import { banMapAction, joinQueueAction, leaveQueueAction, pollQueue, readyAction, type QueueResult } from "@/server/queue-actions";
 import type { QueueView } from "@/server/queue-engine";
+import { notify, playBan, playLive, playMatchFound, playTick, unlockAudio } from "@/components/queue-alerts";
+import { REGION_LABELS } from "@/lib/queue";
 import "./ranked-queue.css";
 
 const POLL_MS = 2000;
@@ -32,6 +34,13 @@ export function RankedQueue({ signedIn, initial }: { signedIn: boolean; initial:
   const [error, setError] = useState<string | null>(null);
   const [pending, start] = useTransition();
   const [skew, setSkew] = useState(0);
+  const [latency, setLatency] = useState<number | null>(null);
+  const [sound, setSound] = useState(() => { try { return typeof window === "undefined" || localStorage.getItem("ace-queue-sound") !== "off"; } catch { return true; } });
+  const [perm, setPerm] = useState<string>(() => (typeof window !== "undefined" && "Notification" in window ? Notification.permission : "default"));
+  const [copied, setCopied] = useState(false);
+  const [dismissed, setDismissed] = useState<string | null>(null);
+  const prev = useRef<{ state: string | null; bans: number; tick: number }>({ state: null, bans: 0, tick: -1 });
+  const b = ui.r48b;
   const now = useNow(true) + skew;
 
   const apply = useCallback((res: QueueResult) => {
@@ -45,15 +54,40 @@ export function RankedQueue({ signedIn, initial }: { signedIn: boolean; initial:
   useEffect(() => {
     let live = true;
     const t = setInterval(async () => {
-      if (document.hidden) return;
+      const t0 = performance.now();
       const res = await pollQueue();
-      if (live) apply(res);
+      if (!live) return;
+      setLatency(Math.round(performance.now() - t0));
+      apply(res);
     }, POLL_MS);
     return () => { live = false; clearInterval(t); };
   }, [apply]);
 
-  const act = (fn: () => Promise<QueueResult>) => start(async () => apply(await fn()));
-  const errText = error ? (r.errors as Record<string, string>)[error] ?? r.errors.unavailable : null;
+
+  // Alerts: match found (sound + browser notification), last-5-second ticks, bans, server ready.
+  const lobbyState = view?.lobby?.state ?? null;
+  const banCount = view?.lobby?.bans.length ?? 0;
+  const readyLeft = secondsLeft(view?.lobby?.readyDeadline ?? null, now);
+  useEffect(() => {
+    const p = prev.current;
+    if (lobbyState === "READY" && p.state !== "READY") {
+      if (sound) playMatchFound();
+      if (document.hidden) notify(b.notifTitle, b.notifBody);
+    }
+    if (lobbyState === "LIVE" && p.state !== "LIVE" && sound) playLive();
+    if (lobbyState === "VETO" && banCount > p.bans && sound) playBan();
+    if (lobbyState === "READY" && readyLeft <= 5 && readyLeft > 0 && readyLeft !== p.tick && sound) playTick();
+    prev.current = { state: lobbyState, bans: banCount, tick: readyLeft };
+  }, [lobbyState, banCount, readyLeft, sound, b.notifTitle, b.notifBody]);
+
+  const toggleSound = () => { unlockAudio(); setSound((v) => { try { localStorage.setItem("ace-queue-sound", v ? "off" : "on"); } catch { /* ignore */ } return !v; }); };
+  const askNotify = async () => { unlockAudio(); if ("Notification" in window) setPerm(await Notification.requestPermission()); };
+
+  const act = (fn: () => Promise<QueueResult>) => { unlockAudio(); start(async () => apply(await fn())); };
+  const errText = error === "banned" ? b.errBanned : error === "cooldown" ? b.errCooldown : error ? (r.errors as Record<string, string>)[error] ?? r.errors.unavailable : null;
+  const regionName = view?.region ? REGION_LABELS[view.region] ?? view.region : "";
+  const restriction = view?.restriction ?? null;
+  const restrictLeft = restriction?.until ? Math.max(0, Math.floor((new Date(restriction.until).getTime() - now) / 1000)) : null;
   const lobby = view?.lobby ?? null;
   const me = lobby?.players.find((p) => p.me);
   const t1 = lobby?.players.filter((p) => p.team === "team1") ?? [];
@@ -67,7 +101,14 @@ export function RankedQueue({ signedIn, initial }: { signedIn: boolean; initial:
         <p className="r48-kicker">{r.kicker}</p>
         <h1 id="r48-title" className="r48-title">{r.title}</h1>
         <p className="r48-lede">{r.lede}</p>
+        <div className="r48-meta" suppressHydrationWarning>
+          {regionName ? <span className="r48-chip">{interpolate(b.region, { region: regionName })}</span> : null}
+          {latency != null ? <span className="r48-chip r48-chip-dim">{interpolate(b.latency, { ms: latency })}</span> : null}
+          <button type="button" className="r48-chip r48-chip-btn" onClick={toggleSound} aria-pressed={sound} suppressHydrationWarning>{sound ? b.soundOn : b.soundOff}</button>
+          {perm !== "granted" && perm !== "denied" ? <button type="button" className="r48-chip r48-chip-btn" onClick={askNotify}>{b.alertsOn}</button> : perm === "granted" ? <span className="r48-chip">{b.alertsActive}</span> : null}
+        </div>
       </header>
+      {activeLobby?.state === "LIVE" ? <p className="r48-banner" role="status"><strong>{b.activeMatch}</strong>{activeLobby.connectUrl ? <a className="r48-btn r48-btn-gold r48-btn-sm" href={activeLobby.connectUrl}>{b.reconnect}</a> : null}</p> : null}
 
       {errText ? <p className="r48-error" role="alert">{errText}</p> : null}
 
@@ -84,17 +125,25 @@ export function RankedQueue({ signedIn, initial }: { signedIn: boolean; initial:
               </p>
             ) : null}
           </div>
+          <p className="r48-sub">{view?.estimateSec != null ? interpolate(b.estimate, { time: clock(view.estimateSec) }) : b.estimateNone}</p>
+          {restriction ? (
+            <p className="r48-restrict" role="alert">
+              {restriction.kind === "BAN"
+                ? restriction.until ? interpolate(b.bannedUntil, { date: new Date(restriction.until).toLocaleString() }) : b.banned
+                : interpolate(b.cooldown, { time: clock(restrictLeft ?? 0) })}
+            </p>
+          ) : null}
           {view?.serverBusy ? <p className="r48-note">{r.serverBusy}</p> : null}
           {lobby?.state === "CANCELLED" ? <p className="r48-note">{r.cancelled}</p> : null}
           {lobby?.state === "FAILED" ? <p className="r48-note">{r.failed}</p> : null}
-          {lobby?.state === "DONE" ? <p className="r48-note">{r.done}</p> : null}
+
           <div className="r48-actions">
             {!signedIn ? (
               <a className="r48-btn r48-btn-gold" href={STEAM_AUTH_HREF}>{r.signIn}</a>
             ) : view?.inQueue ? (
               <button type="button" className="r48-btn" disabled={pending} onClick={() => act(leaveQueueAction)}>{r.leave}</button>
             ) : (
-              <button type="button" className="r48-btn r48-btn-gold" disabled={pending} onClick={() => act(joinQueueAction)}>{r.join}</button>
+              <button type="button" className="r48-btn r48-btn-gold" disabled={pending || (!!restriction && (restrictLeft == null || restrictLeft > 0))} onClick={() => act(joinQueueAction)}>{r.join}</button>
             )}
           </div>
         </div>
@@ -120,6 +169,7 @@ export function RankedQueue({ signedIn, initial }: { signedIn: boolean; initial:
           ) : (
             <p className="r48-sub">{r.youAccepted}</p>
           )}
+          <p className="r48-warn">{b.dodgeWarn}</p>
         </div>
       ) : null}
 
@@ -136,7 +186,7 @@ export function RankedQueue({ signedIn, initial }: { signedIn: boolean; initial:
             {activeLobby.pool.map((m) => {
               const ban = activeLobby.bans.find((b) => b.map === m);
               return (
-                <li key={m} className={ban ? "is-banned" : ""}>
+                <li key={m} className={ban ? `is-banned${ban.by === "auto" ? " is-auto" : ""}` : activeLobby.myTurn ? "is-pickable" : ""} style={{ ["--i" as string]: activeLobby.bans.findIndex((x) => x.map === m) }}>
                   <span className="ace-play-map-plate" data-map={mapLabel(m)} aria-hidden="true" />
                   <span className="r48-map-name">{mapLabel(m)}</span>
                   {ban ? (
@@ -153,16 +203,56 @@ export function RankedQueue({ signedIn, initial }: { signedIn: boolean; initial:
 
       {activeLobby && (activeLobby.state === "LAUNCHING" || activeLobby.state === "LIVE" || activeLobby.state === "VETO" || activeLobby.state === "READY") ? (
         <PlayMatchArena team1={t1} team2={t2} map={activeLobby.map} title={activeLobby.state === "LIVE" ? r.liveTitle : r.readyTitle}>
+          {t1.length && t2.length ? (
+            <div className="r48-odds" aria-label={interpolate(b.winChance, { p: Math.round(activeLobby.winChance1 * 100) })}>
+              <span>{interpolate(b.winChance, { p: Math.round(activeLobby.winChance1 * 100) })}</span>
+              <div className="r48-odds-bar"><i style={{ width: `${Math.round(activeLobby.winChance1 * 100)}%` }} /></div>
+              <span>{interpolate(b.winChance, { p: 100 - Math.round(activeLobby.winChance1 * 100) })}</span>
+            </div>
+          ) : null}
           {activeLobby.state === "LAUNCHING" ? <p className="r48-note r48-center" role="status">{r.launching}</p> : null}
+          {activeLobby.state === "LIVE" ? (
+            <div className="r48-score" aria-label={b.liveScore}>
+              <span className="r48-score-n">{activeLobby.scoreA ?? 0}</span>
+              <span className="r48-score-mid">{b.liveScore}{activeLobby.rounds ? <small>{interpolate(b.round, { n: activeLobby.rounds + 1 })}</small> : null}</span>
+              <span className="r48-score-n">{activeLobby.scoreB ?? 0}</span>
+            </div>
+          ) : null}
           {activeLobby.state === "LIVE" && activeLobby.connectUrl ? (
             <div className="r48-connect">
               <a className="r48-btn r48-btn-gold r48-btn-lg" href={activeLobby.connectUrl}>{r.connect}</a>
               <p className="r48-sub">{r.connectNote}</p>
-              {activeLobby.address ? <p className="r48-mono"><bdi>{interpolate(r.console, { address: activeLobby.address })}</bdi></p> : null}
+              {activeLobby.address ? (
+                <p className="r48-mono">
+                  <bdi>{interpolate(r.console, { address: activeLobby.address })}</bdi>{" "}
+                  <button type="button" className="r48-btn r48-btn-sm" onClick={() => { void navigator.clipboard?.writeText(`connect ${activeLobby.address}`); setCopied(true); setTimeout(() => setCopied(false), 1500); }}>{copied ? b.copied : b.copyIp}</button>
+                </p>
+              ) : null}
+              <p className="r48-warn">{b.leaverWarn}</p>
             </div>
           ) : null}
         </PlayMatchArena>
       ) : null}
+
+      {lobby?.state === "DONE" && lobby.result && dismissed !== lobby.id ? (
+        <div className={`r48-card r48-result is-${lobby.result.won == null ? "draw" : lobby.result.won ? "win" : "loss"}${lobby.scoreA == null ? " is-pending" : ""}`}>
+          <p className="r48-kicker">{b.resultsTitle}</p>
+          <h2 className="r48-result-title">{lobby.scoreA == null || lobby.scoreB == null ? r.done : lobby.result.won == null ? b.draw : lobby.result.won ? b.win : b.loss}</h2>
+          <p className="r48-result-score">{lobby.scoreA ?? 0} : {lobby.scoreB ?? 0}{lobby.map ? <small> · {mapLabel(lobby.map)}</small> : null}</p>
+          {lobby.result.rpBefore != null && lobby.result.rpAfter != null ? (
+            <p className="r48-result-rp">
+              {interpolate(b.rpChange, { delta: `${lobby.result.rpAfter - lobby.result.rpBefore >= 0 ? "+" : "−"}${Math.abs(lobby.result.rpAfter - lobby.result.rpBefore)}` })}
+              <small> {lobby.result.rpBefore.toLocaleString("en-US")} → {lobby.result.rpAfter.toLocaleString("en-US")}</small>
+            </p>
+          ) : <p className="r48-sub">{b.rpPending}</p>}
+          <dl className="r48-stats">
+            {([["kills", lobby.result.kills], ["deaths", lobby.result.deaths], ["assists", lobby.result.assists], ["damage", lobby.result.damage], ["mvps", lobby.result.mvps], ["hs", lobby.result.hs]] as const).map(([k, v]) => (
+              <div key={k}><dt>{b[k]}</dt><dd>{v ?? "—"}</dd></div>
+            ))}
+          </dl>
+          <button type="button" className="r48-btn" onClick={() => setDismissed(lobby.id)}>{r.join}</button>
+        </div>
+      ) : lobby?.state === "DONE" && dismissed !== lobby.id ? <p className="r48-note">{r.done}</p> : null}
     </section>
   );
 }

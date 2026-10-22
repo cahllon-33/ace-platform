@@ -52,3 +52,21 @@ describe("readyOutcome", () => {
     expect(readyOutcome([p("a", true), p("b", false, true)], false)).toEqual({ kind: "cancel", removed: ["b"], requeue: ["a"] });
   });
 });
+
+import { dodgeCooldownMinutes, estimateWaitSeconds, leaverCooldownMinutes, winProbability } from "@/lib/queue";
+describe("R48b rules", () => {
+  it("escalates cooldowns and caps them", () => {
+    expect([0, 1, 2, 3, 4, 9].map(dodgeCooldownMinutes)).toEqual([2, 5, 15, 30, 60, 60]);
+    expect([0, 1, 2, 3, 8].map(leaverCooldownMinutes)).toEqual([30, 120, 1440, 10080, 10080]);
+  });
+  it("win probability is symmetric and 50% for equal teams", () => {
+    expect(winProbability(1500, 1500)).toBe(0.5);
+    expect(winProbability(1700, 1500) + winProbability(1500, 1700)).toBeCloseTo(1);
+    expect(winProbability(1700, 1500)).toBeGreaterThan(0.7);
+  });
+  it("needs 3 real samples for an estimate", () => {
+    expect(estimateWaitSeconds([10, 20])).toBeNull();
+    expect(estimateWaitSeconds([30, 10, 20])).toBe(20);
+    expect(estimateWaitSeconds([10, 20, 30, 40])).toBe(25);
+  });
+});

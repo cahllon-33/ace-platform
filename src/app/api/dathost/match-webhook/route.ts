@@ -3,6 +3,7 @@ import { webhookAuthorized } from "@/lib/ace-signature";
 import { ingestDathostMatch } from "@/server/dathost-ingest";
 import { prismaIngestStore } from "@/server/dathost-store";
 import type { Cs2Match } from "@/server/dathost";
+import { mirrorLiveScore } from "@/server/queue-engine";
 
 /** DatHost CS2 match_end webhook. Auth: Authorization header (set via authorization_header) or ?token=. Idempotent. */
 export async function POST(request: Request) {
@@ -17,6 +18,8 @@ export async function POST(request: Request) {
     return NextResponse.json({ ok: false, error: "bad-json" }, { status: 400 });
   }
   if (!body || typeof body.id !== "string" || !body.id) return NextResponse.json({ ok: false, error: "bad-payload" }, { status: 400 });
+  // Round-end deliveries: mirror the live score onto the queue lobby (no RP change).
+  await mirrorLiveScore(body).catch(() => undefined);
   try {
     const result = await ingestDathostMatch(body, prismaIngestStore(), { serverId: process.env.DATHOST_SERVER_ID?.trim() || undefined });
     // 200 for duplicates too, so DatHost stops retrying.

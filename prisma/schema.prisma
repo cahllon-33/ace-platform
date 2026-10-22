@@ -104,6 +104,7 @@ model User {
   playerReportsFiled PlayerReport[]   @relation("PlayerReportReporter")
   notifications      Notification[]
   queueEntry         QueueEntry?
+  queueBans          QueueBan[]
   lobbySeats         QueueLobbyPlayer[]
 }
 
@@ -472,6 +473,11 @@ model QueueLobby {
   serverAddress  String?
   error          String             @default("")
   checkedAt      DateTime?
+  /// R48b live score mirrored from DatHost while LIVE.
+  scoreA         Int?
+  scoreB         Int?
+  roundsPlayed   Int?
+  endedAt        DateTime?
   createdAt      DateTime           @default(now())
   updatedAt      DateTime           @updatedAt
   players        QueueLobbyPlayer[]
@@ -487,9 +493,48 @@ model QueueLobbyPlayer {
   rp       Int
   accepted Boolean    @default(false)
   declined Boolean    @default(false)
+  /// Seconds the player waited in queue before this lobby formed (feeds the queue-time estimate).
+  waitedSec Int?
+  /// Replaced by an admin mid-match (still listed, no longer on the DatHost roster).
+  replaced Boolean   @default(false)
   lobby    QueueLobby @relation(fields: [lobbyId], references: [id], onDelete: Cascade)
   user     User       @relation(fields: [userId], references: [id], onDelete: Cascade)
 
   @@unique([lobbyId, userId])
   @@index([userId])
+}
+
+/// R48b queue restrictions. kind: BAN (admin), COOLDOWN (declined / missed ready check), LEAVER (abandoned a live match). until null = permanent.
+model QueueBan {
+  id        String    @id @default(cuid())
+  userId    String
+  kind      String
+  reason    String    @default("")
+  until     DateTime?
+  createdBy String    @default("system")
+  createdAt DateTime  @default(now())
+  revokedAt DateTime?
+  user      User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId, createdAt])
+  @@index([kind, createdAt])
+}
+
+/// R48b server health alerts (offline, crash, auto-restart, scheduled restart).
+model ServerAlert {
+  id         String    @id @default(cuid())
+  serverId   String
+  kind       String
+  message    String    @default("")
+  createdAt  DateTime  @default(now())
+  resolvedAt DateTime?
+
+  @@index([serverId, createdAt])
+}
+
+/// R48b small owner settings (auto-restart, scheduled restart hour, last health check).
+model AdminSetting {
+  key       String   @id
+  value     String
+  updatedAt DateTime @updatedAt
 }

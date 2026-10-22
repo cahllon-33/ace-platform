@@ -81,3 +81,36 @@ export function readyOutcome(players: { userId: string; accepted: boolean; decli
 }
 
 export const mapLabel = (m: string) => (m === "de_dust2" ? "Dust II" : m.replace(/^de_/, "").replace(/^\w/, (c) => c.toUpperCase()));
+
+/* ---------- R48b ---------- */
+
+/** Anti-dodge: declining or missing a ready check within 24 h escalates 2 → 5 → 15 → 30 → 60 minutes. */
+export const DODGE_STEPS_MIN = [2, 5, 15, 30, 60] as const;
+export function dodgeCooldownMinutes(previousIn24h: number): number {
+  return DODGE_STEPS_MIN[Math.min(DODGE_STEPS_MIN.length - 1, Math.max(0, previousIn24h))];
+}
+
+/** Leaving a live match within 7 days escalates 30 min → 2 h → 24 h → 7 days. */
+export const LEAVER_STEPS_MIN = [30, 120, 1440, 10080] as const;
+export function leaverCooldownMinutes(previousIn7d: number): number {
+  return LEAVER_STEPS_MIN[Math.min(LEAVER_STEPS_MIN.length - 1, Math.max(0, previousIn7d))];
+}
+
+/** Win probability for team 1 from team RP averages (same logistic curve as the rating engine, 400-point scale). */
+export function winProbability(avg1: number, avg2: number): number {
+  return 1 / (1 + Math.pow(10, (avg2 - avg1) / 400));
+}
+
+/** Median of recent real waits (seconds); null when there are fewer than 3 samples. */
+export function estimateWaitSeconds(samples: number[]): number | null {
+  const xs = samples.filter((n) => Number.isFinite(n) && n >= 0).sort((a, b) => a - b);
+  if (xs.length < 3) return null;
+  const mid = Math.floor(xs.length / 2);
+  return Math.round(xs.length % 2 ? xs[mid] : (xs[mid - 1] + xs[mid]) / 2);
+}
+
+/** Server regions DatHost uses, shown to players (display only). */
+export const REGION_LABELS: Record<string, string> = {
+  milan: "Milan, IT", amsterdam: "Amsterdam, NL", frankfurt: "Frankfurt, DE", london: "London, UK", paris: "Paris, FR", stockholm: "Stockholm, SE",
+  warsaw: "Warsaw, PL", madrid: "Madrid, ES", istanbul: "Istanbul, TR", bucharest: "Bucharest, RO", helsinki: "Helsinki, FI", vienna: "Vienna, AT",
+};

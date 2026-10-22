@@ -39,3 +39,38 @@
 .r48-arena-map .ace-play-map-plate{display:inline-block;width:3rem;height:1.8rem;border-radius:5px;background-size:cover}
 .r48-arena .ace-room-slot.is-me{outline:1px solid rgba(255,215,106,.5);outline-offset:2px;border-radius:10px}
 .ace-play-map-plate[data-map="Dust II"]{background-image:url("/images/map-dust.jpg")}
+.r48-meta{display:flex;flex-wrap:wrap;gap:.4rem;margin-top:.4rem}
+.r48-chip{font-size:.78rem;color:#d9cfae;border:1px solid rgba(201,165,74,.28);border-radius:99px;padding:.2rem .65rem;background:rgba(201,165,74,.06)}
+.r48-chip-dim{color:#8f8b80;border-color:rgba(255,255,255,.1);background:transparent}
+.r48-chip-btn{cursor:pointer;font:inherit;font-size:.78rem}
+.r48-banner{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:.6rem;padding:.7rem 1rem;border-radius:12px;background:linear-gradient(90deg,rgba(74,222,128,.12),rgba(201,165,74,.08));border:1px solid rgba(74,222,128,.3);color:#e9f8ee}
+.r48-restrict{color:#ffcf9a;background:rgba(160,80,10,.18);border:1px solid rgba(255,170,90,.3);border-radius:10px;padding:.55rem .75rem;font-weight:600}
+.r48-warn{font-size:.8rem;color:#9b968a;max-width:40rem}
+.r48-maps li{transition:opacity .35s ease,filter .35s ease,transform .35s ease}
+.r48-maps li.is-pickable:hover{transform:translateY(-2px);border-color:rgba(255,215,106,.45)}
+.r48-maps li.is-banned::after{content:"";position:absolute;inset:0;border-radius:10px;background:linear-gradient(135deg,transparent 47%,rgba(220,70,60,.85) 48%,rgba(220,70,60,.85) 52%,transparent 53%);animation:r48-slash .45s cubic-bezier(.2,.8,.2,1) both;pointer-events:none}
+.r48-maps li.is-banned{animation:r48-ban .5s ease both}
+@keyframes r48-slash{from{clip-path:inset(0 100% 100% 0)}to{clip-path:inset(0 0 0 0)}}
+@keyframes r48-ban{0%{transform:scale(1)}30%{transform:scale(.96)}100%{transform:scale(1)}}
+@media (prefers-reduced-motion:reduce){.r48-maps li,.r48-maps li.is-banned,.r48-maps li.is-banned::after{animation:none;transition:none}}
+.r48-odds{display:grid;grid-template-columns:auto minmax(0,1fr) auto;align-items:center;gap:.6rem;font-size:.8rem;color:#d9cfae;padding:.4rem 0}
+.r48-odds-bar{height:.45rem;border-radius:99px;background:rgba(120,150,255,.35);overflow:hidden}
+.r48-odds-bar i{display:block;height:100%;background:linear-gradient(90deg,#c9a54a,#ffd76a);transition:width .6s ease}
+.r48-score{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:1rem;text-align:center;padding:.6rem 0}
+.r48-score-n{font-size:clamp(2rem,6vw,3.2rem);font-weight:800;color:#f4efe2;font-variant-numeric:tabular-nums}
+.r48-score-mid{display:grid;font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:#c9a54a}
+.r48-score-mid small{letter-spacing:0;text-transform:none;color:#8f8b80;font-size:.78rem}
+.r48-result{text-align:center;justify-items:stretch}
+.r48-result>*{min-width:0;max-width:100%;margin-inline:auto}
+.r48-result-title{font-size:clamp(2rem,6vw,3rem);font-weight:900;letter-spacing:.02em}
+.r48-result.is-win .r48-result-title{color:#ffd76a}
+.r48-result.is-loss .r48-result-title{color:#d9d4c6}
+.r48-result-score{font-size:1.4rem;font-weight:700;color:#f4efe2;font-variant-numeric:tabular-nums}
+.r48-result-score small{font-size:.85rem;color:#8f8b80;font-weight:500}
+.r48-result-rp{font-size:1.3rem;font-weight:800;color:#ffd76a}
+.r48-result-rp small{font-size:.85rem;color:#a9a69c;font-weight:500}
+.r48-stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,6.5rem),1fr));gap:.5rem;width:100%;max-width:40rem}
+.r48-stats div{border:1px solid rgba(255,255,255,.08);border-radius:10px;padding:.5rem}
+.r48-stats dt{font-size:.7rem;color:#8f8b80;text-transform:uppercase;letter-spacing:.1em}
+.r48-stats dd{font-size:1.2rem;font-weight:800;color:#f4efe2;font-variant-numeric:tabular-nums}
+.r48-result.is-pending .r48-result-title{font-size:1.2rem;font-weight:700;color:#d9cfae}

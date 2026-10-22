@@ -109,6 +109,11 @@ export function dathost(cfg: DathostConfig, f: Fetcher = fetch) {
     moveFile: (path: string, destination: string) =>
       call<unknown>(cfg, `/game-servers/${id}/files/${encodePath(path)}`, { method: "PUT", body: new URLSearchParams({ destination }) }, f),
     deleteFile: (path: string) => call<unknown>(cfg, `/game-servers/${id}/files/${encodePath(path)}`, { method: "DELETE" }, f),
+    cancelMatch: (matchId: string) => call<unknown>(cfg, `/cs2-matches/${encodeURIComponent(matchId)}/cancel`, { method: "POST" }, f),
+    addMatchPlayer: (matchId: string, steamId: string, team: "team1" | "team2") => {
+      if (!STEAM64.test(steamId)) throw new Error("Invalid SteamID64.");
+      return call<unknown>(cfg, `/cs2-matches/${encodeURIComponent(matchId)}/players`, { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ steam_id_64: steamId, team }) }, f);
+    },
     getMatch: (matchId: string) => call<Cs2Match>(cfg, `/cs2-matches/${encodeURIComponent(matchId)}`, {}, f),
   };
 }
@@ -121,6 +126,8 @@ export type CreateMatchInput = {
   roundEndUrl?: string;
   /** Sent back by DatHost as the Authorization header on every webhook. */
   webhookAuthorization: string;
+  /** Seats per side; extra listed SteamIDs become substitutes. */
+  teamSize?: number;
 };
 
 const STEAM64 = /^7656119\d{10}$/;
@@ -137,7 +144,7 @@ export function buildMatchBody(serverId: string, input: CreateMatchInput) {
     team1: { name: input.team1.name.slice(0, 40) },
     team2: { name: input.team2.name.slice(0, 40) },
     players,
-    settings: { map: input.map, connect_time: 300, match_begin_countdown: 30 },
+    settings: { map: input.map, connect_time: 300, match_begin_countdown: 30, ...(input.teamSize ? { team_size: input.teamSize } : {}) },
     webhooks: {
       match_end_url: input.matchEndUrl,
       ...(input.roundEndUrl ? { round_end_url: input.roundEndUrl } : {}),
@@ -155,7 +162,7 @@ export type Cs2MatchPlayerStats = {
 export type Cs2Match = {
   id: string; game_server_id: string;
   team1: { name: string; stats?: { score?: number } }; team2: { name: string; stats?: { score?: number } };
-  players: { steam_id_64: string; team: "team1" | "team2" | "spectator"; connected?: boolean; stats?: Cs2MatchPlayerStats }[];
+  players: { steam_id_64: string; team: "team1" | "team2" | "spectator"; connected?: boolean; kicked?: boolean; disconnected_at?: number | null; stats?: Cs2MatchPlayerStats }[];
   settings?: { map?: string | null };
   rounds_played?: number; finished?: boolean; cancel_reason?: string | null;
 };
