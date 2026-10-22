@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <AssemblyName>AceBridge</AssemblyName>
+    <RootNamespace>AceBridge</RootNamespace>
+    <Version>0.1.0</Version>
+    <CopyLocalLockFileAssemblies>false</CopyLocalLockFileAssemblies>
+    <GenerateDependencyFile>false</GenerateDependencyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <!-- Provided by CounterStrikeSharp on the server: compile against it, do not ship it. -->
+    <PackageReference Include="CounterStrikeSharp.API" Version="1.0.377">
+      <PrivateAssets>all</PrivateAssets>
+      <ExcludeAssets>runtime</ExcludeAssets>
+    </PackageReference>
+  </ItemGroup>
+</Project>

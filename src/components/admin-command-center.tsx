@@ -475,6 +475,10 @@ export function AdminCommandCenter({
               {count !== null ? <span className="acx-count">{count}</span> : null}
             </a>
           ))}
+          <a href="/admin/servers" className="acx-nav-ext">
+            <span>{admin.hebrew ? "שרתים" : "Servers"}</span>
+            <span className="acx-count" aria-hidden="true">↗</span>
+          </a>
         </nav>
         <div className="acx-env">
           <p className="acx-label">{t("envTitle")}</p>

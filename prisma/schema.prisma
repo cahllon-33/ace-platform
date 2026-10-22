@@ -232,6 +232,9 @@ model Match {
   winnerTeamId  String?
   source        String         @default("unverified")
   ratingApplied Boolean        @default(false)
+  /// DatHost CS2 match id when the match ran on a DatHost server (webhook idempotency key).
+  externalId    String?        @unique
+  gameServerId  String?
   startedAt     DateTime?
   endedAt       DateTime?
   createdAt     DateTime       @default(now())
@@ -265,6 +268,7 @@ model MatchPlayer {
   multi3k        Int?
   multi4k        Int?
   multi5k        Int?
+  mvps           Int?
   match          Match             @relation(fields: [matchId], references: [id], onDelete: Cascade)
   user           User              @relation(fields: [userId], references: [id], onDelete: Cascade)
   weapons        MatchWeaponStat[]
@@ -418,4 +422,18 @@ model Notification {
   user      User      @relation(fields: [userId], references: [id], onDelete: Cascade)
 
   @@index([userId, readAt])
+}
+
+/// Raw events from the A.C.E. CounterStrikeSharp bridge plugin (HMAC-verified). eventId makes delivery idempotent.
+model Cs2PluginEvent {
+  id         String   @id @default(cuid())
+  eventId    String   @unique
+  serverId   String
+  type       String
+  matchId    String?
+  payload    Json
+  receivedAt DateTime @default(now())
+
+  @@index([serverId, receivedAt])
+  @@index([matchId])
 }
