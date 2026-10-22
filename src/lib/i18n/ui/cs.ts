@@ -483,6 +483,15 @@ export const UI_CS: Ui = {
       "watch": "Sledovat živě"
     }
   },
+  "r46": {
+    "aria": "Za čím A.C.E. stojí",
+    "fair": "Ochrana férové hry",
+    "fairSub": "Přihlášení přes Steam, zveřejněná pravidla a hlášení hráčů kontrolovaná administrátory.",
+    "calib": "Soutěžní kalibrace",
+    "calibSub": "Umisťovací zápasy a veřejný žebříček RP od 100 do 3 000.",
+    "elite": "Elitní hráči",
+    "eliteSub": "Deset úrovní a pět prestižních odznaků, získaných jen přes RP."
+  },
   "r45": {
     "title": "Za hranicí Legend",
     "lede": "Pět prestižních odznaků nad A.C.E. Legend, jeden každých 200 RP od 2 150 do 2 950. Získáš je jen hraním.",

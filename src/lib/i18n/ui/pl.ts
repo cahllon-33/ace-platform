@@ -483,6 +483,15 @@ export const UI_PL: Ui = {
       "watch": "Oglądaj na żywo"
     }
   },
+  "r46": {
+    "aria": "Za czym stoi A.C.E.",
+    "fair": "Ochrona fair play",
+    "fairSub": "Logowanie przez Steam, opublikowane zasady i zgłoszenia graczy sprawdzane przez adminów.",
+    "calib": "Kalibracja rywalizacji",
+    "calibSub": "Mecze kwalifikacyjne i publiczna drabinka RP od 100 do 3000.",
+    "elite": "Elitarni gracze",
+    "eliteSub": "Dziesięć poziomów i pięć odznak prestiżu, zdobywanych tylko przez RP."
+  },
   "r45": {
     "title": "Ponad Legend",
     "lede": "Pięć odznak prestiżu powyżej A.C.E. Legend, co 200 RP od 2150 do 2950. Zdobywane wyłącznie grą.",

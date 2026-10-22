@@ -483,6 +483,15 @@ export const UI_HR: Ui = {
       "watch": "Gledaj uživo"
     }
   },
+  "r46": {
+    "aria": "Što A.C.E. predstavlja",
+    "fair": "Zaštita fair playa",
+    "fairSub": "Prijava putem Steama, objavljena pravila i prijave igrača koje pregledavaju admini.",
+    "calib": "Natjecateljska kalibracija",
+    "calibSub": "Mečevi za plasman i javna RP ljestvica od 100 do 3.000.",
+    "elite": "Elitni igrači",
+    "eliteSub": "Deset razina i pet prestižnih znački, osvojenih samo kroz RP."
+  },
   "r45": {
     "title": "Iza Legenda",
     "lede": "Pet prestižnih znački iznad A.C.E. Legend, po jedna svakih 200 RP od 2.150 do 2.950. Osvajaju se samo igrom.",

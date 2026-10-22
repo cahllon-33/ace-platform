@@ -483,6 +483,15 @@ export const UI_HU: Ui = {
       "watch": "Élő nézése"
     }
   },
+  "r46": {
+    "aria": "Amit az A.C.E. képvisel",
+    "fair": "Fair play védelem",
+    "fairSub": "Steam-bejelentkezés, nyilvános szabályok és adminok által ellenőrzött játékosbejelentések.",
+    "calib": "Versenyszintű kalibrálás",
+    "calibSub": "Besorolási meccsek és nyilvános RP-létra 100-tól 3000-ig.",
+    "elite": "Elit játékosok",
+    "eliteSub": "Tíz szint és öt presztízsjelvény, csak RP-vel megszerezve."
+  },
   "r45": {
     "title": "Legenden túl",
     "lede": "Öt presztízsjelvény az A.C.E. Legend felett, 200 RP-nként 2150 és 2950 között. Csak játékkal szerezhető.",

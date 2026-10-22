@@ -483,6 +483,15 @@ export const UI_ID: Ui = {
       "watch": "Tonton langsung"
     }
   },
+  "r46": {
+    "aria": "Apa arti A.C.E.",
+    "fair": "Perlindungan Fair Play",
+    "fairSub": "Masuk lewat Steam, aturan terbuka, dan laporan pemain yang ditinjau admin.",
+    "calib": "Kalibrasi Kompetitif",
+    "calibSub": "Pertandingan penempatan dan tangga RP publik dari 100 hingga 3.000.",
+    "elite": "Pemain Elite",
+    "eliteSub": "Sepuluh tier dan lima lencana prestise, hanya didapat lewat RP."
+  },
   "r45": {
     "title": "Melampaui Legend",
     "lede": "Lima lencana prestise di atas A.C.E. Legend, satu setiap 200 RP dari 2.150 hingga 2.950. Hanya didapat dengan bermain.",

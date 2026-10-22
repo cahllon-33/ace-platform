@@ -483,6 +483,15 @@ export const UI_DE: Ui = {
       "watch": "Live ansehen"
     }
   },
+  "r46": {
+    "aria": "Wofür A.C.E. steht",
+    "fair": "Fair-Play-Schutz",
+    "fairSub": "Steam-Anmeldung, veröffentlichte Regeln und Spielermeldungen, geprüft von Admins.",
+    "calib": "Kompetitive Kalibrierung",
+    "calibSub": "Platzierungsspiele und eine öffentliche RP-Rangliste von 100 bis 3.000.",
+    "elite": "Elite-Spieler",
+    "eliteSub": "Zehn Stufen und fünf Prestige-Abzeichen, nur über RP verdient."
+  },
   "r45": {
     "title": "Jenseits von Legend",
     "lede": "Fünf Prestige-Abzeichen über A.C.E. Legend, alle 200 RP von 2.150 bis 2.950. Nur durch Spielen verdient.",

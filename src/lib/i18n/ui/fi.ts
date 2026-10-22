@@ -483,6 +483,15 @@ export const UI_FI: Ui = {
       "watch": "Katso suorana"
     }
   },
+  "r46": {
+    "aria": "Mitä A.C.E. edustaa",
+    "fair": "Reilun pelin suoja",
+    "fairSub": "Steam-kirjautuminen, julkiset säännöt ja ylläpidon tarkistamat pelaajailmoitukset.",
+    "calib": "Kilpailullinen kalibrointi",
+    "calibSub": "Sijoitusottelut ja julkinen RP-tikkaat 100–3 000.",
+    "elite": "Eliittipelaajat",
+    "eliteSub": "Kymmenen tasoa ja viisi arvomerkkiä, ansaittu vain RP:llä."
+  },
   "r45": {
     "title": "Legendin tuolla puolen",
     "lede": "Viisi arvomerkkiä A.C.E. Legendin yläpuolella, yksi 200 RP:n välein 2 150–2 950. Ansaitaan vain pelaamalla.",

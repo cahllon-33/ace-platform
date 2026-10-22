@@ -483,6 +483,15 @@ export const UI_ES: Ui = {
       "watch": "Ver en directo"
     }
   },
+  "r46": {
+    "aria": "Lo que representa A.C.E.",
+    "fair": "Protección del juego limpio",
+    "fairSub": "Inicio con Steam, reglas publicadas y reportes de jugadores revisados por admins.",
+    "calib": "Calibración competitiva",
+    "calibSub": "Partidas de posicionamiento y una escalera pública de RP de 100 a 3.000.",
+    "elite": "Jugadores de élite",
+    "eliteSub": "Diez rangos y cinco insignias de prestigio, ganados solo con RP."
+  },
   "r45": {
     "title": "Más allá de Legend",
     "lede": "Cinco insignias de prestigio por encima de A.C.E. Legend, una cada 200 RP de 2.150 a 2.950. Solo se ganan jugando.",

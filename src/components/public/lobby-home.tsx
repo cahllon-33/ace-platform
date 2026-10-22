@@ -2,6 +2,7 @@ import { headers } from "next/headers";
 import { HomeLiveBlock } from "@/components/live-block";
 import { loadLive, requestHost } from "@/server/live";
 import { HomeHeroV2, HomePlansV2, HomeRanksV2, HomeStepsV2 } from "@/components/public/home-v2";
+import { BrandPillars } from "@/components/public/brand-pillars";
 import { HeroRankStage } from "@/components/hero-rank-stage";
 import { effectiveRankArt } from "@/server/rank-art";
 import { guardDisplayName } from "@/lib/display-name-guard";
@@ -69,6 +70,7 @@ async function LobbyHomeDynamic() {
           ) : undefined
         }
       />
+      <BrandPillars ui={ui} />
       <HomeStepsV2 ui={ui} />
       <HomeRanksV2 ui={ui} />
       <HomeLiveBlock feeds={broadcast.feeds} host={requestHost(h)} copy={ui.r41b.lv} />

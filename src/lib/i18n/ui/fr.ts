@@ -483,6 +483,15 @@ export const UI_FR: Ui = {
       "watch": "Regarder en direct"
     }
   },
+  "r46": {
+    "aria": "Ce que défend A.C.E.",
+    "fair": "Protection du fair-play",
+    "fairSub": "Connexion Steam, règles publiées et signalements de joueurs examinés par les admins.",
+    "calib": "Calibrage compétitif",
+    "calibSub": "Matchs de placement et une échelle RP publique de 100 à 3 000.",
+    "elite": "Joueurs d'élite",
+    "eliteSub": "Dix rangs et cinq badges de prestige, gagnés uniquement par le RP."
+  },
   "r45": {
     "title": "Au-delà de Legend",
     "lede": "Cinq badges de prestige au-dessus d'A.C.E. Legend, un tous les 200 RP de 2 150 à 2 950. Gagnés uniquement en jouant.",

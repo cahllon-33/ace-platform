@@ -483,6 +483,15 @@ export const UI_TR: Ui = {
       "watch": "Canlı izle"
     }
   },
+  "r46": {
+    "aria": "A.C.E. neyi temsil eder",
+    "fair": "Adil Oyun Koruması",
+    "fairSub": "Steam ile giriş, yayımlanmış kurallar ve yöneticilerin incelediği oyuncu bildirimleri.",
+    "calib": "Rekabetçi Kalibrasyon",
+    "calibSub": "Yerleştirme maçları ve 100'den 3.000'e herkese açık RP merdiveni.",
+    "elite": "Elit Oyuncular",
+    "eliteSub": "On kademe ve beş prestij rozeti; yalnızca RP ile kazanılır."
+  },
   "r45": {
     "title": "Legend'in ötesi",
     "lede": "A.C.E. Legend'in üzerinde beş prestij rozeti; 2.150'den 2.950'ye her 200 RP'de bir. Yalnızca oynayarak kazanılır.",

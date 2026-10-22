@@ -483,6 +483,15 @@ export const UI_RO: Ui = {
       "watch": "Urmărește live"
     }
   },
+  "r46": {
+    "aria": "Ce reprezintă A.C.E.",
+    "fair": "Protecția fair play",
+    "fairSub": "Autentificare Steam, reguli publice și raportări ale jucătorilor verificate de admini.",
+    "calib": "Calibrare competitivă",
+    "calibSub": "Meciuri de plasare și un clasament RP public de la 100 la 3.000.",
+    "elite": "Jucători de elită",
+    "eliteSub": "Zece niveluri și cinci insigne de prestigiu, câștigate doar prin RP."
+  },
   "r45": {
     "title": "Dincolo de Legend",
     "lede": "Cinci insigne de prestigiu peste A.C.E. Legend, câte una la fiecare 200 RP între 2.150 și 2.950. Se câștigă doar jucând.",

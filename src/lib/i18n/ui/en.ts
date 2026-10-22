@@ -424,6 +424,15 @@ export const UI_EN = {
       "watch": "Watch live"
     }
   },
+  "r46": {
+    "aria": "What A.C.E. stands for",
+    "fair": "Fair Play Protection",
+    "fairSub": "Steam sign-in, published rules and player reports reviewed by admins.",
+    "calib": "Competitive Calibration",
+    "calibSub": "Placement matches and a public RP ladder from 100 to 3,000.",
+    "elite": "Elite Players",
+    "eliteSub": "Ten tiers and five prestige badges, earned only through RP."
+  },
   "r45": {
     "title": "Beyond Legend",
     "lede": "Five prestige badges above A.C.E. Legend, one every 200 RP from 2,150 to 2,950. Earned only by playing.",

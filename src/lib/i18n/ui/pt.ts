@@ -483,6 +483,15 @@ export const UI_PT: Ui = {
       "watch": "Ver em direto"
     }
   },
+  "r46": {
+    "aria": "O que a A.C.E. representa",
+    "fair": "Proteção do Fair Play",
+    "fairSub": "Início de sessão Steam, regras publicadas e denúncias de jogadores revistas por admins.",
+    "calib": "Calibração Competitiva",
+    "calibSub": "Partidas de colocação e uma escada pública de RP de 100 a 3.000.",
+    "elite": "Jogadores de Elite",
+    "eliteSub": "Dez níveis e cinco insígnias de prestígio, conquistados apenas com RP."
+  },
   "r45": {
     "title": "Para lá do Legend",
     "lede": "Cinco insígnias de prestígio acima do A.C.E. Legend, uma a cada 200 RP de 2.150 a 2.950. Conquistadas apenas a jogar.",

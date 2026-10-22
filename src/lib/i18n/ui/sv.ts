@@ -483,6 +483,15 @@ export const UI_SV: Ui = {
       "watch": "Titta live"
     }
   },
+  "r46": {
+    "aria": "Vad A.C.E. står för",
+    "fair": "Skydd för schysst spel",
+    "fairSub": "Steam-inloggning, publicerade regler och spelarrapporter som granskas av admins.",
+    "calib": "Tävlingskalibrering",
+    "calibSub": "Placeringsmatcher och en offentlig RP-stege från 100 till 3 000.",
+    "elite": "Elitspelare",
+    "eliteSub": "Tio nivåer och fem prestigemärken, förtjänade enbart genom RP."
+  },
   "r45": {
     "title": "Bortom Legend",
     "lede": "Fem prestigemärken över A.C.E. Legend, ett var 200:e RP från 2 150 till 2 950. Förtjänas bara genom att spela.",

@@ -483,6 +483,15 @@ export const UI_ZH: Ui = {
       "watch": "观看直播"
     }
   },
+  "r46": {
+    "aria": "A.C.E. 的坚持",
+    "fair": "公平竞技保护",
+    "fairSub": "Steam 登录、公开规则，以及由管理员审核的玩家举报。",
+    "calib": "竞技校准",
+    "calibSub": "定级赛与 100 到 3,000 的公开 RP 天梯。",
+    "elite": "精英玩家",
+    "eliteSub": "十个段位与五枚荣耀徽章，只能通过 RP 获得。"
+  },
   "r45": {
     "title": "超越 Legend",
     "lede": "A.C.E. Legend 之上的五枚荣耀徽章，从 2,150 到 2,950 RP 每 200 RP 一枚。只能通过比赛获得。",
