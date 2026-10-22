@@ -4,14 +4,14 @@ import { useCallback, useEffect, useRef, useState, useTransition } from "react";
 import { useAdminI18n } from "@/components/admin-locale";
 import { SRV48_EN, SRV48_HE, type Srv48Key } from "@/lib/admin-servers-r48-i18n";
 import {
-  consoleRun, consoleTail, createFolder, deleteFile, listFiles, loadOverview, moveFile, pluginStatus, power, readTextFile, saveSettings, syncFiles, writeTextFile,
+  consoleRun, consoleTail, createFolder, deleteFile, listFiles, loadOverview, moveFile, ownerJoinUrl, pluginStatus, power, readTextFile, saveSettings, syncFiles, writeTextFile,
   type Overview, type PluginStatus, type SettingsInput,
 } from "@/server/dathost-admin-actions";
 import { cancelLobbyAction, createTestLobbyAction, testBotsAction, testLobbiesAction } from "@/server/queue-actions";
 import type { FileEntry, SettingsView } from "@/server/dathost";
 import type { LobbyView } from "@/server/queue-engine";
 import { OpsTab, type OpsTabId } from "@/components/admin-server-ops";
-import { launchSteam, useAutoConnect } from "@/components/auto-connect";
+import { joinWith, launchSteam, useAutoConnect } from "@/components/auto-connect";
 import "./admin-server-tools.css";
 
 type Tab = "console" | "settings" | "files" | "plugins" | "usage" | "power" | "test" | OpsTabId;
@@ -46,6 +46,19 @@ export function AdminServerTools({ maps, initialTab = "console" }: { maps: strin
   );
 }
 
+/** Prominent owner "Join server" (overview + console header). Password is fetched server-side on click, never kept. */
+export function JoinServerButton({ onError }: { onError?: (e: string | null) => void }) {
+  const { hebrew } = useAdminI18n();
+  const t = (k: Srv48Key) => (hebrew ? SRV48_HE : SRV48_EN)[k];
+  const [pending, start] = useTransition();
+  return (
+    <button type="button" className="acx-btn is-gold s48-joinsrv" title={t("joinServerNote")} aria-label={t("joinServerNote")} disabled={pending}
+      onClick={() => start(async () => { const e = await joinWith(ownerJoinUrl); onError?.(e); })}>
+      <span aria-hidden="true">▶</span> {t("joinServer")}
+    </button>
+  );
+}
+
 type P = { t: (k: Srv48Key) => string; onError: (e: string | null) => void };
 
 function ConsoleTab({ t, maps, onError }: P & { maps: string[] }) {
@@ -72,6 +85,7 @@ function ConsoleTab({ t, maps, onError }: P & { maps: string[] }) {
       <div className="s48-row">
         <span className={`s48-live${live ? " is-on" : ""}`}><span aria-hidden="true" />{live ? t("live") : t("paused")}</span>
         <button type="button" className="acx-btn" onClick={() => setLive((v) => !v)}>{live ? t("pause") : t("resume")}</button>
+        <JoinServerButton onError={onError} />
       </div>
       <pre ref={ref} className="asv-log s48-log" tabIndex={0} onScroll={(e) => { const el = e.currentTarget; stick.current = el.scrollHeight - el.scrollTop - el.clientHeight < 40; }}>{lines.join("\n") || "—"}</pre>
       <form className="asv-cmd" onSubmit={(e) => { e.preventDefault(); if (cmd.trim()) { run(cmd); setCmd(""); } }}>

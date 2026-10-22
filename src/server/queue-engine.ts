@@ -200,8 +200,9 @@ export async function launchLobby(lobbyId: string) {
       webhookAuthorization: `Bearer ${secret}`,
       ...(lobby.isTest ? {} : { teamSize: 5 }),
     });
-    const [server, raw] = await Promise.all([api.getServer().catch(() => null), api.getRaw().catch(() => null)]);
-    const connectUrl = server ? buildConnectUrl(server.address, raw?.cs2_settings?.password) : null;
+    const target = await connectTarget(api);
+    const connectUrl = target?.connectUrl ?? null;
+    const server = target ? { address: target.address } : null;
     const created = await prisma.match.create({
       data: {
         externalId: match.id, gameServerId: cfg.serverId, round: 0, slot: 0, state: "IN_PROGRESS", mapName: lobby.map,
@@ -237,6 +238,18 @@ async function penalizeLeavers(lobbyId: string, m: Cs2Match, now: Date) {
   });
 }
 
+/** steam://connect target (address + password if set). One retry so players get auto-launched right after the veto. */
+async function connectTarget(api: ReturnType<typeof dathost>) {
+  for (let i = 0; i < 2; i++) {
+    const raw = await api.getRaw().catch(() => null);
+    if (raw?.ip && raw.ports?.game) {
+      const address = `${raw.ip}:${raw.ports.game}`;
+      return { address, connectUrl: buildConnectUrl(address, raw.cs2_settings?.password) };
+    }
+  }
+  return null;
+}
+
 /** LIVE lobbies: polled every 15 s for live score; done when finished (webhook or poll), cancelled when DatHost cancels. */
 async function pollLive(now: Date) {
   const prisma = getPrisma();
@@ -246,6 +259,11 @@ async function pollLive(now: Date) {
     const claim = await prisma.queueLobby.updateMany({ where: { id: l.id, checkedAt: l.checkedAt }, data: { checkedAt: now } });
     if (!claim.count || !l.dathostMatchId) continue;
     const cfg = readDathostConfig();
+    // Backfill: if the server address was unavailable at launch, fill it so seated players still auto-launch.
+    if (!l.connectUrl && cfg) {
+      const target = await connectTarget(dathost(cfg));
+      if (target) await prisma.queueLobby.update({ where: { id: l.id }, data: { connectUrl: target.connectUrl, serverAddress: target.address } });
+    }
     const dm = cfg ? await dathost(cfg).getMatch(l.dathostMatchId).catch(() => null) : null;
     const m = l.matchId ? await prisma.match.findUnique({ where: { id: l.matchId }, select: { state: true } }) : null;
     if (dm) await mirrorLiveScore(dm);

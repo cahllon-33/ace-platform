@@ -56,3 +56,5 @@
 .s48-list li.is-alert{background:rgba(160,30,20,.18)}
 .s48-join{display:grid;justify-items:start;gap:.4rem;padding:.6rem 0}
 .s48-join-btn{font-size:1.05rem;padding:.8rem 1.8rem}
+.s48-joinsrv{font-size:1.05rem;padding:.7rem 1.3rem;font-weight:800;box-shadow:0 0 0 2px rgba(240,190,60,.35)}
+.s48-console .s48-joinsrv{margin-inline-start:auto}

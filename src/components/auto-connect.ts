@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import { autoLaunchKey } from "@/lib/queue";
 
 /** Opens the steam:// connect URL (Steam launches CS2 and joins). Safe to call from a click handler. */
@@ -26,14 +26,22 @@ function once(lobbyId: string) {
  */
 export function useAutoConnect(lobbyId: string | null, url: string | null) {
   const [phase, setPhase] = useState<"idle" | "launching" | "hint">("idle");
-  const fired = useRef<string | null>(null);
   useEffect(() => {
-    if (!lobbyId || !url || fired.current === lobbyId) return;
-    fired.current = lobbyId;
-    const first = once(lobbyId);
-    const t1 = setTimeout(() => { if (first) { setPhase("launching"); launchSteam(url); } else setPhase("hint"); }, 0);
-    const t2 = setTimeout(() => setPhase("hint"), first ? 4000 : 0);
-    return () => { clearTimeout(t1); clearTimeout(t2); };
+    if (!lobbyId || !url) return;
+    // The once-flag is taken inside the timer, so a cancelled run (Strict Mode, re-render) never burns the launch.
+    let t2: ReturnType<typeof setTimeout> | undefined;
+    const t1 = setTimeout(() => {
+      if (once(lobbyId)) { setPhase("launching"); launchSteam(url); t2 = setTimeout(() => setPhase("hint"), 4000); }
+      else setPhase("hint");
+    }, 0);
+    return () => { clearTimeout(t1); if (t2) clearTimeout(t2); };
   }, [lobbyId, url]);
   return phase;
+}
+
+/** R48d owner "Join server": fetches the connect URL (with password) on click only, then launches. */
+export async function joinWith(fetchUrl: () => Promise<{ ok: true; data: string } | { ok: false; error: string }>) {
+  const r = await fetchUrl();
+  if (r.ok) launchSteam(r.data);
+  return r.ok ? null : r.error;
 }

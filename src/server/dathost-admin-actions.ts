@@ -1,6 +1,7 @@
 "use server";
 
 import { getPrisma } from "@/server/db";
+import { buildConnectUrl } from "@/lib/queue";
 import { readAdminActor, readIsSteamOwner } from "@/server/admin-gate";
 import {
   dathost, DathostError, GAME_MODES, MAPS_SOURCES, readDathostConfig, safeServerPath, toSettingsView,
@@ -66,6 +67,17 @@ export async function loadOverview() {
       },
     };
   });
+}
+
+/**
+ * R48d: owner "Join server" — steam://connect to the DatHost server at any time, with the server password appended
+ * server-side when one is set. Only the owner receives it; the password is never logged or audited.
+ */
+export async function ownerJoinUrl() {
+  return guard<string>(async (api) => {
+    const raw = await api.getRaw();
+    return buildConnectUrl(`${raw.ip}:${raw.ports.game}`, raw.cs2_settings?.password);
+  }, ["server.join", "owner join (steam://connect)"]);
 }
 
 /* ---------- settings ---------- */

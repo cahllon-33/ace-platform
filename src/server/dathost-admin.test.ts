@@ -1,7 +1,7 @@
 import { describe, expect, it, vi } from "vitest";
 vi.mock("@/server/admin-gate", () => ({ readIsSteamOwner: async () => false, readAdminActor: async () => "t" }));
 vi.mock("@/server/db", () => ({ getPrisma: () => ({}) }));
-import { buildSettingsFields, consoleRun, deleteFile } from "@/server/dathost-admin-actions";
+import { buildSettingsFields, consoleRun, deleteFile, ownerJoinUrl } from "@/server/dathost-admin-actions";
 import { safeServerPath, toSettingsView, type RawServerFull } from "@/server/dathost";
 
 describe("safeServerPath", () => {
@@ -28,5 +28,6 @@ describe("settings", () => {
   it("owner-only actions refuse without an owner session", async () => {
     expect(await consoleRun("status")).toEqual({ ok: false, error: "owner-only" });
     expect(await deleteFile("cfg/x.cfg", "cfg/x.cfg")).toEqual({ ok: false, error: "owner-only" });
+    expect(await ownerJoinUrl()).toEqual({ ok: false, error: "owner-only" });
   });
 });
