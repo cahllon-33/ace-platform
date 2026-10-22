@@ -45,3 +45,14 @@
 .ms49-btn{display:inline-flex;align-items:center;min-height:40px;padding:0 16px;border-radius:10px;background:linear-gradient(180deg,#ffd76a,#c9a13c);color:#141414;font-weight:800;font-size:.85rem;text-decoration:none}
 .ms49-btn.is-ghost{background:transparent;border:1px solid rgba(255,215,106,.45);color:#ffd76a}
 .ms49-note{font-size:.75rem;color:#a9aab2}
+
+/* R50 Discord link */
+.d40-discord { display: flex; align-items: center; gap: 1rem; margin: 1.25rem 0; padding: 1rem 1.25rem; border: 1px solid rgba(88, 101, 242, 0.35); border-radius: 14px; background: linear-gradient(120deg, rgba(88, 101, 242, 0.14), rgba(10, 12, 20, 0.6)); }
+.d40-discord > .min-w-0 { flex: 1; }
+.d40-discord-mark { display: grid; place-items: center; width: 48px; height: 48px; flex: none; border-radius: 12px; background: #5865f2; color: #fff; }
+.d40-discord-msg { margin-top: 0.35rem; font-size: 0.85rem; color: #c9cdfb; }
+.d40-discord-btn { flex: none; padding: 0.55rem 1rem; border-radius: 10px; background: #5865f2; color: #fff; font-weight: 600; font-size: 0.9rem; cursor: pointer; border: 1px solid transparent; }
+.d40-discord-btn:hover { background: #4752c4; }
+.d40-discord-btn.is-ghost { background: transparent; border-color: rgba(255, 255, 255, 0.25); }
+.d40-discord-btn.is-off { background: rgba(255, 255, 255, 0.08); color: rgba(255, 255, 255, 0.6); cursor: default; }
+@media (max-width: 640px) { .d40-discord { flex-wrap: wrap; } }

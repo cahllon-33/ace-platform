@@ -33,6 +33,8 @@ import { MembershipManage } from "@/components/membership-manage";
 import { getLocaleId, getText, getUi } from "@/server/locale";
 import { SITE_LOCALES } from "@/lib/languages";
 import { readSessionUser } from "@/server/session";
+import { discordStrings } from "@/lib/discord-i18n";
+import { readDiscordOAuthConfig } from "@/server/discord";
 
 export async function generateMetadata(): Promise<Metadata> {
   const text = await getText();
@@ -43,7 +45,7 @@ export async function generateMetadata(): Promise<Metadata> {
 
 export const instant = false;
 
-export default async function DashboardPage() {
+export default async function DashboardPage({ searchParams }: { searchParams: Promise<Record<string, string | string[] | undefined>> }) {
   await connection();
   let user = null;
   try {
@@ -76,6 +78,7 @@ export default async function DashboardPage() {
   ]);
   const d = ui.r40.dash;
   const localeId = await getLocaleId();
+  const sp = await searchParams;
   const lc = SITE_LOCALES.find((l) => l.id === localeId)?.code ?? "en";
   const prog = rankProgress(user.competitiveRating);
   const games = user.wins + user.losses;
@@ -111,6 +114,32 @@ export default async function DashboardPage() {
         <Link href="/ranks">{d.qRanks}<span aria-hidden="true">→</span></Link>
         <Link href="/play">{d.qPlay}<span aria-hidden="true">→</span></Link>
       </nav>
+
+      {(() => {
+        const ds = discordStrings(localeId);
+        const st = typeof sp.discord === "string" ? sp.discord : "";
+        const msg = ({ linked: ds.sLinked, "linked-nojoin": ds.sNoJoin, denied: ds.sDenied, state: ds.sFailed, failed: ds.sFailed, taken: ds.sTaken, unlinked: ds.sUnlinked, unavailable: ds.unavailable } as Record<string, string>)[st];
+        const canLink = !!readDiscordOAuthConfig("https://x");
+        return (
+          <section id="discord" className="d40-discord" aria-labelledby="d40-discord-t">
+            <div className="d40-discord-mark" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor"><path d="M20.3 4.4A19.6 19.6 0 0 0 15.4 3l-.6 1.3a18 18 0 0 0-5.6 0L8.6 3a19.6 19.6 0 0 0-4.9 1.5C.6 9.1-.3 13.7.1 18.2a19.8 19.8 0 0 0 6 3l1.3-2.1a12.8 12.8 0 0 1-2-1l.5-.4a14 14 0 0 0 12.2 0l.5.4-2 1 1.3 2.1a19.7 19.7 0 0 0 6-3c.5-5.2-.9-9.8-3.6-13.8ZM8 15.4c-1.2 0-2.2-1.1-2.2-2.4s1-2.4 2.2-2.4 2.2 1.1 2.2 2.4-1 2.4-2.2 2.4Zm8 0c-1.2 0-2.2-1.1-2.2-2.4s1-2.4 2.2-2.4 2.2 1.1 2.2 2.4-1 2.4-2.2 2.4Z" /></svg>
+            </div>
+            <div className="min-w-0">
+              <h2 id="d40-discord-t" className="d40-h2">{ds.title}</h2>
+              <p className="d40-stat-s">{user.discordId ? interpolate(ds.linkedAs, { name: user.discordUsername || user.discordId }) : ds.lede}</p>
+              {msg ? <p className="d40-discord-msg" role="status">{msg}</p> : null}
+            </div>
+            {user.discordId ? (
+              <form action="/api/auth/discord/unlink" method="post"><button type="submit" className="d40-discord-btn is-ghost">{ds.unlink}</button></form>
+            ) : canLink ? (
+              <a className="d40-discord-btn" href="/api/auth/discord">{ds.link}</a>
+            ) : (
+              <span className="d40-discord-btn is-off" aria-disabled="true">{ds.unavailable}</span>
+            )}
+          </section>
+        );
+      })()}
 
       <section className="d40-stats" aria-label={copy.title}>
         <article className="d40-stat d40-stat-wide">

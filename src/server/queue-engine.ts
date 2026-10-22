@@ -12,6 +12,8 @@ import {
 } from "@/lib/queue";
 import type { Cs2Match } from "@/server/dathost";
 import { healthTick } from "@/server/server-health";
+import { connectDetails, randomServerPassword } from "@/server/discord";
+import { cleanupMatchDiscord, readLobbyDiscord, setupMatchDiscord } from "@/server/discord-match";
 
 /** States that hold the (single) DatHost server. */
 export const ACTIVE_STATES = ["READY", "VETO", "LAUNCHING", "LIVE"] as const;
@@ -196,6 +198,10 @@ export async function launchLobby(lobbyId: string) {
     const pre = await api.getRaw().catch(() => null);
     const fix = pre ? gotvFix(pre.cs2_settings) : null;
     if (fix) await api.update(fix).catch(() => undefined);
+    // R50: fresh random server password for every match, persisted in DatHost and applied live before the match is created.
+    const serverPassword = randomServerPassword();
+    await api.update({ "cs2_settings.password": serverPassword });
+    await api.console(`sv_password "${serverPassword}"`).catch(() => undefined);
     const match = await api.createMatch({
       team1: { name: "A.C.E Alpha", steamIds: ids("team1") },
       team2: { name: "A.C.E Bravo", steamIds: ids("team2") },
@@ -204,6 +210,7 @@ export async function launchLobby(lobbyId: string) {
       roundEndUrl: `${base}/api/dathost/match-webhook`,
       webhookAuthorization: `Bearer ${secret}`,
       ...(lobby.isTest ? {} : { teamSize: 5 }),
+      password: serverPassword,
     });
     const target = await connectTarget(api);
     const connectUrl = target?.connectUrl ?? null;
@@ -218,8 +225,9 @@ export async function launchLobby(lobbyId: string) {
     });
     await prisma.queueLobby.update({
       where: { id: lobbyId },
-      data: { state: "LIVE", error: "", dathostMatchId: match.id, matchId: created.id, connectUrl, serverAddress: server?.address ?? null, checkedAt: new Date() },
+      data: { state: "LIVE", error: "", dathostMatchId: match.id, matchId: created.id, connectUrl, serverAddress: server?.address ?? null, serverPassword, checkedAt: new Date() },
     });
+    await setupMatchDiscord(lobbyId).catch(() => undefined);
   } catch (e) {
     await fail(e instanceof DathostError ? e.message : "dathost-create-failed");
   }
@@ -283,9 +291,11 @@ async function pollLive(now: Date) {
       await prisma.queueLobby.update({ where: { id: l.id }, data: { state: "CANCELLED", error: `dathost:${dm.cancel_reason}`.slice(0, 300), endedAt: now } });
       if (l.matchId) await prisma.match.updateMany({ where: { id: l.matchId, state: "IN_PROGRESS" }, data: { state: "CANCELLED", endedAt: now } });
       if (!l.isTest) await penalizeLeavers(l.id, dm, now);
+      await cleanupMatchDiscord(l.id).catch(() => undefined);
     } else if (dm?.finished || m?.state === "COMPLETED") {
       await prisma.queueLobby.update({ where: { id: l.id }, data: { state: "DONE", endedAt: now, ...(dm ? { scoreA: dm.team1?.stats?.score ?? null, scoreB: dm.team2?.stats?.score ?? null } : {}) } });
       if (dm && !l.isTest) await penalizeLeavers(l.id, dm, now);
+      await cleanupMatchDiscord(l.id).catch(() => undefined);
     }
   }
 }
@@ -295,7 +305,9 @@ async function pollLive(now: Date) {
 export type LobbySeatView = { userId: string; name: string; avatarUrl: string | null; rp: number; level: number; art: RankArt; team: Side; accepted: boolean; captain: boolean; me: boolean };
 export type LobbyView = {
   id: string; state: string; isTest: boolean; readyDeadline: string | null; vetoDeadline: string | null; vetoTurn: Side | null;
-  myTurn: boolean; pool: string[]; bans: Ban[]; map: string | null; connectUrl: string | null; address: string | null; watchUrl: string | null; error: string;
+  myTurn: boolean; pool: string[]; bans: Ban[]; map: string | null; connectUrl: string | null; address: string | null;
+  /** R50: only for this match's own players while LIVE. */
+  password: string | null; steamUrl: string | null; consoleLine: string | null; voiceUrl: string | null; watchUrl: string | null; error: string;
   players: LobbySeatView[]; acceptedCount: number;
   scoreA: number | null; scoreB: number | null; rounds: number | null; avg1: number; avg2: number; winChance1: number; region: string;
   result: { won: boolean | null; rpBefore: number | null; rpAfter: number | null; kills: number | null; deaths: number | null; assists: number | null; damage: number | null; mvps: number | null; hs: number | null } | null;
@@ -368,9 +380,13 @@ export async function lobbyView(lobbyId: string, userId: string | null): Promise
   };
   const myTurn = l.state === "VETO" && !!userId && ((turn === "team1" && l.captain1Id === userId) || (turn === "team2" && l.captain2Id === userId));
   const showConnect = l.state === "LIVE" && players.some((p) => p.me);
+  const mySide = l.players.find((p) => p.userId === userId)?.team as Side | undefined;
+  const cd = showConnect && l.serverAddress && l.serverPassword ? connectDetails(l.serverAddress, l.serverPassword) : null;
+  const voiceUrl = showConnect && mySide ? readLobbyDiscord(l.discord)[mySide]?.invite ?? null : null;
   return {
     id: l.id, state: l.state, isTest: l.isTest, readyDeadline: l.readyDeadline?.toISOString() ?? null, vetoDeadline: l.vetoDeadline?.toISOString() ?? null,
     vetoTurn: turn, myTurn, pool: l.mapPool, bans: bansOf(l.bans), map: l.map, connectUrl: showConnect ? normalizeConnectUrl(l.connectUrl) : null, watchUrl: l.state === "LIVE" ? await watchUrl() : null, address: showConnect ? l.serverAddress : null,
+    password: cd ? l.serverPassword : null, steamUrl: cd?.steamUrl ?? null, consoleLine: cd?.console ?? null, voiceUrl,
     error: l.error === "creating" ? "" : l.error, players, acceptedCount: l.players.filter((p) => p.accepted).length,
     scoreA: l.scoreA, scoreB: l.scoreB, rounds: l.roundsPlayed, avg1: avgOf("team1"), avg2: avgOf("team2"), winChance1: winProbability(avgOf("team1"), avgOf("team2")),
     region: "", result: l.state === "DONE" && userId ? await resultFor(l.matchId, userId, l.players.find((p) => p.userId === userId)?.team ?? null, l.scoreA, l.scoreB) : null,
@@ -445,6 +461,7 @@ export async function addTestBots(count: number) {
 /** Owner cancel for a stuck lobby: marks it cancelled (does not touch the DatHost match or delete rows). */
 export async function cancelLobby(lobbyId: string) {
   await getPrisma().queueLobby.updateMany({ where: { id: lobbyId, state: { in: [...ACTIVE_STATES] } }, data: { state: "CANCELLED", error: "owner-cancel" } });
+  await cleanupMatchDiscord(lobbyId).catch(() => undefined);
   return { ok: true as const };
 }
 

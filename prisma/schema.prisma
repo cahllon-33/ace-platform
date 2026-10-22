@@ -98,6 +98,10 @@ model User {
   subscriptionEventAt  DateTime?
   /// R49b: the player chose to hide the Steam inventory showcase on their public profile.
   inventoryHidden      Boolean        @default(false)
+  /// R50 linked Discord account (OAuth identify). null = not linked.
+  discordId            String?        @unique
+  discordUsername      String         @default("")
+  discordLinkedAt      DateTime?
   createdAt          DateTime         @default(now())
   updatedAt          DateTime         @updatedAt
 
@@ -490,6 +494,10 @@ model QueueLobby {
   scoreA         Int?
   scoreB         Int?
   roundsPlayed   Int?
+  /// R50 per-match random sv_password (shown only to the match's players).
+  serverPassword String?
+  /// R50 Discord voice channels/invites for this match ({ team1, team2, dms, moved, cleanedAt }).
+  discord        Json?
   endedAt        DateTime?
   createdAt      DateTime           @default(now())
   updatedAt      DateTime           @updatedAt

@@ -130,6 +130,8 @@ export type CreateMatchInput = {
   webhookAuthorization: string;
   /** Seats per side; extra listed SteamIDs become substitutes. */
   teamSize?: number;
+  /** R50 per-match server password (DatHost match setting). */
+  password?: string;
 };
 
 const STEAM64 = /^7656119\d{10}$/;
@@ -146,7 +148,7 @@ export function buildMatchBody(serverId: string, input: CreateMatchInput) {
     team1: { name: input.team1.name.slice(0, 40) },
     team2: { name: input.team2.name.slice(0, 40) },
     players,
-    settings: { map: input.map, connect_time: 300, match_begin_countdown: 30, ...(input.teamSize ? { team_size: input.teamSize } : {}) },
+    settings: { map: input.map, connect_time: 300, match_begin_countdown: 30, ...(input.teamSize ? { team_size: input.teamSize } : {}), ...(input.password ? { password: input.password } : {}) },
     webhooks: {
       match_end_url: input.matchEndUrl,
       ...(input.roundEndUrl ? { round_end_url: input.roundEndUrl } : {}),

@@ -3,6 +3,8 @@
 import { useCallback, useEffect, useRef, useState, useTransition } from "react";
 import { STEAM_AUTH_HREF } from "@/lib/site";
 import { useUi } from "@/components/use-ui";
+import { useI18n } from "@/components/locale-provider";
+import { discordStrings } from "@/lib/discord-i18n";
 import { interpolate } from "@/lib/interpolate";
 import { mapLabel } from "@/lib/queue";
 import { PlayMatchArena } from "@/components/play-match-arena";
@@ -30,6 +32,8 @@ const clock = (s: number) => `${Math.floor(s / 60)}:${String(s % 60).padStart(2,
 
 export function RankedQueue({ signedIn, initial }: { signedIn: boolean; initial: QueueView | null }) {
   const ui = useUi();
+  const ds = discordStrings(useI18n().locale.id);
+  const [cmdCopied, setCmdCopied] = useState(false);
   const r = ui.r48;
   const [view, setView] = useState<QueueView | null>(initial);
   const [error, setError] = useState<string | null>(null);
@@ -232,6 +236,18 @@ export function RankedQueue({ signedIn, initial }: { signedIn: boolean; initial:
                 <p className="r48-mono">
                   <bdi>{interpolate(r.console, { address: activeLobby.address })}</bdi>{" "}
                   <button type="button" className="r48-btn r48-btn-sm" onClick={() => { void navigator.clipboard?.writeText(`connect ${activeLobby.address}`); setCopied(true); setTimeout(() => setCopied(false), 1500); }}>{copied ? b.copied : b.copyIp}</button>
+                </p>
+              ) : null}
+              {activeLobby.voiceUrl || activeLobby.steamUrl ? (
+                <div className="r50-match-links">
+                  {activeLobby.voiceUrl ? <a className="r48-btn r48-btn-sm r50-voice" href={activeLobby.voiceUrl} target="_blank" rel="noopener noreferrer">🎧 {ds.voice}</a> : null}
+                  {activeLobby.steamUrl ? <a className="r48-btn r48-btn-sm" href={activeLobby.steamUrl}>{ds.steam}</a> : null}
+                </div>
+              ) : null}
+              {activeLobby.password && activeLobby.consoleLine ? (
+                <p className="r48-mono">
+                  <span>{ds.password}: </span><bdi dir="ltr">{activeLobby.password}</bdi>{" "}
+                  <button type="button" className="r48-btn r48-btn-sm" onClick={() => { void navigator.clipboard?.writeText(activeLobby.consoleLine ?? ""); setCmdCopied(true); setTimeout(() => setCmdCopied(false), 1500); }}>{cmdCopied ? b.copied : ds.copyCmd}</button>
                 </p>
               ) : null}
               <p className="r48-warn">{b.leaverWarn}</p>
