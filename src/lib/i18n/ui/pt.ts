@@ -630,5 +630,10 @@ export const UI_PT: Ui = {
     "bannedUntil": "Banido da fila até {date}",
     "errBanned": "Estás banido da fila.",
     "errCooldown": "Estás com espera na fila."
+  },
+  "r48c": {
+    "launching": "A abrir o CS2 e a ligar-te…",
+    "hint": "Se o CS2 não abriu, o navegador bloqueou o arranque. Usa Entrar na partida.",
+    "join": "Entrar na partida"
   }
 };

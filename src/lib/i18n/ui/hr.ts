@@ -630,5 +630,10 @@ export const UI_HR: Ui = {
     "bannedUntil": "Zabrana reda do {date}",
     "errBanned": "Zabranjen ti je red.",
     "errCooldown": "Imaš zabranu reda."
+  },
+  "r48c": {
+    "launching": "Pokrećemo CS2 i spajamo te…",
+    "hint": "Ako se CS2 nije otvorio, preglednik je blokirao pokretanje. Koristi Pridruži se meču.",
+    "join": "Pridruži se meču"
   }
 };

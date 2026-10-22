@@ -630,5 +630,10 @@ export const UI_KO: Ui = {
     "bannedUntil": "{date}까지 대기열 금지",
     "errBanned": "대기열 이용이 금지되었습니다.",
     "errCooldown": "대기열 제한 중입니다."
+  },
+  "r48c": {
+    "launching": "CS2를 실행하고 접속하는 중…",
+    "hint": "CS2가 열리지 않으면 브라우저가 실행을 막은 것입니다. 경기 참가를 누르세요.",
+    "join": "경기 참가"
   }
 };

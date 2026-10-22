@@ -630,5 +630,10 @@ export const UI_JA: Ui = {
     "bannedUntil": "{date} までキュー禁止",
     "errBanned": "キューの利用が禁止されています。",
     "errCooldown": "キュー待機中です。"
+  },
+  "r48c": {
+    "launching": "CS2 を起動して接続しています…",
+    "hint": "CS2 が開かない場合はブラウザが起動をブロックしました。「試合に参加」を押してください。",
+    "join": "試合に参加"
   }
 };

@@ -630,5 +630,10 @@ export const UI_FI: Ui = {
     "bannedUntil": "Jonokielto {date} asti",
     "errBanned": "Sinulla on jonokielto.",
     "errCooldown": "Sinulla on jonojäähy."
+  },
+  "r48c": {
+    "launching": "Käynnistetään CS2 ja yhdistetään…",
+    "hint": "Jos CS2 ei avautunut, selain esti käynnistyksen. Käytä Liity otteluun.",
+    "join": "Liity otteluun"
   }
 };

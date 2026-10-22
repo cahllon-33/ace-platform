@@ -630,5 +630,10 @@ export const UI_RO: Ui = {
     "bannedUntil": "Interdicție la coadă până la {date}",
     "errBanned": "Ai interdicție la coadă.",
     "errCooldown": "Ai o pauză de coadă."
+  },
+  "r48c": {
+    "launching": "Pornim CS2 și te conectăm…",
+    "hint": "Dacă CS2 nu s-a deschis, browserul a blocat pornirea. Folosește Intră în meci.",
+    "join": "Intră în meci"
   }
 };

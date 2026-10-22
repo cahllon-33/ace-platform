@@ -54,3 +54,5 @@
 .s48-ban{border:1px solid rgba(255,100,90,.3);border-radius:10px;padding:.8rem;display:grid;gap:.6rem;grid-template-columns:repeat(auto-fill,minmax(min(100%,14rem),1fr));align-items:end}
 .s48-ban legend{font-weight:800;color:#ff9a8f;padding:0 .3rem}
 .s48-list li.is-alert{background:rgba(160,30,20,.18)}
+.s48-join{display:grid;justify-items:start;gap:.4rem;padding:.6rem 0}
+.s48-join-btn{font-size:1.05rem;padding:.8rem 1.8rem}

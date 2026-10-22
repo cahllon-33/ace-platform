@@ -630,5 +630,10 @@ export const UI_ES: Ui = {
     "bannedUntil": "Prohibición de cola hasta {date}",
     "errBanned": "Tienes prohibida la cola.",
     "errCooldown": "Tienes una espera de cola activa."
+  },
+  "r48c": {
+    "launching": "Abriendo CS2 y conectándote…",
+    "hint": "Si CS2 no se abrió, tu navegador bloqueó el inicio. Usa Unirse a la partida.",
+    "join": "Unirse a la partida"
   }
 };

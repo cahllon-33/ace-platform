@@ -74,3 +74,7 @@
 .r48-stats dt{font-size:.7rem;color:#8f8b80;text-transform:uppercase;letter-spacing:.1em}
 .r48-stats dd{font-size:1.2rem;font-weight:800;color:#f4efe2;font-variant-numeric:tabular-nums}
 .r48-result.is-pending .r48-result-title{font-size:1.2rem;font-weight:700;color:#d9cfae}
+.r48-join{min-width:min(100%,20rem);font-size:1.15rem;padding:1rem 2.2rem}
+.r48-auto{color:#9ee6b4;font-weight:700;animation:r48-pulse 1.2s ease-in-out infinite}
+@keyframes r48-pulse{50%{opacity:.55}}
+@media (prefers-reduced-motion:reduce){.r48-auto{animation:none}}

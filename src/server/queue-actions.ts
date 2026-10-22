@@ -50,9 +50,10 @@ async function owner() {
 }
 
 export async function testLobbiesAction(): Promise<TestModeResult> {
-  if (!(await owner())) return { ok: false, error: "owner-only" };
+  const me = await owner();
+  if (!me) return { ok: false, error: "owner-only" };
   await q.tick().catch(() => undefined);
-  return { ok: true, lobbies: await q.activeLobbies() };
+  return { ok: true, lobbies: await q.activeLobbies(me.id) };
 }
 
 export async function createTestLobbyAction(input: { flow: "full" | "direct"; map: string; extraSteamIds: string }): Promise<TestModeResult> {

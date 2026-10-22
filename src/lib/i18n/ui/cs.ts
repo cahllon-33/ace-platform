@@ -630,5 +630,10 @@ export const UI_CS: Ui = {
     "bannedUntil": "Zákaz fronty do {date}",
     "errBanned": "Máš zákaz fronty.",
     "errCooldown": "Máš blokaci fronty."
+  },
+  "r48c": {
+    "launching": "Spouštíme CS2 a připojujeme tě…",
+    "hint": "Pokud se CS2 neotevřelo, prohlížeč spuštění zablokoval. Použij Připojit se k zápasu.",
+    "join": "Připojit se k zápasu"
   }
 };

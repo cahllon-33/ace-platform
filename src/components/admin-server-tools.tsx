@@ -11,6 +11,7 @@ import { cancelLobbyAction, createTestLobbyAction, testBotsAction, testLobbiesAc
 import type { FileEntry, SettingsView } from "@/server/dathost";
 import type { LobbyView } from "@/server/queue-engine";
 import { OpsTab, type OpsTabId } from "@/components/admin-server-ops";
+import { launchSteam, useAutoConnect } from "@/components/auto-connect";
 import "./admin-server-tools.css";
 
 type Tab = "console" | "settings" | "files" | "plugins" | "usage" | "power" | "test" | OpsTabId;
@@ -308,6 +309,8 @@ function TestTab({ t, maps, onError }: P & { maps: string[] }) {
   const [bots, setBots] = useState(9);
   const [lobbies, setLobbies] = useState<LobbyView[]>([]);
   const [pending, start] = useTransition();
+  const mine = lobbies.find((l) => l.isTest && l.state === "LIVE" && l.connectUrl);
+  const auto = useAutoConnect(mine?.id ?? null, mine?.connectUrl ?? null);
   const apply = useCallback((r: Awaited<ReturnType<typeof testLobbiesAction>>) => (r.ok ? (setLobbies(r.lobbies), onError(null)) : onError(r.error)), [onError]);
   useEffect(() => {
     void testLobbiesAction().then(apply);
@@ -333,6 +336,13 @@ function TestTab({ t, maps, onError }: P & { maps: string[] }) {
         <label className="s48-field s48-inline"><span>{t("testBotsN")}</span><input className="s48-input" type="number" min={0} max={9} value={bots} onChange={(e) => setBots(Number(e.target.value))} /></label>
         <button type="button" className="acx-btn" disabled={pending} onClick={() => start(async () => apply(await testBotsAction(bots)))}>{t("testBots")}</button>
       </div>
+      {mine?.connectUrl ? (
+        <div className="s48-join">
+          {auto === "launching" ? <p className="asv-note" role="status">{t("autoConnect")}</p> : null}
+          <a className="acx-btn is-gold s48-join-btn" href={mine.connectUrl} onClick={(e) => { e.preventDefault(); launchSteam(mine.connectUrl!); }}>{t("joinMatch")}</a>
+          {auto === "hint" ? <p className="acx-muted">{t("autoHint")}</p> : null}
+        </div>
+      ) : null}
       <p className="acx-card-title">{t("lobbies")}</p>
       {lobbies.length === 0 ? <p className="acx-muted">{t("noLobbies")}</p> : (
         <ul className="s48-list">

@@ -630,5 +630,10 @@ export const UI_PL: Ui = {
     "bannedUntil": "Zakaz kolejki do {date}",
     "errBanned": "Masz zakaz kolejki.",
     "errCooldown": "Masz blokadę kolejki."
+  },
+  "r48c": {
+    "launching": "Uruchamiamy CS2 i łączymy…",
+    "hint": "Jeśli CS2 się nie otworzył, przeglądarka zablokowała uruchomienie. Użyj Dołącz do meczu.",
+    "join": "Dołącz do meczu"
   }
 };

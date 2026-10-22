@@ -630,5 +630,10 @@ export const UI_SV: Ui = {
     "bannedUntil": "Köavstängning till {date}",
     "errBanned": "Du är avstängd från kön.",
     "errCooldown": "Du har en köspärr."
+  },
+  "r48c": {
+    "launching": "Startar CS2 och ansluter dig…",
+    "hint": "Om CS2 inte öppnades blockerade webbläsaren starten. Använd Gå med i matchen.",
+    "join": "Gå med i matchen"
   }
 };

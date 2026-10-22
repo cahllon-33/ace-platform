@@ -630,5 +630,10 @@ export const UI_TR: Ui = {
     "bannedUntil": "{date} tarihine kadar sıra yasağı",
     "errBanned": "Sıradan yasaklısın.",
     "errCooldown": "Sıra cezan var."
+  },
+  "r48c": {
+    "launching": "CS2 açılıyor ve bağlanıyorsun…",
+    "hint": "CS2 açılmadıysa tarayıcın başlatmayı engelledi. Maça katıl düğmesini kullan.",
+    "join": "Maça katıl"
   }
 };

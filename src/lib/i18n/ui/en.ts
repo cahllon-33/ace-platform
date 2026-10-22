@@ -571,6 +571,11 @@ export const UI_EN = {
     "bannedUntil": "Queue ban until {date}",
     "errBanned": "You are banned from the queue.",
     "errCooldown": "You are on a queue cooldown."
+  },
+  "r48c": {
+    "launching": "Launching CS2 and connecting you…",
+    "hint": "If CS2 did not open, your browser blocked the launch. Use Join match.",
+    "join": "Join match"
   }
 } as const;
 

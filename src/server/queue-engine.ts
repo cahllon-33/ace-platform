@@ -7,7 +7,7 @@ import { rankFromRating, type RankArt } from "@/lib/ranks";
 import {
   ACTIVE_DUTY, QUEUE_SIZE, READY_SECONDS, VETO_TURN_SECONDS,
   applyBan, autoBanMap, balanceTeams, captainOf, dodgeCooldownMinutes, estimateWaitSeconds, leaverCooldownMinutes, readyOutcome, remainingMaps,
-  vetoTurn, winProbability, type Ban, type Side,
+  buildConnectUrl, vetoTurn, winProbability, type Ban, type Side,
 } from "@/lib/queue";
 import type { Cs2Match } from "@/server/dathost";
 import { healthTick } from "@/server/server-health";
@@ -200,7 +200,8 @@ export async function launchLobby(lobbyId: string) {
       webhookAuthorization: `Bearer ${secret}`,
       ...(lobby.isTest ? {} : { teamSize: 5 }),
     });
-    const server = await api.getServer().catch(() => null);
+    const [server, raw] = await Promise.all([api.getServer().catch(() => null), api.getRaw().catch(() => null)]);
+    const connectUrl = server ? buildConnectUrl(server.address, raw?.cs2_settings?.password) : null;
     const created = await prisma.match.create({
       data: {
         externalId: match.id, gameServerId: cfg.serverId, round: 0, slot: 0, state: "IN_PROGRESS", mapName: lobby.map,
@@ -211,7 +212,7 @@ export async function launchLobby(lobbyId: string) {
     });
     await prisma.queueLobby.update({
       where: { id: lobbyId },
-      data: { state: "LIVE", error: "", dathostMatchId: match.id, matchId: created.id, connectUrl: server?.connectUrl ?? null, serverAddress: server?.address ?? null, checkedAt: new Date() },
+      data: { state: "LIVE", error: "", dathostMatchId: match.id, matchId: created.id, connectUrl, serverAddress: server?.address ?? null, checkedAt: new Date() },
     });
   } catch (e) {
     await fail(e instanceof DathostError ? e.message : "dathost-create-failed");
@@ -417,7 +418,7 @@ export async function cancelLobby(lobbyId: string) {
   return { ok: true as const };
 }
 
-export async function activeLobbies() {
+export async function activeLobbies(viewerId: string | null = null) {
   const rows = await getPrisma().queueLobby.findMany({ where: { OR: [{ state: { in: [...ACTIVE_STATES] } }, { isTest: true }] }, orderBy: { createdAt: "desc" }, take: 5, select: { id: true } });
-  return (await Promise.all(rows.map((r) => lobbyView(r.id, null)))).filter((x): x is LobbyView => !!x);
+  return (await Promise.all(rows.map((r) => lobbyView(r.id, viewerId)))).filter((x): x is LobbyView => !!x);
 }

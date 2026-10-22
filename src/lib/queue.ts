@@ -114,3 +114,12 @@ export const REGION_LABELS: Record<string, string> = {
   milan: "Milan, IT", amsterdam: "Amsterdam, NL", frankfurt: "Frankfurt, DE", london: "London, UK", paris: "Paris, FR", stockholm: "Stockholm, SE",
   warsaw: "Warsaw, PL", madrid: "Madrid, ES", istanbul: "Istanbul, TR", bucharest: "Bucharest, RO", helsinki: "Helsinki, FI", vienna: "Vienna, AT",
 };
+
+/** steam://connect/<ip>:<port>[/<password>] — the password segment is URL-encoded and omitted when empty. */
+export function buildConnectUrl(address: string, password?: string | null): string {
+  const pw = (password ?? "").trim();
+  return `steam://connect/${address}${pw ? `/${encodeURIComponent(pw)}` : ""}`;
+}
+
+/** localStorage key that makes the automatic CS2 launch fire once per lobby. */
+export const autoLaunchKey = (lobbyId: string) => `ace-autoconnect-${lobbyId}`;

@@ -630,5 +630,10 @@ export const UI_HU: Ui = {
     "bannedUntil": "Sorkitiltás eddig: {date}",
     "errBanned": "Ki vagy tiltva a sorból.",
     "errCooldown": "Sorvárakozáson vagy."
+  },
+  "r48c": {
+    "launching": "A CS2 indítása és csatlakozás…",
+    "hint": "Ha a CS2 nem nyílt meg, a böngésző letiltotta az indítást. Használd a Csatlakozás a meccshez gombot.",
+    "join": "Csatlakozás a meccshez"
   }
 };

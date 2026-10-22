@@ -630,5 +630,10 @@ export const UI_ID: Ui = {
     "bannedUntil": "Larangan antre sampai {date}",
     "errBanned": "Kamu dilarang mengantre.",
     "errCooldown": "Kamu sedang dalam jeda antrean."
+  },
+  "r48c": {
+    "launching": "Membuka CS2 dan menghubungkanmu…",
+    "hint": "Jika CS2 tidak terbuka, browser memblokir peluncuran. Gunakan Gabung pertandingan.",
+    "join": "Gabung pertandingan"
   }
 };

@@ -70,3 +70,13 @@ describe("R48b rules", () => {
     expect(estimateWaitSeconds([10, 20, 30, 40])).toBe(25);
   });
 });
+
+import { autoLaunchKey, buildConnectUrl } from "@/lib/queue";
+describe("R48c connect url", () => {
+  it("adds an encoded password only when set", () => {
+    expect(buildConnectUrl("1.2.3.4:27015")).toBe("steam://connect/1.2.3.4:27015");
+    expect(buildConnectUrl("1.2.3.4:27015", "")).toBe("steam://connect/1.2.3.4:27015");
+    expect(buildConnectUrl("h.example:26372", "a b/c")).toBe("steam://connect/h.example:26372/a%20b%2Fc");
+    expect(autoLaunchKey("x1")).toBe("ace-autoconnect-x1");
+  });
+});

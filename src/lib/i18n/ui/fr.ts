@@ -630,5 +630,10 @@ export const UI_FR: Ui = {
     "bannedUntil": "Bannissement de file jusqu'au {date}",
     "errBanned": "Vous êtes banni de la file.",
     "errCooldown": "Vous êtes en délai de file."
+  },
+  "r48c": {
+    "launching": "Lancement de CS2 et connexion…",
+    "hint": "Si CS2 ne s'est pas ouvert, votre navigateur a bloqué le lancement. Utilisez Rejoindre le match.",
+    "join": "Rejoindre le match"
   }
 };
