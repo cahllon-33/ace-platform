@@ -483,6 +483,15 @@ export const UI_ES: Ui = {
       "watch": "Ver en directo"
     }
   },
+  "r45": {
+    "title": "Más allá de Legend",
+    "lede": "Cinco insignias de prestigio por encima de A.C.E. Legend, una cada 200 RP de 2.150 a 2.950. Solo se ganan jugando.",
+    "plus": "Plus · platino",
+    "premium": "Premium · fuego dorado",
+    "fair": "El mismo RP para todos. Los umbrales de prestigio, el emparejamiento y la clasificación son iguales en todos los planes. Nada de esto se compra.",
+    "finish": "El acabado de prestigio requiere Plus o Premium. Los jugadores Free alcanzan los mismos umbrales y los ven como un hito de texto.",
+    "link": "Reglas completas de insignias"
+  },
   "r44": {
     "kicker": "Tu rango",
     "next": "Siguiente",

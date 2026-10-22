@@ -483,6 +483,15 @@ export const UI_CS: Ui = {
       "watch": "Sledovat živě"
     }
   },
+  "r45": {
+    "title": "Za hranicí Legend",
+    "lede": "Pět prestižních odznaků nad A.C.E. Legend, jeden každých 200 RP od 2 150 do 2 950. Získáš je jen hraním.",
+    "plus": "Plus · platina",
+    "premium": "Premium · zlatý oheň",
+    "fair": "Stejné RP pro všechny. Prahy prestiže, matchmaking i hodnocení jsou na každém plánu stejné. Nic z toho nelze koupit.",
+    "finish": "Prestižní úprava vyžaduje Plus nebo Premium. Hráči Free dosáhnou stejných prahů a uvidí je jako textový milník.",
+    "link": "Úplná pravidla odznaků"
+  },
   "r44": {
     "kicker": "Tvoje hodnost",
     "next": "Další",

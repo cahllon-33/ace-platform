@@ -483,6 +483,15 @@ export const UI_ZH: Ui = {
       "watch": "观看直播"
     }
   },
+  "r45": {
+    "title": "超越 Legend",
+    "lede": "A.C.E. Legend 之上的五枚荣耀徽章，从 2,150 到 2,950 RP 每 200 RP 一枚。只能通过比赛获得。",
+    "plus": "Plus · 铂金",
+    "premium": "Premium · 金色火焰",
+    "fair": "所有人的 RP 相同。荣耀门槛、匹配和评分在每个方案中都一样。这里没有任何东西可以购买。",
+    "finish": "荣耀质感需要 Plus 或 Premium。Free 玩家达到同样的门槛，并以文字里程碑显示。",
+    "link": "完整徽章规则"
+  },
   "r44": {
     "kicker": "你的段位",
     "next": "下一级",

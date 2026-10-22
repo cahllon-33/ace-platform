@@ -483,6 +483,15 @@ export const UI_HR: Ui = {
       "watch": "Gledaj uživo"
     }
   },
+  "r45": {
+    "title": "Iza Legenda",
+    "lede": "Pet prestižnih znački iznad A.C.E. Legend, po jedna svakih 200 RP od 2.150 do 2.950. Osvajaju se samo igrom.",
+    "plus": "Plus · platina",
+    "premium": "Premium · zlatna vatra",
+    "fair": "Isti RP za sve. Pragovi prestiža, matchmaking i rejting jednaki su na svakom planu. Ništa od ovoga se ne kupuje.",
+    "finish": "Prestižna završnica traži Plus ili Premium. Free igrači dosežu iste pragove i vide ih kao tekstualnu prekretnicu.",
+    "link": "Sva pravila znački"
+  },
   "r44": {
     "kicker": "Tvoj rang",
     "next": "Sljedeći",

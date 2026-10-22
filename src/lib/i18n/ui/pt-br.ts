@@ -483,6 +483,15 @@ export const UI_PT_BR: Ui = {
       "watch": "Assistir ao vivo"
     }
   },
+  "r45": {
+    "title": "Além do Legend",
+    "lede": "Cinco insígnias de prestígio acima do A.C.E. Legend, uma a cada 200 RP de 2.150 a 2.950. Conquistadas só jogando.",
+    "plus": "Plus · platina",
+    "premium": "Premium · fogo dourado",
+    "fair": "O mesmo RP para todos. Limites de prestígio, matchmaking e rating são iguais em todos os planos. Nada aqui pode ser comprado.",
+    "finish": "O acabamento de prestígio exige Plus ou Premium. Jogadores Free alcançam os mesmos limites e os veem como marco em texto.",
+    "link": "Regras completas das insígnias"
+  },
   "r44": {
     "kicker": "Seu rank",
     "next": "Próximo",

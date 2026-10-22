@@ -9,6 +9,7 @@ import { RANK_DIVISIONS } from "@/lib/site";
 import { getText, getUi } from "@/server/locale";
 import { PremiumProfileCardPreview } from "@/components/premium-profile-card";
 import { PremiumRankCodex } from "@/components/premium-rank-codex";
+import { RanksPrestige } from "@/components/ranks-prestige";
 import { RpRulesSection } from "@/components/rp-rules-section";
 import { readSessionUser } from "@/server/session";
 
@@ -51,6 +52,7 @@ export default async function RanksPage() {
           <RankSystemBoard liveRating={rating} />
         </div>
       </section>
+      <RanksPrestige ui={ui} />
       <section id="premium" className="ace-premium-ranks" aria-labelledby="premium-ranks-title">
         <div className="ace-premium-ranks-head">
           <p className="ace-ranks-section-kicker">{copy.premiumRanks.kicker}</p>

@@ -483,6 +483,15 @@ export const UI_SV: Ui = {
       "watch": "Titta live"
     }
   },
+  "r45": {
+    "title": "Bortom Legend",
+    "lede": "Fem prestigemärken över A.C.E. Legend, ett var 200:e RP från 2 150 till 2 950. Förtjänas bara genom att spela.",
+    "plus": "Plus · platina",
+    "premium": "Premium · guldeld",
+    "fair": "Samma RP för alla. Prestigegränser, matchmaking och rating är identiska i varje plan. Inget här går att köpa.",
+    "finish": "Prestigefinishen kräver Plus eller Premium. Free-spelare når samma gränser och ser dem som en textmilstolpe.",
+    "link": "Alla regler för märken"
+  },
   "r44": {
     "kicker": "Din rank",
     "next": "Nästa",

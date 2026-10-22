@@ -483,6 +483,15 @@ export const UI_HU: Ui = {
       "watch": "Élő nézése"
     }
   },
+  "r45": {
+    "title": "Legenden túl",
+    "lede": "Öt presztízsjelvény az A.C.E. Legend felett, 200 RP-nként 2150 és 2950 között. Csak játékkal szerezhető.",
+    "plus": "Plus · platina",
+    "premium": "Premium · arany tűz",
+    "fair": "Mindenkinek ugyanaz az RP. A presztízsküszöbök, a párosítás és a pontozás minden csomagban azonos. Itt semmit sem lehet megvenni.",
+    "finish": "A presztízs kivitelhez Plus vagy Premium kell. A Free játékosok ugyanazokat a küszöböket érik el, szöveges mérföldkőként.",
+    "link": "A jelvények teljes szabályai"
+  },
   "r44": {
     "kicker": "A rangod",
     "next": "Következő",

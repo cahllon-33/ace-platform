@@ -483,6 +483,15 @@ export const UI_ID: Ui = {
       "watch": "Tonton langsung"
     }
   },
+  "r45": {
+    "title": "Melampaui Legend",
+    "lede": "Lima lencana prestise di atas A.C.E. Legend, satu setiap 200 RP dari 2.150 hingga 2.950. Hanya didapat dengan bermain.",
+    "plus": "Plus · platinum",
+    "premium": "Premium · api emas",
+    "fair": "RP sama untuk semua. Ambang prestise, matchmaking, dan rating identik di setiap paket. Tidak ada yang bisa dibeli di sini.",
+    "finish": "Hasil akhir prestise butuh Plus atau Premium. Pemain Free mencapai ambang yang sama dan melihatnya sebagai pencapaian teks.",
+    "link": "Aturan lencana lengkap"
+  },
   "r44": {
     "kicker": "Peringkatmu",
     "next": "Berikutnya",

@@ -483,6 +483,15 @@ export const UI_RO: Ui = {
       "watch": "Urmărește live"
     }
   },
+  "r45": {
+    "title": "Dincolo de Legend",
+    "lede": "Cinci insigne de prestigiu peste A.C.E. Legend, câte una la fiecare 200 RP între 2.150 și 2.950. Se câștigă doar jucând.",
+    "plus": "Plus · platină",
+    "premium": "Premium · foc auriu",
+    "fair": "Același RP pentru toți. Pragurile de prestigiu, matchmaking-ul și ratingul sunt identice pe orice plan. Nimic de aici nu se cumpără.",
+    "finish": "Finisajul de prestigiu necesită Plus sau Premium. Jucătorii Free ating aceleași praguri și le văd ca reper text.",
+    "link": "Regulile complete ale insignelor"
+  },
   "r44": {
     "kicker": "Rangul tău",
     "next": "Următorul",

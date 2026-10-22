@@ -483,6 +483,15 @@ export const UI_DE: Ui = {
       "watch": "Live ansehen"
     }
   },
+  "r45": {
+    "title": "Jenseits von Legend",
+    "lede": "Fünf Prestige-Abzeichen über A.C.E. Legend, alle 200 RP von 2.150 bis 2.950. Nur durch Spielen verdient.",
+    "plus": "Plus · Platin",
+    "premium": "Premium · Goldfeuer",
+    "fair": "Gleiche RP für alle. Prestige-Schwellen, Matchmaking und Wertung sind in jedem Plan identisch. Nichts davon ist käuflich.",
+    "finish": "Das Prestige-Finish braucht Plus oder Premium. Free-Spieler erreichen dieselben Schwellen und sehen sie als Text-Meilenstein.",
+    "link": "Alle Abzeichen-Regeln"
+  },
   "r44": {
     "kicker": "Dein Rang",
     "next": "Nächster",

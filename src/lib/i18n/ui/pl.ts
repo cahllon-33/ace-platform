@@ -483,6 +483,15 @@ export const UI_PL: Ui = {
       "watch": "Oglądaj na żywo"
     }
   },
+  "r45": {
+    "title": "Ponad Legend",
+    "lede": "Pięć odznak prestiżu powyżej A.C.E. Legend, co 200 RP od 2150 do 2950. Zdobywane wyłącznie grą.",
+    "plus": "Plus · platyna",
+    "premium": "Premium · złoty ogień",
+    "fair": "Takie samo RP dla wszystkich. Progi prestiżu, matchmaking i ranking są identyczne w każdym planie. Niczego tu nie da się kupić.",
+    "finish": "Wykończenie prestiżu wymaga Plus lub Premium. Gracze Free osiągają te same progi i widzą je jako tekstowy kamień milowy.",
+    "link": "Pełne zasady odznak"
+  },
   "r44": {
     "kicker": "Twoja ranga",
     "next": "Następna",

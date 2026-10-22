@@ -483,6 +483,15 @@ export const UI_FR: Ui = {
       "watch": "Regarder en direct"
     }
   },
+  "r45": {
+    "title": "Au-delà de Legend",
+    "lede": "Cinq badges de prestige au-dessus d'A.C.E. Legend, un tous les 200 RP de 2 150 à 2 950. Gagnés uniquement en jouant.",
+    "plus": "Plus · platine",
+    "premium": "Premium · feu doré",
+    "fair": "Le même RP pour tous. Seuils de prestige, matchmaking et classement sont identiques sur chaque offre. Rien ici ne s'achète.",
+    "finish": "La finition prestige nécessite Plus ou Premium. Les joueurs Free atteignent les mêmes seuils et les voient comme un palier textuel.",
+    "link": "Règles complètes des badges"
+  },
   "r44": {
     "kicker": "Ton rang",
     "next": "Suivant",

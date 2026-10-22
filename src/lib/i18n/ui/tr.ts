@@ -483,6 +483,15 @@ export const UI_TR: Ui = {
       "watch": "Canlı izle"
     }
   },
+  "r45": {
+    "title": "Legend'in ötesi",
+    "lede": "A.C.E. Legend'in üzerinde beş prestij rozeti; 2.150'den 2.950'ye her 200 RP'de bir. Yalnızca oynayarak kazanılır.",
+    "plus": "Plus · platin",
+    "premium": "Premium · altın ateş",
+    "fair": "Herkes için aynı RP. Prestij eşikleri, eşleştirme ve puanlama her planda aynıdır. Burada hiçbir şey satın alınamaz.",
+    "finish": "Prestij kaplaması Plus veya Premium gerektirir. Free oyuncular aynı eşiklere ulaşır ve bunları metin kilometre taşı olarak görür.",
+    "link": "Tüm rozet kuralları"
+  },
   "r44": {
     "kicker": "Rütben",
     "next": "Sonraki",

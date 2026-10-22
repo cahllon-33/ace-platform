@@ -424,6 +424,15 @@ export const UI_EN = {
       "watch": "Watch live"
     }
   },
+  "r45": {
+    "title": "Beyond Legend",
+    "lede": "Five prestige badges above A.C.E. Legend, one every 200 RP from 2,150 to 2,950. Earned only by playing.",
+    "plus": "Plus · platinum",
+    "premium": "Premium · gold fire",
+    "fair": "Same RP for everyone. Prestige thresholds, matchmaking and rating are identical on every plan. Nothing here can be bought.",
+    "finish": "The prestige finish needs Plus or Premium. Free players reach the same thresholds and see them as a text milestone.",
+    "link": "Full badge rules"
+  },
   "r44": {
     "kicker": "Your rank",
     "next": "Next",

@@ -483,6 +483,15 @@ export const UI_FI: Ui = {
       "watch": "Katso suorana"
     }
   },
+  "r45": {
+    "title": "Legendin tuolla puolen",
+    "lede": "Viisi arvomerkkiä A.C.E. Legendin yläpuolella, yksi 200 RP:n välein 2 150–2 950. Ansaitaan vain pelaamalla.",
+    "plus": "Plus · platina",
+    "premium": "Premium · kultainen tuli",
+    "fair": "Sama RP kaikille. Arvorajat, matchmaking ja luokitus ovat samat jokaisessa tilauksessa. Mitään tästä ei voi ostaa.",
+    "finish": "Arvoviimeistely vaatii Plusin tai Premiumin. Free-pelaajat saavuttavat samat rajat ja näkevät ne tekstinä.",
+    "link": "Merkkien kaikki säännöt"
+  },
   "r44": {
     "kicker": "Sinun arvosi",
     "next": "Seuraava",
