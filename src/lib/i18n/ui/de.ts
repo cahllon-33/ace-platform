@@ -245,7 +245,8 @@ export const UI_DE: Ui = {
       "inDevelopment": "In Entwicklung",
       "comingSoon": "Demnächst",
       "preparing": "In Vorbereitung",
-      "billingOff": "Nicht aktiv · keine Zahlungen"
+      "billingOff": "Nicht eingerichtet · Checkout zeigt „Demnächst“",
+      "billingOn": "Aktiv · Paddle-Checkout"
     },
     "card": {
       "matches": "Matches",
@@ -325,7 +326,7 @@ export const UI_DE: Ui = {
       "ranksBody": "Abzeichenfarben sind pro Stufe fest, und dein Rang wird immer aus deinen gespeicherten RP berechnet.",
       "ranksCta": "Alle Ränge ansehen",
       "plansTitle": "Abos, die keine Siege kaufen",
-      "plansBody": "Bezahlte Abos sind nur Kosmetik und Komfort. Der Checkout ist noch nicht live, daher sind heute alle auf Free.",
+      "plansBody": "Bezahlte Pläne sind nur Kosmetik und Komfort. Der Checkout läuft über Paddle; solange Zahlungen nicht eingerichtet sind, zeigt der Button „Demnächst“.",
       "plansCta": "Abos vergleichen",
       "free": "Free",
       "perMonth": "/Monat",

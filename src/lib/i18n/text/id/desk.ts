@@ -6,7 +6,7 @@ export const desk: TextBag["desk"] = {
       "title": "A.C.E Marketplace",
       "description": "Kartu hadiah kejuaraan. Toko dan hadiah segera dibuka."
     },
-    "heroHonesty": "Tampilan awal hadiah kejuaraan mendatang. Toko segera dibuka; hari ini tidak ada yang ditagih.",
+    "heroHonesty": "Kosmetik dan keanggotaan dijual melalui checkout Paddle. Kosmetik tidak pernah memengaruhi gameplay.",
     "prizeBanner": "🏆 HADIAH KEJUARAAN · SEGERA HADIR",
     "notice": "Pameran ini adalah pratinjau tanpa nilai tunai. Tidak ada yang dikirim atau ditagih, dan tombol periksa tidak memulai pembelian.",
     "items": {

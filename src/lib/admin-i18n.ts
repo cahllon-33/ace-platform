@@ -175,7 +175,7 @@ export const ADMIN_EN = {
   chipSteamBody: "No token revoke",
   chipMatch: "MATCH FABRIC",
   chipMatchBody: "Queues are not live",
-  moneyNote: "Checkout is not live. This figure stays $0 until a charge exists.",
+  moneyNote: "One-time Paddle orders confirmed by webhook (cosmetics, tournament entries), minus refunds. Subscription revenue is in the Paddle dashboard.",
   deskMatchesTitle: "Matches in progress",
   deskMatchesNote: "Rows come from the match table. No CS2 server is attached, so this list is empty until a stored match is marked in progress.",
   deskMatchesEmpty: "0 matches are running.",
@@ -195,7 +195,7 @@ export const ADMIN_EN = {
   assistOnline: "{count} Steam accounts opened the site in the last 3 minutes.",
   assistMatches: "{count} matches are marked in progress in the database. No live CS2 server is attached.",
   assistReports: "{count} player reports are stored. Open one to see the map and score. No demo file is attached.",
-  assistMoney: "Collected revenue is $0. Checkout is not live, so there is nothing to refund or pay out.",
+  assistMoney: "Revenue here counts webhook-confirmed one-time Paddle orders minus refunds. Subscriptions, payouts and refunds are managed in the Paddle dashboard; see Payments for config status.",
   assistBans: "Use Ban account on a real row to close that Steam session. Lift ban restores the account. Sample rows are not saved.",
   openDossier: "Open dossier",
   dossierTitle: "Player dossier",
@@ -238,7 +238,7 @@ export const ADMIN_EN = {
   upgradeBody:
     "{name} is now marked Premium in the operator table. Plus remains $4/mo and Premium remains $7/mo on the public price list.",
   upgradeHonest:
-    "No billing provider was charged. Checkout is not live. This flag does not write a paid SubscriptionTier to the database.",
+    "No payment was taken. This is a manual override, not a Paddle subscription; paid plans come only from Paddle-confirmed payments.",
   rankKicker: "CALIBRATION OVERRIDE",
   rankTitle: "Rank badge forced to level 10",
   rankBody: "{name} now shows rank tier 10 in this console.",
@@ -482,7 +482,7 @@ export const ADMIN_HE: Record<keyof typeof ADMIN_EN, string> = {
   chipSteamBody: "אין ביטול אסימון",
   chipMatch: "מארג משחקים",
   chipMatchBody: "התורים אינם חיים",
-  moneyNote: "אין סליקה. הסכום נשאר $0 עד שקיים חיוב אמיתי.",
+  moneyNote: "הזמנות חד־פעמיות ב־Paddle שאושרו ב־webhook (קוסמטיקה, הרשמה לטורנירים), פחות החזרים. הכנסות ממנויים מופיעות בלוח הבקרה של Paddle.",
   deskMatchesTitle: "משחקים שרצים",
   deskMatchesNote: "השורות מגיעות מטבלת המשחקים. אין שרת CS2 מחובר, אז הרשימה ריקה עד שמשחק שמור מסומן כרץ.",
   deskMatchesEmpty: "0 משחקים רצים.",
@@ -502,7 +502,7 @@ export const ADMIN_HE: Record<keyof typeof ADMIN_EN, string> = {
   assistOnline: "{count} חשבונות Steam פתחו את האתר בשלוש הדקות האחרונות.",
   assistMatches: "{count} משחקים מסומנים כרצים במסד. אין שרת CS2 חי מחובר.",
   assistReports: "{count} דיווחים שמורים. פותחים אחד כדי לראות מפה ותוצאה. אין קובץ הדגמה.",
-  assistMoney: "ההכנסה שנאספה היא $0. אין סליקה, אז אין מה להחזיר ואין מה לשלם.",
+  assistMoney: "ההכנסה כאן סופרת הזמנות חד־פעמיות ב־Paddle שאושרו ב־webhook, פחות החזרים. מנויים, תשלומים והחזרים מנוהלים בלוח הבקרה של Paddle; מצב ההגדרה מופיע בעמוד התשלומים.",
   assistBans: "חסום חשבון על שורה אמיתית סוגר את סשן ה-Steam. שחרר חסימה מחזיר את החשבון. שורות דמה לא נשמרות.",
   openDossier: "פתח תיק",
   dossierTitle: "תיק שחקן",
@@ -544,7 +544,7 @@ export const ADMIN_HE: Record<keyof typeof ADMIN_EN, string> = {
   upgradeBody:
     "{name} מסומן כעת כ-Premium בטבלת המפעיל. Plus נשאר $4 לחודש ו-Premium נשאר $7 לחודש במחירון הציבורי.",
   upgradeHonest:
-    "אף ספק חיוב לא חויב. הקופה אינה חיה. דגל זה אינו כותב SubscriptionTier בתשלום למסד הנתונים.",
+    "לא נגבה תשלום. זו עקיפה ידנית ולא מנוי Paddle; מנויים בתשלום נוצרים רק מתשלומים ש־Paddle אישרה.",
   rankKicker: "עקיפת כיול",
   rankTitle: "תג הדרגה נכפה לרמה 10",
   rankBody: "{name} מציג כעת דרגה 10 בקונסולה זו.",

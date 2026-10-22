@@ -245,7 +245,8 @@ export const UI_SV: Ui = {
       "inDevelopment": "Under utveckling",
       "comingSoon": "Kommer snart",
       "preparing": "Förbereds",
-      "billingOff": "Inte aktiv · inga betalningar tas"
+      "billingOff": "Inte konfigurerat · kassan visar Kommer snart",
+      "billingOn": "Aktiv · Paddle-kassa"
     },
     "card": {
       "matches": "Matcher",
@@ -325,7 +326,7 @@ export const UI_SV: Ui = {
       "ranksBody": "Märkenas färger är fasta per nivå och din rank räknas alltid från dina sparade RP.",
       "ranksCta": "Se alla ranker",
       "plansTitle": "Planer som aldrig köper vinster",
-      "plansBody": "Betalda planer är bara kosmetika och bekvämlighet. Betalningen är inte aktiv än, så alla har Free i dag.",
+      "plansBody": "Betalda planer är bara kosmetika och bekvämlighet. Betalningen sker via Paddle; så länge betalningar inte är konfigurerade visar knappen Kommer snart.",
       "plansCta": "Jämför planer",
       "free": "Gratis",
       "perMonth": "/mån",

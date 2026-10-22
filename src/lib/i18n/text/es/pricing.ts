@@ -212,7 +212,7 @@ export const pricing: TextBag["pricing"] = {
       },
       "goldEliteSeal": {
         "feature": "Sello élite e insignias especiales",
-        "detail": "Solo Premium, leído del nivel guardado en el servidor. Cosmético. El pago no establece ese nivel."
+        "detail": "Solo Premium, leído del nivel guardado en el servidor. Cosmético. El nivel solo se asigna cuando Paddle confirma el pago."
       }
     },
     "cells": {
@@ -232,14 +232,14 @@ export const pricing: TextBag["pricing"] = {
   "receipt": {
     "plus": {
       "metaTitle": "Recibo de Plus",
-      "metaDescription": "La carta de A.C.E Plus que se muestra en este sitio web. El pago no está activo, así que no se cobra nada y no se envía ningún correo.",
+      "metaDescription": "La carta de A.C.E Plus que se muestra en este sitio. No es un recibo; Paddle envía el recibo por email.",
       "planName": "A.C.E Plus",
       "nextLabel": "Continuar en A.C.E",
       "nextBody": "Las páginas públicas siguen abiertas. Esta selección no abre una cola y no cambia el nivel guardado."
     },
     "premium": {
       "metaTitle": "Recibo de Premium",
-      "metaDescription": "La carta de A.C.E Premium que se muestra en este sitio web. El pago no está activo, así que no se cobra nada y no se envía ningún correo.",
+      "metaDescription": "La carta de A.C.E Premium que se muestra en este sitio. No es un recibo; Paddle envía el recibo por email.",
       "planName": "A.C.E Premium",
       "nextLabel": "Leer los términos Premium",
       "nextBody": "Premium incluye arte de rango Premium, la tarjeta de perfil animada, insignias especiales y el ELITE SEAL, además de todo lo de Plus. Guardar un clan en Squads es gratis para todas las cuentas."
@@ -248,7 +248,7 @@ export const pricing: TextBag["pricing"] = {
   "letter": {
     "kicker": "{plan} · {price} al mes",
     "title": "Gracias por tu elección",
-    "flag": "Esta carta se muestra en el sitio web. No se envió ningún correo. No se cobró ninguna tarjeta. El pago no está activo y el nivel de membresía guardado no se ha cambiado.",
+    "flag": "Esta carta se muestra en el sitio y no es un recibo. Paddle envía el recibo del pago, y tu plan solo cambia cuando Paddle confirma el pago.",
     "greeting": "Estimado jugador:",
     "intro": "Gracias por elegir {plan}. Esta página es el recibo. Recoge el precio de pantalla, lo que esa selección incluye hoy, lo que no incluye y la dirección de soporte publicada en este sitio web.",
     "selected": {

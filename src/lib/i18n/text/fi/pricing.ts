@@ -212,7 +212,7 @@ export const pricing: TextBag["pricing"] = {
       },
       "goldEliteSeal": {
         "feature": "Eliittisinetti ja erikoismerkit",
-        "detail": "Vain Premium, luettuna palvelimen tallennetusta tasosta. Kosmeettinen. Maksutoiminto ei aseta tätä tasoa."
+        "detail": "Vain Premium, luetaan palvelimelle tallennetusta tasosta. Kosmeettinen. Taso asetetaan vasta, kun Paddle vahvistaa maksun."
       }
     },
     "cells": {
@@ -232,14 +232,14 @@ export const pricing: TextBag["pricing"] = {
   "receipt": {
     "plus": {
       "metaTitle": "Plus-kuitti",
-      "metaDescription": "Tällä sivustolla näytettävä A.C.E Plus -kirje. Maksutoiminto ei ole käytössä, joten mitään ei veloiteta eikä sähköpostia lähetetä.",
+      "metaDescription": "Tällä sivustolla näkyvä A.C.E Plus -kirje. Se ei ole kuitti; Paddle lähettää kuitin sähköpostilla.",
       "planName": "A.C.E Plus",
       "nextLabel": "Jatka A.C.E:ssä",
       "nextBody": "Julkiset sivut pysyvät avoimina. Tämä valinta ei avaa jonoa eikä muuta tallennettua tasoa."
     },
     "premium": {
       "metaTitle": "Premium-kuitti",
-      "metaDescription": "Tällä sivustolla näytettävä A.C.E Premium -kirje. Maksutoiminto ei ole käytössä, joten mitään ei veloiteta eikä sähköpostia lähetetä.",
+      "metaDescription": "Tällä sivustolla näkyvä A.C.E Premium -kirje. Se ei ole kuitti; Paddle lähettää kuitin sähköpostilla.",
       "planName": "A.C.E Premium",
       "nextLabel": "Lue Premium-ehdot",
       "nextBody": "Premium sisältää Premium-arvomerkkitaiteen, animoidun profiilikortin, erikoismerkit ja ELITE SEALin sekä kaiken Plussasta. Klaanin tallentaminen Squadsiin on maksutonta jokaiselle tilille."
@@ -248,7 +248,7 @@ export const pricing: TextBag["pricing"] = {
   "letter": {
     "kicker": "{plan} · {price} kuukaudessa",
     "title": "Kiitos valinnastasi",
-    "flag": "Tämä kirje näytetään sivustolla. Sähköpostia ei lähetetty. Korttia ei veloitettu. Maksutoiminto ei ole käytössä, eikä tallennettua jäsenyystasoa muutettu.",
+    "flag": "Tämä kirje näytetään sivustolla, eikä se ole kuitti. Paddle lähettää maksukuitin, ja tilauksesi muuttuu vasta, kun Paddle vahvistaa maksun.",
     "greeting": "Hyvä pelaaja,",
     "intro": "Kiitos, että valitsit {plan}. Tämä sivu on kuitti. Se kirjaa näyttöhinnan, mitä valinta sisältää tänään, mitä se ei sisällä, ja tällä sivustolla julkaistun tukiosoitteen.",
     "selected": {

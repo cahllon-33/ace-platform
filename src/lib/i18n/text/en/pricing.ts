@@ -210,7 +210,7 @@
       },
       "goldEliteSeal": {
         "feature": "Elite seal & special badges",
-        "detail": "Premium only, read from the stored tier on the server. Cosmetic. Checkout does not set that tier."
+        "detail": "Premium only, read from the stored tier on the server. Cosmetic. The tier is set only after Paddle confirms payment."
       }
     },
     "cells": {
@@ -230,14 +230,14 @@
   "receipt": {
     "plus": {
       "metaTitle": "Plus receipt",
-      "metaDescription": "The A.C.E Plus letter shown on this website. Checkout is not live, so nothing is charged and no email is sent.",
+      "metaDescription": "The A.C.E Plus letter shown on this website. It is not a receipt; Paddle emails the receipt.",
       "planName": "A.C.E Plus",
       "nextLabel": "Continue on A.C.E",
       "nextBody": "The public pages stay open. This selection does not open a queue and does not change the stored tier."
     },
     "premium": {
       "metaTitle": "Premium receipt",
-      "metaDescription": "The A.C.E Premium letter shown on this website. Checkout is not live, so nothing is charged and no email is sent.",
+      "metaDescription": "The A.C.E Premium letter shown on this website. It is not a receipt; Paddle emails the receipt.",
       "planName": "A.C.E Premium",
       "nextLabel": "Read the Premium terms",
       "nextBody": "Premium is Premium rank art, the animated profile card, special badges and the ELITE SEAL, plus everything in Plus. Saving a clan on Squads is free for every account."
@@ -246,7 +246,7 @@
   "letter": {
     "kicker": "{plan} · {price} per month",
     "title": "Thank you for your selection",
-    "flag": "This letter is shown on the website. No email was sent. No card was charged. Checkout is not live, and the stored membership tier was not changed.",
+    "flag": "This letter is shown on the website and is not a receipt. Paddle sends the payment receipt, and your plan changes only after Paddle confirms the payment.",
     "greeting": "Dear player,",
     "intro": "Thank you for selecting {plan}. This page is the receipt. It records the display price, what that selection includes today, what it does not include, and the support address published on this website.",
     "selected": {

@@ -59,7 +59,7 @@ export const features: TextBag["features"] = {
     "kicker": "Kosmetyki · wkrótce",
     "title": "ARCHITEKTURA ŁUPÓW A.C.E — ZRZUTY BRONI",
     "lede": "Oryginalne wykończenia A.C.E, dostępne wraz ze sklepem. Kosmetyki nigdy nie wpływają na rywalizację.",
-    "checkout": "Płatność · wkrótce"
+    "checkout": "Kasa · Paddle"
   },
   "identityPreview": {
     "badge": "Podgląd — niepotwierdzone",

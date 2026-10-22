@@ -59,7 +59,7 @@ export const features: TextBag["features"] = {
     "kicker": "العناصر التجميلية · قريبًا",
     "title": "بنية جوائز A.C.E — جوائز الأسلحة",
     "lede": "تشطيبات A.C.E أصلية تصل مع المتجر. العناصر التجميلية لا تؤثر في المنافسة أبدًا.",
-    "checkout": "الدفع · قريبًا"
+    "checkout": "الدفع · Paddle"
   },
   "identityPreview": {
     "badge": "معاينة — غير مؤكدة",

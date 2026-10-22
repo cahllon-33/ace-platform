@@ -21,7 +21,7 @@ export const legalDocs: TextBag["legalDocs"] = {
   "terms": {
     "meta": {
       "title": "Felhasználási feltételek",
-      "description": "Az A.C.E weboldal felhasználási feltételei ehhez a Counter-Strike 2 versenyoldalhoz. A ranked, a fizetések és a csalásellenes rendszer nem élnek."
+      "description": "Az A.C.E feltételeinek korábbi összefoglalója. A hatályos Felhasználási feltételek a /terms oldalon találhatók."
     },
     "kicker": "ACE-LEGAL / FELHASZNÁLÁSI FELTÉTELEK",
     "title": "Felhasználási feltételek",
@@ -42,13 +42,13 @@ export const legalDocs: TextBag["legalDocs"] = {
       "notActive": {
         "title": "3. Ami ez a weboldal nem",
         "paragraphs": [
-          "A ranked párosítás, az élő CS2 játékszerverek, a működő MI-alapú csalásellenes rendszer, a számlázás és a díjak nem aktívak. A lobbiórák és integritáspanelek előnézetek, hacsak az oldal mást nem állít."
+          "Ezt az összefoglalót a /terms oldalon lévő Felhasználási feltételek, a /privacy oldalon lévő Adatvédelmi szabályzat és a /refunds oldalon lévő Visszatérítési szabályzat váltja fel."
         ]
       },
       "subscriptions": {
         "title": "Csomagok, számlázás és lemondás",
         "paragraphs": [
-          "A Free $0, a Plus havi $4, a Premium havi $7. Fizetés még nincs, így ma semmit nem lehet megvenni, és semmit nem terhelünk. Amikor a számlázás elindul, a csomagok havonta megújulnak; bármikor lemondhatod az irányítópult beállításaiban, és a hozzáférés a kifizetett hónap végéig megmarad; a megkezdett hónapot nem térítjük vissza, kivéve ha országod joga előírja. Egyik csomag sem ad Rating Pointst, nem emeli a pontszámot és nem módosítja a párosítást. A Premium elsőbbségi támogatás az indulás után azt jelenti, hogy a Premium kéréseket elsőként kezeljük, garantált válaszidő nélkül."
+          "A Free 0 $, a Plus havi 4 $, a Premium havi 7 $. A fizetés a Paddle-en keresztül történik, amely Merchant of Recordként jár el; amíg a fizetés nincs beállítva, a gomb Hamarosan feliratot mutat. A számlázásra, lemondásra és visszatérítésre a /terms és a /refunds irányadó. Egyik csomag sem ad ratingpontot és nem változtat a párosításon."
         ]
       },
       "antiCheat": {
@@ -114,7 +114,7 @@ export const legalDocs: TextBag["legalDocs"] = {
       "title": "Amit soha nem gyűjtünk",
       "items": [
         "Steam-jelszavakat. A bejelentkezés csak Steam OpenID-vel / a Steam hivatalos folyamatával történik.",
-        "Bankkártyaszámokat. A fizetés nincs megvalósítva.",
+        "Bankkártyaszámok. A fizetési adatokat a Paddle kezeli; az A.C.E sosem látja őket.",
         "Kernel-telemetriát. Ezzel az oldallal nem érkezik csalásellenes kliens."
       ]
     },

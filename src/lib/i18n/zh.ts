@@ -33,10 +33,10 @@ export const ZH: MessageBag = {
  "记录首批比赛后，你的数据将显示在这里。",
  statsLive: "胜负来自 A.C.E 账户。击杀/死亡尚未存储。",
  membership: "会员",
- membershipLede: "免费 $0。Plus 每月 $4。Premium 每月 $7。付费方案绝不能购买评分、更弱的对手或排队优先权。支付功能即将开放。",
+ membershipLede: "Free $0。Plus 每月 $4。Premium 每月 $7。付费方案绝不购买积分、更弱的对手或排队优先权。结账通过 Paddle 完成。",
  graphite: "石墨",
  stayFree: "继续使用免费方案",
- membershipDisclosure: "价格固定：免费 $0，Plus 每月 $4，Premium 每月 $7。支付功能即将开放，目前不会产生任何费用。付费方案绝不能购买竞技优势。",
+ membershipDisclosure: "价格固定：Free $0，Plus 每月 $4，Premium 每月 $7。结账通过 Paddle 完成；在付款未配置期间，按钮显示“即将推出”。付费方案绝不购买竞技优势。",
  integrity: "完整性",
  placementCount: "已进行定级赛 {complete} / 10 场",
  matchLogged: "第 {n} 场已记录",
@@ -87,7 +87,7 @@ export const ZH: MessageBag = {
  supportKicker: "A.C.E 支持 · 帮助中心",
  supportTitle: "技术支持中心",
  supportLede:
- "有关设置、校准和会员的知识中心。反作弊、排位队列和支付即将推出。",
+ "关于设置、定级和会员问题的知识中心。反作弊和排位队列即将推出。",
  supportCat1Title: "内核反作弊安装",
  supportCat1Body:
  "驱动程序安装提示、硬件合规以及安全启动遥测调整，在此作为未来的内核政策予以记载。A.C.E 不在本网站提供可用的反作弊客户端，不安装驱动程序，也不收集安全启动或 HWID 数据。",
@@ -96,7 +96,7 @@ export const ZH: MessageBag = {
  "十场定级赛、分级计算速度以及赛季评分再校准，是规划中的校准说明。在存在经过验证的反作弊路径之前，排位「寻找对局」保持失败即关闭。本页数字不是实时对局结果。",
  supportCat3Title: "订阅与账单支持",
  supportCat3Body:
- "展示价格仍为 Plus $4/月与 Premium $7/月。一键取消被规定用于未来的控制台。结账尚未实现。一旦存在账单，不足一个月的退款将遵循已公布的条款——今天没有任何扣款。",
+ "Plus 每月 $4，Premium 每月 $7，通过 Paddle 计费。可随时在“管理订阅”中取消；退款遵循退款政策（14 天）。",
  supportTicket: "提交支持工单 >",
  supportTicketTitle: "管理员复核封装",
  supportTicketBody:
@@ -131,7 +131,7 @@ export const ZH: MessageBag = {
  shopTitle: "A.C.E 市场 — 精英武器定制",
  shopLede: "为库存配备经过核验的高阶皮肤、自定义个人资料元素以及联赛准入工具。",
  shopNote:
- "会员：Plus 每月 $4，Premium 每月 $7。外观物品绝不能购买评分、更弱的对手或排队优先权。结账即将开放。",
+ "会员：Plus 每月 $4，Premium 每月 $7。外观物品绝不购买积分、更弱的对手或排队优先权。结账通过 Paddle 完成。",
  shopTabSkins: "武器皮肤",
  shopTabCosmetics: "个人资料外观",
  shopTabAccess: "联赛准入",
@@ -141,7 +141,7 @@ export const ZH: MessageBag = {
  shopInspectKicker: "物品预览 · 即将推出",
  shopInspectTitle: "检视资产",
  shopInspectCopy:
- "商店即将开放。目前无法购买或付款。",
+ "物品通过 Paddle 结账购买。在付款未配置期间，按钮显示“即将推出”。",
  shopItemIndex: "物品 {n}",
  shopTabsAria: "市场类别",
  squadTabsAria: "小队工作区类别",

@@ -23,7 +23,7 @@ export const legalDocs: TextBag["legalDocs"] = {
     meta: {
       title: "Conditions d’utilisation",
       description:
-        "Conditions d’utilisation du site A.C.E, site de compétition Counter-Strike 2. Le mode classé, les paiements et l’anti-triche ne sont pas actifs.",
+        "Ancien résumé des conditions d’A.C.E. Les Conditions d’utilisation en vigueur sont sur /terms.",
     },
     kicker: "ACE-LEGAL / CONDITIONS D’UTILISATION",
     title: "Conditions d’utilisation",
@@ -44,13 +44,13 @@ export const legalDocs: TextBag["legalDocs"] = {
       notActive: {
         title: "3. Ce que ce site n’est pas",
         paragraphs: [
-          "Le matchmaking classé, des serveurs CS2 en fonctionnement, un AI Anti-Cheat opérationnel, la facturation et les prix ne sont pas actifs. Les horloges du lobby et les panneaux d'intégrité sont des aperçus, sauf indication contraire sur la page.",
+          "Ce résumé est remplacé par les Conditions d’utilisation sur /terms, la Politique de confidentialité sur /privacy et la Politique de remboursement sur /refunds.",
         ],
       },
       subscriptions: {
         title: "Formules, facturation et résiliation",
         paragraphs: [
-          "Free coûte 0 $, Plus 4 $ par mois et Premium 7 $ par mois. Le paiement n’existe pas encore : rien ne peut être acheté ni facturé aujourd’hui. Quand la facturation ouvrira, les formules se renouvelleront chaque mois ; tu pourras résilier à tout moment dans les paramètres du tableau de bord et garder l’accès jusqu’à la fin du mois payé ; un mois entamé n’est pas remboursé sauf si la loi de ton pays l’impose. Aucune formule n’ajoute de Rating Points, n’améliore un classement ni ne modifie le matchmaking. Le support prioritaire Premium, une fois lancé, signifie que les demandes Premium sont traitées en premier, sans délai de réponse garanti.",
+          "Free coûte 0 $, Plus 4 $ par mois et Premium 7 $ par mois. Le paiement passe par Paddle en tant que Merchant of Record ; tant que les paiements ne sont pas configurés, le bouton affiche Bientôt. La facturation, la résiliation et les remboursements relèvent de /terms et /refunds. Aucune offre n’ajoute de points de rating ni ne modifie le matchmaking.",
         ],
       },
       antiCheat: {
@@ -119,7 +119,7 @@ export const legalDocs: TextBag["legalDocs"] = {
       title: "Ce que nous ne collectons jamais",
       items: [
         "Les mots de passe Steam. La connexion passe uniquement par Steam OpenID / le flux officiel de Steam.",
-        "Les numéros de carte bancaire. Le paiement n’est pas implémenté.",
+        "Numéros de carte bancaire. Paddle gère les données de paiement ; A.C.E ne les voit jamais.",
         "La télémétrie au niveau du noyau. Aucun client anti-triche n’est livré avec ce site.",
       ],
     },

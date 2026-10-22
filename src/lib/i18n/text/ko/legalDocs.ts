@@ -23,7 +23,7 @@ export const legalDocs: TextBag["legalDocs"] = {
     meta: {
       title: "서비스 이용약관",
       description:
-        "Counter-Strike 2 대회 사이트인 A.C.E 웹사이트의 서비스 이용약관입니다. 랭크, 결제, 안티치트는 운영되지 않습니다.",
+        "이전 A.C.E 약관 요약입니다. 현재 서비스 약관은 /terms에 있습니다.",
     },
     kicker: "ACE-LEGAL / 서비스 이용약관",
     title: "서비스 이용약관",
@@ -44,13 +44,13 @@ export const legalDocs: TextBag["legalDocs"] = {
       notActive: {
         title: "3. 이 웹사이트가 제공하지 않는 것",
         paragraphs: [
-          "랭크 매치메이킹, 실제 CS2 게임 서버, 작동하는 AI Anti-Cheat, 결제 및 상금은 아직 운영되지 않습니다. 로비 시계와 무결성 패널은 페이지에 달리 명시되지 않는 한 미리보기입니다.",
+          "이 요약은 /terms의 서비스 약관, /privacy의 개인정보 처리방침, /refunds의 환불 정책으로 대체되었습니다.",
         ],
       },
       subscriptions: {
         title: "플랜, 결제 및 해지",
         paragraphs: [
-          "Free는 $0, Plus는 월 $4, Premium은 월 $7입니다. 아직 결제 기능이 없어 현재는 아무것도 구매하거나 청구할 수 없습니다. 결제가 열리면 플랜은 매월 갱신되며, 대시보드 설정에서 언제든 해지하고 결제한 달의 마지막까지 이용할 수 있습니다. 일부 사용한 달은 거주 국가의 법률이 요구하지 않는 한 환불되지 않습니다. 어떤 플랜도 Rating Points를 추가하거나 레이팅을 올리거나 매치메이킹을 바꾸지 않습니다. Premium 우선 지원은 출시 후 Premium 문의를 먼저 처리한다는 뜻이며, 응답 시간은 보장하지 않습니다.",
+          "Free는 $0, Plus는 월 $4, Premium은 월 $7입니다. 결제는 Merchant of Record인 Paddle을 통해 진행되며, 결제가 설정되지 않은 동안 버튼에는 '곧 제공'이 표시됩니다. 청구, 해지, 환불은 /terms와 /refunds를 따릅니다. 어떤 플랜도 레이팅 포인트를 더하거나 매치메이킹을 바꾸지 않습니다.",
         ],
       },
       antiCheat: {
@@ -119,7 +119,7 @@ export const legalDocs: TextBag["legalDocs"] = {
       title: "당사가 절대 수집하지 않는 정보",
       items: [
         "Steam 비밀번호. 로그인은 Steam OpenID / Steam의 공식 절차로만 이루어집니다.",
-        "결제 카드 번호. 결제 기능은 구현되어 있지 않습니다.",
+        "결제 카드 번호. 결제 정보는 Paddle이 처리하며 A.C.E는 절대 보지 않습니다.",
         "커널 텔레메트리. 이 웹사이트와 함께 제공되는 안티치트 클라이언트는 없습니다.",
       ],
     },

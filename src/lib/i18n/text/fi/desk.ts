@@ -6,7 +6,7 @@ export const desk: TextBag["desk"] = {
       "title": "A.C.E Marketplace",
       "description": "Mestaruuspalkintokortit. Kauppa ja palkinnot avautuvat pian."
     },
-    "heroHonesty": "Ensikatsaus tuleviin mestaruuspalkintoihin. Kauppa avautuu pian; tänään mitään ei veloiteta.",
+    "heroHonesty": "Kosmetiikkaa ja jäsenyyksiä myydään Paddlen kassalla. Kosmetiikka ei koskaan vaikuta pelaamiseen.",
     "prizeBanner": "🏆 MESTARUUSPALKINNOT · TULOSSA PIAN",
     "notice": "Nämä esittelyt ovat esikatseluja ilman rahallista arvoa. Mitään ei toimiteta tai veloiteta, eikä tarkastele-painike aloita ostoa.",
     "items": {

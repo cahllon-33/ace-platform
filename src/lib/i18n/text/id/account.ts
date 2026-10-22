@@ -18,7 +18,7 @@ export const account: TextBag["account"] = {
     "soon": "Segera hadir",
     "sample": "CONTOH · hanya bentuk, bukan data asli",
     "lockedTitle": "Statistik pemain adalah bagian dari A.C.E Plus dan Premium",
-    "lockedBody": "Paket tersimpanmu adalah Free. Plus ($4/bulan) dan Premium ($7/bulan) sama-sama membuka halaman ini. Segera hadir: checkout belum ada.",
+    "lockedBody": "Paket tersimpanmu adalah Free. Plus ($4/bulan) dan Premium ($7/bulan) membuka halaman ini. Berlangganan di halaman harga melalui checkout Paddle.",
     "signIn": "Masuk dengan Steam untuk melihat statistik pemainmu.",
     "plansLink": "Lihat paket",
     "rosterNote": "Contoh profil roster: pemain ini tidak memiliki pertandingan A.C.E tercatat, jadi statistik tidak menampilkan angka.",
@@ -63,8 +63,8 @@ export const account: TextBag["account"] = {
     },
     "settings": {
       "title": "PROFIL PENGATURAN DASBOR",
-      "billingNotLive": "Setiap akun berada di Free sampai pembayaran tersedia.",
-      "cancelReason": "Tidak ada langganan tertagih untuk dibatalkan. Pembayaran belum diterapkan.",
+      "billingNotLive": "Paket dibeli melalui checkout Paddle. Selama pembayaran belum dikonfigurasi, tombol menampilkan Segera hadir.",
+      "cancelReason": "Batalkan langganan Paddle di Kelola langganan pada panel keanggotaanmu.",
       "cancelButton": "Batalkan langganan"
     },
     "rankedReason": "Matchmaking ranked ditolak sampai integrasi Anti-Cheat terverifikasi ada.",

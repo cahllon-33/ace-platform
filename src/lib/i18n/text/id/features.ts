@@ -59,7 +59,7 @@ export const features: TextBag["features"] = {
     "kicker": "Kosmetik · segera hadir",
     "title": "ARSITEKTUR LOOT A.C.E — DROP SENJATA",
     "lede": "Finishing A.C.E orisinal, hadir bersama toko. Kosmetik tidak pernah memengaruhi kompetisi.",
-    "checkout": "Pembayaran · segera hadir"
+    "checkout": "Checkout · Paddle"
   },
   "identityPreview": {
     "badge": "Pratinjau — belum dikonfirmasi",

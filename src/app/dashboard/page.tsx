@@ -9,7 +9,6 @@ import { connection } from "next/server";
 import { redirect } from "next/navigation";
 import { AntiCheatTelemetry } from "@/components/anti-cheat-telemetry";
 import { ComingSoonShield } from "@/components/coming-soon-shield";
-import { ComingSoonPlate } from "@/components/coming-soon-plate";
 import { CreateTeamForm, InviteForm } from "@/components/dashboard-forms";
 import { EliteSeal } from "@/components/elite-seal";
 import { IdentityPreview } from "@/components/identity-preview";
@@ -234,13 +233,15 @@ export default async function DashboardPage() {
               {copy.settings.title}
             </h3>
             <p className="mt-2 text-xs leading-6 text-ace-muted">{text.consent.subscriptionDisclosure}</p>
+            <p className="mt-3 text-xs leading-6 text-ace-muted">{copy.settings.billingNotLive}</p>
             <div className="mt-3">
-              <ComingSoonPlate label={ui.soon.label} caption={copy.settings.billingNotLive} size="sm" />
-            </div>
-            <div className="mt-3">
-              <PlannedButton reason={copy.settings.cancelReason}>
-                {copy.settings.cancelButton}
-              </PlannedButton>
+              {user.paddleSubscriptionId ? (
+                <a href="/api/paddle/portal" className="inline-flex rounded-full border border-[#FFD76A]/40 px-4 py-2 text-xs font-semibold tracking-[0.12em] text-[#FFD76A] hover:bg-[#FFD76A]/10">
+                  {copy.settings.cancelButton}
+                </a>
+              ) : (
+                <p className="text-xs leading-6 text-ace-muted">{copy.settings.cancelReason}</p>
+              )}
             </div>
           </div>
           <div className="mt-6">

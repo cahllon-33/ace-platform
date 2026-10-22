@@ -50,7 +50,7 @@ export const consent: TextBag["consent"] = {
     close: "Fechar",
   },
   subscriptionDisclosure:
-    "Em breve: o pagamento ainda não existe, então nenhuma assinatura pode começar, nada é cobrado e nada é renovado. Quando houver cobrança, será um plano mensal que você cancela nas configurações do painel; um mês já pago não é reembolsado.",
+    "As assinaturas funcionam pelo checkout da Paddle como plano mensal até você cancelar. Cancele quando quiser em Gerenciar assinatura; reembolsos conforme a Política de Reembolso (14 dias). Enquanto os pagamentos não estiverem configurados, o botão de checkout mostra Em breve.",
   planned: {
     fallbackLabel: "Ação planejada",
     badge: "Planejado — não disponível",

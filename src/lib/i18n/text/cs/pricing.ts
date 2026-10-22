@@ -212,7 +212,7 @@ export const pricing: TextBag["pricing"] = {
       },
       "goldEliteSeal": {
         "feature": "Elitní pečeť a speciální odznaky",
-        "detail": "Pouze Premium, načteno z úrovně uložené na serveru. Kosmetické. Platba tuto úroveň nenastavuje."
+        "detail": "Pouze Premium, čteno z uložené úrovně na serveru. Kosmetické. Úroveň se nastaví až po potvrzení platby Paddlem."
       }
     },
     "cells": {
@@ -232,14 +232,14 @@ export const pricing: TextBag["pricing"] = {
   "receipt": {
     "plus": {
       "metaTitle": "Potvrzení Plus",
-      "metaDescription": "Dopis A.C.E Plus zobrazený na tomto webu. Pokladna není v provozu, takže se nic neúčtuje a neodesílá se žádný e-mail.",
+      "metaDescription": "Dopis A.C.E Plus zobrazený na tomto webu. Není to účtenka; účtenku posílá e-mailem Paddle.",
       "planName": "A.C.E Plus",
       "nextLabel": "Pokračovat na A.C.E",
       "nextBody": "Veřejné stránky zůstávají otevřené. Tato volba neotevírá frontu a nemění uložený tarif."
     },
     "premium": {
       "metaTitle": "Potvrzení Premium",
-      "metaDescription": "Dopis A.C.E Premium zobrazený na tomto webu. Pokladna není v provozu, takže se nic neúčtuje a neodesílá se žádný e-mail.",
+      "metaDescription": "Dopis A.C.E Premium zobrazený na tomto webu. Není to účtenka; účtenku posílá e-mailem Paddle.",
       "planName": "A.C.E Premium",
       "nextLabel": "Přečíst podmínky Premium",
       "nextBody": "Premium tvoří prémiová grafika ranků, animovaná profilová karta, speciální odznaky a ELITE SEAL a k tomu vše z Plus. Uložení klanu ve Squads je zdarma pro každý účet."
@@ -248,7 +248,7 @@ export const pricing: TextBag["pricing"] = {
   "letter": {
     "kicker": "{plan} · {price} měsíčně",
     "title": "Děkujeme za váš výběr",
-    "flag": "Tento dopis se zobrazuje na webu. Žádný e-mail nebyl odeslán. Z žádné karty nebyla stržena platba. Pokladna není v provozu a uložený tarif členství se nezměnil.",
+    "flag": "Tento dopis se zobrazuje na webu a není účtenkou. Účtenku za platbu posílá Paddle a plán se změní až po potvrzení platby Paddlem.",
     "greeting": "Milý hráči,",
     "intro": "Děkujeme, že jste zvolili {plan}. Tato stránka je potvrzením. Zaznamenává zobrazenou cenu, co tato volba dnes zahrnuje, co nezahrnuje, a adresu podpory zveřejněnou na tomto webu.",
     "selected": {

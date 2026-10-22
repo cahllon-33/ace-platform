@@ -8120,3 +8120,5 @@ html[dir="rtl"] .ace-hub-card-face {
 .ace-chip-initial { display: inline-grid; place-items: center; width: 2.1rem; height: 2.1rem; flex: none; border-radius: 50%; box-shadow: 0 0 0 2px #D4AF37; color: #FFD76A; font-weight: 800; font-size: .85rem; background: #121318; }
 .ace-chip-signin { display: inline-flex; align-items: center; gap: .5rem; min-height: 2.5rem; padding: 0 .9rem; border-radius: .6rem; background: linear-gradient(180deg, #1f2d3d, #171a21); border: 1px solid #2a475e; color: #e6edf3; font-size: .8rem; font-weight: 700; text-decoration: none; }
 .ace-chip-signin:hover { border-color: #66c0f4; }
+.is-billingOn .ace-status-light { background: #3ddc84; box-shadow: 0 0 8px rgba(61,220,132,.6); }
+.is-billingOn .ace-status-value { color: var(--ace-t-text); letter-spacing: 0.06em; }

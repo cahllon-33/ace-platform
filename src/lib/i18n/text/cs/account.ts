@@ -18,7 +18,7 @@ export const account: TextBag["account"] = {
     "soon": "Brzy",
     "sample": "UKÁZKA · jen tvar, žádná skutečná data",
     "lockedTitle": "Statistiky hráče jsou součástí A.C.E Plus a Premium",
-    "lockedBody": "Tvůj uložený plán je Free. Plus (4 $/měs.) i Premium (7 $/měs.) tuto stránku odemykají. Brzy: platba zatím neexistuje.",
+    "lockedBody": "Tvůj uložený plán je Free. Tuto stránku odemyká Plus (4 $ měsíčně) i Premium (7 $ měsíčně). Předplatné sjednáš na stránce cen přes pokladnu Paddle.",
     "signIn": "Přihlas se přes Steam a uvidíš své statistiky.",
     "plansLink": "Zobrazit plány",
     "rosterNote": "Ukázkový profil soupisky: tito hráči nemají zaznamenané zápasy A.C.E, proto statistiky neukazují čísla.",
@@ -63,8 +63,8 @@ export const account: TextBag["account"] = {
     },
     "settings": {
       "title": "PROFIL NASTAVENÍ PŘEHLEDU",
-      "billingNotLive": "Každý účet je na Free, dokud nebude existovat platba.",
-      "cancelReason": "Neexistuje žádné účtované předplatné, které by bylo možné zrušit. Pokladna není implementována.",
+      "billingNotLive": "Plány se kupují přes pokladnu Paddle. Dokud platby nejsou nastavené, tlačítko ukazuje Již brzy.",
+      "cancelReason": "Předplatné Paddle zrušíš ve Správě předplatného v panelu členství.",
       "cancelButton": "Zrušit předplatné"
     },
     "rankedReason": "Rankingové párování je odepřeno, dokud nebude existovat ověřená integrace anti-cheatu.",

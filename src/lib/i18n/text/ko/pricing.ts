@@ -212,7 +212,7 @@ export const pricing: TextBag["pricing"] = {
       },
       "goldEliteSeal": {
         "feature": "엘리트 인장 및 특별 배지",
-        "detail": "Premium 전용이며, 서버에 저장된 등급에서 읽어 옵니다. 꾸미기 전용. 결제로 이 등급이 설정되지 않습니다."
+        "detail": "Premium 전용이며 서버에 저장된 등급에서 읽습니다. 꾸미기 전용. 등급은 Paddle이 결제를 확인한 후에만 설정됩니다."
       }
     },
     "cells": {
@@ -232,14 +232,14 @@ export const pricing: TextBag["pricing"] = {
   "receipt": {
     "plus": {
       "metaTitle": "Plus 영수증",
-      "metaDescription": "이 웹사이트에 표시되는 A.C.E Plus 편지입니다. 결제가 운영 중이 아니므로 아무것도 청구되지 않으며 이메일도 발송되지 않습니다.",
+      "metaDescription": "이 사이트에 표시되는 A.C.E Plus 편지입니다. 영수증이 아니며, 영수증은 Paddle이 이메일로 보냅니다.",
       "planName": "A.C.E Plus",
       "nextLabel": "A.C.E에서 계속하기",
       "nextBody": "공개 페이지는 계속 열려 있습니다. 이 선택은 대기열을 열지 않으며 저장된 티어를 바꾸지 않습니다."
     },
     "premium": {
       "metaTitle": "Premium 영수증",
-      "metaDescription": "이 웹사이트에 표시되는 A.C.E Premium 편지입니다. 결제가 운영 중이 아니므로 아무것도 청구되지 않으며 이메일도 발송되지 않습니다.",
+      "metaDescription": "이 사이트에 표시되는 A.C.E Premium 편지입니다. 영수증이 아니며, 영수증은 Paddle이 이메일로 보냅니다.",
       "planName": "A.C.E Premium",
       "nextLabel": "Premium 약관 읽기",
       "nextBody": "Premium은 Premium 랭크 아트, 애니메이션 프로필 카드, 특별 배지와 ELITE SEAL에 Plus의 모든 것을 더한 것입니다. Squads에 클랜 저장은 모든 계정에 무료입니다."
@@ -248,7 +248,7 @@ export const pricing: TextBag["pricing"] = {
   "letter": {
     "kicker": "{plan} · 월 {price}",
     "title": "선택해 주셔서 감사합니다",
-    "flag": "이 편지는 웹사이트에 표시됩니다. 이메일은 발송되지 않았습니다. 카드에 청구되지 않았습니다. 결제는 운영 중이 아니며, 저장된 멤버십 티어도 바뀌지 않았습니다.",
+    "flag": "이 편지는 사이트에 표시되며 영수증이 아닙니다. 결제 영수증은 Paddle이 보내며, 플랜은 Paddle이 결제를 확인한 후에만 바뀝니다.",
     "greeting": "플레이어님께,",
     "intro": "{plan}을(를) 선택해 주셔서 감사합니다. 이 페이지가 영수증입니다. 표시 가격, 현재 이 선택에 포함된 것과 포함되지 않은 것, 그리고 이 웹사이트에 게시된 지원 주소를 기록합니다.",
     "selected": {

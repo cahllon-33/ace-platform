@@ -23,7 +23,7 @@ export const legalDocs: TextBag["legalDocs"] = {
     meta: {
       title: "Podmínky služby",
       description:
-        "Podmínky služby webu A.C.E pro tento soutěžní web Counter-Strike 2. Rankingové hry, platby a anti-cheat nejsou v provozu.",
+        "Dřívější shrnutí podmínek A.C.E. Aktuální Podmínky služby jsou na /terms.",
     },
     kicker: "ACE-LEGAL / PODMÍNKY SLUŽBY",
     title: "Podmínky služby",
@@ -44,13 +44,13 @@ export const legalDocs: TextBag["legalDocs"] = {
       notActive: {
         title: "3. Čím tento web není",
         paragraphs: [
-          "Hodnocený matchmaking, běžící herní servery CS2, funkční AI Anti-Cheat, platby ani ceny nejsou aktivní. Hodiny v lobby a panely integrity jsou náhledy, pokud stránka neuvádí jinak.",
+          "Toto shrnutí nahrazují Podmínky služby na /terms, Zásady ochrany soukromí na /privacy a Zásady refundace na /refunds.",
         ],
       },
       subscriptions: {
         title: "Plány, platby a zrušení",
         paragraphs: [
-          "Free stojí $0, Plus $4 měsíčně a Premium $7 měsíčně. Platby zatím neexistují, takže dnes nelze nic koupit ani nic není účtováno. Až platby spustíme, plány se budou obnovovat měsíčně; zrušit je půjde kdykoli v nastavení panelu s přístupem do konce zaplaceného měsíce; načatý měsíc se nevrací, pokud to nevyžaduje zákon tvé země. Žádný plán nepřidává Rating Points, nezvyšuje hodnocení ani nemění matchmaking. Prioritní podpora Premium po spuštění znamená, že požadavky Premium se vyřizují přednostně, bez garantované doby odpovědi.",
+          "Free stojí 0 $, Plus 4 $ měsíčně a Premium 7 $ měsíčně. Platba probíhá přes Paddle jako Merchant of Record; dokud platby nejsou nastavené, tlačítko ukazuje Již brzy. Platby, zrušení a refundace se řídí /terms a /refunds. Žádný plán nepřidává body hodnocení ani nemění matchmaking.",
         ],
       },
       antiCheat: {
@@ -119,7 +119,7 @@ export const legalDocs: TextBag["legalDocs"] = {
       title: "Co nikdy neshromažďujeme",
       items: [
         "Hesla ke službě Steam. Přihlášení probíhá výhradně přes Steam OpenID / oficiální postup služby Steam.",
-        "Čísla platebních karet. Pokladna není implementována.",
+        "Čísla platebních karet. Platební údaje zpracovává Paddle; A.C.E je nikdy nevidí.",
         "Telemetrii jádra. S tímto webem se nedodává žádný klient anti-cheatu.",
       ],
     },

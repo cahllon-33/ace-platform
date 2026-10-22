@@ -245,7 +245,8 @@ export const UI_TR: Ui = {
       "inDevelopment": "Geliştiriliyor",
       "comingSoon": "Yakında",
       "preparing": "Hazırlanıyor",
-      "billingOff": "Aktif değil · ödeme alınmıyor"
+      "billingOff": "Yapılandırılmadı · ödeme düğmesi Yakında gösterir",
+      "billingOn": "Aktif · Paddle ödemesi"
     },
     "card": {
       "matches": "Maçlar",
@@ -325,7 +326,7 @@ export const UI_TR: Ui = {
       "ranksBody": "Rozet renkleri her kademe için sabittir ve rütben her zaman kayıtlı RP'nden hesaplanır.",
       "ranksCta": "Tüm rütbeler",
       "plansTitle": "Galibiyet satın almayan planlar",
-      "plansBody": "Ücretli planlar yalnızca kozmetik ve kolaylık sağlar. Ödeme henüz aktif değil, bu yüzden bugün herkes Free'de.",
+      "plansBody": "Ücretli planlar yalnızca kozmetik ve kolaylık içindir. Ödeme Paddle üzerinden yapılır; ödemeler yapılandırılmadığı sürece düğmede Yakında yazar.",
       "plansCta": "Planları karşılaştır",
       "free": "Ücretsiz",
       "perMonth": "/ay",

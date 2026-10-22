@@ -23,7 +23,7 @@ export const legalDocs: TextBag["legalDocs"] = {
     meta: {
       title: "Warunki korzystania z usługi",
       description:
-        "Warunki korzystania z usługi strony internetowej A.C.E, serwisu rozgrywek Counter-Strike 2. Rozgrywki rankingowe, płatności i anticheat nie działają.",
+        "Wcześniejsze podsumowanie warunków A.C.E. Obowiązujące Warunki korzystania są pod /terms.",
     },
     kicker: "ACE-PRAWO / WARUNKI KORZYSTANIA Z USŁUGI",
     title: "Warunki korzystania z usługi",
@@ -44,13 +44,13 @@ export const legalDocs: TextBag["legalDocs"] = {
       notActive: {
         title: "3. Czym ta strona nie jest",
         paragraphs: [
-          "Matchmaking rankingowy, działające serwery CS2, działający AI Anti-Cheat, płatności i nagrody nie są aktywne. Zegary lobby i panele uczciwości są podglądem, chyba że strona stanowi inaczej.",
+          "To podsumowanie zastępują Warunki korzystania pod /terms, Polityka prywatności pod /privacy i Polityka zwrotów pod /refunds.",
         ],
       },
       subscriptions: {
         title: "Plany, płatności i rezygnacja",
         paragraphs: [
-          "Free kosztuje $0, Plus $4 miesięcznie, a Premium $7 miesięcznie. Płatności jeszcze nie istnieją, więc dziś nie można niczego kupić ani nic nie jest pobierane. Gdy płatności ruszą, plany będą odnawiane co miesiąc; zrezygnować można w każdej chwili w ustawieniach panelu, zachowując dostęp do końca opłaconego miesiąca; niepełny miesiąc nie podlega zwrotowi, chyba że wymaga tego prawo Twojego kraju. Żaden plan nie dodaje Rating Points, nie podnosi rankingu ani nie zmienia doboru meczów. Priorytetowe wsparcie Premium, po uruchomieniu, oznacza, że zgłoszenia Premium są obsługiwane jako pierwsze, bez gwarantowanego czasu odpowiedzi.",
+          "Free kosztuje 0 $, Plus 4 $ miesięcznie, a Premium 7 $ miesięcznie. Płatność odbywa się przez Paddle jako Merchant of Record; dopóki płatności nie są skonfigurowane, przycisk pokazuje Wkrótce. Rozliczenia, anulowanie i zwroty regulują /terms i /refunds. Żaden plan nie dodaje punktów rankingowych ani nie zmienia matchmakingu.",
         ],
       },
       antiCheat: {
@@ -119,7 +119,7 @@ export const legalDocs: TextBag["legalDocs"] = {
       title: "Czego nigdy nie zbieramy",
       items: [
         "Haseł Steam. Logowanie odbywa się wyłącznie przez Steam OpenID / oficjalny proces Steam.",
-        "Numerów kart płatniczych. Kasa nie została wdrożona.",
+        "Numery kart płatniczych. Dane płatności obsługuje Paddle; A.C.E nigdy ich nie widzi.",
         "Telemetrii jądra systemu. Z tą stroną nie jest dostarczany żaden klient anticheatu.",
       ],
     },

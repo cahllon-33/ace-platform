@@ -50,7 +50,7 @@ export const consent: TextBag["consent"] = {
     close: "Cerrar",
   },
   subscriptionDisclosure:
-    "Próximamente: el pago aún no existe, así que no puede empezar ninguna suscripción, no se cobra nada y nada se renueva. Cuando exista la facturación, será un plan mensual que puedes cancelar en los ajustes del panel; un mes ya pagado no se reembolsa.",
+    "Las suscripciones funcionan con el checkout de Paddle como plan mensual hasta que canceles. Cancela cuando quieras en Gestionar suscripción; reembolsos según la Política de reembolsos (14 días). Mientras los pagos no estén configurados, el botón de pago muestra Próximamente.",
   planned: {
     fallbackLabel: "Acción planificada",
     badge: "Planificado: no disponible",

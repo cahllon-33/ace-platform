@@ -212,7 +212,7 @@ export const pricing: TextBag["pricing"] = {
       },
       "goldEliteSeal": {
         "feature": "חותם עילית ותגים מיוחדים",
-        "detail": "ל-Premium בלבד, נקרא מהדרגה השמורה בשרת. קוסמטי. התשלום אינו קובע את הדרגה הזו."
+        "detail": "Premium בלבד, נקרא מהדרגה השמורה בשרת. קוסמטי. הדרגה נקבעת רק אחרי ש־Paddle מאשרת את התשלום."
       }
     },
     "cells": {
@@ -232,14 +232,14 @@ export const pricing: TextBag["pricing"] = {
   "receipt": {
     "plus": {
       "metaTitle": "קבלת Plus",
-      "metaDescription": "מכתב A.C.E Plus שמוצג באתר הזה. הקופה לא חיה, ולכן שום דבר לא מחויב ולא נשלח מייל.",
+      "metaDescription": "מכתב A.C.E Plus המוצג באתר. זו אינה קבלה; Paddle שולחת את הקבלה במייל.",
       "planName": "A.C.E Plus",
       "nextLabel": "המשיכו ב-A.C.E",
       "nextBody": "העמודים הציבוריים נשארים פתוחים. הבחירה הזו לא פותחת תור ולא משנה את דרגת המנוי השמורה."
     },
     "premium": {
       "metaTitle": "קבלת Premium",
-      "metaDescription": "מכתב A.C.E Premium שמוצג באתר הזה. הקופה לא חיה, ולכן שום דבר לא מחויב ולא נשלח מייל.",
+      "metaDescription": "מכתב A.C.E Premium המוצג באתר. זו אינה קבלה; Paddle שולחת את הקבלה במייל.",
       "planName": "A.C.E Premium",
       "nextLabel": "לקריאת תנאי Premium",
       "nextBody": "Premium כולל אמנות דרגות Premium, כרטיס פרופיל מונפש, תגים מיוחדים ו-ELITE SEAL, וגם כל מה שיש ב-Plus. שמירת קלאן ב-Squads חינמית לכל חשבון."
@@ -248,7 +248,7 @@ export const pricing: TextBag["pricing"] = {
   "letter": {
     "kicker": "{plan} · {price} לחודש",
     "title": "תודה על הבחירה שלך",
-    "flag": "המכתב הזה מוצג באתר. לא נשלח מייל. לא חויב כרטיס. הקופה לא חיה, ודרגת המנוי השמורה לא שונתה.",
+    "flag": "המכתב מוצג באתר ואינו קבלה. Paddle שולחת את קבלת התשלום, והמנוי משתנה רק אחרי ש־Paddle מאשרת את התשלום.",
     "greeting": "שחקן יקר,",
     "intro": "תודה שבחרת ב-{plan}. העמוד הזה הוא הקבלה. הוא מתעד את מחיר התצוגה, מה הבחירה כוללת היום, מה היא לא כוללת, ואת כתובת התמיכה שמפורסמת באתר הזה.",
     "selected": {

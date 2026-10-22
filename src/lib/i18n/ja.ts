@@ -33,10 +33,10 @@ export const JA: MessageBag = {
  "最初の試合が記録されると、ここに統計が表示されます。",
  statsLive: "勝敗は A.C.E アカウントのものである。キル/デスはまだ保存されていない。",
  membership: "会員",
- membershipLede: "無料 $0。Plus 月額$4。Premium 月額$7。有料プランでレーティング、弱い対戦相手、キューの優先権を買うことは決してできません。支払いはまもなく開始します。",
+ membershipLede: "Free $0。Plus 月額$4。Premium 月額$7。有料プランでレーティング、弱い相手、キューの優先権は買えません。決済はPaddleで行われます。",
  graphite: "黒鉛",
  stayFree: "無料のままにする",
- membershipDisclosure: "価格は固定です:無料 $0、Plus 月額$4、Premium 月額$7。支払いはまもなく開始し、現在は一切請求されません。有料プランで競技上の優位を買うことはできません。",
+ membershipDisclosure: "価格は固定です：Free $0、Plus 月額$4、Premium 月額$7。決済はPaddleで行われ、未設定の間はボタンに「近日公開」と表示されます。有料プランで競技上の優位は買えません。",
  integrity: "完全性",
  placementCount: "認定試合 {complete} / 10 を消化",
  matchLogged: "試合 {n} を記録済み",
@@ -87,7 +87,7 @@ export const JA: MessageBag = {
  supportKicker: "A.C.E サポート · ヘルプセンター",
  supportTitle: "技術サポート拠点",
  supportLede:
- "セットアップ、キャリブレーション、メンバーシップに関するナレッジセンターです。アンチチート、ランクキュー、支払いはまもなく提供されます。",
+ "セットアップ、キャリブレーション、メンバーシップの質問のためのナレッジセンター。アンチチートとランクキューは近日公開です。",
  supportCat1Title: "カーネルアンチチートの設定",
  supportCat1Body:
  "ドライバの導入案内、ハードウェア適合、セキュアブートの遠隔計測調整は、将来のカーネル方針としてここに記される。A.C.E は動作するアンチチートクライアントを出荷せず、ドライバを導入せず、このウェブサイトでセキュアブートや HWID のデータを収集しない。",
@@ -96,7 +96,7 @@ export const JA: MessageBag = {
  "十試合の認定、区分の計算速度、季節評価の再キャリブレーションは、計画中のキャリブレーションの説明である。検証済みのアンチチート経路ができるまで、ランクの「試合を探す」は失敗時閉鎖のままである。このページの数字は稼働中の試合結果ではない。",
  supportCat3Title: "購読と請求のサポート",
  supportCat3Body:
- "表示価格は Plus $4/月 と Premium $7/月 のままである。ワンクリック解約は将来の計器板に定める。決済は実装されていない。月の途中の返金は、請求が存在するようになってから公表済みの条件に従う。本日、請求は走っていない。",
+ "Plusは月額$4、Premiumは月額$7で、Paddleを通じて請求されます。「サブスクリプション管理」からいつでも解約でき、返金は返金ポリシー（14日）に従います。",
  supportTicket: "サポート票を送る >",
  supportTicketTitle: "管理レビューのラッパー",
  supportTicketBody:
@@ -131,7 +131,7 @@ export const JA: MessageBag = {
  shopTitle: "A.C.E 市場 — エリート武器のカスタム",
  shopLede: "検証済みの高位スキン、独自のプロフィール要素、リーグ参加ツールを在庫に装備する。",
  shopNote:
- "メンバーシップ:Plus 月額$4、Premium 月額$7。コスメティックでレーティング、弱い対戦相手、キューの優先権を買うことは決してできません。決済はまもなく開始します。",
+ "メンバーシップ：Plus 月額$4、Premium 月額$7。コスメティックでレーティング、弱い相手、キューの優先権は買えません。決済はPaddleで行われます。",
  shopTabSkins: "武器スキン",
  shopTabCosmetics: "プロフィール外観",
  shopTabAccess: "リーグ参加",
@@ -141,7 +141,7 @@ export const JA: MessageBag = {
  shopInspectKicker: "アイテムプレビュー · まもなく開始",
  shopInspectTitle: "資産を検分",
  shopInspectCopy:
- "ショップはまもなく開始します。現時点では購入も請求もできません。",
+ "アイテムはPaddle決済で購入します。決済が未設定の間、ボタンには「近日公開」と表示されます。",
  shopItemIndex: "物品 {n}",
  shopTabsAria: "市場の区分",
  squadTabsAria: "分隊作業場の区分",

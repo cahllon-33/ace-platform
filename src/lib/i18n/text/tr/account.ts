@@ -18,7 +18,7 @@ export const account: TextBag["account"] = {
     "soon": "Yakında",
     "sample": "ÖRNEK · yalnızca şekil, gerçek veri değil",
     "lockedTitle": "Oyuncu istatistikleri A.C.E Plus ve Premium'a dahildir",
-    "lockedBody": "Kayıtlı planın Free. Plus (4 $/ay) ve Premium (7 $/ay) bu sayfayı açar. Yakında: ödeme sistemi henüz yok.",
+    "lockedBody": "Kayıtlı planın Free. Plus (ayda 4 $) ve Premium (ayda 7 $) bu sayfayı açar. Fiyatlar sayfasından Paddle ödemesiyle abone ol.",
     "signIn": "Oyuncu istatistiklerini görmek için Steam ile giriş yap.",
     "plansLink": "Planları gör",
     "rosterNote": "Örnek kadro profili: bu oyuncuların kayıtlı A.C.E maçı yok, bu yüzden istatistikler sayı göstermez.",
@@ -63,8 +63,8 @@ export const account: TextBag["account"] = {
     },
     "settings": {
       "title": "PANEL AYARLARI PROFİLİ",
-      "billingNotLive": "Ödeme sistemi olana kadar her hesap Free'dedir.",
-      "cancelReason": "İptal edilecek ücretli abonelik yok. Ödeme sistemi uygulanmadı.",
+      "billingNotLive": "Planlar Paddle ödemesiyle satın alınır. Ödemeler yapılandırılmadığı sürece düğmede Yakında yazar.",
+      "cancelReason": "Paddle aboneliğini üyelik panelindeki Aboneliği yönet bölümünden iptal et.",
       "cancelButton": "Aboneliği iptal et"
     },
     "rankedReason": "Doğrulanmış bir hile karşıtı entegrasyon olana kadar dereceli eşleştirme kullanılamaz.",

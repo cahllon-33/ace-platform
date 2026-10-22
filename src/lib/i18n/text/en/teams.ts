@@ -38,7 +38,7 @@
     "fallback": "This desk only answers from the written rules on this page: plans, the five seats, Steam OpenID, and Support.",
     "facts": {
       "email": "No email is sent. Plan receipts stay on this website.",
-      "charge": "Premium is $7 per month. Coming soon: there is no checkout yet, so nothing is charged.",
+      "charge": "Premium is $7 per month through Paddle checkout.",
       "board": "A stored clan is a roster record. It is not placed on the 100-team board. That board still shows 0 registered until a season opens.",
       "steam": "Sign-in uses official Steam OpenID. A.C.E never asks for a Steam password. From this page, Steam returns here.",
       "roster": "Seat 1 is the signed-in captain. Seats 2 to 5 must already have A.C.E accounts. Invites stay pending until each player accepts.",

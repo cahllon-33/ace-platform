@@ -212,7 +212,7 @@ export const pricing: TextBag["pricing"] = {
       },
       "goldEliteSeal": {
         "feature": "Elit mühür ve özel rozetler",
-        "detail": "Yalnızca Premium; sunucudaki kayıtlı kademeden okunur. Kozmetik. Ödeme bu kademeyi belirlemez."
+        "detail": "Yalnızca Premium, sunucuda kayıtlı seviyeden okunur. Kozmetik. Seviye yalnızca Paddle ödemeyi onayladıktan sonra ayarlanır."
       }
     },
     "cells": {
@@ -232,14 +232,14 @@ export const pricing: TextBag["pricing"] = {
   "receipt": {
     "plus": {
       "metaTitle": "Plus makbuzu",
-      "metaDescription": "Bu sitede gösterilen A.C.E Plus mektubu. Ödeme aktif değil, bu yüzden ücret alınmaz ve e-posta gönderilmez.",
+      "metaDescription": "Bu sitede gösterilen A.C.E Plus mektubu. Makbuz değildir; makbuzu Paddle e-postayla gönderir.",
       "planName": "A.C.E Plus",
       "nextLabel": "A.C.E'de devam et",
       "nextBody": "Herkese açık sayfalar açık kalır. Bu seçim bir sıra açmaz ve kayıtlı kademeyi değiştirmez."
     },
     "premium": {
       "metaTitle": "Premium makbuzu",
-      "metaDescription": "Bu sitede gösterilen A.C.E Premium mektubu. Ödeme aktif değil, bu yüzden ücret alınmaz ve e-posta gönderilmez.",
+      "metaDescription": "Bu sitede gösterilen A.C.E Premium mektubu. Makbuz değildir; makbuzu Paddle e-postayla gönderir.",
       "planName": "A.C.E Premium",
       "nextLabel": "Premium koşullarını oku",
       "nextBody": "Premium; Premium rütbe sanatı, animasyonlu profil kartı, özel rozetler ve ELITE SEAL ile Plus'taki her şeydir. Squads'ta klan kaydetmek her hesap için ücretsizdir."
@@ -248,7 +248,7 @@ export const pricing: TextBag["pricing"] = {
   "letter": {
     "kicker": "{plan} · aylık {price}",
     "title": "Seçiminiz için teşekkürler",
-    "flag": "Bu mektup sitede gösterilir. E-posta gönderilmedi. Karttan ücret alınmadı. Ödeme aktif değil ve kayıtlı üyelik kademesi değiştirilmedi.",
+    "flag": "Bu mektup sitede gösterilir ve makbuz değildir. Ödeme makbuzunu Paddle gönderir ve planın yalnızca Paddle ödemeyi onayladıktan sonra değişir.",
     "greeting": "Sevgili oyuncu,",
     "intro": "{plan} planını seçtiğiniz için teşekkürler. Bu sayfa makbuzdur. Gösterim fiyatını, bu seçimin bugün neleri kapsadığını, neleri kapsamadığını ve bu sitede yayımlanan destek adresini kaydeder.",
     "selected": {

@@ -47,7 +47,7 @@ export const consent: TextBag["consent"] = {
     "closeLabel": "Cookie 設定を閉じる",
     "close": "閉じる"
   },
-  "subscriptionDisclosure": "近日公開:決済はまだ存在しないため、サブスクリプションは開始されず、請求も更新もありません。課金が始まると、ダッシュボード設定から解約できる月額プランになります。支払い済みの月は返金されません。",
+  "subscriptionDisclosure": "サブスクリプションは解約するまでPaddle決済の月額プランとして続きます。「サブスクリプション管理」からいつでも解約でき、返金は返金ポリシー（14日）に従います。決済が未設定の間、決済ボタンには「近日公開」と表示されます。",
   "planned": {
     "fallbackLabel": "予定中の機能",
     "badge": "予定 — まだ利用できません"

@@ -21,7 +21,7 @@ export const legalDocs: TextBag["legalDocs"] = {
   "terms": {
     "meta": {
       "title": "Ketentuan Layanan",
-      "description": "Ketentuan Layanan situs A.C.E untuk situs kompetisi Counter-Strike 2 ini. Ranked, pembayaran, dan Anti-Cheat belum aktif."
+      "description": "Ringkasan ketentuan A.C.E sebelumnya. Ketentuan Layanan yang berlaku ada di /terms."
     },
     "kicker": "ACE-LEGAL / KETENTUAN LAYANAN",
     "title": "Ketentuan Layanan",
@@ -42,13 +42,13 @@ export const legalDocs: TextBag["legalDocs"] = {
       "notActive": {
         "title": "3. Apa yang bukan situs ini",
         "paragraphs": [
-          "Matchmaking ranked, server game CS2 langsung, AI Anti-Cheat yang berfungsi, penagihan, dan hadiah belum aktif. Jam lobi dan panel integritas adalah pratinjau kecuali halaman menyatakan lain."
+          "Ringkasan ini digantikan oleh Ketentuan Layanan di /terms, Kebijakan Privasi di /privacy, dan Kebijakan Refund di /refunds."
         ]
       },
       "subscriptions": {
         "title": "Paket, penagihan, dan pembatalan",
         "paragraphs": [
-          "Free seharga $0, Plus $4 per bulan, dan Premium $7 per bulan. Pembayaran belum tersedia, jadi hari ini tidak ada yang bisa dibeli atau ditagih. Saat penagihan dibuka, paket diperpanjang setiap bulan; kamu dapat membatalkan kapan saja di pengaturan dasbor dan tetap memiliki akses hingga akhir bulan yang sudah dibayar; bulan parsial tidak dikembalikan kecuali hukum negaramu mewajibkannya. Tidak ada paket yang menambah Rating Points, menaikkan rating, atau mengubah matchmaking. Dukungan prioritas Premium, setelah diluncurkan, berarti permintaan Premium ditangani lebih dulu, tanpa jaminan waktu respons."
+          "Free seharga $0, Plus $4 per bulan, dan Premium $7 per bulan. Checkout berjalan melalui Paddle sebagai Merchant of Record; selama pembayaran belum dikonfigurasi, tombol menampilkan Segera hadir. Penagihan, pembatalan, dan refund diatur oleh /terms dan /refunds. Tidak ada paket yang menambah poin rating atau mengubah matchmaking."
         ]
       },
       "antiCheat": {
@@ -114,7 +114,7 @@ export const legalDocs: TextBag["legalDocs"] = {
       "title": "Yang tidak pernah kami kumpulkan",
       "items": [
         "Kata sandi Steam. Masuk hanya melalui Steam OpenID / alur resmi Steam.",
-        "Nomor kartu pembayaran. Pembayaran belum diterapkan.",
+        "Nomor kartu pembayaran. Paddle menangani detail pembayaran; A.C.E tidak pernah melihatnya.",
         "Telemetri kernel. Tidak ada klien Anti-Cheat yang disertakan dengan situs ini."
       ]
     },

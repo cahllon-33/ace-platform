@@ -59,7 +59,7 @@ export const features: TextBag["features"] = {
     "kicker": "Kosmetiikka · tulossa pian",
     "title": "A.C.E LOOT-ARKKITEHTUURI — ASEPUDOTUKSET",
     "lede": "Alkuperäiset A.C.E-viimeistelyt saapuvat kaupan myötä. Kosmetiikka ei koskaan vaikuta kilpailuun.",
-    "checkout": "Kassa · tulossa pian"
+    "checkout": "Kassa · Paddle"
   },
   "identityPreview": {
     "badge": "Esikatselu — ei vahvistettu",

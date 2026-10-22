@@ -245,7 +245,8 @@ export const UI_PL: Ui = {
       "inDevelopment": "W budowie",
       "comingSoon": "Wkrótce",
       "preparing": "W przygotowaniu",
-      "billingOff": "Nieaktywne · żadne płatności nie są pobierane"
+      "billingOff": "Nieskonfigurowane · kasa pokazuje Wkrótce",
+      "billingOn": "Aktywne · kasa Paddle"
     },
     "card": {
       "matches": "Mecze",
@@ -325,7 +326,7 @@ export const UI_PL: Ui = {
       "ranksBody": "Kolory odznak są stałe dla poziomów, a ranga zawsze liczona jest z zapisanych RP.",
       "ranksCta": "Zobacz wszystkie rangi",
       "plansTitle": "Plany, które nie kupują wygranych",
-      "plansBody": "Płatne plany to tylko kosmetyka i wygoda. Płatności nie są jeszcze aktywne, więc dziś wszyscy mają Free.",
+      "plansBody": "Płatne plany to tylko kosmetyka i wygoda. Płatność odbywa się przez Paddle; dopóki płatności nie są skonfigurowane, przycisk pokazuje Wkrótce.",
       "plansCta": "Porównaj plany",
       "free": "Darmowy",
       "perMonth": "/mies.",

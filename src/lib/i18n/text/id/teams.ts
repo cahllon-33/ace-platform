@@ -40,7 +40,7 @@ export const teams: TextBag["teams"] = {
     "fallback": "Meja ini hanya menjawab dari aturan tertulis di halaman ini: paket, lima kursi, Steam OpenID, dan dukungan.",
     "facts": {
       "email": "Tidak ada email yang dikirim. Tanda terima paket tetap di situs ini.",
-      "charge": "Premium seharga $7 per bulan. Segera hadir: belum ada pembayaran, jadi tidak ada yang ditagih.",
+      "charge": "Premium seharga $7 per bulan melalui checkout Paddle.",
       "board": "Klan tersimpan adalah catatan roster. Klan tidak ditempatkan di papan 100 tim. Papan itu masih menunjukkan 0 terdaftar sampai musim dibuka.",
       "steam": "Masuk menggunakan Steam OpenID resmi. A.C.E tidak pernah meminta kata sandi Steam. Dari halaman ini, Steam kembali ke sini.",
       "roster": "Kursi 1 adalah kapten yang masuk. Kursi 2 sampai 5 harus sudah memiliki akun A.C.E. Undangan tetap tertunda sampai setiap pemain menerima.",

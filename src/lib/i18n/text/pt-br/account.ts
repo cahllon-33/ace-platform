@@ -18,7 +18,7 @@ export const account: TextBag["account"] = {
     "soon": "Em breve",
     "sample": "AMOSTRA · apenas forma, sem dados reais",
     "lockedTitle": "As estatísticas de jogador fazem parte do A.C.E Plus e do Premium",
-    "lockedBody": "Seu plano salvo é Free. O Plus (US$ 4/mês) e o Premium (US$ 7/mês) desbloqueiam esta página. Em breve: o pagamento ainda não existe.",
+    "lockedBody": "Seu plano salvo é Free. Plus (US$ 4/mês) e Premium (US$ 7/mês) desbloqueiam esta página. Assine na página de preços pelo checkout da Paddle.",
     "signIn": "Entre com a Steam para ver suas estatísticas de jogador.",
     "plansLink": "Ver planos",
     "rosterNote": "Perfil de elenco de exemplo: esses jogadores não têm partidas A.C.E registradas, então as estatísticas não mostram números.",
@@ -63,8 +63,8 @@ export const account: TextBag["account"] = {
     },
     "settings": {
       "title": "PERFIL DE CONFIGURAÇÕES DO PAINEL",
-      "billingNotLive": "Todas as contas ficam no Free até existir pagamento.",
-      "cancelReason": "Não existe assinatura cobrada para cancelar. O pagamento não está implementado.",
+      "billingNotLive": "Os planos são comprados pelo checkout da Paddle. Enquanto os pagamentos não estiverem configurados, o botão mostra Em breve.",
+      "cancelReason": "Cancele uma assinatura da Paddle em Gerenciar assinatura, no seu painel de membro.",
       "cancelButton": "Cancelar assinatura"
     },
     "rankedReason": "O pareamento ranqueado é negado até existir uma integração de Anti-Cheat verificada.",

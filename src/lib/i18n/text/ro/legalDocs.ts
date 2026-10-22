@@ -21,7 +21,7 @@ export const legalDocs: TextBag["legalDocs"] = {
   "terms": {
     "meta": {
       "title": "Termeni și condiții",
-      "description": "Termenii și condițiile site-ului A.C.E pentru acest site de competiții Counter-Strike 2. Ranked, plățile și anti-cheat nu sunt active."
+      "description": "Rezumat anterior al termenilor A.C.E. Termenii serviciului în vigoare sunt la /terms."
     },
     "kicker": "ACE-LEGAL / TERMENI ȘI CONDIȚII",
     "title": "Termeni și condiții",
@@ -42,13 +42,13 @@ export const legalDocs: TextBag["legalDocs"] = {
       "notActive": {
         "title": "3. Ce nu este acest site",
         "paragraphs": [
-          "Ranked matchmaking, serverele de joc CS2 live, un anti-cheat AI funcțional, facturarea și premiile nu sunt active. Ceasurile din lobby și panourile de integritate sunt previzualizări, dacă pagina nu spune altfel."
+          "Acest rezumat este înlocuit de Termenii serviciului de la /terms, Politica de confidențialitate de la /privacy și Politica de rambursare de la /refunds."
         ]
       },
       "subscriptions": {
         "title": "Planuri, facturare și anulare",
         "paragraphs": [
-          "Free costă $0, Plus $4 pe lună și Premium $7 pe lună. Plata nu există încă, deci astăzi nu se poate cumpăra și nu se taxează nimic. Când facturarea va începe, planurile se vor reînnoi lunar; poți anula oricând din setările panoului și păstrezi accesul până la sfârșitul lunii plătite; o lună parțială nu se rambursează decât dacă legea țării tale o cere. Niciun plan nu adaugă Rating Points, nu crește ratingul și nu schimbă matchmakingul. Suportul prioritar Premium, după lansare, înseamnă că cererile Premium sunt tratate primele, fără un timp de răspuns garantat."
+          "Free costă 0 $, Plus 4 $ pe lună și Premium 7 $ pe lună. Plata se face prin Paddle ca Merchant of Record; cât timp plățile nu sunt configurate, butonul arată În curând. Facturarea, anularea și rambursările sunt reglementate de /terms și /refunds. Niciun plan nu adaugă puncte de rating și nu schimbă matchmaking-ul."
         ]
       },
       "antiCheat": {
@@ -114,7 +114,7 @@ export const legalDocs: TextBag["legalDocs"] = {
       "title": "Ce nu colectăm niciodată",
       "items": [
         "Parole Steam. Autentificarea este doar prin Steam OpenID / fluxul oficial Steam.",
-        "Numere de card de plată. Checkout-ul nu este implementat.",
+        "Numere de card. Datele de plată sunt gestionate de Paddle; A.C.E nu le vede niciodată.",
         "Telemetrie de kernel. Niciun client anti-cheat nu este livrat cu acest site."
       ]
     },

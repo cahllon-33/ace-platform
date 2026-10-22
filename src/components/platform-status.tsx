@@ -1,8 +1,9 @@
 "use client";
 
+import { useEffect, useState } from "react";
 import { useUi } from "@/components/use-ui";
 
-type State = "available" | "inDevelopment" | "comingSoon" | "preparing" | "billingOff";
+type State = "available" | "inDevelopment" | "comingSoon" | "preparing" | "billingOff" | "billingOn";
 
 /**
  * Honest platform status. Each state reflects the code today:
@@ -10,7 +11,7 @@ type State = "available" | "inDevelopment" | "comingSoon" | "preparing" | "billi
  * - A.C.E Shield: in development, no client ships.
  * - Competitive servers: no game server integration exists.
  * - Tournaments: bracket/rulebook pages exist, no funded or running event.
- * - Billing: no payment provider is integrated, so no payment can be taken.
+ * - Billing: Paddle checkout; "billingOn" only when the server reports a complete Paddle config (/api/paddle/config).
  */
 const ROWS: { key: "steam" | "shield" | "servers" | "tournaments" | "billing"; state: State }[] = [
   { key: "steam", state: "available" },
@@ -22,13 +23,19 @@ const ROWS: { key: "steam" | "shield" | "servers" | "tournaments" | "billing"; s
 
 export function PlatformStatus() {
   const status = useUi().r38.status;
+  const [paddle, setPaddle] = useState(false);
+  useEffect(() => {
+    let live = true;
+    fetch("/api/paddle/config", { cache: "no-store" }).then((r) => r.json()).then((c: { enabled?: boolean }) => { if (live) setPaddle(c.enabled === true); }).catch(() => undefined);
+    return () => { live = false; };
+  }, []);
   return (
     <section className="ace-status-strip is-compact" aria-labelledby="ace-status-title">
       <h2 id="ace-status-title" className="ace-status-title">
         {status.title}
       </h2>
       <ul>
-        {ROWS.map((row) => (
+        {ROWS.map((r) => (r.key === "billing" && paddle ? { ...r, state: "billingOn" as State } : r)).map((row) => (
           <li key={row.key} className={`is-${row.state}`}>
             <span className="ace-status-light" aria-hidden="true" />
             <span className="ace-status-name">{status[row.key]}</span>

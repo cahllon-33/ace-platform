@@ -16,7 +16,7 @@
     "soon": "Coming soon",
     "sample": "SAMPLE · shape only, not real data",
     "lockedTitle": "Player stats are part of A.C.E Plus and Premium",
-    "lockedBody": "Your stored plan is Free. Plus ($4/month) and Premium ($7/month) both unlock this page. Coming soon: checkout does not exist yet.",
+    "lockedBody": "Your stored plan is Free. Plus ($4/month) and Premium ($7/month) both unlock this page. Subscribe on the pricing page through Paddle checkout.",
     "signIn": "Sign in with Steam to see your player stats.",
     "plansLink": "See plans",
     "rosterNote": "Example roster profile: these players have no recorded A.C.E matches, so the stats show no numbers.",
@@ -61,8 +61,8 @@
     },
     "settings": {
       "title": "DASHBOARD SETTINGS PROFILE",
-      "billingNotLive": "Every account is on Free until checkout exists.",
-      "cancelReason": "No billed subscription exists to cancel. Checkout is not implemented.",
+      "billingNotLive": "Plans are bought through Paddle checkout. While payments are not configured, the button shows Coming soon.",
+      "cancelReason": "Cancel a Paddle subscription under Manage subscription in your membership panel.",
       "cancelButton": "Cancel subscription"
     },
     "rankedReason": "Ranked matchmaking is denied until a verified Anti-Cheat integration exists.",

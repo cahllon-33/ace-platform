@@ -59,7 +59,7 @@ export const features: TextBag["features"] = {
     "kicker": "Cosméticos · em breve",
     "title": "ARQUITETURA DE RECOMPENSAS A.C.E — DROPS DE ARMAS",
     "lede": "Acabamentos originais A.C.E, que chegam com a loja. Os cosméticos nunca afetam a competição.",
-    "checkout": "Pagamento · em breve"
+    "checkout": "Checkout · Paddle"
   },
   "identityPreview": {
     "badge": "Pré-visualização — não confirmado",

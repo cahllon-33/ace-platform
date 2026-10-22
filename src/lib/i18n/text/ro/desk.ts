@@ -6,7 +6,7 @@ export const desk: TextBag["desk"] = {
       "title": "A.C.E Marketplace",
       "description": "Carduri cu recompense de campionat. Magazinul și recompensele se deschid în curând."
     },
-    "heroHonesty": "O primă privire asupra recompenselor viitoare de campionat. Magazinul se deschide în curând; astăzi nu se taxează nimic.",
+    "heroHonesty": "Cosmeticele și abonamentele se vând prin checkout-ul Paddle. Cosmeticele nu afectează niciodată jocul.",
     "prizeBanner": "🏆 RECOMPENSE DE CAMPIONAT · ÎN CURÂND",
     "notice": "Aceste vitrine sunt previzualizări fără valoare bănească. Nimic nu este livrat sau taxat, iar butonul de inspectare nu pornește o achiziție.",
     "items": {

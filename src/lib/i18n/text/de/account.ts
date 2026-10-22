@@ -18,7 +18,7 @@ export const account: TextBag["account"] = {
     "soon": "Demnächst",
     "sample": "BEISPIEL · nur Form, keine echten Daten",
     "lockedTitle": "Spielerstatistiken gehören zu A.C.E Plus und Premium",
-    "lockedBody": "Dein gespeicherter Plan ist Free. Plus ($4/Monat) und Premium ($7/Monat) schalten diese Seite frei. Demnächst: Einen Checkout gibt es noch nicht.",
+    "lockedBody": "Dein gespeicherter Plan ist Free. Plus (4 $/Monat) und Premium (7 $/Monat) schalten diese Seite frei. Abonniere auf der Preisseite über den Paddle-Checkout.",
     "signIn": "Melde dich mit Steam an, um deine Spielerstatistiken zu sehen.",
     "plansLink": "Pläne ansehen",
     "rosterNote": "Beispiel-Kaderprofil: Diese Spieler haben keine erfassten A.C.E-Matches, daher zeigen die Statistiken keine Zahlen.",
@@ -63,8 +63,8 @@ export const account: TextBag["account"] = {
     },
     "settings": {
       "title": "EINSTELLUNGEN DES BEFEHLSSTANDS",
-      "billingNotLive": "Jedes Konto bleibt auf Free, bis es einen Checkout gibt.",
-      "cancelReason": "Es gibt kein abgerechnetes Abonnement zum Kündigen. Die Kasse ist nicht umgesetzt.",
+      "billingNotLive": "Pläne werden über den Paddle-Checkout gekauft. Solange Zahlungen nicht eingerichtet sind, zeigt der Button „Demnächst“.",
+      "cancelReason": "Kündige ein Paddle-Abo unter „Abo verwalten“ in deinem Mitgliedschaftsbereich.",
       "cancelButton": "Abonnement kündigen"
     },
     "rankedReason": "Die Rangliste-Spielersuche wird verweigert, bis eine geprüfte Anti-Cheat-Anbindung besteht.",

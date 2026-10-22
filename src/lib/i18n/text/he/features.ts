@@ -59,7 +59,7 @@ export const features: TextBag["features"] = {
     "kicker": "פריטים קוסמטיים · בקרוב",
     "title": "ארכיטקטורת השלל של A.C.E — הפלות נשקים",
     "lede": "גימורים מקוריים של A.C.E שיגיעו עם החנות. פריטים קוסמטיים לעולם אינם משפיעים על התחרות.",
-    "checkout": "תשלום · בקרוב"
+    "checkout": "תשלום · Paddle"
   },
   "identityPreview": {
     "badge": "תצוגה מקדימה — לא מאומת",

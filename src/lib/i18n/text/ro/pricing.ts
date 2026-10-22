@@ -212,7 +212,7 @@ export const pricing: TextBag["pricing"] = {
       },
       "goldEliteSeal": {
         "feature": "Sigiliu elite și insigne speciale",
-        "detail": "Doar Premium, citit din nivelul stocat pe server. Cosmetic. Plata nu setează acel nivel."
+        "detail": "Doar Premium, citit din nivelul salvat pe server. Cosmetic. Nivelul se setează doar după ce Paddle confirmă plata."
       }
     },
     "cells": {
@@ -232,14 +232,14 @@ export const pricing: TextBag["pricing"] = {
   "receipt": {
     "plus": {
       "metaTitle": "Chitanță Plus",
-      "metaDescription": "Scrisoarea A.C.E Plus afișată pe acest site. Plata nu este activă, deci nu se taxează nimic și nu se trimite e-mail.",
+      "metaDescription": "Scrisoarea A.C.E Plus afișată pe acest site. Nu este o chitanță; Paddle trimite chitanța pe e-mail.",
       "planName": "A.C.E Plus",
       "nextLabel": "Continuă pe A.C.E",
       "nextBody": "Paginile publice rămân deschise. Această selecție nu deschide o coadă și nu schimbă nivelul stocat."
     },
     "premium": {
       "metaTitle": "Chitanță Premium",
-      "metaDescription": "Scrisoarea A.C.E Premium afișată pe acest site. Plata nu este activă, deci nu se taxează nimic și nu se trimite e-mail.",
+      "metaDescription": "Scrisoarea A.C.E Premium afișată pe acest site. Nu este o chitanță; Paddle trimite chitanța pe e-mail.",
       "planName": "A.C.E Premium",
       "nextLabel": "Citește termenii Premium",
       "nextBody": "Premium înseamnă arta de rang Premium, cardul de profil animat, insigne speciale și ELITE SEAL, plus tot ce include Plus. Salvarea unui clan în Squads este gratuită pentru orice cont."
@@ -248,7 +248,7 @@ export const pricing: TextBag["pricing"] = {
   "letter": {
     "kicker": "{plan} · {price} pe lună",
     "title": "Îți mulțumim pentru alegere",
-    "flag": "Această scrisoare este afișată pe site. Nu s-a trimis e-mail. Niciun card nu a fost taxat. Plata nu este activă, iar nivelul de abonament stocat nu a fost schimbat.",
+    "flag": "Această scrisoare este afișată pe site și nu este o chitanță. Paddle trimite chitanța plății, iar planul se schimbă doar după ce Paddle confirmă plata.",
     "greeting": "Dragă jucătorule,",
     "intro": "Îți mulțumim că ai ales {plan}. Această pagină este chitanța. Înregistrează prețul afișat, ce include alegerea astăzi, ce nu include și adresa de asistență publicată pe acest site.",
     "selected": {

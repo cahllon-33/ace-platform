@@ -245,7 +245,8 @@ export const UI_RO: Ui = {
       "inDevelopment": "În dezvoltare",
       "comingSoon": "În curând",
       "preparing": "În pregătire",
-      "billingOff": "Inactiv · nu se încasează plăți"
+      "billingOff": "Neconfigurat · checkout-ul arată În curând",
+      "billingOn": "Activ · checkout Paddle"
     },
     "card": {
       "matches": "Meciuri",
@@ -325,7 +326,7 @@ export const UI_RO: Ui = {
       "ranksBody": "Culorile insignelor sunt fixe pe nivel, iar rangul tău se calculează mereu din RP-ul stocat.",
       "ranksCta": "Vezi toate rangurile",
       "plansTitle": "Planuri care nu cumpără victorii",
-      "plansBody": "Planurile plătite sunt doar cosmetice și de confort. Plata nu este încă activă, deci azi toată lumea are Free.",
+      "plansBody": "Planurile plătite sunt doar cosmetice și de confort. Plata se face prin Paddle; cât timp plățile nu sunt configurate, butonul arată În curând.",
       "plansCta": "Compară planurile",
       "free": "Gratuit",
       "perMonth": "/lună",

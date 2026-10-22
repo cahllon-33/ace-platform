@@ -40,7 +40,7 @@ export const teams: TextBag["teams"] = {
     "fallback": "Ez a pult csak az oldalon leírt szabályok alapján válaszol: csomagok, az öt hely, Steam OpenID és támogatás.",
     "facts": {
       "email": "Nem küldünk e-mailt. A csomagnyugták ezen az oldalon maradnak.",
-      "charge": "A Premium havi 7 $. Hamarosan: még nincs fizetés, így semmit nem terhelünk.",
+      "charge": "A Premium havi 7 $ a Paddle pénztáron keresztül.",
       "board": "A tárolt klán keretrekord. Nem kerül a 100 csapatos táblára. A tábla a szezon indulásáig 0 regisztráltat mutat.",
       "steam": "A bejelentkezés hivatalos Steam OpenID-t használ. Az A.C.E soha nem kéri a Steam-jelszavadat. Erről az oldalról a Steam ide tér vissza.",
       "roster": "Az 1. hely a bejelentkezett kapitány. A 2–5. helyeknek már A.C.E-fiókkal kell rendelkezniük. A meghívók függőben maradnak, amíg minden játékos el nem fogadja.",

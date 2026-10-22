@@ -33,10 +33,10 @@ export const TR: MessageBag = {
  "İstatistiklerin ilk kayıtlı maçlarından sonra burada görünür.",
  statsLive: "Galibiyet ve mağlubiyetler A.C.E hesabındandır. K/D henüz saklanmıyor.",
  membership: "ÜYELİK",
- membershipLede: "Ücretsiz $0. Plus aylık $4. Premium aylık $7. Ücretli planlar asla reyting, daha kolay rakip veya sırada öncelik satın almaz. Ödeme yakında açılıyor.",
+ membershipLede: "Free 0 $. Plus ayda 4 $. Premium ayda 7 $. Ücretli planlar asla reyting, daha kolay rakip veya sıra önceliği satın almaz. Ödeme Paddle üzerinden yapılır.",
  graphite: "GRAFİT",
  stayFree: "Ücretsizde kal",
- membershipDisclosure: "Fiyatlar sabittir: Ücretsiz $0, Plus aylık $4, Premium aylık $7. Ödeme yakında açılıyor; bugün hiçbir ücret alınmaz. Ücretli planlar asla rekabet avantajı satın almaz.",
+ membershipDisclosure: "Fiyatlar sabittir: Free 0 $, Plus ayda 4 $, Premium ayda 7 $. Ödeme Paddle üzerinden yapılır; ödemeler yapılandırılmadığı sürece düğmede Yakında yazar. Ücretli planlar asla rekabet avantajı satın almaz.",
  integrity: "BÜTÜNLÜK",
  placementCount: "{complete} / 10 yerleştirme maçı oynandı",
  matchLogged: "Maç {n} kaydedildi",
@@ -87,7 +87,7 @@ export const TR: MessageBag = {
  supportKicker: "A.C.E DESTEK · YARDIM MERKEZİ",
  supportTitle: "Teknik destek merkezi",
  supportLede:
- "Kurulum, kalibrasyon ve üyelik soruları için bilgi merkezi. Hile önleme, dereceli sıralar ve ödeme yakında geliyor.",
+ "Kurulum, kalibrasyon ve üyelik soruları için bilgi merkezi. Hile karşıtı sistem ve dereceli sıralar yakında.",
  supportCat1Title: "Çekirdek Anti-Cheat kurulumu",
  supportCat1Body:
  "Sürücü kurulum uyarıları, donanım uyumu ve Güvenli Önyükleme telemetri ayarları burada gelecekteki çekirdek ilkesi olarak belgelenir. A.C.E çalışan bir Anti-Cheat istemcisi göndermez, sürücü kurmaz ve bu sitede Güvenli Önyükleme veya HWID verisi toplamaz.",
@@ -96,7 +96,7 @@ export const TR: MessageBag = {
  "On yerleştirme maçı, bölüm hesaplama hızı ve sezonluk puan yeniden kalibrasyonu planlanan kalibrasyon anlatısıdır. Dereceli MAÇ BUL, doğrulanmış bir Anti-Cheat yolu olana kadar hata durumunda kapalı kalır. Bu sayfadaki rakamlar canlı maç sonuçları değildir.",
  supportCat3Title: "Abonelik ve faturalama",
  supportCat3Body:
- "Gösterilen fiyatlar Plus $4/ay ve Premium $7/ay olarak kalır. Tek tıkla iptal, gelecekteki bir pano için belirtilmiştir. Ödeme uygulanmamıştır. Kısmi ay iadeleri, faturalama var olduğunda yayımlanan şartlara uyar — bugün hiçbir ücret alınmaz.",
+ "Plus ayda 4 $ ve Premium ayda 7 $, Paddle üzerinden faturalandırılır. Aboneliği yönet bölümünden istediğin zaman iptal et; iadeler İade Politikası'na (14 gün) göre yapılır.",
  supportTicket: "DESTEK BİLETİ GÖNDER >",
  supportTicketTitle: "Yönetici inceleme kabuğu",
  supportTicketBody:
@@ -134,7 +134,7 @@ export const TR: MessageBag = {
  shopLede:
  "Envanterini doğrulanmış üst düzey skinler, özel profil öğeleri ve lig erişim araçlarıyla donat.",
  shopNote:
- "Üyelik: Plus aylık $4 ve Premium aylık $7. Kozmetikler asla reyting, daha kolay rakip veya sırada öncelik satın almaz. Ödeme yakında açılıyor.",
+ "Üyelik: Plus ayda 4 $ ve Premium ayda 7 $. Kozmetikler asla reyting, daha kolay rakip veya sıra önceliği satın almaz. Ödeme Paddle üzerinden yapılır.",
  shopTabSkins: "SİLAH SKİNLERİ",
  shopTabCosmetics: "PROFİL KOZMETİĞİ",
  shopTabAccess: "LİG ERİŞİMİ",
@@ -144,7 +144,7 @@ export const TR: MessageBag = {
  shopInspectKicker: "Ürün önizlemesi · yakında",
  shopInspectTitle: "Varlığı incele",
  shopInspectCopy:
- "Mağaza yakında açılıyor. Henüz hiçbir şey satın alınamaz veya ücretlendirilemez.",
+ "Eşyalar Paddle ödemesiyle satın alınır. Ödemeler yapılandırılmadığı sürece düğmede Yakında yazar.",
  shopItemIndex: "ÖĞE {n}",
  shopTabsAria: "Pazar kategorileri",
  squadTabsAria: "Kadro çalışma alanı kategorileri",

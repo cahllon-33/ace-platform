@@ -48,7 +48,7 @@
     close: "Close",
   },
   subscriptionDisclosure:
-    "Coming soon: checkout does not exist yet, so no subscription can start, nothing is charged, and nothing renews. When billing exists, it will be a monthly plan you can cancel in dashboard settings; a month already paid is not refunded.",
+    "Subscriptions run through Paddle checkout as a monthly plan until you cancel. Cancel any time under Manage subscription; refunds follow the Refund Policy (14 days). While payments are not configured, the checkout button shows Coming soon.",
   planned: {
     fallbackLabel: "Planned action",
     badge: "Planned — not available",

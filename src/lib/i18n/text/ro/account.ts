@@ -18,7 +18,7 @@ export const account: TextBag["account"] = {
     "soon": "În curând",
     "sample": "EXEMPLU · doar formă, nu date reale",
     "lockedTitle": "Statisticile de jucător fac parte din A.C.E Plus și Premium",
-    "lockedBody": "Planul tău salvat este Free. Plus (4 $/lună) și Premium (7 $/lună) deblochează această pagină. În curând: plata nu există încă.",
+    "lockedBody": "Planul tău salvat este Free. Plus (4 $/lună) și Premium (7 $/lună) deblochează această pagină. Abonează-te pe pagina de prețuri prin checkout-ul Paddle.",
     "signIn": "Conectează-te cu Steam ca să-ți vezi statisticile.",
     "plansLink": "Vezi planurile",
     "rosterNote": "Profil de lot exemplu: acești jucători nu au meciuri A.C.E înregistrate, așa că statisticile nu arată cifre.",
@@ -63,8 +63,8 @@ export const account: TextBag["account"] = {
     },
     "settings": {
       "title": "PROFIL SETĂRI PANOU",
-      "billingNotLive": "Fiecare cont este pe Free până există plata.",
-      "cancelReason": "Nu există niciun abonament facturat de anulat. Plata nu este implementată.",
+      "billingNotLive": "Planurile se cumpără prin checkout-ul Paddle. Cât timp plățile nu sunt configurate, butonul arată În curând.",
+      "cancelReason": "Anulează un abonament Paddle din Gestionează abonamentul, în panoul de membru.",
       "cancelButton": "Anulează abonamentul"
     },
     "rankedReason": "Matchmakingul ranked este refuzat până există o integrare anti-cheat verificată.",

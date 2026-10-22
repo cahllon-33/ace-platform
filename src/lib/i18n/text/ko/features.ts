@@ -59,7 +59,7 @@ export const features: TextBag["features"] = {
     "kicker": "꾸미기 아이템 · 곧 출시",
     "title": "A.C.E 전리품 아키텍처 — 무기 드롭",
     "lede": "상점과 함께 제공될 A.C.E 오리지널 마감입니다. 꾸미기 아이템은 경쟁에 영향을 주지 않습니다.",
-    "checkout": "결제 · 곧 출시"
+    "checkout": "결제 · Paddle"
   },
   "identityPreview": {
     "badge": "미리보기 — 확인되지 않음",

@@ -21,7 +21,7 @@ export const legalDocs: TextBag["legalDocs"] = {
   "terms": {
     "meta": {
       "title": "服务条款",
-      "description": "A.C.E 网站服务条款,适用于本《反恐精英 2》竞技网站。排位、支付和反作弊均未上线。"
+      "description": "A.C.E 条款的旧版摘要。现行服务条款见 /terms。"
     },
     "kicker": "ACE-LEGAL / 服务条款",
     "title": "服务条款",
@@ -42,13 +42,13 @@ export const legalDocs: TextBag["legalDocs"] = {
       "notActive": {
         "title": "3. 本网站不提供的内容",
         "paragraphs": [
-          "排位匹配、在线 CS2 游戏服务器、可用的 AI 反作弊、计费和奖品均未启用。除页面另有说明外,大厅时钟和完整性面板均为预览。"
+          "本摘要已由 /terms 的服务条款、/privacy 的隐私政策和 /refunds 的退款政策取代。"
         ]
       },
       "subscriptions": {
         "title": "方案、计费与取消",
         "paragraphs": [
-          "Free 为 $0，Plus 每月 $4，Premium 每月 $7。结账功能尚不存在，因此目前无法购买任何内容，也不会产生任何费用。计费开通后，方案按月续订；你可以随时在仪表板设置中取消，并保留访问权限至已付月份结束；未满一个月的部分不予退款，除非你所在国家的法律要求退款。任何方案都不会增加 Rating Points、提高评分或改变匹配。Premium 优先支持上线后，意味着 Premium 请求优先处理，但不保证回复时间。"
+          "Free 为 $0，Plus 每月 $4，Premium 每月 $7。结账通过作为记录商家（Merchant of Record）的 Paddle 完成；在付款未配置期间，按钮显示“即将推出”。账单、取消和退款以 /terms 和 /refunds 为准。任何方案都不会增加积分或改变匹配。"
         ]
       },
       "antiCheat": {
@@ -114,7 +114,7 @@ export const legalDocs: TextBag["legalDocs"] = {
       "title": "我们绝不收集的内容",
       "items": [
         "Steam 密码。登录仅通过 Steam OpenID / Steam 官方流程。",
-        "支付卡号。支付尚未实现。",
+        "支付卡号。付款信息由 Paddle 处理，A.C.E 永远看不到。",
         "内核遥测。本网站不附带任何反作弊客户端。"
       ]
     },

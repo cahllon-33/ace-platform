@@ -59,7 +59,7 @@ export const features: TextBag["features"] = {
     "kicker": "コスメティック · まもなく開始",
     "title": "A.C.E ルート設計 — 武器ドロップ",
     "lede": "ショップとともに登場する A.C.E オリジナルの仕上げ。コスメティックが競技に影響することはありません。",
-    "checkout": "決済 · まもなく開始"
+    "checkout": "決済 · Paddle"
   },
   "identityPreview": {
     "badge": "プレビュー — 未確定",

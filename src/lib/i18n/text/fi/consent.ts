@@ -47,7 +47,7 @@ export const consent: TextBag["consent"] = {
     "closeLabel": "Sulje evästeasetukset",
     "close": "Sulje"
   },
-  "subscriptionDisclosure": "Tulossa pian: maksutoimintoa ei vielä ole, joten tilausta ei voi alkaa, mitään ei veloiteta eikä mitään uusita. Kun laskutus on olemassa, se on kuukausipaketti, jonka voit perua hallintapaneelin asetuksista; jo maksettua kuukautta ei hyvitetä.",
+  "subscriptionDisclosure": "Tilaukset toimivat Paddlen kassalla kuukausitilauksena, kunnes perut ne. Peru milloin tahansa kohdassa Hallitse tilausta; palautukset palautuskäytännön mukaan (14 päivää). Kun maksuja ei ole määritetty, kassapainikkeessa lukee Tulossa pian.",
   "planned": {
     "fallbackLabel": "Suunniteltu toiminto",
     "badge": "Suunniteltu — ei saatavilla"

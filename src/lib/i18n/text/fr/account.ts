@@ -18,7 +18,7 @@ export const account: TextBag["account"] = {
     "soon": "Bientôt",
     "sample": "EXEMPLE · forme seulement, pas de vraies données",
     "lockedTitle": "Les statistiques joueur font partie d’A.C.E Plus et Premium",
-    "lockedBody": "Ton offre enregistrée est Free. Plus (4 $/mois) et Premium (7 $/mois) débloquent tous deux cette page. Bientôt : le paiement n’existe pas encore.",
+    "lockedBody": "Ton offre enregistrée est Free. Plus (4 $/mois) et Premium (7 $/mois) débloquent cette page. Abonne-toi sur la page des tarifs via le paiement Paddle.",
     "signIn": "Connecte-toi avec Steam pour voir tes statistiques joueur.",
     "plansLink": "Voir les offres",
     "rosterNote": "Profil d’effectif d’exemple : ces joueurs n’ont aucun match A.C.E enregistré, les statistiques n’affichent donc aucun chiffre.",
@@ -63,8 +63,8 @@ export const account: TextBag["account"] = {
     },
     "settings": {
       "title": "PROFIL DES PARAMÈTRES DU TABLEAU DE BORD",
-      "billingNotLive": "Chaque compte reste sur Free tant que le paiement n'existe pas.",
-      "cancelReason": "Aucun abonnement facturé n'existe à résilier. Le paiement n'est pas implémenté.",
+      "billingNotLive": "Les offres s’achètent via le paiement Paddle. Tant que les paiements ne sont pas configurés, le bouton affiche Bientôt.",
+      "cancelReason": "Résilie un abonnement Paddle via Gérer l’abonnement dans ton espace membre.",
       "cancelButton": "Résilier l'abonnement"
     },
     "rankedReason": "Le matchmaking classé est refusé tant qu'aucune intégration anti-triche vérifiée n'existe.",

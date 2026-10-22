@@ -245,7 +245,8 @@ export const UI_ZH: Ui = {
       "inDevelopment": "开发中",
       "comingSoon": "即将推出",
       "preparing": "准备中",
-      "billingOff": "未启用 · 不收取任何费用"
+      "billingOff": "未配置 · 结账显示“即将推出”",
+      "billingOn": "运行中 · Paddle 结账"
     },
     "card": {
       "matches": "比赛",
@@ -325,7 +326,7 @@ export const UI_ZH: Ui = {
       "ranksBody": "徽章颜色按等级固定，段位始终根据你保存的 RP 计算。",
       "ranksCta": "查看所有段位",
       "plansTitle": "不卖胜利的方案",
-      "plansBody": "付费方案仅提供外观与便利。支付尚未开通，所以今天所有人都是 Free。",
+      "plansBody": "付费方案仅包含外观和便利功能。结账通过 Paddle 完成；在付款未配置期间，按钮显示“即将推出”。",
       "plansCta": "比较方案",
       "free": "免费",
       "perMonth": "/月",

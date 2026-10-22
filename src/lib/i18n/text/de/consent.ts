@@ -50,7 +50,7 @@ export const consent: TextBag["consent"] = {
     close: "Schließen",
   },
   subscriptionDisclosure:
-    "Demnächst: Einen Checkout gibt es noch nicht, daher kann kein Abo beginnen, nichts wird berechnet und nichts verlängert sich. Wenn es Abrechnung gibt, wird es ein Monatsplan sein, den du in den Dashboard-Einstellungen kündigen kannst; ein bereits bezahlter Monat wird nicht erstattet.",
+    "Abos laufen über den Paddle-Checkout als Monatsplan, bis du kündigst. Kündige jederzeit unter „Abo verwalten“; Erstattungen gemäß Erstattungsrichtlinie (14 Tage). Solange Zahlungen nicht eingerichtet sind, zeigt der Checkout-Button „Demnächst“.",
   planned: {
     fallbackLabel: "Geplante Aktion",
     badge: "Geplant — nicht verfügbar",

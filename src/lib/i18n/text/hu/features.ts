@@ -59,7 +59,7 @@ export const features: TextBag["features"] = {
     "kicker": "Kozmetikumok · hamarosan",
     "title": "A.C.E LOOT ARCHITEKTÚRA — FEGYVERDROPOK",
     "lede": "Eredeti A.C.E bevonatok, a bolttal érkeznek. A kozmetikumok soha nem befolyásolják a versenyt.",
-    "checkout": "Fizetés · hamarosan"
+    "checkout": "Pénztár · Paddle"
   },
   "identityPreview": {
     "badge": "Előnézet — nem megerősített",

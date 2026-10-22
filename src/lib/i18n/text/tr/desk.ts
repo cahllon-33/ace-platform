@@ -6,7 +6,7 @@ export const desk: TextBag["desk"] = {
       "title": "A.C.E. Pazaryeri",
       "description": "Şampiyona ödül kartları. Mağaza ve ödüller yakında açılıyor."
     },
-    "heroHonesty": "Yaklaşan şampiyona ödüllerine ilk bakış. Mağaza yakında açılıyor; bugün hiçbir ücret alınmaz.",
+    "heroHonesty": "Kozmetikler ve üyelikler Paddle ödemesiyle satılır. Kozmetikler oyunu asla etkilemez.",
     "prizeBanner": "🏆 ŞAMPİYONA ÖDÜLLERİ · YAKINDA",
     "notice": "Bu vitrinler nakit değeri olmayan önizlemelerdir. Hiçbir şey teslim edilmez veya ücretlendirilmez; incele düğmesi satın alma başlatmaz.",
     "items": {

@@ -33,10 +33,10 @@ export const ES: MessageBag = {
  "Tus estadísticas aparecerán aquí tras tus primeras partidas registradas.",
  statsLive: "Victorias y derrotas de la cuenta A.C.E. El K/D aún no se guarda.",
  membership: "MEMBRESÍA",
- membershipLede: "Gratis $0. Plus $4/mes. Premium $7/mes. Los planes de pago nunca compran puntuación, rivales más fáciles ni prioridad en la cola. La facturación abrirá pronto.",
+ membershipLede: "Free 0 $. Plus 4 $/mes. Premium 7 $/mes. Los planes de pago nunca compran rating, rivales más fáciles ni prioridad de cola. El pago se realiza con Paddle.",
  graphite: "GRAFITO",
  stayFree: "Seguir en Gratis",
- membershipDisclosure: "Los precios son fijos: Gratis $0, Plus $4/mes, Premium $7/mes. La facturación abrirá pronto; hoy no se cobra nada. Los planes de pago nunca compran ventaja competitiva.",
+ membershipDisclosure: "Precios fijos: Free 0 $, Plus 4 $/mes, Premium 7 $/mes. El pago se realiza con Paddle; mientras los pagos no estén configurados, el botón muestra Próximamente. Los planes de pago nunca compran ventaja competitiva.",
  integrity: "INTEGRIDAD",
  placementCount: "{complete} / 10 partidas de colocación jugadas",
  matchLogged: "Partida {n} registrada",
@@ -87,7 +87,7 @@ export const ES: MessageBag = {
  supportKicker: "SOPORTE A.C.E · CENTRO DE AYUDA",
  supportTitle: "Centro de soporte técnico",
  supportLede:
- "Centro de ayuda sobre configuración, calibración y suscripción. El anti-cheat, las colas clasificatorias y la facturación llegarán pronto.",
+ "Centro de conocimiento para configuración, calibración y preguntas de membresía. El anti-cheat y las colas clasificatorias llegan pronto.",
  supportCat1Title: "Configuración del anticheat de núcleo",
  supportCat1Body:
  "Los avisos de instalación de controladores, el cumplimiento del hardware y los ajustes de telemetría de Arranque seguro se documentan aquí como política futura de núcleo. A.C.E no entrega un cliente de anticheat funcional, no instala controladores y no recoge datos de Arranque seguro ni de HWID en este sitio.",
@@ -96,7 +96,7 @@ export const ES: MessageBag = {
  "Diez partidas de colocación, la velocidad de cálculo de división y la recalibración de puntuación de temporada son la historia de calibración planificada. BUSCAR PARTIDA clasificatorio permanece cerrado ante fallo hasta que exista una vía de anticheat verificada. Las cifras de esta página no son resultados de partidas en vivo.",
  supportCat3Title: "Suscripción y facturación",
  supportCat3Body:
- "Los precios mostrados siguen siendo Plus $4/mes y Premium $7/mes. La cancelación en un clic está especificada para un panel futuro. El pago no está implementado. Los reembolsos de mes parcial siguen los términos publicados cuando exista facturación: hoy no se realiza ningún cargo.",
+ "Plus cuesta 4 $/mes y Premium 7 $/mes, facturados por Paddle. Cancela cuando quieras en Gestionar suscripción; reembolsos según la Política de reembolsos (14 días).",
  supportTicket: "ENVIAR TICKET DE SOPORTE >",
  supportTicketTitle: "Envoltura de revisión administrativa",
  supportTicketBody:
@@ -134,7 +134,7 @@ export const ES: MessageBag = {
  shopLede:
  "Equipa tu inventario con skins de alto nivel verificados, elementos de perfil personalizados y herramientas de acceso a la liga.",
  shopNote:
- "Suscripción: Plus $4/mes y Premium $7/mes. Los cosméticos nunca compran puntuación, rivales más fáciles ni prioridad en la cola. El pago abrirá pronto.",
+ "Membresía: Plus 4 $/mes y Premium 7 $/mes. Los cosméticos nunca compran rating, rivales más fáciles ni prioridad de cola. El pago se realiza con Paddle.",
  shopTabSkins: "SKINS DE ARMAS",
  shopTabCosmetics: "COSMÉTICOS DE PERFIL",
  shopTabAccess: "ACCESO A LIGA",
@@ -144,7 +144,7 @@ export const ES: MessageBag = {
  shopInspectKicker: "Vista previa del objeto · próximamente",
  shopInspectTitle: "Inspeccionar activo",
  shopInspectCopy:
- "La tienda abrirá pronto. Todavía no se puede comprar ni cobrar nada.",
+ "Los objetos se compran con el checkout de Paddle. Mientras los pagos no estén configurados, el botón muestra Próximamente.",
  shopItemIndex: "OBJETO {n}",
  shopTabsAria: "Categorías del mercado",
  squadTabsAria: "Categorías del espacio de escuadra",

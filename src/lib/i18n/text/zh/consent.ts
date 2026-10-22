@@ -47,7 +47,7 @@ export const consent: TextBag["consent"] = {
     "closeLabel": "关闭 Cookie 设置",
     "close": "关闭"
   },
-  "subscriptionDisclosure": "即将推出:支付尚不存在,因此不会开始任何订阅、不会扣费、也不会续费。计费上线后,将是可在控制台设置中取消的月度方案;已付款的月份不予退款。",
+  "subscriptionDisclosure": "订阅通过 Paddle 结账以月度方案运行，直到你取消。可随时在“管理订阅”中取消；退款遵循退款政策（14 天）。在付款未配置期间，结账按钮显示“即将推出”。",
   "planned": {
     "fallbackLabel": "计划中的操作",
     "badge": "计划中 — 暂不可用"

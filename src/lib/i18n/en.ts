@@ -32,11 +32,11 @@ export const EN = {
  statsLive: "Wins/losses from the A.C.E account. K/D is not stored yet.",
  membership: "MEMBERSHIP",
  membershipLede:
- "Free $0. Plus $4/mo. Premium $7/mo. Paid plans never buy rating, easier opponents or queue priority. Billing opens soon.",
+ "Free $0. Plus $4/mo. Premium $7/mo. Paid plans never buy rating, easier opponents or queue priority. Checkout runs through Paddle.",
  graphite: "GRAPHITE",
   stayFree: "Stay on Free",
  membershipDisclosure:
-    "Prices are fixed: Free $0, Plus $4/mo, Premium $7/mo. Billing opens soon; nothing is charged today. Paid plans never buy competitive advantage.",
+    "Prices are fixed: Free $0, Plus $4/mo, Premium $7/mo. Checkout runs through Paddle; while payments are not configured, the button shows Coming soon. Paid plans never buy competitive advantage.",
  integrity: "INTEGRITY",
  placementCount: "{complete} / 10 Placement Matches Played",
  matchLogged: "Match {n} logged",
@@ -87,7 +87,7 @@ export const EN = {
  supportKicker: "A.C.E SUPPORT · HELP CENTER",
  supportTitle: "Tech Support Hub",
  supportLede:
- "Knowledge center for setup, calibration and membership questions. Anti-cheat, ranked queues and billing are coming soon.",
+ "Knowledge center for setup, calibration and membership questions. Anti-cheat and ranked queues are coming soon.",
  supportCat1Title: "Kernel Anti-Cheat Setup",
  supportCat1Body:
  "Driver installation prompts, hardware compliance and Secure Boot telemetry adjustments are documented here as future kernel policy. A.C.E does not ship a working Anti-Cheat client, does not install drivers and does not collect Secure Boot or HWID data on this website.",
@@ -96,7 +96,7 @@ export const EN = {
  "Ten placement matches, division calculation speed and seasonal rating recalibration are the planned calibration story. Ranked FIND MATCH stays fail-closed until a verified Anti-Cheat path exists. Figures on this page are not live match results.",
  supportCat3Title: "Subscription & Billing Support",
  supportCat3Body:
- "Display prices remain Plus $4/mo and Premium $7/mo. Single-click cancel is specified for a future dashboard. Checkout is not implemented. Partial-month refunds follow the published terms once billing exists — no charges run today.",
+ "Plus is $4/mo and Premium $7/mo, billed through Paddle. Cancel any time under Manage subscription; refunds follow the Refund Policy (14 days).",
  supportTicket: "SUBMIT A SUPPORT TICKET >",
  supportTicketTitle: "Admin review wrapper",
  supportTicketBody:
@@ -134,7 +134,7 @@ export const EN = {
  shopLede:
  "Preview weapon cards, profile frames and league-access labels. None of these are delivered items.",
  shopNote:
- "Membership: Plus $4/mo and Premium $7/mo. Cosmetics never buy rating, easier opponents or queue priority. Checkout opens soon.",
+ "Membership: Plus $4/mo and Premium $7/mo. Cosmetics never buy rating, easier opponents or queue priority. Checkout runs through Paddle.",
  shopTabSkins: "WEAPON SKINS",
  shopTabCosmetics: "PROFILE COSMETICS",
  shopTabAccess: "LEAGUE ACCESS",
@@ -144,7 +144,7 @@ export const EN = {
  shopInspectKicker: "Item preview · coming soon",
  shopInspectTitle: "Inspect asset",
  shopInspectCopy:
- "The shop opens soon. Nothing can be bought or charged yet.",
+ "Items are bought through Paddle checkout. While payments are not configured, the button shows Coming soon.",
  shopItemIndex: "ITEM {n}",
  shopTabsAria: "Marketplace categories",
  squadTabsAria: "Squad workspace categories",

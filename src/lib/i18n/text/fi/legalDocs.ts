@@ -21,7 +21,7 @@ export const legalDocs: TextBag["legalDocs"] = {
   "terms": {
     "meta": {
       "title": "Käyttöehdot",
-      "description": "A.C.E-sivuston käyttöehdot tälle Counter-Strike 2 -kilpailusivustolle. Ranked, maksut ja huijauksenesto eivät ole käytössä."
+      "description": "Aiempi yhteenveto A.C.E:n ehdoista. Voimassa olevat käyttöehdot ovat osoitteessa /terms."
     },
     "kicker": "ACE-LEGAL / KÄYTTÖEHDOT",
     "title": "Käyttöehdot",
@@ -42,13 +42,13 @@ export const legalDocs: TextBag["legalDocs"] = {
       "notActive": {
         "title": "3. Mitä tämä sivusto ei ole",
         "paragraphs": [
-          "Ranked-matchmaking, live-CS2-pelipalvelimet, toimiva tekoälypohjainen huijauksenesto, laskutus ja palkinnot eivät ole käytössä. Aulan kellot ja eheyspaneelit ovat esikatseluja, ellei sivu toisin ilmoita."
+          "Tämän yhteenvedon korvaavat käyttöehdot osoitteessa /terms, tietosuojakäytäntö osoitteessa /privacy ja palautuskäytäntö osoitteessa /refunds."
         ]
       },
       "subscriptions": {
         "title": "Tilaukset, laskutus ja peruminen",
         "paragraphs": [
-          "Free maksaa $0, Plus $4 kuukaudessa ja Premium $7 kuukaudessa. Maksamista ei vielä ole, joten tänään mitään ei voi ostaa eikä mitään veloiteta. Kun laskutus avautuu, tilaukset uusiutuvat kuukausittain; voit perua milloin tahansa hallintapaneelin asetuksista ja käyttöoikeus säilyy maksetun kuukauden loppuun; aloitettua kuukautta ei hyvitetä, ellei maasi laki sitä vaadi. Mikään tilaus ei lisää Rating Pointseja, nosta pisteitä tai muuta otteluiden muodostusta. Premiumin etusijatuki tarkoittaa käynnistyttyään, että Premium-pyynnöt käsitellään ensin ilman taattua vastausaikaa."
+          "Free maksaa 0 $, Plus 4 $ kuukaudessa ja Premium 7 $ kuukaudessa. Maksu tapahtuu Paddlen kautta, joka toimii Merchant of Recordina; kun maksuja ei ole määritetty, painikkeessa lukee Tulossa pian. Laskutusta, peruutusta ja palautuksia koskevat /terms ja /refunds. Mikään tilaus ei lisää reittauspisteitä tai muuta ottelunhakua."
         ]
       },
       "antiCheat": {
@@ -114,7 +114,7 @@ export const legalDocs: TextBag["legalDocs"] = {
       "title": "Mitä emme koskaan kerää",
       "items": [
         "Steam-salasanoja. Kirjautuminen tapahtuu vain Steam OpenID:llä / Steamin virallisella prosessilla.",
-        "Maksukorttien numeroita. Maksutoimintoa ei ole toteutettu.",
+        "Maksukorttien numerot. Paddle käsittelee maksutiedot; A.C.E ei koskaan näe niitä.",
         "Ytimen telemetriaa. Tämän sivuston mukana ei toimiteta huijauksenestoasiakasta."
       ]
     },

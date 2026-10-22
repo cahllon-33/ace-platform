@@ -33,10 +33,10 @@ export const SV: MessageBag = {
  "Din statistik visas här efter dina första registrerade matcher.",
  statsLive: "Vinster och förluster från A.C.E-kontot. K/D lagras inte ännu.",
  membership: "MEDLEMSKAP",
- membershipLede: "Gratis $0. Plus $4/mån. Premium $7/mån. Betalda planer köper aldrig rating, lättare motståndare eller förtur i kön. Betalningen öppnar snart.",
+ membershipLede: "Free 0 $. Plus 4 $/mån. Premium 7 $/mån. Betalda planer köper aldrig rating, lättare motståndare eller köprioritet. Betalningen sker via Paddle.",
  graphite: "GRAFIT",
  stayFree: "Stanna på Gratis",
- membershipDisclosure: "Priserna är fasta: Gratis $0, Plus $4/mån, Premium $7/mån. Betalningen öppnar snart; inget debiteras i dag. Betalda planer köper aldrig tävlingsfördelar.",
+ membershipDisclosure: "Priserna är fasta: Free 0 $, Plus 4 $/mån, Premium 7 $/mån. Betalningen sker via Paddle; så länge betalningar inte är konfigurerade visar knappen Kommer snart. Betalda planer köper aldrig tävlingsfördel.",
  integrity: "INTEGRITET",
  placementCount: "{complete} / 10 placeringsmatcher spelade",
  matchLogged: "Match {n} loggad",
@@ -87,7 +87,7 @@ export const SV: MessageBag = {
  supportKicker: "A.C.E SUPPORT · HJÄLPCENTER",
  supportTitle: "Tekniskt supporthubb",
  supportLede:
- "Kunskapscenter för installation, kalibrering och medlemskap. Anti-cheat, rankade köer och betalning kommer snart.",
+ "Kunskapscenter för installation, kalibrering och medlemsfrågor. Anti-cheat och rankade köer kommer snart.",
  supportCat1Title: "Installation av kärn-anti-cheat",
  supportCat1Body:
  "Uppmaningar om drivrutinsinstallation, hårdvaruefterlevnad och telemetrijusteringar för säker start dokumenteras här som framtida kärnpolicy. A.C.E levererar inte en fungerande anti-cheat-klient, installerar inte drivrutiner och samlar inte in data om säker start eller HWID på den här webbplatsen.",
@@ -96,7 +96,7 @@ export const SV: MessageBag = {
  "Tio placeringsmatcher, beräkningshastighet för division och säsongsvis omkalibrering av ranking är den planerade kalibreringsberättelsen. Rankad HITTA MATCH förblir stängd vid fel tills en verifierad anti-cheat-väg finns. Siffrorna på den här sidan är inte live-matchresultat.",
  supportCat3Title: "Prenumeration och fakturering",
  supportCat3Body:
- "Visade priser förblir Plus $4/mån och Premium $7/mån. Avbokning med ett klick är specificerad för en framtida panel. Kassan är inte införd. Återbetalning för del av månad följer de publicerade villkoren när fakturering finns — inga debiteringar sker idag.",
+ "Plus kostar 4 $/mån och Premium 7 $/mån, fakturerat via Paddle. Säg upp när du vill under Hantera prenumeration; återbetalning enligt återbetalningspolicyn (14 dagar).",
  supportTicket: "SKICKA SUPPORTÄRENDE >",
  supportTicketTitle: "Administrativt granskningsskal",
  supportTicketBody:
@@ -134,7 +134,7 @@ export const SV: MessageBag = {
  shopLede:
  "Utrusta ditt förråd med verifierade högklassiga skinn, egna profilelement och verktyg för ligaåtkomst.",
  shopNote:
- "Medlemskap: Plus $4/mån och Premium $7/mån. Kosmetika köper aldrig rating, lättare motståndare eller förtur i kön. Kassan öppnar snart.",
+ "Medlemskap: Plus 4 $/mån och Premium 7 $/mån. Kosmetika köper aldrig rating, lättare motståndare eller köprioritet. Betalningen sker via Paddle.",
  shopTabSkins: "VAPENSKINN",
  shopTabCosmetics: "PROFILKOSMETIK",
  shopTabAccess: "LIGAÅTKOMST",
@@ -144,7 +144,7 @@ export const SV: MessageBag = {
  shopInspectKicker: "Förhandsvisning av föremål · snart",
  shopInspectTitle: "Inspektera tillgång",
  shopInspectCopy:
- "Butiken öppnar snart. Inget kan köpas eller debiteras ännu.",
+ "Föremål köps via Paddles kassa. Så länge betalningar inte är konfigurerade visar knappen Kommer snart.",
  shopItemIndex: "FÖREMÅL {n}",
  shopTabsAria: "Marknadskategorier",
  squadTabsAria: "Kategorier för lagarbetsytan",

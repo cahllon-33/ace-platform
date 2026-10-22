@@ -39,11 +39,11 @@ export const HU: MessageBag = {
  statsLive: "Győzelmek és vereségek az A.C.E fiókból. A K/D még nincs tárolva.",
  membership: "TAGSÁG",
  membershipLede:
- "Ingyenes $0. Plus $4/hó. Premium $7/hó. A fizetős csomagok soha nem vásárolnak értékelést, könnyebb ellenfeleket vagy elsőbbséget a sorban. A fizetés hamarosan elindul.",
+ "Free 0 $. Plus 4 $/hó. Premium 7 $/hó. A fizetős csomagok sosem vesznek ratinget, könnyebb ellenfeleket vagy sorelsőbbséget. A fizetés a Paddle-en keresztül történik.",
  graphite: "GRAFIT",
  stayFree: "Maradok az ingyenesnél",
  membershipDisclosure:
- "Az árak rögzítettek: Ingyenes $0, Plus $4/hó, Premium $7/hó. A fizetés hamarosan elindul; ma semmit nem terhelünk. A fizetős csomagok soha nem vásárolnak versenyelőnyt.",
+ "Az árak rögzítettek: Free 0 $, Plus 4 $/hó, Premium 7 $/hó. A fizetés a Paddle-en keresztül történik; amíg a fizetés nincs beállítva, a gomb Hamarosan feliratot mutat. A fizetős csomagok sosem vesznek versenyelőnyt.",
  integrity: "INTEGRITÁS",
  placementCount: "{complete} / 10 lejátszott helyezési meccs",
  matchLogged: "{n}. meccs naplózva",
@@ -95,7 +95,7 @@ export const HU: MessageBag = {
  supportKicker: "A.C.E. TÁMOGATÁS · SÚGÓKÖZPONT",
  supportTitle: "Technikai támogatási központ",
  supportLede:
- "Tudásközpont a beállításhoz, kalibráláshoz és előfizetéshez. A csalásellenes rendszer, a rangsorolt sorok és a fizetés hamarosan érkeznek.",
+ "Tudásközpont a beállításhoz, kalibráláshoz és tagsági kérdésekhez. Az anti-cheat és a rangsorolt sorok hamarosan érkeznek.",
  supportCat1Title: "Kernel anti-cheat beállítása",
  supportCat1Body:
  "Az illesztőprogram-telepítés kérdései, a hardvermegfelelés és a Secure Boot telemetria módosításai itt jövőbeli kernelirányelvként vannak leírva. Az A.C.E nem ad ki működő anti-cheat klienst, nem telepít illesztőprogramokat, és ezen a weboldalon nem gyűjt Secure Boot vagy HWID adatot.",
@@ -104,7 +104,7 @@ export const HU: MessageBag = {
  "Tíz helyezési meccs, a divíziószámítás sebessége és a szezonális értékelés újrakalibrálása a tervezett kalibráció. A rangsorolt MECCS KERESÉSE hiba esetén zárva marad, amíg nincs ellenőrzött anti-cheat útvonal. Az ezen az oldalon látható számok nem élő meccseredmények.",
  supportCat3Title: "Előfizetés és számlázás támogatása",
  supportCat3Body:
- "A megjelenített árak továbbra is Plus $4/hó és Premium $7/hó. Az egykattintásos lemondás egy jövőbeli vezérlőpultra van előírva. A fizetés nincs megvalósítva. A töredék hónap visszatérítése a közzétett feltételeket követi, amint a számlázás létezik — ma nem történik terhelés.",
+ "A Plus havi 4 $, a Premium havi 7 $, a számlázás a Paddle-en keresztül történik. Bármikor lemondhatod az Előfizetés kezelése alatt; visszatérítés a Visszatérítési szabályzat szerint (14 nap).",
  supportTicket: "TÁMOGATÁSI JEGY KÜLDÉSE >",
  supportTicketTitle: "Adminisztrátori felülvizsgálati burok",
  supportTicketBody:
@@ -142,7 +142,7 @@ export const HU: MessageBag = {
  shopLede:
  "Fegyverkártyák, profilkeretek és ligahozzáférési címkék előnézete. Ezek közül egyik sem kézbesített tárgy.",
  shopNote:
- "Előfizetés: Plus $4/hó és Premium $7/hó. A kozmetikai tárgyak soha nem vásárolnak értékelést, könnyebb ellenfeleket vagy elsőbbséget a sorban. A fizetés hamarosan elindul.",
+ "Tagság: Plus 4 $/hó és Premium 7 $/hó. A kozmetikumok sosem vesznek ratinget, könnyebb ellenfeleket vagy sorelsőbbséget. A fizetés a Paddle-en keresztül történik.",
  shopTabSkins: "FEGYVERSKINEK",
  shopTabCosmetics: "PROFILKOZMETIKUMOK",
  shopTabAccess: "LIGAHOZZÁFÉRÉS",
@@ -152,7 +152,7 @@ export const HU: MessageBag = {
  shopInspectKicker: "Tárgy előnézete · hamarosan",
  shopInspectTitle: "Eszköz vizsgálata",
  shopInspectCopy:
- "A bolt hamarosan megnyílik. Egyelőre semmit nem lehet megvenni vagy kifizetni.",
+ "A tárgyakat a Paddle pénztárban lehet megvenni. Amíg a fizetés nincs beállítva, a gomb Hamarosan feliratot mutat.",
  shopItemIndex: "{n}. TÁRGY",
  shopTabsAria: "Piactéri kategóriák",
  squadTabsAria: "Osztagmunkatér kategóriái",

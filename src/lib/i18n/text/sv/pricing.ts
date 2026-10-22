@@ -212,7 +212,7 @@ export const pricing: TextBag["pricing"] = {
       },
       "goldEliteSeal": {
         "feature": "Elitsigill och specialmärken",
-        "detail": "Endast Premium, läses från den sparade nivån på servern. Kosmetiskt. Betalning sätter inte den nivån."
+        "detail": "Endast Premium, läses från den sparade nivån på servern. Kosmetiskt. Nivån sätts först när Paddle bekräftar betalningen."
       }
     },
     "cells": {
@@ -232,14 +232,14 @@ export const pricing: TextBag["pricing"] = {
   "receipt": {
     "plus": {
       "metaTitle": "Plus-kvitto",
-      "metaDescription": "A.C.E Plus-brevet som visas på den här webbplatsen. Betalning är inte aktiv, så inget debiteras och inget e-postmeddelande skickas.",
+      "metaDescription": "A.C.E Plus-brevet som visas på webbplatsen. Det är inget kvitto; Paddle mejlar kvittot.",
       "planName": "A.C.E Plus",
       "nextLabel": "Fortsätt på A.C.E",
       "nextBody": "De publika sidorna förblir öppna. Valet öppnar ingen kö och ändrar inte den sparade nivån."
     },
     "premium": {
       "metaTitle": "Premium-kvitto",
-      "metaDescription": "A.C.E Premium-brevet som visas på den här webbplatsen. Betalning är inte aktiv, så inget debiteras och inget e-postmeddelande skickas.",
+      "metaDescription": "A.C.E Premium-brevet som visas på webbplatsen. Det är inget kvitto; Paddle mejlar kvittot.",
       "planName": "A.C.E Premium",
       "nextLabel": "Läs Premium-villkoren",
       "nextBody": "Premium är Premium-rankkonst, det animerade profilkortet, specialmärken och ELITE SEAL, plus allt i Plus. Att spara en klan i Squads är gratis för alla konton."
@@ -248,7 +248,7 @@ export const pricing: TextBag["pricing"] = {
   "letter": {
     "kicker": "{plan} · {price} per månad",
     "title": "Tack för ditt val",
-    "flag": "Det här brevet visas på webbplatsen. Inget e-postmeddelande skickades. Inget kort debiterades. Betalning är inte aktiv, och den sparade medlemsnivån ändrades inte.",
+    "flag": "Det här brevet visas på webbplatsen och är inget kvitto. Paddle skickar betalningskvittot, och din plan ändras först när Paddle bekräftar betalningen.",
     "greeting": "Bästa spelare,",
     "intro": "Tack för att du valde {plan}. Den här sidan är kvittot. Den anger visningspriset, vad valet omfattar i dag, vad det inte omfattar och supportadressen som publiceras på den här webbplatsen.",
     "selected": {

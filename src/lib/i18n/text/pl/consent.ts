@@ -50,7 +50,7 @@ export const consent: TextBag["consent"] = {
     close: "Zamknij",
   },
   subscriptionDisclosure:
-    "Wkrótce: płatności jeszcze nie ma, więc żadna subskrypcja nie może się zacząć, nic nie jest pobierane i nic się nie odnawia. Gdy rozliczenia powstaną, będzie to plan miesięczny, który anulujesz w ustawieniach panelu; opłacony miesiąc nie jest zwracany.",
+    "Subskrypcje działają przez kasę Paddle jako plan miesięczny do czasu anulowania. Anuluj w dowolnym momencie w Zarządzaj subskrypcją; zwroty zgodnie z Polityką zwrotów (14 dni). Dopóki płatności nie są skonfigurowane, przycisk kasy pokazuje Wkrótce.",
   planned: {
     fallbackLabel: "Planowana czynność",
     badge: "Planowane — niedostępne",

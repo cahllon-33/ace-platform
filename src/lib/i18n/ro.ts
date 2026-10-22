@@ -33,10 +33,10 @@ export const RO: MessageBag = {
  "Statisticile tale apar aici după primele meciuri înregistrate.",
  statsLive: "Victorii și înfrângeri din contul A.C.E. K/D nu este încă stocat.",
  membership: "ABONAMENT",
- membershipLede: "Gratuit $0. Plus $4/lună. Premium $7/lună. Planurile plătite nu cumpără niciodată rating, adversari mai slabi sau prioritate la coadă. Plățile se deschid în curând.",
+ membershipLede: "Free 0 $. Plus 4 $/lună. Premium 7 $/lună. Planurile plătite nu cumpără niciodată rating, adversari mai ușori sau prioritate la coadă. Plata se face prin Paddle.",
  graphite: "GRAFIT",
  stayFree: "Rămâi pe Gratuit",
- membershipDisclosure: "Prețurile sunt fixe: Gratuit $0, Plus $4/lună, Premium $7/lună. Plățile se deschid în curând; astăzi nu se încasează nimic. Planurile plătite nu cumpără niciodată avantaj competitiv.",
+ membershipDisclosure: "Prețurile sunt fixe: Free 0 $, Plus 4 $/lună, Premium 7 $/lună. Plata se face prin Paddle; cât timp plățile nu sunt configurate, butonul arată În curând. Planurile plătite nu cumpără niciodată avantaj competitiv.",
  integrity: "INTEGRITATE",
  placementCount: "{complete} / 10 meciuri de plasare jucate",
  matchLogged: "Meciul {n} înregistrat",
@@ -87,7 +87,7 @@ export const RO: MessageBag = {
  supportKicker: "SUPORT A.C.E · CENTRU DE AJUTOR",
  supportTitle: "Centru de suport tehnic",
  supportLede:
- "Centru de informații pentru configurare, calibrare și abonament. Anti-cheat-ul, cozile clasate și plățile vin în curând.",
+ "Centru de cunoștințe pentru configurare, calibrare și întrebări despre abonament. Anti-cheat-ul și cozile clasate vin în curând.",
  supportCat1Title: "Configurare Anti-Cheat de nucleu",
  supportCat1Body:
  "Solicitările de instalare a driverelor, conformitatea hardware și ajustările de telemetrie pentru Pornirea securizată sunt documentate aici ca politică viitoare de nucleu. A.C.E nu livrează un client Anti-Cheat funcțional, nu instalează drivere și nu colectează date de Pornire securizată sau HWID pe acest site.",
@@ -96,7 +96,7 @@ export const RO: MessageBag = {
  "Zece meciuri de plasare, viteza de calcul a diviziei și recalibrarea ratingului de sezon sunt povestea de calibrare planificată. GĂSEȘTE MECI de clasament rămâne închis la eșec până există o cale Anti-Cheat verificată. Cifrele de pe această pagină nu sunt rezultate de meciuri în direct.",
  supportCat3Title: "Abonament și facturare",
  supportCat3Body:
- "Prețurile afișate rămân Plus $4/lună și Premium $7/lună. Anularea dintr-un clic este specificată pentru un panou viitor. Plata nu este implementată. Rambursările pentru o lună parțială urmează termenii publicați când există facturare — astăzi nu se face nicio debitare.",
+ "Plus costă 4 $/lună și Premium 7 $/lună, facturate prin Paddle. Anulează oricând din Gestionează abonamentul; rambursări conform Politicii de rambursare (14 zile).",
  supportTicket: "TRIMITE UN TICKET DE SUPORT >",
  supportTicketTitle: "Înveliș de revizuire administrativă",
  supportTicketBody:
@@ -134,7 +134,7 @@ export const RO: MessageBag = {
  shopLede:
  "Echipează-ți inventarul cu skin-uri de nivel înalt verificate, elemente de profil personalizate și unelte de acces la ligă.",
  shopNote:
- "Abonament: Plus $4/lună și Premium $7/lună. Cosmeticele nu cumpără niciodată rating, adversari mai slabi sau prioritate la coadă. Plata se deschide în curând.",
+ "Abonament: Plus 4 $/lună și Premium 7 $/lună. Cosmeticele nu cumpără niciodată rating, adversari mai ușori sau prioritate la coadă. Plata se face prin Paddle.",
  shopTabSkins: "SKIN-URI DE ARME",
  shopTabCosmetics: "COSMETICE DE PROFIL",
  shopTabAccess: "ACCES LA LIGĂ",
@@ -144,7 +144,7 @@ export const RO: MessageBag = {
  shopInspectKicker: "Previzualizare obiect · în curând",
  shopInspectTitle: "Inspectează activul",
  shopInspectCopy:
- "Magazinul se deschide în curând. Încă nu se poate cumpăra sau plăti nimic.",
+ "Obiectele se cumpără prin checkout-ul Paddle. Cât timp plățile nu sunt configurate, butonul arată În curând.",
  shopItemIndex: "OBIECT {n}",
  shopTabsAria: "Categorii de piață",
  squadTabsAria: "Categorii ale spațiului de echipă",

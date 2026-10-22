@@ -21,7 +21,7 @@ export const legalDocs: TextBag["legalDocs"] = {
   "terms": {
     "meta": {
       "title": "Användarvillkor",
-      "description": "Användarvillkor för A.C.E, en tävlingsplats för Counter-Strike 2. Rankat, betalningar och anti-fusk är inte aktiva."
+      "description": "Tidigare sammanfattning av A.C.E:s villkor. De gällande användarvillkoren finns på /terms."
     },
     "kicker": "ACE-LEGAL / ANVÄNDARVILLKOR",
     "title": "Användarvillkor",
@@ -42,13 +42,13 @@ export const legalDocs: TextBag["legalDocs"] = {
       "notActive": {
         "title": "3. Vad webbplatsen inte är",
         "paragraphs": [
-          "Rankad matchning, aktiva CS2-spelservrar, fungerande AI-anti-fusk, betalning och priser är inte aktiva. Lobbyklockor och integritetspaneler är förhandsvisningar om inte en sida anger något annat."
+          "Denna sammanfattning ersätts av användarvillkoren på /terms, integritetspolicyn på /privacy och återbetalningspolicyn på /refunds."
         ]
       },
       "subscriptions": {
         "title": "Planer, betalning och uppsägning",
         "paragraphs": [
-          "Free kostar $0, Plus $4 per månad och Premium $7 per månad. Betalning finns inte ännu, så i dag kan inget köpas eller debiteras. När betalningen öppnar förnyas planer månadsvis; du kan säga upp när som helst i panelens inställningar och behålla åtkomsten till slutet av den betalda månaden; en påbörjad månad återbetalas inte om inte lagen i ditt land kräver det. Ingen plan lägger till Rating Points, höjer en rating eller ändrar matchningen. Prioriterad support för Premium innebär, när den lanseras, att Premium-ärenden hanteras först, utan garanterad svarstid."
+          "Free kostar 0 $, Plus 4 $ per månad och Premium 7 $ per månad. Betalningen sker via Paddle som Merchant of Record; så länge betalningar inte är konfigurerade visar knappen Kommer snart. Fakturering, uppsägning och återbetalning styrs av /terms och /refunds. Ingen plan ger ratingpoäng eller ändrar matchningen."
         ]
       },
       "antiCheat": {
@@ -114,7 +114,7 @@ export const legalDocs: TextBag["legalDocs"] = {
       "title": "Vad vi aldrig samlar in",
       "items": [
         "Steam-lösenord. Inloggning sker endast via Steam OpenID / Steams officiella flöde.",
-        "Betalkortsnummer. Betalning är inte implementerad.",
+        "Kortnummer. Paddle hanterar betalningsuppgifterna; A.C.E ser dem aldrig.",
         "Kärntelemetri. Ingen anti-fusk-klient följer med den här webbplatsen."
       ]
     },

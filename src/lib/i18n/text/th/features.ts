@@ -59,7 +59,7 @@ export const features: TextBag["features"] = {
     "kicker": "ไอเทมตกแต่ง · เร็ว ๆ นี้",
     "title": "สถาปัตยกรรม LOOT ของ A.C.E — ดรอปอาวุธ",
     "lede": "ลวดลายต้นฉบับของ A.C.E จะมาพร้อมร้านค้า ไอเทมตกแต่งไม่เคยส่งผลต่อการแข่งขัน",
-    "checkout": "ชำระเงิน · เร็ว ๆ นี้"
+    "checkout": "ชำระเงิน · Paddle"
   },
   "identityPreview": {
     "badge": "ตัวอย่าง — ยังไม่ยืนยัน",

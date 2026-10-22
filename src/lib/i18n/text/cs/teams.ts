@@ -40,7 +40,7 @@ export const teams: TextBag["teams"] = {
     "fallback": "Tento pult odpovídá jen podle psaných pravidel na této stránce: plány, pět míst, Steam OpenID a podpora.",
     "facts": {
       "email": "Žádný e-mail se neposílá. Potvrzení plánů zůstávají na tomto webu.",
-      "charge": "Premium stojí $7 měsíčně. Již brzy: platba zatím není, takže se nic neúčtuje.",
+      "charge": "Premium stojí 7 $ měsíčně přes pokladnu Paddle.",
       "board": "Uložený klan je záznam soupisky. Není zařazen na tabuli 100 týmů. Tato tabule ukazuje 0 registrovaných, dokud se neotevře sezóna.",
       "steam": "Přihlášení používá oficiální Steam OpenID. A.C.E nikdy nežádá heslo ke službě Steam. Z této stránky vás Steam vrátí sem.",
       "roster": "Místo 1 je přihlášený kapitán. Místa 2 až 5 už musí mít účty A.C.E. Pozvánky čekají, dokud je každý hráč nepřijme.",

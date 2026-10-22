@@ -59,7 +59,7 @@ export const features: TextBag["features"] = {
     "kicker": "Kosmetika · již brzy",
     "title": "ARCHITEKTURA ODMĚN A.C.E — DROPY ZBRANÍ",
     "lede": "Původní úpravy A.C.E, které dorazí s obchodem. Kosmetika nikdy neovlivňuje soutěž.",
-    "checkout": "Platba · již brzy"
+    "checkout": "Pokladna · Paddle"
   },
   "identityPreview": {
     "badge": "Náhled — nepotvrzeno",

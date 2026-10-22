@@ -40,7 +40,7 @@ export const teams: TextBag["teams"] = {
     "fallback": "Ce guichet répond uniquement à partir des règles écrites sur cette page : les offres, les cinq places, Steam OpenID et le support.",
     "facts": {
       "email": "Aucun e-mail n’est envoyé. Les reçus d’offre restent sur ce site.",
-      "charge": "Premium coûte $7 par mois. Bientôt disponible : il n'y a pas encore de paiement, donc rien n'est facturé.",
+      "charge": "Premium coûte 7 $ par mois via le paiement Paddle.",
       "board": "Un clan enregistré est une fiche d'effectif. Il n'est pas placé sur le tableau de 100 équipes. Ce tableau affiche toujours 0 inscrite tant qu'aucune saison n'est ouverte.",
       "steam": "La connexion utilise le Steam OpenID officiel. A.C.E ne demande jamais un mot de passe Steam. Depuis cette page, Steam vous ramène ici.",
       "roster": "La place 1 est le capitaine connecté. Les places 2 à 5 doivent déjà avoir un compte A.C.E. Les invitations restent en attente jusqu'à ce que chaque joueur accepte.",

@@ -23,7 +23,7 @@ export const legalDocs: TextBag["legalDocs"] = {
     meta: {
       title: "Términos de servicio",
       description:
-        "Términos de servicio del sitio web de A.C.E para este sitio de competición de Counter-Strike 2. Las clasificatorias, los pagos y el antitrampas no están en funcionamiento.",
+        "Resumen anterior de los términos de A.C.E. Los Términos del servicio vigentes están en /terms.",
     },
     kicker: "ACE-LEGAL / TÉRMINOS DE SERVICIO",
     title: "Términos de servicio",
@@ -44,13 +44,13 @@ export const legalDocs: TextBag["legalDocs"] = {
       notActive: {
         title: "3. Lo que este sitio web no es",
         paragraphs: [
-          "El emparejamiento clasificatorio, los servidores de CS2 en funcionamiento, el AI Anti-Cheat operativo, la facturación y los premios no están activos. Los relojes del lobby y los paneles de integridad son vistas previas, salvo que la página indique lo contrario.",
+          "Este resumen queda sustituido por los Términos del servicio en /terms, la Política de privacidad en /privacy y la Política de reembolsos en /refunds.",
         ],
       },
       subscriptions: {
         title: "Planes, facturación y cancelación",
         paragraphs: [
-          "Free cuesta $0, Plus $4 al mes y Premium $7 al mes. Todavía no existe el pago, así que hoy no se puede comprar ni cobrar nada. Cuando se active la facturación, los planes se renovarán cada mes; podrás cancelar en cualquier momento en los ajustes del panel y mantener el acceso hasta el final del mes pagado; un mes parcial no se reembolsa salvo que la ley de tu país lo exija. Ningún plan añade Rating Points, mejora una puntuación ni cambia el emparejamiento. El soporte prioritario de Premium, cuando se lance, significa que las solicitudes Premium se atienden primero, sin tiempo de respuesta garantizado.",
+          "Free cuesta 0 $, Plus 4 $ al mes y Premium 7 $ al mes. El pago se realiza con Paddle como Merchant of Record; mientras los pagos no estén configurados, el botón muestra Próximamente. La facturación, la cancelación y los reembolsos se rigen por /terms y /refunds. Ningún plan añade puntos de rating ni cambia el emparejamiento.",
         ],
       },
       antiCheat: {
@@ -119,7 +119,7 @@ export const legalDocs: TextBag["legalDocs"] = {
       title: "Lo que nunca recogemos",
       items: [
         "Contraseñas de Steam. El inicio de sesión se hace únicamente con Steam OpenID / el flujo oficial de Steam.",
-        "Números de tarjetas de pago. El pago no está implementado.",
+        "Números de tarjeta. Paddle gestiona los datos de pago; A.C.E nunca los ve.",
         "Telemetría a nivel de kernel. Este sitio web no incluye ningún cliente antitrampas.",
       ],
     },

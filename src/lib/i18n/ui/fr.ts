@@ -245,7 +245,8 @@ export const UI_FR: Ui = {
       "inDevelopment": "En développement",
       "comingSoon": "Bientôt",
       "preparing": "En préparation",
-      "billingOff": "Inactif · aucun paiement encaissé"
+      "billingOff": "Non configuré · le paiement affiche Bientôt",
+      "billingOn": "Actif · paiement Paddle"
     },
     "card": {
       "matches": "Matchs",
@@ -325,7 +326,7 @@ export const UI_FR: Ui = {
       "ranksBody": "Les couleurs des badges sont fixes par palier, et votre rang est toujours calculé à partir de vos RP enregistrés.",
       "ranksCta": "Voir tous les rangs",
       "plansTitle": "Des offres qui n'achètent pas de victoires",
-      "plansBody": "Les offres payantes sont uniquement cosmétiques et pratiques. Le paiement n'est pas encore actif : tout le monde est en Gratuit aujourd'hui.",
+      "plansBody": "Les offres payantes sont uniquement cosmétiques et de confort. Le paiement passe par Paddle ; tant que les paiements ne sont pas configurés, le bouton affiche Bientôt.",
       "plansCta": "Comparer les offres",
       "free": "Gratuit",
       "perMonth": "/mois",

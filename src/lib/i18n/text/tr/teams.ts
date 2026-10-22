@@ -40,7 +40,7 @@ export const teams: TextBag["teams"] = {
     "fallback": "Bu masa yalnızca bu sayfadaki yazılı kurallara göre yanıt verir: planlar, beş koltuk, Steam OpenID ve destek.",
     "facts": {
       "email": "E-posta gönderilmez. Plan makbuzları bu sitede kalır.",
-      "charge": "Premium aylık $7'dır. Çok yakında: henüz ödeme sistemi yok, bu yüzden ücret alınmaz.",
+      "charge": "Premium, Paddle ödemesiyle ayda 7 $.",
       "board": "Kayıtlı bir klan bir kadro kaydıdır. 100 takımlık tabloya yerleştirilmez. Bir sezon açılana kadar tablo 0 kayıtlı gösterir.",
       "steam": "Oturum açma resmi Steam OpenID kullanır. A.C.E asla Steam şifresi istemez. Bu sayfadan giderseniz Steam sizi buraya geri getirir.",
       "roster": "1. koltuk oturum açmış kaptandır. 2-5. koltuklarda zaten A.C.E hesabı olmalı. Davetler her oyuncu kabul edene kadar beklemede kalır.",

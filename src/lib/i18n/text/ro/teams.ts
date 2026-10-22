@@ -40,7 +40,7 @@ export const teams: TextBag["teams"] = {
     "fallback": "Acest birou răspunde doar din regulile scrise pe această pagină: planuri, cele cinci locuri, Steam OpenID și suport.",
     "facts": {
       "email": "Nu se trimite niciun e-mail. Chitanțele planurilor rămân pe acest site.",
-      "charge": "Premium costă 7 $ pe lună. În curând: plata nu există încă, deci nu se taxează nimic.",
+      "charge": "Premium costă 7 $ pe lună prin checkout-ul Paddle.",
       "board": "Un clan stocat este o înregistrare de lot. Nu este plasat pe tabla de 100 de echipe. Tabla arată încă 0 înscrise până se deschide un sezon.",
       "steam": "Autentificarea folosește Steam OpenID oficial. A.C.E nu cere niciodată parola Steam. De pe această pagină, Steam revine aici.",
       "roster": "Locul 1 este căpitanul autentificat. Locurile 2–5 trebuie să aibă deja conturi A.C.E. Invitațiile rămân în așteptare până când fiecare jucător acceptă.",

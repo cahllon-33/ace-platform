@@ -18,7 +18,7 @@ export const account: TextBag["account"] = {
     "soon": "即将推出",
     "sample": "示例 · 仅为形状，并非真实数据",
     "lockedTitle": "玩家数据属于 A.C.E Plus 和 Premium",
-    "lockedBody": "你保存的方案是 Free。Plus（每月 $4）和 Premium（每月 $7）都能解锁本页。即将推出：结账功能尚未上线。",
+    "lockedBody": "你保存的方案是 Free。Plus（每月 $4）和 Premium（每月 $7）都可解锁此页面。请在定价页面通过 Paddle 结账订阅。",
     "signIn": "使用 Steam 登录以查看你的玩家数据。",
     "plansLink": "查看方案",
     "rosterNote": "示例阵容资料：这些选手没有已记录的 A.C.E 比赛，因此数据不显示任何数字。",
@@ -63,8 +63,8 @@ export const account: TextBag["account"] = {
     },
     "settings": {
       "title": "控制面板设置",
-      "billingNotLive": "在支付上线之前,所有账户均为 Free。",
-      "cancelReason": "没有可取消的付费订阅。支付尚未实现。",
+      "billingNotLive": "方案通过 Paddle 结账购买。在付款未配置期间，按钮显示“即将推出”。",
+      "cancelReason": "在会员面板的“管理订阅”中取消 Paddle 订阅。",
       "cancelButton": "取消订阅"
     },
     "rankedReason": "在经过验证的反作弊集成上线前,排位匹配不可用。",

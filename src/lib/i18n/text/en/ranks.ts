@@ -148,14 +148,14 @@
     "title": "Premium rank art",
     "lede": "The original illustrated A.C.E rank set: ten crystal emblems with III/II/I divisions, the rating protocol, the Legend detail card and the drag-to-rotate 3D viewer. It is profile art for Premium members. It reads the same Rating Points ladder as the standard ranks and gives no competitive advantage.",
     "demo": "Demo values: progress, win-rate and division figures on this board are samples, not live stats. When you are signed in, the rating shown is your stored rating.",
-    "locked": "Coming soon: checkout does not exist yet, so no account is Premium today. The server applies Premium rank art to a profile only when its stored plan is Premium.",
+    "locked": "Premium rank art is part of A.C.E Premium, bought through Paddle checkout. The server applies it to a profile only when its stored plan is Premium.",
     "standardKicker": "STANDARD RANKS",
     "standardNote": "Every account wears these 3D vector emblems.",
     "legendTag": "PREMIUM",
     "pickerTitle": "Rank art on your profile",
     "pickerStandard": "Standard",
     "pickerPremium": "Premium",
-    "pickerLocked": "Premium rank art is for A.C.E Premium ($7/month). Coming soon: checkout does not exist yet.",
+    "pickerLocked": "Premium rank art is for A.C.E Premium ($7/month), available through Paddle checkout.",
     "pickerSaved": "Saved.",
     "pickerFailed": "Not saved. Premium rank art requires A.C.E Premium."
   }

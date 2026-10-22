@@ -40,7 +40,7 @@ export const teams: TextBag["teams"] = {
     "fallback": "Tämä tiski vastaa vain tämän sivun kirjallisten sääntöjen perusteella: tilaukset, viisi paikkaa, Steam OpenID ja tuki.",
     "facts": {
       "email": "Sähköpostia ei lähetetä. Tilauskuitit pysyvät tällä sivustolla.",
-      "charge": "Premium maksaa 7 $ kuukaudessa. Tulossa pian: maksutoimintoa ei vielä ole, joten mitään ei veloiteta.",
+      "charge": "Premium maksaa 7 $ kuukaudessa Paddlen kassalla.",
       "board": "Tallennettu klaani on kokoonpanotietue. Sitä ei sijoiteta 100 joukkueen tauluun. Taulu näyttää yhä 0 rekisteröitynyttä, kunnes kausi alkaa.",
       "steam": "Kirjautuminen käyttää virallista Steam OpenID:tä. A.C.E ei koskaan kysy Steam-salasanaa. Tältä sivulta Steam palaa tänne.",
       "roster": "Paikka 1 on kirjautunut kapteeni. Paikoilla 2–5 on oltava jo A.C.E-tilit. Kutsut odottavat, kunnes kukin pelaaja hyväksyy.",

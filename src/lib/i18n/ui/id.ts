@@ -245,7 +245,8 @@ export const UI_ID: Ui = {
       "inDevelopment": "Dalam pengembangan",
       "comingSoon": "Segera hadir",
       "preparing": "Sedang disiapkan",
-      "billingOff": "Belum aktif · tidak ada pembayaran"
+      "billingOff": "Belum dikonfigurasi · checkout menampilkan Segera hadir",
+      "billingOn": "Aktif · checkout Paddle"
     },
     "card": {
       "matches": "Pertandingan",
@@ -325,7 +326,7 @@ export const UI_ID: Ui = {
       "ranksBody": "Warna lencana tetap per tingkat, dan peringkat Anda selalu dihitung dari RP yang tersimpan.",
       "ranksCta": "Lihat semua peringkat",
       "plansTitle": "Paket yang tidak membeli kemenangan",
-      "plansBody": "Paket berbayar hanya kosmetik dan kenyamanan. Pembayaran belum aktif, jadi hari ini semua orang di Free.",
+      "plansBody": "Paket berbayar hanya untuk kosmetik dan kenyamanan. Checkout berjalan melalui Paddle; selama pembayaran belum dikonfigurasi, tombol menampilkan Segera hadir.",
       "plansCta": "Bandingkan paket",
       "free": "Gratis",
       "perMonth": "/bulan",

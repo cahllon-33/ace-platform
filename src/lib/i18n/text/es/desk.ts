@@ -8,7 +8,7 @@ export const desk: TextBag["desk"] = {
         "Tarjetas de recompensas del campeonato. La tienda y las recompensas abrirán pronto.",
     },
     heroHonesty:
-      "Un primer vistazo a las próximas recompensas del campeonato. La tienda abrirá pronto; hoy no se cobra nada.",
+      "Los cosméticos y las membresías se venden con el checkout de Paddle. Los cosméticos nunca afectan al juego.",
     prizeBanner: "🏆 RECOMPENSAS DEL CAMPEONATO · PRÓXIMAMENTE",
     notice:
       "Estas vitrinas son vistas previas sin valor monetario. No se entrega ni se cobra nada, y el botón de inspeccionar no inicia ninguna compra.",

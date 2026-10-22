@@ -8,7 +8,7 @@ export const desk: TextBag["desk"] = {
         "Meisterschafts-Belohnungskarten. Shop und Belohnungen öffnen bald.",
     },
     heroHonesty:
-      "Ein erster Blick auf kommende Meisterschaftsbelohnungen. Der Shop öffnet bald; heute wird nichts berechnet.",
+      "Kosmetik und Mitgliedschaften werden über den Paddle-Checkout verkauft. Kosmetik beeinflusst nie das Gameplay.",
     prizeBanner: "🏆 MEISTERSCHAFTSBELOHNUNGEN · DEMNÄCHST",
     notice:
       "Diese Schaustücke sind Vorschauen ohne Geldwert. Es wird nichts geliefert oder berechnet, und die Ansehen-Schaltfläche startet keinen Kauf.",

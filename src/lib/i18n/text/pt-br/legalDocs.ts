@@ -23,7 +23,7 @@ export const legalDocs: TextBag["legalDocs"] = {
     meta: {
       title: "Termos de Serviço",
       description:
-        "Termos de Serviço do site da A.C.E para este site de competição de Counter-Strike 2. Ranqueadas, pagamentos e Anti-Cheat não estão em funcionamento.",
+        "Resumo anterior dos termos da A.C.E. Os Termos de Serviço atuais estão em /terms.",
     },
     kicker: "ACE-LEGAL / TERMOS DE SERVIÇO",
     title: "Termos de Serviço",
@@ -44,13 +44,13 @@ export const legalDocs: TextBag["legalDocs"] = {
       notActive: {
         title: "3. O que este site não é",
         paragraphs: [
-          "Matchmaking ranqueado, servidores de CS2 em funcionamento, AI Anti-Cheat operacional, cobrança e prêmios não estão ativos. Relógios do lobby e painéis de integridade são prévias, salvo indicação em contrário na página.",
+          "Este resumo foi substituído pelos Termos de Serviço em /terms, pela Política de Privacidade em /privacy e pela Política de Reembolso em /refunds.",
         ],
       },
       subscriptions: {
         title: "Planos, faturação e cancelamento",
         paragraphs: [
-          "Free custa $0, Plus $4 por mês e Premium $7 por mês. O pagamento ainda não existe, por isso hoje nada pode ser comprado nem cobrado. Quando a faturação abrir, os planos renovam mensalmente; você pode cancelar a qualquer momento nas configurações do painel e manter o acesso até ao fim do mês pago; um mês parcial não é reembolsado, salvo se a lei dseu país o exigir. Nenhum plano adiciona Rating Points, melhora a classificação ou altera o matchmaking. O suporte prioritário Premium, quando for lançado, significa que os pedidos Premium são tratados primeiro, sem tempo de resposta garantido.",
+          "Free custa US$ 0, Plus US$ 4 por mês e Premium US$ 7 por mês. O pagamento é feito pela Paddle como Merchant of Record; enquanto os pagamentos não estiverem configurados, o botão mostra Em breve. Cobrança, cancelamento e reembolsos seguem /terms e /refunds. Nenhum plano adiciona pontos de rating ou altera o matchmaking.",
         ],
       },
       antiCheat: {
@@ -119,7 +119,7 @@ export const legalDocs: TextBag["legalDocs"] = {
       title: "O que nunca coletamos",
       items: [
         "Senhas da Steam. O login é feito somente pelo Steam OpenID / fluxo oficial da Steam.",
-        "Números de cartão de pagamento. O pagamento não está implementado.",
+        "Números de cartão. A Paddle cuida dos dados de pagamento; a A.C.E nunca os vê.",
         "Telemetria de kernel. Nenhum cliente de Anti-Cheat acompanha este site.",
       ],
     },

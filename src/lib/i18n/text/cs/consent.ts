@@ -50,7 +50,7 @@ export const consent: TextBag["consent"] = {
     close: "Zavřít",
   },
   subscriptionDisclosure:
-    "Již brzy: platba zatím neexistuje, takže žádné předplatné nemůže začít, nic se neúčtuje a nic se neobnovuje. Až bude fakturace existovat, půjde o měsíční plán, který zrušíte v nastavení panelu; již zaplacený měsíc se nevrací.",
+    "Předplatné běží přes pokladnu Paddle jako měsíční plán, dokud ho nezrušíš. Zrušit můžeš kdykoli ve Správě předplatného; refundace podle Zásad refundace (14 dní). Dokud platby nejsou nastavené, tlačítko pokladny ukazuje Již brzy.",
   planned: {
     fallbackLabel: "Plánovaná akce",
     badge: "Plánováno — není k dispozici",

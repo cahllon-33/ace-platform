@@ -212,7 +212,7 @@ export const pricing: TextBag["pricing"] = {
       },
       "goldEliteSeal": {
         "feature": "Elitni pečat i posebne značke",
-        "detail": "Samo Premium, očitano iz spremljene razine na poslužitelju. Kozmetičko. Plaćanje ne postavlja tu razinu."
+        "detail": "Samo Premium, čita se iz razine spremljene na poslužitelju. Kozmetičko. Razina se postavlja tek kad Paddle potvrdi uplatu."
       }
     },
     "cells": {
@@ -232,14 +232,14 @@ export const pricing: TextBag["pricing"] = {
   "receipt": {
     "plus": {
       "metaTitle": "Plus potvrda",
-      "metaDescription": "A.C.E Plus pismo prikazano na ovoj stranici. Plaćanje nije aktivno, pa se ništa ne naplaćuje i ne šalje se e-pošta.",
+      "metaDescription": "Pismo A.C.E Plus prikazano na ovoj stranici. Nije račun; Paddle šalje račun e-poštom.",
       "planName": "A.C.E Plus",
       "nextLabel": "Nastavi na A.C.E",
       "nextBody": "Javne stranice ostaju otvorene. Ovaj odabir ne otvara red i ne mijenja spremljenu razinu."
     },
     "premium": {
       "metaTitle": "Premium potvrda",
-      "metaDescription": "A.C.E Premium pismo prikazano na ovoj stranici. Plaćanje nije aktivno, pa se ništa ne naplaćuje i ne šalje se e-pošta.",
+      "metaDescription": "Pismo A.C.E Premium prikazano na ovoj stranici. Nije račun; Paddle šalje račun e-poštom.",
       "planName": "A.C.E Premium",
       "nextLabel": "Pročitaj Premium uvjete",
       "nextBody": "Premium čine Premium umjetnost rangova, animirana kartica profila, posebne značke i ELITE SEAL te sve iz Plusa. Spremanje klana u Squads besplatno je za svaki račun."
@@ -248,7 +248,7 @@ export const pricing: TextBag["pricing"] = {
   "letter": {
     "kicker": "{plan} · {price} mjesečno",
     "title": "Hvala na odabiru",
-    "flag": "Ovo se pismo prikazuje na stranici. E-pošta nije poslana. Kartica nije terećena. Plaćanje nije aktivno, a spremljena razina članstva nije promijenjena.",
+    "flag": "Ovo se pismo prikazuje na stranici i nije račun. Paddle šalje račun za uplatu, a plan se mijenja tek kad Paddle potvrdi uplatu.",
     "greeting": "Dragi igraču,",
     "intro": "Hvala što si odabrao {plan}. Ova stranica je potvrda. Bilježi prikazanu cijenu, što taj odabir danas uključuje, što ne uključuje i adresu podrške objavljenu na ovoj stranici.",
     "selected": {

@@ -212,7 +212,7 @@ export const pricing: TextBag["pricing"] = {
       },
       "goldEliteSeal": {
         "feature": "Segel elite & lencana khusus",
-        "detail": "Hanya Premium, dibaca dari tingkat tersimpan di server. Kosmetik. Pembayaran tidak menetapkan tingkat itu."
+        "detail": "Hanya Premium, dibaca dari tingkat yang tersimpan di server. Kosmetik. Tingkat hanya diatur setelah Paddle mengonfirmasi pembayaran."
       }
     },
     "cells": {
@@ -232,14 +232,14 @@ export const pricing: TextBag["pricing"] = {
   "receipt": {
     "plus": {
       "metaTitle": "Tanda terima Plus",
-      "metaDescription": "Surat A.C.E Plus yang ditampilkan di situs ini. Pembayaran belum aktif, jadi tidak ada yang ditagih dan tidak ada surel yang dikirim.",
+      "metaDescription": "Surat A.C.E Plus yang ditampilkan di situs ini. Ini bukan tanda terima; Paddle mengirim tanda terima lewat email.",
       "planName": "A.C.E Plus",
       "nextLabel": "Lanjutkan di A.C.E",
       "nextBody": "Halaman publik tetap terbuka. Pilihan ini tidak membuka antrean dan tidak mengubah tingkat tersimpan."
     },
     "premium": {
       "metaTitle": "Tanda terima Premium",
-      "metaDescription": "Surat A.C.E Premium yang ditampilkan di situs ini. Pembayaran belum aktif, jadi tidak ada yang ditagih dan tidak ada surel yang dikirim.",
+      "metaDescription": "Surat A.C.E Premium yang ditampilkan di situs ini. Ini bukan tanda terima; Paddle mengirim tanda terima lewat email.",
       "planName": "A.C.E Premium",
       "nextLabel": "Baca ketentuan Premium",
       "nextBody": "Premium berisi seni rank Premium, kartu profil animasi, lencana khusus, dan ELITE SEAL, ditambah semua yang ada di Plus. Menyimpan klan di Squads gratis untuk setiap akun."
@@ -248,7 +248,7 @@ export const pricing: TextBag["pricing"] = {
   "letter": {
     "kicker": "{plan} · {price} per bulan",
     "title": "Terima kasih atas pilihan Anda",
-    "flag": "Surat ini ditampilkan di situs. Tidak ada surel yang dikirim. Tidak ada kartu yang ditagih. Pembayaran belum aktif, dan tingkat keanggotaan tersimpan tidak diubah.",
+    "flag": "Surat ini ditampilkan di situs dan bukan tanda terima. Paddle mengirim tanda terima pembayaran, dan paketmu baru berubah setelah Paddle mengonfirmasi pembayaran.",
     "greeting": "Pemain yang terhormat,",
     "intro": "Terima kasih telah memilih {plan}. Halaman ini adalah tanda terima. Ia mencatat harga tampilan, apa yang termasuk dalam pilihan itu hari ini, apa yang tidak termasuk, dan alamat dukungan yang dipublikasikan di situs ini.",
     "selected": {

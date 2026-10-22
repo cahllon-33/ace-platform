@@ -245,7 +245,8 @@ export const UI_KO: Ui = {
       "inDevelopment": "개발 중",
       "comingSoon": "곧 출시",
       "preparing": "준비 중",
-      "billingOff": "비활성 · 결제가 이루어지지 않음"
+      "billingOff": "미설정 · 결제 버튼 '곧 제공'",
+      "billingOn": "운영 중 · Paddle 결제"
     },
     "card": {
       "matches": "경기",
@@ -325,7 +326,7 @@ export const UI_KO: Ui = {
       "ranksBody": "배지 색상은 티어별로 고정되며, 랭크는 항상 저장된 RP로 계산됩니다.",
       "ranksCta": "모든 랭크 보기",
       "plansTitle": "승리를 사지 않는 요금제",
-      "plansBody": "유료 요금제는 외형과 편의 기능뿐입니다. 결제가 아직 열리지 않아 오늘은 모두 Free입니다.",
+      "plansBody": "유료 플랜은 꾸미기와 편의 기능뿐입니다. 결제는 Paddle을 통해 진행되며, 설정되지 않은 동안 버튼에는 '곧 제공'이 표시됩니다.",
       "plansCta": "요금제 비교",
       "free": "무료",
       "perMonth": "/월",

@@ -212,7 +212,7 @@ export const pricing: TextBag["pricing"] = {
       },
       "goldEliteSeal": {
         "feature": "エリートシールと特別バッジ",
-        "detail": "Premium 限定。サーバーに保存されたティアから読み取ります。外観のみ。決済でこのティアが設定されることはありません。"
+        "detail": "Premium限定。サーバーに保存されたティアから読み取ります。見た目のみ。ティアはPaddleが支払いを確認した後にのみ設定されます。"
       }
     },
     "cells": {
@@ -232,14 +232,14 @@ export const pricing: TextBag["pricing"] = {
   "receipt": {
     "plus": {
       "metaTitle": "Plus レシート",
-      "metaDescription": "このサイトに表示される A.C.E Plus のレター。決済は稼働していないため、請求もメール送信もありません。",
+      "metaDescription": "このサイトに表示されるA.C.E Plusの手紙です。領収書ではありません。領収書はPaddleがメールで送ります。",
       "planName": "A.C.E Plus",
       "nextLabel": "A.C.E を続ける",
       "nextBody": "公開ページは引き続き利用できます。この選択でキューが開いたり、保存済みティアが変わったりすることはありません。"
     },
     "premium": {
       "metaTitle": "Premium レシート",
-      "metaDescription": "このサイトに表示される A.C.E Premium のレター。決済は稼働していないため、請求もメール送信もありません。",
+      "metaDescription": "このサイトに表示されるA.C.E Premiumの手紙です。領収書ではありません。領収書はPaddleがメールで送ります。",
       "planName": "A.C.E Premium",
       "nextLabel": "Premium規約を読む",
       "nextBody": "PremiumはPremiumランクアート、アニメーションプロフィールカード、特別バッジ、ELITE SEALに加え、Plusのすべてを含みます。Squadsでのクラン保存はすべてのアカウントで無料です。"
@@ -248,7 +248,7 @@ export const pricing: TextBag["pricing"] = {
   "letter": {
     "kicker": "{plan} · 月額 {price}",
     "title": "ご選択ありがとうございます",
-    "flag": "このレターはウェブサイト上に表示されるものです。メールは送信されておらず、カードも請求されていません。決済は稼働しておらず、保存済みのメンバーシップティアも変更されていません。",
+    "flag": "この手紙はサイト上に表示されるもので、領収書ではありません。支払いの領収書はPaddleが送り、プランはPaddleが支払いを確認した後にのみ変わります。",
     "greeting": "プレイヤーの皆さまへ",
     "intro": "{plan} をお選びいただきありがとうございます。このページがレシートです。表示価格、現在の選択に含まれるもの・含まれないもの、このサイトに掲載しているサポート窓口を記載しています。",
     "selected": {

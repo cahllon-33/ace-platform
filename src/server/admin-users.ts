@@ -278,13 +278,15 @@ export async function loadAdminDirectory(): Promise<AdminDeskData> {
         score: `${dispute.match.scoreA}–${dispute.match.scoreB}`,
       };
     });
+    // R49d: real revenue = webhook-confirmed one-time Paddle orders still standing (refunds/chargebacks excluded).
+    const gross = await prisma.paddleOrder.aggregate({ where: { status: "completed", refundedAt: null }, _sum: { amountCents: true } }).catch(() => null);
     return {
       players: users.map((user) => userToAdminRow(user, steamFailures.get(user.id) ?? null)),
       stats: {
         enrollment,
         online: presence.count,
         servers: matches.length,
-        grossCents: 0,
+        grossCents: gross?._sum.amountCents ?? 0,
         unavailable: false,
         staging: false,
         connected: presence.players,

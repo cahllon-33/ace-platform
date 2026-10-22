@@ -57,7 +57,7 @@
     "kicker": "Cosmetics · coming soon",
     "title": "A.C.E LOOT ARCHITECTURE — WEAPON DROPS",
     "lede": "Original A.C.E finishes, arriving with the shop. Cosmetics never affect competition.",
-    "checkout": "Checkout · coming soon"
+    "checkout": "Checkout · Paddle"
   },
   "identityPreview": {
     "badge": "Preview — not confirmed",

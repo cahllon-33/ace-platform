@@ -47,7 +47,7 @@ export const consent: TextBag["consent"] = {
     "closeLabel": "Çerez ayarlarını kapat",
     "close": "Kapat"
   },
-  "subscriptionDisclosure": "Çok yakında: ödeme sistemi henüz yok, bu yüzden abonelik başlayamaz, ücret alınmaz ve hiçbir şey yenilenmez. Faturalandırma olduğunda, panel ayarlarından iptal edebileceğiniz aylık bir plan olacak; ödenmiş bir ay iade edilmez.",
+  "subscriptionDisclosure": "Abonelikler, iptal edene kadar Paddle ödemesiyle aylık plan olarak sürer. Aboneliği yönet bölümünden istediğin zaman iptal et; iadeler İade Politikası'na (14 gün) göre yapılır. Ödemeler yapılandırılmadığı sürece ödeme düğmesinde Yakında yazar.",
   "planned": {
     "fallbackLabel": "Planlanan işlem",
     "badge": "Planlandı — kullanılamıyor"

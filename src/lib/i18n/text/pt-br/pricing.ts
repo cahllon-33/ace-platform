@@ -212,7 +212,7 @@ export const pricing: TextBag["pricing"] = {
       },
       "goldEliteSeal": {
         "feature": "Selo de elite e emblemas especiais",
-        "detail": "Só Premium, lido do nível salvo no servidor. Cosmético. O pagamento não define esse nível."
+        "detail": "Somente Premium, lido do nível salvo no servidor. Cosmético. O nível só é definido depois que a Paddle confirma o pagamento."
       }
     },
     "cells": {
@@ -232,14 +232,14 @@ export const pricing: TextBag["pricing"] = {
   "receipt": {
     "plus": {
       "metaTitle": "Recibo do Plus",
-      "metaDescription": "A carta do A.C.E Plus exibida neste site. O pagamento não está ativo, então nada é cobrado e nenhum e-mail é enviado.",
+      "metaDescription": "A carta do A.C.E Plus exibida neste site. Não é um recibo; a Paddle envia o recibo por e-mail.",
       "planName": "A.C.E Plus",
       "nextLabel": "Continuar na A.C.E",
       "nextBody": "As páginas públicas continuam abertas. Esta escolha não abre uma fila e não altera o plano salvo."
     },
     "premium": {
       "metaTitle": "Recibo do Premium",
-      "metaDescription": "A carta do A.C.E Premium exibida neste site. O pagamento não está ativo, então nada é cobrado e nenhum e-mail é enviado.",
+      "metaDescription": "A carta do A.C.E Premium exibida neste site. Não é um recibo; a Paddle envia o recibo por e-mail.",
       "planName": "A.C.E Premium",
       "nextLabel": "Ler os termos Premium",
       "nextBody": "O Premium inclui arte de rank Premium, o cartão de perfil animado, emblemas especiais e o ELITE SEAL, além de tudo do Plus. Salvar um clã em Squads é gratuito para todas as contas."
@@ -248,7 +248,7 @@ export const pricing: TextBag["pricing"] = {
   "letter": {
     "kicker": "{plan} · {price} por mês",
     "title": "Obrigado pela sua escolha",
-    "flag": "Esta carta é exibida no site. Nenhum e-mail foi enviado. Nenhum cartão foi cobrado. O pagamento não está ativo, e o plano de assinatura salvo não foi alterado.",
+    "flag": "Esta carta é exibida no site e não é um recibo. A Paddle envia o recibo do pagamento, e seu plano só muda depois que a Paddle confirma o pagamento.",
     "greeting": "Prezado jogador,",
     "intro": "Obrigado por escolher o {plan}. Esta página é o recibo. Ela registra o preço exibido, o que essa escolha inclui hoje, o que não inclui e o endereço de suporte publicado neste site.",
     "selected": {

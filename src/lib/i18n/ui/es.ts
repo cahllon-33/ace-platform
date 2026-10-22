@@ -245,7 +245,8 @@ export const UI_ES: Ui = {
       "inDevelopment": "En desarrollo",
       "comingSoon": "Próximamente",
       "preparing": "En preparación",
-      "billingOff": "No activo · no se cobran pagos"
+      "billingOff": "Sin configurar · el pago muestra Próximamente",
+      "billingOn": "Activo · checkout de Paddle"
     },
     "card": {
       "matches": "Partidas",
@@ -325,7 +326,7 @@ export const UI_ES: Ui = {
       "ranksBody": "Los colores de las insignias son fijos por nivel y tu rango siempre se calcula con tus RP guardados.",
       "ranksCta": "Ver todos los rangos",
       "plansTitle": "Planes que nunca compran victorias",
-      "plansBody": "Los planes de pago son solo estéticos y de comodidad. El pago aún no está activo, así que hoy todos están en Gratis.",
+      "plansBody": "Los planes de pago son solo cosméticos y de comodidad. El pago se realiza con Paddle; mientras los pagos no estén configurados, el botón muestra Próximamente.",
       "plansCta": "Comparar planes",
       "free": "Gratis",
       "perMonth": "/mes",

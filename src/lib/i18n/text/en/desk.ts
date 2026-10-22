@@ -6,7 +6,7 @@ export const desk = {
         "Championship reward cards. The shop and rewards open soon.",
     },
     heroHonesty:
-      "A first look at upcoming championship rewards. The shop opens soon; nothing is charged today.",
+      "Cosmetics and memberships are sold through Paddle checkout. Cosmetics never affect gameplay.",
     prizeBanner: "🏆 CHAMPIONSHIP REWARDS · COMING SOON",
     notice:
       "These showcases are previews with no cash value. Nothing is delivered or charged, and the inspect button does not start a purchase.",

@@ -186,7 +186,8 @@ export const UI_EN = {
       "inDevelopment": "In development",
       "comingSoon": "Coming soon",
       "preparing": "Preparing",
-      "billingOff": "Not live · no payments taken"
+      "billingOff": "Not configured · checkout shows Coming soon",
+      "billingOn": "Live · Paddle checkout"
     },
     "card": {
       "matches": "Matches",
@@ -266,7 +267,7 @@ export const UI_EN = {
       "ranksBody": "Badge colors are fixed per tier, and your rank is always calculated from your stored RP.",
       "ranksCta": "See every rank",
       "plansTitle": "Plans that never buy wins",
-      "plansBody": "Paid plans are cosmetic and convenience only. Checkout is not live yet, so everyone is on Free today.",
+      "plansBody": "Paid plans are cosmetic and convenience only. Checkout runs through Paddle; while payments are not configured, the button shows Coming soon.",
       "plansCta": "Compare plans",
       "free": "Free",
       "perMonth": "/month",

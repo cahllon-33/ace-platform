@@ -21,7 +21,7 @@ export const legalDocs: TextBag["legalDocs"] = {
   "terms": {
     "meta": {
       "title": "Uvjeti korištenja",
-      "description": "Uvjeti korištenja web-stranice A.C.E za ovu stranicu Counter-Strike 2 natjecanja. Ranked, plaćanja i anti-cheat nisu aktivni."
+      "description": "Raniji sažetak uvjeta A.C.E. Važeći Uvjeti korištenja nalaze se na /terms."
     },
     "kicker": "ACE-LEGAL / UVJETI KORIŠTENJA",
     "title": "Uvjeti korištenja",
@@ -42,13 +42,13 @@ export const legalDocs: TextBag["legalDocs"] = {
       "notActive": {
         "title": "3. Što ova stranica nije",
         "paragraphs": [
-          "Ranked matchmaking, CS2 poslužitelji igre uživo, funkcionalan AI anti-cheat, naplata i nagrade nisu aktivni. Satovi predvorja i paneli integriteta su pregledi, osim ako stranica ne navodi drukčije."
+          "Ovaj sažetak zamjenjuju Uvjeti korištenja na /terms, Politika privatnosti na /privacy i Politika povrata na /refunds."
         ]
       },
       "subscriptions": {
         "title": "Planovi, naplata i otkazivanje",
         "paragraphs": [
-          "Free stoji $0, Plus $4 mjesečno, a Premium $7 mjesečno. Naplata još ne postoji pa se danas ništa ne može kupiti ni naplatiti. Kad naplata počne, planovi se obnavljaju mjesečno; otkazati možeš bilo kada u postavkama nadzorne ploče i zadržati pristup do kraja plaćenog mjeseca; započeti mjesec ne vraća se, osim ako to traži zakon tvoje zemlje. Nijedan plan ne dodaje Rating Points, ne podiže rejting niti mijenja sparivanje. Prioritetna podrška za Premium, kad krene, znači da se Premium zahtjevi obrađuju prvi, bez zajamčenog vremena odgovora."
+          "Free stoji 0 $, Plus 4 $ mjesečno, a Premium 7 $ mjesečno. Plaćanje ide preko Paddlea kao Merchant of Recorda; dok plaćanja nisu postavljena, gumb prikazuje Uskoro. Naplatu, otkazivanje i povrate uređuju /terms i /refunds. Nijedan plan ne dodaje bodove ratinga niti mijenja matchmaking."
         ]
       },
       "antiCheat": {
@@ -114,7 +114,7 @@ export const legalDocs: TextBag["legalDocs"] = {
       "title": "Što nikad ne prikupljamo",
       "items": [
         "Steam lozinke. Prijava je samo putem Steam OpenID-a / službenog Steamovog postupka.",
-        "Brojeve platnih kartica. Plaćanje nije implementirano.",
+        "Brojevi platnih kartica. Podatke o plaćanju obrađuje Paddle; A.C.E ih nikad ne vidi.",
         "Telemetriju jezgre. S ovom stranicom ne isporučuje se anti-cheat klijent."
       ]
     },

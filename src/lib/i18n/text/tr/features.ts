@@ -59,7 +59,7 @@ export const features: TextBag["features"] = {
     "kicker": "Kozmetikler · yakında",
     "title": "A.C.E. GANİMET MİMARİSİ — SİLAH DÜŞÜŞLERİ",
     "lede": "Mağazayla birlikte gelecek özgün A.C.E kaplamaları. Kozmetikler rekabeti asla etkilemez.",
-    "checkout": "Ödeme · yakında"
+    "checkout": "Ödeme · Paddle"
   },
   "identityPreview": {
     "badge": "Önizleme — onaylanmadı",

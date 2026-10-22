@@ -6,7 +6,7 @@ export const desk: TextBag["desk"] = {
       "title": "A.C.E Marketplace",
       "description": "Kartice prvenstvenih nagrada. Trgovina i nagrade otvaraju se uskoro."
     },
-    "heroHonesty": "Prvi pogled na nadolazeće prvenstvene nagrade. Trgovina se otvara uskoro; danas se ništa ne naplaćuje.",
+    "heroHonesty": "Kozmetika i članstva prodaju se putem Paddle naplate. Kozmetika nikad ne utječe na igru.",
     "prizeBanner": "🏆 PRVENSTVENE NAGRADE · USKORO",
     "notice": "Ovi prikazi su pregledi bez novčane vrijednosti. Ništa se ne isporučuje ni naplaćuje, a gumb za pregled ne pokreće kupnju.",
     "items": {

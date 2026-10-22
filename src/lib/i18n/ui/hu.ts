@@ -245,7 +245,8 @@ export const UI_HU: Ui = {
       "inDevelopment": "Fejlesztés alatt",
       "comingSoon": "Hamarosan",
       "preparing": "Előkészítés alatt",
-      "billingOff": "Nem aktív · nincs fizetés"
+      "billingOff": "Nincs beállítva · a pénztár Hamarosan feliratot mutat",
+      "billingOn": "Aktív · Paddle pénztár"
     },
     "card": {
       "matches": "Meccsek",
@@ -325,7 +326,7 @@ export const UI_HU: Ui = {
       "ranksBody": "A jelvények színe szintenként rögzített, és a rangod mindig a tárolt RP-ből számolódik.",
       "ranksCta": "Összes rang",
       "plansTitle": "Csomagok, amelyek nem vásárolnak győzelmet",
-      "plansBody": "A fizetős csomagok csak kozmetikai és kényelmi jellegűek. A fizetés még nem él, így ma mindenki Free-n van.",
+      "plansBody": "A fizetős csomagok csak kozmetikai és kényelmi célúak. A fizetés a Paddle-en keresztül történik; amíg a fizetés nincs beállítva, a gomb Hamarosan feliratot mutat.",
       "plansCta": "Csomagok összehasonlítása",
       "free": "Ingyenes",
       "perMonth": "/hó",

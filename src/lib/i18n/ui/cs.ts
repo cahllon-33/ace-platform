@@ -245,7 +245,8 @@ export const UI_CS: Ui = {
       "inDevelopment": "Ve vývoji",
       "comingSoon": "Již brzy",
       "preparing": "Připravujeme",
-      "billingOff": "Neaktivní · žádné platby se nevybírají"
+      "billingOff": "Nenastaveno · pokladna ukazuje Již brzy",
+      "billingOn": "Aktivní · pokladna Paddle"
     },
     "card": {
       "matches": "Zápasy",
@@ -325,7 +326,7 @@ export const UI_CS: Ui = {
       "ranksBody": "Barvy odznaků jsou pro každou úroveň pevné a hodnost se vždy počítá z uložených RP.",
       "ranksCta": "Zobrazit všechny hodnosti",
       "plansTitle": "Plány, které nekupují výhry",
-      "plansBody": "Placené plány jsou jen kosmetika a pohodlí. Platby zatím nejsou aktivní, takže dnes mají všichni Free.",
+      "plansBody": "Placené plány jsou jen kosmetika a pohodlí. Platba probíhá přes Paddle; dokud platby nejsou nastavené, tlačítko ukazuje Již brzy.",
       "plansCta": "Porovnat plány",
       "free": "Zdarma",
       "perMonth": "/měsíc",

@@ -212,7 +212,7 @@ export const pricing: TextBag["pricing"] = {
       },
       "goldEliteSeal": {
         "feature": "Elit pecsét és különleges jelvények",
-        "detail": "Csak Premium, a szerveren tárolt szintből olvasva. Kozmetikai. A fizetés nem állítja be ezt a szintet."
+        "detail": "Csak Premium, a szerveren tárolt szintből olvasva. Kozmetikai. A szint csak azután áll be, hogy a Paddle megerősíti a fizetést."
       }
     },
     "cells": {
@@ -232,14 +232,14 @@ export const pricing: TextBag["pricing"] = {
   "receipt": {
     "plus": {
       "metaTitle": "Plus nyugta",
-      "metaDescription": "Az ezen az oldalon megjelenített A.C.E Plus levél. A fizetés nem él, így semmit nem terhelünk és e-mailt sem küldünk.",
+      "metaDescription": "Az oldalon megjelenő A.C.E Plus levél. Nem nyugta; a nyugtát a Paddle küldi e-mailben.",
       "planName": "A.C.E Plus",
       "nextLabel": "Folytatás az A.C.E-n",
       "nextBody": "A nyilvános oldalak nyitva maradnak. Ez a választás nem nyit sort és nem változtatja meg a tárolt szintet."
     },
     "premium": {
       "metaTitle": "Premium nyugta",
-      "metaDescription": "Az ezen az oldalon megjelenített A.C.E Premium levél. A fizetés nem él, így semmit nem terhelünk és e-mailt sem küldünk.",
+      "metaDescription": "Az oldalon megjelenő A.C.E Premium levél. Nem nyugta; a nyugtát a Paddle küldi e-mailben.",
       "planName": "A.C.E Premium",
       "nextLabel": "A Premium feltételek elolvasása",
       "nextBody": "A Premium: prémium rangművészet, animált profilkártya, különleges jelvények és az ELITE SEAL, valamint minden, ami a Plusban van. Klán mentése a Squadsban minden fióknak ingyenes."
@@ -248,7 +248,7 @@ export const pricing: TextBag["pricing"] = {
   "letter": {
     "kicker": "{plan} · havi {price}",
     "title": "Köszönjük a választásodat",
-    "flag": "Ez a levél az oldalon jelenik meg. E-mail nem ment ki. Kártyát nem terheltünk. A fizetés nem él, és a tárolt tagsági szint nem változott.",
+    "flag": "Ez a levél az oldalon jelenik meg, és nem nyugta. A fizetési nyugtát a Paddle küldi, a csomagod pedig csak azután változik, hogy a Paddle megerősíti a fizetést.",
     "greeting": "Kedves játékos!",
     "intro": "Köszönjük, hogy a(z) {plan} csomagot választottad. Ez az oldal a nyugta. Rögzíti a megjelenített árat, hogy a választás ma mit tartalmaz, mit nem, és az oldalon közzétett támogatási címet.",
     "selected": {

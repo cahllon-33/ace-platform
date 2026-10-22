@@ -59,7 +59,7 @@ export const features: TextBag["features"] = {
     "kicker": "Cosmétiques · bientôt",
     "title": "ARCHITECTURE DE BUTIN A.C.E — DROPS D'ARMES",
     "lede": "Finitions originales A.C.E, disponibles avec la boutique. Les cosmétiques n'affectent jamais la compétition.",
-    "checkout": "Paiement · bientôt"
+    "checkout": "Paiement · Paddle"
   },
   "identityPreview": {
     "badge": "Aperçu — non confirmé",

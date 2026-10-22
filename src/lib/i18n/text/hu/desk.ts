@@ -6,7 +6,7 @@ export const desk: TextBag["desk"] = {
       "title": "A.C.E Marketplace",
       "description": "Bajnoki jutalomkártyák. A bolt és a jutalmak hamarosan nyílnak."
     },
-    "heroHonesty": "Első pillantás a közelgő bajnoki jutalmakra. A bolt hamarosan nyílik; ma semmit nem terhelünk.",
+    "heroHonesty": "A kozmetikumokat és tagságokat a Paddle pénztárban árusítjuk. A kozmetikumok sosem befolyásolják a játékot.",
     "prizeBanner": "🏆 BAJNOKI JUTALMAK · HAMAROSAN",
     "notice": "Ezek a bemutatók pénzbeli érték nélküli előnézetek. Semmit nem szállítunk vagy terhelünk, és a megtekintés gomb nem indít vásárlást.",
     "items": {

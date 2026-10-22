@@ -18,7 +18,7 @@ export const account: TextBag["account"] = {
     "soon": "近日公開",
     "sample": "サンプル · 形のみ、実データではありません",
     "lockedTitle": "プレイヤー統計はA.C.E PlusとPremiumに含まれます",
-    "lockedBody": "保存されているプランはFreeです。Plus（月額$4）とPremium（月額$7）のどちらでもこのページが開きます。近日公開：決済はまだありません。",
+    "lockedBody": "保存されているプランはFreeです。Plus（月額$4）とPremium（月額$7）でこのページが開きます。料金ページからPaddle決済で登録できます。",
     "signIn": "Steamでサインインしてプレイヤー統計を表示してください。",
     "plansLink": "プランを見る",
     "rosterNote": "サンプルのロスタープロフィール：これらの選手には記録されたA.C.Eの試合がないため、統計に数値は表示されません。",
@@ -63,8 +63,8 @@ export const account: TextBag["account"] = {
     },
     "settings": {
       "title": "ダッシュボード設定プロフィール",
-      "billingNotLive": "決済が実装されるまで、すべてのアカウントはFreeです。",
-      "cancelReason": "解約できる有料サブスクリプションはありません。決済は実装されていません。",
+      "billingNotLive": "プランはPaddle決済で購入します。決済が未設定の間、ボタンには「近日公開」と表示されます。",
+      "cancelReason": "Paddleのサブスクリプションは、メンバーシップパネルの「サブスクリプション管理」から解約できます。",
       "cancelButton": "サブスクリプションを解約"
     },
     "rankedReason": "検証済みのアンチチート連携ができるまで、ランクマッチングは利用できません。",

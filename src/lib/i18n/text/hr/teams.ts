@@ -40,7 +40,7 @@ export const teams: TextBag["teams"] = {
     "fallback": "Ovaj pult odgovara samo prema pisanim pravilima na ovoj stranici: planovi, pet mjesta, Steam OpenID i podrška.",
     "facts": {
       "email": "E-pošta se ne šalje. Potvrde planova ostaju na ovoj stranici.",
-      "charge": "Premium stoji 7 $ mjesečno. Uskoro: plaćanje još ne postoji, pa se ništa ne naplaćuje.",
+      "charge": "Premium stoji 7 $ mjesečno putem Paddle naplate.",
       "board": "Spremljeni klan je zapis postave. Ne stavlja se na ploču od 100 timova. Ta ploča i dalje pokazuje 0 prijavljenih dok sezona ne počne.",
       "steam": "Prijava koristi službeni Steam OpenID. A.C.E nikad ne traži Steam lozinku. S ove stranice Steam se vraća ovdje.",
       "roster": "Mjesto 1 je prijavljeni kapetan. Mjesta 2 do 5 moraju već imati A.C.E račune. Pozivnice čekaju dok svaki igrač ne prihvati.",

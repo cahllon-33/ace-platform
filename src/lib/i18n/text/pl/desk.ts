@@ -8,7 +8,7 @@ export const desk: TextBag["desk"] = {
         "Karty nagród mistrzowskich. Sklep i nagrody ruszą wkrótce.",
     },
     heroHonesty:
-      "Pierwsze spojrzenie na nadchodzące nagrody mistrzowskie. Sklep ruszy wkrótce; dziś nic nie jest pobierane.",
+      "Kosmetyki i członkostwa są sprzedawane przez kasę Paddle. Kosmetyki nigdy nie wpływają na rozgrywkę.",
     prizeBanner: "🏆 NAGRODY MISTRZOWSKIE · WKRÓTCE",
     notice:
       "Te prezentacje to podgląd bez wartości pieniężnej. Nic nie jest dostarczane ani pobierane, a przycisk podglądu nie rozpoczyna zakupu.",

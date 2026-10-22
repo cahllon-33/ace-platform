@@ -47,7 +47,7 @@ export const consent: TextBag["consent"] = {
     "closeLabel": "Închide setările cookie-urilor",
     "close": "Închide"
   },
-  "subscriptionDisclosure": "În curând: plata nu există încă, deci niciun abonament nu poate începe, nu se taxează nimic și nimic nu se reînnoiește. Când va exista facturare, va fi un plan lunar pe care îl poți anula din setările panoului; o lună deja plătită nu se rambursează.",
+  "subscriptionDisclosure": "Abonamentele rulează prin checkout-ul Paddle ca plan lunar până anulezi. Anulează oricând din Gestionează abonamentul; rambursări conform Politicii de rambursare (14 zile). Cât timp plățile nu sunt configurate, butonul de checkout arată În curând.",
   "planned": {
     "fallbackLabel": "Acțiune planificată",
     "badge": "Planificat — indisponibil"

@@ -47,7 +47,7 @@ export const consent: TextBag["consent"] = {
     "closeLabel": "Stäng cookieinställningar",
     "close": "Stäng"
   },
-  "subscriptionDisclosure": "Kommer snart: betalning finns inte än, så ingen prenumeration kan starta, inget debiteras och inget förnyas. När fakturering finns blir det en månadsplan som du kan säga upp i panelens inställningar; en redan betald månad återbetalas inte.",
+  "subscriptionDisclosure": "Prenumerationer löper via Paddles kassa som en månadsplan tills du säger upp. Säg upp när du vill under Hantera prenumeration; återbetalning enligt återbetalningspolicyn (14 dagar). Så länge betalningar inte är konfigurerade visar kassaknappen Kommer snart.",
   "planned": {
     "fallbackLabel": "Planerad åtgärd",
     "badge": "Planerad — inte tillgänglig"

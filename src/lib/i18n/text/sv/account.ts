@@ -18,7 +18,7 @@ export const account: TextBag["account"] = {
     "soon": "Kommer snart",
     "sample": "EXEMPEL · bara form, inte riktiga data",
     "lockedTitle": "Spelarstatistik ingår i A.C.E Plus och Premium",
-    "lockedBody": "Din sparade plan är Free. Plus (4 $/mån) och Premium (7 $/mån) låser båda upp den här sidan. Kommer snart: betalning finns inte än.",
+    "lockedBody": "Din sparade plan är Free. Plus (4 $/mån) och Premium (7 $/mån) låser upp den här sidan. Prenumerera på prissidan via Paddles kassa.",
     "signIn": "Logga in med Steam för att se din spelarstatistik.",
     "plansLink": "Se planer",
     "rosterNote": "Exempelprofil i truppen: de här spelarna har inga registrerade A.C.E-matcher, så statistiken visar inga siffror.",
@@ -63,8 +63,8 @@ export const account: TextBag["account"] = {
     },
     "settings": {
       "title": "PANELINSTÄLLNINGAR",
-      "billingNotLive": "Alla konton är på Free tills betalning finns.",
-      "cancelReason": "Det finns ingen betald prenumeration att säga upp. Betalning är inte implementerad.",
+      "billingNotLive": "Planer köps via Paddles kassa. Så länge betalningar inte är konfigurerade visar knappen Kommer snart.",
+      "cancelReason": "Säg upp en Paddle-prenumeration under Hantera prenumeration i din medlemspanel.",
       "cancelButton": "Säg upp prenumeration"
     },
     "rankedReason": "Rankad matchning nekas tills en verifierad anti-fusk-integration finns.",

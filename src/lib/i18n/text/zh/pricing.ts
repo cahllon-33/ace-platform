@@ -212,7 +212,7 @@ export const pricing: TextBag["pricing"] = {
       },
       "goldEliteSeal": {
         "feature": "精英印章与特殊徽章",
-        "detail": "仅限 Premium,从服务器上保存的等级读取。仅为装饰。支付不会设置该等级。"
+        "detail": "仅限 Premium，从服务器保存的等级读取。仅为外观。只有在 Paddle 确认付款后才会设置等级。"
       }
     },
     "cells": {
@@ -232,14 +232,14 @@ export const pricing: TextBag["pricing"] = {
   "receipt": {
     "plus": {
       "metaTitle": "Plus 收据",
-      "metaDescription": "本网站显示的 A.C.E Plus 信函。支付尚未上线,因此不会扣费,也不会发送邮件。",
+      "metaDescription": "本网站显示的 A.C.E Plus 信函。它不是收据；收据由 Paddle 通过邮件发送。",
       "planName": "A.C.E Plus",
       "nextLabel": "继续浏览 A.C.E",
       "nextBody": "公开页面保持开放。此选择不会开启队列,也不会更改已保存的等级。"
     },
     "premium": {
       "metaTitle": "Premium 收据",
-      "metaDescription": "本网站显示的 A.C.E Premium 信函。支付尚未上线,因此不会扣费,也不会发送邮件。",
+      "metaDescription": "本网站显示的 A.C.E Premium 信函。它不是收据；收据由 Paddle 通过邮件发送。",
       "planName": "A.C.E Premium",
       "nextLabel": "阅读 Premium 条款",
       "nextBody": "Premium 包含 Premium 段位美术、动态资料卡、特殊徽章和 ELITE SEAL，以及 Plus 的全部内容。在 Squads 保存战队对所有账号免费。"
@@ -248,7 +248,7 @@ export const pricing: TextBag["pricing"] = {
   "letter": {
     "kicker": "{plan} · 每月 {price}",
     "title": "感谢你的选择",
-    "flag": "此信函显示在网站上。未发送邮件,未从银行卡扣费。支付尚未上线,已保存的会员等级也未更改。",
+    "flag": "此信函显示在网站上，并非收据。付款收据由 Paddle 发送，只有在 Paddle 确认付款后你的方案才会变更。",
     "greeting": "亲爱的玩家:",
     "intro": "感谢你选择 {plan}。本页面即为收据,记录了显示价格、此选择目前包含和不包含的内容,以及本网站公布的支持地址。",
     "selected": {

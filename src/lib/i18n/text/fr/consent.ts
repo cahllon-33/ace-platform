@@ -50,7 +50,7 @@ export const consent: TextBag["consent"] = {
     close: "Fermer",
   },
   subscriptionDisclosure:
-    "Bientôt disponible : le paiement n'existe pas encore, donc aucun abonnement ne peut commencer, rien n'est facturé et rien ne se renouvelle. Quand la facturation existera, ce sera un forfait mensuel résiliable dans les paramètres du tableau de bord ; un mois déjà payé n'est pas remboursé.",
+    "Les abonnements passent par le paiement Paddle sous forme d’offre mensuelle jusqu’à résiliation. Résilie à tout moment via Gérer l’abonnement ; remboursements selon la Politique de remboursement (14 jours). Tant que les paiements ne sont pas configurés, le bouton de paiement affiche Bientôt.",
   planned: {
     fallbackLabel: "Action prévue",
     badge: "Prévu — non disponible",

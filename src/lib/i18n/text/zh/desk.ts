@@ -6,7 +6,7 @@ export const desk: TextBag["desk"] = {
       "title": "A.C.E 市场",
       "description": "锦标赛奖励卡片。商店和奖励即将开放。"
     },
-    "heroHonesty": "抢先一览即将推出的锦标赛奖励。商店即将开放;目前不会扣任何费用。",
+    "heroHonesty": "外观物品和会员通过 Paddle 结账出售。外观物品绝不影响游戏。",
     "prizeBanner": "🏆 锦标赛奖励 · 即将推出",
     "notice": "这些展示均为预览,没有现金价值。不会发放或扣费,“查看”按钮也不会发起购买。",
     "items": {

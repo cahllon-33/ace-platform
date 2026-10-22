@@ -18,7 +18,7 @@ export const account: TextBag["account"] = {
     "soon": "Tulossa",
     "sample": "ESIMERKKI · vain muoto, ei oikeaa dataa",
     "lockedTitle": "Pelaajatilastot kuuluvat A.C.E Plussaan ja Premiumiin",
-    "lockedBody": "Tallennettu tilauksesi on Free. Plus (4 $/kk) ja Premium (7 $/kk) avaavat tämän sivun. Tulossa: maksua ei vielä ole.",
+    "lockedBody": "Tallennettu tilauksesi on Free. Plus (4 $/kk) ja Premium (7 $/kk) avaavat tämän sivun. Tilaa hinnastosivulla Paddlen kassalla.",
     "signIn": "Kirjaudu Steamilla nähdäksesi pelaajatilastosi.",
     "plansLink": "Katso tilaukset",
     "rosterNote": "Esimerkkikokoonpanon profiili: näillä pelaajilla ei ole tallennettuja A.C.E-otteluita, joten tilastot eivät näytä lukuja.",
@@ -63,8 +63,8 @@ export const account: TextBag["account"] = {
     },
     "settings": {
       "title": "HALLINTAPANEELIN ASETUKSET",
-      "billingNotLive": "Jokainen tili on Free-paketissa, kunnes maksutoiminto on olemassa.",
-      "cancelReason": "Peruttavaa laskutettua tilausta ei ole. Maksutoimintoa ei ole toteutettu.",
+      "billingNotLive": "Tilaukset ostetaan Paddlen kassalla. Kun maksuja ei ole määritetty, painikkeessa lukee Tulossa pian.",
+      "cancelReason": "Peru Paddle-tilaus kohdasta Hallitse tilausta jäsenyyspaneelissasi.",
       "cancelButton": "Peru tilaus"
     },
     "rankedReason": "Ranked-matchmaking evätään, kunnes vahvistettu huijauksenestointegraatio on olemassa.",

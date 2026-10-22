@@ -8,7 +8,7 @@ export const desk: TextBag["desk"] = {
         "Cartes de récompenses de championnat. La boutique et les récompenses ouvriront bientôt.",
     },
     heroHonesty:
-      "Un premier aperçu des prochaines récompenses de championnat. La boutique ouvrira bientôt ; rien n'est débité aujourd'hui.",
+      "Les cosmétiques et les abonnements sont vendus via le paiement Paddle. Les cosmétiques n’affectent jamais le jeu.",
     prizeBanner: "🏆 RÉCOMPENSES DE CHAMPIONNAT · BIENTÔT",
     notice:
       "Ces vitrines sont des aperçus sans valeur monétaire. Rien n'est livré ni facturé, et le bouton d'inspection ne lance aucun achat.",

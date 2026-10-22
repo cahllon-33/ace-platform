@@ -59,7 +59,7 @@ export const features: TextBag["features"] = {
     "kicker": "Cosmetice · în curând",
     "title": "ARHITECTURA LOOT A.C.E — DROPURI DE ARME",
     "lede": "Finisaje A.C.E originale, sosesc odată cu magazinul. Cosmeticele nu afectează niciodată competiția.",
-    "checkout": "Plată · în curând"
+    "checkout": "Checkout · Paddle"
   },
   "identityPreview": {
     "badge": "Previzualizare — neconfirmat",

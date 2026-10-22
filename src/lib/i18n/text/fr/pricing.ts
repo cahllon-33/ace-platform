@@ -212,7 +212,7 @@ export const pricing: TextBag["pricing"] = {
       },
       "goldEliteSeal": {
         "feature": "Sceau élite et badges spéciaux",
-        "detail": "Premium uniquement, lu depuis le palier enregistré sur le serveur. Cosmétique. Le paiement ne définit pas ce palier."
+        "detail": "Premium uniquement, lu depuis le niveau enregistré sur le serveur. Cosmétique. Le niveau n’est attribué qu’après confirmation du paiement par Paddle."
       }
     },
     "cells": {
@@ -232,14 +232,14 @@ export const pricing: TextBag["pricing"] = {
   "receipt": {
     "plus": {
       "metaTitle": "Reçu Plus",
-      "metaDescription": "La lettre A.C.E Plus affichée sur ce site. Le paiement n'est pas en ligne : rien n'est facturé et aucun e-mail n'est envoyé.",
+      "metaDescription": "La lettre A.C.E Plus affichée sur ce site. Ce n’est pas un reçu ; Paddle envoie le reçu par e-mail.",
       "planName": "A.C.E Plus",
       "nextLabel": "Continuer sur A.C.E",
       "nextBody": "Les pages publiques restent ouvertes. Cette sélection n'ouvre aucune file et ne modifie pas le palier enregistré."
     },
     "premium": {
       "metaTitle": "Reçu Premium",
-      "metaDescription": "La lettre A.C.E Premium affichée sur ce site. Le paiement n'est pas en ligne : rien n'est facturé et aucun e-mail n'est envoyé.",
+      "metaDescription": "La lettre A.C.E Premium affichée sur ce site. Ce n’est pas un reçu ; Paddle envoie le reçu par e-mail.",
       "planName": "A.C.E Premium",
       "nextLabel": "Lire les conditions Premium",
       "nextBody": "Premium comprend l’art de rang Premium, la carte de profil animée, les badges spéciaux et l’ELITE SEAL, plus tout ce qu’inclut Plus. Enregistrer un clan dans Squads est gratuit pour tous les comptes."
@@ -248,7 +248,7 @@ export const pricing: TextBag["pricing"] = {
   "letter": {
     "kicker": "{plan} · {price} par mois",
     "title": "Merci pour votre sélection",
-    "flag": "Cette lettre est affichée sur le site. Aucun e-mail n'a été envoyé. Aucune carte n'a été débitée. Le paiement n'est pas en ligne, et le palier d'abonnement enregistré n'a pas été modifié.",
+    "flag": "Cette lettre est affichée sur le site et n’est pas un reçu. Paddle envoie le reçu de paiement, et ton offre ne change qu’après confirmation du paiement par Paddle.",
     "greeting": "Cher joueur, chère joueuse,",
     "intro": "Merci d'avoir sélectionné {plan}. Cette page tient lieu de reçu. Elle indique le prix affiché, ce que cette sélection inclut aujourd'hui, ce qu'elle n'inclut pas, et l'adresse d'assistance publiée sur ce site.",
     "selected": {

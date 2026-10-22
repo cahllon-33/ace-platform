@@ -40,7 +40,7 @@ export const teams: TextBag["teams"] = {
     "fallback": "Den här disken svarar bara utifrån de skrivna reglerna på sidan: planer, de fem platserna, Steam OpenID och support.",
     "facts": {
       "email": "Inget e-postmeddelande skickas. Plankvitton stannar på den här webbplatsen.",
-      "charge": "Premium kostar $7 per månad. Kommer snart: det finns ingen betalning än, så inget debiteras.",
+      "charge": "Premium kostar 7 $ per månad via Paddles kassa.",
       "board": "En sparad klan är en truppost. Den placeras inte på 100-lagstavlan. Tavlan visar 0 registrerade tills en säsong öppnar.",
       "steam": "Inloggningen använder officiellt Steam OpenID. A.C.E ber aldrig om ett Steam-lösenord. Från den här sidan skickar Steam dig tillbaka hit.",
       "roster": "Plats 1 är den inloggade kaptenen. Plats 2 till 5 måste redan ha A.C.E-konton. Inbjudningar väntar tills varje spelare accepterar.",

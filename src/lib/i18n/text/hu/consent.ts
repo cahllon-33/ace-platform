@@ -47,7 +47,7 @@ export const consent: TextBag["consent"] = {
     "closeLabel": "Sütibeállítások bezárása",
     "close": "Bezárás"
   },
-  "subscriptionDisclosure": "Hamarosan: fizetés még nincs, így előfizetés nem indulhat, semmit nem terhelünk, és semmi nem újul meg. Ha lesz számlázás, havi csomag lesz, amelyet a vezérlőpult beállításaiban mondhatsz le; a már kifizetett hónapot nem térítjük vissza.",
+  "subscriptionDisclosure": "Az előfizetések a Paddle pénztáron keresztül havi csomagként futnak a lemondásig. Bármikor lemondhatod az Előfizetés kezelése alatt; visszatérítés a Visszatérítési szabályzat szerint (14 nap). Amíg a fizetés nincs beállítva, a pénztár gombja Hamarosan feliratot mutat.",
   "planned": {
     "fallbackLabel": "Tervezett művelet",
     "badge": "Tervezett — nem elérhető"

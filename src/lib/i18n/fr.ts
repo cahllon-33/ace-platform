@@ -33,10 +33,10 @@ export const FR: MessageBag = {
  "Vos statistiques apparaîtront ici après vos premiers matchs enregistrés.",
  statsLive: "Victoires et défaites du compte A.C.E. Le K/D n'est pas encore enregistré.",
  membership: "ABONNEMENT",
- membershipLede: "Gratuit $0. Plus $4/mois. Premium $7/mois. Les forfaits payants n'achètent jamais de classement, d'adversaires plus faciles ni de priorité dans la file. La facturation ouvrira bientôt.",
+ membershipLede: "Free 0 $. Plus 4 $/mois. Premium 7 $/mois. Les offres payantes n’achètent jamais de rating, d’adversaires plus faciles ni de priorité de file. Le paiement passe par Paddle.",
  graphite: "GRAPHITE",
  stayFree: "Rester sur Gratuit",
- membershipDisclosure: "Les prix sont fixes : Gratuit $0, Plus $4/mois, Premium $7/mois. La facturation ouvrira bientôt ; rien n'est débité aujourd'hui. Les forfaits payants n'achètent jamais d'avantage compétitif.",
+ membershipDisclosure: "Prix fixes : Free 0 $, Plus 4 $/mois, Premium 7 $/mois. Le paiement passe par Paddle ; tant que les paiements ne sont pas configurés, le bouton affiche Bientôt. Les offres payantes n’achètent jamais d’avantage compétitif.",
  integrity: "INTÉGRITÉ",
  placementCount: "{complete} / 10 matchs de placement joués",
  matchLogged: "Match {n} enregistré",
@@ -87,7 +87,7 @@ export const FR: MessageBag = {
  supportKicker: "ASSISTANCE A.C.E · CENTRE D'AIDE",
  supportTitle: "Centre d'assistance technique",
  supportLede:
- "Centre d'aide pour l'installation, la calibration et l'abonnement. L'anti-triche, les files classées et la facturation arrivent bientôt.",
+ "Centre d’aide pour l’installation, la calibration et les questions d’abonnement. L’anti-triche et les files classées arrivent bientôt.",
  supportCat1Title: "Configuration de l'anti-triche noyau",
  supportCat1Body:
  "Les invites d'installation de pilotes, la conformité matérielle et les réglages de télémétrie du démarrage sécurisé sont documentés ici comme future politique noyau. A.C.E ne livre pas de client anti-triche fonctionnel, n'installe pas de pilotes et ne collecte pas de données de démarrage sécurisé ni de HWID sur ce site.",
@@ -96,7 +96,7 @@ export const FR: MessageBag = {
  "Dix matchs de placement, la vitesse de calcul des divisions et le recalibrage de cote de saison constituent le récit de calibrage prévu. TROUVER UN MATCH classé reste fermé en cas d'échec jusqu'à ce qu'une voie anti-triche vérifiée existe. Les chiffres de cette page ne sont pas des résultats de matchs en direct.",
  supportCat3Title: "Abonnement et facturation",
  supportCat3Body:
- "Les prix affichés restent Plus $4/mois et Premium $7/mois. L'annulation en un clic est prévue pour un tableau de bord futur. Le paiement n'est pas implémenté. Les remboursements de mois partiel suivent les conditions publiées dès que la facturation existe — aucun débit n'a lieu aujourd'hui.",
+ "Plus coûte 4 $/mois et Premium 7 $/mois, facturés par Paddle. Résilie à tout moment via Gérer l’abonnement ; remboursements selon la Politique de remboursement (14 jours).",
  supportTicket: "ENVOYER UN TICKET D'ASSISTANCE >",
  supportTicketTitle: "Enveloppe de revue administrative",
  supportTicketBody:
@@ -134,7 +134,7 @@ export const FR: MessageBag = {
  shopLede:
  "Équipez votre inventaire de skins de haut niveau vérifiés, d'éléments de profil personnalisés et d'outils d'accès à la ligue.",
  shopNote:
- "Abonnement : Plus $4/mois et Premium $7/mois. Les cosmétiques n'achètent jamais de classement, d'adversaires plus faciles ni de priorité dans la file. Le paiement ouvrira bientôt.",
+ "Abonnement : Plus 4 $/mois et Premium 7 $/mois. Les cosmétiques n’achètent jamais de rating, d’adversaires plus faciles ni de priorité de file. Le paiement passe par Paddle.",
  shopTabSkins: "SKINS D'ARMES",
  shopTabCosmetics: "COSMÉTIQUES DE PROFIL",
  shopTabAccess: "ACCÈS LIGUE",
@@ -144,7 +144,7 @@ export const FR: MessageBag = {
  shopInspectKicker: "Aperçu de l'objet · bientôt",
  shopInspectTitle: "Inspecter l'actif",
  shopInspectCopy:
- "La boutique ouvrira bientôt. Rien ne peut encore être acheté ni débité.",
+ "Les objets s’achètent via le paiement Paddle. Tant que les paiements ne sont pas configurés, le bouton affiche Bientôt.",
  shopItemIndex: "OBJET {n}",
  shopTabsAria: "Catégories du marché",
  squadTabsAria: "Catégories de l'espace d'équipe",

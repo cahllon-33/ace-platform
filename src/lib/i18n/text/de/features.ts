@@ -59,7 +59,7 @@ export const features: TextBag["features"] = {
     "kicker": "Kosmetik · demnächst",
     "title": "A.C.E-BEUTEARCHITEKTUR — WAFFENFUNDE",
     "lede": "Originale A.C.E-Finishes, die mit dem Shop kommen. Kosmetik beeinflusst nie den Wettkampf.",
-    "checkout": "Checkout · demnächst"
+    "checkout": "Checkout · Paddle"
   },
   "identityPreview": {
     "badge": "Vorschau — nicht bestätigt",

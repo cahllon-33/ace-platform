@@ -8,7 +8,7 @@ export const desk: TextBag["desk"] = {
         "Karty šampionátových odměn. Obchod a odměny se brzy otevřou.",
     },
     heroHonesty:
-      "První pohled na připravované šampionátové odměny. Obchod se brzy otevře; dnes se nic neúčtuje.",
+      "Kosmetika a členství se prodávají přes pokladnu Paddle. Kosmetika nikdy neovlivňuje hru.",
     prizeBanner: "🏆 ŠAMPIONÁTOVÉ ODMĚNY · JIŽ BRZY",
     notice:
       "Tyto ukázky jsou náhledy bez peněžní hodnoty. Nic se nedoručuje ani neúčtuje a tlačítko prohlédnutí nespouští nákup.",

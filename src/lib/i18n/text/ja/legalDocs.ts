@@ -21,7 +21,7 @@ export const legalDocs: TextBag["legalDocs"] = {
   "terms": {
     "meta": {
       "title": "利用規約",
-      "description": "Counter-Strike 2 競技サイト A.C.E の利用規約。ランク戦、決済、アンチチートはまだ稼働していません。"
+      "description": "以前のA.C.E規約の概要です。現行の利用規約は/termsにあります。"
     },
     "kicker": "ACE-LEGAL / 利用規約",
     "title": "利用規約",
@@ -42,13 +42,13 @@ export const legalDocs: TextBag["legalDocs"] = {
       "notActive": {
         "title": "3. 本サイトが提供しないもの",
         "paragraphs": [
-          "ランクマッチング、稼働中の CS2 ゲームサーバー、機能する AI アンチチート、課金、賞品は稼働していません。ロビーのクロックや整合性パネルは、ページに別途記載がない限りプレビューです。"
+          "この概要は、/termsの利用規約、/privacyのプライバシーポリシー、/refundsの返金ポリシーに置き換えられました。"
         ]
       },
       "subscriptions": {
         "title": "プラン、請求、解約",
         "paragraphs": [
-          "Freeは$0、Plusは月額$4、Premiumは月額$7です。決済機能はまだないため、現在は何も購入できず、請求も発生しません。請求開始後は、プランは毎月更新されます。ダッシュボードの設定からいつでも解約でき、支払済みの月末まで利用できます。月の途中の分は、お住まいの国の法律で求められる場合を除き返金されません。どのプランもRating Pointsの付与、レーティングの上昇、マッチングの変更は行いません。Premiumの優先サポートは、開始後、Premiumの問い合わせを優先的に対応することを意味し、回答時間は保証しません。"
+          "Freeは$0、Plusは月額$4、Premiumは月額$7です。決済はMerchant of RecordであるPaddleで行われます。決済が未設定の間、ボタンには「近日公開」と表示されます。請求・解約・返金は/termsと/refundsに従います。どのプランもレーティングポイントを加えたりマッチングを変えたりしません。"
         ]
       },
       "antiCheat": {
@@ -114,7 +114,7 @@ export const legalDocs: TextBag["legalDocs"] = {
       "title": "決して収集しないもの",
       "items": [
         "Steam のパスワード。サインインは Steam OpenID / Steam 公式のフローのみです。",
-        "クレジットカード番号。決済は実装されていません。",
+        "支払いカード番号。支払い情報はPaddleが扱い、A.C.Eが見ることはありません。",
         "カーネルのテレメトリ。本サイトにアンチチート・クライアントは含まれていません。"
       ]
     },

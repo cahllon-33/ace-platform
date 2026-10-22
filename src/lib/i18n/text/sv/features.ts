@@ -59,7 +59,7 @@ export const features: TextBag["features"] = {
     "kicker": "Kosmetika · kommer snart",
     "title": "A.C.E. BELÖNINGSARKITEKTUR — VAPENDROPPAR",
     "lede": "Original-finishar från A.C.E som kommer med butiken. Kosmetika påverkar aldrig tävlingen.",
-    "checkout": "Betalning · kommer snart"
+    "checkout": "Kassa · Paddle"
   },
   "identityPreview": {
     "badge": "Förhandsvisning — ej bekräftad",

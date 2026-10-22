@@ -40,7 +40,7 @@ export const teams: TextBag["teams"] = {
     "fallback": "Este mostrador solo responde con las reglas escritas en esta página: los planes, los cinco puestos, Steam OpenID y el soporte.",
     "facts": {
       "email": "No se envía ningún correo. Los recibos de plan se quedan en este sitio.",
-      "charge": "Premium cuesta $7 al mes. Próximamente: aún no hay pago, así que no se cobra nada.",
+      "charge": "Premium cuesta 7 $ al mes con el checkout de Paddle.",
       "board": "Un clan guardado es un registro de plantilla. No se coloca en el cuadro de 100 equipos. Ese cuadro sigue mostrando 0 inscritos hasta que se abra una temporada.",
       "steam": "El inicio de sesión usa el Steam OpenID oficial. A.C.E nunca pide una contraseña de Steam. Desde esta página, Steam te devuelve aquí.",
       "roster": "La plaza 1 es el capitán con sesión iniciada. Las plazas 2 a 5 ya deben tener cuentas A.C.E. Las invitaciones siguen pendientes hasta que cada jugador acepte.",

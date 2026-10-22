@@ -212,7 +212,7 @@ export const pricing: TextBag["pricing"] = {
       },
       "goldEliteSeal": {
         "feature": "Pieczęć elity i odznaki specjalne",
-        "detail": "Tylko Premium, odczytywane z poziomu zapisanego na serwerze. Kosmetyczne. Płatność nie ustawia tego poziomu."
+        "detail": "Tylko Premium, odczytywane z poziomu zapisanego na serwerze. Kosmetyczne. Poziom ustawia się dopiero po potwierdzeniu płatności przez Paddle."
       }
     },
     "cells": {
@@ -232,14 +232,14 @@ export const pricing: TextBag["pricing"] = {
   "receipt": {
     "plus": {
       "metaTitle": "Potwierdzenie Plus",
-      "metaDescription": "List A.C.E Plus wyświetlany na tej stronie. Kasa nie działa, więc nic nie jest pobierane i nie jest wysyłany żaden e-mail.",
+      "metaDescription": "List A.C.E Plus wyświetlany na tej stronie. To nie jest paragon; Paddle wysyła potwierdzenie e-mailem.",
       "planName": "A.C.E Plus",
       "nextLabel": "Kontynuuj w A.C.E",
       "nextBody": "Strony publiczne pozostają otwarte. Ten wybór nie otwiera kolejki i nie zmienia zapisanego poziomu."
     },
     "premium": {
       "metaTitle": "Potwierdzenie Premium",
-      "metaDescription": "List A.C.E Premium wyświetlany na tej stronie. Kasa nie działa, więc nic nie jest pobierane i nie jest wysyłany żaden e-mail.",
+      "metaDescription": "List A.C.E Premium wyświetlany na tej stronie. To nie jest paragon; Paddle wysyła potwierdzenie e-mailem.",
       "planName": "A.C.E Premium",
       "nextLabel": "Przeczytaj warunki Premium",
       "nextBody": "Premium to grafika rang Premium, animowana karta profilu, specjalne odznaki i ELITE SEAL oraz wszystko z Plus. Zapisanie klanu w Squads jest bezpłatne dla każdego konta."
@@ -248,7 +248,7 @@ export const pricing: TextBag["pricing"] = {
   "letter": {
     "kicker": "{plan} · {price} miesięcznie",
     "title": "Dziękujemy za Twój wybór",
-    "flag": "Ten list jest wyświetlany na stronie. Nie wysłano żadnego e-maila. Nie obciążono żadnej karty. Kasa nie działa, a zapisany poziom członkostwa nie został zmieniony.",
+    "flag": "Ten list jest wyświetlany na stronie i nie jest paragonem. Potwierdzenie płatności wysyła Paddle, a plan zmienia się dopiero po potwierdzeniu płatności przez Paddle.",
     "greeting": "Drogi graczu,",
     "intro": "Dziękujemy za wybranie planu {plan}. Ta strona jest potwierdzeniem. Zapisuje wyświetlaną cenę, co ten wybór obejmuje dziś, czego nie obejmuje, oraz adres pomocy opublikowany na tej stronie.",
     "selected": {

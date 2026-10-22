@@ -34,11 +34,11 @@ export const FI: MessageBag = {
  statsLive: "Voitot ja tappiot tulevat A.C.E-tililtä. K/D:tä ei vielä tallenneta.",
  membership: "JÄSENYYS",
  membershipLede:
-  "Ilmainen $0. Plus $4/kk. Premium $7/kk. Maksulliset tasot eivät koskaan osta luokitusta, helpompia vastustajia tai jonoetuoikeutta. Maksaminen avautuu pian.",
+  "Free 0 $. Plus 4 $/kk. Premium 7 $/kk. Maksulliset tilaukset eivät koskaan osta reittausta, helpompia vastustajia tai jonoetuutta. Maksu tapahtuu Paddlen kautta.",
  graphite: "GRAFIITTI",
  stayFree: "Pysy ilmaisessa",
  membershipDisclosure:
-  "Hinnat ovat kiinteät: Ilmainen $0, Plus $4/kk, Premium $7/kk. Maksaminen avautuu pian; tänään mitään ei veloiteta. Maksulliset tasot eivät koskaan osta kilpailuetua.",
+  "Hinnat ovat kiinteät: Free 0 $, Plus 4 $/kk, Premium 7 $/kk. Maksu tapahtuu Paddlen kautta; kun maksuja ei ole määritetty, painikkeessa lukee Tulossa pian. Maksulliset tilaukset eivät koskaan osta kilpailuetua.",
  integrity: "EHEYS",
  placementCount: "{complete} / 10 sijoittamisottelua pelattu",
  matchLogged: "Ottelu {n} kirjattu",
@@ -89,7 +89,7 @@ export const FI: MessageBag = {
  supportKicker: "A.C.E TUKI · OHJEKESKUS",
  supportTitle: "Teknisen tuen keskus",
  supportLede:
-  "Tietokeskus asennukseen, kalibrointiin ja jäsenyyteen. Huijauksenesto, rankatut jonot ja maksaminen ovat tulossa pian.",
+  "Tietokeskus asennukseen, kalibrointiin ja jäsenyyskysymyksiin. Anti-cheat ja rankatut jonot ovat tulossa pian.",
  supportCat1Title: "Ytimen huijaukseneston asennus",
  supportCat1Body:
   "Ajurien asennuskehotteet, laitteiston vaatimustenmukaisuus ja Secure Boot -telemetrian säädöt on dokumentoitu täällä tulevana ydinpolitiikkana. A.C.E ei toimita toimivaa huijauksenestoasiakasohjelmaa, ei asenna ajureita eikä kerää Secure Boot- tai HWID-tietoja tällä sivustolla.",
@@ -98,7 +98,7 @@ export const FI: MessageBag = {
   "Kymmenen sijoittamisottelua, divisioonan laskentanopeus ja kauden arvosanan uudelleenkalibrointi ovat suunniteltu kalibrointikertomus. Sijoitusotteluiden ETSI OTTELU pysyy varmuuden vuoksi suljettuna, kunnes varmennettu huijauksenestopolku on olemassa. Tämän sivun luvut eivät ole live-ottelutuloksia.",
  supportCat3Title: "Tilauksen ja laskutuksen tuki",
  supportCat3Body:
-  "Näytetyt hinnat pysyvät Plus $4/kk ja Premium $7/kk. Yhden napsautuksen peruutus on määritelty tulevaan hallintapaneeliin. Kassaa ei ole toteutettu. Osakuukauden hyvitykset noudattavat julkaistuja ehtoja, kun laskutus on olemassa. Veloituksia ei tehdä tänään.",
+  "Plus maksaa 4 $/kk ja Premium 7 $/kk, laskutus Paddlen kautta. Peru milloin tahansa kohdassa Hallitse tilausta; palautukset palautuskäytännön mukaan (14 päivää).",
  supportTicket: "LÄHETÄ TUKITIKETTI >",
  supportTicketTitle: "Ylläpidon tarkistuskääre",
  supportTicketBody:
@@ -136,7 +136,7 @@ export const FI: MessageBag = {
  shopLede:
   "Esikatsele asekortteja, profiilikehyksiä ja liigapääsyn tunnisteita. Mikään näistä ei ole toimitettu esine.",
  shopNote:
-  "Jäsenyys: Plus $4/kk ja Premium $7/kk. Kosmeettiset tuotteet eivät koskaan osta luokitusta, helpompia vastustajia tai jonoetuoikeutta. Kassa avautuu pian.",
+  "Jäsenyys: Plus 4 $/kk ja Premium 7 $/kk. Kosmetiikka ei koskaan osta reittausta, helpompia vastustajia tai jonoetuutta. Maksu tapahtuu Paddlen kautta.",
  shopTabSkins: "ASESKINIT",
  shopTabCosmetics: "PROFIILIN KOSMETIIKKA",
  shopTabAccess: "LIIGAPÄÄSY",
@@ -146,7 +146,7 @@ export const FI: MessageBag = {
  shopInspectKicker: "Tuotteen esikatselu · tulossa pian",
  shopInspectTitle: "Tarkasta resurssi",
  shopInspectCopy:
-  "Kauppa avautuu pian. Mitään ei voi vielä ostaa tai veloittaa.",
+  "Esineet ostetaan Paddlen kassalla. Kun maksuja ei ole määritetty, painikkeessa lukee Tulossa pian.",
  shopItemIndex: "ESINE {n}",
  shopTabsAria: "Markkinapaikan kategoriat",
  squadTabsAria: "Joukkueen työtilan kategoriat",

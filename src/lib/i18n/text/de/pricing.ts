@@ -212,7 +212,7 @@ export const pricing: TextBag["pricing"] = {
       },
       "goldEliteSeal": {
         "feature": "Elite-Siegel & Sonderabzeichen",
-        "detail": "Nur Premium, ausgelesen aus der auf dem Server gespeicherten Stufe. Kosmetisch. Der Checkout setzt diese Stufe nicht."
+        "detail": "Nur Premium, gelesen aus der gespeicherten Stufe auf dem Server. Kosmetisch. Die Stufe wird erst gesetzt, nachdem Paddle die Zahlung bestätigt."
       }
     },
     "cells": {
@@ -232,14 +232,14 @@ export const pricing: TextBag["pricing"] = {
   "receipt": {
     "plus": {
       "metaTitle": "Plus-Quittung",
-      "metaDescription": "Der A.C.E-Plus-Brief, der auf dieser Website angezeigt wird. Die Kasse ist nicht in Betrieb, daher wird nichts berechnet und keine E-Mail gesendet.",
+      "metaDescription": "Der A.C.E Plus-Brief auf dieser Website. Er ist keine Quittung; Paddle sendet die Quittung per E-Mail.",
       "planName": "A.C.E Plus",
       "nextLabel": "Weiter auf A.C.E",
       "nextBody": "Die öffentlichen Seiten bleiben offen. Diese Auswahl öffnet keine Warteschlange und ändert die gespeicherte Stufe nicht."
     },
     "premium": {
       "metaTitle": "Premium-Quittung",
-      "metaDescription": "Der A.C.E-Premium-Brief, der auf dieser Website angezeigt wird. Die Kasse ist nicht in Betrieb, daher wird nichts berechnet und keine E-Mail gesendet.",
+      "metaDescription": "Der A.C.E Premium-Brief auf dieser Website. Er ist keine Quittung; Paddle sendet die Quittung per E-Mail.",
       "planName": "A.C.E Premium",
       "nextLabel": "Premium-Bedingungen lesen",
       "nextBody": "Premium umfasst Premium-Rang-Art, die animierte Profilkarte, Sonderabzeichen und das ELITE SEAL sowie alles aus Plus. Einen Clan unter Squads zu speichern ist für jedes Konto kostenlos."
@@ -248,7 +248,7 @@ export const pricing: TextBag["pricing"] = {
   "letter": {
     "kicker": "{plan} · {price} pro Monat",
     "title": "Danke für deine Auswahl",
-    "flag": "Dieser Brief wird auf der Website angezeigt. Es wurde keine E-Mail gesendet. Es wurde keine Karte belastet. Die Kasse ist nicht in Betrieb, und die gespeicherte Mitgliedsstufe wurde nicht geändert.",
+    "flag": "Dieser Brief wird auf der Website angezeigt und ist keine Quittung. Paddle sendet die Zahlungsquittung, und dein Plan ändert sich erst, wenn Paddle die Zahlung bestätigt.",
     "greeting": "Liebe Spielerin, lieber Spieler,",
     "intro": "danke, dass du {plan} gewählt hast. Diese Seite ist die Quittung. Sie hält den Anzeigepreis fest, was diese Auswahl heute enthält, was sie nicht enthält, und die auf dieser Website veröffentlichte Hilfeadresse.",
     "selected": {

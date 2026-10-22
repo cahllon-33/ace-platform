@@ -47,7 +47,7 @@ export const consent: TextBag["consent"] = {
     "closeLabel": "Zatvori postavke kolačića",
     "close": "Zatvori"
   },
-  "subscriptionDisclosure": "Uskoro: plaćanje još ne postoji, pa nijedna pretplata ne može početi, ništa se ne naplaćuje i ništa se ne obnavlja. Kad naplata bude postojala, bit će to mjesečni plan koji otkazuješ u postavkama nadzorne ploče; već plaćeni mjesec ne vraća se.",
+  "subscriptionDisclosure": "Pretplate idu putem Paddle naplate kao mjesečni plan dok ih ne otkažeš. Otkaži bilo kada u Upravljanju pretplatom; povrati prema Politici povrata (14 dana). Dok plaćanja nisu postavljena, gumb za naplatu prikazuje Uskoro.",
   "planned": {
     "fallbackLabel": "Planirana radnja",
     "badge": "Planirano — nije dostupno"

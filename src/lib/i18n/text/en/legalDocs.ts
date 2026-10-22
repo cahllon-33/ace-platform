@@ -21,7 +21,7 @@
     meta: {
       title: "Terms of Service",
       description:
-        "A.C.E website Terms of Service for this Counter-Strike 2 competition site. Ranked, payments, and Anti-Cheat are not live.",
+        "Earlier A.C.E terms summary. The current Terms of Service are at /terms.",
     },
     kicker: "ACE-LEGAL / TERMS OF SERVICE",
     title: "Terms of Service",
@@ -42,13 +42,13 @@
       notActive: {
         title: "3. What this website is not",
         paragraphs: [
-          "Ranked matchmaking, live CS2 game servers, working AI Anti-Cheat, billing, and prizes are not active. Lobby clocks and integrity panels are previews unless a page states otherwise.",
+          "This summary is superseded by the Terms of Service at /terms, the Privacy Policy at /privacy and the Refund Policy at /refunds.",
         ],
       },
       subscriptions: {
         title: "Plans, billing and cancellation",
         paragraphs: [
-          "Free costs $0, Plus $4 per month and Premium $7 per month. Checkout does not exist yet, so nothing can be bought or charged today. When billing opens, Plans renew monthly; you can cancel at any time in dashboard settings and keep access until the end of the paid month; a partial month is not refunded unless the law of your country requires it. No Plan adds Rating Points, boosts a rating or changes matchmaking. Priority support for Premium, once launched, means Premium requests are handled first; it has no guaranteed response time.",
+          "Free costs $0, Plus $4 per month and Premium $7 per month. Checkout runs through Paddle as Merchant of Record; while payments are not configured, the button shows Coming soon. Billing, cancellation and refunds are governed by /terms and /refunds. No Plan adds Rating Points or changes matchmaking.",
         ],
       },
       antiCheat: {
@@ -117,7 +117,7 @@
       title: "What we never collect",
       items: [
         "Steam passwords. Sign-in is Steam OpenID / Steam’s official flow only.",
-        "Payment card numbers. Checkout is not implemented.",
+        "Payment card numbers. Paddle handles payment details; A.C.E never sees them.",
         "Kernel telemetry. No Anti-Cheat client ships with this website.",
       ],
     },

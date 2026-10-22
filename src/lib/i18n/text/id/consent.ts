@@ -47,7 +47,7 @@ export const consent: TextBag["consent"] = {
     "closeLabel": "Tutup pengaturan cookie",
     "close": "Tutup"
   },
-  "subscriptionDisclosure": "Segera hadir: pembayaran belum ada, jadi tidak ada langganan yang dapat dimulai, tidak ada yang ditagih, dan tidak ada yang diperpanjang. Saat penagihan tersedia, itu akan menjadi paket bulanan yang dapat Anda batalkan di pengaturan dasbor; bulan yang sudah dibayar tidak dikembalikan.",
+  "subscriptionDisclosure": "Langganan berjalan melalui checkout Paddle sebagai paket bulanan sampai kamu membatalkan. Batalkan kapan saja di Kelola langganan; refund mengikuti Kebijakan Refund (14 hari). Selama pembayaran belum dikonfigurasi, tombol checkout menampilkan Segera hadir.",
   "planned": {
     "fallbackLabel": "Tindakan terencana",
     "badge": "Terencana — tidak tersedia"

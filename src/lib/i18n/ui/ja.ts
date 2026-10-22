@@ -245,7 +245,8 @@ export const UI_JA: Ui = {
       "inDevelopment": "開発中",
       "comingSoon": "近日公開",
       "preparing": "準備中",
-      "billingOff": "未稼働・支払いは発生しません"
+      "billingOff": "未設定 · 決済は「近日公開」と表示",
+      "billingOn": "稼働中 · Paddle決済"
     },
     "card": {
       "matches": "試合数",
@@ -325,7 +326,7 @@ export const UI_JA: Ui = {
       "ranksBody": "バッジの色はティアごとに固定され、ランクは常に保存されたRPから計算されます。",
       "ranksCta": "すべてのランクを見る",
       "plansTitle": "勝利を買えないプラン",
-      "plansBody": "有料プランは見た目と利便性のみ。決済はまだ開始していないため、現在は全員がFreeです。",
+      "plansBody": "有料プランは見た目と利便性のみです。決済はPaddleで行われ、未設定の間はボタンに「近日公開」と表示されます。",
       "plansCta": "プランを比較",
       "free": "無料",
       "perMonth": "/月",

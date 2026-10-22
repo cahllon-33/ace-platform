@@ -18,7 +18,7 @@ export const account: TextBag["account"] = {
     "soon": "Wkrótce",
     "sample": "PRZYKŁAD · tylko kształt, nie prawdziwe dane",
     "lockedTitle": "Statystyki gracza są częścią A.C.E Plus i Premium",
-    "lockedBody": "Twój zapisany plan to Free. Plus (4 $/mies.) i Premium (7 $/mies.) odblokowują tę stronę. Wkrótce: płatności jeszcze nie ma.",
+    "lockedBody": "Twój zapisany plan to Free. Plus (4 $/mies.) i Premium (7 $/mies.) odblokowują tę stronę. Zasubskrybuj na stronie cennika przez kasę Paddle.",
     "signIn": "Zaloguj się przez Steam, aby zobaczyć swoje statystyki.",
     "plansLink": "Zobacz plany",
     "rosterNote": "Przykładowy profil składu: ci gracze nie mają zapisanych meczów A.C.E, więc statystyki nie pokazują liczb.",
@@ -63,8 +63,8 @@ export const account: TextBag["account"] = {
     },
     "settings": {
       "title": "USTAWIENIA PROFILU PANELU",
-      "billingNotLive": "Każde konto jest na Free, dopóki nie będzie płatności.",
-      "cancelReason": "Nie ma opłacanej subskrypcji do anulowania. Kasa nie została zaimplementowana.",
+      "billingNotLive": "Plany kupuje się przez kasę Paddle. Dopóki płatności nie są skonfigurowane, przycisk pokazuje Wkrótce.",
+      "cancelReason": "Anuluj subskrypcję Paddle w Zarządzaj subskrypcją w panelu członkostwa.",
       "cancelButton": "Anuluj subskrypcję"
     },
     "rankedReason": "Dobieranie rankingowe jest odmawiane, dopóki nie powstanie zweryfikowana integracja antycheatu.",

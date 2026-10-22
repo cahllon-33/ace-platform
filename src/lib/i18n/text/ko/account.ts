@@ -18,7 +18,7 @@ export const account: TextBag["account"] = {
     "soon": "곧 제공",
     "sample": "샘플 · 형태만, 실제 데이터 아님",
     "lockedTitle": "플레이어 통계는 A.C.E Plus와 Premium에 포함됩니다",
-    "lockedBody": "저장된 플랜은 Free입니다. Plus(월 $4)와 Premium(월 $7) 모두 이 페이지를 엽니다. 곧 제공: 아직 결제가 없습니다.",
+    "lockedBody": "저장된 플랜은 Free입니다. Plus(월 $4)와 Premium(월 $7) 모두 이 페이지를 엽니다. 요금 페이지에서 Paddle 결제로 구독하세요.",
     "signIn": "플레이어 통계를 보려면 Steam으로 로그인하세요.",
     "plansLink": "플랜 보기",
     "rosterNote": "예시 로스터 프로필: 이 선수들은 기록된 A.C.E 경기가 없어 통계에 숫자가 표시되지 않습니다.",
@@ -63,8 +63,8 @@ export const account: TextBag["account"] = {
     },
     "settings": {
       "title": "대시보드 설정 프로필",
-      "billingNotLive": "결제가 생기기 전까지 모든 계정은 Free입니다.",
-      "cancelReason": "해지할 유료 구독이 없습니다. 결제는 구현되어 있지 않습니다.",
+      "billingNotLive": "플랜은 Paddle 결제로 구매합니다. 결제가 설정되지 않은 동안 버튼에는 '곧 제공'이 표시됩니다.",
+      "cancelReason": "Paddle 구독은 멤버십 패널의 구독 관리에서 해지하세요.",
       "cancelButton": "구독 해지"
     },
     "rankedReason": "검증된 안티치트 연동이 생기기 전까지 랭크 매치메이킹은 거부됩니다.",

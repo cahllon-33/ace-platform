@@ -23,7 +23,7 @@ export const legalDocs: TextBag["legalDocs"] = {
     meta: {
       title: "Nutzungsbedingungen",
       description:
-        "Nutzungsbedingungen der A.C.E-Website für diese Counter-Strike 2-Wettkampfseite. Ranglistenspiele, Zahlungen und Anti-Cheat sind nicht in Betrieb.",
+        "Frühere Zusammenfassung der A.C.E-Bedingungen. Die aktuellen Nutzungsbedingungen stehen unter /terms.",
     },
     kicker: "ACE-RECHTLICHES / NUTZUNGSBEDINGUNGEN",
     title: "Nutzungsbedingungen",
@@ -44,13 +44,13 @@ export const legalDocs: TextBag["legalDocs"] = {
       notActive: {
         title: "3. Was diese Website nicht ist",
         paragraphs: [
-          "Ranglisten-Matchmaking, laufende CS2-Gameserver, ein funktionierender AI Anti-Cheat, Abrechnung und Preise sind nicht aktiv. Lobby-Uhren und Integritätspanels sind Vorschauen, sofern eine Seite nichts anderes angibt.",
+          "Diese Zusammenfassung wird durch die Nutzungsbedingungen unter /terms, die Datenschutzerklärung unter /privacy und die Erstattungsrichtlinie unter /refunds ersetzt.",
         ],
       },
       subscriptions: {
         title: "Pläne, Abrechnung und Kündigung",
         paragraphs: [
-          "Free kostet $0, Plus $4 pro Monat und Premium $7 pro Monat. Einen Checkout gibt es noch nicht, daher kann heute nichts gekauft oder berechnet werden. Sobald die Abrechnung startet, verlängern sich Pläne monatlich; du kannst jederzeit in den Dashboard-Einstellungen kündigen und behältst den Zugang bis zum Ende des bezahlten Monats; ein angebrochener Monat wird nicht erstattet, sofern das Recht deines Landes keine Erstattung vorschreibt. Kein Plan fügt Rating Points hinzu, verbessert ein Rating oder ändert das Matchmaking. Priorisierter Support für Premium bedeutet nach dem Start, dass Premium-Anfragen zuerst bearbeitet werden; eine garantierte Antwortzeit gibt es nicht.",
+          "Free kostet 0 $, Plus 4 $ pro Monat und Premium 7 $ pro Monat. Der Checkout läuft über Paddle als Merchant of Record; solange Zahlungen nicht eingerichtet sind, zeigt der Button „Demnächst“. Abrechnung, Kündigung und Erstattungen regeln /terms und /refunds. Kein Plan fügt Ratingpunkte hinzu oder ändert das Matchmaking.",
         ],
       },
       antiCheat: {
@@ -119,7 +119,7 @@ export const legalDocs: TextBag["legalDocs"] = {
       title: "Was wir niemals erheben",
       items: [
         "Steam-Passwörter. Die Anmeldung erfolgt ausschließlich über Steam OpenID / den offiziellen Ablauf von Steam.",
-        "Zahlungskartennummern. Eine Kasse ist nicht umgesetzt.",
+        "Kartennummern. Zahlungsdaten verarbeitet Paddle; A.C.E sieht sie nie.",
         "Kernel-Telemetrie. Mit dieser Website wird kein Anti-Cheat-Client ausgeliefert.",
       ],
     },

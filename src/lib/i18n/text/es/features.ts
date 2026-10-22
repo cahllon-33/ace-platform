@@ -59,7 +59,7 @@ export const features: TextBag["features"] = {
     "kicker": "Cosméticos · próximamente",
     "title": "ARQUITECTURA DE BOTÍN A.C.E — BOTINES DE ARMAS",
     "lede": "Acabados originales de A.C.E que llegarán con la tienda. Los cosméticos nunca afectan a la competición.",
-    "checkout": "Pago · próximamente"
+    "checkout": "Pago · Paddle"
   },
   "identityPreview": {
     "badge": "Vista previa: no confirmado",

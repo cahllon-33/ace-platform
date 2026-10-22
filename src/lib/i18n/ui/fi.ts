@@ -245,7 +245,8 @@ export const UI_FI: Ui = {
       "inDevelopment": "Kehityksessä",
       "comingSoon": "Tulossa pian",
       "preparing": "Valmisteilla",
-      "billingOff": "Ei käytössä · maksuja ei peritä"
+      "billingOff": "Ei määritetty · kassa näyttää Tulossa pian",
+      "billingOn": "Käytössä · Paddle-kassa"
     },
     "card": {
       "matches": "Ottelut",
@@ -325,7 +326,7 @@ export const UI_FI: Ui = {
       "ranksBody": "Merkkien värit ovat kiinteät tasoittain, ja rankisi lasketaan aina tallennetusta RP:stä.",
       "ranksCta": "Katso kaikki rankit",
       "plansTitle": "Tilaukset, jotka eivät osta voittoja",
-      "plansBody": "Maksulliset tilaukset ovat vain kosmeettisia ja mukavuutta. Maksaminen ei ole vielä käytössä, joten tänään kaikilla on Free.",
+      "plansBody": "Maksulliset tilaukset ovat vain kosmetiikkaa ja mukavuutta. Maksu tapahtuu Paddlen kautta; kun maksuja ei ole määritetty, painikkeessa lukee Tulossa pian.",
       "plansCta": "Vertaa tilauksia",
       "free": "Ilmainen",
       "perMonth": "/kk",

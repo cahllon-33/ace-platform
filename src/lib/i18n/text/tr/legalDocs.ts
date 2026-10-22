@@ -21,7 +21,7 @@ export const legalDocs: TextBag["legalDocs"] = {
   "terms": {
     "meta": {
       "title": "Hizmet Koşulları",
-      "description": "Bu Counter-Strike 2 rekabet sitesi için A.C.E. Hizmet Koşulları. Dereceli, ödemeler ve hile karşıtı sistem aktif değildir."
+      "description": "A.C.E şartlarının önceki özeti. Güncel Hizmet Şartları /terms adresinde."
     },
     "kicker": "ACE-LEGAL / HİZMET KOŞULLARI",
     "title": "Hizmet Koşulları",
@@ -42,13 +42,13 @@ export const legalDocs: TextBag["legalDocs"] = {
       "notActive": {
         "title": "3. Bu sitenin ne olmadığı",
         "paragraphs": [
-          "Dereceli eşleştirme, canlı CS2 oyun sunucuları, çalışan yapay zekâ hile karşıtı sistemi, ödeme ve ödüller aktif değildir. Lobi saatleri ve bütünlük panelleri, sayfada aksi belirtilmedikçe önizlemedir."
+          "Bu özetin yerini /terms adresindeki Hizmet Şartları, /privacy adresindeki Gizlilik Politikası ve /refunds adresindeki İade Politikası almıştır."
         ]
       },
       "subscriptions": {
         "title": "Planlar, faturalama ve iptal",
         "paragraphs": [
-          "Free $0, Plus aylık $4, Premium aylık $7'dır. Ödeme henüz yok, bu yüzden bugün hiçbir şey satın alınamaz veya ücretlendirilemez. Faturalama açıldığında planlar aylık yenilenir; istediğin zaman panel ayarlarından iptal edebilir ve ödenen ayın sonuna kadar erişimi koruyabilirsin; kısmi ay, ülkenin yasası gerektirmedikçe iade edilmez. Hiçbir plan Rating Points eklemez, reytingi yükseltmez veya eşleştirmeyi değiştirmez. Premium öncelikli destek, başladığında, Premium taleplerinin önce ele alınması demektir; garanti edilen bir yanıt süresi yoktur."
+          "Free 0 $, Plus ayda 4 $ ve Premium ayda 7 $. Ödeme, Merchant of Record olarak Paddle üzerinden yapılır; ödemeler yapılandırılmadığı sürece düğmede Yakında yazar. Faturalandırma, iptal ve iadeler /terms ve /refunds'a tabidir. Hiçbir plan reyting puanı eklemez veya eşleştirmeyi değiştirmez."
         ]
       },
       "antiCheat": {
@@ -114,7 +114,7 @@ export const legalDocs: TextBag["legalDocs"] = {
       "title": "Asla toplamadıklarımız",
       "items": [
         "Steam şifreleri. Oturum açma yalnızca Steam OpenID / Steam'in resmi akışıyla yapılır.",
-        "Ödeme kartı numaraları. Ödeme uygulanmadı.",
+        "Ödeme kartı numaraları. Ödeme bilgilerini Paddle işler; A.C.E bunları asla görmez.",
         "Çekirdek telemetrisi. Bu siteyle hiçbir hile karşıtı istemci gelmez."
       ]
     },

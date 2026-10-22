@@ -40,7 +40,7 @@ export const teams: TextBag["teams"] = {
     "fallback": "此服务台只根据本页书面规则回答：方案、五个席位、Steam OpenID 和支持。",
     "facts": {
       "email": "不会发送邮件。方案收据保留在本网站上。",
-      "charge": "Premium 为每月 $7。即将推出:目前没有支付,因此不会扣费。",
+      "charge": "Premium 通过 Paddle 结账每月 $7。",
       "board": "已保存的战队是阵容记录,不会放上 100 队榜单。在赛季开始前,该榜单仍显示 0 支已报名。",
       "steam": "登录使用官方 Steam OpenID。A.C.E 绝不会索要 Steam 密码。从本页面前往 Steam 后,会返回此处。",
       "roster": "席位 1 是已登录的队长。席位 2 至 5 必须已有 A.C.E 账户。邀请在每位玩家接受前保持待处理。",

@@ -245,7 +245,8 @@ export const UI_HR: Ui = {
       "inDevelopment": "U razvoju",
       "comingSoon": "Uskoro",
       "preparing": "U pripremi",
-      "billingOff": "Nije aktivno · ne naplaćuje se ništa"
+      "billingOff": "Nije postavljeno · naplata prikazuje Uskoro",
+      "billingOn": "Aktivno · Paddle naplata"
     },
     "card": {
       "matches": "Mečevi",
@@ -325,7 +326,7 @@ export const UI_HR: Ui = {
       "ranksBody": "Boje značaka fiksne su po razini, a rang se uvijek računa iz spremljenih RP.",
       "ranksCta": "Pogledaj sve rangove",
       "plansTitle": "Planovi koji ne kupuju pobjede",
-      "plansBody": "Plaćeni planovi samo su kozmetika i udobnost. Plaćanje još nije aktivno, pa su danas svi na Free.",
+      "plansBody": "Plaćeni planovi su samo kozmetika i udobnost. Plaćanje ide preko Paddlea; dok plaćanja nisu postavljena, gumb prikazuje Uskoro.",
       "plansCta": "Usporedi planove",
       "free": "Besplatno",
       "perMonth": "/mj.",

@@ -59,7 +59,7 @@ export const features: TextBag["features"] = {
     "kicker": "装饰 · 即将推出",
     "title": "A.C.E 战利品架构 — 武器掉落",
     "lede": "A.C.E 原创涂装,将随商店推出。装饰绝不影响比赛。",
-    "checkout": "支付 · 即将推出"
+    "checkout": "结账 · Paddle"
   },
   "identityPreview": {
     "badge": "预览 — 未确认",

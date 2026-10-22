@@ -18,7 +18,7 @@ export const account: TextBag["account"] = {
     "soon": "Uskoro",
     "sample": "PRIMJER · samo oblik, nisu stvarni podaci",
     "lockedTitle": "Statistika igrača dio je A.C.E Plus i Premium",
-    "lockedBody": "Tvoj spremljeni plan je Free. Plus (4 $/mj.) i Premium (7 $/mj.) otključavaju ovu stranicu. Uskoro: naplata još ne postoji.",
+    "lockedBody": "Tvoj spremljeni plan je Free. Plus (4 $ mjesečno) i Premium (7 $ mjesečno) otključavaju ovu stranicu. Pretplati se na stranici cijena putem Paddle naplate.",
     "signIn": "Prijavi se putem Steama da vidiš svoju statistiku.",
     "plansLink": "Pogledaj planove",
     "rosterNote": "Primjer profila sastava: ovi igrači nemaju zabilježenih A.C.E mečeva, pa statistika ne prikazuje brojeve.",
@@ -63,8 +63,8 @@ export const account: TextBag["account"] = {
     },
     "settings": {
       "title": "PROFIL POSTAVKI NADZORNE PLOČE",
-      "billingNotLive": "Svaki račun je na Free dok ne postoji plaćanje.",
-      "cancelReason": "Ne postoji naplaćena pretplata za otkazivanje. Plaćanje nije implementirano.",
+      "billingNotLive": "Planovi se kupuju putem Paddle naplate. Dok plaćanja nisu postavljena, gumb prikazuje Uskoro.",
+      "cancelReason": "Paddle pretplatu otkaži u Upravljanju pretplatom na ploči članstva.",
       "cancelButton": "Otkaži pretplatu"
     },
     "rankedReason": "Ranked matchmaking je odbijen dok ne postoji provjerena anti-cheat integracija.",

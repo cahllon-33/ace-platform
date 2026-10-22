@@ -18,7 +18,7 @@ export const account: TextBag["account"] = {
     "soon": "Hamarosan",
     "sample": "MINTA · csak forma, nem valós adat",
     "lockedTitle": "A játékosstatisztika az A.C.E Plus és Premium része",
-    "lockedBody": "A tárolt csomagod Free. A Plus (4 $/hó) és a Premium (7 $/hó) is feloldja ezt az oldalt. Hamarosan: fizetés még nincs.",
+    "lockedBody": "A tárolt csomagod Free. A Plus (havi 4 $) és a Premium (havi 7 $) is feloldja ezt az oldalt. Fizess elő az árak oldalon a Paddle pénztárral.",
     "signIn": "Jelentkezz be Steammel a statisztikáid megtekintéséhez.",
     "plansLink": "Csomagok megtekintése",
     "rosterNote": "Minta keretprofil: ezeknek a játékosoknak nincs rögzített A.C.E meccsük, ezért a statisztika nem mutat számokat.",
@@ -63,8 +63,8 @@ export const account: TextBag["account"] = {
     },
     "settings": {
       "title": "VEZÉRLŐPULT BEÁLLÍTÁSAI",
-      "billingNotLive": "Minden fiók Free, amíg nincs fizetés.",
-      "cancelReason": "Nincs lemondható számlázott előfizetés. A fizetés nincs megvalósítva.",
+      "billingNotLive": "A csomagokat a Paddle pénztárban lehet megvenni. Amíg a fizetés nincs beállítva, a gomb Hamarosan feliratot mutat.",
+      "cancelReason": "A Paddle-előfizetést az Előfizetés kezelése alatt mondhatod le a tagsági paneleden.",
       "cancelButton": "Előfizetés lemondása"
     },
     "rankedReason": "A ranked párosítás megtagadva, amíg nincs ellenőrzött csalásellenes integráció.",

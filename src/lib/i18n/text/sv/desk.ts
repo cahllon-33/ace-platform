@@ -6,7 +6,7 @@ export const desk: TextBag["desk"] = {
       "title": "A.C.E. Marknadsplats",
       "description": "Belöningskort för mästerskapet. Butiken och belöningarna öppnar snart."
     },
-    "heroHonesty": "En första titt på kommande mästerskapsbelöningar. Butiken öppnar snart; inget debiteras i dag.",
+    "heroHonesty": "Kosmetika och medlemskap säljs via Paddles kassa. Kosmetika påverkar aldrig spelet.",
     "prizeBanner": "🏆 MÄSTERSKAPSBELÖNINGAR · KOMMER SNART",
     "notice": "Dessa skyltningar är förhandsvisningar utan kontantvärde. Inget levereras eller debiteras, och granska-knappen startar inget köp.",
     "items": {
