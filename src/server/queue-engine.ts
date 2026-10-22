@@ -8,7 +8,7 @@ import { rankFromRating, type RankArt } from "@/lib/ranks";
 import {
   ACTIVE_DUTY, QUEUE_SIZE, READY_SECONDS, VETO_TURN_SECONDS,
   applyBan, autoBanMap, balanceTeams, captainOf, dodgeCooldownMinutes, estimateWaitSeconds, leaverCooldownMinutes, readyOutcome, remainingMaps,
-  vetoTurn, winProbability, type Ban, type Side,
+  normalizeConnectUrl, vetoTurn, winProbability, type Ban, type Side,
 } from "@/lib/queue";
 import type { Cs2Match } from "@/server/dathost";
 import { healthTick } from "@/server/server-health";
@@ -239,7 +239,7 @@ async function penalizeLeavers(lobbyId: string, m: Cs2Match, now: Date) {
   });
 }
 
-/** steam://connect target (address + password if set). One retry so players get auto-launched right after the veto. */
+/** steam://run/730 connect target (address + password if set). One retry so players get auto-launched right after the veto. */
 async function connectTarget(api: ReturnType<typeof dathost>) {
   for (let i = 0; i < 2; i++) {
     const raw = await api.getRaw().catch(() => null);
@@ -356,7 +356,7 @@ export async function lobbyView(lobbyId: string, userId: string | null): Promise
   const showConnect = l.state === "LIVE" && players.some((p) => p.me);
   return {
     id: l.id, state: l.state, isTest: l.isTest, readyDeadline: l.readyDeadline?.toISOString() ?? null, vetoDeadline: l.vetoDeadline?.toISOString() ?? null,
-    vetoTurn: turn, myTurn, pool: l.mapPool, bans: bansOf(l.bans), map: l.map, connectUrl: showConnect ? l.connectUrl : null, address: showConnect ? l.serverAddress : null,
+    vetoTurn: turn, myTurn, pool: l.mapPool, bans: bansOf(l.bans), map: l.map, connectUrl: showConnect ? normalizeConnectUrl(l.connectUrl) : null, address: showConnect ? l.serverAddress : null,
     error: l.error === "creating" ? "" : l.error, players, acceptedCount: l.players.filter((p) => p.accepted).length,
     scoreA: l.scoreA, scoreB: l.scoreB, rounds: l.roundsPlayed, avg1: avgOf("team1"), avg2: avgOf("team2"), winChance1: winProbability(avgOf("team1"), avgOf("team2")),
     region: "", result: l.state === "DONE" && userId ? await resultFor(l.matchId, userId, l.players.find((p) => p.userId === userId)?.team ?? null, l.scoreA, l.scoreB) : null,

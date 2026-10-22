@@ -6,7 +6,7 @@ type Lookup = (host: string) => Promise<string | null>;
 const v4: Lookup = async (h) => (await lookup(h, { family: 4 }).catch(() => null))?.address ?? null;
 
 /**
- * R48d: steam://connect/<ipv4>:<port>[/<password>]. Hostnames are resolved to IPv4 server-side because some Steam
+ * R48e: steam://run/730//+connect%20<ipv4>:<port>[%20+password%20<pw>]. Hostnames are resolved to IPv4 server-side because some Steam
  * clients only accept an IP; when resolution fails the hostname is kept.
  */
 export async function resolvedConnect(host: string, port: number, password?: string | null, resolve: Lookup = v4) {

@@ -1,3 +1,5 @@
+import { buildConnectUrl } from "@/lib/queue";
+
 /**
  * DatHost API client (server-only). Basic auth from DATHOST_EMAIL / DATHOST_PASSWORD; never logged or returned.
  * Docs: https://dathost.net/reference (swagger: https://dathost.com/swagger.json).
@@ -59,7 +61,7 @@ export function toServerView(s: RawServer): ServerView {
   const address = `${s.ip}:${s.ports.game}`;
   return {
     id: s.id, name: s.name, location: s.location, online: Boolean(s.on), booting: Boolean(s.booting), error: s.server_error ?? "",
-    host: s.ip, port: s.ports.game, address, connectUrl: `steam://connect/${address}`,
+    host: s.ip, port: s.ports.game, address, connectUrl: buildConnectUrl(address),
     players: s.players_online ?? 0, slots: s.cs2_settings?.slots ?? 0,
     map: kv.map ?? kv.Map ?? (s.on ? s.cs2_settings?.mapgroup_start_map ?? null : null),
     gameMode: s.cs2_settings?.game_mode ?? "", matchId: s.match_id ?? null, metamod: Boolean(s.cs2_settings?.enable_metamod),

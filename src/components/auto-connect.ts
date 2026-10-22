@@ -5,7 +5,7 @@ import { autoLaunchKey } from "@/lib/queue";
 
 /** Opens the steam:// connect URL (Steam launches CS2 and joins). Safe to call from a click handler. */
 export function launchSteam(url: string) {
-  if (!/^steam:\/\/connect\//.test(url)) return;
+  if (!/^steam:\/\/run\/730\/\/\+connect%20/.test(url)) return;
   window.location.assign(url);
 }
 

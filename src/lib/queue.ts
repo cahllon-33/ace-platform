@@ -115,10 +115,20 @@ export const REGION_LABELS: Record<string, string> = {
   warsaw: "Warsaw, PL", madrid: "Madrid, ES", istanbul: "Istanbul, TR", bucharest: "Bucharest, RO", helsinki: "Helsinki, FI", vienna: "Vienna, AT",
 };
 
-/** steam://connect/<ip>:<port>[/<password>] — the password segment is URL-encoded and omitted when empty. */
+/**
+ * R48e: steam://run/730//+connect%20<ip>:<port>[%20+password%20<pw>]. Launches CS2 (app 730) with connect args;
+ * steam://connect/ failed with "app id specified by server is invalid". The password is URL-encoded, omitted when empty.
+ */
 export function buildConnectUrl(address: string, password?: string | null): string {
   const pw = (password ?? "").trim();
-  return `steam://connect/${address}${pw ? `/${encodeURIComponent(pw)}` : ""}`;
+  return `steam://run/730//+connect%20${address}${pw ? `%20+password%20${encodeURIComponent(pw)}` : ""}`;
+}
+
+/** Converts legacy stored steam://connect/<addr>[/<pw>] links (lobbies created before R48e) to the run/730 form. */
+export function normalizeConnectUrl(url: string | null): string | null {
+  if (!url) return url;
+  const m = /^steam:\/\/connect\/([^/]+)(?:\/(.*))?$/.exec(url);
+  return m ? buildConnectUrl(m[1], m[2] ? decodeURIComponent(m[2]) : null) : url;
 }
 
 /** localStorage key that makes the automatic CS2 launch fire once per lobby. */

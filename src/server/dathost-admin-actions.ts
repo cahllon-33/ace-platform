@@ -1,6 +1,7 @@
 "use server";
 
 import { getPrisma } from "@/server/db";
+import { buildConnectUrl } from "@/lib/queue";
 import { resolvedConnect } from "@/server/connect-address";
 import { readAdminActor, readIsSteamOwner } from "@/server/admin-gate";
 import {
@@ -60,7 +61,7 @@ export async function loadOverview() {
     const address = `${raw.ip}:${raw.ports.game}`;
     return {
       settings: toSettingsView(raw), online: !!raw.on, booting: !!raw.booting, error: raw.server_error ?? "", players: raw.players_online ?? 0,
-      address, connectUrl: `steam://connect/${address}`, gotvPort: raw.ports.gotv ?? null,
+      address, connectUrl: buildConnectUrl(address), gotvPort: raw.ports.gotv ?? null,
       metrics: {
         players: (metrics?.players_online_graph ?? []).slice(-96).map((p) => ({ t: p.timestamp, v: p.value })),
         memory: (metrics?.memory_usage_bytes_graph ?? []).slice(-96).map((p) => ({ t: p.timestamp, v: p.value })),
@@ -70,14 +71,14 @@ export async function loadOverview() {
 }
 
 /**
- * R48d: owner "Join server" — steam://connect to the DatHost server at any time, with the server password appended
+ * R48d: owner "Join server" — steam://run/730 connect to the DatHost server at any time, with the server password appended
  * server-side when one is set. Only the owner receives it; the password is never logged or audited.
  */
 export async function ownerJoinUrl() {
   return guard<string>(async (api) => {
     const raw = await api.getRaw();
     return (await resolvedConnect(raw.ip, raw.ports.game, raw.cs2_settings?.password)).connectUrl;
-  }, ["server.join", "owner join (steam://connect)"]);
+  }, ["server.join", "owner join (steam://run/730 connect)"]);
 }
 
 /* ---------- settings ---------- */

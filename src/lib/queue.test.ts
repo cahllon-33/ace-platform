@@ -71,12 +71,15 @@ describe("R48b rules", () => {
   });
 });
 
-import { autoLaunchKey, buildConnectUrl } from "@/lib/queue";
+import { autoLaunchKey, buildConnectUrl, normalizeConnectUrl } from "@/lib/queue";
 describe("R48c connect url", () => {
   it("adds an encoded password only when set", () => {
-    expect(buildConnectUrl("1.2.3.4:27015")).toBe("steam://connect/1.2.3.4:27015");
-    expect(buildConnectUrl("1.2.3.4:27015", "")).toBe("steam://connect/1.2.3.4:27015");
-    expect(buildConnectUrl("h.example:26372", "a b/c")).toBe("steam://connect/h.example:26372/a%20b%2Fc");
+    expect(buildConnectUrl("1.2.3.4:27015")).toBe("steam://run/730//+connect%201.2.3.4:27015");
+    expect(buildConnectUrl("1.2.3.4:27015", "")).toBe("steam://run/730//+connect%201.2.3.4:27015");
+    expect(buildConnectUrl("1.2.3.4:26372", "a b/c")).toBe("steam://run/730//+connect%201.2.3.4:26372%20+password%20a%20b%2Fc");
+    expect(normalizeConnectUrl("steam://connect/1.2.3.4:1/p%2Fw")).toBe("steam://run/730//+connect%201.2.3.4:1%20+password%20p%2Fw");
+    expect(normalizeConnectUrl("steam://run/730//+connect%201.2.3.4:1")).toBe("steam://run/730//+connect%201.2.3.4:1");
+    expect(normalizeConnectUrl(null)).toBeNull();
     expect(autoLaunchKey("x1")).toBe("ace-autoconnect-x1");
   });
 });
