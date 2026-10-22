@@ -1,4 +1,4 @@
-import { resolvedConnect } from "@/server/connect-address";
+import { resolvedConnect, resolvedGotv } from "@/server/connect-address";
 import { Prisma } from "@prisma/client";
 import { getPrisma } from "@/server/db";
 import { dathost, DathostError, isAceMap, readDathostConfig } from "@/server/dathost";
@@ -243,6 +243,16 @@ async function penalizeLeavers(lobbyId: string, m: Cs2Match, now: Date) {
   });
 }
 
+let watchCache: { at: number; url: string | null } | null = null;
+/** GOTV spectator link for live lobbies, cached 60 s so lobby polls don't hit DatHost every time. */
+async function watchUrl(): Promise<string | null> {
+  if (watchCache && Date.now() - watchCache.at < 60_000) return watchCache.url;
+  const cfg = readDathostConfig();
+  const url = cfg ? await resolvedGotv(await dathost(cfg).getRaw().catch(() => null)).catch(() => null) : null;
+  watchCache = { at: Date.now(), url };
+  return url;
+}
+
 /** steam://run/730 connect target (address + password if set). One retry so players get auto-launched right after the veto. */
 async function connectTarget(api: ReturnType<typeof dathost>) {
   for (let i = 0; i < 2; i++) {
@@ -285,7 +295,7 @@ async function pollLive(now: Date) {
 export type LobbySeatView = { userId: string; name: string; avatarUrl: string | null; rp: number; level: number; art: RankArt; team: Side; accepted: boolean; captain: boolean; me: boolean };
 export type LobbyView = {
   id: string; state: string; isTest: boolean; readyDeadline: string | null; vetoDeadline: string | null; vetoTurn: Side | null;
-  myTurn: boolean; pool: string[]; bans: Ban[]; map: string | null; connectUrl: string | null; address: string | null; error: string;
+  myTurn: boolean; pool: string[]; bans: Ban[]; map: string | null; connectUrl: string | null; address: string | null; watchUrl: string | null; error: string;
   players: LobbySeatView[]; acceptedCount: number;
   scoreA: number | null; scoreB: number | null; rounds: number | null; avg1: number; avg2: number; winChance1: number; region: string;
   result: { won: boolean | null; rpBefore: number | null; rpAfter: number | null; kills: number | null; deaths: number | null; assists: number | null; damage: number | null; mvps: number | null; hs: number | null } | null;
@@ -360,7 +370,7 @@ export async function lobbyView(lobbyId: string, userId: string | null): Promise
   const showConnect = l.state === "LIVE" && players.some((p) => p.me);
   return {
     id: l.id, state: l.state, isTest: l.isTest, readyDeadline: l.readyDeadline?.toISOString() ?? null, vetoDeadline: l.vetoDeadline?.toISOString() ?? null,
-    vetoTurn: turn, myTurn, pool: l.mapPool, bans: bansOf(l.bans), map: l.map, connectUrl: showConnect ? normalizeConnectUrl(l.connectUrl) : null, address: showConnect ? l.serverAddress : null,
+    vetoTurn: turn, myTurn, pool: l.mapPool, bans: bansOf(l.bans), map: l.map, connectUrl: showConnect ? normalizeConnectUrl(l.connectUrl) : null, watchUrl: l.state === "LIVE" ? await watchUrl() : null, address: showConnect ? l.serverAddress : null,
     error: l.error === "creating" ? "" : l.error, players, acceptedCount: l.players.filter((p) => p.accepted).length,
     scoreA: l.scoreA, scoreB: l.scoreB, rounds: l.roundsPlayed, avg1: avgOf("team1"), avg2: avgOf("team2"), winChance1: winProbability(avgOf("team1"), avgOf("team2")),
     region: "", result: l.state === "DONE" && userId ? await resultFor(l.matchId, userId, l.players.find((p) => p.userId === userId)?.team ?? null, l.scoreA, l.scoreB) : null,

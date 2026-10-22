@@ -1,5 +1,6 @@
 "use client";
 
+import { WatchLiveButton } from "@/components/admin-server-tools";
 import { useCallback, useEffect, useState, useTransition } from "react";
 import type { Srv48Key } from "@/lib/admin-servers-r48-i18n";
 import {
@@ -73,6 +74,7 @@ function MatchesTab({ snap, t, run, pending }: Sub) {
             <span className="s48-big">{lobby.scoreA ?? 0} : {lobby.scoreB ?? 0}</span>
             {lobby.rounds != null ? <span className="acx-muted">{t("round")} {lobby.rounds}</span> : null}
             <span className="s48-grow" />
+            {lobby.state === "LIVE" ? <WatchLiveButton /> : null}
             <button type="button" className="acx-btn" disabled={pending || lobby.state !== "LIVE"} onClick={() => window.confirm(t("confirmForce")) && run(() => forceEndAction(lobby.id))}>{t("forceEnd")}</button>
             <button type="button" className="acx-btn is-danger" disabled={pending} onClick={() => window.confirm(t("confirmCancel")) && run(() => cancelMatchAction(lobby.id))}>{t("cancelDh")}</button>
           </header>

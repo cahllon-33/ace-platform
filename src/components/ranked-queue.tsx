@@ -225,6 +225,7 @@ export function RankedQueue({ signedIn, initial }: { signedIn: boolean; initial:
             <div className="r48-connect">
               {autoPhase === "launching" ? <p className="r48-auto" role="status">{c.launching}</p> : null}
               <a className="r48-btn r48-btn-gold r48-btn-lg r48-join" href={activeLobby.connectUrl}>{c.join}</a>
+              {activeLobby.watchUrl ? <a className="r48-btn r48-btn-sm r48-watch" href={activeLobby.watchUrl}>◉ {c.watch}</a> : null}
               {autoPhase === "hint" ? <p className="r48-warn" role="note">{c.hint}</p> : null}
               <p className="r48-sub">{r.connectNote}</p>
               {activeLobby.address ? (

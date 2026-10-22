@@ -4,7 +4,7 @@ import { useCallback, useEffect, useRef, useState, useTransition } from "react";
 import { useAdminI18n } from "@/components/admin-locale";
 import { SRV48_EN, SRV48_HE, type Srv48Key } from "@/lib/admin-servers-r48-i18n";
 import {
-  consoleRun, consoleTail, createFolder, deleteFile, listFiles, loadOverview, moveFile, ownerJoinUrl, pluginStatus, power, readTextFile, saveSettings, syncFiles, writeTextFile,
+  consoleRun, consoleTail, createFolder, deleteFile, listFiles, loadOverview, moveFile, ownerJoinUrl, ownerWatchUrl, pluginStatus, power, readTextFile, saveSettings, syncFiles, writeTextFile,
   type Overview, type PluginStatus, type SettingsInput,
 } from "@/server/dathost-admin-actions";
 import { cancelLobbyAction, createTestLobbyAction, testBotsAction, testLobbiesAction } from "@/server/queue-actions";
@@ -60,6 +60,23 @@ export function JoinServerButton({ onError }: { onError?: (e: string | null) => 
   return (
     <a className={`acx-btn is-gold s48-joinsrv${url ? "" : " is-wait"}`} href={url ?? undefined} aria-disabled={!url} title={t("joinServerNote")} aria-label={t("joinServerNote")}>
       <span aria-hidden="true">▶</span> {t("joinServer")}
+    </a>
+  );
+}
+
+/** R48g owner "Watch live": GOTV spectator link prefetched on mount; real anchor so the click navigates synchronously. */
+export function WatchLiveButton() {
+  const { hebrew } = useAdminI18n();
+  const t = (k: Srv48Key) => (hebrew ? SRV48_HE : SRV48_EN)[k];
+  const [url, setUrl] = useState<string | null | undefined>(undefined);
+  useEffect(() => {
+    let on = true;
+    void ownerWatchUrl().then((r) => { if (on) setUrl(r.ok ? r.data : null); });
+    return () => { on = false; };
+  }, []);
+  return (
+    <a className={`acx-btn s48-watch${url ? "" : " is-wait"}`} href={url ?? undefined} aria-disabled={!url} title={url === null ? t("watchOff") : t("watchLive")} data-watch="1">
+      <span aria-hidden="true">◉</span> {t("watchLive")}
     </a>
   );
 }

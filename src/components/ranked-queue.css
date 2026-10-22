@@ -78,3 +78,5 @@
 .r48-auto{color:#9ee6b4;font-weight:700;animation:r48-pulse 1.2s ease-in-out infinite}
 @keyframes r48-pulse{50%{opacity:.55}}
 @media (prefers-reduced-motion:reduce){.r48-auto{animation:none}}
+
+.r48-watch{margin-top:.4rem}

@@ -634,6 +634,7 @@ export const UI_DE: Ui = {
   "r48c": {
     "launching": "CS2 wird gestartet und verbunden…",
     "hint": "Wenn CS2 nicht geöffnet wurde, hat dein Browser den Start blockiert. Nutze Match beitreten.",
-    "join": "Match beitreten"
+    "join": "Match beitreten",
+    "watch": "Live zuschauen"
   }
 };

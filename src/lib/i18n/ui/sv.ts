@@ -634,6 +634,7 @@ export const UI_SV: Ui = {
   "r48c": {
     "launching": "Startar CS2 och ansluter dig…",
     "hint": "Om CS2 inte öppnades blockerade webbläsaren starten. Använd Gå med i matchen.",
-    "join": "Gå med i matchen"
+    "join": "Gå med i matchen",
+    "watch": "Titta live"
   }
 };

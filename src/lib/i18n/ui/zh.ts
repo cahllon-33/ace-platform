@@ -634,6 +634,7 @@ export const UI_ZH: Ui = {
   "r48c": {
     "launching": "正在启动 CS2 并为你连接…",
     "hint": "如果 CS2 没有打开，说明浏览器阻止了启动。请点击加入比赛。",
-    "join": "加入比赛"
+    "join": "加入比赛",
+    "watch": "观看直播"
   }
 };

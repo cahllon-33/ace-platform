@@ -634,6 +634,7 @@ export const UI_RO: Ui = {
   "r48c": {
     "launching": "Pornim CS2 și te conectăm…",
     "hint": "Dacă CS2 nu s-a deschis, browserul a blocat pornirea. Folosește Intră în meci.",
-    "join": "Intră în meci"
+    "join": "Intră în meci",
+    "watch": "Urmărește live"
   }
 };

@@ -634,6 +634,7 @@ export const UI_HR: Ui = {
   "r48c": {
     "launching": "Pokrećemo CS2 i spajamo te…",
     "hint": "Ako se CS2 nije otvorio, preglednik je blokirao pokretanje. Koristi Pridruži se meču.",
-    "join": "Pridruži se meču"
+    "join": "Pridruži se meču",
+    "watch": "Gledaj uživo"
   }
 };

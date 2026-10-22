@@ -2,7 +2,7 @@
 
 import { getPrisma } from "@/server/db";
 import { buildConnectUrl } from "@/lib/queue";
-import { resolvedConnect } from "@/server/connect-address";
+import { resolvedConnect, resolvedGotv } from "@/server/connect-address";
 import { readAdminActor, readIsSteamOwner } from "@/server/admin-gate";
 import {
   dathost, DathostError, GAME_MODES, MAPS_SOURCES, readDathostConfig, safeServerPath, toSettingsView,
@@ -79,6 +79,11 @@ export async function ownerJoinUrl() {
     const raw = await api.getRaw();
     return (await resolvedConnect(raw.ip, raw.ports.game, raw.cs2_settings?.password)).connectUrl;
   }, ["server.join", "owner join (steam://run/730 connect)"]);
+}
+
+/** R48g owner "Watch live": GOTV spectator link (tv_password appended server-side if set). Null when GOTV is off. */
+export async function ownerWatchUrl() {
+  return guard<string | null>(async (api) => resolvedGotv(await api.getRaw().catch(() => null)));
 }
 
 /* ---------- settings ---------- */

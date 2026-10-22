@@ -15,3 +15,11 @@ export async function resolvedConnect(host: string, port: number, password?: str
   const address = `${ip}:${port}`;
   return { address, connectUrl: buildConnectUrl(address, password) };
 }
+
+type GotvRaw = { ip: string; ports: { gotv?: number | null }; cs2_settings?: { enable_gotv?: boolean; tv_password?: string } | null };
+
+/** R48g: spectator link to GOTV (steam://run/730//+connect%20<ip>:<gotvport>[%20+password%20<tv_password>]); null when GOTV is off. */
+export async function resolvedGotv(raw: GotvRaw | null, resolve?: Lookup): Promise<string | null> {
+  if (!raw?.ip || !raw.ports?.gotv || !raw.cs2_settings?.enable_gotv) return null;
+  return (await resolvedConnect(raw.ip, raw.ports.gotv, raw.cs2_settings.tv_password, resolve)).connectUrl;
+}

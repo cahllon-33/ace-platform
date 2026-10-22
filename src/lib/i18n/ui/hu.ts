@@ -634,6 +634,7 @@ export const UI_HU: Ui = {
   "r48c": {
     "launching": "A CS2 indítása és csatlakozás…",
     "hint": "Ha a CS2 nem nyílt meg, a böngésző letiltotta az indítást. Használd a Csatlakozás a meccshez gombot.",
-    "join": "Csatlakozás a meccshez"
+    "join": "Csatlakozás a meccshez",
+    "watch": "Élő nézés"
   }
 };

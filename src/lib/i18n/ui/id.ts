@@ -634,6 +634,7 @@ export const UI_ID: Ui = {
   "r48c": {
     "launching": "Membuka CS2 dan menghubungkanmu…",
     "hint": "Jika CS2 tidak terbuka, browser memblokir peluncuran. Gunakan Gabung pertandingan.",
-    "join": "Gabung pertandingan"
+    "join": "Gabung pertandingan",
+    "watch": "Tonton langsung"
   }
 };

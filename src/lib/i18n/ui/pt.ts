@@ -634,6 +634,7 @@ export const UI_PT: Ui = {
   "r48c": {
     "launching": "A abrir o CS2 e a ligar-te…",
     "hint": "Se o CS2 não abriu, o navegador bloqueou o arranque. Usa Entrar na partida.",
-    "join": "Entrar na partida"
+    "join": "Entrar na partida",
+    "watch": "Ver em direto"
   }
 };

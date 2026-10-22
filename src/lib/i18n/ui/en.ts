@@ -575,7 +575,8 @@ export const UI_EN = {
   "r48c": {
     "launching": "Launching CS2 and connecting you…",
     "hint": "If CS2 did not open, your browser blocked the launch. Use Join match.",
-    "join": "Join match"
+    "join": "Join match",
+    "watch": "Watch live"
   }
 } as const;
 

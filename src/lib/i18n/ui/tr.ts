@@ -634,6 +634,7 @@ export const UI_TR: Ui = {
   "r48c": {
     "launching": "CS2 açılıyor ve bağlanıyorsun…",
     "hint": "CS2 açılmadıysa tarayıcın başlatmayı engelledi. Maça katıl düğmesini kullan.",
-    "join": "Maça katıl"
+    "join": "Maça katıl",
+    "watch": "Canlı izle"
   }
 };

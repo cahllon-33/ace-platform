@@ -5,7 +5,7 @@ import { useEffect, useRef, useState, useTransition } from "react";
 import { useAdminI18n } from "@/components/admin-locale";
 import { serverAction, type ServerActionResult, type ServerSnapshot } from "@/server/dathost-actions";
 import { SERVERS_EN, SERVERS_HE, type ServersKey } from "@/lib/admin-servers-i18n";
-import { AdminServerTools, JoinServerButton } from "@/components/admin-server-tools";
+import { AdminServerTools, JoinServerButton, WatchLiveButton } from "@/components/admin-server-tools";
 import "./admin-command.css";
 import "./admin-servers.css";
 
@@ -68,6 +68,7 @@ export function AdminServersPanel({ owner, initial, matches, maps }: { owner: bo
             </div>
             <div className="asv-actions">
               <JoinServerButton />
+              <WatchLiveButton />
               <button type="button" className="acx-btn is-gold" disabled={pending || s.online} onClick={() => run("start")}>{t("start")}</button>
               <button type="button" className="acx-btn" disabled={pending || !s.online} onClick={() => run("restart")}>{t("restart")}</button>
               <button type="button" className="acx-btn is-danger" disabled={pending || !s.online} onClick={() => window.confirm(t("confirmStop")) && run("stop")}>{t("stop")}</button>
