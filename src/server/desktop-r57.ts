@@ -1,3 +1,4 @@
+import { effectiveRankArt } from "@/server/rank-art";
 /**
  * R57 desktop "My Stats" (private by default) and the public Ranks ladder. Real rows only.
  * Stats sources: MatchPlayer (verified match server report), MatchWeaponStat, AceBridge player_death events, RatingHistory.
@@ -136,12 +137,12 @@ export async function ranks(f: { season?: string; country?: string; region?: str
     const us = await db().user.findMany({ where: { accountStatus: "ACTIVE", steamId: { not: null } }, orderBy: [{ competitiveRating: "desc" }, { wins: "desc" }], take: 2000, select: { id: true, competitiveRating: true, wins: true, losses: true } });
     base = us.map((x) => ({ userId: x.id, rp: x.competitiveRating, matches: x.wins + x.losses }));
   }
-  const users = await db().user.findMany({ where: { id: { in: base.map((b) => b.userId) }, accountStatus: "ACTIVE" }, select: { id: true, displayName: true, avatarUrl: true, verifiedAt: true, wins: true, losses: true } });
+  const users = await db().user.findMany({ where: { id: { in: base.map((b) => b.userId) }, accountStatus: "ACTIVE" }, select: { id: true, displayName: true, avatarUrl: true, verifiedAt: true, wins: true, losses: true, subscriptionTier: true, rankArt: true } });
   const byId = new Map(users.map((x) => [x.id, x]));
   const cc = await countries(base.map((b) => b.userId));
   let rows = base.filter((b) => byId.has(b.userId)).map((b) => {
     const x = byId.get(b.userId)!, t = rankFromRating(b.rp), country = cc.get(b.userId) ?? null;
-    return { id: b.userId, name: x.displayName, avatarUrl: x.avatarUrl || null, verified: !!x.verifiedAt, country, region: regionOf(country), rp: b.rp, level: t.level, rankName: t.name, matches: b.matches ?? x.wins + x.losses };
+    return { id: b.userId, name: x.displayName, avatarUrl: x.avatarUrl || null, verified: !!x.verifiedAt, country, region: regionOf(country), rp: b.rp, level: t.level, rankName: t.name, matches: b.matches ?? x.wins + x.losses, art: effectiveRankArt(x) };
   });
   const countryList = [...new Set(rows.map((r) => r.country).filter((c): c is string => !!c))].sort();
   if (f.region && f.region !== "all") rows = rows.filter((r) => r.region === f.region);

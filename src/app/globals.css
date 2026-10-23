@@ -7324,14 +7324,21 @@ html[dir="rtl"] .ace-hub-card-face {
 
 .ace-shield-mark {
   position: absolute;
-  inset-inline-end: -2rem;
-  top: -1rem;
-  width: 16rem;
-  height: 16rem;
-  fill: none;
-  stroke: rgba(201, 162, 74, 0.16);
-  stroke-width: 0.6;
+  inset-inline-end: 1.5rem;
+  top: 50%;
+  translate: 0 -50%;
+  width: 15rem;
+  height: 15rem;
+  pointer-events: none;
+  filter: drop-shadow(0 0 1.6rem rgba(201, 162, 74, 0.35));
 }
+@media (max-width: 767px) { .ace-shield-mark { width: 9rem; height: 9rem; inset-inline-end: -1rem; opacity: 0.45; } }
+.ace-shield-hero > :not(.ace-shield-mark) { position: relative; }
+.ace-shield-checks { margin: .55rem 0 0; padding: 0; list-style: none; display: grid; gap: .25rem; font-size: .8rem; color: #A9ABB3; }
+.ace-shield-checks li { display: flex; gap: .45rem; align-items: baseline; }
+.ace-shield-checks i { font-style: normal; font-weight: 700; width: 1rem; flex: none; }
+.ace-shield-checks .is-on i { color: #6fd38a; }
+.ace-shield-checks .is-off i { color: #8a8c94; }
 
 .ace-shield-h2 {
   font-size: 1.35rem;

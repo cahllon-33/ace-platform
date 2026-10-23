@@ -54,7 +54,7 @@ export async function RanksV2({ filters, meId, liveRating }: { filters: Filters;
           <div className="rk2-me-row">
             <span className="rk2-me-pos">#{n(me.pos)}</span>
             <span className="rk2-me-id">
-              {me.avatarUrl ? <img src={me.avatarUrl} alt="" className="rk2-avatar" width={56} height={56} /> : <RankOrb level={me.level} size={56} label={me.rankName} />}
+              {me.avatarUrl ? <img src={me.avatarUrl} alt="" className="rk2-avatar" width={56} height={56} /> : <RankOrb level={me.level} art={me.art} size={56} label={me.rankName} />}
               <span>
                 <b>{me.name}</b>
                 <small>{me.rankName} · {n(me.matches)} match{me.matches === 1 ? "" : "es"}</small>
@@ -63,7 +63,7 @@ export async function RanksV2({ filters, meId, liveRating }: { filters: Filters;
             <span className="rk2-me-stat"><small>Rank</small><b>{me.rankName}</b></span>
             <span className="rk2-me-stat"><small>Tier</small><b>{me.level} / 10</b></span>
             <span className="rk2-me-stat"><small>RP</small><b className="rk2-gold">{n(me.rp)}</b></span>
-            <RankOrb level={me.level} size={84} label={me.rankName} />
+            <RankOrb level={me.level} art={me.art} size={84} label={me.rankName} />
           </div>
         ) : (
           <p className="rk2-me-empty">
@@ -83,7 +83,7 @@ export async function RanksV2({ filters, meId, liveRating }: { filters: Filters;
           {ranges.map((t) => (
             <li key={t.level} className={`rk2-tier${t.level === currentLevel ? " is-current" : ""}`} aria-current={t.level === currentLevel ? "true" : undefined}>
               <span className="rk2-tier-lv">{t.level}</span>
-              <span className="rk2-tier-badge"><RankOrb level={t.level} size={76} label={t.name} /></span>
+              <span className="rk2-tier-badge"><RankOrb level={t.level} art={me?.art ?? "standard"} size={76} label={t.name} /></span>
               <b className="rk2-tier-name">{t.name}</b>
               <span className="rk2-tier-rp">{t.to == null ? `${n(t.from)}+ RP` : `${n(t.from)} – ${n(t.to)} RP`}</span>
               {t.level === currentLevel ? <span className="rk2-tier-you">You</span> : null}
@@ -127,7 +127,7 @@ export async function RanksV2({ filters, meId, liveRating }: { filters: Filters;
                   <span role="cell" className={`rk2-pos${r.pos <= 3 ? " is-top" : ""}`}>{r.pos}</span>
                   <span role="cell" className="rk2-pl">{r.avatarUrl ? <img src={r.avatarUrl} alt="" width={32} height={32} className="rk2-avatar" /> : null}<b>{r.name}</b></span>
                   <span role="cell">{r.country ? <span className="rk2-cc">{r.country}</span> : <span className="rk2-mut">—</span>}</span>
-                  <span role="cell" className="rk2-rank"><RankOrb level={r.level} size={28} label={r.rankName} />{r.rankName}</span>
+                  <span role="cell" className="rk2-rank"><RankOrb level={r.level} art={r.art} size={28} label={r.rankName} />{r.rankName}</span>
                   <span role="cell" className="rk2-rp">{n(r.rp)}</span>
                 </div>
               ))}

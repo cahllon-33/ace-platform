@@ -1,9 +1,11 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
+import { readShieldRoadmap } from "@/server/shield-status";
 import { ComingSoon } from "@/components/coming-soon";
 import { AnticheatStatus } from "@/components/anticheat-status";
 import { connection } from "next/server";
-import { SHIELD_PHASES, SHIELD_PILLARS } from "@/features/anti-cheat/status";
+import { SHIELD_PILLARS } from "@/features/anti-cheat/status";
 import type { ShieldStatus } from "@/features/anti-cheat/types";
 import type { Ui } from "@/lib/i18n/ui";
 import { getUi } from "@/server/locale";
@@ -32,18 +34,18 @@ export default async function AntiCheatPage() {
   await connection();
   const ui = await getUi();
   const copy = ui.antiCheat;
+  const roadmap = await readShieldRoadmap();
+    const overall = roadmap.phases.every((p) => p.status === "live") ? ui.status.available : roadmap.phases.some((p) => p.status !== "coming-soon") ? ui.status.inDevelopment : ui.status.comingSoon;
   return (
     <main className="ace-shield-page mx-auto w-full max-w-[76rem] px-4 py-14 sm:px-6">
       <header className="ace-shield-hero pg41-hero">
-        <svg className="ace-shield-mark" viewBox="0 0 24 24" aria-hidden="true">
-          <path d={ICONS.identity} />
-        </svg>
+        <Image src="/images/ace-shield-emblem.webp" alt="" width={512} height={512} priority className="ace-shield-mark" aria-hidden="true" />
         <p className="text-xs tracking-[0.28em] text-[#C9A24A] uppercase">{copy.kicker}</p>
         <h1 className="pg41-h1 mt-2">{copy.title}</h1>
         <p className="mt-4 max-w-3xl text-base leading-7 text-[#C9CAD0]">{copy.lede}</p>
         <div className="mt-6 flex flex-wrap items-center gap-3">
           <span className="text-xs uppercase tracking-[0.18em] text-[#A9ABB3]">{copy.statusLabel}</span>
-          <ComingSoon label={ui.status.available} size="md" />
+          <ComingSoon label={overall} size="md" />
         </div>
       </header>
       <AnticheatStatus />
@@ -67,12 +69,17 @@ export default async function AntiCheatPage() {
       <section className="mt-14" aria-labelledby="shield-roadmap">
         <h2 id="shield-roadmap" className="ace-shield-h2">{copy.roadmapTitle}</h2>
         <ol className="ace-shield-roadmap">
-          {SHIELD_PHASES.map((phase) => (
+          {roadmap.phases.map((phase) => (
             <li key={phase.id} className={`is-${phase.status}`}>
               <span className="ace-shield-node" aria-hidden="true" />
               <div>
                 <h3>{copy.phases[phase.id].title}</h3>
                 <p>{copy.phases[phase.id].body}</p>
+                <ul className="ace-shield-checks">
+                  {phase.checks.map((c) => (
+                    <li key={c.id} className={c.done ? "is-on" : "is-off"}><i>{c.done ? "✓" : "○"}</i>{c.label}</li>
+                  ))}
+                </ul>
               </div>
               <ComingSoon label={statusLabel(ui, phase.status)} />
             </li>
