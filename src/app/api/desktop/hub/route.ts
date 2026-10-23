@@ -67,6 +67,11 @@ export async function GET(request: Request) {
         if (section === "membership") return json(await v2.membership(me?.id ?? null));
         return json({ rows: await v2.searchPlayers(q("q") ?? "") });
       }
+      case "social": {
+        const me = await readSessionUser();
+        if (!me) return json({ error: "sign-in" }, 401);
+        return json(await v2.social(me.id));
+      }
       case "comms": case "thread": {
         const me = await readSessionUser();
         if (!me) return json({ error: "sign-in" }, 401);

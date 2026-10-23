@@ -8,6 +8,9 @@ Posts CS2 server events to A.C.E. at `POST /api/cs2/events`:
 | `round_end` | every round | `round`, `winner` (ct/t), `reason`, `scoreCt`, `scoreT`, `map` |
 | `player_death` | every kill (toggle `SendKills`) | `victim`, `attacker`, `assister` (SteamID64), `weapon`, `headshot` |
 | `round_mvp` | round MVP | `player`, `reason` |
+| `round_start` (0.3.0) | every round | `round`, `map` |
+| `round_stats` (0.3.0) | every live round end (not warmup) | `round`, `winner`, scores, `players[]`: `steamId`, `team`, `dmg` (capped at victim HP), `heDmg`, `molDmg`, `flashes`, `flashesHit` (flashbangs that blinded an enemy), `enemiesFlashed`, `flashMs`, `teamFlashed`, `he`, `molotovs`, `smokes`, `kills`, `deaths`, `weapons` {weapon: kills}, `firstKill`, `firstDeath`, `clutchVs` (X in 1vX, 0 = none), `clutchWon` |
+| `player_hurt` / `player_blind` / `grenade_thrown` (0.3.0) | only when `SendRawUtilityEvents` is true (debugging) | per-hit / per-blind / per-throw details |
 | `match_end` | win panel | scores, rounds, per-player kills/deaths/assists/damage/HS/MVPs |
 
 Every request carries `X-Ace-Timestamp` (unix seconds) and
@@ -57,3 +60,20 @@ headshot source when a server report lacks `kills_with_headshot`, bind events to
 - environment variable `ACE_MATCH_ID`.
 
 Unbound events keep the old `<map>-<unix time>` key and are stored but not attributed to a match.
+
+## 0.3.0: full stats (utility, entry, clutch, multi-kills, weapons, ADR)
+
+The plugin keeps per-round counters in memory and posts **one** `round_stats` event per round (about 30 requests a
+map instead of hundreds). The site recomputes `Cs2PlayerMatchStat` (one row per match key + SteamID) from all
+`round_stats` of that match, de-duplicated by round number, and My Stats uses it to fill flashes, enemies flashed,
+blind time, HE/molotov throws and damage, flash success, 1v1/1v2 clutches, and (only where the DatHost report is
+missing a value) ADR, entry, clutches, multi-kills and weapon classes.
+
+**Bind every match** (otherwise rows are keyed by map+time and never reach a player's stats): the match start config must
+run `ace_match_id <A.C.E match id or DatHost match id>` before the first live round.
+
+New config keys (added automatically to AceBridge.json on load; defaults shown):
+`"SendRoundStats": true`, `"SendRawUtilityEvents": false`.
+
+Upgrade on DatHost: replace `addons/counterstrikesharp/plugins/AceBridge/AceBridge.dll` with the 0.3.0 build,
+then `css_plugins reload AceBridge` (or restart). `css_plugins list` should show AceBridge 0.3.0.

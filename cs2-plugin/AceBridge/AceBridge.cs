@@ -19,20 +19,41 @@ public class AceBridgeConfig : BasePluginConfig
     [JsonPropertyName("Secret")] public string Secret { get; set; } = "";
     [JsonPropertyName("ServerId")] public string ServerId { get; set; } = "";
     [JsonPropertyName("SendKills")] public bool SendKills { get; set; } = true;
+    /// 0.3.0: one compact "round_stats" event per round carries damage, utility, entry, clutch and per-weapon kills.
+    [JsonPropertyName("SendRoundStats")] public bool SendRoundStats { get; set; } = true;
+    /// Also post every player_hurt / player_blind / grenade_thrown as its own event (debugging; many requests per round).
+    [JsonPropertyName("SendRawUtilityEvents")] public bool SendRawUtilityEvents { get; set; } = false;
 }
 
 public class AceBridgePlugin : BasePlugin, IPluginConfig<AceBridgeConfig>
 {
     public override string ModuleName => "AceBridge";
-    public override string ModuleVersion => "0.2.0";
+    public override string ModuleVersion => "0.3.0";
     public override string ModuleAuthor => "A.C.E.";
-    public override string ModuleDescription => "Posts round, kill, MVP and match-end events to A.C.E. with an HMAC signature.";
+    public override string ModuleDescription => "Posts round, kill, utility, clutch, MVP and match-end events to A.C.E. with an HMAC signature.";
 
     public AceBridgeConfig Config { get; set; } = new();
     private static readonly HttpClient Http = new() { Timeout = TimeSpan.FromSeconds(8) };
     private string _url = "", _secret = "", _serverId = "", _matchKey = "";
     private int _round;
     private string _boundMatch = "";
+
+    /// Per-round, per-player counters (game thread only).
+    private sealed class RoundLine
+    {
+        public string Team = "spec";
+        public int Damage, HeDamage, MolotovDamage, Flashes, He, Molotovs, Smokes, EnemiesFlashed, FlashMs, TeamFlashed, Kills, Deaths;
+        public HashSet<uint> FlashesHit = new();
+        public Dictionary<string, int> Weapons = new();
+        public bool FirstKill, FirstDeath;
+        public int ClutchVs;
+    }
+    private readonly Dictionary<ulong, RoundLine> _rl = new();
+    private readonly Dictionary<ulong, int> _hp = new();
+    private bool _firstDone;
+    private RoundLine L(CCSPlayerController p) { if (!_rl.TryGetValue(p.SteamID, out var l)) { l = new RoundLine(); _rl[p.SteamID] = l; } l.Team = TeamOf(p); return l; }
+    private static string TeamOf(CCSPlayerController p) => p.TeamNum == (int)CsTeam.CounterTerrorist ? "ct" : p.TeamNum == (int)CsTeam.Terrorist ? "t" : "spec";
+    private static bool Human(CCSPlayerController? p) => p is { IsValid: true, IsBot: false } && p.SteamID != 0;
 
     /// Server-only: `ace_match_id <A.C.E match id or DatHost match id>` so kill events (with headshot flag) join the verified match.
     [ConsoleCommand("ace_match_id", "Bind AceBridge events to an A.C.E match id")]
@@ -68,10 +89,107 @@ public class AceBridgePlugin : BasePlugin, IPluginConfig<AceBridgeConfig>
     }
 
     [GameEventHandler]
+    public HookResult OnRoundStart(EventRoundStart ev, GameEventInfo info)
+    {
+        _rl.Clear(); _hp.Clear(); _firstDone = false;
+        foreach (var p in Utilities.GetPlayers().Where(Human)) if (TeamOf(p) != "spec") L(p);
+        Send("round_start", new { round = _round + 1, map = Server.MapName });
+        return HookResult.Continue;
+    }
+
+    [GameEventHandler]
+    public HookResult OnPlayerHurt(EventPlayerHurt ev, GameEventInfo info)
+    {
+        var a = ev.Attacker; var v = ev.Userid;
+        if (!Human(a) || v is not { IsValid: true } || a!.SteamID == v.SteamID || a.TeamNum == v.TeamNum) return HookResult.Continue;
+        // Real damage is capped at the victim's remaining health (same rule as the in-game ADR).
+        var key = v.IsBot ? (ulong)v.Index : v.SteamID;
+        var before = _hp.TryGetValue(key, out var h) ? h : 100;
+        var dealt = Math.Max(0, Math.Min(ev.DmgHealth, before));
+        _hp[key] = Math.Max(0, ev.Health);
+        var l = L(a);
+        l.Damage += dealt;
+        var w = ev.Weapon ?? "";
+        if (w == "hegrenade") l.HeDamage += dealt;
+        else if (w is "inferno" or "molotov" or "incgrenade") l.MolotovDamage += dealt;
+        if (Config.SendRawUtilityEvents) Send("player_hurt", new { round = _round + 1, attacker = Sid(a), victim = Sid(v), weapon = w, dmg = dealt, hitgroup = ev.Hitgroup });
+        return HookResult.Continue;
+    }
+
+    [GameEventHandler]
+    public HookResult OnGrenadeThrown(EventGrenadeThrown ev, GameEventInfo info)
+    {
+        var p = ev.Userid; if (!Human(p)) return HookResult.Continue;
+        var l = L(p!);
+        switch (ev.Weapon) { case "flashbang": l.Flashes++; break; case "hegrenade": l.He++; break; case "molotov" or "incgrenade": l.Molotovs++; break; case "smokegrenade": l.Smokes++; break; }
+        if (Config.SendRawUtilityEvents) Send("grenade_thrown", new { round = _round + 1, player = Sid(p), weapon = ev.Weapon });
+        return HookResult.Continue;
+    }
+
+    [GameEventHandler]
+    public HookResult OnPlayerBlind(EventPlayerBlind ev, GameEventInfo info)
+    {
+        var a = ev.Attacker; var v = ev.Userid;
+        if (!Human(a) || v is not { IsValid: true } || a!.SteamID == v.SteamID || ev.BlindDuration <= 0) return HookResult.Continue;
+        var l = L(a);
+        if (a.TeamNum != v.TeamNum) { l.EnemiesFlashed++; l.FlashMs += (int)(ev.BlindDuration * 1000); l.FlashesHit.Add((uint)ev.Entityid); }
+        else l.TeamFlashed++;
+        if (Config.SendRawUtilityEvents) Send("player_blind", new { round = _round + 1, attacker = Sid(a), victim = Sid(v), enemy = a.TeamNum != v.TeamNum, duration = ev.BlindDuration, flash = ev.Entityid });
+        return HookResult.Continue;
+    }
+
+    /// After every death: entry (first kill/death of the round) and clutch detection (last player alive vs X).
+    private void TrackDeath(EventPlayerDeath ev)
+    {
+        var a = ev.Attacker; var v = ev.Userid;
+        if (v is not { IsValid: true }) return;
+        var enemyKill = a is { IsValid: true } && a.TeamNum != v.TeamNum;
+        if (Human(v)) L(v).Deaths++;
+        if (enemyKill && Human(a))
+        {
+            var l = L(a!); l.Kills++;
+            var w = (ev.Weapon ?? "").Replace("weapon_", "");
+            l.Weapons[w] = (l.Weapons.TryGetValue(w, out var c) ? c : 0) + 1;
+        }
+        if (enemyKill && !_firstDone)
+        {
+            _firstDone = true;
+            if (Human(a)) L(a!).FirstKill = true;
+            if (Human(v)) L(v).FirstDeath = true;
+        }
+        var alive = Utilities.GetPlayers().Where(p => p.IsValid && p.PawnIsAlive && p.Slot != v.Slot && p.TeamNum is (int)CsTeam.CounterTerrorist or (int)CsTeam.Terrorist).ToList();
+        foreach (var team in new[] { (int)CsTeam.CounterTerrorist, (int)CsTeam.Terrorist })
+        {
+            var mine = alive.Where(p => p.TeamNum == team).ToList();
+            var enemies = alive.Count(p => p.TeamNum != team);
+            if (mine.Count == 1 && enemies >= 1 && Human(mine[0]))
+            {
+                var l = L(mine[0]);
+                if (l.ClutchVs == 0) l.ClutchVs = enemies;
+            }
+        }
+    }
+
+    [GameEventHandler]
     public HookResult OnRoundEnd(EventRoundEnd ev, GameEventInfo info)
     {
         _round++;
         var (ct, t) = Scores();
+        var winner = ev.Winner == (int)CsTeam.CounterTerrorist ? "ct" : ev.Winner == (int)CsTeam.Terrorist ? "t" : "none";
+        if (Config.SendRoundStats && _rl.Count > 0 && !Warmup())
+        {
+            var players = _rl.Where(kv => kv.Value.Team != "spec").Select(kv => new
+            {
+                steamId = kv.Key.ToString(), team = kv.Value.Team,
+                dmg = kv.Value.Damage, heDmg = kv.Value.HeDamage, molDmg = kv.Value.MolotovDamage,
+                flashes = kv.Value.Flashes, flashesHit = kv.Value.FlashesHit.Count, enemiesFlashed = kv.Value.EnemiesFlashed, flashMs = kv.Value.FlashMs, teamFlashed = kv.Value.TeamFlashed,
+                he = kv.Value.He, molotovs = kv.Value.Molotovs, smokes = kv.Value.Smokes,
+                kills = kv.Value.Kills, deaths = kv.Value.Deaths, weapons = kv.Value.Weapons,
+                firstKill = kv.Value.FirstKill, firstDeath = kv.Value.FirstDeath,
+                clutchVs = kv.Value.ClutchVs, clutchWon = kv.Value.ClutchVs > 0 && kv.Value.Team == winner,
+            }).ToList();
+            Send("round_stats", new { round = _round, winner, scoreCt = ct, scoreT = t, map = Server.MapName, players });
+        }
         Send("round_end", new { round = _round, winner = ev.Winner == (int)CsTeam.CounterTerrorist ? "ct" : ev.Winner == (int)CsTeam.Terrorist ? "t" : "none", reason = ev.Reason, scoreCt = ct, scoreT = t, map = Server.MapName });
         return HookResult.Continue;
     }
@@ -79,6 +197,7 @@ public class AceBridgePlugin : BasePlugin, IPluginConfig<AceBridgeConfig>
     [GameEventHandler]
     public HookResult OnPlayerDeath(EventPlayerDeath ev, GameEventInfo info)
     {
+        TrackDeath(ev);
         if (!Config.SendKills) return HookResult.Continue;
         Send("player_death", new
         {
@@ -122,6 +241,9 @@ public class AceBridgePlugin : BasePlugin, IPluginConfig<AceBridgeConfig>
     }
 
     private static string? Sid(CCSPlayerController? p) => p is { IsValid: true, IsBot: false } && p.SteamID != 0 ? p.SteamID.ToString() : null;
+
+    private static bool Warmup() =>
+        Utilities.FindAllEntitiesByDesignerName<CCSGameRulesProxy>("cs_gamerules").FirstOrDefault()?.GameRules?.WarmupPeriod ?? false;
 
     private static (int ct, int t) Scores()
     {

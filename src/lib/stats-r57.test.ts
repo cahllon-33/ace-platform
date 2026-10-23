@@ -36,3 +36,21 @@ describe("R57 stats", () => {
     expect(statsPublicFrom(undefined)).toBe(false); expect(statsPublicFrom("1")).toBe(true);
   });
 });
+
+describe("R58 AceBridge round stats feed My Stats", async () => {
+  const { aggregateRounds } = await import("@/lib/acebridge-rounds");
+  const { withBridge } = await import("@/lib/stats-r57");
+  it("turns flash/HE/clutch-split stats real once a match has plugin data, report values still win", () => {
+    const [bx] = aggregateRounds([{ round: 1, players: [{ steamId: "76561198000000001", team: "t", dmg: 90, flashes: 2, flashesHit: 1, enemiesFlashed: 2, flashMs: 3000, he: 1, heDmg: 25, kills: 2, clutchVs: 1, clutchWon: true }] }]);
+    const line = withBridge(L({ dmg: 1500, rounds: null, bx }));
+    expect(line.dmg).toBe(1500); expect(line.rounds).toBe(1); expect(line.m2).toBe(1);
+    const p = performanceBlock([line, L({})]);
+    expect(p.flashSuccess).toEqual({ value: 50, matches: 1 });
+    expect(p.flashesPerRound).toEqual({ value: 2, matches: 1 });
+    const t = totalsBlock([line], [], 0);
+    expect(t.utility.heDamage).toEqual({ value: 25, matches: 1 });
+    expect(t.utility.flashSeconds).toEqual({ value: 3, matches: 1 });
+    expect(t.clutches.v1.won).toEqual({ value: 1, matches: 1 });
+    expect(totalsBlock([L({})], [], 0).utility.flashesThrown).toMatchObject({ value: null, notTracked: true });
+  });
+});

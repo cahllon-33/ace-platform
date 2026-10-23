@@ -59,7 +59,7 @@ export async function myParty(userId: string) {
   if (!p) return null;
   return partyView(p, await onlineSet(p.members.map((x) => x.userId)));
 }
-async function myInvites(userId: string) {
+export async function myInvites(userId: string) {
   const rows = await db().partyInvite.findMany({ where: { userId }, include: { party: { include: { leader: { select: UPSEL }, _count: { select: { members: true } } } } }, orderBy: { createdAt: "desc" }, take: 10 });
   return rows.map((r) => ({ partyId: r.partyId, from: card(r.party.leader), size: r.party._count.members }));
 }
@@ -81,6 +81,20 @@ export async function clan(id: string, meId: string | null) {
   const members = c.members.map((m) => ({ ...card(m.user), role: m.role, online: online.has(m.userId) }));
   return { id: c.id, name: c.name, tag: c.tag, description: c.description, region: c.region, language: c.language, isOpen: c.isOpen, ownerId: c.ownerId, createdAt: c.createdAt.toISOString(),
     members, avgLevel: avgLevel(members.map((m) => m.level)), memberMatches7d: matches7d, isMember: !!meId && ids.includes(meId) };
+}
+
+/** R58 desktop "Friends & party": accepted friends with online status, incoming requests, my party and party invites. */
+export async function social(meId: string) {
+  const [c, party, invites, pending] = await Promise.all([
+    comms(meId), myParty(meId), myInvites(meId),
+    db().friendship.findMany({ where: { addresseeId: meId, status: "PENDING" }, include: { requester: { select: UPSEL } }, orderBy: { createdAt: "desc" }, take: 20 }),
+  ]);
+  const inParty = new Set((party?.members ?? []).map((m) => m.id));
+  return {
+    friends: c.friends.map((f) => ({ id: f.id, name: f.name, avatarUrl: f.avatarUrl, rp: f.rp, level: f.level, online: f.online, inMyParty: inParty.has(f.id) })),
+    requests: pending.map((r) => ({ id: r.id, from: card(r.requester) })),
+    party, invites, partyMax: PARTY_MAX,
+  };
 }
 
 /* ---------------- Comms (friends + DMs) ---------------- */

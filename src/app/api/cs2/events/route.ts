@@ -2,8 +2,9 @@ import { NextResponse } from "next/server";
 import { Prisma } from "@prisma/client";
 import { verifyPluginSignature } from "@/lib/ace-signature";
 import { getPrisma } from "@/server/db";
+import { refreshBridgeStats } from "@/server/acebridge-stats";
 
-const TYPES = new Set(["round_end", "player_death", "round_mvp", "match_end", "map_start", "heartbeat"]);
+const TYPES = new Set(["round_end", "player_death", "round_mvp", "match_end", "map_start", "heartbeat", "round_start", "round_stats", "player_hurt", "player_blind", "grenade_thrown"]);
 
 /** AceBridge (CounterStrikeSharp) events. HMAC-SHA256 over "<timestamp>.<raw body>"; eventId makes it idempotent. */
 export async function POST(request: Request) {
@@ -34,6 +35,8 @@ export async function POST(request: Request) {
         payload: (evt.data ?? {}) as Prisma.InputJsonValue,
       },
     });
+    const matchId = typeof evt.matchId === "string" ? evt.matchId.slice(0, 80) : null;
+    if (type === "round_stats" && matchId) await refreshBridgeStats(matchId).catch(() => null); // stats are derived; the event itself is already stored
     return NextResponse.json({ ok: true, stored: true });
   } catch (e) {
     if (e instanceof Prisma.PrismaClientKnownRequestError && e.code === "P2002") return NextResponse.json({ ok: true, stored: false, duplicate: true });

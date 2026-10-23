@@ -20,7 +20,31 @@ export type R57Line = {
   clW: number | null; clP: number | null; enW: number | null; enA: number | null; util: number | null;
   m2: number | null; m3: number | null; m4: number | null; m5: number | null; mvps: number | null;
   score: string | null; rpDelta: number | null;
+  /** R58: AceBridge 0.3.0 per-round aggregate for this match, when the server ran the plugin bound to it. */
+  bx?: import("@/lib/acebridge-rounds").BridgeStat | null;
 };
+/** Prefer the verified match report; fill gaps from AceBridge round stats (never estimated). */
+export function withBridge(l: R57Line): R57Line {
+  const b = l.bx; if (!b || !b.rounds) return l;
+  return { ...l,
+    dmg: l.dmg ?? b.damage, rounds: l.rounds ?? b.rounds, k: l.k ?? b.kills, d: l.d ?? b.deaths,
+    enW: l.enW ?? b.firstKills, enA: l.enA ?? b.firstKills + b.firstDeaths,
+    clW: l.clW ?? b.clutchWins, clP: l.clP ?? b.clutchAttempts,
+    util: l.util ?? b.heDamage + b.molotovDamage,
+    m2: l.m2 ?? b.k2, m3: l.m3 ?? b.k3, m4: l.m4 ?? b.k4, m5: l.m5 ?? b.k5 };
+}
+const bxs = (lines: R57Line[]) => lines.filter((l) => l.bx && l.bx.rounds > 0).map((l) => l.bx!);
+/** Sum of an AceBridge-only field; notTracked while no match in scope has plugin data. */
+function btotal(lines: R57Line[], f: (b: NonNullable<R57Line["bx"]>) => number, scale = 1) {
+  const b = bxs(lines);
+  return b.length ? { value: +(b.reduce((s, x) => s + f(x), 0) * scale).toFixed(1), matches: b.length } : { value: null, matches: 0, notTracked: true as const };
+}
+function bratio(lines: R57Line[], fa: (b: NonNullable<R57Line["bx"]>) => number, fb: (b: NonNullable<R57Line["bx"]>) => number, scale = 1, dp = 2) {
+  const b = bxs(lines);
+  if (!b.length) return { value: null, matches: 0, notTracked: true as const };
+  const a = b.reduce((s, x) => s + fa(x), 0), d = b.reduce((s, x) => s + fb(x), 0);
+  return { value: d > 0 ? +((a / d) * scale).toFixed(dp) : null, matches: b.length };
+}
 
 type Stat = { value: number | null; matches: number };
 /** Sum over the matches that recorded the field. */
@@ -47,8 +71,8 @@ export function performanceBlock(lines: R57Line[]) {
     entrySuccess: ratio(lines, (l) => l.enW, (l) => l.enA, 100, 1),
     clutchSuccess: ratio(lines, (l) => l.clW, (l) => l.clP, 100, 1),
     utilDmgPerRound: ratio(lines, (l) => l.util, (l) => l.rounds, 1, 1),
-    flashSuccess: { value: null, matches: 0, notTracked: true },
-    flashesPerRound: { value: null, matches: 0, notTracked: true },
+    flashSuccess: bratio(lines, (b) => b.flashesHit, (b) => b.flashesThrown, 100, 1) as Stat & { notTracked?: true },
+    flashesPerRound: bratio(lines, (b) => b.flashesThrown, (b) => b.rounds) as Stat & { notTracked?: true },
   };
 }
 export type Perf = ReturnType<typeof performanceBlock>;
@@ -88,9 +112,11 @@ export function totalsBlock(lines: R57Line[], weapons: { cls: WeaponClass; kills
     firstKills: enW, firstDeaths, entryAttempts: enA,
     multi: { k5: total(lines, (l) => l.m5), k4: total(lines, (l) => l.m4), k3: total(lines, (l) => l.m3), k2: total(lines, (l) => l.m2) },
     weapons: { sniper: cls("sniper"), pistol: cls("pistol"), knife: cls("knife"), zeus: cls("zeus"), other: cls("other"), matches: weaponMatches },
-    utility: { damage: total(lines, (l) => l.util), flashesThrown: null, enemiesFlashed: null, heThrown: null, notTracked: ["flashesThrown", "enemiesFlashed", "heThrown"] },
+    utility: { damage: total(lines, (l) => l.util), flashesThrown: btotal(lines, (b) => b.flashesThrown), enemiesFlashed: btotal(lines, (b) => b.enemiesFlashed),
+      flashSeconds: btotal(lines, (b) => b.flashMs, 0.001), teamFlashed: btotal(lines, (b) => b.teamFlashed), heThrown: btotal(lines, (b) => b.heThrown),
+      heDamage: btotal(lines, (b) => b.heDamage), molotovsThrown: btotal(lines, (b) => b.molotovsThrown), molotovDamage: btotal(lines, (b) => b.molotovDamage), smokesThrown: btotal(lines, (b) => b.smokesThrown) },
     clutches: { won: clW, played: clP, lost: { value: clW.value != null && clP.value != null ? clP.value - clW.value : null, matches: clP.matches },
-      winPct: ratio(lines, (l) => l.clW, (l) => l.clP, 100, 1), v1: null, v2: null, notTracked: ["1v1", "1v2"] },
+      winPct: ratio(lines, (l) => l.clW, (l) => l.clP, 100, 1), v1: { won: btotal(lines, (b) => b.c1v1W), lost: btotal(lines, (b) => b.c1v1A - b.c1v1W) }, v2: { won: btotal(lines, (b) => b.c1v2W), lost: btotal(lines, (b) => b.c1v2A - b.c1v2W) } },
   };
 }
 

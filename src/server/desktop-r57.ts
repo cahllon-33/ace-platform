@@ -8,7 +8,7 @@ import { ACTIVE_DUTY } from "@/lib/queue";
 import { regionOf, REGIONS } from "@/lib/intel";
 import { headshotsFor } from "@/server/desktop-r53";
 import {
-  mapsBlock, performanceBlock, progressBlock, seasonStandings, statsPublicFrom, STATS_PUBLIC_KEY, totalsBlock, trends, weaponClass,
+  mapsBlock, performanceBlock, withBridge, progressBlock, seasonStandings, statsPublicFrom, STATS_PUBLIC_KEY, totalsBlock, trends, weaponClass,
   type R57Line, type WeaponClass,
 } from "@/lib/stats-r57";
 
@@ -37,6 +37,10 @@ async function loadLines(userId: string, steamId: string | null, f: F, from: Dat
   const hist = ids.length ? await db().ratingHistory.findMany({ where: { userId, matchId: { in: ids } }, select: { matchId: true, ratingBefore: true, ratingAfter: true } }) : [];
   const delta = new Map(hist.map((h) => [h.matchId!, h.ratingAfter - h.ratingBefore]));
   const hsBy = await headshotsFor(mps, steamId);
+  // R58: AceBridge round stats, keyed by the id the plugin was bound to (A.C.E match id or DatHost match id).
+  const keys = [...new Set(mps.flatMap((m) => [m.matchId, m.match.externalId].filter((x): x is string => !!x)))];
+  const bxRows = steamId && keys.length ? await db().cs2PlayerMatchStat.findMany({ where: { steamId, matchKey: { in: keys } } }).catch(() => []) : [];
+  const bxBy = new Map(bxRows.map((r) => [r.matchKey, r]));
   const lines: R57Line[] = mps.map((m) => {
     const mineA = m.teamId != null && m.teamId === m.match.teamAId;
     const known = m.teamId != null && m.match.teamAId != null;
@@ -49,18 +53,21 @@ async function loadLines(userId: string, steamId: string | null, f: F, from: Dat
       clW: m.clutchesWon, clP: m.clutchesPlayed, enW: m.entryWins, enA: m.entryAttempts, util: m.utilityDamage,
       m2: m.multi2k, m3: m.multi3k, m4: m.multi4k, m5: m.multi5k, mvps: m.mvps,
       score: known ? (mineA ? `${m.match.scoreA}-${m.match.scoreB}` : `${m.match.scoreB}-${m.match.scoreA}`) : null, rpDelta: delta.get(m.matchId) ?? null,
+      bx: bxBy.get(m.matchId) ?? (m.match.externalId ? bxBy.get(m.match.externalId) : undefined) ?? null,
     };
-  });
+  }).map(withBridge);
   return { mps, lines };
 }
 
 /** Weapon-class kills: the match report's weapon table first, else AceBridge player_death events (weapon field). */
-async function weaponKills(mps: Awaited<ReturnType<typeof loadLines>>["mps"], steamId: string | null) {
+async function weaponKills(mps: Awaited<ReturnType<typeof loadLines>>["mps"], steamId: string | null, bxOf?: Map<string, NonNullable<R57Line["bx"]>>) {
   const out: { cls: WeaponClass; kills: number }[] = [];
   let matches = 0;
   const need = new Map<string, string>();
   for (const m of mps) {
+    const bx = bxOf?.get(m.matchId);
     if (m.weapons.length) { matches++; for (const w of m.weapons) out.push({ cls: weaponClass(w.weapon), kills: w.kills }); }
+    else if (bx && bx.rounds > 0) { matches++; out.push({ cls: "sniper", kills: bx.wSniper }, { cls: "pistol", kills: bx.wPistol }, { cls: "knife", kills: bx.wKnife }, { cls: "zeus", kills: bx.wZeus }, { cls: "other", kills: bx.wOther }); }
     else if (steamId) { need.set(m.matchId, m.matchId); if (m.match.externalId) need.set(m.match.externalId, m.matchId); }
   }
   if (need.size && steamId) {
@@ -89,7 +96,7 @@ export async function myStats(userId: string, f: F) {
   const { mps, lines } = await loadLines(u.id, u.steamId, f, since, null);
   const prev = days ? (await loadLines(u.id, u.steamId, f, new Date(now - 2 * days * 86400_000), since)).lines : null;
   const perf = performanceBlock(lines);
-  const w = await weaponKills(mps, u.steamId);
+  const w = await weaponKills(mps, u.steamId, new Map(lines.filter((l) => l.bx).map((l) => [l.matchId, l.bx!])));
   const hist = await db().ratingHistory.findMany({ where: { userId: u.id, matchId: { not: null }, ...(since ? { createdAt: { gte: since } } : {}) }, orderBy: { createdAt: "asc" }, select: { ratingBefore: true, ratingAfter: true, createdAt: true } });
   const tier = rankFromRating(u.competitiveRating);
   return {
@@ -102,7 +109,8 @@ export async function myStats(userId: string, f: F) {
     maps: { matches: lines.filter((l) => l.map).length, ...mapsBlock(lines) },
     history: lines.slice(0, 50).map((l) => ({ matchId: l.matchId, at: new Date(l.at).toISOString(), map: l.map, won: l.won, score: l.score, k: l.k, d: l.d, a: l.a,
       adr: l.dmg != null && l.rounds ? Math.round(l.dmg / l.rounds) : null, hsPct: l.hs != null && l.k ? Math.round((l.hs / l.k) * 100) : null, rpDelta: l.rpDelta, type: l.tournament ? "tournament" : "queue" })),
-    notTracked: ["flashSuccess", "flashesPerRound", "flashesThrown", "enemiesFlashed", "heThrown", "clutch1v1", "clutch1v2"],
+    // Stats that come only from AceBridge 0.3.0 round events; each reads "Not tracked yet" until a match in scope has them.
+    bridgeMatches: lines.filter((l) => l.bx && l.bx.rounds > 0).length,
   };
 }
 

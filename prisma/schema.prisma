@@ -877,3 +877,46 @@ model LeagueSeason {
 
   @@index([status])
 }
+
+/// R58: per-match, per-player stats aggregated from AceBridge 0.3.0 "round_stats" events (recomputed idempotently on each round).
+/// matchKey is the id the plugin was bound to (A.C.E match id or DatHost match id).
+model Cs2PlayerMatchStat {
+  id             String   @id @default(cuid())
+  matchKey       String
+  steamId        String
+  rounds         Int      @default(0)
+  damage         Int      @default(0)
+  heDamage       Int      @default(0)
+  molotovDamage  Int      @default(0)
+  flashesThrown  Int      @default(0)
+  flashesHit     Int      @default(0)
+  enemiesFlashed Int      @default(0)
+  flashMs        Int      @default(0)
+  teamFlashed    Int      @default(0)
+  heThrown       Int      @default(0)
+  molotovsThrown Int      @default(0)
+  smokesThrown   Int      @default(0)
+  kills          Int      @default(0)
+  deaths         Int      @default(0)
+  firstKills     Int      @default(0)
+  firstDeaths    Int      @default(0)
+  clutchAttempts Int      @default(0)
+  clutchWins     Int      @default(0)
+  c1v1A          Int      @default(0)
+  c1v1W          Int      @default(0)
+  c1v2A          Int      @default(0)
+  c1v2W          Int      @default(0)
+  k2             Int      @default(0)
+  k3             Int      @default(0)
+  k4             Int      @default(0)
+  k5             Int      @default(0)
+  wSniper        Int      @default(0)
+  wPistol        Int      @default(0)
+  wKnife         Int      @default(0)
+  wZeus          Int      @default(0)
+  wOther         Int      @default(0)
+  updatedAt      DateTime @updatedAt
+
+  @@unique([matchKey, steamId])
+  @@index([steamId])
+}

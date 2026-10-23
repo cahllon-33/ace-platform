@@ -247,6 +247,8 @@ export async function launchLobby(lobbyId: string) {
       ...(lobby.isTest ? {} : { teamSize: 5 }),
       password: serverPassword,
     });
+    // R58: bind AceBridge round stats to this DatHost match (the site maps it to the A.C.E match via externalId). Harmless if the plugin is not installed.
+    if (/^[A-Za-z0-9_-]{1,80}$/.test(match.id)) await api.console(`ace_match_id ${match.id}`).catch(() => undefined);
     const target = await connectTarget(api);
     const connectUrl = target?.connectUrl ?? null;
     const server = target ? { address: target.address } : null;
