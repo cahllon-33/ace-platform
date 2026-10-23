@@ -98,6 +98,12 @@ model User {
   subscriptionEventAt   DateTime?
   /// R49b: the player chose to hide the Steam inventory showcase on their public profile.
   inventoryHidden       Boolean          @default(false)
+  /// R53 privacy: public | friends | private (stats, history, achievements). Server-enforced.
+  profileVisibility     String           @default("public")
+  /// R53: false = always shown as offline to other players.
+  showOnline            Boolean          @default(true)
+  /// R53: friends | everyone (who may send direct messages).
+  dmPolicy              String           @default("friends")
   /// R50 linked Discord account (OAuth identify). null = not linked.
   discordId             String?          @unique
   discordUsername       String           @default("")

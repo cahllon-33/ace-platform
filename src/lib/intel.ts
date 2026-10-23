@@ -11,14 +11,18 @@ const div = (a: number | null, b: number | null, scale = 1, dp = 2) => (a == nul
 export function performance(lines: Line[]) {
   const S = (f: (l: Line) => number | null) => sum(lines.map(f));
   const kills = S((l) => l.k), deaths = S((l) => l.d), assists = S((l) => l.a), dmg = S((l) => l.dmg), rounds = S((l) => l.rounds), hs = S((l) => l.hs);
+  // Rates pair numerator and denominator per match, so a match that did not record one never skews the rate.
+  const P = (fa: (l: Line) => number | null, fb: (l: Line) => number | null) => { let a = 0, b = 0, n = 0; for (const l of lines) { const x = fa(l), y = fb(l); if (x != null && y != null) { a += x; b += y; n++; } } return n ? [a, b] as const : [null, null] as const; };
+  const R = (fa: (l: Line) => number | null, fb: (l: Line) => number | null, scale = 1, dp = 2) => { const [a, b] = P(fa, fb); return div(a, b, scale, dp); };
   const decided = lines.filter((l) => l.won != null), wins = decided.filter((l) => l.won).length;
   return {
     matches: lines.length, wins, losses: decided.length - wins, winRate: decided.length ? Math.round((wins / decided.length) * 100) : null,
     kills, deaths, assists, rounds, damage: dmg,
-    kd: div(kills, deaths), kr: div(kills, rounds), adr: div(dmg, rounds, 1, 0), hsPct: div(hs, kills, 100, 0),
-    utilPerRound: div(S((l) => l.util), rounds, 1, 1),
-    entry: { won: S((l) => l.enW), attempts: S((l) => l.enA), rate: div(S((l) => l.enW), S((l) => l.enA), 100, 0) },
-    clutch: { won: S((l) => l.clW), played: S((l) => l.clP), rate: div(S((l) => l.clW), S((l) => l.clP), 100, 0) },
+    kd: R((l) => l.k, (l) => l.d), kr: R((l) => l.k, (l) => l.rounds), adr: R((l) => l.dmg, (l) => l.rounds, 1, 0), hsPct: R((l) => l.hs, (l) => l.k, 100, 0),
+    headshots: hs, hsMatches: lines.filter((l) => l.hs != null && l.k != null).length,
+    utilPerRound: R((l) => l.util, (l) => l.rounds, 1, 1),
+    entry: { won: S((l) => l.enW), attempts: S((l) => l.enA), rate: R((l) => l.enW, (l) => l.enA, 100, 0) },
+    clutch: { won: S((l) => l.clW), played: S((l) => l.clP), rate: R((l) => l.clW, (l) => l.clP, 100, 0) },
     multi: { k2: S((l) => l.m2), k3: S((l) => l.m3), k4: S((l) => l.m4), k5: S((l) => l.m5) }, mvps: S((l) => l.mvps),
   };
 }

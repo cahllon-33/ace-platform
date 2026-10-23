@@ -5,6 +5,7 @@ using System.Text.Json.Serialization;
 using CounterStrikeSharp.API;
 using CounterStrikeSharp.API.Core;
 using CounterStrikeSharp.API.Core.Attributes.Registration;
+using CounterStrikeSharp.API.Modules.Commands;
 using CounterStrikeSharp.API.Modules.Utils;
 using Microsoft.Extensions.Logging;
 
@@ -23,7 +24,7 @@ public class AceBridgeConfig : BasePluginConfig
 public class AceBridgePlugin : BasePlugin, IPluginConfig<AceBridgeConfig>
 {
     public override string ModuleName => "AceBridge";
-    public override string ModuleVersion => "0.1.0";
+    public override string ModuleVersion => "0.2.0";
     public override string ModuleAuthor => "A.C.E.";
     public override string ModuleDescription => "Posts round, kill, MVP and match-end events to A.C.E. with an HMAC signature.";
 
@@ -31,6 +32,18 @@ public class AceBridgePlugin : BasePlugin, IPluginConfig<AceBridgeConfig>
     private static readonly HttpClient Http = new() { Timeout = TimeSpan.FromSeconds(8) };
     private string _url = "", _secret = "", _serverId = "", _matchKey = "";
     private int _round;
+    private string _boundMatch = "";
+
+    /// Server-only: `ace_match_id <A.C.E match id or DatHost match id>` so kill events (with headshot flag) join the verified match.
+    [ConsoleCommand("ace_match_id", "Bind AceBridge events to an A.C.E match id")]
+    [CommandHelper(minArgs: 1, usage: "<matchId>", whoCanExecute: CommandUsage.SERVER_ONLY)]
+    public void OnBindMatch(CCSPlayerController? caller, CommandInfo cmd)
+    {
+        var id = cmd.GetArg(1).Trim();
+        if (id.Length is < 1 or > 80) return;
+        _boundMatch = id; _matchKey = id;
+        Logger.LogInformation("[AceBridge] Events bound to match {Id}", id);
+    }
 
     public void OnConfigParsed(AceBridgeConfig config)
     {
@@ -46,7 +59,10 @@ public class AceBridgePlugin : BasePlugin, IPluginConfig<AceBridgeConfig>
         RegisterListener<Listeners.OnMapStart>(map =>
         {
             _round = 0;
-            _matchKey = $"{map}-{DateTimeOffset.UtcNow.ToUnixTimeSeconds()}";
+            // Bind events to the A.C.E match: ace_match_id (server command) or ACE_MATCH_ID, else a map/time key.
+            _matchKey = _boundMatch.Length > 0 ? _boundMatch
+                : Environment.GetEnvironmentVariable("ACE_MATCH_ID") is { Length: > 0 } mid ? mid
+                : $"{map}-{DateTimeOffset.UtcNow.ToUnixTimeSeconds()}";
             Send("map_start", new { map });
         });
     }

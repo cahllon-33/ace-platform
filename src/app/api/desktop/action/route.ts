@@ -1,6 +1,7 @@
 import { connection } from "next/server";
 import { readSessionUser } from "@/server/session";
 import { desktopAction } from "@/server/desktop-v2";
+import { setPrivacy } from "@/server/desktop-r53";
 
 /** R52 desktop v2 mutations: { op, ...args }. The custom header blocks cross-site form posts (CSRF). */
 export async function POST(request: Request) {
@@ -13,7 +14,7 @@ export async function POST(request: Request) {
   try { body = (await request.json()) as Record<string, unknown>; } catch { return json({ error: "bad-json" }, 400); }
   if (typeof body?.op !== "string") return json({ error: "bad-op" }, 400);
   try {
-    const r = await desktopAction(me.id, body.op, body);
+    const r = body.op === "privacy.set" ? await setPrivacy(me.id, body) : await desktopAction(me.id, body.op, body);
     return json(r, r.ok ? 200 : 400);
   } catch {
     return json({ ok: false, error: "unavailable" }, 503);

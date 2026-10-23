@@ -3,6 +3,9 @@ import { connection } from "next/server";
 import { readSessionUser } from "@/server/session";
 import * as hub from "@/server/desktop-hub";
 import * as v2 from "@/server/desktop-v2";
+import * as r53 from "@/server/desktop-r53";
+import { readIsSteamOwner } from "@/server/admin-gate";
+import { getPrisma } from "@/server/db";
 
 /** R51 native-screen data for the A.C.E desktop app. ?section=leaderboard|pros|teams|matches|player&id=|me|party|notifications */
 export async function GET(request: Request) {
@@ -19,6 +22,8 @@ export async function GET(request: Request) {
       case "matches": return json({ rows: await hub.hubMatches() });
       case "player": {
         const id = (u.searchParams.get("id") ?? "").slice(0, 64);
+        const viewer = await readSessionUser();
+        if (id && !(await v2.profileReadable(id, viewer?.id ?? null, await readIsSteamOwner()))) return json({ error: "private" }, 403);
         const p = id ? await hub.hubPlayer(id) : null;
         return p ? json(p) : json({ error: "not-found" }, 404);
       }
@@ -34,6 +39,7 @@ export async function GET(request: Request) {
         if (section === "intel") {
           const id = q("id") ?? me?.id;
           if (!id) return json({ error: "sign-in" }, 401);
+          if (!(await v2.profileReadable(id, me?.id ?? null, await readIsSteamOwner()))) return json({ error: "private" }, 403);
           const r = await v2.intel(id, { range: q("range"), map: q("map"), type: q("type") });
           if (!r) return json({ error: "not-found" }, 404);
           // Rating movement is a PLUS/PREMIUM feature on the site; the desktop app follows the same rule.
@@ -60,6 +66,23 @@ export async function GET(request: Request) {
         if (section === "me") return json(await hub.hubPlayer(me.id));
         if (section === "party") return json({ rows: await hub.hubParty(me.id) });
         return json({ rows: await hub.hubNotifications(me.id) });
+      }
+      // R53 (desktop 1.3.0)
+      case "progress": case "privacy": case "session": {
+        const me = await readSessionUser();
+        if (!me) return json({ error: "sign-in" }, 401);
+        if (section === "progress") return json(await r53.progress(me.id));
+        if (section === "privacy") return json(await r53.readPrivacy(me.id));
+        // Owner flag only decides whether the Command entry is shown; every Command API re-checks on the server.
+        const row = await getPrisma().user.findUnique({ where: { id: me.id }, select: { discordId: true, steamId: true } });
+        return json({ id: me.id, owner: await readIsSteamOwner(), discordLinked: !!row?.discordId, steamLinked: !!row?.steamId });
+      }
+      case "dossier": {
+        const me = await readSessionUser();
+        const id = (u.searchParams.get("id") ?? "").slice(0, 64) || me?.id;
+        if (!id) return json({ error: "sign-in" }, 401);
+        const d = await r53.dossier(id, me?.id ?? null, await readIsSteamOwner());
+        return d ? json(d) : json({ error: "not-found" }, 404);
       }
       default: return json({ error: "unknown-section" }, 400);
     }

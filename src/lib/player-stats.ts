@@ -15,10 +15,15 @@ const sum = (lines: StatLine[], key: keyof StatLine) => {
   for (const l of lines) { const v = l[key]; if (typeof v === "number") { total += v; seen = true; } }
   return seen ? total : null;
 };
-const ratio = (a: number | null, b: number | null, scale = 1) => (a === null || b === null || b === 0 ? null : (a / b) * scale);
+/** Paired ratio: only lines that recorded BOTH fields count, so a missing numerator never dilutes the rate. */
+const paired = (lines: StatLine[], a: keyof StatLine, b: keyof StatLine, scale = 1) => {
+  let x = 0, y = 0;
+  for (const l of lines) { const u = l[a], v = l[b]; if (typeof u === "number" && typeof v === "number") { x += u; y += v; } }
+  return y === 0 ? null : (x / y) * scale;
+};
 
 export function aggregateStats(lines: StatLine[]) {
-  const kills = sum(lines, "kills"), deaths = sum(lines, "deaths"), rounds = sum(lines, "roundsPlayed");
+  const kills = sum(lines, "kills"), deaths = sum(lines, "deaths");
   const maps = new Map<string, { played: number; won: number }>();
   for (const l of lines) {
     if (!l.mapName) continue;
@@ -33,12 +38,12 @@ export function aggregateStats(lines: StatLine[]) {
   return {
     matches: lines.length,
     winRate: lines.length ? (lines.filter((l) => l.won).length / lines.length) * 100 : null,
-    adr: ratio(sum(lines, "damage"), rounds),
-    kr: ratio(kills, rounds),
-    hs: ratio(sum(lines, "headshotKills"), kills, 100),
-    clutch: ratio(sum(lines, "clutchesWon"), sum(lines, "clutchesPlayed"), 100),
-    entry: ratio(sum(lines, "entryWins"), sum(lines, "entryAttempts"), 100),
-    utility: ratio(sum(lines, "utilityDamage"), rounds),
+    adr: paired(lines, "damage", "roundsPlayed"),
+    kr: paired(lines, "kills", "roundsPlayed"),
+    hs: paired(lines, "headshotKills", "kills", 100),
+    clutch: paired(lines, "clutchesWon", "clutchesPlayed", 100),
+    entry: paired(lines, "entryWins", "entryAttempts", 100),
+    utility: paired(lines, "utilityDamage", "roundsPlayed"),
     kills, deaths,
     multi: { k2: sum(lines, "multi2k"), k3: sum(lines, "multi3k"), k4: sum(lines, "multi4k"), k5: sum(lines, "multi5k") },
     maps: [...maps].map(([name, v]) => ({ name, ...v })).sort((a, b) => b.played - a.played),

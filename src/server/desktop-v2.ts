@@ -10,6 +10,8 @@ import { PARTY_MAX, avgLevel, cleanTags } from "@/lib/party";
 import { activity, percentile, perMap, performance, ratingBand, regionOf, roleProfile, streaks, type Line } from "@/lib/intel";
 import { FREE_PRICE, PLUS_PRICE, PREMIUM_PRICE } from "@/lib/pricing";
 import { PLAN_MATRIX } from "@/lib/plan-compare";
+import { asDmPolicy, asVisibility, canDm, canViewProfile } from "@/lib/privacy";
+import { headshotsFor } from "@/server/desktop-r53";
 
 const db = () => getPrisma();
 const ONLINE_MS = 5 * 60_000;
@@ -19,7 +21,8 @@ const card = (u: U) => ({ id: u.id, name: u.displayName, avatarUrl: u.avatarUrl 
 
 async function onlineSet(ids: string[]) {
   if (!ids.length) return new Set<string>();
-  const rows = await db().userSession.findMany({ where: { userId: { in: ids }, revokedAt: null, lastSeenAt: { gte: new Date(Date.now() - ONLINE_MS) } }, select: { userId: true } });
+  // R53: players with showOnline=false always read as offline to others.
+  const rows = await db().userSession.findMany({ where: { userId: { in: ids }, revokedAt: null, lastSeenAt: { gte: new Date(Date.now() - ONLINE_MS) }, user: { showOnline: true } }, select: { userId: true } });
   return new Set(rows.map((r) => r.userId));
 }
 /** Latest sign-in country per user (2-letter, from the Vercel geo header). */
@@ -91,11 +94,27 @@ export async function comms(meId: string) {
     friends: friends.map((f) => ({ ...card(f), online: online.has(f.id), unread: un.get(f.id) ?? 0 })).sort((a, b) => Number(b.online) - Number(a.online) || a.name.localeCompare(b.name)),
     incoming: rows.filter((r) => r.status === "PENDING" && r.addresseeId === meId).map((r) => ({ id: r.id, from: card(r.requester) })),
     outgoing: rows.filter((r) => r.status === "PENDING" && r.requesterId === meId).map((r) => ({ id: r.id, to: card(r.addressee) })),
+    // R53: unread messages from non-friends (only possible when I allow DMs from everyone).
+    others: await strangers(meId, new Set(friends.map((f) => f.id)), un),
   };
 }
+async function strangers(meId: string, friendIds: Set<string>, un: Map<string, number>) {
+  const ids = [...un.keys()].filter((id) => !friendIds.has(id));
+  if (!ids.length) return [];
+  const us = await db().user.findMany({ where: { id: { in: ids }, accountStatus: "ACTIVE" }, select: UPSEL });
+  return us.map((u) => ({ ...card(u), online: false, unread: un.get(u.id) ?? 0 }));
+}
 const areFriends = async (a: string, b: string) => !!(await db().friendship.findFirst({ where: { status: "ACCEPTED", OR: [{ requesterId: a, addresseeId: b }, { requesterId: b, addresseeId: a }] } }));
+/** R53: a DM thread opens for friends, or when the other player accepts DMs from everyone, or they already wrote to me. */
+async function canThread(meId: string, withId: string) {
+  if (await areFriends(meId, withId)) return true;
+  const o = await db().user.findUnique({ where: { id: withId }, select: { dmPolicy: true, accountStatus: true } });
+  if (!o || o.accountStatus !== "ACTIVE") return false;
+  if (canDm(asDmPolicy(o.dmPolicy), { friends: false })) return true;
+  return !!(await db().directMessage.findFirst({ where: { fromId: withId, toId: meId }, select: { id: true } }));
+}
 export async function thread(meId: string, withId: string) {
-  if (!(await areFriends(meId, withId))) return null;
+  if (!(await canThread(meId, withId))) return null;
   const rows = await db().directMessage.findMany({ where: { OR: [{ fromId: meId, toId: withId }, { fromId: withId, toId: meId }] }, orderBy: { createdAt: "desc" }, take: 100 });
   await db().directMessage.updateMany({ where: { fromId: withId, toId: meId, readAt: null }, data: { readAt: new Date() } });
   return rows.reverse().map((m) => ({ id: m.id, mine: m.fromId === meId, body: m.body, at: m.createdAt.toISOString() }));
@@ -135,14 +154,15 @@ export async function intel(userId: string, f: { range?: string; map?: string; t
   const since = days ? new Date(Date.now() - days * 86400_000) : null;
   const mps = await db().matchPlayer.findMany({
     where: { userId: u.id, match: { state: "COMPLETED", ...(since ? { endedAt: { gte: since } } : {}), ...(f.map && f.map !== "all" ? { mapName: f.map } : {}), ...(f.type === "queue" ? { tournamentId: null } : f.type === "tournament" ? { tournamentId: { not: null } } : {}) } },
-    include: { match: { select: { id: true, mapName: true, endedAt: true, winnerTeamId: true, scoreA: true, scoreB: true } }, weapons: true }, orderBy: { match: { endedAt: "desc" } }, take: 500,
+    include: { match: { select: { id: true, externalId: true, mapName: true, endedAt: true, winnerTeamId: true, scoreA: true, scoreB: true } }, weapons: true }, orderBy: { match: { endedAt: "desc" } }, take: 500,
   });
   const hist = await db().ratingHistory.findMany({ where: { userId: u.id }, orderBy: { createdAt: "asc" }, select: { ratingBefore: true, ratingAfter: true, createdAt: true, matchId: true } });
   const delta = new Map(hist.filter((h) => h.matchId).map((h) => [h.matchId!, h.ratingAfter - h.ratingBefore]));
+  const hsBy = await headshotsFor(mps, u.steamId ?? null);
   const lines: Line[] = mps.map((m) => ({
     matchId: m.matchId, at: (m.match.endedAt ?? new Date(0)).getTime(), map: m.match.mapName,
     won: delta.has(m.matchId) ? delta.get(m.matchId)! > 0 : m.match.winnerTeamId && m.teamId ? m.match.winnerTeamId === m.teamId : null,
-    k: m.kills, d: m.deaths, a: m.assists, dmg: m.damage, rounds: m.roundsPlayed, hs: m.headshotKills, clW: m.clutchesWon, clP: m.clutchesPlayed, enW: m.entryWins, enA: m.entryAttempts,
+    d: m.deaths, a: m.assists, dmg: m.damage, rounds: m.roundsPlayed, hs: hsBy.get(m.matchId)?.hs ?? null, k: hsBy.get(m.matchId)?.source === "events" && m.kills == null ? hsBy.get(m.matchId)!.kills : m.kills, clW: m.clutchesWon, clP: m.clutchesPlayed, enW: m.entryWins, enA: m.entryAttempts,
     util: m.utilityDamage, m2: m.multi2k, m3: m.multi3k, m4: m.multi4k, m5: m.multi5k, mvps: m.mvps,
   }));
   const weapons = new Map<string, { kills: number; hs: number; dmg: number }>();
@@ -330,7 +350,11 @@ export async function desktopAction(meId: string, op: string, b: Record<string, 
     case "dm.send": {
       const to = str(b.to, 40), body = str(b.body, 500);
       if (!body) return { ok: false, error: "empty" };
-      if (!(await areFriends(meId, to))) return { ok: false, error: "friends-only" };
+      if (to === meId) return { ok: false, error: "bad-request" };
+      if (!(await areFriends(meId, to))) {
+        const o = await db().user.findUnique({ where: { id: to }, select: { dmPolicy: true, accountStatus: true } });
+        if (!o || o.accountStatus !== "ACTIVE" || !canDm(asDmPolicy(o.dmPolicy), { friends: false })) return { ok: false, error: "friends-only" };
+      }
       const recent = await prisma.directMessage.count({ where: { fromId: meId, createdAt: { gte: new Date(Date.now() - 60_000) } } });
       if (recent >= 30) return { ok: false, error: "slow-down" };
       await prisma.directMessage.create({ data: { fromId: meId, toId: to, body } });
@@ -355,4 +379,11 @@ export async function desktopAction(meId: string, op: string, b: Record<string, 
     }
     default: return { ok: false, error: "unknown-op" };
   }
+}
+
+/** R53: privacy gate for intel/player reads (owner and self always pass). */
+export async function profileReadable(targetIdOrSteam: string, viewerId: string | null, owner = false) {
+  const u = await db().user.findFirst({ where: { OR: [{ id: targetIdOrSteam }, { steamId: targetIdOrSteam }] }, select: { id: true, profileVisibility: true } });
+  if (!u) return true;
+  return canViewProfile(asVisibility(u.profileVisibility), { self: viewerId === u.id, owner, friends: !!viewerId && (await areFriends(viewerId, u.id)) });
 }

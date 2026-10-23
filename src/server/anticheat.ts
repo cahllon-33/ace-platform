@@ -6,6 +6,21 @@
 import { BLOCKLIST, CLIENT_MIN_VERSION, HEARTBEAT_INTERVAL_SEC, isFresh, matchBlocklist, parseExpectedHashes, requireAnticheat, sessionKey, verifySignature, versionAtLeast } from "@/lib/anticheat";
 import { getPrisma } from "@/server/db";
 import { getSessionSecret } from "@/server/env";
+import { readSetting } from "@/server/server-health";
+
+/** R53 owner overrides (AdminSetting): anticheat.require = "true"|"false" beats the env; anticheat.extraProcesses = JSON string[] merged into the blocklist. */
+export const AC_SETTING = { require: "anticheat.require", extra: "anticheat.extraProcesses" } as const;
+export async function requireAnticheatNow(): Promise<boolean> {
+  const v = await readSetting(AC_SETTING.require).catch(() => null);
+  return v === "true" ? true : v === "false" ? false : requireAnticheat();
+}
+export async function extraBlockedProcesses(): Promise<string[]> {
+  try { const v = JSON.parse((await readSetting(AC_SETTING.extra)) ?? "[]"); return Array.isArray(v) ? v.filter((x) => typeof x === "string").slice(0, 200) : []; } catch { return []; }
+}
+async function effectiveBlocklist() {
+  const extra = await extraBlockedProcesses();
+  return extra.length ? { ...BLOCKLIST, processes: [...new Set([...BLOCKLIST.processes, ...extra])] } : BLOCKLIST;
+}
 
 const str = (v: unknown, max = 200) => (typeof v === "string" ? v.slice(0, max) : "");
 const strs = (v: unknown, n = 100) => (Array.isArray(v) ? v.filter((x) => typeof x === "string").slice(0, n).map((x: string) => x.slice(0, 200)) : []);
@@ -16,7 +31,7 @@ export async function issueAnticheatSession(userId: string, clientVersion: strin
   const s = await prisma.anticheatSession.create({ data: { userId, clientVersion: clientVersion.slice(0, 32), machineHash: machineHash.slice(0, 128) } });
   return {
     sessionId: s.id, key: sessionKey(getSessionSecret(), s.id), intervalSec: HEARTBEAT_INTERVAL_SEC,
-    blocklist: BLOCKLIST, expectedHashes: parseExpectedHashes(process.env.ACE_CS2_FILE_HASHES), minVersion: CLIENT_MIN_VERSION,
+    blocklist: await effectiveBlocklist(), expectedHashes: parseExpectedHashes(process.env.ACE_CS2_FILE_HASHES), minVersion: CLIENT_MIN_VERSION,
     outdated: !versionAtLeast(clientVersion, CLIENT_MIN_VERSION),
   };
 }
@@ -41,7 +56,7 @@ export async function acceptHeartbeat(rawBody: string, ts: number, sig: string):
     processes: strs(body.processes), windows: strs(body.windows), modules: strs(body.modules),
     launchArgs: str(body.launchArgs, 1000), fileHashes: typeof body.fileHashes === "object" && body.fileHashes ? Object.fromEntries(Object.entries(body.fileHashes as Record<string, unknown>).slice(0, 20).map(([k, v]) => [k.slice(0, 200), str(v, 64)])) : {},
   };
-  const violations = matchBlocklist(report, parseExpectedHashes(process.env.ACE_CS2_FILE_HASHES));
+  const violations = matchBlocklist(report, parseExpectedHashes(process.env.ACE_CS2_FILE_HASHES), await effectiveBlocklist());
   const tamper = strs(body.tamper, 10).map((d) => ({ kind: "tamper", detail: d }));
   const all = [...violations, ...tamper];
   const status = all.length ? "flagged" : "clean";
@@ -54,14 +69,14 @@ export async function acceptHeartbeat(rawBody: string, ts: number, sig: string):
 
 /** Queue gate. Returns null when allowed. Always null unless ACE_REQUIRE_ANTICHEAT=true. */
 export async function anticheatBlock(userId: string): Promise<"anticheat-required" | null> {
-  if (!requireAnticheat()) return null;
+  if (!(await requireAnticheatNow())) return null;
   const s = await getPrisma().anticheatSession.findFirst({ where: { userId, revokedAt: null }, orderBy: { lastHeartbeatAt: { sort: "desc", nulls: "last" } } });
   return s && isFresh(s.lastHeartbeatAt) && s.status === "clean" ? null : "anticheat-required";
 }
 
 export async function anticheatState(userId: string) {
   const s = await getPrisma().anticheatSession.findFirst({ where: { userId, revokedAt: null }, orderBy: { createdAt: "desc" } });
-  return { required: requireAnticheat(), fresh: !!s && isFresh(s.lastHeartbeatAt), status: s?.status ?? "none" };
+  return { required: await requireAnticheatNow(), fresh: !!s && isFresh(s.lastHeartbeatAt), status: s?.status ?? "none" };
 }
 
 export async function loadAnticheatAdmin() {

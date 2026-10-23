@@ -47,3 +47,13 @@ dotnet build -c Release
 5. Check: `css_plugins list` shows AceBridge; play a round and look for rows in the `Cs2PluginEvent` table.
 
 `ACE_EVENTS_URL`, `ACE_PLUGIN_SECRET` and `ACE_SERVER_ID` environment variables override the file if your host supports them.
+
+## Binding events to an A.C.E match (0.2.0)
+
+Kill events (`player_death`) carry the engine's `headshot` flag. For the A.C.E Dossier to use them as a
+headshot source when a server report lacks `kills_with_headshot`, bind events to the match:
+
+- server command `ace_match_id <A.C.E match id | DatHost match id>` (server console / rcon only), or
+- environment variable `ACE_MATCH_ID`.
+
+Unbound events keep the old `<map>-<unix time>` key and are stored but not attributed to a match.

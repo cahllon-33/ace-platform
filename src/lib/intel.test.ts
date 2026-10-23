@@ -10,3 +10,12 @@ describe("intel", () => {
   it("role", () => { const r = roleProfile([L({})])!; expect(r.primary).toBeTruthy(); expect(roleProfile([L({ rounds: null })])).toBeNull(); });
   it("percentile+region", () => { expect(percentile(5, [1, 2, 9, 10])).toBe(50); expect(percentile(1, [])).toBeNull(); expect(regionOf("il")).toBe("ME"); expect(regionOf(null)).toBeNull(); });
 });
+
+describe("verified rate pairing", () => {
+  it("HS% and ADR ignore matches that did not record the numerator", async () => {
+    const { performance } = await import("./intel");
+    const base = { matchId: "x", at: 0, map: null, won: true, a: null, clW: null, clP: null, enW: null, enA: null, util: null, m2: null, m3: null, m4: null, m5: null, mvps: null };
+    const p = performance([{ ...base, k: 20, d: 10, dmg: 2400, rounds: 24, hs: 10 }, { ...base, matchId: "y", k: 30, d: 10, dmg: null, rounds: 24, hs: null }]);
+    expect(p.hsPct).toBe(50); expect(p.adr).toBe(100); expect(p.hsMatches).toBe(1); expect(p.kd).toBe(2.5);
+  });
+});

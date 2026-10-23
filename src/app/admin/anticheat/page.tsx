@@ -3,7 +3,7 @@ import { connection } from "next/server";
 import { notFound } from "next/navigation";
 import { readIsSteamOwner } from "@/server/admin-gate";
 import { loadAnticheatAdmin } from "@/server/anticheat";
-import { requireAnticheat } from "@/lib/anticheat";
+import { requireAnticheatNow } from "@/server/anticheat";
 
 export const instant = false;
 export const metadata: Metadata = { title: "A.C.E Anti-cheat", robots: { index: false, follow: false } };
@@ -17,7 +17,7 @@ export default async function AdminAnticheatPage() {
   return (
     <main className="ace-admin-page" style={{ padding: 24, maxWidth: 1200, margin: "0 auto" }}>
       <h1 style={{ color: "#FFD76A", fontSize: 24, fontWeight: 700 }}>A.C.E Anti-cheat</h1>
-      <p style={{ opacity: 0.75, marginBottom: 16 }}>Queue enforcement (ACE_REQUIRE_ANTICHEAT): <b>{requireAnticheat() ? "ON" : "OFF"}</b>. User-mode client only; no kernel driver.</p>
+      <p style={{ opacity: 0.75, marginBottom: 16 }}>Queue enforcement (ACE_REQUIRE_ANTICHEAT, owner override in the desktop Command area): <b>{(await requireAnticheatNow()) ? "ON" : "OFF"}</b>. User-mode client only; no kernel driver.</p>
       {!data ? <p>Anti-cheat data is unavailable (migration not applied?).</p> : (
         <>
           <h2 style={{ fontSize: 18, margin: "16px 0 8px" }}>Active clients (last 10 min): {data.sessions.length}</h2>
