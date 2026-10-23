@@ -15,6 +15,18 @@ import { HomeLocaleActions, LocaleLoading } from "@/components/home-locale-actio
 import { PlatformStatus } from "@/components/platform-status";
 import { getText, getUi } from "@/server/locale";
 import { readSessionUser } from "@/server/session";
+import { PlayArenaHero, type ArenaData } from "@/components/public/play-arena-hero";
+import { readQueueView } from "@/server/queue-engine";
+import { getPlatformStatus } from "@/server/platform-status";
+import { QUEUE_SIZE } from "@/lib/queue";
+
+/** Real values only; on any failure the hero shows 0 in queue and "Status unavailable" rather than invented numbers. */
+async function readArena(userId: string | null): Promise<ArenaData> {
+  const [v, st] = await Promise.all([readQueueView(userId).catch(() => null), getPlatformStatus().catch(() => null)]);
+  const l = v?.lobby && !["DONE", "CANCELLED", "FAILED"].includes(v.lobby.state) ? v.lobby : null;
+  const sh = st?.rows.find((r) => r.key === "shield");
+  return { queued: v?.queued ?? 0, needed: v?.needed ?? QUEUE_SIZE, map: l?.map ?? null, found: l?.state === "READY", shield: sh ? { tone: sh.tone, value: sh.value } : null, region: v?.region ?? null };
+}
 
 function LobbyFallback() {
   return (
@@ -41,11 +53,12 @@ async function LobbyHomeDynamic() {
     user = null;
   }
 
-  const [text, liveStats, ui, broadcast, h] = await Promise.all([getText(), readPublicStats(), getUi(), loadLive(), headers()]);
+  const [text, liveStats, ui, broadcast, h, arena] = await Promise.all([getText(), readPublicStats(), getUi(), loadLive(), headers(), readArena(user?.id ?? null)]);
   const live = Boolean(user);
   const shownName = user ? guardDisplayName(user.displayName, user.steamId) : "";
   return (
     <main className="ace-lobby-root ace-home-flow h39-home">
+      <PlayArenaHero signedIn={live} initial={arena} />
       <HomeHeroV2
         ui={ui}
         signedIn={live}
