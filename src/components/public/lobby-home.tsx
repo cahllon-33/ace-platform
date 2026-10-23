@@ -15,8 +15,6 @@ import { HomeLocaleActions, LocaleLoading } from "@/components/home-locale-actio
 import { PlatformStatus } from "@/components/platform-status";
 import { getText, getUi } from "@/server/locale";
 import { readSessionUser } from "@/server/session";
-import { PlayArenaHero } from "@/components/public/play-arena-hero";
-import { readArena } from "@/server/arena";
 
 function LobbyFallback() {
   return (
@@ -43,12 +41,11 @@ async function LobbyHomeDynamic() {
     user = null;
   }
 
-  const [text, liveStats, ui, broadcast, h, arena] = await Promise.all([getText(), readPublicStats(), getUi(), loadLive(), headers(), readArena(user?.id ?? null)]);
+  const [text, liveStats, ui, broadcast, h] = await Promise.all([getText(), readPublicStats(), getUi(), loadLive(), headers()]);
   const live = Boolean(user);
   const shownName = user ? guardDisplayName(user.displayName, user.steamId) : "";
   return (
     <main className="ace-lobby-root ace-home-flow h39-home">
-      <PlayArenaHero signedIn={live} initial={arena} />
       <HomeHeroV2
         ui={ui}
         signedIn={live}
