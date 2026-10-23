@@ -25,7 +25,8 @@ export async function POST(request: Request) {
     signal: AbortSignal.timeout(15000),
   }).catch(() => null);
   if (!res?.ok) {
-    const j = (await res?.json().catch(() => null)) as { error?: { code?: string } } | null;
+    const j = (await res?.json().catch(() => null)) as { error?: { code?: string; detail?: string } } | null;
+    console.error("[paddle] change-plan failed", res?.status ?? "network", j?.error?.code, j?.error?.detail);
     return NextResponse.json({ ok: false, error: j?.error?.code ?? "paddle-error" }, { status: 502 });
   }
   return NextResponse.json({ ok: true });

@@ -106,7 +106,7 @@ export function PaddleCheckoutButton({ plan, planName, className = "pc41-btn" }:
     try {
       const r = await fetch("/api/paddle/change-plan", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ plan }) });
       const j = (await r.json().catch(() => ({}))) as { ok?: boolean; error?: string };
-      if (!j.ok) { setReason(j.error ?? ""); setState("error"); return; }
+      if (!j.ok) { setReason(j.error ?? `http-${r.status}`); setState("error"); return; }
       setState("changed");
     } catch (e) { fail(e); }
   };
@@ -117,7 +117,7 @@ export function PaddleCheckoutButton({ plan, planName, className = "pc41-btn" }:
         {state === "opening" ? (isChange ? t.changing : t.opening) : interpolate(isChange ? t.changePlan : t.subscribe, { plan: planName })}
       </button>
       {action === "subscribe-manual" && !me.hasSub ? <p className="pc49-note">{t.manualNote}</p> : null}
-      {state === "error" ? <p className="pc49-note is-err" role="alert">{isChange ? t.changeFailed : reason ? interpolate(t.checkoutError, { reason }) : t.failed}</p> : null}
+      {state === "error" ? <p className="pc49-note is-err" role="alert">{isChange ? `${t.changeFailed}${reason ? ` (${reason})` : ""}` : reason ? interpolate(t.checkoutError, { reason }) : t.failed}</p> : null}
       {state === "done" ? <p className="pc49-note" role="status">{t.processing}</p> : null}
       {state === "changed" ? <p className="pc49-note" role="status">{t.changed}</p> : null}
     </>
