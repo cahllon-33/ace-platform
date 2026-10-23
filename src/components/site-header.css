@@ -69,4 +69,4 @@ html[dir="rtl"] .hx-play-icon svg { transform: scaleX(-1); }
 .hx-wn { position: relative; }
 .hx-wn-dot { display: inline-flex; align-items: center; justify-content: center; min-width: 17px; height: 17px; padding: 0 5px; margin-inline-start: 6px; border-radius: 999px; font-size: 10px; font-weight: 800; color: #141109; background: linear-gradient(180deg, #fff1bf, #ffd76a 50%, #d4a634); box-shadow: 0 0 12px rgba(255, 200, 80, .7); vertical-align: 1px; }
 /* R62b: keep every inline link visible (no clipped "Shop") between 1400px and 1760px */
-@media (min-width: 1400px) and (max-width: 1760px) { .hx-links a { padding: .5rem .42rem; font-size: .8125rem; } }
+@media (min-width: 1400px) and (max-width: 1900px) { .hx-links a { padding: .5rem .2rem; font-size: .74rem; } }
