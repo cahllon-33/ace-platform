@@ -3,7 +3,7 @@
  * by name and bad CS2 launch flags / file hashes; it cannot stop a kernel cheat.
  * Env: ACE_REQUIRE_ANTICHEAT (default false), ACE_CS2_FILE_HASHES (optional), SESSION_SECRET (key derivation).
  */
-import { BLOCKLIST, CLIENT_MIN_VERSION, HEARTBEAT_INTERVAL_SEC, isFresh, matchBlocklist, parseExpectedHashes, requireAnticheat, sessionKey, verifySignature, versionAtLeast, newNonce, parseFindings, sessionStatus, allowedStatus, gateVerdict, PROTO_NONCE } from "@/lib/anticheat";
+import { BLOCKLIST, CLIENT_MIN_VERSION, HEARTBEAT_INTERVAL_SEC, isFresh, matchBlocklist, parseExpectedHashes, requireAnticheat, sessionKey, verifySignature, versionAtLeast, newNonce, autoBanTriggers, autoBanReason, AUTO_BAN_PREFIX, parseFindings, sessionStatus, allowedStatus, gateVerdict, PROTO_NONCE } from "@/lib/anticheat";
 import { hardwareBanned } from "@/server/ac-analytics";
 import { getPrisma } from "@/server/db";
 import { getSessionSecret } from "@/server/env";
@@ -45,7 +45,7 @@ export async function issueAnticheatSession(userId: string, clientVersion: strin
   };
 }
 
-export type HeartbeatResult = { ok: true; status: string; violations: number; nonce?: string; blocklist?: unknown } | { ok: false; error: string; status: number };
+export type HeartbeatResult = { ok: true; status: string; violations: number; nonce?: string; blocklist?: unknown; banned?: boolean } | { ok: false; error: string; status: number };
 
 export async function acceptHeartbeat(rawBody: string, ts: number, sig: string): Promise<HeartbeatResult> {
   let body: Record<string, unknown>;
@@ -85,6 +85,8 @@ export async function acceptHeartbeat(rawBody: string, ts: number, sig: string):
     prisma.anticheatSession.update({ where: { id: s.id }, data: { lastHeartbeatAt: new Date(), lastSeq: seq, nonce, cs2Running: body.cs2Running === true, status, clientVersion: str(body.clientVersion, 32) || s.clientVersion } }),
     ...(fresh.length ? [prisma.anticheatEvent.createMany({ data: fresh.map((v) => ({ userId: s.userId, sessionId: s.id, kind: v.kind, severity: v.severity, detail: v.detail })) })] : []),
   ]);
+  const hits = autoBanTriggers(violations);
+  if (hits.length) { await autoBanForCheat(s.userId, s.id, s.hwHash, hits).catch(() => null); return { ok: true, status: "banned", violations: all.length, nonce, banned: true }; }
   // The admin-editable list is re-sent every 20 heartbeats (~5 min) so edits reach running clients.
   return { ok: true, status, violations: all.length, nonce, ...(seq % 20 === 0 ? { blocklist: await effectiveBlocklist() } : {}) };
 }
@@ -119,4 +121,37 @@ export async function loadAnticheatAdmin() {
     prisma.anticheatSession.findMany({ where: { revokedAt: null, lastHeartbeatAt: { gte: new Date(Date.now() - 10 * 60_000) } }, orderBy: { lastHeartbeatAt: "desc" }, take: 100, include: { user: { select: { displayName: true, steamId: true } } } }),
   ]);
   return { events, sessions };
+}
+
+/** R61 automatic permanent ban on a definite rule match: account + hardware, evidence recorded. Idempotent. */
+export async function autoBanForCheat(userId: string, sessionId: string, hwHash: string, hits: { kind: string; detail: string }[]) {
+  const prisma = getPrisma();
+  const reason = autoBanReason(hits);
+  const already = await prisma.banRecord.findFirst({ where: { userId, status: "BANNED", expiresAt: null, reason: { startsWith: AUTO_BAN_PREFIX } }, select: { id: true } });
+  if (already) return false;
+  await prisma.$transaction([
+    prisma.user.update({ where: { id: userId }, data: { accountStatus: "BANNED" } }),
+    prisma.banRecord.create({ data: { userId, status: "BANNED", reason } }),
+    prisma.userSession.updateMany({ where: { userId, revokedAt: null }, data: { revokedAt: new Date() } }),
+    prisma.anticheatSession.updateMany({ where: { userId, revokedAt: null }, data: { status: "flagged" } }),
+    prisma.anticheatEvent.create({ data: { userId, sessionId, kind: "auto-ban", severity: "high", detail: reason.slice(0, 300) } }),
+  ]);
+  const hashes = new Set<string>([hwHash, ...(await prisma.anticheatSession.findMany({ where: { userId, hwHash: { not: "" } }, select: { hwHash: true }, take: 20 })).map((x) => x.hwHash)].filter((h) => /^[a-f0-9]{64}$/.test(h)));
+  for (const h of hashes) await prisma.anticheatHardwareBan.upsert({ where: { hwHash: h }, create: { hwHash: h, userId, reason: reason.slice(0, 300), createdBy: "auto" }, update: { revokedAt: null, reason: reason.slice(0, 300), userId } });
+  return true;
+}
+
+export async function loadAutoBans() {
+  return getPrisma().banRecord.findMany({ where: { status: "BANNED", expiresAt: null, reason: { startsWith: AUTO_BAN_PREFIX } }, orderBy: { createdAt: "desc" }, take: 100, include: { user: { select: { displayName: true, steamId: true } } } });
+}
+
+/** Owner only (checked by the caller): reverse a false-positive auto-ban — account and hardware. */
+export async function reverseAutoBan(userId: string, actor: string) {
+  const prisma = getPrisma();
+  await prisma.$transaction([
+    prisma.user.update({ where: { id: userId }, data: { accountStatus: "ACTIVE" } }),
+    prisma.banRecord.updateMany({ where: { userId, status: "BANNED", expiresAt: null }, data: { expiresAt: new Date() } }),
+    prisma.anticheatHardwareBan.updateMany({ where: { userId, revokedAt: null }, data: { revokedAt: new Date() } }),
+    prisma.anticheatEvent.create({ data: { userId, kind: "auto-ban-reversed", severity: "info", detail: `reversed by owner ${actor}`.slice(0, 300) } }),
+  ]);
 }

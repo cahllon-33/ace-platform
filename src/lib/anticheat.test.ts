@@ -69,3 +69,16 @@ describe("R59 gate + findings", () => {
   });
   it("nonces are unique", () => { expect(newNonce()).not.toBe(newNonce()); expect(newNonce()).toMatch(/^[a-f0-9]{36}$/); });
 });
+
+describe("R61 automatic permanent ban", () => {
+  it("only definite program/window/module matches auto-ban", async () => {
+    const { autoBanTriggers, autoBanReason, AUTO_BAN_PREFIX } = await import("./anticheat");
+    const all = [
+      { kind: "process", detail: "cheatengine.exe" }, { kind: "launch-flag", detail: "-insecure" }, { kind: "file-hash", detail: "client.dll" },
+      { kind: "tamper", detail: "x" }, { kind: "handle", detail: "y" }, { kind: "overlay", detail: "z" }, { kind: "asar", detail: "a" },
+    ];
+    expect(autoBanTriggers(all).map((x) => x.kind)).toEqual(["process"]);
+    expect(autoBanTriggers(all.slice(1))).toEqual([]);
+    expect(autoBanReason([{ kind: "process", detail: "cheatengine.exe" }])).toBe(`${AUTO_BAN_PREFIX}: process=cheatengine.exe`);
+  });
+});

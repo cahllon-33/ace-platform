@@ -134,3 +134,14 @@ export function gateVerdict(g: GateInput, now = new Date()): GateVerdict {
   if (!allowedStatus(g.session.status)) return { allow: false, required: true, reason: "integrity-flagged" };
   return { allow: true, required: true, reason: "ok" };
 }
+
+/** R61: only definite rule matches (admin-listed / signed-rule programs, windows, modules) trigger the automatic permanent ban.
+ * Launch flags, file hashes, tamper and every statistical/soft finding never auto-ban (review queue only). */
+export const AUTO_BAN_KINDS = new Set(["process", "window", "module"]);
+export const AUTO_BAN_PREFIX = "A.C.E Anti-Cheat automatic permanent ban";
+export function autoBanTriggers(all: { kind: string; detail: string }[]): { kind: string; detail: string }[] {
+  return all.filter((v) => AUTO_BAN_KINDS.has(v.kind));
+}
+export function autoBanReason(hits: { kind: string; detail: string }[]): string {
+  return `${AUTO_BAN_PREFIX}: ${hits.slice(0, 5).map((h) => `${h.kind}=${h.detail}`).join("; ")}`.slice(0, 500);
+}

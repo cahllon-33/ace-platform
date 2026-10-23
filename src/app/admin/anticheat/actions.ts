@@ -3,7 +3,7 @@ import { revalidatePath } from "next/cache";
 import { readAdminActor, readIsSteamOwner } from "@/server/admin-gate";
 import { analyzeMatch, banUserHardware, decideReview } from "@/server/ac-analytics";
 import { audit } from "@/server/queue-admin";
-import { AC_SETTING } from "@/server/anticheat";
+import { AC_SETTING, reverseAutoBan } from "@/server/anticheat";
 import { readSetting, writeSetting } from "@/server/server-health";
 import { RULES_VERSION_SETTING } from "@/server/ac-rules";
 import { trainModel } from "@/server/ac-model";
@@ -74,5 +74,15 @@ export async function closeOverwatchAction(f: FormData) {
   if (status !== "cleared" && status !== "confirmed") return;
   await closeOverwatchCase(s(f, "caseId", 64), status, actor, s(f, "note", 1000));
   await audit(actor, "overwatch.close." + status, s(f, "caseId", 64)).catch(() => null);
+  revalidatePath("/admin/anticheat");
+}
+
+/** Owner only: reverse an automatic permanent ban (false positive). Requires the confirm box. */
+export async function reverseAutoBanAction(f: FormData) {
+  const actor = await owner();
+  const userId = s(f, "userId", 64);
+  if (!userId || s(f, "confirm") !== "yes") return;
+  await reverseAutoBan(userId, actor);
+  await audit(actor, "anticheat.autoban.reverse", userId).catch(() => null);
   revalidatePath("/admin/anticheat");
 }

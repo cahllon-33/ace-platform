@@ -6,6 +6,8 @@ import { loadAnticheatAdmin } from "@/server/anticheat";
 import { requireAnticheatNow, extraBlockedProcesses } from "@/server/anticheat";
 import { loadReviewQueue } from "@/server/ac-analytics";
 import { ReviewQueue } from "./review-queue";
+import { AutoBans } from "./auto-bans";
+import { loadAutoBans } from "@/server/anticheat";
 import { IntegrityPanel } from "./integrity-r60";
 import { modelStatus } from "@/server/ac-model";
 import { overwatchAdmin } from "@/server/overwatch";
@@ -25,6 +27,7 @@ export default async function AdminAnticheatPage() {
     <main className="ace-admin-page" style={{ padding: 24, maxWidth: 1200, margin: "0 auto" }}>
       <h1 style={{ color: "#FFD76A", fontSize: 24, fontWeight: 700 }}>A.C.E Anti-cheat</h1>
       <p style={{ opacity: 0.75, marginBottom: 16 }}>Queue enforcement (ACE_REQUIRE_ANTICHEAT, owner override in the desktop Command area): <b>{(await requireAnticheatNow()) ? "ON" : "OFF"}</b>. User-mode client only; no kernel driver.</p>
+      <AutoBans rows={await loadAutoBans().catch(() => [])} />
       <ReviewQueue reviews={reviews} extra={extra} />
       <IntegrityPanel
         status={await modelStatus().catch(() => null)}
