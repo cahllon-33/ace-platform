@@ -40,16 +40,6 @@ export default async function RanksPage({ searchParams }: { searchParams: Promis
   return (
     <main className="mx-auto max-w-[90rem] px-4 py-8 sm:px-6">
       <RanksV2 filters={filters} meId={meId} liveRating={rating} />
-      <details className="rk2-more">
-        <summary>
-          <span className="rk2-label">How RP works</span>
-          <span className="rk2-more-sub">RP rules, prestige and Premium rank art</span>
-          <span className="rk2-more-chev" aria-hidden="true" />
-        </summary>
-        <div className="rk2-more-body">
-          <Link className="ace-codex-entry" href="/ranks/guide">
-            {copy.codexLink}
-          </Link>
         <RanksPrestige ui={ui} />
         <section id="premium" className="ace-premium-ranks" aria-labelledby="premium-ranks-title">
           <div className="ace-premium-ranks-head">
@@ -66,6 +56,16 @@ export default async function RanksPage({ searchParams }: { searchParams: Promis
           </div>
           <PremiumRankCodex text={text} />
         </section>
+      <details className="rk2-more">
+        <summary>
+          <span className="rk2-label">How RP works</span>
+          <span className="rk2-more-sub">RP rules and rank guide</span>
+          <span className="rk2-more-chev" aria-hidden="true" />
+        </summary>
+        <div className="rk2-more-body">
+          <Link className="ace-codex-entry" href="/ranks/guide">
+            {copy.codexLink}
+          </Link>
         <RpRulesSection text={text} ui={ui} />
         <p className="mx-auto max-w-6xl px-4"><a href="/badges" className="font-bold text-[#C9A24A]">{ui.r41c.pr.open} →</a></p>
         </div>

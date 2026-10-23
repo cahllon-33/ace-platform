@@ -80,3 +80,12 @@
 .rk2-more-chev { margin-left: auto; width: 10px; height: 10px; border-right: 2px solid #D9B45E; border-bottom: 2px solid #D9B45E; transform: rotate(45deg); transition: transform .2s; }
 .rk2-more[open] .rk2-more-chev { transform: rotate(-135deg); }
 .rk2-more-body { padding: 0 clamp(16px, 2.4vw, 28px) 24px; border-top: 1px solid rgba(201,162,74,.18); }
+/* R69: full, uncropped hero art (16:9, no mask/fade); copy sits on a glass panel */
+.rk2-hero, .rk2-hero { aspect-ratio: 16 / 9; min-height: 0; display: flex; align-items: flex-end; }
+.rk2-hero-scene { left: 0; width: 100%; -webkit-mask-image: none; mask-image: none; }
+.rk2-hero-art { object-fit: fill; object-position: center; }
+.rk2-hero-shade, .rk2-hero-glow { display: none; }
+.rk2-hero-copy { margin: 0 0 clamp(16px, 3vw, 36px) clamp(16px, 3vw, 36px); padding: clamp(14px, 2vw, 26px) clamp(16px, 2.4vw, 32px); max-width: 500px; border-radius: 16px; background: rgba(8,8,10,.62); border: 1px solid rgba(201,162,74,.25); backdrop-filter: blur(6px); }
+.rk2-title { font-size: clamp(40px, 5vw, 80px); }
+.rk2-hero-badge { top: auto; bottom: clamp(16px, 3vw, 36px); transform: none; width: clamp(90px, 13vw, 190px); animation: none; }
+@media (max-width: 700px) { .rk2-hero { aspect-ratio: auto; flex-direction: column; align-items: stretch; } .rk2-hero-scene { position: relative; aspect-ratio: 16 / 9; } .rk2-hero-copy { margin: 12px; max-width: none; } .rk2-hero-badge { top: 12px; bottom: auto; width: 80px; } }
