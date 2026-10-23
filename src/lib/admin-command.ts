@@ -10,6 +10,8 @@ export type AdminPlayerRow = {
   rank: number;
   rating: number;
   tier: AdminTier;
+  /** R71: true while an admin tier override is set (Paddle does not change the tier). */
+  tierOverride?: boolean;
   security: AdminSecurity;
   machineHash: string;
   registeredOn: string;

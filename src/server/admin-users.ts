@@ -112,6 +112,7 @@ function userToAdminRow(user: User, steamSyncError: SteamSyncError | null = null
     rank: rankLevelFromRp(user.competitiveRating),
     rating: user.competitiveRating,
     tier: tierLabel(user.subscriptionTier),
+    tierOverride: !!user.tierOverride,
     security: securityLabel(user.accountStatus),
     machineHash: "—",
     registeredOn: user.createdAt.toISOString().slice(0, 10),

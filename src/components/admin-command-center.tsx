@@ -414,8 +414,24 @@ export function AdminCommandCenter({
         showFlash(t("tierNotSaved"));
         return;
       }
-      patchPlayer(player, { tier });
+      patchPlayer(player, { tier, tierOverride: true });
       showFlash(t("tierSaved"));
+      router.refresh();
+    });
+  }
+
+  function runTierAuto(player: AdminPlayerRow) {
+    if (stats.staging || stats.unavailable) {
+      showFlash(t("stagingNoWrite"));
+      return;
+    }
+    void setAdminTier(player.id, "AUTO").then((result) => {
+      if (!result.ok) {
+        showFlash(t("tierNotSaved"));
+        return;
+      }
+      patchPlayer(player, { tierOverride: false });
+      showFlash(t("tierAutoSaved"));
       router.refresh();
     });
   }
@@ -802,6 +818,11 @@ export function AdminCommandCenter({
                           </option>
                         ))}
                       </select>
+                      {player.tierOverride ? (
+                        <button type="button" className="acx-btn" style={{ marginInlineStart: ".4rem", padding: ".3rem .6rem", fontSize: ".74rem" }} data-tier-auto onClick={() => runTierAuto(player)} title={t("tierAutoHint")}>
+                          {t("tierAuto")}
+                        </button>
+                      ) : null}
                     </td>
                     <td>
                       <span className={`acx-badge is-${player.security.toLowerCase()}`}>{t(SECURITY_KEY[player.security])}</span>
