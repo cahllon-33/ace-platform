@@ -12,6 +12,7 @@ import { PremiumRankCodex } from "@/components/premium-rank-codex";
 import { RanksPrestige } from "@/components/ranks-prestige";
 import { RpRulesSection } from "@/components/rp-rules-section";
 import { readSessionUser } from "@/server/session";
+import { RanksV2 } from "@/components/ranks-v2/ranks-v2";
 
 export const instant = false;
 
@@ -23,22 +24,27 @@ export async function generateMetadata(): Promise<Metadata> {
   };
 }
 
-export default async function RanksPage() {
+export default async function RanksPage({ searchParams }: { searchParams: Promise<{ season?: string; region?: string; country?: string }> }) {
   await connection();
   const [text, ui] = await Promise.all([getText(), getUi()]);
   const copy = text.ranks;
+  const sp = await searchParams;
+  const pick = (v?: string) => (v ?? "").slice(0, 64) || undefined;
+  const filters = { season: pick(sp.season), region: pick(sp.region), country: pick(sp.country) };
   let rating: number | null = null;
+  let meId: string | null = null;
   try {
     const user = await readSessionUser();
     rating = user?.competitiveRating ?? null;
+    meId = user?.id ?? null;
   } catch {
     rating = null;
   }
 
   return (
-    <main className="mx-auto max-w-[90rem] px-4 py-14 sm:px-6">
-      <p className="text-xs tracking-[0.28em] text-[#C9A24A]">{copy.hero.kicker}</p>
-      <h1 className="mt-2 text-4xl font-semibold">{copy.hero.title}</h1>
+    <main className="mx-auto max-w-[90rem] px-4 py-8 sm:px-6">
+      <RanksV2 filters={filters} meId={meId} liveRating={rating} />
+      <h2 className="mt-14 text-2xl font-semibold">{copy.hero.title}</h2>
       <p className="mt-4 max-w-3xl text-sm leading-7 text-[#A9ABB3]">
         {interpolate(copy.hero.lede, { divisions: RANK_DIVISIONS.join(", ") })}
       </p>
