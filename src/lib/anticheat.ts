@@ -3,7 +3,7 @@
  * User-mode only (no kernel driver). The blocklist is matched case-insensitively against
  * process names, window titles and loaded-module names reported by the desktop client.
  */
-import { createHmac, timingSafeEqual } from "node:crypto";
+import { createHmac, randomBytes, timingSafeEqual } from "node:crypto";
 
 export const HEARTBEAT_INTERVAL_SEC = 15;
 /** A heartbeat older than this no longer counts as "fresh" for queue enforcement. */
@@ -87,4 +87,50 @@ export function versionAtLeast(v: string, min: string): boolean {
   const a = v.split(".").map((n) => parseInt(n, 10) || 0), b = min.split(".").map((n) => parseInt(n, 10) || 0);
   for (let i = 0; i < 3; i++) if ((a[i] ?? 0) !== (b[i] ?? 0)) return (a[i] ?? 0) > (b[i] ?? 0);
   return true;
+}
+
+/* ---------------- R59 stage 2 helpers ---------------- */
+
+/** Heartbeat protocol 2 (desktop >= 1.6.0): every heartbeat must echo the single-use nonce from the previous response. */
+export const PROTO_NONCE = 2;
+export function newNonce(): string {
+  return randomBytes(18).toString("hex");
+}
+
+/** Soft findings reported by the 1.6.0 desktop detectors. These never block; they go to owner review. */
+export const SOFT_KINDS = new Set(["handle", "unsigned-module", "overlay", "debugger", "vm", "test-signing", "dse-off", "asar", "app-tamper", "driver-provider"]);
+/** Hard rule matches (owner/admin-listed programs, windows, modules, launch flags, game file mismatch) block queueing. */
+export const HARD_KINDS = new Set(["process", "window", "module", "launch-flag", "file-hash", "hw-ban"]);
+
+export type Finding = { kind: string; severity: string; detail: string };
+export function parseFindings(v: unknown): Finding[] {
+  if (!Array.isArray(v)) return [];
+  return v.slice(0, 40).flatMap((x) => {
+    const o = (x ?? {}) as Record<string, unknown>;
+    const kind = typeof o.kind === "string" ? o.kind.slice(0, 32) : "";
+    if (!SOFT_KINDS.has(kind)) return [];
+    return [{ kind, severity: o.severity === "high" ? "high" : "warn", detail: typeof o.detail === "string" ? o.detail.slice(0, 300) : "" }];
+  });
+}
+
+/** clean | review (soft findings only: allowed, owner reviews) | flagged (hard rule: blocks queue/match). */
+export function sessionStatus(violations: { kind: string }[]): "clean" | "review" | "flagged" {
+  if (violations.some((v) => HARD_KINDS.has(v.kind) || v.kind === "tamper")) return "flagged";
+  return violations.length ? "review" : "clean";
+}
+
+export function allowedStatus(status: string | null | undefined): boolean {
+  return status === "clean" || status === "review";
+}
+
+export type GateInput = { required: boolean; userFound: boolean; session: { lastHeartbeatAt: Date | null; status: string } | null; hwBanned: boolean };
+export type GateVerdict = { allow: boolean; required: boolean; reason: string };
+/** Pure match-gate decision used by /api/cs2/gate. */
+export function gateVerdict(g: GateInput, now = new Date()): GateVerdict {
+  if (!g.required) return { allow: true, required: false, reason: "not-required" };
+  if (!g.userFound) return { allow: false, required: true, reason: "no-account" };
+  if (g.hwBanned) return { allow: false, required: true, reason: "integrity-flagged" };
+  if (!g.session || !isFresh(g.session.lastHeartbeatAt, now)) return { allow: false, required: true, reason: "no-session" };
+  if (!allowedStatus(g.session.status)) return { allow: false, required: true, reason: "integrity-flagged" };
+  return { allow: true, required: true, reason: "ok" };
 }

@@ -7,6 +7,7 @@ Posts CS2 server events to A.C.E. at `POST /api/cs2/events`:
 | `map_start` | map loaded | `map` |
 | `round_end` | every round | `round`, `winner` (ct/t), `reason`, `scoreCt`, `scoreT`, `map` |
 | `player_death` | every kill (toggle `SendKills`) | `victim`, `attacker`, `assister` (SteamID64), `weapon`, `headshot` |
+| `kill_telemetry` (0.4.0) | every live kill (toggle `SendKillTelemetry`) | attacker/victim positions, attacker view angles, distance, wallbang/throughSmoke/attackerBlind/noscope, short aim `trace` (`[{dt,pitch,yaw,err}]`) |
 | `round_mvp` | round MVP | `player`, `reason` |
 | `round_start` (0.3.0) | every round | `round`, `map` |
 | `round_stats` (0.3.0) | every live round end (not warmup) | `round`, `winner`, scores, `players[]`: `steamId`, `team`, `dmg` (capped at victim HP), `heDmg`, `molDmg`, `flashes`, `flashesHit` (flashbangs that blinded an enemy), `enemiesFlashed`, `flashMs`, `teamFlashed`, `he`, `molotovs`, `smokes`, `kills`, `deaths`, `weapons` {weapon: kills}, `firstKill`, `firstDeath`, `clutchVs` (X in 1vX, 0 = none), `clutchWon` |
@@ -77,3 +78,22 @@ New config keys (added automatically to AceBridge.json on load; defaults shown):
 
 Upgrade on DatHost: replace `addons/counterstrikesharp/plugins/AceBridge/AceBridge.dll` with the 0.3.0 build,
 then `css_plugins reload AceBridge` (or restart). `css_plugins list` should show AceBridge 0.3.0.
+
+
+## 0.4.0 integrity telemetry and match gating
+
+New config keys (defaults shown):
+
+```json
+{
+  "SendKillTelemetry": true,
+  "AimSampleTicks": 2,
+  "GateUrl": "",
+  "GateEnabled": true,
+  "GateFailOpen": true
+}
+```
+
+- Aim samples are kept in a short in-RAM ring (~0.8 s) and attached only to the kill that just happened; nothing is streamed continuously.
+- On player authorize, AceBridge POSTs `{steamId}` to `GateUrl` (or `EventsUrl` with `/api/cs2/events` → `/api/cs2/gate`) with the same HMAC headers. The site answers `{allow, required, reason}`. Kick only when `allow` is explicitly `false`. On site/network failure the plugin fails open when `GateFailOpen` is true.
+- Kick messages tell the player to open the A.C.E desktop app (or close a blocked program). No secrets are printed.

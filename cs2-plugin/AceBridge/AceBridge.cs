@@ -23,12 +23,21 @@ public class AceBridgeConfig : BasePluginConfig
     [JsonPropertyName("SendRoundStats")] public bool SendRoundStats { get; set; } = true;
     /// Also post every player_hurt / player_blind / grenade_thrown as its own event (debugging; many requests per round).
     [JsonPropertyName("SendRawUtilityEvents")] public bool SendRawUtilityEvents { get; set; } = false;
+    /// 0.4.0 integrity telemetry: one "kill_telemetry" event per kill (positions, view angles, flags, short aim trace).
+    [JsonPropertyName("SendKillTelemetry")] public bool SendKillTelemetry { get; set; } = true;
+    /// View-angle sample interval in server ticks (2 = ~31 ms at 64 tick). Samples are kept in RAM only (~0.8 s ring) and sent only around kills.
+    [JsonPropertyName("AimSampleTicks")] public int AimSampleTicks { get; set; } = 2;
+    /// 0.4.0 match gating: ask A.C.E on connect whether the SteamID has a fresh desktop integrity session. Empty = derived from EventsUrl.
+    [JsonPropertyName("GateUrl")] public string GateUrl { get; set; } = "";
+    [JsonPropertyName("GateEnabled")] public bool GateEnabled { get; set; } = true;
+    /// If the site cannot be reached, let the player stay (true) rather than kick everyone during an outage.
+    [JsonPropertyName("GateFailOpen")] public bool GateFailOpen { get; set; } = true;
 }
 
 public class AceBridgePlugin : BasePlugin, IPluginConfig<AceBridgeConfig>
 {
     public override string ModuleName => "AceBridge";
-    public override string ModuleVersion => "0.3.0";
+    public override string ModuleVersion => "0.4.0";
     public override string ModuleAuthor => "A.C.E.";
     public override string ModuleDescription => "Posts round, kill, utility, clutch, MVP and match-end events to A.C.E. with an HMAC signature.";
 
@@ -51,6 +60,14 @@ public class AceBridgePlugin : BasePlugin, IPluginConfig<AceBridgeConfig>
     private readonly Dictionary<ulong, RoundLine> _rl = new();
     private readonly Dictionary<ulong, int> _hp = new();
     private bool _firstDone;
+
+    /// 0.4.0 aim ring buffer: one sample per AimSampleTicks per alive human (RAM only).
+    private readonly record struct AimSample(long Ms, float Pitch, float Yaw, float X, float Y, float Z);
+    private const int RingSize = 28;
+    private readonly Dictionary<int, AimSample[]> _ring = new();
+    private readonly Dictionary<int, int> _ringPos = new();
+    private int _tick;
+    private string _gateUrl = "";
     private RoundLine L(CCSPlayerController p) { if (!_rl.TryGetValue(p.SteamID, out var l)) { l = new RoundLine(); _rl[p.SteamID] = l; } l.Team = TeamOf(p); return l; }
     private static string TeamOf(CCSPlayerController p) => p.TeamNum == (int)CsTeam.CounterTerrorist ? "ct" : p.TeamNum == (int)CsTeam.Terrorist ? "t" : "spec";
     private static bool Human(CCSPlayerController? p) => p is { IsValid: true, IsBot: false } && p.SteamID != 0;
@@ -72,6 +89,7 @@ public class AceBridgePlugin : BasePlugin, IPluginConfig<AceBridgeConfig>
         _url = Environment.GetEnvironmentVariable("ACE_EVENTS_URL") is { Length: > 0 } u ? u : config.EventsUrl;
         _secret = Environment.GetEnvironmentVariable("ACE_PLUGIN_SECRET") is { Length: > 0 } s ? s : config.Secret;
         _serverId = Environment.GetEnvironmentVariable("ACE_SERVER_ID") is { Length: > 0 } id ? id : config.ServerId;
+        _gateUrl = config.GateUrl.Length > 0 ? config.GateUrl : _url.Replace("/api/cs2/events", "/api/cs2/gate");
         if (_secret.Length < 16) Logger.LogWarning("[AceBridge] Secret is missing or shorter than 16 characters; events will be rejected.");
     }
 
@@ -85,6 +103,118 @@ public class AceBridgePlugin : BasePlugin, IPluginConfig<AceBridgeConfig>
                 : Environment.GetEnvironmentVariable("ACE_MATCH_ID") is { Length: > 0 } mid ? mid
                 : $"{map}-{DateTimeOffset.UtcNow.ToUnixTimeSeconds()}";
             Send("map_start", new { map });
+            _ring.Clear(); _ringPos.Clear();
+        });
+        RegisterListener<Listeners.OnTick>(SampleAim);
+        RegisterListener<Listeners.OnClientAuthorized>((slot, steamId) => GateCheck(slot, steamId.SteamId64));
+    }
+
+    private static long NowMs() => (long)(Server.CurrentTime * 1000);
+
+    /// Light periodic view-angle + eye position sampling (game thread). Nothing is sent from here.
+    private void SampleAim()
+    {
+        if (!Config.SendKillTelemetry || ++_tick % Math.Max(1, Config.AimSampleTicks) != 0) return;
+        var now = NowMs();
+        foreach (var p in Utilities.GetPlayers())
+        {
+            if (p is not { IsValid: true, PawnIsAlive: true }) continue;
+            var pawn = p.PlayerPawn.Value; if (pawn == null || pawn.AbsOrigin == null) continue;
+            var a = pawn.EyeAngles; var o = pawn.AbsOrigin;
+            var smp = new AimSample(now, a.X, a.Y, o.X, o.Y, o.Z + (pawn.ViewOffset?.Z ?? 64f));
+            if (!_ring.TryGetValue(p.Slot, out var r)) { r = new AimSample[RingSize]; _ring[p.Slot] = r; _ringPos[p.Slot] = 0; }
+            var i = _ringPos[p.Slot]; r[i % RingSize] = smp; _ringPos[p.Slot] = i + 1;
+        }
+    }
+
+    private List<AimSample> History(int slot)
+    {
+        if (!_ring.TryGetValue(slot, out var r)) return new();
+        var n = _ringPos[slot]; var outp = new List<AimSample>();
+        for (var k = Math.Max(0, n - RingSize); k < n; k++) outp.Add(r[k % RingSize]);
+        return outp;
+    }
+
+    /// Angle (degrees) between the view direction (pitch,yaw) and the vector from eye to target.
+    public static double AimError(float pitch, float yaw, float ex, float ey, float ez, float tx, float ty, float tz)
+    {
+        double dx = tx - ex, dy = ty - ey, dz = tz - ez;
+        var len = Math.Sqrt(dx * dx + dy * dy + dz * dz); if (len < 1e-3) return 0;
+        double p = pitch * Math.PI / 180, y = yaw * Math.PI / 180;
+        double vx = Math.Cos(p) * Math.Cos(y), vy = Math.Cos(p) * Math.Sin(y), vz = -Math.Sin(p);
+        var dot = Math.Clamp((vx * dx + vy * dy + vz * dz) / len, -1, 1);
+        return Math.Acos(dot) * 180 / Math.PI;
+    }
+
+    /// Per-kill integrity record. Victim target point = victim eye/chest height from the victim's own ring (same timestamps when available).
+    private void SendKillTelemetry(EventPlayerDeath ev)
+    {
+        var a = ev.Attacker; var v = ev.Userid;
+        if (!Human(a) || v is not { IsValid: true } || a!.SteamID == v.SteamID || a.TeamNum == v.TeamNum) return;
+        var ap = a.PlayerPawn.Value; var vp = v.PlayerPawn.Value;
+        if (ap?.AbsOrigin == null || vp?.AbsOrigin == null) return;
+        var now = NowMs();
+        var ah = History(a.Slot); var vh = History(v.Slot);
+        float vx = vp.AbsOrigin.X, vy = vp.AbsOrigin.Y, vz = vp.AbsOrigin.Z + 48f;
+        var trace = ah.Select(s =>
+        {
+            var vs = vh.Count > 0 ? vh.OrderBy(q => Math.Abs(q.Ms - s.Ms)).First() : default;
+            float tx = vh.Count > 0 ? vs.X : vx, ty = vh.Count > 0 ? vs.Y : vy, tz = vh.Count > 0 ? vs.Z - 16f : vz;
+            return new { dt = (int)(s.Ms - now), pitch = MathF.Round(s.Pitch, 2), yaw = MathF.Round(s.Yaw, 2), err = Math.Round(AimError(s.Pitch, s.Yaw, s.X, s.Y, s.Z, tx, ty, tz), 2) };
+        }).ToList();
+        var ang = ap.EyeAngles;
+        Send("kill_telemetry", new
+        {
+            round = _round + 1,
+            attacker = Sid(a), victim = Sid(v), victimBot = v.IsBot,
+            weapon = (ev.Weapon ?? "").Replace("weapon_", ""), headshot = ev.Headshot, hitgroup = 0,
+            distance = Math.Round(ev.Distance, 1),
+            wallbang = ev.Penetrated > 0, penetrated = ev.Penetrated,
+            throughSmoke = ev.Thrusmoke, attackerBlind = ev.Attackerblind, noscope = ev.Noscope,
+            attackerPos = new[] { MathF.Round(ap.AbsOrigin.X, 1), MathF.Round(ap.AbsOrigin.Y, 1), MathF.Round(ap.AbsOrigin.Z, 1) },
+            victimPos = new[] { MathF.Round(vp.AbsOrigin.X, 1), MathF.Round(vp.AbsOrigin.Y, 1), MathF.Round(vp.AbsOrigin.Z, 1) },
+            attackerAngles = new[] { MathF.Round(ang.X, 2), MathF.Round(ang.Y, 2) },
+            sampleMs = Math.Max(1, Config.AimSampleTicks) * 1000 / 64,
+            trace,
+        });
+    }
+
+    /// Match gating (0.4.0). The site answers { allow, required, reason }. Kick only when the site explicitly says allow=false.
+    private void GateCheck(int slot, ulong steamId)
+    {
+        if (!Config.GateEnabled || steamId == 0 || _secret.Length < 16 || string.IsNullOrWhiteSpace(_gateUrl)) return;
+        var body = JsonSerializer.Serialize(new { steamId = steamId.ToString(), serverId = _serverId, matchId = _matchKey });
+        var url = _gateUrl; var secret = _secret; var failOpen = Config.GateFailOpen;
+        _ = Task.Run(async () =>
+        {
+            bool allow; string reason = "";
+            try
+            {
+                var ts = DateTimeOffset.UtcNow.ToUnixTimeSeconds().ToString();
+                using var req = new HttpRequestMessage(HttpMethod.Post, url) { Content = new StringContent(body, Encoding.UTF8, "application/json") };
+                req.Headers.Add("X-Ace-Timestamp", ts);
+                req.Headers.Add("X-Ace-Signature", Sign(secret, ts, body));
+                using var res = await Http.SendAsync(req);
+                if (!res.IsSuccessStatusCode) { allow = failOpen; reason = "gate-http-" + (int)res.StatusCode; }
+                else
+                {
+                    using var doc = JsonDocument.Parse(await res.Content.ReadAsStringAsync());
+                    allow = !doc.RootElement.TryGetProperty("allow", out var al) || al.ValueKind != JsonValueKind.False;
+                    reason = doc.RootElement.TryGetProperty("reason", out var rs) ? rs.GetString() ?? "" : "";
+                }
+            }
+            catch (Exception) { allow = failOpen; reason = "gate-unreachable"; }
+            if (allow) return;
+            Server.NextFrame(() =>
+            {
+                var p = Utilities.GetPlayerFromSlot(slot);
+                if (p is not { IsValid: true } || p.SteamID != steamId || p.UserId == null) return;
+                var msg = reason == "integrity-flagged"
+                    ? "A.C.E: your anti-cheat client reported a blocked program. Close it, then reconnect."
+                    : "A.C.E: open the A.C.E desktop app (anti-cheat active) and sign in before joining this match.";
+                Logger.LogInformation("[AceBridge] Gate kicked {Sid}: {Reason}", steamId, reason);
+                Server.ExecuteCommand($"kickid {p.UserId.Value} \"{msg}\"");
+            });
         });
     }
 
@@ -198,6 +328,7 @@ public class AceBridgePlugin : BasePlugin, IPluginConfig<AceBridgeConfig>
     public HookResult OnPlayerDeath(EventPlayerDeath ev, GameEventInfo info)
     {
         TrackDeath(ev);
+        if (Config.SendKillTelemetry && !Warmup()) { try { SendKillTelemetry(ev); } catch (Exception e) { Logger.LogWarning("[AceBridge] kill telemetry: {M}", e.Message); } }
         if (!Config.SendKills) return HookResult.Continue;
         Send("player_death", new
         {

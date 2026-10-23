@@ -685,6 +685,11 @@ model AnticheatSession {
   machineHash     String           @default("")
   lastHeartbeatAt DateTime?
   lastSeq         Int              @default(0)
+  /// R59 challenge-response: single-use nonce the next heartbeat must echo (signed).
+  nonce           String           @default("")
+  /// R59 salted SHA-256 hardware fingerprint (no raw serials stored) and app.asar hash.
+  hwHash          String           @default("")
+  asarHash        String           @default("")
   cs2Running      Boolean          @default(false)
   /// clean | flagged
   status          String           @default("clean")
@@ -919,4 +924,68 @@ model Cs2PlayerMatchStat {
 
   @@unique([matchKey, steamId])
   @@index([steamId])
+}
+
+/// R59 AceBridge 0.4.0 per-kill integrity telemetry (positions, view angles, flags, short aim trace).
+model Cs2KillTelemetry {
+  id              String   @id @default(cuid())
+  eventId         String   @unique
+  serverId        String
+  matchKey        String
+  round           Int      @default(0)
+  attackerSteamId String
+  victimSteamId   String?
+  victimBot       Boolean  @default(false)
+  weapon          String   @default("")
+  headshot        Boolean  @default(false)
+  distance        Float    @default(0)
+  wallbang        Boolean  @default(false)
+  throughSmoke    Boolean  @default(false)
+  attackerBlind   Boolean  @default(false)
+  noscope         Boolean  @default(false)
+  attackerPos     Json?
+  victimPos       Json?
+  attackerAngles  Json?
+  /// [{dt, pitch, yaw, err}] samples before the kill (dt ms relative to the kill, err = degrees off target)
+  trace           Json?
+  sampleMs        Int      @default(31)
+  createdAt       DateTime @default(now())
+
+  @@index([matchKey, attackerSteamId])
+  @@index([attackerSteamId, createdAt])
+}
+
+/// R59 owner review queue. Statistics NEVER ban; an owner decides.
+model AnticheatReview {
+  id         String    @id @default(cuid())
+  matchKey   String
+  steamId    String
+  userId     String?
+  score      Float     @default(0)
+  /// low | medium | high
+  level      String    @default("low")
+  indicators Json
+  reasons    Json
+  kills      Int       @default(0)
+  /// open | cleared | confirmed
+  status     String    @default("open")
+  note       String    @default("")
+  reviewedBy String?
+  reviewedAt DateTime?
+  createdAt  DateTime  @default(now())
+  updatedAt  DateTime  @updatedAt
+
+  @@unique([matchKey, steamId])
+  @@index([status, score])
+}
+
+/// R59 hardware-fingerprint ban list (owner decision only). hwHash is a salted SHA-256, never raw hardware IDs.
+model AnticheatHardwareBan {
+  id        String    @id @default(cuid())
+  hwHash    String    @unique
+  userId    String?
+  reason    String    @default("")
+  createdBy String    @default("")
+  createdAt DateTime  @default(now())
+  revokedAt DateTime?
 }

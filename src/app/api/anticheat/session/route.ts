@@ -12,5 +12,7 @@ export async function POST(request: Request) {
   const body = (await readJsonObject(request)) ?? {};
   const v = typeof body.clientVersion === "string" ? body.clientVersion : "0.0.0";
   const m = typeof body.machineHash === "string" ? body.machineHash : "";
-  return Response.json(await issueAnticheatSession(user.id, v, m), { headers: { "cache-control": "no-store" } });
+  const hw = typeof body.hwHash === "string" ? body.hwHash : "";
+  const asar = typeof body.asarHash === "string" ? body.asarHash : "";
+  return Response.json(await issueAnticheatSession(user.id, v, m, { hwHash: hw, asarHash: asar }), { headers: { "cache-control": "no-store" } });
 }

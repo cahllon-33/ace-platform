@@ -118,7 +118,7 @@
       items: [
         "Steam passwords. Sign-in is Steam OpenID / Steam’s official flow only.",
         "Payment card numbers. Paddle handles payment details; A.C.E never sees them.",
-        "Kernel telemetry. No Anti-Cheat client ships with this website.",
+        "Kernel telemetry. The A.C.E desktop anti-cheat runs in user mode only; see the Privacy Policy at /privacy for exactly what it reports.",
       ],
     },
     steamBoundary: {

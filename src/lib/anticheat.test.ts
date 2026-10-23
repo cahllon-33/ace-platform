@@ -41,3 +41,31 @@ describe("anticheat", () => {
     }
   });
 });
+
+import { gateVerdict, parseFindings, sessionStatus, allowedStatus, newNonce } from "./anticheat";
+describe("R59 gate + findings", () => {
+  const now = new Date("2026-10-23T10:00:00Z");
+  const fresh = new Date(now.getTime() - 10_000), stale = new Date(now.getTime() - 120_000);
+  it("always allows when not required", () => { expect(gateVerdict({ required: false, userFound: false, session: null, hwBanned: true }, now).allow).toBe(true); });
+  it("kicks without a fresh session when required", () => {
+    expect(gateVerdict({ required: true, userFound: true, session: null, hwBanned: false }, now)).toMatchObject({ allow: false, reason: "no-session" });
+    expect(gateVerdict({ required: true, userFound: true, session: { lastHeartbeatAt: stale, status: "clean" }, hwBanned: false }, now).allow).toBe(false);
+    expect(gateVerdict({ required: true, userFound: false, session: null, hwBanned: false }, now).reason).toBe("no-account");
+  });
+  it("allows clean and review sessions, blocks flagged and hw-banned", () => {
+    expect(gateVerdict({ required: true, userFound: true, session: { lastHeartbeatAt: fresh, status: "clean" }, hwBanned: false }, now).allow).toBe(true);
+    expect(gateVerdict({ required: true, userFound: true, session: { lastHeartbeatAt: fresh, status: "review" }, hwBanned: false }, now).allow).toBe(true);
+    expect(gateVerdict({ required: true, userFound: true, session: { lastHeartbeatAt: fresh, status: "flagged" }, hwBanned: false }, now).reason).toBe("integrity-flagged");
+    expect(gateVerdict({ required: true, userFound: true, session: { lastHeartbeatAt: fresh, status: "clean" }, hwBanned: true }, now).allow).toBe(false);
+  });
+  it("soft findings go to review, hard rules block", () => {
+    expect(sessionStatus([])).toBe("clean");
+    expect(sessionStatus([{ kind: "overlay" }, { kind: "vm" }])).toBe("review");
+    expect(sessionStatus([{ kind: "overlay" }, { kind: "process" }])).toBe("flagged");
+    expect(allowedStatus("review")).toBe(true); expect(allowedStatus("flagged")).toBe(false);
+  });
+  it("drops unknown finding kinds (client cannot self-assign a hard kind)", () => {
+    expect(parseFindings([{ kind: "process", detail: "x" }, { kind: "handle", detail: "y", severity: "high" }, null])).toEqual([{ kind: "handle", severity: "high", detail: "y" }]);
+  });
+  it("nonces are unique", () => { expect(newNonce()).not.toBe(newNonce()); expect(newNonce()).toMatch(/^[a-f0-9]{36}$/); });
+});
