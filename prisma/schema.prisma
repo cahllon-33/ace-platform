@@ -96,6 +96,8 @@ model User {
   subscriptionExpiresAt DateTime?
   /// occurred_at of the last applied Paddle event: older events are ignored (out-of-order delivery).
   subscriptionEventAt   DateTime?
+  /// R71 owner/testing override set from the admin panel. While set, Paddle webhooks and expiry never change subscriptionTier.
+  tierOverride          SubscriptionTier?
   /// R49b: the player chose to hide the Steam inventory showcase on their public profile.
   inventoryHidden       Boolean          @default(false)
   /// R53 privacy: public | friends | private (stats, history, achievements). Server-enforced.

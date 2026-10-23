@@ -49,7 +49,7 @@ export async function applyPaddleEvent(e: PaddleEventIn, cfg: PaddleConfig): Pro
         await prisma.user.update({
           where: { id: user.id },
           data: {
-            ...(change.tier ? { subscriptionTier: change.tier } : {}),
+            ...(change.tier && !user.tierOverride ? { subscriptionTier: change.tier } : {}),
             subscriptionStatus: change.status,
             ...(change.expiresAt || change.status === "canceled" ? { subscriptionExpiresAt: change.expiresAt } : {}),
             ...(change.subscriptionId ? { paddleSubscriptionId: change.subscriptionId } : {}),
@@ -66,9 +66,9 @@ export async function applyPaddleEvent(e: PaddleEventIn, cfg: PaddleConfig): Pro
 }
 
 /** Lazy lapse: a Paddle plan whose paid period ended more than the grace ago drops to FREE (admin grants are untouched). */
-export async function lapseIfExpired(u: { id: string; subscriptionTier: string; paddleSubscriptionId: string | null; subscriptionExpiresAt: Date | null }) {
-  if (!hasLapsed(u)) return false;
-  await getPrisma().user.updateMany({ where: { id: u.id, paddleSubscriptionId: u.paddleSubscriptionId }, data: { subscriptionTier: "FREE", subscriptionStatus: "expired" } });
+export async function lapseIfExpired(u: { id: string; subscriptionTier: string; paddleSubscriptionId: string | null; subscriptionExpiresAt: Date | null; tierOverride?: string | null }) {
+  if (u.tierOverride || !hasLapsed(u)) return false;
+  await getPrisma().user.updateMany({ where: { id: u.id, paddleSubscriptionId: u.paddleSubscriptionId, tierOverride: null }, data: { subscriptionTier: "FREE", subscriptionStatus: "expired" } });
   return true;
 }
 

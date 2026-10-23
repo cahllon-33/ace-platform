@@ -112,7 +112,7 @@ export async function commandAction(op: string, b: Record<string, unknown>) {
     }
     case "ban.revoke": { const r = await revokeBan(str(b.id, 40)); await log("queue.unban", str(b.id, 40)); return r; }
     case "player.plan": {
-      const tier = str(b.tier, 10) as "FREE" | "PLUS" | "PREMIUM";
+      const tier = str(b.tier, 10) as "FREE" | "PLUS" | "PREMIUM" | "AUTO";
       const r = await setAdminTier(str(b.userId, 64), tier);
       if (r.ok) await log("player.plan", `${str(b.userId, 64)}=${tier}`); return r.ok ? r : { ok: false as const, error: "bad-request" };
     }

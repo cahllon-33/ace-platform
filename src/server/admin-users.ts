@@ -404,13 +404,22 @@ export async function resetAdminProfile(userId: string) {
   return { ok: true as const };
 }
 
-export async function setAdminTier(userId: string, tier: SubscriptionTier) {
+/** R71: admin plan = durable override (owner/testing). Paddle webhooks and expiry leave it alone until cleared with "AUTO". */
+export async function setAdminTier(userId: string, tier: SubscriptionTier | "AUTO") {
   const user = await gatedUser(userId);
   if (!user) return { ok: false as const };
-  if (tier !== "FREE" && tier !== "PLUS" && tier !== "PREMIUM") return { ok: false as const };
-  await prisma.user.update({ where: { id: user.id }, data: { subscriptionTier: tier } });
+  if (tier !== "FREE" && tier !== "PLUS" && tier !== "PREMIUM" && tier !== "AUTO") return { ok: false as const };
+  const old = `${user.subscriptionTier}${user.tierOverride ? " (override)" : ""}`;
+  if (tier === "AUTO") {
+    // Back to Paddle: keep the tier only while a paid subscription is live, else FREE.
+    const live = !!user.paddleSubscriptionId && ["active", "trialing", "past_due"].includes(user.subscriptionStatus) && (!user.subscriptionExpiresAt || user.subscriptionExpiresAt > new Date());
+    await prisma.user.update({ where: { id: user.id }, data: { tierOverride: null, ...(live ? {} : { subscriptionTier: "FREE" }) } });
+  } else {
+    await prisma.user.update({ where: { id: user.id }, data: { subscriptionTier: tier, tierOverride: tier } });
+  }
+  await prisma.adminAuditLog.create({ data: { actor: await readAdminActor(), action: "player.tier", targetUserId: user.id, oldValue: old, newValue: tier === "AUTO" ? "paddle" : `${tier} (override)` } }).catch(() => undefined);
   revalidatePath("/admin/dashboard");
-  return { ok: true as const };
+  return { ok: true as const, override: tier !== "AUTO" };
 }
 
 export type AdminTournamentRow = { id: string; name: string; status: string; entries: number };
