@@ -12,7 +12,12 @@ export function RankTurntable({ tier, art = "standard" }: { tier: RankTier; art?
   const asset = rankArtAsset(tier.level, art);
   const dragging = useRef(false);
   const last = useRef({ x: 0, y: 0 });
-  const [yaw, setYaw] = useState(18);
+  // R70: the emblem is a flat plane, so a full 360° spin turned it edge-on (a thin line). It now sways
+  // within ±72° (gentle sway + drag offset), always facing the viewer.
+  const [off, setOff] = useState(0);
+  const [phase, setPhase] = useState(0);
+  const setYaw = (f: (v: number) => number) => setOff((v) => Math.max(-40, Math.min(40, f(v))));
+  const yaw = off + 32 * Math.sin(phase);
   // "3d" while the turntable asset is healthy; "static" after a failed load or 2.5s without one.
   const [mode, setMode] = useState<"loading" | "3d" | "static">("loading");
 
@@ -48,7 +53,7 @@ export function RankTurntable({ tier, art = "standard" }: { tier: RankTier; art?
       if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
         return;
       }
-      setYaw((value) => value + 0.45);
+      setPhase((value) => value + 0.02);
     }, 32);
     return () => window.clearInterval(timer);
   }, []);
