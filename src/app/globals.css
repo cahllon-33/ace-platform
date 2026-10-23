@@ -8122,3 +8122,13 @@ html[dir="rtl"] .ace-hub-card-face {
 .ace-chip-signin:hover { border-color: #66c0f4; }
 .is-billingOn .ace-status-light { background: #3ddc84; box-shadow: 0 0 8px rgba(61,220,132,.6); }
 .is-billingOn .ace-status-value { color: var(--ace-t-text); letter-spacing: 0.06em; }
+
+/* R62 "charcoal + glowing gold" layer: deep neutral charcoal (no brown), luminous gold accents. Additive only. */
+:root { --ace-r62-glow: 0 0 22px rgba(255, 205, 90, .38); --ace-r62-glow-soft: 0 0 40px rgba(255, 200, 80, .10); }
+body { background-color: #08080b; background-image: radial-gradient(1100px 480px at 50% -180px, rgba(255, 205, 90, .10), transparent 70%), radial-gradient(900px 600px at 100% 0%, rgba(212, 175, 55, .04), transparent 60%); background-attachment: fixed; }
+.hx { background: rgba(8, 8, 11, .78); border-bottom-color: rgba(255, 215, 106, .18); box-shadow: 0 1px 0 rgba(255, 215, 106, .06), 0 12px 40px -24px rgba(255, 200, 80, .25); }
+.hx-links a.is-on, .hx-links a[aria-current="page"] { color: #ffd76a; text-shadow: 0 0 14px rgba(255, 215, 106, .55); }
+.hx-links a:hover { color: #ffe8a3; }
+.hx-cta { background: linear-gradient(180deg, #fff1bf 0%, #ffd76a 45%, #d4a634 100%); box-shadow: var(--ace-r62-glow), inset 0 1px 0 rgba(255, 255, 255, .55); }
+.hx-cta:hover { box-shadow: 0 0 32px rgba(255, 205, 90, .6), inset 0 1px 0 rgba(255, 255, 255, .55); }
+.ace-wordmark { text-shadow: 0 0 16px rgba(255, 215, 106, .45); }

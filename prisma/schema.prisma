@@ -605,6 +605,8 @@ enum CosmeticKind {
   BANNER
   CARD_EFFECT
   NAME_COLOR
+  STICKER
+  BADGE
 }
 
 /// R49 cosmetic catalog (admin-managed, one-time Paddle purchases). Strictly cosmetic: no gameplay effect.
@@ -1070,4 +1072,22 @@ model OverwatchVote {
 
   @@unique([caseId, reviewerId])
   @@index([reviewerId, createdAt])
+}
+
+/// R62 player-facing "What's New" changelog. Only player-relevant entries (features, new shop items); never admin/system changes.
+model ChangelogEntry {
+  id          String   @id @default(cuid())
+  /// FEATURE | SHOP
+  kind        String   @default("FEATURE")
+  title       String
+  body        String   @default("")
+  /// Optional site path for "Open" (e.g. /shop, /anti-cheat).
+  href        String?
+  /// Set for kind=SHOP entries created automatically when a new cosmetic is added.
+  itemId      String?  @unique
+  published   Boolean  @default(true)
+  publishedAt DateTime @default(now())
+  createdAt   DateTime @default(now())
+
+  @@index([published, publishedAt])
 }

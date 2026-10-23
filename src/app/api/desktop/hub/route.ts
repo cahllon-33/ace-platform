@@ -6,6 +6,7 @@ import * as v2 from "@/server/desktop-v2";
 import * as r53 from "@/server/desktop-r53";
 import { readIsSteamOwner } from "@/server/admin-gate";
 import { getPrisma } from "@/server/db";
+import { listWhatsNew } from "@/server/whats-new";
 import { pulse } from "@/server/desktop-pulse";
 import { statsPublic } from "@/server/desktop-r57";
 
@@ -24,6 +25,7 @@ export async function GET(request: Request) {
   const json = (data: unknown, status = 200) => Response.json(data, { status, headers: { "cache-control": "no-store" } });
   try {
     switch (section) {
+      case "whatsnew": return json({ rows: await listWhatsNew(50) });
       case "pulse": return json(await pulse());
       case "leaderboard": return json({ rows: await hub.hubLeaderboard() });
       case "pros": return json({ rows: await hub.hubPros() });

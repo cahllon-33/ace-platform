@@ -12,7 +12,7 @@ import "./cosmetic-shop.css";
 export function CosmeticShop({ items }: { items: ShopItem[] | null }) {
   const t = useUi().r49;
   const [list, setList] = useState(items ?? []);
-  const kinds: Record<ShopItem["kind"], string> = { FRAME: t.kindFrame, BANNER: t.kindBanner, CARD_EFFECT: t.kindEffect, NAME_COLOR: t.kindName };
+  const kinds: Record<ShopItem["kind"], string> = { FRAME: t.kindFrame, BANNER: t.kindBanner, CARD_EFFECT: t.kindEffect, NAME_COLOR: t.kindName, STICKER: "Sticker", BADGE: "Badge" };
   const equip = async (it: ShopItem, on: boolean) => {
     const r = await fetch("/api/cosmetics/equip", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ itemId: it.id, equipped: on }) });
     if (r.ok) setList((l) => l.map((x) => (x.kind === it.kind ? { ...x, equipped: x.id === it.id ? on : on ? false : x.equipped } : x)));

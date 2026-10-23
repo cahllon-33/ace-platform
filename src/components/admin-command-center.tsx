@@ -488,6 +488,10 @@ export function AdminCommandCenter({
             <span>{admin.hebrew ? "תשלומים" : "Payments"}</span>
             <span className="acx-count" aria-hidden="true">↗</span>
           </a>
+          <a href="/admin/whats-new" className="acx-nav-ext">
+            <span>מה חדש</span>
+            <span className="acx-count" aria-hidden="true">↗</span>
+          </a>
         </nav>
         <div className="acx-env">
           <p className="acx-label">{t("envTitle")}</p>

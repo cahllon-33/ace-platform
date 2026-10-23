@@ -10,6 +10,7 @@ import { useI18n } from "@/components/locale-provider";
 import { useText } from "@/components/text-provider";
 import { useUi } from "@/components/use-ui";
 import { moreNav, siteNav } from "@/lib/site";
+import { WhatsNewDot } from "@/components/whats-new-badge";
 import "./site-header.css";
 
 function isActive(pathname: string, href: string) {
@@ -93,6 +94,15 @@ export function SiteHeader({ auth }: { auth: ReactNode }) {
           <Link href="/live" aria-current={isActive(pathname, "/live") ? "page" : undefined} className={isActive(pathname, "/live") ? "is-on" : undefined}>
             {ui.r41b.lv.nav}
           </Link>
+          <Link href="/anti-cheat" lang="en" aria-current={isActive(pathname, "/anti-cheat") ? "page" : undefined} className={`hx-ac${isActive(pathname, "/anti-cheat") ? " is-on" : ""}`}>
+            Anti-Cheat
+          </Link>
+          <Link href="/shop" lang="en" aria-current={isActive(pathname, "/shop") ? "page" : undefined} className={isActive(pathname, "/shop") ? "is-on" : undefined}>
+            Shop
+          </Link>
+          <Link href="/whats-new" lang="en" aria-current={isActive(pathname, "/whats-new") ? "page" : undefined} className={`hx-wn${isActive(pathname, "/whats-new") ? " is-on" : ""}`}>
+            What&apos;s New<WhatsNewDot />
+          </Link>
         </nav>
 
         <div className="hx-tools">
@@ -171,12 +181,20 @@ export function SiteHeader({ auth }: { auth: ReactNode }) {
                   );
                 })}
                 {group.label === ui.nav.compete ? (
+                  <>
                   <li>
                     <Link href="/live" aria-current={isActive(pathname, "/live") ? "page" : undefined} onClick={close}>
                       <span>{ui.r41b.lv.nav}</span>
                       <span aria-hidden="true" className="hx-arrow">→</span>
                     </Link>
                   </li>
+                    <li>
+                      <Link href="/anti-cheat" lang="en" onClick={close}><span>Anti-Cheat</span><span aria-hidden="true" className="hx-arrow">→</span></Link>
+                    </li>
+                    <li>
+                      <Link href="/whats-new" lang="en" onClick={close}><span>What&apos;s New<WhatsNewDot /></span><span aria-hidden="true" className="hx-arrow">→</span></Link>
+                    </li>
+                  </>
                 ) : null}
               </ul>
             </section>

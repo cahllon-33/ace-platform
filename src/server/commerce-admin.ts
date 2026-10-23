@@ -5,6 +5,7 @@ import { readAdminActor, readIsSteamOwner } from "@/server/admin-gate";
 import { readPaddleConfig } from "@/server/paddle";
 import { SOCIALS, validSocialUrl, type Social } from "@/lib/socials";
 import { readSocials } from "@/server/socials";
+import { announceShopItem } from "@/server/whats-new";
 import { COSMETIC_KINDS, isHexColor, validCents, type CosmeticKindId } from "@/lib/cosmetics";
 
 /** R49 owner-only payments console: Paddle status, subscriptions, events, orders, cosmetic catalog, entry fees. */
@@ -70,6 +71,7 @@ export async function saveCosmetic(i: CosmeticInput): Promise<R<string>> {
   const data = { slug: i.slug, kind: i.kind as CosmeticKindId, name: i.name.trim(), description: i.description.trim(), priceCents: i.priceCents, color: i.color.toLowerCase(), active: i.active };
   try {
     const row = i.id ? await prisma.cosmeticItem.update({ where: { id: i.id }, data }) : await prisma.cosmeticItem.create({ data });
+    if (!i.id && row.active) await announceShopItem(row);
     await prisma.adminAuditLog.create({ data: { actor: await readAdminActor(), action: "shop.cosmetic", newValue: `${row.slug} ${row.priceCents}c active=${row.active}` } }).catch(() => undefined);
     return { ok: true, data: row.id };
   } catch {

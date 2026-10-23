@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { ComingSoon } from "@/components/coming-soon";
+import { AnticheatStatus } from "@/components/anticheat-status";
+import { connection } from "next/server";
 import { SHIELD_PHASES, SHIELD_PILLARS } from "@/features/anti-cheat/status";
 import type { ShieldStatus } from "@/features/anti-cheat/types";
 import type { Ui } from "@/lib/i18n/ui";
@@ -27,6 +29,7 @@ const ICONS: Record<string, string> = {
 };
 
 export default async function AntiCheatPage() {
+  await connection();
   const ui = await getUi();
   const copy = ui.antiCheat;
   return (
@@ -40,9 +43,10 @@ export default async function AntiCheatPage() {
         <p className="mt-4 max-w-3xl text-base leading-7 text-[#C9CAD0]">{copy.lede}</p>
         <div className="mt-6 flex flex-wrap items-center gap-3">
           <span className="text-xs uppercase tracking-[0.18em] text-[#A9ABB3]">{copy.statusLabel}</span>
-          <ComingSoon label={ui.status.inDevelopment} size="md" />
+          <ComingSoon label={ui.status.available} size="md" />
         </div>
       </header>
+      <AnticheatStatus />
 
       <section className="mt-14" aria-labelledby="shield-pillars">
         <h2 id="shield-pillars" className="ace-shield-h2">{copy.pillarsTitle}</h2>

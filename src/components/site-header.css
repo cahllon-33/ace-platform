@@ -64,3 +64,7 @@ html[dir="rtl"] .hx-play-icon svg { transform: scaleX(-1); }
 /* R42b: the header (and its drawer) must stack above page content. The Tailwind z-[90] utility was not
    being applied, so page content with its own z-index (e.g. the profile card) covered the drawer foot. */
 .hx { position: sticky; top: 0; z-index: 90; }
+
+/* R62: What's New unread badge + Anti-Cheat link */
+.hx-wn { position: relative; }
+.hx-wn-dot { display: inline-flex; align-items: center; justify-content: center; min-width: 17px; height: 17px; padding: 0 5px; margin-inline-start: 6px; border-radius: 999px; font-size: 10px; font-weight: 800; color: #141109; background: linear-gradient(180deg, #fff1bf, #ffd76a 50%, #d4a634); box-shadow: 0 0 12px rgba(255, 200, 80, .7); vertical-align: 1px; }
