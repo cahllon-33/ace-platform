@@ -7,6 +7,13 @@ import * as r53 from "@/server/desktop-r53";
 import { readIsSteamOwner } from "@/server/admin-gate";
 import { getPrisma } from "@/server/db";
 import { pulse } from "@/server/desktop-pulse";
+import { statsPublic } from "@/server/desktop-r57";
+
+/** R57: another player's stats are readable only when the owner made stats public (or by the owner). */
+async function othersStatsAllowed(targetId: string, meId: string | null) {
+  if (meId && targetId === meId) return true;
+  return (await statsPublic()) || (await readIsSteamOwner());
+}
 
 /** R51 native-screen data for the A.C.E desktop app. ?section=leaderboard|pros|teams|matches|player&id=|me|party|notifications */
 export async function GET(request: Request) {
@@ -27,7 +34,11 @@ export async function GET(request: Request) {
         const viewer = await readSessionUser();
         if (id && !(await v2.profileReadable(id, viewer?.id ?? null, await readIsSteamOwner()))) return json({ error: "private" }, 403);
         const p = id ? await hub.hubPlayer(id) : null;
-        return p ? json(p) : json({ error: "not-found" }, 404);
+        if (!p) return json({ error: "not-found" }, 404);
+        // R57: combat totals are private unless stats.public; identity/rank stay public.
+        const pp = p as unknown as { id?: string; totals?: unknown };
+        if (!(await othersStatsAllowed(pp.id ?? id, viewer?.id ?? null))) return json({ ...p, totals: null, statsPrivate: true });
+        return json(p);
       }
       // R52 (desktop v2) public sections; personalised when signed in.
       case "arena": case "squads": case "clans": case "clan": case "ladder": case "intel": case "contracts": case "armory": case "news": case "circuit": case "membership": case "search": {
@@ -42,6 +53,7 @@ export async function GET(request: Request) {
           const id = q("id") ?? me?.id;
           if (!id) return json({ error: "sign-in" }, 401);
           if (!(await v2.profileReadable(id, me?.id ?? null, await readIsSteamOwner()))) return json({ error: "private" }, 403);
+          if (!me || (id !== me.id && !(await othersStatsAllowed(id, me.id)))) return json({ error: "private" }, 403);
           const r = await v2.intel(id, { range: q("range"), map: q("map"), type: q("type") });
           if (!r) return json({ error: "not-found" }, 404);
           // Rating movement is a PLUS/PREMIUM feature on the site; the desktop app follows the same rule.
@@ -83,6 +95,7 @@ export async function GET(request: Request) {
         const me = await readSessionUser();
         const id = (u.searchParams.get("id") ?? "").slice(0, 64) || me?.id;
         if (!id) return json({ error: "sign-in" }, 401);
+        if (!me || (id !== me.id && !(await othersStatsAllowed(id, me.id)))) return json({ error: "private" }, 403);
         const d = await r53.dossier(id, me?.id ?? null, await readIsSteamOwner());
         return d ? json(d) : json({ error: "not-found" }, 404);
       }
