@@ -1,6 +1,6 @@
 .acs62 { margin-top: 28px; background: radial-gradient(600px 220px at 15% 0%, rgba(255, 210, 90, .10), transparent 70%), linear-gradient(180deg, #121216, #0b0b0e); border: 1px solid rgba(255, 215, 106, .28); border-radius: 20px; padding: 24px; box-shadow: 0 0 40px rgba(255, 200, 80, .08), 0 20px 50px rgba(0, 0, 0, .5); }
 .acs62-head { display: flex; gap: 18px; align-items: center; flex-wrap: wrap; }
-.acs62-logo { border-radius: 14px; box-shadow: 0 0 0 1px rgba(255, 215, 106, .4), 0 0 26px rgba(255, 200, 80, .35); }
+.acs62-logo { object-fit: contain; filter: drop-shadow(0 0 14px rgba(255, 205, 90, .45)); }
 .acs62-kicker { color: #ffd76a; font-size: 11px; letter-spacing: .28em; font-weight: 700; text-shadow: 0 0 14px rgba(255, 215, 106, .5); }
 .acs62-label { display: flex; align-items: center; gap: 10px; font-size: 22px; font-weight: 800; color: #f4f1ea; margin: 4px 0; }
 .acs62-sub { color: #a6a7ac; font-size: 14px; }

@@ -33,7 +33,7 @@ export async function AnticheatStatus() {
   return (
     <section className="acs62" aria-labelledby="acs62-h">
       <div className="acs62-head">
-        <Image src="/images/ace-entrance-logo.jpg" alt="A.C.E" width={64} height={64} className="acs62-logo" />
+        <Image src="/images/ace-badge.png" alt="A.C.E" width={64} height={64} className="acs62-logo" />
         <div>
           <p className="acs62-kicker">A.C.E ANTI-CHEAT</p>
           <h2 id="acs62-h" className="acs62-label"><i className={`acs62-dot is-${dot}`} aria-hidden="true" />{label}</h2>

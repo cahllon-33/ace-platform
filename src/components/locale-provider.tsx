@@ -91,6 +91,7 @@ export function translate(_localeId: string, key: MessageKey, values?: Record<st
 }
 
 const ENGLISH = resolveLocale("en");
+let lastAdopt = 0;
 
 const LocaleContext = createContext<LocaleContextValue>({
   locale: ENGLISH,
@@ -122,14 +123,17 @@ export function LocaleProvider({
     root.lang = locale.code;
     root.classList.toggle("ace-rtl", locale.dir === "rtl");
     document.body?.setAttribute("dir", locale.dir);
-    persistLocale(locale.id);
+    // R62b: do NOT persist here. Persisting on every mount broadcast this tab's server locale to every other open
+    // tab (storage event -> switch + router.refresh), so tabs flipped each other between languages/directions.
+    // Only an explicit pick (setLocaleId) writes the preference now.
   }, [locale]);
 
   useEffect(() => {
     function onStorage(event: StorageEvent) {
       if (event.key !== LOCALE_STORAGE_KEY || !isLocaleId(event.newValue)) return;
       const memory = store();
-      if (memory.id === event.newValue) return;
+      if (memory.id === event.newValue || Date.now() - lastAdopt < 1500) return;
+      lastAdopt = Date.now();
       memory.pinned = true;
       memory.id = event.newValue;
       emit();
