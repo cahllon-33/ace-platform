@@ -32,12 +32,20 @@ public class AceBridgeConfig : BasePluginConfig
     [JsonPropertyName("GateEnabled")] public bool GateEnabled { get; set; } = true;
     /// If the site cannot be reached, let the player stay (true) rather than kick everyone during an outage.
     [JsonPropertyName("GateFailOpen")] public bool GateFailOpen { get; set; } = true;
+    /// 0.4.1 occlusion-tracking telemetry: periodic per-player samples of enemies near the crosshair (error, engine "spotted" flag, bearing).
+    /// Only enemies inside ViewConeDeg are recorded; batches are sent every ViewFlushSec or at round end.
+    [JsonPropertyName("SendViewSamples")] public bool SendViewSamples { get; set; } = true;
+    [JsonPropertyName("ViewSampleTicks")] public int ViewSampleTicks { get; set; } = 16; // ~4 Hz at 64 tick
+    [JsonPropertyName("ViewConeDeg")] public double ViewConeDeg { get; set; } = 30;
+    [JsonPropertyName("ViewFlushSec")] public int ViewFlushSec { get; set; } = 10;
+    /// Hard server-wide bandwidth budget for view_samples; batches over budget are dropped (never queued).
+    [JsonPropertyName("MaxViewBytesPerMinute")] public int MaxViewBytesPerMinute { get; set; } = 120_000;
 }
 
 public class AceBridgePlugin : BasePlugin, IPluginConfig<AceBridgeConfig>
 {
     public override string ModuleName => "AceBridge";
-    public override string ModuleVersion => "0.4.0";
+    public override string ModuleVersion => "0.4.1";
     public override string ModuleAuthor => "A.C.E.";
     public override string ModuleDescription => "Posts round, kill, utility, clutch, MVP and match-end events to A.C.E. with an HMAC signature.";
 
@@ -103,9 +111,10 @@ public class AceBridgePlugin : BasePlugin, IPluginConfig<AceBridgeConfig>
                 : Environment.GetEnvironmentVariable("ACE_MATCH_ID") is { Length: > 0 } mid ? mid
                 : $"{map}-{DateTimeOffset.UtcNow.ToUnixTimeSeconds()}";
             Send("map_start", new { map });
-            _ring.Clear(); _ringPos.Clear();
+            _ring.Clear(); _ringPos.Clear(); _view.Clear(); _alive.Clear();
         });
         RegisterListener<Listeners.OnTick>(SampleAim);
+        RegisterListener<Listeners.OnTick>(SampleView);
         RegisterListener<Listeners.OnClientAuthorized>((slot, steamId) => GateCheck(slot, steamId.SteamId64));
     }
 
@@ -125,6 +134,72 @@ public class AceBridgePlugin : BasePlugin, IPluginConfig<AceBridgeConfig>
             if (!_ring.TryGetValue(p.Slot, out var r)) { r = new AimSample[RingSize]; _ring[p.Slot] = r; _ringPos[p.Slot] = 0; }
             var i = _ringPos[p.Slot]; r[i % RingSize] = smp; _ringPos[p.Slot] = i + 1;
         }
+    }
+
+    /// 0.4.1 view sampling buffers (game thread only). smp entries: [tMs, [[enemySlot, err*10, spotted 0|1, bearingDeg], ...]].
+    private readonly Dictionary<ulong, List<object[]>> _view = new();
+    private readonly Dictionary<ulong, long> _alive = new();
+    private long _viewT0, _lastFlushMs, _budgetWindowMs; private int _budgetUsed;
+    public const int MaxEnemiesPerSample = 10, MaxBatchBytes = 48_000;
+
+    /// Bearing (world yaw, degrees -180..180) from eye to target.
+    public static double Bearing(float ex, float ey, float tx, float ty) => Math.Atan2(ty - ey, tx - ex) * 180 / Math.PI;
+
+    /// True when the observer's slot bit is set in the target pawn's engine SpottedByMask (line-of-sight "spotted").
+    public static bool SpottedBy(uint m0, uint m1, int observerSlot) =>
+        observerSlot is >= 0 and < 64 && (((observerSlot < 32 ? m0 : m1) >> (observerSlot % 32)) & 1u) == 1u;
+
+    private void SampleView()
+    {
+        if (!Config.SendViewSamples || _tick % Math.Max(4, Config.ViewSampleTicks) != 0) return;
+        if (Warmup()) return;
+        var now = NowMs(); if (_viewT0 == 0) _viewT0 = now;
+        var step = Math.Max(4, Config.ViewSampleTicks) * 1000 / 64;
+        var players = Utilities.GetPlayers().Where(p => p is { IsValid: true, PawnIsAlive: true } && p.TeamNum is (int)CsTeam.CounterTerrorist or (int)CsTeam.Terrorist).ToList();
+        foreach (var p in players)
+        {
+            if (!Human(p)) continue;
+            var pawn = p.PlayerPawn.Value; if (pawn?.AbsOrigin == null) continue;
+            _alive[p.SteamID] = (_alive.TryGetValue(p.SteamID, out var al) ? al : 0) + step;
+            float ex = pawn.AbsOrigin.X, ey = pawn.AbsOrigin.Y, ez = pawn.AbsOrigin.Z + (pawn.ViewOffset?.Z ?? 64f);
+            var a = pawn.EyeAngles;
+            var obs = new List<object>();
+            foreach (var e in players)
+            {
+                if (e.TeamNum == p.TeamNum || obs.Count >= MaxEnemiesPerSample) continue;
+                var ep = e.PlayerPawn.Value; if (ep?.AbsOrigin == null) continue;
+                float tx = ep.AbsOrigin.X, ty = ep.AbsOrigin.Y, tz = ep.AbsOrigin.Z + 48f;
+                var err = AimError(a.X, a.Y, ex, ey, ez, tx, ty, tz);
+                if (err > Config.ViewConeDeg) continue;
+                var mask = ep.EntitySpottedState.SpottedByMask;
+                var vis = SpottedBy(mask.Length > 0 ? mask[0] : 0, mask.Length > 1 ? mask[1] : 0, p.Slot);
+                obs.Add(new object[] { e.Slot, (int)Math.Round(err * 10), vis ? 1 : 0, (int)Math.Round(Bearing(ex, ey, tx, ty)) });
+            }
+            if (obs.Count == 0) continue;
+            if (!_view.TryGetValue(p.SteamID, out var l)) { l = new(); _view[p.SteamID] = l; }
+            l.Add(new object[] { (int)(now - _viewT0), obs });
+        }
+        if (now - _lastFlushMs >= Math.Max(5, Config.ViewFlushSec) * 1000L) FlushView(now);
+    }
+
+    /// Sends buffered samples (one event, capped below the site's 64 KB body limit) if the per-minute budget allows; otherwise drops them.
+    private void FlushView(long now)
+    {
+        _lastFlushMs = now;
+        if (_view.Count == 0 && _alive.Count == 0) return;
+        var players = new List<object>();
+        foreach (var (sid, alive) in _alive)
+        {
+            var smp = _view.TryGetValue(sid, out var l) ? l : new List<object[]>();
+            players.Add(new { s = sid.ToString(), alive, smp });
+        }
+        _view.Clear(); _alive.Clear();
+        var data = new { round = _round + 1, players };
+        var size = JsonSerializer.Serialize(data).Length;
+        if (now - _budgetWindowMs >= 60_000) { _budgetWindowMs = now; _budgetUsed = 0; }
+        if (size > MaxBatchBytes || _budgetUsed + size > Config.MaxViewBytesPerMinute) { Logger.LogDebug("[AceBridge] view batch dropped ({B} bytes)", size); return; }
+        _budgetUsed += size;
+        Send("view_samples", data);
     }
 
     private List<AimSample> History(int slot)
@@ -303,6 +378,7 @@ public class AceBridgePlugin : BasePlugin, IPluginConfig<AceBridgeConfig>
     [GameEventHandler]
     public HookResult OnRoundEnd(EventRoundEnd ev, GameEventInfo info)
     {
+        if (Config.SendViewSamples && !Warmup()) { try { FlushView(NowMs()); } catch (Exception e) { Logger.LogWarning("[AceBridge] view flush: {M}", e.Message); } }
         _round++;
         var (ct, t) = Scores();
         var winner = ev.Winner == (int)CsTeam.CounterTerrorist ? "ct" : ev.Winner == (int)CsTeam.Terrorist ? "t" : "none";

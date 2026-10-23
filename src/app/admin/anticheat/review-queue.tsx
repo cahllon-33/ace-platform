@@ -10,6 +10,9 @@ const HE: Record<string, string> = {
   blind: "הריגות בזמן סינוור",
   reaction_consistency: "עקביות חריגה בזמן התגובה",
   aim_consistency: "עקביות חריגה בדיוק הכוונת",
+  occluded_tracking: "מעקב כוונת אחרי אויב מוסתר (חשד וולהאק)",
+  model: "מודל הלמידה (רמז בלבד)",
+  player_reports: "דיווחי שחקנים",
 };
 const LEVEL: Record<string, string> = { high: "גבוה", medium: "בינוני", low: "נמוך" };
 

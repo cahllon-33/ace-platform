@@ -97,3 +97,9 @@ New config keys (defaults shown):
 - Aim samples are kept in a short in-RAM ring (~0.8 s) and attached only to the kill that just happened; nothing is streamed continuously.
 - On player authorize, AceBridge POSTs `{steamId}` to `GateUrl` (or `EventsUrl` with `/api/cs2/events` → `/api/cs2/gate`) with the same HMAC headers. The site answers `{allow, required, reason}`. Kick only when `allow` is explicitly `false`. On site/network failure the plugin fails open when `GateFailOpen` is true.
 - Kick messages tell the player to open the A.C.E desktop app (or close a blocked program). No secrets are printed.
+
+## 0.4.1 — occlusion-tracking samples
+`SendViewSamples` (default on) records, ~4 Hz during live rounds, each alive player's enemies inside a 30° cone around the crosshair:
+aim error, the engine's own `SpottedByMask` bit (line of sight) and the bearing. Batches post as one `view_samples` event every
+`ViewFlushSec` (10 s) and at round end, capped at 48 KB per batch and `MaxViewBytesPerMinute` (120 KB) per server; over-budget batches
+are dropped. The site's wallhack heuristic only scores *sustained* tracking of a *moving, unspotted* enemy, and only feeds owner review.

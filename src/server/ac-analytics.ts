@@ -1,6 +1,8 @@
 import { Prisma } from "@prisma/client";
 import { getPrisma } from "@/server/db";
-import { analyzePlayer, populationBaseline, MIN_KILLS, type KillRec, type TraceSample } from "@/lib/ac-analytics";
+import { analyzePlayer, populationBaseline, MIN_KILLS, REVIEW_THRESHOLD, type KillRec, type TraceSample } from "@/lib/ac-analytics";
+import { parseCompactSamples, wallhackScore, type ViewBatch } from "@/lib/ac-wallhack";
+import { modelHint } from "@/server/ac-model";
 
 const num = (v: unknown, d = 0) => (typeof v === "number" && Number.isFinite(v) ? v : d);
 const bool = (v: unknown) => v === true;
@@ -31,6 +33,28 @@ export async function storeKillTelemetry(eventId: string, serverId: string, matc
   return true;
 }
 
+/** R60: AceBridge 0.4.1 view_samples batch → one row per player. Unknown shapes are dropped. */
+export async function storeViewSamples(eventId: string, serverId: string, matchKey: string, data: Record<string, unknown>) {
+  const players = Array.isArray(data.players) ? data.players.slice(0, 12) : [];
+  const round = Math.trunc(num(data.round));
+  const rows = players.flatMap((p, i) => {
+    const o = (p ?? {}) as Record<string, unknown>;
+    const steamId = sid(o.s);
+    if (!steamId) return [];
+    const samples = parseCompactSamples(o.smp, 400).map((x) => [x.t, x.enemies.map((e) => [e.e, Math.round(e.err * 10), e.vis ? 1 : 0, Math.round(e.bear)])]);
+    return [{ eventId: `${eventId}:${i}`, serverId, matchKey, round, steamId, aliveMs: Math.max(0, Math.min(600_000, Math.trunc(num(o.alive)))), samples: samples as unknown as Prisma.InputJsonValue }];
+  });
+  if (rows.length) await getPrisma().cs2ViewSample.createMany({ data: rows, skipDuplicates: true });
+  return rows.length;
+}
+
+async function loadViewBatches(matchKey: string) {
+  const rows = await getPrisma().cs2ViewSample.findMany({ where: { matchKey }, select: { steamId: true, aliveMs: true, samples: true }, take: 5000 }).catch(() => []);
+  const by = new Map<string, ViewBatch[]>();
+  for (const r of rows) { const l = by.get(r.steamId) ?? []; l.push({ aliveMs: r.aliveMs, samples: parseCompactSamples(r.samples, 400) }); by.set(r.steamId, l); }
+  return by;
+}
+
 const toRec = (r: { weapon: string; headshot: boolean; distance: number; wallbang: boolean; throughSmoke: boolean; attackerBlind: boolean; victimBot: boolean; trace: Prisma.JsonValue }): KillRec => ({
   weapon: r.weapon, headshot: r.headshot, distance: r.distance, wallbang: r.wallbang, throughSmoke: r.throughSmoke, attackerBlind: r.attackerBlind, victimBot: r.victimBot,
   trace: Array.isArray(r.trace) ? (r.trace as unknown as TraceSample[]) : [],
@@ -54,13 +78,25 @@ export async function analyzeMatch(matchKey: string) {
   const byPlayer = new Map<string, KillRec[]>();
   for (const r of rows) { const l = byPlayer.get(r.attackerSteamId) ?? []; l.push(toRec(r)); byPlayer.set(r.attackerSteamId, l); }
   const baseline = await loadBaseline();
+  const views = await loadViewBatches(matchKey);
   let queued = 0;
   for (const [steamId, kills] of byPlayer) {
     if (kills.length < MIN_KILLS) continue;
     const a = analyzePlayer(kills, baseline);
-    if (!a.reviewable) continue;
+    // R60 wallhack heuristic (occluded tracking). Adds a reason; same single-indicator cap as the rules.
+    const wh = views.has(steamId) ? wallhackScore(views.get(steamId)!) : null;
+    const indicators: Record<string, unknown> = { ...a.indicators, occludedTrackZ: wh?.z ?? 0, occludedTracks: wh?.tracks ?? 0, aliveMin: wh?.aliveMin ?? 0 };
+    const reasons = [...a.reasons];
+    if (wh && wh.points > 0) reasons.push({ key: "occluded_tracking", value: wh.tracksPerMin, points: wh.points, text: wh.text });
+    // R60 model hint (only when a validated model is active). Never a ban.
+    const hint = await modelHint(indicators).catch(() => null);
+    if (hint?.flag) reasons.push({ key: "model", value: hint.p, points: 15, text: `Model p=${hint.p.toFixed(2)}; top: ${hint.contributions.slice(0, 3).map((c) => `${c.feature} ${c.contribution > 0 ? "+" : ""}${c.contribution}`).join(", ")}` });
+    let score = Math.min(100, reasons.reduce((s2, r) => s2 + r.points, 0));
+    if (reasons.length === 1) score = Math.min(score, 30);
+    const level = score >= 60 ? "high" : score >= REVIEW_THRESHOLD ? "medium" : "low";
+    if (score < REVIEW_THRESHOLD) continue;
     const user = await db.user.findUnique({ where: { steamId }, select: { id: true } }).catch(() => null);
-    const data = { score: a.score, level: a.level, kills: a.kills, indicators: a.indicators as unknown as Prisma.InputJsonValue, reasons: a.reasons as unknown as Prisma.InputJsonValue, userId: user?.id ?? null };
+    const data = { score, level, kills: a.kills, indicators: indicators as unknown as Prisma.InputJsonValue, reasons: reasons as unknown as Prisma.InputJsonValue, userId: user?.id ?? null, modelP: hint?.p ?? null };
     const existing = await db.anticheatReview.findUnique({ where: { matchKey_steamId: { matchKey, steamId } }, select: { status: true } });
     if (existing && existing.status !== "open") continue;
     await db.anticheatReview.upsert({ where: { matchKey_steamId: { matchKey, steamId } }, create: { matchKey, steamId, ...data }, update: data });

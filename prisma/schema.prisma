@@ -445,10 +445,17 @@ model PlayerReport {
   resolvedBy    String?
   resolvedAt    DateTime?
   createdAt     DateTime  @default(now())
+  /// R60 in-app post-match reports: the lobby both players were in, the reported user, category (cheating|griefing) and source (web|desktop).
+  lobbyId       String?
+  targetUserId  String?
+  category      String    @default("")
+  source        String    @default("web")
   reporter      User      @relation("PlayerReportReporter", fields: [reporterId], references: [id], onDelete: Cascade)
 
   @@index([status, createdAt])
   @@index([reporterId, createdAt])
+  @@index([lobbyId, reporterId])
+  @@index([targetSteamId, createdAt])
 }
 
 model Notification {
@@ -972,6 +979,9 @@ model AnticheatReview {
   note       String    @default("")
   reviewedBy String?
   reviewedAt DateTime?
+  /// R60 analytics | reports (opened by player reports) ; model probability when a trained model is active
+  source     String    @default("analytics")
+  modelP     Float?
   createdAt  DateTime  @default(now())
   updatedAt  DateTime  @updatedAt
 
@@ -988,4 +998,76 @@ model AnticheatHardwareBan {
   createdBy String    @default("")
   createdAt DateTime  @default(now())
   revokedAt DateTime?
+}
+
+/// R60 AceBridge 0.4.1 periodic view samples (bandwidth-limited). Feeds the occluded-tracking wallhack heuristic only.
+model Cs2ViewSample {
+  id        String   @id @default(cuid())
+  eventId   String   @unique
+  serverId  String
+  matchKey  String
+  round     Int      @default(0)
+  steamId   String
+  aliveMs   Int      @default(0)
+  /// compact [[tMs, [[enemyIdx, err*10, vis, bearing]]]] (see src/lib/ac-wallhack.ts)
+  samples   Json
+  createdAt DateTime @default(now())
+
+  @@index([matchKey, steamId])
+  @@index([createdAt])
+}
+
+/// R60 explainable classifier trained on owner-decided reviews only. status: trained | active | rejected | retired
+model AnticheatModel {
+  id          String    @id @default(cuid())
+  status      String    @default("trained")
+  model       Json
+  verdict     String    @default("")
+  labeled     Int       @default(0)
+  createdAt   DateTime  @default(now())
+  activatedAt DateTime?
+
+  @@index([status, createdAt])
+}
+
+/// R60 cached trust score (refreshed outside the queue lock; matchmaking reads this table only).
+model TrustProfile {
+  userId         String    @id
+  score          Int       @default(50)
+  band           String    @default("normal")
+  parts          Json
+  steamLevel     Int?
+  cs2Hours       Float?
+  steamCreatedAt DateTime?
+  steamFetchedAt DateTime?
+  computedAt     DateTime  @default(now())
+}
+
+/// R60 A.C.E Overwatch case: anonymised evidence for one AnticheatReview. The owner makes the final decision.
+model OverwatchCase {
+  id        String          @id @default(cuid())
+  reviewId  String          @unique
+  demoUrl   String          @default("")
+  timeline  Json
+  summary   Json
+  /// open | closed
+  status    String          @default("open")
+  createdBy String          @default("")
+  createdAt DateTime        @default(now())
+  closedAt  DateTime?
+  votes     OverwatchVote[]
+
+  @@index([status, createdAt])
+}
+
+model OverwatchVote {
+  id         String        @id @default(cuid())
+  caseId     String
+  reviewerId String
+  verdict    String
+  createdAt  DateTime      @default(now())
+  case       OverwatchCase @relation(fields: [caseId], references: [id], onDelete: Cascade)
+
+  @@unique([caseId, reviewerId])
+  @@index([reviewerId, createdAt])
 }

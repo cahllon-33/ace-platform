@@ -15,6 +15,8 @@ import { healthTick } from "@/server/server-health";
 import { connectDetails, randomServerPassword } from "@/server/discord";
 import { anticheatBlock } from "@/server/anticheat";
 import { groupEntries, pickMatch, splitGroups } from "@/lib/party";
+import { pickByTrust } from "@/lib/trust";
+import { refreshTrust, trustMap } from "@/server/trust";
 import { cleanupMatchDiscord, readLobbyDiscord, setupMatchDiscord } from "@/server/discord-match";
 
 /** States that hold the (single) DatHost server. */
@@ -59,6 +61,14 @@ async function formLobby(tx: Tx, now: Date) {
     if (!teams) return;
     const ids = new Set(picked.flatMap((g) => g.seats.map((x) => x.userId)));
     entries = all.filter((e) => ids.has(e.userId));
+  } else {
+    // R60: prefer pairing similar-trust players (cached TrustProfile only; no external calls inside the lock).
+    // The oldest entry is always included and trust is ignored after TRUST_MAX_WAIT_MS, so nobody starves.
+    const trust = await trustMap(all.map((e) => e.userId), tx);
+    if (trust.size) {
+      const ids = new Set(pickByTrust(all, trust, QUEUE_SIZE, now));
+      if (ids.size === QUEUE_SIZE) entries = all.filter((e) => ids.has(e.userId));
+    }
   }
   const { team1, team2 } = teams ?? balanceTeams(entries.map((e) => ({ userId: e.userId, rp: e.rp })));
   const joined = new Map(entries.map((e) => [e.userId, e.joinedAt.getTime()]));
@@ -148,6 +158,8 @@ export async function joinQueue(userId: string) {
   const party = membership && membership.party.members.length > 1 ? membership.party : null;
   if (party && party.leaderId !== userId) return { ok: false as const, error: "party-leader-only" };
   const ids = party ? party.members.map((m) => m.userId) : [userId];
+  // R60: refresh cached trust before taking the queue lock (bounded, best effort, never blocks joining).
+  await Promise.all(ids.map((id) => refreshTrust(id).catch(() => null)));
   for (const id of ids) {
     const ac = await anticheatBlock(id);
     if (ac) return { ok: false as const, error: id === userId ? ac : "party-member-blocked" };

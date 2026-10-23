@@ -3,9 +3,9 @@ import { Prisma } from "@prisma/client";
 import { verifyPluginSignature } from "@/lib/ace-signature";
 import { getPrisma } from "@/server/db";
 import { refreshBridgeStats } from "@/server/acebridge-stats";
-import { analyzeMatch, storeKillTelemetry } from "@/server/ac-analytics";
+import { analyzeMatch, storeKillTelemetry, storeViewSamples } from "@/server/ac-analytics";
 
-const TYPES = new Set(["round_end", "player_death", "round_mvp", "match_end", "map_start", "heartbeat", "round_start", "round_stats", "player_hurt", "player_blind", "grenade_thrown", "kill_telemetry"]);
+const TYPES = new Set(["round_end", "player_death", "round_mvp", "match_end", "map_start", "heartbeat", "round_start", "round_stats", "player_hurt", "player_blind", "grenade_thrown", "kill_telemetry", "view_samples"]);
 
 /** AceBridge (CounterStrikeSharp) events. HMAC-SHA256 over "<timestamp>.<raw body>"; eventId makes it idempotent. */
 export async function POST(request: Request) {
@@ -34,6 +34,12 @@ export async function POST(request: Request) {
       const mk = typeof evt.matchId === "string" && evt.matchId ? evt.matchId.slice(0, 80) : "unbound";
       const ok = await storeKillTelemetry(eventId, serverId, mk, (evt.data ?? {}) as Record<string, unknown>);
       return NextResponse.json({ ok: true, stored: ok });
+    }
+    if (type === "view_samples") {
+      // R60: periodic view samples (bandwidth-limited by the plugin) go to their own table only.
+      const mk = typeof evt.matchId === "string" && evt.matchId ? evt.matchId.slice(0, 80) : "unbound";
+      const n = await storeViewSamples(eventId, serverId, mk, (evt.data ?? {}) as Record<string, unknown>);
+      return NextResponse.json({ ok: true, stored: n });
     }
     await getPrisma().cs2PluginEvent.create({
       data: {

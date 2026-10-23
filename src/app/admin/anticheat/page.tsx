@@ -6,6 +6,10 @@ import { loadAnticheatAdmin } from "@/server/anticheat";
 import { requireAnticheatNow, extraBlockedProcesses } from "@/server/anticheat";
 import { loadReviewQueue } from "@/server/ac-analytics";
 import { ReviewQueue } from "./review-queue";
+import { IntegrityPanel } from "./integrity-r60";
+import { modelStatus } from "@/server/ac-model";
+import { overwatchAdmin } from "@/server/overwatch";
+import { getPrisma } from "@/server/db";
 
 export const instant = false;
 export const metadata: Metadata = { title: "A.C.E Anti-cheat", robots: { index: false, follow: false } };
@@ -22,6 +26,12 @@ export default async function AdminAnticheatPage() {
       <h1 style={{ color: "#FFD76A", fontSize: 24, fontWeight: 700 }}>A.C.E Anti-cheat</h1>
       <p style={{ opacity: 0.75, marginBottom: 16 }}>Queue enforcement (ACE_REQUIRE_ANTICHEAT, owner override in the desktop Command area): <b>{(await requireAnticheatNow()) ? "ON" : "OFF"}</b>. User-mode client only; no kernel driver.</p>
       <ReviewQueue reviews={reviews} extra={extra} />
+      <IntegrityPanel
+        status={await modelStatus().catch(() => null)}
+        cases={await overwatchAdmin().catch(() => [])}
+        reports={await getPrisma().playerReport.findMany({ where: { status: "open", source: "desktop" }, orderBy: { createdAt: "desc" }, take: 100, select: { id: true, targetSteamId: true, category: true, reason: true, details: true, lobbyId: true, createdAt: true } }).catch(() => [])}
+        reviews={reviews.map((r) => ({ id: r.id, steamId: r.steamId, matchKey: r.matchKey, score: r.score }))}
+      />
       {!data ? <p>Anti-cheat data is unavailable (migration not applied?).</p> : (
         <>
           <h2 style={{ fontSize: 18, margin: "16px 0 8px" }}>Active clients (last 10 min): {data.sessions.length}</h2>
