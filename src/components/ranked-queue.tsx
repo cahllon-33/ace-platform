@@ -8,7 +8,8 @@ import { discordStrings } from "@/lib/discord-i18n";
 import { desktopStrings } from "@/lib/desktop-i18n";
 import { interpolate } from "@/lib/interpolate";
 import { mapLabel } from "@/lib/queue";
-import { PlayMatchArena } from "@/components/play-match-arena";
+import { PlayMatchArena, type ArenaPlayer } from "@/components/play-match-arena";
+import { PlayerAvatar } from "@/components/floating-emblem";
 import { banMapAction, joinQueueAction, leaveQueueAction, pollQueue, readyAction, type QueueResult } from "@/server/queue-actions";
 import type { QueueView } from "@/server/queue-engine";
 import { notify, playBan, playLive, playMatchFound, playTick, unlockAudio } from "@/components/queue-alerts";
@@ -183,6 +184,8 @@ export function RankedQueue({ signedIn, initial }: { signedIn: boolean; initial:
       ) : null}
 
       {activeLobby?.state === "VETO" ? (
+        <div className="vx-site">
+        <VetoSide side="ct" label={teamName("team1")} players={t1} turn={activeLobby.vetoTurn === "team1"} captain={ui.r48.captain} />
         <div className="r48-card r48-veto">
           {activeLobby.isTest ? <span className="r48-tag">{r.testTag}</span> : null}
           <h2 className="r48-h2">{r.vetoTitle}</h2>
@@ -208,9 +211,11 @@ export function RankedQueue({ signedIn, initial }: { signedIn: boolean; initial:
             })}
           </ul>
         </div>
+        <VetoSide side="t" label={teamName("team2")} players={t2} turn={activeLobby.vetoTurn === "team2"} captain={ui.r48.captain} />
+        </div>
       ) : null}
 
-      {activeLobby && (activeLobby.state === "LAUNCHING" || activeLobby.state === "LIVE" || activeLobby.state === "VETO" || activeLobby.state === "READY") ? (
+      {activeLobby && (activeLobby.state === "LAUNCHING" || activeLobby.state === "LIVE" || activeLobby.state === "READY") ? (
         <PlayMatchArena team1={t1} team2={t2} map={activeLobby.map} title={activeLobby.state === "LIVE" ? r.liveTitle : r.readyTitle}>
           {t1.length && t2.length ? (
             <div className="r48-odds" aria-label={interpolate(b.winChance, { p: Math.round(activeLobby.winChance1 * 100) })}>
@@ -278,5 +283,25 @@ export function RankedQueue({ signedIn, initial }: { signedIn: boolean; initial:
         </div>
       ) : lobby?.state === "DONE" && dismissed !== lobby.id ? <p className="r48-note">{r.done}</p> : null}
     </section>
+  );
+}
+
+/** R66 veto side panel: original A.C.E plate art (CT left / T right) + the team's real players (stored Steam persona + avatar). */
+function VetoSide({ side, label, players, turn, captain }: { side: "ct" | "t"; label: string; players: ArenaPlayer[]; turn: boolean; captain: string }) {
+  return (
+    <aside className={`vx-side vx-${side}${turn ? " is-turn" : ""}`}>
+      <div className="vx-char" aria-hidden="true"><i className="vx-halo" />{/* eslint-disable-next-line @next/next/no-img-element */}<img src={`/images/vx-${side}.webp`} alt="" /></div>
+      <div className="vx-info">
+      <div className="vx-head"><b>{label}</b><small>{side === "ct" ? "COUNTER-TERRORISTS" : "TERRORISTS"}</small></div>
+      <ul className="vx-roster">
+        {players.slice(0, 5).map((p) => (
+          <li key={p.userId} className={`${p.me ? "is-me" : ""}${p.captain ? " is-cap" : ""}`}>
+            <PlayerAvatar src={p.avatarUrl} name={p.name} alt={p.name} size={34} />
+            <span className="vx-nm"><bdi>{p.name}</bdi><small>{p.captain ? `♛ ${captain} · ` : ""}{p.rp.toLocaleString("en-US")} RP</small></span>
+          </li>
+        ))}
+      </ul>
+      </div>
+    </aside>
   );
 }
