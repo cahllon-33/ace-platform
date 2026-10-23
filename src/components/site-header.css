@@ -69,6 +69,6 @@ html[dir="rtl"] .hx-play-icon svg { transform: scaleX(-1); }
 .hx-wn { position: relative; }
 .hx-wn-dot { display: inline-flex; align-items: center; justify-content: center; min-width: 17px; height: 17px; padding: 0 5px; margin-inline-start: 6px; border-radius: 999px; font-size: 10px; font-weight: 800; color: #141109; background: linear-gradient(180deg, #fff1bf, #ffd76a 50%, #d4a634); box-shadow: 0 0 12px rgba(255, 200, 80, .7); vertical-align: 1px; }
 /* R62b: keep every inline link visible (no clipped "Shop") between 1400px and 1760px */
-@media (min-width: 1400px) and (max-width: 1900px) { .hx-links a { padding: .5rem .2rem; font-size: .74rem; } }
+@media (min-width: 1400px) { .hx-links a { padding: .5rem .2rem; font-size: .74rem; } }
 .ace-tagline { display: none; margin-top: 3px; font-size: 8.5px; letter-spacing: .06em; white-space: nowrap; color: #efe3c2; background: linear-gradient(90deg, #f3e7c8, #ffd76a 50%, #f3e7c8); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; opacity: .9; }
 @media (min-width: 1024px) { .ace-tagline { display: block; position: absolute; left: 0; top: calc(100% + 4px); pointer-events: none; } .ace-logo-wrap { position: relative; } }
