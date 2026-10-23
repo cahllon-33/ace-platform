@@ -7400,7 +7400,7 @@ html[dir="rtl"] .ace-hub-card-face {
   list-style: none;
 }
 
-.ace-shield-roadmap li {
+.ace-shield-roadmap > li {
   display: grid;
   grid-template-columns: auto minmax(0, 1fr);
   align-items: center;
@@ -7411,14 +7411,14 @@ html[dir="rtl"] .ace-hub-card-face {
   padding: 1rem 1.2rem;
 }
 
-.ace-shield-roadmap li > .ace-soon {
+.ace-shield-roadmap > li > .ace-soon {
   grid-column: 2;
   justify-self: start;
 }
 
 @media (min-width: 768px) {
-  .ace-shield-roadmap li { grid-template-columns: auto minmax(0, 1fr) auto; }
-  .ace-shield-roadmap li > .ace-soon { grid-column: auto; }
+  .ace-shield-roadmap > li { grid-template-columns: auto minmax(0, 1fr) auto; }
+  .ace-shield-roadmap > li > .ace-soon { grid-column: auto; }
 }
 
 .ace-shield-node {
