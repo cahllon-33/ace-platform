@@ -8132,3 +8132,4 @@ body { background-color: #08080b; background-image: radial-gradient(1100px 480px
 .hx-cta { background: linear-gradient(180deg, #fff1bf 0%, #ffd76a 45%, #d4a634 100%); box-shadow: var(--ace-r62-glow), inset 0 1px 0 rgba(255, 255, 255, .55); }
 .hx-cta:hover { box-shadow: 0 0 32px rgba(255, 205, 90, .6), inset 0 1px 0 rgba(255, 255, 255, .55); }
 .ace-wordmark { text-shadow: 0 0 16px rgba(255, 215, 106, .45); }
+.ace-status-detail { display: block; margin-top: .2rem; font-size: .68rem; color: var(--ace-t-muted); letter-spacing: .02em; }

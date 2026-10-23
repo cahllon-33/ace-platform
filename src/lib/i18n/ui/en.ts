@@ -41,8 +41,8 @@ export const UI_EN = {
   status: {
     title: "Platform status",
     steam: "Steam OpenID sign-in",
-    shield: "A.C.E Shield · deployment phase",
-    servers: "Competitive servers · competitive beta",
+    shield: "A.C.E Shield",
+    servers: "Competitive servers",
     billing: "Billing integration",
     available: "Available",
     inDevelopment: "In development",
