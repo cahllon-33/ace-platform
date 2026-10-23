@@ -7,7 +7,7 @@ import {
   consoleRun, consoleTail, createFolder, deleteFile, listFiles, loadOverview, moveFile, ownerJoinUrl, ownerWatchUrl, pluginStatus, power, readTextFile, saveSettings, syncFiles, writeTextFile,
   type Overview, type PluginStatus, type SettingsInput,
 } from "@/server/dathost-admin-actions";
-import { cancelLobbyAction, createTestLobbyAction, testBotsAction, testLobbiesAction } from "@/server/queue-actions";
+import { cancelLobbyAction, createTestLobbyAction, searchPlayersAction, testBotsAction, testLobbiesAction } from "@/server/queue-actions";
 import type { FileEntry, SettingsView } from "@/server/dathost";
 import type { LobbyView } from "@/server/queue-engine";
 import { OpsTab, type OpsTabId } from "@/components/admin-server-ops";
@@ -379,6 +379,7 @@ function TestTab({ t, maps, onError }: P & { maps: string[] }) {
           {auto === "hint" ? <p className="acx-muted">{t("autoHint")}</p> : null}
         </div>
       ) : null}
+      <BotMatchPanel maps={maps} pending={pending} start={start} apply={apply} onError={onError} />
       <p className="acx-card-title">{t("lobbies")}</p>
       {lobbies.length === 0 ? <p className="acx-muted">{t("noLobbies")}</p> : (
         <ul className="s48-list">
@@ -393,5 +394,57 @@ function TestTab({ t, maps, onError }: P & { maps: string[] }) {
         </ul>
       )}
     </div>
+  );
+}
+
+type Picked = { steamId: string; name: string; rp: number };
+/** R73 owner-only: test match vs bots. You + up to 4 registered players on one side, bots fill every empty seat. */
+function BotMatchPanel({ maps, pending, start, apply, onError }: {
+  maps: string[]; pending: boolean; start: (fn: () => Promise<void>) => void;
+  apply: (r: Awaited<ReturnType<typeof testLobbiesAction>>) => void; onError: (e: string | null) => void;
+}) {
+  const [map, setMap] = useState(maps[0]);
+  const [side, setSide] = useState<"team1" | "team2" | "split">("team1");
+  const [diff, setDiff] = useState(1);
+  const [rp, setRp] = useState(true);
+  const [q, setQ] = useState("");
+  const [hits, setHits] = useState<Picked[]>([]);
+  const [picked, setPicked] = useState<Picked[]>([]);
+  useEffect(() => {
+    const h = setTimeout(() => void (q.trim().length < 2 ? Promise.resolve({ ok: false as const }) : searchPlayersAction(q)).then((r) => setHits(r.ok && "data" in r ? r.data : [])), 250);
+    return () => clearTimeout(h);
+  }, [q]);
+  const add = (p: Picked) => { if (picked.length < 4 && !picked.some((x) => x.steamId === p.steamId)) setPicked([...picked, p]); setQ(""); };
+  const create = () => {
+    if (!window.confirm(`Start a test match vs bots on ${map}? RP ${rp ? "COUNTS" : "does not count"}.`)) return;
+    start(async () => {
+      const r = await createTestLobbyAction({ flow: "direct", map, extraSteamIds: picked.map((p) => p.steamId).join(","), side, botDifficulty: diff, countsForRp: rp });
+      apply(r);
+      if (r.ok) onError(null);
+    });
+  };
+  return (
+    <fieldset className="s48-botmatch" style={{ marginBlock: 16 }}>
+      <legend>Test match vs bots</legend>
+      <p className="acx-muted">You plus up to 4 registered players; server bots fill every empty seat (10 total). Same anti-cheat gate, per-match password and Discord as ranked. Bots never get RP.</p>
+      <div className="s48-row">
+        <select className="s48-input" aria-label="Map" value={map} onChange={(e) => setMap(e.target.value)}>{maps.map((m) => <option key={m} value={m}>{mapLabel(m)}</option>)}</select>
+        <select className="s48-input" aria-label="Side" value={side} onChange={(e) => setSide(e.target.value as typeof side)}>
+          <option value="team1">Players on Alpha (team 1), bots on Bravo</option>
+          <option value="team2">Players on Bravo (team 2), bots on Alpha</option>
+          <option value="split">Split players across both sides</option>
+        </select>
+        <select className="s48-input" aria-label="Bot difficulty" value={diff} onChange={(e) => setDiff(Number(e.target.value))}>
+          <option value={0}>Bots: Easy</option><option value={1}>Bots: Normal</option><option value={2}>Bots: Hard</option><option value={3}>Bots: Expert</option>
+        </select>
+      </div>
+      <label className="s48-field"><span>Add players (name or SteamID64), {picked.length}/4 + you</span>
+        <input className="s48-input" value={q} onChange={(e) => setQ(e.target.value)} placeholder="+NEXsus or 7656119…" disabled={picked.length >= 4} />
+      </label>
+      {hits.length ? <ul className="s48-list">{hits.map((h) => <li key={h.steamId}><button type="button" className="acx-btn" onClick={() => add(h)}>+ {h.name}</button><span className="acx-muted">{h.steamId} · {h.rp} RP</span></li>)}</ul> : null}
+      {picked.length ? <ul className="s48-list">{picked.map((p) => <li key={p.steamId}><span>{p.name}</span><span className="acx-muted">{p.steamId}</span><button type="button" className="acx-btn" onClick={() => setPicked(picked.filter((x) => x.steamId !== p.steamId))}>✕</button></li>)}</ul> : null}
+      <label className="s48-check"><input type="checkbox" checked={rp} onChange={(e) => setRp(e.target.checked)} /> Counts for RP (real players only; revertible in History)</label>
+      <div className="s48-row"><button type="button" className="acx-btn is-gold" disabled={pending} onClick={create}>Start test match vs bots</button></div>
+    </fieldset>
   );
 }

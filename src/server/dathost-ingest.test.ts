@@ -83,3 +83,34 @@ describe("DatHost helpers", () => {
     expect(() => buildMatchBody("srv", { team1: { name: "A", steamIds: ["123"] }, team2: { name: "B", steamIds: [] }, map: "de_nuke", matchEndUrl: "u", webhookAuthorization: "s" })).toThrow();
   });
 });
+
+describe("R73 test match vs bots", () => {
+  const BOT = "0";
+  const vsBots = (over: Partial<Cs2Match> = {}) => match({ players: [{ steam_id_64: A, team: "team1", stats: { kills: 20 } }, { steam_id_64: BOT, team: "team2", stats: { kills: 3 } }], ...over });
+  const seeded = (countsForRp: boolean) => {
+    const mem = memoryStore();
+    const row = { id: "m-test", state: "IN_PROGRESS", ratingApplied: false, isTest: true, countsForRp, summary: summarizeDathostMatch(vsBots()) };
+    mem.matches.set("dh-match-1", row);
+    let opts: unknown = null;
+    const apply = mem.store.applyRating;
+    mem.store.applyRating = async (id, w, o) => { opts = o; await apply(id, w, o); };
+    return { mem, opts: () => opts };
+  };
+  it("rates the one-sided real team against bots when RP counts", async () => {
+    const s = seeded(true);
+    const r = await ingestDathostMatch(vsBots(), s.mem.store);
+    expect(r).toMatchObject({ status: "applied", players: 1 });
+    expect(s.opts()).toEqual({ vsBots: true });
+  });
+  it("stores without RP when the owner turned RP off", async () => {
+    const s = seeded(false);
+    const r = await ingestDathostMatch(vsBots(), s.mem.store);
+    expect(r).toMatchObject({ status: "stored", reason: "test-no-rp" });
+    expect(s.mem.applied()).toBe(0);
+  });
+  it("still never rates a one-sided ranked match", async () => {
+    const mem = memoryStore();
+    const r = await ingestDathostMatch(vsBots(), mem.store);
+    expect(r).toMatchObject({ status: "stored", reason: "one-sided" });
+  });
+});

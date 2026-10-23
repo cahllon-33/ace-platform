@@ -54,4 +54,5 @@ export function desktopStrings(localeId: string | null | undefined): DesktopStri
 
 /** Public installer location (GitHub release asset). Override with NEXT_PUBLIC_ACE_DESKTOP_URL. */
 export const DESKTOP_VERSION = "1.1.0";
-export const DESKTOP_DOWNLOAD_URL = process.env.NEXT_PUBLIC_ACE_DESKTOP_URL || "/downloads/ACE-Setup-1.1.0.exe";
+/** Resolves at request time to the newest GitHub release installer (see /download/latest). */
+export const DESKTOP_DOWNLOAD_URL = "/download/latest";

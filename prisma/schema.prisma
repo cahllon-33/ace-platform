@@ -256,6 +256,10 @@ model MatchHistory {
 }
 
 model Match {
+  /// R73: owner test match (vs bots). countsForRp lets it move real players\' RP; rpRevertedAt marks an admin revert.
+  isTest        Boolean   @default(false)
+  countsForRp   Boolean   @default(true)
+  rpRevertedAt  DateTime?
   id            String         @id @default(cuid())
   tournamentId  String?
   round         Int
@@ -500,6 +504,10 @@ model QueueEntry {
 
 /// R48 match lobby: ready check -> map veto -> DatHost match. state: READY | VETO | LAUNCHING | LIVE | DONE | CANCELLED | FAILED.
 model QueueLobby {
+  /// R73 test-vs-bots: bot difficulty (0-3) when server bots fill the empty seats; null = no bots.
+  botDifficulty Int?
+  /// R73: test match RP toggle (test matches only; ranked always counts).
+  countsForRp   Boolean  @default(false)
   id             String             @id @default(cuid())
   state          String             @default("READY")
   /// Owner-only admin test lobby (fewer than 10 players). Never rated unless both sides have registered players.

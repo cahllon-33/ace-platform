@@ -7,6 +7,8 @@ export async function applyVerifiedMatchResult(args: {
   matchId: string;
   winnerTeamId: string;
   source: string;
+  /** R73: test match vs bots. Registered players sit on one side; the bots are a virtual opponent of equal average RP (bots get nothing). */
+  vsBots?: boolean;
 }) {
   const prisma = getPrisma();
   return prisma.$transaction(async (tx) => {
@@ -30,8 +32,19 @@ export async function applyVerifiedMatchResult(args: {
     const winners = match.players.filter((player) => player.teamId === args.winnerTeamId);
     const losers = match.players.filter((player) => player.teamId && player.teamId !== args.winnerTeamId);
 
+    const virtual = (side: typeof winners) => {
+      const avg = Math.round(side.reduce((a, p) => a + p.user.competitiveRating, 0) / Math.max(1, side.length));
+      return Array.from({ length: 5 }, () => ({ rating: avg, matchesPlayed: 100 }));
+    };
     const deltas =
-      winners.length && losers.length
+      args.vsBots && match.isTest && (winners.length === 0) !== (losers.length === 0)
+        ? (() => {
+            const w = winners.map((p) => ({ rating: p.user.competitiveRating, matchesPlayed: p.user.wins + p.user.losses }));
+            const l = losers.map((p) => ({ rating: p.user.competitiveRating, matchesPlayed: p.user.wins + p.user.losses }));
+            const d = applyTeamMatchRatings({ winners: w.length ? w : virtual(losers), losers: l.length ? l : virtual(winners), killsRecorded: false });
+            return { winnerDeltas: winners.length ? d.winnerDeltas : [], loserDeltas: losers.length ? d.loserDeltas : [] };
+          })()
+        : winners.length && losers.length
         ? applyTeamMatchRatings({
             // matchesPlayed drives placement; kills are not server-recorded yet, so no MVP bonus (RP_RULES.mvpLive).
             winners: winners.map((player) => ({
@@ -103,8 +116,8 @@ export async function applyVerifiedMatchResult(args: {
       data: {
         state: "COMPLETED",
         winnerTeamId: args.winnerTeamId,
-        source: args.source,
-        ratingApplied: winners.length > 0,
+        source: match.isTest ? "dathost-test" : args.source,
+        ratingApplied: winners.length > 0 || (!!args.vsBots && match.isTest && losers.length > 0),
         endedAt: new Date(),
       },
     });

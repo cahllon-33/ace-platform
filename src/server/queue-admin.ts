@@ -1,5 +1,6 @@
 import { demoForMatch } from "@/lib/queue";
 import { getPrisma } from "@/server/db";
+import { rankFromRating } from "@/lib/ranks";
 import { dathost, DathostError, readDathostConfig, type FileEntry } from "@/server/dathost";
 import { ACTIVE_STATES, lobbyView, type LobbyView } from "@/server/queue-engine";
 import { SETTING, healthTick, readSetting, writeSetting } from "@/server/server-health";
@@ -167,7 +168,7 @@ export async function matchHistory() {
   const prisma = getPrisma();
   const lobbies = await prisma.queueLobby.findMany({ where: { state: { in: ["DONE", "CANCELLED", "FAILED"] } }, orderBy: { createdAt: "desc" }, take: 25, include: { _count: { select: { players: true } } } });
   const matchIds = lobbies.map((l) => l.matchId).filter((x): x is string => !!x);
-  const matches = matchIds.length ? await prisma.match.findMany({ where: { id: { in: matchIds } }, select: { id: true, ratingApplied: true, state: true } }) : [];
+  const matches = matchIds.length ? await prisma.match.findMany({ where: { id: { in: matchIds } }, select: { id: true, ratingApplied: true, state: true, countsForRp: true, rpRevertedAt: true } }) : [];
   const m = new Map(matches.map((x) => [x.id, x]));
   let demos: FileEntry[] = [];
   try { demos = (await api().listFiles("", 3)).filter((f) => !f.deleted && /\.dem$/i.test(f.path)); } catch { demos = []; }
@@ -182,6 +183,9 @@ export async function matchHistory() {
     rows: lobbies.map((l) => ({
       id: l.id, state: l.state, isTest: l.isTest, map: l.map, scoreA: l.scoreA, scoreB: l.scoreB, players: l._count.players, error: l.error,
       at: (l.endedAt ?? l.updatedAt).toISOString(), dathostMatchId: l.dathostMatchId, demo: demoForMatch(demos, l.dathostMatchId), ratingApplied: l.matchId ? !!m.get(l.matchId)?.ratingApplied : false,
+      matchId: l.matchId, vsBots: l.botDifficulty != null, botDifficulty: l.botDifficulty,
+      countsForRp: l.isTest ? (l.matchId ? m.get(l.matchId)?.countsForRp ?? l.countsForRp : l.countsForRp) : true,
+      rpReverted: l.matchId ? !!m.get(l.matchId)?.rpRevertedAt : false,
     })),
   };
 }
@@ -193,4 +197,49 @@ export async function auditLog() {
 
 export async function audit(actor: string, action: string, value: string, reason = "") {
   await getPrisma().adminAuditLog.create({ data: { actor, action, newValue: value.slice(0, 300), reason: reason.slice(0, 300) } }).catch(() => undefined);
+}
+
+/**
+ * R73: undo the RP a test match applied. Nothing is deleted: each player's RP moves back by the delta recorded in
+ * RatingHistory, the win/loss counter is decremented, and a reversing "test-revert" RatingHistory row is written.
+ */
+export async function revertTestMatchRp(matchId: string) {
+  const prisma = getPrisma();
+  return prisma.$transaction(async (tx) => {
+    const match = await tx.match.findUnique({ where: { id: matchId }, select: { id: true, isTest: true, ratingApplied: true, rpRevertedAt: true } });
+    if (!match) return { ok: false as const, error: "Match not found." };
+    if (!match.isTest) return { ok: false as const, error: "Only test matches can be reverted." };
+    if (match.rpRevertedAt) return { ok: false as const, error: "Already reverted." };
+    if (!match.ratingApplied) return { ok: false as const, error: "No RP was applied to this match." };
+    const rows = await tx.ratingHistory.findMany({ where: { matchId, reason: { in: ["verified-win", "verified-loss"] } } });
+    let n = 0;
+    for (const r of rows) {
+      const u = await tx.user.findUnique({ where: { id: r.userId }, select: { competitiveRating: true, rankLevel: true, wins: true, losses: true } });
+      if (!u) continue;
+      const after = u.competitiveRating - (r.ratingAfter - r.ratingBefore);
+      const rankAfter = rankFromRating(after).level;
+      const win = r.reason === "verified-win";
+      await tx.user.update({
+        where: { id: r.userId },
+        data: { competitiveRating: after, rankLevel: rankAfter, ...(win ? { wins: Math.max(0, u.wins - 1) } : { losses: Math.max(0, u.losses - 1) }) },
+      });
+      await tx.ratingHistory.create({
+        data: { userId: r.userId, matchId, ratingBefore: u.competitiveRating, ratingAfter: after, rankBefore: u.rankLevel, rankAfter, algorithmVersion: r.algorithmVersion, reason: "test-revert" },
+      });
+      n++;
+    }
+    await tx.match.update({ where: { id: matchId }, data: { rpRevertedAt: new Date(), ratingApplied: false } });
+    return { ok: true as const, players: n };
+  });
+}
+
+/** R73: owner player picker for test matches (name or SteamID64). */
+export async function searchPlayers(q: string) {
+  const s = q.trim();
+  if (s.length < 2) return [];
+  const rows = await getPrisma().user.findMany({
+    where: { accountStatus: "ACTIVE", steamId: { not: null }, OR: [{ steamId: s }, { displayName: { contains: s, mode: "insensitive" } }] },
+    select: { steamId: true, displayName: true, competitiveRating: true }, take: 8, orderBy: { displayName: "asc" },
+  });
+  return rows.map((r) => ({ steamId: r.steamId!, name: r.displayName, rp: r.competitiveRating }));
 }

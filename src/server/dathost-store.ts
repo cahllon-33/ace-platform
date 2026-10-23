@@ -6,7 +6,7 @@ import type { IngestStore } from "@/server/dathost-ingest";
 export function prismaIngestStore(): IngestStore {
   const prisma = getPrisma();
   return {
-    findByExternalId: (externalId) => prisma.match.findUnique({ where: { externalId }, select: { id: true, state: true, ratingApplied: true } }),
+    findByExternalId: (externalId) => prisma.match.findUnique({ where: { externalId }, select: { id: true, state: true, ratingApplied: true, isTest: true, countsForRp: true } }),
     usersBySteamId: async (steamIds) => {
       const rows = steamIds.length ? await prisma.user.findMany({ where: { steamId: { in: steamIds } }, select: { id: true, steamId: true } }) : [];
       return new Map(rows.flatMap((r) => (r.steamId ? [[r.steamId, r.id] as const] : [])));
@@ -43,8 +43,8 @@ export function prismaIngestStore(): IngestStore {
     completeWithoutRating: async (id) => {
       await prisma.match.update({ where: { id }, data: { state: "COMPLETED", endedAt: new Date() } });
     },
-    applyRating: async (id, winner) => {
-      await applyVerifiedMatchResult({ matchId: id, winnerTeamId: winner, source: "dathost" });
+    applyRating: async (id, winner, opts) => {
+      await applyVerifiedMatchResult({ matchId: id, winnerTeamId: winner, source: "dathost", vsBots: opts?.vsBots });
     },
   };
 }

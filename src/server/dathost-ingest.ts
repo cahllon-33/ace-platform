@@ -42,19 +42,19 @@ export function summarizeDathostMatch(m: Cs2Match): MatchSummary {
 
 /** Storage port so the idempotency logic is testable without a database. */
 export type IngestStore = {
-  findByExternalId(externalId: string): Promise<{ id: string; state: string; ratingApplied: boolean } | null>;
+  findByExternalId(externalId: string): Promise<{ id: string; state: string; ratingApplied: boolean; isTest?: boolean; countsForRp?: boolean } | null>;
   usersBySteamId(steamIds: string[]): Promise<Map<string, string>>;
   /** Creates the match + player lines. Must throw a { code: "P2002" } error if externalId already exists. */
   createMatch(summary: MatchSummary, userIds: Map<string, string>): Promise<{ id: string }>;
   completeWithoutRating(matchId: string): Promise<void>;
-  applyRating(matchId: string, winnerTeamId: "team1" | "team2"): Promise<void>;
+  applyRating(matchId: string, winnerTeamId: "team1" | "team2", opts?: { vsBots?: boolean }): Promise<void>;
   /** R48: a queue lobby pre-created the match; write scores and stat lines onto it (upsert per player). */
   recordLines?(matchId: string, summary: MatchSummary, userIds: Map<string, string>): Promise<void>;
 };
 
 export type IngestResult =
   | { status: "applied"; matchId: string; players: number }
-  | { status: "stored"; matchId: string; reason: "tie" | "one-sided" }
+  | { status: "stored"; matchId: string; reason: "tie" | "one-sided" | "test-no-rp" }
   | { status: "duplicate"; matchId: string | null }
   | { status: "ignored"; reason: "not-finished" | "canceled" | "wrong-server" };
 
@@ -83,12 +83,19 @@ export async function ingestDathostMatch(m: Cs2Match, store: IngestStore, opts: 
   }
   const known = summary.lines.filter((l) => users.has(l.steamId));
   const sides = new Set(known.map((l) => l.team));
-  if (!summary.winner || sides.size < 2) {
+  // R73: owner test matches only move RP when the owner left "counts for RP" on.
+  if (existing?.isTest && existing.countsForRp === false) {
+    await store.completeWithoutRating(matchId);
+    return { status: "stored", matchId, reason: "test-no-rp" };
+  }
+  // R73: a test match vs bots has registered players on one side only; rate them against a virtual opponent.
+  const vsBots = !!existing?.isTest && sides.size === 1;
+  if (!summary.winner || (sides.size < 2 && !vsBots)) {
     await store.completeWithoutRating(matchId);
     return { status: "stored", matchId, reason: summary.winner ? "one-sided" : "tie" };
   }
   try {
-    await store.applyRating(matchId, summary.winner);
+    await store.applyRating(matchId, summary.winner, vsBots ? { vsBots: true } : undefined);
   } catch (e) {
     if (/already applied/i.test(String((e as Error)?.message))) return { status: "duplicate", matchId };
     throw e;

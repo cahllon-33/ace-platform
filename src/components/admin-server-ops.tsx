@@ -4,7 +4,7 @@ import { WatchLiveButton } from "@/components/admin-server-tools";
 import { useCallback, useEffect, useState, useTransition } from "react";
 import type { Srv48Key } from "@/lib/admin-servers-r48-i18n";
 import {
-  banPlayerAction, cancelMatchAction, forceEndAction, kickQueueAction, kickServerAction, opsSnapshotAction, replacePlayerAction, revokeBanAction, saveHealthAction,
+  banPlayerAction, cancelMatchAction, forceEndAction, kickQueueAction, kickServerAction, opsSnapshotAction, replacePlayerAction, revertTestRpAction, revokeBanAction, saveHealthAction,
 } from "@/server/queue-actions";
 
 export type OpsTabId = "matches" | "moderation" | "health" | "history" | "audit";
@@ -42,7 +42,7 @@ export function OpsTab({ tab, t, lang, onError }: { tab: OpsTabId; t: (k: Srv48K
         <div className="s48-table-wrap">
           <table className="s48-table">
             <thead><tr><th>{t("when")}</th><th>{t("state")}</th><th>Map</th><th>{t("score")}</th><th>{t("rpApplied")}</th><th>{t("demos")}</th></tr></thead>
-            <tbody>{h.rows.map((r) => <tr key={r.id}><td>{when(r.at)}</td><td>{r.state}{r.isTest ? " · TEST" : ""}{r.error ? <small> {r.error}</small> : null}</td><td>{mapLabel(r.map)}</td><td>{r.scoreA ?? "—"} : {r.scoreB ?? "—"}</td><td>{r.ratingApplied ? "✓" : "—"}</td><td>{r.demo ? <a className="acx-btn" href={`/api/admin/dathost/file?path=${encodeURIComponent(r.demo)}`} download>⤓ .dem</a> : <span className="acx-muted">—</span>}</td></tr>)}</tbody>
+            <tbody>{h.rows.map((r) => <tr key={r.id}><td>{when(r.at)}</td><td>{r.state}{r.isTest ? (r.vsBots ? " · TEST vs bots" : " · TEST") : ""}{r.error ? <small> {r.error}</small> : null}</td><td>{mapLabel(r.map)}</td><td>{r.scoreA ?? "—"} : {r.scoreB ?? "—"}</td><td>{r.ratingApplied ? "✓" : r.rpReverted ? "reverted" : "—"}{r.isTest && !r.countsForRp ? <small> no-RP</small> : null}{r.isTest && r.ratingApplied && r.matchId ? <button type="button" className="acx-btn is-danger" disabled={pending} onClick={() => window.confirm("Revert the RP this test match gave/took from real players?") && run(() => revertTestRpAction(r.matchId!))}>Revert RP</button> : null}</td><td>{r.demo ? <a className="acx-btn" href={`/api/admin/dathost/file?path=${encodeURIComponent(r.demo)}`} download>⤓ .dem</a> : <span className="acx-muted">—</span>}</td></tr>)}</tbody>
           </table>
         </div>
       </div>

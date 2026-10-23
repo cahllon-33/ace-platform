@@ -261,6 +261,7 @@ export async function launchLobby(lobbyId: string) {
     });
     // R58: bind AceBridge round stats to this DatHost match (the site maps it to the A.C.E match via externalId). Harmless if the plugin is not installed.
     if (/^[A-Za-z0-9_-]{1,80}$/.test(match.id)) await api.console(`ace_match_id ${match.id}`).catch(() => undefined);
+    if (lobby.isTest && lobby.botDifficulty != null) await api.console(botCommand(lobby.botDifficulty)).catch(() => undefined);
     const target = await connectTarget(api);
     const connectUrl = target?.connectUrl ?? null;
     const server = target ? { address: target.address } : null;
@@ -268,6 +269,7 @@ export async function launchLobby(lobbyId: string) {
       data: {
         externalId: match.id, gameServerId: cfg.serverId, round: 0, slot: 0, state: "IN_PROGRESS", mapName: lobby.map,
         teamAId: "team1", teamBId: "team2", source: lobby.isTest ? "dathost-test" : "dathost", startedAt: new Date(),
+        isTest: lobby.isTest, countsForRp: lobby.isTest ? lobby.countsForRp : true,
         players: { create: seats.map((p) => ({ userId: p.userId, teamId: p.team })) },
       },
       select: { id: true },
@@ -336,6 +338,8 @@ async function pollLive(now: Date) {
     const dm = cfg ? await dathost(cfg).getMatch(l.dathostMatchId).catch(() => null) : null;
     const m = l.matchId ? await prisma.match.findUnique({ where: { id: l.matchId }, select: { state: true } }) : null;
     if (dm) await mirrorLiveScore(dm);
+    // R73: the match plugin can reset bot_quota (warmup/knife/live); re-assert it while a bots test match runs.
+    if (cfg && l.isTest && l.botDifficulty != null && dm && !dm.finished && !dm.cancel_reason) await dathost(cfg).console(botCommand(l.botDifficulty)).catch(() => undefined);
     if (dm?.cancel_reason) {
       await prisma.queueLobby.update({ where: { id: l.id }, data: { state: "CANCELLED", error: `dathost:${dm.cancel_reason}`.slice(0, 300), endedAt: now } });
       if (l.matchId) await prisma.match.updateMany({ where: { id: l.matchId, state: "IN_PROGRESS" }, data: { state: "CANCELLED", endedAt: now } });
@@ -462,18 +466,50 @@ async function resultFor(matchId: string | null, userId: string, team: string | 
  * Owner-only test lobby: the owner plus optional registered players (by SteamID64), on fewer than 10 seats.
  * flow "full" runs the ready check and veto; "direct" launches on the chosen map at once.
  */
-export async function createTestLobby(ownerUserId: string, opts: { flow: "full" | "direct"; map: string; extraSteamIds: string[] }) {
+/** R73: server console line that fills every empty seat (10 total) with bots of the given difficulty (0 easy … 3 expert). */
+export function botCommand(difficulty: number) {
+  const d = Math.max(0, Math.min(3, Math.round(difficulty)));
+  return `mp_autoteambalance 0; mp_limitteams 0; bot_difficulty ${d}; bot_join_after_player 0; bot_quota_mode fill; bot_quota ${QUEUE_SIZE}`;
+}
+
+export type TestLobbyOpts = {
+  flow: "full" | "direct"; map: string; extraSteamIds: string[];
+  /** R73 vs-bots: where the real players sit. "split" = balanced across both sides. */
+  side?: "team1" | "team2" | "split";
+  /** R73: null/undefined = no bots; 0-3 = fill empty seats with bots of that difficulty (direct flow only). */
+  botDifficulty?: number | null;
+  /** R73: whether the result moves real players' RP (default ON). */
+  countsForRp?: boolean;
+};
+
+export async function createTestLobby(ownerUserId: string, opts: TestLobbyOpts) {
   const prisma = getPrisma();
   const busy = await prisma.queueLobby.count({ where: { state: { in: [...ACTIVE_STATES] } } });
   if (busy) return { ok: false as const, error: "A lobby already holds the server. Cancel it first." };
-  const extras = opts.extraSteamIds.length
-    ? await prisma.user.findMany({ where: { steamId: { in: opts.extraSteamIds.slice(0, 9) }, accountStatus: "ACTIVE", id: { not: ownerUserId } }, select: { id: true, competitiveRating: true } })
+  const vsBots = opts.botDifficulty != null;
+  if (vsBots && opts.flow !== "direct") return { ok: false as const, error: "Bot matches launch directly (no ready/veto)." };
+  const maxExtras = vsBots ? 4 : 9;
+  const wanted = [...new Set(opts.extraSteamIds)];
+  if (wanted.length > maxExtras) return { ok: false as const, error: `At most ${maxExtras + 1} real players (you + ${maxExtras}).` };
+  const extras = wanted.length
+    ? await prisma.user.findMany({ where: { steamId: { in: wanted }, accountStatus: "ACTIVE", id: { not: ownerUserId } }, select: { id: true, competitiveRating: true, steamId: true, displayName: true } })
     : [];
-  const owner = await prisma.user.findUnique({ where: { id: ownerUserId }, select: { id: true, competitiveRating: true, steamId: true } });
+  const owner = await prisma.user.findUnique({ where: { id: ownerUserId }, select: { id: true, competitiveRating: true, steamId: true, displayName: true } });
   if (!owner?.steamId) return { ok: false as const, error: "Owner has no linked Steam account." };
   if (opts.flow === "direct" && !isAceMap(opts.map)) return { ok: false as const, error: "Pick a map from the pool." };
+  if (vsBots) {
+    const missing = wanted.filter((id) => id !== owner.steamId && !extras.some((u) => u.steamId === id));
+    if (missing.length) return { ok: false as const, error: `Not registered / not active: ${missing.join(", ")}` };
+    // Same anti-cheat gate as the ranked queue (no-op while the gate is switched off).
+    const blocked: string[] = [];
+    for (const u of [owner, ...extras]) if (await anticheatBlock(u.id)) blocked.push(u.displayName ?? u.steamId ?? u.id);
+    if (blocked.length) return { ok: false as const, error: `Anti-cheat not running for: ${blocked.join(", ")}` };
+  }
   const seats = [{ userId: owner.id, rp: owner.competitiveRating }, ...extras.map((u) => ({ userId: u.id, rp: u.competitiveRating }))];
-  const { team1, team2 } = seats.length > 1 ? balanceTeams(seats) : { team1: seats, team2: [] };
+  const side = opts.side ?? "split";
+  const { team1, team2 } =
+    vsBots && side !== "split" ? (side === "team1" ? { team1: seats, team2: [] } : { team1: [], team2: seats })
+    : seats.length > 1 ? balanceTeams(seats) : { team1: seats, team2: [] };
   const ownerSide = team1.some((s) => s.userId === owner.id) ? "team1" : "team2";
   const c1 = captainOf(team1);
   const c2 = captainOf(team2);
@@ -481,6 +517,8 @@ export async function createTestLobby(ownerUserId: string, opts: { flow: "full" 
   const lobby = await prisma.queueLobby.create({
     data: {
       isTest: true, mapPool: [...ACTIVE_DUTY],
+      botDifficulty: vsBots ? Math.max(0, Math.min(3, Math.round(opts.botDifficulty!))) : null,
+      countsForRp: opts.countsForRp ?? true,
       // Lone owner captains both sides so the veto can be exercised.
       captain1Id: ownerSide === "team1" ? owner.id : c1 ?? owner.id, captain2Id: ownerSide === "team2" ? owner.id : c2 ?? owner.id,
       ...(opts.flow === "direct"
@@ -491,6 +529,8 @@ export async function createTestLobby(ownerUserId: string, opts: { flow: "full" 
   });
   await prisma.queueEntry.deleteMany({ where: { userId: { in: seats.map((s) => s.userId) } } });
   if (opts.flow === "direct") await launchLobby(lobby.id);
+  const after = await prisma.queueLobby.findUnique({ where: { id: lobby.id }, select: { state: true, error: true } });
+  if (after?.state === "FAILED") return { ok: false as const, error: `Launch failed: ${after.error ?? "unknown"}` };
   return { ok: true as const, lobbyId: lobby.id };
 }
 

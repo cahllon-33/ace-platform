@@ -56,15 +56,32 @@ export async function testLobbiesAction(): Promise<TestModeResult> {
   return { ok: true, lobbies: await q.activeLobbies(me.id) };
 }
 
-export async function createTestLobbyAction(input: { flow: "full" | "direct"; map: string; extraSteamIds: string }): Promise<TestModeResult> {
+export async function createTestLobbyAction(input: {
+  flow: "full" | "direct"; map: string; extraSteamIds: string;
+  /** R73 vs-bots options */ side?: "team1" | "team2" | "split"; botDifficulty?: number | null; countsForRp?: boolean;
+}): Promise<TestModeResult> {
   const me = await owner();
   if (!me) return { ok: false, error: "owner-only" };
   const ids = String(input.extraSteamIds ?? "").split(/[\s,]+/).filter((s) => /^7656119\d{10}$/.test(s));
-  const r = await q.createTestLobby(me.id, { flow: input.flow === "direct" ? "direct" : "full", map: String(input.map), extraSteamIds: ids });
-  if (!r.ok) return r;
-  await qa.audit(await readAdminActor(), "queue.test.create", `${input.flow} ${input.map} +${ids.length}`);
+  const bots = input.botDifficulty == null || input.botDifficulty === undefined ? null : Number(input.botDifficulty);
+  const side = input.side === "team1" || input.side === "team2" ? input.side : "split";
+  const countsForRp = input.countsForRp !== false;
+  const r = await q.createTestLobby(me.id, {
+    flow: bots != null ? "direct" : input.flow === "direct" ? "direct" : "full", map: String(input.map), extraSteamIds: ids,
+    ...(bots != null && Number.isFinite(bots) ? { botDifficulty: bots, side } : {}), countsForRp,
+  });
+  const actor = await readAdminActor();
+  if (!r.ok) {
+    await qa.audit(actor, "queue.test.create-failed", `${bots != null ? "bots" : input.flow} ${input.map}`, r.error);
+    return r;
+  }
+  await qa.audit(actor, bots != null ? "queue.test.bots.create" : "queue.test.create",
+    bots != null ? `lobby ${r.lobbyId} ${input.map} side=${side} real=${ids.length + 1} bots=d${bots} rp=${countsForRp ? "on" : "off"} ids=${ids.join(",")}` : `${input.flow} ${input.map} +${ids.length}`);
   return testLobbiesAction();
 }
+
+export const searchPlayersAction = async (query: string) => asOwner(() => qa.searchPlayers(String(query ?? "")));
+export const revertTestRpAction = async (matchId: string) => asOwner(() => qa.revertTestMatchRp(String(matchId)), ["queue.test.rp-revert", String(matchId)]);
 
 export async function testBotsAction(count: number): Promise<TestModeResult> {
   if (!(await owner())) return { ok: false, error: "owner-only" };
