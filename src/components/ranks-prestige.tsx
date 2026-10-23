@@ -22,16 +22,16 @@ export function RanksPrestige({ ui }: { ui: Ui }) {
       </div>
       <ol className="rpx-grid">
         {PRESTIGE_LEVELS.map((p) => (
-          <li key={p.slug} className={`rpx-card is-l${p.level}`}>
+          <li key={p.slug} data-v3d="prestige" data-slug={p.slug} data-range={interpolate(pr.from, { rp: p.minRp.toLocaleString("en-US") })} title="View in 3D" className={`rpx-card is-l${p.level}`}>
             <p className="rpx-step">{String(p.level).padStart(2, "0")} / 05</p>
             <h3 className="rpx-name">{p.name}</h3>
             <p className="rpx-rp">{interpolate(pr.from, { rp: p.minRp.toLocaleString("en-US") })}</p>
             <div className="rpx-pair">
-              <figure className="rpx-fig is-plus">
+              <figure className="rpx-fig is-plus" data-v3d-var="plus">
                 <PrestigeEmblem badge={{ level: p.level, set: "plus", name: p.name, slug: p.slug }} size={112} label={t.plus} />
                 <figcaption>{t.plus}</figcaption>
               </figure>
-              <figure className="rpx-fig is-premium">
+              <figure className="rpx-fig is-premium" data-v3d-var="premium">
                 <PrestigeEmblem badge={{ level: p.level, set: "premium", name: p.name, slug: p.slug }} size={112} label={t.premium} />
                 <figcaption>{t.premium}</figcaption>
               </figure>

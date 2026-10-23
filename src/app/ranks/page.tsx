@@ -9,6 +9,7 @@ import { RanksPrestige } from "@/components/ranks-prestige";
 import { RpRulesSection } from "@/components/rp-rules-section";
 import { readSessionUser } from "@/server/session";
 import { RanksV2 } from "@/components/ranks-v2/ranks-v2";
+import { Badge3DViewer } from "@/components/badge-3d-viewer";
 
 export const instant = false;
 
@@ -41,6 +42,7 @@ export default async function RanksPage({ searchParams }: { searchParams: Promis
     <main className="mx-auto max-w-[90rem] px-4 py-8 sm:px-6">
       <RanksV2 filters={filters} meId={meId} liveRating={rating} />
         <RanksPrestige ui={ui} />
+        <Badge3DViewer />
         <section id="premium" className="ace-premium-ranks" aria-labelledby="premium-ranks-title">
           <div className="ace-premium-ranks-head">
             <p className="ace-ranks-section-kicker">{copy.premiumRanks.kicker}</p>

@@ -81,7 +81,7 @@ export async function RanksV2({ filters, meId, liveRating }: { filters: Filters;
         </div>
         <ol className="rk2-tiers">
           {ranges.map((t) => (
-            <li key={t.level} className={`rk2-tier${t.level === currentLevel ? " is-current" : ""}`} aria-current={t.level === currentLevel ? "true" : undefined}>
+            <li key={t.level} data-v3d="rank" data-lv={t.level} data-v3d-var={me?.art ?? "standard"} data-range={t.to == null ? `${n(t.from)}+ RP` : `${n(t.from)} – ${n(t.to)} RP`} title="View in 3D" className={`rk2-tier${t.level === currentLevel ? " is-current" : ""}`} aria-current={t.level === currentLevel ? "true" : undefined}>
               <span className="rk2-tier-lv">{t.level}</span>
               <span className="rk2-tier-badge"><RankOrb level={t.level} art={me?.art ?? "standard"} size={76} label={t.name} /></span>
               <b className="rk2-tier-name">{t.name}</b>

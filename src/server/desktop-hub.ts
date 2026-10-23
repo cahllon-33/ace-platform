@@ -4,17 +4,21 @@
  */
 import { getPrisma } from "@/server/db";
 import { RANK_TIERS, rankFromRating } from "@/lib/ranks";
+import { effectiveRankArt } from "@/server/rank-art";
+import type { RankArt as DbRankArt, SubscriptionTier } from "@prisma/client";
 
-type PlayerRow = { id: string; displayName: string; avatarUrl: string; steamId: string | null; competitiveRating: number; wins: number; losses: number; verifiedAt: Date | null };
+type PlayerRow = { id: string; displayName: string; avatarUrl: string; steamId: string | null; competitiveRating: number; wins: number; losses: number; verifiedAt: Date | null; subscriptionTier: SubscriptionTier; rankArt: DbRankArt | null };
 const pub = (u: PlayerRow) => {
   const r = rankFromRating(u.competitiveRating);
   const games = u.wins + u.losses;
   const next = RANK_TIERS.find((t) => t.minRating > u.competitiveRating);
   // Progress (0-100) from the current tier floor to the next tier; 100 at the top tier.
   const levelProgress = next ? Math.round(((u.competitiveRating - r.minRating) / (next.minRating - r.minRating)) * 100) : 100;
-  return { levelProgress, rankName: r.name, nextLevelAt: next?.minRating ?? null, id: u.id, name: u.displayName, avatarUrl: u.avatarUrl || null, steamId: u.steamId, rp: u.competitiveRating, level: r.level, wins: u.wins, losses: u.losses, winRate: games ? Math.round((u.wins / games) * 100) : null, verified: !!u.verifiedAt };
+  return { levelProgress, rankName: r.name, nextLevelAt: next?.minRating ?? null, id: u.id, name: u.displayName, avatarUrl: u.avatarUrl || null, steamId: u.steamId, rp: u.competitiveRating, level: r.level, wins: u.wins, losses: u.losses, winRate: games ? Math.round((u.wins / games) * 100) : null, verified: !!u.verifiedAt,
+    // R74: the plan's rank art + prestige set, so the app never falls back to standard art for Plus/Premium players.
+    tier: u.subscriptionTier, art: effectiveRankArt(u), prestigeSet: u.subscriptionTier === "PREMIUM" ? "premium" : u.subscriptionTier === "PLUS" ? "plus" : null };
 };
-const PSEL = { id: true, displayName: true, avatarUrl: true, steamId: true, competitiveRating: true, wins: true, losses: true, verifiedAt: true } as const;
+const PSEL = { id: true, displayName: true, avatarUrl: true, steamId: true, competitiveRating: true, wins: true, losses: true, verifiedAt: true, subscriptionTier: true, rankArt: true } as const;
 const ACTIVE = { accountStatus: "ACTIVE" as const, steamId: { not: null } };
 
 export async function hubLeaderboard(take = 100) {
