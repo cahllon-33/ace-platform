@@ -6,6 +6,7 @@ import * as v2 from "@/server/desktop-v2";
 import * as r53 from "@/server/desktop-r53";
 import { readIsSteamOwner } from "@/server/admin-gate";
 import { getPrisma } from "@/server/db";
+import { pulse } from "@/server/desktop-pulse";
 
 /** R51 native-screen data for the A.C.E desktop app. ?section=leaderboard|pros|teams|matches|player&id=|me|party|notifications */
 export async function GET(request: Request) {
@@ -16,6 +17,7 @@ export async function GET(request: Request) {
   const json = (data: unknown, status = 200) => Response.json(data, { status, headers: { "cache-control": "no-store" } });
   try {
     switch (section) {
+      case "pulse": return json(await pulse());
       case "leaderboard": return json({ rows: await hub.hubLeaderboard() });
       case "pros": return json({ rows: await hub.hubPros() });
       case "teams": return json({ rows: await hub.hubTeams() });
