@@ -17,9 +17,8 @@ export type ArenaData = {
 
 const POOL: [string, string][] = [["de_dust2", "Dust II"], ["de_mirage", "Mirage"], ["de_inferno", "Inferno"], ["de_nuke", "Nuke"], ["de_ancient", "Ancient"], ["de_anubis", "Anubis"], ["de_train", "Train"]];
 const OPS = [7, 12.5, 19.5, 27, 33, 68.5, 73.5, 80.5, 87, 93];
-const MUTE_KEY = "ace.sound.muted";
 
-/* Original synthesized chord (WebAudio). The site never autoplays: sound is off by default and only plays after a click. */
+/* Original synthesized chord (WebAudio). The site never autoplays: sound starts muted on every visit and only plays after a click. */
 function chime(kind: "entry" | "found") {
   try {
     const AC = window.AudioContext || (window as unknown as { webkitAudioContext: typeof AudioContext }).webkitAudioContext;
@@ -43,8 +42,6 @@ export function PlayArenaHero({ signedIn, initial }: { signedIn: boolean; initia
   const [muted, setMuted] = useState(true);
   const root = useRef<HTMLElement>(null);
   const wasFound = useRef(initial.found);
-
-  useEffect(() => { setMuted(localStorage.getItem(MUTE_KEY) !== "0"); }, []);
 
   // Live queue refresh (same engine as the app); pauses while the tab is hidden.
   useEffect(() => {
@@ -85,7 +82,7 @@ export function PlayArenaHero({ signedIn, initial }: { signedIn: boolean; initia
   }, []);
 
   const toggleSound = () => {
-    const next = !muted; setMuted(next); localStorage.setItem(MUTE_KEY, next ? "1" : "0");
+    const next = !muted; setMuted(next);
     if (!next) chime("entry");
   };
   const lit = d.found ? 10 : Math.min(10, d.queued);
