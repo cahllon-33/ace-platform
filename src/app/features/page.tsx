@@ -44,9 +44,9 @@ export default async function FeaturesPage() {
             {copy.kernel.stats.map((stat) => (
               <div
                 key={stat.label}
-                className="rounded-2xl border border-[#FFD76A]/25 bg-[#121212] p-4"
+                className="rounded-2xl border border-[#C9A24A]/25 bg-[#121212] p-4"
               >
-                <dt className="text-xs tracking-[0.14em] text-[#FFD76A]">{stat.label}</dt>
+                <dt className="text-xs tracking-[0.14em] text-[#C9A24A]">{stat.label}</dt>
                 <dd className="mt-2 text-sm text-[#F5F3EC]">{stat.value}</dd>
               </div>
             ))}
@@ -70,7 +70,7 @@ export default async function FeaturesPage() {
           <div className="mt-6">
             <table className="w-full border-collapse text-start text-xs sm:text-sm">
               <thead>
-                <tr className="border-b border-[#FFD76A]/25 text-xs tracking-[0.12em] text-[#FFD76A]">
+                <tr className="border-b border-[#C9A24A]/25 text-xs tracking-[0.12em] text-[#C9A24A]">
                   <th className="py-3 pe-3 font-medium">{copy.calibration.table.level}</th>
                   <th className="py-3 pe-3 font-medium">{copy.calibration.table.engineName}</th>
                   <th className="py-3 pe-3 font-medium">{copy.calibration.table.crystalAlias}</th>
@@ -79,8 +79,8 @@ export default async function FeaturesPage() {
               </thead>
               <tbody>
                 {RANK_TIERS.map((tier) => (
-                  <tr key={tier.level} className="border-b border-[#FFD76A]/10">
-                    <td className="py-3 pe-3 text-[#FFD76A]">{tier.level}</td>
+                  <tr key={tier.level} className="border-b border-[#C9A24A]/10">
+                    <td className="py-3 pe-3 text-[#C9A24A]">{tier.level}</td>
                     <td className="py-3 pe-3 text-[#F5F3EC]">{tier.name}</td>
                     <td className="py-3 pe-3 text-[#F5F3EC]">{tier.crystalName}</td>
                     <td className="py-3 text-[#F5F3EC]">{tier.minRating}</td>
@@ -91,9 +91,9 @@ export default async function FeaturesPage() {
           </div>
           <p className="mt-6 text-sm leading-7 text-[#A9ABB3]">
             {copy.calibration.divisions.before}
-            <Link href="/ranks" className="text-[#FFD76A]">/ranks</Link>
+            <Link href="/ranks" className="text-[#C9A24A]">/ranks</Link>
             {copy.calibration.divisions.middle}
-            <Link href="/rules" className="text-[#FFD76A]">/rules</Link>
+            <Link href="/rules" className="text-[#C9A24A]">/rules</Link>
             {copy.calibration.divisions.after}
           </p>
         </div></section>

@@ -22,10 +22,10 @@ export default async function AdminAnticheatPage() {
   if (!(await readIsSteamOwner())) notFound();
   const data = await loadAnticheatAdmin().catch(() => null);
   const [reviews, extra] = await Promise.all([loadReviewQueue().catch(() => []), extraBlockedProcesses()]);
-  const cell = { padding: "6px 10px", borderBottom: "1px solid rgba(255,215,106,0.12)", textAlign: "start" as const, fontSize: 13 };
+  const cell = { padding: "6px 10px", borderBottom: "1px solid rgba(201,162,74,0.12)", textAlign: "start" as const, fontSize: 13 };
   return (
     <main className="ace-admin-page" style={{ padding: 24, maxWidth: 1200, margin: "0 auto" }}>
-      <h1 style={{ color: "#FFD76A", fontSize: 24, fontWeight: 700 }}>A.C.E Anti-cheat</h1>
+      <h1 style={{ color: "#C9A24A", fontSize: 24, fontWeight: 700 }}>A.C.E Anti-cheat</h1>
       <p style={{ opacity: 0.75, marginBottom: 16 }}>Queue enforcement (ACE_REQUIRE_ANTICHEAT, owner override in the desktop Command area): <b>{(await requireAnticheatNow()) ? "ON" : "OFF"}</b>. User-mode client only; no kernel driver.</p>
       <AutoBans rows={await loadAutoBans().catch(() => [])} />
       <ReviewQueue reviews={reviews} extra={extra} />

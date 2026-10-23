@@ -11,7 +11,7 @@
 .lb39-h2 { margin: 2.2rem 0 1rem; font-size: 0.8rem; font-weight: 800; letter-spacing: 0.2em; text-transform: uppercase; color: var(--ace-t-muted); }
 .lb39-podium { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0.9rem; }
 .lb39-pod > a, .lb39-pod > div { position: relative; display: grid; justify-items: center; gap: 0.3rem; padding: 1.4rem 1rem 1.2rem; border-radius: 1.1rem; background: var(--ace-t-panel); border: 1px solid rgba(255,255,255,0.06); text-decoration: none; color: inherit; text-align: center; height: 100%; box-sizing: border-box; transition: border-color .15s ease, transform .15s ease; }
-.lb39-pod.is-1 > a, .lb39-pod.is-1 > div { border-color: var(--ace-t-line-strong); background: radial-gradient(120% 80% at 50% 0%, rgba(212,175,55,0.16), var(--ace-t-panel) 60%); }
+.lb39-pod.is-1 > a, .lb39-pod.is-1 > div { border-color: var(--ace-t-line-strong); background: radial-gradient(120% 80% at 50% 0%, rgba(201, 162, 74,0.16), var(--ace-t-panel) 60%); }
 .lb39-pod > a:hover, .lb39-pod > a:focus-visible { border-color: var(--ace-t-gold-hi); transform: translateY(-2px); }
 .lb39-pod img { width: 6.5rem; height: 6.5rem; object-fit: contain; }
 .lb39-pod-place { position: absolute; top: 0.8rem; inset-inline-start: 1rem; font-weight: 900; color: var(--ace-t-gold-hi); }

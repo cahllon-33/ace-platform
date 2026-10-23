@@ -9,9 +9,9 @@ function Defs() {
     <svg width="0" height="0" className="bp-defs" aria-hidden="true" focusable="false">
       <defs>
         <linearGradient id="bp-gold" x1="0" y1="0" x2="0" y2="1">
-          <stop offset="0" stopColor="#fff1c2" />
-          <stop offset="0.5" stopColor="#e6bf5c" />
-          <stop offset="1" stopColor="#a87a24" />
+          <stop offset="0" stopColor="#D9B45E" />
+          <stop offset="0.5" stopColor="#C9A24A" />
+          <stop offset="1" stopColor="#8A6A2B" />
         </linearGradient>
       </defs>
     </svg>
@@ -25,7 +25,7 @@ function ShieldIcon() {
       <path {...G} strokeWidth={1} opacity={0.55} d="M24 8.6 35.2 12.8v9.6c0 7.6-4.8 13.9-11.2 17.2-6.4-3.3-11.2-9.6-11.2-17.2v-9.6Z" />
       <circle {...G} cx="24" cy="23" r="6.2" />
       <path {...G} d="M24 13.5v5M24 27.5v5M14.5 23h5M28.5 23h5" />
-      <circle cx="24" cy="23" r="1.3" fill="#f2d27a" />
+      <circle cx="24" cy="23" r="1.3" fill="#C9A24A" />
     </svg>
   );
 }

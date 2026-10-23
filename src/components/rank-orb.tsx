@@ -10,11 +10,11 @@ export const TIER_TONE: Record<number, string> = {
   3: "#d4a094",
   4: "#d7e4f2",
   5: "#c4a15a",
-  6: "#ffd66b",
+  6: "#C9A24A",
   7: "#7ef0ff",
   8: "#4d8dff",
   9: "#c084fc",
-  10: "#ffd66b",
+  10: "#C9A24A",
 };
 
 /**
@@ -62,8 +62,8 @@ export function RankOrb({ level, art = "standard", size, label, priority = false
         <svg className="rorb-crown" viewBox="0 0 64 40" aria-hidden="true">
           <defs>
             <linearGradient id={`rorb-gold-${tier.level}`} x1="0" y1="0" x2="0" y2="1">
-              <stop offset="0" stopColor="#fff7d1" />
-              <stop offset="0.45" stopColor="#f5c842" />
+              <stop offset="0" stopColor="#D9B45E" />
+              <stop offset="0.45" stopColor="#C9A24A" />
               <stop offset="1" stopColor="#8a5f0c" />
             </linearGradient>
           </defs>
@@ -75,10 +75,10 @@ export function RankOrb({ level, art = "standard", size, label, priority = false
             strokeLinejoin="round"
           />
           <rect x="6" y="33" width="52" height="5" rx="2" fill={`url(#rorb-gold-${tier.level})`} stroke="#5c3d06" strokeWidth="1" />
-          <circle cx="32" cy="4.5" r="3" fill="#fff3b0" />
-          <circle cx="3.5" cy="12" r="2.4" fill="#fff3b0" />
-          <circle cx="60.5" cy="12" r="2.4" fill="#fff3b0" />
-          <circle cx="32" cy="26" r="3.2" fill="var(--rorb-tone)" stroke="#fff3b0" strokeWidth="0.8" />
+          <circle cx="32" cy="4.5" r="3" fill="#C9A24A" />
+          <circle cx="3.5" cy="12" r="2.4" fill="#C9A24A" />
+          <circle cx="60.5" cy="12" r="2.4" fill="#C9A24A" />
+          <circle cx="32" cy="26" r="3.2" fill="var(--rorb-tone)" stroke="#C9A24A" strokeWidth="0.8" />
         </svg>
       ) : null}
       <span className="rorb-floor" aria-hidden="true" />

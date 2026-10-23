@@ -8,15 +8,15 @@ import { useText } from "@/components/text-provider";
 import { interpolate } from "@/lib/interpolate";
 
 const GATE_CSS = `
-.ace-gate { margin-top: 1.4rem; border: 1px solid rgba(212,175,55,0.4); border-radius: 1.05rem; background: #101012; padding: 1.1rem 1rem 1.15rem; box-shadow: 0 16px 30px rgba(0,0,0,0.28); }
-.ace-gate h2 { margin-top: 0.3rem; color: #ffd76a; font-size: 1.35rem; font-weight: 800; }
+.ace-gate { margin-top: 1.4rem; border: 1px solid rgba(201,162,74,0.4); border-radius: 1.05rem; background: #101012; padding: 1.1rem 1rem 1.15rem; box-shadow: 0 16px 30px rgba(0,0,0,0.28); }
+.ace-gate h2 { margin-top: 0.3rem; color: #C9A24A; font-size: 1.35rem; font-weight: 800; }
 .ace-gate p, .ace-gate li { color: #e7e2d6; line-height: 1.55; font-size: 0.92rem; }
 .ace-gate-actions { display: flex; flex-wrap: wrap; gap: 0.6rem; margin-top: 0.9rem; }
-.ace-gate-actions button, .ace-gate-submit { min-height: 2.7rem; border-radius: 999px; border: 1px solid #ffd76a; background: #0b0b0c; color: #ffd76a; font-weight: 800; letter-spacing: 0.06em; padding: 0 0.95rem; }
-.ace-gate-actions button[aria-pressed="true"], .ace-gate-submit { background: linear-gradient(180deg, #ffe56a, #d4af37); color: #12100a; }
+.ace-gate-actions button, .ace-gate-submit { min-height: 2.7rem; border-radius: 999px; border: 1px solid #C9A24A; background: #0b0b0c; color: #C9A24A; font-weight: 800; letter-spacing: 0.06em; padding: 0 0.95rem; }
+.ace-gate-actions button[aria-pressed="true"], .ace-gate-submit { background: linear-gradient(180deg, #C9A24A, #C9A24A); color: #12100a; }
 .ace-gate form { display: grid; gap: 0.65rem; margin-top: 1rem; }
-.ace-gate label { color: #d4af37; font-size: 0.72rem; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; }
-.ace-gate input { min-height: 2.7rem; width: 100%; border: 1px solid rgba(212, 175, 55,0.4); border-radius: 0.55rem; background: #0b0b0c; color: #fffef8; padding: 0 0.75rem; }
+.ace-gate label { color: #C9A24A; font-size: 0.72rem; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; }
+.ace-gate input { min-height: 2.7rem; width: 100%; border: 1px solid rgba(201,162,74,0.4); border-radius: 0.55rem; background: #0b0b0c; color: #fffef8; padding: 0 0.75rem; }
 .ace-gate-error { color: #ff8a8a; }
 .ace-gate-ok { color: #f5f3ec; }
 `;

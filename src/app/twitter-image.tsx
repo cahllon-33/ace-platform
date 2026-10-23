@@ -8,11 +8,11 @@ export const contentType = "image/png";
 export default function OpengraphImage() {
   return new ImageResponse(
     (
-      <div style={{ width: "100%", height: "100%", display: "flex", flexDirection: "column", justifyContent: "center", padding: "80px", background: "radial-gradient(circle at 20% 20%, #2a2210 0%, #0b0b0c 60%)", color: "#FFD76A", fontFamily: "sans-serif" }}>
-        <div style={{ fontSize: 34, letterSpacing: 12, color: "#d4af37" }}>COUNTER-STRIKE 2 COMPETITION</div>
+      <div style={{ width: "100%", height: "100%", display: "flex", flexDirection: "column", justifyContent: "center", padding: "80px", background: "radial-gradient(circle at 20% 20%, #2a2210 0%, #0b0b0c 60%)", color: "#C9A24A", fontFamily: "sans-serif" }}>
+        <div style={{ fontSize: 34, letterSpacing: 12, color: "#C9A24A" }}>COUNTER-STRIKE 2 COMPETITION</div>
         <div style={{ fontSize: 190, fontWeight: 800, letterSpacing: 2, lineHeight: 1.05 }}>A.C.E</div>
         <div style={{ fontSize: 40, color: "#ece7da", marginTop: 12 }}>Ranked play · ladders · tournaments</div>
-        <div style={{ display: "flex", marginTop: 48, height: 6, width: 420, background: "linear-gradient(90deg, #FFE9A3, #d4af37, transparent)" }} />
+        <div style={{ display: "flex", marginTop: 48, height: 6, width: 420, background: "linear-gradient(90deg, #C9A24A, #C9A24A, transparent)" }} />
       </div>
     ),
     size,

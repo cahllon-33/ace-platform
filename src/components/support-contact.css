@@ -12,7 +12,7 @@
 }
 
 .ace-desk-kicker {
-  color: #d4af37;
+  color: #C9A24A;
   font-size: 0.68rem;
   font-weight: 800;
   letter-spacing: 0.22em;
@@ -21,14 +21,14 @@
 
 .ace-desk-title {
   margin-top: 0.55rem;
-  color: #ffd76a;
+  color: #C9A24A;
   font-size: clamp(1.7rem, 4.4vw, 3.15rem);
   font-weight: 800;
   letter-spacing: 0.02em;
   line-height: 1.12;
   text-shadow:
     0 0 1px #fffef8,
-    0 0 18px rgba(212, 175, 55, 0.55),
+    0 0 18px rgba(201, 162, 74, 0.55),
     0 3px 0 #0b0b0c;
 }
 
@@ -67,14 +67,14 @@
   z-index: 1;
   height: 100%;
   overflow: hidden;
-  border: 1px solid rgba(212, 175, 55, 0.42);
+  border: 1px solid rgba(201, 162, 74, 0.42);
   border-radius: 1.15rem;
   background:
-    linear-gradient(165deg, rgba(212, 175, 55, 0.08), rgba(2, 2, 3, 0.88) 36%, #020203),
+    linear-gradient(165deg, rgba(201, 162, 74, 0.08), rgba(2, 2, 3, 0.88) 36%, #020203),
     rgba(2, 2, 3, 0.86);
   box-shadow:
-    0 0 0 1px rgba(212, 175, 55, 0.22),
-    inset 0 1px 0 rgba(255, 248, 222, 0.12);
+    0 0 0 1px rgba(201, 162, 74, 0.22),
+    inset 0 1px 0 rgba(212,168,74, 0.12);
   padding: 1.2rem 1.15rem 1.15rem;
   animation: ace-desk-pulse 2.8s ease-in-out infinite;
 }
@@ -103,11 +103,11 @@
   align-items: center;
   justify-content: center;
   min-height: 3rem;
-  border: 1px solid #ffd76a;
-  background: linear-gradient(180deg, #fff1a8 0%, #d4af37 58%, #8a6a14 100%);
+  border: 1px solid #C9A24A;
+  background: linear-gradient(180deg, #C9A24A 0%, #C9A24A 58%, #8a6a14 100%);
   box-shadow:
     inset 0 1px 0 rgba(255, 255, 255, 0.45),
-    0 0 22px rgba(212, 175, 55, 0.45),
+    0 0 22px rgba(201, 162, 74, 0.45),
     0 8px 16px rgba(0, 0, 0, 0.35);
   color: #12100a;
   font-size: 0.78rem;
@@ -119,14 +119,14 @@
 .ace-desk-notice,
 .ace-desk-side {
   margin-top: 1.6rem;
-  border: 1px solid rgba(212, 175, 55, 0.45);
+  border: 1px solid rgba(201, 162, 74, 0.45);
   border-radius: 0.85rem;
   background: rgba(2, 2, 3, 0.82);
   color: #f5f3ec;
   font-size: 0.84rem;
   line-height: 1.65;
   padding: 1rem 1.05rem;
-  box-shadow: 0 0 24px rgba(212, 175, 55, 0.18);
+  box-shadow: 0 0 24px rgba(201, 162, 74, 0.18);
 }
 
 .ace-desk-split {
@@ -140,19 +140,19 @@
 .ace-desk-form {
   display: grid;
   gap: 0.55rem;
-  border: 1px solid rgba(212, 175, 55, 0.42);
+  border: 1px solid rgba(201, 162, 74, 0.42);
   border-radius: 1.15rem;
   background:
-    linear-gradient(165deg, rgba(212, 175, 55, 0.08), rgba(2, 2, 3, 0.88) 36%, #020203),
+    linear-gradient(165deg, rgba(201, 162, 74, 0.08), rgba(2, 2, 3, 0.88) 36%, #020203),
     rgba(2, 2, 3, 0.86);
   box-shadow:
-    0 0 0 1px rgba(212, 175, 55, 0.22),
-    0 0 28px rgba(212, 175, 55, 0.16);
+    0 0 0 1px rgba(201, 162, 74, 0.22),
+    0 0 28px rgba(201, 162, 74, 0.16);
   padding: 1.25rem 1.15rem 1.2rem;
 }
 
 .ace-desk-label {
-  color: #d4af37;
+  color: #C9A24A;
   font-size: 0.72rem;
   font-weight: 800;
   letter-spacing: 0.12em;
@@ -163,7 +163,7 @@
 .ace-desk-textarea {
   width: 100%;
   min-height: 2.85rem;
-  border: 1px solid rgba(212, 175, 55, 0.45);
+  border: 1px solid rgba(201, 162, 74, 0.45);
   border-radius: 0.45rem;
   background: #020203;
   color: #fffef8;
@@ -177,7 +177,7 @@
 
 .ace-desk-input:focus,
 .ace-desk-textarea:focus {
-  outline: 2px solid #ffd76a;
+  outline: 2px solid #C9A24A;
   outline-offset: 1px;
 }
 
@@ -195,12 +195,12 @@
   margin-top: 0.2rem;
   width: 1rem;
   height: 1rem;
-  accent-color: #ffd76a;
+  accent-color: #C9A24A;
 }
 
 .ace-desk-corporate {
   margin-top: 0.7rem;
-  color: #ffd76a;
+  color: #C9A24A;
   font-size: 0.9rem;
   font-weight: 700;
   line-height: 1.65;
@@ -235,18 +235,18 @@
   position: relative;
   z-index: 1;
   width: min(36rem, 100%);
-  border: 1px solid rgba(212, 175, 55, 0.55);
+  border: 1px solid rgba(201, 162, 74, 0.55);
   border-radius: 1.1rem;
   background: rgba(8, 8, 10, 0.78);
   box-shadow:
-    0 0 0 1px #ffd76a,
-    0 0 40px rgba(212, 175, 55, 0.28);
+    0 0 0 1px #C9A24A,
+    0 0 40px rgba(201, 162, 74, 0.28);
   padding: 1.35rem 1.25rem 1.2rem;
 }
 
 .ace-desk-dialog-title {
   margin-top: 0.4rem;
-  color: #ffd76a;
+  color: #C9A24A;
   font-size: 1.35rem;
   font-weight: 800;
 }
@@ -269,13 +269,13 @@
   0%,
   100% {
     box-shadow:
-      0 0 0 1px rgba(212, 175, 55, 0.28),
-      0 0 16px rgba(212, 175, 55, 0.18);
+      0 0 0 1px rgba(201, 162, 74, 0.28),
+      0 0 16px rgba(201, 162, 74, 0.18);
   }
   50% {
     box-shadow:
-      0 0 0 1px #ffd76a,
-      0 0 28px rgba(212, 175, 55, 0.48);
+      0 0 0 1px #C9A24A,
+      0 0 28px rgba(201, 162, 74, 0.48);
   }
 }
 

@@ -28,7 +28,7 @@ export default async function AnalysisPage() {
   const gate = access === "premium" ? copy.premiumNote : access === "locked" ? copy.locked : copy.signIn;
   return (
     <main className="mx-auto max-w-6xl px-4 py-14 sm:px-6">
-      <p className="text-xs tracking-[0.28em] text-[#FFD76A]">{copy.kicker}</p>
+      <p className="text-xs tracking-[0.28em] text-[#C9A24A]">{copy.kicker}</p>
       <h1 className="mt-2 text-4xl font-semibold">{copy.title}</h1>
       <p className="mt-4 max-w-3xl text-sm leading-7 text-[#A9ABB3]">{copy.lede}</p>
       <p className="ace-analysis-gate">{gate}</p>

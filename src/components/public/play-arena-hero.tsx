@@ -1,5 +1,6 @@
 "use client";
 
+import { soundEnabled } from "@/lib/ui-sound";
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
@@ -39,7 +40,6 @@ const IconT = () => (<svg viewBox="0 0 40 40" aria-hidden="true"><circle cx="20"
 
 export function PlayArenaHero({ signedIn, initial }: { signedIn: boolean; initial: ArenaData }) {
   const [d, setD] = useState(initial);
-  const [muted, setMuted] = useState(true);
   const root = useRef<HTMLElement>(null);
   const wasFound = useRef(initial.found);
 
@@ -61,9 +61,9 @@ export function PlayArenaHero({ signedIn, initial }: { signedIn: boolean; initia
   }, []);
 
   useEffect(() => {
-    if (d.found && !wasFound.current && !muted) chime("found");
+    if (d.found && !wasFound.current && soundEnabled()) chime("found");
     wasFound.current = d.found;
-  }, [d.found, muted]);
+  }, [d.found]);
 
   // Mouse parallax (skipped for reduced motion / touch).
   useEffect(() => {
@@ -81,10 +81,6 @@ export function PlayArenaHero({ signedIn, initial }: { signedIn: boolean; initia
     return () => { el.removeEventListener("mousemove", mv); cancelAnimationFrame(raf); };
   }, []);
 
-  const toggleSound = () => {
-    const next = !muted; setMuted(next);
-    if (!next) chime("entry");
-  };
   const lit = d.found ? 10 : Math.min(10, d.queued);
   const shield = d.shield;
   const region = d.region && !/^eu$/i.test(d.region) ? d.region : "Milan, Italy";
@@ -98,7 +94,6 @@ export function PlayArenaHero({ signedIn, initial }: { signedIn: boolean; initia
       <div className="pah-tint" aria-hidden="true" />
       <div className="pah-fx" aria-hidden="true">{Array.from({ length: 16 }, (_, i) => <i key={i} style={{ ["--i" as string]: i }} />)}</div>
       <div className="pah-burst" aria-hidden="true" />
-      <button type="button" className="pah-mute" onClick={toggleSound} aria-pressed={!muted} aria-label={muted ? "Turn sound on" : "Mute sound"}>{muted ? "🔇" : "🔊"}</button>
 
       <div className="pah-main">
         <Image src="/images/ace-badge.png" alt="A.C.E" width={300} height={300} priority className="pah-badge" />

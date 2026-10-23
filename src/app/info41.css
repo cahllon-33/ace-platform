@@ -2,11 +2,11 @@
 .in41-lede { margin: .9rem 0 0; color: #c9cad0; line-height: 1.7; max-width: 44rem; }
 .in41-card { margin: 0; padding: 1.25rem 1.4rem; border-radius: 1.1rem; background: #0e0e0f; border: 1px solid #1a1a1f; line-height: 1.7; }
 .in41-muted { color: #a6a7ac; }
-.in41-btn { display: inline-flex; align-items: center; justify-content: center; min-height: 2.75rem; padding: 0 1.2rem; border-radius: .8rem; border: 0; font-weight: 800; color: #0b0b0c; background: linear-gradient(180deg, #FFE9A3, #d4af37); text-decoration: none; cursor: pointer; }
-.in41-link { color: #FFD76A; text-decoration: none; font-weight: 700; }
+.in41-btn { display: inline-flex; align-items: center; justify-content: center; min-height: 2.75rem; padding: 0 1.2rem; border-radius: .8rem; border: 0; font-weight: 800; color: #0b0b0c; background: linear-gradient(180deg, #C9A24A, #C9A24A); text-decoration: none; cursor: pointer; }
+.in41-link { color: #C9A24A; text-decoration: none; font-weight: 700; }
 .in41-list { list-style: none; margin: 0; padding: 0; display: grid; gap: .5rem; }
 .in41-list li { display: flex; justify-content: space-between; gap: 1rem; flex-wrap: wrap; padding: .9rem 1.1rem; border-radius: .9rem; background: #0e0e0f; border: 1px solid #1a1a1f; }
-.in41-list li.is-unread { border-color: rgba(255,215,106,.5); }
+.in41-list li.is-unread { border-color: rgba(201,162,74,.5); }
 .in41-list time { color: #a6a7ac; font-size: .85rem; }
 .in41-status { list-style: none; margin: 0; padding: 0; display: grid; gap: .6rem; }
 .in41-status li { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding: 1rem 1.2rem; border-radius: 1rem; background: #0e0e0f; border: 1px solid #1a1a1f; }
@@ -21,7 +21,7 @@
 .in41-err-box { border-color: rgba(255,122,107,.55); }
 .in41-points { margin: 0; padding-inline-start: 1.2rem; display: grid; gap: .6rem; color: #c9cad0; line-height: 1.7; }
 .in41-wide { max-width: 72rem; }
-.pr41-kicker { margin: 0 0 .4rem; color: #FFD76A; font-weight: 800; letter-spacing: .14em; text-transform: uppercase; font-size: .78rem; }
+.pr41-kicker { margin: 0 0 .4rem; color: #C9A24A; font-weight: 800; letter-spacing: .14em; text-transform: uppercase; font-size: .78rem; }
 .pr41-h2 { margin: 0 0 1rem; font-size: 1.1rem; }
 .pr41-grid { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(9.5rem, 1fr)); gap: 1.4rem 1rem; }
 .pr41-grid li { display: grid; justify-items: center; gap: .5rem; text-align: center; padding-top: 1rem; }

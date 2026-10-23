@@ -20,11 +20,11 @@ type Reason = { key: string; value: number; baseline?: number; points: number; t
 type Review = { id: string; matchKey: string; steamId: string; userId: string | null; score: number; level: string; kills: number; reasons: unknown; createdAt: Date; status: string };
 
 export function ReviewQueue({ reviews, extra }: { reviews: Review[]; extra: string[] }) {
-  const cell = { padding: "6px 10px", borderBottom: "1px solid rgba(255,215,106,0.12)", textAlign: "start" as const, fontSize: 13, verticalAlign: "top" as const };
-  const btn = { padding: "4px 10px", marginInlineEnd: 6, border: "1px solid rgba(255,215,106,0.4)", borderRadius: 6, background: "transparent", color: "inherit", cursor: "pointer" };
+  const cell = { padding: "6px 10px", borderBottom: "1px solid rgba(201,162,74,0.12)", textAlign: "start" as const, fontSize: 13, verticalAlign: "top" as const };
+  const btn = { padding: "4px 10px", marginInlineEnd: 6, border: "1px solid rgba(201,162,74,0.4)", borderRadius: 6, background: "transparent", color: "inherit", cursor: "pointer" };
   return (
     <section dir="rtl" lang="he" style={{ marginTop: 24 }}>
-      <h2 style={{ fontSize: 20, margin: "16px 0 4px", color: "#FFD76A" }}>תור בדיקה – ניתוח התנהגותי</h2>
+      <h2 style={{ fontSize: 20, margin: "16px 0 4px", color: "#C9A24A" }}>תור בדיקה – ניתוח התנהגותי</h2>
       <p style={{ opacity: 0.75, marginBottom: 12 }}>הציון הוא רמז לבדיקה בלבד. אין הרחקה אוטומטית מסטטיסטיקה: ההחלטה שלך, אחרי צפייה בדמו.</p>
       <form action={analyzeMatchAction} style={{ marginBottom: 12 }}>
         <label>ניתוח משחק לפי מזהה: <input name="matchKey" style={{ background: "transparent", border: "1px solid #555", padding: 4 }} /></label>{" "}

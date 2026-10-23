@@ -8,11 +8,11 @@ import { deleteMission, deleteNews, deleteSeason, saveMission, saveNews, saveSea
 export const instant = false;
 export const metadata: Metadata = { title: "A.C.E Desktop content", robots: { index: false, follow: false } };
 
-const box = { border: "1px solid rgba(255,215,106,0.2)", borderRadius: 8, padding: 12, margin: "8px 0", display: "flex", flexWrap: "wrap" as const, gap: 8, alignItems: "end" };
+const box = { border: "1px solid rgba(201,162,74,0.2)", borderRadius: 8, padding: 12, margin: "8px 0", display: "flex", flexWrap: "wrap" as const, gap: 8, alignItems: "end" };
 const inp = { background: "#0d0d10", color: "#eee", border: "1px solid #333", borderRadius: 4, padding: "4px 6px" };
 const dt = (x: Date | null) => (x ? x.toISOString().slice(0, 16) : "");
 const L = ({ t, children }: { t: string; children: React.ReactNode }) => <label style={{ display: "grid", fontSize: 12, gap: 2 }}>{t}{children}</label>;
-const Btn = ({ children }: { children: React.ReactNode }) => <button style={{ ...inp, background: "#FFD76A", color: "#111", fontWeight: 700 }}>{children}</button>;
+const Btn = ({ children }: { children: React.ReactNode }) => <button style={{ ...inp, background: "#C9A24A", color: "#111", fontWeight: 700 }}>{children}</button>;
 
 type P = ReturnType<typeof getPrisma>;
 type Mission = Awaited<ReturnType<P["mission"]["findMany"]>>[number];
@@ -64,7 +64,7 @@ export default async function AdminDesktopPage() {
   const [missions, posts, seasons, items, tours] = data;
   return (
     <main className="ace-admin-page" style={{ padding: 24, maxWidth: 1200, margin: "0 auto" }}>
-      <h1 style={{ color: "#FFD76A", fontSize: 24, fontWeight: 700 }}>A.C.E Desktop content</h1>
+      <h1 style={{ color: "#C9A24A", fontSize: 24, fontWeight: 700 }}>A.C.E Desktop content</h1>
       <p style={{ opacity: 0.75 }}>Contracts reward cosmetics only. Nothing here affects gameplay or matchmaking.</p>
 
       <h2 style={{ fontSize: 18, marginTop: 24 }}>Contracts (missions)</h2>

@@ -5,16 +5,16 @@ import { getText } from "@/server/locale";
 
 const LETTER_CSS = `
 .ace-letter { max-width: 46rem; margin: 0 auto; color: #f5f3ec; }
-.ace-letter-kicker { font-size: 0.68rem; font-weight: 800; letter-spacing: 0.18em; text-transform: uppercase; color: #d4af37; }
-.ace-letter h1 { margin-top: 0.4rem; font-size: clamp(1.8rem, 4vw, 2.6rem); font-weight: 750; color: #ffd76a; }
-.ace-letter-flag { margin-top: 1rem; border: 1px solid rgba(212,175,55,0.45); border-radius: 0.9rem; background: #121214; padding: 0.9rem 1rem; color: #f5f3ec; line-height: 1.55; }
-.ace-letter article { margin-top: 1.2rem; border: 1px solid rgba(212,175,55,0.35); border-radius: 1.1rem; background: linear-gradient(180deg, #141416, #0c0c0e); padding: 1.4rem 1.2rem 1.5rem; box-shadow: 0 18px 40px rgba(0,0,0,0.35); }
-.ace-letter h2 { margin-top: 1.35rem; font-size: 1.05rem; color: #ffd76a; }
+.ace-letter-kicker { font-size: 0.68rem; font-weight: 800; letter-spacing: 0.18em; text-transform: uppercase; color: #C9A24A; }
+.ace-letter h1 { margin-top: 0.4rem; font-size: clamp(1.8rem, 4vw, 2.6rem); font-weight: 750; color: #C9A24A; }
+.ace-letter-flag { margin-top: 1rem; border: 1px solid rgba(201,162,74,0.45); border-radius: 0.9rem; background: #121214; padding: 0.9rem 1rem; color: #f5f3ec; line-height: 1.55; }
+.ace-letter article { margin-top: 1.2rem; border: 1px solid rgba(201,162,74,0.35); border-radius: 1.1rem; background: linear-gradient(180deg, #141416, #0c0c0e); padding: 1.4rem 1.2rem 1.5rem; box-shadow: 0 18px 40px rgba(0,0,0,0.35); }
+.ace-letter h2 { margin-top: 1.35rem; font-size: 1.05rem; color: #C9A24A; }
 .ace-letter p, .ace-letter li { color: #e7e2d6; line-height: 1.65; }
 .ace-letter ul, .ace-letter ol { margin-top: 0.55rem; padding-inline-start: 1.15rem; }
 .ace-letter li + li { margin-top: 0.4rem; }
-.ace-letter a { color: #ffd76a; text-decoration: underline; text-underline-offset: 0.15em; }
-.ace-letter-go { display: inline-flex; margin-top: 1.3rem; min-height: 3rem; align-items: center; justify-content: center; border-radius: 999px; border: 1px solid #d4af37; background: #0b0b0c; color: #ffd76a; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; padding: 0 1.3rem; text-shadow: 0 0 8px rgba(212, 175, 55, 0.9), 0 0 18px rgba(212, 175, 55, 0.45); box-shadow: inset 0 0 16px rgba(212, 175, 55, 0.28), 0 0 14px rgba(212, 175, 55, 0.22); }
+.ace-letter a { color: #C9A24A; text-decoration: underline; text-underline-offset: 0.15em; }
+.ace-letter-go { display: inline-flex; margin-top: 1.3rem; min-height: 3rem; align-items: center; justify-content: center; border-radius: 999px; border: 1px solid #C9A24A; background: #0b0b0c; color: #C9A24A; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; padding: 0 1.3rem; text-shadow: 0 0 8px rgba(201,162,74, 0.9), 0 0 18px rgba(201,162,74, 0.45); box-shadow: inset 0 0 16px rgba(201,162,74, 0.28), 0 0 14px rgba(201,162,74, 0.22); }
 `;
 
 export async function MembershipLetter({

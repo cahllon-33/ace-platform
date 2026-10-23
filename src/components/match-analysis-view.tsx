@@ -41,7 +41,7 @@ function Rounds({ data, label }: { data: MatchAnalysisData | null; label: string
       <h2>{label}</h2>
       <div className="ace-analysis-bars">
         {bars.map((r) => (
-          <span key={r.round} style={data ? { height: `${(r.damage / max) * 100}%`, background: "rgba(212, 175, 55,0.6)" } : undefined} />
+          <span key={r.round} style={data ? { height: `${(r.damage / max) * 100}%`, background: "rgba(201,162,74,0.6)" } : undefined} />
         ))}
       </div>
     </section>

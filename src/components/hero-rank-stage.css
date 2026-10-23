@@ -1,6 +1,6 @@
 /* R44 signed-in hero rank stage. Tier color = --hrs-tone (fixed per tier). Transform/opacity animation only. */
 .hrs {
-  --gold: #f5c842;
+  --gold: #C9A24A;
   --plat: #dfe8f5;
   position: relative; width: min(34rem, 100%); min-width: 0;
   display: grid; gap: 0.25rem; isolation: isolate;
@@ -126,13 +126,13 @@
 .hrs-id-text { display: grid; gap: 0.15rem; min-width: 0; }
 .hrs-name { font-size: 1.05rem; color: #fff; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .hrs-finish { justify-self: start; font-size: 0.62rem; font-weight: 800; letter-spacing: 0.12em; text-transform: uppercase; padding: 0.15rem 0.5rem; border-radius: 999px; }
-.hrs-finish.is-premium { color: #1a1205; background: linear-gradient(90deg, #fff1b8, #f5c842 45%, #e08a1e); }
+.hrs-finish.is-premium { color: #1a1205; background: linear-gradient(90deg, #D9B45E, #C9A24A 45%, #e08a1e); }
 .hrs-finish.is-plus { color: #10141b; background: linear-gradient(90deg, #ffffff, #cfd9e8 55%, #93a3bb); }
 
 .hrs-tier { margin: 0; display: flex; flex-wrap: wrap; align-items: baseline; gap: 0.2rem 0.7rem; }
 .hrs-tier-name { font-size: clamp(1.6rem, 4vw, 2.1rem); font-weight: 800; line-height: 1.05; letter-spacing: -0.01em; color: var(--hrs-tone); text-shadow: 0 0 28px color-mix(in srgb, var(--hrs-tone) 45%, transparent); }
 .hrs-tier-div { font-size: 0.8rem; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: rgba(255, 255, 255, 0.7); }
-.hrs-prestige { margin: -0.3rem 0 0; font-size: 0.82rem; font-weight: 700; color: #ffcf6b; }
+.hrs-prestige { margin: -0.3rem 0 0; font-size: 0.82rem; font-weight: 700; color: #C9A24A; }
 .hrs.is-plus .hrs-prestige { color: var(--plat); }
 .hrs.is-free .hrs-prestige { color: rgba(255, 255, 255, 0.72); }
 

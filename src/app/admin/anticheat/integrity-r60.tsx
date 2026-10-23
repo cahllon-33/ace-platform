@@ -14,13 +14,13 @@ const CONS: Record<string, string> = { cheating: "רמאות", clean: "נקי", 
 const MST: Record<string, string> = { active: "פעיל", rejected: "נדחה (לא עבר ספי בדיקה)", retired: "הוחלף", trained: "אומן" };
 
 export function IntegrityPanel({ status, cases, reports, reviews }: { status: Status | null; cases: Case[]; reports: Report[]; reviews: Review[] }) {
-  const cell = { padding: "6px 10px", borderBottom: "1px solid rgba(255,215,106,0.12)", textAlign: "start" as const, fontSize: 13, verticalAlign: "top" as const };
-  const btn = { padding: "4px 10px", marginInlineEnd: 6, border: "1px solid rgba(255,215,106,0.4)", borderRadius: 6, background: "transparent", color: "inherit", cursor: "pointer" };
+  const cell = { padding: "6px 10px", borderBottom: "1px solid rgba(201,162,74,0.12)", textAlign: "start" as const, fontSize: 13, verticalAlign: "top" as const };
+  const btn = { padding: "4px 10px", marginInlineEnd: 6, border: "1px solid rgba(201,162,74,0.4)", borderRadius: 6, background: "transparent", color: "inherit", cursor: "pointer" };
   const inp = { background: "transparent", border: "1px solid #555", padding: 4, color: "inherit" };
   const r = status?.readiness;
   return (
     <section dir="rtl" lang="he" style={{ marginTop: 32 }}>
-      <h2 style={{ fontSize: 20, color: "#FFD76A" }}>מודל למידה</h2>
+      <h2 style={{ fontSize: 20, color: "#C9A24A" }}>מודל למידה</h2>
       {!status ? <p>אין נתוני מודל (המיגרציה לא הוחלה?).</p> : (
         <>
           <p>מצב: <b>{status.active ? "מודל פעיל (רמז לבדיקה בלבד, לעולם לא הרחקה)" : "מבוסס חוקים"}</b>. תוויות אמיתיות: {r!.labeled} ({r!.positives} אושרו / {r!.negatives} נוקו). {r!.ready ? "מספיק נתונים לאימון." : `חסרות עוד ${r!.needed} החלטות לפחות.`}</p>
@@ -32,7 +32,7 @@ export function IntegrityPanel({ status, cases, reports, reviews }: { status: St
         </>
       )}
 
-      <h2 style={{ fontSize: 20, color: "#FFD76A", marginTop: 24 }}>A.C.E Overwatch</h2>
+      <h2 style={{ fontSize: 20, color: "#C9A24A", marginTop: 24 }}>A.C.E Overwatch</h2>
       <p style={{ opacity: 0.75 }}>שחקנים ותיקים ואמינים בודקים ראיות אנונימיות ומצביעים. ההצבעה היא המלצה; ההחלטה הסופית שלך.</p>
       <form action={openOverwatchAction} style={{ marginBottom: 12 }}>
         <label>בדיקה: <select name="reviewId" style={inp}>{reviews.map((x) => <option key={x.id} value={x.id}>{Math.round(x.score)} · {x.steamId} · {x.matchKey}</option>)}</select></label>{" "}
@@ -62,7 +62,7 @@ export function IntegrityPanel({ status, cases, reports, reviews }: { status: St
         </table>
       )}
 
-      <h2 style={{ fontSize: 20, color: "#FFD76A", marginTop: 24 }}>דיווחי שחקנים מהאפליקציה (פתוחים)</h2>
+      <h2 style={{ fontSize: 20, color: "#C9A24A", marginTop: 24 }}>דיווחי שחקנים מהאפליקציה (פתוחים)</h2>
       {reports.length === 0 ? <p style={{ opacity: 0.7 }}>אין דיווחים פתוחים.</p> : (
         <table style={{ width: "100%", borderCollapse: "collapse" }}>
           <thead><tr>{["זמן", "SteamID", "סוג", "פרטים", "לובי"].map((h) => <th key={h} style={cell}>{h}</th>)}</tr></thead>

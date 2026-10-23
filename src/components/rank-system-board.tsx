@@ -109,7 +109,7 @@ export function RankSystemBoard({
             <div>
               <div className="flex flex-wrap items-center gap-2">
                 <span className="ace-mini-crown" aria-hidden="true" />
-                <h3 className="text-2xl font-semibold tracking-[0.14em] text-[#FFD76A] sm:text-3xl">
+                <h3 className="text-2xl font-semibold tracking-[0.14em] text-[#C9A24A] sm:text-3xl">
                   {selected.name.toUpperCase()}
                 </h3>
                 {art === "premium" ? (
@@ -121,7 +121,7 @@ export function RankSystemBoard({
               <p className="mt-2 text-xs tracking-[0.22em] text-[#A9ABB3]">
                 {copy.tiers[selected.level].tagline}
               </p>
-              <p className="mt-3 text-[0.65rem] tracking-[0.18em] text-[#FFD76A]">
+              <p className="mt-3 text-[0.65rem] tracking-[0.18em] text-[#C9A24A]">
                 {interpolate(copy.division.label, { division })}
               </p>
               <DivisionChips active={division} onSelect={setDivision} />
@@ -139,7 +139,7 @@ export function RankSystemBoard({
                   <p className="text-[0.65rem] uppercase tracking-[0.16em] text-[#A9ABB3]">
                     {t("competitiveRating")}
                   </p>
-                  <p className="mt-1 text-3xl font-semibold text-[#FFD76A]">
+                  <p className="mt-1 text-3xl font-semibold text-[#C9A24A]">
                     {liveRating != null ? `${rating} RP` : `${selected.minRating.toLocaleString("en-US")} RP`}
                   </p>
                   <p className="text-sm leading-6 text-white">

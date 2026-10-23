@@ -13,10 +13,10 @@ export default async function AdminWhatsNewPage() {
   await connection();
   if (!(await readIsSteamOwner())) notFound();
   const rows = await adminWhatsNew().catch(() => null);
-  const cell = { padding: "8px 10px", borderBottom: "1px solid rgba(255,215,106,0.12)", textAlign: "start" as const, fontSize: 13 };
+  const cell = { padding: "8px 10px", borderBottom: "1px solid rgba(201,162,74,0.12)", textAlign: "start" as const, fontSize: 13 };
   return (
     <main dir="rtl" lang="he" style={{ padding: 24, maxWidth: 1100, margin: "0 auto" }}>
-      <h1 style={{ color: "#FFD76A", fontSize: 24, fontWeight: 700 }}>מה חדש — עדכונים לשחקנים</h1>
+      <h1 style={{ color: "#C9A24A", fontSize: 24, fontWeight: 700 }}>מה חדש — עדכונים לשחקנים</h1>
       <p style={{ opacity: 0.75, margin: "6px 0 18px" }}>רק שינויים שרלוונטיים לשחקנים (פיצ׳רים חדשים, פריטים חדשים בחנות). לא שינויי ניהול או מערכת. פריט חדש שנוסף לחנות מופיע כאן אוטומטית.</p>
       <AddEntryForm />
       <h2 style={{ fontSize: 18, margin: "24px 0 8px" }}>עדכונים</h2>
@@ -34,7 +34,7 @@ export default async function AdminWhatsNewPage() {
                   <form action={togglePublishedAction}>
                     <input type="hidden" name="id" value={r.id} />
                     <input type="hidden" name="published" value={r.published ? "0" : "1"} />
-                    <button style={{ color: "#FFD76A", textDecoration: "underline", background: "none", border: 0 }}>{r.published ? "הסתר" : "פרסם שוב"}</button>
+                    <button style={{ color: "#C9A24A", textDecoration: "underline", background: "none", border: 0 }}>{r.published ? "הסתר" : "פרסם שוב"}</button>
                   </form>
                 </td>
               </tr>

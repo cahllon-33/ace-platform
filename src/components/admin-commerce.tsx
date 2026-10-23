@@ -25,7 +25,7 @@ const HE: typeof EN = {
   cosmetic: "קוסמטי בלבד — ללא השפעה על המשחק.", saved: "נשמר", when: "מתי", type: "סוג", outcome: "תוצאה", status: "סטטוס", amount: "סכום", user: "משתמש",
 };
 
-const blank: CosmeticInput = { slug: "", kind: "NAME_COLOR", name: "", description: "", priceCents: 199, color: "#ffd76a", active: true };
+const blank: CosmeticInput = { slug: "", kind: "NAME_COLOR", name: "", description: "", priceCents: 199, color: "#C9A24A", active: true };
 
 export function AdminCommerce({ owner, initial, error }: { owner: boolean; initial: CommerceSnapshot | null; error: string | null }) {
   const { hebrew } = useAdminI18n();

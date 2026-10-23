@@ -119,7 +119,7 @@ export default async function StatsPage({ params }: { params: Promise<{ steamId:
           <h2>{st.rpChart}</h2>
           {pts.length < 2 ? <p className="st41-muted">{st.rpEmpty}</p> : (
             <svg viewBox={`0 0 ${W} ${H}`} className="st41-chart" role="img" aria-label={`${st.rpChart}: ${pts[0]} → ${pts[pts.length - 1]} RP`}>
-              <polyline points={poly} fill="none" stroke="#FFD76A" strokeWidth="2.5" strokeLinejoin="round" />
+              <polyline points={poly} fill="none" stroke="#C9A24A" strokeWidth="2.5" strokeLinejoin="round" />
               <text x="4" y="14">{hi}</text><text x="4" y={H - 2}>{lo}</text>
             </svg>
           )}

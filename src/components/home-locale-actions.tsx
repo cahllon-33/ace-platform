@@ -10,7 +10,7 @@ import { useUi } from "@/components/use-ui";
 export function LocaleLoading({ className }: { className?: string }) {
   const { t } = useI18n();
   return (
-    <p className={className ?? "text-sm tracking-[0.2em] text-[#FFD76A]"}>{t("loadingAce")}</p>
+    <p className={className ?? "text-sm tracking-[0.2em] text-[#C9A24A]"}>{t("loadingAce")}</p>
   );
 }
 

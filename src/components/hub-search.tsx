@@ -41,7 +41,7 @@ export function HubSearch() {
       {expanded ? (
         <form
           id="hub-search"
-          className="absolute end-0 top-12 z-50 w-64 rounded-xl border border-[#D4AF37]/40 bg-[#08090D] p-3"
+          className="absolute end-0 top-12 z-50 w-64 rounded-xl border border-[#C9A24A]/40 bg-[#08090D] p-3"
           suppressHydrationWarning
           onSubmit={(event) => {
             event.preventDefault();
@@ -50,14 +50,14 @@ export function HubSearch() {
             setOpen(false);
           }}
         >
-          <label htmlFor="hub-q" className="text-[0.65rem] uppercase tracking-[0.16em] text-[#D4AF37]">
+          <label htmlFor="hub-q" className="text-[0.65rem] uppercase tracking-[0.16em] text-[#C9A24A]">
             {copy.fieldLabel}
           </label>
           <input
             id="hub-q"
             value={query}
             onChange={(event) => setQuery(event.target.value)}
-            className="mt-2 w-full rounded-md border border-[#D4AF37]/30 bg-[#121318] px-3 py-2 text-sm text-[#F5F3EC]"
+            className="mt-2 w-full rounded-md border border-[#C9A24A]/30 bg-[#121318] px-3 py-2 text-sm text-[#F5F3EC]"
             placeholder={copy.placeholder}
             autoComplete="off"
             suppressHydrationWarning

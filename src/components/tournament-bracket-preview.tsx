@@ -125,26 +125,26 @@ function WingColumn({
 function CrownBadge() {
   return (
     <svg className="ace-champion-crown" viewBox="0 0 64 48" aria-hidden="true">
-      <path d="M6 38h52v6.5H6z" fill="url(#ace-dual-crown-band)" stroke="#fff6c2" strokeWidth="1.1" />
+      <path d="M6 38h52v6.5H6z" fill="url(#ace-dual-crown-band)" stroke="#D9B45E" strokeWidth="1.1" />
       <path
         d="M8 36 16 12l16 14L48 8l8 28z"
         fill="url(#ace-dual-crown-metal)"
-        stroke="#ffd76a"
+        stroke="#C9A24A"
         strokeWidth="1.4"
         strokeLinejoin="round"
       />
-      <circle cx="16" cy="11" r="3.2" fill="#fff8de" />
-      <circle cx="32" cy="24.5" r="2.6" fill="#ffd66b" />
-      <circle cx="48" cy="7.5" r="3.4" fill="#fff8de" />
+      <circle cx="16" cy="11" r="3.2" fill="#D9B45E" />
+      <circle cx="32" cy="24.5" r="2.6" fill="#C9A24A" />
+      <circle cx="48" cy="7.5" r="3.4" fill="#D9B45E" />
       <defs>
         <linearGradient id="ace-dual-crown-metal" x1="8" y1="8" x2="56" y2="40">
-          <stop offset="0%" stopColor="#fff8de" />
-          <stop offset="42%" stopColor="#ffd76a" />
+          <stop offset="0%" stopColor="#D9B45E" />
+          <stop offset="42%" stopColor="#C9A24A" />
           <stop offset="100%" stopColor="#8f6418" />
         </linearGradient>
         <linearGradient id="ace-dual-crown-band" x1="6" y1="38" x2="58" y2="45">
-          <stop offset="0%" stopColor="#d4af37" />
-          <stop offset="50%" stopColor="#fff6c2" />
+          <stop offset="0%" stopColor="#C9A24A" />
+          <stop offset="50%" stopColor="#D9B45E" />
           <stop offset="100%" stopColor="#8f6418" />
         </linearGradient>
       </defs>
@@ -197,10 +197,10 @@ function LaserRunways({ paths, width, height }: { paths: Runway[]; width: number
     >
       <defs>
         <linearGradient id="gold-gradient" x1="0" y1="0" x2="1" y2="0">
-          <stop offset="0%" stopColor="#b8860b" />
-          <stop offset="28%" stopColor="#ffd76a" />
-          <stop offset="52%" stopColor="#fff6c2" />
-          <stop offset="100%" stopColor="#ffd76a" />
+          <stop offset="0%" stopColor="#8A6A2B" />
+          <stop offset="28%" stopColor="#C9A24A" />
+          <stop offset="52%" stopColor="#D9B45E" />
+          <stop offset="100%" stopColor="#C9A24A" />
         </linearGradient>
         <filter id={`ace-runway-glow-${uid}`} x="-35%" y="-35%" width="170%" height="170%">
           <feGaussianBlur in="SourceGraphic" stdDeviation="3.4" result="blur" />
@@ -356,7 +356,7 @@ export function TournamentBracketPreview({
     <section className="ace-rise ace-glass-laser ace-bracket-stage relative w-full max-w-7xl overflow-x-hidden">
       <div className="flex flex-col items-start justify-between gap-6 md:flex-row md:items-center">
         <div>
-          <p className="text-xs uppercase tracking-[0.22em] text-[#FFD76A]">{copy.kicker}</p>
+          <p className="text-xs uppercase tracking-[0.22em] text-[#C9A24A]">{copy.kicker}</p>
           <h2 className="mt-2 text-xl font-semibold text-white sm:text-2xl">{copy.title}</h2>
           <p className="mt-2 max-w-xl text-sm text-[#bdb8a8]">
             {status} {t("registeredTeams")}

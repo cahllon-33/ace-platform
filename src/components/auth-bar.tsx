@@ -48,7 +48,7 @@ export async function AuthBar() {
       {hasEliteSeal(user?.subscriptionTier) ? (
         <span className="hx-elite inline-flex items-center gap-2" title={copy.elite}>
           <EliteSeal className="h-9 w-auto" />
-          <span className="text-[0.65rem] font-bold tracking-[0.18em] text-[#FFD76A]">{copy.elite}</span>
+          <span className="text-[0.65rem] font-bold tracking-[0.18em] text-[#C9A24A]">{copy.elite}</span>
         </span>
       ) : null}
       <Link href="/notifications" prefetch={false} className="ace-util-frame no-underline" title={copy.notificationsTitle} aria-label={copy.notificationsAria}>
@@ -74,7 +74,7 @@ export async function AuthBar() {
           )}
           <span className="flex min-w-0 flex-col leading-tight">
             <span className="max-w-[9rem] truncate text-xs font-semibold text-[#F5F3EC]">{label}</span>
-            <span className="text-[0.62rem] tracking-[0.06em] text-[#D4AF37]">
+            <span className="text-[0.62rem] tracking-[0.06em] text-[#C9A24A]">
               {tier?.name} · {user.competitiveRating.toLocaleString("en-US")} RP
             </span>
           </span>
@@ -89,7 +89,7 @@ export async function AuthBar() {
         <form action="/api/auth/logout" method="post">
           <button
             type="submit"
-            className="inline-flex min-h-10 items-center rounded-md border border-[#D4AF37]/35 px-3 text-xs uppercase tracking-[0.12em] text-[#A9ABB3]"
+            className="inline-flex min-h-10 items-center rounded-md border border-[#C9A24A]/35 px-3 text-xs uppercase tracking-[0.12em] text-[#A9ABB3]"
             aria-label={copy.signOutAria}
           >
             <T k="signOut" />

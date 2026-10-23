@@ -18,7 +18,7 @@ async function LegalMeta() {
 export async function LegalDisclaimer() {
   const text = await getText();
   return (
-    <p className="mt-5 border-l-2 border-[#FFD76A] bg-[#FFD76A]/8 px-4 py-3 text-sm leading-6 text-[#F5F3EC]">
+    <p className="mt-5 border-l-2 border-[#C9A24A] bg-[#C9A24A]/8 px-4 py-3 text-sm leading-6 text-[#F5F3EC]">
       {text.consent.valveDisclaimer}
     </p>
   );

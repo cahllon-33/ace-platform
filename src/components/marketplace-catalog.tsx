@@ -33,7 +33,7 @@ export function ShopLocaleHero() {
       <h1 className="ace-market-title">{t("shopTitle")}</h1>
       <p className="ace-market-sub">{t("shopLede")}</p>
       <p className="ace-market-sub-note">{t("shopNote")}</p>
-      <p className="mt-3 max-w-3xl text-sm font-semibold leading-6 text-[#fff6c2]">
+      <p className="mt-3 max-w-3xl text-sm font-semibold leading-6 text-[#D9B45E]">
         {text.desk.shop.heroHonesty}
       </p>
     </header>
@@ -85,14 +85,14 @@ function AssetMark({ item }: { item: MarketItem }) {
         height={48}
         className="ace-market-glyph h-12 w-12 max-h-12 max-w-12 shrink-0"
       >
-        <rect x="4" y="4" width="40" height="40" rx="8" fill="#0B0B0C" stroke="#FFD76A" strokeWidth="1.5" />
+        <rect x="4" y="4" width="40" height="40" rx="8" fill="#0B0B0C" stroke="#C9A24A" strokeWidth="1.5" />
         <path
           d="M14 32 L24 12 L34 32 Z"
           fill="none"
-          stroke="#FFD76A"
+          stroke="#C9A24A"
           strokeWidth="1.6"
         />
-        <circle cx="24" cy="28" r="3" fill="#FFD76A" />
+        <circle cx="24" cy="28" r="3" fill="#C9A24A" />
       </svg>
     </div>
   );
@@ -134,7 +134,7 @@ export function MarketplaceCatalog() {
             >
               <AssetMark item={item} />
               {item.category === "skins" ? (
-                <p className="text-[0.68rem] font-extrabold leading-5 tracking-[0.06em] text-[#FFD76A]">
+                <p className="text-[0.68rem] font-extrabold leading-5 tracking-[0.06em] text-[#C9A24A]">
                   {text.desk.shop.prizeBanner}
                 </p>
               ) : null}

@@ -4,7 +4,7 @@ import "./verified-mark.css";
 const STOPS: Record<VerifyTier, [string, string, string]> = {
   free: ["#F2F3F5", "#B9BDC4", "#6E737B"],
   plus: ["#FFFFFF", "#CFE3EE", "#7E9BB0"],
-  premium: ["#FFF3C4", "#FFD76A", "#9C6F12"],
+  premium: ["#D9B45E", "#C9A24A", "#9C6F12"],
 };
 
 /**

@@ -21,7 +21,7 @@ export default async function AdminOrbPreviewPage() {
       {RANK_TIERS.map((tier) => (
         <figure key={`${art}-${tier.level}`} style={{ margin: 0, display: "grid", justifyItems: "center", gap: "0.35rem" }}>
           <RankOrb level={tier.level} art={art} size={size} label="Rank" />
-          <figcaption style={{ font: "700 0.72rem/1.2 system-ui", letterSpacing: "0.1em", textTransform: "uppercase", color: "#f3e7c0", textAlign: "center" }}>
+          <figcaption style={{ font: "700 0.72rem/1.2 system-ui", letterSpacing: "0.1em", textTransform: "uppercase", color: "#C9A24A", textAlign: "center" }}>
             {tier.name}
             <br />
             <span style={{ opacity: 0.6 }}>Tier {tier.level}</span>
@@ -30,7 +30,7 @@ export default async function AdminOrbPreviewPage() {
       ))}
     </div>
   );
-  const heading = { font: "800 0.8rem system-ui", letterSpacing: "0.18em", color: "#f5c842", margin: "1.5rem 0 1rem" } as const;
+  const heading = { font: "800 0.8rem system-ui", letterSpacing: "0.18em", color: "#C9A24A", margin: "1.5rem 0 1rem" } as const;
   return (
     <main style={{ background: "#060607", minHeight: "100vh", padding: "1.5rem 2rem", color: "#fff" }}>
       <p style={heading}>STANDARD · 140px</p>

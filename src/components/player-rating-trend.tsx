@@ -41,8 +41,8 @@ export function PlayerRatingTrend({ points }: { points: RatingPoint[] }) {
       >
         <defs>
           <linearGradient id="ace-dossier-line" x1="0" y1="0" x2="1" y2="0">
-            <stop offset="0%" stopColor="#D4AF37" />
-            <stop offset="100%" stopColor="#FFD76A" />
+            <stop offset="0%" stopColor="#C9A24A" />
+            <stop offset="100%" stopColor="#C9A24A" />
           </linearGradient>
           <filter id="ace-dossier-glow" x="-20%" y="-20%" width="140%" height="140%">
             <feGaussianBlur stdDeviation="2.4" result="blur" />
@@ -61,7 +61,7 @@ export function PlayerRatingTrend({ points }: { points: RatingPoint[] }) {
               x2={WIDTH - PAD.right}
               y1={y}
               y2={y}
-              stroke="rgba(212,175,55,0.18)"
+              stroke="rgba(201,162,74,0.18)"
               strokeWidth="1"
             />
           );
@@ -80,7 +80,7 @@ export function PlayerRatingTrend({ points }: { points: RatingPoint[] }) {
               cy={point.y}
               r={active === index ? 7 : 5}
               fill="#0B0B0C"
-              stroke="#FFD76A"
+              stroke="#C9A24A"
               strokeWidth="2"
               onMouseEnter={() => setActive(index)}
               onMouseLeave={() => setActive(null)}

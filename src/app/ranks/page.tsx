@@ -37,7 +37,7 @@ export default async function RanksPage() {
 
   return (
     <main className="mx-auto max-w-[90rem] px-4 py-14 sm:px-6">
-      <p className="text-xs tracking-[0.28em] text-[#FFD76A]">{copy.hero.kicker}</p>
+      <p className="text-xs tracking-[0.28em] text-[#C9A24A]">{copy.hero.kicker}</p>
       <h1 className="mt-2 text-4xl font-semibold">{copy.hero.title}</h1>
       <p className="mt-4 max-w-3xl text-sm leading-7 text-[#A9ABB3]">
         {interpolate(copy.hero.lede, { divisions: RANK_DIVISIONS.join(", ") })}
@@ -69,16 +69,16 @@ export default async function RanksPage() {
         <PremiumRankCodex text={text} />
       </section>
       <RpRulesSection text={text} ui={ui} />
-      <p className="mx-auto max-w-6xl px-4"><a href="/badges" className="font-bold text-[#FFD76A]">{ui.r41c.pr.open} →</a></p>
-      <section className="mt-12 rounded-3xl border border-[#FFD76A]/25 bg-[#121212] p-6 sm:p-8">
+      <p className="mx-auto max-w-6xl px-4"><a href="/badges" className="font-bold text-[#C9A24A]">{ui.r41c.pr.open} →</a></p>
+      <section className="mt-12 rounded-3xl border border-[#C9A24A]/25 bg-[#121212] p-6 sm:p-8">
         <h2 className="text-xl font-semibold text-white">{copy.document.title}</h2>
         <p className="mt-3 max-w-3xl text-sm leading-7 text-[#A9ABB3]">{copy.document.body}</p>
         <ol className="mt-6 grid gap-3 md:grid-cols-2">
           {RANK_TIERS.map((tier) => (
-            <li key={tier.level} className="ace-tier-row rounded-2xl border border-[#FFD76A]/20 p-4">
+            <li key={tier.level} className="ace-tier-row rounded-2xl border border-[#C9A24A]/20 p-4">
               <RankOrb level={tier.level} size={72} label={tier.name} />
               <div>
-              <p className="text-xs tracking-[0.14em] text-[#FFD76A]">
+              <p className="text-xs tracking-[0.14em] text-[#C9A24A]">
                 {rankLevelKicker(copy.document.level, tier)}
               </p>
               <p className="mt-1 font-semibold text-[#F5F3EC]">{tier.name}</p>

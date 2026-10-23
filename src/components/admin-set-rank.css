@@ -1,29 +1,29 @@
 .asr-scrim { position: fixed; inset: 0; z-index: 200; display: grid; place-items: center; padding: 1rem; background: rgba(3, 3, 5, .72); backdrop-filter: blur(6px); }
-.asr { width: min(100%, 64rem); max-height: calc(100vh - 2rem); overflow: auto; border-radius: 1.25rem; border: 1px solid rgba(212, 175, 55, .45); background: linear-gradient(180deg, #15161b, #0c0d10); color: #f4f1ea; box-shadow: 0 40px 80px -30px #000, 0 0 0 1px rgba(212, 175, 55, .1); }
+.asr { width: min(100%, 64rem); max-height: calc(100vh - 2rem); overflow: auto; border-radius: 1.25rem; border: 1px solid rgba(201, 162, 74, .45); background: linear-gradient(180deg, #15161b, #0c0d10); color: #f4f1ea; box-shadow: 0 40px 80px -30px #000, 0 0 0 1px rgba(201, 162, 74, .1); }
 .asr-head { display: flex; justify-content: space-between; gap: 1rem; padding: 1.25rem 1.4rem .75rem; border-bottom: 1px solid rgba(255, 255, 255, .06); }
 .asr-head h2 { margin: .15rem 0 .3rem; font-size: 1.25rem; }
-.asr-kicker { margin: 0; color: #d4af37; font-size: .72rem; font-weight: 800; letter-spacing: .14em; text-transform: uppercase; }
+.asr-kicker { margin: 0; color: #C9A24A; font-size: .72rem; font-weight: 800; letter-spacing: .14em; text-transform: uppercase; }
 .asr-lede { margin: 0; color: #a6a7ac; font-size: .82rem; max-width: 44rem; line-height: 1.5; }
 .asr-x { width: 2.25rem; height: 2.25rem; flex: none; border-radius: .6rem; border: 1px solid rgba(255, 255, 255, .12); background: transparent; color: #f4f1ea; font-size: 1.3rem; cursor: pointer; }
 .asr-body { display: grid; gap: 1.25rem; padding: 1.1rem 1.4rem 1.4rem; }
 @media (min-width: 860px) { .asr-body { grid-template-columns: minmax(0, 1fr) 17rem; } }
-.asr-label { margin: 0 0 .5rem; color: #d4af37; font-size: .7rem; font-weight: 800; letter-spacing: .14em; text-transform: uppercase; }
+.asr-label { margin: 0 0 .5rem; color: #C9A24A; font-size: .7rem; font-weight: 800; letter-spacing: .14em; text-transform: uppercase; }
 .asr-tiers { list-style: none; margin: 0 0 1rem; padding: 0; display: grid; gap: .35rem; grid-template-columns: repeat(auto-fill, minmax(15.5rem, 1fr)); }
 .asr-tiers li { display: flex; align-items: center; gap: .55rem; padding: .35rem .5rem; border-radius: .7rem; border: 1px solid rgba(255, 255, 255, .06); background: #111216; }
-.asr-tiers li.is-on { border-color: rgba(212, 175, 55, .7); }
+.asr-tiers li.is-on { border-color: rgba(201, 162, 74, .7); }
 .asr-tname { flex: 1; min-width: 0; font-size: .78rem; font-weight: 700; line-height: 1.2; }
 .asr-divs { display: flex; gap: .25rem; }
 .asr-divs button { min-width: 2.1rem; height: 1.9rem; border-radius: .45rem; border: 1px solid rgba(255, 255, 255, .14); background: transparent; color: #c8c4b8; font-size: .72rem; font-weight: 700; cursor: pointer; }
-.asr-divs button:hover, .asr-divs button.is-on { border-color: #d4af37; color: #ffd76a; background: rgba(212, 175, 55, .1); }
+.asr-divs button:hover, .asr-divs button.is-on { border-color: #C9A24A; color: #C9A24A; background: rgba(201, 162, 74, .1); }
 .asr-prestige { list-style: none; margin: 0; padding: 0; display: grid; gap: .5rem; grid-template-columns: repeat(5, minmax(0, 1fr)); }
 .asr-prestige button { width: 100%; display: grid; justify-items: center; gap: .2rem; padding: .6rem .3rem; border-radius: .8rem; border: 1px solid rgba(255, 255, 255, .08); background: #111216; color: #f4f1ea; cursor: pointer; }
-.asr-prestige button:hover, .asr-prestige button.is-on { border-color: #d4af37; background: rgba(212, 175, 55, .08); }
+.asr-prestige button:hover, .asr-prestige button.is-on { border-color: #C9A24A; background: rgba(201, 162, 74, .08); }
 .asr-prestige strong { font-size: .74rem; } .asr-prestige small { color: #a6a7ac; font-size: .68rem; }
 .asr-side { display: grid; gap: .5rem; align-content: start; padding: 1rem; border-radius: 1rem; background: #0f1014; border: 1px solid rgba(255, 255, 255, .06); }
 .asr-preview { display: grid; place-items: center; height: 10.5rem; }
 .asr-result-label { margin: 0; color: #a6a7ac; font-size: .68rem; letter-spacing: .14em; text-transform: uppercase; text-align: center; }
 .asr-result { margin: 0; text-align: center; font-size: 1.1rem; font-weight: 800; }
-.asr-result-sub { margin: 0 0 .4rem; text-align: center; color: #ffd76a; font-size: .82rem; font-weight: 700; }
+.asr-result-sub { margin: 0 0 .4rem; text-align: center; color: #C9A24A; font-size: .82rem; font-weight: 700; }
 .asr-note { margin: 0; color: #a6a7ac; font-size: .74rem; text-align: center; }
 .asr-field { display: grid; gap: .3rem; font-size: .76rem; color: #c8c4b8; font-weight: 600; }
 .asr-field input, .asr-field textarea { min-height: 2.6rem; padding: .5rem .7rem; border-radius: .6rem; border: 1px solid #3a3424; background: #08080a; color: #f5f3ec; font: inherit; }
@@ -32,7 +32,7 @@
 .asr-actions { display: flex; gap: .5rem; justify-content: flex-end; margin-top: .3rem; }
 .asr-cancel, .asr-save { min-height: 2.5rem; padding: 0 1rem; border-radius: .6rem; font-weight: 800; font-size: .8rem; cursor: pointer; }
 .asr-cancel { border: 1px solid rgba(255, 255, 255, .15); background: transparent; color: #c8c4b8; }
-.asr-save { border: 0; color: #0b0b0c; background: linear-gradient(180deg, #ffe9a3, #d4af37); }
+.asr-save { border: 0; color: #0b0b0c; background: linear-gradient(180deg, #C9A24A, #C9A24A); }
 .asr-save:disabled { opacity: .45; cursor: not-allowed; }
 
 /* R45b finish toggle (preview only) */
@@ -40,8 +40,8 @@
 .asr-seg { display: inline-flex; padding: 3px; gap: 3px; border-radius: 999px; background: rgba(255,255,255,.04); border: 1px solid rgba(255,255,255,.1); justify-self: center; }
 .asr-seg button { border: 0; cursor: pointer; padding: .35rem .8rem; border-radius: 999px; font-size: .68rem; font-weight: 800; letter-spacing: .06em; color: rgba(255,255,255,.65); background: transparent; }
 .asr-seg button.is-plus.is-on { color: #10141b; background: linear-gradient(90deg, #fff, #cfd9e8 55%, #93a3bb); }
-.asr-seg button.is-premium.is-on { color: #1a1205; background: linear-gradient(90deg, #fff1b8, #f5c842 45%, #e08a1e); }
-.asr-seg button:focus-visible { outline: 2px solid #ffd76a; outline-offset: 2px; }
+.asr-seg button.is-premium.is-on { color: #1a1205; background: linear-gradient(90deg, #D9B45E, #C9A24A 45%, #e08a1e); }
+.asr-seg button:focus-visible { outline: 2px solid #C9A24A; outline-offset: 2px; }
 .asr-hint { margin: .15rem 0 .5rem; font-size: .7rem; color: rgba(255,255,255,.5); }
 .asr-side > .asr-seg { margin: .1rem auto .4rem; }
 .asr-seg button { white-space: nowrap; }

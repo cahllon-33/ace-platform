@@ -1,12 +1,12 @@
-.ace-livestats { display: flex; flex-wrap: wrap; align-items: center; gap: .75rem 1.75rem; margin: 1.25rem auto; max-width: 1180px; width: calc(100% - 2rem); padding: .9rem 1.25rem; border-radius: 14px; border: 1px solid rgba(212,175,55,.35); background: linear-gradient(135deg, #050505 0%, #0d0b06 55%, #17120a 100%); box-shadow: inset 0 1px 0 rgba(243,215,122,.12), 0 10px 30px rgba(0,0,0,.45); color: #f5f1e6; }
-.ace-livestats-badge { display: inline-flex; align-items: center; gap: .45rem; font-size: .72rem; font-weight: 800; letter-spacing: .18em; color: #f3d77a; }
+.ace-livestats { display: flex; flex-wrap: wrap; align-items: center; gap: .75rem 1.75rem; margin: 1.25rem auto; max-width: 1180px; width: calc(100% - 2rem); padding: .9rem 1.25rem; border-radius: 14px; border: 1px solid rgba(201, 162, 74,.35); background: linear-gradient(135deg, #050505 0%, #0d0b06 55%, #17120a 100%); box-shadow: inset 0 1px 0 rgba(201,162,74,.12), 0 10px 30px rgba(0,0,0,.45); color: #f5f1e6; }
+.ace-livestats-badge { display: inline-flex; align-items: center; gap: .45rem; font-size: .72rem; font-weight: 800; letter-spacing: .18em; color: #C9A24A; }
 .ace-livestats-badge i { width: .55rem; height: .55rem; border-radius: 50%; background: #3ddc84; box-shadow: 0 0 0 0 rgba(61,220,132,.6); animation: ace-live-pulse 2s infinite; }
 .ace-livestats-badge.is-off i { background: #777; animation: none; box-shadow: none; }
 @keyframes ace-live-pulse { 0% { box-shadow: 0 0 0 0 rgba(61,220,132,.55); } 70% { box-shadow: 0 0 0 .5rem rgba(61,220,132,0); } 100% { box-shadow: 0 0 0 0 rgba(61,220,132,0); } }
 .ace-livestats-nums { display: flex; gap: 2rem; margin: 0; }
 .ace-livestats-nums dt { font-size: .72rem; text-transform: uppercase; letter-spacing: .08em; opacity: .7; }
-.ace-livestats-nums dd { margin: 0; font-size: clamp(1.4rem, 3vw, 2rem); font-weight: 800; font-variant-numeric: tabular-nums; background: linear-gradient(180deg, #fff3c4, #d4af37); -webkit-background-clip: text; background-clip: text; color: transparent; }
-.ace-livestats-early strong { color: #f3d77a; font-size: 1.05rem; }
+.ace-livestats-nums dd { margin: 0; font-size: clamp(1.4rem, 3vw, 2rem); font-weight: 800; font-variant-numeric: tabular-nums; background: linear-gradient(180deg, #D9B45E, #C9A24A); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.ace-livestats-early strong { color: #C9A24A; font-size: 1.05rem; }
 .ace-livestats-early p, .ace-livestats-msg { margin: .15rem 0 0; opacity: .85; font-size: .9rem; }
 .ace-livestats-note { margin-inline-start: auto; font-size: .7rem; opacity: .55; }
 @media (prefers-reduced-motion: reduce) { .ace-livestats-badge i { animation: none; } }

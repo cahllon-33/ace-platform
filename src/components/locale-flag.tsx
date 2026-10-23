@@ -17,7 +17,7 @@ function FlagFrame({ children }: { children: ReactNode }) {
         height="15.3"
         rx="1"
         fill="none"
-        stroke="#d4af37"
+        stroke="#C9A24A"
         strokeWidth="0.75"
       />
     </svg>
@@ -72,7 +72,7 @@ export function LocaleFlag({ code }: { code: string }) {
       return (
         <FlagFrame>
           <rect width="24" height="4" fill="#aa151b" />
-          <rect y="4" width="24" height="8" fill="#f1bf00" />
+          <rect y="4" width="24" height="8" fill="#B8892E" />
           <rect y="12" width="24" height="4" fill="#aa151b" />
         </FlagFrame>
       );
@@ -80,7 +80,7 @@ export function LocaleFlag({ code }: { code: string }) {
       return (
         <FlagFrame>
           <rect width="24" height="16" fill="#009b3a" />
-          <polygon points="12,2.2 21.4,8 12,13.8 2.6,8" fill="#fedf00" />
+          <polygon points="12,2.2 21.4,8 12,13.8 2.6,8" fill="#C9A24A" />
           <circle cx="12" cy="8" r="2.6" fill="#002776" />
         </FlagFrame>
       );
@@ -98,7 +98,7 @@ export function LocaleFlag({ code }: { code: string }) {
           <rect width="24" height="16" fill="#de2910" />
           <polygon
             points="4.6,3.2 5.4,5.6 8,5.6 5.9,7.1 6.7,9.5 4.6,8 2.5,9.5 3.3,7.1 1.2,5.6 3.8,5.6"
-            fill="#ffde00"
+            fill="#C9A24A"
           />
         </FlagFrame>
       );
@@ -126,7 +126,7 @@ export function LocaleFlag({ code }: { code: string }) {
           <rect y="10.8" width="24" height="5.2" fill="#000" />
           <polygon
             points="12,6.4 12.6,8.1 14.4,8.1 12.9,9.1 13.5,10.8 12,9.8 10.5,10.8 11.1,9.1 9.6,8.1 11.4,8.1"
-            fill="#c09300"
+            fill="#8A6A2B"
           />
         </FlagFrame>
       );
@@ -134,8 +134,8 @@ export function LocaleFlag({ code }: { code: string }) {
       return (
         <FlagFrame>
           <rect width="24" height="16" fill="#006aa7" />
-          <rect x="7" width="3.2" height="16" fill="#fecc00" />
-          <rect y="6.4" width="24" height="3.2" fill="#fecc00" />
+          <rect x="7" width="3.2" height="16" fill="#C9A24A" />
+          <rect y="6.4" width="24" height="3.2" fill="#C9A24A" />
         </FlagFrame>
       );
     case "de":
@@ -143,14 +143,14 @@ export function LocaleFlag({ code }: { code: string }) {
         <FlagFrame>
           <rect width="24" height="5.4" fill="#000" />
           <rect y="5.4" width="24" height="5.4" fill="#dd0000" />
-          <rect y="10.8" width="24" height="5.2" fill="#ffce00" />
+          <rect y="10.8" width="24" height="5.2" fill="#C9A24A" />
         </FlagFrame>
       );
     case "ua":
       return (
         <FlagFrame>
           <rect width="24" height="8" fill="#005bbb" />
-          <rect y="8" width="24" height="8" fill="#ffd500" />
+          <rect y="8" width="24" height="8" fill="#C9A24A" />
         </FlagFrame>
       );
     case "th":
@@ -167,7 +167,7 @@ export function LocaleFlag({ code }: { code: string }) {
       return (
         <FlagFrame>
           <rect width="8" height="16" fill="#002b7f" />
-          <rect x="8" width="8" height="16" fill="#fcd116" />
+          <rect x="8" width="8" height="16" fill="#C9A24A" />
           <rect x="16" width="8" height="16" fill="#ce1126" />
         </FlagFrame>
       );
@@ -203,7 +203,7 @@ export function LocaleFlag({ code }: { code: string }) {
         <FlagFrame>
           <rect width="9" height="16" fill="#006600" />
           <rect x="9" width="15" height="16" fill="#ff0000" />
-          <circle cx="9" cy="8" r="2.3" fill="#ffcc00" />
+          <circle cx="9" cy="8" r="2.3" fill="#C9A24A" />
         </FlagFrame>
       );
     case "cz":
@@ -250,11 +250,11 @@ export function LocaleFlag({ code }: { code: string }) {
       return (
         <FlagFrame>
           <rect width="24" height="16" fill="#d20000" />
-          <circle cx="12" cy="8" r="2.1" fill="#f8e000" />
-          <rect x="11.35" y="1.2" width="1.3" height="4.2" fill="#f8e000" />
-          <rect x="11.35" y="10.6" width="1.3" height="4.2" fill="#f8e000" />
-          <rect x="1.4" y="7.35" width="4.4" height="1.3" fill="#f8e000" />
-          <rect x="18.2" y="7.35" width="4.4" height="1.3" fill="#f8e000" />
+          <circle cx="12" cy="8" r="2.1" fill="#C9A24A" />
+          <rect x="11.35" y="1.2" width="1.3" height="4.2" fill="#C9A24A" />
+          <rect x="11.35" y="10.6" width="1.3" height="4.2" fill="#C9A24A" />
+          <rect x="1.4" y="7.35" width="4.4" height="1.3" fill="#C9A24A" />
+          <rect x="18.2" y="7.35" width="4.4" height="1.3" fill="#C9A24A" />
         </FlagFrame>
       );
     default:

@@ -20,7 +20,7 @@ export function ServerHubTicker() {
 
   return (
     <section className="ace-server-hub" aria-label={t("serverHub")}>
-      <p className="text-xs font-extrabold tracking-[0.16em] text-[#FFD76A]">{copy.badge}</p>
+      <p className="text-xs font-extrabold tracking-[0.16em] text-[#C9A24A]">{copy.badge}</p>
       <h2 className="ace-widget-title">{t("serverHub")}</h2>
       <ul className="ace-server-nodes mt-4 grid list-none gap-3 p-0 md:grid-cols-3">
         {NODES.map((node) => {
@@ -30,7 +30,7 @@ export function ServerHubTicker() {
               <button
                 type="button"
                 className={`ace-server-tile flex min-h-16 w-full items-center gap-3 border bg-[#020203] px-3 py-3 text-start ${
-                  selected === node.id ? "border-[#FFD76A] shadow-[0_0_18px_rgba(212, 175, 55,0.35)]" : "border-[#FFD76A]/45"
+                  selected === node.id ? "border-[#C9A24A] shadow-[0_0_18px_rgba(201,162,74,0.35)]" : "border-[#C9A24A]/45"
                 }`}
                 aria-pressed={selected === node.id}
                 aria-label={interpolate(copy.tileAria, { name })}
@@ -39,7 +39,7 @@ export function ServerHubTicker() {
                 <span className="ace-node-mark" aria-hidden="true" />
                 <span>
                   <span className="block text-sm font-semibold text-[#F5F3EC]">{name}</span>
-                  <span className="mt-1 block text-[0.72rem] leading-5 text-[#fff6c2]">
+                  <span className="mt-1 block text-[0.72rem] leading-5 text-[#D9B45E]">
                     {ui.soon.label}
                   </span>
                 </span>

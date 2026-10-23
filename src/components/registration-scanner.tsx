@@ -18,7 +18,7 @@ export function RegistrationScanner() {
           className="ace-radar-sweep absolute inset-0 origin-center"
           style={{
             background:
-              "conic-gradient(from 0deg, transparent 0deg, rgba(255,214,107,0.35) 50deg, transparent 80deg)",
+              "conic-gradient(from 0deg, transparent 0deg, rgba(201,162,74,0.35) 50deg, transparent 80deg)",
           }}
         />
         <div className="relative z-10 flex h-full flex-col items-center justify-center px-2 text-center">

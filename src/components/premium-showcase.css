@@ -1,5 +1,5 @@
 /* A.C.E Premium showcase (R32). Width from --pshow-w, card ratio follows the art (92:132). */
-.ace-pshow { --gold: #f5c842; margin: 0; display: inline-grid; justify-items: center; gap: 0.7rem; flex: none; max-width: 100%; }
+.ace-pshow { --gold: #C9A24A; margin: 0; display: inline-grid; justify-items: center; gap: 0.7rem; flex: none; max-width: 100%; }
 .ace-pshow-stage { position: relative; width: calc(var(--pshow-w) * 1.5); max-width: 100%; display: grid; justify-items: center; padding-top: calc(var(--pshow-w) * 0.08); perspective: 900px; }
 .ace-pshow.is-sm .ace-pshow-stage { width: var(--pshow-w); padding: 0; }
 
@@ -9,7 +9,7 @@
   width: 120%; height: 112%; pointer-events: none;
   background:
     radial-gradient(48% 40% at 50% 62%, color-mix(in srgb, var(--pshow-tone) 26%, transparent), transparent 70%),
-    linear-gradient(180deg, transparent 0%, rgba(255, 210, 90, 0.09) 45%, rgba(255, 210, 90, 0.2) 100%);
+    linear-gradient(180deg, transparent 0%, rgba(201,162,74, 0.09) 45%, rgba(201,162,74, 0.2) 100%);
   clip-path: polygon(36% 0, 64% 0, 100% 100%, 0 100%);
   filter: blur(4px);
 }
@@ -24,14 +24,14 @@
 }
 .ace-pshow-bezel {
   position: absolute; inset: 0; border-radius: calc(var(--pshow-w) * 0.075); padding: max(3px, calc(var(--pshow-w) * 0.028));
-  background: linear-gradient(145deg, #fff4c2 0%, #e2b23c 22%, #7a5208 48%, #f5c842 72%, #8a5f0c 100%);
-  box-shadow: 0 0 0 1px rgba(60, 40, 4, 0.9), 0 0 calc(var(--pshow-w) * 0.16) rgba(245, 200, 66, 0.38);
+  background: linear-gradient(145deg, #D9B45E 0%, #C9A24A 22%, #7a5208 48%, #C9A24A 72%, #8a5f0c 100%);
+  box-shadow: 0 0 0 1px rgba(60, 40, 4, 0.9), 0 0 calc(var(--pshow-w) * 0.16) rgba(201, 162, 74, 0.38);
 }
 .ace-pshow-glass {
   position: relative; width: 100%; height: 100%; overflow: hidden; border-radius: calc(var(--pshow-w) * 0.055);
   background:
     radial-gradient(80% 60% at 50% 45%, color-mix(in srgb, var(--pshow-tone) 18%, #0d0b08), #050505 85%);
-  box-shadow: inset 0 0 0 1px rgba(255, 236, 170, 0.22), inset 0 0 calc(var(--pshow-w) * 0.12) rgba(0, 0, 0, 0.8);
+  box-shadow: inset 0 0 0 1px rgba(201,162,74, 0.22), inset 0 0 calc(var(--pshow-w) * 0.12) rgba(0, 0, 0, 0.8);
 }
 /* whole badge visible: contain + padding inside the glass */
 .ace-pshow-glass .ace-pshow-art { object-fit: contain; padding: 7%; image-rendering: auto; }
@@ -53,11 +53,11 @@
   margin-top: calc(var(--pshow-w) * -0.05); border-radius: 50%;
   background: radial-gradient(ellipse at 50% 35%, #3a2a0a, #120d05 70%);
   border: max(1.5px, calc(var(--pshow-w) * 0.012)) solid var(--gold);
-  box-shadow: 0 0 calc(var(--pshow-w) * 0.14) rgba(245, 200, 66, 0.65), inset 0 0 calc(var(--pshow-w) * 0.08) rgba(245, 200, 66, 0.35);
+  box-shadow: 0 0 calc(var(--pshow-w) * 0.14) rgba(201, 162, 74, 0.65), inset 0 0 calc(var(--pshow-w) * 0.08) rgba(201, 162, 74, 0.35);
 }
 .ace-pshow-pedestal::after {
   content: ""; position: absolute; left: 4%; right: 4%; top: 55%; height: 70%; border-radius: 0 0 50% 50% / 0 0 60% 60%; z-index: -1;
-  background: linear-gradient(90deg, #4a3608, #e9bf45 30%, #fff1b8 46%, #a8760f 72%, #3a2a06);
+  background: linear-gradient(90deg, #4a3608, #C9A24A 30%, #D9B45E 46%, #8A6A2B 72%, #3a2a06);
 }
 
 /* floor reflection (real, rendered in flow below the pedestal) */
@@ -73,11 +73,11 @@
 
 /* caption */
 .ace-pshow-caption { display: grid; justify-items: center; gap: 0.15rem; text-align: center; position: relative; z-index: 2; }
-.ace-pshow-tier { font-size: 1.2rem; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; background: linear-gradient(180deg, #fff7d1, #f5c842 55%, #a8760f); -webkit-background-clip: text; background-clip: text; color: transparent; }
-.ace-pshow-tiernum { font-size: 0.66rem; font-weight: 700; letter-spacing: 0.22em; text-transform: uppercase; color: rgba(255, 227, 138, 0.78); }
-.ace-pshow-rp { margin-top: 0.15rem; direction: ltr; unicode-bidi: isolate; font-size: 1.5rem; font-weight: 800; font-variant-numeric: tabular-nums; background: linear-gradient(180deg, #fff3c4, #d4af37); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.ace-pshow-tier { font-size: 1.2rem; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; background: linear-gradient(180deg, #D9B45E, #C9A24A 55%, #8A6A2B); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.ace-pshow-tiernum { font-size: 0.66rem; font-weight: 700; letter-spacing: 0.22em; text-transform: uppercase; color: rgba(201,162,74, 0.78); }
+.ace-pshow-rp { margin-top: 0.15rem; direction: ltr; unicode-bidi: isolate; font-size: 1.5rem; font-weight: 800; font-variant-numeric: tabular-nums; background: linear-gradient(180deg, #D9B45E, #C9A24A); -webkit-background-clip: text; background-clip: text; color: transparent; }
 .ace-pshow-rp small { font-size: 0.55em; letter-spacing: 0.1em; }
-.ace-pshow-chip { margin-top: 0.35rem; padding: 0.22rem 0.7rem; border-radius: 999px; font-size: 0.64rem; font-weight: 800; letter-spacing: 0.18em; text-transform: uppercase; color: #121008; background: linear-gradient(180deg, #ffe37a, #d4a017); box-shadow: 0 0 14px rgba(245, 200, 66, 0.35); }
+.ace-pshow-chip { margin-top: 0.35rem; padding: 0.22rem 0.7rem; border-radius: 999px; font-size: 0.64rem; font-weight: 800; letter-spacing: 0.18em; text-transform: uppercase; color: #121008; background: linear-gradient(180deg, #C9A24A, #B8892E); box-shadow: 0 0 14px rgba(201, 162, 74, 0.35); }
 .ace-pshow.is-md .ace-pshow-tier { font-size: 1rem; }
 .ace-pshow.is-md .ace-pshow-rp { font-size: 1.2rem; }
 
@@ -128,5 +128,5 @@
 }
 .ace-pcodex-pick { display: contents; cursor: pointer; font: inherit; color: inherit; text-align: start; }
 .ace-pcodex-card:has(.ace-pcodex-pick) { cursor: pointer; transition: border-color 200ms ease, box-shadow 200ms ease; }
-.ace-pcodex-card:has(.ace-pcodex-pick:focus-visible) { outline: 2px solid #FFD76A; outline-offset: 2px; }
-.ace-pcodex-card:has(.ace-pcodex-pick.is-active) { border-color: rgba(212, 175, 55,0.75); box-shadow: 0 0 0 1px rgba(212, 175, 55,0.35), 0 0 18px rgba(212, 175, 55,0.18); }
+.ace-pcodex-card:has(.ace-pcodex-pick:focus-visible) { outline: 2px solid #C9A24A; outline-offset: 2px; }
+.ace-pcodex-card:has(.ace-pcodex-pick.is-active) { border-color: rgba(201, 162, 74,0.75); box-shadow: 0 0 0 1px rgba(201, 162, 74,0.35), 0 0 18px rgba(201, 162, 74,0.18); }

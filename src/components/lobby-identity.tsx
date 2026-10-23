@@ -12,7 +12,7 @@ export function LobbyMembership() {
     <section className="mx-auto max-w-[90rem] px-4 py-4 sm:px-6" aria-labelledby="membership">
       <h2
         id="membership"
-        className="text-center text-xs font-semibold tracking-[0.28em] text-[#FFD76A]"
+        className="text-center text-xs font-semibold tracking-[0.28em] text-[#C9A24A]"
       >
         {t("membership")}
       </h2>
@@ -24,7 +24,7 @@ export function LobbyMembership() {
       <div className="mt-5 flex justify-center">
         <Link
           href="/pricing"
-          className="inline-flex min-h-11 items-center justify-center rounded-full border border-[#D4AF37]/45 bg-[#0B0B0C] px-6 text-xs font-semibold uppercase tracking-[0.16em] text-[#FFD76A] hover:border-[#FFD76A]"
+          className="inline-flex min-h-11 items-center justify-center rounded-full border border-[#C9A24A]/45 bg-[#0B0B0C] px-6 text-xs font-semibold uppercase tracking-[0.16em] text-[#C9A24A] hover:border-[#C9A24A]"
         >
           {copy.compareLink}
         </Link>

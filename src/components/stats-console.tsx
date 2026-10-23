@@ -18,13 +18,13 @@ function RingGauge({ title, soon, note }: { title: string; soon: string; note: s
         <svg viewBox="0 0 120 120" width={120} height={120}>
           <defs>
             <linearGradient id="ace-s3d-ring-gold" x1="0" y1="0" x2="1" y2="1">
-              <stop offset="0%" stopColor="#FFE58A" />
-              <stop offset="55%" stopColor="#D4AF37" />
+              <stop offset="0%" stopColor="#C9A24A" />
+              <stop offset="55%" stopColor="#C9A24A" />
               <stop offset="100%" stopColor="#7A5C12" />
             </linearGradient>
           </defs>
           <circle cx="60" cy="60" r="48" fill="none" stroke="#1B1B1F" strokeWidth="14" />
-          <circle cx="60" cy="60" r="48" fill="none" stroke="rgba(212, 175, 55,0.08)" strokeWidth="2" />
+          <circle cx="60" cy="60" r="48" fill="none" stroke="rgba(201,162,74,0.08)" strokeWidth="2" />
           <circle
             className="ace-s3d-ring-arc"
             cx="60"
@@ -86,7 +86,7 @@ export function StatsConsole({ text, data }: { text: Text; data: StatsConsoleDat
             ) : (
               <svg viewBox="0 0 720 180" className="ace-s3d-sample-chart" role="img" aria-label={`${copy.chartAria} · ${copy.sample}`}>
                 {[30, 75, 120, 165].map((y) => (
-                  <line key={y} x1="0" x2="720" y1={y} y2={y} stroke="rgba(212,175,55,0.14)" />
+                  <line key={y} x1="0" x2="720" y1={y} y2={y} stroke="rgba(201,162,74,0.14)" />
                 ))}
                 <path d={SAMPLE_PATH} fill="none" stroke="#6D6A60" strokeWidth="3" strokeDasharray="8 8" />
               </svg>

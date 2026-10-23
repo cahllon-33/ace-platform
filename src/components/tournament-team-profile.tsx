@@ -23,7 +23,7 @@ function PlayerSheet({ player }: { player: LayoutPlayer }) {
       <span className="ace-roster-kd">{interpolate(copy.record, { wins: player.wins, losses: player.losses })}</span>
       <span className="ace-roster-kd">{copy.kdNotStored}</span>
       <svg className="ace-roster-trend" viewBox="0 0 80 28" aria-hidden="true">
-        <rect x="8" y={28 - Math.min(24, player.wins)} width="18" height={Math.min(24, player.wins)} fill="#FFD76A" />
+        <rect x="8" y={28 - Math.min(24, player.wins)} width="18" height={Math.min(24, player.wins)} fill="#C9A24A" />
         <rect x="36" y={28 - Math.min(24, player.losses)} width="18" height={Math.min(24, player.losses)} fill="#8f6418" />
       </svg>
       <dl className="ace-roster-gear">

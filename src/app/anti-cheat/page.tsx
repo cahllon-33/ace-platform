@@ -38,7 +38,7 @@ export default async function AntiCheatPage() {
         <svg className="ace-shield-mark" viewBox="0 0 24 24" aria-hidden="true">
           <path d={ICONS.identity} />
         </svg>
-        <p className="text-xs tracking-[0.28em] text-[#FFD76A] uppercase">{copy.kicker}</p>
+        <p className="text-xs tracking-[0.28em] text-[#C9A24A] uppercase">{copy.kicker}</p>
         <h1 className="pg41-h1 mt-2">{copy.title}</h1>
         <p className="mt-4 max-w-3xl text-base leading-7 text-[#C9CAD0]">{copy.lede}</p>
         <div className="mt-6 flex flex-wrap items-center gap-3">
@@ -100,7 +100,7 @@ export default async function AntiCheatPage() {
             ))}
           </dl>
           <p className="mt-4 text-sm">
-            <Link href="/rules#s14" className="text-[#FFD76A] underline underline-offset-4">
+            <Link href="/rules#s14" className="text-[#C9A24A] underline underline-offset-4">
               {ui.nav.rules} · 14
             </Link>
           </p>

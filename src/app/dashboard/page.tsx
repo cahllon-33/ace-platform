@@ -191,7 +191,7 @@ export default async function DashboardPage({ searchParams }: { searchParams: Pr
           {hasEliteSeal(user.subscriptionTier) ? (
             <div className="mb-4 flex items-center gap-3">
               <EliteSeal className="h-16 w-auto" />
-              <span className="text-sm font-bold tracking-[0.22em] text-[#FFD76A]">{copy.eliteBadge}</span>
+              <span className="text-sm font-bold tracking-[0.22em] text-[#C9A24A]">{copy.eliteBadge}</span>
             </div>
           ) : null}
           <h2 className="sr-only">{shownName}</h2>
@@ -257,15 +257,15 @@ export default async function DashboardPage({ searchParams }: { searchParams: Pr
               <dd className="break-all font-mono text-xs text-ace-text">{user.id}</dd>
             </div>
           </dl>
-          <div className="mt-6 rounded-2xl border border-[#FFD76A]/25 bg-[#08090D] p-4">
-            <h3 className="text-sm font-semibold tracking-[0.12em] text-[#FFD76A]">
+          <div className="mt-6 rounded-2xl border border-[#C9A24A]/25 bg-[#08090D] p-4">
+            <h3 className="text-sm font-semibold tracking-[0.12em] text-[#C9A24A]">
               {copy.settings.title}
             </h3>
             <p className="mt-2 text-xs leading-6 text-ace-muted">{text.consent.subscriptionDisclosure}</p>
             <p className="mt-3 text-xs leading-6 text-ace-muted">{copy.settings.billingNotLive}</p>
             <div className="mt-3">
               {user.paddleSubscriptionId ? (
-                <a href="/api/paddle/portal" className="inline-flex rounded-full border border-[#FFD76A]/40 px-4 py-2 text-xs font-semibold tracking-[0.12em] text-[#FFD76A] hover:bg-[#FFD76A]/10">
+                <a href="/api/paddle/portal" className="inline-flex rounded-full border border-[#C9A24A]/40 px-4 py-2 text-xs font-semibold tracking-[0.12em] text-[#C9A24A] hover:bg-[#C9A24A]/10">
                   {copy.settings.cancelButton}
                 </a>
               ) : (
@@ -293,7 +293,7 @@ export default async function DashboardPage({ searchParams }: { searchParams: Pr
             />
           ) : null}
           <Panel className="ace-dash-links p-5">
-            <h2 className="text-sm font-semibold tracking-[0.12em] text-[#FFD76A]">{text.account.statsConsole.dashTitle}</h2>
+            <h2 className="text-sm font-semibold tracking-[0.12em] text-[#C9A24A]">{text.account.statsConsole.dashTitle}</h2>
             <div className="mt-3 flex flex-wrap gap-2">
               <Link className="ace-codex-entry" href="/stats">
                 {text.account.statsConsole.dashStats}

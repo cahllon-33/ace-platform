@@ -18,7 +18,7 @@ export type PremiumShowcaseLabels = {
 /** Fixed tier tones (same palette as .ace-rank-tone-N). */
 const TONE: Record<number, string> = {
   1: "#9aa3ad", 2: "#c08a4a", 3: "#d4a094", 4: "#d7e4f2", 5: "#c4a15a",
-  6: "#ffd66b", 7: "#7ef0ff", 8: "#4d8dff", 9: "#c084fc", 10: "#ffd66b",
+  6: "#C9A24A", 7: "#7ef0ff", 8: "#4d8dff", 9: "#c084fc", 10: "#C9A24A",
 };
 
 const SIZES = { lg: { w: 196, sizes: "196px" }, md: { w: 148, sizes: "148px" }, sm: { w: 64, sizes: "64px" } } as const;

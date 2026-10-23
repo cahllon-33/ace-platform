@@ -965,8 +965,8 @@ function GrowthSparkline({ days, label, empty }: { days: number[]; label: string
     <figure className="acx-spark">
       <figcaption>{label}</figcaption>
       <svg viewBox={`0 0 ${w} ${h}`} role="img" aria-label={`${label}: ${days.join(", ")}`} preserveAspectRatio="none">
-        <polyline points={`0,${h} ${points} ${w},${h}`} fill="rgba(212,175,55,0.14)" stroke="none" />
-        <polyline points={points} fill="none" stroke="#d4af37" strokeWidth="2" strokeLinejoin="round" />
+        <polyline points={`0,${h} ${points} ${w},${h}`} fill="rgba(201,162,74,0.14)" stroke="none" />
+        <polyline points={points} fill="none" stroke="#C9A24A" strokeWidth="2" strokeLinejoin="round" />
       </svg>
       <div className="acx-spark-scale"><span>0</span><span>{max}</span></div>
     </figure>

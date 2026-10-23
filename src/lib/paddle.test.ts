@@ -50,7 +50,7 @@ describe("one-time orders + cosmetics", () => {
     expect(orderAmountMatches([{ price: { unit_price: { amount: "499", currency_code: "EUR" } }, quantity: 1 }], 499)).toBe(false);
   });
   it("validates cosmetic values", () => {
-    expect(isHexColor("#ffd76a")).toBe(true);
+    expect(isHexColor("#C9A24A")).toBe(true);
     expect(isHexColor("red;x")).toBe(false);
     expect(cosmeticStyle("NAME_COLOR", "url(x)")).toEqual({});
     expect(cosmeticStyle("NAME_COLOR", "#112233")).toEqual({ color: "#112233" });

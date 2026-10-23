@@ -36,7 +36,7 @@
 
 .ace-wing-label {
   margin: 0 0 0.28rem;
-  color: #d4af37;
+  color: #C9A24A;
   font-size: 0.58rem;
   font-weight: 800;
   letter-spacing: 0.14em;
@@ -67,13 +67,13 @@
   min-width: 0;
   margin: 0;
   padding: 0.06rem 0.22rem;
-  border: 1px solid rgba(212, 175, 55, 0.42);
+  border: 1px solid rgba(201, 162, 74, 0.42);
   background: #0b0b0c;
   color: #f5f3ec;
   font: inherit;
   text-align: start;
   clip-path: polygon(6px 0, calc(100% - 6px) 0, 100% 50%, calc(100% - 6px) 100%, 6px 100%, 0 50%);
-  filter: drop-shadow(0 0 3px rgba(212, 175, 55, 0.28));
+  filter: drop-shadow(0 0 3px rgba(201, 162, 74, 0.28));
 }
 
 button.ace-wing-slot {
@@ -82,13 +82,13 @@ button.ace-wing-slot {
 
 button.ace-wing-slot:hover,
 button.ace-wing-slot:focus-visible {
-  border-color: #ffd76a;
+  border-color: #C9A24A;
   outline: none;
-  filter: drop-shadow(0 0 6px rgba(212, 175, 55, 0.75));
+  filter: drop-shadow(0 0 6px rgba(201, 162, 74, 0.75));
 }
 
 .ace-wing-slot.is-bye {
-  color: #fff6c2;
+  color: #D9B45E;
   font-size: 0.46rem;
   font-weight: 800;
   letter-spacing: 0.01em;
@@ -102,16 +102,16 @@ button.ace-wing-slot:focus-visible {
   width: 0.85rem;
   height: 0.85rem;
   place-items: center;
-  border: 1px solid #ffd76a;
+  border: 1px solid #C9A24A;
   border-radius: 999px;
-  color: #ffd76a;
+  color: #C9A24A;
   font-size: 0.42rem;
   font-weight: 800;
 }
 
 .ace-wing-name {
   overflow: hidden;
-  color: #fff8d6;
+  color: #D9B45E;
   font-size: 0.6rem;
   font-weight: 800;
   text-overflow: ellipsis;
@@ -119,7 +119,7 @@ button.ace-wing-slot:focus-visible {
 }
 
 .ace-wing-score {
-  color: #ffd76a;
+  color: #C9A24A;
   font-size: 0.58rem;
   font-variant-numeric: tabular-nums;
   font-weight: 800;
@@ -138,7 +138,7 @@ button.ace-wing-slot:focus-visible {
   width: 100%;
   height: 4.5rem;
   border-radius: 999px;
-  background: radial-gradient(ellipse, rgba(212, 175, 55, 0.55), transparent 70%);
+  background: radial-gradient(ellipse, rgba(201, 162, 74, 0.55), transparent 70%);
   animation: ace-apex-pulse 2.8s ease-in-out infinite;
   pointer-events: none;
 }
@@ -147,12 +147,12 @@ button.ace-wing-slot:focus-visible {
   width: 3.2rem;
   height: 2.4rem;
   margin-top: -3.2rem;
-  filter: drop-shadow(0 0 10px #ffd76a);
+  filter: drop-shadow(0 0 10px #C9A24A);
 }
 
 .ace-champion-title {
   margin: 0;
-  color: #ffd76a;
+  color: #C9A24A;
   font-size: 0.62rem;
   font-weight: 800;
   letter-spacing: 0.16em;
@@ -167,8 +167,8 @@ button.ace-wing-slot:focus-visible {
   width: 100%;
   height: 0.45rem;
   border-radius: 0.15rem;
-  background: linear-gradient(90deg, #6b4e12, #ffd76a 40%, #fff6c2 50%, #ffd76a 60%, #6b4e12);
-  box-shadow: 0 0 16px rgba(212, 175, 55, 0.45);
+  background: linear-gradient(90deg, #6b4e12, #C9A24A 40%, #D9B45E 50%, #C9A24A 60%, #6b4e12);
+  box-shadow: 0 0 16px rgba(201, 162, 74, 0.45);
 }
 
 .ace-champion-plinth-mid {
@@ -211,22 +211,22 @@ button.ace-wing-slot:focus-visible {
 
 .ace-dual .ace-runway-pulse {
   stroke-width: 3;
-  filter: drop-shadow(0 0 6px #fff6c2) drop-shadow(0 0 14px #ffd76a);
+  filter: drop-shadow(0 0 6px #D9B45E) drop-shadow(0 0 14px #C9A24A);
 }
 
 .ace-bracket-notice {
   margin-top: 0.85rem;
-  border: 1px solid rgba(212, 175, 55, 0.55);
+  border: 1px solid rgba(201, 162, 74, 0.55);
   border-radius: 0.7rem;
-  background: rgba(212, 175, 55, 0.1);
-  color: #fff6c2;
+  background: rgba(201, 162, 74, 0.1);
+  color: #D9B45E;
   font-size: 0.82rem;
   font-weight: 700;
   padding: 0.65rem 0.8rem;
 }
 
 .ace-roster-kd {
-  color: #ffd76a;
+  color: #C9A24A;
   font-size: 0.68rem;
   font-weight: 800;
   letter-spacing: 0.06em;
@@ -241,7 +241,7 @@ button.ace-wing-slot:focus-visible {
 }
 
 .ace-roster-gear dt {
-  color: #d4af37;
+  color: #C9A24A;
   font-size: 0.58rem;
   font-weight: 800;
   letter-spacing: 0.08em;

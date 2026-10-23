@@ -52,8 +52,8 @@ function RankChip({ level, label }: { level: number; label: string }) {
         className="ace-squad-rank-icon h-6 w-6 max-h-6 max-w-6 shrink-0"
         aria-hidden="true"
       >
-        <rect x="2" y="2" width="20" height="20" rx="4" fill="#0B0B0C" stroke="#FFD76A" strokeWidth="1.4" />
-        <text x="12" y="16" textAnchor="middle" fill="#FFD76A" fontSize="10" fontWeight="800">
+        <rect x="2" y="2" width="20" height="20" rx="4" fill="#0B0B0C" stroke="#C9A24A" strokeWidth="1.4" />
+        <text x="12" y="16" textAnchor="middle" fill="#C9A24A" fontSize="10" fontWeight="800">
           {level}
         </text>
       </svg>

@@ -1,11 +1,11 @@
 .sl49{display:flex;flex-wrap:wrap;gap:10px;list-style:none;padding:0;margin:14px 0 0}
-.sl49 a{display:inline-flex;align-items:center;justify-content:center;gap:8px;width:40px;height:40px;border-radius:12px;border:1px solid rgba(255,215,106,.22);background:rgba(255,255,255,.03);color:#c9cad0;transition:color .15s,border-color .15s,background .15s}
-.sl49 a:hover,.sl49 a:focus-visible{color:#ffd76a;border-color:rgba(255,215,106,.6);background:rgba(255,215,106,.06)}
+.sl49 a{display:inline-flex;align-items:center;justify-content:center;gap:8px;width:40px;height:40px;border-radius:12px;border:1px solid rgba(201,162,74,.22);background:rgba(255,255,255,.03);color:#c9cad0;transition:color .15s,border-color .15s,background .15s}
+.sl49 a:hover,.sl49 a:focus-visible{color:#C9A24A;border-color:rgba(201,162,74,.6);background:rgba(201,162,74,.06)}
 .sl49 svg{width:20px;height:20px;flex:none}
 .sl49.is-community{gap:12px;justify-content:center}
 .sl49.is-community a{width:auto;height:48px;padding:0 16px;font-weight:700;font-size:.85rem;color:#e9e7df}
-.sl49-community{max-width:1100px;margin:3rem auto;padding:32px 20px;border:1px solid rgba(255,215,106,.18);border-radius:22px;background:radial-gradient(120% 140% at 50% 0%,rgba(255,215,106,.07),transparent 60%),#0f0f11;text-align:center}
-.sl49-kicker{font-size:.7rem;letter-spacing:.2em;color:#ffd76a}
+.sl49-community{max-width:1100px;margin:3rem auto;padding:32px 20px;border:1px solid rgba(201,162,74,.18);border-radius:22px;background:radial-gradient(120% 140% at 50% 0%,rgba(201,162,74,.07),transparent 60%),#0f0f11;text-align:center}
+.sl49-kicker{font-size:.7rem;letter-spacing:.2em;color:#C9A24A}
 .sl49-title{font-size:clamp(1.4rem,3vw,2rem);font-weight:800;color:#f5f3ec;margin-top:4px}
 .sl49-lede{color:#b9bac2;margin:8px auto 0;max-width:560px}
 @media (prefers-reduced-motion:reduce){.sl49 a{transition:none}}
