@@ -11,6 +11,7 @@ export function PlayDesk({ signedIn, initial }: { signedIn: boolean; initial: Qu
   const [board, setBoard] = useState<QueueBoardId>("calibration");
   return (
     <>
+      <div id="ace-queue" style={{ scrollMarginTop: "5rem" }} />
       <RankedQueue signedIn={signedIn} initial={initial} />
       <div style={{ marginTop: "2rem" }}>
         <QueueBoards selected={board} onSelect={setBoard} />

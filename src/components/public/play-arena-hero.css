@@ -68,3 +68,4 @@
 .pah-vs { background: linear-gradient(180deg, #D9B45E 0%, #C9A24A 45%, #B8892E 75%, #8A6A2B 100%); -webkit-background-clip: text; background-clip: text; filter: drop-shadow(0 0 18px rgba(201,162,74,.45)); }
 .pah-play { color: #17110a; background: linear-gradient(180deg, #D9B45E 0%, #C9A24A 38%, #B8892E 72%, #8A6A2B 100%); border: 1px solid rgba(212,168,74,.55); box-shadow: inset 0 1px 0 rgba(241,213,138,.75), inset 0 -2px 6px rgba(60,40,10,.45), 0 0 28px rgba(201,162,74,.45), 0 10px 30px -10px rgba(0,0,0,.8); text-shadow: 0 1px 0 rgba(241,213,138,.45); }
 .pah-seats i.on { background: linear-gradient(90deg, #8A6A2B, #C9A24A, #D9B45E, #B8892E); box-shadow: 0 0 10px rgba(201,162,74,.55); }
+button.pah-play { border: 0; cursor: pointer; font: inherit; }

@@ -153,7 +153,7 @@ export function RankedQueue({ signedIn, initial }: { signedIn: boolean; initial:
             ) : view?.inQueue ? (
               <button type="button" className="r48-btn" disabled={pending} onClick={() => act(leaveQueueAction)}>{r.leave}</button>
             ) : (
-              <button type="button" className="r48-btn r48-btn-gold" disabled={pending || (!!restriction && (restrictLeft == null || restrictLeft > 0))} onClick={() => act(joinQueueAction)}>{r.join}</button>
+              <button type="button" data-ace-join="" className="r48-btn r48-btn-gold" disabled={pending || (!!restriction && (restrictLeft == null || restrictLeft > 0))} onClick={() => act(joinQueueAction)}>{r.join}</button>
             )}
           </div>
         </div>

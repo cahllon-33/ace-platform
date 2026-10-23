@@ -38,7 +38,15 @@ function chime(kind: "entry" | "found") {
 const IconCT = () => (<svg viewBox="0 0 40 40" aria-hidden="true"><path d="M20 3 34 8v11c0 9-6 15-14 18C12 34 6 28 6 19V8z" fill="none" stroke="currentColor" strokeWidth="2.2" /><path d="m13 23 2-8 5 4 5-4 2 8z" fill="currentColor" /></svg>);
 const IconT = () => (<svg viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="16" fill="none" stroke="currentColor" strokeWidth="2.2" /><path d="m20 9 3.2 7 7.6.7-5.8 5 1.8 7.5L20 25.3 13.2 29.2 15 21.7l-5.8-5 7.6-.7z" fill="currentColor" /></svg>);
 
-export function PlayArenaHero({ signedIn, initial }: { signedIn: boolean; initial: ArenaData }) {
+/** On /play the PLAY button drives the real queue below it (same join action, restrictions and ready check as the queue panel). */
+function joinBelow() {
+  const btn = document.querySelector<HTMLButtonElement>("[data-ace-join]");
+  const panel = document.getElementById("ace-queue");
+  if (btn && !btn.disabled) btn.click();
+  (panel ?? btn)?.scrollIntoView({ behavior: "smooth", block: "start" });
+}
+
+export function PlayArenaHero({ signedIn, initial, direct = false }: { signedIn: boolean; initial: ArenaData; direct?: boolean }) {
   const [d, setD] = useState(initial);
   const root = useRef<HTMLElement>(null);
   const wasFound = useRef(initial.found);
@@ -98,18 +106,18 @@ export function PlayArenaHero({ signedIn, initial }: { signedIn: boolean; initia
       <div className="pah-main">
         <Image src="/images/ace-badge.png" alt="A.C.E" width={300} height={300} priority className="pah-badge" />
         <p className="pah-tag">Autonomous Anti-Cheat | Competitive Calibration | Elite Players</p>
-        <h1 className="pah-vs">5 <span>VS</span> 5</h1>
+        <h2 className="pah-vs">5 <span>VS</span> 5</h2>
         <p className="pah-mode"><i />RANKED MATCHMAKING<i /></p>
         <div className="pah-teams">
           <div className="pah-team ct"><IconCT /><div><b>COUNTER-TERRORISTS</b><small>5 PLAYERS</small></div></div>
           <div className="pah-team t"><div><b>TERRORISTS</b><small>5 PLAYERS</small></div><IconT /></div>
         </div>
         <div className="pah-cta">
-          {signedIn ? <Link href="/play" className="pah-play">PLAY</Link> : <a href="/api/auth/steam" className="pah-play">PLAY</a>}
+          {!signedIn ? <a href="/api/auth/steam" className="pah-play">PLAY</a> : direct ? <button type="button" className="pah-play" onClick={joinBelow}>PLAY</button> : <Link href="/play" className="pah-play">PLAY</Link>}
           <div className="pah-seats" aria-hidden="true">{Array.from({ length: d.needed || 10 }, (_, i) => <i key={i} className={i < lit ? "on" : ""} />)}</div>
           <p className="pah-count">{d.queued} / {d.needed || 10} players in queue</p>
           <div className="pah-links">
-            <Link href="/download" className="pah-btn">Download the app</Link>
+            <Link href="/download/latest" className="pah-btn">Download the app</Link>
             {!signedIn && <a href="/api/auth/steam" className="pah-btn steam">Sign in with Steam</a>}
           </div>
         </div>
