@@ -16,7 +16,10 @@ export function AceLogo({ compact = false }: { compact?: boolean }) {
             : "h-10 w-10 object-contain drop-shadow-[0_0_6px_rgba(255,205,90,.35)]"
         }
       />
-      <span className="ace-wordmark text-lg font-semibold tracking-[0.04em] text-[#FFD76A]">A.C.E</span>
+      <span className="flex flex-col leading-none">
+        <span className="ace-wordmark text-lg font-semibold tracking-[0.04em] text-[#FFD76A]">A.C.E</span>
+        <span className="ace-tagline">Autonomous Anti-Cheat | Competitive Calibration | Elite Players</span>
+      </span>
     </span>
   );
 }
