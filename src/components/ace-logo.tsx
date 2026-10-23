@@ -4,7 +4,7 @@ export function AceLogo({ compact = false }: { compact?: boolean }) {
   const size = compact ? 36 : 40;
 
   return (
-    <span className="inline-flex items-center gap-2">
+    <span className="ace-logo-wrap inline-flex items-center gap-2">
       <Image
         src="/images/ace-badge.png"
         alt=""
